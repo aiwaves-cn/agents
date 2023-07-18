@@ -18,6 +18,7 @@
 from abc import abstractmethod
 import json
 from utils import *
+from component import *
 class SOP():
 
     def __init__(self,file_path):
@@ -43,6 +44,7 @@ class Node():
                  extract_words: str = None,
                  next_nodes: dict = None,
                  done=False,
+                 user_input:str= None,
                  **args):
         self.prompt = ""
         if tool != None:
@@ -56,19 +58,36 @@ class Node():
         self.extract_words = extract_words
         self.need_response = need_response
         self.done = done
+        self.user_input = user_input
+        
+    def set_user_input(self,user_input):
+        self.user_input = user_input
+
 
     def get_component(self):
         components = []
         for i in self.args:
-            if i in ["judge", "extract", "style", "rule", "demonstration"]:
+            if i in ["input", "output", "style", "rule", "demonstration","task"]:
+                if i == "input":
+                    self.args[i].input = self.user_input
                 components.append(self.args[i])
         return components
 
-    def get_prompt(self):
+    def get_system_prompt(self):
         components = self.get_component()
         prompt = ""
         for i in components:
-            prompt += i.prompt
+            if not isinstance(i,OutputComponent):
+                prompt += i.get_prompt()
+        return prompt
+    
+
+    def get_last_prompt(self):
+        components = self.get_component()
+        prompt = ""
+        for i in components:
+            if isinstance(i,OutputComponent):
+                prompt += i.get_prompt()
         return prompt
 
     def add_component_system(self, component):
@@ -82,3 +101,28 @@ class Node():
 
     def set_last_prompt(self,prompt):
         self.last_prompt = prompt
+
+task_component = StyleComponent("你是一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
+                                 "专业")
+
+# judge_idle node
+rule_component_judge_idle = RuleComponent("""你现在需要判断用户说的内容是否只是闲聊，与公司的业务是否相关。
+    例如用户说“你好”，“再见”，“帮我写个python代码”，“帮我写小说”这样用公司业务无关的话，就是闲聊。
+    如果用户问你的信息，比如你是谁，你擅长做什么也算是闲聊，因为这与公司的业务无关，只是问你关于你的信息。
+    并且你应该充分结合上下文，如果用户说了“没有”，“是的”，“大学本科毕业”等信息，你要判断他是不是在问答你的问题，而不是在闲聊。
+    """)
+
+
+last_prompt_judge_idle = OutputComponent("闲聊")
+input_prompt = InputComponent()
+
+args_judge_idle = {
+    "task":task_component,
+    "role":rule_component_judge_idle,
+    "input":input_prompt
+}
+root = Node(node_type="judge",
+                  last_prompt=last_prompt_judge_idle,
+                  extract_words="闲聊",
+                  done = False,
+                  **args_judge_idle)

@@ -31,39 +31,32 @@ class TaskComponent(Component):
     def __init__(self,task):
         super().__init__()
         self.task = task
-        self.prompt = self.set_prompt(task)
-        
-    def set_prompt(self, task):
-        self.task = task
-        self.prompt = f"""你需要执行的任务是{self.task}。"""
 
+    def get_prompt(self):
+        return f"""你需要执行的任务是:{self.task}。"""
+    
 class InputComponent(Component):
     
-    def __init__(self,input):
+    def __init__(self):
         super().__init__()
-        self.input = input
-        self.prompt = self.set_prompt(input)
+        self.input = ""
         
-    def set_prompt(self, input):
-        self.judgement = input
-        self.prompt = f"用户的输入是{input}。"
+    def get_prompt(self):
+        return  f"用户的输入是:{self.input}。"
 
-class OutoutComponent(Component):
+class OutputComponent(Component):
 
     def __init__(self, output):
         super().__init__()
         self.output = output
-        self.prompt = ""
-        self.set_prompt(output)
-
-    def set_prompt(self, output):
-        self.output = output
-        self.prompt = f"""你的输出包在<{output}>和</{output}>中。
+    
+    def get_prompt(self):
+        return  f"""你的输出包在<{self.output}>和</{self.output}>中。
 可以开始输出了，输出格式为： 
 ```
-{output}
+{self.output}
 ...
-/{output}
+/{self.output}
 ```
 """
 
@@ -76,29 +69,20 @@ class StyleComponent(Component):
         super().__init__()
         self.agent = agent
         self.style = style
-        self.prompt = ""
-        self.set_prompt(agent, style)
 
-    def set_prompt(self, agent, style):
-        self.agent = agent
-        self.style = style
-        self.prompt = f"""现在你来模拟一个{agent}。你需要遵循以下的输出风格：
-f{style}。
+    def get_prompt(self):
+        return  f"""现在你来模拟一个{self.agent}。你需要遵循以下的输出风格：
+f{self.style}。
 """
-
 
 class RuleComponent(Component):
 
     def __init__(self, rule):
         super().__init__()
         self.rule = rule
-        self.prompt = ""
-        self.set_prompt(rule)
 
-    def set_prompt(self, rule):
-        self.rule = rule
-        self.prompt = f"""你需要遵循的规则是{self.rule}。"""
-
+    def get_prompt(self):
+        return  f"""你需要遵循的规则是:{self.rule}。"""
 
 class DemonstrationComponent(Component):
     """
@@ -109,21 +93,12 @@ class DemonstrationComponent(Component):
         super().__init__()
         self.demonstrations = demonstrations
         self.prompt = ""
-        self.set_prompt(demonstrations)
-
-    def set_prompt(self, demonstrations):
-        self.demonstrations = demonstrations
-        self.prompt = f"""以下是一些你可以学习的案例。"""
-        for input, output in demonstrations:
-            self.prompt += input + "\n" + output
 
     def add_demonstration(self, demonstration):
         for input, output in demonstration:
             self.prompt += input + "\n" + output
 
-
-def get_extract_prompt(extract_word):
-    prompt = f"""
-    根据上下文，帮我进行<{extract_word}></{extract_word}>的提取
-    """
-    return prompt
+    def get_prompt(self):
+        for input, output in self.demonstrations:
+            self.prompt += input + "\n" + output
+        return self.prompt
