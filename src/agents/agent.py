@@ -16,19 +16,8 @@
 
 """LLM autonoumous agent"""
 from utils import *
-from node import *
+from sop import *
 MAX_CHAT_HISTORY = 5
-
-
-# class Node:
-#     def __init__(self) -> None:
-#         self.next_nodes = {}
-#         self.system_prompt = ""
-#         self.last_prompt = ""
-#         self.extract_words = ""
-#         self.need_response = None
-#         pass
-
 
 class Agent():
     def __init__(self,root:PromptNode) -> None:
@@ -40,8 +29,11 @@ class Agent():
         self.done = False
         
 
-    def Step(self):
-        self.Question()
+    def step(self):
+        """
+        One interaction
+        """
+        self.question()
     
         chat_history_orig = self.content["messages"][0]
         ch_dict = self.process_history(chat_history_orig)
@@ -71,9 +63,9 @@ class Agent():
             
             elif now_node.node_type == "response":
                 response = get_gpt_response_rule(ch_dict,now_node.system_prompt,now_node.last_prompt)
-                self.Answer(response)
+                self.answer(response)
                 if now_node.need_response:
-                    self.Question()
+                    self.question()
                 chat_history_orig = self.content["messages"]
                 ch_dict = self.process_history(chat_history_orig)
                 if self.is_done(now_node):
@@ -81,25 +73,33 @@ class Agent():
                 now_node = now_node.next_nodes[0]
                 self.now_node = now_node
                 
-    def Chat(self):
+    def chat(self):
         while True:
-            self.Step()  # 机器人处理
+            self.step()  # 机器人处理
         
         
-    def Answer(self,return_message):
+    def answer(self,return_message):
         for rem in return_message:
             if rem["type"]=="chat":
                 answer = rem["content"]
                 self.content["messages"].append([{"role":"bot","content":answer}])
         
-    def Question(self):
+    def question(self):
+        """
+        append the question of user
+        """
         question = input("用户：")
         self.content["messages"].append([{"role":"user","content":question}])
 
     def process_history(self,chat_history):
-        #函数：历史信息的处理
-        #入参 chat_history 类型：dict 含义：message携带的历史信息
-        #出参 ch_dict 类型：list 含义：处理后的历史记录信息 
+        """Dealing with incoming data in different situations
+
+        Args:
+            chat_history (_type_): input chat history
+
+        Returns:
+            list: history of gpt usage
+        """
         ch_dict = []
         for ch in chat_history:
             if ch["role"]=="user":
@@ -137,4 +137,4 @@ root = PromptNode(node_type="judge",
                   **args1)
 
 bot = Agent(root)
-bot.Chat()
+bot.chat()
