@@ -19,10 +19,6 @@ class Component():
     def __init__(self):
         self.prompt = ""
     
-    @staticmethod
-    def set_prompt():
-        pass
-    
     def get_prompt(self):
         return self.prompt
     
@@ -92,7 +88,7 @@ class DemonstrationComponent(Component):
     def __init__(self, demonstrations):
         super().__init__()
         self.demonstrations = demonstrations
-        self.prompt = ""
+        self.prompt = "以下是你可以参考的例子：\n"
 
     def add_demonstration(self, demonstration):
         for input, output in demonstration:
