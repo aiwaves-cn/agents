@@ -20,7 +20,7 @@ from sop import *
 MAX_CHAT_HISTORY = 5
 
 class Agent():
-    def __init__(self,root:PromptNode) -> None:
+    def __init__(self,root:Node) -> None:
         self.content = {
             "messages":[]
             }
@@ -129,7 +129,7 @@ args1 = {
     "rule" :rule_component,
     "extract" : extract_component
 }
-root = PromptNode(node_type="judge",
+root = Node(node_type="judge",
                   last_prompt=last_prompt_1,
                   extract_words="闲聊",
                   done=True,
