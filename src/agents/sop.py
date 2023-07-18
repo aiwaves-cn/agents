@@ -45,14 +45,19 @@ class Node():
                  next_nodes: dict = None,
                  done=False,
                  user_input:str= None,
-                 **args):
+                 **components):
         self.prompt = ""
         if tool != None:
             tool = Tool(type)
         self.node_type = node_type
         self.next_nodes = next_nodes
+<<<<<<< HEAD
         self.args = args
         self.system_prompt = self.get_system_prompt()
+=======
+        self.components = components
+        self.system_prompt = self.get_prompt()
+>>>>>>> 1a84b8b38205fbe5a1fa05d4dcd6751db8e0960c
         self.last_prompt = last_prompt
         self.extract_words = extract_words
         self.need_response = need_response
@@ -62,7 +67,7 @@ class Node():
     def set_user_input(self,user_input):
         self.user_input = user_input
 
-
+    # merge component
     def get_component(self):
         components = []
         for i in self.args:
@@ -73,6 +78,11 @@ class Node():
         return components
 
     def get_system_prompt(self):
+        components = []
+        for component in self.components:
+            if component == "input":
+                self.components[component].input = self.user_input
+
         components = self.get_component()
         prompt = ""
         for i in components:
@@ -80,7 +90,7 @@ class Node():
                 prompt += i.get_prompt()
         return prompt
     
-
+    ##return complete
     def get_last_prompt(self):
         components = self.get_component()
         prompt = ""
@@ -95,11 +105,6 @@ class Node():
     def add_component_last(self, component):
         self.last_prompt += component.get_prompt()
         
-    def set_system_prompt(self,prompt):
-        self.system_prompt = prompt
-
-    def set_last_prompt(self,prompt):
-        self.last_prompt = prompt
 
 task_component = StyleComponent("你是一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
                                  "专业")
