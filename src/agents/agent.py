@@ -34,6 +34,8 @@ class Agent():
         One interaction
         """
         self.question()
+    def step(self):
+        self.Question()
     
         chat_history_orig = self.content["messages"][0]
         ch_dict = self.process_history(chat_history_orig)
