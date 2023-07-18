@@ -26,33 +26,44 @@ class Component():
     def get_prompt(self):
         return self.prompt
     
-class JudgeComponent(Component):
+class TaskComponent(Component):
     
-    def __init__(self,judgement):
+    def __init__(self,task):
         super().__init__()
-        self.judgement = judgement
-        self.prompt = self.set_prompt(judgement)
+        self.task = task
+        self.prompt = self.set_prompt(task)
         
-    def set_prompt(self, judgement):
-        self.judgement = judgement
-        self.prompt = f"请你判断以上内容是否是{judgement}。"
+    def set_prompt(self, task):
+        self.task = task
+        self.prompt = f"""你需要执行的任务是{self.task}。"""
 
-class ExtractComponent(Component):
-
-    def __init__(self, extract_words):
+class InputComponent(Component):
+    
+    def __init__(self,input):
         super().__init__()
-        self.extract_words = extract_words
-        self.prompt = ""
-        self.set_prompt(extract_words)
+        self.input = input
+        self.prompt = self.set_prompt(input)
+        
+    def set_prompt(self, input):
+        self.judgement = input
+        self.prompt = f"用户的输入是{input}。"
 
-    def set_prompt(self, extract_words):
-        self.extract_words = extract_words
-        self.prompt = f"""你的输出包在<{extract_words}>和</{extract_words}>中。如果是闲聊返回<{extract_words}>0</{extract_words}>,如果不是闲聊返回<{extract_words}>1</{extract_words}>。
+class OutoutComponent(Component):
+
+    def __init__(self, output):
+        super().__init__()
+        self.output = output
+        self.prompt = ""
+        self.set_prompt(output)
+
+    def set_prompt(self, output):
+        self.output = output
+        self.prompt = f"""你的输出包在<{output}>和</{output}>中。
 可以开始输出了，输出格式为： 
 ```
-{extract_words}
+{output}
 ...
-/{extract_words}
+/{output}
 ```
 """
 
@@ -86,7 +97,7 @@ class RuleComponent(Component):
 
     def set_prompt(self, rule):
         self.rule = rule
-        self.prompt = f"""你需要执行的任务是{self.rule}。"""
+        self.prompt = f"""你需要遵循的规则是{self.rule}。"""
 
 
 class DemonstrationComponent(Component):
