@@ -40,7 +40,7 @@ class Agent():
         self.done = False
         
 
-    def Step(self):
+    def step(self):
         self.Question()
     
         chat_history_orig = self.content["messages"][0]
@@ -81,18 +81,18 @@ class Agent():
                 now_node = now_node.next_nodes[0]
                 self.now_node = now_node
                 
-    def Chat(self):
+    def chat(self):
         while True:
             self.Step()  # 机器人处理
         
         
-    def Answer(self,return_message):
+    def answer(self,return_message):
         for rem in return_message:
             if rem["type"]=="chat":
                 answer = rem["content"]
                 self.content["messages"].append([{"role":"bot","content":answer}])
         
-    def Question(self):
+    def question(self):
         question = input("用户：")
         self.content["messages"].append([{"role":"user","content":question}])
 
@@ -137,4 +137,4 @@ root = Node(node_type="judge",
                   **args1)
 
 bot = Agent(root)
-bot.Chat()
+bot.chat()

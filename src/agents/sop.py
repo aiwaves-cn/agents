@@ -24,7 +24,7 @@ class Tool():
             database = database
 
 
-class PromptNode():
+class Node():
 
     def __init__(self,
                  tool: Tool = None,

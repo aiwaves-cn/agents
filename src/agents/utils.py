@@ -17,7 +17,7 @@
 """helper functions for an LLM autonoumous agent"""
 import openai
 MAX_CHAT_HISTORY = 5
-API_KEY = ''
+API_KEY = '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'
 PROXY = 'http://127.0.0.1:7000'
 
 def process_history(chat_history):
