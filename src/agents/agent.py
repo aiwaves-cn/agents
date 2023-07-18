@@ -75,7 +75,7 @@ class Agent():
                 
     def chat(self):
         while True:
-            self.step()  # 机器人处理
+            self.step()  
         
         
     def answer(self,return_message):
@@ -106,7 +106,7 @@ class Agent():
                 ch_dict.append(  {"role": "user", "content": ch["content"]})
             else:
                 ch_dict.append(  {"role": "assistant", "content": ch["content"]})
-        #保留最近三轮的对话历史
+        
         if len(ch_dict)>2*MAX_CHAT_HISTORY:
             ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
         return ch_dict
