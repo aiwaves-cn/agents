@@ -16,6 +16,11 @@
 
 """helper functions for an LLM autonoumous agent"""
 import openai
+import json
+import numpy as np
+import tqdm
+from text2vec import SentenceModel, semantic_search
+embedding_model = SentenceModel('shibing624/text2vec-base-chinese',device="cpu")
 MAX_CHAT_HISTORY = 5
 API_KEY = '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'
 PROXY = 'http://127.0.0.1:7000'
@@ -88,6 +93,54 @@ def get_gpt_response_rule(ch_dict,
 
     return response.choices[0].message["content"]
 
+def load_knowledge_base_chunk(path):
+    """
+    Load json format knowledge base.
+    """
+    with open(path, 'r') as f:
+        data = json.load(f)
+    embeddings = []
+    questions = []
+    answers =[]
+    chunks = []
+    for idx in range(len(data.keys())):
+        embeddings.append(data[str(idx)]['emb'])
+        questions.append(data[str(idx)]['q'])
+        answers.append(data[str(idx)]['a'])
+        chunks.append(data[str(idx)]['chunk'])
+    embeddings = np.array(embeddings,dtype=np.float32)
+    return embeddings, chunks
+
+def encode_word2vec(sentence):
+    # embedding_model = SentenceModel('GanymedeNil/text2vec-large-chinese',device="cpu")
+    return embedding_model.encode(sentence)
+
+def semantic_search_word2vec(query_embedding, kb_embeddings,top_k):
+    return semantic_search(query_embedding,kb_embeddings,top_k= top_k)
+
+def save_qadict(questions,answers,save_path):
+    """
+    Save QA_dict to json.
+    Args:
+        model: LLM to generate embeddings
+        qa_dict: A dict contains Q&A
+        save_path: where to save the json file.
+    Json format:
+        Dict[num,Dict[q:str,a:str,chunk:str,emb:List[float]]
+    """
+    final_dict = {}
+    count = 0
+    for q,a in tqdm(zip(questions,answers)):
+        temp_dict = {}
+        temp_dict['q'] = q
+        temp_dict['a'] = a
+        temp_dict['chunk'] = a
+        temp_dict['emb'] = encode_word2vec(q).tolist()
+        final_dict[count] = temp_dict
+        count+=1
+    print("len:",len(final_dict))
+    with open(save_path, 'w') as f:
+        json.dump(final_dict, f, ensure_ascii=False,indent=2)
 
 if __name__ == '__main__':
     str = "hello 123 hello"
