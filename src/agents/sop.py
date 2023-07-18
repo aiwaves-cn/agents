@@ -67,6 +67,12 @@ class Node():
 
     def add_component_last(self, component):
         self.last_prompt += component.get_prompt()
+        
+    def set_system_prompt(self,prompt):
+        self.system_prompt = prompt
+
+    def set_last_prompt(self,prompt):
+        self.last_prompt = prompt
 
 class Component():
     def __init__(self):
