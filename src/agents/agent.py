@@ -17,6 +17,9 @@
 """LLM autonoumous agent"""
 from utils import *
 from sop import *
+from prompt import *
+
+
 MAX_CHAT_HISTORY = 5
 
 class Agent():
@@ -40,10 +43,14 @@ class Agent():
         chat_history_orig = self.content["messages"][0]
         ch_dict = self.process_history(chat_history_orig)
         now_node = self.now_node
-        
-        while now_node.done:
+        flag = 0
+        while True:
+            if now_node.done:
+                flag =1
+                
             if now_node.node_type =="judge":
-                response = get_gpt_response_rule(ch_dict,now_node.system_prompt,now_node.last_prompt)
+                now_node.set_user_input(ch_dict)
+                response = get_gpt_response_rule(ch_dict,now_node.get_system_prompt(),now_node.get_last_prompt())
                 keywords = extract(response,now_node.extract_words)
                 print(response)
                 if self.is_done(now_node):
@@ -66,8 +73,6 @@ class Agent():
             elif now_node.node_type == "response":
                 response = get_gpt_response_rule(ch_dict,now_node.system_prompt,now_node.last_prompt)
                 self.answer(response)
-                if now_node.need_response:
-                    self.question()
                 chat_history_orig = self.content["messages"]
                 ch_dict = self.process_history(chat_history_orig)
                 if self.is_done(now_node):
@@ -75,6 +80,8 @@ class Agent():
                 now_node = now_node.next_nodes[0]
                 self.now_node = now_node
                 
+            if flag:
+                break
     def chat(self):
         while True:
             self.step()  
@@ -117,26 +124,30 @@ class Agent():
         return node.done
     
 
-style_component = StyleComponent("你是一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
+task_component = StyleComponent("你是一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
                                  "专业")
-rule_component = RuleComponent("""你现在需要判断用户说的内容是否只是闲聊，与公司的业务是否相关。
+
+# judge_idle node
+rule_component_judge_idle = RuleComponent("""你现在需要判断用户说的内容是否只是闲聊，与公司的业务是否相关。
     例如用户说“你好”，“再见”，“帮我写个python代码”，“帮我写小说”这样用公司业务无关的话，就是闲聊。
     如果用户问你的信息，比如你是谁，你擅长做什么也算是闲聊，因为这与公司的业务无关，只是问你关于你的信息。
     并且你应该充分结合上下文，如果用户说了“没有”，“是的”，“大学本科毕业”等信息，你要判断他是不是在问答你的问题，而不是在闲聊。
     """)
-extract_component = ExtractComponent("闲聊")
-last_prompt_1 = get_extract_prompt("闲聊")
-args1 = {
-     "style" : style_component,
-    "rule" :rule_component,
-    "extract" : extract_component
+
+
+last_prompt_judge_idle = OutputComponent("闲聊")
+input_prompt = InputComponent()
+
+args_judge_idle = {
+    "task":task_component,
+    "role":rule_component_judge_idle,
+    "input":input_prompt
 }
 root = Node(node_type="judge",
-                  last_prompt=last_prompt_1,
+                  last_prompt=last_prompt_judge_idle,
                   extract_words="闲聊",
-                  done=True,
-                  need_response=True,
-                  **args1)
+                  done = False,
+                  **args_judge_idle)
 
-bot = Agent(root)
-bot.chat()
+agent = Agent(root)
+agent.chat()
