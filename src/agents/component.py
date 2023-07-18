@@ -50,9 +50,9 @@ class OutputComponent(Component):
         return  f"""你的输出包在<{self.output}>和</{self.output}>中。
 可以开始输出了，输出格式为： 
 ```
-{self.output}
+<{self.output}>
 ...
-/{self.output}
+</{self.output}>
 ```
 """
 

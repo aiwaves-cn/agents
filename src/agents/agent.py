@@ -50,12 +50,13 @@ class Agent():
                 
             if now_node.node_type =="judge":
                 now_node.set_user_input(ch_dict)
-                response = get_gpt_response_rule(ch_dict,now_node.get_system_prompt(),now_node.get_last_prompt())
+                system_prompt,last_prompt = now_node.get_prompt()
+                response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                 keywords = extract(response,now_node.extract_words)
                 print(response)
                 if self.is_done(now_node):
                     break
-                next_nodes_nums = len(now_node.next_nodes)
+                next_nodes_nums = len(now_node.next_nodes.keys())
                 for i,key in enumerate(now_node.next_nodes):
                     if i == next_nodes_nums-1:
                         now_node = now_node.next_nodes[key]
@@ -64,14 +65,18 @@ class Agent():
                         break
                 
             elif now_node.node_type == "extract":
-                response = get_gpt_response_rule(ch_dict,now_node.system_prompt,now_node.last_prompt)
+                now_node.set_user_input(ch_dict)
+                system_prompt,last_prompt = now_node.get_prompt()
+                response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                 keywords = extract(response,now_node.extract_words)
                 if self.is_done(now_node):
                     break
                 now_node = now_node.next_nodes[0]
             
             elif now_node.node_type == "response":
-                response = get_gpt_response_rule(ch_dict,now_node.system_prompt,now_node.last_prompt)
+                now_node.set_user_input(ch_dict)
+                system_prompt,last_prompt = now_node.get_prompt()
+                response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                 self.answer(response)
                 chat_history_orig = self.content["messages"]
                 ch_dict = self.process_history(chat_history_orig)
@@ -120,9 +125,10 @@ class Agent():
             ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
         return ch_dict
     
-    def is_done(self,node):
+    def is_done(self,node:Node):
         return node.done
     
+
 
 task_component = StyleComponent("你是一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
                                  "专业")
@@ -141,13 +147,13 @@ input_prompt = InputComponent()
 args_judge_idle = {
     "task":task_component,
     "role":rule_component_judge_idle,
+    "output":last_prompt_judge_idle,
     "input":input_prompt
 }
 root = Node(node_type="judge",
-                  last_prompt=last_prompt_judge_idle,
-                  extract_words="闲聊",
-                  done = False,
-                  **args_judge_idle)
+            extract_words="闲聊",
+            done = False,
+            **args_judge_idle)
 
 agent = Agent(root)
 agent.chat()
