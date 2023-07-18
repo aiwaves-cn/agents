@@ -14,7 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""standard operation procedure of an LLM autonoumous agent"""
+"""standard operation procedure of an LLM Autonomous agent"""
+from abc import abstractmethod
+
 class Tool():
 
     def __init__(self, type, **args):
@@ -22,7 +24,7 @@ class Tool():
             database = database
 
 
-class Node():
+class PromptNode():
 
     def __init__(self,
                  tool: Tool = None,
@@ -66,25 +68,31 @@ class Node():
     def add_component_last(self, component):
         self.last_prompt += component.get_prompt()
 
-
-class JudgeComponent():
-
-    def __init__(self, judgement):
-        self.judgement = judgement
+class Component():
+    def __init__(self):
         self.prompt = ""
-        self.set_prompt(judgement)
-
+    
+    @staticmethod
+    def set_prompt():
+        pass
+    
+    def get_prompt(self):
+        return self.prompt
+class JudgeComponent(Component):
+    
+    def __init__(self,judgement):
+        super().__init__()
+        self.judgement = judgement
+        self.prompt = self.set_prompt(judgement)
+        
     def set_prompt(self, judgement):
         self.judgement = judgement
         self.prompt = f"请你判断以上内容是否是{judgement}。"
 
-    def get_prompt(self):
-        return self.prompt
-
-
 class ExtractComponent():
 
     def __init__(self, extract_words):
+        super().__init__()
         self.extract_words = extract_words
         self.prompt = ""
         self.set_prompt(extract_words)
@@ -100,16 +108,13 @@ class ExtractComponent():
 ```
 """
 
-    def get_prompt(self):
-        return self.prompt
-
-
 class StyleComponent():
     """
     角色、风格组件
     """
 
     def __init__(self, agent, style):
+        super().__init__()
         self.agent = agent
         self.style = style
         self.prompt = ""
@@ -122,13 +127,11 @@ class StyleComponent():
 f{style}。
 """
 
-    def get_prompt(self):
-        return self.prompt
-
 
 class RuleComponent():
 
     def __init__(self, rule):
+        super().__init__()
         self.rule = rule
         self.prompt = ""
         self.set_prompt(rule)
@@ -137,9 +140,6 @@ class RuleComponent():
         self.rule = rule
         self.prompt = f"""你需要执行的任务是{self.rule}。"""
 
-    def get_prompt(self):
-        return self.prompt
-
 
 class DemonstrationComponent():
     """
@@ -147,6 +147,7 @@ class DemonstrationComponent():
     """
 
     def __init__(self, demonstrations):
+        super().__init__()
         self.demonstrations = demonstrations
         self.prompt = ""
         self.set_prompt(demonstrations)
@@ -156,9 +157,6 @@ class DemonstrationComponent():
         self.prompt = f"""以下是一些你可以学习的案例。"""
         for input, output in demonstrations:
             self.prompt += input + "\n" + output
-
-    def get_prompt(self):
-        return self.prompt
 
     def add_demonstration(self, demonstration):
         for input, output in demonstration:
