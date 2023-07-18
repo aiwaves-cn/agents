@@ -49,11 +49,10 @@ class Node():
         self.prompt = ""
         if tool != None:
             tool = Tool(type)
-            tool_prompt = tool.get_prompt()
         self.node_type = node_type
         self.next_nodes = next_nodes
         self.args = args
-        self.system_prompt = self.get_prompt()
+        self.system_prompt = self.get_system_prompt()
         self.last_prompt = last_prompt
         self.extract_words = extract_words
         self.need_response = need_response
