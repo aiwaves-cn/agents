@@ -17,26 +17,21 @@
 """helper functions for an LLM autonoumous agent"""
 import openai
 MAX_CHAT_HISTORY = 5
-API_KEY = ''
+API_KEY = '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'
 PROXY = 'http://127.0.0.1:7000'
-
-def process_history(chat_history):
-#函数：历史信息的处理
-#入参 chat_history 类型：dict 含义：message携带的历史信息
-#出参 ch_dict 类型：list 含义：处理后的历史记录信息 
-    ch_dict = []
-    for ch in chat_history:
-        if ch.role=="user":
-            ch_dict.append(  {"role": "user", "content": ch.content})
-        else:
-            ch_dict.append(  {"role": "assistant", "content": ch.content})
-    #保留最近三轮的对话历史
-    if len(ch_dict)>2*MAX_CHAT_HISTORY:
-        ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
-    return ch_dict
 
 
 def get_content_between_a_b(start_tag,end_tag,text):
+    """
+
+    Args:
+        start_tag (str): start_tag
+        end_tag (str): end_tag
+        text (str): complete sentence
+
+    Returns:
+        str: the content between start_tag and end_tag
+    """
     extracted_text = ""
     start_index = text.find(start_tag)
     while start_index != -1:
@@ -50,6 +45,15 @@ def get_content_between_a_b(start_tag,end_tag,text):
     return extracted_text.strip()
 
 def extract(text,type):
+    """extract the content between <type></type>
+
+    Args:
+        text (str): complete sentence
+        type (str): tag
+
+    Returns:
+        str: content between <type></type>
+    """
     target_str = get_content_between_a_b(f'<{type}>',f'</{type}>',text)
     return target_str
 
@@ -58,15 +62,16 @@ def get_gpt_response_rule(ch_dict,
                           last_prompt,
                           model="gpt-3.5-turbo-16k-0613",
                           temperature=0):
-    """基本的prompt调用方法
+    """get the response of chatgpt
 
     Args:
-        ch_dict (_type_): 历史记忆
-        system_prompt (_type_): 系统提示词
-        last_prompt (_type_): 任务提示词
+        ch_dict (list): the history of chat
+        system_prompt (str): the main task set in the first
+        last_prompt (str): attached to the final task
+        temperature(float):randomness of GPT responses
 
     Returns:
-        _type_: chatgpt的回答
+        str: the response of chatgpt
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
@@ -78,10 +83,9 @@ def get_gpt_response_rule(ch_dict,
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        temperature=temperature,  # 模型输出的温度系数，控制输出的随机程度
+        temperature=temperature,  
     )
 
-    # 调用 OpenAI 的 ChatCompletion 接口
     return response.choices[0].message["content"]
 
 
