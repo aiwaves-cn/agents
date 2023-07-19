@@ -1,6 +1,7 @@
 import json
 data = {}
 node0 = {
+        "name":"node0",
         "node_type":"judge","extract_word":"闲聊","done":False,
          "components":
             {"style":
@@ -16,7 +17,8 @@ node0 = {
             "output":{"output":"闲聊"}
             }
         }
-node1 = {"node_type":"response","extract_word":"需要与用户进行正常的聊天","done":True,
+node1 = {"name":"node1",
+    "node_type":"response","extract_word":"需要与用户进行正常的聊天","done":True,
          "components":
             {"style":
                 {"agent":"一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。","style":"专业"},
@@ -31,7 +33,8 @@ node1 = {"node_type":"response","extract_word":"需要与用户进行正常的�
             "output":{"output":"回复"}
             }
         }
-node2 = {"node_type":"response","extract_word":"回复","done":True,
+node2 = {
+    "name":"node2","node_type":"response","extract_word":"回复","done":True,
          "components":
             {"style":
                 {"agent":"一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。","style":"专业"},
