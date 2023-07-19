@@ -44,6 +44,17 @@ class Node():
                  done=False,
                  user_input:str= "",
                  **components):
+        """_summary_
+
+        Args:
+            tool (Tool, optional): _description_. Defaults to None.
+            node_type (str, optional): _description_. Defaults to None.
+            extract_words (str, optional): _description_. Defaults to "".
+            next_nodes (dict, optional): _description_. Defaults to {}.
+            done (bool, optional): _description_. Defaults to False.
+            user_input (str, optional): _description_. Defaults to "".
+            components(dict) : "style"  *"task"*  "rule" "demonstration"  "input" "kb_tool" *"output"*
+        """
         self.prompt = ""
         if tool != None:
             tool = Tool(type)
@@ -66,7 +77,7 @@ class Node():
             if isinstance(value,InputComponent):
                 value.input = self.user_input
                 prompt = prompt +"\n" + value.get_prompt()
-            if not isinstance(value,OutputComponent):
+            elif not isinstance(value,OutputComponent):
                 prompt =prompt +"\n" + value.get_prompt()
             else:
                 last_prompt += value.get_prompt()
