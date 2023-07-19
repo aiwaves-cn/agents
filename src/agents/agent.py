@@ -63,7 +63,7 @@ class Agent():
                 for i,key in enumerate(now_node.next_nodes):
                     if i == next_nodes_nums-1:
                         now_node = now_node.next_nodes[key]
-                    if key == keywords:
+                    elif key == keywords:
                         now_node = now_node.next_nodes[key]
                         break
                 
@@ -89,6 +89,8 @@ class Agent():
                 ch_dict = self.process_history(chat_history_orig)
                 now_node = now_node.next_nodes[0]
                 self.now_node = now_node
+                
+                
                 
             if flag or now_node == self.root:
                 break
@@ -180,25 +182,28 @@ idle_node = Node(node_type="response",
             next_nodes= {0:root},
             **args_idle)
 
+
+
 # tool node
 task_component_tool = TaskComponent("""使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。
         如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。""")
 rule_component_tool = RuleComponent(get_response_prompt())
 last_prompt_tool = OutputComponent("回复")
-input_prompt_tool = InputComponent()
-
+knowledge_prompt_tool = KnowledgeBaseComponent("/home/aiwaves/longli/agents/src/agents/yc_final.json")
 args_tool = {
     "style":style_component,
     "task":task_component_tool,
     "rule":rule_component_tool,
-    "input":input_prompt_tool,
+    "knowledge":knowledge_prompt_tool,
     "output":last_prompt_tool
 }
 tool_node = Node(node_type="response",
             extract_words="回复",
             done = True,
+            next_nodes= {0:root},
             **args_idle)
 
+root.next_nodes = {'是':idle_node,'否':tool_node}
 
 agent = Agent(root)
 agent.chat()

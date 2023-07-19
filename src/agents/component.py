@@ -107,17 +107,17 @@ class KnowledgeBaseComponent(Component):
     """
     知识库
     """
-    def __init__(self,knwolegdebase,top_k = 2):
+    def __init__(self,knowledge_base,top_k = 2):
         super().__init__()
         self.top_k = top_k
-        self.knowledgebase_path = knwolegdebase
+        self.knowledge_base_path = knowledge_base
         self.user_input = ""
         self.embedding_model = SentenceModel('shibing624/text2vec-base-chinese',device="cpu")
-        self.kb_embeddings,self.kb_questions,self.kb_answers,self.kb_chunks = load_knowledge_base(self.knowledge_path)
+        self.kb_embeddings,self.kb_questions,self.kb_answers,self.kb_chunks = load_knowledge_base(self.knowledge_base_path)
         
-    def get_knowleage(self,user_input):
+    def get_knowledge(self,user_input):
         query_embedding = self.embedding_model.encode(user_input)
-        hits = semantic_search(query_embedding, self.knowledgebase_path, top_k=50)
+        hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]
         temp = []
         for hit in hits:
@@ -133,5 +133,5 @@ class KnowledgeBaseComponent(Component):
         return knowledge
 
     def get_prompt(self):
-        prompt = f"用户的输入是:{self.user_input}"+"\n"+f"与之最匹配的知识库内容是{self.get_knowleage(self.user_input)}"
+        prompt = f"用户的输入是:{self.user_input}"+"\n"+f"与之最匹配的知识库内容是{self.get_knowledge(self.user_input)}"
         return prompt
