@@ -15,3 +15,17 @@
 # limitations under the License.
 
 """example code for serving an autonomous agents with Flask/FastAPI backend"""
+from flask import Flask,request
+from gevent import pywsgi
+from src.agents.sop import SOP
+from src.agents.agent import Agent
+if __name__ == "__name__":
+    app = Flask(__name__)
+    sop = SOP("customer_service.json")
+    agent = Agent(sop.get_root())
+    @app.route('/api/v1/ask/',methods=['post'])
+    def reply():
+        query = request.json.get('query')
+        agent.answer()
+    server = pywsgi.WSGIServer(('0.0.0.0', 7820), app)
+    server.serve_forever()
