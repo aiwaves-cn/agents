@@ -142,6 +142,11 @@ def save_qadict(questions,answers,save_path):
     with open(save_path, 'w') as f:
         json.dump(final_dict, f, ensure_ascii=False,indent=2)
 
+
+def get_knowledge(user_input,knowleage_base):
+    input_encode = embedding_model.encode(user_input)
+    
+
 if __name__ == '__main__':
     str = "hello 123 hello"
     x = get_content_between_a_b("hello1","hello1",str)
