@@ -38,6 +38,8 @@ class InputComponent(Component):
         self.input = ""
         
     def get_prompt(self):
+        if self.input == "":
+            return ""
         return  f"用户的输入是:{self.input}。"
 
 class OutputComponent(Component):
@@ -48,7 +50,7 @@ class OutputComponent(Component):
     
     def get_prompt(self):
         return  f"""你的输出包在<{self.output}>和</{self.output}>中。
-可以开始输出了，输出格式为： 
+切记，输出格式为： 
 ```
 <{self.output}>
 ...
