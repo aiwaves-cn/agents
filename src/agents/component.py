@@ -15,6 +15,8 @@
 # limitations under the License.
 
 """Component of an LLM Autonomous agent"""
+from text2vec import SentenceModel, semantic_search
+from utils import *
 class Component():
     def __init__(self):
         self.prompt = ""
@@ -105,15 +107,31 @@ class KnowledgeBaseComponent(Component):
     """
     知识库
     """
-    def __init__(self,knwolegdebase):
+    def __init__(self,knwolegdebase,top_k = 2):
         super().__init__()
+        self.top_k = top_k
         self.knowledgebase_path = knwolegdebase
         self.user_input = ""
-    
+        self.embedding_model = SentenceModel('shibing624/text2vec-base-chinese',device="cpu")
+        self.kb_embeddings,self.kb_questions,self.kb_answers,self.kb_chunks = load_knowledge_base(self.knowledge_path)
         
-    def get_knowleage(user_input):
-        return ""
+    def get_knowleage(self,user_input):
+        query_embedding = self.embedding_model.encode(user_input)
+        hits = semantic_search(query_embedding, self.knowledgebase_path, top_k=50)
+        hits = hits[0]
+        temp = []
+        for hit in hits:
+            matching_idx = hit['corpus_id']
+            score = hit["score"]
+            if self.kb_chunks[matching_idx] in temp:
+                pass
+            else:
+                knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n 以上这段话与问题的语义匹配度是{score}\n'
+                temp.append(self.kb_chunks[matching_idx])
+                if len(temp) == self.top_k:
+                    break
+        return knowledge
 
     def get_prompt(self):
-        prompt = ""
+        prompt = f"用户的输入是:{self.user_input}"+"\n"+f"与之最匹配的知识库内容是{self.get_knowleage(self.user_input)}"
         return prompt
