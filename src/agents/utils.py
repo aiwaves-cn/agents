@@ -19,8 +19,6 @@ import openai
 import json
 import numpy as np
 import tqdm
-from text2vec import SentenceModel, semantic_search
-embedding_model = SentenceModel('shibing624/text2vec-base-chinese',device="cpu")
 MAX_CHAT_HISTORY = 5
 API_KEY = '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'
 PROXY = 'http://127.0.0.1:7000'
@@ -142,25 +140,24 @@ def save_qadict(questions,answers,save_path):
     with open(save_path, 'w') as f:
         json.dump(final_dict, f, ensure_ascii=False,indent=2)
 
+def load_knowledge_base(path):
+    """
+    Load json format knowledge base.
+    """
+    with open(path, 'r') as f:
+        data = json.load(f)
+    embeddings = []
+    questions = []
+    answers =[]
+    chunks = []
+    for idx in range(len(data.keys())):
+        embeddings.append(data[str(idx)]['emb'])
+        questions.append(data[str(idx)]['q'])
+        answers.append(data[str(idx)]['a'])
+        chunks.append(data[str(idx)]['chunk'])
+    embeddings = np.array(embeddings,dtype=np.float32)
+    return embeddings, chunks
 
-
-
-def get_knowledge(user_input,knowleage_base):
-    query_embedding = embedding_model.encode(user_input)
-    hits = semantic_search(query_embedding, knowleage_base, top_k=50)
-    hits = hits[0]
-    temp = []
-    for hit in hits:
-        matching_idx = hit['corpus_id']
-        score = hit["score"]
-        if kb_chunks[matching_idx] in temp:
-            pass
-        else:
-            knowledge = knowledge + f'{kb_questions[matching_idx]}的答案是：{kb_chunks[matching_idx]}\n 以上这段话与问题的语义匹配度是{score}\n'
-            temp.append(kb_chunks[matching_idx])
-            if len(temp) == 2:
-                break
-    prompt = get_response_prompt(query,knowledge)
 
 if __name__ == '__main__':
     str = "hello 123 hello"
