@@ -65,7 +65,7 @@ class Node():
         self.system_prompt,self.last_prompt= self.get_prompt()
         self.extract_words = extract_words
         self.done = done
-        
+
     def set_user_input(self,user_input):
         self.user_input = user_input
 
