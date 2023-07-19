@@ -37,7 +37,6 @@ class Tool():
 class Node():
 
     def __init__(self,
-                 tool: Tool = None,
                  node_type: str = None,
                  extract_words: str = "",
                  next_nodes: dict = {},
@@ -56,8 +55,6 @@ class Node():
             components(dict) : "style"  *"task"*  "rule" "demonstration"  "input" "kb_tool" *"output"*
         """
         self.prompt = ""
-        if tool != None:
-            tool = Tool(type)
         self.node_type = node_type
         self.next_nodes = next_nodes
         self.components = components
