@@ -103,13 +103,14 @@ class KnowledgeBaseComponent(Component):
     """
     知识库
     """
-    def __init__(self):
+    def __init__(self,knwolegdebase):
         super().__init__()
-        self.knowledgebase_path = ""
+        self.knowledgebase_path = knwolegdebase
         self.user_input = ""
+    
         
     def get_knowleage(user_input):
-        
+        return ""
 
     def get_prompt(self):
         prompt = ""

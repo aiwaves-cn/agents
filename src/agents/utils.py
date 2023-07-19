@@ -143,9 +143,24 @@ def save_qadict(questions,answers,save_path):
         json.dump(final_dict, f, ensure_ascii=False,indent=2)
 
 
+
+
 def get_knowledge(user_input,knowleage_base):
-    input_encode = embedding_model.encode(user_input)
-    
+    query_embedding = embedding_model.encode(user_input)
+    hits = semantic_search(query_embedding, knowleage_base, top_k=50)
+    hits = hits[0]
+    temp = []
+    for hit in hits:
+        matching_idx = hit['corpus_id']
+        score = hit["score"]
+        if kb_chunks[matching_idx] in temp:
+            pass
+        else:
+            knowledge = knowledge + f'{kb_questions[matching_idx]}的答案是：{kb_chunks[matching_idx]}\n 以上这段话与问题的语义匹配度是{score}\n'
+            temp.append(kb_chunks[matching_idx])
+            if len(temp) == 2:
+                break
+    prompt = get_response_prompt(query,knowledge)
 
 if __name__ == '__main__':
     str = "hello 123 hello"
