@@ -116,6 +116,7 @@ class KnowledgeBaseComponent(Component):
         self.kb_embeddings,self.kb_questions,self.kb_answers,self.kb_chunks = load_knowledge_base(self.knowledge_base_path)
         
     def get_knowledge(self,user_input):
+        knowledge = ""
         query_embedding = self.embedding_model.encode(user_input)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]

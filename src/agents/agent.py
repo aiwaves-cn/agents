@@ -19,8 +19,10 @@ from utils import *
 from sop import *
 from prompt import *
 import time 
-
+import json
 MAX_CHAT_HISTORY = 5
+
+
 
 class Agent():
     def __init__(self,root:Node) -> None:
@@ -31,12 +33,7 @@ class Agent():
         self.now_node = root
         self.done = False
         
-
-    def step(self):
-        """
-        One interaction
-        """
-        self.question()
+        
     def step(self):
         self.question()
         now_node = self.now_node
@@ -74,7 +71,7 @@ class Agent():
                 response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                 print("AI:" + response)
                 keywords = extract(response,now_node.extract_words)
-                now_node = now_node.next_nodes[0]
+                now_node = now_node.next_nodes["0"]
             
             
             
@@ -87,7 +84,7 @@ class Agent():
                 self.answer(response)
                 chat_history_orig = self.content["messages"]
                 ch_dict = self.process_history(chat_history_orig)
-                now_node = now_node.next_nodes[0]
+                now_node = now_node.next_nodes["0"]
                 self.now_node = now_node
                 
                 
@@ -134,76 +131,80 @@ class Agent():
         return node.done
     
 
-style_component = StyleComponent("一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
-                                 "专业")
-task_component_judge_idle = TaskComponent("需要判断用户说的内容是否只是闲聊，与公司的业务是否相关")
-# judge_idle node
-rule_component_judge_idle = RuleComponent("""
-    例如用户说“你好”，“再见”，“帮我写个python代码”，“帮我写小说”这样用公司业务无关的话，就是闲聊。
-    如果用户问你的信息，比如你是谁，你擅长做什么也算是闲聊，因为这与公司的业务无关，只是问你关于你的信息。
-    并且你应该充分结合上下文，如果用户说了“没有”，“是的”，“大学本科毕业”等信息，你要判断他是不是在问答你的问题，而不是在闲聊。
-    如果是闲聊的话，输出<闲聊>是</闲聊>,不是的话输出输出<闲聊>否</闲聊>
-    """)
+# style_component = StyleComponent("一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
+#                                  "专业")
+# task_component_judge_idle = TaskComponent("需要判断用户说的内容是否只是闲聊，与公司的业务是否相关")
+# # judge_idle node
+# rule_component_judge_idle = RuleComponent("""
+#     例如用户说“你好”，“再见”，“帮我写个python代码”，“帮我写小说”这样用公司业务无关的话，就是闲聊。
+#     如果用户问你的信息，比如你是谁，你擅长做什么也算是闲聊，因为这与公司的业务无关，只是问你关于你的信息。
+#     并且你应该充分结合上下文，如果用户说了“没有”，“是的”，“大学本科毕业”等信息，你要判断他是不是在问答你的问题，而不是在闲聊。
+#     如果是闲聊的话，输出<闲聊>是</闲聊>,不是的话输出输出<闲聊>否</闲聊>
+#     """)
 
 
-last_prompt_judge_idle = OutputComponent("闲聊")
-input_prompt_judge_idle = InputComponent()
+# last_prompt_judge_idle = OutputComponent("闲聊")
+# input_prompt_judge_idle = InputComponent()
 
-args_judge_idle = {
-    "style":style_component,
-    "task":task_component_judge_idle,
-    "rule":rule_component_judge_idle,
-    "input":input_prompt_judge_idle,
-    "output":last_prompt_judge_idle
-}
-root = Node(node_type="judge",
-            extract_words="闲聊",
-            done = False,
-            **args_judge_idle)
+# args_judge_idle = {
+#     "style":style_component,
+#     "task":task_component_judge_idle,
+#     "rule":rule_component_judge_idle,
+#     "input":input_prompt_judge_idle,
+#     "output":last_prompt_judge_idle
+# }
+# root = Node(node_type="judge",
+#             extract_words="闲聊",
+#             done = False,
+#             **args_judge_idle)
 
-# idle node
-task_component_idle = TaskComponent("需要与用户进行正常的聊天")
-rule_component_idle = RuleComponent("""你有客户在和你闲聊。如果他是在打招呼的话，让他问你问题咨询，诱导他提问，如果他说的是结束或者再见的话，你要礼貌得说再见，并且询问他的联系方式。
-    如果他是在骂你的话，你应该道歉并且说你之后会做好。
-    """)
-last_prompt_idle = OutputComponent("回复")
-input_prompt_idle = InputComponent()
+# # idle node
+# task_component_idle = TaskComponent("需要与用户进行正常的聊天")
+# rule_component_idle = RuleComponent("""你有客户在和你闲聊。如果他是在打招呼的话，让他问你问题咨询，诱导他提问，如果他说的是结束或者再见的话，你要礼貌得说再见，并且询问他的联系方式。
+#     如果他是在骂你的话，你应该道歉并且说你之后会做好。
+#     """)
+# last_prompt_idle = OutputComponent("回复")
+# input_prompt_idle = InputComponent()
 
-args_idle = {
-    "style":style_component,
-    "task":task_component_idle,
-    "rule":rule_component_idle,
-    "input":input_prompt_idle,
-    "output":last_prompt_idle
-}
-idle_node = Node(node_type="response",
-            extract_words="回复",
-            done = True,
-            next_nodes= {0:root},
-            **args_idle)
+# args_idle = {
+#     "style":style_component,
+#     "task":task_component_idle,
+#     "rule":rule_component_idle,
+#     "input":input_prompt_idle,
+#     "output":last_prompt_idle
+# }
+# idle_node = Node(node_type="response",
+#             extract_words="回复",
+#             done = True,
+#             next_nodes= {0:root},
+#             **args_idle)
 
 
 
-# tool node
-task_component_tool = TaskComponent("""使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。
-        如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。""")
-rule_component_tool = RuleComponent(get_response_prompt())
-last_prompt_tool = OutputComponent("回复")
-knowledge_prompt_tool = KnowledgeBaseComponent("/home/aiwaves/longli/agents/src/agents/yc_final.json")
-args_tool = {
-    "style":style_component,
-    "task":task_component_tool,
-    "rule":rule_component_tool,
-    "knowledge":knowledge_prompt_tool,
-    "output":last_prompt_tool
-}
-tool_node = Node(node_type="response",
-            extract_words="回复",
-            done = True,
-            next_nodes= {0:root},
-            **args_idle)
+# # tool node
+# task_component_tool = TaskComponent("""使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。
+#         如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。""")
+# rule_component_tool = RuleComponent(get_response_prompt())
+# last_prompt_tool = OutputComponent("回复")
+# knowledge_prompt_tool = KnowledgeBaseComponent("/home/aiwaves/longli/agents/src/agents/yc_final.json")
+# args_tool = {
+#     "style":style_component,
+#     "task":task_component_tool,
+#     "rule":rule_component_tool,
+#     "knowledge":knowledge_prompt_tool,
+#     "output":last_prompt_tool
+# }
+# tool_node = Node(node_type="response",
+#             extract_words="回复",
+#             done = True,
+#             next_nodes= {0:root},
+#             **args_idle)
 
-root.next_nodes = {'是':idle_node,'否':tool_node}
+# root.next_nodes = {'是':idle_node,'否':tool_node}
 
+sop = SOP("/home/aiwaves/longli/agents/examples/customer_service.json")
+root = sop.root
 agent = Agent(root)
 agent.chat()
+
+
