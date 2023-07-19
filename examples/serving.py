@@ -22,11 +22,10 @@ from src.agents.agent import Agent
 if __name__ == "__name__":
     app = Flask(__name__)
     sop = SOP("customer_service.json")
-    root = sop.get_root()
-    agent = Agent(root)
+    agent = Agent(sop.get_root())
     @app.route('/api/v1/ask/',methods=['post'])
     def reply():
         query = request.json.get('query')
         agent.answer()
-    server = pywsgi.WSGIServer(('0.0.0.0', 7873), app)
+    server = pywsgi.WSGIServer(('0.0.0.0', 7820), app)
     server.serve_forever()
