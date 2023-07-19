@@ -156,7 +156,7 @@ def load_knowledge_base(path):
         answers.append(data[str(idx)]['a'])
         chunks.append(data[str(idx)]['chunk'])
     embeddings = np.array(embeddings,dtype=np.float32)
-    return embeddings, chunks
+    return embeddings, questions,answers,chunks
 
 
 if __name__ == '__main__':

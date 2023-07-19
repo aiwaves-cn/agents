@@ -74,7 +74,7 @@ class Node():
         prompt = ""
         last_prompt = ""
         for value in self.components.values():
-            if isinstance(value,InputComponent):
+            if isinstance(value,InputComponent) or isinstance(value,KnowledgeBaseComponent):
                 value.input = self.user_input
                 prompt = prompt +"\n" + value.get_prompt()
             elif not isinstance(value,OutputComponent):
