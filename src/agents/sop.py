@@ -72,4 +72,3 @@ class Node():
                 last_prompt += value.get_prompt()
         return prompt,last_prompt
     
-        

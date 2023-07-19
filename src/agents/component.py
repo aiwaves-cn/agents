@@ -98,3 +98,19 @@ class DemonstrationComponent(Component):
         for input, output in self.demonstrations:
             self.prompt += input + "\n" + output
         return self.prompt
+
+class KnowledgeBaseComponent(Component):
+    """
+    知识库
+    """
+    def __init__(self):
+        super().__init__()
+        self.knowledgebase_path = ""
+        self.user_input = ""
+        
+    def get_knowleage(user_input):
+        
+
+    def get_prompt(self):
+        prompt = ""
+        return prompt
