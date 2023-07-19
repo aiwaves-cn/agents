@@ -52,7 +52,7 @@ class Agent():
                 system_prompt,last_prompt = now_node.get_prompt()
                 response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                 keywords = extract(response,now_node.extract_words)
-                print(response)
+                print("AI:" + response)
                 next_nodes_nums = len(now_node.next_nodes.keys())
                 for i,key in enumerate(now_node.next_nodes):
                     if i == next_nodes_nums-1:
@@ -65,6 +65,7 @@ class Agent():
                 now_node.set_user_input(ch_dict)
                 system_prompt,last_prompt = now_node.get_prompt()
                 response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
+                print("AI:" + response)
                 keywords = extract(response,now_node.extract_words)
                 now_node = now_node.next_nodes[0]
             
@@ -73,13 +74,14 @@ class Agent():
                 system_prompt,last_prompt = now_node.get_prompt()
                 response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                 response = extract(response,now_node.extract_words)
+                print("AI:" + response)
                 self.answer(response)
                 chat_history_orig = self.content["messages"]
                 ch_dict = self.process_history(chat_history_orig)
                 now_node = now_node.next_nodes[0]
                 self.now_node = now_node
                 
-            if flag:
+            if flag or now_node == self.root:
                 break
             
     def chat(self):
@@ -88,10 +90,7 @@ class Agent():
         
         
     def answer(self,return_message):
-        for rem in return_message:
-            if rem["type"]=="chat":
-                answer = rem["content"]
-                self.content["messages"].append({"role":"bot","content":answer})
+        self.content["messages"].append({"role":"bot","content":return_message})
         
     def question(self):
         """
@@ -169,7 +168,7 @@ args_idle = {
 idle_node = Node(node_type="response",
             extract_words="回复",
             done = True,
-            next_nodes= {0:root}
+            next_nodes= {0:root},
             **args_idle)
 
 # tool node
@@ -190,11 +189,11 @@ args_idle = {
 idle_node = Node(node_type="response",
             extract_words="回复",
             done = True,
-            next_nodes= {0:root}
+            next_nodes= {0:root},
             **args_idle)
 
 
-
+root.next_nodes = {"是":idle_node,"否":root}
 
 
 agent = Agent(root)
