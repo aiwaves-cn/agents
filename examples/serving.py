@@ -26,6 +26,6 @@ if __name__ == "__name__":
     @app.route('/api/v1/ask/',methods=['post'])
     def reply():
         query = request.json.get('query')
-        agent.answer()
+        response = agent.step()
     server = pywsgi.WSGIServer(('0.0.0.0', 7820), app)
     server.serve_forever()
