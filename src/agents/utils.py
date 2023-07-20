@@ -14,11 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""helper functions for an LLM autonoumous agent"""
+"""
+helper functions for an LLM autonoumous agent
+"""
+
 import openai
 import json
 import numpy as np
 import tqdm
+
 MAX_CHAT_HISTORY = 5
 API_KEY = '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'
 PROXY = 'http://127.0.0.1:7000'
@@ -157,8 +161,3 @@ def load_knowledge_base(path):
         chunks.append(data[str(idx)]['chunk'])
     embeddings = np.array(embeddings,dtype=np.float32)
     return embeddings, questions,answers,chunks
-
-
-if __name__ == '__main__':
-    str = "hello 123 hello"
-    x = get_content_between_a_b("hello1","hello1",str)

@@ -14,9 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Component of an LLM Autonomous agent"""
+"""
+Components (modularized prompts) of a Node in an LLM Autonomous agent
+"""
+
 from text2vec import SentenceModel, semantic_search
 from utils import *
+
 class Component():
     def __init__(self):
         self.prompt = ""
