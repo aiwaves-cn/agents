@@ -17,19 +17,32 @@
 """
 example code for serving an autonomous agents with Flask/FastAPI backend
 """
+import argparse
 
-from flask import Flask,request
+from flask import Flask,request,Response
 from gevent import pywsgi
 from src.agents.sop import SOP
 from src.agents.agent import Agent
 
-if __name__ == "__name__":
+if __name__ == '__main__':
+    
+    parser = argparse.ArgumentParser(description='A demo of chatbot')
+    parser.add_argument('--model_ckpt', type=str, default='shibing624/text2vec-base-chinese', help='model checkpoint')
+    parser.add_argument('--model_type', type=str, default='SentenceModel', help='model name')
+    parser.add_argument('--topk', type=int, default=3)
+    parser.add_argument('--logger_dir', type=str, default='logs/test_log')
+    parser.add_argument('--knowledge_path', type=str, default='data/text_embeddings_yc_enhanced.json', help='path to save new_quries')
+    args = parser.parse_args()
+    
     app = Flask(__name__)
     sop = SOP("customer_service.json")
     agent = Agent(sop.get_root())
+    
     @app.route('/api/v1/ask/',methods=['post'])
     def reply():
         query = request.json.get('query')
-        response = agent.step()
+        response = agent.reply(query)
+        return Response(response, mimetype='text/event-stream', headers=headers)
+    
     server = pywsgi.WSGIServer(('0.0.0.0', 7820), app)
     server.serve_forever()
