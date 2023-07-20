@@ -78,13 +78,6 @@ class SOP:
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
             
 
-class Tool():
-
-    def __init__(self, type, **args):
-        if type == "kb":
-            database = database
-
-
 class Node():
 
     def __init__(self,
