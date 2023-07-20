@@ -14,11 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""example code for serving an autonomous agents with Flask/FastAPI backend"""
+"""
+example code for serving an autonomous agents with Flask/FastAPI backend
+"""
+
 from flask import Flask,request
 from gevent import pywsgi
 from src.agents.sop import SOP
 from src.agents.agent import Agent
+
 if __name__ == "__name__":
     app = Flask(__name__)
     sop = SOP("customer_service.json")
