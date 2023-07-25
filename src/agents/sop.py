@@ -14,14 +14,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""standard operation procedure of an LLM Autonomous agent"""
+"""
+standard operation procedure of an LLM Autonomous agent
+"""
+
 from abc import abstractmethod
 import json
 from utils import *
 from component import *
+<<<<<<< HEAD
 from prompt import *
 MIN_CATEGORY_SIM = 0.7
 TOY_INFO_PATH =['/home/aiwaves/longli/fenxiang/toy_info.json',"/home/aiwaves/longli/fenxiang/bb_info.json"] #子类目相关知识库的路径
+=======
+>>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b
 
 class SOP:
     def __init__(self,json_path):

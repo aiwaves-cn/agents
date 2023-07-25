@@ -1,4 +1,6 @@
 import json
+
+
 data = {}
 node_judge_idle = {
         "name":"node_judge_idle",
@@ -275,5 +277,6 @@ data["relation"] = {
     "node_extract_requirements":{"0":"node_search_recom"},
     "uncompare_fur_recom":{"0":"node_judge_idle"}
     }
+
 with open("test.json","w",encoding="utf-8") as f:
     json.dump(data,f,ensure_ascii=False,indent=2)
