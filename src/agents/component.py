@@ -161,7 +161,7 @@ class Information_KnowledgeComponent(KnowledgeComponent):
         memory.update(long_memory)
         memory.update(temp_memory)
         
-        return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["top_category"]}"""
+        return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["possible_category"],memory["top_category"]}"""
         
     
         
