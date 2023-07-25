@@ -310,4 +310,3 @@ class SearchNode(ToolNode):
         outputdict["response"] = chat_answer
         return outputdict
     
-

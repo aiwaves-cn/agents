@@ -139,19 +139,6 @@ def prompt_cat_markdown(category,information):
     prompt = f"""
 你现在是一个AI导购员，你的目标是以你的专业经验，帮助客户挑选到符合他需求的商品。
 现在用户已经确定了商品{category}，你的目标是先恭喜用户选择了该产品，然后根据商品信息{information}中的每个属性向用户分析如何购买正确的产品，商品信息格式为python 的字典。
-具体如下：
-{{key1:[value11,value12,value13],key2:[value21,value22,value23]......}}
-
-你需要将其转化成：
-key1:
-**value11**：
-**value12**：
-**value13**：
-key2:
-**value21**：
-**value22**：
-**value23**：
-
 
 注意，你要对不同的关键词附上不同的推荐理由（不需要额外输出，只需要将商品信息转化成有推荐理由的格式）
 关键！请务必记住，value要改写成**value**的格式！请务必按**value**的格式输出!
