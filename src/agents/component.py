@@ -14,9 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Component of an LLM Autonomous agent"""
+"""
+Components (modularized prompts) of a Node in an LLM Autonomous agent
+"""
+
+from abc import abstractmethod
 from text2vec import SentenceModel, semantic_search
 from utils import *
+
 class Component():
     def __init__(self):
         self.prompt = ""
@@ -51,7 +56,7 @@ class OutputComponent(Component):
         self.output = output
     
     def get_prompt(self):
-        return  f"""你的输出包在<{self.output}>和</{self.output}>中。
+        return  f"""请联系上文，进行<{self.output}>和</{self.output}>的提取。
 切记，输出格式为： 
 ```
 <{self.output}>
@@ -99,8 +104,6 @@ class DemonstrationComponent(Component):
             self.prompt += input + "\n" + output
 
     def get_prompt(self):
-        for input, output in self.demonstrations:
-            self.prompt += input + "\n" + output
         return self.prompt
 
 class KnowledgeBaseComponent(Component):
@@ -136,3 +139,28 @@ class KnowledgeBaseComponent(Component):
     def get_prompt(self):
         prompt = f"用户的输入是:{self.user_input}"+"\n"+f"与之最匹配的知识库内容是{self.get_knowledge(self.user_input)}"
         return prompt
+    
+
+class KnowledgeComponent:
+    def __init__(self) -> None:
+        pass
+    
+    @abstractmethod
+    def get_prompt():
+        pass
+    
+
+class Information_KnowledgeComponent(KnowledgeComponent):
+    def __init__(self) -> None:
+        super().__init__()
+    
+    def get_prompt(self,long_memory,temp_memory):
+        memory = {"extract_category":"","top_category":""}
+        memory.update(long_memory)
+        memory.update(temp_memory)
+        
+        return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["top_category"]}"""
+        
+    
+        
+        

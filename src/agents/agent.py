@@ -18,18 +18,19 @@
 from utils import *
 from sop import *
 from prompt import *
-import time 
 
 MAX_CHAT_HISTORY = 5
 
 class Agent():
-    def __init__(self,root:Node) -> None:
+    def __init__(self,sop) -> None:
         self.content = {
             "messages":[]
             }
-        self.root = root
-        self.now_node = root
-        self.done = False
+        self.SOP = SOP(sop)
+        self.root = self.SOP.root       
+        self.now_node = self.root
+        self.temp_memory = {}
+        self.long_memory = {}
         
     def reply(self,query):
         self.content["message"].append({"role":"user","content":query})
@@ -68,8 +69,8 @@ class Agent():
                 response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                 print("AI:" + response)
                 keywords = extract(response,now_node.extract_words)
-                now_node = now_node.next_nodes[0]
-                
+                self.long_memory[now_node.extract_words] = keywords
+                now_node = now_node.next_nodes["0"]
             
             
             elif now_node.node_type == "response":
@@ -83,7 +84,7 @@ class Agent():
                 ch_dict = self.process_history(chat_history_orig)
                 now_node = now_node.next_nodes[0]
                 self.now_node = now_node
-                return response
+                return response           
                 
                 
             if flag or now_node == self.root:
@@ -95,56 +96,90 @@ class Agent():
         flag = 0
         "Continuous recursion"
         while True:
-            chat_history_orig = self.content["messages"]
-            ch_dict = self.process_history(chat_history_orig)
-            # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
-            if now_node.done:
-                flag =1
-            
-            # Extract key information to determine which node branch to enter
-            if now_node.node_type =="judge":
-                now_node.set_user_input(ch_dict[-1]["content"])
-                
-                system_prompt,last_prompt = now_node.get_prompt()
-                response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                keywords = extract(response,now_node.extract_words)
-                
-                
-                print("AI:" + response)
-                next_nodes_nums = len(now_node.next_nodes.keys())
-                for i,key in enumerate(now_node.next_nodes):
-                    if i == next_nodes_nums-1:
-                        now_node = now_node.next_nodes[key]
-                    elif key == keywords:
-                        now_node = now_node.next_nodes[key]
-                        break
-                
-            # Extract keywords to proceed to the next node
-            elif now_node.node_type == "extract":
-                now_node.set_user_input(ch_dict[-1]["content"])
-                system_prompt,last_prompt = now_node.get_prompt()
-                response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                print("AI:" + response)
-                keywords = extract(response,now_node.extract_words)
-                now_node = now_node.next_nodes[0]
-            
-            
-            
-            elif now_node.node_type == "response":
-                now_node.set_user_input(ch_dict[-1]["content"])
-                system_prompt,last_prompt = now_node.get_prompt()
-                response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                response = extract(response,now_node.extract_words)
-                print("AI:" + response)
-                self.answer(response)
+            print(now_node.name)
+            if isinstance(now_node,GPTNode):
                 chat_history_orig = self.content["messages"]
                 ch_dict = self.process_history(chat_history_orig)
-                now_node = now_node.next_nodes[0]
-                self.now_node = now_node
+                self.long_memory["ch_dict"] = ch_dict
+                # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
+                if now_node.done:
+                    flag =1
+                
+                # Extract key information to determine which node branch to enter
+                if now_node.node_type =="judge":
+                    now_node.set_user_input(ch_dict[-1]["content"])
+                    
+                    system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
+                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
+                    keywords = extract(response,now_node.extract_words)
+                    
+                    
+                    print("AI:" + response)
+                    next_nodes_nums = len(now_node.next_nodes.keys())
+                    for i,key in enumerate(now_node.next_nodes):
+                        if i == next_nodes_nums-1:
+                            now_node = now_node.next_nodes[key]
+                        elif key == keywords:
+                            now_node = now_node.next_nodes[key]
+                            break
+                    
+                    
+                # Extract keywords to proceed to the next node
+                elif now_node.node_type == "extract":
+                    now_node.set_user_input(ch_dict[-1]["content"])
+                    system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
+                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
+                    print("AI:" + response)
+                    keywords = extract(response,now_node.extract_words)
+                    self.long_memory[now_node.extract_words] = keywords
+                    
+                    now_node = now_node.next_nodes["0"]
                 
                 
                 
+                elif now_node.node_type == "response":
+                    now_node.set_user_input(ch_dict[-1]["content"])
+                    system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
+                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
+                    response = extract(response,now_node.extract_words)
+                    print("AI:" + response)
+                    self.answer(response)
+                    chat_history_orig = self.content["messages"]
+                    ch_dict = self.process_history(chat_history_orig)
+                    now_node = now_node.next_nodes["0"]
+                    self.now_node = now_node
+                    
+                    
+                    
+            elif isinstance(now_node,ToolNode):
+                memory = {}
+                memory.update(self.long_memory)
+                memory.update(self.temp_memory)
+                now_output = now_node.func(memory)
+                
+                next_node = now_node
+                for key,value in now_output.items():
+                    if value:
+                        if key == "response":
+                            self.answer(value)
+                            print("AI:" + value)
+                        elif key == "temp_memory":
+                            for k,v in value.items():
+                                self.temp_memory[k] = v
+                                memory[k] = v
+                        elif key == "long_memory":
+                            for k,v in value.items():
+                                self.long_memory[k] = v
+                                memory[k] = v
+                                
+                        elif key == "next_node_id":
+                            next_node = now_node.next_nodes[value]
+                            
+                now_node = next_node
+                self.now_node = next_node
+                                    
             if flag or now_node == self.root:
+                self.temp_memory = {}
                 break
             
     def chat(self):
@@ -182,80 +217,10 @@ class Agent():
             ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
         return ch_dict
     
-    def is_done(self,node:Node):
+    def is_done(self,node:  GPTNode):
         return node.done
-    
-
-style_component = StyleComponent("一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
-                                 "专业")
-task_component_judge_idle = TaskComponent("需要判断用户说的内容是否只是闲聊，与公司的业务是否相关")
-# judge_idle node
-rule_component_judge_idle = RuleComponent("""
-    例如用户说“你好”，“再见”，“帮我写个python代码”，“帮我写小说”这样用公司业务无关的话，就是闲聊。
-    如果用户问你的信息，比如你是谁，你擅长做什么也算是闲聊，因为这与公司的业务无关，只是问你关于你的信息。
-    并且你应该充分结合上下文，如果用户说了“没有”，“是的”，“大学本科毕业”等信息，你要判断他是不是在问答你的问题，而不是在闲聊。
-    如果是闲聊的话，输出<闲聊>是</闲聊>,不是的话输出输出<闲聊>否</闲聊>
-    """)
-
-
-last_prompt_judge_idle = OutputComponent("闲聊")
-input_prompt_judge_idle = InputComponent()
-
-args_judge_idle = {
-    "style":style_component,
-    "task":task_component_judge_idle,
-    "rule":rule_component_judge_idle,
-    "input":input_prompt_judge_idle,
-    "output":last_prompt_judge_idle
-}
-root = Node(node_type="judge",
-            extract_words="闲聊",
-            done = False,
-            **args_judge_idle)
-
-# idle node
-task_component_idle = TaskComponent("需要与用户进行正常的聊天")
-rule_component_idle = RuleComponent("""你有客户在和你闲聊。如果他是在打招呼的话，让他问你问题咨询，诱导他提问，如果他说的是结束或者再见的话，你要礼貌得说再见，并且询问他的联系方式。
-    如果他是在骂你的话，你应该道歉并且说你之后会做好。
-    """)
-last_prompt_idle = OutputComponent("回复")
-input_prompt_idle = InputComponent()
-
-args_idle = {
-    "style":style_component,
-    "task":task_component_idle,
-    "rule":rule_component_idle,
-    "input":input_prompt_idle,
-    "output":last_prompt_idle
-}
-idle_node = Node(node_type="response",
-            extract_words="回复",
-            done = True,
-            next_nodes= {0:root},
-            **args_idle)
 
 
 
-# tool node
-task_component_tool = TaskComponent("""使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。
-        如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。""")
-rule_component_tool = RuleComponent(get_response_prompt())
-last_prompt_tool = OutputComponent("回复")
-knowledge_prompt_tool = KnowledgeBaseComponent("/home/aiwaves/longli/agents/src/agents/yc_final.json")
-args_tool = {
-    "style":style_component,
-    "task":task_component_tool,
-    "rule":rule_component_tool,
-    "knowledge":knowledge_prompt_tool,
-    "output":last_prompt_tool
-}
-tool_node = Node(node_type="response",
-            extract_words="回复",
-            done = True,
-            next_nodes= {0:root},
-            **args_idle)
-
-root.next_nodes = {'是':idle_node,'否':tool_node}
-
-agent = Agent(root)
+agent = Agent("/home/aiwaves/longli/agents/examples/test.json")
 agent.chat()
