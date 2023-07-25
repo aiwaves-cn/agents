@@ -1,5 +1,8 @@
 import json
+
+
 data = {}
+
 node0 = {
         "name":"node0",
         "node_type":"judge","extract_word":"闲聊","done":False,
@@ -17,6 +20,7 @@ node0 = {
             "output":{"output":"闲聊"}
             }
         }
+
 node1 = {"name":"node1",
     "node_type":"response","extract_word":"需要与用户进行正常的聊天","done":True,
          "components":
@@ -33,6 +37,7 @@ node1 = {"name":"node1",
             "output":{"output":"回复"}
             }
         }
+
 node2 = {
     "name":"node2","node_type":"response","extract_word":"回复","done":True,
          "components":
@@ -49,11 +54,14 @@ node2 = {
             "output":{"output":"回复"}
             }
         }
+
 data["node"] = {"node0":node0,"node1":node1,"node2":node2}
+
 data["relation"] = {
     "node0":{"是":"node1","否":"node2"},
     "node1":{"0":"node0"},
     "node2":{"0":"node0"}
     }
+
 with open("test.json","w",encoding="utf-8") as f:
     json.dump(data,f,ensure_ascii=False,indent=2)
