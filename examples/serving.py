@@ -38,14 +38,17 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     app = Flask(__name__)
-    sop = SOP("customer_service.json")
-    agent = Agent(sop.get_root())
-    
+    agent = Agent("/home/aiwaves/longli/agents/examples/shopping_assistant.json")
+    headers = {
+                'Content-Type': 'text/event-stream',
+                'Cache-Control': 'no-cache',
+                'X-Accel-Buffering': 'no',
+            }
     @app.route('/api/v1/ask/',methods=['post'])
     def reply():
         query = request.json.get('query')
         response = agent.reply(query)
         return Response(response, mimetype='text/event-stream', headers=headers)
     
-    server = pywsgi.WSGIServer(('0.0.0.0', 7820), app)
+    server = pywsgi.WSGIServer(('0.0.0.0', 8000), app)
     server.serve_forever()
