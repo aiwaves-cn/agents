@@ -265,6 +265,8 @@ class MatchNode(ToolNode):
             information = limit_values(information,3)
             outputdict["next_node_id"] = "0"
             outputdict["temp_memory"]["information"] = information
+        else:
+            outputdict["temp_memory"]["possible_category"] = topk_result[0][0]
         
         return  outputdict
         
@@ -279,7 +281,7 @@ class SearchNode(ToolNode):
         """
         outputdict = {"reponse":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
         requirements = memory["requirements"]
-        category = memory["extract_category"]
+        category = memory["category"]
         information = memory["information"]
         chat_answer = ""
         
@@ -306,5 +308,6 @@ class SearchNode(ToolNode):
             chat_answer +=  "\n" + "抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
         
         outputdict["response"] = chat_answer
+        return outputdict
     
 

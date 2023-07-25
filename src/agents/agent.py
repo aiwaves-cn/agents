@@ -221,5 +221,5 @@ class Agent():
         return ch_dict
     
 
-agent = Agent("/home/aiwaves/longli/agents/examples/customer_service.json")
+agent = Agent("/home/aiwaves/longli/agents/examples/shopping_assistant.json")
 agent.chat()
