@@ -160,8 +160,8 @@ class GPTNode():
 
 
 class ToolNode:
-    def __init__(self,next_nodes = {},name="",done=False):
-        self.next_nodes = next_nodes
+    def __init__(self,name="",done=False):
+        self.next_nodes = {}
         self.name = name
         self.done = done
     @abstractmethod
@@ -169,8 +169,8 @@ class ToolNode:
         pass
 
 class MatchNode(ToolNode):
-    def __init__(self,next_nodes = {},name="",done=False):
-        super().__init__(next_nodes,name,done)
+    def __init__(self,name="",done=False):
+        super().__init__(name,done)
         # 建立数据库
         self.information_dataset = []
         self.leaf_name = []
@@ -223,8 +223,8 @@ class MatchNode(ToolNode):
         return  outputdict
         
 class SearchNode(ToolNode):
-    def __init__(self, next_nodes={}, name="", done=False):
-        super().__init__(next_nodes, name, done)
+    def __init__(self, name="", done=False):
+        super().__init__(name, done)
     
     def func(self,memory):
         outputdict = {"reponse":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
