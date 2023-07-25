@@ -20,16 +20,11 @@ example code for serving an autonomous agents with Flask/FastAPI backend
 
 from flask import Flask,request
 from gevent import pywsgi
-<<<<<<< HEAD
 import sys
 sys.path.append("/home/aiwaves/longli/agents/src/agents")
 from sop import SOP
 from agent import Agent
-=======
-from src.agents.sop import SOP
-from src.agents.agent import Agent
 
->>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b
 if __name__ == "__name__":
     app = Flask(__name__)
     sop = SOP("customer_service.json")
