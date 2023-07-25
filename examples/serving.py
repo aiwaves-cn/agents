@@ -17,8 +17,10 @@
 """example code for serving an autonomous agents with Flask/FastAPI backend"""
 from flask import Flask,request
 from gevent import pywsgi
-from src.agents.sop import SOP
-from src.agents.agent import Agent
+import sys
+sys.path.append("/home/aiwaves/longli/agents/src/agents")
+from sop import SOP
+from agent import Agent
 if __name__ == "__name__":
     app = Flask(__name__)
     sop = SOP("customer_service.json")
@@ -26,6 +28,8 @@ if __name__ == "__name__":
     @app.route('/api/v1/ask/',methods=['post'])
     def reply():
         query = request.json.get('query')
-        response = agent.step()
+        response = agent.reply(query)
+        return response
+    app.run(debug=True,host='0.0.0.0', port=7820)
     server = pywsgi.WSGIServer(('0.0.0.0', 7820), app)
     server.serve_forever()
