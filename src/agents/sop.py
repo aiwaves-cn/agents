@@ -14,11 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""standard operation procedure of an LLM Autonomous agent"""
+"""
+standard operation procedure of an LLM Autonomous agent
+"""
+
 from abc import abstractmethod
 import json
 from utils import *
 from component import *
+
 class SOP:
     def __init__(self,json_path):
         with open(json_path) as f:
@@ -73,13 +77,6 @@ class SOP:
             for keyword,next_node in value.items():
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
             
-
-class Tool():
-
-    def __init__(self, type, **args):
-        if type == "kb":
-            database = database
-
 
 class Node():
 
