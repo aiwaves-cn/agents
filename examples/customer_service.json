@@ -1,6 +1,7 @@
 {
-    "node": {
+    "gpt_nodes": {
       "node0": {
+        "root":true,
         "name": "node0",
         "node_type": "judge",
         "extract_word": "闲聊",
@@ -67,7 +68,7 @@
           "demonstration": null,
           "input": false,
           "tool": {
-            "knowledge_base": "yc_final.json"
+            "knowledge_base": "/home/aiwaves/longli/agents/examples/yc_final.json"
           },
           "output": {
             "output": "回复"

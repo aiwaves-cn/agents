@@ -14,33 +14,29 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-standard operation procedure of an LLM Autonomous agent
-"""
-
+"""standard operation procedure of an LLM Autonomous agent"""
 from abc import abstractmethod
 import json
 from utils import *
 from component import *
-<<<<<<< HEAD
 from prompt import *
 MIN_CATEGORY_SIM = 0.7
 TOY_INFO_PATH =['/home/aiwaves/longli/fenxiang/toy_info.json',"/home/aiwaves/longli/fenxiang/bb_info.json"] #子类目相关知识库的路径
-=======
->>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b
 
 class SOP:
     def __init__(self,json_path):
         with open(json_path) as f:
             sop = json.load(f)
         self.root = None
-        gpt_nodes = self.init_gpt_nodes(sop)
-        tool_nodes = self.init_tool_nodes(sop)
         self.nodes = {}
-        self.nodes.update(gpt_nodes)
-        self.nodes.update(tool_nodes)
-        
-        self.init_relation(sop)
+        if "gpt_nodes" in sop:
+            gpt_nodes = self.init_gpt_nodes(sop)
+            self.nodes.update(gpt_nodes)
+        if "tool_nodes" in sop:
+            tool_nodes = self.init_tool_nodes(sop)
+            self.nodes.update(tool_nodes)
+        if "relation" in sop:
+            self.init_relation(sop)
         
     
     def init_gpt_nodes(self,sop):
@@ -138,7 +134,6 @@ class GPTNode():
         
         self.components = components
         self.user_input = user_input
-        self.system_prompt,self.last_prompt= self.get_prompt()
         self.extract_words = extract_words
         self.done = done
         self.name = name
@@ -152,7 +147,7 @@ class GPTNode():
         last_prompt = ""
         for value in self.components.values():
             if isinstance(value,InputComponent) or isinstance(value,KnowledgeBaseComponent):
-                value.input = self.user_input
+                value.user_input = self.user_input
                 prompt = prompt +"\n" + value.get_prompt()
             elif isinstance(value,OutputComponent):
                 last_prompt += value.get_prompt()
@@ -258,7 +253,7 @@ class SearchNode(ToolNode):
                 response = get_gpt_response_rule(memory["ch_dict"],prompt)
                 chat_answer += "\n" + response
         else:
-            chat_answer += "抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
+            chat_answer +=  "\n" + "抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
             
         
         outputdict["response"] = chat_answer
