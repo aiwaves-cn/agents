@@ -198,7 +198,13 @@ class ToolNode:
     def func(self,memory):
         pass
 
-
+class StaticNode(ToolNode):
+    def __init__(self, name="",output = "", done=False):
+        super().__init__(name, done)
+        self.output = output
+    def func(self,memory):
+        outputdict = {"reponse":self.output,"temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+        return outputdict
 
 class MatchNode(ToolNode):
     def __init__(self,name="",done=False):
@@ -300,6 +306,5 @@ class SearchNode(ToolNode):
             chat_answer +=  "\n" + "抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
         
         outputdict["response"] = chat_answer
-        return outputdict
     
 
