@@ -105,10 +105,10 @@ class Agent():
         flag = 0
         "Continuous recursion"
         while True:
+            chat_history_orig = self.content["messages"]
+            ch_dict = self.process_history(chat_history_orig)
+            self.long_memory["ch_dict"] = ch_dict
             if isinstance(now_node,GPTNode):
-                chat_history_orig = self.content["messages"]
-                ch_dict = self.process_history(chat_history_orig)
-                self.long_memory["ch_dict"] = ch_dict
                 # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
                 if now_node.done:
                     flag =1
@@ -138,8 +138,13 @@ class Agent():
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
                     response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                     print("AI:" + response)
-                    keywords = extract(response,now_node.extract_words)
-                    self.long_memory[now_node.extract_words] = keywords
+                    if type(now_node.extract_words) == list:
+                        for extract_word in now_node.extract_words:
+                            keywords = extract(response,extract_word)
+                            self.long_memory[extract_word] = keywords
+                    else:
+                        keywords = extract(response,now_node.extract_words)
+                        self.long_memory[now_node.extract_words] = keywords
                     
                     now_node = now_node.next_nodes["0"]
                 
@@ -149,11 +154,16 @@ class Agent():
                     now_node.set_user_input(ch_dict[-1]["content"])
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
                     response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                    response = extract(response,now_node.extract_words)
-                    print("AI:" + response)
-                    self.answer(response)
-                    chat_history_orig = self.content["messages"]
-                    ch_dict = self.process_history(chat_history_orig)
+                    if type(now_node.extract_words) == list:
+                        for extract_word in now_node.extract_words:
+                            response = extract(response,extract_word)
+                            self.answer(response)
+                            print("AI:" + response)
+                    else:
+                        response = extract(response,now_node.extract_words)
+                        print("AI:" + response)
+                        self.answer(response)
+                        
                     now_node = now_node.next_nodes["0"]
                     self.now_node = now_node
                     
