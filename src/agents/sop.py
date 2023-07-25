@@ -165,8 +165,16 @@ class ToolNode:
         self.name = name
         self.done = done
     @abstractmethod
-    def func():
+    def func(self,MEMORY):
         pass
+
+class StaticNode(ToolNode):
+    def __init__(self, name="",output = "", done=False):
+        super().__init__(name, done)
+        self.output = output
+    def func(self,memory):
+        outputdict = {"reponse":self.output,"temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+        return outputdict
 
 class MatchNode(ToolNode):
     def __init__(self,name="",done=False):
