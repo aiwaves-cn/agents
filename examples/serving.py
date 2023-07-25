@@ -22,8 +22,10 @@ import argparse
 
 from flask import Flask,request,Response
 from gevent import pywsgi
-from src.agents.sop import SOP
-from src.agents.agent import Agent
+import sys
+sys.path.append("/home/aiwaves/longli/agents/src/agents")
+from sop import SOP
+from agent import Agent
 
 if __name__ == '__main__':
     

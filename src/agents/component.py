@@ -18,6 +18,7 @@
 Components (modularized prompts) of a Node in an LLM Autonomous agent
 """
 
+from abc import abstractmethod
 from text2vec import SentenceModel, semantic_search
 from utils import *
 
@@ -41,12 +42,12 @@ class InputComponent(Component):
     
     def __init__(self):
         super().__init__()
-        self.input = ""
+        self.user_input = ""
         
     def get_prompt(self):
-        if self.input == "":
+        if self.user_input == "":
             return ""
-        return  f"用户的输入是:{self.input}。"
+        return  f"用户的输入是:{self.user_input}。"
 
 class OutputComponent(Component):
 
@@ -55,7 +56,7 @@ class OutputComponent(Component):
         self.output = output
     
     def get_prompt(self):
-        return  f"""你的输出包在<{self.output}>和</{self.output}>中。
+        return  f"""请联系上文，进行<{self.output}>和</{self.output}>的提取。
 切记，输出格式为： 
 ```
 <{self.output}>
@@ -90,26 +91,25 @@ class RuleComponent(Component):
 
 class DemonstrationComponent(Component):
     """
-    例子是列表，里面是input和output的元祖
+    input a list,the example of answer.
     """
 
     def __init__(self, demonstrations):
         super().__init__()
         self.demonstrations = demonstrations
-        self.prompt = "以下是你可以参考的例子：\n"
 
     def add_demonstration(self, demonstration):
-        for input, output in demonstration:
-            self.prompt += input + "\n" + output
+        self.demonstrations.append(demonstration)
 
     def get_prompt(self):
-        for input, output in self.demonstrations:
-            self.prompt += input + "\n" + output
-        return self.prompt
+        prompt = "以下是你可以参考的例子：\n"
+        for demonstration in self.demonstrations:
+            prompt +="\n" + demonstration
+        return prompt
 
 class KnowledgeBaseComponent(Component):
     """
-    知识库
+    KnowledgeBase
     """
     def __init__(self,knowledge_base,top_k = 2):
         super().__init__()
@@ -120,6 +120,7 @@ class KnowledgeBaseComponent(Component):
         self.kb_embeddings,self.kb_questions,self.kb_answers,self.kb_chunks = load_knowledge_base(self.knowledge_base_path)
         
     def get_knowledge(self,user_input):
+        
         knowledge = ""
         query_embedding = self.embedding_model.encode(user_input)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
@@ -140,3 +141,28 @@ class KnowledgeBaseComponent(Component):
     def get_prompt(self):
         prompt = f"用户的输入是:{self.user_input}"+"\n"+f"与之最匹配的知识库内容是{self.get_knowledge(self.user_input)}"
         return prompt
+    
+
+class KnowledgeComponent:
+    def __init__(self) -> None:
+        pass
+    
+    @abstractmethod
+    def get_prompt():
+        pass
+    
+
+class Information_KnowledgeComponent(KnowledgeComponent):
+    def __init__(self) -> None:
+        super().__init__()
+    
+    def get_prompt(self,long_memory,temp_memory):
+        memory = {"extract_category":"","top_category":""}
+        memory.update(long_memory)
+        memory.update(temp_memory)
+        
+        return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["possible_category"],memory["top_category"]}"""
+        
+    
+        
+        
