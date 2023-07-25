@@ -91,24 +91,25 @@ class RuleComponent(Component):
 
 class DemonstrationComponent(Component):
     """
-    例子是列表，里面是input和output的元祖
+    input a list,the example of answer.
     """
 
     def __init__(self, demonstrations):
         super().__init__()
         self.demonstrations = demonstrations
-        self.prompt = "以下是你可以参考的例子：\n"
 
     def add_demonstration(self, demonstration):
-        for input, output in demonstration:
-            self.prompt += input + "\n" + output
+        self.demonstrations.append(demonstration)
 
     def get_prompt(self):
-        return self.prompt
+        prompt = "以下是你可以参考的例子：\n"
+        for demonstration in self.demonstrations:
+            prompt +="\n" + demonstration
+        return prompt
 
 class KnowledgeBaseComponent(Component):
     """
-    知识库
+    KnowledgeBase
     """
     def __init__(self,knowledge_base,top_k = 2):
         super().__init__()

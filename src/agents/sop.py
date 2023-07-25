@@ -24,6 +24,10 @@ MIN_CATEGORY_SIM = 0.7
 TOY_INFO_PATH =['/home/aiwaves/longli/fenxiang/toy_info.json',"/home/aiwaves/longli/fenxiang/bb_info.json"] #子类目相关知识库的路径
 
 class SOP:
+    """
+    input:the json of the sop
+    output: a sop graph
+    """
     def __init__(self,json_path):
         with open(json_path) as f:
             sop = json.load(f)
@@ -40,6 +44,7 @@ class SOP:
         
     
     def init_gpt_nodes(self,sop):
+        # node_sop: a list of the node
         node_sop = sop["gpt_nodes"]
         nodes_dict = {}
         for node in node_sop:
@@ -57,6 +62,7 @@ class SOP:
         return nodes_dict
             
     def init_tool_nodes(self,sop):
+        # node_sop:a list of the node
         node_sop = sop["tool_nodes"]
         nodes_dict = {}
         for node in node_sop:
@@ -116,16 +122,39 @@ class GPTNode():
                  done=False,
                  user_input:str= "",
                  components:dict = {}):
-        """_summary_
+        """the simplist node mainly based on gpt:
+            input the prompt,output the response.Afterwards, use response for different operations
 
         Args:
             tool (Tool, optional): _description_. Defaults to None.
-            node_type (str, optional): _description_. Defaults to None.
+            node_type (str, optional): three type (reponse, extract,judge)  
+                                        ---response:return a response
+                                        ---extract:return a keyword for memory
+                                        ---judge:return the keyword to determine which node for next
             extract_words (str, optional): _description_. Defaults to "".
             next_nodes (dict, optional): _description_. Defaults to {}.
-            done (bool, optional): _description_. Defaults to False.
-            user_input (str, optional): _description_. Defaults to "".
-            components(dict) : "style"  *"task"*  "rule" "demonstration"  "input" "tool" *"output"*
+            done (bool, optional):   True:When the program runs to this node, it will be interrupted, allowing the user to input.
+            user_input (str, optional): The content you want to agent know. Defaults to "".
+            
+            components(dict) : Contains the definition of various components
+           { 
+           "style":{"agent":"" , "style": "" } ,
+            *"task"*:{"task":""} , 
+            "rule":{"rule":""}, 
+            "knowledge" (str): ""
+            "demonstration":{"demonstration":[]} , 
+            "input":true or false,
+            "tool":{tool_name:"",**args} ,
+            *"output"*:{"output":""} 
+            }
+           --style(agent,style) : agent(str):the role of the agent.   style(str):the style of the agent
+           --task(task) : task(str):the task of the agent
+           --rule(rule) : rule(str):the rule of the agent
+           --knowledge(str) : the name of knowledge component
+           --demonstration: demenstration(list):the example of answer
+           --input : yet have external inputs , always be last input
+           --tool(tool_name,**args) : tool_name(str):the name of tool,**args(Dict):the parameters of tool
+           --output(output) : output(str):the html wrap of response
         """
         self.prompt = ""
         self.node_type = node_type
@@ -137,11 +166,12 @@ class GPTNode():
         self.extract_words = extract_words
         self.done = done
         self.name = name
-        
+    
+    # mainly used for inputcomponent
     def set_user_input(self,user_input):
         self.user_input = user_input
 
-
+    # get complete prompt
     def get_prompt(self,long_memory={},temp_memory = {}):
         prompt = ""
         last_prompt = ""
@@ -158,20 +188,23 @@ class GPTNode():
         return prompt,last_prompt
     
 
-
+# the base of the toolnode
 class ToolNode:
     def __init__(self,name="",done=False):
         self.next_nodes = {}
         self.name = name
         self.done = done
     @abstractmethod
-    def func():
+    def func(self,memory):
         pass
+
+
 
 class MatchNode(ToolNode):
     def __init__(self,name="",done=False):
         super().__init__(name,done)
-        # 建立数据库
+        
+        # create dateset
         self.information_dataset = []
         self.leaf_name = []
         for toy_path in TOY_INFO_PATH:
@@ -193,10 +226,15 @@ class MatchNode(ToolNode):
 
     
     def search_information(self,category,information_dataset):
-        #函数：搜索知识库相关的信息
-        #入参 attachment 类型：dict 含义：message携带的信息
-        #出参 re_info 类型：List 含义：与attachments['category']的知识库相关的三条记录
-        #出参 all_knowd 类型：List 含义：与attachments['category']的知识库
+        """
+
+        Args:
+            category (str): Categories that need to be matched in the database
+            information_dataset (list): the dateset
+
+        Returns:
+            dict: Information on target categories
+        """
         knowledge = {}
         for d in information_dataset:
             if category == d["cat_leaf_name"]:
@@ -207,7 +245,9 @@ class MatchNode(ToolNode):
     
     
     def func(self,memory):
-        
+        """
+        return the memory of information and determine the next node
+        """
         outputdict = {"reponse":"","temp_memory":{},"long_memory":{},"next_node_id" : "1"}
         
         topk_result = matching_category(memory["extract_category"],self.leaf_name,None,self.target_embbeding,top_k=3)
@@ -222,11 +262,15 @@ class MatchNode(ToolNode):
         
         return  outputdict
         
+        
 class SearchNode(ToolNode):
     def __init__(self, name="", done=False):
         super().__init__(name, done)
     
     def func(self,memory):
+        """
+        return the recommend of the search shop
+        """
         outputdict = {"reponse":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
         requirements = memory["requirements"]
         category = memory["extract_category"]
@@ -254,8 +298,8 @@ class SearchNode(ToolNode):
                 chat_answer += "\n" + response
         else:
             chat_answer +=  "\n" + "抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
-            
         
         outputdict["response"] = chat_answer
         return outputdict
-        
+    
+

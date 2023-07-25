@@ -23,7 +23,7 @@ MAX_CHAT_HISTORY = 5
 
 class Agent():
     """
-    auto agent,input the json of sop
+    Auto agent, input the JSON of SOP.
     """
     def __init__(self,sop) -> None:
         self.content = {
@@ -36,6 +36,9 @@ class Agent():
         self.long_memory = {}
         
     def reply(self,query):
+        """
+        reply api ,The interface set for backend calls 
+        """
         self.content["message"].append({"role":"user","content":query})
         now_node = self.now_node
         flag = 0
@@ -76,6 +79,7 @@ class Agent():
                 now_node = now_node.next_nodes["0"]
             
             
+            # return response to user
             elif now_node.node_type == "response":
                 
                 now_node.set_user_input(ch_dict[-1]["content"])
@@ -159,9 +163,7 @@ class Agent():
                 memory = {}
                 memory.update(self.long_memory)
                 memory.update(self.temp_memory)
-                
                 now_output = now_node.func(memory)
-                
                 next_node = now_node
                 for key,value in now_output.items():
                     if value:
@@ -175,8 +177,7 @@ class Agent():
                         elif key == "long_memory":
                             for k,v in value.items():
                                 self.long_memory[k] = v
-                                memory[k] = v
-                                
+                                memory[k] = v          
                         elif key == "next_node_id":
                             next_node = now_node.next_nodes[value]
                             
@@ -196,9 +197,6 @@ class Agent():
         self.content["messages"].append({"role":"bot","content":return_message})
         
     def question(self):
-        """
-        append the question of user
-        """
         question = input("用户：")
         self.content["messages"].append({"role":"user","content":question})
 
@@ -206,7 +204,7 @@ class Agent():
         """Dealing with incoming data in different situations
 
         Args:
-            chat_history (_type_): input chat history
+            chat_history (list): input chat history
 
         Returns:
             list: history of gpt usage
@@ -222,10 +220,6 @@ class Agent():
             ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
         return ch_dict
     
-    def is_done(self,node:  GPTNode):
-        return node.done
-
-
 
 agent = Agent("/home/aiwaves/longli/agents/examples/customer_service.json")
 agent.chat()
