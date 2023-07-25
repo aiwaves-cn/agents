@@ -136,10 +136,6 @@ class KnowledgeBaseComponent(Component):
                 temp.append(self.kb_chunks[matching_idx])
                 if len(temp) == self.top_k:
                     break
-        print("user_input:" + "********************************************")
-        print(user_input)
-        print("knowledge:********************************************")
-        print(knowledge)
         return knowledge
 
     def get_prompt(self):
