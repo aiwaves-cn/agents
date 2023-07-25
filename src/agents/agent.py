@@ -14,7 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""LLM autonoumous agent"""
+"""
+LLM autonoumous agent
+"""
+
 from utils import *
 from sop import *
 from prompt import *
@@ -222,5 +225,31 @@ class Agent():
 
 
 
+<<<<<<< HEAD
 agent = Agent("/home/aiwaves/longli/agents/examples/test.json")
 agent.chat()
+=======
+# tool node
+task_component_tool = TaskComponent("""使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。
+        如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。""")
+rule_component_tool = RuleComponent(get_response_prompt())
+last_prompt_tool = OutputComponent("回复")
+knowledge_prompt_tool = KnowledgeBaseComponent("/home/aiwaves/longli/agents/src/agents/yc_final.json")
+args_tool = {
+    "style":style_component,
+    "task":task_component_tool,
+    "rule":rule_component_tool,
+    "knowledge":knowledge_prompt_tool,
+    "output":last_prompt_tool
+}
+tool_node = Node(node_type="response",
+            extract_words="回复",
+            done = True,
+            next_nodes= {0:root},
+            **args_idle)
+
+root.next_nodes = {'是':idle_node,'否':tool_node}
+
+agent = Agent(root)
+agent.chat()
+>>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b

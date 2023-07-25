@@ -14,16 +14,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+<<<<<<< HEAD
 """helper functions for an LLM autonoumous agent"""
 import csv
 import random
+=======
+"""
+helper functions for an LLM autonoumous agent
+"""
+
+>>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b
 import openai
 import json
 import numpy as np
 import requests
 import torch
 import tqdm
+<<<<<<< HEAD
 from text2vec import SentenceModel, semantic_search
+=======
+
+>>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b
 MAX_CHAT_HISTORY = 5
 API_KEY = "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"
 PROXY = 'http://127.0.0.1:7000'
@@ -177,6 +188,7 @@ def load_knowledge_base(path):
         chunks.append(data[str(idx)]['chunk'])
     embeddings = np.array(embeddings,dtype=np.float32)
     return embeddings, questions,answers,chunks
+<<<<<<< HEAD
 
 
 
@@ -418,3 +430,5 @@ def search_with_api(requirements,categery):
 if __name__ == '__main__':
     str = "hello 123 hello"
     x = get_content_between_a_b("hello1","hello1",str)
+=======
+>>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b

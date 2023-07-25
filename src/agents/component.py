@@ -18,7 +18,10 @@
 Components (modularized prompts) of a Node in an LLM Autonomous agent
 """
 
+<<<<<<< HEAD
 from abc import abstractmethod
+=======
+>>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b
 from text2vec import SentenceModel, semantic_search
 from utils import *
 
