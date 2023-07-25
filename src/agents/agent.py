@@ -39,9 +39,9 @@ class Agent():
         """
         reply api ,The interface set for backend calls 
         """
-        self.question()
-        now_node = self.now_node
+        self.content["messages"].append({"role":"user","content":query})
         flag = 0
+        now_node = self.now_node
         "Continuous recursion"
         while True:
             chat_history_orig = self.content["messages"]
@@ -59,9 +59,6 @@ class Agent():
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
                     response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
                     keywords = extract(response,now_node.extract_words)
-                    
-                    
-                    print("AI:" + response)
                     next_nodes_nums = len(now_node.next_nodes.keys())
                     for i,key in enumerate(now_node.next_nodes):
                         if i == next_nodes_nums-1:
@@ -76,7 +73,6 @@ class Agent():
                     now_node.set_user_input(ch_dict[-1]["content"])
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
                     response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                    print("AI:" + response)
                     if type(now_node.extract_words) == list:
                         for extract_word in now_node.extract_words:
                             keywords = extract(response,extract_word)
@@ -93,18 +89,10 @@ class Agent():
                     now_node.set_user_input(ch_dict[-1]["content"])
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
                     response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                    if type(now_node.extract_words) == list:
-                        for extract_word in now_node.extract_words:
-                            response = extract(response,extract_word)
-                            self.answer(response)
-                            print("AI:" + response)
-                    else:
-                        response = extract(response,now_node.extract_words)
-                        print("AI:" + response)
-                        self.answer(response)
-                        
                     now_node = now_node.next_nodes["0"]
                     self.now_node = now_node
+                    print("AI:" + response)
+                    yield response
                     
                     
                     
@@ -114,11 +102,11 @@ class Agent():
                 memory.update(self.temp_memory)
                 now_output = now_node.func(memory)
                 next_node = now_node
+                response = ""
                 for key,value in now_output.items():
                     if value:
                         if key == "response":
-                            self.answer(value)
-                            print("AI:" + value)
+                            response = value
                         elif key == "temp_memory":
                             for k,v in value.items():
                                 self.temp_memory[k] = v
@@ -132,121 +120,11 @@ class Agent():
                             
                 now_node = next_node
                 self.now_node = next_node
-                                    
+                print("AI:" + response)
+                yield response               
             if flag or now_node == self.root:
                 self.temp_memory = {}
                 break
-
-    def step(self):
-        self.question()
-        now_node = self.now_node
-        flag = 0
-        "Continuous recursion"
-        while True:
-            chat_history_orig = self.content["messages"]
-            ch_dict = self.process_history(chat_history_orig)
-            self.long_memory["ch_dict"] = ch_dict
-            if isinstance(now_node,GPTNode):
-                # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
-                if now_node.done:
-                    flag =1
-                
-                # Extract key information to determine which node branch to enter
-                if now_node.node_type =="judge":
-                    now_node.set_user_input(ch_dict[-1]["content"])
-                    
-                    system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
-                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                    keywords = extract(response,now_node.extract_words)
-                    
-                    
-                    print("AI:" + response)
-                    next_nodes_nums = len(now_node.next_nodes.keys())
-                    for i,key in enumerate(now_node.next_nodes):
-                        if i == next_nodes_nums-1:
-                            now_node = now_node.next_nodes[key]
-                        elif key == keywords:
-                            now_node = now_node.next_nodes[key]
-                            break
-                    
-                    
-                # Extract keywords to proceed to the next node
-                elif now_node.node_type == "extract":
-                    now_node.set_user_input(ch_dict[-1]["content"])
-                    system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
-                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                    print("AI:" + response)
-                    if type(now_node.extract_words) == list:
-                        for extract_word in now_node.extract_words:
-                            keywords = extract(response,extract_word)
-                            self.long_memory[extract_word] = keywords
-                    else:
-                        keywords = extract(response,now_node.extract_words)
-                        self.long_memory[now_node.extract_words] = keywords
-                    
-                    now_node = now_node.next_nodes["0"]
-                
-                
-                
-                elif now_node.node_type == "response":
-                    now_node.set_user_input(ch_dict[-1]["content"])
-                    system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
-                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
-                    if type(now_node.extract_words) == list:
-                        for extract_word in now_node.extract_words:
-                            response = extract(response,extract_word)
-                            self.answer(response)
-                            print("AI:" + response)
-                    else:
-                        response = extract(response,now_node.extract_words)
-                        print("AI:" + response)
-                        self.answer(response)
-                        
-                    now_node = now_node.next_nodes["0"]
-                    self.now_node = now_node
-                    
-                    
-                    
-            elif isinstance(now_node,ToolNode):
-                memory = {}
-                memory.update(self.long_memory)
-                memory.update(self.temp_memory)
-                now_output = now_node.func(memory)
-                next_node = now_node
-                for key,value in now_output.items():
-                    if value:
-                        if key == "response":
-                            self.answer(value)
-                            print("AI:" + value)
-                        elif key == "temp_memory":
-                            for k,v in value.items():
-                                self.temp_memory[k] = v
-                                memory[k] = v
-                        elif key == "long_memory":
-                            for k,v in value.items():
-                                self.long_memory[k] = v
-                                memory[k] = v          
-                        elif key == "next_node_id":
-                            next_node = now_node.next_nodes[value]
-                            
-                now_node = next_node
-                self.now_node = next_node
-                                    
-            if flag or now_node == self.root:
-                self.temp_memory = {}
-                break
-            
-    def chat(self):
-        while True:
-            self.step()  
-        
-        
-    def answer(self,return_message):
-        self.content["messages"].append({"role":"bot","content":return_message})
-        
-    def question(self):
-        question = input("用户：")
-        self.content["messages"].append({"role":"user","content":question})
 
     def process_history(self,chat_history):
         """Dealing with incoming data in different situations
@@ -268,6 +146,3 @@ class Agent():
             ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
         return ch_dict
     
-
-agent = Agent("/home/aiwaves/longli/agents/examples/shopping_assistant.json")
-agent.chat()
