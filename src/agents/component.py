@@ -18,10 +18,7 @@
 Components (modularized prompts) of a Node in an LLM Autonomous agent
 """
 
-<<<<<<< HEAD
 from abc import abstractmethod
-=======
->>>>>>> 6630d40fb43c2d4e5e5e021b943c0668ed10fa3b
 from text2vec import SentenceModel, semantic_search
 from utils import *
 
@@ -45,12 +42,12 @@ class InputComponent(Component):
     
     def __init__(self):
         super().__init__()
-        self.input = ""
+        self.user_input = ""
         
     def get_prompt(self):
-        if self.input == "":
+        if self.user_input == "":
             return ""
-        return  f"用户的输入是:{self.input}。"
+        return  f"用户的输入是:{self.user_input}。"
 
 class OutputComponent(Component):
 
@@ -122,6 +119,7 @@ class KnowledgeBaseComponent(Component):
         self.kb_embeddings,self.kb_questions,self.kb_answers,self.kb_chunks = load_knowledge_base(self.knowledge_base_path)
         
     def get_knowledge(self,user_input):
+        
         knowledge = ""
         query_embedding = self.embedding_model.encode(user_input)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
@@ -137,6 +135,10 @@ class KnowledgeBaseComponent(Component):
                 temp.append(self.kb_chunks[matching_idx])
                 if len(temp) == self.top_k:
                     break
+        print("user_input:" + "********************************************")
+        print(user_input)
+        print("knowledge:********************************************")
+        print(knowledge)
         return knowledge
 
     def get_prompt(self):
