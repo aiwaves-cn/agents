@@ -102,7 +102,41 @@ def get_gpt_response_rule(ch_dict,
     return response.choices[0].message["content"]
 
 
+def get_gpt_response_rule_stream(ch_dict,
+                          system_prompt,
+                          last_prompt = None,
+                          model="gpt-3.5-turbo-16k-0613",
+                          temperature=0):
+    """get the response of chatgpt
 
+    Args:
+        ch_dict (list): the history of chat
+        system_prompt (str): the main task set in the first
+        last_prompt (str): attached to the final task
+        temperature(float):randomness of GPT responses
+
+    Returns:
+        str: the response of chatgpt
+    """
+    openai.api_key = API_KEY
+    openai.proxy = PROXY
+
+    messages = [{"role": "system", "content": system_prompt}]
+    if ch_dict:
+        messages += ch_dict
+    if last_prompt:
+        messages += [{"role": "user", "content": f"{last_prompt}"}]
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=temperature, 
+        stream = True 
+    )
+    for res in response:
+        if res:
+            print(res['choices'][0]['delta'].get('content'),end = "")
+            yield json.dumps(res['choices'][0]['delta'].get('content'),ensure_ascii=False) + "\n"
+            
 def load_knowledge_base_chunk(path):
     """
     Load json format knowledge base.
