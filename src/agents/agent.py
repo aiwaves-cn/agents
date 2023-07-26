@@ -18,9 +18,13 @@
 from utils import *
 from sop import *
 from prompt import *
-
+from flask import Response
 MAX_CHAT_HISTORY = 5
-
+headers = {
+            'Content-Type': 'text/event-stream',
+            'Cache-Control': 'no-cache',
+            'X-Accel-Buffering': 'no',
+        }
 class Agent():
     """
     Auto agent, input the JSON of SOP.
@@ -44,6 +48,7 @@ class Agent():
         now_node = self.now_node
         "Continuous recursion"
         while True:
+            print(now_node.name)
             chat_history_orig = self.content["messages"]
             ch_dict = self.process_history(chat_history_orig)
             self.long_memory["ch_dict"] = ch_dict
@@ -88,11 +93,11 @@ class Agent():
                 elif now_node.node_type == "response":
                     now_node.set_user_input(ch_dict[-1]["content"])
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
-                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
+                    response = get_gpt_response_rule_stream(ch_dict,system_prompt,"请联系上文进行回答，你的回答要包裹在<response></response>中，即输出格式为：<response>（你的回复内容）</response>")
                     now_node = now_node.next_nodes["0"]
                     self.now_node = now_node
-                    print("AI:" + response)
-                    yield response
+                    for res in response:
+                        yield  res  
                     
                     
                     
@@ -100,28 +105,25 @@ class Agent():
                 memory = {}
                 memory.update(self.long_memory)
                 memory.update(self.temp_memory)
-                now_output = now_node.func(memory)
                 next_node = now_node
-                response = ""
-                for key,value in now_output.items():
-                    if value:
-                        if key == "response":
-                            response = value
-                        elif key == "temp_memory":
-                            for k,v in value.items():
-                                self.temp_memory[k] = v
-                                memory[k] = v
-                        elif key == "long_memory":
-                            for k,v in value.items():
-                                self.long_memory[k] = v
-                                memory[k] = v          
-                        elif key == "next_node_id":
-                            next_node = now_node.next_nodes[value]
-                            
+                now_output = now_node.func(memory)
+                for output in now_output:
+                    if isinstance(output,dict):
+                        response = output["response"]
+                        for k,v in output["temp_memory"].items():
+                            self.temp_memory[k] = v
+                            memory[k] = v
+                        for k,v in output["long_memory"].items():
+                            self.long_memory[k] = v
+                            memory[k] = v
+                        next_node = now_node.next_nodes[output["next_node_id"]]
+                        for res in response:
+                            yield res
+                    else:
+                        yield output
+                    
                 now_node = next_node
-                self.now_node = next_node
-                print("AI:" + response)
-                yield response               
+                self.now_node = next_node           
             if flag or now_node == self.root:
                 self.temp_memory = {}
                 break
@@ -146,3 +148,4 @@ class Agent():
             ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
         return ch_dict
     
+   

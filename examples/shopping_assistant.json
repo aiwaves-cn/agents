@@ -32,7 +32,7 @@
       },
       "node_idle": {
         "name": "node_idle",
-        "node_type": "extract",
+        "node_type": "response",
         "extract_word": "response",
         "done": true,
         "components": {
@@ -49,10 +49,7 @@
           },
           "demonstration": null,
           "input": false,
-          "tool": null,
-          "output": {
-            "output": "response"
-          }
+          "tool": null
         }
       },
       "node_extract_category": {
@@ -102,10 +99,7 @@
             "\n  用户想要的是\"变形玩具\"，而我们公司有的是[变形金刚，水枪，潮流玩具]\n输出：\n<response>抱歉！我们商店里并没有变形玩具，但是我们店里有变形金刚，水枪，潮流玩具等其它有意思的玩具，不知道您是否需要！以下是我的推荐理由：\n**变形金刚**: 机械美学的魅力，激发想象力和创造力。\n**水枪**: 夏日户外乐趣，增强体质和团队协作。\n**潮流玩具**: 融入最新流行元素，追求新鲜事物的选择。</response>\n                 "
           ]},
           "input": false,
-          "tool": null,
-          "output": {
-            "output": "response"
-          }
+          "tool": null
         }
       },
       "node_extract_requirements": {
@@ -134,6 +128,30 @@
             "output": "requirements"
           }
         }
+      },
+      "node_rec_information":{
+        "name": "node_rec_information",
+        "node_type": "response",
+        "extract_word": "response",
+        "done": false,
+        "components": {
+          "style": {
+            "agent": "一个AI导购员，你的目标是以你的专业经验，帮助客户挑选到符合他需求的商品。",
+            "style": "幽默，专业，善于随机应变，会引经据典"
+          },
+          "task": {
+            "task": "先恭喜用户选择了该产品，然后根据商品信息中的每个属性向用户分析如何购买正确的产品。"
+          },
+          "knowledge": "Information_KnowledgeComponent",
+          "rule": {
+            "rule": "1.对不同的关键词附上不同的推荐理由（不需要额外输出，只需要将商品信息转化成有推荐理由的格式）2.关键！请务必记住，value要改写成**value**的格式！请务必按**value**的格式输出!3.注意！要对商品中的所有信息进行推荐！4.注意！不要重复输出！5.注意，要对每个关键词都进行推荐！不能只对个别进行推荐！"
+          },
+          "demonstration": {"demonstration": [
+            "输入商品信息为：{{乒乓球拍海绵类型\": [\n        \"薄海绵(击球快)\",\n        \"硬海绵(快攻型)\",\n        \"厚海绵(后劲足)\",\n        \"软海绵(控球型)\"\n      ],\n      \"大小描述\": [\n        \"中号\",\n        \"大号\",\n        \"小号\",\n        \"均码\",\n      ]}}\n输出：\n<response>非常高兴您选择了我们的乒乓球拍产品！关于您的选择，我有以下详细的推荐：\n\n乒乓球拍海绵类型:\n\n**薄海绵(击球快)**: 如果您的打法以速度为主，希望球拍反应迅速，那么薄海绵可能是一个很好的选择。\n**硬海绵(快攻型)**: 如果您是一名快攻型选手，硬海绵将有助于您提高攻击力和击球速度。\n**厚海绵(后劲足)**: 对于更注重控制和旋转的选手，厚海绵可以提供更好的弹性和后劲。\n**软海绵(控球型)**: 如果您更看重对球的控制，那么软海绵可能是您的首选。它可以帮助您更好地控制球的方向和速度。\n大小描述:\n**中号**: 中号的球拍适合大多数人，它提供了良好的控制感和合适的打击面积。\n**大号**: 如果您希望有更大的击球面积，可以考虑选择大号球拍，它能帮助您更容易击中球。\n**小号**: 小号球拍更适合孩子或是手较小的人使用，它更易于控制。\n**均码**: 均码的球拍适合大部分人群，如果您不确定自己适合哪种尺寸，可以考虑选择均码球拍。\n希望这些建议能帮助您更好地理解每个选项，并为您的购买决策提供帮助。当然，您的个人喜好和需求是最重要的，这些都只是建议供您参考。</response>\n  \n2.\n输入商品信息为：{{ \"品牌\": [\n        \"DIY\",\n        \"钓鱼\",\n      ],\n      \"发饰分类\": [\n        \"发箍\",\n        \"对夹\",\n        \"边夹\"\n      ],\n      \"风格\": [\n        \"甜美\",\n        \"复古/宫廷\",\n        \"日韩\",\n      ],\n      \"材质\": [\n        \"缎\",\n        \"布\",\n      ]}}\n输出：\n<response>非常高兴您选择了我们的产品！关于您的选择，我有以下详细的推荐：\n品牌:\n**DIY**: DIY品牌的产品以其独特的个性化设计和高品质材料赢得了消费者的喜爱。如果你是手工艺品的热爱者，那么这个品牌绝对不容错过。\n**钓鱼**: 钓鱼品牌因其专注于创新和用户体验，受到了广大消费者的一致好评。\n发饰分类:\n**发箍**: 发箍非常适合运动或者是需要保持发型整洁的场合，它能有效地帮助你固定头发，避免头发散落影响视线。\n**对夹**: 对夹适合任何场合，尤其是需要快速简单地改变发型的时候，它是你的最佳选择。\n**边夹**: 边夹可以作为你日常打扮的点睛之笔，为你的发型增加一抹色彩。\n风格:\n**甜美**: 甜美风格的发饰通常以其温柔的色彩和繁复的设计受到年轻女孩的喜爱。\n**复古/宫廷**: 复古/宫廷风格则给人一种高贵而神秘的感觉，非常适合正式的场合。\n**日韩**: 日韩风格的发饰以其简约而精致的设计，给人留下深刻印象。\n材质:\n**缎**: 缎是一种光滑柔软的织物，常常被用于高档的头饰制作，其质地舒适，触感良好。\n**布**: 布材质的发饰以其轻便耐用，保养简单等特点，赢得了消费者的喜爱。\n希望这些建议能帮助您更好地理解每个选项，并为您的购买决策提供帮助。当然，您的个人喜好和需求是最重要的，这些都只是建议供您参考。</response>"
+          ]},
+          "input": false,
+          "tool": null
+        }
       }
     },
     "tool_nodes": {
@@ -142,9 +160,19 @@
         "name": "node_tool_compare_category",
         "done": false
       },
-      "node_search_recom": {
+      "node_search": {
         "tool_name": "SearchNode",
-        "name": "node_search_recom",
+        "name": "node_search",
+        "done": false
+      },
+      "node_recom_search": {
+        "tool_name": "SearchRecomNode",
+        "name": "node_recom_search",
+        "done": false
+      },
+      "node_recom_top": {
+        "tool_name": "RecomTopNode",
+        "name": "node_recom_top",
         "done": true
       }
     },
@@ -164,12 +192,21 @@
         "1": "uncompare_fur_recom"
       },
       "node_extract_requirements": {
-        "0": "node_search_recom"
+        "0": "node_rec_information"
       },
       "uncompare_fur_recom": {
         "0": "node_judge_idle"
       },
-      "node_search_recom": {
+      "node_rec_information": {
+        "0":"node_search"
+      },
+      "node_search": {
+        "0":"node_recom_search"
+      },
+      "node_recom_search": {
+        "0":"node_recom_top"
+      },
+      "node_recom_top": {
         "0":"node_judge_idle"
       }
     }

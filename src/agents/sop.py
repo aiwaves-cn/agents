@@ -74,6 +74,10 @@ class SOP:
                 now_node = MatchNode(name=name,done=done)
             elif tool_name == "SearchNode":
                 now_node = SearchNode(name=name,done=done)
+            elif tool_name == "SearchRecomNode":
+                now_node = SearchRecomNode(name=name,done=done)
+            elif tool_name == "RecomTopNode":
+                now_node = RecomTopNode(name=name,done=done)           
             nodes_dict[name] = now_node
             
             if  "root" in node.keys():
@@ -127,7 +131,7 @@ class GPTNode():
 
         Args:
             tool (Tool, optional): _description_. Defaults to None.
-            node_type (str, optional): three type (reponse, extract,judge)  
+            node_type (str, optional): three type (response, extract,judge)  
                                         ---response:return a response
                                         ---extract:return a keyword for memory
                                         ---judge:return the keyword to determine which node for next
@@ -203,7 +207,7 @@ class StaticNode(ToolNode):
         super().__init__(name, done)
         self.output = output
     def func(self,memory):
-        outputdict = {"reponse":self.output,"temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+        outputdict = {"response":self.output,"temp_memory":{},"long_memory":{},"next_node_id" : "0"}
         return outputdict
 
 class MatchNode(ToolNode):
@@ -254,7 +258,7 @@ class MatchNode(ToolNode):
         """
         return the memory of information and determine the next node
         """
-        outputdict = {"reponse":"","temp_memory":{},"long_memory":{},"next_node_id" : "1"}
+        outputdict = {"response":"","temp_memory":{},"long_memory":{},"next_node_id" : "1"}
         
         topk_result = matching_category(memory["extract_category"],self.leaf_name,None,self.target_embbeding,top_k=3)
         top1_score = topk_result[1][0]
@@ -268,7 +272,7 @@ class MatchNode(ToolNode):
         else:
             outputdict["temp_memory"]["possible_category"] = topk_result[0][0]
         
-        return  outputdict
+        yield  outputdict
         
         
 class SearchNode(ToolNode):
@@ -279,34 +283,58 @@ class SearchNode(ToolNode):
         """
         return the recommend of the search shop
         """
-        outputdict = {"reponse":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+        outputdict = {"response":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
         requirements = memory["requirements"]
         category = memory["category"]
-        information = memory["information"]
-        chat_answer = ""
-        
-        prompt = prompt_cat_markdown(category,information)
-        response  = get_gpt_response_rule(memory["ch_dict"],prompt)
-        chat_answer+="\n" + response
-        
-        
-        print(requirements,category)
         
         request_items,top_category = search_with_api(requirements,category)
+        if category in top_category:
+            top_category.remove(category)
+        
+        outputdict["temp_memory"]["top_category"] = top_category
+        outputdict["temp_memory"]["request_items"] = request_items
+        yield outputdict
+        
+        
+
+class SearchRecomNode(ToolNode):
+    def __init__(self, name="", done=False):
+        super().__init__(name, done)
+    
+    def func(self,memory):
+        """
+        return the recommend of the search shop
+        """
+        outputdict = {"response":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+        request_items = memory["request_items"]
+        chat_answer = "<response>"
         if request_items:
             if len(request_items):
-                chat_answer += f"""客户关键词为{requirements},子类目为{category},给你推荐产品:\n"""
+                chat_answer += f"""经过搜索后,给你推荐产品:\n"""
                 for i in range(0,len(request_items)):
                     chat_answer += f"""{str(i+1)}:“{request_items[i]['itemTitle']}，推荐理由如下：”\n"""
-            if category in top_category:
-                    top_category.remove(category)
-            if top_category:
-                prompt = prompt_cat_recom_top(top_category)
-                response = get_gpt_response_rule(memory["ch_dict"],prompt)
-                chat_answer += "\n" + response
-        else:
-            chat_answer +=  "\n" + "抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
-        
+        chat_answer +="</response>"
         outputdict["response"] = chat_answer
-        return outputdict
+        yield outputdict
+
+class RecomTopNode(ToolNode):
+    def __init__(self, name="", done=False):
+        super().__init__(name, done)
     
+    def func(self, memory):
+        """
+        return the recommend of the search shop
+        """
+        outputdict = {"response": "", "temp_memory": {}, "long_memory": {}, "next_node_id": "0"}
+        top_category = memory["top_category"]
+        request_items = memory["request_items"]
+        if top_category:
+            yield outputdict
+            prompt = prompt_cat_recom_top(top_category)
+            chat_answer_generator = get_gpt_response_rule_stream(memory["ch_dict"], prompt, "请联系上文进行回答，并按格式输出，即输出格式为：<response>（你的回复内容）</response>，请严格按照上述格式输出！")
+            for chat_answer in chat_answer_generator:
+                yield chat_answer
+        elif not request_items:
+            chat_answer = "<response>抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。</response>"
+            outputdict["response"] = chat_answer
+            yield outputdict

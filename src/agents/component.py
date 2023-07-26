@@ -56,7 +56,7 @@ class OutputComponent(Component):
         self.output = output
     
     def get_prompt(self):
-        return  f"""请联系上文，进行<{self.output}>和</{self.output}>的提取，不要进行额外的输出。
+        return  f"""请联系上文，进行<{self.output}>和</{self.output}>的提取，不要进行额外的输出，请严格按照上述格式输出！。
 """
 
 class StyleComponent(Component):
@@ -146,7 +146,7 @@ class KnowledgeComponent:
         pass
     
 
-class Information_KnowledgeComponent(KnowledgeComponent):
+class top_category_KnowledgeComponent(KnowledgeComponent):
     def __init__(self) -> None:
         super().__init__()
     
@@ -158,5 +158,15 @@ class Information_KnowledgeComponent(KnowledgeComponent):
         return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["possible_category"],memory["top_category"]}"""
         
     
+
+class Information_KnowledgeComponent(KnowledgeComponent):
+    def __init__(self) -> None:
+        super().__init__()
+    
+    def get_prompt(self,long_memory,temp_memory):
+        memory = {"information":"","category":""}
+        memory.update(long_memory)
+        memory.update(temp_memory)
         
+        return f"""你需要知道的是：用户目前选择的商品是{memory["category"]}，该商品信息为{memory["information"]}。"""   
         
