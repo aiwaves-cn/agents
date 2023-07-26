@@ -35,10 +35,11 @@ if __name__ == '__main__':
     parser.add_argument('--topk', type=int, default=3)
     parser.add_argument('--logger_dir', type=str, default='logs/test_log')
     parser.add_argument('--knowledge_path', type=str, default='data/text_embeddings_yc_enhanced.json', help='path to save new_quries')
+    parser.add_argument('--agent', type=str, help='path to SOP json')
     args = parser.parse_args()
     
+    agent = Agent(args.agent)
     app = Flask(__name__)
-    agent = Agent("/home/aiwaves/longli/agents/examples/shopping_assistant.json")
     headers = {
                 'Content-Type': 'text/event-stream',
                 'Cache-Control': 'no-cache',
