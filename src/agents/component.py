@@ -56,7 +56,7 @@ class OutputComponent(Component):
         self.output = output
     
     def get_prompt(self):
-        return  f"""请联系上文，进行<{self.output}>和</{self.output}>的提取，不要进行额外的输出，请严格按照上述格式输出！。
+        return  f"""请联系上文，进行<{self.output}>和</{self.output}>的提取，不要进行额外的输出，请严格按照上述格式输出！记住，请严格按照上述格式输出！
 """
 
 class StyleComponent(Component):
