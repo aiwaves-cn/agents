@@ -449,6 +449,16 @@ def search_with_api(requirements,categery):
         request_items = request_items[:FETSIZE]       
     return request_items,new_top
 
+
+
+def response_to_string(response):
+    all = ""
+    for data in response:
+        all += data.choices[0]['delta'].get('content') if data.choices[0]['delta'].get('content') else ''
+    return all
+    
+    
+    
 if __name__ == '__main__':
     str = "hello 123 hello"
     x = get_content_between_a_b("hello1","hello1",str)

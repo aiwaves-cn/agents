@@ -122,7 +122,7 @@ class GPTNode():
     def __init__(self,
                  name:str = None,
                  node_type: str = None,
-                 extract_words: str = "",
+                 extract_words = None,
                  done=False,
                  user_input:str= "",
                  components:dict = {}):
