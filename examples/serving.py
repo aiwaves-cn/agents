@@ -45,10 +45,12 @@ if __name__ == '__main__':
                 'Cache-Control': 'no-cache',
                 'X-Accel-Buffering': 'no',
             }
+    # {'userName': '', 'query': '你好', 'history': [{'type': 1, 'message': '您好，我是导购机器人，您有什么问题需要我的帮助？', 'http': '', 'timestamp': 1690429363521, 'img': ''}, {'type': 0, 'message': '你好', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}]}
     @app.route('/api/v1/ask/',methods=['post'])
     def reply():
-        query = request.json.get('query')
-        response = agent.reply(query)
+        userName = request.json.get('userName')
+        history = request.json.get('history')
+        response = agent.reply(userName,history)
         return Response(response, mimetype='text/event-stream', headers=headers)
     
     server = pywsgi.WSGIServer(('0.0.0.0', 8000), app)
