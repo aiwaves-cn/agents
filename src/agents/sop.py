@@ -77,7 +77,9 @@ class SOP:
             elif tool_name == "SearchRecomNode":
                 now_node = SearchRecomNode(name=name,done=done)
             elif tool_name == "RecomTopNode":
-                now_node = RecomTopNode(name=name,done=done)           
+                now_node = RecomTopNode(name=name,done=done)      
+            elif tool_name == "StaticNode":
+                now_node = StaticNode(name=name,done=done,output=node["output"])     
             nodes_dict[name] = now_node
             
             if  "root" in node.keys():
@@ -338,3 +340,11 @@ class RecomTopNode(ToolNode):
             chat_answer = "<response>抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。</response>"
             outputdict["response"] = chat_answer
             yield outputdict
+
+class StaticNode(ToolNode):
+    def __init__(self, name="",output = "", done=False):
+        super().__init__(name, done)
+        self.output = output
+    def func(self,memory):
+        outputdict = {"response":self.output,"temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+        yield outputdict
