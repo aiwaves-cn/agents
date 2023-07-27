@@ -124,7 +124,7 @@ class GPTNode():
     def __init__(self,
                  name:str = None,
                  node_type: str = None,
-                 extract_words: str = "",
+                 extract_words = None,
                  done=False,
                  user_input:str= "",
                  components:dict = {}):
@@ -267,8 +267,8 @@ class MatchNode(ToolNode):
         if top1_score > MIN_CATEGORY_SIM:
             outputdict["long_memory"]['category'] = topk_result[0][0]
             information = self.search_information(topk_result[0][0],self.information_dataset)
-            information = limit_keys(information,5)
-            information = limit_values(information,3)
+            information = limit_keys(information,3)
+            information = limit_values(information,2)
             outputdict["next_node_id"] = "0"
             outputdict["temp_memory"]["information"] = information
         else:
@@ -333,7 +333,10 @@ class RecomTopNode(ToolNode):
         if top_category:
             yield outputdict
             prompt = prompt_cat_recom_top(top_category)
-            chat_answer_generator = get_gpt_response_rule_stream(memory["ch_dict"], prompt, "请联系上文进行回答，并按格式输出，即输出格式为：<response>（你的回复内容）</response>，请严格按照上述格式输出！")
+            chat_answer_generator = get_gpt_response_rule_stream(memory["chat_history"], prompt, """请联系上文进行回答，并且严格按照下面的回复格式进行输出：
+                                                            <response>
+                                                            （你的回复内容）
+                                                            </response>""")
             for chat_answer in chat_answer_generator:
                 yield chat_answer
         elif not request_items:
