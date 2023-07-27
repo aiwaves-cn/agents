@@ -35,9 +35,18 @@ for task in all_tasks:
 
 
 
+# # 创建一个新的任务配置文档
+# new_task = TaskConfig(task_name="任务1", task_point=100, task_code="T001", task_count="1次", task_period="每天")
+# new_task.save()  # 保存到数据库
 
+# 查询所有任务配置文档
+all_tasks = TaskConfig.objects(task_name = "任务2")
+for task in all_tasks:
+  task.delete()
 
-
+all_tasks = TaskConfig.objects.all()
+for task in all_tasks:
+  print(task.task_name)
 
 
 

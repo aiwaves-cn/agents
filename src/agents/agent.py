@@ -39,19 +39,18 @@ class Agent():
         self.temp_memory = {}
         self.long_memory = {}
         
-    def reply(self,query):
+    def reply(self,userName,history):
         """
         reply api ,The interface set for backend calls 
         """
-        self.content["messages"].append({"role":"user","content":query})
         flag = 0
         now_node = self.now_node
+        chat_history = self.process_history(history)
+        print(chat_history)
+        self.long_memory["chat_history"] = chat_history
         "Continuous recursion"
         while True:
             print(now_node.name)
-            chat_history_orig = self.content["messages"]
-            ch_dict = self.process_history(chat_history_orig)
-            self.long_memory["ch_dict"] = ch_dict
             if isinstance(now_node,GPTNode):
                 # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
                 if now_node.done:
@@ -59,10 +58,10 @@ class Agent():
                 
                 # Extract key information to determine which node branch to enter
                 if now_node.node_type =="judge":
-                    now_node.set_user_input(ch_dict[-1]["content"])
+                    now_node.set_user_input(chat_history[-1]["content"])
                     
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
-                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
+                    response = get_gpt_response_rule(chat_history,system_prompt,last_prompt)
                     keywords = extract(response,now_node.extract_words)
                     next_nodes_nums = len(now_node.next_nodes.keys())
                     for i,key in enumerate(now_node.next_nodes):
@@ -75,9 +74,9 @@ class Agent():
                     
                 # Extract keywords to proceed to the next node
                 elif now_node.node_type == "extract":
-                    now_node.set_user_input(ch_dict[-1]["content"])
+                    now_node.set_user_input(chat_history[-1]["content"])
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
-                    response = get_gpt_response_rule(ch_dict,system_prompt,last_prompt)
+                    response = get_gpt_response_rule(chat_history,system_prompt,last_prompt)
                     if type(now_node.extract_words) == list:
                         for extract_word in now_node.extract_words:
                             keywords = extract(response,extract_word)
@@ -91,13 +90,33 @@ class Agent():
                 
                 
                 elif now_node.node_type == "response":
-                    now_node.set_user_input(ch_dict[-1]["content"])
+                    now_node.set_user_input(chat_history[-1]["content"])
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
-                    response = get_gpt_response_rule_stream(ch_dict,system_prompt,"请联系上文进行回答，你的回答要包裹在<response></response>中，即输出格式为：<response>（你的回复内容）</response>")
+                    response = get_gpt_response_rule_stream(chat_history,system_prompt,"""请联系上文进行回答，并且严格按照下面的回复格式进行输出：
+                                                            <response>
+                                                            （你的回复内容）
+                                                            </response>""")
                     now_node = now_node.next_nodes["0"]
                     self.now_node = now_node
                     for res in response:
                         yield  res  
+                
+                elif now_node.node_type =="response_and_extract":
+                    now_node.set_user_input(chat_history[-1]["content"])
+                    system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
+                    response = get_gpt_response_rule_stream(chat_history,system_prompt,last_prompt)
+                    all = ""
+                    for res in response:
+                        all += res.choices[0]['delta'].get('content') if res.choices[0]['delta'].get('content') else ''
+                        yield  res  
+                        
+                    if type(now_node.extract_words) == list:
+                        for extract_word in now_node.extract_words:
+                            keywords = extract(all,extract_word)
+                            self.long_memory[extract_word] = keywords
+                    else:
+                        keywords = extract(all,now_node.extract_words)
+                        self.long_memory[now_node.extract_words] = keywords
                     
                     
                     
@@ -105,8 +124,8 @@ class Agent():
                 memory = {}
                 memory.update(self.long_memory)
                 memory.update(self.temp_memory)
-                next_node = now_node
                 now_output = now_node.func(memory)
+                next_node_id = "0"
                 for output in now_output:
                     if isinstance(output,dict):
                         response = output["response"]
@@ -116,19 +135,18 @@ class Agent():
                         for k,v in output["long_memory"].items():
                             self.long_memory[k] = v
                             memory[k] = v
-                        next_node = now_node.next_nodes[output["next_node_id"]]
-                        for res in response:
-                            yield res
+                        next_node_id = output["next_node_id"]
+                        yield response
                     else:
                         yield output
                     
-                now_node = next_node
-                self.now_node = next_node           
+                now_node = now_node.next_nodes[next_node_id]
+                self.now_node = now_node         
             if flag or now_node == self.root:
                 self.temp_memory = {}
                 break
 
-    def process_history(self,chat_history):
+    def process_history(self,history):
         """Dealing with incoming data in different situations
 
         Args:
@@ -137,16 +155,17 @@ class Agent():
         Returns:
             list: history of gpt usage
         """
-        ch_dict = []
-        for ch in chat_history:
-            if ch["role"]=="user":
-                ch_dict.append(  {"role": "user", "content": ch["content"]})
-            else:
-                ch_dict.append(  {"role": "assistant", "content": ch["content"]})
+        chat_history = []
+        for ch in history:
+            if ch["message"]:
+                if ch["type"]== 0:
+                    chat_history.append(  {"role": "user", "content": ch["message"]})
+                else:
+                    chat_history.append(  {"role": "assistant", "content": ch["message"]})
         
-        if len(ch_dict)>2*MAX_CHAT_HISTORY:
-            ch_dict = ch_dict[-(2*MAX_CHAT_HISTORY+1):]
-        return ch_dict
+        if len(chat_history)>2*MAX_CHAT_HISTORY:
+            chat_history = chat_history[-(2*MAX_CHAT_HISTORY+1):]
+        return chat_history
     
 
     def step(self):

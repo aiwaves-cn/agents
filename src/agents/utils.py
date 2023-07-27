@@ -69,7 +69,7 @@ def extract(text,type):
 
 
 
-def get_gpt_response_rule(ch_dict,
+def get_gpt_response_rule(chat_history,
                           system_prompt,
                           last_prompt = None,
                           model="gpt-3.5-turbo-16k-0613",
@@ -77,7 +77,7 @@ def get_gpt_response_rule(ch_dict,
     """get the response of chatgpt
 
     Args:
-        ch_dict (list): the history of chat
+        chat_history (list): the history of chat
         system_prompt (str): the main task set in the first
         last_prompt (str): attached to the final task
         temperature(float):randomness of GPT responses
@@ -89,8 +89,8 @@ def get_gpt_response_rule(ch_dict,
     openai.proxy = PROXY
 
     messages = [{"role": "system", "content": system_prompt}]
-    if ch_dict:
-        messages += ch_dict
+    if chat_history:
+        messages += chat_history
     if last_prompt:
         messages += [{"role": "user", "content": f"{last_prompt}"}]
     response = openai.ChatCompletion.create(
@@ -102,15 +102,15 @@ def get_gpt_response_rule(ch_dict,
     return response.choices[0].message["content"]
 
 
-def get_gpt_response_rule_stream(ch_dict,
+def get_gpt_response_rule_stream(chat_history,
                           system_prompt,
                           last_prompt = None,
                           model="gpt-3.5-turbo-16k-0613",
-                          temperature=0):
+                          temperature=0.3):
     """get the response of chatgpt
 
     Args:
-        ch_dict (list): the history of chat
+        chat_history (list): the history of chat
         system_prompt (str): the main task set in the first
         last_prompt (str): attached to the final task
         temperature(float):randomness of GPT responses
@@ -122,8 +122,8 @@ def get_gpt_response_rule_stream(ch_dict,
     openai.proxy = PROXY
 
     messages = [{"role": "system", "content": system_prompt}]
-    if ch_dict:
-        messages += ch_dict
+    if chat_history:
+        messages += chat_history
     if last_prompt:
         messages += [{"role": "user", "content": f"{last_prompt}"}]
     response = openai.ChatCompletion.create(
@@ -449,6 +449,16 @@ def search_with_api(requirements,categery):
         request_items = request_items[:FETSIZE]       
     return request_items,new_top
 
+
+
+def response_to_string(response):
+    all = ""
+    for data in response:
+        all += data.choices[0]['delta'].get('content') if data.choices[0]['delta'].get('content') else ''
+    return all
+    
+    
+    
 if __name__ == '__main__':
     str = "hello 123 hello"
     x = get_content_between_a_b("hello1","hello1",str)
