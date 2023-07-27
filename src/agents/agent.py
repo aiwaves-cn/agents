@@ -103,16 +103,17 @@ class Agent():
                     now_node.set_user_input(ch_dict[-1]["content"])
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
                     response = get_gpt_response_rule_stream(ch_dict,system_prompt,last_prompt)
+                    all = ""
                     for res in response:
+                        all += res.choices[0]['delta'].get('content') if res.choices[0]['delta'].get('content') else ''
                         yield  res  
-                    
-                    response =response_to_string(response)
+                        
                     if type(now_node.extract_words) == list:
                         for extract_word in now_node.extract_words:
-                            keywords = extract(response,extract_word)
+                            keywords = extract(all,extract_word)
                             self.long_memory[extract_word] = keywords
                     else:
-                        keywords = extract(response,now_node.extract_words)
+                        keywords = extract(all,now_node.extract_words)
                         self.long_memory[now_node.extract_words] = keywords
                     
                     
