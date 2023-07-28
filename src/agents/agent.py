@@ -54,20 +54,24 @@ class Agent():
         assert type(userName) == int,"username type is not int!"
         self.load_date(userName)
         if self.judge_idle(query):
-            system_prompt,last_prompt = self.idle_response_node.get_prompt(self.long_memory,self.temp_memory)
-            idle_history = self.long_memory["idle_history"]
-            idle_history.append({"role": "user", "content": query})
+            chat =  self.chat(query,userName)
+            for res in chat:
+                yield res
+            return 
+            # system_prompt,last_prompt = self.idle_response_node.get_prompt(self.long_memory,self.temp_memory)
+            # idle_history = self.long_memory["idle_history"]
+            # idle_history.append({"role": "user", "content": query})
             
-            response = get_gpt_response_rule_stream(idle_history,system_prompt,None)
-            all = ""
-            for res in response:
-                all += res if res else ''
-                yield  res  
-            self.long_memory["idle_history"].append({"role": "assistant", "content": all}) 
-            task = find_data(userName)
-            task.memory = self.long_memory
-            task.save()
-            return
+            # response = get_gpt_response_rule_stream(idle_history,system_prompt,None)
+            # all = ""
+            # for res in response:
+            #     all += res if res else ''
+            #     yield  res  
+            # self.long_memory["idle_history"].append({"role": "assistant", "content": all}) 
+            # task = find_data(userName)
+            # task.memory = self.long_memory
+            # task.save()
+            # return
         
             
         self.long_memory["chat_history"].append({"role": "user", "content": query})
@@ -219,3 +223,17 @@ class Agent():
         else:
             return False
 
+    def chat(self,query,userName):
+        print(2)
+        system_prompt,last_prompt = self.idle_response_node.get_prompt(self.long_memory,self.temp_memory)
+        idle_history = self.long_memory["idle_history"]
+        idle_history.append({"role": "user", "content": query})
+        response = get_gpt_response_rule_stream(idle_history,system_prompt,None)
+        all = ""
+        for res in response:
+            all += res if res else ''
+            yield  res  
+        self.long_memory["idle_history"].append({"role": "assistant", "content": all}) 
+        task = find_data(userName)
+        task.memory = self.long_memory
+        task.save()
