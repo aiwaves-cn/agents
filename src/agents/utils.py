@@ -125,7 +125,7 @@ def get_gpt_response_rule_stream(chat_history,
     if chat_history:
         messages += chat_history
     if last_prompt:
-        messages += [{"role": "user", "content": f"{last_prompt}"}]
+        messages += [{"role": "user", "content": last_prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
@@ -134,8 +134,7 @@ def get_gpt_response_rule_stream(chat_history,
     )
     for res in response:
         if res:
-            print(res['choices'][0]['delta'].get('content'),end = "")
-            yield json.dumps(res['choices'][0]['delta'].get('content'),ensure_ascii=False) + "\n"
+            yield res.choices[0]['delta'].get('content') if res.choices[0]['delta'].get('content') else ''
             
 def load_knowledge_base_chunk(path):
     """
@@ -457,7 +456,14 @@ def response_to_string(response):
         all += data.choices[0]['delta'].get('content') if data.choices[0]['delta'].get('content') else ''
     return all
     
-    
+
+def get_keyword_in_long_temp(keyword,long_memory,temp_memory):
+    if keyword in long_memory.keys():
+        return long_memory[keyword]
+    elif keyword in temp_memory.keys():
+        return temp_memory[keyword]
+    else:
+        return ""
     
 if __name__ == '__main__':
     str = "hello 123 hello"

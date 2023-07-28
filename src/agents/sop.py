@@ -32,6 +32,9 @@ class SOP:
         with open(json_path) as f:
             sop = json.load(f)
         self.root = None
+        self.judge_idle_node = None
+        self.idle_response_node = None
+        
         self.nodes = {}
         if "gpt_nodes" in sop:
             gpt_nodes = self.init_gpt_nodes(sop)
@@ -59,6 +62,10 @@ class SOP:
             nodes_dict[name] = now_node
             if  "root" in node.keys():
                 self.root = now_node
+            if "judge_idle_node" in node.keys():
+                self.judge_idle_node = now_node
+            if "idle_response_node" in node.keys():
+                self.idle_response_node = now_node
         return nodes_dict
             
     def init_tool_nodes(self,sop):
@@ -84,6 +91,11 @@ class SOP:
             
             if  "root" in node.keys():
                 self.root = now_node
+            if "judge_idle_node" in node.keys():
+                self.judge_idle_node = now_node
+            if "idle_response_node" in node.keys():
+                self.idle_response_node = now_node
+                
         return nodes_dict
             
     def init_components(self,components_dict:dict):
@@ -99,8 +111,6 @@ class SOP:
                     args_dict["rule"] = RuleComponent(value["rule"])
                 elif key == "demonstration":
                     args_dict["demonstration"] = DemonstrationComponent(value["demonstration"])
-                elif key == "input":
-                    args_dict["input"] = InputComponent()
                 elif key == "tool":
                     args_dict["tool"] = KnowledgeBaseComponent(value["knowledge_base"])
                 elif key == "output":
@@ -168,22 +178,17 @@ class GPTNode():
         self.next_nodes = {}
         
         self.components = components
-        self.user_input = user_input
         self.extract_words = extract_words
         self.done = done
         self.name = name
     
-    # mainly used for inputcomponent
-    def set_user_input(self,user_input):
-        self.user_input = user_input
 
     # get complete prompt
     def get_prompt(self,long_memory={},temp_memory = {}):
         prompt = ""
         last_prompt = ""
         for value in self.components.values():
-            if isinstance(value,InputComponent) or isinstance(value,KnowledgeBaseComponent):
-                value.user_input = self.user_input
+            if  isinstance(value,KnowledgeBaseComponent):
                 prompt = prompt +"\n" + value.get_prompt()
             elif isinstance(value,OutputComponent):
                 last_prompt += value.get_prompt()
@@ -191,6 +196,7 @@ class GPTNode():
                 prompt = prompt +"\n" + value.get_prompt(long_memory,temp_memory)
             else:
                 prompt =prompt +"\n" + value.get_prompt()
+        
         return prompt,last_prompt
     
 
@@ -201,15 +207,15 @@ class ToolNode:
         self.name = name
         self.done = done
     @abstractmethod
-    def func(self,memory):
+    def func(self,long_memory,temp_memory):
         pass
 
 class StaticNode(ToolNode):
     def __init__(self, name="",output = "", done=False):
         super().__init__(name, done)
         self.output = output
-    def func(self,memory):
-        outputdict = {"response":self.output,"temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+    def func(self,long_memory,temp_memory):
+        outputdict = {"response":self.output,"next_node_id" : "0"}
         return outputdict
 
 class MatchNode(ToolNode):
@@ -239,7 +245,6 @@ class MatchNode(ToolNode):
     
     def search_information(self,category,information_dataset):
         """
-
         Args:
             category (str): Categories that need to be matched in the database
             information_dataset (list): the dateset
@@ -256,23 +261,25 @@ class MatchNode(ToolNode):
         return knowledge
     
     
-    def func(self,memory):
+    def func(self,long_memory,temp_memory):
         """
         return the memory of information and determine the next node
         """
-        outputdict = {"response":"","temp_memory":{},"long_memory":{},"next_node_id" : "1"}
+        extract_category = get_keyword_in_long_temp("extract_category",long_memory,temp_memory)
+             
+        outputdict = {"response":"","next_node_id" : "0"}
         
-        topk_result = matching_category(memory["extract_category"],self.leaf_name,None,self.target_embbeding,top_k=3)
+        topk_result = matching_category(extract_category,self.leaf_name,None,self.target_embbeding,top_k=3)
         top1_score = topk_result[1][0]
         if top1_score > MIN_CATEGORY_SIM:
-            outputdict["long_memory"]['category'] = topk_result[0][0]
+            long_memory['category'] = topk_result[0][0]
             information = self.search_information(topk_result[0][0],self.information_dataset)
             information = limit_keys(information,3)
             information = limit_values(information,2)
-            outputdict["next_node_id"] = "0"
-            outputdict["temp_memory"]["information"] = information
+            outputdict["next_node_id"] = "1"
+            temp_memory["information"] = information
         else:
-            outputdict["temp_memory"]["possible_category"] = topk_result[0][0]
+            temp_memory["possible_category"] = topk_result[0][0]
         
         yield  outputdict
         
@@ -281,20 +288,22 @@ class SearchNode(ToolNode):
     def __init__(self, name="", done=False):
         super().__init__(name, done)
     
-    def func(self,memory):
+    def func(self,long_memory,temp_memory):
         """
         return the recommend of the search shop
         """
-        outputdict = {"response":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
-        requirements = memory["requirements"]
-        category = memory["category"]
+        outputdict = {"response":"","next_node_id" : "0"}
+        requirements = get_keyword_in_long_temp("requirements",long_memory,temp_memory)
+        category = get_keyword_in_long_temp("category",long_memory,temp_memory)
+        if category == "":
+            category = get_keyword_in_long_temp("extract_category",long_memory,temp_memory)
         
         request_items,top_category = search_with_api(requirements,category)
         if category in top_category:
             top_category.remove(category)
         
-        outputdict["temp_memory"]["top_category"] = top_category
-        outputdict["temp_memory"]["request_items"] = request_items
+        temp_memory["top_category"] = top_category
+        long_memory["request_items"] = request_items
         yield outputdict
         
         
@@ -303,19 +312,18 @@ class SearchRecomNode(ToolNode):
     def __init__(self, name="", done=False):
         super().__init__(name, done)
     
-    def func(self,memory):
+    def func(self,long_memory,temp_memory):
         """
         return the recommend of the search shop
         """
-        outputdict = {"response":"","temp_memory":{},"long_memory":{},"next_node_id" : "0"}
-        request_items = memory["request_items"]
-        chat_answer = "<response>"
+        outputdict = {"response":"","next_node_id" : "0"}
+        request_items = get_keyword_in_long_temp("request_items",long_memory,temp_memory)
+        chat_answer = ""
         if request_items:
             if len(request_items):
-                chat_answer += f"""经过搜索后,给你推荐产品:\n"""
+                chat_answer += f"""\\n经过搜索后,给你推荐产品:\\n"""
                 for i in range(0,len(request_items)):
-                    chat_answer += f"""{str(i+1)}:“{request_items[i]['itemTitle']}，推荐理由如下：”\n"""
-        chat_answer +="</response>"
+                    chat_answer += f"""{str(i+1)}:“{request_items[i]['itemTitle']}\\n"""
         outputdict["response"] = chat_answer
         yield outputdict
 
@@ -323,24 +331,30 @@ class RecomTopNode(ToolNode):
     def __init__(self, name="", done=False):
         super().__init__(name, done)
     
-    def func(self, memory):
+    def func(self, long_memory,temp_memory):
         """
         return the recommend of the search shop
         """
-        outputdict = {"response": "", "temp_memory": {}, "long_memory": {}, "next_node_id": "0"}
-        top_category = memory["top_category"]
-        request_items = memory["request_items"]
+        outputdict = {"response": "","next_node_id": "0"}
+        top_category = get_keyword_in_long_temp("top_category",long_memory,temp_memory)
+        request_items = get_keyword_in_long_temp("request_items",long_memory,temp_memory)
+        chat_history = get_keyword_in_long_temp("chat_history",long_memory,temp_memory)
+        
         if top_category:
             yield outputdict
             prompt = prompt_cat_recom_top(top_category)
-            chat_answer_generator = get_gpt_response_rule_stream(memory["chat_history"], prompt, """请联系上文进行回答，并且严格按照下面的回复格式进行输出：
-                                                            <response>
-                                                            （你的回复内容）
-                                                            </response>""")
+            chat_answer_generator = get_gpt_response_rule_stream(chat_history, prompt, None)
+            all = ""
             for chat_answer in chat_answer_generator:
+                all +=chat_answer
                 yield chat_answer
+            long_memory["chat_history"].append({"role": "assistant", "content": all})
+            long_memory["idle_history"].append({"role": "assistant", "content": all})
+            
         elif not request_items:
-            chat_answer = "<response>抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。</response>"
+            chat_answer = "\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
+            long_memory["chat_history"].append({"role": "assistant", "content": chat_answer})
+            long_memory["idle_history"].append({"role": "assistant", "content": chat_answer})
             outputdict["response"] = chat_answer
             yield outputdict
 
@@ -348,6 +362,6 @@ class StaticNode(ToolNode):
     def __init__(self, name="",output = "", done=False):
         super().__init__(name, done)
         self.output = output
-    def func(self,memory):
-        outputdict = {"response":self.output,"temp_memory":{},"long_memory":{},"next_node_id" : "0"}
+    def func(self,long_memory,temp_memory):
+        outputdict = {"response":self.output,"next_node_id" : "0"}
         yield outputdict

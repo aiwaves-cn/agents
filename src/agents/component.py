@@ -38,16 +38,6 @@ class TaskComponent(Component):
     def get_prompt(self):
         return f"""你需要执行的任务是:{self.task}。"""
     
-class InputComponent(Component):
-    
-    def __init__(self):
-        super().__init__()
-        self.user_input = ""
-        
-    def get_prompt(self):
-        if self.user_input == "":
-            return ""
-        return  f"用户的输入是:{self.user_input}。"
 
 class OutputComponent(Component):
 
@@ -71,7 +61,7 @@ class StyleComponent(Component):
 
     def get_prompt(self):
         return  f"""现在你来模拟一个{self.agent}。你需要遵循以下的输出风格：
-f{self.style}。
+{self.style}。
 """
 
 class RuleComponent(Component):

@@ -351,3 +351,30 @@ a="""输入商品信息为：{{乒乓球拍海绵类型": [
 with open("1.json","w",encoding="utf-8") as f:
      json.dump(a,f,ensure_ascii=False,indent=2)
      
+     
+node_idle = {
+  "name": "node_idle",
+  "node_type": "extract",
+  "extract_word": "response",
+  "done": True,
+  "components": {
+    "style": {
+      "agent": "一个AI导购员，你的目标是以你的专业经验，帮助客户挑选到符合他需求的商品。",
+      "style": "幽默，善于随机应变，会引经据典"
+    },
+    "task": {
+      "task": "同用户进行聊天，同时如果客户有一些想要购买的想法的话，需要通过聊天逐步诱导客户确认他的购买目标。"
+    },
+    "knowledge": null,
+    "rule": {
+      "rule": "1. 要联系客户的所有对话，尤其是最近的对话，来回答用户的问题。\n2. 语言要幽默，要引经据典，不能重复对话，对话风格也不能太过单一。\n3. 如果用户有购买想法，则给予他一些购买意见。"
+    },
+    "demonstration": null,
+    "input": false,
+    "tool": null,
+    "output": {
+      "output": "response"
+    }
+  }
+}
+node_idle2 = node_idle.copy()

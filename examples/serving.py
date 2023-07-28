@@ -49,8 +49,8 @@ if __name__ == '__main__':
     @app.route('/api/v1/ask/',methods=['post'])
     def reply():
         userName = request.json.get('userName')
-        history = request.json.get('history')
-        response = agent.reply(userName,history)
+        query = request.json.get('query')
+        response = agent.reply(userName,query)
         return Response(response, mimetype='text/event-stream', headers=headers)
     
     server = pywsgi.WSGIServer(('0.0.0.0', 8000), app)

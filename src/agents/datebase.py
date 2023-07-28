@@ -27,3 +27,7 @@ def find_data(user_id):
 def delete_data(user_id):
   task = TaskConfig.objects(user_id=user_id).first()
   task.delete()
+  
+all_tasks = TaskConfig.objects(user_id = 0).all()
+for task in all_tasks:
+  task.delete()
