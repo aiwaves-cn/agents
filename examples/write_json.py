@@ -350,3 +350,4 @@ a="""输入商品信息为：{{乒乓球拍海绵类型": [
 
 with open("1.json","w",encoding="utf-8") as f:
      json.dump(a,f,ensure_ascii=False,indent=2)
+     
