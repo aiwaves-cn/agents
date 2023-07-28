@@ -1,60 +1,74 @@
 import json
 data = {}
-node_judge_chat = {
+node_judge_intent = {
         "name":"node_judge_chat",
         "node_type":"judge",
-        "extract_word":"闲聊",
+        "extract_word":"意图",
         "done":False,
         "root":True,
         "components":
             {"style":
                 {"agent":"眼科医院的客服","style":"严谨专业"},
             "task":
-                {"task":"需要做的是判断用户目前是有购物倾向还是在跟你闲聊。"},
+                {"task":"需要做的是判断用户目前是回答了你的问题还是在另外提问。"},
             "knowledge":None,
             "rule":
-                {"rule":"""根据用户的回答，分析其与之前对话的关系，判断其是否为闲聊，具体判断依据为，用户当前对话是否与眼科问题有关。
-如果用户输出<闲聊>否</闲聊>
-反之，如果用户当前聊天与购物无关，则判断为是闲聊，输出<闲聊>是</闲聊>"""},
-            "demonstration":{"demonstations":[""""客户"："度数500度可以做全飞秒收拾吗？"。
-此时<is_idle>否</is_idle>
-"客户"："帮我解一道代码题"。
-此时<is_idle>是</is_idle>
-
-"客户"："全飞秒和半飞秒有什么区别"。
-此时<is_idle>否</is_idle>
-"客户"："谢谢"。
-此时<is_idle>是</is_idle>
-"客户"："我有个情感问题需要你帮忙解决"。
-此时<is_idle>是</is_idle> """]},
+                {"rule":"""根据用户的回答，分析其与之前对话的关系，判断其是否为回答你的问题，还是另外进行了提问。
+如果用户回答了你的问题并且同意了你的请求，输出<意图>1</意图>
+如果用户回答了你的问题但是拒绝了你的请求，输出<意图>2</意图>
+如果用户没有回答你的问题而且提出了新的问题，输出<意图>3</意图>"""},
+            "demonstration":None,
             "input":True,
             "tool":None,
-            "output":{"output":"闲聊"}
+            "output":{"output":"意图"}
             }
         }
 
-node_chat_response = {
-        "name":"node_chat_response",
-        "node_type":"response",
-        "extract_word":"回复",
+node_judge_intent_invite = {
+        "name":"node_judge_chat",
+        "node_type":"judge",
+        "extract_word":"意图",
         "done":False,
-        "root":False,
+        "root":True,
         "components":
             {"style":
-                    {"agent":"眼科医院的客服","style":"严谨专业"},
-            "task": {
-                    "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"},
-            "rule": {
-                "rule": "如果这个不是问题，而是客服面对你追问的回答，你应该依据上一轮你追问用户依据的知识库做回答。请输出你的回答。避免输出换行符这类控制格式的字符。并且说话要简短！不需要说“有什么其他问题我可以帮您解答的吗？”，“希望这些信息对您有所帮助！”这样的话！！\n请使用严格按照以下的格式输出！！ 请使用严格按照以下的格式输出！！\n你的回复要严格按照下面的输出格式。你的说话风格要幽默。请把你的回复放在<回复>...</回复>中，如果是可以回答并且可以追问，追问的内容放在<回复>...</回复>的最后。\n追问的信息是一定要能用已知的知识库回答的！！\n不能追问“您还有其他问题吗？”，“你对XXX有了解吗”这样没有用并且知识库也不好回答的问题。\n不能追问“您还有其他问题吗？”这样没有用的话！！\n格式为： \n```\n<回复>\n...\n</回复>\n```"
-            },
-            "demonstration": None,
-            "input": None,
-            "tool": {
-                "knowledge_base": "yc_final.json"
-            },
-            "output": {
-                "output": "回复"
+                {"agent":"眼科医院的客服","style":"严谨专业"},
+            "task":
+                {"task":"需要做的是判断用户目前是回答了你的问题还是在另外提问。"},
+            "knowledge":None,
+            "rule":
+                {"rule":"""根据用户的回答，分析其与之前对话的关系，判断其是否为回答你的问题，还是另外进行了提问。
+如果用户回答了你的问题并且同意了你的请求，输出<意图>1</意图>
+如果用户回答了你的问题但是拒绝了你的请求，输出<意图>2</意图>
+如果用户没有回答你的问题而且提出了新的问题，输出<意图>3</意图>"""},
+            "demonstration":None,
+            "input":True,
+            "tool":None,
+            "output":{"output":"意图"}
             }
+        }
+
+node_judge_intent_book_card = {
+        "name":"node_judge_chat",
+        "node_type":"judge",
+        "extract_word":"意图",
+        "done":False,
+        "root":True,
+        "components":
+            {"style":
+                {"agent":"眼科医院的客服","style":"严谨专业"},
+            "task":
+                {"task":"需要做的是判断用户目前是回答了你的问题还是在另外提问。"},
+            "knowledge":None,
+            "rule":
+                {"rule":"""根据用户的回答，分析其与之前对话的关系，判断其是否为回答你的问题，还是另外进行了提问。
+如果用户回答了你的问题并且同意了你的请求，输出<意图>1</意图>
+如果用户回答了你的问题但是拒绝了你的请求，输出<意图>2</意图>
+如果用户没有回答你的问题而且提出了新的问题，输出<意图>3</意图>"""},
+            "demonstration":None,
+            "input":True,
+            "tool":None,
+            "output":{"output":"意图"}
             }
         }
 
@@ -83,6 +97,57 @@ node_knowleage_response = {
     }
 }
 
+node_knowleage_response_invite = {
+    "name": "node_knowleage_response",
+    "node_type": "response",
+    "extract_word": "回复",
+    "done": True,
+    "components": {
+        "style":
+          {"agent":"眼科医院的客服","style":"严谨专业"},
+        "task": {
+        "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
+        },
+        "rule": {
+        "rule": "如果这个不是问题，而是客服面对你追问的回答，你应该依据上一轮你追问用户依据的知识库做回答。请输出你的回答。避免输出换行符这类控制格式的字符。并且说话要简短！不需要说“有什么其他问题我可以帮您解答的吗？”，“希望这些信息对您有所帮助！”这样的话！！\n请使用严格按照以下的格式输出！！ 请使用严格按照以下的格式输出！！\n你的回复要严格按照下面的输出格式。你的说话风格要幽默。请把你的回复放在<回复>...</回复>中，如果是可以回答并且可以追问，追问的内容放在<回复>...</回复>的最后。\n追问的信息是一定要能用已知的知识库回答的！！\n不能追问“您还有其他问题吗？”，“你对XXX有了解吗”这样没有用并且知识库也不好回答的问题。\n不能追问“您还有其他问题吗？”这样没有用的话！！\n格式为： \n```\n<回复>\n...\n</回复>\n```"
+        },
+        "demonstration": None,
+        "input": None,
+        "tool": {
+        "knowledge_base": "yc_final.json"
+        },
+        "output": {
+        "output": "回复"
+        }
+    }
+}
+
+node_knowleage_response_book_card = {
+    "name": "node_knowleage_response",
+    "node_type": "response",
+    "extract_word": "回复",
+    "done": True,
+    "components": {
+        "style":
+          {"agent":"眼科医院的客服","style":"严谨专业"},
+        "task": {
+        "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
+        },
+        "rule": {
+        "rule": "如果这个不是问题，而是客服面对你追问的回答，你应该依据上一轮你追问用户依据的知识库做回答。请输出你的回答。避免输出换行符这类控制格式的字符。并且说话要简短！不需要说“有什么其他问题我可以帮您解答的吗？”，“希望这些信息对您有所帮助！”这样的话！！\n请使用严格按照以下的格式输出！！ 请使用严格按照以下的格式输出！！\n你的回复要严格按照下面的输出格式。你的说话风格要幽默。请把你的回复放在<回复>...</回复>中，如果是可以回答并且可以追问，追问的内容放在<回复>...</回复>的最后。\n追问的信息是一定要能用已知的知识库回答的！！\n不能追问“您还有其他问题吗？”，“你对XXX有了解吗”这样没有用并且知识库也不好回答的问题。\n不能追问“您还有其他问题吗？”这样没有用的话！！\n格式为： \n```\n<回复>\n...\n</回复>\n```"
+        },
+        "demonstration": None,
+        "input": None,
+        "tool": {
+        "knowledge_base": "yc_final.json"
+        },
+        "output": {
+        "output": "回复"
+        }
+    }
+}
+
+
 node_invite = {
     "tool_name":"StaticNode",
     "name":"node_search_recom",
@@ -99,22 +164,65 @@ node_book_card = {
 
 node_end = {
     "tool_name":"StaticNode",
-    "name":"",
+    "name":"node_end",
     "output":"""我会帮您预约好名额，请您合理安排好时间。届时我会在二迷眼科分诊台等您。""",
     "done":True
     }
 
+node_no_invite = {
+    "tool_name":"StaticNode",
+    "name":"node_no_invite",
+    "output":"""你还有其他关于眼科的的问题吗？""",
+    "done":True
+    }
 
-data["gpt_nodes"] = {"node_judge_chat":node_judge_chat,"node_chat_response":node_chat_response,"node_knowleage_response":node_knowleage_response}
-data["tool_nodes"] = {"node_invite":node_invite,"node_book_card":node_book_card,"node_end":node_end}
+node_second_invite = {
+    "tool_name":"StaticNode",
+    "name":"node_second_invite",
+    "output":"""建议您可以到院和医院详聊哦。""",
+    "done":True
+    }
+
+node_no_book_card = {
+    "tool_name":"StaticNode",
+    "name":"node_no_book_card",
+    "output":"""您是否还有其他顾虑？""",
+    "done":True
+    }
+
+node_second_book_card = {
+    "tool_name":"StaticNode",
+    "name":"node_no_agree_invite",
+    "output":"""建议您可以到院和医院详聊哦。""",
+    "done":True
+    }
+
+
+data["gpt_nodes"] = {"node_judge_intent":node_judge_intent,
+                     "node_judge_intent_invite":node_judge_intent_invite,
+                     "node_judge_intent_book_card":node_judge_intent_book_card,
+                     "node_knowleage_response":node_knowleage_response,
+                     "node_knowleage_response_invite":node_knowleage_response_invite,
+                    "node_knowleage_response_book_card":node_knowleage_response_book_card}
+
+data["tool_nodes"] = {"node_invite":node_invite,
+                      "node_no_invite":node_no_invite,
+                      "node_second_invite":node_second_invite,
+                      "node_book_card":node_book_card,
+                      "node_no_book_card":node_no_book_card,
+                      "node_second_book_card":node_second_book_card,
+                      "node_end":node_end}
 
 data["relation"] = {
-    "node_judge_chat":{"是":"node_chat_response","否":"node_knowleadge_response"},
-    "node_chat_response":{"0":"node_judge_idle"},
-    "node_extract_category":{"0":"node_tool_compare_category"},
-    "node_tool_compare_category":{"0":"node_extract_requirements","1":"uncompare_fur_recom"},
-    "node_extract_requirements":{"0":"node_search_recom"},
-    "uncompare_fur_recom":{"0":"node_judge_idle"}
+    "node_knowleage_response":{"0","node_invite"},
+    "node_invite":{"0":"node_judge_intent_invite"},
+    "node_judge_intent_invite":{"0":"node_book_card","1":"node_no_invite","2":"node_knowleage_response_invite"},
+    "node_no_invite":{"0":"node_knowleage_response"},
+
+    "node_book_card":{"0":"node_judge_intent_book_card"},
+    "node_judge_intent_book_card":{"0":"node_end","1":"node_no_book_card","2":"node_knowleage_response_book_card"},
+    "node_knoleadge_response_book_card":{"0":"node_invite"},
+    "node_no_book_card":{"0":"node_knowleage_response_book_card"},
     }
 
 with open("eye.json","w",encoding="utf-8") as f:
