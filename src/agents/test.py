@@ -1,33 +1,3 @@
-from mongoengine import connect
-import mongoengine
-from pymongo import MongoClient
-
-connect(
-    db='shopping_assistant',
-    host='47.96.122.196',
-    port=27017,
-    username='aiwaves',
-    password='bxzn2023',
-    authentication_source='admin')
-
-# 任务配置
-class TaskConfig(mongoengine.Document):
-    user_id = mongoengine.IntField()  # 用户ID
-    memory = mongoengine.DictField()  # 长期记忆
-    next_node_name = mongoengine.StringField()  # 下一个节点的名字
-
-
-def add_date(user_id,memory,next_node_name):
-  new_task = TaskConfig(user_id = user_id,memory = memory,next_node_name = next_node_name)
-  new_task.save()
-
-def find_data(user_id):
-  return TaskConfig.objects(user_id=user_id).first()
-
-def delete_data(user_id):
-  task = TaskConfig.objects(user_id=user_id).first()
-  task.delete()
-
 # memory = {"name":"lli","num":0}
 # add_date(0,memory,"0")
 
@@ -36,8 +6,6 @@ def delete_data(user_id):
 # print(a.memory)
 # a.delete()
 
-a = find_data(0)
-print(a.memory)
 
 
 # # 创建一个新的任务配置文档
@@ -86,3 +54,5 @@ print(a.memory)
 
 # # 关闭连接
 # client.close()
+
+
