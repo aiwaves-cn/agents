@@ -51,7 +51,7 @@ class Agent():
         flag = 0
         now_node = self.now_node
         chat_history = self.process_history(history)
-        self.long_memory["chat_history"] = chat_history
+        self.temp_memory["chat_history"] = chat_history
         "Continuous recursion"
         while True:
             print(now_node.name)
@@ -152,14 +152,16 @@ class Agent():
                 task = find_data(userName)
                 task.memory = self.long_memory
                 task.now_node = self.now_node
+                task.save()
                 break
 
 
 
     def load_date(self,username):
         task = find_data(username)
+        if username=="":
+            username = 0
         if task:
-            long_memory = task.memory
             now_node_name = task.now_node_name
             self.now_node = self.SOP.nodes[now_node_name]
             self.long_memory = task.memory
