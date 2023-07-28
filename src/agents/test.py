@@ -56,3 +56,15 @@
 # client.close()
 
 
+def f():
+    for i in range(3):
+        yield i
+    a= 2 
+
+def f2():
+    return f()
+
+
+b = f2()
+for i in b:
+    print(i)
