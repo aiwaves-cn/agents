@@ -57,26 +57,17 @@ class Agent():
             chat =  self.chat(query,userName)
             for res in chat:
                 yield res
-<<<<<<< HEAD
             return       
             
-=======
-            return 
-         
->>>>>>> refs/remotes/origin/master
         self.long_memory["chat_history"].append({"role": "user", "content": query})
         self.long_memory["idle_history"].append({"role": "user", "content": query})
         
         chat_history = self.long_memory["chat_history"]
-<<<<<<< HEAD
         # print(f"chat_history:{chat_history}")
-=======
->>>>>>> refs/remotes/origin/master
         flag = 0
         now_node = self.now_node
         "Continuous recursion"
         while True:
-<<<<<<< HEAD
             if now_node.done:
                 flag = 1
             else:
@@ -85,13 +76,6 @@ class Agent():
             if isinstance(now_node,GPTNode):
                 # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
                 
-=======
-            # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
-            if now_node.done:
-                flag =1
-            print(now_node.name)
-            if isinstance(now_node,GPTNode):               
->>>>>>> refs/remotes/origin/master
                 # Extract key information to determine which node branch to enter
                 if now_node.node_type =="judge":
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
@@ -172,11 +156,6 @@ class Agent():
                 task = find_data(userName)
                 task.memory = self.long_memory
                 task.now_node_name = self.now_node.name
-<<<<<<< HEAD
-                
-                print(f"task.now_node_name:{task.now_node_name}")
-=======
->>>>>>> refs/remotes/origin/master
                 task.save()
                 break
 
