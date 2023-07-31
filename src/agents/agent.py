@@ -57,37 +57,24 @@ class Agent():
             chat =  self.chat(query,userName)
             for res in chat:
                 yield res
-            return 
-            # system_prompt,last_prompt = self.idle_response_node.get_prompt(self.long_memory,self.temp_memory)
-            # idle_history = self.long_memory["idle_history"]
-            # idle_history.append({"role": "user", "content": query})
-            
-            # response = get_gpt_response_rule_stream(idle_history,system_prompt,None)
-            # all = ""
-            # for res in response:
-            #     all += res if res else ''
-            #     yield  res  
-            # self.long_memory["idle_history"].append({"role": "assistant", "content": all}) 
-            # task = find_data(userName)
-            # task.memory = self.long_memory
-            # task.save()
-            # return
-        
+            return       
             
         self.long_memory["chat_history"].append({"role": "user", "content": query})
         self.long_memory["idle_history"].append({"role": "user", "content": query})
         
         chat_history = self.long_memory["chat_history"]
-        print(f"chat_history:{chat_history}")
+        # print(f"chat_history:{chat_history}")
         flag = 0
         now_node = self.now_node
         "Continuous recursion"
         while True:
+            if now_node.done:
+                flag = 1
+            else:
+                flag = 0
             print(now_node.name)
             if isinstance(now_node,GPTNode):
                 # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
-                if now_node.done:
-                    flag =1
                 
                 # Extract key information to determine which node branch to enter
                 if now_node.node_type =="judge":
@@ -95,6 +82,8 @@ class Agent():
                     response = get_gpt_response_rule(chat_history,system_prompt,last_prompt)
                     keywords = extract(response,now_node.extract_words)
                     next_nodes_nums = len(now_node.next_nodes.keys())
+                    print("response:",response)
+                    print("keywords:",keywords)
                     for i,key in enumerate(now_node.next_nodes):
                         if i == next_nodes_nums-1:
                             now_node = now_node.next_nodes[key]
@@ -121,10 +110,7 @@ class Agent():
                         print("************************************")
                     now_node = now_node.next_nodes["0"]
                 
-                
-                
                 elif now_node.node_type == "response":
-
                     system_prompt,last_prompt = now_node.get_prompt(self.long_memory,self.temp_memory)
                     response = get_gpt_response_rule_stream(chat_history,system_prompt,None)
                     now_node = now_node.next_nodes["0"]
@@ -143,7 +129,7 @@ class Agent():
                     all = ""
                     for res in response:
                         all += res if res else ''
-                        yield  res  
+                        yield  res
                         
                     if type(now_node.extract_words) == list:
                         for extract_word in now_node.extract_words:
@@ -162,18 +148,20 @@ class Agent():
                     if isinstance(output,dict):
                         response = output["response"]
                         next_node_id = output["next_node_id"]
-                        yield response
+                        for res in response:
+                            yield res
                     else:
                         yield output
-                    
                 now_node = now_node.next_nodes[next_node_id]
-                self.now_node = now_node       
+                self.now_node = now_node
                   
             if flag or now_node == self.root:
                 self.temp_memory = {}
                 task = find_data(userName)
                 task.memory = self.long_memory
-                task.now_node = self.now_node
+                task.now_node_name = self.now_node.name
+                
+                print(f"task.now_node_name:{task.now_node_name}")
                 task.save()
                 break
 
@@ -181,8 +169,10 @@ class Agent():
 
     def load_date(self,username):
         task = find_data(username)
+        print(task)
         if task:
             now_node_name = task.now_node_name
+            print(f"now_node_name:{now_node_name}")
             self.now_node = self.SOP.nodes[now_node_name]
             self.long_memory = {key: value for key, value in task.memory.items()}
             chat_history = [item for item in task.memory["chat_history"]]
@@ -216,15 +206,12 @@ class Agent():
         chat_history.append({"role": "user", "content": query})
         response = get_gpt_response_rule(chat_history,system_prompt,last_prompt)
         keywords = extract(response,self.judge_idle_node.extract_words)
-        print(chat_history)
-        print(response)
         if keywords == "是":
             return True
         else:
             return False
 
     def chat(self,query,userName):
-        print(2)
         system_prompt,last_prompt = self.idle_response_node.get_prompt(self.long_memory,self.temp_memory)
         idle_history = self.long_memory["idle_history"]
         idle_history.append({"role": "user", "content": query})

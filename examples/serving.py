@@ -23,7 +23,7 @@ import argparse
 from flask import Flask,request,Response
 from gevent import pywsgi
 import sys
-sys.path.append("/home/aiwaves/longli/agents/src/agents")
+sys.path.append("/home/aiwaves/jlwu/agents-2/src/agents")
 from sop import SOP
 from agent import Agent
 
@@ -36,6 +36,7 @@ if __name__ == '__main__':
     parser.add_argument('--logger_dir', type=str, default='logs/test_log')
     parser.add_argument('--knowledge_path', type=str, default='data/text_embeddings_yc_enhanced.json', help='path to save new_quries')
     parser.add_argument('--agent', type=str, help='path to SOP json')
+    parser.add_argument('--port', type=int, help='server port')
     args = parser.parse_args()
     
     agent = Agent(args.agent)
@@ -53,5 +54,5 @@ if __name__ == '__main__':
         response = agent.reply(userName,query)
         return Response(response, mimetype='text/event-stream', headers=headers)
     
-    server = pywsgi.WSGIServer(('0.0.0.0', 8000), app)
+    server = pywsgi.WSGIServer(('0.0.0.0', args.port), app)
     server.serve_forever()
