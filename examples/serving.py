@@ -23,7 +23,7 @@ import argparse
 from flask import Flask,request,Response
 from gevent import pywsgi
 import sys
-sys.path.append("/home/aiwaves/jlwu/agents-2/src/agents")
+sys.path.append("../src/agents")
 from sop import SOP
 from agent import Agent
 
