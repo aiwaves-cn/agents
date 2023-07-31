@@ -59,7 +59,7 @@
    ```bash
    git clone https://github.com/aiwaves-cn/agents.git
    ```
-4. **Install the requirements**🛠️
+4. **Install the requirements!**🛠️
       ```bash
    pip install -r requirements.txt
    ```
