@@ -26,8 +26,10 @@ class Component():
     def __init__(self):
         self.prompt = ""
     
+    
+    @abstractmethod
     def get_prompt(self):
-        return self.prompt
+        pass
     
 class TaskComponent(Component):
     
