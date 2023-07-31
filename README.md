@@ -22,7 +22,6 @@
 ## Standard Operation Procedure (SOP)
 
 ## Nodes
->- Definition:
 
 ## Components
 > In order to provide <u>modularized prompts</u> of a Node in an AI Autonomous Agent, we established **Components** module.
@@ -59,7 +58,7 @@
    ```bash
    git clone https://github.com/aiwaves-cn/agents.git
    ```
-4. **Install the requirements!**🛠️
+4. **Install the requirements**🛠️
       ```bash
    pip install -r requirements.txt
    ```
@@ -78,7 +77,8 @@ PROXY  =  #Your proxy
 MAX_CHAT_HISTORY  =  8 #Longest History
    ```
 5. **Run our demo in your teminal**🏃‍♂️
-	4.1. **Shopping assistant**🛍️
+	
+    4.1. **Shopping assistant**🛍️
       ```bash
    cd examples
    python run_cmd.py --agent shopping_assistant.json 
@@ -93,6 +93,7 @@ MAX_CHAT_HISTORY  =  8 #Longest History
  1. **Prepare your front-end webpage**🌐
  
 2. **Deploy**🚀
+
     Please refer to serving.py for details
 	We used flask to deploy🌶️
    ```bash
