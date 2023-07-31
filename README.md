@@ -49,4 +49,52 @@
 >>>    pass
 > [^1]:"Component" is defined as parent class, providing modularized input form of diverse prompts.
 > [^2]:"StyleComponent" is a sort of subclasses, which is designated to provide several kinds of "temper" of the autonomous agents. Those "temper" include customized chatting templates and styles. We have developed numorous kinds of styles, such as humorous and expertised.
-## Usage
+
+## Getting Started with Fun 😄
+### Try  our demo in your terminal:point_down:
+1. **Open your teminal**🖥️
+
+3. **Get the Repository**📦
+   ```bash
+   git clone https://github.com/aiwaves-cn/agents.git
+   ```
+4. **Install the requirements**🛠️
+      ```bash
+   pip install -r requirements.txt
+   ```
+  4. **Set the config**🛠️
+  >Modify sec/agents/config.py
+  >Mainly modify API KEY and PROXY
+   ```bash
+   ##only used for shopping assistant
+ MIN_CATEGORY_SIM  =  0.7  ##Threshold for category matching
+TOY_INFO_PATH  = [your_path1,your_path2_......] #Path to the product database
+FETSIZE  =  5 #Number of recommended products at a time
+
+#for all agents
+API_KEY  =  #Your API KEY
+PROXY  =  #Your proxy
+MAX_CHAT_HISTORY  =  8 #Longest History
+   ```
+5. **Run our demo in your teminal**🏃‍♂️
+	4.1. **Shopping assistant**🛍️
+      ```bash
+   cd examples
+   python run_cmd.py --agent shopping_assistant.json 
+   ```
+   4.2. **Oculist agent**👁️
+     ```bash
+   cd examples
+   python run_cmd.py --agent eye.json 
+   ```
+
+## Deploy our demo on the backend:point_down:
+ 1. **Prepare your front-end webpage**🌐
+ 
+2. **Deploy**🚀
+    Please refer to serving.py for details
+	We used flask to deploy🌶️
+   ```bash
+   cd examples
+   python serving.py --agent shopping_assistant.json --port your_port --router your_api_router
+   ```
