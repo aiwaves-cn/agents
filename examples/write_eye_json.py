@@ -1,11 +1,62 @@
 import json
 data = {}
+
+node_judge_idle = {
+        "name": "node_judge_idle",
+        "node_type": "judge",
+        "extract_word": "is_idle",
+        "done": False,
+        "judge_idle_node": True,
+        "components": {
+          "style": {
+            "agent": "一个眼科医院的客服",
+            "style": "风趣，专业，能根据不同的客户随机应变，擅长引经据典"
+          },
+          "task": {
+            "task": "需要做的是判断用户是否问和眼科相关的问题"
+          },
+          "knowledge": None,
+          "rule": {
+            "rule": "根据用户的回答，分析其与之前对话的关系，判断其是否为闲聊，具体判断依据为，用户当前对话是否与眼科问题有关。\n具体表现为，用户问了眼科相关问题，则判断为不是闲聊，输出<is_idle>否</is_idle>\n反之，如果用户当前聊天与眼科问题无关，则判断为是闲聊，输出<is_idle>是</is_idle>"
+          },
+          "demonstration": {
+            "demonstration": [
+              "\"客户\"：\"我想要鞋子\"。\n此时<is_idle>否</is_idle>\n\"客户\"：\"帮我解一道代码题\"。\n此时<is_idle>是</is_idle>\n\n\"客户\"：\"我有干眼症\"。\n此时<is_idle>否</is_idle>\n\"客户\"：\"谢谢\"。\n此时<is_idle>是</is_idle>\n\"客户\"：\"我有个情感问题需要你帮忙解决\"。\n此时<is_idle>是</is_idle> "
+            ]
+          },
+          "tool": None,
+          "output": {
+            "output": "is_idle"
+          }
+        }
+      }
+node_idle =  {
+        "name": "node_idle",
+        "node_type": "response",
+        "extract_word": "response",
+        "idle_response_node":True,
+        "done": True,
+        "components": {
+          "style": {
+            "agent": "一个眼科医院的客服，你的目标是以你的专业经验，回复用户的问题",
+            "style": "幽默，善于随机应变，会引经据典"
+          },
+          "task": {
+            "task": "回复用户的问题"
+          },
+          "knowledge": None,
+          "rule": {
+            "rule": "1. 要联系客户的所有对话，尤其是最近的对话，来回答用户的问题。\n2. 语言要幽默，要引经据典，不能重复对话，对话风格也不能太过单一。"
+          },
+          "demonstration": None,
+          "tool": None
+        }
+      }
 node_judge_intent = {
-        "name":"node_judge_chat",
+        "name":"node_judge_intent",
         "node_type":"judge",
         "extract_word":"意图",
         "done":False,
-        "root":True,
         "components":
             {"style":
                 {"agent":"眼科医院的客服","style":"严谨专业"},
@@ -25,11 +76,10 @@ node_judge_intent = {
         }
 
 node_judge_intent_invite = {
-        "name":"node_judge_chat",
+        "name":"node_judge_intent_invite",
         "node_type":"judge",
         "extract_word":"意图",
         "done":False,
-        "root":True,
         "components":
             {"style":
                 {"agent":"眼科医院的客服","style":"严谨专业"},
@@ -49,11 +99,10 @@ node_judge_intent_invite = {
         }
 
 node_judge_intent_book_card = {
-        "name":"node_judge_chat",
+        "name":"node_judge_intent_book_card",
         "node_type":"judge",
         "extract_word":"意图",
         "done":False,
-        "root":True,
         "components":
             {"style":
                 {"agent":"眼科医院的客服","style":"严谨专业"},
@@ -72,8 +121,34 @@ node_judge_intent_book_card = {
             }
         }
 
-node_knowleage_response = {
-    "name": "node_knowleage_response",
+node_knowledge_response = {
+    "name": "node_knowledge_response",
+    "node_type": "response",
+    "extract_word": "回复",
+    "done": False,
+    "components": {
+        "style":
+          {"agent":"眼科医院的客服","style":"严谨专业"},
+        "task": {
+        "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
+        },
+        "rule": {
+        "rule": ""
+        },
+        "demonstration": None,
+        "input": None,
+        "tool": {
+        "knowledge_base": "database/eye.json"
+        },
+        "output": {
+        "output": "回复"
+        }
+    },
+    "root":True
+}
+
+node_knowledge_response_invite = {
+    "name": "node_knowledge_response_invite",
     "node_type": "response",
     "extract_word": "回复",
     "done": True,
@@ -89,7 +164,7 @@ node_knowleage_response = {
         "demonstration": None,
         "input": None,
         "tool": {
-        "knowledge_base": "yc_final.json"
+        "knowledge_base": "database/eye.json"
         },
         "output": {
         "output": "回复"
@@ -97,8 +172,8 @@ node_knowleage_response = {
     }
 }
 
-node_knowleage_response_invite = {
-    "name": "node_knowleage_response",
+node_knowledge_response_book_card = {
+    "name": "node_knowledge_response_book_card",
     "node_type": "response",
     "extract_word": "回复",
     "done": True,
@@ -114,32 +189,7 @@ node_knowleage_response_invite = {
         "demonstration": None,
         "input": None,
         "tool": {
-        "knowledge_base": "yc_final.json"
-        },
-        "output": {
-        "output": "回复"
-        }
-    }
-}
-
-node_knowleage_response_book_card = {
-    "name": "node_knowleage_response",
-    "node_type": "response",
-    "extract_word": "回复",
-    "done": True,
-    "components": {
-        "style":
-          {"agent":"眼科医院的客服","style":"严谨专业"},
-        "task": {
-        "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
-        },
-        "rule": {
-        "rule": "如果这个不是问题，而是客服面对你追问的回答，你应该依据上一轮你追问用户依据的知识库做回答。请输出你的回答。避免输出换行符这类控制格式的字符。并且说话要简短！不需要说“有什么其他问题我可以帮您解答的吗？”，“希望这些信息对您有所帮助！”这样的话！！\n请使用严格按照以下的格式输出！！ 请使用严格按照以下的格式输出！！\n你的回复要严格按照下面的输出格式。你的说话风格要幽默。请把你的回复放在<回复>...</回复>中，如果是可以回答并且可以追问，追问的内容放在<回复>...</回复>的最后。\n追问的信息是一定要能用已知的知识库回答的！！\n不能追问“您还有其他问题吗？”，“你对XXX有了解吗”这样没有用并且知识库也不好回答的问题。\n不能追问“您还有其他问题吗？”这样没有用的话！！\n格式为： \n```\n<回复>\n...\n</回复>\n```"
-        },
-        "demonstration": None,
-        "input": None,
-        "tool": {
-        "knowledge_base": "yc_final.json"
+        "knowledge_base": "database/eye.json"
         },
         "output": {
         "output": "回复"
@@ -150,8 +200,8 @@ node_knowleage_response_book_card = {
 
 node_invite = {
     "tool_name":"StaticNode",
-    "name":"node_search_recom",
-    "output":"我建议你可以抽空来做一个详细的术前检查，查看下你的角膜厚度，眼底情况等等，然后让医生判断一下您的眼睛条件最适合什么样的手术方式，有什么疑惑或者顾虑也可以和医生坐下来聊一聊。",
+    "name":"node_invite",
+    "output":"<追问>我建议你可以抽空来做一个详细的术前检查，查看下你的角膜厚度，眼底情况等等，然后让医生判断一下您的眼睛条件最适合什么样的手术方式，有什么疑惑或者顾虑也可以和医生坐下来聊一聊。</追问>",
     "done":True
     }
 
@@ -198,12 +248,15 @@ node_second_book_card = {
     }
 
 
-data["gpt_nodes"] = {"node_judge_intent":node_judge_intent,
-                     "node_judge_intent_invite":node_judge_intent_invite,
-                     "node_judge_intent_book_card":node_judge_intent_book_card,
-                     "node_knowleage_response":node_knowleage_response,
-                     "node_knowleage_response_invite":node_knowleage_response_invite,
-                    "node_knowleage_response_book_card":node_knowleage_response_book_card}
+data["gpt_nodes"] = {
+        "node_judge_idle":node_judge_idle,
+        "node_idle":node_idle ,
+        "node_judge_intent":node_judge_intent,
+        "node_judge_intent_invite":node_judge_intent_invite,
+        "node_judge_intent_book_card":node_judge_intent_book_card,
+        "node_knowledge_response":node_knowledge_response,
+        "node_knowledge_response_invite":node_knowledge_response_invite ,
+        "node_knowledge_response_book_card":node_knowledge_response_book_card}
 
 data["tool_nodes"] = {"node_invite":node_invite,
                       "node_no_invite":node_no_invite,
@@ -214,16 +267,20 @@ data["tool_nodes"] = {"node_invite":node_invite,
                       "node_end":node_end}
 
 data["relation"] = {
-    "node_knowleage_response":{"0","node_invite"},
+    "node_knowledge_response":{"0":"node_invite"},
     "node_invite":{"0":"node_judge_intent_invite"},
-    "node_judge_intent_invite":{"0":"node_book_card","1":"node_no_invite","2":"node_knowleage_response_invite"},
-    "node_no_invite":{"0":"node_knowleage_response"},
+    "node_judge_intent_invite":{"1":"node_book_card","2":"node_no_invite","3":"node_knowledge_response"},
+    "node_no_invite":{"0":"node_knowledge_response"},
 
     "node_book_card":{"0":"node_judge_intent_book_card"},
-    "node_judge_intent_book_card":{"0":"node_end","1":"node_no_book_card","2":"node_knowleage_response_book_card"},
-    "node_knoleadge_response_book_card":{"0":"node_invite"},
-    "node_no_book_card":{"0":"node_knowleage_response_book_card"},
+    "node_judge_intent_book_card":{"1":"node_end","2":"node_no_book_card","3":"node_knowledge_response_book_card"},
+    "node_knowledge_response_book_card":{"0":"node_invite"},
+    "node_no_book_card":{"0":"node_knowledge_response_book_card"},
     }
-
+for i in data:
+    print(type(data[i]))
+    for j in data[i]:
+        print(data[i][j])
+        print(type(data[i][j]))
 with open("eye.json","w",encoding="utf-8") as f:
     json.dump(data,f,ensure_ascii=False,indent=2)
