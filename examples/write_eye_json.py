@@ -147,7 +147,7 @@ node_knowledge_response = {
     "root":True
 }
 
-node_knowledge_response_invite = {
+node_knowledge_response_end = {
     "name": "node_knowledge_response_invite",
     "node_type": "response",
     "extract_word": "回复",
@@ -208,7 +208,7 @@ node_invite = {
 node_book_card = {
     "tool_name":"StaticNode",
     "name":"node_book_card",
-    "output":"""请复制并填写以下资料，再发给我即可完成预约。\n【姓名】:\n【电话】:\n【您所在的大概位置】:x市x区 \n【预计到院时间】:\n【最近一次戴隐形眼镜时期】:\n【近视度数】：\n 术前检查流程有散瞳环节，散瞳后会有4-6个小时回视线模糊，影响驾驶安全，所以请不要自驾来医院，并安排好检查之后的个人行程。""",
+    "output":"""请复制并填写以下资料，再发给我即可完成预约。\\n【姓名】:\\n【电话】:\\n【您所在的大概位置】:x市x区 \\n【预计到院时间】:\\n【最近一次戴隐形眼镜时期】:\\n【近视度数】：\\n 术前检查流程有散瞳环节，散瞳后会有4-6个小时回视线模糊，影响驾驶安全，所以请不要自驾来医院，并安排好检查之后的个人行程。""",
     "done":True
     }
 
@@ -271,11 +271,12 @@ data["relation"] = {
     "node_invite":{"0":"node_judge_intent_invite"},
     "node_judge_intent_invite":{"1":"node_book_card","2":"node_no_invite","3":"node_knowledge_response"},
     "node_no_invite":{"0":"node_knowledge_response"},
-
     "node_book_card":{"0":"node_judge_intent_book_card"},
     "node_judge_intent_book_card":{"1":"node_end","2":"node_no_book_card","3":"node_knowledge_response_book_card"},
     "node_knowledge_response_book_card":{"0":"node_invite"},
     "node_no_book_card":{"0":"node_knowledge_response_book_card"},
+    "node_end":{"0":"node_knowledge_response_end"},
+    "node_knowledge_response_end":{"0":"node_knowledge_response_end"}
     }
 for i in data:
     print(type(data[i]))

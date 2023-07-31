@@ -6,7 +6,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -30,13 +30,8 @@ from agent import Agent
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser(description='A demo of chatbot')
-    parser.add_argument('--model_ckpt', type=str, default='shibing624/text2vec-base-chinese', help='model checkpoint')
-    parser.add_argument('--model_type', type=str, default='SentenceModel', help='model name')
-    parser.add_argument('--topk', type=int, default=3)
-    parser.add_argument('--logger_dir', type=str, default='logs/test_log')
-    parser.add_argument('--knowledge_path', type=str, default='data/text_embeddings_yc_enhanced.json', help='path to save new_quries')
     parser.add_argument('--agent', type=str, help='path to SOP json')
-    parser.add_argument('--port', type=int, help='server port')
+    parser.add_argument('--port', type=int, help='server port eye7877 shopping8000')
     args = parser.parse_args()
     
     agent = Agent(args.agent)
