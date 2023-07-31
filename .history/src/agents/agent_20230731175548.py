@@ -21,7 +21,6 @@ from prompt import *
 from flask import Response
 from datebase import *
 import time
-from config import *
 
 headers = {
             'Content-Type': 'text/event-stream',

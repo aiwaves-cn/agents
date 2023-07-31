@@ -20,7 +20,7 @@ from sop import *
 from prompt import *
 from flask import Response
 from datebase import *
-from config import *
+import time
 
 headers = {
             'Content-Type': 'text/event-stream',

@@ -21,7 +21,6 @@ from prompt import *
 from flask import Response
 from datebase import *
 import time
-from config import *
 
 headers = {
             'Content-Type': 'text/event-stream',
@@ -35,6 +34,7 @@ class Agent():
     Auto agent, input the JSON of SOP.
     """
     def __init__(self,sop) -> None:
+        
         self.content = {
             "messages":[]
             }
