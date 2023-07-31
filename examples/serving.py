@@ -26,7 +26,6 @@ import sys
 sys.path.append("../src/agents")
 from sop import SOP
 from agent import Agent
-
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser(description='A demo of chatbot')
@@ -51,3 +50,6 @@ if __name__ == '__main__':
     
     server = pywsgi.WSGIServer(('0.0.0.0', args.port), app)
     server.serve_forever()
+    
+    
+    
