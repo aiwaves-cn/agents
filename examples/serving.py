@@ -30,11 +30,6 @@ from agent import Agent
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser(description='A demo of chatbot')
-    parser.add_argument('--model_ckpt', type=str, default='shibing624/text2vec-base-chinese', help='model checkpoint')
-    parser.add_argument('--model_type', type=str, default='SentenceModel', help='model name')
-    parser.add_argument('--topk', type=int, default=3)
-    parser.add_argument('--logger_dir', type=str, default='logs/test_log')
-    parser.add_argument('--knowledge_path', type=str, default='data/text_embeddings_yc_enhanced.json', help='path to save new_quries')
     parser.add_argument('--agent', type=str, help='path to SOP json')
     parser.add_argument('--port', type=int, help='server port')
     args = parser.parse_args()
