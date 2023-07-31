@@ -21,15 +21,16 @@ from prompt import *
 from flask import Response
 from datebase import *
 import time
-from config import *
+import json
 
 headers = {
             'Content-Type': 'text/event-stream',
             'Cache-Control': 'no-cache',
             'X-Accel-Buffering': 'no',
         }
-
-
+with open("config.json","r",encoding="utf-8") as f:
+    
+args = json.loads("")
 class Agent():
     """
     Auto agent, input the JSON of SOP.

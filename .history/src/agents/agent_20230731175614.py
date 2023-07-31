@@ -21,7 +21,7 @@ from prompt import *
 from flask import Response
 from datebase import *
 import time
-from config import *
+import json
 
 headers = {
             'Content-Type': 'text/event-stream',
@@ -29,7 +29,7 @@ headers = {
             'X-Accel-Buffering': 'no',
         }
 
-
+args = 
 class Agent():
     """
     Auto agent, input the JSON of SOP.
