@@ -96,7 +96,7 @@
 > - Classification:  We use parent classes and subclasses to classify diverse kinds of prompts. Two kinds of parent classes are provided,  namely "Component" and "KnowledgeComponent".  Specialized requirements, such as rules, styles and output forms of an autonomous agent, is inherited from one of the parent classes above.
 > 
 > - Examples:
-> >- codes of ``componen`` [^1]class is shown below:
+> >- codes of ``component`` [^1]class is shown below:
 > >>```python
 >>>    class Component():  
 >>>        def __init__(self):  
