@@ -22,7 +22,83 @@
 ## Standard Operation Procedure (SOP)
 
 ## Nodes
-
+>- Definition: Apparently, an autonomous agent is composed of numorous nodes, each contributing to the whole system. We have developed nearly the **simplist node** mainly based on GPT. All you need to do is __input the prompt__,and you could get the response as output. Afterwards, the response can be used for different operations.
+>
+>- Classification: We have created two kinds of parent node classes, namely "GPT Nodes" and "Tool Nodes". 
+><br>GPT Nodes consists of three differnt types, namely "judge", "response" and "extract", with their functions as follows:
+>>- <font face="Consolas">judge node</font>:  This type of node judges certain sentences and return the keyword to determine which node for next.
+>
+>>- <font face="Consolas">response node</font>: This type of node responds to user's questions, usually according to their knowledge base.
+>
+>>- <font face="Consolas">extract node</font>: This type of node extracts particular key words from user's input, and return the key word for memory.
+><br>Tool Nodes are created to complete certain tasks, such as searching particular information in the memory base, or matching certain key words.
+>- Examples:
+>>- basic codes of a GPT Node is shown below:
+>>> ```python
+>>>     class  GPTNode():
+>>>        def  __init__(self,
+>>>            name:str = None,
+>>>            node_type: str = None,
+>>>            extract_words = None,
+>>>            done=False,
+>>>            user_input:str= "",
+>>>            components:dict = {}):
+>>>            self.prompt = ""
+>>>            self.node_type = node_type
+>>>            self.next_nodes = {}
+>>>            self.components = components
+>>>            self.extract_words = extract_words
+>>>            self.done = done
+>>>            self.name = name
+>>Each of the attributes are shown here: [^here]
+>>- basic nodes of a Tool Node is shown below:
+>>>```python
+>>>    class  ToolNode:
+>>>        def  __init__(self,name="",done=False):
+>>>            self.next_nodes = {}
+>>>            self.name = name
+>>>            self.done = done
+>>>            @abstractmethod
+>>>        def  func(self,long_memory,temp_memory):
+>>>            pass
+>>Static Node is one type of Tool Nodes, the codes are shown below:
+>>>``` python
+>>>    class  StaticNode(ToolNode):
+>>>        def  __init__(self, name="",output = "", done=False):
+>>>            super().__init__(name, done)
+>>>            self.output = output
+>>>        def  func(self,long_memory,temp_memory):
+>>>            outputdict = {"response":self.output,"next_node_id" : "0"}
+>>>            yield  outputdict
+>[^here]:Basic Attributes of GPT Nodes:
+tool (Tool, optional): _description_. Defaults to None.
+node_type (str, optional): three type (response, extract,judge)
+---response:return a response
+---extract:return a keyword for memory
+---judge:return the keyword to determine which node for next
+extract_words (str, optional): _description_. Defaults to "".
+next_nodes (dict, optional): _description_. Defaults to {}.
+done (bool, optional): True:When the program runs to this node, it will be interrupted, allowing the user to input.
+user_input (str, optional): The content you want to agent know. Defaults to "".
+components(dict) : Contains the definition of various components
+{
+"style":{"agent":"" , "style": "" } ,
+*"task"*:{"task":""} ,
+"rule":{"rule":""},
+"knowledge" (str): ""
+"demonstration":{"demonstration":[]} ,
+"input":true or false,
+"tool":{tool_name:"",**args} ,
+*"output"*:{"output":""}
+}
+--style(agent,style) : agent(str):the role of the agent. style(str):the style of the agent
+--task(task) : task(str):the task of the agent
+--rule(rule) : rule(str):the rule of the agent
+--knowledge(str) : the name of knowledge component
+--demonstration: demenstration(list):the example of answer
+--input : yet have external inputs , always be last input
+--tool(tool_name,**args) : tool_name(str):the name of tool,**args(Dict):the parameters of tool
+--output(output) : output(str):the html wrap of response
 ## Components
 > In order to provide <u>modularized prompts</u> of a Node in an AI Autonomous Agent, we established **Components** module.
 > 
