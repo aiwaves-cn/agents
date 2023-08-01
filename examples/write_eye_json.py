@@ -130,25 +130,23 @@ node_knowledge_response = {
         "style":
           {"agent":"眼科医院的客服","style":"严谨专业"},
         "task": {
-        "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
+        "task": "使用我们提供的内容来尽可能回答客户的问题。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
         },
         "rule": {
-        "rule": ""
+        "rule": "将你的回复包在<回复>...</回复>中，一定要按照这个格式输出。"
         },
         "demonstration": None,
-        "input": None,
+        "input":True,
         "tool": {
         "knowledge_base": "database/eye.json"
         },
-        "output": {
-        "output": "回复"
-        }
+        "output":None,
     },
     "root":True
 }
 
 node_knowledge_response_end = {
-    "name": "node_knowledge_response_invite",
+    "name": "node_knowledge_response_end",
     "node_type": "response",
     "extract_word": "回复",
     "done": True,
@@ -156,19 +154,17 @@ node_knowledge_response_end = {
         "style":
           {"agent":"眼科医院的客服","style":"严谨专业"},
         "task": {
-        "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
+        "task": "使用我们提供的内容来尽可能回答客户的问题，如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
         },
         "rule": {
-        "rule": "如果这个不是问题，而是客服面对你追问的回答，你应该依据上一轮你追问用户依据的知识库做回答。请输出你的回答。避免输出换行符这类控制格式的字符。并且说话要简短！不需要说“有什么其他问题我可以帮您解答的吗？”，“希望这些信息对您有所帮助！”这样的话！！\n请使用严格按照以下的格式输出！！ 请使用严格按照以下的格式输出！！\n你的回复要严格按照下面的输出格式。你的说话风格要幽默。请把你的回复放在<回复>...</回复>中，如果是可以回答并且可以追问，追问的内容放在<回复>...</回复>的最后。\n追问的信息是一定要能用已知的知识库回答的！！\n不能追问“您还有其他问题吗？”，“你对XXX有了解吗”这样没有用并且知识库也不好回答的问题。\n不能追问“您还有其他问题吗？”这样没有用的话！！\n格式为： \n```\n<回复>\n...\n</回复>\n```"
+        "rule": "你的回复要严格按照下面的输出格式。你的说话风格要幽默。请把你的回复放在<回复>...</回复>中，输出格式为： \n```\n<回复>\n...\n</回复>\n```"
         },
         "demonstration": None,
-        "input": None,
+        "input": True,
         "tool": {
         "knowledge_base": "database/eye.json"
         },
-        "output": {
-        "output": "回复"
-        }
+        "output": None
     }
 }
 
@@ -255,7 +251,7 @@ data["gpt_nodes"] = {
         "node_judge_intent_invite":node_judge_intent_invite,
         "node_judge_intent_book_card":node_judge_intent_book_card,
         "node_knowledge_response":node_knowledge_response,
-        "node_knowledge_response_invite":node_knowledge_response_invite ,
+        "node_knowledge_response_end":node_knowledge_response_end,
         "node_knowledge_response_book_card":node_knowledge_response_book_card}
 
 data["tool_nodes"] = {"node_invite":node_invite,
