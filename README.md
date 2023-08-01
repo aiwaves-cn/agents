@@ -22,7 +22,7 @@
 ## 📋 Standard Operation Procedure (SOP)
 
 ## ✨Nodes
->- Definition: Apparently, an autonomous agent is composed of numorous nodes, each contributing to the whole system. We have developed nearly the **simplist node** mainly based on GPT. All you need to do is __input the prompt__,and you could get the response as output. Afterwards, the response can be used for different operations.
+>- Definition: As is manifested before, we use SOP to run the autonomous agent. Our SOP reasoning graph consists of various **Nodes**, each playing its own role, contributing to the entire system. We have developed nearly the **SIMPLIST** node mainly based on GPT. All you need to do is __input the prompt__,and you could get the response as output. Afterwards, the response can be used for different operations.
 >
 >- Classification: We have created two kinds of parent node classes, namely "GPT Nodes" and "Tool Nodes". 
 ><br>GPT Nodes consists of three differnt types, namely "judge", "response" and "extract", with their functions as follows:
