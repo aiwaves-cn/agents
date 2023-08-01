@@ -19,7 +19,7 @@
 > 
 > >- <font face="Consolas">📈Scalability</font>: AI Autonomous Agents can be easily scaled to apply for different requirements, without the need for extensive hiring or training. **With our <u><font size="5">Agents</font></u> toolkit, you can easily develop your own customized autonomous agents!**
 
-## Standard Operation Procedure (SOP)
+## 📋 Standard Operation Procedure (SOP)
 
 ## 🤖Nodes
 >- Definition: Apparently, an autonomous agent is composed of numorous nodes, each contributing to the whole system. We have developed nearly the **simplist node** mainly based on GPT. All you need to do is __input the prompt__,and you could get the response as output. Afterwards, the response can be used for different operations.
@@ -90,7 +90,7 @@
 >>>            outputdict = {"response":self.output,"next_node_id" : "0"}
 >>>            yield  outputdict
 
-## Components
+## 🧩Components
 > In order to provide <u>modularized prompts</u> of a Node in an AI Autonomous Agent, we established **Components** module.
 > 
 > - Classification:  We use parent classes and subclasses to classify diverse kinds of prompts. Two kinds of parent classes are provided,  namely "Component" and "KnowledgeComponent".  Specialized requirements, such as rules, styles and output forms of an autonomous agent, is inherited from one of the parent classes above.
@@ -118,7 +118,7 @@
 
 [^2]: "StyleComponent" is a subclass that is designated to provide various "temperaments" for autonomous agents. These "temperaments" include customized chatting templates and styles. We have developed numerous kinds of styles, such as humorous and expertised.
 
-## Getting Started with Fun 😄
+## 😄Getting Started with Fun 
 ### Try  our demo in your terminal:point_down:
 1. **Open your teminal**🖥️
 
