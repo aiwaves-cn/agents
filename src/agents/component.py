@@ -136,7 +136,7 @@ class KnowledgeBaseComponent(Component):
             if self.kb_chunks[matching_idx] in temp:
                 pass
             else:
-                knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n 以上这段话与问题的语义匹配度是{score}\n'
+                knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n\n'
                 temp.append(self.kb_chunks[matching_idx])
                 if len(temp) == self.top_k:
                     break

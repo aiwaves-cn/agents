@@ -137,24 +137,22 @@
           "style": "严谨专业"
         },
         "task": {
-          "task": "使用我们提供的内容来尽可能回答客户的问题，我们也提供了提问和提供的内容的语义相似度，最高是1。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
+          "task": "使用我们提供的内容来尽可能回答客户的问题。如果我们提供的内容无法回答客户的问题，那么请向用户道歉并说不知道。"
         },
         "rule": {
-          "rule": ""
+          "rule": "将你的回复包在<回复>...</回复>中，一定要按照这个格式输出。"
         },
         "demonstration": null,
         "input": null,
         "tool": {
           "knowledge_base": "database/eye.json"
         },
-        "output": {
-          "output": "回复"
-        }
+        "output": null
       },
       "root": true
     },
-    "node_knowledge_response_invite": {
-      "name": "node_knowledge_response_invite",
+    "node_knowledge_response_end": {
+      "name": "node_knowledge_response_end",
       "node_type": "response",
       "extract_word": "回复",
       "done": true,
@@ -278,6 +276,12 @@
     },
     "node_no_book_card": {
       "0": "node_knowledge_response_book_card"
+    },
+    "node_end": {
+      "0": "node_knowledge_response_end"
+    },
+    "node_knowledge_response_end": {
+      "0": "node_knowledge_response_end"
     }
   }
 }
