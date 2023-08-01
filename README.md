@@ -70,35 +70,30 @@
 >>>        def  func(self,long_memory,temp_memory):
 >>>            outputdict = {"response":self.output,"next_node_id" : "0"}
 >>>            yield  outputdict
->[^here]:Basic Attributes of GPT Nodes:
-- tool (Tool, optional): _description_. Defaults to None.
-- node_type (str, optional): three type (response, extract,judge)
-- ---response:return a response
-- ---extract:return a keyword for memory
-- ---judge:return the keyword to determine which node for next
-- extract_words (str, optional): _description_. Defaults to "".
-- next_nodes (dict, optional): _description_. Defaults to {}.
-- done (bool, optional): True:When the program runs to this node, it will be interrupted, allowing the user to input.
-- user_input (str, optional): The content you want to agent know. Defaults to "".
-- components(dict) : Contains the definition of various components
-- {
-- "style":{"agent":"" , "style": "" } ,
-- *"task"*:{"task":""} ,
-- "rule":{"rule":""},
-- "knowledge" (str): ""
-- "demonstration":{"demonstration":[]} ,
-- "input":true or false,
-- "tool":{tool_name:"",**args} ,
-- *"output"*:{"output":""}
-- }
-- --style(agent,style) : agent(str):the role of the agent. style(str):the style of the agent
-- --task(task) : task(str):the task of the agent
-- --rule(rule) : rule(str):the rule of the agent
-- --knowledge(str) : the name of knowledge component
-- --demonstration: demenstration(list):the example of answer
-- --input : yet have external inputs , always be last input
-- --tool(tool_name,**args) : tool_name(str):the name of tool,**args(Dict):the parameters of tool
-- --output(output) : output(str):the html wrap of response
+[^here]: Basic Attributes of GPT Nodes:
+
+- `tool` (Tool, optional): _description_. Defaults to None.
+- `node_type` (str, optional): three types (response, extract, judge)  
+    - `response`: return a response
+    - `extract`: return a keyword for memory
+    - `judge`: return the keyword to determine which node is next
+- `extract_words` (str, optional): _description_. Defaults to "".
+- `next_nodes` (dict, optional): _description_. Defaults to {}.
+- `done` (bool, optional): True: When the program runs to this node, it will be interrupted, allowing the user to input.
+- `user_input` (str, optional): The content you want the agent to know. Defaults to "".
+
+- `components` (dict): Contains the definition of various components:
+    - `style`: {"agent": "", "style": ""}
+    - `task`: {"task": ""}
+    - `rule`: {"rule": ""}
+    - `knowledge` (str): ""
+    - `demonstration`: {"demonstration": []}
+    - `input`: true or false (whether the node has external inputs, usually the last input)
+    - `tool`: {"tool_name": "", **args} (tool_name: the name of the tool, **args: the parameters of the tool)
+    - `output`: {"output": ""} (the HTML wrap of the response)
+
+
+
 ## Components
 > In order to provide <u>modularized prompts</u> of a Node in an AI Autonomous Agent, we established **Components** module.
 > 
@@ -123,8 +118,9 @@
 >>>        def get_prompt(self):  
 >>>            return f"""现在你来模拟一个{self.agent}。你需要遵循以下的输出风格：  {self.style}。  """
 >>>            pass
-> [^1]:"Component" is defined as parent class, providing modularized input form of diverse prompts.
-> [^2]:"StyleComponent" is a sort of subclasses, which is designated to provide several kinds of "temper" of the autonomous agents. Those "temper" include customized chatting templates and styles. We have developed numorous kinds of styles, such as humorous and expertised.
+[^1]: "Component" is the parent class, providing a modularized input form for diverse prompts.
+
+[^2]: "StyleComponent" is a subclass that is designated to provide various "temperaments" for autonomous agents. These "temperaments" include customized chatting templates and styles. We have developed numerous kinds of styles, such as humorous and expertised.
 
 ## Getting Started with Fun 😄
 ### Try  our demo in your terminal:point_down:
