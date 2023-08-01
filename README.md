@@ -91,7 +91,7 @@
 >>>            yield  outputdict
 
 ## 🧩 Components
-> In order to provide <u>modularized prompts</u> of a ''node`` in an AI Autonomous Agent, we established ''components`` module.
+> In order to provide <u>modularized prompts</u> of a ``node'' in an AI Autonomous Agent, we established ``components'' module.
 > 
 > - Classification:  We use parent classes and subclasses to classify diverse kinds of prompts. Two kinds of parent classes are provided,  namely "Component" and "KnowledgeComponent".  Specialized requirements, such as rules, styles and output forms of an autonomous agent, is inherited from one of the parent classes above.
 > 
@@ -114,7 +114,7 @@
 >>>        def get_prompt(self):  
 >>>            return f"""现在你来模拟一个{self.agent}。你需要遵循以下的输出风格：  {self.style}。  """
 >>>            pass
-[^1]: ''Component`` is the parent class, providing a modularized input form for diverse prompts.
+[^1]: ``Component'' is the parent class, providing a modularized input form for diverse prompts.
 
 [^2]: "StyleComponent" is a subclass that is designated to provide various "temperaments" for autonomous agents. These "temperaments" include customized chatting templates and styles. We have developed numerous kinds of styles, such as humorous and expertised.
 
