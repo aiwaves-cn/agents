@@ -20,6 +20,7 @@ from sop import *
 from prompt import *
 from flask import Response
 from datebase import *
+import time
 from config import *
 
 headers = {
@@ -145,6 +146,7 @@ class Agent():
                         response = output["response"]
                         next_node_id = output["next_node_id"]
                         for res in response:
+                            time.sleep(0.05)
                             yield res
                     else:
                         yield output
