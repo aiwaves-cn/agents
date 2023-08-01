@@ -6,22 +6,22 @@
 <p align="center"><a href="https://arxiv.org/pdf/2305.13304.pdf">[📄 Paper]</a> | <a href="http://47.96.122.196:8098/boxingbot-chat/">[🤖 Demo - Customer Service Agent]</a> | <a href="https://front-dev.fenxianglife.com/h5-official/appPages/independent/AI-guide/index.html?appToken=0af0c773c04ca654f19514fbb51f4352&did=B4B88CE9-F39A-48A6-9DA9-9E2BE8D3CD27&uid=108#/">[🛍️ Demo - Shopping Guide Agent]</a> </p>
 <hr>
 
-## ✨AI Autonomous Agents
+## 🤖AI Autonomous Agents
 > - Brief introduction: AI Autonomous Agents are intelligent entities that can perceive their environment, make decisions, and take actions without direct human intervention. With the rapid development of human society, AI Autonomous Agents are designated to apply for diverse circumstances as folows:
->> - <font face="Consolas">💊for medical use:</font><br />
+>> - <font face="Consolas">💊**medical use**:</font><br />
 >>> - the oculist agent serves as a consultant, which can offer professional advice and online reserevation for patients.
->> - <font face="Consolas">🛍️ for commercial use:</font><br />
+>> - <font face="Consolas">🛍️**commercial use**:</font><br />
 >>> - the shopping guide agent is an intelligent shopping assistant that can provide a diverse and customized shopping service.
 > - Features: AI Autonomous Agents has several advantages over human assistants.
-> >- <font face="Consolas">🎯Precision</font>: AI Autonomous Agents can avoid human errors  due to fatigue, distractions, or emotions. They can execute the same action repeatedly without a decline in performance.
+> >- <font face="Consolas">🎯**Precision**</font>: AI Autonomous Agents can avoid human errors  due to fatigue, distractions, or emotions. They can execute the same action repeatedly without a decline in performance.
 > 
-> >- <font face="Consolas">⚡Efficiency</font>: AI Autonomous Agents can process vast amounts of data and make decisions at incredible speeds, often surpassing human capabilities. Especially under  sophisticated circumstances where large amounts of documents are given, AI Autonomous Agents are likely to perform better than human assistants.
+> >- <font face="Consolas">⚡**Efficiency**</font>: AI Autonomous Agents can process vast amounts of data and make decisions at incredible speeds, often surpassing human capabilities. Especially under  sophisticated circumstances where large amounts of documents are given, AI Autonomous Agents are likely to perform better than human assistants.
 > 
-> >- <font face="Consolas">📈Scalability</font>: AI Autonomous Agents can be easily scaled to apply for different requirements, without the need for extensive hiring or training. **With our <u><font size="5">Agents</font></u> toolkit, you can easily develop your own customized autonomous agents!**
+> >- <font face="Consolas">📈**Scalability**</font>: AI Autonomous Agents can be easily scaled to apply for different requirements, without the need for extensive hiring or training. **With our <u><font size="5">Agents</font></u> toolkit, you can easily develop your own customized autonomous agents!**
 
 ## 📋 Standard Operation Procedure (SOP)
 
-## 🤖Nodes
+## ✨Nodes
 >- Definition: Apparently, an autonomous agent is composed of numorous nodes, each contributing to the whole system. We have developed nearly the **simplist node** mainly based on GPT. All you need to do is __input the prompt__,and you could get the response as output. Afterwards, the response can be used for different operations.
 >
 >- Classification: We have created two kinds of parent node classes, namely "GPT Nodes" and "Tool Nodes". 
