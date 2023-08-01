@@ -93,6 +93,24 @@ class DemonstrationComponent(Component):
             prompt +="\n" + demonstration
         return prompt
 
+class CoTComponent(Component):
+    """
+    input a list,the example of answer.
+    """
+
+    def __init__(self, demonstrations):
+        super().__init__()
+        self.demonstrations = demonstrations
+
+    def add_demonstration(self, demonstration):
+        self.demonstrations.append(demonstration)
+
+    def get_prompt(self):
+        prompt = "你在输出前需要以下是你可以参考的例子：\n"
+        for demonstration in self.demonstrations:
+            prompt +="\n" + demonstration
+        return prompt
+
 class KnowledgeBaseComponent(Component):
     """
     KnowledgeBase
