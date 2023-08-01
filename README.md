@@ -6,14 +6,14 @@
 <p align="center"><a href="https://arxiv.org/pdf/2305.13304.pdf">[📄 Paper]</a> | <a href="http://47.96.122.196:8098/boxingbot-chat/">[🤖 Demo - Customer Service Agent]</a> | <a href="https://front-dev.fenxianglife.com/h5-official/appPages/independent/AI-guide/index.html?appToken=0af0c773c04ca654f19514fbb51f4352&did=B4B88CE9-F39A-48A6-9DA9-9E2BE8D3CD27&uid=108#/">[🛍️ Demo - Shopping Guide Agent]</a> </p>
 <hr>
 
-## 🤖AI Autonomous Agents
+## 🤖 AI Autonomous Agents
 > - Brief introduction: AI Autonomous Agents are intelligent entities that can perceive their environment, make decisions, and take actions without direct human intervention. With the rapid development of human society, AI Autonomous Agents are designated to apply for diverse circumstances as folows:
->> - <font face="Consolas">💊**medical use**:</font><br />
+>> - <font face="Consolas">💊 **Medical Use**:</font><br />
 >>> - the oculist agent serves as a consultant, which can offer professional advice and online reserevation for patients.
->> - <font face="Consolas">🛍️**commercial use**:</font><br />
+>> - <font face="Consolas">🛍️ **Commercial Use**:</font><br />
 >>> - the shopping guide agent is an intelligent shopping assistant that can provide a diverse and customized shopping service.
 > - Features: AI Autonomous Agents has several advantages over human assistants.
-> >- <font face="Consolas">🎯**Precision**</font>: AI Autonomous Agents can avoid human errors  due to fatigue, distractions, or emotions. They can execute the same action repeatedly without a decline in performance.
+> >- <font face="Consolas">🎯 **Precision**</font>: AI Autonomous Agents can avoid human errors  due to fatigue, distractions, or emotions. They can execute the same action repeatedly without a decline in performance.
 > 
 > >- <font face="Consolas">⚡**Efficiency**</font>: AI Autonomous Agents can process vast amounts of data and make decisions at incredible speeds, often surpassing human capabilities. Especially under  sophisticated circumstances where large amounts of documents are given, AI Autonomous Agents are likely to perform better than human assistants.
 > 
@@ -22,18 +22,18 @@
 ## 📋 Standard Operation Procedure (SOP)
 
 ## ✨Nodes
->- Definition: As is manifested before, we use SOP to run the autonomous agent. Our SOP reasoning graph consists of various **Nodes**, each playing its own role, contributing to the entire system. We have developed nearly the **SIMPLIST** node mainly based on GPT. All you need to do is __input the prompt__,and you could get the response as output. Afterwards, the response can be used for different operations.
+>- Definition: As manifested before, we use SOP to run the autonomous agent. Our SOP reasoning graph consists of various **Nodes**, each playing its own role, contributing to the entire system. We have developed nearly the **SIMPLIST** node mainly based on GPT. All you need to do is __input the prompt__, and you can get the response as output. Afterward, the response can be used for different operations.
 >
 >- Classification: We have created two kinds of parent node classes, namely "GPT Nodes" and "Tool Nodes". 
-><br>GPT Nodes consists of three differnt types, namely "judge", "response" and "extract", with their functions as follows:
->>- <font face="Consolas">🧠 judge node</font>:  This type of node judges certain sentences and return the keyword to determine which node for next.
+><br>GPT Nodes consists of three different types, namely "judge", "response" and "extract", with their functions as follows:
+>>- <font face="Consolas">🧠 judge node</font>:  This type of node judges certain sentences and returns the keyword to determine which node for next.
 >
->>- <font face="Consolas">💬response node</font>: This type of node responds to user's questions, usually according to their knowledge base.
+>>- <font face="Consolas">💬response node</font>: This type of node responds to users' questions, usually according to their knowledge base.
 >
->>- <font face="Consolas">🔍extract node</font>: This type of node extracts particular key words from user's input, and return the key word for memory.
-><br>Tool Nodes are created to complete certain tasks, such as searching particular information in the memory base, or matching certain key words.
+>>- <font face="Consolas">🔍extract node</font>: This type of node extracts particular keywords from the user's input, and return the key word for memory.
+><br>Tool Nodes are created to complete certain tasks, such as searching particular information in the memory base or matching certain keywords.
 >- Examples:
->>- basic codes of a GPT Node is shown below:
+>>- basic codes of a GPT Node are shown below:
 >>> ```python
 >>>     class  GPTNode():
 >>>        def  __init__(self,
@@ -90,8 +90,8 @@
 >>>            outputdict = {"response":self.output,"next_node_id" : "0"}
 >>>            yield  outputdict
 
-## 🧩Components
-> In order to provide <u>modularized prompts</u> of a Node in an AI Autonomous Agent, we established **Components** module.
+## 🧩 Components
+> In order to provide <u>modularized prompts</u> of a ''node`` in an AI Autonomous Agent, we established ''components`` module.
 > 
 > - Classification:  We use parent classes and subclasses to classify diverse kinds of prompts. Two kinds of parent classes are provided,  namely "Component" and "KnowledgeComponent".  Specialized requirements, such as rules, styles and output forms of an autonomous agent, is inherited from one of the parent classes above.
 > 
@@ -114,11 +114,11 @@
 >>>        def get_prompt(self):  
 >>>            return f"""现在你来模拟一个{self.agent}。你需要遵循以下的输出风格：  {self.style}。  """
 >>>            pass
-[^1]: "Component" is the parent class, providing a modularized input form for diverse prompts.
+[^1]: ''Component`` is the parent class, providing a modularized input form for diverse prompts.
 
 [^2]: "StyleComponent" is a subclass that is designated to provide various "temperaments" for autonomous agents. These "temperaments" include customized chatting templates and styles. We have developed numerous kinds of styles, such as humorous and expertised.
 
-## 😄Getting Started with Fun 
+## 😄 Getting Started with Fun 
 ### Try  our demo in your terminal:point_down:
 1. **Open your teminal**🖥️
 
