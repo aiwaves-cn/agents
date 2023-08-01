@@ -22,7 +22,7 @@
 ## 📋 Standard Operation Procedure (SOP)
 
 ## ✨Nodes
->- Definition: As manifested before, we use SOP to run the autonomous agent. Our SOP reasoning graph consists of various `nodes`, each playing its own role, contributing to the entire system. We have developed nearly the **SIMPLIST** node mainly based on GPT. All you need to do is __input the prompt__, and you can get the response as output. Afterward, the response can be used for different operations.
+>- Definition: As manifested before, we use SOP to run the autonomous agent. Our SOP reasoning graph consists of various `node`s, each playing its own role, contributing to the entire system. We have developed nearly the **SIMPLIST** node mainly based on GPT. All you need to do is __input the prompt__, and you can get the response as output. Afterward, the response can be used for different operations.
 >
 >- Classification: We have created two kinds of parent node classes, namely "GPT Nodes" and "Tool Nodes". 
 ><br>GPT Nodes consists of three different types, namely "judge", "response" and "extract", with their functions as follows:
@@ -30,7 +30,7 @@
 >
 >>- <font face="Consolas">💬response node</font>: This type of node responds to users' questions, usually according to their knowledge base.
 >
->>- <font face="Consolas">🔍extract node</font>: This type of node extracts particular keywords from the user's input, and return the key word for memory.
+>>- <font face="Consolas">🔍extract node</font>: This type of node extracts particular keywords from the user's input, and return the keyword for memory.
 ><br>Tool Nodes are created to complete certain tasks, such as searching particular information in the memory base or matching certain keywords.
 >- Examples:
 >>- basic codes of a GPT Node are shown below:
@@ -91,12 +91,12 @@
 >>>            yield  outputdict
 
 ## 🧩 Components
-> In order to provide <u>modularized prompts</u> of a ``node'' in an AI Autonomous Agent, we established ``components'' module.
+> In order to provide <u>modularized prompts</u> of a ``node`` in an AI Autonomous Agent, we established ``components`` module.
 > 
 > - Classification:  We use parent classes and subclasses to classify diverse kinds of prompts. Two kinds of parent classes are provided,  namely "Component" and "KnowledgeComponent".  Specialized requirements, such as rules, styles and output forms of an autonomous agent, is inherited from one of the parent classes above.
 > 
 > - Examples:
-> >- codes of "Component" [^1]class is shown below:
+> >- codes of ``componen`` [^1]class is shown below:
 > >>```python
 >>>    class Component():  
 >>>        def __init__(self):  
@@ -114,7 +114,7 @@
 >>>        def get_prompt(self):  
 >>>            return f"""现在你来模拟一个{self.agent}。你需要遵循以下的输出风格：  {self.style}。  """
 >>>            pass
-[^1]: ``Component'' is the parent class, providing a modularized input form for diverse prompts.
+[^1]: ``Component`` is the parent class, providing a modularized input form for diverse prompts.
 
 [^2]: "StyleComponent" is a subclass that is designated to provide various "temperaments" for autonomous agents. These "temperaments" include customized chatting templates and styles. We have developed numerous kinds of styles, such as humorous and expertised.
 
