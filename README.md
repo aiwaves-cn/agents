@@ -8,29 +8,29 @@
 
 ## ✨AI Autonomous Agents
 > - Brief introduction: AI Autonomous Agents are intelligent entities that can perceive their environment, make decisions, and take actions without direct human intervention. With the rapid development of human society, AI Autonomous Agents are designated to apply for diverse circumstances as folows:
->> - <font face="Consolas">for medical use:</font><br />
+>> - <font face="Consolas">💊for medical use:</font><br />
 >>> - the oculist agent serves as a consultant, which can offer professional advice and online reserevation for patients.
->> - <font face="Consolas">for commercial use:</font><br />
+>> - <font face="Consolas">🛍️ for commercial use:</font><br />
 >>> - the shopping guide agent is an intelligent shopping assistant that can provide a diverse and customized shopping service.
 > - Features: AI Autonomous Agents has several advantages over human assistants.
-> >- <font face="Consolas">Precision</font>: AI Autonomous Agents can avoid human errors  due to fatigue, distractions, or emotions. They can execute the same action repeatedly without a decline in performance.
+> >- <font face="Consolas">🎯Precision</font>: AI Autonomous Agents can avoid human errors  due to fatigue, distractions, or emotions. They can execute the same action repeatedly without a decline in performance.
 > 
-> >- <font face="Consolas">Efficiency</font>: AI Autonomous Agents can process vast amounts of data and make decisions at incredible speeds, often surpassing human capabilities. Especially under  sophisticated circumstances where large amounts of documents are given, AI Autonomous Agents are likely to perform better than human assistants.
+> >- <font face="Consolas">⚡Efficiency</font>: AI Autonomous Agents can process vast amounts of data and make decisions at incredible speeds, often surpassing human capabilities. Especially under  sophisticated circumstances where large amounts of documents are given, AI Autonomous Agents are likely to perform better than human assistants.
 > 
-> >- <font face="Consolas">Scalability</font>: AI Autonomous Agents can be easily scaled to apply for different requirements, without the need for extensive hiring or training. **With our <u><font size="5">Agents</font></u> toolkit, you can easily develop your own customized autonomous agents!**
+> >- <font face="Consolas">📈Scalability</font>: AI Autonomous Agents can be easily scaled to apply for different requirements, without the need for extensive hiring or training. **With our <u><font size="5">Agents</font></u> toolkit, you can easily develop your own customized autonomous agents!**
 
 ## Standard Operation Procedure (SOP)
 
-## Nodes
+## 🤖Nodes
 >- Definition: Apparently, an autonomous agent is composed of numorous nodes, each contributing to the whole system. We have developed nearly the **simplist node** mainly based on GPT. All you need to do is __input the prompt__,and you could get the response as output. Afterwards, the response can be used for different operations.
 >
 >- Classification: We have created two kinds of parent node classes, namely "GPT Nodes" and "Tool Nodes". 
 ><br>GPT Nodes consists of three differnt types, namely "judge", "response" and "extract", with their functions as follows:
->>- <font face="Consolas">judge node</font>:  This type of node judges certain sentences and return the keyword to determine which node for next.
+>>- <font face="Consolas">🧠 judge node</font>:  This type of node judges certain sentences and return the keyword to determine which node for next.
 >
->>- <font face="Consolas">response node</font>: This type of node responds to user's questions, usually according to their knowledge base.
+>>- <font face="Consolas">💬response node</font>: This type of node responds to user's questions, usually according to their knowledge base.
 >
->>- <font face="Consolas">extract node</font>: This type of node extracts particular key words from user's input, and return the key word for memory.
+>>- <font face="Consolas">🔍extract node</font>: This type of node extracts particular key words from user's input, and return the key word for memory.
 ><br>Tool Nodes are created to complete certain tasks, such as searching particular information in the memory base, or matching certain key words.
 >- Examples:
 >>- basic codes of a GPT Node is shown below:
