@@ -21,6 +21,7 @@ from flask import Response
 from datebase import *
 import time
 from config import *
+import jieba
 
 headers = {
             'Content-Type': 'text/event-stream',
@@ -56,10 +57,17 @@ class Agent():
         assert type(userName) == int,"username type is not int!"
         self.load_date(userName)
         if self.judge_idle(query):
-            chat =  self.chat(query,userName)
-            for res in chat:
-                yield res
-            return       
+            if self.judge_sensitive(query):
+                response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
+                for res in response:
+                    time.sleep(0.05)
+                    yield res
+                return
+            else:
+                chat =  self.chat(query,userName)
+                for res in chat:
+                    yield res
+                return       
             
         self.long_memory["chat_history"].append({"role": "user", "content": query})
         self.long_memory["idle_history"].append({"role": "user", "content": query})
@@ -332,7 +340,20 @@ class Agent():
             task.memory = self.long_memory
             task.save()
         
-        
+    
+    def judge_sensitive(self,query):
+        current_path = os.path.abspath(__file__)
+        current_path = os.path.dirname(current_path)
+        with open(os.path.join(current_path,'sensitive.txt')) as file_01:
+            lines = file_01.readlines()
+            lines = [i.rstrip()for i in lines]
+            seg_list = jieba.cut(query, cut_all=True)
+            for seg in seg_list:
+                if seg in lines:
+                    return True
+        return False
+    
+    
     def run(self):
         while True:
             self.step()
