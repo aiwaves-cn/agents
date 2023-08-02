@@ -1,7 +1,7 @@
 {
     "gpt_nodes": {
       "node0": {
-        "root":true,
+        "judge_idle_node":true,
         "name": "node0",
         "node_type": "judge",
         "extract_word": "闲聊",
@@ -27,6 +27,7 @@
       },
       "node1": {
         "name": "node1",
+        "idle_response_node":true,
         "node_type": "response",
         "extract_word": "回复",
         "done": true,
@@ -54,6 +55,7 @@
         "node_type": "response",
         "extract_word": "回复",
         "done": true,
+        "root":true,
         "components": {
           "style": {
             "agent": "一个客服。服务的公司是保未来公司。保未来公司主要帮助用户申请香港优秀人才入境计划。",
@@ -68,7 +70,7 @@
           "demonstration": null,
           "input": false,
           "tool": {
-            "knowledge_base": "yc_final.json"
+            "knowledge_base": "youcai/yc_final.json"
           },
           "output": {
             "output": "回复"
@@ -77,15 +79,8 @@
       }
     },
     "relation": {
-      "node0": {
-        "是": "node1",
-        "否": "node2"
-      },
-      "node1": {
-        "0": "node0"
-      },
       "node2": {
-        "0": "node0"
+        "0": "node2"
       }
     }
   }

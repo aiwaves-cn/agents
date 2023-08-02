@@ -24,11 +24,8 @@ import requests
 import torch
 import tqdm
 from text2vec import SentenceModel, semantic_search
-MAX_CHAT_HISTORY = 5
-API_KEY = "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"
-PROXY = 'http://127.0.0.1:7000'
-FETSIZE = 5
-MAX_CHAT_HISTORY = 8
+from config import *
+
 
 def get_content_between_a_b(start_tag,end_tag,text):
     """
@@ -95,7 +92,7 @@ def get_gpt_response_rule(chat_history,
             chat_history = chat_history[-2*MAX_CHAT_HISTORY:-1]
         messages += chat_history
     if last_prompt:
-        messages += [{"role": "user", "content": f"{last_prompt}"}]
+        messages += [{"role": "system", "content": f"{last_prompt}"}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
@@ -130,7 +127,7 @@ def get_gpt_response_rule_stream(chat_history,
             chat_history = chat_history[-2*MAX_CHAT_HISTORY:-1]
         messages += chat_history
     if last_prompt:
-        messages += [{"role": "user", "content": last_prompt}]
+        messages += [{"role": "system", "content": last_prompt}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
