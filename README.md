@@ -1,5 +1,4 @@
-
-# <p align="center"><font size="6">Agents</font><br />
+# <p align="center"><img src='./agent_logo.png' width=400></p>
 
 ## <p align="center"><font face="Calisto MT"><font size="4">A toolkit for building customized autonomous AI agents</font></font><br />  
 
