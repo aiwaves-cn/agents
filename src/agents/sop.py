@@ -320,10 +320,9 @@ class SearchRecomNode(ToolNode):
         chat_answer = ""
         if request_items:
             if len(request_items):
-                chat_answer += f"""<回复>\\n经过搜索后,给你推荐产品:\\n"""
+                chat_answer += f"""\\n经过搜索后,给你推荐产品:\\n"""
                 for i in range(0,len(request_items)):
                     chat_answer += f"""{str(i+1)}:“{request_items[i]['itemTitle']}\\n"""
-        chat_answer += "</回复>"
         outputdict["response"] = chat_answer
         yield outputdict
 
@@ -358,7 +357,7 @@ class RecomTopNode(ToolNode):
             long_memory["idle_history"].append({"role": "assistant", "content": all})
             
         elif not request_items:
-            chat_answer = "<回复>\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。</回复>"
+            chat_answer = "\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
             long_memory["chat_history"].append({"role": "assistant", "content": chat_answer})
             long_memory["idle_history"].append({"role": "assistant", "content": chat_answer})
             outputdict["response"] = chat_answer
