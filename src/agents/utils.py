@@ -89,7 +89,7 @@ def get_gpt_response_rule(chat_history,
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
         if len(chat_history)>2*MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2*MAX_CHAT_HISTORY:-1]
+            chat_history = chat_history[-2*MAX_CHAT_HISTORY:]
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": f"{last_prompt}"}]
@@ -125,7 +125,7 @@ def get_gpt_response_rule_stream(chat_history,
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
         if len(chat_history)>2*MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2*MAX_CHAT_HISTORY:-1]
+            chat_history = chat_history[-2*MAX_CHAT_HISTORY:]
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
