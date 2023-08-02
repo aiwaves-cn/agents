@@ -19,9 +19,7 @@ from abc import abstractmethod
 import json
 from utils import *
 from component import *
-from prompt import *
-MIN_CATEGORY_SIM = 0.7
-TOY_INFO_PATH =['/home/aiwaves/longli/fenxiang/toy_info.json',"/home/aiwaves/longli/fenxiang/bb_info.json"] #子类目相关知识库的路径
+
 
 class SOP:
     """
@@ -60,11 +58,11 @@ class SOP:
             
             now_node = GPTNode(name=name,node_type=node_type,extract_words=extract_word,done=done,components=components_dict)
             nodes_dict[name] = now_node
-            if  "root" in node.keys():
+            if  "root" in node.keys() and node["root"]:
                 self.root = now_node
-            if "judge_idle_node" in node.keys():
+            if "judge_idle_node" in node.keys() and node["judge_idle_node"]:
                 self.judge_idle_node = now_node
-            if "idle_response_node" in node.keys():
+            if "idle_response_node" in node.keys() and node["idle_response_node"]:
                 self.idle_response_node = now_node
         return nodes_dict
             
@@ -89,11 +87,11 @@ class SOP:
                 now_node = StaticNode(name=name,done=done,output=node["output"])     
             nodes_dict[name] = now_node
             
-            if  "root" in node.keys():
+            if  "root" in node.keys() and node["root"]:
                 self.root = now_node
-            if "judge_idle_node" in node.keys():
+            if "judge_idle_node" in node.keys() and node["judge_idle_node"]:
                 self.judge_idle_node = now_node
-            if "idle_response_node" in node.keys():
+            if "idle_response_node" in node.keys() and node["idle_response_node"]:
                 self.idle_response_node = now_node
                 
         return nodes_dict
@@ -184,11 +182,12 @@ class GPTNode():
     
 
     # get complete prompt
-    def get_prompt(self,long_memory={},temp_memory = {}):
+    def get_prompt(self,long_memory={},temp_memory = {},query = ""):
         prompt = ""
         last_prompt = ""
         for value in self.components.values():
             if  isinstance(value,KnowledgeBaseComponent):
+                value.user_input = query
                 prompt = prompt +"\n" + value.get_prompt()
             elif isinstance(value,OutputComponent):
                 last_prompt += value.get_prompt()
@@ -321,9 +320,10 @@ class SearchRecomNode(ToolNode):
         chat_answer = ""
         if request_items:
             if len(request_items):
-                chat_answer += f"""\\n经过搜索后,给你推荐产品:\\n"""
+                chat_answer += f"""<回复>\\n经过搜索后,给你推荐产品:\\n"""
                 for i in range(0,len(request_items)):
                     chat_answer += f"""{str(i+1)}:“{request_items[i]['itemTitle']}\\n"""
+        chat_answer += "</回复>"
         outputdict["response"] = chat_answer
         yield outputdict
 
@@ -342,6 +342,12 @@ class RecomTopNode(ToolNode):
         
         if top_category:
             yield outputdict
+            import sys
+            import os
+            current_path = os.path.abspath(__file__)
+            current_path = os.path.dirname(current_path)
+            sys.path.append(os.path.join(current_path,'../../examples/shopping_assistant'))
+            from tool_prompt import prompt_cat_recom_top
             prompt = prompt_cat_recom_top(top_category)
             chat_answer_generator = get_gpt_response_rule_stream(chat_history, prompt, None)
             all = ""
@@ -352,7 +358,7 @@ class RecomTopNode(ToolNode):
             long_memory["idle_history"].append({"role": "assistant", "content": all})
             
         elif not request_items:
-            chat_answer = "\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
+            chat_answer = "<回复>\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。</回复>"
             long_memory["chat_history"].append({"role": "assistant", "content": chat_answer})
             long_memory["idle_history"].append({"role": "assistant", "content": chat_answer})
             outputdict["response"] = chat_answer

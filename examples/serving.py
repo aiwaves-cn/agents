@@ -6,7 +6,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-# http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -30,7 +30,8 @@ if __name__ == '__main__':
     
     parser = argparse.ArgumentParser(description='A demo of chatbot')
     parser.add_argument('--agent', type=str, help='path to SOP json')
-    parser.add_argument('--port', type=int, help='server port eye7877 shopping8000')
+    parser.add_argument('--port', type=int, help='server port')
+    parser.add_argument('--router', type=str, default='/api/v1/ask/',help='server port')
     args = parser.parse_args()
     
     agent = Agent(args.agent)
@@ -41,7 +42,7 @@ if __name__ == '__main__':
                 'X-Accel-Buffering': 'no',
             }
     # {'userName': '', 'query': '你好', 'history': [{'type': 1, 'message': '您好，我是导购机器人，您有什么问题需要我的帮助？', 'http': '', 'timestamp': 1690429363521, 'img': ''}, {'type': 0, 'message': '你好', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}]}
-    @app.route('/api/v1/ask/',methods=['post'])
+    @app.route(args.router,methods=['post'])
     def reply():
         userName = request.json.get('userName')
         query = request.json.get('query')
