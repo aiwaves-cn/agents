@@ -33,7 +33,7 @@ A **Standard Operating Procedure (SOP)** is a reasoning graph that consists of a
 
 ### Example:
 A typical SOP illustrates the complete operational process of our Agents. Taking the oculist agent as an example, the following SOP (shown below, in Chinese) delineates the entire workflow of the robot's customer service. This includes outlining the stages, steps, and criteria for each phase. By utilizing this SOP, we can comprehensively define the robot's functions and workflow, thereby generating customized agents tailored to specific requirements.
-![SOP of the oculist agent](https://imgse.com/i/pPCl9Tx)
+![SOP of the oculist agent](https://imgbox.com/ISPhP8Zs)
 
 ### Encoding:
 To standardize SOPs of diverse kinds, we consistently employ **JSON files** for input. A JSON file, short for *JavaScript Object Notation*, is employed to store basic data structures and objects. It facilitates data interchange in web applications.
