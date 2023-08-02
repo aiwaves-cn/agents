@@ -369,4 +369,6 @@ class StaticNode(ToolNode):
         self.output = output
     def func(self,long_memory,temp_memory):
         outputdict = {"response":self.output,"next_node_id" : "0"}
+        long_memory["chat_history"].append({"role": "assistant", "content": self.output})
+        long_memory["idle_history"].append({"role": "assistant", "content": self.output})
         yield outputdict

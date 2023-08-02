@@ -159,12 +159,6 @@ def load_knowledge_base_chunk(path):
 
 
 
-def encode_word2vec(sentence):
-    # embedding_model = SentenceModel('GanymedeNil/text2vec-large-chinese',device="cpu")
-    return embedding_model.encode(sentence)
-
-
-
 def semantic_search_word2vec(query_embedding, kb_embeddings,top_k):
     return semantic_search(query_embedding,kb_embeddings,top_k= top_k)
 
