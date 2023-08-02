@@ -157,6 +157,7 @@ class Agent():
                             time.sleep(0.05)
                             yield res
                     else:
+                        all +=output
                         yield output
                 now_node = now_node.next_nodes[next_node_id]
                 self.now_node = now_node
