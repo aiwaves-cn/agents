@@ -93,6 +93,7 @@ def get_gpt_response_rule(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": f"{last_prompt}"}]
+    print(messages)
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
