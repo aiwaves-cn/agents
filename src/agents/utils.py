@@ -13,7 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 """helper functions for an LLM autonoumous agent"""
 import csv
 import random
@@ -27,7 +26,7 @@ from text2vec import SentenceModel, semantic_search
 from config import *
 
 
-def get_content_between_a_b(start_tag,end_tag,text):
+def get_content_between_a_b(start_tag, end_tag, text):
     """
 
     Args:
@@ -43,7 +42,8 @@ def get_content_between_a_b(start_tag,end_tag,text):
     while start_index != -1:
         end_index = text.find(end_tag, start_index + len(start_tag))
         if end_index != -1:
-            extracted_text += text[start_index + len(start_tag):end_index] + " "
+            extracted_text += text[start_index +
+                                   len(start_tag):end_index] + " "
             start_index = text.find(start_tag, end_index + len(end_tag))
         else:
             break
@@ -51,8 +51,7 @@ def get_content_between_a_b(start_tag,end_tag,text):
     return extracted_text.strip()
 
 
-
-def extract(text,type):
+def extract(text, type):
     """extract the content between <type></type>
 
     Args:
@@ -62,14 +61,13 @@ def extract(text,type):
     Returns:
         str: content between <type></type>
     """
-    target_str = get_content_between_a_b(f'<{type}>',f'</{type}>',text)
+    target_str = get_content_between_a_b(f'<{type}>', f'</{type}>', text)
     return target_str
-
 
 
 def get_gpt_response_rule(chat_history,
                           system_prompt,
-                          last_prompt = None,
+                          last_prompt=None,
                           model="gpt-3.5-turbo-16k-0613",
                           temperature=0):
     """get the response of chatgpt
@@ -88,8 +86,8 @@ def get_gpt_response_rule(chat_history,
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
-        if len(chat_history)>2*MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2*MAX_CHAT_HISTORY:]
+        if len(chat_history) > 2 * MAX_CHAT_HISTORY:
+            chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": f"{last_prompt}"}]
@@ -97,17 +95,17 @@ def get_gpt_response_rule(chat_history,
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        temperature=temperature,  
+        temperature=temperature,
     )
 
     return response.choices[0].message["content"]
 
 
 def get_gpt_response_rule_stream(chat_history,
-                          system_prompt,
-                          last_prompt = None,
-                          model="gpt-3.5-turbo-16k-0613",
-                          temperature=0.3):
+                                 system_prompt,
+                                 last_prompt=None,
+                                 model="gpt-3.5-turbo-16k-0613",
+                                 temperature=0.3):
     """get the response of chatgpt
 
     Args:
@@ -124,21 +122,21 @@ def get_gpt_response_rule_stream(chat_history,
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
-        if len(chat_history)>2*MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2*MAX_CHAT_HISTORY:]
+        if len(chat_history) > 2 * MAX_CHAT_HISTORY:
+            chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        temperature=temperature, 
-        stream = True 
-    )
+    response = openai.ChatCompletion.create(model=model,
+                                            messages=messages,
+                                            temperature=temperature,
+                                            stream=True)
     for res in response:
         if res:
-            yield res.choices[0]['delta'].get('content') if res.choices[0]['delta'].get('content') else ''
-            
+            yield res.choices[0]['delta'].get(
+                'content') if res.choices[0]['delta'].get('content') else ''
+
+
 def load_knowledge_base_chunk(path):
     """
     Load json format knowledge base.
@@ -147,24 +145,22 @@ def load_knowledge_base_chunk(path):
         data = json.load(f)
     embeddings = []
     questions = []
-    answers =[]
+    answers = []
     chunks = []
     for idx in range(len(data.keys())):
         embeddings.append(data[str(idx)]['emb'])
         questions.append(data[str(idx)]['q'])
         answers.append(data[str(idx)]['a'])
         chunks.append(data[str(idx)]['chunk'])
-    embeddings = np.array(embeddings,dtype=np.float32)
+    embeddings = np.array(embeddings, dtype=np.float32)
     return embeddings, chunks
 
 
-
-def semantic_search_word2vec(query_embedding, kb_embeddings,top_k):
-    return semantic_search(query_embedding,kb_embeddings,top_k= top_k)
-
+def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):
+    return semantic_search(query_embedding, kb_embeddings, top_k=top_k)
 
 
-def save_qadict(questions,answers,save_path):
+def save_qadict(questions, answers, save_path):
     """
     Save QA_dict to json.
     Args:
@@ -176,18 +172,17 @@ def save_qadict(questions,answers,save_path):
     """
     final_dict = {}
     count = 0
-    for q,a in tqdm(zip(questions,answers)):
+    for q, a in tqdm(zip(questions, answers)):
         temp_dict = {}
         temp_dict['q'] = q
         temp_dict['a'] = a
         temp_dict['chunk'] = a
         temp_dict['emb'] = encode_word2vec(q).tolist()
         final_dict[count] = temp_dict
-        count+=1
-    print("len:",len(final_dict))
+        count += 1
+    print("len:", len(final_dict))
     with open(save_path, 'w') as f:
-        json.dump(final_dict, f, ensure_ascii=False,indent=2)
-
+        json.dump(final_dict, f, ensure_ascii=False, indent=2)
 
 
 def load_knowledge_base(path):
@@ -198,16 +193,15 @@ def load_knowledge_base(path):
         data = json.load(f)
     embeddings = []
     questions = []
-    answers =[]
+    answers = []
     chunks = []
     for idx in range(len(data.keys())):
         embeddings.append(data[str(idx)]['emb'])
         questions.append(data[str(idx)]['q'])
         answers.append(data[str(idx)]['a'])
         chunks.append(data[str(idx)]['chunk'])
-    embeddings = np.array(embeddings,dtype=np.float32)
-    return embeddings, questions,answers,chunks
-
+    embeddings = np.array(embeddings, dtype=np.float32)
+    return embeddings, questions, answers, chunks
 
 
 def cos_sim(a: torch.Tensor, b: torch.Tensor):
@@ -231,7 +225,8 @@ def cos_sim(a: torch.Tensor, b: torch.Tensor):
     b_norm = torch.nn.functional.normalize(b, p=2, dim=1)
     return torch.mm(a_norm, b_norm.transpose(0, 1))
 
-def matching_a_b(a, b, requirements= None):
+
+def matching_a_b(a, b, requirements=None):
     """
     Args:
         inputtext: 待匹配的类目名称
@@ -241,14 +236,20 @@ def matching_a_b(a, b, requirements= None):
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
     #读取
-    embedder  = SentenceModel('shibing624/text2vec-base-chinese',device = torch.device("cpu"))
+    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+                             device=torch.device("cpu"))
     a_embedder = embedder.encode(a, convert_to_tensor=True)
     #获取embedder
     b_embeder = embedder.encode(b, convert_to_tensor=True)
     sim_scores = cos_sim(a_embedder, b_embeder)[0]
     return sim_scores
 
-def matching_category(inputtext,forest_name, requirements= None, cat_embedder=None,top_k=3):
+
+def matching_category(inputtext,
+                      forest_name,
+                      requirements=None,
+                      cat_embedder=None,
+                      top_k=3):
     """
     Args:
         inputtext: 待匹配的类目名称
@@ -258,7 +259,8 @@ def matching_category(inputtext,forest_name, requirements= None, cat_embedder=No
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
     #读取
-    embedder  = SentenceModel('shibing624/text2vec-base-chinese',device = torch.device("cpu"))
+    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+                             device=torch.device("cpu"))
     #获取embedder
     sim_scores = torch.zeros([100])
     if inputtext:
@@ -268,30 +270,32 @@ def matching_category(inputtext,forest_name, requirements= None, cat_embedder=No
     #有需求匹配需求，没需求匹配类目
     if requirements:
         requirements = requirements.split(" ")
-        requirements_embedder = embedder.encode(requirements, convert_to_tensor=True)
+        requirements_embedder = embedder.encode(requirements,
+                                                convert_to_tensor=True)
         req_scores = cos_sim(requirements_embedder, cat_embedder)
         req_scores = torch.mean(req_scores, dim=0)
         # total_scores = req_scores*0.8 + sim_scores*0.2
         total_scores = req_scores
     else:
         total_scores = sim_scores
-        
-    top_k_cat = torch.topk(total_scores, k=top_k)
-    top_k_score,top_k_idx = top_k_cat[0],top_k_cat[1]
-    top_k_name = [forest_name[top_k_idx[i]] for i in range(0,top_k)]
 
-    return [top_k_name,top_k_score.tolist(),top_k_idx]
+    top_k_cat = torch.topk(total_scores, k=top_k)
+    top_k_score, top_k_idx = top_k_cat[0], top_k_cat[1]
+    top_k_name = [forest_name[top_k_idx[i]] for i in range(0, top_k)]
+
+    return [top_k_name, top_k_score.tolist(), top_k_idx]
 
 
 class Leaf_Node:
-    def __init__(self,val) -> None:
+
+    def __init__(self, val) -> None:
         self.val = val
         self.son = []
-    
-    def add(self,son):
+
+    def add(self, son):
         self.son.append(son)
-    
-        
+
+
 def create_forest(csv_file):
     # 储存所有csv关系
     json_list = []
@@ -302,7 +306,7 @@ def create_forest(csv_file):
     # 存储所有节点
     node_list = []
     name_list = []
-    
+
     # 将csv里所有关系存进json_list
     with open(csv_file, 'r') as file:
         csv_data = csv.reader(file)
@@ -313,7 +317,7 @@ def create_forest(csv_file):
             for i in range(len(headers)):
                 json_data[headers[i]] = row[i]
             json_list.append(json_data)
-    
+
     # 将json_list 转化为node_list
     for d in json_list:
         # 读取父类跟子类的名字
@@ -321,14 +325,14 @@ def create_forest(csv_file):
         cat_leaf_name = d['cat_leaf_name']
         father_names = cat_root_name.split("/")
         son_names = cat_leaf_name.split("/")
-        
+
         for father_name in father_names:
             if father_name not in list(node_dict.keys()):
                 father = Leaf_Node(father_name)
                 node_list.append(father)
                 name_list.append(father_name)
                 node_dict[father_name] = node_id
-                node_id+=1
+                node_id += 1
             else:
                 father = node_list[node_dict[father_name]]
             for son_name in son_names:
@@ -337,15 +341,13 @@ def create_forest(csv_file):
                     node_list.append(son)
                     node_dict[son_name] = node_id
                     name_list.append(son_name)
-                    node_id +=1
+                    node_id += 1
                 else:
                     son = node_list[node_dict[son_name]]
                 if son not in father.son:
                     father.add(son)
-                
-        
-        
-    return node_list,name_list
+
+    return node_list, name_list
 
 
 def sample_with_order_preserved(lst, num):
@@ -363,6 +365,7 @@ def limit_values(data, max_values):
             # 使用带顺序的随机抽样方法限制列表长度
             data[key] = sample_with_order_preserved(values, max_values)
     return data
+
 
 def limit_keys(data, max_keys):
     """将字典缩减至指定的键数。"""
@@ -387,81 +390,82 @@ def flatten_dict(nested_dict):
             flattened_dict[key] = value
     return flattened_dict
 
-def merge_list(list1,list2):
+
+def merge_list(list1, list2):
     for l in list2:
         if l not in list1:
             list1.append(l)
     return list1
+
 
 def Search_Engines(req):
     #函数：调用搜索引擎，这里调用的粉象api
     #入参 req 类型：str 含义：表示当前需要检索的需求
     #出参 request_items 类型：List 含义：返回的商品需求
     #出参 top_category 类型：List 含义：返回的近似商品
-    new_dict = {
-        "keyword": req,
-        "catLeafName": "",
-        "fetchSize": FETSIZE
-    }
-    res = requests.post(url='https://k8s-api-dev.fenxianglife.com/dev1/fenxiang-ai/search/item', json=new_dict)
+    new_dict = {"keyword": req, "catLeafName": "", "fetchSize": FETSIZE}
+    res = requests.post(
+        url='https://k8s-api-dev.fenxianglife.com/dev1/fenxiang-ai/search/item',
+        json=new_dict)
     user_dict = json.loads(res.text)
     if "data" in user_dict.keys():
         request_items = user_dict["data"]['items']  # 查询到的商品信息JSON
         top_category = user_dict["data"]['topCategories']
-        return request_items,top_category
+        return request_items, top_category
     else:
         return []
-    
-def search_with_api(requirements,categery):
+
+
+def search_with_api(requirements, categery):
     #函数：调用搜索引擎，这里调用的粉象api
     #入参 attachments 类型：dict 含义：message携带的信息
     #出参 request_items 类型：List 含义：搜索得到的商品
     #出参 chat_answer 类型：str 含义：表示回答客户时附加的信息（测试时使用）
-    
-    
+
     # requirements = attachments["requirements"]
     # all_req = requirements + " " + attachments["category"]
     # request_items,top_category = Search_Engines(all_req)#这里调用搜索引擎
     request_items = []
-    all_req_list = requirements.split(" ")#需求字符串转换为list
-    count = 0 #记录减少需求的次数
-    
-    while len(request_items)<FETSIZE and len(all_req_list)>0:
-        if count:#非第一次搜索
-            all_req_list.pop(0)#删除第一个需求
-        all_req = (" ").join(all_req_list)#需求list转换为字符串
+    all_req_list = requirements.split(" ")  #需求字符串转换为list
+    count = 0  #记录减少需求的次数
+
+    while len(request_items) < FETSIZE and len(all_req_list) > 0:
+        if count:  #非第一次搜索
+            all_req_list.pop(0)  #删除第一个需求
+        all_req = (" ").join(all_req_list)  #需求list转换为字符串
         if categery not in all_req_list:
             all_req = all_req + " " + categery
-        now_request_items,top_category = Search_Engines(all_req)#这里调用搜索引擎
-        request_items = merge_list(request_items,now_request_items)
-        count +=1
+        now_request_items, top_category = Search_Engines(all_req)  #这里调用搜索引擎
+        request_items = merge_list(request_items, now_request_items)
+        count += 1
     new_top = []
     for category in top_category:
         if "其他" in category or "其它" in category:
             continue
         else:
-            new_top.append(category)    
-    if len(request_items)>FETSIZE:
-        request_items = request_items[:FETSIZE]       
-    return request_items,new_top
-
+            new_top.append(category)
+    if len(request_items) > FETSIZE:
+        request_items = request_items[:FETSIZE]
+    return request_items, new_top
 
 
 def response_to_string(response):
     all = ""
     for data in response:
-        all += data.choices[0]['delta'].get('content') if data.choices[0]['delta'].get('content') else ''
+        all += data.choices[0]['delta'].get(
+            'content') if data.choices[0]['delta'].get('content') else ''
     return all
-    
 
-def get_keyword_in_long_temp(keyword,long_memory,temp_memory):
+
+def get_keyword_in_long_temp(keyword, long_memory, temp_memory):
     if keyword in long_memory.keys():
         return long_memory[keyword]
     elif keyword in temp_memory.keys():
         return temp_memory[keyword]
     else:
         return ""
-    
+
+
 if __name__ == '__main__':
     str = "hello 123 hello"
-    x = get_content_between_a_b("hello1","hello1",str)
+    x = get_content_between_a_b("hello1", "hello1", str)
