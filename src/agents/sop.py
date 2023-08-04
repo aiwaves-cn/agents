@@ -79,6 +79,7 @@ class SOP:
             name = node["name"]
             done = node["done"]
             tool_name = node["tool_name"]
+            
             if tool_name == "MatchNode":
                 now_node = MatchNode(name=name, done=done)
             elif tool_name == "SearchNode":
@@ -92,7 +93,10 @@ class SOP:
                                       done=done,
                                       output=node["output"])
             elif tool_name == "KnowledgeResponseNode":
-                now_node = KnowledgeResponseNode(knowledge_base=node["knowledge_base"],system_prompt=node["system_prompt"],name=name,done=done)
+                last_prompt = node["last_prompt"] if "last_prompt" in node else None
+                system_prompt = node["system_prompt"] if "system_prompt" in node else None
+                knowledge_base = node["knowledge_base"] if "knowledge_base" in node else None
+                now_node = KnowledgeResponseNode(knowledge_base=knowledge_base,system_prompt=system_prompt,last_prompt=last_prompt,name=name,done=done)
             else:
                 assert 1==False,"wrong tool node name"
             nodes_dict[name] = now_node
@@ -444,8 +448,9 @@ class StaticNode(ToolNode):
 
 
 class KnowledgeResponseNode(ToolNode):
-    def __init__(self,knowledge_base,system_prompt,name="",top_k=2,done = False) -> None:
+    def __init__(self,knowledge_base,system_prompt,last_prompt = None,name="",top_k=2,done = False) -> None:
         super().__init__(name, done)
+        self.last_prompt = last_prompt
         self.system_prompt = system_prompt
         self.top_k = top_k
         self.embedding_model = SentenceModel(
@@ -493,28 +498,35 @@ class KnowledgeResponseNode(ToolNode):
             return "相关的知识库内容是"+knowledge
     
     def func(self,long_memory, temp_memory):
-        chat_history = long_memory["chat_history"]
+        chat_history = get_keyword_in_long_temp("chat_history", long_memory,
+                                                temp_memory).copy()
         outputdict = {"response": "", "next_node_id": "0"}
-        response = get_gpt_response_function(chat_history,self.system_prompt,function = self.functions,function_call= {"name":"get_knowledge_response","arguments":{"query":chat_history[-1]["content"]}})
         yield outputdict
-
-        if response.get("function_call"):
+        
         # Step 3: call the function
         # Note: the JSON response may not always be valid; be sure to handle errors
-            fuction_to_call = self.get_knowledge
-            function_args = json.loads(response["function_call"]["arguments"])
-            function_response = fuction_to_call(
-                query=function_args.get("query")
-            )
-            print(function_args.get("query"))
-            # Step 4: send the info on the function call and function response to GPT
-            chat_history.append(
-                {
-                    "role": "function",
-                    "name": "get_knowledge_response",
-                    "content": function_response,
-                }
-            )  # extend conversation with function response
-            second_response = get_gpt_response_rule_stream(chat_history,system_prompt=self.system_prompt)
-            for res in second_response:
-                yield res
+        fuction_to_call = self.get_knowledge
+        function_response = fuction_to_call(
+            query=chat_history[-1]["content"]
+        )
+        # Step 4: send the info on the function call and function response to GPT
+        chat_history.append(
+            {
+                "role": "function",
+                "name": "get_knowledge_response",
+                "content": function_response,
+            }
+        )  # extend conversation with function response
+        second_response = get_gpt_response_rule_stream(chat_history,system_prompt=self.system_prompt,last_prompt=self.last_prompt)
+        all = ""
+        for res in second_response:
+            all += res
+            yield res
+        long_memory["chat_history"].append({
+            "role": "assistant",
+            "content": all
+        })
+        long_memory["idle_history"].append({
+            "role": "assistant",
+            "content": all
+        })

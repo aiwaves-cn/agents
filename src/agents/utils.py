@@ -134,7 +134,10 @@ def get_gpt_response_rule(chat_history,
         messages=messages,
         temperature=temperature,
     )
-    print(response.choices[0].message["content"])
+    print("***************************************")
+    print(messages)
+    print(response)
+    print("***************************************")
     return response.choices[0].message["content"]
 
 
@@ -164,7 +167,9 @@ def get_gpt_response_rule_stream(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
+    print("***************************************")
     print(messages)
+    print("***************************************")
     response = openai.ChatCompletion.create(model=model,
                                             messages=messages,
                                             temperature=temperature,
