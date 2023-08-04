@@ -91,6 +91,10 @@ class SOP:
                 now_node = StaticNode(name=name,
                                       done=done,
                                       output=node["output"])
+            elif tool_name == "KnowledgeResponseNode":
+                now_node = KnowledgeResponseNode(knowledge_base=node["knowledge_base"],system_prompt=node["system_prompt"],name=name,done=done)
+            else:
+                assert 1==False,"wrong tool node name"
             nodes_dict[name] = now_node
 
             if "root" in node.keys() and node["root"]:
@@ -465,8 +469,7 @@ class KnowledgeResponseNode(ToolNode):
         }
     ]
     
-    def get_knowledge(self, query):
-
+    def get_knowledge(self,query):
         knowledge = ""
         query_embedding = self.embedding_model.encode(query)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
@@ -474,20 +477,27 @@ class KnowledgeResponseNode(ToolNode):
         temp = []
         for hit in hits:
             matching_idx = hit['corpus_id']
-            score = hit["score"]
             if self.kb_chunks[matching_idx] in temp:
                 pass
             else:
                 knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n\n'
                 temp.append(self.kb_chunks[matching_idx])
-                if len(temp) == self.top_k:
+                if len(temp) == 1:
                     break
-        return knowledge
+        print(hits[0]["score"])
+        score = hits[0]["score"]
+        if score < 0.5:
+            return "没有匹配到相关的知识库"
+        else:
+            print(knowledge)
+            return "相关的知识库内容是"+knowledge
     
-    def func(self,chat_history,long_memory, temp_memory):
+    def func(self,long_memory, temp_memory):
+        chat_history = long_memory["chat_history"]
         outputdict = {"response": "", "next_node_id": "0"}
-        response = get_gpt_response_function(chat_history,self.system_prompt,function = self.functions,function_call= {"name":"get_knowledge_response"})
+        response = get_gpt_response_function(chat_history,self.system_prompt,function = self.functions,function_call= {"name":"get_knowledge_response","arguments":{"query":chat_history[-1]["content"]}})
         yield outputdict
+
         if response.get("function_call"):
         # Step 3: call the function
         # Note: the JSON response may not always be valid; be sure to handle errors
@@ -496,7 +506,7 @@ class KnowledgeResponseNode(ToolNode):
             function_response = fuction_to_call(
                 query=function_args.get("query")
             )
-
+            print(function_args.get("query"))
             # Step 4: send the info on the function call and function response to GPT
             chat_history.append(
                 {
