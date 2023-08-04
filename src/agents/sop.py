@@ -495,7 +495,7 @@ class KnowledgeResponseNode(ToolNode):
             return "没有匹配到相关的知识库"
         else:
             print(knowledge)
-            return "相关的知识库内容是"+knowledge
+            return "相关的内容是"+knowledge + "你可以根据以上内容进行回答。"
     
     def func(self,long_memory, temp_memory):
         chat_history = get_keyword_in_long_temp("chat_history", long_memory,
