@@ -485,7 +485,7 @@ class KnowledgeResponseNode(ToolNode):
             if self.kb_chunks[matching_idx] in temp:
                 pass
             else:
-                knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n\n'
+                knowledge = knowledge + f'问题：{self.kb_questions[matching_idx]}，答案：{self.kb_chunks[matching_idx]}\n\n'
                 temp.append(self.kb_chunks[matching_idx])
                 if len(temp) == 1:
                     break
@@ -495,7 +495,7 @@ class KnowledgeResponseNode(ToolNode):
             return "没有匹配到相关的知识库"
         else:
             print(knowledge)
-            return "相关的内容是"+knowledge + "你可以根据以上内容进行回答。"
+            return "相关的内容是： “"+knowledge + "”如果能完全匹配对应的问题，你就完全输出对应的答案，如果只是有参考的内容，你可以根据以上内容进行回答。"
     
     def func(self,long_memory, temp_memory):
         chat_history = get_keyword_in_long_temp("chat_history", long_memory,
