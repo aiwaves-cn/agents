@@ -53,18 +53,18 @@ class Agent():
             userName = 0
         assert type(userName) == int, "username type is not int!"
         self.load_date(userName)
-        if self.judge_idle(query):
-            if self.judge_sensitive(query):
-                response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
-                for res in response:
-                    time.sleep(0.05)
-                    yield res
-                return
-            else:
-                chat = self.chat(query, userName)
-                for res in chat:
-                    yield res
-                return
+        # if self.judge_idle(query):
+        #     if self.judge_sensitive(query):
+        #         response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
+        #         for res in response:
+        #             time.sleep(0.05)
+        #             yield res
+        #         return
+        #     else:
+        #         chat = self.chat(query, userName)
+        #         for res in chat:
+        #             yield res
+        #         return
 
         self.long_memory["chat_history"].append({
             "role": "user",
@@ -173,7 +173,6 @@ class Agent():
                             time.sleep(0.05)
                             yield res
                     else:
-                        all += output
                         yield output
                 now_node = now_node.next_nodes[next_node_id]
                 self.now_node = now_node
