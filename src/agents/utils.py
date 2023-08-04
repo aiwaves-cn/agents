@@ -64,6 +64,44 @@ def extract(text, type):
     target_str = get_content_between_a_b(f'<{type}>', f'</{type}>', text)
     return target_str
 
+def get_gpt_response_function(chat_history,
+                          system_prompt,
+                          last_prompt=None,
+                          model="gpt-3.5-turbo-16k-0613",
+                          function = None,
+                          function_call = "auto",
+                          temperature=0):
+    """get the response of chatgpt
+
+    Args:
+        chat_history (list): the history of chat
+        system_prompt (str): the main task set in the first
+        last_prompt (str): attached to the final task
+        temperature(float):randomness of GPT responses
+
+    Returns:
+        str: the response of chatgpt
+    """
+    openai.api_key = API_KEY
+    openai.proxy = PROXY
+
+    messages = [{"role": "system", "content": system_prompt}]
+    if chat_history:
+        if len(chat_history) > 2 * MAX_CHAT_HISTORY:
+            chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
+        messages += chat_history
+    if last_prompt:
+        messages += [{"role": "system", "content": f"{last_prompt}"}]
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        functions = function,
+        function_call = function_call,
+        temperature=temperature,
+    )
+
+    return response.choices[0].message
+
 
 def get_gpt_response_rule(chat_history,
                           system_prompt,
@@ -127,6 +165,7 @@ def get_gpt_response_rule_stream(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
+    print(messages)
     response = openai.ChatCompletion.create(model=model,
                                             messages=messages,
                                             temperature=temperature,

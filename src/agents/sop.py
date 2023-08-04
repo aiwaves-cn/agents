@@ -435,3 +435,76 @@ class StaticNode(ToolNode):
             "content": self.output
         })
         yield outputdict
+        
+
+
+
+class KnowledgeResponseNode(ToolNode):
+    def __init__(self,knowledge_base,system_prompt,name="",top_k=2,done = False) -> None:
+        super().__init__(name, done)
+        self.system_prompt = system_prompt
+        self.top_k = top_k
+        self.embedding_model = SentenceModel(
+            'shibing624/text2vec-base-chinese', device="cpu")
+        self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base(
+            knowledge_base)
+        self.functions = [
+        {
+            "name": "get_knowledge_response",
+            "description": "根据你所知道的知识库知识来回答用户的问题",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "用户当前所提出的问题",
+                    },
+                },
+                "required": ["query"],
+            },
+        }
+    ]
+    
+    def get_knowledge(self, query):
+
+        knowledge = ""
+        query_embedding = self.embedding_model.encode(query)
+        hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
+        hits = hits[0]
+        temp = []
+        for hit in hits:
+            matching_idx = hit['corpus_id']
+            score = hit["score"]
+            if self.kb_chunks[matching_idx] in temp:
+                pass
+            else:
+                knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n\n'
+                temp.append(self.kb_chunks[matching_idx])
+                if len(temp) == self.top_k:
+                    break
+        return knowledge
+    
+    def func(self,chat_history,long_memory, temp_memory):
+        outputdict = {"response": "", "next_node_id": "0"}
+        response = get_gpt_response_function(chat_history,self.system_prompt,function = self.functions,function_call= {"name":"get_knowledge_response"})
+        yield outputdict
+        if response.get("function_call"):
+        # Step 3: call the function
+        # Note: the JSON response may not always be valid; be sure to handle errors
+            fuction_to_call = self.get_knowledge
+            function_args = json.loads(response["function_call"]["arguments"])
+            function_response = fuction_to_call(
+                query=function_args.get("query")
+            )
+
+            # Step 4: send the info on the function call and function response to GPT
+            chat_history.append(
+                {
+                    "role": "function",
+                    "name": "get_knowledge_response",
+                    "content": function_response,
+                }
+            )  # extend conversation with function response
+            second_response = get_gpt_response_rule_stream(chat_history,system_prompt=self.system_prompt)
+            for res in second_response:
+                yield res
