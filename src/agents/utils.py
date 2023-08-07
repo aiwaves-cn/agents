@@ -31,7 +31,8 @@ from langchain.document_loaders import UnstructuredFileLoader
 from langchain.text_splitter import CharacterTextSplitter
 
 embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                             device=torch.device("cpu"))
+                         device=torch.device("cpu"))
+
 
 def get_content_between_a_b(start_tag, end_tag, text):
     """
@@ -71,13 +72,15 @@ def extract(text, type):
     target_str = get_content_between_a_b(f'<{type}>', f'</{type}>', text)
     return target_str
 
+
 def get_gpt_response_function(chat_history,
-                          system_prompt,
-                          last_prompt=None,
-                          model="gpt-3.5-turbo-16k-0613",
-                          function = None,
-                          function_call = "auto",
-                          temperature=0):
+                              system_prompt,
+                              last_prompt=None,
+                              model="gpt-3.5-turbo-16k-0613",
+                              function=None,
+                              function_call="auto",
+                              temperature=0,
+                              args_dict=None):
     """get the response of chatgpt
 
     Args:
@@ -91,6 +94,9 @@ def get_gpt_response_function(chat_history,
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
+    log_path = "logs"
+    if args_dict:
+        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
@@ -102,10 +108,18 @@ def get_gpt_response_function(chat_history,
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        functions = function,
-        function_call = function_call,
+        functions=function,
+        function_call=function_call,
         temperature=temperature,
     )
+    log = {}
+    log["input"] = messages
+    log["output"] = response
+    log_path = os.path.join(
+            log_path,
+            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ".json")
+    with open(log_path,"w",encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
 
     return response.choices[0].message
 
@@ -114,7 +128,8 @@ def get_gpt_response_rule(chat_history,
                           system_prompt,
                           last_prompt=None,
                           model="gpt-3.5-turbo-16k-0613",
-                          temperature=0):
+                          temperature=0,
+                          args_dict=None):
     """get the response of chatgpt
 
     Args:
@@ -128,6 +143,9 @@ def get_gpt_response_rule(chat_history,
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
+    log_path = "logs"
+    if args_dict:
+        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
@@ -144,8 +162,11 @@ def get_gpt_response_rule(chat_history,
     log = {}
     log["input"] = messages
     log["output"] = response
-    with open("logs/"+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+".json","w",encoding="utf-8") as f:
-        json.dump(log, f, ensure_ascii=False,indent=2)
+    log_path = os.path.join(
+            log_path,
+            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ".json")
+    with open(log_path,"w",encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
     return response.choices[0].message["content"]
 
 
@@ -153,7 +174,8 @@ def get_gpt_response_rule_stream(chat_history,
                                  system_prompt,
                                  last_prompt=None,
                                  model="gpt-3.5-turbo-16k-0613",
-                                 temperature=0.3):
+                                 temperature=0.3,
+                                 args_dict=None):
     """get the response of chatgpt
 
     Args:
@@ -167,6 +189,9 @@ def get_gpt_response_rule_stream(chat_history,
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
+    log_path = "logs"
+    if args_dict:
+        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
@@ -182,14 +207,18 @@ def get_gpt_response_rule_stream(chat_history,
     ans = ""
     for res in response:
         if res:
-            ans += res
-            yield res.choices[0]['delta'].get(
+            r = res.choices[0]['delta'].get(
                 'content') if res.choices[0]['delta'].get('content') else ''
+            ans += r
+            yield r
     log = {}
     log["input"] = messages
     log["output"] = ans
-    with open("logs/"+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+".json","w",encoding="utf-8") as f:
-        json.dump(log, f, ensure_ascii=False,indent=2)
+    log_path = os.path.join(
+            log_path,
+            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ".json")
+    with open(log_path,"w",encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):
@@ -204,8 +233,12 @@ def cut_sent(para):
     para = para.rstrip()
     pieces = [i for i in para.split("\n") if i]
     batch_size = 3
-    chucks = [" ".join(pieces[i:i + batch_size]) for i in range(0, len(pieces), batch_size)]
+    chucks = [
+        " ".join(pieces[i:i + batch_size])
+        for i in range(0, len(pieces), batch_size)
+    ]
     return chucks
+
 
 def process_document(file_path, save_path):
     """
@@ -221,22 +254,23 @@ def process_document(file_path, save_path):
     count = 0
     if file_path.endswith(".csv"):
         dataset = pandas.read_csv(file_path)
-        questions= dataset["question"]
+        questions = dataset["question"]
         answers = dataset["answer"]
-        os.makedirs("temp_database",exist_ok=True)
-        save_path = os.path.join("temp_database/file",file_path.replace(".csv",".json"))
+        os.makedirs("temp_database", exist_ok=True)
+        save_path = os.path.join("temp_database/file",
+                                 file_path.replace(".csv", ".json"))
         # embedding q+chunk
-        for q,a in tqdm(zip(questions,answers)):
+        for q, a in tqdm(zip(questions, answers)):
             for text in cut_sent(a):
                 temp_dict = {}
                 temp_dict['q'] = q
                 temp_dict['a'] = a
                 temp_dict['chunk'] = text
-                temp_dict['emb'] = embedder.encode(q+text).tolist()
+                temp_dict['emb'] = embedder.encode(q + text).tolist()
                 final_dict[count] = temp_dict
-                count+=1
+                count += 1
         # embedding chunk
-        for q,a in tqdm(zip(questions,answers)):
+        for q, a in tqdm(zip(questions, answers)):
             for text in cut_sent(a):
                 temp_dict = {}
                 temp_dict['q'] = q
@@ -244,7 +278,7 @@ def process_document(file_path, save_path):
                 temp_dict['chunk'] = text
                 temp_dict['emb'] = embedder.encode(text).tolist()
                 final_dict[count] = temp_dict
-                count+=1
+                count += 1
         # embedding q
         for q, a in tqdm(zip(questions, answers)):
             temp_dict = {}
@@ -260,7 +294,7 @@ def process_document(file_path, save_path):
             temp_dict['q'] = q
             temp_dict['a'] = a
             temp_dict['chunk'] = a
-            temp_dict['emb'] = embedder.encode(q+a).tolist()
+            temp_dict['emb'] = embedder.encode(q + a).tolist()
             final_dict[count] = temp_dict
             count += 1
         # embedding a
@@ -275,13 +309,16 @@ def process_document(file_path, save_path):
         print(f"finish updating {len(final_dict)} data!")
         with open(save_path, 'w') as f:
             json.dump(final_dict, f, ensure_ascii=False, indent=2)
-        return {"knowledge_base":save_path,"type":"QA"}
+        return {"knowledge_base": save_path, "type": "QA"}
     else:
         loader = UnstructuredFileLoader(file_path)
         docs = loader.load()
-        text_spiltter = CharacterTextSplitter(chunk_size = 200,chunk_overlap = 100)
+        text_spiltter = CharacterTextSplitter(chunk_size=200,
+                                              chunk_overlap=100)
         docs = text_spiltter.split_text(docs[0].page_content)
-        save_path = os.path.join("logs/file",file_path.replace("."+file_path.split(".")[1],".json"))
+        save_path = os.path.join(
+            "logs/file",
+            file_path.replace("." + file_path.split(".")[1], ".json"))
         final_dict = {}
         count = 0
         for c in tqdm():
@@ -289,11 +326,12 @@ def process_document(file_path, save_path):
             temp_dict['chunk'] = c
             temp_dict['emb'] = embedder.encode(c).tolist()
             final_dict[count] = temp_dict
-            count+=1
+            count += 1
         print(f"finish updating {len(final_dict)} data!")
         with open(save_path, 'w') as f:
-            json.dump(final_dict, f, ensure_ascii=False,indent=2)
-        return {"knowledge_base":save_path,"type":"UnstructuredFile"}
+            json.dump(final_dict, f, ensure_ascii=False, indent=2)
+        return {"knowledge_base": save_path, "type": "UnstructuredFile"}
+
 
 def load_knowledge_base_qa(path):
     """
@@ -325,8 +363,9 @@ def load_knowledge_base_UnstructuredFile(path):
     for idx in range(len(data.keys())):
         embeddings.append(data[str(idx)]['emb'])
         chunks.append(data[str(idx)]['chunk'])
-    embeddings = np.array(embeddings,dtype=np.float32)
+    embeddings = np.array(embeddings, dtype=np.float32)
     return embeddings, chunks
+
 
 def cos_sim(a: torch.Tensor, b: torch.Tensor):
     """
