@@ -122,33 +122,45 @@ class KnowledgeBaseComponent(Component):
     KnowledgeBase
     """
 
-    def __init__(self, knowledge_base, top_k=2):
+    def __init__(self, knowledge_base, top_k=2,type = "QA"):
         super().__init__()
         self.top_k = top_k
         self.knowledge_base_path = knowledge_base
         self.user_input = ""
-        self.embedding_model = SentenceModel(
-            'shibing624/text2vec-base-chinese', device="cpu")
-        self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base(
+        self.type = type
+        self.embedding_model = SentenceModel('shibing624/text2vec-base-chinese', device="cpu")
+        if self.type == "QA":
+            self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base_qa(
             self.knowledge_base_path)
+        else:
+            self.kb_embeddings,self.kb_chunks = load_knowledge_base_UnstructuredFile(self.knowledge_base_path)
 
     def get_knowledge(self, user_input):
-
         knowledge = ""
         query_embedding = self.embedding_model.encode(user_input)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]
         temp = []
-        for hit in hits:
-            matching_idx = hit['corpus_id']
-            score = hit["score"]
-            if self.kb_chunks[matching_idx] in temp:
-                pass
-            else:
-                knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n\n'
-                temp.append(self.kb_chunks[matching_idx])
-                if len(temp) == self.top_k:
-                    break
+        if self.type == "QA":
+            for hit in hits:
+                matching_idx = hit['corpus_id']
+                if self.kb_chunks[matching_idx] in temp:
+                    pass
+                else:
+                    knowledge = knowledge + f'{self.kb_questions[matching_idx]}的答案是：{self.kb_chunks[matching_idx]}\n\n'
+                    temp.append(self.kb_chunks[matching_idx])
+                    if len(temp) == self.top_k:
+                        break
+        else:
+            for hit in hits:
+                matching_idx = hit['corpus_id']
+                if self.kb_chunks[matching_idx] in temp:
+                    pass
+                else:
+                    knowledge = knowledge + f'{self.kb_chunks[matching_idx]}\n\n'
+                    temp.append(self.kb_chunks[matching_idx])
+                    if len(temp) == self.top_k:
+                        break
         return knowledge
 
     def get_prompt(self):

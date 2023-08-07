@@ -37,6 +37,7 @@ class Agent():
     def __init__(self, sop) -> None:
         self.content = {"messages": []}
         self.SOP = SOP(sop)
+        self.temperature = SOP.temperature
         self.root = self.SOP.root
         self.now_node = self.root
         self.judge_idle_node = self.SOP.judge_idle_node
@@ -95,7 +96,8 @@ class Agent():
                         self.long_memory, self.temp_memory)
                     response = get_gpt_response_rule(chat_history,
                                                      system_prompt,
-                                                     last_prompt)
+                                                     last_prompt,
+                                                     temperature = self.temperature)
                     keywords = extract(response, now_node.extract_words)
                     next_nodes_nums = len(now_node.next_nodes.keys())
 
@@ -127,7 +129,7 @@ class Agent():
                     system_prompt, last_prompt = now_node.get_prompt(
                         self.long_memory, self.temp_memory, query)
                     response = get_gpt_response_rule_stream(
-                        chat_history, system_prompt, None)
+                        chat_history, system_prompt, None,temperature=self.temperature)
                     now_node = now_node.next_nodes["0"]
                     self.now_node = now_node
                     all = ""
@@ -148,7 +150,7 @@ class Agent():
                     system_prompt, last_prompt = now_node.get_prompt(
                         self.long_memory, self.temp_memory)
                     response = get_gpt_response_rule_stream(
-                        chat_history, system_prompt, last_prompt)
+                        chat_history, system_prompt, last_prompt,temperature=self.temperature)
                     all = ""
                     for res in response:
                         all += res if res else ''

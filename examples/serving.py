@@ -26,12 +26,32 @@ import sys
 sys.path.append("../src/agents")
 from sop import SOP
 from agent import Agent
+import os
+
+
+
 if __name__ == '__main__':
     
+    """
+    port=$1
+    ansDiversity=$2
+    ansSimplify=$3
+    activeMode=$4
+    botCode=$5
+    logPath=$6
+    docPath=$7
+    """
     parser = argparse.ArgumentParser(description='A demo of chatbot')
+    parser.add_argument('--ansDiversity',type=int)
+    parser.add_argument('--ansSimplify',type=int)
+    parser.add_argument('--botCode',type=int)
+    parser.add_argument('--logPath',type=int)
+    parser.add_argument('--docPath',type=int)
+    parser.add_argument('--activeMode',type=int)
+    
     parser.add_argument('--agent', type=str, help='path to SOP json')
     parser.add_argument('--port', type=int, help='server port')
-    parser.add_argument('--router', type=str, default='/api/v1/ask/',help='server port')
+    parser.add_argument('--router', type=str, default='/api/v1/ask/')
     args = parser.parse_args()
     
     agent = Agent(args.agent)
@@ -41,6 +61,8 @@ if __name__ == '__main__':
                 'Cache-Control': 'no-cache',
                 'X-Accel-Buffering': 'no',
             }
+    os.makedirs("logs",exist_ok=True)
+    
     # {'userName': '', 'query': '你好', 'history': [{'type': 1, 'message': '您好，我是导购机器人，您有什么问题需要我的帮助？', 'http': '', 'timestamp': 1690429363521, 'img': ''}, {'type': 0, 'message': '你好', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}]}
     @app.route(args.router,methods=['post'])
     def reply():
