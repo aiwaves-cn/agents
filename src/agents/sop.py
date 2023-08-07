@@ -30,13 +30,15 @@ class SOP:
         with open(json_path) as f:
             sop = json.load(f)
         self.root = None
-        self.judge_idle_node = None
-        self.idle_response_node = None
-
+        self.temperature = 0.2
         self.nodes = {}
         if "temperature" in sop:
             self.temperature = sop["temperature"]
-            
+        
+
+        if "log_path" in sop:
+            self.log_path = sop["log_path"]
+
         if "gpt_nodes" in sop:
             gpt_nodes = self.init_gpt_nodes(sop)
             self.nodes.update(gpt_nodes)
@@ -66,11 +68,6 @@ class SOP:
             nodes_dict[name] = now_node
             if "root" in node.keys() and node["root"]:
                 self.root = now_node
-            if "judge_idle_node" in node.keys() and node["judge_idle_node"]:
-                self.judge_idle_node = now_node
-            if "idle_response_node" in node.keys(
-            ) and node["idle_response_node"]:
-                self.idle_response_node = now_node
         return nodes_dict
 
     def init_tool_nodes(self, sop):
@@ -82,7 +79,7 @@ class SOP:
             name = node["name"]
             done = node["done"]
             tool_name = node["tool_name"]
-            
+
             if tool_name == "MatchNode":
                 now_node = MatchNode(name=name, done=done)
             elif tool_name == "SearchNode":
@@ -96,14 +93,21 @@ class SOP:
                                       done=done,
                                       output=node["output"])
             elif tool_name == "KnowledgeResponseNode":
-                last_prompt = node["last_prompt"] if "last_prompt" in node else None
-                system_prompt = node["system_prompt"] if "system_prompt" in node else None
-                knowledge_base = node["knowledge_base"] if "knowledge_base" in node else None
+                last_prompt = node[
+                    "last_prompt"] if "last_prompt" in node else None
+                system_prompt = node[
+                    "system_prompt"] if "system_prompt" in node else None
+                knowledge_base = node[
+                    "knowledge_base"] if "knowledge_base" in node else None
                 type = node["type"] if "type" in node else None
-                now_node = KnowledgeResponseNode(knowledge_base=knowledge_base,system_prompt=system_prompt,last_prompt=last_prompt,name=name,
-                                                 type=type,done=done)
+                now_node = KnowledgeResponseNode(knowledge_base=knowledge_base,
+                                                 system_prompt=system_prompt,
+                                                 last_prompt=last_prompt,
+                                                 name=name,
+                                                 type=type,
+                                                 done=done)
             else:
-                assert 1==False,"wrong tool node name"
+                assert 1 == False, "wrong tool node name"
             nodes_dict[name] = now_node
 
             if "root" in node.keys() and node["root"]:
@@ -204,9 +208,15 @@ class GPTNode():
         self.name = name
 
     # get complete prompt
-    def get_prompt(self, long_memory={}, temp_memory={}, query=""):
+    def get_prompt(self, args_dict):
         prompt = ""
         last_prompt = ""
+        query = args_dict["query"] if args_dict["query"] else ""
+        long_memory = args_dict["long_memory"] if args_dict[
+            "long_memory"] else {}
+        temp_memory = args_dict["temp_memory"] if args_dict[
+            "temp_memory"] else {}
+
         for value in self.components.values():
             if isinstance(value, KnowledgeBaseComponent):
                 value.user_input = query
@@ -231,7 +241,7 @@ class ToolNode:
         self.done = done
 
     @abstractmethod
-    def func(self, long_memory, temp_memory):
+    def func(self, args_dict):
         pass
 
 
@@ -241,7 +251,7 @@ class StaticNode(ToolNode):
         super().__init__(name, done)
         self.output = output
 
-    def func(self, long_memory, temp_memory):
+    def func(self, args_dict):
         outputdict = {"response": self.output, "next_node_id": "0"}
         return outputdict
 
@@ -296,10 +306,15 @@ class MatchNode(ToolNode):
                 break
         return knowledge
 
-    def func(self, long_memory, temp_memory):
+    def func(self, args_dict):
         """
         return the memory of information and determine the next node
         """
+        long_memory = args_dict["long_memory"] if args_dict[
+            "long_memory"] else {}
+        temp_memory = args_dict["temp_memory"] if args_dict[
+            "temp_memory"] else {}
+
         extract_category = get_keyword_in_long_temp("extract_category",
                                                     long_memory, temp_memory)
 
@@ -330,10 +345,15 @@ class SearchNode(ToolNode):
     def __init__(self, name="", done=False):
         super().__init__(name, done)
 
-    def func(self, long_memory, temp_memory):
+    def func(self, args_dict):
         """
         return the recommend of the search shop
         """
+        long_memory = args_dict["long_memory"] if args_dict[
+            "long_memory"] else {}
+        temp_memory = args_dict["temp_memory"] if args_dict[
+            "temp_memory"] else {}
+
         outputdict = {"response": "", "next_node_id": "0"}
         requirements = get_keyword_in_long_temp("requirements", long_memory,
                                                 temp_memory)
@@ -357,10 +377,15 @@ class SearchRecomNode(ToolNode):
     def __init__(self, name="", done=False):
         super().__init__(name, done)
 
-    def func(self, long_memory, temp_memory):
+    def func(self, args_dict):
         """
         return the recommend of the search shop
         """
+        long_memory = args_dict["long_memory"] if args_dict[
+            "long_memory"] else {}
+        temp_memory = args_dict["temp_memory"] if args_dict[
+            "temp_memory"] else {}
+
         outputdict = {"response": "", "next_node_id": "0"}
         request_items = get_keyword_in_long_temp("request_items", long_memory,
                                                  temp_memory)
@@ -379,10 +404,15 @@ class RecomTopNode(ToolNode):
     def __init__(self, name="", done=False):
         super().__init__(name, done)
 
-    def func(self, long_memory, temp_memory):
+    def func(self, args_dict):
         """
         return the recommend of the search shop
         """
+        long_memory = args_dict["long_memory"] if args_dict[
+            "long_memory"] else {}
+        temp_memory = args_dict["temp_memory"] if args_dict[
+            "temp_memory"] else {}
+
         outputdict = {"response": "", "next_node_id": "0"}
         top_category = get_keyword_in_long_temp("top_category", long_memory,
                                                 temp_memory)
@@ -403,7 +433,11 @@ class RecomTopNode(ToolNode):
             from tool_prompt import prompt_cat_recom_top
             prompt = prompt_cat_recom_top(top_category)
             chat_answer_generator = get_gpt_response_rule_stream(
-                chat_history, prompt, None)
+                chat_history,
+                prompt,
+                None,
+                args_dict=args_dict,
+                temperature=args_dict["temperature"])
             all = ""
             for chat_answer in chat_answer_generator:
                 all += chat_answer
@@ -412,18 +446,10 @@ class RecomTopNode(ToolNode):
                 "role": "assistant",
                 "content": all
             })
-            long_memory["idle_history"].append({
-                "role": "assistant",
-                "content": all
-            })
 
         elif not request_items:
             chat_answer = "\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
             long_memory["chat_history"].append({
-                "role": "assistant",
-                "content": chat_answer
-            })
-            long_memory["idle_history"].append({
                 "role": "assistant",
                 "content": chat_answer
             })
@@ -437,23 +463,30 @@ class StaticNode(ToolNode):
         super().__init__(name, done)
         self.output = output
 
-    def func(self, long_memory, temp_memory):
+    def func(self, args_dict):
+        long_memory = args_dict["long_memory"] if args_dict[
+            "long_memory"] else {}
+        temp_memory = args_dict["temp_memory"] if args_dict[
+            "temp_memory"] else {}
+
         outputdict = {"response": self.output, "next_node_id": "0"}
         long_memory["chat_history"].append({
             "role": "assistant",
             "content": self.output
         })
-        long_memory["idle_history"].append({
-            "role": "assistant",
-            "content": self.output
-        })
         yield outputdict
-        
-
 
 
 class KnowledgeResponseNode(ToolNode):
-    def __init__(self,knowledge_base,system_prompt,last_prompt = None,name="",top_k=2,type = "QA",done = False) -> None:
+
+    def __init__(self,
+                 knowledge_base,
+                 system_prompt,
+                 last_prompt=None,
+                 name="",
+                 top_k=2,
+                 type="QA",
+                 done=False) -> None:
         super().__init__(name, done)
         self.last_prompt = last_prompt
         self.system_prompt = system_prompt
@@ -465,10 +498,9 @@ class KnowledgeResponseNode(ToolNode):
             self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base_qa(
                 knowledge_base)
         else:
-            self.kb_embeddings,self.kb_chunks = load_knowledge_base_UnstructuredFile(
+            self.kb_embeddings, self.kb_chunks = load_knowledge_base_UnstructuredFile(
                 knowledge_base)
-        self.functions = [
-        {
+        self.functions = [{
             "name": "get_knowledge_response",
             "description": "根据你所知道的知识库知识来回答用户的问题",
             "parameters": {
@@ -481,10 +513,9 @@ class KnowledgeResponseNode(ToolNode):
                 },
                 "required": ["query"],
             },
-        }
-    ]
-    
-    def get_knowledge(self,query):
+        }]
+
+    def get_knowledge(self, query):
         knowledge = ""
         query_embedding = self.embedding_model.encode(query)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
@@ -506,7 +537,7 @@ class KnowledgeResponseNode(ToolNode):
                 return "没有匹配到相关的知识库"
             else:
                 print(knowledge)
-                return "相关的内容是： “"+knowledge + "”如果能完全匹配对应的问题，你就完全输出对应的答案，如果只是有参考的内容，你可以根据以上内容进行回答。"
+                return "相关的内容是： “" + knowledge + "”如果能完全匹配对应的问题，你就完全输出对应的答案，如果只是有参考的内容，你可以根据以上内容进行回答。"
         else:
             for hit in hits:
                 matching_idx = hit['corpus_id']
@@ -523,38 +554,42 @@ class KnowledgeResponseNode(ToolNode):
                 return "没有匹配到相关的知识库"
             else:
                 print(knowledge)
-                return "相关的内容是： “"+knowledge+ "”"
-    
-    def func(self,long_memory, temp_memory):
+                return "相关的内容是： “" + knowledge + "”"
+
+    def func(self, args_dict):
+        print(args_dict)
+        long_memory = args_dict["long_memory"] if args_dict[
+            "long_memory"] else {}
+        temp_memory = args_dict["temp_memory"] if args_dict[
+            "temp_memory"] else {}
+
         chat_history = get_keyword_in_long_temp("chat_history", long_memory,
                                                 temp_memory).copy()
         outputdict = {"response": "", "next_node_id": "0"}
         yield outputdict
-        
+
         # Step 3: call the function
         # Note: the JSON response may not always be valid; be sure to handle errors
         fuction_to_call = self.get_knowledge
-        function_response = fuction_to_call(
-            query=chat_history[-1]["content"]
-        )
+        function_response = fuction_to_call(query=chat_history[-1]["content"])
         # Step 4: send the info on the function call and function response to GPT
-        chat_history.append(
-            {
-                "role": "function",
-                "name": "get_knowledge_response",
-                "content": function_response,
-            }
-        )  # extend conversation with function response
-        second_response = get_gpt_response_rule_stream(chat_history,system_prompt=self.system_prompt,last_prompt=self.last_prompt)
+        chat_history.append({
+            "role": "function",
+            "name": "get_knowledge_response",
+            "content": function_response,
+        })  # extend conversation with function response
+
+        second_response = get_gpt_response_rule_stream(
+            chat_history,
+            system_prompt=self.system_prompt,
+            last_prompt=self.last_prompt,
+            args_dict=args_dict,
+            temperature=args_dict["temperature"])
         all = ""
         for res in second_response:
             all += res
             yield res
         long_memory["chat_history"].append({
-            "role": "assistant",
-            "content": all
-        })
-        long_memory["idle_history"].append({
             "role": "assistant",
             "content": all
         })
