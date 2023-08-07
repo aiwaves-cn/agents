@@ -18,13 +18,20 @@ import csv
 import random
 import openai
 import json
+import pandas
 import numpy as np
 import requests
 import torch
 import tqdm
 from text2vec import SentenceModel, semantic_search
 from config import *
+import re
+import datetime
+from langchain.document_loaders import UnstructuredFileLoader
+from langchain.text_splitter import CharacterTextSplitter
 
+embedder = SentenceModel('shibing624/text2vec-base-chinese',
+                             device=torch.device("cpu"))
 
 def get_content_between_a_b(start_tag, end_tag, text):
     """
@@ -134,10 +141,11 @@ def get_gpt_response_rule(chat_history,
         messages=messages,
         temperature=temperature,
     )
-    print("***************************************")
-    print(messages)
-    print(response)
-    print("***************************************")
+    log = {}
+    log["input"] = messages
+    log["output"] = response
+    with open("logs/"+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+".json","w",encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False,indent=2)
     return response.choices[0].message["content"]
 
 
@@ -167,45 +175,41 @@ def get_gpt_response_rule_stream(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
-    print("***************************************")
-    print(messages)
-    print("***************************************")
     response = openai.ChatCompletion.create(model=model,
                                             messages=messages,
                                             temperature=temperature,
                                             stream=True)
+    ans = ""
     for res in response:
         if res:
+            ans += res
             yield res.choices[0]['delta'].get(
                 'content') if res.choices[0]['delta'].get('content') else ''
-
-
-def load_knowledge_base_chunk(path):
-    """
-    Load json format knowledge base.
-    """
-    with open(path, 'r') as f:
-        data = json.load(f)
-    embeddings = []
-    questions = []
-    answers = []
-    chunks = []
-    for idx in range(len(data.keys())):
-        embeddings.append(data[str(idx)]['emb'])
-        questions.append(data[str(idx)]['q'])
-        answers.append(data[str(idx)]['a'])
-        chunks.append(data[str(idx)]['chunk'])
-    embeddings = np.array(embeddings, dtype=np.float32)
-    return embeddings, chunks
+    log = {}
+    log["input"] = messages
+    log["output"] = ans
+    with open("logs/"+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+".json","w",encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False,indent=2)
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):
     return semantic_search(query_embedding, kb_embeddings, top_k=top_k)
 
 
-def save_qadict(questions, answers, save_path):
+def cut_sent(para):
+    para = re.sub('([。！？\?])([^”’])', r"\1\n\2", para)
+    para = re.sub('(\.{6})([^”’])', r"\1\n\2", para)
+    para = re.sub('(\…{2})([^”’])', r"\1\n\2", para)
+    para = re.sub('([。！？\?][”’])([^，。！？\?])', r'\1\n\2', para)
+    para = para.rstrip()
+    pieces = [i for i in para.split("\n") if i]
+    batch_size = 3
+    chucks = [" ".join(pieces[i:i + batch_size]) for i in range(0, len(pieces), batch_size)]
+    return chucks
+
+def process_document(file_path, save_path):
     """
-    Save QA_dict to json.
+    Save QA_csv to json.
     Args:
         model: LLM to generate embeddings
         qa_dict: A dict contains Q&A
@@ -215,20 +219,83 @@ def save_qadict(questions, answers, save_path):
     """
     final_dict = {}
     count = 0
-    for q, a in tqdm(zip(questions, answers)):
-        temp_dict = {}
-        temp_dict['q'] = q
-        temp_dict['a'] = a
-        temp_dict['chunk'] = a
-        temp_dict['emb'] = encode_word2vec(q).tolist()
-        final_dict[count] = temp_dict
-        count += 1
-    print("len:", len(final_dict))
-    with open(save_path, 'w') as f:
-        json.dump(final_dict, f, ensure_ascii=False, indent=2)
+    if file_path.endswith(".csv"):
+        dataset = pandas.read_csv(file_path)
+        questions= dataset["question"]
+        answers = dataset["answer"]
+        os.makedirs("temp_database",exist_ok=True)
+        save_path = os.path.join("temp_database/file",file_path.replace(".csv",".json"))
+        # embedding q+chunk
+        for q,a in tqdm(zip(questions,answers)):
+            for text in cut_sent(a):
+                temp_dict = {}
+                temp_dict['q'] = q
+                temp_dict['a'] = a
+                temp_dict['chunk'] = text
+                temp_dict['emb'] = embedder.encode(q+text).tolist()
+                final_dict[count] = temp_dict
+                count+=1
+        # embedding chunk
+        for q,a in tqdm(zip(questions,answers)):
+            for text in cut_sent(a):
+                temp_dict = {}
+                temp_dict['q'] = q
+                temp_dict['a'] = a
+                temp_dict['chunk'] = text
+                temp_dict['emb'] = embedder.encode(text).tolist()
+                final_dict[count] = temp_dict
+                count+=1
+        # embedding q
+        for q, a in tqdm(zip(questions, answers)):
+            temp_dict = {}
+            temp_dict['q'] = q
+            temp_dict['a'] = a
+            temp_dict['chunk'] = a
+            temp_dict['emb'] = embedder.encode(q).tolist()
+            final_dict[count] = temp_dict
+            count += 1
+        # embedding q+a
+        for q, a in tqdm(zip(questions, answers)):
+            temp_dict = {}
+            temp_dict['q'] = q
+            temp_dict['a'] = a
+            temp_dict['chunk'] = a
+            temp_dict['emb'] = embedder.encode(q+a).tolist()
+            final_dict[count] = temp_dict
+            count += 1
+        # embedding a
+        for q, a in tqdm(zip(questions, answers)):
+            temp_dict = {}
+            temp_dict['q'] = q
+            temp_dict['a'] = a
+            temp_dict['chunk'] = a
+            temp_dict['emb'] = embedder.encode(a).tolist()
+            final_dict[count] = temp_dict
+            count += 1
+        print(f"finish updating {len(final_dict)} data!")
+        with open(save_path, 'w') as f:
+            json.dump(final_dict, f, ensure_ascii=False, indent=2)
+        return {"knowledge_base":save_path,"type":"QA"}
+    else:
+        loader = UnstructuredFileLoader(file_path)
+        docs = loader.load()
+        text_spiltter = CharacterTextSplitter(chunk_size = 200,chunk_overlap = 100)
+        docs = text_spiltter.split_text(docs[0].page_content)
+        save_path = os.path.join("logs/file",file_path.replace("."+file_path.split(".")[1],".json"))
+        final_dict = {}
+        count = 0
+        for c in tqdm():
+            temp_dict = {}
+            temp_dict['chunk'] = c
+            temp_dict['emb'] = embedder.encode(c).tolist()
+            final_dict[count] = temp_dict
+            count+=1
+        print(f"finish updating {len(final_dict)} data!")
+        with open(save_path, 'w') as f:
+            json.dump(final_dict, f, ensure_ascii=False,indent=2)
+        return {"knowledge_base":save_path,"type":"UnstructuredFile"}
 
-
-def load_knowledge_base(path):
+def load_knowledge_base_qa(path):
     """
     Load json format knowledge base.
     """
@@ -246,6 +313,20 @@ def load_knowledge_base(path):
     embeddings = np.array(embeddings, dtype=np.float32)
     return embeddings, questions, answers, chunks
 
+
+def load_knowledge_base_UnstructuredFile(path):
+    """
+    Load json format knowledge base.
+    """
+    with open(path, 'r') as f:
+        data = json.load(f)
+    embeddings = []
+    chunks = []
+    for idx in range(len(data.keys())):
+        embeddings.append(data[str(idx)]['emb'])
+        chunks.append(data[str(idx)]['chunk'])
+    embeddings = np.array(embeddings,dtype=np.float32)
+    return embeddings, chunks
 
 def cos_sim(a: torch.Tensor, b: torch.Tensor):
     """
@@ -278,9 +359,6 @@ def matching_a_b(a, b, requirements=None):
     Return：
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
-    #读取
-    embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                             device=torch.device("cpu"))
     a_embedder = embedder.encode(a, convert_to_tensor=True)
     #获取embedder
     b_embeder = embedder.encode(b, convert_to_tensor=True)
@@ -301,9 +379,6 @@ def matching_category(inputtext,
     Return：
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
-    #读取
-    embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                             device=torch.device("cpu"))
     #获取embedder
     sim_scores = torch.zeros([100])
     if inputtext:

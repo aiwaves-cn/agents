@@ -34,6 +34,9 @@ class SOP:
         self.idle_response_node = None
 
         self.nodes = {}
+        if "temperature" in sop:
+            self.temperature = sop["temperature"]
+            
         if "gpt_nodes" in sop:
             gpt_nodes = self.init_gpt_nodes(sop)
             self.nodes.update(gpt_nodes)
@@ -96,7 +99,9 @@ class SOP:
                 last_prompt = node["last_prompt"] if "last_prompt" in node else None
                 system_prompt = node["system_prompt"] if "system_prompt" in node else None
                 knowledge_base = node["knowledge_base"] if "knowledge_base" in node else None
-                now_node = KnowledgeResponseNode(knowledge_base=knowledge_base,system_prompt=system_prompt,last_prompt=last_prompt,name=name,done=done)
+                type = node["type"] if "type" in node else None
+                now_node = KnowledgeResponseNode(knowledge_base=knowledge_base,system_prompt=system_prompt,last_prompt=last_prompt,name=name,
+                                                 type=type,done=done)
             else:
                 assert 1==False,"wrong tool node name"
             nodes_dict[name] = now_node
@@ -448,15 +453,20 @@ class StaticNode(ToolNode):
 
 
 class KnowledgeResponseNode(ToolNode):
-    def __init__(self,knowledge_base,system_prompt,last_prompt = None,name="",top_k=2,done = False) -> None:
+    def __init__(self,knowledge_base,system_prompt,last_prompt = None,name="",top_k=2,type = "QA",done = False) -> None:
         super().__init__(name, done)
         self.last_prompt = last_prompt
         self.system_prompt = system_prompt
         self.top_k = top_k
         self.embedding_model = SentenceModel(
             'shibing624/text2vec-base-chinese', device="cpu")
-        self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base(
-            knowledge_base)
+        self.type = type
+        if self.type == "QA":
+            self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base_qa(
+                knowledge_base)
+        else:
+            self.kb_embeddings,self.kb_chunks = load_knowledge_base_UnstructuredFile(
+                knowledge_base)
         self.functions = [
         {
             "name": "get_knowledge_response",
@@ -480,22 +490,40 @@ class KnowledgeResponseNode(ToolNode):
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]
         temp = []
-        for hit in hits:
-            matching_idx = hit['corpus_id']
-            if self.kb_chunks[matching_idx] in temp:
-                pass
+        if self.type == "QA":
+            for hit in hits:
+                matching_idx = hit['corpus_id']
+                if self.kb_chunks[matching_idx] in temp:
+                    pass
+                else:
+                    knowledge = knowledge + f'问题：{self.kb_questions[matching_idx]}，答案：{self.kb_chunks[matching_idx]}\n\n'
+                    temp.append(self.kb_chunks[matching_idx])
+                    if len(temp) == 1:
+                        break
+            print(hits[0]["score"])
+            score = hits[0]["score"]
+            if score < 0.5:
+                return "没有匹配到相关的知识库"
             else:
-                knowledge = knowledge + f'问题：{self.kb_questions[matching_idx]}，答案：{self.kb_chunks[matching_idx]}\n\n'
-                temp.append(self.kb_chunks[matching_idx])
-                if len(temp) == 1:
-                    break
-        print(hits[0]["score"])
-        score = hits[0]["score"]
-        if score < 0.5:
-            return "没有匹配到相关的知识库"
+                print(knowledge)
+                return "相关的内容是： “"+knowledge + "”如果能完全匹配对应的问题，你就完全输出对应的答案，如果只是有参考的内容，你可以根据以上内容进行回答。"
         else:
-            print(knowledge)
-            return "相关的内容是： “"+knowledge + "”如果能完全匹配对应的问题，你就完全输出对应的答案，如果只是有参考的内容，你可以根据以上内容进行回答。"
+            for hit in hits:
+                matching_idx = hit['corpus_id']
+                if self.kb_chunks[matching_idx] in temp:
+                    pass
+                else:
+                    knowledge = knowledge + f'{self.kb_chunks[matching_idx]}\n\n'
+                    temp.append(self.kb_chunks[matching_idx])
+                    if len(temp) == self.top_k:
+                        break
+            print(hits[0]["score"])
+            score = hits[0]["score"]
+            if score < 0.5:
+                return "没有匹配到相关的知识库"
+            else:
+                print(knowledge)
+                return "相关的内容是： “"+knowledge+ "”"
     
     def func(self,long_memory, temp_memory):
         chat_history = get_keyword_in_long_temp("chat_history", long_memory,
