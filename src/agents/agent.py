@@ -36,21 +36,23 @@ class Agent():
 
     def __init__(self, sop) -> None:
         self.content = {"messages": []}
-        self.SOP = SOP(sop)
-        
-        self.temperature = self.SOP.temperature
+        self.SOP = SOP(sop)  
+        self.temperature = self.SOP.temperature if hasattr(self.SOP,"temperature") else 0.3
 
         self.root = self.SOP.root
         self.now_node = self.root
 
         self.temp_memory = {}
         self.long_memory = {"chat_history": []}
+        
 
+        
         self.args_dict = {
             "temp_memory": self.temp_memory,
             "long_memory": self.long_memory,
             "log_path": self.SOP.log_path,
-            "temperature": self.temperature
+            "temperature": self.temperature,
+            "answer_simplify":self.SOP.answer_simplify
         }
 
     def reply(self, userName, query):

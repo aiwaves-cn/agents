@@ -29,7 +29,6 @@ import re
 import datetime
 from langchain.document_loaders import UnstructuredFileLoader
 from langchain.text_splitter import CharacterTextSplitter
-
 embedder = SentenceModel('shibing624/text2vec-base-chinese',
                          device=torch.device("cpu"))
 
@@ -192,7 +191,9 @@ def get_gpt_response_rule_stream(chat_history,
     log_path = "logs"
     if args_dict:
         log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
-
+        system_prompt = system_prompt + "请你的回复尽量简洁" if args_dict["answer_simplify"] else system_prompt
+        last_prompt = last_prompt + "请你的回复尽量简洁" if args_dict["answer_simplify"] else last_prompt
+        
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
@@ -200,6 +201,8 @@ def get_gpt_response_rule_stream(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
+    
+    print(messages)
     response = openai.ChatCompletion.create(model=model,
                                             messages=messages,
                                             temperature=temperature,
