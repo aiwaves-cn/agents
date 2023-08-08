@@ -45,8 +45,6 @@ class Agent():
         self.temp_memory = {}
         self.long_memory = {"chat_history": []}
         
-
-        
         self.args_dict = {
             "temp_memory": self.temp_memory,
             "long_memory": self.long_memory,
