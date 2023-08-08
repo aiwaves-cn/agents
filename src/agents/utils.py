@@ -22,7 +22,7 @@ import pandas
 import numpy as np
 import requests
 import torch
-import tqdm
+from tqdm import tqdm
 from text2vec import SentenceModel, semantic_search
 from config import *
 import re
@@ -33,7 +33,7 @@ import string
 import random
 
 def get_code():
-    return ''.join(random.sample(string.ascii_letters + string.digits + string.punctuation, 8))
+    return ''.join(random.sample(string.ascii_letters + string.digits, 8))
 
 
 def get_content_between_a_b(start_tag, end_tag, text):
@@ -117,12 +117,12 @@ def get_gpt_response_function(chat_history,
     log = {}
     log["input"] = messages
     log["output"] = response
-    log_path = os.path.join(
+    os.makedirs(log_path,exist_ok = True)
+    log_file = os.path.join(
             log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ".json")
-    with open(log_path,"w",encoding="utf-8") as f:
+            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+    with open(log_file,"w",encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
-
     return response.choices[0].message
 
 
@@ -164,10 +164,11 @@ def get_gpt_response_rule(chat_history,
     log = {}
     log["input"] = messages
     log["output"] = response
-    log_path = os.path.join(
+    os.makedirs(log_path,exist_ok = True)
+    log_file = os.path.join(
             log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ".json")
-    with open(log_path,"w",encoding="utf-8") as f:
+            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+    with open(log_file,"w",encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
     return response.choices[0].message["content"]
 
@@ -218,10 +219,11 @@ def get_gpt_response_rule_stream(chat_history,
     log = {}
     log["input"] = messages
     log["output"] = ans
-    log_path = os.path.join(
+    os.makedirs(log_path,exist_ok = True)
+    log_file = os.path.join(
             log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ".json")
-    with open(log_path,"w",encoding="utf-8") as f:
+            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+    with open(log_file,"w",encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
 
 
@@ -262,11 +264,8 @@ def process_document(file_path):
         dataset = pandas.read_csv(file_path)
         questions = dataset["question"]
         answers = dataset["answer"]
-        os.makedirs("temp_database", exist_ok=True)
-        save_path = os.path.join("temp_database/",
-                                 file_path.replace(".csv", ".json"))
         # embedding q+chunk
-        for q, a in tqdm(zip(questions, answers)):
+        for q, a in zip(questions, answers):
             for text in cut_sent(a):
                 temp_dict = {}
                 temp_dict['q'] = q
@@ -276,7 +275,7 @@ def process_document(file_path):
                 final_dict[count] = temp_dict
                 count += 1
         # embedding chunk
-        for q, a in tqdm(zip(questions, answers)):
+        for q, a in zip(questions, answers):
             for text in cut_sent(a):
                 temp_dict = {}
                 temp_dict['q'] = q
@@ -286,7 +285,7 @@ def process_document(file_path):
                 final_dict[count] = temp_dict
                 count += 1
         # embedding q
-        for q, a in tqdm(zip(questions, answers)):
+        for q, a in zip(questions, answers):
             temp_dict = {}
             temp_dict['q'] = q
             temp_dict['a'] = a
@@ -295,7 +294,7 @@ def process_document(file_path):
             final_dict[count] = temp_dict
             count += 1
         # embedding q+a
-        for q, a in tqdm(zip(questions, answers)):
+        for q, a in zip(questions, answers):
             temp_dict = {}
             temp_dict['q'] = q
             temp_dict['a'] = a
@@ -304,7 +303,7 @@ def process_document(file_path):
             final_dict[count] = temp_dict
             count += 1
         # embedding a
-        for q, a in tqdm(zip(questions, answers)):
+        for q, a in zip(questions, answers):
             temp_dict = {}
             temp_dict['q'] = q
             temp_dict['a'] = a
@@ -313,6 +312,10 @@ def process_document(file_path):
             final_dict[count] = temp_dict
             count += 1
         print(f"finish updating {len(final_dict)} data!")
+        os.makedirs("temp_database", exist_ok=True)
+        save_path = os.path.join("temp_database/",
+                                 file_path.split("/")[-1].replace("." + file_path.split(".")[1], ".json"))
+        print(save_path)
         with open(save_path, 'w') as f:
             json.dump(final_dict, f, ensure_ascii=False, indent=2)
         return {"knowledge_base": save_path, "type": "QA"}
@@ -328,7 +331,7 @@ def process_document(file_path):
             file_path.replace("." + file_path.split(".")[1], ".json"))
         final_dict = {}
         count = 0
-        for c in tqdm():
+        for c in tqdm(docs):
             temp_dict = {}
             temp_dict['chunk'] = c
             temp_dict['emb'] = embedder.encode(c).tolist()
@@ -344,6 +347,7 @@ def load_knowledge_base_qa(path):
     """
     Load json format knowledge base.
     """
+    print("path",path)
     with open(path, 'r') as f:
         data = json.load(f)
     embeddings = []

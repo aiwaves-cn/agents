@@ -98,9 +98,7 @@ class SOP:
 
                 active_prompt = (
                     node["active_prompt"] if "active_prompt" in node else
-                    """如果你需要用户提供更多信息才能完整回答问题，你需要先输出能回答的内容，然后根据已知的内容和用户的问题进行追问。
-                    例如：提供的内容为："问题：我度数500度，散光200度可以做全飞秒手术吗？，答案：按照您的度数和散光来看可以选择全飞秒手术，全飞秒手术可以做1000度以内的近视和散光500度内的 ，但是否适合做手术，还需要做检查和医生的具体评估，建议您来医院先做个检查。"
-                    所以你应该结合这个内容做出回复。并且提供的内容中提到了家庭托福，那么你应该在原有回答的基础上追问用户“请问你是家庭托福吗？”这样的问题来补充用户的相关信息。并将这段额外的追问包裹在<追问></追问>里"""
+                    """如果你需要用户提供更多信息才能完整回答问题，你需要先输出能回答的内容，然后根据已知的内容和用户的问题进行追问。例如：用户的问题是：“度数500度能做手术吗？”提供的内容为："问题：我度数500度，散光200度可以做全飞秒手术吗？，答案：全飞秒手术可以做1000度以内的近视和散光500度内的"。所以你应该结合这个内容做出回复。但是你不知道用户的散光度数，也不知道用户要做什么手术，所以你应该追问“请问您散光多少度呀？”或者“你要做全飞秒手术还是半飞秒手术呢？”这样的问题来补充用户的相关信息。请你把可以追问的问题输出在回复的最后。"""
                 ) if self.active_mode else None
 
                 knowledge_base = node[
@@ -496,8 +494,11 @@ class KnowledgeResponseNode(ToolNode):
                  type="QA",
                  done=False) -> None:
         super().__init__(name, done)
-        self.last_prompt = last_prompt
-        self.system_prompt = system_prompt + active_prompt if active_prompt else system_prompt
+        if last_prompt != None:
+            self.last_prompt = last_prompt + active_prompt if active_prompt else last_prompt
+        else:
+            self.last_prompt = active_prompt if active_prompt else last_prompt
+        self.system_prompt = system_prompt
         
         self.top_k = top_k
         self.embedding_model = SentenceModel(
@@ -546,7 +547,7 @@ class KnowledgeResponseNode(ToolNode):
                 return "没有匹配到相关的知识库"
             else:
                 print(knowledge)
-                return "相关的内容是： “" + knowledge + "”如果能完全匹配对应的问题，你就完全输出对应的答案，如果只是有参考的内容，你可以根据以上内容进行回答。"
+                return "提供的相关内容是： “" + knowledge + "”如果能完全匹配对应的问题，你就完全输出对应的答案，如果只是有参考的内容，你可以根据以上内容进行回答。"
         else:
             for hit in hits:
                 matching_idx = hit['corpus_id']
