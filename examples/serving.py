@@ -27,8 +27,9 @@ sys.path.append("../src/agents")
 from sop import SOP
 from agent import Agent
 import os
-
-
+from utils import *
+import os
+# -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
     
@@ -42,26 +43,61 @@ if __name__ == '__main__':
     docPath=$7
     """
     parser = argparse.ArgumentParser(description='A demo of chatbot')
+    parser.add_argument('--customize',type=int)
+    # customize
     parser.add_argument('--ansDiversity',type=int)
     parser.add_argument('--ansSimplify',type=int)
-    parser.add_argument('--botCode',type=int)
-    parser.add_argument('--logPath',type=int)
-    parser.add_argument('--docPath',type=int)
     parser.add_argument('--activeMode',type=int)
-    
+    parser.add_argument('--agent_setting',type=int)
+    parser.add_argument('--agent_style',type=int)
+    parser.add_argument('--docPath',type=str)
+    # general
+    parser.add_argument('--botCode',type=str)
+    parser.add_argument('--logPath',type=str)
     parser.add_argument('--agent', type=str, help='path to SOP json')
     parser.add_argument('--port', type=int, help='server port')
     parser.add_argument('--router', type=str, default='/api/v1/ask/')
     args = parser.parse_args()
+    if args.customize == 1:
+        assert args.ansDiversity != None
+        assert args.ansSimplity != None
+        assert args.activeMode != None
+        assert args.port != None
+        assert args.rounter != None
+        output = process_document(args.docPath)
+        knowledge_base = output["knowledge_base"]
+        type = output["type"]
+        temperatrue = args.ansDiversity
+        data = {}
+        data["name"] = "node1"
+        data["node_type"] = "response"
+        data["extract_word"] = "回复"
+        data["done"] = True
+        data["components"] = {"style":{"agent":args.agent_setting,"style":args.agent_style},
+                              "task":{"task":"与用户闲聊"},
+                              "rule": {"rule": "你的回复要严格按照下面的输出格式。你的说话风格要幽默。请把你的回复放在<回复>...</回复>中，输出格式为： \n```\n<回复>\n...\n</回复>\n```"},
+                              "demonstration":None,
+                              "input": True,
+                              "tool": {"knowledge_base": knowledge_base},
+                              "output": None,
+                              "type":type}
+        os.makedirs("temp_agent", exist_ok=True)
+        save_path = os.path.join("temp_agent/",get_code())
+        with open(save_path,"w",encoding="utf-8") as f:
+            json.dump(data,f,ensure_ascii=False,indent=2)
+        agent_file = save_path
+    else:
+        assert args.agent != None
+        assert args.router != None
+        agent_file = args.agent
     
-    agent = Agent(args.agent)
+    agent = Agent(agent_file)
     app = Flask(__name__)
     headers = {
                 'Content-Type': 'text/event-stream',
                 'Cache-Control': 'no-cache',
                 'X-Accel-Buffering': 'no',
             }
-    os.makedirs("logs",exist_ok=True)
     
     # {'userName': '', 'query': '你好', 'history': [{'type': 1, 'message': '您好，我是导购机器人，您有什么问题需要我的帮助？', 'http': '', 'timestamp': 1690429363521, 'img': ''}, {'type': 0, 'message': '你好', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}, {'type': 1, 'message': '', 'http': '', 'timestamp': 1690429366306, 'img': ''}]}
     @app.route(args.router,methods=['post'])
@@ -73,6 +109,3 @@ if __name__ == '__main__':
     
     server = pywsgi.WSGIServer(('0.0.0.0', args.port), app)
     server.serve_forever()
-    
-    
-    
