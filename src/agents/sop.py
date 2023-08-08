@@ -30,14 +30,12 @@ class SOP:
         with open(json_path) as f:
             sop = json.load(f)
         self.root = None
-        self.temperature = 0.2
         self.nodes = {}
-        if "temperature" in sop:
-            self.temperature = sop["temperature"]
-        
 
-        if "log_path" in sop:
-            self.log_path = sop["log_path"]
+        self.temperature = sop["temperature"] if "temperature" in sop else 0.3
+        self.active_mode = sop["active_mode"] if "active_mode" in sop else False
+        self.log_path = sop["log_path"] if "log_path" in sop else "logs"
+        self.answer_simplify = sop["answer_simplify"] if "answer_simplify" in sop else False
 
         if "gpt_nodes" in sop:
             gpt_nodes = self.init_gpt_nodes(sop)
@@ -97,12 +95,21 @@ class SOP:
                     "last_prompt"] if "last_prompt" in node else None
                 system_prompt = node[
                     "system_prompt"] if "system_prompt" in node else None
+
+                active_prompt = (
+                    node["active_prompt"] if "active_prompt" in node else
+                    """如果你需要用户提供更多信息才能完整回答问题，你需要先输出能回答的内容，然后根据已知的内容和用户的问题进行追问。
+                    例如：提供的内容为："问题：我度数500度，散光200度可以做全飞秒手术吗？，答案：按照您的度数和散光来看可以选择全飞秒手术，全飞秒手术可以做1000度以内的近视和散光500度内的 ，但是否适合做手术，还需要做检查和医生的具体评估，建议您来医院先做个检查。"
+                    所以你应该结合这个内容做出回复。并且提供的内容中提到了家庭托福，那么你应该在原有回答的基础上追问用户“请问你是家庭托福吗？”这样的问题来补充用户的相关信息。并将这段额外的追问包裹在<追问></追问>里"""
+                ) if self.active_mode else None
+
                 knowledge_base = node[
                     "knowledge_base"] if "knowledge_base" in node else None
                 type = node["type"] if "type" in node else None
                 now_node = KnowledgeResponseNode(knowledge_base=knowledge_base,
                                                  system_prompt=system_prompt,
                                                  last_prompt=last_prompt,
+                                                 active_prompt = active_prompt,
                                                  name=name,
                                                  type=type,
                                                  done=done)
@@ -483,13 +490,15 @@ class KnowledgeResponseNode(ToolNode):
                  knowledge_base,
                  system_prompt,
                  last_prompt=None,
+                 active_prompt = None,
                  name="",
                  top_k=2,
                  type="QA",
                  done=False) -> None:
         super().__init__(name, done)
         self.last_prompt = last_prompt
-        self.system_prompt = system_prompt
+        self.system_prompt = system_prompt + active_prompt if active_prompt else system_prompt
+        
         self.top_k = top_k
         self.embedding_model = SentenceModel(
             'shibing624/text2vec-base-chinese', device="cpu")
@@ -557,7 +566,6 @@ class KnowledgeResponseNode(ToolNode):
                 return "相关的内容是： “" + knowledge + "”"
 
     def func(self, args_dict):
-        print(args_dict)
         long_memory = args_dict["long_memory"] if args_dict[
             "long_memory"] else {}
         temp_memory = args_dict["temp_memory"] if args_dict[
