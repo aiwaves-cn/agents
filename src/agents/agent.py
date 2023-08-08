@@ -59,6 +59,7 @@ class Agent():
         """
         reply api ,The interface set for backend calls 
         """
+        print(query)
         if type(userName) != int:
             userName = 0
         assert type(userName) == int, "username type is not int!"
