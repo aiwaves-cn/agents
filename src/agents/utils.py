@@ -29,8 +29,11 @@ import re
 import datetime
 from langchain.document_loaders import UnstructuredFileLoader
 from langchain.text_splitter import CharacterTextSplitter
-embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                         device=torch.device("cpu"))
+import string
+import random
+
+def get_code():
+    return ''.join(random.sample(string.ascii_letters + string.digits + string.punctuation, 8))
 
 
 def get_content_between_a_b(start_tag, end_tag, text):
@@ -201,8 +204,6 @@ def get_gpt_response_rule_stream(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
-    
-    print(messages)
     response = openai.ChatCompletion.create(model=model,
                                             messages=messages,
                                             temperature=temperature,
@@ -243,7 +244,7 @@ def cut_sent(para):
     return chucks
 
 
-def process_document(file_path, save_path):
+def process_document(file_path):
     """
     Save QA_csv to json.
     Args:
@@ -255,12 +256,14 @@ def process_document(file_path, save_path):
     """
     final_dict = {}
     count = 0
+    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+                         device=torch.device("cpu"))
     if file_path.endswith(".csv"):
         dataset = pandas.read_csv(file_path)
         questions = dataset["question"]
         answers = dataset["answer"]
         os.makedirs("temp_database", exist_ok=True)
-        save_path = os.path.join("temp_database/file",
+        save_path = os.path.join("temp_database/",
                                  file_path.replace(".csv", ".json"))
         # embedding q+chunk
         for q, a in tqdm(zip(questions, answers)):
@@ -319,8 +322,9 @@ def process_document(file_path, save_path):
         text_spiltter = CharacterTextSplitter(chunk_size=200,
                                               chunk_overlap=100)
         docs = text_spiltter.split_text(docs[0].page_content)
+        os.makedirs("temp_database", exist_ok=True)
         save_path = os.path.join(
-            "logs/file",
+            "temp_database/",
             file_path.replace("." + file_path.split(".")[1], ".json"))
         final_dict = {}
         count = 0
@@ -401,6 +405,8 @@ def matching_a_b(a, b, requirements=None):
     Return：
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
+    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+                         device=torch.device("cpu"))
     a_embedder = embedder.encode(a, convert_to_tensor=True)
     #获取embedder
     b_embeder = embedder.encode(b, convert_to_tensor=True)
@@ -422,6 +428,8 @@ def matching_category(inputtext,
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
     #获取embedder
+    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+                         device=torch.device("cpu"))
     sim_scores = torch.zeros([100])
     if inputtext:
         input_embeder = embedder.encode(inputtext, convert_to_tensor=True)

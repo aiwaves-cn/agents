@@ -43,13 +43,13 @@ if __name__ == '__main__':
     docPath=$7
     """
     parser = argparse.ArgumentParser(description='A demo of chatbot')
-    parser.add_argument('--customize',type=int)
+    parser.add_argument('--customize',type=int,default=1)
     # customize
     parser.add_argument('--ansDiversity',type=int)
     parser.add_argument('--ansSimplify',type=int)
     parser.add_argument('--activeMode',type=int)
-    parser.add_argument('--agent_setting',type=int)
-    parser.add_argument('--agent_style',type=int)
+    parser.add_argument('--agent_setting',type=str)
+    parser.add_argument('--agent_style',type=str)
     parser.add_argument('--docPath',type=str)
     # general
     parser.add_argument('--botCode',type=str)
