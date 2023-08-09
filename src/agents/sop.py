@@ -25,144 +25,82 @@ class SOP:
     input:the json of the sop
     output: a sop graph
     """
-
     def __init__(self, json_path):
         with open(json_path) as f:
             sop = json.load(f)
+        self.sop = sop
         self.root = None
-        self.nodes = {}
-
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
-        self.answer_simplify = sop["answer_simplify"] if "answer_simplify" in sop else False
+        
+        self.shared_memory = {}
+        self.nodes = self.init_nodes(sop)
+        self.init_relation(sop)
 
-        if "gpt_nodes" in sop:
-            gpt_nodes = self.init_gpt_nodes(sop)
-            self.nodes.update(gpt_nodes)
-        if "tool_nodes" in sop:
-            tool_nodes = self.init_tool_nodes(sop)
-            self.nodes.update(tool_nodes)
-        if "relation" in sop:
-            self.init_relation(sop)
-
-    def init_gpt_nodes(self, sop):
+    def init_nodes(self, sop):
         # node_sop: a list of the node
-        node_sop = sop["gpt_nodes"]
+        node_sop = sop["nodes"]
         nodes_dict = {}
-        for node in node_sop:
-            node = node_sop[node]
+        for node in node_sop.values():
             name = node["name"]
             node_type = node["node_type"]
-            extract_word = node["extract_word"]
-            done = node["done"]
-            components_dict = self.init_components(node["components"])
-
-            now_node = GPTNode(name=name,
-                               node_type=node_type,
-                               extract_words=extract_word,
-                               done=done,
-                               components=components_dict)
+            is_interactive = node["is_interactive"]
+            transition_rule = node["transition_rule"]
+            agent_states = self.init_states(node["agent_states"])
+            config = node["config"]
+            now_node = Node(name=name,
+                            node_type=node_type,
+                            is_interactive= is_interactive,
+                            config = config,
+                            transition_rule = transition_rule,
+                            agent_states = agent_states)
             nodes_dict[name] = now_node
             if "root" in node.keys() and node["root"]:
                 self.root = now_node
         return nodes_dict
 
-    def init_tool_nodes(self, sop):
-        # node_sop:a list of the node
-        node_sop = sop["tool_nodes"]
-        nodes_dict = {}
-        for node in node_sop:
-            node = node_sop[node]
-            name = node["name"]
-            done = node["done"]
-            tool_name = node["tool_name"]
-
-            if tool_name == "MatchNode":
-                now_node = MatchNode(name=name, done=done)
-            elif tool_name == "SearchNode":
-                now_node = SearchNode(name=name, done=done)
-            elif tool_name == "SearchRecomNode":
-                now_node = SearchRecomNode(name=name, done=done)
-            elif tool_name == "RecomTopNode":
-                now_node = RecomTopNode(name=name, done=done)
-            elif tool_name == "StaticNode":
-                now_node = StaticNode(name=name,
-                                      done=done,
-                                      output=node["output"])
-            elif tool_name == "KnowledgeResponseNode":
-                last_prompt = node[
-                    "last_prompt"] if "last_prompt" in node else None
-                system_prompt = node[
-                    "system_prompt"] if "system_prompt" in node else None
-
-                active_prompt = (
-                    node["active_prompt"] if "active_prompt" in node else
-                    """如果你需要用户提供更多信息才能完整回答问题，你需要先输出能回答的内容，然后根据已知的内容和用户的问题进行追问。例如：用户的问题是：“度数500度能做手术吗？”提供的内容为："问题：我度数500度，散光200度可以做全飞秒手术吗？，答案：全飞秒手术可以做1000度以内的近视和散光500度内的"。所以你应该结合这个内容做出回复。但是你不知道用户的散光度数，也不知道用户要做什么手术，所以你应该追问“请问您散光多少度呀？”或者“你要做全飞秒手术还是半飞秒手术呢？”这样的问题来补充用户的相关信息。请你把可以追问的问题输出在回复的最后。"""
-                ) if self.active_mode else None
-
-                knowledge_base = node[
-                    "knowledge_base"] if "knowledge_base" in node else None
-                type = node["type"] if "type" in node else None
-                now_node = KnowledgeResponseNode(knowledge_base=knowledge_base,
-                                                 system_prompt=system_prompt,
-                                                 last_prompt=last_prompt,
-                                                 active_prompt = active_prompt,
-                                                 name=name,
-                                                 type=type,
-                                                 done=done)
-            else:
-                assert 1 == False, "wrong tool node name"
-            nodes_dict[name] = now_node
-
-            if "root" in node.keys() and node["root"]:
-                self.root = now_node
-            if "judge_idle_node" in node.keys() and node["judge_idle_node"]:
-                self.judge_idle_node = now_node
-            if "idle_response_node" in node.keys(
-            ) and node["idle_response_node"]:
-                self.idle_response_node = now_node
-
-        return nodes_dict
-
-    def init_components(self, components_dict: dict):
-        args_dict = {}
-        for key, value in components_dict.items():
-            value = components_dict[key]
-            if value:
-                if key == "style":
-                    args_dict["style"] = StyleComponent(
-                        value["agent"], value["style"])
-                elif key == "task":
-                    args_dict["task"] = TaskComponent(value["task"])
-                elif key == "rule":
-                    args_dict["rule"] = RuleComponent(value["rule"])
-                elif key == "demonstration":
-                    args_dict["demonstration"] = DemonstrationComponent(
-                        value["demonstration"])
-                elif key == "tool":
-                    args_dict["tool"] = KnowledgeBaseComponent(
-                        value["knowledge_base"])
-                elif key == "output":
-                    args_dict["output"] = OutputComponent(value["output"])
-                elif key == "knowledge":
-                    if value == "Information_KnowledgeComponent":
-                        args_dict[
+    def init_states(self, agent_states_dict: dict):
+        agent_states = {}
+        for key, value in agent_states_dict.items():
+            component_dict = {}
+            for component , component_args in value.items():
+                if component:
+                    if component == "style":
+                        component_dict["style"] = StyleComponent(
+                            component_args["agent"], component_args["style"])
+                    elif component == "task":
+                        component_dict["task"] = TaskComponent(component_args["task"])
+                    elif component == "rule":
+                        component_dict["rule"] = RuleComponent(component_args["rule"])
+                    elif component == "demonstration":
+                        component_dict["demonstration"] = DemonstrationComponent(
+                            component_args["demonstration"])
+                    elif component == "output":
+                        component_dict["output"] = OutputComponent(component_args["output"])
+                    elif component == "cot":
+                        component_dict["cot"] = CoTComponent(component_args["demonstration"])                    
+                    elif component == "Information_KnowledgeComponent":
+                        component_dict[
                             "knowledge"] = Information_KnowledgeComponent()
-        return args_dict
+                    elif component == "kb":
+                        component_dict["tool"] = KnowledgeBaseComponent(
+                            component_args["knowledge_base"])
+            agent_states[key] = component_dict
+        return agent_states
 
     def init_relation(self, sop):
         relation = sop["relation"]
-
         for key, value in relation.items():
             for keyword, next_node in value.items():
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
 
 
-class GPTNode():
+class Node():
 
     def __init__(self,
                  name: str = None,
+<<<<<<< HEAD
                  node_type: str = None,
                  extract_words=None,
                  done=False,
@@ -235,3 +173,42 @@ class GPTNode():
                 prompt = prompt + "\n" + value.get_prompt()
 
         return prompt, last_prompt
+=======
+                 agent_states:dict = None,
+                 is_interactive=False,
+                 config:list = None,
+                 transition_rule:str = None):
+        
+        self.next_nodes = {}
+        self.agent_states = agent_states
+        self.is_interactive = is_interactive
+        self.name = name
+        self.config = config
+        self.transition_rule = transition_rule
+    
+    def get_state(self,role,args_dict):
+        system_prompt,last_prompt = self.compile(role,args_dict)
+        current_role_state = f"目前的角色为：{role}，它的system_prompt为{system_prompt},last_prompt为{last_prompt}"
+        return current_role_state
+    
+    
+    def compile(self,role,args_dict:dict):
+        components = self.agent_states[role]
+        system_prompt = ""
+        last_prompt = ""
+        res_dict = {}
+        for component_name in self.config:
+            component = components[component_name]
+            if isinstance(component,OutputComponent):
+                last_prompt = last_prompt + "\n" +  component.get_prompt(args_dict)
+            elif isinstance(component,PromptComponent):
+                system_prompt = system_prompt + "\n" + component.get_prompt(args_dict)
+            elif isinstance(component,ToolComponent):
+                response = component.func(args_dict)
+                args_dict.update(response)
+                res_dict.update(response)
+        return system_prompt,last_prompt,res_dict
+
+
+
+>>>>>>> refs/remotes/origin/master
