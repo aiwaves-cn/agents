@@ -27,16 +27,6 @@ class Component():
     def __init__(self):
         pass
 
-
-class PromptComponent(Component):
-
-    def __init__(self):
-        self.prompt = ""
-
-    @abstractmethod
-    def get_prompt(self):
-        pass
-
 class PromptComponent():
 
     def __init__(self):
@@ -54,8 +44,9 @@ class ToolComponent():
     @abstractmethod
     def func(self):
         pass
-
-class TaskComponent(Component):
+    
+    
+class TaskComponent(PromptComponent):
 
     def __init__(self, args_dict):
         super().__init__()
@@ -65,7 +56,7 @@ class TaskComponent(Component):
         return f"""你需要执行的任务是:{self.task}。"""
 
 
-class OutputComponent(Component):
+class OutputComponent(PromptComponent):
 
     def __init__(self, args_dict):
         super().__init__()
@@ -75,7 +66,7 @@ class OutputComponent(Component):
         return f"""请联系上文，进行<{self.output}>和</{self.output}>的提取，不要进行额外的输出，请严格按照上述格式输出！"""
 
 
-class StyleComponent(Component):
+class StyleComponent(PromptComponent):
     """
     角色、风格组件
     """
@@ -89,7 +80,7 @@ class StyleComponent(Component):
         return f"""现在你来模拟一个{self.role}。你需要遵循以下的输出风格：{self.style}。"""
 
 
-class RuleComponent(Component):
+class RuleComponent(PromptComponent):
 
     def __init__(self, args_adic):
         super().__init__()
@@ -99,7 +90,7 @@ class RuleComponent(Component):
         return f"""你需要遵循的规则是:{self.rule}。"""
 
 
-class DemonstrationComponent(Component):
+class DemonstrationComponent(PromptComponent):
     """
     input a list,the example of answer.
     """
@@ -118,7 +109,7 @@ class DemonstrationComponent(Component):
         return prompt
 
 
-class CoTComponent(Component):
+class CoTComponent(PromptComponent):
     """
     input a list,the example of answer.
     """
@@ -137,41 +128,42 @@ class CoTComponent(Component):
         return prompt
 
 
-class Top_Category_ShoppingComponent(Component):
 
+class Top_Category_ShoppingComponent(PromptComponent):
     def __init__(self):
         super().__init__()
 
-    def get_prompt(self, long_memory, temp_memory):
+    def get_prompt(self, args_dict):
         memory = {"extract_category": "", "top_category": ""}
-        memory.update(long_memory)
-        memory.update(temp_memory)
-
+        memory.update(args_dict["long_memory"])
+        memory.update(args_dict["short_memory"])
         return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["possible_category"],memory["top_category"]}"""
 
 
-class User_Intent_ShoppingComponent(Component):
+class User_Intent_ShoppingComponent(PromptComponent):
 
     def __init__(self) -> None:
         super().__init__()
 
-    def get_prompt(self, long_memory, temp_memory):
+    def get_prompt(self, args_dict):
         memory = {"information": "", "category": ""}
-        memory.update(long_memory)
-        memory.update(temp_memory)
-
+        memory.update(args_dict["long_memory"])
+        memory.update(args_dict["short_memory"])
         return f"""你需要知道的是：用户目前选择的商品是{memory["category"]}，该商品信息为{memory["information"]}。"""
 
 
-class KnowledgeBaseComponent(Component):
-
-    def __init__(self,args_adic):
+class KnowledgeBaseComponent(ToolComponent):
+    def __init__(self,args_dict):
         super().__init__()
-        self.top_k = args_adic["top_k"]
+        self.top_k = args_dict["top_k"]
+        self.type = args_dict["type"]
+        self.knowledge_base = args_dict["knowledge_base"]
+        self.system_prompt = args_dict["system_prompt"]
+        self.last_prompt = args_dict["last_prompt"]
+        
+        
         self.embedding_model = SentenceModel(
             'shibing624/text2vec-base-chinese', device="cpu")
-        self.type = args_adic["type"]
-        self.knowledge_base = args_adic["knowledge_base"]
         if self.type == "QA":
             self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base_qa(
                 self.knowledge_base)
@@ -221,22 +213,17 @@ class KnowledgeBaseComponent(Component):
                 return "相关的内容是： “" + knowledge + "”"
 
     def func(self, args_dict):
-        long_memory = args_dict["long_memory"] if args_dict[
-            "long_memory"] else {}
-        temp_memory = args_dict["temp_memory"] if args_dict[
-            "temp_memory"] else {}
+        memory = {}
+        memory.update(args_dict["long_memory"])
+        memory.update(args_dict["short_memory"])
+        chat_history = memory["chat_history"]
 
-        chat_history = get_keyword_in_long_temp("chat_history", long_memory,
-                                                temp_memory).copy()
-        outputdict = {"response": "", "next_node_id": "0"}
-        yield outputdict
-
-        function_response = self.get_knowledge(query=chat_history[-1]["content"])
         
+        function_response = self.get_knowledge(query=chat_history[-1]["content"])
         chat_history.append({
             "role": "assistant",
             "content": function_response,
-        })
+        }) 
 
         response = get_gpt_response_rule_stream(
             chat_history,
@@ -244,38 +231,27 @@ class KnowledgeBaseComponent(Component):
             last_prompt=self.last_prompt,
             args_dict=args_dict,
             temperature=args_dict["temperature"])
-        all = ""
-        for res in response:
-            all += res
-            yield res
-        long_memory["chat_history"].append({
-            "role": "assistant",
-            "content": all
-        })
+        
+        return {"response":response}
 
 
 
+class StaticComponent(ToolComponent):
 
-class StaticComponent(Component):
-
-    def __init__(self,args_adic):
+    def __init__(self,args_dict):
         super().__init__()
-        self.output = args_adic["output"]
+        self.output = args_dict["output"]
 
     def func(self, args_dict):
-        long_memory = args_dict["long_memory"] if args_dict[
-            "long_memory"] else {}
-        temp_memory = args_dict["temp_memory"] if args_dict[
-            "temp_memory"] else {}
+        memory = {}
+        memory.update(args_dict["long_memory"])
+        memory.update(args_dict["short_memory"])
 
-        outputdict = {"response": self.output, "next_node_id": "0"}
-        long_memory["chat_history"].append({
-            "role": "assistant",
-            "content": self.output
-        })
-        yield outputdict
+        outputdict = {"response": self.output}
+        return outputdict
         
-class RecomComponent(Component):
+        
+class RecomComponent(ToolComponent):
 
     def __init__(self):
         super().__init__()
@@ -284,21 +260,16 @@ class RecomComponent(Component):
         """
         return the recommend of the search shop
         """
-        long_memory = args_dict["long_memory"] if args_dict[
-            "long_memory"] else {}
-        temp_memory = args_dict["temp_memory"] if args_dict[
-            "temp_memory"] else {}
+        memory = {}
+        memory.update(args_dict["long_memory"])
+        memory.update(args_dict["short_memory"])
 
-        outputdict = {"response": "", "next_node_id": "0"}
-        top_category = get_keyword_in_long_temp("top_category", long_memory,
-                                                temp_memory)
-        request_items = get_keyword_in_long_temp("request_items", long_memory,
-                                                 temp_memory)
-        chat_history = get_keyword_in_long_temp("chat_history", long_memory,
-                                                temp_memory)
+        outputdict = {"response": ""}
+        top_category = memory["category"]
+        request_items = memory["request_items"]
+        chat_history = memory["chat_history"]
 
         if top_category:
-            yield outputdict
             import sys
             import os
             current_path = os.path.abspath(__file__)
@@ -314,26 +285,16 @@ class RecomComponent(Component):
                 None,
                 args_dict=args_dict,
                 temperature=args_dict["temperature"])
-            all = ""
-            for chat_answer in chat_answer_generator:
-                all += chat_answer
-                yield chat_answer
-            long_memory["chat_history"].append({
-                "role": "assistant",
-                "content": all
-            })
+            
+            outputdict["response"] = chat_answer_generator
 
         elif not request_items:
             chat_answer = "\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
-            long_memory["chat_history"].append({
-                "role": "assistant",
-                "content": chat_answer
-            })
             outputdict["response"] = chat_answer
-            yield outputdict
+        return outputdict
 
 
-class MatchComponent(Component):
+class MatchComponent(ToolComponent):
 
     def __init__(self):
         super().__init__()
@@ -387,15 +348,13 @@ class MatchComponent(Component):
         """
         return the memory of information and determine the next node
         """
-        long_memory = args_dict["long_memory"] if args_dict[
-            "long_memory"] else {}
-        temp_memory = args_dict["temp_memory"] if args_dict[
-            "temp_memory"] else {}
+        memory = {}
+        memory.update(args_dict["long_memory"])
+        memory.update(args_dict["short_memory"])
 
-        extract_category = get_keyword_in_long_temp("extract_category",
-                                                    long_memory, temp_memory)
+        extract_category = memory["extract_category"]
 
-        outputdict = {"response": "", "next_node_id": "0"}
+        outputdict = {"response": "", "next_node": "0"}
 
         topk_result = matching_category(extract_category,
                                         self.leaf_name,
@@ -404,20 +363,21 @@ class MatchComponent(Component):
                                         top_k=3)
         top1_score = topk_result[1][0]
         if top1_score > MIN_CATEGORY_SIM:
-            long_memory['category'] = topk_result[0][0]
+            memory['category'] = topk_result[0][0]
             information = self.search_information(topk_result[0][0],
                                                   self.information_dataset)
             information = limit_keys(information, 3)
             information = limit_values(information, 2)
-            outputdict["next_node_id"] = "1"
-            temp_memory["information"] = information
+            outputdict["next_node"] = "1"
+            
+            args_dict["short_memory"]["information"] = information
         else:
-            temp_memory["possible_category"] = topk_result[0][0]
+            args_dict["short_memory"]["possible_category"] = topk_result[0][0]
 
-        yield outputdict
+        return outputdict
 
 
-class SearchComponent(Component):
+class SearchComponent(ToolComponent):
 
     def __init__(self):
         super().__init__()
@@ -426,24 +386,43 @@ class SearchComponent(Component):
         """
         return the recommend of the search shop
         """
-        long_memory = args_dict["long_memory"] if args_dict[
-            "long_memory"] else {}
-        temp_memory = args_dict["temp_memory"] if args_dict[
-            "temp_memory"] else {}
+        memory = {}
+        memory.update(args_dict["long_memory"])
+        memory.update(args_dict["short_memory"])
 
         outputdict = {"response": "", "next_node_id": "0"}
-        requirements = get_keyword_in_long_temp("requirements", long_memory,
-                                                temp_memory)
-        category = get_keyword_in_long_temp("category", long_memory,
-                                            temp_memory)
+        requirements = memory["requirements"]
+        category = memory["category"]
         if category == "":
-            category = get_keyword_in_long_temp("extract_category",
-                                                long_memory, temp_memory)
+            category = memory["extract_category"]
 
         request_items, top_category = search_with_api(requirements, category)
         if category in top_category:
             top_category.remove(category)
 
-        temp_memory["top_category"] = top_category
-        long_memory["request_items"] = request_items
-        yield outputdict
+        args_dict["short_memory"]["top_category"] = top_category
+        args_dict["long_memory"]["request_items"] = request_items
+        return outputdict
+
+
+class ExtractComponent(ToolComponent):
+    def __init__(self,args_dict):
+        super().__init__()
+        self.long_memory_extract_words = args_dict["long_memory_extract_words"]
+        self.short_memory_extract_words = args_dict["short_memory_extract_words"]
+        self.system_prompt = args_dict["system_prompt"]
+        self.last_prompt = args_dict["last_prompt"] if args_dict["last_prompt"] else None
+        
+    def func(self,args_dict):
+        response = get_gpt_response_rule(args_dict["long_memory"]["chat_history"],self.system_prompt,self.last_prompt,args_dict=args_dict)
+        for extract_word in self.long_memory_extract_words:
+            key = extract(response,extract_word)
+            args_dict["long_memory"][extract_word] = key
+        for extract_word in self.short_memory_extract_words:
+            key = extract(response,extract_word)
+            args_dict["short_memory"][extract_word] = key
+        return {}
+    
+        
+        
+        
