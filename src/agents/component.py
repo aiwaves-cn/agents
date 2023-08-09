@@ -230,6 +230,9 @@ class KnowledgeBaseComponent(Component):
             "content": all
         })
 
+
+
+
 class StaticComponent(Component):
 
     def __init__(self,args_adic):

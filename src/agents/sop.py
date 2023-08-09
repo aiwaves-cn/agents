@@ -100,80 +100,6 @@ class Node():
 
     def __init__(self,
                  name: str = None,
-<<<<<<< HEAD
-                 node_type: str = None,
-                 extract_words=None,
-                 done=False,
-                 user_input: str = "",
-                 components: dict = {}):
-        """the simplist node mainly based on gpt:
-            input the prompt,output the response.Afterwards, use response for different operations
-
-        Args:
-            tool (Tool, optional): _description_. Defaults to None.
-            node_type (str, optional): three type (response, extract,judge)  
-                                        ---response:return a response
-                                        ---extract:return a keyword for memory
-                                        ---judge:return the keyword to determine which node for next
-            extract_words (str, optional): _description_. Defaults to "".
-            next_nodes (dict, optional): _description_. Defaults to {}.
-            done (bool, optional):   True:When the program runs to this node, it will be interrupted, allowing the user to input.
-            user_input (str, optional): The content you want to agent know. Defaults to "".
-            
-            components(dict) : Contains the definition of various components
-           { 
-           "style":{"agent":"" , "style": "" } ,
-            *"task"*:{"task":""} , 
-            "rule":{"rule":""}, 
-            "knowledge" (str): ""
-            "demonstration":{"demonstration":[]} , 
-            "input":true or false,
-            "tool":{tool_name:"",**args} ,
-            *"output"*:{"output":""} 
-            }
-           --style(agent,style) : agent(str):the role of the agent.   style(str):the style of the agent
-           --task(task) : task(str):the task of the agent
-           --rule(rule) : rule(str):the rule of the agent
-           --knowledge(str) : the name of knowledge component
-           --demonstration: demenstration(list):the example of answer
-           --input : yet have external inputs , always be last input
-           --tool(tool_name,**args) : tool_name(str):the name of tool,**args(Dict):the parameters of tool
-           --output(output) : output(str):the html wrap of response
-        """
-        self.prompt = ""
-        self.node_type = node_type
-
-        self.next_nodes = {}
-
-        self.components = components
-        self.extract_words = extract_words
-        self.done = done
-        self.name = name
-
-    # get complete prompt
-    def get_prompt(self, args_dict):
-        prompt = ""
-        last_prompt = ""
-        query = args_dict["query"] if args_dict["query"] else ""
-        long_memory = args_dict["long_memory"] if args_dict[
-            "long_memory"] else {}
-        temp_memory = args_dict["temp_memory"] if args_dict[
-            "temp_memory"] else {}
-
-        for value in self.components.values():
-            if isinstance(value, KnowledgeBaseComponent):
-                value.user_input = query
-                prompt = prompt + "\n" + value.get_prompt()
-            elif isinstance(value, OutputComponent):
-                last_prompt += value.get_prompt()
-            elif isinstance(value, Information_KnowledgeComponent):
-                prompt = prompt + "\n" + value.get_prompt(
-                    long_memory, temp_memory)
-            else:
-                prompt = prompt + "\n" + value.get_prompt()
-
-        return prompt, last_prompt
-=======
                  agent_states:dict = None,
                  is_interactive=False,
                  config:list = None,
@@ -211,4 +137,3 @@ class Node():
 
 
 
->>>>>>> refs/remotes/origin/master
