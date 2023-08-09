@@ -33,166 +33,115 @@ class Agent():
     """
     Auto agent, input the JSON of SOP.
     """
-
-    def __init__(self, sop) -> None:
+    def __init__(self, role,name) -> None:
         self.content = {"messages": []}
-        self.SOP = SOP(sop)  
-        self.temperature = self.SOP.temperature if hasattr(self.SOP,"temperature") else 0.3
-
-        self.root = self.SOP.root
-        self.now_node = self.root
-
-        self.temp_memory = {}
-        self.long_memory = {"chat_history": []}
-        
+        self.role = role
+        self.name = name  
+        self.current_node_name = None
+          
         self.args_dict = {
-            "temp_memory": self.temp_memory,
-            "long_memory": self.long_memory,
-            "log_path": self.SOP.log_path,
-            "temperature": self.temperature,
-            "answer_simplify":self.SOP.answer_simplify
+            "short_memory": {},
+            "long_memory": {},
         }
 
-    def reply(self, userName, query):
+    def step(self, user_query,user_role,user_name, sop:SOP):
         """
         reply api ,The interface set for backend calls 
         """
-        print(query)
-        if type(userName) != int:
-            userName = 0
-        assert type(userName) == int, "username type is not int!"
-        self.load_date(userName)
-
-        if self.judge_sensitive(query):
+        if self.judge_sensitive(user_query):
             response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
             for res in response:
                 time.sleep(0.02)
                 yield res
             return
 
-        now_memory = {"role": "user", "content": query}
-        self.update_memory(now_memory)
-        self.args_dict["query"] = query
+        current_memory = {"role": "user", "content": f"{user_name}({user_role}):{user_query}"}
+        self.update_memory(current_memory)
+        self.args_dict["query"] = user_query
+        self.args_dict["temperature"] = sop.temperature
 
-        chat_history = self.long_memory["chat_history"]
+        chat_history = self.args_dict["long_memory"]["chat_history"]
         # print(f"chat_history:{chat_history}")
         flag = 0
-        now_node = self.now_node
-        
-        print(self.long_memory)
+        current_node = sop.nodes[self.current_node_name]
+
         "Continuous recursion"
         while True:
-            if now_node.done:
-                flag = 1
+            flag = current_node.is_interactive
+            print(current_node.name)
+            response,res_dict = self.get_action(current_node)
+            
+            if len(current_node.next_nodes) == 1:
+                current_node = current_node.next_nodes["0"]
             else:
-                flag = 0
-            print(now_node.name)
-            if isinstance(now_node, GPTNode):
-                # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
+                current_node = current_node.next_nodes[res_dict["next_node"]]
+                
+            all = ""
+            for res in response:
+                all += res if res else ''
+                yield res
+            current_memory = {"role": self.role, "content": f"{self.name}({self.role}):{all}"}
+            self.update_memory(current_memory)
 
-                # Extract key information to determine which node branch to enter
-                if now_node.node_type == "judge":
-                    system_prompt, last_prompt = now_node.get_prompt(
-                        self.args_dict)
-                    response = get_gpt_response_rule(chat_history,
-                                                     system_prompt,
-                                                     last_prompt,
-                                                     args_dict=self.args_dict)
-                    keywords = extract(response, now_node.extract_words)
-                    next_nodes_nums = len(now_node.next_nodes.keys())
-
-                    for i, key in enumerate(now_node.next_nodes):
-                        if i == next_nodes_nums - 1:
-                            now_node = now_node.next_nodes[key]
-                        elif key == keywords:
-                            now_node = now_node.next_nodes[key]
-                            break
-
-                # Extract keywords to proceed to the next node
-                elif now_node.node_type == "extract":
-
-                    system_prompt, last_prompt = now_node.get_prompt(
-                        self.args_dict)
-                    response = get_gpt_response_rule(chat_history,
-                                                     system_prompt,
-                                                     last_prompt,
-                                                     args_dict=self.args_dict)
-                    if type(now_node.extract_words) == list:
-                        for extract_word in now_node.extract_words:
-                            keywords = extract(response, extract_word)
-                            self.long_memory[extract_word] = keywords
-                    else:
-                        keywords = extract(response, now_node.extract_words)
-                        self.long_memory[now_node.extract_words] = keywords
-                    now_node = now_node.next_nodes["0"]
-
-                elif now_node.node_type == "response":
-
-                    system_prompt, last_prompt = now_node.get_prompt(
-                        self.args_dict)
-
-                    response = get_gpt_response_rule_stream(
-                        chat_history,
-                        system_prompt,
-                        None,
-                        temperature=self.temperature,
-                        args_dict=self.args_dict)
-                    now_node = now_node.next_nodes["0"]
-                    self.now_node = now_node
-                    all = ""
-                    for res in response:
-                        all += res if res else ''
-                        yield res
-                    now_memory = {"role": "assistant", "content": all}
-                    self.update_memory(now_memory)
-
-                elif now_node.node_type == "response_and_extract":
-                    now_node.set_user_input(chat_history[-1]["content"])
-                    system_prompt, last_prompt = now_node.get_prompt(
-                        self.args_dict)
-                    response = get_gpt_response_rule_stream(
-                        chat_history,
-                        system_prompt,
-                        last_prompt,
-                        temperature=self.temperature,
-                        args_dict=self.args_dict)
-                    all = ""
-                    for res in response:
-                        all += res if res else ''
-                        yield res
-
-                    if type(now_node.extract_words) == list:
-                        for extract_word in now_node.extract_words:
-                            keywords = extract(all, extract_word)
-                            self.long_memory[extract_word] = keywords
-                    else:
-                        keywords = extract(all, now_node.extract_words)
-                        self.long_memory[now_node.extract_words] = keywords
-
-            elif isinstance(now_node, ToolNode):
-                now_output = now_node.func(self.args_dict)
-                next_node_id = "0"
-                for output in now_output:
-                    if isinstance(output, dict):
-                        response = output["response"]
-                        next_node_id = output["next_node_id"]
-                        for res in response:
-                            time.sleep(0.02)
-                            yield res
-                    else:
-                        yield output
-                now_node = now_node.next_nodes[next_node_id]
-                self.now_node = now_node
-
-            if flag or now_node == self.root:
-                self.temp_memory = {}
-                task = find_data(userName)
-                task.memory = self.long_memory
-                task.now_node_name = self.now_node.name
-                task.save()
+            if flag or current_node == sop.root:
+                self.args_dict["temp_memory"] = {}
+                yield {"memory":self.args_dict,"current_node_name":current_node.name}
                 break
 
-    def step(self):
+    def load_date(self, task):
+        self.current_node_name = task.current_node_name
+        self.args_dict["long_memory"] = {
+            key: value
+            for key, value in task.memory.items()
+        }
+            
+
+    def get_action(self,node:Node):
+        system_prompt,last_prompt,res_dict = node.compile(self.role,self.args_dict)
+        chat_history = self.args_dict["long_history"]["chat_history"]
+        temperature = self.args_dict["temperature"]
+        response = get_gpt_response_rule_stream(chat_history,system_prompt,last_prompt,temperature=temperature,args_dict=self.args_dict)
+        return response,res_dict
+        
+    
+    def judge_sensitive(self, query):
+        current_path = os.path.abspath(__file__)
+        current_path = os.path.dirname(current_path)
+        with open(os.path.join(current_path, 'sensitive.txt')) as file_01:
+            lines = file_01.readlines()
+            lines = [i.rstrip() for i in lines]
+            seg_list = jieba.cut(query, cut_all=True)
+            for seg in seg_list:
+                if seg in lines:
+                    return True
+        return False
+
+    def update_memory(self, memory):
+        if "long_memory" in self.args_dict:
+            self.args_dict["long_memory"].append(memory)
+        else:
+            self.args_dict["long_memory"] = memory
+
+    def run(self):
+        while True:
+            self.step()
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    def step2(self):
         """
         run on your terminal
         """
@@ -216,7 +165,7 @@ class Agent():
             # If the current node is a node that requires user feedback or a leaf node, recursion will jump out after the node ends running
             if now_node.done:
                 flag = 1
-            if isinstance(now_node, GPTNode):
+            if isinstance(now_node, Node):
                 # Extract key information to determine which node branch to enter
                 if now_node.node_type == "judge":
                     system_prompt, last_prompt = now_node.get_prompt(
@@ -313,40 +262,3 @@ class Agent():
             if flag or now_node == self.root:
                 self.temp_memory = {}
                 break
-
-    def load_date(self, username):
-        task = find_data(username)
-        if task:
-            now_node_name = task.now_node_name
-            self.now_node = self.SOP.nodes[now_node_name]
-            self.long_memory = {
-                key: value
-                for key, value in task.memory.items()
-            }
-            chat_history = [item for item in task.memory["chat_history"]]
-            self.long_memory["chat_history"] = chat_history
-
-        else:
-            self.now_node = self.root
-            self.long_memory = {"chat_history": []}
-            add_date(username, self.long_memory, self.root.name)
-
-    def judge_sensitive(self, query):
-        current_path = os.path.abspath(__file__)
-        current_path = os.path.dirname(current_path)
-        with open(os.path.join(current_path, 'sensitive.txt')) as file_01:
-            lines = file_01.readlines()
-            lines = [i.rstrip() for i in lines]
-            seg_list = jieba.cut(query, cut_all=True)
-            for seg in seg_list:
-                if seg in lines:
-                    return True
-        return False
-
-    def update_memory(self, memory):
-        self.long_memory["chat_history"].append(memory)
-        self.args_dict["long_memory"] = self.long_memory
-
-    def run(self):
-        while True:
-            self.step()
