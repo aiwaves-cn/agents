@@ -67,19 +67,17 @@ class SOP:
             for component , component_args in value.items():
                 if component:
                     if component == "style":
-                        component_dict["style"] = StyleComponent(
-                            component_args["agent"], component_args["style"])
+                        component_dict["style"] = StyleComponent(component_args)
                     elif component == "task":
-                        component_dict["task"] = TaskComponent(component_args["task"])
+                        component_dict["task"] = TaskComponent(component_args)
                     elif component == "rule":
-                        component_dict["rule"] = RuleComponent(component_args["rule"])
+                        component_dict["rule"] = RuleComponent(component_args)
                     elif component == "demonstration":
-                        component_dict["demonstration"] = DemonstrationComponent(
-                            component_args["demonstration"])
+                        component_dict["demonstration"] = DemonstrationComponent(component_args)
                     elif component == "output":
-                        component_dict["output"] = OutputComponent(component_args["output"])
+                        component_dict["output"] = OutputComponent(component_args)
                     elif component == "cot":
-                        component_dict["cot"] = CoTComponent(component_args["demonstration"])                    
+                        component_dict["cot"] = CoTComponent(component_args)                    
                     elif component == "Information_KnowledgeComponent":
                         component_dict[
                             "knowledge"] = Information_KnowledgeComponent()
