@@ -1,3 +1,11 @@
+'''
+Author: lilong 2504702369@qq.com
+Date: 2023-07-28 10:12:15
+LastEditors: lilong 2504702369@qq.com
+LastEditTime: 2023-08-09 15:27:58
+FilePath: /longli/agents/src/agents/datebase.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 from mongoengine import connect
 import mongoengine
 from pymongo import MongoClient
@@ -14,11 +22,11 @@ connect(
 class TaskConfig(mongoengine.Document):
     user_id = mongoengine.IntField()  # 用户ID
     memory = mongoengine.DictField()  # 长期记忆
-    now_node_name = mongoengine.StringField()  # 当前节点的名字
+    current_node_name = mongoengine.StringField()  # 当前节点的名字
 
 
-def add_date(user_id,memory,now_node_name):
-  new_task = TaskConfig(user_id = user_id,memory = memory,now_node_name = now_node_name)
+def add_date(user_id,memory,current_node_name):
+  new_task = TaskConfig(user_id = user_id,memory = memory,current_node_name = current_node_name)
   new_task.save()
 
 def find_data(user_id):
