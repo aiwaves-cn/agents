@@ -25,12 +25,35 @@ from utils import *
 class Component():
 
     def __init__(self):
+        pass
+
+
+class PromptComponent(Component):
+
+    def __init__(self):
         self.prompt = ""
 
     @abstractmethod
     def get_prompt(self):
         pass
 
+class PromptComponent():
+
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def get_prompt(self):
+        pass
+
+class ToolComponent():
+
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def func(self):
+        pass
 
 class TaskComponent(Component):
 
