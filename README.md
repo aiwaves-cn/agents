@@ -25,20 +25,23 @@
   - 📈 **Scalability**: They easily scale for diverse requirements without extensive hiring or training. Explore our **Agents** toolkit to effortlessly develop your customized autonomous agents!
 
 
-## 📋 Standard Operation Procedure (SOP)
+## 📋 Standard Operation Procedure (SOP) System
 
 
-A **Standard Operating Procedure (SOP)** is a reasoning graph that consists of a set of step-by-step instructions outlining how to execute a specific task or process. SOP serves as the core component within our autonomous agents, playing an essential role in orchestrating the operation of these agent systems.
+A **Standard Operating Procedure (SOP)** is a reasoning graph that consists of a set of step-by-step instructions outlining how to execute a specific task or process. Overall, the SOP System enables users to communicate with different agents simultaneously or create virtual cases, allowing agents to interact with each other.
 
-### Example:
-A typical SOP illustrates the complete operational process of our Agents. Taking the oculist agent as an example, the following SOP (shown below, in Chinese) delineates the entire workflow of the robot's customer service. This includes outlining the stages, steps, and criteria for each phase. By utilizing this SOP, we can comprehensively define the robot's functions and workflow, thereby generating customized agents tailored to specific requirements.
+- ### Function:
+Our SOP System is composed of various SOPs of individual agent. The SOP of an individual agent plays an essential role in orchestrating the operation of these agent systems.  By utilizing this SOP, we can comprehensively define the robot's functions and workflow, thereby generating customized agents tailored to specific requirements.
+
+- ### Example:
+A typical SOP illustrates the complete operational process of our Agents. Taking the oculist agent as an example, the following SOP (shown below, in Chinese) delineates the entire workflow of the robot's customer service. This includes outlining the stages, steps, and criteria for each phase. 
 [SOP of the oculist agent](https://github.com/aiwaves-cn/agents/blob/master/examples/%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)
 
-### Encoding:
+- ### Encoding:
 To standardize SOPs of diverse kinds, we consistently employ **JSON files** for input. A JSON file, short for *JavaScript Object Notation*, is employed to store basic data structures and objects. It facilitates data interchange in web applications.
 Here's an example JSON file: [JSON file of youcai agent](https://github.com/aiwaves-cn/agents/blob/master/examples/youcai_service.json)
 
-### Keyword Extraction:
+- ### Keyword Extraction:
 We've developed several functions to extract specific words from JSON files, facilitating the creation of various types of nodes. In essence, all that's required is meticulous input of your requirements and conversational attributes, and you'll obtain your personalized autonomous agent!
 
 
@@ -46,55 +49,56 @@ We've developed several functions to extract specific words from JSON files, fac
 
 - **Definition**: As previously mentioned, we utilize SOP to operate the autonomous agent. Our SOP reasoning graph is composed of various **Nodes**, each derived from key words provided in the JSON file. These nodes play distinct roles, contributing to the entire system. We've developed a straightforward node, the **SIMPLIST** node, primarily based on GPT. The process is simple: input a prompt, obtain the response as output, and then utilize this response for various operations.
 
-- **Classification**: We've established two parent node classes: "GPT Nodes" and "Tool Nodes". 
-  - **GPT Nodes** consist of three different types: "judge", "response", and "extract", each serving a unique purpose:
-    - 🧠 **Judge Node**: Determines certain sentences and returns a keyword to determine the next node.
-    - 💬 **Response Node**: Responds to user's questions, typically relying on the knowledge base.
-    - 🔍 **Extract Node**: Extracts specific keywords from user input and stores them for memory.
-  - **Tool Nodes** are designed to fulfill specific tasks, such as searching for information in memory or matching keywords.
 
 - **Examples**:
-  - Basic codes for a GPT Node are as follows:
+  - Basic codes for Node are as follows:
     ```python
-    class GPTNode():
-        def __init__(self, name: str = None, node_type: str = None, extract_words=None, done=False, user_input: str = "", components: dict = {}):
-            # ... (attributes)
+	class  Node():
+		def  __init__(self,
+			name: str = None,
+			agent_states: dict = None,
+			is_interactive=False,
+			config: list = None):
+			self.next_nodes = {}
+			self.agent_states = agent_states
+			self.is_interactive = is_interactive
+			self.name = name
+			self.config = config
     ```
-    Each attribute is described below:
-    - `node_type` (str, optional): three types (response, extract, judge)
-      - `response`: return a response
-      - `extract`: return a keyword for memory
-      - `judge`: return the keyword to determine which node is next
-    - ... (other attributes)
-
-  - Basic codes for a Tool Node are as follows:
-    ```python
-    class ToolNode:
-        def __init__(self, name="", done=False):
-            # ... (attributes)
-        @abstractmethod
-        def func(self, long_memory, temp_memory):
-            pass
-    ```
-    The Static Node is a type of Tool Node, with the following code:
-    ```python
-    class StaticNode(ToolNode):
-        def __init__(self, name="", output="", done=False):
-            # ... (attributes)
-        def func(self, long_memory, temp_memory):
-            outputdict = {"response": self.output, "next_node_id": "0"}
-            yield outputdict
-    ```
+    Part of the attributes are shown below:
+	- ``agent_states``: Components of various types of agents. Whenever the node is runned by users, it will at first select the proper Agent to start its Component.
+	- ``next_nodes``:relations between nodes. Extraordinarily useful when the node graph is relatively sophisticated.
 
 
-## 🧩 Components
 
-To facilitate modularized prompts for Nodes in an AI Autonomous Agent, we've introduced the **Components** module.
+## 🌟 Components
 
-- **Classification**: We employ parent classes and subclasses to categorize different types of prompts. Two parent classes are available: "Component" and "KnowledgeComponent". Specific requirements, such as rules, styles, and output formats for autonomous agents, are inherited from these parent classes.
+Embark on a journey of AI advancement as we introduce the revolutionary **Components** module! 🚀
+
+### **Classification** 🧩: A Blueprint for Organization
+
+In our pursuit of refining prompt modularity for Nodes in AI Autonomous Agents, we've implemented a structured classification system using parent and subclass relationships.
+
+#### **PromptComponent** 📜: Versatility Redefined
+
+Under the **PromptComponent** umbrella, we've ingeniously crafted three distinctive types, each playing a pivotal role in shaping interactions:
+
+- **CoT Component**: Encompasses algebraic procedures, tailor-made for mathematical conundrums.
+- **Output Component**: Dictates prompt presentation, ensuring seamless adherence to GPT-generated outputs.
+- **Demonstration Component**: Showcases agent-based examples, empowering GPT to emulate diverse styles seamlessly.
+- **Rule Component**: Hosts a spectrum of node-specific settings, intimately tied to contextual tasks.
+- **Task Component**: Illuminates a node's purpose, defining its role within the agent's architecture.
+- **Style Component**: Outlines precise conversational requirements for individual nodes.
+
+#### **ToolComponent** 🛠️: Empowering Functionality
+
+Beyond prompts, the **ToolComponent** family takes center stage, providing specialized functions crucial for the agent's performance:
+
+- **Extract Component**: Surgically extracts vital keywords from user input, strategically storing them for reference.
+- **KnowledgeBase Component**: Masterfully rephrases user queries, leveraging top answers from the knowledge base using advanced similarity matching, ensuring accurate responses.
 
 - **Examples**:
-  - Codes for the "Component" class are as follows:
+  - Codes for the "PromptComponent" class are as follows:
     ```python
     class Component():
         def __init__(self):
@@ -113,6 +117,8 @@ To facilitate modularized prompts for Nodes in an AI Autonomous Agent, we've int
         def get_prompt(self):
             return f"Imagine you are simulating a {self.agent}. You are expected to adhere to the following output style: {self.style}."
     ```
+ Embrace the future of AI interaction through meticulously designed **Components**, where each piece harmonizes to compose the symphony of AI autonomy. 🎵🤖
+ 
 [^1]: "Component" is the parent class, providing a modularized input form for diverse prompts.
 
 [^2]: "StyleComponent" is a subclass designated to provide various "temperaments" for autonomous agents. These "temperaments" encompass customized chat templates and styles. We've developed numerous styles, including humorous and expert ones.
