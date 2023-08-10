@@ -36,25 +36,46 @@ class SOP:
         self.shared_memory = {}
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
+        
+        self.controller_dict = {}
 
     def init_nodes(self, sop):
         # node_sop: a list of the node
         node_sop = sop["nodes"]
         nodes_dict = {}
         for node in node_sop.values():
+            
+            # str
             name = node["name"]
-            node_type = node["node_type"]
+            
+            # true or false
             is_interactive = node["is_interactive"]
-            transition_rule = node["transition_rule"]
+            
+            """
+            agent_states:
+            {
+                role1:{
+                    component1:{
+                        component_key: component_value
+                        component_key2:componnt_value 
+                    }
+                }
+            }
+            """
             agent_states = self.init_states(node["agent_states"])
+            
+            # config ["style","rule",......]
             config = node["config"]
+            
+            # contrller  {judge_system_prompt:,judge_last_prompt: ,call_system_prompt: , call_last_prompt}
+            self.controller_dict[name] = node["controller"]
+            
             now_node = Node(name=name,
-                            node_type=node_type,
                             is_interactive=is_interactive,
                             config=config,
-                            transition_rule=transition_rule,
                             agent_states=agent_states)
             nodes_dict[name] = now_node
+            
             if "root" in node.keys() and node["root"]:
                 self.root = now_node
         return nodes_dict
@@ -65,20 +86,32 @@ class SOP:
             component_dict = {}
             for component, component_args in value.items():
                 if component:
+                    
+                    # "role" "style"
                     if component == "style":
                         component_dict["style"] = StyleComponent(
                             component_args)
+                        
+                        # "task"
                     elif component == "task":
                         component_dict["task"] = TaskComponent(component_args)
+                        
+                        # "rule"
                     elif component == "rule":
                         component_dict["rule"] = RuleComponent(component_args)
+                        
+                        # "demonstration"
                     elif component == "demonstration":
                         component_dict[
                             "demonstration"] = DemonstrationComponent(
                                 component_args)
+                            
+                    # "output"
                     elif component == "output":
                         component_dict["output"] = OutputComponent(
                             component_args)
+                        
+                     # "demonstrations"   
                     elif component == "cot":
                         component_dict["cot"] = CoTComponent(component_args)
 
@@ -88,28 +121,40 @@ class SOP:
                         component_dict[
                             "Top_Category_Shopping"] = Top_Category_ShoppingComponent(
                             )
+                            
                     elif component == "User_Intent_ShoppingComponent":
                         component_dict[
                             "User_Intent_ShoppingComponent"] = User_Intent_ShoppingComponent(
                             )
+                            
+                            
                     elif component == "RecomComponent":
                         component_dict["RecomComponent"] = RecomComponent()
+                        
+                    # "output"
                     elif component == "StaticComponent":
                         component_dict["StaticComponent"] = StaticComponent(
                             component_dict)
+                        
+                    # "top_k"  "type" "knowledge_base" "system_prompt" "last_prompt"                        
                     elif component == "KnowledgeBaseComponent":
                         component_dict["tool"] = KnowledgeBaseComponent(
                             component_args)
+                        
                     elif component == "MatchComponent":
                         component_dict["MatchComponent"] = MatchComponent()
+                        
                     elif component == "SearchComponent":
                         component_dict["SearchComponent"] = SearchComponent()
+                        
+                    # "short_memory_extract_words"  "long_memory_extract_words" "system_prompt" "last_prompt" 
                     elif component == "ExtractComponent":
                         component_dict["ExtractComponent"] = ExtractComponent(
                             component_args)
 
             agent_states[key] = component_dict
         return agent_states
+    
 
     def init_relation(self, sop):
         relation = sop["relation"]
