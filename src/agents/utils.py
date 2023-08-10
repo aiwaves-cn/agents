@@ -32,6 +32,7 @@ from langchain.text_splitter import CharacterTextSplitter
 import string
 import random
 
+
 def get_code():
     return ''.join(random.sample(string.ascii_letters + string.digits, 8))
 
@@ -117,11 +118,11 @@ def get_gpt_response_function(chat_history,
     log = {}
     log["input"] = messages
     log["output"] = response
-    os.makedirs(log_path,exist_ok = True)
+    os.makedirs(log_path, exist_ok=True)
     log_file = os.path.join(
-            log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-    with open(log_file,"w",encoding="utf-8") as f:
+        log_path,
+        datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+    with open(log_file, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
     return response.choices[0].message
 
@@ -164,11 +165,11 @@ def get_gpt_response_rule(chat_history,
     log = {}
     log["input"] = messages
     log["output"] = response
-    os.makedirs(log_path,exist_ok = True)
+    os.makedirs(log_path, exist_ok=True)
     log_file = os.path.join(
-            log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-    with open(log_file,"w",encoding="utf-8") as f:
+        log_path,
+        datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+    with open(log_file, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
     return response.choices[0].message["content"]
 
@@ -195,9 +196,11 @@ def get_gpt_response_rule_stream(chat_history,
     log_path = "logs"
     if args_dict:
         log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
-        system_prompt = system_prompt + "请你的回复尽量简洁" if args_dict["answer_simplify"] else system_prompt
-        last_prompt = last_prompt + "请你的回复尽量简洁" if args_dict["answer_simplify"] else last_prompt
-        
+        system_prompt = system_prompt + "请你的回复尽量简洁" if args_dict[
+            "answer_simplify"] else system_prompt
+        last_prompt = last_prompt + "请你的回复尽量简洁" if args_dict[
+            "answer_simplify"] else last_prompt
+
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
@@ -219,11 +222,11 @@ def get_gpt_response_rule_stream(chat_history,
     log = {}
     log["input"] = messages
     log["output"] = ans
-    os.makedirs(log_path,exist_ok = True)
+    os.makedirs(log_path, exist_ok=True)
     log_file = os.path.join(
-            log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-    with open(log_file,"w",encoding="utf-8") as f:
+        log_path,
+        datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+    with open(log_file, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
 
 
@@ -259,7 +262,7 @@ def process_document(file_path):
     final_dict = {}
     count = 0
     embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                         device=torch.device("cpu"))
+                             device=torch.device("cpu"))
     if file_path.endswith(".csv"):
         dataset = pandas.read_csv(file_path)
         questions = dataset["question"]
@@ -313,8 +316,10 @@ def process_document(file_path):
             count += 1
         print(f"finish updating {len(final_dict)} data!")
         os.makedirs("temp_database", exist_ok=True)
-        save_path = os.path.join("temp_database/",
-                                 file_path.split("/")[-1].replace("." + file_path.split(".")[1], ".json"))
+        save_path = os.path.join(
+            "temp_database/",
+            file_path.split("/")[-1].replace("." + file_path.split(".")[1],
+                                             ".json"))
         print(save_path)
         with open(save_path, 'w') as f:
             json.dump(final_dict, f, ensure_ascii=False, indent=2)
@@ -347,7 +352,7 @@ def load_knowledge_base_qa(path):
     """
     Load json format knowledge base.
     """
-    print("path",path)
+    print("path", path)
     with open(path, 'r') as f:
         data = json.load(f)
     embeddings = []
@@ -410,7 +415,7 @@ def matching_a_b(a, b, requirements=None):
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
     embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                         device=torch.device("cpu"))
+                             device=torch.device("cpu"))
     a_embedder = embedder.encode(a, convert_to_tensor=True)
     #获取embedder
     b_embeder = embedder.encode(b, convert_to_tensor=True)
@@ -433,7 +438,7 @@ def matching_category(inputtext,
     """
     #获取embedder
     embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                         device=torch.device("cpu"))
+                             device=torch.device("cpu"))
     sim_scores = torch.zeros([100])
     if inputtext:
         input_embeder = embedder.encode(inputtext, convert_to_tensor=True)
@@ -627,15 +632,6 @@ def response_to_string(response):
         all += data.choices[0]['delta'].get(
             'content') if data.choices[0]['delta'].get('content') else ''
     return all
-
-
-def get_keyword_in_long_temp(keyword, long_memory, temp_memory):
-    if keyword in long_memory.keys():
-        return long_memory[keyword]
-    elif keyword in temp_memory.keys():
-        return temp_memory[keyword]
-    else:
-        return ""
 
 
 if __name__ == '__main__':
