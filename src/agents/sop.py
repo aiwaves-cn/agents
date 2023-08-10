@@ -33,11 +33,13 @@ class SOP:
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
 
-        self.shared_memory = {}
+        self.shared_memory = {"chat_history":[]}
+        self.controller_dict = {}
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
+        self.controller = controller(self.controller_dict)
         
-        self.controller_dict = {}
+        self.agents = {}
 
     def init_nodes(self, sop):
         # node_sop: a list of the node
@@ -161,6 +163,37 @@ class SOP:
         for key, value in relation.items():
             for keyword, next_node in value.items():
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
+    
+    
+    def step(self,current_node):
+        next_node = self.controller.judge(current_node,self.shared_memory["chat_history"])
+        next_node = current_node.next_nodes[next_node]
+        next_role = self.controller.allocate_task(next_node,self.shared_memory["chat_history"])
+        
+        return next_node,next_role
+    
+    def run(self,role="user",name="吴嘉隆"):
+        current_node = self.root
+        while True:
+            query = input(f"{name}({role}):")
+            current_memory = {"role":"assistant","content":f"{name}({role}):{query}"}
+            self.shared_memory["chat_history"].append(current_memory)
+            while True:
+                next_node,next_role = self.step(current_node)
+                flag =  next_node.is_interactive
+                
+                current_agent = self.agents[next_role]
+                response = current_agent.step(query,role,name,current_node,self.temperature)
+                print(f"{current_agent.name}({current_agent.role}):",end="")
+                all = f"{current_agent.name}({current_agent.role}):"
+                for res in response:
+                    all+=res
+                    print(res)
+                self.shared_memory["chat_history"].append({"role":"assistant","content":all})
+                
+                if flag:
+                    break
+            
 
 
 class Node():
@@ -169,15 +202,13 @@ class Node():
                  name: str = None,
                  agent_states: dict = None,
                  is_interactive=False,
-                 config: list = None,
-                 transition_rule: str = None):
+                 config: list = None):
 
         self.next_nodes = {}
         self.agent_states = agent_states
         self.is_interactive = is_interactive
         self.name = name
         self.config = config
-        self.transition_rule = transition_rule
 
     def get_state(self, role, args_dict):
         system_prompt, last_prompt = self.compile(role, args_dict)
@@ -202,3 +233,27 @@ class Node():
                 args_dict.update(response)
                 res_dict.update(response)
         return system_prompt, last_prompt, res_dict
+
+
+class controller:
+    def __init__(self,controller_dict) -> None:
+        # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
+        self.controller_dict = controller_dict
+    
+    def judge(self,node:Node,chat_history,args_dict=None):
+        controller_dict = self.controller_dict[node.name]
+        system_prompt = controller_dict["judge_system_prompt"]
+        last_prompt = controller_dict["judge_last_prompt"]
+        extract_words = controller_dict["judge_extract_words"]
+        response = get_gpt_response_rule(chat_history,system_prompt,last_prompt,args_dict=args_dict)
+        next_node = extract(response,extract_words)
+        return next_node
+    
+    def allocate_task(self,node:Node,chat_history,args_dict=None):
+        controller_dict = self.controller_dict[node.name]
+        system_prompt = controller_dict["call_system_prompt"]
+        last_prompt = controller_dict["call_last_prompt"]
+        extract_words = controller_dict["call_extract_words"]
+        response = get_gpt_response_rule(chat_history,system_prompt,last_prompt,args_dict=args_dict)
+        next_role = extract(response,extract_words)
+        return next_role

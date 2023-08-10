@@ -97,9 +97,6 @@ def get_gpt_response_function(chat_history,
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
-    log_path = "logs"
-    if args_dict:
-        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
@@ -115,15 +112,19 @@ def get_gpt_response_function(chat_history,
         function_call=function_call,
         temperature=temperature,
     )
-    log = {}
-    log["input"] = messages
-    log["output"] = response
-    os.makedirs(log_path, exist_ok=True)
-    log_file = os.path.join(
-        log_path,
-        datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-    with open(log_file, "w", encoding="utf-8") as f:
-        json.dump(log, f, ensure_ascii=False, indent=2)
+    
+    if args_dict:
+        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
+        log = {}
+        log["input"] = messages
+        log["output"] = response
+        os.makedirs(log_path, exist_ok=True)
+        log_file = os.path.join(
+            log_path,
+            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+        with open(log_file, "w", encoding="utf-8") as f:
+            json.dump(log, f, ensure_ascii=False, indent=2)
+            
     return response.choices[0].message
 
 
@@ -146,9 +147,6 @@ def get_gpt_response_rule(chat_history,
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
-    log_path = "logs"
-    if args_dict:
-        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
@@ -162,15 +160,17 @@ def get_gpt_response_rule(chat_history,
         messages=messages,
         temperature=temperature,
     )
-    log = {}
-    log["input"] = messages
-    log["output"] = response
-    os.makedirs(log_path, exist_ok=True)
-    log_file = os.path.join(
-        log_path,
-        datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-    with open(log_file, "w", encoding="utf-8") as f:
-        json.dump(log, f, ensure_ascii=False, indent=2)
+    if args_dict:
+        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
+        log = {}
+        log["input"] = messages
+        log["output"] = response
+        os.makedirs(log_path, exist_ok=True)
+        log_file = os.path.join(
+            log_path,
+            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+        with open(log_file, "w", encoding="utf-8") as f:
+            json.dump(log, f, ensure_ascii=False, indent=2)
     return response.choices[0].message["content"]
 
 
@@ -193,9 +193,8 @@ def get_gpt_response_rule_stream(chat_history,
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
-    log_path = "logs"
+    
     if args_dict:
-        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
         system_prompt = system_prompt + "请你的回复尽量简洁" if args_dict[
             "answer_simplify"] else system_prompt
         last_prompt = last_prompt + "请你的回复尽量简洁" if args_dict[
@@ -219,15 +218,18 @@ def get_gpt_response_rule_stream(chat_history,
                 'content') if res.choices[0]['delta'].get('content') else ''
             ans += r
             yield r
-    log = {}
-    log["input"] = messages
-    log["output"] = ans
-    os.makedirs(log_path, exist_ok=True)
-    log_file = os.path.join(
-        log_path,
-        datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-    with open(log_file, "w", encoding="utf-8") as f:
-        json.dump(log, f, ensure_ascii=False, indent=2)
+            
+    if args_dict:
+        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
+        log = {}
+        log["input"] = messages
+        log["output"] = ans
+        os.makedirs(log_path, exist_ok=True)
+        log_file = os.path.join(
+            log_path,
+            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+        with open(log_file, "w", encoding="utf-8") as f:
+            json.dump(log, f, ensure_ascii=False, indent=2)
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):

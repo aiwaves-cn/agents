@@ -44,7 +44,7 @@ class Agent():
             "long_memory": {},
         }
 
-    def step(self, user_query, user_role, user_name, sop: SOP):
+    def step(self, user_query, user_role, user_name, current_node:Node,temperature = 0.3):
         """
         reply api ,The interface set for backend calls 
         """
@@ -60,49 +60,36 @@ class Agent():
             "content": f"{user_name}({user_role}):{user_query}"
         }
         self.update_memory(current_memory)
+        
         self.args_dict["query"] = user_query
-        self.args_dict["temperature"] = sop.temperature
+        self.args_dict["temperature"] = temperature
+        response, res_dict = self.act(current_node)
 
-        # print(f"chat_history:{chat_history}")
-        flag = 0
-        current_node = sop.nodes[self.current_node_name]
-        current_node:Node
-        "Continuous recursion"
-        while True:
-            flag = current_node.is_interactive
-            print(current_node.name)
-            response, res_dict = self.act(current_node)
-            if len(current_node.next_nodes) == 1:
-                current_node = current_node.next_nodes["0"]
-            else:
-                next_node = self.plan(current_node)
-                current_node = current_node.next_nodes[next_node]
+        all = ""
+        for res in response:
+            all += res if res else ''
+            yield res
+        current_memory = {
+            "role": "assistant",
+            "content": f"{self.name}({self.role}):{all}"
+        }
+        self.update_memory(current_memory)
 
+        #====================================================#
+        if "response" in res_dict and res_dict["response"]:
             all = ""
-            for res in response:
-                all += res if res else ''
+            for res in res_dict["response"]:
+                all +=res
                 yield res
             current_memory = {
-                "role": self.role,
-                "content": f"{self.name}({self.role}):{all}"
-            }
+            "role": "assistant",
+            "content": f"{self.name}({self.role}):{all}"
+        }
             self.update_memory(current_memory)
+            del res_dict["response"]
 
-            #====================================================#
-            if "response" in res_dict and res_dict["response"]:
-                for res in res_dict["response"]:
-                    yield res
-                del res_dict["response"]
+        #====================================================#
 
-            #====================================================#
-
-            if flag or current_node == sop.root:
-                self.args_dict["temp_memory"] = {}
-                yield {
-                    "memory": self.args_dict,
-                    "current_node_name": current_node.name
-                }
-                break
 
     def load_date(self, task:TaskConfig):
         self.current_node_name = task.current_node_name
@@ -123,18 +110,7 @@ class Agent():
                                                 args_dict=self.args_dict)
 
         return response, res_dict
-
-    def plan(self, node: Node):
-        system_prompt = node.transition_rule["system_prompt"]
-        last_prompt = node.transition_rule["last_prompt"]
-        keyword = node.transition_rule[:keyword]
-        response = get_gpt_response_rule(
-            self.args_dict["long_memory"]["chat_history"],
-            system_prompt,
-            last_prompt,
-            args_dict=self.args_dict)
-        next_node = extract(response, keyword)
-        return next_node
+    
 
     def generate_sop(self):
         pass
