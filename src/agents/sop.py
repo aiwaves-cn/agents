@@ -166,9 +166,16 @@ class SOP:
     
     
     def step(self,current_node):
-        next_node = self.controller.judge(current_node,self.shared_memory["chat_history"])
+        if len(current_node.next_nodes) == 1:
+            next_node = "0"
+        else:
+            next_node = self.controller.judge(current_node,self.shared_memory["chat_history"])
         next_node = current_node.next_nodes[next_node]
-        next_role = self.controller.allocate_task(next_node,self.shared_memory["chat_history"])
+        
+        if len(self.agents.keys())==1:
+            next_role = list(self.agents.keys())[0]
+        else:
+            next_role = self.controller.allocate_task(next_node,self.shared_memory["chat_history"])
         
         return next_node,next_role
     
@@ -179,6 +186,7 @@ class SOP:
             current_memory = {"role":"assistant","content":f"{name}({role}):{query}"}
             self.shared_memory["chat_history"].append(current_memory)
             while True:
+                
                 next_node,next_role = self.step(current_node)
                 flag =  next_node.is_interactive
                 
@@ -239,6 +247,7 @@ class controller:
     def __init__(self,controller_dict) -> None:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
+        
     
     def judge(self,node:Node,chat_history,args_dict=None):
         controller_dict = self.controller_dict[node.name]
@@ -249,7 +258,7 @@ class controller:
         next_node = extract(response,extract_words)
         return next_node
     
-    def allocate_task(self,node:Node,chat_history,args_dict=None):
+    def allocate_task(self,node:Node,chat_history,args_dict=None): 
         controller_dict = self.controller_dict[node.name]
         system_prompt = controller_dict["call_system_prompt"]
         last_prompt = controller_dict["call_last_prompt"]
