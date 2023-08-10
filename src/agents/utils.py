@@ -23,12 +23,13 @@ import numpy as np
 import requests
 import torch
 from tqdm import tqdm
-from text2vec import SentenceModel, semantic_search
+from text2vec import semantic_search
 from config import *
 import re
 import datetime
 from langchain.document_loaders import UnstructuredFileLoader
 from langchain.text_splitter import CharacterTextSplitter
+from sentence_transformers import SentenceTransformer
 import string
 import random
 
@@ -261,7 +262,7 @@ def process_document(file_path):
     """
     final_dict = {}
     count = 0
-    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+    embedder = SentenceTransformer('BAAI/bge-large-zh',
                              device=torch.device("cpu"))
     if file_path.endswith(".csv"):
         dataset = pandas.read_csv(file_path)
@@ -414,7 +415,7 @@ def matching_a_b(a, b, requirements=None):
     Return：
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
-    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+    embedder = SentenceTransformer('BAAI/bge-large-zh',
                              device=torch.device("cpu"))
     a_embedder = embedder.encode(a, convert_to_tensor=True)
     #获取embedder
@@ -437,7 +438,7 @@ def matching_category(inputtext,
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
     #获取embedder
-    embedder = SentenceModel('shibing624/text2vec-base-chinese',
+    embedder = SentenceTransformer('BAAI/bge-large-zh',
                              device=torch.device("cpu"))
     sim_scores = torch.zeros([100])
     if inputtext:

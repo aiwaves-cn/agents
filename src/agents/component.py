@@ -162,8 +162,8 @@ class KnowledgeBaseComponent(ToolComponent):
         self.last_prompt = args_dict["last_prompt"]
         
         
-        self.embedding_model = SentenceModel(
-            'shibing624/text2vec-base-chinese', device="cpu")
+        self.embedding_model =  SentenceTransformer('BAAI/bge-large-zh',
+                             device=torch.device("cpu"))
         if self.type == "QA":
             self.kb_embeddings, self.kb_questions, self.kb_answers, self.kb_chunks = load_knowledge_base_qa(
                 self.knowledge_base)
@@ -173,7 +173,8 @@ class KnowledgeBaseComponent(ToolComponent):
 
     def get_knowledge(self, query):
         knowledge = ""
-        query_embedding = self.embedding_model.encode(query)
+        query = "为这个句子生成表示以用于检索相关文章：" + query
+        query_embedding = self.embedding_model.encode(query, normalize_embeddings=True)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]
         temp = []
