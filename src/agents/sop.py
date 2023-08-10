@@ -14,9 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """standard operation procedure of an LLM Autonomous agent"""
-from abc import abstractmethod
 import json
-from utils import *
 from component import *
 
 
@@ -25,6 +23,7 @@ class SOP:
     input:the json of the sop
     output: a sop graph
     """
+
     def __init__(self, json_path):
         with open(json_path) as f:
             sop = json.load(f)
@@ -33,7 +32,7 @@ class SOP:
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
-        
+
         self.shared_memory = {}
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
@@ -51,10 +50,10 @@ class SOP:
             config = node["config"]
             now_node = Node(name=name,
                             node_type=node_type,
-                            is_interactive= is_interactive,
-                            config = config,
-                            transition_rule = transition_rule,
-                            agent_states = agent_states)
+                            is_interactive=is_interactive,
+                            config=config,
+                            transition_rule=transition_rule,
+                            agent_states=agent_states)
             nodes_dict[name] = now_node
             if "root" in node.keys() and node["root"]:
                 self.root = now_node
@@ -64,26 +63,51 @@ class SOP:
         agent_states = {}
         for key, value in agent_states_dict.items():
             component_dict = {}
-            for component , component_args in value.items():
+            for component, component_args in value.items():
                 if component:
                     if component == "style":
-                        component_dict["style"] = StyleComponent(component_args)
+                        component_dict["style"] = StyleComponent(
+                            component_args)
                     elif component == "task":
                         component_dict["task"] = TaskComponent(component_args)
                     elif component == "rule":
                         component_dict["rule"] = RuleComponent(component_args)
                     elif component == "demonstration":
-                        component_dict["demonstration"] = DemonstrationComponent(component_args)
-                    elif component == "output":
-                        component_dict["output"] = OutputComponent(component_args)
-                    elif component == "cot":
-                        component_dict["cot"] = CoTComponent(component_args)                    
-                    elif component == "Information_KnowledgeComponent":
                         component_dict[
-                            "knowledge"] = Information_KnowledgeComponent()
-                    elif component == "kb":
+                            "demonstration"] = DemonstrationComponent(
+                                component_args)
+                    elif component == "output":
+                        component_dict["output"] = OutputComponent(
+                            component_args)
+                    elif component == "cot":
+                        component_dict["cot"] = CoTComponent(component_args)
+
+                    #=================================================================================#
+
+                    elif component == "Top_Category_ShoppingComponent":
+                        component_dict[
+                            "Top_Category_Shopping"] = Top_Category_ShoppingComponent(
+                            )
+                    elif component == "User_Intent_ShoppingComponent":
+                        component_dict[
+                            "User_Intent_ShoppingComponent"] = User_Intent_ShoppingComponent(
+                            )
+                    elif component == "RecomComponent":
+                        component_dict["RecomComponent"] = RecomComponent()
+                    elif component == "StaticComponent":
+                        component_dict["StaticComponent"] = StaticComponent(
+                            component_dict)
+                    elif component == "KnowledgeBaseComponent":
                         component_dict["tool"] = KnowledgeBaseComponent(
-                            component_args["knowledge_base"])
+                            component_args)
+                    elif component == "MatchComponent":
+                        component_dict["MatchComponent"] = MatchComponent()
+                    elif component == "SearchComponent":
+                        component_dict["SearchComponent"] = SearchComponent()
+                    elif component == "ExtractComponent":
+                        component_dict["ExtractComponent"] = ExtractComponent(
+                            component_args)
+
             agent_states[key] = component_dict
         return agent_states
 
@@ -98,40 +122,38 @@ class Node():
 
     def __init__(self,
                  name: str = None,
-                 agent_states:dict = None,
+                 agent_states: dict = None,
                  is_interactive=False,
-                 config:list = None,
-                 transition_rule:str = None):
-        
+                 config: list = None,
+                 transition_rule: str = None):
+
         self.next_nodes = {}
         self.agent_states = agent_states
         self.is_interactive = is_interactive
         self.name = name
         self.config = config
         self.transition_rule = transition_rule
-    
-    def get_state(self,role,args_dict):
-        system_prompt,last_prompt = self.compile(role,args_dict)
+
+    def get_state(self, role, args_dict):
+        system_prompt, last_prompt = self.compile(role, args_dict)
         current_role_state = f"目前的角色为：{role}，它的system_prompt为{system_prompt},last_prompt为{last_prompt}"
         return current_role_state
-    
-    
-    def compile(self,role,args_dict:dict):
+
+    def compile(self, role, args_dict: dict):
         components = self.agent_states[role]
         system_prompt = ""
         last_prompt = ""
         res_dict = {}
         for component_name in self.config:
             component = components[component_name]
-            if isinstance(component,OutputComponent):
-                last_prompt = last_prompt + "\n" +  component.get_prompt(args_dict)
-            elif isinstance(component,PromptComponent):
-                system_prompt = system_prompt + "\n" + component.get_prompt(args_dict)
-            elif isinstance(component,ToolComponent):
+            if isinstance(component, OutputComponent):
+                last_prompt = last_prompt + "\n" + component.get_prompt(
+                    args_dict)
+            elif isinstance(component, PromptComponent):
+                system_prompt = system_prompt + "\n" + component.get_prompt(
+                    args_dict)
+            elif isinstance(component, ToolComponent):
                 response = component.func(args_dict)
                 args_dict.update(response)
                 res_dict.update(response)
-        return system_prompt,last_prompt,res_dict
-
-
-
+        return system_prompt, last_prompt, res_dict
