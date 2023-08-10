@@ -27,8 +27,8 @@ sys.path.append("../src/agents")
 from sop import SOP
 from agent import Agent
 import os
+import json
 from utils import *
-import os
 # -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
@@ -108,6 +108,7 @@ if __name__ == '__main__':
     def reply():
         userName = request.json.get('userName')
         query = request.json.get('query')
+        
         response = agent.reply(userName,query)
         return Response(response, mimetype='text/event-stream', headers=headers)
     
