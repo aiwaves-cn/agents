@@ -16,7 +16,7 @@
 """standard operation procedure of an LLM Autonomous agent"""
 import json
 from component import *
-
+import time
 
 class SOP:
     """
@@ -70,7 +70,9 @@ class SOP:
             config = node["config"]
             
             # contrller  {judge_system_prompt:,judge_last_prompt: ,call_system_prompt: , call_last_prompt}
-            self.controller_dict[name] = node["controller"]
+            
+            if "controller" in node:
+                self.controller_dict[name] = node["controller"] 
             
             now_node = Node(name=name,
                             is_interactive=is_interactive,
@@ -136,7 +138,7 @@ class SOP:
                     # "output"
                     elif component == "StaticComponent":
                         component_dict["StaticComponent"] = StaticComponent(
-                            component_dict)
+                            component_args)
                         
                     # "top_k"  "type" "knowledge_base" "system_prompt" "last_prompt"                        
                     elif component == "KnowledgeBaseComponent":
@@ -179,9 +181,10 @@ class SOP:
         
         return next_node,next_role
     
-    def run(self,role="user",name="吴嘉隆"):
+    def run(self,role="user",name="吴家隆"):
         current_node = self.root
         while True:
+            print(current_node.name)
             query = input(f"{name}({role}):")
             current_memory = {"role":"assistant","content":f"{name}({role}):{query}"}
             self.shared_memory["chat_history"].append(current_memory)
@@ -189,14 +192,17 @@ class SOP:
                 
                 next_node,next_role = self.step(current_node)
                 flag =  next_node.is_interactive
-                
+                current_node = next_node
+                role = next_role
                 current_agent = self.agents[next_role]
                 response = current_agent.step(query,role,name,current_node,self.temperature)
                 print(f"{current_agent.name}({current_agent.role}):",end="")
                 all = f"{current_agent.name}({current_agent.role}):"
                 for res in response:
                     all+=res
-                    print(res)
+                    print(res,end="")
+                    time.sleep(0.02)
+                print()
                 self.shared_memory["chat_history"].append({"role":"assistant","content":all})
                 
                 if flag:
@@ -229,6 +235,8 @@ class Node():
         last_prompt = ""
         res_dict = {}
         for component_name in self.config:
+            if component_name not in components:
+                continue
             component = components[component_name]
             if isinstance(component, OutputComponent):
                 last_prompt = last_prompt + "\n" + component.get_prompt(

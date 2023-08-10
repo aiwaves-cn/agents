@@ -33,7 +33,7 @@ class PromptComponent():
         pass
 
     @abstractmethod
-    def get_prompt(self):
+    def get_prompt(self,args_dict):
         pass
 
 class ToolComponent():
@@ -52,7 +52,7 @@ class TaskComponent(PromptComponent):
         super().__init__()
         self.task = args_dict["task"]
 
-    def get_prompt(self):
+    def get_prompt(self,args_dict):
         return f"""你需要执行的任务是:{self.task}。"""
 
 
@@ -62,7 +62,7 @@ class OutputComponent(PromptComponent):
         super().__init__()
         self.output = args_dict["output"]
 
-    def get_prompt(self):
+    def get_prompt(self,args_dict):
         return f"""请联系上文，进行<{self.output}>和</{self.output}>的提取，不要进行额外的输出，请严格按照上述格式输出！"""
 
 
@@ -76,7 +76,7 @@ class StyleComponent(PromptComponent):
         self.role = args_adic["role"]
         self.style = args_adic["style"]
 
-    def get_prompt(self):
+    def get_prompt(self,args_dict):
         return f"""现在你来模拟一个{self.role}。你需要遵循以下的输出风格：{self.style}。"""
 
 
@@ -86,7 +86,7 @@ class RuleComponent(PromptComponent):
         super().__init__()
         self.rule = args_adic["rule"]
 
-    def get_prompt(self):
+    def get_prompt(self,args_dict):
         return f"""你需要遵循的规则是:{self.rule}。"""
 
 
@@ -102,7 +102,7 @@ class DemonstrationComponent(PromptComponent):
     def add_demonstration(self, demonstration):
         self.demonstrations.append(demonstration)
 
-    def get_prompt(self):
+    def get_prompt(self,args_dict):
         prompt = "以下是你可以参考的例子：\n"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
@@ -121,7 +121,7 @@ class CoTComponent(PromptComponent):
     def add_demonstration(self, demonstration):
         self.demonstrations.append(demonstration)
 
-    def get_prompt(self):
+    def get_prompt(self,args_dict):
         prompt = "你在输出前需要以下是你可以参考的例子：\n"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
@@ -158,8 +158,6 @@ class KnowledgeBaseComponent(ToolComponent):
         self.top_k = args_dict["top_k"]
         self.type = args_dict["type"]
         self.knowledge_base = args_dict["knowledge_base"]
-        self.system_prompt = args_dict["system_prompt"]
-        self.last_prompt = args_dict["last_prompt"]
         
         
         self.embedding_model =  SentenceTransformer('BAAI/bge-large-zh',
@@ -171,7 +169,8 @@ class KnowledgeBaseComponent(ToolComponent):
             self.kb_embeddings, self.kb_chunks = load_knowledge_base_UnstructuredFile(
                 self.knowledge_base)
 
-    def get_knowledge(self, query):
+    def func(self, args_dict):
+        query = args_dict["query"]
         knowledge = ""
         query = "为这个句子生成表示以用于检索相关文章：" + query
         query_embedding = self.embedding_model.encode(query, normalize_embeddings=True)
@@ -212,28 +211,6 @@ class KnowledgeBaseComponent(ToolComponent):
             else:
                 print(knowledge)
                 return "相关的内容是： “" + knowledge + "”"
-
-    def func(self, args_dict):
-        memory = {}
-        memory.update(args_dict["long_memory"])
-        memory.update(args_dict["short_memory"])
-        chat_history = memory["chat_history"]
-
-        
-        function_response = self.get_knowledge(query=chat_history[-1]["content"])
-        chat_history.append({
-            "role": "assistant",
-            "content": function_response,
-        }) 
-
-        response = get_gpt_response_rule_stream(
-            chat_history,
-            system_prompt=self.system_prompt,
-            last_prompt=self.last_prompt,
-            args_dict=args_dict,
-            temperature=args_dict["temperature"])
-        
-        return {"response":response}
 
 
 

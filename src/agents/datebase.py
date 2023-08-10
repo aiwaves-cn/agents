@@ -11,7 +11,7 @@ import mongoengine
 from pymongo import MongoClient
 
 connect(
-    db='shopping_assistant',
+    db='test',
     host='47.96.122.196',
     port=27017,
     username='aiwaves',
