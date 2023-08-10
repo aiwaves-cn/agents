@@ -100,7 +100,7 @@ Beyond prompts, the **ToolComponent** family takes center stage, providing speci
 - **Examples**:
   - Codes for the "PromptComponent" class are as follows:
     ```python
-    class Component():
+    class PromptComponent():
         def __init__(self):
             self.prompt = ""
         @abstractmethod
