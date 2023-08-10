@@ -106,6 +106,8 @@ def get_gpt_response_function(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": f"{last_prompt}"}]
+    
+    print(messages)
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
@@ -161,6 +163,7 @@ def get_gpt_response_rule(chat_history,
         messages=messages,
         temperature=temperature,
     )
+    print(messages)
     if args_dict:
         log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
         log = {}
@@ -172,6 +175,7 @@ def get_gpt_response_rule(chat_history,
             datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
         with open(log_file, "w", encoding="utf-8") as f:
             json.dump(log, f, ensure_ascii=False, indent=2)
+    print(response.choices[0].message["content"])
     return response.choices[0].message["content"]
 
 
@@ -196,10 +200,8 @@ def get_gpt_response_rule_stream(chat_history,
     openai.proxy = PROXY
     
     if args_dict:
-        system_prompt = system_prompt + "请你的回复尽量简洁" if args_dict[
-            "answer_simplify"] else system_prompt
-        last_prompt = last_prompt + "请你的回复尽量简洁" if args_dict[
-            "answer_simplify"] else last_prompt
+        system_prompt = system_prompt + "请你的回复尽量简洁" if "answer_simplify" in args_dict else system_prompt
+        last_prompt = last_prompt + "请你的回复尽量简洁" if "answer_simplify" in args_dict else last_prompt
 
     messages = [{"role": "system", "content": system_prompt}]
     if chat_history:
@@ -208,6 +210,7 @@ def get_gpt_response_rule_stream(chat_history,
         messages += chat_history
     if last_prompt:
         messages += [{"role": "system", "content": last_prompt}]
+    print(messages)
     response = openai.ChatCompletion.create(model=model,
                                             messages=messages,
                                             temperature=temperature,
@@ -221,7 +224,7 @@ def get_gpt_response_rule_stream(chat_history,
             yield r
             
     if args_dict:
-        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
+        log_path = args_dict["log_path"] if "log_path" in args_dict else "logs"
         log = {}
         log["input"] = messages
         log["output"] = ans

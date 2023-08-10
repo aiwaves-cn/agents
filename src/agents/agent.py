@@ -41,7 +41,7 @@ class Agent():
 
         self.args_dict = {
             "short_memory": {},
-            "long_memory": {},
+            "long_memory": {"chat_history":[]},
         }
 
     def step(self, user_query, user_role, user_name, current_node:Node,temperature = 0.3):
@@ -101,7 +101,7 @@ class Agent():
     def act(self, node: Node):
         system_prompt, last_prompt, res_dict = node.compile(
             self.role, self.args_dict)
-        chat_history = self.args_dict["long_history"]["chat_history"]
+        chat_history = self.args_dict["long_memory"]["chat_history"]
         temperature = self.args_dict["temperature"]
         response = get_gpt_response_rule_stream(chat_history,
                                                 system_prompt,
@@ -131,10 +131,7 @@ class Agent():
         return False
 
     def update_memory(self, memory):
-        if "long_memory" in self.args_dict:
-            self.args_dict["long_memory"].append(memory)
-        else:
-            self.args_dict["long_memory"] = memory
+        self.args_dict["long_memory"]["chat_history"].append(memory)
 
     def chat(self, sop: SOP, user_role="user", user_name="A神"):
         """
@@ -194,7 +191,7 @@ class Agent():
         while True:
             self.chat(sop)
 
-
-my_sop = SOP("/home/aiwaves/longli/agents/examples/eye/eye_new.json")
-agent = Agent("眼科客服","吴嘉隆")
-agent.run(my_sop)
+agent = Agent("眼科客服","吴家隆")
+my_sop = SOP("/home/aiwaves/jlwu/multi-agent/agents/examples/eye/eye_newnew.json")
+my_sop.agents = {"眼科客服":agent}
+my_sop.run()
