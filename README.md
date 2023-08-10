@@ -51,7 +51,7 @@ We've developed several functions to extract specific words from JSON files, fac
 
 
 - **Examples**:
-  - Basic codes for a GPT Node are as follows:
+  - Basic codes for Node are as follows:
     ```python
 	class  Node():
 		def  __init__(self,
