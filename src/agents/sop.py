@@ -193,7 +193,9 @@ class SOP:
                 next_node,next_role = self.step(current_node)
                 flag =  next_node.is_interactive
                 current_node = next_node
-                role = next_role
+                if next_role == role:
+                    break
+                current_agent = self.agents[next_role]
                 current_agent = self.agents[next_role]
                 response = current_agent.step(query,role,name,current_node,self.temperature)
                 print(f"{current_agent.name}({current_agent.role}):",end="")
