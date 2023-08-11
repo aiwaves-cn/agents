@@ -185,7 +185,8 @@ async def ping_task():
 
 @app.on_event("startup")
 async def send_ping():
-    await asyncio.create_task(ping_task())
+    if ping_flag:
+        await asyncio.create_task(ping_task())
     return
 
 if __name__ == '__main__':
