@@ -75,6 +75,8 @@ ping_port=7889
 
 addr="192.168.110.201"
 
+ping_flag=True
+
 if args.customize == 1:
    assert args.agent_setting != None
    assert args.agent_style != None
@@ -140,15 +142,16 @@ def extract_answer(text):
     return text
 
 async def generate_events(response):
-    all = ""
+    msg=""
     for data in response:
         if data:
             #last_length = len(extract_answer(data))
             #all += data.choices[0]['delta'].get('content') if data.choices[0]['delta'].get('content') else ''
             chat_answer = extract_answer(data)
+            msg+=chat_answer
             if chat_answer:
                 new_dict = {
-                        "content": chat_answer,
+                        "content": msg,
                         "type": "chat",
                         "done": False,
 
@@ -173,12 +176,16 @@ async def reply(request:Request):
                 await asyncio.sleep(0.02)
     return StreamingResponse(event_stream(),media_type="text/event-stream")
 
+async def ping_task():
+    ping_url = f"http://0.0.0.0:{ping_port}/trigger/v1/bot/callback/health?botCode={args.botCode}"
+    async with aiohttp.ClientSession() as session:
+        async with session.post(url=ping_url) as resp:
+            pass
+    return
 
 @app.on_event("startup")
-def send_ping():
-
-    ping_url = f"http://0.0.0.0:{ping_port}/trigger/v1/bot/callback/health?botCode={args.botCode}"
-    resp = requests.post(url=ping_url)
+async def send_ping():
+    await asyncio.create_task(ping_task())
     return
 
 if __name__ == '__main__':
