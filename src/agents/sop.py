@@ -181,12 +181,12 @@ class SOP:
         
         return next_node,next_role
     
-    def run(self,role="user",name="吴家隆"):
+    def run(self,role="user",name="A神"):
         current_node = self.root
         while True:
             print(current_node.name)
             query = input(f"{name}({role}):")
-            current_memory = {"role":"assistant","content":f"{name}({role}):{query}"}
+            current_memory = {"role":"user","content":f"{name}({role}):{query}"}
             self.shared_memory["chat_history"].append(current_memory)
             while True:
                 

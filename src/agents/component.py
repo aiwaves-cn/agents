@@ -139,6 +139,14 @@ class Top_Category_ShoppingComponent(PromptComponent):
         memory.update(args_dict["short_memory"])
         return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["possible_category"],memory["top_category"]}"""
 
+class IputComponent(PromptComponent):
+    def __init__(self):
+        super().__init__()
+
+    def get_prompt(self,args_dict):
+        information=args_dict["information"]
+        return f"你需要知道的是：{information}"
+
 
 class User_Intent_ShoppingComponent(PromptComponent):
 
@@ -207,10 +215,10 @@ class KnowledgeBaseComponent(ToolComponent):
             print(hits[0]["score"])
             score = hits[0]["score"]
             if score < 0.5:
-                return "没有匹配到相关的知识库"
+                return {"prompt":"没有匹配到相关的知识库"}
             else:
                 print(knowledge)
-                return "相关的内容是： “" + knowledge + "”"
+                return {"prompt":"相关的内容是： “" + knowledge + "”"}
 
 
 
