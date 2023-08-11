@@ -147,7 +147,7 @@ def run(sop:SOP,controller:controller,name = "A神",role = "user"):
         current_memory = {"role":"user","content":f"{name}({role}):{query}"}
         sop.shared_memory["chat_history"].append(current_memory)
         while True:
-            next_node,next_role = controller.step(sop)
+            next_node,next_role = step(sop,controller)
             flag =  next_node.is_interactive
             current_node = next_node
             sop.current_node = current_node
