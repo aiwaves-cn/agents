@@ -74,10 +74,11 @@ class StyleComponent(PromptComponent):
     def __init__(self, args_adic):
         super().__init__()
         self.role = args_adic["role"]
+        self.name = args_adic["name"]
         self.style = args_adic["style"]
 
     def get_prompt(self,args_dict):
-        return f"""现在你来模拟一个{self.role}。你需要遵循以下的输出风格：{self.style}。"""
+        return f"""现在你的身份为：{self.role}，你的名字是:{self.name}。你需要遵循以下的输出风格：{self.style}。"""
 
 
 class RuleComponent(PromptComponent):
