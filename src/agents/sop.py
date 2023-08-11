@@ -39,7 +39,7 @@ class SOP:
         self.controller_dict = {}
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
-        self.controller = controller(self.controller_dict)
+        self.current_node = self.root
         
         self.agents = {}
 
@@ -168,51 +168,6 @@ class SOP:
         for key, value in relation.items():
             for keyword, next_node in value.items():
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
-    
-    
-    def step(self,current_node):
-        if len(current_node.next_nodes) == 1:
-            next_node = "0"
-        else:
-            next_node = self.controller.judge(current_node,self.shared_memory["chat_history"])
-        next_node = current_node.next_nodes[next_node]
-        
-        if len(self.agents.keys())==1:
-            next_role = list(self.agents.keys())[0]
-        else:
-            next_role = self.controller.allocate_task(next_node,self.shared_memory["chat_history"])
-        
-        return next_node,next_role
-    
-    def run(self,role="user",name="A神"):
-        current_node = self.root
-        while True:
-            print(current_node.name)
-            query = input(f"{name}({role}):")
-            current_memory = {"role":"user","content":f"{name}({role}):{query}"}
-            self.shared_memory["chat_history"].append(current_memory)
-            while True:
-                
-                next_node,next_role = self.step(current_node)
-                flag =  next_node.is_interactive
-                current_node = next_node
-                if next_role == role:
-                    break
-                current_agent = self.agents[next_role]
-                current_agent = self.agents[next_role]
-                response = current_agent.step(query,role,name,current_node,self.temperature)
-                print(f"{current_agent.name}({current_agent.role}):",end="")
-                all = f"{current_agent.name}({current_agent.role}):"
-                for res in response:
-                    all+=res
-                    print(res,end="")
-                    time.sleep(0.02)
-                print()
-                self.shared_memory["chat_history"].append({"role":"assistant","content":all})
-                
-                if flag:
-                    break
-            
 
 
 class Node():
@@ -283,3 +238,4 @@ class controller:
         response = get_gpt_response_rule(chat_history,system_prompt,last_prompt,args_dict=args_dict)
         next_role = extract(response,extract_words)
         return next_role
+    
