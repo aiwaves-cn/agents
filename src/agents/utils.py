@@ -359,6 +359,9 @@ def load_knowledge_base_qa(path):
     Load json format knowledge base.
     """
     print("path", path)
+    current_path = os.path.abspath(__file__)
+    current_path = os.path.dirname(current_path)
+    path = os.path.join(current_path,path)
     with open(path, 'r') as f:
         data = json.load(f)
     embeddings = []
