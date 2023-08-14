@@ -94,6 +94,8 @@ if __name__ == "__main__":
     controller = controller(sop.controller_dict)
     sop.agents = {"眼科客服": agent}
     agent.sop = sop
+    while True:
+        continue
     query = "111111111"
     response =act(query)
     for res in response:
