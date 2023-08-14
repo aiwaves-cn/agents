@@ -27,7 +27,7 @@ from fastapi import APIRouter, Request, Body
 import requests
 from multiprocessing import Process
 import sys
-sys.path.append("/home/aiwaves/liuwei/boxing-bot-backend/app/agents/src/agents/")
+sys.path.append("../../agents/src/agents/")
 from sop import SOP
 from agent import Agent
 import os

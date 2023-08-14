@@ -81,7 +81,7 @@ def get_gpt_response_function(chat_history,
                               system_prompt,
                               last_prompt=None,
                               model="gpt-3.5-turbo-16k-0613",
-                              function=None,
+                              functions=None,
                               function_call="auto",
                               temperature=0,
                               args_dict=None):
@@ -98,8 +98,7 @@ def get_gpt_response_function(chat_history,
     """
     openai.api_key = API_KEY
     openai.proxy = PROXY
-
-    messages = [{"role": "system", "content": system_prompt}]
+    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
@@ -111,7 +110,7 @@ def get_gpt_response_function(chat_history,
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
-        functions=function,
+        functions=functions,
         function_call=function_call,
         temperature=temperature,
     )
@@ -151,7 +150,7 @@ def get_gpt_response_rule(chat_history,
     openai.api_key = API_KEY
     openai.proxy = PROXY
 
-    messages = [{"role": "system", "content": system_prompt}]
+    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
@@ -203,7 +202,7 @@ def get_gpt_response_rule_stream(chat_history,
         system_prompt = system_prompt + "请你的回复尽量简洁" if "answer_simplify" in args_dict else system_prompt
         last_prompt = last_prompt + "请你的回复尽量简洁" if "answer_simplify" in args_dict else last_prompt
 
-    messages = [{"role": "system", "content": system_prompt}]
+    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]

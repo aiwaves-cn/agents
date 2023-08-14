@@ -130,16 +130,6 @@ class CoTComponent(PromptComponent):
 
 
 
-class Top_Category_ShoppingComponent(PromptComponent):
-    def __init__(self):
-        super().__init__()
-
-    def get_prompt(self, args_dict):
-        memory = {"extract_category": "", "top_category": ""}
-        memory.update(args_dict["long_memory"])
-        memory.update(args_dict["short_memory"])
-        return f"""你需要知道的是：用户目前选择的商品是{memory["extract_category"]}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{memory["possible_category"],memory["top_category"]}"""
-
 class IputComponent(PromptComponent):
     def __init__(self):
         super().__init__()
@@ -148,17 +138,6 @@ class IputComponent(PromptComponent):
         information=args_dict["information"]
         return f"你需要知道的是：{information}"
 
-
-class User_Intent_ShoppingComponent(PromptComponent):
-
-    def __init__(self) -> None:
-        super().__init__()
-
-    def get_prompt(self, args_dict):
-        memory = {"information": "", "category": ""}
-        memory.update(args_dict["long_memory"])
-        memory.update(args_dict["short_memory"])
-        return f"""你需要知道的是：用户目前选择的商品是{memory["category"]}，该商品信息为{memory["information"]}。"""
 
 
 class KnowledgeBaseComponent(ToolComponent):
@@ -281,117 +260,6 @@ class RecomComponent(ToolComponent):
         return outputdict
 
 
-class MatchComponent(ToolComponent):
-
-    def __init__(self):
-        super().__init__()
-
-        # create dateset
-        self.information_dataset = []
-        self.leaf_name = []
-        for toy_path in TOY_INFO_PATH:
-            with open(toy_path, encoding='utf-8') as json_file:
-                data = json.load(json_file)
-            for d in data:
-                if "/" in d["cat_leaf_name"]:
-                    leaf_names = d["cat_leaf_name"].split("/") + [
-                        d["cat_leaf_name"]
-                    ]
-                else:
-                    leaf_names = [d["cat_leaf_name"]]
-                for name in leaf_names:
-                    self.leaf_name.append(name)
-                    new_d = d.copy()
-                    new_d["cat_leaf_name"] = name
-                    new_d["information"] = flatten_dict(new_d["information"])
-                    self.information_dataset.append(new_d)
-        self.embedder = SentenceModel('shibing624/text2vec-base-chinese',
-                                      device=torch.device("cpu"))
-        self.target_embbeding = self.embedder.encode(self.leaf_name,
-                                                     convert_to_tensor=True)
-
-    def search_information(self, category, information_dataset):
-        """
-        Args:
-            category (str): Categories that need to be matched in the database
-            information_dataset (list): the dateset
-
-        Returns:
-            dict: Information on target categories
-        """
-        knowledge = {}
-        for d in information_dataset:
-            if category == d["cat_leaf_name"]:
-                knowledge = d["information"]
-                knowledge = {
-                    key: value
-                    for key, value in knowledge.items()
-                    if (value and key != "相关分类")
-                }
-                break
-        return knowledge
-
-    def func(self, args_dict):
-        """
-        return the memory of information and determine the next node
-        """
-        memory = {}
-        memory.update(args_dict["long_memory"])
-        memory.update(args_dict["short_memory"])
-
-        extract_category = memory["extract_category"]
-
-        outputdict = {"response": "", "next_node": "0"}
-
-        topk_result = matching_category(extract_category,
-                                        self.leaf_name,
-                                        None,
-                                        self.target_embbeding,
-                                        top_k=3)
-        top1_score = topk_result[1][0]
-        if top1_score > MIN_CATEGORY_SIM:
-            memory['category'] = topk_result[0][0]
-            information = self.search_information(topk_result[0][0],
-                                                  self.information_dataset)
-            information = limit_keys(information, 3)
-            information = limit_values(information, 2)
-            outputdict["next_node"] = "1"
-            
-            args_dict["short_memory"]["information"] = information
-        else:
-            args_dict["short_memory"]["possible_category"] = topk_result[0][0]
-
-        return outputdict
-
-
-class SearchComponent(ToolComponent):
-
-    def __init__(self):
-        super().__init__()
-
-    def func(self, args_dict):
-        """
-        return the recommend of the search shop
-        """
-        memory = {}
-        memory.update(args_dict["long_memory"])
-        memory.update(args_dict["short_memory"])
-
-        outputdict = {"response": "", "next_node_id": "0"}
-        requirements = memory["requirements"]
-        category = memory["category"]
-        if category == "":
-            category = memory["extract_category"]
-
-        request_items, top_category = search_with_api(requirements, category)
-        if category in top_category:
-            top_category.remove(category)
-
-        args_dict["short_memory"]["top_category"] = top_category
-        args_dict["long_memory"]["request_items"] = request_items
-        return outputdict
-
-
 class ExtractComponent(ToolComponent):
     def __init__(self,args_dict):
         super().__init__()
@@ -411,5 +279,104 @@ class ExtractComponent(ToolComponent):
         return {}
     
         
+class  CategoryRequirementsComponent(ToolComponent):
+    def __init__(self,args_dict):
+        super().__init__()
+        self.information_dataset = []
+        self.leaf_name = []
+        for toy_path in args_dict["information_path"]:
+            with open(toy_path, encoding='utf-8') as json_file:
+                data = json.load(json_file)
+            for d in data:
+                if "/" in d["cat_leaf_name"]:
+                    leaf_names = d["cat_leaf_name"].split("/") + [
+                        d["cat_leaf_name"]
+                    ]
+                else:
+                    leaf_names = [d["cat_leaf_name"]]
+                for name in leaf_names:
+                    self.leaf_name.append(name)
+                    new_d = d.copy()
+                    new_d["cat_leaf_name"] = name
+                    new_d["information"] = flatten_dict(new_d["information"])
+                    self.information_dataset.append(new_d)
+        self.embedder = SentenceTransformer('BAAI/bge-large-zh',
+                             device=torch.device("cpu"))
+        self.target_embbeding = self.embedder.encode(self.leaf_name,
+                                                     convert_to_tensor=True)
         
+    def search_information(self, category, information_dataset):
+        knowledge = {}
+        for d in information_dataset:
+            if category == d["cat_leaf_name"]:
+                knowledge = d["information"]
+                knowledge = {
+                    key: value
+                    for key, value in knowledge.items()
+                    if (value and key != "相关分类")
+                }
+                break
+        return knowledge
+    
+    def func(self,args_dict):
+        prompt = ""
+        messages = args_dict["long_memory"]["chat_history"]
+        outputdict = {}
+        functions = [
+        {
+            "name": "search_information",
+            "description": "根据用户所需要购买商品的种类跟用户的需求去寻找用户所需要的商品",
+           "parameters": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "type": "string",
+                        "description": "用户现在所需要的商品类别，比如纸尿布，笔记本电脑等，注意，只能有一个",
+                    },
+                    "requirements": {
+                        "type": "string",
+                        "description": "用户现在的需求，比如说便宜，安踏品牌等等，可以有多个需求，中间以“ ”分隔",
+                    },
+                },
+                "required": ["category","requirements"],
+            },
+        }
+    ]   
+        response = get_gpt_response_function(messages,None,None,functions = functions,function_call={"name":"search_information"})
+        response_message = json.loads(response["function_call"]["arguments"])
+        category = response_message["category"] if response_message["category"] else None
+        requirements = response_message["requirements"] if response_message["requirements"] else category
+        if not (category or requirements):
+            return {}
+        
+        topk_result = matching_category(category,
+                                        self.leaf_name,
+                                        None,
+                                        self.target_embbeding,
+                                        top_k=3)
+        
+        top1_score = topk_result[1][0]
+        request_items, top_category = search_with_api(requirements, category)
+        if top1_score > MIN_CATEGORY_SIM:
+            args_dict["long_memory"]['category'] = topk_result[0][0]
+            category = topk_result[0][0]
+            information = self.search_information(topk_result[0][0],
+                                                  self.information_dataset)
+            information = limit_keys(information, 3)
+            information = limit_values(information, 2)
+            prompt += f"""你需要知道的是：用户目前选择的商品是{category}，该商品信息为{information}。你需要根据这些商品信息来询问用户是否有更多的需求"""
+            if category in top_category:
+                top_category.remove(category)
+            
+            recommend = ""
+            for i,request_item in enumerate(request_items):
+                itemTitle = request_item["itemTitle"]
+                itemPrice = request_item["itemPrice"]
+                recommend += f"{i}.商品名称：{itemTitle},商品价格为:{itemPrice}\n"
+            recommend += "你需要对每个商品进行介绍，引导用户购买"
+            outputdict["recommend"] = recommend
+        else:
+            prompt += f"""你需要知道的是：用户目前选择的商品是{category}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{top_category},{topk_result[0][0]}，你需要对这些近似商品进行介绍，并引导用户购买"""
+        outputdict["prompt"] = prompt
+        return outputdict
         
