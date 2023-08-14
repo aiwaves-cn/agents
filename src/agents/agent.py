@@ -139,7 +139,7 @@ class Agent():
         while True:
             self.chat(sop)
 
-def run(sop:SOP,controller:controller,name = "A神",role = "user"):
+def run(sop:SOP,controller:controller,name = "A神",role = "客户"):
     while True:
         current_node = sop.current_node
         print(current_node.name)

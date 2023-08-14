@@ -34,7 +34,7 @@ class SOP:
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
 
         
-        self.enviroment_prompt = sop["enviroment_prompt"]
+        self.environment_prompt = sop["environment_prompt"]
         self.shared_memory = {"chat_history":[]}
         self.controller_dict = {}
         self.nodes = self.init_nodes(sop)
@@ -79,7 +79,7 @@ class SOP:
             now_node = Node(name=name,
                             is_interactive=is_interactive,
                             config=config,
-                            enviroment_prompt= self.enviroment_prompt,
+                            environment_prompt= self.environment_prompt,
                             agent_states=agent_states)
             nodes_dict[name] = now_node
             
@@ -124,17 +124,6 @@ class SOP:
 
                     #=================================================================================#
 
-                    elif component == "Top_Category_ShoppingComponent":
-                        component_dict[
-                            "Top_Category_Shopping"] = Top_Category_ShoppingComponent(
-                            )
-                            
-                    elif component == "User_Intent_ShoppingComponent":
-                        component_dict[
-                            "User_Intent_ShoppingComponent"] = User_Intent_ShoppingComponent(
-                            )
-                            
-                            
                     elif component == "RecomComponent":
                         component_dict["RecomComponent"] = RecomComponent()
                         
@@ -148,11 +137,8 @@ class SOP:
                         component_dict["tool"] = KnowledgeBaseComponent(
                             component_args)
                         
-                    elif component == "MatchComponent":
-                        component_dict["MatchComponent"] = MatchComponent()
-                        
-                    elif component == "SearchComponent":
-                        component_dict["SearchComponent"] = SearchComponent()
+                    elif component == "CategoryRequirementsComponent":
+                        component_dict["CategoryRequirementsComponent"] = CategoryRequirementsComponent(component_args)
                         
                     # "short_memory_extract_words"  "long_memory_extract_words" "system_prompt" "last_prompt" 
                     elif component == "ExtractComponent":
@@ -176,14 +162,14 @@ class Node():
                  name: str = None,
                  agent_states: dict = None,
                  is_interactive=False,
-                 enviroment_prompt = None,
+                 environment_prompt = None,
                  config: list = None):
 
         self.next_nodes = {}
         self.agent_states = agent_states
         self.is_interactive = is_interactive
         self.name = name
-        self.enviroment_prompt = enviroment_prompt
+        self.environment_prompt = environment_prompt
         self.config = config
 
     def get_state(self, role, args_dict):
@@ -193,7 +179,7 @@ class Node():
 
     def compile(self, role, args_dict: dict):
         components = self.agent_states[role]
-        system_prompt = self.enviroment_prompt if self.enviroment_prompt else ""
+        system_prompt = self.environment_prompt if self.environment_prompt else ""
         last_prompt = ""
         res_dict = {}
         for component_name in self.config:
@@ -208,6 +194,7 @@ class Node():
                     args_dict)
             elif isinstance(component, ToolComponent):
                 response = component.func(args_dict)
+                print(response)
                 if "prompt" in response and response["prompt"]:
                     last_prompt += response["prompt"]
                 args_dict.update(response)
