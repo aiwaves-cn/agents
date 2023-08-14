@@ -137,8 +137,10 @@ def generate_response(history):
     content = ""
     for i in act(query):
         content += i
-        yield {"吴家隆": content}
-
+        if ":" in content:
+            yield {"吴家隆": content[content.find(":")+1:]}
+        else:
+            yield {"吴家隆": ""}
 
 
 if __name__ == '__main__':
