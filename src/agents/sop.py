@@ -15,8 +15,9 @@
 # limitations under the License.
 """standard operation procedure of an LLM Autonomous agent"""
 import json
+from datebase import TaskConfig
 from component import *
-import time
+
 
 class SOP:
     """
@@ -33,14 +34,13 @@ class SOP:
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
 
-        
         self.environment_prompt = sop["environment_prompt"]
-        self.shared_memory = {"chat_history":[]}
+        self.shared_memory = {"chat_history": []}
         self.controller_dict = {}
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
         self.current_node = self.root
-        
+
         self.agents = {}
 
     def init_nodes(self, sop):
@@ -48,13 +48,12 @@ class SOP:
         node_sop = sop["nodes"]
         nodes_dict = {}
         for node in node_sop.values():
-            
+
             # str
             name = node["name"]
-            
+
             # true or false
             is_interactive = node["is_interactive"]
-            
             """
             agent_states:
             {
@@ -67,22 +66,22 @@ class SOP:
             }
             """
             agent_states = self.init_states(node["agent_states"])
-            
+
             # config ["style","rule",......]
             config = node["config"]
-            
+
             # contrller  {judge_system_prompt:,judge_last_prompt: ,call_system_prompt: , call_last_prompt}
-            
+
             if "controller" in node:
-                self.controller_dict[name] = node["controller"] 
-            
+                self.controller_dict[name] = node["controller"]
+
             now_node = Node(name=name,
                             is_interactive=is_interactive,
                             config=config,
-                            environment_prompt= self.environment_prompt,
+                            environment_prompt=self.environment_prompt,
                             agent_states=agent_states)
             nodes_dict[name] = now_node
-            
+
             if "root" in node.keys() and node["root"]:
                 self.root = now_node
         return nodes_dict
@@ -93,67 +92,91 @@ class SOP:
             component_dict = {}
             for component, component_args in value.items():
                 if component:
-                    
+
                     # "role" "style"
                     if component == "style":
                         component_dict["style"] = StyleComponent(
-                            component_args)
-                        
+                            component_args["role"], component_args["name"],
+                            component_args["style"])
+
                         # "task"
                     elif component == "task":
-                        component_dict["task"] = TaskComponent(component_args)
-                        
+                        component_dict["task"] = TaskComponent(
+                            component_args["task"])
+
                         # "rule"
                     elif component == "rule":
-                        component_dict["rule"] = RuleComponent(component_args)
-                        
+                        component_dict["rule"] = RuleComponent(
+                            component_args["rule"])
+
                         # "demonstration"
                     elif component == "demonstration":
                         component_dict[
                             "demonstration"] = DemonstrationComponent(
-                                component_args)
-                            
+                                component_args["demonstrations"])
+
                     # "output"
                     elif component == "output":
                         component_dict["output"] = OutputComponent(
-                            component_args)
-                        
-                     # "demonstrations"   
+                            component_args["output"])
+
+                    # "demonstrations"
                     elif component == "cot":
-                        component_dict["cot"] = CoTComponent(component_args)
+                        component_dict["cot"] = CoTComponent(
+                            component_args["demonstrations"])
 
                     #=================================================================================#
 
                     elif component == "RecomComponent":
                         component_dict["RecomComponent"] = RecomComponent()
-                        
+
                     # "output"
                     elif component == "StaticComponent":
                         component_dict["StaticComponent"] = StaticComponent(
-                            component_args)
-                        
-                    # "top_k"  "type" "knowledge_base" "system_prompt" "last_prompt"                        
+                            component_args["output"])
+
+                    # "top_k"  "type" "knowledge_base" "system_prompt" "last_prompt"
                     elif component == "KnowledgeBaseComponent":
                         component_dict["tool"] = KnowledgeBaseComponent(
-                            component_args)
-                        
+                            component_args["top_k"], component_args["type"],
+                            component_args["knowledge_path"])
+
                     elif component == "CategoryRequirementsComponent":
-                        component_dict["CategoryRequirementsComponent"] = CategoryRequirementsComponent(component_args)
-                        
-                    # "short_memory_extract_words"  "long_memory_extract_words" "system_prompt" "last_prompt" 
+                        component_dict[
+                            "CategoryRequirementsComponent"] = CategoryRequirementsComponent(
+                                component_args["information_path"])
+
+                    # "short_memory_extract_words"  "long_memory_extract_words" "system_prompt" "last_prompt"
                     elif component == "ExtractComponent":
                         component_dict["ExtractComponent"] = ExtractComponent(
-                            component_args)
-
+                            component_args["long_memory_extract_words"],
+                            component_args["short_memory_extract_words"],
+                            component_args["system_prompt"],
+                            component_args["last_prompt"])
+                    elif component == "WebSearchComponent":
+                        component_dict["WebSearchComponent"] = WebSearchComponent(
+                            component_args["engine_name"],
+                            component_args["api"],
+                            component_args["name"]
+                        )
+                    elif component == "WebCrawlComponent":
+                        component_dict["WebCrawlComponent"] = WebCrawlComponent(
+                            component_args["name"]
+                        )
+                    
             agent_states[key] = component_dict
+            
         return agent_states
-    
 
     def init_relation(self, sop):
         relation = sop["relation"]
         for key, value in relation.items():
             for keyword, next_node in value.items():
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
+
+    def load_date(self, task: TaskConfig):
+        self.current_node_name = task.current_node_name
+        self.shared_memory["chat_history"] = task.memory["chat_history"]
 
 
 class Node():
@@ -162,7 +185,7 @@ class Node():
                  name: str = None,
                  agent_states: dict = None,
                  is_interactive=False,
-                 environment_prompt = None,
+                 environment_prompt=None,
                  config: list = None):
 
         self.next_nodes = {}
@@ -203,26 +226,31 @@ class Node():
 
 
 class controller:
-    def __init__(self,controller_dict) -> None:
+
+    def __init__(self, controller_dict) -> None:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
-        
-    
-    def judge(self,node:Node,chat_history,args_dict=None):
+
+    def judge(self, node: Node, chat_history, args_dict=None):
         controller_dict = self.controller_dict[node.name]
         system_prompt = controller_dict["judge_system_prompt"]
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
-        response = get_gpt_response_rule(chat_history,system_prompt,last_prompt,args_dict=args_dict)
-        next_node = extract(response,extract_words)
+        response = get_gpt_response_rule(chat_history,
+                                         system_prompt,
+                                         last_prompt,
+                                         args_dict=args_dict)
+        next_node = extract(response, extract_words)
         return next_node
-    
-    def allocate_task(self,node:Node,chat_history,args_dict=None): 
+
+    def allocate_task(self, node: Node, chat_history, args_dict=None):
         controller_dict = self.controller_dict[node.name]
         system_prompt = controller_dict["call_system_prompt"]
         last_prompt = controller_dict["call_last_prompt"]
         extract_words = controller_dict["call_extract_words"]
-        response = get_gpt_response_rule(chat_history,system_prompt,last_prompt,args_dict=args_dict)
-        next_role = extract(response,extract_words)
-        return next_role
-    
+        response = get_gpt_response_rule(chat_history,
+                                         system_prompt,
+                                         last_prompt,
+                                         args_dict=args_dict)
+        next_name = extract(response, extract_words)
+        return next_name

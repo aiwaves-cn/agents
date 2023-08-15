@@ -20,7 +20,7 @@ connect(
 
 # 任务配置
 class TaskConfig(mongoengine.Document):
-    user_id = mongoengine.IntField()  # 用户ID
+    user_id = mongoengine.StringField()  # 用户ID
     memory = mongoengine.DictField()  # 长期记忆
     current_node_name = mongoengine.StringField()  # 当前节点的名字
 

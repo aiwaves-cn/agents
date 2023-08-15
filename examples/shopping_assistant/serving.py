@@ -90,7 +90,7 @@ def step(sop: SOP, controller: controller):
 
 if __name__ == "__main__":
     agent = Agent("AI导购", "吴家隆")
-    sop = SOP("new_shopping.json")
+    sop = SOP("shopping_assistant.json")
     controller = controller(sop.controller_dict)
     sop.agents = {"吴家隆": agent}
     agent.sop = sop
