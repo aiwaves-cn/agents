@@ -56,12 +56,6 @@ class Agent():
                 yield res
             return
 
-        current_memory = {
-            "role": "user",
-            "content": f"{user_name}({user_role}):{user_query}"
-        }
-        self.update_memory(current_memory)
-        
         self.args_dict["query"] = user_query
         self.args_dict["temperature"] = temperature
         response, res_dict = self.act(current_node)
@@ -70,11 +64,6 @@ class Agent():
         for res in response:
             all += res if res else ''
             yield res
-        current_memory = {
-            "role": "assistant",
-            "content": f"{self.name}({self.role}):{all}"
-        }
-        self.update_memory(current_memory)
 
         #====================================================#
         if "response" in res_dict and res_dict["response"]:
@@ -82,11 +71,6 @@ class Agent():
             for res in res_dict["response"]:
                 all +=res
                 yield res
-            current_memory = {
-            "role": "assistant",
-            "content": f"{self.name}({self.role}):{all}"
-        }
-            self.update_memory(current_memory)
             del res_dict["response"]
 
         #====================================================#
@@ -98,6 +82,7 @@ class Agent():
             key: value
             for key, value in task.memory.items()
         }
+        
 
     def act(self, node: Node):
         system_prompt, last_prompt, res_dict = node.compile(
@@ -131,13 +116,11 @@ class Agent():
                     return True
         return False
 
-    def update_memory(self, memory):
+    def updatememory(self,memory):
         self.args_dict["long_memory"]["chat_history"].append(memory)
 
 
-    def run(self,sop):
-        while True:
-            self.chat(sop)
+
 
 def run(sop:SOP,controller:controller,name = "A神",role = "客户"):
     while True:

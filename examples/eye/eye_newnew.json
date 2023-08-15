@@ -21,16 +21,16 @@
             "top_k": 1,
             "type": "QA",
             "knowledge_base": "/home/aiwaves/jlwu/multi-agent/agents/examples/eye/eye_database.json"
-          }
+          },
+          "config": [
+            "style",
+            "task",
+            "rule",
+            "KnowledgeBaseComponent"
+          ]
         }
       },
       "root": true,
-      "config": [
-        "style",
-        "task",
-        "rule",
-        "KnowledgeBaseComponent"
-      ],
       "controller": {
         "judge_system_prompt": "你现在需要做的是判断用户是否同意到医院。根据用户的回答，结合之前的对话，判断用户是否同意到院。\n如果用户同意到医院，你需要返回<结束>1</结束>，如果没有，你需要返回<结束>0</结束>。\n你需要格外关注上下文中Assitant和user分别说了什么。当用户回答好的，嗯嗯，没有问题了之类的回答时，返回<结束>1</结束>",
         "judge_last_prompt": "请联系上文，进行<结束>和</结束>的提取，不要进行额外的输出，请严格按照上述格式输出！记住，请严格按照上述格式输出！",
@@ -58,16 +58,16 @@
             "top_k": 1,
             "type": "QA",
             "knowledge_base": "/home/aiwaves/jlwu/multi-agent/agents/examples/eye/eye_database.json"
-          }
+          },
+          "config": [
+            "style",
+            "task",
+            "rule",
+            "KnowledgeBaseComponent"
+          ]
         }
       },
       "root": false,
-      "config": [
-        "style",
-        "task",
-        "rule",
-        "KnowledgeBaseComponent"
-      ],
       "controller": {
         "judge_system_prompt": "根据用户的回答，分析其与之前对话的关系，判断其是否填写了预约卡。\n 如果用户填写了预约卡中的电话信息，输出<结束>1</结束>\n如果用户没有填写完整或者格式有问题等输出<结束>0</结束>\n 你需要格外关注上下文,Assitant和user分别说了什么。当用户回答【电话】:15563665210，返回<结束>1</结束>。当用户回答【电话】: 15，返回<结束>0</结束>，因为没有填写完整。当用户回答【电话】:abs，返回<结束>0</结束>，因为没有填写完整",
         "judge_last_prompt": "请联系上文，进行<结束>和</结束>的提取，不要进行额外的输出，请严格按照上述格式输出！记住，请严格按照上述格式输出！",
@@ -95,16 +95,16 @@
             "top_k": 1,
             "type": "QA",
             "knowledge_base": "/home/aiwaves/jlwu/multi-agent/agents/examples/eye/eye_database.json"
-          }
+          },
+          "config": [
+            "style",
+            "task",
+            "rule",
+            "KnowledgeBaseComponent"
+          ]
         }
       },
-      "root": false,
-      "config": [
-        "style",
-        "task",
-        "rule",
-        "KnowledgeBaseComponent"
-      ]
+      "root": false
     },
     "node_end": {
       "name": "node_end",
