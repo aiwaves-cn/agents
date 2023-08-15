@@ -30,6 +30,7 @@ class SOP:
             sop = json.load(f)
         self.sop = sop
         self.root = None
+        self.config = {}
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
@@ -42,7 +43,7 @@ class SOP:
         self.current_node = self.root
 
         self.agents = {}
-
+        
     def init_nodes(self, sop):
         # node_sop: a list of the node
         node_sop = sop["nodes"]
@@ -68,7 +69,7 @@ class SOP:
             agent_states = self.init_states(node["agent_states"])
 
             # config ["style","rule",......]
-            config = node["config"]
+            config = self.config
 
             # contrller  {judge_system_prompt:,judge_last_prompt: ,call_system_prompt: , call_last_prompt}
 
@@ -164,6 +165,10 @@ class SOP:
                             component_args["name"]
                         )
                     
+                    # ====================================================
+                    elif component == "config":
+                        self.config[key] = component_args
+                    
             agent_states[key] = component_dict
             
         return agent_states
@@ -205,7 +210,7 @@ class Node():
         system_prompt = self.environment_prompt if self.environment_prompt else ""
         last_prompt = ""
         res_dict = {}
-        for component_name in self.config:
+        for component_name in self.config[role]:
             if component_name not in components:
                 continue
             component = components[component_name]
@@ -217,7 +222,7 @@ class Node():
                     args_dict)
             elif isinstance(component, ToolComponent):
                 response = component.func(args_dict)
-                print(response)
+                # print(response)
                 if "prompt" in response and response["prompt"]:
                     last_prompt += response["prompt"]
                 args_dict.update(response)

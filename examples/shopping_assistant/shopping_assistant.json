@@ -29,16 +29,16 @@
                   },
                   "CategoryRequirementsComponent":{
                     "information_path" : ["bb_info.json","toy_info.json"]
-                  }       
+                  },
+                  "config" :  [
+                    "CategoryRequirementsComponent",
+                    "style",
+                    "task",
+                    "rule",
+                    "output"
+                  ]       
                 }
               },
-            "config" :  [
-                "CategoryRequirementsComponent",
-                "style",
-                "task",
-                "rule",
-                "output"
-              ],
             
             "controller" : 
                  {

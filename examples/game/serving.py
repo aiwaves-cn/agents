@@ -58,18 +58,16 @@ def step(sop: SOP, controller: controller):
     return next_node, next_role
 
 
-def autorun(sop: SOP, controller: controller, name="吴家隆", role="AI导购"):
+def autorun(sop: SOP, controller: controller, name="裁判员", role="球球"):
     current_node = sop.current_node
     print(current_node.name)
-    current_memory = {"role": "assistant", "content": f"{name}({role}):欢迎来到店铺，请问您有什么需要该买吗"}
+    current_memory = {"role": "assistant", "content": f"{name}({role}):现在请你们进行真假杨不凡游戏"}
     updatememory(current_memory,sop)
     
     while True:
         next_node, next_role = step(sop, controller)
         current_node = next_node
         sop.current_node = current_node
-        if next_role == role:
-            break
         current_agent = sop.agents[next_role]
         current_agent = sop.agents[next_role]
         response = current_agent.step(
@@ -94,13 +92,12 @@ def updatememory(memory,sop):
 
 
 if __name__ == "__main__":
-    shopping_assistant = Agent("AI导购", "吴家隆")
-    customer = Agent("客户","A神")
-    sop = SOP("muti_shop.json")
+    judge = Agent("裁判员", "球球")
+    gamer1 = Agent("游戏者1", "杨不凡1")
+    gamer2 = Agent("游戏者2", "杨不凡2")
+    gamer3 = Agent("游戏者3", "杨不凡3")
+    sop = SOP("game.json")
     controller = controller(sop.controller_dict)
     
-    sop.agents = {"吴家隆": shopping_assistant,"A神":customer}
-    shopping_assistant.sop = sop
-    
-    customer.sop = sop
+    sop.agents = {"球球": judge,"杨不凡1":gamer1,"杨不凡2":gamer2,"杨不凡3":gamer3}
     autorun(sop, controller)
