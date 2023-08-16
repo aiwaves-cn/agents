@@ -483,36 +483,4 @@ class APIComponent(ToolComponent):
         pass
 
 
-if __name__ == '__main__':
-    """test"""
-    """多样性来源于: 搜索源的多样性、搜索内容的多样性"""
-    api = {
-        "google": dict(cse_id="04fdc27dcd8d44719", api_key="AIzaSyB63w8H3K77KYpgl7MW53oErJvL8O1x4_U"),
-        "bing": "f745c2a4186a462181103bf973c21afb"
-    }
-    # agent_dict = {"query": "2023年游戏产业报告"}
-    agent_dict = {"query": "古代言情穿越小说怎么写"}
-    web_search = WebSearchComponent(engine_name="bing", api=api)
-    web_crawl = WebCrawlComponent()
-
-    """策略：每个搜索引擎取top3，然后分别爬取得到内容"""
-    search_results = []
-    search_results.extend(
-        web_search.func(agent_dict=agent_dict)["meta data"][0:3]
-    )
-    web_search.convert_search_engine_to("google")
-    search_results.extend(
-        web_search.func(agent_dict=agent_dict)["meta data"][0:3]
-    )
-
-    """每个网页进去爬"""
-    content = []
-    for results in search_results:
-        agent_dict["url"] = results["link"]
-        content.append(f"{'#'*18}url:{results['link']}{'#'*18}")
-        content.append(web_crawl.func(agent_dict)["content"])
-
-    """写入文件"""
-    with open(f"./{agent_dict['query']}.txt", "w", encoding="utf-8") as f:
-        f.writelines("\n".join(content))
 

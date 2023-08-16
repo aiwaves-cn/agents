@@ -91,9 +91,9 @@ class SOP:
 
     def init_states(self, agent_states_dict: dict):
         agent_states = {}
-        for key, value in agent_states_dict.items():
+        for role, components in agent_states_dict.items():
             component_dict = {}
-            for component, component_args in value.items():
+            for component, component_args in components.items():
                 if component:
 
                     # "role" "style"
@@ -102,7 +102,7 @@ class SOP:
                             component_args["role"], component_args["name"],
                             component_args["style"])
                         if component_args["name"] not in self.agents_role_name:
-                            self.agents_role_name[component_args["name"]] = key
+                            self.agents_role_name[component_args["name"]] = role
 
                         # "task"
                     elif component == "task":
@@ -171,9 +171,9 @@ class SOP:
 
                     # ====================================================
                     elif component == "config":
-                        self.config[key] = component_args
+                        self.config[role] = component_args
 
-            agent_states[key] = component_dict
+            agent_states[role] = component_dict
 
         return agent_states
 
@@ -193,7 +193,7 @@ class SOP:
                                          summary=self.shared_memory["summary"])
         return response
 
-    def updatememory(self, memory):
+    def update_memory(self, memory):
         self.shared_memory["chat_history"].append(memory)
         summary = None
         if len(self.shared_memory["chat_history"]) > MAX_CHAT_HISTORY:
@@ -262,7 +262,7 @@ class controller:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
 
-    def judge(self, node: Node, chat_history, **kwargs):
+    def transit(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt = controller_dict["judge_system_prompt"]
         last_prompt = controller_dict["judge_last_prompt"]
@@ -272,7 +272,7 @@ class controller:
         next_node = extract(response, extract_words)
         return next_node
 
-    def allocate_task(self, node: Node, chat_history, **kwargs):
+    def route(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt = controller_dict["call_system_prompt"]
         
@@ -283,5 +283,21 @@ class controller:
         extract_words = controller_dict["call_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,
                                          last_prompt, **kwargs)
-        next_name = extract(response, extract_words)
-        return next_name
+        next_role = extract(response, extract_words)
+        return next_role
+    
+    
+    def next(self,sop: SOP):
+        current_node = sop.current_node
+        if len(current_node.next_nodes) == 1:
+            next_node = "0"
+        else:
+            next_node = self.transit(current_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"])
+        next_node = current_node.next_nodes[next_node]
+        if len(sop.agents.keys()) == 1:
+            next_role = list(sop.agents.keys())[0]
+        else:
+            next_role = self.route(
+                next_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"]
+            )
+        return next_node, next_role
