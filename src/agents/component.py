@@ -44,7 +44,7 @@ class PromptComponent():
         pass
 
     @abstractmethod
-    def get_prompt(self,args_dict):
+    def get_prompt(self,agent_dict):
         pass
 
 class ToolComponent():
@@ -63,7 +63,7 @@ class TaskComponent(PromptComponent):
         super().__init__()
         self.task = task
 
-    def get_prompt(self,args_dict):
+    def get_prompt(self,agent_dict):
         return f"""你需要执行的任务是:{self.task}。"""
 
 
@@ -73,9 +73,16 @@ class OutputComponent(PromptComponent):
         super().__init__()
         self.output = output
 
-    def get_prompt(self,args_dict):
+    def get_prompt(self,agent_dict):
         return f"""请联系上文，进行<{self.output}>和</{self.output}>的提取，不要进行额外的输出，请严格按照上述格式输出！"""
 
+class LastComponent(PromptComponent):
+    def __init__(self,last_prompt):
+        super().__init__()
+        self.last_prompt = last_prompt
+    
+    def get_prompt(self, agent_dict):
+        return self.last_prompt
 
 class StyleComponent(PromptComponent):
     """
@@ -88,7 +95,7 @@ class StyleComponent(PromptComponent):
         self.name = name
         self.style = style
 
-    def get_prompt(self,args_dict):
+    def get_prompt(self,agent_dict):
         return f"""现在你的身份为：{self.role}，你的名字是:{self.name}。你需要遵循以下的输出风格：{self.style}。"""
 
 
@@ -98,7 +105,7 @@ class RuleComponent(PromptComponent):
         super().__init__()
         self.rule = rule
 
-    def get_prompt(self,args_dict):
+    def get_prompt(self,agent_dict):
         return f"""你需要遵循的规则是:{self.rule}。"""
 
 
@@ -114,7 +121,7 @@ class DemonstrationComponent(PromptComponent):
     def add_demonstration(self, demonstration):
         self.demonstrations.append(demonstration)
 
-    def get_prompt(self,args_dict):
+    def get_prompt(self,agent_dict):
         prompt = "以下是你可以参考的例子：\n"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
@@ -133,8 +140,8 @@ class CoTComponent(PromptComponent):
     def add_demonstration(self, demonstration):
         self.demonstrations.append(demonstration)
 
-    def get_prompt(self,args_dict):
-        prompt = "你在输出前需要以下是你可以参考的例子：\n"
+    def get_prompt(self,agent_dict):
+        prompt = "你在输出前需要进行详细思考，思考案例如下：\n"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
         return prompt
@@ -145,8 +152,8 @@ class IputComponent(PromptComponent):
     def __init__(self):
         super().__init__()
 
-    def get_prompt(self,args_dict):
-        information=args_dict["information"]
+    def get_prompt(self,agent_dict):
+        information=agent_dict["information"]
         return f"你需要知道的是：{information}"
 
 
@@ -168,8 +175,8 @@ class KnowledgeBaseComponent(ToolComponent):
             self.kb_embeddings, self.kb_chunks = load_knowledge_base_UnstructuredFile(
                 self.knowledge_base)
 
-    def func(self, args_dict):
-        query = args_dict["query"]
+    def func(self, agent_dict):
+        query = agent_dict["query"]
         knowledge = ""
         query = "为这个句子生成表示以用于检索相关文章：" + query
         query_embedding = self.embedding_model.encode(query, normalize_embeddings=True)
@@ -219,56 +226,14 @@ class StaticComponent(ToolComponent):
         super().__init__()
         self.output = output
 
-    def func(self, args_dict):
+    def func(self, agent_dict):
         memory = {}
-        memory.update(args_dict["long_memory"])
-        memory.update(args_dict["short_memory"])
+        memory.update(agent_dict["long_memory"])
+        memory.update(agent_dict["short_memory"])
 
         outputdict = {"response": self.output}
         return outputdict
         
-        
-class RecomComponent(ToolComponent):
-
-    def __init__(self):
-        super().__init__()
-
-    def func(self, args_dict):
-        """
-        return the recommend of the search shop
-        """
-        memory = {}
-        memory.update(args_dict["long_memory"])
-        memory.update(args_dict["short_memory"])
-
-        outputdict = {"response": ""}
-        top_category = memory["category"]
-        request_items = memory["request_items"]
-        chat_history = memory["chat_history"]
-
-        if top_category:
-            import sys
-            import os
-            current_path = os.path.abspath(__file__)
-            current_path = os.path.dirname(current_path)
-            sys.path.append(
-                os.path.join(current_path,
-                             '../../examples/shopping_assistant'))
-            from tool_prompt import prompt_cat_recom_top
-            prompt = prompt_cat_recom_top(top_category)
-            chat_answer_generator = get_gpt_response_rule_stream(
-                chat_history,
-                prompt,
-                None,
-                args_dict=args_dict,
-                temperature=args_dict["temperature"])
-            
-            outputdict["response"] = chat_answer_generator
-
-        elif not request_items:
-            chat_answer = "\\n抱歉呢，亲亲，我们目前没有搜索到您需要的商品，您可以继续提出需求方便我们进行搜寻。"
-            outputdict["response"] = chat_answer
-        return outputdict
 
 
 class ExtractComponent(ToolComponent):
@@ -279,14 +244,14 @@ class ExtractComponent(ToolComponent):
         self.system_prompt = system_prompt
         self.last_prompt = last_prompt if last_prompt else None
         
-    def func(self,args_dict):
-        response = get_gpt_response_rule(args_dict["long_memory"]["chat_history"],self.system_prompt,self.last_prompt,args_dict=args_dict)
+    def func(self,agent_dict):
+        response = get_gpt_response_rule(agent_dict["long_memory"]["chat_history"],self.system_prompt,self.last_prompt,agent_dict=agent_dict)
         for extract_word in self.long_memory_extract_words:
             key = extract(response,extract_word)
-            args_dict["long_memory"][extract_word] = key
+            agent_dict["long_memory"][extract_word] = key
         for extract_word in self.short_memory_extract_words:
             key = extract(response,extract_word)
-            args_dict["short_memory"][extract_word] = key
+            agent_dict["short_memory"][extract_word] = key
         return {}
     
         
@@ -329,9 +294,9 @@ class  CategoryRequirementsComponent(ToolComponent):
                 break
         return knowledge
     
-    def func(self,args_dict):
+    def func(self,agent_dict):
         prompt = ""
-        messages = args_dict["long_memory"]["chat_history"]
+        messages = agent_dict["long_memory"]["chat_history"]
         outputdict = {}
         functions = [
         {
@@ -369,7 +334,7 @@ class  CategoryRequirementsComponent(ToolComponent):
         top1_score = topk_result[1][0]
         request_items, top_category = search_with_api(requirements, category)
         if top1_score > MIN_CATEGORY_SIM:
-            args_dict["long_memory"]['category'] = topk_result[0][0]
+            agent_dict["long_memory"]['category'] = topk_result[0][0]
             category = topk_result[0][0]
             information = self.search_information(topk_result[0][0],
                                                   self.information_dataset)
@@ -398,13 +363,12 @@ class WebSearchComponent(ToolComponent):
     """搜索引擎"""
     __ENGINE_NAME__: List = ["google", "bing"]
 
-    def __init__(self, engine_name: str, api: Dict, name: str = "search engine"):
+    def __init__(self, engine_name: str, api: Dict):
         """
         :param engine_name: 使用的搜索引擎的名称
         :param api: 传入一个字典, 比如{"bing":"key1", "google":"key2", ...}，当然每个value也可以是list，或者更加复杂的
-        :param name: 当前工具的名称为search
         """
-        super(WebSearchComponent, self).__init__(name)
+        super(WebSearchComponent, self).__init__()
         """判断api的key和engine_name是否合法"""
 
         assert engine_name in WebSearchComponent.__ENGINE_NAME__
@@ -460,9 +424,9 @@ class WebSearchComponent(ToolComponent):
         print(metadata_results)
         return {"meta data": metadata_results}
 
-    def func(self, args_dict: Dict, **kwargs) -> Dict:
+    def func(self, agent_dict: Dict, **kwargs) -> Dict:
         search_results = self.search[self.engine_name](
-            query=args_dict["query"],
+            query=agent_dict["query"],
             **kwargs
         )
         
@@ -476,12 +440,11 @@ class WebSearchComponent(ToolComponent):
 class WebCrawlComponent(ToolComponent):
     """打开一个single的网页进行爬取"""
 
-    def __init__(self, name: str = "crawl engine"):
-        super(WebCrawlComponent, self).__init__(name)
-        self.name = name
+    def __init__(self):
+        super(WebCrawlComponent, self).__init__()
 
-    def func(self, args_dict: Dict) -> Dict:
-        url = args_dict["url"]
+    def func(self, agent_dict: Dict) -> Dict:
+        url = agent_dict["url"]
         print(f"crawling {url} ......")
         content = ""
         """从url中爬取内容，感觉可能需要根据不同的网站进行，比如wiki、baidu、zhihu, etc."""
@@ -516,7 +479,7 @@ class APIComponent(ToolComponent):
     def __init__(self, name):
         super(APIComponent, self).__init__(name)
 
-    def func(self, args_dict: Dict) -> Dict:
+    def func(self, agent_dict: Dict) -> Dict:
         pass
 
 
@@ -527,29 +490,29 @@ if __name__ == '__main__':
         "google": dict(cse_id="04fdc27dcd8d44719", api_key="AIzaSyB63w8H3K77KYpgl7MW53oErJvL8O1x4_U"),
         "bing": "f745c2a4186a462181103bf973c21afb"
     }
-    # args_dict = {"query": "2023年游戏产业报告"}
-    args_dict = {"query": "古代言情穿越小说怎么写"}
+    # agent_dict = {"query": "2023年游戏产业报告"}
+    agent_dict = {"query": "古代言情穿越小说怎么写"}
     web_search = WebSearchComponent(engine_name="bing", api=api)
     web_crawl = WebCrawlComponent()
 
     """策略：每个搜索引擎取top3，然后分别爬取得到内容"""
     search_results = []
     search_results.extend(
-        web_search.func(args_dict=args_dict)["meta data"][0:3]
+        web_search.func(agent_dict=agent_dict)["meta data"][0:3]
     )
     web_search.convert_search_engine_to("google")
     search_results.extend(
-        web_search.func(args_dict=args_dict)["meta data"][0:3]
+        web_search.func(agent_dict=agent_dict)["meta data"][0:3]
     )
 
     """每个网页进去爬"""
     content = []
     for results in search_results:
-        args_dict["url"] = results["link"]
+        agent_dict["url"] = results["link"]
         content.append(f"{'#'*18}url:{results['link']}{'#'*18}")
-        content.append(web_crawl.func(args_dict)["content"])
+        content.append(web_crawl.func(agent_dict)["content"])
 
     """写入文件"""
-    with open(f"./{args_dict['query']}.txt", "w", encoding="utf-8") as f:
+    with open(f"./{agent_dict['query']}.txt", "w", encoding="utf-8") as f:
         f.writelines("\n".join(content))
 

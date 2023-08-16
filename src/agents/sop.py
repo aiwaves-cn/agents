@@ -30,20 +30,22 @@ class SOP:
             sop = json.load(f)
         self.sop = sop
         self.root = None
+        self.agents_role_name = {}
+
         self.config = {}
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
 
         self.environment_prompt = sop["environment_prompt"]
-        self.shared_memory = {"chat_history": []}
+        self.shared_memory = {"chat_history": [],"summary":""}
         self.controller_dict = {}
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
         self.current_node = self.root
 
         self.agents = {}
-        
+
     def init_nodes(self, sop):
         # node_sop: a list of the node
         node_sop = sop["nodes"]
@@ -99,6 +101,8 @@ class SOP:
                         component_dict["style"] = StyleComponent(
                             component_args["role"], component_args["name"],
                             component_args["style"])
+                        if component_args["name"] not in self.agents_role_name:
+                            self.agents_role_name[component_args["name"]] = key
 
                         # "task"
                     elif component == "task":
@@ -121,15 +125,16 @@ class SOP:
                         component_dict["output"] = OutputComponent(
                             component_args["output"])
 
+                    elif component == "last":
+                        component_dict["last"] = LastComponent(
+                            component_args["last_prompt"])
+
                     # "demonstrations"
                     elif component == "cot":
                         component_dict["cot"] = CoTComponent(
                             component_args["demonstrations"])
 
                     #=================================================================================#
-
-                    elif component == "RecomComponent":
-                        component_dict["RecomComponent"] = RecomComponent()
 
                     # "output"
                     elif component == "StaticComponent":
@@ -155,22 +160,21 @@ class SOP:
                             component_args["system_prompt"],
                             component_args["last_prompt"])
                     elif component == "WebSearchComponent":
-                        component_dict["WebSearchComponent"] = WebSearchComponent(
-                            component_args["engine_name"],
-                            component_args["api"],
-                            component_args["name"]
-                        )
+                        component_dict[
+                            "WebSearchComponent"] = WebSearchComponent(
+                                component_args["engine_name"],
+                                component_args["api"], component_args["name"])
                     elif component == "WebCrawlComponent":
-                        component_dict["WebCrawlComponent"] = WebCrawlComponent(
-                            component_args["name"]
-                        )
-                    
+                        component_dict[
+                            "WebCrawlComponent"] = WebCrawlComponent(
+                                component_args["name"])
+
                     # ====================================================
                     elif component == "config":
                         self.config[key] = component_args
-                    
+
             agent_states[key] = component_dict
-            
+
         return agent_states
 
     def init_relation(self, sop):
@@ -178,6 +182,28 @@ class SOP:
         for key, value in relation.items():
             for keyword, next_node in value.items():
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
+
+    def summary(self):
+        system_prompt = self.environment_prompt + "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
+        last_prompt = "请你根据历史的聊天记录进行概括，输出格式为 历史摘要：\{你总结的内容\}"
+        response = get_gpt_response_rule(self.shared_memory["chat_history"],
+                                         system_prompt,
+                                         last_prompt,
+                                         log_path=self.log_path,
+                                         summary=self.shared_memory["summary"])
+        return response
+
+    def updatememory(self, memory):
+        self.shared_memory["chat_history"].append(memory)
+        summary = None
+        if len(self.shared_memory["chat_history"]) > MAX_CHAT_HISTORY:
+            summary = self.summary()
+            self.shared_memory["chat_history"] = self.shared_memory["chat_history"][-2:]
+            self.shared_memory["summary"] = summary
+
+        for agent in self.agents.values():
+            agent.agent_dict["long_memory"]["chat_history"] = self.shared_memory["chat_history"]
+            agent.agent_dict["long_memory"]["summary"] = summary
 
     def load_date(self, task: TaskConfig):
         self.current_node_name = task.current_node_name
@@ -200,12 +226,12 @@ class Node():
         self.environment_prompt = environment_prompt
         self.config = config
 
-    def get_state(self, role, args_dict):
-        system_prompt, last_prompt = self.compile(role, args_dict)
+    def get_state(self, role, agent_dict):
+        system_prompt, last_prompt = self.compile(role, agent_dict)
         current_role_state = f"目前的角色为：{role}，它的system_prompt为{system_prompt},last_prompt为{last_prompt}"
         return current_role_state
 
-    def compile(self, role, args_dict: dict):
+    def compile(self, role, agent_dict: dict):
         components = self.agent_states[role]
         system_prompt = self.environment_prompt if self.environment_prompt else ""
         last_prompt = ""
@@ -214,18 +240,18 @@ class Node():
             if component_name not in components:
                 continue
             component = components[component_name]
-            if isinstance(component, OutputComponent):
+            if isinstance(component, (OutputComponent, LastComponent)):
                 last_prompt = last_prompt + "\n" + component.get_prompt(
-                    args_dict)
+                    agent_dict)
             elif isinstance(component, PromptComponent):
                 system_prompt = system_prompt + "\n" + component.get_prompt(
-                    args_dict)
+                    agent_dict)
             elif isinstance(component, ToolComponent):
-                response = component.func(args_dict)
+                response = component.func(agent_dict)
                 # print(response)
                 if "prompt" in response and response["prompt"]:
-                    last_prompt += response["prompt"]
-                args_dict.update(response)
+                    last_prompt = last_prompt + "\n" + response["prompt"]
+                agent_dict.update(response)
                 res_dict.update(response)
         return system_prompt, last_prompt, res_dict
 
@@ -236,26 +262,26 @@ class controller:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
 
-    def judge(self, node: Node, chat_history, args_dict=None):
+    def judge(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt = controller_dict["judge_system_prompt"]
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
-        response = get_gpt_response_rule(chat_history,
-                                         system_prompt,
-                                         last_prompt,
-                                         args_dict=args_dict)
+        response = get_gpt_response_rule(chat_history, system_prompt,
+                                         last_prompt, **kwargs)
         next_node = extract(response, extract_words)
         return next_node
 
-    def allocate_task(self, node: Node, chat_history, args_dict=None):
+    def allocate_task(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt = controller_dict["call_system_prompt"]
-        last_prompt = controller_dict["call_last_prompt"]
+        
+        index = chat_history[-1]["content"].find("：")
+        last_name = chat_history[-1]["content"][:index] if index != -1 else ""
+        last_prompt = f"上一个发言的人为{last_name}\n"
+        last_prompt += controller_dict["call_last_prompt"] 
         extract_words = controller_dict["call_extract_words"]
-        response = get_gpt_response_rule(chat_history,
-                                         system_prompt,
-                                         last_prompt,
-                                         args_dict=args_dict)
+        response = get_gpt_response_rule(chat_history, system_prompt,
+                                         last_prompt, **kwargs)
         next_name = extract(response, extract_words)
         return next_name
