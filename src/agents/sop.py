@@ -115,9 +115,9 @@ class SOP:
                             component_args["rule"])
 
                         # "demonstration"
-                    elif component == "demonstrations":
+                    elif component == "demonstration":
                         component_dict[
-                            "demonstrations"] = DemonstrationComponent(
+                            "demonstration"] = DemonstrationComponent(
                                 component_args["demonstrations"])
 
                     # "output"
@@ -292,12 +292,12 @@ class controller:
         if len(current_node.next_nodes) == 1:
             next_node = "0"
         else:
-            next_node = self.transit(current_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"])
+           next_node = self.transit(node=current_node, chat_history=sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"],environment_prompt = sop.environment_prompt)
         next_node = current_node.next_nodes[next_node]
         if len(sop.agents.keys()) == 1:
             next_role = list(sop.agents.keys())[0]
         else:
             next_role = self.route(
-                next_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"]
-            )
+            node=next_node, chat_history=sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"],environment_prompt = sop.environment_prompt
+        )
         return next_node, next_role
