@@ -76,6 +76,20 @@ def extract(text, type):
     target_str = get_content_between_a_b(f'<{type}>', f'</{type}>', text)
     return target_str
 
+def save_logs(log_path,messages,response):
+    if not os.path.exists(log_path):
+        os.mkdir(log_path)
+    log_path =log_path if log_path else "logs"
+    log = {}
+    log["input"] = messages
+    log["output"] = response
+    os.makedirs(log_path, exist_ok=True)
+    log_file = os.path.join(
+        log_path,
+        datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
+    with open(log_file, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
+
 
 def get_gpt_response_function(chat_history,
                               system_prompt,
@@ -84,7 +98,7 @@ def get_gpt_response_function(chat_history,
                               functions=None,
                               function_call="auto",
                               temperature=0,
-                              args_dict=None):
+                              **kwargs):
     """get the response of chatgpt
 
     Args:
@@ -115,17 +129,8 @@ def get_gpt_response_function(chat_history,
         temperature=temperature,
     )
     
-    if args_dict:
-        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
-        log = {}
-        log["input"] = messages
-        log["output"] = response
-        os.makedirs(log_path, exist_ok=True)
-        log_file = os.path.join(
-            log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-        with open(log_file, "w", encoding="utf-8") as f:
-            json.dump(log, f, ensure_ascii=False, indent=2)
+    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
+    save_logs(log_path,messages,response)
             
     return response.choices[0].message
 
@@ -135,7 +140,7 @@ def get_gpt_response_rule(chat_history,
                           last_prompt=None,
                           model="gpt-3.5-turbo-16k-0613",
                           temperature=0,
-                          args_dict=None):
+                          **kwargs):
     """get the response of chatgpt
 
     Args:
@@ -150,32 +155,30 @@ def get_gpt_response_rule(chat_history,
     openai.api_key = API_KEY
     openai.proxy = PROXY
 
+    
     messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
         messages += chat_history
-    if last_prompt:
+    
+    summary = kwargs["summary"] if "summary" in kwargs else None
+    if last_prompt or summary:
+        last_prompt = last_prompt if last_prompt else ""
+        last_prompt = f"你已知的信息为：{summary}" + last_prompt if summary else last_prompt
         messages += [{"role": "system", "content": f"{last_prompt}"}]
+    
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
         temperature=temperature,
     )
-    # print(messages)
-    if args_dict:
-        log_path = args_dict["log_path"] if args_dict["log_path"] else "logs"
-        log = {}
-        log["input"] = messages
-        log["output"] = response
-        os.makedirs(log_path, exist_ok=True)
-        log_file = os.path.join(
-            log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-        with open(log_file, "w", encoding="utf-8") as f:
-            json.dump(log, f, ensure_ascii=False, indent=2)
-    # print(response.choices[0].message["content"])
+    
+    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
+    save_logs(log_path,messages,response)
+    
     return response.choices[0].message["content"]
+
 
 
 def get_gpt_response_rule_stream(chat_history,
@@ -183,7 +186,7 @@ def get_gpt_response_rule_stream(chat_history,
                                  last_prompt=None,
                                  model="gpt-3.5-turbo-16k-0613",
                                  temperature=0.3,
-                                 args_dict=None):
+                                 **kwargs):
     """get the response of chatgpt
 
     Args:
@@ -198,17 +201,23 @@ def get_gpt_response_rule_stream(chat_history,
     openai.api_key = API_KEY
     openai.proxy = PROXY
     
-    if args_dict:
-        system_prompt = system_prompt + "请你的回复尽量简洁" if "answer_simplify" in args_dict else system_prompt
-        last_prompt = last_prompt + "请你的回复尽量简洁" if "answer_simplify" in args_dict else last_prompt
+    active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
+    if active_mode:
+        system_prompt = system_prompt + "请你的回复尽量简洁" 
+        last_prompt = last_prompt + "请你的回复尽量简洁"
 
     messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
         messages += chat_history
-    if last_prompt:
-        messages += [{"role": "system", "content": last_prompt}]
+        
+    summary = kwargs["summary"] if "summary" in kwargs else None
+    if last_prompt or summary:
+        last_prompt = last_prompt if last_prompt else ""
+        last_prompt = f"你已知的信息为：{summary}" + last_prompt if summary else last_prompt
+        messages += [{"role": "system", "content": f"{last_prompt}"}]
+        
     # print(messages)
     response = openai.ChatCompletion.create(model=model,
                                             messages=messages,
@@ -222,17 +231,10 @@ def get_gpt_response_rule_stream(chat_history,
             ans += r
             yield r
             
-    if args_dict:
-        log_path = args_dict["log_path"] if "log_path" in args_dict else "logs"
-        log = {}
-        log["input"] = messages
-        log["output"] = ans
-        os.makedirs(log_path, exist_ok=True)
-        log_file = os.path.join(
-            log_path,
-            datetime.datetime.now().strftime('%Y-%m-%d%H:%M:%S') + ".json")
-        with open(log_file, "w", encoding="utf-8") as f:
-            json.dump(log, f, ensure_ascii=False, indent=2)
+    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
+    save_logs(log_path,messages,ans)
+
+
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):
@@ -633,13 +635,6 @@ def search_with_api(requirements, categery):
         request_items = request_items[:FETSIZE]
     return request_items, new_top
 
-
-def response_to_string(response):
-    all = ""
-    for data in response:
-        all += data.choices[0]['delta'].get(
-            'content') if data.choices[0]['delta'].get('content') else ''
-    return all
 
 
 if __name__ == '__main__':

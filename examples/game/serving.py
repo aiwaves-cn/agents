@@ -35,7 +35,7 @@ def run(sop: SOP, controller: controller, name="A神", role="user"):
                 time.sleep(0.02)
             print()
             sop.shared_memory["chat_history"].append(
-                {"role": "assistant", "content": all}
+                {"role": "user", "content": all}
             )
 
             if flag:
@@ -47,13 +47,13 @@ def step(sop: SOP, controller: controller):
     if len(current_node.next_nodes) == 1:
         next_node = "0"
     else:
-        next_node = controller.judge(current_node, sop.shared_memory["chat_history"])
+        next_node = controller.judge(current_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"])
     next_node = current_node.next_nodes[next_node]
     if len(sop.agents.keys()) == 1:
         next_role = list(sop.agents.keys())[0]
     else:
         next_role = controller.allocate_task(
-            next_node, sop.shared_memory["chat_history"]
+            next_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"]
         )
     return next_node, next_role
 
@@ -61,8 +61,8 @@ def step(sop: SOP, controller: controller):
 def autorun(sop: SOP, controller: controller, name="裁判员", role="球球"):
     current_node = sop.current_node
     print(current_node.name)
-    current_memory = {"role": "assistant", "content": f"{name}({role}):现在请你们进行真假杨不凡游戏"}
-    updatememory(current_memory,sop)
+    current_memory = {"role": "user", "content": f"{name}({role}):现在请你们进行真假杨不凡游戏"}
+    sop.updatememory(current_memory)
     
     while True:
         next_node, next_role = step(sop, controller)
@@ -79,25 +79,19 @@ def autorun(sop: SOP, controller: controller, name="裁判员", role="球球"):
             print(res, end="")
             time.sleep(0.02)
         print()
-        memory = (
-            {"role": "assistant", "content": all}
+        current_memory = (
+            {"role": "user", "content": all}
         )
-        updatememory(memory,sop)
-
-
-def updatememory(memory,sop):
-    sop.shared_memory["chat_history"].append(memory)
-    for agent in sop.agents.values():
-        agent.updatememory(memory)
-
+        
+        sop.updatememory(current_memory)
+        
+def init_agents(sop):
+    for name,role in sop.agents_role_name.items():
+        agent = Agent(role,name)
+        sop.agents[role] = agent
 
 if __name__ == "__main__":
-    judge = Agent("裁判员", "球球")
-    gamer1 = Agent("游戏者1", "杨不凡1")
-    gamer2 = Agent("游戏者2", "杨不凡2")
-    gamer3 = Agent("游戏者3", "杨不凡3")
     sop = SOP("game.json")
     controller = controller(sop.controller_dict)
-    
-    sop.agents = {"球球": judge,"杨不凡1":gamer1,"杨不凡2":gamer2,"杨不凡3":gamer3}
+    init_agents(sop)
     autorun(sop, controller)

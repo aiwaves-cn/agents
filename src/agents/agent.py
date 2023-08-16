@@ -40,7 +40,7 @@ class Agent():
         self.current_node_name = None
         self.sop = None
         
-        self.args_dict = {
+        self.agent_dict = {
             "short_memory": {},
             "long_memory": {"chat_history":[]},
         }
@@ -49,15 +49,15 @@ class Agent():
         """
         reply api ,The interface set for backend calls 
         """
-        if self.judge_sensitive(user_query):
-            response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
-            for res in response:
-                time.sleep(0.02)
-                yield res
-            return
+        # if self.judge_sensitive(user_query):
+        #     response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
+        #     for res in response:
+        #         time.sleep(0.02)
+        #         yield res
+        #     return
 
-        self.args_dict["query"] = user_query
-        self.args_dict["temperature"] = temperature
+        self.agent_dict["query"] = user_query
+        self.agent_dict["temperature"] = temperature
         response, res_dict = self.act(current_node)
 
         all = ""
@@ -78,7 +78,7 @@ class Agent():
 
     def load_date(self, task:TaskConfig):
         self.current_node_name = task.current_node_name
-        self.args_dict["long_memory"] = {
+        self.agent_dict["long_memory"] = {
             key: value
             for key, value in task.memory.items()
         }
@@ -86,14 +86,14 @@ class Agent():
 
     def act(self, node: Node):
         system_prompt, last_prompt, res_dict = node.compile(
-            self.role, self.args_dict)
-        chat_history = self.args_dict["long_memory"]["chat_history"]
-        temperature = self.args_dict["temperature"]
+            self.role, self.agent_dict)
+        chat_history = self.agent_dict["long_memory"]["chat_history"]
+        temperature = self.agent_dict["temperature"]
         response = get_gpt_response_rule_stream(chat_history,
                                                 system_prompt,
                                                 last_prompt,
                                                 temperature=temperature,
-                                                args_dict=self.args_dict)
+                                                summary = self.agent_dict["long_memory"]["summary"])
 
         return response, res_dict
     
@@ -115,9 +115,6 @@ class Agent():
                 if seg in lines:
                     return True
         return False
-
-    def updatememory(self,memory):
-        self.args_dict["long_memory"]["chat_history"].append(memory)
 
 
 
