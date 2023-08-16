@@ -115,9 +115,9 @@ class SOP:
                             component_args["rule"])
 
                         # "demonstration"
-                    elif component == "demonstration":
+                    elif component == "demonstrations":
                         component_dict[
-                            "demonstration"] = DemonstrationComponent(
+                            "demonstrations"] = DemonstrationComponent(
                                 component_args["demonstrations"])
 
                     # "output"
@@ -264,7 +264,7 @@ class controller:
 
     def transit(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
-        system_prompt = controller_dict["judge_system_prompt"]
+        system_prompt = kwargs["environment_prompt"] + "\n"+controller_dict["judge_system_prompt"]
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,
@@ -274,7 +274,7 @@ class controller:
 
     def route(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
-        system_prompt = controller_dict["call_system_prompt"]
+        system_prompt = kwargs["environment_prompt"] + "\n"+controller_dict["call_system_prompt"]
         
         index = chat_history[-1]["content"].find("：")
         last_name = chat_history[-1]["content"][:index] if index != -1 else ""
