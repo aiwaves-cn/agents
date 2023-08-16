@@ -16,11 +16,10 @@ def run(sop: SOP, controller: controller, name="A神", role="user"):
         current_memory = {"role": "user", "content": f"{name}({role}):{query}"}
         sop.shared_memory["chat_history"].append(current_memory)
         while True:
-            next_node, next_role = step(sop, controller)
+            next_node, next_role = controller.next(sop, controller)
             flag = next_node.is_interactive
             current_node = next_node
             sop.current_node = current_node
-
             if next_role == role:
                 break
             current_agent = sop.agents[next_role]
@@ -42,36 +41,22 @@ def run(sop: SOP, controller: controller, name="A神", role="user"):
                 break
             
             
-def step(sop: SOP, controller: controller):
-    current_node = sop.current_node
-    if len(current_node.next_nodes) == 1:
-        next_node = "0"
-    else:
-        next_node = controller.judge(current_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"])
-    next_node = current_node.next_nodes[next_node]
-    if len(sop.agents.keys()) == 1:
-        next_role = list(sop.agents.keys())[0]
-    else:
-        next_role = controller.allocate_task(
-            next_node, sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"]
-        )
-    return next_node, next_role
 
 
-def autorun(sop: SOP, controller: controller, name="裁判员", role="球球"):
+def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
     current_node = sop.current_node
     print(current_node.name)
-    current_memory = {"role": "user", "content": f"{name}({role}):现在请你们进行真假杨不凡游戏"}
-    sop.updatememory(current_memory)
+    current_memory = {"role": "user", "content": f"{begin_name}({begin_role}):{begin_query}"}
+    sop.update_memory(current_memory)
     
     while True:
-        next_node, next_role = step(sop, controller)
+        next_node, next_role = controller.next(sop)
         current_node = next_node
         sop.current_node = current_node
         current_agent = sop.agents[next_role]
         current_agent = sop.agents[next_role]
         response = current_agent.step(
-            sop.shared_memory["chat_history"][-1]["content"], role, name, current_node, sop.temperature
+            sop.shared_memory["chat_history"][-1]["content"],current_node, sop.temperature
         )
         all = f""
         for res in response:
@@ -83,7 +68,7 @@ def autorun(sop: SOP, controller: controller, name="裁判员", role="球球"):
             {"role": "user", "content": all}
         )
         
-        sop.updatememory(current_memory)
+        sop.update_memory(current_memory)
         
 def init_agents(sop):
     for name,role in sop.agents_role_name.items():
@@ -94,4 +79,4 @@ if __name__ == "__main__":
     sop = SOP("game.json")
     controller = controller(sop.controller_dict)
     init_agents(sop)
-    autorun(sop, controller)
+    autorun(sop, controller,begin_name="球球",begin_role="裁判员",begin_query="现在开始真假杨不凡游戏")

@@ -42,10 +42,10 @@ class Agent():
         
         self.agent_dict = {
             "short_memory": {},
-            "long_memory": {"chat_history":[]},
+            "long_memory": {"chat_history":[],"summary":""},
         }
 
-    def step(self, user_query, user_role, user_name, current_node:Node,temperature = 0.3):
+    def step(self, user_query,current_node:Node,temperature = 0.3):
         """
         reply api ,The interface set for backend calls 
         """
@@ -60,16 +60,12 @@ class Agent():
         self.agent_dict["temperature"] = temperature
         response, res_dict = self.act(current_node)
 
-        all = ""
         for res in response:
-            all += res if res else ''
             yield res
 
         #====================================================#
         if "response" in res_dict and res_dict["response"]:
-            all = ""
             for res in res_dict["response"]:
-                all +=res
                 yield res
             del res_dict["response"]
 
@@ -85,6 +81,12 @@ class Agent():
         
 
     def act(self, node: Node):
+        """
+        Output the output of the agent at this node
+        Returns:
+            response: gpt generator
+            res_dict: other response
+        """
         system_prompt, last_prompt, res_dict = node.compile(
             self.role, self.agent_dict)
         chat_history = self.agent_dict["long_memory"]["chat_history"]
@@ -116,60 +118,3 @@ class Agent():
                     return True
         return False
 
-
-
-
-def run(sop:SOP,controller:controller,name = "A神",role = "客户"):
-    while True:
-        current_node = sop.current_node
-        print(current_node.name)
-        query = input(f"{name}({role}):")
-        current_memory = {"role":"user","content":f"{name}({role}):{query}"}
-        sop.shared_memory["chat_history"].append(current_memory)
-        while True:
-            
-            next_node,next_role = step(sop,controller)
-            
-            flag =  next_node.is_interactive
-            current_node = next_node
-            sop.current_node = current_node
-            
-            if next_role == role:
-                break
-            current_agent = sop.agents[next_role]
-            current_agent = sop.agents[next_role]
-            response = current_agent.step(query,role,name,current_node,sop.temperature)
-            print(f"{current_agent.name}({current_agent.role}):",end="")
-            all = f"{current_agent.name}({current_agent.role}):"
-            for res in response:
-                all+=res
-                print(res,end="")
-                time.sleep(0.02)
-            print()
-            sop.shared_memory["chat_history"].append({"role":"assistant","content":all})
-            
-            if flag:
-                break
-    
-def step(sop:SOP,controller:controller):
-    current_node = sop.current_node
-    if len(current_node.next_nodes) == 1:
-        next_node = "0"
-    else:
-        next_node = controller.judge(current_node,sop.shared_memory["chat_history"])
-    next_node = current_node.next_nodes[next_node]
-    if len(sop.agents.keys())==1:
-        next_role = list(sop.agents.keys())[0]
-    else:
-        next_role = controller.allocate_task(next_node,sop.shared_memory["chat_history"])   
-    return next_node,next_role
-
-
-
-# agent = Agent("眼科客服","吴家隆")
-# my_sop = SOP("/home/aiwaves/longli/agents/examples/eye/eye_newnew.json")
-# my_controller = controller(my_sop.controller_dict)
-# my_sop.agents = {"眼科客服":agent}
-# agent.sop = my_sop
-
-# run(my_sop,my_controller)

@@ -165,7 +165,7 @@ def get_gpt_response_rule(chat_history,
     summary = kwargs["summary"] if "summary" in kwargs else None
     if last_prompt or summary:
         last_prompt = last_prompt if last_prompt else ""
-        last_prompt = f"你已知的信息为：{summary}" + last_prompt if summary else last_prompt
+        last_prompt = f"你已知的信息为：\n{summary}\n" + last_prompt if summary else last_prompt
         messages += [{"role": "system", "content": f"{last_prompt}"}]
     
     response = openai.ChatCompletion.create(
@@ -215,7 +215,7 @@ def get_gpt_response_rule_stream(chat_history,
     summary = kwargs["summary"] if "summary" in kwargs else None
     if last_prompt or summary:
         last_prompt = last_prompt if last_prompt else ""
-        last_prompt = f"你已知的信息为：{summary}" + last_prompt if summary else last_prompt
+        last_prompt = f"你已知的信息为：\n{summary}\n" + last_prompt if summary else last_prompt
         messages += [{"role": "system", "content": f"{last_prompt}"}]
         
     # print(messages)
