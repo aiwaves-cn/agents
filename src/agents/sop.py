@@ -295,6 +295,9 @@ class controller:
         controller_dict = self.controller_dict[node.name]
         system_prompt =  "<environment>" + kwargs["environment_prompt"] + "</environment>\n" + controller_dict["call_system_prompt"]
 
+        if "<output>" in chat_history[-1]["content"]:
+            chat_history[-1]["content"] = extract(chat_history[-1]["content"],"output")
+        
         index = max(
             chat_history[-1]["content"].find("："), chat_history[-1]["content"].find(":")
         )
