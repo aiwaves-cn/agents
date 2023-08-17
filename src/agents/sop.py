@@ -116,9 +116,9 @@ class SOP:
                             component_args["rule"])
 
                         # "demonstration"
-                    elif component == "demonstration":
+                    elif component == "demonstrations":
                         component_dict[
-                            "demonstration"] = DemonstrationComponent(
+                            "demonstrations"] = DemonstrationComponent(
                                 component_args["demonstrations"])
 
                     # "output"
