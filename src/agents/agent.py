@@ -17,18 +17,18 @@
 import time
 import os
 import jieba
-from utils import get_gpt_response_rule_stream,get_gpt_response_rule,extract
-from sop import Node,SOP,controller
+from utils import get_gpt_response_rule_stream, get_gpt_response_rule, extract
+from sop import Node, SOP, controller
 from datebase import *
 
 headers = {
-    'Content-Type': 'text/event-stream',
-    'Cache-Control': 'no-cache',
-    'X-Accel-Buffering': 'no',
+    "Content-Type": "text/event-stream",
+    "Cache-Control": "no-cache",
+    "X-Accel-Buffering": "no",
 }
 
 
-class Agent():
+class Agent:
     """
     Auto agent, input the JSON of SOP.
     """
@@ -39,15 +39,15 @@ class Agent():
         self.name = name
         self.current_node_name = None
         self.sop = None
-        
+
         self.agent_dict = {
             "short_memory": {},
-            "long_memory": {"chat_history":[],"summary":""},
+            "long_memory": {"chat_history": [], "summary": ""},
         }
 
-    def step(self, user_query,current_node:Node,temperature = 0.3):
+    def step(self, user_query, current_node: Node, temperature=0.3):
         """
-        reply api ,The interface set for backend calls 
+        reply api ,The interface set for backend calls
         """
         # if self.judge_sensitive(user_query):
         #     response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
@@ -63,22 +63,19 @@ class Agent():
         for res in response:
             yield res
 
-        #====================================================#
+        # ====================================================#
         if "response" in res_dict and res_dict["response"]:
             for res in res_dict["response"]:
                 yield res
             del res_dict["response"]
 
-        #====================================================#
+        # ====================================================#
 
-
-    def load_date(self, task:TaskConfig):
+    def load_date(self, task: TaskConfig):
         self.current_node_name = task.current_node_name
         self.agent_dict["long_memory"] = {
-            key: value
-            for key, value in task.memory.items()
+            key: value for key, value in task.memory.items()
         }
-        
 
     def act(self, node: Node):
         """
@@ -87,18 +84,18 @@ class Agent():
             response: gpt generator
             res_dict: other response
         """
-        system_prompt, last_prompt, res_dict = node.compile(
-            self.role, self.agent_dict)
+        system_prompt, last_prompt, res_dict = node.compile(self.role, self.agent_dict)
         chat_history = self.agent_dict["long_memory"]["chat_history"]
         temperature = self.agent_dict["temperature"]
-        response = get_gpt_response_rule_stream(chat_history,
-                                                system_prompt,
-                                                last_prompt,
-                                                temperature=temperature,
-                                                summary = self.agent_dict["long_memory"]["summary"])
+        response = get_gpt_response_rule_stream(
+            chat_history,
+            system_prompt,
+            last_prompt,
+            temperature=temperature,
+            summary=self.agent_dict["long_memory"]["summary"],
+        )
 
         return response, res_dict
-    
 
     def generate_sop(self):
         pass
@@ -109,7 +106,7 @@ class Agent():
     def judge_sensitive(self, query):
         current_path = os.path.abspath(__file__)
         current_path = os.path.dirname(current_path)
-        with open(os.path.join(current_path, 'sensitive.txt')) as file_01:
+        with open(os.path.join(current_path, "sensitive.txt")) as file_01:
             lines = file_01.readlines()
             lines = [i.rstrip() for i in lines]
             seg_list = jieba.cut(query, cut_all=True)
@@ -117,4 +114,3 @@ class Agent():
                 if seg in lines:
                     return True
         return False
-
