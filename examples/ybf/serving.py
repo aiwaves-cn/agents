@@ -17,13 +17,18 @@ def run(sop: SOP, controller: controller, name="A神", role="user"):
         sop.update_memory(current_memory)
         while True:
             next_node, next_role = controller.next(sop)
+            if next_node != current_node:
+                sop.send_memory(next_node)
+                
             flag = next_node.is_interactive
             current_node = next_node
             sop.current_node = current_node
 
             if next_role == role:
                 break
-            current_agent = sop.agents[next_role]
+            
+            current_agent = sop.agents[current_node.name][next_role]
+            
             response = current_agent.step(
                 query,current_node, sop.temperature
             )
