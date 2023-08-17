@@ -120,7 +120,7 @@ def get_response(history, summary_history):
         if agent_response is None:
             """节点切换"""
             history.append((None, ""))
-            summary_history.append((None, "摘要"))
+            summary_history.append((None, wrap_css("摘要", name="Recorder")))
             yield history, summary_history
         else:
             
@@ -168,7 +168,7 @@ def generate_response(history):
     outputs = []
     current_role = None
     current_node = None
-    for i, role, node, change_human in autorun(sop, controller, begin_role="大纲写作者1", begin_name="小亮", begin_query="请根据要求开始撰写第一版大纲初稿"):
+    for i, role, node, change_human in autorun(sop, controller, begin_role="大纲写作者1", begin_name="小亮", begin_query="请根据要求，先确定人物，然后基于人物再撰写第一版大纲"):
         # if current_role is not None and current_role != role:
         #     """表明切换了"""
         # print(role)
