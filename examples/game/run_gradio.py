@@ -65,9 +65,10 @@ def wrap_css(content, name) -> str:
     output = ""
     info = OBJECT_INFO[name]
     if info["id"] == "USER":
-        # 背景颜色 名字 字体颜色 字体大小 内容 图片地址
+        # 背景颜色 名字颜色 名字 字体颜色 字体大小 内容 图片地址
         output = BUBBLE_CSS["USER"].format(
             info["bubble_color"],
+            info["text_color"],
             name,
             info["text_color"],
             info["font_size"],
@@ -84,10 +85,11 @@ def wrap_css(content, name) -> str:
             content
         )
     elif info["id"] == "AGENT":
-        # 图片地址 背景颜色 名字 字体颜色 字体大小 内容
+        # 图片地址 背景颜色 名字颜色 名字 字体颜色 字体大小 内容
         output = BUBBLE_CSS["AGENT"].format(
             info["head_url"],
             info["bubble_color"],
+            info["text_color"],
             name,
             info["text_color"],
             info["font_size"],
@@ -150,7 +152,7 @@ def generate_response(history):
     wait = "."
     outputs = []
     current_role = None
-    for i, role in autorun(sop, controller, begin_role="大纲写作者1", begin_name="小亮", begin_query="请根据要求开始撰写第一版大纲初稿"):
+    for i, role in autorun(sop, controller, begin_name="球球", begin_role="裁判员", begin_query="现在开始真假杨不凡游戏"):
         # if current_role is not None and current_role != role:
         #     """表明切换了"""
         if current_role != role:

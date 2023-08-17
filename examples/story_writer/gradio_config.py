@@ -113,23 +113,23 @@ OBJECT_INFO = {
 
 # BUBBLE模板
 BUBBLE_CSS = {
-    # 背景颜色 名字 字体颜色 字体大小 内容 图片地址
+    # 背景颜色 名字颜色 名字 字体颜色 字体大小 内容 图片地址
     "USER": """
 <div style="display: flex; align-items: flex-start; justify-content: flex-end;">
     <div style="background-color: {}; border-radius: 20px 0px 20px 20px; padding: 15px; min-width: 100px; max-width: 300px;">
-        <p style="margin: 0; padding: 0; font-weight: bold; font-size: 18px;">{}</p>
+        <p style="margin: 0; padding: 0; color: {}; font-weight: bold; font-size: 18px;">{}</p>
         <p style="margin: 0; padding: 0; color: {}; font-size: {}px;">{}</p>
     </div>
     <img src="{}" alt="USER" style="width: 50px; height: 50px; border-radius: 50%; margin-left: 10px;">
 </div>
     """,
     
-    # 图片地址 背景颜色 名字 字体颜色 字体大小 内容
+    # 图片地址 背景颜色 名字颜色 名字 字体颜色 字体大小 内容
     "AGENT":"""
 <div style="display: flex; align-items: flex-start;">
     <img src="{}" alt="AGENT" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
     <div style="background-color: {}; border-radius: 0px 20px 20px 20px; padding: 15px; min-width: 100px; max-width: 600px;">
-        <p style="margin: 0; padding: 0; font-weight: bold; font-size: 18px;">{}</p>
+        <p style="margin: 0; padding: 0; color: {}; font-weight: bold; font-size: 18px;">{}</p>
         <p style="margin: 0; padding: 0; color: {}; font-size: {}px;">{}</p>
     </div>
 </div>
@@ -138,7 +138,7 @@ BUBBLE_CSS = {
     # 背景颜色 字体大小 字体颜色 名字 内容
     "SYSTEM": """
 <div style="display: flex; align-items: center; justify-content: center;">
-    <div style="background-color: {}; border-radius: 20px; padding: 1px; min-width: 200px; max-width: 600px;">
+    <div style="background-color: {}; border-radius: 20px; padding: 1px; min-width: 200px; max-width: 1000px;">
         <p style="margin: 0; padding: 0; text-align: center; font-size: {}px; font-weight: bold; font-family: '微软雅黑', sans-serif; color: {};">{}:{}</p>
     </div>
 </div>
@@ -176,4 +176,4 @@ def init(JSON):
             assert False
 
 if __name__ == '__main__':
-    init("story.json")
+    init("game.json")

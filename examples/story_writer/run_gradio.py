@@ -13,39 +13,6 @@ import os
 from agent import Agent
 from sop import SOP, controller
 
-def run(sop: SOP, controller: controller, name="A神", role="user"):
-    while True:
-        current_node = sop.current_node
-        print(current_node.name)
-        query = input(f"{name}({role}):")
-        current_memory = {"role": "user", "content": f"{name}({role}):{query}"}
-        sop.shared_memory["chat_history"].append(current_memory)
-        while True:
-            next_node, next_role = controller.next(sop, controller)
-            flag = next_node.is_interactive
-            current_node = next_node
-            sop.current_node = current_node
-            if next_role == role:
-                break
-            current_agent = sop.agents[next_role]
-            current_agent = sop.agents[next_role]
-            response = current_agent.step(
-                query, role, name, current_node, sop.temperature
-            )
-            all = ""
-            for res in response:
-                all += res
-                print(res, end="")
-                time.sleep(0.02)
-            print()
-            sop.shared_memory["chat_history"].append(
-                {"role": "user", "content": all}
-            )
-
-            if flag:
-                break
-            
-            
 def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
     current_node = sop.current_node
     print(current_node.name)
@@ -62,10 +29,12 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
             sop.shared_memory["chat_history"][-1]["content"],current_node, sop.temperature
         )
         all = f""
+        change_human = True
         for res in response:
             all += res
-            yield res, next_role
             # print(res, end="")
+            yield res, next_role, next_node, change_human
+            change_human = False
             # time.sleep(0.02)
         print()
         current_memory = (
@@ -78,7 +47,7 @@ def init_agents(sop):
     for name,role in sop.agents_role_name.items():
         agent = Agent(role,name)
         sop.agents[role] = agent
-
+        
 """全局的对话，只用于回答"""
 global_dialog = {
     "user":[], 
@@ -97,9 +66,10 @@ def wrap_css(content, name) -> str:
     output = ""
     info = OBJECT_INFO[name]
     if info["id"] == "USER":
-        # 背景颜色 名字 字体颜色 字体大小 内容 图片地址
+        # 背景颜色 名字颜色 名字 字体颜色 字体大小 内容 图片地址
         output = BUBBLE_CSS["USER"].format(
             info["bubble_color"],
+            info["text_color"],
             name,
             info["text_color"],
             info["font_size"],
@@ -116,10 +86,11 @@ def wrap_css(content, name) -> str:
             content
         )
     elif info["id"] == "AGENT":
-        # 图片地址 背景颜色 名字 字体颜色 字体大小 内容
+        # 图片地址 背景颜色 名字颜色 名字 字体颜色 字体大小 内容
         output = BUBBLE_CSS["AGENT"].format(
             info["head_url"],
             info["bubble_color"],
+            info["text_color"],
             name,
             info["text_color"],
             info["font_size"],
@@ -140,25 +111,36 @@ def get_response(history):
     # agent_response = generate_response(history)
     for agent_response in generate_response(history):
         # time.sleep(0.05)
-        print(agent_response)
-        if len(agent_response) >= 2:
-            output = "**OUTPUT**<br>"
+        # print(agent_response)
+        if agent_response is None:
+            """节点切换"""
+            history.append((None, ""))
+            yield history
         else:
-            output = ""
             
-        for name in global_dialog["agent"]:
-            if name not in agent_response:
-                global_dialog["agent"][name].append(None)
+            if len(agent_response) >= 2:
+                print("mIKE",CURRENT_NODE)
+                output = f"**{CURRENT_NODE}**<br>"
             else:
-                global_dialog["agent"][name].append(agent_response[name])
-                output = f"{output}<br>{wrap_css(content=agent_response[name], name=name)}"
-        
-        if output == "":
-            """表示没有输出"""
-            output = wrap_css(content="没有任何输出", name="System")
-        
-        history[-1] = (history[-1][0], output)
-        yield history
+                output = ""
+            
+            for item in agent_response:
+                for name in item:
+                    content = item[name].replace('\n','<br>')
+                    output = f"{output}<br>{wrap_css(content=content, name=name)}"
+            # for name in global_dialog["agent"]:
+            #     if name not in agent_response:
+            #         global_dialog["agent"][name].append(None)
+            #     else:
+            #         global_dialog["agent"][name].append(agent_response[name])
+            #         output = f"{output}<br>{wrap_css(content=agent_response[name], name=name)}"
+            
+            if output == "":
+                """表示没有输出"""
+                output = wrap_css(content="没有任何输出", name="System")
+            
+            history[-1] = (history[-1][0], output)
+            yield history
 
 def generate_response(history):
     """模型要做的，传入的就是gloabl_dialog"""
@@ -176,13 +158,53 @@ def generate_response(history):
     # query = global_dialog["user"][-1]
     content = ""
     wait = "."
-    for i, role in autorun(sop, controller, begin_role="大纲写作者1", begin_name="小亮", begin_query="请根据要求开始撰写第一版大纲初稿"):
+    outputs = []
+    current_role = None
+    current_node = None
+    for i, role, node, change_human in autorun(sop, controller, begin_role="大纲写作者1", begin_name="小亮", begin_query="请根据要求开始撰写第一版大纲初稿"):
+        # if current_role is not None and current_role != role:
+        #     """表明切换了"""
+        # print(role)
+        print(role, node.name)
+        if current_node is None:
+            current_node = node.name
+        """发生了节点的切换"""
+        if current_node is not None and node.name != current_node:
+            """发生了节点的切换"""
+            yield None
+            outputs.clear()
+            current_node = node.name
+            current_role = role
+            content = ""
+            outputs.append({ROLE_2_NAME[role]:content})
+            """发生了角色的切换"""
+        elif current_role != role:
+            current_role = role
+            content = ""
+            outputs.append({"System":f"系统决定由{current_role}:{ROLE_2_NAME[current_role]}来回答"})
+            outputs.append({ROLE_2_NAME[role]:content})
+            """同一个人讲了两次"""
+        elif change_human:
+            content = ""
+            outputs.append({ROLE_2_NAME[role]:content})
+        #     if role in outputs:
+        #         """"""
         content += i
+        outputs[-1][ROLE_2_NAME[current_role]] = content
+        global CURRENT_NODE
+        CURRENT_NODE = current_node
+        yield outputs
         # if ":" in content:
         # wait = "."
         
         # yield {ROLE_2_NAME[role]: content[content.find(":")+1:]}
-        yield {ROLE_2_NAME[role]: content}
+        # for item in outputs:
+        #     if 
+        # if role not in outputs:
+        #     outputs[role] = ""
+        #     content = ""
+        # outputs[role] = content
+        # yield outputs
         # else:
             # if len(wait) == 6:
             #     wait = ""
