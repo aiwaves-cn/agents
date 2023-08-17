@@ -276,7 +276,7 @@ class controller:
         controller_dict = self.controller_dict[node.name]
         system_prompt = kwargs["environment_prompt"] + "\n"+controller_dict["call_system_prompt"]
         
-        index = chat_history[-1]["content"].find("：")
+        index = max(chat_history[-1]["content"].find("："),chat_history[-1]["content"].find(":"))
         last_name = chat_history[-1]["content"][:index] if index != -1 else ""
         last_prompt = f"上一个发言的人为{last_name}\n"
         last_prompt += controller_dict["call_last_prompt"] 
@@ -297,6 +297,7 @@ class controller:
         
         if not next_node.isdigit():
             next_node = "0"
+            
         next_node = current_node.next_nodes[next_node]
         if len(sop.agents.keys()) == 1:
             next_role = list(sop.agents.keys())[0]
