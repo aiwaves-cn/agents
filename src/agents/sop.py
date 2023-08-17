@@ -176,7 +176,6 @@ class SOP:
                         component_dict["WebSearchComponent"] = WebSearchComponent(
                             component_args["engine_name"],
                             component_args["api"],
-                            component_args["name"],
                         )
                     elif component == "WebCrawlComponent":
                         component_dict["WebCrawlComponent"] = WebCrawlComponent(
@@ -259,7 +258,6 @@ class Node:
 
     def compile(self, role, agent_dict: dict):
         components = self.agent_states[role]
-        print(components)
         system_prompt = self.environment_prompt if self.environment_prompt else ""
         last_prompt = ""
         res_dict = {}

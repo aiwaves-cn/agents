@@ -428,7 +428,6 @@ class WebSearchComponent(ToolComponent):
                 "link": result["url"],
             }
             metadata_results.append(metadata_result)
-        print(metadata_results)
         return {"meta data": metadata_results}
 
     def _google_search(self, query: str, **kwargs):
@@ -449,15 +448,16 @@ class WebSearchComponent(ToolComponent):
                 "link": result["link"],
             }
             metadata_results.append(metadata_result)
-        print(metadata_results)
         return {"meta data": metadata_results}
 
     def func(self, agent_dict: Dict, **kwargs) -> Dict:
         search_results = self.search[self.engine_name](
             query=agent_dict["query"], **kwargs
         )
-
-        return {"search_result": search_results}
+        information = ""
+        for i in search_results["meta data"][:2]:
+            information += i["snippet"]
+        return {"prompt": "你可以参考以下信息回复:\n" + information}
 
     def convert_search_engine_to(self, engine_name):
         assert engine_name in WebSearchComponent.__ENGINE_NAME__
