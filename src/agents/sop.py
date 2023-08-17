@@ -200,12 +200,20 @@ class SOP:
         summary = None
         if len(self.shared_memory["chat_history"]) > MAX_CHAT_HISTORY:
             summary = self.summary()
-            self.shared_memory["chat_history"] = self.shared_memory["chat_history"][-2:]
+            self.shared_memory["chat_history"] = {}
             self.shared_memory["summary"] = summary
 
         for agent in self.agents[self.current_node.name].values():
             agent.agent_dict["long_memory"]["chat_history"] = self.shared_memory["chat_history"]
             agent.agent_dict["long_memory"]["summary"] = summary
+    
+    def send_memory(self,next_node):
+        summary = self.summary
+        self.shared_memory[""] = summary
+        self.shared_memory["chat_history"] = {}
+        for agent in self.agents[next_node.name].values():
+            agent.agent_dict["long_memory"]["summary"] = summary
+            
 
     def load_date(self, task: TaskConfig):
         self.current_node_name = task.current_node_name
