@@ -45,7 +45,7 @@ class Agent:
             "long_memory": {"chat_history": [], "summary": ""},
         }
 
-    def step(self, user_query, current_node: Node, temperature=0.3):
+    def step(self, current_node: Node, temperature=0.3):
         """
         reply api ,The interface set for backend calls
         """
@@ -55,8 +55,7 @@ class Agent:
         #         time.sleep(0.02)
         #         yield res
         #     return
-
-        self.agent_dict["query"] = user_query
+        
         self.agent_dict["temperature"] = temperature
         response, res_dict = self.act(current_node)
 
