@@ -21,7 +21,6 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
         current_node = next_node
         sop.current_node = current_node
         current_agent = sop.agents[current_node.name][next_role]
-        current_agent = sop.agents[current_node.name][next_role]
         response = current_agent.step(
             sop.shared_memory["chat_history"][-1]["content"],current_node, sop.temperature
         )

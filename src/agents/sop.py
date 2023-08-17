@@ -187,7 +187,7 @@ class SOP:
 
     def summary(self):
         system_prompt = self.environment_prompt + "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
-        last_prompt = "请你根据历史的聊天记录进行概括，输出格式为 历史摘要：\{你总结的内容\}"
+        last_prompt = "\n请你根据历史的聊天记录进行概括，输出格式为 <output>历史摘要：\{你总结的内容\} </output>"
         response = get_gpt_response_rule(self.shared_memory["chat_history"],
                                          system_prompt,
                                          last_prompt,
@@ -274,7 +274,7 @@ class controller:
 
     def transit(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
-        system_prompt = kwargs["environment_prompt"] + "\n"+controller_dict["judge_system_prompt"]
+        system_prompt = "<environment>" + kwargs["environment_prompt"] + "</environment>\n" + controller_dict["judge_system_prompt"]
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,
@@ -284,11 +284,11 @@ class controller:
 
     def route(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
-        system_prompt = kwargs["environment_prompt"] + "\n"+controller_dict["call_system_prompt"]
+        system_prompt = "<environment>" + kwargs["environment_prompt"] + "</environment>\n"+controller_dict["call_system_prompt"]
         
         index = max(chat_history[-1]["content"].find("："),chat_history[-1]["content"].find(":"))
         last_name = chat_history[-1]["content"][:index] if index != -1 else ""
-        last_prompt = f"上一个发言的人为{last_name}\n"
+        last_prompt = f"上一个发言的人为:\n<name>{last_name}</name>\n"
         last_prompt += controller_dict["call_last_prompt"] 
         extract_words = controller_dict["call_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,

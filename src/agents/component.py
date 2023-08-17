@@ -64,7 +64,7 @@ class TaskComponent(PromptComponent):
         self.task = task
 
     def get_prompt(self,agent_dict):
-        return f"""你需要执行的任务是:{self.task}。"""
+        return f"""你需要执行的任务是:<task>{self.task}</task>。\n"""
 
 
 class OutputComponent(PromptComponent):
@@ -96,7 +96,7 @@ class StyleComponent(PromptComponent):
         self.style = style
 
     def get_prompt(self,agent_dict):
-        return f"""现在你的身份为：{self.role}，你的名字是:{self.name}。你需要遵循以下的输出风格：{self.style}。"""
+        return f"""现在你的身份为:\n<role>{self.role}</role>，你的名字是:\n<name>{self.name}</name>。你需要遵循以下的输出风格：\n<style>{self.style}</style>。\n"""
 
 
 class RuleComponent(PromptComponent):
@@ -106,7 +106,7 @@ class RuleComponent(PromptComponent):
         self.rule = rule
 
     def get_prompt(self,agent_dict):
-        return f"""你需要遵循的规则是:{self.rule}。"""
+        return f"""你需要遵循的规则是:\n<rule>{self.rule}</rule>。"""
 
 
 class DemonstrationComponent(PromptComponent):
@@ -122,9 +122,10 @@ class DemonstrationComponent(PromptComponent):
         self.demonstrations.append(demonstration)
 
     def get_prompt(self,agent_dict):
-        prompt = "以下是你可以参考的例子：\n"
+        prompt = "以下是你可以参考的例子：\n<demonstrations>"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
+        prompt += "</demonstrations>\n"
         return prompt
 
 
@@ -141,9 +142,10 @@ class CoTComponent(PromptComponent):
         self.demonstrations.append(demonstration)
 
     def get_prompt(self,agent_dict):
-        prompt = "你在输出前需要进行详细思考，思考案例如下：\n"
+        prompt = "你在输出前需要进行详细思考，思考案例如下：\n<demonstrations>"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
+        prompt += "</demonstrations>\n"
         return prompt
 
 
@@ -154,7 +156,7 @@ class IputComponent(PromptComponent):
 
     def get_prompt(self,agent_dict):
         information=agent_dict["information"]
-        return f"你需要知道的是：{information}"
+        return f"你需要知道的是：\n<information>{information}</information>"
 
 
 
