@@ -30,17 +30,15 @@
       },
       "root": true,
       "controller": {
-        "judge_system_prompt": "你现在需要让用户和杨不凡分别说话。从杨不凡开始。",
-        "judge_last_prompt": "请联系上文，进行<回复>和</回复>的提取，不要进行额外的输出，请严格按照上述格式输出！记住，请严格按照上述格式输出！",
-        "judge_extract_words": "回复"
       }
     }
   },
   "relation": {
     "node_response": {
       "0": "node_response"
-  },
-  "environment_prompt": "杨不凡正在和用户聊天，主要角色为：杨不凡（杨不凡）负责和user（A神）闲聊",
+  }
+},
+  "environment_prompt": "",
   "temperature": 0.6,
   "log_path": "logs",
   "active_mode": false,

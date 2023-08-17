@@ -51,9 +51,9 @@ class SOP:
         node_sop = sop["nodes"]
         nodes_dict = {}
         for node in node_sop.values():
-
             # str
             name = node["name"]
+            self.agents_role_name[name] = {}
 
             # true or false
             is_interactive = node["is_interactive"]
@@ -68,7 +68,7 @@ class SOP:
                 }
             }
             """
-            agent_states = self.init_states(node["agent_states"])
+            agent_states = self.init_states(name,node["agent_states"])
 
             # config ["style","rule",......]
             config = self.config
@@ -89,7 +89,7 @@ class SOP:
                 self.root = now_node
         return nodes_dict
 
-    def init_states(self, agent_states_dict: dict):
+    def init_states(self, node_name , agent_states_dict: dict):
         agent_states = {}
         for role, components in agent_states_dict.items():
             component_dict = {}
@@ -98,11 +98,12 @@ class SOP:
 
                     # "role" "style"
                     if component == "style":
+                        agent_name = component_args["name"]
                         component_dict["style"] = StyleComponent(
                             component_args["role"], component_args["name"],
                             component_args["style"])
-                        if component_args["name"] not in self.agents_role_name:
-                            self.agents_role_name[component_args["name"]] = role
+                        
+                        self.agents_role_name[node_name][agent_name] = role
 
                         # "task"
                     elif component == "task":
@@ -201,7 +202,7 @@ class SOP:
             self.shared_memory["chat_history"] = self.shared_memory["chat_history"][-2:]
             self.shared_memory["summary"] = summary
 
-        for agent in self.agents.values():
+        for agent in self.agents[self.current_node.name].values():
             agent.agent_dict["long_memory"]["chat_history"] = self.shared_memory["chat_history"]
             agent.agent_dict["long_memory"]["summary"] = summary
 
@@ -299,12 +300,14 @@ class controller:
             next_node = "0"
             
         next_node = current_node.next_nodes[next_node]
-        if len(sop.agents.keys()) == 1:
-            next_role = list(sop.agents.keys())[0]
+        if len(sop.agents[current_node.name].keys()) == 1:
+            next_role = list(sop.agents[current_node.name].keys())[0]
         else:
             next_role = self.route(
             node=next_node, chat_history=sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"],environment_prompt = sop.environment_prompt
         )
-        if next_role not in sop.agents:
-            next_role = random.choice(list(sop.agents.keys()))
+            
+        if next_role not in sop.agents[current_node.name]:
+            next_role = random.choice(list(sop.agents[current_node.name].keys()))
+            
         return next_node, next_role
