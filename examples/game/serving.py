@@ -15,6 +15,9 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
     
     while True:
         next_node, next_role = controller.next(sop)
+        if next_node != current_node:
+            sop.send_memory(next_node)
+            
         current_node = next_node
         sop.current_node = current_node
         current_agent = sop.agents[current_node.name][next_role]
