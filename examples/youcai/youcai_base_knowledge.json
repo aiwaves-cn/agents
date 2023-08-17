@@ -1,0 +1,47 @@
+{
+    "nodes": {
+        "node_response": {
+            "name": "node_response",
+            "is_interactive": "true",
+            "extract_word": "回复",
+            "agent_states": {
+                "优才计划客服": {
+                    "style": {
+                        "name": "吴家隆",
+                        "role": "优才计划的客服",
+                        "style": "幽默风趣"
+                    },
+                    "task": {
+                        "task": "回答用户的问题"
+                    },
+                    "rule": {
+                        "rule": "你的语言要尽量精简，不要废话太多"
+                    },
+                    "KnowledgeBaseComponent": {
+                        "top_k": 1,
+                        "type": "QA",
+                        "knowledge_path": "/home/aiwaves/jlwu/multi-agent/agents/examples/youcai/youcai_database.json"
+                    },
+                    "config": [
+                        "style",
+                        "task",
+                        "rule",
+                        "KnowledgeBaseComponent"
+                    ]
+                }
+            },
+            "root": true,
+            "controller": {}
+        }
+    },
+    "relation": {
+        "node_response": {
+            "0": "node_response"
+        }
+    },
+    "environment_prompt": "",
+    "temperature": 0.6,
+    "log_path": "logs",
+    "active_mode": false,
+    "answer_simplify": true
+}

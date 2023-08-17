@@ -50,7 +50,7 @@ With our Agent module, all you need to do is generate and modify particular prom
 
 - 🤖 `Single-Agent Mode`: Under this circumstance, users engage with one particular agent. For example, you can use our **oculist agent** for medical assistance. The oculist agents serves as an expertised medical assistant which provides instructions and advice for ophthalmic diseases, and guides patients to pre-fill information cards and make advance appointments for clinic slots.
 
-- 🤖🤖 `Multi-Agent Mode`: The multi-agent mode is a major highlight of ours. In this mode, users can summon multiple robots for collaborative or reciprocal conversations, facilitating comprehensive debugging of the SOP system and performance testing of individual robots. For instance, when a user sets up a new Agent, they can engage in dialogue with a Chatting Agent to test the logic and style of the newly created Agent.
+- 🤖🤖 `Multi-Agent Mode`: The multi-agent mode is a major highlight of ours. In this mode, users can summon multiple robots for collaborative or reciprocal conversations, facilitating comprehensive debugging of the SOP system and performance testing of individual robots. For instance, when a user sets up a new Agent, they can engage in dialogue with a Chatting Agent to test the logic and style of the newly created Agent.Click here for detailed information.
 
   
 
@@ -64,4 +64,22 @@ Please check [here](https://ai-waves.feishu.cn/wiki/KZb6whkDTiM1cUkLqqOcnUNNnuh?
   
 
 ## **🎉Demostrations**
-- coming to see...🌟🧭
+
+### 🤖 `Single-Agent Mode`: Try our Oculist Agent!
+
+-   **👁️ Oculist Agent—Medical Use**: click _**[here](https://ai-waves.feishu.cn/wiki/BctTwkHgAiNjxHkszo9cC7E2nZc)**_ to start!
+    
+-   **💬 Yang Bufan—Chatting Bot**: click here to start!
+    
+-   **📋 Youcai Agent—Policy Consultant**: click here to start!
+    
+-   **🏢 Zhaoshang Agent—Commercial Assistant**: click here to start!
+    
+-   🧠 If you want to generate other customized agents, click _**[here](https://ai-waves.feishu.cn/wiki/AAzhweybOinOGmkJes2cEmCCn3d)**_ to follow our instructions!
+    
+
+### 🤖🤖 `Multi-Agent Mode` : Try our Fiction Studio!
+
+-   **📚Fiction Studio--Step-by-step fiction generating:** click _**[here](https://ai-waves.feishu.cn/wiki/XrJrw7iAniVHNTk3j1vcA0iLnZf)**_ to start!
+
+-- coming to see...🌟🧭

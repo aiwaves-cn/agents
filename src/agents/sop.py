@@ -193,6 +193,14 @@ class SOP:
                                          last_prompt,
                                          log_path=self.log_path,
                                          summary=self.shared_memory["summary"])
+        last_prompt = "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
+        response = get_gpt_response_rule(
+            self.shared_memory["chat_history"],
+            system_prompt,
+            last_prompt,
+            log_path=self.log_path,
+            summary=self.shared_memory["summary"],
+        )
         return response
 
     def update_memory(self, memory):
@@ -204,31 +212,32 @@ class SOP:
             self.shared_memory["summary"] = summary
 
         for agent in self.agents[self.current_node.name].values():
-            agent.agent_dict["long_memory"]["chat_history"] = self.shared_memory["chat_history"]
+            agent.agent_dict["long_memory"]["chat_history"] = self.shared_memory[
+                "chat_history"
+            ]
             agent.agent_dict["long_memory"]["summary"] = summary
-    
-    def send_memory(self,next_node):
+
+    def send_memory(self, next_node):
         summary = self.summary
         self.shared_memory[""] = summary
         self.shared_memory["chat_history"] = {}
         for agent in self.agents[next_node.name].values():
             agent.agent_dict["long_memory"]["summary"] = summary
-            
 
     def load_date(self, task: TaskConfig):
         self.current_node_name = task.current_node_name
         self.shared_memory["chat_history"] = task.memory["chat_history"]
 
 
-class Node():
-
-    def __init__(self,
-                 name: str = None,
-                 agent_states: dict = None,
-                 is_interactive=False,
-                 environment_prompt=None,
-                 config: list = None):
-
+class Node:
+    def __init__(
+        self,
+        name: str = None,
+        agent_states: dict = None,
+        is_interactive=False,
+        environment_prompt=None,
+        config: list = None,
+    ):
         self.next_nodes = {}
         self.agent_states = agent_states
         self.is_interactive = is_interactive
@@ -238,7 +247,9 @@ class Node():
 
     def get_state(self, role, agent_dict):
         system_prompt, last_prompt = self.compile(role, agent_dict)
-        current_role_state = f"目前的角色为：{role}，它的system_prompt为{system_prompt},last_prompt为{last_prompt}"
+        current_role_state = (
+            f"目前的角色为：{role}，它的system_prompt为{system_prompt},last_prompt为{last_prompt}"
+        )
         return current_role_state
 
     def compile(self, role, agent_dict: dict):
@@ -251,14 +262,11 @@ class Node():
                 continue
             component = components[component_name]
             if isinstance(component, (OutputComponent, LastComponent)):
-                last_prompt = last_prompt + "\n" + component.get_prompt(
-                    agent_dict)
+                last_prompt = last_prompt + "\n" + component.get_prompt(agent_dict)
             elif isinstance(component, PromptComponent):
-                system_prompt = system_prompt + "\n" + component.get_prompt(
-                    agent_dict)
+                system_prompt = system_prompt + "\n" + component.get_prompt(agent_dict)
             elif isinstance(component, ToolComponent):
                 response = component.func(agent_dict)
-                # print(response)
                 if "prompt" in response and response["prompt"]:
                     last_prompt = last_prompt + "\n" + response["prompt"]
                 agent_dict.update(response)
@@ -267,7 +275,6 @@ class Node():
 
 
 class controller:
-
     def __init__(self, controller_dict) -> None:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
@@ -275,20 +282,26 @@ class controller:
     def transit(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt = "<environment>" + kwargs["environment_prompt"] + "</environment>\n" + controller_dict["judge_system_prompt"]
+        
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
-        response = get_gpt_response_rule(chat_history, system_prompt,
-                                         last_prompt, **kwargs)
+        response = get_gpt_response_rule(
+            chat_history, system_prompt, last_prompt, **kwargs
+        )
         next_node = extract(response, extract_words)
         return next_node
 
     def route(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
-        system_prompt = "<environment>" + kwargs["environment_prompt"] + "</environment>\n"+controller_dict["call_system_prompt"]
-        
-        index = max(chat_history[-1]["content"].find("："),chat_history[-1]["content"].find(":"))
+        system_prompt =  "<environment>" + kwargs["environment_prompt"] + "</environment>\n" + controller_dict["call_system_prompt"]
+
+        index = max(
+            chat_history[-1]["content"].find("："), chat_history[-1]["content"].find(":")
+        )
         last_name = chat_history[-1]["content"][:index] if index != -1 else ""
+        
         last_prompt = f"上一个发言的人为:\n<name>{last_name}</name>\n"
+        
         last_prompt += controller_dict["call_last_prompt"] 
         extract_words = controller_dict["call_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,
@@ -307,16 +320,19 @@ class controller:
         
         if not next_node.isdigit():
             next_node = "0"
-            
+
         next_node = current_node.next_nodes[next_node]
         if len(sop.agents[current_node.name].keys()) == 1:
             next_role = list(sop.agents[current_node.name].keys())[0]
         else:
             next_role = self.route(
-            node=next_node, chat_history=sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"],environment_prompt = sop.environment_prompt
-        )
-            
+                node=next_node,
+                chat_history=sop.shared_memory["chat_history"],
+                summary=sop.shared_memory["summary"],
+                environment_prompt=sop.environment_prompt,
+            )
+
         if next_role not in sop.agents[next_node.name]:
             next_role = random.choice(list(sop.agents[next_node.name].keys()))
-            
+
         return next_node, next_role
