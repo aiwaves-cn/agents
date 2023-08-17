@@ -12,6 +12,7 @@ import os
 # sys.path.append("../../src/agents")
 from agent import Agent
 from sop import SOP, controller
+# CURRENT_NODE = ""
 
 def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
     current_node = sop.current_node
@@ -23,8 +24,7 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
         next_node, next_role = controller.next(sop)
         current_node = next_node
         sop.current_node = current_node
-        current_agent = sop.agents[next_role]
-        current_agent = sop.agents[next_role]
+        current_agent = sop.agents[current_node.name][next_role]
         response = current_agent.step(
             sop.shared_memory["chat_history"][-1]["content"],current_node, sop.temperature
         )
@@ -32,10 +32,10 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
         change_human = True
         for res in response:
             all += res
-            # print(res, end="")
             yield res, next_role, next_node, change_human
             change_human = False
-            # time.sleep(0.02)
+            # print(res, end="")
+            time.sleep(0.02)
         print()
         current_memory = (
             {"role": "user", "content": all}
@@ -44,10 +44,14 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
         sop.update_memory(current_memory)
         
 def init_agents(sop):
-    for name,role in sop.agents_role_name.items():
-        agent = Agent(role,name)
-        sop.agents[role] = agent
-        
+    for node_name,node_agents in sop.agents_role_name.items():
+        for name,role in node_agents.items():
+            agent = Agent(role,name)
+            if node_name not in sop.agents:
+                sop.agents[node_name] = {}
+            sop.agents[node_name][role] = agent
+
+
 """全局的对话，只用于回答"""
 global_dialog = {
     "user":[], 
@@ -216,7 +220,6 @@ if __name__ == '__main__':
     sop = SOP("story.json")
     controller = controller(sop.controller_dict)
     init_agents(sop)
-    
     init("story.json")
     
     for name in OBJECT_INFO:
