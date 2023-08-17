@@ -51,7 +51,7 @@ def init_agents(sop):
 
 
 if __name__ == "__main__":
-    sop = SOP("youcai_base_knowledge.json")
+    sop = SOP("youcai_base_websearch.json")
     controller = controller(sop.controller_dict)
     init_agents(sop)
     run(sop, controller)
