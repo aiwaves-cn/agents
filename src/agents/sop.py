@@ -294,14 +294,14 @@ class controller:
     def route(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt =  "<environment>" + kwargs["environment_prompt"] + "</environment>\n" + controller_dict["call_system_prompt"]
-
-        if "<output>" in chat_history[-1]["content"]:
-            chat_history[-1]["content"] = extract(chat_history[-1]["content"],"output")
-        
-        index = max(
-            chat_history[-1]["content"].find("："), chat_history[-1]["content"].find(":")
-        )
-        last_name = chat_history[-1]["content"][:index] if index != -1 else ""
+        if len(chat_history)>0:
+            if "<output>" in chat_history[-1]["content"]:
+                chat_history[-1]["content"] = extract(chat_history[-1]["content"],"output")
+            
+            index = max(
+                chat_history[-1]["content"].find("："), chat_history[-1]["content"].find(":")
+            )
+            last_name = chat_history[-1]["content"][:index] if index != -1 else ""
         
         last_prompt = f"上一个发言的人为:\n<name>{last_name}</name>\n"
         
