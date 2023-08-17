@@ -22,6 +22,7 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
     
     while True:
         next_node, next_role = controller.next(sop)
+        
         current_node = next_node
         sop.current_node = current_node
         current_agent = sop.agents[current_node.name][next_role]
@@ -110,7 +111,7 @@ def get_new_message(message, history):
     return "", \
         history + [[wrap_css(name="User", content=message), None]]
 
-def get_response(history):
+def get_response(history, summary_history):
     """此处的history都是有css wrap的，所以一般都不会用，只要是模型的输出"""
     # agent_response = generate_response(history)
     for agent_response in generate_response(history):
@@ -119,7 +120,8 @@ def get_response(history):
         if agent_response is None:
             """节点切换"""
             history.append((None, ""))
-            yield history
+            summary_history.append((None, "摘要"))
+            yield history, summary_history
         else:
             
             if len(agent_response) >= 2:
@@ -144,7 +146,8 @@ def get_response(history):
                 output = wrap_css(content="没有任何输出", name="System")
             
             history[-1] = (history[-1][0], output)
-            yield history
+            yield history, summary_history
+        
 
 def generate_response(history):
     """模型要做的，传入的就是gloabl_dialog"""
@@ -227,18 +230,33 @@ if __name__ == '__main__':
             global_dialog["agent"][name] = []
     print(global_dialog)
     
-    with gr.Blocks(css=CSS) as demo:
-        chatbot = gr.Chatbot(elem_id="chatbot1")  # elem_id="warning", elem_classes="feedback"
+    # with gr.Blocks(css=CSS) as demo:
+    #     chatbot = gr.Chatbot(elem_id="chatbot1")  # elem_id="warning", elem_classes="feedback"
         
-        msg = gr.Textbox()
-        clear = gr.Button("Clear")
+    #     msg = gr.Textbox()
+    #     clear = gr.Button("Clear")
 
-        """第一个参数指的是函数，第二个参数是输入Component，第三个是输出Component"""
-        """submit是单击时的操作，then是单击后的操作。chatbot一个是要两次的结果，就是用户输入展示一次，回复再展示一次"""
-        msg.submit(get_new_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-            get_response, chatbot, chatbot
-        )
-        clear.click(lambda: None, None, chatbot, queue=False)
+    #     """第一个参数指的是函数，第二个参数是输入Component，第三个是输出Component"""
+    #     """submit是单击时的操作，then是单击后的操作。chatbot一个是要两次的结果，就是用户输入展示一次，回复再展示一次"""
+    #     msg.submit(get_new_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+    #         get_response, chatbot, chatbot
+    #     )
+    #     clear.click(lambda: None, None, chatbot, queue=False)
+    
+    with gr.Blocks(css=CSS) as demo:
+        with gr.Row():
+            with gr.Column():
+                chatbot = gr.Chatbot(elem_id="chatbot1")  # elem_id="warning", elem_classes="feedback"
+            
+                msg = gr.Textbox()
+                # clear = gr.Button("Clear")
+
+            chatbot_2 = gr.Chatbot(elem_id="chatbot1").style(height='auto')
+            """第一个参数指的是函数，第二个参数是输入Component，第三个是输出Component"""
+            """submit是单击时的操作，then是单击后的操作。chatbot一个是要两次的结果，就是用户输入展示一次，回复再展示一次"""
+            msg.submit(get_new_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                get_response, [chatbot, chatbot_2], [chatbot, chatbot_2]
+            )
     
     demo.queue()
     demo.launch()
