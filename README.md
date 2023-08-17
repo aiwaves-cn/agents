@@ -65,7 +65,7 @@ Please check [here](https://ai-waves.feishu.cn/wiki/KZb6whkDTiM1cUkLqqOcnUNNnuh?
 
 ## **🎉Demostrations**
 
-- ### 🤖 `Single-Agent Mode`: Try our Oculist Agent!
+### 🤖 `Single-Agent Mode`: Try our Oculist Agent!
 
 -   **👁️ Oculist Agent—Medical Use**: click _**[here](https://ai-waves.feishu.cn/wiki/BctTwkHgAiNjxHkszo9cC7E2nZc)**_ to start!
     
