@@ -108,6 +108,14 @@ OBJECT_INFO = {
         "text_color": "#000000",
         "font_size": 0,
         "id": "AGENT"
+    },
+    
+    "Recorder": {
+        "head_url": "https://img.touxiangwu.com/zb_users/upload/2023/02/202302281677545695326193.jpg",
+        "bubble_color": "#F7F7F7",
+        "text_color": "#000000",
+        "font_size": 0,
+        "id": "AGENT"
     }
 }
 
