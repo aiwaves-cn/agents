@@ -7,42 +7,6 @@ sys.path.append("../../src/agents")
 from agent import Agent
 from sop import SOP, controller
 
-
-def run(sop: SOP, controller: controller, name="A神", role="user"):
-    while True:
-        current_node = sop.current_node
-        print(current_node.name)
-        query = input(f"{name}({role}):")
-        current_memory = {"role": "user", "content": f"{name}({role}):{query}"}
-        sop.shared_memory["chat_history"].append(current_memory)
-        while True:
-            next_node, next_role = controller.next(sop, controller)
-            flag = next_node.is_interactive
-            current_node = next_node
-            sop.current_node = current_node
-            if next_role == role:
-                break
-            current_agent = sop.agents[next_role]
-            current_agent = sop.agents[next_role]
-            response = current_agent.step(
-                query, role, name, current_node, sop.temperature
-            )
-            all = ""
-            for res in response:
-                all += res
-                print(res, end="")
-                time.sleep(0.02)
-            print()
-            sop.shared_memory["chat_history"].append(
-                {"role": "user", "content": all}
-            )
-
-            if flag:
-                break
-            
-            
-
-
 def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
     current_node = sop.current_node
     print(current_node.name)
@@ -53,6 +17,7 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
         next_node, next_role = controller.next(sop)
         current_node = next_node
         sop.current_node = current_node
+        current_agent = sop.agents[next_role]
         current_agent = sop.agents[next_role]
         response = current_agent.step(
             sop.shared_memory["chat_history"][-1]["content"],current_node, sop.temperature
