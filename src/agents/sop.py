@@ -115,9 +115,9 @@ class SOP:
                             component_args["rule"])
 
                         # "demonstration"
-                    elif component == "demonstration":
+                    elif component == "demonstrations":
                         component_dict[
-                            "demonstration"] = DemonstrationComponent(
+                            "demonstrations"] = DemonstrationComponent(
                                 component_args["demonstrations"])
 
                     # "output"
@@ -296,7 +296,7 @@ class controller:
            next_node = self.transit(node=current_node, chat_history=sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"],environment_prompt = sop.environment_prompt)
         
         if not next_node.isdigit():
-            next_node = str(random.randint(0,len(current_node.next_nodes.keys()-1)))
+            next_node = "0"
         next_node = current_node.next_nodes[next_node]
         if len(sop.agents.keys()) == 1:
             next_role = list(sop.agents.keys())[0]

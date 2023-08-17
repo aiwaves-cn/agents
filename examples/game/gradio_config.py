@@ -113,23 +113,23 @@ OBJECT_INFO = {
 
 # BUBBLE模板
 BUBBLE_CSS = {
-    # 背景颜色 名字 字体颜色 字体大小 内容 图片地址
+    # 背景颜色 名字颜色 名字 字体颜色 字体大小 内容 图片地址
     "USER": """
 <div style="display: flex; align-items: flex-start; justify-content: flex-end;">
     <div style="background-color: {}; border-radius: 20px 0px 20px 20px; padding: 15px; min-width: 100px; max-width: 300px;">
-        <p style="margin: 0; padding: 0; font-weight: bold; font-size: 18px;">{}</p>
+        <p style="margin: 0; padding: 0; color: {}; font-weight: bold; font-size: 18px;">{}</p>
         <p style="margin: 0; padding: 0; color: {}; font-size: {}px;">{}</p>
     </div>
     <img src="{}" alt="USER" style="width: 50px; height: 50px; border-radius: 50%; margin-left: 10px;">
 </div>
     """,
     
-    # 图片地址 背景颜色 名字 字体颜色 字体大小 内容
+    # 图片地址 背景颜色 名字颜色 名字 字体颜色 字体大小 内容
     "AGENT":"""
 <div style="display: flex; align-items: flex-start;">
     <img src="{}" alt="AGENT" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
     <div style="background-color: {}; border-radius: 0px 20px 20px 20px; padding: 15px; min-width: 100px; max-width: 600px;">
-        <p style="margin: 0; padding: 0; font-weight: bold; font-size: 18px;">{}</p>
+        <p style="margin: 0; padding: 0; color: {}; font-weight: bold; font-size: 18px;">{}</p>
         <p style="margin: 0; padding: 0; color: {}; font-size: {}px;">{}</p>
     </div>
 </div>
