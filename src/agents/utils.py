@@ -123,7 +123,7 @@ def get_gpt_response_function(
             for role,content in chat.items():
                 history += content
     history+="</history>"
-    messages += {"role": "user", "content": history}
+    messages += [{"role": "user", "content": history}]
                 
     if last_prompt:
         messages += [{"role": "system", "content": f"{last_prompt}"}]
@@ -173,7 +173,7 @@ def get_gpt_response_rule(
             for role,content in chat.items():
                 history += content
     history+="</history>"
-    messages += {"role": "user", "content": history}
+    messages += [{"role": "user", "content": history}]
                 
 
     summary = kwargs["summary"] if "summary" in kwargs else None
@@ -228,7 +228,7 @@ def get_gpt_response_rule_stream(
             for role,content in chat.items():
                 history += content
     history+="</history>"
-    messages += {"role": "user", "content": history}
+    messages += [{"role": "user", "content": history}]
                 
 
     summary = kwargs["summary"] if "summary" in kwargs else None
