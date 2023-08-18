@@ -170,7 +170,8 @@ def get_gpt_response_rule(
     if last_prompt or summary:
         last_prompt = last_prompt if last_prompt else ""
         last_prompt = f"你已知的信息为：\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
-        messages += [{"role": "system", "content": f"{last_prompt}"}]
+        # messages += [{"role": "system", "content": f"{last_prompt}"}]
+        messages += [{"role": "user", "content": f"{last_prompt}"}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
