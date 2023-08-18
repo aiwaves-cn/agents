@@ -8,6 +8,7 @@ sys.path.append("../../src/agents")
 import time
 # import sys
 import os
+import re
 
 # sys.path.append("../../src/agents")
 from agent import Agent
@@ -22,12 +23,14 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
     
     while True:
         next_node, next_role = controller.next(sop)
-        
+        if next_node != current_node:
+            sop.send_memory(next_node)
         current_node = next_node
         sop.current_node = current_node
         current_agent = sop.agents[current_node.name][next_role]
         response = current_agent.step(
-            sop.shared_memory["chat_history"][-1]["content"],current_node, sop.temperature
+            # sop.shared_memory["chat_history"][-1]["content"], 
+            current_node, sop.temperature
         )
         all = f""
         change_human = True
@@ -51,7 +54,6 @@ def init_agents(sop):
             if node_name not in sop.agents:
                 sop.agents[node_name] = {}
             sop.agents[node_name][role] = agent
-
 
 """全局的对话，只用于回答"""
 global_dialog = {
@@ -105,23 +107,31 @@ def wrap_css(content, name) -> str:
         assert False
     return output
 
-def get_new_message(message, history):
+def get_new_message(message, history, choose, require):
     """将用户的输入存下来"""
     global_dialog["user"].append(message)
-    return "", \
-        history + [[wrap_css(name="User", content=message), None]]
+    return gr.Textbox.update(interactive=False), \
+        history + [[wrap_css(name="User", content=message), None]], \
+            gr.Radio.update(interactive=False), \
+                gr.Textbox.update(interactive=False)
 
-def get_response(history, summary_history):
+def get_response(history, summary_history, choose, require, msg):
     """此处的history都是有css wrap的，所以一般都不会用，只要是模型的输出"""
+    global sop
     # agent_response = generate_response(history)
-    for agent_response in generate_response(history):
+    for agent_response in generate_response(history, choose, require, msg):
         # time.sleep(0.05)
         # print(agent_response)
         if agent_response is None:
             """节点切换"""
             history.append((None, ""))
-            summary_history.append((None, wrap_css("摘要", name="Recorder")))
-            yield history, summary_history
+            summary_history.append((None, wrap_css(f"{sop.shared_memory['summary']}", name="Recorder")))
+            print("mmmmm:", sop.shared_memory['summary'])
+            # assert False
+            yield history, summary_history  #, \
+                # gr.Textbox.update(visible=True, interactive=False), \
+                #     gr.Radio.update(visible=True, interactive=False), \
+                #         gr.Textbox.update(visible=True, value="nihao", interactive=False)
         else:
             
             if len(agent_response) >= 2:
@@ -146,10 +156,28 @@ def get_response(history, summary_history):
                 output = wrap_css(content="没有任何输出", name="System")
             
             history[-1] = (history[-1][0], output)
-            yield history, summary_history
-        
+            yield history, summary_history  #, \
+                # gr.Textbox.update(visible=True, interactive=False), \
+                #     gr.Radio.update(visible=True, interactive=False), \
+                #         gr.Textbox.update(visible=True, value="nihao", interactive=False)
 
-def generate_response(history):
+def change_enviroment_prompt(new_prompt: str):
+    global sop
+    sop.environment_prompt = new_prompt
+    for key in sop.nodes:
+        sop.nodes[key].environment_prompt = new_prompt
+    
+ 
+def generate_response(history, choose, require, msg):
+    def extract_strings(input_string):
+        pattern = r'(\w+)\((\w+)\)'
+        match = re.match(pattern, input_string)
+        
+        if match:
+            groups = match.groups()
+            return groups[0], groups[1]
+        else:
+            return None, None
     """模型要做的，传入的就是gloabl_dialog"""
     global sop, controller
     # response = {"Mike": "这是来自Mike的输入。第一行很长<br>这是一个测试的例子", 
@@ -168,7 +196,23 @@ def generate_response(history):
     outputs = []
     current_role = None
     current_node = None
-    for i, role, node, change_human in autorun(sop, controller, begin_role="大纲写作者1", begin_name="小亮", begin_query="请根据要求，先确定人物，然后基于人物再撰写第一版大纲"):
+    if msg.strip() != "":
+        change_enviroment_prompt(msg)
+    else:
+        msg = sop.environment_prompt
+    # choose name（role）
+    begin_name, begin_role = extract_strings(choose.replace("（","(").replace("）",")"))
+    begin_query = require
+    print("name:", begin_name, "\nrole:", begin_role, "\nquery:", begin_query, "\nmsg:", msg)
+    for i, role, node, change_human in autorun(
+        sop, controller, 
+        # begin_role="大纲写作者1", 
+        begin_role=begin_role,
+        # begin_name="小亮", 
+        begin_name=begin_name,
+        # begin_query="请根据要求，先确定人物，然后基于人物再撰写第一版大纲",
+        begin_query=begin_query
+    ):
         # if current_role is not None and current_role != role:
         #     """表明切换了"""
         # print(role)
@@ -218,44 +262,34 @@ def generate_response(history):
             # wait += "."
             # yield {"wait": wait}
 
-
 if __name__ == '__main__':
     sop = SOP("story.json")
     controller = controller(sop.controller_dict)
     init_agents(sop)
-    init("story.json")
+    """前端展示"""
+    first_node_role = init("story.json")
     
     for name in OBJECT_INFO:
         if name not in ["System", "User"]:
             global_dialog["agent"][name] = []
     print(global_dialog)
     
-    # with gr.Blocks(css=CSS) as demo:
-    #     chatbot = gr.Chatbot(elem_id="chatbot1")  # elem_id="warning", elem_classes="feedback"
-        
-    #     msg = gr.Textbox()
-    #     clear = gr.Button("Clear")
-
-    #     """第一个参数指的是函数，第二个参数是输入Component，第三个是输出Component"""
-    #     """submit是单击时的操作，then是单击后的操作。chatbot一个是要两次的结果，就是用户输入展示一次，回复再展示一次"""
-    #     msg.submit(get_new_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-    #         get_response, chatbot, chatbot
-    #     )
-    #     clear.click(lambda: None, None, chatbot, queue=False)
-    
     with gr.Blocks(css=CSS) as demo:
         with gr.Row():
             with gr.Column():
-                chatbot = gr.Chatbot(elem_id="chatbot1")  # elem_id="warning", elem_classes="feedback"
+                chatbot = gr.Chatbot(elem_id="chatbot1", label="对话")  # elem_id="warning", elem_classes="feedback"
             
-                msg = gr.Textbox()
+                msg = gr.Textbox(label="输入你的要求", placeholder=f"{sop.environment_prompt}", value=f"{sop.environment_prompt}")
                 # clear = gr.Button("Clear")
+                # with gr.Row().style(equal_height=True):
+                choose = gr.Radio([f"{ROLE_2_NAME[_]}（{_}）" for _ in first_node_role], value=f"{ROLE_2_NAME[first_node_role[0]]}（{first_node_role[0]}）",label="开始Agent")
+                require = gr.Textbox(label="开始指令", placeholder="请根据要求，先确定人物，然后基于人物再撰写第一版大纲", value="请根据要求，先确定人物，然后基于人物再撰写第一版大纲")
 
-            chatbot_2 = gr.Chatbot(elem_id="chatbot1").style(height='auto')
+            chatbot_2 = gr.Chatbot(elem_id="chatbot1", label="核心记录").style(height='auto')
             """第一个参数指的是函数，第二个参数是输入Component，第三个是输出Component"""
             """submit是单击时的操作，then是单击后的操作。chatbot一个是要两次的结果，就是用户输入展示一次，回复再展示一次"""
-            msg.submit(get_new_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                get_response, [chatbot, chatbot_2], [chatbot, chatbot_2]
+            msg.submit(get_new_message, [msg, chatbot, choose, require], [msg, chatbot, choose, require], queue=False).then(
+                get_response, [chatbot, chatbot_2, choose, require, msg], [chatbot, chatbot_2]
             )
     
     demo.queue()
