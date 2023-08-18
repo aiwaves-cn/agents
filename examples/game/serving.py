@@ -30,10 +30,9 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
             print(res, end="")
             time.sleep(0.02)
         print()
-        current_memory = (
-            {"role": "user", "content": all}
-        )
+        current_memory = {"role": "user", "content": all}
         
+    
         sop.update_memory(current_memory)
         
 def init_agents(sop):
