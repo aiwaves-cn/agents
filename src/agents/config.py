@@ -9,4 +9,4 @@ TOY_INFO_PATH =[os.path.join(current_path,'../../examples/shopping_assistant/toy
 API_KEY = "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"
 PROXY = 'http://127.0.0.1:7000'
 FETSIZE = 5
-MAX_CHAT_HISTORY = 10
+MAX_CHAT_HISTORY = 1000
