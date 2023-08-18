@@ -301,8 +301,8 @@ class controller:
             index = max(
                 chat_history[-1]["content"].find("："), chat_history[-1]["content"].find(":")
             )
-            last_name = chat_history[-1]["content"][:index] if index != -1 else ""
-        
+            
+        last_name = chat_history[-1]["content"][:index] if index != -1 else ""
         last_prompt = f"上一个发言的人为:\n<name>{last_name}</name>\n"
         
         last_prompt += controller_dict["call_last_prompt"] 
