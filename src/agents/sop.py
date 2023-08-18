@@ -38,7 +38,7 @@ class SOP:
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
 
         self.environment_prompt = sop["environment_prompt"]
-        self.shared_memory = {"chat_history": [],"summary":""}
+        self.shared_memory = {"chat_history": [], "summary": ""}
         self.controller_dict = {}
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
@@ -68,7 +68,7 @@ class SOP:
                 }
             }
             """
-            agent_states = self.init_states(name,node["agent_states"])
+            agent_states = self.init_states(name, node["agent_states"])
 
             # config ["style","rule",......]
             config = self.config
@@ -89,7 +89,7 @@ class SOP:
                 self.root = now_node
         return nodes_dict
 
-    def init_states(self, node_name , agent_states_dict: dict):
+    def init_states(self, node_name, agent_states_dict: dict):
         agent_states = {}
         for role, components in agent_states_dict.items():
             component_dict = {}
@@ -102,8 +102,7 @@ class SOP:
                         component_dict["style"] = StyleComponent(
                             component_args["role"], component_args["name"],
                             component_args["style"])
-                        
-                
+
                         self.agents_role_name[node_name][agent_name] = role
 
                         # "task"
@@ -208,19 +207,18 @@ class SOP:
         summary = None
         if len(self.shared_memory["chat_history"]) > MAX_CHAT_HISTORY:
             summary = self.summary()
-            self.shared_memory["chat_history"] = {}
+            self.shared_memory["chat_history"] = [self.shared_memory["chat_history"][-1]]
             self.shared_memory["summary"] = summary
 
         for agent in self.agents[self.current_node.name].values():
-            agent.agent_dict["long_memory"]["chat_history"] = self.shared_memory[
-                "chat_history"
-            ]
+            agent.agent_dict["long_memory"][
+                "chat_history"] = self.shared_memory["chat_history"]
             agent.agent_dict["long_memory"]["summary"] = summary
 
     def send_memory(self, next_node):
         summary = self.summary
         self.shared_memory[""] = summary
-        self.shared_memory["chat_history"] = {}
+        self.shared_memory["chat_history"] = []
         for agent in self.agents[next_node.name].values():
             agent.agent_dict["long_memory"]["summary"] = summary
 
@@ -230,6 +228,7 @@ class SOP:
 
 
 class Node:
+
     def __init__(
         self,
         name: str = None,
@@ -262,9 +261,11 @@ class Node:
                 continue
             component = components[component_name]
             if isinstance(component, (OutputComponent, LastComponent)):
-                last_prompt = last_prompt + "\n" + component.get_prompt(agent_dict)
+                last_prompt = last_prompt + "\n" + component.get_prompt(
+                    agent_dict)
             elif isinstance(component, PromptComponent):
-                system_prompt = system_prompt + "\n" + component.get_prompt(agent_dict)
+                system_prompt = system_prompt + "\n" + component.get_prompt(
+                    agent_dict)
             elif isinstance(component, ToolComponent):
                 response = component.func(agent_dict)
                 if "prompt" in response and response["prompt"]:
@@ -275,52 +276,61 @@ class Node:
 
 
 class controller:
+
     def __init__(self, controller_dict) -> None:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
 
     def transit(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
-        system_prompt = "<environment>" + kwargs["environment_prompt"] + "</environment>\n" + controller_dict["judge_system_prompt"]
-        
+        system_prompt = "<environment>" + kwargs[
+            "environment_prompt"] + "</environment>\n" + controller_dict[
+                "judge_system_prompt"]
+
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
-        response = get_gpt_response_rule(
-            chat_history, system_prompt, last_prompt, **kwargs
-        )
+        response = get_gpt_response_rule(chat_history, system_prompt,
+                                         last_prompt, **kwargs)
         next_node = extract(response, extract_words)
         return next_node
 
     def route(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
-        system_prompt =  "<environment>" + kwargs["environment_prompt"] + "</environment>\n" + controller_dict["call_system_prompt"]
-        if len(chat_history)>0:
+        system_prompt = "<environment>" + kwargs[
+            "environment_prompt"] + "</environment>\n" + controller_dict[
+                "call_system_prompt"]
+        
+        index = -1
+        if len(chat_history) > 0:
             if "<output>" in chat_history[-1]["content"]:
-                chat_history[-1]["content"] = extract(chat_history[-1]["content"],"output")
-            
-            index = max(
-                chat_history[-1]["content"].find("："), chat_history[-1]["content"].find(":")
-            )
-            
+                chat_history[-1]["content"] = extract(
+                    chat_history[-1]["content"], "output")
+
+            index = max(chat_history[-1]["content"].find("："),
+                        chat_history[-1]["content"].find(":"))
+
         last_name = chat_history[-1]["content"][:index] if index != -1 else ""
         last_prompt = f"上一个发言的人为:\n<name>{last_name}</name>\n"
-        
-        last_prompt += controller_dict["call_last_prompt"] 
+
+        last_prompt += controller_dict["call_last_prompt"]
         extract_words = controller_dict["call_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,
                                          last_prompt, **kwargs)
         next_role = extract(response, extract_words)
         return next_role
-    
-    
-    def next(self,sop: SOP):
-        current_node:Node
+
+    def next(self, sop: SOP):
+        current_node: Node
         current_node = sop.current_node
         if len(current_node.next_nodes) == 1:
             next_node = "0"
         else:
-           next_node = self.transit(node=current_node, chat_history=sop.shared_memory["chat_history"],summary = sop.shared_memory["summary"],environment_prompt = sop.environment_prompt)
-        
+            next_node = self.transit(
+                node=current_node,
+                chat_history=sop.shared_memory["chat_history"],
+                summary=sop.shared_memory["summary"],
+                environment_prompt=sop.environment_prompt)
+
         if not next_node.isdigit():
             next_node = "0"
 

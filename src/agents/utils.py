@@ -120,9 +120,8 @@ def get_gpt_response_function(
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
         for chat in chat_history:
-            for role,content in chat.items():
-                history += content
-    history+="</history>"
+            history += "\n" + chat["content"] + "\n"
+    history+="</history>,记住，不要重复里面的内容，这只是历史的聊天记录"
     messages += [{"role": "user", "content": history}]
                 
     if last_prompt:
@@ -170,9 +169,8 @@ def get_gpt_response_rule(
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
         for chat in chat_history:
-            for role,content in chat.items():
-                history += content
-    history+="</history>"
+            history += "\n" + chat["content"] + "\n"
+    history+="</history>,记住，不要重复里面的内容，这只是历史的聊天记录"
     messages += [{"role": "user", "content": history}]
                 
 
@@ -225,9 +223,8 @@ def get_gpt_response_rule_stream(
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
         for chat in chat_history:
-            for role,content in chat.items():
-                history += content
-    history+="</history>"
+            history += "\n" + chat["content"] + "\n"
+    history+="</history>,记住，不要重复里面的内容，这只是历史的聊天记录"
     messages += [{"role": "user", "content": history}]
                 
 
