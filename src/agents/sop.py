@@ -216,8 +216,8 @@ class SOP:
             agent.agent_dict["long_memory"]["summary"] = summary
 
     def send_memory(self, next_node):
-        summary = self.summary
-        self.shared_memory[""] = summary
+        summary = self.summary()
+        self.shared_memory["summary"] = summary
         self.shared_memory["chat_history"] = []
         for agent in self.agents[next_node.name].values():
             agent.agent_dict["long_memory"]["summary"] = summary
@@ -310,9 +310,10 @@ class controller:
                         chat_history[-1]["content"].find(":"))
 
         last_name = chat_history[-1]["content"][:index] if index != -1 else ""
-        last_prompt = f"上一个发言的人为:\n<name>{last_name}</name>\n"
+        # last_prompt = f"上一个发言的人为:\n<name>{last_name}</name>\n"
+        last_prompt = f"上一个发言的人为:{last_name}\n注意：目前轮到的人不能和上一次发言的人是同一个人，所以不能输出<结束>{last_name}</结束>"
 
-        last_prompt += controller_dict["call_last_prompt"]
+        last_prompt = controller_dict["call_last_prompt"] + last_prompt
         extract_words = controller_dict["call_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,
                                          last_prompt, **kwargs)
@@ -346,6 +347,7 @@ class controller:
             )
 
         if next_role not in sop.agents[next_node.name]:
+            print("warning: !!! random choice for next role !!!")
             next_role = random.choice(list(sop.agents[next_node.name].keys()))
 
         return next_node, next_role
