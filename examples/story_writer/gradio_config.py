@@ -67,6 +67,8 @@ min-width: 0px;
 max-width: 600px;
 border-radius: 20px 0px 20px 20px;
 '''
+
+# #202937
 CSS = """
 #chatbot1 .user {
     background-color:white;
@@ -87,7 +89,7 @@ OBJECT_INFO = {
     "User":{
         # https://img-blog.csdnimg.cn/img_convert/7c20bc39ac69b6972a22e18762d02db3.jpeg
         "head_url": USER_HEAD_URL,
-        "bubble_color": "#95EC69",
+        "bubble_color": "#95EC69",  
         "text_color": "#000000",
         "font_size": 0,
         "id": "USER"
@@ -96,8 +98,8 @@ OBJECT_INFO = {
     "System":{
         # https://img-blog.csdnimg.cn/img_convert/e7e5887cfff67df8c2205c2ef0e5e7fa.png
         "head_url": "https://img.touxiangwu.com/zb_users/upload/2023/03/202303141678768524747045.jpg",
-        "bubble_color": "#7F7F7F",
-        "text_color": "#FFFFFF",
+        "bubble_color": "#7F7F7F",  ##FFFFFF
+        "text_color": "#FFFFFF",    ##000000
         "font_size": 0,
         "id": "SYSTEM"
     },
@@ -153,17 +155,21 @@ BUBBLE_CSS = {
     """
 }
 
-def init(JSON):
+def init(JSON) -> list:
     """加载人物"""
     with open(JSON) as f:
         sop = json.load(f)
     cnt = 0
+    FISRT_NODE = True
+    fisrt_node_roles = []
     for node_name in sop['nodes']:
         node_info = sop['nodes'][node_name]
         agent_states = node_info['agent_states']
         for agent_role in agent_states:
             name = agent_states[agent_role]['style']['name']
             ROLE_2_NAME[agent_role] = name
+            if FISRT_NODE:
+                fisrt_node_roles.append(agent_role)
             bubble_color, text_color = color_for_img(AGENT_HEAD_URL[cnt])
             OBJECT_INFO[name] = {
                 "head_url": f"{AGENT_HEAD_URL[cnt]}",
@@ -173,6 +179,8 @@ def init(JSON):
                 "id": "AGENT"
             }
             cnt += 1
+        if FISRT_NODE:
+            FISRT_NODE = False
     print(OBJECT_INFO)
     """主要是设置字体大小"""
     for usr_name in OBJECT_INFO:
@@ -182,6 +190,8 @@ def init(JSON):
             OBJECT_INFO[usr_name]["font_size"] = 16
         else:
             assert False
+    # 返回节点1的agent
+    return fisrt_node_roles
 
 if __name__ == '__main__':
     init("game.json")
