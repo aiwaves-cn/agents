@@ -5,7 +5,7 @@
 
   
 
-## <p align="center"><font  face="Calisto MT"><font  size="4">A toolkit for building customized autonomous AI agents</font></font></p>
+## <p align="center"><font  face="Calisto MT"><font  size="4">A Toolkit for Building Customized Autonomous AI Agents</font></font></p>
 
   
 
