@@ -115,14 +115,10 @@ def get_gpt_response_function(
     openai.api_key = API_KEY
     openai.proxy = PROXY
     messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
-    history = "以往的对话历史记录如下\n<history>"
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
-        for chat in chat_history:
-            history += "\n" + chat["content"] + "\n"
-    history+="</history>,记住，不要重复里面的内容，这只是历史的聊天记录"
-    messages += [{"role": "user", "content": history}]
+        messages += chat_history
                 
     if last_prompt:
         messages += [{"role": "system", "content": f"{last_prompt}"}]
@@ -164,14 +160,10 @@ def get_gpt_response_rule(
     openai.proxy = PROXY
 
     messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
-    history = "以往的对话历史记录如下\n<history>"
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
-        for chat in chat_history:
-            history += "\n" + chat["content"] + "\n"
-    history+="</history>,记住，不要重复里面的内容，这只是历史的聊天记录"
-    messages += [{"role": "user", "content": history}]
+        messages += chat_history
                 
 
     summary = kwargs["summary"] if "summary" in kwargs else None
@@ -218,14 +210,10 @@ def get_gpt_response_rule_stream(
         system_prompt = system_prompt + "请你的回复尽量简洁"
         last_prompt = last_prompt + "请你的回复尽量简洁"
     messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
-    history = "以往的对话历史记录如下\n<history>"
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
             chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
-        for chat in chat_history:
-            history += "\n" + chat["content"] + "\n"
-    history+="</history>,记住，不要重复里面的内容，这只是历史的聊天记录"
-    messages += [{"role": "user", "content": history}]
+        messages += chat_history
                 
 
     summary = kwargs["summary"] if "summary" in kwargs else None
