@@ -7,7 +7,7 @@ sys.path.append("../../src/agents")
 from agent import Agent
 from sop import SOP, controller
 
-def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
+def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query,user_role=None):
     current_node = sop.current_node
     print(current_node.name)
     current_memory = {"role": "user", "content": f"{begin_name}({begin_role}):{begin_query}"}
@@ -17,7 +17,15 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
         next_node, next_role = controller.next(sop)
         if next_node != current_node:
             sop.send_memory(next_node)
-            
+        while next_role == user_role:
+            user_name = sop.agents[next_node.name][user_role].name
+            query = input(f"{user_name}:")
+            current_memory = {"role": "user", "content": f"{user_name}:{query}"}
+            sop.update_memory(current_memory)
+            next_node, next_role = controller.next(sop)
+            if next_node != current_node:
+                sop.send_memory(next_node)
+                
         current_node = next_node
         sop.current_node = current_node
         current_agent = sop.agents[current_node.name][next_role]
@@ -31,9 +39,8 @@ def autorun(sop: SOP, controller: controller,begin_name,begin_role,begin_query):
             time.sleep(0.02)
         print()
         current_memory = {"role": "user", "content": all}
-        
-    
         sop.update_memory(current_memory)
+        
         
 def init_agents(sop):
     for node_name,node_agents in sop.agents_role_name.items():
@@ -48,4 +55,4 @@ if __name__ == "__main__":
     sop = SOP("game.json")
     controller = controller(sop.controller_dict)
     init_agents(sop)
-    autorun(sop, controller,begin_name="球球",begin_role="裁判员",begin_query="现在开始真假杨不凡游戏")
+    autorun(sop, controller,begin_name="球球",begin_role="裁判员",begin_query="现在开始真假杨不凡游戏",user_role = "杨不凡2")
