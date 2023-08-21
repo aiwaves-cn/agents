@@ -38,9 +38,6 @@ class SOP:
         self.agents = {}
         self.shared_memory = {"chat_history": [], "summary": ""}
         
-        self.begin_role = sop["begin_role"]
-        self.begin_query = sop["begin_query"]
-        
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
@@ -91,6 +88,9 @@ class SOP:
                             config=config,
                             environment_prompt=environment_prompt,
                             agent_states=agent_states)
+            
+            now_node.begin_role = node["begin_role"] if "begin_role" in node else None
+            now_node.begin_query = node["begin_query"] if "begin_query" in node else None
             nodes_dict[name] = now_node
 
             if "root" in node.keys() and node["root"]:
@@ -250,6 +250,8 @@ class Node:
         self.environment_prompt = environment_prompt
         self.config = config
         self.current_role = None
+        self.begin_role = None
+        self.begin_query = None
         self.roles = []
 
     def get_state(self, role, agent_dict):
