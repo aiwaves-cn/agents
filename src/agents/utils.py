@@ -631,6 +631,15 @@ def search_with_api(requirements, categery):
         request_items = request_items[:FETSIZE]
     return request_items, new_top
 
+def get_memory_from_long_short(agent_dict,keywords):
+    if keywords in agent_dict["long_memory"]:
+        return agent_dict["long_memory"][keywords]
+
+    elif keywords in agent_dict["short_memory"]:
+        return agent_dict["short_memory"][keywords]
+    
+    else:
+        return ""
 
 if __name__ == "__main__":
     str = "hello 123 hello"

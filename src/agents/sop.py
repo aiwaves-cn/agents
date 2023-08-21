@@ -142,6 +142,10 @@ class SOP:
                     elif component == "cot":
                         component_dict["cot"] = CoTComponent(
                             component_args["demonstrations"])
+                    elif component == "CustomizeComponent":
+                        component["CustomizeComponent"] = CustomizeComponent(
+                            component_args["template"],component_args["keywords"]
+                        )
 
                     #=================================================================================#
 
