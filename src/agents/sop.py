@@ -31,22 +31,22 @@ class SOP:
         self.sop = sop
         self.root = None
         self.agents_role_name = {}
-
+        self.controller_dict = {}
         self.config = {}
+        self.agents = {}
+        self.shared_memory = {"chat_history": [], "summary": ""}
+        
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
-
-        self.shared_memory = {"chat_history": [], "summary": ""}
-        self.controller_dict = {}
-        self.nodes = self.init_nodes(sop)
-        self.init_relation(sop)
-        self.current_node = self.root
         self.controller_dict["controller_type"] = sop["controller_type"] if "controller_type" in sop else "0"
         self.summary_system_prompt = sop["summary_system_prompt"] if "summary_system_prompt" in sop else None
         self.summary_last_prompt = sop["summary_last_prompt"] if "summary_last_prompt" in sop else None
 
-        self.agents = {}
+        self.nodes = self.init_nodes(sop)
+        self.init_relation(sop)
+        self.current_node = self.root
+
 
     def init_nodes(self, sop):
         # node_sop: a list of the node
@@ -358,7 +358,7 @@ class controller:
                 environment_prompt=current_node.environment_prompt,
             )
 
-        if next_role not in sop.agents[next_node.name]:
+        if next_role not in next_node.roles:
             next_role = random.choice(next_node.roles)
         next_node.current_role = next_role
 
