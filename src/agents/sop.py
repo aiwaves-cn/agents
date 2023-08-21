@@ -44,6 +44,8 @@ class SOP:
         self.init_relation(sop)
         self.current_node = self.root
         self.controller_dict["controller_type"] = sop["controller_type"] if "controller_type" in sop else "0"
+        self.summary_system_prompt = sop["summary_system_prompt"] if "summary_system_prompt" in sop else None
+        self.summary_last_prompt = sop["summary_last_prompt"] if "summary_last_prompt" in sop else None
 
 
         self.agents = {}
@@ -187,18 +189,10 @@ class SOP:
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
 
     def summary(self):
-        system_prompt = self.environment_prompt + "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
-<<<<<<< HEAD
-        last_prompt = "\n请你根据历史的聊天记录进行概括，输出格式为 历史摘要：\{你总结的内容\} "
-        response = get_gpt_response_rule(self.shared_memory["chat_history"],
-                                         system_prompt,
-                                         last_prompt,
-                                         log_path=self.log_path,
-                                         summary=self.shared_memory["summary"])
-        last_prompt = "请你根据历史的聊天记录进行概括，输出格式为  历史摘要：\{你总结的内容\} "
-=======
-        last_prompt = "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
->>>>>>> cff0a9e8cddc6dd35458ca47b4f39bf5ece8d944
+        summary_system_prompt = self.summary_system_prompt if self.summary_system_prompt else "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
+        summary_last_prompt = self.summary_last_prompt if self.summary_last_prompt else "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
+        system_prompt = self.environment_prompt + summary_system_prompt
+        last_prompt = summary_last_prompt
         response = get_gpt_response_rule(
             self.shared_memory["chat_history"],
             system_prompt,
