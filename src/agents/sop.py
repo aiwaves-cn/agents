@@ -43,6 +43,8 @@ class SOP:
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
         self.current_node = self.root
+        self.controller_dict["controller_type"] = sop["controller_type"] if "controller_type" in sop else "0"
+
 
         self.agents = {}
 
@@ -186,13 +188,13 @@ class SOP:
 
     def summary(self):
         system_prompt = self.environment_prompt + "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
-        last_prompt = "\n请你根据历史的聊天记录进行概括，输出格式为 <output>历史摘要：\{你总结的内容\} </output>"
+        last_prompt = "\n请你根据历史的聊天记录进行概括，输出格式为 历史摘要：\{你总结的内容\} "
         response = get_gpt_response_rule(self.shared_memory["chat_history"],
                                          system_prompt,
                                          last_prompt,
                                          log_path=self.log_path,
                                          summary=self.shared_memory["summary"])
-        last_prompt = "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
+        last_prompt = "请你根据历史的聊天记录进行概括，输出格式为  历史摘要：\{你总结的内容\} "
         response = get_gpt_response_rule(
             self.shared_memory["chat_history"],
             system_prompt,
@@ -243,6 +245,8 @@ class Node:
         self.name = name
         self.environment_prompt = environment_prompt
         self.config = config
+        self.current_role = None
+        self.roles = []
 
     def get_state(self, role, agent_dict):
         system_prompt, last_prompt = self.compile(role, agent_dict)
@@ -280,7 +284,8 @@ class controller:
     def __init__(self, controller_dict) -> None:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
-
+        self.controller_type = self.controller_dict["controller_type"]
+        
     def transit(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt = "<environment>" + kwargs[
@@ -290,33 +295,44 @@ class controller:
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
         response = get_gpt_response_rule(chat_history, system_prompt,
-                                         last_prompt, **kwargs)
+                                        last_prompt, **kwargs)
         next_node = extract(response, extract_words)
         return next_node
 
     def route(self, node: Node, chat_history, **kwargs):
-        controller_dict = self.controller_dict[node.name]
-        system_prompt = "<environment>" + kwargs[
-            "environment_prompt"] + "</environment>\n" + controller_dict[
-                "call_system_prompt"]
+        if self.controller_type == "0":
+            controller_dict = self.controller_dict[node.name]
+            system_prompt = "<environment>" + kwargs[
+                "environment_prompt"] + "</environment>\n" + controller_dict[
+                    "call_system_prompt"]
+            
+            index = -1
+            if len(chat_history) > 0:
+                if "<output>" in chat_history[-1]["content"]:
+                    chat_history[-1]["content"] = extract(
+                        chat_history[-1]["content"], "output")
+
+                index = max(chat_history[-1]["content"].find("："),
+                            chat_history[-1]["content"].find(":"))
+
+            last_name = chat_history[-1]["content"][:index] if index != -1 else ""
+            last_prompt = f"上一个发言的人为:{last_name}\n注意：目前轮到的人不能和上一次发言的人是同一个人，所以不能输出<结束>{last_name}</结束>"
+
+            last_prompt += controller_dict["call_last_prompt"]
+            extract_words = controller_dict["call_extract_words"]
+            response = get_gpt_response_rule(chat_history, system_prompt,
+                                            last_prompt, **kwargs)
+            next_role = extract(response, extract_words)
+        elif self.controller_type == "1":
+            if not node.current_role:
+                next_role = node.roles[0]
+            else:
+                index = node.roles.index(node.current_role)
+                next_role = node.roles[(index+1)%len(node.roles)]
         
-        index = -1
-        if len(chat_history) > 0:
-            if "<output>" in chat_history[-1]["content"]:
-                chat_history[-1]["content"] = extract(
-                    chat_history[-1]["content"], "output")
-
-            index = max(chat_history[-1]["content"].find("："),
-                        chat_history[-1]["content"].find(":"))
-
-        last_name = chat_history[-1]["content"][:index] if index != -1 else ""
-        last_prompt = f"上一个发言的人为:{last_name}\n注意：目前轮到的人不能和上一次发言的人是同一个人，所以不能输出<结束>{last_name}</结束>"
-
-        last_prompt += controller_dict["call_last_prompt"]
-        extract_words = controller_dict["call_extract_words"]
-        response = get_gpt_response_rule(chat_history, system_prompt,
-                                         last_prompt, **kwargs)
-        next_role = extract(response, extract_words)
+        elif self.controller_type == "2":
+            next_role = random.choice(node.roles)
+            
         return next_role
 
     def next(self, sop: SOP):
@@ -346,6 +362,7 @@ class controller:
             )
 
         if next_role not in sop.agents[next_node.name]:
-            next_role = random.choice(list(sop.agents[next_node.name].keys()))
+            next_role = random.choice(next_node.roles)
+        next_node.current_role = next_role
 
         return next_node, next_role
