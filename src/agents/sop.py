@@ -46,7 +46,6 @@ class SOP:
         self.summary_system_prompt = sop["summary_system_prompt"] if "summary_system_prompt" in sop else None
         self.summary_last_prompt = sop["summary_last_prompt"] if "summary_last_prompt" in sop else None
 
-
         self.agents = {}
 
     def init_nodes(self, sop):
@@ -190,7 +189,7 @@ class SOP:
     def summary(self):
         summary_system_prompt = self.summary_system_prompt if self.summary_system_prompt else "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
         summary_last_prompt = self.summary_last_prompt if self.summary_last_prompt else "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
-        system_prompt = self.environment_prompt + summary_system_prompt
+        system_prompt = self.current_node.environment_prompt + summary_system_prompt
         last_prompt = summary_last_prompt
         response = get_gpt_response_rule(
             self.shared_memory["chat_history"],
