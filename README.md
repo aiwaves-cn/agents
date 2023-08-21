@@ -1,7 +1,7 @@
 
   
 
-# <p align="center"><img src='./agent_logo.png'  width=400></p>
+# <p align="center"><img src='./assets/logo.png'  width=400></p>
 
   
 
@@ -52,7 +52,24 @@ With our Agent module, all you need to do is generate and modify particular prom
 
 - 🤖🤖 `Multi-Agent Mode`: The multi-agent mode is a major highlight of ours. In this mode, users can summon multiple robots for collaborative or reciprocal conversations, facilitating comprehensive debugging of the SOP system and performance testing of individual robots. For instance, when a user sets up a new Agent, they can engage in dialogue with a Chatting Agent to test the logic and style of the newly created Agent.Click here for detailed information.
 
-  
+
+## Installation
+
+1. install package
+
+    ```shell
+    pip install -i http://47.96.122.196:9999/simple agent --trusted-host 47.96.122.196
+    ```
+
+2. import it in your file
+
+    ```python
+    import agents
+    ```
+
+## The AgentHub
+
+TBD
 
 ## **📚 Documentation**
 
@@ -82,4 +99,4 @@ Please check [here](https://ai-waves.feishu.cn/wiki/KZb6whkDTiM1cUkLqqOcnUNNnuh?
 
 -   **📚Fiction Studio--Step-by-step fiction generating:** click _**[here](https://ai-waves.feishu.cn/wiki/XrJrw7iAniVHNTk3j1vcA0iLnZf)**_ to start!
 
--- coming to see...🌟🧭
+
