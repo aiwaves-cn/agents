@@ -37,7 +37,6 @@ class SOP:
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
 
-        self.environment_prompt = sop["environment_prompt"]
         self.shared_memory = {"chat_history": [], "summary": ""}
         self.controller_dict = {}
         self.nodes = self.init_nodes(sop)
@@ -76,7 +75,7 @@ class SOP:
 
             # config ["style","rule",......]
             config = self.config
-
+            environment_prompt = node["environment_prompt"]
             # contrller  {judge_system_prompt:,judge_last_prompt: ,call_system_prompt: , call_last_prompt}
 
             if "controller" in node:
@@ -85,7 +84,7 @@ class SOP:
             now_node = Node(name=name,
                             is_interactive=is_interactive,
                             config=config,
-                            environment_prompt=self.environment_prompt,
+                            environment_prompt=environment_prompt,
                             agent_states=agent_states)
             nodes_dict[name] = now_node
 
@@ -237,6 +236,7 @@ class Node:
         environment_prompt=None,
         config: list = None,
     ):
+        
         self.next_nodes = {}
         self.agent_states = agent_states
         self.is_interactive = is_interactive
@@ -343,7 +343,7 @@ class controller:
                 node=current_node,
                 chat_history=sop.shared_memory["chat_history"],
                 summary=sop.shared_memory["summary"],
-                environment_prompt=sop.environment_prompt)
+                environment_prompt=current_node.environment_prompt)
 
         if not next_node.isdigit():
             next_node = "0"
@@ -356,7 +356,7 @@ class controller:
                 node=next_node,
                 chat_history=sop.shared_memory["chat_history"],
                 summary=sop.shared_memory["summary"],
-                environment_prompt=sop.environment_prompt,
+                environment_prompt=current_node.environment_prompt,
             )
 
         if next_role not in sop.agents[next_node.name]:
