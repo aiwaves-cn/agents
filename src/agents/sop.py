@@ -186,12 +186,6 @@ class SOP:
 
     def summary(self):
         system_prompt = self.environment_prompt + "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
-        last_prompt = "\n请你根据历史的聊天记录进行概括，输出格式为 <output>历史摘要：\{你总结的内容\} </output>"
-        response = get_gpt_response_rule(self.shared_memory["chat_history"],
-                                         system_prompt,
-                                         last_prompt,
-                                         log_path=self.log_path,
-                                         summary=self.shared_memory["summary"])
         last_prompt = "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
         response = get_gpt_response_rule(
             self.shared_memory["chat_history"],
