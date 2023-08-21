@@ -22,6 +22,8 @@ from component import *
 class SOP:
     """
     input:the json of the sop
+    sop indispensable attribute: begin_role   begin_query begin_query nodes(agent_states)  relation
+    
     output: a sop graph
     """
 
@@ -36,12 +38,16 @@ class SOP:
         self.agents = {}
         self.shared_memory = {"chat_history": [], "summary": ""}
         
+        self.begin_role = sop["begin_role"]
+        self.begin_query = sop["begin_query"]
+        
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
         self.controller_dict["controller_type"] = sop["controller_type"] if "controller_type" in sop else "0"
         self.summary_system_prompt = sop["summary_system_prompt"] if "summary_system_prompt" in sop else None
         self.summary_last_prompt = sop["summary_last_prompt"] if "summary_last_prompt" in sop else None
+        self.user_roles = sop["user_roles"] if "user_roles" in sop else []
 
         self.nodes = self.init_nodes(sop)
         self.init_relation(sop)
@@ -201,6 +207,7 @@ class SOP:
         return response
 
     def update_memory(self, memory):
+        global MAX_CHAT_HISTORY
         self.shared_memory["chat_history"].append(memory)
         summary = None
         if len(self.shared_memory["chat_history"]) > MAX_CHAT_HISTORY:

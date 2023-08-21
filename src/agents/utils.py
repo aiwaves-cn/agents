@@ -24,7 +24,6 @@ import requests
 import torch
 from tqdm import tqdm
 from text2vec import semantic_search
-from config import *
 import re
 import datetime
 from langchain.document_loaders import UnstructuredFileLoader
@@ -32,7 +31,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 import string
 import random
-
+from config import *
 
 def get_code():
     return "".join(random.sample(string.ascii_letters + string.digits, 8))
