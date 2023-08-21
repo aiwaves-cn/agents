@@ -268,11 +268,12 @@ class ExtractComponent(ToolComponent):
         self.last_prompt = last_prompt if last_prompt else None
 
     def func(self, agent_dict):
-        response = get_gpt_response_rule(
+        response = get_response(
             agent_dict["long_memory"]["chat_history"],
             self.system_prompt,
             self.last_prompt,
             agent_dict=agent_dict,
+            stream = False
         )
         for extract_word in self.long_memory_extract_words:
             key = extract(response, extract_word)

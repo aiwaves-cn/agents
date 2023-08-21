@@ -31,7 +31,17 @@ from langchain.text_splitter import CharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 import string
 import random
-from config import *
+import os
+
+API_KEY = os.environ["API_KEY"]
+PROXY = os.environ["PROXY"]
+MAX_CHAT_HISTORY = int(os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
+MIN_CATEGORY_SIM = int(os.environ["MIN_CATEGORY_SIM"]) if "MIN_CATEGORY_SIM" in os.environ else 0.7
+TOY_INFO_PATH = os.environ["TOY_INFO_PATH"] if "TOY_INFO_PATH" in os.environ else []
+FETSIZE = int(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
+
+# from config import *
+
 
 def get_code():
     return "".join(random.sample(string.ascii_letters + string.digits, 8))
@@ -89,143 +99,7 @@ def save_logs(log_path, messages, response):
     with open(log_file, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
 
-
-def get_gpt_response_function(
-    chat_history,
-    system_prompt,
-    last_prompt=None,
-    model="gpt-3.5-turbo-16k-0613",
-    functions=None,
-    function_call="auto",
-    temperature=0,
-    **kwargs,
-):
-    """get the response of chatgpt
-
-    Args:
-        chat_history (list): the history of chat
-        system_prompt (str): the main task set in the first
-        last_prompt (str): attached to the final task
-        temperature(float):randomness of GPT responses
-
-    Returns:
-        str: the response of chatgpt
-    """
-    openai.api_key = API_KEY
-    openai.proxy = PROXY
-    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
-    if chat_history:
-        if len(chat_history) > 2 * MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
-        messages += chat_history
-                
-    if last_prompt:
-        messages += [{"role": "system", "content": f"{last_prompt}"}]
-
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        functions=functions,
-        function_call=function_call,
-        temperature=temperature,
-    )
-
-    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
-    save_logs(log_path, messages, response)
-
-    return response.choices[0].message
-
-
-def get_gpt_response_rule(
-    chat_history,
-    system_prompt,
-    last_prompt=None,
-    model="gpt-3.5-turbo-16k-0613",
-    temperature=0,
-    **kwargs,
-):
-    """get the response of chatgpt
-
-    Args:
-        chat_history (list): the history of chat
-        system_prompt (str): the main task set in the first
-        last_prompt (str): attached to the final task
-        temperature(float):randomness of GPT responses
-
-    Returns:
-        str: the response of chatgpt
-    """
-    openai.api_key = API_KEY
-    openai.proxy = PROXY
-
-    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
-    if chat_history:
-        if len(chat_history) > 2 * MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
-        messages += chat_history
-                
-
-    summary = kwargs["summary"] if "summary" in kwargs else None
-    if last_prompt or summary:
-        last_prompt = last_prompt if last_prompt else ""
-        last_prompt = f"你已知的信息为：\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
-        # messages += [{"role": "system", "content": f"{last_prompt}"}]
-        messages += [{"role": "user", "content": f"{last_prompt}"}]
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        temperature=temperature,
-    )
-
-    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
-    save_logs(log_path, messages, response)
-
-    return response.choices[0].message["content"]
-
-
-def get_gpt_response_rule_stream(
-    chat_history,
-    system_prompt,
-    last_prompt=None,
-    model="gpt-3.5-turbo-16k-0613",
-    temperature=0.3,
-    **kwargs,
-):
-    """get the response of chatgpt
-
-    Args:
-        chat_history (list): the history of chat
-        system_prompt (str): the main task set in the first
-        last_prompt (str): attached to the final task
-        temperature(float):randomness of GPT responses
-
-    Returns:
-        str: the response of chatgpt
-    """
-    openai.api_key = API_KEY
-    openai.proxy = PROXY
-
-    active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
-    if active_mode:
-        system_prompt = system_prompt + "请你的回复尽量简洁"
-        last_prompt = last_prompt + "请你的回复尽量简洁"
-    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
-    if chat_history:
-        if len(chat_history) > 2 * MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
-        messages += chat_history
-                
-
-    summary = kwargs["summary"] if "summary" in kwargs else None
-    if last_prompt or summary:
-        last_prompt = last_prompt if last_prompt else ""
-        last_prompt = f"你已知的信息为：\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
-        messages += [{"role": "system", "content": f"{last_prompt}"}]
-
-    # print(messages)
-    response = openai.ChatCompletion.create(
-        model=model, messages=messages, temperature=temperature, stream=True
-    )
+def get_stream(response,log_path,messages):
     ans = ""
     for res in response:
         if res:
@@ -236,9 +110,58 @@ def get_gpt_response_rule_stream(
             )
             ans += r
             yield r
-
-    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
     save_logs(log_path, messages, ans)
+
+def get_response(chat_history,system_prompt,last_prompt = None,stream = True,model = "gpt-3.5-turbo-16k-0613",functions = None,function_call = "auto",temperature = 0,**kwargs):
+    openai.api_key = API_KEY
+    openai.proxy = PROXY
+    active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
+    summary = kwargs["summary"] if "summary" in kwargs else None
+    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
+    
+        
+    if active_mode:
+        system_prompt = system_prompt + "请你的回复尽量简洁"
+        
+    if chat_history:
+        if len(chat_history) > 2 * MAX_CHAT_HISTORY:
+            chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
+        messages += chat_history
+                
+    if last_prompt or summary:
+        last_prompt = last_prompt if last_prompt else ""
+        last_prompt = f"你已知的信息为：\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
+        if active_mode:
+            last_prompt = last_prompt + "请你的回复尽量简洁"
+        # messages += [{"role": "system", "content": f"{last_prompt}"}]
+        messages += [{"role": "user", "content": f"{last_prompt}"}]
+        
+        
+    if functions:
+        response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        functions=functions,
+        function_call=function_call,
+        temperature=temperature,
+    )
+    else:
+        response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=temperature, 
+        stream=stream
+    )
+    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
+    if functions:
+        save_logs(log_path, messages, response)
+        return response.choices[0].message
+    elif stream:
+        return get_stream(response,log_path,messages)
+    else:
+        save_logs(log_path, messages, response)
+        return response.choices[0].message["content"]       
+        
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):

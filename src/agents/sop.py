@@ -201,10 +201,11 @@ class SOP:
         summary_last_prompt = self.summary_last_prompt if self.summary_last_prompt else "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
         system_prompt = self.current_node.environment_prompt + summary_system_prompt
         last_prompt = summary_last_prompt
-        response = get_gpt_response_rule(
+        response = get_response(
             self.shared_memory["chat_history"],
             system_prompt,
             last_prompt,
+            stream= False,
             log_path=self.log_path,
             summary=self.shared_memory["summary"],
         )
@@ -304,8 +305,8 @@ class controller:
 
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
-        response = get_gpt_response_rule(chat_history, system_prompt,
-                                        last_prompt, **kwargs)
+        response = get_response(chat_history, system_prompt,
+                                        last_prompt, stream = False,**kwargs)
         next_node = extract(response, extract_words)
         return next_node
 
@@ -330,8 +331,8 @@ class controller:
 
             last_prompt += controller_dict["call_last_prompt"]
             extract_words = controller_dict["call_extract_words"]
-            response = get_gpt_response_rule(chat_history, system_prompt,
-                                            last_prompt, **kwargs)
+            response = get_response(chat_history, system_prompt,
+                                    last_prompt, stream=False,**kwargs)
             next_role = extract(response, extract_words)
         elif self.controller_type == "1":
             if not node.current_role:
