@@ -42,6 +42,7 @@ def init_agents(sop):
             if node_name not in sop.agents:
                 sop.agents[node_name] = {}
             sop.agents[node_name][role] = agent
+            sop.nodes[node_name].roles.append(role)
 
 if __name__ == "__main__":
     sop = SOP("game.json")
