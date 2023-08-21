@@ -5,17 +5,19 @@ from agent import Agent
 from sop import SOP, controller
 
 
-def autorun(sop: SOP, controller: controller,begin_role,begin_query,user_roles=None):
+def autorun(sop: SOP, controller: controller,user_roles=None):
     current_node = sop.current_node
-    current_agent = sop.agents[current_node.name][begin_role]
-    current_memory = {"role": "user", "content": f"{current_agent.name}:{begin_query}"}
+    current_agent = sop.agents[current_node.name][current_node.begin_role]
+    current_memory = {"role": "user", "content": f"{current_agent.name}:{current_node.begin_query}"}
     sop.update_memory(current_memory)
     print(current_node.name)
+    print(f"{current_agent.name}:{current_node.begin_query}")
     
     while True:
         next_node, next_role = controller.next(sop)
         if next_node != current_node:
             sop.send_memory(next_node)
+            break
             
         is_user = True if next_role in user_roles else False
         
@@ -50,6 +52,4 @@ if __name__ == "__main__":
     controller = controller(sop.controller_dict)
     init_agents(sop)
     user_roles = sop.user_roles
-    begin_role = sop.begin_role
-    begin_query = sop.begin_query
-    autorun(sop, controller,begin_role,begin_query,user_roles)
+    autorun(sop, controller,user_roles)

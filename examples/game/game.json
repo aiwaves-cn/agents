@@ -2,10 +2,10 @@
     "temperature" : 0.3,
     "active_mode" : true,
     "log_path" : "logs",
+
     "controller_type" : "0",
     "user_roles" : ["杨不凡2"],
-    "begin_role" : "裁判员",
-    "begin_query" : "现在，游戏开始",
+
     "relation" : {
       "game_node": {
         "0": "game_node"
@@ -14,6 +14,8 @@
 
     "nodes" : {
         "game_node" : {
+          "begin_role" : "裁判员",
+          "begin_query" : "现在，游戏开始",
           "environment_prompt" : "现在的场景为一个真假杨不凡的游戏，主要角色为：裁判员(球球),游戏者1(杨不凡1),游戏者2(杨不凡2),游戏者3(杨不凡3),其中只有一个人是真实的杨不凡，另外两个人是假扮的杨不凡.\n假扮的杨不凡需要尽量伪装成真的杨不凡，真的杨不凡需要证明自己是真的杨不凡，而裁判员则需要辨别谁是真的杨不凡",
             "name" : "game_node",
             "is_interactive" : true,
