@@ -17,7 +17,7 @@
 import time
 import os
 import jieba
-from utils import get_gpt_response_rule_stream, get_gpt_response_rule, extract
+from utils import get_response,extract
 from sop import Node, SOP, controller
 from datebase import *
 
@@ -91,11 +91,12 @@ class Agent:
         system_prompt, last_prompt, res_dict = node.compile(self.role, self.agent_dict)
         chat_history = self.agent_dict["long_memory"]["chat_history"]
         temperature = self.agent_dict["temperature"]
-        response = get_gpt_response_rule_stream(
+        response = get_response(
             chat_history,
             system_prompt,
             last_prompt,
             temperature=temperature,
+            stream= True,
             summary=self.agent_dict["long_memory"]["summary"],
         )
 

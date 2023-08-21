@@ -1,8 +1,24 @@
 import sys
+import argparse
+import yaml
+import os
 
-sys.path.append("../../src/agents")
+parser = argparse.ArgumentParser(description='A demo of chatbot')
+parser.add_argument('--agent',type=str)
+parser.add_argument('--config',type=str)
+args = parser.parse_args()
+
+with open(args.config, 'r') as file:
+    config = yaml.safe_load(file)
+
+for key,value in config.items():
+    os.environ[key] = value
+
+sys.path.append("../src/agents")
 from agent import Agent
 from sop import SOP, controller
+
+
 
 
 def autorun(sop: SOP, controller: controller,user_roles=None):
@@ -46,10 +62,10 @@ def init_agents(sop):
             sop.agents[node_name][role] = agent
             sop.nodes[node_name].roles.append(role)
 
-if __name__ == "__main__":
-    
-    sop = SOP("game.json")
-    controller = controller(sop.controller_dict)
-    init_agents(sop)
-    user_roles = sop.user_roles
-    autorun(sop, controller,user_roles)
+
+
+sop = SOP(args.agent)
+controller = controller(sop.controller_dict)
+init_agents(sop)
+user_roles = sop.user_roles
+autorun(sop, controller,user_roles)
