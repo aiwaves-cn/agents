@@ -156,6 +156,21 @@ class IputComponent(PromptComponent):
         return f"你需要知道的是：\n<information>{information}</information>"
 
 
+class CustomizeComponent(PromptComponent):
+    def __init__(self,template,keywords) -> None:
+        super().__init__()
+        self.template = template
+        self.keywords = keywords
+    
+    def get_prompt(self,agent_dict):
+        template_keyword = []
+        for keyword in self.keywords:
+            current_keyword = get_memory_from_long_short(agent_dict,keyword)
+            template_keyword.append(current_keyword)
+        
+        return self.template.format(*template_keyword)
+    
+
 class KnowledgeBaseComponent(ToolComponent):
     def __init__(self, top_k, type, knowledge_base):
         super().__init__()
