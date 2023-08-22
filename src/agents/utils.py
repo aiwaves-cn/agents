@@ -36,12 +36,20 @@ import time
 
 API_KEY = os.environ["API_KEY"]
 PROXY = os.environ["PROXY"]
-MAX_CHAT_HISTORY = int(os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
-MIN_CATEGORY_SIM = int(os.environ["MIN_CATEGORY_SIM"]) if "MIN_CATEGORY_SIM" in os.environ else 0.7
-TOY_INFO_PATH = os.environ["TOY_INFO_PATH"] if "TOY_INFO_PATH" in os.environ else []
-FETSIZE = int(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
-
+MAX_CHAT_HISTORY = eval(
+    os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
+MIN_CATEGORY_SIM = eval(os.environ["MIN_CATEGORY_SIM"]
+                        ) if "MIN_CATEGORY_SIM" in os.environ else 0.7
+FETSIZE = eval(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
+TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 5
 # from config import *
+
+embedding_model = SentenceTransformer(
+            "BAAI/bge-large-zh", device=torch.device("cpu")
+        )
+
+def get_embedding(sentence):
+    return embedding_model.encode(sentence,convert_to_tensor=True).unsqueeze(0)
 
 
 def get_code():
@@ -64,7 +72,8 @@ def get_content_between_a_b(start_tag, end_tag, text):
     while start_index != -1:
         end_index = text.find(end_tag, start_index + len(start_tag))
         if end_index != -1:
-            extracted_text += text[start_index + len(start_tag) : end_index] + " "
+            extracted_text += text[start_index +
+                                   len(start_tag):end_index] + " "
             start_index = text.find(start_tag, end_index + len(end_tag))
         else:
             break
@@ -95,48 +104,68 @@ def save_logs(log_path, messages, response):
     log["output"] = response
     os.makedirs(log_path, exist_ok=True)
     log_file = os.path.join(
-        log_path, datetime.datetime.now().strftime("%Y-%m-%d%H:%M:%S") + ".json"
-    )
+        log_path,
+        datetime.datetime.now().strftime("%Y-%m-%d%H:%M:%S") + ".json")
     with open(log_file, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
 
-def get_stream(response,log_path,messages):
+
+def get_stream(response, log_path, messages):
     ans = ""
     for res in response:
         if res:
-            r = (
-                res.choices[0]["delta"].get("content")
-                if res.choices[0]["delta"].get("content")
-                else ""
-            )
+            r = (res.choices[0]["delta"].get("content")
+                 if res.choices[0]["delta"].get("content") else "")
             ans += r
             yield r
     save_logs(log_path, messages, ans)
+    
 
-def get_response(chat_history,system_prompt,last_prompt = None,stream = True,model = "gpt-3.5-turbo-16k-0613",functions = None,function_call = "auto",temperature = 0, WAIT_TIME=20, **kwargs):
+
+def get_response(chat_history,
+                 system_prompt,
+                 last_prompt=None,
+                 stream=True,
+                 model="gpt-3.5-turbo-16k-0613",
+                 functions=None,
+                 function_call="auto",
+                 temperature=0,
+                 WAIT_TIME=20,
+                 **kwargs):
     openai.api_key = API_KEY
     openai.proxy = PROXY
     active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
     summary = kwargs["summary"] if "summary" in kwargs else None
-    messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
+    key_history = kwargs["key_history"] if "key_history" in kwargs else None
+    key_his = "相关历史聊天记录如下<history>\n{\n"
+    for his in key_history:
+        key_his += his["content"] + "\n"
+    key_his +="}\n</history>\n"
     
-        
+    
+    messages = [{
+        "role": "system",
+        "content": system_prompt
+    }] if system_prompt else []
+
     if active_mode:
         system_prompt = system_prompt + "请你的回复尽量简洁"
-        
+
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
-            chat_history = chat_history[-2 * MAX_CHAT_HISTORY :]
+            chat_history = chat_history[-2 * MAX_CHAT_HISTORY:]
         messages += chat_history
-                
-    if last_prompt or summary:
+
+    if last_prompt or summary or key_history:
         last_prompt = last_prompt if last_prompt else ""
         last_prompt = f"你已知的信息为：\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
+        last_prompt = key_his + last_prompt if key_his else last_prompt
         if active_mode:
             last_prompt = last_prompt + "请你的回复尽量简洁"
         # messages += [{"role": "system", "content": f"{last_prompt}"}]
         messages += [{"role": "user", "content": f"{last_prompt}"}]
-        
+    
+
     while True:
         try:
             if functions:
@@ -151,9 +180,8 @@ def get_response(chat_history,system_prompt,last_prompt = None,stream = True,mod
                 response = openai.ChatCompletion.create(
                     model=model,
                     messages=messages,
-                    temperature=temperature, 
-                    stream=stream
-                )
+                    temperature=temperature,
+                    stream=stream)
             break
         except Exception as e:
             print(e)
@@ -163,17 +191,16 @@ def get_response(chat_history,system_prompt,last_prompt = None,stream = True,mod
             else:
                 print("Please wait {WAIT_TIME} seconds and resend later ...")
                 time.sleep(WAIT_TIME)
-            
+
     log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
     if functions:
         save_logs(log_path, messages, response)
         return response.choices[0].message
     elif stream:
-        return get_stream(response,log_path,messages)
+        return get_stream(response, log_path, messages)
     else:
         save_logs(log_path, messages, response)
-        return response.choices[0].message["content"]       
-        
+        return response.choices[0].message["content"]
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):
@@ -189,7 +216,8 @@ def cut_sent(para):
     pieces = [i for i in para.split("\n") if i]
     batch_size = 3
     chucks = [
-        " ".join(pieces[i : i + batch_size]) for i in range(0, len(pieces), batch_size)
+        " ".join(pieces[i:i + batch_size])
+        for i in range(0, len(pieces), batch_size)
     ]
     return chucks
 
@@ -206,7 +234,6 @@ def process_document(file_path):
     """
     final_dict = {}
     count = 0
-    embedder = SentenceTransformer("BAAI/bge-large-zh", device=torch.device("cpu"))
     if file_path.endswith(".csv"):
         dataset = pandas.read_csv(file_path)
         questions = dataset["question"]
@@ -218,7 +245,7 @@ def process_document(file_path):
                 temp_dict["q"] = q
                 temp_dict["a"] = a
                 temp_dict["chunk"] = text
-                temp_dict["emb"] = embedder.encode(q + text).tolist()
+                temp_dict["emb"] = get_embedding(q + text).tolist()
                 final_dict[count] = temp_dict
                 count += 1
         # embedding chunk
@@ -228,7 +255,7 @@ def process_document(file_path):
                 temp_dict["q"] = q
                 temp_dict["a"] = a
                 temp_dict["chunk"] = text
-                temp_dict["emb"] = embedder.encode(text).tolist()
+                temp_dict["emb"] = get_embedding(text).tolist()
                 final_dict[count] = temp_dict
                 count += 1
         # embedding q
@@ -237,7 +264,7 @@ def process_document(file_path):
             temp_dict["q"] = q
             temp_dict["a"] = a
             temp_dict["chunk"] = a
-            temp_dict["emb"] = embedder.encode(q).tolist()
+            temp_dict["emb"] = get_embedding(q).tolist()
             final_dict[count] = temp_dict
             count += 1
         # embedding q+a
@@ -246,7 +273,7 @@ def process_document(file_path):
             temp_dict["q"] = q
             temp_dict["a"] = a
             temp_dict["chunk"] = a
-            temp_dict["emb"] = embedder.encode(q + a).tolist()
+            temp_dict["emb"] = get_embedding(q + a).tolist()
             final_dict[count] = temp_dict
             count += 1
         # embedding a
@@ -255,14 +282,15 @@ def process_document(file_path):
             temp_dict["q"] = q
             temp_dict["a"] = a
             temp_dict["chunk"] = a
-            temp_dict["emb"] = embedder.encode(a).tolist()
+            temp_dict["emb"] = get_embedding(a).tolist()
             final_dict[count] = temp_dict
             count += 1
         print(f"finish updating {len(final_dict)} data!")
         os.makedirs("temp_database", exist_ok=True)
         save_path = os.path.join(
             "temp_database/",
-            file_path.split("/")[-1].replace("." + file_path.split(".")[1], ".json"),
+            file_path.split("/")[-1].replace("." + file_path.split(".")[1],
+                                             ".json"),
         )
         print(save_path)
         with open(save_path, "w") as f:
@@ -271,18 +299,19 @@ def process_document(file_path):
     else:
         loader = UnstructuredFileLoader(file_path)
         docs = loader.load()
-        text_spiltter = CharacterTextSplitter(chunk_size=200, chunk_overlap=100)
+        text_spiltter = CharacterTextSplitter(chunk_size=200,
+                                              chunk_overlap=100)
         docs = text_spiltter.split_text(docs[0].page_content)
         os.makedirs("temp_database", exist_ok=True)
         save_path = os.path.join(
-            "temp_database/", file_path.replace("." + file_path.split(".")[1], ".json")
-        )
+            "temp_database/",
+            file_path.replace("." + file_path.split(".")[1], ".json"))
         final_dict = {}
         count = 0
         for c in tqdm(docs):
             temp_dict = {}
             temp_dict["chunk"] = c
-            temp_dict["emb"] = embedder.encode(c).tolist()
+            temp_dict["emb"] = get_embedding(c).tolist()
             final_dict[count] = temp_dict
             count += 1
         print(f"finish updating {len(final_dict)} data!")
@@ -352,25 +381,18 @@ def cos_sim(a: torch.Tensor, b: torch.Tensor):
 
 
 def matching_a_b(a, b, requirements=None):
-    """
-    Args:
-        inputtext: 待匹配的类目名称
-        json_file_path: 类目表路径
-        top_k:默认三个最高得分的结果
-    Return：
-        topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
-    """
-    embedder = SentenceTransformer("BAAI/bge-large-zh", device=torch.device("cpu"))
-    a_embedder = embedder.encode(a, convert_to_tensor=True)
+    a_embedder = get_embedding(a, convert_to_tensor=True)
     # 获取embedder
-    b_embeder = embedder.encode(b, convert_to_tensor=True)
+    b_embeder = get_embedding(b, convert_to_tensor=True)
     sim_scores = cos_sim(a_embedder, b_embeder)[0]
     return sim_scores
 
 
-def matching_category(
-    inputtext, forest_name, requirements=None, cat_embedder=None, top_k=3
-):
+def matching_category(inputtext,
+                      forest_name,
+                      requirements=None,
+                      cat_embedder=None,
+                      top_k=3):
     """
     Args:
         inputtext: 待匹配的类目名称
@@ -380,16 +402,16 @@ def matching_category(
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
     # 获取embedder
-    embedder = SentenceTransformer("BAAI/bge-large-zh", device=torch.device("cpu"))
     sim_scores = torch.zeros([100])
     if inputtext:
-        input_embeder = embedder.encode(inputtext, convert_to_tensor=True)
+        input_embeder = get_embedding(inputtext, convert_to_tensor=True)
         sim_scores = cos_sim(input_embeder, cat_embedder)[0]
 
     # 有需求匹配需求，没需求匹配类目
     if requirements:
         requirements = requirements.split(" ")
-        requirements_embedder = embedder.encode(requirements, convert_to_tensor=True)
+        requirements_embedder = get_embedding(requirements,
+                                                convert_to_tensor=True)
         req_scores = cos_sim(requirements_embedder, cat_embedder)
         req_scores = torch.mean(req_scores, dim=0)
         # total_scores = req_scores*0.8 + sim_scores*0.2
@@ -405,6 +427,7 @@ def matching_category(
 
 
 class Leaf_Node:
+
     def __init__(self, val) -> None:
         self.val = val
         self.son = []
@@ -566,16 +589,25 @@ def search_with_api(requirements, categery):
         request_items = request_items[:FETSIZE]
     return request_items, new_top
 
-def get_memory_from_long_short(agent_dict,keywords):
+
+def get_memory_from_long_short(agent_dict, keywords):
     if keywords in agent_dict["long_memory"]:
         return agent_dict["long_memory"][keywords]
 
     elif keywords in agent_dict["short_memory"]:
         return agent_dict["short_memory"][keywords]
-    
+
     else:
         return ""
 
-if __name__ == "__main__":
-    str = "hello 123 hello"
-    x = get_content_between_a_b("hello1", "hello1", str)
+
+def get_key_history(query,history,embeddings):
+    key_history = []
+    query = query["content"]
+    query_embedding = get_embedding(query)
+    hits = semantic_search(query_embedding, embeddings, top_k=min(TOP_K,embeddings.shape[0]))
+    hits = hits[0]
+    for hit in hits:
+        matching_idx = hit["corpus_id"]
+        key_history.append(history[matching_idx])
+    return key_history

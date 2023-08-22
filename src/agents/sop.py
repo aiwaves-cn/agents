@@ -36,12 +36,11 @@ class SOP:
         self.controller_dict = {}
         self.config = {}
         self.agents = {}
-        self.shared_memory = {"chat_history": [], "summary": ""}
+        self.shared_memory = {"chat_history": [],"short_history":[],"summary": ""}
         
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
-        self.controller_dict["controller_type"] = sop["controller_type"] if "controller_type" in sop else "0"
         self.summary_system_prompt = sop["summary_system_prompt"] if "summary_system_prompt" in sop else None
         self.summary_last_prompt = sop["summary_last_prompt"] if "summary_last_prompt" in sop else None
         self.user_roles = sop["user_roles"] if "user_roles" in sop else []
@@ -82,6 +81,8 @@ class SOP:
 
             if "controller" in node:
                 self.controller_dict[name] = node["controller"]
+                if "controller_type" in node:
+                    self.controller_dict[name]["controller_type"] = node["controller_type"]
 
             now_node = Node(name=name,
                             is_interactive=is_interactive,
@@ -198,39 +199,55 @@ class SOP:
 
     def summary(self):
         summary_system_prompt = self.summary_system_prompt if self.summary_system_prompt else "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
-        summary_last_prompt = self.summary_last_prompt if self.summary_last_prompt else "请你根据历史的聊天记录进行概括，输出格式为  <output>历史摘要：\{你总结的内容\} </output>"
+        summary_last_prompt = self.summary_last_prompt if self.summary_last_prompt else "请你根据历史的聊天记录进行概括，输出格式为  历史摘要：\{你总结的内容\} "
         system_prompt = self.current_node.environment_prompt + summary_system_prompt
         last_prompt = summary_last_prompt
+        query = self.shared_memory["chat_history"][-1] if len(self.shared_memory["chat_history"])>0 else " "
+        key_history = get_key_history(query,self.shared_memory["chat_history"][:-1],self.shared_memory["chat_embeddings"][:-1])
         response = get_response(
-            self.shared_memory["chat_history"],
+            self.shared_memory["short_history"],
             system_prompt,
             last_prompt,
             stream= False,
             log_path=self.log_path,
             summary=self.shared_memory["summary"],
+            key_history = key_history
         )
         return response
 
     def update_memory(self, memory):
         global MAX_CHAT_HISTORY
         self.shared_memory["chat_history"].append(memory)
+        self.shared_memory["short_history"].append(memory)
+        current_embedding = get_embedding(memory["content"])
+        if "chat_embeddings" not in self.shared_memory:
+            self.shared_memory["chat_embeddings"]= current_embedding
+        else:
+            self.shared_memory["chat_embeddings"] = torch.cat([self.shared_memory["chat_embeddings"],current_embedding],dim = 0)
+        
         summary = None
-        if len(self.shared_memory["chat_history"]) > MAX_CHAT_HISTORY:
+        
+        if len(self.shared_memory["short_history"]) > MAX_CHAT_HISTORY:
             summary = self.summary()
-            self.shared_memory["chat_history"] = [self.shared_memory["chat_history"][-MAX_CHAT_HISTORY//2:]]
+            self.shared_memory["short_history"] = [self.shared_memory["short_history"][-MAX_CHAT_HISTORY//2:]]
             self.shared_memory["summary"] = summary
 
         for agent in self.agents[self.current_node.name].values():
             agent.agent_dict["long_memory"][
-                "chat_history"] = self.shared_memory["chat_history"]
-            agent.agent_dict["long_memory"]["summary"] = summary
+                "chat_history"].append(memory)
+            if "chat_embeddings" not in  agent.agent_dict["long_memory"]:
+                agent.agent_dict["long_memory"]["chat_embeddings"] = current_embedding
+            else:
+                 agent.agent_dict["long_memory"]["chat_embeddings"] = torch.cat([agent.agent_dict["long_memory"]["chat_embeddings"],current_embedding],dim = 0)
+            agent.agent_dict["short_memory"]["chat_history"] = self.shared_memory["short_history"]
+            agent.agent_dict["short_memory"]["summary"] = summary
 
     def send_memory(self, next_node):
         summary = self.summary()
         self.shared_memory["summary"] = summary
-        self.shared_memory["chat_history"] = []
+        self.shared_memory["short_history"] = []
         for agent in self.agents[next_node.name].values():
-            agent.agent_dict["long_memory"]["summary"] = summary
+            agent.agent_dict["short_memory"]["summary"] = summary
 
     def load_date(self, task: TaskConfig):
         self.current_node_name = task.current_node_name
@@ -295,7 +312,6 @@ class controller:
     def __init__(self, controller_dict) -> None:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
-        self.controller_type = self.controller_dict["controller_type"]
         
     def transit(self, node: Node, chat_history, **kwargs):
         controller_dict = self.controller_dict[node.name]
@@ -311,7 +327,8 @@ class controller:
         return next_node
 
     def route(self, node: Node, chat_history, **kwargs):
-        if self.controller_type == "0":
+        controller_type = self.controller_dict[node.name]["controller_type"] if "controller_type" in self.controller_dict[node.name] else "0"
+        if controller_type == "0":
             controller_dict = self.controller_dict[node.name]
             system_prompt = "<environment>" + kwargs[
                 "environment_prompt"] + "</environment>\n" + controller_dict[
@@ -334,14 +351,14 @@ class controller:
             response = get_response(chat_history, system_prompt,
                                     last_prompt, stream=False,**kwargs)
             next_role = extract(response, extract_words)
-        elif self.controller_type == "1":
+        elif controller_type == "1":
             if not node.current_role:
                 next_role = node.roles[0]
             else:
                 index = node.roles.index(node.current_role)
                 next_role = node.roles[(index+1)%len(node.roles)]
         
-        elif self.controller_type == "2":
+        elif controller_type == "2":
             next_role = random.choice(node.roles)
             
         return next_role
@@ -352,10 +369,13 @@ class controller:
         if len(current_node.next_nodes) == 1:
             next_node = "0"
         else:
+            query = sop.shared_memory["chat_history"][-1] if len(sop.shared_memory["chat_history"])>0 else " "
+            key_history = get_key_history(query,sop.shared_memory["chat_history"][:-1],sop.shared_memory["chat_embeddings"][:-1])
             next_node = self.transit(
                 node=current_node,
-                chat_history=sop.shared_memory["chat_history"],
+                chat_history=sop.shared_memory["short_history"],
                 summary=sop.shared_memory["summary"],
+                key_history = key_history,
                 environment_prompt=current_node.environment_prompt)
 
         if not next_node.isdigit():
@@ -365,10 +385,13 @@ class controller:
         if len(sop.agents[current_node.name].keys()) == 1:
             next_role = list(sop.agents[current_node.name].keys())[0]
         else:
+            query = sop.shared_memory["chat_history"][-1] if len(sop.shared_memory["chat_history"])>0 else " "
+            key_history = get_key_history(query,sop.shared_memory["chat_history"][:-1],sop.shared_memory["chat_embeddings"][:-1])
             next_role = self.route(
                 node=next_node,
-                chat_history=sop.shared_memory["chat_history"],
+                chat_history=sop.shared_memory["short_history"],
                 summary=sop.shared_memory["summary"],
+                key_history = key_history, 
                 environment_prompt=current_node.environment_prompt,
             )
 
