@@ -178,9 +178,6 @@ class KnowledgeBaseComponent(ToolComponent):
         self.type = type
         self.knowledge_base = knowledge_base
 
-        self.embedding_model = SentenceTransformer(
-            "BAAI/bge-large-zh", device=torch.device("cpu")
-        )
         if self.type == "QA":
             (
                 self.kb_embeddings,
@@ -197,7 +194,7 @@ class KnowledgeBaseComponent(ToolComponent):
         query = agent_dict["query"]
         knowledge = ""
         query = "为这个句子生成表示以用于检索相关文章：" + query
-        query_embedding = self.embedding_model.encode(query, normalize_embeddings=True)
+        query_embedding = get_embedding(query)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]
         temp = []
@@ -268,12 +265,16 @@ class ExtractComponent(ToolComponent):
         self.last_prompt = last_prompt if last_prompt else None
 
     def func(self, agent_dict):
+        
+        query = agent_dict["long_memory"]["chat_history"][-1] if len(agent_dict["long_memory"]["chat_history"])>0 else " "
+        key_history = get_key_history(query,agent_dict["long_memory"]["chat_history"][:-1],agent_dict["long_memory"]["chat_embeddings"][:-1])
         response = get_response(
             agent_dict["long_memory"]["chat_history"],
             self.system_prompt,
             self.last_prompt,
             agent_dict=agent_dict,
-            stream = False
+            stream = False,
+            key_history = key_history
         )
         for extract_word in self.long_memory_extract_words:
             key = extract(response, extract_word)
@@ -303,10 +304,8 @@ class CategoryRequirementsComponent(ToolComponent):
                     new_d["cat_leaf_name"] = name
                     new_d["information"] = flatten_dict(new_d["information"])
                     self.information_dataset.append(new_d)
-        self.embedder = SentenceTransformer(
-            "BAAI/bge-large-zh", device=torch.device("cpu")
-        )
-        self.target_embbeding = self.embedder.encode(
+
+        self.target_embbeding = get_embedding(
             self.leaf_name, convert_to_tensor=True
         )
 
@@ -347,12 +346,16 @@ class CategoryRequirementsComponent(ToolComponent):
                 },
             }
         ]
-        response = get_gpt_response_function(
+        query = agent_dict["long_memory"]["chat_history"][-1] if len(agent_dict["long_memory"]["chat_history"])>0 else " "
+        key_history = get_key_history(query,agent_dict["long_memory"]["chat_history"][:-1],agent_dict["long_memory"]["chat_embeddings"][:-1])
+        response = get_response(
             messages,
             None,
             None,
             functions=functions,
+            stream=False,
             function_call={"name": "search_information"},
+            key_history = key_history
         )
         response_message = json.loads(response["function_call"]["arguments"])
         category = (
@@ -384,13 +387,13 @@ class CategoryRequirementsComponent(ToolComponent):
             if category in top_category:
                 top_category.remove(category)
 
-            recommend = ""
+            recommend = "\n经过搜索后，推荐商品如下：\n"
             for i, request_item in enumerate(request_items):
                 itemTitle = request_item["itemTitle"]
                 itemPrice = request_item["itemPrice"]
-                recommend += f"{i}.商品名称：{itemTitle},商品价格为:{itemPrice}\n"
-            recommend += "你需要对每个商品进行介绍，引导用户购买"
-            outputdict["recommend"] = recommend
+                itemPicUrl = request_item["itemPicUrl"]
+                recommend += f"[{i}.商品名称：{itemTitle},商品价格:{itemPrice}]({itemPicUrl})\n"
+            print(recommend)
         else:
             prompt += f"""你需要知道的是：用户目前选择的商品是{category}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{top_category},{topk_result[0][0]}，你需要对这些近似商品进行介绍，并引导用户购买"""
         outputdict["prompt"] = prompt

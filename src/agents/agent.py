@@ -17,7 +17,7 @@
 import time
 import os
 import jieba
-from utils import get_response,extract
+from utils import get_response,extract,get_key_history
 from sop import Node, SOP, controller
 from datebase import *
 
@@ -59,20 +59,18 @@ class Agent:
         self.agent_dict["temperature"] = temperature
         if is_user:
             response = input(f"{self.name}:")
-            response = f"{self.name}:" + response
+            response = f"{self.name}:{response}"
             res_dict = {}
         else:
             response, res_dict = self.act(current_node)
-
-        for res in response:
-            yield res
-
         # ====================================================#
         if "response" in res_dict and res_dict["response"]:
             for res in res_dict["response"]:
                 yield res
             del res_dict["response"]
-
+            
+        for res in response:
+            yield res
         # ====================================================#
 
     def load_date(self, task: TaskConfig):
@@ -89,15 +87,20 @@ class Agent:
             res_dict: other response
         """
         system_prompt, last_prompt, res_dict = node.compile(self.role, self.agent_dict)
-        chat_history = self.agent_dict["long_memory"]["chat_history"]
+        chat_history = self.agent_dict["short_memory"]["chat_history"]
         temperature = self.agent_dict["temperature"]
+        
+        query = self.agent_dict["long_memory"]["chat_history"][-1] if len(self.agent_dict["long_memory"]["chat_history"])>0 else " "
+        key_history = get_key_history(query,self.agent_dict["long_memory"]["chat_history"][:-1],self.agent_dict["long_memory"]["chat_embeddings"][:-1])
+        
         response = get_response(
             chat_history,
             system_prompt,
             last_prompt,
             temperature=temperature,
             stream= True,
-            summary=self.agent_dict["long_memory"]["summary"],
+            summary=self.agent_dict["short_memory"]["summary"],
+            key_history = key_history
         )
 
         return response, res_dict

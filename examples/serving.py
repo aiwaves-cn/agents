@@ -21,9 +21,12 @@ from sop import SOP, controller
 
 
 
+
+
 def autorun(sop: SOP, controller: controller,user_roles=None):
     current_node = sop.current_node
     current_agent = sop.agents[current_node.name][current_node.begin_role]
+    current_node.current_role = current_node.begin_role
     current_memory = {"role": "user", "content": f"{current_agent.name}:{current_node.begin_query}"}
     sop.update_memory(current_memory)
     print(current_node.name)
@@ -48,7 +51,8 @@ def autorun(sop: SOP, controller: controller,user_roles=None):
             all += res
             if not is_user:
                 print(res, end="")
-        print()
+        if not is_user:
+            print()
         current_memory = {"role": "user", "content": all}
         sop.update_memory(current_memory)
         
