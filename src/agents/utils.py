@@ -32,6 +32,7 @@ from sentence_transformers import SentenceTransformer
 import string
 import random
 import os
+import time
 
 API_KEY = os.environ["API_KEY"]
 PROXY = os.environ["PROXY"]
@@ -112,7 +113,7 @@ def get_stream(response,log_path,messages):
             yield r
     save_logs(log_path, messages, ans)
 
-def get_response(chat_history,system_prompt,last_prompt = None,stream = True,model = "gpt-3.5-turbo-16k-0613",functions = None,function_call = "auto",temperature = 0,**kwargs):
+def get_response(chat_history,system_prompt,last_prompt = None,stream = True,model = "gpt-3.5-turbo-16k-0613",functions = None,function_call = "auto",temperature = 0, WAIT_TIME=20, **kwargs):
     openai.api_key = API_KEY
     openai.proxy = PROXY
     active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
@@ -136,22 +137,33 @@ def get_response(chat_history,system_prompt,last_prompt = None,stream = True,mod
         # messages += [{"role": "system", "content": f"{last_prompt}"}]
         messages += [{"role": "user", "content": f"{last_prompt}"}]
         
-        
-    if functions:
-        response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        functions=functions,
-        function_call=function_call,
-        temperature=temperature,
-    )
-    else:
-        response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        temperature=temperature, 
-        stream=stream
-    )
+    while True:
+        try:
+            if functions:
+                response = openai.ChatCompletion.create(
+                    model=model,
+                    messages=messages,
+                    functions=functions,
+                    function_call=function_call,
+                    temperature=temperature,
+                )
+            else:
+                response = openai.ChatCompletion.create(
+                    model=model,
+                    messages=messages,
+                    temperature=temperature, 
+                    stream=stream
+                )
+            break
+        except Exception as e:
+            print(e)
+            if "maximum context length is" in str(e):
+                assert False, "exceed max length"
+                break
+            else:
+                print("Please wait {WAIT_TIME} seconds and resend later ...")
+                time.sleep(WAIT_TIME)
+            
     log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
     if functions:
         save_logs(log_path, messages, response)
