@@ -49,13 +49,6 @@ class Agent:
         """
         reply api ,The interface set for backend calls
         """
-        # if self.judge_sensitive(user_query):
-        #     response = "<回复>对不起，您的问题涉及禁忌话题或违规内容，我无法作答，请注意您的言辞！</回复>"
-        #     for res in response:
-        #         time.sleep(0.02)
-        #         yield res
-        #     return
-        
         self.agent_dict["temperature"] = temperature
         if is_user:
             response = input(f"{self.name}:")
@@ -111,14 +104,3 @@ class Agent:
     def reflection(self):
         pass
 
-    def judge_sensitive(self, query):
-        current_path = os.path.abspath(__file__)
-        current_path = os.path.dirname(current_path)
-        with open(os.path.join(current_path, "sensitive.txt")) as file_01:
-            lines = file_01.readlines()
-            lines = [i.rstrip() for i in lines]
-            seg_list = jieba.cut(query, cut_all=True)
-            for seg in seg_list:
-                if seg in lines:
-                    return True
-        return False

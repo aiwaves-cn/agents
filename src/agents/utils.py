@@ -42,14 +42,17 @@ MIN_CATEGORY_SIM = eval(os.environ["MIN_CATEGORY_SIM"]
                         ) if "MIN_CATEGORY_SIM" in os.environ else 0.7
 FETSIZE = eval(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
 TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 5
-# from config import *
+
 
 embedding_model = SentenceTransformer(
             "BAAI/bge-large-zh", device=torch.device("cpu")
         )
 
 def get_embedding(sentence):
-    return embedding_model.encode(sentence,convert_to_tensor=True).unsqueeze(0)
+    embed = embedding_model.encode(sentence,convert_to_tensor=True)
+    if len(embed.shape)==1:
+        embed = embed.unsqueeze(0)
+    return embed
 
 
 def get_code():
@@ -137,7 +140,7 @@ def get_response(chat_history,
     active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
     summary = kwargs["summary"] if "summary" in kwargs else None
     key_history = kwargs["key_history"] if "key_history" in kwargs else None
-    key_his = "相关历史聊天记录如下<history>\n{\n"
+    key_his = "Relevant historical chat records are as follows <history>\n{\n"
     for his in key_history:
         key_his += his["content"] + "\n"
     key_his +="}\n</history>\n"
@@ -149,7 +152,7 @@ def get_response(chat_history,
     }] if system_prompt else []
 
     if active_mode:
-        system_prompt = system_prompt + "请你的回复尽量简洁"
+        system_prompt = system_prompt + "Please keep your reply as concise as possible"
 
     if chat_history:
         if len(chat_history) > 2 * MAX_CHAT_HISTORY:
@@ -158,10 +161,10 @@ def get_response(chat_history,
 
     if last_prompt or summary or key_history:
         last_prompt = last_prompt if last_prompt else ""
-        last_prompt = f"你已知的信息为：\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
+        last_prompt = f"The information you know is:\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
         last_prompt = key_his + last_prompt if key_his else last_prompt
         if active_mode:
-            last_prompt = last_prompt + "请你的回复尽量简洁"
+            last_prompt = last_prompt + "Please keep your reply as concise as possible"
         # messages += [{"role": "system", "content": f"{last_prompt}"}]
         messages += [{"role": "user", "content": f"{last_prompt}"}]
     
@@ -381,9 +384,9 @@ def cos_sim(a: torch.Tensor, b: torch.Tensor):
 
 
 def matching_a_b(a, b, requirements=None):
-    a_embedder = get_embedding(a, convert_to_tensor=True)
+    a_embedder = get_embedding(a)
     # 获取embedder
-    b_embeder = get_embedding(b, convert_to_tensor=True)
+    b_embeder = get_embedding(b)
     sim_scores = cos_sim(a_embedder, b_embeder)[0]
     return sim_scores
 
@@ -395,26 +398,23 @@ def matching_category(inputtext,
                       top_k=3):
     """
     Args:
-        inputtext: 待匹配的类目名称
-        forest: 搜索树
-        top_k:默认三个最高得分的结果
+        inputtext: the category name to be matched
+        forest: search tree
+        top_k: the default three highest scoring results
     Return：
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
-    # 获取embedder
+
     sim_scores = torch.zeros([100])
     if inputtext:
-        input_embeder = get_embedding(inputtext, convert_to_tensor=True)
+        input_embeder = get_embedding(inputtext)
         sim_scores = cos_sim(input_embeder, cat_embedder)[0]
 
-    # 有需求匹配需求，没需求匹配类目
     if requirements:
         requirements = requirements.split(" ")
-        requirements_embedder = get_embedding(requirements,
-                                                convert_to_tensor=True)
+        requirements_embedder = get_embedding(requirements)
         req_scores = cos_sim(requirements_embedder, cat_embedder)
         req_scores = torch.mean(req_scores, dim=0)
-        # total_scores = req_scores*0.8 + sim_scores*0.2
         total_scores = req_scores
     else:
         total_scores = sim_scores
@@ -437,20 +437,15 @@ class Leaf_Node:
 
 
 def create_forest(csv_file):
-    # 储存所有csv关系
     json_list = []
-    # 记录节点是否出现
     node_dict = {}
-    # 记录当前id
     node_id = 0
-    # 存储所有节点
     node_list = []
     name_list = []
 
-    # 将csv里所有关系存进json_list
     with open(csv_file, "r") as file:
         csv_data = csv.reader(file)
-        headers = next(csv_data)  # 获取标题行
+        headers = next(csv_data)  
 
         for row in csv_data:
             json_data = {}
@@ -458,9 +453,7 @@ def create_forest(csv_file):
                 json_data[headers[i]] = row[i]
             json_list.append(json_data)
 
-    # 将json_list 转化为node_list
     for d in json_list:
-        # 读取父类跟子类的名字
         cat_root_name = d["cat_root_name"]
         cat_leaf_name = d["cat_leaf_name"]
         father_names = cat_root_name.split("/")
@@ -491,7 +484,7 @@ def create_forest(csv_file):
 
 
 def sample_with_order_preserved(lst, num):
-    """在保持原顺序的情况下从列表中随机抽样。"""
+    """Randomly sample from the list while maintaining the original order."""
     indices = list(range(len(lst)))
     sampled_indices = random.sample(indices, num)
     sampled_indices.sort()  # 保持原顺序
@@ -499,19 +492,17 @@ def sample_with_order_preserved(lst, num):
 
 
 def limit_values(data, max_values):
-    """将字典中的每个键值列表缩减至指定大小，保持原列表中的顺序不变。"""
+    """Reduce each key-value list in the dictionary to the specified size, keeping the order of the original list unchanged."""
     for key, values in data.items():
         if len(values) > max_values:
-            # 使用带顺序的随机抽样方法限制列表长度
             data[key] = sample_with_order_preserved(values, max_values)
     return data
 
 
 def limit_keys(data, max_keys):
-    """将字典缩减至指定的键数。"""
+    """Reduce the dictionary to the specified number of keys."""
     keys = list(data.keys())
     if len(keys) > max_keys:
-        # 使用带顺序的随机抽样方法限制键的数量
         keys = sample_with_order_preserved(keys, max_keys)
         data = {key: data[key] for key in keys}
     return data
@@ -519,7 +510,7 @@ def limit_keys(data, max_keys):
 
 def flatten_dict(nested_dict):
     """
-    将字典平坦
+    flatten the dictionary
     """
     flattened_dict = {}
     for key, value in nested_dict.items():
@@ -539,10 +530,6 @@ def merge_list(list1, list2):
 
 
 def Search_Engines(req):
-    # 函数：调用搜索引擎，这里调用的粉象api
-    # 入参 req 类型：str 含义：表示当前需要检索的需求
-    # 出参 request_items 类型：List 含义：返回的商品需求
-    # 出参 top_category 类型：List 含义：返回的近似商品
     new_dict = {"keyword": req, "catLeafName": "", "fetchSize": FETSIZE}
     res = requests.post(
         url="https://k8s-api-dev.fenxianglife.com/dev1/fenxiang-ai/search/item",
@@ -558,30 +545,22 @@ def Search_Engines(req):
 
 
 def search_with_api(requirements, categery):
-    # 函数：调用搜索引擎，这里调用的粉象api
-    # 入参 attachments 类型：dict 含义：message携带的信息
-    # 出参 request_items 类型：List 含义：搜索得到的商品
-    # 出参 chat_answer 类型：str 含义：表示回答客户时附加的信息（测试时使用）
-
-    # requirements = attachments["requirements"]
-    # all_req = requirements + " " + attachments["category"]
-    # request_items,top_category = Search_Engines(all_req)#这里调用搜索引擎
     request_items = []
-    all_req_list = requirements.split(" ")  # 需求字符串转换为list
-    count = 0  # 记录减少需求的次数
+    all_req_list = requirements.split(" ")  
+    count = 0  
 
     while len(request_items) < FETSIZE and len(all_req_list) > 0:
-        if count:  # 非第一次搜索
-            all_req_list.pop(0)  # 删除第一个需求
-        all_req = (" ").join(all_req_list)  # 需求list转换为字符串
+        if count: 
+            all_req_list.pop(0)  
+        all_req = (" ").join(all_req_list)  
         if categery not in all_req_list:
             all_req = all_req + " " + categery
-        now_request_items, top_category = Search_Engines(all_req)  # 这里调用搜索引擎
+        now_request_items, top_category = Search_Engines(all_req)  
         request_items = merge_list(request_items, now_request_items)
         count += 1
     new_top = []
     for category in top_category:
-        if "其他" in category or "其它" in category:
+        if "其它" in category or "其它" in category:
             continue
         else:
             new_top.append(category)
@@ -611,3 +590,6 @@ def get_key_history(query,history,embeddings):
         matching_idx = hit["corpus_id"]
         key_history.append(history[matching_idx])
     return key_history
+
+
+    
