@@ -17,6 +17,7 @@
 import json
 from datebase import TaskConfig
 from component import *
+from extra_component import *
 
 
 class SOP:
@@ -51,6 +52,16 @@ class SOP:
 
 
     def init_nodes(self, sop):
+        """
+         Initialize the Node information in the SOP ,in the form of
+         {
+             node_name:{
+                 agent_role:{
+                     component_name:component
+                 }
+             }
+         } 
+        """
         # node_sop: a list of the node
         node_sop = sop["nodes"]
         nodes_dict = {}
@@ -99,6 +110,15 @@ class SOP:
         return nodes_dict
 
     def init_states(self, node_name, agent_states_dict: dict):
+        """
+        Initialize the agent information in the node according to the agent_state, in the form of 
+        {
+            agent_role:{
+                component_name:component,
+                component_name:component,
+                }
+            }
+        """
         agent_states = {}
         for role, components in agent_states_dict.items():
             component_dict = {}
@@ -198,8 +218,8 @@ class SOP:
                 self.nodes[key].next_nodes[keyword] = self.nodes[next_node]
 
     def summary(self):
-        summary_system_prompt = self.summary_system_prompt if self.summary_system_prompt else "\n你的任务是根据当前的场景对历史的对话记录进行概括，总结出最重要的信息"
-        summary_last_prompt = self.summary_last_prompt if self.summary_last_prompt else "请你根据历史的聊天记录进行概括，输出格式为  历史摘要：\{你总结的内容\} "
+        summary_system_prompt = self.summary_system_prompt if self.summary_system_prompt else "\nYour task is to summarize the historical dialogue records according to the current scene, and summarize the most important information"
+        summary_last_prompt = self.summary_last_prompt if self.summary_last_prompt else "Please make a summary based on the historical chat records, the output format is history summary: \{your summary content\} "
         system_prompt = self.current_node.environment_prompt + summary_system_prompt
         last_prompt = summary_last_prompt
         query = self.shared_memory["chat_history"][-1] if len(self.shared_memory["chat_history"])>0 else " "
@@ -279,7 +299,7 @@ class Node:
     def get_state(self, role, agent_dict):
         system_prompt, last_prompt = self.compile(role, agent_dict)
         current_role_state = (
-            f"目前的角色为：{role}，它的system_prompt为{system_prompt},last_prompt为{last_prompt}"
+            f"The current role is: {role}, its system_prompt is {system_prompt}, and its last_prompt is {last_prompt}"
         )
         return current_role_state
 
@@ -344,7 +364,7 @@ class controller:
                             chat_history[-1]["content"].find(":"))
 
             last_name = chat_history[-1]["content"][:index] if index != -1 else ""
-            last_prompt = f"上一个发言的人为:{last_name}\n注意：目前轮到的人不能和上一次发言的人是同一个人，所以不能输出<结束>{last_name}</结束>"
+            last_prompt = f"The last person to speak is: {last_name}\nNote: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{last_name}</end> cannot be output"
 
             last_prompt += controller_dict["call_last_prompt"]
             extract_words = controller_dict["call_extract_words"]
