@@ -409,8 +409,51 @@ class WebCrawlComponent(ToolComponent):
 
 
 class APIComponent(ToolComponent):
-    def __init__(self, name):
-        super(APIComponent, self).__init__(name)
+    def __init__(self):
+        super(APIComponent, self).__init__()
 
     def func(self, agent_dict: Dict) -> Dict:
         pass
+
+class FunctionComponent(ToolComponent):
+    def __init__(self,functions,function_call = "auto" ,response_type = "response"):
+        super().__init__()
+        self.functions = functions
+        self.function_call = function_call
+        self.parameters = {}
+        self.available_functions = {}
+        self.response_type = response_type
+        
+        for function in self.functions:
+            self.parameters[function["name"]] = list(function["parameters"]["properties"].keys())
+            self.available_functions[function["name"]] = eval(function["name"])
+        
+        
+    def func(self, agent_dict):
+        messages = agent_dict["long_memory"]["chat_history"]
+        outputdict = {}
+        query = agent_dict["long_memory"]["chat_history"][-1] if len(agent_dict["long_memory"]["chat_history"])>0 else " "
+        key_history = get_key_history(query,agent_dict["long_memory"]["chat_history"][:-1],agent_dict["long_memory"]["chat_embeddings"][:-1])
+        response = get_response(
+            messages,
+            None,
+            functions=self.functions,
+            stream=False,
+            function_call=self.function_call,
+            key_history = key_history
+        )
+        response_message = response["choices"][0]["message"]
+        if response_message.get("function_call"):
+            function_name = response_message["function_call"]["name"]
+            fuction_to_call = self.available_functions[function_name]
+            function_args = json.loads(response_message["function_call"]["arguments"])
+            
+            function_response = fuction_to_call(*[function_args.get(args_name) for args_name in self.parameters[function_name]]
+        )
+            if self.response_type == "response":
+               outputdict["response"] = function_response
+            elif self.response_type == "prompt":
+                outputdict["prompt"] = function_response
+
+        return outputdict
+
