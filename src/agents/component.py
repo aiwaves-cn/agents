@@ -416,17 +416,23 @@ class APIComponent(ToolComponent):
         pass
 
 class FunctionComponent(ToolComponent):
-    def __init__(self,functions,function_call = "auto" ,response_type = "response"):
+    def __init__(self,functions,function_call = "auto" ,response_type = "response",your_function = None):
         super().__init__()
         self.functions = functions
         self.function_call = function_call
         self.parameters = {}
         self.available_functions = {}
         self.response_type = response_type
-        
+        if your_function:
+            function_name = your_function["name"]
+            function_content = your_function["content"]
+            exec(function_content)
+            self.available_functions[function_name] = eval(function_name)
+            
         for function in self.functions:
             self.parameters[function["name"]] = list(function["parameters"]["properties"].keys())
             self.available_functions[function["name"]] = eval(function["name"])
+        
         
         
     def func(self, agent_dict):
@@ -442,14 +448,15 @@ class FunctionComponent(ToolComponent):
             function_call=self.function_call,
             key_history = key_history
         )
-        response_message = response["choices"][0]["message"]
+        response_message = response
         if response_message.get("function_call"):
             function_name = response_message["function_call"]["name"]
             fuction_to_call = self.available_functions[function_name]
             function_args = json.loads(response_message["function_call"]["arguments"])
-            
-            function_response = fuction_to_call(*[function_args.get(args_name) for args_name in self.parameters[function_name]]
-        )
+            input_args  = {}
+            for args_name in self.parameters[function_name]:
+                input_args[args_name] = function_args.get(args_name)
+            function_response = fuction_to_call(**input_args)
             if self.response_type == "response":
                outputdict["response"] = function_response
             elif self.response_type == "prompt":
