@@ -34,6 +34,7 @@ import random
 import os
 import time
 
+
 API_KEY = os.environ["API_KEY"]
 PROXY = os.environ["PROXY"]
 MAX_CHAT_HISTORY = eval(
@@ -141,9 +142,10 @@ def get_response(chat_history,
     summary = kwargs["summary"] if "summary" in kwargs else None
     key_history = kwargs["key_history"] if "key_history" in kwargs else None
     key_his = "Relevant historical chat records are as follows <history>\n{\n"
-    for his in key_history:
-        key_his += his["content"] + "\n"
-    key_his +="}\n</history>\n"
+    if key_history:
+        for his in key_history:
+            key_his += his["content"] + "\n"
+        key_his +="}\n</history>\n"
     
     
     messages = [{
