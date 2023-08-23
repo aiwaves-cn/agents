@@ -253,14 +253,8 @@ class SOP:
             self.shared_memory["summary"] = summary
 
         for agent in self.agents[self.current_node.name].values():
-            agent.agent_dict["long_memory"][
-                "chat_history"].append(memory)
-            if "chat_embeddings" not in  agent.agent_dict["long_memory"]:
-                agent.agent_dict["long_memory"]["chat_embeddings"] = current_embedding
-            else:
-                 agent.agent_dict["long_memory"]["chat_embeddings"] = torch.cat([agent.agent_dict["long_memory"]["chat_embeddings"],current_embedding],dim = 0)
-            agent.agent_dict["short_memory"]["chat_history"] = self.shared_memory["short_history"]
-            agent.agent_dict["short_memory"]["summary"] = summary
+            agent.update_memory(memory,summary,current_embedding)
+
 
     def send_memory(self, next_node):
         summary = self.summary()

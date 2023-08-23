@@ -14,12 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """LLM autonoumous agent"""
-import time
-import os
-import jieba
 from utils import get_response,extract,get_key_history
-from sop import Node, SOP, controller
+from sop import Node
 from datebase import *
+import torch
+import os
 
 headers = {
     "Content-Type": "text/event-stream",
@@ -41,7 +40,7 @@ class Agent:
         self.sop = None
 
         self.agent_dict = {
-            "short_memory": {},
+            "short_memory": {"chat_history":[]},
             "long_memory": {"chat_history": [], "summary": ""},
         }
 
@@ -97,6 +96,20 @@ class Agent:
         )
 
         return response, res_dict
+    
+    def update_memory(self,memory,summary,current_embedding):
+        MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
+        
+        self.agent_dict["long_memory"]["chat_history"].append(memory)
+        self.agent_dict["short_memory"]["chat_history"].append(memory)
+        if "chat_embeddings" not in  self.agent_dict["long_memory"]:
+            self.agent_dict["long_memory"]["chat_embeddings"] = current_embedding
+        else:
+            self.agent_dict["long_memory"]["chat_embeddings"] = torch.cat([self.agent_dict["long_memory"]["chat_embeddings"],current_embedding],dim = 0)
+        self.agent_dict["short_memory"]["summary"] = summary
+        if len(self.agent_dict["short_memory"]["chat_history"]) > MAX_CHAT_HISTORY:
+            self.agent_dict["short_memory"]["chat_history"] = self.agent_dict["short_memory"]["chat_history"][-MAX_CHAT_HISTORY//2:]
+            
 
     def generate_sop(self):
         pass
