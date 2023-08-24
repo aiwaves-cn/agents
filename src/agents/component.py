@@ -367,9 +367,12 @@ class WebSearchComponent(ToolComponent):
         return {"meta data": metadata_results}
 
     def func(self, agent_dict: Dict, **kwargs) -> Dict:
-        search_results = self.search[self.engine_name](
-            query=agent_dict["query"], **kwargs
+        query = (
+            agent_dict["long_memory"]["chat_history"][-1]["content"]
+            if len(agent_dict["long_memory"]["chat_history"]) > 0
+            else " "
         )
+        search_results = self.search[self.engine_name](query=query, **kwargs)
         information = ""
         for i in search_results["meta data"][:2]:
             information += i["snippet"]

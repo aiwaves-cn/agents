@@ -3,7 +3,7 @@
     "active_mode": true,
     "log_path": "logs",
     "user_roles": [
-        "A神"
+        "user"
     ],
     "relation": {
         "node_response": {
@@ -12,12 +12,13 @@
     },
     "nodes": {
         "node_response": {
-            "name": "node_response",
-            "is_interactive": "true",
-            "extract_word": "回复",
-            "environment_prompt": "",
+            "controller_type": "1",
             "begin_role": "优才计划客服",
             "begin_query": "我是优才计划的客服",
+            "environment_prompt": "",
+            "name": "node_response",
+            "is_interactive": true,
+            "root": true,
             "agent_states": {
                 "优才计划客服": {
                     "style": {
@@ -47,9 +48,26 @@
                         "rule",
                         "WebSearchComponent"
                     ]
+                },
+                "user": {
+                    "style": {
+                        "name": "A神",
+                        "role": "user",
+                        "style": "幽默风趣"
+                    },
+                    "task": {
+                        "task": "回答用户的问题"
+                    },
+                    "rule": {
+                        "rule": "你的语言要尽量精简，不要废话太多"
+                    },
+                    "config": [
+                        "style",
+                        "task",
+                        "rule"
+                    ]
                 }
             },
-            "root": true,
             "controller": {}
         }
     }
