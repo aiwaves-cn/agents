@@ -33,7 +33,6 @@ class Agent:
     """
 
     def __init__(self, role, name) -> None:
-        self.content = {"messages": []}
         self.role = role
         self.name = name
         self.current_node_name = None
