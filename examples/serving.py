@@ -21,8 +21,6 @@ from sop import SOP, controller
 
 def autorun(sop: SOP, controller: controller, user_roles=None):
     current_node = sop.current_node
-    print(sop.agents)
-    print(current_node.name)
     current_agent = sop.agents[current_node.name][current_node.begin_role]
     current_node.current_role = current_node.begin_role
     current_memory = {
@@ -38,9 +36,9 @@ def autorun(sop: SOP, controller: controller, user_roles=None):
         if next_node != current_node:
             sop.send_memory(next_node)
             break
-
+        
+        
         is_user = True if next_role in user_roles else False
-
         current_node = next_node
         sop.current_node = current_node
         current_agent = sop.agents[current_node.name][next_role]
@@ -60,8 +58,10 @@ def autorun(sop: SOP, controller: controller, user_roles=None):
 
 def init_agents(sop):
     for node_name, node_agents in sop.agents_role_name.items():
-        for name, role in node_agents.items():
-            agent = Agent(role, name)
+        for name, key in node_agents.items():
+            role = key["role"]
+            model_name = key["model_name"] if "model_name" in key else "gpt-3.5-turbo-16k-0613"
+            agent = Agent(role, name,model_name = model_name)
             if node_name not in sop.agents:
                 sop.agents[node_name] = {}
             sop.agents[node_name][role] = agent

@@ -32,15 +32,17 @@ class Agent:
     Auto agent, input the JSON of SOP.
     """
 
-    def __init__(self, role, name) -> None:
+    def __init__(self, role, name,**kwargs) -> None:
         self.role = role
         self.name = name
         self.current_node_name = None
         self.sop = None
-
+        
+        self.model_name = kwargs["model_name"]
         self.agent_dict = {
             "short_memory": {"chat_history": []},
             "long_memory": {"chat_history": [], "summary": ""},
+            "model_name":self.model_name
         }
 
     def step(self, current_node: Node, is_user, temperature=0.3):
@@ -98,6 +100,7 @@ class Agent:
             last_prompt,
             temperature=temperature,
             stream=True,
+            model = self.model_name,
             summary=self.agent_dict["short_memory"]["summary"],
             key_history=key_history,
         )

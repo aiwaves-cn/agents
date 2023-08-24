@@ -38,7 +38,8 @@ class SOP:
         self.config = {}
         self.agents = {}
         self.shared_memory = {"chat_history": [], "short_history": [], "summary": ""}
-
+        
+        self.model_name = sop["model_name"] if "model_name" in sop else "gpt-3.5-turbo-16k-0613"
         self.temperature = sop["temperature"] if "temperature" in sop else 0.3
         self.active_mode = sop["active_mode"] if "active_mode" in sop else False
         self.log_path = sop["log_path"] if "log_path" in sop else "logs"
@@ -99,6 +100,8 @@ class SOP:
                     self.controller_dict[name]["controller_type"] = node[
                         "controller_type"
                     ]
+                if "controller_model_name" in node:
+                    self.controller_dict[name]["controller_model_name"] = node["controller_model_name"]
 
             now_node = Node(
                 name=name,
@@ -142,7 +145,7 @@ class SOP:
                             component_args["style"],
                         )
 
-                        self.agents_role_name[node_name][agent_name] = role
+                        self.agents_role_name[node_name][agent_name] = {"role":role}
 
                         # "task"
                     elif component == "task":
@@ -222,6 +225,8 @@ class SOP:
                     # ====================================================
                     elif component == "config":
                         self.config[role] = component_args
+                    elif component == "model_name":
+                        self.agents_role_name[node_name][agent_name]["model_name"] = component_args
 
             agent_states[role] = component_dict
 
@@ -261,6 +266,7 @@ class SOP:
             system_prompt,
             last_prompt,
             stream=False,
+            model = self.model_name,
             log_path=self.log_path,
             summary=self.shared_memory["summary"],
             key_history=key_history,
@@ -354,8 +360,9 @@ class controller:
     def __init__(self, controller_dict) -> None:
         # {judge_system_prompt:,judge_last_prompt: ,judge_extract_words:,call_system_prompt: , call_last_prompt: ,call_extract_words:}
         self.controller_dict = controller_dict
+        self.model_name = self.controller_dict["controller_model_name"] if "controller_model_name" in self.controller_dict else "gpt-3.5-turbo-16k-0613"
 
-    def transit(self, node: Node, chat_history, **kwargs):
+    def transit(self, node: Node, chat_history, model = "gpt-3.5-turbo-16k-0613",**kwargs):
         controller_dict = self.controller_dict[node.name]
         system_prompt = (
             "<environment>"
@@ -367,12 +374,12 @@ class controller:
         last_prompt = controller_dict["judge_last_prompt"]
         extract_words = controller_dict["judge_extract_words"]
         response = get_response(
-            chat_history, system_prompt, last_prompt, stream=False, **kwargs
+            chat_history, system_prompt, last_prompt, stream=False, model = model,**kwargs
         )
         next_node = extract(response, extract_words)
         return next_node
 
-    def route(self, node: Node, chat_history, **kwargs):
+    def route(self, node: Node, chat_history, model = "gpt-3.5-turbo-16k-0613",**kwargs):
         controller_type = (
             self.controller_dict[node.name]["controller_type"]
             if "controller_type" in self.controller_dict[node.name]
@@ -405,7 +412,7 @@ class controller:
             last_prompt += controller_dict["call_last_prompt"]
             extract_words = controller_dict["call_extract_words"]
             response = get_response(
-                chat_history, system_prompt, last_prompt, stream=False, **kwargs
+                chat_history, system_prompt, last_prompt, stream=False, model=model,**kwargs
             )
             next_role = extract(response, extract_words)
         elif controller_type == "1":
@@ -439,6 +446,7 @@ class controller:
             next_node = self.transit(
                 node=current_node,
                 chat_history=sop.shared_memory["short_history"],
+                model = self.controller_dict["controller_model_name"],
                 summary=sop.shared_memory["summary"],
                 key_history=key_history,
                 environment_prompt=current_node.environment_prompt,
@@ -464,6 +472,7 @@ class controller:
             next_role = self.route(
                 node=next_node,
                 chat_history=sop.shared_memory["short_history"],
+                model = self.model_name,
                 summary=sop.shared_memory["summary"],
                 key_history=key_history,
                 environment_prompt=current_node.environment_prompt,
