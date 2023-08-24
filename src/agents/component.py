@@ -157,19 +157,19 @@ class IputComponent(PromptComponent):
 
 
 class CustomizeComponent(PromptComponent):
-    def __init__(self,template,keywords) -> None:
+    def __init__(self, template, keywords) -> None:
         super().__init__()
         self.template = template
         self.keywords = keywords
-    
-    def get_prompt(self,agent_dict):
+
+    def get_prompt(self, agent_dict):
         template_keyword = []
         for keyword in self.keywords:
-            current_keyword = get_memory_from_long_short(agent_dict,keyword)
+            current_keyword = get_memory_from_long_short(agent_dict, keyword)
             template_keyword.append(current_keyword)
-        
+
         return self.template.format(*template_keyword)
-    
+
 
 class KnowledgeBaseComponent(ToolComponent):
     def __init__(self, top_k, type, knowledge_base):
@@ -193,7 +193,10 @@ class KnowledgeBaseComponent(ToolComponent):
     def func(self, agent_dict):
         query = agent_dict["query"]
         knowledge = ""
-        query = "Generate a representation for this sentence for retrieving related articles:" + query
+        query = (
+            "Generate a representation for this sentence for retrieving related articles:"
+            + query
+        )
         query_embedding = get_embedding(query)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]
@@ -216,7 +219,7 @@ class KnowledgeBaseComponent(ToolComponent):
             if score < 0.5:
                 return {"prompt": "No matching knowledge base"}
             else:
-                return {"prompt": "The relevant content is: " + knowledge + "\n" }
+                return {"prompt": "The relevant content is: " + knowledge + "\n"}
         else:
             for hit in hits:
                 matching_idx = hit["corpus_id"]
@@ -233,7 +236,7 @@ class KnowledgeBaseComponent(ToolComponent):
                 return {"prompt": "No matching knowledge base"}
             else:
                 print(knowledge)
-                return {"prompt": "The relevant content is: " + knowledge + "\n" }
+                return {"prompt": "The relevant content is: " + knowledge + "\n"}
 
 
 class StaticComponent(ToolComponent):
@@ -265,16 +268,23 @@ class ExtractComponent(ToolComponent):
         self.last_prompt = last_prompt if last_prompt else None
 
     def func(self, agent_dict):
-        
-        query = agent_dict["long_memory"]["chat_history"][-1] if len(agent_dict["long_memory"]["chat_history"])>0 else " "
-        key_history = get_key_history(query,agent_dict["long_memory"]["chat_history"][:-1],agent_dict["long_memory"]["chat_embeddings"][:-1])
+        query = (
+            agent_dict["long_memory"]["chat_history"][-1]
+            if len(agent_dict["long_memory"]["chat_history"]) > 0
+            else " "
+        )
+        key_history = get_key_history(
+            query,
+            agent_dict["long_memory"]["chat_history"][:-1],
+            agent_dict["long_memory"]["chat_embeddings"][:-1],
+        )
         response = get_response(
             agent_dict["long_memory"]["chat_history"],
             self.system_prompt,
             self.last_prompt,
             agent_dict=agent_dict,
-            stream = False,
-            key_history = key_history
+            stream=False,
+            key_history=key_history,
         )
         for extract_word in self.long_memory_extract_words:
             key = extract(response, extract_word)
@@ -283,7 +293,6 @@ class ExtractComponent(ToolComponent):
             key = extract(response, extract_word)
             agent_dict["short_memory"][extract_word] = key
         return {}
-
 
 
 """Search sources: chatgpt/search engines/specific search sources/can even be multimodal (if it comes to clothing)"""
@@ -364,7 +373,10 @@ class WebSearchComponent(ToolComponent):
         information = ""
         for i in search_results["meta data"][:2]:
             information += i["snippet"]
-        return {"prompt": "You can refer to the following information to reply:\n" + information}
+        return {
+            "prompt": "You can refer to the following information to reply:\n"
+            + information
+        }
 
     def convert_search_engine_to(self, engine_name):
         assert engine_name in WebSearchComponent.__ENGINE_NAME__
@@ -415,8 +427,15 @@ class APIComponent(ToolComponent):
     def func(self, agent_dict: Dict) -> Dict:
         pass
 
+
 class FunctionComponent(ToolComponent):
-    def __init__(self,functions,function_call = "auto" ,response_type = "response",your_function = None):
+    def __init__(
+        self,
+        functions,
+        function_call="auto",
+        response_type="response",
+        your_function=None,
+    ):
         super().__init__()
         self.functions = functions
         self.function_call = function_call
@@ -428,39 +447,46 @@ class FunctionComponent(ToolComponent):
             function_content = your_function["content"]
             exec(function_content)
             self.available_functions[function_name] = eval(function_name)
-            
+
         for function in self.functions:
-            self.parameters[function["name"]] = list(function["parameters"]["properties"].keys())
+            self.parameters[function["name"]] = list(
+                function["parameters"]["properties"].keys()
+            )
             self.available_functions[function["name"]] = eval(function["name"])
-        
-        
-        
+
     def func(self, agent_dict):
         messages = agent_dict["long_memory"]["chat_history"]
         outputdict = {}
-        query = agent_dict["long_memory"]["chat_history"][-1] if len(agent_dict["long_memory"]["chat_history"])>0 else " "
-        key_history = get_key_history(query,agent_dict["long_memory"]["chat_history"][:-1],agent_dict["long_memory"]["chat_embeddings"][:-1])
+        query = (
+            agent_dict["long_memory"]["chat_history"][-1]
+            if len(agent_dict["long_memory"]["chat_history"]) > 0
+            else " "
+        )
+        key_history = get_key_history(
+            query,
+            agent_dict["long_memory"]["chat_history"][:-1],
+            agent_dict["long_memory"]["chat_embeddings"][:-1],
+        )
         response = get_response(
             messages,
             None,
             functions=self.functions,
             stream=False,
             function_call=self.function_call,
-            key_history = key_history
+            key_history=key_history,
         )
         response_message = response
         if response_message.get("function_call"):
             function_name = response_message["function_call"]["name"]
             fuction_to_call = self.available_functions[function_name]
             function_args = json.loads(response_message["function_call"]["arguments"])
-            input_args  = {}
+            input_args = {}
             for args_name in self.parameters[function_name]:
                 input_args[args_name] = function_args.get(args_name)
             function_response = fuction_to_call(**input_args)
             if self.response_type == "response":
-               outputdict["response"] = function_response
+                outputdict["response"] = function_response
             elif self.response_type == "prompt":
                 outputdict["prompt"] = function_response
 
         return outputdict
-
