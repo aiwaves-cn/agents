@@ -1,14 +1,28 @@
 {
+    "temperature": 0.6,
+    "active_mode": true,
+    "log_path": "logs",
+    "user_roles": [
+        "A神"
+    ],
+    "relation": {
+        "node_response": {
+            "0": "node_response"
+        }
+    },
     "nodes": {
         "node_response": {
             "name": "node_response",
             "is_interactive": "true",
             "extract_word": "回复",
+            "environment_prompt": "",
+            "begin_role": "优才计划客服",
+            "begin_query": "我是优才计划的客服",
             "agent_states": {
                 "优才计划客服": {
                     "style": {
                         "name": "吴家隆",
-                        "role": "优才计划的客服",
+                        "role": "优才计划客服",
                         "style": "幽默风趣"
                     },
                     "task": {
@@ -38,15 +52,5 @@
             "root": true,
             "controller": {}
         }
-    },
-    "relation": {
-        "node_response": {
-            "0": "node_response"
-        }
-    },
-    "environment_prompt": "",
-    "temperature": 0.6,
-    "log_path": "logs",
-    "active_mode": false,
-    "answer_simplify": true
+    }
 }
