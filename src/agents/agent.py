@@ -14,11 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """LLM autonoumous agent"""
-import time
-import os
-import jieba
-from utils import get_response,extract,get_key_history
-from sop import Node, SOP, controller
+from utils import get_response,get_key_history
+from sop import Node
 from datebase import *
 
 headers = {
