@@ -283,6 +283,7 @@ class ExtractComponent(ToolComponent):
             self.system_prompt,
             self.last_prompt,
             agent_dict=agent_dict,
+            model = agent_dict["model_name"],
             stream=False,
             key_history=key_history,
         )
@@ -472,6 +473,7 @@ class FunctionComponent(ToolComponent):
             None,
             functions=self.functions,
             stream=False,
+            model = agent_dict["model_name"],
             function_call=self.function_call,
             key_history=key_history,
         )

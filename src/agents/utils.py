@@ -34,6 +34,73 @@ import random
 import os
 import time
 
+GPT_MODEL = [
+    "gpt-3.5-turbo",
+    "gpt-3.5-turbo-0301",
+    "gpt-3.5-turbo-0613",
+    "gpt-3.5-turbo-16k",
+    "gpt-3.5-turbo-16k-0613",
+    "gpt-4",
+    "gpt-4-0314",
+    "gpt-4-0613",
+    "ada",
+    "ada-code-search-code",
+    "ada-code-search-text",
+    "ada-search-document",
+    "ada-search-query",
+    "ada-similarity",
+    "babbage",
+    "babbage-002",
+    "babbage-code-search-code",
+    "babbage-code-search-text",
+    "babbage-search-document",
+    "babbage-search-query",
+    "babbage-similarity",
+    "code-davinci-edit-001",
+    "code-search-ada-code-001",
+    "code-search-ada-text-001",
+    "code-search-babbage-code-001",
+    "code-search-babbage-text-001",
+    "curie",
+    "curie-instruct-beta",
+    "curie-search-document",
+    "curie-search-query",
+    "curie-similarity",
+    "davinci",
+    "davinci-002",
+    "davinci-instruct-beta",
+    "davinci-search-document",
+    "davinci-search-query",
+    "davinci-similarity",
+    "text-ada-001",
+    "text-babbage-001",
+    "text-curie-001",
+    "text-davinci-001",
+    "text-davinci-002",
+    "text-davinci-003",
+    "text-davinci-edit-001",
+    "text-embedding-ada-002",
+    "text-search-ada-doc-001",
+    "text-search-ada-query-001",
+    "text-search-babbage-doc-001",
+    "text-search-babbage-query-001",
+    "text-search-curie-doc-001",
+    "text-search-curie-query-001",
+    "text-search-davinci-doc-001",
+    "text-search-davinci-query-001",
+    "text-similarity-ada-001",
+    "text-similarity-babbage-001",
+    "text-similarity-curie-001",
+    "text-similarity-davinci-001",
+    "babbage-002",
+    "davinci-002",
+    "gpt-3.5-turbo-0613",
+    "text-moderation-latest",
+    "text-moderation-stable",
+    "DALL·E 2",
+    "whisper-1"
+]
+
 
 API_KEY = os.environ["API_KEY"]
 PROXY = os.environ["PROXY"]
@@ -171,41 +238,44 @@ def get_response(chat_history,
         messages += [{"role": "user", "content": f"{last_prompt}"}]
     
 
-    while True:
-        try:
-            if functions:
-                response = openai.ChatCompletion.create(
-                    model=model,
-                    messages=messages,
-                    functions=functions,
-                    function_call=function_call,
-                    temperature=temperature,
-                )
-            else:
-                response = openai.ChatCompletion.create(
-                    model=model,
-                    messages=messages,
-                    temperature=temperature,
-                    stream=stream)
-            break
-        except Exception as e:
-            print(e)
-            if "maximum context length is" in str(e):
-                assert False, "exceed max length"
+    if model in GPT_MODEL:
+        while True:
+            try:
+                if functions:
+                    response = openai.ChatCompletion.create(
+                        model=model,
+                        messages=messages,
+                        functions=functions,
+                        function_call=function_call,
+                        temperature=temperature,
+                    )
+                else:
+                    response = openai.ChatCompletion.create(
+                        model=model,
+                        messages=messages,
+                        temperature=temperature,
+                        stream=stream)
                 break
-            else:
-                print("Please wait {WAIT_TIME} seconds and resend later ...")
-                time.sleep(WAIT_TIME)
+            except Exception as e:
+                print(e)
+                if "maximum context length is" in str(e):
+                    assert False, "exceed max length"
+                    break
+                else:
+                    print("Please wait {WAIT_TIME} seconds and resend later ...")
+                    time.sleep(WAIT_TIME)
 
-    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
-    if functions:
-        save_logs(log_path, messages, response)
-        return response.choices[0].message
-    elif stream:
-        return get_stream(response, log_path, messages)
+        log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
+        if functions:
+            save_logs(log_path, messages, response)
+            return response.choices[0].message
+        elif stream:
+            return get_stream(response, log_path, messages)
+        else:
+            save_logs(log_path, messages, response)
+            return response.choices[0].message["content"]
     else:
-        save_logs(log_path, messages, response)
-        return response.choices[0].message["content"]
+        pass
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):
