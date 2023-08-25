@@ -88,14 +88,14 @@ class StyleComponent(PromptComponent):
     角色、风格组件
     """
 
-    def __init__(self, role, name, style):
+    def __init__(self,role,style):
         super().__init__()
-        self.role = role
-        self.name = name
         self.style = style
+        self.role = role
 
     def get_prompt(self, agent_dict):
-        return f"""Now your role is:\n<role>{self.role}</role>, your name is:\n<name>{self.name}</name>. You need to follow the output style:\n<style>{self.style}</style>.\n"""
+        name = agent_dict["name"]
+        return f"""Now your role is:\n<role>{self.role}</role>, your name is:\n<name>{name}</name>. You need to follow the output style:\n<style>{self.style}</style>.\n"""
 
 
 class RuleComponent(PromptComponent):
@@ -191,7 +191,7 @@ class KnowledgeBaseComponent(ToolComponent):
             )
 
     def func(self, agent_dict):
-        query = agent_dict["query"]
+        query = agent_dict["chat_history"][-1] if len(agent_dict["chat_history"])>0 else ""
         knowledge = ""
         query = (
             "Generate a representation for this sentence for retrieving related articles:"
@@ -245,10 +245,6 @@ class StaticComponent(ToolComponent):
         self.output = output
 
     def func(self, agent_dict):
-        memory = {}
-        memory.update(agent_dict["long_memory"])
-        memory.update(agent_dict["short_memory"])
-
         outputdict = {"response": self.output}
         return outputdict
 
@@ -256,43 +252,38 @@ class StaticComponent(ToolComponent):
 class ExtractComponent(ToolComponent):
     def __init__(
         self,
-        long_memory_extract_words,
-        short_memory_extract_words,
+        extract_words,
         system_prompt,
         last_prompt=None,
     ):
         super().__init__()
-        self.long_memory_extract_words = long_memory_extract_words
-        self.short_memory_extract_words = short_memory_extract_words
+        self.extract_words = extract_words
         self.system_prompt = system_prompt
         self.last_prompt = last_prompt if last_prompt else None
 
     def func(self, agent_dict):
         query = (
-            agent_dict["long_memory"]["chat_history"][-1]
-            if len(agent_dict["long_memory"]["chat_history"]) > 0
+            agent_dict["chat_history"][-1]
+            if len(agent_dict["chat_history"]) > 0
             else " "
         )
         key_history = get_key_history(
             query,
-            agent_dict["long_memory"]["chat_history"][:-1],
-            agent_dict["long_memory"]["chat_embeddings"][:-1],
+            agent_dict["chat_history"][:-1],
+            agent_dict["chat_embeddings"][:-1],
         )
-        response = get_response(
-            agent_dict["long_memory"]["chat_history"],
+        response = agent_dict["LLM"].get_response(
+            agent_dict["chat_history"],
             self.system_prompt,
             self.last_prompt,
             agent_dict=agent_dict,
-            model = agent_dict["model_name"],
             stream=False,
             key_history=key_history,
         )
-        for extract_word in self.long_memory_extract_words:
+        for extract_word in self.extract_words:
             key = extract(response, extract_word)
-            agent_dict["long_memory"][extract_word] = key
-        for extract_word in self.short_memory_extract_words:
-            key = extract(response, extract_word)
-            agent_dict["short_memory"][extract_word] = key
+            agent_dict[extract_word] = key
+
         return {}
 
 
@@ -369,8 +360,8 @@ class WebSearchComponent(ToolComponent):
 
     def func(self, agent_dict: Dict, **kwargs) -> Dict:
         query = (
-            agent_dict["long_memory"]["chat_history"][-1]["content"]
-            if len(agent_dict["long_memory"]["chat_history"]) > 0
+            agent_dict["chat_history"][-1]["content"]
+            if len(agent_dict["chat_history"]) > 0
             else " "
         )
         search_results = self.search[self.engine_name](query=query, **kwargs)
@@ -459,24 +450,23 @@ class FunctionComponent(ToolComponent):
             self.available_functions[function["name"]] = eval(function["name"])
 
     def func(self, agent_dict):
-        messages = agent_dict["long_memory"]["chat_history"]
+        messages = agent_dict["chat_history"]
         outputdict = {}
         query = (
-            agent_dict["long_memory"]["chat_history"][-1]
-            if len(agent_dict["long_memory"]["chat_history"]) > 0
+            agent_dict["chat_history"][-1]
+            if len(agent_dict["chat_history"]) > 0
             else " "
         )
         key_history = get_key_history(
             query,
-            agent_dict["long_memory"]["chat_history"][:-1],
-            agent_dict["long_memory"]["chat_embeddings"][:-1],
+            agent_dict["chat_history"][:-1],
+            agent_dict["chat_embeddings"][:-1],
         )
-        response = get_response(
+        response = agent_dict["LLM"].get_response(
             messages,
             None,
             functions=self.functions,
             stream=False,
-            model = agent_dict["model_name"],
             function_call=self.function_call,
             key_history=key_history,
         )

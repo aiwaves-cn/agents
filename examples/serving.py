@@ -1,75 +1,46 @@
-import sys
-import argparse
 import yaml
 import os
-
-parser = argparse.ArgumentParser(description="A demo of chatbot")
-parser.add_argument("--agent", type=str)
-parser.add_argument("--config", type=str)
-args = parser.parse_args()
-
-with open(args.config, "r") as file:
+import argparse
+with open("/home/aiwaves/longli/agents/examples/game/config.yaml", "r") as file:
     config = yaml.safe_load(file)
 
 for key, value in config.items():
     os.environ[key] = value
-
+import sys
 sys.path.append("../src/agents")
+from SOP import SOP
 from agent import Agent
-from sop import SOP, controller
+from State import State
+from Environment import Environment
+import json
+
+parser = argparse.ArgumentParser(description='A demo of chatbot')
+parser.add_argument('--agent', type=str, help='path to SOP json')
+parser.add_argument('--config', type=str, help='path to config')
 
 
-def autorun(sop: SOP, controller: controller, user_roles=None):
-    current_node = sop.current_node
-    current_agent = sop.agents[current_node.name][current_node.begin_role]
-    current_node.current_role = current_node.begin_role
-    current_memory = {
-        "role": "user",
-        "content": f"{current_agent.name}:{current_node.begin_query}",
-    }
-    sop.update_memory(current_memory)
-    print(current_node.name)
-    print(f"{current_agent.name}:{current_node.begin_query}")
-
+def run(agents,sop,environment,role_to_names,names_to_roles):
+    current_state = sop.root
     while True:
-        next_node, next_role = controller.next(sop)
-        if next_node != current_node:
-            sop.send_memory(next_node)
-            break
-        
-        
-        is_user = True if next_role in user_roles else False
-        current_node = next_node
-        sop.current_node = current_node
-        current_agent = sop.agents[current_node.name][next_role]
-        response = current_agent.step(
-            current_node, temperature=sop.temperature, is_user=is_user
-        )
-        all = f""
-        for res in response:
-            all += res
-            if not is_user:
-                print(res, end="")
-        if not is_user:
-            print()
-        current_memory = {"role": "user", "content": all}
-        sop.update_memory(current_memory)
+        current_agent_name = role_to_names[current_state.name][current_state.begin_role]
+        memory = {"role":"user","content":f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}"}
+        print(f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}")
+        environment.update_memory(memory,current_state,roles_to_names)
+        while True:
+            current_state,current_agent,is_changed,is_user = sop.next(environment,agents,role_to_names)
+            if is_changed:
+                break
+            action = current_agent.step(current_state,is_user)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+            memory = environment.excute_action(action)
+            environment.update_memory(memory,current_state,roles_to_names)
 
 
-def init_agents(sop):
-    for node_name, node_agents in sop.agents_role_name.items():
-        for name, key in node_agents.items():
-            role = key["role"]
-            model_name = key["model_name"] if "model_name" in key else "gpt-3.5-turbo-16k-0613"
-            agent = Agent(role, name,model_name = model_name)
-            if node_name not in sop.agents:
-                sop.agents[node_name] = {}
-            sop.agents[node_name][role] = agent
-            sop.nodes[node_name].roles.append(role)
+with open("/home/aiwaves/longli/agents/examples/game/game.json") as f:
+    config = json.load(f)
 
+agents,roles_to_names,names_to_roles = Agent.from_config(config)
+sop = SOP.from_config(config)
+environment = Environment.from_config(config)
+environment.agents = agents
 
-sop = SOP(args.agent)
-controller = controller(sop.controller_dict)
-init_agents(sop)
-user_roles = sop.user_roles
-autorun(sop, controller, user_roles)
+run(agents,sop,environment,roles_to_names,names_to_roles)
