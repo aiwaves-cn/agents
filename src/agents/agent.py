@@ -74,6 +74,7 @@ class Agent:
         if is_user:
             response = input(f"{self.name}:")
             response = f"{self.name}:{response}"
+            return {"response":response,"is_user":True}
         else:
             return self.act(current_state)
     

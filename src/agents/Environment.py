@@ -59,11 +59,14 @@ class Environment:
     def excute_action(self,action):
         response = action["response"] if "response" in action else ""
         res_dict = action["res_dict"] if "res_dict" in action else {}
+        is_user =  action["is_user"] if "is_user" in action else False
         all = ""
         for res in response:
             all += res
-            print(res,end="")
-        print()
+            if not is_user:
+                print(res,end="")
+        if not is_user:
+            print()
         memory = {"role":"user","content":all}
         return memory
     

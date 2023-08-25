@@ -1,7 +1,11 @@
 import yaml
 import os
 import argparse
-with open("/home/aiwaves/longli/agents/examples/game/config.yaml", "r") as file:
+parser = argparse.ArgumentParser(description='A demo of chatbot')
+parser.add_argument('--agent', type=str, help='path to SOP json')
+parser.add_argument('--config', type=str, help='path to config')
+args = parser.parse_args()
+with open(args.config, "r") as file:
     config = yaml.safe_load(file)
 
 for key, value in config.items():
@@ -14,9 +18,6 @@ from State import State
 from Environment import Environment
 import json
 
-parser = argparse.ArgumentParser(description='A demo of chatbot')
-parser.add_argument('--agent', type=str, help='path to SOP json')
-parser.add_argument('--config', type=str, help='path to config')
 
 
 def run(agents,sop,environment,role_to_names,names_to_roles):
@@ -35,7 +36,7 @@ def run(agents,sop,environment,role_to_names,names_to_roles):
             environment.update_memory(memory,current_state,roles_to_names)
 
 
-with open("/home/aiwaves/longli/agents/examples/game/game.json") as f:
+with open(args.agent) as f:
     config = json.load(f)
 
 agents,roles_to_names,names_to_roles = Agent.from_config(config)

@@ -42,7 +42,7 @@ class CategoryRequirementsComponent(ToolComponent):
 
     def func(self, agent_dict):
         prompt = ""
-        messages = agent_dict["long_memory"]["chat_history"]
+        messages = agent_dict["chat_history"]
         outputdict = {}
         functions = [
             {
@@ -64,9 +64,9 @@ class CategoryRequirementsComponent(ToolComponent):
                 },
             }
         ]
-        query = agent_dict["long_memory"]["chat_history"][-1] if len(agent_dict["long_memory"]["chat_history"])>0 else " "
-        key_history = get_key_history(query,agent_dict["long_memory"]["chat_history"][:-1],agent_dict["long_memory"]["chat_embeddings"][:-1])
-        response = get_response(
+        query = agent_dict["chat_history"][-1] if len(agent_dict["chat_history"])>0 else " "
+        key_history = get_key_history(query,agent_dict["chat_history"][:-1],agent_dict["chat_embeddings"][:-1])
+        response = agent_dict["LLM"].get_response(
             messages,
             None,
             None,
@@ -94,7 +94,7 @@ class CategoryRequirementsComponent(ToolComponent):
         top1_score = topk_result[1][0]
         request_items, top_category = search_with_api(requirements, category)
         if top1_score > MIN_CATEGORY_SIM:
-            agent_dict["long_memory"]["category"] = topk_result[0][0]
+            agent_dict["category"] = topk_result[0][0]
             category = topk_result[0][0]
             information = self.search_information(
                 topk_result[0][0], self.information_dataset
