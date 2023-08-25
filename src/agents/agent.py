@@ -14,11 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """LLM autonoumous agent"""
-from utils import get_response, get_key_history
-from sop import Node
+from utils import get_key_history
 from datebase import *
+from State import State
 import torch
-import os
+from LLM import *
+from component import *
+from extra_component import *
 
 headers = {
     "Content-Type": "text/event-stream",
@@ -32,102 +34,113 @@ class Agent:
     Auto agent, input the JSON of SOP.
     """
 
-    def __init__(self, role, name,**kwargs) -> None:
-        self.role = role
+
+    def __init__(self, name,agent_state_roles,**kwargs) -> None:
+        self.state_roles = agent_state_roles
         self.name = name
-        self.current_node_name = None
-        self.sop = None
-        
-        self.model_name = kwargs["model_name"]
+        self.LLMs = kwargs["LLMs"]
         self.agent_dict = {
-            "short_memory": {"chat_history": []},
-            "long_memory": {"chat_history": [], "summary": ""},
-            "model_name":self.model_name
+            "name" :name,
+            "current_roles":"",
+            "chat_history":[],
+            "summary":""
         }
 
-    def step(self, current_node: Node, is_user, temperature=0.3):
-        """
-        reply api ,The interface set for backend calls
-        """
-        self.agent_dict["temperature"] = temperature
+    @classmethod
+    def from_config(cls,config):
+        roles_to_names = {}
+        names_to_roles = {}
+        agents = {}
+        for agent_name,agent_dict in config["agents"].items():
+            agent_state_roles = {}
+            agent_LLMs = {}
+            for state_name,agent_role in agent_dict.items():
+                if state_name not in roles_to_names:
+                    roles_to_names[state_name] = {}
+                if state_name not in names_to_roles:
+                    names_to_roles[state_name] = {}                
+                roles_to_names[state_name][agent_role] = agent_name
+                names_to_roles[state_name][agent_name] = agent_role
+                agent_state_roles[state_name] = agent_role
+                current_state = config["states"][state_name]
+                LLM_type = current_state["agent_states"][agent_role]['LLM_type'] if "LLM_type" in current_state["agent_states"][agent_role] else "OpenAI"
+                if LLM_type == "OpenAI":
+                    agent_LLMs[state_name] = OpenAILLM(**current_state["agent_states"][agent_role]['LLM'])
+            agents[agent_name] = cls(agent_name,agent_state_roles,LLMs = agent_LLMs)
+        return agents,roles_to_names,names_to_roles
+    
+    
+    def step(self, current_state: State, is_user = False):
         if is_user:
             response = input(f"{self.name}:")
             response = f"{self.name}:{response}"
-            res_dict = {}
         else:
-            response, res_dict = self.act(current_node)
-        # ====================================================#
-        if "response" in res_dict and res_dict["response"]:
-            for res in res_dict["response"]:
-                yield res
-            del res_dict["response"]
+            return self.act(current_state)
+    
+    def act(self, current_state: State):
 
-        for res in response:
-            yield res
-        # ====================================================#
-
-    def load_date(self, task: TaskConfig):
-        self.current_node_name = task.current_node_name
-        self.agent_dict["long_memory"] = {
-            key: value for key, value in task.memory.items()
-        }
-
-    def act(self, node: Node):
-        """
-        Output the output of the agent at this node
-        Returns:
-            response: gpt generator
-            res_dict: other response
-        """
-        system_prompt, last_prompt, res_dict = node.compile(self.role, self.agent_dict)
-        chat_history = self.agent_dict["short_memory"]["chat_history"]
-        temperature = self.agent_dict["temperature"]
+        system_prompt, last_prompt, res_dict = self.compile(current_state)
+        chat_history = self.agent_dict["chat_history"]
+        current_LLM = self.LLMs[current_state.name]
 
         query = (
-            self.agent_dict["long_memory"]["chat_history"][-1]
-            if len(self.agent_dict["long_memory"]["chat_history"]) > 0
+            self.agent_dict["chat_history"][-1]
+            if len(self.agent_dict["chat_history"]) > 0
             else " "
         )
         key_history = get_key_history(
             query,
-            self.agent_dict["long_memory"]["chat_history"][:-1],
-            self.agent_dict["long_memory"]["chat_embeddings"][:-1],
+            self.agent_dict["chat_history"][:-1],
+            self.agent_dict["chat_embeddings"][:-1],
         )
 
-        response = get_response(
+        response = current_LLM.get_response(
             chat_history,
             system_prompt,
             last_prompt,
-            temperature=temperature,
             stream=True,
-            model = self.model_name,
-            summary=self.agent_dict["short_memory"]["summary"],
+            summary=self.agent_dict["summary"],
             key_history=key_history,
         )
-
-        return response, res_dict
+        return {"response":response,"res_dict":res_dict}
+        
 
     def update_memory(self, memory, summary, current_embedding):
-        MAX_CHAT_HISTORY = (
-            eval(os.environ["MAX_CHAT_HISTORY"])
-            if "MAX_CHAT_HISTORY" in os.environ
-            else 10
-        )
-
-        self.agent_dict["long_memory"]["chat_history"].append(memory)
-        self.agent_dict["short_memory"]["chat_history"].append(memory)
-        if "chat_embeddings" not in self.agent_dict["long_memory"]:
-            self.agent_dict["long_memory"]["chat_embeddings"] = current_embedding
+        self.agent_dict["chat_history"].append(memory)
+        
+        if "chat_embeddings" not in self.agent_dict:
+            self.agent_dict["chat_embeddings"] = current_embedding
         else:
-            self.agent_dict["long_memory"]["chat_embeddings"] = torch.cat(
-                [self.agent_dict["long_memory"]["chat_embeddings"], current_embedding],
+            self.agent_dict["chat_embeddings"] = torch.cat(
+                [self.agent_dict["chat_embeddings"], current_embedding],
                 dim=0,
             )
-        self.agent_dict["short_memory"]["summary"] = summary
-        if len(self.agent_dict["short_memory"]["chat_history"]) > MAX_CHAT_HISTORY:
-            self.agent_dict["short_memory"]["chat_history"] = self.agent_dict[
-                "short_memory"
-            ]["chat_history"][-MAX_CHAT_HISTORY // 2 :]
+        self.agent_dict["summary"] = summary
+        
+            
+    def compile(self, current_state):
+        self.agent_dict["current_roles"] = self.state_roles[current_state.name]
+        current_state_name = current_state.name
+        self.agent_dict["LLM"] = self.LLMs[current_state_name]
+        components = current_state.components[self.state_roles[current_state_name]]
+        
+        system_prompt = current_state.environment_prompt if current_state.environment_prompt else ""
+        last_prompt = ""
+        
+        res_dict = {}
+        for component in components.values():
+            if isinstance(component, (OutputComponent, LastComponent)):
+                last_prompt = last_prompt + "\n" + component.get_prompt(self.agent_dict)
+            elif isinstance(component, PromptComponent):
+                system_prompt = system_prompt + "\n" + component.get_prompt(self.agent_dict)
+            elif isinstance(component, ToolComponent):
+                response = component.func(self.agent_dict)
+                if "prompt" in response and response["prompt"]:
+                    last_prompt = last_prompt + "\n" + response["prompt"]
+                self.agent_dict.update(response)
+                res_dict.update(response)
+        return system_prompt, last_prompt, res_dict
+    
 
     def generate_sop(self):
         pass
