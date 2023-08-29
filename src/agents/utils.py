@@ -34,15 +34,6 @@ import random
 import os
 
 
-
-MAX_CHAT_HISTORY = eval(
-    os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
-MIN_CATEGORY_SIM = eval(os.environ["MIN_CATEGORY_SIM"]
-                        ) if "MIN_CATEGORY_SIM" in os.environ else 0.7
-FETSIZE = eval(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
-TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 5
-
-
 embedding_model = SentenceTransformer(
             "BAAI/bge-large-zh", device=torch.device("cpu")
         )
@@ -437,6 +428,8 @@ def merge_list(list1, list2):
 
 
 def Search_Engines(req):
+    FETSIZE = eval(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
+
     new_dict = {"keyword": req, "catLeafName": "", "fetchSize": FETSIZE}
     res = requests.post(
         url="https://k8s-api-dev.fenxianglife.com/dev1/fenxiang-ai/search/item",
@@ -452,6 +445,9 @@ def Search_Engines(req):
 
 
 def search_with_api(requirements, categery):
+    
+    FETSIZE = eval(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
+
     request_items = []
     all_req_list = requirements.split(" ")  
     count = 0  
@@ -476,20 +472,12 @@ def search_with_api(requirements, categery):
     return request_items, new_top
 
 
-def get_memory_from_long_short(agent_dict, keywords):
-    if keywords in agent_dict["long_memory"]:
-        return agent_dict["long_memory"][keywords]
-
-    elif keywords in agent_dict["short_memory"]:
-        return agent_dict["short_memory"][keywords]
-
-    else:
-        return ""
-
 
 def get_key_history(query,history,embeddings):
+    
+    TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 5
     key_history = []
-    query = query["content"]
+    query = query.content
     query_embedding = get_embedding(query)
     hits = semantic_search(query_embedding, embeddings, top_k=min(TOP_K,embeddings.shape[0]))
     hits = hits[0]

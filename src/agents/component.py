@@ -18,16 +18,13 @@ Components (modularized prompts) of a Node in an LLM Autonomous agent
 """
 
 from abc import abstractmethod
-from text2vec import SentenceModel, semantic_search
+from text2vec import semantic_search
 from utils import *
-import abc
 from typing import Dict, List
 from googleapiclient.discovery import build
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
@@ -165,7 +162,7 @@ class CustomizeComponent(PromptComponent):
     def get_prompt(self, agent_dict):
         template_keyword = []
         for keyword in self.keywords:
-            current_keyword = get_memory_from_long_short(agent_dict, keyword)
+            current_keyword = agent_dict[keyword]
             template_keyword.append(current_keyword)
 
         return self.template.format(*template_keyword)
@@ -263,17 +260,17 @@ class ExtractComponent(ToolComponent):
 
     def func(self, agent_dict):
         query = (
-            agent_dict["chat_history"][-1]
-            if len(agent_dict["chat_history"]) > 0
+            agent_dict["long_term_memory"][-1]
+            if len(agent_dict["long_term_memory"]) > 0
             else " "
         )
         key_history = get_key_history(
             query,
-            agent_dict["chat_history"][:-1],
+            agent_dict["long_term_memory"][:-1],
             agent_dict["chat_embeddings"][:-1],
         )
         response = agent_dict["LLM"].get_response(
-            agent_dict["chat_history"],
+            agent_dict["long_term_memory"],
             self.system_prompt,
             self.last_prompt,
             agent_dict=agent_dict,
@@ -360,8 +357,8 @@ class WebSearchComponent(ToolComponent):
 
     def func(self, agent_dict: Dict, **kwargs) -> Dict:
         query = (
-            agent_dict["chat_history"][-1]["content"]
-            if len(agent_dict["chat_history"]) > 0
+            agent_dict["long_term_memory"][-1]["content"]
+            if len(agent_dict["long_term_memory"]) > 0
             else " "
         )
         search_results = self.search[self.engine_name](query=query, **kwargs)
@@ -450,16 +447,16 @@ class FunctionComponent(ToolComponent):
             self.available_functions[function["name"]] = eval(function["name"])
 
     def func(self, agent_dict):
-        messages = agent_dict["chat_history"]
+        messages = agent_dict["long_term_memory"]
         outputdict = {}
         query = (
-            agent_dict["chat_history"][-1]
-            if len(agent_dict["chat_history"]) > 0
+            agent_dict["long_term_memory"][-1]
+            if len(agent_dict["long_term_memory"]) > 0
             else " "
         )
         key_history = get_key_history(
             query,
-            agent_dict["chat_history"][:-1],
+            agent_dict["long_term_memory"][:-1],
             agent_dict["chat_embeddings"][:-1],
         )
         response = agent_dict["LLM"].get_response(

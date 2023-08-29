@@ -1,4 +1,4 @@
-from component import ToolComponent,Component
+from component import ToolComponent
 import json
 from utils import *
 
@@ -42,7 +42,7 @@ class CategoryRequirementsComponent(ToolComponent):
 
     def func(self, agent_dict):
         prompt = ""
-        messages = agent_dict["chat_history"]
+        messages = agent_dict["long_term_memory"]
         outputdict = {}
         functions = [
             {
@@ -64,8 +64,8 @@ class CategoryRequirementsComponent(ToolComponent):
                 },
             }
         ]
-        query = agent_dict["chat_history"][-1] if len(agent_dict["chat_history"])>0 else " "
-        key_history = get_key_history(query,agent_dict["chat_history"][:-1],agent_dict["chat_embeddings"][:-1])
+        query = agent_dict["long_term_memory"][-1] if len(agent_dict["long_term_memory"])>0 else " "
+        key_history = get_key_history(query,agent_dict["long_term_memory"][:-1],agent_dict["chat_embeddings"][:-1])
         response = agent_dict["LLM"].get_response(
             messages,
             None,
@@ -93,6 +93,11 @@ class CategoryRequirementsComponent(ToolComponent):
 
         top1_score = topk_result[1][0]
         request_items, top_category = search_with_api(requirements, category)
+        
+
+        MIN_CATEGORY_SIM = eval(os.environ["MIN_CATEGORY_SIM"]
+                                ) if "MIN_CATEGORY_SIM" in os.environ else 0.7
+
         if top1_score > MIN_CATEGORY_SIM:
             agent_dict["category"] = topk_result[0][0]
             category = topk_result[0][0]

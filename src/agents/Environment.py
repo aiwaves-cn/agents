@@ -1,12 +1,11 @@
 from utils import get_key_history,get_embedding
 import torch
-import json
 from LLM import *
-
+from Memory import Memory
 
 class Environment:
     def __init__(self,config) -> None:
-        self.shared_memory = {"chat_history":[],"summary":" "}
+        self.shared_memory = {"long_term_memory":[],"short_term_memory":None}
         self.agents = None
         
         self.summary_system_prompt = {}
@@ -22,10 +21,14 @@ class Environment:
             LLM_type = state_dict['LLM_type'] if "LLM_type" in state_dict else "OpenAI"
             if LLM_type == "OpenAI":
                 self.LLM = OpenAILLM(**state_dict["LLM"])
-                
+        self.roles_to_names = None
+        self.names_to_roles = None           
     
     @classmethod
-    def from_config(cls,config):
+    def from_config(cls,config_path):
+        
+        with open(config_path) as f:
+            config = json.load(f)
         return cls(config)
         
     
@@ -33,26 +36,33 @@ class Environment:
         current_state_name = current_state.name
         environment_prompt = self.environment_prompt[current_state_name]
         system_prompt = environment_prompt + self.summary_system_prompt[current_state_name]
-        last_prompt = self.summary_last_prompt[current_state_name]
-        
-        query = (
-            self.shared_memory["chat_history"][-1]
-            if len(self.shared_memory["chat_history"]) > 0
-            else " "
-        )
+
+        current_memory = "The dialogues you may need to pay attention to are as follows:\n<relevant_history>"
+
+        # get relevant memory
+        query = self.shared_memory["long_term_memory"][-1]
         key_history = get_key_history(
             query,
-            self.shared_memory["chat_history"][:-1],
+            self.shared_memory["long_term_memory"][:-1],
             self.shared_memory["chat_embeddings"][:-1],
         )
+        # get chat history
+        for history in key_history:
+           current_memory += f"{history.send_name}({history.send_role}):{history.content}\n"
+        current_memory += "<relevant_history>\n"
+        
+        chat_history = "The dialogue is recorded as follows:\n<history>"
+        for his in self.shared_memory["long_term_memory"]:
+            chat_history += f"{his.send_name}({his.send_role}):{his.content}\n"
+        
+        summary = self.shared_memory["short_term_memory"]
+        current_memory += f"The summary of the previous dialogue history is as follows :<summary>\n{summary}\n.The latest conversation record is as follows:\n<hisroty> {chat_history}\n<history>"
+
         
         response = self.LLM.get_response(
-            self.shared_memory["chat_history"],
+            None,
             system_prompt,
-            last_prompt,
-            stream=False,
-            summary=self.shared_memory["summary"],
-            key_history=key_history,
+            stream=False
         )
         return response
     
@@ -60,6 +70,8 @@ class Environment:
         response = action["response"] if "response" in action else ""
         res_dict = action["res_dict"] if "res_dict" in action else {}
         is_user =  action["is_user"] if "is_user" in action else False
+        send_name = action["name"]
+        send_role = action["role"]
         all = ""
         for res in response:
             all += res
@@ -67,14 +79,14 @@ class Environment:
                 print(res,end="")
         if not is_user:
             print()
-        memory = {"role":"user","content":all}
+        memory = Memory(send_role,send_name,all)
         return memory
     
     
-    def update_memory(self, memory,current_state,roles_to_names):
-        global MAX_CHAT_HISTORY
-        self.shared_memory["chat_history"].append(memory)
-        current_embedding = get_embedding(memory["content"])
+    def update_memory(self, memory,current_state):
+        MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
+        self.shared_memory["long_term_memory"].append(memory)
+        current_embedding = get_embedding(memory.content)
         if "chat_embeddings" not in self.shared_memory:
             self.shared_memory["chat_embeddings"] = current_embedding
         else:
@@ -82,20 +94,9 @@ class Environment:
                 [self.shared_memory["chat_embeddings"], current_embedding], dim=0
             )
 
-        summary = None
-
-        if len(self.shared_memory["chat_history"]) % MAX_CHAT_HISTORY:
+        if len(self.shared_memory["long_term_memory"]) % MAX_CHAT_HISTORY:
             summary = self.summary(current_state)
-            self.shared_memory["summary"] = summary
+            self.shared_memory["short_term_memory"] = summary
         
-        for agent_role in current_state.roles:
-            agent_name = roles_to_names[current_state.name][agent_role]
-            self.agents[agent_name].update_memory(memory, summary, current_embedding)
+        self.agents[memory.send_name].update_memory(memory)
 
-
-    def send_memory(self, next_state):
-        summary = self.summary(next_state)
-        self.shared_memory["summary"] = summary
-        self.shared_memory["chat_history"] = []
-        for agent in self.agents[next_state.name].values():
-            agent.agent_dict["summary"] = summary

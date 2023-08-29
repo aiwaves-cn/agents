@@ -15,8 +15,6 @@
 # limitations under the License.
 """LLM autonoumous agent"""
 from utils import get_key_history
-from datebase import *
-from State import State
 import torch
 from LLM import *
 from component import *
@@ -39,15 +37,22 @@ class Agent:
         self.state_roles = agent_state_roles
         self.name = name
         self.LLMs = kwargs["LLMs"]
+        self.long_term_memory = []
+        self.short_term_memory = ""
+        self.current_state = None
+        self.is_user = False
         self.agent_dict = {
             "name" :name,
             "current_roles":"",
-            "chat_history":[],
-            "summary":""
+            "long_term_memory":self.long_term_memory,
+            "short_term_memory": self.short_term_memory
         }
+        
 
     @classmethod
-    def from_config(cls,config):
+    def from_config(cls,config_path):
+        with open(config_path) as f:
+            config = json.load(f)
         roles_to_names = {}
         names_to_roles = {}
         agents = {}
@@ -70,56 +75,40 @@ class Agent:
         return agents,roles_to_names,names_to_roles
     
     
-    def step(self, current_state: State, is_user = False):
-        if is_user:
+    def step(self, current_state,environment):
+        self.current_state = current_state
+        self.observe(environment)
+        if self.is_user:
             response = input(f"{self.name}:")
             response = f"{self.name}:{response}"
-            return {"response":response,"is_user":True}
+            return {"response":response,"is_user":True,"role":self.state_roles[current_state.name],"name":self.name}
         else:
-            return self.act(current_state)
+            current_history = self.observe(environment)
+            self.agent_dict["long_term_memory"].append(current_history)
+            return self.act()
     
-    def act(self, current_state: State):
+    def act(self):
+        current_state = self.current_state
+        system_prompt, last_prompt, res_dict = self.compile()
+        chat_history = self.agent_dict["long_term_memory"]
 
-        system_prompt, last_prompt, res_dict = self.compile(current_state)
-        chat_history = self.agent_dict["chat_history"]
         current_LLM = self.LLMs[current_state.name]
-
-        query = (
-            self.agent_dict["chat_history"][-1]
-            if len(self.agent_dict["chat_history"]) > 0
-            else " "
-        )
-        key_history = get_key_history(
-            query,
-            self.agent_dict["chat_history"][:-1],
-            self.agent_dict["chat_embeddings"][:-1],
-        )
 
         response = current_LLM.get_response(
             chat_history,
             system_prompt,
             last_prompt,
-            stream=True,
-            summary=self.agent_dict["summary"],
-            key_history=key_history,
+            stream=True
         )
-        return {"response":response,"res_dict":res_dict}
+        return {"response":response,"res_dict":res_dict,"role":self.state_roles[current_state.name],"name":self.name}
         
 
-    def update_memory(self, memory, summary, current_embedding):
-        self.agent_dict["chat_history"].append(memory)
-        
-        if "chat_embeddings" not in self.agent_dict:
-            self.agent_dict["chat_embeddings"] = current_embedding
-        else:
-            self.agent_dict["chat_embeddings"] = torch.cat(
-                [self.agent_dict["chat_embeddings"], current_embedding],
-                dim=0,
-            )
-        self.agent_dict["summary"] = summary
+    def update_memory(self, memory):
+        self.agent_dict["long_term_memory"].append({"role":"assistant","content":memory.content})
         
             
-    def compile(self, current_state):
+    def compile(self):
+        current_state  = self.current_state
         self.agent_dict["current_roles"] = self.state_roles[current_state.name]
         current_state_name = current_state.name
         self.agent_dict["LLM"] = self.LLMs[current_state_name]
@@ -141,6 +130,59 @@ class Agent:
                 self.agent_dict.update(response)
                 res_dict.update(response)
         return system_prompt, last_prompt, res_dict
+    
+    def observe(self,environment):
+        MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
+        current_memory = "The dialogues you may need to pay attention to are as follows:\n<relevant_history>"
+        query = environment.shared_memory["long_term_memory"][-1]
+        current_state = self.current_state
+        current_role = self.state_roles[current_state.name]
+        current_component_dict = current_state.components[current_role]
+
+        # get relevant memory
+        key_history = get_key_history(
+            query,
+            environment.shared_memory["long_term_memory"][:-1],
+            environment.shared_memory["chat_embeddings"][:-1],
+        )
+        for history in key_history:
+           current_memory += f"{history.send_name}({history.send_role}):{history.content}\n"
+        current_memory += "<relevant_history>\n"
+
+        last_conversation_idx = -1
+        for i,history in enumerate(environment.shared_memory["long_term_memory"]):
+            if history.send_name == self.name:
+                last_conversation_idx = i
+
+        if last_conversation_idx == -1:
+            new_conversation = environment.shared_memory["long_term_memory"]
+        elif last_conversation_idx == len(environment.shared_memory["long_term_memory"])-1:
+            new_conversation = []
+        else:
+            new_conversation = environment.shared_memory["long_term_memory"][last_conversation_idx+1:]
+
+
+
+        # get chat history
+        conversations = Memory.get_chat_history(new_conversation)
+
+
+        if len(new_conversation) > MAX_CHAT_HISTORY:
+            # get summary
+            summary_prompt = current_state.summary_prompt[current_role] if current_state.summary_prompt else f"""your name is {self.name},your role is{current_component_dict["style"].role},your task is {current_component_dict["task"].task}.\n"""
+            summary_prompt += """Please summarize and extract the information you need based on past key information \n<information>\n {self.short_term_memory} and new conversation records as follows: <conversation>\n"""
+            summary_prompt += conversations + "<conversation>\n"
+            response = self.LLMs[current_state.name].get_response(None,summary_prompt)
+            summary = ""
+            for res in response:
+                summary += res
+            self.agent_dict["short_term_memory"] = summary
+            self.short_term_memory = summary
+
+            # memory = relevant_memory + summary + history
+        current_memory += f"The summary of the previous dialogue history is as follows :<summary>\n{self.short_term_memory}\n<summary>.The latest conversation record is as follows:\n<hisroty> {conversations}\n<history>"
+
+        return {"role":"user","content":current_memory}
     
 
     def generate_sop(self):
