@@ -12,10 +12,12 @@ class State:
         self.environment_prompt = kwargs["environment_prompt"] if "environment_prompt" in kwargs else ""
         self.begin_role = kwargs["begin_role"] if "begin_role" in kwargs else self.agents_name[0]
         self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else ""
+        self.summary_prompt = kwargs["summary_prompt"] if "summary_prompt" in kwargs else None
         self.current_role = self.begin_role
         self.roles = kwargs["roles"]
         self.components = self.init_components(kwargs["agent_states"])
         self.current_role = self.begin_role
+        self.is_begin = True
         
         
     def init_components(self,agent_states_dict: dict):

@@ -4,11 +4,7 @@ import os
 import json
 import datetime
 import time
-
-API_KEY = os.environ["API_KEY"]
-PROXY = os.environ["PROXY"]
-MAX_CHAT_HISTORY = eval(
-    os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
+from Memory import Memory
 
 class LLM:
     def __init__(self) -> None:
@@ -22,6 +18,10 @@ class LLM:
 class OpenAILLM(LLM):
     def __init__(self,**kwargs) -> None:
         super().__init__()
+        self.API_KEY = os.environ["API_KEY"]
+        self.PROXY = os.environ["PROXY"]
+        self.MAX_CHAT_HISTORY = eval(
+            os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
         self.model = kwargs["model"] if "model" in kwargs else "gpt-3.5-turbo-16k-0613"
         self.temperature = kwargs["temperature"] if "temperature" in  kwargs else 0.3
         self.log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
@@ -63,22 +63,15 @@ class OpenAILLM(LLM):
                     function_call="auto",
                     WAIT_TIME=20,
                     **kwargs):
-        openai.api_key = API_KEY
-        openai.proxy = PROXY
+        openai.api_key = self.API_KEY
+        openai.proxy = self.PROXY
         model = self.model
         temperature = self.temperature
         
         
         active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
         summary = kwargs["summary"] if "summary" in kwargs else None
-        key_history = kwargs["key_history"] if "key_history" in kwargs else None
-        key_his = "Relevant historical chat records are as follows <history>\n{\n"
-        if key_history:
-            for his in key_history:
-                key_his += his["content"] + "\n"
-            key_his +="}\n</history>\n"
         
-
         if active_mode:
             system_prompt = system_prompt + "Please keep your reply as concise as possible"
 
@@ -88,18 +81,20 @@ class OpenAILLM(LLM):
         }] if system_prompt else []
         
         if chat_history:
-            if len(chat_history) >  MAX_CHAT_HISTORY:
-                chat_history = chat_history[- MAX_CHAT_HISTORY:]
-            messages += chat_history
+            if len(chat_history) >  self.MAX_CHAT_HISTORY:
+                chat_history = chat_history[- self.MAX_CHAT_HISTORY:]
+            if isinstance(chat_history[0],dict):
+                messages += chat_history
+            elif isinstance(chat_history[0],Memory):
+                messages += [memory.get_gpt_message("user") for memory in chat_history]
 
-        if last_prompt or summary or key_history:
+        if last_prompt or summary:
             last_prompt = last_prompt if last_prompt else ""
             last_prompt = f"The information you know is:\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
-            last_prompt = key_his + last_prompt if key_his else last_prompt
             if active_mode:
                 last_prompt = last_prompt + "Please keep your reply as concise as possible"
             # messages += [{"role": "system", "content": f"{last_prompt}"}]
-            messages += [{"role": "user", "content": f"{last_prompt}"}]
+            messages += [{"role": "system", "content": f"{last_prompt}"}]
         
 
         while True:
