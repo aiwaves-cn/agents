@@ -75,10 +75,8 @@ class Environment:
         all = ""
         for res in response:
             all += res
-            if not is_user:
-                print(res,end="")
         if not is_user:
-            print()
+            print(f"{send_name}({send_role}):{all}")
         memory = Memory(send_role,send_name,all)
         return memory
     
