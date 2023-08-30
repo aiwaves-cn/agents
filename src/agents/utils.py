@@ -108,9 +108,9 @@ def delete_files_if_exceed_threshold(directory, threshold, num_to_keep):
         delete_oldest_files(directory, delete_count)
 
 def save_logs(log_path, messages, response):
-    delete_files_if_exceed_threshold(log_path, 20, 10)
     if not os.path.exists(log_path):
         os.mkdir(log_path)
+    delete_files_if_exceed_threshold(log_path, 20, 10)
     log_path = log_path if log_path else "logs"
     log = {}
     log["input"] = messages
