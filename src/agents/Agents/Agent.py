@@ -181,7 +181,7 @@ class Agent:
             self.short_term_memory = summary
 
             # memory = relevant_memory + summary + history + query
-        current_memory += f"The previous summary of chat history is as follows :<summary>\n{self.short_term_memory}\n<summary>.The new chat history is as follows:\n<new chat> {conversations}\n<new chat>\n<information>,You especially need to pay attention to the last query<query>\n{query.send_name}:{query.content}\n<query>\n"
+        current_memory += f"The previous summary of chat history is as follows :<summary>\n{self.short_term_memory}\n<summary>.The new chat history is as follows:\n<new chat> {conversations}\n<new chat>\n<information>,You especially need to pay attention to the last query<query>\n{query.send_name}({query.send_role}):{query.content}\n<query>\n"
 
         return {"role":"user","content":current_memory}
     
