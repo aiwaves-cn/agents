@@ -16,9 +16,9 @@
 """LLM autonoumous agent"""
 from utils import get_key_history
 import torch
-from LLM import *
-from component import *
-from extra_component import *
+from LLM.LLM import *
+from Componenet.component import *
+from Componenet.extra_component import *
 
 headers = {
     "Content-Type": "text/event-stream",

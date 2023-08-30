@@ -1,5 +1,5 @@
-from component import *
-from extra_component import *
+from Componenet.component import *
+from Componenet.extra_component import *
 
 class State:
     def __init__(

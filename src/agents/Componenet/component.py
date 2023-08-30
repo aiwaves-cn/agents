@@ -19,7 +19,8 @@ Components (modularized prompts) of a Node in an LLM Autonomous agent
 
 from abc import abstractmethod
 from text2vec import semantic_search
-from utils import *
+from utils import get_key_history,load_knowledge_base_qa,load_knowledge_base_UnstructuredFile,get_embedding,extract
+import json
 from typing import Dict, List
 from googleapiclient.discovery import build
 import requests

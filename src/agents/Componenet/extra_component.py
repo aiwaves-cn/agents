@@ -1,6 +1,7 @@
-from component import ToolComponent
+from Componenet.component import ToolComponent
 import json
-from utils import *
+from utils import flatten_dict,get_embedding,get_key_history,matching_category,search_with_api,limit_keys,limit_values
+import os
 
 
 class CategoryRequirementsComponent(ToolComponent):

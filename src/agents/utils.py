@@ -16,7 +16,6 @@
 """helper functions for an LLM autonoumous agent"""
 import csv
 import random
-import openai
 import json
 import pandas
 import numpy as np

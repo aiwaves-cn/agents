@@ -1,7 +1,7 @@
 from utils import get_key_history,get_embedding
 import torch
-from LLM import *
-from Memory import Memory
+from LLM.LLM import *
+from Memory.Memory import Memory
 
 class Environment:
     def __init__(self,config) -> None:
