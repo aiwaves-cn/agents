@@ -15,10 +15,9 @@
 # limitations under the License.
 """LLM autonoumous agent"""
 from utils import get_key_history
-import torch
-from LLM.LLM import *
-from Componenet.component import *
-from Componenet.extra_component import *
+from LLMs.base_LLM import *
+from Componenets.base_component import *
+from Componenets.extra_component import *
 
 headers = {
     "Content-Type": "text/event-stream",
@@ -114,7 +113,7 @@ class Agent:
         self.agent_dict["LLM"] = self.LLMs[current_state_name]
         components = current_state.components[self.state_roles[current_state_name]]
         
-        system_prompt = current_state.environment_prompt if current_state.environment_prompt else ""
+        system_prompt =  self.current_state.environment_prompt
         last_prompt = ""
         
         res_dict = {}
@@ -133,7 +132,7 @@ class Agent:
     
     def observe(self,environment):
         MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
-        current_memory = "The dialogues you may need to pay attention to are as follows:\n<relevant_history>"
+        current_memory = "Here's what you need to know(Remember, this is just information, Try not to repeat what's inside):\n<information>\nThe relevant chat history are as follows:\n<relevant_history>"
         query = environment.shared_memory["long_term_memory"][-1]
         current_state = self.current_state
         current_role = self.state_roles[current_state.name]
@@ -148,7 +147,9 @@ class Agent:
         for history in key_history:
            current_memory += f"{history.send_name}({history.send_role}):{history.content}\n"
         current_memory += "<relevant_history>\n"
-
+        self.agent_dict["relevant_history"] = current_memory
+        
+        
         last_conversation_idx = -1
         for i,history in enumerate(environment.shared_memory["long_term_memory"]):
             if history.send_name == self.name:
@@ -167,11 +168,11 @@ class Agent:
         conversations = Memory.get_chat_history(new_conversation)
 
 
-        if len(new_conversation) > MAX_CHAT_HISTORY:
+        if len(environment.shared_memory["long_term_memory"]) % MAX_CHAT_HISTORY ==0:
             # get summary
             summary_prompt = current_state.summary_prompt[current_role] if current_state.summary_prompt else f"""your name is {self.name},your role is{current_component_dict["style"].role},your task is {current_component_dict["task"].task}.\n"""
-            summary_prompt += """Please summarize and extract the information you need based on past key information \n<information>\n {self.short_term_memory} and new conversation records as follows: <conversation>\n"""
-            summary_prompt += conversations + "<conversation>\n"
+            summary_prompt += """Please summarize and extract the information you need based on past key information \n<information>\n {self.short_term_memory} and new chat_history as follows: <new chat>\n"""
+            summary_prompt += conversations + "<new chat>\n"
             response = self.LLMs[current_state.name].get_response(None,summary_prompt)
             summary = ""
             for res in response:
@@ -179,8 +180,8 @@ class Agent:
             self.agent_dict["short_term_memory"] = summary
             self.short_term_memory = summary
 
-            # memory = relevant_memory + summary + history
-        current_memory += f"The summary of the previous dialogue history is as follows :<summary>\n{self.short_term_memory}\n<summary>.The latest conversation record is as follows:\n<hisroty> {conversations}\n<history>"
+            # memory = relevant_memory + summary + history + query
+        current_memory += f"The previous summary of chat history is as follows :<summary>\n{self.short_term_memory}\n<summary>.The new chat history is as follows:\n<new chat> {conversations}\n<new chat>\n<information>,You especially need to pay attention to the last query<query>\n{query.send_name}:{query.content}\n<query>\n"
 
         return {"role":"user","content":current_memory}
     

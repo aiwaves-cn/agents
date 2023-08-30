@@ -86,8 +86,29 @@ def extract(text, type):
     target_str = get_content_between_a_b(f"<{type}>", f"</{type}>", text)
     return target_str
 
+def count_files_in_directory(directory):
+    # 获取指定目录下的文件数目
+    file_count = len([f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))])
+    return file_count
+
+def delete_oldest_files(directory, num_to_keep):
+    # 获取目录下文件列表，并按修改时间排序
+    files = [(f, os.path.getmtime(os.path.join(directory, f))) for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+
+    # 删除最开始的 num_to_keep 个文件
+    for i in range(min(num_to_keep, len(files))):
+        file_to_delete = os.path.join(directory, files[i][0])
+        os.remove(file_to_delete)
+
+def delete_files_if_exceed_threshold(directory, threshold, num_to_keep):
+    # 获取文件数目并进行处理
+    file_count = count_files_in_directory(directory)
+    if file_count > threshold:
+        delete_count = file_count - num_to_keep
+        delete_oldest_files(directory, delete_count)
 
 def save_logs(log_path, messages, response):
+    delete_files_if_exceed_threshold(log_path, 20, 10)
     if not os.path.exists(log_path):
         os.mkdir(log_path)
     log_path = log_path if log_path else "logs"
@@ -474,7 +495,7 @@ def search_with_api(requirements, categery):
 
 def get_key_history(query,history,embeddings):
     
-    TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 5
+    TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 2
     key_history = []
     query = query.content
     query_embedding = get_embedding(query)
