@@ -4,7 +4,8 @@ import os
 import json
 import datetime
 import time
-from Memory.Memory import Memory
+from Memorys import Memory
+from utils import save_logs
 
 class LLM:
     def __init__(self) -> None:
@@ -26,21 +27,6 @@ class OpenAILLM(LLM):
         self.temperature = kwargs["temperature"] if "temperature" in  kwargs else 0.3
         self.log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
     
-    
-    def save_logs(self,log_path, messages, response):
-        if not os.path.exists(log_path):
-            os.mkdir(log_path)
-        log_path = log_path if log_path else "logs"
-        log = {}
-        log["input"] = messages
-        log["output"] = response
-        os.makedirs(log_path, exist_ok=True)
-        log_file = os.path.join(
-            log_path,
-            datetime.datetime.now().strftime("%Y-%m-%d%H:%M:%S") + ".json")
-        with open(log_file, "w", encoding="utf-8") as f:
-            json.dump(log, f, ensure_ascii=False, indent=2)
-
 
     def get_stream(self,response, log_path, messages):
         ans = ""
@@ -50,7 +36,8 @@ class OpenAILLM(LLM):
                     if res.choices[0]["delta"].get("content") else "")
                 ans += r
                 yield r
-        self.save_logs(log_path, messages, ans)
+        
+        save_logs(log_path, messages, ans)
         
 
 
@@ -124,10 +111,10 @@ class OpenAILLM(LLM):
                     time.sleep(WAIT_TIME)
 
         if functions:
-            self.save_logs(self.log_path, messages, response)
+            save_logs(self.log_path, messages, response)
             return response.choices[0].message
         elif stream:
             return self.get_stream(response, self.log_path, messages)
         else:
-            self.save_logs(self.log_path, messages, response)
+            save_logs(self.log_path, messages, response)
             return response.choices[0].message["content"]

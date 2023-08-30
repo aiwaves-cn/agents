@@ -4,8 +4,8 @@ import argparse
 import sys
 sys.path.append("../src/agents")
 from SOP import SOP
-from Agent.Agent import Agent
-from Environment.Environment import Environment
+from Agents import Agent
+from Environments import Environment
 
 def init(config):
     agents,roles_to_names,names_to_roles = Agent.from_config(config)
@@ -20,6 +20,7 @@ def run(agents,sop,environment):
     while True:
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
+            print("finished!")
             break
         action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         memory = environment.excute_action(action)

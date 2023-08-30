@@ -189,7 +189,7 @@ class KnowledgeBaseComponent(ToolComponent):
             )
 
     def func(self, agent_dict):
-        query = agent_dict["chat_history"][-1] if len(agent_dict["chat_history"])>0 else ""
+        query = agent_dict["long_term_memory"][-1] if len(agent_dict["long_term_memory"])>0 else ""
         knowledge = ""
         query = (
             "Generate a representation for this sentence for retrieving related articles:"

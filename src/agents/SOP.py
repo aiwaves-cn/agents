@@ -15,10 +15,10 @@
 # limitations under the License.
 """standard operation procedure of an LLM Autonomous agent"""
 import random
-from LLM.LLM import *
+from LLMs.base_LLM import *
 from State import State
 from utils import extract,get_key_history
-from Memory.Memory import Memory
+from Memorys import Memory
 import json
 class SOP:
     """
@@ -39,7 +39,8 @@ class SOP:
         self.init_states(kwargs["states"])
         self.init_relation(kwargs["relations"])
         for state_name,states_dict in kwargs["states"].items():
-            self.controller_dict[state_name] = states_dict["controller"]
+            if state_name != "end_state":
+                self.controller_dict[state_name] = states_dict["controller"]
             
             
         self.user_roles = kwargs["user_roles"] if "user_roles" in kwargs else []
@@ -78,12 +79,17 @@ class SOP:
             + controller_dict["judge_system_prompt"]
         )
 
-        last_prompt = controller_dict["judge_last_prompt"]
+        judge_last_prompt = controller_dict["judge_last_prompt"]
+        environment = kwargs["environment"]
+        summary = environment.shared_memory["short_term_memory"]
+        
+        last_prompt = f"The previous summary of chat history is as follows :<summary>\n{summary}\n<summary>.The new chat history is as follows:\n<new chat> {Memory.get_chat_history(chat_history)}\n<new chat>\n<information>.\nYou especially need to pay attention to the last query<query>\n{chat_history[-1].content}\n<query>\n{judge_last_prompt}\n"
+        
         extract_words = controller_dict["judge_extract_words"]
         response = self.LLM.get_response(
-            chat_history, system_prompt, last_prompt, stream=False, **kwargs
+            None, system_prompt, last_prompt, stream=False, **kwargs
         )
-        next_state = extract(response, extract_words)
+        next_state = response if response.isdigit() else extract(response, extract_words)
         return next_state
 
     def route(self, current_state,chat_history,**kwargs):
@@ -102,15 +108,12 @@ class SOP:
             )
 
 
-            last_name = chat_history[-1].send_name
-            last_prompt = f"The last person to speak is: {last_name}\nNote: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{last_name}</end> cannot be output"
+            chat_messages = Memory.get_chat_history(chat_history)
+            call_last_prompt = controller_dict["call_last_prompt"]
+            last_prompt = f"The chat history is as follows:\n<history>\n{chat_messages}<history>\n，The last person to speak is: {chat_history[-1].send_name}\n.{call_last_prompt}Note: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{chat_history[-1].send_name}</end> cannot be output,You especially need to pay attention to the last query<query>\n{chat_history[-1].content}\n<query>\n"
+            
 
-            last_prompt += controller_dict["call_last_prompt"]
             extract_words = controller_dict["call_extract_words"]
-
-            chat_history = Memory.get_chat_history(chat_history)
-
-            system_prompt += f"The dialogue is recorded as follows:\n<history>\n{chat_history}<history>\n"
             
             response = self.LLM.get_response(
                 None, system_prompt, last_prompt, stream=False,**kwargs
@@ -135,7 +138,7 @@ class SOP:
             current_state = self.root
             current_agent_name = self.roles_to_names[current_state.name][current_state.begin_role]
             memory =Memory(current_state.begin_role,current_agent_name,current_state.begin_query)
-            print(f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}")
+            print(f"{current_agent_name}:{current_state.begin_query}")
             environment.update_memory(memory,current_state)
             self.current_state.is_begin = False
             return self.next(environment,agents)
@@ -153,14 +156,16 @@ class SOP:
             )
             next_state = self.transit(
                 chat_history=environment.shared_memory["long_term_memory"],
-                summary=environment.shared_memory["short_term_memory"],
                 key_history=key_history,
                 environment_prompt=current_state.environment_prompt,
+                environment= environment
             )
 
         if not next_state.isdigit():
             next_state = "0"
-
+        if self.current_state.next_states[next_state].name == self.finish_state_name:
+            self.finished = True
+            return None , None
         next_state = current_state.next_states[next_state]
         
         if len(current_state.roles) == 1:
@@ -176,7 +181,6 @@ class SOP:
             next_role = self.route(
                 current_state=next_state,
                 chat_history=environment.shared_memory["long_term_memory"],
-                summary=environment.shared_memory["short_term_memory"],
                 key_history=key_history,
                 environment_prompt=current_state.environment_prompt,
             )
@@ -185,21 +189,9 @@ class SOP:
             next_role = random.choice(next_state.roles)
         
         is_user = next_role in self.user_roles
-        
-        while current_state!=next_state:
-            environment.send_message(next_state)
-            current_state = next_state
-            current_agent_name = self.roles_to_names[current_state.name][current_state.begin_role]
-            memory = {"role":"user","content":f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}"}
-            print(f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}")
-            environment.update_memory(memory,current_state)
-            next_state,next_agent = self.next(environment,agents)
-
 
         self.current_state = next_state
-        if next_state.name == self.finish_state_name:
-            self.finished = True
-            return None , None
+        
         current_agent = agents[self.roles_to_names[next_state.name][next_role]]
         current_agent.is_user = is_user
         current_state.current_role = next_role
