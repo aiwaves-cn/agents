@@ -138,7 +138,7 @@ class SOP:
             current_state = self.root
             current_agent_name = self.roles_to_names[current_state.name][current_state.begin_role]
             memory =Memory(current_state.begin_role,current_agent_name,current_state.begin_query)
-            print(f"{current_agent_name}:{current_state.begin_query}")
+            print(f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}")
             environment.update_memory(memory,current_state)
             self.current_state.is_begin = False
             return self.next(environment,agents)

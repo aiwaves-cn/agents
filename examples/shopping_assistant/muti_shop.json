@@ -8,7 +8,8 @@
   "root": "shopping_state",
   "relations": {
     "shopping_state": {
-      "0": "shopping_state"
+      "0": "shopping_state",
+      "1": "end_state"
     }
   },
   "agents":{
@@ -20,6 +21,9 @@
   }
   },
   "states": {
+    "end_state":{
+      "name":"end_state"
+  },
     "shopping_state": {
       "LLM_type": "OpenAI",
       "LLM": {

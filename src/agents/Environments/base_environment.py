@@ -67,8 +67,12 @@ class Environment:
         all = ""
         for res in response:
             all += res
+        parse = f"{send_name}:"
+        if parse in all:
+            index = all.index(parse) + len(parse)
+            all = all[index:]
         if not is_user:
-            print(f"{all}")
+            print(f"{send_name}({send_role}):{all}")
         memory = Memory(send_role,send_name,all)
         return memory
     
