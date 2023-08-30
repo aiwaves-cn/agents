@@ -4,7 +4,7 @@ import os
 import json
 import datetime
 import time
-from Memory import Memory
+from Memory.Memory import Memory
 
 class LLM:
     def __init__(self) -> None:

@@ -15,11 +15,11 @@
 # limitations under the License.
 """standard operation procedure of an LLM Autonomous agent"""
 import random
-from LLM import *
+from LLM.LLM import *
 from State import State
 from utils import extract,get_key_history
-from Memory import Memory
-
+from Memory.Memory import Memory
+import json
 class SOP:
     """
     input:the json of the sop
