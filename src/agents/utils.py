@@ -344,63 +344,6 @@ def matching_category(inputtext,
     return [top_k_name, top_k_score.tolist(), top_k_idx]
 
 
-class Leaf_Node:
-
-    def __init__(self, val) -> None:
-        self.val = val
-        self.son = []
-
-    def add(self, son):
-        self.son.append(son)
-
-
-def create_forest(csv_file):
-    json_list = []
-    node_dict = {}
-    node_id = 0
-    node_list = []
-    name_list = []
-
-    with open(csv_file, "r") as file:
-        csv_data = csv.reader(file)
-        headers = next(csv_data)  
-
-        for row in csv_data:
-            json_data = {}
-            for i in range(len(headers)):
-                json_data[headers[i]] = row[i]
-            json_list.append(json_data)
-
-    for d in json_list:
-        cat_root_name = d["cat_root_name"]
-        cat_leaf_name = d["cat_leaf_name"]
-        father_names = cat_root_name.split("/")
-        son_names = cat_leaf_name.split("/")
-
-        for father_name in father_names:
-            if father_name not in list(node_dict.keys()):
-                father = Leaf_Node(father_name)
-                node_list.append(father)
-                name_list.append(father_name)
-                node_dict[father_name] = node_id
-                node_id += 1
-            else:
-                father = node_list[node_dict[father_name]]
-            for son_name in son_names:
-                if son_name not in list(node_dict.keys()):
-                    son = Leaf_Node(son_name)
-                    node_list.append(son)
-                    node_dict[son_name] = node_id
-                    name_list.append(son_name)
-                    node_id += 1
-                else:
-                    son = node_list[node_dict[son_name]]
-                if son not in father.son:
-                    father.add(son)
-
-    return node_list, name_list
-
-
 def sample_with_order_preserved(lst, num):
     """Randomly sample from the list while maintaining the original order."""
     indices = list(range(len(lst)))

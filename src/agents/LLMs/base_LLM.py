@@ -50,6 +50,9 @@ class OpenAILLM(LLM):
                     function_call="auto",
                     WAIT_TIME=20,
                     **kwargs):
+        """
+        return LLM's response 
+        """
         openai.api_key = self.API_KEY
         openai.proxy = self.PROXY
         model = self.model

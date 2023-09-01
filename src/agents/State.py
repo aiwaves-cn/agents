@@ -1,6 +1,8 @@
 from Componenets.base_component import *
 from Componenets.extra_component import *
 
+
+# state should have  "name"
 class State:
     def __init__(
         self,
@@ -9,16 +11,20 @@ class State:
         
         self.next_states = {}
         self.name = kwargs["name"]
-        if self.name != "end_state":
-            self.environment_prompt = kwargs["environment_prompt"] if "environment_prompt" in kwargs else ""
-            self.begin_role = kwargs["begin_role"] if "begin_role" in kwargs else self.agents_name[0]
-            self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else ""
-            self.summary_prompt = kwargs["summary_prompt"] if "summary_prompt" in kwargs else None
-            self.current_role = self.begin_role
-            self.roles = kwargs["roles"]
-            self.components = self.init_components(kwargs["agent_states"])
-            self.current_role = self.begin_role
-            self.is_begin = True
+        
+        self.environment_prompt = kwargs["environment_prompt"] if "environment_prompt" in kwargs else ""
+        
+        self.begin_role = kwargs["begin_role"] if "begin_role" in kwargs else None
+        self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else None
+        self.is_begin = True if self.begin_role else False
+        
+        self.summary_prompt = kwargs["summary_prompt"] if "summary_prompt" in kwargs else None
+        self.current_role = self.begin_role
+        self.roles = kwargs["roles"] if "roles" in kwargs else []
+        self.components = self.init_components(kwargs["agent_states"]) if "agent_states" in kwargs else {}
+        self.index = self.roles.index(self.begin_role) if self.begin_role in self.roles else 0
+        self.begin_index = self.index
+        self.cycle_num = 0
         
         
     def init_components(self,agent_states_dict: dict):

@@ -19,7 +19,13 @@ Components (modularized prompts) of a Node in an LLM Autonomous agent
 
 from abc import abstractmethod
 from text2vec import semantic_search
-from utils import get_key_history,load_knowledge_base_qa,load_knowledge_base_UnstructuredFile,get_embedding,extract
+from utils import (
+    get_key_history,
+    load_knowledge_base_qa,
+    load_knowledge_base_UnstructuredFile,
+    get_embedding,
+    extract,
+)
 import json
 from typing import Dict, List
 from googleapiclient.discovery import build
@@ -69,7 +75,8 @@ class OutputComponent(PromptComponent):
         self.output = output
 
     def get_prompt(self, agent_dict):
-        return f"""Please contact the above to extract <{self.output}> and </{self.output}>, do not perform additional output, please output in strict accordance with the above format!\n"""
+        return f"""Please contact the above to extract <{self.output}> and </{self.output}>, \
+            do not perform additional output, please output in strict accordance with the above format!\n"""
 
 
 class LastComponent(PromptComponent):
@@ -86,14 +93,15 @@ class StyleComponent(PromptComponent):
     角色、风格组件
     """
 
-    def __init__(self,role,style):
+    def __init__(self, role, style):
         super().__init__()
         self.style = style
         self.role = role
 
     def get_prompt(self, agent_dict):
         name = agent_dict["name"]
-        return f"""Now your role is:\n<role>{self.role}</role>, your name is:\n<name>{name}</name>. You need to follow the output style:\n<style>{self.style}</style>.\n"""
+        return f"""Now your role is:\n<role>{self.role}</role>, your name is:\n<name>{name}</name>. \
+            You need to follow the output style:\n<style>{self.style}</style>.\n"""
 
 
 class RuleComponent(PromptComponent):
@@ -189,7 +197,11 @@ class KnowledgeBaseComponent(ToolComponent):
             )
 
     def func(self, agent_dict):
-        query = agent_dict["long_term_memory"][-1] if len(agent_dict["long_term_memory"])>0 else ""
+        query = (
+            agent_dict["long_term_memory"][-1]
+            if len(agent_dict["long_term_memory"]) > 0
+            else ""
+        )
         knowledge = ""
         query = (
             "Generate a representation for this sentence for retrieving related articles:"
