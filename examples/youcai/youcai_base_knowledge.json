@@ -1,14 +1,60 @@
 {
-    "nodes": {
-        "node_response": {
-            "name": "node_response",
-            "is_interactive": "true",
-            "extract_word": "回复",
+    "LLM_type": "OpenAI",
+    "LLM": {
+        "temperature": 0.0,
+        "model": "gpt-3.5-turbo-16k-0613",
+        "log_path": "logs/上帝"
+    },
+    "agents": {
+        "吴家隆": {
+            "response_state": "优才计划客服"
+        },
+        "A神": {
+            "response_state": "user"
+        }
+    },
+    "root": "response_state",
+    "relations": {
+        "response_state": {
+            "0": "response_state",
+            "1": "end_state"
+        }
+    },
+    "temperature": 0.6,
+    "active_mode": true,
+    "log_path": "logs",
+    "states": {
+        "end_state": {
+            "name": "end_state"
+        },
+        "response_state": {
+            "controller": {
+                "controller_type": "order",
+                "judge_system_prompt": "",
+                "judge_last_prompt": "回复<结束>0<结束>",
+                "judge_extract_words": "结束",
+                "call_system_prompt": "",
+                "call_last_prompt": "",
+                "call_extract_words": "结束"
+            },
+            "begin_role": "优才计划客服",
+            "begin_query": "我是优才计划的客服",
+            "environment_prompt": "",
+            "name": "response_state",
+            "roles": [
+                "优才计划客服",
+                "user"
+            ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/裁判员"
+            },
             "agent_states": {
                 "优才计划客服": {
                     "style": {
-                        "name": "吴家隆",
-                        "role": "优才计划的客服",
+                        "role": "优才计划客服",
                         "style": "幽默风趣"
                     },
                     "task": {
@@ -28,20 +74,21 @@
                         "rule",
                         "KnowledgeBaseComponent"
                     ]
+                },
+                "user": {
+                    "style": {
+                        "role": "user",
+                        "style": "冷漠刁钻"
+                    },
+                    "task": {
+                        "task": "刁难导购员，让他提供尽可能多的关于优才计划的信息"
+                    },
+                    "config": [
+                        "style",
+                        "task"
+                    ]
                 }
-            },
-            "root": true,
-            "controller": {}
+            }
         }
-    },
-    "relation": {
-        "node_response": {
-            "0": "node_response"
-        }
-    },
-    "environment_prompt": "",
-    "temperature": 0.6,
-    "log_path": "logs",
-    "active_mode": false,
-    "answer_simplify": true
+    }
 }
