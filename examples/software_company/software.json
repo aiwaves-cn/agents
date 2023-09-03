@@ -1,0 +1,266 @@
+{
+    "LLM_type": "OpenAI",
+    "LLM": {
+        "temperature": 0.3,
+        "model": "gpt-3.5-turbo-16k-0613",
+        "log_path": "logs/god"
+    },
+    "root": "design_state",
+    "relations": {
+        "design_state": {
+            "0": "design_state",
+            "1": "develop_state"
+        },
+        "develop_state": {
+            "0": "develop_state",
+            "1": "debug_state"
+        },
+        "debug_state": {
+            "0": "debug_state",
+            "1": "end_state"
+        }
+    },
+    "agents": {
+        "Alice": {
+            "design_state": "Boss"
+        },
+        "Bob": {
+            "design_state": "Architect"
+        },
+        "Candy": {
+            "develop_state": "Developer",
+            "debug_state": "Developer"
+        },
+        "David": {
+            "debug_state": "Debugger"
+        },
+        "Michael": {
+            "design_state": "Leader",
+            "develop_state": "Leader",
+            "debug_state": "Leader"
+        }
+    },
+    "states": {
+        "end_state": {
+            "name": "end_state"
+        },
+        "design_state": {
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 0.3,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/god"
+            },
+            "roles": [
+                "Boss",
+                "Architect",
+                "Leader"
+            ],
+            "controller": {
+                "controller_type": "rule",
+                "judge_system_prompt": "if you think that the leader is satisfied enough with the python system proposed by the architect, output <end>1</end>, else output <end>0</end>.",
+                "judge_last_prompt": "if you think that the leader is satisfied enough with the python system proposed by the architect, output <end>1</end>, else output <end>0</end>.",
+                "judge_extract_words": "end"
+            },
+            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the architect puts forward a python framework based on this requirement, and then the LEADER determines whether this framework is appropriate, and gives the architect comments until the architect modifies the architecture to his satisfaction.",
+            "name": "design_state",
+            "begin_role": "Boss",
+            "begin_query": "write a CLI rock-paper-scissors game, which can be played by two people.",
+            "agent_states": {
+                "Boss": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Boss"
+                    },
+                    "style": {
+                        "role": "Boss",
+                        "style": "august"
+                    },
+                    "task": {
+                        "task": "give a requirement"
+                    },
+                    "rule": {
+                        "rule": "requirement should be clear and specific"
+                    }
+                },
+                "Architect": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Architect"
+                    },
+                    "style": {
+                        "role": "Architect",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "design a concise, usable, complete python system architecture"
+                    },
+                    "rule": {
+                        "rule": "try to specify good open source tools as much as possible and modules proposed should be specific"
+                    }
+                },
+                "Leader": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Leader"
+                    },
+                    "style": {
+                        "role": "Leader",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "check the architecture proposed by the architect and give specific comments to improve it until you are satisfied"
+                    },
+                    "rule": {
+                        "rule": "comments should be specific and constructive"
+                    }
+                }
+            }
+        },
+        "develop_state": {
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 0.3,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/god"
+            },
+            "roles": [
+                "Developer",
+                "Leader"
+            ],
+            "controller": {
+                "controller_type": "rule",
+                "judge_system_prompt": "if you think that the leader is satisfied enough with the code written by the developer, output <end>1</end>, else output <end>0</end>.",
+                "judge_last_prompt": "if you think that the leader is satisfied enough with the python system proposed by the architect, output <end>1</end>, else output <end>0</end>.",
+                "judge_extract_words": "end"
+            },
+            "environment_prompt": "Now the scenario is that the developer writes the code according to the framework given by the architect, and then the leader determines whether the written code is elegant, readable, and runnable, and gives comments to the developer until the developer modifies the code to their satisfaction.",
+            "name": "develop_state",
+            "begin_role": "Leader",
+            "begin_query": "write code for the rock-paper-scissors game",
+            "agent_states": {
+                "Developer": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Developer"
+                    },
+                    "style": {
+                        "role": "Developer",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "write elegant, readable, extensible, efficient code"
+                    },
+                    "rule": {
+                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain"
+                    }
+                },
+                "Leader": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Leader"
+                    },
+                    "style": {
+                        "role": "Leader",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "check the code written by the developer and give specific comments to improve it until you are satisfied"
+                    },
+                    "rule": {
+                        "rule": "comments should be specific and constructive"
+                    }
+                }
+            }
+        },
+        "debug_state": {
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 0.3,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/god"
+            },
+            "roles": [
+                "Developer",
+                "Debugger",
+                "Leader"
+            ],
+            "controller": {
+                "controller_type": "rule",
+                "judge_system_prompt": "if you think that the leader is satisfied enough with the code written by the developer, output <end>1</end>, else output <end>0</end>.",
+                "judge_last_prompt": "if you think that the leader is satisfied enough with the code written by the developer, output <end>1</end>, else output <end>0</end>.",
+                "judge_extract_words": "end"
+            },
+            "environment_prompt": "Now the scenario is that the developer writes code based on the feedback given by the debugger, and then the debugger determines whether the written code is runnable or not, and gives comments to the developer until the developer modifies the code to their satisfaction. Then the leader judges whether the final code can meet the boss's requirements and gives comments to the developer or the debugger to modify the code until it is satisfactory.",
+            "name": "shopping_state",
+            "begin_role": "Leader",
+            "begin_query": "make code runnable and more efficient",
+            "agent_states": {
+                "Debugger": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Debugger"
+                    },
+                    "style": {
+                        "role": "Debugger",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "debug the code written by the developer"
+                    },
+                    "rule": {
+                        "rule": "give specific comments to improve the code until you are satisfied"
+                    }
+                },
+                "Developer": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Developer"
+                    },
+                    "style": {
+                        "role": "Developer",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "write elegant, readable, extensible, efficient code"
+                    },
+                    "rule": {
+                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain"
+                    }
+                },
+                "Leader": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Leader"
+                    },
+                    "style": {
+                        "role": "Leader",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "check the code written by the developer and give specific comments to improve it until you are satisfied"
+                    },
+                    "rule": {
+                        "rule": "comments should be specific and constructive"
+                    }
+                }
+            }
+        }
+    }
+}
