@@ -1,21 +1,64 @@
 {
-    "nodes": {
-        "node_response": {
-            "name": "node_response",
-            "is_interactive": "true",
-            "extract_word": "回复",
+    "LLM_type": "OpenAI",
+    "LLM": {
+        "temperature": 0.0,
+        "model": "gpt-3.5-turbo-16k-0613",
+        "log_path": "logs/god"
+    },
+    "agents": {
+        "jialong": {
+            "response_state": "customer service personnel"
+        },
+        "alexander": {
+            "response_state": "user"
+        }
+    },
+    "root": "response_state",
+    "relations": {
+        "response_state": {
+            "0": "response_state",
+            "1": "end_state"
+        }
+    },
+    "temperature": 0.6,
+    "active_mode": true,
+    "log_path": "logs",
+    "states": {
+        "end_state": {
+            "name": "end_state"
+        },
+        "response_state": {
+            "controller": {
+                "controller_type": "order",
+                "judge_system_prompt": "",
+                "judge_last_prompt": "<end>0<end>",
+                "judge_extract_words": "end"
+            },
+            "begin_role": "customer service personnel",
+            "begin_query": "hello, could i can help you?",
+            "environment_prompt": "",
+            "name": "response_state",
+            "roles": [
+                "customer service personnel",
+                "user"
+            ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/customer_service"
+            },
             "agent_states": {
                 "优才计划客服": {
                     "style": {
-                        "name": "吴家隆",
-                        "role": "优才计划的客服",
-                        "style": "幽默风趣"
+                        "role": "customer service personnel",
+                        "style": "humorous and professional"
                     },
                     "task": {
-                        "task": "回答用户的问题"
+                        "task": "answer user's question"
                     },
                     "rule": {
-                        "rule": "你的语言要尽量精简，不要废话太多"
+                        "rule": "Keep your response as concise as possible."
                     },
                     "KnowledgeBaseComponent": {
                         "top_k": 1,
@@ -28,20 +71,21 @@
                         "rule",
                         "KnowledgeBaseComponent"
                     ]
+                },
+                "user": {
+                    "style": {
+                        "role": "user",
+                        "style": "cold and unruly"
+                    },
+                    "task": {
+                        "task": "make customer service personnel provide more information about the service"
+                    },
+                    "config": [
+                        "style",
+                        "task"
+                    ]
                 }
-            },
-            "root": true,
-            "controller": {}
+            }
         }
-    },
-    "relation": {
-        "node_response": {
-            "0": "node_response"
-        }
-    },
-    "environment_prompt": "",
-    "temperature": 0.6,
-    "log_path": "logs",
-    "active_mode": false,
-    "answer_simplify": true
+    }
 }

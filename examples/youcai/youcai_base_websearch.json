@@ -1,36 +1,64 @@
 {
+    "LLM_type": "OpenAI",
+    "LLM": {
+        "temperature": 0.0,
+        "model": "gpt-3.5-turbo-16k-0613",
+        "log_path": "logs/god"
+    },
+    "agents": {
+        "jialong": {
+            "response_state": "customer service personnel"
+        },
+        "alexander": {
+            "response_state": "user"
+        }
+    },
+    "root": "response_state",
+    "relations": {
+        "response_state": {
+            "0": "response_state",
+            "1": "end_state"
+        }
+    },
     "temperature": 0.6,
     "active_mode": true,
     "log_path": "logs",
-    "user_roles": [
-        "user"
-    ],
-    "relation": {
-        "node_response": {
-            "0": "node_response"
-        }
-    },
-    "nodes": {
-        "node_response": {
-            "controller_type": "1",
-            "begin_role": "优才计划客服",
-            "begin_query": "我是优才计划的客服",
+    "states": {
+        "end_state": {
+            "name": "end_state"
+        },
+        "response_state": {
+            "controller": {
+                "controller_type": "order",
+                "judge_system_prompt": "",
+                "judge_last_prompt": "<end>0<end>",
+                "judge_extract_words": "end"
+            },
+            "begin_role": "customer service personnel",
+            "begin_query": "hello, could i can help you?",
             "environment_prompt": "",
-            "name": "node_response",
-            "is_interactive": true,
-            "root": true,
+            "name": "response_state",
+            "roles": [
+                "customer service personnel",
+                "user"
+            ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/customer_service"
+            },
             "agent_states": {
                 "优才计划客服": {
                     "style": {
-                        "name": "吴家隆",
-                        "role": "优才计划客服",
-                        "style": "幽默风趣"
+                        "role": "customer service personnel",
+                        "style": "humorous and professional"
                     },
                     "task": {
-                        "task": "回答用户的问题"
+                        "task": "answer user's question"
                     },
                     "rule": {
-                        "rule": "你的语言要尽量精简，不要废话太多"
+                        "rule": "Keep your response as concise as possible"
                     },
                     "WebSearchComponent": {
                         "engine_name": "bing",
@@ -51,24 +79,18 @@
                 },
                 "user": {
                     "style": {
-                        "name": "A神",
                         "role": "user",
-                        "style": "幽默风趣"
+                        "style": "cold and unruly"
                     },
                     "task": {
-                        "task": "回答用户的问题"
-                    },
-                    "rule": {
-                        "rule": "你的语言要尽量精简，不要废话太多"
+                        "task": "make customer service personnel provide more information about the service"
                     },
                     "config": [
                         "style",
-                        "task",
-                        "rule"
+                        "task"
                     ]
                 }
-            },
-            "controller": {}
+            }
         }
     }
 }
