@@ -360,7 +360,7 @@ class WebSearchComponent(ToolComponent):
 
     def func(self, agent_dict: Dict, **kwargs) -> Dict:
         query = (
-            agent_dict["long_term_memory"][-1]["content"]
+            agent_dict["long_term_memory"][-2]["content"]
             if len(agent_dict["long_term_memory"]) > 0
             else " "
         )
