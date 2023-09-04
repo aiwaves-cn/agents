@@ -7,21 +7,25 @@
     },
     "agents": {
         "jialong": {
+            "style":"humorous and professional",
+            "roles":{
             "response_state": "customer service personnel"
+            }
         },
         "alexander": {
+            "style":"cold and unruly",
+            "roles":{
             "response_state": "user"
+            }
         }
     },
     "root": "response_state",
     "relations": {
         "response_state": {
-            "0": "response_state",
-            "1": "end_state"
+            "0": "response_state"
         }
     },
     "temperature": 0.6,
-    "active_mode": true,
     "log_path": "logs",
     "states": {
         "end_state": {
@@ -29,10 +33,7 @@
         },
         "response_state": {
             "controller": {
-                "controller_type": "order",
-                "judge_system_prompt": "",
-                "judge_last_prompt": "<end>0<end>",
-                "judge_extract_words": "end"
+                "controller_type": "order"
             },
             "begin_role": "customer service personnel",
             "begin_query": "hello, could i can help you?",
@@ -49,10 +50,9 @@
                 "log_path": "logs/customer_service"
             },
             "agent_states": {
-                "优才计划客服": {
+                "customer service personnel": {
                     "style": {
-                        "role": "customer service personnel",
-                        "style": "humorous and professional"
+                        "role": "customer service personnel"
                     },
                     "task": {
                         "task": "answer user's question"
@@ -63,27 +63,16 @@
                     "KnowledgeBaseComponent": {
                         "top_k": 1,
                         "type": "QA",
-                        "knowledge_path": "/home/aiwaves/jlwu/multi-agent/agents/examples/youcai/youcai_database.json"
-                    },
-                    "config": [
-                        "style",
-                        "task",
-                        "rule",
-                        "KnowledgeBaseComponent"
-                    ]
+                        "knowledge_path": "Single_Agent/youcai/youcai_database.json"
+                    }
                 },
                 "user": {
                     "style": {
-                        "role": "user",
-                        "style": "cold and unruly"
+                        "role": "user"
                     },
                     "task": {
                         "task": "make customer service personnel provide more information about the service"
-                    },
-                    "config": [
-                        "style",
-                        "task"
-                    ]
+                    }
                 }
             }
         }

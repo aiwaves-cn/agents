@@ -198,7 +198,7 @@ class KnowledgeBaseComponent(ToolComponent):
 
     def func(self, agent_dict):
         query = (
-            agent_dict["long_term_memory"][-1]
+            agent_dict["long_term_memory"][-1]["content"]
             if len(agent_dict["long_term_memory"]) > 0
             else ""
         )
@@ -360,10 +360,20 @@ class WebSearchComponent(ToolComponent):
 
     def func(self, agent_dict: Dict, **kwargs) -> Dict:
         query = (
-            agent_dict["long_term_memory"][-2]["content"]
+            agent_dict["long_term_memory"][-1]["content"]
             if len(agent_dict["long_term_memory"]) > 0
             else " "
         )
+        query = extract(query,"query")
+        response = agent_dict["LLM"].get_response(
+            None,
+            system_prompt = f"Please analyze the provided conversation and identify keywords that can be used for a search engine query. Format the output as <keywords>extracted keywords</keywords>:\nConversation:\n{query}",
+            stream=False,
+        )
+        response = extract(response,"keywords")
+        query = response if response else query
+        
+        
         search_results = self.search[self.engine_name](query=query, **kwargs)
         information = ""
         for i in search_results["meta data"][:2]:

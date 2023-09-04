@@ -19,23 +19,16 @@ example code for serving an autonomous agents with Flask/FastAPI backend
 """
 
 import argparse
-import logging
-import time
 from flask import Flask,request,Response,jsonify
 from fastapi import APIRouter, Request, Body
 # from gevent import pywsgi
-import requests
 from multiprocessing import Process
 import sys
-sys.path.append("../../agents/src/agents/")
-from sop import SOP
-from agent import Agent
 import os
 import json
 import asyncio
 import aiohttp
 from sse_starlette.sse import EventSourceResponse, ServerSentEvent
-from utils import *
 from threading import  Thread
 import os
 from multiprocessing import Process
@@ -43,6 +36,12 @@ from fastapi import FastAPI,Request
 from fastapi.responses import  JSONResponse,StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+sys.path.append("../src/agents")
+from SOP import SOP
+from Agents import Agent
+from Environments import Environment
+
+
 # -*- coding: utf-8 -*-
 
 """
