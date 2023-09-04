@@ -93,15 +93,15 @@ class StyleComponent(PromptComponent):
     角色、风格组件
     """
 
-    def __init__(self, role, style):
+    def __init__(self, role):
         super().__init__()
-        self.style = style
         self.role = role
 
     def get_prompt(self, agent_dict):
         name = agent_dict["name"]
+        style = agent_dict["style"]
         return f"""Now your role is:\n<role>{self.role}</role>, your name is:\n<name>{name}</name>. \
-            You need to follow the output style:\n<style>{self.style}</style>.\n"""
+            You need to follow the output style:\n<style>{style}</style>.\n"""
 
 
 class RuleComponent(PromptComponent):
@@ -269,29 +269,19 @@ class ExtractComponent(ToolComponent):
         super().__init__()
         self.extract_words = extract_words
         self.system_prompt = system_prompt
-        self.last_prompt = last_prompt if last_prompt else None
+        self.last_prompt = last_prompt if last_prompt else f"Please strictly adhere to the following format for outputting: <{self.extract_words}>{{the content you need to extract}}</{self.extract_words}>"
 
     def func(self, agent_dict):
-        query = (
-            agent_dict["long_term_memory"][-1]
-            if len(agent_dict["long_term_memory"]) > 0
-            else " "
-        )
-        key_history = get_key_history(
-            query,
-            agent_dict["long_term_memory"][:-1],
-            agent_dict["chat_embeddings"][:-1],
-        )
         response = agent_dict["LLM"].get_response(
             agent_dict["long_term_memory"],
             self.system_prompt,
             self.last_prompt,
             agent_dict=agent_dict,
             stream=False,
-            key_history=key_history,
         )
         for extract_word in self.extract_words:
             key = extract(response, extract_word)
+            key = key if key else response
             agent_dict[extract_word] = key
 
         return {}

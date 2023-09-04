@@ -12,7 +12,9 @@ class Environment:
         self.summary_system_prompt = {}
         self.summary_last_prompt = {}
         self.environment_prompt = {}
-
+        self.environment_type = config["environment_type"] if "environment_type" in config else "cooperate"
+        self.current_chat_history_idx = 0
+        
         # 初始化每个state 的summary 方法
         # Initialize the summary method for each state
         for state_name, state_dict in config["states"].items():
