@@ -83,7 +83,8 @@ class SOP:
         """
         current_state = self.current_state
         controller_dict = self.controller_dict[current_state.name]
-        if current_state.chat_nums>=controller_dict["max_chat_nums"]:
+        max_chat_nums = controller_dict["max_chat_nums"] if "max_chat_nums" in controller_dict else 1000
+        if current_state.chat_nums>=max_chat_nums:
             return "1"
         
 
