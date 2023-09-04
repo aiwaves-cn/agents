@@ -57,7 +57,7 @@ class Agent:
         roles_to_names = {}
         names_to_roles = {}
         agents = {}
-        user_names = config["user_names"] if "user_names" in config else []
+        user_names = json.loads(os.environ["User_Roles"]) if "User_Roles" in os.environ else []
         for agent_name, agent_dict in config["agents"].items():
             agent_state_roles = {}
             agent_LLMs = {}
@@ -239,7 +239,7 @@ class Agent:
                 else f"""your name is {self.name},your role is{current_component_dict["style"].role},your task is {current_component_dict["task"].task}.\n"""
             )
             summary_prompt += """Please summarize and extract the information you need based on past key information \n<information>\n {self.short_term_memory} and new chat_history as follows: <new chat>\n"""
-            summary_prompt += conversations + "<new chat>\n"
+            summary_prompt += conversations + "</new chat>\n"
             response = self.LLMs[current_state.name].get_response(None, summary_prompt)
             summary = ""
             for res in response:
@@ -250,10 +250,10 @@ class Agent:
 
             # memory = relevant_memory + summary + history + query
         current_memory += (relevant_memory + \
-            f"The previous summary of chat history is as follows :<summary>\n{self.short_term_memory}\n<summary>.\
-            The new chat history is as follows:\n<new chat> {conversations}\n<new chat>\n\
-            <information>,\
-            You especially need to pay attention to the last query<query>\n{query.send_name}({query.send_role}):{query.content}\n<query>\n")
+            f"The previous summary of chat history is as follows :<summary>\n{self.short_term_memory}\n</summary>.\
+            The new chat history is as follows:\n<new chat> {conversations}\n</new chat>\n\
+            </information>,\
+            You especially need to pay attention to the last query<query>\n{query.send_name}({query.send_role}):{query.content}\n</query>\n")
 
         return {"role": "user", "content": current_memory}
         
