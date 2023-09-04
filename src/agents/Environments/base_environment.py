@@ -131,3 +131,7 @@ class Environment:
             self.shared_memory["short_term_memory"] = summary
 
         self.agents[memory.send_name].update_memory(memory)
+    
+    def update(self,action,current_state):
+        memory = self.excute_action(action)
+        self.update_memory(memory,current_state)

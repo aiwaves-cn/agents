@@ -23,6 +23,7 @@ def run(agents,sop,environment):
             print("finished!")
             break
         action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        environment.update(action)
         memory = environment.excute_action(action)
         environment.update_memory(memory,current_state)
 
