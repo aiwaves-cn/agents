@@ -37,15 +37,17 @@ class Agent:
         self.name = name
         self.LLMs = kwargs["LLMs"]
         self.is_user = kwargs["is_user"]
-
+        
         self.long_term_memory = []
         self.short_term_memory = ""
         self.current_state = None
         self.agent_dict = {
             "name": name,
+            "style" : kwargs["style"],
             "current_roles": "",
             "long_term_memory": self.long_term_memory,
             "short_term_memory": self.short_term_memory,
+            
         }
 
     @classmethod
@@ -59,7 +61,7 @@ class Agent:
         for agent_name, agent_dict in config["agents"].items():
             agent_state_roles = {}
             agent_LLMs = {}
-            for state_name, agent_role in agent_dict.items():
+            for state_name, agent_role in agent_dict["roles"].items():
                 if state_name not in roles_to_names:
                     roles_to_names[state_name] = {}
                 if state_name not in names_to_roles:
@@ -85,6 +87,7 @@ class Agent:
                 agent_state_roles,
                 LLMs=agent_LLMs,
                 is_user=agent_name in user_names,
+                style = agent_dict["style"]
             )
         return agents, roles_to_names, names_to_roles
 
@@ -92,7 +95,9 @@ class Agent:
         """
         return actions by current state and environment
         """
+        current_state.chat_nums +=1
         self.current_state = current_state
+        
         
         # 先根据当前环境更新信息
         # First update the information according to the current environment
@@ -174,17 +179,25 @@ class Agent:
         current_role = self.state_roles[current_state.name]
         current_component_dict = current_state.components[current_role]
         
+        
+        if environment.environment_type == "compete":
+            current_long_term_memory = environment.shared_memory["long_term_memory"][environment.current_chat_history_idx:]
+            current_chat_embbedings = environment.shared_memory["chat_embeddings"][environment.current_chat_history_idx:]
+        else:
+            current_long_term_memory = environment.shared_memory["long_term_memory"]
+            current_chat_embbedings = environment.shared_memory["chat_embeddings"]
+            
         # total memory observed
         current_memory = "Here's what you need to know(Remember, this is just information, Try not to repeat what's inside):\n<information>\n"
         
         # relevant_memory
         relevant_memory = "The relevant chat history are as follows:\n<relevant_history>"
-        query = environment.shared_memory["long_term_memory"][-1]
+        query = current_long_term_memory[-1]
 
         key_history = get_key_history(
             query,
-            environment.shared_memory["long_term_memory"][:-1],
-            environment.shared_memory["chat_embeddings"][:-1],
+            current_long_term_memory[:-1],
+            current_chat_embbedings[:-1],
         )
         for history in key_history:
             relevant_memory += (
@@ -197,19 +210,19 @@ class Agent:
 
         # get new conversation
         last_conversation_idx = -1
-        for i, history in enumerate(environment.shared_memory["long_term_memory"]):
+        for i, history in enumerate(current_long_term_memory):
             if history.send_name == self.name:
                 last_conversation_idx = i
 
         if last_conversation_idx == -1:
-            new_conversation = environment.shared_memory["long_term_memory"]
+            new_conversation =current_long_term_memory
         elif (
             last_conversation_idx
-            == len(environment.shared_memory["long_term_memory"]) - 1
+            == len(current_long_term_memory) - 1
         ):
             new_conversation = []
         else:
-            new_conversation = environment.shared_memory["long_term_memory"][
+            new_conversation = current_long_term_memory[
                 last_conversation_idx + 1 :
             ]
 
@@ -218,7 +231,7 @@ class Agent:
         conversations = Memory.get_chat_history(new_conversation)
 
 
-        if len(environment.shared_memory["long_term_memory"]) % MAX_CHAT_HISTORY == 0:
+        if len(current_long_term_memory) % MAX_CHAT_HISTORY == 0:
             # get summary
             summary_prompt = (
                 current_state.summary_prompt[current_role]
@@ -243,7 +256,8 @@ class Agent:
             You especially need to pay attention to the last query<query>\n{query.send_name}({query.send_role}):{query.content}\n<query>\n")
 
         return {"role": "user", "content": current_memory}
-
+        
+    
     def generate_sop(self):
         pass
 

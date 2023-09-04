@@ -60,7 +60,6 @@ class SOP:
         self.roles_to_names = None
         self.names_to_roles = None
         self.finished = False
-        self.current_chat_history_idx = 0
 
     @classmethod
     def from_config(cls, config_path):
@@ -84,26 +83,9 @@ class SOP:
         """
         current_state = self.current_state
         controller_dict = self.controller_dict[current_state.name]
-
-        controller_type = (
-            self.controller_dict[current_state.name]["controller_type"]
-            if "controller_type" in self.controller_dict[current_state.name]
-            else "rule"
-        )
-        max_cycle_num = (
-            self.controller_dict[current_state.name]["max_cycle_num"]
-            if "max_cycle_num" in self.controller_dict[current_state.name]
-            else None
-        )
-
-        # 如果是顺序发言且有最大发言轮次的话，到达最大发言轮次则直接结束
-        # If speaking in sequence and there is a max_cycle_num, it will end directly when the max_cycle_num is reached
-        if (
-            controller_type == "order"
-            and max_cycle_num
-            and current_state.cycle_num >= max_cycle_num
-        ):
+        if current_state.chat_nums>=controller_dict["max_chat_nums"]:
             return "1"
+        
 
         # 否则则让controller判断是否结束
         # Otherwise, let the controller judge whether to end
@@ -114,6 +96,7 @@ class SOP:
             + controller_dict["judge_system_prompt"]
         )
 
+        
         last_prompt = controller_dict["judge_last_prompt"]
         environment = kwargs["environment"]
         summary = environment.shared_memory["short_term_memory"]
@@ -147,21 +130,29 @@ class SOP:
             else "rule"
         )
 
+
         # 如果是rule 控制器，则交由LLM进行分配角色
         # If  controller type is rule, it is left to LLM to assign roles.
         if controller_type == "rule":
             controller_dict = self.controller_dict[current_state.name]
+            
+            allocate_prompt = ""
+            roles = list(set(current_state.roles))
+            for role in roles:
+                allocate_prompt += f"If it's currently supposed to be speaking for {role}, then output <end>{role}<\end>.\n"
+                
             system_prompt = (
                 "<environment>"
                 + current_state.environment_prompt
                 + "</environment>\n"
-                + controller_dict["call_system_prompt"]
+                + controller_dict["call_system_prompt"] + allocate_prompt
             )
 
             # last_prompt: note + last_prompt + query
             last_prompt = (
                 f"You especially need to pay attention to the last query<query>\n{chat_history[-1].content}\n<query>\n"
                 + controller_dict["call_last_prompt"]
+                + allocate_prompt
                 + f"Note: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{chat_history[-1].send_name}</end> cannot be output\n."
             )
 
@@ -186,23 +177,65 @@ class SOP:
         # Speak in order
         elif controller_type == "order":
             # If there is no begin role, it will be given directly to the first person.
-            if current_state.current_role:
+            if not current_state.current_role:
                 next_role = current_state.roles[0]
             # otherwise first
             else:
                 current_state.index += 1
-                next_role = current_state.roles[
-                    (current_state.index) % len(current_state.roles)
-                ]
-                if current_state.index == current_state.begin_index:
-                    current_state.cycle_num += 1
-                    
+                current_state.index =  (current_state.index) % len(current_state.roles)
+                next_role = current_state.roles[current_state.index]
         # random speak
         elif controller_type == "random":
             next_role = random.choice(current_state.roles)
+        current_state.current_role = next_role
 
         return next_role
 
+    def first_chat(self,environment,agents):
+        # 该状态设为非第一次进入,并将聊天记录更新至新状态
+        # This state is set to not be the first entry, and the chat history is updated to the new state
+        self.current_state.is_begin = False
+        print("==============================================================================")
+        print(f"Now begin to:{self.current_state.name}")
+        print("==============================================================================")
+        environment.current_chat_history_idx = (
+            len(environment.shared_memory["long_term_memory"]) - 1
+        )
+        
+        current_state = self.current_state
+
+        # 如果该状态下有开场白，则进行以下操作
+        # If there is an opening statement in this state, do the following
+        if current_state.begin_role:
+            current_state.current_role = current_state.begin_role
+            current_agent_name = self.roles_to_names[current_state.name][
+                current_state.begin_role
+            ]
+
+            # 找出当前的agent
+            # Find out the current agent
+            current_agent = agents[current_agent_name]
+            
+            # 如果是用户的话,则用户负责输入开场白
+            # If it is a user, the user is responsible for entering the begin query
+            if current_agent.is_user:
+                current_state.begin_query = input(f"{current_agent_name}:")
+                
+            # Otherwise, enter a preset begin query
+            else:
+                print(
+                    f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}"
+                )
+
+            # 将开场白更新至记忆
+            # Update begin query to memory
+            memory = Memory(
+                current_state.begin_role,
+                current_agent_name,
+                current_state.begin_query,
+            )
+            environment.update_memory(memory, current_state)
+    
     def next(self, environment, agents):
         """
         Determine the next state and the role that needs action based on the current situation
@@ -210,48 +243,9 @@ class SOP:
         
         # 如果是第一次进入该状态
         # If it is the first time to enter this state
+        
         if self.current_state.is_begin:
-            
-            # 该状态设为非第一次进入,并将聊天记录更新至新状态
-            # This state is set to not be the first entry, and the chat history is updated to the new state
-            self.current_state.is_begin = False
-            print(f"{self.current_state.name}")
-            self.current_chat_history_idx = (
-                len(environment.shared_memory["long_term_memory"]) - 1
-            )
-            current_state = self.current_state
-
-            # 如果该状态下有开场白，则进行以下操作
-            # If there is an opening statement in this state, do the following
-            if current_state.begin_role:
-                current_state.current_role = current_state.begin_role
-                current_agent_name = self.roles_to_names[current_state.name][
-                    current_state.begin_role
-                ]
-
-                # 找出当前的agent
-                # Find out the current agent
-                current_agent = agents[current_agent_name]
-                
-                # 如果是用户的话,则用户负责输入开场白
-                # If it is a user, the user is responsible for entering the begin query
-                if current_agent.is_user:
-                    current_state.begin_query = input(f"{current_agent_name}:")
-                    
-                # Otherwise, enter a preset begin query
-                else:
-                    print(
-                        f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}"
-                    )
-
-                # 将开场白更新至记忆
-                # Update begin query to memory
-                memory = Memory(
-                    current_state.begin_role,
-                    current_agent_name,
-                    current_state.begin_query,
-                )
-                environment.update_memory(memory, current_state)
+           self.first_chat(environment,agents)
 
         current_state = self.current_state
 
@@ -275,7 +269,7 @@ class SOP:
             # Only pass in the conversation record in the current state
             next_state = self.transit(
                 chat_history=environment.shared_memory["long_term_memory"][
-                    self.current_chat_history_idx :
+                    environment.current_chat_history_idx :
                 ],
                 key_history=key_history,
                 environment=environment,
@@ -293,6 +287,9 @@ class SOP:
             return None, None
 
         self.current_state = current_state.next_states[next_state]
+        if self.current_state.is_begin:
+           self.first_chat(environment,agents)
+           
         current_state = self.current_state
         
         # 知道进入哪一状态后开始分配角色，如果该状态下只有一个角色则直接分配给他
@@ -312,7 +309,7 @@ class SOP:
             )
             current_role = self.route(
                 chat_history=environment.shared_memory["long_term_memory"][
-                    self.current_chat_history_idx :
+                    environment.current_chat_history_idx :
                 ],
                 key_history=key_history,
             )
@@ -323,6 +320,5 @@ class SOP:
             current_role = random.choice(current_state.roles)
 
         current_agent = agents[self.roles_to_names[current_state.name][current_role]]
-        current_state.current_role = current_role
 
         return current_state, current_agent

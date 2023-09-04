@@ -18,13 +18,14 @@ class State:
         self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else None
         self.is_begin = True if self.begin_role else False
         
+        
         self.summary_prompt = kwargs["summary_prompt"] if "summary_prompt" in kwargs else None
         self.current_role = self.begin_role
         self.roles = kwargs["roles"] if "roles" in kwargs else []
         self.components = self.init_components(kwargs["agent_states"]) if "agent_states" in kwargs else {}
         self.index = self.roles.index(self.begin_role) if self.begin_role in self.roles else 0
-        self.begin_index = self.index
-        self.cycle_num = 0
+        self.chat_nums = 0
+        
         
         
     def init_components(self,agent_states_dict: dict):
@@ -36,8 +37,7 @@ class State:
                     # "role" "style"
                     if component == "style":
                         component_dict["style"] = StyleComponent(
-                            component_args["role"],
-                            component_args["style"],
+                            component_args["role"]
                         )
 
                         # "task"
@@ -101,8 +101,7 @@ class State:
                     # "short_memory_extract_words"  "long_memory_extract_words" "system_prompt" "last_prompt"
                     elif component == "ExtractComponent":
                         component_dict["ExtractComponent"] = ExtractComponent(
-                            component_args["long_memory_extract_words"],
-                            component_args["short_memory_extract_words"],
+                            component_args["extract_words"],
                             component_args["system_prompt"],
                             component_args["last_prompt"],
                         )

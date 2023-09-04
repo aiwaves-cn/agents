@@ -1,4 +1,5 @@
-{
+{   
+    "environment_type" : "compete",
     "LLM_type": "OpenAI",
     "LLM": {
         "temperature": 0.0,
@@ -6,43 +7,95 @@
         "log_path": "logs/上帝"
     },
     "agents": {
-        "Affirmative_debater": {
-            "Affirmative_debate_state": "debater"
+        "Long Li": {
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_Debate_organizer"
+            }
         },
-        "Affirmative_opposition": {
-            "Affirmative_debate_state": "opposition"
+        "Jintian Zhang": {
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_First",
+            "Debate_Order_state":"Affirmative_First",
+            "Debate_Random_state":"Affirmative_First"
+            }
         },
-        "Affirmative_summarizer": {
-            "Affirmative_debate_state": "summarizer",
-            "debate_state":"Affirmative_debater"
+        "Jing Chen": {
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_Second",
+            "Debate_Order_state":"Affirmative_Second",
+            "Debate_Random_state":"Affirmative_Second"
+            }
         },
-        "negetive_debater": {
-            "negetive_debate_state": "debater"
+        "Jialong Wu": {
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_Third",
+            "Debate_Order_state":"Affirmative_Third",
+            "Debate_Random_state":"Affirmative_Third"
+            }
         },
-        "negetive_opposition": {
-            "negetive_debate_state": "opposition"
+        "Shi Qiu": {
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_Debate_organizer"
+            }
         },
-        "negetive_summarizer": {
-            "negetive_debate_state": "summarizer",
-            "debate_state":"negetive_debater"
+        "Shuai Wang": {
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_First",
+            "Debate_Order_state":"Negative_First",
+            "Debate_Random_state":"Negative_First"
+            }
         },
-        "judge":{
-            "debate_state":"judge"
+        "Tiannan Wang": {
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_Second",
+            "Debate_Order_state":"Negative_Second",
+            "Debate_Random_state":"Negative_Second"
+            }
+        },
+        "Jiyu Chen": {
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_Third",
+            "Debate_Order_state":"Negative_Third",
+            "Debate_Random_state":"Negative_Third"
+            }
+        },
+        "Zhou wang chun shu": {
+            "style":"professional",
+            "roles":{
+            "Debate_Order_state": "Debate_Judge",
+            "Debate_Random_state":"Debate_Judge",
+            "Judge_state":"Debate_Judge"
+            }
         }
     },
-    "root": "begin_state",
+    "root": "Affirmative_Task_Allocation_state",
     "relations": {
-        "Affirmative_debate_state": {
-            "0": "Affirmative_debate_state",
-            "1": "debate_state"
+        "Affirmative_Task_Allocation_state": {
+            "0": "Affirmative_Task_Allocation_state",
+            "1": "Negative_Task_Allocation_state"
         },
-        "negetive_debate_state":{
-            "0":"negetive_debate_state",
-            "1":"debate_state"
+        "Negative_Task_Allocation_state":{
+            "0":"Negative_Task_Allocation_state",
+            "1":"Debate_Order_state"
         },
-        "debate_state":{
-            "0":"debate_state",
-            "1" : "end_state"
+        "Debate_Order_state":{
+            "0":"Debate_Order_state",
+            "1":"Debate_Random_state"
+        },
+        "Debate_Random_state":{
+            "0":"Debate_Random_state",
+            "1":"Judge_state"
+        },
+        "Judge_state":{
+            "0":"end_state"
         }
     },
     "states": {
@@ -50,193 +103,618 @@
             "name":"end_state",
             "agent_states":{}
         },
-        "begin_state": {
+        "Affirmative_Task_Allocation_state": {
             "controller": {
                 "controller_type": "order",
-                "max_cycle_num" : 1,
-                "judge_system_prompt": "If you believe that the arguments from the affirmative side are already sufficiently comprehensive, output <end>1</end>. else output <end>0</end>.",
-                "judge_last_prompt": "If you believe that the arguments from the affirmative side are already sufficiently comprehensive, output <end>1</end>. else output <end>0</end>.",
+                "max_chat_nums" : 12,
+                "judge_system_prompt": "",
+                "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "begin_role": "summarizer",
-            "begin_query": "The debate topic is as follows: \n<debate topic>Which came first, the chicken or the egg? Affirmative viewpoint: the egg came first, negative viewpoint: the chicken came first.\n<debate topic>, now , begin to debate!",
-            "environment_prompt": "The current scenario involves the affirmative side discussing the debate topic. Your task is to reach a consensus and formulate the final debate proposal. In this context, debater is responsible for brainstorming affirmative proposals for the topic and modifying them based on the feedback from the opposition. The opposition's role is to refute the points raised by the debaters. The summarizer is responsible for summarizing all proposals and organizing them into arguments that can aid in winning the debate.",
-            "name": "Affirmative_debate_state",
+            "begin_role": "Affirmative_Debate_organizer",
+            "begin_query": "The debate topic is as follows: \n<debate topic>\nWhich came first, the chicken or the egg? Affirmative viewpoint: the egg came first, negative viewpoint: the chicken came first.\n<debate topic>\n, now , begin to discuss!",
+            "environment_prompt": "It is currently the debate stage, where the positive side is assigning tasks.The debate organizer sets the stage for the competition, explaining the debate process and rules. Debaters are called upon to allocate tasks for each speech, ensuring an equal distribution of responsibilities.Affirmative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.",
+            "name": "Affirmative_Task_Allocation_state",
             "roles": [
-                "debater",
-                "opposition",
-                "summarizer"
+                "Affirmative_Debate_organizer",
+                "Affirmative_First",
+                "Affirmative_Second",
+                "Affirmative_Third"
             ],
             "LLM_type": "OpenAI",
             "LLM": {
                 "temperature": 1.0,
                 "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/Affirmative_debate_state"
+                "log_path": "logs/Affirmative_Task_Allocation_state"
             },
             "agent_states": {
-                "debater": {
+                "Affirmative_First": {
                     "LLM_type": "OpenAI",
                     "LLM": {
                         "temperature": 1.0,
                         "model": "gpt-3.5-turbo-16k-0613",
-                        "log_path": "logs/Affirmative_debater"
+                        "log_path": "logs/Jintian_Zhang"
                     },
                     "style": {
-                        "role": "debater",
+                        "role": "Opening Advocate for the Affirmative",
                         "style": "professional"
                     },
                     "task": {
-                        "task": "You are representing the Affirmative side.Based on the debate topic provided by the summarizer, come up with proposals that can assist you in your argument and modify your proposals based on the opposition's refutations."
+                        "task": "1.Present arguments and main points.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
                     },
                     "rule": {
-                        "rule": "1.Be proactive in presenting new arguments to substantiate your viewpoint. 2. Actively counter the unfavorable points presented by the opposition."
+                        "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others."
                     },
                     "last": {
-                        "last_prompt": "Remember, your identity is Affirmative_debater. Only respond as Affirmative_debater, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Affirmative_debater:{your response}."
+                        "last_prompt": "Remember, your identity is Jintian Zhang. Only respond as Jintian Zhang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jintian Zhang:{your response}."
                     }
                 },
-                "opposition": {
+                "Affirmative_Second": {
                     "LLM_type": "OpenAI",
                     "LLM": {
                         "temperature": 1.0,
                         "model": "gpt-3.5-turbo-16k-0613",
-                        "log_path": "logs/Affirmative_opposition"
+                        "log_path": "logs/Jing_Chen"
                     },
                     "style": {
-                        "role": "opposition",
+                        "role": "Compelling Evidence Presenter",
                         "style": "professional"
                     },
                     "task": {
-                        "task": "You are representing the negetive side.Based on the debate topic provided by the summarizer, come up with arguments that can counter Affirmative_debater's points and actively refute their viewpoints."
+                        "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
                     },
                     "rule": {
-                        "rule": "1.Actively counter the viewpoints of Affirmative_debater. 2. Actively consider which arguments can help you corner the opponent.3.Don't get stuck in a corner. When you find that there's not much to counter, acknowledge the other side's viewpoint."
+                        "rule": "1.Elaborate on the points raised by the First Affirmative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others.\n"
                     },
                     "last": {
-                        "last_prompt": "Remember, your identity is Affirmative_opposition. Only respond as Affirmative_opposition, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Affirmative_opposition:{your response}."
-                    }  
+                        "last_prompt": "Remember, your identity is Jing Chen. Only respond as Jing Chen, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jing Chen:{your response}."
+                    }
                 },
-                "summarizer": {
+                "Affirmative_Third": {
                     "LLM_type": "OpenAI",
                     "LLM": {
                         "temperature": 1.0,
                         "model": "gpt-3.5-turbo-16k-0613",
-                        "log_path": "logs/Affirmative_summarizer"
+                        "log_path": "logs/Jialong_Wu"
                     },
                     "style": {
-                        "role": "summarizer",
+                        "role": "Counterpoint Master",
                         "style": "professional"
                     },
                     "task": {
-                        "task": "Based on the debate topic provided by the summarizer and the debate records between Affirmative_debater and Affirmative_opposition, summarize the points that are advantageous to the affirmative side."
+                        "task": "1.Counter negative arguments, summarize affirmative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
                     },
                     "rule": {
-                        "rule": "1.Gather the Affirmative points from Affirmative_debater. 2. Collect the arguments with which Affirmative_debater refutes Affirmative_opposition.3.You will represent the affirmative side in the upcoming debate. Please actively summarize the points that can assist you in your argument."
+                        "rule": "1.Counter negative arguments by identifying logical flaws or weaknesses. Highlight the advantages of the affirmative stance, emphasize points already presented, and deliver a concise yet strong summary of the affirmative position.\n2.Exchange ideas on how to structure counterarguments effectively. Emphasize the importance of maintaining a respectful tone while refuting negative arguments.\n3.Actively discuss and express opinions with others.\n"
                     },
                     "last": {
-                        "last_prompt": "Remember, your identity is Affirmative_summarizer. Only respond as Affirmative_summarizer, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Affirmative_summarizer:{your response}."
+                        "last_prompt": "Remember, your identity is Jialong Wu. Only respond as Jialong Wu, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jialong Wu:{your response}."
+                    }
+                },
+                "Affirmative_Debate_organizer": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Long_Li"
+                    },
+                    "style": {
+                        "role": "Debate Organizer",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "1.Manage debate proceedings, maintain order.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
+                    },
+                    "rule": {
+                        "rule": "1.Introduce the topic and rules before the debate starts, ensure each speaker adheres to their allotted time. Guide the questioning and answer phase, prevent excessive arguing. Summarize the debate outcome, providing a clear conclusion for judges and the audience.\n2.Brainstorm ways to facilitate smooth transitions between speakers and manage the flow of the debate. Discuss techniques for managing heated exchanges and encouraging respectful discourse.\n3.Actively discuss and express opinions with others.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Long Li. Only respond as Long Li, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Long Li:{your response}."
                     }
                 }
             }
         },
-        "negetive_debate_state":{
-            "name":"negetive_debate_state",
-            "controller":{},
-            "roles": [
-                "debater",
-                "opposition",
-                "summarizer"
-            ],
-            "agent_states":{
-                "debater":{},
-                "opposition":{},
-                "summarizer":{}
-            }
-        },
-        "debate_state":{
-            "name":"debate_state",
-            "controller":{
+        "Negative_Task_Allocation_state": {
+            "controller": {
                 "controller_type": "order",
-                "judge_system_prompt": "If the judge has already determined a winner, output <end>1</end>. If the judge has not reached a conclusion yet, output <end>0</end>.",
-                "judge_last_prompt": "If the judge has already determined a winner, output <end>1</end>. If the judge has not reached a conclusion yet, output <end>0</end>.",
+                "max_chat_nums" : 12,
+                "judge_system_prompt": "",
+                "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
+            "begin_role": "Negative_Debate_organizer",
+            "begin_query":"The debate topic is as follows: \n<debate topic>\nWhich came first, the chicken or the egg? Affirmative viewpoint: the egg came first, negative viewpoint: the chicken came first.\n<debate topic>\n, now , begin to discuss!",
+            "environment_prompt": "It is currently the debate stage, where the Negative side is assigning tasks.The debate organizer sets the stage for the competition, explaining the debate process and rules. Debaters are called upon to allocate tasks for each speech, ensuring an equal distribution of responsibilities.Negative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.",
+            "name": "Negative_Task_Allocation_state",
             "roles": [
-                "Affirmative_debater",
-                "negetive_debater",
-                "Affirmative_debater",
-                "negetive_debater",
-                "Affirmative_debater",
-                "negetive_debater",
-                "judge"
+                "Negative_Debate_organizer",
+                "Negative_First",
+                "Negative_Second",
+                "Negative_Third"
             ],
-            "begin_role": "judge",
-            "begin_query": "Begin to debate by provided <debate topic>!",
-            "agent_states":{
-                "Affirmative_debater":{
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Negative_Task_Allocation_state"
+            },
+            "agent_states": {
+                "Negative_First": {
                     "LLM_type": "OpenAI",
                     "LLM": {
                         "temperature": 1.0,
                         "model": "gpt-3.5-turbo-16k-0613",
-                        "log_path": "logs/Affirmative_summarizer"
+                        "log_path": "logs/Shuai_Wang"
                     },
                     "style": {
-                        "role": "Affirmative_debater",
+                        "role": "Opening Advocate for the Negative",
                         "style": "professional"
                     },
                     "task": {
-                        "task": "Based on the topic provided by the judge and the points you have summarized, actively help the Affirmative side achieve victory in the debate."
+                        "task": "1.Present arguments and main points.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
                     },
                     "rule": {
-                        "rule": "1.Be proactive in presenting new arguments to substantiate your viewpoint. 2. Actively counter the unfavorable points presented by the opposition."
+                        "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others."
                     },
                     "last": {
-                        "last_prompt": "Remember, your identity is Affirmative_summarizer. Only respond as Affirmative_summarizer, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Affirmative_summarizer:{your response}."
+                        "last_prompt": "Remember, your identity is Shuai Wang. Only respond as Shuai Wang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Shuai Wang:{your response}."
                     }
                 },
-                "negetive_debater":{
+                "Negative_Second": {
                     "LLM_type": "OpenAI",
                     "LLM": {
                         "temperature": 1.0,
                         "model": "gpt-3.5-turbo-16k-0613",
-                        "log_path": "logs/negetive_summarizer"
+                        "log_path": "logs/Tiannan_Wang"
                     },
                     "style": {
-                        "role": "negetive_debater",
+                        "role": "Compelling Evidence Presenter",
                         "style": "professional"
                     },
                     "task": {
-                        "task": "Based on the topic provided by the judge and the points you have summarized, actively help the negetive side achieve victory in the debate."
+                        "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
                     },
                     "rule": {
-                        "rule": "1.Be proactive in presenting new arguments to substantiate your viewpoint. 2. Actively counter the unfavorable points presented by the opposition."
+                        "rule": "1.Elaborate on the points raised by the First Negative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others.\n"
                     },
                     "last": {
-                        "last_prompt": "Remember, your identity is negetive_summarizer. Only respond as negetive_summarizer, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is negetive_summarizer:{your response}."
+                        "last_prompt": "Remember, your identity is Tiannan Wang. Only respond as Tiannan Wang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Tiannan Wang:{your response}."
                     }
                 },
-                "judge":{
+                "Negative_Third": {
                     "LLM_type": "OpenAI",
                     "LLM": {
                         "temperature": 1.0,
                         "model": "gpt-3.5-turbo-16k-0613",
-                        "log_path": "logs/Affirmative_summarizer"
+                        "log_path": "logs/Jiyu_Chen"
                     },
                     "style": {
-                        "role": "judge",
+                        "role": "Counterpoint Master",
                         "style": "professional"
                     },
                     "task": {
-                        "task": "Based on the topic provided by the judge and the viewpoints of both the affirmative and negative sides, determine which side wins."
+                        "task": "1.Counter negative arguments, summarize Negative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
                     },
                     "rule": {
-                        "rule": "1.Please let them engage in a thorough debate before making your decision.2.Please reach a conclusion after a certain discussion between the affirmative and negative sides."
+                        "rule": "1.Counter negative arguments by identifying logical flaws or weaknesses. Highlight the advantages of the Negative stance, emphasize points already presented, and deliver a concise yet strong summary of the Negative position.\n2.Exchange ideas on how to structure counterarguments effectively. Emphasize the importance of maintaining a respectful tone while refuting negative arguments.\n3.Actively discuss and express opinions with others.\n"
                     },
                     "last": {
-                        "last_prompt": "If you have already decided which side wins, state your judgment(Please reach a conclusion after a certain discussion between the affirmative and negative sides). If the affirmative side wins, output: <output>\njudge: I judge in favor of the affirmative side.<output>\n If the negative side wins, output: <output>\nI judge in favor of the negative side. <output>\nIf further viewpoints are needed, output:<output>\nContinue the debate.<output>\n,Remember, your identity is judge. Only respond as judge, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is judge:{your response}."
+                        "last_prompt": "Remember, your identity is Jiyu Chen. Only respond as Jiyu Chen, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jiyu Chen:{your response}."
+                    }
+                },
+                "Negative_Debate_organizer": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Shi_Qiu"
+                    },
+                    "style": {
+                        "role": "Debate Organizer",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "1.Manage debate proceedings, maintain order.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n"
+                    },
+                    "rule": {
+                        "rule": "1.Introduce the topic and rules before the debate starts, ensure each speaker adheres to their allotted time. Guide the questioning and answer phase, prevent excessive arguing. Summarize the debate outcome, providing a clear conclusion for judges and the audience.\n2.Brainstorm ways to facilitate smooth transitions between speakers and manage the flow of the debate. Discuss techniques for managing heated exchanges and encouraging respectful discourse.\n3.Actively discuss and express opinions with others.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Shi Qiu. Only respond as Shi Qiu, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Shi Qiu:{your response}."
                     }
                 }
             }
+        },
+        "Debate_Order_state": {
+            "controller": {
+                "controller_type": "order",
+                "max_chat_nums" : 7,
+                "judge_system_prompt": "",
+                "judge_last_prompt": "",
+                "judge_extract_words": "end"
+            },
+            "name": "Debate_Order_state",
+            "roles": [
+                "Debate_Judge",
+                "Affirmative_First",
+                "Negative_First",
+                "Affirmative_Second",
+                "Negative_Second",
+                "Affirmative_Third",
+                "Negative_Third"
+            ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Debate_state"
+            },
+            "begin_role": "Debate_Judge",
+            "begin_query":"Now please proceed with your sequential debate according to your chosen topic.",
+            "agent_states": {
+                "Affirmative_First": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jintian_Zhang"
+                    },
+                    "style": {
+                        "role": "Opening Advocate for the Affirmative",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Deliver the first speech for the affirmative side, elaborating on the main arguments and providing additional evidence.\n"
+                    },
+                    "rule": {
+                        "rule": "Expand on the affirmative points from the previous speech, address any challenges raised by the negative side, and present solid evidence to support your claims."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jintian Zhang. Only respond as Jintian Zhang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jintian Zhang:{your response}."
+                    }
+                },
+                "Negative_First": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Shuai_Wang"
+                    },
+                    "style": {
+                        "role": "Opening Advocate for the Negative",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Deliver the first speech for the negative side, countering the affirmative arguments and presenting your own points with supporting evidence.\n"
+                    },
+                    "rule": {
+                        "rule": "Effectively counter the affirmative arguments made in the first speech, present well-reasoned arguments for the negative side, and provide strong evidence to back your stance."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Shuai Wang. Only respond as Shuai Wang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Shuai Wang:{your response}."
+                    }
+                },
+                "Affirmative_Second": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jing_Chen"
+                    },
+                    "style": {
+                        "role": "Compelling Evidence Presenter",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Deliver the second speech for the affirmative side, further strengthening the affirmative arguments and addressing any challenges posed by the negative side.\n"
+                    },
+                    "rule": {
+                        "rule": "Build upon the affirmative case, respond to the negative's counterarguments, and reinforce your points with compelling evidence.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jing Chen. Only respond as Jing Chen, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jing Chen:{your response}."
+                    }
+                },
+                "Negative_Second": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Tiannan_Wang"
+                    },
+                    "style": {
+                        "role": "Compelling Evidence Presenter",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Deliver the second speech for the negative side, further countering the affirmative arguments and providing additional evidence to support your stance.\n"
+                    },
+                    "rule": {
+                        "rule": "Continue to challenge the affirmative side's points, present new arguments or counterarguments, and substantiate your position with strong evidence.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Tiannan Wang. Only respond as Tiannan Wang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Tiannan Wang:{your response}."
+                    }
+                },
+                "Affirmative_Third": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jialong_Wu"
+                    },
+                    "style": {
+                        "role": "Counterpoint Master",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Deliver the third speech for the affirmative side, summarizing the key points and providing a persuasive conclusion.\n"
+                    },
+                    "rule": {
+                        "rule": "Summarize the affirmative case, reinforce the main arguments, respond to the negative side's challenges, and make a strong closing statement.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jialong Wu. Only respond as Jialong Wu, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jialong Wu:{your response}."
+                    }
+                },
+                "Negative_Third": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jiyu_Chen"
+                    },
+                    "style": {
+                        "role": "Counterpoint Master",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Deliver the third speech for the negative side, summarizing the key points and providing a persuasive conclusion.\n"
+                    },
+                    "rule": {
+                        "rule": "Summarize the negative case, highlight the main counterarguments, respond to the affirmative side's points, and deliver a compelling closing statement.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jiyu Chen. Only respond as Jiyu Chen, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jiyu Chen:{your response}."
+                    }
+                },
+                "Debate_Judge": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Zhou_wang_chun_shu"
+                    },
+                    "style": {
+                        "role": "Debate Judge",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Evaluate the quality of the debate presentations and arguments made by both sides.\n"
+                    },
+                    "rule": {
+                        "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Zhou wang chun shu. Only respond as Zhou wang chun shu, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Zhou wang chun shu:{your response}."
+                    }
+                }
+            }
+        },
+        "Debate_Random_state": {
+            "controller": {
+                "controller_type": "rule",
+                "max_chat_nums" : 12,
+                "judge_system_prompt": "",
+                "judge_last_prompt": "",
+                "judge_extract_words": "end",
+                "call_system_prompt": "Observe the ongoing discussion and decide who should speak next based on the current context.Please carefully analyze the flow of the discussion, identify which side needs to respond or present new points, and ensure fairness in allocating speaking opportunities.",
+                "call_last_prompt": "Please strictly adhere to the following format for outputting:",
+                "call_extract_words": "end"
+            },
+            "name": "Debate_Random_state",
+            "roles": [
+                "Debate_Judge",
+                "Affirmative_First",
+                "Negative_First",
+                "Affirmative_Second",
+                "Negative_Second",
+                "Affirmative_Third",
+                "Negative_Third"
+            ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Debate_Random_state"
+            },
+            "begin_role": "Debate_Judge",
+            "begin_query":"Now, please engage in a free debate based on your chosen topic.",
+            "agent_states": {
+                "Affirmative_First": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jintian_Zhang"
+                    },
+                    "style": {
+                        "role": "Opening Advocate for the Affirmative",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
+                    },
+                    "rule": {
+                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jintian Zhang. Only respond as Jintian Zhang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jintian Zhang:{your response}."
+                    }
+                },
+                "Negative_First": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Shuai_Wang"
+                    },
+                    "style": {
+                        "role": "Opening Advocate for the Negative",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
+                    },
+                    "rule": {
+                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Shuai Wang. Only respond as Shuai Wang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Shuai Wang:{your response}."
+                    }
+                },
+                "Affirmative_Second": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jing_Chen"
+                    },
+                    "style": {
+                        "role": "Compelling Evidence Presenter",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
+                    },
+                    "rule": {
+                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jing Chen. Only respond as Jing Chen, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jing Chen:{your response}."
+                    }
+                },
+                "Negative_Second": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Tiannan_Wang"
+                    },
+                    "style": {
+                        "role": "Compelling Evidence Presenter",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
+                    },
+                    "rule": {
+                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Tiannan Wang. Only respond as Tiannan Wang, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Tiannan Wang:{your response}."
+                    }
+                },
+                "Affirmative_Third": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jialong_Wu"
+                    },
+                    "style": {
+                        "role": "Counterpoint Master",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
+                    },
+                    "rule": {
+                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jialong Wu. Only respond as Jialong Wu, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jialong Wu:{your response}."
+                    }
+                },
+                "Negative_Third": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Jiyu_Chen"
+                    },
+                    "style": {
+                        "role": "Counterpoint Master",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
+                    },
+                    "rule": {
+                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate."
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Jiyu Chen. Only respond as Jiyu Chen, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Jiyu Chen:{your response}."
+                    }
+                },
+                "Debate_Judge": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Zhou_wang_chun_shu"
+                    },
+                    "style": {
+                        "role": "Debate Judge",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Evaluate the quality of the debate presentations and arguments made by both sides.\n"
+                    },
+                    "rule": {
+                        "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.\n"
+                    },
+                    "last": {
+                        "last_prompt": "Remember, your identity is Zhou wang chun shu. Only respond as Zhou wang chun shu, and avoid repeating information already in the conversation history. Provide responses in a regular manner. Please make sure to output in the following format:\nOutput format is Zhou wang chun shu:{your response}."
+                    }
+                }
+            }
+        },
+        "Judge_state":{
+            "name":"Judge_state",
+            "roles": [
+                "Debate_Judge"
+            ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Judge_state"
+            },
+            "agent_states":{
+                "Debate_Judge": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 1.0,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Zhou_wang_chun_shu"
+                    },
+                    "style": {
+                        "role": "Debate Judge",
+                        "style": "professional"
+                    },
+                    "task": {
+                        "task": "Determine the current debate's winner.\n"
+                    },
+                    "rule": {
+                        "rule": " After evaluating the speeches, arguments, evidence, and overall persuasiveness, provide a clear and decisive judgment. If the affirmative side wins, your response should be <winner>Affirmative<winner>. If the negative side wins, your response should be <winner>Negative<winner>. Your decision is required. Respond in a concise and certain manner, leaving no room for ambiguity."
+                    },
+                    "last": {
+                        "last_prompt": "Determine the current debate's winner, whether it's the affirmative side or the negative side. Please strictly adhere to the following format for output: If the affirmative side wins, output <winner>Affirmative<winner>. Otherwise, output <winner>Negative<winner>.You must make a choice!"
+                    }
+                }
+            }
+
         }
     }
 }

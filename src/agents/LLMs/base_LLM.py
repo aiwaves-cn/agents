@@ -53,13 +53,12 @@ class OpenAILLM(LLM):
         """
         return LLM's response 
         """
+        active_mode = True if ("ACTIVE_MODE" in os.environ and os.environ["ACTIVE_MODE"] == "0") else False
         openai.api_key = self.API_KEY
         openai.proxy = self.PROXY
         model = self.model
         temperature = self.temperature
         
-        
-        active_mode = kwargs["active_mode"] if "active_mode" in kwargs else False
         summary = kwargs["summary"] if "summary" in kwargs else None
         
         if active_mode:
