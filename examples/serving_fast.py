@@ -19,7 +19,6 @@ example code for serving an autonomous agents with Flask/FastAPI backend
 """
 
 import argparse
-from flask import Flask,request,Response,jsonify
 from fastapi import APIRouter, Request, Body
 # from gevent import pywsgi
 from multiprocessing import Process
@@ -36,11 +35,12 @@ from fastapi import FastAPI,Request
 from fastapi.responses import  JSONResponse,StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+import yaml
 sys.path.append("../src/agents")
 from SOP import SOP
 from Agents import Agent
 from Environments import Environment
-
+from Memorys import Memory
 
 # -*- coding: utf-8 -*-
 
@@ -53,67 +53,12 @@ botCode=$5
 logPath=$6
 docPath=$7
 """
-parser = argparse.ArgumentParser(description='A demo of chatbot')
-parser.add_argument('--customize',type=int,default=1)
-# customize
-parser.add_argument('--ansDiversity',type=str)
-parser.add_argument('--ansSimplify',type=str)
-parser.add_argument('--activeMode',type=str)
-parser.add_argument('--agent_setting',type=str)
-parser.add_argument('--agent_style',type=str)
-parser.add_argument('--docPath',type=str)
-# general
-parser.add_argument('--botCode',type=str)
-parser.add_argument('--logPath',type=str)
-parser.add_argument('--agent', type=str, help='path to SOP json')
-parser.add_argument('--port', type=int, help='server port')
-parser.add_argument('--router', type=str, default='/api/v1/ask/')
-args = parser.parse_args()
-#print(args.ansDiversity,args.ansSimplify,args.activeMode,args.agent_setting,args.agent_style,args.docPath,args.botCode,args.logPath,args.port,sep='\n')
-ping_port=7889
 
+ping_port=7889
 addr="192.168.110.201"
 
 ping_flag=True
 
-if args.customize == 1:
-   assert args.agent_setting != None
-   assert args.agent_style != None
-   assert args.ansDiversity != None
-   assert args.ansSimplify != None
-   assert args.activeMode != None
-   assert args.port != None
-   assert args.router != None
-   output = process_document(args.docPath)
-   knowledge_base = output["knowledge_base"]
-   type = output["type"]
-   data = {}
-   sop = {}
-   data["system_prompt"] =  args.agent_setting + "你的语言风格是：" + args.agent_style
-   data["last_prompt"] = None
-   data["done"] = True
-   data["tool_name"] = "KnowledgeResponseNode"
-   data["name"] = "node1"
-   data["root"] = True
-   data["type"] = type
-   data["knowledge_base"] = knowledge_base
-   sop["tool_nodes"] = {"node1":data}
-   sop["relation"] =  {"node1": {"0": "node1"}}
-   sop["temperature"] = int(args.ansDiversity)*0.1
-   sop["log_path"] = args.logPath
-   sop["active_mode"] = True if args.activeMode == "True" else False
-   sop["answer_simplify"] = True if int(args.ansSimplify) <= 5 else False
-   os.makedirs("temp_agent", exist_ok=True)
-   save_path = os.path.join("temp_agent/",get_code()+".json")
-   with open(save_path,"w",encoding="utf-8") as f:
-       json.dump(sop,f,ensure_ascii=False,indent=2)
-   agent_file = save_path
-else:
-   assert args.agent != None
-   assert args.router != None
-   agent_file = args.agent
-
-agent = Agent(agent_file)
 app = FastAPI()
 # 跨域设置，因为测试需要前端访问，所以允许所有域访问
 app.add_middleware(
@@ -137,16 +82,12 @@ async def ping():
    return{
         "message":"pong"
    }
-def extract_answer(text):
-    return text
+
 
 async def generate_events(response):
     msg=""
-    for data in response:
-        if data:
-            #last_length = len(extract_answer(data))
-            #all += data.choices[0]['delta'].get('content') if data.choices[0]['delta'].get('content') else ''
-            chat_answer = extract_answer(data)
+    for chat_answer in response:
+        if chat_answer:
             msg+=chat_answer
             if chat_answer:
                 new_dict = {
@@ -159,14 +100,47 @@ async def generate_events(response):
                 yield json_dict
         else:
             continue
+        
+def init(config):
+    agents,roles_to_names,names_to_roles = Agent.from_config(config)
+    sop = SOP.from_config(config)
+    environment = Environment.from_config(config)
+    environment.agents = agents
+    environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
+    sop.roles_to_names,sop.names_to_roles = roles_to_names,names_to_roles
+    return agents,sop,environment
+
+parser = argparse.ArgumentParser(description='A demo of chatbot')
+parser.add_argument('--agent', type=str, help='path to SOP json')
+parser.add_argument('--config', type=str, help='path to config')
+args = parser.parse_args()
+with open(args.config, "r") as file:
+    config = yaml.safe_load(file)
+
+
+for key, value in config.items():
+    os.environ[key] = value
+
+agents,sop,environment = init(args.agent)
+
+
 @app.post('/api/v1/ask')
 async def reply(request:Request):
    #print(request.json.ge)
 
     data=await request.json()
     userName = data.get('userName')
+    userRole = data.get('userRole')
     query = data.get('query')
-    response = agent.reply(userName,query)
+    memory = Memory(userRole, userName, query)
+    environment.update_memory(memory)
+    
+    current_state,current_agent= sop.next(environment,agents)
+    action = current_agent.step(current_state,environment)
+    environment.update(action,current_state)
+    
+    
+    response = action["response"]
 
     async def event_stream():
         async for event in generate_events(response):
@@ -175,18 +149,6 @@ async def reply(request:Request):
                 await asyncio.sleep(0.02)
     return StreamingResponse(event_stream(),media_type="text/event-stream")
 
-async def ping_task():
-    ping_url = f"http://0.0.0.0:{ping_port}/trigger/v1/bot/callback/health?botCode={args.botCode}"
-    async with aiohttp.ClientSession() as session:
-        async with session.post(url=ping_url) as resp:
-            pass
-    return
-
-@app.on_event("startup")
-async def send_ping():
-    if ping_flag:
-        await asyncio.create_task(ping_task())
-    return
 
 if __name__ == '__main__':
     uvicorn.run('serving:app', host=addr, port=args.port, reload=False)

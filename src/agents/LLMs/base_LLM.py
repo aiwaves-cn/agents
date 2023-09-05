@@ -23,6 +23,7 @@ class OpenAILLM(LLM):
         self.PROXY = os.environ["PROXY"]
         self.MAX_CHAT_HISTORY = eval(
             os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
+        
         self.model = kwargs["model"] if "model" in kwargs else "gpt-3.5-turbo-16k-0613"
         self.temperature = kwargs["temperature"] if "temperature" in  kwargs else 0.3
         self.log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"

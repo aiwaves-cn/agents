@@ -43,7 +43,7 @@ class Environment:
                     if "LLM" in state_dict:
                         self.LLM = OpenAILLM(**state_dict["LLM"])
                     else:
-                        self.LLM = OpenAILLM()
+                        self.LLM = OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path="logs/environment")
         self.roles_to_names = None
         self.names_to_roles = None
 
