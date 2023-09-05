@@ -14,6 +14,7 @@ class Environment:
         self.environment_prompt = {}
         self.environment_type = config["environment_type"] if "environment_type" in config else "cooperate"
         self.current_chat_history_idx = 0
+        self.LLMs = {}
         
         # 初始化每个state 的summary 方法
         # Initialize the summary method for each state
@@ -41,9 +42,9 @@ class Environment:
                 )
                 if LLM_type == "OpenAI":
                     if "LLM" in state_dict:
-                        self.LLM = OpenAILLM(**state_dict["LLM"])
+                        self.LLMs[state_name] = OpenAILLM(**state_dict["LLM"])
                     else:
-                        self.LLM = OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path="logs/environment")
+                        self.LLMs[state_name] = OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=f"logs/{state_name}")
         self.roles_to_names = None
         self.names_to_roles = None
 
@@ -85,7 +86,7 @@ class Environment:
             + current_memory
             + self.summary_system_prompt[current_state_name]
         )
-        response = self.LLM.get_response(None, system_prompt, stream=False)
+        response = self.LLMs[current_state_name].get_response(None, system_prompt, stream=False)
         return response
 
     def excute_action(self, action):
