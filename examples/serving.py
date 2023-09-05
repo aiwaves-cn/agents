@@ -39,3 +39,7 @@ for key, value in config.items():
 
 agents,sop,environment = init(args.agent)
 run(agents,sop,environment)
+
+
+for key, value in config.items():
+    del os.environ[key]
