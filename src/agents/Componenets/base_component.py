@@ -35,6 +35,19 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
+import base64
+import os.path
+import re
+from datetime import datetime, timedelta
+from typing import Tuple, List, Any, Dict
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+from tqdm import tqdm
 
 
 class Component:
@@ -424,6 +437,7 @@ class WebCrawlComponent(ToolComponent):
             driver.quit()
         return {"content": content.strip()}
         
+
 class MailComponent(ToolComponent):
     __VALID_ACTION__ = ["read", "send"]
     def __init__(self, cfg_file:str, default_action:str="read", name: str = "e-mail"):
@@ -579,12 +593,12 @@ class MailComponent(ToolComponent):
                         'sender': sender,
                         'time': datetime.fromtimestamp(int(msg['internalDate']) / 1000).strftime('%Y-%m-%d %H:%M:%S'),
                         'subject': subject, 
-                        'body': body, 
+                        'body': body,  
                     }
                     email_data.append(email_info)
                 pbar.close()
             email_data = sort_by_time(email_data)[0:number]
-            return email_data
+            return {"results": email_data}
         except Exception as e:
             print(e)
             return None
@@ -594,7 +608,6 @@ class MailComponent(ToolComponent):
         subject = mail_dict["subject"]
         body = mail_dict["body"]
         credential = self.credential
-        
         service = build('gmail', 'v1', credentials=credential)
 
         message = MIMEMultipart()
@@ -602,15 +615,19 @@ class MailComponent(ToolComponent):
         message['subject'] = subject
 
         message.attach(MIMEText(body, 'plain'))
+
         raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode('utf-8')
         try:
             message = service.users().messages().send(userId='me', body={'raw': raw_message}).execute()
-            return True
+            return {"state": True}
         except HttpError as error:
             print(error)
-            return False
+            return {"state": False}
 
     def func(self, mail_dict: dict):
+        if "action" in mail_dict:
+            assert mail_dict["action"].lower() in self.__VALID_ACTION__
+            self.action = mail_dict["action"]
         functions = {
             "read": self._read,
             "send": self._send
@@ -621,6 +638,67 @@ class MailComponent(ToolComponent):
         assert action_name.lower() in self.__VALID_ACTION__,\
             f"Action `{action_name}` is not allowed! The valid action is in `{self.__VALID_ACTION__}`"
         self.action = action_name.lower()
+
+class WeatherComponet(ToolComponent):
+    def __init__(self, api_key, name="weather", TIME_FORMAT="%Y-%m-%d"):
+        super(WeatherComponet, self).__init__(name)
+        self.name = name
+        self.TIME_FORMAT = TIME_FORMAT
+        self.api_key = api_key
+
+    def _parse(self, data):
+        dict_data: dict = {}
+        for item in data["data"]:
+            date = item["datetime"]
+            dict_data[date] = {}
+            if 'weather' in item:
+                dict_data[date]['description'] = item["weather"]["description"]
+            mapping = {
+                "temp": "temperature",
+                "max_temp": "max_temperature",
+                "min_temp": "min_temperature",
+                "precip": "accumulated_precipitation"
+            }
+            for key in ["temp", "max_temp", "min_temp", "precip"]:
+                if key in item:
+                    dict_data[date][mapping[key]] = item[key]
+        return dict_data
+
+    def _query(self, city_name, country_code, start_date, end_date):
+        """https://www.weatherbit.io/api/historical-weather-daily"""
+        # print(datetime.strftime(start_date, self.TIME_FORMAT), datetime.strftime(datetime.now(), self.TIME_FORMAT), end_date, datetime.strftime(datetime.now()+timedelta(days=1), self.TIME_FORMAT))
+        if start_date == datetime.strftime(datetime.now(), self.TIME_FORMAT) and \
+            end_date == datetime.strftime(datetime.now()+timedelta(days=1), self.TIME_FORMAT):
+            """today"""
+            url = f"https://api.weatherbit.io/v2.0/current?city={city_name}&country={country_code}&key={self.api_key}"
+        else:
+            url = f"https://api.weatherbit.io/v2.0/history/daily?&city={city_name}&country={country_code}&start_date={start_date}&end_date={end_date}&key={self.api_key}"
+        response = requests.get(url)
+        data = response.json()
+        return self._parse(data)
+
+    def func(self, weather_dict: Dict) -> Dict:
+        TIME_FORMAT = self.TIME_FORMAT
+        # Beijing, Shanghai
+        city_name = weather_dict["city_name"]
+        # CN, US
+        country_code = weather_dict["country_code"]
+        # 2020-02-02
+        start_date = datetime.strftime(
+            datetime.strptime(weather_dict["start_date"], self.TIME_FORMAT), self.TIME_FORMAT)
+        end_date = weather_dict["end_date"] if "end_date" in weather_dict else None
+        if end_date is None:
+            end_date = datetime.strftime(
+                datetime.strptime(start_date, TIME_FORMAT) + timedelta(days=-1),
+                TIME_FORMAT
+            )
+        else:
+            end_date = datetime.strftime(
+                datetime.strptime(weather_dict["end_date"], self.TIME_FORMAT), self.TIME_FORMAT)
+        if datetime.strptime(start_date, TIME_FORMAT) > datetime.strptime(end_date, TIME_FORMAT):
+            start_date, end_date = end_date, start_date
+        assert start_date != end_date
+        return self._query(city_name, country_code, start_date, end_date)
 
 
 class APIComponent(ToolComponent):
