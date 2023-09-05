@@ -83,6 +83,8 @@ class SOP:
         """
         current_state = self.current_state
         controller_dict = self.controller_dict[current_state.name]
+        judge_system_prompt = controller_dict["judge_system_prompt"]
+        
         max_chat_nums = controller_dict["max_chat_nums"] if "max_chat_nums" in controller_dict else 1000
         if current_state.chat_nums>=max_chat_nums:
             return "1"
@@ -94,7 +96,7 @@ class SOP:
             "<environment>"
             + current_state.environment_prompt
             + "</environment>\n"
-            + controller_dict["judge_system_prompt"]
+            + judge_system_prompt
         )
 
         
@@ -108,7 +110,7 @@ class SOP:
                 "content": f"The previous summary of chat history is as follows :<summary>\n{summary}\n<summary>.The new chat history is as follows:\n<new chat> {Memory.get_chat_history(chat_history)}\n<new chat>\n<information>.\nYou especially need to pay attention to the last query<query>\n{chat_history[-1].content}\n<query>\n",
             }
         ]
-        extract_words = controller_dict["judge_extract_words"]
+        extract_words = controller_dict["judge_extract_words"] if "judge_extract_words" in controller_dict else "end"
 
         response = self.LLM.get_response(
             chat_messages, system_prompt, last_prompt, stream=False, **kwargs
@@ -137,6 +139,9 @@ class SOP:
         if controller_type == "rule":
             controller_dict = self.controller_dict[current_state.name]
             
+            call_system_prompt = controller_dict["call_system_prompt"]  if "call_system_prompt" in controller_dict else ""
+            call_last_prompt = controller_dict["call_last_prompt"] if "call_last_prompt" in controller_dict else ""
+            
             allocate_prompt = ""
             roles = list(set(current_state.roles))
             for role in roles:
@@ -146,13 +151,13 @@ class SOP:
                 "<environment>"
                 + current_state.environment_prompt
                 + "</environment>\n"
-                + controller_dict["call_system_prompt"] + allocate_prompt
+                + call_system_prompt + allocate_prompt
             )
 
             # last_prompt: note + last_prompt + query
             last_prompt = (
                 f"You especially need to pay attention to the last query<query>\n{chat_history[-1].content}\n<query>\n"
-                + controller_dict["call_last_prompt"]
+                + call_last_prompt
                 + allocate_prompt
                 + f"Note: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{chat_history[-1].send_name}</end> cannot be output\n."
             )
@@ -166,7 +171,7 @@ class SOP:
                 }
             ]
 
-            extract_words = controller_dict["call_extract_words"]
+            extract_words = controller_dict["call_extract_words"] if "call_extract_words" in controller_dict else "end"
 
             response = self.LLM.get_response(
                 chat_messages, system_prompt, last_prompt, stream=False, **kwargs
