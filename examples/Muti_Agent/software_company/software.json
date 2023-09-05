@@ -22,22 +22,37 @@
     },
     "agents": {
         "Alice": {
+            "style": "august",
+            "roles":{
             "design_state": "Boss"
+            }
         },
         "Bob": {
+            "style": "professional",
+            "roles":{
             "design_state": "Architect"
+            }
         },
         "Candy": {
+            "style": "professional",
+            "roles":{
             "develop_state": "Developer",
             "debug_state": "Developer"
+            }
         },
         "David": {
+            "style": "professional",
+            "roles":{
             "debug_state": "Debugger"
+            }
         },
         "Michael": {
+            "style": "professional",
+            "roles":{
             "design_state": "Leader",
             "develop_state": "Leader",
             "debug_state": "Leader"
+            }
         }
     },
     "states": {
@@ -59,8 +74,7 @@
             "controller": {
                 "controller_type": "rule",
                 "judge_system_prompt": "if you think that the leader is satisfied enough with the python system proposed by the architect, output <end>1</end>, else output <end>0</end>.",
-                "judge_last_prompt": "if you think that the leader is satisfied enough with the python system proposed by the architect, output <end>1</end>, else output <end>0</end>.",
-                "judge_extract_words": "end"
+                "judge_last_prompt": "if you think that the leader is satisfied enough with the python system proposed by the architect, output <end>1</end>, else output <end>0</end>."
             },
             "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the architect puts forward a python framework based on this requirement, and then the LEADER determines whether this framework is appropriate, and gives the architect comments until the architect modifies the architecture to his satisfaction.",
             "name": "design_state",
