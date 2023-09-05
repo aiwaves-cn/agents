@@ -32,9 +32,9 @@ import string
 import random
 import os
 
-
+embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else 'intfloat/multilingual-e5-large'
 embedding_model = SentenceTransformer(
-            "BAAI/bge-large-zh", device=torch.device("cpu")
+            embed_model_name, device=torch.device("cpu")
         )
 
 def get_embedding(sentence):

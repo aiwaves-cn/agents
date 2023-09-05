@@ -81,7 +81,7 @@ class Agent:
                             **current_state["agent_states"][agent_role]["LLM"]
                         )
                     else:
-                        agent_LLMs[state_name] = OpenAILLM()
+                        agent_LLMs[state_name] = OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=f"logs/{agent_name}")
             agents[agent_name] = cls(
                 agent_name,
                 agent_state_roles,

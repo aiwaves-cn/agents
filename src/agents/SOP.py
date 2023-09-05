@@ -39,7 +39,7 @@ class SOP:
             self.LLM = (
                 OpenAILLM(**kwargs["LLM"])
                 if "LLM" in kwargs
-                else OpenAILLM(log_path="logs/上帝")
+                else OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path="logs/god")
             )
 
         self.states = {}
