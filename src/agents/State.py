@@ -14,14 +14,15 @@ class State:
         
         self.environment_prompt = kwargs["environment_prompt"] if "environment_prompt" in kwargs else ""
         
-        self.begin_role = kwargs["begin_role"] if "begin_role" in kwargs else None
+        self.roles = kwargs["roles"] if "roles" in kwargs else [0]
+        self.begin_role = kwargs["begin_role"] if "begin_role" in kwargs else self.roles[0]
         self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else None
-        self.is_begin = True if self.begin_role else False
+        
+        self.is_begin = True
         
         
         self.summary_prompt = kwargs["summary_prompt"] if "summary_prompt" in kwargs else None
         self.current_role = self.begin_role
-        self.roles = kwargs["roles"] if "roles" in kwargs else []
         self.components = self.init_components(kwargs["agent_states"]) if "agent_states" in kwargs else {}
         self.index = self.roles.index(self.begin_role) if self.begin_role in self.roles else 0
         self.chat_nums = 0
