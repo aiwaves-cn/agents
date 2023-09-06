@@ -126,13 +126,13 @@ class Environment:
             self.shared_memory["chat_embeddings"] = torch.cat(
                 [self.shared_memory["chat_embeddings"], current_embedding], dim=0
             )
-
-        if len(self.shared_memory["long_term_memory"]) % MAX_CHAT_HISTORY:
+        if len(self.shared_memory["long_term_memory"]) % MAX_CHAT_HISTORY == 0:
             summary = self.summary(current_state)
             self.shared_memory["short_term_memory"] = summary
 
         self.agents[memory.send_name].update_memory(memory)
-    
+
+        
     def update(self,action,current_state):
         memory = self.excute_action(action)
         self.update_memory(memory,current_state)
