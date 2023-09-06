@@ -3,9 +3,16 @@ import os
 import argparse
 import sys
 sys.path.append("../../../src/agents")
+sys.path.append("../../cfg")
 from SOP import SOP
 from Agents import Agent
 from Environments import Environment
+from gradio_base import Client
+from gradio_example import DebateUI
+
+# Client.server.send(str([state, name, chunk, node_name])+"<SELFDEFINESEP>")
+# Client.cache["start_agent_name"]
+# state = 10, 11, 12, 30
 
 def init(config):
     
@@ -25,13 +32,27 @@ def init(config):
     sop.states["Negative_Task_Allocation_state"].begin_query = topic
     return agents,sop,environment
 
-def run(agents,sop,environment):
+
+
+def run(agents,sop,environment,is_gradio = False):
     while True:
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
             print("finished!")
             break
-        action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        action = current_agent.step(current_state,environment,is_gradio)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        response = action["response"]
+        for i,res in enumerate(response):
+            state = 10
+            if action["is_begin"]:
+                state = 12
+            elif i>0:
+                state = 11
+            elif action["is_user"]:
+                state = 30
+            
+            Client.server.send(str([state, action["name"], res, current_state.name])+"<SELFDEFINESEP>")
+        
         environment.update(action,current_state)
 
 parser = argparse.ArgumentParser(description='A demo of chatbot')
