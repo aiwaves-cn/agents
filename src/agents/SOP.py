@@ -196,51 +196,6 @@ class SOP:
         current_state.current_role = next_role
 
         return next_role
-
-    def first_chat(self,environment,agents):
-        # 该状态设为非第一次进入,并将聊天记录更新至新状态
-        # This state is set to not be the first entry, and the chat history is updated to the new state
-        self.current_state.is_begin = False
-        print("==============================================================================")
-        print(f"Now begin to:{self.current_state.name}")
-        print("==============================================================================")
-        environment.current_chat_history_idx = (
-            len(environment.shared_memory["long_term_memory"]) - 1
-        )
-        
-        current_state = self.current_state
-
-        # 如果该状态下有开场白，则进行以下操作
-        # If there is an opening statement in this state, do the following
-        if current_state.begin_role:
-            current_state.current_role = current_state.begin_role
-            current_agent_name = self.roles_to_names[current_state.name][
-                current_state.begin_role
-            ]
-
-            # 找出当前的agent
-            # Find out the current agent
-            current_agent = agents[current_agent_name]
-            
-            # 如果是用户的话,则用户负责输入开场白
-            # If it is a user, the user is responsible for entering the begin query
-            if current_agent.is_user:
-                current_state.begin_query = input(f"{current_agent_name}:")
-                
-            # Otherwise, enter a preset begin query
-            else:
-                print(
-                    f"{current_agent_name}({current_state.begin_role}):{current_state.begin_query}"
-                )
-
-            # 将开场白更新至记忆
-            # Update begin query to memory
-            memory = Memory(
-                current_state.begin_role,
-                current_agent_name,
-                current_state.begin_query,
-            )
-            environment.update_memory(memory, current_state)
     
     def next(self, environment, agents):
         """
@@ -251,7 +206,10 @@ class SOP:
         # If it is the first time to enter this state
         
         if self.current_state.is_begin:
-           self.first_chat(environment,agents)
+            agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
+            agent = agents[agent_name]
+            self.current_state.is_begin = False
+            return self.current_state,agent
 
         current_state = self.current_state
 
@@ -293,8 +251,12 @@ class SOP:
             return None, None
 
         self.current_state = current_state.next_states[next_state]
+        
         if self.current_state.is_begin:
-           self.first_chat(environment,agents)
+            agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
+            agent = agents[agent_name]
+            self.current_state.is_begin = False
+            return self.current_state,agent
            
         current_state = self.current_state
         

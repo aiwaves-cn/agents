@@ -38,8 +38,7 @@ class Agent:
         self.LLMs = kwargs["LLMs"]
         self.is_user = kwargs["is_user"]
         
-        self.is_begin = kwargs["is_begin"] if "is_begin" in kwargs else False
-        self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else None
+        self.begins = kwargs["begins"] if "begins" in kwargs else False
         
         self.long_term_memory = []
         self.short_term_memory = ""
@@ -64,7 +63,11 @@ class Agent:
         for agent_name, agent_dict in config["agents"].items():
             agent_state_roles = {}
             agent_LLMs = {}
+            agent_begins = {}
             for state_name, agent_role in agent_dict["roles"].items():
+                
+                agent_begins[state_name] = {}
+                
                 if state_name not in roles_to_names:
                     roles_to_names[state_name] = {}
                 if state_name not in names_to_roles:
@@ -73,6 +76,10 @@ class Agent:
                 names_to_roles[state_name][agent_name] = agent_role
                 agent_state_roles[state_name] = agent_role
                 current_state = config["states"][state_name]
+                
+                agent_begins[state_name]["is_begin"] = current_state["begin_role"]==agent_role if "begin_role" in current_state else False
+                agent_begins[state_name]["begin_query"] = current_state["begin_query"] if "begin_query" in current_state else " "
+                
                 LLM_type = (
                     current_state["agent_states"][agent_role]["LLM_type"]
                     if "LLM_type" in current_state["agent_states"][agent_role]
@@ -90,29 +97,42 @@ class Agent:
                 agent_state_roles,
                 LLMs=agent_LLMs,
                 is_user=agent_name in user_names,
-                style = agent_dict["style"]
+                style = agent_dict["style"],
+                begins = agent_begins
             )
         return agents, roles_to_names, names_to_roles
 
-    def step(self, current_state, environment):
+    def step(self, current_state, environment,is_gradio = False):
         """
         return actions by current state and environment
         """
         current_state.chat_nums +=1
         self.current_state = current_state
-        
+        if self.begins[current_state.name]["is_begin"]:
+            self.begins[current_state.name]["is_begin"] = False
+            return {
+            "response": (char for char in self.begins[current_state.name]["begin_query"]),
+            "res_dict": {},
+            "role": self.state_roles[current_state.name],
+            "name": self.name,
+            "is_begin" :True,
+            "is_user" : self.is_user
+            }
         
         # 先根据当前环境更新信息
         # First update the information according to the current environment
         self.observe(environment)
         if self.is_user:
-            response = input(f"{self.name}:")
-            response = f"{self.name}:{response}"
+            response = " "
+            if not is_gradio:
+                response = input(f"{self.name}:")
+                response = f"{self.name}:{response}"
             return {
                 "response": response,
                 "is_user": True,
                 "role": self.state_roles[current_state.name],
                 "name": self.name,
+                "is_user" : self.is_user
             }
         else:
             current_history = self.observe(environment)
@@ -123,15 +143,6 @@ class Agent:
         """
         return actions by the current state
         """
-        if self.is_begin:
-            self.is_begin = None
-            return {
-            "response": (char for char in self.begin_query),
-            "res_dict": res_dict,
-            "role": self.state_roles[current_state.name],
-            "name": self.name,
-            "is_begin" :True
-            }
         current_state = self.current_state
         system_prompt, last_prompt, res_dict = self.compile()
         chat_history = self.agent_dict["long_term_memory"]
