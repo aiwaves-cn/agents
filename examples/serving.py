@@ -14,6 +14,8 @@ def init(config):
     environment.agents = agents
     environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
     sop.roles_to_names,sop.names_to_roles = roles_to_names,names_to_roles
+    for name,agent in agents.items():
+        agent.agent_dict["environment"] = environment
     return agents,sop,environment
 
 def run(agents,sop,environment):
