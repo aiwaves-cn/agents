@@ -271,7 +271,11 @@ class ExtractComponent(ToolComponent):
         super().__init__()
         self.extract_words = extract_words
         self.system_prompt = system_prompt
-        self.last_prompt = last_prompt if last_prompt else f"Please strictly adhere to the following format for outputting: <{self.extract_words}>{{the content you need to extract}}</{self.extract_words}>"
+        self.last_prompt = (
+            last_prompt
+            if last_prompt
+            else f"Please strictly adhere to the following format for outputting: <{self.extract_words}>{{the content you need to extract}}</{self.extract_words}>"
+        )
 
     def func(self, agent_dict):
         response = agent_dict["LLM"].get_response(
@@ -366,16 +370,15 @@ class WebSearchComponent(ToolComponent):
             if len(agent_dict["long_term_memory"]) > 0
             else " "
         )
-        query = extract(query,"query")
+        query = extract(query, "query")
         response = agent_dict["LLM"].get_response(
             None,
-            system_prompt = f"Please analyze the provided conversation and identify keywords that can be used for a search engine query. Format the output as <keywords>extracted keywords</keywords>:\nConversation:\n{query}",
+            system_prompt=f"Please analyze the provided conversation and identify keywords that can be used for a search engine query. Format the output as <keywords>extracted keywords</keywords>:\nConversation:\n{query}",
             stream=False,
         )
-        response = extract(response,"keywords")
+        response = extract(response, "keywords")
         query = response if response else query
-        
-        
+
         search_results = self.search[self.engine_name](query=query, **kwargs)
         information = ""
         for i in search_results["meta data"][:2]:
@@ -425,51 +428,64 @@ class WebCrawlComponent(ToolComponent):
             """quit"""
             driver.quit()
         return {"content": content.strip()}
-        
+
 
 class MailComponent(ToolComponent):
     __VALID_ACTION__ = ["read", "send"]
-    def __init__(self, cfg_file:str, default_action:str="read", name: str = "e-mail"):
+
+    def __init__(
+        self, cfg_file: str, default_action: str = "read", name: str = "e-mail"
+    ):
         """'../conifg/google_mail.json'"""
         super(MailComponent, self).__init__(name)
         self.name = name
-        assert default_action.lower() in self.__VALID_ACTION__,\
-            f"Action `{default_action}` is not allowed! The valid action is in `{self.__VALID_ACTION__}`"
+        assert (
+            default_action.lower() in self.__VALID_ACTION__
+        ), f"Action `{default_action}` is not allowed! The valid action is in `{self.__VALID_ACTION__}`"
         self.action = default_action.lower()
         self.credential = self._login(cfg_file)
 
-    def _login(self, cfg_file:str):
+    def _login(self, cfg_file: str):
         SCOPES = [
-            'https://www.googleapis.com/auth/gmail.readonly',
-            'https://www.googleapis.com/auth/gmail.send'
+            "https://www.googleapis.com/auth/gmail.readonly",
+            "https://www.googleapis.com/auth/gmail.send",
         ]
         creds = None
-        if os.path.exists('token.json'):
+        if os.path.exists("token.json"):
             print("Login Successfully!")
-            creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+            creds = Credentials.from_authorized_user_file("token.json", SCOPES)
         if not creds or not creds.valid:
             print("Please authorize in an open browser.")
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
             else:
-                flow = InstalledAppFlow.from_client_secrets_file(
-                    cfg_file, SCOPES)
+                flow = InstalledAppFlow.from_client_secrets_file(cfg_file, SCOPES)
                 creds = flow.run_local_server(port=0)
             # Save the credentials for the next run
-            with open('token.json', 'w') as token:
+            with open("token.json", "w") as token:
                 token.write(creds.to_json())
         return creds
 
-    def _read(self, mail_dict:dict):
+    def _read(self, mail_dict: dict):
         credential = self.credential
         state = mail_dict["state"] if "state" in mail_dict else None
-        time_between = mail_dict["time_between"] if "time_between" in mail_dict else None
+        time_between = (
+            mail_dict["time_between"] if "time_between" in mail_dict else None
+        )
         sender_mail = mail_dict["sender_mail"] if "sender_mail" in mail_dict else None
         only_both = mail_dict["only_both"] if "only_both" in mail_dict else False
-        order_by_time = mail_dict["order_by_time"] if "order_by_time" in mail_dict else "descend"
-        include_word = mail_dict["include_word"] if "include_word" in mail_dict else None
-        exclude_word = mail_dict["exclude_word"] if "exclude_word" in mail_dict else None
-        MAX_SEARCH_CNT= mail_dict["MAX_SEARCH_CNT"] if "MAX_SEARCH_CNT" in mail_dict else 50
+        order_by_time = (
+            mail_dict["order_by_time"] if "order_by_time" in mail_dict else "descend"
+        )
+        include_word = (
+            mail_dict["include_word"] if "include_word" in mail_dict else None
+        )
+        exclude_word = (
+            mail_dict["exclude_word"] if "exclude_word" in mail_dict else None
+        )
+        MAX_SEARCH_CNT = (
+            mail_dict["MAX_SEARCH_CNT"] if "MAX_SEARCH_CNT" in mail_dict else 50
+        )
         number = mail_dict["number"] if "number" in mail_dict else 10
         if state is None:
             state = "all"
@@ -527,18 +543,20 @@ class MailComponent(ToolComponent):
             else:
                 reverse = False
             sorted_data = sorted(
-                data, key=lambda x: datetime.strptime(x['time'], '%Y-%m-%d %H:%M:%S'), reverse=reverse)
+                data,
+                key=lambda x: datetime.strptime(x["time"], "%Y-%m-%d %H:%M:%S"),
+                reverse=reverse,
+            )
             return sorted_data
 
         try:
-            service = build(
-                'gmail', 'v1', credentials=credential
+            service = build("gmail", "v1", credentials=credential)
+            results = (
+                service.users()
+                .messages()
+                .list(userId="me", labelIds=["INBOX"], q=generate_query())
+                .execute()
             )
-            results = service.users().messages().list(
-                userId='me',
-                labelIds=['INBOX'],
-                q=generate_query()
-            ).execute()
 
             messages = results.get("messages", [])
             email_data = list()
@@ -552,37 +570,46 @@ class MailComponent(ToolComponent):
                     pbar.update(1)
                     if cnt >= MAX_SEARCH_CNT:
                         break
-                    msg = service.users().messages().get(
-                        userId='me',
-                        id=message['id'],
-                        format='full',
-                        metadataHeaders=None
-                    ).execute()
+                    msg = (
+                        service.users()
+                        .messages()
+                        .get(
+                            userId="me",
+                            id=message["id"],
+                            format="full",
+                            metadataHeaders=None,
+                        )
+                        .execute()
+                    )
 
-                    subject = ''
-                    for header in msg['payload']['headers']:
-                        if header['name'] == 'Subject':
-                            subject = header['value']
+                    subject = ""
+                    for header in msg["payload"]["headers"]:
+                        if header["name"] == "Subject":
+                            subject = header["value"]
                             break
 
-                    sender = ''
-                    for header in msg['payload']['headers']:
-                        if header['name'] == 'From':
-                            sender = re.findall(r'\b[\w\.-]+@[\w\.-]+\.\w+\b', header['value'])[0]
+                    sender = ""
+                    for header in msg["payload"]["headers"]:
+                        if header["name"] == "From":
+                            sender = re.findall(
+                                r"\b[\w\.-]+@[\w\.-]+\.\w+\b", header["value"]
+                            )[0]
                             break
-                    body = ''
-                    if 'parts' in msg['payload']:
-                        for part in msg['payload']['parts']:
-                            if part['mimeType'] == 'text/plain':
-                                data = part['body']['data']
-                                body = base64.urlsafe_b64decode(data).decode('utf-8')
+                    body = ""
+                    if "parts" in msg["payload"]:
+                        for part in msg["payload"]["parts"]:
+                            if part["mimeType"] == "text/plain":
+                                data = part["body"]["data"]
+                                body = base64.urlsafe_b64decode(data).decode("utf-8")
                                 break
 
                     email_info = {
-                        'sender': sender,
-                        'time': datetime.fromtimestamp(int(msg['internalDate']) / 1000).strftime('%Y-%m-%d %H:%M:%S'),
-                        'subject': subject, 
-                        'body': body,  
+                        "sender": sender,
+                        "time": datetime.fromtimestamp(
+                            int(msg["internalDate"]) / 1000
+                        ).strftime("%Y-%m-%d %H:%M:%S"),
+                        "subject": subject,
+                        "body": body,
                     }
                     email_data.append(email_info)
                 pbar.close()
@@ -592,22 +619,27 @@ class MailComponent(ToolComponent):
             print(e)
             return None
 
-    def _send(self, mail_dict:dict):
+    def _send(self, mail_dict: dict):
         recipient_mail = mail_dict["recipient_mail"]
         subject = mail_dict["subject"]
         body = mail_dict["body"]
         credential = self.credential
-        service = build('gmail', 'v1', credentials=credential)
+        service = build("gmail", "v1", credentials=credential)
 
         message = MIMEMultipart()
-        message['to'] = recipient_mail
-        message['subject'] = subject
+        message["to"] = recipient_mail
+        message["subject"] = subject
 
-        message.attach(MIMEText(body, 'plain'))
+        message.attach(MIMEText(body, "plain"))
 
-        raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode('utf-8')
+        raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode("utf-8")
         try:
-            message = service.users().messages().send(userId='me', body={'raw': raw_message}).execute()
+            message = (
+                service.users()
+                .messages()
+                .send(userId="me", body={"raw": raw_message})
+                .execute()
+            )
             return {"state": True}
         except HttpError as error:
             print(error)
@@ -617,16 +649,15 @@ class MailComponent(ToolComponent):
         if "action" in mail_dict:
             assert mail_dict["action"].lower() in self.__VALID_ACTION__
             self.action = mail_dict["action"]
-        functions = {
-            "read": self._read,
-            "send": self._send
-        }
+        functions = {"read": self._read, "send": self._send}
         return functions[self.action](mail_dict)
 
-    def convert_action_to(self, action_name:str):
-        assert action_name.lower() in self.__VALID_ACTION__,\
-            f"Action `{action_name}` is not allowed! The valid action is in `{self.__VALID_ACTION__}`"
+    def convert_action_to(self, action_name: str):
+        assert (
+            action_name.lower() in self.__VALID_ACTION__
+        ), f"Action `{action_name}` is not allowed! The valid action is in `{self.__VALID_ACTION__}`"
         self.action = action_name.lower()
+
 
 class WeatherComponet(ToolComponent):
     def __init__(self, api_key, name="weather", TIME_FORMAT="%Y-%m-%d"):
@@ -640,13 +671,13 @@ class WeatherComponet(ToolComponent):
         for item in data["data"]:
             date = item["datetime"]
             dict_data[date] = {}
-            if 'weather' in item:
-                dict_data[date]['description'] = item["weather"]["description"]
+            if "weather" in item:
+                dict_data[date]["description"] = item["weather"]["description"]
             mapping = {
                 "temp": "temperature",
                 "max_temp": "max_temperature",
                 "min_temp": "min_temperature",
-                "precip": "accumulated_precipitation"
+                "precip": "accumulated_precipitation",
             }
             for key in ["temp", "max_temp", "min_temp", "precip"]:
                 if key in item:
@@ -656,8 +687,11 @@ class WeatherComponet(ToolComponent):
     def _query(self, city_name, country_code, start_date, end_date):
         """https://www.weatherbit.io/api/historical-weather-daily"""
         # print(datetime.strftime(start_date, self.TIME_FORMAT), datetime.strftime(datetime.now(), self.TIME_FORMAT), end_date, datetime.strftime(datetime.now()+timedelta(days=1), self.TIME_FORMAT))
-        if start_date == datetime.strftime(datetime.now(), self.TIME_FORMAT) and \
-            end_date == datetime.strftime(datetime.now()+timedelta(days=1), self.TIME_FORMAT):
+        if start_date == datetime.strftime(
+            datetime.now(), self.TIME_FORMAT
+        ) and end_date == datetime.strftime(
+            datetime.now() + timedelta(days=1), self.TIME_FORMAT
+        ):
             """today"""
             url = f"https://api.weatherbit.io/v2.0/current?city={city_name}&country={country_code}&key={self.api_key}"
         else:
@@ -674,38 +708,164 @@ class WeatherComponet(ToolComponent):
         country_code = weather_dict["country_code"]
         # 2020-02-02
         start_date = datetime.strftime(
-            datetime.strptime(weather_dict["start_date"], self.TIME_FORMAT), self.TIME_FORMAT)
+            datetime.strptime(weather_dict["start_date"], self.TIME_FORMAT),
+            self.TIME_FORMAT,
+        )
         end_date = weather_dict["end_date"] if "end_date" in weather_dict else None
         if end_date is None:
             end_date = datetime.strftime(
                 datetime.strptime(start_date, TIME_FORMAT) + timedelta(days=-1),
-                TIME_FORMAT
+                TIME_FORMAT,
             )
         else:
             end_date = datetime.strftime(
-                datetime.strptime(weather_dict["end_date"], self.TIME_FORMAT), self.TIME_FORMAT)
-        if datetime.strptime(start_date, TIME_FORMAT) > datetime.strptime(end_date, TIME_FORMAT):
+                datetime.strptime(weather_dict["end_date"], self.TIME_FORMAT),
+                self.TIME_FORMAT,
+            )
+        if datetime.strptime(start_date, TIME_FORMAT) > datetime.strptime(
+            end_date, TIME_FORMAT
+        ):
             start_date, end_date = end_date, start_date
         assert start_date != end_date
         return self._query(city_name, country_code, start_date, end_date)
 
+
 class TranslateComponent(ToolComponent):
     __SUPPORT_LANGUAGE__ = [
-        'af', 'am', 'ar', 'as', 'az', 'ba', 'bg', 'bn', 'bo', 'bs', 'ca',
-        'cs', 'cy', 'da', 'de', 'dsb', 'dv', 'el', 'en', 'es', 'et', 'eu',
-        'fa', 'fi', 'fil', 'fj', 'fo', 'fr', 'fr-CA', 'ga', 'gl', 'gom',
-        'gu', 'ha', 'he', 'hi', 'hr', 'hsb', 'ht', 'hu', 'hy', 'id', 'ig',
-        'ikt', 'is', 'it', 'iu', 'iu-Latn', 'ja', 'ka', 'kk', 'km', 'kmr',
-        'kn', 'ko', 'ku', 'ky', 'ln', 'lo', 'lt', 'lug', 'lv', 'lzh', 'mai',
-        'mg', 'mi', 'mk', 'ml', 'mn-Cyrl', 'mn-Mong', 'mr', 'ms', 'mt', 'mww',
-        'my', 'nb', 'ne', 'nl', 'nso', 'nya', 'or', 'otq', 'pa', 'pl', 'prs',
-        'ps', 'pt', 'pt-PT', 'ro', 'ru', 'run', 'rw', 'sd', 'si', 'sk', 'sl',
-        'sm', 'sn', 'so', 'sq', 'sr-Cyrl', 'sr-Latn', 'st', 'sv', 'sw', 'ta',
-        'te', 'th', 'ti', 'tk', 'tlh-Latn', 'tlh-Piqd', 'tn', 'to', 'tr', 'tt',
-        'ty', 'ug', 'uk', 'ur', 'uz', 'vi', 'xh', 'yo', 'yua', 'yue', 'zh-Hans',
-        'zh-Hant', 'zu'
+        "af",
+        "am",
+        "ar",
+        "as",
+        "az",
+        "ba",
+        "bg",
+        "bn",
+        "bo",
+        "bs",
+        "ca",
+        "cs",
+        "cy",
+        "da",
+        "de",
+        "dsb",
+        "dv",
+        "el",
+        "en",
+        "es",
+        "et",
+        "eu",
+        "fa",
+        "fi",
+        "fil",
+        "fj",
+        "fo",
+        "fr",
+        "fr-CA",
+        "ga",
+        "gl",
+        "gom",
+        "gu",
+        "ha",
+        "he",
+        "hi",
+        "hr",
+        "hsb",
+        "ht",
+        "hu",
+        "hy",
+        "id",
+        "ig",
+        "ikt",
+        "is",
+        "it",
+        "iu",
+        "iu-Latn",
+        "ja",
+        "ka",
+        "kk",
+        "km",
+        "kmr",
+        "kn",
+        "ko",
+        "ku",
+        "ky",
+        "ln",
+        "lo",
+        "lt",
+        "lug",
+        "lv",
+        "lzh",
+        "mai",
+        "mg",
+        "mi",
+        "mk",
+        "ml",
+        "mn-Cyrl",
+        "mn-Mong",
+        "mr",
+        "ms",
+        "mt",
+        "mww",
+        "my",
+        "nb",
+        "ne",
+        "nl",
+        "nso",
+        "nya",
+        "or",
+        "otq",
+        "pa",
+        "pl",
+        "prs",
+        "ps",
+        "pt",
+        "pt-PT",
+        "ro",
+        "ru",
+        "run",
+        "rw",
+        "sd",
+        "si",
+        "sk",
+        "sl",
+        "sm",
+        "sn",
+        "so",
+        "sq",
+        "sr-Cyrl",
+        "sr-Latn",
+        "st",
+        "sv",
+        "sw",
+        "ta",
+        "te",
+        "th",
+        "ti",
+        "tk",
+        "tlh-Latn",
+        "tlh-Piqd",
+        "tn",
+        "to",
+        "tr",
+        "tt",
+        "ty",
+        "ug",
+        "uk",
+        "ur",
+        "uz",
+        "vi",
+        "xh",
+        "yo",
+        "yua",
+        "yue",
+        "zh-Hans",
+        "zh-Hant",
+        "zu",
     ]
-    def __init__(self, api_key, location, default_target_language='zh-cn',name="translate"):
+
+    def __init__(
+        self, api_key, location, default_target_language="zh-cn", name="translate"
+    ):
         super(TranslateComponent, self).__init__(name)
         self.name = name
         self.api_key = api_key
@@ -717,33 +877,37 @@ class TranslateComponent(ToolComponent):
         target_language = self.default_target_language
         if "target_language" in translate_dict:
             target_language = translate_dict["target_language"]
-        assert target_language in self.__SUPPORT_LANGUAGE__, \
-            f"language `{target_language}` is not supported."
+        assert (
+            target_language in self.__SUPPORT_LANGUAGE__
+        ), f"language `{target_language}` is not supported."
 
         endpoint = "https://api.cognitive.microsofttranslator.com"
 
-        path = '/translate'
+        path = "/translate"
         constructed_url = endpoint + path
 
-        params = {
-            'api-version': '3.0',
-            'to': target_language
-        }
+        params = {"api-version": "3.0", "to": target_language}
 
         headers = {
-            'Ocp-Apim-Subscription-Key': self.api_key,
-            'Ocp-Apim-Subscription-Region': self.location,
-            'Content-type': 'application/json',
-            'X-ClientTraceId': str(uuid.uuid4()),
+            "Ocp-Apim-Subscription-Key": self.api_key,
+            "Ocp-Apim-Subscription-Region": self.location,
+            "Content-type": "application/json",
+            "X-ClientTraceId": str(uuid.uuid4()),
         }
 
-        body = [{
-            'text': content
-        }]
+        body = [{"text": content}]
 
-        request = requests.post(constructed_url, params=params, headers=headers, json=body)
+        request = requests.post(
+            constructed_url, params=params, headers=headers, json=body
+        )
         response = request.json()
-        response = json.dumps(response, sort_keys=True, ensure_ascii=False, indent=4, separators=(',', ': '))
+        response = json.dumps(
+            response,
+            sort_keys=True,
+            ensure_ascii=False,
+            indent=4,
+            separators=(",", ": "),
+        )
         response = eval(response)
         return {"result": response[0]["translations"][0]["text"]}
 
