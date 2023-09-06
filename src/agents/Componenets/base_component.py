@@ -18,6 +18,7 @@ Components (modularized prompts) of a Node in an LLM Autonomous agent
 """
 
 from abc import abstractmethod
+import uuid
 from text2vec import semantic_search
 from utils import (
     get_key_history,
@@ -207,7 +208,7 @@ class KnowledgeBaseComponent(ToolComponent):
             else ""
         )
         knowledge = ""
-        query = extract(query,"query")
+        query = extract(query, "query")
         print(query)
         query_embedding = get_embedding(query)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
