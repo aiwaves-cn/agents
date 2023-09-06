@@ -38,6 +38,9 @@ class Agent:
         self.LLMs = kwargs["LLMs"]
         self.is_user = kwargs["is_user"]
         
+        self.is_begin = kwargs["is_begin"] if "is_begin" in kwargs else False
+        self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else None
+        
         self.long_term_memory = []
         self.short_term_memory = ""
         self.current_state = None
@@ -57,7 +60,7 @@ class Agent:
         roles_to_names = {}
         names_to_roles = {}
         agents = {}
-        user_names = json.loads(os.environ["User_Roles"]) if "User_Roles" in os.environ else []
+        user_names = json.loads(os.environ["User_Names"]) if "User_Names" in os.environ else []
         for agent_name, agent_dict in config["agents"].items():
             agent_state_roles = {}
             agent_LLMs = {}
@@ -120,6 +123,15 @@ class Agent:
         """
         return actions by the current state
         """
+        if self.is_begin:
+            self.is_begin = None
+            return {
+            "response": (char for char in self.begin_query),
+            "res_dict": res_dict,
+            "role": self.state_roles[current_state.name],
+            "name": self.name,
+            "is_begin" :True
+            }
         current_state = self.current_state
         system_prompt, last_prompt, res_dict = self.compile()
         chat_history = self.agent_dict["long_term_memory"]
@@ -134,6 +146,7 @@ class Agent:
             "res_dict": res_dict,
             "role": self.state_roles[current_state.name],
             "name": self.name,
+            "is_begin" : False
         }
 
     def update_memory(self, memory):
