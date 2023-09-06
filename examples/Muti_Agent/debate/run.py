@@ -44,7 +44,7 @@ def run(agents,sop,environment,is_gradio = False):
         response = action["response"]
         for i,res in enumerate(response):
             state = 10
-            if action["is_begin"]:
+            if action["state_begin"]:
                 state = 12
             elif i>0:
                 state = 11
