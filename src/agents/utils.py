@@ -39,7 +39,7 @@ import os
 embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "BAAI/bge-large-zh"
 
 embedding_model = SentenceTransformer(
-            embed_model_name, device=torch.device("cpu")
+            "intfloat/multilingual-e5-large", device=torch.device("cpu")
         )
 
 def get_embedding(sentence):
@@ -245,6 +245,7 @@ def process_document(file_path):
             json.dump(final_dict, f, ensure_ascii=False, indent=2)
         return {"knowledge_base": save_path, "type": "UnstructuredFile"}
 
+process_document("/home/aiwaves/longli/agents/src/agents/database_eye.csv")
 def load_knowledge_base_qa(path):
     """
     Load json format knowledge base.

@@ -166,15 +166,6 @@ class CoTComponent(PromptComponent):
         return prompt
 
 
-class IputComponent(PromptComponent):
-    def __init__(self):
-        super().__init__()
-
-    def get_prompt(self, agent_dict):
-        information = agent_dict["information"]
-        return f"The information you need to know:\n<information>{information}</information>\n"
-
-
 class CustomizeComponent(PromptComponent):
     def __init__(self, template, keywords) -> None:
         super().__init__()
@@ -184,7 +175,7 @@ class CustomizeComponent(PromptComponent):
     def get_prompt(self, agent_dict):
         template_keyword = []
         for keyword in self.keywords:
-            current_keyword = agent_dict[keyword]
+            current_keyword = agent_dict["environment"].shared_memory[keyword]
             template_keyword.append(current_keyword)
 
         return self.template.format(*template_keyword)
@@ -293,7 +284,7 @@ class ExtractComponent(ToolComponent):
         for extract_word in self.extract_words:
             key = extract(response, extract_word)
             key = key if key else response
-            agent_dict[extract_word] = key
+            agent_dict["environment"].shared_memory[extract_word] = key
 
         return {}
 
