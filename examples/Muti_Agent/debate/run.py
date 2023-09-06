@@ -58,12 +58,12 @@ def run(agents,sop,environment,is_gradio = False):
 parser = argparse.ArgumentParser(description='A demo of chatbot')
 parser.add_argument('--config', type=str, help='path to config')
 args = parser.parse_args()
-with open("args.config", "r") as file:
+with open(args.config, "r") as file:
     config = yaml.safe_load(file)
 
 for key, value in config.items():
     os.environ[key] = value
     
 
-agents,sop,environment = init("/home/aiwaves/longli/agents/examples/Muti_Agent/debate/debate.json")
+agents,sop,environment = init("debate.json")
 run(agents,sop,environment)
