@@ -43,6 +43,7 @@ class Agent:
         self.long_term_memory = []
         self.short_term_memory = ""
         self.current_state = None
+        self.first_speak = True
         self.agent_dict = {
             "name": name,
             "style" : kwargs["style"],
@@ -77,7 +78,8 @@ class Agent:
                 agent_state_roles[state_name] = agent_role
                 current_state = config["states"][state_name]
                 
-                agent_begins[state_name]["is_begin"] = current_state["begin_role"]==agent_role if "begin_role" in current_state else False
+                current_state_begin_role = current_state["begin_role"] if "begin_role" in current_state else current_state["roles"][0]
+                agent_begins[state_name]["is_begin"] = current_state_begin_role==agent_role if "begin_role" in current_state else False
                 agent_begins[state_name]["begin_query"] = current_state["begin_query"] if "begin_query" in current_state else " "
                 
                 LLM_type = (
@@ -107,37 +109,42 @@ class Agent:
         return actions by current state and environment
         """
         current_state.chat_nums +=1
-        self.current_state = current_state
-        if self.begins[current_state.name]["is_begin"]:
-            self.begins[current_state.name]["is_begin"] = False
-            return {
-            "response": (char for char in self.begins[current_state.name]["begin_query"]),
-            "res_dict": {},
-            "role": self.state_roles[current_state.name],
-            "name": self.name,
-            "is_begin" :True,
-            "is_user" : self.is_user
-            }
+        state_begin = current_state.is_begin
+        agent_begin = self.begins[current_state.name]["is_begin"]
+        self.begins[current_state.name]["is_begin"] = False
+        current_state.is_begin = False
         
+        self.current_state = current_state
         # 先根据当前环境更新信息
         # First update the information according to the current environment
-        self.observe(environment)
+        
+        if len(environment.shared_memory["long_term_memory"])>0:
+            current_history = self.observe(environment)
+            self.agent_dict["long_term_memory"].append(current_history)
+        
+        response = " "
+        res_dict = {}
+        
         if self.is_user:
-            response = " "
             if not is_gradio:
                 response = input(f"{self.name}:")
                 response = f"{self.name}:{response}"
-            return {
-                "response": response,
-                "is_user": True,
-                "role": self.state_roles[current_state.name],
-                "name": self.name,
-                "is_user" : self.is_user
-            }
         else:
-            current_history = self.observe(environment)
-            self.agent_dict["long_term_memory"].append(current_history)
-            return self.act()
+            if agent_begin:
+                response = (char for char in self.begins[current_state.name]["begin_query"])
+            else:
+                response,res_dict = self.act()
+            
+        return  {
+            "response": response,
+            "res_dict": res_dict,
+            "role": self.state_roles[current_state.name],
+            "name": self.name,
+            "state_begin" : state_begin,
+            "agent_begin" : agent_begin,
+            "is_user" : self.is_user
+        }
+
 
     def act(self):
         """
@@ -152,13 +159,7 @@ class Agent:
         response = current_LLM.get_response(
             chat_history, system_prompt, last_prompt, stream=True
         )
-        return {
-            "response": response,
-            "res_dict": res_dict,
-            "role": self.state_roles[current_state.name],
-            "name": self.name,
-            "is_begin" : False
-        }
+        return response,res_dict 
 
     def update_memory(self, memory):
         self.agent_dict["long_term_memory"].append(

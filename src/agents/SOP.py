@@ -208,7 +208,7 @@ class SOP:
         if self.current_state.is_begin:
             agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
             agent = agents[agent_name]
-            self.current_state.is_begin = False
+            
             return self.current_state,agent
 
         current_state = self.current_state
@@ -255,7 +255,6 @@ class SOP:
         if self.current_state.is_begin:
             agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
             agent = agents[agent_name]
-            self.current_state.is_begin = False
             return self.current_state,agent
            
         current_state = self.current_state

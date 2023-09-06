@@ -33,8 +33,13 @@ import random
 import os
 
 
+# BAAI/bge-large-zh
+# intfloat/multilingual-e5-large
+
+embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "BAAI/bge-large-zh"
+
 embedding_model = SentenceTransformer(
-            "BAAI/bge-large-zh", device=torch.device("cpu")
+            embed_model_name, device=torch.device("cpu")
         )
 
 def get_embedding(sentence):
@@ -240,7 +245,6 @@ def process_document(file_path):
             json.dump(final_dict, f, ensure_ascii=False, indent=2)
         return {"knowledge_base": save_path, "type": "UnstructuredFile"}
 
-
 def load_knowledge_base_qa(path):
     """
     Load json format knowledge base.
@@ -258,6 +262,7 @@ def load_knowledge_base_qa(path):
         answers.append(data[str(idx)]["a"])
         chunks.append(data[str(idx)]["chunk"])
     embeddings = np.array(embeddings, dtype=np.float32)
+    embeddings = torch.from_numpy(embeddings).squeeze()
     return embeddings, questions, answers, chunks
 
 
@@ -273,6 +278,7 @@ def load_knowledge_base_UnstructuredFile(path):
         embeddings.append(data[str(idx)]["emb"])
         chunks.append(data[str(idx)]["chunk"])
     embeddings = np.array(embeddings, dtype=np.float32)
+    embeddings = torch.from_numpy(embeddings).squeeze()
     return embeddings, chunks
 
 
