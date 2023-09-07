@@ -15,7 +15,7 @@ SPECIAL_SIGN = {
     "END": "<ENDSEP>"
 }
 HOST = "127.0.0.1"
-PORT = 6277
+PORT = 6275
 
 def print_log(message:str):
     print(f"[{time.ctime()}]{message}")
@@ -177,7 +177,7 @@ class Client:
         assert bufsize > 0
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client_socket.connect((host, port))
-        time.sleep(1)
+        time.sleep(2)
         self.client_socket.send("hello agent".encode('utf-8'))
         print_log("client: 连接成功......")
 
@@ -252,54 +252,6 @@ class Client:
         data:list = Client.receive_server.send(None)
         assert len(data) == 1
         assert data[0] == "<START>"
-
-    def listening_for_start(self):
-        assert False
-        """得支持长内容"""
-        remaining = ""
-        while True:
-            # ==========确保长文本的输入==========
-            # ==============开始================
-            dataset = self.client_socket.recv(self.bufsize)
-            try:
-                # if isinstance(remaining, bytes):
-                #     raise UnicodeDecodeError
-                dataset = dataset.decode('utf-8')
-            except UnicodeDecodeError:
-                """遇到解码问题说明是长度太长了"""
-                if not isinstance(remaining, bytes):
-                    """如果当前的remaining不是bytes"""
-                    remaining = remaining.encode('utf-8')
-                assert isinstance(dataset, bytes)
-                remaining += dataset
-                try:
-                    response = remaining.decode('utf-8')
-                    remaining = ""
-                except:
-                    continue
-            assert isinstance(remaining, str)
-            # ==============结束================
-            dataset = remaining + dataset
-            if dataset == "<START>":
-                break
-            list_dataset = dataset.split(SPECIAL_SIGN["SPLIT"])
-            if len(list_dataset) == 1:
-                """说明没分割出来，还是没有结束"""
-                remaining = list_dataset[0]
-                """继续去取"""
-                continue
-            else:
-                """如果分了多个"""
-                remaining = list_dataset[-1]
-            """成功分割"""
-            list_dataset = list_dataset[:-1]
-            # print(list_dataset)
-            for data in list_dataset:
-                data = eval(data)
-                if isinstance(data, dict):
-                    Client.cache.update(data)
-                else:
-                    assert False
 
 class WebUI:
     def __init__(
