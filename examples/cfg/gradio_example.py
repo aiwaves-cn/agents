@@ -77,10 +77,12 @@ class DebateUI(WebUI):
         self.cache.update(data)
         """注册agent name"""
         gc.add_agent(self.cache["only_name"])
+        self.data_history = None
 
     """处理发送来的数据"""
     def handle_message(self, history:list,
             state, agent_name, token, node_name):
+        # print("MIKE-history:",history)
         if state % 10 == 0:
             """这个还是在当前气泡里面的"""
             self.data_history.append({agent_name: token})
@@ -93,6 +95,7 @@ class DebateUI(WebUI):
             self.data_history.append({agent_name: token})
         else:
             assert False
+        # print("MIKE-data_history", self.data_history)
         render_data = self.render_bubble(history, self.data_history, node_name)
         return render_data
 
@@ -119,7 +122,8 @@ class DebateUI(WebUI):
         outputs=[self.chatbot, self.text_user, self.btn_send]
         """
         # 这个是用于存放历史数据的，
-        self.data_history = list()
+        if self.data_history is None:
+            self.data_history = list()
         # 主要是开始渲染后端发来的消息
         # receive_server = self.receive_message()
         receive_server = self.server
@@ -134,12 +138,15 @@ class DebateUI(WebUI):
                 if state == 30:
                     """选择权交给用户，就是让用户进行交互"""
                     # 1. 设置interactive和visible
+                    print("server:显示1")
                     yield history,\
                         gr.Textbox.update(visible=True, interactive=True), \
                         gr.Button.update(visible=True, interactive=True)
+                    return
                     # 2. 监听动作（一般来说，这个item应该就是data_list就是最后一个）
                     #    所以可以直接break，来监听下一个，让程序阻塞在这里
-                    break
+                    # print("server:显示2")
+                    # break
                 else:
                     history = self.handle_message(history, state, agent_name, token, node_name)
                     yield history, \
@@ -152,16 +159,17 @@ class DebateUI(WebUI):
         inputs=[self.text_user, self.chatbot],
         outputs=[self.text_user, self.btn_send, self.chatbot]
         """
+        print(f"server1: {text_user}")
         history.append(
             [UIHelper.wrap_css(text_user, "User"), None]
         )
-        return gr.Textbox.update(value="", visible=False),\
-            gr.Button.update(visible=False), \
-            history
-
-    def send_button_after_click(self, text_user):
         """将文本的内容发送到后端"""
+        print(f"server: 准备发送输入{text_user}")
         self.send_message("<USER>"+text_user+self.SIGN["SPLIT"])
+        return gr.Textbox.update(value="", visible=False),\
+              gr.Button.update(visible=False), \
+                history
+
 
     def construct_ui(
         self,
@@ -240,20 +248,21 @@ class DebateUI(WebUI):
             )
             """接收后端的暂停信息，然后向后端发送"""
             self.btn_send.click(
-                # 这个是渲染到前端
+                # 渲染到前端+发送后端
                 fn=self.send_button_when_click,
                 inputs=[self.text_user, self.chatbot],
                 outputs=[self.text_user, self.btn_send, self.chatbot]
             ).then(
-                # 这个是发送到后端
-                fn=self.send_button_after_click,
-                inputs=[],
-                outputs=[]
+                # 监听后端更新
+                fn=self.start_button_after_click,
+                inputs=[self.chatbot],
+                outputs=[self.chatbot, self.text_user, self.btn_send]
             )
             # ==============================================
         self.demo = demo
 
 class SingleAgentUI(WebUI):
+    """和DebateUI基本相同，唯一的区别在于不需要设置信息"""
     def __init__(
         self,
         client_server_file: str,
@@ -275,40 +284,18 @@ class NovelUI(WebUI):
 
 def test_ui():
     with gr.Blocks(css=gc.CSS) as demo:
-        with gr.Row():
-            with gr.Column():
-                theme = gr.Textbox(
-                    label="辩论主题:",
-                    placeholder="请输入辩论主题"
-                )
-                positive = gr.Textbox(
-                    label="正方观点:",
-                    placeholder="请输入正方观点"
-                )
-                negative = gr.Textbox(
-                    label="反方观点:",
-                    placeholder="请输入反方观点"
-                )
-                choose = gr.Radio(
-                    [str(i) for i in range(10)],
-                    value="2",
-                    label="用户扮演的角色"
-                )
-                btn_start = gr.Button(
-                    value="开始"
-                )
-            with gr.Column():
-                chatbot = gr.Chatbot(
-                    elem_id="chatbot1",
-                    label="对话"
-                )
-                text_user = gr.Textbox(
-                    label="你的输入:",
-                    placeholder="请输入"
-                )
-                btn_send = gr.Button(
-                    value="发送"
-                )
+        with gr.Column():
+            chatbot = gr.Chatbot(
+                elem_id="chatbot1",
+                label="对话"
+            )
+            text_user = gr.Textbox(
+                label="你的输入:",
+                placeholder="请输入"
+            )
+            btn_send = gr.Button(
+                value="发送"
+            )
     demo.queue()
     demo.launch(share=True)
 
