@@ -174,12 +174,11 @@ class CustomizeComponent(PromptComponent):
         self.keywords = keywords
 
     def get_prompt(self, agent_dict):
-        template_keyword = []
+        template_keyword = {}
         for keyword in self.keywords:
             current_keyword = agent_dict["environment"].shared_memory[keyword]
-            template_keyword.append(current_keyword)
-
-        return self.template.format(*template_keyword)
+            template_keyword[keyword] = current_keyword
+        return self.template.format(**template_keyword)
 
 
 class KnowledgeBaseComponent(ToolComponent):
@@ -272,11 +271,14 @@ class ExtractComponent(ToolComponent):
         super().__init__()
         self.extract_words = extract_words
         self.system_prompt = system_prompt
-        self.last_prompt = (
-            last_prompt
-            if last_prompt
-            else f"Please strictly adhere to the following format for outputting: <{self.extract_words}>{{the content you need to extract}}</{self.extract_words}>"
+        self.default_prompt = (
+            "Please strictly adhere to the following format for outputting:\n"
         )
+        for extract_word in extract_words:
+            self.default_prompt += (
+                f"<{extract_word}> the content you need to extract </{extract_word}>"
+            )
+        self.last_prompt = last_prompt if last_prompt else self.default_prompt
 
     def func(self, agent_dict):
         response = agent_dict["LLM"].get_response(
