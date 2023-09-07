@@ -122,8 +122,8 @@ class DebateUI(WebUI):
         outputs=[self.chatbot, self.text_user, self.btn_send]
         """
         # 这个是用于存放历史数据的，
-        if self.data_history is None:
-            self.data_history = list()
+        # if self.data_history is None:
+        self.data_history = list()
         # 主要是开始渲染后端发来的消息
         # receive_server = self.receive_message()
         receive_server = self.server
