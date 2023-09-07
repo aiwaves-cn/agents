@@ -11,5 +11,5 @@ class Memory:
     def get_chat_history(self,messages):
         chat_history = ""
         for conversation in messages:
-            chat_history += f"{conversation.send_name}({conversation.send_role}):{conversation.content}\n"
+            chat_history += f"<{conversation.send_name}({conversation.send_role})>\n {conversation.content} \n</{conversation.send_name}({conversation.send_role})>\n"
         return chat_history
