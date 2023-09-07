@@ -29,6 +29,7 @@ from utils import (
 )
 import json
 from typing import Dict, List
+import os
 from googleapiclient.discovery import build
 import requests
 from selenium import webdriver
@@ -177,6 +178,7 @@ class CustomizeComponent(PromptComponent):
         for keyword in self.keywords:
             current_keyword = agent.environment.shared_memory[keyword]
             template_keyword[keyword] = current_keyword
+        print(template_keyword)
         return self.template.format(**template_keyword)
 
 
@@ -978,3 +980,34 @@ class FunctionComponent(ToolComponent):
                 outputdict["prompt"] = function_response
 
         return outputdict
+
+
+class CodeComponent(ToolComponent):
+    def __init__(self, file_name, keyword) -> None:
+        super().__init__()
+        self.file_name = file_name
+        self.keyword = keyword
+        self.system_prompt = (
+            "you need to extract the modified code as completely as possible."
+        )
+        self.last_prompt = (
+            f"Please strictly adhere to the following format for outputting: \n"
+        )
+        self.last_prompt += (
+            f"<{self.keyword}> the content you need to extract </{self.keyword}>"
+        )
+
+    def get_prompt(self, agent):
+        response = agent.LLM.get_response(
+            agent.long_term_memory,
+            self.system_prompt,
+            self.last_prompt,
+            stream=False,
+        )
+        code = extract(response, self.keyword)
+        code = code if code else response
+        file_name = "output_code" + self.file_name
+        os.makedirs(file_name, exist_ok=True)
+        with open(file_name, "w", encoding="utf-8") as f:
+            f.write(code)
+        return {}

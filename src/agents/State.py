@@ -120,6 +120,11 @@ class State:
                             component_args["name"]
                         )
 
+                    elif component == "CodeComponent":
+                        component_dict["CodeComponent"] = CodeComponent(
+                            component_args["file_name"], component_args["keyword"]
+                        )
+
                     # ====================================================
                     else:
                         continue
