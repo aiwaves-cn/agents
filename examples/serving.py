@@ -9,6 +9,8 @@ from Environments import Environment
 from Memorys import Memory
 
 def init(config):
+    if not os.path.exists("logs"):
+        os.mkdir("logs")
     agents,roles_to_names,names_to_roles = Agent.from_config(config)
     sop = SOP.from_config(config)
     environment = Environment.from_config(config)
