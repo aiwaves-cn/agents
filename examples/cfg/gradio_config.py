@@ -257,6 +257,13 @@ class GradioConfig:
                 "id": "AGENT"
             }
             cls.POINTER += 1
+        for usr_name in cls.OBJECT_INFO:
+            if cls.OBJECT_INFO[usr_name]["id"] == "SYSTEM":
+                cls.OBJECT_INFO[usr_name]["font_size"] = 12
+            elif cls.OBJECT_INFO[usr_name]["id"] in ["USER", "AGENT"]:
+                cls.OBJECT_INFO[usr_name]["font_size"] = 16
+            else:
+                assert False
 
 
 if __name__ == '__main__':
