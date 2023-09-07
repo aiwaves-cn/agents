@@ -38,23 +38,19 @@ class Agent:
     def __init__(self, name, agent_state_roles, **kwargs) -> None:
         self.state_roles = agent_state_roles
         self.name = name
+        
+        self.style = kwargs["style"]
         self.LLMs = kwargs["LLMs"]
+        self.LLM = None
         self.is_user = kwargs["is_user"]
-        
         self.begins = kwargs["begins"] if "begins" in kwargs else False
-        
+        self.current_role = ""
         self.long_term_memory = []
         self.short_term_memory = ""
+        self.relevant_history = ""
         self.current_state = None
         self.first_speak = True
-        self.agent_dict = {
-            "name": name,
-            "style" : kwargs["style"],
-            "current_roles": "",
-            "long_term_memory": self.long_term_memory,
-            "short_term_memory": self.short_term_memory,
-            
-        }
+    
 
     @classmethod
     def from_config(cls, config_path):
@@ -107,7 +103,7 @@ class Agent:
             )
         return agents, roles_to_names, names_to_roles
 
-    def step(self, current_state, environment,is_gradio = False):
+    def step(self, current_state, environment,input):
         """
         return actions by current state and environment
         """
@@ -123,15 +119,13 @@ class Agent:
         
         if len(environment.shared_memory["long_term_memory"])>0:
             current_history = self.observe(environment)
-            self.agent_dict["long_term_memory"].append(current_history)
+            self.long_term_memory.append(current_history)
         
         response = " "
         res_dict = {}
         
         if self.is_user:
-            if not is_gradio:
-                response = input(f"{self.name}:")
-                response = f"{self.name}:{response}"
+            response = f"{self.name}:{input}"
         else:
             if agent_begin:
                 response = (char for char in self.begins[current_state.name]["begin_query"])
@@ -156,7 +150,7 @@ class Agent:
         """
         current_state = self.current_state
         system_prompt, last_prompt, res_dict = self.compile()
-        chat_history = self.agent_dict["long_term_memory"]
+        chat_history = self.long_term_memory
 
         current_LLM = self.LLMs[current_state.name]
 
@@ -166,7 +160,7 @@ class Agent:
         return response,res_dict 
 
     def update_memory(self, memory):
-        self.agent_dict["long_term_memory"].append(
+        self.long_term_memory.append(
             {"role": "assistant", "content": memory.content}
         )
 
@@ -175,9 +169,9 @@ class Agent:
         get prompt from state depend on your role
         """
         current_state = self.current_state
-        self.agent_dict["current_roles"] = self.state_roles[current_state.name]
+        self.current_roles = self.state_roles[current_state.name]
         current_state_name = current_state.name
-        self.agent_dict["LLM"] = self.LLMs[current_state_name]
+        self.LLM = self.LLMs[current_state_name]
         components = current_state.components[self.state_roles[current_state_name]]
 
         system_prompt = self.current_state.environment_prompt
@@ -186,16 +180,15 @@ class Agent:
         res_dict = {}
         for component in components.values():
             if isinstance(component, (OutputComponent, LastComponent)):
-                last_prompt = last_prompt + "\n" + component.get_prompt(self.agent_dict)
+                last_prompt = last_prompt + "\n" + component.get_prompt(self)
             elif isinstance(component, PromptComponent):
                 system_prompt = (
-                    system_prompt + "\n" + component.get_prompt(self.agent_dict)
+                    system_prompt + "\n" + component.get_prompt(self)
                 )
             elif isinstance(component, ToolComponent):
-                response = component.func(self.agent_dict)
+                response = component.func(self)
                 if "prompt" in response and response["prompt"]:
                     last_prompt = last_prompt + "\n" + response["prompt"]
-                self.agent_dict.update(response)
                 res_dict.update(response)
         return system_prompt, last_prompt, res_dict
 
@@ -234,7 +227,7 @@ class Agent:
             )
             
         relevant_memory += "<relevant_history>\n"
-        self.agent_dict["relevant_history"] = relevant_memory
+        self.relevant_history = relevant_memory
         
 
         # get new conversation
@@ -267,13 +260,12 @@ class Agent:
                 if current_state.summary_prompt
                 else f"""your name is {self.name},your role is{current_component_dict["style"].role},your task is {current_component_dict["task"].task}.\n"""
             )
-            summary_prompt += """Please summarize and extract the information you need based on past key information \n<information>\n {self.short_term_memory} and new chat_history as follows: <new chat>\n"""
+            summary_prompt += f"""Please summarize and extract the information you need based on past key information \n<information>\n {self.short_term_memory} and new chat_history as follows: <new chat>\n"""
             summary_prompt += conversations + "</new chat>\n"
             response = self.LLMs[current_state.name].get_response(None, summary_prompt)
             summary = ""
             for res in response:
                 summary += res
-            self.agent_dict["short_term_memory"] = summary
             self.short_term_memory = summary
             
 

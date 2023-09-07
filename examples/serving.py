@@ -16,7 +16,7 @@ def init(config):
     environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
     sop.roles_to_names,sop.names_to_roles = roles_to_names,names_to_roles
     for name,agent in agents.items():
-        agent.agent_dict["environment"] = environment
+        agent.environment = environment
     return agents,sop,environment
 
 
@@ -28,7 +28,9 @@ def run(agents,sop,environment):
         if sop.finished:
             print("finished!")
             break
-        action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        user_input = input(f"{current_agent.name}:") if current_agent.is_user else ""
+        
+        action = current_agent.step(current_state,environment,user_input)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         memory = action.process()
         environment.update_memory(memory,current_state)
         
