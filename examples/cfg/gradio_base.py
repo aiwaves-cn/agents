@@ -15,7 +15,7 @@ SPECIAL_SIGN = {
     "END": "<ENDSEP>"
 }
 HOST = "127.0.0.1"
-PORT = 6277
+PORT = 6300
 
 def print_log(message:str):
     print(f"[{time.ctime()}]{message}")
