@@ -4,6 +4,8 @@ import requests
 from typing import List, Tuple
 
 class GradioConfig:
+    # 当前已经有几个注册了头像
+    POINTER = 0
     # 头像
     AGENT_HEAD_URL = [
         "https://img.touxiangwu.com/zb_users/upload/2023/06/202306241687579617434043.jpg",
@@ -17,7 +19,18 @@ class GradioConfig:
         "https://img.touxiangwu.com/zb_users/upload/2023/06/202306141686711344407060.jpg",
         "https://img.touxiangwu.com/zb_users/upload/2023/06/202306141686711345834296.jpg",
         "https://img.touxiangwu.com/zb_users/upload/2023/05/202305171684311194291520.jpg",
-        "https://img.touxiangwu.com/zb_users/upload/2023/05/202305171684311196958993.jpg"
+        "https://img.touxiangwu.com/zb_users/upload/2023/05/202305171684311196958993.jpg",
+        "https://img.touxiangwu.com/uploads/allimg/2021082612/vr0bkov0dwl.jpg",
+        "https://img.touxiangwu.com/uploads/allimg/2021082612/auqx5zfsv5g.jpg",
+        "https://img.touxiangwu.com/uploads/allimg/2021082612/llofpivtwls.jpg",
+        "https://img.touxiangwu.com/uploads/allimg/2021082612/3j2sdot3ye0.jpg",
+        "https://img.touxiangwu.com/2020/3/nQfYf2.jpg",
+        "https://img.touxiangwu.com/zb_users/upload/2023/08/202308131691918068774532.jpg",
+        "https://img.touxiangwu.com/zb_users/upload/2023/08/202308131691918068289945.jpg",
+        "https://img.touxiangwu.com/zb_users/upload/2023/08/202308131691918069785183.jpg",
+        "https://img.touxiangwu.com/zb_users/upload/2023/06/202306141686726561292003.jpg",
+        "https://img.touxiangwu.com/zb_users/upload/2023/06/202306141686726561578616.jpg",
+        "https://img.touxiangwu.com/zb_users/upload/2023/06/202306141686726564597524.jpg"
     ]
     USER_HEAD_URL = "https://img.touxiangwu.com/zb_users/upload/2023/05/202305301685407468585486.jpg"
     # 样式
@@ -231,6 +244,19 @@ class GradioConfig:
                 assert False
         # 返回节点1的agent
         return fisrt_node_roles
+
+    @classmethod
+    def add_agent(cls, agents_name:List):
+        for name in agents_name:
+            bubble_color, text_color = cls.color_for_img(cls.AGENT_HEAD_URL[cls.POINTER])
+            cls.OBJECT_INFO[name] = {
+                "head_url": f"{cls.AGENT_HEAD_URL[cls.POINTER]}",
+                "bubble_color": bubble_color,
+                "text_color": text_color,
+                "font_size": 0,
+                "id": "AGENT"
+            }
+            cls.POINTER += 1
 
 
 if __name__ == '__main__':

@@ -4,32 +4,37 @@ from Componenets.extra_component import *
 
 # state should have  "name"
 class State:
-    def __init__(
-        self,
-        **kwargs
-    ):
-        
+    def __init__(self, **kwargs):
         self.next_states = {}
         self.name = kwargs["name"]
-        
-        self.environment_prompt = kwargs["environment_prompt"] if "environment_prompt" in kwargs else ""
-        
+
+        self.environment_prompt = (
+            kwargs["environment_prompt"] if "environment_prompt" in kwargs else ""
+        )
+
         self.roles = kwargs["roles"] if "roles" in kwargs else [0]
-        self.begin_role = kwargs["begin_role"] if "begin_role" in kwargs else self.roles[0]
+        self.begin_role = (
+            kwargs["begin_role"] if "begin_role" in kwargs else self.roles[0]
+        )
         self.begin_query = kwargs["begin_query"] if "begin_query" in kwargs else None
-        
+
         self.is_begin = True
-        
-        
-        self.summary_prompt = kwargs["summary_prompt"] if "summary_prompt" in kwargs else None
+
+        self.summary_prompt = (
+            kwargs["summary_prompt"] if "summary_prompt" in kwargs else None
+        )
         self.current_role = self.begin_role
-        self.components = self.init_components(kwargs["agent_states"]) if "agent_states" in kwargs else {}
-        self.index = self.roles.index(self.begin_role) if self.begin_role in self.roles else 0
+        self.components = (
+            self.init_components(kwargs["agent_states"])
+            if "agent_states" in kwargs
+            else {}
+        )
+        self.index = (
+            self.roles.index(self.begin_role) if self.begin_role in self.roles else 0
+        )
         self.chat_nums = 0
-        
-        
-        
-    def init_components(self,agent_states_dict: dict):
+
+    def init_components(self, agent_states_dict: dict):
         agent_states = {}
         for role, components in agent_states_dict.items():
             component_dict = {}
@@ -37,9 +42,7 @@ class State:
                 if component:
                     # "role" "style"
                     if component == "style":
-                        component_dict["style"] = StyleComponent(
-                            component_args["role"]
-                        )
+                        component_dict["style"] = StyleComponent(component_args["role"])
 
                         # "task"
                     elif component == "task":
@@ -72,7 +75,7 @@ class State:
                             component_args["demonstrations"]
                         )
                     elif component == "CustomizeComponent":
-                        component["CustomizeComponent"] = CustomizeComponent(
+                        component_dict["CustomizeComponent"] = CustomizeComponent(
                             component_args["template"], component_args["keywords"]
                         )
 
@@ -122,4 +125,3 @@ class State:
             agent_states[role] = component_dict
 
         return agent_states
-
