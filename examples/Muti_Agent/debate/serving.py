@@ -17,12 +17,6 @@ def process(action):
     response = action.response
     send_name = action.name
     send_role = action.role
-    parse = f"{send_name}:"
-    # 将里面对话的第三人称删了
-    # The third person in the dialogue was deleted.
-    while parse in response:
-        index = response.index(parse) + len(parse)
-        response = response[index:]
     if not action.is_user:
         print(f"{send_name}({send_role}):{response}")
     memory = Memory(send_role, send_name, response)
