@@ -102,6 +102,8 @@ class State:
                             component_args["information_path"]
                         )
 
+                    elif component == "FunctionComponent":
+                        component_dict["FunctionComponent"] = FunctionComponent(component_args[""])
                     # "short_memory_extract_words"  "long_memory_extract_words" "system_prompt" "last_prompt"
                     elif component == "ExtractComponent":
                         component_dict["ExtractComponent"] = ExtractComponent(
