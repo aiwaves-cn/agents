@@ -177,6 +177,7 @@ class CustomizeComponent(PromptComponent):
         for keyword in self.keywords:
             current_keyword = agent.environment.shared_memory[keyword]
             template_keyword[keyword] = current_keyword
+        print(template_keyword)
         return self.template.format(**template_keyword)
 
 
@@ -647,7 +648,10 @@ class MailComponent(ToolComponent):
 
     def func(self, agent):
         if "action" in agent.environment.shared_memory:
-            assert agent.environment.shared_memory["action"].lower() in self.__VALID_ACTION__
+            assert (
+                agent.environment.shared_memory["action"].lower()
+                in self.__VALID_ACTION__
+            )
             self.action = agent.environment.shared_memory["action"]
         functions = {"read": self._read, "send": self._send}
         return functions[self.action](agent.environment.shared_memory)
@@ -708,10 +712,16 @@ class WeatherComponet(ToolComponent):
         country_code = agent.environment.shared_memory["country_code"]
         # 2020-02-02
         start_date = datetime.strftime(
-            datetime.strptime(agent.environment.shared_memory["start_date"], self.TIME_FORMAT),
+            datetime.strptime(
+                agent.environment.shared_memory["start_date"], self.TIME_FORMAT
+            ),
             self.TIME_FORMAT,
         )
-        end_date = agent.environment.shared_memory["end_date"] if "end_date" in agent.environment.shared_memory else None
+        end_date = (
+            agent.environment.shared_memory["end_date"]
+            if "end_date" in agent.environment.shared_memory
+            else None
+        )
         if end_date is None:
             end_date = datetime.strftime(
                 datetime.strptime(start_date, TIME_FORMAT) + timedelta(days=-1),
@@ -719,7 +729,9 @@ class WeatherComponet(ToolComponent):
             )
         else:
             end_date = datetime.strftime(
-                datetime.strptime(agent.environment.shared_memory["end_date"], self.TIME_FORMAT),
+                datetime.strptime(
+                    agent.environment.shared_memory["end_date"], self.TIME_FORMAT
+                ),
                 self.TIME_FORMAT,
             )
         if datetime.strptime(start_date, TIME_FORMAT) > datetime.strptime(
@@ -978,3 +990,32 @@ class FunctionComponent(ToolComponent):
                 outputdict["prompt"] = function_response
 
         return outputdict
+
+
+class CodeComponent(ToolComponent):
+    def __init__(self, file_name, keyword) -> None:
+        super().__init__()
+        self.file_name = file_name
+        self.keyword = keyword
+        self.system_prompt = (
+            "you need to extract the modified code as completely as possible."
+        )
+        self.last_prompt = (
+            f"Please strictly adhere to the following format for outputting: \n"
+        )
+        self.last_prompt += (
+            f"<{self.keyword}> the content you need to extract </{self.keyword}>"
+        )
+
+    def get_prompt(self, agent):
+        response = agent.LLM.get_response(
+            agent.long_term_memory,
+            self.system_prompt,
+            self.last_prompt,
+            stream=False,
+        )
+        code = extract(response, self.keyword)
+        code = code if code else response
+        with open(self.file_name, "w", encoding="utf-8") as f:
+            f.write(code)
+        return {}
