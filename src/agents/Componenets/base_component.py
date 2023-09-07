@@ -1008,7 +1008,7 @@ class CodeComponent(ToolComponent):
             f"<{self.keyword}> the content you need to extract </{self.keyword}>"
         )
 
-    def get_prompt(self, agent):
+    def func(self, agent):
         response = agent.LLM.get_response(
             agent.long_term_memory,
             self.system_prompt,
