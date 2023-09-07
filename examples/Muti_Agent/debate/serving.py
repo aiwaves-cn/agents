@@ -11,13 +11,31 @@ from Memorys import Memory
 from gradio_base import Client
 from gradio_example import DebateUI
 
+
+
+def process(action):
+    response = action.response
+    send_name = action.name
+    send_role = action.role
+    parse = f"{send_name}:"
+    # 将里面对话的第三人称删了
+    # The third person in the dialogue was deleted.
+    while parse in response:
+        index = response.index(parse) + len(parse)
+        response = response[index:]
+    if not action.is_user:
+        print(f"{send_name}({send_role}):{response}")
+    memory = Memory(send_role, send_name, response)
+    return memory
+
+
+
 def gradio_process(action,current_state):
     response = action.response
     all = ""
     for i,res in enumerate(response):
         all+=res
         state = 10
-
         if action.is_user:
             state = 30
             print("state:", state)
@@ -60,9 +78,9 @@ def run(agents,sop,environment):
         if sop.finished:
             print("finished!")
             break
-        action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        action = current_agent.step(current_state,environment,True)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
-        memory = action.gradio_process()
+        memory = process(action)
         environment.update_memory(memory,current_state)
         
 
