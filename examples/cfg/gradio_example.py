@@ -15,6 +15,7 @@ class DebateUI(WebUI):
     AUDIENCE = "不扮演(作为观众)"  # 路人的名字
     cache = {}
     all_agents_name = []
+    receive_server = None
 
     @classmethod
     def extract(cls, content):
@@ -66,10 +67,10 @@ class DebateUI(WebUI):
     ):
         super(DebateUI, self).__init__(client_server_file, socket_host, socket_port, bufsize)
         """初始化一下"""
-        self.server = self.receive_message()
-        next(self.server)
+        self.receive_server = self.receive_message()
+        next(self.receive_server)
         """接受一下sop的信息"""
-        data:List = self.server.send(None)
+        data:List = self.receive_server.send(None)
         print(data)
         assert len(data) == 1
         data = eval(data[0])
@@ -126,7 +127,7 @@ class DebateUI(WebUI):
         self.data_history = list()
         # 主要是开始渲染后端发来的消息
         # receive_server = self.receive_message()
-        receive_server = self.server
+        receive_server = self.receive_server
         while True:
             data_list: List = receive_server.send(None)
             print("收到:", data_list)
@@ -169,7 +170,6 @@ class DebateUI(WebUI):
         return gr.Textbox.update(value="", visible=False),\
               gr.Button.update(visible=False), \
                 history
-
 
     def construct_ui(
         self,
@@ -262,6 +262,13 @@ class DebateUI(WebUI):
         self.demo = demo
 
 class SingleAgentUI(WebUI):
+    """
+    1. 建立双向链接
+    2. 同步信息
+    3. 准备开始启动
+    """
+    receive_server = None
+
     """和DebateUI基本相同，唯一的区别在于不需要设置信息"""
     def __init__(
         self,
@@ -271,6 +278,126 @@ class SingleAgentUI(WebUI):
         bufsize: int = 1024
     ):
         super(SingleAgentUI, self).__init__(client_server_file, socket_host, socket_port, bufsize)
+        self.receive_server = self.receive_message()
+        assert next(self.receive_server) == "hello"
+        """接收一下开场白，这里一般都是传个字典过来"""
+        data:List = self.receive_server.send(None)
+        print(data)
+        assert len(data) == 1
+        data = eval(data[0])
+        assert isinstance(data, dict)
+        self.cache.update(data)
+        """注册一下agent_name"""
+        self.agent_name = self.cache["agent_name"] if isinstance(self.cache["agent_name"], str) else self.cache['agent_name'][0]
+        gc.add_agent()
+        self.data_history = None
+
+    def btn_send_when_click(self, history, btn_send, text):
+        # 主要作用是渲染气泡，然后将按钮禁用
+        """
+        inputs=[self.chatbot, self.btn_send, self.text_user]
+        outputs=[self.chatbot, self.btn_send, self.text_user]
+
+        输入的内容在text中
+        """
+        history.append(
+            [UIHelper.wrap_css(content=text, name=self.agent_name), None]
+        )
+        return history, gr.Button.update(interactive=False, value="生成中"), gr.Text.update(interactive=False, value="")
+
+    def handle_message(self, history:list,
+            state, agent_name, token, node_name):
+        # print("MIKE-history:",history)
+        if state % 10 == 0:
+            """这个还是在当前气泡里面的"""
+            self.data_history.append({agent_name: token})
+        elif state % 10 == 1:
+            self.data_history[-1][agent_name] += token
+        elif state % 10 == 2:
+            """表示不是同一个气泡了"""
+            history.append([None, ""])
+            self.data_history.clear()
+            self.data_history.append({agent_name: token})
+        else:
+            assert False
+        # print("MIKE-data_history", self.data_history)
+        render_data = self.render_bubble(history, self.data_history, node_name)
+        return render_data
+
+    def btn_send_after_click(self, history, btn_send, text):
+        # 主要作用是接收前端的信息
+        """
+        inputs=[self.chatbot, self.btn_send, self.text_user]
+        outputs=[self.chatbot, self.btn_send, self.text_user]
+        """
+        while True:
+            """接受一个"""
+            data_list: List = self.receive_server.send(None)
+            print("收到:", data_list)
+            
+            for item in data_list:
+                data = eval(item)
+                assert isinstance(data, list)
+                state, agent_name, token, node_name = data
+                assert isinstance(state, int)
+                if state == 30:
+                    """选择权交给用户，就是让用户进行交互"""
+                    # 1. 设置interactive和visible
+                    print("server:显示1")
+                    yield history,\
+                        gr.Button.update(visible=True, interactive=True), \
+                        gr.Textbox.update(visible=True, interactive=True)
+                    return
+                else:
+                    history = self.handle_message(history, state, agent_name, token, node_name)
+                    yield history, \
+                          gr.Button.update(visible=False, interactive=False), \
+                          gr.Textbox.update(visible=False, interactive=False)
+
+
+    def construct_ui(
+        self
+    ):
+        with gr.Blocks(css=gc.CSS) as demo:
+            with gr.Column():
+                self.chatbot = gr.Chatbot(
+                    value=[[None, UIHelper.wrap_css(content=self.cache['hello'], name=self.agent_name)]],
+                    elem_id="chatbot1",
+                    label="对话"
+                )
+                with gr.Row():
+                    self.text_user = gr.Textbox(
+                        label="你的输入:",
+                        placeholder="请输入",
+                        scale=7
+                    )
+                    self.btn_send = gr.Button(
+                        value="发送",
+                        scale=1
+                    )
+
+            # =============注册监听事件===============
+            self.btn_send.click(
+                fn=self.btn_send_when_click,
+                inputs=[self.chatbot, self.btn_send, self.text_user],
+                outputs=[self.chatbot, self.btn_send, self.text_user]
+            ).then(
+                fn=self.btn_send_after_click,
+                inputs=[self.chatbot, self.btn_send, self.text_user],
+                outputs=[self.chatbot, self.btn_send, self.text_user]
+            )
+
+            self.text_user.submit(
+                fn=self.btn_send_when_click,
+                inputs=[self.chatbot, self.btn_send, self.text_user],
+                outputs=[self.chatbot, self.btn_send, self.text_user]
+            ).then(
+                fn=self.btn_send_after_click,
+                inputs=[self.chatbot, self.btn_send, self.text_user],
+                outputs=[self.chatbot, self.btn_send, self.text_user]
+            )
+            # ========================================
+
 
 class NovelUI(WebUI):
     def __init__(
@@ -283,19 +410,27 @@ class NovelUI(WebUI):
         super(NovelUI, self).__init__(client_server_file, socket_host, socket_port, bufsize)
 
 def test_ui():
-    with gr.Blocks(css=gc.CSS) as demo:
-        with gr.Column():
-            chatbot = gr.Chatbot(
-                elem_id="chatbot1",
-                label="对话"
+    CSS ="""
+.contain { display: flex; flex-direction: column; }
+.gradio-container { height: 100vh !important; }
+.full-height {
+    height: 100vh; 
+}
+#component-0 { height: 100%; }
+#chatbot1 { flex-grow: 1; overflow: auto;}
+"""
+    # gc.CSS
+    with gr.Blocks(css=CSS) as demo:
+        with gr.Row():
+            chatbot1 = gr.Chatbot(
+                # elem_id="chatbot1",
+                label="对话",
             )
-            text_user = gr.Textbox(
-                label="你的输入:",
-                placeholder="请输入"
+            chatbot2 = gr.Chatbot(
+                # elem_id="chatbot1",
+                label="对话",
             )
-            btn_send = gr.Button(
-                value="发送"
-            )
+            
     demo.queue()
     demo.launch(share=True)
 
