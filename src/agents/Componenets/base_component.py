@@ -1006,8 +1006,14 @@ class CodeComponent(ToolComponent):
         )
         code = extract(response, self.keyword)
         code = code if code else response
-        file_name = "output_code" + self.file_name
-        os.makedirs(file_name, exist_ok=True)
+        os.makedirs("output_code", exist_ok=True)
+        file_name = "output_code/" + self.file_name
+        codes = code.split("\n")
+        if codes[0] == "```python":
+            codes.remove(codes[0])
+        if codes[-1] == "```":
+            codes.remove(codes[-1])
+        code = "\n".join(codes)
         with open(file_name, "w", encoding="utf-8") as f:
             f.write(code)
         return {}
