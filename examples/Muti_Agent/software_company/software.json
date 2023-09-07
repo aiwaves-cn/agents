@@ -8,20 +8,25 @@
     "root": "design_state",
     "relations": {
         "design_state": {
-            "0": "develop_state"
+            "0": "design_state",
+            "1": "develop_state"
         },
         "develop_state": {
-            "0": "debug_state"
+            "0": "develop_state",
+            "1": "debug_state"
         },
         "debug_state": {
-            "0": "end_state"
+            "0": "debug_state",
+            "1": "end_state"
         }
     },
     "agents": {
         "Alice": {
             "style": "august",
             "roles": {
-                "design_state": "Boss"
+                "design_state": "Boss",
+                "develop_state": "Boss",
+                "debug_state": "Boss"
             }
         },
         "Bob": {
@@ -95,7 +100,7 @@
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the architect puts forward a python framework based on this requirement, and then the LEADER determines whether this framework is appropriate, and gives the architect comments until the architect modifies the architecture to his satisfaction.",
+            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the architect puts forward a python framework based on this requirement, and then the leader determines gives the architect comments, another architect completes the final framework based on the comments",
             "name": "design_state",
             "begin_role": "Boss",
             "begin_query": "write a CLI rock-paper-scissors game, which can be played by two people.",
@@ -130,7 +135,7 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "design a concise, usable, complete python system architecture (according to leader's comments)"
+                        "task": "design a concise, usable, complete python system architecture"
                     },
                     "rule": {
                         "rule": "try to specify good open source tools as much as possible and modules proposed should be specific"
@@ -148,7 +153,7 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "check the architecture proposed by the architect and give specific comments to improve it until you are satisfied"
+                        "task": "check the architecture proposed by the architect and give specific comments to improve it"
                     },
                     "rule": {
                         "rule": "comments should be specific and constructive. If there are no other improvements, please make it clear that you are satisfied. "
@@ -166,10 +171,17 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "design a concise, usable, complete python system architecture according to leader's comments"
+                        "task": "Modify the designed system based on comments"
                     },
                     "rule": {
-                        "rule": "try to specify good open source tools as much as possible and modules proposed should be specific"
+                        "rule": "try to specify good open source tools as much as possible and modules proposed should be specific, you don't need to output any extra crap, just the modified system ONLY"
+                    },
+                    "ExtractComponent": {
+                        "extract_words": [
+                            "system"
+                        ],
+                        "system_prompt": "you need to extract the modified system as completely as possible.",
+                        "last_prompt": ""
                     }
                 }
             }
@@ -182,22 +194,41 @@
                 "log_path": "logs/god"
             },
             "roles": [
+                "Boss",
                 "Developer_1",
                 "Leader",
                 "Developer_2"
             ],
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums": 3,
+                "max_chat_nums": 5,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "environment_prompt": "Now the scenario is that the developer writes the code according to the framework given by the architect, and then the leader determines whether the written code is elegant, readable, and runnable, and gives comments to the developer until the developer modifies the code to their satisfaction.",
+            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the developer writes the code according to the framework given by the architect, and then the leader determines whether the written code is elegant, readable, and runnable, and gives comments, another developer modifies the code to  his satisfaction.",
             "name": "develop_state",
-            "begin_role": "Leader",
+            "begin_role": "Boss",
             "begin_query": "write code for the rock-paper-scissors game",
             "agent_states": {
+                "Boss": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Boss"
+                    },
+                    "style": {
+                        "role": "Boss",
+                        "style": "august"
+                    },
+                    "task": {
+                        "task": "give a requirement"
+                    },
+                    "rule": {
+                        "rule": "requirement should be clear and specific"
+                    }
+                },
                 "Developer_1": {
                     "LLM_type": "OpenAI",
                     "LLM": {
@@ -213,7 +244,13 @@
                         "task": "write elegant, readable, extensible, efficient code"
                     },
                     "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain"
+                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain. you need to just output the code ONLY"
+                    },
+                    "CustomizeComponent": {
+                        "template": "You need to write code based on the following framework :{system}",
+                        "keywords": [
+                            "system"
+                        ]
                     }
                 },
                 "Leader": {
@@ -228,7 +265,7 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "check the code written by the developer and give specific comments to improve it until you are satisfied"
+                        "task": "check the code written by the developer and give specific comments to improve it"
                     },
                     "rule": {
                         "rule": "comments should be specific and constructive"
@@ -246,10 +283,17 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "write elegant, readable, extensible, efficient code"
+                        "task": "Modify the written code based on comments"
                     },
                     "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain"
+                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain, you need to just output the modified code ONLY"
+                    },
+                    "ExtractComponent": {
+                        "extract_words": [
+                            "code"
+                        ],
+                        "system_prompt": "you need to extract the modified code as completely as possible.",
+                        "last_prompt": ""
                     }
                 }
             }
@@ -262,6 +306,7 @@
                 "log_path": "logs/god"
             },
             "roles": [
+                "Boss",
                 "Debugger",
                 "Developer_1",
                 "Leader",
@@ -270,16 +315,34 @@
             ],
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums": 5,
+                "max_chat_nums": 6,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "environment_prompt": "Now the scenario is that the developer writes code based on the feedback given by the debugger, and then the debugger determines whether the written code is runnable or not, and gives comments to the developer until the developer modifies the code to their satisfaction. Then the leader judges whether the final code can meet the boss's requirements and gives comments to the developer or the debugger to modify the code until it is satisfactory.",
-            "name": "shopping_state",
-            "begin_role": "Leader",
+            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the boss puts forward a requirement, the debugger simulate a compiler and determines whether the written code is runnable or not, and gives comments to the developer, the developer writes code based on the feedback given by the debugger. Then the leader judges whether the final code can meet the boss's requirements and gives comments to the developer to modify the code. Another developer code based on the comments given by the leader. The coder wirte the final code to the file.",
+            "name": "debug_state",
+            "begin_role": "Boss",
             "begin_query": "make code runnable and more efficient",
             "agent_states": {
+                "Boss": {
+                    "LLM_type": "OpenAI",
+                    "LLM": {
+                        "temperature": 0.3,
+                        "model": "gpt-3.5-turbo-16k-0613",
+                        "log_path": "logs/Boss"
+                    },
+                    "style": {
+                        "role": "Boss",
+                        "style": "august"
+                    },
+                    "task": {
+                        "task": "give a requirement"
+                    },
+                    "rule": {
+                        "rule": "requirement should be clear and specific"
+                    }
+                },
                 "Debugger": {
                     "LLM_type": "OpenAI",
                     "LLM": {
@@ -292,10 +355,16 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "debug the code written by the developer"
+                        "task": "simulate a compiler and debug"
                     },
                     "rule": {
-                        "rule": "give specific comments to improve the code until you are satisfied"
+                        "rule": "Please give corrections if there are errors reported, if not give specific comments to improve the code"
+                    },
+                    "CustomizeComponent": {
+                        "template": "You need to debug the following code :{code}",
+                        "keywords": [
+                            "code"
+                        ]
                     }
                 },
                 "Developer_1": {
@@ -313,7 +382,7 @@
                         "task": "write elegant, readable, extensible, efficient code"
                     },
                     "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain"
+                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain, "
                     }
                 },
                 "Leader": {
@@ -363,11 +432,9 @@
                         "role": "Coder",
                         "style": "professional"
                     },
-                    "task": {
-                        "task": "write elegant, readable, extensible, efficient code"
-                    },
-                    "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain"
+                    "CodeComponent": {
+                        "file_name": "rps_game.py",
+                        "keyword": "code"
                     }
                 }
             }
