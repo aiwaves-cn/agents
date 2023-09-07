@@ -41,9 +41,9 @@ class CategoryRequirementsComponent(ToolComponent):
                 break
         return knowledge
 
-    def func(self, agent_dict):
+    def func(self, agent):
         prompt = ""
-        messages = agent_dict["long_term_memory"]
+        messages = agent.long_term_memory
         outputdict = {}
         functions = [
             {
@@ -66,9 +66,9 @@ class CategoryRequirementsComponent(ToolComponent):
             }
         ]
         
-        messages[-1]["content"] += agent_dict["relevant_history"]
+        messages[-1]["content"] += agent.relevant_history
         
-        response = agent_dict["LLM"].get_response(
+        response = agent.LLM.get_response(
             messages,
             None,
             None,
@@ -100,7 +100,7 @@ class CategoryRequirementsComponent(ToolComponent):
                                 ) if "MIN_CATEGORY_SIM" in os.environ else 0.7
 
         if top1_score > MIN_CATEGORY_SIM:
-            agent_dict["category"] = topk_result[0][0]
+            agent.environment.shared_memory["category"] = topk_result[0][0]
             category = topk_result[0][0]
             information = self.search_information(
                 topk_result[0][0], self.information_dataset

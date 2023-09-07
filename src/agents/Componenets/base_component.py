@@ -37,7 +37,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import base64
-import os.path
 import re
 from datetime import datetime, timedelta
 from typing import Tuple, List, Any, Dict
@@ -61,7 +60,7 @@ class PromptComponent:
         pass
 
     @abstractmethod
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         pass
 
 
@@ -79,7 +78,7 @@ class TaskComponent(PromptComponent):
         super().__init__()
         self.task = task
 
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         return f"""The task you need to execute is: <task>{self.task}</task>.\n"""
 
 
@@ -88,7 +87,7 @@ class OutputComponent(PromptComponent):
         super().__init__()
         self.output = output
 
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         return f"""Please contact the above to extract <{self.output}> and </{self.output}>, \
             do not perform additional output, please output in strict accordance with the above format!\n"""
 
@@ -98,7 +97,7 @@ class LastComponent(PromptComponent):
         super().__init__()
         self.last_prompt = last_prompt
 
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         return self.last_prompt
 
 
@@ -111,9 +110,9 @@ class StyleComponent(PromptComponent):
         super().__init__()
         self.role = role
 
-    def get_prompt(self, agent_dict):
-        name = agent_dict["name"]
-        style = agent_dict["style"]
+    def get_prompt(self, agent):
+        name = agent.name
+        style = agent.style
         return f"""Now your role is:\n<role>{self.role}</role>, your name is:\n<name>{name}</name>. \
             You need to follow the output style:\n<style>{style}</style>.\n"""
 
@@ -123,7 +122,7 @@ class RuleComponent(PromptComponent):
         super().__init__()
         self.rule = rule
 
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         return f"""The rule you need to follow is:\n<rule>{self.rule}</rule>.\n"""
 
 
@@ -139,7 +138,7 @@ class DemonstrationComponent(PromptComponent):
     def add_demonstration(self, demonstration):
         self.demonstrations.append(demonstration)
 
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         prompt = "Here are demonstrations you can refer to:\n<demonstrations>"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
@@ -159,7 +158,7 @@ class CoTComponent(PromptComponent):
     def add_demonstration(self, demonstration):
         self.demonstrations.append(demonstration)
 
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         prompt = "You need to think in detail before outputting, the thinking case is as follows:\n<demonstrations>"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
@@ -173,10 +172,10 @@ class CustomizeComponent(PromptComponent):
         self.template = template
         self.keywords = keywords
 
-    def get_prompt(self, agent_dict):
+    def get_prompt(self, agent):
         template_keyword = {}
         for keyword in self.keywords:
-            current_keyword = agent_dict["environment"].shared_memory[keyword]
+            current_keyword = agent.environment.shared_memory[keyword]
             template_keyword[keyword] = current_keyword
         return self.template.format(**template_keyword)
 
@@ -200,10 +199,10 @@ class KnowledgeBaseComponent(ToolComponent):
                 self.knowledge_base
             )
 
-    def func(self, agent_dict):
+    def func(self, agent):
         query = (
-            agent_dict["long_term_memory"][-1]["content"]
-            if len(agent_dict["long_term_memory"]) > 0
+            agent.long_term_memory[-1]["content"]
+            if len(agent.long_term_memory) > 0
             else ""
         )
         knowledge = ""
@@ -255,7 +254,7 @@ class StaticComponent(ToolComponent):
         super().__init__()
         self.output = output
 
-    def func(self, agent_dict):
+    def func(self, agent):
         outputdict = {"response": self.output}
         return outputdict
 
@@ -279,18 +278,17 @@ class ExtractComponent(ToolComponent):
             )
         self.last_prompt = last_prompt if last_prompt else self.default_prompt
 
-    def func(self, agent_dict):
-        response = agent_dict["LLM"].get_response(
-            agent_dict["long_term_memory"],
+    def func(self, agent):
+        response = agent.LLM.get_response(
+            agent.long_term_memory,
             self.system_prompt,
             self.last_prompt,
-            agent_dict=agent_dict,
             stream=False,
         )
         for extract_word in self.extract_words:
             key = extract(response, extract_word)
             key = key if key else response
-            agent_dict["environment"].shared_memory[extract_word] = key
+            agent.environment.shared_memory[extract_word] = key
 
         return {}
 
@@ -366,14 +364,14 @@ class WebSearchComponent(ToolComponent):
             metadata_results.append(metadata_result)
         return {"meta data": metadata_results}
 
-    def func(self, agent_dict: Dict, **kwargs) -> Dict:
+    def func(self, agent, **kwargs) -> Dict:
         query = (
-            agent_dict["long_term_memory"][-1]["content"]
-            if len(agent_dict["long_term_memory"]) > 0
+            agent.long_term_memory[-1]["content"]
+            if len(agent.long_term_memory) > 0
             else " "
         )
         query = extract(query, "query")
-        response = agent_dict["LLM"].get_response(
+        response = agent.LLM.get_response(
             None,
             system_prompt=f"Please analyze the provided conversation and identify keywords that can be used for a search engine query. Format the output as <keywords>extracted keywords</keywords>:\nConversation:\n{query}",
             stream=False,
@@ -401,8 +399,8 @@ class WebCrawlComponent(ToolComponent):
     def __init__(self):
         super(WebCrawlComponent, self).__init__()
 
-    def func(self, agent_dict: Dict) -> Dict:
-        url = agent_dict["url"]
+    def func(self, agent) -> Dict:
+        url = agent.environment.shared_memory["url"]
         print(f"crawling {url} ......")
         content = ""
         """Crawling content from url may need to be carried out according to different websites, such as wiki, baidu, zhihu, etc."""
@@ -647,12 +645,12 @@ class MailComponent(ToolComponent):
             print(error)
             return {"state": False}
 
-    def func(self, mail_dict: dict):
-        if "action" in mail_dict:
-            assert mail_dict["action"].lower() in self.__VALID_ACTION__
-            self.action = mail_dict["action"]
+    def func(self, agent):
+        if "action" in agent.environment.shared_memory:
+            assert agent.environment.shared_memory["action"].lower() in self.__VALID_ACTION__
+            self.action = agent.environment.shared_memory["action"]
         functions = {"read": self._read, "send": self._send}
-        return functions[self.action](mail_dict)
+        return functions[self.action](agent.environment.shared_memory)
 
     def convert_action_to(self, action_name: str):
         assert (
@@ -702,18 +700,18 @@ class WeatherComponet(ToolComponent):
         data = response.json()
         return self._parse(data)
 
-    def func(self, weather_dict: Dict) -> Dict:
+    def func(self, agent) -> Dict:
         TIME_FORMAT = self.TIME_FORMAT
         # Beijing, Shanghai
-        city_name = weather_dict["city_name"]
+        city_name = agent.environment.shared_memory["city_name"]
         # CN, US
-        country_code = weather_dict["country_code"]
+        country_code = agent.environment.shared_memory["country_code"]
         # 2020-02-02
         start_date = datetime.strftime(
-            datetime.strptime(weather_dict["start_date"], self.TIME_FORMAT),
+            datetime.strptime(agent.environment.shared_memory["start_date"], self.TIME_FORMAT),
             self.TIME_FORMAT,
         )
-        end_date = weather_dict["end_date"] if "end_date" in weather_dict else None
+        end_date = agent.environment.shared_memory["end_date"] if "end_date" in agent.environment.shared_memory else None
         if end_date is None:
             end_date = datetime.strftime(
                 datetime.strptime(start_date, TIME_FORMAT) + timedelta(days=-1),
@@ -721,7 +719,7 @@ class WeatherComponet(ToolComponent):
             )
         else:
             end_date = datetime.strftime(
-                datetime.strptime(weather_dict["end_date"], self.TIME_FORMAT),
+                datetime.strptime(agent.environment.shared_memory["end_date"], self.TIME_FORMAT),
                 self.TIME_FORMAT,
             )
         if datetime.strptime(start_date, TIME_FORMAT) > datetime.strptime(
@@ -874,11 +872,11 @@ class TranslateComponent(ToolComponent):
         self.location = location
         self.default_target_language = default_target_language
 
-    def func(self, translate_dict: Dict) -> Dict:
-        content = translate_dict["content"]
+    def func(self, agent) -> Dict:
+        content = agent.environment.shared_memory["content"]
         target_language = self.default_target_language
-        if "target_language" in translate_dict:
-            target_language = translate_dict["target_language"]
+        if "target_language" in agent.environment.shared_memory:
+            target_language = agent.environment.shared_memory["target_language"]
         assert (
             target_language in self.__SUPPORT_LANGUAGE__
         ), f"language `{target_language}` is not supported."
@@ -918,7 +916,7 @@ class APIComponent(ToolComponent):
     def __init__(self):
         super(APIComponent, self).__init__()
 
-    def func(self, agent_dict: Dict) -> Dict:
+    def func(self, agent) -> Dict:
         pass
 
 
@@ -948,20 +946,16 @@ class FunctionComponent(ToolComponent):
             )
             self.available_functions[function["name"]] = eval(function["name"])
 
-    def func(self, agent_dict):
-        messages = agent_dict["long_term_memory"]
+    def func(self, agent):
+        messages = agent.long_term_memory
         outputdict = {}
-        query = (
-            agent_dict["long_term_memory"][-1]
-            if len(agent_dict["long_term_memory"]) > 0
-            else " "
-        )
+        query = agent.long_term_memory[-1] if len(agent.long_term_memory) > 0 else " "
         key_history = get_key_history(
             query,
-            agent_dict["long_term_memory"][:-1],
-            agent_dict["chat_embeddings"][:-1],
+            agent.long_term_memory[:-1],
+            agent.chat_embeddings[:-1],
         )
-        response = agent_dict["LLM"].get_response(
+        response = agent.LLM.get_response(
             messages,
             None,
             functions=self.functions,

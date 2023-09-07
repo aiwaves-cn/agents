@@ -78,7 +78,9 @@ def run(agents,sop,environment):
         if sop.finished:
             print("finished!")
             break
-        action = current_agent.step(current_state,environment,True)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        
+        user_input = input(f"{current_agent.name}:") if current_agent.is_user else ""
+        action = current_agent.step(current_state,environment,user_input)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
         memory = process(action)
         environment.update_memory(memory,current_state)
