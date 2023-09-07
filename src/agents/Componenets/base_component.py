@@ -29,6 +29,7 @@ from utils import (
 )
 import json
 from typing import Dict, List
+import os
 from googleapiclient.discovery import build
 import requests
 from selenium import webdriver
@@ -1016,6 +1017,8 @@ class CodeComponent(ToolComponent):
         )
         code = extract(response, self.keyword)
         code = code if code else response
-        with open(self.file_name, "w", encoding="utf-8") as f:
+        file_name = "output_code" + self.file_name
+        os.makedirs(file_name, exist_ok=True)
+        with open(file_name, "w", encoding="utf-8") as f:
             f.write(code)
         return {}
