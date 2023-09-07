@@ -208,7 +208,6 @@ class KnowledgeBaseComponent(ToolComponent):
         )
         knowledge = ""
         query = extract(query, "query")
-        print(query)
         query_embedding = get_embedding(query)
         hits = semantic_search(query_embedding, self.kb_embeddings, top_k=50)
         hits = hits[0]
