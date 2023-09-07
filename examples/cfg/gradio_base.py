@@ -15,7 +15,7 @@ SPECIAL_SIGN = {
     "END": "<ENDSEP>"
 }
 HOST = "127.0.0.1"
-PORT = 6271
+PORT = 6275
 
 def print_log(message:str):
     print(f"[{time.ctime()}]{message}")
@@ -166,7 +166,8 @@ class UIHelper:
 
 class Client:
 
-    server = None
+    receive_server = None
+    send_server = None
     current_node = None
     cache = {}
 
@@ -239,16 +240,16 @@ class Client:
 
     def listening_for_start_(self):
         """接受两次消息，一次是前端渲染好的，另外一次是启动命令"""
-        self.server = self.receive_message()
+        Client.receive_server = self.receive_message()
         """第一次消息"""
-        data: list = next(self.server)
+        data: list = next(Client.receive_server)
         print("listen-1:", data)
         assert len(data) == 1
         data = eval(data[0])
         assert isinstance(data, dict)
         Client.cache.update(data)
         """第二次消息"""
-        data:list = self.server.send(None)
+        data:list = Client.receive_server.send(None)
         assert len(data) == 1
         assert data[0] == "<START>"
 
@@ -393,6 +394,7 @@ class WebUI:
     def send_message(self, message:str):
         """将数据发送到后端"""
         """需要实现约定好格式"""
+        print(f"server:发送`{message}`")
         SEP = self.SIGN["SPLIT"]
         self.client_socket.send(
             (message+SEP).encode("utf-8")
