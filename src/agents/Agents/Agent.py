@@ -274,7 +274,7 @@ class Agent:
             f"The previous summary of chat history is as follows :<summary>\n{self.short_term_memory}\n</summary>.\
             The new chat history is as follows:\n<new chat> {conversations}\n</new chat>\n\
             </information>,\
-            You especially need to pay attention to the last query<query>\n{query.send_name}({query.send_role}):{query.content}\n</query>\n")
+            You especially need to pay attention to the last query<query>\n<{query.send_name}({query.send_role})>\n {query.content} \n</{query.send_name}({query.send_role})>\n</query>\n")
 
         return {"role": "user", "content": current_memory}
         
@@ -284,3 +284,5 @@ class Agent:
 
     def reflection(self):
         pass
+
+

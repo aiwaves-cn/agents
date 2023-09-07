@@ -399,8 +399,8 @@ class WebCrawlComponent(ToolComponent):
     def __init__(self):
         super(WebCrawlComponent, self).__init__()
 
-    def func(self, agent) -> Dict:
-        url = agent.environment.shared_memory["url"]
+    def func(self, agent_dict) -> Dict:
+        url = agent_dict["url"]
         print(f"crawling {url} ......")
         content = ""
         """Crawling content from url may need to be carried out according to different websites, such as wiki, baidu, zhihu, etc."""
@@ -645,12 +645,12 @@ class MailComponent(ToolComponent):
             print(error)
             return {"state": False}
 
-    def func(self, agent):
-        if "action" in agent.environment.shared_memory:
-            assert agent.environment.shared_memory["action"].lower() in self.__VALID_ACTION__
-            self.action = agent.environment.shared_memory["action"]
+    def func(self, mail_dict: dict):
+        if "action" in mail_dict:
+            assert mail_dict["action"].lower() in self.__VALID_ACTION__
+            self.action = mail_dict["action"]
         functions = {"read": self._read, "send": self._send}
-        return functions[self.action](agent.environment.shared_memory)
+        return functions[self.action](mail_dict)
 
     def convert_action_to(self, action_name: str):
         assert (
@@ -700,18 +700,18 @@ class WeatherComponet(ToolComponent):
         data = response.json()
         return self._parse(data)
 
-    def func(self, agent) -> Dict:
+    def func(self, weather_dict: Dict) -> Dict:
         TIME_FORMAT = self.TIME_FORMAT
         # Beijing, Shanghai
-        city_name = agent.environment.shared_memory["city_name"]
+        city_name = weather_dict["city_name"]
         # CN, US
-        country_code = agent.environment.shared_memory["country_code"]
+        country_code = weather_dict["country_code"]
         # 2020-02-02
         start_date = datetime.strftime(
-            datetime.strptime(agent.environment.shared_memory["start_date"], self.TIME_FORMAT),
+            datetime.strptime(weather_dict["start_date"], self.TIME_FORMAT),
             self.TIME_FORMAT,
         )
-        end_date = agent.environment.shared_memory["end_date"] if "end_date" in agent.environment.shared_memory else None
+        end_date = weather_dict["end_date"] if "end_date" in weather_dict else None
         if end_date is None:
             end_date = datetime.strftime(
                 datetime.strptime(start_date, TIME_FORMAT) + timedelta(days=-1),
@@ -719,7 +719,7 @@ class WeatherComponet(ToolComponent):
             )
         else:
             end_date = datetime.strftime(
-                datetime.strptime(agent.environment.shared_memory["end_date"], self.TIME_FORMAT),
+                datetime.strptime(weather_dict["end_date"], self.TIME_FORMAT),
                 self.TIME_FORMAT,
             )
         if datetime.strptime(start_date, TIME_FORMAT) > datetime.strptime(
@@ -872,11 +872,11 @@ class TranslateComponent(ToolComponent):
         self.location = location
         self.default_target_language = default_target_language
 
-    def func(self, agent) -> Dict:
-        content = agent.environment.shared_memory["content"]
+    def func(self, translate_dict: Dict) -> Dict:
+        content = translate_dict["content"]
         target_language = self.default_target_language
-        if "target_language" in agent.environment.shared_memory:
-            target_language = agent.environment.shared_memory["target_language"]
+        if "target_language" in translate_dict:
+            target_language = translate_dict["target_language"]
         assert (
             target_language in self.__SUPPORT_LANGUAGE__
         ), f"language `{target_language}` is not supported."

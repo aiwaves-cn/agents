@@ -245,7 +245,6 @@ def process_document(file_path):
             json.dump(final_dict, f, ensure_ascii=False, indent=2)
         return {"knowledge_base": save_path, "type": "UnstructuredFile"}
 
-process_document("/home/aiwaves/longli/agents/src/agents/database_eye.csv")
 def load_knowledge_base_qa(path):
     """
     Load json format knowledge base.
@@ -441,7 +440,17 @@ def search_with_api(requirements, categery):
 
 
 def get_key_history(query,history,embeddings):
-    
+    """
+    Retrieve a list of key history entries based on a query using semantic search.
+
+    Args:
+        query (object): The input query for which key history is to be retrieved.
+        history (list): A list of historical key entries.
+        embeddings (numpy.ndarray): An array of embedding vectors for historical entries.
+
+    Returns:
+        list: A list of key history entries most similar to the query.
+    """
     TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 2
     key_history = []
     query = query.content
