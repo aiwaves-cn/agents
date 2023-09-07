@@ -89,30 +89,6 @@ class Environment:
         response = self.LLMs[current_state_name].get_response(None, system_prompt, stream=False)
         return response
 
-    def excute_action(self, action):
-        """
-        get memory by action
-        """
-        response = action["response"] if "response" in action else ""
-        res_dict = action["res_dict"] if "res_dict" in action else {}
-        is_user = action["is_user"] if "is_user" in action else False
-        send_name = action["name"]
-        send_role = action["role"]
-        all = ""
-        for res in response:
-            all += res
-        parse = f"{send_name}:"
-        
-        # 将里面对话的第三人称删了
-        # The third person in the dialogue was deleted.
-        while parse in all:
-            index = all.index(parse) + len(parse)
-            all = all[index:]
-        if not is_user:
-            print(f"{send_name}({send_role}):{all}")
-        memory = Memory(send_role, send_name, all)
-        return memory
-
     def update_memory(self, memory, current_state):
         """
         update chat embbedings and long term memory,short term memory,agents long term memory
@@ -132,7 +108,3 @@ class Environment:
 
         self.agents[memory.send_name].update_memory(memory)
 
-        
-    def update(self,action,current_state):
-        memory = self.excute_action(action)
-        self.update_memory(memory,current_state)

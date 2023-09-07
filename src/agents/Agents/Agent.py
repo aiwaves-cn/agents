@@ -18,13 +18,16 @@ from utils import get_key_history
 from LLMs.base_LLM import *
 from Componenets.base_component import *
 from Componenets.extra_component import *
+from Actions import Action
 
 headers = {
     "Content-Type": "text/event-stream",
     "Cache-Control": "no-cache",
     "X-Accel-Buffering": "no",
 }
-
+    
+    
+    
 
 class Agent:
     """
@@ -134,8 +137,9 @@ class Agent:
                 response = (char for char in self.begins[current_state.name]["begin_query"])
             else:
                 response,res_dict = self.act()
-            
-        return  {
+        
+        
+        action_dict =  {
             "response": response,
             "res_dict": res_dict,
             "role": self.state_roles[current_state.name],
@@ -144,7 +148,7 @@ class Agent:
             "agent_begin" : agent_begin,
             "is_user" : self.is_user
         }
-
+        return  Action(**action_dict)
 
     def act(self):
         """

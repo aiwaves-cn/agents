@@ -6,7 +6,8 @@ sys.path.append("../src/agents")
 from SOP import SOP
 from Agents import Agent
 from Environments import Environment
-import time
+from Memorys import Memory
+
 def init(config):
     agents,roles_to_names,names_to_roles = Agent.from_config(config)
     sop = SOP.from_config(config)
@@ -18,6 +19,8 @@ def init(config):
         agent.agent_dict["environment"] = environment
     return agents,sop,environment
 
+
+
 def run(agents,sop,environment):
     while True:
         
@@ -26,7 +29,8 @@ def run(agents,sop,environment):
             print("finished!")
             break
         action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
-        environment.update(action,current_state)
+        memory = action.process()
+        environment.update_memory(memory,current_state)
         
 
 parser = argparse.ArgumentParser(description='A demo of chatbot')
