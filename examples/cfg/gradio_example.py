@@ -110,7 +110,7 @@ class DebateUI(WebUI):
         cosplay = None if choose == self.AUDIENCE else choose.split("(")[0]
         message = dict(theme=theme, positive=positive, negative=negative, cosplay=cosplay)
         self.send_message(str(message)) # 自动加结束符
-        time.sleep(1)
+        time.sleep(2)
         # 2. 向前端发送开始运行的消息
         self.send_message(self.SIGN["START"])   # 自动加结束符
         return gr.Chatbot.update(
@@ -268,16 +268,18 @@ class SingleAgentUI(WebUI):
     3. 准备开始启动
     """
     receive_server = None
+    cache = {}
 
     """和DebateUI基本相同，唯一的区别在于不需要设置信息"""
     def __init__(
         self,
         client_server_file: str,
-        socket_host: str = '127.0.0.1',
-        socket_port: int = 9999,
+        socket_host: str = HOST,
+        socket_port: int = PORT,
         bufsize: int = 1024
     ):
         super(SingleAgentUI, self).__init__(client_server_file, socket_host, socket_port, bufsize)
+        self.FIRST = True
         self.receive_server = self.receive_message()
         assert next(self.receive_server) == "hello"
         """接收一下开场白，这里一般都是传个字典过来"""
@@ -289,8 +291,8 @@ class SingleAgentUI(WebUI):
         self.cache.update(data)
         """注册一下agent_name"""
         self.agent_name = self.cache["agent_name"] if isinstance(self.cache["agent_name"], str) else self.cache['agent_name'][0]
-        gc.add_agent()
-        self.data_history = None
+        gc.add_agent([self.agent_name])
+        self.data_history = list()
 
     def btn_send_when_click(self, history, btn_send, text):
         # 主要作用是渲染气泡，然后将按钮禁用
@@ -301,8 +303,15 @@ class SingleAgentUI(WebUI):
         输入的内容在text中
         """
         history.append(
-            [UIHelper.wrap_css(content=text, name=self.agent_name), None]
+            [UIHelper.wrap_css(content=text, name="User"), None]
         )
+        if self.FIRST:
+            # 2. 向前端发送开始运行的消息
+            self.send_message(str({'hello':'hello'}))   # 没有用，只是空发一下
+            time.sleep(2)
+            self.send_message(self.SIGN["START"])   # 自动加结束符
+            # time.sleep(2)
+            self.FIRST = False
         return history, gr.Button.update(interactive=False, value="生成中"), gr.Text.update(interactive=False, value="")
 
     def handle_message(self, history:list,
@@ -397,7 +406,7 @@ class SingleAgentUI(WebUI):
                 outputs=[self.chatbot, self.btn_send, self.text_user]
             )
             # ========================================
-
+        self.demo = demo
 
 class NovelUI(WebUI):
     def __init__(
