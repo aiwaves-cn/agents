@@ -122,7 +122,7 @@ class DebateUI(WebUI):
         self.send_start_cmd(message=message)
         return gr.Chatbot.update(
             visible=True
-        )
+        ), gr.Button.update(visible=False)
 
     def start_button_after_click(self, history):
         """
@@ -286,7 +286,7 @@ class DebateUI(WebUI):
                 fn=self.start_button_when_click,
                 inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose],
                 # 只要把chatbot显示出来就行
-                outputs=[self.chatbot]
+                outputs=[self.chatbot, self.btn_send]
             ).then(
                 # 接收后端的信息并渲染
                 fn=self.start_button_after_click,
