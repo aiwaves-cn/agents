@@ -100,7 +100,7 @@
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the architect puts forward a python framework based on this requirement, and then the leader determines gives the architect comments, another architect completes the final framework based on the comments",
+            "environment_prompt": "Imagine a scenario where the boss has presented a requirement. The architect is tasked with proposing a Python framework based on this requirement. The leader's role is to provide feedback on the architect's proposal, and another architect will finalize the framework based on the leader's comments.",
             "name": "design_state",
             "begin_role": "Boss",
             "begin_query": "write a CLI rock-paper-scissors game, which can be played by two people.",
@@ -120,7 +120,7 @@
                         "task": "give a requirement"
                     },
                     "rule": {
-                        "rule": "requirement should be clear and specific"
+                        "rule": "the requirement should be clear and specific"
                     }
                 },
                 "Architect_1": {
@@ -135,10 +135,10 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "design a concise, usable, complete python system architecture"
+                        "task": "design a concise, usable, and complete Python system architecture"
                     },
                     "rule": {
-                        "rule": "try to specify good open source tools as much as possible and modules proposed should be specific"
+                        "rule": "try to specify good open-source tools and be specific about proposed modules"
                     }
                 },
                 "Leader": {
@@ -153,10 +153,10 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "check the architecture proposed by the architect and give specific comments to improve it"
+                        "task": "evaluate the architecture proposal and provide specific feedback for improvement"
                     },
                     "rule": {
-                        "rule": "comments should be specific and constructive. If there are no other improvements, please make it clear that you are satisfied. "
+                        "rule": "feedback should be specific and constructive"
                     }
                 },
                 "Architect_2": {
@@ -171,16 +171,16 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "Modify the designed system based on comments"
+                        "task": "modify the designed system based on the feedback received"
                     },
                     "rule": {
-                        "rule": "try to specify good open source tools as much as possible and modules proposed should be specific, you don't need to output any extra crap, just the modified system ONLY"
+                        "rule": "try to specify good open-source tools and be specific about proposed modules. Only output the modified system"
                     },
                     "ExtractComponent": {
                         "extract_words": [
                             "system"
                         ],
-                        "system_prompt": "you need to extract the modified system as completely as possible.",
+                        "system_prompt": "Please extract the modified system as completely as possible.",
                         "last_prompt": ""
                     }
                 }
@@ -206,10 +206,10 @@
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the developer writes the code according to the framework given by the architect, and then the leader determines whether the written code is elegant, readable, and runnable, and gives comments, another developer modifies the code to  his satisfaction.",
+            "environment_prompt": "In this scenario, the boss has provided a requirement. The developer's task is to write code based on the architecture proposed by the architect. The leader evaluates the written code for elegance, readability, and functionality, providing feedback. Another developer makes necessary modifications to the code.",
             "name": "develop_state",
             "begin_role": "Boss",
-            "begin_query": "write code for the rock-paper-scissors game",
+            "begin_query": "Please write code for a rock-paper-scissors game.",
             "agent_states": {
                 "Boss": {
                     "LLM_type": "OpenAI",
@@ -226,7 +226,7 @@
                         "task": "give a requirement"
                     },
                     "rule": {
-                        "rule": "requirement should be clear and specific"
+                        "rule": "the requirement should be clear and specific."
                     }
                 },
                 "Developer_1": {
@@ -241,13 +241,13 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "write elegant, readable, extensible, efficient code"
+                        "task": "write elegant, readable, extensible, and efficient code"
                     },
                     "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain. you need to just output the code ONLY"
+                        "rule": "write code that conforms to standards like PEP8, is modular, easy to read, and maintainable. Output the code only"
                     },
                     "CustomizeComponent": {
-                        "template": "You need to write code based on the following framework :{system}",
+                        "template": "You need to write code based on the following framework: {system}",
                         "keywords": [
                             "system"
                         ]
@@ -265,10 +265,10 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "check the code written by the developer and give specific comments to improve it"
+                        "task": "evaluate the code and provide specific feedback for improvement"
                     },
                     "rule": {
-                        "rule": "comments should be specific and constructive"
+                        "rule": "feedback should be specific and constructive."
                     }
                 },
                 "Developer_2": {
@@ -283,16 +283,16 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "Modify the written code based on comments"
+                        "task": "make modifications to the code based on feedback"
                     },
                     "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain, you need to just output the modified code ONLY"
+                        "rule": "make code modifications that conform to standards like PEP8, are modular, easy to read, and maintainable. Output the modified code only"
                     },
                     "ExtractComponent": {
                         "extract_words": [
                             "code"
                         ],
-                        "system_prompt": "you need to extract the modified code as completely as possible.",
+                        "system_prompt": "Please extract the modified code as completely as possible.",
                         "last_prompt": ""
                     }
                 }
@@ -320,10 +320,10 @@
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "environment_prompt": "Now the scenario is that the boss puts forward a requirement, the boss puts forward a requirement, the debugger simulate a compiler and determines whether the written code is runnable or not, and gives comments to the developer, the developer writes code based on the feedback given by the debugger. Then the leader judges whether the final code can meet the boss's requirements and gives comments to the developer to modify the code. Another developer code based on the comments given by the leader. The coder wirte the final code to the file.",
+            "environment_prompt": "In this scenario, the boss has provided a requirement. The debugger simulates a compiler to determine whether the code is runnable and provides feedback. The developer writes code based on the debugger's feedback. The leader evaluates whether the final code meets the boss's requirements and provides feedback for further modifications. The coder writes the final code to a file.",
             "name": "debug_state",
             "begin_role": "Boss",
-            "begin_query": "make code runnable and more efficient",
+            "begin_query": "Please make the code both runnable and more efficient.",
             "agent_states": {
                 "Boss": {
                     "LLM_type": "OpenAI",
@@ -340,7 +340,7 @@
                         "task": "give a requirement"
                     },
                     "rule": {
-                        "rule": "requirement should be clear and specific"
+                        "rule": "The requirement should be clear and specific."
                     }
                 },
                 "Debugger": {
@@ -355,13 +355,13 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "simulate a compiler and debug"
+                        "task": "simulate a compiler and debug the code"
                     },
                     "rule": {
-                        "rule": "Please give corrections if there are errors reported, if not give specific comments to improve the code"
+                        "rule": "provide corrections for reported errors or specific comments for code improvement"
                     },
                     "CustomizeComponent": {
-                        "template": "You need to debug the following code :{code}",
+                        "template": "You need to debug the following code: {code}",
                         "keywords": [
                             "code"
                         ]
@@ -379,10 +379,10 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "write elegant, readable, extensible, efficient code"
+                        "task": "write elegant, readable, extensible, and efficient code."
                     },
                     "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain, "
+                        "rule": "write code that conforms to standards like PEP8, is modular, easy to read, and maintainable."
                     }
                 },
                 "Leader": {
@@ -397,10 +397,10 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "check the code written by the developer and give specific comments to improve it until you are satisfied"
+                        "task": "evaluate the code and provide specific feedback until satisfied"
                     },
                     "rule": {
-                        "rule": "comments should be specific and constructive"
+                        "rule": "feedback should be specific and constructive"
                     }
                 },
                 "Developer_2": {
@@ -415,10 +415,17 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "write elegant, readable, extensible, efficient code"
+                        "task": "make modifications to the code based on feedback"
                     },
                     "rule": {
-                        "rule": "The code you write should conform to code standards like PEP8, be modular, easy to read, and maintain"
+                        "rule": "make code modifications that conform to standards like PEP8, are modular, easy to read, and maintainable. Output the modified code only"
+                    },
+                    "ExtractComponent": {
+                        "extract_words": [
+                            "code"
+                        ],
+                        "system_prompt": "Please extract the modified code as completely as possible.",
+                        "last_prompt": ""
                     }
                 },
                 "Coder": {
