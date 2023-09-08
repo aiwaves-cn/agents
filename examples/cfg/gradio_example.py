@@ -474,7 +474,7 @@ class SingleAgentUI(WebUI):
         self.reset()
         self.first_recieve_from_client(reset_mode=True)
         self.FIRST = True
-        content = ""
+        content = None
         if not self.cache["user_first"]:
             content = self.prepare()
         return None if content is None else [[None, UIHelper.wrap_css(content, name=self.agent_name)]], \
@@ -512,7 +512,7 @@ class SingleAgentUI(WebUI):
         self
     ):
         """从cache中判断一下是否是用户输入第一句话"""
-        content = ""
+        content = None
         if not self.cache["user_first"]:
             content = self.prepare()
         with gr.Blocks(css=gc.CSS) as demo:
