@@ -1,8 +1,8 @@
-from utils import get_key_history, get_embedding
+from utils import get_relevant_history, get_embedding
 import torch
 from LLMs.base_LLM import *
 from Memorys import Memory
-
+from Prompts import * 
 
 class Environment:
     def __init__(self, config) -> None:
@@ -23,13 +23,13 @@ class Environment:
                 self.summary_system_prompt[state_name] = (
                     state_dict["summary_system_prompt"]
                     if "summary_system_prompt" in state_dict
-                    else "\nYour task is to summarize the historical dialogue records according to the current scene, and summarize the most important information"
+                    else eval(Default_environment_summary_system_prompt)
                 )
 
                 self.summary_last_prompt[state_name] = (
                     state_dict["summary_last_prompt"]
                     if "summary_last_prompt" in state_dict
-                    else "Please make a summary based on the historical chat records, the output format is history summary: \{your summary content\} "
+                    else eval(Default_environment_summary_last_prompt)
                 )
 
                 self.environment_prompt[state_name] = (
@@ -61,32 +61,28 @@ class Environment:
         MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
         current_state_name = current_state.name
 
-        query = self.shared_memory["long_term_memory"][-1]
-        key_history = get_key_history(
+        query = self.shared_memory["long_term_memory"][-1].content
+        relevant_history = get_relevant_history(
             query,
             self.shared_memory["long_term_memory"][:-1],
             self.shared_memory["chat_embeddings"][:-1],
         )
 
-        relevant_history = Memory.get_chat_history(key_history)
+        relevant_history = Memory.get_chat_history(relevant_history)
         chat_history = Memory.get_chat_history(
             self.shared_memory["long_term_memory"][-MAX_CHAT_HISTORY + 1 :]
         )
         summary = self.shared_memory["short_term_memory"]
         
-        # current_memory = summary + chat history + relevant history
-        current_memory = f"The information you need to know is as follows:\n<information>\n\
-            The summary of the previous dialogue history is:<summary>\n{summary}\n.\
-            The latest conversation record is as follows:\n<hisroty> {chat_history}\n<history>,\
-            the relevant chat history you may need is:<relevant>{relevant_history}<relevant>"
-
+        
         # system prompt = environment prompt + current memory + system prompt
-        system_prompt = (
-            self.environment_prompt[current_state_name]
-            + current_memory
-            + self.summary_system_prompt[current_state_name]
-        )
-        response = self.LLMs[current_state_name].get_response(None, system_prompt, stream=False)
+        # current_memory = summary + chat history + relevant history
+        current_memory = eval(Environment_summary_memory)
+        environment_prompt = self.environment_prompt[current_state_name]
+        summary_system_prompt = self.summary_system_prompt[current_state_name]
+        
+        environment_summary_system_prompt = eval(Environment_summary_system_prompt)
+        response = self.LLMs[current_state_name].get_response(None, environment_summary_system_prompt, stream=False)
         return response
 
     def update_memory(self, memory, current_state):

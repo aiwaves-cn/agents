@@ -17,8 +17,9 @@
 import random
 from LLMs.base_LLM import *
 from State import State
-from utils import extract, get_key_history
+from utils import extract, get_relevant_history
 from Memorys import Memory
+from Prompts import *
 import json
 
 
@@ -83,7 +84,7 @@ class SOP:
         """
         current_state = self.current_state
         controller_dict = self.controller_dict[current_state.name]
-        judge_system_prompt = controller_dict["judge_system_prompt"]
+        relevant_history = kwargs["relevant_history"]
         
         max_chat_nums = controller_dict["max_chat_nums"] if "max_chat_nums" in controller_dict else 1000
         if current_state.chat_nums>=max_chat_nums:
@@ -92,33 +93,38 @@ class SOP:
 
         # 否则则让controller判断是否结束
         # Otherwise, let the controller judge whether to end
-        system_prompt = (
-            "<environment>"
-            + current_state.environment_prompt
-            + "</environment>\n"
-            + judge_system_prompt
-        )
+        judge_system_prompt = controller_dict["judge_system_prompt"]
+        environment_prompt = eval(Get_environment_prompt) if current_state.environment_prompt else ""
+        transit_system_prompt = eval(Transit_system_prompt)
+        
+        judge_last_prompt = controller_dict["judge_last_prompt"]
+        transit_last_prompt = eval(Transit_last_prompt)
+        
 
         
-        last_prompt = controller_dict["judge_last_prompt"]
         environment = kwargs["environment"]
-        summary = environment.shared_memory["short_term_memory"]
-
+        environment_summary = environment.shared_memory["short_term_memory"]
+        chat_history_message = Memory.get_chat_history(chat_history)
+        query = chat_history[-1].get_query()
+        
         chat_messages = [
             {
                 "role": "user",
-                "content": f"The previous summary of chat history is as follows :<summary>\n{summary}\n<summary>.The new chat history is as follows:\n<new chat> {Memory.get_chat_history(chat_history)}\n<new chat>\n<information>.\nYou especially need to pay attention to the last query<query>\n{chat_history[-1].content}\n<query>\n",
+                "content": eval(Transit_message)
             }
         ]
+        
         extract_words = controller_dict["judge_extract_words"] if "judge_extract_words" in controller_dict else "end"
 
+
         response = self.LLM.get_response(
-            chat_messages, system_prompt, last_prompt, stream=False, **kwargs
+            chat_messages, transit_system_prompt, transit_last_prompt, stream=False, **kwargs
         )
         next_state = (
             response if response.isdigit() else extract(response, extract_words)
         )
         return next_state
+
 
     def route(self, chat_history, **kwargs):
         """
@@ -126,6 +132,7 @@ class SOP:
         """
         # 获取当前状态下的控制器
         # Get the current state of the controller
+        relevant_history = kwargs["relevant_history"]
         current_state = self.current_state
         controller_type = (
             self.controller_dict[current_state.name]["controller_type"]
@@ -139,42 +146,37 @@ class SOP:
         if controller_type == "rule":
             controller_dict = self.controller_dict[current_state.name]
             
-            call_system_prompt = controller_dict["call_system_prompt"]  if "call_system_prompt" in controller_dict else ""
             call_last_prompt = controller_dict["call_last_prompt"] if "call_last_prompt" in controller_dict else ""
             
             allocate_prompt = ""
             roles = list(set(current_state.roles))
             for role in roles:
-                allocate_prompt += f"If it's currently supposed to be speaking for {role}, then output <end>{role}<\end>.\n"
+                allocate_prompt += Allocate_component.format(role)
                 
-            system_prompt = (
-                "<environment>"
-                + current_state.environment_prompt
-                + "</environment>\n"
-                + call_system_prompt + allocate_prompt
-            )
-
+            call_system_prompt = controller_dict["call_system_prompt"]  if "call_system_prompt" in controller_dict else ""
+            environment_prompt = eval(Get_environment_prompt) if current_state.environment_prompt else ""    
+            # call_system_prompt + environment + allocate_prompt 
+            call_system_prompt = eval(Call_system_prompt)
+            
+            query = chat_history[-1].get_query()
+            last_name = chat_history[-1].send_name
             # last_prompt: note + last_prompt + query
-            last_prompt = (
-                f"You especially need to pay attention to the last query<query>\n{chat_history[-1].content}\n<query>\n"
-                + call_last_prompt
-                + allocate_prompt
-                + f"Note: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{chat_history[-1].send_name}</end> cannot be output\n."
-            )
-
+            call_last_prompt =eval(Call_last_prompt)
+            
+            
+            chat_history_message = Memory.get_chat_history(chat_history)
             # Intermediate historical conversation records
             chat_messages = [
                 {
                     "role": "user",
-                    "content": f"The chat history is as follows:\n<history>\n{Memory.get_chat_history(chat_history)}<history>\n，\
-                    The last person to speak is: {chat_history[-1].send_name}\n.",
+                    "content": eval(Call_message),
                 }
             ]
 
             extract_words = controller_dict["call_extract_words"] if "call_extract_words" in controller_dict else "end"
 
             response = self.LLM.get_response(
-                chat_messages, system_prompt, last_prompt, stream=False, **kwargs
+                chat_messages, call_system_prompt, call_last_prompt, stream=False, **kwargs
             )
 
             # get next role
@@ -213,6 +215,16 @@ class SOP:
 
         current_state = self.current_state
 
+    
+        query = environment.shared_memory["long_term_memory"][-1].content
+
+        relevant_history = get_relevant_history(
+            query,
+            environment.shared_memory["long_term_memory"][:-1],
+            environment.shared_memory["chat_embeddings"][:-1],
+        )
+        relevant_history = Memory.get_chat_history(relevant_history)
+        
         # 如果是单一循环节点，则一直循环即可
         # If it is a single loop node, just keep looping
         if len(current_state.next_states) == 1:
@@ -221,21 +233,13 @@ class SOP:
         # 否则则需要controller去判断进入哪一节点
         # Otherwise, the controller needs to determine which node to enter.
         else:
-            query = environment.shared_memory["long_term_memory"][-1]
-
-            key_history = get_key_history(
-                query,
-                environment.shared_memory["long_term_memory"][:-1],
-                environment.shared_memory["chat_embeddings"][:-1],
-            )
-
             # 只传入当前状态下的对话记录
             # Only pass in the conversation record in the current state
             next_state = self.transit(
                 chat_history=environment.shared_memory["long_term_memory"][
                     environment.current_chat_history_idx :
                 ],
-                key_history=key_history,
+                relevant_history=relevant_history,
                 environment=environment,
             )
 
@@ -267,18 +271,11 @@ class SOP:
         # 否则controller进行分配
         # Otherwise the controller determines
         else:
-            query = environment.shared_memory["long_term_memory"][-1]
-
-            key_history = get_key_history(
-                query,
-                environment.shared_memory["long_term_memory"][:-1],
-                environment.shared_memory["chat_embeddings"][:-1],
-            )
             current_role = self.route(
                 chat_history=environment.shared_memory["long_term_memory"][
                     environment.current_chat_history_idx :
                 ],
-                key_history=key_history,
+                relevant_history=relevant_history,
             )
 
         # 如果下一角色不在，则随机挑选一个

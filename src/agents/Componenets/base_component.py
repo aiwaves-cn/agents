@@ -21,7 +21,7 @@ from abc import abstractmethod
 import uuid
 from text2vec import semantic_search
 from utils import (
-    get_key_history,
+    get_relevant_history,
     load_knowledge_base_qa,
     load_knowledge_base_UnstructuredFile,
     get_embedding,
@@ -951,8 +951,8 @@ class FunctionComponent(ToolComponent):
     def func(self, agent):
         messages = agent.long_term_memory
         outputdict = {}
-        query = agent.long_term_memory[-1] if len(agent.long_term_memory) > 0 else " "
-        key_history = get_key_history(
+        query = agent.long_term_memory[-1].content if len(agent.long_term_memory) > 0 else " "
+        relevant_history = get_relevant_history(
             query,
             agent.long_term_memory[:-1],
             agent.chat_embeddings[:-1],
@@ -963,7 +963,7 @@ class FunctionComponent(ToolComponent):
             functions=self.functions,
             stream=False,
             function_call=self.function_call,
-            key_history=key_history,
+            relevant_history=relevant_history,
         )
         response_message = response
         if response_message.get("function_call"):
