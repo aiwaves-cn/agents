@@ -58,27 +58,33 @@ class DebateUI(WebUI):
         agent_name = list(set(agent_name))
         return agent_name, only_name
 
+    def render_and_register_ui(self):
+        gc.add_agent(self.cache["only_name"])
+    
     def __init__(
         self,
-        client_server_file: str,
+        client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
         bufsize: int = 1024
     ):
-        super(DebateUI, self).__init__(client_server_file, socket_host, socket_port, bufsize)
-        """初始化一下"""
-        self.receive_server = self.receive_message()
-        next(self.receive_server)
-        """接受一下sop的信息"""
-        data:List = self.receive_server.send(None)
-        print(data)
-        assert len(data) == 1
-        data = eval(data[0])
-        assert isinstance(data, dict)
-        self.cache.update(data)
-        """注册agent name"""
-        gc.add_agent(self.cache["only_name"])
-        self.data_history = None
+        super(DebateUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        # """初始化一下"""
+        # self.receive_server = self.receive_message()
+        # next(self.receive_server)
+        # """接受一下sop的信息"""
+        # data:List = self.receive_server.send(None)
+        # print(data)
+        # assert len(data) == 1
+        # data = eval(data[0])
+        # assert isinstance(data, dict)
+        # self.cache.update(data)
+        # """注册agent name"""
+        # gc.add_agent(self.cache["only_name"])
+        # self.data_history = None
+        # self.FIRST = True
+        self.first_recieve_from_client()
+        self.data_history = list()
 
     """处理发送来的数据"""
     def handle_message(self, history:list,
@@ -97,7 +103,7 @@ class DebateUI(WebUI):
         else:
             assert False
         # print("MIKE-data_history", self.data_history)
-        render_data = self.render_bubble(history, self.data_history, node_name)
+        render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= state % 10 == 2)
         return render_data
 
     def start_button_when_click(self, theme, positive, negative, choose):
@@ -109,10 +115,11 @@ class DebateUI(WebUI):
         # 1. 向前端发送数据消息
         cosplay = None if choose == self.AUDIENCE else choose.split("(")[0]
         message = dict(theme=theme, positive=positive, negative=negative, cosplay=cosplay)
-        self.send_message(str(message)) # 自动加结束符
-        time.sleep(2)
-        # 2. 向前端发送开始运行的消息
-        self.send_message(self.SIGN["START"])   # 自动加结束符
+        # self.send_message(str(message)) # 自动加结束符
+        # time.sleep(2)
+        # # 2. 向前端发送开始运行的消息
+        # self.send_message(self.SIGN["START"])   # 自动加结束符
+        self.send_start_cmd(message=message)
         return gr.Chatbot.update(
             visible=True
         )
@@ -142,7 +149,8 @@ class DebateUI(WebUI):
                     print("server:显示1")
                     yield history,\
                         gr.Textbox.update(visible=True, interactive=True), \
-                        gr.Button.update(visible=True, interactive=True)
+                        gr.Button.update(visible=True, interactive=True),\
+                            gr.Button.update(visible=True, interactive=True)
                     return
                     # 2. 监听动作（一般来说，这个item应该就是data_list就是最后一个）
                     #    所以可以直接break，来监听下一个，让程序阻塞在这里
@@ -152,7 +160,8 @@ class DebateUI(WebUI):
                     history = self.handle_message(history, state, agent_name, token, node_name)
                     yield history, \
                           gr.Textbox.update(visible=False, interactive=False), \
-                          gr.Button.update(visible=False, interactive=False)
+                          gr.Button.update(visible=False, interactive=False),\
+                              gr.Button.update(visible=False, interactive=False)
 
     def send_button_when_click(self, text_user, history:list):
         """点击这个按钮的目的是将内容渲染到前端"""
@@ -169,8 +178,42 @@ class DebateUI(WebUI):
         self.send_message("<USER>"+text_user+self.SIGN["SPLIT"])
         return gr.Textbox.update(value="", visible=False),\
               gr.Button.update(visible=False), \
-                history
+                history,\
+                    gr.Button.update(visible=False)
 
+    def reset_button_when_click(self, history, text_positive, text_negative, text_theme, text_user, btn_send, btn_start, btn_reset):
+        """当点击的时候"""
+        """
+        self.chatbot, 
+        self.text_positive, 
+        self.text_negative, 
+        self.text_theme, 
+        self.text_user,
+        self.btn_send,
+        self.btn_start,
+        self.btn_reset"""
+        return None, \
+            "", \
+                "", \
+                    "", \
+                        "", \
+                            gr.Button.update(value="重启中...", interactive=False, visible=True),\
+                                gr.Button.update(value="重启中...", interactive=False, visible=True),\
+                                    gr.Button.update(value="重启中...", interactive=False, visible=True)
+                            
+    def reset_button_after_click(self, history, text_positive, text_negative, text_theme, text_user, btn_send, btn_start, btn_reset):
+        self.reset()
+        """接受来自client的值"""
+        self.first_recieve_from_client(reset_mode=True)
+        return gr.Chatbot.update(value=None, visible=False),\
+            gr.Textbox.update(value=f"{self.cache['positive']}", interactive=True, visible=True),\
+                gr.Textbox.update(value=f"{self.cache['negative']}", interactive=True, visible=True),\
+                    gr.Textbox.update(value=f"{self.cache['theme']}", interactive=True, visible=True),\
+                        gr.Textbox.update(value=f"", interactive=True, visible=False),\
+                            gr.Button.update(interactive=True, visible=False, value="发送"),\
+                                gr.Button.update(interactive=True, visible=True, value="开始"),\
+                                    gr.Button.update(interactive=False, visible=False, value="重启")
+        
     def construct_ui(
         self,
         theme:str=None,
@@ -232,6 +275,10 @@ class DebateUI(WebUI):
                         value="发送",
                         visible=VISIBLE
                     )
+                    self.btn_reset = gr.Button(
+                        value="重启",
+                        visible=VISIBLE
+                    )
             # =================设置监听器=====================
             """向后端发送选择的信息和启动命令"""
             self.btn_start.click(
@@ -244,19 +291,65 @@ class DebateUI(WebUI):
                 # 接收后端的信息并渲染
                 fn=self.start_button_after_click,
                 inputs=[self.chatbot],
-                outputs=[self.chatbot, self.text_user, self.btn_send]
+                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
             )
             """接收后端的暂停信息，然后向后端发送"""
             self.btn_send.click(
                 # 渲染到前端+发送后端
                 fn=self.send_button_when_click,
                 inputs=[self.text_user, self.chatbot],
-                outputs=[self.text_user, self.btn_send, self.chatbot]
+                outputs=[self.text_user, self.btn_send, self.chatbot, self.btn_reset]
             ).then(
                 # 监听后端更新
                 fn=self.start_button_after_click,
                 inputs=[self.chatbot],
-                outputs=[self.chatbot, self.text_user, self.btn_send]
+                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
+            )
+            """重启"""
+            self.btn_reset.click(
+                fn=self.reset_button_when_click,
+                inputs=[
+                    self.chatbot, 
+                    self.text_positive, 
+                    self.text_negative, 
+                    self.text_theme, 
+                    self.text_user,
+                    self.btn_send,
+                    self.btn_start,
+                    self.btn_reset
+                ],
+                outputs=[
+                    self.chatbot, 
+                    self.text_positive, 
+                    self.text_negative, 
+                    self.text_theme, 
+                    self.text_user,
+                    self.btn_send,
+                    self.btn_start,
+                    self.btn_reset
+                ]
+            ).then(
+                fn=self.reset_button_after_click,
+                inputs=[
+                    self.chatbot, 
+                    self.text_positive, 
+                    self.text_negative, 
+                    self.text_theme, 
+                    self.text_user,
+                    self.btn_send,
+                    self.btn_start,
+                    self.btn_reset
+                ],
+                outputs=[
+                    self.chatbot, 
+                    self.text_positive, 
+                    self.text_negative, 
+                    self.text_theme, 
+                    self.text_user,
+                    self.btn_send,
+                    self.btn_start,
+                    self.btn_reset
+                ]
             )
             # ==============================================
         self.demo = demo
@@ -265,33 +358,35 @@ class SingleAgentUI(WebUI):
     """
     1. 建立双向链接
     2. 同步信息
-    3. 准备开始启动
+    3. 准备开始启动(发送启动的命令)
     """
-    receive_server = None
-    cache = {}
-
+    
+    def render_and_register_ui(self):
+        self.agent_name = self.cache["agent_name"] if isinstance(self.cache["agent_name"], str) else self.cache['agent_name'][0]
+        gc.add_agent([self.agent_name])
+    
     """和DebateUI基本相同，唯一的区别在于不需要设置信息"""
     def __init__(
         self,
-        client_server_file: str,
+        client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
         bufsize: int = 1024
     ):
-        super(SingleAgentUI, self).__init__(client_server_file, socket_host, socket_port, bufsize)
+        super(SingleAgentUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        # self.FIRST = True
+        # self.receive_server = self.receive_message()
+        # assert next(self.receive_server) == "hello"
+        # """接收一下开场白，这里一般都是传个字典过来"""
+        # data:List = self.receive_server.send(None)
+        # print(data)
+        # assert len(data) == 1
+        # data = eval(data[0])
+        # assert isinstance(data, dict)
+        # self.cache.update(data)
+        # """注册一下agent_name"""
         self.FIRST = True
-        self.receive_server = self.receive_message()
-        assert next(self.receive_server) == "hello"
-        """接收一下开场白，这里一般都是传个字典过来"""
-        data:List = self.receive_server.send(None)
-        print(data)
-        assert len(data) == 1
-        data = eval(data[0])
-        assert isinstance(data, dict)
-        self.cache.update(data)
-        """注册一下agent_name"""
-        self.agent_name = self.cache["agent_name"] if isinstance(self.cache["agent_name"], str) else self.cache['agent_name'][0]
-        gc.add_agent([self.agent_name])
+        self.first_recieve_from_client()
         self.data_history = list()
 
     def btn_send_when_click(self, history, btn_send, text):
@@ -306,31 +401,34 @@ class SingleAgentUI(WebUI):
             [UIHelper.wrap_css(content=text, name="User"), None]
         )
         if self.FIRST:
-            # 2. 向前端发送开始运行的消息
-            self.send_message(str({'hello':'hello'}))   # 没有用，只是空发一下
-            time.sleep(2)
-            self.send_message(self.SIGN["START"])   # 自动加结束符
+            # # 2. 向前端发送开始运行的消息
+            # self.send_message(str({'hello':'hello'}))   # 没有用，只是空发一下
             # time.sleep(2)
+            # self.send_message(self.SIGN["START"])   # 自动加结束符
+            # time.sleep(2)
+            self.send_start_cmd()
             self.FIRST = False
-        return history, gr.Button.update(interactive=False, value="生成中"), gr.Text.update(interactive=False, value="")
+        return history, gr.Button.update(interactive=False, value="生成中"), gr.Text.update(interactive=False)
 
     def handle_message(self, history:list,
             state, agent_name, token, node_name):
         # print("MIKE-history:",history)
-        if state % 10 == 0:
+        if state % 10 in [0, 2]:
             """这个还是在当前气泡里面的"""
+            self.data_history.clear()
             self.data_history.append({agent_name: token})
         elif state % 10 == 1:
             self.data_history[-1][agent_name] += token
-        elif state % 10 == 2:
-            """表示不是同一个气泡了"""
-            history.append([None, ""])
-            self.data_history.clear()
-            self.data_history.append({agent_name: token})
+        # elif state % 10 == 2:
+        #     """表示不是同一个气泡了"""
+        #     history.append([None, ""])
+        #     self.data_history.clear()
+        #     self.data_history.append({agent_name: token})
         else:
             assert False
         # print("MIKE-data_history", self.data_history)
-        render_data = self.render_bubble(history, self.data_history, node_name)
+        # 如果state%10==2，说明到了新节点
+        render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= state % 10 == 2)
         return render_data
 
     def btn_send_after_click(self, history, btn_send, text):
@@ -339,6 +437,7 @@ class SingleAgentUI(WebUI):
         inputs=[self.chatbot, self.btn_send, self.text_user]
         outputs=[self.chatbot, self.btn_send, self.text_user]
         """
+        self.send_message("<USER>"+text)
         while True:
             """接受一个"""
             data_list: List = self.receive_server.send(None)
@@ -354,23 +453,72 @@ class SingleAgentUI(WebUI):
                     # 1. 设置interactive和visible
                     print("server:显示1")
                     yield history,\
-                        gr.Button.update(visible=True, interactive=True), \
+                        gr.Button.update(visible=True, interactive=True, value="发送"), \
                         gr.Textbox.update(visible=True, interactive=True)
                     return
                 else:
                     history = self.handle_message(history, state, agent_name, token, node_name)
                     yield history, \
                           gr.Button.update(visible=False, interactive=False), \
-                          gr.Textbox.update(visible=False, interactive=False)
+                          gr.Textbox.update(visible=False, interactive=False, value="")
 
-
+    """重新启动"""
+    def btn_reset_when_click(self, history, text, btn_send, btn_reset):
+        yield history.append([None, UIHelper.wrap_css("正在重启", name="System")]), \
+            gr.Textbox.update(value="", visible=True, interactive=True), \
+                gr.Button.update(visible=True, interactive=False),\
+                    gr.Button.update(visible=True, interactive=False, value="正在重启")
+        return
+    
+    def btn_reset_after_click(self, history, text, btn_send, btn_reset):
+        self.reset()
+        self.first_recieve_from_client(reset_mode=True)
+        self.FIRST = True
+        content = ""
+        if not self.cache["user_first"]:
+            content = self.prepare()
+        return None if content is None else [[None, UIHelper.wrap_css(content, name=self.agent_name)]], \
+            gr.Textbox.update(value="", visible=True, interactive=True), \
+                gr.Button.update(visible=True, interactive=True),\
+                    gr.Button.update(visible=True, interactive=True, value="重启")
+        
+     
+    def prepare(self):
+        if self.FIRST:
+            self.send_start_cmd()
+            self.FIRST = False
+        # if self.FIRST:
+        #     # 2. 向前端发送开始运行的消息
+        #     self.send_message(str({'hello':'hello'}))   # 没有用，只是空发一下
+        #     time.sleep(2)
+        #     self.send_message(self.SIGN["START"])   # 自动加结束符
+        #     # time.sleep(2)
+        #     self.FIRST = False
+        content = ""
+        """agent在一开始就会输出"""
+        while True:
+            """那就是那边会传来消息"""
+            data_list: List = self.receive_server.send(None)
+            for item in data_list:
+                data = eval(item)
+                assert isinstance(data, list)
+                state, agent_name, token, node_name = data
+                print(state)
+                if state == 30:
+                    return content
+                content += token
+        
     def construct_ui(
         self
     ):
+        """从cache中判断一下是否是用户输入第一句话"""
+        content = ""
+        if not self.cache["user_first"]:
+            content = self.prepare()
         with gr.Blocks(css=gc.CSS) as demo:
             with gr.Column():
                 self.chatbot = gr.Chatbot(
-                    value=[[None, UIHelper.wrap_css(content=self.cache['hello'], name=self.agent_name)]],
+                    value=None if content is None else [[None, UIHelper.wrap_css(content=content, name=self.agent_name)]],
                     elem_id="chatbot1",
                     label="对话"
                 )
@@ -378,10 +526,14 @@ class SingleAgentUI(WebUI):
                     self.text_user = gr.Textbox(
                         label="你的输入:",
                         placeholder="请输入",
-                        scale=7
+                        scale=10
                     )
                     self.btn_send = gr.Button(
                         value="发送",
+                        scale=1
+                    )
+                    self.btn_reset = gr.Button(
+                        value="重启",
                         scale=1
                     )
 
@@ -404,6 +556,16 @@ class SingleAgentUI(WebUI):
                 fn=self.btn_send_after_click,
                 inputs=[self.chatbot, self.btn_send, self.text_user],
                 outputs=[self.chatbot, self.btn_send, self.text_user]
+            )
+            
+            self.btn_reset.click(
+                fn=self.btn_reset_when_click,
+                inputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset],
+                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
+            ).then(
+                fn=self.btn_reset_after_click,
+                inputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset],
+                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
             )
             # ========================================
         self.demo = demo
