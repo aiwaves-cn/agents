@@ -60,7 +60,6 @@ class OpenAILLM(LLM):
         model = self.model
         temperature = self.temperature
         
-        summary = kwargs["summary"] if "summary" in kwargs else None
         
         if active_mode:
             system_prompt = system_prompt + "Please keep your reply as concise as possible"
@@ -78,9 +77,7 @@ class OpenAILLM(LLM):
             elif isinstance(chat_history[0],Memory):
                 messages += [memory.get_gpt_message("user") for memory in chat_history]
 
-        if last_prompt or summary:
-            last_prompt = last_prompt if last_prompt else ""
-            last_prompt = f"The information you know is:\n<summary>\n{summary}\n</summary>" + last_prompt if summary else last_prompt
+        if last_prompt:
             if active_mode:
                 last_prompt = last_prompt + "Please keep your reply as concise as possible"
             # messages += [{"role": "system", "content": f"{last_prompt}"}]

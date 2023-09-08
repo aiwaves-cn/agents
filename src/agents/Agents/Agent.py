@@ -14,11 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """LLM autonoumous agent"""
-from utils import get_key_history
+from utils import get_relevant_history
 from LLMs.base_LLM import *
 from Componenets.base_component import *
 from Componenets.extra_component import *
 from Actions import Action
+from Prompts import *
 
 headers = {
     "Content-Type": "text/event-stream",
@@ -209,25 +210,19 @@ class Agent:
             current_long_term_memory = environment.shared_memory["long_term_memory"]
             current_chat_embbedings = environment.shared_memory["chat_embeddings"]
             
-        # total memory observed
-        current_memory = "Here's what you need to know(Remember, this is just information, Try not to repeat what's inside):\n<information>\n"
         
         # relevant_memory
-        relevant_memory = "The relevant chat history are as follows:\n<relevant_history>"
-        query = current_long_term_memory[-1]
+        query = current_long_term_memory[-1].content
 
-        key_history = get_key_history(
+        relevant_memory = get_relevant_history(
             query,
             current_long_term_memory[:-1],
             current_chat_embbedings[:-1],
         )
-        for history in key_history:
-            relevant_memory += (
-                f"{history.send_name}({history.send_role}):{history.content}\n"
-            )
-            
-        relevant_memory += "<relevant_history>\n"
-        self.relevant_history = relevant_memory
+        relevant_memory = Memory.get_chat_history(relevant_memory)
+        
+        relevant_memory = eval(Agent_observe_relevant_memory)
+        self.relevant_memory = relevant_memory
         
 
         # get new conversation
@@ -260,8 +255,7 @@ class Agent:
                 if current_state.summary_prompt
                 else f"""your name is {self.name},your role is{current_component_dict["style"].role},your task is {current_component_dict["task"].task}.\n"""
             )
-            summary_prompt += f"""Please summarize and extract the information you need based on past key information \n<information>\n {self.short_term_memory} and new chat_history as follows: <new chat>\n"""
-            summary_prompt += conversations + "</new chat>\n"
+            summary_prompt =eval(Agent_summary_system_prompt)
             response = self.LLMs[current_state.name].get_response(None, summary_prompt)
             summary = ""
             for res in response:
@@ -269,12 +263,9 @@ class Agent:
             self.short_term_memory = summary
             
 
-            # memory = relevant_memory + summary + history + query
-        current_memory += (relevant_memory + \
-            f"The previous summary of chat history is as follows :<summary>\n{self.short_term_memory}\n</summary>.\
-            The new chat history is as follows:\n<new chat> {conversations}\n</new chat>\n\
-            </information>,\
-            You especially need to pay attention to the last query<query>\n<{query.send_name}({query.send_role})>\n {query.content} \n</{query.send_name}({query.send_role})>\n</query>\n")
+        # memory = relevant_memory + summary + history + query
+        query = current_long_term_memory[-1]
+        current_memory = eval(Agent_observe_memory)
 
         return {"role": "user", "content": current_memory}
         

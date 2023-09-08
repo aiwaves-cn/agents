@@ -439,12 +439,12 @@ def search_with_api(requirements, categery):
 
 
 
-def get_key_history(query,history,embeddings):
+def get_relevant_history(query,history,embeddings):
     """
     Retrieve a list of key history entries based on a query using semantic search.
 
     Args:
-        query (object): The input query for which key history is to be retrieved.
+        query (str): The input query for which key history is to be retrieved.
         history (list): A list of historical key entries.
         embeddings (numpy.ndarray): An array of embedding vectors for historical entries.
 
@@ -452,15 +452,11 @@ def get_key_history(query,history,embeddings):
         list: A list of key history entries most similar to the query.
     """
     TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 2
-    key_history = []
-    query = query.content
+    relevant_history = []
     query_embedding = get_embedding(query)
     hits = semantic_search(query_embedding, embeddings, top_k=min(TOP_K,embeddings.shape[0]))
     hits = hits[0]
     for hit in hits:
         matching_idx = hit["corpus_id"]
-        key_history.append(history[matching_idx])
-    return key_history
-
-
-    
+        relevant_history.append(history[matching_idx])
+    return relevant_history
