@@ -40,6 +40,8 @@ Call_message = "f\"The chat history is as follows:\\n<history>\\n{chat_history_m
 # Memory========================================================================================================
 Chat_single_message = "f\"<{conversation.send_name}({conversation.send_role})>\\n {conversation.content} \\n</{conversation.send_name}({conversation.send_role})>\\n\""
 
+Chat_total_message = "f\"{chat_history}\""
+
 Self_message = "f\"<{self.send_name}({self.send_role})>\\n {self.content} \\n</{self.send_name}({self.send_role})>\\n\""
 # Memory========================================================================================================
 

@@ -13,6 +13,7 @@ class Memory:
         chat_history = ""
         for conversation in messages:
             chat_history += eval(Chat_single_message)
+        chat_history = eval(Chat_total_message)
         return chat_history
     
     def get_query(self):

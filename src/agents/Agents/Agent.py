@@ -118,16 +118,15 @@ class Agent:
         # 先根据当前环境更新信息
         # First update the information according to the current environment
         
-        if len(environment.shared_memory["long_term_memory"])>0:
-            current_history = self.observe(environment)
-            self.long_term_memory.append(current_history)
-        
         response = " "
         res_dict = {}
         
         if self.is_user:
             response = f"{self.name}:{input}"
         else:
+            if len(environment.shared_memory["long_term_memory"])>0:
+                current_history = self.observe(environment)
+                self.long_term_memory.append(current_history)
             if agent_begin:
                 response = (char for char in self.begins[current_state.name]["begin_query"])
             else:
