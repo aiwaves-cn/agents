@@ -5,6 +5,29 @@ import gradio as gr
 from typing import List, Tuple, Any
 import time
 import socket
+import psutil
+import os
+from abc import abstractmethod
+
+def is_port_in_use(port):
+    for conn in psutil.net_connections():
+        if conn.laddr.port == port:
+            return True
+    return False
+
+def check_port(port):
+    if os.path.isfile("PORT.txt"):
+        port = int(open("PORT.txt","r",encoding='utf-8').readlines()[0])
+        print(port)
+    else:
+        for i in range(10):
+            if is_port_in_use(port+i) == False:
+                port += i
+                break
+        with open("PORT.txt", "w") as f:
+            f.writelines(str(port))
+        print(port)
+    return port
 
 SPECIAL_SIGN = {
     # 双方约定正式开始运行的符号
@@ -15,8 +38,10 @@ SPECIAL_SIGN = {
     "END": "<ENDSEP>"
 }
 HOST = "127.0.0.1"
-PORT = 6305
 
+PORT = 6289
+PORT = check_port(PORT)
+    
 def print_log(message:str):
     print(f"[{time.ctime()}]{message}")
 
@@ -177,8 +202,13 @@ class Client:
         assert bufsize > 0
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client_socket.connect((host, port))
-        time.sleep(2)
-        self.client_socket.send("hello agent".encode('utf-8'))
+        while True:
+            data = self.client_socket.recv(self.bufsize).decode('utf-8')
+            if data == "hi":
+                self.client_socket.send("hello agent".encode('utf-8'))
+                time.sleep(1)
+            elif data == "check":
+                break
         print_log("client: 连接成功......")
 
     def start_server(self):
@@ -240,6 +270,7 @@ class Client:
 
     def listening_for_start_(self):
         """接受两次消息，一次是前端渲染好的，另外一次是启动命令"""
+        print("client:", self.client_socket)
         Client.receive_server = self.receive_message()
         """第一次消息"""
         data: list = next(Client.receive_server)
@@ -254,44 +285,7 @@ class Client:
         assert data[0] == "<START>"
 
 class WebUI:
-    def __init__(
-        self,
-        client_server_file: str,
-        socket_host: str = HOST,
-        socket_port: int = PORT,
-        bufsize: int = 1024
-    ):
-        self.SIGN = SPECIAL_SIGN
-        self.socket_host = socket_host
-        self.socket_port = socket_port
-        self.bufsize = bufsize
-        assert self.bufsize > 0
-        # Step0. 初始化
-        self.server_socket = socket.socket(
-            socket.AF_INET, socket.SOCK_STREAM
-        )
-        # Step1. 绑定IP和端口
-        # self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        print((self.socket_host, self.socket_port))
-        self.server_socket.bind((self.socket_host, self.socket_port))
-        # Step2. 启动客户端
-        print_log("server: 正在启动客户端......")
-        subprocess.Popen(["python", client_server_file])
-
-        # Step2. 监听并阻塞当前进程
-        print_log("server: 等待客户端连接......")
-        self.server_socket.listen(1)
-
-        # Step3. 测试连接
-        client_socket, client_address = self.server_socket.accept()
-        self.client_socket = client_socket
-        data = client_socket.recv(self.bufsize).decode('utf-8')
-        if not data:
-            print_log("server: 连接建立失败......")
-            assert False
-        if data == "hello agent":
-            print_log("server: 连接成功......")
-
+    
     def receive_message(
         self,
         end_identifier:str=None,
@@ -351,11 +345,138 @@ class WebUI:
         self.client_socket.send(
             (message+SEP).encode("utf-8")
         )
+    
+    """
+    建立连接后：
+        1. 先client发送数据到server
+        2. server接受数据进行展示
+        3. server发送数据到client
+        4. client接受数据并覆盖 
+        5. server发送开始运行的命令
+        6. client正式开始
+        
+            client  server
+        1.   send    rec
+        2.   rec     send
+        3.   rec     send
+    """ 
+    def _connect(self):
+        """socket启动"""
+        # Step0. 先判断一下是否已经有了
+        if self.server_socket:
+            """如果有了，那就说明是重启的，可能需要重新商议一下通信的端口号"""
+            self.server_socket.close()
+            assert not os.path.isfile("PORT.txt")
+            self.socket_port = check_port(PORT)
+        # Step1. 初始化
+        self.server_socket = socket.socket(
+            socket.AF_INET, socket.SOCK_STREAM
+        )
+        # Step2. 绑定IP和端口
+        print((self.socket_host, self.socket_port))
+        self.server_socket.bind((self.socket_host, self.socket_port))
+        # Step3. 启动客户端
+        print_log("server: 正在启动客户端......")
+        # 记录一下后端的进程用于重启
+        # self.backend = subprocess.Popen(["python", client_server_file])
+        self._start_client()
 
-    def render_bubble(self, rendered_data, agent_response, node_name):
+        # Step4. 监听并阻塞当前进程
+        print_log("server: 等待客户端连接......")
+        self.server_socket.listen(1)
+
+        # Step5. 测试连接
+        client_socket, client_address = self.server_socket.accept()
+        print_log("server: 正在建立连接......")
+        self.client_socket = client_socket
+        while True:
+            client_socket.send("hi".encode('utf-8'))
+            time.sleep(1)
+            data = client_socket.recv(self.bufsize).decode('utf-8')
+            if data == "hello agent":
+                client_socket.send("check".encode('utf-8'))
+                print_log("server:连接成功")
+                break
+        assert os.path.isfile("PORT.txt")
+        os.remove("PORT.txt")
+        if self.receive_server:
+            del self.receive_server
+        self.receive_server = self.receive_message()
+        assert next(self.receive_server) == "hello"
+    
+    @abstractmethod
+    def render_and_register_ui(self):
+        """渲染ui并注册"""
+        pass
+    
+    def first_recieve_from_client(self, reset_mode:bool=False):
+        """1. 接受client发送的消息，进行渲染，同时需要注册"""
+        """一般放在构造的时候"""
+        self.FIRST_RECIEVE_FROM_CLIENT = True
+        data_list:List = self.receive_server.send(None)
+        assert len(data_list) == 1
+        data = eval(data_list[0])
+        assert isinstance(data, dict)
+        self.cache.update(data)
+        if not reset_mode:
+            self.render_and_register_ui()
+    
+    def _second_send(self, message:dict):
+        """2. 发送消息，主要是将值覆盖"""
+        self.send_message(str(message))
+    
+    def _third_send(self):
+        """3. 发送开始消息，主要是驱动"""
+        self.send_message(self.SIGN['START'])
+    
+    def send_start_cmd(self, message:dict={"hello":"hello"}):
+        """运行之前请确保first_receive_from_client已经运行"""
+        """将上面的全部串起来"""
+        """此处的message就是前端搜集的，通过dict的方式进行发送"""
+        assert self.FIRST_RECIEVE_FROM_CLIENT, "请先保证从client接受消息"
+        self._second_send(message=message)
+        time.sleep(1)
+        self._third_send()
+        self.FIRST_RECIEVE_FROM_CLIENT = False
+    
+    def __init__(
+        self,
+        # client_server_file: str,
+        client_cmd: list,           # ['python','test.py','--a','b','--c','d']
+        socket_host: str = HOST,
+        socket_port: int = PORT,
+        bufsize: int = 1024
+    ):
+        self.server_socket = None
+        self.SIGN = SPECIAL_SIGN
+        self.socket_host = socket_host
+        self.socket_port = socket_port
+        self.bufsize = bufsize
+        self.client_cmd = client_cmd
+        
+        self.receive_server = None
+        self.cache = {}
+        assert self.bufsize > 0
+        self._connect()
+
+    def _start_client(self):
+        print("启动进程......")
+        self.backend = subprocess.Popen(self.client_cmd)
+        
+    def _close_client(self):
+        print("关闭进程......")
+        self.backend.terminate()
+    
+    def reset(self):
+        # Step 1. 关闭后端进程并重新启动
+        self._close_client()
+        time.sleep(1)
+        self._connect()
+
+    def render_bubble(self, rendered_data, agent_response, node_name, render_node_name:bool=True):
         # print("mike:", agent_response)
         print("mike-5")
-        output = f"**{node_name}**<br>"
+        output = f"**{node_name}**<br>" if render_node_name else ""
         for item in agent_response:
             for agent_name in item:
                 content = item[agent_name].replace("\n", "<br>")
