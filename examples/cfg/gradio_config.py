@@ -36,12 +36,12 @@ class GradioConfig:
     # 样式
     CSS = """
     #chatbot1 .user {
-        background-color:#1F2937;
-        border-color:#1F2937;
+        background-color:transparent;
+        border-color:transparent;
     }
     #chatbot1 .bot {
-        background-color:#1F2937;
-        border-color:#1F2937;
+        background-color:transparent;
+        border-color:transparent;
     }
     """
     # 身份
