@@ -7,14 +7,19 @@ LLM = {
 
 
 Agents = {
-    "name1" : {
+    "Lilong" : {
         "style" : "professional",
         "roles" : {
-            "state1" : "role1",
+            "company" : "coder",
             "state2" : "role2",
         },
     "name2" : {   
-    }
+        "style" : "professional",
+            "roles" : {
+                "company" : "coder",
+                "state2" : "role2",
+            },
+        }
     }
 }
 

@@ -48,7 +48,6 @@ class Agent:
         self.current_role = ""
         self.long_term_memory = []
         self.short_term_memory = ""
-        self.relevant_history = ""
         self.current_state = None
         self.first_speak = True
     
