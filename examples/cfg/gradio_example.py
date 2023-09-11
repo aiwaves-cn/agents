@@ -66,9 +66,10 @@ class DebateUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024
+        bufsize: int = 1024,
+        ui_name: str = "DebateUI"
     ):
-        super(DebateUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(DebateUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         # """初始化一下"""
         # self.receive_server = self.receive_message()
         # next(self.receive_server)
@@ -371,9 +372,10 @@ class SingleAgentUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024
+        bufsize: int = 1024,
+        ui_name: str = "SingleAgentUI"
     ):
-        super(SingleAgentUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(SingleAgentUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         # self.FIRST = True
         # self.receive_server = self.receive_message()
         # assert next(self.receive_server) == "hello"
@@ -579,9 +581,10 @@ class NovelUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024
+        bufsize: int = 1024,
+        ui_name: str = "NovelUI"
     ):
-        super(NovelUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(NovelUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
 
 class CodeUI(WebUI):
     """传给我，我传给他，然后启动"""
@@ -595,9 +598,10 @@ class CodeUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024 
+        bufsize: int = 1024,
+        ui_name: str = "CodeUI"
     ):
-        super(CodeUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(CodeUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         self.first_recieve_from_client()
         self.data_history = list()
     
