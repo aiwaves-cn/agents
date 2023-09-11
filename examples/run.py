@@ -4,9 +4,9 @@ import argparse
 import sys
 sys.path.append("../src/agents")
 from SOP import SOP
-from Agents import Agent
-from Environments import Environment
-from Memorys import Memory
+from Agent import Agent
+from Environment import Environment
+from Memory import Memory
 
 def init(config): 
     if not os.path.exists("logs"):

@@ -1,4 +1,4 @@
-from Memorys import Memory
+from Memory import Memory
 class Action:
     """
     The basic action unit of agent

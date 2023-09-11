@@ -5,9 +5,9 @@ import sys
 sys.path.append("../../src/agents")
 sys.path.append("../cfg")
 from SOP import SOP
-from Agents import Agent
-from Environments import Environment
-from Memorys import Memory
+from Agent import Agent
+from Environment import Environment
+from Memory import Memory
 from gradio_base import Client
 from gradio_example import DebateUI
 

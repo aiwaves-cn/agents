@@ -15,11 +15,11 @@
 # limitations under the License.
 """LLM autonoumous agent"""
 from utils import get_relevant_history
-from LLMs.base_LLM import *
-from Componenets.base_component import *
-from Componenets.extra_component import *
-from Actions import Action
-from Prompts import *
+from LLM.base_LLM import *
+from Component.base_component import *
+from Component.extra_component import *
+from Action import Action
+from Prompt import *
 
 headers = {
     "Content-Type": "text/event-stream",
