@@ -105,7 +105,7 @@ class OpenAILLM(LLM):
                     assert False, "exceed max length"
                     break
                 else:
-                    print("Please wait {WAIT_TIME} seconds and resend later ...")
+                    print(f"Please wait {WAIT_TIME} seconds and resend later ...")
                     time.sleep(WAIT_TIME)
 
         if functions:
