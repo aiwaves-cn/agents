@@ -28,7 +28,7 @@
   
 
 Welcome to **🤖Agents**, an easy-to-use toolkit for building customized AI agents.
-With our Agent module, all you need to do is generate and modify particular prompts with the help of **🧩Component** module . Sequently, as aforementioned, those stylized prompts, graved in **✨Nodes**, will define your agent's status, styles, etc. Numerous sorts of Nodes altogether formed our **📋Standard Operation Process(SOP) System**, which helps run your agents under sophisticated circumstances.
+With our Agent module, all you need to do is generate and modify particular prompts with the help of **🧩Component** module . Sequently, as aforementioned, those stylized prompts, graved in **✨States**, will define your agent's status, styles, etc. Numerous sorts of States altogether formed our **📋Standard Operation Process(SOP) System**, which helps run your agents under sophisticated circumstances.
 
   
 
