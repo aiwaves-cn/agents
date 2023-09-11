@@ -56,12 +56,6 @@
       "begin_query": "欢迎来到店铺，请问您有什么需要购买的吗？",
       "agent_states": {
         "AI导购": {
-          "LLM_type": "OpenAI",
-          "LLM": {
-            "temperature": 0.3,
-            "model": "gpt-3.5-turbo-16k-0613",
-            "log_path": "logs/AI导购"
-          },
           "style": {
             "role": "网络导购",
             "style": "幽默风趣"
@@ -84,11 +78,6 @@
         },
         "客户": {
           "LLM_type": "OpenAI",
-          "LLM": {
-            "temperature": 0.3,
-            "model": "gpt-3.5-turbo-16k-0613",
-            "log_path": "logs/客户"
-          },
           "style": {
             "role": "客户",
             "style": "冷漠刁钻"

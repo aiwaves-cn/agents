@@ -5,6 +5,9 @@ from Memorys import Memory
 from Prompts import * 
 
 class Environment:
+    """
+    The place where the agent activities, responsible for storing some shared memories
+    """
     def __init__(self, config) -> None:
         self.shared_memory = {"long_term_memory": [], "short_term_memory": None}
         self.agents = None
