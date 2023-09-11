@@ -1,9 +1,9 @@
 from utils import get_relevant_history, get_embedding
 import torch
-from LLMs.base_LLM import *
-from Memorys import Memory
-from Prompts import * 
-
+from LLM.base_LLM import *
+from Memory import Memory
+from Prompt import * 
+import json
 class Environment:
     """
     The place where the agent activities, responsible for storing some shared memories

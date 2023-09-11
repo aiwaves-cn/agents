@@ -38,9 +38,9 @@ import uvicorn
 import yaml
 sys.path.append("../src/agents")
 from SOP import SOP
-from Agents import Agent
-from Environments import Environment
-from Memorys import Memory
+from Agent import Agent
+from Environment import Environment
+from Memory import Memory
 
 # -*- coding: utf-8 -*-
 

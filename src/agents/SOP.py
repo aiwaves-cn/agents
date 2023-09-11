@@ -15,11 +15,11 @@
 # limitations under the License.
 """standard operation procedure of an LLM Autonomous agent"""
 import random
-from LLMs.base_LLM import *
+from LLM.base_LLM import *
 from State import State
 from utils import extract, get_relevant_history
-from Memorys import Memory
-from Prompts import *
+from Memory import Memory
+from Prompt import *
 import json
 
 

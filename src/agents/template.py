@@ -18,7 +18,7 @@ Agents = {
     }
 }
 
-# indispensable parameter:  "controller_type"
+# indispensable parameter:  "controller_type"（"order","random","rule"）
 controller = {
     "controller_type": "order",
     "max_chat_nums" : 12,

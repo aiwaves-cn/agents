@@ -4,8 +4,8 @@ import argparse
 import sys
 sys.path.append("../../../src/agents")
 from SOP import SOP
-from Agents import Agent
-from Environments import Environment
+from Agent import Agent
+from Environment import Environment
 
 def init(config):
     agents,roles_to_names,names_to_roles = Agent.from_config(config)
