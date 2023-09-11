@@ -113,6 +113,8 @@ def init(config):
 parser = argparse.ArgumentParser(description='A demo of chatbot')
 parser.add_argument('--agent', type=str, help='path to SOP json')
 parser.add_argument('--config', type=str, help='path to config')
+parser.add_argument('--port', type=str, help='your port')
+parser.add_argument('--route', type=str, help='your route')
 args = parser.parse_args()
 with open(args.config, "r") as file:
     config = yaml.safe_load(file)
@@ -124,23 +126,23 @@ for key, value in config.items():
 agents,sop,environment = init(args.agent)
 
 
-@app.post('/api/v1/ask')
+@app.post(args.route)
 async def reply(request:Request):
    #print(request.json.ge)
-
     data=await request.json()
     userName = data.get('userName')
     userRole = data.get('userRole')
     query = data.get('query')
     memory = Memory(userRole, userName, query)
-    environment.update_memory(memory)
+    environment.update_memory(memory,environment.current_state)
+    environment.current_state.index = 1
     
     current_state,current_agent= sop.next(environment,agents)
-    action = current_agent.step(current_state,environment)
-    environment.update(action,current_state)
+    action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+    memory = action.process()
+    environment.update_memory(memory,current_state)
     
-    
-    response = action["response"]
+    response = action.response
 
     async def event_stream():
         async for event in generate_events(response):

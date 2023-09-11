@@ -2,8 +2,10 @@ from Componenets.base_component import *
 from Componenets.extra_component import *
 
 
-# state should have  "name"
 class State:
+    """
+    Sub-scenes of role activities, responsible for storing the tasks that each role needs to do
+    """
     def __init__(self, **kwargs):
         self.next_states = {}
         self.name = kwargs["name"]
@@ -77,6 +79,11 @@ class State:
                     elif component == "CustomizeComponent":
                         component_dict["CustomizeComponent"] = CustomizeComponent(
                             component_args["template"], component_args["keywords"]
+                        )
+                    
+                    elif component == "system" : 
+                        component_dict["system"] = SystemComponent(
+                            component_args["system_prompt"]
                         )
 
                     # =================================================================================#

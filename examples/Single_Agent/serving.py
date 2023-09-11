@@ -71,7 +71,7 @@ def init(config):
     environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
     sop.roles_to_names,sop.names_to_roles = roles_to_names,names_to_roles
     for name,agent in agents.items():
-        agent.agent_dict["environment"] = environment
+        agent.environment = environment
     return agents,sop,environment
 
 def run(agents,sop,environment):
@@ -104,8 +104,8 @@ def prepare(agents, sop, environment):
 if __name__ == '__main__':
     GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
-    parser.add_argument('--agent', type=str, help='path to SOP json', default="ybf/ybf.json")
-    parser.add_argument('--config', type=str, help='path to config', default="ybf/config.yaml")
+    parser.add_argument('--agent', type=str, help='path to SOP json', default="youcai/youcai_base_websearch.json")
+    parser.add_argument('--config', type=str, help='path to config', default="youcai/config.yaml")
     args = parser.parse_args()
 
     with open(args.config, "r") as file:

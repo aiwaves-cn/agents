@@ -10,11 +10,21 @@ class Memory:
     
     @classmethod
     def get_chat_history(self,messages):
+        """
+        Splice a memory list into a sentence
+        input : 
+        messages(list) : list of memory(Memory)
+        Return :
+        chat_history(str) : One sentence after integration
+        """
         chat_history = ""
-        for conversation in messages:
-            chat_history += eval(Chat_single_message)
+        for message in messages:
+            name,role,content = message.send_name,message.send_role,message.content
+            chat_history += eval(Single_message)
         chat_history = eval(Chat_total_message)
         return chat_history
     
     def get_query(self):
-        return eval(Self_message)
+        "Return : query(str):last sentence"
+        name,role,content = self.send_name,self.send_role,self.content
+        return eval(Single_message)

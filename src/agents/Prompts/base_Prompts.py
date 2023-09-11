@@ -11,7 +11,7 @@ Transit_system_prompt = "f\"{environment_prompt};{judge_system_prompt}\""
 
 #  transit chat message 
 #  "environment_prompt" is get from "Get_environment_prompt" ; "chat_history_message" if from Memory
-Transit_message = "f\"{environment_summary};The new chat history is as follows:\\n<new chat> {chat_history_message}\\n</new chat>;You especially need to pay attention to the last query<query>\\n{query}\\n</query>\\n\""
+Transit_message = "f\"{environment_summary};The chat history is as follows:\\n<chat> {chat_history_message}\\n</chat>;You especially need to pay attention to the last query<query>\\n{query}\\n</query> and the relevant conversation <relevant>\\n{relevant_history} \\n</relevant>\\n\""
 
 
 Transit_last_prompt = "f\"{judge_last_prompt}\""
@@ -26,7 +26,7 @@ Allocate_component = "f\"If it's currently supposed to be speaking for {role}, t
 Call_system_prompt = "f\"{environment_prompt};{call_system_prompt};{allocate_prompt}\""
 
 #
-Call_last_prompt = "f\"You especially need to pay attention to the last query<query>\\n{call_last_prompt}\\n</query>\\n;{allocate_prompt};Note: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{last_name}</end> cannot be output\\n.\""
+Call_last_prompt = "f\"You especially need to pay attention to the last query<query>\\n{call_last_prompt}\\n</query> and the relevant conversation <relevant>\\n{relevant_history} \\n</relevant>\\n;{allocate_prompt};Note: The person whose turn it is now cannot be the same as the person who spoke last time, so <end>{last_name}</end> cannot be output\\n.\""
 
 Call_message = "f\"The chat history is as follows:\\n<history>\\n{chat_history_message}</history>\\n;The last person to speak is: {last_name}\\n. \""
 #sop.call================================================================
@@ -38,11 +38,9 @@ Call_message = "f\"The chat history is as follows:\\n<history>\\n{chat_history_m
 
 
 # Memory========================================================================================================
-Chat_single_message = "f\"<{conversation.send_name}({conversation.send_role})>\\n {conversation.content} \\n</{conversation.send_name}({conversation.send_role})>\\n\""
+Single_message = "f\"{name}:{content}\""
 
 Chat_total_message = "f\"{chat_history}\""
-
-Self_message = "f\"<{self.send_name}({self.send_role})>\\n {self.content} \\n</{self.send_name}({self.send_role})>\\n\""
 # Memory========================================================================================================
 
 
@@ -76,5 +74,7 @@ Agent_observe_memory = "f\"Here's what you need to know(Remember, this is just i
             The previous summary of chat history is as follows :<summary>\\n{self.short_term_memory}\\n</summary>.\
             The new chat history is as follows:\\n<new chat> {conversations}\\n</new chat>\\n\
             </information>,\
-            You especially need to pay attention to the last query<query>\\n<{query.send_name}({query.send_role})>\\n {query.content} \\n</{query.send_name}({query.send_role})>\\n</query>\\n\""
+            You especially need to pay attention to the last query<query>\\n{query.send_name}:{query.content}\\n</query>\\n\""
+            
+Agent_last_prompt = "f\"{last_prompt},please remember,Remember, you only represent yourself, please output strictly according to the following format:\\n{name}:\""
 # Agent========================================================================================================

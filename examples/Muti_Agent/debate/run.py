@@ -7,63 +7,127 @@ sys.path.append("../../cfg")
 from SOP import SOP
 from Agents import Agent
 from Environments import Environment
+from Memorys import Memory
 from gradio_base import Client
 from gradio_example import DebateUI
 
-# Client.server.send(str([state, name, chunk, node_name])+"<SELFDEFINESEP>")
-# Client.cache["start_agent_name"]
-# state = 10, 11, 12, 30
+
+
+def process(action):
+    response = action.response
+    send_name = action.name
+    send_role = action.role
+    if not action.is_user:
+        print(f"{send_name}({send_role}):{response}")
+    memory = Memory(send_role, send_name, response)
+    return memory
+
+
+
+def gradio_process(action,current_state):
+    response = action.response
+    all = ""
+    for i,res in enumerate(response):
+        all+=res
+        state = 10
+        if action.is_user:
+            state = 30
+            print("state:", state)
+        elif action.state_begin:
+            state = 12
+            action.state_begin = False
+        elif i>0:
+            state = 11
+        print("long:", state)
+        Client.send_server(str([state, action.name, res, current_state.name]))
+        if state == 30:
+            """阻塞当前进程，等待接收"""
+            print("client:阻塞等待输入")
+            data: list = next(Client.receive_server)
+            content = ""
+            for item in data:
+                if item.startswith("<USER>"):
+                    content = item.split("<USER>")[1]
+                    break
+            print(f"client:接收到了`{content}`")
+            action.response = content
+            break
+        else:
+            action.response = all
 
 def init(config):
-    
+    if not os.path.exists("logs"):
+        os.mkdir("logs")
     agents,roles_to_names,names_to_roles = Agent.from_config(config)
     sop = SOP.from_config(config)
     environment = Environment.from_config(config)
     environment.agents = agents
     environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
     sop.roles_to_names,sop.names_to_roles = roles_to_names,names_to_roles
-    
-    
-    topic = input("topic:")
-    Affirmative_topic = input("Affirmative topic:")
-    Negative_topic = input("Negative topic")
-    topic = f"The debate topic is as follows: \n<debate topic>\n{topic} Affirmative viewpoint: {Affirmative_topic}, negative viewpoint: {Negative_topic}.\n<debate topic>\n, now , begin to discuss!"
-    sop.states["Affirmative_Task_Allocation_state"].begin_query = topic
-    sop.states["Negative_Task_Allocation_state"].begin_query = topic
+    for name,agent in agents.items():
+        agent.environment = environment
     return agents,sop,environment
 
-
-
-def run(agents,sop,environment,is_gradio = False):
-    while True:
+def run(agents,sop,environment):
+    while True:      
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
             print("finished!")
             break
-        action = current_agent.step(current_state,environment,is_gradio)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
-        response = action["response"]
-        for i,res in enumerate(response):
-            state = 10
-            if action["state_begin"]:
-                state = 12
-            elif i>0:
-                state = 11
-            elif action["is_user"]:
-                state = 30
-            
-            Client.server.send(str([state, action["name"], res, current_state.name])+"<SELFDEFINESEP>")
+        action = current_agent.step(current_state,environment,"")   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        gradio_process(action,current_state)
+        memory = process(action)
+        environment.update_memory(memory,current_state)
         
-        environment.update(action,current_state)
 
-parser = argparse.ArgumentParser(description='A demo of chatbot')
-parser.add_argument('--config', type=str, help='path to config')
-args = parser.parse_args()
-with open(args.config, "r") as file:
-    config = yaml.safe_load(file)
+def prepare(agents, sop, environment):
+    """建立连接+发送数据+等待接收和启动命令"""
+    client = Client()
+    Client.send_server = client.send_message
+    # 这边需要解析一下，到时候传的时候还要在拼起来
+    content = sop.states['Affirmative_Task_Allocation_state'].begin_query
+    parse_data = DebateUI.extract(content)
+    client.send_message(
+        {
+            "theme": f"{parse_data[0]}",
+            "positive": f"{parse_data[1]}",
+            "negative": f"{parse_data[2]}",
+            "agents_name": DebateUI.convert2list4agentname(sop)[0],
+            "only_name":  DebateUI.convert2list4agentname(sop)[1],
+            "default_cos_play_id": -1
+        }
+    )
+    client.listening_for_start_()
+    """覆盖参数"""
+    if Client.cache["cosplay"] is not None:
+        agents[Client.cache["cosplay"]].is_user = True
+    sop.states['Negative_Task_Allocation_state'] = sop.states['Affirmative_Task_Allocation_state'].begin_query = \
+        DebateUI.merge(
+            theme=Client.cache["theme"], positive=Client.cache["positive"], negative=Client.cache["negative"],
+            origin_content=sop.states['Affirmative_Task_Allocation_state'].begin_query
+        )
 
-for key, value in config.items():
-    os.environ[key] = value
+
+if __name__ == '__main__':
+    GRADIO = True
+    parser = argparse.ArgumentParser(description='A demo of chatbot')
+    parser.add_argument('--agent', type=str, help='path to SOP json', default="debate.json")
+    parser.add_argument('--config', type=str, help='path to config', default="auto_config.yaml")
+    args = parser.parse_args()
+
+    with open(args.config, "r") as file:
+        config = yaml.safe_load(file)
+
+    for key, value in config.items():
+        os.environ[key] = value
     
+    agents,sop,environment = init(args.agent)
+    
+    if GRADIO:
+        prepare(agents, sop, environment)
 
-agents,sop,environment = init("debate.json")
-run(agents,sop,environment)
+    run(agents,sop,environment)
+
+
+    for key, value in config.items():
+        del os.environ[key]

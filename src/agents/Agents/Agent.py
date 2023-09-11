@@ -55,8 +55,16 @@ class Agent:
 
     @classmethod
     def from_config(cls, config_path):
+        """
+        Initialize agents based on json file
+        Return:
+        agents(dict) : key:agent_name;value:class(Agent) 
+        names_to_roles(dict) : key:state_name  value:(dict; (key:agent_name ; value:agent_role))
+        roles_to_names(dict) : key:state_name  value:(dict; (key:agent_role ; value:agent_name))
+        """
         with open(config_path) as f:
             config = json.load(f)
+        
         roles_to_names = {}
         names_to_roles = {}
         agents = {}
@@ -102,11 +110,13 @@ class Agent:
                 style = agent_dict["style"],
                 begins = agent_begins
             )
+        assert len(config["agents"].keys()) != 2 or (roles_to_names[config["root"]][config["states"][config["root"]]["begin_role"]] not in user_names and "begin_query"  in config["states"][config["root"]]),"In a single-agent scenario, there must be an opening statement and it must be the agent" 
         return agents, roles_to_names, names_to_roles
 
     def step(self, current_state, environment,input):
         """
         return actions by current state and environment
+        Return: action(Action)
         """
         current_state.chat_nums +=1
         state_begin = current_state.is_begin
@@ -167,6 +177,10 @@ class Agent:
     def compile(self):
         """
         get prompt from state depend on your role
+        Return:
+        system_prompt:system_prompt for agents's LLM
+        last_prompt:last_prompt for agents's LLM
+        res_dict(dict): Other return from tool component.For example: search engine results
         """
         current_state = self.current_state
         self.current_roles = self.state_roles[current_state.name]
@@ -190,11 +204,14 @@ class Agent:
                 if "prompt" in response and response["prompt"]:
                     last_prompt = last_prompt + "\n" + response["prompt"]
                 res_dict.update(response)
+        
+        name = self.name
+        last_prompt = eval(Agent_last_prompt)
         return system_prompt, last_prompt, res_dict
 
     def observe(self, environment):
         """
-        get new memory from environment
+        Update one's own memory according to the current environment, including: updating short-term memory; updating long-term memory
         """
         MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
         current_state = self.current_state

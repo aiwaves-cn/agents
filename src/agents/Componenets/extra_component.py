@@ -117,8 +117,8 @@ class CategoryRequirementsComponent(ToolComponent):
                 itemTitle = request_item["itemTitle"]
                 itemPrice = request_item["itemPrice"]
                 itemPicUrl = request_item["itemPicUrl"]
-                recommend += f"[{i}.商品名称：{itemTitle},商品价格:{itemPrice}]({itemPicUrl})\n"
-                prompt += f"[{i}.商品名称：{itemTitle},商品价格:{itemPrice}]\n"
+                recommend += f"[{i}.商品名称：{itemTitle},商品价格:{float(itemPrice)/100}]({itemPicUrl})\n"
+                prompt += f"[{i}.商品名称：{itemTitle},商品价格:{float(itemPrice)/100}]\n"
             print(recommend)
         else:
             prompt += f"""你需要知道的是：用户目前选择的商品是{category}，而我们店里没有这类商品，但是我们店里有一些近似商品，如{top_category},{topk_result[0][0]}，你需要对这些近似商品进行介绍，并引导用户购买"""

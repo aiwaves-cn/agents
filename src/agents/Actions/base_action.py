@@ -1,5 +1,8 @@
 from Memorys import Memory
 class Action:
+    """
+    The basic action unit of agent
+    """
     def __init__(self,**kwargs):
         self.response = None
         self.is_user = False
@@ -11,6 +14,10 @@ class Action:
     
     
     def process(self):
+        """
+        processing action
+        Rerutn : memory(Memory)
+        """
         response = self.response
         send_name = self.name
         send_role = self.role

@@ -93,6 +93,14 @@ class OutputComponent(PromptComponent):
             do not perform additional output, please output in strict accordance with the above format!\n"""
 
 
+class SystemComponent(PromptComponent):
+    def __init__(self,system_prompt):
+        super().__init__()
+        self.system_prompt = system_prompt
+    
+    def get_prompt(self, agent):
+        return self.system_prompt
+
 class LastComponent(PromptComponent):
     def __init__(self, last_prompt):
         super().__init__()
@@ -168,6 +176,14 @@ class CoTComponent(PromptComponent):
 
 
 class CustomizeComponent(PromptComponent):
+    """
+    Custom template
+    template(str) : example: "i am {}"
+    keywords(list) : example : ["name"]  
+    example : agent.environment.shared_memory["name"] = "Lilong"
+    the component will get the keyword attribute from the environment, and then add it to the template.
+    Return : "i am Lilong"
+    """
     def __init__(self, template, keywords) -> None:
         super().__init__()
         self.template = template
@@ -178,11 +194,16 @@ class CustomizeComponent(PromptComponent):
         for keyword in self.keywords:
             current_keyword = agent.environment.shared_memory[keyword]
             template_keyword[keyword] = current_keyword
-        print(template_keyword)
         return self.template.format(**template_keyword)
 
 
 class KnowledgeBaseComponent(ToolComponent):
+    """
+    Inject knowledge base
+    top_k : Top_k with the highest matching degree
+    type : "QA" or others
+    knowledge_base(json_path) : knowledge_base_path
+    """
     def __init__(self, top_k, type, knowledge_base):
         super().__init__()
         self.top_k = top_k
@@ -252,6 +273,7 @@ class KnowledgeBaseComponent(ToolComponent):
 
 
 class StaticComponent(ToolComponent):
+    "Return static response"
     def __init__(self, output):
         super().__init__()
         self.output = output
@@ -262,6 +284,11 @@ class StaticComponent(ToolComponent):
 
 
 class ExtractComponent(ToolComponent):
+    """
+    Extract keywords based on the current scene and store them in the environment
+    extract_words(list) : Keywords to be extracted
+    system_prompt & last_prompt : Prompt to extract keywords
+    """
     def __init__(
         self,
         extract_words,
