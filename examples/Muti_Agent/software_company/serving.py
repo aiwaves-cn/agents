@@ -5,9 +5,9 @@ import sys
 sys.path.append("../../../src/agents")
 sys.path.append("../../cfg")
 from SOP import SOP
-from Agents import Agent
-from Environments import Environment
-from Memorys import Memory
+from Agent import Agent
+from Environment import Environment
+from Memory import Memory
 from gradio_base import Client
 from gradio_example import DebateUI
 
@@ -55,7 +55,7 @@ def init(config):
     environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
     sop.roles_to_names,sop.names_to_roles = roles_to_names,names_to_roles
     for name,agent in agents.items():
-        agent.agent_dict["environment"] = environment
+        agent.environment = environment
     return agents,sop,environment
 
 def run(agents,sop,environment):
@@ -63,6 +63,7 @@ def run(agents,sop,environment):
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
             print("finished!")
+            Client.send_server(str([99, " ", " ", " "]))
             break
         action = current_agent.step(current_state,environment,True)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
@@ -79,7 +80,8 @@ def prepare(agents, sop, environment):
     client.send_message(
         {
             "requirement": f"{sop.states['design_state'].begin_query}",
-            "agents_name": list(agents.keys())
+            "agents_name": list(agents.keys()),
+            "pwd": os.getcwd()
         }
     )
     print(f"client: {list(agents.keys())}")
