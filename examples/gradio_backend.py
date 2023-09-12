@@ -113,7 +113,7 @@ def prepare(agents, sop, environment):
 if __name__ == '__main__':
     GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
-    parser.add_argument('--agent', type=str, help='path to SOP json', default="Single_Agent/shopping_assistant/config.json")
+    parser.add_argument('--agent', type=str, help='path to SOP json', default="/home/aiwaves/longli/agents/examples/Single_Agent/oculist_agent/config.json")
     args = parser.parse_args()
 
 
