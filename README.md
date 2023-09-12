@@ -1,6 +1,3 @@
-
-  
-
 # <p align="center"><img src='./assets/logo.png'  width=300></p>
 
   
@@ -15,20 +12,23 @@
 
 **Agents** is an open-source library/framework for building autonomous language agents. The library is carefully engineered to support important features including **long-short term memory**, **tool usage**, **web navigation**, **multi-agent communication**, and brand new features including **human-agent interaction** and **symbolic control**. With **Agents**, one can customize a language agent or a multi-agent system by simply filling in a config file in natural language and deploy the language agents in a terminal, a Gradio interface, or a backend service.
 
-One major different between our **Agents** framework and other existing frameworks for language agents is that our framework allows users to provide fine-grained control and guidance to language agents via an **SOP (Standard Operation Process)**. An SOP defines subgoals/subtasks for the overall task and allows users to customize a fine-grained workflow for the language agents 
-
-With our Agent module, all you need to do is generate and modify particular prompts with the help of **🧩Component** module . Sequently, as aforementioned, those stylized prompts, graved in **✨States**, will define your agent's status, styles, etc. Numerous sorts of States altogether formed our **📋Standard Operation Process(SOP) System**, which helps run your agents under sophisticated circumstances.
+One major different between our **Agents** framework and other existing frameworks for language agents is that our framework allows users to provide fine-grained control and guidance to language agents via an **SOP (Standard Operation Process)**. An SOP defines subgoals/subtasks for the overall task and allows users to customize a fine-grained workflow for the language agents.
 
 
-## **Updates and ToDos**
+
+## **Updates**
 
 - [ ] Support LLM-based SOP generation
 - [x] 2023.9.12 Offical Release
 
 ## **Highlights**
-  
 
-- 
+- **Long-short Term Memory**: Language agents in the library are equipped with both long-term memory implemented via VectorDB + Semantic Search and short-term memory (working memory) maintained and updated by an LLM.
+- **Tool Usage**: Language agents in the library can use any external tools via (function-calling)[https://platform.openai.com/docs/guides/gpt/function-calling] and developers and add customized tools/APIs here.
+- **Web Navigation**: Language agents in the library can use search engines to navigate the web and get useful information.
+- **Multi-agent Communication**: In addition to single language agents, the library supports building multi-agent systems in which language agents can communicate with other language agents and the environment. Different from most existing frameworks for multi-agent systems that use pre-defined rules to control the order for agents' action, **Agents** includes a *controller* function that dynamically decides which agent to act based on the previous actions and the environment, making multi-agent communication more flexible.
+- **Human-Agent interaction**: In addition to letting language agents communicate with each other in an environment, our framework seamlessly supports human users to play the role of the agent by himself/herself and input his/her own actions, and interact with other language agents in the environment.
+- **Symbolic Control**: Different from existing frameworks for language agents that only use a simple task description to control the entire multi-agent system over the whole task completion process, **Agents** allows users to use an **SOP (Standard Operation Process)** that defines subgoals/subtasks for the overall task to customize fine-grained workflows for the language agents.
 
 
 ## Installation and Usage
