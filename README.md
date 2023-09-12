@@ -22,8 +22,8 @@ With our Agent module, all you need to do is generate and modify particular prom
 
 ## **Updates and ToDos**
 
-[] Support LLM-based SOP generation
-[x] 2023.9.12 Offical Release
+- [ ] Support LLM-based SOP generation
+- [x] 2023.9.12 Offical Release
 
 ## **Highlights**
   
@@ -34,7 +34,7 @@ With our Agent module, all you need to do is generate and modify particular prom
 ## Installation and Usage
 
 ### Install the package
-[x] Option 1.  Build from source
+- [x] Option 1.  Build from source
 
     ```
     git clone https://github.com/aiwaves-cn/agents.git
@@ -42,7 +42,7 @@ With our Agent module, all you need to do is generate and modify particular prom
     pip install -e . 
     ```
 
-[] Option 2.  Install via PyPI
+- [ ] Option 2.  Install via PyPI
 
     ```
     pip install agents
@@ -50,11 +50,11 @@ With our Agent module, all you need to do is generate and modify particular prom
 
 ### Generate the config file
 
-[x] Option 1.  Fill in the config template manually
+- [x] Option 1.  Fill in the config template manually
 
 TBD
 
-[x] Option 2.  Try our WebUI for customizing the config file.
+- [x] Option 2.  Try our WebUI for customizing the config file.
 
 TBD
 
