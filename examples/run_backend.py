@@ -115,7 +115,6 @@ def init(config):
 
 parser = argparse.ArgumentParser(description='A demo of chatbot')
 parser.add_argument('--agent', type=str, help='path to SOP json')
-parser.add_argument('--config', type=str, help='path to config')
 parser.add_argument('--port', type=str, help='your port')
 parser.add_argument('--route', type=str, help='your route')
 args = parser.parse_args()
@@ -136,7 +135,7 @@ async def reply(request:Request):
     environment.current_state.index = 1
     
     current_state,current_agent= sop.next(environment,agents)
-    action = current_agent.step(current_state,environment)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+    action = current_agent.step(current_state)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
     memory = action.process()
     environment.update_memory(memory,current_state)
     
