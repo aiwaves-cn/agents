@@ -39,7 +39,8 @@ def gradio_process(action,current_state):
         elif i>0:
             state = 11
         print("long:", state)
-        Client.send_server(str([state, action.name, res, current_state.name]))
+        send_name = f"{action.name}({action.role})"
+        Client.send_server(str([state, send_name, res, current_state.name]))
         if state == 30:
             """阻塞当前进程，等待接收"""
             print("client:阻塞等待输入")
@@ -55,11 +56,11 @@ def gradio_process(action,current_state):
         else:
             action.response = all
 
-def init(config):
+def init(config): 
     if not os.path.exists("logs"):
         os.mkdir("logs")
-    agents,roles_to_names,names_to_roles = Agent.from_config(config)
     sop = SOP.from_config(config)
+    agents,roles_to_names,names_to_roles = Agent.from_config(config)
     environment = Environment.from_config(config)
     environment.agents = agents
     environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
@@ -73,6 +74,7 @@ def run(agents,sop,environment):
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
             print("finished!")
+            os.environ.clear()
             break
         action = current_agent.step(current_state,environment,"")   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
@@ -93,7 +95,8 @@ def prepare(agents, sop, environment):
             "positive": f"{parse_data[1]}",
             "negative": f"{parse_data[2]}",
             "agents_name": DebateUI.convert2list4agentname(sop)[0],
-            "only_name":  DebateUI.convert2list4agentname(sop)[1],
+            # "only_name":  DebateUI.convert2list4agentname(sop)[1],
+            "only_name":  DebateUI.convert2list4agentname(sop)[0],
             "default_cos_play_id": -1
         }
     )
@@ -112,14 +115,7 @@ if __name__ == '__main__':
     GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
     parser.add_argument('--agent', type=str, help='path to SOP json', default="debate.json")
-    parser.add_argument('--config', type=str, help='path to config', default="auto_config.yaml")
     args = parser.parse_args()
-
-    with open(args.config, "r") as file:
-        config = yaml.safe_load(file)
-
-    for key, value in config.items():
-        os.environ[key] = value
     
     agents,sop,environment = init(args.agent)
     
@@ -129,5 +125,3 @@ if __name__ == '__main__':
     run(agents,sop,environment)
 
 
-    for key, value in config.items():
-        del os.environ[key]

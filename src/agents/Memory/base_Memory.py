@@ -9,7 +9,7 @@ class Memory:
         return {"role":role,"content":self.content}
     
     @classmethod
-    def get_chat_history(self,messages):
+    def get_chat_history(self,messages,agent_name =None):
         """
         Splice a memory list into a sentence
         input : 
@@ -20,6 +20,8 @@ class Memory:
         chat_history = ""
         for message in messages:
             name,role,content = message.send_name,message.send_role,message.content
+            if agent_name and agent_name==name:
+                name = "you"
             chat_history += eval(Single_message)
         chat_history = eval(Chat_total_message)
         return chat_history

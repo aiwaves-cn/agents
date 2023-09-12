@@ -2,7 +2,7 @@
 LLM = {
     "temperature": 0.0,
     "model": "gpt-3.5-turbo-16k-0613",
-    "log_path": "logs/上帝"
+    "log_path": "logs/god"
 }
 
 
@@ -83,6 +83,12 @@ States = {
 
 # default finish_state_name is "end_state"
 SOP = {
+    "config" : {
+    "API_KEY" : "Your key",
+    "PROXY" : "Your PROXY",
+    "MAX_CHAT_HISTORY" : "5",
+    "User_Names" : "[\"alexander\"]"
+    },
     "environment_type" : "compete",
     "LLM_type": "OpenAI",
     "LLM" :LLM,

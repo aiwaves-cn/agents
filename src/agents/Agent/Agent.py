@@ -14,10 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """LLM autonoumous agent"""
-from utils import get_relevant_history
 from LLM.base_LLM import *
-from Component.base_component import *
-from Component.extra_component import *
+from Component import *
 from Action import Action
 from Prompt import *
 
@@ -50,6 +48,7 @@ class Agent:
         self.short_term_memory = ""
         self.current_state = None
         self.first_speak = True
+        self.environment = None
     
 
     @classmethod
@@ -112,16 +111,18 @@ class Agent:
         assert len(config["agents"].keys()) != 2 or (roles_to_names[config["root"]][config["states"][config["root"]]["begin_role"]] not in user_names and "begin_query"  in config["states"][config["root"]]),"In a single-agent scenario, there must be an opening statement and it must be the agent" 
         return agents, roles_to_names, names_to_roles
 
-    def step(self, current_state, environment,input):
+    def step(self, current_state,input):
         """
         return actions by current state and environment
         Return: action(Action)
         """
+        
         current_state.chat_nums +=1
         state_begin = current_state.is_begin
         agent_begin = self.begins[current_state.name]["is_begin"]
         self.begins[current_state.name]["is_begin"] = False
         current_state.is_begin = False
+        environment = self.environment
         
         self.current_state = current_state
         # 先根据当前环境更新信息
@@ -134,7 +135,7 @@ class Agent:
             response = f"{self.name}:{input}"
         else:
             if len(environment.shared_memory["long_term_memory"])>0:
-                current_history = self.observe(environment)
+                current_history = self.observe()
                 self.long_term_memory.append(current_history)
             if agent_begin:
                 response = (char for char in self.begins[current_state.name]["begin_query"])
@@ -158,10 +159,12 @@ class Agent:
         return actions by the current state
         """
         current_state = self.current_state
-        system_prompt, last_prompt, res_dict = self.compile()
         chat_history = self.long_term_memory
-
         current_LLM = self.LLMs[current_state.name]
+        
+        system_prompt, last_prompt, res_dict = self.compile()
+
+        
 
         response = current_LLM.get_response(
             chat_history, system_prompt, last_prompt, stream=True
@@ -172,7 +175,30 @@ class Agent:
         self.long_term_memory.append(
             {"role": "assistant", "content": memory.content}
         )
+        
+        MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
+        environment = self.environment
+        current_chat_history_idx = environment.current_chat_history_idx if environment.environment_type == "competive" else 0
+        current_long_term_memory = environment.shared_memory["long_term_memory"][current_chat_history_idx:]
+        if len(current_long_term_memory) % MAX_CHAT_HISTORY == 0:
+            current_state = self.current_state
+            current_role = self.state_roles[current_state.name]
+            current_component_dict = current_state.components[current_role]
+                
+            # get chat history from new conversation
+            conversations = environment._get_agent_new_memory(self,current_long_term_memory)
 
+            # get summary
+            summary_prompt = (
+                current_state.summary_prompt[current_role]
+                if current_state.summary_prompt
+                else f"""your name is {self.name},your role is{current_component_dict["style"].role},your task is {current_component_dict["task"].task}.\n"""
+            )
+            summary_prompt =eval(Agent_summary_system_prompt)
+            summary = self.LLMs[current_state.name].get_response(None, summary_prompt,stream = False)
+            self.short_term_memory = summary
+            
+        
     def compile(self):
         """
         get prompt from state depend on your role
@@ -205,84 +231,17 @@ class Agent:
                 res_dict.update(response)
         
         name = self.name
+        query = self.environment.shared_memory["long_term_memory"][-1]
         last_prompt = eval(Agent_last_prompt)
+        system_prompt = eval(Agent_system_prompt)
         return system_prompt, last_prompt, res_dict
 
-    def observe(self, environment):
+
+    def observe(self):
         """
         Update one's own memory according to the current environment, including: updating short-term memory; updating long-term memory
         """
-        MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
-        current_state = self.current_state
-        current_role = self.state_roles[current_state.name]
-        current_component_dict = current_state.components[current_role]
-        
-        
-        if environment.environment_type == "compete":
-            current_long_term_memory = environment.shared_memory["long_term_memory"][environment.current_chat_history_idx:]
-            current_chat_embbedings = environment.shared_memory["chat_embeddings"][environment.current_chat_history_idx:]
-        else:
-            current_long_term_memory = environment.shared_memory["long_term_memory"]
-            current_chat_embbedings = environment.shared_memory["chat_embeddings"]
-            
-        
-        # relevant_memory
-        query = current_long_term_memory[-1].content
-
-        relevant_memory = get_relevant_history(
-            query,
-            current_long_term_memory[:-1],
-            current_chat_embbedings[:-1],
-        )
-        relevant_memory = Memory.get_chat_history(relevant_memory)
-        
-        relevant_memory = eval(Agent_observe_relevant_memory)
-        self.relevant_memory = relevant_memory
-        
-
-        # get new conversation
-        last_conversation_idx = -1
-        for i, history in enumerate(current_long_term_memory):
-            if history.send_name == self.name:
-                last_conversation_idx = i
-
-        if last_conversation_idx == -1:
-            new_conversation =current_long_term_memory
-        elif (
-            last_conversation_idx
-            == len(current_long_term_memory) - 1
-        ):
-            new_conversation = []
-        else:
-            new_conversation = current_long_term_memory[
-                last_conversation_idx + 1 :
-            ]
-
-        
-        # get chat history from new conversation
-        conversations = Memory.get_chat_history(new_conversation)
-
-
-        if len(current_long_term_memory) % MAX_CHAT_HISTORY == 0:
-            # get summary
-            summary_prompt = (
-                current_state.summary_prompt[current_role]
-                if current_state.summary_prompt
-                else f"""your name is {self.name},your role is{current_component_dict["style"].role},your task is {current_component_dict["task"].task}.\n"""
-            )
-            summary_prompt =eval(Agent_summary_system_prompt)
-            response = self.LLMs[current_state.name].get_response(None, summary_prompt)
-            summary = ""
-            for res in response:
-                summary += res
-            self.short_term_memory = summary
-            
-
-        # memory = relevant_memory + summary + history + query
-        query = current_long_term_memory[-1]
-        current_memory = eval(Agent_observe_memory)
-
-        return {"role": "user", "content": current_memory}
+        return self.environment._observe(self)
         
     
     def generate_sop(self):

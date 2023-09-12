@@ -1,0 +1,173 @@
+{ 
+  "config":{
+    "API_KEY" : "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",
+    "PROXY" : "http://127.0.0.1:7000",
+    "MAX_CHAT_HISTORY" : "5",
+    "MIN_CATEGORY_SIM" : "0.7",
+    "FETSIZE" : "3",
+    "User_Names" : "[\"Agod\"]",
+    "Embed_Model" : "intfloat/multilingual-e5-large"
+  },
+  "LLM_type": "OpenAI",
+  "LLM": {
+    "temperature": 0.3,
+    "model": "gpt-3.5-turbo-16k-0613",
+    "log_path": "logs/god"
+  },
+  "root": "knowledge_response",
+  "relations": {
+    "knowledge_response": {
+      "1": "knowledge_response_book_card",
+      "0": "knowledge_response"
+    },
+    "knowledge_response_book_card": {
+      "1": "end",
+      "0": "knowledge_response_book_card"
+    },
+    "end": {
+      "0": "knowledge_response_end"
+    },
+    "knowledge_response_end": {
+      "0": "knowledge_response_end"
+    }
+  },
+  "agents": {
+    "Wu Jialong": {
+      "style":"humorous",
+      "roles":{
+      "knowledge_response": "Oculist",
+      "knowledge_response_book_card": "Oculist",
+      "knowledge_response_end": "Oculist",
+      "end": "Oculist"
+      }
+    },
+    "Agod": {
+      "style":"Cold and cunning",
+      "roles":{
+      "knowledge_response": "Customer",
+      "knowledge_response_book_card": "Customer",
+      "knowledge_response_end": "Customer",
+      "end": "Customer"
+      }
+    }
+  },
+  "states": {
+    "knowledge_response": {
+      "name": "knowledge_response",
+      "roles": [
+        "Oculist",
+        "Customer"
+      ],
+      "begin_role":"Oculist",
+      "begin_query" :"Welcome to consult, do you have any questions?",
+      "agent_states": {
+        "Oculist": {
+          "style": {
+            "role": "Eye hospital customer service"
+          },
+          "task": {
+            "task": "Guide the user to go to the hospital for an examination and answer questions related to my hospital."
+          },
+          "rule": {
+            "rule": "Your language should be concise and avoid excessive words. You need to guide me repeatedly. When the user explicitly refuses to visit the hospital, inquire about their concerns and encourage them to come for consultation, such as: \"Do you have any concerns?\" or \"Our hospital has highly professional doctors who you can discuss with in person.\" When the user expresses doubts with responses like \"I'll think about it,\" \"I'll consider it,\" or \"I need to see more,\" introduce the advantages of the hospital and guide them to come for consultation. Remember, after responding to me, guide me to visit your hospital for an examination."
+          },
+          "KnowledgeBaseComponent": {
+            "top_k": 1,
+            "type": "QA",
+            "knowledge_path": "Single_Agent/Oculist_Agent/database.json"
+          }
+        },
+        "Customer":{
+        }
+      },
+      "controller": {
+        "controller_type":"order",
+        "judge_system_prompt": "What you need to do now is determine whether the user agrees to go to the hospital. Based on the user's answer and combined with previous conversations, it is determined whether the user agrees to go to the hospital. \nIf the user agrees to go to the hospital, you need to return <end>1</end>, if not, you need to return <end>0</end>. \nYou need to pay special attention to what the Assistant and user said in the context. When the user answers OK, uh-huh, no more questions, etc., return <end>1</end>",
+        "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!",
+        "judge_extract_words": "end"
+      }
+    },
+    "knowledge_response_book_card": {
+      "name": "knowledge_response_book_card",
+      "roles": [
+        "Oculist",
+        "Customer"
+      ],
+      "agent_states": {
+        "Oculist": {
+          "style": {
+            "role": "Eye hospital customer service"
+          },
+          "task": {
+            "task": "Guide users to fill out appointment cards and answer hospital-related questions"
+          },
+          "rule": {
+            "rule": "Your language should be as concise as possible, without too much nonsense. The copy of the invitation card is: Please copy and fill in the following information and send it to me to complete the reservation. \n[Name]:\n[Telephone]:\n[Your approximate location]: District Degree]: \n The preoperative examination process includes mydriasis. After mydriasis, your vision will be blurred for 4-6 hours, which affects driving safety, so please do not drive to the hospital by yourself, and arrange your personal itinerary after the examination. You need to repeatedly invite users to fill out invitation cards. When users are chatting, euphemistic replies guide users to fill in the appointment card, such as: \"I can't provide detailed information about your question. If you need to go to the hospital for eye consultation, I can make an appointment for you.\" When users have concerns, such as: Users reply with \"I want to think about it,\" \"I'll think about it,\" \"I want to see it again,\" etc., introducing the hospital's advantages and guiding users to fill in the appointment card. If the user does not fill in the phone number completely, the user will be reminded to add the phone number."
+          },
+          "KnowledgeBaseComponent": {
+            "top_k": 1,
+            "type": "QA",
+            "knowledge_path": "Single_Agent/Oculist_Agent/database.json"
+          }
+        },
+        "Customer":{
+        }
+      },
+      "controller": {
+        "controller_type":"order",
+        "judge_system_prompt": "Based on the user's answer, analyze its relationship with the previous conversation and determine whether the user has filled out the appointment card. \n If the user fills in the phone information in the appointment card, output <end>1</end>\nIf the user does not fill in completely or the format is wrong, output <end>0</end>\n You need to pay special attention to the context ,Assitant and user said what respectively. When the user answers [Telephone]: 15563665210, <end>1</end> is returned. When the user answers [Telephone]: 15, <end>0</end> is returned because it is not filled in completely. When the user answers [Telephone]: abs, <end>0</end> is returned because it is not filled in completely.",
+        "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!",
+        "judge_extract_words": "end"
+      }
+    },
+    "knowledge_response_end": {
+      "controller": {
+        "controller_type":"order"
+      },
+      "name": "knowledge_response_end",
+      "roles": [
+        "Oculist",
+        "Customer"
+      ],
+      "agent_states": {
+        "Oculist": {
+          "style": {
+            "role": "Eye hospital customer service"
+          },
+          "task": {
+            "task": "Answer relevant questions from users."
+          },
+          "rule": {
+            "rule": "Your language should be as concise as possible and don’t talk too much."
+          },
+          "KnowledgeBaseComponent": {
+            "top_k": 1,
+            "type": "QA",
+            "knowledge_path": "Single_Agent/Oculist_Agent/database.json"
+          }
+        },
+        "Customer":{
+        }
+      }
+    },
+    "end": {
+      "name": "end",
+      "roles": [
+        "Oculist",
+        "Customer"
+      ],
+      "agent_states": {
+        "controller": {
+          "controller_type":"order"
+        },
+        "Oculist": {
+          "StaticComponent": {
+            "output": "我会帮您预约好名额，请您合理安排好时间。届时我会在二楼眼科分诊台等您。"
+          }
+        },
+        "Customer":{
+        }
+      }
+    }
+  }
+}

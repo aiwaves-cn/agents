@@ -12,7 +12,7 @@ class DebateUI(WebUI):
     正是启动之前需要匹配参数，也就是
     """
     FORMAT = "{}\n<debate topic>\n{}\nAffirmative viewpoint:{}\nNegative viewpoint:{}\n<debate topic>{}"
-    AUDIENCE = "不扮演(作为观众)"  # 路人的名字
+    AUDIENCE = "Audience"  # 路人的名字
     cache = {}
     all_agents_name = []
     receive_server = None
@@ -56,6 +56,7 @@ class DebateUI(WebUI):
                 only_name.append(name)
         agent_name.append(cls.AUDIENCE)
         agent_name = list(set(agent_name))
+        agent_name.sort()
         return agent_name, only_name
 
     def render_and_register_ui(self):
@@ -103,7 +104,7 @@ class DebateUI(WebUI):
         else:
             assert False
         # print("MIKE-data_history", self.data_history)
-        render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= state % 10 == 2)
+        render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= True or state % 10 == 2)
         return render_data
 
     def start_button_when_click(self, theme, positive, negative, choose):
@@ -236,32 +237,33 @@ class DebateUI(WebUI):
             with gr.Row():
                 with gr.Column():
                     self.text_theme = gr.Textbox(
-                        label="辩论主题:",
+                        label="Debate Topic:",
                         value=theme,
-                        placeholder="请输入辩论主题"
+                        placeholder="Please input the Debate Topic"
                     )
                     self.text_positive = gr.Textbox(
-                        label="正方观点:",
+                        label="Affirmative viewpoint:",
                         value=positive,
-                        placeholder="请输入正方观点"
+                        placeholder="Please input the Affirmative viewpoint"
                     )
                     self.text_negative = gr.Textbox(
-                        label="反方观点:",
+                        label="Negative viewpoint:",
                         value=negative,
-                        placeholder="请输入反方观点"
+                        placeholder="Please input the Negative viewpoint"
                     )
                     self.radio_choose = gr.Radio(
                         agents_name,
                         value=agents_name[default_cos_play_id],
-                        label="用户扮演的角色",
+                        label="User'agent",
                         interactive=True
                     )
                     self.btn_start = gr.Button(
-                        value="开始"
+                        value="run"
                     )
                 VISIBLE = False
                 with gr.Column():
                     self.chatbot = gr.Chatbot(
+                        height= 850,
                         elem_id="chatbot1",
                         label="对话",
                         visible=VISIBLE

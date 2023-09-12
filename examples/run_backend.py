@@ -35,7 +35,6 @@ from fastapi import FastAPI,Request
 from fastapi.responses import  JSONResponse,StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-import yaml
 sys.path.append("../src/agents")
 from SOP import SOP
 from Agent import Agent
@@ -101,13 +100,17 @@ async def generate_events(response):
         else:
             continue
         
-def init(config):
-    agents,roles_to_names,names_to_roles = Agent.from_config(config)
+def init(config): 
+    if not os.path.exists("logs"):
+        os.mkdir("logs")
     sop = SOP.from_config(config)
+    agents,roles_to_names,names_to_roles = Agent.from_config(config)
     environment = Environment.from_config(config)
     environment.agents = agents
     environment.roles_to_names,environment.names_to_roles = roles_to_names,names_to_roles
     sop.roles_to_names,sop.names_to_roles = roles_to_names,names_to_roles
+    for name,agent in agents.items():
+        agent.environment = environment
     return agents,sop,environment
 
 parser = argparse.ArgumentParser(description='A demo of chatbot')
@@ -116,12 +119,7 @@ parser.add_argument('--config', type=str, help='path to config')
 parser.add_argument('--port', type=str, help='your port')
 parser.add_argument('--route', type=str, help='your route')
 args = parser.parse_args()
-with open(args.config, "r") as file:
-    config = yaml.safe_load(file)
 
-
-for key, value in config.items():
-    os.environ[key] = value
 
 agents,sop,environment = init(args.agent)
 
@@ -134,7 +132,7 @@ async def reply(request:Request):
     userRole = data.get('userRole')
     query = data.get('query')
     memory = Memory(userRole, userName, query)
-    environment.update_memory(memory,environment.current_state)
+    environment.update_memory(memory,sop.current_state)
     environment.current_state.index = 1
     
     current_state,current_agent= sop.next(environment,agents)

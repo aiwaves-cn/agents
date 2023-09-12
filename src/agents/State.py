@@ -1,5 +1,4 @@
-from Component.base_component import *
-from Component.extra_component import *
+from Component import *
 
 
 class State:

@@ -15,7 +15,7 @@ class Environment:
         self.summary_system_prompt = {}
         self.summary_last_prompt = {}
         self.environment_prompt = {}
-        self.environment_type = config["environment_type"] if "environment_type" in config else "cooperate"
+        self.environment_type = config["environment_type"] if "environment_type" in config else "cooperative"
         self.current_chat_history_idx = 0
         self.LLMs = {}
         
@@ -106,4 +106,64 @@ class Environment:
             self.shared_memory["short_term_memory"] = summary
 
         self.agents[memory.send_name].update_memory(memory)
+    
+    
+    def _get_agent_new_memory(self,agent,current_long_term_memory):
+        # get new conversation
+        last_conversation_idx = -1
+        for i, history in enumerate(current_long_term_memory):
+            if history.send_name == agent.name:
+                last_conversation_idx = i
+
+        if last_conversation_idx == -1:
+            new_conversation =current_long_term_memory
+        elif (
+            last_conversation_idx
+            == len(current_long_term_memory) - 1
+        ):
+            new_conversation = []
+        else:
+            new_conversation = current_long_term_memory[
+                last_conversation_idx + 1 :
+            ]
+
+        # get chat history from new conversation
+        return Memory.get_chat_history(new_conversation)
+    
+    
+    def _observe(self,agent):
+        MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
+        current_state = agent.current_state
+        current_role = agent.state_roles[current_state.name]
+        current_component_dict = current_state.components[current_role]
+        
+        # cooperative:Sharing information between different states ;  competive: No information is shared between different states
+        current_chat_history_idx = self.current_chat_history_idx if self.environment_type == "competive" else 0
+        current_long_term_memory = self.shared_memory["long_term_memory"][current_chat_history_idx:]
+        current_chat_embbedings = self.shared_memory["chat_embeddings"][current_chat_history_idx:]
+            
+        
+        # relevant_memory
+        query = current_long_term_memory[-1].content
+
+        relevant_memory = get_relevant_history(
+            query,
+            current_long_term_memory[:-1],
+            current_chat_embbedings[:-1],
+        )
+        relevant_memory = Memory.get_chat_history(relevant_memory,agent.name)
+        
+        relevant_memory = eval(Agent_observe_relevant_memory)
+        agent.relevant_memory = relevant_memory
+        
+        
+        # get chat history from new conversation
+        conversations = self._get_agent_new_memory(agent,current_long_term_memory)
+
+        # memory = relevant_memory + summary + history + query
+        query = current_long_term_memory[-1]
+        current_memory = eval(Agent_observe_memory)
+
+        return {"role": "user", "content": current_memory}
+
 
