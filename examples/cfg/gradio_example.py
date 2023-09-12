@@ -1,5 +1,5 @@
 import copy
-
+import os
 from gradio_base import WebUI, UIHelper, PORT, HOST, Client
 from gradio_config import GradioConfig as gc
 from typing import List, Tuple, Any
@@ -67,9 +67,10 @@ class DebateUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024
+        bufsize: int = 1024,
+        ui_name: str = "DebateUI"
     ):
-        super(DebateUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(DebateUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         # """初始化一下"""
         # self.receive_server = self.receive_message()
         # next(self.receive_server)
@@ -373,9 +374,10 @@ class SingleAgentUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024
+        bufsize: int = 1024,
+        ui_name: str = "SingleAgentUI"
     ):
-        super(SingleAgentUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(SingleAgentUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         # self.FIRST = True
         # self.receive_server = self.receive_message()
         # assert next(self.receive_server) == "hello"
@@ -581,9 +583,10 @@ class NovelUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024
+        bufsize: int = 1024,
+        ui_name: str = "NovelUI"
     ):
-        super(NovelUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(NovelUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
 
 class CodeUI(WebUI):
     """传给我，我传给他，然后启动"""
@@ -597,9 +600,10 @@ class CodeUI(WebUI):
         client_cmd: list,
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024 
+        bufsize: int = 1024,
+        ui_name: str = "CodeUI"
     ):
-        super(CodeUI, self).__init__(client_cmd, socket_host, socket_port, bufsize)
+        super(CodeUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         self.first_recieve_from_client()
         self.data_history = list()
     
@@ -633,43 +637,61 @@ class CodeUI(WebUI):
                         elem_id="chatbot1",
                         visible=False
                     )   
-            # =========创建监听事件==========
-            self.btn_start.click(
-                fn=self.btn_send_when_click,
-                inputs=[self.chatbot, self.text_requirement],
-                outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
-            ).then(
-                fn=self.btn_send_after_click,
-                inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
-                outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
-            )
-            self.text_requirement.submit(
-                fn=self.btn_send_when_click,
-                inputs=[self.chatbot, self.text_requirement],
-                outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
-            ).then(
-                fn=self.btn_send_after_click,
-                inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
-                outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
-            )
-            self.btn_reset.click(
-                # 更新UI
-                fn=self.btn_reset_when_click,
-                inputs=[],
-                outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
-            ).then(
-                # 设置监听事件
-                fn=self.btn_reset_after_click,
-                inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
-                outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
-            )
-            self.file.select(
-                fn=self.file_when_select,
-                inputs=[self.file],
-                outputs=[self.chat_code_show]
-            )
-            # ==============================
+                # =========创建监听事件==========
+                self.btn_start.click(
+                    fn=self.btn_send_when_click,
+                    inputs=[self.chatbot, self.text_requirement],
+                    outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
+                ).then(
+                    fn=self.btn_send_after_click,
+                    inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                )
+                self.text_requirement.submit(
+                    fn=self.btn_send_when_click,
+                    inputs=[self.chatbot, self.text_requirement],
+                    outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
+                ).then(
+                    fn=self.btn_send_after_click,
+                    inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                )
+                self.btn_reset.click(
+                    fn=self.btn_reset_when_click,
+                    inputs=[],
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                ).then(
+                    fn=self.btn_reset_after_click,
+                    inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                )
+                self.file.select(
+                    fn=self.file_when_select,
+                    inputs=[self.file],
+                    outputs=[self.chat_code_show]
+                )
+                # ==============================
             self.demo = demo
+    
+    """处理发送来的数据"""
+    def handle_message(self, history:list,
+            state, agent_name, token, node_name):
+        # print("MIKE-history:",history)
+        if state % 10 == 0:
+            """这个还是在当前气泡里面的"""
+            self.data_history.append({agent_name: token})
+        elif state % 10 == 1:
+            self.data_history[-1][agent_name] += token
+        elif state % 10 == 2:
+            """表示不是同一个气泡了"""
+            history.append([None, ""])
+            self.data_history.clear()
+            self.data_history.append({agent_name: token})
+        else:
+            assert False
+        # print("MIKE-data_history", self.data_history)
+        render_data = self.render_bubble(history, self.data_history, node_name, render_node_name=True)
+        return render_data
     
     # 监听
     def btn_send_when_click(self, chatbot, text_requirement):
@@ -682,14 +704,14 @@ class CodeUI(WebUI):
         yield chatbot,\
             gr.Button.update(visible=True, interactive=False, value="运行中"),\
             gr.Textbox.update(visible=True, interactive=False, value=""),\
-            gr.Button.update(visible=True)
+            gr.Button.update(visible=False, interactive=False)                  # 重启
         """发送启动命令"""
         self.send_start_cmd({'requirement': text_requirement})
     
     def btn_send_after_click(
         self, 
         file,
-        chatbot,
+        history,
         show_code,
         btn_send,
         btn_reset,
@@ -712,14 +734,21 @@ class CodeUI(WebUI):
                 assert state in [10, 11, 12, 99]
                 if state == 99:
                     """结束渲染"""
-                    yield None, None, None, None, None, None
+                    """拿到路径"""
+                    fs = [self.cache['pwd']+'/output_code/'+_ for _ in os.listdir(self.cache['pwd']+'/output_code')]
+                    yield gr.File.update(value=fs, visible=True, interactive=True),\
+                        history, \
+                        gr.Chatbot.update(visible=True),\
+                        gr.Button.update(visible=True, interactive=True, value="开始"),\
+                        gr.Button.update(visible=True, interactive=True),\
+                        gr.Textbox.update(visible=True, interactive=True, placeholder="请输入你的要求", value="")
                     return
                 history = self.handle_message(history, state, agent_name, token, node_name)
                 yield gr.File.update(visible=False),\
                     history, \
                     gr.Chatbot.update(visible=False),\
                     gr.Button.update(visible=True, interactive=False),\
-                    gr.Button.update(visible=True, interactive=True),\
+                    gr.Button.update(visible=False, interactive=False),\
                     gr.Textbox.update(visible=True, interactive=False)
     
     def btn_reset_when_click(self):
@@ -741,6 +770,7 @@ class CodeUI(WebUI):
         btn_reset,
         text_requirement
     ):
+        print("mmmmmmm:...")
         self.reset()
         """接受来自client的值"""
         self.first_recieve_from_client(reset_mode=True)
@@ -749,7 +779,7 @@ class CodeUI(WebUI):
             gr.Chatbot.update(value=None, visible=False),\
             gr.Button.update(value="开始", visible=True, interactive=True),\
             gr.Button.update(value="重启", interactive=False, visible=False),\
-            gr.Textbox.update(value="", interactive=True, visible=True)
+            gr.Textbox.update(value=self.cache['requirement'], interactive=True, visible=True)
         
     """监听文件点击"""
     def file_when_select(self, file):
@@ -827,8 +857,21 @@ if __name__ == '__main__':
     demo.launch(share=True)
 
 if __name__ == '__main__':
-    test_ui()
-    # ui = DebateUI(
+    # test_ui()
+    import os
+
+    # 指定要遍历的文件夹路径
+    folder_path = '../Muti_Agent/software_company/output_code/'
+    print(os.listdir(folder_path))
+    
+    print(os.getcwd())
+    # # 使用os.walk()遍历文件夹
+    # for root, directories, files in os.walk(folder_path):
+    #     for file in files:
+    #         # 输出文件的完整路径
+    #         file_path = os.path.join(root, file)
+    #         print(file_path)
+    # # ui = DebateUI(
     #     client_server_file=""
     # )
     # ui.run()

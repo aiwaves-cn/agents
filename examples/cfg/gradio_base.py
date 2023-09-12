@@ -107,7 +107,8 @@ class UIHelper:
         return output
 
     @classmethod
-    def filter(cls, content: str, agent_name: str):
+    def novel_filter(cls, content, agent_name):
+        
         """比如<CONTENT>...</CONTENT>，就应该输出CONTENT:..."""
         IS_RECORDER = agent_name.lower() in ["recorder", "summary"]
         if IS_RECORDER:
@@ -188,6 +189,30 @@ class UIHelper:
                 END_FORMAT.format(key), "</span>" if IS_RECORDER else ""
             )
         return content
+    
+    @classmethod
+    def singleagent_filter(cls, content, agent_name):
+        return content
+    
+    @classmethod
+    def debate_filter(cls, content, agent_name):
+        # pass
+        return content
+    
+    @classmethod
+    def code_filter(cls, content, agent_name):
+        # return content.replace("```python", "<pre><code>").replace("```","</pre></code>")
+        return content
+    
+    @classmethod
+    def filter(cls, content: str, agent_name: str, ui_name: str):
+        mapping = {
+            "SingleAgentUI": cls.singleagent_filter,
+            "DebateUI": cls.debate_filter,
+            "NovelUI": cls.novel_filter,
+            "CodeUI": cls.code_filter
+        }
+        return mapping[ui_name](content, agent_name)
 
 class Client:
 
@@ -445,8 +470,10 @@ class WebUI:
         client_cmd: list,           # ['python','test.py','--a','b','--c','d']
         socket_host: str = HOST,
         socket_port: int = PORT,
-        bufsize: int = 1024
+        bufsize: int = 1024,
+        ui_name: str = ""
     ):
+        self.ui_name = ui_name
         self.server_socket = None
         self.SIGN = SPECIAL_SIGN
         self.socket_host = socket_host
@@ -480,7 +507,7 @@ class WebUI:
         for item in agent_response:
             for agent_name in item:
                 content = item[agent_name].replace("\n", "<br>")
-                content = UIHelper.filter(content, agent_name)
+                content = UIHelper.filter(content, agent_name, self.ui_name)
                 output = f"{output}<br>{UIHelper.wrap_css(content, agent_name)}"
         rendered_data[-1] = [rendered_data[-1][0], output]
         return rendered_data
