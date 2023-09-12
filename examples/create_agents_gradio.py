@@ -1165,24 +1165,24 @@ def add_agent_s5(num):
             number5: gr.update(visible = False)
         }
 
-def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,engine_name1,cfg_file1,action1,symptoms_box1,controller1,name2,role2,style2,task2,rule2,knowledge_path2,engine_name2,cfg_file2,action2,symptoms_box2,controller2,name3,role3,style3,task3,rule3,knowledge_path3,engine_name3,cfg_file3,action3,symptoms_box3,controller3,name4,role4,style4,task4,rule4,knowledge_path4,engine_name4,cfg_file4,action4,symptoms_box4,controller4,name5,role5,style5,task5,rule5,knowledge_path5,engine_name5,cfg_file5,action5,symptoms_box5,controller5):
+def generate_json_single_agent(api_key,proxy,name1,role1,style1,task1,rule1,knowledge_path1,engine_name1,cfg_file1,action1,symptoms_box1,controller1,name2,role2,style2,task2,rule2,knowledge_path2,engine_name2,cfg_file2,action2,symptoms_box2,controller2,name3,role3,style3,task3,rule3,knowledge_path3,engine_name3,cfg_file3,action3,symptoms_box3,controller3,name4,role4,style4,task4,rule4,knowledge_path4,engine_name4,cfg_file4,action4,symptoms_box4,controller4,name5,role5,style5,task5,rule5,knowledge_path5,engine_name5,cfg_file5,action5,symptoms_box5,controller5,max_chat_num1,max_chat_num2,max_chat_num3,max_chat_num4,max_chat_num5):
     relation_state1 = {}
     relation_state2 = {}
     relation_state3 = {}
     relation_state4 = {}
     relation_state5 = {}
     os.makedirs("output_config", exist_ok=True)
-    file_name = "output_config/" + "cofig.json"
+    file_name = "output_config/" + "config.json"
     output_adic = {}
     config = {}
     config["API_KEY"] = api_key
-    config["PROXY"] =proxy
+    config["PROXY"] = "http://127.0.0.1:"+proxy
     config["MAX_CHAT_HISTORY"] = "1000"
     config["Embed_Model"] = "intfloat/multilingual-e5-large"
     output_adic["config"] = config
     output_adic["root"] = "state1"
     states = {}
-    states["end_state"] = "end_state"
+    states["end_state"] = {"name":"end_state","agent_states":{}}
     tag = 0
     agents = {}
     if name1 != "":
@@ -1228,19 +1228,26 @@ def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,en
             agent1["WeatherComponent"] = weather_component
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller1.split())
         controller1_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state1[str(cnt)] = a
-            controller1_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller1 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller1.split("\n"):
+                a,b = i.split(":",1)
+                relation_state1[str(cnt)] = a
+                controller1_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller1_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+        if max_chat_num1:
+            controller["max_chat_num"] = int(max_chat_num1)
         controller["judge_extract_words"] = "end"
         state1["controller"] = controller
         state1[role1] = agent1
+        state1["roles"] = [role1]
         states["state1"] = state1
     if name2 != "":
         state2 = {}
@@ -1287,19 +1294,26 @@ def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,en
             agent2["WeatherComponent"] = weather_component
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller2.split())
         controller2_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state2[str(cnt)] = a
-            controller2_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller2 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller2.split("\n"):
+                a,b = i.split(":",1)
+                relation_state2[str(cnt)] = a
+                controller2_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller2_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
+        if max_chat_num2:
+            controller["max_chat_num"] = int(max_chat_num2)
         state2["controller"] = controller
         state2[role2] = agent2
+        state2["roles"] = [role2]
         states["state2"] = state2
     if name3 != "":
         state3 = {}
@@ -1347,19 +1361,26 @@ def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,en
             agent3["WeatherComponent"] = weather_component
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller3.split())
         controller3_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state3[str(cnt)] = a
-            controller3_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller3 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller3.split("\n"):
+                a,b = i.split(":",1)
+                relation_state3[str(cnt)] = a
+                controller3_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller3_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
+        if max_chat_num3:
+            controller["max_chat_num"] = int(max_chat_num3)
         state3["controller"] = controller
         state3[role3] = agent3
+        state3["roles"] = [role3]
         states["state3"] = state3
     if name4 != "":
         state4 = {}
@@ -1406,19 +1427,26 @@ def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,en
             agent4["WeatherComponent"] = weather_component
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller4.split())
         controller4_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state4[str(cnt)] = a
-            controller4_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller4 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller4.split("\n"):
+                a,b = i.split(":",1)
+                relation_state4[str(cnt)] = a
+                controller4_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller4_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
+        if max_chat_num4:
+            controller["max_chat_num"] = int(max_chat_num4)
         state4["controller"] = controller
         state4[role4] = agent4
+        state4["roles"] = [role4]
         states["state4"] = state4
     if name5 != "":
         state5 = {}
@@ -1465,20 +1493,29 @@ def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,en
             agent5["WeatherComponent"] = weather_component
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller5.split())
         controller5_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state5[str(cnt)] = a
-            controller5_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller5 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller5.split("\n"):
+                a,b = i.split(":",1)
+                relation_state5[str(cnt)] = a
+                controller5_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller5_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
+        if max_chat_num5:
+            controller["max_chat_num"] = int(max_chat_num5)
         state5["controller"] = controller
         state5[role5] = agent5
+        state5["roles"] = [role5]
         states["state5"] = state5
+    output_adic["agents"] = agents
+    output_adic["states"] = states
     if tag == 1:
         relations = {}
         relations["state1"] = relation_state1
@@ -1513,7 +1550,7 @@ def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,en
         json.dump(output_adic,f,ensure_ascii=False,indent=2)
     return file_name
 
-def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1,
+def generate_json_multi_agent(api_key,proxy,name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1,
                                  name_s1a2,role_s1a2,style_s1a2,task_s1a2,rule_s1a2,
                                  name_s1a3,role_s1a3,style_s1a3,task_s1a3,rule_s1a3,
                                  name_s1a4,role_s1a4,style_s1a4,task_s1a4,rule_s1a4,
@@ -1568,18 +1605,28 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                                  symptoms_box_s3a3,symptoms_box_s3a4,symptoms_box_s3a5,symptoms_box_s4a1,symptoms_box_s4a2,symptoms_box_s4a3,symptoms_box_s4a4,symptoms_box_s4a5,
                                  symptoms_box_s5a1,symptoms_box_s5a2,symptoms_box_s5a3,symptoms_box_s5a4,symptoms_box_s5a5,
                                  controller1,controller2,controller3,controller4,controller5,
-                                 environment_type1,environment_type2,environment_type3,environment_type4,environment_type5):
+                                 environment_type1,environment_type2,environment_type3,environment_type4,environment_type5,
+                                 begin_role1,begin_role2,begin_role3,begin_role4,begin_role5,
+                                 begin_query1,begin_query2,begin_query3,begin_query4,begin_query5,
+                                 max_chat_num_m1,max_chat_num_m2,max_chat_num_m3,max_chat_num_m4,max_chat_num_m5):
     relation_state1 = {}
     relation_state2 = {}
     relation_state3 = {}
     relation_state4 = {}
     relation_state5 = {}
     os.makedirs("output_config", exist_ok=True)
-    file_name = "output_config/" + "cofig.json"
+    file_name = "output_config/" + "config.json"
     output_adic = {}
+    config = {}
+    config["API_KEY"] = api_key
+    config["PROXY"] = "http://127.0.0.1:"+proxy
+    config["MAX_CHAT_HISTORY"] = "1000"
+    config["Embed_Model"] = "intfloat/multilingual-e5-large"
+    output_adic["config"] = config
+    output_adic["environment_type"] = environment_type1
     output_adic["root"] = "state1"
     states = {}
-    states["end_state"] = "end_state"
+    states["end_state"] = {"name":"end_state","agent_states":{}}
     tag = 0
     agents = {}
     if name_s1a1 != "":
@@ -1594,9 +1641,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s1a1] = temp1
             else:
                 agents[name_s1a1]["roles"]["state1"] = role_s1a1
-            agent_s1a1["style"] = style_s1a1
-            agent_s1a1["task"] = task_s1a1
-            agent_s1a1["rule"] = rule_s1a1
+            agent_s1a1["style"] = {"role":role_s1a1,"style":style_s1a1}
+            agent_s1a1["task"] = {"task":task_s1a1}
+            agent_s1a1["rule"] = {"rule":rule_s1a1}
             if knowledge_path_s1a1:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1636,9 +1683,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s1a2] = temp1
             else:
                 agents[name_s1a2]["roles"]["state1"] = role_s1a2
-            agent_s1a2["style"] = style_s1a2
-            agent_s1a2["task"] = task_s1a2
-            agent_s1a2["rule"] = rule_s1a2
+            agent_s1a2["style"] = {"role":role_s1a2,"style":style_s1a2}
+            agent_s1a2["task"] = {"task":task_s1a2}
+            agent_s1a2["rule"] = {"rule":rule_s1a2}
             if knowledge_path_s1a2:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1678,9 +1725,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s1a3] = temp1
             else:
                 agents[name_s1a3]["roles"]["state1"] = role_s1a3
-            agent_s1a3["style"] = style_s1a3
-            agent_s1a3["task"] = task_s1a3
-            agent_s1a3["rule"] = rule_s1a3
+            agent_s1a3["style"] = {"role":role_s1a3,"style":style_s1a3}
+            agent_s1a3["task"] = {"task":task_s1a3}
+            agent_s1a3["rule"] = {"rule":rule_s1a3}
             if knowledge_path_s1a3:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1720,9 +1767,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s1a4] = temp1
             else:
                 agents[name_s1a4]["roles"]["state1"] = role_s1a4
-            agent_s1a4["style"] = style_s1a4
-            agent_s1a4["task"] = task_s1a4
-            agent_s1a4["rule"] = rule_s1a4
+            agent_s1a4["style"] = {"role":role_s1a4,"style":style_s1a4}
+            agent_s1a4["task"] = {"task":task_s1a4}
+            agent_s1a4["rule"] = {"rule":rule_s1a4}
             if knowledge_path_s1a4:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1762,9 +1809,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s1a5] = temp1
             else:
                 agents[name_s1a5]["roles"]["state1"] = role_s1a5
-            agent_s1a5["style"] = style_s1a5
-            agent_s1a5["task"] = task_s1a5
-            agent_s1a5["rule"] = rule_s1a5
+            agent_s1a5["style"] = {"role":role_s1a5,"style":style_s1a5}
+            agent_s1a5["task"] = {"task":task_s1a5}
+            agent_s1a5["rule"] = {"rule":rule_s1a5}
             if knowledge_path_s1a5:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1796,20 +1843,29 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agent_s1a5["WeatherComponent"] = weather_component
             state1[role_s1a5] = agent_s1a5
         controller = {}
-        num_next_states = len(controller1.split())
         controller1_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state1[str(cnt)] = a
-            controller1_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller1 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller1.split("\n"):
+                a,b = i.split(":",1)
+                relation_state1[str(cnt)] = a
+                controller1_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller1_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
+        if max_chat_num_m1:
+            controller["max_chat_num"] = int(max_chat_num_m1)
         state1["controller"] = controller
         state1["environment_prompt"] = environment1
-        state1["environment_type"] = environment_type1
+        state1["begin_role"] = begin_role1
+        state1["begin_query"] = begin_query1
+        roles = [role_s1a1,role_s1a2,role_s1a3,role_s1a4,role_s1a5]
+        state1["roles"] = [i for i in roles if i!=""]
         states["state1"] = state1
     if name_s2a1 != "":
         state2 = {}
@@ -1823,9 +1879,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s2a1] = temp1
             else:
                 agents[name_s2a1]["roles"]["state2"] = role_s2a1
-            agent_s2a1["style"] = style_s2a1
-            agent_s2a1["task"] = task_s2a1
-            agent_s2a1["rule"] = rule_s2a1
+            agent_s2a1["style"] = {"role":role_s2a1,"style":style_s2a1}
+            agent_s2a1["task"] = {"task":task_s2a1}
+            agent_s2a1["rule"] = {"rule":rule_s2a1}
             if knowledge_path_s2a1:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1865,9 +1921,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s2a2] = temp1
             else:
                 agents[name_s2a2]["roles"]["state2"] = role_s2a2
-            agent_s2a2["style"] = style_s2a2
-            agent_s2a2["task"] = task_s2a2
-            agent_s2a2["rule"] = rule_s2a2
+            agent_s2a2["style"] = {"role":role_s2a2,"style":style_s2a2}
+            agent_s2a2["task"] = {"task":task_s2a2}
+            agent_s2a2["rule"] = {"rule":rule_s2a2}
             if knowledge_path_s2a2:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1907,9 +1963,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s2a3] = temp1
             else:
                 agents[name_s2a3]["roles"]["state2"] = role_s2a3
-            agent_s2a3["style"] = style_s2a3
-            agent_s2a3["task"] = task_s2a3
-            agent_s2a3["rule"] = rule_s2a3
+            agent_s2a3["style"] = {"role":role_s2a3,"style":style_s2a3}
+            agent_s2a3["task"] = {"task":task_s2a3}
+            agent_s2a3["rule"] = {"rule":rule_s2a3}
             if knowledge_path_s2a3:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1949,9 +2005,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s2a4] = temp1
             else:
                 agents[name_s2a4]["roles"]["state2"] = role_s2a4
-            agent_s2a4["style"] = style_s2a4
-            agent_s2a4["task"] = task_s2a4
-            agent_s2a4["rule"] = rule_s2a4
+            agent_s2a4["style"] = {"role":role_s2a4,"style":style_s2a4}
+            agent_s2a4["task"] = {"task":task_s2a4}
+            agent_s2a4["rule"] = {"rule":rule_s2a4}
             if knowledge_path_s2a4:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -1991,9 +2047,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s2a5] = temp1
             else:
                 agents[name_s2a5]["roles"]["state2"] = role_s2a5
-            agent_s2a5["style"] = style_s2a5
-            agent_s2a5["task"] = task_s2a5
-            agent_s2a5["rule"] = rule_s2a5
+            agent_s2a5["style"] = {"role":role_s2a5,"style":style_s2a5}
+            agent_s2a5["task"] = {"task":task_s2a5}
+            agent_s2a5["rule"] = {"rule":rule_s2a5}
             if knowledge_path_s2a5:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2026,20 +2082,29 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
             state2[role_s2a5] = agent_s2a5
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller2.split())
         controller2_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state2[str(cnt)] = a
-            controller2_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller2 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller2.split("\n"):
+                a,b = i.split(":",1)
+                relation_state2[str(cnt)] = a
+                controller2_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller2_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
+        if max_chat_num_m2:
+            controller["max_chat_num"] = int(max_chat_num_m2)
         state2["controller"] = controller
         state2["environment_prompt"] = environment2
-        state2["environment_type"] = environment_type2
+        state2["begin_role"] = begin_role2
+        state2["begin_query"] = begin_query2
+        roles = [role_s2a1,role_s2a2,role_s2a3,role_s2a4,role_s2a5]
+        state2["roles"] = [i for i in roles if i!=""]
         states["state2"] = state2
     if name_s3a1 != "":
         state3 = {}
@@ -2053,9 +2118,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s3a1] = temp1
             else:
                 agents[name_s3a1]["roles"]["state3"] = role_s3a1
-            agent_s3a1["style"] = style_s3a1
-            agent_s3a1["task"] = task_s3a1
-            agent_s3a1["rule"] = rule_s3a1
+            agent_s3a1["style"] = {"role":role_s3a1,"style":style_s3a1}
+            agent_s3a1["task"] = {"task":task_s3a1}
+            agent_s3a1["rule"] = {"rule":rule_s3a1}
             if knowledge_path_s3a1:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2095,9 +2160,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s3a2] = temp1
             else:
                 agents[name_s3a2]["roles"]["state3"] = role_s3a2
-            agent_s3a2["style"] = style_s3a2
-            agent_s3a2["task"] = task_s3a2
-            agent_s3a2["rule"] = rule_s3a2
+            agent_s3a2["style"] = {"role":role_s3a2,"style":style_s3a2}
+            agent_s3a2["task"] = {"task":task_s3a2}
+            agent_s3a2["rule"] = {"rule":rule_s3a2}
             if knowledge_path_s3a2:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2137,9 +2202,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s3a3] = temp1
             else:
                 agents[name_s3a3]["roles"]["state3"] = role_s3a3
-            agent_s3a3["style"] = style_s3a3
-            agent_s3a3["task"] = task_s3a3
-            agent_s3a3["rule"] = rule_s3a3
+            agent_s3a3["style"] = {"role":role_s3a3,"style":style_s3a3}
+            agent_s3a3["task"] = {"task":task_s3a3}
+            agent_s3a3["rule"] = {"rule":rule_s3a3}
             if knowledge_path_s3a3:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2179,9 +2244,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s3a4] = temp1
             else:
                 agents[name_s3a4]["roles"]["state3"] = role_s3a4
-            agent_s3a4["style"] = style_s3a4
-            agent_s3a4["task"] = task_s3a4
-            agent_s3a4["rule"] = rule_s3a4
+            agent_s3a4["style"] = {"role":role_s3a4,"style":style_s3a4}
+            agent_s3a4["task"] = {"task":task_s3a4}
+            agent_s3a4["rule"] = {"rule":rule_s3a4}
             if knowledge_path_s3a4:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2221,9 +2286,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s3a5] = temp1
             else:
                 agents[name_s3a5]["roles"]["state3"] = role_s3a5
-            agent_s3a5["style"] = style_s3a5
-            agent_s3a5["task"] = task_s3a5
-            agent_s3a5["rule"] = rule_s3a5
+            agent_s3a5["style"] = {"role":role_s3a5,"style":style_s3a5}
+            agent_s3a5["task"] = {"task":task_s3a5}
+            agent_s3a5["rule"] = {"rule":rule_s3a5}
             if knowledge_path_s3a5:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2256,20 +2321,29 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
             state3[role_s3a5] = agent_s3a5
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller3.split())
         controller3_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state3[str(cnt)] = a
-            controller3_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller3 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller3.split("\n"):
+                a,b = i.split(":",1)
+                relation_state3[str(cnt)] = a
+                controller3_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller3_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
+        if max_chat_num_m3:
+            controller["max_chat_num"] = int(max_chat_num_m3)
         state3["controller"] = controller
         state3["environment_prompt"] = environment3
-        state3["environment_type"] = environment_type3
+        state3["begin_role"] = begin_role3
+        state3["begin_query"] = begin_query3
+        roles = [role_s3a1,role_s3a2,role_s3a3,role_s3a4,role_s3a5]
+        state3["roles"] = [i for i in roles if i!=""]
         states["state3"] = state3
     if name_s4a1!= "":
         state4 = {}
@@ -2283,9 +2357,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s4a1] = temp1
             else:
                 agents[name_s4a1]["roles"]["state4"] = role_s4a1
-            agent_s4a1["style"] = style_s4a1
-            agent_s4a1["task"] = task_s4a1
-            agent_s4a1["rule"] = rule_s4a1
+            agent_s4a1["style"] = {"role":role_s4a1,"style":style_s4a1}
+            agent_s4a1["task"] = {"task":task_s4a1}
+            agent_s4a1["rule"] = {"rule":rule_s4a1}
             if knowledge_path_s4a1:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2325,9 +2399,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s4a2] = temp1
             else:
                 agents[name_s4a2]["roles"]["state4"] = role_s4a2
-            agent_s4a2["style"] = style_s4a2
-            agent_s4a2["task"] = task_s4a2
-            agent_s4a2["rule"] = rule_s4a2
+            agent_s4a2["style"] = {"role":role_s4a2,"style":style_s4a2}
+            agent_s4a2["task"] = {"task":task_s4a2}
+            agent_s4a2["rule"] = {"rule":rule_s4a2}
             if knowledge_path_s4a2:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2367,9 +2441,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s4a3] = temp1
             else:
                 agents[name_s4a3]["roles"]["state4"] = role_s4a3
-            agent_s4a3["style"] = style_s4a3
-            agent_s4a3["task"] = task_s4a3
-            agent_s4a3["rule"] = rule_s4a3
+            agent_s4a3["style"] = {"role":role_s4a3,"style":style_s4a3}
+            agent_s4a3["task"] = {"task":task_s4a3}
+            agent_s4a3["rule"] = {"rule":rule_s4a3}
             if knowledge_path_s4a3:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2409,9 +2483,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s4a4] = temp1
             else:
                 agents[name_s4a4]["roles"]["state4"] = role_s4a4
-            agent_s4a4["style"] = style_s4a4
-            agent_s4a4["task"] = task_s4a4
-            agent_s4a4["rule"] = rule_s4a4
+            agent_s4a4["style"] = {"role":role_s4a4,"style":style_s4a4}
+            agent_s4a4["task"] = {"task":task_s4a4}
+            agent_s4a4["rule"] = {"rule":rule_s4a4}
             if knowledge_path_s4a4:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2451,9 +2525,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s4a5] = temp1
             else:
                 agents[name_s4a5]["roles"]["state4"] = role_s4a5
-            agent_s4a5["style"] = style_s4a5 
-            agent_s4a5["task"] = task_s4a5 
-            agent_s4a5["rule"] = rule_s4a5 
+            agent_s4a5["style"] = {"role":role_s4a5,"style":style_s4a5}
+            agent_s4a5["task"] = {"task":task_s4a5}
+            agent_s4a5["rule"] = {"rule":rule_s4a5}
             if knowledge_path_s4a5:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2486,20 +2560,28 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
             state4[role_s4a5] = agent_s4a5
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller4.split())
         controller4_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state4[str(cnt)] = a
-            controller4_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
+        if controller4 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller4.split("\n"):
+                a,b = i.split(":",1)
+                relation_state4[str(cnt)] = a
+                controller4_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
         controller["judge_system_prompt"] = controller4_prompt
         controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
         controller["judge_extract_words"] = "end"
-        state4["controller"] = controller
+        if max_chat_num_m4:
+            controller["max_chat_num"] = int(max_chat_num_m4)
         state4["environment_prompt"] = environment4
-        state4["environment_type"] = environment_type4
+        state4["begin_role"] = begin_role4
+        state4["begin_query"] = begin_query4
+        roles = [role_s4a1,role_s4a2,role_s4a3,role_s4a4,role_s4a5]
+        state4["roles"] = [i for i in roles if i!=""]
         states["state4"] = state4
     if name_s5a1!= "":
         state5 = {}
@@ -2512,10 +2594,10 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 temp1["roles"] = {"state5":role_s5a1}
                 agents[name_s5a1] = temp1
             else:
-                agents[name_s5a1]["roles"]["sta te"] = role_s5a1
-            agent_s5a1["style"] = style_s5a1
-            agent_s5a1["task"] = task_s5a1
-            agent_s5a1["rule"] = rule_s5a1
+                agents[name_s5a1]["roles"]["state5"] = role_s5a1
+            agent_s5a1["style"] = {"role":role_s5a1,"style":style_s5a1}
+            agent_s5a1["task"] = {"task":task_s5a1}
+            agent_s5a1["rule"] = {"rule":rule_s5a1}
             if knowledge_path_s5a1:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2555,9 +2637,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s5a2] = temp1
             else:
                 agents[name_s5a2]["roles"]["state5"] = role_s5a2
-            agent_s5a2["style"] = style_s5a2
-            agent_s5a2["task"] = task_s5a2
-            agent_s5a2["rule"] = rule_s5a2
+            agent_s5a2["style"] = {"role":role_s5a2,"style":style_s5a2}
+            agent_s5a2["task"] = {"task":task_s5a2}
+            agent_s5a2["rule"] = {"rule":rule_s5a2}
             if knowledge_path_s5a2:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2597,9 +2679,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s5a3] = temp1
             else:
                 agents[name_s5a3]["roles"]["state5"] = role_s5a3
-            agent_s5a3["style"] = style_s5a3
-            agent_s5a3["task"] = task_s5a3
-            agent_s5a3["rule"] = rule_s5a3
+            agent_s5a3["style"] = {"role":role_s5a3,"style":style_s5a3}
+            agent_s5a3["task"] = {"task":task_s5a3}
+            agent_s5a3["rule"] = {"rule":rule_s5a3}
             if knowledge_path_s5a3:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2639,9 +2721,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s5a4] = temp1
             else:
                 agents[name_s5a4]["roles"]["state5"] = role_s5a4
-            agent_s5a4["style"] = style_s5a4
-            agent_s5a4["task"] = task_s5a4
-            agent_s5a4["rule"] = rule_s5a4
+            agent_s5a4["style"] = {"role":role_s5a4,"style":style_s5a4}
+            agent_s5a4["task"] = {"task":task_s5a4}
+            agent_s5a4["rule"] = {"rule":rule_s5a4}
             if knowledge_path_s5a4:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2681,9 +2763,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
                 agents[name_s5a5] = temp1
             else:
                 agents[name_s5a5]["roles"]["state5"] = role_s5a5
-            agent_s5a5["style"] = style_s5a5 
-            agent_s5a5["task"] = task_s5a5 
-            agent_s5a5["rule"] = rule_s5a5 
+            agent_s5a5["style"] = {"role":role_s5a5,"style":style_s5a5}
+            agent_s5a5["task"] = {"task":task_s5a5}
+            agent_s5a5["rule"] = {"rule":rule_s5a5}
             if knowledge_path_s5a5:
                 knowledge_base_component = {}
                 knowledge_base_component["top_k"] = 1
@@ -2716,21 +2798,32 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
             state5[role_s5a5] = agent_s5a5
         controller = {}
         controller["type"] = "order"
-        num_next_states = len(controller5.split())
         controller5_prompt = ""
         cnt = 0
-        for i in num_next_states:
-            a,b = i.split(":",1)
-            relation_state5[str(cnt)] = a
-            controller5_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
-            cnt += 1
-        controller["judge_system_prompt"] = controller5_prompt
-        controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
-        controller["judge_extract_words"] = "end"
+        if controller5 == "":
+            controller["judge_system_prompt"] = ""
+            controller["judge_last_prompt"] = ""
+            controller["judge_extract_words"] = "end"
+        else:
+            for i in controller5.split("\n"):
+                a,b = i.split(":",1)
+                relation_state5[str(cnt)] = a
+                controller5_prompt += "If the following is now satisfied:" + b +"output <end>" + str(cnt) + "</end>."
+                cnt += 1
+            controller["judge_system_prompt"] = controller5_prompt
+            controller["judge_last_prompt"] = "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+            controller["judge_extract_words"] = "end"
+        if max_chat_num_m5:
+            controller["max_chat_num"] = int(max_chat_num_m5)
         state5["controller"] = controller5
         state5["environment_prompt"] = environment5
-        state5["environment_type"] = environment_type5
+        state5["begin_role"] = begin_role5
+        state5["begin_query"] = begin_query5
+        roles = [role_s5a1,role_s5a2,role_s5a3,role_s5a4,role_s5a5]
+        state5["roles"] = [i for i in roles if i!=""]
         states["state5"] = state5
+    output_adic["agents"] = agents
+    output_adic["states"] = states
     if tag == 1:
         relations = {}
         relations["state1"] = relation_state1
@@ -2761,6 +2854,7 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
         relations["state4"] = relation_state4
         relations["state5"] = relation_state5
         output_adic["relations"] = relations
+    print(output_adic)
     with open(file_name,"w",encoding="utf-8") as f:
         json.dump(output_adic,f,ensure_ascii=False,indent=2)
     return file_name
@@ -2805,6 +2899,7 @@ with gr.Blocks(title="Customize Your Agent", css="footer {visibility: hidden}", 
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num1 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state2"):
             gr.Markdown("""PromptComponent""")
             with gr.Row():
@@ -2839,6 +2934,7 @@ There is no limit to the number of next states. If the current state is the last
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num2 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state3"):
             gr.Markdown("""PromptComponent""")
             with gr.Row():
@@ -2873,6 +2969,7 @@ There is no limit to the number of next states. If the current state is the last
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num3 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state4"):
             gr.Markdown("""PromptComponent""")
             with gr.Row():
@@ -2907,6 +3004,7 @@ There is no limit to the number of next states. If the current state is the last
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num4 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state5"):
             gr.Markdown("""PromptComponent""")
             with gr.Row():
@@ -2941,15 +3039,17 @@ There is no limit to the number of next states. If the current state is the last
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num5 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         gr.Markdown("""Initializtion""")
         generate_json_button_single_agent = gr.Button("generate config")
         json_output = gr.File(label="generated config file")
         generate_json_button_single_agent.click(generate_json_single_agent, 
-                                [name1,role1,style1,task1,rule1,knowledge_path1,engine_name1,cfg_file1,action1,symptoms_box1,controller1,
+                                [api_key,proxy,name1,role1,style1,task1,rule1,knowledge_path1,engine_name1,cfg_file1,action1,symptoms_box1,controller1,
                                  name2,role2,style2,task2,rule2,knowledge_path2,engine_name2,cfg_file2,action2,symptoms_box2,controller2,
                                  name3,role3,style3,task3,rule3,knowledge_path3,engine_name3,cfg_file3,action3,symptoms_box3,controller3,
                                  name4,role4,style4,task4,rule4,knowledge_path4,engine_name4,cfg_file4,action4,symptoms_box4,controller4,
-                                 name5,role5,style5,task5,rule5,knowledge_path5,engine_name5,cfg_file5,action5,symptoms_box5,controller5],
+                                 name5,role5,style5,task5,rule5,knowledge_path5,engine_name5,cfg_file5,action5,symptoms_box5,controller5,
+                                 max_chat_num1,max_chat_num2,max_chat_num3,max_chat_num4,max_chat_num5],
                                 [json_output])
     with gr.Tab(label="Multi-agent Mode"):
         #agent1
@@ -3102,16 +3202,20 @@ There is no limit to the number of next states. If the current state is the last
                                          add_component_buttion_s1a3,
                                          add_component_buttion_s1a4,
                                          add_component_buttion_s1a5,number1])
+            with gr.Row():
+                begin_role1 = gr.Text(label="begin_role(optional)",placeholder="set the role of the agent who speaks at the beginning of the scene, e.g., oculist")
+                begin_query1  = gr.Text(label="begin_query(optional)",placeholder="set the speech of the agent who speaks at the beginning of the scene, e.g., welcome to our hospital")
             gr.Markdown("""Environment""")
             with gr.Row():
-                environment1 = gr.Textbox(label="environment")
+                environment1 = gr.Textbox(label="environment(optional)",placeholder="describe the scene as it is happening now, e.g, It is currently the debate stage, where the positive side is assigning tasks.")
                 environment_type1 = gr.Dropdown(choices = ["cooperative","compete"],label="environment type")
             gr.Markdown("""Relation and Controller""")
             with gr.Row():
-                controller1 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
+                controller_m1 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num_m1 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state2"):
             makedowns2a1 = gr.Markdown("""Agent1""",visible=False)
             with gr.Row(visible=False) as agentr1_s2:
@@ -3258,16 +3362,20 @@ There is no limit to the number of next states. If the current state is the last
                                          agentc4_s2,agentr4_s2,makedowns2a4,symptoms_box_s2a4,
                                          agentc5_s2,agentr5_s2,makedowns2a5,symptoms_box_s2a5,
                                          add_component_buttion_s2a1,add_component_buttion_s2a2,add_component_buttion_s2a3,add_component_buttion_s2a4,add_component_buttion_s2a5,number2])
+            with gr.Row():
+                begin_role2 = gr.Text(label="begin_role(optional)",placeholder="set the role of the agent who speaks at the beginning of the scene, e.g., oculist")
+                begin_query2  = gr.Text(label="begin_query(optional)",placeholder="set the speech of the agent who speaks at the beginning of the scene, e.g., welcome to our hospital")
             gr.Markdown("""Environment""")
             with gr.Row():
-                environment2 = gr.Textbox(label="environment")
+                environment2 = gr.Textbox(label="environment(optional)",placeholder="describe the scene as it is happening now, e.g, It is currently the debate stage, where the positive side is assigning tasks.")
                 environment_type2 = gr.Dropdown(choices = ["cooperative","compete"],label="environment type")
             gr.Markdown("""Relation and Controller""")
             with gr.Row():
-                controller2 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
+                controller_m2 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num_m2 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state3"):
             makedowns3a1 = gr.Markdown("""Agent1""",visible=False)
             with gr.Row(visible=False) as agentr1_s3:
@@ -3413,16 +3521,20 @@ There is no limit to the number of next states. If the current state is the last
                                          agentc3_s3,agentr3_s3,makedowns3a3,symptoms_box_s3a3,
                                          agentc4_s3,agentr4_s3,makedowns3a4,symptoms_box_s3a4,
                                          agentc5_s3,agentr5_s3,makedowns3a5,symptoms_box_s3a5,add_component_buttion_s3a1,add_component_buttion_s3a2,add_component_buttion_s3a3,add_component_buttion_s3a4,add_component_buttion_s3a5,number3])
+            with gr.Row():
+                begin_role3 = gr.Text(label="begin_role(optional)",placeholder="set the role of the agent who speaks at the beginning of the scene, e.g., oculist")
+                begin_query3  = gr.Text(label="begin_query(optional)",placeholder="set the speech of the agent who speaks at the beginning of the scene, e.g., welcome to our hospital")
             gr.Markdown("""Environment""")
             with gr.Row():
-                environment3 = gr.Textbox(label="environment")
+                environment3 = gr.Textbox(label="environment(optional)",placeholder="describe the scene as it is happening now, e.g, It is currently the debate stage, where the positive side is assigning tasks.")
                 environment_type3 = gr.Dropdown(choices = ["cooperative","compete"],label="environment type")
             gr.Markdown("""Relation and Controller""")
             with gr.Row():
-                controller3 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
+                controller_m3 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num_m3 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state4"):
             makedowns4a1 = gr.Markdown("""Agent1""",visible=False)
             with gr.Row(visible=False) as agentr1_s4:
@@ -3566,16 +3678,20 @@ There is no limit to the number of next states. If the current state is the last
                                          agentc3_s4,agentr3_s4,makedowns4a3,symptoms_box_s4a3,
                                          agentc4_s4,agentr4_s4,makedowns4a4,symptoms_box_s4a4,
                                          agentc5_s4,agentr5_s4,makedowns4a5,symptoms_box_s4a5,add_component_buttion_s4a1,add_component_buttion_s4a2,add_component_buttion_s4a3,add_component_buttion_s4a4,add_component_buttion_s4a5,number4])
+            with gr.Row():
+                begin_role4 = gr.Text(label="begin_role(optional)",placeholder="set the role of the agent who speaks at the beginning of the scene, e.g., oculist")
+                begin_query4  = gr.Text(label="begin_query(optional)",placeholder="set the speech of the agent who speaks at the beginning of the scene, e.g., welcome to our hospital")
             gr.Markdown("""Environment""")
             with gr.Row():
-                environment4 = gr.Textbox(label="environment")
+                environment4 = gr.Textbox(label="environment(optional)",placeholder="describe the scene as it is happening now, e.g, It is currently the debate stage, where the positive side is assigning tasks.")
                 environment_type4 = gr.Dropdown(choices = ["cooperative","compete"],label="environment type")
             gr.Markdown("""Relation and Controller""")
             with gr.Row():
-                controlle4 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
+                controller_m4 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num_m4 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         with gr.Tab("state5"):
             makedowns5a1 = gr.Markdown("""Agent1""",visible=False)
             with gr.Row(visible=False) as agentr1_s5:
@@ -3719,21 +3835,25 @@ There is no limit to the number of next states. If the current state is the last
                                          agentc3_s5,agentr3_s5,makedowns5a3,symptoms_box_s5a3,
                                          agentc4_s5,agentr4_s5,makedowns5a4,symptoms_box_s5a4,
                                          agentc5_s5,agentr5_s5,makedowns5a5,symptoms_box_s5a5,add_component_buttion_s5a1,add_component_buttion_s5a2,add_component_buttion_s5a3,add_component_buttion_s5a4,add_component_buttion_s5a5,number5])
+            with gr.Row():
+                begin_role5 = gr.Text(label="begin_role(optional)",placeholder="set the role of the agent who speaks at the beginning of the scene, e.g., oculist")
+                begin_query5  = gr.Text(label="begin_query(optional)",placeholder="set the speech of the agent who speaks at the beginning of the scene, e.g., welcome to our hospital")
             gr.Markdown("""Environment""")
             with gr.Row():
-                environment5 = gr.Textbox(label="environment")
+                environment5 = gr.Textbox(label="environment(optional)",placeholder="describe the scene as it is happening now, e.g, It is currently the debate stage, where the positive side is assigning tasks.")
                 environment_type5 = gr.Dropdown(choices = ["cooperative","compete"],label="environment type")
             gr.Markdown("""Relation and Controller""")
             with gr.Row():
-                controller5 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
+                controller_m5 = gr.Textbox(label="controller",placeholder="""Please write in the following format:
 stateX:Reason for entering stateX
 stateY:Reason for entering stateY
 There is no limit to the number of next states. If the current state is the last state, there is no need to fill in the stuff of the next states.""")
+                max_chat_num_m5 = gr.Textbox(label="max chat num(optional)",placeholder="set a integer that represents the maximum number of rounds to run the chat in this state phase.")
         gr.Markdown("""Initializtion""")
         generate_json_button_multi_agent = gr.Button("generate config")
         json_output = gr.File(label="generated config file")
         generate_json_button_multi_agent.click(generate_json_multi_agent, 
-                                [name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1,
+                                [api_key,proxy,name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1,
                                  name_s1a2,role_s1a2,style_s1a2,task_s1a2,rule_s1a2,
                                  name_s1a3,role_s1a3,style_s1a3,task_s1a3,rule_s1a3,
                                  name_s1a4,role_s1a4,style_s1a4,task_s1a4,rule_s1a4,
@@ -3787,9 +3907,11 @@ There is no limit to the number of next states. If the current state is the last
                                  symptoms_box_s1a1,symptoms_box_s1a2,symptoms_box_s1a3,symptoms_box_s1a4,symptoms_box_s1a5,symptoms_box_s2a1,symptoms_box_s2a2,symptoms_box_s2a3,symptoms_box_s2a4,symptoms_box_s2a5,symptoms_box_s3a1,symptoms_box_s3a2,
                                  symptoms_box_s3a3,symptoms_box_s3a4,symptoms_box_s3a5,symptoms_box_s4a1,symptoms_box_s4a2,symptoms_box_s4a3,symptoms_box_s4a4,symptoms_box_s4a5,
                                  symptoms_box_s5a1,symptoms_box_s5a2,symptoms_box_s5a3,symptoms_box_s5a4,symptoms_box_s5a5,
-                                 controller1,controller2,controller3,controller4,controller5,
-                                 environment_type1,environment_type2,environment_type3,environment_type4,environment_type5
-                                 ],
+                                 controller_m1,controller_m2,controller_m3,controller_m4,controller_m5,
+                                 environment_type1,environment_type2,environment_type3,environment_type4,environment_type5,
+                                 begin_role1,begin_role2,begin_role3,begin_role4,begin_role5,
+                                 begin_query1,begin_query2,begin_query3,begin_query4,begin_query5,
+                                 max_chat_num_m1,max_chat_num_m2,max_chat_num_m3,max_chat_num_m4,max_chat_num_m5],
                                 [json_output])
 demo.launch(server_port=18870,share=True,debug=True,
             show_api=False)
