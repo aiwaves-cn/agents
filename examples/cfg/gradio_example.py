@@ -527,7 +527,8 @@ class SingleAgentUI(WebUI):
                 self.chatbot = gr.Chatbot(
                     value=None if content is None else [[None, UIHelper.wrap_css(content=content, name=self.agent_name)]],
                     elem_id="chatbot1",
-                    label="对话"
+                    label="对话",
+                    height= 600
                 )
                 with gr.Row():
                     self.text_user = gr.Textbox(

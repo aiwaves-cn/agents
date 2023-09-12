@@ -2,8 +2,8 @@ import yaml
 import os
 import argparse
 import sys
-sys.path.append("../../src/agents")
-sys.path.append("../cfg")
+sys.path.append("../src/agents")
+sys.path.append("cfg")
 from SOP import SOP
 from Agent import Agent
 from Environment import Environment
@@ -32,34 +32,42 @@ def process(action):
 
 def gradio_process(action,current_state):
     response = action.response
+    res_dict = action.res_dict
     all = ""
-    for i,res in enumerate(response):
-        all+=res
-        state = 10
-        if action.is_user:
-            state = 30
-            print("state:", state)
-        elif action.state_begin:
-            state = 12
-            action.state_begin = False
-        elif i>0:
-            state = 11
-        print("long:", state)
-        Client.send_server(str([state, action.name, res, current_state.name]))
-        if state == 30:
-            """阻塞当前进程，等待接收"""
-            print("client:阻塞等待输入")
-            data: list = next(Client.receive_server)
-            content = ""
-            for item in data:
-                if item.startswith("<USER>"):
-                    content = item.split("<USER>")[1]
-                    break
-            print(f"client:接收到了`{content}`")
-            action.response = content
-            break
-        else:
-            action.response = all
+    response_list = [response]
+    if "recommend" in res_dict:
+        response_list.append(res_dict["recommend"])
+        
+    i = 0
+    for r in response_list:
+        for res in r:
+            all+=res
+            state = 10
+            if action.is_user:
+                state = 30
+                print("state:", state)
+            elif action.state_begin:
+                state = 12
+                action.state_begin = False
+            elif i>0:
+                state = 11
+            i+=1
+            print("long:", state)
+            Client.send_server(str([state, action.name, res, current_state.name]))
+            if state == 30:
+                """阻塞当前进程，等待接收"""
+                print("client:阻塞等待输入")
+                data: list = next(Client.receive_server)
+                content = ""
+                for item in data:
+                    if item.startswith("<USER>"):
+                        content = item.split("<USER>")[1]
+                        break
+                print(f"client:接收到了`{content}`")
+                action.response = content
+                break
+            else:
+                action.response = all
 
 def init(config): 
     if not os.path.exists("logs"):
@@ -105,23 +113,11 @@ def prepare(agents, sop, environment):
 if __name__ == '__main__':
     GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
-    parser.add_argument('--agent', type=str, help='path to SOP json', default="youcai/youcai_base_websearch.json")
-    parser.add_argument('--config', type=str, help='path to config', default="youcai/config.yaml")
+    parser.add_argument('--agent', type=str, help='path to SOP json', default="Single_Agent/shopping_assistant/config.json")
     args = parser.parse_args()
 
-    with open(args.config, "r") as file:
-        config = yaml.safe_load(file)
 
-    for key, value in config.items():
-        os.environ[key] = value
-    
     agents,sop,environment = init(args.agent)
-    
     if GRADIO:
         prepare(agents, sop, environment)
-
     run(agents,sop,environment)
-
-
-    for key, value in config.items():
-        del os.environ[key]

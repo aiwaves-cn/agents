@@ -241,7 +241,6 @@ class WebSearchComponent(ToolComponent):
             if len(agent.long_term_memory) > 0
             else " "
         )
-        query = extract(query, "query")
         response = agent.LLM.get_response(
             None,
             system_prompt=f"Please analyze the provided conversation and identify keywords that can be used for a search engine query. Format the output as <keywords>extracted keywords</keywords>:\nConversation:\n{query}",
@@ -252,7 +251,7 @@ class WebSearchComponent(ToolComponent):
 
         search_results = self.search[self.engine_name](query=query, **kwargs)
         information = ""
-        for i in search_results["meta data"][:2]:
+        for i in search_results["meta data"][:5]:
             information += i["snippet"]
         return {
             "prompt": "You can refer to the following information to reply:\n"
