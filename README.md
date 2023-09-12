@@ -17,7 +17,7 @@ One major difference between **Agents** and other existing frameworks for langua
 
 ## 📢 Updates
 
-- [x] Support LLM-based SOP generation
+- [ ] Support LLM-based SOP generation
 - [x] 2023.9.12 Offical Release
 
 ## 💡 Highlights
@@ -34,17 +34,17 @@ One major difference between **Agents** and other existing frameworks for langua
 
 #### Option 1.  Build from source
 
-    ```
+    
     git clone https://github.com/aiwaves-cn/agents.git
     cd agents
     pip install -e . 
-    ```
+    
 
-#### Option 2.  Install via PyPI
+#### Option 2.  Install via PyPI (To be supported)
 
-    ```
+    
     pip install agents
-    ```
+    
 
 ##  📦 Usage
 ### 🛠️ Generate the config file
