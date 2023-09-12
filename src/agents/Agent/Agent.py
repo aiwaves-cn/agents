@@ -179,8 +179,10 @@ class Agent:
         MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
         environment = self.environment
         current_chat_history_idx = environment.current_chat_history_idx if environment.environment_type == "competive" else 0
+        
         current_long_term_memory = environment.shared_memory["long_term_memory"][current_chat_history_idx:]
-        if len(current_long_term_memory) % MAX_CHAT_HISTORY == 0:
+        last_conversation_idx = environment._get_agent_last_conversation_idx(self,current_long_term_memory)
+        if len(current_long_term_memory)-last_conversation_idx >= MAX_CHAT_HISTORY:
             current_state = self.current_state
             current_role = self.state_roles[current_state.name]
             current_component_dict = current_state.components[current_role]

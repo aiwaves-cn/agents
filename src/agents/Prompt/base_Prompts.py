@@ -75,9 +75,9 @@ Agent_observe_memory = "f\"Here's what you need to know(Remember, this is just i
 
 
 # Agent========================================================================================================
-Agent_summary_system_prompt = "f\"{summary_prompt};Please summarize past key summary \\n<summary>\\n {self.short_term_memory} </summary>and new chat_history as follows: <new chat>\\n{conversations}</new chat>\""          
+Agent_summary_system_prompt = "f\"{summary_prompt};Please summarize past key summary \\n<summary>\\n {self.short_term_memory} </summary>and new chat_history as follows: <history>\\n{conversations}</history>\""          
             
-Agent_last_prompt = "f\"{last_prompt};\\nPlease continue the talk based on your known information;Please try to respond differently from your existing knowledge, and avoid repeating what others have said.Please just talk as normal.\""
+Agent_last_prompt = "f\"{last_prompt};\\nThe last talk is {query.send_name} said:{query.content};Please continue the talk based on your known information,Make an effort to make the conversation more coherent and  try to respond differently from your existing knowledge, avoiding repeating what others have said.\""
 
 Agent_system_prompt = "f\"{system_prompt},\""
 # Agent========================================================================================================

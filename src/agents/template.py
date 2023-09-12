@@ -89,7 +89,7 @@ SOP = {
     "MAX_CHAT_HISTORY" : "5",
     "User_Names" : "[\"alexander\"]"
     },
-    "environment_type" : "compete",
+    "environment_type" : "competive",
     "LLM_type": "OpenAI",
     "LLM" :LLM,
     "root": "state1",

@@ -1,6 +1,6 @@
 {   "config":{
-    "API_KEY" : "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",
-    "PROXY" : "http://127.0.0.1:7000",
+    "API_KEY" : "API_KEY",
+    "PROXY" : "PROXY",
     "MAX_CHAT_HISTORY" : "1000",
     "User_Names" : "[\"alexander\"]",
     "Embed_Model" : "intfloat/multilingual-e5-large"
@@ -71,10 +71,10 @@
                         "engine_name": "bing",
                         "api": {
                             "google": {
-                                "cse_id": "04fdc27dcd8d44719",
-                                "api_key": "AIzaSyB63w8H3K77KYpgl7MW53oErJvL8O1x4_U"
+                                "cse_id": "cse_id",
+                                "api_key": "api_key"
                             },
-                            "bing": "f745c2a4186a462181103bf973c21afb"
+                            "bing": "bing key"
                         }
                     }
                 },

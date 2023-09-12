@@ -108,12 +108,17 @@ class Environment:
         self.agents[memory.send_name].update_memory(memory)
     
     
-    def _get_agent_new_memory(self,agent,current_long_term_memory):
-        # get new conversation
+    def _get_agent_last_conversation_idx(self,agent,current_long_term_memory):
         last_conversation_idx = -1
         for i, history in enumerate(current_long_term_memory):
             if history.send_name == agent.name:
                 last_conversation_idx = i
+        return last_conversation_idx
+    
+    
+    def _get_agent_new_memory(self,agent,current_long_term_memory):
+        # get new conversation
+        last_conversation_idx = self._get_agent_last_conversation_idx(agent,current_long_term_memory)
 
         if last_conversation_idx == -1:
             new_conversation =current_long_term_memory

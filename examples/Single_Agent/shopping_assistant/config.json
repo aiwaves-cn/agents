@@ -1,15 +1,16 @@
 { "config":{
-  "API_KEY" : "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",
-  "PROXY" : "http://127.0.0.1:7000",
+  "API_KEY" : "API_KEY",
+  "PROXY" : "PROXY",
   "MAX_CHAT_HISTORY" : "5",
   "MIN_CATEGORY_SIM" : "0.7",
-  "FETSIZE" : "3"
+  "FETSIZE" : "3",
+  "User_Names" : "[\"Mike\"]"
 },
   "LLM_type": "OpenAI",
   "LLM": {
     "temperature": 0.3,
     "model": "gpt-3.5-turbo-16k-0613",
-    "log_path": "logs/上帝"
+    "log_path": "logs/god"
   },
   "root": "shopping_state",
   "relations": {
@@ -19,16 +20,16 @@
     }
   },
   "agents": {
-    "吴家隆": {
-      "style":"幽默风趣",
+    "Jonh": {
+      "style":"humorous",
       "roles":{
-      "shopping_state": "AI导购"
+      "shopping_state": "Shopping assistant"
       }
     },
-    "A神": {
-      "style":"冷漠刁钻",
+    "Mike": {
+      "style":"indifferent",
       "roles":{
-      "shopping_state": "客户"
+      "shopping_state": "customer"
       }
     }
   },
@@ -37,68 +38,54 @@
       "name": "end_state"
     },
     "shopping_state": {
-      "LLM_type": "OpenAI",
-      "LLM": {
-        "temperature": 0.3,
-        "model": "gpt-3.5-turbo-16k-0613",
-        "log_path": "logs/上帝"
-      },
       "roles": [
-        "AI导购",
-        "客户"
+        "Shopping assistant",
+        "customer"
       ],
       "controller": {
         "controller_type": "order",
         "judge_system_prompt": "",
-        "judge_last_prompt": "回复<结束>0<结束>",
-        "judge_extract_words": "结束",
+        "judge_last_prompt": "response<end>0<end>",
+        "judge_extract_words": "end",
         "call_system_prompt": "",
         "call_last_prompt": "",
-        "call_extract_words": "结束"
+        "call_extract_words": "end"
       },
-      "environment_prompt": "现在的场景为一个AI导购在回答客户的问题，并根据用户的需求推荐对应的商品，来诱导用户购买。主要角色为：AI导购（吴家隆）负责回答用户的问题，客户（A神）来咨询购物意见",
+      "environment_prompt": "The current scenario is an AI shopping guide answering customers' questions and recommending corresponding products based on the user's needs to induce users to buy. The main roles are: shopping_assistant (Jonh) is responsible for answering users’ questions, and customers (Mike) come to consult shopping opinions.",
       "name": "shopping_state",
-      "begin_role": "AI导购",
-      "begin_query": "欢迎来到店铺，请问您有什么需要购买的吗？",
+      "begin_role": "Shopping assistant",
+      "begin_query": "Welcome to the store, is there anything you want to buy?",
       "agent_states": {
-        "AI导购": {
+        "Shopping assistant": {
           "style": {
-            "role": "网络导购",
-            "style": "幽默风趣"
+            "role": "Shopping assistant",
+            "style": "humorous"
           },
           "task": {
-            "task": "引导用户购买商品"
+            "task": "Guide users to purchase goods"
           },
           "rule": {
-            "rule": "你的语言要尽量精简，不要废话太多。你要反复引导我去购买商品"
+            "rule": "Your language should be as concise as possible, without too much nonsense. You have to repeatedly guide customers to purchase goods"
           },
           "CategoryRequirementsComponent": {
             "information_path": [
               "Single_Agent/shopping_assistant/bb_info.json",
               "Single_Agent/shopping_assistant/toy_info.json"
             ]
-          },
-          "last": {
-            "last_prompt": "记住，你只代表AI导购，不用代表其他人"
           }
         },
-        "客户": {
-          "LLM_type": "OpenAI",
+        "customer": {
           "style": {
-            "role": "客户",
-            "style": "冷漠刁钻"
+            "role": "customer"
           },
           "task": {
-            "task": "刁难导购员，让他提供尽可能多的商品信息"
+            "task": "Make things difficult for the shopping guide and ask him to provide as much product information as possible"
           },
           "rule": {
-            "rule": "你的语言要尽量精简，不要废话太多。你不能重复提问，每次都需要问不同的方面，也可以合理追问。你可以选择不购物，但你必须询问尽可能多的信息。你需要不断询问不同方面的商品信息，并合理追问。记住，你的语气要冷漠，你的风格需要刁钻"
-          },
-          "last": {
-            "last_prompt": "记住，你只代表客户，不用代表其他人"
+            "rule": "Your language should be as concise as possible, without too much nonsense. You cannot ask questions repeatedly. You need to ask different aspects each time, and you can also ask questions reasonably. You can choose not to shop, but you must ask for as much information as possible. You need to constantly ask for different aspects of product information and follow up reasonably. Remember, your tone needs to be cold and your style needs to be tricky"
+          }
           }
         }
       }
     }
   }
-}
