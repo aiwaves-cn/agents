@@ -90,8 +90,7 @@ pip install -r requirements.txt
 Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
 
 ```JSON
-// only used for shopping assistant
-{
+{  // e.g. for shopping assistant
     MIN_CATEGORY_SIM  =  "0.7"  ##Threshold for category matching
     TOY_INFO_PATH  = "[\"your_path1\",\"your_path2_\"......]" #Path to the product database
     FETSIZE  =  "5" #Number of recommended products at a time
@@ -101,7 +100,7 @@ Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
     PROXY  =  #Your proxy
     MAX_CHAT_HISTORY  =  "8" #Longest History
     User_Names = "[\"{user_name}\"]" # the name of agents which you want to play  
-                    }
+}
 ```
 
 Note that if you want to use `WebSearchComponent`, you also need set the config!
