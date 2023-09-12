@@ -5,6 +5,8 @@
 ## <p align="center"><font  face="Calisto MT"><font  size="4">An Open-source Framework for Autonomous Language Agents</font></font></p>
 
 <p align="center"><a href="https://arxiv.org/pdf/2305.13304.pdf">[📄 Paper]</a> </p>
+<p align="center"><a href="http://www.aiwaves-agents.com/home">[🌐 Website]</a> </p>
+<p align="center"><a href="http://www.aiwaves-agents.com/agents">[🤖️ Demos]</a> </p>
 <hr>
   
 
