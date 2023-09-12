@@ -16,6 +16,8 @@ One major difference between **Agents** and other existing frameworks for langua
 
 <p align="center">
   <embed src="./assets/agents-cover.pdf" width="800" type="application/pdf">
+  <p>Illustration of the AGENTS framework.</p>
+  </embed>
 </p>
 
 
