@@ -21,7 +21,7 @@ from utils import extract, get_relevant_history
 from Memory import Memory
 from Prompt import *
 import json
-
+import os
 
 class SOP:
     """
@@ -63,6 +63,10 @@ class SOP:
     def from_config(cls, config_path):
         with open(config_path) as f:
             config = json.load(f)
+        
+        for key,value in config["config"].items():
+            os.environ[key] = value
+        
         sop = SOP(**config)
         return sop
 

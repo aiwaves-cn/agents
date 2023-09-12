@@ -60,7 +60,7 @@ class OpenAILLM(LLM):
         
         
         if active_mode:
-            system_prompt = system_prompt + "Please keep your reply as concise as possible"
+            system_prompt = system_prompt + "Please keep your reply as concise as possible,Within three sentences, the total word count should not exceed 30"
 
         messages = [{
             "role": "system",
@@ -77,9 +77,9 @@ class OpenAILLM(LLM):
 
         if last_prompt:
             if active_mode:
-                last_prompt = last_prompt + "Please keep your reply as concise as possible"
+                last_prompt = last_prompt + "Please keep your reply as concise as possible,Within three sentences, the total word count should not exceed 30"
             # messages += [{"role": "system", "content": f"{last_prompt}"}]
-            messages += [{"role": "system", "content": f"{last_prompt}"}]
+            messages[-1]["content"] += last_prompt
         
 
         while True:
