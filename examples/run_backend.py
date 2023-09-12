@@ -19,18 +19,13 @@ example code for serving an autonomous agents with Flask/FastAPI backend
 """
 
 import argparse
-from fastapi import APIRouter, Request, Body
+from fastapi import  Request, Body
 # from gevent import pywsgi
-from multiprocessing import Process
 import sys
 import os
 import json
 import asyncio
-import aiohttp
-from sse_starlette.sse import EventSourceResponse, ServerSentEvent
-from threading import  Thread
 import os
-from multiprocessing import Process
 from fastapi import FastAPI,Request
 from fastapi.responses import  JSONResponse,StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
