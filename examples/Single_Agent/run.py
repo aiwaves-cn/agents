@@ -81,7 +81,7 @@ def run(agents,sop,environment):
             print("finished!")
             os.environ.clear()
             break
-        action = current_agent.step(current_state,environment,True)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        action = current_agent.step(current_state,True)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
         memory = process(action)
         environment.update_memory(memory,current_state)

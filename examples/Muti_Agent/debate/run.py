@@ -76,7 +76,7 @@ def run(agents,sop,environment):
             print("finished!")
             os.environ.clear()
             break
-        action = current_agent.step(current_state,environment,"")   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        action = current_agent.step(current_state,"")   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
         memory = process(action)
         environment.update_memory(memory,current_state)
@@ -114,7 +114,7 @@ def prepare(agents, sop, environment):
 if __name__ == '__main__':
     GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
-    parser.add_argument('--agent', type=str, help='path to SOP json', default="debate.json")
+    parser.add_argument('--agent', type=str, help='path to SOP json', default="config.json")
     args = parser.parse_args()
     
     agents,sop,environment = init(args.agent)
