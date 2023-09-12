@@ -73,50 +73,8 @@ We have provided exemplar config files, code, and demos for both single-agent an
 
 Please check our [documentation](https://ai-waves.feishu.cn/wiki/KZb6whkDTiM1cUkLqqOcnUNNnuh?from=from_copylink) for detailed documentation of the framework.
 
-## 😄 Getting Started with Fun
 
-Try  our demo in your terminal!
-
-#### 1. Open your terminal 🖥️
-#### 2. Get the Repository 📦
-```
-git clone https://github.com/aiwaves-cn/agents.git
-```
-#### 3. Install the requirements 🛠️
-```
-pip install -r requirements.txt
-```
-#### 4. Set the config 🛠️
-Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
-
-```JSON
-{  // e.g. for shopping assistant
-    MIN_CATEGORY_SIM  =  "0.7"  ##Threshold for category matching
-    TOY_INFO_PATH  = "[\"your_path1\",\"your_path2_\"......]" #Path to the product database
-    FETSIZE  =  "5" #Number of recommended products at a time
-    
-    #for all agents
-    API_KEY  =  #Your API KEY
-    PROXY  =  #Your proxy
-    MAX_CHAT_HISTORY  =  "8" #Longest History
-    User_Names = "[\"{user_name}\"]" # the name of agents which you want to play  
-}
-```
-
-Note that if you want to use `WebSearchComponent`, you also need set the config!
-
-```JSON
- "WebSearchComponent": {
-                        "engine_name": "bing",
-                        "api": {
-                            "google": {
-                                "cse_id": "Your cse_id",
-                                "api_key": "Your api_key"
-                            },
-                            "bing": "Your bing key"
-                        }
-                    }
-```
+  
 
 #### Haven't figured out how to write the JSON file yet? Check out [documentation](https://ai-waves.feishu.cn/wiki/NIjrw8FR7inGTMkfS5yc5wcvnlg?from=from_copylink)!
 
