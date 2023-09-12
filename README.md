@@ -24,7 +24,7 @@ One major different between our **Agents** framework and other existing framewor
 ## **Highlights**
 
 - **Long-short Term Memory**: Language agents in the library are equipped with both long-term memory implemented via VectorDB + Semantic Search and short-term memory (working memory) maintained and updated by an LLM.
-- **Tool Usage**: Language agents in the library can use any external tools via (function-calling)[https://platform.openai.com/docs/guides/gpt/function-calling] and developers and add customized tools/APIs here.
+- **Tool Usage**: Language agents in the library can use any external tools via [function-calling](https://platform.openai.com/docs/guides/gpt/function-calling) and developers and add customized tools/APIs here.
 - **Web Navigation**: Language agents in the library can use search engines to navigate the web and get useful information.
 - **Multi-agent Communication**: In addition to single language agents, the library supports building multi-agent systems in which language agents can communicate with other language agents and the environment. Different from most existing frameworks for multi-agent systems that use pre-defined rules to control the order for agents' action, **Agents** includes a *controller* function that dynamically decides which agent to act based on the previous actions and the environment, making multi-agent communication more flexible.
 - **Human-Agent interaction**: In addition to letting language agents communicate with each other in an environment, our framework seamlessly supports human users to play the role of the agent by himself/herself and input his/her own actions, and interact with other language agents in the environment.
