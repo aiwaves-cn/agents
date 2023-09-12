@@ -10,7 +10,7 @@
     pip install -e . 
     ```
 
-- [ ] Option 2.  Install via PyPI
+- [x] Option 2.  Install via PyPI
 
     ```
     pip install agents
@@ -53,7 +53,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
     python run.py --agent Single_Agent/{target_agent}/config.json
     ```
 
-- [ ] Option 2. Run on gradio
+- [x] Option 2. Run on gradio
 	
     ```
    cd examples
@@ -69,7 +69,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
  ### 2.Muti Agent🤖️🤖️   
 - [x] Option 1.  Run on your terminal
 	Modify the config.json
-	For example, if you want to play the agent named "Mike" and "Mary"
+	For example, if you want to play the agent named "Mike" and "Mary"(Support all Agent)
 	```
 	{ 
 	    #for all agents
@@ -85,7 +85,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
     python run.py --agent Single_Agent/{target_agent}/config.json
     ```
 
-- [ ] Option 2. Run on gradio
+- [x] Option 2. Run on gradio
 	
     ```
    cd examples/Muti_Agent/{target_agent}
@@ -102,7 +102,29 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
  ### 3.Start with your own Agent🤖️🤖️🤖️  
  #### 1.Write your config.json according to [template.py](https://github.com/aiwaves-cn/agents/blob/master/src/agents/template.py)(more details refer to the [doc](https://ai-waves.feishu.cn/wiki/NIjrw8FR7inGTMkfS5yc5wcvnlg))
  
- #### 2.Run your config.json as above
+ #### 2.Run your config.json 
 
-#### 3.Welcome to send json to us
+- [x] Option 1.  Run on your terminal
+
+    ```
+    cd examples
+    python run.py --config.json
+    ```
+
+
+- [x] Option 2. Run on gradio
+	
+    ```
+   cd examples
+   python run_gradio.py --agent config.json
+   ```
+
+
+
+
+### 🤖️ The Agent Hub
+
+We provide an **AgentHub**, where you can search for interesting Agents shared by us or other developers, try them out or use them as the starting point to customize your own agent. We encourage you to share your customized agents to help others build their own agents more easily! You can share your customized agents by submitting PRs that adds configs and customized codes [here](https://github.com/aiwaves-cn/agents/tree/master/examples/Community_Agent). You can also send us your own config files and codes for customized agents by [email](mailto:contact@aiwaves.cn), and we will share your examples and acknowledge your contribution in future updates!
+
+A WebUI for automatically uploading of your customized agents will be available soon!
  
