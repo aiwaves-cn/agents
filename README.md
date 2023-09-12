@@ -1,4 +1,4 @@
-# <p align="center"><font  face="Calisto MT"><font  size="4"><p align="center"><img src='./assets/agents-logo.png'  width=30></p>An Open-source Framework for Autonomous Language Agents</font></font></p>
+# <p align="center"><font  face="Calisto MT"><font  size="4"><img src='./assets/agents-logo.png'  width=60> AGENTS: An Open-source Framework for Autonomous Language Agents</font></font></p>
 
 <p align="center"><a href="https://arxiv.org/pdf/2305.13304.pdf">[📄 Paper]</a>
 <a href="http://www.aiwaves-agents.com/home">[🌐 Website]</a>
