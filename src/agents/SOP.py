@@ -66,6 +66,7 @@ class SOP:
         
         for key,value in config["config"].items():
             os.environ[key] = value
+        assert "API_KEY" in os.environ,"API_KEY not set"
         
         sop = SOP(**config)
         return sop
