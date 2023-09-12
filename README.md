@@ -15,14 +15,14 @@
 One major difference between **Agents** and other existing frameworks for language agents is that our framework allows users to provide fine-grained control and guidance to language agents via an **SOP (Standard Operation Process)**. An SOP defines subgoals/subtasks for the overall task and allows users to customize a fine-grained workflow for the language agents.
 
 <p align="center">
-  <embed src="./assets/agents-cover.pdf" width="800">
+  <embed src="./assets/agents-cover.pdf" width="800" type="application/pdf">
 </p>
 
 
 
 ## **Updates**
 
-- [ ] Support LLM-based SOP generation
+- [x] Support LLM-based SOP generation
 - [x] 2023.9.12 Offical Release
 
 ## **Highlights**
