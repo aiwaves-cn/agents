@@ -3,12 +3,7 @@ import os
 import sys
 import json
 sys.path.append("../src/agents")
-# from utils import process_document
-def process_document(path):
-    temp = {}
-    temp["type"] = "QA"
-    temp["knowledge_base"] = path
-    return temp
+from utils import process_document
 
 def tool_component_visible1(component_name):
     adic = {
@@ -1179,6 +1174,12 @@ def generate_json_single_agent(name1,role1,style1,task1,rule1,knowledge_path1,en
     os.makedirs("output_config", exist_ok=True)
     file_name = "output_config/" + "cofig.json"
     output_adic = {}
+    config = {}
+    config["API_KEY"] = api_key
+    config["PROXY"] =proxy
+    config["MAX_CHAT_HISTORY"] = "1000"
+    config["Embed_Model"] = "intfloat/multilingual-e5-large"
+    output_adic["config"] = config
     output_adic["root"] = "state1"
     states = {}
     states["end_state"] = "end_state"
@@ -2766,6 +2767,9 @@ def generate_json_multi_agent(name_s1a1,role_s1a1,style_s1a1,task_s1a1,rule_s1a1
 
 with gr.Blocks(title="Customize Your Agent", css="footer {visibility: hidden}", theme="soft") as demo:
     gr.Markdown("""# Customize Your Agent""")
+    with gr.Row():
+        api_key = gr.Textbox(label="api_key")
+        proxy = gr.Textbox(label="proxy")
     with gr.Tab("Single-agent Mode"):
         with gr.Tab("state1"):
             gr.Markdown("""PromptComponent""")
