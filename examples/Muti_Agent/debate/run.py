@@ -9,7 +9,7 @@ from Agent import Agent
 from Environment import Environment
 from Memory import Memory
 from gradio_base import Client
-from gradio_example import DebateUI
+from run_gradio import DebateUI
 
 
 
