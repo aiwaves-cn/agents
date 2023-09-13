@@ -93,7 +93,6 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    ```
    Choose the agent you want to perform in the gradio UI.
 - [ ] Option 3. Run on fast api
-   Modify the config as run on terminal.
     ```
    cd examples
    python run_backend.py --agent Single_Agent/{target_agent}/config.json
@@ -117,6 +116,12 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
     ```
    cd examples
    python Single_Agent/run_gradio.py --agent config.json
+   ```
+    
+- [ ] Option 3. Run on fast api
+    ```
+   cd examples
+   python run_backend.py --agent config.json
    ```
 
 
