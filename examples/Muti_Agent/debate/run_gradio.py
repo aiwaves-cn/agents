@@ -1,7 +1,6 @@
 import sys
 sys.path.append("../../Gradio_Config")
 
-from gradio_example import DebateUI
 from gradio_base import UIHelper, WebUI
 import os
 from gradio_base import WebUI, UIHelper, PORT, HOST, Client

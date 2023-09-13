@@ -1,6 +1,6 @@
 import argparse
 import sys
-sys.path.append("../Gradio_Config")
+sys.path.append("Gradio_Config")
 import os
 from gradio_base import WebUI, UIHelper, PORT, HOST, Client
 from gradio_config import GradioConfig as gc
@@ -178,21 +178,21 @@ class SingleAgentUI(WebUI):
                 self.chatbot = gr.Chatbot(
                     value=None if content is None else [[None, UIHelper.wrap_css(content=content, name=self.agent_name)]],
                     elem_id="chatbot1",
-                    label="对话",
+                    label="Dialog",
                     height= 600
                 )
                 with gr.Row():
                     self.text_user = gr.Textbox(
-                        label="你的输入:",
-                        placeholder="请输入",
+                        label="Input",
+                        placeholder="Please enter your content",
                         scale=10
                     )
                     self.btn_send = gr.Button(
-                        value="发送",
+                        value="Send",
                         scale=1
                     )
                     self.btn_reset = gr.Button(
-                        value="重启",
+                        value="Restart",
                         scale=1
                     )
 

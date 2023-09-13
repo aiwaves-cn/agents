@@ -3,15 +3,12 @@ import os
 import argparse
 import sys
 sys.path.append("../src/agents")
-sys.path.append("cfg")
+sys.path.append("Gradio_Config")
 from SOP import SOP
 from Agent import Agent
 from Environment import Environment
 from Memory import Memory
 from gradio_base import Client
-from gradio_example import DebateUI
-
-
 
 def process(action):
     response = action.response
@@ -27,8 +24,6 @@ def process(action):
         print(f"{send_name}({send_role}):{response}")
     memory = Memory(send_role, send_name, response)
     return memory
-
-
 
 def gradio_process(action,current_state):
     response = action.response
