@@ -21,10 +21,10 @@
       "0": "knowledge_response"
     },
     "knowledge_response_book_card": {
-      "1": "end",
+      "1": "end_state",
       "0": "knowledge_response_book_card"
     },
-    "end": {
+    "end_state": {
       "0": "knowledge_response_end"
     },
     "knowledge_response_end": {
@@ -38,7 +38,7 @@
       "knowledge_response": "Oculist",
       "knowledge_response_book_card": "Oculist",
       "knowledge_response_end": "Oculist",
-      "end": "Oculist"
+      "end_state": "Oculist"
       }
     },
     "Agod": {
@@ -47,7 +47,7 @@
       "knowledge_response": "Customer",
       "knowledge_response_book_card": "Customer",
       "knowledge_response_end": "Customer",
-      "end": "Customer"
+      "end_state": "Customer"
       }
     }
   },
