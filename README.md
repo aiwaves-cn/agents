@@ -55,7 +55,7 @@ Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
 
 #### Option 2.  Try our [WebUI](https://www.aiwaves.cn/create-agent) for customizing the config file.
 
-#### Haven't figured out how to write the JSON file yet? Check out [documentation](https://ai-waves.feishu.cn/wiki/NIjrw8FR7inGTMkfS5yc5wcvnlg?from=from_copylink)!
+#### Haven't figured out how to write the JSON file yet? Check out our [documentation]([https://ai-waves.feishu.cn/wiki/NIjrw8FR7inGTMkfS5yc5wcvnlg?from=from_copylink](https://agents-readthedocsio.readthedocs.io/en/latest/index.html))!
 
 
 ### 🤖️ The Agent Hub
@@ -73,7 +73,7 @@ We have provided exemplar config files, code, and demos for both single-agent an
 ## 📚 Documentation
 
 
-Please check our [documentation](https://ai-waves.feishu.cn/wiki/KZb6whkDTiM1cUkLqqOcnUNNnuh?from=from_copylink) for detailed documentation of the framework.
+Please check our [documentation]([https://ai-waves.feishu.cn/wiki/KZb6whkDTiM1cUkLqqOcnUNNnuh?from=from_copylink](https://agents-readthedocsio.readthedocs.io/en/latest/index.html)https://agents-readthedocsio.readthedocs.io/en/latest/index.html) for detailed documentation of the framework.
 
 
   
