@@ -53,7 +53,7 @@ One major difference between **Agents** and other existing frameworks for langua
 
 Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
 
-#### Option 2.  Try our [WebUI](https://www.aiwaves.cn/create-agent) for customizing the config file.
+#### Option 2.  Try our [WebUI](http://www.aiwaves.cn/create-agent/) for customizing the config file.
 
 #### Haven't figured out how to write the JSON file yet? Check out our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html)!
 
