@@ -12,81 +12,97 @@
     "LLM": {
         "temperature": 0.0,
         "model": "gpt-3.5-turbo-16k-0613",
-        "log_path": "logs/god"
+        "log_path": "logs/上帝"
     },
     "agents": {
         "John": {
             "style":"professional",
             "roles":{
-            "State1": "Affirmative_Debate_organizer"
+            "Affirmative_Task_Allocation_state": "Affirmative_Debate_organizer"
             }
         },
         "Mary": {
             "style":"professional",
             "roles":{
-            "State1": "Affirmative_First",
-            "State3":"Affirmative_First",
-            "State4":"Affirmative_First"
+            "Affirmative_Task_Allocation_state": "Affirmative_First",
+            "Debate_Order_state":"Affirmative_First",
+            "Debate_Random_state":"Affirmative_First"
             }
         },
         "James": {
             "style":"professional",
             "roles":{
-            "State1": "Affirmative_Second",
-            "State3":"Affirmative_Second",
-            "State4":"Affirmative_Second"
+            "Affirmative_Task_Allocation_state": "Affirmative_Second",
+            "Debate_Order_state":"Affirmative_Second",
+            "Debate_Random_state":"Affirmative_Second"
+            }
+        },
+        "Jennifer": {
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_Third",
+            "Debate_Order_state":"Affirmative_Third",
+            "Debate_Random_state":"Affirmative_Third"
             }
         },
         "Michael": {
             "style":"professional",
             "roles":{
-            "State2": "Negative_Debate_organizer"
+            "Negative_Task_Allocation_state": "Negative_Debate_organizer"
             }
         },
         "Emily": {
             "style":"professional",
             "roles":{
-            "State2": "Negative_First",
-            "State3":"Negative_First",
-            "State4":"Negative_First"
+            "Negative_Task_Allocation_state": "Negative_First",
+            "Debate_Order_state":"Negative_First",
+            "Debate_Random_state":"Negative_First"
             }
         },
         "William": {
             "style":"professional",
             "roles":{
-            "State2": "Negative_Second",
-            "State3":"Negative_Second",
-            "State4":"Negative_Second"
+            "Negative_Task_Allocation_state": "Negative_Second",
+            "Debate_Order_state":"Negative_Second",
+            "Debate_Random_state":"Negative_Second"
+            }
+        },
+        "Sarah": {
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_Third",
+            "Debate_Order_state":"Negative_Third",
+            "Debate_Random_state":"Negative_Third"
             }
         },
         "David": {
             "style":"professional",
             "roles":{
-            "State3": "Debate_Judge",
-            "State4":"Debate_Judge",
-            "State5":"Debate_Judge"
+            "Debate_Order_state": "Debate_Judge",
+            "Debate_Random_state":"Debate_Judge",
+            "Judge_state":"Debate_Judge"
             }
         }
     },
-    "root": "State1",
+    "root": "Affirmative_Task_Allocation_state",
     "relations": {
-        "State1": {
-            "0": "State1",
-            "1": "State2"
+        "Affirmative_Task_Allocation_state": {
+            "0": "Affirmative_Task_Allocation_state",
+            "1": "Negative_Task_Allocation_state"
         },
-        "State2":{
-            "0":"State2",
-            "1":"State3"
+        "Negative_Task_Allocation_state":{
+            "0":"Negative_Task_Allocation_state",
+            "1":"Debate_Order_state"
         },
-        "State3":{
-            "0":"State3",
-            "1":"State4"
+        "Debate_Order_state":{
+            "0":"Debate_Order_state",
+            "1":"Debate_Random_state"
         },
-        "State4":{
-            "0":"State4",
-            "1":"State5"
+        "Debate_Random_state":{
+            "0":"Debate_Random_state",
+            "1":"Judge_state"
         },
-        "State5":{
+        "Judge_state":{
             "0":"end_state"
         }
     },
@@ -94,10 +110,10 @@
         "end_state":{
             "agent_states":{}
         },
-        "State1": {
+        "Affirmative_Task_Allocation_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums" : 6,
+                "max_chat_nums" : 12,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
@@ -108,12 +124,19 @@
             "roles": [
                 "Affirmative_Debate_organizer",
                 "Affirmative_First",
-                "Affirmative_Second"
+                "Affirmative_Second",
+                "Affirmative_Third"
             ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Affirmative_Task_Allocation_state"
+            },
             "agent_states": {
                 "Affirmative_First": {
                     "style": {
-                        "role": "Affirmative_First"
+                        "role": "Opening Advocate for the Affirmative"
                     },
                     "task": {
                         "task": "1.Present arguments and main points.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
@@ -124,7 +147,7 @@
                 },
                 "Affirmative_Second": {
                     "style": {
-                        "role": "Affirmative_Second"
+                        "role": "Compelling Evidence Presenter"
                     },
                     "task": {
                         "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
@@ -135,8 +158,7 @@
                 },
                 "Affirmative_Third": {
                     "style": {
-                        "role": "Counterpoint Master",
-                        "style": "professional"
+                        "role": "Counterpoint Master"
                     },
                     "task": {
                         "task": "1.Counter negative arguments, summarize affirmative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
@@ -147,8 +169,7 @@
                 },
                 "Affirmative_Debate_organizer": {
                     "style": {
-                        "role": "Debate Organizer",
-                        "style": "professional"
+                        "role": "Debate Organizer"
                     },
                     "task": {
                         "task": "1.Manage debate proceedings and provide suggestions to help improve their arguments.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
@@ -159,10 +180,10 @@
                 }
             }
         },
-        "State2": {
+        "Negative_Task_Allocation_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums" : 6,
+                "max_chat_nums" : 12,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
@@ -173,13 +194,14 @@
             "roles": [
                 "Negative_Debate_organizer",
                 "Negative_First",
-                "Negative_Second"
+                "Negative_Second",
+                "Negative_Third"
             ],
             "LLM_type": "OpenAI",
             "LLM": {
                 "temperature": 1.0,
                 "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/State2"
+                "log_path": "logs/Negative_Task_Allocation_state"
             },
             "agent_states": {
                 "Negative_First": {
@@ -232,10 +254,10 @@
                 }
             }
         },
-        "State3": {
+        "Debate_Order_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums" : 5,
+                "max_chat_nums" : 7,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
@@ -245,7 +267,9 @@
                 "Affirmative_First",
                 "Negative_First",
                 "Affirmative_Second",
-                "Negative_Second"
+                "Negative_Second",
+                "Affirmative_Third",
+                "Negative_Third"
             ],
             "LLM_type": "OpenAI",
             "LLM": {
@@ -343,10 +367,10 @@
                 }
             }
         },
-        "State4": {
+        "Debate_Random_state": {
             "controller": {
                 "controller_type": "rule",
-                "max_chat_nums" : 4,
+                "max_chat_nums" : 12,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end",
@@ -359,13 +383,15 @@
                 "Affirmative_First",
                 "Negative_First",
                 "Affirmative_Second",
-                "Negative_Second"
+                "Negative_Second",
+                "Affirmative_Third",
+                "Negative_Third"
             ],
             "LLM_type": "OpenAI",
             "LLM": {
                 "temperature": 1.0,
                 "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/State4"
+                "log_path": "logs/Debate_Random_state"
             },
             "begin_role": "Debate_Judge",
             "begin_query":"Now, please engage in a free debate based on your chosen topic.",
@@ -457,7 +483,7 @@
                 }
             }
         },
-        "State5":{
+        "Judge_state":{
             "roles": [
                 "Debate_Judge"
             ],
@@ -465,7 +491,7 @@
             "LLM": {
                 "temperature": 1.0,
                 "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/State5"
+                "log_path": "logs/Judge_state"
             },
             "agent_states":{
                 "Debate_Judge": {

@@ -14,6 +14,8 @@ class State:
         )
 
         self.roles = kwargs["roles"] if "roles" in kwargs else list(kwargs["agent_states"].keys())
+        if len(self.roles) == 0:
+            self.roles = [0]
         self.begin_role = (
             kwargs["begin_role"] if "begin_role" in kwargs else self.roles[0]
         )

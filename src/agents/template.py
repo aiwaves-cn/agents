@@ -38,7 +38,7 @@ controller = {
 
 #
 Agent_state = {
-        "role": {
+    "role": {
         "LLM_type": "OpenAI",
         "LLM": LLM,
         "style": {
@@ -57,6 +57,8 @@ Agent_state = {
 
 # indispensable parameter: "agent_states","controller"
 # "roles" determines the speaking order when the rule is order. If not set, it is the default order.
+# "begin_query" & "begin_role" determines the first speaker.It often determines the direction of the next speech. If you do not set it, it will default to the first agent.
+# "environment_prompt" : Responsible for setting the scene for the current environment
 State = {
     "controller": controller,
     "begin_role": "",
@@ -66,15 +68,12 @@ State = {
     "LLM_type": "OpenAI",
     "LLM": LLM,
     "agent_state" : Agent_state,
-    
-    
-    
 }
+
 
 
 States = {
     "end_state":{
-            "name":"end_state",
             "agent_states":{}
         },
     "state1" : State
@@ -83,6 +82,7 @@ States = {
 
 
 # default finish_state_name is "end_state"
+# "environment_type" : "competive" : different states not share the memory; "cooperative":diffrent states share the memory
 SOP = {
     "config" : {
     "API_KEY" : "Your key",
