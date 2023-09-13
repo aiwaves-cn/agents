@@ -1,6 +1,7 @@
 import sys
 sys.path.append("Gradio_Config")
 import os
+import argparse
 from gradio_base import WebUI, UIHelper, PORT, HOST, Client
 from gradio_config import GradioConfig as gc
 from typing import List, Tuple, Any
@@ -37,7 +38,7 @@ class GeneralUI(WebUI):
         bufsize: int = 1024,
         ui_name: str = "GeneralUI"
     ):
-        super(CodeUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
+        super(GeneralUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         self.first_recieve_from_client()
         self.current_node_name = ""
         self.data_history = None
@@ -49,26 +50,27 @@ class GeneralUI(WebUI):
             
             with gr.Column():
                 self.btn_start = gr.Button(
-                    value="开始"
+                    value="Start😁(Click here to start!)"
                 )
                 self.chatbot = gr.Chatbot(
                     elem_id="chatbot1",
-                    label="对话",
-                    visible=False
+                    label="Dialog",
+                    visible=False,
+                    height=700
                 )
                 with gr.Row():
                     self.text_input = gr.Textbox(
-                        placeholder="请输入你的内容",
-                        label="输入",
+                        placeholder="Please enter your content.",
+                        label="Input",
                         scale=9,
                         visible=False
                     )
                     self.btn_send = gr.Button(
-                        value="发送",
+                        value="Send",
                         visible=False
                     )
                 self.btn_reset = gr.Button(
-                    value="重启",
+                    value="Restart",
                     visible=False
                 )
 
@@ -178,6 +180,7 @@ class GeneralUI(WebUI):
         渲染气泡
         '''
         history = self.handle_message(history, 10, 'User', text_input, self.current_node_name)
+        self.send_message("<USER>"+text_input+self.SIGN["SPLIT"])
         return gr.Button.update(visible=False), \
             gr.Button.update(visible=False),\
             gr.Button.update(visible=False),\
@@ -190,15 +193,31 @@ class GeneralUI(WebUI):
         outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input]
         启动命令并监听，感觉可以直接调用btn_start_after_click
         '''
-        yield from self.btn_start_after_click()
+        yield from self.btn_start_after_click(history=history)
         return 
     
     def btn_reset_when_click(self):
-        pass
+        """
+        outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input]
+        """
+        return gr.Button.update(interactive=False), gr.Button.update(interactive=False), gr.Button.update(interactive=False, value="Restarting....."), gr.Chatbot.update(label="Dialog"), \
+            gr.Textbox.update(interactive=False)
     
     def btn_reset_after_click(self):
-        pass    
+        self.reset()
+        self.first_recieve_from_client(reset_mode=True)
+        return gr.Button.update(interactive=True, visible=True), \
+            gr.Button.update(interactive=True, visible=False), \
+            gr.Button.update(interactive=True, value="Restart", visible=False), \
+            gr.Chatbot.update(label="Dialog", visible=False), \
+            gr.Textbox.update(interactive=True, visible=False)
   
   
 if __name__ == '__main__':
-    pass
+    parser = argparse.ArgumentParser(description='A demo of chatbot')
+    parser.add_argument('--agent', type=str, help='path to SOP json')
+    args = parser.parse_args()
+    ui = GeneralUI(client_cmd=["python","gradio_backend.py","--agent", args.agent])
+    ui.construct_ui()
+    # 启动运行
+    ui.run(share=True)

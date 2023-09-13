@@ -37,15 +37,15 @@ class CodeUI(WebUI):
                     with gr.Row():
                         self.text_requirement = gr.Textbox(
                             value=self.cache['requirement'],
-                            placeholder="请输入你的要求",
+                            placeholder="Please enter your content",
                             scale=9,
                         )
                         self.btn_start = gr.Button(
-                            value="开始",
+                            value="Start!",
                             scale=1
                         )
                     self.btn_reset = gr.Button(
-                        value="重启",
+                        value="Restart",
                         visible=False
                     )
                 

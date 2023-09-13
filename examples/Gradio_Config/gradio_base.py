@@ -220,14 +220,22 @@ class UIHelper:
         return content
     
     @classmethod
+    def general_filter(cls, content, agent_name):
+        return content
+    
+    @classmethod
     def filter(cls, content: str, agent_name: str, ui_name: str):
         mapping = {
             "SingleAgentUI": cls.singleagent_filter,
             "DebateUI": cls.debate_filter,
             "NovelUI": cls.novel_filter,
-            "CodeUI": cls.code_filter
+            "CodeUI": cls.code_filter,
+            "GeneralUI": cls.general_filter
         }
-        return mapping[ui_name](content, agent_name)
+        if ui_name in mapping:
+            return mapping[ui_name](content, agent_name)
+        else:
+            return content
 
 class Client:
 

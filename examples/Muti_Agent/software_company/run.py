@@ -9,7 +9,6 @@ from Agent import Agent
 from Environment import Environment
 from Memory import Memory
 from gradio_base import Client, convert2list4agentname
-from gradio_example import DebateUI
 
 
 
@@ -90,9 +89,9 @@ def prepare(agents, sop, environment):
     client.send_message(
         {
             "requirement": f"{sop.states['design_state'].begin_query}",
-            "agents_name": DebateUI.convert2list4agentname(sop)[0],
+            "agents_name": convert2list4agentname(sop)[0],
             # "only_name":  DebateUI.convert2list4agentname(sop)[1],
-            "only_name":  DebateUI.convert2list4agentname(sop)[0],
+            "only_name":  convert2list4agentname(sop)[0],
             "default_cos_play_id": -1
         }
     )

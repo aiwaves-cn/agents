@@ -7,7 +7,8 @@ sys.path.append("Gradio_Config")
 from SOP import SOP
 from Agent import Agent
 from Environment import Environment
-from gradio_base import Client
+from gradio_base import Client, convert2list4agentname
+from Memory import Memory
 
 
 # add ===================
@@ -60,18 +61,15 @@ def prepare(agents, sop, environment):
 
     client.send_message(
         {
-            "agents_name": DebateUI.convert2list4agentname(sop)[0],
-            # "only_name":  DebateUI.convert2list4agentname(sop)[1],
-            "only_name":  DebateUI.convert2list4agentname(sop)[0],
-            "default_cos_play_id": -1
+            "agents_name": convert2list4agentname(sop)[0]
         }
     )
     print(f"client: {list(agents.keys())}")
-    print(f"client:发送的值为{sop.states['design_state'].begin_query}")
+    # print(f"client:发送的值为{sop.states['design_state'].begin_query}")
     client.listening_for_start_()
     """覆盖参数"""
-    sop.states['design_state'].begin_query = Client.cache['requirement']
-    print(f"client:传入的值为{Client.cache['requirement']}")
+    # sop.states['design_state'].begin_query = Client.cache['requirement']
+    # print(f"client:传入的值为{Client.cache['requirement']}")
 
 # =======================
 
@@ -108,4 +106,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
         
     agents,sop,environment = init(args.agent)
+    prepare(agents, sop, environment)
     run(agents,sop,environment)
