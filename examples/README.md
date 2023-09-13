@@ -57,7 +57,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 	
     ```
    cd examples
-   python run_gradio.py --agent Single_Agent/{target_agent}/config.json
+   python Single_Agent/run_gradio.py --agent Single_Agent/{target_agent}/config.json
    ```
 - [ ] Option 3. Run on fast api
     ```
@@ -116,7 +116,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 	
     ```
    cd examples
-   python run_gradio.py --agent config.json
+   python Single_Agent/run_gradio.py --agent config.json
    ```
 
 
