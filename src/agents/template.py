@@ -56,6 +56,7 @@ Agent_state = {
 
 
 # indispensable parameter: "agent_states","controller"
+# "roles" determines the speaking order when the rule is order. If not set, it is the default order.
 State = {
     "controller": controller,
     "begin_role": "",

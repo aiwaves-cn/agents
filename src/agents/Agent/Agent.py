@@ -111,7 +111,7 @@ class Agent:
         assert len(config["agents"].keys()) != 2 or (roles_to_names[config["root"]][config["states"][config["root"]]["begin_role"]] not in user_names and "begin_query"  in config["states"][config["root"]]),"In a single-agent scenario, there must be an opening statement and it must be the agent" 
         return agents, roles_to_names, names_to_roles
 
-    def step(self, current_state,input):
+    def step(self, current_state,input=""):
         """
         return actions by current state and environment
         Return: action(Action)
