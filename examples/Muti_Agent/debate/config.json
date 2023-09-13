@@ -108,7 +108,6 @@
     },
     "states": {
         "end_state":{
-            "name":"end_state",
             "agent_states":{}
         },
         "Affirmative_Task_Allocation_state": {
@@ -122,7 +121,6 @@
             "begin_role": "Affirmative_Debate_organizer",
             "begin_query": "The debate topic is as follows: \n<debate topic>\nShould AI Replace Humans in Creative Fields?? Affirmative viewpoint: AI should replace humans in creative fields because it can produce art and content efficiently, reduce costs, and eliminate human bias. negative viewpoint: AI should not replace humans in creative fields as it lacks true creativity, emotions, and the ability to understand complex human experiences.\n<debate topic>\n, now , begin to discuss!",
             "environment_prompt": "It is currently the debate stage, where the positive side is assigning tasks.Affirmative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.",
-            "name": "Affirmative_Task_Allocation_state",
             "roles": [
                 "Affirmative_Debate_organizer",
                 "Affirmative_First",
@@ -150,8 +148,7 @@
                 },
                 "Affirmative_Second": {
                     "style": {
-                        "role": "Compelling Evidence Presenter",
-                        "style": "professional"
+                        "role": "Compelling Evidence Presenter"
                     },
                     "task": {
                         "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
@@ -197,7 +194,6 @@
             "begin_role": "Negative_Debate_organizer",
             "begin_query":"The debate topic is as follows: \n<debate topic>\nShould AI Replace Humans in Creative Fields?? Affirmative viewpoint: AI should replace humans in creative fields because it can produce art and content efficiently, reduce costs, and eliminate human bias. negative viewpoint: AI should not replace humans in creative fields as it lacks true creativity, emotions, and the ability to understand complex human experiences.\n<debate topic>\n, now , begin to discuss!",
             "environment_prompt": "It is currently the debate stage, where the Negative side is assigning tasks.The debate organizer sets the stage for the competition, explaining the debate process and rules. Debaters are called upon to allocate tasks for each speech, ensuring an equal distribution of responsibilities.Negative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.",
-            "name": "Negative_Task_Allocation_state",
             "roles": [
                 "Negative_Debate_organizer",
                 "Negative_First",
@@ -269,7 +265,6 @@
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "name": "Debate_Order_state",
             "roles": [
                 "Debate_Judge",
                 "Affirmative_First",
@@ -386,7 +381,6 @@
                 "call_last_prompt": "Please strictly adhere to the following format for outputting:",
                 "call_extract_words": "end"
             },
-            "name": "Debate_Random_state",
             "roles": [
                 "Debate_Judge",
                 "Affirmative_First",
@@ -493,7 +487,6 @@
             }
         },
         "Judge_state":{
-            "name":"Judge_state",
             "roles": [
                 "Debate_Judge"
             ],

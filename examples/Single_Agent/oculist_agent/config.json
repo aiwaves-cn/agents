@@ -53,7 +53,6 @@
   },
   "states": {
     "knowledge_response": {
-      "name": "knowledge_response",
       "roles": [
         "Oculist",
         "Customer"
@@ -88,7 +87,6 @@
       }
     },
     "knowledge_response_book_card": {
-      "name": "knowledge_response_book_card",
       "roles": [
         "Oculist",
         "Customer"
@@ -124,7 +122,6 @@
       "controller": {
         "controller_type":"order"
       },
-      "name": "knowledge_response_end",
       "roles": [
         "Oculist",
         "Customer"
@@ -150,8 +147,7 @@
         }
       }
     },
-    "end": {
-      "name": "end",
+    "end_state": {
       "roles": [
         "Oculist",
         "Customer"

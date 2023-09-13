@@ -35,7 +35,6 @@
     "log_path": "logs",
     "states": {
         "end_state": {
-            "name": "end_state"
         },
         "response_state": {
             "controller": {
@@ -44,7 +43,6 @@
             "begin_role": "customer service personnel",
             "begin_query": "hello, could i can help you?",
             "environment_prompt": "",
-            "name": "response_state",
             "roles": [
                 "customer service personnel",
                 "user"
