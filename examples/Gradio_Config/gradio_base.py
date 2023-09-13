@@ -9,6 +9,21 @@ import psutil
 import os
 from abc import abstractmethod
 
+def convert2list4agentname(sop):
+    """把agentname搞成list ['1', '2']"""
+    """每个元素是名字+扮演的角色，比如是一辩二辩"""
+    """就遍历一下就行"""
+    only_name = []      # 只有name
+    agent_name = []     # 前端渲染
+    roles_to_names = sop.roles_to_names
+    for state_name,roles_names in roles_to_names.items():
+        for role,name in roles_names.items():
+            agent_name.append(f"{name}({role})")
+            only_name.append(name)
+    agent_name = list(set(agent_name))
+    agent_name.sort()
+    return agent_name, only_name
+
 def is_port_in_use(port):
     for conn in psutil.net_connections():
         if conn.laddr.port == port:
