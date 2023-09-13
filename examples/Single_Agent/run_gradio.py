@@ -11,7 +11,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     ui = SingleAgentUI(
         # client_server_file="serving.py"
-        client_cmd=["python", "gradio_backend.py","--agent",args.agent]
+        client_cmd=["python", "Single_Agent/gradio_backend.py","--agent",args.agent]
     )
     # 构建映射关系
     # GradioConfig.add_agent(agents_name=ui.all_agents_name)

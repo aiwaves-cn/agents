@@ -24,6 +24,7 @@ Agents = {
 }
 
 # indispensable parameter:  "controller_type"（"order","random","rule"）
+# default extract words: "end". You can choose not to fill in this parameter
 controller = {
     "controller_type": "order",
     "max_chat_nums" : 12,
@@ -35,32 +36,31 @@ controller = {
     "call_extract_words": ""
 }
 
-
+#
 Agent_state = {
-    "role": {
-    "LLM_type": "OpenAI",
-    "LLM": LLM,
-    "style": {
-        "role": "Opening Advocate for the Affirmative",
-        "style": "professional"
+        "role": {
+        "LLM_type": "OpenAI",
+        "LLM": LLM,
+        "style": {
+            "role": "Opening Advocate for the Affirmative",
+            "style": "professional"
+        },
+        "task": {
+            "task": ""
+        },
+        "rule": {
+            "rule": ""
+        }
     },
-    "task": {
-        "task": ""
-    },
-    "rule": {
-        "rule": ""
-    }
-},
 }
 
 
-# indispensable parameter:  "name" and "agent_states"
+# indispensable parameter: "agent_states","controller"
 State = {
     "controller": controller,
     "begin_role": "",
     "begin_query": "",
     "environment_prompt": "",
-    "name": "state1",
     "roles": ["role1","role2"],
     "LLM_type": "OpenAI",
     "LLM": LLM,

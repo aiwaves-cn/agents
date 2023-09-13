@@ -35,7 +35,6 @@
   },
   "states": {
     "end_state": {
-      "name": "end_state"
     },
     "shopping_state": {
       "roles": [
@@ -52,7 +51,6 @@
         "call_extract_words": "end"
       },
       "environment_prompt": "The current scenario is an AI shopping guide answering customers' questions and recommending corresponding products based on the user's needs to induce users to buy. The main roles are: shopping_assistant (Jonh) is responsible for answering users’ questions, and customers (Mike) come to consult shopping opinions.",
-      "name": "shopping_state",
       "begin_role": "Shopping assistant",
       "begin_query": "Welcome to the store, is there anything you want to buy?",
       "agent_states": {

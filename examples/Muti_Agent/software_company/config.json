@@ -82,7 +82,6 @@
     },
     "states": {
         "end_state": {
-            "name": "end_state"
         },
         "design_state": {
             "LLM_type": "OpenAI",
@@ -105,7 +104,6 @@
                 "judge_extract_words": "end"
             },
             "environment_prompt": "Imagine a scenario where the boss has presented a requirement. The architect is tasked with proposing a Python framework based on this requirement. The leader's role is to provide feedback on the architect's proposal, and another architect will finalize the framework based on the leader's comments.",
-            "name": "design_state",
             "begin_role": "Boss",
             "begin_query": "write a snake game with python.",
             "agent_states": {
@@ -211,7 +209,6 @@
                 "judge_extract_words": "end"
             },
             "environment_prompt": "In this scenario, the boss has provided a requirement. The developer's task is to write code based on the architecture proposed by the architect. The leader evaluates the written code for elegance, readability, and functionality, providing feedback. Another developer makes necessary modifications to the code.",
-            "name": "develop_state",
             "begin_role": "Boss",
             "begin_query": "Please write code for a snake game with python..",
             "agent_states": {
@@ -325,7 +322,6 @@
                 "judge_extract_words": "end"
             },
             "environment_prompt": "In this scenario, the boss has provided a requirement. The debugger simulates a compiler to determine whether the code is runnable and provides feedback. The developer writes code based on the debugger's feedback. The leader evaluates whether the final code meets the boss's requirements and provides feedback for further modifications. The coder writes the final code to a file.",
-            "name": "debug_state",
             "begin_role": "Boss",
             "begin_query": "Please make the code both runnable and more efficient.",
             "agent_states": {

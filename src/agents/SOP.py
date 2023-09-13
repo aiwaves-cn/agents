@@ -74,6 +74,7 @@ class SOP:
 
     def init_states(self, states_dict):
         for state_name, state_dict in states_dict.items():
+            state_dict["name"] = state_name
             self.states[state_name] = State(**state_dict)
 
     def init_relation(self, relations):
@@ -169,7 +170,7 @@ class SOP:
             controller_type = (
                 self.controller_dict[self.current_state.name]["controller_type"]
                 if "controller_type" in self.controller_dict[self.current_state.name]
-                else "rule"
+                else "order"
             )
 
 
