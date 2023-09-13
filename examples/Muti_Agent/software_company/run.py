@@ -3,11 +3,11 @@ import os
 import argparse
 import sys
 sys.path.append("../../../src/agents")
-sys.path.append("../../cfg")
+sys.path.append("../../Gradio_Config")
 from SOP import SOP
-from Agents import Agent
-from Environments import Environment
-from Memorys import Memory
+from Agent import Agent
+from Environment import Environment
+from Memory import Memory
 from gradio_base import Client
 from gradio_example import DebateUI
 
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
     parser.add_argument('--agent', type=str, help='path to SOP json', default="software.json")
-    parser.add_argument('--config', type=str, help='path to config', default="config.yaml")
+    parser.add_argument('--config', type=str, help='path to config', default="config.json")
     args = parser.parse_args()
 
     with open(args.config, "r") as file:

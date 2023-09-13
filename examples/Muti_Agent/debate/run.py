@@ -3,7 +3,7 @@ import os
 import argparse
 import sys
 sys.path.append("../../../src/agents")
-sys.path.append("../../cfg")
+sys.path.append("../../Gradio_Config")
 from SOP import SOP
 from Agent import Agent
 from Environment import Environment
