@@ -13,7 +13,7 @@ class State:
             kwargs["environment_prompt"] if "environment_prompt" in kwargs else ""
         )
 
-        self.roles = kwargs["roles"] if "roles" in kwargs else list(kwargs["agent_states"].keys())
+        self.roles = kwargs["roles"] if "roles" in kwargs else (list(kwargs["agent_states"].keys()) if "agent_states" in kwargs else [0])
         if len(self.roles) == 0:
             self.roles = [0]
         self.begin_role = (
