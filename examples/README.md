@@ -108,7 +108,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 
     ```
     cd examples
-    python run.py --config.json
+    python run.py --agent config.json
     ```
 
 
