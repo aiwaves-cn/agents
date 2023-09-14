@@ -121,7 +121,7 @@ class CodeUI(WebUI):
         """渲染气泡，然后隐藏按钮"""
         chatbot = [[UIHelper.wrap_css(content=text_requirement, name="User"), None]]
         yield chatbot,\
-            gr.Button.update(visible=True, interactive=False, value="运行中"),\
+            gr.Button.update(visible=True, interactive=False, value="Running"),\
             gr.Textbox.update(visible=True, interactive=False, value=""),\
             gr.Button.update(visible=False, interactive=False)                  # 重启
         """发送启动命令"""
@@ -158,9 +158,9 @@ class CodeUI(WebUI):
                     yield gr.File.update(value=fs, visible=True, interactive=True),\
                         history, \
                         gr.Chatbot.update(visible=True),\
-                        gr.Button.update(visible=True, interactive=True, value="开始"),\
+                        gr.Button.update(visible=True, interactive=True, value="Start"),\
                         gr.Button.update(visible=True, interactive=True),\
-                        gr.Textbox.update(visible=True, interactive=True, placeholder="请输入你的要求", value="")
+                        gr.Textbox.update(visible=True, interactive=True, placeholder="Please input your requirement", value="")
                     return
                 history = self.handle_message(history, state, agent_name, token, node_name)
                 yield gr.File.update(visible=False),\
@@ -176,9 +176,9 @@ class CodeUI(WebUI):
         outputs = [self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
         """
         return gr.File.update(visible=False),\
-            None, None, gr.Button.update(value="重启中", interactive=False),\
-                gr.Button.update(value="重启中", interactive=False),\
-                    gr.Textbox.update(value="重启中", interactive=False)
+            None, None, gr.Button.update(value="Restarting...", interactive=False),\
+                gr.Button.update(value="Restarting...", interactive=False),\
+                    gr.Textbox.update(value="Restarting", interactive=False)
     
     def btn_reset_after_click(
         self,
@@ -196,8 +196,8 @@ class CodeUI(WebUI):
         return gr.File.update(value=None, visible=False),\
             gr.Chatbot.update(value=None, visible=True),\
             gr.Chatbot.update(value=None, visible=False),\
-            gr.Button.update(value="开始", visible=True, interactive=True),\
-            gr.Button.update(value="重启", interactive=False, visible=False),\
+            gr.Button.update(value="Start", visible=True, interactive=True),\
+            gr.Button.update(value="Restart", interactive=False, visible=False),\
             gr.Textbox.update(value=self.cache['requirement'], interactive=True, visible=True)
         
     """监听文件点击"""
