@@ -3,7 +3,8 @@
 
 <p align="center"><a href="https://arxiv.org/pdf/2305.13304.pdf">[📄 Paper]</a>
 <a href="http://www.aiwaves-agents.com/home">[🌐 Website]</a>
-[🤖️ Demos](###-Web-demos) </p>
+<a href="###-Web-demo">[🤖️ Demos]</a>
+</p>
 <hr>
   
 
