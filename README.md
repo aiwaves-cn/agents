@@ -1,4 +1,4 @@
-# <p align="center"><img src='./assets/agents-logo.png'  width=300> </p>
+<img width="779" alt="image" src="https://github.com/aiwaves-cn/agents/assets/38269460/795199d8-6590-4f5f-b28b-784040adcc33"># <p align="center"><img src='./assets/agents-logo.png'  width=300> </p>
 ## <p align="center" style="display:inline-block;"><font  face="Calisto MT"><font  size="4">An Open-source Framework for Autonomous Language Agents</font></font></p>
 
 <p align="center"><a href="https://arxiv.org/pdf/2305.13304.pdf">[📄 Paper]</a>
@@ -68,6 +68,14 @@ A WebUI for automatically uploading of your customized agents will be available 
 ## 📷 Examples and Demos
 
 We have provided exemplar config files, code, and demos for both single-agent and multi-agent systems [here](https://github.com/aiwaves-cn/agents/tree/master/examples).
+
+### Web demo
+- [Customer Service Agent](customer_service_agent)
+- [Oculist Agent](https://www.aiwaves.cn/oculist_agent/)
+- [Debate](https://www.aiwaves.cn/debate/)
+- [Software Company](https://www.aiwaves.cn/software_company/)
+- [Fiction Studio](https://www.aiwaves.cn/fiction_studio/)
+
 
 
 ## 📚 Documentation
