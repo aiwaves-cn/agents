@@ -201,7 +201,6 @@ class UIHelper:
                     START_FORMAT.format(key), CENTER_FORMAT.format(mapping[key])
                 )
             elif key in ["TOTAL NUMBER"]:
-                # 颜色问题，所以得用这种强制转换成黑色
                 content = content.replace(
                     START_FORMAT.format(key), CENTER_FORMAT.format(mapping[key]) + """<span style="color: black;">"""
                 )

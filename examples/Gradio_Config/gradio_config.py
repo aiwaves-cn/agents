@@ -67,7 +67,7 @@ class GradioConfig:
     
     # Bubble template
     BUBBLE_CSS = {
-        # 背景颜色 名字颜色 名字 字体颜色 字体大小 内容 图片地址
+        # Background-color Name-color Name-content Font-color Font-size Content Avatar-URL
         "USER": """
     <div style="display: flex; align-items: flex-start; justify-content: flex-end;">
         <div style="background-color: {}; border-radius: 20px 0px 20px 20px; padding: 15px; min-width: 100px; max-width: 300px;">
@@ -78,7 +78,7 @@ class GradioConfig:
     </div>
         """,
 
-        # 图片地址 背景颜色 名字颜色 名字 字体颜色 字体大小 内容
+        # Avatar-URL Background-color Name-color Name-Content Font-color Font-size Content
         "AGENT": """
     <div style="display: flex; align-items: flex-start;">
         <img src="{}" alt="AGENT" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
@@ -89,7 +89,7 @@ class GradioConfig:
     </div>
         """,
 
-        # 背景颜色 字体大小 字体颜色 名字 内容
+        # Backrgound-color Font-size Font-color Name Content
         "SYSTEM": """
     <div style="display: flex; align-items: center; justify-content: center;">
         <div style="background-color: {}; border-radius: 20px; padding: 1px; min-width: 200px; max-width: 1000px;">
@@ -102,7 +102,7 @@ class GradioConfig:
     ROLE_2_NAME = {}
     
     OBJECT_INFO = {
-        # 主要是user/agent/system
+
         "User": {
             # https://img-blog.csdnimg.cn/img_convert/7c20bc39ac69b6972a22e18762d02db3.jpeg
             "head_url": USER_HEAD_URL,
@@ -252,7 +252,7 @@ class StateConfig:
 .container.progress-bar-container {
   position: relative;
   display: flex;
-  align-items: flex-end; /* 将内容底部对齐 */
+  align-items: flex-end;
   width: 100%;
   overflow-x: auto;
   padding-bottom: 30px;
