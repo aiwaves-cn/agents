@@ -63,7 +63,7 @@ class SingleAgentUI(WebUI):
             # time.sleep(2)
             self.send_start_cmd()
             self.FIRST = False
-        return history, gr.Button.update(interactive=False, value="生成中"), gr.Text.update(interactive=False)
+        return history, gr.Button.update(interactive=False, value="Waiting"), gr.Text.update(interactive=False)
 
     def handle_message(self, history:list,
             state, agent_name, token, node_name):
@@ -109,7 +109,7 @@ class SingleAgentUI(WebUI):
                     # 1. 设置interactive和visible
                     print("server:显示1")
                     yield history,\
-                        gr.Button.update(visible=True, interactive=True, value="发送"), \
+                        gr.Button.update(visible=True, interactive=True, value="Send"), \
                         gr.Textbox.update(visible=True, interactive=True)
                     return
                 else:
@@ -121,10 +121,10 @@ class SingleAgentUI(WebUI):
 
     """重新启动"""
     def btn_reset_when_click(self, history, text, btn_send, btn_reset):
-        yield history.append([None, UIHelper.wrap_css("正在重启", name="System")]), \
+        yield history.append([None, UIHelper.wrap_css("Restarting", name="System")]), \
             gr.Textbox.update(value="", visible=True, interactive=True), \
                 gr.Button.update(visible=True, interactive=False),\
-                    gr.Button.update(visible=True, interactive=False, value="正在重启")
+                    gr.Button.update(visible=True, interactive=False, value="Restarting")
         return
     
     def btn_reset_after_click(self, history, text, btn_send, btn_reset):
@@ -137,7 +137,7 @@ class SingleAgentUI(WebUI):
         return None if content is None else [[None, UIHelper.wrap_css(content, name=self.agent_name)]], \
             gr.Textbox.update(value="", visible=True, interactive=True), \
                 gr.Button.update(visible=True, interactive=True),\
-                    gr.Button.update(visible=True, interactive=True, value="重启")
+                    gr.Button.update(visible=True, interactive=True, value="Restart")
            
     def prepare(self):
         if self.FIRST:

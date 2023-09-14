@@ -1,6 +1,6 @@
 {   "config":{
     "API_KEY" : "API_KEY",
-    "PROXY" : "PROXY",
+    "PROXY" : "YOUR PROXY",
     "MAX_CHAT_HISTORY" : "1000",
     "User_Names" : "[\"alexander\"]",
     "Embed_Model" : "intfloat/multilingual-e5-large"
@@ -66,13 +66,13 @@
                         "rule": "Keep your response as concise as possible"
                     },
                     "WebSearchComponent": {
-                        "engine_name": "bing or goolgle",
+                        "engine_name": "bing or google",
                         "api": {
                             "google": {
                                 "cse_id": "cse_id",
                                 "api_key": "api_key"
                             },
-                            "bing": "bing key"
+                            "bing": "api_key"
                         }
                     }
                 },

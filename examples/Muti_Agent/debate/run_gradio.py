@@ -200,9 +200,9 @@ class DebateUI(WebUI):
                 "", \
                     "", \
                         "", \
-                            gr.Button.update(value="重启中...", interactive=False, visible=True),\
-                                gr.Button.update(value="重启中...", interactive=False, visible=True),\
-                                    gr.Button.update(value="重启中...", interactive=False, visible=True)
+                            gr.Button.update(value="Restarting...", interactive=False, visible=True),\
+                                gr.Button.update(value="Restarting...", interactive=False, visible=True),\
+                                    gr.Button.update(value="Restarting...", interactive=False, visible=True)
                             
     def reset_button_after_click(self, history, text_positive, text_negative, text_theme, text_user, btn_send, btn_start, btn_reset):
         self.reset()
@@ -213,9 +213,9 @@ class DebateUI(WebUI):
                 gr.Textbox.update(value=f"{self.cache['negative']}", interactive=True, visible=True),\
                     gr.Textbox.update(value=f"{self.cache['theme']}", interactive=True, visible=True),\
                         gr.Textbox.update(value=f"", interactive=True, visible=False),\
-                            gr.Button.update(interactive=True, visible=False, value="发送"),\
-                                gr.Button.update(interactive=True, visible=True, value="开始"),\
-                                    gr.Button.update(interactive=False, visible=False, value="重启")
+                            gr.Button.update(interactive=True, visible=False, value="Send"),\
+                                gr.Button.update(interactive=True, visible=True, value="Start"),\
+                                    gr.Button.update(interactive=False, visible=False, value="Restart")
         
     def construct_ui(
         self,
@@ -267,20 +267,20 @@ class DebateUI(WebUI):
                     self.chatbot = gr.Chatbot(
                         height= 850,
                         elem_id="chatbot1",
-                        label="对话",
+                        label="Dialog",
                         visible=VISIBLE
                     )
                     self.text_user = gr.Textbox(
-                        label="你的输入:",
-                        placeholder="请输入",
+                        label="Input",
+                        placeholder="Input here",
                         visible=VISIBLE
                     )
                     self.btn_send = gr.Button(
-                        value="发送",
+                        value="Send",
                         visible=VISIBLE
                     )
                     self.btn_reset = gr.Button(
-                        value="重启",
+                        value="Restart",
                         visible=VISIBLE
                     )
             # =================设置监听器=====================
