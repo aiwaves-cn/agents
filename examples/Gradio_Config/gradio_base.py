@@ -1,4 +1,21 @@
-"""https://emojipedia.org/zh/%E6%83%B3%E4%B8%80%E6%83%B3"""
+# coding=utf-8
+# Copyright 2023  The AIWaves Inc. team.
+
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Emoji comes from this website:
+# https://emojipedia.org/
 import subprocess
 from gradio_config import GradioConfig as gc
 import gradio as gr
@@ -10,11 +27,14 @@ import os
 from abc import abstractmethod
 
 def convert2list4agentname(sop):
-    """把agentname搞成list ['1', '2']"""
-    """每个元素是名字+扮演的角色，比如是一辩二辩"""
-    """就遍历一下就行"""
-    only_name = []      # 只有name
-    agent_name = []     # 前端渲染
+    """
+    Extract the agent names of all states
+    return:
+        only name: [name1, name2, ...]
+        agent_name: [name1(role1), name2(role2), ...]
+    """
+    only_name = []  
+    agent_name = [] 
     roles_to_names = sop.roles_to_names
     for state_name,roles_names in roles_to_names.items():
         for role,name in roles_names.items():
@@ -25,12 +45,14 @@ def convert2list4agentname(sop):
     return agent_name, only_name
 
 def is_port_in_use(port):
+    """Check if the port is available"""
     for conn in psutil.net_connections():
         if conn.laddr.port == port:
             return True
     return False
 
 def check_port(port):
+    """Determine available ports"""
     if os.path.isfile("PORT.txt"):
         port = int(open("PORT.txt","r",encoding='utf-8').readlines()[0])
         print(port)
@@ -44,81 +66,74 @@ def check_port(port):
         print(port)
     return port
 
+# Determine some heads
 SPECIAL_SIGN = {
-    # 双方约定正式开始运行的符号
     "START": "<START>",
-    # 双方约定每个消息的分隔符，这个主要是对渲染气泡的时候来说的
     "SPLIT": "<SELFDEFINESEP>",
-    # 双方约定每种类型消息的结束符，也可以为空吧
     "END": "<ENDSEP>"
 }
 HOST = "127.0.0.1"
-
-PORT = 6289
+# The starting port number for the search.
+PORT = 15000                
 PORT = check_port(PORT)
     
 def print_log(message:str):
     print(f"[{time.ctime()}]{message}")
 
-"""全局的对话，只用于回答"""
 global_dialog = {
     "user": [],
-    "agent": {
-
-    },
+    "agent": {},
     "system": []
 }
 
 class UIHelper:
-    """静态类"""
+    """Static Class"""
 
-    @classmethod
-    def init(cls):
-        first_node_agents_name, cnt = gc.init_zjt(gc.NOVEL_PROMPT, cnt=0)
-        return first_node_agents_name
-
-    """为每个输出弄一个css，返回的是HTML格式，目的是交给markdown渲染"""
     @classmethod
     def wrap_css(cls, content, name) -> str:
-        """content: 输出的内容 name: 谁的输出"""
-        """确保name这个人是存在的"""
-        assert name in gc.OBJECT_INFO, f"'{name}' not in {gc.OBJECT_INFO.keys()}"
-        """取出这个人的全部信息"""
+        """
+        Description:
+            Wrap CSS around each output, and return it in HTML format for rendering with Markdown.
+        Input:
+            content: Output content 
+            name: Whose output is it
+        Output:
+            HTML
+        """
+        assert name in gc.OBJECT_INFO, \
+            f"The current name `{name}` is not registered with an image. The names of the currently registered agents are in `{gc.OBJECT_INFO.keys()}`. Please use `GradioConfig.add_agent()` from `Gradio_Config/gradio_config.py` to bind the name of the new agent."
         output = ""
         info = gc.OBJECT_INFO[name]
         if info["id"] == "USER":
-            # 背景颜色 名字颜色 名字 字体颜色 字体大小 内容 图片地址
             output = gc.BUBBLE_CSS["USER"].format(
-                info["bubble_color"],
-                info["text_color"],
-                name,
-                info["text_color"],
-                info["font_size"],
-                content,
-                info["head_url"]
+                info["bubble_color"],                   # Background-color
+                info["text_color"],                     # Color of the agent's name 
+                name,                                   # Agent name
+                info["text_color"],                     # Font color
+                info["font_size"],                      # Font size
+                content,                                # Content
+                info["head_url"]                        # URL of the avatar
             )
         elif info["id"] == "SYSTEM":
-            # 背景颜色 字体大小 字体颜色 名字 内容
             output = gc.BUBBLE_CSS["SYSTEM"].format(
-                info["bubble_color"],
-                info["font_size"],
-                info["text_color"],
-                name,
-                content
+                info["bubble_color"],                   # Background-color
+                info["font_size"],                      # Font size
+                info["text_color"],                     # Font color
+                name,                                   # Agent name
+                content                                 # Content
             )
         elif info["id"] == "AGENT":
-            # 图片地址 背景颜色 名字颜色 名字 字体颜色 字体大小 内容
             output = gc.BUBBLE_CSS["AGENT"].format(
-                info["head_url"],
-                info["bubble_color"],
-                info["text_color"],
-                name,
-                info["text_color"],
-                info["font_size"],
-                content,
+                info["head_url"],                       # URL of the avatar
+                info["bubble_color"],                   # Background-color
+                info["text_color"],                     # Font color
+                name,                                   # Agent name
+                info["text_color"],                     # Font color
+                info["font_size"],                      # Font size
+                content,                                # Content
             )
         else:
-            assert False
+            assert False, f"Id `{info['id']}` is invalid. The valid id is in ['SYSTEM', 'AGENT', 'USER']"
         return output
 
     @classmethod
@@ -141,45 +156,45 @@ class UIHelper:
         START_FORMAT = "<{}>"
         END_FORMAT = "</{}>"
         mapping = {
-            "TARGET": "🎯 当前的目标: ",
-            "NUMBER": "🍖 要求的数量: ",
-            "THOUGHT": "🤔 总体构思: ",
-            "FIRST NAME": "⚪ 姓: ",
-            "LAST NAME": "⚪ 名: ",
-            "ROLE": "角色属性: ",
-            "RATIONALES": "🤔 设计理由: ",
-            "BACKGROUND": "🚊 人物背景: ",
-            "ID": "🔴 编号: ",
-            "TITLE": "🧩 章节标题: ",
-            "ABSTRACT": "🎬 摘要: ",
-            "CHARACTER INVOLVED": "☃️ 参与的角色: ",
-            "ADVICE": "💬 建议:",
-            "NAME": "📛 姓名: ",
-            "GENDER": "👩‍👩‍👦‍👦 性别: ",
-            "AGE": "⏲️ 年龄: ",
-            "WORK": "👨‍🔧 工作: ",
-            "CHARACTER": "🧲 人物性格: ",
-            "SPEECH STYLE": "🗣️ 讲话风格: ",
-            "RELATION": "🏠 与其他角色的关系: ",
-            "WORD COUNT": "🎰 字数: ",
-            "CHARACTER DESIGN": "📈 角色设计情况: ",
-            "CHARACTER REQUIRE": "📈 角色设计要求: ",
-            "CHARACTER NAME": "📈 角色命名分析: ",
-            "CHARACTER NOW": "📈 目前角色现状: ",
-            "OUTLINE DESIGN": "📈 大纲设计情况: ",
-            "OUTLINE REQUIRE": "📈 大纲设计要求: ",
-            "OUTLINE NOW": "📈 大纲设计现状: ",
-            "SUB TASK": "🎯 当前任务: ",
-            "CHARACTER ADVICE": "💬 角色设计建议: ",
-            "OUTLINE ADVANTAGE": "📈 大纲优点: ",
-            "OUTLINE DISADVANTAGE": "📈 大纲缺点: ",
-            "OUTLINE ADVICE": "💬 大纲建议: ",
-            "NEXT": "➡️下一步建议: ",
-            "TOTAL NUMBER": "🔢 总数: "
+            "TARGET": "🎯 Current Target: ",
+            "NUMBER": "🍖 Required Number: ",
+            "THOUGHT": "🤔 Overall Thought: ",
+            "FIRST NAME": "⚪ First Name: ",
+            "LAST NAME": "⚪ Last Name: ",
+            "ROLE": "🤠 Character Properties: ",
+            "RATIONALES": "🤔 Design Rationale: ",
+            "BACKGROUND": "🚊 Character Background: ",
+            "ID": "🔴 ID: ",
+            "TITLE": "🧩 Chapter Title: ",
+            "ABSTRACT": "🎬 Abstract: ",
+            "CHARACTER INVOLVED": "☃️ Character Involved: ",
+            "ADVICE": "💬 Advice:",
+            "NAME": "📛 Name: ",
+            "GENDER": "👩‍👩‍👦‍👦 Gender: ",
+            "AGE": "⏲️ Age: ",
+            "WORK": "👨‍🔧 Work: ",
+            "PERSONALITY": "🧲 Character Personality: ",
+            "SPEECH STYLE": "🗣️ Speaking Style: ",
+            "RELATION": "🏠 Relation with Others: ",
+            "WORD COUNT": "🎰 Word Count: ",
+            "CHARACTER DESIGN": "📈 Character Design: ",
+            "CHARACTER REQUIRE": "📈 Character Require: ",
+            "CHARACTER NAME": "📈 Character Naming Analysis: ",
+            "CHARACTER NOW": "📈 Character Now: ",
+            "OUTLINE DESIGN": "📈 Outline Design: ",
+            "OUTLINE REQUIRE": "📈 Outline Require: ",
+            "OUTLINE NOW": "📈 Outline Now: ",
+            "SUB TASK": "🎯 Current Sub Task: ",
+            "CHARACTER ADVICE": "💬 Character Design Advice: ",
+            "OUTLINE ADVANTAGE": "📈 Outline Advantage: ",
+            "OUTLINE DISADVANTAGE": "📈 Outline Disadvantage: ",
+            "OUTLINE ADVICE": "💬 Outline Advice: ",
+            "NEXT": "➡️ Next Advice: ",
+            "TOTAL NUMBER": "🔢 Total Number: "
         }
         for i in range(1, 10):
-            mapping[f"CHARACTER {i}"] = f"🦄 角色{i}"
-            mapping[f"SECTION {i}"] = f"🏷️ 章节{i}"
+            mapping[f"CHARACTER {i}"] = f"🦄 Character {i}"
+            mapping[f"SECTION {i}"] = f"🏷️ Chapter {i}"
         for key in mapping:
             if key in [f"CHARACTER {i}" for i in range(1, 10)] \
                     or key in [f"SECTION {i}" for i in range(1, 10)] \
@@ -211,7 +226,6 @@ class UIHelper:
     
     @classmethod
     def debate_filter(cls, content, agent_name):
-        # pass
         return content
     
     @classmethod
@@ -225,6 +239,16 @@ class UIHelper:
     
     @classmethod
     def filter(cls, content: str, agent_name: str, ui_name: str):
+        """
+        Description:
+            Make certain modifications to the output content to enhance its aesthetics when content is showed in gradio.
+        Input:
+            content: output content
+            agent_name: Whose output is it
+            ui_name: What UI is currently launching
+        Output:
+            Modified content
+        """
         mapping = {
             "SingleAgentUI": cls.singleagent_filter,
             "DebateUI": cls.debate_filter,
@@ -238,7 +262,11 @@ class UIHelper:
             return content
 
 class Client:
-
+    """
+    For inter-process communication, this is the client. 
+    `gradio_backend.PY` serves as the backend, while `run_gradio` is the frontend. 
+    Communication between the frontend and backend is accomplished using Sockets.
+    """
     receive_server = None
     send_server = None
     current_node = None
@@ -257,17 +285,17 @@ class Client:
                 time.sleep(1)
             elif data == "check":
                 break
-        print_log("client: 连接成功......")
+        print_log("Client: connecting successfully......")
 
     def start_server(self):
         while True:
             message = yield
             if message == 'exit':
                 break
-            # self.client_socket.send(message.encode('utf-8'))
             self.send_message(message=message)
 
     def send_message(self, message):
+        """Send the messaget to the server."""
         if isinstance(message, list) or isinstance(message, dict):
             message = str(message)
         assert isinstance(message, str)
@@ -275,13 +303,13 @@ class Client:
         self.client_socket.send(message.encode('utf-8'))
 
     def receive_message(self, end_identifier: str = None, split_identifier: str = SPECIAL_SIGN["SPLIT"]) -> List:
-        """接收消息，直到收到了结束符，会阻塞"""
+        """Receive messages from the server, and it will block the process. Supports receiving long text."""
         remaining = ""
         while True:
-            """接收消息"""
+            # receive message
             dataset = self.client_socket.recv(self.bufsize)
             try:
-                """每次如果解码成功，则进行split，否则直接读下一个"""
+                # If decoding fails, it indicates that the current transmission is a long text.
                 dataset = dataset.decode('utf-8')
             except UnicodeDecodeError:
                 if not isinstance(remaining, bytes):
@@ -295,18 +323,15 @@ class Client:
                     continue
             assert isinstance(remaining, str)
             dataset = remaining + dataset
-            """按照分隔符进行分割"""
             list_dataset = dataset.split(split_identifier)
             if len(list_dataset) == 1:
-                """只分了一个，说明当前这个序列本身就还是没有结束"""
+                # If there is only one result from the split, it indicates that the current sequence itself has not yet ended.
                 remaining = list_dataset[0]
                 continue
             else:
-                """如果分了多个，则最后一个设为remaining"""
                 remaining = list_dataset[-1]
-            """成功分割，则不取最后一个，对于正常的来说，为空，不正常的在remain中"""
+            # Recieve successfully
             list_dataset = list_dataset[:-1]
-            """接收到的消息都在list_dataset里面"""
             return_value = []
             for item in list_dataset:
                 if end_identifier is not None and item == end_identifier:
@@ -317,36 +342,45 @@ class Client:
                 end_identifier, split_identifier = identifier
 
     def listening_for_start_(self):
-        """接受两次消息，一次是前端渲染好的，另外一次是启动命令"""
-        print("client:", self.client_socket)
+        """
+        When the server starts, the client is automatically launched. 
+        At this point, process synchronization is required, 
+        such as sending client data to the server for rendering, 
+        then the server sending the modified data back to the client, 
+        and simultaneously sending a startup command. 
+        Once the client receives the data, it will start running.
+        """
         Client.receive_server = self.receive_message()
-        """第一次消息"""
+        # Waiting for information from the server.
         data: list = next(Client.receive_server)
-        print("listen-1:", data)
         assert len(data) == 1
         data = eval(data[0])
         assert isinstance(data, dict)
         Client.cache.update(data)
-        """第二次消息"""
+        # Waiting for start command from the server.
         data:list = Client.receive_server.send(None)
         assert len(data) == 1
         assert data[0] == "<START>"
 
 class WebUI:
+    """
+    The base class for the frontend, which encapsulates some functions for process information synchronization. 
+    When a new frontend needs to be created, you should inherit from this class, 
+    then implement the `construct_ui()` method and set up event listeners. 
+    Finally, execute `run()` to load it.
+    """
     
     def receive_message(
         self,
         end_identifier:str=None,
         split_identifier:str=SPECIAL_SIGN["SPLIT"]
     )->List:
-        """接收消息，直到收到了结束符，会阻塞"""
+        """This is the same as in Client class."""
         yield "hello"
         remaining = ""
         while True:
-            """接收消息"""
             dataset = self.client_socket.recv(self.bufsize)
             try:
-                """每次如果解码成功，则进行split，否则直接读下一个"""
                 dataset = dataset.decode('utf-8')
             except UnicodeDecodeError:
                 if not isinstance(remaining, bytes):
@@ -360,22 +394,13 @@ class WebUI:
                     continue
             assert isinstance(remaining, str)
             dataset = remaining + dataset
-            # print("mike-org:", dataset)
-            """按照分隔符进行分割"""
-            # print("mike-split:", split_identifier)
             list_dataset = dataset.split(split_identifier)
-            # print("mike:", list_dataset, len(list_dataset))
             if len(list_dataset) == 1:
-                """只分了一个，说明当前这个序列本身就还是没有结束"""
                 remaining = list_dataset[0]
                 continue
             else:
-                """如果分了多个，则最后一个设为remaining"""
                 remaining = list_dataset[-1]
-            """成功分割，则不取最后一个，对于正常的来说，为空，不正常的在remain中"""
             list_dataset = list_dataset[:-1]
-            # print("mike-return:", list_dataset)
-            """接收到的消息都在list_dataset里面"""
             return_value = []
             for item in list_dataset:
                 if end_identifier is not None and item == end_identifier:
@@ -386,28 +411,12 @@ class WebUI:
                 end_identifier, split_identifier = identifier
 
     def send_message(self, message:str):
-        """将数据发送到后端"""
-        """需要实现约定好格式"""
-        print(f"server:发送`{message}`")
+        """Send message to client."""
         SEP = self.SIGN["SPLIT"]
         self.client_socket.send(
             (message+SEP).encode("utf-8")
         )
     
-    """
-    建立连接后：
-        1. 先client发送数据到server
-        2. server接受数据进行展示
-        3. server发送数据到client
-        4. client接受数据并覆盖 
-        5. server发送开始运行的命令
-        6. client正式开始
-        
-            client  server
-        1.   send    rec
-        2.   rec     send
-        3.   rec     send
-    """ 
     def _connect(self):
         """socket启动"""
         # Step0. 先判断一下是否已经有了
@@ -454,12 +463,18 @@ class WebUI:
     
     @abstractmethod
     def render_and_register_ui(self):
-        """渲染ui并注册"""
+        # You need to implement this function. 
+        # The function's purpose is to bind the name of the agent with an image. 
+        # The name of the agent is stored in `self.cache[]`, 
+        # and the function for binding is in the method `add_agents` of the class `GradioConfig` in `Gradio_Config/gradio_config.py``.
+        # This function will be executed in `self.first_recieve_from_client()`
         pass
     
     def first_recieve_from_client(self, reset_mode:bool=False):
-        """1. 接受client发送的消息，进行渲染，同时需要注册"""
-        """一般放在构造的时候"""
+        """
+        This function is used to receive information from the client and is typically executed during the initialization of the class.
+        If `reset_mode` is False, it will bind the name of the agent with an image.
+        """
         self.FIRST_RECIEVE_FROM_CLIENT = True
         data_list:List = self.receive_server.send(None)
         assert len(data_list) == 1
@@ -470,18 +485,18 @@ class WebUI:
             self.render_and_register_ui()
     
     def _second_send(self, message:dict):
-        """2. 发送消息，主要是将值覆盖"""
+        # Send the modified message.
+        # It will be executed in `self.send_start_cmd()` automtically.
         self.send_message(str(message))
     
     def _third_send(self):
-        """3. 发送开始消息，主要是驱动"""
+        # Send start command.
+        # It will be executed in `self.send_start_cmd()` automtically.
         self.send_message(self.SIGN['START'])
     
     def send_start_cmd(self, message:dict={"hello":"hello"}):
-        """运行之前请确保first_receive_from_client已经运行"""
-        """将上面的全部串起来"""
-        """此处的message就是前端搜集的，通过dict的方式进行发送"""
-        assert self.FIRST_RECIEVE_FROM_CLIENT, "请先保证从client接受消息"
+        # If you have no message to send, you can ignore the args `message`.
+        assert self.FIRST_RECIEVE_FROM_CLIENT, "Please make sure you have executed `self.first_recieve_from_client()` manually."
         self._second_send(message=message)
         time.sleep(1)
         self._third_send()
@@ -489,7 +504,6 @@ class WebUI:
     
     def __init__(
         self,
-        # client_server_file: str,
         client_cmd: list,           # ['python','test.py','--a','b','--c','d']
         socket_host: str = HOST,
         socket_port: int = PORT,
@@ -510,22 +524,21 @@ class WebUI:
         self._connect()
 
     def _start_client(self):
-        print("启动进程......")
+        print(f"server: excuting `{' '.join(self.client_cmd)}` ...")
         self.backend = subprocess.Popen(self.client_cmd)
         
     def _close_client(self):
-        print("关闭进程......")
+        print(f"server: killing `{' '.join(self.client_cmd)}` ...")
         self.backend.terminate()
     
     def reset(self):
-        # Step 1. 关闭后端进程并重新启动
+        print("server: restarting ...")
         self._close_client()
         time.sleep(1)
         self._connect()
 
     def render_bubble(self, rendered_data, agent_response, node_name, render_node_name:bool=True):
-        # print("mike:", agent_response)
-        print("mike-5")
+        # Rendered bubbles (HTML format) are used for gradio output.
         output = f"**{node_name}**<br>" if render_node_name else ""
         for item in agent_response:
             for agent_name in item:
@@ -535,33 +548,10 @@ class WebUI:
         rendered_data[-1] = [rendered_data[-1][0], output]
         return rendered_data
 
-    """启动gradio"""
     def run(self,share: bool = True):
         self.demo.queue()
         self.demo.launch(share=share)
 
 
 if __name__ == '__main__':
-    """初始化"""
-    # MyAgent.SIMULATION = False
-    # MyAgent.TEMPERATURE = 0.3
-    # agents_name_of_start_node = UIHelper.init()
-    # # ui = WebUI(client_server_file="run_cmd.py")
-    # ui = WebUI(client_server_file="simulate_cmd.py", bufsize=18)
-    # ui.construct_ui(
-    #     task_prompt="task_prompt",
-    #     agents_name_of_start_node=agents_name_of_start_node,
-    #     default_agent=agents_name_of_start_node[0],
-    #     default_agent_question="default_agent_question"
-    # )
-    # ui.run(share=True)
     pass
-
-    """
-    todo:
-        1. 结束、暂停、重新开始
-        2. 对<>进行替换，也就是格式化
-        3. 加入system
-        4. gradio主题色更改
-        5. 是否要加入文件读取
-    """

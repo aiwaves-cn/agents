@@ -29,35 +29,30 @@ def gradio_process(action,current_state):
         state = 10
         if action.is_user:
             state = 30
-            print("state:", state)
         elif action.state_begin:
             state = 12
             action.state_begin = False
         elif i>0:
             state = 11
-        print("long:", state)
         send_name = f"{action.name}({action.role})"
         Client.send_server(str([state, send_name, res, current_state.name]))
         if state == 30:
-            """阻塞当前进程，等待接收"""
-            print("client:阻塞等待输入")
+            # print("client: waiting for server")
             data: list = next(Client.receive_server)
             content = ""
             for item in data:
                 if item.startswith("<USER>"):
                     content = item.split("<USER>")[1]
                     break
-            print(f"client:接收到了`{content}`")
+            # print(f"client: recieve `{content}` from server.")
             action.response = content
             break
         else:
             action.response = all
 
 def prepare(agents, sop, environment):
-    """建立连接+发送数据+等待接收和启动命令"""
     client = Client()
     Client.send_server = client.send_message
-    # 这边需要解析一下，到时候传的时候还要在拼起来
 
     client.send_message(
         {
@@ -65,11 +60,7 @@ def prepare(agents, sop, environment):
         }
     )
     print(f"client: {list(agents.keys())}")
-    # print(f"client:发送的值为{sop.states['design_state'].begin_query}")
     client.listening_for_start_()
-    """覆盖参数"""
-    # sop.states['design_state'].begin_query = Client.cache['requirement']
-    # print(f"client:传入的值为{Client.cache['requirement']}")
 
 # =======================
 
@@ -91,6 +82,7 @@ def run(agents,sop,environment):
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
             print("finished!")
+            Client.send_server(str([99, " ", " ", current_state.name]))
             os.environ.clear()
             break
         

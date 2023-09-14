@@ -1,12 +1,29 @@
+# coding=utf-8
+# Copyright 2023  The AIWaves Inc. team.
+
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import json
 from PIL import Image
 import requests
 from typing import List, Tuple
 
 class GradioConfig:
-    # 当前已经有几个注册了头像
+    # How many avatars are currently registered
     POINTER = 0
-    # 头像
+    
+    # Avatar image. You can add or replace.
     AGENT_HEAD_URL = [
         "https://img.touxiangwu.com/zb_users/upload/2023/06/202306241687579617434043.jpg",
         "https://img.touxiangwu.com/zb_users/upload/2023/06/202306241687592097408547.jpg",
@@ -33,7 +50,8 @@ class GradioConfig:
         "https://img.touxiangwu.com/zb_users/upload/2023/06/202306141686726564597524.jpg"
     ]
     USER_HEAD_URL = "https://img.touxiangwu.com/zb_users/upload/2023/05/202305301685407468585486.jpg"
-    # 样式
+    
+    # The css style of gradio.Chatbot
     CSS = """
     #chatbot1 .user {
         background-color:transparent;
@@ -44,9 +62,10 @@ class GradioConfig:
         border-color:transparent;
     }
     """
-    # 身份
+ 
     ID = ["USER", "AGENT", "SYSTEM"]
-    # BUBBLE模板
+    
+    # Bubble template
     BUBBLE_CSS = {
         # 背景颜色 名字颜色 名字 字体颜色 字体大小 内容 图片地址
         "USER": """
@@ -80,9 +99,8 @@ class GradioConfig:
         """
     }
 
-    # 实例化
     ROLE_2_NAME = {}
-    # 有哪些具体的角色
+    
     OBJECT_INFO = {
         # 主要是user/agent/system
         "User": {
@@ -120,10 +138,12 @@ class GradioConfig:
         }
     }
 
-    # 从头像中提取出颜色
     @classmethod
     def color_for_img(cls, url):
-        """传入图片的链接，返回字体颜色和背景颜色"""
+        """
+        Extract the main colors from the picture and set them as the background color, 
+        then determine the corresponding text color.
+        """
 
         def get_main_color(image):
             image = image.convert("RGB")
@@ -148,10 +168,8 @@ class GradioConfig:
             return "#{:02X}{:02X}{:02X}".format(color[0], color[1], color[2])
 
         def get_color(image_url):
-            # 请替换为您的图片链接
             download_image(image_url)
 
-            # 通过URL或者本地路径打开图片
             image = Image.open("image.jpg")
             main_color = get_main_color(image)
             is_dark = is_dark_color(main_color)
@@ -165,50 +183,9 @@ class GradioConfig:
 
         return get_color(url)
 
-    # ===========================================================
-    """临时的办法，暂时还没有融合"""
-    # 根据角色，建立角色和图片之间的mapping
-    @classmethod
-    def init_zjt(cls, prompt:dict, cnt) -> Tuple[List, int]:
-        """传入，主要的目的是为每个agent确定一个头像"""
-        """返回cnt和第一个结点的角色，用来放在radio"""
-        FIRST_NODE = True
-        first_node_agents_name = []
-        for node_name in prompt:
-            """先遍历"""
-            for agent_name in prompt[node_name]["agents"]:
-                if FIRST_NODE:
-                    first_node_agents_name.append(agent_name)
-                bubble_color, text_color = cls.color_for_img(
-                    cls.AGENT_HEAD_URL[cnt]
-                )
-                cls.OBJECT_INFO[agent_name] = {
-                    "head_url": f"{cls.AGENT_HEAD_URL[cnt]}",
-                    "bubble_color": bubble_color,
-                    "text_color": text_color,
-                    "font_size": 0,
-                    "id": "AGENT"
-                }
-                cnt += 1
-            if FIRST_NODE:
-                FIRST_NODE = False
-
-        for usr_name in cls.OBJECT_INFO:
-            if cls.OBJECT_INFO[usr_name]["id"] == "SYSTEM":
-                cls.OBJECT_INFO[usr_name]["font_size"] = 12
-            elif cls.OBJECT_INFO[usr_name]["id"] in ["USER", "AGENT"]:
-                cls.OBJECT_INFO[usr_name]["font_size"] = 16
-            else:
-                assert False
-        return first_node_agents_name, cnt
-
-    # ===========================================================
-    
-    # 根据角色，建立角色和图片之间的mapping
     @classmethod
     def init(cls, JSON):
-        """加载人物"""
-        """返回第一个"""
+        # Deprecated
         with open(JSON) as f:
             sop = json.load(f)
         cnt = 0
@@ -234,7 +211,6 @@ class GradioConfig:
             if FISRT_NODE:
                 FISRT_NODE = False
         print(cls.OBJECT_INFO)
-        """主要是设置字体大小"""
         for usr_name in cls.OBJECT_INFO:
             if cls.OBJECT_INFO[usr_name]["id"] == "SYSTEM":
                 cls.OBJECT_INFO[usr_name]["font_size"] = 12
@@ -242,7 +218,6 @@ class GradioConfig:
                 cls.OBJECT_INFO[usr_name]["font_size"] = 16
             else:
                 assert False
-        # 返回节点1的agent
         return fisrt_node_roles
 
     @classmethod
@@ -266,5 +241,196 @@ class GradioConfig:
                 assert False
 
 
+class StateConfig:
+    """UI configuration for the step progress bar (indicating the current node)"""
+    
+    CSS = """
+:root {
+        --gradient-start: 100%;
+        --gradient-end: 0%;
+ }
+.container.progress-bar-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* 将内容底部对齐 */
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 30px;
+  padding-top: 20px
+}
+.container.progress-bar-container::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+.container.progress-bar-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.progress-bar-container .progressbar {
+  counter-reset: step;
+  white-space: nowrap;
+}
+.progress-bar-container .progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  white-space: normal;
+}
+.progress-bar-container .progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #ffffff;
+}
+.progress-bar-container .progressbar li:after {
+  content: attr(data-content);
+  position: absolute;
+  width: 87%;
+  height: 2px;
+  background-color: #dddddd;
+  top: 15px;
+  left: -45%;
+}
+.progress-bar-container .progressbar li:first-child:after {
+  content: none;
+}
+.progress-bar-container .progressbar li.active {
+  color: green;
+}
+.progress-bar-container .progressbar li.active:before {
+  border-color: green;
+  background-color: green;
+  color: white;
+}
+.progress-bar-container .progressbar li.active + li:after {
+  background: linear-gradient(to right, green var(--gradient-start), lightgray var(--gradient-end));
+}
+.progress-bar-container .small-element {
+  transform: scale(0.8);
+}
+.progress-bar-container .progressbar li span {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.progress-bar-container .progressbar li .data-content {
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  left: -100px;
+  text-align: center;
+}
+"""
+    
+    FORMAT = """
+<html>
+    <head>
+        <style>
+            {}
+        </style>
+    </head>
+    <body>
+        <br>
+        <center>
+            <div class="container progress-bar-container">
+                <ul class="progressbar">
+                    {}
+                </ul>
+            </div>
+        </center>
+    </body>
+</html>
+"""
+    
+    STATES_NAME:List[str] = None
+    
+    @classmethod
+    def _generate_template(cls, types:str)->str:
+        # normal: A state with no execution.
+        # active-show-up: Active state, and content displayed above the horizontal line.
+        # active-show-down: Active state, and content displayed below the horizontal line.
+        # active-show-both: Active state, and content displayed both above and below the horizontal line.
+        # active-show-none: Active state, with no content displayed above the horizontal line.
+        
+        assert types.lower() in ["normal","active-show-up", "active-show-down", "active-show-both", "active", "active-show-none"]
+        both_templates = """<li class="active" style="--gradient-start: {}%; --gradient-end: {}%;">
+	<div class="data-content">
+		<center>
+            <p style="line-height: 1px;"></p>
+			{}
+			<p>
+				{}
+			</p>
+		</center>
+	</div>
+	<span>{}</span>
+</li>"""
+
+        if types.lower() == "normal":
+            templates = "<li><span>{}</span></li>"
+        elif types.lower() == "active":
+            templates = """<li class="active"><span>{}</span></li>"""
+        elif types.lower() == "active-show-up":
+            templates = both_templates.format("{}","{}", "{}", "", "{}")
+        elif types.lower() == "active-show-down":
+            templates = both_templates.format("{}","{}", "", "{}", "{}")
+        elif types.lower() == "active-show-both":
+            templates = both_templates
+        elif types.lower() == "active-show-none":
+            templates = """<li class="active" style="--gradient-start: {}%; --gradient-end: {}%;">
+	<span>{}</span>
+</li>"""
+        else:
+            assert False
+        return templates
+            
+    @classmethod
+    def update_states(cls, current_states:List[int], current_templates:List[str], show_content:List[Tuple[str]])->str:
+        assert len(current_states) == len(current_templates)
+        # You can dynamically change the number of states.
+        # assert len(current_states) == len(cls.STATES_NAME)
+        css_code = []
+        for idx in range(len(current_states)):
+            if idx == 0:
+                if current_states[idx] != 0:
+                    css_code = [f"{cls._generate_template('active').format(cls.STATES_NAME[idx])}"]
+                else:
+                    css_code = [f"{cls._generate_template('normal').format(cls.STATES_NAME[idx])}"]
+                continue
+            if current_states[idx-1] == 0:
+                # new_code = f"{cls._generate_template('normal').format(*(show_content[idx]))}"
+                new_code = f"{cls._generate_template('normal').format(cls.STATES_NAME[idx])}"
+            else:
+                new_code = f"{cls._generate_template(current_templates[idx]).format(current_states[idx-1], 100-current_states[idx-1],*(show_content[idx-1]), cls.STATES_NAME[idx])}"
+            if current_states[idx-1] != 100 or (current_states[idx]==0 and current_states[idx-1]==100):
+                new_code = new_code.replace("""li class="active" ""","""li """)
+            css_code.append(new_code)
+        return "\n".join(css_code)
+    
+    @classmethod
+    def create_states(cls, states_name:List[str], manual_create_end_nodes:bool=False):
+        # Create states
+        if manual_create_end_nodes:
+            states_name.append("Done")
+        css_code = ""
+        cls.STATES_NAME: List[str] = states_name
+        for name in states_name:
+            css_code = f"{css_code}\n{cls._generate_template('normal').format(name)}"
+        return css_code
+    
+
 if __name__ == '__main__':
-    GradioConfig.init("game.json")
+    pass

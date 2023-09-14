@@ -9,24 +9,23 @@ import gradio as gr
 
 class GeneralUI(WebUI):
     def render_and_register_ui(self):
+        # bind the agent with avatar
         self.agent_name:list = [self.cache["agents_name"]] if isinstance(self.cache["agents_name"], str) else self.cache['agents_name']
         gc.add_agent(self.agent_name)
     
     def handle_message(self, history, state, agent_name, token, node_name):
-        # print("MIKE-history:",history)
         if state % 10 == 0:
-            """这个还是在当前气泡里面的"""
             self.data_history.append({agent_name: token})
         elif state % 10 == 1:
+            # Same state. Need to add new bubble in same bubble.
             self.data_history[-1][agent_name] += token
         elif state % 10 == 2:
-            """表示不是同一个气泡了"""
+            # New state. Need to add new bubble.
             history.append([None, ""])
             self.data_history.clear()
             self.data_history.append({agent_name: token})
         else:
-            assert False
-        # print("MIKE-data_history", self.data_history)
+            assert False, "Invalid state."
         render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= True)
         return render_data
     
@@ -120,11 +119,9 @@ class GeneralUI(WebUI):
     
     def btn_start_when_click(self):
         """
-        发送开始命令并启动监听
         inputs=[]
         outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input]
         """
-        # 默认发空，就是发启动命令
         self.send_start_cmd()
         return gr.Button.update(visible=False), \
             gr.Button.update(visible=False),\
@@ -148,10 +145,9 @@ class GeneralUI(WebUI):
                 state, agent_name, token, node_name = data
                 self.current_node_name = node_name
                 assert isinstance(state, int)
-                """非人机"""
                 assert state in [10, 11, 12, 30, 99]
                 if state == 99:
-                    """结束命令"""
+                    # finish
                     yield gr.Button.update(visible=False),\
                         gr.Button.update(visible=True, interactive=False),\
                         gr.Button.update(visible=True, interactive=True),\
@@ -159,7 +155,7 @@ class GeneralUI(WebUI):
                         gr.Textbox.update(visible=True, interactive=False)
                     return
                 elif state == 30:
-                    """将控制权交给用户"""
+                    # user input
                     yield gr.Button.update(visible=False), \
                             gr.Button.update(visible=True),\
                             gr.Button.update(visible=True),\
@@ -177,7 +173,6 @@ class GeneralUI(WebUI):
         '''
         inputs=[self.text_input, self.chatbot]
         outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input]
-        渲染气泡
         '''
         history = self.handle_message(history, 10, 'User', text_input, self.current_node_name)
         self.send_message("<USER>"+text_input+self.SIGN["SPLIT"])
@@ -191,7 +186,6 @@ class GeneralUI(WebUI):
         '''
         inputs=[self.text_input, self.chatbot]
         outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input]
-        启动命令并监听，感觉可以直接调用btn_start_after_click
         '''
         yield from self.btn_start_after_click(history=history)
         return 
@@ -212,12 +206,11 @@ class GeneralUI(WebUI):
             gr.Chatbot.update(label="Dialog", visible=False), \
             gr.Textbox.update(interactive=True, visible=False)
   
-  
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='A demo of chatbot')
     parser.add_argument('--agent', type=str, help='path to SOP json')
     args = parser.parse_args()
+    
     ui = GeneralUI(client_cmd=["python","gradio_backend.py","--agent", args.agent])
     ui.construct_ui()
-    # 启动运行
     ui.run(share=True)
