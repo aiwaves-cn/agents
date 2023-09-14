@@ -55,8 +55,9 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 
 - [x] Option 2. Run on gradio
 	
-    ```
+    ```bash
    cd examples
+   # `run_gradio.py` depends on `gradio_backend.py`.
    python Single_Agent/run_gradio.py --agent Single_Agent/{target_agent}/config.json
    ```
 - [ ] Option 3. Run on fast api
@@ -114,7 +115,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 
 - [x] Option 2. Run on gradio
 	
-    ```
+    ```bash
    cd examples
    # `run_gradio.py` depends on `gradio_backend.py`.
    python run_gradio.py --agent your_config.json
