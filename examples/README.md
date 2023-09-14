@@ -4,7 +4,7 @@
 ### 1.Install the package
 - [x] Option 1.  Build from source
 
-    ```
+    ```bash
     git clone https://github.com/aiwaves-cn/agents.git
     cd agents
     pip install -e . 
@@ -12,7 +12,7 @@
 
 - [x] Option 2.  Install via PyPI
 
-    ```
+    ```bash
     pip install agents
     ```
  ### 2.Single Agent🤖️   
@@ -48,7 +48,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 ```
 - [x] Option 1.  Run on your terminal
 
-    ```
+    ```bash
     cd examples
     python run.py --agent Single_Agent/{target_agent}/config.json
     ```
@@ -61,7 +61,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    python Single_Agent/run_gradio.py --agent Single_Agent/{target_agent}/config.json
    ```
 - [ ] Option 3. Run on fast api
-    ```
+    ```bash
    cd examples
    python run_backend.py --agent Single_Agent/{target_agent}/config.json
    ```
@@ -81,7 +81,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 	}
 	```
 
-    ```
+    ```bash
     cd examples
     python run.py --agent Single_Agent/{target_agent}/config.json
     ```
@@ -107,7 +107,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 
 - [x] Option 1.  Run on your terminal
 
-    ```
+    ```bash
     cd examples
     python run.py --agent config.json
     ```
@@ -122,7 +122,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    ```
     
 - [ ] Option 3. Run on fast api
-    ```
+    ```bash
    cd examples
    python run_backend.py --agent config.json
    ```
