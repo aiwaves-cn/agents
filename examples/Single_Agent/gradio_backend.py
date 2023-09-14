@@ -15,7 +15,6 @@ def process(action):
     send_name = action.name
     send_role = action.role
     parse = f"{send_name}:"
-    # 将里面对话的第三人称删了
     # The third person in the dialogue was deleted.
     while parse in response:
         index = response.index(parse) + len(parse)
@@ -40,25 +39,22 @@ def gradio_process(action,current_state):
             state = 10
             if action.is_user:
                 state = 30
-                print("state:", state)
             elif action.state_begin:
                 state = 12
                 action.state_begin = False
             elif i>0:
                 state = 11
             i+=1
-            print("long:", state)
             Client.send_server(str([state, action.name, res, current_state.name]))
             if state == 30:
-                """阻塞当前进程，等待接收"""
-                print("client:阻塞等待输入")
+                # print("client: waiting for input.")
                 data: list = next(Client.receive_server)
                 content = ""
                 for item in data:
                     if item.startswith("<USER>"):
                         content = item.split("<USER>")[1]
                         break
-                print(f"client:接收到了`{content}`")
+                # print(f"client: recieved `{content}` from server.")
                 action.response = content
                 break
             else:
@@ -82,6 +78,7 @@ def run(agents,sop,environment):
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
             print("finished!")
+            Client.send_server(str([99, ' ', ' ', current_state.name]))
             os.environ.clear()
             break
         action = current_agent.step(current_state,True)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
@@ -91,10 +88,8 @@ def run(agents,sop,environment):
         
 
 def prepare(agents, sop, environment):
-    """建立连接+发送数据+等待接收和启动命令"""
     client = Client()
     Client.send_server = client.send_message
-    # 这边需要解析一下，到时候传的时候还要在拼起来
     client.send_message(
         {
             # "hello": f"{sop.root.begin_query}",  # sop.states['knowledge_response'].begin_query     sop.states.begin_query
@@ -106,13 +101,12 @@ def prepare(agents, sop, environment):
 
 
 if __name__ == '__main__':
-    GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
     parser.add_argument('--agent', type=str, help='path to SOP json')
     args = parser.parse_args()
 
-
     agents,sop,environment = init(args.agent)
-    if GRADIO:
-        prepare(agents, sop, environment)
+    # add ==================================
+    prepare(agents, sop, environment)
+    # ======================================
     run(agents,sop,environment)

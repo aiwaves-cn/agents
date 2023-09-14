@@ -8,9 +8,8 @@ from SOP import SOP
 from Agent import Agent
 from Environment import Environment
 from Memory import Memory
-from gradio_base import Client, convert2list4agentname
-
-
+from gradio_base import Client
+from run_gradio import DebateUI
 
 def process(action):
     response = action.response
@@ -29,25 +28,22 @@ def gradio_process(action,current_state):
         state = 10
         if action.is_user:
             state = 30
-            print("state:", state)
         elif action.state_begin:
             state = 12
             action.state_begin = False
         elif i>0:
             state = 11
-        print("long:", state)
         send_name = f"{action.name}({action.role})"
         Client.send_server(str([state, send_name, res, current_state.name]))
         if state == 30:
-            """阻塞当前进程，等待接收"""
-            print("client:阻塞等待输入")
+            # print("client: waiting for input.")
             data: list = next(Client.receive_server)
             content = ""
             for item in data:
                 if item.startswith("<USER>"):
                     content = item.split("<USER>")[1]
                     break
-            print(f"client:接收到了`{content}`")
+            # print(f"client: recieved `{content}` from server")
             action.response = content
             break
         else:
@@ -71,47 +67,52 @@ def run(agents,sop,environment):
         current_state,current_agent= sop.next(environment,agents)
         if sop.finished:
             print("finished!")
+            Client.send_server(str([99, ' ', ' ', current_state.name]))
             os.environ.clear()
             break
-        action = current_agent.step(current_state)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
+        action = current_agent.step(current_state,"")   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
         memory = process(action)
         environment.update_memory(memory,current_state)
-
-
+        
 
 def prepare(agents, sop, environment):
-    """建立连接+发送数据+等待接收和启动命令"""
     client = Client()
     Client.send_server = client.send_message
-    # 这边需要解析一下，到时候传的时候还要在拼起来
-
+    content = sop.states['Affirmative_Task_Allocation_state'].begin_query
+    parse_data = DebateUI.extract(content)
     client.send_message(
         {
-            "requirement": f"{sop.states['design_state'].begin_query}",
-            "agents_name": convert2list4agentname(sop)[0],
-            # "only_name":  DebateUI.convert2list4agentname(sop)[1],
-            "only_name":  convert2list4agentname(sop)[0],
+            "theme": f"{parse_data[0]}",
+            "positive": f"{parse_data[1]}",
+            "negative": f"{parse_data[2]}",
+            "agents_name": DebateUI.convert2list4agentname(sop)[0],
+            "only_name":  DebateUI.convert2list4agentname(sop)[0],
             "default_cos_play_id": -1
         }
     )
-    print(f"client: {list(agents.keys())}")
-    print(f"client:发送的值为{sop.states['design_state'].begin_query}")
     client.listening_for_start_()
-    """覆盖参数"""
-    sop.states['design_state'].begin_query = Client.cache['requirement']
-    print(f"client:传入的值为{Client.cache['requirement']}")
+    # cover config and then start
+    if Client.cache["cosplay"] is not None:
+        agents[Client.cache["cosplay"]].is_user = True
+    sop.states['Negative_Task_Allocation_state'] = sop.states['Affirmative_Task_Allocation_state'].begin_query = \
+        DebateUI.merge(
+            theme=Client.cache["theme"], positive=Client.cache["positive"], negative=Client.cache["negative"],
+            origin_content=sop.states['Affirmative_Task_Allocation_state'].begin_query
+        )
 
 
 if __name__ == '__main__':
-    GRADIO = True
     parser = argparse.ArgumentParser(description='A demo of chatbot')
     parser.add_argument('--agent', type=str, help='path to SOP json', default="config.json")
     args = parser.parse_args()
     
     agents,sop,environment = init(args.agent)
     
-    if GRADIO:
-        prepare(agents, sop, environment)
+    # add ==============================
+    prepare(agents, sop, environment)
+    # ==================================
 
     run(agents,sop,environment)
+
+
