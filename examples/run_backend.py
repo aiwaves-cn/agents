@@ -31,10 +31,10 @@ from fastapi.responses import  JSONResponse,StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 sys.path.append("../src/agents")
-from SOP import SOP
-from Agent import Agent
-from Environment import Environment
-from Memory import Memory
+from agents.SOP import SOP
+from agents.Agent import Agent
+from agents.Environment import Environment
+from agents.Memory import Memory
 
 # -*- coding: utf-8 -*-
 

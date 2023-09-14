@@ -41,10 +41,10 @@ One major difference between **Agents** and other existing frameworks for langua
     pip install -e . 
     
 
-#### Option 2.  Install via PyPI (To be supported)
+#### Option 2.  Install via PyPI
 
     
-    pip install agents
+    pip install ai-agents
     
 
 ##  📦 Usage
