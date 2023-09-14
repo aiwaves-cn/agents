@@ -49,13 +49,13 @@ One major difference between **Agents** and other existing frameworks for langua
 ##  📦 Usage
 ### 1. Generate the config file 🛠️
 
-#### Option 1: Fill in the config template manually
+#### Option 1. Fill in the config template manually
 
 Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
 
-#### Option 2: Try our [WebUI](http://www.aiwaves.cn/create-agent/) for customizing the config file.
+#### Option 2. Try our [WebUI](http://www.aiwaves.cn/create-agent/) for customizing the config file.
 
-#### Haven't figured out how to write the JSON file yet? Check out our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html)!
+Haven't figured out how to write the JSON file yet? Check out our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html)!
 
 
 ### 2. The Agent Hub 🤖️
