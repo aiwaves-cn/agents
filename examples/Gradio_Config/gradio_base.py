@@ -55,7 +55,6 @@ def check_port(port):
     """Determine available ports"""
     if os.path.isfile("PORT.txt"):
         port = int(open("PORT.txt","r",encoding='utf-8').readlines()[0])
-        print(port)
     else:
         for i in range(10):
             if is_port_in_use(port+i) == False:
@@ -63,7 +62,6 @@ def check_port(port):
                 break
         with open("PORT.txt", "w") as f:
             f.writelines(str(port))
-        print(port)
     return port
 
 # Determine some heads
@@ -418,33 +416,26 @@ class WebUI:
         )
     
     def _connect(self):
-        """socket启动"""
-        # Step0. 先判断一下是否已经有了
+        # check 
         if self.server_socket:
-            """如果有了，那就说明是重启的，可能需要重新商议一下通信的端口号"""
             self.server_socket.close()
             assert not os.path.isfile("PORT.txt")
             self.socket_port = check_port(PORT)
-        # Step1. 初始化
+        # Step1. initialize
         self.server_socket = socket.socket(
             socket.AF_INET, socket.SOCK_STREAM
         )
-        # Step2. 绑定IP和端口
-        print((self.socket_host, self.socket_port))
+        # Step2. binding ip and port
         self.server_socket.bind((self.socket_host, self.socket_port))
-        # Step3. 启动客户端
-        print_log("server: 正在启动客户端......")
-        # 记录一下后端的进程用于重启
-        # self.backend = subprocess.Popen(["python", client_server_file])
+        # Step3. run client
         self._start_client()
 
-        # Step4. 监听并阻塞当前进程
-        print_log("server: 等待客户端连接......")
+        # Step4. listening for connect
         self.server_socket.listen(1)
 
-        # Step5. 测试连接
+        # Step5. test connection
         client_socket, client_address = self.server_socket.accept()
-        print_log("server: 正在建立连接......")
+        print_log("server: establishing connection......")
         self.client_socket = client_socket
         while True:
             client_socket.send("hi".encode('utf-8'))
@@ -452,7 +443,7 @@ class WebUI:
             data = client_socket.recv(self.bufsize).decode('utf-8')
             if data == "hello agent":
                 client_socket.send("check".encode('utf-8'))
-                print_log("server:连接成功")
+                print_log("server: connect successfully")
                 break
         assert os.path.isfile("PORT.txt")
         os.remove("PORT.txt")

@@ -158,7 +158,7 @@ class GradioConfig:
             return luminance < 0.5
 
         def download_image(url):
-            print(url)
+            print(f"binding: {url}")
             response = requests.get(url)
             if response.status_code == 200:
                 with open('image.jpg', 'wb') as f:

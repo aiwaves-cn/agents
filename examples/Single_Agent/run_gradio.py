@@ -49,7 +49,6 @@ class SingleAgentUI(WebUI):
             self.data_history[-1][agent_name] += token
         else:
             assert False, "Invalid state."
-        print("123:", history)
         render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= state % 10 == 2)
         return render_data
 
@@ -108,7 +107,6 @@ class SingleAgentUI(WebUI):
                 data = eval(item)
                 assert isinstance(data, list)
                 state, agent_name, token, node_name = data
-                print(state)
                 if state == 30:
                     return content
                 content += token

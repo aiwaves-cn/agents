@@ -79,7 +79,7 @@ class DebateUI(WebUI):
     def start_button_when_click(self, theme, positive, negative, choose):
         """
         inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose],
-        outputs=[self.chatbot]
+        outputs=[self.chatbot, self.btn_send]
         """
         cosplay = None if choose == self.AUDIENCE else choose.split("(")[0]
         message = dict(theme=theme, positive=positive, negative=negative, cosplay=cosplay)
@@ -91,7 +91,7 @@ class DebateUI(WebUI):
     def start_button_after_click(self, history):
         """
         inputs=[self.chatbot],
-        outputs=[self.chatbot, self.text_user, self.btn_send]
+        outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
         """
         self.data_history = list()
         receive_server = self.receive_server
@@ -107,14 +107,18 @@ class DebateUI(WebUI):
                     yield history,\
                         gr.Textbox.update(visible=True, interactive=True), \
                         gr.Button.update(visible=True, interactive=True),\
-                            gr.Button.update(visible=True, interactive=True)
+                        gr.Button.update(visible=True, interactive=True)
                     return
+                elif state == 99:
+                    # finish
+                    yield history, gr.Textbox.update(visible=True, interactive=False, value="finish!"), \
+                        gr.Button.update(visible=True, interactive=False, value="finish!"), gr.Button.update(visible=True, interactive=True)
                 else:
                     history = self.handle_message(history, state, agent_name, token, node_name)
                     yield history, \
                           gr.Textbox.update(visible=False, interactive=False), \
                           gr.Button.update(visible=False, interactive=False),\
-                              gr.Button.update(visible=False, interactive=False)
+                            gr.Button.update(visible=False, interactive=False)
 
     def send_button_when_click(self, text_user, history:list):
         """
@@ -206,7 +210,7 @@ class DebateUI(WebUI):
                 VISIBLE = False
                 with gr.Column():
                     self.chatbot = gr.Chatbot(
-                        height= 850,
+                        height= 650,
                         elem_id="chatbot1",
                         label="Dialog",
                         visible=VISIBLE
@@ -228,7 +232,7 @@ class DebateUI(WebUI):
             self.btn_start.click(
                 fn=self.start_button_when_click,
                 inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose],
-                outputs=[self.chatbot, self.btn_send]
+                outputs=[self.chatbot, self.btn_start]
             ).then(
                 fn=self.start_button_after_click,
                 inputs=[self.chatbot],
