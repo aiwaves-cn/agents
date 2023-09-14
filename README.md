@@ -70,11 +70,11 @@ A WebUI for automatically uploading of your customized agents will be available 
 We have provided exemplar config files, code, and demos for both single-agent and multi-agent systems [here](https://github.com/aiwaves-cn/agents/tree/master/examples).
 
 ### Web demos
-- [Customer Service Agent](https://www.aiwaves.cn/customer_service_agent/)
-- [Oculist Agent](https://www.aiwaves.cn/oculist_agent/)
+- [Customer Service Agent](https://www.aiwaves.cn/customer-service-agent/)
+- [Oculist Agent](https://www.aiwaves.cn/oculist-agent/)
 - [Debate](https://www.aiwaves.cn/debate/)
-- [Software Company](https://www.aiwaves.cn/software_company/)
-- [Fiction Studio](https://www.aiwaves.cn/fiction_studio/)
+- [Software Company](https://www.aiwaves.cn/software-company/)
+- [Fiction Studio](https://www.aiwaves.cn/fiction-studio/)
 
 
 ## 📚 Documentation
