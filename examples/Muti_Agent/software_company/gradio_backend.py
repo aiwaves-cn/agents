@@ -73,24 +73,30 @@ def run(agents,sop,environment):
         memory = process(action)
         environment.update_memory(memory,current_state)
 
-
-
 def prepare(agents, sop, environment):
+    """建立连接+发送数据+等待接收和启动命令"""
     client = Client()
     Client.send_server = client.send_message
+    # 这边需要解析一下，到时候传的时候还要在拼起来
 
+    requirement_game_name = extract(sop.states['design_state'].environment_prompt,"game")
     client.send_message(
         {
-            "requirement": f"{sop.states['design_state'].begin_query}",
+            "requirement": requirement_game_name,
             "agents_name": convert2list4agentname(sop)[0],
+            # "only_name":  DebateUI.convert2list4agentname(sop)[1],
             "only_name":  convert2list4agentname(sop)[0],
             "default_cos_play_id": -1
         }
     )
+    print(f"client: {list(agents.keys())}")
+    print(f"client:发送的值为{requirement_game_name}")
     client.listening_for_start_()
-    # cover config from server
-    sop.states['design_state'].begin_query = Client.cache['requirement']
-
+    """覆盖参数"""
+    new_requirement = Client.cache['requirement']
+    for state in sop.states.values():
+        state.environment_prompt = state.environment_prompt.replace("<game>a snake game with python</game>", f"<game>{new_requirement}</game>")
+    print(f"client:传入的值为{Client.cache['requirement']}")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='A demo of chatbot')
