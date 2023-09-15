@@ -87,9 +87,7 @@ We appreciate your interest in contributing to our open-source initiative. Pleas
 
 Please check our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html) for detailed documentation of the framework.
 
-## ⭐ Github-star
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwX1hEcG8wYmNFWmVHY2R1UDRSNkJncWl2RE9tUXlDYTNoejdxeg==#aiwaves-cn/agents&Date" frameBorder="0"></iframe>
-  
+## ⭐ Star History  
 
 
 
