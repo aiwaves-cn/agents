@@ -88,7 +88,6 @@ We appreciate your interest in contributing to our open-source initiative. Pleas
 Please check our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html) for detailed documentation of the framework.
 
 ## ⭐ Star History  
-## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=aiwaves-cn/agents&type=Date)](https://star-history.com/#aiwaves-cn/agents&Date)
 
 
