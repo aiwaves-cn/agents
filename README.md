@@ -71,7 +71,7 @@ _A WebUI for automatically uploading of your customized agents will be available
 We have provided exemplar config files, code, and demos for both single-agent and multi-agent systems [here](https://github.com/aiwaves-cn/agents/tree/master/examples).
 
 ### Web demos
-#### Note：Due to massive traffic,  our online demos may suffer from long queue time and unstable issues. Please follow our [quick start guide]([link到examples的地址](https://github.com/aiwaves-cn/agents/blob/master/examples/README.md)) and deploy langugage agents locally for testing.
+#### Note：Due to massive traffic,  our online demos may suffer from long queue time and unstable issues. Please follow our [quick start guide](https://github.com/aiwaves-cn/agents/blob/master/examples/README.md)) and deploy langugage agents locally for testing.
 - [Customer Service Agent](https://www.aiwaves.cn/customer-service-agent/)
 - [Oculist Agent](https://www.aiwaves.cn/oculist-agent/)
 - [Debate](https://www.aiwaves.cn/debate/)
@@ -88,6 +88,9 @@ We appreciate your interest in contributing to our open-source initiative. Pleas
 Please check our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html) for detailed documentation of the framework.
 
 ## ⭐ Star History  
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwX1hEcG8wYmNFWmVHY2R1UDRSNkJncWl2RE9tUXlDYTNoejdxeg==#aiwaves-cn/agents&Date" frameBorder="0"></iframe>
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=aiwaves-cn/agents&type=Date)](https://star-history.com/#aiwaves-cn/agents&Date)
+
+
 
 
