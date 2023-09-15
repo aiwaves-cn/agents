@@ -71,6 +71,7 @@ _A WebUI for automatically uploading of your customized agents will be available
 We have provided exemplar config files, code, and demos for both single-agent and multi-agent systems [here](https://github.com/aiwaves-cn/agents/tree/master/examples).
 
 ### Web demos
+#### Note：Our demo is currently unable to accommodate multiple users. If you fail to use it online, please follow our [doc](https://agents-readthedocsio.readthedocs.io/en/latest/index.html) and git clone the code locally for use
 - [Customer Service Agent](https://www.aiwaves.cn/customer-service-agent/)
 - [Oculist Agent](https://www.aiwaves.cn/oculist-agent/)
 - [Debate](https://www.aiwaves.cn/debate/)
@@ -86,7 +87,8 @@ We appreciate your interest in contributing to our open-source initiative. Pleas
 
 Please check our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html) for detailed documentation of the framework.
 
-
+## ⭐ Github-star
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwX1hEcG8wYmNFWmVHY2R1UDRSNkJncWl2RE9tUXlDYTNoejdxeg==#aiwaves-cn/agents&Date" frameBorder="0"></iframe>
   
 
 
