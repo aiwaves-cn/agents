@@ -78,8 +78,11 @@ We have provided exemplar config files, code, and demos for both single-agent an
 - [Fiction Studio](https://www.aiwaves.cn/fiction-studio/)
 
 
-## 📚 Documentation
+## Contributing to Agents
+We appreciate your interest in contributing to our open-source initiative. Please feel free to submit a PR or share your thoughts on how to improve the library in Issues!
 
+
+## 📚 Documentation
 
 Please check our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html) for detailed documentation of the framework.
 
