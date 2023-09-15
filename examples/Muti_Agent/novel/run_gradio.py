@@ -15,10 +15,10 @@ class NovelUI(WebUI):
         "Node 2": "Expand the first chapter<br>✍️",
         "Node 3": "Expand the second chapter<br>✍️",
         "Node 4": "Expand the third chapter<br>✍️",
-        "Node 5": "Expand the forth chapter<br>✍️",
-        "Node 6": "Expand the fifth chapter<br>✍️",
-        "state1": "Perform the first chapter<br>🎭",
-        "state2": "Perform the second chapter<br>🎭"
+        "state1": "Perform the first plot<br>🎭",
+        "state2": "Perform the second plot<br>🎭",
+        "state3": "Perform the third plot<br>🎭",
+        "state4": "Perform the forth plot<br>🎭"
     }
     show2node = {}
     
@@ -276,7 +276,7 @@ class NovelUI(WebUI):
             contents = f.readlines()
         codes = "".join(contents)
         return [[CODE_PREFIX.format(codes),None]]
-   
+      
    
 if __name__ == '__main__':
     ui = NovelUI(client_cmd=["python","gradio_backend.py"])

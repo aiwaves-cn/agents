@@ -458,5 +458,8 @@ def get_relevant_history(query,history,embeddings):
     hits = hits[0]
     for hit in hits:
         matching_idx = hit["corpus_id"]
-        relevant_history.append(history[matching_idx])
+        try:
+            relevant_history.append(history[matching_idx])
+        except:
+            return []
     return relevant_history
