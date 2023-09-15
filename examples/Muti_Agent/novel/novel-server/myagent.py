@@ -2,6 +2,7 @@ import sys
 sys.path.append('../../../../src/agents')
 from Agent import Agent
 from State import State
+import os
 import copy
 import time
 from typing import List, Dict, Any
@@ -11,7 +12,7 @@ import abc
 import json
 import socket
 
-PROXY = 'http://127.0.0.1:7000'
+PROXY = os.environ["PROXY"]
 openai.proxy = PROXY
 
 class Client:
@@ -83,7 +84,7 @@ class Client:
                     assert False
 
 class MyAgent(Agent):
-    API_KEY: str = "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"
+    API_KEY: str = os.environ["API_KEY"]
     WAIT_TIME: int = 20
     DEFAULT_MODEL: int = "gpt-3.5-turbo-16k-0613"
     TEMPERATURE: int = 0.3
