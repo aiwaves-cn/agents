@@ -90,6 +90,18 @@ Please check our [documentation](https://agents-readthedocsio.readthedocs.io/en/
 ## ⭐ Star History  
 [![Star History Chart](https://api.star-history.com/svg?repos=aiwaves-cn/agents&type=Date)](https://star-history.com/#aiwaves-cn/agents&Date)
 
+## Citation
+If you find our repo useful in your research, please kindly consider cite:
+```angular2
+@misc{zhou2023agents,
+      title={Agents: An Open-source Framework for Autonomous Language Agents}, 
+      author={Wangchunshu Zhou and Yuchen Eleanor Jiang and Long Li and Jialong Wu and Tiannan Wang and Shi Qiu and Jintian Zhang and Jing Chen and Ruipu Wu and Shuai Wang and Shiding Zhu and Jiyu Chen and Wentao Zhang and Ningyu Zhang and Huajun Chen and Peng Cui and Mrinmaya Sachan},
+      year={2023},
+      eprint={2309.07870},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 
 
