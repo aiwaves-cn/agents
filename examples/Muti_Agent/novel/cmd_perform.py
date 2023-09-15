@@ -5,11 +5,11 @@ import random
 import sys
 sys.path.append("../../../src/agents")
 sys.path.append("../../Gradio_Config")
-from SOP import SOP
-from Agent import Agent
-from Environment import Environment
+from agents.SOP import SOP
+from agents.Agent import Agent
+from agents.Environment import Environment
 from gradio_base import Client
-from Memory import Memory
+from agents.Memory import Memory
 # from gradio_example import DebateUI
 
 # Client.server.send(str([state, name, chunk, node_name])+"<SELFDEFINESEP>")

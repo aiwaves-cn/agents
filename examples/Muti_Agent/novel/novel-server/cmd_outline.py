@@ -98,12 +98,12 @@ class FirstNode(Node):
         #     for
         MyAgent.TEMPERATURE = temperature_copy
         content = self.summary_agent.get_message(index=-1)
-        # 开始解析 ====================================================
+        # start to parse ====================================================
         data_dict = new_parse(content, labels=[], return_dict=True)
-        # 1. 解析character
+        # 1. parse character
         characters_card: dict = {}
         for key in data_dict['CHARACTERS']:
-            """默认成功"""
+            """default success"""
             if 'CHARACTER' in key:
                 characters_card[
                     data_dict['CHARACTERS'][key]['NAME']
@@ -126,13 +126,13 @@ class FirstNode(Node):
         with open(file_name, "w") as json_file:
             json.dump(characters_card, json_file, ensure_ascii=False)
             print("Save Successfully")
-        # 2. 转成markdown
+        # 2. converted to markdown
         return_content = "<CHARACTERS>\n# Character\n> There are a total of {} characters\n\n".format(
             data_dict['CHARACTERS']['TOTAL NUMBER'],
         )
         cnt = 1
         for key in data_dict['CHARACTERS']:
-            """默认成功"""
+            """default success"""
             if 'CHARACTER' in key:
                 return_content += "## Character{}\n- Gender: {}\n- Name: {}\n- Age: {}\n- Work: {}\n- Personality: {}\n- Speaking Style: {}\n- Relation with Others: {}\n- Background: {}\n\n".format(
                     cnt, data_dict['CHARACTERS'][key]['GENDER'], data_dict['CHARACTERS'][key]['NAME'],
@@ -199,7 +199,7 @@ class SecondNode(Node):
 
     def communicate(self):
         MyAgent.TEMPERATURE = self.temperature[1]
-        """用于存储output，比如第i章"""
+        """to store output，e.g. Chapter i"""
         self.output_memory = []
         for turn in range(2):
             for agent_name in ["Oscar", "Bert", "Ernie"]:
@@ -233,13 +233,7 @@ class SecondNode(Node):
 
     def end(self):
         MyAgent.TEMPERATURE = self.temperature[2]
-        # message: str = self.summary_agent.query.format(
-        #     self.recorder.prepare(agent_name="小黄", agents=self.agents, return_dict=False)
-        # )
-        # self.summary_agent.prepare_message(message)
-        # self.summary_agent.send_message(recorder=self.recorder)
-        # print(f"【summary】{self.summary_agent.get_message(index=-1)}")
-        # return self.summary_agent.get_message(index=-1)
+
         content = self.agents["Bert"].get_message(-1)
         index = -1
         while "none" in content.lower():
@@ -247,22 +241,6 @@ class SecondNode(Node):
             content = self.agents["Bert"].get_message(index)
         try:
             def save(data: dict):
-                """
-                将内容存储存需要的格式
-                输入：
-                {
-                "PLOT i“: {
-                    "DESCRIPTION": "",
-                    "CHARACTER INVOLVED": ""
-                },
-                }
-                ...
-                目标：
-                {
-                    "plot": "",
-                    "characters": ["", ""]
-                }
-                """
                 for idx, (key, value) in enumerate(data.items()):
                     # file_name = f"{self.name.replace(' ', '')}-plot-{idx+1}.json"
                     try:
@@ -292,20 +270,16 @@ class SecondNode(Node):
             data_str = new_parse(content, labels=["CONTENT"], return_dict=False)
             if len(data_str) == 0:
                 assert False
-            print_log("保存成功")
+            print_log("Save successfully")
             print(data_str)
-            # 0到那边会直接变成22
+
             if self.output_func:
                 self.output_func(0, "Recorder", data_str[0], self.name)
                 self.output_func(21, "Recorder", data_str[1:], self.name)
             return data_str
         except Exception as e:
             raise e
-            print_log(e)
-            print_log("保存失败")
-            with open(f"{self.name}-error.txt", "w") as f:
-                f.writelines(content)
-            return content
+
 
     def print(self, agent_name):
         print(f"【{agent_name}】{self.agents[agent_name].get_message(index=-1)}")
@@ -387,10 +361,8 @@ def run_node_1(stream_output:bool=False, output_func=None,
     return output
 
 def run_node_2(outline, node_start_index=2, stream_output:bool=False, output_func=None):
-    """由于有5个章节，所以需要循环5次，每次都是一个子任务，改task和query字段即可"""
     num2cn = ["ONE","TWO","THREE","FOUR","FIVE","SIX","SEVEN","EIGHT","NINE","TEN","ELEVEN","TWELVE"]
     def generate_task_end_prompt(memory: list) -> str:
-        """将第一章、第二章等的内容拼起来"""
         if len(memory) == 0:
             return "\nThere are 5 chapters in total, please enrich the plot of the first chapter according to the outline above, taking care to be storytelling, logical, mainly in third person point of view, not involving description of dialogues, and without empty words. The plot of the first chapter is at least 800 words."
         else:
@@ -402,30 +374,30 @@ def run_node_2(outline, node_start_index=2, stream_output:bool=False, output_fun
                          f"Content is noted to be storytelling, logical, and in the third person point of view, not involving descriptions of dialog, and without empty words. The plot of chapter {num2cn[len(memory)]} is at least 800 words."
             return start_prompt + end_prompt
 
-    output_memory = []      # 存储每一个答案
+    output_memory = []      
     start_agent_names = ["Ernie", "Ernie", "Ernie", "Ernie", "Ernie"]
-    start_agent_queries = [f"Let's start by expanding on chapter {num2cn[i]} as required" for i in range(5)] #"让我们首先来撰写扩写一下第五章的内容。",
+    start_agent_queries = [f"Let's start by expanding on chapter {num2cn[i]} as required" for i in range(5)] 
     ORIGIN_TASK_PROMPT = NOVEL_PROMPT["Node 2"]["task"]
     ORIGIN_QUERY_PROMPT = {}
     ORIGIN_SUMMARY_PROMPT = NOVEL_PROMPT["Node 2"]["summary"]["query"]
     for idx in range(3):
         node_idx = idx + node_start_index
-        # 更新task
+
         NOVEL_PROMPT["Node 2"]["task"] = ORIGIN_TASK_PROMPT.format(
             outline,
             generate_task_end_prompt(output_memory)
         )
-        # 更新query
+
         for agent_name in NOVEL_PROMPT["Node 2"]["agents"]:
             if agent_name not in ORIGIN_QUERY_PROMPT:
                 ORIGIN_QUERY_PROMPT[agent_name] = NOVEL_PROMPT["Node 2"]["agents"][agent_name]["query"]
             NOVEL_PROMPT["Node 2"]["agents"][agent_name]["query"] = ORIGIN_QUERY_PROMPT[agent_name].format(
                 num2cn[idx], "{}"
             )
-        NOVEL_PROMPT["Node 2"]["summary"]["query"] = ORIGIN_SUMMARY_PROMPT.format(num2cn[idx], num2cn[idx], "{}")   # 最后一格用于存放历史记录
+        NOVEL_PROMPT["Node 2"]["summary"]["query"] = ORIGIN_SUMMARY_PROMPT.format(num2cn[idx], num2cn[idx], "{}")   
         start_agent_name = start_agent_names[idx]
         start_agent_query = start_agent_queries[idx]
-        # summary的prompt暂时就不用更新了，然后就正常启动即可
+        
         print(f"node {node_idx} starting ......")
         second_agents, second_summary = generate_second_agents()
         second_node = SecondNode(
@@ -434,26 +406,24 @@ def run_node_2(outline, node_start_index=2, stream_output:bool=False, output_fun
             summary_agent=second_summary,
             save=True,
             start_agent_name=start_agent_name,
-            start_agent_query=start_agent_query, #"让我们首先来撰写扩写一下第一章的内容。"
+            start_agent_query=start_agent_query, 
             stream_output=stream_output,
             output_func=output_func
         )
-        # 保存每个sub task的结果
+        
         output_memory.append(
             second_node.run()
         )
-        # 可以转成json格式
+       
 
 def show_in_gradio(state, name, chunk, node_name):
-    # print("mike:", state, chunk, name, node_name)
-    # 每个都会走send_message，因此一方面可以通过发送方的agent来确定
-    # 另外一个方面是，在end那边，手动执行这个函数
+
     if state == 30:
         Client.server.send(str([state, name, chunk, node_name])+"<SELFDEFINESEP>")
         return
 
     if name.lower() in ["summary", "recorder"]:
-        """肯定是recorder"""
+        """It is recorder"""
         name = "Recorder"
         if state == 0:
             state = 22
@@ -481,7 +451,7 @@ if __name__ == '__main__':
     if output_func is not None:
         global client
         client = Client()
-        # 等待server端发送<START>
+
         client.listening_for_start()
         Client.server = client.start_server()
         next(Client.server)

@@ -23,24 +23,24 @@ class Tree:
         self.first_label = True
 
     def isNodeIn(self, node1:TreeNode, node2:TreeNode):
-        """判断Node1是不是Node2的孩子"""
+
         if node1.item.start > node2.item.start and node1.item.end < node2.item.end:
             return True
         return False
 
     def insert(self, new_node: TreeNode, current_node: TreeNode):
         if len(current_node.sons) == 0:
-            """表明是叶子结点"""
+
             if self.isNodeIn(new_node, current_node):
-                """是叶子结点的孩子"""
+
                 current_node.sons.append(new_node)
                 new_node.parent = current_node
                 return True
             else:
-                """表明不是叶子结点的孩子"""
+
                 return False
         for son in current_node.sons:
-            """遍历儿子"""
+
             done = self.insert(new_node, son)
 
             if done:
@@ -82,9 +82,9 @@ class Tree:
     def build_dict(self, current_dict:dict, current_root:TreeNode, filter_value:list=None, mode:str="filter"):
         assert mode.lower() in ["filter", "remain"], \
             f"mode `{mode}` is not in ['filter', 'remain']"
-        """根据根结点建立嵌套字典"""
+
         if len(current_root.sons) == 0:
-            """就是叶子结点"""
+
             if filter_value is None or (mode.lower() == "remain" and current_root.state == 1):
                 return {current_root.item.value: self.get_node_content(current_root)}
             if mode.lower() == "filter" and current_root.item.value in filter_value:
@@ -104,17 +104,17 @@ class Tree:
                         return None
             current_dict[current_root.item.value] = {}
             for i in range(len(current_root.sons)):
-                """染色"""
+
                 if mode.lower() == "remain":
                     if current_root.parent is not None and current_root.parent.state == 1:
-                        """当前节点的父节点被保留，则该结点也会被保留"""
+
                         current_root.state = 1
                     if current_root.item.value in filter_value:
-                        """如果当前节点是需要被保留的，则设为1"""
+
                         current_root.state = 1
                         current_root.sons[i].state = 1
                     if current_root.state == 1:
-                        """如果当前节点是被保留的，则儿子也会被保留"""
+
                         current_root.sons[i].state = 1
                     if current_root.sons[i].item.value in filter_value:
                         current_root.sons[i].state = 1
@@ -126,7 +126,7 @@ class Tree:
         assert mode.lower() in ["filter", "remain"], \
             f"mode `{mode}` is not in ['filter', 'remain']"
         if len(current_root.sons) == 0:
-            """就是叶子结点"""
+
             if filter_value is None or (mode.lower() == "remain" and current_root.state == 1):
                 return f"<{current_root.item.value}>{self.get_node_content(current_root)}</{current_root.item.value}>"
             if mode.lower() == "filter" and current_root.item.value in filter_value:
@@ -146,17 +146,17 @@ class Tree:
                         return None
             current_item.append(f"<{current_root.item.value}>")
             for i in range(len(current_root.sons)):
-                """染色"""
+
                 if mode.lower() == "remain":
                     if current_root.parent is not None and current_root.parent.state == 1:
-                        """当前节点的父节点被保留，则该结点也会被保留"""
+
                         current_root.state = 1
                     if current_root.item.value in filter_value:
-                        """如果当前节点是需要被保留的，则设为1"""
+
                         current_root.state = 1
                         current_root.sons[i].state = 1
                     if current_root.state == 1:
-                        """如果当前节点是被保留的，则儿子也会被保留"""
+
                         current_root.sons[i].state = 1
                     if current_root.sons[i].item.value in filter_value:
                         current_root.sons[i].state = 1
@@ -166,12 +166,12 @@ class Tree:
             current_item.append(f"</{current_root.item.value}>")
 
 def extract_tag_names(text: str, sort:bool=True)->List[Tuple[str, int, int]]:
-    # 定义正则表达式模式
+
     pattern = r'<([^<>]+)>'
 
-    # 使用正则表达式查找匹配项
+
     matches = re.findall(pattern, text)
-    # 匹配每个项目的开始位置
+
     pos = []
     start = 0
     for item in matches:
@@ -180,7 +180,7 @@ def extract_tag_names(text: str, sort:bool=True)->List[Tuple[str, int, int]]:
         )
         start = text[start:].find(item)+start + len(item)
 
-    # 剔除结束的，只保留开始的
+
     stack_item = []
     stack_pos = []
     answer = []
@@ -190,12 +190,12 @@ def extract_tag_names(text: str, sort:bool=True)->List[Tuple[str, int, int]]:
             stack_pos.append(pos[idx])
         else:
             end_pos = pos[idx]
-            """说明为结束的，需要判断一下是否有"""
+
             if item[1:] in stack_item:
                 while stack_item[-1] != item[1:]:
                     stack_item.pop()
                     stack_pos.pop()
-                # 值，开始位置（不含<），结束位置（不含<）
+
                 answer.append((stack_item.pop(), stack_pos.pop(), end_pos))
     if sort:
         return sorted(answer, key=lambda x: x[1])
