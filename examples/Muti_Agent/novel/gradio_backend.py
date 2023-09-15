@@ -8,11 +8,11 @@ import os
 import argparse
 import random
 
-from SOP import SOP
-from Agent import Agent
-from Environment import Environment
+from agents.SOP import SOP
+from agents.Agent import Agent
+from agents.Environment import Environment
 from gradio_base import Client
-from Memory import Memory
+from agents.Memory import Memory
 
 from myagent import Node, MyAgent, ask_gpt
 from typing import List, Tuple
@@ -27,16 +27,12 @@ from cmd_perform import init, run
 from create_sop import create_sop
 
 def show_in_gradio(state, name, chunk, node_name):
-    # print("mike:", state, chunk, name, node_name)
-    # 每个都会走send_message，因此一方面可以通过发送方的agent来确定
-    # 另外一个方面是，在end那边，手动执行这个函数
     if state == 30:
         Client.send_server(str([state, name, chunk, node_name, 50]))
-        # Client.server.send(str([state, name, chunk, node_name])+"<SELFDEFINESEP>")
         return
 
     if name.lower() in ["summary", "recorder"]:
-        """肯定是recorder"""
+        """It is recorder"""
         name = "Recorder"
         if state == 0:
             state = 22
@@ -51,7 +47,6 @@ def show_in_gradio(state, name, chunk, node_name):
         else:
             state = 10 + state
     Client.send_server(str([state, name, chunk, node_name, 50]))
-    # Client.server.send(str([state, name, chunk, node_name])+"<SELFDEFINESEP>")
 
 
 if __name__ == "__main__":
