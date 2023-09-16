@@ -10,7 +10,6 @@ from agents.Environment import Environment
 from agents.Memory import Memory
 from gradio_base import Client, convert2list4agentname
 
-
 # add ===================
 def process(action):
     response = action.response
@@ -61,6 +60,24 @@ def prepare(agents, sop, environment):
     )
     print(f"client: {list(agents.keys())}")
     client.listening_for_start_()
+    client.mode = Client.mode = client.cache["mode"]
+
+def block_when_next(current_agent, current_state):
+    if Client.LAST_USER:
+        assert not current_agent.is_user
+        Client.LAST_USER = False
+        return
+    if current_agent.is_user:
+        # if next turn is user, we don't handle it here
+        Client.LAST_USER = True
+        return
+    if Client.FIRST_RUN:
+        Client.FIRST_RUN = False
+    else:
+        # block current process
+        if Client.mode == Client.SINGLE_MODE:
+            Client.send_server(str([98, f"{current_agent.name}({current_agent.state_roles[current_state.name]})", " ", current_state.name]))
+            data: list = next(Client.receive_server)
 
 # =======================
 
@@ -80,6 +97,7 @@ def init(config):
 def run(agents,sop,environment):
     while True:
         current_state,current_agent= sop.next(environment,agents)
+        block_when_next(current_agent, current_state)
         if sop.finished:
             print("finished!")
             Client.send_server(str([99, " ", " ", current_state.name]))
