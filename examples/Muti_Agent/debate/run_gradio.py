@@ -7,6 +7,7 @@ from gradio_base import WebUI, UIHelper, PORT, HOST, Client
 from gradio_config import GradioConfig as gc
 from typing import List, Tuple, Any
 import gradio as gr
+import time
 
 class DebateUI(WebUI):
     FORMAT = "{}\n<debate topic>\n{}\nAffirmative viewpoint:{}\nNegative viewpoint:{}\n<debate topic>{}"
@@ -58,6 +59,7 @@ class DebateUI(WebUI):
         super(DebateUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         self.first_recieve_from_client()
         self.data_history = list()
+        self.caller = 0
 
     def handle_message(self, history:list,
             state, agent_name, token, node_name):
@@ -76,13 +78,13 @@ class DebateUI(WebUI):
         render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= True or state % 10 == 2)
         return render_data
 
-    def start_button_when_click(self, theme, positive, negative, choose):
+    def start_button_when_click(self, theme, positive, negative, choose, mode):
         """
         inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose],
         outputs=[self.chatbot, self.btn_send]
         """
         cosplay = None if choose == self.AUDIENCE else choose.split("(")[0]
-        message = dict(theme=theme, positive=positive, negative=negative, cosplay=cosplay)
+        message = dict(theme=theme, positive=positive, negative=negative, cosplay=cosplay, mode=mode)
         self.send_start_cmd(message=message)
         return gr.Chatbot.update(
             visible=True
@@ -91,9 +93,12 @@ class DebateUI(WebUI):
     def start_button_after_click(self, history):
         """
         inputs=[self.chatbot],
-        outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
+        outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset, self.btn_next]
         """
-        self.data_history = list()
+        if self.caller == 0:
+            # not single mode
+            self.data_history = list()
+        self.caller = 0
         receive_server = self.receive_server
         while True:
             data_list: List = receive_server.send(None)
@@ -107,18 +112,28 @@ class DebateUI(WebUI):
                     yield history,\
                         gr.Textbox.update(visible=True, interactive=True), \
                         gr.Button.update(visible=True, interactive=True),\
-                        gr.Button.update(visible=True, interactive=True)
+                        gr.Button.update(visible=True, interactive=True),\
+                        gr.Button.update(visible=False)
                     return
                 elif state == 99:
                     # finish
                     yield history, gr.Textbox.update(visible=True, interactive=False, value="finish!"), \
-                        gr.Button.update(visible=True, interactive=False, value="finish!"), gr.Button.update(visible=True, interactive=True)
+                        gr.Button.update(visible=True, interactive=False, value="finish!"), gr.Button.update(visible=True, interactive=True),\
+                            gr.Button.update(visible=False)
+                elif state == 98:
+                    yield history, \
+                          gr.Textbox.update(visible=False, interactive=False), \
+                          gr.Button.update(visible=False, interactive=False),\
+                            gr.Button.update(visible=False, interactive=False),\
+                            gr.Button.update(visible=True, value=f"Next Agent: 🤖{agent_name} | Next Node: ⭕{node_name}")
+                    return
                 else:
                     history = self.handle_message(history, state, agent_name, token, node_name)
                     yield history, \
                           gr.Textbox.update(visible=False, interactive=False), \
                           gr.Button.update(visible=False, interactive=False),\
-                            gr.Button.update(visible=False, interactive=False)
+                            gr.Button.update(visible=False, interactive=False),\
+                                gr.Button.update(visible=False)
 
     def send_button_when_click(self, text_user, history:list):
         """
@@ -144,7 +159,10 @@ class DebateUI(WebUI):
         self.text_user,
         self.btn_send,
         self.btn_start,
-        self.btn_reset"""
+        self.btn_reset
+        self.btn_next
+        """
+        self.caller = 0
         return None, \
             "", \
                 "", \
@@ -152,7 +170,8 @@ class DebateUI(WebUI):
                         "", \
                             gr.Button.update(value="Restarting...", interactive=False, visible=True),\
                                 gr.Button.update(value="Restarting...", interactive=False, visible=True),\
-                                    gr.Button.update(value="Restarting...", interactive=False, visible=True)
+                                    gr.Button.update(value="Restarting...", interactive=False, visible=True),\
+                                        gr.Button.update(value="Restarting...", interactive=False, visible=False)
                             
     def reset_button_after_click(self, history, text_positive, text_negative, text_theme, text_user, btn_send, btn_start, btn_reset):
         self.reset()
@@ -164,8 +183,16 @@ class DebateUI(WebUI):
                         gr.Textbox.update(value=f"", interactive=True, visible=False),\
                             gr.Button.update(interactive=True, visible=False, value="Send"),\
                                 gr.Button.update(interactive=True, visible=True, value="Start"),\
-                                    gr.Button.update(interactive=False, visible=False, value="Restart")
-        
+                                    gr.Button.update(interactive=False, visible=False, value="Restart"),\
+                                        gr.Button.update(interactive=True, visible=False, value="Next Agent")
+    
+    def btn_next_when_click(self):
+        yield gr.Button.update(visible=False)
+        self.send_message("nothing")
+        self.caller = 1         # will note clear the self.data_history
+        time.sleep(0.5)
+        return
+    
     def construct_ui(
         self,
         theme:str=None,
@@ -183,6 +210,13 @@ class DebateUI(WebUI):
         with gr.Blocks(css=gc.CSS) as demo:
             with gr.Row():
                 with gr.Column():
+                    self.radio_mode = gr.Radio(
+                        [Client.AUTO_MODE, Client.SINGLE_MODE],
+                        value=Client.AUTO_MODE,
+                        interactive=True,
+                        label = Client.MODE_LABEL,
+                        info = Client.MODE_INFO
+                    )
                     self.text_theme = gr.Textbox(
                         label="Debate Topic:",
                         value=theme,
@@ -215,6 +249,10 @@ class DebateUI(WebUI):
                         label="Dialog",
                         visible=VISIBLE
                     )
+                    self.btn_next = gr.Button(
+                        value="Next Agent Start",
+                        visible=False
+                    )
                     self.text_user = gr.Textbox(
                         label="Input",
                         placeholder="Input here",
@@ -231,12 +269,12 @@ class DebateUI(WebUI):
                     
             self.btn_start.click(
                 fn=self.start_button_when_click,
-                inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose],
+                inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose, self.radio_mode],
                 outputs=[self.chatbot, self.btn_start]
             ).then(
                 fn=self.start_button_after_click,
                 inputs=[self.chatbot],
-                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
+                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset, self.btn_next]
             )
             
             self.btn_send.click(
@@ -246,7 +284,7 @@ class DebateUI(WebUI):
             ).then(
                 fn=self.start_button_after_click,
                 inputs=[self.chatbot],
-                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset]
+                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset, self.btn_next]
             )
             
             self.btn_reset.click(
@@ -269,7 +307,8 @@ class DebateUI(WebUI):
                     self.text_user,
                     self.btn_send,
                     self.btn_start,
-                    self.btn_reset
+                    self.btn_reset,
+                    self.btn_next
                 ]
             ).then(
                 fn=self.reset_button_after_click,
@@ -291,8 +330,19 @@ class DebateUI(WebUI):
                     self.text_user,
                     self.btn_send,
                     self.btn_start,
-                    self.btn_reset
+                    self.btn_reset,
+                    self.btn_next
                 ]
+            )
+            
+            self.btn_next.click(
+                fn=self.btn_next_when_click,
+                inputs=[],
+                outputs=[self.btn_next]
+            ).then(
+                fn=self.start_button_after_click,
+                inputs=[self.chatbot],
+                outputs=[self.chatbot, self.text_user, self.btn_send, self.btn_reset, self.btn_next]
             )
             
         self.demo = demo
