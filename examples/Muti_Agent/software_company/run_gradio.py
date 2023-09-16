@@ -2,10 +2,11 @@ import sys
 sys.path.append("../../Gradio_Config")
 
 import os
-from gradio_base import WebUI, UIHelper, PORT, HOST
+from gradio_base import WebUI, UIHelper, PORT, HOST, Client
 from gradio_config import GradioConfig as gc
 from typing import List, Tuple, Any
 import gradio as gr
+import time
 
 class CodeUI(WebUI):
     
@@ -24,13 +25,25 @@ class CodeUI(WebUI):
         super(CodeUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         self.first_recieve_from_client()
         self.data_history = list()
+        self.caller = 0
     
     def construct_ui(self):
         with gr.Blocks(css=gc.CSS) as demo:
             with gr.Row():
                 with gr.Column():
+                    self.radio_mode = gr.Radio(
+                        [Client.AUTO_MODE, Client.SINGLE_MODE],
+                        value=Client.AUTO_MODE,
+                        interactive=True,
+                        label = Client.MODE_LABEL,
+                        info = Client.MODE_INFO
+                    )
                     self.chatbot = gr.Chatbot(
                         elem_id="chatbot1"
+                    )
+                    self.btn_next = gr.Button(
+                        value="Next Agent",
+                        visible=False, elem_id="btn"
                     )
                     with gr.Row():
                         self.text_requirement = gr.Textbox(
@@ -56,12 +69,12 @@ class CodeUI(WebUI):
                 
                 self.btn_start.click(
                     fn=self.btn_send_when_click,
-                    inputs=[self.chatbot, self.text_requirement],
+                    inputs=[self.chatbot, self.text_requirement, self.radio_mode],
                     outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
                 ).then(
                     fn=self.btn_send_after_click,
                     inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
-                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement, self.btn_next]
                 )
                 self.text_requirement.submit(
                     fn=self.btn_send_when_click,
@@ -70,21 +83,30 @@ class CodeUI(WebUI):
                 ).then(
                     fn=self.btn_send_after_click,
                     inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
-                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement, self.btn_next]
                 )
                 self.btn_reset.click(
                     fn=self.btn_reset_when_click,
                     inputs=[],
-                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement, self.btn_next]
                 ).then(
                     fn=self.btn_reset_after_click,
                     inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
-                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement, self.btn_next]
                 )
                 self.file.select(
                     fn=self.file_when_select,
                     inputs=[self.file],
                     outputs=[self.chat_code_show]
+                )
+                self.btn_next.click(
+                    fn = self.btn_next_when_click,
+                    inputs=[],
+                    outputs=[self.btn_next]
+                ).then(
+                    fn=self.btn_send_after_click,
+                    inputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement],
+                    outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement, self.btn_next]
                 )
                 
             self.demo = demo
@@ -106,7 +128,7 @@ class CodeUI(WebUI):
         render_data = self.render_bubble(history, self.data_history, node_name, render_node_name=True)
         return render_data
     
-    def btn_send_when_click(self, chatbot, text_requirement):
+    def btn_send_when_click(self, chatbot, text_requirement, mode):
         """
         inputs=[self.chatbot, self.text_requirement],
         outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
@@ -116,7 +138,8 @@ class CodeUI(WebUI):
             gr.Button.update(visible=True, interactive=False, value="Running"),\
             gr.Textbox.update(visible=True, interactive=False, value=""),\
             gr.Button.update(visible=False, interactive=False) 
-        self.send_start_cmd({'requirement': text_requirement})
+        self.send_start_cmd({'requirement': text_requirement, "mode": mode})
+        return
     
     def btn_send_after_click(
         self, 
@@ -127,7 +150,12 @@ class CodeUI(WebUI):
         btn_reset,
         text_requirement
     ):
-        self.data_history = list()
+        """
+        outputs=[self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement, self.btn_next]
+        """
+        if self.caller == 0:
+            self.data_history = list()
+        self.caller = 0
         receive_server = self.receive_server
         while True:
             data_list: List = receive_server.send(None)
@@ -136,7 +164,7 @@ class CodeUI(WebUI):
                 assert isinstance(data, list)
                 state, agent_name, token, node_name = data
                 assert isinstance(state, int)
-                assert state in [10, 11, 12, 99]
+                assert state in [10, 11, 12, 99, 98]
                 if state == 99:
                     # finish
                     fs = [self.cache['pwd']+'/output_code/'+_ for _ in os.listdir(self.cache['pwd']+'/output_code')]
@@ -145,7 +173,17 @@ class CodeUI(WebUI):
                         gr.Chatbot.update(visible=True),\
                         gr.Button.update(visible=True, interactive=True, value="Start"),\
                         gr.Button.update(visible=True, interactive=True),\
-                        gr.Textbox.update(visible=True, interactive=True, placeholder="Please input your requirement", value="")
+                        gr.Textbox.update(visible=True, interactive=True, placeholder="Please input your requirement", value=""),\
+                        gr.Button.update(visible=False)
+                    return
+                elif state == 98:
+                    yield gr.File.update(visible=False),\
+                        history, \
+                        gr.Chatbot.update(visible=False),\
+                        gr.Button.update(visible=True, interactive=False),\
+                        gr.Button.update(visible=True, interactive=True),\
+                        gr.Textbox.update(visible=True, interactive=False),\
+                        gr.Button.update(visible=True, value=f"Next Agent: 🤖{agent_name} | Next Node: ⭕{node_name}")
                     return
                 history = self.handle_message(history, state, agent_name, token, node_name)
                 yield gr.File.update(visible=False),\
@@ -153,17 +191,19 @@ class CodeUI(WebUI):
                     gr.Chatbot.update(visible=False),\
                     gr.Button.update(visible=True, interactive=False),\
                     gr.Button.update(visible=False, interactive=False),\
-                    gr.Textbox.update(visible=True, interactive=False)
+                    gr.Textbox.update(visible=True, interactive=False),\
+                    gr.Button.update(visible=False)
     
     def btn_reset_when_click(self):
         """
         inputs = []
-        outputs = [self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement]
+        outputs = [self.file, self.chatbot, self.chat_code_show, self.btn_start, self.btn_reset, self.text_requirement, self.btn_next]
         """
         return gr.File.update(visible=False),\
             None, None, gr.Button.update(value="Restarting...", interactive=False),\
                 gr.Button.update(value="Restarting...", interactive=False),\
-                    gr.Textbox.update(value="Restarting", interactive=False)
+                    gr.Textbox.update(value="Restarting", interactive=False),\
+                        gr.Button.update(visible=False)
     
     def btn_reset_after_click(
         self,
@@ -181,7 +221,8 @@ class CodeUI(WebUI):
             gr.Chatbot.update(value=None, visible=False),\
             gr.Button.update(value="Start", visible=True, interactive=True),\
             gr.Button.update(value="Restart", interactive=False, visible=False),\
-            gr.Textbox.update(value=self.cache['requirement'], interactive=True, visible=True)
+            gr.Textbox.update(value=self.cache['requirement'], interactive=True, visible=True),\
+            gr.Button.update(visible=False)
         
     def file_when_select(self, file):
         CODE_PREFIX = "```python\n{}\n```"
@@ -189,7 +230,14 @@ class CodeUI(WebUI):
             contents = f.readlines()
         codes = "".join(contents)
         return [[CODE_PREFIX.format(codes),None]]
- 
+    
+    def btn_next_when_click(self):
+        self.caller = 1             # it will remain the value in self.data_history
+        self.send_message("nothing")
+        time.sleep(0.5)
+        yield gr.Button.update(visible=False)
+        return
+        
 
 if __name__ == '__main__':
     ui = CodeUI(client_cmd=["python","gradio_backend.py"])

@@ -61,9 +61,27 @@ def init(config):
         agent.environment = environment
     return agents,sop,environment
 
+def block_when_next(current_agent, current_state):
+    if Client.LAST_USER:
+        assert not current_agent.is_user
+        Client.LAST_USER = False
+        return
+    if current_agent.is_user:
+        # if next turn is user, we don't handle it here
+        Client.LAST_USER = True
+        return
+    if Client.FIRST_RUN:
+        Client.FIRST_RUN = False
+    else:
+        # block current process
+        if Client.mode == Client.SINGLE_MODE:
+            Client.send_server(str([98, f"{current_agent.name}({current_agent.state_roles[current_state.name]})", " ", current_state.name]))
+            data: list = next(Client.receive_server)
+
 def run(agents,sop,environment):
     while True:      
         current_state,current_agent= sop.next(environment,agents)
+        block_when_next(current_agent, current_state)
         if sop.finished:
             print("finished!")
             Client.send_server(str([99, ' ', ' ', current_state.name]))
@@ -75,10 +93,8 @@ def run(agents,sop,environment):
         environment.update_memory(memory,current_state)
 
 def prepare(agents, sop, environment):
-    """建立连接+发送数据+等待接收和启动命令"""
     client = Client()
     Client.send_server = client.send_message
-    # 这边需要解析一下，到时候传的时候还要在拼起来
 
     requirement_game_name = extract(sop.states['design_state'].environment_prompt,"game")
     client.send_message(
@@ -90,14 +106,13 @@ def prepare(agents, sop, environment):
             "default_cos_play_id": -1
         }
     )
-    print(f"client: {list(agents.keys())}")
-    print(f"client:发送的值为{requirement_game_name}")
+    # print(f"client: send {requirement_game_name}")
     client.listening_for_start_()
-    """覆盖参数"""
+    client.mode = Client.mode = client.cache["mode"]
     new_requirement = Client.cache['requirement']
     for state in sop.states.values():
         state.environment_prompt = state.environment_prompt.replace("<game>a snake game with python</game>", f"<game>{new_requirement}</game>")
-    print(f"client:传入的值为{Client.cache['requirement']}")
+    # print(f"client: recived {Client.cache['requirement']} from server.")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='A demo of chatbot')
