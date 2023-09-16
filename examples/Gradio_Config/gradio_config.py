@@ -61,6 +61,7 @@ class GradioConfig:
         background-color:transparent;
         border-color:transparent;
     }
+    #btn {color: red; border-color: red;}
     """
  
     ID = ["USER", "AGENT", "SYSTEM"]

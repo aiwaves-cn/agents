@@ -51,8 +51,12 @@ class GeneralUI(WebUI):
             with gr.Column():
                 self.radio_mode = gr.Radio(
                     [Client.AUTO_MODE, Client.SINGLE_MODE],
-                    label="Select the execution mode",
-                    info="Single mode refers to when the current agent output ends, it will stop running until you click to continue. Auto mode refers to when you complete the input, all agents will continue to output until the task ends."
+                    label = Client.MODE_LABEL,
+                    info = Client.MODE_INFO,
+                    value=Client.AUTO_MODE,
+                    interactive=True
+                    # label="Select the execution mode",
+                    # info="Single mode refers to when the current agent output ends, it will stop running until you click to continue. Auto mode refers to when you complete the input, all agents will continue to output until the task ends."
                 )
                 self.btn_start = gr.Button(
                     value="Start😁(Click here to start!)",
@@ -185,7 +189,7 @@ class GeneralUI(WebUI):
                             gr.Button.update(visible=True),\
                             history,\
                             gr.Textbox.update(visible=False),\
-                            gr.Button.update(visible=True, value=f"Next Agent: {agent_name} | Next Node: {node_name}")
+                            gr.Button.update(visible=True, value=f"Next Agent: 🤖{agent_name} | Next Node: ⭕{node_name}")
                     return 
                 elif state == 30:
                     # user input

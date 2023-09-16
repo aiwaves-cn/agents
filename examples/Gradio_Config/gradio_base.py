@@ -264,8 +264,12 @@ class Client:
     `gradio_backend.PY` serves as the backend, while `run_gradio` is the frontend. 
     Communication between the frontend and backend is accomplished using Sockets.
     """
+    # =======================Radio Const String======================
     SINGLE_MODE = "Single Mode"
     AUTO_MODE = "Auto Mode"
+    MODE_LABEL = "Select the execution mode"
+    MODE_INFO = "Single mode refers to when the current agent output ends, it will stop running until you click to continue. Auto mode refers to when you complete the input, all agents will continue to output until the task ends."
+    # ===============================================================
     mode = AUTO_MODE
     FIRST_RUN:bool = True
     # if last agent is user, then next agent will be executed automatically rather than click button 
