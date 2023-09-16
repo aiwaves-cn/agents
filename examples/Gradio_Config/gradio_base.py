@@ -264,12 +264,20 @@ class Client:
     `gradio_backend.PY` serves as the backend, while `run_gradio` is the frontend. 
     Communication between the frontend and backend is accomplished using Sockets.
     """
+    SINGLE_MODE = "Single Mode"
+    AUTO_MODE = "Auto Mode"
+    mode = AUTO_MODE
+    FIRST_RUN:bool = True
+    # if last agent is user, then next agent will be executed automatically rather than click button 
+    LAST_USER:bool = False
+    
     receive_server = None
     send_server = None
     current_node = None
     cache = {}
 
     def __init__(self, host=HOST, port=PORT, bufsize=1024):
+        assert Client.mode in [Client.SINGLE_MODE, Client.AUTO_MODE]
         self.SIGN = SPECIAL_SIGN
         self.bufsize = bufsize
         assert bufsize > 0
