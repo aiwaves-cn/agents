@@ -1,18 +1,35 @@
-test.py
+# Ignore Python bytecode files
+__pycache__
+
+# Ignore logs
+logs
+
+# Ignore sensitive data file
+sensitive.txt
+
+# Ignore generated JSON files
 yc_final.json
-.git
-.history
-examples/__pycache__
-src/agents/__pycache__
+template.json
+
+# Ignore generated output code
+output_code
+
+# Ignore Visual Studio Code settings
 .vscode
+
+# Ignore example-related files
+examples/__pycache__
 examples/logs
 examples/temp_database
 examples/temp_agent
+
+# Ignore source distribution and egg info
 /src/agent.egg-info
 /src/dist
+
+# Ignore agent logs
 /src/agents/logs
-__pycache__
-logs
-sensiteve.txt
-template.json
-output_code
+
+# Ignore version control history
+.git
+.history
