@@ -3,8 +3,9 @@
 
 <p align="center"><a href="https://arxiv.org/pdf/2309.07870.pdf">[📄 Paper]</a>
 <a href="http://www.aiwaves-agents.com/">[🌐 Website]</a>
-<a href="#web-demos">[🤖️ Demos]</a>
+<a href="#web-demos">[🤖️ Demos]</a> <a href="https://discord.gg/aNznfrYPeR">[🔥 Discord]</a> <a href='./assets/wechat.jpg'>[🔥 Wechat Group] </a>
 </p>
+ </p>
 <hr>
   
 
