@@ -18,10 +18,11 @@
  ### 2.Single Agent🤖️   
 #### Set  config firstly(examples/Single_Agent/{target_agent}/config.json)
 ```
-{  // e.g. for shopping assistant
+{  // e.g. for shopping assistant（due to change the search engine，it maybe not work now）
     MIN_CATEGORY_SIM  =  "0.7"  ##Threshold for category matching
     TOY_INFO_PATH  = "[\"your_path1\",\"your_path2_\"......]" #Path to the product database
     FETSIZE  =  "5" #Number of recommended products at a time
+    SHOPPING_SEARCH = "Your url"  # Your search engine
     
     #for all agents
     API_KEY  =  #Your API KEY
