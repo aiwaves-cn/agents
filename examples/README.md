@@ -13,7 +13,7 @@
 - [x] Option 2.  Install via PyPI
 
     ```bash
-    pip install agents
+    pip install ai-agents
     ```
  ### 2.Single Agent🤖️   
 #### Set  config firstly(examples/Single_Agent/{target_agent}/config.json)
