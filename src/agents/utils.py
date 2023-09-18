@@ -123,7 +123,7 @@ def save_logs(log_path, messages, response):
     os.makedirs(log_path, exist_ok=True)
     log_file = os.path.join(
         log_path,
-        datetime.datetime.now().strftime("%Y-%m-%d%H:%M:%S") + ".json")
+        datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S") + ".json")
     with open(log_file, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
 
