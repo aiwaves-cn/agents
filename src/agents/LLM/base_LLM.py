@@ -18,7 +18,8 @@ class OpenAILLM(LLM):
     def __init__(self,**kwargs) -> None:
         super().__init__()
         self.API_KEY = os.environ["API_KEY"]
-        self.PROXY = os.environ["PROXY"]
+        if "PROXY" in os.environ:
+            self.PROXY = os.environ["PROXY"]
         self.MAX_CHAT_HISTORY = eval(
             os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
         
