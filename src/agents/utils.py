@@ -36,10 +36,10 @@ import os
 # BAAI/bge-large-zh
 # intfloat/multilingual-e5-large
 
-embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "BAAI/bge-large-zh"
+embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "shibing624/text2vec-base-multilingual"
 
 embedding_model = SentenceTransformer(
-            "intfloat/multilingual-e5-large", device=torch.device("cpu")
+            embed_model_name, device=torch.device("cpu")
         )
 
 def get_embedding(sentence):
@@ -397,8 +397,9 @@ def Search_Engines(req):
     FETSIZE = eval(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
 
     new_dict = {"keyword": req, "catLeafName": "", "fetchSize": FETSIZE}
+    url = os.environ["SHOPPING_SEARCH"]
     res = requests.post(
-        url="https://k8s-api-dev.fenxianglife.com/dev1/fenxiang-ai/search/item",
+        url= url,
         json=new_dict,
     )
     user_dict = json.loads(res.text)
