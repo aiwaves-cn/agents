@@ -1,8 +1,9 @@
-{   "config":{
-    "API_KEY" : "API_KEY",
-    "PROXY" : "PROXY",
-    "MAX_CHAT_HISTORY" : "1000",
-    "TOP_K" : "0"
+{
+    "config": {
+        "API_KEY": "API_KEY",
+        "PROXY": "PROXY",
+        "MAX_CHAT_HISTORY": "1000",
+        "TOP_K": "1"
     },
     "LLM_type": "OpenAI",
     "LLM": {
@@ -83,7 +84,7 @@
     },
     "states": {
         "end_state": {
-            "agent_states":{}
+            "agent_states": {}
         },
         "design_state": {
             "LLM_type": "OpenAI",
@@ -126,9 +127,8 @@
                     "rule": {
                         "rule": "It's crucial to communicate the project's objectives, key deliverables, and any specific requirements comprehensively. This ensures that the entire team understands the project's significance and direction."
                     },
-                    "demonstrations":{
-                        "demonstrations":"Prepare a comprehensive project overview that encompasses the project's scope, objectives, any constraints, and desired outcomes. This document should outline the required features, performance goals, and budget constraints, for example."
-
+                    "demonstrations": {
+                        "demonstrations": "Prepare a comprehensive project overview that encompasses the project's scope, objectives, any constraints, and desired outcomes. This document should outline the required features, performance goals, and budget constraints, for example."
                     }
                 },
                 "Architect_1": {
@@ -148,9 +148,8 @@
                     "rule": {
                         "rule": "Thoroughly analyze the project requirements, evaluate potential technologies, and select suitable design principles to meet the project's needs."
                     },
-                    "demonstrations":{
-                        "demonstrations":"Create a detailed architectural proposal document, including the rationale for choosing the proposed framework and accompanying design diagrams. For instance, provide an architectural diagram outlining the framework's high-level structure and a detailed explanation of why this architecture was selected."
-
+                    "demonstrations": {
+                        "demonstrations": "Create a detailed architectural proposal document, including the rationale for choosing the proposed framework and accompanying design diagrams. For instance, provide an architectural diagram outlining the framework's high-level structure and a detailed explanation of why this architecture was selected."
                     }
                 },
                 "Leader": {
@@ -170,9 +169,8 @@
                     "rule": {
                         "rule": " Offer constructive feedback aligned with the project's objectives to enhance the proposed framework."
                     },
-                    "demonstrations":{
-                        "demonstrations":"Review Architect1's proposal meticulously and provide written feedback. Ensure the feedback is specific and includes actionable suggestions for improvement. For instance, you can point out areas that need improvement and explain how suggested changes align with project goals."
-
+                    "demonstrations": {
+                        "demonstrations": "Review Architect1's proposal meticulously and provide written feedback. Ensure the feedback is specific and includes actionable suggestions for improvement. For instance, you can point out areas that need improvement and explain how suggested changes align with project goals."
                     }
                 },
                 "Architect_2": {
@@ -192,9 +190,8 @@
                     "rule": {
                         "rule": " Integrate Leader's feedback into the architectural proposal and make necessary adjustments to refine the framework."
                     },
-                    "demonstrations":{
-                        "demonstrations":"Revise the architectural proposal document to reflect the improvements suggested by Leader. Provide clear documentation of the changes made, including any revised design diagrams and explanations for incorporating Leader's feedback."
-
+                    "demonstrations": {
+                        "demonstrations": "Revise the architectural proposal document to reflect the improvements suggested by Leader. Provide clear documentation of the changes made, including any revised design diagrams and explanations for incorporating Leader's feedback."
                     },
                     "ExtractComponent": {
                         "extract_words": [
@@ -247,9 +244,8 @@
                     "rule": {
                         "rule": "Clearly define the project's objectives, functionality, and any specific requirements."
                     },
-                    "demonstrations":{
-                        "demonstrations":"Create a detailed project brief that outlines the scope, objectives, and specific features required for the project in a clear and concise manner. This document should provide a comprehensive understanding of what the project aims to achieve."
-
+                    "demonstrations": {
+                        "demonstrations": "Create a detailed project brief that outlines the scope, objectives, and specific features required for the project in a clear and concise manner. This document should provide a comprehensive understanding of what the project aims to achieve."
                     }
                 },
                 "Developer_1": {
@@ -269,9 +265,8 @@
                     "rule": {
                         "rule": "write code that conforms to standards like PEP8, is modular, easy to read, and maintainable. Output the code only,Ensure that the code adheres to the architectural guidelines, coding standards, and best practices."
                     },
-                    "demonstrations":{
-                        "demonstrations":"Follow the architectural proposal closely while writing code. Document the code adequately, use meaningful variable names, and maintain proper code structure. For example, provide code snippets that demonstrate adherence to coding standards and architectural design."
-
+                    "demonstrations": {
+                        "demonstrations": "Follow the architectural proposal closely while writing code. Document the code adequately, use meaningful variable names, and maintain proper code structure. For example, provide code snippets that demonstrate adherence to coding standards and architectural design."
                     },
                     "CustomizeComponent": {
                         "template": "You need to write code based on the following framework: {system}",
@@ -297,9 +292,8 @@
                     "rule": {
                         "rule": "Provide constructive feedback that helps improve code quality and alignment with project goals."
                     },
-                    "demonstrations":{
-                        "demonstrations":" Thoroughly review the code written by Developer1. Offer feedback on code organization, naming conventions, code efficiency, and any functional improvements needed. For instance, provide specific examples of code sections that require refinement and explain how these changes enhance code quality."
-
+                    "demonstrations": {
+                        "demonstrations": " Thoroughly review the code written by Developer1. Offer feedback on code organization, naming conventions, code efficiency, and any functional improvements needed. For instance, provide specific examples of code sections that require refinement and explain how these changes enhance code quality."
                     }
                 },
                 "Developer_2": {
@@ -319,9 +313,8 @@
                     "rule": {
                         "rule": "make code modifications that conform to standards like PEP8, are modular, easy to read, and maintainable. Output the modified code only,Incorporate Leader's feedback into the code and address any issues or improvements identified."
                     },
-                    "demonstrations":{
-                        "demonstrations":" Review the feedback provided by Leader and apply the suggested modifications to the code. Document the changes made and ensure that the updated code aligns with the project's goals and architectural guidelines. Provide examples of code segments before and after the modifications to illustrate the improvements."
-
+                    "demonstrations": {
+                        "demonstrations": " Review the feedback provided by Leader and apply the suggested modifications to the code. Document the changes made and ensure that the updated code aligns with the project's goals and architectural guidelines. Provide examples of code segments before and after the modifications to illustrate the improvements."
                     },
                     "ExtractComponent": {
                         "extract_words": [
@@ -376,9 +369,8 @@
                     "rule": {
                         "rule": "Clearly define the project's objectives, functionality, and any specific requirements."
                     },
-                    "demonstrations":{
-                        "demonstrations":" Create a detailed project brief that outlines the scope, objectives, and specific features required for the project in a clear and concise manner. This document should provide a comprehensive understanding of what the project aims to achieve."
-
+                    "demonstrations": {
+                        "demonstrations": " Create a detailed project brief that outlines the scope, objectives, and specific features required for the project in a clear and concise manner. This document should provide a comprehensive understanding of what the project aims to achieve."
                     }
                 },
                 "Debugger": {
@@ -398,9 +390,8 @@
                     "rule": {
                         "rule": "Thoroughly test the code for syntax errors, logical issues, and other potential problems. Offer detailed feedback that helps the developer understand and resolve any issues.Please pay special attention to some logic bugs in the game, such as whether the game can run normally."
                     },
-                    "demonstrations":{
-                        "demonstrations":" Run the code provided by Developer1 through a simulated compiler or debugger. Document any errors, warnings, or issues encountered during the process. Provide feedback that includes specific examples of code problems and suggested solutions."
-
+                    "demonstrations": {
+                        "demonstrations": " Run the code provided by Developer1 through a simulated compiler or debugger. Document any errors, warnings, or issues encountered during the process. Provide feedback that includes specific examples of code problems and suggested solutions."
                     },
                     "CustomizeComponent": {
                         "template": "You need to Run the following code: {code}, through a simulated compiler or debugger. Document any errors, warnings, or issues encountered during the process. Provide feedback that includes specific examples of code problems and suggested solutions.",
@@ -426,8 +417,8 @@
                     "rule": {
                         "rule": "write code that conforms to standards like PEP8, is modular, easy to read, and maintainable.Address the issues identified by the Debugger and ensure that the code meets the project's requirements."
                     },
-                    "demonstrations":{
-                        "demonstrations":"  Review the feedback provided by the Debugger and make the necessary modifications to the code. Document the changes made and ensure that the code is free of errors and warnings. Provide examples of code segments before and after the modifications."
+                    "demonstrations": {
+                        "demonstrations": "  Review the feedback provided by the Debugger and make the necessary modifications to the code. Document the changes made and ensure that the code is free of errors and warnings. Provide examples of code segments before and after the modifications."
                     }
                 },
                 "Leader": {
@@ -447,8 +438,8 @@
                     "rule": {
                         "rule": " Assess the code's alignment with the project's objectives, functionality, and quality standards. Offer constructive feedback to enhance the code's overall quality."
                     },
-                    "demonstrations":{
-                        "demonstrations":"  Carefully review the code provided by Developer1 after addressing Debugger's feedback. Offer feedback on code organization, readability, and any functional improvements needed. Provide specific examples of code sections that require further refinement and explain how these changes enhance the code's quality."
+                    "demonstrations": {
+                        "demonstrations": "  Carefully review the code provided by Developer1 after addressing Debugger's feedback. Offer feedback on code organization, readability, and any functional improvements needed. Provide specific examples of code sections that require further refinement and explain how these changes enhance the code's quality."
                     }
                 },
                 "Developer_2": {
@@ -468,8 +459,8 @@
                     "rule": {
                         "rule": "Incorporate Leader's feedback into the code and address any issues or improvements identified.,make code modifications that conform to standards like PEP8, are modular, easy to read, and maintainable. Output the modified code only"
                     },
-                    "demonstrations":{
-                        "demonstrations":"  Review the feedback provided by Leader and apply the suggested modifications to the code. Document the changes made and ensure that the updated code aligns with the project's goals and quality standards. Provide examples of code segments before and after the modifications."
+                    "demonstrations": {
+                        "demonstrations": "  Review the feedback provided by Leader and apply the suggested modifications to the code. Document the changes made and ensure that the updated code aligns with the project's goals and quality standards. Provide examples of code segments before and after the modifications."
                     },
                     "ExtractComponent": {
                         "extract_words": [
