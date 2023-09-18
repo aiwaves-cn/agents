@@ -19,6 +19,7 @@ class OpenAILLM(LLM):
         super().__init__()
         self.API_KEY = os.environ["API_KEY"]
         if "PROXY" in os.environ:
+            assert "http:" in a or "socks" in a,"PROXY error,PROXY must be http or socks"
             self.PROXY = os.environ["PROXY"]
         self.MAX_CHAT_HISTORY = eval(
             os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
