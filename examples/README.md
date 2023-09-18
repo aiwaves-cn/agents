@@ -100,7 +100,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 - [ ] Option 3. Run on fast api
     ```bash
    cd examples
-   python run_backend.py --agent Single_Agent/{target_agent}/config.json
+   python run_backend.py --agent Muti_Agent/{target_agent}/config.json
    ```
 
  ### 3.Start with your own Agent🤖️🤖️🤖️  
