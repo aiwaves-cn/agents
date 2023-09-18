@@ -70,7 +70,9 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 
  ### 2.Muti Agent🤖️🤖️   
 - [x] Option 1.  Run on your terminal
+      
 	Modify the config.json
+
 	For example, if you want to play the agent named "Mike" and "Mary"(Support all Agent)
 	```
 	{ 
@@ -84,7 +86,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 
     ```bash
     cd examples
-    python run.py --agent Single_Agent/{target_agent}/config.json
+    python run.py --agent Muti_Agent/{target_agent}/config.json
     ```
 
 - [x] Option 2. Run on gradio
