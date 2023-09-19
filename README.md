@@ -84,6 +84,10 @@ We have provided exemplar config files, code, and demos for both single-agent an
 ## Contributing to Agents
 We appreciate your interest in contributing to our open-source initiative. Please feel free to submit a PR or share your thoughts on how to improve the library in Issues!
 
+## Note：
+1. When running the code, we will download an embedding model, which will cause the code to run slowly. We will adjust it to the API interface later
+2. Currently, the shopping assistant cannot be used. We will replace the API later. Stay tuned
+
 
 ## 📚 Documentation
 
