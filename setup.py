@@ -1,22 +1,48 @@
-from setuptools import setup, find_packages
+import setuptools
 
-setup(
-    name='agent',
-    version='0.1',
-    description='Chat agent powered by aiwaves',
-    long_description='A chat agent powered by aiwaves AI technology.',
-    author='aiwaves',
-    author_email='contact@aiwaves.com',  # Add your email address here
-    packages=find_packages(),
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="ai-agents", 
+    version="0.0.1",
+    author="AIWaves",
+    author_email="contact@aiwaves.cn",
+    description="An Open-source Framework for Autonomous Language Agents",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/aiwaves-cn/agents",
+    # packages=setuptools.find_packages(),
     classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Topic :: Communications :: Chat',
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: OS Independent",
     ],
+    package_dir={"": "src"},
+    packages = ['agents'],
+    python_requires='>=3.6',
+    license='Apache License 2.0',
+    install_requires=[
+        'beautifulsoup4',
+        'fastapi',
+        'google_api_python_client',
+        'google_auth_oauthlib',
+        'gradio==3.39.0',
+        'langchain',
+        'numpy',
+        'openai',
+        'pandas',
+        'Pillow',
+        'protobuf',
+        'psutil',
+        'PyYAML',
+        'Requests',
+        'selenium',
+        'sentence_transformers',
+        'setuptools',
+        'text2vec',
+        'torch',
+        'tqdm',
+        'uvicorn'
+    ]
 )

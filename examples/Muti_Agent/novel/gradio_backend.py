@@ -64,10 +64,13 @@ if __name__ == "__main__":
                 "agents_name": ['Elmo','Abby', 'Zoe', 'Ernie', 'Bert', 'Oscar'],
                 "nodes_name": ['Node 1','Node 2','Node 3', 'Node 4', 'state1', 'state2', 'state3', 'state4'],
                 "output_file_path": f"{os.getcwd()+'/novel_outline'}",
-                "requirement": NOVEL_PROMPT['Node 1']["task"]
+                "requirement": NOVEL_PROMPT['Node 1']["task"],
+                "api_key": os.environ["API_KEY"]
             }
         )
         client.listening_for_start_()
+        os.environ["API_KEY"] = client.cache["api_key"]
+        MyAgent.API_KEY = client.cache["api_key"]
         NOVEL_PROMPT['Node 1']['task'] = client.cache['requirement']
         print("Received: ", client.cache['requirement'])
         outline = run_node_1(

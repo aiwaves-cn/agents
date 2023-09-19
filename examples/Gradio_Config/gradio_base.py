@@ -25,7 +25,22 @@ import socket
 import psutil
 import os
 from abc import abstractmethod
+import openai
 
+def test_apikey_connection(api_key=None, model="gpt-3.5-turbo"):
+    openai.api_key = api_key if api_key is not None else os.environ["API_KEY"]
+    if "PROXY" in os.environ:
+        openai.proxy = os.environ["PROXY"]
+    messages = [{"role": "user", "content": "what's your name?"}]
+    try:
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=messages,
+        )
+        return True
+    except:
+        return False
+    
 def convert2list4agentname(sop):
     """
     Extract the agent names of all states

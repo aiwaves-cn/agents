@@ -84,7 +84,7 @@ class NovelUI(WebUI):
     ):
         super(NovelUI, self).__init__(client_cmd, socket_host, socket_port, bufsize, ui_name)
         self.first_recieve_from_client()
-        for item in ['agents_name', 'nodes_name', 'output_file_path', 'requirement']:
+        for item in ['agents_name', 'nodes_name', 'output_file_path', 'requirement', "api_key"]:
             assert item in self.cache
         self.progress_manage = {
             "schedule": [None for _ in range(len(self.cache['nodes_name']))],
@@ -108,6 +108,11 @@ class NovelUI(WebUI):
                             elem_id="chatbot1",
                             label="Dialog",
                             height=500
+                        )
+                        self.text_api = gr.Textbox(
+                            value = self.cache["api_key"],
+                            placeholder="openai key",
+                            label="Please input valid openai key for gpt-3.5-turbo-16k."
                         )
                         with gr.Row():
                             self.text_requirement = gr.Textbox(
@@ -143,7 +148,7 @@ class NovelUI(WebUI):
                 # ===============Event Listener===============
                 self.btn_start.click(
                     fn=self.btn_start_when_click,
-                    inputs=[self.text_requirement],
+                    inputs=[self.text_requirement, self.text_api],
                     outputs=[self.chatbot, self.chat_record, self.btn_start, self.text_requirement]
                 ).then(
                     fn=self.btn_start_after_click,
@@ -167,7 +172,7 @@ class NovelUI(WebUI):
                 # ===========================================
             self.demo = demo
             
-    def btn_start_when_click(self, text_requirement:str):
+    def btn_start_when_click(self, text_requirement:str, api_key:str):
         """
         inputs=[self.text_requirement],
         outputs=[self.chatbot, self.chat_record, self.btn_start, self.text_requirement]
@@ -177,7 +182,7 @@ class NovelUI(WebUI):
             gr.Chatbot.update(visible=True),\
             gr.Button.update(interactive=False, value="Running"),\
             gr.Textbox.update(value="", interactive=False)
-        self.send_start_cmd({'requirement': text_requirement})
+        self.send_start_cmd({'requirement': text_requirement, "api_key": api_key})
         return 
         
     def btn_start_after_click(self, history:List, record):
