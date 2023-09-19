@@ -1,9 +1,11 @@
-{   "config":{
-    "API_KEY" : "API_KEY",
-    "PROXY" : "PROXY",
-    "MAX_CHAT_HISTORY" : "1000",
-    "User_Names" : "[\"alexander\"]"
-},
+{
+    "config": {
+        "API_KEY": "API_KEY",
+        "PROXY": "",
+        "API_BASE": "",
+        "MAX_CHAT_HISTORY": "1000",
+        "User_Names": "[\"alexander\"]"
+    },
     "LLM_type": "OpenAI",
     "LLM": {
         "temperature": 0.0,
@@ -12,15 +14,15 @@
     },
     "agents": {
         "Mike": {
-            "style":"humorous and professional",
-            "roles":{
-            "response_state": "customer service personnel"
+            "style": "humorous and professional",
+            "roles": {
+                "response_state": "customer service personnel"
             }
         },
         "alexander": {
-            "style":"cold and unruly",
-            "roles":{
-            "response_state": "user"
+            "style": "cold and unruly",
+            "roles": {
+                "response_state": "user"
             }
         }
     },
@@ -33,8 +35,7 @@
     "temperature": 0.6,
     "log_path": "logs",
     "states": {
-        "end_state": {
-        },
+        "end_state": {},
         "response_state": {
             "controller": {
                 "controller_type": "order"
@@ -69,8 +70,7 @@
                         "knowledge_path": "Single_Agent/customer_service/easy_question.json"
                     }
                 },
-                "user": {
-                }
+                "user": {}
             }
         }
     }

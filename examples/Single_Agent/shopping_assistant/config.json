@@ -1,12 +1,14 @@
-{ "config":{
-  "API_KEY" : "API_KEY",
-  "PROXY" : "PROXY",
-  "MAX_CHAT_HISTORY" : "5",
-  "MIN_CATEGORY_SIM" : "0.7",
-  "FETSIZE" : "3",
-  "User_Names" : "[\"Mike\"]",
-  "SHOPPING_SEARCH" : "Your search url"
-},
+{
+  "config": {
+    "API_KEY": "API_KEY",
+    "PROXY": "",
+    "API_BASE": "",
+    "MAX_CHAT_HISTORY": "5",
+    "MIN_CATEGORY_SIM": "0.7",
+    "FETSIZE": "3",
+    "User_Names": "[\"Mike\"]",
+    "SHOPPING_SEARCH": "Your search url"
+  },
   "LLM_type": "OpenAI",
   "LLM": {
     "temperature": 0.3,
@@ -22,21 +24,20 @@
   },
   "agents": {
     "Jonh": {
-      "style":"humorous",
-      "roles":{
-      "shopping_state": "Shopping assistant"
+      "style": "humorous",
+      "roles": {
+        "shopping_state": "Shopping assistant"
       }
     },
     "Mike": {
-      "style":"indifferent",
-      "roles":{
-      "shopping_state": "customer"
+      "style": "indifferent",
+      "roles": {
+        "shopping_state": "customer"
       }
     }
   },
   "states": {
-    "end_state": {
-    },
+    "end_state": {},
     "shopping_state": {
       "roles": [
         "Shopping assistant",
@@ -83,8 +84,8 @@
           "rule": {
             "rule": "Your language should be as concise as possible, without too much nonsense. You cannot ask questions repeatedly. You need to ask different aspects each time, and you can also ask questions reasonably. You can choose not to shop, but you must ask for as much information as possible. You need to constantly ask for different aspects of product information and follow up reasonably. Remember, your tone needs to be cold and your style needs to be tricky"
           }
-          }
         }
       }
     }
   }
+}
