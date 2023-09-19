@@ -9,6 +9,7 @@ from typing import List, Tuple, Any
 import gradio as gr
 import time
 
+
 class DebateUI(WebUI):
     FORMAT = "{}\n<debate topic>\n{}\nAffirmative viewpoint:{}\nNegative viewpoint:{}\n<debate topic>{}"
     AUDIENCE = "Audience" 
@@ -78,13 +79,13 @@ class DebateUI(WebUI):
         render_data = self.render_bubble(history, self.data_history, node_name, render_node_name= True or state % 10 == 2)
         return render_data
 
-    def start_button_when_click(self, theme, positive, negative, choose, mode):
+    def start_button_when_click(self, theme, positive, negative, choose, mode, api_key):
         """
         inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose],
         outputs=[self.chatbot, self.btn_send]
         """
         cosplay = None if choose == self.AUDIENCE else choose.split("(")[0]
-        message = dict(theme=theme, positive=positive, negative=negative, cosplay=cosplay, mode=mode)
+        message = dict(theme=theme, positive=positive, negative=negative, cosplay=cosplay, mode=mode, api_key=api_key)
         self.send_start_cmd(message=message)
         return gr.Chatbot.update(
             visible=True
@@ -210,6 +211,11 @@ class DebateUI(WebUI):
         with gr.Blocks(css=gc.CSS) as demo:
             with gr.Row():
                 with gr.Column():
+                    self.text_api = gr.Textbox(
+                        value = self.cache["api_key"],
+                        placeholder="openai key",
+                        label="Please input valid openai key for gpt-3.5-turbo-16k."
+                    )
                     self.radio_mode = gr.Radio(
                         [Client.AUTO_MODE, Client.SINGLE_MODE],
                         value=Client.AUTO_MODE,
@@ -269,7 +275,7 @@ class DebateUI(WebUI):
                     
             self.btn_start.click(
                 fn=self.start_button_when_click,
-                inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose, self.radio_mode],
+                inputs=[self.text_theme, self.text_positive, self.text_negative, self.radio_choose, self.radio_mode, self.text_api],
                 outputs=[self.chatbot, self.btn_start]
             ).then(
                 fn=self.start_button_after_click,

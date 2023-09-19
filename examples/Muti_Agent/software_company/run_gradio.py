@@ -31,6 +31,11 @@ class CodeUI(WebUI):
         with gr.Blocks(css=gc.CSS) as demo:
             with gr.Row():
                 with gr.Column():
+                    self.text_api = gr.Textbox(
+                        value = self.cache["api_key"],
+                        placeholder="openai key",
+                        label="Please input valid openai key for gpt-3.5-turbo-16k."
+                    )
                     self.radio_mode = gr.Radio(
                         [Client.AUTO_MODE, Client.SINGLE_MODE],
                         value=Client.AUTO_MODE,
@@ -69,7 +74,7 @@ class CodeUI(WebUI):
                 
                 self.btn_start.click(
                     fn=self.btn_send_when_click,
-                    inputs=[self.chatbot, self.text_requirement, self.radio_mode],
+                    inputs=[self.chatbot, self.text_requirement, self.radio_mode, self.text_api],
                     outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
                 ).then(
                     fn=self.btn_send_after_click,
@@ -78,7 +83,7 @@ class CodeUI(WebUI):
                 )
                 self.text_requirement.submit(
                     fn=self.btn_send_when_click,
-                    inputs=[self.chatbot, self.text_requirement],
+                    inputs=[self.chatbot, self.text_requirement, self.text_api],
                     outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
                 ).then(
                     fn=self.btn_send_after_click,
@@ -128,17 +133,17 @@ class CodeUI(WebUI):
         render_data = self.render_bubble(history, self.data_history, node_name, render_node_name=True)
         return render_data
     
-    def btn_send_when_click(self, chatbot, text_requirement, mode):
+    def btn_send_when_click(self, chatbot, text_requirement, mode, api):
         """
-        inputs=[self.chatbot, self.text_requirement],
+        inputs=[self.chatbot, self.text_requirement, radio, text_api],
         outputs=[self.chatbot, self.btn_start, self.text_requirement, self.btn_reset]
         """
         chatbot = [[UIHelper.wrap_css(content=text_requirement, name="User"), None]]
         yield chatbot,\
             gr.Button.update(visible=True, interactive=False, value="Running"),\
             gr.Textbox.update(visible=True, interactive=False, value=""),\
-            gr.Button.update(visible=False, interactive=False) 
-        self.send_start_cmd({'requirement': text_requirement, "mode": mode})
+            gr.Button.update(visible=False, interactive=False)
+        self.send_start_cmd({'requirement': text_requirement, "mode": mode, "api_key": api})
         return
     
     def btn_send_after_click(

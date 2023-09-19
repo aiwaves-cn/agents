@@ -81,12 +81,12 @@ def block_when_next(current_agent, current_state):
 def run(agents,sop,environment):
     while True:      
         current_state,current_agent= sop.next(environment,agents)
-        block_when_next(current_agent, current_state)
         if sop.finished:
             print("finished!")
-            Client.send_server(str([99, ' ', ' ', current_state.name]))
+            Client.send_server(str([99, ' ', ' ', 'done']))
             os.environ.clear()
             break
+        block_when_next(current_agent, current_state)
         action = current_agent.step(current_state)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
         memory = process(action)
@@ -103,13 +103,15 @@ def prepare(agents, sop, environment):
             "agents_name": convert2list4agentname(sop)[0],
             # "only_name":  DebateUI.convert2list4agentname(sop)[1],
             "only_name":  convert2list4agentname(sop)[0],
-            "default_cos_play_id": -1
+            "default_cos_play_id": -1,
+            "api_key": os.environ["API_KEY"]
         }
     )
     # print(f"client: send {requirement_game_name}")
     client.listening_for_start_()
     client.mode = Client.mode = client.cache["mode"]
     new_requirement = Client.cache['requirement']
+    os.environ["API_KEY"] = client.cache["api_key"]
     for state in sop.states.values():
         state.environment_prompt = state.environment_prompt.replace("<target>a snake game with python</target>", f"<target>{new_requirement}</target>")
     # print(f"client: received {Client.cache['requirement']} from server.")

@@ -83,12 +83,12 @@ def init(config):
 def run(agents,sop,environment):
     while True:      
         current_state,current_agent= sop.next(environment,agents)
-        block_when_next(current_agent, current_state)
         if sop.finished:
             print("finished!")
-            Client.send_server(str([99, ' ', ' ', current_state.name]))
+            Client.send_server(str([99, ' ', ' ', "done"]))
             os.environ.clear()
             break
+        block_when_next(current_agent, current_state)
         action = current_agent.step(current_state,"")   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
         memory = process(action)
@@ -107,12 +107,14 @@ def prepare(agents, sop, environment):
             "negative": f"{parse_data[2]}",
             "agents_name": DebateUI.convert2list4agentname(sop)[0],
             "only_name":  DebateUI.convert2list4agentname(sop)[0],
-            "default_cos_play_id": -1
+            "default_cos_play_id": -1,
+            "api_key": os.environ["API_KEY"]
         }
     )
     client.listening_for_start_()
     client.mode = Client.mode = client.cache["mode"]
     # cover config and then start
+    os.environ["API_KEY"] = client.cache["api_key"]
     if Client.cache["cosplay"] is not None:
         agents[Client.cache["cosplay"]].is_user = True
     sop.states['Negative_Task_Allocation_state'] = sop.states['Affirmative_Task_Allocation_state'].begin_query = \
