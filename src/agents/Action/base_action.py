@@ -31,8 +31,17 @@ class Action:
         while parse in all:
             index = all.index(parse) + len(parse)
             all = all[index:]
+        
         if not self.is_user:
             print(f"{send_name}({send_role}):{all}")
+                # for software
+        if "<title>" in all:
+            title = extract(all,"title")
+            python = extract(all,"python")
+            os.makedirs("output_code", exist_ok=True)
+            file_name = "output_code/" + title
+            with open(file_name, "w", encoding="utf-8") as f:
+                f.write(python)
         memory = Memory(send_role, send_name, all)
         return memory
     
