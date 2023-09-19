@@ -1,6 +1,6 @@
 {   "config":{
-    "API_KEY" : "API_KEY",
-    "PROXY" : "PROXY",
+    "API_KEY" : "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",
+    "PROXY" : "http://127.0.0.1:7000",
     "MAX_CHAT_HISTORY" : "5",
     "TOP_K" : "1",
     "ACTIVE_MODE" : "0",
@@ -8,12 +8,6 @@
     "User_Names" : "[]"
 },
     "environment_type" : "competive",
-    "LLM_type": "OpenAI",
-    "LLM": {
-        "temperature": 0.0,
-        "model": "gpt-3.5-turbo-16k-0613",
-        "log_path": "logs/god"
-    },
     "agents": {
         "John": {
             "style":"professional",
@@ -127,12 +121,6 @@
                 "Affirmative_Second",
                 "Affirmative_Third"
             ],
-            "LLM_type": "OpenAI",
-            "LLM": {
-                "temperature": 1.0,
-                "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/Affirmative_Task_Allocation_state"
-            },
             "agent_states": {
                 "Affirmative_First": {
                     "style": {
@@ -197,12 +185,6 @@
                 "Negative_Second",
                 "Negative_Third"
             ],
-            "LLM_type": "OpenAI",
-            "LLM": {
-                "temperature": 1.0,
-                "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/Negative_Task_Allocation_state"
-            },
             "agent_states": {
                 "Negative_First": {
                     "style": {
@@ -271,12 +253,6 @@
                 "Affirmative_Third",
                 "Negative_Third"
             ],
-            "LLM_type": "OpenAI",
-            "LLM": {
-                "temperature": 1.0,
-                "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/Debate_state"
-            },
             "begin_role": "Debate_Judge",
             "begin_query":"Now please proceed with your sequential debate according to your chosen topic.",
             "environment_prompt" : "Now that we've started the sequential debating phase, each debater needs to present their own viewpoints.",
@@ -387,12 +363,6 @@
                 "Affirmative_Third",
                 "Negative_Third"
             ],
-            "LLM_type": "OpenAI",
-            "LLM": {
-                "temperature": 1.0,
-                "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/Debate_Random_state"
-            },
             "begin_role": "Debate_Judge",
             "begin_query":"Now, please engage in a free debate based on your chosen topic.",
             "environment_prompt" : "We are now in the open debate phase, where each debater has the freedom to speak as they wish.",
@@ -487,12 +457,6 @@
             "roles": [
                 "Debate_Judge"
             ],
-            "LLM_type": "OpenAI",
-            "LLM": {
-                "temperature": 1.0,
-                "model": "gpt-3.5-turbo-16k-0613",
-                "log_path": "logs/Judge_state"
-            },
             "agent_states":{
                 "Debate_Judge": {
                     "style": {
