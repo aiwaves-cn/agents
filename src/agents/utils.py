@@ -31,19 +31,33 @@ from sentence_transformers import SentenceTransformer
 import string
 import random
 import os
+import openai
 
-
-# BAAI/bge-large-zh
-# intfloat/multilingual-e5-large
-
-embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "shibing624/text2vec-base-multilingual"
-
-embedding_model = SentenceTransformer(
-            embed_model_name, device=torch.device("cpu")
-        )
+embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "text-embedding-ada-002"
+if embed_model_name in ["text-embedding-ada-002"]:
+    pass
+else:
+    embedding_model = SentenceTransformer(
+                embed_model_name, device=torch.device("cpu")
+            )
 
 def get_embedding(sentence):
-    embed = embedding_model.encode(sentence,convert_to_tensor=True)
+    if embed_model_name in ["text-embedding-ada-002"]:
+        openai.api_key = os.environ["API_KEY"]
+        if "PROXY" in os.environ:
+            assert "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"],"PROXY error,PROXY must be http or socks"
+            openai.proxy = os.environ["PROXY"]
+        if "API_BASE" in os.environ:
+            openai.api_base = os.environ["API_BASE"]
+        embedding_model = openai.Embedding
+        embed = embedding_model.create(
+        model=embed_model_name,
+        input=sentence
+    )
+        embed = embed["data"][0]["embedding"]
+        embed = torch.tensor(embed,dtype=torch.float32)
+    else:
+        embed = embedding_model.encode(sentence,convert_to_tensor=True)
     if len(embed.shape)==1:
         embed = embed.unsqueeze(0)
     return embed

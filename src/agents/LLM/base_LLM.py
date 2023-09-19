@@ -120,9 +120,9 @@ class OpenAILLM(LLM):
             return response.choices[0].message["content"]
 
 
-def init_LLM(**kwargs):
+def init_LLM(default_log_path,**kwargs):
     LLM_type = kwargs["LLM_type"] if "LLM_type" in kwargs else "OpenAI"
-    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs/"
+    log_path = kwargs["log_path"] if "log_path" in kwargs else default_log_path
     if LLM_type == "OpenAI":
         LLM = (
             OpenAILLM(**kwargs["LLM"])
