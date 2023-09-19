@@ -20,7 +20,7 @@ One major difference between **Agents** and other existing frameworks for langua
 ## 📢 Updates
 
 - [ ] Support LLM-based SOP generation
-- [x] 2023.9.12 Offical Release
+- [x] 2023.9.12 Official Release
 
 ## 💡 Highlights
 
