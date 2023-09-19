@@ -72,7 +72,9 @@ _A WebUI for automatically uploading of your customized agents will be available
 We have provided exemplar config files, code, and demos for both single-agent and multi-agent systems [here](https://github.com/aiwaves-cn/agents/tree/master/examples).
 
 ### Web demos
-#### Note：1.Due to massive traffic,  our online demos may suffer from long queue time and unstable issues. Please follow our [quick start guide](https://github.com/aiwaves-cn/agents/blob/master/examples/README.md)) and deploy language agents locally for testing. Or checkout our [website](http://www.aiwaves-agents.com/).2.Software Company is unable to generate executable code online. If you want to directly generate code, please run it locally.
+#### Note
+1.Due to massive traffic,  our online demos may suffer from long queue time and unstable issues. **Please follow our [quick start guide](https://github.com/aiwaves-cn/agents/blob/master/examples/README.md)) and deploy language agents locally for testing. Or checkout our [website](http://www.aiwaves-agents.com/)**.
+2.Software Company is unable to generate executable code online, **if you wish to generate executable code directly, please run it locally :)**
 - [Customer Service Agent](https://www.aiwaves.cn/customer-service-agent/)
 - [Debate](https://www.aiwaves.cn/debate/)
 - [Software Company](https://www.aiwaves.cn/software-company/)
@@ -102,6 +104,3 @@ If you find our repo useful in your research, please kindly consider cite:
       primaryClass={cs.CL}
 }
 ```
-
-
-
