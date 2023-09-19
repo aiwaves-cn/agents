@@ -112,7 +112,7 @@ def prepare(agents, sop, environment):
     new_requirement = Client.cache['requirement']
     for state in sop.states.values():
         state.environment_prompt = state.environment_prompt.replace("<game>a snake game with python</game>", f"<game>{new_requirement}</game>")
-    # print(f"client: recived {Client.cache['requirement']} from server.")
+    # print(f"client: received {Client.cache['requirement']} from server.")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='A demo of chatbot')
