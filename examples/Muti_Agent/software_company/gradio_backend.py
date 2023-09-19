@@ -96,7 +96,7 @@ def prepare(agents, sop, environment):
     client = Client()
     Client.send_server = client.send_message
 
-    requirement_game_name = extract(sop.states['design_state'].environment_prompt,"game")
+    requirement_game_name = extract(sop.states['design_state'].environment_prompt,"target")
     client.send_message(
         {
             "requirement": requirement_game_name,
@@ -111,7 +111,7 @@ def prepare(agents, sop, environment):
     client.mode = Client.mode = client.cache["mode"]
     new_requirement = Client.cache['requirement']
     for state in sop.states.values():
-        state.environment_prompt = state.environment_prompt.replace("<game>a snake game with python</game>", f"<game>{new_requirement}</game>")
+        state.environment_prompt = state.environment_prompt.replace("<target>a snake game with python</target>", f"<target>{new_requirement}</target>")
     # print(f"client: received {Client.cache['requirement']} from server.")
 
 if __name__ == '__main__':
