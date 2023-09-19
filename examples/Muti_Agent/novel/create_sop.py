@@ -38,7 +38,8 @@ def create_sop(folder_name: str = "novel_outline", encoding: str = "utf-8", save
     sop_dict = {
         "config": {
             "API_KEY" : "API_KEY",
-            "PROXY" : "PROXY",
+            "PROXY": "",
+            "API_BASE": "",
             "MAX_CHAT_HISTORY" : "100",
             "TOP_K" : "1",
             "ACTIVE_MODE" : "0",
