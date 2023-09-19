@@ -55,12 +55,14 @@ def prepare(agents, sop, environment):
 
     client.send_message(
         {
-            "agents_name": convert2list4agentname(sop)[0]
+            "agents_name": convert2list4agentname(sop)[0],
+            "api_key": os.environ["API_KEY"]
         }
     )
     print(f"client: {list(agents.keys())}")
     client.listening_for_start_()
     client.mode = Client.mode = client.cache["mode"]
+    os.environ["API_KEY"] = client.cache["api_key"]
 
 def block_when_next(current_agent, current_state):
     if Client.LAST_USER:
@@ -97,13 +99,12 @@ def init(config):
 def run(agents,sop,environment):
     while True:
         current_state,current_agent= sop.next(environment,agents)
-        block_when_next(current_agent, current_state)
         if sop.finished:
             print("finished!")
-            Client.send_server(str([99, " ", " ", current_state.name]))
+            Client.send_server(str([99, " ", " ", "done"]))
             os.environ.clear()
             break
-        
+        block_when_next(current_agent, current_state)
         action = current_agent.step(current_state)   #component_dict = current_state[self.role[current_node.name]]   current_agent.compile(component_dict) 
         gradio_process(action,current_state)
         memory = process(action)

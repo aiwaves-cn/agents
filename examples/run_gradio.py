@@ -42,7 +42,7 @@ class GeneralUI(WebUI):
         self.first_recieve_from_client()
         self.current_node_name = ""
         self.data_history = None
-        for _ in ['agents_name']:
+        for _ in ['agents_name', 'api_key']:
             assert _ in self.cache
     
     def construct_ui(self):
@@ -57,6 +57,11 @@ class GeneralUI(WebUI):
                     interactive=True
                     # label="Select the execution mode",
                     # info="Single mode refers to when the current agent output ends, it will stop running until you click to continue. Auto mode refers to when you complete the input, all agents will continue to output until the task ends."
+                )
+                self.text_api = gr.Textbox(
+                    value = self.cache["api_key"],
+                    placeholder="openai key",
+                    label="Please input valid openai key for gpt-3.5-turbo-16k."
                 )
                 self.btn_start = gr.Button(
                     value="Start😁(Click here to start!)",
@@ -91,8 +96,8 @@ class GeneralUI(WebUI):
             
             self.btn_start.click(
                 fn = self.btn_start_when_click,
-                inputs=[self.radio_mode],
-                outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input, self.btn_next, self.radio_mode]
+                inputs=[self.radio_mode, self.text_api],
+                outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input, self.btn_next, self.radio_mode, self.text_api]
             ).then(
                 fn = self.btn_start_after_click,
                 inputs=[self.chatbot],
@@ -126,7 +131,7 @@ class GeneralUI(WebUI):
             ).then(
                 fn=self.btn_reset_after_click,
                 inputs=[],
-                outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input, self.btn_next, self.radio_mode]
+                outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input, self.btn_next, self.radio_mode, self.text_api]
             )
             
             self.btn_next.click(
@@ -141,20 +146,21 @@ class GeneralUI(WebUI):
             
             self.demo = demo
     
-    def btn_start_when_click(self, mode):
+    def btn_start_when_click(self, mode, api):
         """
-        inputs=[]
+        inputs=[mode, api]
         outputs=[self.btn_start, self.btn_send, self.btn_reset, self.chatbot, self.text_input, self.btn_next, self.radio_mode]
         """
-        print("server: send ", mode)
-        self.send_start_cmd({"mode": mode})
+        print("server: send ", mode, api)
+        self.send_start_cmd({"mode": mode, "api_key":api})
         return gr.Button.update(visible=False), \
             gr.Button.update(visible=False),\
             gr.Button.update(visible=False),\
             gr.Chatbot.update(visible=True),\
             gr.Textbox.update(visible=False),\
             gr.Button.update(visible=False),\
-            gr.Radio.update(visible=False)
+            gr.Radio.update(visible=False),\
+            gr.Textbox.update(visible=False)
     
     def btn_start_after_click(self, history):
         """
@@ -252,7 +258,8 @@ class GeneralUI(WebUI):
             gr.Chatbot.update(label="Dialog", visible=False, value=None), \
             gr.Textbox.update(interactive=True, visible=False),\
             gr.Button.update(visible=False),\
-            gr.Radio.update(visible=True)
+            gr.Radio.update(visible=True), \
+            gr.Textbox.update(visible=True)
     
     def btn_next_when_click(self, history):
         """
