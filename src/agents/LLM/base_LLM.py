@@ -17,10 +17,12 @@ class LLM:
 class OpenAILLM(LLM):
     def __init__(self,**kwargs) -> None:
         super().__init__()
-        self.API_KEY = os.environ["API_KEY"]
+        openai.api_key = os.environ["API_KEY"]
         if "PROXY" in os.environ:
-            assert "http:" in a or "socks" in a,"PROXY error,PROXY must be http or socks"
-            self.PROXY = os.environ["PROXY"]
+            assert "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"],"PROXY error,PROXY must be http or socks"
+            openai.proxy = os.environ["PROXY"]
+        if "API_BASE" in os.environ:
+            openai.api_base = os.environ["API_BASE"]
         self.MAX_CHAT_HISTORY = eval(
             os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
         
@@ -55,8 +57,6 @@ class OpenAILLM(LLM):
         return LLM's response 
         """
         active_mode = True if ("ACTIVE_MODE" in os.environ and os.environ["ACTIVE_MODE"] == "0") else False
-        openai.api_key = self.API_KEY
-        openai.proxy = self.PROXY
         model = self.model
         temperature = self.temperature
         
