@@ -32,13 +32,7 @@ class SOP:
 
     def __init__(self, **kwargs):
         self.controller_dict = {}
-        LLM_type = kwargs["LLM_type"] if "LLM_type" in kwargs else "OpenAI"
-        if LLM_type == "OpenAI":
-            self.LLM = (
-                OpenAILLM(**kwargs["LLM"])
-                if "LLM" in kwargs
-                else OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path="logs/god")
-            )
+        self.LLM = init_LLM(log_path="logs/god",**kwargs)
 
         self.states = {}
         self.init_states(kwargs["states"])

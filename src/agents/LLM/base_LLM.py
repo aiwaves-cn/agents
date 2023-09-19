@@ -118,3 +118,16 @@ class OpenAILLM(LLM):
         else:
             save_logs(self.log_path, messages, response)
             return response.choices[0].message["content"]
+
+
+def init_LLM(**kwargs):
+    LLM_type = kwargs["LLM_type"] if "LLM_type" in kwargs else "OpenAI"
+    log_path = kwargs["log_path"] if "log_path" in kwargs else "logs/"
+    if LLM_type == "OpenAI":
+        LLM = (
+            OpenAILLM(**kwargs["LLM"])
+            if "LLM" in kwargs
+            else OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=log_path)
+        )
+        return LLM
+    

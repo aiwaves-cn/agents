@@ -40,14 +40,7 @@ class Environment:
                     if "environment_prompt" in state_dict
                     else " "
                 )
-                LLM_type = (
-                    state_dict["LLM_type"] if "LLM_type" in state_dict else "OpenAI"
-                )
-                if LLM_type == "OpenAI":
-                    if "LLM" in state_dict:
-                        self.LLMs[state_name] = OpenAILLM(**state_dict["LLM"])
-                    else:
-                        self.LLMs[state_name] = OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=f"logs/{state_name}")
+                self.LLMs[state_name] = init_LLM(log_path=f"logs/{state_name}",**state_dict)
         self.roles_to_names = None
         self.names_to_roles = None
 
