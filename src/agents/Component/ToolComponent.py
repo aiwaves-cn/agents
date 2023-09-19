@@ -204,7 +204,7 @@ class WebSearchComponent(ToolComponent):
         response = requests.get(search_url, headers=headers, params=params)
         response.raise_for_status()
         results = response.json()["webPages"]["value"]
-        """excute"""
+        """execute"""
         metadata_results = []
         for result in results:
             metadata_result = {
@@ -224,7 +224,7 @@ class WebSearchComponent(ToolComponent):
         results = (
             service.cse().list(q=query, cx=cse_id, num=10, **kwargs).execute()["items"]
         )
-        """excute"""
+        """execute"""
         metadata_results = []
         for result in results:
             metadata_result = {
@@ -306,7 +306,7 @@ class MailComponent(ToolComponent):
     def __init__(
         self, cfg_file: str, default_action: str = "read", name: str = "e-mail"
     ):
-        """'../conifg/google_mail.json'"""
+        """'../config/google_mail.json'"""
         super(MailComponent, self).__init__(name)
         self.name = name
         assert (
