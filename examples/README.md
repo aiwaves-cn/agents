@@ -27,6 +27,7 @@
     #for all agents
     API_KEY  =  #Your API KEY
     PROXY  =  #Your proxy
+    API_BASE  = # Your api_base
     MAX_CHAT_HISTORY  =  "8" #Longest History
     User_Names = "[\"{user_name}\"]" # the name of agents which you want to play  
 }
