@@ -54,7 +54,7 @@ def gradio_process(action,current_state):
                     if item.startswith("<USER>"):
                         content = item.split("<USER>")[1]
                         break
-                # print(f"client: recieved `{content}` from server.")
+                # print(f"client: received `{content}` from server.")
                 action.response = content
                 break
             else:

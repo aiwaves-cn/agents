@@ -304,7 +304,7 @@ class Client:
             self.send_message(message=message)
 
     def send_message(self, message):
-        """Send the messaget to the server."""
+        """Send the message to the server."""
         if isinstance(message, list) or isinstance(message, dict):
             message = str(message)
         assert isinstance(message, str)
@@ -339,7 +339,7 @@ class Client:
                 continue
             else:
                 remaining = list_dataset[-1]
-            # Recieve successfully
+            # Receive successfully
             list_dataset = list_dataset[:-1]
             return_value = []
             for item in list_dataset:
@@ -488,12 +488,12 @@ class WebUI:
     
     def _second_send(self, message:dict):
         # Send the modified message.
-        # It will be executed in `self.send_start_cmd()` automtically.
+        # It will be executed in `self.send_start_cmd()` automatically.
         self.send_message(str(message))
     
     def _third_send(self):
         # Send start command.
-        # It will be executed in `self.send_start_cmd()` automtically.
+        # It will be executed in `self.send_start_cmd()` automatically.
         self.send_message(self.SIGN['START'])
     
     def send_start_cmd(self, message:dict={"hello":"hello"}):
@@ -526,7 +526,7 @@ class WebUI:
         self._connect()
 
     def _start_client(self):
-        print(f"server: excuting `{' '.join(self.client_cmd)}` ...")
+        print(f"server: executing `{' '.join(self.client_cmd)}` ...")
         self.backend = subprocess.Popen(self.client_cmd)
         
     def _close_client(self):

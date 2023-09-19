@@ -90,7 +90,7 @@ class GradioConfig:
     </div>
         """,
 
-        # Backrgound-color Font-size Font-color Name Content
+        # Background-color Font-size Font-color Name Content
         "SYSTEM": """
     <div style="display: flex; align-items: center; justify-content: center;">
         <div style="background-color: {}; border-radius: 20px; padding: 1px; min-width: 200px; max-width: 1000px;">
