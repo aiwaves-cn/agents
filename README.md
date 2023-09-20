@@ -20,6 +20,7 @@ One major difference between **Agents** and other existing frameworks for langua
 ## 📢 Updates
 
 - [ ] Support LLM-based SOP generation
+- [x] 2023.9.20 Deploy Demos on Huggingface Space
 - [x] 2023.9.12 Official Release
 
 ## 💡 Highlights
@@ -76,8 +77,8 @@ We have provided exemplar config files, code, and demos for both single-agent an
 1.Due to massive traffic,  our online demos may suffer from long queue time and unstable issues. **Please follow our [quick start guide](https://github.com/aiwaves-cn/agents/blob/master/examples/README.md)) and deploy language agents locally for testing. Or checkout our [website](http://www.aiwaves-agents.com/)**.
 2.Software Company is unable to generate executable code online, **if you wish to generate executable code directly, please run it locally :)**
 - [Customer Service Agent](https://www.aiwaves.cn/customer-service-agent/)
-- [Debate](https://www.aiwaves.cn/debate/)
-- [Software Company](https://www.aiwaves.cn/software-company/)
+- [Debate](https://huggingface.co/spaces/AIWaves/Debate)[now on  Huggingface Space]
+- [Software Company](https://huggingface.co/spaces/AIWaves/Software_Company)[now on  Huggingface Space]
 - [Fiction Studio](https://www.aiwaves.cn/fiction-studio/)
 
 
