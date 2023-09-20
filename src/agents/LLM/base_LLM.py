@@ -22,7 +22,7 @@ class OpenAILLM(LLM):
         
         self.model = kwargs["model"] if "model" in kwargs else "gpt-3.5-turbo-16k-0613"
         self.temperature = kwargs["temperature"] if "temperature" in  kwargs else 0.3
-        self.log_path = kwargs["log_path"] if "log_path" in kwargs else "logs"
+        self.log_path = kwargs["log_path"].replace("/",os.sep) if "log_path" in kwargs else "logs"
     
 
     def get_stream(self,response, log_path, messages):
@@ -122,7 +122,7 @@ class OpenAILLM(LLM):
 
 def init_LLM(default_log_path,**kwargs):
     LLM_type = kwargs["LLM_type"] if "LLM_type" in kwargs else "OpenAI"
-    log_path = kwargs["log_path"] if "log_path" in kwargs else default_log_path
+    log_path = kwargs["log_path"].replace("/",os.sep) if "log_path" in kwargs else default_log_path
     if LLM_type == "OpenAI":
         LLM = (
             OpenAILLM(**kwargs["LLM"])

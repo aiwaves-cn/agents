@@ -87,7 +87,7 @@ class Agent:
                 current_state_begin_role = current_state["begin_role"] if "begin_role" in current_state else current_state["roles"][0]
                 agent_begins[state_name]["is_begin"] = current_state_begin_role==agent_role if "begin_role" in current_state else False
                 agent_begins[state_name]["begin_query"] = current_state["begin_query"] if "begin_query" in current_state else " "
-                agent_LLMs[state_name] = init_LLM(f"logs/{agent_name}",**current_state["agent_states"][agent_role])
+                agent_LLMs[state_name] = init_LLM("logs"+os.sep+f"{agent_name}",**current_state["agent_states"][agent_role])
             agents[agent_name] = cls(
                 agent_name,
                 agent_state_roles,
