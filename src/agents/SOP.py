@@ -32,7 +32,7 @@ class SOP:
 
     def __init__(self, **kwargs):
         self.controller_dict = {}
-        self.LLM = init_LLM("logs/god",**kwargs)
+        self.LLM = init_LLM("logs"+os.sep+"god",**kwargs)
 
         self.states = {}
         self.init_states(kwargs["states"])

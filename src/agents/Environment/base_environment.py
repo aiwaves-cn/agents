@@ -40,7 +40,7 @@ class Environment:
                     if "environment_prompt" in state_dict
                     else " "
                 )
-                self.LLMs[state_name] = init_LLM(f"logs/{state_name}",**state_dict)
+                self.LLMs[state_name] = init_LLM("logs"+os.sep+f"{state_name}",**state_dict)
         self.roles_to_names = None
         self.names_to_roles = None
 
