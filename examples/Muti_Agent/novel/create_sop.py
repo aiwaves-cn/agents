@@ -33,7 +33,7 @@ def create_sop(folder_name: str = "novel_outline", encoding: str = "utf-8", save
     plot_list.sort()
             
 
-    # creat json file of sop
+    # create json file of sop
     sop_file = f"./{save_name}.json"
     sop_dict = {
         "config": {
