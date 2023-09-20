@@ -1,4 +1,5 @@
 from Memory import Memory
+from utils import extract
 class Action:
     """
     The basic action unit of agent
