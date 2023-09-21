@@ -104,11 +104,11 @@ class SOP:
 
             # 否则则让controller判断是否结束
             # Otherwise, let the controller judge whether to end
-            judge_system_prompt = controller_dict["judge_system_prompt"]
+            judge_system_prompt = controller_dict["judge_system_prompt"] if "judge_system_prompt" in controller_dict else ""
             environment_prompt = eval(Get_environment_prompt) if current_state.environment_prompt else ""
             transit_system_prompt = eval(Transit_system_prompt)
             
-            judge_last_prompt = controller_dict["judge_last_prompt"]
+            judge_last_prompt = controller_dict["judge_last_prompt"] if "judge_last_prompt" in controller_dict else ""
             transit_last_prompt = eval(Transit_last_prompt)
             
 
