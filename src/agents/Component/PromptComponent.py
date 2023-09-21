@@ -15,7 +15,7 @@ class TaskComponent(PromptComponent):
         self.task = task
 
     def get_prompt(self, agent):
-        return f"""The task you need to execute is: <task>{self.task}</task>.\n"""
+        return f"""The task you need to execute is: {self.task}.\n"""
 
 
 class OutputComponent(PromptComponent):
@@ -57,8 +57,8 @@ class StyleComponent(PromptComponent):
     def get_prompt(self, agent):
         name = agent.name
         style = agent.style
-        return f"""Now your role is:\n<role>{self.role}</role>, your name is:\n<name>{name}</name>. \
-            You need to follow the output style:\n<style>{style}</style>.\n"""
+        return f"""Now your role is:\n{self.role}, your name is:\n{name}. \
+            You need to follow the output style:\n{style}.\n"""
 
 
 class RuleComponent(PromptComponent):
@@ -67,7 +67,7 @@ class RuleComponent(PromptComponent):
         self.rule = rule
 
     def get_prompt(self, agent):
-        return f"""The rule you need to follow is:\n<rule>{self.rule}</rule>.\n"""
+        return f"""The rule you need to follow is:\n{self.rule}.\n"""
 
 
 class DemonstrationComponent(PromptComponent):
@@ -83,10 +83,9 @@ class DemonstrationComponent(PromptComponent):
         self.demonstrations.append(demonstration)
 
     def get_prompt(self, agent):
-        prompt = "Here are demonstrations you can refer to:\n<demonstrations>"
+        prompt = "Here are demonstrations you can refer to:\n"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
-        prompt += "</demonstrations>\n"
         return prompt
 
 
@@ -103,10 +102,9 @@ class CoTComponent(PromptComponent):
         self.demonstrations.append(demonstration)
 
     def get_prompt(self, agent):
-        prompt = "You need to think in detail before outputting, the thinking case is as follows:\n<demonstrations>"
+        prompt = "You need to think in detail before outputting, the thinking case is as follows:\n"
         for demonstration in self.demonstrations:
             prompt += "\n" + demonstration
-        prompt += "</demonstrations>\n"
         return prompt
 
 
