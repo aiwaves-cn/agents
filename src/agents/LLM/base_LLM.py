@@ -76,6 +76,8 @@ class OpenAILLM(LLM):
                 messages += chat_history
             elif isinstance(chat_history[0],Memory):
                 messages += [memory.get_gpt_message("user") for memory in chat_history]
+        
+        
 
         if last_prompt:
             if active_mode:
@@ -104,8 +106,10 @@ class OpenAILLM(LLM):
             except Exception as e:
                 print(e)
                 if "maximum context length is" in str(e):
-                    assert False, "exceed max length"
-                    break
+                    if len(messages)>1:
+                        del messages[1]
+                    else:
+                        assert False, "exceed max length"
                 else:
                     print(f"Please wait {WAIT_TIME} seconds and resend later ...")
                     time.sleep(WAIT_TIME)
