@@ -67,9 +67,9 @@ class SOP:
                     pass
                 else:
                     os.environ[key] = value
+                    assert "API_KEY" in os.environ and os.environ["API_KEY"] != "API_KEY","Please go to config.json to set API_KEY"
             else:
                 os.environ[key] = value
-        assert "API_KEY" in os.environ and os.environ["API_KEY"] != "API_KEY","Please go to config.json to set API_KEY"
         
         sop = SOP(**config)
         return sop
