@@ -62,6 +62,11 @@ class SOP:
             if key == "API_BASE":
                 if value == "":
                     pass
+            if key == "API_KEY":
+                if value == "":
+                    pass
+                else:
+                    os.environ[key] = value
             else:
                 os.environ[key] = value
         assert "API_KEY" in os.environ and os.environ["API_KEY"] != "API_KEY","Please go to config.json to set API_KEY"
