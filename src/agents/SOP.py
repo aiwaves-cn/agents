@@ -59,13 +59,8 @@ class SOP:
             config = json.load(f)
         os.environ.clear()
         for key,value in config["config"].items():
-            if key == "API_BASE":
-                if value == "":
-                    pass
-            else:
+            if value!="":
                 os.environ[key] = value
-        assert "API_KEY" in os.environ and os.environ["API_KEY"] != "API_KEY","Please go to config.json to set API_KEY"
-        
         sop = SOP(**config)
         return sop
 
