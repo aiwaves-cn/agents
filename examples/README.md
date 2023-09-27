@@ -3,7 +3,7 @@
 
 ### 1.Install the package
 - [x] Option 1.  Build from source
-
+<br>To install using this method,you need to change 'from agents.XXX import XXX' to 'from XXX import XXX' in either run.py or run_gradio.py.
     ```bash
     git clone https://github.com/aiwaves-cn/agents.git
     cd agents
@@ -11,7 +11,7 @@
     ```
 
 - [x] Option 2.  Install via PyPI
-
+<br>It is recommended to install in this way, and every code update will require reinstallation afterwards
     ```bash
     pip install ai-agents
     ```
@@ -131,8 +131,46 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    python run_backend.py --agent config.json
    ```
 
+ ### 3.Change your LLM
+ refer src/agents/LLM/base_LLM.py
+ ```python
+def init_LLM(default_log_path,**kwargs):
+    LLM_type = kwargs["LLM_type"] if "LLM_type" in kwargs else "OpenAI"
+    log_path = kwargs["log_path"].replace("/",os.sep) if "log_path" in kwargs else default_log_path
+    if LLM_type == "OpenAI":
+        LLM = (
+            OpenAILLM(**kwargs["LLM"])
+            if "LLM" in kwargs
+            else OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=log_path)
+        )
+        return LLM
+```
+You can change this method to deploy your own LLM.
+For example:
+ ```python
+def init_LLM(default_log_path,**kwargs):
+	LLM = Your_LLM()
+	return LLM
+```
+Also, ensure that your LLM's input and output parameters remain consistent with the original LLM, and keep the method name as 'get_response'.
+For example:
+ ```python
+class Your_LLM(LLM):
+	def __init__(self,**kwargs) -> None:
+		super().__init__()
 
-
+	def get_response(self,
+                    chat_history,
+                    system_prompt,
+                    last_prompt=None,
+                    stream=False,
+                    functions=None,
+                    function_call="auto",
+                    WAIT_TIME=20,
+                    **kwargs):
+		return chatglm(**kwargs)
+```
+Please note that it is essential to ensure consistency in streaming output. For instance, when 'stream=True' is set, the function should return a generator, and when 'stream=False,' it should return a string.
 
 ### 🤖️ The Agent Hub
 
