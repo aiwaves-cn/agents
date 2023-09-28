@@ -1,7 +1,7 @@
 ## 😄 Getting Started with Fun
 
 
-### 1.Install the package
+### 1. Install the package
 - [x] Option 1.  Build from source
 <br>To install using this method,you need to change 'from agents.XXX import XXX' to 'from XXX import XXX' in either run.py or run_gradio.py.
     ```bash
@@ -15,7 +15,7 @@
     ```bash
     pip install ai-agents
     ```
- ### 2.Single Agent🤖️   
+ ### 2. Single Agent🤖️   
 #### Set  config firstly(examples/Single_Agent/{target_agent}/config.json)
 ```
 {  // e.g. for shopping assistant（due to change the search engine，it maybe not work now）
@@ -69,7 +69,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    ```
 
 
- ### 2.Muti Agent🤖️🤖️   
+ ### 3. Muti Agent🤖️🤖️   
 - [x] Option 1.  Run on your terminal
       
 	Modify the config.json
@@ -98,13 +98,26 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    python run_gradio.py
    ```
    Choose the agent you want to perform in the gradio UI.
+
+   **Note:**
+   You need to set environment variables first, if you want to run Fiction-Studio demo on gradio.
+   ```
+   export PROXY="xxx"
+   export API_KEY="sk-xxxxxxx"
+   ```
+   And then
+    ```bash
+   cd examples/Muti_Agent/novel
+   python run_gradio.py
+   ```
+   
 - [ ] Option 3. Run on fast api
     ```bash
    cd examples
    python run_backend.py --agent Muti_Agent/{target_agent}/config.json
    ```
 
- ### 3.Start with your own Agent🤖️🤖️🤖️  
+ ### 4. Start with your own Agent🤖️🤖️🤖️  
  #### 1.Write your config.json according to [template.py](https://github.com/aiwaves-cn/agents/blob/master/src/agents/template.py)(more details refer to the [doc](https://ai-waves.feishu.cn/wiki/NIjrw8FR7inGTMkfS5yc5wcvnlg))
  
  #### 2.Run your config.json 
@@ -131,7 +144,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    python run_backend.py --agent config.json
    ```
 
- ### 3.Change your LLM
+ ### 5. Change your LLM
  refer src/agents/LLM/base_LLM.py
  ```python
 def init_LLM(default_log_path,**kwargs):
