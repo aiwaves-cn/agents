@@ -1,5 +1,5 @@
 from abc import abstractclassmethod
-import openai
+import litellm
 import os
 import time
 from Memory import Memory
@@ -50,12 +50,12 @@ class OpenAILLM(LLM):
         """
         return LLM's response 
         """
-        openai.api_key = os.environ["API_KEY"]
+        litellm.api_key = os.environ["API_KEY"]
         if "PROXY" in os.environ:
             assert "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"],"PROXY error,PROXY must be http or socks"
-            openai.proxy = os.environ["PROXY"]
+            litellm.proxy = os.environ["PROXY"]
         if "API_BASE" in os.environ:
-            openai.api_base = os.environ["API_BASE"]
+            litellm.api_base = os.environ["API_BASE"]
         active_mode = True if ("ACTIVE_MODE" in os.environ and os.environ["ACTIVE_MODE"] == "0") else False
         model = self.model
         temperature = self.temperature
@@ -89,7 +89,7 @@ class OpenAILLM(LLM):
         while True:
             try:
                 if functions:
-                    response = openai.ChatCompletion.create(
+                    response = litellm.completion(
                         model=model,
                         messages=messages,
                         functions=functions,
@@ -97,7 +97,7 @@ class OpenAILLM(LLM):
                         temperature=temperature,
                     )
                 else:
-                    response = openai.ChatCompletion.create(
+                    response = litellm.completion(
                         model=model,
                         messages=messages,
                         temperature=temperature,
