@@ -30,6 +30,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from tqdm import tqdm
+from serpapi import GoogleSearch
 
 class ToolComponent:
     def __init__(self):
@@ -170,7 +171,7 @@ class ExtractComponent(ToolComponent):
 class WebSearchComponent(ToolComponent):
     """search engines"""
 
-    __ENGINE_NAME__: List = ["google", "bing"]
+    __ENGINE_NAME__: List = ["google", "bing", "serpapi"]
 
     def __init__(self, engine_name: str, api: Dict):
         """
@@ -187,7 +188,11 @@ class WebSearchComponent(ToolComponent):
         self.api = api
         self.engine_name = engine_name
 
-        self.search: Dict = {"bing": self._bing_search, "google": self._google_search}
+        self.search: Dict = {
+            "bing": self._bing_search, 
+            "google": self._google_search,
+            "serpapi": self._serpapi_request,
+        }
 
     def _bing_search(self, query: str, **kwargs):
         """Initialize search hyperparameters"""
@@ -233,6 +238,104 @@ class WebSearchComponent(ToolComponent):
                 "link": result["link"],
             }
             metadata_results.append(metadata_result)
+        return {"meta data": metadata_results}
+
+    # Get SerpApi's API key from https://serpapi.com/manage-api-key
+    def _serpapi_request(self, query: str, **kwargs):
+        """Initialize search hyperparameters"""
+        api_key = self.api[self.engine_name]
+        """start searching"""
+        results = GoogleSearch({
+            "q": query,
+            "api_key": api_key,
+        }).get_dict()
+        """execute"""
+        snippets = []
+        if "answer_box_list" in results.keys():
+            results["answer_box"] = results["answer_box_list"]
+        if "answer_box" in results.keys():
+            answer_box = results["answer_box"]
+            if isinstance(answer_box, list):
+                answer_box = answer_box[0]
+            if "result" in answer_box.keys():
+                snippets.append(answer_box["result"])
+            elif "answer" in answer_box.keys():
+                snippets.append(answer_box["answer"])
+            elif "snippet" in answer_box.keys():
+                snippets.append(answer_box["snippet"])
+            elif "snippet_highlighted_words" in answer_box.keys():
+                snippets.append(answer_box["snippet_highlighted_words"])
+            else:
+                answer = {}
+                for key, value in answer_box.items():
+                    if not isinstance(value, (list, dict)) and not (
+                        isinstance(value, str) and value.startswith("http")
+                    ):
+                        answer[key] = value
+                snippets.append(str(answer))
+        elif "events_results" in results.keys():
+            snippets.append(results["events_results"][:10])
+        elif "sports_results" in results.keys():
+            snippets.append(results["sports_results"])
+        elif "top_stories" in results.keys():
+            snippets.append(results["top_stories"])
+        elif "news_results" in results.keys():
+            snippets.append(results["news_results"])
+        elif "jobs_results" in results.keys() and "jobs" in results["jobs_results"].keys():
+            snippets.append(results["jobs_results"]["jobs"])
+        elif (
+            "shopping_results" in results.keys()
+            and "title" in results["shopping_results"][0].keys()
+        ):
+            snippets.append(results["shopping_results"][:3])
+        elif "questions_and_answers" in results.keys():
+            snippets.append(results["questions_and_answers"])
+        elif (
+            "popular_destinations" in results.keys()
+            and "destinations" in results["popular_destinations"].keys()
+        ):
+            snippets.append(results["popular_destinations"]["destinations"])
+        elif "top_sights" in results.keys() and "sights" in results["top_sights"].keys():
+            snippets.append(results["top_sights"]["sights"])
+        elif (
+            "images_results" in results.keys()
+            and "thumbnail" in results["images_results"][0].keys()
+        ):
+            snippets.append(str([item["thumbnail"] for item in results["images_results"][:10]]))
+        else:
+            if "knowledge_graph" in results.keys():
+                knowledge_graph = results["knowledge_graph"]
+                title = knowledge_graph["title"] if "title" in knowledge_graph else ""
+                if "description" in knowledge_graph.keys():
+                    snippets.append(knowledge_graph["description"])
+                for key, value in knowledge_graph.items():
+                    if (
+                        isinstance(key, str)
+                        and isinstance(value, str)
+                        and key not in ["title", "description"]
+                        and not key.endswith("_stick")
+                        and not key.endswith("_link")
+                        and not value.startswith("http")
+                    ):
+                        snippets.append(f"{title} {key}: {value}.")
+            if "organic_results" in results.keys():
+                first_organic_result = results["organic_results"][0]
+                if "snippet" in first_organic_result.keys():
+                    snippets.append(first_organic_result["snippet"])
+                elif "snippet_highlighted_words" in first_organic_result.keys():
+                    snippets.append(first_organic_result["snippet_highlighted_words"])
+                elif "rich_snippet" in first_organic_result.keys():
+                    snippets.append(first_organic_result["rich_snippet"])
+                elif "rich_snippet_table" in first_organic_result.keys():
+                    snippets.append(first_organic_result["rich_snippet_table"])
+                elif "link" in first_organic_result.keys():
+                    snippets.append(first_organic_result["link"])
+            if "buying_guide" in results.keys():
+                snippets.append(results["buying_guide"])
+            if "local_results" in results.keys() and "places" in results["local_results"].keys():
+                snippets.append(results["local_results"]["places"])
+
+        metadata_results = list(map(lambda snippet: { "snippet": str(snippet) }, snippets))
         return {"meta data": metadata_results}
 
     def func(self, agent, **kwargs) -> Dict:
