@@ -34,7 +34,7 @@ SOP = {
 from design_states import get_desgin_states,get_cot_result,gen_coder_task
 from gen_utils import *
 import json
-from utils import get_embedding,cos_sim
+from agents.utils import get_embedding,cos_sim
 import torch
 software = "You are a software,aim to write a snake game with python"
 debate = "Simulate a debate competition"

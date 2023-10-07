@@ -19,7 +19,7 @@ SOP = {
 from design_states import get_desgin_states,get_cot_result
 from gen_utils import *
 import json
-from utils import get_embedding,cos_sim
+from agents.utils import get_embedding,cos_sim
 import torch
 
 design_assistant = "An assistant that can help users create content such as articles, blogs, advertising copy, etc"

@@ -1,8 +1,6 @@
-import sys
-sys.path.append("../")
 import re
-from LLM.base_LLM import *
-from utils import extract
+from agents.LLM.base_LLM import *
+from agents.utils import extract
 from single_prompts import *
 
 
