@@ -7,13 +7,14 @@ import copy
 import time
 from typing import List, Dict, Any
 import openai
+import litellm
 from myutils import print_log, simulation
 import abc
 import json
 import socket
 
 PROXY = os.environ["PROXY"]
-openai.proxy = PROXY
+litellm.proxy = PROXY
 
 class Client:
 
@@ -106,7 +107,7 @@ class MyAgent(Agent):
         self.query = query
 
         self.summary_pointer = 1
-        openai.api_key = MyAgent.API_KEY
+        litellm.api_key = MyAgent.API_KEY
 
 
 
@@ -119,7 +120,7 @@ class MyAgent(Agent):
                 # copy_message = copy.deepcopy(self.messages)
                 # print(self.messages)
                 if not MyAgent.SIMULATION:
-                    completion = openai.ChatCompletion.create(
+                    completion = litellm.completion(
                         model=MyAgent.DEFAULT_MODEL,
                         messages=self.messages,
                         temperature=MyAgent.TEMPERATURE,

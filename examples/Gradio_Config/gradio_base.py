@@ -25,15 +25,15 @@ import socket
 import psutil
 import os
 from abc import abstractmethod
-import openai
+import litellm
 
 def test_apikey_connection(api_key=None, model="gpt-3.5-turbo"):
-    openai.api_key = api_key if api_key is not None else os.environ["API_KEY"]
+    litellm.api_key = api_key if api_key is not None else os.environ["API_KEY"]
     if "PROXY" in os.environ:
-        openai.proxy = os.environ["PROXY"]
+        litellm.proxy = os.environ["PROXY"]
     messages = [{"role": "user", "content": "what's your name?"}]
     try:
-        response = openai.ChatCompletion.create(
+        response = litellm.completion(
             model=model,
             messages=messages,
         )
