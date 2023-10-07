@@ -58,13 +58,16 @@ class Environment:
         current_state_name = current_state.name
 
         query = self.shared_memory["long_term_memory"][-1].content
-        relevant_history = get_relevant_history(
-            query,
-            self.shared_memory["long_term_memory"][:-1],
-            self.shared_memory["chat_embeddings"][:-1],
-        )
+        if len(self.shared_memory["long_term_memory"])>1:
+            relevant_history = get_relevant_history(
+                query,
+                self.shared_memory["long_term_memory"][:-1],
+                self.shared_memory["chat_embeddings"][:-1],
+            )
 
-        relevant_history = Memory.get_chat_history(relevant_history)
+            relevant_history = Memory.get_chat_history(relevant_history)
+        else:
+            relevant_history = ""
         chat_history = Memory.get_chat_history(
             self.shared_memory["long_term_memory"][-MAX_CHAT_HISTORY + 1 :]
         )
@@ -124,6 +127,9 @@ class Environment:
             new_conversation = current_long_term_memory[
                 last_conversation_idx + 1 :
             ]
+        MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
+        if len(new_conversation) > 2 * MAX_CHAT_HISTORY:
+            new_conversation = new_conversation[-2*MAX_CHAT_HISTORY+1:]
 
         # get chat history from new conversation
         return Memory.get_chat_history(new_conversation)
@@ -140,16 +146,20 @@ class Environment:
         current_long_term_memory = self.shared_memory["long_term_memory"][current_chat_history_idx:]
         current_chat_embbedings = self.shared_memory["chat_embeddings"][current_chat_history_idx:]
             
-        
+        if len(current_long_term_memory)>2*MAX_CHAT_HISTORY:
+            current_long_term_memory = current_long_term_memory[-2*MAX_CHAT_HISTORY+1:]
+            current_chat_embbedings = current_chat_embbedings[-2*MAX_CHAT_HISTORY+1:]
         # relevant_memory
         query = current_long_term_memory[-1].content
-
-        relevant_memory = get_relevant_history(
-            query,
-            current_long_term_memory[:-1],
-            current_chat_embbedings[:-1],
-        )
-        relevant_memory = Memory.get_chat_history(relevant_memory,agent.name)
+        if len(current_long_term_memory)>1:
+            relevant_memory = get_relevant_history(
+                query,
+                current_long_term_memory[:-2],
+                current_chat_embbedings[:-2],
+            )
+            relevant_memory = Memory.get_chat_history(relevant_memory,agent.name)
+        else:
+            relevant_memory = ""
         
         relevant_memory = eval(Agent_observe_relevant_memory)
         agent.relevant_memory = relevant_memory

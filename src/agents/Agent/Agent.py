@@ -83,7 +83,7 @@ class Agent:
                 names_to_roles[state_name][agent_name] = agent_role
                 agent_state_roles[state_name] = agent_role
                 current_state = config["states"][state_name]
-                
+                current_state["roles"] = list(current_state["agent_states"].keys()) if "roles" not in current_state else current_state["roles"]
                 current_state_begin_role = current_state["begin_role"] if "begin_role" in current_state else current_state["roles"][0]
                 agent_begins[state_name]["is_begin"] = current_state_begin_role==agent_role if "begin_role" in current_state else False
                 agent_begins[state_name]["begin_query"] = current_state["begin_query"] if "begin_query" in current_state else " "

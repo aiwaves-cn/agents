@@ -1,82 +1,87 @@
-{
-    "config": {
-        "API_KEY": "API_KEY",
-        "PROXY": "",
-        "API_BASE": "",
-        "MAX_CHAT_HISTORY": "5",
-        "TOP_K": "1",
-        "ACTIVE_MODE": "0",
-        "GRADIO": "0",
-        "User_Names": "[]"
+{   "config":{
+    "API_KEY" : "API_KEY",
+    "PROXY" : "",
+    "API_BASE":"",
+    "MAX_CHAT_HISTORY" : "5",
+    "TOP_K" : "1",
+    "ACTIVE_MODE" : "0",
+    "GRADIO" : "0",
+    "User_Names" : "[]"
+},
+    "environment_type" : "competive",
+    "LLM_type": "OpenAI",
+    "LLM": {
+        "temperature": 0.0,
+        "model": "gpt-3.5-turbo-16k-0613",
+        "log_path": "logs/上帝"
     },
-    "environment_type": "competive",
     "agents": {
         "John": {
-            "style": "professional",
-            "roles": {
-                "Affirmative_Task_Allocation_state": "Affirmative_Debate_organizer"
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_Debate_organizer"
             }
         },
         "Mary": {
-            "style": "professional",
-            "roles": {
-                "Affirmative_Task_Allocation_state": "Affirmative_First",
-                "Debate_Order_state": "Affirmative_First",
-                "Debate_Random_state": "Affirmative_First"
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_First",
+            "Debate_Order_state":"Affirmative_First",
+            "Debate_Random_state":"Affirmative_First"
             }
         },
         "James": {
-            "style": "professional",
-            "roles": {
-                "Affirmative_Task_Allocation_state": "Affirmative_Second",
-                "Debate_Order_state": "Affirmative_Second",
-                "Debate_Random_state": "Affirmative_Second"
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_Second",
+            "Debate_Order_state":"Affirmative_Second",
+            "Debate_Random_state":"Affirmative_Second"
             }
         },
         "Jennifer": {
-            "style": "professional",
-            "roles": {
-                "Affirmative_Task_Allocation_state": "Affirmative_Third",
-                "Debate_Order_state": "Affirmative_Third",
-                "Debate_Random_state": "Affirmative_Third"
+            "style":"professional",
+            "roles":{
+            "Affirmative_Task_Allocation_state": "Affirmative_Third",
+            "Debate_Order_state":"Affirmative_Third",
+            "Debate_Random_state":"Affirmative_Third"
             }
         },
         "Michael": {
-            "style": "professional",
-            "roles": {
-                "Negative_Task_Allocation_state": "Negative_Debate_organizer"
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_Debate_organizer"
             }
         },
         "Emily": {
-            "style": "professional",
-            "roles": {
-                "Negative_Task_Allocation_state": "Negative_First",
-                "Debate_Order_state": "Negative_First",
-                "Debate_Random_state": "Negative_First"
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_First",
+            "Debate_Order_state":"Negative_First",
+            "Debate_Random_state":"Negative_First"
             }
         },
         "William": {
-            "style": "professional",
-            "roles": {
-                "Negative_Task_Allocation_state": "Negative_Second",
-                "Debate_Order_state": "Negative_Second",
-                "Debate_Random_state": "Negative_Second"
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_Second",
+            "Debate_Order_state":"Negative_Second",
+            "Debate_Random_state":"Negative_Second"
             }
         },
         "Sarah": {
-            "style": "professional",
-            "roles": {
-                "Negative_Task_Allocation_state": "Negative_Third",
-                "Debate_Order_state": "Negative_Third",
-                "Debate_Random_state": "Negative_Third"
+            "style":"professional",
+            "roles":{
+            "Negative_Task_Allocation_state": "Negative_Third",
+            "Debate_Order_state":"Negative_Third",
+            "Debate_Random_state":"Negative_Third"
             }
         },
         "David": {
-            "style": "professional",
-            "roles": {
-                "Debate_Order_state": "Debate_Judge",
-                "Debate_Random_state": "Debate_Judge",
-                "Judge_state": "Debate_Judge"
+            "style":"professional",
+            "roles":{
+            "Debate_Order_state": "Debate_Judge",
+            "Debate_Random_state":"Debate_Judge",
+            "Judge_state":"Debate_Judge"
             }
         }
     },
@@ -86,30 +91,30 @@
             "0": "Affirmative_Task_Allocation_state",
             "1": "Negative_Task_Allocation_state"
         },
-        "Negative_Task_Allocation_state": {
-            "0": "Negative_Task_Allocation_state",
-            "1": "Debate_Order_state"
+        "Negative_Task_Allocation_state":{
+            "0":"Negative_Task_Allocation_state",
+            "1":"Debate_Order_state"
         },
-        "Debate_Order_state": {
-            "0": "Debate_Order_state",
-            "1": "Debate_Random_state"
+        "Debate_Order_state":{
+            "0":"Debate_Order_state",
+            "1":"Debate_Random_state"
         },
-        "Debate_Random_state": {
-            "0": "Debate_Random_state",
-            "1": "Judge_state"
+        "Debate_Random_state":{
+            "0":"Debate_Random_state",
+            "1":"Judge_state"
         },
-        "Judge_state": {
-            "0": "end_state"
+        "Judge_state":{
+            "0":"end_state"
         }
     },
     "states": {
-        "end_state": {
-            "agent_states": {}
+        "end_state":{
+            "agent_states":{}
         },
         "Affirmative_Task_Allocation_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums": 12,
+                "max_chat_nums" : 12,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
@@ -123,6 +128,12 @@
                 "Affirmative_Second",
                 "Affirmative_Third"
             ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Affirmative_Task_Allocation_state"
+            },
             "agent_states": {
                 "Affirmative_First": {
                     "style": {
@@ -173,13 +184,13 @@
         "Negative_Task_Allocation_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums": 12,
+                "max_chat_nums" : 12,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
             "begin_role": "Negative_Debate_organizer",
-            "begin_query": "The debate topic is as follows: \n<debate topic>\nShould AI Replace Humans in Creative Fields?? Affirmative viewpoint: AI should replace humans in creative fields because it can produce art and content efficiently, reduce costs, and eliminate human bias. negative viewpoint: AI should not replace humans in creative fields as it lacks true creativity, emotions, and the ability to understand complex human experiences.\n<debate topic>\n, now , begin to discuss!",
+            "begin_query":"The debate topic is as follows: \n<debate topic>\nShould AI Replace Humans in Creative Fields?? Affirmative viewpoint: AI should replace humans in creative fields because it can produce art and content efficiently, reduce costs, and eliminate human bias. negative viewpoint: AI should not replace humans in creative fields as it lacks true creativity, emotions, and the ability to understand complex human experiences.\n<debate topic>\n, now , begin to discuss!",
             "environment_prompt": "It is currently the debate stage, where the Negative side is assigning tasks.The debate organizer sets the stage for the competition, explaining the debate process and rules. Debaters are called upon to allocate tasks for each speech, ensuring an equal distribution of responsibilities.Negative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.",
             "roles": [
                 "Negative_Debate_organizer",
@@ -187,6 +198,12 @@
                 "Negative_Second",
                 "Negative_Third"
             ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Negative_Task_Allocation_state"
+            },
             "agent_states": {
                 "Negative_First": {
                     "style": {
@@ -241,7 +258,7 @@
         "Debate_Order_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums": 7,
+                "max_chat_nums" : 7,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
@@ -255,9 +272,15 @@
                 "Affirmative_Third",
                 "Negative_Third"
             ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Debate_state"
+            },
             "begin_role": "Debate_Judge",
-            "begin_query": "Now please proceed with your sequential debate according to your chosen topic.",
-            "environment_prompt": "Now that we've started the sequential debating phase, each debater needs to present their own viewpoints.",
+            "begin_query":"Now please proceed with your sequential debate according to your chosen topic.",
+            "environment_prompt" : "Now that we've started the sequential debating phase, each debater needs to present their own viewpoints.",
             "agent_states": {
                 "Affirmative_First": {
                     "style": {
@@ -348,7 +371,7 @@
         "Debate_Random_state": {
             "controller": {
                 "controller_type": "rule",
-                "max_chat_nums": 12,
+                "max_chat_nums" : 12,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end",
@@ -365,9 +388,15 @@
                 "Affirmative_Third",
                 "Negative_Third"
             ],
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Debate_Random_state"
+            },
             "begin_role": "Debate_Judge",
-            "begin_query": "Now, please engage in a free debate based on your chosen topic.",
-            "environment_prompt": "We are now in the open debate phase, where each debater has the freedom to speak as they wish.",
+            "begin_query":"Now, please engage in a free debate based on your chosen topic.",
+            "environment_prompt" : "We are now in the open debate phase, where each debater has the freedom to speak as they wish.",
             "agent_states": {
                 "Affirmative_First": {
                     "style": {
@@ -455,11 +484,17 @@
                 }
             }
         },
-        "Judge_state": {
+        "Judge_state":{
             "roles": [
                 "Debate_Judge"
             ],
-            "agent_states": {
+            "LLM_type": "OpenAI",
+            "LLM": {
+                "temperature": 1.0,
+                "model": "gpt-3.5-turbo-16k-0613",
+                "log_path": "logs/Judge_state"
+            },
+            "agent_states":{
                 "Debate_Judge": {
                     "style": {
                         "role": "Debate Judge",
@@ -476,6 +511,7 @@
                     }
                 }
             }
+
         }
     }
 }

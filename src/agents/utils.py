@@ -53,7 +53,7 @@ def get_embedding(sentence):
         embed = embedding_model.create(
         model=embed_model_name,
         input=sentence
-    )
+    )   
         embed = embed["data"][0]["embedding"]
         embed = torch.tensor(embed,dtype=torch.float32)
     else:

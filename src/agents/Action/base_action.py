@@ -39,6 +39,7 @@ class Action:
                 # for software
         if "<title>" in all:
             title = extract(all,"title")
+            title = "main.py" if title == "" else title
             python = extract(all,"python")
             os.makedirs("output_code", exist_ok=True)
             file_name = "output_code/" + title

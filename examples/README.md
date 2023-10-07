@@ -69,7 +69,7 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    ```
 
 
- ### 3. Muti Agent🤖️🤖️   
+ ### 3. Multi Agent🤖️🤖️   
 - [x] Option 1.  Run on your terminal
       
 	Modify the config.json
@@ -87,13 +87,13 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
 
     ```bash
     cd examples
-    python run.py --agent Muti_Agent/{target_agent}/config.json
+    python run.py --agent Multi_Agent/{target_agent}/config.json
     ```
 
 - [x] Option 2. Run on gradio
 	
     ```bash
-   cd examples/Muti_Agent/{target_agent}
+   cd examples/Multi_Agent/{target_agent}
    # `run_gradio.py` depends on `gradio_backend.py`.
    python run_gradio.py
    ```
@@ -107,14 +107,14 @@ Note that if you want to use `WebSearchComponent`, you also need set the config!
    ```
    And then
     ```bash
-   cd examples/Muti_Agent/novel
+   cd examples/Multi_Agent/novel
    python run_gradio.py
    ```
    
 - [ ] Option 3. Run on fast api
     ```bash
    cd examples
-   python run_backend.py --agent Muti_Agent/{target_agent}/config.json
+   python run_backend.py --agent Multi_Agent/{target_agent}/config.json
    ```
 
  ### 4. Start with your own Agent🤖️🤖️🤖️  
