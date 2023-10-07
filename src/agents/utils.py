@@ -50,8 +50,6 @@ def get_embedding(sentence):
         model=embed_model_name,
         input=sentence
     )   
-        print(embed)
-        print(type(embed))
         embed = embed["data"][0]["embedding"]
         embed = torch.tensor(embed,dtype=torch.float32)
     else:
