@@ -2,8 +2,9 @@
 # "environment_type" : "competive" : different states not share the memory; "cooperative":diffrent states share the memory
 SOP = {
     "config": {
-        "API_KEY": "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",
-        "PROXY": "http://127.0.0.1:7000",
+        "API_KEY": "API_KEY",
+        "PROXY": "PROXY",
+        "API_BASE":"API_BASE",
         "MAX_CHAT_HISTORY": "5",
         "User_Names": '["User"]',
     },
