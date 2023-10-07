@@ -1,6 +1,6 @@
 # default finish_state_name is "end_state"
 # "environment_type" : "competive" : different states not share the memory; "cooperative":diffrent states share the memory
-SOP = {
+sop = {
     "config": {
         "API_KEY": "API_KEY",
         "PROXY": "PROXY",
@@ -21,6 +21,7 @@ from gen_utils import *
 import json
 from agents.utils import get_embedding,cos_sim
 import torch
+import os
 
 design_assistant = "An assistant that can help users create content such as articles, blogs, advertising copy, etc"
 tutor = "A tutor who provides personalized learning resources for students to help them understand complex concepts and problems"
@@ -38,6 +39,20 @@ embeddings = torch.cat([design_assistant,tutor,online_medical_consultant,online_
 
 
 if __name__ == "__main__":
+    API_KEY = "API_KEY"
+    PROXY = "PROXY"
+    API_BASE = "API_BASE"
+
+    assert API_KEY!="API_KEY" and PROXY!="PROXY" and API_BASE!= "API_BASE","Please fill in the API_ KEY, PROXY, and API_ BASE"
+    os.environ["API_KEY"] = API_KEY
+    os.environ["PROXY"] = PROXY
+    os.environ["API_BASE"] = API_BASE
+    sop["config"]["API_KEY"] = API_KEY
+    sop["config"]["PROXY"] = PROXY
+    sop["config"]["API_BASE"] = API_BASE
+
+
+
     target = """a shopping assistant help customer to buy the commodity"""
     target_tensor = get_embedding(target)
     
@@ -58,10 +73,10 @@ if __name__ == "__main__":
     for state_name,state_dict in states.items():
         state_dict["begin_role"] = list(agents.keys())[0]
         state_dict["begin_query"] = "Now that we are in the **{}**, I'm glad to offer you assistance.".format(state_name)
-    SOP["root"] = root
-    SOP["relations"] = relations
-    SOP["agents"] = agents
-    SOP["states"] = states
+    sop["root"] = root
+    sop["relations"] = relations
+    sop["agents"] = agents
+    sop["states"] = states
     # 将字典写入JSON文件
     with open("gen.json", "w") as json_file:
-        json.dump(SOP, json_file)
+        json.dump(sop, json_file)
