@@ -1,7 +1,7 @@
 import re
 from agents.LLM.base_LLM import *
 from agents.utils import extract
-from muti_prompts import *
+from multi_prompts import *
 
 llm = OpenAILLM()
 # design state
