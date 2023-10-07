@@ -79,13 +79,9 @@ class DemonstrationComponent(PromptComponent):
         super().__init__()
         self.demonstrations = demonstrations
 
-    def add_demonstration(self, demonstration):
-        self.demonstrations.append(demonstration)
 
     def get_prompt(self, agent):
-        prompt = "Here are demonstrations you can refer to:\n"
-        for demonstration in self.demonstrations:
-            prompt += "\n" + demonstration
+        prompt = f"Here are demonstrations you can refer to:\n{self.demonstrations}"
         return prompt
 
 

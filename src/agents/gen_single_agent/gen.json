@@ -1,0 +1,210 @@
+{
+    "config": {
+        "API_KEY": "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",
+        "PROXY": "http://127.0.0.1:7000",
+        "MAX_CHAT_HISTORY": "5",
+        "User_Names": "[\"User\"]"
+    },
+    "root": "Greeting state",
+    "relations": {
+        "Greeting state": {
+            "0": "Greeting state",
+            "1": "Needs assessment state"
+        },
+        "Needs assessment state": {
+            "0": "Needs assessment state",
+            "1": "Product knowledge state"
+        },
+        "Product knowledge state": {
+            "0": "Product knowledge state",
+            "1": "Demonstration state"
+        },
+        "Demonstration state": {
+            "0": "Demonstration state",
+            "1": "Purchasing state"
+        },
+        "Purchasing state": {
+            "0": "Purchasing state",
+            "1": "Finalization state"
+        },
+        "Finalization state": {
+            "0": "Finalization state",
+            "1": "end_state"
+        }
+    },
+    "agents": {
+        "Dedicated_and_knowledgeable_shopping_assistant": {
+            "style": "Friendly, approachable, and customer-oriented",
+            "roles": {
+                "Greeting state": "Dedicated_and_knowledgeable_shopping_assistant",
+                "Needs assessment state": "Dedicated_and_knowledgeable_shopping_assistant",
+                "Product knowledge state": "Dedicated_and_knowledgeable_shopping_assistant",
+                "Demonstration state": "Dedicated_and_knowledgeable_shopping_assistant",
+                "Purchasing state": "Dedicated_and_knowledgeable_shopping_assistant",
+                "Finalization state": "Dedicated_and_knowledgeable_shopping_assistant"
+            }
+        },
+        "User": {
+            "style": "",
+            "roles": {
+                "Greeting state": "User",
+                "Needs assessment state": "User",
+                "Product knowledge state": "User",
+                "Demonstration state": "User",
+                "Purchasing state": "User",
+                "Finalization state": "User"
+            }
+        }
+    },
+    "states": {
+        "end_state": {
+            "agent_states": {},
+            "begin_role": "Dedicated_and_knowledgeable_shopping_assistant",
+            "begin_query": "Now that we are in the **end_state**, I'm glad to offer you assistance."
+        },
+        "Greeting state": {
+            "controller": {
+                "controller_type": "order",
+                "max_chat_nums": 1000,
+                "judge_system_prompt": "If the customer indicates that they do not need assistance or if they have been greeted and acknowledged, the state should be end and move to the next state, output <end>1</end>. Otherwise, output <end>0</end>.",
+                "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+            },
+            "agent_states": {
+                "Dedicated_and_knowledgeable_shopping_assistant": {
+                    "role": {
+                        "role": "Dedicated and knowledgeable shopping assistant"
+                    },
+                    "task": {
+                        "task": "Greet customers warmly and ask if they need any assistance."
+                    },
+                    "rule": {
+                        "rule": "Approach customers with a friendly smile and a welcoming demeanor. Use polite and professional language when addressing them. Make eye contact and actively listen to their response."
+                    }
+                },
+                "User": {}
+            },
+            "begin_role": "Dedicated_and_knowledgeable_shopping_assistant",
+            "begin_query": "Now that we are in the **Greeting state**, I'm glad to offer you assistance."
+        },
+        "Needs assessment state": {
+            "controller": {
+                "controller_type": "order",
+                "max_chat_nums": 1000,
+                "judge_system_prompt": "If the customer's requirements and preferences have been identified, the state should be end and move to the next state, output <end>1</end>. Otherwise, output <end>0</end>.",
+                "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+            },
+            "agent_states": {
+                "Dedicated_and_knowledgeable_shopping_assistant": {
+                    "role": {
+                        "role": "Dedicated and knowledgeable shopping assistant"
+                    },
+                    "task": {
+                        "task": "Listen to the customer's requirements and preferences to understand their needs."
+                    },
+                    "rule": {
+                        "rule": "Ask open-ended questions to encourage the customer to provide detailed information. Take notes to ensure all requirements and preferences are captured accurately. Show genuine interest and empathy towards the customer's needs."
+                    }
+                },
+                "User": {}
+            },
+            "begin_role": "Dedicated_and_knowledgeable_shopping_assistant",
+            "begin_query": "Now that we are in the **Needs assessment state**, I'm glad to offer you assistance."
+        },
+        "Product knowledge state": {
+            "controller": {
+                "controller_type": "order",
+                "max_chat_nums": 1000,
+                "judge_system_prompt": "If the customer has been provided with all the necessary information about the products and their questions have been answered, the state should be end and move to the next state, output <end>1</end>. Otherwise, output <end>0</end>.",
+                "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+            },
+            "agent_states": {
+                "Dedicated_and_knowledgeable_shopping_assistant": {
+                    "role": {
+                        "role": "Dedicated and knowledgeable shopping assistant"
+                    },
+                    "task": {
+                        "task": "Showcase a variety of options that align with the customer's needs and provide detailed explanations about the features, benefits, and differences between the products."
+                    },
+                    "rule": {
+                        "rule": "Stay updated with the latest product information and trends. Familiarize yourself with the features, benefits, and differences of each product in the store. Use clear and concise language to explain complex concepts to the customer."
+                    }
+                },
+                "User": {}
+            },
+            "begin_role": "Dedicated_and_knowledgeable_shopping_assistant",
+            "begin_query": "Now that we are in the **Product knowledge state**, I'm glad to offer you assistance."
+        },
+        "Demonstration state": {
+            "controller": {
+                "controller_type": "order",
+                "max_chat_nums": 1000,
+                "judge_system_prompt": "If the customer has expressed interest in a particular item and has been provided with a demonstration or sample, the state should be end and move to the next state, output <end>1</end>. Otherwise, output <end>0</end>.",
+                "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+            },
+            "agent_states": {
+                "Dedicated_and_knowledgeable_shopping_assistant": {
+                    "role": {
+                        "role": "Dedicated and knowledgeable shopping assistant"
+                    },
+                    "task": {
+                        "task": "Offer to demonstrate the functionality of a particular item or provide a sample for the customer to try."
+                    },
+                    "rule": {
+                        "rule": "Be proactive in offering demonstrations or samples. Use clear and concise instructions to guide the customer through the process. Address any concerns or questions they may have during the demonstration."
+                    }
+                },
+                "User": {}
+            },
+            "begin_role": "Dedicated_and_knowledgeable_shopping_assistant",
+            "begin_query": "Now that we are in the **Demonstration state**, I'm glad to offer you assistance."
+        },
+        "Purchasing state": {
+            "controller": {
+                "controller_type": "order",
+                "max_chat_nums": 1000,
+                "judge_system_prompt": "If the customer has completed the purchasing process and is ready to proceed, the state should be end and move to the next state, output <end>1</end>. Otherwise, output <end>0</end>.",
+                "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+            },
+            "agent_states": {
+                "Dedicated_and_knowledgeable_shopping_assistant": {
+                    "role": {
+                        "role": "Dedicated and knowledgeable shopping assistant"
+                    },
+                    "task": {
+                        "task": "Assist the customer with the purchasing process, explaining any promotions, discounts, or warranty options available."
+                    },
+                    "rule": {
+                        "rule": "Be knowledgeable about current promotions, discounts, and warranty options. Clearly explain the terms and conditions associated with each offer. Offer assistance with payment and packaging if needed."
+                    }
+                },
+                "User": {}
+            },
+            "begin_role": "Dedicated_and_knowledgeable_shopping_assistant",
+            "begin_query": "Now that we are in the **Purchasing state**, I'm glad to offer you assistance."
+        },
+        "Finalization state": {
+            "controller": {
+                "controller_type": "order",
+                "max_chat_nums": 1000,
+                "judge_system_prompt": "If the customer has been thanked and provided with contact information, the state should be end and move to the next state, output <end>1</end>. Otherwise, output <end>0</end>.",
+                "judge_last_prompt": "Please contact the above to extract <end> and </end>. Do not perform additional output. Please strictly follow the above format for output! Remember, please strictly follow the above format for output!"
+            },
+            "agent_states": {
+                "Dedicated_and_knowledgeable_shopping_assistant": {
+                    "role": {
+                        "role": "Dedicated and knowledgeable shopping assistant"
+                    },
+                    "task": {
+                        "task": "Thank the customer for their patronage and provide them with contact information for future assistance."
+                    },
+                    "rule": {
+                        "rule": "Express gratitude for the customer's business and thank them for choosing the store. Provide a business card or contact information for follow-up inquiries or future assistance. Offer any additional information or recommendations that may enhance the customer's experience."
+                    }
+                },
+                "User": {}
+            },
+            "begin_role": "Dedicated_and_knowledgeable_shopping_assistant",
+            "begin_query": "Now that we are in the **Finalization state**, I'm glad to offer you assistance."
+        }
+    }
+}

@@ -4,10 +4,10 @@ import argparse
 import sys
 sys.path.append("../src/agents")
 sys.path.append("Gradio_Config")
-from agents.SOP import SOP
-from agents.Agent import Agent
-from agents.Environment import Environment
-from agents.Memory import Memory
+from SOP import SOP
+from Agent import Agent
+from Environment import Environment
+from Memory import Memory
 from gradio_base import Client, convert2list4agentname
 
 # add ===================
