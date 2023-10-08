@@ -20,12 +20,14 @@ One major difference between **Agents** and other existing frameworks for langua
 
 ## 📢 Updates
 
-- [x] **Support LLM-based SOP generation**🎉🎉🎉🎉
-- [SOP Generation for Multi-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-multi)[on Huggingface Space]
-- [SOP Generation for Single-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-single)[on Huggingface Space]
-We recommend strongly that you can create your OWN DEMO  by clicking the three dots at the top right and selecting **Duplicate this Space** on Huggingface Space.
-- [x] 2023.9.20 Deploy Demos on Huggingface Space
-- [x] 2023.9.12 Official Release
+[x] 2023.10.7 **Support LLM-based SOP generation**🎉🎉🎉🎉
+ - [SOP Generation for Multi-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-multi)[on Huggingface Space]
+ - [SOP Generation for Single-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-single)[on Huggingface Space]
+ - We recommend strongly that you can create your OWN DEMO  by clicking the three dots at the top right and selecting **Duplicate this Space** on Huggingface Space.
+
+[x] 2023.9.20 Deploy Demos on Huggingface Space
+
+[x] 2023.9.12 Official Release
 
 ## 💡 Highlights
 
