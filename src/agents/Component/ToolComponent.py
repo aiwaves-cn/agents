@@ -92,7 +92,7 @@ class KnowledgeBaseComponent(ToolComponent):
                         break
             print(hits[0]["score"])
             score = hits[0]["score"]
-            if score < 0.5:
+            if score < 0.75:
                 return {"prompt": "No matching knowledge base"}
             else:
                 return {"prompt": "The relevant content is: " + knowledge + "\n"}

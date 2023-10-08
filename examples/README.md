@@ -185,6 +185,49 @@ class Your_LLM(LLM):
 ```
 Please note that it is essential to ensure consistency in streaming output. For instance, when 'stream=True' is set, the function should return a generator, and when 'stream=False,' it should return a string.
 
+
+ ### 6. SOP generation
+ - [x] Option 1.  Single agent🤖️
+
+#### Set  config firstly(examples/sop_generation/gen_single_agent/run.py)
+
+```python
+    API_KEY = "API_KEY" # change to your api-key,delete it if you do not need it
+    PROXY = "PROXY" # change to your proxy,delete it if you do not need it
+    API_BASE = "API_BASE" # change to your api_base,delete it if you do not need it
+    target = """a shopping assistant help customer to buy the commodity""" # change to your target
+    os.environ["API_KEY"] = API_KEY
+    os.environ["PROXY"] = PROXY
+    sop["config"]["API_KEY"] = API_KEY
+    sop["config"]["PROXY"] = PROXY
+```
+#### Run the code
+```bash
+    cd examples/sop_generation/gen_single_agent
+    python run.py
+```
+
+
+- [x] Option 2. Multi agent🤖️🤖️🤖️
+	
+#### Set  config firstly(examples/sop_generation/gen_multi_agent/run.py)
+```python
+    API_KEY = "API_KEY" # change to your api-key,delete it if you do not need it
+    PROXY = "PROXY" # change to your proxy,delete it if you do not need it
+    API_BASE = "API_BASE" # change to your api_base,delete it if you do not need it
+    target = """a shopping assistant help customer to buy the commodity""" # change to your target
+    need_coder = True # True if the scene need output code
+    os.environ["API_KEY"] = API_KEY
+    os.environ["PROXY"] = PROXY
+    sop["config"]["API_KEY"] = API_KEY
+    sop["config"]["PROXY"] = PROXY
+```
+#### Run the code
+```bash
+    cd examples/sop_generation/gen_multi_agent
+    python run.py
+```
+    
 ### 🤖️ The Agent Hub
 
 We provide an **AgentHub**, where you can search for interesting Agents shared by us or other developers, try them out or use them as the starting point to customize your own agent. We encourage you to share your customized agents to help others build their own agents more easily! You can share your customized agents by submitting PRs that adds configs and customized codes [here](https://github.com/aiwaves-cn/agents/tree/master/examples/Community_Agent). You can also send us your own config files and codes for customized agents by [email](mailto:contact@aiwaves.cn), and we will share your examples and acknowledge your contribution in future updates!
