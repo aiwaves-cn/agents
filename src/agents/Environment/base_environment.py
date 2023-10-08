@@ -146,9 +146,9 @@ class Environment:
         current_long_term_memory = self.shared_memory["long_term_memory"][current_chat_history_idx:]
         current_chat_embbedings = self.shared_memory["chat_embeddings"][current_chat_history_idx:]
             
-        if len(current_long_term_memory)>2*MAX_CHAT_HISTORY:
-            current_long_term_memory = current_long_term_memory[-2*MAX_CHAT_HISTORY+1:]
-            current_chat_embbedings = current_chat_embbedings[-2*MAX_CHAT_HISTORY+1:]
+        if len(current_long_term_memory)>MAX_CHAT_HISTORY:
+            current_long_term_memory = current_long_term_memory[-MAX_CHAT_HISTORY+1:]
+            current_chat_embbedings = current_chat_embbedings[-MAX_CHAT_HISTORY+1:]
         # relevant_memory
         query = current_long_term_memory[-1].content
         if len(current_long_term_memory)>1:
