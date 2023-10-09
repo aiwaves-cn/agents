@@ -1,6 +1,6 @@
 from .ToolComponent import ToolComponent
 import json
-from utils import flatten_dict,get_embedding,matching_category,search_with_api,limit_keys,limit_values
+from agents.utils import flatten_dict,get_embedding,matching_category,search_with_api,limit_keys,limit_values
 import os
 
 

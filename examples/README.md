@@ -7,7 +7,7 @@
     ```bash
     git clone https://github.com/aiwaves-cn/agents.git
     cd agents
-    pip install -e . 
+    pip install ai-agents
     ```
 
 - [x] Option 2.  Install via PyPI
