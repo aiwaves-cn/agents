@@ -2,8 +2,7 @@ import gradio as gr
 import os
 import sys
 import json
-sys.path.append("../src/agents")
-from utils import process_document
+from agents.utils import process_document
 
 def tool_component_visible1(component_name):
     adic = {

@@ -1,5 +1,5 @@
-from agents.Memory import Memory
-from agents.utils import extract
+from Memory import Memory
+from utils import extract
 import os
 class Action:
     """

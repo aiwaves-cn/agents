@@ -14,10 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """LLM autonoumous agent"""
-from agents.LLM.base_LLM import *
-from agents.Component import *
-from agents.Action import Action
-from agents.Prompt import *
+from LLM.base_LLM import *
+from Component import *
+from Action import Action
+from Prompt import *
 
 headers = {
     "Content-Type": "text/event-stream",
