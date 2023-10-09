@@ -31,15 +31,22 @@ import string
 import random
 import os
 import openai
+
+is_load = False
+embedding_model = None
+
 def get_embedding(sentence):
     embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "text-embedding-ada-002"
-    if embed_model_name in ["text-embedding-ada-002"]:
-        pass
-    else:
-        embedding_model = SentenceTransformer(
-                    embed_model_name, device=torch.device("cpu"),
-                    cache_folder="D:\hugface-model"
-                )
+    if not is_load:
+        is_load = True
+        if embed_model_name in ["text-embedding-ada-002"]:
+            pass
+        else:
+            embedding_model = SentenceTransformer(
+                        embed_model_name, device=torch.device("cpu"),
+                        cache_folder="D:\hugface-model"
+                    )
+            
     if embed_model_name in ["text-embedding-ada-002"]:
         openai.api_key = os.environ["API_KEY"]
         if "PROXY" in os.environ:

@@ -1,7 +1,7 @@
 from abc import abstractmethod
 import uuid
 from text2vec import semantic_search
-from agents.utils import (
+from utils import (
     get_relevant_history,
     load_knowledge_base_qa,
     load_knowledge_base_UnstructuredFile,
