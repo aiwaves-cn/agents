@@ -357,6 +357,6 @@ class DebateUI(WebUI):
 
 
 if __name__ == '__main__':
-    ui = DebateUI(client_cmd=["python3","gradio_backend.py"])
+    ui = DebateUI(client_cmd=["python","gradio_backend.py"])
     ui.construct_ui()
     ui.run(share=True)
