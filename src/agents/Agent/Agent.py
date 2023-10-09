@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """LLM autonoumous agent"""
-from LLM.base_LLM import *
+from agents.LLM.base_LLM import *
 from agents.Component import *
 from agents.Action import Action
 from agents.Prompt import *
