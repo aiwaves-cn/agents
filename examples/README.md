@@ -2,19 +2,13 @@
 
 
 ### 1. Install the package
-- [x] Option 1.  Build from source
-<br>To install using this method,you need to change 'from agents.XXX import XXX' to 'from XXX import XXX' in either run.py or run_gradio.py.
     ```bash
     git clone https://github.com/aiwaves-cn/agents.git
     cd agents
-    pip install -e . 
+    pip install ai-agents
+    pip install -r requirement.txt . 
     ```
 
-- [x] Option 2.  Install via PyPI
-<br>It is recommended to install in this way, and every code update will require reinstallation afterwards
-    ```bash
-    pip install ai-agents
-    ```
  ### 2. Single Agent🤖️   
 #### Set  config firstly(examples/Single_Agent/{target_agent}/config.json)
 ```
