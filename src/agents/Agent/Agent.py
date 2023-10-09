@@ -15,9 +15,9 @@
 # limitations under the License.
 """LLM autonoumous agent"""
 from LLM.base_LLM import *
-from Component import *
-from Action import Action
-from Prompt import *
+from agents.Component import *
+from agents.Action import Action
+from agents.Prompt import *
 
 headers = {
     "Content-Type": "text/event-stream",
@@ -219,7 +219,6 @@ class Agent:
                 if "prompt" in response and response["prompt"]:
                     last_prompt = last_prompt + "\n" + response["prompt"]
                 res_dict.update(response)
-        
         name = self.name
         query = self.environment.shared_memory["long_term_memory"][-1] if len(self.environment.shared_memory["long_term_memory"]) else ""
         last_prompt = eval(Agent_last_prompt)
