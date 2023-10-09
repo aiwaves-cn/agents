@@ -9,7 +9,7 @@ req = [x.strip() for x in req if x.strip()]
 
 setuptools.setup(
     name="ai-agents", 
-    version="0.0.1",
+    version="0.0.4",
     author="AIWaves",
     author_email="contact@aiwaves.cn",
     description="An Open-source Framework for Autonomous Language Agents",
