@@ -38,9 +38,9 @@ Call_message = "f\"Here is the chat history:\\n{chat_history_message};\\nHere is
 
 
 # Memory========================================================================================================
-Single_message = "f\"role: {role} \\n speak content : {content}; \""
+Single_message = "f\"name:{name}\\n role: {role} \\n speak content : {content}; \""
 
-Chat_total_message = "f\"<chat history>{{{chat_history}}}</chat history>\""
+Chat_total_message = "f\"{{{chat_history}}}\""
 # Memory========================================================================================================
 
 
@@ -78,6 +78,6 @@ Here is the new chat history:\\n {conversations};\\n\
 # Agent========================================================================================================
 Agent_summary_system_prompt = "f\"{summary_prompt};\\n Here is the past summary:{self.short_term_memory};\\nHere is the new chat_history:\\n{conversations};\\nPlease summary Please summarize based on the above information;\\n\""          
             
-Agent_last_prompt = "f\"{last_prompt};Please continue the conversation on behalf of {name} based on your known information;\""
-Agent_system_prompt = "f\"{system_prompt},\""
+Agent_last_prompt = "f\"{last_prompt};Please continue the conversation on behalf of {name} based on your known information;Please make your answer appear as natural and coherent as possible,try to speak differently from what others have already said.\""
+Agent_system_prompt = "f\"{system_prompt}\""
 # Agent========================================================================================================

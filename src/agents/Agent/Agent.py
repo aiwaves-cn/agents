@@ -219,7 +219,6 @@ class Agent:
                 if "prompt" in response and response["prompt"]:
                     last_prompt = last_prompt + "\n" + response["prompt"]
                 res_dict.update(response)
-        
         name = self.name
         query = self.environment.shared_memory["long_term_memory"][-1] if len(self.environment.shared_memory["long_term_memory"]) else ""
         last_prompt = eval(Agent_last_prompt)

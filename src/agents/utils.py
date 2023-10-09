@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """helper functions for an LLM autonoumous agent"""
-import csv
 import random
 import json
 import pandas
@@ -33,15 +32,21 @@ import random
 import os
 import openai
 
-embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "text-embedding-ada-002"
-if embed_model_name in ["text-embedding-ada-002"]:
-    pass
-else:
-    embedding_model = SentenceTransformer(
-                embed_model_name, device=torch.device("cpu")
-            )
+is_load = False
+embedding_model = None
 
 def get_embedding(sentence):
+    embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "text-embedding-ada-002"
+    if not is_load:
+        is_load = True
+        if embed_model_name in ["text-embedding-ada-002"]:
+            pass
+        else:
+            embedding_model = SentenceTransformer(
+                        embed_model_name, device=torch.device("cpu"),
+                        cache_folder="D:\hugface-model"
+                    )
+            
     if embed_model_name in ["text-embedding-ada-002"]:
         openai.api_key = os.environ["API_KEY"]
         if "PROXY" in os.environ:
@@ -466,7 +471,7 @@ def get_relevant_history(query,history,embeddings):
     Returns:
         list: A list of key history entries most similar to the query.
     """
-    TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 2
+    TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 0
     relevant_history = []
     query_embedding = get_embedding(query)
     hits = semantic_search(query_embedding, embeddings, top_k=min(TOP_K,embeddings.shape[0]))

@@ -62,7 +62,7 @@ class OpenAILLM(LLM):
         
         
         if active_mode:
-            system_prompt = system_prompt + "Please keep your reply as concise as possible."
+            system_prompt = system_prompt + "Please keep your reply as concise as possible.Try to control within 100 words as much as possible"
 
         messages = [{
             "role": "system",
@@ -81,7 +81,7 @@ class OpenAILLM(LLM):
 
         if last_prompt:
             if active_mode:
-                last_prompt = last_prompt + "Please keep your reply as concise as possible."
+                last_prompt = last_prompt + "Please keep your reply as concise as possible.Try to control within 100 words as much as possible"
             # messages += [{"role": "system", "content": f"{last_prompt}"}]
             messages[-1]["content"] += last_prompt
         
@@ -95,13 +95,15 @@ class OpenAILLM(LLM):
                         functions=functions,
                         function_call=function_call,
                         temperature=temperature,
+                        custom_llm_provider = "openai"
                     )
                 else:
                     response = litellm.completion(
                         model=model,
                         messages=messages,
                         temperature=temperature,
-                        stream=stream)
+                        stream=stream,
+                        custom_llm_provider = "openai")
                 break
             except Exception as e:
                 print(e)
