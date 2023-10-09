@@ -78,6 +78,6 @@ Here is the new chat history:\\n {conversations};\\n\
 # Agent========================================================================================================
 Agent_summary_system_prompt = "f\"{summary_prompt};\\n Here is the past summary:{self.short_term_memory};\\nHere is the new chat_history:\\n{conversations};\\nPlease summary Please summarize based on the above information;\\n\""          
             
-Agent_last_prompt = "f\"{last_prompt};Please continue the conversation on behalf of {name} based on your known information;\""
+Agent_last_prompt = "f\"{last_prompt};Please continue the conversation on behalf of {name} based on your known information;Attention, you are following the content in the chat history to speak. Please make your answer appear as natural and coherent as possible\""
 Agent_system_prompt = "f\"{system_prompt},\""
 # Agent========================================================================================================
