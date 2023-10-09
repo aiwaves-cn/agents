@@ -1,6 +1,6 @@
 import sys
 sys.path.append("../../Gradio_Config")
-
+sys.path.append("../../../src/agents")
 from gradio_base import UIHelper, WebUI
 import os
 from gradio_base import WebUI, UIHelper, PORT, HOST, Client
@@ -9,6 +9,7 @@ from typing import List, Tuple, Any
 import gradio as gr
 import time
 
+from utils import extract
 
 class DebateUI(WebUI):
     FORMAT = "{}\n<debate topic>\n{}\nAffirmative viewpoint:{}\nNegative viewpoint:{}\n<debate topic>{}"
@@ -19,9 +20,10 @@ class DebateUI(WebUI):
 
     @classmethod
     def extract(cls, content):
-        topic = content.split("<debate topic>")[1].split("Affirmative viewpoint:")[0]
-        positive = content.split("<debate topic>")[1].split("Affirmative viewpoint:")[1].split("negative viewpoint:")[0]
-        negative = content.split("<debate topic>")[1].split("Affirmative viewpoint:")[1].split("negative viewpoint:")[1]
+        content = extract(content,"debate topic")
+        topic = extract(content,"Theme")
+        positive = extract(content,"Affirmative viewpoint")
+        negative = extract(content,"Negative viewpoint")
         return topic.strip(), positive.strip(), negative.strip()
 
     @classmethod
@@ -355,6 +357,6 @@ class DebateUI(WebUI):
 
 
 if __name__ == '__main__':
-    ui = DebateUI(client_cmd=["python","gradio_backend.py"])
+    ui = DebateUI(client_cmd=["python3","gradio_backend.py"])
     ui.construct_ui()
     ui.run(share=True)

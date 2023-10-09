@@ -4,12 +4,13 @@ import argparse
 import sys
 sys.path.append("../../../src/agents")
 sys.path.append("../../Gradio_Config")
-from agents.SOP import SOP
-from agents.Agent import Agent
-from agents.Environment import Environment
-from agents.Memory import Memory
+from SOP import SOP
+from Agent import Agent
+from Environment import Environment
+from Memory import Memory
 from gradio_base import Client
 from run_gradio import DebateUI
+import re
 
 def process(action):
     response = action.response
@@ -98,7 +99,7 @@ def run(agents,sop,environment):
 def prepare(agents, sop, environment):
     client = Client()
     Client.send_server = client.send_message
-    content = sop.states['Affirmative_Task_Allocation_state'].begin_query
+    content = sop.states['Affirmative_Task_Allocation_state'].environment_prompt
     parse_data = DebateUI.extract(content)
     client.send_message(
         {
@@ -117,11 +118,9 @@ def prepare(agents, sop, environment):
     os.environ["API_KEY"] = client.cache["api_key"]
     if Client.cache["cosplay"] is not None:
         agents[Client.cache["cosplay"]].is_user = True
-    sop.states['Negative_Task_Allocation_state'] = sop.states['Affirmative_Task_Allocation_state'].begin_query = \
-        DebateUI.merge(
-            theme=Client.cache["theme"], positive=Client.cache["positive"], negative=Client.cache["negative"],
-            origin_content=sop.states['Affirmative_Task_Allocation_state'].begin_query
-        )
+    for state in sop.states.values():
+        new_topic = "<debate topic><Theme>{}</Theme>\n<Affirmative view>{}</Affirmative view>\n<Negative viewpoint>{}</Negative viewpoint></debate topic>"
+        state.environment_prompt = re.sub(r'<debate topic>.*?</debate topic>',new_topic,state.environment_prompt)
 
 
 if __name__ == '__main__':

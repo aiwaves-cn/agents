@@ -1,12 +1,13 @@
-{   "config":{
-    "API_KEY" : "API_KEY",
-    "PROXY" : "",
-    "API_BASE":"",
-    "MAX_CHAT_HISTORY" : "5",
-    "TOP_K" : "1",
-    "ACTIVE_MODE" : "0",
-    "GRADIO" : "0",
-    "User_Names" : "[]"
+{   
+    "config":{
+        "API_KEY": "API_KEY",
+        "PROXY": "",
+        "API_BASE": "",
+        "MAX_CHAT_HISTORY" : "5",
+        "TOP_K" : "1",
+        "ACTIVE_MODE" : "0",
+        "GRADIO" : "0",
+        "User_Names" : "[]"
 },
     "environment_type" : "competive",
     "LLM_type": "OpenAI",
@@ -16,68 +17,56 @@
         "log_path": "logs/上帝"
     },
     "agents": {
-        "John": {
-            "style":"professional",
-            "roles":{
-            "Affirmative_Task_Allocation_state": "Affirmative_Debate_organizer"
-            }
-        },
-        "Mary": {
-            "style":"professional",
+        "Harry Potter": {
+            "style":"British Accent,Kindness and Integrity,Humor,Catchphrases,follow the speaking style of Harry Potter in the original book.",
             "roles":{
             "Affirmative_Task_Allocation_state": "Affirmative_First",
             "Debate_Order_state":"Affirmative_First",
             "Debate_Random_state":"Affirmative_First"
             }
         },
-        "James": {
-            "style":"professional",
+        "Luna Lovegood": {
+            "style":"Whimsical, dreamy, and serene.follow the speaking style of Luna Lovegood in the original book.",
             "roles":{
             "Affirmative_Task_Allocation_state": "Affirmative_Second",
             "Debate_Order_state":"Affirmative_Second",
             "Debate_Random_state":"Affirmative_Second"
             }
         },
-        "Jennifer": {
-            "style":"professional",
+        "Neville Longbottom": {
+            "style":" British, stammering at times, brave.follow the speaking style of Neville Longbottom in the original book.",
             "roles":{
             "Affirmative_Task_Allocation_state": "Affirmative_Third",
             "Debate_Order_state":"Affirmative_Third",
             "Debate_Random_state":"Affirmative_Third"
             }
         },
-        "Michael": {
-            "style":"professional",
-            "roles":{
-            "Negative_Task_Allocation_state": "Negative_Debate_organizer"
-            }
-        },
-        "Emily": {
-            "style":"professional",
+        "Ron Weasley": {
+            "style":"British, colloquial, a bit sarcastic. brave.follow the speaking style of Ron Weasley in the original book.",
             "roles":{
             "Negative_Task_Allocation_state": "Negative_First",
             "Debate_Order_state":"Negative_First",
             "Debate_Random_state":"Negative_First"
             }
         },
-        "William": {
-            "style":"professional",
+        "Ginny Weasley": {
+            "style":"British, strong-willed, direct.follow the speaking style of Ginny Weasley in the original book.",
             "roles":{
             "Negative_Task_Allocation_state": "Negative_Second",
             "Debate_Order_state":"Negative_Second",
             "Debate_Random_state":"Negative_Second"
             }
         },
-        "Sarah": {
-            "style":"professional",
+        "Albus Dumbledore": {
+            "style":"British, wise, calm, enigmatic.follow the speaking style of Albus Dumbledore in the original book.",
             "roles":{
             "Negative_Task_Allocation_state": "Negative_Third",
             "Debate_Order_state":"Negative_Third",
             "Debate_Random_state":"Negative_Third"
             }
         },
-        "David": {
-            "style":"professional",
+        "J.K.Rowling": {
+            "style":"British, articulate, descriptive.",
             "roles":{
             "Debate_Order_state": "Debate_Judge",
             "Debate_Random_state":"Debate_Judge",
@@ -114,16 +103,15 @@
         "Affirmative_Task_Allocation_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums" : 12,
+                "max_chat_nums" : 7,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "begin_role": "Affirmative_Debate_organizer",
-            "begin_query": "The debate topic is as follows: \n<debate topic>\nShould AI Replace Humans in Creative Fields?? Affirmative viewpoint: AI should replace humans in creative fields because it can produce art and content efficiently, reduce costs, and eliminate human bias. negative viewpoint: AI should not replace humans in creative fields as it lacks true creativity, emotions, and the ability to understand complex human experiences.\n<debate topic>\n, now , begin to discuss!",
-            "environment_prompt": "It is currently the debate stage, where the positive side is assigning tasks.Affirmative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.",
+            "begin_role": "Affirmative_First",
+            "begin_query": "How can we support our viewpoint?",
+            "environment_prompt": "It is currently the debate stage, where the positive side is assigning tasks.\nThe debate topic is as follows: \n<debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
             "roles": [
-                "Affirmative_Debate_organizer",
                 "Affirmative_First",
                 "Affirmative_Second",
                 "Affirmative_Third"
@@ -143,40 +131,29 @@
                         "task": "1.Present arguments and main points.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
                     },
                     "rule": {
-                        "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
+                        "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.6.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Affirmative_Second": {
                     "style": {
-                        "role": "Compelling Evidence Presenter"
+                        "role": "Compelling Evidence Presenter for the Affirmative"
                     },
                     "task": {
                         "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
                     },
                     "rule": {
-                        "rule": "1.Elaborate on the points raised by the First Affirmative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
+                        "rule": "1.Elaborate on the points raised by the First Affirmative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.6.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Affirmative_Third": {
                     "style": {
-                        "role": "Counterpoint Master"
+                        "role": "Counterpoint Master for the Affirmative"
                     },
                     "task": {
-                        "task": "1.Counter negative arguments, summarize affirmative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
+                        "task": "1.Summarize affirmative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
                     },
                     "rule": {
-                        "rule": "1.Counter negative arguments by identifying logical flaws or weaknesses. Highlight the advantages of the affirmative stance, emphasize points already presented, and deliver a concise yet strong summary of the affirmative position.\n2.Exchange ideas on how to structure counterarguments effectively. Emphasize the importance of maintaining a respectful tone while refuting negative arguments.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
-                    }
-                },
-                "Affirmative_Debate_organizer": {
-                    "style": {
-                        "role": "Debate Organizer"
-                    },
-                    "task": {
-                        "task": "1.Manage debate proceedings and provide suggestions to help improve their arguments.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
-                    },
-                    "rule": {
-                        "rule": "1.Introduce the topic and rules before the debate starts, ensure each speaker adheres to their allotted time. Guide the questioning and answer phase, prevent excessive arguing. Summarize the debate outcome, providing a clear conclusion for judges and the audience.\n2.Brainstorm ways to facilitate smooth transitions between speakers and manage the flow of the debate. Discuss techniques for managing heated exchanges and encouraging respectful discourse.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
+                        "rule": "1.Highlight the advantages of the affirmative stance, emphasize points already presented, and deliver a concise yet strong summary of the affirmative position.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.6.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 }
             }
@@ -184,16 +161,15 @@
         "Negative_Task_Allocation_state": {
             "controller": {
                 "controller_type": "order",
-                "max_chat_nums" : 12,
+                "max_chat_nums" : 7,
                 "judge_system_prompt": "",
                 "judge_last_prompt": "",
                 "judge_extract_words": "end"
             },
-            "begin_role": "Negative_Debate_organizer",
-            "begin_query":"The debate topic is as follows: \n<debate topic>\nShould AI Replace Humans in Creative Fields?? Affirmative viewpoint: AI should replace humans in creative fields because it can produce art and content efficiently, reduce costs, and eliminate human bias. negative viewpoint: AI should not replace humans in creative fields as it lacks true creativity, emotions, and the ability to understand complex human experiences.\n<debate topic>\n, now , begin to discuss!",
-            "environment_prompt": "It is currently the debate stage, where the Negative side is assigning tasks.The debate organizer sets the stage for the competition, explaining the debate process and rules. Debaters are called upon to allocate tasks for each speech, ensuring an equal distribution of responsibilities.Negative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.",
+            "begin_role": "Negative_First",
+            "begin_query": "How can we support our viewpoint?!",
+            "environment_prompt": "It is currently the debate stage, where the Negative side is assigning tasks.Debaters are called upon to allocate tasks for each speech, ensuring an equal distribution of responsibilities.Negative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.\nThe debate topic is as follows: \n<debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
             "roles": [
-                "Negative_Debate_organizer",
                 "Negative_First",
                 "Negative_Second",
                 "Negative_Third"
@@ -214,7 +190,7 @@
                         "task": "1.Present arguments and main points.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
                     },
                     "rule": {
-                        "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
+                        "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.6.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Negative_Second": {
@@ -226,7 +202,7 @@
                         "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n\n3.Please try to focus the discussion around the topic."
                     },
                     "rule": {
-                        "rule": "1.Elaborate on the points raised by the First Negative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n\n4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
+                        "rule": "1.Elaborate on the points raised by the First Negative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.6.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Negative_Third": {
@@ -235,22 +211,10 @@
                         "style": "professional"
                     },
                     "task": {
-                        "task": "1.Counter affirmative arguments, summarize Negative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
+                        "task": "1.Summarize Negative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
                     },
                     "rule": {
-                        "rule": "1.Counter affirmative arguments by identifying logical flaws or weaknesses. Highlight the advantages of the Negative stance, emphasize points already presented, and deliver a concise yet strong summary of the Negative position.\n2.Exchange ideas on how to structure counterarguments effectively. Emphasize the importance of maintaining a respectful tone while refuting negative arguments.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
-                    }
-                },
-                "Negative_Debate_organizer": {
-                    "style": {
-                        "role": "Debate Organizer for the Negative",
-                        "style": "professional"
-                    },
-                    "task": {
-                        "task": "1.Manage debate proceedings and provide suggestions to help improve their arguments.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
-                    },
-                    "rule": {
-                        "rule": "1.Introduce the topic and rules before the debate starts, ensure each speaker adheres to their allotted time. Guide the questioning and answer phase, prevent excessive arguing. Summarize the debate outcome, providing a clear conclusion for judges and the audience.\n2.Brainstorm ways to facilitate smooth transitions between speakers and manage the flow of the debate. Discuss techniques for managing heated exchanges and encouraging respectful discourse.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n4.Actively discuss and express opinions with others and  assist others in improving their arguments And actively identify flaws in other people's arguments as well. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks."
+                        "rule": "1.Highlight the advantages of the Negative stance, emphasize points already presented, and deliver a concise yet strong summary of the Negative position.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.6.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 }
             }
@@ -280,7 +244,7 @@
             },
             "begin_role": "Debate_Judge",
             "begin_query":"Now please proceed with your sequential debate according to your chosen topic.",
-            "environment_prompt" : "Now that we've started the sequential debating phase, each debater needs to present their own viewpoints.",
+            "environment_prompt" : "Now that we've started the sequential debating phase, each debater needs to present their own viewpoints.\nThe debate topic is as follows: \n<debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
             "agent_states": {
                 "Affirmative_First": {
                     "style": {
@@ -291,7 +255,7 @@
                         "task": "Deliver the first speech for the affirmative side, elaborating on the main arguments and providing additional evidence.\n"
                     },
                     "rule": {
-                        "rule": "Expand on the affirmative points from the previous speech, address any challenges raised by the negative side, and present solid evidence to support your claims."
+                        "rule": "Expand on the affirmative points from the previous speech, address any challenges raised by the negative side, and present solid evidence to support your claims.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Negative_First": {
@@ -303,7 +267,7 @@
                         "task": "Deliver the first speech for the negative side, countering the affirmative arguments and presenting your own points with supporting evidence.\n"
                     },
                     "rule": {
-                        "rule": "Effectively counter the affirmative arguments made in the first speech, present well-reasoned arguments for the negative side, and provide strong evidence to back your stance."
+                        "rule": "Effectively counter the affirmative arguments made in the first speech, present well-reasoned arguments for the negative side, and provide strong evidence to back your stance.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Affirmative_Second": {
@@ -315,7 +279,7 @@
                         "task": "Deliver the second speech for the affirmative side, further strengthening the affirmative arguments and addressing any challenges posed by the negative side.\n"
                     },
                     "rule": {
-                        "rule": "Build upon the affirmative case, respond to the negative's counterarguments, and reinforce your points with compelling evidence.\n"
+                        "rule": "Build upon the affirmative case, respond to the negative's counterarguments, and reinforce your points with compelling evidence.Try to follow the tone of the original Harry Potter book as much as possible\n"
                     }
                 },
                 "Negative_Second": {
@@ -327,7 +291,7 @@
                         "task": "Deliver the second speech for the negative side, further countering the affirmative arguments and providing additional evidence to support your stance.\n"
                     },
                     "rule": {
-                        "rule": "Continue to challenge the affirmative side's points, present new arguments or counterarguments, and substantiate your position with strong evidence.\n"
+                        "rule": "Continue to challenge the affirmative side's points, present new arguments or counterarguments, and substantiate your position with strong evidence.Try to follow the tone of the original Harry Potter book as much as possible\n"
                     }
                 },
                 "Affirmative_Third": {
@@ -339,7 +303,7 @@
                         "task": "Deliver the third speech for the affirmative side, summarizing the key points and providing a persuasive conclusion.\n"
                     },
                     "rule": {
-                        "rule": "Summarize the affirmative case, reinforce the main arguments, respond to the negative side's challenges, and make a strong closing statement.\n"
+                        "rule": "Summarize the affirmative case, reinforce the main arguments, respond to the negative side's challenges, and make a strong closing statement.Try to follow the tone of the original Harry Potter book as much as possible\n"
                     }
                 },
                 "Negative_Third": {
@@ -351,7 +315,7 @@
                         "task": "Deliver the third speech for the negative side, summarizing the key points and providing a persuasive conclusion.\n"
                     },
                     "rule": {
-                        "rule": "Summarize the negative case, highlight the main counterarguments, respond to the affirmative side's points, and deliver a compelling closing statement.\n"
+                        "rule": "Summarize the negative case, highlight the main counterarguments, respond to the affirmative side's points, and deliver a compelling closing statement.Try to follow the tone of the original Harry Potter book as much as possible\n"
                     }
                 },
                 "Debate_Judge": {
@@ -363,7 +327,7 @@
                         "task": "Evaluate the quality of the debate presentations and arguments made by both sides.\n"
                     },
                     "rule": {
-                        "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.\n"
+                        "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.Try to follow the tone of the original Harry Potter book as much as possible\n"
                     }
                 }
             }
@@ -396,7 +360,7 @@
             },
             "begin_role": "Debate_Judge",
             "begin_query":"Now, please engage in a free debate based on your chosen topic.",
-            "environment_prompt" : "We are now in the open debate phase, where each debater has the freedom to speak as they wish.",
+            "environment_prompt" : "We are now in the open debate phase, where each debater has the freedom to speak as they wish.\nThe debate topic is as follows: <debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
             "agent_states": {
                 "Affirmative_First": {
                     "style": {
@@ -407,7 +371,7 @@
                         "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
                     },
                     "rule": {
-                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate."
+                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Negative_First": {
@@ -419,7 +383,7 @@
                         "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
                     },
                     "rule": {
-                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate."
+                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Affirmative_Second": {
@@ -431,7 +395,7 @@
                         "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
                     },
                     "rule": {
-                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate."
+                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Negative_Second": {
@@ -443,7 +407,7 @@
                         "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
                     },
                     "rule": {
-                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate."
+                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Affirmative_Third": {
@@ -455,7 +419,7 @@
                         "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
                     },
                     "rule": {
-                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate."
+                        "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Negative_Third": {
@@ -467,7 +431,7 @@
                         "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
                     },
                     "rule": {
-                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate."
+                        "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible"
                     }
                 },
                 "Debate_Judge": {
@@ -479,7 +443,7 @@
                         "task": "Evaluate the quality of the debate presentations and arguments made by both sides.\n"
                     },
                     "rule": {
-                        "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.\n"
+                        "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.Try to follow the tone of the original Harry Potter book as much as possible\n"
                     }
                 }
             }
@@ -489,6 +453,7 @@
                 "Debate_Judge"
             ],
             "LLM_type": "OpenAI",
+            "environment_prompt":"\nThe debate topic is as follows: <debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n",
             "LLM": {
                 "temperature": 1.0,
                 "model": "gpt-3.5-turbo-16k-0613",
