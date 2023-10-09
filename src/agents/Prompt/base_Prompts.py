@@ -38,9 +38,9 @@ Call_message = "f\"Here is the chat history:\\n{chat_history_message};\\nHere is
 
 
 # Memory========================================================================================================
-Single_message = "f\"role: {role} \\n speak content : {content}; \""
+Single_message = "f\"name:{name}\\n role: {role} \\n speak content : {content}; \""
 
-Chat_total_message = "f\"<chat history>{{{chat_history}}}</chat history>\""
+Chat_total_message = "f\"{{{chat_history}}}\""
 # Memory========================================================================================================
 
 

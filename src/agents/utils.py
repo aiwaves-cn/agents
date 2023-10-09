@@ -466,7 +466,7 @@ def get_relevant_history(query,history,embeddings):
     Returns:
         list: A list of key history entries most similar to the query.
     """
-    TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 2
+    TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 0
     relevant_history = []
     query_embedding = get_embedding(query)
     hits = semantic_search(query_embedding, embeddings, top_k=min(TOP_K,embeddings.shape[0]))

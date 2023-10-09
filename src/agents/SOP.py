@@ -243,7 +243,7 @@ class SOP:
         if self.current_state.is_begin:
             agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
             agent = agents[agent_name]
-            environment.current_chat_history_idx = len(environment.shared_memory["long_term_memory"])-1
+            environment.current_chat_history_idx = len(environment.shared_memory["long_term_memory"])
             return self.current_state,agent
     
     
@@ -276,7 +276,7 @@ class SOP:
         # 如果是首次进入该节点且有开场白，则直接分配给开场角色
         # If it is the first time to enter the state and there is a begin query, it will be directly assigned to the begin role.
         if self.current_state.is_begin and self.current_state.begin_role:
-            environment.current_chat_history_idx = len(environment.shared_memory["long_term_memory"])-1
+            environment.current_chat_history_idx = len(environment.shared_memory["long_term_memory"])
             agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
             agent = agents[agent_name]
             return self.current_state,agent
