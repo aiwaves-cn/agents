@@ -43,6 +43,9 @@ setuptools.setup(
         'text2vec',
         'torch',
         'tqdm',
-        'uvicorn'
+        'uvicorn',
+        'litellm',
+        'serpapi',
+        'google-search-results'
     ]
 )
