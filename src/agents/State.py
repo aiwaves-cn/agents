@@ -1,4 +1,4 @@
-from Component import *
+from agents.Component import *
 
 
 class State:

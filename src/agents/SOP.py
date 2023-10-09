@@ -15,11 +15,11 @@
 # limitations under the License.
 """standard operation procedure of an LLM Autonomous agent"""
 import random
-from LLM.base_LLM import *
-from State import State
-from utils import extract, get_relevant_history
-from Memory import Memory
-from Prompt import *
+from agents.LLM.base_LLM import *
+from agents.State import State
+from agents.utils import extract, get_relevant_history
+from agents.Memory import Memory
+from agents.Prompt import *
 import json
 import os
 
@@ -61,6 +61,9 @@ class SOP:
         for key,value in config["config"].items():
             if value!="":
                 os.environ[key] = value
+        if "PROXY" in config["config"]:
+            os.environ['HTTP_PROXY'] = config["config"]["PROXY"]
+            os.environ['HTTPS_PROXY'] = config["config"]["PROXY"]
         sop = SOP(**config)
         return sop
 
@@ -241,6 +244,7 @@ class SOP:
         # If it is the first time to enter this state
         
         if self.current_state.is_begin:
+            environment.current_chat_history_idx = len(environment.shared_memory["long_term_memory"])
             agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
             agent = agents[agent_name]
             return self.current_state,agent
@@ -275,6 +279,7 @@ class SOP:
         # 如果是首次进入该节点且有开场白，则直接分配给开场角色
         # If it is the first time to enter the state and there is a begin query, it will be directly assigned to the begin role.
         if self.current_state.is_begin and self.current_state.begin_role:
+            environment.current_chat_history_idx = len(environment.shared_memory["long_term_memory"])
             agent_name = self.roles_to_names[self.current_state.name][self.current_state.begin_role]
             agent = agents[agent_name]
             return self.current_state,agent

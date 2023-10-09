@@ -8,7 +8,24 @@ from gradio_config import GradioConfig as gc
 from typing import List, Tuple, Any
 import gradio as gr
 import time
+def get_content_between_a_b(start_tag, end_tag, text):
+    extracted_text = ""
+    start_index = text.find(start_tag)
+    while start_index != -1:
+        end_index = text.find(end_tag, start_index + len(start_tag))
+        if end_index != -1:
+            extracted_text += text[start_index +
+                                   len(start_tag):end_index] + " "
+            start_index = text.find(start_tag, end_index + len(end_tag))
+        else:
+            break
 
+    return extracted_text.strip()
+
+
+def extract(text, type):
+    target_str = get_content_between_a_b(f"<{type}>", f"</{type}>", text)
+    return target_str
 
 class DebateUI(WebUI):
     FORMAT = "{}\n<debate topic>\n{}\nAffirmative viewpoint:{}\nNegative viewpoint:{}\n<debate topic>{}"
@@ -19,9 +36,10 @@ class DebateUI(WebUI):
 
     @classmethod
     def extract(cls, content):
-        topic = content.split("<debate topic>")[1].split("Affirmative viewpoint:")[0]
-        positive = content.split("<debate topic>")[1].split("Affirmative viewpoint:")[1].split("negative viewpoint:")[0]
-        negative = content.split("<debate topic>")[1].split("Affirmative viewpoint:")[1].split("negative viewpoint:")[1]
+        content = extract(content,"debate topic")
+        topic = extract(content,"Theme")
+        positive = extract(content,"Affirmative viewpoint")
+        negative = extract(content,"Negative viewpoint")
         return topic.strip(), positive.strip(), negative.strip()
 
     @classmethod

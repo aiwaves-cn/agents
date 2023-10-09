@@ -1,8 +1,8 @@
-from utils import get_relevant_history, get_embedding
+from agents.utils import get_relevant_history, get_embedding
 import torch
-from LLM.base_LLM import *
-from Memory import Memory
-from Prompt import * 
+from agents.LLM.base_LLM import *
+from agents.Memory import Memory
+from agents.Prompt import * 
 import json
 class Environment:
     """
@@ -57,8 +57,8 @@ class Environment:
         MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
         current_state_name = current_state.name
 
-        query = self.shared_memory["long_term_memory"][-1].content
         if len(self.shared_memory["long_term_memory"])>1:
+            query = self.shared_memory["long_term_memory"][-1].content
             relevant_history = get_relevant_history(
                 query,
                 self.shared_memory["long_term_memory"][:-1],
@@ -150,8 +150,8 @@ class Environment:
             current_long_term_memory = current_long_term_memory[-MAX_CHAT_HISTORY+1:]
             current_chat_embbedings = current_chat_embbedings[-MAX_CHAT_HISTORY+1:]
         # relevant_memory
-        query = current_long_term_memory[-1].content
         if len(current_long_term_memory)>1:
+            query = current_long_term_memory[-1].content
             relevant_memory = get_relevant_history(
                 query,
                 current_long_term_memory[:-2],
@@ -169,7 +169,6 @@ class Environment:
         conversations = self._get_agent_new_memory(agent,current_long_term_memory)
 
         # memory = relevant_memory + summary + history + query
-        query = current_long_term_memory[-1]
         current_memory = eval(Agent_observe_memory)
 
         return {"role": "user", "content": current_memory}

@@ -1,4 +1,4 @@
-from Prompt import *
+from agents.Prompt import *
 class Memory:
     def __init__(self,role,name,content) -> None:
         self.send_role = role
