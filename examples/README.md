@@ -235,7 +235,7 @@ Please note that it is essential to ensure consistency in streaming output. For 
  [x] Option 4. SOP Generation for Multi-Agent Single agent🤖️🤖️🤖️
  - [Huggingface Space](https://huggingface.co/spaces/AIWaves/SOP_Generation-single)
 
- For Option 3 and option4, we recommend strongly that you can create your OWN DEMO  by clicking the three dots at the top right and selecting **Duplicate this Space** on Huggingface Space.
+ For Option 3 and option 4, we recommend strongly that you can create your OWN DEMO  by clicking the three dots at the top right and selecting **Duplicate this Space** on Huggingface Space.
 
 ### 🤖️ The Agent Hub
 
