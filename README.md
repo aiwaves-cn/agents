@@ -66,12 +66,16 @@ Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
 
 Haven't figured out how to write the JSON file yet? Check out our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html)!
 
+#### Option 3. Try Huggingface Space for generating the SOP automatically.
+
+ - [SOP Generation for Multi-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-multi)[on Huggingface Space]
+ - [SOP Generation for Single-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-single)[on Huggingface Space]
+ - We recommend strongly that you can create your OWN DEMO  by clicking the three dots at the top right and selecting **Duplicate this Space** on Huggingface Space.
 
 ### 🤖️ The Agent Hub
 
 We provide an **AgentHub**, where you can search for interesting Agents shared by us or other developers, try them out or use them as the starting point to customize your own agent. We encourage you to share your customized agents to help others build their own agents more easily! You can share your customized agents by submitting PRs that adds configs and customized codes [here](https://github.com/aiwaves-cn/agents/tree/master/examples/Community_Agent). You can also send us your own config files and codes for customized agents by [email](mailto:contact@aiwaves.cn), and we will share your examples and acknowledge your contribution in future updates!
 
-_A WebUI for automatically uploading of your customized agents will be available soon!_
 
 
 ## 📷 Examples and Demos
