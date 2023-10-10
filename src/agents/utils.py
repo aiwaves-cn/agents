@@ -35,35 +35,41 @@ import openai
 is_load = False
 embedding_model = None
 
+
 def get_embedding(sentence):
-    embed_model_name = os.environ["Embed_Model"] if "Embed_Model" in os.environ else "text-embedding-ada-002"
+    global is_load
+    embed_model_name = (
+        os.environ["Embed_Model"]
+        if "Embed_Model" in os.environ
+        else "text-embedding-ada-002"
+    )
     if not is_load:
         is_load = True
         if embed_model_name in ["text-embedding-ada-002"]:
             pass
         else:
             embedding_model = SentenceTransformer(
-                        embed_model_name, device=torch.device("cpu"),
-                        cache_folder="D:\hugface-model"
-                    )
-            
+                embed_model_name,
+                device=torch.device("cpu"),
+                cache_folder="D:\hugface-model",
+            )
+
     if embed_model_name in ["text-embedding-ada-002"]:
         openai.api_key = os.environ["API_KEY"]
         if "PROXY" in os.environ:
-            assert "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"],"PROXY error,PROXY must be http or socks"
+            assert (
+                "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
+            ), "PROXY error,PROXY must be http or socks"
             openai.proxy = os.environ["PROXY"]
         if "API_BASE" in os.environ:
             openai.api_base = os.environ["API_BASE"]
         embedding_model = openai.Embedding
-        embed = embedding_model.create(
-        model=embed_model_name,
-        input=sentence
-    )   
+        embed = embedding_model.create(model=embed_model_name, input=sentence)
         embed = embed["data"][0]["embedding"]
-        embed = torch.tensor(embed,dtype=torch.float32)
+        embed = torch.tensor(embed, dtype=torch.float32)
     else:
-        embed = embedding_model.encode(sentence,convert_to_tensor=True)
-    if len(embed.shape)==1:
+        embed = embedding_model.encode(sentence, convert_to_tensor=True)
+    if len(embed.shape) == 1:
         embed = embed.unsqueeze(0)
     return embed
 
@@ -88,8 +94,7 @@ def get_content_between_a_b(start_tag, end_tag, text):
     while start_index != -1:
         end_index = text.find(end_tag, start_index + len(start_tag))
         if end_index != -1:
-            extracted_text += text[start_index +
-                                   len(start_tag):end_index] + " "
+            extracted_text += text[start_index + len(start_tag) : end_index] + " "
             start_index = text.find(start_tag, end_index + len(end_tag))
         else:
             break
@@ -110,19 +115,28 @@ def extract(text, type):
     target_str = get_content_between_a_b(f"<{type}>", f"</{type}>", text)
     return target_str
 
+
 def count_files_in_directory(directory):
     # 获取指定目录下的文件数目
-    file_count = len([f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))])
+    file_count = len(
+        [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+    )
     return file_count
+
 
 def delete_oldest_files(directory, num_to_keep):
     # 获取目录下文件列表，并按修改时间排序
-    files = [(f, os.path.getmtime(os.path.join(directory, f))) for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+    files = [
+        (f, os.path.getmtime(os.path.join(directory, f)))
+        for f in os.listdir(directory)
+        if os.path.isfile(os.path.join(directory, f))
+    ]
 
     # 删除最开始的 num_to_keep 个文件
     for i in range(min(num_to_keep, len(files))):
         file_to_delete = os.path.join(directory, files[i][0])
         os.remove(file_to_delete)
+
 
 def delete_files_if_exceed_threshold(directory, threshold, num_to_keep):
     # 获取文件数目并进行处理
@@ -130,6 +144,7 @@ def delete_files_if_exceed_threshold(directory, threshold, num_to_keep):
     if file_count > threshold:
         delete_count = file_count - num_to_keep
         delete_oldest_files(directory, delete_count)
+
 
 def save_logs(log_path, messages, response):
     if not os.path.exists(log_path):
@@ -141,11 +156,10 @@ def save_logs(log_path, messages, response):
     log["output"] = response
     os.makedirs(log_path, exist_ok=True)
     log_file = os.path.join(
-        log_path,
-        datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + ".json")
+        log_path, datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + ".json"
+    )
     with open(log_file, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
-
 
 
 def semantic_search_word2vec(query_embedding, kb_embeddings, top_k):
@@ -161,8 +175,7 @@ def cut_sent(para):
     pieces = [i for i in para.split("\n") if i]
     batch_size = 3
     chucks = [
-        " ".join(pieces[i:i + batch_size])
-        for i in range(0, len(pieces), batch_size)
+        " ".join(pieces[i : i + batch_size]) for i in range(0, len(pieces), batch_size)
     ]
     return chucks
 
@@ -234,8 +247,7 @@ def process_document(file_path):
         os.makedirs("temp_database", exist_ok=True)
         save_path = os.path.join(
             "temp_database/",
-            file_path.split("/")[-1].replace("." + file_path.split(".")[1],
-                                             ".json"),
+            file_path.split("/")[-1].replace("." + file_path.split(".")[1], ".json"),
         )
         print(save_path)
         with open(save_path, "w") as f:
@@ -244,13 +256,12 @@ def process_document(file_path):
     else:
         loader = UnstructuredFileLoader(file_path)
         docs = loader.load()
-        text_spiltter = CharacterTextSplitter(chunk_size=200,
-                                              chunk_overlap=100)
+        text_spiltter = CharacterTextSplitter(chunk_size=200, chunk_overlap=100)
         docs = text_spiltter.split_text(docs[0].page_content)
         os.makedirs("temp_database", exist_ok=True)
         save_path = os.path.join(
-            "temp_database/",
-            file_path.replace("." + file_path.split(".")[1], ".json"))
+            "temp_database/", file_path.replace("." + file_path.split(".")[1], ".json")
+        )
         final_dict = {}
         count = 0
         for c in tqdm(docs):
@@ -263,6 +274,7 @@ def process_document(file_path):
         with open(save_path, "w") as f:
             json.dump(final_dict, f, ensure_ascii=False, indent=2)
         return {"knowledge_base": save_path, "type": "UnstructuredFile"}
+
 
 def load_knowledge_base_qa(path):
     """
@@ -331,11 +343,9 @@ def matching_a_b(a, b, requirements=None):
     return sim_scores
 
 
-def matching_category(inputtext,
-                      forest_name,
-                      requirements=None,
-                      cat_embedder=None,
-                      top_k=3):
+def matching_category(
+    inputtext, forest_name, requirements=None, cat_embedder=None, top_k=3
+):
     """
     Args:
         inputtext: the category name to be matched
@@ -418,7 +428,7 @@ def Search_Engines(req):
     new_dict = {"keyword": req, "catLeafName": "", "fetchSize": FETSIZE}
     url = os.environ["SHOPPING_SEARCH"]
     res = requests.post(
-        url= url,
+        url=url,
         json=new_dict,
     )
     user_dict = json.loads(res.text)
@@ -431,20 +441,19 @@ def Search_Engines(req):
 
 
 def search_with_api(requirements, categery):
-    
     FETSIZE = eval(os.environ["FETSIZE"]) if "FETSIZE" in os.environ else 5
 
     request_items = []
-    all_req_list = requirements.split(" ")  
-    count = 0  
+    all_req_list = requirements.split(" ")
+    count = 0
 
     while len(request_items) < FETSIZE and len(all_req_list) > 0:
-        if count: 
-            all_req_list.pop(0)  
-        all_req = (" ").join(all_req_list)  
+        if count:
+            all_req_list.pop(0)
+        all_req = (" ").join(all_req_list)
         if categery not in all_req_list:
             all_req = all_req + " " + categery
-        now_request_items, top_category = Search_Engines(all_req)  
+        now_request_items, top_category = Search_Engines(all_req)
         request_items = merge_list(request_items, now_request_items)
         count += 1
     new_top = []
@@ -458,8 +467,7 @@ def search_with_api(requirements, categery):
     return request_items, new_top
 
 
-
-def get_relevant_history(query,history,embeddings):
+def get_relevant_history(query, history, embeddings):
     """
     Retrieve a list of key history entries based on a query using semantic search.
 
@@ -474,7 +482,9 @@ def get_relevant_history(query,history,embeddings):
     TOP_K = eval(os.environ["TOP_K"]) if "TOP_K" in os.environ else 0
     relevant_history = []
     query_embedding = get_embedding(query)
-    hits = semantic_search(query_embedding, embeddings, top_k=min(TOP_K,embeddings.shape[0]))
+    hits = semantic_search(
+        query_embedding, embeddings, top_k=min(TOP_K, embeddings.shape[0])
+    )
     hits = hits[0]
     for hit in hits:
         matching_idx = hit["corpus_id"]
