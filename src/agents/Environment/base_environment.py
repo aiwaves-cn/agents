@@ -1,8 +1,8 @@
-from utils import get_relevant_history, get_embedding
+from ..utils import get_relevant_history, get_embedding
 import torch
-from LLM.base_LLM import *
-from Memory import Memory
-from Prompt import * 
+from ..LLM.base_LLM import *
+from ..Memory import Memory
+from ..Prompt import * 
 import json
 class Environment:
     """

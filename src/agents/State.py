@@ -1,4 +1,4 @@
-from Component import *
+from .Component import *
 
 
 class State:

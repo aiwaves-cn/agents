@@ -1,5 +1,5 @@
-from Memory import Memory
-from utils import extract
+from ..Memory import Memory
+from ..utils import extract
 import os
 class Action:
     """

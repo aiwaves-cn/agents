@@ -2,8 +2,8 @@ from abc import abstractclassmethod
 import litellm
 import os
 import time
-from Memory import Memory
-from utils import save_logs
+from ..Memory import Memory
+from ..utils import save_logs
 
 class LLM:
     def __init__(self) -> None:
