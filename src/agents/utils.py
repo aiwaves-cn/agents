@@ -38,6 +38,7 @@ embedding_model = None
 
 def get_embedding(sentence):
     global is_load
+    global embedding_model
     embed_model_name = (
         os.environ["Embed_Model"]
         if "Embed_Model" in os.environ
