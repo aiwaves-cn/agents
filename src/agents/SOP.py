@@ -275,7 +275,9 @@ class SOP:
             return None, None
 
         self.current_state = next_state
-        
+        if next_state.name!=self.current_state.name:
+            self.current_state.index = (self.current_state.index+1) % len(self.current_state.roles)
+
         # 如果是首次进入该节点且有开场白，则直接分配给开场角色
         # If it is the first time to enter the state and there is a begin query, it will be directly assigned to the begin role.
         if self.current_state.is_begin and self.current_state.begin_role:

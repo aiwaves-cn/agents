@@ -22,8 +22,8 @@ from agents.utils import get_embedding,cos_sim
 import torch
 import os
 
-API_KEY = "API_KEY"
-PROXY = "PROXY"
+API_KEY = ""
+PROXY = ""
 target = """a coder helper"""
 os.environ["API_KEY"] = API_KEY
 os.environ["PROXY"] = PROXY
@@ -69,3 +69,8 @@ sop["states"] = states
 # 将字典写入JSON文件
 with open("gen.json", "w") as json_file:
     json.dump(sop, json_file)
+
+
+file = open("gen.json","w")
+json.dump(sop,file,ensure_ascii=False)
+file.close()
