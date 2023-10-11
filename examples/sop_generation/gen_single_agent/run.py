@@ -22,9 +22,9 @@ from agents.utils import get_embedding,cos_sim
 import torch
 import os
 
-API_KEY = "API_KEY"
-PROXY = "PROXY"
-target = """a shopping assistant help customer to buy the commodity"""
+API_KEY = ""
+PROXY = ""
+target = """a coder helper"""
 os.environ["API_KEY"] = API_KEY
 os.environ["PROXY"] = PROXY
 sop["config"]["API_KEY"] = API_KEY
