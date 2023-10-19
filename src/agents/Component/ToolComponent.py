@@ -102,8 +102,8 @@ class KnowledgeBaseComponent(ToolComponent):
                 if self.kb_chunks[matching_idx] in temp:
                     pass
                 else:
-                    knowledge = knowledge + f"{self.kb_answers[matching_idx]}\n\n"
-                    temp.append(self.kb_answers[matching_idx])
+                    knowledge = knowledge + f"{self.kb_chunks[matching_idx]}\n\n"
+                    temp.append(self.kb_chunks[matching_idx])
                     if len(temp) == self.top_k:
                         break
             print(hits[0]["score"])
