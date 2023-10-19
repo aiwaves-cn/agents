@@ -22,8 +22,8 @@ from agents.utils import get_embedding,cos_sim
 import torch
 import os
 
-API_KEY = "API_KEY"
-PROXY = "PROXY"
+API_KEY = ""
+PROXY = ""
 target = """a coder helper"""
 os.environ["API_KEY"] = API_KEY
 os.environ["PROXY"] = PROXY

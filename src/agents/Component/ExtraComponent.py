@@ -126,3 +126,5 @@ class CategoryRequirementsComponent(ToolComponent):
         outputdict["prompt"] = prompt
         return outputdict
 
+
+

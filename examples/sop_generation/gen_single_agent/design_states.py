@@ -4,7 +4,7 @@ from agents.utils import extract
 from single_prompts import *
 
 
-llm = OpenAILLM()
+llm = OpenAILLM(model = "gpt-4")
 # design state
 
 def get_cot_result(target):
