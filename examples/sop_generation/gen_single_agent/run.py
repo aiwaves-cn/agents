@@ -69,8 +69,3 @@ sop["states"] = states
 # 将字典写入JSON文件
 with open("gen.json", "w") as json_file:
     json.dump(sop, json_file)
-
-
-file = open("gen.json","w")
-json.dump(sop,file,ensure_ascii=False)
-file.close()
