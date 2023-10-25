@@ -104,7 +104,8 @@ def prepare(agents, sop, environment):
             # "only_name":  DebateUI.convert2list4agentname(sop)[1],
             "only_name":  convert2list4agentname(sop)[0],
             "default_cos_play_id": -1,
-            "api_key": os.environ["API_KEY"]
+            "api_key": os.environ["API_KEY"],
+            "pwd": os.getcwd()
         }
     )
     # print(f"client: send {requirement_game_name}")
