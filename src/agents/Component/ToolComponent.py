@@ -249,6 +249,8 @@ class WebSearchComponent(ToolComponent):
             "q": query,
             "api_key": api_key,
         }).get_dict()
+        if "error" in results.keys():
+           raise Exception(results["error"])
         """execute"""
         snippets = []
         if "answer_box_list" in results.keys():
