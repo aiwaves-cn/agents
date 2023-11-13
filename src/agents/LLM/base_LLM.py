@@ -14,7 +14,7 @@ class LLM:
         pass
 
 
-class OpenAILLM(LLM):
+class llama2(LLM):
     def __init__(self,**kwargs) -> None:
         super().__init__()
         self.MAX_CHAT_HISTORY = eval(
@@ -90,16 +90,16 @@ class OpenAILLM(LLM):
             try:
                 if functions:
                     response = litellm.completion(
-                        model=model,
+                        model="replicate/llama-2-70b-chat:2796ee9483c3fd7aa2e171d38f4ca12251a30609463dcfd4cd76703f22e96cdf",
                         messages=messages,
                         functions=functions,
                         function_call=function_call,
                         temperature=temperature,
-                        custom_llm_provider = "openai"
+                        
                     )
                 else:
                     response = litellm.completion(
-                        model=model,
+                        model="replicate/llama-2-70b-chat:2796ee9483c3fd7aa2e171d38f4ca12251a30609463dcfd4cd76703f22e96cdf",
                         messages=messages,
                         temperature=temperature,
                         stream=stream,
@@ -131,9 +131,8 @@ def init_LLM(default_log_path,**kwargs):
     log_path = kwargs["log_path"].replace("/",os.sep) if "log_path" in kwargs else default_log_path
     if LLM_type == "OpenAI":
         LLM = (
-            OpenAILLM(**kwargs["LLM"])
-            if "LLM" in kwargs
-            else OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=log_path)
+            llama2(**kwargs["LLM"])
+            else llama2(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=log_path)
         )
         return LLM
     
