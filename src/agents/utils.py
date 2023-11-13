@@ -30,7 +30,7 @@ from sentence_transformers import SentenceTransformer
 import string
 import random
 import os
-import openai
+import replicate
 
 is_load = False
 embedding_model = None
@@ -56,17 +56,20 @@ def get_embedding(sentence):
             )
 
     if embed_model_name in ["text-embedding-ada-002"]:
-        openai.api_key = os.environ["API_KEY"]
         if "PROXY" in os.environ:
             assert (
                 "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
             ), "PROXY error,PROXY must be http or socks"
-            openai.proxy = os.environ["PROXY"]
+            #openai.proxy = os.environ["PROXY"]
+            pass
         if "API_BASE" in os.environ:
-            openai.api_base = os.environ["API_BASE"]
-        embedding_model = openai.Embedding
-        embed = embedding_model.create(model=embed_model_name, input=sentence)
-        embed = embed["data"][0]["embedding"]
+            #openai.api_base = os.environ["API_BASE"]
+            pass
+        os.environ["REPLICATE_API_TOKEN"] = os.environ["API_KEY"]
+        embedding_model = replicate.run(
+        "andreasjansson/llama-2-70b-embeddings:d9afdaffdaf1e486dfde0e20559818c7879d9e7232bf37acf3d0fb20a1b3d9fb",
+        input={"prompts": sentence, "prompt_separator":"\n"})
+        embed = embedding_model
         embed = torch.tensor(embed, dtype=torch.float32)
     else:
         embed = embedding_model.encode(sentence, convert_to_tensor=True)
