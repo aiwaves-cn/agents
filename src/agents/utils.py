@@ -30,7 +30,10 @@ from sentence_transformers import SentenceTransformer
 import string
 import random
 import os
-import openai
+
+# Migration to OpenAI > v1.0.0
+from openai import OpenAI
+client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
 is_load = False
 embedding_model = None
@@ -56,15 +59,14 @@ def get_embedding(sentence):
             )
 
     if embed_model_name in ["text-embedding-ada-002"]:
-        openai.api_key = os.environ["API_KEY"]
         if "PROXY" in os.environ:
             assert (
                 "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
             ), "PROXY error,PROXY must be http or socks"
-            openai.proxy = os.environ["PROXY"]
+            client.proxies = os.environ["PROXY"]
         if "API_BASE" in os.environ:
-            openai.api_base = os.environ["API_BASE"]
-        embedding_model = openai.Embedding
+            client.base_url = os.environ["API_BASE"]
+        embedding_model = client.embeddings
         embed = embedding_model.create(model=embed_model_name, input=sentence)
         embed = embed["data"][0]["embedding"]
         embed = torch.tensor(embed, dtype=torch.float32)
@@ -352,7 +354,7 @@ def matching_category(
         inputtext: the category name to be matched
         forest: search tree
         top_k: the default three highest scoring results
-    Return：
+    Return:
         topk matching_result. List[List] [[top1_name,top2_name,top3_name],[top1_score,top2_score,top3_score]]
     """
 
