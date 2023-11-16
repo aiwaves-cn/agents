@@ -31,6 +31,7 @@ import string
 import random
 import os
 import openai
+from openai import OpenAI
 
 is_load = False
 embedding_model = None
@@ -51,22 +52,20 @@ def get_embedding(sentence):
         else:
             embedding_model = SentenceTransformer(
                 embed_model_name,
-                device=torch.device("cpu"),
-                cache_folder="D:\hugface-model",
+                device=torch.device("cpu")
             )
 
     if embed_model_name in ["text-embedding-ada-002"]:
-        openai.api_key = os.environ["API_KEY"]
+        client = OpenAI(api_key=os.environ["API_KEY"])
         if "PROXY" in os.environ:
             assert (
                 "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
             ), "PROXY error,PROXY must be http or socks"
-            openai.proxy = os.environ["PROXY"]
+            openai.proxies = {os.environ["PROXY"]}
         if "API_BASE" in os.environ:
-            openai.api_base = os.environ["API_BASE"]
-        embedding_model = openai.Embedding
-        embed = embedding_model.create(model=embed_model_name, input=sentence)
-        embed = embed["data"][0]["embedding"]
+            openai.base_url = os.environ["API_BASE"]
+        sentence = sentence.replace("\n", " ")
+        embed = client.embeddings.create(input = sentence, model= embed_model_name,encoding_format="float").data[0].embedding
         embed = torch.tensor(embed, dtype=torch.float32)
     else:
         embed = embedding_model.encode(sentence, convert_to_tensor=True)
