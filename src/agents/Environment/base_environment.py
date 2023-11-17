@@ -41,6 +41,7 @@ class Environment:
                     else " "
                 )
                 self.LLMs[state_name] = init_LLM("logs"+os.sep+f"{state_name}",**state_dict)
+                self.LLM_type = state_dict["LLM_type"] if "LLM_type" in state_dict else "OpenAI"
         self.roles_to_names = None
         self.names_to_roles = None
 
@@ -90,7 +91,7 @@ class Environment:
         """
         MAX_CHAT_HISTORY = eval(os.environ["MAX_CHAT_HISTORY"])
         self.shared_memory["long_term_memory"].append(memory)
-        current_embedding = get_embedding(memory.content)
+        current_embedding = get_embedding(memory.content, self.LLM_type)
         if "chat_embeddings" not in self.shared_memory:
             self.shared_memory["chat_embeddings"] = current_embedding
         else:
