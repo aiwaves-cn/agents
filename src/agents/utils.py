@@ -30,13 +30,14 @@ from sentence_transformers import SentenceTransformer
 import string
 import random
 import os
-import openai
+import litellm
+import replicate
 
 is_load = False
 embedding_model = None
 
 
-def get_embedding(sentence):
+def get_embedding(sentence, LLM_type="OpenAI"):
     global is_load
     global embedding_model
     embed_model_name = (
@@ -56,17 +57,29 @@ def get_embedding(sentence):
             )
 
     if embed_model_name in ["text-embedding-ada-002"]:
-        openai.api_key = os.environ["API_KEY"]
+        litellm.api_key= os.environ["API_KEY"]
         if "PROXY" in os.environ:
             assert (
                 "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
             ), "PROXY error,PROXY must be http or socks"
-            openai.proxy = os.environ["PROXY"]
+            litellm.proxy = os.environ["PROXY"]
         if "API_BASE" in os.environ:
-            openai.api_base = os.environ["API_BASE"]
-        embedding_model = openai.Embedding
-        embed = embedding_model.create(model=embed_model_name, input=sentence)
-        embed = embed["data"][0]["embedding"]
+            litellm.api_base = os.environ["API_BASE"]
+        if LLM_type == "OpenAI" or LLM_type == "Azure":
+            embedding_model = litellm.embedding(model="text-embedding-ada-002", input=sentence)
+            embed = embedding_model["data"][0]["embedding"]
+        elif LLM_type == "Replicate":
+            os.environ["REPLICATE_API_TOKEN"] = os.environ["API_KEY"]
+            embedding_model = replicate.run(
+                "andreasjansson/llama-2-70b-embeddings:d9afdaffdaf1e486dfde0e20559818c7879d9e7232bf37acf3d0fb20a1b3d9fb",
+                input={"prompts": sentence, "prompt_separator":"\n\n\n\n"})
+            embed = embedding_model
+        elif LLM_type == "Claude2" or True:
+            embedding_model = SentenceTransformer(
+                        "all-MiniLM-L6-v2",
+                    )
+            embedding_model = embedding_model.encode(sentence)
+            embed=embedding_model        
         embed = torch.tensor(embed, dtype=torch.float32)
     else:
         embed = embedding_model.encode(sentence, convert_to_tensor=True)
