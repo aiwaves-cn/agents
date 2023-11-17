@@ -14,7 +14,7 @@ class LLM:
         pass
 
 
-class OpenAILLM(LLM):
+class generalizedLLM(LLM):
     def __init__(self,**kwargs) -> None:
         super().__init__()
         self.MAX_CHAT_HISTORY = eval(
@@ -95,7 +95,6 @@ class OpenAILLM(LLM):
                         functions=functions,
                         function_call=function_call,
                         temperature=temperature,
-                        custom_llm_provider = "openai"
                     )
                 else:
                     response = litellm.completion(
@@ -103,7 +102,7 @@ class OpenAILLM(LLM):
                         messages=messages,
                         temperature=temperature,
                         stream=stream,
-                        custom_llm_provider = "openai")
+                        )
                 break
             except Exception as e:
                 print(e)
@@ -129,11 +128,10 @@ class OpenAILLM(LLM):
 def init_LLM(default_log_path,**kwargs):
     LLM_type = kwargs["LLM_type"] if "LLM_type" in kwargs else "OpenAI"
     log_path = kwargs["log_path"].replace("/",os.sep) if "log_path" in kwargs else default_log_path
-    if LLM_type == "OpenAI":
-        LLM = (
-            OpenAILLM(**kwargs["LLM"])
-            if "LLM" in kwargs
-            else OpenAILLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=log_path)
+    LLM = (
+        generalizedLLM(**kwargs["LLM"])
+        if "LLM" in kwargs
+        else generalizedLLM(model = "gpt-3.5-turbo-16k-0613",temperature=0.3,log_path=log_path)
         )
-        return LLM
+   return LLM
     
