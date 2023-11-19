@@ -122,7 +122,7 @@ class OpenAILLM(LLM):
         elif stream:
             return self.get_stream(response, self.log_path, messages)
         else:
-            save_logs(self.log_path, messages, response)
+            save_logs(self.log_path, messages, response.choices[0].message["content"])
             return response.choices[0].message["content"]
 
 
