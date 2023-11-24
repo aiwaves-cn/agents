@@ -31,6 +31,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from tqdm import tqdm
 from serpapi import GoogleSearch
+import time
 
 class ToolComponent:
     def __init__(self):
@@ -990,3 +991,103 @@ class CodeComponent(ToolComponent):
         with open(file_name, "w", encoding="utf-8") as f:
             f.write(code)
         return {}
+
+class FlightComponent(ToolComponent):
+    def __init__(self, client_id, client_secret, name="flight"):
+        super().__init__()
+        self.name = name
+        self.client_id = client_id
+        self.client_secret = client_secret
+        self.token = self._get_access_token()
+
+    def _get_access_token(self):
+        """
+        Retrieve access token from Amadeus API for authentication.
+        """
+        url = "https://test.api.amadeus.com/v1/security/oauth2/token"
+        payload = {
+            'client_id': self.client_id,
+            'client_secret': self.client_secret,
+            'grant_type': 'client_credentials'
+        }
+        response = requests.post(url, data=payload)
+        if response.status_code == 200:
+            self.token_expiration = time.time() + response.json()['expires_in']
+            return response.json()['access_token']
+        else:
+            raise Exception("Failed to get access token from Amadeus API")
+
+    def _is_token_expired(self):
+        return time.time() > self.token_expiration
+
+    def _refresh_token(self):
+        self.token = self._get_access_token()
+
+    def _query_flight_data(self, search_params: Dict) -> Dict:
+        """
+        Fetches flight price information based on search parameters.
+
+        :param search_params: Dictionary containing search parameters like departure and arrival airports, dates, etc.
+        :return: Flight price information or an error message.
+        """
+        headers = {'Authorization': f'Bearer {self.token}'}
+        url = "https://test.api.amadeus.com/v2/shopping/flight-offers" 
+        response = requests.get(url, headers=headers, params=search_params)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            return {"error": "Unable to fetch flight data", "detail": response.json()["detail"]}
+
+    def _parse_flight_data(self, flight_data):
+        flights_list = []
+        for flight in flight_data["data"]:
+            data = {}
+            data["lastTicketingDate"] = flight["lastTicketingDate"]
+            data["numberOfBookableSeats"] = flight["numberOfBookableSeats"]
+            data["departureSegments"] = []
+            data["departureDuration"] = flight["itineraries"][0]["duration"]
+            for segment in flight["itineraries"][0]["segments"]:
+                data["departureSegments"].append({
+                    "departure": segment["departure"].copy(),
+                    "arrival": segment["arrival"].copy(),
+                    "duration": segment["duration"]
+                })
+            if not flight["oneWay"]:
+                data["returnSegments"] = []
+                data["returnDuration"] = flight["itineraries"][1]["duration"]
+                for segment in flight["itineraries"][1]["segments"]:
+                    data["returnSegments"].append({
+                        "departure": segment["departure"].copy(),
+                        "arrival": segment["arrival"].copy(),
+                        "duration": segment["duration"]
+                    })
+            data["price"] = flight["price"]["total"]
+            data["currency"] = flight["price"]["currency"]
+
+            flights_list.append(data)
+        
+        return flights_list
+
+    def func(self, flight_search_dict: Dict) -> Dict:
+        """
+        Function to gather flights and their prices based on provided parameters.
+
+        See parameters at: https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference
+
+        :param flight_search_dict: Dictionary containing search parameters.
+        :return: Dictionary with flight price data or error message.
+        """
+
+        if self._is_token_expired():
+            self._refresh_token()
+
+        if not "max" in flight_search_dict:
+            flight_search_dict["max"] = 20
+
+        flight_data = self._query_flight_data(flight_search_dict)
+
+        if "error" in flight_data:
+            print("Error: " + flight_data["detail"])
+            return {"flights_list":[]}
+
+        return {"flights_list": self._parse_flight_data(flight_data)}
