@@ -61,9 +61,9 @@ def get_embedding(sentence):
             assert (
                 "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
             ), "PROXY error,PROXY must be http or socks"
-            openai.proxies = {os.environ["PROXY"]}
+            client.proxies = {os.environ["PROXY"]}
         if "API_BASE" in os.environ:
-            openai.base_url = os.environ["API_BASE"]
+            client.base_url = os.environ["API_BASE"]
         sentence = sentence.replace("\n", " ")
         embed = client.embeddings.create(input = sentence, model= embed_model_name,encoding_format="float").data[0].embedding
         embed = torch.tensor(embed, dtype=torch.float32)
