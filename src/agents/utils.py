@@ -68,7 +68,7 @@ def get_embedding(sentence):
                 "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
             ), "PROXY error,PROXY must be http or socks"
             client.proxies = {os.environ["PROXY"]}
-        if "EMBED_API_BASE" in os.environ:
+        if "EMBED_API_BASE" in os.environ or "EMBED_BASE" in os.environ:
             client.base_url = (
         os.environ["EMBED_API_BASE"]
         if "EMBED_API_BASE" in os.environ
