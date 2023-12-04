@@ -19,7 +19,6 @@ class OpenAILLM(LLM):
         super().__init__()
         self.MAX_CHAT_HISTORY = eval(
             os.environ["MAX_CHAT_HISTORY"]) if "MAX_CHAT_HISTORY" in os.environ else 10
-        
         self.model = kwargs["model"] if "model" in kwargs else "gpt-3.5-turbo-16k-0613"
         self.temperature = kwargs["temperature"] if "temperature" in  kwargs else 0.3
         self.log_path = kwargs["log_path"].replace("/",os.sep) if "log_path" in kwargs else "logs"
@@ -205,16 +204,15 @@ class ReplicateLLM(LLM):
                         messages=messages,
                         functions=functions,
                         function_call=function_call,
-                        temperature=temperature,
-                        custom_llm_provider = "openai"
+                        temperature=temperature
                     )
                 else:
                     response = litellm.completion(
                         model=model,
                         messages=messages,
                         temperature=temperature,
-                        stream=stream,
-                        custom_llm_provider = "openai")
+                        stream=stream
+                    )
                 break
             except Exception as e:
                 print(e)
@@ -248,9 +246,9 @@ def init_LLM(default_log_path,**kwargs):
         )
     if LLM_type == "Replicate": 
         LLM = (
-            OpenAILLM(**kwargs["LLM"])
+            ReplicateLLM(**kwargs["LLM"])
             if "LLM" in kwargs
-            else OpenAILLM(model = "replicate/llama-2-70b-chat:2796ee9483c3fd7aa2e171d38f4ca12251a30609463dcfd4cd76703f22e96cdf",temperature=0.3,log_path=log_path)
+            else ReplicateLLM(model = "replicate/llama-2-70b-chat:2796ee9483c3fd7aa2e171d38f4ca12251a30609463dcfd4cd76703f22e96cdf",temperature=0.3,log_path=log_path)
         )
-        return LLM
+    return LLM
     

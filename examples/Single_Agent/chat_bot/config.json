@@ -37,20 +37,8 @@
       ],
       "begin_role": "Yang bufan",
       "begin_query": "hello,What are you looking for me for?",
-      "LLM_type": "OpenAI",
-      "LLM": {
-        "temperature": 1.0,
-        "model": "gpt-3.5-turbo-16k-0613",
-        "log_path": "logs/Response_state"
-      },
       "agent_states": {
         "Yang bufan": {
-          "LLM_type": "OpenAI",
-          "LLM": {
-            "temperature": 1.0,
-            "model": "gpt-3.5-turbo-16k-0613",
-            "log_path": "logs/Yang_bufan"
-          },
           "style": {
             "role": "The director of a private detective agency, a cold detective"
           },

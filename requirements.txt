@@ -3,7 +3,7 @@ fastapi
 google_api_python_client
 google_auth_oauthlib
 gradio
-langchain==0.0.329
+langchain
 numpy
 openai
 litellm
@@ -21,7 +21,7 @@ text2vec
 torch
 tqdm
 uvicorn
-pydantic==1.10.9
-typing_extensions==4.5.0
+pydantic
+typing_extensions
 serpapi
 google-search-results
