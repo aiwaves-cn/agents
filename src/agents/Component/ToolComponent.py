@@ -31,6 +31,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from tqdm import tqdm
 from serpapi import GoogleSearch
+import time
 
 class ToolComponent:
     def __init__(self):
@@ -990,3 +991,172 @@ class CodeComponent(ToolComponent):
         with open(file_name, "w", encoding="utf-8") as f:
             f.write(code)
         return {}
+
+class FlightComponent(ToolComponent):
+    def __init__(self, client_id, client_secret, name="flight"):
+        super().__init__()
+        self.name = name
+        self.client_id = client_id
+        self.client_secret = client_secret
+        self.token = self._get_access_token()
+
+    def _get_access_token(self):
+        """
+        Retrieve access token from Amadeus API for authentication.
+        """
+        url = "https://test.api.amadeus.com/v1/security/oauth2/token"
+        payload = {
+            'client_id': self.client_id,
+            'client_secret': self.client_secret,
+            'grant_type': 'client_credentials'
+        }
+        response = requests.post(url, data=payload)
+        if response.status_code == 200:
+            self.token_expiration = time.time() + response.json()['expires_in']
+            return response.json()['access_token']
+        else:
+            raise Exception("Failed to get access token from Amadeus API")
+
+    def _is_token_expired(self):
+        return time.time() > self.token_expiration
+
+    def _refresh_token(self):
+        self.token = self._get_access_token()
+
+    def _query_flight_data(self, search_params: Dict) -> Dict:
+        """
+        Fetches flight price information based on search parameters.
+
+        :param search_params: Dictionary containing search parameters like departure and arrival airports, dates, etc.
+        :return: Flight price information or an error message.
+        """
+        headers = {'Authorization': f'Bearer {self.token}'}
+        url = "https://test.api.amadeus.com/v2/shopping/flight-offers" 
+        response = requests.get(url, headers=headers, params=search_params)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            try:
+                return {"error": "Unable to fetch flight data", "detail": response.json()["detail"]}
+            except:
+                return {"error": "Invalid inputs"}
+
+    def _parse_flight_data(self, flight_data):
+        information = f"There are {len(flight_data['data'])} flights available. Here are their information. "
+        for i, flight in enumerate(flight_data['data']):
+            flight_information = f"Flight ({i+1}): "
+
+            flight_information += f"The duration of departing trip {i+1} is {flight['itineraries'][0]['duration']}."
+
+            flight_information += f"Departing trip {i+1} has {len(flight['itineraries'][0]['segments'])} segments."
+
+            for j, segment in enumerate(flight['itineraries'][0]['segments']):
+                flight_information += f"Segment {j+1} goes from airport {segment['departure']['iataCode']} at {segment['departure']['at']} to {segment['arrival']['iataCode']} at {segment['arrival']['at']}. "
+            
+            if len(flight['itineraries']) > 1:
+
+                flight_information += f"The duration of returning trip {i+1} is {flight['itineraries'][1]['duration']}."
+
+                flight_information += f"Returning trip {i+1} has {len(flight['itineraries'][1]['segments'])} segments."
+                for j, segment in enumerate(flight['itineraries'][1]['segments']):
+                    flight_information += f"Segment {j+1} goes from airport {segment['departure']['iataCode']} at {segment['departure']['at']}  to {segment['arrival']['iataCode']} at {segment['arrival']['at']} . "
+            
+            flight_information += f"Trip {i+1} has a total price of of {flight['price']['total']} {flight['price']['currency']}.\n"
+
+            information += flight_information
+        return information
+
+    def func(self, agent) -> Dict:
+        """
+        Function to gather flights and their prices based on provided parameters.
+
+        See parameters at: https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference
+
+        :param flight_search_dict: Dictionary containing search parameters.
+        :return: Dictionary with flight price data or error message.
+        """
+
+        query = ""
+        for i in range(3, 0, -1): # get last 3 queries
+            if len(agent.long_term_memory) >= i:
+                query += agent.long_term_memory[len(agent.long_term_memory) - i]["content"]
+
+        response = agent.LLM.get_response(
+            None,
+            system_prompt=f'''Please analyze the provided conversation and identify keywords that could be used to make a flight booking using the Amadeus API.
+             You must identify whether the conversation is related to searching flight information.
+             You must identify the origin location for the flight and convert it into an 3-character IATA code for the closest airport. 
+             You must identify the destination location for the flight and convert it into an 3-character IATA code for the closest airport.
+             You must identity the departure date for the flight in the YYYY-MM-DD format. If there is no year, make the full date the next possible one chronologically from the current date. If the date is not specified, leave this empty
+             You must identify the number of passengers on the flight. 
+             If they exist, you may identify the return date of the trip in the YYYY-MM-DD format, the currency code desired, and the max price of the trip. 
+             Format the output as: 
+             <isRelevant>False if this conversation is not about flight information, otherwise empty</isRelevant>
+             <originIATALocationCode>extracted origin airport in the format of an airport IATA code</originIATALocationCode>
+             <destinationIATALocationCode>extracted destination airport in the format of an airport IATA code</destinationIATALocationCode>
+             <departureDate>extracted departure date in the YYYY-MM-DD format</departureDate>
+             <adults>extracted number of passengers</adults>
+             <returnDate>extracted return date in in the YYYY-MM-DD format</returnDate>
+             <currencyCode>extracted preferred currency for the flight offers. Currency is specified in the ISO 4217 format, e.g. EUR for Euro</currencyCode>
+             <maxPrice>extracted maximum price per passenger for the trip</maxPrice>\n 
+             Make sure to leave each field empty if that information is not present. Do NOT include any text between the tags if the information is not provided.\nConversation:\n{query}''',
+            stream=False,
+        )
+
+        if extract(response, "isRelevant") == "False":
+            return {"prompt": ""}
+
+        search_params = {
+            "originLocationCode": extract(response, "originIATALocationCode"),
+            "destinationLocationCode": extract(response, "destinationIATALocationCode"),
+            "departureDate": extract(response, "departureDate"),
+            "adults": extract(response, "adults"),
+            "returnDate": extract(response, "returnDate"),
+            "currencyCode": extract(response, "currencyCode"),
+            "maxPrice": extract(response, "maxPrice"),
+            "max": 3
+        }
+
+        error = False
+
+        error_information = ""
+
+        if search_params["originLocationCode"] == "":
+            error = True
+            error_information += "You need the origin location in order to search up available flights."
+        if search_params["destinationLocationCode"] == "":
+            error = True
+            error_information += "You need the destination location in order to search up available flights."
+        if search_params["departureDate"] == "":
+            error = True
+            error_information += "You need the departure date in order to search up available flights."
+        if search_params["adults"] == "":
+            search_params["adults"] = 1
+        if search_params["returnDate"] == "":
+            search_params.pop("returnDate", None)
+        if search_params["currencyCode"] == "":
+            search_params["currencyCode"] = "USD"
+        if search_params["maxPrice"] == "":
+            search_params.pop("maxPrice", None)
+        if error:
+            return {
+            "prompt": "You can refer to the following information to reply:\n"
+            + error_information
+        }
+
+        if self._is_token_expired():
+            self._refresh_token()
+
+        flight_data = self._query_flight_data(search_params)
+
+        if "error" in flight_data:
+            try:
+                return_dict = {"prompt": "You can refer to the following information to reply:\n There is an error with the query, you should clarify about " + flight_data["detail"]}
+                return return_dict
+            except:
+                return {"prompt": flight_data["error"]}
+
+        return {
+            "prompt": "You can refer to the following information to reply:\n"
+            + self._parse_flight_data(flight_data)
+        }

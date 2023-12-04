@@ -123,6 +123,10 @@ class State:
                         component_dict["WebSearchComponent"] = WebSearchComponent(
                             component_args["engine_name"], component_args["api"]
                         )
+                    elif component == "FlightComponent":
+                        component_dict["FlightComponent"] = FlightComponent(
+                            component_args["api"], component_args["secret"]
+                        )
                     elif component == "WebCrawlComponent":
                         component_dict["WebCrawlComponent"] = WebCrawlComponent(
                             component_args["name"]
