@@ -1,16 +1,19 @@
 {
   "config": {
-    "API_KEY": "API_KEY",
+    "API_KEY": "", 
+    "EMBED_API_KEY": "",
     "PROXY": "",
     "API_BASE": "",
+    "EMBED_API_BASE": "",
     "MAX_CHAT_HISTORY": "10",
     "User_Names": "[\"User\"]",
-    "TOP_K": "3"
+    "TOP_K": "3",
+    "Embed_Model": ""
   },
-  "LLM_type": "OpenAI",
+  "LLM_type": "Replicate",
   "LLM": {
     "temperature": 0.0,
-    "model": "gpt-3.5-turbo-16k-0613",
+    "model": "replicate/llama-2-70b-chat:2796ee9483c3fd7aa2e171d38f4ca12251a30609463dcfd4cd76703f22e96cdf",
     "log_path": "logs/god"
   },
   "root": "Response_state",

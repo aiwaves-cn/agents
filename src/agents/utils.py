@@ -32,6 +32,8 @@ import random
 import os
 import openai
 from openai import OpenAI
+import replicate
+
 
 is_load = False
 embedding_model = None
@@ -56,14 +58,22 @@ def get_embedding(sentence):
             )
 
     if embed_model_name in ["text-embedding-ada-002"]:
-        client = OpenAI(api_key=os.environ["API_KEY"])
+        client = OpenAI(api_key=(
+        os.environ["EMBED_API_KEY"]
+        if "EMBED_API_KEY" in os.environ
+        else os.environ["API_KEY"]
+    ))
         if "PROXY" in os.environ:
             assert (
                 "http:" in os.environ["PROXY"] or "socks" in os.environ["PROXY"]
             ), "PROXY error,PROXY must be http or socks"
             client.proxies = {os.environ["PROXY"]}
-        if "API_BASE" in os.environ:
-            client.base_url = os.environ["API_BASE"]
+        if "EMBED_API_BASE" in os.environ or "EMBED_BASE" in os.environ:
+            client.base_url = (
+        os.environ["EMBED_API_BASE"]
+        if "EMBED_API_BASE" in os.environ
+        else os.environ["API_BASE"]
+    )
         sentence = sentence.replace("\n", " ")
         embed = client.embeddings.create(input = sentence, model= embed_model_name,encoding_format="float").data[0].embedding
         embed = torch.tensor(embed, dtype=torch.float32)
