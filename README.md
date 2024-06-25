@@ -4,7 +4,7 @@
 ## <p align="center">Agents 2.0: Symbolic Learning Enables Self-Evolving Agents</p>
 
 <p align="center">
-<a href="https://oe-heart.github.io/Agents2.0/">[🤖Project]</a>
+<a href="https://aiwaves-cn.github.io/agents/">[🤖Project]</a>
 <a href="">[📄Paper]</a>
 <a href="https://agentsv2.readthedocs.io/">[📝Docs]</a>
 <a href="#overview">[🌟Overview]</a>
