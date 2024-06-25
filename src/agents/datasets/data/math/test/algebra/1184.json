@@ -1,0 +1,6 @@
+{
+    "problem": "In the sequence 0, 1, 1, 3, 6, 9, 27, ..., the first term is 0.   Subsequent terms are produced by alternately adding and  multiplying by each successive integer beginning with 1.  For  instance, the second term is produced by adding  1 to the first term; the third term is produced by  multiplying the second term by 1; the fourth term  is produced by adding 2 to the third term; and so  on.  What is the value of the first term that is greater than 125?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Continuing this sequence from the 27, we add four to make 31, then multiply 31 by four to make 124, then add five to 124 to make 129. Thus, $\\boxed{129}$ is the first term that is greater than 125."
+}

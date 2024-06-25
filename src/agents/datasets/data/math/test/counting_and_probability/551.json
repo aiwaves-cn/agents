@@ -1,0 +1,6 @@
+{
+    "problem": "Two standard six-faced dice are rolled. Jean wins if the product of the two numbers rolled is odd or a multiple of three, otherwise Allen wins. What is the probability that Jean wins? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "When two dice are rolled, there are 36 total outcomes. Let's compute the probability that Allen wins. Allen wins if the product of the two numbers is even and not a multiple of 3. In other words, Allen wins if the product is 2 $(1\\cdot2, 2\\cdot1)$, 4 $(1\\cdot4, 4\\cdot1, 2\\cdot2)$, 8 $(2\\cdot4, 4\\cdot2)$, 10 $(2\\cdot5, 5\\cdot2)$, 16 $(4\\cdot4)$, or 20 $(4\\cdot5, 5\\cdot4)$. Therefore, the probability that Allen wins is $\\frac{2+3+2+2+1+2}{36}=12/36=1/3$. Then, the probability that Jean wins is $1-1/3=\\boxed{\\frac{2}{3}}$."
+}

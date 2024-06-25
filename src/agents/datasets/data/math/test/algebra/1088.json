@@ -1,0 +1,6 @@
+{
+    "problem": "Expand $(2x^5 + 3x^2)(x^4 - 4x^2 + 3x - 8)$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Using the distributive property, we have \\begin{align*}\n&(2x^5 + 3x^2)(x^4 - 4x^2 + 3x - 8) \\\\\n&\\qquad= 2x^5(x^4 - 4x^2 + 3x - 8) + 3x^2(x^4 - 4x^2 + 3x - 8) \\\\\n&\\qquad= 2x^9 - 8x^7 + 6x^6 - 16x^5 + 3x^6 - 12x^4 + 9x^3 - 24x^2 \\\\\n&\\qquad= \\boxed{2x^9 - 8x^7 + 9x^6 - 16x^5 - 12x^4 + 9x^3 - 24x^2}.\n\\end{align*}"
+}

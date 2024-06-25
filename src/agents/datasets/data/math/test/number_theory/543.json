@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of distinct positive divisors of $(30)^4$ excluding 1 and $(30)^4$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "$$ (30^4) = (2^1 \\cdot 3^1 \\cdot 5^1)^4 = 2^4 \\cdot 3^4 \\cdot 5^4 $$Since $t(30^4) = (4+1)^3 = 125$, taking out 1 and $(30^4)$ leaves $125 - 2 = \\boxed{123}$ positive divisors."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the perimeter of pentagon $ABCDE$ in this diagram? [asy]\npair cis(real r,real t) { return (r*cos(t),r*sin(t)); }\npair a=(0,0);\npair b=cis(1,-pi/2);\npair c=cis(sqrt(2),-pi/4);\npair d=cis(sqrt(3),-pi/4+atan(1/sqrt(2)));\npair e=cis(2,-pi/4+atan(1/sqrt(2))+atan(1/sqrt(3)));\ndot(a); dot(b); dot(c); dot(d); dot(e);\ndraw(a--b--c--d--e--a);\ndraw(a--c); draw(a--d);\ndraw(0.86*b--0.86*b+0.14*(c-b)--b+0.14*(c-b));\ndraw(0.9*c--0.9*c+0.14*(d-c)--c+0.14*(d-c));\ndraw(0.92*d--0.92*d+0.14*(e-d)--d+0.14*(e-d));\nlabel(\"$A$\",a,NW);\nlabel(\"$B$\",b,SW);\nlabel(\"$C$\",c,SSE);\nlabel(\"$D$\",d,ESE);\nlabel(\"$E$\",e,NE);\nlabel(\"1\",(a+b)/2,W);\nlabel(\"1\",(b+c)/2,S);\nlabel(\"1\",(c+d)/2,SE);\nlabel(\"1\",(d+e)/2,E);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "By the Pythagorean theorem, we have: \\begin{align*}\nAC^2 &= AB^2 + BC^2 = 1+1 = 2; \\\\\nAD^2 &= AC^2 + CD^2 = 2+1 = 3; \\\\\nAE^2 &= AD^2 + DE^2 = 3+1 = 4.\n\\end{align*}Thus $AE=\\sqrt 4=2,$ and the perimeter of pentagon $ABCDE$ is $1+1+1+1+2 = \\boxed{6}$."
+}

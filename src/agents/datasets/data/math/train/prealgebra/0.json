@@ -1,0 +1,6 @@
+{
+    "problem": "Megan has lost Fatima's phone number. Megan knows that the first three digits are either 296 or 299. The remaining four digits are 0, 1, 6 and 7, but she isn't sure of the order of these digits. If Megan randomly dials a seven-digit number that meets these conditions, what is the probability that she dials Fatima's correct number? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are 2 different ways in which Megan can type the first three numbers. There are $4! = 24$ different orderings of the digits 0, 1, 6 and 7 for the last four digits. So, there are $2 \\cdot 24 = 48$ different numbers she can dial. Since exactly one number will be Fatima's, there is a $\\boxed{\\frac{1}{48}}$ probability of Megan guessing it right."
+}

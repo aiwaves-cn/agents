@@ -1,0 +1,6 @@
+{
+    "problem": "We have a triangle $\\triangle ABC$ such that $AB = 6,$ $BC = 8,$ and $CA = 10.$ If $AD$ is an angle bisector such that $D$ is on $BC,$ then find the value of $AD^2.$",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "First of all, a sketch might be useful: [asy]\npair pA, pB, pC, pD, pE;\npA = (0, 6);\npB = (0, 0);\npC = (-8, 0);\npD = (pB * 10 + pC * 6) / (14);\ndraw(pA--pB--pC--pA);\ndraw(pA--pD);\nlabel(\"$A$\", pA, N);\nlabel(\"$B$\", pB, SE);\nlabel(\"$C$\", pC, SW);\nlabel(\"$D$\", pD, S);\n[/asy] It is clear that we have a $3:4:5$ right triangle on our hands, so we have a right angle at $B.$ That means if we can find $DB,$ we can use the Pythagorean Theorem on $\\triangle ABD$ to find $AD^2.$\n\nTo find $DB,$ we see that $DB:DC = AB:AC = 6:10$ thanks to the Angle Bisector Theorem. That means $DB:DC:BC = 6:10:16,$ since $BC = DB + DC.$ So $DB = \\frac{6}{16} \\cdot BC = 3.$\n\nFinally, we have that $AD^2 = AB^2 + BD^2 = 6^2 + 3^2 = 36 + 9 = \\boxed{45}.$"
+}

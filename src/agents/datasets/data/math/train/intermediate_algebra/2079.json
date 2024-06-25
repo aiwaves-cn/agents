@@ -1,0 +1,6 @@
+{
+    "problem": "Find $c,$ given that $\\lfloor c\\rfloor$ satisfies \\[2x^2 + 17x - 55 = 0\\]and $\\{ c \\} = c - \\lfloor c \\rfloor $ satisfies \\[6x^2 - 23x + 7 = 0.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The first quadratic factors as \\[(2x-5)(x+11) = 0,\\]so its roots are $\\tfrac52$ and $-11.$ Since $\\lfloor c \\rfloor$ must be an integer, it must be the case that $\\lfloor c \\rfloor = -11.$\n\nThe second quadratic factors as \\[(3x-1)(2x-7) = 0,\\]so its roots are $\\tfrac13$ and $\\tfrac72.$ Since $0 \\le \\{c\\} < 1,$ it must be the case that $\\{c\\} = \\tfrac13.$\n\nThen $c = \\lfloor c\\rfloor + \\{c\\} = -11 + \\tfrac13 = \\boxed{-\\tfrac{32}{3}}.$"
+}

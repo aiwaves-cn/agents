@@ -1,0 +1,6 @@
+{
+    "problem": "We have triangle $\\triangle ABC$ where $AB = AC$ and $AD$ is an altitude. Meanwhile, $E$ is a point on $AC$ such that $AB \\parallel DE.$ If $BC = 12$  and the area of $\\triangle ABC$ is $180,$ what is the area of $ABDE$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We first draw a diagram: [asy]\npair A, B, C, D, E;\nA = (0, 30);\nB = (-12, 0);\nC = (12, 0);\nD = 0.5 * B + 0.5 * C;\nE = 0.5 * A + 0.5 * C;\ndraw(A--B--C--cycle);\ndraw(A--D);\ndraw(D--E);\ndraw(D+(-1, 0)--D+(-1, 1)--D+(0, 1));\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\n[/asy] Since $\\triangle ABC$ is isosceles, $AD$ is a median as well as an altitude. We then see that $\\triangle DEC \\sim \\triangle BAC$ and since $D$ is the midpoint of $BC,$ the area of $\\triangle DEC$ is $\\frac{1}{4}$ of the area of $\\triangle ABC,$ or 45. The area of $ABDE$ is, therefore, $180 - 45 = \\boxed{135}.$"
+}

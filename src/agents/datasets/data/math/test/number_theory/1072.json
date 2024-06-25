@@ -1,0 +1,6 @@
+{
+    "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv 142857\\pmod{18}~?$$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of 142857 is 27, so this number is a multiple of 9.  The number is odd, so it is not a multiple of 18.  Instead the number is 9 more than a multiple of 18.  Therefore  $$\\boxed{9}\\equiv 142857\\pmod {18}.$$"
+}

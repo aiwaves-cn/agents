@@ -1,0 +1,6 @@
+{
+    "problem": "A square and a right triangle have equal perimeters.  The legs of the right triangle are 20 inches and 15 inches.  What is the area of the square, in square inches?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The legs of the right triangle are in a $3:4$ ratio, so the right triangle is similar to a $3 - 4 - 5$ right triangle and thus it has hypotenuse $5\\cdot 5 = 25$.  The perimeter of the right triangle is then $15 + 20 + 25 = 60$.  Then the square has side length $60/4=15$ and area $15^2 = \\boxed{225}$ square inches."
+}

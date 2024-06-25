@@ -1,0 +1,6 @@
+{
+    "problem": "What is the shortest distance between the circles defined by $x^2-10x +y^2-4y-7=0$ and $x^2+14x +y^2+6y+49=0$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We complete the square for the first equation by observing that the first equation is equivalent to \\[\n(x^2-10x +25) +(y^2-4y +4)=36,\n\\] which is also equivalent to \\[\n(x-5)^2 +(y-2)^2 =6^2.\n\\] Similarly, the equation for the second circle is \\[\n(x+7)^2 +(y+3)^2 =3^2.\n\\] Hence, the centers of the circles are $(5,2)$ and $(-7,-3)$, and the radii of the circles are equal to 6 and 3, respectively.  The distance between the points $(5,2)$ and $(-7,-3)$ by the distance formula is $\\sqrt{(5-(-7))^2+(2-(-3))^2}=\\sqrt{12^2+5^2}=\\sqrt{169}=13$.  Therefore, to find the shortest distance between the two circles, we must subtract from $13$ the sum of the radii of the two circles.  Thus, the shortest distance between the circles is $13-3-6 = \\boxed{4}$."
+}

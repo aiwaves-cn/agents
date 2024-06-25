@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be acute angles such that\n\\begin{align*}\n3 \\sin^2 a + 2 \\sin^2 b &= 1, \\\\\n3 \\sin 2a - 2 \\sin 2b &= 0.\n\\end{align*}Find $a + 2b,$ as measured in radians.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the first equation, using the double angle formula,\n\\[3 \\sin^2 a = 1 - 2 \\sin^2 b = \\cos 2b.\\]From the second equation, again using the double angle formula,\n\\[\\sin 2b = \\frac{3}{2} \\sin 2a = 3 \\cos a \\sin a.\\]Since $\\cos^2 2b + \\sin^2 2b = 1,$\n\\[9 \\sin^4 a + 9 \\cos^2 a \\sin^2 a = 1.\\]Then $9 \\sin^2 a (\\sin^2 a + \\cos^2 a) = 1,$ so $\\sin^2 a = \\frac{1}{9}.$  Since $a$ is acute, $\\sin a = \\frac{1}{3}.$\n\nThen\n\\begin{align*}\n\\sin (a + 2b) &= \\sin a \\cos 2b + \\cos a \\sin 2b \\\\\n&= (\\sin a)(3 \\sin^2 a) + (\\cos a)(3 \\cos a \\sin a) \\\\\n&= 3 \\sin^3 a + 3 \\cos^2 a \\sin a \\\\\n&= 3 \\sin a (\\sin^2 a + \\cos^2 a) \\\\\n&= 1.\n\\end{align*}Since $a$ and $b$ are acute, $0 < a + 2b < \\frac{3 \\pi}{2}.$  Therefore, $a + 2b = \\boxed{\\frac{\\pi}{2}}.$"
+}

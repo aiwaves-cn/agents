@@ -1,0 +1,6 @@
+{
+    "problem": "Find the point where the line passing through $(3,4,1)$ and $(5,1,6)$ intersects the $xy$-plane.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The direction vector the line is $\\begin{pmatrix} 5 - 3 \\\\ 1 - 4 \\\\ 6 - 1 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -3 \\\\ 5 \\end{pmatrix},$ so the line is paramaterized by\n\\[\\begin{pmatrix} 3 \\\\ 4 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} 3 + 2t \\\\ 4 - 3t \\\\ 1 + 5t \\end{pmatrix}.\\]We want the $z$-coordinate to be 0, so $1 + 5t = 0.$  Then $t = -\\frac{1}{5},$ so the point of intersection is $\\boxed{\\left( \\frac{13}{5}, \\frac{23}{5}, 0 \\right)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two cards are dealt at random from a standard deck of 52 cards.  What is the probability that the first card is a $\\heartsuit$ and the second card is a $\\clubsuit$?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The probability that the first card is a $\\heartsuit$ is $\\dfrac14$. The second card then has a probability of $\\dfrac{13}{51}$ of being $\\clubsuit$.  So the answer is $\\dfrac14 \\times \\dfrac{13}{51} = \\boxed{\\dfrac{13}{204}}$."
+}

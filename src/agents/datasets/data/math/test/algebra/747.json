@@ -1,0 +1,6 @@
+{
+    "problem": "An algebraic expression of the form $a + bx$ has the value of $15$ when $x = 2$ and the value of $3$ when $x = 5$. Calculate $a + b$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, we write out the problem in equation form:\n\n\\begin{align*}\na + 2b &= 15, \\\\\na + 5b &= 3.\n\\end{align*}\n\nSubtracting the first equation from the second, we have $3b = -12 \\implies b = -4$. Then, substituting $b = -4$ into the first equation: \\begin{align*}\na + 2(-4) &= 15, \\\\\na &= 23.\n\\end{align*} so $a + b = 23 - 4 = \\boxed{19}$."
+}

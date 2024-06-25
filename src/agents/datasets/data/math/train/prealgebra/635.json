@@ -1,0 +1,6 @@
+{
+    "problem": "Stephan has been busy at work writing all the possible rearrangements of the letters in his name. He is one bored boy. If he can write twelve rearrangements of his name every minute, how many hours does it take to write all the possible rearrangements of his name?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Stephan does not have any repeated letters in his name. Therefore, his name can be rearranged in $7 \\cdot 6 \\cdot 5 \\cdot4\\cdot 3\\cdot 2\\cdot 1 = 5,\\!040$ ways. Then, we are given that he can write $12$ of these rearrangements every minute. Therefore, it takes him $\\dfrac{5,\\!040}{12} = 420$ minutes to write all the possible rearrangements. Finally, there are $60$ minutes in an hour, so we have: $$420\\text{ minutes} = \\dfrac{420}{60}\\text{ hours} = \\boxed{7\\text{ hours}.}$$"
+}

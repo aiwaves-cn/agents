@@ -1,0 +1,6 @@
+{
+    "problem": "How many fractions in the form $\\frac{n}{99}$, with $0<n<99$, are in lowest terms?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The prime factorization of 99 is $3^2\\cdot11$. So for $\\frac{n}{99}$ to be in lowest terms, $n$ cannot be divisible by 3 or 11. The possible values of $n$ are from 1 to 98, inclusive, so there are 98 possible values for $n$. We can find the number of multiples of 3 and multiples of 11 and subtract from 98 to get the number of values that aren't divisible by 3 or 11. For multiples of 3, we go from 3 to 96, or $3\\cdot1$ to $3\\cdot32$, so there are 32 multiples of 3 from 1 to 98, inclusive. For multiples of 11, we go from 11 to 88, so there are 8 multiples of 11 from 1 to 98, inclusive. We have to make sure we don't double-count the numbers that are multiples of both 3 and 11: 33 and 66. So there are $32+8-2=38$ values of $n$ that are divisible by 3 or 11. That means there are $98-38=\\boxed{60}$ values of $n$ for which $\\frac{n}{99}$ is in lowest terms."
+}

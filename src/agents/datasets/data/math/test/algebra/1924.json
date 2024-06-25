@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest integer value of $c$ such that the function $f(x)=\\frac{x^2+1}{x^2-x+c}$ has a domain of all real numbers?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The given function has a domain of all real numbers if and only if the denominator is never equal to zero.  In other words, the quadratic $x^2-x+c = 0$ has no real roots.  The discriminant of this quadratic is $1 - 4c$.  The quadratic has no real roots if and only if the discriminant is negative, so $1 - 4c < 0$, or $c > 1/4$.  The smallest integer $c$ that satisfies this inequality is $c = \\boxed{1}$."
+}

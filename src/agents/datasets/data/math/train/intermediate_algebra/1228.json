@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = |g(x^3)|$. If $g$ is an odd function, is $f$ odd, even, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "$$f(-x) = |g((-x)^3)| = |g(-x^3)|$$Since $g$ is odd, $g(-x) = -g(x)$. Then,\n$$f(-x) = |-g(x^3)| = |g(x^3)| = f(x).$$Hence, $f$ is $\\boxed{\\text{even}}$."
+}

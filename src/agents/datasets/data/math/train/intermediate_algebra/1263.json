@@ -1,0 +1,6 @@
+{
+    "problem": "Find the solutions to $z^3 = -8.$  Enter the solutions, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "From the equation $z^3 = -8,$ $z^3 + 8 = 0.$   We see that $z = -2$ is one solution, so we can take out a factor of $z + 2 = 0,$ which gives us\n\\[(z + 2)(z^2 - 2z + 4) = 0.\\]By the quadratic formula, the roots of $z^2 - 2z + 4 = 0$ are\n\\[z = \\frac{2 \\pm \\sqrt{2^2 - 4 \\cdot 4}}{2} = \\frac{2 \\pm 2i \\sqrt{3}}{2} = 1 \\pm i \\sqrt{3}.\\]Thus, the solutions are $\\boxed{-2, 1 + i \\sqrt{3}, 1 - i \\sqrt{3}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many vertical asymptotes does the graph of $y = \\frac{1}{x^3-3x^2+3x-1}$ have?",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $x^3-3x^2+3x-1 = (x-1)^3$. The function can be written as  $y = \\frac{1}{(x-1)^3}$. Vertical asymptotes occur at values of $x$ where the denominator is 0. In this case, there is only $\\boxed{1}$ vertical asymptote, which occurs where $x = 1$."
+}

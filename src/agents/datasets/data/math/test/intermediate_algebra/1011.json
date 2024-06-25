@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence of numbers $a_1,$ $a_2,$ $a_3,$ $a_4,$ $\\dots,$ has the property that each term after the first is one less than the product of its two neighbors.  If $a_1 = 1492$ and $a_2 = 1776,$ then determine $a_{2003}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the property given in the problem,\n\\[a_n = a_{n - 1} a_{n + 1} - 1.\\]Isolating $a_{n + 1},$ we find\n\\[a_{n + 1} = \\frac{a_n + 1}{a_{n - 1}}.\\]Let $a = a_1$ and $b = a_2.$  Then\n\\begin{align*}\na_3 &= \\frac{b + 1}{a}, \\\\\na_4 &= \\frac{(b + 1)/a + 1}{b} = \\frac{a + b + 1}{ab}, \\\\\na_5 &= \\frac{(a + b + 1)/(ab) + 1}{(b + 1)/a} = \\frac{a + 1}{b}, \\\\\na_6 &= \\frac{(a + 1)/b + 1}{(a + b + 1)/(ab)} = a, \\\\\na_7 &= \\frac{a + 1}{(a + 1)/b} = b.\n\\end{align*}Note that $a_6 = a = a_1$ and $a_7 = b = a_2.$  Since each term depends only on the two previous terms, the sequence is periodic from here on, and the length of the period is 5.  Therefore,\n\\[a_{2003} = a_3 = \\frac{b + 1}{a} = \\frac{a_2 + 1}{a_1} = \\boxed{\\frac{1777}{1492}}.\\]"
+}

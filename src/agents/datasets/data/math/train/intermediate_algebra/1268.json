@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $a$ for which $\\frac{1}{\\text{log}_2a} + \\frac{1}{\\text{log}_3a} + \\frac{1}{\\text{log}_4a} = 1$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By the change-of-base formula, the equation becomes\n\\[\\log_a 2 + \\log_a 3 + \\log_a 4 = 1.\\]Then $\\log_a 24 = 1,$ so $a = \\boxed{24}.$"
+}

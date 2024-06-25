@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest number of interior right angles a convex octagon can have?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The sum of the interior angles in an octagon will be $(8-2)\\cdot 180=1080^{\\circ}$.  We know that the angles which are not right must have measure less than 180 if the polygon is to be convex.  So, let $n$ equal the number of right angles in the octagon.  The average measure of the remaining angles must be less than $180^{\\circ}$, which is equivalent to: $$\\frac{1080-90n}{8-n}<180$$ We can simplify this inequality: $$1080-90n<1440-180n$$ $$90n<360$$ $$n<4$$ So, the greatest possible number of right angles will be $\\boxed{3}$."
+}

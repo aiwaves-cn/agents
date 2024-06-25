@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z_1 = 18 + 83i$, $z_2 = 18 + 39i,$ and $z_3 = 78 + 99i,$ where $i^2 = -1$. Let $z$ be the unique complex number with the properties that $\\frac{z_3 - z_1}{z_2 - z_1} \\cdot \\frac{z - z_2}{z - z_3}$ is a real number and the imaginary part of $z$ is the greatest possible. Find the real part of $z$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = a + bi,$ where $a$ and $b$ are real numbers.  Then\n\\begin{align*}\n\\frac{z_3 - z_1}{z_2 - z_1} \\cdot \\frac{z - z_2}{z - z_3} &= \\frac{60 + 16i}{-44i} \\cdot \\frac{(a - 18) + (b - 39)i}{(a - 78) + (b - 99)i} \\\\\n&= \\frac{-4 + 15i}{11} \\cdot \\frac{[(a - 18) + (b - 39)i][(a - 78) - (b - 99)i]}{(a - 78)^2 + (b - 99)^2}.\n\\end{align*}This expression is real if and only if the imaginary part is 0.  In other words,\n\\[(-4 + 15i)[(a - 18) + (b - 39)i][(a - 78) - (b - 99)i]\\]has imaginary part 0.  In turn this is equivalent to\n\\[(-4)(-(a - 18)(b - 99) + (a - 78)(b - 39)) + 15((a - 18)(a - 78) + (b - 39)(b - 99)) = 0.\\]This simplifies to $a^2 - 112a + b^2 - 122b + 4929 = 0.$  Completing the square, we get\n\\[(a - 56)^2 + (b - 61)^2 = 1928,\\]so\n\\[(a - 56)^2 = 1928 - (b - 61)^2.\\]When $b$ is maximized, the right-hand side is 0, and $a = \\boxed{56}.$"
+}

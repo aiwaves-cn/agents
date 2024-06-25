@@ -1,0 +1,6 @@
+{
+    "problem": "The quadratic $x^2+(2.6)x+3.6$ can be written in the form $(x+b)^2+c$, where $b$ and $c$ are constants. What is $b+c$ (as a decimal)?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We complete the square.\n\nWe have $(x+1.3)^2 = x^2 + (2.6)x + 1.69$, and so\n\n\\begin{align*}\nx^2+(2.6)x+3.6 &= (x+1.3)^2 - 1.69 + 3.6 \\\\\n&= (x+1.3)^2 + 1.91.\n\\end{align*}Therefore, $b=1.3$ and $c=1.91$, which gives us $b+c = \\boxed{3.21}$."
+}

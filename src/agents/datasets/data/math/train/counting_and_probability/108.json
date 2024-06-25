@@ -1,0 +1,6 @@
+{
+    "problem": "How many perfect squares are between 50 and 250?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Since $7^2 < 50 < 8^2$ and $15^2 < 250 < 16^2$, the squares between 50 and 250 are $8^2,9^2,10^2,\\ldots,15^2$.  So there are $15 - 8 + 1 = \\boxed{8}$ such squares."
+}

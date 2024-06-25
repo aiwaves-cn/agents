@@ -1,0 +1,6 @@
+{
+    "problem": "How many square units are in the area of the largest square that can be inscribed in a circle with radius 1 unit?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The diagonal of a square inscribed in a circle is a diameter of the circle, so the length of the diagonal of the square is 2 units.  Recall that the area of a square with diagonal $d$ is $d^2/2$.  The area of a square whose diagonal measures 2 units is $2^2/2=\\boxed{2}$ square units.\n\nNote: To derive the area formula $d^2/2$, divide the square into two 45-45-90 right triangles.  The side length of the square is $d/\\sqrt{2}$ and its area $(d/\\sqrt{2})^2=d^2/2$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A square has sides of length 10, and a circle centered at one of its vertices has radius 10.  What is the area of the union of the regions enclosed by the square and the circle? Express your answer in terms of $\\pi$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The areas of the regions enclosed by the square and the circle are $10^{2}=100$ and $\\pi(10)^{2}= 100\\pi$, respectively. One quarter of the second region is also included in the first, so the area of the union is \\[\n100+ 100\\pi -25\\pi= \\boxed{100+75\\pi}.\n\\]"
+}

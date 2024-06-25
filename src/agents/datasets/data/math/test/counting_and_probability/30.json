@@ -1,0 +1,6 @@
+{
+    "problem": "How many primes are in the row of Pascal's Triangle that starts with a $1$ followed by a $6$?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "If the row contains a $1$, then a $6$, then the binomial coefficients must be $\\binom{6}{0}$ and $\\binom{6}{1}$. All we need to check now are $\\binom{6}{2}$ and $\\binom{6}{3}$, since $\\binom{6}{0} = \\binom{6}{6}$, $\\binom{6}{1} = \\binom{6}{5}$ , and $\\binom{6}{2} = \\binom{6}{4}$. $\\binom{6}{2} = \\frac{6!}{4! \\times 2!} = 15$, and $\\binom{6}{3} = \\frac{6!}{3! \\times 3!} = 20$. None of those is prime, so there are $\\boxed{0}$ prime numbers in the given row."
+}

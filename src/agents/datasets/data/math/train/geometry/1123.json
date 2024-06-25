@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle ABC$, we have $AC=BC=7$  and $AB=2$. Suppose that  $D$ is a point on line $AB$ such that $B$ lies between $A$ and $D$ and $CD=8$. What is  $BD$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let $\\overline{CH}$  be an altitude of $\\triangle ABC$. Applying the Pythagorean Theorem to $\\triangle CHB$ and to $\\triangle CHD$ produces \\[\n8^2 - (BD +1)^2 = CH^2 = 7^2 - 1^2 = 48, \\quad \\text{so} \\quad (BD+1)^2 = 16.\n\\] Thus $BD = \\boxed{3}$.\n\n[asy]\nunitsize(0.5cm);\npair A,B,C,D,H;\nA=(0,0);\nH=(1,0);\nB=(2,0);\nD=(5,0);\nC=(1,6);\ndraw(A--C--D--cycle,linewidth(0.7));\ndraw(H--C--B--cycle,linewidth(0.7));\nlabel(\"1\",(0.5,0),N);\nlabel(\"1\",(1.5,0),N);\nlabel(\"7\",(0.5,3),NW);\nlabel(\"7\",(1.5,3),NE);\nlabel(\"8\",(3.5,3),NE);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$D$\",D,S);\nlabel(\"$H$\",H,S);\nlabel(\"$C$\",C,N);\n[/asy]"
+}

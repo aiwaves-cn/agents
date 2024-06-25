@@ -1,0 +1,6 @@
+{
+    "problem": "In the polynomial $(ax^6+bx^8+cx^3+d)(x^5+ex^4+f)(x^2+gx+h)$, letters $a$ through $h$ are all nonzero constants. What is the degree of the polynomial?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "In order to determine the degree of a polynomial, we need to know the largest exponent of the variable in the polynomial. When we multiply out the expression above, the term with the largest exponent results from the product of the terms with the largest exponents within each multiplied quantity. These terms are $bx^8$, $x^5$, and $x^2$. Taking the product of all of these terms $bx^8 \\cdot x^5 \\cdot x^2=bx^{15}$, we find that the largest exponent is $\\boxed{15}$. (Note that the coefficient of $bx^{15}$ is given to be nonzero, so $15$ is indeed the degree of the polynomial.)"
+}

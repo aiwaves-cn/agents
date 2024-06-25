@@ -1,0 +1,6 @@
+{
+    "problem": "How many integers $n$ satisfy the inequality $-8\\pi\\le n\\le10\\pi$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The number $\\pi$ is between $3.14$ and $3.15$, so $-8\\pi$ is between $-8(3.15) = 25.2$ and $-8(3.14) = 25.12$. Likewise, $10\\pi$ is between $31.4$ and $31.5$. This suffices to establish that the integers $n$ between $-8\\pi$ and $10\\pi$ are precisely $$-25, -24, -23, -22, \\ldots, 28, 29, 30, 31.$$ There are $25$ negative integers in this list, $31$ positive integers, and one more integer ($0$), making $\\boxed{57}$ integers in total."
+}

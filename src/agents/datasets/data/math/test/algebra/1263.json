@@ -1,0 +1,6 @@
+{
+    "problem": "An airplane climbs 100 feet during the first second after takeoff.  In each succeeding second it climbs 100 feet more than it climbed during the previous second.  How many  seconds does it take for the plane to reach an altitude of   12,000 feet above its takeoff height?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "After $t$ seconds, the airplane's altitude (in feet) is $100 + 200 + \\dots + 100t = 100(1 + 2 + \\dots + t) = 100 \\cdot t(t + 1)/2 = 50t(t + 1)$.  Thus, we want to find the smallest $t$ such that $50t(t + 1) \\ge 12000$.  Dividing both sides by 50, we get \\[t(t + 1) \\ge 240.\\] Since $15 \\cdot 16 = 240$, the smallest such $t$ is $t = \\boxed{15}$."
+}

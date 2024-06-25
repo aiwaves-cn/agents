@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $\\sin A = \\frac{3}{5}$ and $\\cos B = \\frac{5}{13}.$  Find $\\cos C.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\cos^2 A = 1 - \\sin^2 A = \\frac{16}{25},\\]so $\\cos A = \\pm \\frac{4}{5}.$\n\nAlso,\n\\[\\sin^2 B = 1 - \\cos^2 B = \\frac{144}{169}.\\]Since $\\sin B$ is positive, $\\sin B = \\frac{12}{13}.$\n\nThen\n\\begin{align*}\n\\sin C &= \\sin (180^\\circ - A - B) \\\\\n&= \\sin (A + B) \\\\\n&= \\sin A \\cos B + \\cos A \\sin B \\\\\n&= \\frac{3}{5} \\cdot \\frac{5}{13} \\pm \\frac{4}{5} \\cdot \\frac{12}{13}.\n\\end{align*}Since $\\sin C$ must be positive, $\\cos A = \\frac{4}{5}.$  Then\n\\begin{align*}\n\\cos C &= \\cos (180^\\circ - A - B) \\\\\n&= -\\cos (A + B) \\\\\n&= -(\\cos A \\cos B - \\sin A \\sin B) \\\\\n&= -\\left( \\frac{4}{5} \\cdot \\frac{5}{13} - \\frac{3}{5} \\cdot \\frac{12}{13} \\right) \\\\\n&= \\boxed{\\frac{16}{65}}.\n\\end{align*}"
+}

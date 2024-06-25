@@ -1,0 +1,6 @@
+{
+    "problem": "Divide the product of the first five positive composite integers by the product of the next five composite integers. Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The first ten positive composite integers are 4, 6, 8, 9, 10, 12, 14, 15, 16, 18. The desired quotient is $\\frac{4\\cdot6\\cdot8\\cdot9\\cdot10}{12\\cdot14\\cdot15\\cdot16\\cdot18}$. After cancellation, we get $\\frac{1}{14\\cdot3}=\\boxed{\\frac{1}{42}}$."
+}

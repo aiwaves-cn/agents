@@ -1,0 +1,6 @@
+{
+    "problem": "If $|z| = 5$, and $|w| = 2$, what is the minimum value of $|z-w|$?",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "The easiest solution is geometric. Recall that $|z|$ can be interpreted as the distance of $z$ from the origin in the complex plane; the given information tells us that $z$ lies on a circle of radius 5 and $w$ lies on a circle of radius 2. Drawing these circles in the complex plane, we see that $z$ and $w$ are closest together when they lie on a common radius, with $w$ in the same quadrant as $z$. This gives the minimum value of $|z-w|$ as $5 - 2 = \\boxed{3}$. (This is a special case of the triangle inequality for complex numbers.)\n\n[asy]\nunitsize(0.5 cm);\n\npair Z, W;\n\nZ = 2*dir(34);\nW = 5*dir(78);\n\ndraw(Circle((0,0),2),red);\ndraw(Circle((0,0),5),blue);\ndraw(Z--W);\n\ndot(\"$z$\", Z, SW);\ndot(\"$w$\", W, N);\n[/asy]"
+}

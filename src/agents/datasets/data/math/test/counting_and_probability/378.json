@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can we seat 6 people at a round table if John and Sam insist on sitting next to each other? (Two seatings are equivalent if one is a rotation of the other.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "To take care of rotations, we can fix John at the topmost seat.  We then have two choices for Sam: either side of John. The other four may sit anywhere in the other four seats. Thus there are $2\\times 4! = \\boxed{48}$ ways."
+}

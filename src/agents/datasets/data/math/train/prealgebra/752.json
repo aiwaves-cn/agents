@@ -1,0 +1,6 @@
+{
+    "problem": "The difference when the product of 4 and a number is subtracted from 16 is greater than 10. How many positive integers satisfy the given conditions?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "First, we have to figure out what the problem is asking. The words \"is greater than\" tell us that there's an inequality. To write it down in math notation, we start by defining a variable $n$ as the mystery number.\n\nThen the \"product of 4 and a number\" is $4n$, and the difference when this is subtracted from $16$ is $16-4n$. So, the inequality says that $$16-4n > 10.$$ To solve this inequality, we can start by subtracting $10$ from both sides: $$6-4n > 0.$$ Then we add $4n$ to both sides: $$6 > 4n.$$ Finally, we divide both sides by $4$ to get $$1\\dfrac 12 > n.$$ The only positive integer satisfying this inequality is $n=1$, so there is $\\boxed{1}$ such number."
+}

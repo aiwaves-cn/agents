@@ -1,0 +1,6 @@
+{
+    "problem": "The function\n\\[f(z) = \\frac{(-1 + i \\sqrt{3}) z + (-2 \\sqrt{3} - 18i)}{2}\\]represents a rotation around some complex number $c$.  Find $c$.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Since a rotation around $c$ fixes $c$, the complex number $c$ must satisfy $f(c) = c$.  In other words,\n\\[c = \\frac{(-1 + i \\sqrt{3}) c + (-2 \\sqrt{3} - 18i)}{2}\\]Then $2c = (-1 + i \\sqrt{3}) c + (-2 \\sqrt{3} - 18i)$, so\n\\[(3 - i \\sqrt{3}) c = -2 \\sqrt{3} - 18i.\\]Then\n\\begin{align*}\nc &= \\frac{-2 \\sqrt{3} - 18i}{3 - i \\sqrt{3}} \\\\\n&= \\frac{(-2 \\sqrt{3} - 18i)(3 + i \\sqrt{3})}{(3 - i \\sqrt{3})(3 + i \\sqrt{3})} \\\\\n&= \\frac{-6 \\sqrt{3} - 6i - 54i + 18 \\sqrt{3}}{12} \\\\\n&= \\frac{12 \\sqrt{3} - 60i}{12} \\\\\n&= \\boxed{\\sqrt{3} - 5i}.\n\\end{align*}"
+}

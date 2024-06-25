@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $n$ such that $10^n = 10^{-5}\\times \\sqrt{\\frac{10^{73}}{0.001}}$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We will simplify the fraction inside the square root first. Since $0.001=10^{-3}$, we can rewrite the fraction as $\\frac{10^{73}}{10^{-3}}=10^{76}$. The entire equation becomes $10^n=10^{-5}\\times \\sqrt{10^{76}}$. Taking the square root of $10^{76}$ gives us \\[\\sqrt{10^{76}} = \\sqrt{10^{38\\cdot 2}} = \\sqrt{(10^{38})^2} = 10^{38}.\\] Therefore, our equation now is $10^n=10^{-5}\\times 10^{38}$. The right hand side becomes $10^{-5+38}=10^{33}$. The equation becomes $10^n=10^{33}$, so $n=\\boxed{33}$."
+}

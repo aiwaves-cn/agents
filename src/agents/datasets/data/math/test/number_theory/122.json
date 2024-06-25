@@ -1,0 +1,6 @@
+{
+    "problem": "For any integer $x$, $\\boxed{x}$ is defined to be the product of all its factors greater than 1 not including $x$. Find $\\fbox{12}$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "For every divisor $d$ of $12$, the number $12/d$ is also a divisor of $12$. Their product is $d \\cdot (12/d) = 12$. It follows that every divisor can be paired with another divisor of $12$ such that their product is $12 = 2^2 \\cdot 3$. There are $(2+1)(1+1) = 6$ divisors of $12$, namely $1,2,3,4,6,12$. Thus, the product of the divisors is given by $12^{6/2} = 12^3.$ Since we need to exclude $12$ itself, the answer is $\\frac{12^3}{12} = \\boxed{144}$."
+}

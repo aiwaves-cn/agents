@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $AB = 10$ and $AC = 17$.  Let $D$ be the foot of the perpendicular from $A$ to $BC$.  If $BD:CD = 2:5$, then find $AD$.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let $h = AD$.  Then by Pythagoras on right triangle $ABD$, \\[BD^2 = 10^2 - h^2 = 100 - h^2,\\]and by Pythagoras on right triangle $ACD$, \\[CD^2 = 17^2 - h^2 = 289 - h^2.\\][asy]\nimport graph;\n\nunitsize(0.3 cm);\n\npair A, B, C, D;\n\nA = (6,8);\nB = (0,0);\nC = (21,0);\nD = (6,0);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, dir(90));\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\n\nlabel(\"$10$\", (A + B)/2, NW);\nlabel(\"$17$\", (A + C)/2, NE);\nlabel(\"$h$\", (A + D)/2, E);\n[/asy]\n\nBut $BD:CD = 2:5$, so $BD^2 : CD^2 = 4:25$.  Hence, \\[\\frac{100 - h^2}{289 - h^2} = \\frac{4}{25}.\\]Solving for $h$, we find $h = \\boxed{8}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the infinite arithmetic sequence $A$ with first term $5$ and common difference $-2$. Now define the infinite sequence $B$ so that the $k^{th}$ term of $B$ is $2$ raised to the $k^{th}$ term of $A$. Find the sum of all of the terms of $B$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "$B$ is an infinite geometric sequence with first term $2^5$ and common ratio $2^{-2}=\\frac{1}{4}$. Thus the sum of all of the terms of $B$ is: $\\frac{32}{1-\\frac{1}{4}}=\\boxed{\\frac{128}{3}}$."
+}

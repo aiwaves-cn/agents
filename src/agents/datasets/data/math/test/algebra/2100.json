@@ -1,0 +1,6 @@
+{
+    "problem": "A chime clock strikes 1 chime at one o'clock, 2 chimes at two o'clock, 3 chimes at three o'clock, and so forth. What is the total number of chimes the clock will strike in a twelve-hour period?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We want to find the sum $1 + 2 + \\dots + 12$.  This sum is equal to the average of the first and last term, multiplied by the total number of terms, which is \\[\\frac{1 + 12}{2} \\cdot 12 = \\boxed{78}.\\]"
+}

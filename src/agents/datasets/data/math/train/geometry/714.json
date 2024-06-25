@@ -1,0 +1,6 @@
+{
+    "problem": "A sphere is inscribed in a cube, and the cube has a surface area of 24 square meters. A second cube is then inscribed within the sphere. What is the surface area in square meters of the inner cube?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Since the surface area of the original cube is 24 square meters, each face of the cube has a surface area of $24/6 = 4$ square meters, and the side length of this cube is 2  meters. The sphere inscribed within the cube has diameter 2 meters,  which is also the length of the diagonal of the cube inscribed in the sphere. Let $l$ represent the side length of the inscribed cube. Applying the Pythagorean Theorem twice gives \\[\nl^2 + l^2 + l^2 = 2^2 = 4.\n\\]Hence each face has surface area \\[\nl^2 = \\frac{4}{3} \\ \\text{square meters}.\n\\]So the surface area of the inscribed cube is $6\\cdot (4/3) = \\boxed{8}$ square meters."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $k$ so that the domain of\n\\[b(x) = \\frac{kx^2 + 2x - 5}{-5x^2 + 2x + k}\\]is the set of all real numbers.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The domain of the function is the set of all real numbers if and only if the denominator $-5x^2 + 2x + k$ is nonzero for all $x.$  In other words, the quadratic\n\\[-5x^2 + 2x + k = 0\\]should not have any real solutions.  This means that the discriminant is negative, i.e.\n\\[4 - 4(-5)(k) = 4 + 20k < 0.\\]Solving, we find $k < -\\frac{1}{5}.$  Therefore, the set of all possible $k$ is $\\boxed{\\left( -\\infty, -\\frac{1}{5} \\right)}.$"
+}

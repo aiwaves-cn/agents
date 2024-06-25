@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $$(m+n+p)(mn+mp+np)=25$$ and that $$m^2(n+p)+n^2(m+p)+p^2(m+n)=4$$ for real numbers $m$, $n$, and $p$, what is the value of $mnp$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Expanding the first given equation using the distributive property, we have \\begin{align*}\n25&=(m+n+p)(mn+mp+np)\\\\\n&=m\\cdot(mn+mp+np)+n\\cdot(mn+mp+np)\\\\\n&\\qquad+p\\cdot(mn+mp+np)\\\\\n&=m^2n+m^2p+mnp+mn^2+mnp\\\\\n&\\qquad +n^2p+mnp+mp^2+np^2\\\\\n&=3mnp+m^2n+m^2p+mn^2+n^2p+mp^2+np^2\n\\end{align*} Expanding the second given equation using the distributive property, we have \\begin{align*}\n4&=m^2(n+p)+n^2(m+p)+p^2(m+n)\\\\\n&=m^2n+m^2p+mn^2+n^2p+mp^2+np^2\\end{align*} We substitute the equation $$4=m^2n+m^2p+mn^2+n^2p+mp^2+np^2$$ into the expanded form of the first given equation to get \\[25=3mnp+4\\] or $mnp=\\boxed{7}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If the volume of a sphere inscribed in a cube is $\\frac{\\pi}{6}$ cubic inches, what is the number of cubic inches in the volume of the cube?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "A sphere with radius $r$ has volume $\\frac{4}{3}\\pi r^3$, so here we have \\[\\frac{4}{3}\\pi r^3 = \\frac{\\pi}{6}.\\] Solving for $r$ yields $r^3 = \\frac{1}{8}$ so $r = \\sqrt[3]{\\frac{1}{8}} = \\frac{1}{2}$. [asy]\nsize(60);\ndraw(Circle((6,6),4.5));\ndraw((10.5,6)..(6,6.9)..(1.5,6),linetype(\"2 4\"));\ndraw((10.5,6)..(6,5.1)..(1.5,6));\ndraw((0,0)--(9,0)--(9,9)--(0,9)--cycle);\ndraw((0,9)--(3,12)--(12,12)--(9,9));\ndraw((12,12)--(12,3)--(9,0));\ndraw((0,0)--(3,3)--(12,3),dashed); draw((3,3)--(3,12),dashed);\n[/asy] The diameter of the inscribed sphere is equal to the side length of the cube, so the side length of the cube is 1, and the volume of the cube is $1^3=\\boxed{1}$ cubic inch."
+}

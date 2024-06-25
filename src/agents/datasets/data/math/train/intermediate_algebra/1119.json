@@ -1,0 +1,6 @@
+{
+    "problem": "Two solutions of\n\\[x^4 - 3x^3 + 5x^2 - 27x - 36 = 0\\]are pure imaginary.  Enter these solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = ki,$ where $k$ is a real number.  Then the given equation becomes\n\\[(ki)^4 - 3(ki)^3 + 5(ki)^2 - 27(ki) - 36 = 0,\\]which simplifies to\n\\[k^4 + 3ik^3 - 5k^2 - 27ik - 36 = 0.\\]The imaginary part must be 0, so $3ik^3 - 27ik = 3ik(k^2 - 9) = 0.$\n\nSince $k = 0$ does not work, we must have $k = \\pm 3$.  Therefore, the pure imaginary solutions are $\\boxed{3i,-3i}.$"
+}

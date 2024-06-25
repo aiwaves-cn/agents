@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $f(x)=x^4+ax^3+bx^2+cx+d$ has real coefficients, and $f(2i)=f(2+i)=0$.  What is $a+b+c+d$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Because $f(x)$ has real coefficients and $2i$ and $2+i$ are zeros, so are their conjugates $-2i$ and $2-i$. Therefore\n\n\\begin{align*}\nf(x)=(x+2i)(x-2i)(x-(2+i))(x-(2-i))&=(x^2+4)(x^2-4x+5)\\\\\n&=x^4-4x^3+9x^2-16x+20.\n\\end{align*}Hence $a+b+c+d=-4+9-16+20=\\boxed{9}$."
+}

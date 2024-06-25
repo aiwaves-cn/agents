@@ -1,0 +1,6 @@
+{
+    "problem": "A box contains 5 white balls and 6 black balls.  Five balls are drawn out of the box at random.  What is the probability that they all are white?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{11}{5} = 462$ ways to choose 5 balls out of the box.  There is only $\\binom{5}{5} = 1$ way to choose 5 white balls out of 5.  This means that the probability that all 5 balls are white is $\\boxed{\\dfrac{1}{462}}$."
+}

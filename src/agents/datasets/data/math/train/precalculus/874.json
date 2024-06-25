@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $\\angle B = 60^\\circ$ and $\\angle C = 45^\\circ.$  The point $D$ divides $\\overline{BC}$ in the ratio $1:3$.  Find\n\\[\\frac{\\sin \\angle BAD}{\\sin \\angle CAD}.\\]",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "By the Law of Sines on triangle $ABC,$\n\\[\\frac{BD}{\\sin \\angle BAD} = \\frac{AD}{\\sin 60^\\circ} \\quad \\Rightarrow \\quad \\quad \\sin \\angle BAD = \\frac{BD \\sqrt{3}}{2 AD}.\\]By the Law of Sines on triangle $ACD,$\n\\[\\frac{CD}{\\sin \\angle CAD} = \\frac{AD}{\\sin 45^\\circ} \\quad \\Rightarrow \\quad \\quad \\sin \\angle CAD = \\frac{CD}{AD \\sqrt{2}}.\\][asy]\nunitsize (5 cm);\n\npair A, B, C, D;\n\nB = (0,0);\nC = (1,0);\nA = extension(B, B + dir(60), C, C + dir(180 - 45));\nD = interp(B,C,1/4);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\n[/asy]\n\nThen\n\\[\\frac{\\sin \\angle BAD}{\\sin \\angle CAD} = \\frac{\\frac{BD \\sqrt{3}}{2 AD}}{\\frac{CD}{AD \\sqrt{2}}} = \\frac{BD \\sqrt{6}}{2 CD} = \\boxed{\\frac{\\sqrt{6}}{6}}.\\]"
+}

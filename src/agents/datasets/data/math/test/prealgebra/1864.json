@@ -1,0 +1,6 @@
+{
+    "problem": "The circle graph shows the favorite ice cream flavors of those surveyed. What fraction of people surveyed selected either chocolate or strawberry as their favorite flavor of ice cream? [asy]\nsize(200);\ndraw(Circle((0,0),10));\ndraw((0,10)--(0,-10));\ndraw((0,0)--(10,0));\ndraw((0,0)--(10*cos(pi/5),10*sin(pi/5)));\nlabel(\"50\\%\",(-5,0),N);\nlabel(\"Chocolate\",(-5,0),S);\nlabel(\"25\\%\",(4,-5),N);\nlabel(\"Vanilla\",(4,-5),S);\nlabel(\"15\\%\",(2,6),N);\nlabel(\"Mint\",(2,6),S);\nlabel(\"10\\%\",(8,2),N);\nlabel(\"Strawberry\",(7,2),S);\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since $50\\%$ selected chocolate and $10\\%$ selected strawberry as their favorite flavor, then overall $50\\%+10\\%=60\\%$ chose chocolate or strawberry as their favorite flavor. Now $$60\\% = \\frac{60}{100}=\\frac{3}{5},$$so $\\boxed{\\frac{3}{5}}$ of the people surveyed selected chocolate or strawberry as their favorite flavor."
+}

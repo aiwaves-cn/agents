@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, what is the value of $y$? [asy]\ndraw((5,0)--(0,0)--(0,5));\ndraw((.5,0)--(.5,.5)--(0,.5));\ndraw(Arc((0,0),1,90,360),Arrows);\nlabel(\"$y^\\circ$\",(-1,-1),SW);\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "When the unknown angle $y^{\\circ}$ is added to the $90^{\\circ}$ angle, the result is a complete rotation, or $360^{\\circ}$.  Thus, $y^{\\circ}+90^{\\circ}=360^{\\circ}$ or $y=360-90=\\boxed{270}$."
+}

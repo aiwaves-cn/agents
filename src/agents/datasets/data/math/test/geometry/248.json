@@ -1,0 +1,6 @@
+{
+    "problem": "The volume of the cylinder shown is $45\\pi$ cubic cm. What is the height in centimeters of the cylinder? [asy]\nsize(120);\ndraw(shift(2.2,0)*yscale(0.3)*Circle((0,0), 1.2));\n\ndraw((1,0)--(1,-2));\ndraw((3.4,0)--(3.4,-2));\n\ndraw((1,-2)..(2.2,-2.36)..(3.4,-2));\n\nlabel(\"$h$\",midpoint((3.4,0)--(3.4,-2)),E);\n\ndraw (((2.2,0)--(3.4,0)));\n\nlabel(\"$r=3$\",midpoint((2.2,0)--(3.4,0)),N);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The volume of the cylinder is $bh=\\pi r^2h$. The radius of the base is $3$ cm, so we have $9\\pi h=45\\pi\\qquad\\Rightarrow h=5$. The height of the cylinder is $\\boxed{5}$ cm."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two ropes, 18 meters in length and 24 meters in length, need to be cut into pieces which are all the same length. What is the greatest possible length of each piece?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "If the two ropes are cut into pieces of length $x$, then both $18$ and $24$ must be divisible by $x$. Therefore, we are looking for the greatest common divisor (GCD) of $18$ and $24$. We know that $18=2\\cdot 3^2$ and $24=2^3 \\cdot 3$, so their GCD is $2 \\cdot 3 = \\boxed{6}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $-4\\leq x\\leq-2$ and $2\\leq y\\leq4$, what is the largest possible value of $\\frac{x+y}{x}$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\[\\frac{x + y}{x} = 1 + \\frac{y}{x}.\\]Note that $x$ is always negative and $y$ is always positive.  Thus, to maximize $\\frac{y}{x},$ we should take the smallest value of $x$ and the smallest value of $y,$ which gives us\n\\[1 + \\frac{2}{-4} = 1 - \\frac{1}{2} = \\boxed{\\frac{1}{2}}.\\]"
+}

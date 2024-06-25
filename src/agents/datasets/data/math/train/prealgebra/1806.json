@@ -1,0 +1,6 @@
+{
+    "problem": "What is $\\frac{0.\\overline{72}}{0.\\overline{27}}$? Express your answer as a common fraction in lowest terms.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Notice that $0.\\overline{72} = 72 \\cdot 0.\\overline{01}$ and $0.\\overline{27} = 27 \\cdot 0.\\overline{01}.$ Our expression easily simplifies to \\begin{align*}\n\\frac{0.\\overline{72}}{0.\\overline{27}} &= \\frac{72 \\cdot 0.\\overline{01}}{27 \\cdot 0.\\overline{01}} \\\\\n&= \\frac{\\cancelto{8}{72}\\hspace{2mm}}{\\cancelto{3}{27}\\hspace{2mm}} \\cdot \\frac{\\cancel{0.\\overline{01}}}{\\cancel{0.\\overline{01}}} \\\\\n&= \\boxed{\\frac{8}{3}}.\n\\end{align*}"
+}

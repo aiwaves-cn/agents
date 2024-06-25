@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\frac{9^n\\cdot3^{2n+1}}{81}=243$, find $n$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We begin by rewriting the left side as a power of 3: $\\frac{9^n\\cdot3^{2n+1}}{81}=\\frac{3^{2n}\\cdot3^{2n+1}}{3^4}=3^{4n+1-4}=3^{4n-3}$. Since this expression is equal to 243 (or $3^5$), we know that $4n-3=5$. Solving for $n$, we get that $n=\\frac{5+3}{4}=\\boxed{2}$."
+}

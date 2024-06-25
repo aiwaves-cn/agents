@@ -1,0 +1,6 @@
+{
+    "problem": "For how many values of $x$ is the function $y=\\frac{x-2}{x^2-7x+10}$ not defined?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "By factoring the denominator, the equation becomes \\[y=\\frac{x-2}{(x-2)(x-5)}.\\]The function is not defined when the denominator is 0, which occurs at $x = 2$ and $x = 5$.  Therefore, there are $\\boxed{2}$ values of $x$ for which the function is not defined."
+}

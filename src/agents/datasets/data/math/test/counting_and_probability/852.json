@@ -1,0 +1,6 @@
+{
+    "problem": "During a party, a total of 78 handshakes occurred. If each person shook hands once with each of the other people, how many people were at the party?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Since each person shakes hands with each other person, every pair of people will shake hands once. So, 78 represents the number of pairs, which we can count as ${n \\choose 2}$ where $n$ is the number of people at the party. So, $n(n-1) = 2 \\cdot 78 = 2 \\cdot 6 \\cdot 13 = 12 \\cdot 13$. So, $n=13$ gives us $\\boxed{13}$ people at the party."
+}

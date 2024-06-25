@@ -1,0 +1,6 @@
+{
+    "problem": "How many triangles are in the figure to the right? [asy]\ndefaultpen(linewidth(0.7));\npair hexcoords (real over, real upover)\n{\n\nreturn dir(0)*over+dir(60)*upover;\n}\nreal r = 0.3;\nint i,j;\nfor(i=0;i<=2;++i)\n\n{\n\nfor(j=0;j<=2-i;++j)\n\n{\n\ndraw(hexcoords(i,j)--hexcoords(i+1,j));\n\ndraw(hexcoords(i,j)--hexcoords(i,j+1));\n\ndraw(hexcoords(i+1,j)--hexcoords(i,j+1));\n\n}\n\n}\ndraw(hexcoords(1,2)--hexcoords(1,3)--hexcoords(-1,3)--hexcoords(0,2));[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are 11 small triangles, 4 triangles which consist of four small triangles, and 1 triangle which consists of 9 small triangles.  In total, there are $\\boxed{16}$ triangles."
+}

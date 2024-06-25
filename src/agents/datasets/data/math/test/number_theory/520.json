@@ -1,0 +1,6 @@
+{
+    "problem": "Donut Haven fries donuts in batches of $20$, but sells them in boxes of $13$.\n\nIf Donut Haven fries just enough batches of $20$ to pack $44$ full boxes of $13$ donuts, how many donuts will be left over?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can solve this problem using modular arithmetic. Donut Haven needs to fry at least $44\\cdot 13$ donuts. Working modulo $20$, we have \\begin{align*}\n44\\cdot 13 &\\equiv 4\\cdot 13 \\\\\n&= 52 \\\\\n&\\equiv 12\\qquad\\pmod{20}.\n\\end{align*}Therefore, the number of donuts in $44$ full boxes is $12$ more than a multiple of $20$, which means it's $8$ less than the next multiple of $20$. Donut Haven will have $\\boxed{8}$ donuts left over."
+}

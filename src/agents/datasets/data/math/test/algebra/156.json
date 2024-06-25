@@ -1,0 +1,6 @@
+{
+    "problem": "The graphs of $y=x^4$ and $y=5x^2-6$ intersect at four points with $x$-coordinates $\\pm \\sqrt{m}$ and $\\pm \\sqrt{n}$, where $m > n$. What is $m-n$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "At the intersection points, the $y$-coordinates of the two graphs must be equal, so we have the equation $x^4=y=5x^2-6$, or $x^4=5x^2-6$. Putting all the terms on one side, we get $x^4-5x^2+6=0$. Factoring, we get $(x^2-3)(x^2-2)=0$, so $x^2-3=0 \\Rightarrow x=\\pm \\sqrt{3}$ or $x^2-2=0 \\Rightarrow x=\\pm \\sqrt{2}$. Thus, $m=3$ and $n=2$ and $m-n=\\boxed{1}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Convert $\\frac{57}{160}$ to a terminating decimal.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "A terminating decimal can be written in the form $\\frac{a}{10^b}$, where $a$ and $b$ are integers. So we try to get a denominator of the form $10^b$: $$\\frac{57}{160}=\\frac{57}{2^5\\cdot5}\\cdot\\frac{5^4}{5^4}=\\frac{57\\cdot5^4}{10^5}=\\frac{35625}{10^5}=\\boxed{.35625}.$$"
+}

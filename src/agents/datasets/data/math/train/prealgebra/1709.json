@@ -1,0 +1,6 @@
+{
+    "problem": "Barry wrote 6 different numbers, one on each side of 3 cards, and laid the cards on a table, as shown. The sums of the two numbers on each of the three cards are equal. The three numbers on the hidden sides are prime numbers. What is the average of the hidden prime numbers? [asy]\npath box=(0,0)--(1,0)--(1,1.5)--(0,1.5)--cycle;\ndraw(box);\ndraw(shift(1.5,0)*box);\ndraw(shift(3,0)*box);\nlabel(\"44\", (0.5, .75));\nlabel(\"59\", (2, .75));\nlabel(\"38\", (3.5, .75));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are one odd and two even numbers showing. Because all primes other than 2 are odd and the sum of an even number and an odd number is odd, the common sum must be odd. That means 2 must be opposite 59 and the common sum is $2+59=61$. The other two hidden numbers are $61-44=17$ and $61-38 = 23$. The average of 2, 17 and 23 is $\\frac{2+17+23}{3}=\\frac{42}{3}=\\boxed{14}$."
+}

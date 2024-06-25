@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ be three vectors such that\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]Compute $\\mathbf{c} \\times (3 \\mathbf{a} - 2 \\mathbf{b}).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Expanding, we get\n\\begin{align*}\n\\mathbf{c} \\times (3 \\mathbf{a} - 2 \\mathbf{b}) &= 3 \\mathbf{c} \\times \\mathbf{a} - 2 \\mathbf{c} \\times \\mathbf{b} \\\\\n&= -3 \\mathbf{a} \\times \\mathbf{c} + 2 \\mathbf{b} \\times \\mathbf{c} \\\\\n&= -3 \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix} + 2 \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix} \\\\\n&= \\boxed{\\begin{pmatrix} -10 \\\\ -35 \\\\ 30 \\end{pmatrix}}.\n\\end{align*}"
+}

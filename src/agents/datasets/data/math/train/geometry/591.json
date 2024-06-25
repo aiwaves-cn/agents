@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A$, $B$, $Q$, $D$, and $C$ lie on the circle shown and the measures of arcs $BQ$ and $QD$ are $42^\\circ$ and $38^\\circ$, respectively.  Find the sum of the measures of angles $P$ and $Q$, in degrees.\n\n[asy]\nimport graph;\n\nunitsize(2 cm);\n\npair A, B, C, D, P, Q;\n\nA = dir(160);\nB = dir(45);\nC = dir(190);\nD = dir(-30);\nP = extension(A,B,C,D);\nQ = dir(0);\n\ndraw(Circle((0,0),1));\ndraw(B--P--D);\ndraw(A--Q--C);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, NE);\nlabel(\"$C$\", C, SW);\nlabel(\"$D$\", D, SE);\nlabel(\"$P$\", P, W);\nlabel(\"$Q$\", Q, E);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We have that $\\angle P = (\\text{arc } BD - \\text{arc } AC)/2$ and $\\angle Q = (\\text{arc } AC)/2$.  Hence, $\\angle P + \\angle Q = (\\text{arc } BD)/2 = (42^\\circ + 38^\\circ)/2 = \\boxed{40^\\circ}$."
+}

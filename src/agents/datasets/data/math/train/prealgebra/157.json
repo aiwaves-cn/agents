@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\overline{AD} \\| \\overline{FG}$, how many degrees are in angle $EFG$?\n\n[asy]\nimport olympiad;\n\npair A = (-15,20);\npair B = (-12,35);\npair C = (35,50);\npair D = (35,20);\npair E = (14,20);\npair F = (0,0);\npair G = (40,0);\n\ndraw(F--G);\ndraw(F--C);\ndraw(A--D);\ndraw(B--E);\n\nlabel(\"F\", F, W);\nlabel(\"G\", G, ENE);\nlabel(\"C\", C, N);\nlabel(\"A\", A, W);\nlabel(\"D\", D, ENE);\nlabel(\"E\", E, SE);\nlabel(\"B\", B, NW);\n\ndraw(scale(20)*anglemark(G, F, C));\ndraw(shift(E)*scale(35)*shift(-E)*anglemark(B, E, A));\ndraw(shift(E)*scale(20)*shift(-E)*anglemark(C, E, B));\n\nlabel(\"$x$\", (6,20), NW);\nlabel(\"$2x$\", (13,25), N);\nlabel(\"$1.5x$\", (5,0), NE);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since $\\overline{AD}\\parallel \\overline{FG}$, we have $\\angle CFG + \\angle CEA = 180^\\circ$, so $1.5x + (x+2x) = 180^\\circ$.  Simplifying gives $4.5x = 180^\\circ$, so $9x = 360^\\circ$ and $x = 40^\\circ$.  Therefore, $\\angle EFG = 1.5(40^\\circ) = \\boxed{60^\\circ}$."
+}

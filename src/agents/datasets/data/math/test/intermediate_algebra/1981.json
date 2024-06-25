@@ -1,0 +1,6 @@
+{
+    "problem": "What is the domain of the function $f(x) = \\frac{2-x}{\\log(2-\\log(x-2))}$, where $\\log$ is the base $10$ logarithm function? Express your answer in interval notation.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The inner logarithm is only defined if $x - 2 > 0$, so $x > 2$. Furthermore, the outer logarithm is only defined if $2 - \\log(x-2) > 0$, which implies that $2 > \\log(x-2)$, so that $100 > x-2$. Thus, $x < 102$. Finally, it must also be true that $\\log(2-\\log(x-2)) \\neq 0$, so that $2 - \\log(x-2) \\neq 1$. Equivalently, $\\log(x-2) \\neq 1$, so $x \\neq 12$. Thus, the answer is $x \\in \\boxed{(2,12) \\cup (12,102)}$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\frac{\\tan^3 75^\\circ + \\cot^3 75^\\circ}{\\tan 75^\\circ + \\cot 75^\\circ}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\frac{\\tan^3 75^\\circ + \\cot^3 75^\\circ}{\\tan 75^\\circ + \\cot 75^\\circ} &= \\frac{(\\tan 75^\\circ + \\cot 75^\\circ)(\\tan^2 75^\\circ - \\tan 75^\\circ \\cot 75^\\circ + \\cot^2 75^\\circ)}{\\tan 75^\\circ + \\cot 75^\\circ} \\\\\n&= \\tan^2 75^\\circ - \\tan 75^\\circ \\cot 75^\\circ + \\cot^2 75^\\circ \\\\\n&= \\tan^2 75^\\circ + \\cot^2 75^\\circ - 1 \\\\\n&= \\frac{\\sin^2 75^\\circ}{\\cos^2 75^\\circ} + \\frac{\\cos^2 75^\\circ}{\\sin^2 75^\\circ} - 1 \\\\\n&= \\frac{\\sin^4 75^\\circ + \\cos^4 75^\\circ}{\\cos^2 75^\\circ \\sin^2 75^\\circ} - 1 \\\\\n&= \\frac{(\\sin^2 75^\\circ + \\cos^2 75^\\circ)^2 - 2 \\cos^2 75^\\circ \\sin^2 75^\\circ}{\\cos^2 75^\\circ \\sin^2 75^\\circ} - 1 \\\\\n&= \\frac{1 - 2 \\cos^2 75^\\circ \\sin^2 75^\\circ}{\\cos^2 75^\\circ \\sin^2 75^\\circ} - 1.\n\\end{align*}By the double-angle formula,\n\\[2 \\cos 75^\\circ \\sin 75^\\circ = \\sin 150^\\circ = \\frac{1}{2},\\]so $\\cos 75^\\circ \\sin 75^\\circ = \\frac{1}{4}.$  Hence,\n\\[\\frac{1 - 2 \\cos^2 75^\\circ \\sin^2 75^\\circ}{\\cos^2 75^\\circ \\sin^2 75^\\circ} - 1 = \\frac{1 - 2 (\\frac{1}{4})^2}{(\\frac{1}{4})^2} - 1 = \\boxed{13}.\\]"
+}

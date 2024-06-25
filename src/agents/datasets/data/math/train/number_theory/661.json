@@ -1,0 +1,6 @@
+{
+    "problem": "Two farmers agree that pigs are worth $\\$300$ and that goats are worth $\\$210$. When one farmer owes the other money, he pays the debt in pigs or goats, with ``change'' received in the form of goats or pigs as necessary. (For example, a $\\$390$ debt could be paid with two pigs, with one goat received in change.) What is the amount of the smallest positive debt that can be resolved in this way?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If a debt of $D$ dollars can be resolved in this way, then integers $p$ and $g$ must exist with \\[\nD = 300p + 210g = 30(10p + 7g).\n\\]As a consequence, $D$ must be a multiple of 30, and  no positive debt less than $\\$30$ can be resolved. A debt of  $\\boxed{\\$30}$  can be resolved since \\[\n30 = 300(-2) + 210(3).\n\\]This is  done by giving 3 goats and receiving 2 pigs."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest value of $x$ such that the expression \\[\\dfrac{x+1}{8x^2-65x+8}\\] is not defined?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "In this particular case, the fraction will be undefined only if its denominator is equal to zero. Because of this, we can ignore the numerator. We start by setting the binomial in the denominator equal to 0: \\begin{align*} 8x^2-65x+8=0\n\\\\\\Rightarrow\\qquad (8x-1)(x-8)=0\n\\end{align*} We find that the two possible values for $x$ are $\\frac18$ and $8$. Since the question asks for the largest value, the final solution is $\\boxed{8}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many four-digit numbers $N$ have the property that the three-digit number obtained by removing the leftmost digit is one ninth of $N$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $a$ denote the leftmost digit of $N$ and let $x$ denote the three-digit number obtained by removing $a$. Then $N=1000a+x=9x$ and it follows that $1000a=8x$. Dividing both sides by 8 yields $125a=x$. All the values of $a$ in the range 1 to 7 result in three-digit numbers, hence there are $\\boxed{7}$ values for $N$."
+}

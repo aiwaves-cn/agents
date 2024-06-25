@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of a triangle with side lengths 8, 9, and 9.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "We draw the longest altitude of this triangle, which breaks the triangle into two right triangles.   [asy]\nsize(100);\npair A,B,C,D;\nA=(0,0); B=(8,0); C=(4,sqrt(65)); D=(4,0);\ndraw(A--B--C--cycle); draw(C--D);\ndraw(rightanglemark(C,D,A,18));\nlabel(\"8\",D,S); label(\"9\",(A+C)/2,W); label(\"9\",(B+C)/2,E);\n[/asy] The right triangles are congruent because the original triangle is isosceles; each right triangle has one leg length $8/2=4$ and hypotenuse length 9.  The other leg, which is also the height of the original triangle, has length $\\sqrt{9^2-4^2}=\\sqrt{65}$.  Thus, the original triangle has base length 8, height $\\sqrt{65}$, and area \\[\\frac{1}{2}(8)(\\sqrt{65})=\\boxed{4\\sqrt{65}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive $3$-digit numbers are multiples of $20$, but not of $55$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The $3$-digit multiples of $20$ are $$100, 120, 140, 160, \\ldots, 960, 980.$$ To form the numbers in this list, we can choose any of $9$ hundreds digits and any of $5$ tens digits (but we have only one option for the units digit, which must be $0$). So, there are $9\\cdot 5 = 45$ multiples of $20$ in our list. However, we want to exclude those which are also multiples of $55$.\n\nThe least common multiple of $20$ and $55$ is $220$, so we have to exclude the multiples of $220$ from our list. There are four such numbers: $220$, $440$, $660$, and $880$. This leaves $45-4 = \\boxed{41}$ three-digit multiples of $20$ which are not multiples of $55$."
+}

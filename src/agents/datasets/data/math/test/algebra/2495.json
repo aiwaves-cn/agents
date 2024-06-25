@@ -1,0 +1,6 @@
+{
+    "problem": "What is the slope of the line containing the midpoint of the segment with endpoints at (0, 0) and (2, 2) and the midpoint of the segment with endpoints at (5, 0) and (6, 2)? Express your answer in simplest form.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The midpoint of a line segment with endpoints $(x_1, y_1), (x_2, y_2)$ is $\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$.\n\nThe midpoint of the first segment is $\\left(\\frac{0+2}{2}, \\frac{0+2}{2}\\right) = (1,1)$ and the midpoint of the second segment is $\\left(\\frac{5+6}{2}, \\frac{0+2}{2}\\right) = (5.5,1)$.\n\nSince the $y$-coordinates are the same, the line is horizontal. All horizontal lines have a slope of $\\boxed{0}$."
+}

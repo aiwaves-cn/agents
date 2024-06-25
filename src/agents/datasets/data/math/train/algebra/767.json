@@ -1,0 +1,6 @@
+{
+    "problem": "Dr. Fu Manchu has a bank account that has an annual interest rate of 6 percent, but it compounds monthly.  If this is equivalent to a bank account that compounds annually at a rate of $r$ percent, then what is $r$?  (Give your answer to the nearest hundredth.)",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The bank account compounds monthly at an interest rate of $6/12 = 0.5$ percent.  Therefore, in the course of a year, the bank account compounds annually at a rate of $1.005^{12} = 1.061678 \\dots$.  To the nearest hundredth, the interest rate is $\\boxed{6.17}$ percent."
+}

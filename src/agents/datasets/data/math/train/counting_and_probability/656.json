@@ -1,0 +1,6 @@
+{
+    "problem": "Two integers are relatively prime if they have no common factors other than 1 or -1. What is the probability that a positive integer less than or equal to 30 is relatively prime to 30? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "It might be easier to find the integers less than or equal to 30 which are NOT relatively prime to 30. They include 2, 4, 6, 8, 10, $\\ldots$, 28, 30, or 15 even integers. They also include 3, 9, 15, 21, 27, or the odd multiples of 3. And also, 5, 25, the multiples of 5 relatively prime to 2 and 3. So we have a total of $15+5+2 = 22$ numbers sharing a factor with 30. So there are 8 relatively prime integers, giving us a ratio of $\\frac{8}{30} = \\boxed{\\frac{4}{15}}$.\n\nNotice that the prime divisors of 30 are 2, 3, and 5, and we have $$30\\left(1-\\frac{1}{2}\\right)\\left(1-\\frac{1}{3}\\right)\\left(1-\\frac{1}{5}\\right) = 30 \\cdot \\frac{1}{2} \\cdot \\frac{2}{3} \\cdot \\frac{4}{5} = 8,$$ which equals the number of positive integers less than 30 that are relatively prime to 30.  Is this a coincidence?"
+}

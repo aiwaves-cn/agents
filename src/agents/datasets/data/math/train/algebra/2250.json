@@ -1,0 +1,6 @@
+{
+    "problem": "Climbing the first flight of stairs takes Jimmy 20 seconds, and each following flight takes 5 seconds more than the preceding one. How many total seconds does it take to climb the first five flights of stairs?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The number of seconds that Jimmy takes to climb the first five flights are 20, 25, 30, 35, and 40.\n\nThe sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $(20 + 40)/2 \\cdot 5 = \\boxed{150}$."
+}

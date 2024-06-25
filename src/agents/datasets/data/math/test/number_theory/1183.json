@@ -1,0 +1,6 @@
+{
+    "problem": "Find the units digit of the sum of the first $21$ positive perfect cubes.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Notice that for each integer $n$ satisfying $1 \\le n \\le 19, n \\neq 10$, then using the sum of cubes factorization, $n^3 + (20 - n)^3 = (n + 20 - n)(n^2 + (20-n)n + (20-n)^2)$ $ = 20(n^2 + (20-n)n + (20-n)^2)$. Thus, we can pair each integer with the difference between $20$ and that integer, and the sum of their cubes is divisible by $20$. Hence, the units digit of the sum of the first $19$ cubes, excluding $10$, is equal to $0$. Also, the units digits of $10^3$ and $20^3$ are clearly $0$, so we just need to find the units digit of the cube of $21$, which is $\\boxed{1}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The projection of $\\begin{pmatrix} a \\\\ 7 \\end{pmatrix}$ onto $\\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}$ is\n\\[\\frac{26}{17} \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}.\\]Find $a.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The projection of $\\begin{pmatrix} a \\\\ 7 \\end{pmatrix}$ onto $\\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}$ is given by\n\\[\\frac{\\begin{pmatrix} a \\\\ 7 \\end{pmatrix} \\cdot \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix} = \\frac{-a + 28}{17} \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}.\\]So, we want $\\frac{-a + 28}{17} = \\frac{26}{17}.$  Solving, we find $a = \\boxed{2}.$"
+}

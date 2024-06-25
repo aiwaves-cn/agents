@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = x|x|.$  Find $f^{-1}(4) + f^{-1}(-100).$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We can write $f(x)$ as follows:\n\\[f(x) = \\left\\{\n\\begin{array}{cl}\nx^2 & \\text{if $x > 0$}, \\\\\n0 & \\text{if $x = 0$}, \\\\\n-x^2 & \\text{if $x < 0$}.\n\\end{array}\n\\right.\\]Hence, $f^{-1}(4) + f^{-1}(-100) = 2 + (-10) = \\boxed{-8}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two sectors of a circle of radius $12$ are placed side by side, as shown. Determine the $\\textit{area}$ of figure $ABCD.$ [asy]\ndraw((0,0)--(12,0)..(10.3923,6)..(6,10.3923)--(-6,10.3923)..(-4.3923,4.3923)..(0,0),black+linewidth(1));\ndraw((0,0)--(6,10.3923),black+linewidth(1)+dashed);\nlabel(\"$A$\",(-6,10.3923),NW);\nlabel(\"$B$\",(6,10.3923),NE);\nlabel(\"$C$\",(12,0),SE);\nlabel(\"$D$\",(0,0),SW);\nlabel(\"$60^\\circ$\",(2,1));\nlabel(\"$60^\\circ$\",(4,9.3923));\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Each of sector $ABD$ and $BDC$ is one-sixth of a full circle of radius $12,$ so each has area one-sixth of the area of a circle of radius $12.$ Therefore, each sector has area $$\\frac{1}{6}(\\pi(12^2))=\\frac{1}{6}(144\\pi)=24\\pi.$$ Thus, the area of figure $ABCD$ is $2( 24\\pi)=\\boxed{48\\pi}.$"
+}

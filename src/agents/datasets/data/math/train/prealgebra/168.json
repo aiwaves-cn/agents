@@ -1,0 +1,6 @@
+{
+    "problem": "A game board is constructed by shading two of the regions formed by the altitudes of an equilateral triangle as shown. What is the probability that the tip of the spinner will come to rest in a shaded region? Express your answer as a common fraction. [asy]\nimport olympiad; size(100); defaultpen(linewidth(0.8));\npair A = (0,0), B = (1,0), C = (0.5,sqrt(3)/2);\npair D = (A + B)/2, E = (B + C)/2, F = (C + A)/2;\npair M = intersectionpoint(A--E,B--F);\ndraw(A--B--C--cycle);\ndraw(A--E^^B--F^^C--D);\nfilldraw(D--M--B--cycle,fillpen=gray(0.6));\nfilldraw(F--M--C--cycle,fillpen=gray(0.6));\ndraw(M--(0.4,0.5),EndArrow(size=10));\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "There are six sections in which the spinner can come to rest, and it is equally likely that it will come to rest in each of the sections. Thus, the probability that it will come to rest in one of the two shaded regions is $\\frac{2}{6} = \\boxed{\\frac{1}{3}}$."
+}

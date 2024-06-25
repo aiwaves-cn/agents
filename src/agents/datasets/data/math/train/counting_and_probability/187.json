@@ -1,0 +1,6 @@
+{
+    "problem": "The probability of getting rain on any given day in June in Capital City is $\\frac{1}{10}$.  What is the probability that it rains on at most 2 days in June?  Express your answer as a decimal to the nearest thousandth.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 30 days in June. The probability that it rains on exactly 0, 1, or 2 days is  \\begin{align*}&\\ \\ \\ \\ \\binom{30}{0}\\bigg(\\frac{1}{10}\\bigg)^{\\!0}\\bigg(\\frac{9}{10}\\bigg)^{\\!30}\\\\&+\\binom{30}{1}\\bigg(\\frac{1}{10}\\bigg)^{\\!1}\\bigg(\\frac{9}{10}\\bigg)^{\\!29}\\\\&+\\binom{30}{2}\\bigg(\\frac{1}{10}\\bigg)^{\\!2}\\bigg(\\frac{9}{10}\\bigg)^{\\!28} \\\\\n&\\approx \\boxed{0.411}.\\end{align*}"
+}

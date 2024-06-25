@@ -1,0 +1,6 @@
+{
+    "problem": "Let $m$ and $n$ be any two odd numbers, with $n$ less than $m$. The largest integer which divides all possible numbers of the form $m^2-n^2$ is:\n$\\textbf{(A)}\\ 2\\qquad \\textbf{(B)}\\ 4\\qquad \\textbf{(C)}\\ 6\\qquad \\textbf{(D)}\\ 8\\qquad \\textbf{(E)}\\ 16$\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "First, factor the difference of squares.\\[(m+n)(m-n)\\]Since $m$ and $n$ are odd numbers, let $m=2a+1$ and $n=2b+1$, where $a$ and $b$ can be any integer.\\[(2a+2b+2)(2a-2b)\\]Factor the resulting expression.\\[4(a+b+1)(a-b)\\]If $a$ and $b$ are both even, then $a-b$ is even. If $a$ and $b$ are both odd, then $a-b$ is even as well. If $a$ is odd and $b$ is even (or vise versa), then $a+b+1$ is even. Therefore, in all cases, $8$ can be divided into all numbers with the form $m^2-n^2$.\nThis can be confirmed by setting $m=3$ and $n=1$, making $m^2-n^2=9-1=8$. Since $8$ is not a multiple of $3$ and is less than $16$, we can confirm that the answer is $\\boxed{8}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Add $101_2 + 11_2 + 1100_2 + 11101_2.$ Express your answer in base $2.$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "When adding the rightmost binary digits, we notice that $1+1+0+1$ will yield a rightmost digit of $1$ in the sum, and a $1$ will be carried over. The next sum is equal to $1+1,$ yielding a digit of $0$ and a carry-over of $1.$ In the next digit, we must sum up $1+1+1+1,$ which is equal to $100_2,$ so we must this time carry-over a $2.$ The same thing happens for the next digit. Thus, the sum becomes: $$\\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c} & & & \\stackrel{2}{1} & \\stackrel{2}{1} & \\stackrel{1}{1} & \\stackrel{1}{0} & \\stackrel{}{1}_2 \\\\ && & & 1 & 1 & 0 & 0_2 \\\\ && & & & 1 & 0 & 1_2 \\\\ &+ & & & & & 1 & 1_2 \\\\ \\cline{2-8} && 1 & 1 & 0 & 0 & 0 & 1_2 \\\\ \\end{array} $$ The sum is therefore $\\boxed{110001_2}.$"
+}

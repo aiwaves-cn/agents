@@ -1,0 +1,6 @@
+{
+    "problem": "If $-6\\leq a \\leq -2$ and $3 \\leq b \\leq 5$, what is the greatest possible value of $\\displaystyle\\left(a+\\frac{1}{b}\\right)\\left(\\frac{1}{b}-a\\right) $?  Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The given expression expands to $\\frac{1}{b^2} - a^2$.  Thus we want $b$ to have the least possible magnitude and $a$ to also have the least possible magnitude.  Our maximum value is therefore $\\frac{1}{3^2} - (-2)^2 = \\boxed{-\\frac{35}{9}}$."
+}

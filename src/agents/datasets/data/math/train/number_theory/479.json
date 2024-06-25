@@ -1,0 +1,6 @@
+{
+    "problem": "The infinite sequence $S=\\{s_1,s_2,s_3,\\ldots\\}$ is defined by $s_1=7$ and $s_n=7^{s_{n-1}}$ for each integer $n>1$. What is the remainder when $s_{100}$ is divided by $5$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Another way of writing the sequence $S$ is $\\{7,7^7,7^{7^7},7^{7^{7^7}},\\ldots\\}$. We wish to determine the $100^{\\text{th}}$ term of this sequence modulo $5$.\n\nNote that $s_{100} = 7^{s_{99}}\\equiv 2^{s_{99}}\\pmod 5$. In order to determine the remainder of $2^{s_{99}}$ when divided by $5$, we look for a pattern in the powers of $2$ modulo $5$. Computing a few powers of $2$ yields \\[\\{2^0,2^1,2^2,2^3,2^4,\\ldots\\}\\equiv \\{1,2,4,3,1,\\ldots\\}\\pmod 5.\\]So we have a cyclic pattern $1,2,4,3$ of length $4$ (this is called a period). Now we need to determine where $2^{s_{99}}$ falls in the cycle; to do that, we must determine the residue of $s_{99}\\pmod 4$, since the cycle has length $4$.\n\nNote that \\begin{align*}\n7&\\equiv -1 \\equiv 3 \\pmod 4,\\\\\n7^7&\\equiv (-1)^7 \\equiv -1 \\equiv 3 \\pmod 4,\\\\\n7^{7^7}&\\equiv (-1)^{7^7}\\equiv -1 \\equiv 3 \\pmod 4,\\\\\n&\\vdots\n\\end{align*}Continuing in this manner, we always have $s_n \\equiv 3\\pmod 4$. Thus, $s_{100} = 2^{s_{99}} \\equiv 2^3 \\equiv \\boxed{3}\\pmod 5$."
+}

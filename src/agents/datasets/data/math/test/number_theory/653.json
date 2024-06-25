@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder of $7^{17}$ when it is divided by 5.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "$7^4 \\equiv 2^4 = 16 \\equiv 1 \\pmod{5}$, so $7^{17} = 7^{4 \\cdot 4 + 1} = (7^4)^4 \\cdot 7^1 \\equiv 1^4 \\cdot 2 \\equiv \\boxed{2} \\pmod{5}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "When $1 - i \\sqrt{3}$ is converted to the exponential form $re^{i \\theta}$, what is $\\theta$?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We see that\n\\[1 - i \\sqrt{3} = 2 \\left( \\frac{1}{2} - \\frac{\\sqrt{3}}{2} i \\right) = 2e^{5 \\pi i/3},\\]so $\\theta = \\boxed{\\frac{5\\pi}{3}}$."
+}

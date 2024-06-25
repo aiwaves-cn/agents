@@ -1,0 +1,6 @@
+{
+    "problem": "For what real value of $b$ is the expression $\\frac{1}{2}b^2 + 5b - 3$ minimized?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We complete the square: \\begin{align*}\n\\frac{1}{2}b^2 + 5b - 3 & = (\\frac{1}{2}b^2 + 5b) - 3\\\\\n&= \\frac{1}{2}(b^2 + 10b + 25) - 3 -25 \\cdot \\frac{1}{2}\\\\\n&= \\frac{1}{2}(b + 5)^2 - \\frac{31}{2}.\n\\end{align*} The minimum value of $\\frac{1}{2}(b + 5)^2$ is $0$, since the square of a real number is never negative. Thus, the minimum value of the expression occurs at $b = \\boxed{-5}$."
+}

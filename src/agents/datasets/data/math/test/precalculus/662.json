@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of\n\\[8\\cos^210^\\circ - \\dfrac{1}{\\sin 10^\\circ}.\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can write\n\\[8 \\cos^2 10 ^\\circ - \\frac{1}{\\sin 10^\\circ} = \\frac{8 \\cos^2 10^\\circ \\sin 10^\\circ - 1}{\\sin 10^\\circ}.\\]By the double-angle formula, $2 \\cos 10^\\circ \\sin 10^\\circ = \\sin 20^\\circ,$ so\n\\[\\frac{8 \\cos^2 10^\\circ \\sin 10^\\circ - 1}{\\sin 10^\\circ} = \\frac{4 \\sin 20^\\circ \\cos 10^\\circ - 1}{\\sin 10^\\circ}.\\]From the product-to-sum formula, $2 \\sin 20^\\circ \\cos 10^\\circ = \\sin 30^\\circ + \\sin 10^\\circ,$ so\n\\[\\frac{4 \\sin 20^\\circ \\cos 10^\\circ - 1}{\\sin 10^\\circ} = \\frac{2 \\sin 30^\\circ + 2 \\sin 10^\\circ - 1}{\\sin 10^\\circ} = \\frac{2 \\sin 10^\\circ}{\\sin 10^\\circ} = \\boxed{2}.\\]"
+}

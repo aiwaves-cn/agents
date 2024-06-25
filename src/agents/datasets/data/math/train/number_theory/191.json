@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $77\\cdot 88\\cdot 99 \\equiv n\\pmod{20}$, where $0\\le n<20$.\n\nWhat is the value of $n$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We begin by reducing the factors of the product modulo 20: \\begin{align*}\n77 &\\equiv -3\\pmod{20},\\\\\n88 &\\equiv 8\\pmod{20},\\\\\n99 &\\equiv -1\\pmod{20}.\n\\end{align*}(Note that we could have used the more \"standard\" reductions $77\\equiv 17$ and $99\\equiv 19$, but the reductions above will make our computations easier.)\n\nNow we have \\begin{align*}\n77\\cdot 88\\cdot 99 &\\equiv (-3)\\cdot 8\\cdot(-1) \\\\\n&= 24 \\\\\n&\\equiv \\boxed{4}\\pmod{20}.\n\\end{align*}"
+}

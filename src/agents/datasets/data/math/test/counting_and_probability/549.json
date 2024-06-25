@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers between 100 and 200 (inclusive) are not perfect squares?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are $200-100+1 = 101$ numbers in the list $100, 101, \\ldots, 200$.  We can find 5 perfect squares in the list, namely $10^2,\\ldots,14^2$.  So the number of non-perfect-squares in the list is $101-5=\\boxed{96}$."
+}

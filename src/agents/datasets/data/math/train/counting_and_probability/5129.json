@@ -1,0 +1,6 @@
+{
+    "problem": "A paperboy delivers newspapers to 10 houses along Main Street. Wishing to save effort, he doesn't always deliver to every house, but to avoid being fired he never misses three consecutive houses. Compute the number of ways the paperboy could deliver papers in this manner.\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We can find a recursion. Let $D_n$ be the number of legal delivery sequences for $n$ houses. If a sequence ends with a delivery, we simply append one to $D_{n - 1}$. If it ends in $1$ nondelivery, we append a nondelivery and a delivery to $D_{n - 2}$. If it ends in $2$ nondeliveries, we append them and a delivery to $D_{n - 3}$. So\n$D_n = D_{n - 1} + D_{n - 2} + D_{n - 3}$.\nThus, since clearly $D_1 = 2$, $D_2 = 4$, $D_3 = 7$, we have $D_4 = 13$, $D_5 = 24$, $D_6 = 44$, $D_7 = 81$, $D_8 = 149$, $D_9 = 274$, $D_{10} = \\boxed{504}$."
+}

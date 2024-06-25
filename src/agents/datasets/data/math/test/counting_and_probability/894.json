@@ -1,0 +1,6 @@
+{
+    "problem": "Six cars pull up to a red light, one at a time. At the light, there are three lanes, one left-turn lane, one straight-going lane, and one right-turn lane. How many ways can the cars stack up so that all three lanes are occupied?\n\nNote that if the first car turns left and the second goes straight, this is considered different from the first car going straight and the second car turning left. In other words, the cars are distinguishable, but pull up to the intersection in a fixed order.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We count the number of ways that some lane can be left empty, and subtract from the total number, $3^6=729$ because each driver has three choices. Suppose the left-turn lane is left empty. Then each driver is limited to 2 choices, and there are $2^6$ ways to leave the left-turn lane empty. The same logic gives $2^6$ ways to leave the center lane and right-turn lane open. But we have double-counted the situations where two lanes are left empty. Fortunately, since each driver must go into the third lane, there are only 3 situations we have over-counted. This leaves $3\\cdot2^6-3=189$ ways to leave at least one lane unoccupied, or $729-189=\\boxed{540}$ ways to occupy every lane."
+}

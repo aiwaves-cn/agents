@@ -1,0 +1,6 @@
+{
+    "problem": "The product of two positive integers minus their sum is 39. The integers are relatively prime, and each is less than 20. What is the sum of the two integers?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let our positive integers be $a$ and $b.$ It follows that\n\n\\[ab - (a + b) = ab - a - b = 39.\\]The left-hand side reminds us of Simon's Favorite Factoring Trick. So, we add $1$ to both sides to \"complete the rectangle\":\n\n\\[ab - a - b + 1 = 39 + 1 \\implies (a - 1)(b - 1) = 40.\\]We can narrow down the possibilities by considering all the positive factor pairs of $40$. We disregard values of $a$ and $b$ that are not relatively prime positive integers both less than $20$.\n\n\\begin{tabular}{c|c|c|c|c}\n$a-1$ & $b-1$ & $a$ & $b$ & Feasible? \\\\\n\\hline\n$1$ & $40$ & $2$ & $41$ & $\\times$ \\\\\n\\hline\n$2$ & $20$ & $3$ & $21$ & $\\times$ \\\\\n\\hline\n$4$ & $10$ & $5$ & $11$ & $\\checkmark$ \\\\\n\\hline\n$5$ & $8$ & $6$ & $9$ & $\\times$\n\\end{tabular}The only possibility that works is $a = 5$ and $b = 11$, or, by symmetry, $a = 11$ and $b = 5$. Either way, the sum $a + b$ is equal to $\\boxed{16}$."
+}

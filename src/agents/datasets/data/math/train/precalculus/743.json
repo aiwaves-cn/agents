@@ -1,0 +1,6 @@
+{
+    "problem": "Line segment $\\overline{AB}$ is extended past $B$ to $P$ such that $AP:PB = 10:3.$  Then\n\\[\\overrightarrow{P} = t \\overrightarrow{A} + u \\overrightarrow{B}\\]for some constants $t$ and $u.$  Enter the ordered pair $(t,u).$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, P;\n\nA = (0,0);\nB = (5,1);\nP = interp(A,B,10/7);\n\ndraw(A--P);\n\ndot(\"$A$\", A, S);\ndot(\"$B$\", B, S);\ndot(\"$P$\", P, S);\n[/asy]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $AP:PB = 10:3,$ we can write\n\\[\\frac{\\overrightarrow{P} - \\overrightarrow{A}}{10} = \\frac{\\overrightarrow{P} - \\overrightarrow{B}}{7}.\\]Isolating $\\overrightarrow{P},$ we find\n\\[\\overrightarrow{P} = -\\frac{3}{7} \\overrightarrow{A} + \\frac{10}{7} \\overrightarrow{B}.\\]Thus, $(t,u) = \\boxed{\\left( -\\frac{3}{7}, \\frac{10}{7} \\right)}.$"
+}

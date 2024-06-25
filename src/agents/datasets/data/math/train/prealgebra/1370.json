@@ -1,0 +1,6 @@
+{
+    "problem": "In rectangle $ABCD$, $AB = 6$ cm, $BC = 8$ cm, and $DE = DF$. The area of triangle $DEF$ is one-fourth the area of rectangle $ABCD$. What is the length in centimeters of segment $EF$? Express your answer in simplest radical form.\n\n[asy]\ndraw((0,0)--(0,24)--(32,24)--(32,0)--cycle);\ndraw((13,24)--(32,5));\nlabel(\"$A$\",(0,24),W);\nlabel(\"$B$\",(0,0),W);\nlabel(\"$C$\",(32,0),E);\nlabel(\"$D$\",(32,24),E);\nlabel(\"$E$\",(13,24),N);\nlabel(\"$F$\",(32,5),E);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The area of the rectangle is $(6)(8)=48$, so the area of triangle $DEF$ is $48/4 =12$.  Since $DE=DF$, the area of $DEF$ is $(DE)(DF)/2 = DE^2/2$, so $DE^2/2 = 12$.  Therefore, $DE^2 = 24$.  From the Pythagorean Theorem, we have  \\[EF^2 = DE^2 +DF^2 = 24+24=48,\\] so $EF =\\sqrt{48} = \\boxed{4\\sqrt{3}}$."
+}

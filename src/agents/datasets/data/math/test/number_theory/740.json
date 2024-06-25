@@ -1,0 +1,6 @@
+{
+    "problem": "What is the residue modulo $13$ of the sum of the modulo $13$ inverses of the first $12$ positive integers?\n\nExpress your answer as an integer from $0$ to $12$, inclusive.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since $13$ is prime, all of the requested modular inverses exist. Furthermore, the inverses must be distinct: suppose that $a^{-1} \\equiv b^{-1} \\pmod{13}$. Multiplying both sides of the congruence by $ab$, we obtain that $b \\equiv ab \\cdot a^{-1} \\equiv ab \\cdot b^{-1} \\equiv a \\pmod{13}$.\n\nThus, the set of the inverses of the first $12$ positive integers is simply a permutation of the first $12$ positive integers. Then, \\begin{align*}\n&1^{-1} + 2^{-1} + \\cdots + 12^{-1} \\\\\n&\\quad\\equiv 1 + 2 + \\cdots + 12 \\\\ &\\quad\\equiv 1 + 2 + 3 + 4 + 5 + 6 \\\\\n&\\quad\\qquad+ (-6) + (-5) + (-4) + (-3) + (-2) + (-1) \\\\ &\\quad\\equiv \\boxed{0} \\pmod{13}.\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the modulo $13$ residue of $247+5 \\cdot 39 + 7 \\cdot 143 +4 \\cdot 15?$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $247, 39,$ and $143$ are all divisible by $13$, the residues for $247+ 5 \\cdot 39 + 7 \\cdot 143$ is just $0$.\n\nTherefore, $247+5 \\cdot 39 + 7 \\cdot 143 +4 \\cdot 15 \\equiv 4 \\cdot 15 \\equiv 60 \\equiv \\boxed{8} \\pmod{13}$."
+}

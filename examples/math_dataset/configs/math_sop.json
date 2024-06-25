@@ -1,0 +1,145 @@
+{
+    "nodes": {
+        "problem_identification": {
+            "node_name": "problem_identification",
+            "node_description": "The team identifies and understands the competition mathematics problem in detail.",
+            "node_roles_description": {
+                "Problem_Analyst": "Responsible for reading, understanding, and explaining the competition mathematics problem to the rest of the team."
+            },
+            "begin_role": "Problem_Analyst",
+            "begin_query": null,
+            "controller": {
+                "max_chat_nums": 5,
+                "transit_type": "order",
+                "transit_system_prompt": "To determine when the subtask 'The team identifies and understands the competition mathematics problem in detail' is complete, the following criteria must be met by the Problem Analyst:\n\n1. **Comprehensive Explanation**: The Problem Analyst must provide a clear and thorough explanation of the competition mathematics problem, ensuring that all aspects and requirements of the problem are covered.\n\nIf all the rules above are met, the task is complete, please consider transiting to the next node. Otherwise, the task is not complete, stay at the current node.",
+                "transit_last_prompt": "The nodes that can be transited to are: ['problem_identification', 'individual_analysis']. Please decide the next node that should be transited to, and finally, output <node>node_name</node> where node_name is the name of the next node. Let's think step by step.",
+                "transit_extract_word": "node",
+                "route_type": "order",
+                "route_system_prompt": "",
+                "route_last_prompt": null,
+                "route_extract_word": "role"
+            },
+            "node_prompt_templates": {
+                "analyze_problem": "Please read and analyze the problem '{problem}' and explain its key components and requirements to the team."
+            },
+            "node_prompt_paddings": {
+                "Problem_Analyst": {
+                    "analyze_problem": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    }
+                }
+            },
+            "kb": null
+        },
+        "individual_analysis": {
+            "node_name": "individual_analysis",
+            "node_description": "Each team member works on their task, analyzing and solving it.",
+            "node_roles_description": {
+                "Solution_Designer": "Designs the approach and methodology to solve the problem.",
+                "Calculation_Expert": "Performs the necessary calculations and verifies their accuracy."
+            },
+            "begin_role": "Solution_Designer",
+            "begin_query": null,
+            "controller": {
+                "max_chat_nums": 10,
+                "transit_type": "order",
+                "transit_system_prompt": "To determine when the subtask of each team member working on their assigned task is complete, the following criteria must be met for each role:\n\n1. **Solution Designer**:\n   - A detailed approach and methodology for solving the problem have been developed.\n   - The proposed solution strategy has been reviewed and agreed upon by the team.\n\n2. **Calculation Expert**:\n   - All necessary calculations required by the solution strategy have been performed.\n   - The accuracy of these calculations has been verified and validated.\n\nThe subtask is considered complete when all four roles have met their respective criteria and the outputs are integrated and reviewed by the team to ensure coherence and completeness of the solution. If all the rules above are met, the task is complete, please consider transiting to the next node. Otherwise, the task is not complete, stay at the current node.",
+                "transit_last_prompt": "The nodes that can be transited to are: ['individual_analysis', 'solution_integration']. Please decide the next node that should be transited to, and finally, output <node>node_name</node> where node_name is the name of the next node. Let's think step by step.",
+                "transit_extract_word": "node",
+                "route_type": "order",
+                "route_system_prompt": "",
+                "route_last_prompt": null,
+                "route_extract_word": "role"
+            },
+            "node_prompt_templates": {
+                "design_solution_approach": "Design a comprehensive approach to solve the problem by considering the key elements {key_elements} and utilizing methodologies such as {methodologies}. Ensure the approach is feasible and effective.",
+                "outline_methodology_steps": "Outline the detailed steps of the methodology to address the problem, ensuring each step is clear and actionable. Focus on {focus_area} to maintain precision and clarity.",
+                "perform_calculations": "Perform the necessary calculations for the problem using the data {data} and applying the formula {formula}. Ensure accuracy and verify results.",
+                "verify_calculations": "Verify the accuracy of the calculations by cross-checking with alternative methods or tools. Focus on the critical values {critical_values} and ensure consistency."
+            },
+            "node_prompt_paddings": {
+                "Solution_Designer": {
+                    "design_solution_approach": {
+                        "value_source": "config",
+                        "value": {
+                            "key_elements": "the main variables, constraints, and goals identified",
+                            "methodologies": "algebraic manipulation, geometric construction, or probabilistic methods"
+                        }
+                    },
+                    "outline_methodology_steps": {
+                        "value_source": "config",
+                        "value": {
+                            "focus_area": "logical sequencing and validation of each step"
+                        }
+                    }
+                },
+                "Calculation_Expert": {
+                    "perform_calculations": {
+                        "value_source": "config",
+                        "value": {
+                            "data": "the given numerical values and parameters",
+                            "formula": "the specified mathematical formula or equations"
+                        }
+                    },
+                    "verify_calculations": {
+                        "value_source": "config",
+                        "value": {
+                            "critical_values": "key results and intermediate steps"
+                        }
+                    }
+                }
+            },
+            "kb": null
+        },
+        "solution_integration": {
+            "node_name": "solution_integration",
+            "node_description": "The team integrates individual solutions to form a comprehensive solution to the problem.",
+            "node_roles_description": {
+                "Integration Specialist": "Responsible for combining individual solutions into a cohesive and comprehensive final solution, ensuring all parts align and the solution is complete and correct."
+            },
+            "begin_role": "Integration Specialist",
+            "begin_query": null,
+            "controller": {
+                "max_chat_nums": 15,
+                "transit_type": "order",
+                "transit_system_prompt": "",
+                "transit_last_prompt": "",
+                "transit_extract_word": "node",
+                "route_type": "order",
+                "route_system_prompt": "",
+                "route_last_prompt": null,
+                "route_extract_word": "role"
+            },
+            "node_prompt_templates": {
+                "solution_integration": "Review the solutions provided by each team member, and integrate them into a brief solution answering the '{problem}'. Please wrap only the answer process in <result></result>"
+            },
+            "node_prompt_paddings": {
+                "Integration Specialist": {
+                    "solution_integration": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    }
+                }
+            },
+            "kb": null
+        }
+    },
+    "edges": {
+        "problem_identification": [
+            "problem_identification",
+            "individual_analysis"
+        ],
+        "individual_analysis": [
+            "individual_analysis",
+            "solution_integration"
+        ],
+        "solution_integration": [
+            "solution_integration",
+            "end_node"
+        ]
+    },
+    "root": "problem_identification",
+    "end": "end_node",
+    "global_kb": null
+}

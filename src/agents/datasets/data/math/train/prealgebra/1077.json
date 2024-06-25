@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram below, $BC$ is 8 cm.  In square centimeters, what is the area of triangle $ABC$?\n\n[asy]\ndefaultpen(linewidth(0.7));\ndraw((0,0)--(16,0)--(23,20)--cycle);\ndraw((16,0)--(23,0)--(23,20),dashed);\nlabel(\"8 cm\",(8,0),S);\nlabel(\"10 cm\",(23,10),E);\nlabel(\"$A$\",(23,20),N);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(16,0),SE);\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The area of a triangle is $\\frac{1}{2}(\\text{base})(\\text{height})$, so the area of triangle $ABC$ is $\\frac{1}{2}(8\\text{ cm})(\\text{10 cm})=\\boxed{40}$ square centimeters."
+}

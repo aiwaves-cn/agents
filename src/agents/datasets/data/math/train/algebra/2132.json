@@ -1,0 +1,6 @@
+{
+    "problem": "Murtha has decided to start a pebble collection. She collects one pebble the first day and two pebbles on the second day. On each subsequent day she collects one more pebble than the previous day. How many pebbles will she have collected at the end of the twelfth day?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Because the number of pebbles increases each day, the total number of pebbles is equal to $1 + 2 + 3 + \\cdots + 11 + 12 = (1+12) + (2 + 11) + \\cdots + (6 + 7) = 6 \\cdot 13 = \\boxed{78}$."
+}

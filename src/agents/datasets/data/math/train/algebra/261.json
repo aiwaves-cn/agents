@@ -1,0 +1,6 @@
+{
+    "problem": "When $\\sqrt[4]{2^7\\cdot3^3}$ is fully simplified, the result is $a\\sqrt[4]{b}$, where $a$ and $b$ are positive integers.  What is $a+b$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have  \\[\\sqrt[4]{2^7\\cdot3^3} = \\sqrt[4]{2^4}\\sqrt[4]{2^3\\cdot3^3} = 2\\sqrt[4]{8\\cdot27} = 2\\sqrt[4]{216}.\\] Therefore, $a+b = \\boxed{218}$."
+}

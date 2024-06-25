@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $x^2-6x+2=29$ has two solutions, $a$ and $b$, with $a\\geq b$. What is the value of $2a-3b$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Simplifying, we get $x^2-6x-27 = 0$. Now we factor and get $(x - 9)(x + 3) = 0$, hence we have $x=9$ and $x=-3$. Since $a \\geq b$, $a=9$ and $b=-3$, so $2a-3b=2(9)-3(-3)=18+9=\\boxed{27}$."
+}

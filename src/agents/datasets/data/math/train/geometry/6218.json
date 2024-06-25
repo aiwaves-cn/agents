@@ -1,0 +1,6 @@
+{
+    "problem": "[asy] draw((0,0)--(2,2)--(5/2,1/2)--(2,0)--cycle,dot); MP(\"A\",(0,0),W);MP(\"B\",(2,2),N);MP(\"C\",(5/2,1/2),SE);MP(\"D\",(2,0),S); MP(\"a\",(1,0),N);MP(\"b\",(17/8,1/8),N); [/asy]\nIn the accompanying figure, segments $AB$ and $CD$ are parallel, the measure of angle $D$ is twice that of angle $B$, and the measures of segments $AD$ and $CD$ are $a$ and $b$ respectively. Then the measure of $AB$ is equal to\n$\\text{(A) } \\tfrac{1}{2}a+2b\\quad \\text{(B) } \\tfrac{3}{2}b+\\tfrac{3}{4}a\\quad \\text{(C) } 2a-b\\quad \\text{(D) } 4b-\\tfrac{1}{2}a\\quad \\text{(E) } a+b$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "With reference to the diagram above, let $E$ be the point on $AB$ such that $DE||BC$. Let $\\angle ABC=\\alpha$. We then have $\\alpha =\\angle AED = \\angle EDC$ since $AB||CD$, so $\\angle ADE=\\angle ADC-\\angle BDC=2\\alpha-\\alpha = \\alpha$, which means $\\triangle AED$ is isosceles.\nTherefore, $AB=AE+EB=\\boxed{a+b}$."
+}

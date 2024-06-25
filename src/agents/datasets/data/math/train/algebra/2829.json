@@ -1,0 +1,6 @@
+{
+    "problem": "Samson derives utility according the relation  $$\\text{Utility} = \\text{hours of math done} \\times \\text{hours of frisbee played}.$$On Monday he plays $t$ hours of frisbee and spends $8 - t$ hours doing math.  On Tuesday, he ends up getting the same amount of utility as Monday while spending $2-t$ hours playing frisbee and $t+3$ hours on math.  Find $t$.  Answer as a fraction in lowest terms.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since he derived equal utility from both days, we have $$t (8 - t) = (2 - t)(t + 3),$$so $$8t - t^2 = -t^2 -t + 6.$$Simplifying gives $t = \\boxed{\\frac{2}{3}}$."
+}

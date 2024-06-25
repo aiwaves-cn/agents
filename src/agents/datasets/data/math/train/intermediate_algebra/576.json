@@ -1,0 +1,6 @@
+{
+    "problem": "Let $r_1,$ $r_2,$ and $r_3$ be the roots of\n\\[x^3 - 3x^2 + 8 = 0.\\]Find the monic polynomial, in $x,$ whose roots are $2r_1,$ $2r_2,$ and $2r_3.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = 2x.$  Then $x = \\frac{y}{2},$ so\n\\[\\frac{y^3}{8} - \\frac{3y^2}{4} + 8 = 0.\\]Multiplying by 8, we get $y^3 - 6y^2 + 64 = 0.$  The corresponding polynomial in $x$ is then $\\boxed{x^3 - 6x^2 + 64}.$"
+}

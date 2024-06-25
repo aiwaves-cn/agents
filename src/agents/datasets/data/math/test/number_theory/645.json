@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the number of integers $x$ such that $0\\le x< 12$ and $x$ satisfies the following system of equations: \\begin{align*}\n&x-1\\equiv 1-x\\pmod {12},\\\\\n&x-2\\equiv 2-x\\pmod{12}.\n\\end{align*}",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "First, we simplify both of the congruence relationships to get:  \\begin{align*}\n&x-1\\equiv 1-x\\pmod {12}\\implies 2x\\equiv 2\\pmod{12},\\\\\n&x-2\\equiv 2-x\\pmod{12}\\implies 2x\\equiv 4\\pmod{12}.\n\\end{align*}Since $2x$ cannot be equivalent to both 2 and 4 mod 12, we know that there are $\\boxed{0}$ solutions."
+}

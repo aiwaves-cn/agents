@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest $n>3$ such that $(1+2+3+\\cdots+n)^2$ is a perfect fourth power.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First, note the well-known formula that $1+2+3+\\cdots+n = \\frac{n(n+1)}{2}$. Thus we are looking for $n$ such that $\\frac{n(n+1)}{2}$ is a perfect square. Since $n$ and $n+1$ are relatively prime, the odd one will have to be a perfect square, and the even one will have to be twice a perfect square. Thus we are looking for solutions to $a^2-2b^2=\\pm 1$ where $a^2 \\ge 4$. It's clear $b=1$ does not work, but trying $b=2$, we find that $2(2^2)+1=9=3^2$. Therefore, $n=2(2^2)=\\boxed{8}$ is the smallest solution. We may confirm our answer by checking that $\\left(\\frac{n(n+1)}{2}\\right)^2=36^2$ when $n=8$, and indeed $36^2=6^4$ is a perfect fourth power."
+}

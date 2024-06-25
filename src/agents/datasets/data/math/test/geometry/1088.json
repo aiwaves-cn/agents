@@ -1,0 +1,6 @@
+{
+    "problem": "In trapezoid $ABCD$, $\\overline{AB}$ and $\\overline{CD}$ are perpendicular to $\\overline{AD}$, with $AB+CD=BC$, $AB<CD$, and $AD=7$. What is $AB \\cdot CD$? Express your answer in decimal form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $E$ be the foot of the perpendicular from $B$ to $\\overline{CD}$. Then $AB = DE$ and $BE =\nAD = 7$. By the Pythagorean Theorem, \\begin{align*}\nAD^2 = BE^2 &= BC^2 - CE^2\\\\\n&= (CD+AB)^2 - (CD - AB)^2\\\\\n&=(CD+AB+CD-AB)(CD+AB-CD+AB)\\\\\n&=4\\cdot CD \\cdot AB.\n\\end{align*}Hence, $AB \\cdot CD = AD^2/4=7^2/4=49/4=\\boxed{12.25}$.\n\n[asy]\npair A,B,C,D,I;\nA=(0,0);\nB=(0,5);\nC=(7,7);\nI=(7,5);\nD=(7,0);\ndraw(A--B--C--D--cycle);\ndraw(B--I);\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,E);\nlabel(\"$E$\",I,E);\nlabel(\"$D$\",D,E);\n[/asy]"
+}

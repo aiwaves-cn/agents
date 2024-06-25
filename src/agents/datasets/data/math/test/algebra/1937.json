@@ -1,0 +1,6 @@
+{
+    "problem": "$441+2(21)(19)+361=x$. Solve for $x$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We note that $361=19^2$ and $441=21^2$, so $x=21^2+2(21)(19)+19^2$. This is just the binomial expansion of $(21+19)^2=40^2=\\boxed{1600}$."
+}

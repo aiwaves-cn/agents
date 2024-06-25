@@ -1,0 +1,6 @@
+{
+    "problem": "The positive three-digit integer $N$ has a ones digit of $0$. What is the probability that $N$ is divisible by $4$? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "An integer is divisible by 4 if and only if a number formed from the last two digits is divisible by 4. If the units digit is 0, all the numbers with even tens digits are divisible by 4 (00, 20, 40, 60, 80), and all the numbers with odd tens digits are not (10, 30, 50, 70, 90). Since there are the same number of even digits as odd digits, there is a $\\boxed{\\frac{1}{2}}$ probability that $N$ is divisible by 4."
+}

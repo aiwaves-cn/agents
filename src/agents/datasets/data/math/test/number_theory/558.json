@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$ be the product of the divisors of $300$. What is the sum of the distinct prime divisors of $A$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Suppose that 300 has $d$ divisors. The divisors of 300 can be split into $d/2$ pairs in such a way that the product of each pair is 300: $\\{1,300\\}, \\{2,150\\},$ etc. Thus $A=300^{d/2}$, which implies that $A$ has the same prime divisors as 300. Since the prime factorization of $300$ is $2^2 \\cdot 3 \\cdot 5^2$, the sum of the prime divisors of $A$ is $2+3+5=\\boxed{10}$."
+}

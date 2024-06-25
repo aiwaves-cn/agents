@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c,$ $d$ be positive real numbers.  Find the minimum value of\n\\[(1 + a)(1 + b)(1 + c)(1 + d) \\left( \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} \\right).\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[1 + a = \\frac{1}{3} + \\frac{1}{3} + \\frac{1}{3} + a \\ge 4 \\sqrt[4]{\\frac{1}{3^3} \\cdot a} = 4 \\sqrt[4]{\\frac{a}{27}}.\\]Similarly,\n\\begin{align*}\n1 + b &\\ge 4 \\sqrt[4]{\\frac{b}{27}}, \\\\\n1 + c &\\ge 4 \\sqrt[4]{\\frac{c}{27}}, \\\\\n1 + d &\\ge 4 \\sqrt[4]{\\frac{d}{27}}.\n\\end{align*}Also by AM-GM,\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} \\ge 4 \\sqrt[4]{\\frac{1}{abcd}}.\\]Multiplying all these inequalities, we get\n\\begin{align*}\n(1 + a)(1 + b)(1 + c)(1 + d) \\left( \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} \\right) &\\ge 4 \\sqrt[4]{\\frac{a}{27}} \\cdot 4 \\sqrt[4]{\\frac{b}{27}} \\cdot 4 \\sqrt[4]{\\frac{c}{27}} \\cdot 4 \\sqrt[4]{\\frac{d}{27}} \\cdot 4 \\sqrt[4]{\\frac{1}{abcd}} \\\\\n&= \\frac{1024}{27}.\n\\end{align*}Equality occurs when $a = b = c = d = \\frac{1}{3},$ so the minimum value is $\\boxed{\\frac{1024}{27}}.$"
+}

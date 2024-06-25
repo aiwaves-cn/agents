@@ -1,0 +1,6 @@
+{
+    "problem": "Find $n$ if $\\gcd(n,40) = 10$ and $\\mathop{\\text{lcm}}[n,40] = 280$.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We know that $\\gcd(a,b) \\cdot \\mathop{\\text{lcm}}[a,b] = ab$ for all positive integers $a$ and $b$.  Hence, in this case, $10 \\cdot 280 = n \\cdot 40$, so $n = 10 \\cdot 280/40 = \\boxed{70}$."
+}

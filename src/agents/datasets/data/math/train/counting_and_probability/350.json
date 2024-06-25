@@ -1,0 +1,6 @@
+{
+    "problem": "How many three-digit whole numbers have no 7's and no 9's as digits?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "In order to be a three-digit number, the first digit cannot be 0, so there are normally 9 choices for the hundreds digit. But it also cannot be 7 or 9, so there are actually only 7 choices for the hundreds digit, and then 8 digits each for the units and tens digits. So, there are $7 \\cdot 8 \\cdot 8 = \\boxed{448}$ such numbers."
+}

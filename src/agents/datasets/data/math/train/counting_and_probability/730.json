@@ -1,0 +1,6 @@
+{
+    "problem": "Henry's Hamburger Heaven offers its hamburgers with the following condiments: ketchup, mustard, mayonnaise, tomato, lettuce, pickles, cheese, and onions. A customer can choose one, two, or three meat patties, and any collection of condiments. How many different kinds of hamburgers can be ordered?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "A customer makes one of two choices for each condiment, to include it or not to include it. The choices are made independently, so there are $2^8 = 256$ possible combinations of condiments. For each of those combinations there are three choices regarding the number of meat patties, so there are altogether $(3)(256)=\\boxed{768}$ different kinds of hamburgers."
+}

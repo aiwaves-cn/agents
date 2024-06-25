@@ -1,0 +1,6 @@
+{
+    "problem": "The United States Postal Service charges an extra $\\$0.11$ in postage if the length of an envelope, in inches, divided by its height, in inches, is less than $1.3$ or greater than $2.5.$ For how many of these four envelopes must the extra $\\$0.11$ in postage be paid? \\begin{tabular}[t]{ccc}\nEnvelope & Length in inches & Height in inches\\\\\\hline\nA &6 &4\\\\\nB &9 &3\\\\\nC &6 &6\\\\\nD &11 &4\n\\end{tabular}",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We calculate the desired ratio for each envelope: \\begin{align*}\n\\text{A} &= \\frac{6}{4} = 1.5 \\\\\n\\text{B} &= \\frac{9}{3} = 3 \\\\\n\\text{C} &= \\frac{6}{6} = 1 \\\\\n\\text{D} &= \\frac{11}{4} = 2.75\n\\end{align*} $\\text B,$ $\\text C,$ and $\\text D$ are out of range, so the answer is $\\boxed{3}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$, $y$, and $z$ be real numbers such that\n\\[\\cos x + \\cos y + \\cos z = \\sin x + \\sin y + \\sin z = 0.\\]Find the sum of all possible values of $\\cos (2x - y - z).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $a = e^{ix}$, $b = e^{iy}$, and $c = e^{iz}$.  Then\n\\begin{align*}\na + b + c &= e^{ix} + e^{iy} + e^{iz} \\\\\n&= (\\cos x + \\cos y + \\cos z) + i (\\sin x + \\sin y + \\sin z) \\\\\n&= 0.\n\\end{align*}Also,\n\\begin{align*}\n\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} &= \\frac{1}{e^{ix}} + \\frac{1}{e^{iy}} + \\frac{1}{e^{iz}} \\\\\n&= e^{-ix} + e^{-iy} + e^{-iz} \\\\\n&= [\\cos (-x) + \\cos (-y) + \\cos (-z)] + i [\\sin (-x) + \\sin (-y) + \\sin (-z)] \\\\\n&= (\\cos x + \\cos y + \\cos z) - i (\\sin x + \\sin y + \\sin z) \\\\\n&= 0.\n\\end{align*}Hence,\n\\[abc \\left( \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} \\right) = ab + ac + bc = 0.\\]Note that $\\cos (2x - y - z)$ is the real part of $e^{i (2 \\alpha - \\beta - \\gamma)},$ and\n\\begin{align*}\ne^{i (2 \\alpha - \\beta - \\gamma)} &= \\frac{a^2}{bc} \\\\\n&= \\frac{a \\cdot a}{-ab - ac} \\\\\n&= \\frac{a (-b - c)}{-ab - ac} \\\\\n&= 1.\n\\end{align*}Therefore, $\\cos (2x - y - z) = \\boxed{1}.$"
+}

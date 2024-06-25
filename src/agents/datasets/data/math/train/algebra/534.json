@@ -1,0 +1,6 @@
+{
+    "problem": "The 2007 AMC 10 will be scored by awarding $6$ points for each correct response, $0$ points for each incorrect response, and $1.5$ points for each problem left unanswered. After looking over the $25$ problems, Sarah has decided to attempt the first $22$ and leave only the last $3$ unanswered.\n\nHow many of the first $22$ problems must she solve correctly in order to score at least $100$ points?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Sarah will receive $4.5$ points for the three questions she leaves unanswered, so she must earn at least $100-4.5=95.5$ points on the first $22$ problems. Because \\[\n15 < \\frac{95.5}{6} < 16,\n\\]she must solve at least $\\boxed{16}$ of the first $22$ problems correctly. This would give her a score of $100.5.$"
+}

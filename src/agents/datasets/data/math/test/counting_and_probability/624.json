@@ -1,0 +1,6 @@
+{
+    "problem": "What is the simplified value of $\\frac{10! + 11! + 12!}{10! + 11!}$?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We do a little factoring, taking advantage of the properties of factorials:\n\\[\\frac{10! + 11! + 12!}{10! + 11!} = \\frac{10!(1+11+11\\cdot 12)}{10!(1+11)} = \\frac{1+11+11\\cdot 12}{12} = \\frac{12 + 11 \\cdot 12}{12} = \\frac{12\\cdot 12}{12} = \\boxed{12}.\\]"
+}

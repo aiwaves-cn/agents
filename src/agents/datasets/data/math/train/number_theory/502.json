@@ -1,0 +1,6 @@
+{
+    "problem": "How many of the 343 smallest positive integers written in base 7 use 4 or 5 (or both) as a digit?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "$343 = 7^3 = 1000_7$, so the first 343 natural numbers in base 7 are $1_7, 2_7, \\ldots 1000_7$.  Any number in this list that neither includes 4 or 5 only includes the digits 0, 1, 2, 3, and 6.  If we replace 6 with 4, these have the same decimal expansions as the integers in base 5.  Since there are $5^3 = 125$ positive integers less than or equal to $1000_5$, there are 125 integers less than or equal to $1000_7$ that contain no 4's or 5's in base 7, which means there are $343 - 125 = \\boxed{218}$ integers that include a 4 or a 5."
+}

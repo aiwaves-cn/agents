@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $y = -6t^2 + 43t$ describes the height (in feet) of a projectile $t$ seconds after it is launched from the surface of Mars at 43 feet per second. In how many seconds will the projectile first reach 77 feet in height? Express your answer as a decimal rounded to the nearest tenth.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Setting $y$ to 77, we find the following: \\begin{align*}\n77& = -6t^2 + 43t\\\\\n0 & = -6t^2 + 43t - 77\\\\\n& = 6t^2 - 43t + 77\\\\\n& = (3t-11)(2t-7)\n\\end{align*}Our possible values for $t$ are $\\frac{11}{3} \\approx 3.667$ or $\\frac{7}{2} = 3.5.$ Of these, we choose the smaller $t$, or $\\boxed{3.5}.$"
+}

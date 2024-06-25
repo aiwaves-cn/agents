@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangle measures 6 meters by 10 meters. Drawn on each side of the rectangle is a semicircle that has the endpoints of its diameter on the vertices of the rectangle. What percent larger is the area of the large semicircles than the area of the small semicircles? Express your answer to the nearest whole number.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The two large semicircles together make a circle of radius 5, which has area $25\\pi$.  The two small circles together make a circle with radius 3, which has area $9\\pi$.  Therefore, the ratio of the large semicircles' area to the small semicircles' area is $\\frac{25\\pi}{9\\pi} = \\frac{25}{9} \\approx 2.78$.    Since the large semicircles have area 2.78 times the small semicircles, the large semicircles' area is $278\\%$ of the small semicircles' area, which is an increase of $278\\% - 100\\% = \\boxed{178\\%}$ over the small semicircles' area."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For what values of the constant $c$ does the graph of $f(x) = \\frac{x^2-x+c}{x^2+x-20}$ have exactly one vertical asymptote?\n\nEnter all possible values, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor the denominator to get $$f(x) = \\frac{x^2-x+c}{(x-4)(x+5)}.$$Hence, the graph of $f(x)$ has vertical asymptotes at $x=-5$ and $x=4$, unless there is a factor of $x-4$ or $x+5$ in the numerator that cancels out the corresponding factor in the denominator (in this case there will be a hole at that point rather than an asymptote). So, we need to find $c$ such that $x^2 - x + c$ has a factor of $x-4$ or $x + 5,$ but not both.\n\nThat is to say, we need $c$ such that either $4$ or $-5$ is a root. If $x = 4$ is a root, we must have $(4)^2-4+c=0$ which gives us $c=-12.$ If $-5$ is a root, then we must have $(-5)^2 - (-5) + c = 0,$ or $c = - 30.$\n\nThus, the values that work are $c = \\boxed{-12 \\text{ or } -30}.$"
+}

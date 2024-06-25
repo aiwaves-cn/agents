@@ -1,0 +1,6 @@
+{
+    "problem": "How many 3-letter words can we make from the letters A, B, C, and D, if we are allowed to repeat letters, and we must use the letter A at least once? (Here, a word is an arbitrary sequence of letters.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $4^3$ three letter words from A, B, C, and D, and there are $3^3$ three letter words from just B, C, and D. There must, then, be $4^3 - 3^3=64-27 = \\boxed{37}$ words from A, B, C, and D containing at least one A."
+}

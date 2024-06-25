@@ -1,0 +1,6 @@
+{
+    "problem": "Find the curve defined by the equation\n\\[r = \\frac{6}{2 + 3 \\sin \\theta}.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the given equation,\n\\[2r + 3r \\sin \\theta = 6.\\]Then $2r = 6 - 3r \\sin \\theta = 6 - 3y,$ so\n\\[4r^2 = (6 - 3y)^2 = 9y^2 - 36y + 36.\\]Hence, $4(x^2 + y^2) = 9y^2 - 36y + 36.$  Then $4x^2 = 5y^2 - 36y + 36,$ so\n\\[4x^2 - 5y^2 + 36y - 36 = 0.\\]We can write this equation as\n\\[\\frac{(y - \\frac{18}{5})^2}{\\frac{144}{25}} - \\frac{x^2}{\\frac{36}{5}} = 1.\\]Thus, the graph is a hyperbola.  The answer is $\\boxed{\\text{(E)}}.$\n\n[asy]\nunitsize(0.2 cm);\n\npair moo (real t) {\n  real r = 6/(2 + 3*Sin(t));\n  return (r*Cos(t), r*Sin(t));\n}\n\npath foo = moo(-41.8);\nreal t;\n\nfor (t = -41.8; t <= 221.8; t = t + 0.1) {\n  foo = foo--moo(t);\n}\n\ndraw(foo,red);\n\nfoo = moo(221.9);\n\nfor (t = 221.9; t <= 318.1; t = t + 0.1) {\n  foo = foo--moo(t);\n}\n\ndraw(foo,red);\n\ndraw((-12,0)--(12,0));\ndraw((0,-12)--(0,12));\n\nlimits((-12,-12),(12,12),Crop);\n[/asy]"
+}

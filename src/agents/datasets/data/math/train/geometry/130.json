@@ -1,0 +1,6 @@
+{
+    "problem": "The sides of triangle $PQR$ are tangent to a circle with center $C$ as shown. Given that $\\angle PQR = 63^\\circ$ and $\\angle QPR = 59^\\circ$, find $\\angle QRC$, in degrees.\n\n[asy]\n\nunitsize(1.0 cm);\n\npair Q, P, R, C;\n\nQ = (2.43,3.46);\n\nP = (0,0);\n\nR = (4.43,0);\n\nC = incenter(Q,P,R);\n\ndraw(Q--P--R--cycle);\n\ndraw(incircle(Q,P,R));\n\ndraw(R--C);\n\nlabel(\"$Q$\", Q, N);\n\nlabel(\"$P$\", P, SW);\n\nlabel(\"$R$\", R, SE);\n\nlabel(\"$C$\", C, N);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The circle with center $C$ is the incircle of $\\triangle PQR$. So, any segment from a vertex of the triangle to $C$ is an angle bisector.\n\nThe sum of the measures of the internal angles of a triangle is $180^\\circ$, so\n\n\\begin{align*}\n\\angle QRP &= 180^\\circ - \\angle PQR - \\angle QPR \\\\\n&= 180^\\circ - 63^\\circ - 59^\\circ\\\\\n&= 58^\\circ.\n\\end{align*}Since $\\overline{RC}$ bisects $\\angle QRP$, we have $\\angle QRC = \\frac{58^\\circ}{2} = \\boxed{29^\\circ}$."
+}

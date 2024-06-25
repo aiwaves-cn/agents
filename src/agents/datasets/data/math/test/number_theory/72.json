@@ -1,0 +1,6 @@
+{
+    "problem": "When the positive integers with exactly three positive divisors are listed in ascending order, what is the fifth number listed?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If an integer has at least two different prime factors, say, $p$ and $q$, then it must have at least four positive divisors: $1$, $p$, $q$, and $pq$. So, for a number to have exactly three positive divisors, it must be a power of a single prime number. The positive divisors of $p^n$ are $1,p,p^2,p^3,\\cdots,p^{n-1},p^n$. Therefore, $p^n$ has $n+1$ different positive divisors, and the only positive integers with exactly three positive divisors are the squares of prime numbers.\n\nThe five smallest such integers are, in ascending order, $2^2$, $3^2$, $5^2$, $7^2$, and $11^2$. The fifth number listed is $11^2=\\boxed{121}$."
+}

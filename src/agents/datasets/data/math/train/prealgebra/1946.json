@@ -1,0 +1,6 @@
+{
+    "problem": "A rhombus has sides of length 51 units each and a shorter diagonal of length 48 units. What is the length, in units, of the longer diagonal?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The diagonals of a rhombus divide the rhombus into four congruent right triangles.  The legs of these right triangles are half as long as the diagonals of the rhombus.  Therefore, the sum of the squares of the half-diagonals of a rhombus is equal to the square of the side length.  Since one of the half-diagonals is $24$, the other half-diagonal is $\\sqrt{51^2-24^2}=3\\sqrt{17^2-8^2}=3\\cdot15=45$.  Therefore, the length of the missing diagonal is $45\\cdot 2=\\boxed{90}$ units."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $333^{333}$ is divided by $11$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We use the property that $a \\equiv b \\pmod{m}$ implies $a^c \\equiv b^c \\pmod{m}$.\n\n$333 \\equiv 3 \\pmod{11}$, therefore $333^{333} \\equiv 3^{333} \\pmod{11}$.\n\nSince $3^5 \\equiv 1 \\pmod{11}$, we get that $333^{333} \\equiv 3^{333}=3^{5 \\cdot 66 +3}=(3^5)^{66} \\cdot 3^3 \\equiv 1^{66} \\cdot 27 \\equiv \\boxed{5} \\pmod{11}$."
+}

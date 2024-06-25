@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = ax^7 + bx^3 + cx - 5.$  If $f(-7) = 7,$ then find $f(7).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Note that\n\\begin{align*}\nf(x) + f(-x) &= (ax^7 + bx^3 + cx - 5) + (a(-x)^7 + b(-x)^3 + c(-x) - 5) \\\\\n&= (ax^7 + bx^3 + cx - 5) + (-ax^7 - bx^3 - cx - 5) \\\\\n&= -10.\n\\end{align*}In particular, $f(7) + f(-7) = -10,$ so $f(7) = -10 - f(-7) = \\boxed{-17}.$"
+}

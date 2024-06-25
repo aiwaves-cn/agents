@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a = .\\overline{2} + .\\overline{6}$.  Find the reciprocal of $a$, expressed as a decimal.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Convert both decimals into fractions. \\begin{align*}\nx&=.\\overline{2} \\\\\n\\Rightarrow 10x&=2.\\overline{2} \\\\\n\\Rightarrow 9x&=2 \\\\\n\\Rightarrow x &= \\frac{2}{9}.\n\\end{align*}Likewise, $.\\overline{6}=\\frac{6}{9}$. Adding the two fractions yields $\\frac{2}{9} + \\frac{6}{9}=\\frac{8}{9}$. The reciprocal of this is $\\frac{1}{\\frac{8}{9}}=\\frac{9}{8}$. To convert this to a decimal, we need to multiply the numerator and denominator by 125. Doing so, we get \\[\\frac{9}{8} \\cdot \\frac{125}{125} = \\frac{9 \\cdot 125}{8 \\cdot 125} = \\frac{1125}{1000}=\\boxed{1.125}.\\]"
+}

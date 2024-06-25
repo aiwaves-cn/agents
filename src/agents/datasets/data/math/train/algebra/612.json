@@ -1,0 +1,6 @@
+{
+    "problem": "Let  \\begin{align*}\nf(x) &= 2x + 5 \\\\\ng(x) &= \\sqrt{f(x)} - 2 \\\\\nh(x) &= f(g(x))\n\\end{align*} What is $h(2)$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Substituting, $h(2) = f(g(2))$. Now, $$g(2) = \\sqrt{f(2)} - 2 = \\sqrt{2 \\cdot 2 + 5} - 2 = 3 - 2 = 1.$$ Thus, $$h(2) = f(g(2)) = f(1) = 2 \\cdot 1 + 5 = \\boxed{7}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = x + 2$ and $g(x) = 1/f(x)$. What is $g(f(-3))$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we find that $f(-3) = (-3) + 2 = -1$. Then, $$g(f(-3)) = g(-1) = 1/f(-1) = 1/(-1 + 2) = \\boxed{1}.$$"
+}

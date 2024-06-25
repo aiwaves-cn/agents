@@ -1,0 +1,6 @@
+{
+    "problem": "For what value of $n$ is $5 \\times 8 \\times 2 \\times n = 7!$?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "To make the arithmetic a little easier, we can write out 7! as $7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 = 7 \\times 5 \\times 3^2 \\times 2^4$. And, $5 \\times 8 \\times 2 = 5 \\times 2^4$. So, $n = \\frac{7 \\times 5 \\times 3^2 \\times 2^4}{5 \\times 2^4} = 7 \\times 3^2 = \\boxed{63}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Positive integers $a$, $b$, $c$, and $d$ satisfy $a > b > c > d$, $a + b + c + d = 2010$, and $a^2 - b^2 + c^2 - d^2 = 2010$. Find the number of possible values of $a.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Note that \\[2010 = a^2 - b^2 + c^2 - d^2 = (a-b)(a+b) + (c-d)(c+d).\\]If either $a-b > 1$ or $c-d > 1,$ then \\[(a-b)(a+b) + (c-d)(c+d) > (a+b) + (c+d) = 2010,\\]which is a contradiction. Therefore, we must have $a-b=1$ and $c-d=1.$ In other words, setting $b=a-1$ and $d=c-1,$ we have \\[a+b+c+d = 2a+2c-2 = 2010 \\implies a+c = 1006,\\]and we must have $a \\ge c+2,$ $c \\ge 2.$ The pairs $(a, c)$ satisfying these conditions are $(a, c) = (1004, 2), (1003, 3), \\ldots, (504, 502),$ which makes $\\boxed{501}$ possible values for $a.$"
+}

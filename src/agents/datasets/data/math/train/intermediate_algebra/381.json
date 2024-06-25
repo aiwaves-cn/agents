@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive real solutions are there to $x^{10}+7x^9+14x^8+1729x^7-1379x^6=0$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor the equation as\n\\[x^6 (x^4 + 7x^3 + 14x^2 + 1729x - 1379) = 0.\\]Since we are looking for positive real solutions, this reduces to\n\\[x^4 + 7x^3 + 14x^2 + 1729x - 1379.\\]Consider the function $f(x) = x^4 + 7x^3 + 14x^2 + 1729x - 1379.$  This is increasing for $x > 0.$  Also, $f(0) < 0$ and $f(1) > 0,$ so there is exactly $\\boxed{1}$ positive real solution, which lies in the interval $(0,1).$"
+}

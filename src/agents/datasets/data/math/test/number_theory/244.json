@@ -1,0 +1,6 @@
+{
+    "problem": "Given that the repetend in the decimal representation of $\\frac{1}{19}$ contains 18 digits, find the 39th digit in the decimal representation.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $39 = 2 \\times 18 + 3$, the $39$th digit past the decimal point is the same as the $3$rd digit past the decimal point. To find this, we can directly divide: $$\n\\begin{array}{c|cccc}\n\\multicolumn{2}{r}{0} & .0 & 5 & 2 \\\\\n\\cline{2-5}\n19 & 1 & .0 & 0 & 0 \\\\\n\\multicolumn{2}{r}{} & 9 & 5 & \\downarrow \\\\ \\cline{2-4}\n\\multicolumn{2}{r}{} & & 5 & 0 \\\\\n\\multicolumn{2}{r}{} & & 3 & 8 \\\\ \\cline{4-5}\n\\multicolumn{2}{r}{} & & 1 & 2 \\\\\n\\end{array} $$ Thus, the answer is $\\boxed{2}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of the function\n\\[f(x) = \\sqrt{-x^2 + 4x + 21} - \\sqrt{-x^2 + 3x + 10}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write the function as\n\\[f(x) = \\sqrt{(7 - x)(3 + x)} - \\sqrt{(5 - x)(2 + x)}.\\]This shows that the function is defined only for $-2 \\le x \\le 5.$  Also, $(7 - x)(3 + x) - (5 - x)(2 + x) = x + 11 > 0$ on this interval, which means that $f(x)$ is always positive.\n\nThen\n\\begin{align*}\n[f(x)]^2 &= (7 - x)(3 + x) - 2 \\sqrt{(7 - x)(3 + x)} \\sqrt{(5 - x)(2 + x)} + (5 - x)(2 + x) \\\\\n&= -2x^2 + 7x + 31 - 2 \\sqrt{(7 - x)(2 + x)(5 - x)(3 + x)} \\\\\n&= 2 + (7 - x)(2 + x) - 2 \\sqrt{(7 - x)(2 + x)} \\sqrt{(5 - x)(3 + x)} + (5 - x)(3 + x) \\\\\n&= 2 + \\left[ \\sqrt{(7 - x)(2 + x)} - \\sqrt{(5 - x)(3 + x)} \\right]^2 \\ge 2.\n\\end{align*}Therefore, $f(x) \\ge \\sqrt{2}.$\n\nEquality occurs when $(7 - x)(2 + x) = (5 - x)(3 + x),$ or $x = \\frac{1}{3}.$  We conclude that the minimum value is $\\boxed{\\sqrt{2}}.$"
+}

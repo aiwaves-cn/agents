@@ -1,0 +1,6 @@
+{
+    "problem": "Let  \\[A=111111\\]and  \\[B=142857\\]Find a positive integer $N$ with six or fewer digits such that $N$ is the multiplicative inverse of $AB$ modulo 1,000,000.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We notice that both $A$ and $B$ are factors of 999,999.  Specifically \\[9A=999999\\]and \\[7B=999999.\\]Taken modulo 1,000,000 these equations read \\begin{align*}\n9A&\\equiv-1\\pmod{1{,}000{,}000}\\\\\n7B&\\equiv-1\\pmod{1{,}000{,}000}\\\\\n\\end{align*}We are set if we multiply these equations: \\[(9A)(7B)\\equiv1\\pmod{1{,}000{,}000}\\]so $N=9\\cdot7=\\boxed{63}$ is the multiplicative inverse to $AB$ modulo 1,000,000."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate the product \\[ (a-10) \\cdot (a-9) \\cdot \\dotsm \\cdot (a-1) \\cdot a, \\] where $a=2$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Note that $a-2 = 0$, since $a = 2$.  Thus the product in question is \\[ (a -10) \\dotsm (a-3) \\cdot (a-2) \\cdot (a-1) \\cdot a = (a-10) \\dotsm (a-3) \\cdot 0 \\cdot (a-1) \\cdot a, \\] which is $\\boxed{0}$, since zero times any real number is zero."
+}

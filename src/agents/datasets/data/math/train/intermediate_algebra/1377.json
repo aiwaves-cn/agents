@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = x^2-2x$. How many distinct real numbers $c$ satisfy $f(f(f(f(c)))) = 3$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We want the size of the set $f^{-1}(f^{-1}(f^{-1}(f^{-1}(3)))).$ Note that $f(x) = (x-1)^2-1 = 3$ has two solutions: $x=3$ and $x=-1$, and that the fixed points $f(x) = x$ are $x = 3$ and $x=0$. Therefore, the number of real solutions is equal to the number of distinct real numbers $c$ such that $c = 3$, $c=-1$, $f(c)=-1$ or $f(f(c))=-1$, or $f(f(f(c)))=-1$.\n\nThe equation $f(x) = -1$ has exactly one root $x = 1$. Thus, the last three equations are equivalent to $c = 1, f(c) = 1$, and $f(f(c))=1$. $f(c)\n= 1$ has two solutions, $c = 1 \\pm \\sqrt{2}$, and for each of these two values $c$ there are two preimages. It follows that the answer is $1+1+1+2+4 = \\boxed{9}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A water-filled spherical balloon lands on a sidewalk, momentarily flattening to a hemisphere.  The ratio of the radius of the spherical balloon to the radius of the hemisphere can be expressed in the form $\\sqrt[3]{a}$ for some real number $a$.  Compute $a$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the radius of the hemisphere be $r$.  The volume of a sphere with radius $r$ is $\\frac{4}{3}\\pi r^3$, so the volume of a hemisphere with radius $r$ is $\\frac{2}{3}\\pi r^3$.\n\nLet the radius of the sphere be $x$, so we have \\[\\frac{4}{3}\\pi x^3 = \\frac{2}{3}\\pi r^3.\\]  Simplifying yields $2x^3=r^3$.  The desired ratio of the radius of the spherical balloon to the radius of the hemisphere is $\\frac{x}{r}$.  We have \\[\\frac{x^3}{r^3} = \\frac{1}{2}\\] so \\[\\frac{x}{r} = \\sqrt[3]{\\frac{1}{2}}.\\]  Thus, we see $a=\\boxed{\\frac{1}{2}}$."
+}

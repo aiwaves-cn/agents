@@ -1,0 +1,6 @@
+{
+    "problem": "For which integer $a$ does $x^2 - x + a$ divide $x^{13} + x + 90$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[(x^2 - x + a) p(x) = x^{13} + x + 90\\]for some polynomial $p(x)$ with integer coefficients.\n\nSetting $x = 0,$ we get $ap(0) = 90.$  This means $a$ divides 90.\n\nSetting $x = 1,$ we get $ap(1) = 92.$  This means $a$ divides 92.\n\nSince $a$ divides both 90 and 92, it must divide $92 - 90 = 2.$  Hence, $a$ must be equal to 2, 1, $-1,$ or $-2.$\n\nSetting $x = -1,$ we get $(a + 2) p(-1) = 88.$  This means $a + 2$ divides 88.  Of the four values we listed above, only $a = -1$ and $a = 2$ work.\n\nIf $a = -1,$ then $x^2 - x + a$ becomes $x^2 - x - 1 = 0$.  The roots are\n\\[x = \\frac{1 \\pm \\sqrt{5}}{2}.\\]In particular, one root is positive, and one root is negative.  But $x^{13} + x + 90$ is positive for all positive $x,$ which means that it does not have any positive roots.  Therefore, $a$ cannot be $-1,$ which means $a = \\boxed{2}.$\n\nBy Long Division,\n\\[x^{13} + x + 90 = (x^2 - x + 2)(x^{11} + x^{10} - x^9 - 3x^8 - x^7 + 5x^6 + 7x^5 - 3x^4 - 17x^3 - 11x^2 + 23x + 45).\\]"
+}

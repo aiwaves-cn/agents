@@ -1,0 +1,6 @@
+{
+    "problem": "Segment $s_1$ has endpoints at $(3+\\sqrt{2},5)$ and $(4,7)$.  Segment $s_2$ has endpoints at $(6-\\sqrt{2},3)$ and $(3,5)$.  Find the midpoint of the segment with endpoints at the midpoints of $s_1$ and $s_2$.  Express your answer as $(a,b)$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Using the midpoint formula, we find that the midpoint of $s_1$ has coordinates $\\left(\\frac{3+\\sqrt{2}+4}{2},\\frac{5+7}{2}\\right)=\\left(\\frac{7+\\sqrt{2}}{2}, 6\\right)$.\n\nThe midpoint of $s_2$ has coordinates $\\left(\\frac{6-\\sqrt{2}+3}{2},\\frac{3+5}{2}\\right)=\\left(\\frac{9-\\sqrt{2}}{2}, 4\\right)$.\n\nApplying the formula once more we see that the desired point is at $\\left(\\dfrac{\\dfrac{7+\\sqrt{2}+9-\\sqrt{2}}{2}}{2},\\frac{4+6}{2}\\right)=\\boxed{(4,5)}.$"
+}

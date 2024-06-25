@@ -1,0 +1,6 @@
+{
+    "problem": "Given $f(x) = \\frac{\\sqrt{x-1}}{x-2}$, what is the smallest possible integer value for $x$ such that $f(x)$ has a real number value?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "In order for $f(x)$ to have a real number value, the expression inside the square root in the numerator must be non-negative and the denominator must not be 0. So we have the two conditions $x-1\\ge0 \\Rightarrow x \\ge 1$ and $x-2 \\ne 0 \\Rightarrow x \\ne 2$. We see that $x=\\boxed{1}$ is the smallest integer value that satisfies both conditions."
+}

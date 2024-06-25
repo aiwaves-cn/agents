@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A(3,5)$ and $B(7,10)$ are the endpoints of a diameter of a circle graphed in a coordinate plane. How many square units are in the area of the circle? Express your answer in terms of $\\pi$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We must find the radius of the circle in order to find the area. We are told that points $A$ and $B$ are the endpoints of a diameter, so we can find the distance between these two points. We use the distance formula: $\\sqrt{(7-3)^2 + (10-5)^2} = \\sqrt{16 + 25} = \\sqrt{41}$.\n\nSince the diameter has a length of $\\sqrt{41}$, the radius must have length $\\sqrt{41}/2$. Therefore, the answer is $(\\sqrt{41}/2)^2\\pi = \\boxed{\\frac{41\\pi}{4}}$."
+}

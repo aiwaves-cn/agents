@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct four-digit numbers are divisible by 3 and have 23 as their last two digits?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "A number is divisible by 3 if and only if the sum of its digits is divisible by 3. So a  four-digit number $ab23$ is divisible by $3$ if and only if the two-digit number $ab$ leaves a remainder of 1 when divided by 3. There are 90 two-digit numbers, of which $90/3 = \\boxed{30}$ leave a remainder of 1 when divided by 3."
+}

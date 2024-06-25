@@ -1,0 +1,6 @@
+{
+    "problem": "When Claire divides her cupcakes into groups of 5, she has 3 remaining, and when she divides her cupcakes into groups of 7, she has 4 remaining. If Claire has fewer than 60 cupcakes, what is the sum of all possible quantities of cupcakes that she could have?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "If Claire has $N$ cupcakes, we know that $N = 5x+3$ and $N = 7y+4$ for some integers $x$ and $y$. Equating these two forms of $N$, we have $7y+1=5x$. We also know that $N<60$. We can write out all the sufficiently small possible values of $7y+1$: $$1,8,15,22,29,36,43,50,57.$$Of these, the numbers that are also of the form $5x$ are $15$ and $50$. These correspond to solutions $N=18,$ $N=53$. Thus, the sum of all possible quantities of cupcakes is $53+18 = \\boxed{71}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $f(x) = x^{-1} + \\frac{x^{-1}}{1+x^{-1}}$, what is $f(f(-2))$? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We have  \\[f(x) = x^{-1} + \\frac{x^{-1}}{1+x^{-1}} = \\frac1x + \\frac{1/x}{1+\\frac{1}{x}}.\\] Therefore, we have  \\begin{align*}f(-2) &= \\frac{1}{-2} + \\frac{\\frac{1}{-2}}{1 + \\frac{1}{-2}} \\\\&= -\\frac{1}{2} + \\frac{-1/2}{1 - \\frac{1}{2}} \\\\&= -\\frac12 + \\frac{-1/2}{1/2} \\\\&= -\\frac12-1 = -\\frac{3}{2}.\\end{align*} So, we have \\begin{align*}\nf(f(-2)) = f(-3/2) &= \\frac{1}{-3/2} + \\frac{1/(-3/2)}{1 + \\frac{1}{-3/2}} \\\\\n&= -\\frac23 + \\frac{-2/3}{1 -\\frac23} = -\\frac23 + \\frac{-2/3}{1/3}\\\\\n&= -\\frac23 - 2 = \\boxed{-\\frac83}.\\end{align*}"
+}

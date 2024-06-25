@@ -1,0 +1,6 @@
+{
+    "problem": "What value of $k$ makes the positive five-digit integer $k3,\\!57k$ divisible by 18?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Since $18=2\\cdot 3^2$, an integer is divisible by 18 if and only if it is divisible by both 2 and 9.  For $k3,\\!57k$ to be divisible by 2, $k$ must be even.  To determine whether $k3,\\!57k$ is divisible by 9, we find the sum of its digits, which is $2k+15$.  Substituting $k=0,2,4,\\ldots$, we find that none of the numbers 15, 19, or 23 are divisible by 9, but $15+2(6)=27$ is divisible by 9.  Therefore, $k=\\boxed{6}$."
+}

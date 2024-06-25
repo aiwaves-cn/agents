@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the product of all the roots of the equation \\[\\sqrt{5 | x | + 8} = \\sqrt{x^2 - 16}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Squaring both sides, we have $5|x|+8=x^2-16,$ or $5|x|=x^2-24.$ From here, we take cases on the sign of $x$:\n\nIf $x \\ge 0,$ then we have $5x=x^2-24,$ so \\[0=x^2-5x-24 = (x-8)(x+3),\\]which has roots $x=8$ and $x=-3.$ However, we assumed in this case that $x \\ge 0,$ so we only get the solution $x=8.$\n\nIf $x < 0,$ then we have $-5x=x^2-24,$ so \\[0=x^2+5x-24=(x+8)(x-3),\\]which has roots $x=-8$ and $x=3.$ However, we assumed in this case that $x \\le 0,$ so we only get the solution $x=-8.$\n\nWe can check that both $x=8$ and $x=-8$ satisfy the original equation, so the product of the roots is $8 \\cdot -8 = \\boxed{-64}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Give an example of a quadratic function that has zeroes at $x=2$ and $x=4$, and that takes the value $6$ when $x=3$.\n\nEnter your answer in the expanded form \"ax^2 + bx + c\", where a,b,c are replaced by appropriate numbers.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "An example of a quadratic function with zeroes at $x=2$ and $x=4$ is $(x-2)(x-4)$. However, when $x=3$, this function takes the value $-1$. However, multiplying the entire quadratic by $-6$ does not change the location of the zeroes, and does give us the desired value at $x=3$.\n\nThus, $-6(x-2)(x-4)$ has all the desired properties. The expanded form of this expression is $\\boxed{-6x^2+36x-48}$.\n\nNote that this is the only such quadratic. Any quadratic must factor as $a(x-r)(x-s)$, where its zeroes are $r$ and $s$; thus a quadratic with zeroes at $x=2$ and $x=4$ must be of the form $a(x-2)(x-4)$, and the coefficient $a=-6$ is forced by the value at $x=3$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $1273 + 120 \\div 60 - 173$.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Recall that division should be carried out before addition. So  \\[\n1273 + 120 \\div 60 - 173 = 1273 + (120 \\div 60) - 173 = 1273 + 2 - 173.\n\\]Noticing that 1273 and 173 both end in 73, we write this expression as the sum of three numbers so we can use the commutative property of addition to rearrange. We get  \\begin{align*}\n1273 + 2 - 173 &= 1273 + 2 + (-173) \\\\\n&= 1273 + (-173)+2 \\\\\n&= 1273 -173 + 2 \\\\\n&= 1100 + 2 \\\\\n&= \\boxed{1102}.\n\\end{align*}"
+}

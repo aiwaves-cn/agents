@@ -1,0 +1,6 @@
+{
+    "problem": "Diane has one 1-cent stamp, two identical 2-cent stamps, and so on, up to nine identical 9-cent stamps. In how many different arrangements can Diane paste exactly 10 cents worth of postage in a row across the top of an envelope? (Note, however, that simply rotating or inverting a stamp, or exchanging the positions of two stamps with the same denomination should be considered the same arrangement.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The 9 arrangements $(9,1)$, $(8,2)$, $\\ldots$, $(1,9)$ use two stamps.  The sets $(1,2,7)$, $(1,3,6)$, $(1,4,5)$, $(2,3,5)$ each use three distinct stamps, and each one gives $3!=6$ arrangements.  The other sets which use three stamps are $(2,2,6)$, $(3,3,4)$, and $(4,4,2)$, and each one gives 3 different arrangements.  In total, there are $4 \\times 6 + 3 \\times 3=33$ arrangements which use 3 stamps.  There are 24 arrangements of the stamps $(1,2,3,4)$, 12 arrangements of $(1,2,2,5)$, 6 arrangements of $(2,2,3,3)$, and 4 arrangements of $(1,3,3,3)$.  In total, there are 46 ways to use 4 stamps to make 10 cents in postage.  Altogether, there are $9+33+46=\\boxed{88}$ arrangements of stamps which sum to 10 cents."
+}

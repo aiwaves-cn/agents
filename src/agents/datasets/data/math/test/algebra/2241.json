@@ -1,0 +1,6 @@
+{
+    "problem": "What is the minimum value of the expression $x^2+y^2+2x-4y+8$ for real $x$ and $y$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Rearranging the expression, we have  \\[x^2+2x+y^2-4y+8\\]Completing the square in $x$, we need to add and subtract $(2/2)^2=1$. Completing the square in $y$, we need to add and subtract $(4/2)^2=4$. Thus, we have \\[(x^2+2x+1)-1+(y^2-4y+4)-4+8 \\Rightarrow (x+1)^2+(y-2)^2+3\\]Since the minimum value of $(x+1)^2$ and $(y-2)^2$ is $0$ (perfect squares can never be negative), the minimum value of the entire expression is $\\boxed{3}$, and is achieved when $x=-1$ and $y=2$."
+}

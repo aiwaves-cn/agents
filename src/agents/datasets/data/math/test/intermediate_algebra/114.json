@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product $10 \\cdot \\frac{4}{3} \\cdot \\frac{6}{4} \\cdot \\frac{8}{5} \\cdot \\frac{10}{6} \\cdot \\frac{12}{7} \\cdot \\frac{14}{8} \\cdot \\frac{16}{9} \\cdot \\frac{18}{10}$.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "The product of the numerators is\n\\begin{align*}\n&(2 \\cdot 2) \\cdot (2 \\cdot 3) \\cdot (2 \\cdot 4) \\cdot (2 \\cdot 5) \\cdot (2 \\cdot 6) \\cdot (2 \\cdot 7) \\cdot (2 \\cdot 8) \\cdot (2 \\cdot 9) \\\\\n&= 2^8 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9.\n\\end{align*}Then the given expression is equal to\n\\[10 \\cdot \\frac{2^8 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9}{3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10} = 2^9 = \\boxed{512}.\\]"
+}

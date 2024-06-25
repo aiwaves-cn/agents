@@ -1,0 +1,6 @@
+{
+    "problem": "Find the $2 \\times 2$ matrix $\\mathbf{M}$ such that $\\mathbf{M} \\begin{pmatrix} 2 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} -15 \\\\ -6 \\end{pmatrix}$ and $\\mathbf{M} \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 15 \\\\ 18 \\end{pmatrix}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{M} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}.$  Then\n\\[\\mathbf{M} \\begin{pmatrix} 2 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 2 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} 2a + 7b \\\\ 2c + 7d \\end{pmatrix}.\\]Also,\n\\[\\mathbf{M} \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 4a - b \\\\ 4c - d \\end{pmatrix}.\\]Thus, we have the system of equations\n\\begin{align*}\n2a + 7b &= -15, \\\\\n2c + 7d &= -6, \\\\\n4a - b &= 15, \\\\\n4c - d &= 18.\n\\end{align*}Solving this system, we find $a = 3,$ $b = -3,$ $c = 4,$ and $d = -2,$ so\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} 3 & -3 \\\\ 4 & -2 \\end{pmatrix}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the product $\\dfrac 43\\cdot \\dfrac 64\\cdot \\dfrac 85\\cdot \\dfrac{10}{6}\\cdot \\dfrac{12}{7}\\cdot \\dfrac{14}{8}$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We can write\n\\[\\frac{4}{3} \\cdot \\frac{6}{4} \\cdot \\frac{8}{5} \\cdot \\frac{10}{6} \\cdot \\frac{12}{7} \\cdot \\frac{14}{8} = \\frac{4 \\cdot 6 \\cdot 8 \\cdot 10 \\cdot 12 \\cdot 14}{3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8}.\\]Then\n\\[\\frac{6}{3} = \\frac{8}{4} = \\frac{10}{5} = \\frac{12}{6} = \\frac{14}{7} = 2,\\]so the expression becomes\n\\[\\frac{4 \\cdot 2^5}{8} = 2^4 = \\boxed{16}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ satisfies\n\\[f(x) - 2 f \\left( \\frac{1}{x} \\right) = 4^x\\]for all $x \\neq 0.$  Find $f(2).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = 2,$ we get\n\\[f(2) - 2 f \\left( \\frac{1}{2} \\right) = 16.\\]Setting $x = 1/2,$ we get\n\\[f \\left( \\frac{1}{2} \\right) - 2f(2) = 2.\\]Solving these equations as a system in $f(2)$ and $f \\left( \\frac{1}{2} \\right),$ we obtain $f(2) = \\boxed{-\\frac{20}{3}}$ and $f \\left( \\frac{1}{2} \\right) = -\\frac{34}{3}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $x$ so that $\\arccos x > \\arcsin x.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We know that $\\arccos x$ is a decreasing function, and $\\arcsin x$ is an increasing function.  Furthermore, they are equal at $x = \\frac{1}{\\sqrt{2}},$ when $\\arccos \\frac{1}{\\sqrt{2}} = \\arcsin \\frac{1}{\\sqrt{2}} = \\frac{\\pi}{4}.$\n\nTherefore, the solution to $\\arccos x > \\arcsin x$ is $x \\in \\boxed{\\left[ -1, \\frac{1}{\\sqrt{2}} \\right)}.$"
+}

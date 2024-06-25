@@ -1,0 +1,6 @@
+{
+    "problem": "A student brings whole cherry and cheese danishes to his class for his birthday. The number of cherry danishes he brings is at least 3 more than $\\frac{2}{3}$ the number of cheese danishes, but no more than twice the number of cheese danishes. Find the smallest possible value for the total number of danishes he brings.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let the variable $r$ represent the number of cherry danishes and $s$ represent the number of cheese danishes. We have $$2s \\ge r \\ge 3+\\frac{2}{3}s.$$The left side of the inequality must be greater than or equal to the right side, so we have $$2s \\ge 3+\\frac{2}{3}s\\qquad\n\\Rightarrow\\qquad 6s \\ge 9+2s \\qquad\n\\Rightarrow\\qquad 4s \\ge 9 \\qquad\n\\Rightarrow\\qquad  s \\ge \\frac{9}{4}.$$The least possible integer that $s$ can be is 3. The least possible value of $r$ is $$r \\ge 3+\\frac{2}{3}(3) \\qquad \\Rightarrow \\qquad r \\ge 5.$$Therefore, the student brings at least $\\boxed{8}$ danishes."
+}

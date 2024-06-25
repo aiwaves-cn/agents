@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{A} = \\begin{pmatrix} 1 & 5 \\\\ 1 & 3 \\end{pmatrix}.$  Find all real numbers $x$ such that that matrix $\\mathbf{A} - x \\mathbf{I}$ is not invertible.  Enter all the solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "First,\n\\[\\mathbf{A} - x \\mathbf{I} = \\begin{pmatrix} 1 & 5 \\\\ 1 & 3 \\end{pmatrix} - x \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 1 - x & 5 \\\\ 1 & 3 - x \\end{pmatrix}.\\]This is not invertible when its determinant is zero, so $(1 - x)(3 - x) - (5)(1) = 0.$  This simplifies to $x^2 - 4x - 2 = 0.$  The roots are $\\boxed{2 + \\sqrt{6}, 2 - \\sqrt{6}}.$"
+}

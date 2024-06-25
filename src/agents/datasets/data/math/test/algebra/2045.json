@@ -1,0 +1,6 @@
+{
+    "problem": "Find all numbers $a$ for which the graph of $y=x^2+a$ and the graph of $y=ax$ intersect. Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If these two graphs intersect then the points of intersection occur when  \\[x^2+a=ax,\\] or  \\[x^2-ax+a=0.\\] This quadratic has solutions exactly when the discriminant is nonnegative: \\[(-a)^2-4\\cdot1\\cdot a\\geq0.\\] This simplifies to  \\[a(a-4)\\geq0.\\] This quadratic (in $a$) is nonnegative when $a$ and $a-4$ are either both $\\ge 0$ or both $\\le 0$. This is true for $a$ in $$(-\\infty,0]\\cup[4,\\infty).$$ Therefore the line and quadratic intersect exactly when $a$ is in $\\boxed{(-\\infty,0]\\cup[4,\\infty)}$."
+}

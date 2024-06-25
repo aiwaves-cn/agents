@@ -1,0 +1,6 @@
+{
+    "problem": "In an isosceles triangle, one of the angles opposite an equal side is $40^{\\circ}$. How many degrees are in the measure of the triangle's largest angle? [asy] draw((0,0)--(6,0)--(3,2)--(0,0)); label(\"$\\backslash$\",(1.5,1)); label(\"{/}\",(4.5,1));\nlabel(\"$40^{\\circ}$\",(.5,0),dir(45));\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "The two angles opposite the equal sides of an isosceles triangle are congruent, so in this case, both are $40^\\circ$. Since the three angles of a triangle add up to $180^\\circ$, the third angle in this triangle is $(180-40-40)^\\circ = \\boxed{100}^\\circ$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can I arrange 3 different math books and 5 different history books on my bookshelf, if I require there to be a math book on both ends?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Let's deal with the restriction first.\n\nThe restriction is that we have to place a math book on both ends.  We have 3 choices for the math book to place on the left end, and then 2 choices for the math book to place on the right end.\n\nThen we simply need to arrange the other 6 books in the middle.  This is a basic permutation problem, so there are $6!$ ways to arrange the 6 remaining books.\n\nSo there are a total of $3 \\times 2 \\times 6! = \\boxed{4,\\!320}$ ways to arrange the books on the bookshelf."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the $x$-values that satisfy the equation $5=\\frac{x^3-2x^2-8x}{x+2}$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We can factor $x$ out of the numerator so that we're left with $$\\frac{x(x^2-2x-8)}{x+2}=\\frac{x(x-4)(x+2)}{x+2}$$After canceling out the $x+2$ from the numerator and denominator, we have $x(x-4)=5$.  Solving for the roots of a quadratic equation, we have $x^2-4x-5=0$, which gives us $(x-5)(x+1)=0$ and $x=5$ or $x=-1$. The sum of these values is $\\boxed{4}$, which is our answer.\n\nAlternatively, since the sum of the solutions for a quadratic with the equation $ax^2+bx+c=0$ is $-b/a$, the sum of the zeros of the quadratic $x^2-4x-5$ is $4/1=\\boxed{4}$."
+}

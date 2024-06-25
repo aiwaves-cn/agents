@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers smaller than $1{,}000{,}000$ are powers of $2$, but are not powers of $8$? You may find it useful to consider that $2^{10}=1024$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The hint is useful because it tells us that $2^{20}$ is equal to $1024^2$, which is slightly more than $1{,}000{,}000$, but is clearly less than $2{,}000{,}000$. Therefore, the largest power of $2$ which is less than $1{,}000{,}000$ is $2^{19}$. This tells us that $20$ of the integers smaller than $1{,}000{,}000$ are powers of $2$: $$2^0, 2^1, 2^2, 2^3, \\ldots, 2^{17}, 2^{18}, 2^{19}.$$\n\nHowever, we have to exclude the $7$ numbers $$2^0, 2^3, 2^6, 2^9, 2^{12}, 2^{15}, 2^{18}$$ from our count, because these are all powers of $8$ (in general, $2^{3n}$ is the same as $(2^3)^n$, which is $8^n$). That leaves us with $20-7 = \\boxed{13}$ powers of $2$ that aren't powers of $8$."
+}

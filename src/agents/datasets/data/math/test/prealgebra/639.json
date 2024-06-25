@@ -1,0 +1,6 @@
+{
+    "problem": "If $a=7$ and $b=13$, what is the number of even positive integers less than $ab$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since $a$ and $b$ are both odd, then $ab$ is odd. Therefore, the largest even integer less than $ab$ is $ab-1$.\n\nSince every other positive integer less than or equal to $ab-1$ is even,  then the number of even positive integers less than or equal to $ab-1$ (thus, less than $ab$) is  $$\\frac{ab-1}{2} = \\frac{7 \\cdot 13 - 1}{2} = \\boxed{45}.$$"
+}

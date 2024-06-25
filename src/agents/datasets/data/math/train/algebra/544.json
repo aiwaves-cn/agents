@@ -1,0 +1,6 @@
+{
+    "problem": "In solving the system of equations $y = 7$ and $x^2+ y^2= 100,$ what is the sum of the solutions for $x?$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "$y = 7$ represents a horizontal line that intersects a circle of radius $10$ around the origin. The symmetry of the circle guarantees that the points of intersection have a sum which add up to $0.$\n\nAlternatively, we can simply substitute $7$ into the second equation for $y,$ to get that $x^2 = 51.$ Then, the two possible values for $x$ are $\\sqrt{51},-\\sqrt{51}.$ It's clear that they add up to $\\boxed{0}.$"
+}

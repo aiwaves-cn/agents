@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[z = \\frac{-\\sqrt{3} + i}{2}.\\]Compute $z^6.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nz^2 &= \\left( \\frac{-\\sqrt{3} + i}{2} \\right)^2 \\\\\n&= \\frac{3 - 2i \\sqrt{3} + i^2}{4} = \\frac{3 - 2i \\sqrt{3} - 1}{4} \\\\\n&= \\frac{2 - 2i \\sqrt{3}}{4} = \\frac{1 - i \\sqrt{3}}{2}.\n\\end{align*}Then\n\\begin{align*}\nz^3 &= z \\cdot z^2 \\\\\n&= \\frac{-\\sqrt{3} + i}{2} \\cdot \\frac{1 - i \\sqrt{3}}{2} \\\\\n&= \\frac{-\\sqrt{3} + 3i + i - i^2 \\sqrt{3}}{4} \\\\\n&= \\frac{-\\sqrt{3} + 4i + \\sqrt{3}}{4} \\\\\n&= i.\n\\end{align*}Hence, $z^6 = i^2 = \\boxed{-1}.$"
+}

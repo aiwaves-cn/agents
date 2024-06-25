@@ -1,0 +1,6 @@
+{
+    "problem": "A Senate committee has 5 Democrats and 5 Republicans.  In how many distinguishable ways can they sit around a circular table if all the members of each party all sit next to each other?  (If the table is rotated, it should be counted as the same seating.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Choose any 5 consecutive seats in which to place the Democrats -- it doesn't matter which 5 consecutive seats that we choose, since we can rotate the table.  Then there are $5!$ ways to place the Democrats in their seats, and $5!$ ways to place the Republicans in their seats, for a total of $5! \\times 5! = \\boxed{14,\\!400}$ arrangements."
+}

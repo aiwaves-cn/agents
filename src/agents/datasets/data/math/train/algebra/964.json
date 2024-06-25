@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the values of $x$ which satisfy $x^2 +1992x = 1993$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "This problem is immediate once you know the following fact:\n\nFor the equation $ax^2 + bx + c = 0$, the sum of the solutions of the equation is $-b/a$ and the product of the solutions is $c/a$.\n\nIn this case, $b = 1992$ and $a = 1$, so the sum of the solutions is $-b/a = \\boxed{-1992}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\frac{\\lfloor \\sqrt[4]{1} \\rfloor \\cdot \\lfloor \\sqrt[4]{3} \\rfloor \\cdot \\lfloor \\sqrt[4]{5} \\rfloor \\dotsm \\lfloor \\sqrt[4]{2015} \\rfloor}{\\lfloor \\sqrt[4]{2} \\rfloor \\cdot \\lfloor \\sqrt[4]{4} \\rfloor \\cdot \\lfloor \\sqrt[4]{6} \\rfloor \\dotsm \\lfloor \\sqrt[4]{2016} \\rfloor}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write the expression as\n\\[\\frac{\\lfloor \\sqrt[4]{1} \\rfloor}{\\lfloor \\sqrt[4]{2} \\rfloor} \\cdot \\frac{\\lfloor \\sqrt[4]{3} \\rfloor}{\\lfloor \\sqrt[4]{4} \\rfloor} \\cdot \\frac{\\lfloor \\sqrt[4]{5} \\rfloor}{\\lfloor \\sqrt[4]{6} \\rfloor} \\dotsm \\frac{\\lfloor \\sqrt[4]{2015} \\rfloor}{\\lfloor \\sqrt[4]{2016} \\rfloor}.\\]For each fraction, the numerator and denominator will be equal (in which case they will cancel), except when the denominator involves a perfect fourth power.  Hence, the product reduces to\n\\[\\frac{\\lfloor \\sqrt[4]{15} \\rfloor}{\\lfloor \\sqrt[4]{16} \\rfloor} \\cdot \\frac{\\lfloor \\sqrt[4]{255} \\rfloor}{\\lfloor \\sqrt[4]{256} \\rfloor} \\cdot \\frac{\\lfloor \\sqrt[4]{1295} \\rfloor}{\\lfloor \\sqrt[4]{1296} \\rfloor} = \\frac{1}{2} \\cdot \\frac{3}{4} \\cdot \\frac{5}{6} = \\boxed{\\frac{5}{16}}.\\]"
+}

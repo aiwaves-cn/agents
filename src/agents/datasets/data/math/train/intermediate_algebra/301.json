@@ -1,0 +1,6 @@
+{
+    "problem": "Let $F_1 = \\left( -3, 1 - \\frac{\\sqrt{5}}{4} \\right)$ and $F_ 2= \\left( -3, 1 + \\frac{\\sqrt{5}}{4} \\right).$  Then the set of points $P$ such that\n\\[|PF_1 - PF_2| = 1\\]form a hyperbola.  The equation of this hyperbola can be written as\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1,\\]where $a, b > 0.$ Find $h + k + a + b.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The center of the hyperbola is the midpoint of $\\overline{F_1 F_2},$ which is $(-3,1).$  Thus, $h = -3$ and $k = 1.$\n\nAlso, $2a = 1,$ so $a = \\frac{1}{2}.$  The distance between the foci is $2c = \\frac{\\sqrt{5}}{2},$ so $c = \\frac{\\sqrt{5}}{4}.$  Then $b^2 = c^2 - a^2 = \\frac{5}{16} - \\frac{1}{4} = \\frac{1}{16},$ so $b = \\frac{1}{4}.$\n\nHence, $h + k + a + b = (-3) + 1 + \\frac{1}{2} + \\frac{1}{4} = \\boxed{-\\frac{5}{4}}.$"
+}

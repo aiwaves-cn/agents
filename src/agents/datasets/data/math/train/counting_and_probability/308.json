@@ -1,0 +1,6 @@
+{
+    "problem": "Three tiles are marked X and two other tiles are marked O. The five tiles are randomly arranged in a row. What is the probability that the arrangement reads XOXOX?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are three X's and two O's, and the tiles are selected without replacement, so the probability is \\[\n\\frac{3}{5}\\cdot\\frac{2}{4}\\cdot\\frac{2}{3}\\cdot\\frac{1}{2}\\cdot\\frac{1}{1}= \\frac{1}{10}.\n\\]OR\n\nThe three tiles marked X are equally likely to lie in any of $\\binom{5}{3}=10$ positions, so the probability of this arrangement is $\\boxed{\\frac{1}{10}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The product of a number $M$ and six less than $M$ is $-5$. What is the sum of all possible values of $M$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Converting the given information to equational form, we find $M(M-6) = -5$.  Rearranging, $M^2 - 6M + 5 = 0$.  Using Vieta's equations for sum and product of roots, we find that the sum of the solutions to this equations is $-(-6) = \\boxed{6}$."
+}

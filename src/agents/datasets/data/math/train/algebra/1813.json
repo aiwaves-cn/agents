@@ -1,0 +1,6 @@
+{
+    "problem": "The graphs of $y=|x|$ and $y=-x^2-3x-2$ are drawn.  For every $x$, a vertical segment connecting these two graphs can be drawn as well.  Find the smallest possible length of one of these vertical segments.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The function $|x|$ is difficult to deal with directly.  Instead we work by cases: $x\\geq0$ and $x<0$.\n\nIf $x\\geq0$ then $|x|=x$, and we can find the difference by subtracting  \\[x-(-x^2-3x-2)=x^2+4x+2=(x+2)^2-2.\\]This function is always increasing as $x$ varies over the nonnegative numbers, so this is minimized at $x=0$. The minimum value on $x\\geq0$ is  \\[(0 + 2)^2 - 2 = 2.\\]If $x<0$ then $|x|=-x$ and we can find the difference by subtracting: \\[(-x)-(-x^2-3x-2)=x^2+2x+2=(x+1)^2+1.\\]This quadratic is minimized at $x=-1$, and the minimum value is  \\[(-1+1)^2+1=1.\\]Since the minimum value on negative numbers is less than the minimum value on the nonnegative numbers, the minimum value for the difference is $\\boxed{1}$."
+}

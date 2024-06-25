@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle ABC$, $AC=BC$, and $m\\angle BAC=40^\\circ$. What is the number of degrees in angle $x$? [asy]\nsize(80);\ndraw((0,0)--(7,0));\ndraw((0,0)--(3,2)--(6,0));\nlabel(\"$A$\",(0,0),W);\nlabel(\"$B$\",(6,0),S);\nlabel(\"$C$\",(3,2),N);\nlabel(\"$x$\",(6,0),NE);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Triangle $ABC$ is isosceles with equal angles at $A$ and $B$. Therefore, $m\\angle ABC = m\\angle BAC = 40^\\circ$.\n\nAngle $x$ is supplementary to $\\angle ABC$, so \\begin{align*}\nx &= 180^\\circ - m\\angle ABC \\\\\n&= 180^\\circ - 40^\\circ \\\\\n&= \\boxed{140}^\\circ.\n\\end{align*}"
+}

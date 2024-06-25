@@ -1,0 +1,6 @@
+{
+    "problem": "A fisherman can see seven aquatic creatures in a lake --- four crocodiles, a catfish, and two giant squid. If he does not wish to fish two crocodiles consecutively, in how many orders can he catch all seven creatures? (Individuals from the same species are indistinguishable.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The crocodiles must be separated from each other by one of the other creatures, so he must catch them first, third, fifth, and seventh. For the second, fourth, and sixth slots, there are $3!$ ways to arrange the remaining three creatures.\n\nHowever, there are two giant squid, so we must divide by $2!$, the number of ways to arrange the squid.\n\nThe answer is $\\dfrac{3!}{2!}=\\boxed{3}$ ways."
+}

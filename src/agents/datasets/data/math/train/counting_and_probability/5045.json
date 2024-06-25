@@ -1,0 +1,6 @@
+{
+    "problem": "Each of the $2001$ students at a high school studies either Spanish or French, and some study both. The number who study Spanish is between $80$ percent and $85$ percent of the school population, and the number who study French is between $30$ percent and $40$ percent. Let $m$ be the smallest number of students who could study both languages, and let $M$ be the largest number of students who could study both languages. Find $M-m$.\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let $S$ be the percent of people who study Spanish, $F$ be the number of people who study French, and let $S \\cup F$ be the number of students who study both. Then $\\left\\lceil 80\\% \\cdot 2001 \\right\\rceil = 1601 \\le S \\le \\left\\lfloor 85\\% \\cdot 2001 \\right\\rfloor = 1700$, and $\\left\\lceil 30\\% \\cdot 2001 \\right\\rceil = 601 \\le F \\le \\left\\lfloor 40\\% \\cdot 2001 \\right\\rfloor = 800$. By the Principle of Inclusion-Exclusion,\n\\[S+F- S \\cap F = S \\cup F = 2001\\]\nFor $m = S \\cap F$ to be smallest, $S$ and $F$ must be minimized.\n\\[1601 + 601 - m = 2001 \\Longrightarrow m = 201\\]\nFor $M = S \\cap F$ to be largest, $S$ and $F$ must be maximized.\n\\[1700 + 800 - M = 2001 \\Longrightarrow M = 499\\]\nTherefore, the answer is $M - m = 499 - 201 = \\boxed{298}$."
+}

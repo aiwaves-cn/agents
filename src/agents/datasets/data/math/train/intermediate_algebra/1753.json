@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate the infinite sum $\\sum_{n=1}^{\\infty}\\frac{n}{n^4+4}$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "First, we can factor the denominator with a little give and take:\n\\begin{align*}\nn^4 + 4 &= n^4 + 4n^2 + 4 - 4n^2 \\\\\n&= (n^2 + 2)^2 - (2n)^2 \\\\\n&= (n^2 + 2n + 2)(n^2 - 2n + 2).\n\\end{align*}Then\n\\begin{align*}\n\\sum_{n=1}^\\infty \\frac{n}{n^4 + 4} & = \\sum_{n=1}^\\infty \\frac{n}{(n^2 + 2n + 2)(n^2 - 2n + 2)} \\\\\n&= \\frac{1}{4} \\sum_{n = 1}^\\infty \\frac{(n^2 + 2n + 2) - (n^2 - 2n + 2)}{(n^2 + 2n + 2)(n^2 - 2n + 2)} \\\\\n&= \\frac 1 4 \\sum_{n=1}^\\infty \\left( \\frac{1}{n^2 - 2n + 2} - \\frac{1}{n^2 + 2n + 2} \\right) \\\\\n&= \\frac 1 4 \\sum_{n=1}^\\infty \\left( \\frac{1}{(n-1)^2 + 1} - \\frac{1}{(n+1)^2 + 1} \\right) \\\\\n&= \\frac{1}{4} \\left[ \\left( \\frac{1}{0^2 + 1} - \\frac{1}{2^2 + 1} \\right) + \\left( \\frac{1}{1^2 + 1} - \\frac{1}{3^2 + 1} \\right) + \\left( \\frac{1}{2^2 + 1} - \\frac{1}{4^2 + 1} \\right) + \\dotsb \\right].\n\\end{align*}Observe that the sum telescopes. From this we find that the answer is $\\dfrac 1 4 \\left( \\dfrac{1}{0^2 + 1} + \\dfrac 1 {1^2 + 1} \\right) = \\boxed{\\dfrac 3 8}$."
+}

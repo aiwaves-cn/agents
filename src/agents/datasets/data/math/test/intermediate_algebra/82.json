@@ -1,0 +1,6 @@
+{
+    "problem": "A line $l$ is the graph of $y = ax + b$. Line $l_1$ is $l$ shifted 3 units to the left and two units downward and passes through the points $(5,8)$ and $(7,14)$. What is $a - b$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We find the equation of $l_1$ first. The slope of $l_1$ is \\[\\frac{14 - 8}{7-5} = 3.\\]Since $l_1$ passes through $5,8$, we can set $8 = 3(5) + t$ where $(0,t)$ is the $y$-intercept. Subtracting 15 from both sides, we find the $t = -7$, and so the $y$-intercept is $(0,-7)$. Thus, $l_1$ has equation $y = 3x - 7$.\n\nTo find the equation of the original line, we begin with line $l_1$ and shift it three units to the right and two units up. Recall that to shift the graph of an equation three units to the right we replace $x$ with $x-3$. Similarly, to shift two units up we replace $y$ with $y-2$. Making these substitutions, we obtain $y - 2 = 3(x - 3) + 7$, which is equivalent to $y= 3x - 14$. Thus, $a - b = 3 + 14 = \\boxed{17}$."
+}

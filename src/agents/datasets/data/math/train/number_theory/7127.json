@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of integers $n > 1$ for which $\\tfrac1n = 0.d_1d_2d_3d_4\\ldots$, an infinite decimal that has the property that $d_i = d_{i+12}$ for all positive integers $i$. Given that $9901$ is prime, how many positive integers are in $S$? (The $d_i$ are digits.)\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $k = d_1 d_2 d_3 \\ldots d_{12}$, the first $12$ decimal digits of $\\tfrac{1}{n}$. We can see that\\[(10^{12} - 1)\\left(\\dfrac{1}{n}\\right) = k \\implies kn = 10^{12} - 1,\\]so $S$ is the set that contains all divisors of $10^{12} - 1$ except for $1$. Since\\[10^{12} - 1 = (10^6 + 1)(10^6 - 1) = (10^2 + 1)(10^4 - 10^2 + 1)(10^3 + 1)(10^3 - 1) = 101 \\cdot 9901 \\cdot 37 \\cdot 11 \\cdot 13 \\cdot 7 \\cdot 3^3 \\cdot 37,\\]the number $10^{12} -1$ has $4 \\cdot 2^6 = 256$ divisors and our answer is $256 - 1 = \\boxed{255}.$"
+}

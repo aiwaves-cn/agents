@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest four-digit negative integer congruent to $1 \\pmod{23}?$",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "An integer that is congruent to $1 \\pmod{23}$ is of the form $23n+1$.\n\nTherefore, we form the inequality $23n+1<-999$, and find the largest possible integer $n$. We get \\begin{align*}\n23n+1&<-999 \\\\\n23n&<-1000\\\\\nn&<-\\frac{1000}{23} \\approx -43.48.\n\\end{align*} The largest possible negative integer $n$ is $-44$. We plug it in for $n$ to get $23 \\cdot -44 +1 =\\boxed{-1011}$."
+}

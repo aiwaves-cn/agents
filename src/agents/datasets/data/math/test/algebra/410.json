@@ -1,0 +1,6 @@
+{
+    "problem": "What is the minimum possible value for $y$ in the equation $y = x^2 - 6x + 13$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Write $x^2-6x$ as $(x-3)^2-9$ to obtain  \\[\ny=(x-3)^2+4.\n\\]Since $(x-3)^2\\geq0$, we have $y\\geq\\boxed{4}$.  The value $y=4$ is obtained when $x=3$. (Note: this method of rewriting a quadratic expression is called ``completing the square'')."
+}

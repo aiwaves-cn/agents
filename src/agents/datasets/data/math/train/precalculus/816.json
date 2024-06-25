@@ -1,0 +1,6 @@
+{
+    "problem": "Find the maximum value of\n\\[\\sin \\frac{\\theta}{2} \\cdot (1 + \\cos \\theta)\\]for $0 < \\theta < \\pi.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the double angle formula,\n\\[\\sin \\frac{\\theta}{2} \\cdot (1 + \\cos \\theta) = \\sin \\frac{\\theta}{2} \\left( 2 \\cos^2 \\frac{\\theta}{2} \\right) = 2 \\sin \\frac{\\theta}{2} \\left( 1 - \\sin^2 \\frac{\\theta}{2} \\right).\\]Let $x = \\sin \\frac{\\theta}{2}.$  We want to maximize\n\\[y = 2x (1 - x^2).\\]Note that\n\\[y^2 = 4x^2 (1 - x^2)(1 - x^2).\\]By AM-GM,\n\\[2x^2 (1 - x^2)(1 - x^2) \\le \\left( \\frac{2x^2 + (1 - x^2) + (1 - x^2)}{3} \\right)^3 = \\frac{8}{27},\\]so\n\\[y^2 = 2 \\cdot 2x^2 (1 - x^2)(1 - x^2) \\le \\frac{16}{27}.\\]Then $y \\le \\sqrt{\\frac{16}{27}} = \\frac{4 \\sqrt{3}}{9}.$\n\nEquality occurs when $2x^2 = 1 - x^2,$ or $x = \\frac{1}{3},$ which means $\\theta = 2 \\arcsin \\frac{1}{\\sqrt{3}}.$  Hence, the maximum value is $\\boxed{\\frac{4 \\sqrt{3}}{9}}.$"
+}

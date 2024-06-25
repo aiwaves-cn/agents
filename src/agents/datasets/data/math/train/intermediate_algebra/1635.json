@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f_1(x) = \\frac23 - \\frac3{3x+1},$ and for $n \\ge 2,$ define $f_n(x) = f_1(f_{n-1}(x)).$ Find the value of $x$ that satisfies $f_{1001}(x) = x-3.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have $f_1(x) = \\frac{2(3x+1) - 9}{3(3x+1)} = \\frac{6x-7}{9x+3}.$ We compute the first few $f_n,$ hoping to see a pattern: \\[\\begin{aligned} f_2(x) &= f_1\\left(\\frac{6x-7}{9x+3}\\right) = \\frac{6 \\cdot \\frac{6x-7}{9x+3}-7}{9\\cdot\\frac{6x-7}{9x+3}+3} = \\frac{6(6x-7) - 7(9x+3)}{9(6x-7)+3(9x+3)} = \\frac{-27x-63}{81x-54} = \\frac{-3x-7}{9x-6},\\\\ f_3(x) &= f_1\\left(\\frac{-3x-7}{9x-6}\\right) = \\frac{6 \\cdot \\frac{-3x-7}{9x-6}-7}{9 \\cdot \\frac{-3x-7}{9x-6}+3} = \\frac{6(-3x-7) - 7(9x-6)}{9(-3x-7) + 3(9x-6)} = \\frac{-81x}{-81} = x. \\end{aligned} \\]Since $f_3(x) = x$ for all $x,$ we see that $f_k(x) = f_{k-3}(x)$ for all $x.$ Since $1001 \\equiv 2 \\pmod 3,$ we have \\[f_{1001}(x) = f_2(x) = \\frac{-3x-7}{9x-6} = x-3,\\]so \\[\\begin{aligned} -3x-7& = 9x^2 - 33x + 18 \\\\ 0 &= 9x^2 - 30x + 25 = (3x-5)^2. \\end{aligned}\\]Thus, $x = \\boxed{\\tfrac{5}{3}}.$"
+}

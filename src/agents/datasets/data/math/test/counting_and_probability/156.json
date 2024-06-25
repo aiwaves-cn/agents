@@ -1,0 +1,6 @@
+{
+    "problem": "Coin $A$ is tossed three times and coin $B$ is tossed two times. What is the probability that more heads are tossed using coin $A$ than using coin $B$? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "More generally, suppose coin $A$ is tossed $n + 1$ times and coin $B$ is tossed $n$ times.\n\nConsider the situation when coin $A$ has been tossed $n$ times and coin $B$ has been tossed $n$ times.  At this point, in terms of heads, either $A$ is ahead of $B,$ $B$ is ahead of $A,$ or they are tied.  Let $p$ be the probability that $A$ is ahead of $B.$  Then by symmetry, $p$ is the probability that $B$ is ahead of $A,$ so the probability of a tie is $1 - 2p.$\n\nNow coin $A$ is tossed one more time.  If coin $A$ ends up with more heads, then either it was ahead before the last flip (which occurs with probability $p$), or it was tied before the last flip and got heads for the last flip (which occurs with probability $(1 - 2p) \\cdot \\frac{1}{2}$).  Therefore, the probability that coins $A$ ends up with more heads is\n\\[p + (1 - 2p) \\cdot \\frac{1}{2} = \\boxed{\\frac{1}{2}}.\\]"
+}

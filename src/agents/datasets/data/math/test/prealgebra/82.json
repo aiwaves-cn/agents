@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, what is the value of $x?$ [asy]\nsize(150);\ndraw((0,5)--(0,0)--(5,0));\ndraw((0,0)--(3,5));\ndraw((0,.3)--(.3,.3)--(.3,0));\nlabel(\"$2x^\\circ$\",(.5,2));\nlabel(\"$3x^\\circ$\",(1,.6));\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "The angles $2x^{\\circ}$ and $3x^{\\circ}$ shown are complementary and thus add to $90^{\\circ}.$ Therefore, $2x+3x=90$ or $5x=90$ and so $x=\\frac{90}{5}=\\boxed{18}.$"
+}

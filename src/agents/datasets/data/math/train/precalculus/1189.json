@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\frac{1 + \\sin x - \\cos x}{1 + \\sin x + \\cos x}.\\]The answer will be a trigonometric function of some simple function of $x,$ like \"$\\cos 2x$\" or \"$\\sin (x^3)$\".",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the double angle formulas, $\\sin x = 2 \\sin \\frac{x}{2} \\cos \\frac{x}{2}$ and $\\cos x = 2 \\cos^2 \\frac{x}{2} - 1 = 1 - 2 \\sin^2 \\frac{x}{2},$ so\n\\begin{align*}\n\\frac{1 + \\sin x - \\cos x}{1 + \\sin x + \\cos x} &= \\frac{1 + 2 \\sin \\frac{x}{2} \\cos \\frac{x}{2} - 1 + 2 \\sin^2 \\frac{x}{2}}{1 + 2 \\sin \\frac{x}{2} \\cos \\frac{x}{2} + 2 \\cos^2 \\frac{x}{2} - 1} \\\\\n&= \\frac{2 \\sin \\frac{x}{2} \\cos \\frac{x}{2} + 2 \\sin^2 \\frac{x}{2}}{2 \\sin \\frac{x}{2} \\cos \\frac{x}{2} + 2 \\cos^2 \\frac{x}{2}} \\\\\n&= \\frac{2 \\sin \\frac{x}{2} (\\cos \\frac{x}{2} + \\sin \\frac{x}{2})}{2 \\cos \\frac{x}{2} (\\sin \\frac{x}{2} + \\cos \\frac{x}{2})} \\\\\n&= \\frac{\\sin \\frac{x}{2}}{\\cos \\frac{x}{2}} \\\\\n&= \\boxed{\\tan \\frac{x}{2}}.\n\\end{align*}"
+}

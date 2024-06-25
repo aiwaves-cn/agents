@@ -1,0 +1,6 @@
+{
+    "problem": "Define the function $g(x)=3x+2$. If $g(x)=2f^{-1}(x)$ and $f^{-1}(x)$ is the inverse of the function $f(x)=ax+b$, find $\\dfrac{a+b}{2}$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Setting the expressions for $g(x)$ given in the first two equations equal to each other gives us $3x+2=2f^{-1}(x)$, so $f^{-1}(x)=\\dfrac{3x+2}{2}$. Substituting $f(x)$ into our expression for $f^{-1}$, we get \\begin{align*}\n\\dfrac{3f(x)+2}{2}&=f^{-1}(f(x)) \\\\\n\\Rightarrow \\dfrac{3f(x)+2}{2}&=x \\\\\n\\Rightarrow \\quad 3f(x)&=2x-2 \\\\\n\\Rightarrow \\quad f(x)&=\\frac{2x-2}{3}.\n\\end{align*}Thus, $a=\\frac{2}{3}$ and $b=\\frac{-2}{3}$, so $\\dfrac{a+b}{2}=0/2=\\boxed{0}$."
+}

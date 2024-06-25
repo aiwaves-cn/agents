@@ -1,0 +1,6 @@
+{
+    "problem": "The positive integers $A,$ $B,$ $A-B,$ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\bullet$ A. even\n\n$\\bullet$ B. divisible by $3$\n\n$\\bullet$ C. divisible by $5$\n\n$\\bullet$ D. divisible by $7$\n\n$\\bullet$ E. prime\n\nExpress your answer using a letter, as A, B, C, D, or E.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The numbers $A-B$ and $A+B$ are both odd or both even. However, they are also both prime, so they must both be odd. Therefore, one of $A$ and $B$ is odd and the other even. Because $A$ is a prime between $A-B$ and $A+B,$ $A$ must be the odd prime. Therefore, $B=2,$ the only even prime. So $A-2,$ $A,$ and $A+2$ are consecutive odd primes and thus must be $3,$ $5,$ and $7.$ The sum of the four primes $2,$ $3,$ $5,$ and $7$ is the prime number $17,$ so the correct answer is $\\boxed{\\text{(E)},}$ prime."
+}

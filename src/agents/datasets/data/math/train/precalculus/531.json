@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\begin{pmatrix} 2 & 3 \\\\ 7 & -1 \\end{pmatrix} \\begin{pmatrix} 1 & -5 \\\\ 0 & 4 \\end{pmatrix}.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\begin{pmatrix} 2 & 3 \\\\ 7 & -1 \\end{pmatrix} \\begin{pmatrix} 1 & -5 \\\\ 0 & 4 \\end{pmatrix} = \\begin{pmatrix} (2)(1) + (3)(0) & (2)(-5) + (3)(4) \\\\ (7)(1) + (-1)(0) & (7)(-5) + (-1)(4) \\end{pmatrix} = \\boxed{\\begin{pmatrix} 2 & 2 \\\\ 7 & -39 \\end{pmatrix}}.\\]"
+}

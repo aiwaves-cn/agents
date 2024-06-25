@@ -1,0 +1,6 @@
+{
+    "problem": "If the two roots of the quadratic $3x^2+5x+k$ are $\\frac{-5\\pm i\\sqrt{11}}{6}$, what is $k$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Using the quadratic formula, we find that the roots of the quadratic are $\\frac{-5\\pm\\sqrt{5^2-4(3)(k)}}{6}=\\frac{-5\\pm\\sqrt{25-12k}}{6}$. Since the problem tells us that these roots must equal $\\frac{-5\\pm i\\sqrt{11}}{6}$, we have \\begin{align*} \\sqrt{25-12k}&=i\\sqrt{11}\n\\\\\\Rightarrow\\qquad \\sqrt{25-12k}&=\\sqrt{-11}\n\\\\\\Rightarrow\\qquad 25-12k&=-11\n\\\\\\Rightarrow\\qquad 12k&=36\n\\\\\\Rightarrow\\qquad k&=\\boxed{3}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A point $(x,y)$ is randomly picked from inside the rectangle with vertices  $(0,0)$, $(4,0)$, $(4,1)$, and $(0,1)$.  What is the probability that  $x < y$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The point $(x,y)$ satisfies $x < y$ if and only if it belongs to the shaded triangle bounded by the lines $x=y$, $y=1$, and $x=0$, the area of which is 1/2. The ratio of the area of the triangle to the area of the  rectangle is $\\frac{1/2}{4} = \\boxed{\\frac{1}{8}}$.\n\n[asy]\ndraw((-1,0)--(5,0),Arrow);\ndraw((0,-1)--(0,2),Arrow);\nfor (int i=1; i<5; ++i) {\ndraw((i,-0.3)--(i,0.3));\n}\nfill((0,0)--(0,1)--(1,1)--cycle,gray(0.7));\ndraw((-0.3,1)--(0.3,1));\ndraw((4,0)--(4,1)--(0,1),linewidth(0.7));\ndraw((-0.5,-0.5)--(1.8,1.8),dashed);\n[/asy]"
+}

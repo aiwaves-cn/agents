@@ -1,0 +1,6 @@
+{
+    "problem": "Find the last two digits of the following sum: $$5! + 10! + 15! + \\cdots + 100!$$",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since for all $n \\ge 10$, $n!$ has (at least) two factors of 5, we know that $n!$ will end in two zeros.  Therefore, if $n\\ge 10$, then $n!$ contributes nothing to the last two digits of the sum. So we need only compute $5! = 120$, and hence our answer is $\\boxed{20}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle ABC,$ $AB=AC=25$ and $BC=23.$  Points $D,E,$ and $F$ are on sides $\\overline{AB},$ $\\overline{BC},$ and $\\overline{AC},$ respectively, such that $\\overline{DE}$ and $\\overline{EF}$ are parallel to $\\overline{AC}$ and $\\overline{AB},$ respectively.  What is the perimeter of parallelogram $ADEF$?\n[asy]\nreal r=5/7;\npair A=(10,sqrt(28^2-100)),B=origin,C=(20,0),D=(A.x*r,A.y*r);\npair bottom=(C.x+(D.x-A.x),C.y+(D.y-A.y));\npair E=extension(D,bottom,B,C);\npair top=(E.x+D.x,E.y+D.y);\npair F=extension(E,top,A,C);\ndraw(A--B--C--cycle^^D--E--F);\ndot(A^^B^^C^^D^^E^^F);\nlabel(\"$A$\",A,NW);\nlabel(\"$B$\",B,SW);\nlabel(\"$C$\",C,SE);\nlabel(\"$D$\",D,W);\nlabel(\"$E$\",E,S);\nlabel(\"$F$\",F,dir(0));\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Since $\\overline{DE} \\parallel \\overline{AC}$ and $\\overline{EF} \\parallel \\overline{AB},$ triangles $\\triangle BDE$ and $\\triangle EFC$ are similar to $\\triangle ABC$, and so they are also isosceles. That is, $BD = DE$ and $EF = FC.$\n\nThen the perimeter of $ADEF$ is \\[\\begin{aligned} AD + DE + EF + AF &= AD + BD + FC + AF \\\\ &= AB + AC \\\\ &= 25 + 25 \\\\ &= \\boxed{50}. \\end{aligned}\\]"
+}

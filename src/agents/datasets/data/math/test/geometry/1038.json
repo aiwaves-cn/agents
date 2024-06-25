@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure, $BA = AD = DC$ and point $D$ is on segment $BC$. The measure of angle $ACD$ is 22.5 degrees. What is the measure of angle $ABC$? [asy]\nimport olympiad; import geometry; size(150); defaultpen(linewidth(0.8));\ndraw((0,0)--(6+3*sqrt(2),0)--(3,3)--cycle);\ndraw((3,3)--(6,0));\nlabel(\"$B$\",(0,0),W); label(\"$A$\",(3,3),N); label(\"$C$\",(6+3*sqrt(2),0),E); label(\"$D$\",(6,0),S);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $AD=DC$, the angles in $\\triangle ADC$ opposite sides $AD$ and $DC$ are equal. Therefore, each of these angles is $22.5^\\circ$, and $\\angle ADC = (180-2\\cdot 22.5)^\\circ = 135^\\circ$.\n\nAngles $\\angle ADB$ and $\\angle ADC$ add up to a straight angle, so $\\angle ADB = 45^\\circ$.\n\nFinally, since $BA=AD$, we have $\\angle ABD = \\angle ADB = \\boxed{45^\\circ}$."
+}

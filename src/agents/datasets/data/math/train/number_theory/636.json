@@ -1,0 +1,6 @@
+{
+    "problem": "Convert $314_{10}$ to base 6.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The largest power of $6$ that is less than or equal to $314$ is $6^3$, which equals $216$. Because $(1\\cdot 6^3)=216<314<(2\\cdot 6^3)=432$, the digit in the $6^3$ place is $1$. Since $314-216=98$, we know that the digit in the $6^2$ place is $2$ because $72=2\\cdot 6^2<98<3\\cdot 6^2=108$. We then note that $98-72=26$, which can be expressed as $(4\\cdot6^1)+ (2\\cdot 6^0)$. Therefore the digit in the $6^1$ places is $4$, and the digit in the $6^0$ place is $2$.\n\nWe now see that $314_{10}=\\boxed{1242_6}$."
+}

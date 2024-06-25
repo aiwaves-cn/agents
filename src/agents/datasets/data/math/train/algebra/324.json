@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(n) = \\left\\{\n\\begin{array}{cl}\nn^2-2 & \\text{ if }n<0, \\\\\n2n-20 & \\text{ if }n \\geq 0.\n\\end{array}\n\\right.\\]What is the positive difference between the two values of $a$ that satisfy the equation $f(-2)+f(2)+f(a)=0$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We begin by finding $f(-2)$ and $f(2)$. Since $-2<0$, we have that $f(-2)=(-2)^2-2=2$ and since $2 \\geq 0$, we have that $f(2)=2(2)-20=-16$. Now we can substitute these values back into our equation $f(-2)+f(2)+f(a)=0$ to get $2 + (-16) + f(a) = 0$, so $f(a)=14$.\n\nOur next step is to find all values of $a$ such that $f(a)=14$. Our first equation $f(a)=a^2-2=14$ yields that $a= \\pm 4$, but $a<0$ so $a=-4$ is the only solution. Our second equation $f(a)=2a-20=14$ yields that $a=17$ which is indeed greater than or equal to $0$. Thus, our two possible values of $a$ are $-4$ and $17$ and their positive difference is $17 - (-4) = \\boxed{21}$."
+}

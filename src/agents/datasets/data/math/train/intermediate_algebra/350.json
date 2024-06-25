@@ -1,0 +1,6 @@
+{
+    "problem": "The function \\[f(x) = \\left\\{ \\begin{aligned} x-2 & \\quad \\text{ if } x < 4 \\\\ \\sqrt{x} & \\quad \\text{ if } x \\ge 4 \\end{aligned} \\right.\\]has an inverse $f^{-1}.$ Find the value of $f^{-1}(-5) + f^{-1}(-4) + \\dots + f^{-1}(4) + f^{-1}(5).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "To work with the inverse $f^{-1},$ we consider the range of each component of $f(x).$ Let $g(x) = x-2$ for $x < 4,$ and let $h(x) = \\sqrt{x}$ for $x \\ge 4.$ For $x < 4,$ we have $x - 2 < 2,$ so the range of $g$ is the interval $(-\\infty, -2).$ For $x \\ge 4,$ we have $\\sqrt{x} \\ge 2,$ so the range of $h$ is $[2, \\infty).$\n\nThe inverse of $g$ is $g^{-1}(x) = x+2,$ while the inverse of $h$ is $h^{-1}(x) = x^2.$ To compute $f^{-1}(x),$ we must use $g^{-1}$ if $x < 2,$ and use $h^{-1}$ if $x \\ge 2$: \\[\\begin{aligned} f^{-1}(-5) + f^{-1}(-4) + \\dots + f^{-1}(4) + f^{-1}(5) &= \\left(g^{-1}(-5) + \\dots + g^{-1}(1)\\right) + \\left(h^{-1}(2) + \\dots + h^{-1}(5)\\right) \\\\ &= \\left((-3) + (-2) + \\dots + 3\\right) + \\left(4 + 9 + 16 + 25\\right) \\\\ &= 0 + 54 \\\\ &= \\boxed{54}. \\end{aligned}\\]"
+}

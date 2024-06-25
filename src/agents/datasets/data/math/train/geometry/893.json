@@ -1,0 +1,6 @@
+{
+    "problem": "The second hand on the clock pictured below is 6 cm long.  How far in centimeters does the tip of this second hand travel during a period of 30 minutes? Express your answer in terms of $\\pi$.\n\n[asy]\ndraw(Circle((0,0),20));\nlabel(\"12\",(0,20),S);\nlabel(\"9\",(-20,0),E);\nlabel(\"6\",(0,-20),N);\nlabel(\"3\",(20,0),W);\ndot((0,0));\ndraw((0,0)--(12,0));\ndraw((0,0)--(-8,10));\ndraw((0,0)--(-11,-14),linewidth(1));\nlabel(\"6cm\",(-5.5,-7),SE);\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "In 30 minutes, the tip of the second hand travels 30 times around the circumference of a circle of radius 6cm. Since the circumference is $2\\pi \\cdot6 = 12\\pi$, the tip of the second hand travels $12\\pi \\cdot 30 = \\boxed{360\\pi}$ centimeters."
+}

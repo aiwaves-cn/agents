@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = 4x + c$ and $g(x) = cx + 2.$  If $f(g(x)) = 12x + d,$ then find $d.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[f(g(x)) = f(cx + 2) = 4(cx + 2) + c = 4cx + c + 8 = 12x + d.\\]Matching coefficients, we get $4c = 12$ and $d = c + 8,$ so $c = 3,$ and $d = 3 + 8 = \\boxed{11}.$"
+}

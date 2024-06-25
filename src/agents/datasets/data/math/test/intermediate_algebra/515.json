@@ -1,0 +1,6 @@
+{
+    "problem": "At what value of $y$ is there a horizontal asymptote for the graph of the equation $y=\\frac{4x^3+2x-4}{3x^3-2x^2+5x-1}$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "When the degrees of the numerator and denominator are the same in a rational function, the horizontal asymptote is the coefficient of the highest degree in the numerator divided by the coefficient of the highest degree in the denominator. To see this, divide the numerator and denominator by $x^3$ to write the expression as  \\[\n\\frac{4+\\frac{2}{x^2}-\\frac{4}{x^3}}{3-\\frac{2}{x}+\\frac{5}{x^2}-\\frac{1}{x^3}}\n\\]As $x\\to\\infty$ or $x\\to-\\infty$, the terms involving $x$ approach 0, which means that the whole expression approaches 4/3. Therefore, there is only one horizontal asymptote, and it is at $y=\\boxed{\\frac43}$."
+}

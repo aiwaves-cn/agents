@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[\\mathbf{A} = \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}.\\]Compute $\\mathbf{A}^{100}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We compute the first few powers of $\\mathbf{A}$:\n\\begin{align*}\n\\mathbf{A}^2 &= \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix}, \\\\\n\\mathbf{A}^3 &= \\mathbf{A} \\mathbf{A}^2 = \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} = \\mathbf{I}.\n\\end{align*}Then\n\\[\\mathbf{A}^{100} = (\\mathbf{A}^3)^{33} \\mathbf{A} = \\mathbf{A} = \\boxed{\\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}}.\\]"
+}

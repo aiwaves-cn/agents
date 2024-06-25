@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomials $x^2 - 7x + b = 0$ and $x^2 + 2x - 2b = 0$ have a root in common.  Enter all the possible values of this root, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ be the common root, so\n\\begin{align*}\nr^2 - 7r + b &= 0, \\\\\nr^2 + 2r - 2b &= 0.\n\\end{align*}Then $2(r^2 - 7r + b) + (r^2 + 2r - 2b) = 0,$ which simplifies to $3r^2 - 12r = 3r(r - 4) = 0.$  Hence, the possible values of $r$ are $\\boxed{0,4}.$  (These can be realized when $b = 0$ and $b = 12,$ respectively.)"
+}

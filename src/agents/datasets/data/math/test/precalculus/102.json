@@ -1,0 +1,6 @@
+{
+    "problem": "The line described by\n\\[\\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} k \\\\ 2 \\\\ 1 \\end{pmatrix}\\]is perpendicular to the line described by\n\\[\\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix} + u \\begin{pmatrix} 2 \\\\ 1 \\\\ 2 \\end{pmatrix}\\]and passes through the point $(4,a,b).$  Find $a + b + k.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "The direction vector of the first line is $\\begin{pmatrix} k \\\\ 2 \\\\ 1 \\end{pmatrix},$ and the direction vector of the second line is $\\begin{pmatrix} 2 \\\\ 1 \\\\ 2 \\end{pmatrix}.$  Since the two lines are perpendicular, their direction vectors must be orthogonal.  In other words, the dot product of the direction vectors must be 0.  This gives us\n\\[(k)\\cdot(2) + (2)\\cdot(1) + (1)\\cdot(2) = 0,\\]so $k = -2.$\n\nThus, the first line is given by\n\\[\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} -2 \\\\ 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} -2t + 2 \\\\ 2t - 1 \\\\ t + 3 \\end{pmatrix}.\\]Since the line passes through $(4,a,b),$ we can set $4 = -2t + 2,$ $a = 2t - 1,$ and $b = t + 3.$  Then $t = -1,$ so $a = -3$ and $b = 2,$ so $a + b + k = \\boxed{-3}.$"
+}

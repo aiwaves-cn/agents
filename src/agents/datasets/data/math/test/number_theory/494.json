@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $m$ and $n$ are positive integers such that $m\\equiv 6\\pmod 9$ and $n\\equiv 0\\pmod 9$, what is the largest integer that $mn$ is necessarily divisible by?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If $m\\equiv 6\\pmod 9$, then we can write $m$ as $9a+6$ for some integer $a$. This is equal to $3(3a+2)$, so $m$ is certainly divisible by $3$.  If $n\\equiv 0\\pmod 9$, then $n$ is divisible by $9$. Therefore, $mn$ must be divisible by $3\\cdot 9 = 27$.\n\nNote that $m$ can be 6 and $n$ can be 9, which gives us $mn = 54$.  Also, $m$ can be 15 and $n$ can be 9, which gives us $mn = 135$.  The gcd of 54 and 135 is 27.\n\nTherefore, the largest integer that $mn$ must be divisible by is $\\boxed{27}$."
+}

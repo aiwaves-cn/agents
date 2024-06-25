@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\sec \\frac{5 \\pi}{3}.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Converting to degrees,\n\\[\\frac{5 \\pi}{3} = \\frac{180^\\circ}{\\pi} \\cdot \\frac{5 \\pi}{3} = 300^\\circ.\\]Then\n\\[\\sec 300^\\circ = \\frac{1}{\\cos 300^\\circ}.\\]Since the cosine function has period $360^\\circ,$\n\\[\\cos 300^\\circ = \\cos (300^\\circ - 360^\\circ) = \\cos (-60^\\circ) = \\cos 60^\\circ = \\frac{1}{2},\\]so $\\sec 300^\\circ = \\boxed{2}.$"
+}

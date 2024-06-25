@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest three-digit number in which the product of the digits is $12$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "To get the largest number, first maximize the hundreds digit, then the tens, then the ones. One-digit factors of $12$ are $6$, $2$, $3$, $4$, and $1$, so the hundreds digit must be $6$.  In order to make the digits multiply to 12, the next two digits must be $2$ and $1$.  Therefore, the largest three-digit number in which the product of the digits is $12$ is $\\boxed{621}$."
+}

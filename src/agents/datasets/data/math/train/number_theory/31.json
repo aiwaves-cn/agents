@@ -1,0 +1,6 @@
+{
+    "problem": "A school has between 150 and 200 students enrolled. Every afternoon, all the students come together to participate in gym class. The students are separated into six distinct sections of students. If one student is absent from school, the sections can all have the same number of students. What is the sum of all possible numbers of students enrolled at the school?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If there are $s$ students, then $s-1$ must be divisible by 6. In other words, we want to find the sum of all values of $s$ for which $s-1\\equiv 0\\pmod{6}$. The multiples of 6 in the given range are 150, 156, ..., 198, so the possible values of $s$ are 151, 157, ..., 199. Recalling that the sum of an arithmetic series is  \\[\n\\frac{(\\text{first term}+\\text{last term})(\\text{number of terms})}{2},\n\\]we find that these integers sum to $(151+199)(9)/2=\\boxed{1575}$."
+}

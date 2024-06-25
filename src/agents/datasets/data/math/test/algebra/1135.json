@@ -1,0 +1,6 @@
+{
+    "problem": "The solutions of $x(x-3)=1$ may be expressed in the form $\\frac{a+\\sqrt{b}}{c}$ and $\\frac{a-\\sqrt{b}}{c}$, where $a$, $b$, and $c$ are prime numbers.  Find $abc$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Distribute on the left-hand side and subtract 1 from both sides to obtain $x^2-3x-1=0$.  Inspection reveals that $x^2-3x-1$ does not easily factor, so we substitute the coefficients $1$, $-3$, and $-1$ into the quadratic formula:  \\[\n\\frac{-(-3)\\pm\\sqrt{(-3)^2-(4)(1)(-1)}}{2}=\\frac{3\\pm\\sqrt{9+4}}{2}=\\frac{3\\pm\\sqrt{13}}{2}.\n\\]Therefore $a=3$, $b=13$, and $c=2$, so $abc=(3)(13)(2)=\\boxed{78}$."
+}

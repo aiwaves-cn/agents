@@ -1,0 +1,6 @@
+{
+    "problem": "In parallelogram $ABCD$, point $M$ is on $\\overline{AB}$ so that $\\frac {AM}{AB} = \\frac {17}{1000}$ and point $N$ is on $\\overline{AD}$ so that $\\frac {AN}{AD} = \\frac {17}{2009}$. Let $P$ be the point of intersection of $\\overline{AC}$ and $\\overline{MN}$. Find $\\frac {AC}{AP}$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "One of the ways to solve this problem is to make this parallelogram a straight line. So the whole length of the line is $APC$($AMC$ or $ANC$), and $ABC$ is $1000x+2009x=3009x.$\n$AP$($AM$ or $AN$) is $17x.$\nSo the answer is $3009x/17x = \\boxed{177}$"
+}

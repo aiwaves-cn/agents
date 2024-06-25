@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)=\\frac{x+4}{x^2+ax+b}$, and $f(x)$ has two vertical asymptotes at $x=1$ and $x=-2$, find the sum of $a$ and $b$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We know that a rational function will have vertical asymptotes at values of $x$ for which $f(x)$ is undefined. Additionally, we know that $f(x)$ is undefined when the denominator of the fraction is equal to zero. Since there are vertical asymptotes at $x=1$ and $x=-2$, the function must be undefined at these two values. Therefore, $(x-1)(x+2)=x^2+ax+b=0 \\Rightarrow x^2+x-2=x^2+ax+b$. So $a=1$ and $b=-2$, and $a+b=1+(-2)=\\boxed{-1}$."
+}

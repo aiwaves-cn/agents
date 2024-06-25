@@ -1,0 +1,6 @@
+{
+    "problem": "A large, regular hexagon is drawn on the ground, and a man stands at one of the vertices.  The man flips a coin.  If the coin lands heads, he walks counterclockwise along the edge of the hexagon until reaching the next nearest vertex.  If the coin lands tails, he walks clockwise around the hexagon until reaching another vertex.  Once there, he repeats the process.  The man flips the coin a total of six times.  What is the probability that the man is standing where he started when he is finished?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are a total of $2^6=64$ equally likely sequences of heads and tails coin flips.  Each toss corresponds to a movement clockwise or counterclockwise, so each sequence of coin tosses corresponds to a sequence of six movements, $L$ or $R$.  If the man gets six consecutive heads or tails, corresponding to $RRRRRR$ or $LLLLLL$, then he will return to the starting point.  But, the man could also flip three heads and three tails in some order, corresponding to a sequence like $RRLRLL$.  There are a total of $\\binom{6}{3}=20$ sequences of moves that include three moves counterclockwise, and three clockwise.  The probability that the man ends up where he started is: $$\\frac{20+1+1}{64}=\\boxed{\\frac{11}{32}}$$"
+}

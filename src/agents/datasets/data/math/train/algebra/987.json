@@ -1,0 +1,6 @@
+{
+    "problem": "If the roots of the quadratic equation $\\frac32x^2+11x+c=0$ are $x=\\frac{-11\\pm\\sqrt{7}}{3}$, then what is the value of $c$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "By the quadratic formula, the roots of the equation are $$x=\\frac{-(11)\\pm\\sqrt{(11)^2-4(\\frac32)c}}{2(\\frac32)},$$which simplifies to $$x=\\frac{-11\\pm\\sqrt{121-6c}}{3}.$$This looks exactly like our target, except that we have to get the $121-6c$ under the square root to equal $7$. So, we solve the equation $121-6c=7$, which yields $c=\\boxed{19}$."
+}

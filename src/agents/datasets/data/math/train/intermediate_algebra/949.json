@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,b,c$ be positive real numbers such that $a+b+c=10$ and $ab+bc+ca=25$.  Let $m=\\min\\{ab,bc,ca\\}$.  Find the largest possible value of $m$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The given conditions are symmetric in $a,$ $b,$ and $c,$ so without loss of generality, we can assume that $a \\le b \\le c.$  Then $10 = a + b + c \\le 3c,$ so $c \\ge \\frac{10}{3}.$  By AM-GM,\n\\[(a + b)^2 \\ge 4ab.\\]Then\n\\[(10 - c)^2 \\ge 4(25 - ac - bc) = 100 - 4(a + b)c = 100 - 4(10 - c)c.\\]This reduces to $3c^2 - 20c = c(3c - 20) \\ge 0,$ so $c \\le \\frac{20}{3}.$\n\nNow,\n\\[m = \\min\\{ab,ac,bc\\} = ab = 25 - c(a + b) = 25 - c(10 - c) = (c - 5)^2.\\]Since $\\frac{10}{3} \\le c \\le \\frac{20}{3},$ $m = ab \\le \\frac{25}{9}.$\n\nEquality occurs when $a = b = \\frac{5}{3}$ and $c = \\frac{20}{3},$ so the maximum value of $m$ is $\\boxed{\\frac{25}{9}}.$"
+}

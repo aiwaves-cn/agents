@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers are in the list $25, 26, 27, \\ldots, 99, 100 ?$",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "We subtract 24 from each member of the list to get $1,2,3,\\ldots,75,76$, so there are $\\boxed{76}$ numbers.  Note that this follows the $b - a + 1$ formula for how many numbers there are between $a$ and $b$ inclusive, as $100 - 25 + 1 = 76$."
+}

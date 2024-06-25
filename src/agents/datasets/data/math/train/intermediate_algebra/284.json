@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$, $y$, and $z$ be distinct real numbers that sum to $0$. Compute \\[ \\dfrac {xy+yz+zx}{x^2+y^2+z^2}. \\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have $x+y+z=0,$ and squaring this equation gives \\[(x^2+y^2+z^2) + 2(xy+yz+zx) = 0.\\]Thus, $x^2+y^2+z^2=-2(xy+yz+zx).$ Since $x, y, z$ are distinct, it is not possible that $x^2+y^2+z^2=0,$ so we have \\[\\frac{xy+yz+zx}{x^2+y^2+z^2} = \\boxed{-\\frac12}.\\]"
+}

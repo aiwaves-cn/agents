@@ -1,0 +1,6 @@
+{
+    "problem": "The numbers $1447$, $1005$ and $1231$ have something in common: each is a $4$-digit number beginning with $1$ that has exactly two identical digits. How many such numbers are there?\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Suppose that the two identical digits are both $1$. Since the thousands digit must be $1$, only one of the other three digits can be $1$. This means the possible forms for the number are\n$11xy,\\qquad 1x1y,\\qquad1xy1$\nBecause the number must have exactly two identical digits, $x\\neq y$, $x\\neq1$, and $y\\neq1$. Hence, there are $3\\cdot9\\cdot8=216$ numbers of this form.\nNow suppose that the two identical digits are not $1$. Reasoning similarly to before, we have the following possibilities:\n$1xxy,\\qquad1xyx,\\qquad1yxx.$\nAgain, $x\\neq y$, $x\\neq 1$, and $y\\neq 1$. There are $3\\cdot9\\cdot8=216$ numbers of this form.\nThus the answer is $216+216=\\boxed{432}$."
+}

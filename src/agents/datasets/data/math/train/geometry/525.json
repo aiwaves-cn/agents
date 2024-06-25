@@ -1,0 +1,6 @@
+{
+    "problem": "Rectangle $ABCD$ is the base of pyramid $PABCD$. If $AB = 8$, $BC = 4$, $\\overline{PA}\\perp \\overline{AB}$, $\\overline{PA}\\perp\\overline{AD}$, and $PA = 6$, then what is the volume of $PABCD$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "[asy]\nimport three;\ntriple A = (4,8,0);\ntriple B= (4,0,0);\ntriple C = (0,0,0);\ntriple D = (0,8,0);\ntriple P = (4,8,6);\ndraw(B--P--D--A--B);\ndraw(A--P);\ndraw(C--P, dashed);\ndraw(B--C--D,dashed);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,E);\nlabel(\"$P$\",P,N);\n[/asy]\n\nSince $\\overline{PA}$ is perpendicular to both $\\overline{AB}$ and $\\overline{AD}$, the segment $\\overline{PA}$ is the altitude from the apex to the base of the pyramid.   The area of the base is $[ABCD] = (AB)(BC) = 32$, and the height from the apex to the base is 6, so the volume of the pyramid is $\\frac13(32)(6) = \\boxed{64}$ cubic units."
+}

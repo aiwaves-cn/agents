@@ -1,0 +1,6 @@
+{
+    "problem": "If $a$, $b$, and $c$ are digits and $0.abc$ can be expressed as $\\frac{1}{y}$ where $y$ is an integer such that $0<y\\le9$, then what is the largest possible value of $a+b+c$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Converting from a decimal to a fraction, we obtain $0.abc = \\frac{abc}{1000} = \\frac{abc}{2^3\\cdot5^3} = \\frac{1}{y}$. Since $0<y\\le9$ and $y$ divides into $1000$, $y$ must equal one of $1,2,4,5$ or $8$. Notice that $y\\neq1$ because then $abc = 1000$, which is impossible as $a$, $b$, and $c$ are digits. So, breaking down the remaining possibilities: \\begin{align*}\ny&=2 \\Rightarrow abc = 2^2\\cdot5^3 = 500 \\Rightarrow a+b+c = 5+0+0=5 \\\\\ny&=4 \\Rightarrow abc = 2\\cdot5^3 = 250 \\Rightarrow a+b+c = 2+5+0=7 \\\\\ny&=5 \\Rightarrow abc = 2^3\\cdot5^2 = 200 \\Rightarrow a+b+c = 2+0+0 = 2 \\\\\ny&=8 \\Rightarrow abc = 5^3 = 125 \\Rightarrow a+b+c =1+2+5 = 8.\n\\end{align*}Therefore, the largest possible value of $a+b+c$ is $\\boxed{8}$."
+}

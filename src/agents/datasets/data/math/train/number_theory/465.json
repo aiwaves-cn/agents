@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least three-digit whole number, the product of whose digits is 6?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We must minimize first the hundreds digit and then the tens digit to find the least three-digit whole number the product of whose digits is 6. The smallest possible hundreds digit is 1, and the least tens digit is 1 as well, giving a units digit of 6. Thus the least number is $\\boxed{116}$."
+}

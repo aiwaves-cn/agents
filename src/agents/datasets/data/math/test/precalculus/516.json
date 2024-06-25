@@ -1,0 +1,6 @@
+{
+    "problem": "One line is parameterized by\n\\[\\begin{pmatrix} 2 - 3t \\\\ -5 - 2t \\\\ 1 - 6t \\end{pmatrix}.\\]Another line is parameterized by\n\\[\\begin{pmatrix} -\\frac{3}{2} + s \\\\ 2s \\\\ -6 + 2s \\end{pmatrix}.\\]The two lines intersect at $P.$  If $\\theta$ is the acute angle formed by the two lines at $P,$ then find $\\cos \\theta.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "The direction vectors of the lines are $\\begin{pmatrix} -3 \\\\ -2  \\\\ -6 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}.$  The cosine of the angle between them is then\n\\[\\frac{\\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix} \\right\\|} = \\frac{-19}{7 \\cdot 3} = -\\frac{19}{21}.\\]Since $\\theta$ is acute, $\\cos \\theta = \\boxed{\\frac{19}{21}}.$"
+}

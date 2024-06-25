@@ -1,0 +1,6 @@
+{
+    "problem": "The complex number $(3 \\operatorname{cis} 18^\\circ)(-2\\operatorname{cis} 37^\\circ)$ is expressed in polar form as $r \\operatorname{cis} \\theta,$ where $r > 0$ and $0^\\circ \\le \\theta < 360^\\circ.$  Enter the ordered pair $(r, \\theta).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can write\n\\[(3 \\operatorname{cis} 18^\\circ)(-2\\operatorname{cis} 37^\\circ) = (3)(-2) \\operatorname{cis}(18^\\circ + 37^\\circ) = -6 \\operatorname{cis} 55^\\circ.\\]Since we want $r > 0,$ we can write $-6 \\operatorname{cis} 55^\\circ = 6 \\operatorname{cis} (55^\\circ + 180^\\circ) = 6 \\operatorname{cis} 235^\\circ.$  Hence, $(r,\\theta) = \\boxed{(6,235^\\circ)}.$"
+}

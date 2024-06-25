@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence of positive real numbers $\\{a_1, a_2, a_3, \\dots\\}$ has the property that for $i \\ge 2,$ each $a_i$ is equal to the sum of all the previous terms.  If $a_{19} = 99,$ then what is $a_{20}$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "For $n \\ge 2,$\n\\[a_n = a_{n - 1} + a_{n - 2} + \\dots + a_2 + a_1.\\]Then\n\\begin{align*}\na_{n + 1} &= a_n + a_{n - 1} + a_{n - 2} + \\dots + a_2 + a_1 \\\\\n&= a_n + (a_{n - 1} + a_{n - 2} + \\dots + a_2 + a_1) \\\\\n&= 2a_n.\n\\end{align*}Hence, each term (starting with $a_2$) is double the last term, which means $a_{20} = 2 \\cdot 99 = \\boxed{198}.$"
+}

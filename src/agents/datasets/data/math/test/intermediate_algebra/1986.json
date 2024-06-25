@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the smallest real number $x$ which satisfies the equation \\[\\sqrt{x^2 - 2x + 2} + \\sqrt{-x^2 + 6x - 2} = 2\\sqrt{x}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Taking a step back, we notice that the given equation is of the form \\[\\sqrt{a} + \\sqrt{b} = \\sqrt{c},\\]where $a = x^2-2x+2,$ $b=-x^2+6x-2,$ and $c=4x.$ Furthermore, we have \\[a + b = (x^2-2x+2) + (-x^2+6x-2) = 4x = c.\\]So we square the equation $\\sqrt a+\\sqrt b=\\sqrt c$ to get \\[a+b+2\\sqrt{ab} = c.\\]Since $a+b=c,$ we have $2\\sqrt{ab}=0,$ so either $a=0$ or $b=0.$ That is, either $x^2-2x+2=0$ or $-x^2+6x-2=0.$ The first equation has no real solutions because it is equivalent to $(x-1)^2 + 1 = 0.$ The second equation has two real roots \\[x = \\frac{6 \\pm \\sqrt{6^2 - 4 \\cdot 1\\cdot 2}}{2} = 3 \\pm \\sqrt{7}.\\]Because both of these roots are positive, they both satisfy the original equation. The smaller root is $x = \\boxed{3-\\sqrt7}.$"
+}

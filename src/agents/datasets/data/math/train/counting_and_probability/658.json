@@ -1,0 +1,6 @@
+{
+    "problem": "Let $ S $ be the set of all sides and diagonals of a regular pentagon. A pair of elements of $ S $ are selected at random without replacement. What is the probability that the two chosen segments have the same length?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "In a regular pentagon, there are $5$ sides of the same length and $5$ diagonals of the same length. Picking an element at random will leave 4 elements with the same length as the element picked, with $9$ total elements remaining. Therefore, the probability that the second element has the same length as the first is simply $\\boxed{\\tfrac{4}{9}}.$"
+}

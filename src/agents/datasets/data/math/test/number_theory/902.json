@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(n)$ be the sum of the positive integer divisors of $n$. If $n$ is prime and $f(f(n))$ is also prime, then call $n$ a bouncy prime. What is the smallest bouncy prime?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We test small primes. The smallest prime is $2$, but note that $f(2) = 3$ and $f(3) = 4$. We then test $3$, and note that $f(4) = 7$, which is prime, so $\\boxed{3}$ is the smallest bouncy prime."
+}

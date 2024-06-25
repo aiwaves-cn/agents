@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers are in the following list: $$-4, -1, 2, 5,\\ldots, 32$$",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Note that the numbers increase by 3 each time.  Hence we increase by 3 a total of $\\frac{32 - (-4)}{3} = 12$ times.  But then there must be $12 + 1 = \\boxed{13}$ numbers, since we need to also include the first number on the list."
+}

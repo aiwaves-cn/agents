@@ -1,0 +1,6 @@
+{
+    "problem": "If $0 < \\theta < \\frac{\\pi}{2}$ and $\\sqrt{3} \\cos \\theta - \\sin \\theta = \\frac{1}{3},$ then find $\\sqrt{3} \\sin \\theta + \\cos \\theta.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From $\\sqrt{3} \\cos \\theta - \\sin \\theta = \\frac{1}{3},$\n\\[\\sin \\theta = \\sqrt{3} \\cos \\theta - \\frac{1}{3}.\\]Substituting into $\\sin^2 \\theta + \\cos^2 \\theta = 1,$ we get\n\\[3 \\cos^2 \\theta - \\frac{2 \\sqrt{3}}{3} \\cos \\theta + \\frac{1}{9} + \\cos^2 \\theta = 1.\\]This simplifies to $18 \\cos^2 \\theta - 3 \\sqrt{3} \\cos \\theta - 4 = 0.$  By the quadratic formula,\n\\[\\cos \\theta = \\frac{\\sqrt{3} \\pm \\sqrt{35}}{12}.\\]Since $0 < \\theta < \\frac{\\pi}{2},$ $\\cos \\theta$ is positive, so $\\cos \\theta = \\frac{\\sqrt{3} + \\sqrt{35}}{12}.$\n\nHence,\n\\begin{align*}\n\\sqrt{3} \\sin \\theta + \\cos \\theta &= \\sqrt{3} \\left( \\sqrt{3} \\cos \\theta - \\frac{1}{3} \\right) + \\cos \\theta \\\\\n&= 3 \\cos \\theta - \\frac{\\sqrt{3}}{3} + \\cos \\theta \\\\\n&= 4 \\cos \\theta - \\frac{\\sqrt{3}}{3} \\\\\n&= \\frac{\\sqrt{3} + \\sqrt{35}}{3} - \\frac{\\sqrt{3}}{3} \\\\\n&= \\boxed{\\frac{\\sqrt{35}}{3}}.\n\\end{align*}"
+}

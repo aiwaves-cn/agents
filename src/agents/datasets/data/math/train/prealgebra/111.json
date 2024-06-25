@@ -1,0 +1,6 @@
+{
+    "problem": "Find $(21 \\div (6 + 1 - 4)) \\cdot 5.$",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Recall that expressions within parentheses should be done first. In the inner set of parentheses, we have $6+1-4=3.$ So, the outer set of parentheses can be rewritten as $21\\div3=7.$ Finally, \\[(21 \\div (6 + 1 - 4)) \\cdot 5=7\\cdot5=\\boxed{35}.\\]"
+}

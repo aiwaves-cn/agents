@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $|\\omega^2+6\\omega+58|$ if $\\omega=9+2i$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "It's certainly possible to just calculate the complex number $\\omega^2+6\\omega+58$ by just plugging in the value of $\\omega$, but it's computationally simpler to use the fact that $|ab|=|a|\\cdot|b|$ and our knowledge of factoring quadratics: \\begin{align*}\n|\\omega^2+6\\omega+58|&=|(\\omega+3+7i)(\\omega+3-7i)|\\\\\n&=|\\omega+3+7i|\\cdot|\\omega+3-7i|\\\\\n&=|12+9i|\\cdot|12-5i|\\\\\n&=\\sqrt{12^2+9^2}\\sqrt{12^2+(-5)^2}\\\\\n&=15\\cdot13\\\\\n&=\\boxed{195}\n\\end{align*}Note that we can get the factorization of the quadratic by either completing the square or (if you've learned it) applying the quadratic equation. Furthermore, knowledge of Pythagorean triples helps speed computations."
+}

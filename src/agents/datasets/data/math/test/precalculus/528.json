@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real numbers $x$ between 0 and 360 such that $\\sqrt{3} \\cos 10^\\circ = \\cos 40^\\circ + \\sin x^\\circ.$  Enter all the solutions, separated by commas.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\sin x^\\circ &= \\sqrt{3} \\cos 10^\\circ - \\cos 40^\\circ \\\\\n&= 2 \\cos 30^\\circ \\cos 10^\\circ - \\cos (10^\\circ + 30^\\circ).\n\\end{align*}From the angle addition formula,\n\\begin{align*}\n2 \\cos 30^\\circ \\cos 10^\\circ - \\cos (10^\\circ + 30^\\circ) &= 2 \\cos 30^\\circ \\cos 10^\\circ - (\\cos 10^\\circ \\cos 30^\\circ - \\sin 10^\\circ \\sin 30^\\circ) \\\\\n&= \\cos 10^\\circ \\cos 30^\\circ + \\sin 10^\\circ \\sin 30^\\circ.\n\\end{align*}From the angle subtraction formula,\n\\begin{align*}\n\\cos 10^\\circ \\cos 30^\\circ + \\sin 10^\\circ \\sin 30^\\circ &= \\cos (30^\\circ - 10^\\circ) \\\\\n&= \\cos 20^\\circ \\\\\n&= \\sin 70^\\circ.\n\\end{align*}The solutions are then $\\boxed{70,110}.$"
+}

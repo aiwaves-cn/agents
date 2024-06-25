@@ -1,0 +1,6 @@
+{
+    "problem": "Three consecutive prime numbers, each less than $100$, have a sum that is a multiple of 5. What is the greatest possible sum?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The primes less than 100 are, in decreasing order, 97, 89, 83, 79, 73, 71, 67, 61, 59, 53, 47, 43, 41, 37, 31, 29, 23, 19, 17, 13, 11, 7, 5, 3, 2. Starting with the first triple of primes on the list, add the remainders when each prime is divided by 5 and see whether the sum is a multiple of 5, in which case the sum of the three consecutive primes is a multiple of 5: 2+4+3=9, 4+3+4=11, 3+4+3=10. Aha! This means that $83+79+73=\\boxed{235}$ is the greatest possible sum of three consecutive prime numbers, each less than 100, that have a sum that is a multiple of 5."
+}

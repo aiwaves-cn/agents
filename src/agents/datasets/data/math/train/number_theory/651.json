@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $2^{19}$ is divided by $7$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $2^3 \\equiv 1 \\pmod{7}$ and $a \\equiv b \\pmod{m}$ implies $a^c \\equiv b^c \\pmod{m}$ and $ad \\equiv bd \\pmod{m}$, $$2^{19}= (2^3)^6 \\cdot 2^1 \\equiv 1^6 \\cdot 2 \\equiv \\boxed{2} \\pmod{7}.$$"
+}

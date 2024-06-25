@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f$ has the property that for each real number $x$ in its domain, $1/x$ is also in its domain and \\[\nf(x) + f\\left(\\frac{1}{x}\\right) = x.\n\\]What is the largest set of real numbers that can be in the domain of $f$?\n\n(a) ${\\{x\\mid x\\ne0\\}}$\n\n(b) ${\\{x\\mid x<0\\}}$\n\n(c) ${\\{x\\mid x>0\\}}$\n\n(d) ${\\{x\\mid x\\ne-1\\ \\text{and}\\ x\\ne0\\ \\text{and}\\ x\\ne1\\}}$\n\n(e) ${\\{-1,1\\}}$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The conditions on $f$ imply that both \\[\nx = f(x) + f\\displaystyle\\left(\\frac{1}{x}\\displaystyle\\right)\\]and \\[\\frac{1}{x} = f\\left(\\frac{1}{x}\\right) +\nf\\displaystyle\\left(\\frac{1}{1/x}\\displaystyle\\right) = f\\displaystyle\\left(\\frac{1}{x}\\displaystyle\\right) + f(x).\n\\]Thus if $x$ is in the domain of $f$, then $x = 1/x$, so $x = \\pm 1$.\n\nThe conditions are satisfied if and only if $f(1)=1/2$ and $f(-1)=-1/2$.  Hence the answer is $\\boxed{E}$."
+}

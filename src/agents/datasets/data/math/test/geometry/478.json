@@ -1,0 +1,6 @@
+{
+    "problem": "Sally has a cube of side length $s$ units such that the number of square units in the surface area of the cube equals $\\frac{1}{6}$ of the number of cubic units in the volume. She also wants to make a square for which the number of square units in the area of the square is equal to the number of cubic units in the volume of the cube. What should the side length of the square be?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "First we know that surface area is 6 times the area of each face, or $6s^2$, and we set this equal to $\\frac{1}{6}$ of the volume. $$6s^2=\\frac{1}{6}s^3\\qquad\\Rightarrow 36s^2=s^3 \\qquad\\Rightarrow s=36$$Now we want a square of side length $a$ and area $a^2$ to have an area equal to the volume of the cube. $$a^2=s^3=36^3=(6^2)^3=6^6\\qquad\\Rightarrow a=\\sqrt{6^6}=6^3=216$$So the side length of the square should be $\\boxed{216}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder of $19^{1999}$ divided by 25?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let us investigate the first few powers of 19: \\begin{align*}\n19^1 &\\equiv 19 \\pmod{25} \\\\\n19^2 &\\equiv 11 \\pmod{25} \\\\\n19^3 &\\equiv 9 \\pmod{25} \\\\\n19^4 &\\equiv 21 \\pmod{25} \\\\\n19^5 &\\equiv 24 \\pmod{25}.\n\\end{align*} At this point, we see that $19^5 \\equiv 24 \\equiv -1 \\pmod{25},$ hence $19^{10} \\equiv 1 \\pmod{25}.$ That means that $19^{1999} = 19^9 \\cdot (19^{10})^{199} \\equiv 19^9 \\pmod {25}.$\n\nSince $19^4 \\equiv 21 \\equiv -4 \\pmod{25}$ and $19^5 \\equiv -1 \\pmod{25},$ then $19^{1999} \\equiv 19^9 \\equiv 4 \\pmod{25},$ hence our desired remainder is $\\boxed{4}.$"
+}

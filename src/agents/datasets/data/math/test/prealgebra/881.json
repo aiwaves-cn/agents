@@ -1,0 +1,6 @@
+{
+    "problem": "How many degrees are in the acute angle formed by the hands of a clock at 3:30?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "[asy]\nunitsize(0.8inch);\nfor (int i=0 ; i<=11 ;++i)\n{\ndraw((rotate(i*30)*(0.8,0)) -- (rotate(i*30)*(1,0)));\nlabel(format(\"%d\",i+1),(rotate(60 - i*30)*(0.68,0)));\n}\ndraw(Circle((0,0),1),linewidth(1.1));\ndraw((0,-0.7)--(0,0)--(rotate(-15)*(0.5,0)),linewidth(1.2));\n[/asy]\n\nThere are 12 hours on a clock, so each hour mark is $360^\\circ/12 = 30^\\circ$ from its neighbors.  At 3:30, the minute hand points at the 6, while the hour hand is mid-way between the 3 and the 4.  Therefore, the hour hand is $\\frac12\\cdot 30^\\circ = 15^\\circ$ from the 4 on the clock, and there are $2\\cdot 30^\\circ = 60^\\circ$ between the 4 and the 6 on the clock.  So, the hour and the minute hand are $15^\\circ + 60^\\circ =\\boxed{75^\\circ}$ apart."
+}

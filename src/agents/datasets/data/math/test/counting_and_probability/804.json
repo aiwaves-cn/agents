@@ -1,0 +1,6 @@
+{
+    "problem": "How many diagonals are in the fifth polygon of this sequence of regular polygons below?\n\n[asy]unitsize(0.5inch);\ndraw((0,0)--(0.8,0)--(0.4,0.6)--cycle);\nlabel(\"0\",(0.4,0),S);\ndraw((1,0)--(1.8,0)--(1.8,0.8)--(1,0.8)--cycle);\nlabel(\"2\",(1.4,0),S);\ndraw((2.2,0)--(1.9,0.7)--(2.6,1.1)--(3.3,0.7)--(3,0)--cycle);\nlabel(\"5\",(2.6,0),S);\ndraw((3.6,0)--(3.3,0.5)--(3.6,1)--(4,1)--(4.3,0.5)--(4,0)--cycle);\nlabel(\"9\",(3.8,0),S);\ndraw((4.7,0)--(4.4,0.4)--(4.6,0.9)--(5.2,1.2)--(5.8,0.9)--(6,0.4)--(5.7,0)--cycle);\nlabel(\"?\",(5.1,0),S);\nlabel(\"Polygon\",(-0.1,0.5),W);\nlabel(\"diagonals\",(-0.1,-0.2),W);\n[/asy]",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "The fifth polygon has 7 vertices.  There are $\\dbinom{7}{2} = 21$ ways to choose two vertices to connect with a line segment.  7 of these choices yield sides of the polygon; the other $21-7=\\boxed{14}$ form diagonals."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to put 5 balls in 3 boxes if the balls are not distinguishable and neither are the boxes?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The ways to arrange indistinguishable balls into indistinguishable boxes only depends on the number of balls in the boxes.  The ways to do this are $(5,0,0)$, $(4,1,0)$, $(3,2,0)$, $(3,1,1)$, $(2,2,1)$.  There are $\\boxed{5}$ ways."
+}

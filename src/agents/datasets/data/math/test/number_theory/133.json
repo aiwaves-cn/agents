@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive factors does 48 have?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since $48=2^4\\cdot3^1$, a factor of $48$ takes the form $2^a3^b$ where $a$ is an integer between 0 and 4 inclusive and $b$ is 0 or 1. So 48 has $(4+1)(1+1)=\\boxed{10}$ positive factors."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The lines $y=2$, $y=5$, $x=1$, and $x=a$ make a square. Find the product of the possible values for $a$.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since the two horizontal lines are $5-2=3$ units apart, we know that the side of the square is $3$ units long. Therefore, the fourth line must be parallel to $x=1$. If $x=a$ is to the left of $x=1$, its equation is $x=1-3=-2$. If $x=a$ is to the right of $x=1$, then its equation is $x=1+3=4$. Therefore, the two values for $a$ are $4$ and $-2$, and their product is $\\boxed{-8}$."
+}

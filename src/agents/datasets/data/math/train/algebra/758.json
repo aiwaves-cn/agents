@@ -1,0 +1,6 @@
+{
+    "problem": "Given that\n\n\\begin{align*}\n\\frac{1}{x}+\\frac{1}{y}&=3,\\\\\nxy+x+y&=4,\n\\end{align*}\n\ncompute $x^2y+xy^2$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The first equation becomes\n\n$$\\frac{x+y}{xy}=3\\Rightarrow x+y=3xy$$\n\nSubstituting into the second equation,\n\n$$4xy=4\\Rightarrow xy=1$$\n\nThus $x+y=3$.\n\nThe quantity we desire factors as $xy(x+y)$, so it is equal to $1(3)=\\boxed{3}$."
+}

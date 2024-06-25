@@ -1,0 +1,6 @@
+{
+    "problem": "Henry walked on a flat field 9 meters due north from a tree. He then turned due east and walked 24 feet. He then turned due south and walked 9 meters plus 32 feet. How many feet away from his original starting point is Henry?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We are dealing in both meters and feet in this problem, which can be confusing. A careful reading, however, reveals that the 9 meters that Henry walked due north are later eliminated by the 9 meters that he walked due south. At the end, Henry is 24 feet east and 32 feet south of his original location. These are the two legs of a right triangle, so we can figure out the length of the hypotenuse of the triangle using the Pythagorean  Theorem. Actually, 24 is $3 \\times 8$ and 32 is $4 \\times 8$, so this is just a multiple of the 3-4-5 triangle. The hypotenuse - and Henry's distance from his starting point must be $5 \\times 8 = \\boxed{40\\text{ feet}}$."
+}

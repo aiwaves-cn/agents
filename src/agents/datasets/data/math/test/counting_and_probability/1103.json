@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\dbinom{13}{4}+\\dbinom{13}{9}$.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Note that $\\dbinom{13}{4} = \\dfrac{13!}{4!9!} = \\dbinom{13}{9}$. Thus, we have \\begin{align*}\n\\dbinom{13}{4}+\\dbinom{13}{9} &= 2\\times \\dbinom{13}{4} \\\\\n&= 2\\times \\dfrac{13!}{4!9!} \\\\\n&= 2\\times \\dfrac{13\\times 12\\times 11\\times 10}{4\\times 3\\times 2\\times 1} \\\\\n&= 2\\times 13 \\times \\dfrac{12}{4\\times 3} \\times 11 \\times \\dfrac{10}{2\\times 1} \\\\\n&= 2\\times 13\\times 1\\times 11\\times 5 \\\\\n&= 13\\times 11\\times 10 \\\\\n&= \\boxed{1430}.\n\\end{align*}"
+}

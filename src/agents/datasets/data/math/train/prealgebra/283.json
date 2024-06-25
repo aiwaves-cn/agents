@@ -1,0 +1,6 @@
+{
+    "problem": "Find $x$, where $x$ is a square number which is divisible by four, and between 39 and 80.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We know that $x$ is between 39 and 80, and since $6^2 = 36 < 39$ and $9^2 = 81 > 80$, this means that $6^2 < x < 9^2$. This leaves us with two possibilities for $x$, which are $7^2 = 49$, and $8^2 = 64$. We then see that only 64 is divisible by four, so $x =$ $\\boxed{64}$."
+}

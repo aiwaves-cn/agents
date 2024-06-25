@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = 3x^2-2$ and $g(f(x)) = x^2 + x +1$.  Find the sum of all possible values of $g(25)$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We don't know $g(x)$, so we don't have an expression we can simply stick $25$ in to get an answer. We do, however, know that $g(f(x)) =x^2 + x + 1$.  So, if we can figure out what to put into $f(x)$ such that $25$ is the resulting output, we can use our expression for $g(f(x))$ to find $g(25)$.\n\nIf $f(x) = 25$, then we have $3x^2 - 2 = 25$, so $x^2 = 9$, which means $x=3$ or $x=-3$.  Since $x$ could be $3$ or $-3$, we could have $g(25) = g(f(3))$ or $g(25) = g(f(-3))$.  Using the given expression for $g(f(x))$, the two possible values of $g(25)$ are  $g(f(3)) = 3^2 + 3 + 1 = 13$ and $g(f(-3)) = (-3)^2 + (-3) + 1 = 7$.  The sum of these is $13+7=\\boxed{20}$."
+}

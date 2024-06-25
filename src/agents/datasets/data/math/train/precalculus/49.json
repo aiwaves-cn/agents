@@ -1,0 +1,6 @@
+{
+    "problem": "A translation of the plane takes $-3 + 2i$ to $-7 - i.$  Find the complex number that the translation takes $-4 + 5i$ to.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "This translation takes $z$ to $z + w,$ where $w$ is a fixed complex number.  Thus,\n\\[-7 - i = (-3 + 2i) + w.\\]Hence, $w = -4 - 3i.$  Then the translation takes $-4 + 5i$ to $(-4 + 5i) + (-4 - 3i) = \\boxed{-8 + 2i}.$"
+}

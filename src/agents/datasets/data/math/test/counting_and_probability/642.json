@@ -1,0 +1,6 @@
+{
+    "problem": "If the famous baseball player for the San Francisco Midgets, Larry Ponds, has a $\\frac{2}{5}$ chance of earning a walk on each plate appearance, what is the probability that he will earn a walk exactly once in his next two plate appearances? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "If he earns a walk on exactly one of his next two plate appearances, then one of his at-bats must be a walk and the other must not. The walk and non-walk could come in either order, so the probability is $\\frac{2}{5} \\cdot \\frac{3}{5} + \\frac{3}{5} \\cdot \\frac{2}{5} = 2 \\cdot \\frac{6}{25} = \\boxed{\\frac{12}{25}}$."
+}

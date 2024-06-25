@@ -1,0 +1,6 @@
+{
+    "problem": "The product of two positive whole numbers is 2005. If neither number is 1, what is the sum of the two numbers?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "$2005=5\\cdot401$. Checking the primes less than $\\sqrt{401}$ as potential divisors, we see that 401 is prime. Thus, the positive whole numbers in question are 5 and 401. Their sum is $\\boxed{406}.$"
+}

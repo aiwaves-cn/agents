@@ -1,0 +1,6 @@
+{
+    "problem": "The solutions of $x(3x-7)=-3$ may be expressed in the form $\\frac{m+\\sqrt{n}}{p}$ and $\\frac{m-\\sqrt{n}}{p}$, where $m$, $n$, and $p$ have a greatest common divisor of 1.  Find $m+n+p$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Distribute on the left-hand side and add 3 to both sides to obtain $3x^2-7x+3=0$.  Since it doesn't factor easily, we use the quadratic formula:  \\[\n\\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a} = \\frac{7\\pm\\sqrt{7^{2}-4 \\cdot 3 \\cdot 3}}{2\\cdot 3} = \\frac{7 \\pm\\sqrt{13}}{6}.\n\\] Since $7$, $13$, and $6$ are relatively prime, $m=7$, $n=13$, and $p=6$, so $m+n+p=7+13+6=\\boxed{26}$."
+}

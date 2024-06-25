@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\binom{15}{7}$. You are told that $\\binom{14}{8} = 3003$ and $\\binom{14}{7} = 3432$.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "By Pascal's Rule, \\begin{align*}\n\\binom{15}{7} &= \\binom{14}{6} + \\binom{14}{7} \\\\\n\\binom{15}{7} &= \\binom{14}{14-6} + \\binom{14}{7} \\\\\n\\binom{15}{7} &= \\binom{14}{8} + \\binom{14}{7} \\\\\n\\binom{15}{7} &= 3003 + 3432 \\\\\n\\binom{15}{7} &= \\boxed{6435}\n\\end{align*}"
+}

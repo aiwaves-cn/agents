@@ -1,0 +1,6 @@
+{
+    "problem": "Kite $ABCD$ (a quadrilateral with two pairs of adjacent equal sides) has coordinates $A\\ (0,7),\\ B\\ (1,0),\\ C\\ (12,-2),$ and $D\\ (7,8).$ What is the area of $ABCD,$ given that the area of a kite is equal to half the product of its diagonals?\n\n[asy]\nstring sp(pair P, string P2){return \"$\" + P2 + \"\\,(\" + string(P.x) + \",\" + string(P.y) + \")$\";}\nsize(150); defaultpen(fontsize(10)); draw((-5,0)--(15,0),Arrows(4)); draw((0,-5)--(0,10),Arrows(4)); pair A=(0,7),B=(1,0),C=(12,-2),D=(7,8); draw(A--B--C--D--cycle, linewidth(0.7)); draw(A--C, dashed); draw(B--D, dashed); label(sp(A,\"A\"),A,W); label(sp(B,\"B\"),B,S); label(sp(C,\"C\"),C,E); label(sp(D,\"D\"),D,N);\n[/asy]",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "As the problem suggests, we need to compute the lengths of the diagonals $\\overline{AC}$ and $\\overline{BD}$. By the distance formula,\n\n\\begin{align*}\nAC &= \\sqrt{(12 -0)^2 + (-2-7)^2} = \\sqrt{12^2 + 9^2} = 15\\\\\nBD &= \\sqrt{(7-1)^2 + (8-0)^2} = \\sqrt{6^2 + 8^2} = 10\\\\\n\\end{align*}Thus, the answer is $\\frac 12 \\cdot 10 \\cdot 15 = \\boxed{75}$.\n\nAs an extra challenge, can you figure out why the area of a kite equals half the product of the lengths of its diagonals?"
+}

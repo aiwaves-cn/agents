@@ -1,0 +1,6 @@
+{
+    "problem": "We have a rectangle of dimensions $x - 2$ by $2x + 5$ such that its area is $8x - 6$. What is the value of $x$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We proceed as follows: \\begin{align*}\n(x - 2)(2x + 5) &= 8x - 6\\\\\n2x^2 + x - 10 &= 8x - 6\\\\\n2x^2 - 7x - 4 &= 0\\\\\n(x - 4)(2x + 1) &= 0.\n\\end{align*}This gives us $x = 4$ or $x = -\\frac{1}{2}.$ However, since the latter would make $x - 2$ negative, we see that $x = \\boxed{4}.$"
+}

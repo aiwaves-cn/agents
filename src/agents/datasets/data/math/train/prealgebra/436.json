@@ -1,0 +1,6 @@
+{
+    "problem": "The landlord of an apartment building needs to purchase enough digits to label all of the apartments from 100 through 125 on the first floor and 200 through 225 on the second floor. The digits can only be purchased in a package that contains one of each digit 0 through 9. How many packages must the landlord purchase?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since 1 and 2 are used at least once in half of the apartments, and no other number is used this often, either 1 or 2 will be the most frequent digit used.\n\nNotice, though, that since all of the numbers of the form $\\star1\\star$ appear but only 6 of the numbers $\\star2\\star$ appear, 2 will be used less often than 1 and we should count the number of 1s to find the number of packages needed.\n\n100 through 125 requires 26 ones just for the hundreds place. 100 through 125 and 200 through 225 require the same number of ones for the tens and units places; that is, thirteen.\n\nSo, there are $26 + 2 \\cdot 13 = 52$ ones used. Therefore, the landlord must purchase $\\boxed{52}$ packages."
+}

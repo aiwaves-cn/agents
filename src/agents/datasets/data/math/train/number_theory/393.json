@@ -1,0 +1,6 @@
+{
+    "problem": "An arithmetic sequence with first term $1$ has a common difference of $6$. A second sequence begins with $4$ and has a common difference of $7$. In the range of $1$ to $100$, what is the largest number common to both sequences?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Let $a$ be the smallest common term. We know that \\begin{align*}\na & \\equiv 1 \\pmod 6\\\\\na & \\equiv 4 \\pmod 7\n\\end{align*} We see that $a \\equiv 1 \\pmod 6$ means that there exists a non-negative integer $n$ such that $a=1+6n$. Substituting this into $a \\equiv 4 \\pmod 7$ yields \\[1+6n\\equiv 4\\pmod 7\\implies n\\equiv 4\\pmod 7\\] So $n$ has a lower bound of $4$. Then $n\\ge 4\\implies a=1+6n\\ge 25$. We see that $25$ satisfies both congruences so $a=25$. If $b$ is any common term, subtracting $25$ from both sides of both congruences gives \\begin{align*}\nb-25 & \\equiv -24\\equiv 0\\pmod 6 \\\\\nb-25 & \\equiv -21\\equiv 0\\pmod 7\n\\end{align*} Since $\\gcd(6,7)=1$, we have $b-25\\equiv 0\\pmod {6\\cdot 7}$, that is, $b\\equiv 25\\pmod{42}.$ So $b=25+42m$ for some integer $m$. The largest such number less than $100$ is $\\boxed{67}$, which happens to satisfies the original congruences."
+}

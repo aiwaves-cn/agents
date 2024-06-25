@@ -1,0 +1,6 @@
+{
+    "problem": "Lines $l$ and $m$ are parallel and points $A$, $B$, and $D$ are collinear. What is the value of $x$?\n\n[asy]\n\nunitsize(1.1 inch);\n\ndraw((0,0)--(4,0),Arrows);\n\ndraw((0,1)--(4,1),Arrows);\n\ndraw((3,2)--(1,-1),Arrows);\n\ndot((0.3,0));\nlabel(\"$m$\",(0.3,0),N);\n\ndot((0.3,1));\nlabel(\"$l$\",(0.3,1),N);\n\ndot((3.7,0));\n\ndot((3.7,1));\nlabel(\"$C$\",(3.7,1),N);\n\ndot((1.2,-0.7));\n\ndot((2.8,1.7));\nlabel(\"$A$\",(2.8,1.7),NW);\n\ndot((2.34,1));\nlabel(\"$B$\",(2.34,1),NW);\nlabel(\"$5x-8^\\circ$\",(2.34,1),SW);\n\ndot((1.66,0));\nlabel(\"$D$\",(1.66,0),NW);\nlabel(\"$143^\\circ$\",(1.66,0),SE);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The angle marked $143^\\circ$ and angle $CBD$ are corresponding angles and therefore have equal measures.  It follows that $143^\\circ$ and $5x-8^\\circ$ sum to 180 degrees.  Solving  \\[\n143+(5x-8)=180,\n\\] we find $x=\\boxed{9}$."
+}

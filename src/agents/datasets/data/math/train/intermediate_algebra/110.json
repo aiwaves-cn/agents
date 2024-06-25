@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a complex number such that\n\\[|z^2 + 4| = |z(z + 2i)|.\\]Find the smallest possible value of $|z + i|.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $z^2 + 4 = (z + 2i)(z - 2i),$ so we can write the given equation as\n\\[|z + 2i||z - 2i| = |z||z + 2i|.\\]If $|z + 2i| = 0,$ then $z = -2i,$ in which case $|z + i| = |-i| = 1.$  Otherwise, $|z + 2i| \\neq 0,$ so we can divide both sides by $|z + 2i|,$ to get\n\\[|z - 2i| = |z|.\\]This condition states that $z$ is equidistant from the origin and $2i$ in the complex plane.  Thus, $z$ must lie on the perpendicular bisector of these complex numbers, which is the set of complex numbers where the imaginary part is 1.\n\n[asy]\nunitsize(1 cm);\n\ndraw((-2.5,0)--(2.5,0));\ndraw((0,-2.5)--(0,2.5));\ndraw((-2.5,1)--(2.5,1),red);\n\ndot(\"$0$\", (0,0), NE);\ndot(\"$2i$\", (0,2), NE);\n\nlabel(\"Re\", (2.5,0), E);\nlabel(\"Im\", (0,2.5), N);\n[/asy]\n\nIn other words, $z = x + i$ for some real number $x.$  Then\n\\[|z + i| = |x + 2i| = \\sqrt{x^2 + 4} \\ge 2.\\]Therefore, the smallest possible value of $|z + i|$ is $\\boxed{1},$ which occurs for $z = -2i.$"
+}

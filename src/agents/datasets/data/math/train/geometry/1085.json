@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $\\triangle ABE$, $\\triangle BCE$ and $\\triangle CDE$ are right-angled, with $\\angle AEB=\\angle BEC = \\angle CED = 60^\\circ$, and $AE=24$. [asy]\npair A, B, C, D, E;\nA=(0,20.785);\nB=(0,0);\nC=(9,-5.196);\nD=(13.5,-2.598);\nE=(12,0);\ndraw(A--B--C--D--E--A);\ndraw(B--E);\ndraw(C--E);\nlabel(\"A\", A, N);\nlabel(\"B\", B, W);\nlabel(\"C\", C, SW);\nlabel(\"D\", D, dir(0));\nlabel(\"E\", E, NE);\n[/asy] Find the length of $CE.$",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "We find $CE$ by first finding $BE$.\n\nSince $AE = 24$ and $\\angle AEB = 60^\\circ$ and $AEB$ is a right triangle, then we can see that $AE$ is the hypotenuse and $BE$ is the shorter leg, so $BE = \\dfrac{1}{2} \\cdot 24 = 12.$\n\nLikewise, since $BE = 12$ and $\\angle BEC = 60^\\circ$, then $CE = \\dfrac{1}{2} \\cdot 12 = \\boxed{6}$."
+}

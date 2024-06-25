@@ -1,0 +1,6 @@
+{
+    "problem": "How many two-digit numbers have digits whose sum is a perfect square?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The sum of the digits of a two-digit number is at most $9+9=18.$ This means the only possible perfect square sums are $1,$ $4,$ $9,$ and $16.$ Each square has the following two-digit possibilities:\n\n$\\bullet$ $1:$ $10$\n\n$\\bullet$ $4:$ $40,$ $31,$ $22,$ $13$\n\n$\\bullet$ $9:$ $90,$ $81,$ $72,$ $63,$ $54,$ $45,$ $36,$ $27,$ $18$\n\n$\\bullet$ $16:$ $97,$ $88,$ $79$\n\nThere are $\\boxed{17}$ two-digit numbers in all."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $\\cos a = \\frac{1}{3}$ and $\\cos b = \\frac{1}{4},$ compute $\\cos (a + b) \\cos (a - b).$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By product-to-sum,\n\\[\\cos (a + b) \\cos (a - b) = \\frac{\\cos 2a + \\cos 2b}{2}.\\]Then from double angle formula,\n\\begin{align*}\n\\frac{\\cos 2a + \\cos 2b}{2} &= \\frac{2 \\cos^2 a - 1 + 2 \\cos^2 b - 1}{2} \\\\\n&= \\frac{2 (\\frac{1}{3})^2 - 1 + 2 (\\frac{1}{4})^2 - 1}{2} \\\\\n&= \\boxed{-\\frac{119}{144}}.\n\\end{align*}"
+}

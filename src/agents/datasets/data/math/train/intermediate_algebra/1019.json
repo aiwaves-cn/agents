@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real values of $x$ that satisfy $\\frac{x^2+x^3-2x^4}{x+x^2-2x^3} \\ge -1.$ (Give your answer in interval notation.)",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We notice that the numerator and denominator share common factors: $x^2+x^3-2x^4 = x^2(1+x-2x^2)$ and $x+x^2-2x^3=x(1+x-2x^2).$ Hence, whenever $x(1+x-2x^2) \\neq 0,$ we can write \\[\\frac{x^2+x^3-2x^4}{x+x^2-2x^3} = \\frac{x^2(1+x-2x^2)}{x(1+x-2x^2)} = x.\\]It follows that the given inequality is satisfied if and only if $x \\ge -1$ and $x(1+x-2x^2) \\neq 0.$ The roots of $1+x-2x^2$ are $x=1$ and $x=-\\frac12,$ so we cannot have $x=0,$ $x=1,$ or $x=-\\tfrac12.$ Putting all this together, the solution set of the inequality consists of the interval $[-1, \\infty)$ with three \"holes\": \\[x \\in \\boxed{[-1, -\\tfrac12) \\cup (-\\tfrac12, 0) \\cup (0, 1) \\cup (1, \\infty)}.\\]"
+}

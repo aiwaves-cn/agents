@@ -1,0 +1,6 @@
+{
+    "problem": "If $A$ is an angle such that $\\tan A + \\sec A = 2,$ enter all possible values of $\\cos A,$ separated by commas.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can write the equation as\n\\[\\frac{\\sin A}{\\cos A} + \\frac{1}{\\cos A} = 2,\\]so $\\sin A + 1 = 2 \\cos A.$  Then $\\sin A = 2 \\cos A - 1.$  Squaring both sides, we get\n\\[\\sin^2 A = 4 \\cos^2 A - 4 \\cos A + 1.\\]Since $\\cos^2 A + \\sin^2 A = 1,$\n\\[1 - \\cos^2 A = 4 \\cos^2 A - 4 \\cos A + 1,\\]which simplifies to $5 \\cos^2 A - 4 \\cos A = \\cos A (5 \\cos A - 4) = 0.$  Hence, $\\cos A = 0$ or $\\cos A = \\frac{4}{5}.$\n\nIf $\\cos A = 0,$ then $\\sec A = \\frac{1}{\\cos A}$ is not defined.  On the other hand, if $A$ is the acute angle such that $\\cos A = \\frac{4}{5},$ then $\\sin A = \\frac{3}{5},$ so\n\\[\\tan A + \\sec A = \\frac{\\sin A + 1}{\\cos A} = \\frac{3/5 + 1}{4/5} = 2.\\]Therefore, $\\cos A = \\boxed{\\frac{4}{5}}.$"
+}

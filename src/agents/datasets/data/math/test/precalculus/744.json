@@ -1,0 +1,6 @@
+{
+    "problem": "For\n\\[\\mathbf{A} = \\begin{pmatrix} 2 & 7 \\\\ 13 & -2 \\end{pmatrix},\\]compute $(\\mathbf{A}^{-1})^{-1}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can check that $\\mathbf{A}$ is invertible, and so\n\\[\\mathbf{A} \\mathbf{A}^{-1} = \\mathbf{I}.\\]By the same token,\n\\[\\mathbf{A}^{-1} (\\mathbf{A}^{-1})^{-1} = \\mathbf{I}.\\]Therefore, $(\\mathbf{A}^{-1})^{-1} = \\mathbf{A} = \\boxed{\\begin{pmatrix} 2 & 7 \\\\ 13 & -2 \\end{pmatrix}}.$"
+}

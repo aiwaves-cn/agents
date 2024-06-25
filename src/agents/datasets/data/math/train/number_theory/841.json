@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit of $\\frac{20 \\cdot 21 \\cdot 22 \\cdot 23 \\cdot 24 \\cdot 25}{1000}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "$\\frac{20\\cdot 21\\cdot 22\\cdot 23\\cdot 24\\cdot 25}{1000} = \\frac{2^2\\cdot 5\\cdot 21\\cdot 2\\cdot 11\\cdot 23\\cdot 2^3\\cdot 3\\cdot 5^2}{2^3\\cdot 5^3} = 2^3\\cdot 3\\cdot 21 \\cdot 11\\cdot 23 \\equiv 2^3\\cdot 3^2 \\pmod{10} \\equiv \\boxed{2}\\pmod{10}$."
+}

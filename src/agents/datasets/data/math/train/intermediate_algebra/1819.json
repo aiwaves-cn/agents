@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the number of pairs $(a,b)$ of real numbers such that $10, a, b, ab$ is an arithmetic progression.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since $10, a, b$ is an arithmetic progression, we have $a = \\frac12 (10+b)$. Also, we have $a+ab = 2b$, and so $a(1+b) = 2b$. Substituting the expression for $a$ gives $(10+b)(1+b) = 4b$. Solving this quadratic equation gives the solutions $b = -2$ and $b = -5$. The corresponding values for $a$ can be found by $a = \\frac12 (10+b)$, giving solutions $(4,-2)$ $\\left(\\frac{5}{2},-5 \\right),$ for a total of $\\boxed{2}$ solutions."
+}

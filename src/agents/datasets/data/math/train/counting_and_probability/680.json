@@ -1,0 +1,6 @@
+{
+    "problem": "We are allowed to remove exactly one integer from the list $$-1,0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,$$and then we choose two distinct integers at random from the remaining list.  What number should we remove if we wish to maximize the probability that the sum of the two chosen numbers is 10?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "For each integer $x$ in the list besides 5, the integer $10-x$ is also in the list.  So, for each of these integers, removing $x$ reduces the number of pairs of distinct integers whose sum is 10.  However, there is no other integer in list that can be added to 5 to give 10, so removing 5 from the list will not reduce the number of pairs of distinct integers whose sum is 10.\n\nSince removing any integer besides 5 will reduce the number of pairs that add to 10, while removing 5 will leave the number of pairs that add to 10 unchanged, we have the highest probability of having a sum of 10 when we remove $\\boxed{5}$."
+}

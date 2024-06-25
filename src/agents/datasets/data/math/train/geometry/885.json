@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $ABC$ is a scalene right triangle, and $P$ is the point on   hypotenuse $\\overline{AC}$ such that $\\angle{ABP} =\n45^{\\circ}$. Given that $AP = 1$ and $CP = 2$, compute the area of   $ABC$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy]\npair A,B,C,P;\n\nB = (0,0);\nA = (0,1);\nC = (2,0);\nP = A + (C-A)/3;\ndraw(P--B--A--C--B);\nlabel(\"$B$\",B,SW);\nlabel(\"$A$\",A,NW);\nlabel(\"$C$\",C,SE);\nlabel(\"$P$\",P,NE);\n[/asy]\n\n\nNotice that $\\overline{BP}$ bisects the right angle at $B$. Thus, the Angle Bisector Theorem tells us that $AB/BC = AP/PC = 1/2$. So, we have $AB = x$ and $BC = 2x$ for some $x$.  By the Pythagorean theorem, we have $5x^2 =AC^2 = 9$, so $x^2 = \\frac95$.  Finally, the desired area $\\frac{1}{2}(x)(2x) = x^2 = \\boxed{\\frac{9}{5}}$."
+}

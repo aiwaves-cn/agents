@@ -1,0 +1,6 @@
+{
+    "problem": "[asy] fill(circle((4,0),4),grey); fill((0,0)--(8,0)--(8,-4)--(0,-4)--cycle,white); fill(circle((7,0),1),white); fill(circle((3,0),3),white); draw((0,0)--(8,0),black+linewidth(1)); draw((6,0)--(6,sqrt(12)),black+linewidth(1)); MP(\"A\", (0,0), W);  MP(\"B\", (8,0), E);  MP(\"C\", (6,0), S); MP(\"D\",(6,sqrt(12)), N); [/asy]\nIn this diagram semi-circles are constructed on diameters $\\overline{AB}$, $\\overline{AC}$, and $\\overline{CB}$, so that they are mutually tangent. If $\\overline{CD} \\bot \\overline{AB}$, then the ratio of the shaded area to the area of a circle with $\\overline{CD}$ as radius is:\n$\\textbf{(A)}\\ 1:2\\qquad \\textbf{(B)}\\ 1:3\\qquad \\textbf{(C)}\\ \\sqrt{3}:7\\qquad \\textbf{(D)}\\ 1:4\\qquad \\textbf{(E)}\\ \\sqrt{2}:6$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "To make the problem much simpler while staying in the constraints of the problem, position point $C$ halfway between $A$ and $B$. Then, call $\\overline{AC} = \\overline{BC}=r$ . The area of the shaded region is then\\[\\frac{ \\pi r^2 - \\pi (r/2)^2 - \\pi (r/2)^2}{2}=\\frac{\\pi r^2}{4}\\]Because $\\overline{CD}=r$ the area of the circle with $\\overline{CD}$ as radius is $\\pi r^2$. Our ratio is then\\[\\frac{\\pi r^2}{4} : \\pi r^2 = \\boxed{1:4}\\]"
+}

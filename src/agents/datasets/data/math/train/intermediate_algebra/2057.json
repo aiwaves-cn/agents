@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a real number such that $x^3+4x=8$. Determine the value of $x^7+64x^2$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "From the equation $x^3 + 4x = 8,$ $x^3 = -4x + 8.$  Then\n\\begin{align*}\nx^4 &= -4x^2 + 8x, \\\\\nx^5 &= -4x^3 + 8x^2 = -4(-4x + 8) + 8x^2 = 8x^2 + 16x - 32, \\\\\nx^6 &= 8x^3 + 16x^2 - 32x = 8(-4x + 8) + 16x^2 - 32x = 16x^2 - 64x + 64, \\\\\nx^7 &= 16x^3 - 64x^2 + 64x = 16(-4x + 8) - 64x^2 + 64x = 128 - 64x^2.\n\\end{align*}Hence,\n\\[x^7 + 64x^2 = 128 - 64x^2 + 64x^2 = \\boxed{128}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle{ABC}$ with side lengths $AB = 13$, $AC = 12$, and $BC = 5$, let $O$ and $I$ denote the circumcenter and incenter, respectively. A circle with center $M$ is tangent to the legs $AC$ and $BC$ and to the circumcircle of $\\triangle{ABC}$. What is the area of $\\triangle{MOI}$?\n$\\textbf{(A)}\\ 5/2\\qquad\\textbf{(B)}\\ 11/4\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 13/4\\qquad\\textbf{(E)}\\ 7/2$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the triangle have coordinates $(0,0),(12,0),(0,5).$ Then the coordinates of the incenter and circumcenter are $(2,2)$ and $(6,2.5),$ respectively. If we let $M=(x,x),$ then $x$ satisfies\\[\\sqrt{(2.5-x)^2+(6-x)^2}+x=6.5\\]\\[2.5^2-5x+x^2+6^2-12x+x^2=6.5^2-13x+x^2\\]\\[x^2=(5+12-13)x\\]\\[x\\neq 0\\implies x=4.\\]Now the area of our triangle can be calculated with the Shoelace Theorem. The answer turns out to be $\\boxed{\\frac{7}{2}}$"
+}

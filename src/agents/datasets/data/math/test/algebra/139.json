@@ -1,0 +1,6 @@
+{
+    "problem": "If $a \\star b = \\dfrac{\\left(\\dfrac{1}{b} - \\dfrac{1}{a}\\right)}{(a - b)}$, express $3 \\star 11$ as a common fraction.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We could plug in 3 and 11 to find the answer. However, note that $a \\star b = \\dfrac{\\dfrac{a - b}{ab}}{a - b} = \\dfrac{1}{ab}$. Therefore, $3 \\star 11 = \\frac{1}{3 \\cdot 11} = \\boxed{\\frac{1}{33}}$."
+}

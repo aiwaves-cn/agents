@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate the infinite geometric series: $$1-\\frac{2}{7}+\\frac{4}{49}-\\frac{8}{343}+\\dots$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The series has first term $1$ and common ratio $\\frac{-2}{7}$, so the formula yields: $\\cfrac{1}{1-\\left(\\frac{-2}{7}\\right)}=\\boxed{\\frac{7}{9}}$."
+}

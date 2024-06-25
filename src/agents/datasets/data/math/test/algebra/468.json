@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all values of $x$ for which $|x-3| + |3-x| -1 = 3$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We will consider two cases.\n\nCase 1: $x-3$ is nonnegative.  In this case, we have $|x-3| = x-3$.  Also, if $x-3$ is nonnegative, then $3-x$ (which is $-1$ times $x-3$) is nonpositive, which means that $|3-x| = -(3-x)$.  So, substituting for the absolute values in the original equation, we have  \\[x-3 - (3-x) -1 = 3.\\]Solving this equation gives $x = 5$.\n\nCase 2: $x-3$ is negative. In this case, we have $|x-3| = -(x-3)$.  Also, when $x-3$ is negative, then $3-x$ is positive, so $|3-x| = 3-x$.  So, substituting for the absolute values in the original equation, we have  \\[-(x-3) + 3-x - 1 = 3.\\]Solving this equation gives $x = 1$.\n\nCombining our cases, the sum of the values of $x$ that satisfy the equation is $\\boxed{6}$.\n\nNotice that we could have solved this equation even faster by noticing that $|3-x| = |(-1)(x-3)| = |(-1)||x-3| = |x-3|$, so the original equation simplifies to $2|x-3| - 1 = 3$, which gives us $|x-3| = 2$.  From here, we see that $x$ is 2 away from 3 on the number line, so $x$ is 5 or 1."
+}

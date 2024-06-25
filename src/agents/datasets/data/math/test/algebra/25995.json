@@ -1,0 +1,6 @@
+{
+    "problem": "My baseball team won $2/9$ of its games this season.  If we lost 15 more games than we won, how many games did we play this year?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Suppose we played $x$ games.  Since we won $2/9$ of the games we played, we won $(2/9)x = 2x/9$ games. Therefore, we lost $x - 2x/9 = 7x/9$ games.  Since we lost 15 more games than we won, we have \\[\\frac{7x}{9} - \\frac{2x}{9} = 15.\\]Simplifying the left side gives $5x/9 = 15$, and solving this equation gives $x = \\boxed{27}$ games played."
+}

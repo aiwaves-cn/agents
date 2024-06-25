@@ -1,0 +1,6 @@
+{
+    "problem": "For some positive integer $n,$ $0 < n < 180,$\n\\[\\csc (2^3)^\\circ + \\csc (2^4)^\\circ + \\csc (2^5)^\\circ + \\dots + \\csc (2^{2019})^\\circ = \\sec n^\\circ.\\]Find $n.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Note that\n\\begin{align*}\n\\cot x - \\cot 2x &= \\frac{\\cos x}{\\sin x} - \\frac{\\cos 2x}{\\sin 2x} \\\\\n&= \\frac{2 \\cos^2 x}{2 \\sin x \\cos x} - \\frac{2 \\cos^2 x - 1}{2 \\sin x \\cos x} \\\\\n&= \\frac{1}{2 \\sin x \\cos x} \\\\\n&= \\frac{1}{\\sin 2x} \\\\\n&= \\csc 2x.\n\\end{align*}Hence, summing over $x = (2^2)^\\circ,$ $(2^3)^\\circ,$ $(2^4)^\\circ,$ $\\dots,$ $(2^{2018})^\\circ,$ we get\n\\begin{align*}\n&\\csc (2^3)^\\circ + \\csc (2^4)^\\circ + \\csc (2^5)^\\circ + \\dots + \\csc (2^{2019})^\\circ \\\\\n&= (\\cot (2^2)^\\circ - \\cot (2^3)^\\circ) +(\\cot (2^3)^\\circ - \\cot (2^4)^\\circ) + (\\cot (2^4)^\\circ - \\cot (2^5)^\\circ) + \\dots + (\\cot (2^{2018})^\\circ - \\cot (2^{2019})^\\circ) \\\\\n&= \\cot 4^\\circ - \\cot (2^{2019})^\\circ.\n\\end{align*}Note that $2^{14} \\equiv 2^2 \\pmod{180},$ so\n\\[2^{2019} \\equiv 2^{2007} \\equiv 2^{1995} \\equiv \\dots \\equiv 2^{15} \\equiv 32768 \\equiv 8 \\pmod{180},\\]so $\\cot (2^{2019})^\\circ = \\cot 8^\\circ.$  Then\n\\[\\cot 4^\\circ - \\cot 8^\\circ = \\csc 8^\\circ = \\sec 82^\\circ,\\]so $n = \\boxed{82}.$"
+}

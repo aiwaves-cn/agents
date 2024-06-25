@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive multiples of 13 are three-digit integers?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We're looking for the number of positive multiples of 13 between 99 and 1000. $13 \\times 7 = 91 < 100 < 104 = 13 \\times 8$ and $13 \\times 76 = 988 < 1000 < 1001 = 13 \\times 77$, so the three-digit multiples of 13 are $$13\\times8,13\\times9,\\ldots,13\\times75,13\\times76.$$ The number of terms in this list is the same as the number of terms in the list $$8,9,\\ldots,75,76.$$ Subtracting $7$ from every term in the previous list, we get $$1,2,\\ldots,68,69.$$ Therefore, there are $\\boxed{69}$ positive multiples of 13 that are three-digit integers."
+}

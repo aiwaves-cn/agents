@@ -1,0 +1,6 @@
+{
+    "problem": "Let $(x_1,y_1),$ $(x_2,y_2),$ $\\dots,$ $(x_n,y_n)$ be the ordered pairs $(x,y)$ of real numbers such that $x+y=2$ and $x^5+y^5=82$.  Find\n\\[x_1^2 + y_1^2 + x_2^2 + y_2^2 + \\dots + x_n^2 + y_n^2.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x + y = 2,$ there exists a real number $t$ such that $x = 1 + t$ and $y = 1 - t.$  Then\n\\[(1 + t)^5 + (1 - t)^5 = 82.\\]This simplifies to $10t^4 + 20t^2 - 80 = 0.$  This equation factors as $10(t^2 - 2)(t^2 + 4) = 0,$ so $t = \\pm \\sqrt{2}.$\n\nHence, the solutions are $(1 + \\sqrt{2}, 1 - \\sqrt{2})$ and $(1 - \\sqrt{2}, 1 + \\sqrt{2}),$ and the final answer is\n\\[(1 + \\sqrt{2})^2 + (1 - \\sqrt{2})^2 + (1 - \\sqrt{2})^2 + (1 + \\sqrt{2})^2 = \\boxed{12}.\\]"
+}

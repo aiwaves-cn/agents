@@ -1,0 +1,6 @@
+{
+    "problem": "Engineers use the formula $L=\\frac{25T^4}{H^2}$ to find the crushing load for square pillars. If $T = 4$ and $H = 8$, what is the value of $L$?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Substitute 4 for $T$ and 8 for $H$ in the given expression, looking to cancel before simplifying the numerator or denominator: \\[\n\\frac{25(4)^4}{(8)^2}=\\frac{25\\cdot 2^8}{2^6}=25 \\cdot 2^2=\\boxed{100}.\n\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)$ is a polynomial of degree 4, and $g(x)$ is a polynomial of degree 2, then what is the degree of polynomial $f(x) - g(x)$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let $f(x) = a_4 x^4 + a_3 x^3 + a_2 x^2 + a_1 x + a_0$ and $g(x) = b_2 x^2 + b_1 x + b_0$.  Then \\begin{align*}\n&\\ \\ \\ \\ f(x) - g(x) \\\\&= (a_4 x^4 + a_3 x^3 + a_2 x^2 + a_1 x + a_0) - (b_2 x^2 + b_1 x + b_0) \\\\\n&= a_4 x^4 + a_3 x^3 + (a_2 - b_2) x^2 + (a_1 - b_1) x + (a_0 - b_0).\n\\end{align*}Thus, the degree of $f(x) - g(x)$ is $\\boxed{4}$."
+}

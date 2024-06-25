@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(n)$ return the number of distinct ordered pairs of positive integers $(a, b)$ such that for each ordered pair, $a^2 + b^2 = n$. Note that when $a \\neq b$, $(a, b)$ and $(b, a)$ are distinct. What is the smallest positive integer $n$ for which $f(n) = 3$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If $f(n) = 3$, this implies that $n = 2m^2$ for some positive integer $m$ since the only time $f(n)$ can be odd is when there is an ordered pair $(m, m)$ that cannot be reversed. We start testing values of $m$. The values $m = 1$, $m=2$, $m=3$, and $m=4$ do not give $f(n)=3$. However, when $m=5$, we get $50 = 5^2 + 5^2 = 1^2 + 7^2 = 7^2 + 1^2$. Therefore, the smallest integer $n$ for which $f(n)=3$ is $\\boxed{50}$."
+}

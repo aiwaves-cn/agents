@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be real numbers so that the roots of\n\\[z^2 + (10 + ai) z + (27 + bi) = 0\\]are complex conjugates.  Enter the ordered pair $(a,b).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Then both\n\\[z + \\overline{z} = (x + yi) + (x - yi) = 2x,\\]and\n\\[z \\overline{z} = (x + yi)(x - yi) = x^2 + y^2\\]are real numbers.  Therefore, by Vieta's formulas, all the coefficients must be real numbers.  Then $(a,b) = \\boxed{(0,0)}.$"
+}

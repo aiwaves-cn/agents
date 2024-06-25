@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ satisfies\n\\[f(x + y) = f(x) f(y)\\]for all real numbers $x$ and $y.$  If $f(2) = 3,$ find $f(6).$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Taking $x = 2$ and $y = 2,$ we get\n\\[f(4) = f(2) f(2) = 9.\\]Taking $x = 4$ and $y = 2,$ we get\n\\[f(6) = f(4) f(2) = \\boxed{27}.\\]"
+}

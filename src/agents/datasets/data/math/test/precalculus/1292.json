@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\sin^{-1} (\\sin 3) + \\sin^{-1} (\\sin 4) + \\sin^{-1} (\\sin 5).$  All functions are in radians.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $\\sin (\\pi - 3) = \\sin 3$ and $-\\frac{\\pi}{2} \\le \\pi - 3 \\le \\frac{\\pi}{2},$\n\\[\\sin^{-1} (\\sin 3) = \\pi - 3.\\]Since $\\sin (\\pi - 4) = \\sin 4$ and $-\\frac{\\pi}{2} \\le \\pi - 4 \\le \\frac{\\pi}{2},$\n\\[\\sin^{-1} (\\sin 4) = \\pi - 4.\\]Since $\\sin (5 - 2 \\pi) = \\sin 5$ and $-\\frac{\\pi}{2} \\le 5 - 2 \\pi \\le \\frac{\\pi}{2},$\n\\[\\sin^{-1} (\\sin 5) = 5 - 2 \\pi.\\]Therefore,\n\\[\\sin^{-1} (\\sin 3) + \\sin^{-1} (\\sin 4) + \\sin^{-1} (\\sin 5) = (\\pi - 3) + (\\pi - 4) + (5 - 2 \\pi) = \\boxed{-2}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "An ellipse has foci at $(0, 2)$ and $(3, 0)$. It has two $x$-intercepts, one of which is the origin. What is the other one? Enter your answer as an ordered pair.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The sum of the distances from $(0,0)$ to the two foci is $ 2 + 3 = 5.$ By the definition of an ellipse, the sum of the distances from any point on the ellipse to the two foci must also be $5.$ So, in particular, if $(x, 0)$ is the other $x$-intercept, the distance formula gives \\[|x-3| + \\sqrt{x^2+4} = 5.\\]Drawing out the ellipse, we see that $x>3,$ so we can drop the absolute values around $x-3.$ Then, solving for $x$, we have \\[\\begin{aligned} \\sqrt{x^2+4} &= 8-x \\\\ x^2+4 &= x^2-16x+64 \\\\ 16x &= 60, \\end{aligned}\\]so $x = \\tfrac{60}{16} = \\tfrac{15}{4}.$ Thus the answer is $\\boxed{\\left(\\tfrac{15}{4},0\\right)}.$"
+}

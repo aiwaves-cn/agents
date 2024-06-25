@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the smallest base-10 positive integer greater than 5 that is a palindrome when written in both base 2 and 4.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We start by testing palindromic sequences in base 4. Since the positive integer must be greater than 5, we start by analyzing $22_4$, which is $1010_2$. We then test $33_4$, which is $1111_2$. Converting to base 10, we have $33_4 = 3(4) + 3 = \\boxed{15}$."
+}

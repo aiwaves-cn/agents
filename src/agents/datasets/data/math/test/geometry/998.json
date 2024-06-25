@@ -1,0 +1,6 @@
+{
+    "problem": "If the degree measure of an arc of a circle is increased by $20\\%$ and the radius of the circle is increased by $25\\%$, by what percent does the length of the arc increase?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let the original measure of the arc be $x^\\circ$ and the original radius have length $r$, so the original arc has length \\[\\frac{x^\\circ}{360^\\circ}\\cdot 2\\pi r.\\]\n\nThe new measure of the arc is $\\frac{6}{5} x^\\circ$ and the new radius is $\\frac{5}{4}r$ so the new arc has length \\[\\frac{\\frac{6}{5} x^\\circ}{360^\\circ}\\cdot 2\\pi \\frac{5}{4}r = \\left(\\frac{6}{5}\\cdot \\frac{5}{4}\\right)\\left(\\frac{x^\\circ}{360^\\circ}\\cdot 2\\pi r\\right)= \\frac{6}{4}\\left(\\frac{x^\\circ}{360^\\circ}\\cdot 2\\pi r\\right),\\] which is $\\frac{6}{4}$ the length of the original arc.  Hence the arc length increases by $\\boxed{50}$ percent."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If the digits represented by $A$ and $B$ satisfy the following subtraction problem $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & & A & B_4\\\\ &- & & & B & A_4\\\\ \\cline{2-6} & & & & & 3_4\\\\ \\end{array} $$what is the nonnegative difference of the digits represented by $A$ and $B$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "In the subtraction problem, we can start by looking at the left column. The first possible case is that $A-B=0$, so that $A=B$. However, if $A=B$, that does not work in the right column, since $B-A$ would equal 0 and not 3. So, we have to go with the second possibility for the left column, in which the right column borrowed from the left column and we're left with $(A-1)-B=0$. This tells us that $A-1=B$, so the nonnegative difference of $A$ and $B$ is $\\boxed{1}$.\n\nNote that we are unable to solve for the actual digits $A$ and $B$ even if we consider the units digit. Now that we know the right column borrows from the left column, we get that $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & & 1 & B_4\\\\ &- & & & & A_4\\\\ \\cline{2-6} & & & & & 3_4.\\\\ \\end{array} $$This also means $A+3=1B_4=4+B$, which is the same as $A-1=B$. We can't solve for $A$ and $B$ because any digits that satisfy $A-1=B$ will work, such as $A=3, B=2$ or $A=2, B=1$."
+}

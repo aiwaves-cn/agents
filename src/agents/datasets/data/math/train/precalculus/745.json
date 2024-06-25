@@ -1,0 +1,6 @@
+{
+    "problem": "There exists a scalar $k$ such that for any vectors $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ such that $\\mathbf{a} + \\mathbf{b} + \\mathbf{c} = \\mathbf{0},$ the equation\n\\[k (\\mathbf{b} \\times \\mathbf{a}) + \\mathbf{b} \\times \\mathbf{c} + \\mathbf{c} \\times \\mathbf{a} = \\mathbf{0}\\]holds.  Find $k.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{a} + \\mathbf{b} + \\mathbf{c} = \\mathbf{0},$ $\\mathbf{c} = -\\mathbf{a} - \\mathbf{b}.$  Substituting, we get\n\\[k (\\mathbf{b} \\times \\mathbf{a}) + \\mathbf{b} \\times (-\\mathbf{a} - \\mathbf{b}) + (-\\mathbf{a} - \\mathbf{b}) \\times \\mathbf{a} = \\mathbf{0}.\\]Expanding, we get\n\\[k (\\mathbf{b} \\times \\mathbf{a}) - \\mathbf{b} \\times \\mathbf{a} - \\mathbf{b} \\times \\mathbf{b} - \\mathbf{a} \\times \\mathbf{a} - \\mathbf{b} \\times \\mathbf{a} = \\mathbf{0}.\\]Since $\\mathbf{a} \\times \\mathbf{a} = \\mathbf{b} \\times \\mathbf{b} = \\mathbf{0},$ this reduces to\n\\[(k - 2) (\\mathbf{b} \\times \\mathbf{a}) = \\mathbf{0}.\\]We must have $k = \\boxed{2}.$"
+}

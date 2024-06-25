@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A(-1, -2)$ and $B(3, 2)$ are the endpoints of a diameter of a circle graphed in a coordinate plane. How many square units are in the area of the circle? Express your answer in terms of $\\pi$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We must find the radius of the circle in order to find the area. We are told that points $A$ and $B$ are the endpoints of a diameter, so we use the distance formula to find the length of the diameter.\n\n\\begin{align*}\n\\sqrt{(-1-3)^2+(-2-2)^2} &= \\sqrt{16 + 16} \\\\\n&= 4\\sqrt{2}\n\\end{align*}Since the diameter has a length of $4\\sqrt{2}$, the radius must have length $2\\sqrt{2}$. Therefore, the answer is $(2\\sqrt{2})^2\\pi = \\boxed{8\\pi}$."
+}

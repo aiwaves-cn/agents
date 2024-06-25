@@ -1,0 +1,6 @@
+{
+    "problem": "Define $\\#N$ by the formula $\\#N = .5(N) + 1$. Calculate $\\#(\\#(\\#50))$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have  \\begin{align*}\n\\#(\\#(\\#50))&=\\#(\\#(.5(50)+1))=\\#(\\#(26))\\\\\n&=\\#(.5(26)+1)=\\#(14)=(.5(14)+1)=\\boxed{8}.\n\\end{align*}"
+}

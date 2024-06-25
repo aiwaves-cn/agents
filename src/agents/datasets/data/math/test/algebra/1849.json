@@ -1,0 +1,6 @@
+{
+    "problem": "Factor the following expression: $28z^{97}+7z^{96}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The greatest common factor of $28z^{97}$ and $7z^{96}$ is $7z^{96}$. We factor $7z^{96}$ out of both terms to get\\begin{align*}\n28z^{97}+7z^{96} &= 7z^{96}\\cdot 4z +7z^{96}\\cdot 1\\\\\n&= \\boxed{7z^{96}(4z+1)}.\n\\end{align*}"
+}

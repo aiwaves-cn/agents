@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the remainder when $$1+12+123+1234+12345+123456+1234567+12345678$$is divided by $5$.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If we look at the residues mod 5, we have  \\begin{align*}\n&1+12+123+1234+12345+123456+1234567+12345678\\\\\n&\\qquad\\equiv 1+2+3+4+0+1+2+3 \\\\ &\\qquad\\equiv 16 \\\\ &\\qquad\\equiv \\boxed{1} \\pmod{5}.\\end{align*}"
+}

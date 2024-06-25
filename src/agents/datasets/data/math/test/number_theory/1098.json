@@ -1,0 +1,6 @@
+{
+    "problem": "How many integers from $-100$ to $100$ are congruent to $3 \\pmod{11}?$",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "An integer congruent to $3 \\pmod{11}$ can be written as $11n+3$. Therefore, we have the inequality $$-100 \\le 11n+3 \\le 100$$We solve for the inequality by subtracting each term by $3$ and then dividing by $11$ to get  $$-103 \\le 11n \\le 97 \\rightarrow -\\frac{103}{11} \\le n \\le \\frac{97}{11}$$The smallest integer greater than $-\\frac{103}{11}$ is $-9$ and the largest integer less than $\\frac{97}{11}$ is $8$. There are $\\boxed{18 \\text{ integers}}$ from $-9$ to $8$."
+}

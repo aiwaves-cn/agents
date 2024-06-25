@@ -1,0 +1,6 @@
+{
+    "problem": "In an equation of the form $k = ax^2 + bx + c$ with $a > 0$, the least possible value of $k$ occurs at $x = -b/(2a)$. In the equation $k = (6x + 12)(x - 8)$, what is the least possible value for $k$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Suppose we consider the equation $y = (6x + 12)(x - 8)$, which is equivalent to $y = 6x^2 - 36x - 96$. Then the graph of this equation is a parabola opening upward, with a minimum at the vertex. The vertex of a quadratic equation is located at the point where $x = -b/(2a)$. (This is the first part of the quadratic formula.)\n\nIn this case, we have $x = -(-36)/(2 \\times 6) = 36/12 = 3$. The $y$-value at this point is $y = (6 \\times 3 + 12)(3 - 8) = (30)(-5) = \\boxed{-150}$, which is also our minimum value of $k$."
+}

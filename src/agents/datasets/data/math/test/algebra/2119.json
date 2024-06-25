@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $f(x)$ is a polynomial that has degree $6$ and $g(x)$ is a polynomial that has degree $3$. If $h(x)$ is also a polynomial such that $f(g(x)) + g(h(x)) + h(f(x))$ is a polynomial of degree $36$, then what is the degree of the polynomial $h$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Consider two arbitrary polynomials $p(x)$ and $q(x)$ with highest degree terms $x^n$ and $x^m$, respectively. Then $p(q(x)) = (q(x))^n + \\cdots = (x^m + \\cdots)^n + \\cdots = x^{mn} + \\cdots$ is a polynomial of degree $mn$. It follows that $f(g(x))$ is a polynomial of degree $18$. Then, either $g(h(x))$ or $h(f(x))$ must be a polynomial of degree $36$. This gives that the degree of $h(x)$ is either $12$ or $6$, but in the former case, the degree of $h(f(x))$ would be $72$. Thus, the degree of $h$ is $\\boxed{6}$."
+}

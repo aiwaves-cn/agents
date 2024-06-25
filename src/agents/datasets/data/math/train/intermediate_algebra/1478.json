@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be real numbers.  Consider the following five statements:\n\n$\\frac{1}{a} < \\frac{1}{b}$\n$a^2 > b^2$\n$a < b$\n$a < 0$\n$b < 0$\n\nWhat is the maximum number of these statements that can be true for any values of $a$ and $b$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Suppose $a < 0,$ $b < 0,$ and $a < b.$  Then\n\\[\\frac{1}{a} - \\frac{1}{b} = \\frac{b - a}{ab} > 0,\\]so $\\frac{1}{a} > \\frac{1}{b}.$  Thus, not all five statements can be true.\n\nIf we take $a = -2$ and $b = -1,$ then all the statements are true except the first statement.  Hence, the maximum number of statements that can be true is $\\boxed{4}.$"
+}

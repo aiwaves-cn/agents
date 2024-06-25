@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\mathbf{A}^{-1} = \\begin{pmatrix} 2 & 1 \\\\ 0 & -3 \\end{pmatrix}$ and $\\mathbf{B}^{-1} = \\begin{pmatrix} 0 & 5 \\\\ -1 & 1 \\end{pmatrix},$ then find the inverse of $\\mathbf{A} \\mathbf{B}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "In general, $(\\mathbf{A} \\mathbf{B})^{-1} = \\mathbf{B}^{-1} \\mathbf{A}^{-1}$ (not $\\mathbf{A}^{-1} \\mathbf{B}^{-1}$), which is\n\\[\\begin{pmatrix} 0 & 5 \\\\ -1 & 1 \\end{pmatrix} \\begin{pmatrix} 2 & 1 \\\\ 0 & -3 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 0 & -15 \\\\ -2 & -4 \\end{pmatrix}}.\\]"
+}

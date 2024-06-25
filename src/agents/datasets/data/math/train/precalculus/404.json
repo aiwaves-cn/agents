@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix that corresponds to projecting onto the vector $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the projection formula, the projection of $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ onto $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$ is\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}} \\begin{pmatrix} x \\\\ y \\end{pmatrix} &= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}}{\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}} \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} \\\\\n&= \\frac{2x - 3y}{13} \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} \\frac{4x - 6y}{13} \\\\ \\frac{-6x + 9y}{13} \\end{pmatrix}.\n\\end{align*}To find the matrix for the projection, we write this vector as the product of a matrix and the vector $\\begin{pmatrix} x \\\\y \\end{pmatrix}$:\n\\[\\begin{pmatrix} \\frac{4x - 6y}{13} \\\\ \\frac{-6x + 9y}{13} \\end{pmatrix} = \\begin{pmatrix} 4/13 & -6/13 \\\\ -6/13 & 9/13 \\end{pmatrix} \\begin{pmatrix} x \\\\y \\end{pmatrix}.\\]Thus, the matrix for this transformation is $\\boxed{\\begin{pmatrix} 4/13 & -6/13 \\\\ -6/13 & 9/13 \\end{pmatrix}}.$"
+}

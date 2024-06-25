@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be a cubic polynomial such that $p(2) = 0,$ $p(-1) = 0,$ $p(4) = 6,$ and $p(5) = 8.$  Find $p(7).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $p(2) = p(-1) = 0,$ $p(x)$ is of the form\n\\[p(x) = (ax + b)(x - 2)(x + 1)\\]for some constants $a$ and $b.$  Setting $x = 4$ and $x = 5,$ we get\n\\begin{align*}\n(4a + b)(2)(5) &= p(4) = 6, \\\\\n(5a + b)(3)(6) &= p(5) = 8,\n\\end{align*}so\n\\begin{align*}\n4a + b &= \\frac{3}{5}, \\\\\n5a + b &= \\frac{4}{9}.\n\\end{align*}Solving, we find $a = -\\frac{7}{45}$ and $b = \\frac{11}{9}.$  Hence,\n\\[p(x) = \\left( -\\frac{7}{45} x + \\frac{11}{9} \\right) (x - 2)(x + 1) = -\\frac{(7x - 55)(x - 2)(x + 1)}{45}.\\]Therefore,\n\\[p(7) = -\\frac{(49 - 55)(5)(8)}{45} = \\boxed{\\frac{16}{3}}.\\]"
+}

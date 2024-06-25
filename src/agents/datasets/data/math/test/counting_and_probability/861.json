@@ -1,0 +1,6 @@
+{
+    "problem": "3 cards are chosen at random from a standard 52-card deck.  What is the probability that they can be arranged into a group of three consecutive cards, all of the same suit? For this problem, an Ace can either come before a 2 or after a King, but not both (so A23 and QKA both count, but KA2 doesn't).",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{52}{3} = 22,\\!100$ ways to choose 3 cards out of 52, without regard to order. For any suit, there are 12 possible triples of consecutive cards (since the three consecutive cards can start on an A, 2, 3, ..., or Q, but not on a K). Since there are 4 suits, there are $4\\cdot12=48$ valid triples. The chance that three cards chosen randomly are three consecutive cards of the same suit is therefore $\\frac{48}{22,\\!100}=\\boxed{\\frac{12}{5,\\!525}}$"
+}

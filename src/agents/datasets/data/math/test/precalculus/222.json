@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{D}$ be a matrix representing a dilation with scale factor $k > 0,$ and let $\\mathbf{R}$ be a matrix representing a rotation about the origin by an angle of $\\theta$ counter-clockwise.  If\n\\[\\mathbf{D} \\mathbf{R} = \\begin{pmatrix} -7 & 1 \\\\ -1 & -7 \\end{pmatrix},\\]then find $k.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that $\\mathbf{D} = \\begin{pmatrix} k & 0 \\\\ 0 & k \\end{pmatrix}$ and $\\mathbf{R} = \\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix},$ so\n\\[\\mathbf{D} \\mathbf{R} = \\begin{pmatrix} k & 0 \\\\ 0 & k \\end{pmatrix} \\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix} = \\begin{pmatrix} k \\cos \\theta & -k \\sin \\theta \\\\ k \\sin \\theta & k \\cos \\theta \\end{pmatrix}.\\]Thus, $k \\cos \\theta = -7$ and $k \\sin \\theta = -1.$  Then\n\\[k^2 \\cos^2 \\theta + k^2 \\sin^2 \\theta = 49 + 1 = 50,\\]which simplifies to $k^2 = 50.$  Since $k > 0,$ $k = \\sqrt{50} = \\boxed{5 \\sqrt{2}}.$"
+}

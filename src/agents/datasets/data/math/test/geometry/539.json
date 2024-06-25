@@ -1,0 +1,6 @@
+{
+    "problem": "Square $ABCD$ and equilateral triangle $AED$ are coplanar and share $\\overline{AD}$, as shown. What is the measure, in degrees, of angle $BAE$? [asy] size(3cm);\npair A,B,C,D,E;\nA = (0,0);\nB = (0,1);\nC = (1,1);\nD = (1,0);\nE = dir(60);\ndraw(A--B--C--D--E--A--D);\nlabel(\"$A$\",A,dir(180));\nlabel(\"$B$\",B,dir(180));\nlabel(\"$C$\",C,dir(0));\nlabel(\"$D$\",D,dir(0));\nlabel(\"$E$\",E,dir(0));\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "The angles in a triangle sum to 180 degrees, so the measure of each angle of an equilateral triangle is 60 degrees.  Therefore, the measure of angle $EAD$ is 60 degrees.  Also, angle $BAD$ measures 90 degrees.  Therefore, the measure of angle $BAE$ is $90^\\circ-60^\\circ=\\boxed{30}$ degrees."
+}

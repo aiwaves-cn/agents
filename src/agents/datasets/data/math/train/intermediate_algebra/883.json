@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be complex numbers such that\n\\[a + b + c = ab + ac + bc = abc = 1.\\]Enter the values $a,$ $b,$ $c,$ separated by commas, in any order.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, $a,$ $b,$ and $c$ are the roots of\n\\[x^3 - x^2 + x - 1 = 0.\\]We can write this as $x^2 (x - 1) + (x - 1) = 0,$ or $(x - 1)(x^2 + 1) = 0.$  The roots are $\\boxed{1,i,-i}.$"
+}

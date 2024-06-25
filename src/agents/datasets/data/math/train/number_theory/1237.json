@@ -1,0 +1,6 @@
+{
+    "problem": "For all positive integers $n$, the $n$th triangular number $T_n$ is defined as $T_n = 1+2+3+ \\cdots + n$. What is the greatest possible value of the greatest common divisor of $4T_n$ and $n-1$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "By the arithmetic series formula, $T_n = \\frac{n(n+1)}{2}$, so $4T_n = 2n(n+1) = 2n^2 + 2n$. By the Euclidean algorithm, \\begin{align*}\\text{gcd}\\,(2n^2 + 2n, n-1) &= \\text{gcd}\\,(2n^2 + 2n - (n-1) \\times 2n, n-1) \\\\ &= \\text{gcd}\\,(4n, n - 1) \\\\ &= \\text{gcd}\\,(4n - 4(n-1) , n-1) \\\\ &= \\text{gcd}\\,(4, n -1) \\le \\boxed{4}.\\end{align*} For example, this is true for $n = 5$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many nonnegative integers can be written in the form\\[a_7\\cdot3^7+a_6\\cdot3^6+a_5\\cdot3^5+a_4\\cdot3^4+a_3\\cdot3^3+a_2\\cdot3^2+a_1\\cdot3^1+a_0\\cdot3^0,\\]where $a_i\\in \\{-1,0,1\\}$ for $0\\le i \\le 7$?\n$\\textbf{(A) } 512 \\qquad  \\textbf{(B) } 729 \\qquad  \\textbf{(C) } 1094 \\qquad  \\textbf{(D) } 3281 \\qquad  \\textbf{(E) } 59,048$\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "This looks like balanced ternary, in which all the integers with absolute values less than $\\frac{3^n}{2}$ are represented in $n$ digits. There are 8 digits. Plugging in 8 into the formula for the balanced ternary gives a maximum bound of $|x|=3280.5$, which means there are 3280 positive integers, 0, and 3280 negative integers. Since we want all nonnegative integers, there are $3280+1=\\boxed{3281}$."
+}

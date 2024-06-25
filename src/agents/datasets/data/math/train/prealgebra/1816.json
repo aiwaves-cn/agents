@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $(4+8)^2+(4^2+8^2)$.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Following the order of operations (compute the sum in $(4+8)^2$ before applying the exponent of $(4+8)^2$), we have \\begin{align*}\n(4+8)^2 + (4^2 + 8^2) &= (12)^2 + (4^2 + 8^2)\\\\\n&= 144 + (16+64) \\\\\n&= 144+ 80 \\\\\n&= \\boxed{224}.\\end{align*}"
+}

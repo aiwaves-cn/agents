@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure below, isosceles $\\triangle ABC$ with base $\\overline{AB}$ has altitude $CH = 24$ cm. $DE = GF$, $HF = 12$ cm, and $FB = 6$ cm. What is the number of square centimeters in the area of pentagon $CDEFG$? [asy]\nimport olympiad; import geometry; size(200); defaultpen(linewidth(0.8));\npair A = (-18,0), B = (18,0), C = (0,24), D = (-12,8), E = (-12,0), F = (12,0), G = (12,8), H = (0,0);\ndraw(A--C--B--cycle);\ndraw(D--E);\ndraw(G--F);\ndraw(C--H);\ndraw(rightanglemark(D,E,F,30));\ndraw(rightanglemark(C,H,F,30));\ndraw(rightanglemark(G,F,B,30));\nlabel(\"$A$\",A,W); label(\"$B$\",B,dir(0)); label(\"$C$\",C,N); label(\"$D$\",D,NW); label(\"$E$\",E,S); label(\"$F$\",F,S); label(\"$G$\",G,NE); label(\"$H$\",H,S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Triangles $CHB$ and $GFB$ are similar, so we have $\\frac{GF}{FB}=\\frac{CH}{HB}$. Since $HB = HF + FB = 18$, we see that $GF=8$.  Therefore, the total area of triangles $DEA$ and $GFB$ combined is $2\\cdot\\frac{1}{2}(6)(8)=48$ square centimeters.  The area of triangle $ABC$ is \\[\\frac{1}{2}(AB)(CH)=\\frac{1}{2}(36)(24)=432\\] square centimeters.  The area of the pentagon is the difference between these two areas, $432-48=\\boxed{384}$ square centimeters."
+}

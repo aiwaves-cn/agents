@@ -1,0 +1,6 @@
+{
+    "problem": "When the diameter of a pizza increases by 2 inches, the area increases by $44\\%$. What was the area, in square inches, of the original pizza? Express your answer in terms of $\\pi$.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let $r$ be the original radius of the pizza. If the diameter increases by 2 inches, then the radius increases by 1 inch. We can calculate $A_{original}=\\pi r^2$ and $A_{final}=\\pi (r+1)^2$. Using the information given in the problem, $A_{final}=A_{original} \\cdot 1.44$. Substituting, we get \\begin{align*}\n1.44\\pi r^2 &= \\pi (r+1)^2 \\\\\n&=\\pi (r^2+2r+1) \\\\\n1.44r^2&=r^2+2r+1 \\\\\n.44r^2-2r-1&=0 \\\\\n25(.44r^2-2r-1)&=25(0) \\\\\n11r^2-50r-25&=0 \\\\\n(r-5)(11r+5)&=0 \\\\\nr&=5,-\\frac{5}{11}.\n\\end{align*}$r$ cannot be negative, so $r=5$. This means the area of the original circle is $\\pi \\cdot 5^2=\\boxed{25\\pi}$."
+}

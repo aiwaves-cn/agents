@@ -1,0 +1,6 @@
+{
+    "problem": "A triangular region is bounded by the two coordinate axes and the line given by the equation $2x + y = 6$. What is the area of the region, in square units?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "To start, use the equation to solve for the $x$ and $y$ intercepts of the line.  Letting $x$ equal 0, the $y$-intercept is 6.  Letting $y$ equal 0, we find that $2x=6$ so the $x$-intercept is 3.  Using the intercepts, we can graph the line as shown: [asy]size(100,0);\nfill((0,0)--(0,6)--(3,0)--cycle,gray(.7));\nadd(grid(5,8));\ndraw((0,0)--(5,0),linewidth(2));\ndraw((0,0)--(0,8),linewidth(2));\nlabel(\"\",(5,0),E);\nlabel(\"\",(0,8),N);\ndraw((0,6)--(3,0),blue,Arrows);[/asy] We wish to find the area of the shaded region.  This is a right triangle with one base of length 3, and one of length 6.  Therefore, the area is equal to $\\frac{1}{2}\\cdot 3\\cdot 6=\\boxed{9}$."
+}

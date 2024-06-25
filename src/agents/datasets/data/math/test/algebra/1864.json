@@ -1,0 +1,6 @@
+{
+    "problem": "Expand $((2x^2+3x+3)-(x^2+6x-6))(x+3)$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have that\n\\begin{align*} &((2x^2+3x+3)-(x^2+6x-6))(x+3)\\\\ &\\qquad= (x^2-3x+9)(x+3) \\\\ &\\qquad= x(x^2-3x+9) + 3(x^2-3x+9) \\\\ &\\qquad= x^3 -3x^2 +9x +3x^2 -9x +27 \\\\ &\\qquad= \\boxed{x^3+27}. \\end{align*}"
+}

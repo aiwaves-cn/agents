@@ -1,0 +1,6 @@
+{
+    "problem": "Regions I, II and III are bounded by squares. The perimeter of region I is 12 units and the perimeter of region II is 24 units. What is the ratio of the area of region I to the area of region III? Express your answer as a common fraction.\n\n[asy]\ndraw((0,0)--(9,0)--(9,9)--(0,9)--(0,0)--cycle,linewidth(2));\ndraw((9,0)--(15,0)--(15,6)--(9,6)--(9,0)--cycle,linewidth(2));\ndraw((9,6)--(12,6)--(12,9)--(9,9)--cycle,linewidth(2));\nlabel(\"III\",(4.5,4.5));\nlabel(\"II\",(12,3));\nlabel(\"I\",(10.5,7.5));\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "A side of square I has length 3, while a side of square II has length 6 (all sides have equal length).  Therefore, a side of square III has length 9.  Since the side length of square I is $\\frac{1}{3}$ that of square III, and the ratio of their areas is the square of the ratio of their side lengths, the ratio of the area of square I to square III is $\\left(\\frac{1}{3}\\right)^2 = \\frac{1}{9}$.   Alternately, you can just calculate the areas: square I has an area of 9, square III has an area of 81, thus, the ratio of their areas is $\\boxed{\\frac{1}{9}}$"
+}

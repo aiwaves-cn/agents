@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $xyz = 2.$  Find the minimum value of\n\\[x^4 + 4y^2 + 4z^4.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\begin{align*}\nx^4 + 4y^2 + 4z^4 &= x^4 + 2y^2 + 2y^2 + 4z^4 \\\\\n&\\ge 4 \\sqrt[4]{(x^4)(2y^2)(2y^2)(4z^4)} \\\\\n&= 8xyz \\\\\n&= 16.\n\\end{align*}Equality occurs when $x^4 = 2y^2 = 4z^2.$  Using the condition $xyz = 2,$ we can solve to get $x = y = \\sqrt{2}$ and $z = 1,$ so the minimum value is $\\boxed{16}.$"
+}

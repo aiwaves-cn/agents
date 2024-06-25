@@ -1,0 +1,6 @@
+{
+    "problem": "In a right triangle with integer length sides, the hypotenuse has length 39 units. How many units is the length of the shorter leg?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since they only ask for one length, you can assume that there's only one possible triangle.  Then, quickly note that $39 = 3\\cdot 13$, and that 5 - 12 - 13 is a Pythagorean triple.  Therefore, the shorter leg has length $\\boxed{15}$."
+}

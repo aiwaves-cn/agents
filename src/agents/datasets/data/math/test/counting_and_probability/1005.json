@@ -1,0 +1,6 @@
+{
+    "problem": "Amy's grandmother gave her 3 identical chocolate chip cookies and 4 identical sugar cookies.  In how many different orders can Amy eat the cookies such that either she eats a chocolate chip cookie first, she eats a chocolate chip cookie last, or both?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We can solve this using complementary counting by finding the number of ways Amy can eat the cookies without eating a chocolate chip cookie first or last, and subtracting that value from the total number of ways Amy can eat the cookies. Since all the chocolate cookies are identical and all the sugar cookies are identical, there are $$\\dbinom{7}{3} = \\frac{7!}{3!4!}=35$$total ways for Amy to eat the cookies. If Amy doesn't eat a chocolate chip cookie first or last, there are $$\\dbinom{5}{3} = \\frac{5!}{3!2!}=10$$ways for her to eat the cookies. So, there are $35-10=\\boxed{25}$ ways in which Amy can eat the cookies such that either she eats a chocolate chip cookie first, she eats a chocolate chip cookie last, or both."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A cube 4 units on each side is composed of 64 unit cubes. Two faces of the larger cube that share an edge are painted blue, and the cube is disassembled into 64 unit cubes. Two of the unit cubes are selected uniformly at random. What is the probability that one of two selected unit cubes will have exactly two painted faces while the other unit cube has no painted faces?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 4 cubes with 2 painted faces, 24 with 1, and 36 with none. There are $\\binom{64}{2} = \\frac{64\\cdot 63}{2 \\cdot 1} = 2016$ ways to choose two cubes.  There are 4 ways to choose a cube painted on exactly two sides, and 36 ways to choose one that is not painted at all, for a total of $4\\cdot 36=144$ successful outcomes. Therefore, the desired probability is $\\frac{144}{2016} = \\frac{36}{504} = \\frac{9}{126} = \\boxed{\\frac{1}{14}}$."
+}

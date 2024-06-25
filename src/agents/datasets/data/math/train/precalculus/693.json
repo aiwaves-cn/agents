@@ -1,0 +1,6 @@
+{
+    "problem": "If $x + \\frac{1}{x} = \\sqrt{3}$, then find $x^{18}$.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Solution 1: We can rewrite the given equation as $x^2 - \\sqrt{3} x + 1 = 0$, so by the quadratic formula,\n\\[x = \\frac{\\sqrt{3} \\pm \\sqrt{3 - 4}}{2} = \\frac{\\sqrt{3} \\pm i}{2},\\]which means $x = e^{\\pi i/6}$ or $x = e^{11 \\pi i/6}$.\n\nIf $x = e^{\\pi i/6}$, then\n\\[x^{18} = e^{3 \\pi i} = -1,\\]and if $x = e^{11 \\pi i/6}$, then\n\\[x^{18} = e^{33 \\pi i} = -1.\\]In either case, $x^{18} = \\boxed{-1}$.\n\nSolution 2: Squaring the given equation, we get\n\\[x^2 + 2 + \\frac{1}{x^2} = 3,\\]which simplifies to $x^4 - x^2 + 1 = 0$.  Then $(x^2 + 1)(x^4 - x^2 + 1) = 0$, which expands as $x^6 + 1 = 0$.  Therefore, $x^6 = -1$, so $x^{18} = (x^6)^3 = (-1)^3 = \\boxed{-1}$."
+}

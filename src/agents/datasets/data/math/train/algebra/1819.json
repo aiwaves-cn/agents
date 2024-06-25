@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct ordered pairs of positive integers $(m,n)$ are there so that the sum of the reciprocals of $m$ and $n$ is $\\frac14$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "As an equation, $\\frac 1m + \\frac 1n = \\frac 14$. Multiplying both sides by $4mn$ to clear out the denominators gives $4n + 4m = mn$. Re-arranging and applying Simon's Favorite Factoring Trick, it follows that  $$mn - 4m - 4n + 16 = (m-4)(n-4) = 16.$$Thus, $m-4$ and $n-4$ are pairs of factors of $16$; to satisfy the positive condition, both factors must also be positive. Then, $$(m-4,n-4) = (1,16),(2,8),(4,4),(8,2),(16,1),$$yielding $\\boxed{5}$ distinct ordered pairs."
+}

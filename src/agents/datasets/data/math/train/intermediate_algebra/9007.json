@@ -1,0 +1,6 @@
+{
+    "problem": "If $p, q,$ and $r$ are three non-zero integers such that $p + q + r = 26$ and\\[\\frac{1}{p} + \\frac{1}{q} + \\frac{1}{r} + \\frac{360}{pqr} = 1,\\] compute $pqr$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "\\begin{align*} \\frac {1}{p} + \\frac {1}{q} + \\frac {1}{r} + \\frac {360}{pqr} & = 1 \\\\ pq + pr + qr + 360 & =  pqr \\\\ 360 & =  pqr - pq - pr - qr \\\\  & =  (p - 1)(q - 1)(r - 1) - (p + q + r) + 1 \\\\  & =  (p - 1)(q - 1)(r - 1) - 25 \\\\ 385 & =  (p - 1)(q - 1)(r - 1) \\\\ \\end{align*}\nFrom here, you can factor $385$ as $5 \\cdot 7 \\cdot 11$, giving corresponding values of $6, 8,$ and $12$. The answer is $6 \\cdot 8 \\cdot 12=\\boxed{576}$."
+}

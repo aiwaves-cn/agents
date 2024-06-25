@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive multiple of $23$ that is $4$ more than a multiple of $89$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $23a$ be the multiple we seek. Thus $$23a\\equiv 4\\pmod{89}.$$ Multiplying both sides of this equation by $4$, then reducing modulo $89$, gives: \\begin{align*}\n92a &\\equiv 16 \\pmod{89} \\\\\n3a &\\equiv 16 \\pmod{89}\n\\end{align*} Multiplying both sides by $30$, then reducing again, gives: \\begin{align*}\n90a &\\equiv 480 \\pmod{89} \\\\\na &\\equiv 480-445 = 35 \\pmod{89}\n\\end{align*} All of these steps are reversible, so $35$ is the unique solution $\\pmod{89}$ to the original congruence. The smallest positive solution is $a=35$, giving $23a=\\boxed{805}$. (Indeed, we can check that $805 = 9\\cdot 89 + 4$.)"
+}

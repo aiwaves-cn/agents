@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[x + \\sqrt{x^2 - 1} + \\frac{1}{x - \\sqrt{x^2 - 1}} = 20,\\]then find\n\\[x^2 + \\sqrt{x^4 - 1} + \\frac{1}{x^2 + \\sqrt{x^4 - 1}}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Rationalizing the denominator, we get\n\\[\\frac{1}{x - \\sqrt{x^2 - 1}} = \\frac{x + \\sqrt{x^2 - 1}}{(x - \\sqrt{x^2 - 1})(x + \\sqrt{x^2 - 1})} = \\frac{x + \\sqrt{x^2 - 1}}{x^2 - (x^2 - 1)} = x + \\sqrt{x^2 - 1}.\\]Thus, $2x + 2 \\sqrt{x^2 - 1} = 20,$ so $x + \\sqrt{x^2 - 1} = 10.$  Then $\\sqrt{x^2 - 1} = 10 - x.$  Squaring both sides, we get\n\\[x^2 - 1 = 100 - 20x + x^2.\\]Hence, $x = \\frac{101}{20}.$\n\nSimilarly,\n\\[\\frac{1}{x^2 + \\sqrt{x^4 - 1}} = \\frac{x^2 - \\sqrt{x^4 - 1}}{(x^2 + \\sqrt{x^4 - 1})(x^2 - \\sqrt{x^4 - 1})} = \\frac{x^2 - \\sqrt{x^4 - 1}}{x^4 - (x^4 - 1)} = x^2 - \\sqrt{x^4 - 1},\\]so\n\\[x^2 + \\sqrt{x^4 - 1} + \\frac{1}{x^2 + \\sqrt{x^4 - 1}} = 2x^2 = \\boxed{\\frac{10201}{200}}.\\]"
+}

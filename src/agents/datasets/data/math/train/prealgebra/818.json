@@ -1,0 +1,6 @@
+{
+    "problem": "How many even numbers are greater than 202 and less than 405?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The first even integer that is greater than $202$ is $204$, and the last even integer that is less than $405$ is $404$. So, the even numbers we must count are \\[2\\cdot 102, 2\\cdot 103, 2\\cdot 104, \\ldots, 2\\cdot 202.\\]  Counting the numbers in this list is the same as counting the numbers in the list \\[102, 103, 104, \\ldots, 202.\\] Subtracting 101 from each gives  \\[1, 2, 3, \\ldots, 101,\\] so there are $\\boxed{101}$ numbers."
+}

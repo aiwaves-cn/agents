@@ -1,0 +1,6 @@
+{
+    "problem": "If $n$ is the smallest positive integer for which there exist positive real numbers $a$ and $b$ such that\n\\[(a + bi)^n = (a - bi)^n,\\]compute $\\frac{b}{a}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We start with small cases.  For $n = 1,$ the equation becomes\n\\[a + bi = a - bi,\\]so $2bi = 0,$ which means $b = 0.$  This is not possible, because $b$ is positive.\n\nFor $n = 2,$ the equation becomes\n\\[a^2 + 2abi - b^2 = a^2 - 2abi - b^2 = 0,\\]so $4abi = 0,$ which means $ab = 0.$  Again, this is not possible, because both $a$ and $b$ are positive.\n\nFor $n = 3,$ the equation becomes\n\\[a^3 + 3a^2 bi + 3ab^2 i^2 + b^3 i^3 = a^3 - 3a^2 bi + 3ab^2 i^2 - b^3 i^3,\\]so $6a^2 bi + 2b^3 i^3 = 0,$ or $6a^2 bi - 2b^3 i = 0.$  Then\n\\[2bi (3a^2 - b^2) = 0.\\]Since $b$ is positive, $3a^2 = b^2.$  Then $a \\sqrt{3} = b,$ so $\\frac{b}{a} = \\boxed{\\sqrt{3}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\begin{pmatrix} \\sqrt{3} & -1 \\\\ 1 & \\sqrt{3} \\end{pmatrix}^6.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We see that\n\\[\\begin{pmatrix} \\sqrt{3} & -1 \\\\ 1 & \\sqrt{3} \\end{pmatrix} = 2 \\begin{pmatrix} \\sqrt{3}/2 & -1/2 \\\\ 1/2 & \\sqrt{3}/2 \\end{pmatrix} = 2 \\begin{pmatrix} \\cos \\frac{\\pi}{6} & -\\sin \\frac{\\pi}{6} \\\\ \\sin \\frac{\\pi}{6} & \\cos \\frac{\\pi}{6} \\end{pmatrix}.\\]Note that $\\begin{pmatrix} \\cos \\frac{\\pi}{6} & -\\sin \\frac{\\pi}{6} \\\\ \\sin \\frac{\\pi}{6} & \\cos \\frac{\\pi}{6} \\end{pmatrix}$ corresponds to a rotation of $\\frac{\\pi}{6}$ around the origin.\n\nIn general, for a rotation matrix,\n$$\n\\begin{pmatrix}\n\\cos\\theta & -\\sin\\theta\\\\\n\\sin\\theta & \\cos\\theta\n\\end{pmatrix}^k = \\begin{pmatrix} \\cos k\\theta & -\\sin k\\theta \\\\\n\\sin k\\theta & \\cos k\\theta\n\\end{pmatrix}.\n$$Hence,\n$$\n\\begin{pmatrix} \\sqrt{3} & -1 \\\\ 1 & \\sqrt{3} \\end{pmatrix}^6 = 2^6 \\begin{pmatrix} \\cos \\frac{\\pi}{6} & -\\sin \\frac{\\pi}{6} \\\\ \\sin \\frac{\\pi}{6} & \\cos \\frac{\\pi}{6} \\end{pmatrix}^6 = 2^6 \\begin{pmatrix} \\cos {\\pi} & -\\sin {\\pi} \\\\ \\sin {\\pi} & \\cos {\\pi}\\end{pmatrix} = \\boxed{ \\begin{pmatrix} -64 & 0 \\\\ 0 & -64 \\end{pmatrix} }.\n$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common divisor of $10! + 2$ and $11! + 8$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let $m = 10! + 2$ and $n = 11! + 8$. Then, $n - 11m = (11! + 8) - 11(10! + 2) = 8 - 22 = -14$. By the Euclidean algorithm, $$\\text{gcd}\\,(m,n) = \\text{gcd}\\,(m,n-11m) = \\text{gcd}\\,(m,-14).$$Since $7$ divides $10!$, it follows that $7$ does not divide $10! + 2$. However, $10! + 2$ is even, so it follows that $\\text{gcd}\\,(m,14) = \\boxed{2}$."
+}

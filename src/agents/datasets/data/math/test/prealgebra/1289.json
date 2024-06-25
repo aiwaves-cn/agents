@@ -1,0 +1,6 @@
+{
+    "problem": "Squares are constructed on each of the sides of triangle $\\triangle ABC$, as shown.  If the perimeter of $\\triangle ABC$ is 17, then what is the perimeter of the nine-sided figure that is composed of the remaining three sides of each of the squares? [asy]\nimport olympiad; size(150); defaultpen(linewidth(0.8)); dotfactor=4;\npicture a;\ndraw(a,(0,0)--(3,0)--(0,4)--cycle);\nlabel(\"$A$\",(-2.1,-2.2),SW);\nlabel(\"$B$\",(3.1,-2.2),SE);\nlabel(\"$C$\",(0.05,0.3),N);\ndraw(a,(3,0)--(3,-3)--(0,-3)--(0,0));\ndraw(a,(0,0)--(-4,0)--(-4,4)--(0,4));\ndraw(a,shift(-2.4,2.2)*rotate(90 - aTan(4/3))*((3,0)--(8,0)--(8,-5)--(3,-5)));\nadd(currentpicture,rotate(-130)*a);\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Since all sides of a square have the same length, the perimeter of the nine-sided figure is equal to \\[ AB + AB + AB + AC + AC + AC + BC + BC + BC. \\]But we know that $AB+AC+BC=17$, the perimeter of $\\triangle ABC$.  Therefore the perimeter of the nine-sided figure is $3(17)=\\boxed{51}$."
+}

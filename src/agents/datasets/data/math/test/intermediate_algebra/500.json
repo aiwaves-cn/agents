@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of ordered triples $(a,b,c)$ of integers with $1 \\le a,$ $b,$ $c \\le 100$ and\n\\[a^2 b + b^2 c + c^2 a = ab^2 + bc^2 + ca^2.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The equation $a^2 b + b^2 c + c^2 a - ab^2 - bc^2 - ca^2 = 0$ factors as\n\\[(a - b)(b - c)(c - a) = 0.\\]So, we want at least two of $a,$ $b,$ $c$ to be equal.\n\nThere are $100 \\cdot 99 = 9900$ triples $(a,b,c)$ where $a = b,$ and $c$ is different from both $a$ and $b.$  Similarly, there are 9900 triples where $a = c,$ and $b$ is different from both $a$ and $c,$ and 9900 triples where $b = c,$ and $a$ is different from both $b$ and $c,$  Finally, there are 100 triples of the form $(a,a,a),$ so the total number of such triples is $3 \\cdot 9900 + 100 = \\boxed{29800}.$"
+}

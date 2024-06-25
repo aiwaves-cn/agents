@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $\\log_{10} \\sin x + \\log_{10} \\cos x = -1$ and that $\\log_{10} (\\sin x + \\cos x) = \\frac{1}{2} (\\log_{10} n - 1),$ find $n.$\n",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Using the properties of logarithms, we can simplify the first equation to $\\log_{10} \\sin x + \\log_{10} \\cos x = \\log_{10}(\\sin x \\cos x) = -1$. Therefore,\\[\\sin x \\cos x = \\frac{1}{10}.\\qquad (*)\\]\nNow, manipulate the second equation.\\begin{align*} \\log_{10} (\\sin x + \\cos x) &= \\frac{1}{2}(\\log_{10} n - \\log_{10} 10) \\\\ \\log_{10} (\\sin x + \\cos x) &= \\left(\\log_{10} \\sqrt{\\frac{n}{10}}\\right) \\\\ \\sin x + \\cos x &= \\sqrt{\\frac{n}{10}} \\\\ (\\sin x + \\cos x)^{2} &= \\left(\\sqrt{\\frac{n}{10}}\\right)^2 \\\\ \\sin^2 x + \\cos^2 x +2 \\sin x \\cos x &= \\frac{n}{10} \\\\ \\end{align*}\nBy the Pythagorean identities, $\\sin ^2 x + \\cos ^2 x = 1$, and we can substitute the value for $\\sin x \\cos x$ from $(*)$. $1 + 2\\left(\\frac{1}{10}\\right) = \\frac{n}{10} \\Longrightarrow n = \\boxed{12}$."
+}

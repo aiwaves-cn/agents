@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle{XYZ}$, $\\angle{Z}=90^{\\circ}$, $\\cos{Y}=\\frac{7}{25}$, and $XY=25$.  What is $\\tan{X}$?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $\\angle{Z}$ is the right angle, our triangle is shown below:\n\n[asy]\ndraw((0,0)--(7,0)--(7,24)--cycle,black+linewidth(1));\ndraw(rightanglemark((0,0),(7,0),(7,24),30),black+linewidth(1));\nlabel(\"$X$\",(7,24),E);\nlabel(\"$Y$\",(0,0),W);\nlabel(\"$Z$\",(7,0),E);\nlabel(\"25\",(0,0)--(7,24),NW);\n[/asy]\n\nSince $\\cos{Y}=\\frac{7}{25}$, we have $\\cos{Y}=\\frac{YZ}{XY}=\\frac{YZ}{25}=\\frac{7}{25}$.  From this, we can see that $YZ=25\\cdot\\frac{7}{25}=7$.  Then, from the Pythagorean Theorem, $XZ=\\sqrt{XY^2-YZ^2}=\\sqrt{25^2-7^2}=\\sqrt{576}=24$.  Finally, we have $\\tan{X}=\\frac{YZ}{XZ}=\\boxed{\\frac{7}{24}}$."
+}

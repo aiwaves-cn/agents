@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\sum_{n = 1}^{9999} \\frac{1}{(\\sqrt{n} + \\sqrt{n + 1})(\\sqrt[4]{n} + \\sqrt[4]{n + 1})}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $\\alpha = \\sqrt[4]{n + 1}$ and $\\beta = \\sqrt[4]{n}.$  Then\n\\begin{align*}\n\\frac{1}{(\\sqrt{n} + \\sqrt{n + 1})(\\sqrt[4]{n} + \\sqrt[4]{n + 1})} &= \\frac{1}{(\\alpha^2 + \\beta^2)(\\alpha + \\beta)} \\\\\n&= \\frac{\\alpha - \\beta}{(\\alpha^2 + \\beta^2)(\\alpha + \\beta)(\\alpha - \\beta)} \\\\\n&= \\frac{\\alpha - \\beta}{(\\alpha^2 + \\beta^2)(\\alpha^2 - \\beta^2)} \\\\\n&= \\frac{\\alpha - \\beta}{\\alpha^4 - \\beta^4} \\\\\n&= \\frac{\\alpha - \\beta}{(n + 1) - n} \\\\\n&= \\alpha - \\beta \\\\\n&= \\sqrt[4]{n + 1} - \\sqrt[4]{n}.\n\\end{align*}Hence,\n\\begin{align*}\n\\sum_{n = 1}^{9999} \\frac{1}{(\\sqrt{n} + \\sqrt{n + 1})(\\sqrt[4]{n} + \\sqrt[4]{n + 1})} &= (\\sqrt[4]{2} - \\sqrt[4]{1}) + (\\sqrt[4]{3} - \\sqrt[4]{2}) + \\dots + (\\sqrt[4]{10000} - \\sqrt[4]{9999}) \\\\\n&= \\sqrt[4]{10000} - \\sqrt[4]{1} = \\boxed{9}.\n\\end{align*}"
+}

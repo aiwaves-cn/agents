@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $173\\cdot 927\\equiv n\\pmod{50}$, where $0\\le n< 50$.\n\nWhat is the value of $n$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Note that $173 \\equiv 23\\pmod{50}$ and $927\\equiv 27\\pmod{50}$. Therefore, \\begin{align*}\n173\\cdot 927 &\\equiv 23\\cdot 27 \\\\\n&= 621 \\\\\n&\\equiv \\boxed{21}\\quad\\pmod{50}.\n\\end{align*}"
+}

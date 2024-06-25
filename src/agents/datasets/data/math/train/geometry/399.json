@@ -1,0 +1,6 @@
+{
+    "problem": "The surface area of a sphere with radius $r$ is $4\\pi r^2$. Including the area of its circular base, what is the total surface area of a hemisphere with radius 6 cm? Express your answer in terms of $\\pi$.\n\n[asy]\n\nimport markers;\nsize(150);\nimport geometry;\ndraw((0,-7)--(0,-1),Arrow);\ndraw((10,10)--(5,5),Arrow);\nlabel(\"half of sphere\",(10,10),N);\nlabel(\"circular base\",(0,-7),S);\n\ndraw(scale(1,.2)*arc((0,0),10,0,180),dashed);\ndraw(scale(1,.2)*arc((0,0),10,180,360));\ndraw(Arc((0,0),10,0,180));\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The base of the hemisphere is a circle with radius 6 and area $6^2\\pi=36\\pi$.  The curved top of the hemisphere has half the surface area of a full sphere, which has surface area $4\\pi(6^2)=144\\pi$, so the curved top of the hemisphere has $144\\pi/2=72\\pi$.  The total surface area of the hemisphere is $36\\pi+72\\pi=\\boxed{108\\pi}$."
+}

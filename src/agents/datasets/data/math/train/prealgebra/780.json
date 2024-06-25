@@ -1,0 +1,6 @@
+{
+    "problem": "A square 10cm on each side has four quarter circles drawn with centers at the four corners. How many square centimeters are in the area of the shaded region? Express your answer in terms of $\\pi$.\n\n[asy]\nunitsize (1.5 cm);\n\ndraw((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle);\nfilldraw(arc((1,1),1,270,180)--arc((-1,1),1,360,270)--arc((-1,-1),1,90,0)--arc((1,-1),1,180,90)--cycle,gray);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We first notice that the area of the shaded region is the area of the square minus the areas of the four quarter circles. Each quarter circle has a radius half the side length, so if we sum the areas of the four quarter circles, we have the area of one full circle with radius $5$ cm. Now, we know the area of a square is the square of its side length, so the square has an area of $100 \\text{ cm}^2$. A circle has an area of $\\pi$ times its radius squared, so the four quarter circles combined have an area of $\\pi(5)^2=25\\pi \\text{ cm}^2$. From this, we know that the area of the shaded region is $\\boxed{100-25\\pi} \\text{ cm}^2$."
+}

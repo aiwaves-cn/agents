@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of two positive integers $a$ and $b$ is 80.  What is the largest possible value of $\\gcd(a,b)$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "If $a = b = 40$, then $a + b = 80$, and $\\gcd(a,b) = \\gcd(40,40) = 40$.  If one of $a$ and $b$ is greater than 40, then the other is less than 40, in which case $\\gcd(a,b)$ must also be less than 40.  Therefore, the largest possible value of $\\gcd(a,b)$ is $\\boxed{40}$."
+}

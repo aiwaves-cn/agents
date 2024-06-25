@@ -1,0 +1,6 @@
+{
+    "problem": "If $a,$ $b,$ $x,$ and $y$ are real numbers such that $ax+by=3,$ $ax^2+by^2=7,$ $ax^3+by^3=16,$ and $ax^4+by^4=42,$ find $ax^5+by^5.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "For $n = 1, 2, 3, 4, 5,$ define $s_n = ax^n + by^n.$ We are given the values of $s_1, s_2, s_3,$ and $s_4,$ and want to compute $s_5.$\n\nWe find a relationship between the terms $s_n.$ Notice that \\[\\begin{aligned} (x+y)(ax^n + by^n) &= ax^{n+1} + bxy^n + ax^ny + by^{n+1} \\\\ &= (ax^{n+1} + by^{n+1}) + xy(ax^{n-1} + by^{n-1}). \\end{aligned}\\]In other words, $(x+y) s_n= s_{n+1} + xys_{n-1}$ for all $n.$ Therefore, taking $n=2$ and $n=3,$ we get \\[\\begin{aligned} 7(x+y) &= 16 + 3xy \\\\ 16(x+y) &= 42 + 7xy. \\end{aligned}\\]Solving this system of equations for $x+y$ and $xy$ gives $x+y = -14$ and $x=-38.$ Thus, taking $n=4,$ we get \\[42(x+y) = s_5 + 16xy,\\]so \\[s_5 = 42(-14) - 16(-38) = \\boxed{20}.\\]"
+}

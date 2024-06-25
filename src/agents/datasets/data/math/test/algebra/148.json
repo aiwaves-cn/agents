@@ -1,0 +1,6 @@
+{
+    "problem": "Given $f(x)=cx^3-9x+3$ and $f(2)=9$, find the value of $c$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Plugging $x=2$ into the expression for $f(x)$, we find $f(2)=c(2^3)-9(2)+3=8c-18+3=8c-15$. Since we know that $f(2)=9$, \\begin{align*} f(2)&= 9\n\\\\\\Rightarrow\\qquad8c-15&=9\n\\\\\\Rightarrow\\qquad8c&=24\n\\\\\\Rightarrow\\qquad c&=\\boxed{3}\n\\end{align*}"
+}

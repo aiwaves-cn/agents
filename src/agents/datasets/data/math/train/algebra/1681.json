@@ -1,0 +1,6 @@
+{
+    "problem": "What is the minimum value of $z$ if $z=x^2+2y^2+6x-4y+22?$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, complete the square as follows: $$z=x^2+2y^2+6x-4y+22=\\left(x^2+6x\\right)+2\\left(y^2-2y\\right)+22.$$To complete the square, we need to add $\\left(\\dfrac{6}{2}\\right)^2=9$ after the $6x$ and $\\left(\\dfrac{2}{2}\\right)^2=1$ after the $-2y.$ So we have $$z+9+2(1)=\\left(x^2+6x+9\\right)+2\\left(y^2-2y+1\\right)+22.$$This gives $$z=\\left(x+3\\right)^2+2\\left(y-1\\right)^2+11.$$Now, since $\\left(x+3\\right)^2\\ge0$ and $\\left(y-1\\right)^2\\ge0,$ the minimum value is when both squared terms are equal to $0.$ So the minimum value is $$z=\\left(x+3\\right)^2+2\\left(y-1\\right)^2+11=0+2\\cdot0+11=\\boxed{11}.$$"
+}

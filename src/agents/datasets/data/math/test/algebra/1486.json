@@ -1,0 +1,6 @@
+{
+    "problem": "If $a \\clubsuit b = a^2 + 2ab + b^2$ and $2 \\clubsuit x = 81$, find the sum of all possible values of $x$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can see that $2\\clubsuit x = 2^2 + 2\\cdot 2\\cdot x + x^2 = 81$. This becomes a quadratic: $x^2 + 4x - 77 = (x + 11)(x - 7) = 0$. Thus, $x = 7, -11$ and our answer is $\\boxed{-4}$.\n\n- OR -\n\nWe note that $a \\clubsuit b = (a + b)^2$. Thus, $(2 + x)^2 = 81$. It follows that $2 + x = 9$ or $2 + x = -9$, leaving us with $x = 7, -11$. We find that the answer is $\\boxed{-4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the length of the minor axis of the ellipse \\[x^2 + 3y^2 - 4x + 30y -2 = 0.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "To put this equation in standard form, we complete the square in each variable: \\[\\begin{aligned} (x^2-4x) + 3(y^2+10y) &= 2 \\\\ (x^2-4x+4) + 3(y^2+10y+25) &= 2 + 4 + 3(25) \\\\ (x-2)^2 + 3(y+5)^2 &= 81. \\end{aligned}\\]Dividing through by $81$ yields the standard form of the ellipse:\\[ \\frac{(x-2)^2}{81} + \\frac{(y+5)^2}{27} = 1.\\]It follows that the semiminor axis has length $\\sqrt{27} = 3\\sqrt{3},$ so the minor axis has length $2 \\cdot 3\\sqrt{3} = \\boxed{6\\sqrt3}.$"
+}

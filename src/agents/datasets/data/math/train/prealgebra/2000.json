@@ -1,0 +1,6 @@
+{
+    "problem": "The median of the set $\\{n, n + 5, n + 6, n + 9, n + 15\\}$ is 9. What is the mean?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are 5 elements in this set, so the median is the third largest member.  Thus, $n+6=9$, so $n=3$. Then, we can rewrite our set as $\\{3,8,9,12,18\\}$.  The mean of this set is then:$$\\frac{3+8+9+12+18}{5}=\\boxed{10}$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Jeff decides to play with a Magic 8 Ball. Each time he asks it a question, it has a 2/5 chance of giving him a positive answer. If he asks it 5 questions, what is the probability that it gives him exactly 2 positive answers?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{5}{2}=10$ ways to choose 2 of 5 questions to give a positive response to. For each choice, there is a probability of $\\left( \\frac{2}{5} \\right)^2 \\left( \\frac{3}{5} \\right)^3$ that those 2 questions will yield a positive answer and the other 3 will not. Therefore, the total probability that exactly 2 of questions give a positve answer is $10 \\left( \\frac{2}{5} \\right)^2 \\left( \\frac{3}{5} \\right)^3 = \\boxed{\\frac{216}{625}}$."
+}

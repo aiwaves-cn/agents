@@ -1,0 +1,6 @@
+{
+    "problem": "The set of points $(x,y,z)$ that are equidistant to $(1,2,-5)$ and point $P$ satisfy an equation of the form\n\\[10x - 4y + 24z = 55.\\]Find the point $P.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $P = (a,b,c).$  If the point $(x,y,z)$ is equidistant to $(1,2,-5)$ and $(a,b,c),$ then\n\\[(x - 1)^2 + (y - 2)^2 + (z + 5)^2 = (x - a)^2 + (y - b)^2 + (z - c)^2.\\]Expanding, we get\n\\[x^2 - 2x + 1 + y^2 - 4y + 4 + z^2 + 10z + 25 = x^2 - 2ax + a^2 + y^2 - 2by + b^2 + z^2 - 2cz + c^2,\\]which simplifies to\n\\[(2a - 2) x + (2b - 4) y + (2c + 10) z = a^2 + b^2 + c^2 - 30.\\]We want this to coincide with the equation\n\\[10x - 4y + 24z = 55.\\]If we set $2a - 2 = 10,$ $2b - 4 = -4,$ and $2c + 10 = 24,$ then $a = 6,$ $b = 0,$ and $c = 7.$  Note that $a^2 + b^2 + c^2 - 30 = 55,$ so these values work.  Thus, $(a,b,c) = \\boxed{(6,0,7)}.$"
+}

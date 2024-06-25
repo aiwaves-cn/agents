@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $\\overline{CD}$ is the bisector of angle $C,$ with $D$ on $\\overline{AB}.$  If $\\cos \\frac{C}{2} = \\frac{1}{3}$ and $CD = 6,$ compute\n\\[\\frac{1}{BC} + \\frac{1}{AC}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The area of triangle $ABC$ is given by\n\\[[ABC] = \\frac{1}{2} AC \\cdot BC \\cdot \\sin C.\\][asy]\nunitsize (1 cm);\n\npair A, B, C, D;\n\nA = (0,0);\nB = (5,0);\nC = (1,2);\nD = extension(C, incenter(A,B,C), A, B);\n\ndraw(A--B--C--cycle);\ndraw(C--D);\n\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, SE);\nlabel(\"$C$\", C, N);\nlabel(\"$D$\", D, S);\nlabel(\"$6$\", (C + D)/2, NE);\n[/asy]\n\nWe can also write\n\\begin{align*}\n[ABC] &= [ACD] + [BCD] \\\\\n&= \\frac{1}{2} AC \\cdot CD \\sin \\frac{C}{2} + \\frac{1}{2} BC \\cdot CD \\sin \\frac{C}{2} \\\\\n&= 3AC \\sin \\frac{C}{2} + 3BC \\sin \\frac{C}{2} \\\\\n&= 3 (AC + BC) \\sin \\frac{C}{2}.\n\\end{align*}Thus,\n\\[\\frac{1}{2} AC \\cdot BC \\cdot \\sin C = 3(AC + BC) \\sin \\frac{C}{2}.\\]Then\n\\[AC \\cdot BC \\sin \\frac{C}{2} \\cos \\frac{C}{2} = 3(AC + BC) \\sin \\frac{C}{2},\\]so\n\\[\\frac{AC \\cdot BC}{3} = 3 (AC + BC).\\]Hence,\n\\[\\frac{1}{AC} + \\frac{1}{BC} = \\frac{AC + BC}{AC \\cdot BC} = \\boxed{\\frac{1}{9}}.\\]"
+}

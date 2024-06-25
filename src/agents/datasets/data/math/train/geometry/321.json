@@ -1,0 +1,6 @@
+{
+    "problem": "We have a triangle $\\triangle ABC$ such that $AB = AC = 8$ and $BC = 10.$ What is the length of the median $AM$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Let's draw a sketch first. Since $\\triangle ABC$ is isosceles, we know that $AM$ must form a right angle with $BC.$ [asy]\npair A, B, C, M;\nA = (0, 6.24);\nB = (-5, 0);\nC = (5, 0);\nM = 0.5 * B + 0.5 * C;\ndraw(A--B--C--cycle);\ndraw(A--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, S);\ndraw(rightanglemark(A,M,B,10));\n[/asy] We know that $BM = MC = \\frac{BC}{2} = 5.$ Now we just simply apply the Pythagorean Theorem on the right triangle $\\triangle ABM.$ \\begin{align*}\nAM^2 &= AB^2 - BM^2\\\\\nAM^2 &= 8^2 - 5^2 = 39\\\\\nAM &= \\boxed{\\sqrt{39}}\n\\end{align*}"
+}

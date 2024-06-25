@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $$\\lfloor\\sqrt{1}\\rfloor + \\lfloor\\sqrt{2}\\rfloor + \\lfloor\\sqrt{3}\\rfloor + .... + \\lfloor\\sqrt{19}\\rfloor$$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We note that if $a^2 \\leq n < (a+1)^2$ for some integer $a$, then $a \\leq \\sqrt{x} < a+1$, so $a$ is the greatest integer less than or equal to $x$. Consequently, we break up our sum into the blocks of integers between consecutive perfect squares:\n\nFor $1\\leq n \\leq 3$, $\\lfloor\\sqrt{n}\\rfloor=1$. There are $3$ values of $n$ in this range.\nFor $4\\leq n\\leq 8$, $\\lfloor\\sqrt{n}\\rfloor=2$. There are $5$ values of $n$ in this range.\nFor $9\\leq n \\leq 15$, $\\lfloor\\sqrt{n}\\rfloor=3$. There are $7$ values of $n$ in this range.\nFor $16\\leq n \\leq 19$, $\\lfloor\\sqrt{n}\\rfloor=4$. There are $4$ values of $n$ in this range.\n\nConsequently, our total sum is $3\\cdot1+5\\cdot2+7\\cdot3+4\\cdot 4= \\boxed{50}$."
+}

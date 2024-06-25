@@ -1,0 +1,6 @@
+{
+    "problem": "The increasing sequence of positive integers $a_1,$ $a_2,$ $a_3,$ $\\dots$ has the property that\n\\[a_{n + 2} = a_{n + 1} + a_n\\]for all $n \\ge 1.$  If $a_7 = 120,$ then find $a_8.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a_1 = a$ and $a_2 = b.$  Then\n\\begin{align*}\na_3 &= a + b, \\\\\na_4 &= a + 2b, \\\\\na_5 &= 2a + 3b, \\\\\na_6 &= 3a + 5b, \\\\\na_7 &= 5a + 8b, \\\\\na_8 &= 8a + 13b.\n\\end{align*}Hence, $5a + 8b = 120.$  Then $5a = 120 - 8b = 8(15 - b).$  Since 5 is relatively prime to 8, $a$ is divisible by 8.\n\nIf $a = 8,$ then $b = 10.$  If $a = 16,$ then $b = 5,$ which does not work, because the sequence is increasing, so $b > a.$  Note that higher values of $b$ return lower values of $a,$ so the only possible value of $a$ is 8.  Then $b = 10,$ so $a_8 = 8a + 13b = \\boxed{194}.$"
+}

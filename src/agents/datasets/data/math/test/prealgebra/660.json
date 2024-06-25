@@ -1,0 +1,6 @@
+{
+    "problem": "A suitcase lock has 4 dials with the digits $0, 1, 2,..., 9$ on each. How many different settings are possible if all four digits have to be different?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are 10 possibilities for the first digit. After the first digit has been chosen, there are 9 possibilities for the second digit.  After these two digits have been chosen, there are 8 possibilities for the third digit and after the first three digits have been chosen there are 7 possibilities for the last digit. The total number of possible settings is $10\\cdot 9\\cdot 8\\cdot7=\\boxed{5040}$."
+}

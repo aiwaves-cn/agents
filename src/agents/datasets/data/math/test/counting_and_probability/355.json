@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest positive integer $n$ such that $3^n$ is a factor of $200!$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "If we want the largest such $n$, we must count the number of factors of 3 in the prime factorization of $200!$. The number of multiples of 3 is $\\left\\lfloor \\frac{200}{3} \\right\\rfloor$.  (The notation $\\left\\lfloor x\\right\\rfloor$ means the greatest integer less than or equal to $x$, so basically, $\\left\\lfloor \\frac{200}{3}\\right\\rfloor$ means ``divide 200 by 3 and round down.\")   However, these are not the only factors of 3 in the product!  Multiples of 9 in the product contribute an extra factor of 3. There are $\\left\\lfloor \\frac{200}{9} \\right\\rfloor$ of these, so we add this number to the $\\left\\lfloor \\frac{200}{3}\\right\\rfloor$ factors of 3 we found from counting multiples of 3.  Similarly, we must add in multiples of 27 once and multiples of 81.\n\nThe sum is $\\left\\lfloor \\frac{200}{3} \\right\\rfloor + \\left\\lfloor \\frac{200}{9} \\right\\rfloor + \\left\\lfloor \\frac{200}{27} \\right\\rfloor + \\left\\lfloor \\frac{200}{81} \\right\\rfloor = 66 + 22 + 7 + 2 = \\boxed{97}$."
+}

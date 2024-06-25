@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest common divisor of 1407 and 903?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We can use the Euclidean algorithm to compute the greatest common divisor of 1407 and 903. \\begin{align*}\n\\gcd(1407, 903) &= \\gcd(903, 1407 - 903) \\\\\n&= \\gcd(903, 504) \\\\\n&= \\gcd(504, 903 - 504) \\\\\n&= \\gcd(504, 399) \\\\\n&= \\gcd(399, 504 - 399) \\\\\n&= \\gcd(399, 105) \\\\\n&= \\gcd(105, 399 - 3\\cdot 105) \\\\\n&= \\gcd(105, 84) \\\\\n&= \\gcd(84, 105-84) \\\\\n&= \\gcd(84, 21) \\\\\n&= \\boxed{21}.\n\\end{align*}"
+}

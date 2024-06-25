@@ -1,0 +1,6 @@
+{
+    "problem": "For what base is the representation of $285_{10}$ a four digit number whose final digit is odd?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "$285_{10}$ is only four digits for bases 5 and 6, since only these two bases satisfy $b^{4}>285_{10}\\geq b^{3}$. Testing each of our two cases, we find that $285_{10}= 2120_{5} = 1153_{6}$, so only base $\\boxed{6}$ yields a four-digit representation with an odd units digit."
+}

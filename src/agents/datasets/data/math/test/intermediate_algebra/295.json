@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $x^2 + bx + b$ is a factor of $x^3 + 2x^2 + 2x + c.$  Enter all possible values of $b,$ separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If $x^2 + bx + b$ is a factor of $x^3 + 2x^2 + 2x + c,$ then the other factor must be of the form $x + r.$  Thus,\n\\[(x^2 + bx + b)(x + r) = x^3 + 2x^2 + 2x + c.\\]Expanding, we get\n\\[x^3 + (b + r) x^2 + (b + br) x + br = x^3 + 2x^2 + 2x + c.\\]Matching coefficients, we get\n\\begin{align*}\nb + r &= 2, \\\\\nb + br &= 2, \\\\\nbr &= c.\n\\end{align*}From the equation $b + r = 2,$ $r = 2 - b.$  Substituting into $b + br = 2,$ we get\n\\[b + b(2 - b) = 2.\\]Then $b^2 - 3b + 2 = 0,$ which factors as $(b - 1)(b - 2) = 0.$  Hence, the possible values of $b$ are $\\boxed{1,2}.$"
+}

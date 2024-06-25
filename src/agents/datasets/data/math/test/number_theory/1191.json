@@ -1,0 +1,6 @@
+{
+    "problem": "If $n$ is an integer, $1 \\leq n \\leq 2010,$ how many fractions $\\frac{n^2}{2010}$ yield repeating decimals?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We first compute the prime factorization of 2010, which is $2 \\cdot 3 \\cdot 5 \\cdot 67$. Therefore, if we want $\\frac{n^2}{2010}$ to be a repeating decimal, then $n^2$ cannot be divisible by 3 and 67 at the same time. If this were the case, then we could convert our fraction to $\\frac{k}{10}$, where $201k = n^2$, and $\\frac{k}{10}$ is clearly a terminating decimal. Conversely, no simplified terminating decimal has a factor of 3 or 67 in the denominator. It follows that if $n$ is not divisible by $3\\cdot 67$, then $n$ is a repeating decimal. Therefore, we need to compute the number of values of $n$ that yield squares which are not divisible by 3 and 67. However, $n^2$ is divisible by 3 and 67 if and only if $n$ must be divisible by 3 and 67. Therefore, $n$ cannot be divisible by $3 \\cdot 67=201$. There are $10$ multiplies of $201$ which are less than or equal to $2010$, so there are $2010 - 10 = \\boxed{2000}$ values of $n$ that yield a fraction $\\frac{n^2}{2010}$ which is a repeating decimal."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $p$: $\\frac 56 = \\frac n{72} = \\frac {m+n}{84}= \\frac {p - m}{120}$.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "To get from 6 to 72 we multiply by 12, so a fraction equivalent to $\\frac{5}{6}$ whose denominator is 72 has a numerator of $n=5 \\cdot12=60$.  We can solve $\\frac{5}{6}=\\frac{60+m}{84}$ similarly to obtain $m=10$.  Finally, $\\frac{5}{6}=\\frac{p-10}{120}\\implies p-10=100 \\implies p=\\boxed{110}$."
+}

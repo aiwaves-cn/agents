@@ -1,0 +1,6 @@
+{
+    "problem": "Two cards are chosen at random from a standard 52-card deck.  What is the probability that both are face cards (Jacks, Queens, or Kings)?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 12 face cards, so there are $\\binom{12}{2}$ ways to choose 2 face cards (without regard to order).  There are $\\binom{52}{2}$ ways to choose any 2 cards (without regard to order).  So the answer is \\[\\frac{\\binom{12}{2}}{\\binom{52}{2}}=\\boxed{\\frac{11}{221}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the polynomial $p(x),$ with real coefficients, such that $p(2) = 5$ and\n\\[p(x) p(y) = p(x) + p(y) + p(xy) - 2\\]for all real numbers $x$ and $y.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $q(x) = p(x) - 1.$  Then $p(x) = q(x) + 1,$ so\n\\[(q(x) + 1)(q(y) + 1) = q(x) + 1 + q(y) + 1 + q(xy) + 1 - 2.\\]Expanding, we get\n\\[q(x)q(y) + q(x) + q(y) + 1 = q(x) + q(y) + q(xy) + 1,\\]so $q(xy) = q(x)q(y)$ for all real numbers $x$ and $y.$\n\nAlso, $q(2) = p(2) - 1 = 4 = 2^2.$  Then\n\\begin{align*}\nq(2^2) &= q(2) q(2) = 2^2 \\cdot 2^2 = 2^4, \\\\\nq(2^3) &= q(2) q(2^2) = 2^2 \\cdot 2^4 = 2^6, \\\\\nq(2^4) &= q(2) q(2^3) = 2^2 \\cdot 2^6 = 2^8,\n\\end{align*}and so on.  Thus,\n\\[q(2^n) = 2^{2n} = (2^n)^2\\]for all positive integers $n.$\n\nSince $q(x) = x^2$ for infinitely many values of $x,$ by the Identity Theorem, $q(x) = x^2$ for all $x.$  Hence, $p(x) = q(x) + 1 = \\boxed{x^2 + 1}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, there are more than three triangles. If each triangle has the same probability of being selected, what is the probability that a selected triangle has all or part of its interior shaded? Express your answer as a common fraction.\n\n[asy]\ndraw((0,0)--(1,0)--(0,1)--(0,0)--cycle,linewidth(1));\ndraw((0,0)--(.5,0)--(.5,.5)--(0,0)--cycle,linewidth(1));\n\nlabel(\"A\",(0,1),NW);\nlabel(\"B\",(.5,.5),NE);\nlabel(\"C\",(1,0),SE);\nlabel(\"D\",(.5,0),S);\nlabel(\"E\",(0,0),SW);\n\nfilldraw((.5,0)--(1,0)--(.5,.5)--(.5,0)--cycle,gray,black);[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We can count the total number of triangles that can be chosen directly, by listing them: $AEC$, $AEB$, $BED$, $BEC$, and $BDC$. Of these, the triangles with a part shaded are $AEC$, $BEC$, and $BDC$. So there is $\\boxed{\\frac{3}{5}}$ probability of selecting a triangle with all or part of its interior shaded."
+}

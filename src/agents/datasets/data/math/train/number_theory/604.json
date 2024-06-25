@@ -1,0 +1,6 @@
+{
+    "problem": "Express $\\frac{165_7}{11_2}+\\frac{121_6}{21_3}$ in base 10.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We begin by converting all the numbers to base 10: \\begin{align*} 165_7&=1(7^2)+6(7^1)+5(7^0)=49+42+5=96\\\\\n11_2&=1(2^1)+1(2^0)=2+1=3\\\\\n121_6&=1(6^2)+2(6^1)+1(6^0)=36+12+1=49\\\\\n21_3&=2(3^1)+1(3^0)=6+1=7\n\\end{align*}Thus, the original expression becomes $\\frac{96}{3}+\\frac{49}{7}=32+7=\\boxed{39}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "For the first digit, there are seven choices (3, 4, 5, 6, 7, 8, or 9). For the last digit, there are ten choices (0 through 9).\n\nWe know that if either of the middle digits is 0, their product will not exceed 5. So, only consider pairs of middle digits formed from choosing two numbers between 1 and 9, inclusive. There are $9 \\cdot 9$ such pairs possible. The only pairs whose product will not exceed 5 are 11, 12, 13, 14, 15, 21, 22, 31, 41, and 51. Thus, there are $9 \\cdot 9 - 10 = 71$ ways in which we can choose the middle two digits.\n\nThus, there are $ 7 \\cdot 71 \\cdot 10 = \\boxed{4970}$ such numbers."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "When $f(x) = ax^3 - 6x^2 + bx - 5$ is divided by $x - 1,$ the remainder is $-5.$  When $f(x)$ is divided by $x + 2,$ the remainder is $-53.$  Find the ordered pair $(a,b).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the Remainder Theorem,\n\\begin{align*}\n-5 &= f(1) = a - 6 + b - 5, \\\\\n-53 &= f(-2) = -8a - 24 - 2b - 5.\n\\end{align*}Solving, we find $(a,b) = \\boxed{(2,4)}.$"
+}

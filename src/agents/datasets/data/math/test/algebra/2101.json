@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\left\\lceil{\\frac32}\\right\\rceil^2+\\left\\lceil{\\left(\\frac32\\right)^2}\\right\\rceil$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "In order to evaluate the first half of the expression, we must first find $\\left\\lceil{\\frac32}\\right\\rceil$ and then square that integer. We know that $\\left\\lceil{\\frac32}\\right\\rceil=2$, so $\\left\\lceil{\\frac32}\\right\\rceil^2=4$. For the second half of the expression, we must first evaluate $\\left(\\frac32\\right)^2$, and then find the smallest integer greater than or equal to that value. We know that $\\left(\\frac32\\right)^2=\\frac94$, so $\\left\\lceil{\\left(\\frac32\\right)^2}\\right\\rceil=\\left\\lceil{\\frac94}\\right\\rceil=3$. Thus, the original expression is just equal to $4+3=\\boxed{7}$."
+}

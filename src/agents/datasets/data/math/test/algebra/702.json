@@ -1,0 +1,6 @@
+{
+    "problem": "All triangles have the same value, and all circles have the same value. What is the sum of two circles? \\begin{align*}\n\\Delta + \\bigcirc + \\Delta + \\bigcirc + \\Delta + \\bigcirc + \\Delta + \\Delta&= 21\\\\\n\\bigcirc + \\Delta+\\bigcirc+\\Delta+\\bigcirc + \\Delta + \\bigcirc + \\bigcirc &= 16\\\\\n\\bigcirc + \\bigcirc &= \\ \\, ?\n\\end{align*}",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Replace a triangle with the letter $a$ and a circle with the letter $b.$ The two given equations become \\begin{align*}\n5a+3b&=21\\\\\n3a+5b&=16\n\\end{align*}Multiplying the first equation by $3,$ we get $15a+9b=63.$ Multiplying the second equation by $5,$ we get $15a+25b=80.$ Subtracting this last equation from the second-to-last equation to eliminate $a,$ we have $16b=17.$ Multiplying both sides by $\\frac{2}{16},$ we get $$\\frac{2}{16}\\cdot 16b = \\frac{2}{16} \\cdot 17 \\implies 2b=\\frac{17}{8}.$$Thus, two circles equals $\\boxed{\\frac{17}{8}}.$"
+}

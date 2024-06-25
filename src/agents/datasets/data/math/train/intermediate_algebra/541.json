@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the smallest positive integer $n$ such that $n + i,$ $(n + i)^2,$ and $(n + i)^3$ are the vertices of a triangle in the complex plane whose area is greater than 2015.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[(n + i)^2 = n^2 + 2ni + i^2 = (n^2 - 1) + (2n)i,\\]and\n\\[(n + i)^3 = n^3 + 3n^2 i + 3ni^2 + i^3 = (n^3 - 3n) + (3n^2 - 1)i.\\]By the Shoelace Theorem, area of the triangle with vertices $(n,1),$ $(n^2 - 1,2n),$ and $(n^3 - 3n,3n^2 - 1)$ is\n\\begin{align*}\n&\\frac{1}{2} \\left|(n)(2n) + (n^2 - 1)(3n^2 - 1) + (n^3 - 3n)(1) - (1)(n^2 - 1) - (2n)(n^3 - 3n) - (3n^2 - 1)(n)\\right| \\\\\n&= \\frac{1}{2} (n^4 - 2n^3 + 3n^2 - 2n + 2) = \\frac{1}{2} [(n^2 - n + 1)^2 + 1].\n\\end{align*}Thus, we want $n$ to satisfy\n\\[\\frac{1}{2} [(n^2 - n + 1)^2 + 1] > 2015,\\]or $(n^2 - n + 1)^2 > 4029.$  Checking small values, we find the smallest positive integer $n$ that works is $\\boxed{9}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given the four digits 2, 4, 6, and 7, how many different positive two-digit integers can be formed using these digits if a digit can be repeated in an integer?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are 4 choices for the first digit and also 4 choices for the second, since the first digit may be repeated. This gives a total of $4\\cdot4=\\boxed{16}$ integers possible."
+}

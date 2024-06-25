@@ -1,0 +1,6 @@
+{
+    "problem": "If $A,B$ and $C$ are non-zero distinct digits in base $6$ such that $\\overline{ABC}_6 + \\overline{BCA}_6+ \\overline{CAB}_6 = \\overline{AAA0}_6$, find $B+C$ in base $6$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "By definition of a base, it follows that $\\overline{ABC}_6 = 6^2 \\cdot A + 6 \\cdot B + C$. Noting that every digit appears in every possible slot once, it follows that $\\overline{ABC}_6 + \\overline{BCA}_6+ \\overline{CAB}_6 = (6^2 + 6 + 1)(A + B + C).$ The value is equal to the sum, $\\overline{AAA0}_6 = 6^3 \\cdot A + 6^2 \\cdot A + 6 \\cdot A = (6^2 + 6 + 1) \\cdot (6 \\cdot A)$. Setting them equal, $$(6^2 + 6 + 1)(A + B + C) = (6^2 + 6 + 1) \\cdot (6 \\cdot A) \\Longrightarrow B+C = 5 \\cdot A.$$Since $B,C < 6$, then $B+C < 2 \\cdot 6$, so $A = 1,2$. However, there do not exist distinct base $6$ digits such that $B + C = 2 \\cdot 5$, so it follows that $A = 1_6$, and $B+C = \\boxed{5}_6$."
+}

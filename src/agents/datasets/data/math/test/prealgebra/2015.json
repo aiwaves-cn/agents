@@ -1,0 +1,6 @@
+{
+    "problem": "What is the 20th digit in the decimal expansion for the sum of $\\frac{2}{9}$ and $\\frac{1}{7}$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We have $\\frac29 + \\frac17 = \\frac{14}{63} + \\frac{9}{63} = \\frac{23}{63}$.  Expressing $\\frac{23}{63}$ as a decimal using long division, we find $\\frac{23}{63}=0.\\overline{365079}$.  Therefore, every 6th digit after the decimal point is a 9.  So, the 18th digit is a 9; the 20th digit is 2 decimal places later, so it is a $\\boxed{6}$."
+}

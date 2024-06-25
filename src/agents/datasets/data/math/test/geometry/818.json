@@ -1,0 +1,6 @@
+{
+    "problem": "Triangles $BDC$ and $ACD$ are coplanar and isosceles. If we have $m\\angle ABC = 70^\\circ$, what is $m\\angle BAC$, in degrees?\n\n[asy]\nunitsize(2 cm);\n\ndefaultpen(linewidth(1pt)+fontsize(10pt));\npair a,b,c,d;\nb = (0,0);\nc = (1,0);\nd = c+dir(140);\na = d+dir(70);\ndraw(a--b--c--cycle);\ndraw(d--c);\npair s,t;\ns = (.5,0)+(0,.05);\nt = (.5,0)+(0,-.05);\ndraw(s--t);\ns = .5*(c+d) + .05*dir(50);\nt = .5*(c+d) - .05*dir(50);\ndraw(s--t);\ns = .5*(a+d) + .05*dir(160);\nt = .5*(a+d) - .05*dir(160);\ndraw(s--t);\nlabel(\"A\",a,N);\nlabel(\"B\",b,SW);\nlabel(\"C\",c,SE);\nlabel(\"D\",d,NW);\nlabel(\"$70^\\circ$\",b+(.05,.03),NE);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $\\overline{BC}\\cong\\overline{DC}$, that means $\\angle DBC\\cong\\angle BDC$ and $$m\\angle DBC=m\\angle BDC=70^\\circ.$$ We see that $\\angle BDC$ and $\\angle ADC$ must add up to $180^\\circ$, so $m\\angle ADC=180-70=110^\\circ$. Triangle $ACD$ is an isosceles triangle, so the base angles must be equal. If the base angles each have a measure of $x^\\circ$, then $m\\angle ADC+2x=180^\\circ.$  This gives us  $$110+2x=180,$$ so $2x=70$ and  $x=35.$  Since $\\angle BAC$ is one of the base angles, it has a measure of $\\boxed{35^\\circ}$."
+}

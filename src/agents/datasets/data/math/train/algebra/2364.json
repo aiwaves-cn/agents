@@ -1,0 +1,6 @@
+{
+    "problem": "A line contains the points $(-1, 6)$, $(6, k)$ and $(20, 3)$. What is the value of $k$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The slope between the first two points must be the same as the slope between the second two points, because all three points lie on the same line. We thus have the equation $\\frac{k-6}{6-(-1)}=\\frac{3-k}{20-6}$. Solving for $k$ yields $k=\\boxed{5}$."
+}

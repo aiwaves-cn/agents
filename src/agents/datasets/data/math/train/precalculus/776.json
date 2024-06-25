@@ -1,0 +1,6 @@
+{
+    "problem": "The foot of the perpendicular from the origin to a plane is $(12,-4,3).$  Find the equation of the plane.  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We can take $\\begin{pmatrix} 12 \\\\ -4 \\\\ 3 \\end{pmatrix}$ as the normal vector of the plane.  Then the equation of the plane is of the form\n\\[12x - 4y + 3z + D = 0.\\]Substituting in the coordinates of $(12,-4,3),$ we find that the equation of the plane is $\\boxed{12x - 4y + 3z - 169 = 0}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P_1$ be a regular $r~\\mbox{gon}$ and $P_2$ be a regular $s~\\mbox{gon}$ $(r\\geq s\\geq 3)$ such that each interior angle of $P_1$ is $\\frac{59}{58}$ as large as each interior angle of $P_2$. What's the largest possible value of $s$?\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The formula for the interior angle of a regular sided polygon is $\\frac{(n-2)180}{n}$.\nThus, $\\frac{\\frac{(r-2)180}{r}}{\\frac{(s-2)180}{s}} = \\frac{59}{58}$. Cross multiplying and simplifying, we get $\\frac{58(r-2)}{r} = \\frac{59(s-2)}{s}$. Cross multiply and combine like terms again to yield $58rs - 58 \\cdot 2s = 59rs - 59 \\cdot 2r \\Longrightarrow 118r - 116s = rs$. Solving for $r$, we get $r = \\frac{116s}{118 - s}$.\n$r \\ge 0$ and $s \\ge 0$, making the numerator of the fraction positive. To make the denominator positive, $s < 118$; the largest possible value of $s$ is $117$.\nThis is achievable because the denominator is $1$, making $r$ a positive number $116 \\cdot 117$ and $s = \\boxed{117}$."
+}

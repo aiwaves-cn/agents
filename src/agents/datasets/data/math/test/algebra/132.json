@@ -1,0 +1,6 @@
+{
+    "problem": "If $f (x) = x + 2$ and $g (x) = x^2$, then for what value of $x$ does $f(g(x)) = g(f(x))$? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have that $f(g(x)) = f(x^2) = x^2 + 2$ and $g(f(x)) = g(x + 2) = (x + 2)^2 = x^2 + 4x + 4,$ so we want to solve\n\\[x^2 + 2 = x^2 + 4x + 4.\\]This simplifies to $4x = -2,$ so $x = \\boxed{-\\frac{1}{2}}.$"
+}

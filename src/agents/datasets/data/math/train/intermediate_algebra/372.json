@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be nonnegative real numbers such that $x + y + z = 5.$  Find the maximum value of\n\\[\\sqrt{2x + 1} + \\sqrt{2y + 1} + \\sqrt{2z + 1}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By QM-AM,\n\\[\\sqrt{\\frac{(2x + 1) + (2y + 1) + (2z + 1)}{3}} \\ge \\frac{\\sqrt{2x + 1} + \\sqrt{2y + 1} + \\sqrt{2z + 1}}{3}.\\]Hence,\n\\[\\sqrt{2x + 1} + \\sqrt{2y + 1} + \\sqrt{2z + 1} \\le \\sqrt{3(2x + 2y + 2z + 3)} = \\sqrt{39}.\\]Equality occurs when $x = y = z = \\frac{5}{3},$ so the maximum value is $\\boxed{\\sqrt{39}}.$"
+}

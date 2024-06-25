@@ -1,0 +1,6 @@
+{
+    "problem": "What is the product of the solutions of the equation $-35=-x^2-2x?$",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Based on the expansion $(x - \\alpha)(x - \\beta) = x^2 - (\\alpha + \\beta)x + \\alpha\\beta,$ we know that the product of a quadratic formula with leading term of $x^2$ is just the constant term.\n\nIn this case, we rearrange the equation given to look like the derived equation above--i.e. $x^2 + 2x - 35 = 0.$ Now, we see that the product of the roots is just $\\boxed{-35}.$"
+}

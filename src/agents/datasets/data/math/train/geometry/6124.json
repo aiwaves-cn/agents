@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ with right angle at $C$, $\\angle BAC < 45^\\circ$ and $AB = 4$. Point $P$ on $\\overline{AB}$ is chosen such that $\\angle APC = 2\\angle ACP$ and $CP = 1$. The ratio $\\frac{AP}{BP}$ can be represented in the form $p + q\\sqrt{r}$, where $p$, $q$, $r$ are positive integers and $r$ is not divisible by the square of any prime. Find $p+q+r$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $O$ be the circumcenter of $ABC$ and let the intersection of $CP$ with the circumcircle be $D$. It now follows that $\\angle{DOA} = 2\\angle ACP = \\angle{APC} = \\angle{DPB}$. Hence $ODP$ is isosceles and $OD = DP = 2$.\nDenote $E$ the projection of $O$ onto $CD$. Now $CD = CP + DP = 3$. By the Pythagorean Theorem, $OE = \\sqrt {2^2 - \\frac {3^2}{2^2}} = \\sqrt {\\frac {7}{4}}$. Now note that $EP = \\frac {1}{2}$. By the Pythagorean Theorem, $OP = \\sqrt {\\frac {7}{4} + \\frac {1^2}{2^2}} = \\sqrt {2}$. Hence it now follows that,\n\\[\\frac {AP}{BP} = \\frac {AO + OP}{BO - OP} = \\frac {2 + \\sqrt {2}}{2 - \\sqrt {2}} = 3 + 2\\sqrt {2}\\]\nThis gives that the answer is $\\boxed{7}$."
+}

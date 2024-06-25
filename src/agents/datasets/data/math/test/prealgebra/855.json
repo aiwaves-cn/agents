@@ -1,0 +1,6 @@
+{
+    "problem": "Round each number to the nearest tenth and add the results: 543.55, 25.23, and 299.98.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "To round to the nearest tenth, we must look at the tenth and hundredth places. If the hundredth place is greater than or equal to 5, we round the tenth digit up; otherwise (hundredth is less than 5), we round down (keeping the tenth digit as it was). \\begin{align*}\n543.55 &= 543.6\\\\\n25.23 &= 25.2\\\\\n299.98 &= 300.0.\n\\end{align*}Then add the three numbers: $543.6+25.2+300.0=\\boxed{868.8}\\,$."
+}

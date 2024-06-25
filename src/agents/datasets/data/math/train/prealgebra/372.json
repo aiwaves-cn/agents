@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\left(\\sqrt{(\\sqrt3)^3}\\right)^4$.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Squaring the square root of any number gives that number back.  Therefore \\[\\left(\\sqrt{(\\sqrt3)^3}\\right)^4=\\left({\\color{red}\\left(\\sqrt{{\\color{black}(\\sqrt3)^3}}\\right)^2}\\right)^2=\\left((\\sqrt3)^3\\right)^2=(\\sqrt3)^6.\\] Again, squaring the square root gives the original number back so  \\[(\\sqrt3)^6=\\left((\\sqrt3)^2\\right)^3=3^3=\\boxed{27}.\\]"
+}

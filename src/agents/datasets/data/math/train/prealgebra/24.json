@@ -1,0 +1,6 @@
+{
+    "problem": "Fiona is people-watching again. She spies a group of ten high schoolers and starts playing a game by herself, in which she looks at a pair of people from the group of ten and tries to guess whether they like or dislike each other. How many pairs of friends can she observe before she runs out of pairs to evaluate?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are $10$ options for the first person and $9$ options left for the second person for a preliminary count of $10 \\cdot 9 = 90$ pairs. However, the order in which Fiona chooses the people doesn't matter, and we've counted each pair twice, which means our final answer is $\\dfrac{10\\cdot9}{2}=\\boxed{45}$ pairs of friends."
+}

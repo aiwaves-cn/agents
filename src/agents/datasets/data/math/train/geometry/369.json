@@ -1,0 +1,6 @@
+{
+    "problem": "A triangular region is enclosed by the lines with equations $y = \\frac{1}{2} x + 3$, $y = -2x + 6$ and $y = 1$. What is the area of the triangular region? Express your answer as a decimal to the nearest hundredth.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The vertices of the triangle are the points where two of the lines intersect. The line  $y=\\frac{1}{2}x+3$ intersects $y=1$ when  $$\\frac{1}{2}x+3=1\\Rightarrow x=-4.$$ The line $y=-2x+6$ intersects $y=1$ when  $$-2x+6=1\\Rightarrow x=\\frac{5}{2}.$$  The line $y=\\frac{1}{2}x+3$ intersects $y=-2x+6$ when  $$\\frac{1}{2}x+3=-2x+6\\Rightarrow x=\\frac{6}{5}.$$ and  $$y=-2\\left(\\frac{6}{5}\\right)+6=\\frac{18}{5}$$\n\nThus the vertices of the triangle are $(-4,1)$, $\\left(\\frac{5}{2},1\\right)$, and $\\left(\\frac{6}{5},\\frac{18}{5}\\right)$. We can let the base of the triangle lie along the line $y=1$.  It will have length  $$4+\\frac{5}{2}=\\frac{13}{2}.$$  The altitude from $\\left(\\frac{6}{5},\\frac{18}{5}\\right)$ to this line will have length  $$\\frac{18}{5}-1=\\frac{13}{5}.$$ Thus the area of the triangle is $$\\frac{1}{2}*\\frac{13}{2}*\\frac{13}{5}=\\frac{169}{20}=\\boxed{8.45}.$$"
+}

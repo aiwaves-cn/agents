@@ -1,0 +1,6 @@
+{
+    "problem": "A rotation centered at the origin takes $\\begin{pmatrix} 13 \\\\ 0 \\end{pmatrix}$ to $\\begin{pmatrix} 5 \\\\ -12 \\end{pmatrix}.$  Which vector does the rotation take $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ to?",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The rotation matrix must be of the form $\\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix}.$  Thus,\n\\[\\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix} \\begin{pmatrix} 13 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 5 \\\\ -12 \\end{pmatrix}.\\]This gives us $\\cos \\theta = \\frac{5}{13}$ and $\\sin \\theta = -\\frac{12}{13}.$  Thus, $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ is taken to\n\\[\\begin{pmatrix} \\frac{5}{13} & \\frac{12}{13} \\\\ -\\frac{12}{13} & \\frac{5}{13} \\end{pmatrix} \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 12/13 \\\\ 5/13 \\end{pmatrix}}.\\]"
+}

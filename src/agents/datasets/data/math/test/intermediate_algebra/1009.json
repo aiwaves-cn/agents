@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P$ be a point on the hyperbola $x^2 + 8xy + 7y^2 = 225.$  Find the shortest possible distance from the origin to $P.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $(x,y)$ be a point on the hyperbola $x^2 + 8xy + 7y^2 = 225.$  Effectively, we want to minimize $x^2 + y^2.$  Let $k = x^2 + y^2.$  Multiplying this with the equation $x^2 + 8xy + 7y^2 = 225,$ we get\n\\[kx^2 + 8kxy + 7ky^2 = 225x^2 + 225y^2,\\]so\n\\[(k - 225) x^2 + 8kxy + (7k - 225) y^2 = 0.\\]For the curves $x^2 + 8xy + 7y^2 = 225$ and $x^2 + y^2 = k$ to intersect, we want this quadratic to have a real root, which means its discriminant is nonnegative:\n\\[(8ky)^2 - 4(k - 225)(7k - 225) y^2 \\ge 0.\\]This simplifies to $y^2 (36k^2 + 7200k - 202500) \\ge 0,$ which factors as\n\\[y^2 (k - 25)(k + 225) \\ge 0.\\]If $y = 0,$ then $x^2 = 225,$ which leads to $x = \\pm 15.$  The distance from the origin to $P$ is then 15.  Otherwise, we must have $k = x^2 + y^2 \\ge 25.$\n\nIf $k = 25,$ then $-200x^2 + 200xy - 50y^2 = -50(2x - y)^2 = 0,$ so $y = 2x.$  Substituting into $x^2 + 8xy + 7y^2 = 225,$ we get $45x^2 = 225,$ so $x^2 = 5,$ which implies $x = \\pm \\sqrt{5}.$  Thus, equality occurs when $(x,y) = (\\sqrt{5}, 2 \\sqrt{5})$ or $(-\\sqrt{5}, -2 \\sqrt{5}),$ and the minimum distance from the origin to $P$ is $\\boxed{5}.$"
+}

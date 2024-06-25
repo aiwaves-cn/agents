@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be positive real numbers.  Find the maximum value of\n\\[\\frac{(x + y)^2}{x^2 + y^2}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We claim that the maximum value is 2.  Note that for $x = y,$\n\\[\\frac{(x + y)^2}{x^2 + y^2} = \\frac{4x^2}{2x^2} = 2.\\]The inequality $\\frac{(x + y)^2}{x^2 + y^2} \\le 2$ is equivalent to\n\\[(x + y)^2 \\le 2x^2 + 2y^2,\\]which in turn simplifies to $x^2 - 2xy + y^2 \\ge 0.$  We can write this as $(x - y)^2 \\ge 0.$  This inequality holds, and since all our steps are reversible, the inequality $\\frac{(x + y)^2}{x^2 + y^2} \\le 2$ also holds.  Hence, the maximum value is $\\boxed{2}.$"
+}

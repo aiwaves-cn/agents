@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ has vertices $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.  A line through $B$ cuts the area of $\\triangle ABC$ in half; find the sum of the slope and $y$-intercept of this line.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The line through $B$ that cuts the area of $\\triangle ABC$ in half is the median -- that is, the line through $B$ and the midpoint $M$ of $\\overline{AC}$.  (This line cuts the area of the triangle in half, because if we consider $\\overline{AC}$ as its base, then the height of each of $\\triangle AMB$ and $\\triangle CMB$ is equal to the distance of point $B$ from the line through $A$ and $C$.  These two triangles also have equal bases because $AM=MC$, so their areas must be equal.)\n\nThe midpoint $M$ of $\\overline{AC}$ has coordinates $\\left(\\frac{1}{2}(0+8),\\frac{1}{2}(8+0)\\right)=(4,4)$.  The line through $B(2,0)$ and $M(4,4)$ has slope $\\frac{4-0}{4-2}=2$, and since this line passes through $B(2,0)$, it has equation $y-0=2(x-2)$ or $y=2x-4$.  Finally, the desired sum of the slope and $y$-intercept is $2+(-4)=\\boxed{-2}$."
+}

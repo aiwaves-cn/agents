@@ -1,0 +1,6 @@
+{
+    "problem": "What is the base four equivalent of $123_{10}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We know that $4^{4}>123_{10}>4^{3}$. So, we can tell that $123_{10}$ in base four will have four digits. $4^{3}=64$, which can go into 123 only one time at most, leaving $123-1\\cdot64 = 59$ for the next three digits. $4^{2}=16$ goes into 59 three times at most, leaving us with $59-3\\cdot16 = 11$. Then, $4^{1}=4$ goes into 11 two times at most, leaving $11-2\\cdot4 = 3$ for the ones digit. All together, the base four equivalent of $123_{10}$ is $\\boxed{1323_{4}}$."
+}

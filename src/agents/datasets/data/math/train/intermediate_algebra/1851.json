@@ -1,0 +1,6 @@
+{
+    "problem": "The expression $64x^6-729y^6$ can be factored as $(ax+by)(cx^2+dxy+ey^2)(fx+gy)(hx^2+jxy+ky^2)$. If $a$, $b$, $c$, $d$, $e$, $f$, $g$, $h$, $j$, and $k$ are all integers, find their sum.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We recognize that $64x^6-729y^6=(4x^2)^3-(9y^2)^3$, allowing us to first apply the difference of squares factorization, followed by the sum and difference of cubes factorizations: \\begin{align*} 64x^6-729y^6&=(8x^3-27y^3)(8x^3+27y^3)\n\\\\&=(2x-3y)(4x^2+6xy+9y^2)(2x+3y)(4x^2-6xy+9y^2)\n\\end{align*}The sum of all the coefficients is $2+(-3)+4+6+9+2+3+4+(-6)+9=\\boxed{30}$."
+}

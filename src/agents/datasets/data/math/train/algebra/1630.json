@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum: $(-39) + (-37) + \\cdots + (-1)$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The sum is an arithmetic series with common difference 2. Let $n$ be the number of terms. Then the $n$th term is $-1$, so $-39 + (n-1)(2) = -1$, or $n = 20$. The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $[(-39) + (-1)]/2 \\cdot 20 = \\boxed{-400}$."
+}

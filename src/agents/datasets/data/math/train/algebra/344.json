@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $k$ for which $kx^2 -5x-12 = 0$ has solutions $x=3$ and $ x = -\\frac{4}{3}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Recall that for an equation of the form $ax^2 + bx + c = 0$, the sum of roots is equal to $-b/a$ and the product of the roots is equal to $c/a$.\n\nSo, we can write the set of equations \\begin{align*}\n3 - \\frac{4}{3} &= \\frac{5}{k} \\\\\n-4 &= \\frac{-12}{k}\n\\end{align*}\n\nThe second equation tells us immediately that $k = \\boxed{3}$."
+}

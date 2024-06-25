@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $\\frac{14!}{5!9!}$ ?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Cancel before multiplying: \\begin{align*}\n\\frac{14!}{5!9!}&=\\frac{14\\cdot13\\cdot12\\cdot11\\cdot10\\cdot9!}{5\\cdot4\\cdot3\\cdot2\\cdot9!} \\\\\n&= \\frac{14 \\cdot 13 \\cdot 12 \\cdot 11 \\cdot 10}{5 \\cdot 4 \\cdot 3 \\cdot 2} \\\\\n&= \\frac{14 \\cdot 13 \\cdot 12 \\cdot 11}{4 \\cdot 3} \\\\\n&= 14 \\cdot 13 \\cdot 11 \\\\\n&= \\boxed{2002}\n\\end{align*}"
+}

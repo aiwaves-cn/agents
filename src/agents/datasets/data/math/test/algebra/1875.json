@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $\\sqrt{12-\\!\\sqrt{12-\\!\\sqrt{12-\\cdots}}}$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Letting $x = \\sqrt{12-\\!\\sqrt{12-\\!\\sqrt{12-\\cdots}}}$, we have $x = \\sqrt{12 - x}$.  Therefore, $x^2 = 12 -x$, so $x^2 + x - 12=0$,  or $(x+4)(x-3) = 0$.  Clearly, $x$ must be positive, so $x = \\boxed{3}$."
+}

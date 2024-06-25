@@ -1,0 +1,6 @@
+{
+    "problem": "My club has 25 members.  In how many ways can I choose members to form a 4-person executive committee?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Choosing a committee is a combination, since the order does not matter. We are choosing a 4-person committee from 25 people, so there are 25 ways to pick the first person, 24 ways to pick the second person, etc.  However, we must divide by $4!$ since order doesn't matter.  So the answer is $\\dfrac{25 \\times 24 \\times 23 \\times 22}{4!}=\\boxed{12,\\!650}$."
+}

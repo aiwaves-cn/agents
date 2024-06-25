@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\sqrt{5\\cdot10\\cdot14\\cdot21\\cdot15\\cdot20}$.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "First we factor each of these numbers: \\[\\sqrt{5\\cdot10\\cdot14\\cdot21\\cdot15\\cdot20}=\\sqrt{5\\cdot(5\\cdot2)(2\\cdot7)(7\\cdot3)(3\\cdot5)(5\\cdot4)}.\\]Next we notice that this expression contains a lot of squares, so is equal to  \\[\\sqrt{5^2\\cdot2^2\\cdot7^2\\cdot3^2\\cdot5^2\\cdot2^2}.\\]Since the square root of a product is the product of the square roots this is equal to  \\[\\sqrt{5^2}\\cdot\\sqrt{2^2}\\cdot\\sqrt{7^2}\\cdot\\sqrt{3^2}\\cdot\\sqrt{5^2}\\cdot\\sqrt{2^2}=5\\cdot2\\cdot7\\cdot3\\cdot5\\cdot2.\\]Multiplying this out gives \\[5\\cdot2\\cdot7\\cdot3\\cdot5\\cdot2=10\\cdot21\\cdot10=\\boxed{2100}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $s$ is an integer and the root(s) of the quadratic expression $\\frac{1}{2}x^2+sx-\\frac{1}{2}$ are integers, find the sum of all possible values of $s$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "By the quadratic equation, the roots of the equation are  \\begin{align*}\n\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}&=\\frac{-s\\pm\\sqrt{s^2-4(\\frac{1}{2})(-\\frac{1}{2})}}{2(\\frac{1}{2})}\\\\\n&=\\frac{-s\\pm\\sqrt{s^2+1}}{1}=-s\\pm\\sqrt{s^2+1}.\n\\end{align*} Thus we know that $-s+\\sqrt{s^2+1}$ and $-s-\\sqrt{s^2+1}$ are integers. We know that $s$ is an integer, so in order for the sum to be an integer, we must have that $\\sqrt{s^2+1}$ is an integer.\n\nLet $\\sqrt{s^2+1}=n$ for some integer $n$. Then we have $s^2+1=n^2$, or $n^2-s^2=1$ and thus $$(n-s)(n+s)=1.$$ Since $n$ and $s$ are both integers, then their sum and difference must also both be integers, so they are either both $1$ or both $-1$ since their product is 1. In either case, $n-s=n+s$, so $2s=0$ and $s=0$. This is the only value of $s$ for which $\\sqrt{s^2+1}$ is an integer, and thus the only value of $s$ that makes the roots of the given quadratic integers, so $s=\\boxed{0}$."
+}

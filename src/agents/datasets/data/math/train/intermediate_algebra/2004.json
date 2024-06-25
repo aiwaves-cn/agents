@@ -1,0 +1,6 @@
+{
+    "problem": "Both roots of the quadratic equation $x^2 - 63x + k = 0$ are prime numbers. Find the number of possible values of $k.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $p$ and $q$ be the roots.  Then by Vieta's formulas, $p + q = 63.$\n\nIf both $p$ and $q$ are odd, then $p + q$ is even, so one of $p$ or $q$ must be even.  This means one of $p$ and $q$ is 2, and the other is $63 - 2 = 61.$  Therefore, $k = 2 \\cdot 61 = 122,$ so there is only $\\boxed{1}$ possible value of $k.$"
+}

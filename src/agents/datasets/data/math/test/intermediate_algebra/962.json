@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the graph of $$\\frac{x^3-x^2+x}{6x^2-9x}.$$Let $a$ be the number of holes in the graph, $b$ be the number of vertical asympotes, $c$ be the number of horizontal asymptotes, and $d$ be the number of oblique asymptotes. Find $a+2b+3c+4d$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor the numerator and denominator to get $\\frac{x^3-x^2+x}{6x^2-9x} =\\frac{x(x^2-x+1)}{3x(2x-3)}.$\nIn this representation we can immediately see that there is a hole at $x=0$, and a vertical asymptote at $x=\\frac{3}{2}$. There are no more holes or vertical asymptotes so $a=1$ and $b=1$. If we cancel out the common factors, our rational function simplifies to\n$$\\frac{x^2-x+1}{3(2x-3)}.$$We see that as $x$ becomes very large, the $x^2$ term in the numerator will dominate. To be more precise, we can use polynomial division to write $\\frac{x^2-x+1}{3(2x-3)}$ as $$\\frac{2x+1}{12}+\\frac{7}{12(2x-3)},$$from which we can see that for large $x,$ the graph tends towards $\\frac{2x+1}{12},$ giving us an oblique asymptote.\n\nSince the graph cannot have more than one oblique asymptote, or an oblique asymptote and a horizontal asymptote, we have that $c=0$ and $d=1$. Therefore, $a+2b+3c+4d = 1+2+0+4 = \\boxed{7}.$"
+}

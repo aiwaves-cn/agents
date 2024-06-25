@@ -1,0 +1,6 @@
+{
+    "problem": "A lattice point in the $xy$-plane is a point both of whose coordinates are integers (not necessarily positive).  How many lattice points lie on the hyperbola $x^2-y^2=17$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Applying the difference of squares factorization, we see that any such point satisfies $(x+y)(x-y)=17$.  Both factors are integers.  The only pairs of factors of $17$ are $(17,1)$ and $(-17,-1)$. Thus we have that the coordinates satisfy one of the following four systems: (i) $x+y=17$, $x-y=1$; (ii)  $x+y=-17$, $x-y=-1$; (iii) $x+y=1$, $x-y=17$; (iv) $x+y=-1$, $x-y=-17$.  Solving each of these $4$ systems individually gives exactly one solution in each integers for each system.  Thus there are $\\boxed{4}$ lattice points on the hyperbola."
+}

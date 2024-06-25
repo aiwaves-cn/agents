@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $AB = 7$, $AC = 15$, and the length of median $AM$ is 10.  Find the area of triangle $ABC$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Extend $AM$ to $D$ so that $MD = MA$.  Then triangles $AMB$ and $DMC$ are congruent, so triangles $ABC$ and $ACD$ have equal area.\n\n[asy]\nunitsize(0.3 cm);\n\npair A, B, C, D, M;\n\nA = (-7/sqrt(37),42/sqrt(37));\nB = (0,0);\nC = (2*sqrt(37),0);\nM = (B + C)/2;\nD = 2*M - A;\n\ndraw(A--B--C--cycle);\ndraw(A--D--C);\n\nlabel(\"$A$\", A, dir(90));\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, NE);\nlabel(\"$D$\", D, S);\nlabel(\"$M$\", M, SW);\n\nlabel(\"$7$\", (A + B)/2, W);\nlabel(\"$15$\", (A + C)/2, NE);\nlabel(\"$10$\", (A + M)/2, SW);\nlabel(\"$10$\", (D + M)/2, SW);\nlabel(\"$7$\", (C + D)/2, E);\n[/asy]\n\nThe semi-perimeter of triangle $ACD$ is $(7 + 15 + 20)/2 = 21$, so by Heron's formula, the area of triangle $ACD$ is $$\\sqrt{21 (21 - 7)(21 - 15)(21 - 20)} = \\boxed{42}.$$"
+}

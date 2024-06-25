@@ -1,0 +1,6 @@
+{
+    "problem": "Which type of conic section is described by the equation \\[\\sqrt{x^2 + (y-1)^2} + \\sqrt{(x-5)^2 + (y+3)^2} = 10?\\]Enter \"C\" for circle, \"P\" for parabola, \"E\" for ellipse, \"H\" for hyperbola, and \"N\" for none of the above.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "This doesn't look like any of the standard forms of any of the conic sections. Instead, we appeal to the definitions of the conic sections. Note that the two terms on the left-hand side represent the distances in the $xy-$plane from $(x, y)$ to $(0, 1)$ and $(5, -3),$ respectively. So the given equation really says that the sum of the distances from $(x, y)$ to $(0, 1)$ and $(5, -3)$ is a constant (namely, $10$). So the graph of this equation should be an ellipse.\n\nTo check that the ellipse is non-degenerate, we compute the distance between $(0,1)$ and $(5,-3)$ to be \\[\\sqrt{(5-0)^2 + (-3-1)^2} = \\sqrt{41},\\]which is less than $10.$ Therefore, the given equation satisfies the triangle inequality, so the ellipse is non-degenerate. The answer is $\\boxed{\\text{(E)}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the $2 \\times 2$ matrix $\\mathbf{M}$ such that $\\mathbf{M} \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} -4 \\\\ 4 \\end{pmatrix}$ and $\\mathbf{M} \\begin{pmatrix} -3 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} -23 \\\\ 2 \\end{pmatrix}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{M} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}.$  Then\n\\[\\mathbf{M} \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} a + 2b \\\\ c + 2d \\end{pmatrix}.\\]Also,\n\\[\\mathbf{M} \\begin{pmatrix} -3 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} -3 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} -3a + b \\\\ -3c + d \\end{pmatrix}.\\]Thus, we have the system of equations\n\\begin{align*}\na + 2b &= -4, \\\\\nc + 2d &= 4, \\\\\n-3a + b &= -23, \\\\\n-3c + d &= 2.\n\\end{align*}Solving this system, we find $a = 6,$ $b = -5,$ $c = 0,$ and $d = 2,$ so\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} 6 & -5 \\\\ 0 & 2 \\end{pmatrix}}.\\]"
+}

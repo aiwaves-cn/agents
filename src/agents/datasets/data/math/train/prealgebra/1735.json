@@ -1,0 +1,6 @@
+{
+    "problem": "The two figures shown are made of unit squares. What is the positive difference of the perimeters, in units?\n\n[asy]\ndraw((0,0)--(0,1)--(5,1)--(5,0)--cycle,linewidth(1));\ndraw((1,0)--(1,2)--(4,2)--(4,0),linewidth(1));\ndraw((2,-1)--(2,3)--(3,3)--(3,-1)--cycle,linewidth(1));\ndraw((7,0)--(7,2)--(12,2)--(12,0)--cycle,linewidth(1));\ndraw((7,1)--(12,1),linewidth(1));\ndraw((8,0)--(8,2),linewidth(1));\ndraw((9,0)--(9,2),linewidth(1));\ndraw((10,0)--(10,2),linewidth(1));\ndraw((11,0)--(11,2),linewidth(1));\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The first figure has a perimeter of 18 and the second a perimeter of 14, so the difference is $18-14=\\boxed{4}$."
+}

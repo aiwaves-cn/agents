@@ -1,0 +1,6 @@
+{
+    "problem": "A ''super ball'' is dropped from a window 16 meters above the ground. On each bounce it rises $\\frac34$ the distance of the preceding high point. The ball is caught when it reached the high point after hitting the ground for the third time. To the nearest meter, how far has it travelled?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The ball traveled $16+16\\cdot\\frac34+16\\cdot\\left(\\frac34\\right)^2 = 16+ 12+9 = 37$ meters on its three descents. The ball also traveled $16\\cdot\\frac34+16\\cdot\\left(\\frac34\\right)^2+16\\cdot\\left(\\frac34\\right)^3 = 12+9+\\frac{27}4 = 27.75$ meters on its three ascents. Thus, the ball traveled $37+27.75 = 64.75 \\approx \\boxed{65}$ meters total."
+}

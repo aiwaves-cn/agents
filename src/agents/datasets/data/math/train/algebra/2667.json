@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the integers that are both greater than 3 and less than 12?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We want to evaluate the arithmetic series $4+5+\\dots+11$.\n\nThe sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms.  The number of terms is $11 - 4 + 1 = 8$, so the sum is $(4 + 11)/2 \\cdot 8 = \\boxed{60}$."
+}

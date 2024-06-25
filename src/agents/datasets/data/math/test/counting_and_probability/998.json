@@ -1,0 +1,6 @@
+{
+    "problem": "Select numbers $a$ and $b$ between 0 and 1 independently and at random, and let $c$ be their sum. Let $A$, $B$, and $C$ be the results when $a$, $b$, and $c$, respectively, are rounded to the nearest integer.  What is the probability that $A+B=C$?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The conditions under which $A+B=C$ are as follows.\n\n\n(i) If $a+b< 1/2$, then $A=B=C=0$.\n\n\n(ii) If $a\\geq 1/2$ and $b<1/2$, then $B=0$ and $A=C=1$.\n\n\n(iii) If $a<1/2$ and $b\\geq 1/2$, then $A=0$ and $B=C=1$.\n\n\n(iv) If $a+b\\geq 3/2$, then $A=B=1$ and $C=2$.\n\nThese conditions correspond to the shaded regions of the graph shown. The combined area of those regions is 3/4, and the area of the entire square is 1, so the requested probability is $\\boxed{\\frac{3}{4}}$.\n\n[asy]\nunitsize(2cm);\ndraw((1.1,0)--(0,0)--(0,1.1),linewidth(1));\nfill((0,0)--(1,0)--(1,1)--(0,1)--cycle,gray(0.7));\nfill((0.5,0)--(0.5,0.5)--(0,0.5)--cycle,white);\nfill((0.5,0.5)--(1,0.5)--(0.5,1)--cycle,white);\nlabel(\"$a$\",(1.1,0),E);\nlabel(\"$b$\",(0,1.1),N);\nlabel(\"1\",(1,0),S);\nlabel(\"1\",(0,1),W);\nlabel(\"0\",(0,0),SW);\n[/asy]"
+}

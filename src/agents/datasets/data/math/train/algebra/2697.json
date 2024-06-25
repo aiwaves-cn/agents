@@ -1,0 +1,6 @@
+{
+    "problem": "Each of the symbols $\\star$ and $*$ represents an operation in the set $\\{+,-,\\times,\\div\\}$, and $\\frac{12\\star 2}{9*3}=2$.  What is the value of $\\frac{7\\star 3}{12*6}$?  Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "In the equation $\\frac{12\\star2}{9*3}=2$, the numerator of the fraction in the left hand side must be double the denominator. By trial and error, there are two ways to do this. In the first way, the $\\star$ operation is multiplication and the $*$ operation is addition, in which case the equation becomes $\\frac{12\\cdot2}{9+3}=\\frac{24}{12}=2$. Thus, the value of the given expression is $\\frac{7\\cdot3}{12+6}=\\frac{21}{18}=7/6$. In the second way, the $\\star$ operation is division and the $*$ operation is also division, in which case the equation becomes $\\frac{12/2}{9/3}=\\frac{6}{3}=2$. Thus, the value of the given expression is $\\frac{7/3}{12/6}=\\frac{7/3}{2}=7/6$, which is the same as in the first case. In either case, our answer is $\\boxed{\\frac{7}{6}}$."
+}

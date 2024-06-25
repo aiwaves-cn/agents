@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x$: $$\\left(\\frac{1}{9}\\right)^x = 3^{x+3}.$$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Writing the left side with 3 as the base, we have $\\left(\\frac{1}{9}\\right)^x = (3^{-2})^x = 3^{-2x}$, and thus our equation is: $$3^{-2x} = 3^{x + 3}.$$Then, by setting the exponents equal to each other, we obtain: $$-2x = x + 3.$$This gives us $\\boxed{x = -1}$"
+}

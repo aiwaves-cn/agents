@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct three-letter sequences with at least one $``T\"$ can be formed by using three of the six letters of $TARGET?$ One such sequence is $``T-R-T.\"$",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We solve by casework.\n\n$\\bullet$ Case I: Exactly one T in the sequence. There are $3$ slots in which the $T$ could be placed. Then, there are $4$ choices $(A,$ $R,$ $G,$ or $E)$ for the second slot and $3$ for the third, giving a total of $3 \\cdot 4 \\cdot 3 = 36$ sequences.\n\n$\\bullet$ Case II: Exactly two Ts in the sequence. There are $3$ slots in which the non-$T$ can be placed, and there are $4$ possibilities for the letter choice. So, there are a total of $3 \\cdot 4 = 12$ such sequences.\n\nThus, there are $36 + 12 = \\boxed{48}$ possible sequences."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x) = x + 1$ generates the sequence\n\\[1, \\ 2, \\ 3, \\ 4, \\ \\dots\\]in the sense that plugging any number in the sequence into $f(x)$ gives the next number in the sequence.\n\nWhat rational function $g(x)$ generates the sequence\n\\[\\frac{1}{2}, \\ \\frac{2}{3}, \\ \\frac{3}{4}, \\ \\frac{4}{5}, \\ \\dots\\]in this manner?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We want $g(x)$ to satisfy\n\\[g \\left( \\frac{n}{n + 1} \\right) = \\frac{n + 1}{n + 2}\\]for all positive integers $n.$\n\nLet\n\\[x = \\frac{n}{n + 1}.\\]Solving for $n,$ we find $n = \\frac{x}{1 - x}.$  Hence,\n\\[g(x) = \\frac{n + 1}{n + 2} = \\frac{\\frac{x}{1 - x} + 1}{\\frac{x}{1 - x} + 2} = \\boxed{\\frac{1}{2 - x}}.\\]"
+}

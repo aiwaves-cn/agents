@@ -1,0 +1,6 @@
+{
+    "problem": "What real number is equal to the expression $2 + \\frac{4}{1 + \\frac{4}{2 + \\frac{4}{1 + \\cdots}}}$, where the $1$s and the $2$s alternate?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $x$ be the given number, so that $x = 2 + \\frac{4}{1 + \\frac{4}{\\left(2 + \\frac{4}{1 + \\cdots}\\right)}}$. The term in the parentheses is exactly the definition of $x$, so it follows that $$x = 2+\\frac{4}{1 + \\frac{4}{x}} = 2+\\frac{4x}{x + 4}.$$ Multiplying by $(x+4)$ on both sides and simplifying gives $x(x+4) = 2(x+4) + 4x \\Longrightarrow x^2 + 4x = 2x + 8 + 4x.$ Thus, we have the quadratic equation $$x^2 - 2x - 8 = (x - 4)(x+2) = 0,$$ and it follows that $x = -2, 4$. Since the given number is positive, the answer is $\\boxed{4}$."
+}

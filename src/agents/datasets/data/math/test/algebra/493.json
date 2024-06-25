@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = x^2 - 4\\sqrt{x} + 1$. What is $f(f(4))$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "First, we evaluate $f(4)$: $$f(4) = 4^2 - 4\\sqrt{4} + 1 = 9.$$ Thus, $$f(f(4)) = f(9) = 9^2 - 4 \\sqrt{9} + 1 = \\boxed{70}.$$"
+}

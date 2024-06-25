@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the primes between 100 and 200, inclusive, that are 1 or 2 more than a perfect square.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The perfect squares from 100 and 200 (inclusive) are 100, 121, 144, 169, and 196.  The numbers that are 1 or 2 larger than those perfect squares are as follows:\n\n101, 102, 122, 123, 145, 146, 170, 171, 197, and 198.\n\nClearly, no even number greater than 2 can be a prime number, so we narrow our field down to 101, 123, 145, 171, and 197.\n\nTesting, we see that 101 is prime, 123 is not (3 times 41), 145 is not (5 times 29), 171 is not (9 times 19), and 197 is prime.  Hence, the sum of the primes that fit the problem is $101+197= \\boxed{298}$."
+}

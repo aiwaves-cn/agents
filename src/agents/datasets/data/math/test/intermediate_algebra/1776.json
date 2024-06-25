@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the equation \\[\\sqrt[3]{x} + \\sqrt{x+12} = 0\\]for $x.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We subtract $\\sqrt[3]{x}$ from both sides, giving \\[\\sqrt{x+12} = -\\sqrt[3]{x}.\\]Now, to remove radicals, we raise both sides to the sixth power, giving \\[(x+12)^3 = \\left(\\sqrt{x+12}\\right)^6 = \\left(-\\sqrt[3]{x}\\right)^6 = x^2.\\]Expanding the left-hand side and subtracting $x^2$ will create a nasty cubic in $x$, so we first make the substitution $y=x+12,$ which turns our equation into \\[y^3 = (y-12)^2,\\]or \\[y^3 - y^2 + 24y - 144 = 0.\\]To find the roots of this equation, note that for $y=0,$ the left-hand side is $-144,$ which is negative, while for $y=5,$ the left-hand side is $76,$ which is positive; therefore, there must be a root in the interval $(0, 5).$ Trying integer roots in this interval, we find that $y=4$ is a root of the equation. Factoring out $y-4$ from the equation gives \\[(y-4)(y^2+3y+36) = 0.\\]The discriminant of the quadratic $y^2+3y+36$ is $3^2 -4 \\cdot 36 = - 135,$ which is negative, so the only real root of the equation is $y=4.$ Thus, $x = y-12 = \\boxed{-8},$ which can be checked to satisfy the original equation."
+}

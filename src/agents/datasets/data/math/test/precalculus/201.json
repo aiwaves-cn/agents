@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\frac{\\csc \\theta}{\\sin \\theta} - \\frac{\\cot \\theta}{\\tan \\theta}.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\frac{\\csc \\theta}{\\sin \\theta} - \\frac{\\cot \\theta}{\\tan \\theta} &= \\frac{1/\\sin \\theta}{\\sin \\theta} - \\frac{\\cos \\theta/\\sin \\theta}{\\sin \\theta/\\cos \\theta} \\\\\n&= \\frac{1}{\\sin^2 \\theta} - \\frac{\\cos^2 \\theta}{\\sin^2 \\theta} \\\\\n&= \\frac{1 - \\cos^2 \\theta}{\\sin^2 \\theta} = \\frac{\\sin^2 \\theta}{\\sin^2 \\theta} = \\boxed{1}.\n\\end{align*}"
+}

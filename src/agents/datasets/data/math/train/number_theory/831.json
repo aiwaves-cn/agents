@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S = 1 - 2 + 3 - 4 + \\cdots + 2009 - 2010$. What is the residue of $S$, modulo 2010?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that $x + 2010 \\equiv x \\pmod{2010}$. Add 2010 to every negative summand and rearrange the terms to find $S \\equiv 0 + 1 + 2 + 3 + \\cdots + 2008 + 2009 \\pmod{2010}$. The right-hand side is the sum of the integers from 1 to 2010, so $S \\equiv \\frac{2010 \\cdot 2011}{2} \\equiv 1005 \\cdot 2011 \\equiv 1005 \\cdot 1 \\equiv \\boxed{1005} \\pmod{2010}$."
+}

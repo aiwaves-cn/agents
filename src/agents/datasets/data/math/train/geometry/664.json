@@ -1,0 +1,6 @@
+{
+    "problem": "The sides of a triangle have lengths $11, 15,$ and $k,$ where $k$ is a positive integer. For how many values of $k$ is the triangle obtuse?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The longest side of the triangle either has length $15$ or has length $k.$ Take cases:\n\nIf the longest side has length $15,$ then $k \\le 15.$ The triangle must be nondegenerate, which happens if and only if $15 < 11 + k,$ or $4 < k,$ by the triangle inequality. Now, for the triangle to be obtuse, we must have $15^2 > 11^2 + k^2,$ or $15^2 - 11^2 = 104 > k^2,$ which gives $k\\leq 10$ (since $k$ is an integer). Therefore, the possible values of $k$ in this case are $k = 5, 6, \\ldots, 10.$\n\nIf the longest side has length $k,$ then $k \\ge 15.$ In this case, the triangle inequality gives $k < 15 + 11,$ or $k < 26.$ For the triangle to be obtuse, we must have $k^2 > 11^2 + 15^2 = 346,$ or $k \\ge 19$ (since $k$ is an integer). Therefore, the possible values of $k$ in this case are $k = 19, 20, \\ldots, 25.$\n\nIn total, the number of possible values of $k$ is $(10 - 5 + 1) + (25 - 19 + 1) = \\boxed{13}.$"
+}

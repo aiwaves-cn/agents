@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest number $k$ less than 1000 such that the remainder is 1 when $k$ is divided by each of 3, 4, 5, 6, and 7?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can re-write the requirements of this problem as: \\begin{align*}k &\\equiv1\\pmod{3}\\\\\nk &\\equiv1\\pmod{4},\\\\\nk &\\equiv1\\pmod{5},\\\\\nk &\\equiv1\\pmod{6},\\\\\nk &\\equiv1\\pmod{7}.\n\\end{align*}In other words, $k-1$ is divisible by 3, 4, 5, 6, and 7. We have  \\begin{align*}\n\\text{lcm}[3,4,5,6,7] &= \\text{lcm}[3,4,5,7] \\\\\n&= 3\\cdot 4\\cdot 5\\cdot 7 \\\\&= 420,\n\\end{align*}and thus $k-1$ must be divisible by $420$. The only two multiples of $420$ under $1000$ are $420$ and $840$, so the largest possible value of $k$ is $840+1 = \\boxed{841}$."
+}

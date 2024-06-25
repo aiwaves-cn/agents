@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\lceil (3.6)^2 \\rceil - ( \\lceil 3.6 \\rceil ) ^2$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "$\\lceil (3.6)^2 \\rceil = \\lceil 12.96 \\rceil = 13$ because the least integer greater than $12.96$ is $13$. $( \\lceil 3.6 \\rceil ) ^2 = 4^2 = 16$ because the least integer greater than $3.6$ is $4$. Therefore, the answer is $13-16=\\boxed{-3}$."
+}

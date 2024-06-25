@@ -1,0 +1,6 @@
+{
+    "problem": "A number is chosen uniformly at random from among the positive integers less than $10^8$. Given that the sum of the digits of the number is 9, what is the probability that the number is prime?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "According to the divisibility rule for 9, we know that if the sum of the digits of a number is 9, then it must be divisible by 9. Additionally, we know that 9 itself is not a prime number, since it is divisible by 3. Therefore, no such number that satisfies this condition can possibly be prime because it must be divisible by 9, and thus must have at least one factor besides 1 and itself. Since a number can never be prime if the sum of its digits is 9, the probability that the number is prime is $\\boxed{0}$."
+}

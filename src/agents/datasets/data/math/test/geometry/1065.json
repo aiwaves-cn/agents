@@ -1,0 +1,6 @@
+{
+    "problem": "How many units are in the sum of the lengths of the three altitudes in a triangle with sides $7,$ $24,$ and $25$? Express your answer as a decimal to the nearest hundredth.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We recognize 7, 24, and 25 as a Pythagorean triple. That means the area of the triangle is $\\frac{1}{2} \\cdot 7 \\cdot 24 = 84.$ The altitudes are then easy to find: $\\frac{2 \\cdot 84}{7},$ $\\frac{2 \\cdot 84}{24},$ and $\\frac{2 \\cdot 84}{25}.$ Then, our answer is $\\frac{168}{7} + \\frac{168}{24} + \\frac{168}{25} = \\boxed{37.72}.$"
+}

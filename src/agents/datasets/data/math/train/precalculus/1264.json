@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[\\arctan \\frac{1}{x} + \\arctan \\frac{1}{x^3} = \\frac{\\pi}{4}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the given equation,\n\\[\\tan \\left( \\arctan \\frac{1}{x} + \\arctan \\frac{1}{x^3} \\right) = \\tan \\frac{\\pi}{4} = 1.\\]Then from the addition formula for tangent,\n\\[\\frac{\\frac{1}{x} + \\frac{1}{x^3}}{1 - \\frac{1}{x} \\cdot \\frac{1}{x^3}} = 1,\\]or\n\\[\\frac{x^3 + x}{x^4 - 1} = 1.\\]Hence, $x^4 - 1 = x^3 + x,$ or $x^4 - x^3  - x - 1 = 0.$  We can factor this as\n\\begin{align*}\n(x^4 - 1) - (x^3 + x) &= (x^2 - 1)(x^2 + 1) - x(x^2 +1) \\\\\n&= (x^2 + 1)(x^2 - x - 1).\n\\end{align*}The factor $x^2 + 1$ has no real roots, so $x^2 - x - 1 = 0.$  By the quadratic formula,\n\\[x = \\frac{1 \\pm \\sqrt{5}}{2}.\\]If $x = \\frac{1 - \\sqrt{5}}{2},$ then $x$ is negative, so\n\\[\\arctan \\frac{1}{x} + \\arctan \\frac{1}{x^3}\\]is negative.  Therefore, $x = \\boxed{\\frac{1 + \\sqrt{5}}{2}}.$"
+}

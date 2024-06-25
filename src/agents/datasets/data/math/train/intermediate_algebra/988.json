@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the sum of all the real coefficients of the expansion of ${(1+ix)}^{2009}$.  What is $\\log_{2}(S)$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By the Binomial Theorem,\n\\[(1 + ix)^{2009} = 1 + \\binom{2009}{1} ix - \\binom{2009}{2} x^2 - \\binom{2009}{3} ix^3 + \\binom{2009}{4} x^4 + \\dotsb.\\]Also,\n\\[(1 - ix)^{2009} = 1 - \\binom{2009}{1} ix - \\binom{2009}{2} x^2 + \\binom{2009}{3} ix^3 + \\binom{2009}{4} x^4 + \\dotsb.\\]Adding the two, all the imaginary terms cancel, and we are left with the real terms:\n\\[(1 + ix)^{2009} + (1 - ix)^{2009} = 2 \\left[ 1 - \\binom{2009}{2} x^2 + \\binom{2009}{4} x^4 + \\dotsb \\right].\\]Then we can find the sum of the real terms by dividing by 2 and setting $x = 1$:\n\\[\\frac{(1 + i)^{2009} + (1 - i)^{2009}}{2}.\\]We can write\n\\begin{align*}\n(1 + i)^{2009} &= (1 + i) (1 + i)^{2008} \\\\\n&= (1 + i) ((1 + i)^2)^{1004} \\\\\n&= (1 + i) (1 + 2i - 1)^{1004} \\\\\n&= 2^{1004} (1 + i).\n\\end{align*}Similarly, $(1 - i)^{2009} = 2^{1004} (1 - i),$ so\n\\[\\frac{(1 + i)^{2009} + (1 - i)^{2009}}{2} = \\frac{2^{1004} (1 + i) + 2^{1004} (1 - i)}{2} = 2^{1004}.\\]Therefore, $\\log_2 S = \\boxed{1004}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A certain organism begins as three cells. Each cell splits and becomes two cells at the end of two days. At the end of another two days, every cell of the organism splits and becomes two cells. This process lasts for a total of 8 days, and no cells die during this time. How many cells are there at the end of the $8^\\text{th}$ day?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "This is a geometric sequence with a first term of $3$ and a common ratio of $2$. At the end of the eighth day, we are at the 5th term of this sequence, so there are $3\\cdot2^4=\\boxed{48}$ cells then."
+}

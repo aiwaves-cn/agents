@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $\\sin a + \\sin b = \\sqrt{\\frac{5}{3}}$ and $\\cos a + \\cos b = 1$. What is $\\cos (a - b)$?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Squaring the given equations, we get $\\sin^2 a + 2 \\sin a \\sin b + \\sin^2 b = \\frac{5}{3}$ and $\\cos^2 a + 2 \\cos a \\cos b + \\cos^2 b = 1,$ so\n\\[\\sin^2 a + 2 \\sin a \\sin b + \\sin^2 b + \\cos^2 a + 2 \\cos a \\cos b + \\cos^2 b = \\frac{8}{3}.\\]Then $2 \\sin a \\sin b + 2 \\cos a \\cos b = \\frac{8}{3} - 2 = \\frac{2}{3},$ so from the angle subtraction formula,\n\\[\\cos (a - b) = \\cos a \\cos b + \\sin a \\sin b = \\frac{1}{2} \\cdot \\frac{2}{3} = \\boxed{\\frac{1}{3}}.\\]"
+}

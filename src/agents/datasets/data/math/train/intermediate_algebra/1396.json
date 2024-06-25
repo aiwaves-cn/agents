@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ and $y$ are positive real numbers such that $5x^2 + 10xy = x^3 + 2x^2 y,$ what is the value of $x$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Notice that we can factor out a $5x$ from each term on the left-hand side to give $5x(x+2y)$. Similarly, we can factor out an $x^2$ from each term on the right-hand side to give $x^2(x+2y)$. Thus, we have $5x(x+2y) = x^2(x+2y)$. Since $x$ and $y$ are positive, we can safely divide both sides by $x(x+2y),$ which gives $x = \\boxed{5}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all positive values of $c$ so that the inequality $x^2-6x+c<0$ has real solutions for $x$. Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We know that $x^2-6x+c$ must be negative somewhere, but since it opens upward (the leading coefficient is $1$) it must also be positive somewhere. This means it must cross the $x$-axis, so it must have real roots. If it has only $1$ real root, the quadratic will be tangent to the $x$-axis and will never be negative, so it must have $2$ real roots. Thus the discriminant $b^2-4ac$ must be positive. So we have $(-6)^2-4(1)(c)>0$, giving $36-4c>0\\Rightarrow 36>4c\\Rightarrow 9>c$. Since $c$ must be positive, we have $0<c<9$, or $\\boxed{(0,9)}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\dbinom{22}{19}$.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "\\begin{align*}\n\\dbinom{22}{19} &= \\dbinom{22}{3} \\\\\n&= \\dfrac{22!}{19!3!} \\\\\n&= \\dfrac{22\\times 21\\times 20}{3\\times 2\\times 1} \\\\\n&= 22 \\times \\dfrac{21}{3} \\times \\dfrac{20}{2} \\\\\n&= 22 \\times 7 \\times 10 \\\\\n&= \\boxed{1540}.\n\\end{align*}"
+}

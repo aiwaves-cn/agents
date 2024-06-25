@@ -1,0 +1,6 @@
+{
+    "problem": "Alice and Bob are playing the Smallest Positive Integer Game. Alice says, \"My number is 24.\" Bob says, \"What kind of silly smallest number is that? Every prime factor of your number is also a prime factor of my number.\"\n\nWhat is the smallest possible number that Bob could have? (Remember that Bob's number has to be a positive integer!)",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The prime factorization of $24$ is $2^3\\cdot3$, so $2$ and $3$ have to be prime factors of Bob's number as well. The smallest possible number is when each the exponents of both of them is $1$, giving $2\\cdot3=\\boxed{6}$."
+}

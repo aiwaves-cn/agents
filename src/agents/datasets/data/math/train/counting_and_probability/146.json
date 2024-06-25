@@ -1,0 +1,6 @@
+{
+    "problem": "In how many different ways can 3 men and 4 women be placed into two groups of two people and one group of three people if there must be at least one man and one woman in each group?  Note that identically sized groups are indistinguishable.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Since the two groups of two will each have one man and one woman, the group of three will have one man and two women. There are $\\binom{3}{1}=3$ ways to choose the man to be in the group of three, and $\\binom{4}{2}=6$ ways to choose the women in the group of three. After they have been chosen, there are 2 ways to pair up the remaining two men and women. Therefore, the total number of ways to place the people in groups is $3\\cdot 6\\cdot 2=\\boxed{36}$."
+}

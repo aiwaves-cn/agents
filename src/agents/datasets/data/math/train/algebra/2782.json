@@ -1,0 +1,6 @@
+{
+    "problem": "A line segment begins at $(2, 5)$. It is 10 units long and ends at the point $(-6, y)$ where $y > 0$. What is the value of $y$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We use the distance formula: \\begin{align*}\n\\sqrt{(2 - (-6))^2 + (y - 5)^2} &= \\sqrt{8^2 + (y - 5)^2} \\\\\n& = \\sqrt{y^2 - 10y + 89} \\\\\n& = 10.\n\\end{align*}Squaring both sides and rearranging terms, we find that \\begin{align*}\ny^2 - 10y + 89 &= 100 \\\\\ny^2 - 10y - 11 &= 0\\\\\n(y - 11)(y + 1) &= 0\n\\end{align*}Thus, $y = 11$ or $y = -1$. We are given that $y > 0$, so $y = \\boxed{11}$."
+}

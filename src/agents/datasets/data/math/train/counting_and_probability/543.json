@@ -1,0 +1,6 @@
+{
+    "problem": "How many subsets of the set $\\{1,2,3,4,5\\}$ contain the number 5?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Solution 1: For each of 1, 2, 3, and 4, we can either choose to include the number in the set, or choose to exclude it.  We therefore have 2 choices for each of these 4 numbers, which gives us a total of $2^4 = \\boxed{16}$ different subsets we can form.\n\nSolution 2: We can have either 5 by itself, 5 with one other number from the four, 5 with two other numbers, 5 with three other numbers, or 5 with all four other numbers. The number of ways to form a subset with 5 by itself is $\\binom{4}{0}$. The number of ways to form a subset with 5 and one other number is $\\binom{4}{1}$. Similarly, the number of ways to form a subset with 5 and two other numbers is $\\binom{4}{2}$, with three other numbers is $\\binom{4}{3}$, and with all four other numbers is $\\binom{4}{4}$. Thus, our answer is $1 + 4 + 6 + 4 + 1 = \\boxed{16}$."
+}

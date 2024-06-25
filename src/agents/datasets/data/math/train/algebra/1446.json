@@ -1,0 +1,6 @@
+{
+    "problem": "If $(3,17)$ and $(9,-4)$ are the coordinates of two opposite vertices of a rectangle, what is the sum of the $y$-coordinates of the other two vertices?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The midpoints of the diagonals of a rectangle coincide, so the midpoint of the line segment joining $(3,17)$ and $(9,-4)$ is also the midpoint of the line segment joining the other two vertices of the rectangle. The $y$-coordinate of a midpoint equals the average of the $y$-coordinates of the two endpoints. Therefore, the average of the $y$-coordinates of $(3,17)$ and $(9,-4)$ equals the average of the $y$-coordinates of the missing vertices.  Since the sum is twice the average, the sum of the $y$-coordinates of the missing vertices is the same as that of the given vertices: $17+(-4)=\\boxed{13}$."
+}

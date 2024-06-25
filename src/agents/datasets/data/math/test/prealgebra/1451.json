@@ -1,0 +1,6 @@
+{
+    "problem": "Kelly drove north for 9 miles and then east for 12 miles at an average rate of 42 miles per hour to arrive at the town of Prime. Brenda left from the same location, at the same time, and drove along a straight road to Prime at an average rate of 45 miles per hour. How many minutes earlier than Kelly did Brenda arrive?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We can start by drawing a diagram of the routes that each of them took: [asy]\nsize(150);\ndraw((0,0)--(0,9)--(12,9)--cycle,linewidth(1));\nlabel(\"9\",(0,4.5),W);\nlabel(\"12\",(6,9),N);\nlabel(\"15\",(6,4.5),SE);\n[/asy] The two routes form a 9-12-15 right triangle.  Kelly drove for $9+12=21$ miles at a rate of 42 miles per hour, so she drove for $21/42=.5$ hours which equals 30 minutes.  Brenda drove for 15 miles at an average rate of 45 miles per hour, so she drove for $15/45\\cdot 60=20$ minutes.  Thus, Brenda arrived $30-20=\\boxed{10}$ minutes earlier than Kelly."
+}

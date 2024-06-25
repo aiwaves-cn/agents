@@ -1,0 +1,6 @@
+{
+    "problem": "In a bag with 20 marbles, five of them are blue. How many blue marbles must be added to the bag so that the probability of selecting a blue marble at random is $\\frac{1}{2}$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "If we add $x$ blue marbles, then the fraction of blue marbles in the bag will be $\\frac{5 + x}{20 + x}$. We want this to equal $1/2$, so $\\frac{5 + x}{20 + x}= \\frac{1}{2}$. Clearing the fractions, we have $10 + 2x = 20 + x$. Solving for $x$, we find that $x = \\boxed{10}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "$100_{10}$ in base $b$ has exactly $5$ digits. What is the value of $b$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "For a base $b$ representation of $100_{10}$ to have exactly $5$ digits, the largest power of $b$ that is less than $100$ must be $4$. Therefore, we have the requirement that $b^4 \\le 100 < b^5$. We then realize that $b=3$ satisfies this requirement since $3^4 < 100 < 3^5$. We also realize that this is the only possible value of $b$ since if $b$ were equal to $2$, $b^5 = 2^5$ would be less than $100$ and if $b$ were equal to $4$, $b^4 = 4^4$ would be greater than $100$. Thus, our only solution is $b = \\boxed{3}$."
+}

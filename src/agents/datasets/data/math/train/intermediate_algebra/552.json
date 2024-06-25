@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_1,$ $a_2,$ $a_3,$ $\\dots$ be a sequence of real numbers satisfying\n\\[a_n = a_{n - 1} a_{n + 1}\\]for all $n \\ge 2.$  If $a_1 = 1 + \\sqrt{7}$ and $a_{1776} = 13 + \\sqrt{7},$ then determine $a_{2009}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the given recursion,\n\\[a_{n + 1} = \\frac{a_n}{a_{n - 1}}.\\]Let $a = a_1$ and $b = a_2.$  Then\n\\begin{align*}\na_3 &= \\frac{a_2}{a_1} = \\frac{b}{a}, \\\\\na_4 &= \\frac{a_3}{a_2} = \\frac{b/a}{b} = \\frac{1}{a}, \\\\\na_5 &= \\frac{a_4}{a_3} = \\frac{1/a}{b/a} = \\frac{1}{b}, \\\\\na_6 &= \\frac{a_5}{a_4} = \\frac{1/b}{1/a} = \\frac{a}{b}, \\\\\na_7 &= \\frac{a_6}{a_5} = \\frac{a/b}{1/b} = a, \\\\\na_8 &= \\frac{a_7}{a_6} = \\frac{a}{a/b} = b.\n\\end{align*}Since $a_7 = a = a_1$ and $a_8 = b = a_2,$ and each term depends only on the two previous terms, the sequence is periodic from here on.  Furthermore, the length of the period is 6.  Therefore, $a_6 = a_{1776} = 13 + \\sqrt{7}$ and $a_{2009} = a_5.$  Also, $a_7 = a_1,$ and\n\\[a_7 = \\frac{a_6}{a_5}.\\]Hence,\n\\[a_5 = \\frac{a_6}{a_7} = \\frac{13 + \\sqrt{7}}{1 + \\sqrt{7}} = \\frac{(13 + \\sqrt{7})(\\sqrt{7} - 1)}{(1 + \\sqrt{7})(\\sqrt{7} - 1)} = \\frac{-6 + 12 \\sqrt{7}}{6} = \\boxed{-1 + 2 \\sqrt{7}}.\\]"
+}

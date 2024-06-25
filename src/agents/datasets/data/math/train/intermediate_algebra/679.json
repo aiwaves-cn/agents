@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be a monic polynomial of degree 6 such that $p(1) = 1,$ $p(2) = 2,$ $p(3) = 3,$ $p(4) = 4,$ $p(5) = 5,$ and $p(6) = 6.$  Find $p(7).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Consider the polynomial $q(x) = p(x) - x.$  This polynomial becomes 0 at $x = 1,$ 2, 3, 4, 5, and 6, so it has $x - 1,$ $x - 2,$ $x - 3,$ $x - 4,$ $x - 5,$ and $x - 6$ as factors.  Also, $p(x)$ is a monic polynomial of degree 6, so $q(x)$ is a monic polynomial of degree 6.  Hence,\n\\[q(x) = (x - 1)(x - 2)(x - 3)(x - 4)(x - 5)(x - 6).\\]Then $q(7) = 6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 720,$ so $p(7) = q(7) + 7 = \\boxed{727}.$"
+}

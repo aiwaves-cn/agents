@@ -1,0 +1,6 @@
+{
+    "problem": "The sum $10 e^{2 \\pi i/11} + 10 e^{15 \\pi i/22}$ is expressed as $re^{i \\theta}.$  Enter the ordered pair $(r, \\theta).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The average of $\\frac{2 \\pi}{11}$ and $\\frac{15 \\pi}{22}$ is $\\frac{19 \\pi}{44}.$  We can then write\n\\begin{align*}\n10 e^{2 \\pi i/11} + 10 e^{15 \\pi i/22} &= 10 e^{19 \\pi i/44} (e^{-\\pi i/4} + e^{\\pi i/4}) \\\\\n&= 10 e^{19 \\pi i/44} \\left( \\cos \\frac{\\pi}{4} + i \\sin \\frac{\\pi}{4} + \\cos \\frac{\\pi}{4} - i \\sin \\frac{\\pi}{4} \\right) \\\\\n&= 10 \\sqrt{2} e^{19 \\pi i/44}.\n\\end{align*}Thus, $(r, \\theta) = \\boxed{\\left( 10 \\sqrt{2}, \\frac{19 \\pi}{44} \\right)}.$"
+}

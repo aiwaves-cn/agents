@@ -1,0 +1,6 @@
+{
+    "problem": "In the United States, coins have the following thicknesses: penny, 1.55 mm; nickel, 1.95 mm; dime, 1.35 mm; quarter, 1.75 mm. If a stack of these coins is exactly 14 mm high, how many coins are in the stack?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The height in millimeters of any stack with an odd number of coins has a 5 in the hundredth place.  The height of any two coins has an odd digit in the tenth place and a zero in the hundredth place.  Therefore any stack with zeros in both its tenth and hundredth places must consist of a number of coins that is a multiple of 4. The highest stack of 4 coins has a height of $4(1.95)= 7.8 \\; \\text{mm}$, and the shortest stack of 12 coins has a height of $12(1.35)= 16.2 \\; \\text{mm}$, so no number other than $\\boxed{8}$ can work. Note that a stack of 8 quarters has a height of $8(1.75)= 14\\; \\text{mm}$."
+}

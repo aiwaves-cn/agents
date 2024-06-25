@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be a monic polynomial of degree 4, such that $p(1) = 17,$ $p(2) = 34,$ and $p(3) = 51.$  Find $p(0) + p(4).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $f(x) = p(x) - 17x.$  Then $f(1) = f(2) = f(3) = 0.$  Also, $f(x)$ is a monic polynomial of degree 4, so\n\\[f(x) = (x - 1)(x - 2)(x - 3)(x - r),\\]for some real number $r.$  Then\n\\[p(x) = f(x) + 17x = (x - 1)(x - 2)(x - 3)(x - r) + 17x.\\]Therefore,\n\\begin{align*}\np(0) + p(4) &= (0 - 1)(0 - 2)(0 - 3)(0 - r) + 17 \\cdot 0 + (4 - 1)(4 - 2)(4 - 3)(4 - r) + 17 \\cdot 4 \\\\\n&= 6r + 24 - 6r + 68 \\\\\n&= \\boxed{92}.\n\\end{align*}"
+}

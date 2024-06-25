@@ -1,0 +1,6 @@
+{
+    "problem": "Given that the absolute value of the difference of the two roots of $ax^2 + 5x - 3 = 0$ is $\\frac{\\sqrt{61}}{3}$, and $a$ is positive, what is the value of $a$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We begin by using the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ to find the values of the two roots. From this, we get that $x = \\frac{-5 \\pm \\sqrt{25 + 12a}}{2a}$. Then, we can find $$x_1 - x_2 = \\frac{-5 + \\sqrt{25 + 12a}}{2a} - \\frac{-5 - \\sqrt{25 + 12a}}{2a} = \\frac{\\sqrt{25 + 12a}}{a}.$$Hence,\n\\[\\frac{\\sqrt{12a + 25}}{a} = \\frac{\\sqrt{61}}{3}.\\]Squaring both sides, we get\n\\[\\frac{12a + 25}{a^2} = \\frac{61}{9},\\]which simplifies to $61a^2 - 108a - 225 = 0$.  This equation factors as $(a - 3)(61a + 75) = 0$.  Since $a$ is positive, $a = \\boxed{3}$."
+}

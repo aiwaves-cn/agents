@@ -1,0 +1,6 @@
+{
+    "problem": "Sally, Wei-Hwa, and Zoe are playing a game of marbles involving first arranging as many piles of 10 marbles as possible.  Sally brought 239 marbles, Wei-Hwa brought 174 marbles, and Zoe brought 83 marbles.  If all their marbles are grouped together, how many must be removed in order to start the game?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "The marbles will be grouped into piles of 10.  We might as well group the number of marbles each of Sally, Wei-Hwa, and Zoe brought into as many piles of 10 as possible before sorting out the rest.  This means we only need to consider the modulo 10 residues of the numbers of marbles each of them brought:  \\begin{align*} 239 &\\equiv 9 \\pmod{10} \\\\\n174 &\\equiv 4 \\pmod{10} \\\\\n83 &\\equiv 3 \\pmod{10}\n\\end{align*}  Our goal is to find the modulo 10 residue of the total number of marbles.  We find this by adding the residues above: $9 + 4 + 3 = 16 \\equiv \\boxed{6} \\pmod{10}$.  Since we were working in modulo 10, this is the same as a units digit calculation."
+}

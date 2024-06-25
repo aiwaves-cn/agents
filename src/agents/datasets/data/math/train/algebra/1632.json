@@ -1,0 +1,6 @@
+{
+    "problem": "How many points of intersection are there between the graphs of the following equations: \\begin{align*}\ny &=|2x + 5|, \\\\\ny &= -|3x - 2|\n\\end{align*}",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The first function has a minimum value of 0, while the second has a maximum of 0.  Also, their zeros occur at different spots (in the former case, at $x = -\\frac{5}{2}$, in the latter, at $x = \\frac{2}{3}$).  Hence their graphs do not intersect, so our answer is $\\boxed{0}.$"
+}

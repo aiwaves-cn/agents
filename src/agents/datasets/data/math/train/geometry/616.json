@@ -1,0 +1,6 @@
+{
+    "problem": "A triangle has sides of length 5 and 6 units. The length of the third side is $x$ units, where $x$ is an integer. What is the largest possible perimeter of the triangle?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "If a triangle has sides of length 5 and 6 units, that means the third side must be smaller than 11 units. Since the third side is also an integer length, that means the third side can be at most 10 units. Verifying that 5 units, 6 units, and 10 units do make a valid triangle, we can see that the largest possible perimeter is $5 + 6 + 10\\text{ units} = \\boxed{21\\text{ units}}.$"
+}

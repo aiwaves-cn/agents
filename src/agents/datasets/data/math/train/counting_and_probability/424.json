@@ -1,0 +1,6 @@
+{
+    "problem": "How many three digit numbers are left if we exclude all three digit numbers in which there are exactly two digits the same, but these two digits are not adjacent?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The only three digit numbers which are ruled out are numbers of the form $ABA$, where A and B are different digits. There are 9 ways to choose A, since it can't be 0, and once A has been chosen there are 9 ways to choose B. Since there are $9\\cdot10\\cdot10=900$ total three digit numbers, and $9\\cdot9=81$ numbers which aren't valid, there are $900-81=\\boxed{819}$ valid numbers."
+}

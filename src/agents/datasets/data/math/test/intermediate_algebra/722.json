@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the domain of the function\n\n$f(x)=\\frac{1}{\\lfloor x^2+3x+3\\rfloor}$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The discriminant of the quadratic is $3^2-4(3)=-3<0$, so the quadratic has no real roots and is always positive for real inputs.  The function is undefined if $0\\leq x^2+3x+3<1$, which since the quadratic is always positive is equivalent to $x^2+3x+3<1$.\n\nTo find when $x^2+3x+3=1$, we switch to $x^2+3x+2=0$ and factor as $(x+1)(x+2)=0$, so $x=-1$ or $x=-2$.  The new quadratic is negative between these points, so the quadratic $x^2 + 3x + 3$ is less than $1$ between these points, which makes the function undefined.  So the domain of $f(x)$ is\n\\[x \\in \\boxed{(-\\infty,-2] \\cup [-1,\\infty)}.\\]"
+}

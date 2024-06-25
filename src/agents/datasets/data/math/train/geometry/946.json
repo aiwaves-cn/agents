@@ -1,0 +1,6 @@
+{
+    "problem": "Tony will paint 16 right, cylindrical columns. The top face and bottom face of each column will be covered, so those parts will  not be painted.  Each column is 18 feet tall and has a diameter  of 10 feet. One gallon of paint will cover 350 square feet. If paint is sold only in full gallons, how many gallons of paint must Tony buy to paint all 16 columns?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since each column has a radius of 5 feet and height of 18 feet, the lateral surface area of each column is $2 \\pi (5) \\cdot 18 = 180 \\pi$ square feet. Thus, the lateral surface area of 16 columns is $180\\pi\\cdot16\\approx9043$ square feet. Since each gallon of paint covers 350 square feet, and since $9043/350\\approx25.8$, we need $\\boxed{26}$ gallons of paint."
+}

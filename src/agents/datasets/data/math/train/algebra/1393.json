@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $n$: $\\frac{2-n}{n+1} + \\frac{2n-4}{2-n} = 1$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Note that $\\frac{2n-4}{2-n} = \\frac{2(n-2)}{-(n-2)}=-2$.  From this, we can rewrite the given equation and solve: \\begin{align*}\n\\frac{2-n}{n+1}-2&=1\\\\\n\\Rightarrow \\qquad \\frac{2-n}{n+1}&=3\\\\\n\\Rightarrow \\qquad 2-n&=3n+3\\\\\n\\Rightarrow \\qquad -1&=4n\\\\\n\\Rightarrow \\qquad \\boxed{-\\frac{1}{4}}&=n\n\\end{align*}"
+}

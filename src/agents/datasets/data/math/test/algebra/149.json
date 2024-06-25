@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\nx^2+9 &\\text{if }x<-5, \\\\\n3x-8&\\text{if }x\\ge-5.\n\\end{cases}\n\\]If $f(x)=10$, find the sum of all possible values of $x$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We begin by looking at each of the two possible cases; either $x<-5$ and $f(x)=x^2+9=10$, or $x\\ge-5$ and $f(x)=3x-8=10$.\n\nTackling the first case, we find that the only possible values of $x$ that could satisfy $x^2+9=10\\Rightarrow x^2=1$ are 1 and -1, neither of which are less than -5, thus yielding no possible solutions.\n\nIn the second case, the only possible value of $x$ that satisfies $3x-8=10$ is 6. Since this value is greater than or equal to -5, it satisfies both conditions. Thus, the only possible value of $x$ for which $f(x)=10$ is $6$, which means the sum of all possible values is also $\\boxed{6}$."
+}

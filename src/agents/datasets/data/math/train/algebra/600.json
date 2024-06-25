@@ -1,0 +1,6 @@
+{
+    "problem": "$k, a_2, a_3$ and $k, b_2, b_3$ are both nonconstant geometric sequences with different common ratios.  We have  $$a_3-b_3=3(a_2-b_2).$$Find the sum of the common ratios of the two sequences.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let the common ratio of the first sequence be $p$ and the common ratio of the second sequence be $r$.  Then the equation becomes\n\n$$kp^2-kr^2=3(kp-kr)$$Dividing both sides by $k$ (since the sequences are nonconstant, no term can be $0$), we get\n\n$$p^2-r^2=3(p-r)$$The left side factors as $(p-r)(p+r)$.  Since $p\\neq r$, we can divide by $p-r$ to get\n\n$$p+r=\\boxed{3}$$"
+}

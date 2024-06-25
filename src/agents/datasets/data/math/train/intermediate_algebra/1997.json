@@ -1,0 +1,6 @@
+{
+    "problem": "Consider a sequence $x_1,$ $x_2,$ $x_3,$ $\\dots$ defined by\n\\begin{align*}\nx_1 &= \\sqrt[3]{3}, \\\\\nx_2 &= (\\sqrt[3]{3})^{\\sqrt[3]{3}},\n\\end{align*}and in general,\n\\[x_n = (x_{n - 1})^{\\sqrt[3]{3}}\\]for $n > 1.$   What is the smallest value of $n$ for which $x_n$ is an integer?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[x_3 = (\\sqrt[3]{3})^{\\sqrt[3]{3}})^{\\sqrt[3]{3}} = (\\sqrt[3]{3})^{\\sqrt[3]{9}},\\]and\n\\[x_4 = (\\sqrt[3]{3})^{\\sqrt[9]{3}})^{\\sqrt[3]{3}} = (\\sqrt[3]{3})^{\\sqrt[3]{27}} = (\\sqrt[3]{3})^3 = 3,\\]so the smallest such $n$ is $\\boxed{4}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A card is chosen at random from a standard deck of 52 cards.  What is the probability that the card is a Queen or a $\\diamondsuit$ (or both)?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are 52 possible outcomes, since there are 52 cards we can choose. There are 4 ways to choose a Queen, and there are 13 ways to choose a $\\diamondsuit$, but the outcomes are not mutually exclusive!  We might choose the Queen of $\\diamondsuit$, which belongs to both outcomes.  So we must subtract one to correct for this overcounting.  Thus are are $17-1 = 16$ successful outcomes, and the probability is $\\frac{16}{52} =\\boxed{\\frac{4}{13}}$."
+}

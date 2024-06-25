@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $x^2+18x=27$ has two solutions. The positive solution has the form $\\sqrt{a}-b$ for positive natural numbers $a$ and $b$. What is $a+b$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Completing the square, we add $(18/2)^2=81$ to both sides of the equation to get $x^2+18x+81=108 \\Rightarrow (x+9)^2=108$. Taking the square root of both sides, we get $x+9=\\sqrt{108}$ (we take the positive square root because we want the positive solution), or $x=\\sqrt{108}-9$. Thus, $a=108$ and $b=9$, so $a+b=\\boxed{117}$."
+}

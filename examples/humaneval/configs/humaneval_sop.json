@@ -1,0 +1,83 @@
+{
+    "nodes": {
+        "Receive_Incomplete_Code": {
+            "node_name": "Receive_Incomplete_Code",
+            "node_description": "Receive the first half of the incomplete Python code.",
+            "node_roles_description": {
+                "Code Reviewer": "Responsible for reviewing the first half of the incomplete Python code to understand its structure, logic, and existing functionality."
+            },
+            "begin_role": "Code Reviewer",
+            "begin_query": null,
+            "controller": {
+                "max_chat_nums": 10,
+                "transit_type": "order",
+                "transit_system_prompt": "To ensure the subtask 'Receive the first half of the incomplete Python code' is complete, define the following rules based on the output of the roles:\n\n1. **Code Reviewer Responsibilities**: The Code Reviewer must thoroughly understand the structure, logic, and existing functionality of the provided code snippet.\n\n2. **Developer Responsibilities**: The Developer must complete the second half of the code, ensuring it is functionally correct and integrates seamlessly with the first half.\n\nIf all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                "transit_last_prompt": "The nodes that can be transited to are: ['Receive_Incomplete_Code', 'Finalize_Code']. Please decide the next node that should be transited to, and finally, output <node>node_name</node> where node_name is the name of the next node. Let's think step by step.",
+                "transit_extract_word": "node",
+                "route_type": "order",
+                "route_system_prompt": "",
+                "route_last_prompt": null,
+                "route_extract_word": "role"
+            },
+            "node_primary_prompts": {},
+            "node_prompt_templates": {
+                "CodeReview": "You are now a code master. Please complete the following additional code, ensure the function handles inputs and matches the expected outputs as described (just continue writing and put result between <result> and </result>, do not output any other content!)\n{prompt}"
+            },
+            "node_prompt_paddings": {
+                "Code Reviewer": {
+                    "CodeReview": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    }
+                }
+            },
+            "kb": null
+        },
+        "Finalize_Code": {
+            "node_name": "Finalize_Code",
+            "node_description": "Finalize the code.",
+            "node_roles_description": {
+                "Result Extractor": "Extracts the final result from the code."
+            },
+            "begin_role": "Code Cleaner",
+            "begin_query": null,
+            "controller": {
+                "max_chat_nums": 10,
+                "transit_type": "order",
+                "transit_system_prompt": "",
+                "transit_last_prompt": "The nodes that can be transited to are: ['Finalize_Code', 'end_node']. Please decide the next node that should be transited to, and finally, output <node>node_name</node> where node_name is the name of the next node. Let's think step by step.",
+                "transit_extract_word": "node",
+                "route_type": "order",
+                "route_system_prompt": "",
+                "route_last_prompt": null,
+                "route_extract_word": "role"
+            },
+            "node_primary_prompts": {},
+            "node_prompt_templates": {
+                "extract_result": "As a code master, your task is to improve the another agent's output code based on messages before. Your evaluation should consider syntax accuracy, logical completeness, and adherence to the initial intent of the code. If the agent's completion and corrections meet the required standards, output the current code as it is. If the completion or corrections do not satisfy the criteria, please provide the corrected version of the code. Please complete the code (just continue writing and put result between <result> and </result>, do not output any other content!)\n{prompt}"
+            },
+            "node_prompt_paddings": {
+                "Result Extractor": {
+                    "extract_result": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    }
+                }
+            },
+            "kb": null
+        }
+    },
+    "edges": {
+        "Receive_Incomplete_Code": [
+            "Receive_Incomplete_Code",
+            "Finalize_Code"
+        ],
+        "Finalize_Code": [
+            "Finalize_Code",
+            "end_node"
+        ]
+    },
+    "root": "Receive_Incomplete_Code",
+    "end": "end_node",
+    "global_kb": null
+}

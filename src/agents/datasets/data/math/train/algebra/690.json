@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $r$ such that $\\lfloor r \\rfloor + r = 16.5$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, we note that $r$ must be positive, since otherwise $\\lfloor r \\rfloor + r$ is nonpositive. Next, we know that the decimal part of $r$ must be $0.5$. We write $r$ as $n+0.5$, where $n$ is the greatest integer less than $r.$ Therefore, we can write $\\lfloor r \\rfloor + r$ as $n+n+0.5=16.5$. Solving, we get $n=8$. Therefore, the only value $r$ that satisfies the equation is $8+0.5=\\boxed{8.5}$."
+}

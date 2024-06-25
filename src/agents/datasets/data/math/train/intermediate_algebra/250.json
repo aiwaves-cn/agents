@@ -1,0 +1,6 @@
+{
+    "problem": "A circle is tangent to the lines $4x - 3y = 30$ and $4x - 3y = -10.$  The center of the circle lies on the line $2x + y = 0.$  Find the center of the circle.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Note that the lines $4x - 3y = 30$ and $4x - 3y = -10$ are parallel, so the center of the circle lies on the line which is exactly halfway between these lines, which is $4x - 3y = 10.$\n\n[asy]\nunitsize(2 cm);\n\npair A, B;\n\nA = dir(-20);\nB = dir(160);\n\ndraw(Circle((0,0),1));\ndraw((A + 1.5*dir(70))--(A - 1.5*dir(70)));\ndraw((B + 1.5*dir(70))--(B - 1.5*dir(70)));\ndraw((1.5*dir(70))--(-1.5*dir(70)),dashed);\n\nlabel(\"$4x - 3y = -10$\", B + 1.5*dir(70), N);\nlabel(\"$4x - 3y = 30$\", A + 1.5*dir(70), N);\nlabel(\"$4x - 3y = 10$\", -1.5*dir(70), S);\n\ndot((0,0));\n[/asy]\n\nSolving the system $2x + y = 0$ and $4x - 3y = 10,$ we find $x = 1$ and $y = -2.$  Therefore, the center of the circle is $\\boxed{(1,-2)}.$"
+}

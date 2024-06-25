@@ -1,0 +1,6 @@
+{
+    "problem": "How many pairs of positive integers $(a,b)$ satisfy $\\frac{1}{a} + \\frac{1}{b}=\\frac{2}{17}$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Simplifying $\\frac{1}{a}+\\frac{1}{b}=\\frac{2}{17}$, we have:  \\begin{align*}\n2ab-17a-17b&=0\\\\\n\\Rightarrow 4ab-34a-34b+289&=289\\\\\n\\Rightarrow (2a-17)(2b-17)&=289.\n\\end{align*}Since $289=17^2$, we have three possibilities:\n\n$2a-17=289$, $2b-17=1$\n$2a-17=1$, $2b-17=289$\n$2a-17=17$, $2b-17=17$\n\nThe first possibility gives us $a = 153$, $b= 9$, the second gives us $a=9$, $b=153$, and the last gives $a=b=17$.  So, there are $\\boxed{3}$ pairs of integers that satisfy the problem."
+}

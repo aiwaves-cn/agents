@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $MNO$, $\\tan{M}=\\frac{5}{4}$, $OM=8$, and $\\angle O = 90^\\circ$.  Find $MN$.  Express your answer in simplest radical form.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Our triangle is as shown below.\n\n[asy]\nsize(100);\ndraw((0,0)--(8,0)--(0,10)--cycle,black+linewidth(1));\ndraw(rightanglemark((8,0),(0,0),(0,10),20),black+linewidth(1));\nlabel(\"$O$\",(0,0),W);\nlabel(\"$M$\",(8,0),E);\nlabel(\"$N$\",(0,10),W);\nlabel(\"8\",(0,0)--(8,0),S);\n[/asy]\n\nSince $\\tan{M}=\\frac{5}{4}$, we have $\\dfrac{NO}{OM} = \\dfrac{5}{4}$, so  $$NO = \\frac{5}{4}OM = \\frac{5}{4}\\cdot 8 = 10.$$Then, from the Pythagorean Theorem, we have \\begin{align*}\nMN&=\\sqrt{NO^2+OM^2}\\\\\n&=\\sqrt{10^2+8^2}=\\sqrt{164}=\\boxed{2\\sqrt{41}}.\\end{align*}"
+}

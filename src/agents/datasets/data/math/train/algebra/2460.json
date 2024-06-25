@@ -1,0 +1,6 @@
+{
+    "problem": "Joann ate a total of 100 lollipops in five days. Each day after the first day she ate six more than she had eaten on the previous day. How many lollipops did she eat on the third day?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let the number of lollipops Joann ate on the first day be $a-12$, so she ate $a-6$ lollipops on the second day, $a$ on the third, and so on, eating $(a-12)+(5-1)\\cdot 6=a+12$ lollipops on the last day. The total number of lollipops is $5a$, which we are told is 100. Thus, $5a=100$ and $a=20$. Since $a$ is the number of lollipops Joann ate on the third day, our answer is $\\boxed{20}$ lollipops."
+}

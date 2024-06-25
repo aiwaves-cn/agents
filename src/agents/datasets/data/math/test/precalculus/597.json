@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be vectors such that $\\|\\mathbf{a} \\times \\mathbf{b}\\| = 2.$  Compute\n\\[\\mathbf{a} \\cdot (\\mathbf{b} \\times (\\mathbf{a} \\times \\mathbf{b})).\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By the scalar triple product, for any vectors $\\mathbf{p},$ $\\mathbf{q}$ and $\\mathbf{r},$\n\\[\\mathbf{p} \\cdot (\\mathbf{q} \\times \\mathbf{r}) = \\mathbf{q} \\cdot (\\mathbf{r} \\times \\mathbf{p}) = \\mathbf{r} \\cdot (\\mathbf{p} \\times \\mathbf{q}).\\]Hence,\n\\begin{align*}\n\\mathbf{a} \\cdot (\\mathbf{b} \\times (\\mathbf{a} \\times \\mathbf{b})) &= (\\mathbf{a} \\times \\mathbf{b}) \\cdot (\\mathbf{a} \\times \\mathbf{b}) \\\\\n&= \\|\\mathbf{a} \\times \\mathbf{b}\\|^2 \\\\\n&= \\boxed{4}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a complex number such that\n\\[z^3 + \\frac{1}{z^3} = 52.\\]Find all possible values of\n\\[z + \\frac{1}{z}.\\]Enter all possible values, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[w = z + \\frac{1}{z}.\\]Then\n\\begin{align*}\nw^3 &= z^3 + 3z^2 \\cdot \\frac{1}{z} + 3z \\cdot \\frac{1}{z^2} + \\frac{1}{z^3} \\\\\n&= z^3 + \\frac{1}{z^3} + 3 \\left( z + \\frac{1}{z} \\right) \\\\\n&= 52 + 3w,\n\\end{align*}so $w^3 - 3w - 52 = 0.$  This equation factors as $(w - 4)(w^2 + 4w + 13) = 0,$ so $w = 4$ or $w^2 + 4w + 13 = 0.$\n\nFor $w^2 + 4w + 13 = 0,$ completing the square, we get\n\\[(w + 2)^2 = -9.\\]Then $w + 2 = \\pm 3i,$ so $w = -2 \\pm 3i.$\n\nTherefore, the possible values of $w$ are $\\boxed{4, -2 + 3i, -2 - 3i}.$"
+}

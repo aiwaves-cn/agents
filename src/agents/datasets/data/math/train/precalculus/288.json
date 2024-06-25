@@ -1,0 +1,6 @@
+{
+    "problem": "For how many positive integers $n$ less than or equal to 1000 is $$(\\sin t+i\\cos t)^n=\\sin nt+i\\cos nt$$true for all real $t$?",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Note that \\begin{align*}(\\sin t+i\\cos t)^n\n&=\\left[\\cos\\left({{\\pi}\\over2}-t\\right)\n+i\\sin\\left({{\\pi}\\over2}-t\\right)\\right]^n \\\\ &=\\cos\nn\\left({{\\pi}\\over2}-t\\right)+ i\\sin\nn\\left({{\\pi}\\over2}-t\\right) \\\\\n&=\\cos\\left({{n\\pi}\\over2}-nt\\right)+\ni\\sin\\left({{n\\pi}\\over2}-nt\\right),\\end{align*}and that $\\displaystyle\n\\sin nt+i\\cos nt =\\cos\\left({{\\pi}\\over2}-nt\\right)\n+i\\sin\\left({{\\pi}\\over2}-nt\\right)$.  Thus the given condition is equivalent to $$\\cos\\left({{n\\pi}\\over2}-nt\\right) =\n\\cos\\left({{\\pi}\\over2}-nt\\right) \\quad {\\rm and} \\quad\n\\sin\\left({{n\\pi}\\over2}-nt\\right) =\n\\sin\\left({{\\pi}\\over2}-nt\\right).$$In general, $\\cos\\alpha=\\cos\\beta$ and $\\sin\\alpha=\\sin\\beta$ if and only if $\\alpha -\\beta=2\\pi k$. Thus $$\n{{n\\pi}\\over2}-nt-{{\\pi}\\over2}+nt=2\\pi k,$$which yields $n=4k+1$. Because $1\\le n\\le1000$, conclude that $0\\le k\\le 249$, so there are $\\boxed{250}$ values of $n$ that satisfy the given conditions."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $160\\div \\left(10+11\\cdot 2\\right)$.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Recall that we must perform the operations inside the parentheses first.  So, we must simplify $10+11\\cdot 2$ first.  Of these operations, we must do the multiplication and then the addition because multiplication and division must be done before addition and subtraction.  We get \\begin{align*}10+11\\cdot 2 &=10+22 \\\\ &=32.\\end{align*}Now, we substitute back into the original expression and do the division.  Therefore, \\begin{align*}160\\div \\left(10+11\\cdot 2\\right)&=160\\div 32 \\\\ &=\\boxed{5}.\\end{align*}"
+}

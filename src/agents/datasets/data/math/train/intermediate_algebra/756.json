@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_1,$ $a_2,$ $\\dots$ be a sequence of positive real numbers such that\n\\[a_n = 11a_{n - 1} - n\\]for all $n > 1.$  Find the smallest possible value of $a_1.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $b_n = a_{n + 1} - a_n.$  Then\n\\begin{align*}\nb_n &= (11a_n - (n + 1)) - a_n \\\\\n&= 10a_n - (n + 1) \\\\\n&= 10(11a_{n - 1} - n) - (n + 1) \\\\\n&= 11(10a_{n - 1} - n) - 1 \\\\\n&= 11b_{n - 1} - 1.\n\\end{align*}Hence,\n\\[b_n - \\frac{1}{10} = 11b_{n - 1} - \\frac{11}{10} = 11 \\left( b_{n - 1} - \\frac{1}{10} \\right).\\]If $b_1 < \\frac{1}{10},$ then the sequence $b_1,$ $b_2,$ $\\dots$ is decreasing and goes to $-\\infty,$ so the sequence $a_1,$ $a_2,$ $\\dots$ goes to $-\\infty$ as well.\n\nHence, $b_1 \\ge \\frac{1}{10}.$  Then $a_2 - a_1 \\ge \\frac{1}{10},$ so\n\\[11a_1 - 2 = a_2 \\ge a_1 + \\frac{1}{10}.\\]This implies $a_1 \\ge \\frac{21}{100}.$\n\nIf $a_1= \\frac{21}{100},$ then the sequence $a_1,$ $a_2,$ $\\dots$ is increasing (since $b_n = \\frac{1}{10}$ for all $n$), so all the terms are positive.  Therefore, the smallest possible value of $a_1$ is $\\boxed{\\frac{21}{100}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "At the beginning of a program, the 105 members of a marching band stand in a rectangular formation named Formation $A$. All of the band members then move into Formation $B$, which is a different rectangular formation with six more rows, but with two fewer band members per row. How many rows are in Formation $A$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let there be $x$ rows with $y$ band members per row in Formation $A$. Then we have $xy=105$. From the information about Formation $B$, we have $(x+6)(y-2)=105$. Multiplying and substituting $xy=105$, we get $xy-2x+6y-12=105-2x+6y-12=105\\Leftrightarrow -2x+6y=12\\Leftrightarrow x=3y-6$. We now substitute $3y-6$ for $x$ in $xy=105$ and use the quadratic formula to solve the resulting quadratic equation, $3y^2-6y-105=0$. The positive solution, $y=7$, gives $x=15$. Thus, there are $\\boxed{15}$ rows in Formation $A$."
+}

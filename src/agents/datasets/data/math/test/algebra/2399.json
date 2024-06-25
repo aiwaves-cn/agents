@@ -1,0 +1,6 @@
+{
+    "problem": "If $j$, $k$, and $l$ are positive with $jk=24$, $jl = 48$, and $kl=18$, find $j+k+l$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Since $$j=\\frac{24}{k}=\\frac{48}{l}$$we have $l = 2k$. So $18\n= 2k^2$, which means that $9 = k^2$. Since $k$ has to be positive, this implies that $k = 3$. This means that $j = 8$, and $l = 6$. Hence $j+k+l = \\boxed{17}$.\n\nOR\n\nTake the product of the equations to get $jk\\cdot jl\n\\cdot kl = 24 \\cdot 48 \\cdot 18$. Thus $$(jkl)^2 = 20736.$$So $(jkl)^2 =\n(144)^2$, and we have $jkl = 144$. Therefore, $$j = \\frac{jkl}{kl} = \\frac{144}{18} = 8.$$From this it follows that $k=3$ and $l=6$, so the sum is $8+3+6=\\boxed{17}$."
+}

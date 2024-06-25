@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix that corresponds to rotating about the origin by an angle of $120^\\circ$ counter-clockwise.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The transformation that rotates about the origin by an angle of $120^\\circ$ counter-clockwise takes $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ to $\\begin{pmatrix} -1/2 \\\\ \\sqrt{3}/2 \\end{pmatrix},$ and $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ to $\\begin{pmatrix} -\\sqrt{3}/2 \\\\ -1/2 \\end{pmatrix},$ so the matrix is\n\\[\\boxed{\\begin{pmatrix} -1/2 & -\\sqrt{3}/2 \\\\ \\sqrt{3}/2 & -1/2 \\end{pmatrix}}.\\]"
+}

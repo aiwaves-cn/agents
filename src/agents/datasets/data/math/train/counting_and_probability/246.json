@@ -1,0 +1,6 @@
+{
+    "problem": "A pizza parlor offers six toppings. What is the greatest number of four-topping pizzas that can be made such that no two pizzas have the same topping combination?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Because there are 6 choices of toppings, and each pizza must have 4 of them, there are ${6 \\choose 4} = \\boxed{15}$ four-topping pizzas."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "When the graph of $y = 2x^2 - x + 7$ is shifted four units to the right, we obtain the graph of $y = ax^2 + bx + c$.  Find $a + b + c$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "When we shift the graph of $y = 2x^2 - x + 7$ four units to the right, we obtain the graph of $y = 2(x - 4)^2 - (x - 4) + 7$, which simplifies to $y = 2x^2 - 17x + 43$.  Therefore, $a + b + c = 2 - 17 + 43 = \\boxed{28}$.\n\nAnother way to solve the problem is as follows: The graph of $y = ax^2 + bx + c$ always passes through the point $(1, a + b + c)$.  In other words, $a + b + c$ is the $y$-coordinate of the point on the parabola whose $x$-coordinate is 1.  But this parabola is obtained by shifting the graph of $y = 2x^2 - x + 7$ four units to the right, so $a + b + c$ is also the $y$-coordinate of the point on the original parabola whose $x$-coordinate is $1 - 4 = -3$.  This $y$-coordinate is equal to $2 \\cdot (-3)^2 - (-3) + 7 = 28$."
+}

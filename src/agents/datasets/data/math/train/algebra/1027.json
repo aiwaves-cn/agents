@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\n3x^2 + 2&\\text{if } x\\le 3, \\\\\nax - 1 &\\text{if } x>3.\n\\end{cases}\n\\]Find $a$ if the graph of $y=f(x)$ is continuous (which means the graph can be drawn without lifting your pencil from the paper).",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If the graph of $f$ is continuous, then the graphs of the two cases must meet when $x=3$, which (loosely speaking) is the dividing point between the two cases.  Therefore, we must have $3(3^2) + 2 = 3a - 1$.  Solving this equation gives $a = \\boxed{10}$."
+}

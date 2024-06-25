@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the equation $|y-6| + 2y = 9$ for $y$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We consider two cases, $y\\ge 6$ and $y < 6$.\n\nCase 1: $y \\ge 6:$  If $y \\ge 6$, then $|y-6| = y-6$ and our equation is $y-6+2y=9$.  So, we have $3y = 15$, or $y=5$. However, $y=5$ does not satisfy $y\\ge 6$.  Testing $y=5$, we have $|5-6| + 2\\cdot 5 =11$, not 9, and we see that $y=5$ is not a solution.\n\nCase 2: $y < 6:$   If $y<6$, then $|y-6| = -(y-6) = -y+6$, so our equation is $-y+6+2y = 9$, from which we have $y=\\boxed{3}$. This is a valid solution, since $y=3$ satisfies the restriction $y<6$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A polynomial of degree $13$ is divided by $d(x)$ to give a quotient of degree $7$ and a remainder of $3x^3+4x^2-x+12$. What is $\\deg d$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $f(x)$ be the polynomial of degree $13$ and let $q(x)$ be the quotient when $f(x)$ is divided by $d(x)$. Let $r(x) = 3x^3+4x^2-x+12$. Then we have\n$$f(x) = d(x)\\cdot q(x) + r(x).$$where $\\deg q = 7$.\n\nSince $\\deg r = 3$, we need to have $\\deg(d\\cdot q) = \\deg f$ which means $\\deg d + \\deg q = \\deg f$.  So $\\deg d = 13-7 = \\boxed{6}.$"
+}

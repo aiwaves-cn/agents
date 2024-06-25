@@ -1,0 +1,6 @@
+{
+    "problem": "After a gymnastics meet, each gymnast shook hands once with every gymnast on every team (except herself). Afterwards, a coach came down and only shook hands with each gymnast from her own team. There were a total of 281 handshakes. What is the fewest number of handshakes the coach could have participated in?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The number of gymnasts is some integer $n$, so that the number of gymnast-gymnast handshakes is ${n \\choose 2}$ for some $n$. Also, the coach must participate in an integer $k<n$ number of handshakes. So, ${n \\choose 2} + k = 281$. If we want to minimize $k$, we need the maximal $n$ such that ${n \\choose 2} \\le 281$, which implies $\\frac{n(n-1)}{2} \\le 281$ or $n^2 - n - 562 \\le 0 $. So, the maximal $n$ is 24. So, $k = 281 - {24 \\choose 2} = 281 - 12 \\cdot 23 = 281 - 276 = \\boxed{5}$."
+}

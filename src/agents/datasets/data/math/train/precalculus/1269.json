@@ -1,0 +1,6 @@
+{
+    "problem": "The side of a triangle are 2, $\\sqrt{6},$ and $1 + \\sqrt{3}.$  Enter the angles of the triangle in degrees, separated by commas.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "By the Law of Cosines, the cosine of one angle is\n\\[\\frac{2^2 + (1 + \\sqrt{3})^2 - (\\sqrt{6})^2}{2 \\cdot 2 \\cdot (1 + \\sqrt{3})} = \\frac{2 + 2 \\sqrt{3}}{4 + 4 \\sqrt{3}} = \\frac{1}{2},\\]so this angle is $\\boxed{60^\\circ}.$\n\nThe cosine of another angle is\n\\[\\frac{(1 + \\sqrt{3})^2 + (\\sqrt{6})^2 - 2^2}{2 (1 + \\sqrt{3})(\\sqrt{6})} = \\frac{6 + 2 \\sqrt{3}}{6 \\sqrt{2} + 2 \\sqrt{6}} = \\frac{1}{\\sqrt{2}},\\]so this angle is $\\boxed{45^\\circ}.$\n\nThen the third angle is $180^\\circ - 60^\\circ - 45^\\circ = \\boxed{75^\\circ}.$"
+}

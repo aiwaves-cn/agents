@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order."
+}

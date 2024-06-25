@@ -1,0 +1,6 @@
+{
+    "problem": "Ben throws four identical darts. Each hits one of four identical dartboards on the wall. After throwing the four darts, he lists the number of darts that hit each board, from greatest to least.  How many different lists are possible?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The ways to arrange identical darts on identical dartboards only depends on the number of darts on each board.  The ways to do this are $(4,0,0,0)$, $(3,1,0,0)$, $(2,2,0,0)$, $(2,1,1,0)$, $(1,1,1,1)$.  There are $\\boxed{5}$ ways."
+}

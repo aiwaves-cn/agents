@@ -1,0 +1,6 @@
+{
+    "problem": "John is 31 years younger than his dad. The sum of their ages is 53 years. How many years old is John's dad?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let $j$ be John's age and $d$ be his dad's age. We are trying to find the value of $d$. We can create a system of two equations to represent the given information. They are\n\n\\begin{align*}\nj &= d - 31 \\\\\nj + d &= 53 \\\\\n\\end{align*}\n\nWe want to find $d$, so we need to eliminate $j$ from the equations above. Substituting the first equation into the second to eliminate $j$, we have $(d-31)+d=53$, or $d=42$. Thus, John's dad is $\\boxed{42}$ years old."
+}

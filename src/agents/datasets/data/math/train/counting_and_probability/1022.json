@@ -1,0 +1,6 @@
+{
+    "problem": "4 12-sided dice are rolled. What is the probability that the number of dice showing a two digit number is equal to the number of dice showing a one digit number? Express your answer as a common fraction. (Assume that the numbers on the 12 sides are the numbers from 1 to 12 expressed in decimal.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Since 9 out of the 12 possible results are one digit numbers, each die will show a one digit number with probability of $\\frac{3}{4}$ and a two digit number with probability of $\\frac{1}{4}$. The probability that two particular dice will show 2 two digit numbers and 2 one digit numbers is thus $\\left(\\frac{1}{4}\\right)^2\\left(\\frac{3}{4}\\right)^2$. There are $\\binom{4}{2}=6$ ways to select which two dice will show one digit numbers, so we multiply to get the probability that we want: $6\\cdot\\left(\\frac{1}{4}\\right)^2\\left(\\frac{3}{4}\\right)^2=\\dfrac{54}{256}=\\boxed{\\dfrac{27}{128}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle ABC has vertices $A(0, 0)$, $B(0, 3)$ and $C(5, 0)$. A point $P$ inside the triangle is $\\sqrt{10}$ units from point $A$ and $\\sqrt{13}$ units from point $B$. How many units is $P$ from point $C$? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the coordinates of point $P$ be $(a,b)$.  We have $a^2+b^2=10$ since $AP = \\sqrt{10}$, and $a^2+(b-3)^2=13$ since $AB = \\sqrt{13}$. Expanding $(b-3)^2$ gives us  \\[a^2 +b^2 - 6b + 9 = 13.\\]Since $a^2 + b^2 = 10$, we have $10-6b+9=13$, so $b=1$.  From $a^2+b^2=10$, we have $a^2=9$, so $a=\\pm 3$.  If $a$ is $-3$, the point is not inside the triangle, so $a=3$.  So the point is $(3,1)$ and the distance from $C$ is $$\\sqrt{(3-5)^2+1^2}=\\boxed{\\sqrt{5}}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "There are 20 cars in my building's parking lot.  All of the cars are red or white.  Also, all the cars are either 2-door or 4-door.  12 of them are red, 15 of them are 4-door, and 4 of them are 2-door and white.  How many of the cars are 4-door and red?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Let the number of red 4-door cars be $x$.  Since there are 12 red cars and 15 4-door cars, the number of red 2-door cars is $12-x$, while the number of white 4-door cars is $15-x$.  The sum of the number of red 4-doors, red 2-doors, white 4-doors, and white 2-doors is the total number of cars (20), because each car is contained in exactly one of these categories.  Since the number of white 2-doors is 4, we have $x + (12 - x) + (15 - x) + 4 = 20$, which makes $x = \\boxed{11}$."
+}

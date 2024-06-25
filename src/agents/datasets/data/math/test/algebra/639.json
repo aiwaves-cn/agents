@@ -1,0 +1,6 @@
+{
+    "problem": "The solutions of $x(2x-7)=3$ may be expressed in the form $\\frac{m+\\sqrt{n}}{p}$ and $\\frac{m-\\sqrt{n}}{p}$, where $m$, $n$, and $p$ are relatively prime numbers.  Find $m+n+p$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Distribute on the left-hand side and subtract 3 from both sides to obtain $2x^2-7x-3=0$.  Inspection reveals that $2x^2-7x-3$ does not easily factor, so we substitute the coefficients $2$, $-7$, and $-3$ into the quadratic formula:  \\[\n\\frac{-(-7)\\pm\\sqrt{(-7)^2-(4)(2)(-3)}}{2(2)}=\\frac{7\\pm\\sqrt{49+24}}{4}=\\frac{7\\pm\\sqrt{73}}{4}.\n\\]Therefore $m=7$, $n=73$, and $p=4$, so $m+n+p=7+73+4=\\boxed{84}$."
+}

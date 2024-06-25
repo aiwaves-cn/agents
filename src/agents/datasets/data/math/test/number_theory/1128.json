@@ -1,0 +1,6 @@
+{
+    "problem": "There are finitely many primes $p$ for which the congruence $$8x\\equiv 1\\pmod{p}$$has no solutions $x$. Determine the sum of all such $p$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "A solution exists if and only if $8$ is invertible modulo $p$. In other words, $\\gcd(8,p)=1$. Since $8=2^3$ is a power of $2$, $8$ is invertible modulo $q$ if and only if $q$ is an odd integer. All primes except for $2$ are odd, so the number we are looking for is $\\boxed{2}$."
+}

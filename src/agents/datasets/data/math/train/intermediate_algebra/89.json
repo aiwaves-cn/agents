@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the function\n\\[f(x) = \\max \\{-11x - 37, x - 1, 9x + 3\\}\\]defined for all real $x.$  Let $p(x)$ be a quadratic polynomial tangent to the graph of $f$ at three distinct points with $x$-coordinates $x_1,$ $x_2,$ $x_3.$  Find $x_1 + x_2 + x_3.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since a parabola can be tangent to a given line in at most one point, the parabola must be tangent to all three lines $y = -11x - 37,$ $y = x - 1,$ and $y = 9x + 3.$  Thus, if $a$ is the leading coefficient of $p(x),$ then\n\\begin{align*}\np(x) - (-11x - 37) &= a(x - x_1)^2, \\\\\np(x) - (x - 1) &= a(x - x_2)^2, \\\\\np(x) - (9x + 3) &= a(x - x_3)^2.\n\\end{align*}Subtracting the first two equations, we get\n\\begin{align*}\n12x + 36 &= a(x - x_1)^2 - a(x - x_2)^2 \\\\\n&= a(x - x_1 + x - x_2)(x_2 - x_1) \\\\\n&= 2a(x_2 - x_1) x + a(x_1^2 - x_2^2).\n\\end{align*}Matching coefficients, we get\n\\begin{align*}\n2a(x_2 - x_1) &= 12, \\\\\na(x_1^2 - x_2^2) &= 36.\n\\end{align*}Dividing these equations, we get $-\\frac{1}{2} (x_1 + x_2) = 3,$ so $x_1 + x_2 = -6.$\n\nSubtracting other pairs of equations gives us $x_1 + x_3 = -4$ and $x_2 + x_3 = -1.$  Then $2x_1 + 2x_2 + 2x_3 = -11,$ so\n\\[x_1 + x_2 + x_3 = \\boxed{-\\frac{11}{2}}.\\]"
+}

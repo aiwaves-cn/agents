@@ -1,0 +1,6 @@
+{
+    "problem": "We call a number a mountain number if its middle digit is larger than any other digit.  For example, 284 is a mountain number.  How many 3-digit mountain numbers are there?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We will break this into three cases.\n\nCase 1: numbers of the form $xyx$ ($x \\ne 0$).\n\nAny pair of nonzero digits has a corresponding palindrome ($xyx$) mountain number, so the number of these is $\\binom{9}{2} = 36$.\n\nCase 2: numbers of the form $xyz$ ($z \\ne 0, x \\ne z$).\n\nAny group of three nonzero digits ($y > x > z > 0$) has two corresponding mountain numbers ($xyz$ and $zyx$), so the number of these is $2 \\times \\binom{9}{3} = 168$.\n\nCase 3: numbers of the form $xy0$ ($x \\ne 0, y \\ne 0$).\n\nAny pair of nonzero digits has a corresponding mountain number in the form $xy0$, so there are $\\binom{9}{2} = 36$ of these.\n\nSo the total number of mountain numbers is $36 + 168 + 36 = \\boxed{240}$."
+}

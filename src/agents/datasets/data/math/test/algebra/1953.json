@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of the equation $y=ax^2+bx-6$ is completely below the $x$-axis. If $a^2=49$, what is the largest possible integral value of $b$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since the parabola is completely below the $x$-axis, it must open downwards (otherwise, it would have to cross the $x$ axis on its way up). This means $a<0$. We have $a^2=49$ so $a=\\pm7$, but since $a$ is negative $a=-7$.\n\nSince our graph does not touch the $x$-axis, we must not have any real solutions. Since all solutions must be imaginary, the discriminant must be negative, or \\begin{align*}\nb^2-4ac&<0\\quad\\Rightarrow\\\\\nb^2-4(-7)(-6)&<0\\quad\\Rightarrow\\\\\nb^2-168&<0\\quad\\Rightarrow\\\\\nb^2&<168.\n\\end{align*} This means that $-\\sqrt{168}<b<\\sqrt{168}$. The largest integral value of $b$ is the greatest integer less than $\\sqrt{168}$. Since $13^2=169$, we know $\\sqrt{168}$ is a little less than $13$ but more than $12$. So the greatest integral value of $b$ is $\\boxed{12}$."
+}

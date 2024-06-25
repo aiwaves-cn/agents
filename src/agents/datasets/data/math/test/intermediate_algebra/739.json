@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ and $w$ be complex numbers such that $|z| = 2$ and $|w| = 5.$  Find the smallest possible value of $|w - z|.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By the Triangle Inequality,\n\\[|w| = |(w - z) + z| \\le |w - z| + |z|,\\]so $|w - z| \\le |w| - |z| = 5 - 2 = 3.$\n\nWe can achieve this bound by taking $w = 5$ and $z = 2,$ so the smallest possible value is $\\boxed{3}.$\n\n[asy]\nunitsize(0.5 cm);\n\npair Z, W;\n\nZ = 2*dir(18);\nW = 5*dir(-15);\n\ndraw(Circle((0,0),5),red);\ndraw(Circle((0,0),2),blue);\ndraw((-6,0)--(6,0));\ndraw((0,-6)--(0,6));\ndraw(Z--W);\n\ndot(\"$w$\", W, E);\ndot(\"$z$\", Z, dir(180));\n[/asy]\n\nGeometrically, $z$ lies on the circle centered at the origin with radius 2, and $w$ lies on the circle centered at the origin with radius 5.  We want to minimize the distance between $w$ and $z$; geometrically, it is clear that the minimum distance is 3."
+}

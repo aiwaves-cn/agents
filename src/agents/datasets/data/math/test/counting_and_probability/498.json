@@ -1,0 +1,6 @@
+{
+    "problem": "During the school year, the 10 members of the chess club play a total of 900 games of chess during their practice matches. Each member plays against every other member $N$ times. What is the value of $N$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Since there are 10 club members, there are $\\binom{10}{2} = \\frac{10\\cdot 9}{2} = 45$ pairings of members.  Thus, each pair must have played $\\frac{900}{45} = \\boxed{20}$ games."
+}

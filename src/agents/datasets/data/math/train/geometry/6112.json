@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the set of all triangles $OPQ$ where $O$ is the origin and $P$ and $Q$ are distinct points in the plane with nonnegative integer coordinates $(x,y)$ such that $41x + y = 2009$. Find the number of such distinct triangles whose area is a positive integer.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the two points $P$ and $Q$ be defined with coordinates; $P=(x_1,y_1)$ and $Q=(x_2,y_2)$\nWe can calculate the area of the parallelogram with the determinant of the matrix of the coordinates of the two points(shoelace theorem).\n$\\det \\left(\\begin{array}{c} P \\\\ Q\\end{array}\\right)=\\det \\left(\\begin{array}{cc}x_1 &y_1\\\\x_2&y_2\\end{array}\\right).$\nSince the triangle has half the area of the parallelogram, we just need the determinant to be even.\nThe determinant is\n\\[(x_1)(y_2)-(x_2)(y_1)=(x_1)(2009-41(x_2))-(x_2)(2009-41(x_1))=2009(x_1)-41(x_1)(x_2)-2009(x_2)+41(x_1)(x_2)=2009((x_1)-(x_2))\\]\nSince $2009$ is not even, $((x_1)-(x_2))$ must be even, thus the two $x$'s must be of the same parity. Also note that the maximum value for $x$ is $49$ and the minimum is $0$. There are $25$ even and $25$ odd numbers available for use as coordinates and thus there are $(_{25}C_2)+(_{25}C_2)=\\boxed{600}$ such triangles."
+}

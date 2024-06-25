@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\tan 20^\\circ + \\tan 40^\\circ + \\sqrt{3} \\tan 20^\\circ \\tan 40^\\circ.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "From the angle addition formula,\n\\begin{align*}\n\\tan 60^\\circ &= \\tan (20^\\circ + 40^\\circ) \\\\\n&= \\frac{\\tan 20^\\circ + \\tan 40^\\circ}{1 - \\tan 20^\\circ \\tan 40^\\circ},\n\\end{align*}so\n\\begin{align*}\n\\tan 20^\\circ + \\tan 40^\\circ + \\sqrt{3} \\tan 20^\\circ \\tan 40^\\circ &= \\tan 60^\\circ (1 - \\tan 20^\\circ \\tan 40^\\circ) + \\sqrt{3} \\tan 20^\\circ \\tan 40^\\circ \\\\\n&= \\sqrt{3} (1 - \\tan 20^\\circ \\tan 40^\\circ) + \\sqrt{3} \\tan 20^\\circ \\tan 40^\\circ \\\\\n&= \\boxed{\\sqrt{3}}.\n\\end{align*}"
+}

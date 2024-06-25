@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $z$ and $w$ are complex numbers such that\n\\[|z| = |w| = z \\overline{w} + \\overline{z} w= 1.\\]Find the largest possible value of the real part of $z + w.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = a + bi$ and $w = c + di,$ where $a,$ $b,$ $c,$ and $d$ are complex numbers.  Then from $|z| = 1,$ $a^2 + b^2 = 1,$ and from $|w| = 1,$ $c^2 + d^2 = 1.$  Also, from $z \\overline{w} + \\overline{z} w = 1,$\n\\[(a + bi)(c - di) + (a - bi)(c + di) = 1,\\]so $2ac + 2bd = 1.$\n\nThen\n\\begin{align*}\n(a + c)^2 + (b + d)^2 &= a^2 + 2ac + c^2 + b^2 + 2bd + d^2 \\\\\n&= (a^2 + b^2) + (c^2 + d^2) + (2ac + 2bd) \\\\\n&= 3.\n\\end{align*}The real part of $z + w$ is $a + c,$ which can be at most $\\sqrt{3}.$  Equality occurs when $z = \\frac{\\sqrt{3}}{2} + \\frac{1}{2} i$ and $w = \\frac{\\sqrt{3}}{2} - \\frac{1}{2} i,$ so the largest possible value of $a + c$ is $\\boxed{\\sqrt{3}}.$"
+}

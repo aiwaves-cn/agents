@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of triples $(x,y,z)$ of real numbers that satisfy\n\\begin{align*}\nx &= 2018 - 2019 \\operatorname{sign}(y + z), \\\\\ny &= 2018 - 2019 \\operatorname{sign}(x + z), \\\\\nz &= 2018 - 2019 \\operatorname{sign}(x + y).\n\\end{align*}Note: For a real number $a,$\n\\[\\operatorname{sign} (a) = \\left\\{\n\\begin{array}{cl}\n1 & \\text{if $a > 0$}, \\\\\n0 & \\text{if $a = 0$}, \\\\\n-1 & \\text{if $a < 0$}.\n\\end{array}\n\\right.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $\\operatorname{sign} (x + y)$ can be $-1,$ 0, or 1, $z$ can be 4037, 2018, or $-1.$  The same holds for $x$ and $y.$  But we can then check that $x + y$ cannot be 0, so $z$ can only be 4037 or $-1.$  And again, the same holds for $x$ and $y.$\n\nIf any two of $x,$ $y,$ and $z$ are equal to $-1,$ then the third must be equal to 4037.  Conversely, if any of $x,$ $y,$ $z$ are equal to 4037, then the other two must be equal to $-1.$  Therefore, the only solutions are $(4037,-1,-1),$ $(-1,4037,-1),$ and $(-1,-1,4037),$ giving us $\\boxed{3}$ solutions."
+}

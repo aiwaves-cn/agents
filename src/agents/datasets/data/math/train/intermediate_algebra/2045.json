@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p,$ $q,$ $r$ be the roots of $x^3 - x^2 + x - 2 = 0.$  Find $p^3 + q^3 + r^3.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If $p$ is a root of $x^3 - x^2 + x - 2 = 0$, then $p^3 - p^2 + p - 2 = 0$, or\n\\[p^3 = p^2 - p + 2.\\]Similarly, $q^3 = q^2 - q + 2$, and $r^3 = r^2 - r + 2$, so\n\\[p^3 + q^3 + r^3 = (p^2 + q^2 + r^2) - (p + q + r) + 6.\\]By Vieta's formulas, $p + q + r = 1$, $pq + pr + qr = 1$, and $pqr = 2$.  Squaring the equation $p + q + r = 1$, we get\n\\[p^2 + q^2 + r^2 + 2pq + 2pr + 2qr = 1.\\]Subtracting $2pq + 2pr + 2qr = 2$, we get\n\\[p^2 + q^2 + r^2 = -1.\\]Therefore, $p^3 + q^3 + r^3 = (p^2 + q^2 + r^2) - (p + q + r) + 6 = (-1) - 1  + 6 = \\boxed{4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many integers are between $(10.2)^3$ and $(10.3)^3$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We want to count the integers from the first one greater than $10.2^3$ to the last one less than $10.3^3$. We note that $(a+b)^3=a^3+3a^2b+3ab^2+b^3$ for any $a,b$. Using this expansion for $(10+.2)^3$ and $(10+.3)^3$, we have: \\begin{align*}\n(10+.2)^3&=10^3+300\\cdot .2+30\\cdot .04+.008\\\\\n(10+.3)^3&=10^3+300\\cdot .3+30\\cdot .09+.027\n\\end{align*}We add up, and find the first to be $1061.208$ and the second to be $1092.727$. Thus, we want to count the integers between 1062 and 1092, inclusive; there are $\\boxed{31}$ of these."
+}

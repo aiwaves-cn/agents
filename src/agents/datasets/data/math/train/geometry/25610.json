@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of the lengths of the twelve edges of a rectangular box is $140$, and the distance from one corner of the box to the farthest corner is $21$. What is the total surface area of the box?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let $a$, $b$, and $c$ be the dimensions of the box. It is given that \\[140=4a+4b+4c{\\qquad \\rm and\n\\qquad}21=\\sqrt{a^2+b^2+c^2}\\] hence \\[35=a+b+c{\\qquad (1)\\qquad\n\\rm and\\qquad}441=a^2+b^2+c^2{\\qquad (2)}.\\]\n\nSquare both sides of $(1)$ and combine with $(2)$ to obtain \\begin{align*}\n1225 & = (a+b+c)^2 \\\\\n&= a^2+b^2+c^2+2ab+2bc+2ca \\\\\n&= 441+2ab+2bc+2ca.\n\\end{align*}\n\nThus the surface area of the box is \\[ 2ab+2bc+2ca=1225-441=\\boxed{784}.\\]"
+}

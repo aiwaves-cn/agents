@@ -1,0 +1,6 @@
+{
+    "problem": "Joe was in charge of lights for a dance. The red light blinks every two seconds, the yellow light every three seconds, and the blue light every five seconds. If we include the very beginning and very end of the dance, how many times during a seven minute dance will all the lights come on at the same time? (Assume that all three lights blink simultaneously at the very beginning of the dance.)",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The three lights blink simultaneously $t$ seconds after the start of the dance if and only if $t$ is a common multiple of 2, 3, and 5. Recall the common multiples of a set of integers are precisely the multiples of the least common multiple. Since 2, 3, and 5 are relatively prime, their least common multiple is $2\\cdot 3\\cdot 5 = 30$. Thus the light blinks $t$ seconds after the beginning of the song for $t=0,1,2,\\ldots,14$, and after 14 thirty-second periods, the song ends. Thus the lights blink in unison a total of $\\boxed{15}$ times."
+}

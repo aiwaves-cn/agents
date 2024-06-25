@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(3)=1$ and $f(2x)=2f(x)$ for all $x$, find $f^{-1}(64)$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We are looking for some $x$ such that $f(x)=64$.  We notice that by doubling $x$ we can double $f(x)$ as well and also that $f(3)=1$.\n\nApplying $f(2x)=2f(x)$ repeatedly, we have: \\begin{align*}\nf(3)&=1,\\\\\nf(6)&=2,\\\\\nf(12)&=4,\\\\\nf(24)&=8,\\\\\nf(48)&=16,\\\\\nf(96)&=32,\\\\\nf(192)&=64.\n\\end{align*}So $f^{-1}(64)=\\boxed{192}$."
+}

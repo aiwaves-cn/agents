@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $f(x) = \\frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We know that\n$$\\begin{aligned} f(g(a)) &= f(4-a) \\\\\n&= \\frac{4-a}{5} + 3 = 5.\n\\end{aligned}$$Multiplying both sides by 5 gives us\n$$ 4-a + 15 = 25.$$Solving for $a$,\n$$ a = \\boxed{-6}.$$"
+}

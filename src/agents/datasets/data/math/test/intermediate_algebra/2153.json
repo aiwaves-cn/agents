@@ -1,0 +1,6 @@
+{
+    "problem": "Let $r, s,$ and $t$ be solutions to the equation $2x^3 - 3x^2 + 4x - 1 = 0$. Find $r^2+s^2+t^2$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta, we know that $r+s+t = -\\frac{-3}{2} = \\frac{3}{2}$. Then,\n$$(r+s+t)^2 = \\left(\\frac{3}{2}\\right)^2.$$Expanding gives us\n$$r^2+s^2+t^2 + 2rs+2st+2tr = \\frac{9}{4}.$$We can rearrange to get\n$$r^2+s^2+t^2  = \\frac{9}{4} - 2( rs+st+tr).$$We note that $rs+st+tr$ is the symmetric sum of roots taken two at a time. By Vieta, we know that\n$$rs+st+tr = \\frac{4}{2} = 2.$$Therefore,\n$$r^2+s^2+t^2  = \\frac{9}{4} - 2( 2) = \\boxed{-\\frac{7}{4}}.$$"
+}

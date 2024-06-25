@@ -1,0 +1,6 @@
+{
+    "problem": "The four zeros of the polynomial $x^4 + jx^2 + kx + 225$ are distinct real numbers in arithmetic progression.  Compute the value of $j.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let the four roots be $a,$ $a + d,$ $a  + 2d,$ and $a + 3d.$  Then by Vieta's formulas, their sum is 0:\n\\[4a + 6d = 0.\\]Then $d = -\\frac{2}{3} a,$ so the four roots are $a,$ $\\frac{a}{3},$ $-\\frac{a}{3},$ and $-a.$  Their product is\n\\[a \\cdot \\frac{a}{3} \\cdot \\left( -\\frac{a}{3} \\right) (-a) = \\frac{a^4}{9} = 225,\\]so $a = \\pm 3 \\sqrt{5}.$  Hence, the four roots are $3 \\sqrt{5},$ $\\sqrt{5},$ $-\\sqrt{5},$ $-3 \\sqrt{5},$ and the polynomial is\n\\[(x - 3 \\sqrt{5})(x - \\sqrt{5})(x + \\sqrt{5})(x + 3 \\sqrt{5}) = (x^2 - 5)(x^2 - 45) = x^4 - 50x^2 + 225.\\]Thus, $j = \\boxed{-50}.$"
+}

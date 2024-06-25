@@ -1,0 +1,6 @@
+{
+    "problem": "This graph shows the linear relationship between the time in seconds, $x$, for Caroline's walk and the distance in meters, $y$, Caroline is from her starting point. The graph passes through the point $(20,30)$. According to the graph, how many meters will Caroline walk in exactly one hour? [asy]\n\npair A,B,C,D,E,F,G;\n\nA=(-20,0);\nB=(120,0);\nC=(0,-20);\nD=(0,120);\nE=(-6.2,-8);\nF=(60,90);\nG=(70,105);\n\ndot(F);\n\ndraw(A--B,Arrows);\ndraw(C--D,Arrows);\ndraw(E--G,Arrows);\n\nlabel(\"(20,30)\",G,SE);\nlabel(\"$y=1.5x$\",G,N);\n[/asy]",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the line goes through $(0, 0)$ and $(20, 30)$ we know that for every 20 seconds, Caroline goes 30 meters.  Thus in one minute (60 seconds), she goes $30 \\cdot 3 = 90$ meters.  This means that in one hour (60 minutes), she'll go $90 \\cdot 60 = \\boxed{5400}$ meters."
+}

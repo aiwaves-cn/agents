@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the digits when $527_{10}$ is converted to base 4?  (When you add the digits, express the sum in base 10.)",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We should begin by converting $527_{10}$ to base 4. The largest power of 4 that is less than $527$ is $4^4$, which equals $256$. Since, $(2\\cdot 4^4)=512<527<(3\\cdot 4^4)=768$, the digit in the $4^4$ place is $2$. We know that $527-512=15$, so there will be zeros in the $4^3$ place and $4^2$ place. The largest multiple of $4^1$ that goes into $15$ without going over is $3\\cdot 4^1=12$, so $3$ will be the digit in the $4^1$ place. Since $15-12=3$, we can also see that $3$ will be the digit in the $4^0$ place. We now know that $527_{10}=20033_{4}$. The sum of the digits of $20033_{4}$ is $2+0+0+3+3=\\boxed{8}$."
+}

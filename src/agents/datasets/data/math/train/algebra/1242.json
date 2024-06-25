@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of the squares of three consecutive positive integers is 7805. What is the sum of the cubes of the three original integers?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "If $n$ is the middle of these integers, then we have $(n-1)^2+n^2+(n+1)^2 = 3n^2+2 = 7805$, or $n^2 = 2601$, meaning that $n=51$. Thus the sum of the cubes is $50^3+51^3+52^3 = \\boxed{398259}$."
+}

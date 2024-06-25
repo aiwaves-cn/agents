@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $182+3\\cdot 7-64\\div 2+27\\div 3$.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We know that we must perform the multiplication and division before we perform the addition and subtraction because of the order of operations.  We get \\begin{align*}182+3\\cdot 7-64\\div 2+27\\div 3&=182+21-32+9.\\end{align*}Now, we write this as the sum of four numbers so that we can use the commutative and associative properties of addition to make the arithmetic easier.  We have \\begin{align*}182+21-32+9&=182+21+(-32)+9 \\\\ &=182+(-32)+21+9 \\\\ &=(182+(-32))+(21+9) \\\\ &=(182-32)+(21+9) \\\\ &=150+30 \\\\ &=\\boxed{180}.\\end{align*}"
+}

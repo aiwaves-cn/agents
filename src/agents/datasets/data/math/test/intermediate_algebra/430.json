@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence of positive integers is constructed by listing the first 4, then skipping one, listing the next 5, skipping 2, listing 6, skipping 3, and, on the $n$th iteration, listing $n + 3$ and skipping $n$. The sequence begins 1, 2, 3, 4, 6, 7, 8, 9, 10, 13. What is the 500,000th number in the sequence?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "On the $n$th iteration, we list $n + 3$ integers and skip $n$ integers.  So after $n$ iterations, the last skipped integer is\n\\[\\sum_{k = 1}^n (2k + 3) = 2 \\sum_{k = 1}^n k + 3n = n(n + 1) + 3n = n^2 + 4n.\\]The number of integers we actually write down is\n\\[\\sum_{k = 1}^n (k + 3) = \\sum_{k = 1}^n k + 3n = \\frac{n(n + 1)}{2} + 3n = \\frac{n^2 + 7n}{2}.\\]So after the 996th iteration, we will have written down\n\\[\\frac{996^2 + 7 \\cdot 996}{2} = 499494\\]integers, so we need to write another $500000 - 499494 = 506$ integers to get to the 500000th term.  The last skipped integer is $996^2 + 4 \\cdot 996 = 996000.$\n\nAt the start of the 997th iteration, we write down another 1000 integers, so the 500000th term is $\\boxed{996506}.$"
+}

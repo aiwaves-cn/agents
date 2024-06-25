@@ -1,0 +1,6 @@
+{
+    "problem": "Let $F_n$ be the $n$th Fibonacci number, where as usual $F_1 = F_2 = 1$ and $F_{n + 1} = F_n + F_{n - 1}.$  Then\n\\[\\prod_{k = 2}^{100} \\left( \\frac{F_k}{F_{k - 1}} - \\frac{F_k}{F_{k + 1}} \\right) = \\frac{F_a}{F_b}\\]for some positive integers $a$ and $b.$  Enter the ordered pair $(a,b).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\n\\frac{F_k}{F_{k - 1}} - \\frac{F_k}{F_{k + 1}} &= \\frac{F_k F_{k + 1}}{F_{k - 1} F_{k + 1}} - \\frac{F_{k - 1} F_k}{F_k F_{k + 1}} \\\\\n&= \\frac{F_k F_{k + 1} - F_{k - 1} F_k}{F_{k - 1} F_{k + 1}} \\\\\n&= \\frac{F_k (F_{k + 1} - F_{k - 1})}{F_{k - 1} F_{k + 1}} \\\\\n&= \\frac{F_k^2}{F_{k - 1} F_{k + 1}}.\n\\end{align*}Thus,\n\\begin{align*}\n\\prod_{k = 2}^{100} \\left( \\frac{F_k}{F_{k - 1}} - \\frac{F_k}{F_{k + 1}} \\right) &= \\prod_{k = 2}^{100} \\frac{F_k^2}{F_{k - 1} F_{k + 1}} \\\\\n&= \\frac{F_2^2}{F_1 \\cdot F_3} \\cdot \\frac{F_3^2}{F_2 \\cdot F_4} \\cdot \\frac{F_4^2}{F_3 \\cdot F_5} \\dotsm \\frac{F_{99}^2}{F_{98} \\cdot F_{100}} \\cdot \\frac{F_{100}^2}{F_{99} \\cdot F_{101}} \\\\\n&= \\frac{F_2 \\cdot F_{100}}{F_1 \\cdot F_{101}} = \\frac{F_{100}}{F_{101}}.\n\\end{align*}Therefore, $(a,b) = \\boxed{(100,101)}.$"
+}

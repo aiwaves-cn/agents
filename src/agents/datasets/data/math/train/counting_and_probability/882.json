@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$ equal the number of four digit odd numbers.  Let $B$ equal the number of four digit multiples of 5.  Find $A+B$.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "For an odd number, there are 5 choices for the units digit, coming from the set $\\{1,3,5,7,9\\}$.  There will be 10 choices for the tens digit, 10 choices for the hundreds digit, and 9 choices for the thousands digit, which can not be zero.  This is a total of: $$9\\times10\\times10\\times5=4500\\text{ four digit odd numbers}$$Multiples of 5 must end in 0 or 5.  So, there are two possibilities for the units digit, and the same number of possibilities for remaining digits.  This gives: $$9\\times10\\times10\\times2=1800\\text{ four digit multiples of 5}$$Therefore, $A+B=4500+1800=\\boxed{6300}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be distinct real numbers such that\n\\[\\frac{a^3 + 6}{a} = \\frac{b^3 + 6}{b} = \\frac{c^3 + 6}{c}.\\]Find $a^3 + b^3 + c^3.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[k = \\frac{a^3 + 6}{a} = \\frac{b^3 + 6}{b} = \\frac{c^3 + 6}{c}.\\]Then $a,$ $b,$ and $c$ are all roots of\n\\[k = \\frac{x^3 + 6}{x},\\]or $x^3 - kx + 6 = 0.$  By Vieta's formulas, $a + b + c = 0.$\n\nAlso,\n\\begin{align*}\na^3 - ka + 6 &= 0, \\\\\nb^3 - kb + 6 &= 0, \\\\\nc^3 - kc + 6 &= 0.\n\\end{align*}Adding these, we get $a^3 + b^3 + c^3 - k(a + b + c) + 18 = 0,$ so $a^3 + b^3 + c^3 = k(a + b + c) - 18 = \\boxed{-18}.$"
+}

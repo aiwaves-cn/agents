@@ -1,0 +1,6 @@
+{
+    "problem": "A parabola with equation $y=ax^2+bx+c$ is reflected about the $x$-axis. The parabola and its reflection are translated horizontally five units in opposite directions to become the graphs of $y=f(x)$ and $y=g(x)$, respectively. Which of the following describes the graph of $y=(f+g)(x)$?\n\n(A) a parabola tangent to the $x$-axis\n(B) a parabola not tangent to the $x$-axis\n(C) a horizontal line\n(D) a non-horizontal line\n(E) the graph of a cubic function",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Write the equation of the original parabola as $y = a(x - h)^2 + k,$ where $a \\neq 0.$  Then the equation of the reflected parabola is\n\\[y = -a(x - h)^2 - k.\\]When the parabolas are translated horizontally by 5 units, in opposite directions, their equations become\n\\[y = a(x - h \\pm 5)^2 + k \\quad \\text{and} \\quad y = -a(x - h \\mp 5)^2 - k.\\]The sum of these expressions is\n\\[\\pm 20ax \\mp 20ah = \\pm 20a (x - h),\\]which is the equation of a non-horizontal line.  The answer is $\\boxed{\\text{(D)}}.$"
+}

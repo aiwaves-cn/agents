@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than 500 are equal to 5 times an even integer?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "An even integer is a multiple of 2. The integers we are looking for are multiples of 2 and 5, so they are multiples of 10. The largest multiple of 10 less than 500 is $490 = 49 \\cdot 10$, and the smallest positive multiple of 10 is $10 = 1 \\cdot 10$. Our list also includes every multiple of 10 between 10 and 490, so there are a total of $\\boxed{49}$ positive integers less than 500 that are equal to 5 times an even integer."
+}

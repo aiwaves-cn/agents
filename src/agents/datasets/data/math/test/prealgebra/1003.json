@@ -1,0 +1,6 @@
+{
+    "problem": "A square and a regular heptagon  are coplanar and share a common side $\\overline{AD}$, as shown. What is the degree measure of angle $BAC$?  Express your answer as a common fraction.\n\n[asy]\nfor(int i=0; i <=7; ++i) {\ndraw(dir(360*i/7+90)--dir(360*(i+1)/7+90));\n}\npair A = dir(360*3/7+90);\npair F = dir(360*4/7+90);\npair C = A+dir(90)*(F-A);\npair D = C+F-A;\npair B = dir(360*2/7+90);\n\ndraw(A--C--D--F);\n\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,SE);\nlabel(\"$D$\",F,S);\n\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The measure of each interior angle in a regular $n$-gon is $180(n-2)/n$ degrees.  Therefore, the measure of angle $\\angle BAD$ is $180(7-2)/7=\\frac{900}7$ degrees and the measure of angle $CAD$ is 90 degrees.  Their difference, $\\angle BAC$, measures  \\[\\frac{900}7-\\frac{630}7=\\boxed{\\frac{270}7\\text{ degrees}}.\\]"
+}

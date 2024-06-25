@@ -1,0 +1,6 @@
+{
+    "problem": "The equations $x^3 + Ax + 10 = 0$ and $x^3 + Bx^2 + 50 = 0$ have two roots in common.  Then the product of these common roots can be expressed in the form $a \\sqrt[b]{c},$ where $a,$ $b,$ and $c$ are positive integers, when simplified.  Find $a + b + c.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let the roots of $x^3+Ax+10$ be $p$, $q$, and $r$, and let the roots of $x^3+Bx^2+50=0$ be $p$, $q$, and $s$. By Vieta's formulas,\n\\begin{align*}\np + q + r &= 0, \\\\\npqr &= -10, \\\\\npq + ps + qs &= 0, \\\\\npqs &= -50.\n\\end{align*}From the equation $p + q + r = 0,$ we conclude that $ps + qs + rs = 0.$  Subtracting the equation $pq + ps + qs = 0,$ we get $pq - rs = 0,$ so $pq = rs.$\n\nThen\n\\[(pq)^3 = (pq)(pq)(rs) = (pqr)(pqs) = (-10)(-50) = 500.\\]Therefore, $pq = \\sqrt[3]{500} = 5 \\sqrt[3]{4}$.  The final answer is $5 + 3 + 4 = \\boxed{12}.$"
+}

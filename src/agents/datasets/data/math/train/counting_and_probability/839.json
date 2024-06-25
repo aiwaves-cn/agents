@@ -1,0 +1,6 @@
+{
+    "problem": "Define a $\\it{good\\ word}$ as a sequence of letters that consists only of the letters $A$, $B$, and $C$ --- some of these letters may not appear in the sequence --- and in which $A$ is never immediately followed by $B$, $B$ is never immediately followed by $C$, and $C$ is never immediately followed by $A$. How many seven-letter good words are there?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are three choices for the first letter and two choices for each subsequent letter, so there are $3\\cdot2^{n-1}\\ n$-letter good words.  Substitute $n=7$ to find there are $3\\cdot2^6=\\boxed{192}$ seven-letter good words."
+}

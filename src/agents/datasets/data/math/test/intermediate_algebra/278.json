@@ -1,0 +1,6 @@
+{
+    "problem": "Find the real roots of\n\\[\\frac{6 - x}{x^2 - 4} = 2 + \\frac{x}{x + 2}.\\]Enter the roots, separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying both sides by $(x + 2)(x - 2) = x^2 - 4,$ we get\n\\[6 - x = 2(x^2 - 4) + x(x - 2).\\]This simplifies to $3x^2 - x - 14 = 0.$  This factors as $(x + 2)(3x - 7) = 0,$ so $x = -2$ or $x = \\frac{7}{3}.$\n\nChecking, we find that the given equation is not defined for $x = -2.$  Only $x = \\boxed{\\frac{7}{3}}$ is a solution."
+}

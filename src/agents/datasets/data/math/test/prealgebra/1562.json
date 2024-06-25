@@ -1,0 +1,6 @@
+{
+    "problem": "The same eight people sit in a certain church pew every week, but not always in the same order. Every week, each person hugs the people immediately to his or her left and right. How many weeks does it take (at a minimum) for every pair of people to hug at least once?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are $8$ people, each of whom has $7$ others to hug, making $8\\cdot 7$ pairs. However, this counts each pair twice (once for each ordering of the two people). Since order doesn't matter, the actual number of hugs that must take place is $(8\\cdot 7)/2,$ which is $28.$\n\nEvery week, $7$ different hugs take place, since there are $7$ positions where two people are side-by-side. So, we know it will take at least $28/7 = \\boxed{4}$ weeks for every pair to hug at least once. Here's one possible way they can sit so that every pair is side-by-side once: $$\\begin{array}{r l}\n\\text{Week 1:} & \\text{A B C D E F G H} \\\\\n&\\\\\n\\text{Week 2:} & \\text{B D F H A C E G} \\\\\n&\\\\\n\\text{Week 3:} & \\text{C H E B G D A F} \\\\\n&\\\\\n\\text{Week 4:} & \\text{D H B F C G A E}\n\\end{array}$$"
+}

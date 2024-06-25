@@ -1,0 +1,6 @@
+{
+    "problem": "Two numbers are independently selected from the set of positive integers less than or equal to 5. What is the probability that the sum of the two numbers is greater than their product? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let's name the two numbers $a$ and $b.$ We want the probability that $ab<a+b,$ $\\Rightarrow ab-a-b < 0$, or $(a-1)(b-1)<1$ (applying Simon's Favorite Factoring Trick). This inequality is satisfied if and only if $a=1$ or $b=1.$ When $a=1$, $b$ can equal $1$ through $5$, and when $b=1$ and $a\\not=1,$ $a$ can equal $2$ through $5$. There are $5^2=25$ ways to choose $a$ and $b,$ so the probability is $\\frac{5+4}{25}=\\boxed{\\frac{9}{25}}.$"
+}

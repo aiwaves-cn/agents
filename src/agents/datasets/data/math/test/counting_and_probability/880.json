@@ -1,0 +1,6 @@
+{
+    "problem": "Find the total number of four-digit palindromes. (Recall that a palindrome is a nonnegative sequence of digits which reads the same forwards and backwards, such as 1331. Zero cannot be the first digit.)",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "In a four-digit palindrome, the first digit is the same as the last, and the second digit is the same as the third digit.  There are 9 options for the first/last digit (1 through 9 -- the first digit cannot be 0), and there are 10 options for the second/third digit (0 through 9).  This gives us $9 \\cdot 10 = \\boxed{90}$ four-digit palindromes."
+}

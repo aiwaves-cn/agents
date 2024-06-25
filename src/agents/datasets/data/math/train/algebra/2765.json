@@ -1,0 +1,6 @@
+{
+    "problem": "Let $N,O$ be functions such that $N(x) = 2\\sqrt{x}$, and $O(x) = x^2$. What is $N(O(N(O(N(O(3))))))$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Notice that for any $x$, then $N(O(x)) = N(x^2) = 2\\sqrt{x^2} = 2x$. It follows that  $$N(O(N(O(N(O(3)))))) = N(O(N(O(6)))) = N(O(12)) = \\boxed{24}.$$"
+}

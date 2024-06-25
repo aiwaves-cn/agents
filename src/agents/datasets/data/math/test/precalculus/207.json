@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A = (2, 0)$, $B = (0, 2)$, $C = (-2, 0)$, and $D = (0, -2)$.  Compute the greatest possible value of the product $PA \\cdot PB \\cdot PC \\cdot PD$, where $P$ is a point on the circle $x^2 + y^2 = 9$.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We use complex numbers. Let $a = 2$, $b = 2i$, $c = -2$, and $d = -2$ be the complex numbers corresponding to $A$, $B$, $C$, and $D$, respectively. Let $p$ be the complex number corresponding to $P$, so that $|p| = \\sqrt{9} = 3$. Then we have \\[\\begin{aligned} PA \\cdot PB \\cdot PC \\cdot PD &= |p-2| \\cdot |p-2i| \\cdot |p+2| \\cdot |p+2i| \\\\ &= |(p-2)(p+2)| \\cdot |(p-2i)(p+2i)| \\\\ &= |p^2-4| \\cdot |p^2+4| \\\\ &= |p^4-16|. \\end{aligned}\\]Since $|p| = 3$, we have $|p^4| = 3^4= 81$, so by the triangle inequality, \\[|p^4-16| \\le |p^4| + |-16| = 81 + 16 = 97.\\]Equality holds if and only if $p^4 = -81$, which occurs when $p = 3\\left(\\frac{\\sqrt2}{2} + \\frac{\\sqrt2}{2}i\\right)$. Therefore, the answer is $\\boxed{97}$."
+}

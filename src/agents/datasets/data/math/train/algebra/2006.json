@@ -1,0 +1,6 @@
+{
+    "problem": "For what values of $z$ is $z^2-40z+340\\le 4$? Express your answer in interval notation.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can simplify the inequality to $z^2-40z+336\\le 0$. We could solve for the roots using the quadratic formula, but there is an easier solution by factoring: $z^2-40z+336=(z-12)(z-28)$. Thus the parabola $z^2-40z+336$ changes sign at $z=12$ and $z=28$. The solution is either the interval $(-\\infty,12]\\cup[28,\\infty)$ or $[12,28]$. We test values to find that the quadratic is non-positive over the interval $\\boxed{[12,28]}$."
+}

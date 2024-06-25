@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{w} = \\begin{pmatrix} 1 \\\\ 0 \\\\ -3 \\end{pmatrix}.$  The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\mathbf{0}\\]lie on a plane.  Enter the equation of this plane in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}.$  From the formula for a projection,\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\frac{\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 0 \\\\ -3 \\end{pmatrix}}{\\begin{pmatrix} 1 \\\\ 0 \\\\ -3 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 0 \\\\ -3 \\end{pmatrix}} \\mathbf{w} = \\frac{x - 3z}{10} \\begin{pmatrix} 1 \\\\ 0 \\\\ -3 \\end{pmatrix} = \\mathbf{0}.\\]Hence, we must have $\\boxed{x - 3z = 0},$ which gives us the equation of the plane."
+}

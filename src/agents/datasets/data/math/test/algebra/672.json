@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\left\\lceil {-\\!\\sqrt{23}}\\right\\rceil$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since $\\!\\sqrt{23}$ is between $\\!\\sqrt{16}=4$ and $\\!\\sqrt{25}=5$, we know that $-5<-\\sqrt{23} <-4$.  Therefore, the smallest integer greater than $-\\sqrt{23}$ is $-4$.  So, we have $\\left\\lceil -\\sqrt{23}\\right\\rceil = \\boxed{-4}$."
+}

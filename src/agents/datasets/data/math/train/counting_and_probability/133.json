@@ -1,0 +1,6 @@
+{
+    "problem": "Erika, who is 14 years old, flips a fair coin whose sides are labeled 10 and 20, and then she adds the number on the top of the flipped coin to the number she rolls on a standard die. What is the probability that the sum equals her age in years? Express your answer as a common fraction.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "The only way for the sum to be a 14 is for her coin flip to be a 10 and for her roll to be a 4. This can only occur in $\\frac{1}{2} \\cdot \\frac{1}{6} = \\boxed{\\frac{1}{12}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If the three lines $3y-2x=1$, $x+2y=2$ and $4x-6y=5$ are drawn in the plane, how many points will lie at the intersection of at least two of the three lines?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "In general, two lines intersect in exactly one point, unless they are parallel, in which case they are either the same line or have no intersection points.  First, check to see if any of these lines are parallel.  The first line $3y-2x=1$ has a slope of $2/3$,  the second line has a slope of $-1/2$, and the third line has a slope of $4/6=2/3$.  So, the first and third lines are parallel.  We can easily check that these are not the same line.  Therefore, these two lines do not intersect anywhere, and the third line intersects each of them in exactly one point, for a total of $\\boxed{2}$ intersection points."
+}

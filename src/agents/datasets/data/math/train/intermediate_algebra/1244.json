@@ -1,0 +1,6 @@
+{
+    "problem": "Simply the expression\n\\[\\frac{(\\sqrt{2} - 1)^{1 - \\sqrt{3}}}{(\\sqrt{2} + 1)^{1 + \\sqrt{3}}},\\]writing your answer as $a - b \\sqrt{c},$ where $a,$ $b,$ and $c$ are positive integers, and $c$ is not divisible by the square of a prime.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "First,\n\\[\\frac{1}{\\sqrt{2} + 1} = \\frac{\\sqrt{2} - 1}{(\\sqrt{2} + 1)(\\sqrt{2} - 1)} = \\frac{\\sqrt{2} - 1}{2 - 1} = \\sqrt{2} - 1.\\]Hence,\n\\begin{align*}\n\\frac{(\\sqrt{2} - 1)^{1 - \\sqrt{3}}}{(\\sqrt{2} + 1)^{1 + \\sqrt{3}}} &= (\\sqrt{2} - 1)^{1 - \\sqrt{3}} (\\sqrt{2} - 1)^{1 + \\sqrt{3}} \\\\\n&= (\\sqrt{2} - 1)^2 \\\\\n&= 2 - 2 \\sqrt{2} + 1 \\\\\n&= \\boxed{3 - 2 \\sqrt{2}}.\n\\end{align*}"
+}

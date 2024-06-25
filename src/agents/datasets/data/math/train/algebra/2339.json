@@ -1,0 +1,6 @@
+{
+    "problem": "The first four terms in an arithmetic sequence are $x+y$, $x-y$, $xy$, and $x/y$, in that order. What is the fifth term? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since the difference of the first two terms is $-2y$, the third and fourth terms of the sequence must be $x-3y$ and $x-5y$. Thus \\[\nx-3y = xy \\quad\\text{and}\\quad x-5y = \\frac{x}{y},\n\\]so $xy - 5y^{2} = x.$ Combining these equations we obtain \\[\n(x - 3y) - 5y^{2}= x\\quad\\text{and, therefore, }\\quad -3y - 5y^{2} = 0.\n\\]Since $y$ cannot be 0, we have $y = -\\frac{3}{5}$, and it follows that $x = -\\frac{9}{8}$. The fifth term in the sequence is $x - 7y\n= \\boxed{\\frac{123}{40}}$."
+}

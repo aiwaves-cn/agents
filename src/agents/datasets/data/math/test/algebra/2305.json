@@ -1,0 +1,6 @@
+{
+    "problem": "The cost to carpet a floor is directly proportional to the area.  It costs $\\$$105 to carpet a floor that is $14\\times 5\n$ square feet.  How much will it cost to carpet a floor that is $16\\times 13$ square feet? Express your answer in dollars.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let $C$ be the cost of carpeting a floor and $A$ be the area.  By the definition of a direct proportion, we know that $C=kA$, where $k$ is a constant.  Substituting $105$ for $C$ and $14\\times 5=70$ for $A$, we can find that $k=3/2$.  Then, the cost to carpet a floor that is $16\\times13$ square feet will be: \\begin{align*}\nC&=kA\\\\\n&=(3/2)(16\\times13)\\\\\n&=\\boxed{312 \\text{ dollars}}.\n\\end{align*}"
+}

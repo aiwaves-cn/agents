@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ satisfies $f(1) = 1$ and\n\\[f(x + y) = 3^y f(x) + 2^x f(y)\\]for all real numbers $x$ and $y.$  Find the function $f(x).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Switching the roles of $x$ and $y,$ we get\n\\[f(y + x) = 3^x f(y) + 2^y f(x).\\]Hence,\n\\[3^y f(x) + 2^x f(y) = 3^x f(y) + 2^y f(x).\\]Then\n\\[(3^y - 2^y) f(x) = (3^x - 2^x) f(y),\\]so for $x \\neq 0$ and $y \\neq 0,$\n\\[\\frac{f(x)}{3^x - 2^x} = \\frac{f(y)}{3^y - 2^y}.\\]Setting $y = 1,$ we get\n\\[\\frac{f(x)}{3^x - 2^x} = \\frac{f(1)}{3^1 - 2^1} = 1,\\]so $f(x) = \\boxed{3^x - 2^x}.$  Note that this formula also holds for $x = 0.$"
+}

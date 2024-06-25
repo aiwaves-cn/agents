@@ -1,0 +1,6 @@
+{
+    "problem": "On the Cartesian plane, the midpoint between two points $A(a,b)$ and $B(c,d)$ is $M(m,n)$. If $A$ is moved vertically upwards 8 units and horizontally to the right 2 units, and $B$ is moved vertically downwards 2 units and horizontally to the left 10 units, then the new midpoint between $A$ and $B$ is $M'$. What is the distance between $M$ and $M'$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Before moving, the midpoint (in terms of $a$, $b$, $c$, and $d$) is $M(m,n)=\\left(\\frac{a+c}{2},\\frac{b+d}{2}\\right)$. $A$ is moved to a point $(a+2,b+8)$. $B$ is moved to a point $(c-10,d-2)$. We find that the new midpoint $M'$ is \\begin{align*}\n\\left(\\frac{a+2+c-10}{2},\\frac{b+8+d-2}{2}\\right)&=\\left(\\frac{a+c}{2}-4,\\frac{b+d}{2}+3\\right)\\\\\n&=(m-4,n+3).\n\\end{align*}Thus, the distance between $M$ and $M'$ is equivalent to the distance between $(m,n)$ and $(m-4,n+3)$, or $$\\sqrt{(m-4-m)^2+(n+3-n)^2}=\\boxed{5}.$$"
+}

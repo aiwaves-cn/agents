@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest whole number $b$ such that 47 can be expressed in base $b$ using only two digits?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "For 47 to be expressed in two digits in base $b$, $47 < 100_b = 1 \\cdot b^2$.  So $\\! \\sqrt{47} < b$, which means the smallest whole number $b$ can be is $\\boxed{7}$.  We can check to be sure: $47 = 65_7 = 115_6$."
+}

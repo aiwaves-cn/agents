@@ -1,0 +1,6 @@
+{
+    "problem": "I am going to buy exotic fruits.  Dragonfruit costs $x-4$ dollars.  Starfruit is five dollars less expensive than rambutan.  Rambutan costs $2x$ dollars more than dragonfruit.  How much does it cost to buy one rambutan, two starfruit, and three dragonfruit? Your answer will be an expression that depends on $x$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We know that one dragonfruit is $x-4$ dollars.  This means that one rambutan is $(x-4) + 2x = 3x-4$ dollars.  Then, one starfruit is $(3x-4) -5 = 3x-9$ dollars. We want to find $1 \\cdot (3x-4) + 2 \\cdot (3x-9) + 3 \\cdot (x-4)$.  Distributing these three smaller expressions gives us $(3x-4) + (6x-18) + (3x-12)$. Finally, we combine like terms, yielding $(3x + 6x + 3x) + (-4 + -18 + -12) = (12x) + (-34)$.  We obtain $\\boxed{12x -34}$, or $\\boxed{-34 + 12x}$."
+}

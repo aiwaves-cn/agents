@@ -1,0 +1,6 @@
+{
+    "problem": "How many zeroes does $10!$ end in, when written in base 11?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let the base 11 expansion of $10!$ be $a_na_{n-1}\\cdots a_1a_0$. This implies that $10! = 11^na_n + 11^{n-1}a_{n-1} + \\cdots 11a_1 + a_0$. Note that $10!$ is not divisible by $11$, because $11$ is prime. As a result, if $a_0 = 0$, then the right-hand side of that equation would be divisible by $11$, which is a contradiction. Therefore, $a_0 \\neq 0$, and $10!$ ends in $\\boxed{0}$ zeroes when written in base 11."
+}

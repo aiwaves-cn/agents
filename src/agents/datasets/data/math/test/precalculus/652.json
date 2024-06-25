@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of integers in the range of the real-valued function $y=\\sqrt{\\log_2 (\\sin x)}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "For the function to be defined, we must have $\\log_2 (\\sin x) \\ge 0,$ so $\\sin x \\ge 1.$  But since $\\sin x \\le 1,$ the only possible value of $\\sin x$ is 1.  Then $y = \\sqrt{\\log_2 1} = 0,$ and the range contains only $\\boxed{1}$ integer."
+}

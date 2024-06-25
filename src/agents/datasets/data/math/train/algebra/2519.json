@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $n$, if $8^n\\cdot8^n\\cdot8^n=64^3$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "The equation, $8^n\\cdot8^n\\cdot8^n=64^3$, can be written as $8^{3n}=64^3$. We also know that $64=8^2$, so we can rewrite the equation as $8^{3n}=8^{2(3)}$. Solving for $n$ gives $n=\\boxed{2}$."
+}

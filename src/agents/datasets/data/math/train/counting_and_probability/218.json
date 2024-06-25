@@ -1,0 +1,6 @@
+{
+    "problem": "Calculate $5\\cdot5! + 4\\cdot4!+4!$.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Using the distributive property twice, \\begin{align*}\n5\\cdot5!+4\\cdot4!+4! &= 5\\cdot5! + (4+1)\\cdot4!\\\\\n&=5\\cdot5! + 5!\\\\\n&=(5+1)\\cdot5!\\\\\n&=6!\\\\\n&=\\boxed{720}.\n\\end{align*}"
+}

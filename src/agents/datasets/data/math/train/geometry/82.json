@@ -1,0 +1,6 @@
+{
+    "problem": "The volume of a given sphere is $36\\pi$ cubic inches. How many square inches are in its surface area? Express your answer in terms of $\\pi$.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The volume of a sphere with radius $r$ is $\\frac{4}{3}\\pi r^3$.  Here, we have $\\frac{4}{3}\\pi r^3=36\\pi$.  Dividing both sides by $\\frac{4}{3}\\pi$ yields $r^3 = 27$; cube rooting both sides yields $r=3$.  The surface area of a sphere with radius $r$ is $4\\pi r^2$; here, our surface area is $4\\pi(3^2)=\\boxed{36\\pi}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many $4$-digit numbers have the last digit equal to the sum of the first two digits?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "To make such a number, we'd start with the last digit. We'd then consider different combinations of the first two digits that give us this sum.  We always have $10$ choices for the third digit. \\[\n\\begin{array}{|c|c|}\\hline\n\\text{Last digit} & \\text{First two digits} \\\\ \\hline\n0 & - \\\\ \\hline\n1 & 10 \\\\ \\hline\n2 & 11,20 \\\\ \\hline\n3 & 12,21,30 \\\\ \\hline\n4 & 13,22,31,40 \\\\ \\hline\n5 & 14,23,32,41,50 \\\\ \\hline\n6 & 15,24,33,42,51,60 \\\\ \\hline\n7 & 16,25,34,43,52,61,70 \\\\ \\hline\n8 & 17,26,35,44,53,62,71,80 \\\\ \\hline\n9 & 18,27,36,45,54,63,72,81,90 \\\\ \\hline\n\\end{array}\n\\] The third digit can be any of the $10$ digits. The answer is $(1+2+3+4+5+6+7+8+9)\\times 10=\\boxed{450}.$"
+}

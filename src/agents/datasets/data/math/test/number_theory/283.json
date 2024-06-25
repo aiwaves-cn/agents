@@ -1,0 +1,6 @@
+{
+    "problem": "In the base-three number system, $a = 2012_3$ and $b = 201_3.$ What is the product $ab$ expressed in the base-three number system?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We may multiply in base $3$ just as in base $10:$ anytime we get a number greater than $3,$ we record the remainder when the number is divided by $3$ and carry the quotient. \\[\n\\begin{array}{r}\n2012 \\\\\n\\times 201 \\\\ \\hline\n2012 \\\\\n11101\\hphantom{00} \\\\ \\hline\n1112112\n\\end{array}\n\\] Therefore, the product is $\\boxed{1112112_3}.$"
+}

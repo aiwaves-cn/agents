@@ -1,0 +1,6 @@
+{
+    "problem": "If $h(x)$ is a function whose domain is $[-8,8]$, and $g(x)=h\\left(\\frac x2\\right)$, then the domain of $g(x)$ is an interval of what width?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since we defined $g(x) = h\\left(\\frac{x}{2}\\right)$, a real number $x$ is in the domain of $g$ if and only if $\\frac{x}{2}$ is in the domain of $h$.  Therefore, the domain of $g$ consists of all $x$ such that $$-8\\le \\frac x2\\le 8.$$The solutions to this inequality are given by $-16\\le x\\le 16$, so the domain of $g$ is an interval of width $16 - (-16) = \\boxed{32}$."
+}

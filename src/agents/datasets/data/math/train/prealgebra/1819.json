@@ -1,0 +1,6 @@
+{
+    "problem": "A lucky integer is a positive integer which is divisible by the sum of its digits. What is the least positive multiple of 9 that is not a lucky integer?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "List the first few multiples of 9: $9, 18, 27, 36, \\dots$. We see that these are all lucky integers because their digits sum to 9, and the pattern of increasing the first digit by 1 while decreasing the second digit by 1 preserves this property. However, this pattern stops after the last digit reaches zero. Indeed, 90 is still a lucky integer, but 99 is not, since the digits sum to 18 and 99 is not divisible by 18. Thus $\\boxed{99}$ is the least positive multiple of 9 which is not a lucky integer."
+}

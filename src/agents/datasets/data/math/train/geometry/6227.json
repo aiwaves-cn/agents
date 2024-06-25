@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle ABC$ the median from $A$ is given perpendicular to the median from $B$. If $BC=7$ and $AC=6$, find the length of $AB$.\n$\\textbf{(A)}\\ 4\\qquad \\textbf{(B)}\\ \\sqrt{17} \\qquad \\textbf{(C)}\\ 4.25\\qquad \\textbf{(D)}\\ 2\\sqrt{5} \\qquad \\textbf{(E)}\\ 4.5$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy]  draw((-16,0)--(8,0)); draw((-16,0)--(16,-24)); draw((16,-24)--(0,24)--(0,-12)); draw((-16,0)--(0,24)); draw((0,2)--(2,2)--(2,0)); draw((0,-12)--(8,0),dotted);  dot((16,-24)); label(\"C\",(16,-24),SE); dot((-16,0)); label(\"A\",(-16,0),W); dot((0,24)); label(\"B\",(0,24),N);  label(\"3\",(8,-18),SW); label(\"3\",(-8,-6),SW); label(\"3.5\",(12,-12),NE); label(\"3.5\",(4,12),NE);  dot((0,-12)); label(\"M\",(0,-12),SW); dot((8,0)); label(\"N\",(8,0),NE); dot((0,0)); label(\"G\",(0,0),NW);  [/asy]By SAS Similarity, $\\triangle ABC \\sim \\triangle MNC$, so $AB \\parallel MN$. Thus, by AA Similarity, $\\triangle AGB \\sim \\triangle NGM$.\nLet $a = GN$ and $b = GM$, so $AG = 2a$ and $BG = 2b$. By the Pythagorean Theorem,\\[4a^2 + b^2 = 9\\]\\[a^2 + 4b^2 = \\frac{49}{4}\\]Adding the two equations yields $5a^2 + 5b^2 = \\frac{85}{4}$, so $a^2 + b^2 = \\frac{17}{4}$. Thus, $MN = \\frac{\\sqrt{17}}{2}$, so $AB = \\boxed{\\sqrt{17}}$."
+}

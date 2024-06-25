@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of the squares of two positive integers is 193. The product of the two integers is 84. What is the sum of the two integers?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let the two integers be $x$ and $y$. We are given that $x^2 + y^2 = 193$ and that $xy = 84$. We want to find $x + y$. Note that $(x + y)^2 = x^2 + y^2 + 2xy = 193 + 2\\cdot 84 = 361$. Taking the square root of 361, we see that $x + y = \\boxed{19}$."
+}

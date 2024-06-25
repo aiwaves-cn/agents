@@ -1,0 +1,6 @@
+{
+    "problem": "For triangle $ABC$, points $D$ and $E$ are   the midpoints of sides $AB$ and $AC$,  respectively.  Side $BC$ measures six inches.   What is the measure of segment $DE$ in inches?\n\n[asy]\ndraw((-5,-5)--(10,3)--(0,10)--cycle);\ndraw((-2.5,2.5)--(2.5,-1));\nlabel(\"$A$\",(-5,-5),SW);\nlabel(\"$B$\",(0,10),N);\nlabel(\"$C$\",(10,3),SE);\nlabel(\"$D$\",(-2.5,2.5),NW);\nlabel(\"$E$\",(2.5,-1),SE);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Since $AE:AC$ and $AD:AB$ are both $1:2$, we have $\\triangle ADE \\sim \\triangle ABC$ by SAS similarity. Since the triangles are similar in a $1:2$ ratio, $DE=BC/2=6/2=\\boxed{3}$ inches."
+}

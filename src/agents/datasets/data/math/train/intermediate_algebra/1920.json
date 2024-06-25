@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ and $w$ be complex numbers such that $|z| = 1$ and $|w| = 3$. If $|z+w| = 2$, what is $ \\left | \\frac{1}{z} + \\frac{1}{w} \\right|$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We simplify the desired expression \\[\n\\left | \\frac{1}{z} + \\frac{1}{w} \\right| = \\left | \\frac{w+z}{wz} \\right|.\n\\]Now, using the fact that $|ab| = |a|\\cdot |b|$ and $|a/b| = |a|/|b|$, we substitute in the values for the magnitudes given in the problem: \\[\n\\left | \\frac{w+z}{wz} \\right| = \\frac{|w+z|}{|w|\\cdot|z|} = \\frac{2}{(1)(3)} = \\boxed{\\frac{2}{3}}.\n\\]"
+}

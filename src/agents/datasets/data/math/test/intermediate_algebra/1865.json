@@ -1,0 +1,6 @@
+{
+    "problem": "The roots of $x^4 - Kx^3 + Kx^2 + Lx + M = 0$ are $a,$ $b,$ $c,$ and $d.$   If $K,$ $L,$ and $M$ are real numbers, compute the minimum value of the sum $a^2 + b^2 + c^2 + d^2.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, $a + b + c + d = K$ and $ab + ac + ad + bc + bd + cd = K.$  Squaring the equation $a + b + c + d = K,$ we get\n\\[a^2 + b^2 + c^2 + d^2 + 2(ab + ac + ad + bc + bd + cd) = K^2.\\]Hence,\n\\[a^2 + b^2 + c^2 + d^2 = K^2 - 2K = (K - 1)^2 - 1.\\]This expression is minimized at $K = 1,$ with a minimum value of $\\boxed{-1}.$"
+}

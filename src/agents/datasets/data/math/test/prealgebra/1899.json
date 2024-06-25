@@ -1,0 +1,6 @@
+{
+    "problem": "A freshly-painted circular emblem on a football field is completely covered by the smallest possible square tarp. The tarp covers an area of 196 square feet. In square feet, what is the area of the circular emblem? Express your answer in terms of $\\pi$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The smallest square tarp that can cover a circle is the square circumscribed around the circle.  The side length $s$ of the circumscribed square is equal to the diameter of the circle, so first we solve $s^2=196$ to find $s=14$ feet. If the diameter of a circle is 14 feet, then its radius is 7 feet and its area is $\\pi(\\text{radius})^2=\\boxed{49\\pi}$ square feet."
+}

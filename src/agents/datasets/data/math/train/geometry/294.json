@@ -1,0 +1,6 @@
+{
+    "problem": "Either increasing the radius or the height of a cylinder by six inches will result in the same volume. The original height of the cylinder is two inches. What is the original radius in inches?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let the original radius be $r$. The volume of the cylinder with the increased radius is $\\pi \\cdot (r+6)^2 \\cdot 2$. The volume of the cylinder with the increased height is $\\pi \\cdot r^2 \\cdot 8$. Since we are told these two volumes are the same, we have the equation $\\pi \\cdot (r+6)^2 \\cdot 2 = \\pi \\cdot r^2 \\cdot 8$. Simplifying, we have $(r+6)^2=4r^2 \\Rightarrow r^2+12r+36=4r^2 \\Rightarrow r^2-4r-12=0$. Factoring, we have $(r-6)(r+2)=0$, so $r=\\boxed{6}$ (it cannot be negative because it is a physical length)."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Define the function $f(x)=\\frac{b}{2x-3}$. If $f(2)=f^{-1}(b+1)$, find the product of all possible values of $b$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The definition of $f$ lets us evaluate $f(2)$: \\[f(2)=\\frac{b}{2\\cdot2-3}=\\frac b{1}=b.\\]Therefore we want to find all possible $b$ for which \\[b=f^{-1}(b+1).\\]This is equivalent to  \\[f(b)=b+1.\\]When we substitute $x=b$ into the definition of $f$ we get  \\[f(b)=\\frac{b}{2b-3},\\]so we are looking for all solutions $b$ to the equation \\[\\frac{b}{2b-3}=b+1.\\]Assuming $b \\ne \\dfrac32$, we can multiply both sides by $2b - 3$ to get \\[b = (2b - 3)(b + 1) = 2b^2 - b - 3,\\]so $2b^2 - 2b - 3 = 0$.  We note that $b = \\dfrac32$ is not a solution.  By Vieta's formulas, the product of the roots of the quadratic equation $ax^2 + bx + c = 0$ is $c/a$, so in this case, the product of the roots is $\\boxed{-\\frac{3}{2}}$."
+}

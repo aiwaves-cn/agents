@@ -1,0 +1,6 @@
+{
+    "problem": "Find the integer $n,$ $-90 < n < 90,$ such that $\\tan n^\\circ = \\tan 252^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Since tangent function has period $180^\\circ,$\n\\[\\tan 252^\\circ = \\tan (252^\\circ - 180^\\circ) = \\tan 72^\\circ,\\]so $n = \\boxed{72}.$"
+}

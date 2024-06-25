@@ -1,0 +1,6 @@
+{
+    "problem": "A quadrilateral in the plane has vertices $(1, 3)$, $(1, 1)$, $(2, 1)$ and $(2006, 2007)$. How many square units is the area of the quadrilateral?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The quadrilateral is shown below: [asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((1,1)--(2,1)--(10,10.1)--(1,3)--cycle);\ndraw((1,1)--(10,10.1),dashed);\nlabel(\"$A$\", (1,1), S);\nlabel(\"$B$\", (2,1), E);\nlabel(\"$C$\", (10,10.1), N);\nlabel(\"$D$\", (1,3), W);\n[/asy] Divide the quadrilateral into two triangles with the dashed line. We will find the area of these two triangles separately. Since $AB$ is horizontal, the area of triangle $ABC$ is half the product of the length $AB$ multiplied by the length of the vertical altitude from $C$ to line $AB$, or $\\frac{1\\cdot2006}{2}=1003$. Since $AD$ is vertical, the area of triangle $ACD$ is half the product of the length $AD$ multiplied by the length of the horizontal altitude from $C$ to line $AD$, or $\\frac{2\\cdot2005}{2}=2005$. The area of the entire quadrilateral is $1003+2005=\\boxed{3008}$ square units."
+}

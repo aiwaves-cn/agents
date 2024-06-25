@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure, $\\overline{DC}$ is parallel to $\\overline{AB}$. We have $\\angle DCA = 40^\\circ$ and $\\angle ABC = 73^\\circ$.  Find $\\angle ACB$.\n\n[asy]\npair A,B,C,D;\nA = (0,0);\nB= (1,0);\nD = (-0.1,0.6);\nC = (0.8,0.6);\ndraw((-0.2,0)--(1.2,0));\ndraw((-0.2,0.6)--(1.2,0.6));\ndraw(A--C--B);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,N);\nlabel(\"$D$\",D,N);\ndot(A);dot(B);dot(C);dot(D);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since $\\overline{AB}\\parallel\\overline{DC}$, $\\angle ABC + \\angle BCD = 180^\\circ$, so $\\angle BCD = 180^\\circ - 73^\\circ = 107^\\circ$. $\\angle ACB + \\angle ACD = \\angle BCD$, so $\\angle ACB = 107^\\circ - 40^\\circ = \\boxed{67^\\circ}$."
+}

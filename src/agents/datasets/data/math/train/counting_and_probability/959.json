@@ -1,0 +1,6 @@
+{
+    "problem": "Math City has eight streets, all of which are straight. No street is parallel to another street. One police officer is stationed at each intersection. What is the greatest number of police officers needed?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "When there was only one street in Math City, there were no intersections.  When the second street was built, there was one intersection.  When the third street was built, it made at most 2 new intersections for a total of $1+2=3$ intersections in Math City.  Similarly, when the $n$th street is built, it intersects at most all of the existing $n-1$ streets at a new intersection.  Therefore, the greatest number of intersections after 8 roads are built is $1+2+3+\\cdots+7=\\frac{7(8)}{2}=\\boxed{28}$.  Alternatively, we can note that there are $\\binom{8}{2} = 28$ ways to choose two roads to intersect, so there are at most 28 intersections.\n\n\nNote: Since there are no pairs of parallel roads, there will be 28 points of intersection unless three or more of the roads meet at a single intersection.  This can be avoided by adjusting the path of one of the roads slightly."
+}

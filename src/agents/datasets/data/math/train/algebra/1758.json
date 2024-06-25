@@ -1,0 +1,6 @@
+{
+    "problem": "In the equation $\\frac{1}{j} + \\frac{1}{k} = \\frac{1}{3}$, both $j$ and $k$ are positive integers. What is the sum of all possible values for $k$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Multiplying both sides of the equation by $3jk$ to clear the denominator gives $3k + 3j = jk$. Re-arranging and applying Simon's Favorite Factoring Trick, it follows that $$jk - 3j - 3k + 9 = (j-3)(k-3) = 9.$$ Thus, $j-3$ and $k-3$ are pairs of positive factors of $9$, so $(j-3,k-3) = (1,9),(3,3),(9,1)$. These give $k = 4,6,12$, and their sum is $4 + 6 + 12 = \\boxed{22}$."
+}

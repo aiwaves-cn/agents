@@ -1,0 +1,6 @@
+{
+    "problem": "Given $\\tan \\theta \\sec \\theta = 1,$ find\n\\[\\frac{1 + \\sin \\theta}{1 - \\sin \\theta} - \\frac{1 - \\sin \\theta}{1 + \\sin \\theta}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\frac{1 + \\sin \\theta}{1 - \\sin \\theta} - \\frac{1 - \\sin \\theta}{1 + \\sin \\theta} &= \\frac{(1 + \\sin \\theta)^2 - (1 - \\sin \\theta)^2}{(1 - \\sin \\theta)(1 + \\sin \\theta)} \\\\\n&= \\frac{4 \\sin \\theta}{1 - \\sin^2 \\theta} \\\\\n&= \\frac{4 \\sin \\theta}{\\cos^2 \\theta} \\\\\n&= 4 \\cdot \\frac{\\sin \\theta}{\\cos \\theta} \\cdot \\frac{1}{\\cos \\theta} \\\\\n&= 4 \\tan \\theta \\sec \\theta = \\boxed{4}.\n\\end{align*}"
+}

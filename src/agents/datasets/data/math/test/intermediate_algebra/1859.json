@@ -1,0 +1,6 @@
+{
+    "problem": "Let $r,$ $s,$ and $t$ be the roots of $x^3 + 9x^2 + 2x + 1 = 0.$ Compute $\\frac{1}{r^2} + \\frac{1}{s^2} + \\frac{1}{t^2}.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "First, we compute $\\frac1r + \\frac1s + \\frac1t$: We have \\[\\frac1r + \\frac1s + \\frac1t = \\frac{rs+st+tr}{rst} = \\frac{2}{-1}=-2\\]by Vieta's formulas. Squaring this equation, we get \\[\\left(\\frac1r+\\frac1s+\\frac1t\\right)^2 = 4,\\]or \\[\\frac1{r^2}+\\frac1{s^2}+\\frac1{t^2}+2\\left(\\frac1{rs}+\\frac1{st}+\\frac1{tr}\\right) = 4.\\]But we also have \\[\\frac1{rs}+\\frac1{st}+\\frac1{tr}=\\frac{r+s+t}{rst}=\\frac{-9}{-1}=9,\\]so \\[\\frac1{r^2}+\\frac1{s^2}+\\frac1{t^2}+2(9) = 4.\\]Therefore, \\[\\frac1{r^2}+\\frac1{s^2}+\\frac1{t^2}=\\boxed{-14}.\\](Note that the left-hand side is a sum of squares, but the right-hand side is negative! This means that some of $r,$ $s,$ and $t$ must be nonreal.)"
+}

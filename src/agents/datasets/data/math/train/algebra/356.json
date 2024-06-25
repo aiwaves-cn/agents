@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence of three real numbers forms an arithmetic progression with a first term of 9. If 2 is added to the second term and 20 is added to the third term, the three resulting numbers form a geometric progression. What is the smallest possible value for the third term of the geometric progression?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The terms of the arithmetic progression are 9, $9+d$, and $9+2d$ for some real number $d$. The terms of the geometric progression are 9, $11+d$, and $29+2d$. Therefore \\[\n(11+d)^{2} = 9(29+2d) \\quad\\text{so}\\quad d^{2}+4d-140 = 0.\n\\]Thus $d=10$ or $d=-14$. The corresponding geometric progressions are $9, 21, 49$ and $9, -3, 1,$ so the smallest possible value for the third term of the geometric progression is $\\boxed{1}$."
+}

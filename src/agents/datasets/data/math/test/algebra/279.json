@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest value of $c$ such that $\\frac{c^2 + 6c -27}{c-3} +2c = 23$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Factoring the quadratic gives $\\frac{(c-3)(c+9)}{c-3} +2c= 23$.  Canceling the common factor gives $c+9 + 2c = 23$.  Solving this equation gives $c = \\boxed{\\frac{14}{3}}$."
+}

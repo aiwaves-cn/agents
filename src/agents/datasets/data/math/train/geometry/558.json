@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $\\triangle ABC$ has a right angle at $C$, $\\angle A = 60^\\circ$, and $AC=10$.  Find the radius of the incircle of $\\triangle ABC$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "We begin by drawing a diagram:\n\n[asy]\nsize(100);\npair A,B,C;\nreal x = sqrt(3);\nC=(0,0); A=(10,0); B=(0,10*x);\ndraw(A--B--C--cycle);\ndraw(rightanglemark(B,C,A,30));\nlabel(\"$A$\",A,SE); label(\"$C$\",C,SW); label(\"$B$\",B,NW); label(\"10\",(A+C)/2,S);\n\nreal r = 5*sqrt(3) - 5;\ndraw(Circle((r,r),r));\n[/asy]\n\nSince $\\angle A = 60^\\circ$, we have $\\angle B = 180^\\circ - 90^\\circ - 60^\\circ = 30^\\circ$.  Then $\\triangle ABC$ is a $30 - 60 - 90$ triangle, so $BC=AC\\sqrt{3}=10\\sqrt{3}$ and $AB=2AC=20$.  We can compute the area of $\\triangle ABC$ as \\[ [\\triangle ABC] = \\frac{1}{2}(AC)(BC)=\\frac{1}{2}(10)(10\\sqrt{3}) = 50\\sqrt{3}.\\]Let the incircle of $\\triangle ABC$ have radius $r$.  A triangle with inradius $r$ and semiperimeter $s$ has \\[\\text{area} = rs,\\]so we have  \\[ [\\triangle ABC] = r \\left( \\frac{10+10\\sqrt{3}+20}{2} \\right) = r(15+5\\sqrt{3}).\\]Setting these two area expressions equal gives \\[50\\sqrt{3}=r(15+5\\sqrt{3}).\\]Solving for $r$ gives  \\[r = \\frac{10\\sqrt{3}}{3+\\sqrt{3}} = \\frac{10\\sqrt{3}(3-\\sqrt{3})}{9-3} = \\boxed{5(\\sqrt{3}-1)}.\\]"
+}

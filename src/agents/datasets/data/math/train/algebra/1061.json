@@ -1,0 +1,6 @@
+{
+    "problem": "Express $\\frac{0.\\overline{666}}{1.\\overline{333}}$ as a common fraction.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We might recognize the top as $\\frac{2}{3}$, and the bottom as $\\frac{4}{3}$, thereby giving you a value of $\\frac{1}{2}$.  If not, call the numerator $x$.  Multiplying by 10, and subtracting $x$, you get 9x = 6, and thus, $x = \\frac{2}{3}$.  We then notice that the denominator is $1 + \\frac{x}{2}$, thereby giving us a value of $\\boxed{\\frac{1}{2}}$ for the entire fraction."
+}

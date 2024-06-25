@@ -1,0 +1,6 @@
+{
+    "problem": "What is $.0\\overline{3} \\div .\\overline{03}$? Express your answer as a mixed number.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "It is almost always easier to use fractions than decimals when dividing. So the first task is to convert these repeating decimals to fractions. First, $.0\\overline{3}$: \\[\n10 \\cdot .0\\overline{3} = .\\overline{3} = \\frac{1}{3}\\\\\n\\Rightarrow .0\\overline{3} = \\frac{1}{3} \\div 10 = \\frac{1}{3} \\cdot \\frac{1}{10} = \\frac{1}{30}.\n\\]Next, $.\\overline{03}$: \\[\n99 \\cdot .\\overline{03} = (100-1) \\cdot .\\overline{03} = 3.\\overline{03} - .\\overline{03} = 3\\\\\n\\Rightarrow .\\overline{03} = \\frac{3}{99} = \\frac{3}{3 \\cdot 33} = \\frac{1}{33}.\n\\]We now have the tools to make our calculation: \\begin{align*}\n.0\\overline{3} \\div .\\overline{03} &= \\frac{1}{30} \\div \\frac{1}{33}= \\frac{1}{30} \\cdot \\frac{33}{1}\\\\\n&= \\frac{33}{30} = \\frac{3 \\cdot 11}{3 \\cdot 10} = \\frac{11}{10}\\\\\n&= \\frac{10+1}{10} = \\boxed{1\\frac{1}{10}}.\n\\end{align*}"
+}

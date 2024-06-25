@@ -1,0 +1,6 @@
+{
+    "problem": "How many integers in the list $25,$ $26,$ $27,$ $\\dots,$ $250$ are not perfect cubes?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are $250-25+1 = 226$ numbers in the list $25, 26, \\ldots, 250$.  We can find four perfect cubes in the list, namely $3^3,\\ldots,6^3$.  So the number of non-perfect-cubes in the list is $226-4=\\boxed{222}$."
+}

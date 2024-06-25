@@ -1,0 +1,6 @@
+{
+    "problem": "Let us have a triangle $\\triangle ABC$ and a point $D$ on $BC$ such that $BD = DC = DA.$ If $\\angle ABC = 50^\\circ,$ then how many degrees are in $\\angle ACB$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let us draw a diagram first: [asy]\npair pA, pB, pC, pD;\npD = (0, 0);\npC = pD + dir(0);\npB = pD + dir(180);\npA = pD + dir(100);\ndraw(pA--pB--pC--pA);\ndraw(pA--pD);\nlabel(\"$A$\", pA, N);\nlabel(\"$B$\", pB, SW);\nlabel(\"$C$\", pC, SE);\nlabel(\"$D$\", pD, S);\n[/asy] As we have isosceles triangles $\\triangle ABD$ and $\\triangle ACD,$ let us have $\\angle ABC = a$ and $\\angle ACB = b.$ Then, $\\angle BAC =\\angle BAD + \\angle DAC = a + b.$ Since the three angles must sum to $180^\\circ,$ we have that $2(a + b) = 180^\\circ,$ so $a + b = 90^\\circ.$ Since we know that $a = 50^\\circ,$ we see that $b = \\angle ACB = \\boxed{40^\\circ}.$"
+}

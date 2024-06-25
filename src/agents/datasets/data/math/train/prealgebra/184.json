@@ -1,0 +1,6 @@
+{
+    "problem": "What common fraction (that is, a fraction reduced to its lowest terms) is equivalent to $.3\\overline{25}$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "To express the number $0.3\\overline{25}$ as a fraction, we call it $x$ and subtract it from $100x$: $$\\begin{array}{r r c r@{}l}\n&100x &=& 32&.5252525\\ldots \\\\\n- &x &=& 0&.3252525\\ldots \\\\\n\\hline\n&99x &=& 32&.2\n\\end{array}$$ This shows that $0.3\\overline{25} = \\frac{32.2}{99} = \\frac{322}{990} = \\boxed{\\frac{161}{495}}$.\n\n(Note: This last fraction is in lowest terms, because $161=7\\cdot 23$ and $495 = 3^2\\cdot 5\\cdot 11$.)"
+}

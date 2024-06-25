@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S = \\{5^k | k \\in \\mathbb{Z}, 0 \\le k \\le 2004 \\}$. Given that $5^{2004} = 5443 \\cdots 0625$ has $1401$ digits, how many elements of $S$ begin with the digit $1$?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that $5^n$ has the same number of digits as $5^{n-1}$ if and only if $5^{n-1}$ has a leading digit $1$. Therefore, there are $2004 - 1401 = 603$ numbers with leading digit $1$ among the set $\\{5^1, 5^2, 5^3, \\cdots 5^{2003}\\}.$ However, $5^0$ also starts with $1$, so the answer is $603 + 1 = \\boxed{604}$."
+}

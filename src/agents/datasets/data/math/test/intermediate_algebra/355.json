@@ -1,0 +1,6 @@
+{
+    "problem": "Find the polynomial $p(x)$ if\n$$(x^2-3x+5)p(x) = x^4-3x^3+15x-25.$$",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "Since multiplying $p(x)$ with a quadratic (degree 2) polynomial gives us a quartic (degree 4) polynomial, $p(x)$ is also a quadratic of the form $ax^2+bx+c$ where $a$, $b$, and $c$ are constants. So we have\n$$(x^2-3x+5)(ax^2+bx+c) = x^4-3x^3+15x-25.$$Expanding the left hand side gives us\n$$ax^4 - (b-3a)x^3+(5a-3b+c)x^2+(5b-3c)x+5c = x^4-3x^3+15x-25.$$If these polynomials are equal, each term must be equal. So, $ax^4 = x^4$ which means $a = 1$.  Also, $(b-3a)x^3 = (b-3)x^3 =  -3x^3$ which we can solve to get $b=0$.  Finally, since we must have $5c = -25$ we know $c=-5$.  Hence, the polynomial $p(x) = \\boxed{x^2-5}$."
+}

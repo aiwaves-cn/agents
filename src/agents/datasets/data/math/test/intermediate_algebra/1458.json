@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P$ be a point on the curve $xyz^2 = 2$ in three-dimensional space.  Find the minimum distance between $P$ and the origin.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We want to minimize $x^2 + y^2 + z^2.$  We know that $xyz^2 = 2.$  Note that flipping the sign of $z$ does not change $x^2 + y^2 + z^2$ or $xyz^2,$ so we may assume that $z$ is positive.  Also, from the condition $xyz^2 = 2,$ both $x$ and $y$ are positive, or both are negative.  If they are both negative, we can flip the sign of both $x$ and $y.$  Thus, we may assume that $x,$ $y,$ and $z$ are all positive.\n\nThen by AM-GM,\n\\begin{align*}\nx^2 + y^2 + z^2 &= x^2 + y^2 + \\frac{z^2}{2} + \\frac{z^2}{2} \\\\\n&\\ge 4 \\sqrt[4]{x^2 \\cdot y^2 \\cdot \\frac{z^2}{2} \\cdot \\frac{z^2}{2}} \\\\\n&= 4 \\sqrt[4]{\\frac{x^2 y^2 z^4}{4}} \\\\\n&= 4 \\sqrt{\\frac{xyz^2}{2}} \\\\\n&= 4.\n\\end{align*}Hence, $\\sqrt{x^2 + y^2 + z^2} \\ge 2.$\n\nEquality occurs when $x = y = \\frac{z}{\\sqrt{2}}.$  Along with the condition $xyz^2 = 2,$ we can solve to get $x = 1,$ $y = 1,$ and $z = \\sqrt{2}.$  Thus, the minimum distance is $\\boxed{2}.$"
+}

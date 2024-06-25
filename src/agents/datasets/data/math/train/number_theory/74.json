@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$ be the product of the divisors of $42$. How many distinct prime factors does $A$ have?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The divisors of 42 are 1, 2, 3, 6, 7, 14, 21, and 42. They can be paired off into four pairs in such a way that the product of each pair is 42:  \\begin{align*}\n\\{1&,42\\}, \\\\\n\\{2&, 21\\},\\\\\n\\{3&, 14\\}, \\text{and}\\\\\n\\{6&, 7\\}.\n\\end{align*}Thus $A=42^4=(2\\cdot3\\cdot7)^4=2^4\\cdot3^4\\cdot7^4$ has $\\boxed{3}$ prime divisors."
+}

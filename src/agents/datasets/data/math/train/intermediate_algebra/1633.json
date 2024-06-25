@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $x^{101} + Ax + B$ is divisible by $x^2 + x + 1$ for some real numbers $A$ and $B.$  Find $A + B.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If $x^{101} + Ax + B$ is divisible by $x^2 + x + 1,$ then $x^{101} + Ax + B$ must be equal to 0 any time $x$ is a root of $x^2 + x + 1 = 0.$\n\nLet $\\omega$ be a root of $x^2 + x + 1 = 0,$ so $\\omega^2 + \\omega + 1 = 0.$  Then\n\\[(\\omega - 1)(\\omega^2 + \\omega + 1) = 0,\\]or $\\omega^3 - 1 = 0,$ which means $\\omega^3 = 1.$\n\nBy the Factor Theorem,\n\\[\\omega^{101} + A \\omega + B = 0.\\]We have that $\\omega^{101} = \\omega^{3 \\cdot 33 + 2} = (\\omega^3)^{33} \\cdot \\omega^2 = \\omega^2,$ so\n\\begin{align*}\n\\omega^{101} + A \\omega + B &= \\omega^2 + A \\omega + B \\\\\n&= (-\\omega - 1) + A \\omega + B \\\\\n&= (A - 1) \\omega + (B - 1) \\\\\n&= 0.\n\\end{align*}Since $\\omega$ is a nonreal complex number, we must have $A = 1$ and $B = 1,$ so $A + B = \\boxed{2}.$"
+}

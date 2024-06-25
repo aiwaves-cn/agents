@@ -1,0 +1,6 @@
+{
+    "problem": "Completely factor the following expression: \\[(6a^3+92a^2-7)-(-7a^3+a^2-7)\\]",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we combine like terms in the expression: \\begin{align*}\n&(6a^3+92a^2-7)-(-7a^3+a^2-7)\\\\\n& \\qquad=6a^3+92a^2-7+7a^3-a^2+7\\\\\n&\\qquad=13a^3+91a^2.\n\\end{align*}We can factor out a $13a^2$ from the expression, to get \\[13a^3+91a^2=\\boxed{13a^2(a+7)}.\\]"
+}

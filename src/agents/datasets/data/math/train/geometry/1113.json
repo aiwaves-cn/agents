@@ -1,0 +1,6 @@
+{
+    "problem": "The hypotenuse of a right triangle whose legs are consecutive whole numbers is 29 units. What is the sum of the lengths of the two legs?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Let's call the length of the shorter leg $x$. Then the length of the longer leg is $x + 1$. Using the Pythagorean Theorem, we write the equation $x^2 + (x + 1)^2 = 29^2$ and solve for $x$. Expanding $(x + 1)^2$, we get $x\n^2 + x^2 + 2x + 1 = 841$. This can be simplified to $2x^2 + 2x = 840$, or $x^2 + x = 420$. Factoring out $x$ on the left, we can rewrite it as $x(x + 1) = 420$. In other words, the product of these two consecutive numbers is 420, which means they must each be close to the square root of 420. Indeed, $20 \\times 21 = 420$, so the legs must be 20 and 21. Their sum is $20 + 21 = \\boxed{41}$."
+}

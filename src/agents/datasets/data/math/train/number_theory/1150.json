@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer $n$ for which $9n-2$ and $7n + 3$ share a common factor greater than $1$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "By the Euclidean algorithm, \\begin{align*}\n\\text{gcd}\\,(9n-2,7n+3) &= \\text{gcd}\\,(9n-2-(7n+3),7n+3) \\\\\n&= \\text{gcd}\\,(2n-5,7n+3) \\\\\n&= \\text{gcd}\\,(2n-5,7n+3-3(2n-5)) \\\\\n&= \\text{gcd}\\,(2n-5,n+18) \\\\\n&= \\text{gcd}\\,(2n-5-2(n+18),n+18) \\\\\n&= \\text{gcd}\\,(-41,n+18).\n\\end{align*}Since $41$ is prime, it follows that $9n-2$ and $7n+3$ have a common factor greater than 1 only if $n+18$ is divisible by 41. The smallest such positive integer value of $n$ is $41-18=\\boxed{23}$. Note that $9n-2 = 205 = 5 \\times 41$ and $7n+3 = 164 = 4 \\times 41$."
+}

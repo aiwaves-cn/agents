@@ -1,0 +1,6 @@
+{
+    "problem": "Express the quotient $413_5 \\div 2_5$ in base 5.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We may carry out long division in base 5 just as in base 10. We have  \\[\n\\begin{array}{c|ccc}\n\\multicolumn{2}{r}{2} & 0 & 4 \\\\\n\\cline{2-4}\n2 & 4 & 1 & 3 \\\\\n\\multicolumn{2}{r}{4} & \\downarrow & \\\\ \\cline{2-2}\n\\multicolumn{2}{r}{0} & 1 & \\\\\n\\multicolumn{2}{r}{} & 0 & \\downarrow \\\\ \\cline{3-3}\n\\multicolumn{2}{r}{} & 1 & 3 \\\\\n\\multicolumn{2}{r}{} & 1 & 3 \\\\ \\cline{3-4}\n\\multicolumn{2}{r}{} & & 0\n\\end{array}\n\\]for a quotient of $\\boxed{204_5}$. Note that in the above calculation we have used that $13_5$ divided by $2_5$ is $4_5$, which follows from $4_5\\times2_5=8_{10}=13_5$."
+}

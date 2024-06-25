@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[z = \\frac{(-11 + 13i)^3 \\cdot (24 - 7i)^4}{3 + 4i},\\]and let $w = \\frac{\\overline{z}}{z}.$  Compute $|w|.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since $|\\overline{z}| = |z|$ for any complex number $z,$\n\\[|w| = \\left| \\frac{\\overline{z}}{z} \\right| = \\frac{|\\overline{z}|}{|z|} = \\boxed{1}.\\]"
+}

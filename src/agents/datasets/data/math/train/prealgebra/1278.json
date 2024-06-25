@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all values of $x$ for which $\\sqrt{(x+3)^{2}} = 7$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "49 is the number whose square root is 7, so we must have \\[(x+3)^2 = 49.\\] Therefore, we must have $x+3 = 7$ or $x+3 = -7$.  The first equation gives us $x = 4$ the second gives us $x = -10$.  Both are solutions, so the sum of all possible values of $x$ is $4 + (-10) = \\boxed{-6}$."
+}

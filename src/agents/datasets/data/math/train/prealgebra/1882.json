@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\frac{8xy^2}{6x^2y}$ with $x=2$ and $y=3.$",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "First, we look for factors that are in both the numerator and the denominator. Since $6$ and $8$ are both even, we can take out a factor of $2.$ We can also cancel a factor of $x$ and a factor of $y$ since they each appear in both the numerator and the denominator. This leaves us with \\[\\frac{\\cancelto{4}{8}\\cancel{x}y^{\\cancel{2}}}{\\cancelto{3}{6}x^{\\cancel{2}}\\cancel{y}}=\\frac{4y}{3x}.\\]Now we substitute $x=2$ and $y=3$ to get $\\frac{4\\cdot \\cancel{3}}{\\cancel{3}\\cdot 2}=\\frac{4}{2}=\\boxed{2}.$"
+}

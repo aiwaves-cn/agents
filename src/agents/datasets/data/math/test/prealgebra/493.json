@@ -1,0 +1,6 @@
+{
+    "problem": "The length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let the width of the rectangle be $w$. Then the length of the rectangle is $2w$. We can apply the Pythagorean Theorem to two sides of this rectangle and get that the length of the diagonal is $5\\sqrt{5}=\\sqrt{w^2+(2w)^2}=\\sqrt{5 w^2}$. We therefore have $5\\sqrt{5} = w\\sqrt{5}$, which means that $w=5$. This means that the length of the rectangle is 10, so its area is $5\\cdot10=\\boxed{50}$."
+}

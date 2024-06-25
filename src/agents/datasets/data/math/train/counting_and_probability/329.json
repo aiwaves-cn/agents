@@ -1,0 +1,6 @@
+{
+    "problem": "The digits $1,2,3,4$ and $5$ can be arranged to form many different $5$-digit positive integers with five distinct digits. In how many such integers is the digit $1$ to the left of the digit $2$?  (The digits 1 and 2 do not have to be next to each other.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "For the first digit, we have 5 choices, then we have 4 choices left for the second digit, then 3 choices for the third digit, etc. So there are $5!=120$ arrangements of the digits. Notice that for each arrangement with 1 to the left of 2, we can reverse the arrangement so that 2 is to the left of 1. For instance, flipping 31245 results in 54213. So by symmetry, exactly half of the arrangements have 1 to the left of 2. In $\\frac{120}{2}=\\boxed{60}$ integers, the digit 1 is to the left of the digit 2."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the constant $b$ such that\n$$\\left(5x^2-3x+\\frac{7}{3}\\right)(ax^2+bx+c) = 15x^4 - 14x^3 + 20x^2 - \\frac{25}{3}x + \\frac{14}{3}$$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We can use the coefficient of the $x^3$ term to find $b$. On the right we have $-14x^3$, and on the left, the only $x^3$ terms we will get when we expand are $-3x(ax^2)$ and $5x^2(bx)$.\n\nSo we must have\n$$-3ax^3 + 5bx^3 = -14x^3$$which means\n$$5b - 3a = -14$$To find $a$, we use the same reasoning and look at the $x^4$ terms. On the right we have $15x^4$, and on the left, the only $x^4$ term we will get when we expand is $5x^2(ax^2)$. Then we know that\n$$5ax^4 = 15x^4$$which means that $a=3$.\n\nThen $5b -3(3) = -14$ and $b = \\boxed{-1}$."
+}

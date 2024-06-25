@@ -1,0 +1,6 @@
+{
+    "problem": "The letter T is formed by placing two $2\\:\\text{inch}\\!\\times\\!4\\:\\text{inch}$ rectangles next to each other, as shown.  What is the perimeter of the T, in inches? [asy]\ndraw((1,0)--(3,0)--(3,4)--(4,4)--(4,6)--(0,6)--(0,4)--(1,4)--cycle);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "[asy]\ndraw((1,0)--(3,0)--(3,4)--(4,4)--(4,6)--(0,6)--(0,4)--(1,4)--cycle);\nlabel(\"2\", (2, 0), S);\nlabel(\"4\", (3,2), E);\nlabel(\"4\", (1,2), W);\nlabel(\"1\", (.5, 4), S);\nlabel(\"1\", (3.5, 4), S);\nlabel(\"2\", (0, 5), W);\nlabel(\"2\", (4,5), E);\nlabel(\"4\", (2,6), N);\ndraw((1,4)--(3,4), linetype(\"8 8\"));\n[/asy] The perimeter is $4 + 2 + 1 + 4 + 2 + 4 + 1 + 2 = \\boxed{20}\\text{ inches}$.\n\n\\[ OR \\]Each rectangle has perimeter $= 2l + 2w = 2(4) + 2(2) = 8 + 4 = 12$ inches. When the two rectangles are positioned to form the T, a two-inch segment of each rectangle is inside the T and is not on the perimeter of the T. So the perimeter of the T is $2(12) - 2(2) = 24\n- 4 = \\boxed{20}$ inches."
+}

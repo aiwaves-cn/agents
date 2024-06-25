@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\cos \\left( \\arcsin \\frac{5}{13} \\right).$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Consider a right triangle where the opposite side is 5 and the hypotenuse is 13.\n\n[asy]\nunitsize (0.3 cm);\n\ndraw((0,0)--(12,0)--(12,5)--cycle);\n\nlabel(\"$12$\", (6,0), S);\nlabel(\"$13$\", (6,5/2), NW);\nlabel(\"$5$\", (12,5/2), E);\nlabel(\"$\\theta$\", (5,1));\n[/asy]\n\nThen $\\sin \\theta = \\frac{5}{13},$ so $\\theta = \\arcsin \\frac{5}{13}.$  By Pythagoras, the adjacent side is 12, so $\\cos \\theta = \\boxed{\\frac{12}{13}}.$"
+}

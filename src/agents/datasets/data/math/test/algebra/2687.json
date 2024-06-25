@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$,$b$,$c$,$d$, and $e$ be five consecutive terms in an arithmetic sequence, and suppose that $a+b+c+d+e=30$.  Which of the following can be found? $$\\text{(A)}\\ a \\qquad \\text{(B)}\\ b \\qquad \\text{(C)}\\ c \\qquad \\text{(D)}\\ d \\qquad \\text{(E)}\\ e $$Enter the letter of the correct option, so your answer will be A, B, C, D, or E.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let $x$ be the common difference.  Then $a = c - 2x$, $b = c - x$, $d = c + x$, and $e = c + 2x$, so \\[a + b + c + d + e = (c - 2x) + (c - x) + c + (c + x) + (c + 2x) = 5c.\\]But this sum is also 30, so $5c = 30$, which means $c = 6$.  Therefore, the answer is $\\boxed{\\text{(C)}}$.\n\nTo see that the values of  the other terms cannot be found, note that the sequences 4, 5, 6, 7, 8 and 10,8,6,4,2 both satisfy the given conditions."
+}

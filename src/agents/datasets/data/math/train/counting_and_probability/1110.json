@@ -1,0 +1,6 @@
+{
+    "problem": "Crestwood Elementary School has an active four-square league, consisting of ten players, including Justin and Tim. Each day at recess, the ten players split into two four-square games, each with five players in no relevant order. Over the course of a semester, each possible match-up of five players occurs once. How many times did Justin play in the same game as Tim?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Each game has 5 players. The games that we are counting include Justin, Tim, and 3 of the 8 other players. There are $\\binom{8}{3}$ = 56 such match-ups.\n\n\nAlternatively, There are $\\binom{10}{5}$ = 252 different possible match-ups involving 5 of the 10 players. By symmetry, every player plays in exactly half of them, 126 games. In each of the 126 games that Tim plays, he plays with 4 of the other 9 players. Again by symmetry, he plays with each of those 9 players in 4/9 of his games. So he plays against Justin in 4/9 of 126 games, or $\\boxed{56}$ games."
+}

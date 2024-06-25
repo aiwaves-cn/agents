@@ -1,0 +1,6 @@
+{
+    "problem": "When rolling two fair, standard six-faced dice, what is the probability of rolling the same number on both dice? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "No matter what the result of the first roll is, there are 6 equally likely possibilities for the second roll, only one of which is the same as the first roll.  Therefore, the probability that the dice show the same number is $\\boxed{\\frac{1}{6}}$."
+}

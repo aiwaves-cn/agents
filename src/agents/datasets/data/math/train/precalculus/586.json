@@ -1,0 +1,6 @@
+{
+    "problem": "Convert the point $( -2, -2 \\sqrt{3}, -1)$ in rectangular coordinates to cylindrical coordinates.  Enter your answer in the form $(r,\\theta,z),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that $r = \\sqrt{(-2)^2 + (-2 \\sqrt{3})^2} = 4.$  We want $\\theta$ to satisfy\n\\begin{align*}\n-2 &= 4 \\cos \\theta, \\\\\n-2 \\sqrt{3} &= 4 \\sin \\theta.\n\\end{align*}Thus, $\\theta = \\frac{4 \\pi}{3},$ so the cylindrical coordinates are $\\boxed{\\left( 4, \\frac{4 \\pi}{3}, -1 \\right)}.$"
+}

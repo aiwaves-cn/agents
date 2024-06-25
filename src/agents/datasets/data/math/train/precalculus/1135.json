@@ -1,0 +1,6 @@
+{
+    "problem": "Among all triangles $ABC,$ find the maximum value of $\\sin A + \\sin B \\sin C.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\sin B \\sin C &= \\frac{1}{2} (\\cos (B - C) - \\cos (B + C)) \\\\\n&= \\frac{1}{2} (\\cos (B - C) - \\cos (180^\\circ - A)) \\\\\n&= \\frac{1}{2} (\\cos (B - C) + \\cos A).\n\\end{align*}Then\n\\begin{align*}\n\\sin A + \\sin B \\sin C &= \\sin A + \\frac{1}{2} \\cos A + \\frac{1}{2} \\cos (B - C) \\\\\n&= \\frac{\\sqrt{5}}{2} \\left( \\frac{2}{\\sqrt{5}} \\sin A + \\frac{1}{\\sqrt{5}} \\cos A \\right) + \\frac{1}{2} \\cos (B - C) \\\\\n&= \\frac{\\sqrt{5}}{2} \\left( \\cos \\theta \\sin A + \\sin \\theta \\cos A \\right) + \\frac{1}{2} \\cos (B - C) \\\\\n&= \\frac{\\sqrt{5}}{2} \\sin (A + \\theta) + \\frac{1}{2} \\cos (B - C),\n\\end{align*}where $\\theta$ is the acute angle such that $\\cos \\theta = \\frac{2}{\\sqrt{5}}$ and $\\sin \\theta = \\frac{1}{\\sqrt{5}}.$\n\nThen\n\\[\\frac{\\sqrt{5}}{2} \\sin (A + \\theta) + \\frac{1}{2} \\cos (B - C) \\le \\frac{\\sqrt{5}}{2} + \\frac{1}{2} = \\frac{1 + \\sqrt{5}}{2}.\\]Equality occurs when $A = \\frac{\\pi}{2} - \\theta$ and $B = C = \\frac{\\pi - A}{2},$ so the maximum value is $\\boxed{\\frac{1 + \\sqrt{5}}{2}}.$"
+}

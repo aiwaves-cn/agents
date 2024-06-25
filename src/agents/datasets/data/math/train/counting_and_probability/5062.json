@@ -1,0 +1,6 @@
+{
+    "problem": "A hotel packed breakfast for each of three guests. Each breakfast should have consisted of three types of rolls, one each of nut, cheese, and fruit rolls. The preparer wrapped each of the nine rolls and once wrapped, the rolls were indistinguishable from one another. She then randomly put three rolls in a bag for each of the guests. Given that the probability each guest got one roll of each type is $\\frac mn,$ where $m$ and $n$ are relatively prime integers, find $m+n.$\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Use construction. We need only calculate the probability the first and second person all get a roll of each type, since then the rolls for the third person are determined.\nPerson 1: $\\frac{9 \\cdot 6 \\cdot 3}{9 \\cdot 8 \\cdot 7} = \\frac{9}{28}$\nPerson 2: $\\frac{6 \\cdot 4 \\cdot 2}{6 \\cdot 5 \\cdot 4} = \\frac 25$\nPerson 3: One roll of each type is left, so the probability here is $1$.\nOur answer is thus $\\frac{9}{28} \\cdot \\frac{2}{5} = \\frac{9}{70}$, and $m + n = \\boxed{79}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A complete cycle of a traffic light takes 60 seconds. During each cycle the light is green for 25 seconds, yellow for 5 seconds, and red for 30 seconds. At a randomly chosen time, what is the probability that the light will NOT be green?  Express your answer as a common fraction.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "The probability that it will be green is $\\frac{25}{60}=\\frac{5}{12}$. So the probability that it is not green is simply $1-\\frac{5}{12}=\\boxed{\\frac{7}{12}}$."
+}

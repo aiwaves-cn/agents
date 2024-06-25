@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x_1,$ $x_2,$ $\\dots,$ $x_{100}$ be real numbers such that $x_1 + x_2 + \\dots + x_{100} = 1$ and\n\\[\\frac{x_1}{1 - x_1} + \\frac{x_2}{1 - x_2} + \\dots + \\frac{x_{100}}{1 - x_{100}} = 1.\\]Find\n\\[\\frac{x_1^2}{1 - x_1} + \\frac{x_2^2}{1 - x_2} + \\dots + \\frac{x_{100}^2}{1 - x_{100}}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "In general,\n\\[\\frac{x^2}{1 - x} = \\frac{x^2 - x + x}{1 - x} = \\frac{x(x - 1) + x}{1 - x} = \\frac{x}{1 - x} - x,\\]so\n\\begin{align*}\n\\frac{x_1^2}{1 - x_1} + \\frac{x_2^2}{1 - x_2} + \\dots + \\frac{x_{100}^2}{1 - x_{100}} &= \\frac{x_1}{1 - x_1} + \\frac{x_2}{1 - x_2} + \\dots + \\frac{x_{100}}{1 - x_{100}} - (x_1 + x_2 + \\dots + x_{100}) \\\\\n&= 1 - 1 \\\\\n&= \\boxed{0}.\n\\end{align*}"
+}

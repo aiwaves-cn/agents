@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be positive real numbers such that $a > b$ and $a + b + c = 4.$  Find the minimum value of\n\\[4a + 3b + \\frac{c^3}{(a - b)b}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[(a - b) + b + \\frac{c^3}{(a - b)b} \\ge 3 \\sqrt[3]{(a - b) \\cdot b \\cdot \\frac{c^3}{(a - b)b}} = 3c.\\]Hence,\n\\begin{align*}\n4a + 3b + \\frac{c^3}{(a - b)b} &= 3a + 3b + \\left[ (a - b) + b + \\frac{c^3}{(a - b)b} \\right] \\\\\n&\\ge 3a + 3b + 3c \\\\\n&= 12.\n\\end{align*}Equality occurs when $a = 2$ and $b = c = 1,$ so the minimum value is $\\boxed{12}.$"
+}

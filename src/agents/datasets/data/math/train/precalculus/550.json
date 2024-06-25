@@ -1,0 +1,6 @@
+{
+    "problem": "If the matrix $\\mathbf{A}$ has an inverse and $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0},$ then find\n\\[\\mathbf{A} + 8 \\mathbf{A}^{-1}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Expanding $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0},$ we get\n\\[\\mathbf{A}^2 - 6 \\mathbf{A} + 8 \\mathbf{I} = \\mathbf{0}.\\]Multiplying both sides by $\\mathbf{A}^{-1},$ we get\n\\[\\mathbf{A} - 6 \\mathbf{I} + 8 \\mathbf{A}^{-1} = \\mathbf{0}.\\]Then\n\\[\\mathbf{A} + 8 \\mathbf{A}^{-1} = 6 \\mathbf{I} = \\boxed{\\begin{pmatrix} 6 & 0 \\\\ 0 & 6 \\end{pmatrix}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A particular number written in base 3 requires three digits (${\\_ \\_ \\_}_3$). When the number is written in base 3 and 4, the digits are the reverse of each other. What is this number expressed in base 10?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $abc$ represent the three-digit number in base 3, where $a$, $b$ and $c$ each represent a digit 0, 1 or 2. The place values in base 3 are 9, 3 and 1, so the base-ten value of $abc$ is $a \\times 9 + b \\times 3 + c \\times 1$, which can be written as $9a + 3b + c$. This same value is $cba$ in base 4, which we can  write as $16c + 4b + a$. Equating these two expressions, we get $9a + 3b + c = 16c + 4b + a$. We can simplify this to $8a = 15c + b$. Now, there are only three digits to try for each letter. It turns out that $8 \\times 2 = 15 \\times 1 + 1$, so the base-three number is $211_3$ and the base-four number is $112_4$. The  base-ten value is $(2 \\times 9) + (1 \\times 3) + 1 = 18 + 3 + 1 = 22$. To confirm this answer, we check the base-four value: $1 \\times 16 + 1 \\times 4 + 2 \\times 1 = 16 + 4 + 2 = \\boxed{22}.$"
+}

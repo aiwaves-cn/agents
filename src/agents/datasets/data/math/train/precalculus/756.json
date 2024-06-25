@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\tan \\left (\\operatorname{arccot} \\frac{4}{7} \\right).$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Consider a right triangle where the adjacent side is 4 and the opposite side is 7.\n\n[asy]\nunitsize (0.5 cm);\n\ndraw((0,0)--(4,0)--(4,7)--cycle);\n\nlabel(\"$4$\", (2,0), S);\nlabel(\"$7$\", (4,7/2), E);\nlabel(\"$\\theta$\", (0.8,0.5));\n[/asy]\n\nThen $\\cot \\theta = \\frac{4}{7},$ so $\\theta = \\operatorname{arccot} \\frac{4}{7}.$  Hence, $\\tan \\theta = \\frac{1}{\\cot \\theta} = \\boxed{\\frac{7}{4}}.$"
+}

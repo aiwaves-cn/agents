@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest number of people that can be broken up both into 15 groups of equal membership and into 48 groups of equal membership?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Let $x$ be the smallest number of people that can be broken up into 15 groups of equal membership and into 48 groups of equal membership.  This means $x$ must be a multiple of both 15 and 48.  The smallest such number is the least common multiple of 15 and 48. $15=3 \\cdot 5$ and $48=2^4 \\cdot 3$. Thus, any multiple of 15 and 48 must have a factor of 2 raised to at least the fourth power, a factor of 3 raised to at least the first power, and a factor of 5 raised to at least the first power. Thus, the least such multiple is $2^4 \\cdot 3\\cdot 5 = \\boxed{240}$."
+}

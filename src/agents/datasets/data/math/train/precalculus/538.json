@@ -1,0 +1,6 @@
+{
+    "problem": "A line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -2 \\end{pmatrix} + t \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}.\\]A second line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -8 \\\\ 12 \\end{pmatrix} + u \\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix}.\\]If $\\theta$ is the acute angle formed by the two lines, then find $\\cos \\theta.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The direction vectors of the lines are $\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix}.$  The cosine of the angle between these direction vectors is\n\\[\\frac{\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix} \\right\\|} = \\frac{15}{\\sqrt{25} \\sqrt{10}} = \\frac{3}{\\sqrt{10}}.\\]Hence, $\\cos \\theta = \\boxed{\\frac{3}{\\sqrt{10}}}.$"
+}

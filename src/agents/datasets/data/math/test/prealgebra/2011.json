@@ -1,0 +1,6 @@
+{
+    "problem": "Which of the following is closest to $$10^0 + 10^1 + 10^2 + 10^3 + 10^4 + 10^5?$$$\\bullet$ A) $10^0$\n\n$\\bullet$ B) $10^1$\n\n$\\bullet$ C) $10^2$\n\n$\\bullet$ D) $10^3$\n\n$\\bullet$ E) $10^4$\n\n$\\bullet$ F) $10^5$\n\n$\\bullet$ G) $10^6$\n\nWrite your answer as A, B, C, D, E, F, or G.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Converting the sum to a decimal gives $$\n10^0 + 10^1 + 10^2 + 10^3 + 10^4 + 10^5 = 111,\\!111.\n$$The numbers $10^0,$ $10^1,$ $10^2,$ $10^3,$ $10^4,$ and $10^5$ are all less than $111,\\! 111,$ so they all lie to the left of $111,\\! 111$ on the number line. Since $10^5$ is greater than $10^0,$ $10^1,$ $10^2,$ $10^3,$ and $10^4,$ it lies further to the right than these five powers of $10$ on the number line, so it is closer to $111,\\!111$ than these five powers of $10.$ Therefore, either $10^5$ or $10^6$ have to be the number among the answer choices that is closest to $111,\\!111.$\n\nRounding $111,\\!111$ to the nearest million gives $0,$ so $111,\\!111$ is at least $500,\\!000$ away from $10^6.$\n\nNote that $10^5 = 100,\\!000$ and $$111,\\!111 - 100,\\!000 = 11,\\!111,$$which is much less than $500,\\!000,$ so $10^5$ is closer to $111,\\!111$ than $10^6.$ So our final answer is $\\boxed{F}.$"
+}

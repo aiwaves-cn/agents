@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify the expression \\[\\sqrt{41+24\\sqrt2}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We look for integers $a$ and $b$ such that \\[\\sqrt{41+24\\sqrt2} = a+b\\sqrt2.\\]Squaring both sides, we have $41+24\\sqrt2=(a+b\\sqrt2)^2 = (a^2+2b^2) + 2ab\\sqrt2.$ Therefore, we must have \\[\\begin{aligned} a^2+2b^2 &=41, \\\\ 2ab &= 24. \\end{aligned}\\]The second equation gives $ab=12.$ Trying the factor pairs of $12,$ we find that $(a,b)=(3,4)$ satisfies $a^2+2b^2=41.$ Therefore, $41+24\\sqrt2=(3+4\\sqrt2)^2.$ Since $3+4\\sqrt2 \\ge 0,$ it follows that \\[\\sqrt{41+24\\sqrt2} = \\boxed{3+4\\sqrt2}.\\]"
+}

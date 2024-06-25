@@ -1,0 +1,6 @@
+{
+    "problem": "The Senate has 100 members, 55 Republicans and 45 Democrats.  In how many ways can I choose a 5-person committee consisting of 3 Republicans and 2 Democrats?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 55 ways to choose the first Republican, 54 ways to choose the second Republican, and 53 ways to choose the third Republican; however, we must divide by $3!$ because order does not matter.  So the number of ways to choose Republicans is $\\dfrac{55 \\times 54 \\times 53}{3!} = 26,\\!235$. There are 45 ways to choose the first Democrat and 44 ways to choose the second Democrat, but we must divide by $2!$ because order does not matter.  So the number of ways to choose the Democrats is $\\dfrac{45 \\times 44}{2!} = 990$.  So there are $26,\\!235 \\times 990 = \\boxed{25,\\!972,\\!650}$ ways to choose a committee."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\frac{(10^4+324)(22^4+324)(34^4+324)(46^4+324)(58^4+324)}{(4^4+324)(16^4+324)(28^4+324)(40^4+324)(52^4+324)}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Each of the terms is of the form $x^4 + 324$. To factor, we write: \\[\\begin{aligned} x^4 + 324 &= (x^4 + 36x^2 + 324) - 36x^2\\\\& = (x^2+18)^2 - 36x^2 \\\\& = (x^2-6x+18)(x^2+6x+18) \\\\ &= (x(x-6)+18)(x(x+6)+18). \\end{aligned}\\]Therefore, the given expression equals \\[\\frac{(10\\cdot4+18)(10\\cdot16+18)(22\\cdot16+18)(22\\cdot28+18) \\dotsm (58\\cdot52+18)(58\\cdot64+18)}{(4\\cdot(-2)+18)(4\\cdot10+18)(16\\cdot10+18)(16\\cdot22+18) \\dotsm (52\\cdot46+18)(52\\cdot58+18)}.\\]Nearly all the terms cancel, leaving just \\[\\frac{58 \\cdot 64 + 18}{4 \\cdot (-2) + 18} = \\boxed{373}.\\]Remark. The factorization $x^4+324 = (x^2-6x+18)(x^2+6x+18)$ is a special case of the Sophie Germain identity, which is derived in the same way; it states that \\[a^4 + 4b^4 = (a^2-2ab+2b^2)(a^2+2ab+2b^2).\\]"
+}

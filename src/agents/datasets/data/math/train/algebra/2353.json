@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest possible value of $x$ for the equation $$\\left(\\frac{4x-16}{3x-4}\\right)^2+\\left(\\frac{4x-16}{3x-4}\\right)=12?$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First substitute $y=\\frac{4x-16}{3x-4}$ to find  \\[\ny^2+y=12,\n\\] which gives $y=3,-4$.  Setting $\\frac{4x-16}{3x-4}$ equal to 3, we find $4x-16=9x-12$ which implies $x=-4/5$.  Setting $\\frac{4x-16}{3x-4}$ equal to $-4$, we find $4x-16=16-12x$ which implies $x=\\boxed{2}$."
+}

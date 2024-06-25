@@ -1,0 +1,6 @@
+{
+    "problem": "For the three identical squares shown, points $A$, $B$ and $C$ are vertices, and $AB$ = $2\\sqrt{5}$ cm. What is the length of $AC$, in centimeters? Express your answer in simplest radical form.\n\n[asy]\ndraw((0,0)--(0,10)--(30,10)--(30,0)--cycle);\ndraw((10,0)--(10,10));\ndraw((20,0)--(20,10));\ndraw((0,10)--(20,0),linewidth(1));\nlabel(\"$A$\",(0,10),NW);\nlabel(\"$B$\",(20,0),S);\nlabel(\"$C$\",(30,0),S);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let the side length of one of the squares be $x$. Looking at the right triangle with hypotenuse $AB$, we have the equation $x^2+(2x)^2=(2\\sqrt{5})^2$ from the Pythagorean Theorem.  Simplifying this equation gives $x^2=4$. Looking at the right triangle with hypotenuse $AC$, we have the equation $x^2+(3x)^2=AC^2 \\Rightarrow AC^2=10x^2=40$. Thus, $AC=\\sqrt{40}=\\boxed{2\\sqrt{10}}$ centimeters."
+}

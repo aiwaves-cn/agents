@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $QRS$ is a straight line. What is the measure of $\\angle RPS,$ in degrees? [asy]\npair Q=(0,0);\npair R=(1.3,0);\npair SS=(2.3,0);\npair P=(.8,1);\n\ndraw(P--Q--R--SS--P--R);\n\nlabel(\"$Q$\",Q,S);\nlabel(\"$R$\",R,S);\nlabel(\"$S$\",SS,S);\nlabel(\"$P$\",P,N);\n\nlabel(\"$48^\\circ$\",Q+(.12,.05),NE);\nlabel(\"$67^\\circ$\",P-(.02,.15),S);\nlabel(\"$38^\\circ$\",SS+(-.32,.05),NW);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since the sum of the angles in a triangle is $180^\\circ,$ then \\begin{align*}\n\\angle QPS &= 180^\\circ - \\angle PQS - \\angle PSQ \\\\\n&= 180^\\circ - 48^\\circ - 38^\\circ \\\\\n&= 94^\\circ.\n\\end{align*}Therefore, \\begin{align*}\n\\angle RPS &= \\angle QPS - \\angle QPR \\\\\n&= 94^\\circ - 67^\\circ \\\\\n&= \\boxed{27^\\circ}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the probability that when we roll four fair 6-sided dice, they won't all show the same number?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Counting the number of outcomes in which four 6-sided dice don't all show the same number would require some pretty delicate casework.  However, counting all the outcomes in which four 6-sided dice do all show the same number is very easy: there are only 6 ways this can happen, namely all ones, all twos, all threes, all fours, all fives, and all sixes.  So since there are $6^4$ total outcomes, we can conclude that $$ P(\\text{4 dice all show the same number}) = \\frac{6}{6^4} = \\frac{1}{6^3} = \\frac{1}{216}. $$Therefore, using the principle of complementary probabilities, we can conclude that $$ P(\\text{4 dice don't all show the same number}) = 1 - \\frac{1}{216} = \\boxed{\\frac{215}{216}}. $$"
+}

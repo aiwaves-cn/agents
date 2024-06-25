@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~?$$",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "To start, notice that $24\\cdot 50 = 1200\\equiv 1\\pmod{1199}$ (in other words, $24$ and $50$ are inverses modulo $1199$).\n\nTo solve the congruence $24x\\equiv 15\\pmod{1199}$, we multiply both sides by $50$ and simplify: \\begin{align*}\n50\\cdot 24x &\\equiv 50\\cdot 15 \\pmod{1199} \\\\\nx &\\equiv 750 \\pmod{1199}\n\\end{align*}This process can also be reversed (by multiplying both sides by $50^{-1}=24$), so the solutions to the original congruence are precisely the same as the solutions to $x\\equiv 750\\pmod{1199}$. The largest negative solution is $750-1199 = \\boxed{-449}$."
+}

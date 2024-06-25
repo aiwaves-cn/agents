@@ -1,0 +1,6 @@
+{
+    "problem": "The solutions to $z^4 = 4 - 4i \\sqrt{3}$ can be expressed in the form\n\\begin{align*}\nz_1 &= r_1 (\\cos \\theta_1 + i \\sin \\theta_1), \\\\\nz_2 &= r_2 (\\cos \\theta_2 + i \\sin \\theta_2), \\\\\nz_3 &= r_3 (\\cos \\theta_3 + i \\sin \\theta_3), \\\\\nz_4 &= r_4 (\\cos \\theta_4 + i \\sin \\theta_4),\n\\end{align*}where $r_k > 0$ and $0^\\circ \\le \\theta_k < 360^\\circ.$  Find $\\theta_1 + \\theta_2 + \\theta_3 + \\theta_4,$ in degrees.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "First, we can write $z^4 = 4 - 4i \\sqrt{3} = 8 \\operatorname{cis} 300^\\circ.$  Therefore, the four roots are\n\\begin{align*}\n&\\sqrt[4]{8} \\operatorname{cis} 75^\\circ, \\\\\n&\\sqrt[4]{8} \\operatorname{cis} (75^\\circ + 90^\\circ) = \\sqrt[4]{8} \\operatorname{cis} 165^\\circ, \\\\\n&\\sqrt[4]{8} \\operatorname{cis} (75^\\circ + 180^\\circ) = \\sqrt[4]{8} \\operatorname{cis} 255^\\circ, \\\\\n&\\sqrt[4]{8} \\operatorname{cis} (75^\\circ + 270^\\circ) = \\sqrt[4]{8} \\operatorname{cis} 345^\\circ.\n\\end{align*}Then $\\theta_1 + \\theta_2 + \\theta_3 + \\theta_4 = 75^\\circ + 165^\\circ + 255^\\circ + 345^\\circ = \\boxed{840^\\circ}.$"
+}

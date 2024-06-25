@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest number divisible by integers 1 through 9?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "To find the least common multiple of 1, 2, 3, 4, 5, 6, 7, 8, and 9, we ignore 1 and prime factorize the rest to obtain $2, 3, 2^2, 5, 2\\cdot 3, 7, 2^3$, and $3^2$. Taking the maximum exponent for each prime, we find that the least common multiple is $2^3\\cdot 3^2\\cdot 5\\cdot 7 = \\boxed{2520}$."
+}

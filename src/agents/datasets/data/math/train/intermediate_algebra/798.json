@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[\\frac{x^2}{y - 1} + \\frac{y^2}{x - 1}\\]for real numbers $x > 1$ and $y > 1.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = x - 1$ and $b = y - 1.$  Then $x = a + 1$ and $y = b + 1,$ so\n\\begin{align*}\n\\frac{x^2}{y - 1} + \\frac{y^2}{x - 1} &= \\frac{(a + 1)^2}{b} + \\frac{(b + 1)^2}{a} \\\\\n&= \\frac{a^2 + 2a + 1}{b} + \\frac{b^2 + 2b + 1}{a} \\\\\n&= 2 \\left( \\frac{a}{b} + \\frac{b}{a} \\right) + \\frac{a^2}{b} + \\frac{1}{b} + \\frac{b^2}{a} + \\frac{1}{a}.\n\\end{align*}By AM-GM,\n\\[\\frac{a}{b} + \\frac{b}{a} \\ge 2 \\sqrt{\\frac{a}{b} \\cdot \\frac{b}{a}} = 2\\]and\n\\[\\frac{a^2}{b} + \\frac{1}{b} + \\frac{b^2}{a} + \\frac{1}{a} \\ge 4 \\sqrt[4]{\\frac{a^2}{b} \\cdot \\frac{1}{b} \\cdot \\frac{b^2}{a} \\cdot \\frac{1}{a}} = 4,\\]so\n\\[2 \\left( \\frac{a}{b} + \\frac{b}{a} \\right) + \\frac{a^2}{b} + \\frac{1}{b} + \\frac{b^2}{a} + \\frac{1}{a} \\ge 2 \\cdot 2 + 4 = 8.\\]Equality occurs when $a = b = 1,$ or $x = y = 2,$ so the minimum value is $\\boxed{8}.$"
+}

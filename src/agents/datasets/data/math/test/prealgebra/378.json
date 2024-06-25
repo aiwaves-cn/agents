@@ -1,0 +1,6 @@
+{
+    "problem": "Twelve 1 by 1 squares form a rectangle, as shown. What is the total area of the shaded region? [asy]\nsize(4cm);defaultpen(linewidth(0.75));\n\n// Filled portions\nfill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));\nfill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));\n\n// grid\nint j;\nfor (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}\nfor (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}\n\n//diagonals\ndraw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The total area of the rectangle is $3 \\times 4 =12$.\n\nThe total area of the shaded regions equals the total area of the rectangle (12) minus the area of the unshaded region.\n\nThe unshaded region is a triangle with base of length 1 and height 4; the area of this region is $\\frac{1}{2}(1)(4)=2$.\n\nTherefore, the total area of the shaded regions is $12 - 2 = \\boxed{10}$."
+}

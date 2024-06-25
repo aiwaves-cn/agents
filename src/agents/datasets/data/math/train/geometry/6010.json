@@ -1,0 +1,6 @@
+{
+    "problem": "Let triangle $ABC$ be a right triangle in the xy-plane with a right angle at $C$. Given that the length of the hypotenuse $AB$ is $60$, and that the medians through $A$ and $B$ lie along the lines $y=x+3$ and $y=2x+4$ respectively, find the area of triangle $ABC$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Translate so the medians are $y = x$, and $y = 2x$, then model the points $A: (a,a)$ and $B: (b,2b)$. $(0,0)$ is the centroid, and is the average of the vertices, so $C: (- a - b, - a - 2b)$\n$AB = 60$ so\n$3600 = (a - b)^2 + (2b - a)^2$\n$3600 = 2a^2 + 5b^2 - 6ab \\ \\ \\ \\ (1)$\n$AC$ and $BC$ are perpendicular, so the product of their slopes is $-1$, giving\n$\\left(\\frac {2a + 2b}{2a + b}\\right)\\left(\\frac {a + 4b}{a + 2b}\\right) = - 1$\n$2a^2 + 5b^2 = - \\frac {15}{2}ab \\ \\ \\ \\  (2)$\nCombining $(1)$ and $(2)$, we get $ab = - \\frac {800}{3}$\nUsing the determinant product for area of a triangle (this simplifies nicely, add columns 1 and 2, add rows 2 and 3), the area is $\\left|\\frac {3}{2}ab\\right|$, so we get the answer to be $\\boxed{400}$."
+}

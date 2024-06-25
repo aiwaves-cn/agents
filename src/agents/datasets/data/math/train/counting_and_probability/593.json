@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\dbinom{14}{11}$.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "\\begin{align*}\n\\dbinom{14}{11} &= \\dbinom{14}{3} \\\\\n&= \\dfrac{14!}{11!3!} \\\\\n&= \\dfrac{14\\times 13\\times 12}{3\\times 2\\times 1} \\\\\n&= 14 \\times 13 \\times \\dfrac{12}{3\\times 2\\times 1} \\\\\n&= 14\\times 13\\times 2 \\\\\n&= \\boxed{364}.\n\\end{align*}"
+}

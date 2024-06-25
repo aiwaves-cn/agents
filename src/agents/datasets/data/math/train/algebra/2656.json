@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $\\sqrt{1 + \\sqrt{2y-3}} = \\sqrt{6}$; find $y$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Squaring both sides, $$1 + \\sqrt{2y-3} = \\left(\\sqrt{1 + \\sqrt{2y-3}}\\right)^2 = \\left(\\sqrt{6}\\right)^2 = 6.$$Hence, $\\sqrt{2y-3} = 5$. If we square this equation again, then $$2y - 3 = \\left(\\sqrt{2y-3}\\right)^2 = 5^2 = 25 \\Longrightarrow y = \\frac{25+3}{2} = \\boxed{14}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If the point $(2,9)$ is on the graph of $y=f(x)$, then there is one point which must be on the graph of $y=f(-x)$. What is the sum of that point's coordinates?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We know that $f(2)=9$. We can rewrite this as $f(-(-2))=9$, which shows that $(-2,9)$ must be on the graph of $y=f(-x)$. The sum of the coordinates of $(-2,9)$ is $\\boxed{7}$.\n\nAlternatively, note that the graphs of $y=f(x)$ and $y=f(-x)$ must be mirror images, with the $y$-axis being the axis of reflection. Thus, $(-2,9)$ is on the graph of $y=f(-x)$, and the sum of the coordinates of $(-2,9)$ is $\\boxed{7}$."
+}

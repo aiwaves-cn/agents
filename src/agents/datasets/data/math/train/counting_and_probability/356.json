@@ -1,0 +1,6 @@
+{
+    "problem": "Two distinct positive integers from 1 to 50 inclusive are chosen.  Let the sum of the integers equal $S$ and the product equal $P$.  What is the probability that $P+S$ is one less than a multiple of 5?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are a total of $\\binom{50}{2}=1225$ ways to choose the two positive integers.  Call these integers $a$ and $b$.  The problem asks what the probability is that: $$ab+a+b=n-1$$where $n$ is a multiple of 5.  We can add one to each side of this equation and factor: $$ab+a+b+1=(a+1)(b+1)=n$$Now, we need to count the number of values of $a$ and $b$ such that $(a+1)(b+1)$ is a multiple of 5.  This will happen if at least one of the factors is a multiple of 5, which will mean $a$ or $b$ is one less than a multiple of 5.\n\nThere are 10 integers from 1 to 50 inclusive that are 1 less than a multiple of 5: $4,9,14, \\dots, 49$.  So, the number of ways to choose $a$ and $b$ so the product is $\\textit{not}$ a multiple of 5 is $\\binom{40}{2}=780$.  Therefore, there are $1225-780=445$ ways to choose $a$ and $b$ that do satisfy the requirement, which gives a probability of: $$\\frac{445}{1225}=\\boxed{\\frac{89}{245}}$$"
+}

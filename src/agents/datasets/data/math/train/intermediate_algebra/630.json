@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers $N$ less than $1000$ are there such that the equation $x^{\\lfloor x\\rfloor} = N$ has a solution for $x$? (The notation $\\lfloor x\\rfloor$ denotes the greatest integer that is less than or equal to $x$.)",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Take cases on the value of $\\lfloor x \\rfloor$:\n\nIf $\\lfloor x\\rfloor < 0,$ then $x^{\\lfloor x \\rfloor}$ can never be an integer.\nIf $\\lfloor x \\rfloor = 0$ (and $x \\neq 0$), then $x^{\\lfloor x \\rfloor} = x^0 = 1$ regardless of the value of $x.$ Thus $N = 1$ ($1$ value).\nIf $\\lfloor x \\rfloor = 1,$ then $1 \\le x < 2,$ and $x^{\\lfloor x\\rfloor} = x^1 = x,$ so we still only have $N = 1$.\nIf $\\lfloor x \\rfloor = 2,$ then $2 \\le x < 3,$ and $x^{\\lfloor x\\rfloor} = x^2,$ so we get $N = 4, 5, \\ldots, 8$ ($5$ values).\nIf $\\lfloor x\\rfloor = 3,$ then $3 \\le x < 4,$ and $x^{\\lfloor x \\rfloor} = x^3,$ so we get $N = 27, 28, \\ldots, 63$ ($37$ values).\nIf $\\lfloor x\\rfloor = 4,$ then $4 \\le x < 5,$ and $x^{\\lfloor x\\rfloor} = x^4,$ so we get $N = 256, 257, \\ldots, 624$ ($369$ values).\nIf $\\lfloor x\\rfloor \\ge 5,$ then $x^{\\lfloor x\\rfloor} \\ge 5^5 = 3125 > 1000,$ which is too large.\n\nTherefore, the number of possible values for $N$ is $1 + 5 + 37 + 369 = \\boxed{412}.$"
+}

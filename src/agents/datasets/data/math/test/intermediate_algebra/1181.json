@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a complex number such that\n\\[z^5 + z^4 + 2z^3 + z^2 + z = 0.\\]Find all possible values of $|z|.$\n\nEnter all possible values, separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "First, we can take out a factor of $z,$ to get\n\\[z(z^4 + z^3 + 2z^2 + z + 1) = 0.\\]We can write $z^4 + z^3 + 2z^2 + z + 1 = 0$ as\n\\[(z^4 + z^3 + z^2) + (z^2 + z + 1) = z^2 (z^2 + z + 1) + (z^2 + z + 1) = (z^2 + 1)(z^2 + z + 1) = 0.\\]If $z = 0,$ then $|z| = 0.$\n\nIf $z^2 + 1 = 0,$ then $z^2 = -1.$  Taking the absolute value of both sides, we get $|z^2| = 1.$  Then\n\\[|z|^2 = 1,\\]so $|z| = 1.$  (Also, the roots of $z^2 + 1 = 0$ are $z = \\pm i,$ both of which have absolute value 1.)\n\nIf $z^2 + z + 1 = 0,$ then $(z - 1)(z^2 + z + 1) = 0,$ which expands as $z^3 - 1 = 0.$  Then $z^3 = 1.$  Taking the absolute value of both sides, we get\n\\[|z^3| = 1,\\]so $|z|^3 = 1.$  Hence, $|z| = 1.$\n\nTherefore, the possible values of $|z|$ are $\\boxed{0,1}.$"
+}

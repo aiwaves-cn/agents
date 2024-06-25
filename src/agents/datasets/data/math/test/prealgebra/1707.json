@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $6+5-4\\times 3\\div (2+1).$",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "First, we perform the operation in parentheses: \\[6+5-4\\times 3\\div (2+1) = 6+5-4\\times 3\\div 3.\\] Then, we perform multiplication and division, going from left to right: \\begin{align*}\n6+5-4\\times 3\\div 3 &= 6+5-12 \\div 3 \\\\\n&=6+5-4.\n\\end{align*} Finally, we perform addition and subtraction, going from left to right, to get our answer: \\begin{align*}\n6+5-4 &= 11-4 \\\\\n&=\\boxed{7}.\n\\end{align*}"
+}

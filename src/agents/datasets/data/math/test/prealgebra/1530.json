@@ -1,0 +1,6 @@
+{
+    "problem": "Lines $m_{1}$, $m_{2}$, $l_{1}$ and $l_{2}$ are coplanar, and they are drawn such that $l_{1}$ is parallel to $l_{2}$, and $m_{2}$ is perpendicular to $l_{2}$. If the measure of angle 1 is 50 degrees, what is the measure in degrees of angle 2 in the figure below?\n\n[asy]\ndraw((-6,0)--(3.5,0),Arrows);\ndraw((-4,3)--(2,-1.5),Arrows);\ndraw((3,3)--(-4.5,-4.5),Arrows);\ndraw((-4,1)--(2,-3.5),Arrows);\nlabel(\"1\",(1.5,0),N);\nlabel(\"2\",(-2.7,0),N);\nlabel(\"$m_{2}$\",(3,3),NE);\nlabel(\"$m_{1}$\",(3.5,0),E);\nlabel(\"$l_{1}$\",(2,-1.5),E);\nlabel(\"$l_{2}$\",(2,-3.5),E);\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The intersection of these lines creates a triangle shown in the figure. Starting from the vertex closest to angle 2 and moving clockwise, label the triangle's vertices $A$, $B$, and $C$. Since $\\angle ABC$ is a vertical angle of angle 1, it is equal to 50 degrees. Since $\\angle BCA$ is a right angle (the two lines intersecting to form the angle are perpendicular) and since the interior angles in the triangle sum to 180 degrees, $\\angle CAB = 180 - 90 - 50 = 40$ degrees. Since angle 2 is supplementary to $\\angle CAB$, angle 2 is equal to $180 - 40 = \\boxed{140}$ degrees."
+}

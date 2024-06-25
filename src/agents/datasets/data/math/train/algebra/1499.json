@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest integer value of $n$ such that $n^2-9n+18$ is negative.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Writing this as an inequality, we get the expression \\begin{align*} n^2-9n+18&<0 \\quad \\Rightarrow\n\\\\ (n-3)(n-6)&<0.\n\\end{align*} Since 3 and 6 are roots of the quadratic, the inequality must change sign at these two points. Thus, we continue by testing the 3 intervals of $n$. For $n<3$, both factors of the inequality are negative, thus making it positive. For $3<n<6$, only $n-6$ is negative, so the inequality is negative. Finally, for $n>6$, both factors are positive, making the inequality positive once again. This tells us that the range of $n$ that satisfy the inequality is $3<n<6$. Since the question asks for the largest integer value of $n$, the answer is the largest integer smaller than 6, which is $\\boxed{5}$."
+}

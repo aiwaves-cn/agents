@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the solutions to\n\\[\\arctan \\frac{1}{x} + \\arctan \\frac{1}{x + 2} = \\arctan \\frac{4}{x + 3}.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Taking the tangent of both sides, we get\n\\[\\tan \\left( \\arctan \\frac{1}{x} + \\arctan \\frac{1}{x + 2} \\right) = \\frac{4}{x + 3}.\\]From the tangent addition formula,\n\\[\\frac{\\frac{1}{x} + \\frac{1}{x + 2}}{1 - \\frac{1}{x} \\cdot \\frac{1}{x + 2}} = \\frac{4}{x + 3}.\\]This simplifies to\n\\[\\frac{2x + 2}{x^2 + 2x - 1} = \\frac{4}{x + 3},\\]which further reduces to $x^2 = 5.$  Hence, $x = \\pm \\sqrt{5}.$\n\nIf $x = -\\sqrt{5},$ then $\\arctan \\frac{1}{x} + \\arctan \\frac{1}{x + 2}$ is negative but $\\arctan \\frac{4}{x + 3}$ is positive, so $x = -\\sqrt{5}$ is not a solution.\n\nOn the other hand, if $x = \\sqrt{5},$ then both $\\arctan \\frac{1}{x} + \\arctan \\frac{1}{x + 2}$ and $\\arctan \\frac{4}{x + 3}$ are positive.\nFurthermore, they both lie between 0 and $\\frac{\\pi}{2},$ and our work above shows that their tangents are equal, so they must be equal.\n\nTherefore, the only solution is $x = \\boxed{\\sqrt{5}}.$"
+}

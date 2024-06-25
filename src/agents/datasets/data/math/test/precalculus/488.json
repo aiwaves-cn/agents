@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[\\frac{\\sin^2 3A}{\\sin^2 A} - \\frac{\\cos^2 3A}{\\cos^2 A} = 2,\\]then find $\\cos 2A.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the triple angle formulas, $\\cos 3A = 4 \\cos^3 A - 3 \\cos A$ and $\\sin 3A = 3 \\sin A - 4 \\sin^3 A,$ so\n\\begin{align*}\n\\frac{\\sin^2 3A}{\\sin^2 A} - \\frac{\\cos^2 3A}{\\cos^2 A} &= (3 - 4 \\sin^2 A)^2 - (4 \\cos^2 A - 3)^2 \\\\\n&= (3 - 4(1 - \\cos^2 A))^2 - (4 \\cos^2 A - 3)^2 \\\\\n&= (4 \\cos^2 A - 1)^2 - (4 \\cos^2 A - 3)^2 \\\\\n&= [(4 \\cos^2 A - 1) + (4 \\cos^2 A - 3)][(4 \\cos^2 A - 1) - (4 \\cos^2 A - 3)] \\\\\n&= (8 \\cos^2 A - 4)(2) \\\\\n&= 16 \\cos^2 A - 8 = 2.\n\\end{align*}Then $\\cos^2 A = \\frac{10}{16} = \\frac{5}{8},$ so\n\\[\\cos 2A = 2 \\cos^2 A - 1 = 2 \\cdot \\frac{5}{8} - 1 = \\boxed{\\frac{1}{4}}.\\]"
+}

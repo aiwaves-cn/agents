@@ -1,0 +1,6 @@
+{
+    "problem": "What is the 2004th positive odd integer?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The first positive odd integer is 1.  To get to the 2004th positive odd integer, we must add 2 exactly 2003 times.  Make sure you see why it's not 2004 times -- that would give us the 2005th positive odd integer, just like adding one 2 to 1 gives us the second positive odd integer, not the first.  Therefore, our answer is $1 + 2003\\cdot 2 = \\boxed{4007}$."
+}

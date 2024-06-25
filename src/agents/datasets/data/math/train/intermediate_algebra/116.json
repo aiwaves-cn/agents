@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that the roots of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, \\[t = -(a+b)(b+c)(c+a).\\]From the first cubic polynomial, we have $a+b+c=-3$. Using this equation, we can rewrite the expression for $t$ as \\[t = -(-3-c)(-3-a)(-3-b).\\]To compute this expression quickly, notice that, for any $x$, \\[x^3 + 3x^2 + 4x - 11 = (x-a)(x-b)(x-c)\\]by the factor theorem. Setting $x = -3$, we get \\[(-3)^3 + 3(-3)^2 + 4(-3) - 11 = -23 = (-3-a)(-3-b)(-3-c).\\]Thus, $t = -(-23) = \\boxed{23}$."
+}

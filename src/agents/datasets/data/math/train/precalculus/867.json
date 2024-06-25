@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{v}$ and $\\mathbf{w}$ be the vectors such that $\\mathbf{v} \\cdot \\mathbf{w} = -3$ and $\\|\\mathbf{w}\\| = 5.$  Find the magnitude of $\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We know that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\|\\mathbf{w}\\|^2} \\mathbf{w},\\]so\n\\[\\|\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v}\\| = \\left| \\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\|\\mathbf{w}\\|^2} \\right| \\|\\mathbf{w}\\| = \\frac{|\\mathbf{v} \\cdot \\mathbf{w}|}{\\|\\mathbf{w}\\|} = \\boxed{\\frac{3}{5}}.\\]"
+}

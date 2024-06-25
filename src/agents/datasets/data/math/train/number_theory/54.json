@@ -1,0 +1,6 @@
+{
+    "problem": "For how many positive integers $n$ does $\\frac{1}{n}$ yield a terminating decimal with a non-zero hundredths digit?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that the numbers whose decimal representations begin $0.00\\ldots$ are the positive real numbers less than $1/100$. Therefore, the hundredths digit of $1/n$ is zero for all $n > 100$. Also, recall that $1/n$ is a terminating decimal if and only if $n$ is divisible by no primes other than 2 and 5. The fifteen integers up to 100 whose prime factorizations contain only twos and fives are 1, 2, 4, 5, 8, 10, 16, 20, 25, 32, 40, 50, 64, 80, and 100. One way to generate this list systematically is to consider integers of the form $2^m5^n$, starting with $n=0$ and $m=0,1,2,3,4,5,6$, then $n=1$ and $m=0,1,2,3,4$, etc. Not all of these 15 integers have nonzero hundredths digits, however. For $n\\leq 10$, it is possible that the tenths digit is nonzero while the hundredths digit is zero. Checking the values of $n$ up to 10, we find that the hundredths digits of 1, 1/2, 1/5, and 1/10 are zero. Therefore, there are $15 - 4 = \\boxed{11}$ fractions that yield terminating decimals with a nonzero digit two places to the right of the decimal point."
+}

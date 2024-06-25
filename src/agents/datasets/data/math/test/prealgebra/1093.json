@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $x$ in the diagram?\n\n[asy]\nimport olympiad;\ndraw((0,0)--(sqrt(3),0)--(0,sqrt(3))--cycle);\ndraw((0,0)--(-3,0)--(0,sqrt(3))--cycle);\nlabel(\"8\",(-3/2,sqrt(3)/2),NW);\nlabel(\"$x$\",(sqrt(3)/2,sqrt(3)/2),NE);\ndraw(\"$45^{\\circ}$\",(1.5,0),NW);\ndraw(\"$30^{\\circ}$\",(-2.45,0),NE);\ndraw(rightanglemark((0,sqrt(3)),(0,0),(sqrt(3),0),5));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "First, we label the diagram:\n\n[asy]\nimport olympiad;\ndraw((0,0)--(sqrt(3),0)--(0,sqrt(3))--cycle);\ndraw((0,0)--(-3,0)--(0,sqrt(3))--cycle);\nlabel(\"8\",(-3/2,sqrt(3)/2),NW);\nlabel(\"$x$\",(sqrt(3)/2,sqrt(3)/2),NE);\ndraw(\"$45^{\\circ}$\",(1.4,0),NW);\ndraw(\"$30^{\\circ}$\",(-2.4,0),NE);\ndraw(rightanglemark((0,sqrt(3)),(0,0),(sqrt(3),0),5));\nlabel(\"$A$\",(0,0),S);\nlabel(\"$B$\",(-3,0),W);\nlabel(\"$C$\",(sqrt(3),0),E);\nlabel(\"$D$\",(0,sqrt(3)),N);\n[/asy]\n\nTriangle $ABD$ is a 30-60-90 triangle, so $AD = BD/2 = 4$.\n\nTriangle $ACD$ is a 45-45-90 triangle, so $CD = AD \\sqrt{2} = \\boxed{4\\sqrt{2}}$."
+}

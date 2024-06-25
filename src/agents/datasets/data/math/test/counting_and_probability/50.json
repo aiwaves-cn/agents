@@ -1,0 +1,6 @@
+{
+    "problem": "A class of 25 students includes the Smith quadruplets.  The teacher must select two students from the class to represent the class in the school's student government.  Instead of holding an election, the teacher decides to choose the two representatives at random.  What is the probability that both representatives will be Smith quadruplets?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are ${25 \\choose 2} = 300$ possible pairs of student representatives. Of these, since there are 4 Smith quadruplets, there are ${4 \\choose 2} = 6$ pairs in which both representatives are Smith quadruplets. So, the probability of both representatives being Smith quadruplets is $\\frac{6}{300} = \\boxed{\\frac{1}{50}}$."
+}

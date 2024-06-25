@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $\\sin^2 x + \\sin^2 2x + \\sin^2 3x + \\sin^2 4x = 2$ can be reduced to the equivalent equation\n\\[\\cos ax \\cos bx \\cos cx = 0,\\]for some positive integers $a,$ $b,$ and $c.$  Find $a + b + c.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the double angle formula,\n\\[\\frac{1 - \\cos 2x}{2} + \\frac{1 - \\cos 4x}{2} + \\frac{1 - \\cos 6x}{2} + \\frac{1 - \\cos 8x}{2} = 2,\\]so $\\cos 2x + \\cos 4x + \\cos 6x + \\cos 8x = 0.$  Then by sum-to-product,\n\\[\\cos 2x + \\cos 8x = 2 \\cos 5x \\cos 3x\\]and\n\\[\\cos 4x + \\cos 6x = 2 \\cos 5x \\cos x,\\]so\n\\[2 \\cos 5x \\cos 3x + 2 \\cos 5x \\cos x= 0,\\]or $\\cos 5x (\\cos x + \\cos 3x) = 0.$\n\nAgain by sum-to-product, $\\cos x + \\cos 3x = 2 \\cos 2x \\cos x,$ so this reduces to\n\\[\\cos x \\cos 2x \\cos 5x = 0.\\]Thus, $a + b + c = 1 + 2 + 5 = \\boxed{8}.$"
+}

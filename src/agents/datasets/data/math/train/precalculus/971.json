@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate\n\\[\\begin{vmatrix} 1 & x & y \\\\ 1 & x + y & y \\\\ 1 & x & x + y \\end{vmatrix}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} 1 & x & y \\\\ 1 & x + y & y \\\\ 1 & x & x + y \\end{vmatrix} &= \\begin{vmatrix} x + y & y \\\\ x & x + y \\end{vmatrix} - x \\begin{vmatrix} 1 & y \\\\ 1 & x + y \\end{vmatrix} + y \\begin{vmatrix} 1 & x + y \\\\ 1 & x \\end{vmatrix} \\\\\n&= ((x +  y)^2 - xy) - x((x + y) - y) + y(x - (x + y)) \\\\\n&= \\boxed{xy}.\n\\end{align*}"
+}

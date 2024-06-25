@@ -1,0 +1,6 @@
+{
+    "problem": "Wendy has 180 feet of fencing. She needs to enclose a rectangular space with an area that is ten times its perimeter. If she uses up all her fencing material, how many feet is the largest side of the enclosure?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let's call the length of the rectangle $l$, and the width $w$. In general, the perimeter of a rectangle can be expressed as the sum of all four sides. Thus, it is equal to $2l+2w$. Similarly, we can express the area of the rectangle as $lw$. Since we know that Wendy uses all the fencing, the perimeter of the rectangle she encloses must be 180 feet. The area, which is 10 times that, comes out to 1800 feet. This gives us a system of two equations:  \\begin{align*} 2l+2w& =180\n\\\\lw& =1800. \\end{align*}If we solve for $l$ in terms of $w$ using the first equation, we find that $180-2w=2l$, or $l=90-w$. We can plug this expression back into the the second equation, giving us  \\begin{align*} (90-w)(w)& =1800\n\\\\ 90w-w^2& =1800\n\\\\ \\Rightarrow\\qquad w^2-90w+1800& =0\n\\\\ \\Rightarrow\\qquad (w-60)(w-30)& =0 \\end{align*}Thus, the two possible values of $w$ are 60 feet and 30 feet. Since $l=90-w$, the possible values of $l$ must be 30 feet or 60 feet (respectively). Since the problem asks for the largest side, the answer is ultimately $\\boxed{60}$."
+}

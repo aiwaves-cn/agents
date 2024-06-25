@@ -1,0 +1,6 @@
+{
+    "problem": "If $h(y)=\\dfrac{1+y}{2-y}$, then what is the value of $h^{-1}(5)$? Express your answer in simplest form.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "$h^{-1}(5)$ is defined as the number $y$ such that $h(y)=5$. Thus, we solve the equation $$\\frac{1+y}{2-y} = 5.$$Multiplying both sides by $2-y$, we have $$1+y = 5(2-y).$$Expanding gives $$1+y = 10-5y,$$then adding $5y-1$ to both sides gives $$6y = 9.$$Finally, we divide both sides by $6$ and simplify to get $y=\\boxed{\\dfrac{3}{2}}$.\n\nNote that we can check our work by plugging $\\dfrac{3}{2}$ into the formula for $h$: $$\\dfrac{1+\\frac32}{2-\\frac32} = \\dfrac{\\left(\\frac52\\right)}{\\left(\\frac12\\right)} = 5,$$which is what we expected."
+}

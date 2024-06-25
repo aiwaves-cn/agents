@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\theta$ be an angle such that $\\sin 2 \\theta = \\frac{1}{3}.$  Compute $\\sin^6 \\theta + \\cos^6 \\theta.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can factor $\\cos^6 \\theta + \\sin^6 \\theta$ to get\n\\begin{align*}\n\\cos^6 \\theta + \\sin^6 \\theta &= (\\cos^2 \\theta + \\sin^2 \\theta)(\\cos^4 \\theta - \\cos^2 \\theta \\sin^2 \\theta + \\sin^4 \\theta) \\\\\n&= \\cos^4 \\theta - \\cos^2 \\theta \\sin^2 \\theta + \\sin^4 \\theta.\n\\end{align*}Squaring the equation $\\cos^2 \\theta + \\sin^2 \\theta = 1,$ we get\n\\[\\cos^4 \\theta + 2 \\cos^2 \\theta \\sin^2 \\theta + \\sin^4 \\theta = 1.\\]Hence,\n\\[\\cos^4 \\theta - \\cos^2 \\theta \\sin^2 \\theta + \\sin^4 \\theta = 1 - 3 \\cos^2 \\theta \\sin^2 \\theta.\\]From $\\sin 2 \\theta = \\frac{1}{3},$\n\\[2 \\sin \\theta \\cos \\theta = \\frac{1}{3},\\]so $\\cos \\theta \\sin \\theta = \\frac{1}{6}.$  Therefore,\n\\[1 - 3 \\cos^2 \\theta \\sin^2 \\theta = 1 - 3 \\left( \\frac{1}{6} \\right)^2 = \\boxed{\\frac{11}{12}}.\\]"
+}

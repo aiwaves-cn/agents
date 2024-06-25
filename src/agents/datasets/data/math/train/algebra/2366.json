@@ -1,0 +1,6 @@
+{
+    "problem": "On Monday, Jessica told two friends a secret. On Tuesday, each of those friends told the secret to two other friends. Each time a student heard the secret, he or she told the secret to two other friends the following day. On what day of the week will 1023 students know the secret?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "On the first day, $1+2=3$ students know the secret.  On the second day, $1+2+4=7$ students know the secret.  On the third day, $1+2+4+8=15$ students know the secret.  Notice that each of these sums is one less than the next power of 2.  Therefore, on the $n$th day, $1+2+\\cdots+2^n=2^{n+1}-1$ students know the secret.  Setting $2^{n+1}-1=1023$, we find $2^{n+1}=1024\\implies n+1=10\\implies n=9$.  We counted Monday as the first day, so the eighth day is Monday and the ninth day is $\\boxed{\\text{Tuesday}}$.\n\nNote: To show that $1+2+\\cdots+2^n=2^{n+1}-1$, define the sum to be $s$ and multiply both sides of   \\[\ns=1+2+\\cdots+2^n,\n\\]by 2 to find \\[\n2s=2+4+\\cdots+2^{n+1}.\n\\]Subtract the first equation from the second to obtain $s=2^{n+1}-1$."
+}

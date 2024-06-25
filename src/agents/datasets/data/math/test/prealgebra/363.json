@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can I stack 5 different books on a shelf?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "There are 5 options for the bottom book, 4 remaining options for the next book, 3 remaining options for the next book, 2 remaining options for the fourth book, and finally only 1 option for the top book.  This gives a total of $5 \\times 4 \\times 3 \\times 2 \\times 1 = \\boxed{120}$ ways to stack 5 books."
+}

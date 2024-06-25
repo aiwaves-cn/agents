@@ -1,0 +1,6 @@
+{
+    "problem": "The arithmetic mean of these five expressions is 24. What is the value of $x$? $$x + 8 \\hspace{.5cm} 15 \\hspace{.5cm} 2x \\hspace{.5cm} 13 \\hspace{.5cm} 2x + 4$$",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since the arithmetic mean of these expressions is 24, we can write the expression for the mean: \\begin{align*}\n\\frac{(x+8)+15+(2x)+13+(2x+4)}{5}&=24\\\\\n\\Rightarrow \\qquad (x+8)+15+(2x)+13+(2x+4)&=5\\cdot 24\n\\end{align*}\n\nCombining like terms on the left, we find $5x+40=120$, so $5x=80$, from which we have $x=16$. Our final answer is $\\boxed{16}$."
+}

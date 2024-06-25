@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{A} = \\begin{pmatrix} a & 1 \\\\ -2 & d \\end{pmatrix}$ for some real numbers $a$ and $d.$  If\n\\[\\mathbf{A} + \\mathbf{A}^{-1} = \\mathbf{0},\\]then find $\\det \\mathbf{A}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "From the formula for the inverse,\n\\[\\mathbf{A}^{-1} = \\frac{1}{ad + 2} \\begin{pmatrix} d & -1 \\\\ 2 & a \\end{pmatrix} = \\begin{pmatrix} \\frac{d}{ad + 2} & -\\frac{1}{ad + 2} \\\\ \\frac{2}{ad + 2} & \\frac{a}{ad + 2} \\end{pmatrix},\\]so we want\n\\[\\begin{pmatrix} a & 1 \\\\ -2 & d \\end{pmatrix} + \\begin{pmatrix} \\frac{d}{ad + 2} & -\\frac{1}{ad + 2} \\\\ \\frac{2}{ad + 2} & \\frac{a}{ad + 2} \\end{pmatrix} = \\mathbf{0}.\\]Hence,\n\\begin{align*}\na + \\frac{d}{ad + 2} &= 0, \\\\\n1 - \\frac{1}{ad + 2} &= 0, \\\\\n-2 + \\frac{2}{ad + 2} &= 0, \\\\\nd + \\frac{a}{ad + 2} & =0.\n\\end{align*}From the equation $1 - \\frac{1}{ad + 2} = 0,$ $ad + 2 = 1,$ so $ad = -1.$  Then\n\\[\\det \\mathbf{A} = \\det \\begin{pmatrix} a & 1 \\\\ -2 & d \\end{pmatrix} = ad + 2 = \\boxed{1}.\\]Note that $a = 1$ and $d = -1$ satisfy the given conditions."
+}

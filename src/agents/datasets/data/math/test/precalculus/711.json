@@ -1,0 +1,6 @@
+{
+    "problem": "A $60^\\circ$ rotation around the origin in the counter-clockwise direction is applied to $3 \\sqrt{3} - 5i.$  What is the resulting complex number?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "A $60^\\circ$ rotation around the origin in the counter-clockwise direction corresponds to multiplication by $\\operatorname{cis} 60^\\circ = \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A = (3*sqrt(3),-5), B = rotate(60)*(A);\n\ndraw((-2,0)--(8,0));\ndraw((0,-6)--(0,3));\ndraw((0,0)--A,dashed);\ndraw((0,0)--B,dashed);\n\ndot(\"$3 \\sqrt{3} - 5i$\", A, S);\ndot(\"$4 \\sqrt{3} + 2i$\", (4*sqrt(3),2), NE);\n[/asy]\n\nThus, the image of $3 \\sqrt{3} - 5i$ is\n\\[(3 \\sqrt{3} - 5i) \\left( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right) = \\boxed{4 \\sqrt{3} + 2i}.\\]"
+}

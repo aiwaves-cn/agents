@@ -1,0 +1,6 @@
+{
+    "problem": "Find $t$ such that $x-3$ is a factor of $x^3-3x^2+tx+27$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "If $x-3$ is a factor of $f(x) = x^3-3x^2+tx+27$, then using the Factor Theorem, we know that $f(3) = 0$. We have\n$$\\begin{aligned} f(3) &=3^3-3(3^2)+t(3)+27  \\\\\n&= 27 - 27 + 3t + 27  \\\\\n&= 3t +27 .\n\\end{aligned}$$So $3t+27 = 0$. We can solve this to get $t=\\boxed{-9}$."
+}

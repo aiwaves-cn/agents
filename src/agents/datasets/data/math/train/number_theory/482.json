@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x$ is a positive integer less than 100, how many solutions does the congruence $x + 13 \\equiv 55 \\pmod{34}$ have?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Adding $-13$ to both sides of $x + 13 \\equiv 55 \\pmod{34}$ gives $x \\equiv 55-13 \\pmod{34}$. We find $55-13 = 42 \\equiv 8 \\pmod{34}$, so $x \\equiv 8 \\pmod{34}$. Thus the smallest positive integer that satisfies the given congruence is $x = 8$, and all the other solutions can be obtained by a multiple of 34 to 8. The next three such integers are 42, 76, and 110. Since 110 is greater than 100, there are $\\boxed{3}$ integers less than 100 that satisfy the congruence $x + 13 \\equiv 55 \\pmod{34}$."
+}

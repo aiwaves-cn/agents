@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $3y^4-4y^3+5y^2-13y+4$ is divided by $3y - 2.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Using long division,\n\\[\n\\begin{array}{c|ccccc}\n\\multicolumn{2}{r}{y^3} & -\\frac{2}{3}y^2 & +\\frac{11}{9}y&-\\frac{95}{27}  \\\\\n\\cline{2-6}\n3y-2 & 3y^4 & -4y^3& +5y^2&-13y&4  \\\\\n\\multicolumn{2}{r}{3y^4} & -2y^3& \\\\ \n\\cline{2-3}\n\\multicolumn{2}{r}{0} & -2y^3& +5y^2\\\\ \n\\multicolumn{2}{r}{} & -2y^3& +\\frac{4}{3}y^2\\\\ \n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0& +\\frac{11}{3}y^2 & -13y\\\\ \n\\multicolumn{2}{r}{} & & +\\frac{11}{3}y^2 & -\\frac{22}{9}y\\\\ \n\\cline{4-5}\n\\multicolumn{2}{r}{} & &0 & -\\frac{95}{9}y & +4\\\\ \n\\multicolumn{2}{r}{} & & & -\\frac{95}{9}y & +\\frac{190}{27}\\\\ \n\\cline{5-6}\n\\multicolumn{2}{r}{} & & & 0 & -\\frac{82}{27}\\\\ \n\\end{array}\n\\]So the remainder is $\\boxed{-\\frac{82}{27}}$."
+}

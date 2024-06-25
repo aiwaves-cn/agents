@@ -1,0 +1,6 @@
+{
+    "problem": "How many terms are in the expansion of  \\[(a+b+c)(d+e+f+g)?\\]",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We form the product by multiplying each of the 3 terms in $a+b+c$ by each of the 4 terms in $d+e+f+g$.  This gives us $3\\cdot 4 = 12$ products of pairs of the variables, and no pair is repeated among these 12 products.  Therefore, no two of these 12 terms can be combined, so there are $\\boxed{12}$ terms in the expansion."
+}

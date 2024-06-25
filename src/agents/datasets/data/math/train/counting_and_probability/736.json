@@ -1,0 +1,6 @@
+{
+    "problem": "We roll a fair 6-sided die 5 times.  What is the probability that we get an odd number in exactly 4 of the 5 rolls?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The chances of getting an odd or even number are equal, so there are $2^5=32$ equally likely outcomes.  If we want to get exactly 4 of 5 the rolls to be odd, the probability is $\\dfrac{\\binom{5}{4}}{2^5}=\\boxed{\\dfrac{5}{32}}.$"
+}

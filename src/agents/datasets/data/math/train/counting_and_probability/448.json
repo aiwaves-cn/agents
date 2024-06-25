@@ -1,0 +1,6 @@
+{
+    "problem": "Compute \\[\\frac{(N-1)!(N)}{(N+1)!}.\\]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since $N!=(N-1)!(N)$, we can rewrite the given fraction as $\\frac{N!}{(N+1)!}$. We can rewrite the denominator as $(N+1)!=(N!)(N+1)$, so the fraction becomes $\\frac{N!}{(N!)(N+1)}$. Canceling an $N!$ from the numerator and denominator, we are left with $\\boxed{\\frac{1}{N+1}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\tan G$ in the right triangle shown below.\n\n[asy]\n\npair H,F,G;\n\nH = (0,0);\n\nG = (15,0);\n\nF = (0,8);\n\ndraw(F--G--H--F);\n\ndraw(rightanglemark(F,H,G,20));\n\nlabel(\"$H$\",H,SW);\n\nlabel(\"$G$\",G,SE);\n\nlabel(\"$F$\",F,N);\n\nlabel(\"$17$\",(F+G)/2,NE);\n\nlabel(\"$15$\",G/2,S);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The Pythagorean Theorem gives us $FH= \\sqrt{FG^2 - GH^2} = \\sqrt{289-225} = \\sqrt{64}=8$, so $\\tan G = \\frac{FH}{HG} = \\ \\boxed{\\frac{8}{15}}$."
+}

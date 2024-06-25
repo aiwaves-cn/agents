@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be a cubic polynomial such that $p(-3) = 4,$ $p(-2) = 4,$ $p(4) = 4,$ and $p(5) = 16.$  Find $p(11).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $q(x) = p(x) - 4.$  Then $q(x)$ is a cubic polynomial, and $q(-3) = q(-2) = q(4) = 0,$ so\n\\[q(x) = c(x + 3)(x + 2)(x - 4)\\]for some constant $c.$  Also, $q(5) = 16 - 4 = 12,$ and\n\\[q(5) = c(8)(7)(1),\\]so $c = \\frac{3}{14}.$  Hence,\n\\[q(x) = \\frac{3(x + 3)(x + 2)(x - 4)}{14}.\\]In particular,\n\\[q(11) = \\frac{3 \\cdot 14 \\cdot 13 \\cdot 7}{14} = 273,\\]so $p(11) = 273 + 4 = \\boxed{277}.$"
+}

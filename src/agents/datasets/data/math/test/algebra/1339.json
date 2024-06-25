@@ -1,0 +1,6 @@
+{
+    "problem": "The value of $y$ varies inversely as $\\sqrt x$ and when $x=24$, $y=15$. What is $x$ when $y=3$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $y$ and $\\sqrt{x}$ are inversely proportional, this means that $y\\sqrt{x}=k$ for some constant $k$.  Substituting the given values, when $x=24$ and $y=15$, we find that $15\\sqrt{24}=30\\sqrt{6}=k$.  Therefore, when $y=3$, we can solve for $x$: \\begin{align*}\n3\\cdot\\sqrt{x}&=30\\sqrt{6}\\\\\n\\Rightarrow\\qquad (\\sqrt{x})^2&=(10\\sqrt{6})^2\\\\\n\\Rightarrow\\qquad x&=100\\cdot6\\\\\n&=\\boxed{600}\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive divisors does 6! have?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "$$ 6! = 720 = 2^4 \\cdot 3^2 \\cdot 5^1. $$Using this prime factorization, we find the number of positive divisors of $6!$: $$ t(6!) = (4 + 1)(2 + 1)(1 + 1) = \\boxed{30}. $$"
+}

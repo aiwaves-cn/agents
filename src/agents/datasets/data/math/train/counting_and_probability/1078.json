@@ -1,0 +1,6 @@
+{
+    "problem": "The Gnollish language consists of 3 words, ``splargh,'' ``glumph,'' and ``amr.''  In a sentence, ``splargh'' cannot come directly before ``glumph''; all other sentences are grammatically correct (including sentences with repeated words).  How many valid 3-word sentences are there in Gnollish?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We proceed by counting the complement, or the number of invalid 3-word sentences.  A sentence is invalid precisely when it is of the form ``(word) splargh glumph'' or ``splargh glumph (word).''  There are 3 choices for the missing word in each sentence, and since each case is exclusive, we have a total of 6 invalid sentences.  Since there are $3\\cdot 3\\cdot 3 = 27$ possible 3-word sentences with no restrictions, there are $27-6 = \\boxed{21}$ that satisfy the restrictions of the problem."
+}

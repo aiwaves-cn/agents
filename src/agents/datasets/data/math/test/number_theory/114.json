@@ -1,0 +1,6 @@
+{
+    "problem": "The product of the proper positive integer factors of $n$ can be written as $n^{(ax+b)/c}$, where $x$ is the number of positive divisors $n$ has, $c$ is a positive integer, and the greatest common factor of the three integers $a$, $b$, and $c$ is $1$. What is $a+b+c$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Recall that by pairing up divisors of $n$, we can show that the product of the positive integer factors of $n$ is $n^\\frac{x}{2}$. We divide this formula by $n$ to get the product of the proper positive integer factors of $n$, and we obtain $\\frac{n^\\frac{x}{2}}{n} = n^{\\frac{x}{2}-1} = n^\\frac{x-2}{2}$. Therefore, $a = 1$, $b = -2$, and $c = 2$, so $a+b+c = \\boxed{1}$."
+}

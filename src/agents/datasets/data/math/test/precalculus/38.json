@@ -1,0 +1,6 @@
+{
+    "problem": "Find the imaginary part of \\[(\\cos12^\\circ+i\\sin12^\\circ+\\cos48^\\circ+i\\sin48^\\circ)^6.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Using the sum-to-product formula, we have\n\\begin{align*}\n\\cos 12^{\\circ} + \\cos 48^{\\circ} &= 2 \\cos 30^{\\circ} \\cos 18^{\\circ}, \\\\\n\\sin 12^{\\circ} + \\sin 48^{\\circ} &= 2 \\sin 30^{\\circ} \\cos 18^{\\circ}. \\\\\n\\end{align*}Therefore,\n\\begin{align*}\n(\\cos 12^{\\circ} + i \\sin 12^{\\circ} + \\cos 48^{\\circ} + i \\sin 48^{\\circ})^6 &= [2\\cos 18^{\\circ} (\\cos 30^{\\circ} + i \\sin 30^{\\circ})]^6 \\\\\n&= 64\\cos^6 18^{\\circ} (\\cos 180^{\\circ} + i \\sin 180^{\\circ}) \\\\\n&= -64\\cos^6 18^{\\circ},\n\\end{align*}which is real. Hence, the imaginary part is $\\boxed{0}$.\n\n(See if you can also find a geometric solution!)"
+}

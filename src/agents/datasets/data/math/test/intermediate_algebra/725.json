@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate the product of $\\sqrt[3]{2^2} + \\sqrt[3]{2}$ with $2 - 2\\sqrt[3]{2} - \\sqrt[3]{2^2}$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The given expression is equivalent to the product $$\\left(\\sqrt[3]{4} + \\sqrt[3]{2}\\right) \\cdot \\left(-\\sqrt[3]{16} + \\sqrt[3]{8} - \\sqrt[3]{4}\\right).$$If we let $a = \\sqrt[3]{4}$ and $b = \\sqrt[3]{2}$, then the above expression becomes $$(a+b)(-a^2 + ab - b^2) = -(a+b)(a^2 - ab + b^2) = -(a^3 + b^3).$$Thus, the expression is equal to $- \\left(\\sqrt[3]{4}\\right)^3 - \\left( \\sqrt[3]{2} \\right)^3 = \\boxed{-6}$."
+}

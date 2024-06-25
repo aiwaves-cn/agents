@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $(x + 1)^{2010}$ is divided by $x^2 + x + 1$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can write $(x + 1)^{2010} = [(x + 1)^2]^{1005} = (x^2 + 2x + 1)^{1005}.$  This leaves the same remainder as $x^{1005}$ when divided by $x^2 + x + 1.$\n\nThen $x^{1005} - 1= (x^3)^{335} - 1$ is divisible by $x^3 - 1 = (x - 1)(x^2 + x + 1).$  Therefore, the remainder when $(x + 1)^{2010}$ is divided by $x^2 + x + 1$ is $\\boxed{1}.$"
+}

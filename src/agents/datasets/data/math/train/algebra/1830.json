@@ -1,0 +1,6 @@
+{
+    "problem": "Without using a calculator, find the largest prime factor of $15^4+2\\times15^2+1-14^4$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Using the difference of squares factorization, we have  \\begin{align*}\n15^4+2\\times15^2+1-14^4&=(15^2+1)^2-(14^2)^2 \\\\\n&=(15^2+1-14^2)(15^2+1+14^2)\\\\\n&=(15^2-14^2+1)(422)\\\\\n&=((15-14)(15+14)+1)(2\\cdot 211)\\\\\n&=30\\cdot2\\cdot211.\n\\end{align*}Since $211$ is a prime and is larger than the other factor, we see that $\\boxed{211}$ is the largest prime factor."
+}

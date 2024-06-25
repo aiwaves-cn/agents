@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a positive real number such that $x + \\frac{1}{x} = 98.$  Find\\[\\sqrt{x} + \\frac{1}{\\sqrt{x}}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[y = \\sqrt{x} + \\frac{1}{\\sqrt{x}}.\\]Then\n\\[y^2 = x + 2 + \\frac{1}{x} = 98 + 2 = 100.\\]Since $\\sqrt{x} \\ge 0$ and $\\frac{1}{\\sqrt{x}} \\ge 0,$ we must have $y \\ge 0.$  Therefore, $y = \\boxed{10}.$"
+}

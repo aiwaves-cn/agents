@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers are in the first $20$ rows of Pascal's Triangle (from the $0$th row to the $19$th row)?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We start with the $0$th row, which has $1$ number. Each row has one more number than the previous row. Thus, we can see that row $n$ has $n+1$ numbers.\nSince we want the sum of numbers in the rows $0$ to $19$, we sum up every number from $1$ to $20$ to get $\\frac{(1+20)\\cdot 20}{2}=\\boxed{210}$."
+}

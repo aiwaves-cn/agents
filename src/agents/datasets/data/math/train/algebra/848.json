@@ -1,0 +1,6 @@
+{
+    "problem": "There are 12 ordered pairs of integers $(x,y)$ that satisfy $x^2 + y^2 = 25$. What is the greatest possible sum $x+y$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The graph of $x^2 + y^2 = 25$ is a circle centered at $(0,0)$ of radius $\\sqrt{25}=5$.  Beginning at $(-5, 0)$ and working our way around the circle, we have the following 12 points on the circle:\n\n$(-5, 0)$, $(-4, 3)$, $(-3, 4)$, $(0, 5)$, $(3, 4)$, $(4, 3)$, $(5, 0)$, $(4, -3)$, $(3, -4)$, $(0, -5)$, $(-3, -4)$, $(-4, -3)$.\n\nThe greatest possible sum for any of these pairs is $3+4=\\boxed{7}$.\n\n(Of course, you could probably have guess-checked this answer relatively easily, but recognizing the equation as the graph of a circle is helpful in convincing yourself that there is no greater value of $x+y$ ... or, for example, if you wanted to find the greatest possible value of $x+y$, which is $5\\sqrt2$)."
+}

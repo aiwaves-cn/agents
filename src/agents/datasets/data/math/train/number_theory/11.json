@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest number, all of whose digits are 3 or 2, and whose digits add up to $11$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "To make a number as large as possible, we want as many digits as possible, so we want the digits to be as small as possible. To have the most number of digits, we use 4 twos and 1 three to make $4 \\cdot 2 +3 =11$. We want to arrange them in decreasing order because we want the digits to the left to be as large as possible. Therefore, we have the number $\\boxed{32222}$."
+}

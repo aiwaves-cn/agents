@@ -1,0 +1,6 @@
+{
+    "problem": "Our club has 10 members, and wishes to pick a president, secretary, treasurer, and morale officer.  In how many ways can we choose the officers, if individual members can only hold at most one office?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The president can be any of the 10 members, the secretary can be any of the 9 remaining members, the treasurer can be any of the remaining 8 members, and the morale officer can be any of the remaining 7 members. There are $10\\times 9\\times 8\\times7=\\boxed{5,\\!040}$ ways."
+}

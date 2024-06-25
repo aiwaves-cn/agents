@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of positive integers $n$ that satisfy\n\\[(n - 1)(n - 3)(n - 5) \\dotsm (n - 97) < 0.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can count that there are 49 factors in the given product.  For $n < 1,$ all the factors are negative, so the product is negative.\n\nThen for $1 < n < 3,$ the factor $n - 1$ changes sign, and the product becomes positive.  For $3 < n < 5,$ the product changes sign again, and the product becomes negative, so the inequality holds for $n = 4.$\n\nContinuing in this way, we see that the inequality holds for $n = 4,$ 8, 16, $\\dots,$ 96.  For $n > 97,$ all the factors are positive, so the total number of such integers is $\\boxed{24}.$"
+}

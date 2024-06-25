@@ -1,0 +1,6 @@
+{
+    "problem": "How many different triangles can be formed using three vertices of a hexagon as vertices of a triangle? [asy]size(75);\ndraw(dir(0)--dir(30)--dir(110)--dir(175)--dir(250)--dir(300)--cycle);\n[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We can make a triangle out of any three vertices, so the problem is really asking how many ways there are to choose three vertices from six. There are six choices for the first vertex, five for the second, and four for the third. However, we've overcounted, so we have to determine how many different orders there are in which we could choose those same three vertices. That is, if we choose $x$ for the first vertex, $y$ for the second, and $z$ for the third, it will be the same triangle as if we had chosen $y$ for the first vertex, $z$ for the second, and $x$ for the third. We can pick any three of the vertices first, any two second, and then the last is determined, so we've overcounted by a factor of six. Thus, our final answer is $\\frac{6 \\cdot 5 \\cdot 4}{6} = \\boxed{20}$ triangles."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In any isosceles triangle $ABC$ with $AB=AC$, the altitude $AD$ bisects the base $BC$ so that $BD=DC$.\n\nAs shown in $\\triangle ABC$, $AB=AC=25$ and $BC=14$.  Determine the length of the altitude $AD$.\n\n[asy]\ndraw((0,0)--(14,0)--(7,24)--cycle,black+linewidth(1));\ndraw((7,24)--(7,0),black+linewidth(1)+dashed);\ndraw((7,0)--(7,1)--(6,1)--(6,0)--cycle,black+linewidth(1));\ndraw((5.5,-4)--(0,-4),black+linewidth(1));\ndraw((5.5,-4)--(0,-4),EndArrow);\ndraw((8.5,-4)--(14,-4),black+linewidth(1));\ndraw((8.5,-4)--(14,-4),EndArrow);\nlabel(\"$A$\",(7,24),N);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(14,0),SE);\nlabel(\"$D$\",(7,0),S);\nlabel(\"25\",(0,0)--(7,24),NW);\nlabel(\"25\",(7,24)--(14,0),NE);\nlabel(\"14\",(7,-4));\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since $AB=AC$, then $\\triangle ABC$ is isosceles.  Therefore, altitude $AD$ bisects the base $BC$ so that $BD=DC=\\frac{14}{2}=7$.  Since $\\angle ADB=90^{\\circ}$, $\\triangle ADB$ is right angled.  By the Pythagorean Theorem, $25^2=AD^2+7^2$ or $AD^2=25^2-7^2$ or  $AD^2=625-49=576$, and so $AD=\\sqrt{576}=\\boxed{24}$, since $AD>0$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For how many positive integers $p$ does there exist a triangle with sides of length $3p-1,$ $3p,$ and $p^2 + 1?$",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Applying the Triangle Inequality, we have that $(3p - 1) + (3p) > p^2 + 1,$ so $0 > p^2 - 6p + 2.$ We can find the values of $p$ that satisfy this inequality by completing the square.  Adding 7 to both sides gives $7 > p^2 - 6p + 9$, so $ 7 > (p-3)^2$.  Since $p$ must be a positive integer, the only possible values of $(p-3)^2$ are 0, 1, and 4.  Therefore, the possible values of $p$ are 1, 2, 3, 4, and 5. Let's find $(3p - 1, 3p, p^2 + 1)$ for each possible $p$:\n\nIf $p = 1,$ then $(3p - 1, 3p, p^2 + 1) = (2, 3, 2).$\n\nIf $p = 2,$ then $(3p - 1, 3p, p^2 + 1) = (5, 6, 5).$\n\nIf $p = 3,$ then $(3p - 1, 3p, p^2 + 1) = (8, 9, 10).$\n\nIf $p = 4,$ then $(3p - 1, 3p, p^2 + 1) = (11, 12, 17).$\n\nIf $p = 5,$ then $(3p - 1, 3p, p^2 + 1) = (14, 15, 26).$\n\nAll of these look good, so we see that there are $\\boxed{5}$ possibilities for $p.$"
+}

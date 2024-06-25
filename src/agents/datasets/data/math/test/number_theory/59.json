@@ -1,0 +1,6 @@
+{
+    "problem": "February $1$, $2008$ is a Friday.  The last Friday of February $2008$ will be February $x$, $2008$.  If $2008$ is a leap year, what is the value of $x$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If 2008 is a leap year, that means there are 29 days in February, and February 29 is $28=7\\cdot4$ days after February 1, so it is also a Friday. Thus, $x=\\boxed{29}$."
+}

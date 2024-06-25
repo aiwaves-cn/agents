@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = 3x + 3$ and $g(x) = 4x + 3.$ What is $f(g(f(2)))$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We first find that $f(2) = 9.$ Therefore, $g(f(2)) = g(9) = 39.$ Finally, $f(g(f(2))) = f(39) = \\boxed{120}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive value of $x$ such that $x + 5678$ results in a palindrome?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We are asked to find the smallest palindrome greater than 5678 and subtract 5678 from it. The only palindrome in the 5600s is 5665, which is not greater than 5678.  The only palindrome in the 5700s is 5775, which is greater than 5678.  Therefore, 5775 is the smallest palindrome greater than 5678 and $x=5775-5678=\\boxed{97}$."
+}

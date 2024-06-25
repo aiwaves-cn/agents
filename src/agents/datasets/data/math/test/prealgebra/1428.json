@@ -1,0 +1,6 @@
+{
+    "problem": "The first $15$ numbers of an arrangement are shown below. What would be the value of the $30^{\\mathrm{th}}$ number if the arrangement were continued? \\begin{align*}\n&\\text{Row }1: 1\\\\\n&\\text{Row }2: 2, 2\\\\\n&\\text{Row }3: 3, 3, 3\\\\\n&\\text{Row }4: 4, 4, 4, 4\\\\\n&\\text{Row }5: 5, 5, 5, 5, 5\n\\end{align*}",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since we are told there are $15$ numbers in the first $5$ Rows, we want to find the $15^{\\mathrm{th}}$ number starting with the first number in Row 6. Since there are $6$ numbers in Row 6, there are $7$ numbers in Row 7 and there are $8$ numbers in Row 8, the $15^{\\mathrm{th}}$ number if we start counting in Row 6 is located at the $2^{\\mathrm{nd}}$ spot of Row 8, which is of course an $\\boxed{8}.$"
+}

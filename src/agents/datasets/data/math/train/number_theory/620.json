@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest whole number $b$ such that 62 can be expressed in base $b$ using only three digits?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We are looking for the smallest base $b$ such that $100_b \\le 62 < 1000_b$, which is the same as saying that $b^2 \\le 62 < b^3$.  The smallest perfect cube greater than 62 is 64, so the smallest possible value of $b$ is $\\sqrt[3]{64} = \\boxed{4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $xyz = 1.$  Find the minimum value of\n\\[(x + 2y)(y + 2z)(xz + 1).\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\begin{align*}\nx + 2y &\\ge 2 \\sqrt{2xy}, \\\\\ny + 2z &\\ge 2 \\sqrt{2yz}, \\\\\nxz + 1 &\\ge 2 \\sqrt{xz},\n\\end{align*}so\n\\[(x + 2y)(y + 2z)(xz + 1) \\ge (2 \\sqrt{2xy})(2 \\sqrt{2yz})(2 \\sqrt{xz}) = 16xyz = 16.\\]Equality occurs when $x = 2y,$ $y = 2z,$ and $xz = 1.$  We can solve to get $x = 2,$ $y = 1,$ and $z = \\frac{1}{2},$ so the minimum value is $\\boxed{16}.$"
+}

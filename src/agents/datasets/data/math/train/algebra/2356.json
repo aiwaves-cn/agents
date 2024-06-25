@@ -1,0 +1,6 @@
+{
+    "problem": "Susie Q has 1000 dollars to invest.  She invests some of the money at the Pretty Penny Bank, which compounds annually at 3 percent.  She invests the rest of the money at the Five and Dime Bank, which compounds annually at 5 percent.  After two years, Susie has a total of $\\$1090.02$.  How much did Susie Q originally invest at the Pretty Penny Bank, in dollars?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $x$ be the number of dollars Susie Q invested at the Pretty Penny Bank.  Then she invested $1000 - x$ at the Five and Dime Bank.  After two years, her account at the Pretty Penny Bank has grown to $x \\cdot 1.03^2$, and her account at the Five and Dime Bank has grown to $(1000 - x) \\cdot 1.05^2$.  Therefore, \\[x \\cdot 1.03^2 + (1000 - x) \\cdot 1.05^2 = 1090.02.\\]We see that $x \\cdot 1.03^2 + (1000 - x) \\cdot 1.05^2 = 1.0609x + 1102.5 - 1.1025x = 1102.5 - 0.0416x$, so \\[1102.5 - 0.0416x = 1090.02.\\]Then \\[x = \\frac{1102.5 - 1090.02}{0.0416} = \\boxed{300}.\\]"
+}

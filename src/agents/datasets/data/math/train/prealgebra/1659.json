@@ -1,0 +1,6 @@
+{
+    "problem": "The number of degrees in the measures of the interior angles of a convex pentagon are five consecutive integers. What is the number of degrees in the largest angle?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Suppose we list the angle measures in increasing order.  Let $x$ be the measure of the middle angle in degrees. Then, the five angles have measures $x -2^\\circ$, $x-1^\\circ$, $x$, $x + 1^\\circ$, and $x+2^\\circ$.  The sum of the angle measures in a pentagon is $180(5-2) = 540$ degrees, so \\[(x -2^\\circ)+(x-1^\\circ)+(x)+(x + 1^\\circ) +(x+2^\\circ) = 540^\\circ.\\] Simplifying the left side gives $5x = 540^\\circ$, and dividing both sides by 5 gives $x = 108^\\circ$.  Therefore, the largest angle has measure $x + 2^\\circ = \\boxed{110^\\circ}$."
+}

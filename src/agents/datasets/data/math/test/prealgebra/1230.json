@@ -1,0 +1,6 @@
+{
+    "problem": "In the $19^\\text{th}$ century, Britain used a money system which included pence, farthings, shillings and pounds. The following conversions were used:\n\n$\\bullet$ $4 \\text{ farthings} = 1 \\text{ pence},$\n\n$\\bullet$ $12 \\text{ pence} = 1 \\text{ shilling},$\n\n$\\bullet$ $20 \\text{ shillings} = 1 \\text{ pound}.$\n\nHow many total farthings were equivalent to $1$ pound and $5$ pence?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Convert $1$ pound to farthings: \\[\n1\\mbox{ pound} \\times \\frac{20\\mbox{ shillings}}{1\\mbox{ pound}} \\times \\frac{12\\mbox{ pence}}{1\\mbox{ shilling}} \\times \\frac{4\\mbox{ farthings}}{1\\mbox{ pence}}\n= 960\\mbox{ farthings}.\n\\] The remaining $5$ pence is equal to $20$ farthings, so the total is $\\boxed{980}$ farthings."
+}

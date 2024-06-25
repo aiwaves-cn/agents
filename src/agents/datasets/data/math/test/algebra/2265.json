@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x$: $$\\dfrac{66-2^x}{2^x+3}=\\dfrac{4-2^x}{2^{x+1}+6}$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we recognize that $2^{x+1}+6=2(2^x+3)$: $$\\dfrac{2(66-2^x)}{2(2^x+3)}=\\dfrac{4-2^x}{2(2^x+3)}$$Then, we expand and collect like terms: $$\\dfrac{128-2^x}{2(2^x+3)} = 0$$This equation can only be true when $2^x = 128$, which indicates that $x = \\boxed{7}$."
+}

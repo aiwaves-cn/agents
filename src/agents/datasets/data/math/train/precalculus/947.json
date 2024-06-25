@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{D}$ be a matrix representing a dilation with scale factor $k > 0,$ and let $\\mathbf{R}$ be a matrix representing a rotation about the origin by an angle of $\\theta$ counter-clockwise.  If\n\\[\\mathbf{R} \\mathbf{D} = \\begin{pmatrix} 8 & -4 \\\\ 4 & 8 \\end{pmatrix},\\]then find $\\tan \\theta.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We have that $\\mathbf{D} = \\begin{pmatrix} k & 0 \\\\ 0 & k \\end{pmatrix}$ and $\\mathbf{R} = \\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix},$ so\n\\[\\mathbf{R} \\mathbf{D} = \\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix} \\begin{pmatrix} k & 0 \\\\ 0 & k \\end{pmatrix} = \\begin{pmatrix} k \\cos \\theta & -k \\sin \\theta \\\\ k \\sin \\theta & k \\cos \\theta \\end{pmatrix}.\\]Thus, $k \\cos \\theta = 8$ and $k \\sin \\theta = 4.$  Dividing these equations, we find $\\tan \\theta = \\boxed{\\frac{1}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $1+2x+3x^2 + \\dotsb=9$, find $x$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $S = 1 + 2x + 3x^2 + \\dotsb.$  Then\n\\[xS = x + 2x^2 + 3x^3 + \\dotsb.\\]Subtracting these equations, we get\n\\[(1 - x) S = 1 + x + x^2 + \\dotsb = \\frac{1}{1 - x},\\]so $S = \\frac{1}{(1 - x)^2}.$  Thus, we want to solve\n\\[\\frac{1}{(1 - x)^2}  = 9.\\]then $(1 - x)^2 = \\frac{1}{9},$ so $1 - x = \\pm \\frac{1}{3}.$  Since $x$ must be less than 1, $1 - x = \\frac{1}{3},$ so $x = \\boxed{\\frac{2}{3}}.$"
+}

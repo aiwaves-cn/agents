@@ -1,0 +1,6 @@
+{
+    "problem": "Expand $(z^2 -3z+2)(z^3 + 4z-2).$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "$$\n\\begin{array}{crrrrrrr} &&&z^3&&+4z&-2&\\\\ \\times&&&&z^2 &-3z&+2\\\\ \\cline{1-7}\\rule{0pt}{0.17in} &&&+2z^3&&+8z&-4&\\\\ &&-3z^4&&-12z^2 &+6z&&\\\\ +&z^5&&+4z^3&-2z^2&&&\\\\\\cline{1-7}\\rule{0pt}{0.17in} &z^5&-3z^4&+6z^3&-14z^2 &+14z&-4& \\end{array}$$So, our answer is $\\boxed{z^5-3z^4+6z^3-14z^2+14z-4}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the expected value of the roll of a fair octahedral die? (An octahedral die has 8 faces, numbered from 1 to 8.) Express your answer as a decimal.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Each outcome of rolling an octahedral (8-sided) die has probability $\\frac18$, and the possible outcomes are 1, 2, 3, 4, 5, 6, 7, and 8.  So the expected value is $$ \\frac18(1) + \\frac18(2) + \\frac18(3) + \\frac18(4) + \\frac18(5) + \\frac18(6)+ \\frac18(7)+ \\frac18(8) = \\frac{36}{8} = \\boxed{4.5}. $$"
+}

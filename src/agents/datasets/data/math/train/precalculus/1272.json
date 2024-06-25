@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be the roots of $x^3 + px + q = 0.$  Express\n\\[\\begin{vmatrix} 1 + a & 1 & 1 \\\\ 1 & 1 + b & 1 \\\\ 1 & 1 & 1 + c \\end{vmatrix}\\]in terms of $p$ and $q.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} 1 + a & 1 & 1 \\\\ 1 & 1 + b & 1 \\\\ 1 & 1 & 1 + c \\end{vmatrix} &= (1 + a) \\begin{vmatrix} 1 + b & 1 \\\\ 1 & 1 + c \\end{vmatrix} - \\begin{vmatrix} 1 & 1 \\\\ 1 & 1 + c \\end{vmatrix} + \\begin{vmatrix} 1 & 1 + b \\\\ 1 & 1 \\end{vmatrix} \\\\\n&= (1 + a)((1 + b)(1 + c) - 1) - ((1)(1 + c) - 1) + (1 - (1 + b)) \\\\\n&= abc + ab + ac + bc.\n\\end{align*}By Vieta's formulas, $ab + ac + bc = p$ and $abc = -q,$ so\n\\[abc + ab + ac + bc = \\boxed{p - q}.\\]"
+}

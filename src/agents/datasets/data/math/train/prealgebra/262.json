@@ -1,0 +1,6 @@
+{
+    "problem": "What prime is 4 greater than a perfect square and 7 less than the next perfect square?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Let the prime be $n$.  We are given that $n-4$ and $n+7$ are consecutive perfect squares, and they differ by $(n+7)-(n-4)=11$.  Writing out the first few perfect squares, we see that 25 and 36 differ by 11.  Hence, $n-4=25$ and $n+7=36$, so $n=\\boxed{29}$."
+}

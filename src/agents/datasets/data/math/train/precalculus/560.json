@@ -1,0 +1,6 @@
+{
+    "problem": "Find the equation of the plane which passes through the point $(1,4,-2),$ and which is parallel to the plane $-2x + y - 3z = 7.$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The plane $-2x + y - 3z = 7$ has normal vector $\\begin{pmatrix} -2 \\\\ 1 \\\\ -3 \\end{pmatrix},$ so the plane we seek will also have this normal vector.  In other words, the plane will have an equation of the form\n\\[-2x + y - 3z + D = 0.\\]Since we want the coefficient of $x$ to be positive, we can multiply by $-1$ to get\n\\[2x - y + 3z - D = 0.\\]Setting $x = 1,$ $y = 4,$ and $z = -2,$ we get $-8 - D = 0,$ so $D = -8.$  Thus, the equation we seek is\n\\[\\boxed{2x - y + 3z + 8 = 0}.\\]"
+}

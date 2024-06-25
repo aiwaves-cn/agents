@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A = (1,0)$ and $B = (5,4).$  Let $P$ be a point on the parabola $y^2 = 4x.$  Find the smallest possible value of $AP + BP.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $A$ is the focus of the parabola $y^2 = 4x,$ and the directrix is $x = -1.$  Then by definition of the parabola, the distance from $P$ to $A$ is equal to the distance from $P$ to the line $x = -1.$  Let $Q$ be the point on $x = -1$ closest to $P,$ and let $R$ be the point on $x = -1$ closest to $B.$\n\n[asy]\nunitsize(0.6 cm);\n\nreal upperparab (real x) {\n  return (sqrt(4*x));\n}\n\nreal lowerparab (real x) {\n  return (-sqrt(4*x));\n}\n\npair A, B, P, Q, R;\n\nA = (1,0);\nB = (5,4);\nP = (1.5,upperparab(1.5));\nQ = (-1,upperparab(1.5));\nR = (-1,4);\n\ndraw(A--P--B);\ndraw(graph(upperparab,0,6));\ndraw(graph(lowerparab,0,6));\ndraw((-1,-5)--(-1,5),dashed);\ndraw(P--Q);\ndraw(B--R);\ndraw(B--Q);\n\ndot(\"$A$\", A, S);\ndot(\"$B$\", B, E);\ndot(\"$P$\", P, SE);\ndot(\"$Q$\", Q, W);\ndot(\"$R$\", R, W);\n[/asy]\n\nThen by the triangle inequality,\n\\[AP + BP = QP + BP \\ge BQ.\\]By the Pythagorean Theorem, $BQ = \\sqrt{BR^2 + QR^2} \\ge BR = 6.$\n\nEquality occurs when $P$ coincides with the intersection of line segment $\\overline{BR}$ with the parabola, so the minimum value of $AP + BP$ is $\\boxed{6}.$"
+}

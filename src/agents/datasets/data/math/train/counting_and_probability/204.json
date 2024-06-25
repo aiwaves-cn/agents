@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $(9! \\cdot 5! \\cdot 2!) / (8! \\cdot 6!)$?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "We do some simplification, taking advantage of the fact that $n! = n\\cdot (n-1)!$: \\begin{align*}\n\\frac{9!\\cdot 5!\\cdot 2!}{8!\\cdot 6!} &= \\frac{9\\cdot 8! \\cdot 5! \\cdot 2}{8!\\cdot 6\\cdot 5!}\\\\\n&= \\frac{9\\cdot 2}{6}\\\\\n&= \\boxed{3}.\n\\end{align*}"
+}

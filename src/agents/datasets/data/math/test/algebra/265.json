@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of all real numbers $\\alpha$ such that the function \\[\\frac{x^2+5x+\\alpha}{x^2 + 7x - 44}\\]can be expressed as a quotient of two linear functions. What is the sum of the elements of $S$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we factor the denominator, to get \\[\\frac{x^2+5x+\\alpha}{x^2 + 7x - 44} = \\frac{x^2 + 5x + \\alpha}{(x - 4)(x + 11)}.\\]If this fraction can be expressed as a quotient of two linear functions, then the numerator must have either a factor of $x - 4$ or $x + 11$.\n\nIf the numerator has a factor of $x - 4$, then by the factor theorem, it must be 0 when $x = 4$.  Hence, $4^2 + 5 \\cdot 4 + \\alpha = 0$, which means $\\alpha = -36$.\n\nIf the numerator has a factor of $x + 11$, then it must be 0 when $x = -11$.  Hence, $(-11)^2 + 5 \\cdot (-11) + \\alpha = 0$, which means $\\alpha = -66$.\n\nTherefore, the sum of all possible values of $\\alpha$ is $-36 + (-66) = \\boxed{-102}$."
+}

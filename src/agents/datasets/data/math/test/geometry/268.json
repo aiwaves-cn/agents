@@ -1,0 +1,6 @@
+{
+    "problem": "Let $v$, $w$, $x$, $y$, and $z$ be the degree measures of the five angles of a pentagon.  Suppose $v<w<x<y<z$ and $v$, $w$, $x$, $y$, and $z$ form an arithmetic sequence. Find the value of $x$.",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "A pentagon can be partitioned into three triangles, so the sum of the degree measures of the angles of the pentagon is $$\nv+w+x+y+z=540.\n$$The arithmetic sequence can be expressed as $x-2d$, $x-d$, $x$, $x+d$, and $x+2d$, where $d$ is the common difference, so $$\n(x-2d)+(x-d)+x+(x+d)+(x+2d)=5x=540.\n$$Thus, $x=\\boxed{108}$."
+}

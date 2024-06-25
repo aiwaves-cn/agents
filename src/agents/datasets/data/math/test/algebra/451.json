@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $g(x)=f^{-1}(x)$. If $g(-15)=0$, $g(0)=3$, $g(3)=9$ and $g(9)=20$, what is $f(f(9))$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since $f$ and $g$ are inverses and $g(3) = 9$, we have $f(9) = 3$, so $f(f(9)) = f(3)$. Similarly, $g(0) = 3$, so $f(3) = \\boxed{0}$."
+}

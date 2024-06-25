@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real numbers $a$ such that the roots of the polynomial\n$$x^3 - 6x^2 + 21x + a$$form an arithmetic progression and are not all real.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let the three roots be $r-d$, $r$, and $r+d$, for some complex numbers $r$ and $d$. Then Vieta's formulas give\n$$(r-d)+r+(r+d)=6 \\qquad\\text{and}\\qquad (r-d)r+(r-d)(r+d)+r(r+d)=21.$$Simplifying these equations, we have\n$$3r=6 \\qquad\\text{and}\\qquad 3r^2-d^2=21.$$From $3r=6$, we deduce $r=2$. Substituting this into our second equation gives $12-d^2=21$, so $d^2=-9$ and $d=\\pm 3i$. Therefore, the roots of the cubic are $2-3i$, $2$, and $2+3i$, so\n$$a = -2(2-3i)(2+3i) = -2\\left(2^2-(3i)^2\\right) = -2(4+9) = \\boxed{-26}.$$"
+}

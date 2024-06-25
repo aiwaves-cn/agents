@@ -1,0 +1,6 @@
+{
+    "problem": "Given 40 feet of fencing, what is the greatest possible number of square feet in the area of a rectangular pen enclosed by the fencing?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since the perimeter is 40, the sides of the rectangle add up to $40/2 = 20.$  Let $x$ be one side length of the rectangle.  Then the other side length is $20 - x,$ so the area is\n\\[x(20 - x) = 20x - x^2.\\]Completing the square, we get\n\\[-x^2 + 20x = -x^2 + 20x - 100 + 100 = 100 - (x - 10)^2.\\]Thus, the maximum area of the rectangle is $\\boxed{100}$ square feet, which occurs for a $10 \\times 10$ square."
+}

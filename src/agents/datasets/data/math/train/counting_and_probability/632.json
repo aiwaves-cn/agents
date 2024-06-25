@@ -1,0 +1,6 @@
+{
+    "problem": "Monica tosses a fair 6-sided die.  If the roll is a prime number, then she wins that amount of dollars (so that, for example, if she rolls 3, then she wins 3 dollars).  If the roll is composite, she wins nothing. Otherwise, she loses 3 dollars. What is the expected value of her winnings on one die toss? Express your answer as a dollar value to the nearest cent.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The only primes on a die are 2, 3, and 5. The only composites are 4 and 6. The only other option is rolling a 1. There is a $\\dfrac{1}{6}$ probability that she will roll a 1 and lose $\\$3$, a $\\dfrac{1}{3}$ probability of rolling a composite and winning $\\$0$, and a $\\dfrac{1}{6}$ probability of winning each of $\\$2$, $\\$3$, or $\\$5$.  So $$E = \\dfrac{1}{3}\\times \\$0 + \\dfrac{1}{6}\\times(\\$2+\\$3+\\$5) + \\dfrac{1}{6} \\times -\\$3 \\approx \\boxed{\\$1.17}.$$"
+}

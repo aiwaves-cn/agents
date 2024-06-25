@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[3x^2 + 12y^2 + 27z^2 - 4xy - 6xz - 12yz - 8y - 24z\\]over all real numbers $x,$ $y,$ and $z.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Writing the expression as a quadratic in $x,$ we get\n\\[3x^2 - (4y + 6z) x + \\dotsb.\\]Thus, completing the square in $x,$ we get\n\\[3 \\left( x - \\frac{2y + 3z}{3} \\right)^2 + \\frac{32}{3} y^2 - 16yz + 24z^2 - 8y - 24z.\\]We can then complete the square in $y,$ to get\n\\[3 \\left( x - \\frac{2y + 3z}{3} \\right)^2 + \\frac{32}{3} \\left( y - \\frac{6z + 3}{8} \\right)^2 + 18z^2 - 30z - \\frac{3}{2}.\\]Finally, completing the square in $z,$ we get\n\\[3 \\left( x - \\frac{2y + 3z}{3} \\right)^2 + \\frac{32}{3} \\left( y - \\frac{6z + 3}{8} \\right)^2 + 18 \\left( z - \\frac{5}{6} \\right)^2 - 14.\\]Thus, the minimum value is $\\boxed{-14},$ which occurs when $x - \\frac{2y + 3z}{3} = y - \\frac{6z + 3}{8} = z - \\frac{5}{6} = 0,$ or $x = \\frac{3}{2},$ $y = 1,$ and $z = \\frac{5}{6}.$"
+}

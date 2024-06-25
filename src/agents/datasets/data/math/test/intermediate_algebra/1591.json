@@ -1,0 +1,6 @@
+{
+    "problem": "For which value of $x$ does the function $f(x) = \\frac{2x-6}{x^3 - 7x^2 - 2x + 6}$ cross its horizontal asymptote?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The horizontal asymptote is the horizontal line that $f$ approaches as $x \\to \\pm \\infty$. Since the degree of the denominator is greater than the degree of the numerator, it follows that the horizontal asymptote occurs at the line $y = 0$. Setting this equal to $f(x)$, $$\\frac{2x-6}{x^3 - 7x^2 - 2x + 6} \\Longrightarrow 2x-6 = 0.$$Thus, $x = \\boxed{3}$."
+}

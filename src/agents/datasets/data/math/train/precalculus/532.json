@@ -1,0 +1,6 @@
+{
+    "problem": "Find the integer $n,$ $0 \\le n \\le 180,$ such that $\\cos n^\\circ = \\cos 758^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Since the cosine function has period $360^\\circ,$\n\\[\\cos 758^\\circ = \\cos (758^\\circ - 2 \\cdot 360^\\circ) = \\cos 38^\\circ,\\]so $n = \\boxed{38}.$"
+}

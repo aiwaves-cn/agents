@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\begin{pmatrix} 1 & -4 \\\\ 3 & -2 \\end{pmatrix} = \\begin{pmatrix} -16 & -6 \\\\ 7 & 2 \\end{pmatrix}.\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The inverse of $\\begin{pmatrix} 1 & -4 \\\\ 3 & -2 \\end{pmatrix}$ is\n\\[\\frac{1}{(1)(-2) - (-4)(3)} \\begin{pmatrix} -2 & 4 \\\\ -3 & 1 \\end{pmatrix} = \\frac{1}{10} \\begin{pmatrix} -2 & 4 \\\\ -3 & 1 \\end{pmatrix}.\\]So, multiplying by this inverse on the right, we get\n\\[\\mathbf{M} = \\begin{pmatrix} -16 & -6 \\\\ 7 & 2 \\end{pmatrix} \\cdot \\frac{1}{10} \\begin{pmatrix} -2 & 4 \\\\ -3 & 1 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 5 & -7 \\\\ -2 & 3 \\end{pmatrix}}.\\]"
+}

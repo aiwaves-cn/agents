@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify the following expression: $(9x^9+7x^8+4x^7) + (x^{11}+x^9+2x^7+3x^3+5x+8).$ Express your answer as a polynomial with the degrees of the terms in decreasing order.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have  \\begin{align*}\n&(9x^9+7x^8+4x^7) + (x^{11}+x^9+2x^7+3x^3+5x+8)\\\\\n&=x^{11}+(9+1)x^9+7x^8+(4+2)x^7+3x^3+5x+8\\\\\n&=\\boxed{x^{11}+10x^9+7x^8+6x^7+3x^3+5x+8}\\\\\n\\end{align*}"
+}

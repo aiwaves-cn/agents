@@ -1,0 +1,6 @@
+{
+    "problem": "I pick two whole numbers $x$ and $y$ between $1$ and $10$ inclusive (not necessarily distinct). My friend picks two numbers $x -4$ and $2y-1$. If the product of my friend's numbers is one greater than the product of my numbers, then what is the product of my numbers?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "From the information given, we can construct the following equation: $xy + 1 = (x-4)(2y-1)$. This simplifies to $xy - x - 8y = -3$. We can then apply Simon's Favorite Factoring Trick and add $8$ to both sides to get $xy - x - 8y + 8 = 5$. This can be factored into $$(x-8)(y-1)=5$$Since $x\\leq 10$, $x=9$ and $y=6$. Thus, the product of my two numbers is $9 \\cdot 6 = \\boxed{54}$."
+}

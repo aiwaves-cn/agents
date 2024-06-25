@@ -1,0 +1,6 @@
+{
+    "problem": "The square quilt block shown is used in a larger quilt. The four small squares in the block are congruent, and the four small vertical rectangles in the block that are not squares are also congruent. The total area of the shaded regions is what fraction of the total area of the block? Express your answer as a common fraction.\n\n[asy]\nfill((-10,0)--(-5,0)--(-5,5)--cycle,gray(0.7));\nfill((-5,5)--(-5,10)--(0,10)--cycle,gray(0.7));\nfill((0,0)--(0,10)--(10,10)--cycle,gray(0.7));\nfill((0,0)--(-10,-10)--(0,-10)--cycle,gray(0.7));\nfill((0,-10)--(5,-10)--(5,-5)--cycle,gray(0.7));\nfill((5,-5)--(5,0)--(10,0)--cycle,gray(0.7));\ndraw((10,10)--(10,-10)--(-10,-10)--(-10,10)--cycle);\ndraw((-10,-10)--(10,10));\ndraw((0,10)--(0,-10));\ndraw((10,0)--(-10,0));\ndraw((-5,0)--(-5,10));\ndraw((5,0)--(5,-10));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Suppose the whole block has area $1$.  Each of the smaller squares then has area $1/4$.  Each big right triangle has area $(1/2)(1/4)=1/8$, while each small right triangle has area $(1/8)(1/4)=1/32$.  Thus the total shaded area, which equals the fraction covered, equals $4(1/32)+2(1/8)=\\boxed{\\frac{3}{8}}$."
+}

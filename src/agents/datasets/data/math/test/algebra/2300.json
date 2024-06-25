@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $f$ is a quadratic polynomial and $g$ is a cubic polynomial, and both $f$ and $g$ have a leading coefficient of $1$. What is the maximum degree of the polynomial $(f(x))^3 - (g(x))^2 + f(x) - 1$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $f$ has a degree of $2$, the degree of $(f(x))^3$ is $6$. Also, since $g$ has a degree of $3$, the degree of $(g(x))^2$ is $6$. Furthermore, as $f$ and $g$ both have a leading coefficient of $1$, then $(f(x))^3$ and $(g(x))^2$ both have a leading coefficient of $1$. Hence, when subtracting $(f(x))^3 - (g(x))^2$, the leading terms cancel, and so $(f(x))^3 - (g(x))^2$ has a maximum degree of $5$. We can see that a degree of $\\boxed{5}$ can be achieved by taking $f(x) = x^2 + x$ and $g(x) = x^3$, for example."
+}

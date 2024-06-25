@@ -1,0 +1,6 @@
+{
+    "problem": "Marsha adds all but one of the first ten positive integers. Her sum is a square number. Which one of the first ten positive integers did Marsha not include?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let's find the sum of the first ten positive integers: $1+2+\\ldots+10=\\frac{10(1+10)}{2}=55$. Now we need to find which of the first ten positive integers, when subtracted from 55, gives a perfect square, namely 49 (36 is 19 away from 55, so it cannot be obtained). The desired integer is $\\boxed{6}$ since $55-6=49=7^2$."
+}

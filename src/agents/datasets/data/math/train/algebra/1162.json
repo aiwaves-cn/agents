@@ -1,0 +1,6 @@
+{
+    "problem": "If the graph of the line $y = ax + b$ passes through the points $(4,5)$ and $(8,17)$, what is $a - b$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The slope of a line through two points, $(x_1,y_1)$ and $(x_2,y_2)$, is \\[\\frac{y_2 - y_1}{x_2 - x_1}.\\]Let $(x_1,y_1) = (4,5)$ and $(x_2,y_2) = (8,17)$. Then the slope of the line through the two points is \\[\\frac{y_2 - y_1}{x_2 - x_1} = \\frac{17 - 5}{8 - 4} = \\frac{12}{4} = 3.\\]Thus, $a = 3$.\n\n$b$ satisfies $y = 3x + b$ for all points on its graph. Since $(4,5)$ lies on the the graph of $y = 3x + 5$, we can substitute $x = 4$ and $y = 5$ to solve for $b$. $5 = 3(4) + b$ and subtracting 12 from both sides yields $b = -7$. Therefore, $a - b = 3 - (-7) = \\boxed{10}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Mrs. Read can knit one pair of children's mittens with a ball of yarn six inches in diameter. How many pairs of identical mittens can she knit with a ball of yarn twelve inches in diameter? Assume that the balls of yarn are rolled consistently.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "A ball of yarn 12 inches in diameter has twice the diameter of a ball of yarn 6 inches in diameter.  Let the radius of the small ball be $r$ and the radius of the large ball be $2r$.  Then, the volume of the small ball is $\\frac{4}{3}\\pi r^3$ and the volume of the large ball is $\\frac{4}{3}\\pi (2r)^3 = 8\\cdot \\frac{4}{3}\\pi r^3$.  Hence the large ball has 8 times the volume of the small ball, so Mrs. Read can knit $\\boxed{8}$ pairs of identical mittens with the large yarn ball."
+}

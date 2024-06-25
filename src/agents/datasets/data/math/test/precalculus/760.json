@@ -1,0 +1,6 @@
+{
+    "problem": "In acute triangle $ABC,$ $\\angle A = 45^\\circ.$  Let $D$ be the foot of the altitude from $A$ to $\\overline{BC}.$  if $BD = 2$ and $CD = 3,$ then find the area of triangle $ABC.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $x = AD.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A, B, C, D;\n\nA = (2,6);\nB = (0,0);\nC = (5,0);\nD = (2,0);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$2$\", (B + D)/2, S, red);\nlabel(\"$3$\", (C + D)/2, S, red);\nlabel(\"$x$\", (A + D)/2, E, red);\n[/asy]\n\nThen $\\tan \\angle BAD = \\frac{2}{x}$ and $\\tan \\angle CAD = \\frac{3}{x}.$\n\nWe know that $\\angle BAC = 45^\\circ.$  By the tangent addition formula,\n\\begin{align*}\n\\tan \\angle BAC &= \\tan (\\angle BAD + \\angle CAD) \\\\\n&= \\frac{\\tan \\angle BAD + \\tan \\angle CAD}{1 - \\tan \\angle BAD \\tan \\angle CAD} \\\\\n&= \\frac{2/x + 3/x}{1 - 2/x \\cdot 3/x} \\\\\n&= \\frac{5x}{x^2 - 6}.\n\\end{align*}Then $5x = x^2 - 6,$ or $x^2 - 5x - 6 = 0.$  This factors as $(x - 6)(x + 1) = 0,$  so $x = 6.$  The area of triangle $ABC$ is then $\\frac{1}{2} \\cdot 6 \\cdot 5 = \\boxed{15}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many 3-digit numbers have a first digit which is triple the final digit?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are only three possibilities for the first digit: \\[\n\\begin{array}{|c|c|}\\hline\n\\text{First digit} & \\text{Last digit} \\\\ \\hline\n3 & 1 \\\\ \\hline\n6 & 2 \\\\ \\hline\n9 & 3 \\\\ \\hline\n\\end{array}\n\\] The middle digit can be any of the $10$ digits. The answer is $3\\times 10=\\boxed{30}.$"
+}

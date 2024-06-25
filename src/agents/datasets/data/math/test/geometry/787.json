@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $ABC$ with $\\angle B = 90^\\circ$, we have $2\\sin A = 3\\cos A$.  What is $\\tan A$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The triangle is shown below:\n\n[asy]\npair A,B,C;\nA = (0,0);\nB = (10,0);\nC = (10,15);\ndraw(A--B--C--A);\ndraw(rightanglemark(C,B,A,26));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\n[/asy]\n\nWe have $\\sin A = \\frac{BC}{AC}$ and $\\cos A = \\frac{AB}{AC}$, so $2\\sin A = 3\\cos B$ gives us $2\\cdot \\frac{BC}{AC} = 3\\cdot\\frac{AB}{AC}$.  Multiplying both sides by $AC$ gives $2BC = 3AB$, so $\\frac{BC}{AB} = \\frac{3}{2}$.  Finally, we have $\\tan A = \\frac{BC}{AB} = \\boxed{\\frac{3}{2}}$.\n\nWe also could have noted that $2\\sin A = 3\\cos A$ gives us $\\sin A = \\frac32\\cos A$, so $\\tan A = \\frac{\\sin A}{\\cos A} = \\frac{(3/2)\\cos A}{\\cos A } =\\boxed{\\frac32}$."
+}

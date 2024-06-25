@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{R}$ be the matrix for reflecting over the vector $\\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}.$  Find $\\mathbf{R}^2.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{v}$ be an arbitrary vector, and let $\\mathbf{r}$ be the reflection of $\\mathbf{v}$ over $\\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix},$ so $\\mathbf{r} = \\mathbf{R} \\mathbf{v}.$\n\n[asy]\nunitsize(1 cm);\n\npair D, P, R, V;\n\nD = (3,1);\nV = (1.5,2);\nR = reflect((0,0),D)*(V);\nP = (V + R)/2;\n\ndraw((-1,0)--(4,0));\ndraw((0,-1)--(0,3));\ndraw((0,0)--D,Arrow(6));\ndraw((0,0)--V,red,Arrow(6));\ndraw((0,0)--R,blue,Arrow(6));\ndraw(V--R,dashed);\n\nlabel(\"$\\mathbf{v}$\", V, NE);\nlabel(\"$\\mathbf{r}$\", R, SE);\n[/asy]\n\nThen the reflection of $\\mathbf{r}$ is $\\mathbf{v},$ so $\\mathbf{R} \\mathbf{r} = \\mathbf{v}.$  Thus,\n\\[\\mathbf{v} = \\mathbf{R} \\mathbf{r} = \\mathbf{R}^2 \\mathbf{v}.\\]Since this holds for all vectors $\\mathbf{v},$ $\\mathbf{R}^2 = \\mathbf{I} = \\boxed{\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}}.$"
+}

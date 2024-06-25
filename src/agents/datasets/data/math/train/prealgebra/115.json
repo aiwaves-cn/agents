@@ -1,0 +1,6 @@
+{
+    "problem": "Captain Zarnin of Planet Hvan has four job openings for his battle station: Assistant Engineer, Weapons Maintenance, Field Technician, and Radio Specialist. Zarnin has received 24 resumes and found himself less than thrilled about half of them and does not hire them. The rest, he thinks, could fill any of the open posts. In how many ways can Zarnin staff his battle station?\n\nNote: A candidate can fill at most one job opening.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Of the 24 people who applied, only 12 people are suitable to be hired. Therefore, there are 12 suited to be Assistant Engineer. After that position is filled, there are only 11 left for Weapons Maintenance, then 10 left for Field Technician, and then 9 for Radio Specialist. Therefore, there are $12 \\cdot 11 \\cdot 10 \\cdot 9 = \\boxed{11,\\!880}$ possible ways in which Zarnin can fill his job openings."
+}

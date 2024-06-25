@@ -1,0 +1,6 @@
+{
+    "problem": "What is the number of degrees in the measure of the smaller obtuse angle formed by the hands of a standard clock at 2:48pm?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "[asy]\nunitsize(0.8inch);\nfor (int i=0 ; i<=11 ;++i)\n{\ndraw((rotate(i*30)*(0.8,0)) -- (rotate(i*30)*(1,0)));\nlabel(format(\"%d\",i+1),(rotate(60 - i*30)*(0.68,0)));\n}\ndraw(Circle((0,0),1),linewidth(1.1));\ndraw(rotate(162)*(0.7,0)--(0,0)--(rotate(6)*(0.5,0)),linewidth(1.2));\n[/asy]\n\nThere are 12 hours on a clock, so each hour mark is $360^\\circ/12 = 30^\\circ$ from its neighbors.  At 2:48 the minute hand points at minute 48, which is $\\frac35$ of the way from hour 9 to hour 10.  Therefore, the minute hand is $\\frac35\\cdot 30 = 18^\\circ$ past hour 9, which means it is $30^\\circ - 18^\\circ = 12^\\circ$ shy of hour 10.  This means the minute hand is $2\\cdot 30^\\circ + 12^\\circ = 72^\\circ$ shy of hour 12.\n\nThe hour hand is $\\frac{48}{60} = \\frac45$ of the way from hour 2 to hour 3, so it is $\\frac45\\cdot 30^\\circ = 24^\\circ$ past hour 2.  So, the hour hand is $2\\cdot 30^\\circ + 24^\\circ = 84^\\circ$ past hour 12.\n\nCombining the angles between each hand and hour 12, the angle between the hands is $72^\\circ + 84^\\circ = \\boxed{156^\\circ}$."
+}

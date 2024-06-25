@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f (n) = n^2 + n + 17$ for $0 \\leq n \\leq 15$ generates prime numbers. What is the value of $f (10)-f (9)$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We have $f(10)-f(9) = (10^2+10+17)-(9^2+9+17) = 10^2-9^2+10-9 = 100-81+1 = \\boxed{20}$."
+}

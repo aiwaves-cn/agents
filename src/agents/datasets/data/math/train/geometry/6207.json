@@ -1,0 +1,6 @@
+{
+    "problem": "A ball was floating in a lake when the lake froze. The ball was removed (without breaking the ice), leaving a hole $24$ cm across as the top and $8$ cm deep. What was the radius of the ball (in centimeters)?\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 12 \\qquad \\textbf{(C)}\\ 13 \\qquad \\textbf{(D)}\\ 8\\sqrt{3} \\qquad \\textbf{(E)}\\ 6\\sqrt{6}$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Consider a cross-section of this problem in which a circle lies with its center somewhere above a line. A line segment of $8$ cm can be drawn from the line to the bottom of the ball. Denote the distance between the center of the circle and the line as $x$. We can construct a right triangle by dragging the center of the circle to the intersection of the circle and the line. We then have the equation $x^2+(12)^2=(x+8)^2$, $x^2+144=x^2+16x+64$. Solving, the answer is $\\boxed{13}$."
+}

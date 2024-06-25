@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of a negative integer $N$ and its square is 6. What is the value of $N$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We are given that $N^2 + N = 6$.  Rearranging gives $N^2 + N - 6 =0$, and factoring the quadratic on the left gives $(N+3)(N-2) = 0$.  The only negative solution to this equation is $N = \\boxed{-3}$."
+}

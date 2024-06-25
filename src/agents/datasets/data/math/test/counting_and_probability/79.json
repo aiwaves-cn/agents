@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to divide 12 people into a group of 3, a group of 4, and a group of 5, if Henry has to be in the group of 4?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "If Henry is in the group of 4, there are $\\binom{11}{3}=165$ ways to choose the other people in the group of 4. Then there are $\\binom{8}{3}=56$ ways to choose the group of 3, and the group of 5 is made up of the remaining people. The total number of valid ways to divide the people into groups is $165\\cdot 56=\\boxed{9240}$."
+}

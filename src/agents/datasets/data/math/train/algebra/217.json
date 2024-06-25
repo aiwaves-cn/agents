@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = Ax + B$ and $g(x) = Bx + A$, where $A \\neq B$. If $f(g(x)) - g(f(x)) = B - A$, what is $A + B$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First we find that $f(g(x)) = A(Bx + A) + B = ABx + A^2 + B$ and $g(f(x)) = B(Ax + B) + A = ABx + B^2 + A$.\n\nNow we plug back in. \\begin{align*}\nf(g(x)) - g(f(x)) &= B - A \\\\\n(ABx + A^2 + B) - (ABx + B^2 + A) &= B - A \\\\\nA^2 - B^2 + B - A &= B - A \\\\\nA^2 - B^2 &= 0 \\\\\n(A-B)(A+B) &= 0\n\\end{align*}\n\nSince we are given that $A \\neq B$, this means that $A + B = \\boxed{0}.$"
+}

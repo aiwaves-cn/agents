@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p$, $q$, and $r$ be constants. One solution to the equation $(x-p)(x-q) = (r-p)(r-q)$ is $x=r$. Find the other solution in terms of $p$, $q$, and $r$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If we expand the left side, we have  \\begin{align*}\n(x-p)(x-q) &=x(x-q) -p(x-q)\\\\\n& = x^2 - qx - px +pq \\\\\n&= x^2 -(p+q)x + pq.\n\\end{align*} The other side of the equation is a constant, since there isn't an $x$ term. So, if we view the equation as a quadratic in $x$, the sum of the roots is $-[-(p+q)] = p+q$.  We know that one of the roots is $r$, so if the other is $s$, we have $r+s = p+q$, so $s = \\boxed{p+q-r}$."
+}

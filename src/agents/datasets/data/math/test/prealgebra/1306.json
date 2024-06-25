@@ -1,0 +1,6 @@
+{
+    "problem": "Three schools have a chess tournament. Four players come from each school. Each player plays three games against each player from the other schools, and plays one game against each other player from his or her own school. How many games of chess are played?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Each player plays $3\\cdot 8 + 3=27$ games of chess, and there are 12 players. If we multiplied 27 by 12 we would count each game twice, so we must divide this number by 2. The total number of games played is $(27 \\cdot 12)/2=\\boxed{162}$."
+}

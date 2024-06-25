@@ -1,0 +1,6 @@
+{
+    "problem": "Four fair coins are to be flipped. What is the probability that all four will be heads or all four will be tails? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Each coin has 2 possible outcomes, so the total number of possible outcomes is $2 \\cdot 2 \\cdot 2 \\cdot 2=2^4=16$. Two of these are all tails and all heads, so the probability is $\\frac{2}{16}=\\boxed{\\frac{1}{8}}$."
+}

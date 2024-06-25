@@ -1,0 +1,6 @@
+{
+    "problem": "If $a<b$, what is the value of $|a-b|+a+b$?\n\n(Your answer can include $a$ and $b,$ and should be as simplified as possible.)",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $a<b,$ $a-b<0.$ It follows that $|a-b|=-(a-b),$ and the equation can be simplified as  \\[|a-b|+a+b=-(a-b)+a+b=\\boxed{2b}.\\]"
+}

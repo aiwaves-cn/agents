@@ -1,0 +1,6 @@
+{
+    "problem": "For what real values of $x$ is $-4<x^{4}+4x^{2}<21$ satisfied? Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let us first define $y=x^{2}$. We can then plug this value into the inequality and add 4 to $-4$, $x^4+4x^2$, and 21, yielding $$0<y^{2}+4y+4<25.$$We can factor $y^2+4y+4$ to obtain $$0<(y+2)^{2}<25.$$Taking the square root gives us $0<|y+2|<5$, which in turn gives us two intervals for solutions of $y$: $-2<y<3$, or $-7<y<-2$.\n\nHowever, $y$ must be non-negative since $y=x^{2}$, so we have $0\\leq y<3$. This means that $-\\sqrt{3}< x<\\sqrt{3}$ satisfies the original inequality. In interval notation, this is $\\boxed{(-\\sqrt{3}, \\sqrt{3})}$."
+}

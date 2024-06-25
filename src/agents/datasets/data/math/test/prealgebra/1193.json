@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, the length of $DC$ is twice the length of $BD.$ What is the area of the triangle $ABC?$ [asy]\ndraw((0,0)--(-3,0)--(0,4)--cycle);\ndraw((0,0)--(6,0)--(0,4)--cycle);\nlabel(\"3\",(-1.5,0),N);\nlabel(\"4\",(0,2),E);\nlabel(\"$A$\",(0,4),N);\nlabel(\"$B$\",(-3,0),S);\nlabel(\"$C$\",(6,0),S);\nlabel(\"$D$\",(0,0),S);\ndraw((0,0.4)--(0.4,0.4)--(0.4,0));\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since $BD=3$ and $DC$ is twice the length of $BD,$ then $DC=6.$ [asy]\ndraw((0,0)--(-3,0)--(0,4)--cycle);\ndraw((0,0)--(6,0)--(0,4)--cycle);\nlabel(\"3\",(-1.5,0),N);\nlabel(\"4\",(0,2),E);\nlabel(\"$A$\",(0,4),N);\nlabel(\"$B$\",(-3,0),S);\nlabel(\"$C$\",(6,0),S);\nlabel(\"$D$\",(0,0),S);\nlabel(\"6\",(3,0),N);\ndraw((0,0.4)--(0.4,0.4)--(0.4,0));\n[/asy] Therefore, triangle $ABC$ has a base of length $9$ and a height of length $4.$ Thus, the area of triangle $ABC$ is $$\\frac{1}{2}bh = \\frac{1}{2}(9)(4) = \\frac{1}{2}(36) = \\boxed{18}.$$"
+}

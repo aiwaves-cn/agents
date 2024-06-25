@@ -1,0 +1,6 @@
+{
+    "problem": "For what value of the constant $a$ does the system of equations below have infinitely many solutions?  \\begin{align*} 2x + 5y &= -8,\\\\ 6x &= 16 + a - 15y \\end{align*}",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Putting the $x$ and $y$ terms of the second equation on the left gives $6x+15y = 16+a$. Multiplying the first equation by 3 gives $6x + 15y = -24$.  So, our system now is \\begin{align*} 6x+15y &= -24,\\\\ 6x + 15y&=16+a. \\end{align*}This system has infinitely many solutions only if the two right sides are the same, which would make the two equations the same.  So, we must have $-24 = 16+a$, so $a= \\boxed{-40}$."
+}

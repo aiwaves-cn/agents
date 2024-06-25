@@ -1,0 +1,6 @@
+{
+    "problem": "Let $g(x) = x^5 + x^4 + x^3 + x^2 + x + 1.$  What is the remainder when the polynomial $g(x^{12})$ is divided by the polynomial $g(x)$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[g(x^{12}) = x^{60} + x^{48} + x^{36} + x^{24} + x^{12} + 1.\\]Note that\n\\[(x - 1)g(x) = (x - 1)(x^5 + x^4 + x^3 + x^2 + x + 1) = x^6 - 1.\\]Also,\n\\begin{align*}\ng(x^{12}) - 6 &= (x^{60} + x^{48} + x^{36} + x^{24} + x^{12} + 1) - 6 \\\\\n&= (x^{60} - 1) + (x^{48} - 1) + (x^{36} - 1) + (x^{24} - 1) + (x^{12} - 1).\n\\end{align*}We can write\n\\[(x^{60} - 1) = (x^6 - 1)(x^{54} + x^{48} + x^{42} + \\dots + x^6 + 1).\\]In the same way, $x^{48} - 1,$ $x^{36} - 1,$ $x^{24} - 1,$ and $x^{12} - 1$ are all multiples of $x^6 - 1,$ so they are multiples of $g(x).$\n\nWe have shown that $g(x^{12}) - 6$ is a multiple of $g(x),$ so the remainder when the polynomial $g(x^{12})$ is divided by the polynomial $g(x)$ is $\\boxed{6}.$"
+}

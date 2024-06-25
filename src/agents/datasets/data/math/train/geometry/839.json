@@ -1,0 +1,6 @@
+{
+    "problem": "Billy is hiking in Colorado. He walks eastward four miles, then turns $60$ degrees northward and walks six miles. How far is he from his starting point? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Suppose Billy starts at point $A$, turns at point $B$, and ends at point $D$, as shown below. If Billy turns $60^{\\circ}$ northward and walks six miles, then we can draw a $30-60-90$ triangle whose hypotenuse is $6$ miles (triangle $BCD$ below).\n\n[asy]\nsize(150);\n\ndefaultpen(linewidth(0.7) + fontsize(10));\npair A,B,C,D;\nA = (0,0);\nB=(4,0);\nC =(7,0);\nD = (7,3*sqrt(3));\ndraw (A--B--D--A);\ndraw(B--C--D,dashed);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$4$\",B/2,S);\nlabel(\"$6$\",(B+D)/2,NW);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,N);\n[/asy]\nIt follows that Billy traveled $6/2 = 3$ miles eastward during these $6$ miles, and that he traveled $3 \\cdot \\sqrt{3}$ miles northward during these $6$ miles. In total, Billy traveled $4 + 3 = 7$ miles eastward and $3\\sqrt{3}$ miles northward. By the Pythagorean Theorem, the distance from his starting point is $\\sqrt{(7)^2 + (3\\sqrt{3})^2} = \\sqrt{49 + 27} = \\sqrt{76} = \\boxed{2\\sqrt{19}}.$"
+}

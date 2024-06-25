@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $N$ can be written in base $6$ as $531340_6$ and in base $8$ as $124154_8$. In base $10$, what is the remainder when $N$ is divided by $210$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The prime factorization of $210 = 2 \\cdot 3 \\cdot 5 \\cdot 7$. By the Chinese Remainder Theorem, it suffices to find the residues of $N$ modulo $5$, $6$, and $7$. Since the units digit of $N$ in base $6$ is equal to $0$, it follows that $N$ is divisible by $6$. Also, we note that $N$ is congruent modulo $b-1$ to the sum of its base $b$ digits. Indeed, if $N$ can be represented as $(\\overline{a_ka_{k-1}\\cdots a_0})_b$, then \\begin{align*}N &\\equiv a_k \\cdot b^k + a_{k-1} \\cdot b^{k-1} + \\cdots + a_1 \\cdot b + a_0 \\\\ &\\equiv a_k \\cdot ((b-1) + 1)^k + \\cdots + a_1 \\cdot ((b-1) + 1) + a_0 \\\\\n& \\equiv a_k + a_{k-1} + \\cdots + a_1 + a_0 \\pmod{b-1}.\n\\end{align*}It follows that $N \\equiv 5+3+1+3+4+0 \\equiv 1 \\pmod{5}$ and that $N \\equiv 1 + 2 + 4 + 1 + 5 + 4 \\equiv 3 \\pmod{7}.$ By the Chinese Remainder Theorem and inspection, we determine that $N \\equiv 31 \\pmod{35}$, so that (by the Chinese Remainder Theorem again) $N \\equiv \\boxed{66} \\pmod{210}$."
+}

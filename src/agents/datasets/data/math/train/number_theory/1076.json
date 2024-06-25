@@ -1,0 +1,6 @@
+{
+    "problem": "What is the digit in the tens place when $7^{2005}$ is expressed in decimal notation?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Let's find the cycle of the last two digits of $7^n$, starting with $n=1$ : $07, 49, 43, 01, 07, 49, 43, 01,\\ldots$ . The cycle of the last two digits of $7^{n}$ is 4 numbers long: 07, 49, 43, 01. Thus, to find the tens digit of $7^n$ for any positive $n$, we must find the remainder, $R$, when $n$ is divided by 4 ($R=0$ or 1 corresponds to the tens digit 0, and $R=2$ or 3 corresponds to the units digit 4). Since $2005\\div4=501R1$, the tens digit of $7^{2005}$ is $ \\boxed{0}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The positive difference between the squares of two consecutive odd integers is 128. What is the product of the two integers?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let $a, a+2$ be the two integers. We are given that $(a+2)^2-a^2 = 128$. Using the difference of squares factorization, the equation becomes $(a+2+a)(a+2-a) = 128$. Simplifying and solving, we get: \\begin{align*}\n(2a+2)(2) &= 128\\\\\n\\Rightarrow 2a+2 &= 64\\\\\n\\Rightarrow 2a &= 62\\\\\n\\Rightarrow a &= 31.\\\\\n\\end{align*} Therefore the desired product is $a(a+2) = 31\\cdot33 = \\boxed{1023}$."
+}

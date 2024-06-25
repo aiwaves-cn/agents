@@ -1,0 +1,6 @@
+{
+    "problem": "Find the roots of $z^2 - z = 5 - 5i.$\n\nEnter the roots, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can write $z^2 - z - (5 - 5i) = 0.$  By the quadratic formula,\n\\[z = \\frac{1 \\pm \\sqrt{1 + 4(5 - 5i)}}{2} = \\frac{1 \\pm \\sqrt{21 - 20i}}{2}.\\]Let $21 - 20i = (a + bi)^2,$ where $a$ and $b$ are real numbers.  This expands as\n\\[a^2 + 2abi - b^2 = 21 - 20i.\\]Equating the real and imaginary parts, we get $a^2 - b^2 = 21$ and $ab = -10,$ so $b = -\\frac{10}{a}.$  Substituting, we get\n\\[a^2 - \\frac{100}{a^2} = 21.\\]Then $a^4 - 21a^2 - 100 = 0,$ which factors as $(a^2 - 25)(a^2 + 4) = 0.$  Since $a$ is real, $a^2 = 25,$ which means $a = 5$ or $a = -5.$\n\nIf $a = 5,$ then $b = -2,$ so\n\\[z = \\frac{1 + 5 - 2i}{2} = 3 - i.\\]If $a = -5,$ then $b = 2,$ so\n\\[z = \\frac{1 - 5 + 2i}{2} = -2 + i.\\]Therefore, the solutions are $\\boxed{3 - i, -2 + i}.$"
+}

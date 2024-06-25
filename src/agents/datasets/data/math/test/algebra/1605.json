@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x$, when $(2^{x+1})^3\\cdot 4^x=8192$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The equation, $(2^{x+1})^3\\cdot 4^x=8192$, can be written as $2^{3x+3} \\cdot 4^x=8192$. We also know that $2^{3x+3}=2^{3x}\\cdot 2^3$ and $4^x=2^{2x}$. Using substitution we have, $2^{3x}\\cdot 2^3\\cdot 2^{2x}=8192$. Next, we combine like terms to get $2^{5x}\\cdot 8=8192$. After dividing both sides of the equation by $8$, we find that $2^{5x}=1024$. Since $1024=2^{10}$, $2^{5x}=2^{10}$ and $x=\\boxed{2}$."
+}

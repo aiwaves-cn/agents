@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product of the least common multiple (LCM) of $8$ and $6$ and the greatest common divisor (GCD) of $8$ and $6$.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since $6 = 2 \\cdot 3$ and $3$ is relatively prime with $8$ while $2$ divides into both $6$ and $8$, it follows that $\\text{gcd}(6,8) = 2$. The multiples of $8$ are $8, 16, 24, 32\\ldots$ and the multiples of $6$ are $6, 12, 18, 24, 30, \\ldots$, so $\\text{lcm}(6,8) = 24$. Thus, the desired product is $2 \\times 24 = \\boxed{48}.$\n\nNotice that this product is equal to the product of the original numbers, $6\\times 8$. Is there a reason for that?"
+}

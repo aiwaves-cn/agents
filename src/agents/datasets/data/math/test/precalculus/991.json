@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors such that $\\|\\mathbf{v}\\| = 3$ and $\\|\\mathbf{w}\\| = 4.$  Find the minimum value of $\\mathbf{v} \\cdot \\mathbf{w}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "If $\\theta$ is the angle between $\\mathbf{v}$ and $\\mathbf{w},$ then\n\\[\\mathbf{v} \\cdot \\mathbf{w} = \\|\\mathbf{v}\\| \\|\\mathbf{w}\\| \\cos \\theta = 12 \\cos \\theta.\\]This is minimized when $\\cos \\theta = -1,$ which gives us a minimum value of $\\boxed{-12}.$"
+}

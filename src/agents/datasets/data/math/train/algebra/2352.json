@@ -1,0 +1,6 @@
+{
+    "problem": "Four positive integers $A$, $B$, $C$ and $D$ have a sum of 64. If $A+3 = B-3 = C \\times 3 = D \\div 3$, what is the value of the product $A \\times B \\times C \\times D$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have that $A + B + C + D = 64$.  Substituting everything in terms of $C$, we find that $(3C - 3) + (3C + 3) + C + (9C) = 64$, which means that $C = 4$.  Thus $A = 9$, $B = 15$, and $D = 36$.  Therefore our desired answer is $9\\cdot 15\\cdot 4\\cdot 36 = \\boxed{19440}$."
+}

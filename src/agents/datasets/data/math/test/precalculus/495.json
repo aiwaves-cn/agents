@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\sin(1998^\\circ+237^\\circ)\\sin(1998^\\circ-1653^\\circ)$.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\sin (1998^\\circ + 237^\\circ) \\sin (1998^\\circ - 1653^\\circ) &= \\sin 2235^\\circ \\sin 345^\\circ \\\\\n&= \\sin 75^\\circ \\sin (-15^\\circ) \\\\\n&= -\\sin 75^\\circ \\sin 15^\\circ \\\\\n&= -\\cos 15^\\circ \\sin 15^\\circ \\\\\n&= -\\frac{1}{2} (2 \\cos 15^\\circ \\sin 15^\\circ) \\\\\n&= -\\frac{1}{2} \\sin 30^\\circ \\\\\n&= \\boxed{-\\frac{1}{4}}.\n\\end{align*}"
+}

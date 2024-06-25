@@ -1,0 +1,6 @@
+{
+    "problem": "What, in degrees, is the measure of the largest angle in $\\triangle PQR?$\n\n[asy]\ndraw((0,0)--(-1.3,4)--(7,0)--cycle);\nlabel(\"$P$\",(-1.3,4),NW); label(\"$Q$\",(0,0),SW); label(\"$R$\",(7,0),SE);\n\nlabel(\"$6x^\\circ$\",(0,0),NE); label(\"$x^\\circ$\",(5,0),N); label(\"$3x^\\circ$\",(-.25,3));\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since the sum of the angles in a triangle is $180^\\circ,$ then  \\begin{align*}\n3x^\\circ + x^\\circ + 6x^\\circ &= 180^\\circ \\\\\n10x &= 180 \\\\\nx & = 18.\n\\end{align*}The largest angle in the triangle is $$6x^\\circ = 6(18^\\circ)=\\boxed{108}^\\circ.$$"
+}

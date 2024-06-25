@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a complex number that satisfies\n\\[|z - 3i| + |z - 4| = 5.\\]Find the minimum value of $|z|.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By the Triangle Inequality,\n\\[|z - 3i| + |z - 4| = |z - 4| + |3i - z| \\ge |(z - 4) + (3i - z)| = |-4 + 3i| = 5.\\]But we are told that $|z - 3i| + |z - 4| = 5.$  The only way that equality can occur is if $z$ lies on the line segment connecting 4 and $3i$ in the complex plane.\n\n[asy]\nunitsize(1 cm);\n\npair Z = interp((0,3),(4,0),0.6);\npair P = ((0,0) + reflect((4,0),(0,3))*(0,0))/2;\n\ndraw((4,0)--(0,3),red);\ndraw((-1,0)--(5,0));\ndraw((0,-1)--(0,4));\ndraw((0,0)--Z);\ndraw((0,0)--P);\ndraw(rightanglemark((0,0),P,(4,0),8));\n\ndot(\"$4$\", (4,0), S);\ndot(\"$3i$\", (0,3), W);\ndot(\"$z$\", Z, NE);\n\nlabel(\"$h$\", P/2, NW);\n[/asy]\n\nWe want to minimize $|z|$.  We see that $|z|$ is minimized when $z$ coincides with the projection of the origin onto the line segment.\n\nThe area of the triangle with vertices 0, 4, and $3i$ is\n\\[\\frac{1}{2} \\cdot 4 \\cdot 3 = 6.\\]This area is also\n\\[\\frac{1}{2} \\cdot 5 \\cdot h = \\frac{5h}{2},\\]so $h = \\boxed{\\frac{12}{5}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $125^b=5$ and $27^b=c$, what is the value of $c$?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We can rewrite the first equation as $(5^3)^b=5^{3\\cdot b}=5\\Rightarrow 3b=1\\Rightarrow b=\\frac{1}{3}$. Plugging in the value of $b$, we get $27^{\\frac{1}{3}}=c$. So, $c=(3^3)^{\\frac{1}{3}}=3^{3\\cdot\\frac{1}{3}}=\\boxed{3}$."
+}

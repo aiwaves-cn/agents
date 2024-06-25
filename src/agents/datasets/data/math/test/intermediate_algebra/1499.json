@@ -1,0 +1,6 @@
+{
+    "problem": "The coefficient of $x^{50}$ in\n\\[(1 + x)^{1000} + 2x (1 + x)^{999} + 3x^2 (1 + x)^{998} + \\dots + 1001x^{1000}\\]can be expressed in the form $\\binom{n}{k}.$  Find the smallest possible value of $n + k.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[S = (1 + x)^{1000} + 2x (1 + x)^{999} + \\dots + 1000x^{999} (1 + x) + 1001x^{1000}\\]Then\n\\begin{align*}\nxS &= x (1 + x)^{1000} + 2x^2 (1 + x)^{999} + \\dots + 1000x^{1000} (1 + x) + 1001x^{1001}, \\\\\n(1 + x)S &= (1 + x)^{1001} + 2x (1 + x)^{1000} + \\dots + 1000x^{999} (1 + x)^2 + 1001x^{1000} (1 + x).\n\\end{align*}Subtracting these equations, we get\n\\[S = (1 + x)^{1001} + x(1 + x)^{1000} + \\dots + x^{999} (1 + x)^2 + x^{1000} (1 + x) - 1001x^{1001}.\\]Then\n\\begin{align*}\nxS &= x(1 + x)^{1001} + x^2 (1 + x)^{1000} + \\dots + x^{1000} (1 + x)^2 + x^{1001} (1 + x) - 1001x^{1002}, \\\\\n(1 + x)S &= (1 + x)^{1002} + x (1 + x)^{1001} + \\dots + x^{999} (1 + x)^3 + x^{1000} (1 + x)^2 - 1001x^{1001} (1 + x).\n\\end{align*}Subtracting these equations, we get\n\\[S = (1 + x)^{1002} - 1002x^{1001} (1 + x) + 1001x^{1002}.\\]By the Binomial Theorem, the coefficient of $x^{50}$ is then $\\binom{1002}{50}.$  The final answer is $1002 + 50 = \\boxed{1052}.$"
+}

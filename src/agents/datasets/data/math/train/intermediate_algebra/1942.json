@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $x^{100}$ is divided by $(x + 1)^3.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\begin{align*}\nx^{100} &= [(x + 1) - 1]^{100} \\\\\n&= (x + 1)^{100} - \\binom{100}{1} (x + 1)^{99} + \\binom{100}{2} (x + 1)^{98} + \\dots - \\binom{100}{97} (x + 1)^3 + \\binom{100}{98} (x + 1)^2 - \\binom{100}{99} (x + 1) + 1.\n\\end{align*}When this is divided by $(x + 1)^3,$ the remainder is then\n\\[\\binom{100}{98} (x + 1)^2 - \\binom{100}{99} (x + 1) + 1 = \\boxed{4950x^2 + 9800x + 4851}.\\]"
+}

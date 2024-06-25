@@ -1,0 +1,6 @@
+{
+    "problem": "Our club has 20 members, 10 boys and 10 girls.  In how many ways can we choose a president and a vice-president if we have no restrictions other than the same person can't hold both offices?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The president can be any one of the 20 members, and the vice-president can be any one of the 19 remaining members. The answer is $20\\times 19=\\boxed{380}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest integer greater than 200 for which the greatest common divisor of that integer and 36 is 18?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The prime factors of 36 are 2, 2, 3, and 3. If the greatest common factor with 36 is 18, that means the other number is a multiple of 18, containing the factors 2, 3, and 3 but not a second 2. The smallest multiple of 18 that is greater than 200 is $18(12)=216$, which does not work since the 12 contains a second 2. The next smallest multiple is $18(13)=234$, which does not contain a second 2. So, our answer is $\\boxed{234}$."
+}

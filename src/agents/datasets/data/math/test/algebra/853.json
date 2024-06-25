@@ -1,0 +1,6 @@
+{
+    "problem": "The smallest distance between the origin and a point on the graph of $y=\\frac{1}{\\sqrt{2}}\\left(x^2-3\\right)$ can be expressed as $\\sqrt{a}/b$, where $a$ and $b$ are positive integers such that $a$ is not divisible by the square of any integer greater than one.  Find $a+b$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "By the distance formula, we are trying to minimize $\\sqrt{x^2+y^2}=\\sqrt{x^2+(1/2)(x^4-6x^2+9)}$. In general, minimization problems like this require calculus, but one optimization method that sometimes works is to try to complete the square.  Pulling out a factor of $1/2$ from under the radical, we have \\begin{align*}\n\\frac{1}{\\sqrt{2}}\\sqrt{2x^2+x^4-6x^2+9}&=\\frac{1}{\\sqrt{2}}\\sqrt{(x^4-4x^2+4)+5} \\\\\n&= \\frac{1}{\\sqrt{2}}\\sqrt{(x^2-2)^2+5}.\n\\end{align*}This last expression is minimized when the square equals $0$, i.e. when $x=\\sqrt{2}$. Then the distance is $\\sqrt{5}/\\sqrt{2}=\\sqrt{10}/2$.  Hence the desired answer is $\\boxed{12}$."
+}

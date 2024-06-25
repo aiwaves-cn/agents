@@ -1,0 +1,6 @@
+{
+    "problem": "How many values of $x$ between $0$ and $100$, exclusive, satisfy both of the following conditions?\n1. $x$ is a multiple of $4$.\n2. $x$ is a multiple of $6$.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We can start by listing all the multiples of $4$ between $0$ and $100$ and then list all the multiples of $6$ between $0$ and $100.$ Then, we can find all the ones in common: $12, 24, 36, 48, 60, 72, 84,$ and $96.$ There are $\\boxed{8}$ multiples. Notice that these are all multiples of $12$, which is the smallest common multiple we found of $4$ and $6.$"
+}

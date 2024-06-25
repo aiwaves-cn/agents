@@ -1,0 +1,6 @@
+{
+    "problem": "What is the numerical value of \\[ x = \\frac{1}{2-\\frac{1}{2-\\frac{1}{2-\\ldots}}} ?\\]",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Noticing that  \\[ \\frac{1}{x} = 2 - \\frac{1}{2-\\frac{1}{2-\\frac{1}{2-\\ldots}}} = 2 - x, \\] we have only to solve the quadratic equation $x^2 - 2x +1 = (x-1)^2 = 0$. Thus we see that $x = \\boxed{1}$."
+}

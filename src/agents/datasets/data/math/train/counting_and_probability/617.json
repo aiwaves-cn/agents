@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to divide a group of 6 friends among the basketball team, the soccer team, and the track team?  (Each team could have anywhere from 0 to 6 of the friends on it.  Assume the friends are distinguishable.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "For each friend, there are 3 options for which team to put them on. Since each of the 6 people have 3 options, there are $3^6=\\boxed{729}$ to divide the group of friends."
+}

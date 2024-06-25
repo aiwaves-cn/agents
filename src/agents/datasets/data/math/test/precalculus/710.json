@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of points with polar coordinates $(r, \\theta),$ where $1 \\le r \\le 2$ and $0 \\le \\theta \\le \\frac{\\pi}{2}.$  Compute the area of $S.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The set $S$ consists of all points in the first quadrant that lie between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4.$\n\n[asy]\nunitsize(1.5 cm);\n\nfilldraw(arc((0,0),1,0,90)--arc((0,0),2,90,0)--cycle,gray(0.7));\ndraw((-0.5,0)--(2.5,0));\ndraw((0,-0.5)--(0,2.5));\n\nlabel(\"$1$\", (1,0), S);\nlabel(\"$2$\", (2,0), S);\n[/asy]\n\nHence, the area of $S$ is\n\\[\\frac{4 \\pi - \\pi}{4} = \\boxed{\\frac{3 \\pi}{4}}.\\]"
+}

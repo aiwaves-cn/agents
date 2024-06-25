@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$, $b$, $c$ be the three sides of a triangle, and let $\\alpha$, $\\beta$, $\\gamma$ be the angles opposite them. If $a^2+b^2=1989c^2$, find the value of\n\\[\\frac{\\cot \\gamma}{\\cot \\alpha+\\cot \\beta}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\frac{\\cot \\gamma}{\\cot \\alpha + \\cot \\beta} &= \\frac{\\frac{\\cos \\gamma}{\\sin \\gamma}}{\\frac{\\cos \\alpha}{\\sin \\alpha} + \\frac{\\cos \\beta}{\\sin \\beta}} \\\\\n&= \\frac{\\sin \\alpha \\sin \\beta \\cos \\gamma}{\\sin \\gamma (\\cos \\alpha \\sin \\beta + \\sin \\alpha \\cos \\beta)}\n&= \\frac{\\sin \\alpha \\sin \\beta \\cos \\gamma}{\\sin \\gamma \\sin (\\alpha + \\beta)} \\\\\n&= \\frac{\\sin \\alpha \\sin \\beta \\cos \\gamma}{\\sin^2 \\gamma}.\n\\end{align*}By the Law of Sines,\n\\[\\frac{a}{\\sin \\alpha} = \\frac{b}{\\sin \\beta} = \\frac{c}{\\sin \\gamma},\\]so\n\\[\\frac{\\sin \\alpha \\sin \\beta \\cos \\gamma}{\\sin^2 \\gamma} = \\frac{ab \\cos \\gamma}{c^2}.\\]By the Law of Cosines,\n\\[\\frac{ab \\cos \\gamma}{c^2} = \\frac{a^2 + b^2 - c^2}{2c^2} = \\frac{1989c^2 - c^2}{2c^2} = \\boxed{994}.\\]"
+}

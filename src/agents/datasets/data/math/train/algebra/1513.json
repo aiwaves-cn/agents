@@ -1,0 +1,6 @@
+{
+    "problem": "For how many values of $a$ is it true that:\n(1) $a$ is a positive integer such that $a \\le 50$.\n(2) the quadratic equation $x^2 + (2a+1)x + a^2 = 0$ has two integer solutions?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If the quadratic equation $x^2 + (2a+1)x + a^2 = 0$ has two integer solutions, then $$x = \\frac{-2a-1 \\pm \\sqrt{(2a+1)^2 - 4a^2}}{2}$$is an integer, so it follows that the discriminant $(2a+1)^2 - 4a^2 = 4a + 1$ must be a perfect square. Also, $1 \\le a \\le 50$, so it follows that $5 \\le 4a+1 \\le 201$. Clearly $4a+1$ can only be the square of an odd integer; conversely, the square of any odd integer $(2n+1)^2$ is of the form $4n^2 + 4n+1 = 4(n^2 + n) + 1$ and so can be written as $4a+1$. The odd perfect squares from $5$ to $201$ are given by $9 = 3^2, 5^2, 7^2, 9^2, 11^2, 169 = 13^2$, so it follows that there are $\\boxed{6}$ such values of $a$."
+}

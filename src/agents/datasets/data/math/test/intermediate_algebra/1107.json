@@ -1,0 +1,6 @@
+{
+    "problem": "Find the ordered pair $(a,b)$ of real numbers for which\n\\[(ax + b)(x^5 + 1) - (5x + 1)\\]is divisible by $x^2 + 1.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "For $(ax + b)(x^5 + 1) - (5x + 1)$ to be divisible by $x^2 + 1,$ it must be equal to 0 at the roots of $x^2 + 1 = 0,$ which are $\\pm i.$\n\nFor $x = i,$\n\\begin{align*}\n(ax + b)(x^5 + 1) - (5x + 1) &= (ai + b)(i + 1) - (5i + 1) \\\\\n&= -a + ai + bi + b - 5i - 1 \\\\\n&= (-a + b - 1) + (a + b - 5)i.\n\\end{align*}Then we must have $-a + b - 1 = a + b - 5 = 0.$  Solving, we find $(a,b) = \\boxed{(2,3)}.$\n\nFor these values,\n\\[(ax + b)(x^5 + 1) - (5x + 1) = 2x^6 + 3x^5 - 3x + 2 = (x^2 + 1)(2x^4 + 3x^3 - 2x^2 - 3x + 2).\\]"
+}

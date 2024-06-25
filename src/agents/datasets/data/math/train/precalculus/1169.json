@@ -1,0 +1,6 @@
+{
+    "problem": "If $5(\\cos a + \\cos b) + 4(\\cos a \\cos b + 1) = 0,$ then find all possible values of\n\\[\\tan \\frac{a}{2} \\tan \\frac{b}{2}.\\]Enter all the possible values, separated by commas.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $x = \\tan \\frac{a}{2}.$  Then\n\\[x^2 = \\tan^2 \\frac{a}{2} = \\frac{\\sin^2 \\frac{a}{2}}{\\cos^2 \\frac{a}{2}} = \\frac{\\frac{1 - \\cos a}{2}}{\\frac{1 + \\cos a}{2}} = \\frac{1 - \\cos a}{1 + \\cos a}.\\]Solving for $\\cos a,$ we find\n\\[\\cos a = \\frac{1 - x^2}{1 + x^2}.\\]Similarly, if we let $y = \\tan \\frac{b}{2},$ then\n\\[\\cos b = \\frac{1 - y^2}{1 + y^2}.\\]Hence,\n\\[5 \\left( \\frac{1 - x^2}{1 + x^2} + \\frac{1 - y^2}{1 + y^2} \\right) + 4 \\left( \\frac{1 - x^2}{1 + x^2} \\cdot \\frac{1 - y^2}{1 + y^2} + 1 \\right) = 0.\\]This simplifies to $x^2 y^2 = 9,$ so the possible values of $xy$ are $\\boxed{3,-3}.$  For example, $a = b = \\frac{2 \\pi}{3}$ leads to $xy = 3,$ and $a = \\frac{2 \\pi}{3}$ and $b = \\frac{4 \\pi}{3}$ leads to $xy = -3.$"
+}

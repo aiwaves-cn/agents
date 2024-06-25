@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real numbers $x$ such that \\[\\left(\\frac{x}{2x-1}\\right)^2 \\le 9.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We expand the left-hand side and then subtract $9$ from both sides, giving \\[\\frac{x^2-9(4x^2-4x+1)}{4x^2-4x+1} = \\frac{-35x^2 + 36x - 9}{4x^2-4x+1}  \\le 0 \\]or $\\frac{35x^2-36x+9}{4x^2-4x+1} \\ge 0.$ Factoring top and bottom gives \\[ \\frac{(5x-3)(7x-3)}{(2x-1)^2} \\ge 0.\\]Letting $f(x)$ denote the left-hand side, we produce a sign table as follows: \\begin{tabular}{c|ccc|c} &$5x-3$ &$7x-3$ &$(2x-1)^2$ &$f(x)$ \\\\ \\hline$x<\\frac{3}{7}$ &$-$&$-$&$+$&$+$\\\\ [.1cm]$\\frac{3}{7}<x<\\frac{1}{2}$ &$-$&$+$&$+$&$-$\\\\ [.1cm]$\\frac{1}{2}<x<\\frac{3}{5}$ &$-$&$+$&$+$&$-$\\\\ [.1cm]$x>\\frac{3}{5}$ &$+$&$+$&$+$&$+$\\\\ [.1cm]\\end{tabular}We see that $f(x) > 0$ when $x < \\tfrac37$ or $x > \\tfrac35.$ Also, $f(x) = 0$ when $x = \\tfrac37$ or $x = \\tfrac35.$ Hence, the solution set to $f(x) \\ge 0$ is \\[x \\in \\boxed{(-\\infty, \\tfrac37] \\cup [\\tfrac35, \\infty) }\\, .\\]"
+}

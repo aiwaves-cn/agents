@@ -1,0 +1,6 @@
+{
+    "problem": "The longest side of a right triangle is 5 meters and the shortest side is 3 meters. What is the area of the triangle in square meters?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We know that the hypotenuse (the longest side) of the right triangle is $5$ meters and the shortest side is $3$ meters and that $3,4,5$ is a Pythagorean triple. Therefore, the other leg of the triangle must have a length of $4$ meters. Since the two legs are also the base and the height of the triangle, we have that the area of the triangle is equal to $\\frac{1}{2}(3)(4) = \\boxed{6}$ square meters.\n\nAlternatively, we could have used the Pythagorean Formula to find the length of the other side. If $y$ is the length of the other leg, then we have that $3^2 + y^2 = 5^2$, so $y^2=5^2-3^2=16$. Taking the square root of both sides, we have that $y=4$. Since we have the lengths of both legs, we can now find that the area of the triangle is $6$ square meters."
+}

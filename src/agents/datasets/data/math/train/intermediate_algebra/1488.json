@@ -1,0 +1,6 @@
+{
+    "problem": "There are integers $b,c$ for which both roots of the polynomial $x^2-x-1$ are also roots of the polynomial $x^5-bx-c$. Determine the product $bc$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ be a root of $x^2-x-1$. Then, rearranging, we have\n$$r^2 = r+1.$$Multiplying both sides by $r$ and substituting gives\n\\begin{align*}\nr^3 &= r^2+r \\\\\n&= (r+1)+r \\\\\n&= 2r+1.\n\\end{align*}Repeating this process twice more, we have\n\\begin{align*}\nr^4 &= r(2r+1) \\\\\n&= 2r^2+r \\\\\n&= 2(r+1)+r \\\\\n&= 3r+2\n\\end{align*}and\n\\begin{align*}\nr^5 &= r(3r+2) \\\\\n&= 3r^2+2r \\\\\n&= 3(r+1)+2r \\\\\n&= 5r+3.\n\\end{align*}Thus, each root of $x^2-x-1$ is also a root of $x^5-5x-3$, which gives $bc = 5\\cdot 3 = \\boxed{15}$.\n\n(It is left to the reader to investigate why this answer is unique.)"
+}

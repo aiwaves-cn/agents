@@ -1,0 +1,6 @@
+{
+    "problem": "How many of the six integers 1 through 6 are divisors of the four-digit number 1452?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "All numbers are divisible by $1$. The last two digits, $52$, form a multiple of 4, so the number is divisible by $4$, and thus $2$. $1+4+5+2=12$, which is a multiple of $3$, so $1452$ is divisible by $3$.  Since it is divisible by $2$ and $3$, it is divisible by $6$.  But it is not divisible by $5$ as it does not end in $5$ or $0$.  So the total is $\\boxed{5}$."
+}

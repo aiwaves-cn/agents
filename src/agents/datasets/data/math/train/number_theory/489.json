@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $x$ such that the four-digit number $\\underline{x15x}$ is divisible by 18.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The prime factorization of 18 is $3^2\\cdot2$, so in order for a number to be divisible by 18 it must be divisible by both 3 and 2. First, in order for a number to be divisible by 3, the sum of its digits must be divisible by 3. In the case of $x15x$, this means that $x+1+5+x=2x+6$ must be divisible by 3. Since the constant term (6) is already a multiple of 3, $2x$ must be divisible by 3, which means that $x$ itself must be a multiple of $3$ as well. Second, in order for a number to be divisible by 2, the units digit must be an even number. In this case, the divisibility rule for 2 implies that $x$ must be an even number. Thus, since we know that it must be an even single-digit multiple of 3, the only possible value for $x$ is $\\boxed{6}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In a polar coordinate system, the midpoint of the line segment whose endpoints are $\\left( 8, \\frac{5 \\pi}{12} \\right)$ and $\\left( 8, -\\frac{3 \\pi}{12} \\right)$ is the point $(r, \\theta).$  Enter $(r, \\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $A = \\left( 8, \\frac{5 \\pi}{12} \\right)$ and $B = \\left( 8, -\\frac{3 \\pi}{12}\\right).$  Note that both $A$ and $B$ lie on the circle with radius 8.  Also, $\\angle AOB = \\frac{2 \\pi}{3},$ where $O$ is the origin.\n\n[asy]\nunitsize (0.3 cm);\n\npair A, B, M, O;\n\nA = 8*dir(75);\nB = 8*dir(-45);\nO = (0,0);\nM = (A + B)/2;\n\ndraw(Circle(O,8));\ndraw(A--B);\ndraw((-9,0)--(9,0));\ndraw((0,-9)--(0,9));\ndraw(A--O--B);\ndraw(O--M);\n\nlabel(\"$A$\", A, A/8);\nlabel(\"$B$\", B, B/8);\nlabel(\"$O$\", O, SW);\nlabel(\"$M$\", M, E);\n[/asy]\n\nLet $M$ be the midpoint of $\\overline{AB}.$  Then $\\angle AOM = \\frac{\\pi}{3}$ and $\\angle AMO = \\frac{\\pi}{2},$ so $OM = \\frac{AO}{2} = 4.$  Also, $\\overline{OM}$ makes an angle of $\\frac{5 \\pi}{12} - \\frac{\\pi}{3} = \\frac{\\pi}{12}$ with the positive $x$-axis, so the polar coordinates of $M$ are $\\boxed{\\left( 4, \\frac{\\pi}{12} \\right)}.$"
+}

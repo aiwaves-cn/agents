@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x + y = 13$ and $xy = 24$, find the distance from the point $(x, y)$ to the origin.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The distance from $(x, y)$ to the origin is $\\sqrt{x^2 + y^2}$. We note that $x^2 + y^2 = x^2 + 2xy + y^2 - 2xy = (x + y)^2 - 2xy$, so $\\sqrt{x^2 + y^2} = \\sqrt{13^2-48} = \\sqrt{121} = \\boxed{11}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\bold{a}$ and $\\bold{b}$ be three-dimensional vectors.  Then\n\\[(5 \\bold{a} + 7 \\bold{b}) \\times (-\\bold{a} + 3 \\bold{b}) = k \\bold{a} \\times \\bold{b}\\]for some scalar $k$.  Find $k$.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By linearity of the cross product,\n\\[(5 \\bold{a} + 7 \\bold{b}) \\times (-\\bold{a} + 3 \\bold{b}) = -5 \\bold{a} \\times \\bold{a} + 15 \\bold{a} \\times \\bold{b} - 7 \\bold{b} \\times \\bold{a} + 21 \\bold{b} \\times \\bold{b}.\\]We have that $\\bold{a} \\times \\bold{a} = \\bold{b} \\times \\bold{b} = \\bold{0}$ and $\\bold{b} \\times \\bold{a} = -\\bold{a} \\times \\bold{b}$, so\n\\[-5 \\bold{a} \\times \\bold{a} + 15 \\bold{a} \\times \\bold{b} - 7 \\bold{b} \\times \\bold{a} + 21 \\bold{b} \\times \\bold{b} = \\bold{0} + 15 \\bold{a} \\times \\bold{b} + 7 \\bold{a} \\times \\bold{b} + \\bold{0} = 22 \\bold{a} \\times \\bold{b}.\\]The answer is $k = \\boxed{22}$."
+}

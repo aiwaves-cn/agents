@@ -1,0 +1,6 @@
+{
+    "problem": "By partial fractions,\n\\[\\frac{1}{ax^2 + bx + c} = \\frac{A}{x - \\dfrac{-b + \\sqrt{b^2 - 4ac}}{2a}} + \\frac{B}{x - \\dfrac{-b - \\sqrt{b^2 - 4ac}}{2a}}.\\]Find $A + B.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ and $s$ be the roots of $ax^2 + bx + c = a(x - r)(x - s),$ so\n\\[\\frac{1}{a(x - r)(x - s)} = \\frac{A}{x - r} + \\frac{B}{x - s}.\\]Multiplying both sides by $(x - r)(x - s),$ we get\n\\[A(x - s) + B(x - r) = \\frac{1}{a}.\\]Expanding, we get\n\\[(A + B) x - As - Br = \\frac{1}{a}.\\]Since this equation represents an identity, the coefficients of $x$ on each side must match. In other words, $A + B = \\boxed{0}.$"
+}

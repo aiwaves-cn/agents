@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 8 people be seated in a row of chairs if three of the people, John, Wilma, and Paul, refuse to sit in three consecutive seats?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The number of all seating arrangements is $8!$. The number of seating arrangements in which John, Wilma and Paul sit next to each other is $6!\\times 3!$. We can arrive at $6!\\times 3!$ by considering John, Wilma and Paul as one person, arranging the ``six'' people (the JWP super-person plus the 5 other people) first, then arranging John, Wilma and Paul.  Thus the number of acceptable arrangements is $$8!-6!\\times 3!=8\\times 7\\times 6! - 6!\\times 3! = (8\\times 7 - 3!)6! = (50)(720)=\\boxed{36000}.$$"
+}

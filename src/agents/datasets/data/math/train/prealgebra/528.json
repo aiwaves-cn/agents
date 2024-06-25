@@ -1,0 +1,6 @@
+{
+    "problem": "What is the measure of angle 4 if $m\\angle 1 = 76^{\\circ}, m\\angle 2 = 27^{\\circ}$ and $m\\angle 3 = 17^{\\circ}$?\n\n[asy]\ndraw((0,0)--(4,8)--(10,0)--cycle,linewidth(1));\ndraw((0,0)--(5,3)--(10,0),linewidth(1));\nlabel(\"2\",(1,1.2));\nlabel(\"1\",(4,7.75),S);\nlabel(\"4\",(5,3),S);\nlabel(\"3\",(8,1.8));\n\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Consider the triangle with angle 4; label the other two angles angle 5 and angle 6. By triangle angle-sum, $m\\angle1+m\\angle2+m\\angle3+m\\angle5+m\\angle6=180^{\\circ}$, or \\[\nm\\angle5+m\\angle6=180^{\\circ}-76^{\\circ}-27^{\\circ}-17^{\\circ}=60^{\\circ}\n\\] By triangle angle-sum on the small triangle, $m\\angle4+m\\angle5+m\\angle6=180^{\\circ}$, so $60^{\\circ}+m\\angle4=180^{\\circ}$ or $m\\angle4=\\boxed{120^{\\circ}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Rationalize the denominator of $\\frac{3}{2\\sqrt[3]{5}}$. The answer can be written in the form of $\\frac{A\\sqrt[3]{B}}{C}$, where $A$, $B$, and $C$ are integers, $C$ is positive, and $B$ is not divisible by the cube of any prime. Find $A+B+C$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the cube of $5$ is $125$, we multiply the top and bottom by $\\sqrt[3]{\\frac{125}{5}}$, which is $\\sqrt[3]{25}$. $$\\frac{3}{2\\sqrt[3]{5}} \\cdot \\frac{\\sqrt[3]{25}}{\\sqrt[3]{25}}=$$$$\\frac{3\\sqrt[3]{25}}{10}$$Therefore, $A+B+C=3+25+10=\\boxed{38}$."
+}

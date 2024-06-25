@@ -1,0 +1,6 @@
+{
+    "problem": "The Grammar club has 20 members: 10 boys and 10 girls.  A 4-person committee is chosen at random.  What is the probability that the committee has at least 1 boy and at least 1 girl?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The number of ways to choose a committee of all boys or all girls is $2\\times\\binom{10}{4}=420$. The total number of committees is $\\binom{20}{4}=4845$. Thus the answer is $1-\\dfrac{420}{4845} = \\dfrac{4425}{4845} = \\boxed{\\dfrac{295}{323}}$."
+}

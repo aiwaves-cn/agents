@@ -1,0 +1,6 @@
+{
+    "problem": "Starting with the number 100, Shaffiq repeatedly divides his number by two and then takes the greatest integer less than or equal to that number. How many times must he do this before he reaches the number 1?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "After doing so twice, he gets $25$. He then divides $25$ by $2$ to get $12.5$, and then takes the greatest integer to get $12$. He now divides by $2$ twice to get $3$. Finally, he divides by $2$ to get $1.5$ and takes the greatest integer to get $1$. This is a total of $\\boxed{6}$ times."
+}

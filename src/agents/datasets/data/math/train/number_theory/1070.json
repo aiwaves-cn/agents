@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest common divisor of $121^2 + 233^2 + 345^2$ and $120^2 + 232^2 + 346^2$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $m = 121^2 + 233^2 + 345^2$ and $n = 120^2 + 232^2 + 346^2$. By the Euclidean Algorithm, and using the difference of squares factorization, \\begin{align*}\n\\text{gcd}\\,(m,n) &= \\text{gcd}\\,(m-n,n) \\\\\n&= \\text{gcd}\\,(n,121^2 - 120^2 + 233^2 - 232^2 + 345^2 - 346^2)\\\\\n&= \\text{gcd}\\,(n,(121-120)(121+120) \\\\\n&\\qquad\\qquad\\qquad + (233-232)(233+232)\\\\\n&\\qquad\\qquad\\qquad - (346-345)(346+345)) \\\\\n&= \\text{gcd}\\,(n,241 + 465 - 691) \\\\\n&= \\text{gcd}\\,(n,15)\n\\end{align*}We notice that $120^2$ has a units digit of $0$, $232^2$ has a units digit of $4$, and $346^2$ has a units digit of $6$, so that $n$ has the units digit of $0+4+6$, namely $0$. It follows that $n$ is divisible by $5$. However, $n$ is not divisible by $3$: any perfect square not divisible by $3$ leaves a remainder of $1$ upon division by $3$, as $(3k \\pm 1)^2 = 3(3k^2 + 2k) + 1$. Since $120$ is divisible by $3$ while $232$ and $346$ are not, it follows that $n$ leaves a remainder of $0 + 1 + 1 = 2$ upon division by $3$. Thus, the answer is $\\boxed{5}$."
+}

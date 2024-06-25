@@ -1,0 +1,6 @@
+{
+    "problem": "Chewbacca has 20 pieces of cherry gum and 30 pieces of grape gum.  Some of the pieces are in complete packs, while others are loose.  Each complete pack has exactly $x$ pieces of gum. If Chewbacca loses one pack of cherry gum, then the ratio of the number of pieces of cherry gum he has to the number of pieces of grape gum will be exactly the same as if he instead finds 5 packs of grape gum.  Find $x$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If Chewbacca loses one pack of cherry gum, the ratio of the number of pieces of cherry gum he has to the number of pieces of grape gum is $(20-x)/30$. If he instead finds 5 packs of grape gum, this ratio will be $20/(30+5x)$. These ratios must be equal, so we must have  \\begin{align*}\n\\frac{20-x}{30} &= \\frac{20}{30+5x} \\quad\\implies\\\\\n(20-x)(30+5x)& = (30)(20) \\quad\\implies\\\\\n(20-x)(5)(6+x) &= (30)(20).\\end{align*}Dividing both sides by 5 gives $$(20-x)(6+x) = (30)(4)$$and expanding the left side of this gives $$120+14x -x^2 = 120.$$Therefore, $x^2-14x=0$, so $x(x-14)=0$.  We can't have $x=0$, so we must have $x=\\boxed{14}$."
+}

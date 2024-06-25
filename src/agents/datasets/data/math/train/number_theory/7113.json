@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be a subset of $\\{1,2,3,...,50\\}$ such that no pair of distinct elements in $S$ has a sum divisible by $7$. What is the maximum number of elements in $S$?\n$\\text{(A) } 6\\quad \\text{(B) } 7\\quad \\text{(C) } 14\\quad \\text{(D) } 22\\quad \\text{(E) } 23$\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The fact that $x \\equiv 0 \\mod 7 \\Rightarrow 7 \\mid x$ is assumed as common knowledge in this answer.\nFirst, note that there are $8$ possible numbers that are equivalent to $1 \\mod 7$, and there are $7$ possible numbers equivalent to each of $2$-$6 \\mod 7$.\nSecond, note that there can be no pairs of numbers $a$ and $b$ such that $a \\equiv -b$ mod $7$, because then $a+b | 7$. These pairs are $(0,0)$, $(1,6)$, $(2,5)$, and $(3,4)$. Because $(0,0)$ is a pair, there can always be $1$ number equivalent to $0 \\mod 7$, and no more.\nTo maximize the amount of numbers in S, we will use $1$ number equivalent to $0 \\mod 7$, $8$ numbers equivalent to $1$, and $14$ numbers equivalent to $2$-$5$. This is obvious if you think for a moment. Therefore the answer is $1+8+14=\\boxed{23}$ numbers."
+}

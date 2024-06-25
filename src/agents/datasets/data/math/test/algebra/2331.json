@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive difference between the solutions for $|x + 3| = 6$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We could solve the equation by noting that we must have $x+3 = 6$ or $x+3 = -6$, so $x=3$ or $x=-9$.  Or, we could be a little crafty and write the equation as $|x-(-3)| = 6$, which tells us that $x$ is 6 away from $-3$ on the number line.  This means that $x$ is $-9$ or 3.  Either way, the positive difference between the solutions is $3-(-9) = \\boxed{12}$."
+}

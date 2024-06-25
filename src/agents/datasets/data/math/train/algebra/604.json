@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x) = 2x + 3$ and $g(x) = 3x - 2$ find $\\frac{f(g(f(2)))}{g(f(g(2)))}$. Express your answer in the form $\\frac{a}{b}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We have $f(2) = 2(2) + 3 = 7$ and $g(2) = 3(2) - 2 = 4$, so \\[\\frac{f(g(f(2)))}{g(f(g(2)))} = \\frac{f(g(7))}{g(f(4))}.\\] We then have $g(7) = 3(7) - 2 = 19$ and $f(4) = 2(4) + 3 = 11$, so we have \\[\\frac{f(g(7))}{g(f(4))} = \\frac{f(19)}{g(11)} = \\frac{2(19) + 3}{3(11) - 2} = \\boxed{\\frac{41}{31}}.\\]"
+}

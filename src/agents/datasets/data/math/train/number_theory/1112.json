@@ -1,0 +1,6 @@
+{
+    "problem": "If the digit represented by $\\triangle$ satisfies the following addition problem $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & 3 & 2 & 1 & \\triangle_6\\\\ & & & \\triangle & 4 & 0_6\\\\ &+ & & & \\triangle & 2_6\\\\ \\cline{2-6} & & 4 & 2 & \\triangle & 1_6\\\\ \\end{array} $$what is the value of $\\triangle$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We notice that in the units column, it's impossible for $\\triangle+2=1_6$. So, it must be the case that $\\triangle+2=11_6=7$. That would mean $\\triangle=7-2=\\boxed{5}$. We can check that our answer works by plugging our value for triangle into the original problem: $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & 3 & 2 & 1 & 5_6\\\\ & & & 5 & 4 & 0_6\\\\ &+ & & & 5 & 2_6\\\\ \\cline{2-6} & & 4 & 2 & 5 & 1_6.\\\\ \\end{array} $$The addition problem still works, so our answer is correct."
+}

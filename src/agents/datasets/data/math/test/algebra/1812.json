@@ -1,0 +1,6 @@
+{
+    "problem": "For some constants $a$ and $b,$ let \\[f(x) = \\left\\{\n\\begin{array}{cl}\n9 - 2x & \\text{if } x \\le 3, \\\\\nax + b & \\text{if } x > 3.\n\\end{array}\n\\right.\\]The function $f$ has the property that $f(f(x)) = x$ for all $x.$ What is $a + b?$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Setting $x = 0,$ we get $f(0) = 9.$ Since $9 > 3,$ $f(9) = 9a + b.$ Hence, $$f(f(0)) = f(9) = 9a + b.$$But $f(f(x)) = x$ for all $x,$ so $9a + b = 0.$\n\nSetting $x = 1,$ we get $f(1) = 7.$ Since $7 > 3,$ $f(7) = 7a + b.$ Hence, $$f(f(1)) = f(7) = 7a + b.$$But $f(f(x)) = x$ for all $x,$ so $7a + b = 1.$\n\nSubtracting the equations $9a + b = 0$ and $7a + b = 1,$ we get $2a = -1,$ so $a = -1/2.$ From $9a + b = 0,$ we get $b = -9a = 9/2.$ Hence, $$a + b = -1/2 + (9/2) = \\boxed{4}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P(x)$ be a polynomial such that when $P(x)$ is divided by $x - 19,$ the remainder is 99, and when $P(x)$ is divided by $x - 99,$ the remainder is 19.  What is the remainder when $P(x)$ is divided by $(x - 19)(x - 99)$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the Remainder Theorem, $P(19) = 99$ and $P(99) = 19.$\n\nWhen $P(x)$ is divided by $(x - 19)(x - 99),$ the remainder must be of the form $ax + b.$  Thus,\n\\[P(x) = (x - 19)(x - 99) Q(x) + ax + b,\\]for some polynomial $Q(x).$\n\nSetting $x = 19$ and $x = 99,$ we get\n\\begin{align*}\n19a + b &= P(19) = 99, \\\\\n99a + b &= P(99) = 19.\n\\end{align*}Subtracting the equations, we get $80a = -80,$ so $a = -1.$  Then $-19 + b = 99,$ so $b = 118.$  Hence, the remainder is $\\boxed{-x + 118}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure, $\\angle EAB$ and $\\angle ABC$ are right angles, $AB=4,$ $BC=6,$ $AE=8,$ and $\\overline{AC}$ and $\\overline{BE}$ intersect at $D.$ What is the difference between the areas of $\\triangle ADE$ and $\\triangle BDC?$ [asy]\npair A,B,C,D,I;\nI=(0,8);\nA=(0,0);\nB=(4,0);\nC=(4,6);\nD=(2.5,4);\ndraw(A--B--I--cycle,linewidth(0.7));\ndraw(A--B--C--cycle,linewidth(0.7));\nlabel(\"$E$\",I,N);\nlabel(\"$C$\",C,N);\nlabel(\"$D$\",D,N);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"8\",(0,4),W);\nlabel(\"6\",(4,3),E);\nlabel(\"4\",(2,0),S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Let $x,$ $y,$ and $z$ be the areas of $\\triangle ADE,$ $\\triangle BDC,$ and $\\triangle ABD,$ respectively. The area of $\\triangle ABE$ is \\[\\frac 1 2\\cdot 4\\cdot 8= 16= x+z,\\]and the area of $\\triangle BAC$ is \\[\\frac 1 2\\cdot 4\\cdot 6 = 12= y+z.\\]Subtracting these equations gives $$(x+z) - (y+z) = 16-12\\implies x - y = \\boxed{4}.$$"
+}

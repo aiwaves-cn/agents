@@ -1,0 +1,6 @@
+{
+    "problem": "The equations\n\\[75x^4 + ax^3 + bx^2 + cx + 12 = 0\\]and\n\\[12x^5 + dx^4 + ex^3 + fx^2 + gx + 75 = 0\\]have a common rational root $k$ which is not an integer, and which is negative.  What is $k?$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $k = \\frac{m}{n}$ in reduced form, where $m$ and $n$ are integers.  Then by the Rational Root Theorem, $m$ divides 12 and $m$ divides 75, so $m$ must divide $\\gcd(12,75) = 3.$  Similarly, $n$ divides 75 and $n$ divides 12, so $n$ must divide $\\gcd(75,12) = 3.$  Thus, $m,$ $n \\in \\{-3, -1, 1, 3\\}.$\n\nWe are told that $k = \\frac{m}{n}$ is not an integer, and negative.  The only possibility is that $k =\\boxed{-\\frac{1}{3}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Every morning when Tim wakes up, he groggily searches around his sock drawer and picks two socks randomly. If he has 10 gray-bottomed socks and 8 white-bottomed socks in his drawer, what is the probability that he picks a matching pair?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Tim has 18 total socks, so there are $\\binom{18}{2} = 153$ ways for him to pick 2 of them. There are $\\binom{10}{2} = 45$ ways for him to pick 2 of his 10 gray-bottomed socks, and $\\binom{8}{2} = 28$ ways for him to pick 2 of his 8 white-bottom socks, for a total of $45 + 28 = 73$ ways for him to pick a matching pair. So the probability he picks a matching pair is $\\boxed{\\frac{73}{153}}$."
+}

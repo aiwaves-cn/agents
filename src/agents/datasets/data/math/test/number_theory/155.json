@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive three-digit integers are congruent to $7 \\pmod{19}?$",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "An integer congruent to $7 \\pmod{19}$ can be written as $19n+7$. Therefore, we have the inequality $$100 \\le 19n+7 \\le 999.$$We solve for the inequality by subtracting each term by $7$ and then dividing by $19$ to get  $$93\\le 19n \\le 992 \\implies \\frac{93}{19} \\le n \\le \\frac{992}{19}.$$The smallest integer greater than $\\frac{93}{19}$ is $5$ and the largest integer less than $\\frac{992}{19}$ is $52$. There are $52-4=\\boxed{48}$ integers from $5$ to $52$ inclusive."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(c)=\\frac{3}{2c-3}$, find $\\frac{kn^2}{lm}$ when $f^{-1}(c)\\times c \\times f(c)$ equals the simplified fraction$\\frac{kc+l}{mc+n}$, where $k,l,m,\\text{ and }n$ are integers.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Apply the definition of $f$ to the identity $f(f^{-1}(c))=c$ to find \\begin{align*}\nc&=\\frac{3}{2f^{-1}(c)-3}\\quad\\Rightarrow\\\\\nc(2f^{-1}(c)-3)&=3\\quad\\Rightarrow\\\\\n2f^{-1}(c)-3&=\\frac{3}{c}\\quad\\Rightarrow\\\\\n2f^{-1}(c)&=\\frac{3}{c}+3\\quad\\Rightarrow\\\\\nf^{-1}(c)&=\\frac{3}{2c}+\\frac{3}{2}\\quad\\Rightarrow\\\\\n&=\\frac{3}{2}\\left(\\frac{1}{c}+1\\right).\n\\end{align*}Therefore, $f^{-1}(c)\\times c \\times f(c)$ can be found: \\begin{align*}\nf^{-1}(c)\\times c \\times f(c)&=\\left(\\frac{3}{2}\\left(\\frac{1}{c}+1\\right)\\right)\\times c \\times \\frac{3}{2c-3}\\quad\\Rightarrow\\\\\n&=\\frac{3}{2}\\times\\frac{1+c}{c}\\times c \\times\\frac{3}{2c-3}\\quad\\Rightarrow\\\\\n&=\\frac{3\\times (1+c)\\times 3}{2 \\times (2c-3)}\\quad\\Rightarrow\\\\\n&=\\frac{9+9c}{4c-6}\\quad\\Rightarrow\\\\\n&=\\frac{9c+9}{4c-6}.\n\\end{align*}Thus, $k=9$, $l=9$, $m=4$, and $n=-6$. So, $\\frac{kn^2}{lm}=\\frac{9\\times(-6)^2}{9\\times 4}=\\boxed{9}$."
+}

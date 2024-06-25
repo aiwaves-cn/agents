@@ -1,0 +1,6 @@
+{
+    "problem": "The integers 2 through 9 are each placed in the figure with one integer in each of the eight smallest triangles. The integers are placed so that the pairs of integers in each of the four smallest squares have the same sum. What is that sum?\n\n[asy]\nsize(101);\ndraw(unitsquare);\ndraw(shift(up)*shift(right)*unitsquare);\nfilldraw(shift(up)*unitsquare,gray(.6));\nfilldraw(shift(right)*unitsquare,gray(.6));\ndraw((0,0)--(2,2)^^(0,2)--(2,0));\n[/asy]",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Once all the numbers are placed in the figure, the sum of all the numbers is $2 + 3 + \\cdots + 9$. The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $(2 + 9)/2 \\cdot 8 = 44$. Since each of the four smallest squares have the same sum, they each have a sum of $44/4 = \\boxed{11}$."
+}

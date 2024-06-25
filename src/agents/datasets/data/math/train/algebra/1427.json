@@ -1,0 +1,6 @@
+{
+    "problem": "Find the fraction that equals $0.\\overline{73}$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have \\[0.\\overline{73} = \\frac{73}{100} + \\frac{73}{10000} + \\frac{73}{1000000} + \\cdots.\\]This infinite geometric series has first term $73/100$ and common ratio $1/100$, so we have \\[0.\\overline{73} = \\frac{73/100}{1-1/100} = \\boxed{\\frac{73}{99}}.\\]"
+}

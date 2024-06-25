@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $109876543210$ is divided by $180$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Let $N = 109876543210$. Notice that $180 = 4 \\times 9 \\times 5$, so by the Chinese Remainder Theorem, it suffices to evaluate the remainders when $N$ is divided by each of $4$, $9$, and $5$. We can apply the divisibility rules to find each of these. Since the last two digits of $N$ are $10$, it follows that $N \\equiv 10 \\equiv 2 \\pmod{4}$. We know that $N$ is divisible by $5$, so $N \\equiv 0 \\pmod{5}$. Finally, since $N$ leaves the same residue modulo $9$ as the sum of its digits, then $$N \\equiv 0 + 1 + 2 + 3 + \\cdots + 9 + 1 \\equiv 1+ \\frac{9 \\cdot 10}{2} \\equiv 46 \\equiv 1 \\pmod{9}.$$By the Chinese Remainder Theorem and inspection, it follows that $N \\equiv 10 \\pmod{4 \\cdot 9}$, and since $10$ is also divisible by $5$, then $N \\equiv \\boxed{10} \\pmod{180}$."
+}

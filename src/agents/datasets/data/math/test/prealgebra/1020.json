@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\frac{2}{3} \\left(\\frac{2}{3}\\right)^{2} \\frac{2}{3}$.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The fractions at the beginning and end are equivalent to $\\left(\\frac{2}{3}\\right)^{1}$, so we can write the expression as $\\left(\\frac{2}{3}\\right)^{1}\\left(\\frac{2}{3}\\right)^{2}\\left(\\frac{2}{3}\\right)^{1}$. Recall that an exponent law states that $n^{a} \\cdot n^{b} = n^{a+b}$, so we can write the expression as $\\left(\\frac{2}{3}\\right)^{3} \\left(\\frac{2}{3}\\right) = \\left(\\frac{2}{3}\\right)^{4}$. Because $\\left(\\frac{a}{b}\\right)^{n} = \\frac{a^{n}}{b^{n}}$, we can rewrite this as $\\frac{2^{4}}{3^{4}}$. This is $\\boxed{\\frac{16}{81}}.$"
+}

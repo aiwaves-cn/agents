@@ -1,0 +1,667 @@
+{
+    "task": {
+        "task_name": "Simulated Debate",
+        "task_type": "Multi-Agent Simulation",
+        "task_description": "Simulate a debate with seven agents: three debaters arguing for the position that 'Money is the Root of All Evil,' three debaters arguing against this position, and one referee to oversee the debate. Each debater must present coherent arguments based on philosophical, economical, and ethical perspectives, while the referee ensures fair play and time management."
+    },
+    "agent_team": {
+        "agents": {
+            "Person1": {
+                "agent_name": "Person1",
+                "agent_roles": {
+                    "initiate_debate": "Environment_Setup_Coordinator"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person1",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            },
+            "Person2": {
+                "agent_name": "Person2",
+                "agent_roles": {
+                    "prepare_arguments_for": "Philosophical_Argument_Developer",
+                    "present_arguments_for": "Debater1"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person2",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            },
+            "Person3": {
+                "agent_name": "Person3",
+                "agent_roles": {
+                    "prepare_arguments_for": "Economical_Argument_Developer",
+                    "present_arguments_for": "Debater2"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person3",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            },
+            "Person4": {
+                "agent_name": "Person4",
+                "agent_roles": {
+                    "prepare_arguments_for": "Ethical_Argument_Developer",
+                    "present_arguments_for": "Debater3"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person4",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            },
+            "Person5": {
+                "agent_name": "Person5",
+                "agent_roles": {
+                    "prepare_arguments_against": "PhilosophicalAnalyst",
+                    "present_arguments_against": "PhilosophicalArgumentDeveloper"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person5",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            },
+            "Person6": {
+                "agent_name": "Person6",
+                "agent_roles": {
+                    "prepare_arguments_against": "EconomicAnalyst",
+                    "present_arguments_against": "EconomicArgumentDeveloper"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person6",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            },
+            "Person7": {
+                "agent_name": "Person7",
+                "agent_roles": {
+                    "prepare_arguments_against": "EthicalAnalyst",
+                    "present_arguments_against": "EthicalArgumentDeveloper"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person7",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            },
+            "Person8": {
+                "agent_name": "Person8",
+                "agent_roles": {
+                    "referee_oversight": "Referee",
+                    "conclude_debate": "Referee"
+                },
+                "agent_style": null,
+                "agent_description": null,
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "temperature": 0.3,
+                    "log_path": "logs/Person8",
+                    "API_KEY": "",
+                    "API_BASE": "",
+                    "MAX_CHAT_MESSAGES": 10,
+                    "ACTIVE_MODE": false
+                },
+                "toolkit": null,
+                "memory": null,
+                "is_user": false
+            }
+        },
+        "environment": {
+            "environment_type": "cooperative",
+            "shared_memory": null,
+            "shared_toolkit": null
+        }
+    },
+    "sop": {
+        "nodes": {
+            "initiate_debate": {
+                "node_name": "initiate_debate",
+                "node_description": "Set up the debate environment, including the debate topic, rules, and timing.",
+                "node_roles_description": {
+                    "Environment_Setup_Coordinator": "Responsible for setting up the debate environment, including defining the debate topic, establishing rules, and scheduling timing."
+                },
+                "begin_role": "Environment_Setup_Coordinator",
+                "begin_query": null,
+                "controller": {
+                    "max_chat_nums": 10,
+                    "transit_type": "llm",
+                    "transit_system_prompt": "To determine when the subtask of setting up the debate environment is complete, the following criteria must be met by the Environment_Setup_Coordinator:\n\n1. **Debate Topic Clearly Defined**: The topic \"Money is the Root of All Evil\" must be clearly stated, ensuring all participants understand the scope and focus of the debate.\n\n2. **Debate Rules Established**:\n   - Each debater is given an equal amount of time to present their arguments.\n   - Interruptions during a debater's allotted time are not allowed unless specified otherwise (e.g., for a structured rebuttal period).\n   - Each team (for and against the position) must cover arguments from philosophical, economical, and ethical perspectives.\n   - Sources of information or claims must be credible and, if requested, citable.\n   - The referee has the authority to enforce rules, manage time, and ensure respectful conduct among debaters.\n\n3. **Timing Scheduled**:\n   - The total duration of the debate is predefined (e.g., 60 minutes).\n   - Specific time allocations are set for opening statements, main arguments, rebuttals, and closing statements.\n   - Breaks, if any, are scheduled and timed.\n\n4. **Fair Play and Conduct Guidelines**:\n   - All participants are expected to maintain a respectful tone and demeanor.\n   - Personal attacks are strictly prohibited.\n   - The referee can issue warnings or disqualify participants for rule violations.\n\n5. **Documentation**:\n   - A written document or digital file outlining the topic, rules, and timing is created.\n   - This document is distributed to all participants and stakeholders before the debate for review and preparation.\n\nThe subtask is considered complete when these criteria are fulfilled, documented, and acknowledged by all debate participants and stakeholders. If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                    "transit_last_prompt": "The nodes that can be transited to are: ['initiate_debate', 'prepare_arguments_for', 'prepare_arguments_against']. Please only output <node>node_name</node> where node_name is the name of the next node that should be transited to.",
+                    "transit_extract_word": "node",
+                    "route_type": "order",
+                    "route_system_prompt": "",
+                    "route_last_prompt": null,
+                    "route_extract_word": "role"
+                },
+                "node_prompt_templates": {
+                    "define_topic": "Define the debate topic as {topic}.",
+                    "establish_rules": "Establish the debate rules including {rules_criteria}.",
+                    "schedule_timing": "Schedule the debate timing with {timing_details}.",
+                    "style": "You need to follow the output style: {style}.\n",
+                    "task": "The task you need to execute is: {task}.\n",
+                    "rule": "The rule you need to follow is: {rule}.\n",
+                    "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                    "output": "Please contact the above to extract <{output}> and </{output}>, do not perform additional output, please output in strict accordance with the above format!\n",
+                    "last": "{last}"
+                },
+                "node_prompt_paddings": {
+                    "Environment_Setup_Coordinator": {
+                        "define_topic": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "'Money is the Root of All Evil'"
+                            }
+                        },
+                        "establish_rules": {
+                            "value_source": "config",
+                            "value": {
+                                "rules_criteria": "speaking order, time limits for arguments, rebuttals, and conclusions; criteria for fair play"
+                            }
+                        },
+                        "schedule_timing": {
+                            "value_source": "config",
+                            "value": {
+                                "timing_details": "date, start and end times, breaks, and time allocation for each debate segment"
+                            }
+                        }
+                    }
+                },
+                "kb": null
+            },
+            "prepare_arguments_for": {
+                "node_name": "prepare_arguments_for",
+                "node_description": "Debaters in favor prepare their arguments based on philosophical, economical, and ethical perspectives.",
+                "node_roles_description": {
+                    "Philosophical_Argument_Developer": "Develop arguments from a philosophical standpoint on why money is considered the root of all evil.",
+                    "Economical_Argument_Developer": "Construct arguments from an economic perspective to support the notion that money is the root of all evil.",
+                    "Ethical_Argument_Developer": "Formulate arguments based on ethical considerations to argue that money is the root of all evil."
+                },
+                "begin_role": "Philosophical_Argument_Developer",
+                "begin_query": null,
+                "controller": {
+                    "max_chat_nums": 10,
+                    "transit_type": "llm",
+                    "transit_system_prompt": "The subtask of preparing arguments in favor of the position that 'Money is the Root of All Evil' will be considered complete when the following criteria are met for each role:\n\n1. **Philosophical_Argument_Developer**:\n   - Has provided a comprehensive argument that discusses the philosophical implications of money being a fundamental cause of moral corruption, greed, and societal imbalance.\n   - The argument references relevant philosophical theories or thinkers who have addressed the concept of money and evil.\n   - The argument is logically coherent and structured in a way that can be easily understood and presented in a debate format.\n\n2. **Economical_Argument_Developer**:\n   - Has developed a clear argument that outlines how money can drive economic inequality, foster unhealthy competition, and lead to exploitation and corruption.\n   - The argument includes examples or case studies that illustrate the negative economic impact of the pursuit of money.\n   - The argument is well-reasoned, with a logical flow that supports the position that money is the root of all evil from an economic standpoint.\n\n3. **Ethical_Argument_Developer**:\n   - Has formulated ethical arguments that demonstrate how the pursuit of money can lead to unethical behaviors, such as dishonesty, injustice, and a disregard for the well-being of others.\n   - The argument draws upon ethical theories or principles that highlight the moral dilemmas associated with money.\n   - The argument is persuasive and structured to engage the audience in a debate setting.\n\nFor the subtask to be fully complete, all three developers must also:\n- Ensure their arguments do not overlap significantly but rather complement each other, covering distinct aspects of the debate topic.\n- Have their arguments reviewed and critiqued by the team to refine the logic and presentation.\n- Submit their final arguments in a written format to the project manager for approval.\n\nOnce all these conditions are met, the subtask can be marked as complete. If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                    "transit_last_prompt": "The nodes that can be transited to are: ['prepare_arguments_for', 'present_arguments_for']. Please only output <node>node_name</node> where node_name is the name of the next node that should be transited to.",
+                    "transit_extract_word": "node",
+                    "route_type": "order",
+                    "route_system_prompt": "",
+                    "route_last_prompt": null,
+                    "route_extract_word": "role"
+                },
+                "node_prompt_templates": {
+                    "philosophical_argument": "Discuss how the concept of {concept} demonstrates that money is the root of all evil from a philosophical standpoint. Consider the ideas of {philosopher} and how their views on {view_topic} can be related to the notion of money and morality.",
+                    "economic_argument": "Analyze how the distribution of {economic_factor} influences societal behaviors and supports the argument that money is the root of all evil. Consider the impact of {economic_policy} on {social_issue}.",
+                    "ethical_argument": "Examine the ethical implications of how {ethical_issue} is influenced by the pursuit of wealth, arguing that this pursuit is the root of all evil. Consider the moral principles of {ethical_theory} and how they can be applied to the issue of {specific_ethical_issue}.",
+                    "style": "You need to follow the output style: {style}.\n",
+                    "task": "The task you need to execute is: {task}.\n",
+                    "rule": "The rule you need to follow is: {rule}.\n",
+                    "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                    "output": "Please contact the above to extract <{output}> and </{output}>, do not perform additional output, please output in strict accordance with the above format!\n",
+                    "last": "{last}"
+                },
+                "node_prompt_paddings": {
+                    "Philosophical_Argument_Developer": {
+                        "philosophical_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "concept": "materialism or greed",
+                                "philosopher": "Plato, Aristotle, or Kant",
+                                "view_topic": "ethics, virtue, or happiness"
+                            }
+                        }
+                    },
+                    "Economical_Argument_Developer": {
+                        "economic_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "economic_factor": "wealth, income, resources",
+                                "economic_policy": "taxation policies, monetary policies, welfare systems",
+                                "social_issue": "inequality, corruption, poverty"
+                            }
+                        }
+                    },
+                    "Ethical_Argument_Developer": {
+                        "ethical_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "ethical_issue": "a specific ethical issue, e.g., greed, corruption, inequality",
+                                "ethical_theory": "a specific ethical theory, e.g., utilitarianism, deontological ethics, virtue ethics",
+                                "specific_ethical_issue": "a more focused aspect of the ethical issue being discussed"
+                            }
+                        }
+                    }
+                },
+                "kb": null
+            },
+            "prepare_arguments_against": {
+                "node_name": "prepare_arguments_against",
+                "node_description": "Debaters against prepare their arguments based on philosophical, economical, and ethical perspectives.",
+                "node_roles_description": {
+                    "PhilosophicalAnalyst": "Research and present arguments against the notion that money is the root of all evil from a philosophical standpoint.",
+                    "EconomicAnalyst": "Analyze and argue against the statement from an economic perspective, focusing on the benefits and necessities of money in society.",
+                    "EthicalAnalyst": "Construct arguments based on ethical considerations to counter the claim that money is inherently evil."
+                },
+                "begin_role": "PhilosophicalAnalyst",
+                "begin_query": null,
+                "controller": {
+                    "max_chat_nums": 10,
+                    "transit_type": "llm",
+                    "transit_system_prompt": "To determine when the subtask of preparing arguments against the notion that \"Money is the Root of All Evil\" is complete, the following criteria must be met for each role:\n\n1. **PhilosophicalAnalyst**:\n   - A comprehensive argument is presented that challenges the notion from a philosophical standpoint, incorporating historical and contemporary philosophical debates about the nature of money and its impact on human behavior and society.\n   - The argument must reference at least three philosophical theories or thinkers that dispute the idea that money is the root of all evil.\n\n2. **EconomicAnalyst**:\n   - An analysis is provided that outlines the economic benefits of money, including its role in facilitating trade, encouraging economic development, and improving living standards.\n   - The argument must include statistical evidence or case studies demonstrating the positive impact of money on societies and economies.\n\n3. **EthicalAnalyst**:\n   - Arguments are constructed that examine the ethical implications of money and its use, arguing that money itself is not evil but can be used for both good and bad purposes.\n   - The argument should reference ethical theories or frameworks that support the view that it is the use of money, rather than money itself, that can lead to ethical or unethical outcomes.\n\nFor the subtask to be considered complete, each analyst must submit a document that fulfills the above criteria, ensuring a well-rounded argument against the notion that money is the root of all evil from philosophical, economic, and ethical perspectives. Additionally, each document must be reviewed and approved by the project manager for coherence, completeness, and adherence to the task requirements. If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                    "transit_last_prompt": "The nodes that can be transited to are: ['prepare_arguments_against', 'present_arguments_against']. Please only output <node>node_name</node> where node_name is the name of the next node that should be transited to.",
+                    "transit_extract_word": "node",
+                    "route_type": "order",
+                    "route_system_prompt": "",
+                    "route_last_prompt": null,
+                    "route_extract_word": "role"
+                },
+                "node_prompt_templates": {
+                    "philosophical_argument": "Identify and elaborate on how {philosophical_concept} demonstrates that money is not the root of all evil, incorporating historical and contemporary philosophical theories.",
+                    "economic_argument": "Analyze how {economic_concept} illustrates the positive impact of money on society, referencing key economic theories and real-world examples.",
+                    "ethical_argument": "Discuss how {ethical_concept} contradicts the notion that money is the root of all evil, considering both moral philosophy and practical ethical considerations.",
+                    "style": "You need to follow the output style: {style}.\n",
+                    "task": "The task you need to execute is: {task}.\n",
+                    "rule": "The rule you need to follow is: {rule}.\n",
+                    "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                    "output": "Please contact the above to extract <{output}> and </{output}>, do not perform additional output, please output in strict accordance with the above format!\n",
+                    "last": "{last}"
+                },
+                "node_prompt_paddings": {
+                    "PhilosophicalAnalyst": {
+                        "philosophical_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "philosophical_concept": "a specific philosophical theory or concept, such as utilitarianism, existentialism, or objectivism"
+                            }
+                        }
+                    },
+                    "EconomicAnalyst": {
+                        "economic_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "economic_concept": "economic growth, job creation, or poverty alleviation"
+                            }
+                        }
+                    },
+                    "EthicalAnalyst": {
+                        "ethical_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "ethical_concept": "a specific ethical theory or principle (e.g., Utilitarianism, Kantian ethics)"
+                            }
+                        }
+                    }
+                },
+                "kb": null
+            },
+            "present_arguments_for": {
+                "node_name": "present_arguments_for",
+                "node_description": "Debaters in favor present their arguments.",
+                "node_roles_description": {
+                    "Debater1": "Argue from a philosophical perspective that 'Money is the Root of All Evil'.",
+                    "Debater2": "Argue from an economic perspective that 'Money is the Root of All Evil'.",
+                    "Debater3": "Argue from an ethical perspective that 'Money is the Root of All Evil'."
+                },
+                "begin_role": "Debater1",
+                "begin_query": null,
+                "controller": {
+                    "max_chat_nums": 10,
+                    "transit_type": "llm",
+                    "transit_system_prompt": "To effectively determine when the subtask of debaters arguing in favor of the position that \"Money is the Root of All Evil\" is complete, you can set the following rules:\n\n1. **Coverage of Assigned Perspectives**: Each debater must have presented a coherent argument from their assigned perspective:\n   - **Debater1** must present a clear philosophical argument linking money to the root of all evil.\n   - **Debater2** must provide an economic argument illustrating how money contributes to negative outcomes in society.\n   - **Debater3** needs to argue from an ethical standpoint, demonstrating how money influences moral decisions negatively.\n\n2. **Depth of Argumentation**: Arguments should not merely assert but must include:\n   - Definitions and explanations of key terms (like \"evil\", \"economic influence\", \"ethical considerations\").\n   - Examples or historical evidence supporting their claims.\n   - A logical structure that ties their evidence back to the main thesis that money is the root of all evil.\n\n3. **Clarity and Coherence**: The arguments must be understandable and logically structured, free of significant contradictions or logical fallacies.\n\n4. **Completion of Presentations**: Each debater has spoken for an equal and sufficient amount of time, typically predefined by the debate format (e.g., each debater has 5 minutes to present their argument).\n\nOnce these criteria are met by all three debaters, the subtask can be considered complete. If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                    "transit_last_prompt": "The nodes that can be transited to are: ['present_arguments_for', 'referee_oversight']. Please only output <node>node_name</node> where node_name is the name of the next node that should be transited to.",
+                    "transit_extract_word": "node",
+                    "route_type": "order",
+                    "route_system_prompt": "",
+                    "route_last_prompt": null,
+                    "route_extract_word": "role"
+                },
+                "node_prompt_templates": {
+                    "philosophical_argument": "Consider the philosophical implications of the statement 'Money is the Root of All Evil'. Discuss how the pursuit of wealth can corrupt {moral_values} and lead to {negative_consequences}.",
+                    "economic_argument": "Analyze the economic systems and their relationship with wealth accumulation. Discuss how the desire for {economic_goal} can lead to {economic_issues} and affect {social_strata}.",
+                    "ethical_argument": "Examine the ethical dimensions of the statement 'Money is the Root of All Evil'. Discuss how the accumulation of wealth can compromise {ethical_values} and lead to {ethical_dilemmas}.",
+                    "style": "You need to follow the output style: {style}.\n",
+                    "task": "The task you need to execute is: {task}.\n",
+                    "rule": "The rule you need to follow is: {rule}.\n",
+                    "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                    "output": "Please contact the above to extract <{output}> and </{output}>, do not perform additional output, please output in strict accordance with the above format!\n",
+                    "last": "{last}"
+                },
+                "node_prompt_paddings": {
+                    "Debater1": {
+                        "philosophical_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "moral_values": "moral values and ethical standards",
+                                "negative_consequences": "detrimental societal behaviors and personal compromises"
+                            }
+                        }
+                    },
+                    "Debater2": {
+                        "economic_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "economic_goal": "excessive wealth",
+                                "economic_issues": "inequality and exploitation",
+                                "social_strata": "different social classes"
+                            }
+                        }
+                    },
+                    "Debater3": {
+                        "ethical_argument": {
+                            "value_source": "config",
+                            "value": {
+                                "ethical_values": "integrity, honesty, and compassion",
+                                "ethical_dilemmas": "greed, exploitation, and moral decay"
+                            }
+                        }
+                    }
+                },
+                "kb": null
+            },
+            "present_arguments_against": {
+                "node_name": "present_arguments_against",
+                "node_description": "Debaters against present their arguments.",
+                "node_roles_description": {
+                    "EconomicArgumentDeveloper": "Develops arguments against the notion that money is the root of all evil from an economic perspective, highlighting the benefits of money in facilitating trade, encouraging innovation, and promoting economic growth.",
+                    "EthicalArgumentDeveloper": "Crafts arguments against the claim from an ethical standpoint, focusing on how money can be used for good, support philanthropy, and improve living standards.",
+                    "PhilosophicalArgumentDeveloper": "Formulates arguments from a philosophical angle, questioning the inherent value judgments about money and evil, and exploring the complexity of human desires and societal structures."
+                },
+                "begin_role": "EconomicArgumentDeveloper",
+                "begin_query": null,
+                "controller": {
+                    "max_chat_nums": 10,
+                    "transit_type": "llm",
+                    "transit_system_prompt": "To determine when the subtask of presenting arguments against the notion that \"Money is the Root of All Evil\" is complete, the following criteria must be met for each role's output:\n\n1. **EconomicArgumentDeveloper:**\n   - The argument clearly outlines how money acts as a medium of exchange, facilitating trade and economic interactions that would otherwise be inefficient or impossible.\n   - It demonstrates with examples or theoretical models how money encourages innovation and investment, leading to economic growth and development.\n   - The argument addresses and refutes common misconceptions linking money directly to negative economic outcomes, providing evidence or logical reasoning to support this refutation.\n\n2. **EthicalArgumentDeveloper:**\n   - The argument presents a nuanced view of money's role in society, illustrating how it can be used to support ethical actions, philanthropy, and improve living standards.\n   - It challenges the notion that money itself is evil, arguing instead that the moral value of money comes from how it is used by individuals.\n   - The argument includes examples of ethical uses of money in both personal and societal contexts, reinforcing the position that money can be a force for good.\n\n3. **PhilosophicalArgumentDeveloper:**\n   - The argument explores the philosophical underpinnings of value, desire, and societal structures, questioning the simplification of money as the root of all evil.\n   - It discusses the complexity of human desires and how money, as a tool, can be used to fulfill a range of needs and wants, both material and immaterial.\n   - The argument critically examines the relationship between money, power, and societal values, arguing that the perception of money as inherently evil overlooks its role within larger socio-economic systems.\n\n**Completion Criteria for the Subtask:**\n- All three developers have submitted arguments that meet the outlined criteria for their respective perspectives.\n- The arguments are coherent, logically structured, and free of fallacies, providing a strong counterpoint to the notion that money is the root of all evil.\n- The referee has reviewed the arguments for fairness, adherence to the debate format, and ensuring that each argument is given equal consideration and time.\n\nOnce these criteria are satisfied, the subtask of presenting arguments against the notion that \"Money is the Root of All Evil\" can be considered complete. If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                    "transit_last_prompt": "The nodes that can be transited to are: ['present_arguments_against', 'referee_oversight']. Please only output <node>node_name</node> where node_name is the name of the next node that should be transited to.",
+                    "transit_extract_word": "node",
+                    "route_type": "order",
+                    "route_system_prompt": "",
+                    "route_last_prompt": null,
+                    "route_extract_word": "role"
+                },
+                "node_prompt_templates": {
+                    "ArgumentConstruction": "Develop a comprehensive argument that explains why {topic} is beneficial for {aspect}. Consider historical evidence, current practices, and future implications.",
+                    "CounterArgumentPreparation": "Prepare a counter-argument to the common criticism that {topic} leads to {negative_outcome}. Use data and case studies to support your stance.",
+                    "ExampleIdentification": "Identify a real-world example where {topic} has positively impacted {aspect}. Describe the situation and the outcomes.",
+                    "style": "You need to follow the output style: {style}.\n",
+                    "task": "The task you need to execute is: {task}.\n",
+                    "rule": "The rule you need to follow is: {rule}.\n",
+                    "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                    "output": "Please contact the above to extract <{output}> and </{output}>, do not perform additional output, please output in strict accordance with the above format!\n",
+                    "last": "{last}"
+                },
+                "node_prompt_paddings": {
+                    "EconomicArgumentDeveloper": {
+                        "ArgumentConstruction": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "aspect": "economic development"
+                            }
+                        },
+                        "CounterArgumentPreparation": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "negative_outcome": "inequality and greed"
+                            }
+                        },
+                        "ExampleIdentification": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "aspect": "global trade"
+                            }
+                        }
+                    },
+                    "EthicalArgumentDeveloper": {
+                        "ArgumentConstruction": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "aspect": "ethical considerations in society"
+                            }
+                        },
+                        "CounterArgumentPreparation": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "negative_outcome": "moral degradation"
+                            }
+                        },
+                        "ExampleIdentification": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "philanthropic efforts funded by wealth",
+                                "aspect": "improvements in healthcare, education, and poverty alleviation"
+                            }
+                        }
+                    },
+                    "PhilosophicalArgumentDeveloper": {
+                        "ArgumentConstruction": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "aspect": "the complexity of human desires and societal structures"
+                            }
+                        },
+                        "CounterArgumentPreparation": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "negative_outcome": "the degradation of moral values"
+                            }
+                        },
+                        "ExampleIdentification": {
+                            "value_source": "config",
+                            "value": {
+                                "topic": "money",
+                                "aspect": "philanthropy and societal progress"
+                            }
+                        }
+                    }
+                },
+                "kb": null
+            },
+            "referee_oversight": {
+                "node_name": "referee_oversight",
+                "node_description": "Referee oversees the debate to ensure fair play and proper time management.",
+                "node_roles_description": {
+                    "Referee": "Oversees the debate to ensure fair play and proper time management."
+                },
+                "begin_role": "Referee",
+                "begin_query": null,
+                "controller": {
+                    "max_chat_nums": 10,
+                    "transit_type": "llm",
+                    "transit_system_prompt": "The subtask of the referee overseeing the debate to ensure fair play and proper time management is considered complete when the following criteria are met:\n\n1. **Opening Statements:** Each debater has been given an equal and fair opportunity to present their opening statement without interruption.\n\n2. **Argument Presentation:** All debaters have presented their arguments, covering philosophical, economical, and ethical perspectives, within the allocated time frames.\n\n3. **Rebuttals:** Each debater has had the chance to offer rebuttals to opposing arguments within the designated time limits.\n\n4. **Closing Statements:** All debaters have made their closing statements, summarizing their positions and arguments, within the prescribed time.\n\n5. **Adherence to Rules:** Throughout the debate, the referee has enforced the debate rules, ensuring no overstepping in terms of time and that the discourse remains respectful and on-topic.\n\n6. **Time Management:** The overall debate has concluded within the total allocated time, with no single segment (opening, argument presentation, rebuttals, closing) significantly overrunning its time limit.\n\n7. **Fairness and Impartiality:** The referee has remained neutral, not favoring any side, and has intervened if necessary to maintain the debate's integrity and fairness.\n\nOnce these criteria are met, the referee's role in overseeing the debate for fair play and proper time management is successfully completed. If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                    "transit_last_prompt": "The nodes that can be transited to are: ['referee_oversight', 'conclude_debate']. Please only output <node>node_name</node> where node_name is the name of the next node that should be transited to.",
+                    "transit_extract_word": "node",
+                    "route_type": "order",
+                    "route_system_prompt": "",
+                    "route_last_prompt": null,
+                    "route_extract_word": "role"
+                },
+                "node_prompt_templates": {
+                    "time_management": "Referee ensures each debater speaks for only {time_limit} minutes.",
+                    "fair_play_oversight": "Referee monitors the debate to maintain respect and prevent any debater from dominating the conversation.",
+                    "style": "You need to follow the output style: {style}.\n",
+                    "task": "The task you need to execute is: {task}.\n",
+                    "rule": "The rule you need to follow is: {rule}.\n",
+                    "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                    "output": "Please contact the above to extract <{output}> and </{output}>, do not perform additional output, please output in strict accordance with the above format!\n",
+                    "last": "{last}"
+                },
+                "node_prompt_paddings": {
+                    "Referee": {
+                        "time_management": {
+                            "value_source": "config",
+                            "value": {
+                                "time_limit": "5"
+                            }
+                        },
+                        "fair_play_oversight": {
+                            "value_source": "config",
+                            "value": {}
+                        }
+                    }
+                },
+                "kb": null
+            },
+            "conclude_debate": {
+                "node_name": "conclude_debate",
+                "node_description": "Referee concludes the debate and summarizes the arguments presented by both sides.",
+                "node_roles_description": {
+                    "Referee": "Oversees the debate, ensures fair play and time management, and summarizes the arguments presented by both sides at the conclusion."
+                },
+                "begin_role": "Referee",
+                "begin_query": null,
+                "controller": {
+                    "max_chat_nums": 10,
+                    "transit_type": "llm",
+                    "transit_system_prompt": "To determine when the subtask of concluding the debate and summarizing the arguments is complete, the following rules should be applied based on the output of the Referee role:\n\n1. **Fair Play and Time Management**: Ensure that the Referee has enforced fair play throughout the debate, giving equal opportunities and time to all debaters to present their arguments.\n\n2. **Comprehensive Summary**: Verify that the Referee has provided a comprehensive summary that accurately reflects the key points and arguments presented by both sides. This summary should include:\n   - The main philosophical, economical, and ethical arguments made by the proponents of the view that \"Money is the Root of All Evil.\"\n   - The principal philosophical, economical, and ethical arguments made by the opponents of this view.\n   - Any significant rebuttals or counterarguments presented by either side.\n\n3. **Neutrality**: The Referee's summary should be neutral, not showing bias towards either side of the debate. It should fairly represent the perspectives of both sides.\n\n4. **Clarity and Conciseness**: The summary should be clear and concise, making the complex arguments accessible to the audience without oversimplification.\n\n5. **Closure**: The Referee must officially declare the debate closed after summarizing the arguments, indicating that no further arguments will be entertained and that the debate has reached its conclusion.\n\nOnce these criteria are met, the subtask of concluding the debate and summarizing the arguments can be considered complete. If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node.",
+                    "transit_last_prompt": "The nodes that can be transited to are: ['conclude_debate', 'end_node']. Please only output <node>node_name</node> where node_name is the name of the next node that should be transited to.",
+                    "transit_extract_word": "node",
+                    "route_type": "order",
+                    "route_system_prompt": "",
+                    "route_last_prompt": null,
+                    "route_extract_word": "role"
+                },
+                "node_prompt_templates": {
+                    "conclude_debate": "As the referee, I will now conclude this debate. The arguments for the position that 'Money is the Root of All Evil' included points on {for_point1}, {for_point2}, and {for_point3}. The arguments against this position highlighted {against_point1}, {against_point2}, and {against_point3}. After considering these viewpoints, it's evident that the debate presents complex perspectives on the influence of money in society.",
+                    "style": "You need to follow the output style: {style}.\n",
+                    "task": "The task you need to execute is: {task}.\n",
+                    "rule": "The rule you need to follow is: {rule}.\n",
+                    "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                    "output": "Please contact the above to extract <{output}> and </{output}>, do not perform additional output, please output in strict accordance with the above format!\n",
+                    "last": "{last}"
+                },
+                "node_prompt_paddings": {
+                    "Referee": {
+                        "conclude_debate": {
+                            "value_source": "config",
+                            "value": {
+                                "for_point1": "philosophical impacts such as greed and moral decay",
+                                "for_point2": "economic disparities and systemic corruption",
+                                "for_point3": "ethical dilemmas and social injustice",
+                                "against_point1": "economic necessity and development",
+                                "against_point2": "opportunities for charity and societal improvement",
+                                "against_point3": "not money itself, but the misuse of it that leads to evil"
+                            }
+                        }
+                    }
+                },
+                "kb": null
+            }
+        },
+        "edges": {
+            "initiate_debate": [
+                "initiate_debate",
+                "prepare_arguments_for",
+                "prepare_arguments_against"
+            ],
+            "prepare_arguments_for": [
+                "prepare_arguments_for",
+                "present_arguments_for"
+            ],
+            "prepare_arguments_against": [
+                "prepare_arguments_against",
+                "present_arguments_against"
+            ],
+            "present_arguments_for": [
+                "present_arguments_for",
+                "referee_oversight"
+            ],
+            "present_arguments_against": [
+                "present_arguments_against",
+                "referee_oversight"
+            ],
+            "referee_oversight": [
+                "referee_oversight",
+                "conclude_debate"
+            ],
+            "conclude_debate": [
+                "conclude_debate",
+                "end_node"
+            ]
+        },
+        "root": "initiate_debate",
+        "end": "end_node"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ be three vectors such that $\\|\\mathbf{a}\\| = \\frac{1}{\\sqrt{2}},$ $\\|\\mathbf{b}\\| = \\frac{1}{\\sqrt{3}},$ $\\|\\mathbf{c}\\| = \\frac{1}{\\sqrt{6}},$ $\\|\\mathbf{a} + \\mathbf{b} + \\mathbf{c}\\| = 1,$ and\n\\[\\mathbf{a} = k (\\mathbf{b} \\times \\mathbf{c})\\]for some scalar $k.$  Find the angle between $\\mathbf{b}$ and $\\mathbf{c},$ in degrees.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{b} \\times \\mathbf{c}$ is orthogonal to both $\\mathbf{b}$ and $\\mathbf{c},$ $\\mathbf{a} \\cdot \\mathbf{b} = 0$ and $\\mathbf{a} \\cdot \\mathbf{c} = 0.$\n\nSince $\\|\\mathbf{a} + \\mathbf{b} + \\mathbf{c}\\| = 1,$\n\\[(\\mathbf{a} + \\mathbf{b} + \\mathbf{c}) \\cdot (\\mathbf{a} + \\mathbf{b} + \\mathbf{c}) = 1.\\]Expanding, we get\n\\[\\mathbf{a} \\cdot \\mathbf{a} + \\mathbf{b} \\cdot \\mathbf{b} + \\mathbf{c} \\cdot \\mathbf{c} + 2 \\mathbf{a} \\cdot \\mathbf{b} + 2 \\mathbf{a} \\cdot \\mathbf{c} + 2 \\mathbf{b} \\cdot \\mathbf{c} = 1.\\]From what we know, this becomes\n\\[\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6} + 0 + 0 + 2 \\mathbf{b} \\cdot \\mathbf{c} = 1.\\]Hence, $\\mathbf{b} \\cdot \\mathbf{c} = 0.$  This means the angle between $\\mathbf{b}$ and $\\mathbf{c}$ is $\\boxed{90^\\circ}.$"
+}

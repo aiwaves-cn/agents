@@ -1,0 +1,6 @@
+{
+    "problem": "The arithmetic mean (or average) of $A$, $B$ and $C$ is 10. The value of $A$ is six less than the value of $B$, and the value of $C$ is three more than the value of $B$. What is the value of $C$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We know that $\\frac{A+B+C}{3} = 10$, thus, $A+B+C = 30$.  We also know that $B = C - 3$, and that $A = B - 6 = C - 9$.  Thus, $(C - 9) + (C - 3) + C = 30$, thus, $3C = 42 \\rightarrow C = \\boxed{14}$."
+}

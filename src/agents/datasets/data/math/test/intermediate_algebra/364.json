@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be real numbers such that $a > b > 0.$  Determine the minimum value of\n\\[a + \\frac{1}{b(a - b)}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\[a + \\frac{1}{b(a - b)} = (a - b) + b + \\frac{1}{b(a - b)}.\\]By AM-GM,\n\\[(a - b) + b + \\frac{1}{b(a - b)} \\ge 3 \\sqrt[3]{(a - b)b \\cdot \\frac{1}{b(a - b)}} = 3.\\]Equality occurs when $a = 2$ and $b = 1,$ so the minimum value is $\\boxed{3}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $13^{-1} \\equiv 29 \\pmod{47}$, find $34^{-1} \\pmod{47}$, as a residue modulo 47.  (Give a number between 0 and 46, inclusive.)",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that $34 \\equiv -13 \\pmod{47}$.  Hence, \\begin{align*}\n34^{-1} &\\equiv (-13)^{-1} \\\\\n&\\equiv (-1)^{-1} \\cdot 13^{-1} \\\\\n&\\equiv (-1) \\cdot 29 \\\\\n&\\equiv \\boxed{18} \\pmod{47}.\n\\end{align*}"
+}

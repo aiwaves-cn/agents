@@ -1,0 +1,6 @@
+{
+    "problem": "Let $n$ be a positive integer. If $a\\equiv (3^{2n}+4)^{-1}\\pmod{9}$, what is the remainder when $a$ is divided by $9$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We have that \\[a\\equiv (3^{2n}+4)^{-1}\\equiv (9^{n}+4)^{-1}\\equiv 4^{-1}\\equiv \\boxed{7}\\pmod{9}.\\]"
+}

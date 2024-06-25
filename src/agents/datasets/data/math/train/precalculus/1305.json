@@ -1,0 +1,6 @@
+{
+    "problem": "Find the range of the function\n\\[f(x) = \\frac{\\sin^3 x + 6 \\sin^2 x + \\sin x + 2 \\cos^2 x - 8}{\\sin x - 1},\\]as $x$ ranges over all real numbers such that $\\sin x \\neq 1.$  Enter your answer using interval notation.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Since $\\cos^2 x = 1 - \\sin^2 x,$ we can write\n\\begin{align*}\nf(x) &= \\frac{\\sin^3 x + 6 \\sin^2 x + \\sin x + 2(1 - \\sin^2 x) - 8}{\\sin x - 1} \\\\\n&= \\frac{\\sin^3 x + 4 \\sin^2 x + \\sin x - 6}{\\sin x - 1} \\\\\n&= \\frac{(\\sin x - 1)(\\sin x + 2)(\\sin x + 3)}{\\sin x - 1} \\\\\n&= (\\sin x + 2)(\\sin x + 3) \\\\\n&= \\sin^2 x + 5 \\sin x + 6.\n\\end{align*}Let $y = \\sin x.$  Then\n\\[\\sin^2 x + 5 \\sin x + 6 = y^2 + 5y + 6 = \\left( y + \\frac{5}{2} \\right)^2 - \\frac{1}{4}\\]Note that $y = \\sin x$ satisfies $-1 \\le y \\le 1,$ and $\\left( y + \\frac{5}{2} \\right)^2 - \\frac{1}{4}$ is increasing on this interval.  Therefore,\n\\[2 \\le (\\sin x + 2)(\\sin x + 3) \\le 12.\\]However, in the original function $f(x),$ $\\sin x$ cannot take on the value of 1, so the range of $f(x)$ is $\\boxed{[2,12)}.$"
+}

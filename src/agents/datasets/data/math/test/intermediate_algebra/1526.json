@@ -1,0 +1,6 @@
+{
+    "problem": "Find the constant $k$ so that the graphs of the parabolas $y = x^2 + k$ and $x = y^2 + k$ are tangent to each other.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Note that the graphs of $y = x^2 + k$ and $x = y^2 + k$ are reflections of each other in the line $y = x,$ so if they are tangent to each other, then the point of tangency must lie on the line $y = x.$  Furthermore, both graphs will be tangent to the line $y = x.$\n\n[asy]\nunitsize(1 cm);\n\nreal func (real x) {\n  return(x^2 + 1/4);\n}\n\ndraw(graph(func,-2,2));\ndraw(reflect((0,0),(1,1))*graph(func,-2,2));\ndraw((-2,-2)--(4,4),dashed);\n\nlabel(\"$y = x$\", (4,4), NE);\nlabel(\"$y = x^2 + k$\", (2,4 + 1/4), N);\nlabel(\"$x = y^2 + k$\", (4 + 1/4,2), E);\n[/asy]\n\nThis means that the quadratic $x^2 + k = x$ will have a double root.  We can arrange the equation to get\n\\[x^2 - x + k = 0.\\]We want the discriminant of this quadratic to be 0, giving us $1 - 4k = 0,$ or $k = \\boxed{\\frac{1}{4}}.$"
+}

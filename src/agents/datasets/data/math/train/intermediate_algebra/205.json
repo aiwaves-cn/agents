@@ -1,0 +1,6 @@
+{
+    "problem": "Three real numbers $a,b,$ and $c$ satisfy the equations $a+b+c=2$, $ab+ac+bc=-7$ and $abc=-14$.  What is the largest of the three numbers?  Express your answer in simplest radical form.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's, $a$, $b$, and $c$ are the solutions to the cubic equation  \\[x^3 - 2x^2 - 7x + 14 = 0.\\] We group and factor as follows: \\begin{align*}\nx^3 - 2x^2 - 7x + 14 = 0&=(x^3 - 7x) - (2x^2 - 14)\\\\\n&=x(x^2 - 7) - 2(x^2 - 7)\\\\\n&=(x-2)(x^2 - 7).\n\\end{align*} Thus, the three solutions are $x=2$, $x=\\sqrt{7}$, and $x=-\\sqrt{7}$.  The largest of these numbers is $\\boxed{\\sqrt{7}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit of the product of all of the odd integers between 0 and 12?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let $N$ be the product of all odd integers between 0 and 12. Thus, $N=1\\times3\\times5\\times7\\times9\\times11= 5(1\\times3\\times7\\times9\\times11)$. The product of odd integers is odd, and the units digit of 5 times any odd number is $5$. Therefore,  the units digit of $N$ is $\\boxed{5}$."
+}

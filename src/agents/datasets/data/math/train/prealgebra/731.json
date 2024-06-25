@@ -1,0 +1,6 @@
+{
+    "problem": "A $2\\times 3$ rectangle and a $3\\times 4$ rectangle are contained within a square without overlapping at any interior point, and the sides of the square are parallel to the sides of the two given rectangles. What is the smallest possible area of the square?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The side length of the square is at least equal to the sum of the smaller dimensions of the rectangles, which is $2+3=5$.\n\n[asy]\ndraw((0,0)--(5,0)--(5,5)--(0,5)--cycle,dashed);\ndraw((0,0)--(3,0)--(3,2)--(4,2)--(4,5)--(0,5)--cycle,linewidth(0.7));\ndraw((0,2)--(3,2),linewidth(0.7));\nlabel(\"3\",(1.5,0),N);\nlabel(\"2\",(3,1),W);\nlabel(\"3\",(4,3.5),W);\nlabel(\"4\",(2,5),S);\nlabel(\"5\",(5,2.5),E);\n[/asy]\n\nIf the rectangles are placed as shown, it is in fact possible to contain them within a square of side length 5. Thus the smallest possible area is $5^2=\\boxed{25}$."
+}

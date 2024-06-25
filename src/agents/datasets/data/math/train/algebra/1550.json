@@ -1,0 +1,6 @@
+{
+    "problem": "There are constants $\\alpha$ and $\\beta$ such that $\\frac{x-\\alpha}{x+\\beta} = \\frac{x^2-80x+1551}{x^2+57x-2970}$. What is $\\alpha+\\beta$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The numerator $x^2 - 80x + 1551$ factors as $(x - 47)(x - 33)$, and the denominator $x^2 + 57x - 2970$ factors as $(x - 33)(x + 90)$, so \\[\\frac{x^2 - 80x + 1551}{x^2 + 57x - 2970} = \\frac{(x - 47)(x - 33)}{(x - 33)(x + 90)} = \\frac{x - 47}{x + 90}.\\]Then $\\alpha = 47$ and $\\beta = 90$, so $\\alpha + \\beta = 47 + 90 = \\boxed{137}$.\n\nWe can also solve the problem using Vieta's formulas, which states that the sum of the roots of the quadratic $ax^2 + bx + c = 0$ is $-b/a$.  The only way that the right-hand side $\\frac{x^2-80x+1551}{x^2+57x-2970}$ can simplify to the left-hand side $\\frac{x-\\alpha}{x+\\beta}$ is if $x^2-80x+1551$ and $x^2+57x-2970$ have a root in common.  Call this common root $\\gamma$.\n\nThen the roots of $x^2 - 80x + 1551 = 0$ are $\\alpha$ and $\\gamma$, so $\\alpha + \\gamma = 80$.  Similarly, the roots of $x^2 + 57x - 2970 = 0$ are $-\\beta$ and $\\gamma$, so $-\\beta + \\gamma = -57$.  Subtracting these equations, we get $\\alpha + \\beta = 80 - (-57) = \\boxed{137}$."
+}

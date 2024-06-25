@@ -1,0 +1,6 @@
+{
+    "problem": "Find the roots of $x^3-3x^2-10x+24$. Enter your answer as a list of numbers separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By the Rational Root Theorem, any rational root $p/q$ of the given polynomial must have $p$ divide 24 and $q$ divide 1. Therefore, the rational roots of the polynomial are all integers that divide 24.\n\nSo, we check factors of 24 to see if the polynomial has any integer roots. If $x=1$, we have $$1-3-10+24 = -12 <0,$$so 1 is not a root. If $x=2$, we have $$8-3\\cdot 4  - 10\\cdot 2 + 24 = 0.$$So 2 is a root! By the Factor theorem, this means that $x-2$ must be a factor of $x^3-3x^2-10x+24$. Through polynomial division we get that $$x^3-3x^2-10x+24 = (x-2)(x^2-x-12).$$To find the roots of $x^2-x-12$, we can factor it or use the quadratic formula. Factoring, we find that $x^2-x-12 = (x+3)(x-4)$ and hence we have the roots $-3$ and $4$. Therefore our original polynomial has roots $\\boxed{2, -3, 4}$."
+}

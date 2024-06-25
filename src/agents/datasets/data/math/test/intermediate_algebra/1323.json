@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose the function $f(x,y,z)=xyz$ is defined for $x+y+z=7$, $x,y,z \\ge 0$. What is the range of $f$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x,y,z \\ge 0$, we have by the AM-GM inequality that\n\\[\\sqrt[3]{xyz} \\le \\frac{x+y+z}{3} = \\frac{7}{3}.\\]Thus $xyz \\le \\frac{7^3}{3^3}=\\frac{343}{27},$ with equality at $x = y = z = \\frac{7}{3}.$\n\nAlso, $xyz \\ge 0,$ so the range is $\\boxed{\\left[0,\\frac{343}{27}\\right]}$."
+}

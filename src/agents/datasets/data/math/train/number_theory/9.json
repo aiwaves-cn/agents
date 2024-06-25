@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the greatest common divisor of $50$ and $5005$ and the least common multiple of $50$ and $5005$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The prime factorization of 50 is $2\\cdot5^2$ and the prime factorization of 5005 is $5\\cdot7\\cdot11\\cdot13$. The greatest common divisor is 5 and the least common multiple is $2\\cdot5^2\\cdot7\\cdot11\\cdot13=2\\cdot5\\cdot5005=50050$. The sum of the GCD and LCM is $\\boxed{50055}$."
+}

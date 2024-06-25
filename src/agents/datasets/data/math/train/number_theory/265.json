@@ -1,0 +1,6 @@
+{
+    "problem": "When a class of math students lined up for a class picture on Picture Day, they found that when they stood in rows of four there was one person left over. When they formed rows of five students, there were two extra students, and when they lined up in rows of seven, there were three students left over. What is the fewest number of students possible in this class?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The first two pieces of information imply that the number of students is 1 more than a multiple of 4 and 2 more than a multiple of 5. Checking numbers that are 2 more than a multiple of 5, we find that 2, 7, and 12 are not 1 more than a multiple of 4, but 17 does satisfy this condition. Moreover, 17 is also three more than a multiple of 7. Thus $\\boxed{17}$ is the least positive integer satisfying all three conditions.\n\nRemark: By the Chinese Remainder Theorem, the integers satisfying the given conditions are of the form $17 + \\text{lcm}(4,5,7)k = 17+140k$, where $k$ is an integer."
+}

@@ -1,0 +1,56 @@
+{
+    "agents": {
+        "agent_1": {
+            "agent_name": "agent_1",
+            "agent_roles": {
+                "analyse_node": "role_analyse"
+            },
+            "agent_style": "Professional",
+            "agent_description": "I am a professional person.",
+            "LLM_config": {
+                "LLM_type": "OpenAI",
+                "OPENAI_API_KEY": "",
+                "OPENAI_BASE_URL": "",
+                "temperature": 0.3,
+                "model": "gpt-4-turbo-2024-04-09",
+                "SAVE_LOGS": false,
+                "log_path": "logs/oyx"
+            },
+            "toolkit": {},
+            "memory": {
+                "short_term_memory": {},
+                "long_term_memory": {}
+            }
+        },
+        "agent_2": {
+            "agent_name": "agent_2",
+            "agent_roles": {
+                "summary_node": "role_summary"
+            },
+            "agent_style": "Professional",
+            "agent_description": "I am a professional person.",
+            "LLM_config": {
+                "LLM_type": "OpenAI",
+                "OPENAI_API_KEY": "",
+                "OPENAI_BASE_URL": "",
+                "temperature": 0.3,
+                "model": "gpt-4-turbo-2024-04-09",
+                "SAVE_LOGS": false,
+                "log_path": "logs/oyx"
+            },
+            "toolkit": {},
+            "memory": {
+                "short_term_memory": {},
+                "long_term_memory": {}
+            }
+        }
+    },
+    "environment": {
+        "shared_memory": {
+            "short_term_memory": {},
+            "long_term_memory": {}
+        },
+        "shared_toolkit": {},
+        "environment_type": "cooperative"
+    }
+}

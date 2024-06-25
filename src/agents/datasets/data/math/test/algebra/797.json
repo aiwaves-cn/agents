@@ -1,0 +1,6 @@
+{
+    "problem": "The largest and smallest of three consecutive terms in an arithmetic sequence differ by 14. Half of the smallest term is added to each term and the sum of the resulting three numbers is 120. What is the value of the original smallest term?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Call the three terms $a$, $a+d$, and $a+2d$, in increasing order. We are told that the largest and smallest terms differ by 14, so $(a+2d)-a=2d=14$ or $d=7$.\n\nAfter adding half the smallest term to each term, they become $\\frac32a$, $\\frac32a+7$, and $\\frac32a+14$. Their sum is $\\frac92a+21=120$, which gives $\\frac92a=99$ or $a=\\boxed{22}$."
+}

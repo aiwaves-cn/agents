@@ -1,0 +1,6 @@
+{
+    "problem": "While watching a parade I saw some clowns and horses. I counted 30 legs and 10 heads. How many horses did I see in the parade?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Let the number of clowns in the parade be $c$ and the number of horses be $h$. We are looking for the value of $h$. Assuming that each clown has 2 legs and 1 head, and that each horse has 4 legs and 1 head, we can set up the following system of equations:\n\n\\begin{align*}\n2c+4h &= 30 \\\\\nc + h &= 10 \\\\\n\\end{align*}\n\nTo solve for $h$, we need to eliminate $c$ from the equations above. We can rewrite the second equation above as $c=10-h$, and substituting this into the first equation to eliminate $c$ gives $2(10-h)+4h = 30$, or $h=5$. Thus, there are $\\boxed{5}$ horses in the parade."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangular box $P$ is inscribed in a sphere of radius $r$. The surface area of $P$ is 384, and the sum of the lengths of its 12 edges is 112. What is  $r$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the dimensions of $P$ be $x$, $y$, and $z$. The sum of the lengths of the edges of $P$ is $4(x+y+z)$, and the surface area of $P$ is $2xy+2yz+2xz$, so \\[\nx+y+z=28 \\quad\\text{and}\\quad 2xy+2yz+2xz=384.\n\\] Each internal diagonal of $P$ is a diameter of the sphere, so \\begin{align*}\n(2r)^2&=(x^2+y^2+z^2)\\\\\n&=(x+y+z)^2-(2xy+2xz+2yz) \\\\\n&= 28^2-384\\\\& = 400.\n\\end{align*} So $2r = 20$ and  $r=\\boxed{10}$.\n\nNote: There are infinitely many positive solutions of the system $x+y+z=28$, $2xy+2yz+2xz=384$, so there are infinitely many non-congruent boxes meeting the given conditions, but each can be inscribed in a sphere of radius 10."
+}

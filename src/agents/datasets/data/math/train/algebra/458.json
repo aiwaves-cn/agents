@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $f(x)$ is a function defined for all real $x$, and suppose $f$ is invertible (that is, $f^{-1}(x)$ exists for all $x$ in the range of $f$).\n\nIf the graphs of $y=f(x^2)$ and $y=f(x^4)$ are drawn, at how many points do they intersect?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "There is a point of intersection for each $x$ such that $f(x^2)=f(x^4)$. Since $f$ is invertible, this equation is satisfied only if $x^2=x^4$, so we simply count solutions to that equation. We can rearrange the equation $x^2=x^4$ as follows: \\begin{align*}\n0 &= x^4-x^2 \\\\\n0 &= x^2(x^2-1) \\\\\n0 &= x^2(x+1)(x-1)\n\\end{align*}The last factorization shows that the solutions are $x=-1,0,1$. Therefore, the graphs of $y=f(x^2)$ and $y=f(x^4)$ must intersect at exactly $\\boxed{3}$ points."
+}

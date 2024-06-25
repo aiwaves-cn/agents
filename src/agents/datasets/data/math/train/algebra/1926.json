@@ -1,0 +1,6 @@
+{
+    "problem": "Solve \\[\\frac{2x+4}{x^2+4x-5}=\\frac{2-x}{x-1}\\]for $x$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We notice that the denominator on the left factors, giving us \\[\\frac{2x+4}{(x-1)(x+5)}=\\frac{2-x}{x-1}.\\]As long as $x\\neq1$ we are allowed to cancel $x-1$ from the denominators, giving \\[\\frac{2x+4}{x+5}=2-x.\\]Now we can cross-multiply to find \\[2x+4=(2-x)(x+5)=-x^2-3x+10.\\]We simplify this to  \\[x^2+5x-6=0\\]and then factor to  \\[(x-1)(x+6)=0.\\]Notice that since $x-1$ is in the denominator of the original equation, $x=1$ is an extraneous solution.  However $x=\\boxed{-6}$ does solve the original equation."
+}

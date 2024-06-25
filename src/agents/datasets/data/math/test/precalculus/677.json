@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\cos 10^\\circ \\cos 30^\\circ \\cos 50^\\circ \\cos 70^\\circ.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "From the product-to-sum formula, $\\cos 50^\\circ \\cos 70^\\circ = \\frac{1}{2} (\\cos 120^\\circ + \\cos 20^\\circ),$ so\n\\begin{align*}\n\\cos 10^\\circ \\cos 30^\\circ \\cos 50^\\circ \\cos 70^\\circ &= \\cos 10^\\circ \\cdot \\frac{\\sqrt{3}}{2} \\cdot \\frac{1}{2} (\\cos 120^\\circ + \\cos 20^\\circ) \\\\\n&= \\frac{\\sqrt{3}}{4} \\cos 10^\\circ (\\cos 120^\\circ + \\cos 20^\\circ) \\\\\n&= \\frac{\\sqrt{3}}{4} (\\cos 10^\\circ \\cos 120^\\circ + \\cos 10^\\circ \\cos 20^\\circ) \\\\\n&= \\frac{\\sqrt{3}}{4} \\left( -\\frac{1}{2} \\cos 10^\\circ + \\cos 10^\\circ \\cos 20^\\circ \\right).\n\\end{align*}Applying the product-to-sum formula again, we get\n\\begin{align*}\n\\frac{\\sqrt{3}}{4} \\left( -\\frac{1}{2} \\cos 10^\\circ + \\cos 10^\\circ \\cos 20^\\circ \\right) &= \\frac{\\sqrt{3}}{4} \\left( -\\frac{1}{2} \\cos 10^\\circ + \\frac{\\cos 30^\\circ + \\cos 10^\\circ}{2} \\right) \\\\\n&= \\frac{\\sqrt{3}}{8} \\cos 30^\\circ \\\\\n&= \\boxed{\\frac{3}{16}}.\n\\end{align*}"
+}

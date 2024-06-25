@@ -1,0 +1,6 @@
+{
+    "problem": "The graphs of a function $f(x)=3x+b$ and its inverse function $f^{-1}(x)$ intersect at the point $(-3,a)$. Given that $b$ and $a$ are both integers, what is the value of $a$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since the graph of $f$ contains the point $(-3,a)$, we know that  \\[a=f(-3)=3(-3)+b=b-9.\\]Since the graph of $f^{-1}$ also contains this point we know that $f^{-1}(-3)=a$ or $-3=f(a)$.  Therefore \\[-3=f(a)=3a+b.\\]Substitution for $a$ gives \\[-3=3(b-9)+b=4b-27.\\]Therefore $b=\\frac14(27-3)=6$. This forces \\[a=b-9=6-9=\\boxed{-3}.\\]One could also recall that the graph of $f$ is a line and the graph of $f^{-1}$ is that line reflected through $y=x$.  Since the slopes of these lines are not 1, the lines both intersect $y=x$ at a single point and that point is also the point of intersection of the graphs of $f$ and $f^{-1}$.  Therefore the intersection point must be $(-3,-3)$, giving $a=\\boxed{-3}$."
+}

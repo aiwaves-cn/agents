@@ -1,0 +1,6 @@
+{
+    "problem": "In a particular list of three-digit perfect squares, the first perfect square can be turned into each of the others by rearranging its digits. What is the largest number of distinct perfect squares that could be in the list?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We look at all the possible three-digit perfect squares: 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961. We can find a list with three such perfect squares: 169, 196, 961. However, we can't find such a list with four squares. Therefore, the maximum possible length of such a list is $\\boxed{3}$."
+}

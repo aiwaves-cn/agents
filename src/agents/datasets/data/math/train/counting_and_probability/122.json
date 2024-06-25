@@ -1,0 +1,6 @@
+{
+    "problem": "The Screamers are coached by Coach Yellsalot.  The Screamers have 12 players, but two of them, Bob and Yogi, refuse to play together.  How many starting lineups (of 5 players) can Coach Yellsalot make, if the starting lineup can't contain both Bob and Yogi?  (The order of the 5 players in the lineup does not matter; that is, two lineups are the same if they consist of the same 5 players.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are 3 different cases for the starting lineup.\n\nCase 1: Bob starts (and Yogi doesn't). In this case, the coach must choose 4 more players from the 10 remaining players (remember that Yogi won't play, so there are only 10 players left to select from).  Thus there are $\\binom{10}{4}$ lineups that the coach can choose.\n\nCase 2: Yogi starts (and Bob doesn't). As in Case 1, the coach must choose 4 more players from the 10 remaining players.  So there are $\\binom{10}{4}$ lineups in this case.\n\nCase 3: Neither Bob nor Yogi starts. In this case, the coach must choose all 5 players in the lineup from the 10 remaining players.  Hence there are $\\binom{10}{5}$ lineups in this case. To get the total number of starting lineups, we add the number of lineups in each of the cases: $$ \\binom{10}{4} + \\binom{10}{4} + \\binom{10}{5} = 210 + 210 + 252 = \\boxed{672}. $$"
+}

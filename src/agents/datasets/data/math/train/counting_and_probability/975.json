@@ -1,0 +1,6 @@
+{
+    "problem": "The hexagon with the R is colored red.  Each hexagon is colored either red, yellow or green, such that no two hexagons with a common side are  colored the same color.  In how many  different ways can the figure be colored?\n\n[asy]\npath a=(0,0)--(10,0)--(15,8.7)--(10,17.3)--(0,17.3)--(-5,8.7)--cycle;\ndraw(a);\ndraw(shift((15,8.7))*a);\ndraw(shift((15,-8.7))*a);\ndraw(shift((30,17.3))*a);\ndraw(shift((30,0))*a);\ndraw(shift((30,-17.3))*a);\ndraw(shift((45,26))*a);\ndraw(shift((45,8.7))*a);\ndraw(shift((45,-8.7))*a);\ndraw(shift((60,17.3))*a);\ndraw(shift((60,0))*a);\ndraw(shift((60,-17.3))*a);\ndraw(shift((75,8.7))*a);\ndraw(shift((75,-8.7))*a);\nlabel(\"$R$\",(5,10),S);\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The hexagons in the second column to the left must be yellow and green, but either color can be on top: 2 possibilities. With either possibility, the rest of the figure is easily colored in, with the color of every other hexagon being forced.  (ex. In the third column, the middle hexagon must be red, and the top and bottom must be the opposite of the top and bottom in the second column)  Thus, there are only $\\boxed{2}$ possibilities."
+}

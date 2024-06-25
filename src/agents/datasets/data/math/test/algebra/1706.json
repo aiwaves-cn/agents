@@ -1,0 +1,6 @@
+{
+    "problem": "If $d-6c=4$ and $2d-9c=20$, find the value of $\\frac{d}{c}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We begin by multiplying the first equation by 2, giving us a system of two equations \\begin{align*} 2d-12c&=8\n\\\\ 2d-9c&=20\n\\end{align*}From here, we can subtract the second equation from the first. This gives us $(2d-12c)-(2d-9c)=8-20$, which simplifies to $-3c=-12$ or $c=4$. Since we now know the value of $c$, we can plug this back into the first equation to solve for $d$. This gives us $2d-12(4)=8$, or $2d=56$ and $d=28$. Since $d=28$ and $c=4$, $\\frac{d}{c}=\\frac{28}{4}=\\boxed{7}$."
+}

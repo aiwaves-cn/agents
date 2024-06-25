@@ -1,0 +1,6 @@
+{
+    "problem": "Given $\\cos \\theta = \\frac{4}{7},$ find\n\\[\\frac{1}{1 + \\sin \\theta} + \\frac{1}{1 - \\sin \\theta}.\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\frac{1}{1 + \\sin \\theta} + \\frac{1}{1 - \\sin \\theta} &= \\frac{(1 - \\sin \\theta) + (1 + \\sin \\theta)}{(1 + \\sin \\theta)(1 - \\sin \\theta)} \\\\\n&= \\frac{2}{1 - \\sin^2 \\theta} \\\\\n&= \\frac{2}{\\cos^2 \\theta} \\\\\n&= \\frac{2}{(4/7)^2} = \\boxed{\\frac{49}{8}}.\n\\end{align*}"
+}

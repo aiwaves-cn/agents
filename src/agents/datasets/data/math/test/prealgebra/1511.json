@@ -1,0 +1,6 @@
+{
+    "problem": "All 50 states as well as the District of Columbia and Puerto Rico, have distinct two-letter postal abbreviations. If a two-letter sequence of letters (such as CO or EE) is chosen at random, what is the probability that it is a postal abbreviation for one of the 50 states, the District of Columbia, or Puerto Rico? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are $26\\cdot 26$ possible two-letter sequences of letters, since we have 26 choices for the first and then 26 choices for the second.  But only 52 of these possibilities are valid, so our answer is $\\frac{52}{26\\cdot 26} =\\boxed{ \\frac{1}{13}}$."
+}

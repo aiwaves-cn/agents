@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product of all real values of $y$ such that  $|{-2y}|\\cdot\\left|{-\\dfrac{y}{2}}\\right| = 36$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have $|{-2y}|\\cdot\\left|{-\\dfrac{y}{2}}\\right| = \\left|\\dfrac{2y^2}{2}\\right| = |y^2|$.  Because $y^2 > 0$, we have $|y^2| = y^2$, so our original equation becomes $y^2 = 36$.  Therefore, we have $y=6$ or $y=-6$, and the product of these is $\\boxed{-36}$."
+}

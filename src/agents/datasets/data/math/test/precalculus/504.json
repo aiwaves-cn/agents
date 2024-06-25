@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix $\\mathbf{P}$ such that for any vector $\\mathbf{v},$ $\\mathbf{P} \\mathbf{v}$ is the projection of $\\mathbf{v}$ onto the $yz$-plane.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The projection $\\mathbf{P}$ takes $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$ to $\\begin{pmatrix} 0 \\\\ y \\\\ z \\end{pmatrix}.$\n\n[asy]\nimport three;\n\nsize(180);\ncurrentprojection = perspective(6,3,2);\n\ntriple I = (1,0,0), J = (0,1,0), K = (0,0,1), O = (0,0,0);\ntriple V = (2.2,2.5,2.5), W = (0,2.5,2.5);\n\ndraw(V--W,dashed);\ndraw(O--V, red, Arrow3(6));\ndraw(O--W,blue, Arrow3(6));\ndraw(O--3*I, Arrow3(6));\ndraw(O--3*J, Arrow3(6));\ndraw(O--3*K, Arrow3(6));\n\nlabel(\"$x$\", 3.2*I);\nlabel(\"$y$\", 3.2*J);\nlabel(\"$z$\", 3.2*K);\nlabel(\"$\\mathbf{v}$\", V, NW);\nlabel(\"$\\mathbf{w}$\", W, NE);\n[/asy]\n\nThus,\n\\[\\mathbf{P} \\mathbf{i} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{k} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix},\\]so\n\\[\\mathbf{P} = \\boxed{\\begin{pmatrix} 0 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}}.\\]"
+}

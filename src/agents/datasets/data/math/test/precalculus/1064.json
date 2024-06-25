@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $\\cos V = \\frac{2}{3}$ in the diagram below.  What is $TV$?\n\n\n\n[asy]\npair T,U,V;\nV = (0,0);\nT = (0,16);\nU = (17.89,16);\ndraw(V--T--U--V);\ndraw(rightanglemark(V,T,U,23));\nlabel(\"$V$\",V,SW);\nlabel(\"$U$\",U,NE);\nlabel(\"$T$\",T,NW);\nlabel(\"$24$\",(U-V)/2,SE);\n[/asy]",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Since $\\cos V = \\frac{2}{3}$ and $\\cos V = \\frac{TV}{UV}=\\frac{TV}{24}$, we have $\\frac{TV}{24} = \\frac{2}{3}$, so $TV = \\frac{2}{3} \\cdot 24 = \\boxed{16}$."
+}

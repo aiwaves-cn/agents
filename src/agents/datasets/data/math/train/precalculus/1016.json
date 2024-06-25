@@ -1,0 +1,6 @@
+{
+    "problem": "A line is expressed in the form\n\\[\\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 11 \\end{pmatrix} \\right) = 0.\\]The equation of the line can be expressed in the form $y = mx + b.$  Enter the ordered pair $(m,b).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Expanding, we get\n\\[\\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 11 \\end{pmatrix} \\right) = \\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\cdot \\begin{pmatrix} x - 1 \\\\ y - 11 \\end{pmatrix} = (-2)(x - 1) + (-5)(y - 11) = 0.\\]Solving for $y,$ we find\n\\[y = -\\frac{2}{5} x + \\frac{57}{5}.\\]Thus, $(m,b) = \\boxed{\\left( -\\frac{2}{5}, \\frac{57}{5} \\right)}.$"
+}

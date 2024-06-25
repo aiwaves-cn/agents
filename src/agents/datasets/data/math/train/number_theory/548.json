@@ -1,0 +1,6 @@
+{
+    "problem": "In 2010, the sum of the year's digits is $3$.  What is the first year after 2010 in which the sum of the digits is 3 again?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "The year 3000 has a digit-sum of 3, so we look for possibilities before then. If the first digit is 2, then the remaining digits must be 0, 0, and 1. So the three years between 2000 and 3000 with a digit-sum of 3 are 2001, 2010, and 2100. Of these, only $\\boxed{2100}$ is in the future."
+}

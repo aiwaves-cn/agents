@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\tan x+\\tan y=4$ and $\\cot x+\\cot y=5$, compute $\\tan (x+y)$.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have\n\\[\\cot x+\\cot y= \\frac{1}{\\tan x} + \\frac{1}{\\tan y} = \\frac{\\tan x+\\tan y}{\\tan x\\tan y},\\]so $\\frac{4}{\\tan x \\tan y} = 5,$ or $\\tan x\\tan y=\\frac45$.\n\nThus, by the tangent addition formula,\n\\[\\tan (x+y)=\\frac{\\tan x+\\tan y}{1-\\tan x\\tan y}=\\boxed{20}.\\]"
+}

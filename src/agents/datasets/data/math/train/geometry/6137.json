@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangular box has width $12$ inches, length $16$ inches, and height $\\frac{m}{n}$ inches, where $m$ and $n$ are relatively prime positive integers. Three faces of the box meet at a corner of the box. The center points of those three faces are the vertices of a triangle with an area of $30$ square inches. Find $m+n$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the height of the box be $x$.\nAfter using the Pythagorean Theorem three times, we can quickly see that the sides of the triangle are 10, $\\sqrt{\\left(\\frac{x}{2}\\right)^2 + 64}$, and $\\sqrt{\\left(\\frac{x}{2}\\right)^2 + 36}$. Since the area of the triangle is $30$, the altitude of the triangle from the base with length $10$ is $6$.\nConsidering the two triangles created by the altitude, we use the Pythagorean theorem twice to find the lengths of the two line segments that make up the base of $10$.\nWe find:\\[10 = \\sqrt{\\left(28+x^2/4\\right)}+x/2\\]\nSolving for $x$ gives us $x=\\frac{36}{5}$. Since this fraction is simplified:\\[m+n=\\boxed{41}\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In rectangle $ABCD$, angle $C$ is trisected by $\\overline{CF}$ and $\\overline{CE}$, where $E$ is on $\\overline{AB}$, $F$ is on $\\overline{AD}$, $BE=6$, and $AF=2$. Find the area of $ABCD$.\n\n[asy]\nimport olympiad; import geometry; size(150); defaultpen(linewidth(0.8)); dotfactor=4;\nreal length = 2 * (6*sqrt(3) - 2), width = 6*sqrt(3);\ndraw(origin--(length,0)--(length,width)--(0,width)--cycle);\ndraw((length,width)--(0,2)^^(length,width)--(length - 6,0));\ndot(\"$A$\",origin,SW); dot(\"$B$\",(length,0),SE); dot(\"$C$\",(length,width),NE); dot(\"$D$\",(0,width),NW); dot(\"$F$\",(0,2),W); dot(\"$E$\",(length - 6,0),S);\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "From $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle $CEB$, we have $BC=6\\sqrt{3}$. Therefore, $FD=AD-AF=6\\sqrt{3}-2$. In the $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle $CFD$, $CD=FD\\sqrt{3}=18-2\\sqrt{3}$. The area of rectangle $ABCD$ is $$(BC)(CD)=\\left(6\\sqrt{3}\\right)\\left(18-2\\sqrt{3}\\right)=\n\\boxed{108\\sqrt{3}-36}.$$"
+}

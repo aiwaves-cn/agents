@@ -1,0 +1,6 @@
+{
+    "problem": "The Cookie Monster encounters a cookie whose boundary is the equation $x^2+y^2 - 6 = 6x + 2 y$ and is very confused. He wants to know if this cookie is a lunch-sized cookie or a snack-sized cookie. What is the radius of this cookie?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The equation $x^2+y^2 - 6=6x+2y$ can be rewritten as $x^2-6x+y^2-2y=6$. Completing the square, this can further be rewritten as $(x-3)^2-9+(y-1)^2-1=6$. Moving the constants to the right side of the equation, this is $(x-3)^2+(y-1)^2=16$, which is the equation of a circle with center $(3,1)$ and radius $\\boxed{4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ is graphed below.  Each small box has width and height 1.\n\n[asy]\nsize(150);\nimport TrigMacros;\nrr_cartesian_axes(-1,10,-1,10);\n\ndot((1,7),red+5bp);\ndot((2,4),red+5bp);\ndot((3,1),red+5bp);\ndot((4,8),red+5bp);\ndot((5,5),red+5bp);\ndot((6,2),red+5bp);\ndot((7,9),red+5bp);\ndot((8,6),red+5bp);\ndot((9,3),red+5bp);\n[/asy]\nWhat is the value of $f(f(1))+f(f(2))+f(f(3))+\\cdots+f(f(8))+f(f(9))$ ?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We note that the domain and the range of $f(x)$ are the same set, $\\{1,2,3,4,5,6,7,8,9\\}$, and each point in the range is $f(x)$ for exactly one $x$ in the domain. (Thus, $f(x)$ can be said to ${\\it permute}$ the integers 1 through 9.)\n\nSince the list $f(1),f(2),f(3),\\ldots,f(9)$ contains each number from 1 through 9 exactly once, the same must also be true when we apply $f$ again to each number in this list. Thus, the list $f(f(1)),f(f(2)),f(f(3)),\\ldots,f(f(9))$ also contains each number from 1 through 9 exactly once, and $$f(f(1))+f(f(2))+f(f(3))+\\cdots+f(f(9)) = 1+2+3+\\cdots+9 = \\boxed{45}.$$"
+}

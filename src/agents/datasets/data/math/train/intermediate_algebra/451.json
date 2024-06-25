@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\displaystyle \\sum_{n=2}^\\infty \\sum_{k=1}^{n-1} \\frac{k}{2^{n+k}}$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The sum is taken over all positive integers $n$ and $k$ such that $k \\le n - 1,$ or $n \\ge k + 1.$  Thus, we can change the order of summation:\n\\begin{align*}\n\\sum_{n=2}^\\infty \\sum_{k=1}^{n-1} \\frac{k}{2^{n+k}} &= \\sum_{k = 1}^\\infty \\sum_{n = k + 1}^\\infty \\frac{k}{2^{n + k}} \\\\\n&= \\sum_{k=1}^\\infty \\frac{k}{2^k} \\sum_{n=k+1}^\\infty \\frac{1}{2^n} \\\\\n&= \\sum_{k = 1}^\\infty \\frac{k}{2^k} \\left( \\frac{1}{2^{k + 1}} + \\frac{1}{2^{k + 2}} + \\dotsb \\right) \\\\\n&= \\sum_{k = 1}^\\infty \\frac{k}{2^k} \\cdot \\frac{1}{2^k} \\\\\n&= \\sum_{k=1}^\\infty \\frac{k}{4^k}.\n\\end{align*}Let\n\\[S = \\sum_{k = 1}^\\infty \\frac{k}{4^k} = \\frac{1}{4} + \\frac{2}{4^2} + \\frac{3}{4^3} + \\dotsb.\\]Then\n\\[4S = 1 + \\frac{2}{4} + \\frac{3}{4^2} + \\frac{4}{3^3} + \\dotsb.\\]Subtracting these equations, we get\n\\[3S = 1 + \\frac{1}{4} + \\frac{1}{4^2} + \\dotsb = \\frac{4}{3},\\]so $S = \\boxed{\\frac{4}{9}}.$"
+}

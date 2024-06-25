@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ has vertices at $A(5,8)$, $B(3,-2)$, and $C(6,1)$. The point $D$ with coordinates $(m,n)$ is chosen inside the triangle so that the three small triangles $ABD$, $ACD$ and $BCD$ all have equal areas. What is the value of $10m + n$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "If $D$ is the centroid of triangle $ABC$, then $ABD$, $ACD$, and $BCD$ would all have equal areas (to see this, remember that the medians of a triangle divide the triangle into 6 equal areas). There is only one point with this property (if we move around $D$, the area of one of the small triangles will increase and will no longer be $1/3$ of the total area). So $D$ must be the centroid of triangle $ABC$. The $x$ and $y$ coordinates of the centroid are found by averaging the $x$ and $y$ coordinates, respectively, of the vertices, so $(m,n) = \\left( \\frac{5+3+6}{3}, \\frac{8+(-2)+1}{3} \\right) = \\left( \\frac{14}{3}, \\frac{7}{3} \\right)$, and $10m + n = 10 \\left(\\frac{14}{3}\\right) + \\frac{7}{3} = \\boxed{49}$."
+}

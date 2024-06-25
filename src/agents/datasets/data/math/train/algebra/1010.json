@@ -1,0 +1,6 @@
+{
+    "problem": "The sequence of integers in the row of squares and in each of the two columns of squares form three distinct arithmetic sequences. What is the value of $N$?\n\n[asy]\nunitsize(0.35inch);\ndraw((0,0)--(7,0)--(7,1)--(0,1)--cycle);\ndraw((1,0)--(1,1));\ndraw((2,0)--(2,1));\ndraw((3,0)--(3,1));\ndraw((4,0)--(4,1));\ndraw((5,0)--(5,1));\ndraw((6,0)--(6,1));\ndraw((6,2)--(7,2)--(7,-4)--(6,-4)--cycle);\ndraw((6,-1)--(7,-1));\ndraw((6,-2)--(7,-2));\ndraw((6,-3)--(7,-3));\ndraw((3,0)--(4,0)--(4,-3)--(3,-3)--cycle);\ndraw((3,-1)--(4,-1));\ndraw((3,-2)--(4,-2));\nlabel(\"21\",(0.5,0.8),S);\nlabel(\"14\",(3.5,-1.2),S);\nlabel(\"18\",(3.5,-2.2),S);\nlabel(\"$N$\",(6.5,1.8),S);\nlabel(\"-17\",(6.5,-3.2),S);\n[/asy]",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Since $18 - 14 = 4$, the common difference in the first column of squares is 4, so the number above 14 is $14 - 4 = 10$, and the number above 10 is $10 - 4 = 6$.  This is also the fourth number in the row, so the common difference in the row is $(6 - 21)/3 = -5$.\n\nThen the seventh (and last) number in the row is $21 - 5 \\cdot 6 = -9$.  In the second column, the common difference is $[(-17) - (-9)]/4 = -2$, so $N = -9 - (-2) = \\boxed{-7}$."
+}

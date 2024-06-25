@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $x$ and $y$ are real numbers satisfying  \\begin{align*}\n4y - 4x^2 &= 1 \\\\\n4x - 4y^2 &= 1.\n\\end{align*} What is $\\dfrac{1}{x^3 + y^3}$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The equations are equivalent to  \\begin{align*}\n4x^2 - 4y + 1 &= 0, \\\\\n4y^2 - 4x + 1 &= 0.\n\\end{align*} Summing these equations gives $$4x^2 - 4y + 1 + 4y^2 - 4x + 1 =0,$$ or $$(4x^2 - 4x + 1) + (4y^2 - 4y + 1) = 0.$$ Factoring the squares of binomials gives $$(2x - 1)^2 + (2y-1)^2 = 0.$$ Since squares are always non-negative, it follows that $$2x - 1 = 2y-1 = 0,$$ so $x = y = \\frac 12$. The desired answer is $\\frac{1}{\\frac 18 + \\frac 18} = \\boxed{4}$."
+}

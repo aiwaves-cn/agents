@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of four two-digit numbers is 221. None of the eight digits is $0$ and no two of them are the same. Which of the digits $1$ through $9$ does not appear in one of the four two-digit numbers?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The sum of the digits 1 through 9 is 45, so the sum of the eight digits is between 36 and 44, inclusive. The sum of the four units digits is between $1 + 2 + 3 + 4 = 10$ and $6 + 7 + 8 + 9 =30$, inclusive, and also ends in 1. Therefore the sum of the units digits is either 11 or 21. If the sum of the units digits is 11, then the sum of the tens digits is 21, so the sum of all eight digits is 32, an impossibility. If the sum of the units digits is 21, then the sum of the tens digits is 20, so the sum of all eight digits is 41. Thus the missing digit is $45 - 41 = \\boxed{4}$. Note that the numbers $13, 25, 86,$ and $97$ sum to $221$."
+}

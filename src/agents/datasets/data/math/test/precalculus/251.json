@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors such that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\begin{pmatrix} 7 \\\\ -2 \\end{pmatrix}.\\]Find\n\\[\\operatorname{proj}_{\\mathbf{w}} \\begin{pmatrix} 7 \\\\ -2 \\end{pmatrix}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Since $\\begin{pmatrix} 7 \\\\ -2 \\end{pmatrix}$ is the projection of $\\mathbf{v}$ onto $\\mathbf{w},$ $\\begin{pmatrix} 7 \\\\ -2 \\end{pmatrix}$ is a scalar multiple of $\\mathbf{w}.$  Therefore,\n\\[\\operatorname{proj}_{\\mathbf{w}} \\begin{pmatrix} 7 \\\\ -2 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 7 \\\\ -2 \\end{pmatrix}}.\\]"
+}

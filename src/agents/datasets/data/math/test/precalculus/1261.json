@@ -1,0 +1,6 @@
+{
+    "problem": "Find the intersection point of the lines defined by\n\\[\\begin{pmatrix} 4 \\\\ -7 \\\\ 0 \\end{pmatrix} + t \\begin{pmatrix} -3 \\\\ 3 \\\\ 1 \\end{pmatrix}\\]and\n\\[\\begin{pmatrix} -2 \\\\ -5 \\\\ 4/3 \\end{pmatrix} + u \\begin{pmatrix} 2 \\\\ 4 \\\\ 1/3 \\end{pmatrix}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Setting the coordinates to be equal, we obtain the system of equations\n\\begin{align*}\n4 - 3t &= -2 + 2u, \\\\\n-7 + 3t &= -5 + 4u, \\\\\nt &= \\frac{4}{3} + \\frac{1}{3} u.\n\\end{align*}Solving this system, we find $t = \\frac{14}{9}$ and $u = \\frac{2}{3}.$  Hence, the point of intersection is $\\boxed{\\left( -\\frac{2}{3}, -\\frac{7}{3}, \\frac{14}{9} \\right)}.$"
+}

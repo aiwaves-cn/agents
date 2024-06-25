@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be a region in the plane with area 10.  When we apply the matrix\n\\[\\begin{pmatrix} 2 & 1 \\\\ 7 & -3 \\end{pmatrix}\\]to $S,$ we obtain the region $S'.$  Find the area of $S'.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Note that\n\\[\\begin{vmatrix} 2 & 1 \\\\ 7 & -3 \\end{vmatrix} = (2)(-3) - (1)(7) = -13,\\]so the matrix scales the area of any region by a factor of $|-13| = 13.$  In particular, the area of $S'$ is $13 \\cdot 10 = \\boxed{130}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $$88134 + 88135 + 88136 + 88137 + 88138 + 88139$$is divided by 9.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Reducing each number modulo 9 first, we get \\begin{align*}\n88134 + 88135 + 88136& + 88137 + 88138 + 88139\\\\\n&\\equiv 6 + 7 + 8 + 0 + 1 + 2 \\\\\n&\\equiv 24 \\\\\n&\\equiv \\boxed{6} \\pmod{9}.\n\\end{align*}"
+}

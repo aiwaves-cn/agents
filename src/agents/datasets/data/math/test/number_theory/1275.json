@@ -1,0 +1,6 @@
+{
+    "problem": "When $\\frac{1}{2^{10}}$ is written as a decimal, how many digits are to the right of the decimal point?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Multiply numerator and denominator of $\\dfrac{1}{2^{10}}$ by $5^{10}$ to see that $\\dfrac{1}{2^{10}}$ is equal to $\\frac{5^{10}}{10^{10}}$. This implies that the decimal representation of $\\dfrac{1}{2^{10}}$ is obtained by moving the decimal point ten places to the left in the decimal representation of $5^{10}$.  Therefore, there are $\\boxed{10}$ digits to the right of the decimal point in $\\dfrac{1}{2^{10}}$."
+}

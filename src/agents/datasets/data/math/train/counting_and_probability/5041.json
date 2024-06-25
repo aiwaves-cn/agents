@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of points whose coordinates $x,$ $y,$ and $z$ are integers that satisfy $0\\le x\\le2,$ $0\\le y\\le3,$ and $0\\le z\\le4.$ Two distinct points are randomly chosen from $S.$ The probability that the midpoint of the segment they determine also belongs to $S$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The distance between the $x$, $y$, and $z$ coordinates must be even so that the midpoint can have integer coordinates. Therefore,\nFor $x$, we have the possibilities $(0,0)$, $(1,1)$, $(2,2)$, $(0,2)$, and $(2,0)$, $5$ possibilities.\nFor $y$, we have the possibilities $(0,0)$, $(1,1)$, $(2,2)$, $(3,3)$, $(0,2)$, $(2,0)$, $(1,3)$, and $(3,1)$, $8$ possibilities.\nFor $z$, we have the possibilities $(0,0)$, $(1,1)$, $(2,2)$, $(3,3)$, $(4,4)$, $(0,2)$, $(0,4)$, $(2,0)$, $(4,0)$, $(2,4)$, $(4,2)$, $(1,3)$, and $(3,1)$, $13$ possibilities.\nHowever, we have $3\\cdot 4\\cdot 5 = 60$ cases where we have simply taken the same point twice, so we subtract those. Therefore, our answer is $\\frac {5\\cdot 8\\cdot 13 - 60}{60\\cdot 59} = \\frac {23}{177}\\Longrightarrow m+n = \\boxed{200}$."
+}

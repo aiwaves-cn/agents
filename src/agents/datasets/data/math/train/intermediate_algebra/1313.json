@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[x^2 + xy + y^2\\]over all real numbers $x$ and $y.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We can complete the square in $x,$ to get\n\\[x^2 + xy + y^2 = \\left( x + \\frac{y}{2} \\right)^2 + \\frac{3y^2}{4}.\\]We see that the minimum value is $\\boxed{0},$ which occurs at $x = y = 0.$"
+}

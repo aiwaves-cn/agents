@@ -1,0 +1,6 @@
+{
+    "problem": "One caterer charges a basic fee of $\\$100$ plus $\\$15$ per person. A second caterer charges a basic fee of $\\$200$ plus $\\$12$ per person. What is the least number of people for which the second caterer is cheaper?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "If $x$ is the number of people, the first caterer charges $100+15x$ dollars, while the second charges $200+12x$ dollars.  We want $$100+15x>200+12x.$$ Subtracting $100$ from both sides gives $$15x > 100+12x,$$ then subtracting $12x$ from both sides gives $$3x>100.$$ Finally, dividing both sides by $3$ gives $x=\\frac{100}{3}=33\\frac{1}{3}$, so the smallest number of people is $\\boxed{34}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least positive multiple of 25 for which the product of its digits is also a positive multiple of 25?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Every multiple of 25 ends in 00, 25, 50, or 75.  Since we want the product of the digits to be a positive multiple of 25, the final two digits must be either 25 or 75.\n\nA nonzero product of digits is a multiple of 25 exactly when two or more of the digits is are equal to 5. If a number ends in 75 and the product of its digits is a multiple of 25, then replacing 75 by 25 in that number will also give a smaller number whose product of digits is a multiple of 25.  Therefore we are looking for a number whose final two digits are 25 and for which 5 is one of the other digits.\n\nSince 525 is the smallest such number, the answer must be $\\boxed{525}$."
+}

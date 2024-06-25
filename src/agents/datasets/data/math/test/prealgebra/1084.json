@@ -1,0 +1,6 @@
+{
+    "problem": "A baker bakes a batch of muffins and splits the batch evenly onto six different trays.  She then adds five croissants to each tray. If each tray now contains at least twenty baked goods, what is the least possible number of muffins in the baker's original batch?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Let $m$ represent the total number of muffins in the original batch.  Hence, each tray contains $\\frac{m}{6}$ muffins and $5$ croissants, for a total of $\\frac{m}{6}+5$ baked goods.  We know that this value is at least $20$, hence we have the inequality \\[ \\frac{m}{6}+5 \\ge 20.\\]To solve, we first subtract $5$ from both sides of the inequality, yielding $\\frac{m}{6} \\ge 15$, and then multiply both sides by $6$ to get $m \\ge 90.$\n\nTherefore the original batch contained at least $\\boxed{90}$ muffins."
+}

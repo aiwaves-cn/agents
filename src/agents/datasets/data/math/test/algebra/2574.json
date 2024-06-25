@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all values of $x$ such that $\\log_{3^2}(x-1)^2 = -1.$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Writing the equation in exponential form gives us $(x-1)^2 = (3^2)^{-1} = 3^{-2} = \\frac{1}{9}$. Taking the square root of both sides of the equation $(x-1)^2 = \\frac{1}{9}$ gives $x-1 = \\pm \\frac{1}{3}$. Solving $x-1 = \\pm \\frac{1}{3}$ gives us $x = \\frac{4}{3} \\;\\text{and}\\; \\frac{2}{3}.$ Therefore, our sum is $\\frac{4}{3} + \\frac{2}{3} = \\boxed{2}.$"
+}

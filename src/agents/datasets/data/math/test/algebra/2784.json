@@ -1,0 +1,6 @@
+{
+    "problem": "Express $0.1\\overline{7}$ as a common fraction.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have: $$0.1\\overline{7} = \\frac{1}{10}+\\frac{7}{10^2}+\\frac{7}{10^3}+\\frac{7}{10^4}+\\cdots.$$After the first term, the series on the right is an infinite geometric series with first term $7/10^2$ and common ratio $1/10$. So we have: $$0.1\\overline{7} = \\frac{1}{10}+\\frac{\\frac{7}{10^2}}{1-\\frac{1}{10}} = \\frac{1}{10}+\\frac{\\frac{7}{10^2}}{\\frac{9}{10}}=\\frac{1}{10}+\\frac{7}{90}=\\frac{9+7}{90} = \\frac{16}{90}=\\boxed{\\frac{8}{45}}.$$"
+}

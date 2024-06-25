@@ -1,0 +1,6 @@
+{
+    "problem": "The stem and leaf plot represents the heights, in inches, of the players on the Spring Vale Middle School girls' basketball team. What is the mean height of the players on the team? (Note: $5|3$ represents 53 inches.)\n\nHeight of the Players on the Basketball Team (inches)\n\n$4|9$\n\n$5|2\\;3\\;5\\;8\\;8\\;9$\n\n$6|0\\;1\\;1\\;2\\;6\\;8\\;9\\;9$",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Our tasks are to sum the heights and count the number of heights.  There is 1 height in the 40s, 6 heights in the 50s, and 8 heights in the 60s.  The sum of these $1+6+8=15$ heights is $1\\times40+6\\times50+8\\times60$ plus the sum of all the units digits listed in the stem-and-leaf plot.  The sum is 900 inches and the average height is $900\\text{ in.}/15=\\boxed{60}$ inches."
+}

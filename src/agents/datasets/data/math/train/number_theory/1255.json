@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $a$ is an odd multiple of $1183$, find the greatest common divisor of $2a^2+29a+65$ and $a+13$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We can use the Euclidean Algorithm. \\begin{align*}\n&\\text{gcd}\\,(2a^2+29a+65,a+13)\\\\\n&\\qquad=\\text{gcd}\\,(2a^2+29a+65-(a+13)(2a+3),a+13)\\\\\n&\\qquad=\\text{gcd}\\,(2a^2+29a+65-(2a^2+29a+39),a+13)\\\\\n&\\qquad=\\text{gcd}\\,(26,a+13).\n\\end{align*}Since $a$ is an odd multiple of $1183$, which is an odd multiple of $13$, $a+13$ must be an even multiple of $13$. This means that $26$ is a divisor  of $a+13$, so the greatest common divisor is $\\boxed{26}$."
+}

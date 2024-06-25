@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 9 people sit around a round table?  (Two seatings are considered the same if one is a rotation of the other.)",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are $9!$ ways to arrange 9 people in a line, however there are 9 identical rotations for each arrangement, so we divide by 9 to get $\\dfrac{9!}{9} = 8! = \\boxed{40,\\!320}$."
+}

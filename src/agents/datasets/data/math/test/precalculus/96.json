@@ -1,0 +1,6 @@
+{
+    "problem": "The following line is parameterized, so that its direction vector is of the form $\\begin{pmatrix} -7 \\\\ b \\end{pmatrix}.$  Find $b.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, L, R;\nint i, n;\n\nfor (i = -8; i <= 8; ++i) {\n  draw((i,-8)--(i,8),gray(0.7));\n  draw((-8,i)--(8,i),gray(0.7));\n}\n\ndraw((-8,0)--(8,0),Arrows(6));\ndraw((0,-8)--(0,8),Arrows(6));\n\nA = (-5,4);\nB = (-1,3);\nL = extension(A, B, (-8,0), (-8,1));\nR = extension(A, B, (8,0), (8,1));\n\ndraw(L--R, red);\n\nlabel(\"$x$\", (8,0), E);\nlabel(\"$y$\", (0,8), N);\n[/asy]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The line passes through $\\begin{pmatrix} -5 \\\\ 4 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix},$ so its direction vector is proportional to\n\\[\\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix} - \\begin{pmatrix} -5 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}.\\]To get an $x$-coordinate of $-7,$ we can multiply this vector by the scalar $-\\frac{7}{4}.$  This gives us\n\\[-\\frac{7}{4} \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ 7/4 \\end{pmatrix}.\\]Therefore, $b = \\boxed{\\frac{7}{4}}.$"
+}

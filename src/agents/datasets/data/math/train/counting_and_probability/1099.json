@@ -1,0 +1,6 @@
+{
+    "problem": "I want to choose a license plate which is 3 characters long, where the first character is a letter, the last character is a digit, and the middle is either a letter or a digit. I also want there to be two characters on my license plate which are the same. How many ways are there for me to choose a license plate with these restrictions?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 26 ways to choose the first letter and 10 ways to choose the last digit. Then, since the middle digit must be the same as either the first letter or the last digit, there are 2 ways to choose the middle digit. Therefore, there are a total of $26\\cdot10\\cdot2=\\boxed{520}$ possible license plates I can choose."
+}

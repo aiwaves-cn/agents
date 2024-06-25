@@ -1,0 +1,6 @@
+{
+    "problem": "Below is the graph of $y = a \\sin (bx + c)$ for some positive constants $a,$ $b,$ and $c.$  Find $b.$\n\n[asy]import TrigMacros;\n\nsize(300);\n\nreal f(real x)\n{\n\treturn 2*sin(4*x + pi/2);\n}\n\ndraw(graph(f,-pi,pi,n=700,join=operator ..),red);\ntrig_axes(-pi,pi,-3,3,pi/2,1);\nlayer();\nrm_trig_labels(-2,2, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\n[/asy]",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "The period of the graph is $\\frac{\\pi}{2}.$  The period of $y = a \\sin (bx + c)$ is $\\frac{2 \\pi}{b},$ so $b = \\boxed{4}.$"
+}

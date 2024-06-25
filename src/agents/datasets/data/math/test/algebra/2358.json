@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = 2x+1$ and $g(x) = f(2x) - 3$. What is $g(g(2))$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Note that $g(x) = f(2x) - 3 = (2 \\cdot (2x) + 1) - 3 = 4x - 2$. Thus, $$g(g(2)) = g(4 \\cdot 2 - 2) = g(6) = 4 \\cdot 6 - 2 = \\boxed{22}.$$"
+}

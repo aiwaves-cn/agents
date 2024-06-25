@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x$ is an integer such that $x\\sqrt{x}-5x-9\\sqrt{x}=35$, find $x$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We let $\\sqrt{x}=y$. Then we have  \\begin{align*}\nxy-5x-9y&=35\\quad\\Rightarrow\\\\\nxy-5x-9y+45&=35+45\\quad\\Rightarrow\\\\\nx(y-5)-9(y-5)&=80\\quad\\Rightarrow\\\\\n(x-9)(y-5)&=80.\n\\end{align*} We know $y=\\sqrt{x}$, so we resubstitute to find $(x-9)(\\sqrt{x}-5)=80$. We construct a table of all factor pairs which multiply to $80$, and proceed to solve for $x$ and $\\sqrt{x}$:\n\n\\begin{tabular}{c|c|c|c}\n$x-9$&$\\sqrt{x}-5$&$x$&$\\sqrt{x}$\\\\ \\hline\n$1$&$80$&$10$&$85$\\\\\n$2$&$40$&$11$&$45$\\\\\n$4$&$20$&$13$&$25$\\\\\n$5$&$16$&$14$&$21$\\\\\n$8$&$10$&$17$&$15$\\\\\n$10$&$8$&$19$&$13$\\\\\n$16$&$5$&$25$&$10$\\\\\n$20$&$4$&$29$&$9$\\\\\n$40$&$2$&$49$&$7$\\\\\n$80$&$1$&$89$&$6$\n\\end{tabular}\n\nOf all solutions, only one satisfies the relationship $\\sqrt{x}^2=x$, and that is $\\sqrt{x}=7$ and $x=\\boxed{49}$."
+}

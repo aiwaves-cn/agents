@@ -1,0 +1,6 @@
+{
+    "problem": "Given $DC = 7$, $CB = 8$, $AB = \\frac{1}{4}AD$, and $ED = \\frac{4}{5}AD$, find $FC$. Express your answer as a decimal.   [asy]\ndraw((0,0)--(-20,0)--(-20,16)--cycle);\ndraw((-13,0)--(-13,10.4));\ndraw((-5,0)--(-5,4));\ndraw((-5,0.5)--(-5+0.5,0.5)--(-5+0.5,0));\ndraw((-13,0.5)--(-13+0.5,0.5)--(-13+0.5,0));\ndraw((-20,0.5)--(-20+0.5,0.5)--(-20+0.5,0));\nlabel(\"A\",(0,0),E);\nlabel(\"B\",(-5,0),S);\nlabel(\"G\",(-5,4),N);\nlabel(\"C\",(-13,0),S);\nlabel(\"F\",(-13,10.4),N);\nlabel(\"D\",(-20,0),S);\nlabel(\"E\",(-20,16),N);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "We can easily see that $\\triangle ABG \\sim \\triangle ACF \\sim \\triangle ADE.$\n\nFirst of all, $BD = AD - AB.$ Since $AB = \\dfrac{1}{4}AD,$ we have that $BD = \\dfrac{3}{4}AD.$ Since $BD$ is also $DC + CB = 15,$ we see that $AD = 20$ and $AB = 5.$ Now, we can easily find $ED = \\dfrac{4}{5}AD = 16.$\n\nNow, we see that $CA = CB + BA = 8 + 5 = 13.$ Since $\\dfrac{FC}{CA} = \\dfrac{ED}{DA},$ thanks to similarity, we have $FC = \\dfrac{ED \\cdot CA}{DA} = \\dfrac{16 \\cdot 13}{20} = \\boxed{10.4}.$"
+}

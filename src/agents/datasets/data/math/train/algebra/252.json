@@ -1,0 +1,6 @@
+{
+    "problem": "The integers $G$ and $H$ are chosen such that\n\\[\\frac{G}{x+5}+\\frac{H}{x^2-4x}=\\frac{x^2-2x+10}{x^3+x^2-20x}\\]for all real values of $x$ except $-5$, $0$, and $4$. Find $H/G$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we factor the denominators, to get \\[\\frac{G}{x + 5} + \\frac{H}{x(x - 4)} = \\frac{x^2 - 2x + 10}{x(x + 5)(x - 4)}.\\]We then multiply both sides by $x(x + 5)(x - 4)$, to get \\[Gx(x - 4) + H(x + 5) = x^2 - 2x + 10.\\]We can solve for $G$ and $H$ by substituting suitable values of $x$.  For example, setting $x = -5$, we get $45G = 45$, so $G = 1$.  Setting $x = 0$, we get $5H = 10$, so $H = 2$.  (This may not seem legitimate, because we are told that the given equation holds for all $x$ except $-5$, 0, and 4.  This tells us that the equation $Gx(x - 4) + H(x + 5) = x^2 - 2x + 10$ holds for all $x$, except possibly $-5$, 0, and 4.  However, both sides of this equation are polynomials, and if two polynomials are equal for an infinite number of values of $x$, then the two polynomials are equal for all values of $x$.  Hence, we can substitute any value we wish to into this equation.)\n\nTherefore, $H/G = 2/1 = \\boxed{2}$."
+}

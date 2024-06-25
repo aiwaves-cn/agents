@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common divisor of $3339$, $2961$, and $1491$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can perform the Euclidean Algorithm two times.\n\nFirst, we use it for $3339$ and $2961$. \\begin{align*}\n\\text{gcd}\\,(3339,2961) &=\\text{gcd}\\,(3339-2961,2961)\\\\\n&=\\text{gcd}\\,(378,2961)\\\\\n&=\\text{gcd}\\,(378,2961-378 \\cdot 7)\\\\\n&=\\text{gcd}\\,(378,315)\\\\\n&=\\text{gcd}\\,(378-315,315)\\\\\n&=\\text{gcd}\\,(63,315)\\\\\n\\end{align*}Since $63$ is a divisor of $315$, the greatest common divisor of $3339$ and $2961$ is $63$.\n\nNext, we can find the greatest common divisor of $63$ and $1491$, also using the Euclidean Algorithm. \\begin{align*}\n\\text{gcd}\\,(63,1491) &=\\text{gcd}\\,(63,1491-63 \\cdot 23)\\\\\n&=\\text{gcd}\\,(63,42)\\\\\n\\end{align*}Since $63=3 \\cdot 21$ and $42=2 \\cdot 21$, the greatest common divisor is $\\boxed{21}$."
+}

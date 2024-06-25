@@ -1,0 +1,6 @@
+{
+    "problem": "In the expression $c \\cdot a^b - d$, the values of $a$, $b$, $c$, and $d$ are 0, 1, 2, and 3, although not necessarily in that order.  What is the maximum possible value of the result?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "If $d \\neq 0$, the value of the expression can be increased by interchanging 0 with the value of $d$.  Therefore the maximum value must occur when $d=0$.  If $a = 1$, the value is $c$, which is 2 or 3.  If $b=1$, the value is $c \\cdot a = 6$.  If $c=1$, the value is $a^b$, which is $2^3 = 8$ or $3^2 = 9$.  Thus the maximum value is $\\boxed{9}$."
+}

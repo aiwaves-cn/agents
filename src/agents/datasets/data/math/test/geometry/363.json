@@ -1,0 +1,6 @@
+{
+    "problem": "The measure of one of the smaller base angles of an isosceles trapezoid is $60^\\circ$. The shorter base is 5 inches long and the altitude is $2 \\sqrt{3}$ inches long. What is the number of inches in the perimeter of the trapezoid? [asy]\nimport markers;\nimport olympiad; size(150); import geometry; import graph; defaultpen(linewidth(0.8));\ndraw(origin--(9,0)--(7,2*sqrt(3))--(2,2*sqrt(3))--cycle);\ndraw(Label(\"$2\\sqrt{3}$\",align=E),(2,2*sqrt(3))--(2,0),dashed);\nlabel(\"5\",(7,2*sqrt(3))--(2,2*sqrt(3)),N);\nmarkangle(Label(\"$60^{\\circ}$\"),(9,0),origin,(2,2*sqrt(3)),radius=10);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The triangle in the diagram is a $30-60-90$ triangle and has long leg $2\\sqrt3$.  Therefore the short leg has length 2 and hypotenuse has length 4.  The bases of the trapezoid are then 5 and $2+5+2=9$ and the legs are both length 4.  The entire trapezoid has perimeter $9+4+5+4=\\boxed{22}$."
+}

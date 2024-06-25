@@ -1,0 +1,6 @@
+{
+    "problem": "A cube has eight vertices (corners) and twelve edges. A segment, such as $x$, which joins two vertices not joined by an edge is called a diagonal. Segment $y$ is also a diagonal. How many diagonals does a cube have? [asy]\n/* AMC8 1998 #17 Problem */\npair A=(0,48), B=(0,0), C=(48,0), D=(48,48);\npair E=(24,72), F=(24,24), G=(72,24), H=(72,72);\npen d = linetype(\"8 8\");\n\ndraw(A--D--C--B--cycle);\ndraw(D--H--G--C);\ndraw(A--E--H);\n\ndraw(B--F--E);\ndraw(F--G);\ndraw(H--A--G, d);\nlabel(\"$x$\", (40, 61), N);\nlabel(\"$y$\", (40, 35), N);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "There are two diagonals, such as $x$, in each of the six faces for a total of twelve face diagonals. There are also four space diagonals, such as $y$, which are within the cube. This makes a total of $\\boxed{16}$."
+}

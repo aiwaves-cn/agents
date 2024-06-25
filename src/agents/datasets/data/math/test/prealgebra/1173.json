@@ -1,0 +1,6 @@
+{
+    "problem": "How many three-digit positive integers are there?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We are trying to count the number of numbers in the sequence $100, 101, 102, \\ldots , 998, 999$. If we subtract 99 from every term in the sequence it becomes $1, 2, 3, \\ldots , 899, 900$. So, there are $\\boxed{900}$ positive integers with 3 digits."
+}

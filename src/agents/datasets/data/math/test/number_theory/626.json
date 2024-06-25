@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer $n$ such that $n$ has remainder 1 when divided by 3, $n$ has remainder 1 when divided by 4, and $n$ has remainder 4 when divided by 5?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since $\\text{gcd}(3,4) = 1$, the first two requirements imply that $n\\equiv 1\\pmod{12}$. We list the first few numbers that are $1\\pmod{12}$, $$13,25,37,49,...$$We see that $\\boxed{49}$ is the first value with remainder $4$ when divided by $5$."
+}

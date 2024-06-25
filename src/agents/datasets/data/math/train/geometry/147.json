@@ -1,0 +1,6 @@
+{
+    "problem": "Let $AB$ be a diameter of a circle centered at $O$.  Let $E$ be a point on the circle, and let the tangent at $B$ intersect the tangent at $E$ and $AE$ at $C$ and $D$, respectively.  If $\\angle BAE = 43^\\circ$, find $\\angle CED$, in degrees.\n\n[asy]\nimport graph;\n\nunitsize(2 cm);\n\npair O, A, B, C, D, E;\n\nO = (0,0);\nA = (0,1);\nB = (0,-1);\nE = dir(-6);\nD = extension(A,E,B,B + rotate(90)*(B));\nC = extension(E,E + rotate(90)*(E),B,B + rotate(90)*(B));\n\ndraw(Circle(O,1));\ndraw(B--A--D--cycle);\ndraw(B--E--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, S);\nlabel(\"$C$\", C, S);\nlabel(\"$D$\", D, SE);\nlabel(\"$E$\", E, dir(0));\ndot(\"$O$\", O, W);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Both angles $\\angle BAD$ and $\\angle CBE$ subtend arc $BE$, so $\\angle CBE = \\angle BAE = 43^\\circ$.  Triangle $BCE$ is isosceles with $BC = CE$, since these are tangent from the same point to the same circle, so $\\angle CEB = \\angle CBE = 43^\\circ$.\n\nFinally, $\\angle AEB = 90^\\circ$ since $AB$ is a diameter, so $\\angle BED = 90^\\circ$.  Therefore, $\\angle CED = \\angle BED - \\angle BEC = 90^\\circ - 43^\\circ = \\boxed{47^\\circ}$."
+}

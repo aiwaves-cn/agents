@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, what is the perimeter of $\\triangle PQR$?\n[asy]\ndraw((0,0)--(28,0)--(8,15)--cycle);\nlabel(\"$P$\",(0,0),SW);\nlabel(\"$Q$\",(8,15),NW);\nlabel(\"$R$\",(28,0),SE);\ndraw((8,15)--(8,0));\ndraw((9,0)--(9,1)--(8,1));\nlabel(\"$8$\",(4,0),S); label(\"$20$\",(18,0),S); label(\"$25$\",(18,8),NE);\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Each of $\\triangle PSQ$ and $\\triangle RSQ$ is right-angled at $S$, so we can use the Pythagorean Theorem in both triangles.\n\nIn $\\triangle RSQ$, we have $QS^2 = QR^2 - SR^2 = 25^2-20^2=625 - 400 = 225$, so $QS=\\sqrt{225}=15$ since $QS>0$.\n\nIn $\\triangle PSQ$, we have $PQ^2 = PS^2 + QS^2 = 8^2 + 225 = 64+225=289$, so $PQ = \\sqrt{289}=17$ since $PQ>0$.\n\nTherefore, the perimeter of $\\triangle PQR$ is $PQ+QR+RP=17+25+(20+8)=\\boxed{70}$."
+}

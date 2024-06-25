@@ -1,0 +1,6 @@
+{
+    "problem": "Jack walked up a hill at a speed of $(x^2-11x-22)$ miles per hour. Meanwhile, Jill walked a total distance of $(x^2-3x-54)$ miles in $(x+6)$ hours. If Jack and Jill walked at the same speed, what is that speed, in miles per hour?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First we find Jill's speed in miles per hour by dividing total distance by time, in which we can cancel a common factor: \\begin{align*}\n\\text{Jill's speed}&=\\frac{x^2-3x-54}{x+6}\\quad\\Rightarrow\\\\\n&=\\frac{(x-9)(x+6)}{x+6}\\quad\\Rightarrow\\\\\n&=(x-9).\n\\end{align*}Now we set the two speeds equal to each other and solve for $x$: \\begin{align*}\nx-9&=x^2-11x-22\\quad\\Rightarrow\\\\\n0&=x^2-12x-13\\quad\\Rightarrow\\\\\n0&=(x+1)(x-13).\n\\end{align*}If $x=-1$, we'd get a speed of $-1-9=-10$ miles per hour, which isn't possible. That means $x=13$, so their speed was $13-9=\\boxed{4}$ miles per hour."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What integer $n$ satisfies $0\\le n<19$ and $$38574\\equiv n\\pmod{19}~?$$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since 38 and 57 are both divisible by 19, so is $38000+570$.  Therefore we can say  \\[38574=19(2030)+4.\\]This tells us that  \\[38574\\equiv 4\\pmod{19}\\]The answer is $n=\\boxed{4}$."
+}

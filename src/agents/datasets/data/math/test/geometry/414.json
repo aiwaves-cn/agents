@@ -1,0 +1,6 @@
+{
+    "problem": "Right $\\Delta ABC$ has legs measuring 8 cm and 15 cm. The triangle is rotated about one of its legs. What is the number of cubic centimeters in the maximum possible volume of the resulting solid? Express your answer in terms of $\\pi$.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "If the triangle is rotated about the shorter leg, then the radius is the longer leg and the height is the shorter leg, and the volume is  \\[\\frac13\\cdot (15^2\\pi)(8) = 600\\pi\\text{ cubic centimeters}.\\] If the triangle is rotated about the longer leg, then the radius is the shorter leg and the height is the longer leg, and the volume is $\\frac13(8^2\\pi)(15)$, which is $\\frac{8}{15}$ of the volume we found earlier.  So, the maximum possible volume is $\\boxed{600\\pi}$ cubic centimeters."
+}

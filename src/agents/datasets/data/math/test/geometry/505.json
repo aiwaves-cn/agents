@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $\\triangle ABC,$ we have that $AB = AC = 14$ and $BC = 26.$ What is the length of the shortest angle bisector in $ABC$? Express your answer in simplest radical form.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let's sketch our triangle first. [asy]\npair A, B, C;\nA = (0, 5.196);\nB = (-13, 0);\nC = (13, 0);\ndraw(A--B--C--cycle);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\n[/asy] We can see that the shortest angle bisector will be from the vertex $A$ (we leave the proof to the reader). We will call that bisector $AD.$ [asy]\npair A, B, C, D;\nA = (0, 5.196);\nB = (-13, 0);\nC = (13, 0);\nD = (0, 0);\ndraw(A--B--C--cycle);\ndraw(A--D);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\n[/asy] Since $\\angle BAD = \\angle CAD$ by definition and $\\angle ABC = \\angle ACB$ since $\\triangle ABC$ is isosceles, we can see that $\\angle ADB = \\angle ADC = 90^\\circ.$ This is useful, since we know that $AC = 14$ and $DC = \\frac{1}{2} \\cdot BC = 13.$ Therefore, we use the Pythagorean theorem to find $AD^2 = AC^2 - CD^2 = 14^2 - 13^2 = 27.$ Therefore, our answer is $AD = \\boxed{3\\sqrt{3}}.$"
+}

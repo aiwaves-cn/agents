@@ -1,0 +1,6 @@
+{
+    "problem": "How many different three-step paths along the edges of a cube are there that take you from vertex $A$ to vertex $B$? (A step is from a vertex to an adjacent vertex sharing an edge.)\n\n[asy]\nsize(101);\nimport three;\ncurrentprojection=orthographic(1/2,-1,1/4);\ndraw((0,0,0)--(1,0,0)--(1,0,1)--(0,0,1)--(0,0,0));\ndraw((1,0,0)--(1,1,0)--(1,1,1)--(1,0,1));\ndraw((1,1,1)--(0,1,1)--(0,0,1));\nlabel(\"A\",(0,0,1),(-1,0,0)); label(\"B\",(1,1,0),(1,0,0));\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $3$ points we can get to from $A$.  Each of these connects to two points adjacent to $B$ and to $A$.  We can't go back to $A$ and then get to $B$ in one step, but we can choose either of the other two points.  So there are $3(2)=\\boxed{6}$ paths from $A$ to $B$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Three of the four endpoints of the axes of an ellipse are, in some order, \\[(-2, 4), \\; (3, -2), \\; (8, 4).\\]Find the distance between the foci of the ellipse.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The two axes of the ellipse are perpendicular bisectors of each other. Therefore, each endpoint of an axis must be equidistant from the two endpoints of the other axis. The only point of the given three which is equidistant from the other two is $(3, -2)$, so the fourth missing point must be the other endpoint of its axis, and the points $(-2, 4)$ and $(8, 4)$ must be endpoints of the same axis.\n\nThen the center of the ellipse is the midpoint of the segment between $(-2,4)$ and $(8,4),$ which is the point $(3,4)$. This means that the semi-horizontal axis has length $8-3 = 5,$ and the semi-vertical axis has length $4-(-2) = 6.$ Thus, the distance between the foci is $2 \\sqrt{6^2 - 5^2} =\\boxed{2 \\sqrt{11}}.$"
+}

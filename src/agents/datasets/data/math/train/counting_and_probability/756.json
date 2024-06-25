@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 7 people be seated in a row of chairs if two of the people, Wilma and Paul, refuse to sit next to each other?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The number of all seating arrangements is $7!$. The number of seating arrangements in which Wilma and Paul sit next to each other is $6!\\times 2!$. (We can arrive at $6!\\times 2!$ by pretending Wilma and Paul together are one person, WilmaPaul, and that we have 6 chairs.  We then have 6 people, who we can seat in $6!$ ways.  We then must break WilmaPaul back into two people, which we can do in $2!$ ways, one for each order of the two -- Wilma then Paul, and Paul then Wilma.  That gives us a total of $6!\\times 2!$ ways to arrange the people with Wilma and Paul together.)  Thus the number of acceptable arrangements is $7!-6!\\times 2!=\\boxed{3600}$."
+}

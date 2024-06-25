@@ -1,0 +1,6 @@
+{
+    "problem": "The product of two whole numbers is 1000. If neither of the numbers is a multiple of 10, what is their sum?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We factor 1000 as $10 \\times 10 \\times 10 = 2^3 \\times 5^3$. We are looking for two factors, neither of which is a multiple of 10. This means that neither number can contain a factor of both 2 and 5. This can only happen if one of the numbers is $2^3$ and the other is $5^3$. $2^3 = 8$ and $5^3 = 125$; their sum is $125 + 8 = \\boxed{133}$."
+}

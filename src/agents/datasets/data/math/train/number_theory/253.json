@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $3^{1999}$ is divided by $13$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since $3^3=27=2\\cdot13+1$ we find that  \\[3^3\\equiv1\\pmod{13}.\\] Therefore \\[3^{1999}\\equiv3^{3\\cdot666+1}\\equiv1^{666}\\cdot3\\equiv3\\pmod{13}.\\] The remainder when $3^{1999}$ is divided by 13 is $\\boxed{3}$."
+}

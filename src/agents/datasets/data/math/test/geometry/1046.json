@@ -1,0 +1,6 @@
+{
+    "problem": "Two sides of scalene $\\bigtriangleup ABC$ measure $3$ centimeters and $5$ centimeters. How many different whole centimeter lengths are possible for the third side?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Using the Triangle Inequality, we see that the third side of a triangle with sides $3\\text{ cm}$ and $5\\text{ cm}$ must be larger than $2\\text{ cm}$ but smaller than $8\\text{ cm}.$ If the third side must be a whole centimeter length, and the triangle is scalene, that means that the only possible lengths for the third side are: $4\\text{ cm},$ $6\\text{ cm},$ and $7\\text{ cm}.$ That makes $\\boxed{3}$ possible lengths for the third side."
+}

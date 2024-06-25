@@ -1,0 +1,6 @@
+{
+    "problem": "You connect the points (0, 0) and (9, 6) with a line segment. Starting at (0, 0), you move $\\frac{1}{3}$ of the way along the segment. What is the sum of the coordinates of the point you land upon?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since we move $\\frac{1}{3}$ of the way along the segment, we will move $\\frac{1}{3}(9-0) = 3$ units in the $x$-direction and $\\frac{1}{3}(6-0)= 2$ units in the $y$-direction. This means that we will end up at the point $(0 + 3, 0 + 2) = (3, 2)$. Adding the sum of the coordinates of this point, we find that the answer is $3 + 2 = \\boxed{5}$."
+}

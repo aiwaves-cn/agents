@@ -1,0 +1,6 @@
+{
+    "problem": "Find $(2^{20} + 2^{20} + 2^{20} +2^{21}) \\div 2^{17}$.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "As is often the case, calculating $2^{20}$ by brute force is not practical.  Instead, we will try simplifying the expression and combining some terms.  First, note that $2^{21} = 2 \\cdot 2^{20}$, because of the definition of an exponent.  So, we can rewrite the expression as $(2^{20} + 2^{20} + 2^{20} + 2 \\cdot 2^{20}) \\div 2^{17} = 5 \\cdot 2^{20} \\div 2^{17}$.\n\nUsing the division of powers rule, that equals $5 \\cdot 2^{20-17} = 5 \\cdot 2^3 = 5 \\cdot 8 = \\boxed{40}$."
+}

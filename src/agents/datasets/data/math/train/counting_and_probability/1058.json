@@ -1,0 +1,6 @@
+{
+    "problem": "The probability of snow for each of the next three days is $\\frac{2}{3}$. What is the probability that it will snow at least once during those three days? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Since each day it either snows or doesn't snow, we know that the sum of the probabilities of those two events is 1, which means that the probability of it not snowing on any one day is $1-\\frac{2}{3}=\\frac{1}{3}$. That means the probability of it $\\emph{not}$ snowing on all three days is $\\left(\\frac{1}{3}\\right)^3 = \\frac{1}{27}$, and once again we know that the probabilities of complementary events sum to 1, so the probability that we're looking for is $1-\\frac{1}{27}=\\boxed{\\dfrac{26}{27}}$."
+}

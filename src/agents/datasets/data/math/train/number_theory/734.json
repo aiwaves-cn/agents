@@ -1,0 +1,6 @@
+{
+    "problem": "An abundant number is a positive integer such that the sum of its proper divisors is greater than the number itself. The number 12 is an abundant number since $1 + 2 + 3 + 4 + 6 > 12$. What is the smallest abundant number that is not a multiple of 6?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "For any prime number, the sum of its proper divisors is equal to $1$, so a prime number cannot be an abundant number. Therefore, it suffices to check the smallest composite numbers that are not divisible by $6$. We find that:\n\n$\\bullet$ for $4$, $1 + 2 < 4$,\n$\\bullet$ for $8$, $1 + 2 + 4 < 8$,\n$\\bullet$ for $9$, $1 + 3 < 9$,\n$\\bullet$ for $10$, $1 + 2 + 5 < 10$,\n$\\bullet$ for $14$, $1 + 2 + 7< 14$,\n$\\bullet$ for $15$, $1 + 3 + 5< 15$,\n$\\bullet$ for $16$, $1 + 2 + 4 + 8 < 16$,\n$\\bullet$ for $20$, $1 + 2 + 4 + 5 + 10 = 22 > 20$.\n\nThus, the answer is $\\boxed{20}$."
+}

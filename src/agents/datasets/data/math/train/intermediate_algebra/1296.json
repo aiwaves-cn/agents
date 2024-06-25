@@ -1,0 +1,6 @@
+{
+    "problem": "Let $r$ and $s$ be the solutions to $2x^2 - 3x = 11.$  Compute the value of $(4r^3 - 4s^3)(r - s)^{-1}.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ and $s$ be the roots of $2x^2 - 3x - 11 = 0,$ so by Vieta's formulas, $r + s = \\frac{3}{2}$ and $rs = -\\frac{11}{2}.$\n\nThen\n\\begin{align*}\n\\frac{4r^3 - 4s^3}{r - s} &= \\frac{4(r - s)(r^2 + rs + s^2)}{r - s} \\\\\n&= 4 (r^2 + rs + s^2) \\\\\n&= 4 [(r + s)^2 - rs] \\\\\n&= 4 \\left[ \\left( \\frac{3}{2} \\right)^2 + \\frac{11}{2} \\right] \\\\\n&= \\boxed{31}.\n\\end{align*}"
+}

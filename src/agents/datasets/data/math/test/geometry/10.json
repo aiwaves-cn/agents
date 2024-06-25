@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle{ABC}$, shown, $\\cos{B}=\\frac{3}{5}$.  What is $\\cos{C}$?\n\n[asy]\ndraw((0,0)--(4,0)--(0,3)--cycle,black+linewidth(1));\ndraw(rightanglemark((4,0),(0,0),(0,3),10),black+linewidth(1));\nlabel(\"$A$\",(0,0),W);\nlabel(\"$B$\",(0,3),W);\nlabel(\"$C$\",(4,0),E);\nlabel(\"9\",(0,0)--(0,3),W);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $\\cos{B}=\\frac{3}{5}$, we have $\\cos{B}=\\frac{AB}{BC}=\\frac{9}{BC}=\\frac{3}{5}$.  Then, we can see that we have $9=BC\\cdot\\frac{3}{5}$, so $BC=9\\cdot\\frac{5}{3}=15$.  From the Pythagorean Theorem, we have $AC=\\sqrt{BC^2-AB^2}=\\sqrt{15^2-9^2}=\\sqrt{144}=12$.  Finally, we can find $\\cos{C}$: $\\cos{C}=\\frac{AC}{BC}=\\frac{12}{15}=\\boxed{\\frac{4}{5}}$."
+}

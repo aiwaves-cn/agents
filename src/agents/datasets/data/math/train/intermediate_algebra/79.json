@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a complex number such that\n\\[z^2 + |z|^2 = 3 - 5i.\\]Find $|z|^2.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = a + bi,$ where $a$ and $b$ are real numbers.  Then $z^2 = (a + bi)^2 = a^2 + 2abi - b^2$ and $|z|^2 = a^2 + b^2,$ so\n\\[a^2 + 2abi - b^2 + a^2 + b^2 = 3 - 5i.\\]Equating real and imaginary parts, we get\n\\begin{align*}\n2a^2 &= 3, \\\\\n2ab &= -5.\n\\end{align*}From the first equation, $a^2 = \\frac{3}{2}.$  From the second equation,\n\\[b = -\\frac{5}{2a},\\]so\n\\[b^2 = \\frac{25}{4a^2} = \\frac{25}{4 \\cdot 3/2} = \\frac{25}{6}.\\]Therefore,\n\\[|z|^2 = a^2 + b^2 = \\frac{3}{2} + \\frac{25}{6} = \\boxed{\\frac{17}{3}}.\\]"
+}

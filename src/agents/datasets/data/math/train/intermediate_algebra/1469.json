@@ -1,0 +1,6 @@
+{
+    "problem": "The partial fraction decomposition of\n\\[\\frac{x^2 - 19}{x^3 - 2x^2 - 5x + 6}\\]is\n\\[\\frac{A}{x - 1} + \\frac{B}{x + 2} + \\frac{C}{x - 3}.\\]Find the product $ABC.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[\\frac{x^2 - 19}{x^3 - 2x^2 - 5x + 6} = \\frac{A}{x - 1} + \\frac{B}{x + 2} + \\frac{C}{x - 3}.\\]Multiplying both sides by $x^3 - 2x^2 - 5x + 6 = (x - 1)(x + 2)(x - 3),$ we get\n\\[x^2 - 19 = A(x + 2)(x - 3) + B(x - 1)(x - 3) + C(x - 1)(x + 2).\\]Setting $x = 1,$ we get $-6A = -18$, so $A = 3.$\n\nSetting $x = -2,$ we get $15B = -15,$ so $B = -1.$\n\nSetting $x = 3,$ we get $10C = -10,$ so $C = -1.$  Hence, $ABC = \\boxed{3}.$"
+}

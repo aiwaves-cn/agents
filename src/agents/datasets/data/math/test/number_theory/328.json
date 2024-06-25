@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when 5 to the 999,999th power is divided by 7?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "To find the remainder when $5^{999999}$ is divided by 7, we look at the first few powers of 5 modulo 7: \\begin{align*}\n5^0 &\\equiv 1, \\\\\n5^1 &\\equiv 5, \\\\\n5^2 &\\equiv 5 \\cdot 5 \\equiv 25 \\equiv 4, \\\\\n5^3 &\\equiv 5 \\cdot 4 \\equiv 20 \\equiv 6, \\\\\n5^4 &\\equiv 5 \\cdot 6 \\equiv 30 \\equiv 2, \\\\\n5^5 &\\equiv 5 \\cdot 2 \\equiv 10 \\equiv 3, \\\\\n5^6 &\\equiv 5 \\cdot 3 \\equiv 15 \\equiv 1 \\pmod{7}.\n\\end{align*}Since $5^6 \\equiv 1 \\pmod{7}$, the remainders become periodic, with period 6.  Since $999999 \\equiv 3 \\pmod{6}$, $5^{999999} \\equiv 5^3 \\equiv \\boxed{6} \\pmod{7}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The projection of $\\begin{pmatrix} 2 \\\\ y \\\\ -5 \\end{pmatrix}$ onto $\\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}$ is\n\\[\\frac{5}{6} \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}.\\]Find $y.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The projection of $\\begin{pmatrix} 2 \\\\ y \\\\ -5 \\end{pmatrix}$ onto $\\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}$ is\n\\[\\frac{\\begin{pmatrix} 2 \\\\ y \\\\ -5 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}}{\\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}} \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix} = \\frac{-2y - 3}{6} \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}.\\]Then $-2y - 3 = 5,$ so $y = \\boxed{-4}.$"
+}

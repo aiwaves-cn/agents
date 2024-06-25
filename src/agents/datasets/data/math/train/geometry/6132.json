@@ -1,0 +1,6 @@
+{
+    "problem": "The degree measures of the angles in a convex 18-sided polygon form an increasing arithmetic sequence with integer values. Find the degree measure of the smallest angle.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The average angle in an 18-gon is $160^\\circ$. In an arithmetic sequence the average is the same as the median, so the middle two terms of the sequence average to $160^\\circ$. Thus for some positive (the sequence is increasing and thus non-constant) integer $d$, the middle two terms are $(160-d)^\\circ$ and $(160+d)^\\circ$. Since the step is $2d$ the last term of the sequence is $(160 + 17d)^\\circ$, which must be less than $180^\\circ$, since the polygon is convex. This gives $17d < 20$, so the only suitable positive integer $d$ is 1. The first term is then $(160-17)^\\circ = \\boxed{143}.$"
+}

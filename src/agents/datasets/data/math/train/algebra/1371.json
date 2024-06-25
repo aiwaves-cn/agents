@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the reciprocals of the roots of $x^2-13x+4=0$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $r_1$ and $r_2$ be the roots of this polynomial. Therefore, $r_1+r_2=13$ and $r_1r_2=4$. Notice that the sum of the reciprocals of the roots can be obtained by dividing the first equation by the second equation: $\\frac{r_1+r_2}{r_1r_2}=\\frac{1}{r_1}+\\frac{1}{r_2}=\\boxed{\\frac{13}{4}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "On the game show $\\text{\\emph{Wheel of Fraction}}$, you see the following spinner. Given that each region is the same area, what is the probability that you will earn exactly $\\$1700$ in your first three spins? Express your answer as a common fraction. [asy]\nimport olympiad; import geometry; import graph; size(150); defaultpen(linewidth(0.8));\ndraw(unitcircle);\nstring[] labels = {\"Bankrupt\",\"$\\$1000$\",\"$\\$300$\",\"$\\$5000$\",\"$\\$400$\"};\nfor(int i = 0; i < 5; ++i){\n\ndraw(origin--dir(72*i));\n\nlabel(labels[i],0.6*dir(36 + 72*i));\n}\n[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are five slots on which the spinner can land with each spin; thus, there are 125 total possibilities with three spins. The only way in which you can earn exactly $ \\$ 1700$ in three spins is by landing on a $ \\$ 300$, a $ \\$ 400$, and a $ \\$ 1000$. You could land on any one of the three in your first spin, any one of the remaining two in your second spin, and the remaining one in your last spin, so there are $3 \\cdot 2 \\cdot 1 = 6$ ways in which you can earn $ \\$ 1700$. Thus, the probability is $\\boxed{\\frac{6}{125}}$."
+}

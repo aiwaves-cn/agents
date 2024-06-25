@@ -1,0 +1,6 @@
+{
+    "problem": "The base-10 integers 36, 64, and 81 can be converted into other bases so that their values are represented by the same digits $\\triangle\\Box\\Box$, where $\\triangle$ and $\\Box$ are two distinct digits from 0-9. What is the value of $\\triangle\\Box\\Box$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "36, 64, and 81 are all perfect squares. That means they can all be written as $1\\cdot a^2+0\\cdot a^1+0\\cdot a^0=100_a$, where $a$ is the square root of each number. So, all three numbers can be represented by the digits $\\boxed{100}$ when converted to other bases. To see that no other digits work, note that only the bases 4, 5, and 6 use three digits to represent the number 36. (This follows from $b^2\\leq 36<b^3$, which expresses the condition that 36 has 3 digits in base $b$). The representations are $100_6$, $121_5$ and $210_4$, only one of which fits the form $\\triangle\\Box\\Box$."
+}

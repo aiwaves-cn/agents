@@ -1,0 +1,6 @@
+{
+    "problem": "Seven people arrive to dinner, but the circular table only seats six.  If two seatings such that one is a rotation of the other are considered the same, then in how many different ways can we choose six people and seat them at the table?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 7 ways to choose the person who is left standing.  To seat the 6 remaining people, there are 6 seats from which the first person can choose, 5 seats left for the second, and so on down to 1 seat for the last person.  This suggests that there are $6\\cdot 5\\cdot 4\\cdot 3\\cdot 2\\cdot 1 = 6!$ ways to seat the six people.  However, each seating can be rotated six ways, so each seating is counted six times in this count.  Therefore, for each group of 6 people, there are $6!/6 = 5!$ ways to seat them around the table.  There are 7 different possible groups of 6 to seat (one for each person left standing), giving a total of $7\\cdot 5! = \\boxed{840}$ ways to seat the seven people."
+}

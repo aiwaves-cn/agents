@@ -1,0 +1,6 @@
+{
+    "problem": "How many different counting numbers will each leave a remainder of 5 when divided into 47?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "For a number to leave a remainder of 5 when divided into 47, it must satisfy two conditions:\n\n1. it must divide exactly into $47 - 5$, or 42, and\n\n2. it must be greater than 5, because the divisor is always greater than the remainder.\n\nWe list all divisors of 42 in pairs. They are 1 and 42, 2 and 21, 3 and 14, 6 and 7. Of these, only 42, 21, 14, 6, and 7 are greater than 5. There are $\\boxed{5}$ different counting numbers that will leave a remainder of 5 when divided into 47."
+}

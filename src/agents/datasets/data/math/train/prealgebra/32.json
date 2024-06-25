@@ -1,0 +1,6 @@
+{
+    "problem": "A wheel with radius $1\\text{ m}$ is rolled in a straight line through one complete revolution on a flat horizontal surface. How many meters did the center of the wheel travel horizontally from its starting location?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We begin by considering a point $P$ which is where the circle first touches a line $L.$\n\n[asy]\ndraw((0,0)--(20,0),black+linewidth(1));\ndraw(circle((5,3),3),black+linewidth(1));\ndraw(circle((15,3),3),black+linewidth(1));\ndraw((5,0)--(5,3),black+linewidth(1)+dashed);\ndraw((5,3)--(15,3),black+linewidth(1)+dashed);\ndraw((15,3)--(15,0),black+linewidth(1)+dashed);\nlabel(\"$L$\",(0,0),W);\nlabel(\"$P$\",(5,0),S);\nlabel(\"$C$\",(5,3),W);\nlabel(\"$P'$\",(15,0),S);\nlabel(\"$C'$\",(15,3),E);\n[/asy]\n\nIf a circle makes one complete revolution, the point $P$ moves to $P'$ and the distance $PP'$ is the circumference of the circle, or $2 \\pi\\text{ m}.$\n\nIf we now complete the rectangle, we can see that the distance the center travels is $CC'$ which is exactly equal to $PP'$ or $\\boxed{2 \\pi}$ meters."
+}

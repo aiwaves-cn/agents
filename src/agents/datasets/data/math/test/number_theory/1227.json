@@ -1,0 +1,6 @@
+{
+    "problem": "Sum $324_8$ and $111010101110_2$, expressing your answer in base 8.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We consider that an octal digit may be represented as three binary digits since $8=2^3$. The octal digit $7_8$ corresponds to $111_2$, $6_8=110_2$, etc. So, to convert the binary number to octal, we convert digits in groups of 3.   $$111\\mid010\\mid101\\mid110_2=7\\mid2\\mid5\\mid6_8$$Now we add the two numbers in octal: $ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & 3 & 2 & 4_8\\\\ &+ & 7 & 2 & 5 & 6_8\\\\ \\cline{2-6} & & 7 & 6 & 0 & 2_8\\\\ \\end{array} $. The answer is $\\boxed{7602_8}$."
+}

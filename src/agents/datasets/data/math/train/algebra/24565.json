@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that  $\\{a_n\\}$ is an arithmetic sequence with $$\na_1+a_2+ \\cdots +a_{100}=100 \\quad \\text{and} \\quad\na_{101}+a_{102}+ \\cdots + a_{200}=200.\n$$What is the value of $a_2 - a_1$? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We want to find the common difference, say $d$. We observe that \\begin{align*}\na_{101}& + a_{102} + \\dots + a_{200} \\\\\n&= (a_1 + 100d)\n+ (a_2+ 100d) + \\ldots + (a_{100} + 100d) \\\\\n&= a_1 + a_2 + \\ldots + a_{100} + 10000d.\n\\end{align*}Thus $200=100+10000d$  and  $d=\\frac{100}{10000}=\\boxed{\\frac{1}{100}}$."
+}

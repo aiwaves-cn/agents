@@ -1,0 +1,6 @@
+{
+    "problem": "Assume we have a calendrical system in which leap years happen every four years, no matter what. In a 150-year period, what is the maximum possible number of leap years?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Since 150 divided by 4 is 37.5, there are 37 blocks of 4 years in 150 years, plus two extra years.  If we let one of those two extra years be a leap year, and we have one leap year in each of the 37 blocks, then we have 38 leap years.  For example, we can choose a 150-year period that starts with a leap year. For example, 1904-2053 is a 150-year period with 38 leap years $(1904, 1908, \\ldots, 2052)$.  Now we check that under no circumstance will 39 work. We see the optimal situation would be if we start with a leap year and end with a leap year. Leap years happen every four years, so if we start with year $x$, $x$ being a leap year, the $38^{\\text{th}}$ leap year after $x$ is $x+4\\times38 = x+152$, so including $x$ there must be a total of 153 years, which is greater than 150. Therefore no 150-year period will contain 39 leap years. Hence, the answer is $\\boxed{38}$."
+}

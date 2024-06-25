@@ -1,0 +1,6 @@
+{
+    "problem": "What is the nearest integer to $(5+2\\sqrt7)^4$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "When we expand this out, we get a bunch of terms with $\\sqrt7$ in them. To avoid painful estimation, we do the following trick: Add $(5-2\\sqrt7)^4$ to this expression. We know that $(5-2\\sqrt7)^4$ is small, since $2\\sqrt7=\\sqrt{28}$ is close to $5=\\sqrt{25}$, at least compared to $6=\\sqrt{36}$. When we add these together, the $\\sqrt7$ terms magically cancel out. By the Binomial Theorem, $$(5+2\\sqrt7)^4=5^4+4\\cdot5^3\\cdot(2\\sqrt7)+6\\cdot5^2\\cdot(2\\sqrt7)^2+4\\cdot5\\cdot(2\\sqrt7)^3+(2\\sqrt7)^4$$ whereas $$(5-2\\sqrt7)^4=5^4-4\\cdot5^3\\cdot(2\\sqrt7)+6\\cdot5^2\\cdot(2\\sqrt7)^2-4\\cdot5\\cdot(2\\sqrt7)^3+(2\\sqrt7)^4.$$ Therefore, their sum is $$2(5^4+6\\cdot5^2(2\\sqrt7)^2+(2\\sqrt7)^4)=2(625+4200+784)=11218.$$ Since the term we added, $(5-2\\sqrt7)^4$, is less than a half (actually, it's less than .01), $\\boxed{11218}$ is the closest integer to $(5+2\\sqrt7)^4$."
+}

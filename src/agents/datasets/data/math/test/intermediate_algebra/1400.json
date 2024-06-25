@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomials\n\\[x^3 + 5x^2 + px + q = 0\\]and\n\\[x^3 + x^2 + px + r = 0\\]have exactly two roots in common, so each cubic has a root they do not have in common.  Find the sum of the two roots they do not have in common.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let the two common roots be $a$ and $b.$  Let the roots of the first cubic be $a,$ $b,$ and $c,$ and let the roots of the second cubic be $a,$ $b,$ and $d.$  Subtracting the cubics, we get\n\\[4x^2 + (q - r) = 0.\\]The roots of this quadratic are $a$ and $b,$ so $a + b = 0.$\n\nThen by Vieta's formulas, $a + b + c = -5$ and $a + b + d = -1.$  Then $c = -5$ and $d = -1,$ so $c + d = \\boxed{-6}.$"
+}

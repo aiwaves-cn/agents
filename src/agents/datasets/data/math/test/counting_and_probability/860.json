@@ -1,0 +1,6 @@
+{
+    "problem": "John rolls a pair of standard 6-sided dice. What is the probability that the two numbers he rolls are relatively prime? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We have to use a little bit of casework to solve this problem. If the first die shows a 1, the second die can be anything (6 cases). If the first die shows 2 or 4, the second die is limited to 1, 3, or 5 ($2\\cdot3 = 6$ cases). If the first die shows 3, the second die can be 1, 2, 4, or 5 (4 cases). If the first die shows 5, the second die can be anything but 5 (5 cases). If the first die shows 6, the second die can be only 1 or 5 (2 cases). There are 36 ways to roll two dice, 23 of which are valid, so the answer is $\\boxed{\\frac{23}{36}}$."
+}

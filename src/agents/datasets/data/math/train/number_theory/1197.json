@@ -1,0 +1,6 @@
+{
+    "problem": "Two circles, one of radius 5 inches, the other of radius 2 inches, are tangent at point P. Two bugs start crawling at the same time from point P, one crawling along the larger circle at $3\\pi$ inches per minute, the other crawling along the smaller circle at $2.5\\pi$ inches per minute. How many minutes is it before their next meeting at point P?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The circumference of the larger circle, $C_1$, is $2\\cdot5\\pi=10\\pi$. The circumference of the smaller circle, $C_2$, is $2\\cdot2\\pi=4\\pi$. The bug on $C_1$ crawls the circumference in $\\frac{10\\pi}{3\\pi}=\\frac{10}{3}$ minutes, while the bug on $C_2$ crawls the circumference in $\\frac{4\\pi}{2.5\\pi}=\\frac{8}{5}$ minutes. The two bugs will meet at point P in some $t$ minutes, when $t\\div\\frac{10}{3}=\\frac{3t}{10}$ and $t\\div\\frac{8}{5}=\\frac{5t}{8}$ are both integers. We have $\\text{GCD}(3,10)=\\text{GCD}(5,8)=1$, so we have to find the LCM of $10=2\\cdot5$ and $8=2^3$. The LCM is $2^3\\cdot5=40$, so the bugs will next meet in $t=\\boxed{40}$ minutes."
+}

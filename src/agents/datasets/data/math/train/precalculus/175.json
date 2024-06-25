@@ -1,0 +1,6 @@
+{
+    "problem": "Right triangle $ABC$ (hypotenuse $\\overline{AB}$) is inscribed in equilateral triangle $PQR,$ as shown.  If $PC = 3$ and $BP = CQ = 2,$ compute  $AQ.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, C, P, Q, R;\n\nP = (0,0);\nQ = (5,0);\nR = 5*dir(60);\nA = Q + 8/5*dir(120);\nB = 2*dir(60);\nC = (3,0);\n\ndraw(A--B--C--cycle);\ndraw(P--Q--R--cycle);\ndraw(rightanglemark(A,C,B,10));\n\nlabel(\"$A$\", A, NE);\nlabel(\"$B$\", B, NW);\nlabel(\"$C$\", C, S);\nlabel(\"$P$\", P, SW);\nlabel(\"$Q$\", Q, SE);\nlabel(\"$R$\", R, N);\nlabel(\"$2$\", (C + Q)/2, S);\nlabel(\"$3$\", (C + P)/2, S);\nlabel(\"$2$\", (B + P)/2, NW);\n[/asy]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We see that the side length of equilateral triangle $PQR$ is 5.  Let $x = AQ.$\n\nBy the Law of Cosines on triangle $BCP,$\n\\[BC^2 = 2^2 + 3^2 - 2 \\cdot 2 \\cdot 3 \\cdot \\cos 60^\\circ = 7.\\]Then by the Law of Cosines on triangle $ACQ,$\n\\[AC^2 = x^2 + 2^2 - 2 \\cdot x \\cdot 2 \\cdot \\cos 60^\\circ = x^2 - 2x + 4.\\]Also, $AB = 3$ and $AR = 5 - x,$ so by the Law of Cosines on triangle $ABR,$\n\\[AB^2 = 3^2 + (5 - x)^2 - 2 \\cdot 3 \\cdot (5 - x) \\cdot 60^\\circ = x^2 - 7x + 19.\\]Finally, by Pythagoras on right triangle $ABC,$ $BC^2 + AC^2 = AB^2,$ so\n\\[7 + x^2 - 2x + 4 = x^2 - 7x + 19.\\]Solving, we find $x = \\boxed{\\frac{8}{5}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\alpha$ and $\\beta$ be angles for which\n\\[\\frac{\\sec^4 \\alpha}{\\tan^2 \\beta} + \\frac{\\sec^4 \\beta}{\\tan^2 \\alpha}\\]is defined.  Find the minimum value of the expression.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $a = \\tan^2 \\alpha$ and $b = \\tan^2 \\beta.$  Then $\\sec^2 \\alpha = a + 1$ and $\\sec^2 \\beta = b + 1,$ so\n\\[\\frac{\\sec^4 \\alpha}{\\tan^2 \\beta} + \\frac{\\sec^4 \\beta}{\\tan^2 \\alpha} = \\frac{(a + 1)^2}{b} + \\frac{(b + 1)^2}{a}.\\]We know $a \\ge 0$ and $b \\ge 0,$ so by AM-GM, $a + 1 \\ge 2 \\sqrt{a}$ and $b + 1 \\ge 2 \\sqrt{b}.$  Hence,\n\\[\\frac{(a + 1)^2}{b} + \\frac{(b + 1)^2}{a} \\ge \\frac{4b}{a} + \\frac{4a}{b}.\\]Again by AM-GM,\n\\[\\frac{4b}{a} + \\frac{4a}{b} \\ge 2 \\sqrt{\\frac{4b}{a} \\cdot \\frac{4a}{b}} = 8.\\]Equality occurs when $\\alpha = \\beta = \\frac{\\pi}{4},$ so the minimum value is $\\boxed{8}.$"
+}

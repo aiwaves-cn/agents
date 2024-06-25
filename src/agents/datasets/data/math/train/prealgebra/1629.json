@@ -1,0 +1,6 @@
+{
+    "problem": "A floor 9 feet by 12 feet, is to be tiled with 4-inch-by-6-inch tiles. How many tiles are needed to cover the floor?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Notice how 4 inches = 1/3 foot and 6 inches = 1/2 foot, so both the width and length will be tiled with full tiles (i.e. no tiles have to be broken).  Since all tiles remain whole, we can calculate the number of tiles by dividing the total floor area by each tile's area.  Doing so yields \\[\\frac{9 \\text{ ft} \\cdot 12\\text{ ft}}{4 \\text{ inches} \\cdot 6 \\text{ inches}} = \\frac{9 \\text{ ft} \\cdot 12\\text{ ft}}{1/3 \\text{ ft} \\cdot 1/2 \\text{ ft}} = \\boxed{648}.\\]Hence, we need $\\boxed{648}$ tiles to cover the floor."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\n2x + 7 & \\text{if } x < -2, \\\\\n-x^2 - x + 1 & \\text{if } x \\ge -2.\n\\end{array}\n\\right.\\]Find the sum of all values of $x$ such that $f(x) = -5.$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We solve the equation $f(x) = -5$ on the domains $x < -2$ and $x \\ge -2.$\n\nIf $x < -2,$ then $f(x) = 2x + 7,$ so we want to solve $2x + 7 = -5.$ The solution is $x = -6,$ which satisfies $x < -2.$\n\nIf $x \\ge -2,$ then $f(x) = -x^2 - x + 1,$ so we want to solve $-x^2 - x + 1 = -5.$ This equation simplifies to $x^2 + x - 6 = 0,$ which factors as $(x - 2)(x + 3) = 0.$ The solutions are $x = 2$ and $x = -3,$ but only $x = 2$ satisfies $x \\ge -2.$\n\nTherefore, the solutions are $-6$ and $2,$ and their sum is $(-6) + 2 = \\boxed{-4}.$"
+}

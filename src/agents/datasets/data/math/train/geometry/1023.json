@@ -1,0 +1,6 @@
+{
+    "problem": "The longer leg of a right triangle is $1$ foot shorter than twice the length of the shorter leg. The area of the triangle is $60$ square feet. What is the length of the hypotenuse, in feet?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "If $x$ represents the length of the shorter leg, then the two legs are $x$ and $2x-1$. In a right triangle, the length of one leg is the base and the length of the other leg is the height, so the area of this triangle is $\\frac{1}{2}bh=\\frac{1}{2}x(2x-1)$. We set this equal to 60 and solve for $x$. \\begin{align*}\n\\frac{1}{2}(2x^2-x)&=60\\quad\\Rightarrow\\\\\n2x^2-x&=120\\quad\\Rightarrow\\\\\n2x^2-x-120&=0\\quad\\Rightarrow\\\\\n(2x+15)(x-8)&=0\n\\end{align*} Since $x$ must be positive, we get that $x=8$. The shorter leg is 8 feet long and the longer leg is $2(8)-1=15$ feet long. We can use the Pythagorean Theorem to find the hypotenuse or we recognize that 8 and 15 are part of the Pythagorean triple $8:15:17$. The hypotenuse of the right triangle is $\\boxed{17}$ feet long."
+}

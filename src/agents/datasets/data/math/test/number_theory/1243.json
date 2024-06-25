@@ -1,0 +1,6 @@
+{
+    "problem": "An ordered pair of digits $(a, b)$ is such that $4a5,b32$ is a multiple of 66. Find $a+b$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since $4a5,b32$ is divisible by $66$, it must be divisible by $2$, $3$ and $11$. Since $4a5,b32$ is divisible by $11$, we know $4-a+5-b+3-2$ is a multiple of $11$, so $11\\mid 10-a-b$. So either $10-a-b=-11$, $10-a-b=0$, $10-a-b=11$, etc., which gives $a+b=21$, $a+b=10$, or $a+b=-1$. The only value which works is $a+b=10$, since $a$ and $b$ are digits. There are several pairs $(a,b)$ which fit this condition, but it doesn't matter which one we choose since in all cases, the quantity we want is $a+b=\\boxed{10}$.\n\nJust to be safe, we check that if $a+b=10$, the number is also divisible by $2$ and $3$. No matter what $a$ and $b$ are, $4a5,b32$ is divisible by $2$ since the units digit is even. The sum of the digits is $4+a+5+b+3+2=14+a+b=14+(10)=24$, which is divisible by $3$ so $4a5,b32$ is divisible by three. Thus our solution works."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[\\frac{x^2}{x - 8}\\]for $x > 8.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\[\\frac{x^2}{x - 8} = \\frac{x^2 - 64 + 64}{x - 8} = \\frac{(x - 8)(x + 8) + 64}{x - 8} = x + 8 + \\frac{64}{x - 8} = x - 8 + \\frac{64}{x - 8} + 16.\\]By AM-GM,\n\\[x - 8 + \\frac{64}{x - 8} \\ge 2 \\sqrt{(x - 8) \\cdot \\frac{64}{x - 8}} = 16,\\]so\n\\[\\frac{x^2}{x - 8} \\ge 32.\\]Equality occurs when $x = 16,$ so the minimum value is $\\boxed{32}.$"
+}

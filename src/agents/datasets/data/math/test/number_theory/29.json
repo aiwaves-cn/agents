@@ -1,0 +1,6 @@
+{
+    "problem": "What is the last digit of the base $6$ representation of the base ten integer $355$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The last digit of a base $10$ integer is the remainder when that number is divided by $10$. The same is true for other bases, since the base divides the place value of each digit to the left of the ones digit. So the last digit of the base $6$ representation of $355_{10}$ is the remainder when $355$ is divided by $6$. $355 = 59 \\cdot 6 + 1$, so the last digit of $355_{10}$ when it is expressed in base $6$ is $\\boxed{1}$."
+}

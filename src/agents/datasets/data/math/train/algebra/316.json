@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\lfloor{\\sqrt{12}}\\rfloor^2$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since $\\sqrt{9}<\\sqrt{12}<\\sqrt{16}$, or, equivalently $3<\\sqrt{12}<4$, the greatest integer less than or equal to $\\sqrt{12}$ must be $3$. Thus, $\\lfloor{\\sqrt{12}}\\rfloor^2=3^2=\\boxed{9}$."
+}

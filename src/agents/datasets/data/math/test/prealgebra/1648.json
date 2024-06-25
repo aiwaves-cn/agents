@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\sqrt{720}$.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We need to factor out squares from 720. First we check $2^2=4$. $$720=4\\cdot180=4\\cdot4\\cdot45$$Next we check $3^2=9$. $$45=9\\cdot5$$It's obvious that 5 has no square factors (besides 1) since it is prime. So, $\\sqrt{720}=\\sqrt{4\\cdot4\\cdot9\\cdot5}=2\\cdot2\\cdot3\\sqrt{5}=\\boxed{12\\sqrt{5}}$."
+}

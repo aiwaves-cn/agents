@@ -1,0 +1,6 @@
+{
+    "problem": "Completely simplify and rationalize the denominator: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "To begin, we can combine all of these square roots into a single square root: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}=\\sqrt{\\frac{160}{252}}\\times\\sqrt{\\frac{245}{108}}=\\sqrt{\\frac{160\\cdot245}{252\\cdot108}}$$Now, simplify under the square root by canceling common factors.  To start, 160 and 108 are both divisible by 4.  252 and 160 also share a factor of 4.  This leaves us with: $$\\sqrt{\\frac{10\\cdot245}{63\\cdot27}}$$Looking carefully, we can see that 63 and 245 both share a factor of 7.  Cancel this, and simplify: $$\\sqrt{\\frac{10\\cdot35}{9\\cdot27}}=\\frac{5}{9}\\sqrt{\\frac{14}{3}}=\\boxed{\\frac{5\\sqrt{42}}{27}}$$"
+}

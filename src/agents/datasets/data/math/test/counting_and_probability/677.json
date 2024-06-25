@@ -1,0 +1,6 @@
+{
+    "problem": "On the student government ballot at Dusable High School, the six candidates for president are listed first, followed by the four candidates for vice president, followed by the five candidates for secretary and ending with the three candidates for treasurer. In how many ways can the candidates be listed on the ballot?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Since there are six candidates for president, the presidential candidates can be ordered in $6! = 720$ ways. Likewise, there are $4! = 24$ vice presidential permutations. And $5! = 120$ secretarial permutations. Finally, $3! = 6$ treasurer permutations. We must multiply the number of permutations for each position, since each ballot includes all the position permutations: $720 \\cdot 24 \\cdot 120 \\cdot 6 = \\boxed{12441600}$."
+}

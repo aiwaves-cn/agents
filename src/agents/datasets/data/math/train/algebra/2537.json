@@ -1,0 +1,6 @@
+{
+    "problem": "If $5a+2b=0$ and $a$ is two less than $b$, what is $7b$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First we begin by solving the system of equations \\begin{align*}\n5a+2b&=0, \\\\\nb-2&=a.\n\\end{align*}Making the substitution for $a$ from the second equation to the first, we get $5(b-2)+2b=0$, which simplifies to $7b-10=0$. Solving for $b$, we find that $b=\\frac{10}{7}$. Hence $7b=7\\cdot \\frac{10}{7}=\\boxed{10}$."
+}

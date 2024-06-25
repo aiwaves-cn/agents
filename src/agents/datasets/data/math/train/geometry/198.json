@@ -1,0 +1,6 @@
+{
+    "problem": "In a circle with center $O$, $AD$ is a diameter, $ABC$ is a chord, $BO = 5$, and $\\angle ABO = \\text{arc } CD = 60^\\circ$.  Find the length of $BC$.\n\n[asy]\nimport graph;\n\nunitsize(2 cm);\n\npair O, A, B, C, D;\n\nO = (0,0);\nA = dir(30);\nC = dir(160);\nB = (2*C + A)/3;\nD = -A;\n\ndraw(Circle(O,1));\ndraw(C--A--D);\ndraw(B--O);\n\nlabel(\"$A$\", A, NE);\nlabel(\"$B$\", B, N);\nlabel(\"$C$\", C, W);\nlabel(\"$D$\", D, SW);\nlabel(\"$O$\", O, SE);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since arc $CD$ is $60^\\circ$, $\\angle CAD = 60^\\circ/2 = 30^\\circ$.  Since triangle $AOC$ is isosceles with $AO = CO$, $\\angle OCA = \\angle OAC = 30^\\circ$.\n\n[asy]\nimport graph;\n\nunitsize(2 cm);\npair O, A, B, C, D;\n\nO = (0,0);\nA = dir(30);\nC = dir(160);\nB = (2*C + A)/3;\nD = -A;\n\ndraw(Circle(O,1));\ndraw(C--A--D);\ndraw(B--O);\ndraw(C--O);\n\nlabel(\"$A$\", A, NE);\nlabel(\"$B$\", B, N);\nlabel(\"$C$\", C, W);\nlabel(\"$D$\", D, SW);\nlabel(\"$O$\", O, SE);\n[/asy]\n\nSince $\\angle ABO = 60^\\circ$, and this angle is external to triangle $BCO$, $\\angle BOC = \\angle ABO - \\angle BCO = 60^\\circ - 30^\\circ = 30^\\circ$.  Hence, triangle $BCO$ is isosceles, and $BC = BO = \\boxed{5}$."
+}

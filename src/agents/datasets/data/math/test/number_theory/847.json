@@ -1,0 +1,6 @@
+{
+    "problem": "Express $555_{10}$ in base $5$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We write $555$ in powers of $5$. The largest power of $5$ which is smaller than $555$ is $5^3=125$, and the greatest multiple of $125$ which is less than $555$ is $4$. We get that $555- 4 \\cdot 125 = 55$. The largest power of $5$ that is less than $55$ is $5^2=25$, and the greatest multiple of $25$ less than $55$ is $2$. We get $55 - 2 \\cdot 25 = 5$, which is $5^1$. Therefore, we can write $555$ as $4 \\cdot 5^3 + 2 \\cdot 5^2 + 1 \\cdot 5^1$. Thus, the answer is $\\boxed{4210_{5}}$."
+}

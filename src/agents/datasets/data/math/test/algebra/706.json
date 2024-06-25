@@ -1,0 +1,6 @@
+{
+    "problem": "If the quadratic $x^2+6mx+m$ has exactly one real root, find the positive value of $m$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Consider the quadratic formula $\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Since the quadratic has exactly one root, then its discriminant must be 0. Thus, this gives us  \\begin{align*} 0&=b^2-4ac\n\\\\\\Rightarrow\\qquad0&=(6m)^2-4m\n\\\\\\Rightarrow\\qquad0&=36m^2-4m\n\\\\\\Rightarrow\\qquad0&=4m(9m-1).\n\\end{align*}This gives us the two possible values of $m$: 0 and $\\frac{1}{9}$. Since the question only asks for the positive value, our final answer is $\\boxed{\\frac19}$."
+}

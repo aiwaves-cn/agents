@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle XYZ$, we have $\\angle X = 90^\\circ$ and $\\tan Y = \\frac34$.  If $YZ = 30$, then what is $XY$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "[asy]\n\npair X,Y,Z;\n\nX = (0,0);\n\nY = (16,0);\n\nZ = (0,12);\n\ndraw(X--Y--Z--X);\n\ndraw(rightanglemark(Y,X,Z,23));\n\nlabel(\"$X$\",X,SW);\n\nlabel(\"$Y$\",Y,SE);\n\nlabel(\"$Z$\",Z,N);\n\nlabel(\"$30$\",(Y+Z)/2,NE);\n\nlabel(\"$3k$\",(Z)/2,W);\n\nlabel(\"$4k$\",Y/2,S);\n\n[/asy]\n\nSince $\\triangle XYZ$ is a right triangle with $\\angle X = 90^\\circ$, we have $\\tan Y = \\frac{XZ}{XY}$.  Since $\\tan Y = \\frac34$, we have $XZ = 3k$ and $XY = 4k$ for some value of $k$, as shown in the diagram.  Therefore, $\\triangle XYZ$ is a 3-4-5 triangle.  Since the hypotenuse has length $30 = 5\\cdot 6$, the legs have lengths $XZ = 3\\cdot 6 = 18$ and $XY = 4\\cdot 6 = \\boxed{24}$."
+}

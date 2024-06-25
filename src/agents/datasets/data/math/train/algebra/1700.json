@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the coefficients in the polynomial $3(3x^{7} + 8x^4 - 7) + 7(x^5 - 7x^2 + 5)$ when it is fully simplified.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The sum of the coefficients in $$3(3x^{7} + 8x^4 - 7) + 7(x^5 - 7x^2 + 5)$$(or any polynomial) can be found by plugging in $x = 1$. Then, we have $$3(3 + 8 - 7) + 7(1 - 7 + 5) = 3 \\cdot 4 + 7 \\cdot -1 = \\boxed{5}.$$"
+}

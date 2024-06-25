@@ -1,0 +1,6 @@
+{
+    "problem": "A fair 6-sided die is rolled.  If the roll is even, then you win that amount of dollars (so that, for example, if you roll 4, then you win $\\$4$).  If the roll is odd, you win nothing.  What is the expected value of your winnings? Express your answer as a dollar value.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There is a $\\dfrac{1}{2}$ probability of rolling an odd number and winning $\\$0$, and a $\\dfrac{1}{6}$ probability of winning each of $\\$2$, $\\$4$, or $\\$6$.  So $E = \\dfrac{1}{2}\\times \\$0 + \\dfrac{1}{6}\\times(\\$2+\\$4+\\$6) = \\boxed{\\$2}$."
+}

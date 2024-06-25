@@ -1,0 +1,6 @@
+{
+    "problem": "Given positive integers $x$ and $y$ such that $\\frac{1}{x} + \\frac{1}{2y} = \\frac{1}{7}$, what is the least possible value of $xy$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying through by $14xy$, we have $14y + 7x = 2xy$, so $2xy - 7x - 14y = 0$. We then apply Simon's Favorite Factoring Trick by adding $49$ to both sides to get $2xy - 7x - 14y + 49 = 49$. We can then factor this to get $$(x-7)(2y-7) = 49$$Since $49$ factors to $7 \\cdot 7$ and $x$ and $y$ must be positive integers, the only possible solutions $(x,y)$ are $(8, 28), (14,7), \\text{and } (56,4)$. Out of these, $(14,7)$ yields the least possible value $xy$ of $\\boxed{98}$."
+}

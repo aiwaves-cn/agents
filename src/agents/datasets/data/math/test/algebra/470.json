@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of two numbers is $3$.  The difference of the squares of the numbers is $33$.  What is the absolute value of the difference of the two numbers?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let the two numbers be $x$ and $y$.  We are given $x+y=3$ and $x^2-y^2=33$. Factoring the second equation, we have $(x+y)(x-y)=33$.  Thus $3(x-y)=33$, and so $x-y=\\boxed{11}$."
+}

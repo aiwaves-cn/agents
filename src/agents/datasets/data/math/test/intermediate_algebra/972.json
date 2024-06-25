@@ -1,0 +1,6 @@
+{
+    "problem": "A cubic polynomial $f(x) = x^3 + ax^2 + bx + c$ with at least two distinct roots has the following properties:\n\n(i) The sum of all the roots is equal to twice the product of all the roots.\n(ii) The sum of the squares of all the roots is equal to 3 times the product of all the roots.\n(iii) $f(1) = 1.$\n\nFind $c.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r,$ $s,$ $t$ be the root of the cubic.  Then by Vieta's formulas,\n\\begin{align*}\nr + s + t &= -a, \\\\\nrs + rt + st &= b, \\\\\nrst &= -c.\n\\end{align*}From condition (i), $-a = -2c,$ so $a = 2c.$\n\nSquaring the equation $r + s + t = -a,$ we get\n\\[r^2 + s^2 + t^2 + 2(rs + rt + st) = a^2.\\]Then\n\\[r^2 + s^2 + t^2 = a^2 - 2(rs + rt + st) = a^2 - 2b.\\]Then from condition (ii), $a^2 - 2b = -3c,$ so\n\\[b = \\frac{a^2 + 3c}{2} = \\frac{4c^2 + 3c}{2}.\\]Finally, from condition (iii), $f(1) = 1 + a + b + c = 1,$ so $a + b + c = 0.$  Substituting, we get\n\\[2c + \\frac{4c^2 + 3c}{2} + c = 0.\\]This simplifies to $4c^2 + 9c = 0.$  Then $c(4c + 9) = 0,$ so $c = 0$ or $c = -\\frac{9}{4}.$\n\nIf $c = 0,$ then $a = b = 0,$ which violates the condition that $f(x)$ have at least two distinct roots.  Therefore, $c = \\boxed{-\\frac{9}{4}}.$"
+}

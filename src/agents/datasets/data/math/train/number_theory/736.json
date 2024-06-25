@@ -1,0 +1,6 @@
+{
+    "problem": "How many three-digit perfect cubes are divisible by $9?$",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "A cube is divisible by $9$ if the number being cubed is divisible by $\\sqrt[3]{9}=3^{\\frac{2}{3}}.$ Since a perfect cube is the cube of an integer, we need the number being cubed to be a multiple of $3,$ so the cube is of the form $(3n)^3=27n^3$. Since $\\frac{999}{27}=37,$ the cubes we need are $27$ times a cube less than or equal to $37,$ of which there are three. However, $27\\cdot1^3=27,$ only has two digits, leaving $\\boxed{2}$ such three-digit cubes."
+}

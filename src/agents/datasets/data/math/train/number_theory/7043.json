@@ -1,0 +1,6 @@
+{
+    "problem": "A set $\\mathcal{S}$ of distinct positive integers has the following property: for every integer $x$ in $\\mathcal{S},$ the arithmetic mean of the set of values obtained by deleting $x$ from $\\mathcal{S}$ is an integer. Given that 1 belongs to $\\mathcal{S}$ and that 2002 is the largest element of $\\mathcal{S},$ what is the greatest number of elements that $\\mathcal{S}$ can have?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let the sum of the integers in $\\mathcal{S}$ be $N$, and let the size of $|\\mathcal{S}|$ be $n+1$. After any element $x$ is removed, we are given that $n|N-x$, so $x\\equiv N\\pmod{n}$. Since $1\\in\\mathcal{S}$, $N\\equiv1\\pmod{n}$, and all elements are congruent to 1 mod $n$. Since they are positive integers, the largest element is at least $n^2+1$, the $(n+1)$th positive integer congruent to 1 mod $n$.\nWe are also given that this largest member is 2002, so $2002\\equiv1\\pmod{n}$, and $n|2001=3\\cdot23\\cdot29$. Also, we have $n^2+1\\le2002$, so $n<45$. The largest factor of 2001 less than 45 is 29, so $n=29$ and $n+1$ $\\Rightarrow{\\boxed{30}}$ is the largest possible. This can be achieved with $\\mathcal{S}=\\{1,30,59,88,\\ldots,813,2002\\}$, for instance."
+}

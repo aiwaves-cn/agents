@@ -1,0 +1,6 @@
+{
+    "problem": "Which of the following points is farthest from the origin: $(0,5)$, $(1,2)$, $(3,-4)$, $(6,0)$, $(-1,-2)?$",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "The distance from a point $(x,y)$ to the origin is $$\\sqrt{(x-0)^2 + (y-0)^2} = \\!\\sqrt{x^2+y^2}.$$Evaluating this for each of the five given points, we find that $\\boxed{(6,0)}$ is farthest from the origin."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Sasha has $\\$3.20$ in U.S. coins. She has the same number of quarters and nickels. What is the greatest number of quarters she could have?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Suppose Sasha has $q$ quarters.  Then she also has $q$ nickels, and the total value of her quarters and nickels is $.25q + .05q = .30q$.  Since $3.20/0.30 = 10\\frac{2}{3}$, this means that she has at most $\\boxed{10}$ quarters.  (This amount is obtainable; for example we can let the rest of her coins be pennies.)"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A triangle with side lengths in the ratio 3:4:5 is inscribed in a circle of radius 3.  What is the area of the triangle? Provide your answer as a decimal rounded to the nearest hundredth.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let the sides of the triangle have lengths $3x$, $4x$, and $5x$.  The triangle is a right triangle, so its hypotenuse is a diameter of the circle.  Thus $5x=2\\cdot 3=6$, so $x=6/5$.  The area of the triangle is \\[\n\\frac{1}{2}\\cdot 3x\\cdot 4x =\\frac{1}{2}\\cdot \\frac{18}{5}\\cdot \\frac{24}{5}\n=\\frac{216}{25}=\\boxed{8.64}.\\]"
+}

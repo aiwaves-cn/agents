@@ -1,0 +1,6 @@
+{
+    "problem": "Give the greatest common divisor of $6^3$ and $3^6$.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We notice that $6^3 = (2 \\cdot 3)^3 = 2^3 \\cdot 3^3$. Since $2$ does not divide $3^6$, we only need to consider powers of $3$. Indeed, $3^3 = \\boxed{27}$ is the highest power of $3$ which divides both numbers, so it is the greatest common divisor."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangular prism with integer side lengths has a height of $3$. If the surface area of the prism is equal to $52$, then what is the volume of the prism?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let $l$ be the length and $w$ be the width of the rectangular prism. Then, the surface area of the prism is given by $$2lw + 2l \\cdot 3 + 2w \\cdot 3 = 2lw + 6l + 6w = 52.$$Dividing through by $2$, we obtain $lw + 3l + 3w = 26$, and using Simon's Favorite Factoring Trick, it follows that $$lw + 3l + 3w + 9 = (l+3)(w+3) = 35.$$The pairs of (positive) factors of $35$ are given by $\\{1,35\\},\\{5,7\\}$. Only the latter will work, which will give $\\{l,w\\} = \\{2,4\\}$. It follows that the volume of the prism is given by $2 \\times 4 \\times 3 = \\boxed{24}$."
+}

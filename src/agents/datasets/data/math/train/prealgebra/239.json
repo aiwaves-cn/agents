@@ -1,0 +1,6 @@
+{
+    "problem": "If an integer is divisible by $4$ and the sum of its last two digits is $13$, then what is the product of its last two digits?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "If $A$ is the tens digit and $B$ the units digit, then the two-digit number $AB$ (having $A$ in the tens place and $B$ in the units place) must be one of the following: $49$, $58$, $67$, $76$, $85$, $94$.  Since the original number was divisible by $4$, $AB$ must be divisible by $4$.  So $AB = 76$ is the only possibility, and $A\\cdot B = 7\\cdot 6 = \\boxed{42}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What value of $x$ will give the minimum value for $x^2- 14x + 3$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We start by completing the square: \\begin{align*}\nx^2-14x+3&= x^2-14x +\\left(\\frac{14}{2}\\right)^2 - \\left(\\frac{14}{2}\\right)^2 + 3\\\\\n& = x^2 -14x + 7^2 - 49 + 3\\\\\n&=(x-7)^2 - 46.\\end{align*}Since the square of a real number is at least 0, we have $$(x-7)^2\\ge 0,$$where $(x-7)^2 =0$ only if $x=7$.   Therefore, $(x-7)^2 - 46$ is minimized when $x=\\boxed{7}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$ be a point on the parabola $y = x^2 - 9x + 25,$ and let $B$ be a point on the line $y = x - 8.$  Find the shortest possible distance $AB.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $A = (a,a^2 - 9a + 25)$ be a point on the parabola $y = x^2 - 9x + 25.$  Then the distance from $A$ to line $x - y - 8 = 0$ is\n\\begin{align*}\n\\frac{|a - (a^2 - 9a + 25) - 8|}{\\sqrt{2}} &= \\frac{|-a^2 + 10a - 33|}{\\sqrt{2}} \\\\\n&= \\frac{|a^2 - 10a + 33|}{\\sqrt{2}} \\\\\n&= \\frac{|(a - 5)^2 + 8|}{\\sqrt{2}}.\n\\end{align*}We see that $(a - 5)^2 + 8$ is minimized when $a = 5,$ and the minimum distance is $\\frac{8}{\\sqrt{2}} = \\boxed{4 \\sqrt{2}}.$"
+}

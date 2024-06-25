@@ -1,0 +1,6 @@
+{
+    "problem": "Which of the following quantities is the largest?  (Write $A$, $B$, or $C$.) \\[ A.\\ \\ \\frac{2006}{2005}+\\frac{2006}{2007} \\qquad B.\\ \\ \\frac{2006}{2007}+\\frac{2008}{2007} \\qquad C.\\ \\ \\frac{2007}{2006}+\\frac{2007}{2008} \\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "This problem illustrates how algebra can clarify arithmetic.  Comparing these quantities directly is a chore.  Instead, we note that the first and third choices are both of the form $\\frac{n}{n-1}+\\frac{n}{n+1}$ for $n=2006$ and $n=2007$.  Rewriting this expression algebraically leads to \\[ \\frac{n(n+1)}{n^2-1}+\\frac{n(n-1)}{n^2-1} = \\frac{2n^2}{n^2-1} = 2 + \\frac{2}{n^2-1}. \\]In particular both $A$ and $C$ are larger than 2.  It is easy to verify that choice $B$ is equal to 2, so it cannot be the answer.  Finally, note that larger values of $n$ produce smaller results, implying that $\\boxed{\\text{A}}$ is the largest.  (It is also possible to guess the answer by trying examples involving much smaller numbers.)"
+}

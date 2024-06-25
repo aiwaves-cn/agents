@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest prime factor of $15^3+10^4-5^5$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The greatest common divisor of the three terms is $5^3$. Factoring $5^3$ out of each term and using the distributive property gives: \\begin{align*}\n15^3+10^4-5^5 &= 5^3\\cdot3^3 + 5^3\\cdot5\\cdot2^4-5^3\\cdot5^2 \\\\\n&= 5^3(3^3+5\\cdot2^4-5^2)\\\\\n& = 5^3(27+80-25) \\\\\n&= 5^3(82)=2\\cdot5^3\\cdot41.\n\\end{align*}So the largest prime factor is $\\boxed{41}$."
+}

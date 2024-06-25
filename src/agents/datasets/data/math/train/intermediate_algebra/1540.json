@@ -1,0 +1,6 @@
+{
+    "problem": "In a certain ellipse, the endpoints of the major axis are $(-11,4)$ and $(9,4).$  Also, the ellipse passes through the point $(7,7).$  Find the area of the ellipse.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "From the given information, the center of the ellipse is $(-1,4),$ and the semi-major axis is 10.  Thus, the equation of the ellipse is of the form\n\\[\\frac{(x + 1)^2}{10^2} + \\frac{(y - 4)^2}{b^2} = 1.\\]Setting $x = 7$ and $y = 7,$ we get\n\\[\\frac{8^2}{10^2} + \\frac{3^2}{b^2} = 1.\\]Solving, we find $b^2 = 25,$ so $b = 5.$  Therefore, the area of the ellipse is $\\pi \\cdot 10 \\cdot 5 = \\boxed{50 \\pi}.$"
+}

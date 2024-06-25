@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest five-digit palindrome that is divisible by 6.  (A palindrome is a number that reads the same forwards and backwards, like 514415 or 131.)",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Every five-digit palindrome is of the form $ABCBA$, where $A$, $B$, and $C$ are digits.  A number is divisible by 6 if and only if it is divisible by both 2 and 3.\n\nThe number $ABCBA$ is divisible by 2 if and only if the digit $A$ is even, so the largest possible digit $A$ is 8.  The number $ABCBA$ is divisible by 3 if and only if the sum of its digits, which is $2A + 2B + C$, is divisible by 3.\n\nThe largest possible digit $B$ is 9, and if $A = 8$, then $2A + 2B + C = C + 34$.  The largest digit $C$ for which $C + 34$ is divisible by 3 is $C = 8$.  Therefore, the largest five-digit palindrome that is divisible by 6 is $\\boxed{89898}$."
+}

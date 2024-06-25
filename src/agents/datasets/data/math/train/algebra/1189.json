@@ -1,0 +1,6 @@
+{
+    "problem": "Given that the graphs of $y=h(x)$ and $y=j(x)$ intersect at $(2,2),$ $(4,6),$ $(6,12),$ and $(8,12),$ there is one point where the graphs of $y=h(2x)$ and $y=2j(x)$ must intersect. What is the sum of the coordinates of that point?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The given information tells us that $$\\begin{array}{c@{\\qquad}c}\nh(2)=j(2)=2, & h(4)=j(4)=6, \\\\\nh(6)=j(6)=12, & h(8)=j(8)=12.\n\\end{array}$$If the graphs of $y=h(2x)$ and $y=2j(x)$ intersect at $(a,b),$ then $$h(2a)=2j(a)= b.$$Checking the possibilities in the table above, we see that $h(8)=2j(4)=12.$ Thus, the graphs of $y=h(2x)$ and $y=2j(x)$ intersect at $(4,12),$ the sum of whose coordinates is $\\boxed{16}.$"
+}

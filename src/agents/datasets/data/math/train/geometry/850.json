@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of cubic centimeters in the volume of the cylinder formed by rotating a square with side length 14 centimeters about its vertical line of symmetry. Express your answer in terms of $\\pi$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy]\nsize(100);\ndraw((-5,-.2)--(-3,-.2)--(-3,1.8)--(-5,1.8)--cycle); label(\"14\",((-3,1.8)--(-5,1.8)),N); label(\"14\",((-5,-.2)--(-5,1.8)),W);\ndraw((-2.5,.9)--(-1.5,.9),EndArrow);\nimport solids; import three; currentprojection = orthographic(5,0,2);\nrevolution c = cylinder((0,0,0), 1, 2);\ndraw((0,-1,2)--(0,1,2)); label(\"14\",((0,-1,2)--(0,1,2)),N); label(\"14\",(0,1,1),E);\ndraw(c,black);\n[/asy]\n\nRotating the square about its vertical line of symmetry creates a right circular cylinder with diameter 14 and height 14.  Thus, the cylinder has radius $14/2=7$ and volume $\\pi(7^2)(14)=\\pi(50-1)(14)=\\pi(700-14)=\\boxed{686\\pi}$."
+}

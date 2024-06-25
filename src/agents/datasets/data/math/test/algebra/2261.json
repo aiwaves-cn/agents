@@ -1,0 +1,6 @@
+{
+    "problem": "For what value of $x$ does $2^{12} = \\left(\\frac{1}{8}\\right)^x$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Writing the right side as a power of 2, we have  \\[\\left(\\frac18\\right)^x = (2^{-3})^x = 2^{-3x},\\]so the equation is $2^{12} = 2^{-3x}$.  Therefore, we have $-3x = 12$, which means $x = \\boxed{-4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Expand the product ${3(x+4)(x+5)}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "First, we use the distributive property to expand the first two factors:\n\n\\begin{align*}\n3(x+4)(x+5) &= (3\\cdot x + 3 \\cdot 4) (x+5)\\\\\n&=(3x+12)(x+5)\n\\end{align*}We use the distributive property again by adding the product of $3x+12$ and $x$ to the product of $3x+12$ and 5:\n\n\\begin{align*}\n(3x+12)(x+5) &= (3x+12) \\cdot x +(3x+12) \\cdot 5\\\\\n&= x(3x+12) + 5(3x+12)\n\\end{align*}We use the distributive property again and combine like terms:\n\n\\begin{align*}\nx(3x+12) + 5(3x+12) &= 3x^2 + 12x + 15x+ 60\\\\\n&= \\boxed{3x^2 + 27x + 60}\n\\end{align*}"
+}

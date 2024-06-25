@@ -1,0 +1,6 @@
+{
+    "problem": "A math textbook with a double-digit number of pages is split into sections. Each section is exactly $12$ pages long, with the exception of the epilogue, which is $11$ pages long. Every page belongs to a section. Furthermore, on the bottom of each $5$th page, a trivia fact is presented on the bottom of the page, starting from the fifth page. If a trivia fact appears on the bottom of the second-to-last page, then how many pages does the textbook have?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Suppose the book has $p$ pages. It follows that $p \\equiv 11 \\pmod{12}$. Also, since the second-to-last page has a trivia fact, then $p-1$ is divisible by $5$, so $p \\equiv 1 \\pmod{5}$. By the Chinese Remainder Theorem, since $11 \\equiv 1 \\pmod{5}$, then $p \\equiv 11 \\pmod{60}$. Now, $p$ is a double-digit number, so it must be either $11$ or $71$. However, the epilogue itself is already $11$ pages long, so it follows that there must be $\\boxed{71}$ pages in the book."
+}

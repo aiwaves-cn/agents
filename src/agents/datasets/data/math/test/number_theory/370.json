@@ -1,0 +1,6 @@
+{
+    "problem": "If $n$ gives a remainder of 3 when divided by 7, then what remainder does $2n+1$ give when divided by 7?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If $n$ gives a remainder of 3 when divided by 7, then $n = 7k+3$ for some integer $k$. Therefore, $2n+1 = 2(7k+3)+1 = 14k+6+1 = 14k+7 = 7(2k+1)$. Since $7(2k+1)$ is divisible by 7, the remainder when $2n+1$ is divided by 7 is $\\boxed{0}$."
+}

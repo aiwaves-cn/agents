@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_1,$ $a_2,$ $a_3$ be the first three terms of a geometric sequence.  If $a_1 = 1,$ find the smallest possible value of $4a_2 + 5a_3.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ be the common ratio.  Then $a_2 = r$ and $a_3 = r^2,$ so\n\\[4a_2 + 5a_3 = 4r + 5r^2 = 5 \\left( r + \\frac{2}{5} \\right)^2 - \\frac{4}{5}.\\]Thus, the minimum value is $\\boxed{-\\frac{4}{5}},$ which occurs when $r = -\\frac{2}{5}.$"
+}

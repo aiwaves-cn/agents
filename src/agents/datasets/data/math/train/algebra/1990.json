@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least value of $y$ such that $3y^2 + 5y + 2 = 4$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We proceed as follows: \\begin{align*}\n3y^2 + 5y + 2 &= 4\\\\\n3y^2 + 5y - 2 &= 0\\\\\n(3y - 1)(y + 2) &= 0.\n\\end{align*}This gives us $y = \\frac{1}{3}$ or $y = -2.$ Of these, $y = \\boxed{-2}$ is the smaller value, and thus is our answer."
+}

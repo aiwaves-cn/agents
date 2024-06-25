@@ -1,0 +1,6 @@
+{
+    "problem": "Expand $(x+10)(2y+10)$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We apply the distributive property repeatedly:\n\n\\begin{align*}\n(x+10)(2y+10) &= x(2y+10) + 10(2y+10)\\\\\n&= x\\cdot 2y + x\\cdot 10 + 10\\cdot 2y + 10\\cdot 10\\\\\n&= \\boxed{2xy + 10x + 20y + 100}.\n\\end{align*}"
+}

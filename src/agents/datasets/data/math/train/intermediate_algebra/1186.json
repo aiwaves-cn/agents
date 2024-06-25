@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $x^3 - 4x^2 + 5x - \\frac{19}{10} = 0$ has real roots $r,$ $s,$ and $t.$  Find the area of the triangle with sides $r,$ $s,$ and $t.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $K$ be the area of the triangle, and let $p$ be the semi-perimeter.  Then by Heron's formula,\n\\[K^2 = p(p - r)(p - s)(p - t).\\]By Vieta's formulas, $r + s + t = 4,$ so $p = 2.$  Also, since $r,$ $s,$ $t$ are the roots of $x^3 - 4x^2 + 5x - \\frac{19}{10},$\n\\[x^3 - 4x^2 + 5x - \\frac{19}{10} = (x - r)(x - s)(x - t).\\]Setting $x = 2,$ we get\n\\[(2 - r)(2 - s)(2 - t) = \\frac{1}{10}.\\]Then\n\\[K^2 = 2(2 - r)(2 - s)(2 - t) = \\frac{1}{5},\\]so $K = \\sqrt{\\frac{1}{5}} = \\boxed{\\frac{\\sqrt{5}}{5}}.$"
+}

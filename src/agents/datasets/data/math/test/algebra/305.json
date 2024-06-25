@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of $f(x)=\\frac{2x}{x^2-5x-14}$ has vertical asymptotes $x=a$ and $x=b$, and horizontal asymptote $y=c$.  Find $a+b+c$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Vertical asymptotes occur at values of $x$ where the denominator is 0.  We can factor the denominator into $(x-7)(x+2)$, so the denominator equals 0 when $x=7$ or $x=-2$. Those $x$-values are where our vertical asymptotes are located.\n\nFor horizontal asymptotes, we look at the degree of $x$ in the numerator and the denominator. The degree of the numerator is 1, and the degree of the denominator is 2, so the denominator grows faster than the numerator for large values of $x$, and the function approaches the horizontal asymptote $y=0$. We can also see that when we divide $x$ out of the numerator and denominator, we get \\[\\frac{2x}{x^2 - 5x - 14} = \\frac{\\frac{2x}{x}}{\\frac{x^2-5x-14}{x}}=\\frac{2}{x-5-\\frac{14}{x}}.\\]As $x$ approaches infinity or negative infinity, the expression approaches 0.\n\nSo, our answer is $7 + (-2) + 0 = \\boxed{5}$."
+}

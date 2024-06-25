@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\tan 20^\\circ + 4 \\sin 20^\\circ.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\tan 20^\\circ + 4 \\sin 20^\\circ &= \\frac{\\sin 20^\\circ}{\\cos 20^\\circ} + 4 \\sin 20^\\circ \\\\\n&= \\frac{\\sin 20^\\circ + 4 \\sin 20^\\circ \\cos 20^\\circ}{\\cos 20^\\circ}.\n\\end{align*}By double angle formula,\n\\[\\frac{\\sin 20^\\circ + 4 \\sin 20^\\circ \\cos 20^\\circ}{\\cos 20^\\circ} = \\frac{\\sin 20^\\circ + 2 \\sin 40^\\circ}{\\cos 20^\\circ}.\\]Then by sum-to-product,\n\\begin{align*}\n\\frac{\\sin 20^\\circ + 2 \\sin 40^\\circ}{\\cos 20^\\circ} &= \\frac{\\sin 20^\\circ + \\sin 40^\\circ + \\sin 40^\\circ}{\\cos 20^\\circ} \\\\\n&= \\frac{2 \\sin 30^\\circ \\cos 10^\\circ + \\sin 40^\\circ}{\\cos 20^\\circ} \\\\\n&= \\frac{\\cos 10^\\circ + \\sin 40^\\circ}{\\cos 20^\\circ} \\\\\n&= \\frac{\\cos 10^\\circ + \\cos 50^\\circ}{\\cos 20^\\circ}.\n\\end{align*}Again by sum-to-product,\n\\[\\frac{\\cos 10^\\circ + \\cos 50^\\circ}{\\cos 20^\\circ} = \\frac{2 \\cos 30^\\circ \\cos 20^\\circ}{\\cos 20^\\circ} = 2 \\cos 30^\\circ = \\boxed{\\sqrt{3}}.\\]"
+}

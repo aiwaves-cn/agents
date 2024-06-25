@@ -1,0 +1,6 @@
+{
+    "problem": "Given the areas of the three squares in the figure, what is the area of the interior triangle? [asy]\n/* AMC8 2003 #6 Problem */\ndraw((0,0)--(12,0)--(12,5)--cycle);\ndraw((12,0)--(17,0)--(17,5)--(12,5));\ndraw((0,0)--(0,-12)--(12,-12)--(12,0));\ndraw((0,0)--(-5,12)--(7,17)--(12,5));\ndraw((11,0)--(11,1)--(12,1));\nlabel(\"169\", (4, 8));\nlabel(\"25\", (14.5, 2.5));\nlabel(\"144\", (6, -6));\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Each leg of the right triangle is a side of one of the squares.  Therefore, the legs of the right triangle have lengths $\\sqrt{25}=5$ and $\\sqrt{144}=12$, so the area of the triangle is $\\frac12(5)(12) = \\boxed{30}$."
+}

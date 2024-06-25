@@ -1,0 +1,6 @@
+{
+    "problem": "How many interior diagonals does an icosahedron have?  (An $\\emph{icosahedron}$ is a 3-dimensional figure with 20 triangular faces and 12 vertices, with 5 faces meeting at each vertex.  An $\\emph{interior}$ diagonal is a segment connecting two vertices which do not lie on a common face.)",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are 12 vertices in the icosahedron, so from each vertex there are potentially 11 other vertices to which we could extend a diagonal.  However, 5 of these 11 points are connected to the original point by an edge, so they are not connected by interior diagonals.  So each vertex is connected to 6 other points by interior diagonals.  This gives a preliminary count of $12 \\times 6 = 72$ interior diagonals.  However, we have counted each diagonal twice (once for each of its endpoints), so we must divide by 2 to correct for this overcounting, and the answer is $\\dfrac{12 \\times 6}{2} = \\boxed{36}$ diagonals."
+}

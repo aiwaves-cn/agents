@@ -1,0 +1,6 @@
+{
+    "problem": "What is the base 4 representation of the base 2 number $11011000_2$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Instead of converting to base 10 and then to base 4, we use the fact that $2^2=4$. We have $11011000_2=1\\cdot2^7+1\\cdot2^6+1\\cdot2^4+1\\cdot2^3$ $=2\\cdot(2^2)^3+1\\cdot(2^2)^3+1\\cdot(2^2)^2+2\\cdot(2^2)^1$ $=3\\cdot4^3+1\\cdot4^2+2\\cdot4^1+0\\cdot4^0=\\boxed{3120_4}$."
+}

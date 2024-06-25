@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $82^3 + 3(82^2)(18) + 3(82)(18^2) + 18^3$?  (No calculators!  And see if you can do it in your head!)",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The given expression is the expansion of $(82+18)^3$.  In general, the cube of $(x+y)$ is \\[(x+y)^3 = 1x^3+3x^2y+3xy^2+1y^3.\\]The first and last terms in the given expression are cubes and the middle two terms both have coefficient 3, giving us a clue that this is a cube of a binomial and can be written in the form \\[(x+y)^3\\]In this case, $x=82$ and $y=18$, so our answer is\\[(82+18)^3\\ = 100^3 = \\boxed{1,\\!000,\\!000}\\]"
+}

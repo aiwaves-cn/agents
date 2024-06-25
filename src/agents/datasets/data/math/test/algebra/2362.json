@@ -1,0 +1,6 @@
+{
+    "problem": "If the sum of the squares of nonnegative real numbers $a,b,$ and $c$ is $13$, and $ab + bc + ca = 6$, then what is the sum of $a,b,$ and $c$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since $$(a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca = (13) + 2(6) = 25,$$ it follows that $a+b+c = \\pm 5$. Since $a,b,c \\ge 0$ we find $a+b+c=\\boxed{5}$."
+}

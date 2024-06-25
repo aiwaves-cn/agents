@@ -1,0 +1,6 @@
+{
+    "problem": "A Senate committee consists of 5 Republicans, 6 Democrats, and 2 Independents.  A subcommittee of 3 members is randomly chosen.  What is the probability that the subcommittee consists of 1 Republican, 1 Democrat, and 1 Independent?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are 5 ways to choose a Republican, 6 ways to choose a Democrat, and 2 ways to choose an Independent for a total of $5 \\times 6 \\times 2 = 60$ different subcommittees of a Republican, Democrat, and Independent.   There are $\\binom{13}{3} = \\dfrac{13\\cdot12\\cdot 11}{3\\cdot 2\\cdot 1} = 286$ ways to choose 3 people from 13 to form a committee, so there are 286 possible committees. Therefore, the probability that the subcommittee is made up of a Republican, Democrat, and Independent is $\\dfrac{60}{286} = \\boxed{\\dfrac{30}{143}}$ ."
+}

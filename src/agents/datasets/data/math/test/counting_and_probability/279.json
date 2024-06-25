@@ -1,0 +1,6 @@
+{
+    "problem": "A box contains exactly five chips, three red and two white. Chips are randomly removed one at a time without replacement until all the red chips are drawn or all the white chips are drawn. What is the probability that the last chip drawn is white?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Think of continuing the drawing until all five chips are removed from the box. There are ten possible orderings of the colors: RRRWW, RRWRW, RWRRW, WRRRW, RRWWR, RWRWR, WRRWR, RWWRR, WRWRR, and WWRRR. The six orderings that end in R represent drawings that would have ended when the second white chip was drawn. Therefore, the probability that the last chip drawn is white if we stop at the last red or the last white is $6/10 = \\boxed{\\frac{3}{5}}.$\n\nOR\n\nImagine drawing until only one chip remains. If the remaining chip is red, then that draw would have ended when the second white chip was removed. The remaining chip will be red with probability $3/5,$ which means that the probability is $\\boxed{\\frac{3}{5}}$ that the last chip drawn from the box is white."
+}

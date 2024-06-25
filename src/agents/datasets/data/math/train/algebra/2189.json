@@ -1,0 +1,6 @@
+{
+    "problem": "Two arithmetic sequences $A$ and $B$ both begin with 30 and have common differences of absolute value 10, with sequence $A$ increasing and sequence $B$ decreasing. What is the absolute value of the difference between the 51st term of sequence $A$ and the 51st term of sequence $B$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The $n$th term of an arithmetic sequence whose first term is $a_1$ and whose common difference is $d$ is $a_n=a_1+d(n-1)$.  Therefore, the $n$th term of $A$ is $30+10(n-1)$, and the $n$th term of $B$ is $30-10(n-1)$.  Therefore, the positive difference between the $n$th term of $A$ and the $n$th term of $B$ is $30+10(n-1)-[30-10(n-1)]=20(n-1)$.  Substituting $n=51$, we find that the positive difference between the 51st terms of $A$ and $B$ is $\\boxed{1000}$."
+}

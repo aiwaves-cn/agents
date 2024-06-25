@@ -1,0 +1,6 @@
+{
+    "problem": "What is $6^{12} \\div 36^5$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We can express a power of 36 as a power of 6, since $36 = 6^2$.  Then, $36^5 = 6^{10}$.  Dividing, we get $6^{12} \\div 6^{10} = 6^{12-10}= 6^2$. This gives us $\\boxed{36}$."
+}

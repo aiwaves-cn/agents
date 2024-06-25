@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\triangle ABC$ be a right triangle such that $B$ is a right angle. A circle with diameter of $BC$ meets side $AC$ at $D.$ If $AD = 1$ and $BD = 4,$ then what is $CD$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "We might try sketching a diagram: [asy]\npair pA, pB, pC, pO, pD;\npA = (-5, 0);\npB = (0, 0);\npC = (0, 20);\npO = (0, 10);\npD = (-80/17, 20/17);\ndraw(pA--pB--pC--pA);\ndraw(pD--pB);\ndraw(circle(pO, 10));\nlabel(\"$A$\", pA, SW);\nlabel(\"$B$\", pB, S);\nlabel(\"$C$\", pC, N);\nlabel(\"$D$\", pD, NE);\n[/asy] Since $BC$ is a diameter of the circle, that makes $\\angle BDC$ a right angle. Then, by $AA$ similarity, we see that $\\triangle ADB \\sim \\triangle BDC \\sim \\triangle ABC.$ Then, $\\frac{BD}{AD} = \\frac{CD}{BD},$ so $CD = \\frac{BD^2}{AD} = \\frac{4^2}{1} = \\boxed{16}.$"
+}

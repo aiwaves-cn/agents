@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\left(\\dfrac{-1+i\\sqrt{3}}{2}\\right)^6+\\left(\\dfrac{-1-i\\sqrt{3}}{2}\\right)^6.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[(-1 + i \\sqrt{3})^2 = (-1 + i \\sqrt{3})(-1 + i \\sqrt{3}) = 1 - 2i \\sqrt{3} - 3 = -2 - 2i \\sqrt{3},\\]and\n\\[(-1 + i \\sqrt{3})^3 = (-1 + i \\sqrt{3})(-2 - 2i \\sqrt{3}) = 2 + 2i \\sqrt{3} - 2i \\sqrt{3} + 6 = 8,\\]so $(-1 + i \\sqrt{3})^6 = 64.$  Then\n\\[\\left( \\frac{-1 + i \\sqrt{3}}{2} \\right)^6 = \\frac{64}{2^6} = 1.\\]Similarly,\n\\[\\left( \\frac{-1 - i \\sqrt{3}}{2} \\right)^6 = \\frac{64}{2^6} = 1,\\]so the expression is equal to $\\boxed{2}.$"
+}

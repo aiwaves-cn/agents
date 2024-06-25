@@ -1,0 +1,6 @@
+{
+    "problem": "Find $x$, such that $\\log_{64^{\\frac{1}{3}}}4^x=1$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Writing the equation $\\log_{64^{\\frac{1}{3}}}4^x=1$ in exponential form gives $(64^{\\frac{1}{3}})^1=4^x$. This can be rewritten as $4^{3^{(\\frac{1}{3})}}=4^{x}$, which means that $4^1=4^x$. Therefore, $x=\\boxed{1}$."
+}

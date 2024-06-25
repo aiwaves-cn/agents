@@ -1,0 +1,6 @@
+{
+    "problem": "For what values of $j$ does the equation $(2x+7)(x-5) = -43 + jx$ have exactly one real solution? Express your answer as a list of numbers, separated by commas.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We begin by simplifying the left-hand side of the equation and subtracting $-43+jx$ from both sides. We get $2x^2+(-3-j)x+8=0$. For this quadratic to have exactly one real root, the discriminant $b^2-4ac$ must be equal to $0$. Thus, we require $(-3-j)^2-4(2)(8) = 0$. Solving, we get that $j=\\boxed{5,\\,-11}$."
+}

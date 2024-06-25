@@ -1,0 +1,6 @@
+{
+    "problem": "How many prime numbers have squares between 100 and 300?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Since $10^2 =100$, $17^2 = 289$, and $18^2=324$, we know that the integers whose squares are between 100 and 300 are the integers between 10 and 18.  Between 10 and 18, 3 primes exist: 11, 13, 17, thus the answer is $\\boxed{3}$."
+}

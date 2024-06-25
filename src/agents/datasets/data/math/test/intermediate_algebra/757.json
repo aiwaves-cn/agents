@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the value of the infinite sum\n\\[\\sum_{n = 17}^\\infty \\frac{\\binom{n}{15}}{\\binom{n}{17}}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[\\frac{\\binom{n}{15}}{\\binom{n}{17}} = \\frac{~\\frac{n!}{15! (n - 15)!}~}{~\\frac{n!}{17! (n - 17!)}~} = \\frac{17! (n - 17)!}{15! (n - 15)!} = \\frac{17 \\cdot 16}{(n - 15)(n - 16)}.\\]By partial fractions,\n\\[\\frac{1}{(n - 15)(n - 16)} = \\frac{1}{n - 16} - \\frac{1}{n - 15}.\\]We can also observe that\n\\[\\frac{1}{(n - 15)(n - 16)} = \\frac{(n - 15) - (n - 16)}{(n - 15)(n - 16)} = \\frac{1}{n - 16} - \\frac{1}{n - 15}.\\]Therefore,\n\\begin{align*}\n\\sum_{n = 17}^\\infty \\frac{\\binom{n}{15}}{\\binom{n}{17}} &= 272 \\sum_{n = 17}^\\infty \\frac{1}{(n - 15)(n - 16)} \\\\\n&=272 \\sum_{n = 17}^\\infty \\left( \\frac{1}{n - 16} - \\frac{1}{n - 15} \\right) \\\\\n&= 272 \\left[ \\left( 1 - \\frac{1}{2} \\right) + \\left( \\frac{1}{2} - \\frac{1}{3} \\right) + \\left( \\frac{1}{3} - \\frac{1}{4} \\right) + \\dotsb \\right] \\\\\n&= \\boxed{272}.\n\\end{align*}"
+}

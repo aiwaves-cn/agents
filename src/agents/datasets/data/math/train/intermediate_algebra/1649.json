@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p,$ $q,$ $r,$ $s$ be real numbers such that $p  +q + r + s = 8$ and\n\\[pq + pr + ps + qr + qs + rs = 12.\\]Find the largest possible value of $s.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Squaring the equation $p + q + r + s = 8,$ we get\n\\[p^2 + q^2 + r^2 + s^2 + 2(pq + pr + ps + qr + qs + rs) = 64.\\]Hence, $p^2 + q^2 + r^2 + s^2 = 64 - 2 \\cdot 12 = 40.$\n\nBy Cauchy-Schwarz,\n\\[(1^2 + 1^2 + 1^2)(p^2 + q^2 + r^2) \\ge (p + q + r)^2.\\]Then $3(40 - s^2) \\ge (8 - s)^2.$  Expanding, we get $120 - 3s^2 \\ge 64 - 16s + s^2,$ so $4s^2 - 16s - 56 \\le 0.$  Dividing by 4, we get $s^2 - 4s - 14 \\le 0.$  By the quadratic formula, the roots of the corresponding equation $x^2 - 4x - 14 = 0$ are\n\\[x = 2 \\pm 3 \\sqrt{2},\\]so $s \\le 2 + 3 \\sqrt{2}.$\n\nEquality occurs when $p = q = r = 2 - \\sqrt{2},$ so the maximum value of $s$ is $\\boxed{2 + 3 \\sqrt{2}}.$"
+}

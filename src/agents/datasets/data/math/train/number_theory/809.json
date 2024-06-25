@@ -1,0 +1,6 @@
+{
+    "problem": "What is the modular inverse of $11$, modulo $1000$?\n\nExpress your answer as an integer from $0$ to $999$, inclusive.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We know that the modular inverse exists because $11$ and $1000$ are relatively prime. Notice that $1000 = 10^3$ and that $11 = 10 + 1$. Since $11 \\cdot 11^{-1} \\equiv 1 \\pmod{1000}$, it follows that $(10+1) \\cdot 11^{-1} = 10^3k + 1$ for some integer $k$. We recognize the potential sum of cubes factorization: if $k=1$, then $$10^3 + 1 = 1001 = 11 \\cdot (10^2 - 10 + 1) = 11 \\cdot 91.$$Thus, $11^{-1} \\equiv \\boxed{91} \\pmod{1000}$."
+}

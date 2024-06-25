@@ -1,0 +1,6 @@
+{
+    "problem": "Find all solutions to the equation \\[\\frac{\\left(\\frac{x}{x+1}\\right)^2 + 11}{\\left(\\frac{x}{x+1}\\right)^2 + 1} = 2.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We make the substitution $y = \\left(\\frac{x}{x+1}\\right)^2$ to simplify the equation, so that \\[\\frac{y+11}{y+1} = 2.\\]Multiplying by $y+1$ gives $y+11 = 2y+2,$ so $y=9.$ Therefore, we have \\[\\frac{x}{x+1} = \\pm 3.\\]Then, either $x = 3(x+1)$ or $x = -3(x+1).$ These give solutions $x =\\boxed{ -\\tfrac32}$ and $x = \\boxed{-\\tfrac34},$ respectively."
+}

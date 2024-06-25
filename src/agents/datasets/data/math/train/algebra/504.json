@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x = \\frac{5}{7}$ is a solution to the equation $56 x^2 + 27 = 89x - 8,$ what is the other value of $x$ that will solve the equation? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First of all, let us place everything to one side: \\begin{align*}\n56x^2 + 27 &= 89x - 8\\\\\n56x^2 - 89x + 35 &= 0.\n\\end{align*}Now we must factor. Knowing that $x = \\frac{5}{7}$ is a solution to this equation, we can reason that $(7x - 5)$ must be one of the factors of $56x^2 - 89x + 35$ which means that $(8x - 7)$ must be the other factor, since the linear terms must multiply to $56x^2$ and the constant terms must multiply to $35.$\n\nWe can easily verify that indeed, $56x^2 - 89x + 35 = (7x - 5)(8x - 7),$ therefore $x = \\boxed{\\frac{7}{8}}$ is our answer."
+}

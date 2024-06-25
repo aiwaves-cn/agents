@@ -1,0 +1,6 @@
+{
+    "problem": "If $12^2 \\cdot 18^3 = 2^x \\cdot 3^y$, find $x+y$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We write $12$ and $18$ as products of $2$s and $3$s: \\begin{align*}\n12^2 \\cdot 18^3 &= (2^2 \\cdot 3)^2 \\cdot (2 \\cdot 3^2)^3 \\\\\n&= (2^4 \\cdot 3^2) \\cdot (2^3 \\cdot 3^6) \\\\\n&= 2^{4+3} \\cdot 3^{2+6}\\\\\n&= 2^7 \\cdot 3^8 \\\\\n\\end{align*}Therefore, $x+y = 7+8 = \\boxed{15}$."
+}

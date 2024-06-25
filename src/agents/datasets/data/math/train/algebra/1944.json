@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all numbers $x$ satisfying $x+25/x = 10.$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Multiplying both sides by $x$ and then subtracting $10x$ from each side gives $x^2 - 10 x + 25 = 0.$ The quadratic factors to give $(x-5)^2 = 0,$ so $x-5 = 0,$ and $x=5$ is the only solution. Thus the answer is $\\boxed{5}.$\n\nNote: We might want to use the fact that the sum of the solutions to a quadratic $ax^2+bx+c = 0$ is given by $-b/a,$ but be careful! That fact counts double roots twice for the purpose of the sum, but this problem only counts it once, since $x=5$ is the only solution."
+}

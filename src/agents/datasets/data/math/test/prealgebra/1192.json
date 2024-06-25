@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest number of marbles that could be divided up either into bags of $18$ marbles or into bags of $42$ marbles, with no marbles left over in each case?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The smallest number of marbles that can be broken up into bags of $18$ or bags of $42$ must be the least common multiple of both $18$ and $42$.  Factoring, $18 = 2\\cdot 3^2$ and $42 = 2\\cdot 3\\cdot 7$.  The prime factorization of the least common multiple must include $2$, $3^2$, and $7$, and no other primes.  Thus, the answer is $2\\cdot 3^2 \\cdot 7 = \\boxed{126}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given a right triangle whose side lengths are all integer multiples of 8, how many units are in the smallest possible perimeter of such a triangle?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The smallest right triangle with integer lengths is the $3 - 4 - 5$ right triangle.  Since none of those lengths are multiples of 8, we must scale each side up by a factor of 8 to create a right triangle whose side lengths are all integer multiples of 8.  This triangle has perimeter $3\\cdot 8 + 4 \\cdot 8 + 5 \\cdot 8 = (3 + 4 + 5 )\\cdot 8 = 12\\cdot 8 = \\boxed{96}$ units."
+}

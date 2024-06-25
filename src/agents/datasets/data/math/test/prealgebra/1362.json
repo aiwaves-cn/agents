@@ -1,0 +1,6 @@
+{
+    "problem": "Three circular arcs of radius 5 units bound the region shown. Arcs $AB$ and $AD$ are quarter-circles, and arc $BCD$ is a semicircle. What is the area, in square units, of the region? [asy]\n/* AMC8 2000 #19 Problem */\ndraw((0,0)..(1,1)..(2,0));\ndraw((0,0)..(.7,-.3)..(1,-1));\ndraw((1,-1)..(1.3, -0.3)..(2,0));\nlabel(\"$A$\", (1,-1), SW);\nlabel(\"$B$\", (0,0), W);\nlabel(\"$C$\", (1,1),N);\nlabel(\"$D$\", (2,0),E);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Slide I into III and II into IV as indicated by the arrows to create the $5\\times 10$ rectangle, which has area $\\boxed{50}.$ [asy]\n/* AMC8 2000 #19 Solution (only 1 needed - 2nd provided) */\ndraw((0,0)..(1,1)..(2,0));\ndraw((0,0)..(.7,-.3)..(1,-1));\ndraw((1,-1)..(1.3, -0.3)..(2,0));\ndraw((0,0)--(0,-1)--(2,-1)--(2,0));\ndraw((.6,.4)--(1.5,-0.5),EndArrow);\ndraw((1.4,.4)--(.5,-0.5),EndArrow);\ndraw((0,0)--(2,0),linetype(\"4 4\"));\ndraw((1,1)--(1,-1),linetype(\"4 4\"));\nlabel(\"I\", (.5,.5));\nlabel(\"II\", (1.5,.5));\nlabel(\"IV\", (0.4, -0.6));\nlabel(\"III\", (1.6, -0.6));\n[/asy]"
+}

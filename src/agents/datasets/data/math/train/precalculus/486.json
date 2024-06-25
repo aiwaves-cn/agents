@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a} = \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} -5 \\\\ 2 \\end{pmatrix}.$  Find the area of the triangle with vertices $\\mathbf{0},$ $\\mathbf{a},$ and $\\mathbf{b}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The area of the triangle formed by $\\mathbf{0},$ $\\mathbf{a},$ and $\\mathbf{b}$ is half the area of the parallelogram formed by $\\mathbf{0},$ $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{a} + \\mathbf{b}.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, O;\n\nA = (3,1);\nB = (-5,2);\nO = (0,0);\n\ndraw(O--A,Arrow(6));\ndraw(O--B,Arrow(6));\ndraw(A--B--(A + B)--cycle,dashed);\ndraw((-6,0)--(4,0));\ndraw((0,-1)--(0,4));\n\nlabel(\"$\\mathbf{a}$\", A, E);\nlabel(\"$\\mathbf{b}$\", B, W);\nlabel(\"$\\mathbf{a} + \\mathbf{b}$\", A + B, N);\nlabel(\"$\\mathbf{0}$\", O, SW);\n[/asy]\n\nThe area of the parallelogram formed by $\\mathbf{0},$ $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{a} + \\mathbf{b}$ is\n\\[|(3)(2) - (-5)(1)| = 11,\\]so the area of the triangle is $\\boxed{\\frac{11}{2}}.$"
+}

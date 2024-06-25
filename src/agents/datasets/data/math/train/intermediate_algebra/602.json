@@ -1,0 +1,6 @@
+{
+    "problem": "A parabola has focus $(3,3)$ and directrix $3x + 7y = 21.$  Express the equation of the parabola in the form\n\\[ax^2 + bxy + cy^2 + dx + ey + f = 0,\\]where $a,$ $b,$ $c,$ $d,$ $e,$ $f$ are integers, $a$ is a positive integer, and $\\gcd(|a|,|b|,|c|,|d|,|e|,|f|) = 1.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $(x,y)$ be a point on the parabola.  The distance from $(x,y)$ to the focus is\n\\[\\sqrt{(x - 3)^2 + (y - 3)^2}.\\]The distance from $(x,y)$ to the line $3x + 7y - 21 = 0$ is\n\\[\\frac{|3x + 7y - 21|}{\\sqrt{3^2 + 7^2}} = \\frac{|3x + 7y - 21|}{\\sqrt{58}}.\\]By definition of the parabola, these distances are equal.  Hence,\n\n\\[\\sqrt{(x - 3)^2 + (y - 3)^2} = \\frac{|3x + 7y - 21|}{\\sqrt{58}}.\\]Squaring both sides, we get\n\\[(x - 3)^2 + (y - 3)^2 = \\frac{(3x + 7y - 21)^2}{58}.\\]This simplifies to $\\boxed{49x^2 - 42xy + 9y^2 - 222x - 54y + 603 = 0}.$"
+}

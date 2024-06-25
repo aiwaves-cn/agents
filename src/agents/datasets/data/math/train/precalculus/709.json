@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate\n\\[\\log_{10}(\\tan 1^{\\circ})+\\log_{10}(\\tan 2^{\\circ})+\\log_{10}(\\tan 3^{\\circ})+\\cdots+\\log_{10}(\\tan 88^{\\circ})+\\log_{10}(\\tan 89^{\\circ}).\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\tan (90^\\circ - x) = \\frac{\\sin (90^\\circ - x)}{\\cos (90^\\circ - x)} = \\frac{\\cos x}{\\sin x} = \\frac{1}{\\tan x}.\\]Then\n\\[\\log_{10} \\tan x + \\log_{10} \\tan (90^\\circ - x) = \\log_{10} (\\tan x \\tan (90^\\circ - x)) = \\log_{10} 1 = 0.\\]Summing over $x = 1^\\circ,$ $2^\\circ,$ $\\dots,$ $44^\\circ,$ the sum reduces to $\\log_{10} \\tan 45^\\circ = \\boxed{0}.$"
+}

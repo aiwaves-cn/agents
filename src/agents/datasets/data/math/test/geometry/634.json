@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, the two triangles shown have parallel bases. What is the ratio of the area of the smaller triangle to the area of the larger triangle? Express your answer as a common fraction. [asy] path p = (0,0)--dir(-60)--dir(-120)--(0,0);\ndraw(p); draw(scale(3)*p);\nlabel(\"4 cm\",dir(-60)--dir(-120),S); label(\"10 cm\",3*dir(-60)--3dir(-120),S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Because of our parallel bases, we can see that corresponding angles of the triangles must be congruent. Therefore, by AA similarity, we see that the two triangles are similar.\n\nIf two similar triangles have side ratios of $r : 1,$ the ratio of their areas must be $r^2 : 1.$ In our diagram, we see that the ratio of the sides of the smaller triangle to the sides of the larger triangle is $\\dfrac{4\\text{ cm}}{10\\text{ cm}} = \\dfrac{2}{5}.$ Therefore, the ratio of the areas is the square of that, or $\\left(\\dfrac{2}{5}\\right)^2 = \\boxed{\\dfrac{4}{25}}.$"
+}

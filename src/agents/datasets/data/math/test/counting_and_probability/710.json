@@ -1,0 +1,6 @@
+{
+    "problem": "Each day, two out of the three teams in a class are randomly selected to participate in a MATHCOUNTS trial competition. What is the probability that Team A is selected on at least two of the next three days? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We can compute this a few ways, but the numbers seem small enough that we can go ahead and just compute the probability of A being selected all three days, and the probability of A being selected exactly 2 of the three days. Team A is selected on any given day with probability $\\frac{2}{3}$, because there are ${3 \\choose 2} = 3$ possible pairs of teams, and 2 of them contain A. So, there is a $\\left(\\frac{2}{3}\\right)^3 = \\frac{8}{27}$ chance of being selected all three days. Of being selected exactly twice, there is a $\\frac{2}{3} \\cdot \\frac{2}{3} \\cdot \\frac{1}{3} \\cdot {3 \\choose 2} = \\frac{4}{9}$ chance. Adding these two yields $\\frac{8}{27} + \\frac{4}{9} = \\frac{8+12}{27} = \\boxed{\\frac{20}{27}}$."
+}

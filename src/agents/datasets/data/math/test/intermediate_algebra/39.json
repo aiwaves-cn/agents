@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P(x)$ and $Q(x)$ be distinct, non-constant polynomials such that\n\\[P(Q(x)) = P(x) Q(x)\\]for all $x.$  If $P(1) = P(-1) = 100,$ then find the polynomial $Q(x).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $m$ and $n$ be the degrees of $P(x)$ and $Q(x),$ respectively.  Then the degree of $P(Q(x))$ is $mn.$  The degree of $P(x) Q(x)$ is $m + n,$ so\n\\[mn = m + n.\\]Applying Simon's Favorite Factoring Trick, we get $(m - 1)(n - 1) = 1,$ so $m = n = 2.$\n\nLet $P(x) = ax^2 + bx + c.$  From $P(1) = P(-1) = 100,$ $a + b + c = 100$ and $a - b + c = 100.$  Taking the difference of these equations, we get $2b = 0,$ so $b = 0.$  Then from the given equation $P(Q(x)) = P(x) Q(x),$\n\\[aQ(x)^2 + c = (ax^2 + c) Q(x).\\]Then\n\\[c = (ax^2 + c) Q(x) - aQ(x)^2 = (ax^2 + c - aQ(x))Q(x).\\]The right-hand side is a multiple of $Q(x),$ so the left-hand side $c$ is also a multiple of $Q(x).$  This is possible only when $c = 0.$\n\nHence, $a = 100,$ so $P(x) = 100x^2,$ which means\n\\[100Q(x)^2 = 100x^2 Q(x).\\]Cancelling $100Q(x)$ on both sides, we get $Q(x) = \\boxed{x^2}.$"
+}

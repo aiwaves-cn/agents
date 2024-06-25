@@ -1,0 +1,6 @@
+{
+    "problem": "A number in the set $\\{50, 51, 52, 53, ... , 999\\}$ is randomly selected. What is the probability that it is a two-digit number? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "To count the number of numbers in this set, we subtract 49 from all of the numbers, giving the set $\\{1, 2, 3, \\ldots , 950 \\}$, making it obvious that there are 950 numbers total. Furthermore, the set $\\{ 50, 51, 52, \\ldots, 98, 99 \\}$ corresponds to the more easily counted $\\{ 1, 2, 3, \\ldots , 49, 50 \\}$ by subtracting 49. So, the probability of selecting a two-digit number is $\\frac{50}{950} = \\boxed{\\frac{1}{19}}$."
+}

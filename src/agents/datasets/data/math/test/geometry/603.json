@@ -1,0 +1,6 @@
+{
+    "problem": "A hemispherical cup of radius 3 inches is filled with milk. The milk is then poured into a right cylindrical container of radius 2 inches. What is the minimum number of inches in the height of the container so it can hold all of the milk? Express your answer as a decimal to the nearest tenth.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The hemisphere-shaped milk cup has volume \\[\\frac{1}{2}\\cdot \\frac{4}{3} \\pi (3^3) = 2\\cdot 3^2\\pi = 18\\pi\\] cubic inches.  A cylindrical container with height $h$ has volume \\[\\pi(2^2)(h)=4\\pi h\\] cubic inches.  The milk will fit if \\[4\\pi h \\ge 18\\pi.\\]   Dividing both sides of the inequality by $4\\pi$ gives \\[h\\ge 4.5,\\]  so the minimum height is $\\boxed{4.5}$ inches."
+}

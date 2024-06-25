@@ -1,0 +1,6 @@
+{
+    "problem": "There are nine unit triangles in the three rows of this triangle. If you add three more rows to the bottom of this triangle so that each row has 2 more unit triangles than the previous row, how many unit triangles will there be?\n\n[asy]\ndraw((0,0)--(15,26)--(30,0)--cycle);\ndraw((5,8.7)--(10,0)--(20,17.3));\ndraw((20,0)--(25,8.7)--(5,8.7));\ndraw((20,0)--(10,17.3)--(20,17.3));\n[/asy]",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are 7 triangles in the next row after the third, 9 in the next row after that, and 11 in the row after that. After adding three rows, there are $9+7+9+11=\\boxed{36}$ triangles total."
+}

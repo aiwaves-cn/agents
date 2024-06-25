@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure with circle $Q$, angle $KAT$ measures 42 degrees. What is the measure of minor arc $AK$ in degrees? [asy]\nimport olympiad; size(150); defaultpen(linewidth(0.8)); dotfactor=4;\ndraw(unitcircle);\ndraw(dir(84)--(-1,0)--(1,0));\ndot(\"$A$\",(-1,0),W); dot(\"$K$\",dir(84),NNE); dot(\"$T$\",(1,0),E); dot(\"$Q$\",(0,0),S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Since $\\angle A$ is inscribed in arc $KT$, the measure of arc $KT$ is $2\\angle A = 84^\\circ$.  Since arc $AKT$ is a semicircle, arc $KA$ has measure $180 - 84 = \\boxed{96}$ degrees."
+}

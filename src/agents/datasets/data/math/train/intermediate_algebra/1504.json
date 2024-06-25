@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of the equation \\[\\sqrt{x^2+y^2} + |y-1| = 3\\]consists of portions of two different parabolas. Compute the distance between the vertices of the parabolas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We take cases on the sign of $y-1.$ If $y \\ge 1,$ then the equation simplifies to \\[\\sqrt{x^2 + y^2} + (y-1) = 3,\\]or \\[\\sqrt{x^2+y^2} = 4-y.\\]Squaring both sides, we get $x^2 + y^2 = (4-y)^2 = y^2 -8y + 16,$ or $x^2 = -8y + 16.$ Solving for $y,$ we get \\[y = -\\frac{1}{8}x^2 + 2,\\]so the vertex of this parabola is $(0, 2).$\n\nIf $y < 1,$ then we have \\[\\sqrt{x^2+y^2} + (1-y) = 3,\\]or \\[\\sqrt{x^2+y^2} = y+2.\\]Squaring both sides, we get $x^2+y^2 = y^2+4y+4,$ and solving for $y$ gives \\[y = \\frac14x^2-1.\\]So the vertex of this parabola is $(0, -1).$\n\nThus, the distance between the vertices of the two parabolas is $|2 - (-1)| = \\boxed{3}.$ (Note that $3$ is the number that appears on the right-hand side. Is this a coincidence?)"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For what real value of $v$ is $\\frac{-21-\\sqrt{301}}{10}$ a root of $5x^2+21x+v$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We could substitute $(-21-\\sqrt{301})/10$ for $x$ in the equation, but the quadratic formula suggests a quicker approach. Substituting $5$, $21$, and $v$ into the quadratic formula gives  \\[\n\\frac{-(21)\\pm\\sqrt{(21)^2-4(5)(v)}}{2(5)}= \\frac{-21\\pm\\sqrt{441-20v}}{10}.\n\\]Setting $(-21+\\sqrt{441-20v})/10$ and $(-21-\\sqrt{441-20v})/10$ equal to $(-21-\\sqrt{301})/10$, we find no solution in the first case and $441-20v=301$ in the second case.  Solving yields $v=(301-441)/(-20)=(-140)/(-20)=\\boxed{7}$."
+}

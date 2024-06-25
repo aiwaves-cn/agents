@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive integer $n$ such that $$ 617n \\equiv 943n \\pmod{18}. $$",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The difference between $617n$ and $943n$ is a multiple of 18, so $$ \\frac{943n - 617n}{18} = \\frac{326n}{18} = \\frac{163n}{9} $$is an integer.  This means $n$ must be a multiple of 9 and the smallest possible value is $\\boxed{9}$."
+}

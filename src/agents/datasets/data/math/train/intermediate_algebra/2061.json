@@ -1,0 +1,6 @@
+{
+    "problem": "The Binomial Expansion is valid for exponents that are not integers. That is, for all real numbers $x$, $y$, and $r$ with $|x|>|y|$,\n\\[(x+y)^r=x^r+rx^{r-1}y^1+\\frac{r(r-1)}2x^{r-2}y^2+\\frac{r(r-1)(r-2)}{3!}x^{r-3}y^3+\\cdots\\]What are the first three digits to the right of the decimal point in the decimal representation of $\\left(10^{2002}+1\\right)^{10/7}$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By the formula given in the problem,\n\\[(10^{2002} + 1)^{10/7} = 10^{2860} + \\frac{10}{7} \\cdot 10^{858} + \\frac{\\frac{10}{7} \\cdot \\frac{3}{7}}{2} \\cdot 10^{-1144} + \\dotsb.\\]The only term which affect the first few digits to the right of the decimal point in this number is\n\\[\\frac{10}{7} \\cdot 10^{858} = 10^{859} \\cdot \\frac{1}{7} = 10^{859} \\cdot 0.142857142857 \\dots.\\]When 859 is divided by 6, the remainder is 1, so the portion after the decimal point is $0.428571 \\dots.$  Hence, the first three digits are $\\boxed{428}.$"
+}

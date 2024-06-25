@@ -1,0 +1,6 @@
+{
+    "problem": "How many interior diagonals does a regular nine-sided polygon have?  (An $\\emph{interior diagonal }$ is a segment connecting two vertices which do not have an edge between them.)",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are 9 vertices in the polygon, so from each vertex there are potentially 8 other vertices to which we could extend a diagonal.  However, 2 of these 8 points are connected to the original point by an edge, so they are not connected by interior diagonals.  So each vertex is connected to 6 other points by interior diagonals.  This gives a preliminary count of $9 \\times 6 = 54$ interior diagonals.  However, we have counted each diagonal twice (once for each of its endpoints), so we must divide by 2 to correct for this overcounting, and the answer is $\\dfrac{9\\times 6}{2} = \\boxed{27}$ diagonals."
+}

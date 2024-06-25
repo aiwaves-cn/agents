@@ -1,0 +1,6 @@
+{
+    "problem": "A line passes through $(4,365)$, and the $y$-intercept of the line is on or between $1$ and $9$. What is the minimum possible slope of the line?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We don't know the $y$-intercept, so let the $y$-intercept be $a$, where $1\\le a \\le 9$. Our line contains the points $(0,a)$ and $(4,365)$, so its slope is $\\frac{365-a}{4-0}=\\frac{365-a}{4}$. We are trying to find the smallest possible value of this expression, to minimize the slope. The denominator is fixed, so we must find the smallest possible value of the numerator, $365-a$. The smallest value will occur when $a$ is as large as possible, so $a=9$. Then the slope will be $\\frac{365-9}{4}=\\frac{356}{4}=\\boxed{89}$."
+}

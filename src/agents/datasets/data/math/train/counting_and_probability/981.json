@@ -1,0 +1,6 @@
+{
+    "problem": "The number 121 is a palindrome, because it reads the same backwards as forward. How many integer palindromes are between 100 and 500?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The hundreds digit can be any one of 1, 2, 3 or 4. Whatever the hundreds digit is, that fixes what the units digit can be. Then, there are 10 choices for the middle (tens) digit. So, we can construct $4 \\cdot 10 = \\boxed{40}$ palindromes by choosing the digits."
+}

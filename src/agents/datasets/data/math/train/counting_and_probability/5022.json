@@ -1,0 +1,6 @@
+{
+    "problem": "How many even integers between 4000 and 7000 have four different digits?\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The thousands digit is $\\in \\{4,5,6\\}$.\nCase $1$: Thousands digit is even\n$4, 6$, two possibilities, then there are only $\\frac{10}{2} - 1 = 4$ possibilities for the units digit. This leaves $8$ possible digits for the hundreds and $7$ for the tens places, yielding a total of $2 \\cdot 8 \\cdot 7 \\cdot 4 = 448$.\nCase $2$: Thousands digit is odd\n$5$, one possibility, then there are $5$ choices for the units digit, with $8$ digits for the hundreds and $7$ for the tens place. This gives $1 \\cdot 8 \\cdot 7 \\cdot 5= 280$ possibilities.\nTogether, the solution is $448 + 280 = \\boxed{728}$."
+}

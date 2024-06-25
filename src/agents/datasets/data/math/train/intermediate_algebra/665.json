@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive solution to\n\\[\\sqrt[3]{x + \\sqrt[3]{x + \\sqrt[3]{x + \\dotsb}}} = \\sqrt[3]{x \\sqrt[3]{x \\sqrt[3]{x \\dotsm}}}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[y = \\sqrt[3]{x \\sqrt[3]{x \\sqrt[3]{x \\dotsm}}}.\\]Then\n\\[y^3 = x \\sqrt[3]{x \\sqrt[3]{x \\dotsm}} = xy,\\]so $y^2 = x.$\n\nLet\n\\[z = \\sqrt[3]{x + \\sqrt[3]{x + \\sqrt[3]{x + \\dotsb}}}.\\]Then\n\\[z^3 = x + \\sqrt[3]{x + \\sqrt[3]{x + \\dotsb}} = x + z,\\]so $z^3 - z = x.$\n\nSince $z = y,$ $y^3 - y = x = y^2.$  Then\n\\[y^3 - y^2 - y = 0,\\]which factors as $y (y^2 - y - 1) = 0,$ so $y^2 - y - 1 = 0.$  By the quadratic formula,\n\\[y = \\frac{1 \\pm \\sqrt{5}}{2}.\\]Since $y$ is positive,\n\\[y = \\frac{1 + \\sqrt{5}}{2}.\\]Then\n\\[x = y^2 = \\boxed{\\frac{3 + \\sqrt{5}}{2}}.\\]"
+}

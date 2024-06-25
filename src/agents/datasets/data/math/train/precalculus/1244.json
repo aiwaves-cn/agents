@@ -1,0 +1,6 @@
+{
+    "problem": "In a triangle with sides of lengths $a,$ $b,$ and $c,$\n\\[(a + b + c)(a + b - c) = 3ab.\\]Find the angle opposite the side of length $c,$ in degrees.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Expanding, we get\n\\[a^2 + 2ab + b^2 - c^2 = 3ab,\\]so $a^2 - ab + b^2 = c^2.$\n\nThen by the Law of Cosines,\n\\[\\cos C = \\frac{a^2 + b^2 - c^2}{2ab} = \\frac{ab}{2ab} = \\frac{1}{2},\\]so $C = \\boxed{60^\\circ}.$"
+}

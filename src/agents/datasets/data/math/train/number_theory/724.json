@@ -1,0 +1,6 @@
+{
+    "problem": "$A, B, C$ and $D$ are distinct positive integers such that the product $AB = 60$,  the product $CD = 60$ and $A - B = C + D$ .  What is the value of $A$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Produce an exhaustive list of the pairs of factors which multiply to give 60, as well as the sum and the difference of each pair of factors.  \\begin{tabular}{ccc}\nFactors & Sum & Difference \\\\ \\hline\n(1,60) & 61 & 59 \\\\\n(2,30) & 32 & 28 \\\\\n(3,20) & 23 & 17 \\\\\n(4,15) & 19 & 11 \\\\\n(5,12) & 17 & 7 \\\\\n(6,10) & 16 & 4\n\\end{tabular} The only number which appears in both the second column and the third column is 17.  Therefore, $(A,B)=(20,3)$ and $(C,D)=(5,12)\\text{ or }(12,5)$.  In particular, $A=\\boxed{20}$."
+}

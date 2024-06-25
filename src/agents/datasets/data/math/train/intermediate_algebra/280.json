@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that $f(1) = 1$ and\n\\[f(x^2 - y^2) = (x - y) (f(x) + f(y))\\]for all real numbers $x$ and $y.$\n\nLet $n$ be the number of possible values of $f(2),$ and let $s$ be the sum of all possible values of $f(2).$  Find $n \\times s.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = y,$ we get $f(0) = 0.$\n\nSetting $x = -1$ and $y = 0,$ we get\n\\[f(1) = -f(-1),\\]so $f(-1) = -1.$\n\nSetting $y = 1$ and $y = -1,$ we get\n\\begin{align*}\nf(x^2 - 1) &= (x - 1) (f(x) + 1), \\\\\nf(x^2 - 1) &= (x + 1) (f(x) - 1),\n\\end{align*}respectively.  Hence, $(x - 1) (f(x) + 1) = (x + 1) (f(x) - 1),$ which simplifies to $f(x) = x.$  We can check that this function works.  Therefore, $n = 1$ and $s = 2,$ so $n \\times s = \\boxed{2}.$"
+}

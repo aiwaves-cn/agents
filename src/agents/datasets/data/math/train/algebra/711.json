@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $2x + y = 4$ and $x + 2y = 5$, find $5x^2 + 8xy + 5y^2$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can solve for $x$ and $y$, then plug them in to get our answer. However, there is a nicer method. Note that \\begin{align*}\n5x^2 + 8xy + 5y^2 &= (4x^2 + 4xy + y^2) + (x^2 + 4xy + 4y^2) \\\\\n&= (2x + y)^2 + (x + 2y)^2 = 4^2 + 5^2 = \\boxed{41}.\n\\end{align*}."
+}

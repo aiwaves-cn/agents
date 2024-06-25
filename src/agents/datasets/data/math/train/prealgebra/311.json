@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $\\angle PQR = 90^\\circ$.  What is the value of $x$?\n\n[asy]\nsize(100);\ndraw((0,1)--(0,0)--(1,0));\ndraw((0,0)--(.9,.47));\ndraw((0,.1)--(.1,.1)--(.1,0));\nlabel(\"$P$\",(0,1),N); label(\"$Q$\",(0,0),SW); label(\"$R$\",(1,0),E); label(\"$S$\",(.9,.47),NE);\n\nlabel(\"$2x^\\circ$\",(.15,.2)); label(\"$x^\\circ$\",(.32,-.02),N);\n\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Since $\\angle PQR=90^\\circ$, then $2x^\\circ+x^\\circ=90^\\circ$ or $3x=90$ or $x=\\boxed{30}$."
+}

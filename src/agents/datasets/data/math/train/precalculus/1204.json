@@ -1,0 +1,6 @@
+{
+    "problem": "There is an angle $\\theta$ in the range $0^\\circ < \\theta < 45^\\circ$ which satisfies\n\\[\\tan \\theta + \\tan 2 \\theta + \\tan 3 \\theta = 0.\\]Calculate $\\tan \\theta$ for this angle.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $t = \\tan \\theta.$  Then $\\tan 2 \\theta = \\frac{2t}{1 - t^2}$ and $\\tan 3 \\theta = \\frac{3t - t^3}{1 - 3t^2},$ so\n\\[t + \\frac{2t}{1 - t^2} + \\frac{3t - t^3}{1 - 3t^2} = 0.\\]This simplifies to $4t^5 - 14t^3 + 6t = 0.$  This factors as $2t(2t^2 - 1)(t^2 - 3) = 0.$\n\nSince $0^\\circ < \\theta < 45^\\circ,$ $0 < t < 1.$  The only solution in this interval is $t = \\boxed{\\frac{1}{\\sqrt{2}}}.$"
+}

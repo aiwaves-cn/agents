@@ -1,0 +1,6 @@
+{
+    "problem": "The points $(x, y)$ represented in this table lie on a straight line. The point $(13, q)$ lies on the same line. What is the value of $p + q?$ Express your answer as a decimal to the nearest tenth. $$\\begin{array}{c|c}\nx & y \\\\ \\hline\n2 & -5 \\\\\np & -14 \\\\\np+2 & -17 \\\\\n\\end{array}$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If we have two points $(x_1,y_1)$ and $(x_2,y_2)$ on a line, we can find the slope of the line by using the formula $\\dfrac{y_1-y_2}{x_1-x_2}.$ So, for the line we are given, the slope is $\\dfrac{(-5)-(-14)}{2-p}=\\dfrac{9}{2-p},$ and the slope is also $\\dfrac{(-14)-(-17)}{p-(p+2)}=\\dfrac{3}{-2}.$ Setting these values equal, we get $$\\dfrac{9}{2-p}=-\\dfrac{3}{2}.$$ Multiplying both sides by the product of the denominators and simplifying gives \\begin{align*}\n(2-p)(3)&=(-2)(9)\\\\\n6-3p&=-18 \\\\\np&=8.\n\\end{align*} Now we need to find $q.$ Using the same strategy as above, we find that \\begin{align*}\n\\frac{q-(-5)}{13-2}&=\\frac{3}{-2} \\\\\n(11)(3)&=(-2)(q+5)\\\\\n33&=-2q-10 \\\\\nq&=-21.5.\\\\\n\\end{align*} Therefore, $p+q=8+(-21.5)=\\boxed{-13.5}.$"
+}

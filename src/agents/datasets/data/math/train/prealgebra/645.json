@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common divisor of 9,009 and 14,014.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There is a pattern here: we notice that $9009 = 9000 + 9 = 9 \\times 1000 + 9 \\times 1 = 9 \\times 1001$, while similarly $14,014 = 14 \\times 1001$. Since $9$ and $14$ have no factors in common, it follows that the greatest common factor of $9,009$ and $14,014$ is $\\boxed{1001}$."
+}

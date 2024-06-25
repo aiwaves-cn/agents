@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $AB = 5$, $BC = 8$, and the length of median $AM$ is 4.  Find $AC$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Since $BC = 8$ and $M$ is the midpoint of $BC$, $BM = CM = 4$.  But $AM = 4$, so $M$ is the circumcenter of triangle $ABC$.  Furthermore, $BC$ is a diameter of the circle, so $\\angle BAC = 90^\\circ$.\n\n[asy]\n\nunitsize(2 cm);\n\npair A, B, C, M;\n\nA = dir(110);\n\nB = (-1,0);\n\nC = (1,0);\n\nM = (0,0);\n\ndraw(A--B--C--cycle);\n\ndraw(A--M);\n\ndraw(Circle(M,1));\n\nlabel(\"$A$\", A, dir(90));\n\nlabel(\"$B$\", B, SW);\n\nlabel(\"$C$\", C, SE);\n\ndot(\"$M$\", M, S);\n\n[/asy]\n\nThen by Pythagoras on right triangle $ABC$, $AC = \\sqrt{BC^2 - AB^2} = \\sqrt{8^2 - 5^2} = \\sqrt{64 - 25} = \\boxed{\\sqrt{39}}$."
+}

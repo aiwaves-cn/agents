@@ -1,0 +1,6 @@
+{
+    "problem": "In a press conference before the All-Star Game, eight All-Stars will be taking questions. Three are Cubs, three are Red Sox, and two are Yankees. If teammates insist on sitting together, how many ways can the eight All-Stars be seated in a row?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We first think of the Cubs forming a single block, denoted C, the Red Sox forming a single block R, and the Yankees forming a single block Y.  Then there are $3! = 6$ ways to arrange the three blocks in a row: $$ \\text{\\textbf{\\large CRY, CYR, RCY, RYC, YRC, YCR}.} $$Within each block, there are $3!$ ways to arrange the Cubs, $3!$ ways to arrange the Red Sox, and $2!$ ways to arrange the Yankees.  Therefore, there are $$ 3! \\times 3! \\times 3! \\times 2! = 6 \\times 6 \\times 6 \\times 2 = \\boxed{432} $$ways to seat all eight All-Stars."
+}

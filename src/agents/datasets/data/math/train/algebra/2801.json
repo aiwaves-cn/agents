@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)=f(2-x)$ for all $x$, then what line is necessarily an axis of symmetry of the graph of $y=f(x)$? (Give the simplest equation of this line.)",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "For every point $(x,y)$ on the graph of $y=f(x)$, we know $(2-x,y)$ is also on the graph of $y=f(x)$.\n\nWe have $x = 1+(x-1)$ and $2-x = 1-(x-1)$, so the geometric transformation which takes $(x,y)$ to $(2-x,y)$ is reflection across the vertical line $\\boxed{x=1}$."
+}

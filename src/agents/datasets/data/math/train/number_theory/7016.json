@@ -1,0 +1,6 @@
+{
+    "problem": "One of Euler's conjectures was disproved in the 1960s by three American mathematicians when they showed there was a positive integer such that $133^5+110^5+84^5+27^5=n^{5}$. Find the value of $n$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that $n$ is even, since the $LHS$ consists of two odd and two even numbers. By Fermat's Little Theorem, we know ${n^{5}}$ is congruent to $n$ modulo 5. Hence,\n$3 + 0 + 4 + 2 \\equiv n\\pmod{5}$\n$4 \\equiv n\\pmod{5}$\nContinuing, we examine the equation modulo 3,\n$1 - 1 + 0 + 0 \\equiv n\\pmod{3}$\n$0 \\equiv n\\pmod{3}$\nThus, $n$ is divisible by three and leaves a remainder of four when divided by 5. It's obvious that $n>133$, so the only possibilities are $n = 144$ or $n \\geq 174$. It quickly becomes apparent that 174 is much too large, so $n$ must be $\\boxed{144}$."
+}

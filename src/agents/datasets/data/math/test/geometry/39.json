@@ -1,0 +1,6 @@
+{
+    "problem": "In the arrow-shaped polygon shown below, the angles at vertices $A$, $C$, $D$, $E$, and $F$ are right angles, $BC = FG = 5$, $CD = FE = 20$, $DE = 10$, and $AB = AG$.  Find the area of polygon $ABCDEFG$.\n\n[asy]\nunitsize(1.5 cm);\n\npair A, B, C, D, E, F, G;\n\nA = (0,0);\nB = (1,1);\nC = (1,0.5);\nD = (2.5,0.5);\nE = (2.5,-0.5);\nF = (1,-0.5);\nG = (1,-1);\n\ndraw(A--B--C--D--E--F--G--cycle);\n\nlabel(\"$A$\", A, W);\nlabel(\"$B$\", B, NE);\nlabel(\"$C$\", C, S);\nlabel(\"$D$\", D, NE);\nlabel(\"$E$\", E, SE);\nlabel(\"$F$\", F, N);\nlabel(\"$G$\", G, SE);\nlabel(\"$5$\", (B + C)/2, dir(0));\nlabel(\"$20$\", (C + D)/2, N);\nlabel(\"$10$\", (D + E)/2, dir(0));\nlabel(\"$20$\", (E + F)/2, S);\nlabel(\"$5$\", (F + G)/2, dir(0));\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Quadrilateral $CDEF$ is a rectangle with area $CD \\cdot DE = 20 \\cdot 10 = 200$.  Triangle $ABG$ is right-isosceles with hypotenuse $BG = 5 + 10 + 5 = 20$.  Hence, $AB = BG/\\sqrt{2} = 20/\\sqrt{2} = 10 \\sqrt{2}$, so triangle $ABG$ has area $AB^2/2 = (10 \\sqrt{2})^2/2 = 100$.  Therefore, the area of polygon $ABCDEFG$ is $200 + 100 = \\boxed{300}$."
+}

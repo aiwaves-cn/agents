@@ -1,0 +1,6 @@
+{
+    "problem": "Kimberly borrows $1000$ dollars from Lucy, who charged interest of $5\\%$ per month (which compounds monthly). What is the least integer number of months after which Kimberly will owe more than twice as much as she borrowed?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since the amount Kimberly owes is multiplied by 1.05 each month, we want the least integer $t$ for which $1.05^t>2$. Trying some integer values of $t$, we find that $\\boxed{15}$ is the smallest that satisfies this condition."
+}

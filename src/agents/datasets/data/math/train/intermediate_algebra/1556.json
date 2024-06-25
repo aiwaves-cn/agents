@@ -1,0 +1,6 @@
+{
+    "problem": "Find the cubic polynomial $p(x)$ such that $p(1) = -7,$ $p(2) = -9,$ $p(3) = -15,$ and $p(4) = -31.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $p(x) = ax^3 + bx^2 + cx + d.$  Then from the given information,\n\\begin{align*}\na + b + c + d &= -7, \\\\\n8a + 4b + 2c + d &= -9, \\\\\n27a + 9b + 3c + d &= -15, \\\\\n64a + 16b + 4c + d &= -31.\n\\end{align*}Subtracting the first and second equations, second and third equations, and third and fourth equations, we get\n\\begin{align*}\n7a + 3b + c &= -2, \\\\\n19a + 5b + c &= -6, \\\\\n37a + 7b + c &= -16.\n\\end{align*}Again subtracting the equations in pairs, we get\n\\begin{align*}\n12a + 2b &= -4, \\\\\n18a + 2b &= -10.\n\\end{align*}Subtracting once more, we get $6a = -6,$ so $a = -1.$  Back-substituting gives us $b = 4,$ $c = -7,$ and $d = -3.$  Therefore,\n\\[p(x) = \\boxed{-x^3 + 4x^2 - 7x - 3}.\\]"
+}

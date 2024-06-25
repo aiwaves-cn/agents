@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct diagonals of a convex heptagon (7-sided polygon) can be drawn?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "From each vertex $V$, we can draw 4 diagonals: one to each vertex that is not $V$ and does not share an edge with $V$.  There are 7 vertices in a heptagon, so we might be tempted to say the answer is $7\\times 4 = 28$.  However, note that this counts each diagonal twice, one time for each vertex.  Hence there are $\\frac{28}{2} = \\boxed{14}$ distinct diagonals in a convex heptagon."
+}

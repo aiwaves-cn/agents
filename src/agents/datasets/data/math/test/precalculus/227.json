@@ -1,0 +1,6 @@
+{
+    "problem": "If $a$ and $b$ are acute angles such that $\\cos a = \\frac{3}{5}$ and $\\cos b = \\frac{5}{13},$ then find $\\cos (a + b).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Since $a$ is acute,\n\\[\\sin a = \\sqrt{1 - \\cos^2 a} = \\sqrt{\\frac{16}{25}} = \\frac{4}{5}.\\]Similarly, since $b$ is acute,\n\\[\\sin b = \\sqrt{1 - \\cos^2 b} = \\sqrt{\\frac{144}{169}} = \\frac{12}{13}.\\]Then from the angle addition formula,\n\\[\\cos (a + b) = \\cos a \\cos b - \\sin a \\sin b = \\frac{3}{5} \\cdot \\frac{5}{13} - \\frac{4}{5} \\cdot \\frac{12}{13} = \\boxed{-\\frac{33}{65}}.\\]"
+}

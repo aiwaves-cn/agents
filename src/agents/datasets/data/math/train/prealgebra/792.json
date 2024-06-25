@@ -1,0 +1,6 @@
+{
+    "problem": "A square carpet of side length 9 feet is designed with one large shaded square and eight smaller, congruent shaded squares, as shown. [asy]\n\ndraw((0,0)--(9,0)--(9,9)--(0,9)--(0,0));\n\nfill((1,1)--(2,1)--(2,2)--(1,2)--cycle,gray(.8));\n\nfill((4,1)--(5,1)--(5,2)--(4,2)--cycle,gray(.8));\n\nfill((7,1)--(8,1)--(8,2)--(7,2)--cycle,gray(.8));\n\nfill((1,4)--(2,4)--(2,5)--(1,5)--cycle,gray(.8));\n\nfill((3,3)--(6,3)--(6,6)--(3,6)--cycle,gray(.8));\n\nfill((7,4)--(8,4)--(8,5)--(7,5)--cycle,gray(.8));\n\nfill((1,7)--(2,7)--(2,8)--(1,8)--cycle,gray(.8));\n\nfill((4,7)--(5,7)--(5,8)--(4,8)--cycle,gray(.8));\n\nfill((7,7)--(8,7)--(8,8)--(7,8)--cycle,gray(.8));\n\nlabel(\"T\",(1.5,7),S);\n\nlabel(\"S\",(6,4.5),W);\n\n[/asy] If the ratios $9:\\text{S}$ and $\\text{S}:\\text{T}$ are both equal to 3 and $\\text{S}$ and $\\text{T}$ are the side lengths of the shaded squares, what is the total shaded area?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We are given that $\\frac{9}{\\text{S}}=\\frac{\\text{S}}{\\text{T}}=3.$ \\[\\frac{9}{\\text{S}}=3\\] gives us $S=3,$ so \\[\\frac{\\text{S}}{\\text{T}}=3\\] gives us $T=1$. There are 8 shaded squares with side length $\\text{T}$ and there is 1 shaded square with side length $\\text{S},$ so the total shaded area is $8\\cdot(1\\cdot1)+1\\cdot(3\\cdot3)=8+9=\\boxed{17}.$"
+}

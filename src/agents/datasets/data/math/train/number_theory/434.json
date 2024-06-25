@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common divisor of $5616$ and $11609$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We use the Euclidean algorithm.  \\begin{align*}\n\\text{gcd}\\,(5616,11609)&=\\text{gcd}\\,(5616 ,11609- 2 \\cdot 5616) \\\\\n&=\\text{gcd}\\,(5616, 377)\\\\\n&=\\text{gcd}\\,(5616-14 \\cdot 377,377)\\\\\n&=\\text{gcd}\\,(338,377)\\\\\n&=\\text{gcd}\\,(338,377-338)\\\\\n&=\\text{gcd}\\,(338,39)\\\\\n&=\\text{gcd}\\,(338 - 8 \\cdot 39,39)\\\\\n&=\\text{gcd}\\,(26,39).\n\\end{align*}We can easily find that the greatest common divisor of $26$ and $39$ is $\\boxed{13}$."
+}

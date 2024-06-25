@@ -1,0 +1,6 @@
+{
+    "problem": "Ramon sells two enchiladas and three tacos for $\\$$2.50 and he sells three enchiladas and two tacos for $\\$$2.70. Assuming a fixed price per item, what is the cost, in dollars, of three enchiladas and four tacos? Express your answer as a decimal to the nearest hundredth.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Suppose that a taco costs $t$ dollars and and enchiladas cost $e$ dollars each.  Then the given information implies that $2e + 3t = 2.50$ and $3e + 2t = 2.70$.  Multiplying the first equation by 3 yields $6e + 9t = 7.50$, and multiplying the second equation by 2 gives $6e + 4t = 5.40$.  Subtracting these two equations, we see that $5t = 2.10$.  Thus one taco costs $\\frac{2.10}{5} = .42$, and two tacos are $.84$.  Since we are given the price of three enchiladas and two tacos, we see that three enchiladas and four tacos total $2.70 + .84 = \\boxed{\\$3.54}$."
+}

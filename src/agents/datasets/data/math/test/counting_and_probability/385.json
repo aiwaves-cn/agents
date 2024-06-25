@@ -1,0 +1,6 @@
+{
+    "problem": "A regular dodecahedron is a convex polyhedron with 12 regular pentagonal faces and 20 vertices.  If two distinct vertices are chosen at random, what is the probability that the line connecting them lies inside the dodecahedron?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are a total of $\\dbinom{20}{2}=190$ ways to choose two distinct vertices.  When the line is drawn connecting these vertices, some will correspond to edges or face diagonals, and the rest will lie inside the dodecahedron. Each of the 12 pentagonal faces has 5 edges.  This makes a total of $5\\cdot12=60$ edges.  This counts each edge twice, once for each adjacent face, so there are only $60/2=30$ edges.  Each of the 12 pentagonal faces also has $5$ face diagonals.  This can be seen by drawing out an example, or remembering that an $n$ sided polygon has $\\frac{n(n-3)}{2}$ face diagonals.  This is a total of $5\\cdot 12= 60$ face diagonals.\n\nTherefore, of the 190 ways to choose two vertices, $190-30-60=100$ will give lines that lie inside the dodecahedron when connected.  The probability of selecting such a pair is then: $$\\frac{100}{190}=\\boxed{\\frac{10}{19}}$$"
+}

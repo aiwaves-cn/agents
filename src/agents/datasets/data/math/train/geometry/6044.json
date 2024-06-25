@@ -1,0 +1,6 @@
+{
+    "problem": "The inscribed circle of triangle $ABC$ is tangent to $\\overline{AB}$ at $P,$ and its radius is $21$. Given that $AP=23$ and $PB=27,$ find the perimeter of the triangle.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy] pathpen = black + linewidth(0.65); pointpen = black; pair A=(0,0),B=(50,0),C=IP(circle(A,23+245/2),circle(B,27+245/2)), I=incenter(A,B,C); path P = incircle(A,B,C); D(MP(\"A\",A)--MP(\"B\",B)--MP(\"C\",C,N)--cycle);D(P); D(MP(\"P\",IP(A--B,P))); pair Q=IP(C--A,P),R=IP(B--C,P); D(MP(\"R\",R,NE));D(MP(\"Q\",Q,NW)); MP(\"23\",(A+Q)/2,W);MP(\"27\",(B+R)/2,E); [/asy]\nLet $Q$ be the tangency point on $\\overline{AC}$, and $R$ on $\\overline{BC}$. By the Two Tangent Theorem, $AP = AQ = 23$, $BP = BR = 27$, and $CQ = CR = x$. Using $rs = A$, where $s = \\frac{27 \\cdot 2 + 23 \\cdot 2 + x \\cdot 2}{2} = 50 + x$, we get $(21)(50 + x) = A$. By Heron's formula, $A = \\sqrt{s(s-a)(s-b)(s-c)} = \\sqrt{(50+x)(x)(23)(27)}$. Equating and squaring both sides,\n\\begin{eqnarray*}  [21(50+x)]^2 &=& (50+x)(x)(621)\\\\ 441(50+x) &=& 621x\\\\ 180x = 441 \\cdot 50 &\\Longrightarrow & x = \\frac{245}{2}   \\end{eqnarray*}\nWe want the perimeter, which is $2s = 2\\left(50 + \\frac{245}{2}\\right) = \\boxed{345}$."
+}

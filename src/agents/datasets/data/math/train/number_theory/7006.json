@@ -1,0 +1,6 @@
+{
+    "problem": "What is that largest positive integer $n$ for which $n^3+100$ is divisible by $n+10$?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If $n+10 \\mid n^3+100$, $\\gcd(n^3+100,n+10)=n+10$. Using the Euclidean algorithm, we have $\\gcd(n^3+100,n+10)= \\gcd(-10n^2+100,n+10)$ $= \\gcd(100n+100,n+10)$ $= \\gcd(-900,n+10)$, so $n+10$ must divide $900$. The greatest integer $n$ for which $n+10$ divides $900$ is $\\boxed{890}$; we can double-check manually and we find that indeed $900\\mid 890^3+100$."
+}

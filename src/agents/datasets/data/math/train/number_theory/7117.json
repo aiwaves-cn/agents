@@ -1,0 +1,6 @@
+{
+    "problem": "You are given a sequence of $58$ terms; each term has the form $P+n$ where $P$ stands for the product $2 \\times 3 \\times 5 \\times\\ldots \\times 61$ of all prime numbers less than or equal to $61$, and $n$ takes, successively, the values $2, 3, 4,\\ldots, 59$. Let $N$ be the number of primes appearing in this sequence. Then $N$ is:\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 16\\qquad \\textbf{(C)}\\ 17\\qquad \\textbf{(D)}\\ 57\\qquad \\textbf{(E)}\\ 58$\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "First, note that $n$ does not have a prime number larger than $61$ as one of its factors. Also, note that $n$ does not equal $1$.\nTherefore, since the prime factorization of $n$ only has primes from $2$ to $59$, $n$ and $P$ share at least one common factor other than $1$. Therefore $P+n$ is not prime for any $n$, so the answer is $\\boxed{}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ has vertices $A(0,8)$, $B(2,0)$, $C(8,0)$.  A vertical line intersects $AC$ at $R$ and $\\overline{BC}$ at $S$, forming triangle $RSC$.  If the area of $\\triangle RSC$ is 12.5, determine the positive difference of the $x$ and $y$ coordinates of point $R$.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since $\\overline{RS}$ is vertical and $S$ lies on $\\overline{BC}$ which is horizontal, $\\triangle RSC$ has a right angle at $S$. $R$ lies on line segment $\\overline{AC}$, which has slope $\\frac{0-8}{8-0}=-1$. Since line $AC$ has a slope of $-1$, it makes an angle of $45^\\circ$ with the $x$-axis, and the angle between lines $RC$ and $SC$ is $45^\\circ$.\n\nSince $\\triangle RSC$ is right-angled at $S$ and has a $45^\\circ$ angle at $C$, then the third-angle must be $180^\\circ - 90^\\circ - 45^\\circ = 45^\\circ$, which means that the triangle is right-angled and isosceles.  Let $RS=SC=x$; then the area of $\\triangle RSC$ is $\\frac{1}{2}x^2$.  But we know that this area is 12.5, so $\\frac{1}{2}x^2 = 12.5 \\Rightarrow x^2=25$.  Since $x>0$, we have $x=5$.\n\nThus, $S$ is 5 units to the left of $C$ and has coordinates $(8-5,0)=(3,0)$.  Point $R$ is 5 units above $S$ and has coordinates $(3,0+5)=(3,5)$.  Finally, the desired difference is $5-3=\\boxed{2}$."
+}

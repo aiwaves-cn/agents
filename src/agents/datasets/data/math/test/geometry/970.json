@@ -1,0 +1,6 @@
+{
+    "problem": "The sides of a triangle with positive area have lengths 4, 6, and $x$. The sides of a second triangle with positive area have lengths 4, 6, and $y$. What is the smallest positive number that is $\\textbf{not}$ a possible value of $|x-y|$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "By the Triangle Inequality, each of $x$ and $y$ can be any number strictly between 2 and 10, so $0\\le |x-y|<8$. Therefore, the smallest positive number that is not a possible value of $|x-y|$ is $10-2=\\boxed{8}$."
+}

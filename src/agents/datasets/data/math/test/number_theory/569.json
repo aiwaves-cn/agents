@@ -1,0 +1,6 @@
+{
+    "problem": "There exist several positive integers $x$ such that $\\frac{1}{x^2+x}$ is a terminating decimal. What is the second smallest such integer?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can factor $\\frac{1}{x^2+x} = \\frac{1}{x(x+1)}$. Therefore, we want both $x$ and $x+1$ to be divisible by 2 and 5. They cannot both be even, so we have that either $x$ or $x+1$ is odd, so either $x$ or $x+1$ is a power of 5. We start by considering the power $5^0 = 1$. If $x=1$, we have the fraction $\\frac{1}{2}$, which terminates. If $x+1=1$, we get $x=0$, but then we have an invalid fraction. We now consider the power $5^1 = 5$. If $x=5$, we have the fraction $\\frac{1}{30}$, which repeats due to the factor of 3 in the denominator. If $x+1 = 5$, then $x=4$, so the fraction is $\\frac{1}{20} = 0.05$. The second smallest integer $x$ such that $\\frac{1}{x^2+x}$ is a terminating decimal is $x = \\boxed{4}$."
+}

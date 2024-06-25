@@ -1,0 +1,6 @@
+{
+    "problem": "If the first day of a month is Monday, what day of the week is the twenty-third day?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The days of the week repeat every $7$ days. So days $1, 1+7, 1+14, \\ldots$ are all on Mondays. Since day $22=1+21$ is a Monday, the twenty-third day is a $\\boxed{\\text{Tuesday}}$. In other words, if the remainder when $n$ is divided by $7$ is $1$, the $n$th day is a Monday. The remainder when $23$ is divided by $7$ is $2$, so the day is one day after Monday. That's Tuesday."
+}

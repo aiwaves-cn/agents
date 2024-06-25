@@ -1,0 +1,6 @@
+{
+    "problem": "For all positive integers $n$, let $f(n)=\\log_{2002} n^2$. Find $f(11)+f(13)+f(14)$.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nf(11) + f(13) + f(14) &= \\log_{2002} 11^2 + \\log_{2002} 13^2 + \\log_{2002} 14^2 \\\\\n&= \\log_{2002} (11^2 \\cdot 13^2 \\cdot 14^2) \\\\\n&= \\log_{2002} 2002^2 \\\\\n&= \\boxed{2}.\n\\end{align*}"
+}

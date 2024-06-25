@@ -1,0 +1,6 @@
+{
+    "problem": "A Senate committee consists of 5 Republicans, 6 Democrats, and 2 Independents.  A subcommittee of 3 members is randomly chosen.  What is the probability that the subcommittee consists of three Republicans?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{13}{3} = 286$ ways to choose a subcommittee from the committee, and $\\binom{5}{3} = 10$ ways to choose a subcommittee of all Republicans.  The chance that a random subcommittee is all Republican is $\\dfrac{10}{286} = \\boxed{\\dfrac{5}{143}}$."
+}

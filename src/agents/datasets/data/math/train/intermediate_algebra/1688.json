@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the real roots of $x^4 - 4x - 1 = 0.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We look for a factorization of $x^4 - 4x - 1$ of the form $(x^2 + ax + b)(x^2 + cx + d).$  Thus,\n\\[x^4 + (a + c) x^3 + (ac + b + d) x^2 + (ad + bc) x + bd = x^4 - 4x - 1.\\]Matching coefficients, we get\n\\begin{align*}\na + c &= 0, \\\\\nac + b + d &= 0, \\\\\nad + bc &= -4, \\\\\nbd &= -1.\n\\end{align*}From the first equation, $c = -a.$  Substituting, we get\n\\begin{align*}\n-a^2 + b+ d &= 0, \\\\\nad - ab &= -4, \\\\\nbd &= -1.\n\\end{align*}Then $b + d = a^2$ and $b - d = \\frac{4}{a},$ so $b = \\frac{a^3 + 4}{2a}$ and $d = \\frac{a^3 - 4}{2a}.$  Hence,\n\\[\\frac{(a^3 + 4)(a^3 - 4)}{4a^2} = -1.\\]This simplifies to $a^6 + 4a^2 - 16 = 0.$  This factors as\n\\[(a^2 - 2)(a^4 + 2a^2 + 8) = 0,\\]so we can take $a = \\sqrt{2}.$  Then $b = 1 + \\sqrt{2},$ $c = -\\sqrt{2},$ and $d = 1 - \\sqrt{2},$ so\n\\[x^4 - 4x - 1 = (x^2 + x \\sqrt{2} + 1 + \\sqrt{2})(x^2 - x \\sqrt{2} + 1 - \\sqrt{2}).\\]Checking the discriminants, we find that only the second quadratic factor has real roots, so the sum of the real roots is $\\boxed{\\sqrt{2}}.$"
+}

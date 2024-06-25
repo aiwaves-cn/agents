@@ -1,0 +1,6 @@
+{
+    "problem": "Two different 2-digit numbers are randomly chosen and multiplied together.  What is the probability that the resulting product is even?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Here an `outcome' is selecting two different 2-digit numbers, without regard to order.  There are 90 2-digit numbers, so this can be done in $\\binom{90}{2} = 4005$ ways.\n\nNow we need to count the successful outcomes.  Two numbers multiply together to give an even number if at least one of the original numbers is even.  To count this will require some casework.  However, casework makes us think about using complementary counting here.  We see that it's easier to count when the product of two numbers is odd: this happens when both original numbers are odd.\n\nThere are 45 odd 2-digit numbers, so two of them can be chosen in $\\binom{45}{2}= 990$ ways.  These are the unsuccessful outcomes, so there are $4005-990 = 3015$ successful outcomes.  Therefore the probability is $\\frac{3015}{4005} = \\boxed{\\frac{67}{89}}$."
+}

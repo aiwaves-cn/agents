@@ -1,0 +1,6 @@
+{
+    "problem": "The UPC code, made up of numbers and dashes, on a video tape is 9-78094-11006-$x$. The digit $x$ is in the $12^{\\mathrm{th}}$ position. Let $n$ be the value obtained by adding the digits in the odd positions, tripling that sum, and then adding the digits in the even positions. A valid UPC code is such that $n$ is divisible by 10. For what value of $x$ will this UPC code be valid?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Tripling the sum of the odd digits and adding the even digits, we get $n = (9 + 8 + 9 +1+ 0 + 6) \\cdot 3 + (7 + 0 + 4 +1 + 0) = 33 \\cdot 3 + 12 = 99 +12 = 111$. To make this value divisible by $10$, the twelfth digit must be $\\boxed{9}$."
+}

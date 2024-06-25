@@ -1,0 +1,6 @@
+{
+    "problem": "The lines $y=5x+3$, $y=-2x-25$ and $y=3x+k$ intersect at the same point. What is the value of $k$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we would like to find where $y = 5x + 3$ and $y = -2x - 25$ intersect. We can represent this geometric intersection by setting the $y$'s equal to each other, giving $5x+3 = -2x - 25$. Solving this yields $x = -4$, so $y = 5\\cdot (-4) + 3$, or $y = -17$. Now, we can plug $x$ and $y$ into the last equation to solve for $k$: $-17 = -12 + k$, so $k = \\boxed{-5}$."
+}

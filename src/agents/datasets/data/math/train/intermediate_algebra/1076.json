@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the solutions to\n\\[\\sqrt[3]{15x - 1} + \\sqrt[3]{13x + 1} = 4 \\sqrt[3]{x}.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the given equation,\n\\[\\sqrt[3]{15x - 1} + \\sqrt[3]{13x + 1} - 4 \\sqrt[3]{x} = 0.\\]We can also write this as\n\\[\\sqrt[3]{15x - 1} + \\sqrt[3]{13x + 1} + \\sqrt[3]{-64x} = 0.\\]Let $a = \\sqrt[3]{15x - 1},$ $b = \\sqrt[3]{13x + 1},$ and $c = \\sqrt[3]{-64x},$ so $a + b + c = 0.$  From the factorization\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ab - bc),\\]we have that $a^3 + b^3 + c^3 = 3abc.$  Hence,\n\\[-36x = 3 \\sqrt[3]{(15x - 1)(13x + 1)(-64x)}.\\]We can simplify this to\n\\[3x = \\sqrt[3]{(15x - 1)(13x + 1)x}.\\]Cubing both sides we, get $27x^3 = 195x^3 + 2x^2 - x,$ so $168x^3 + 2x^2 - x = 0.$  This factors as $x(14x - 1)(12x + 1) = 0,$ so the solutions are $\\boxed{0, \\frac{1}{14}, -\\frac{1}{12}}.$"
+}

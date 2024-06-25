@@ -1,0 +1,6 @@
+{
+    "problem": "200 points are equally spaced on the circumference of a circle.  How many squares can be formed with 4 of the 200 points as vertices?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "For any given one of the 200 points, we can find exactly one square with that point as one of the vertices---that point, the point diametrically opposite it, and the endpoints of the diameter that is perpendicular to the diameter formed by connecting the first two points.  Each square then accounts for 4 vertices, so there are $200/4=\\boxed{50}$ squares."
+}

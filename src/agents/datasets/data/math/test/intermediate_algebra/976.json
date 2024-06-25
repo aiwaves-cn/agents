@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the solutions to\n\\[\\sqrt{3x^2 - 8x + 1} + \\sqrt{9x^2 - 24x - 8} = 3.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can write the given equation as\n\\[\\sqrt{3x^2 - 8x + 1} + \\sqrt{3(3x^2 - 8x + 1) - 11} = 3.\\]Thus, let $y = 3x^2 - 8x + 1,$ so\n\\[\\sqrt{y} + \\sqrt{3y - 11} = 3.\\]Then $\\sqrt{3y - 11} = 3 - \\sqrt{y}.$  Squaring both sides, we get\n\\[3y - 11 = 9 - 6 \\sqrt{y} + y.\\]Then $20 - 2y = 6 \\sqrt{y},$ so $10 - y = 3 \\sqrt{y}.$  Squaring both sides, we get\n\\[y^2 - 20y + 100 = 9y.\\]Then $y^2 - 29y + 100 = 0,$ which factors as $(y - 4)(y - 25) = 0.$  Thus, $y = 4$ or $y = 25.$  But only $y = 4$ satisfies $10 - y = 3 \\sqrt{y}.$\n\nThen $3x^2 - 8x + 1 = 4,$ so\n\\[3x^2 - 8x - 3 = 0.\\]This leads to the solutions $\\boxed{3, -\\frac{1}{3}}.$  We check that these solutions work."
+}

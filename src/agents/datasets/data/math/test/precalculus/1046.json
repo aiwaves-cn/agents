@@ -1,0 +1,6 @@
+{
+    "problem": "Find the projection of the vector $\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$ onto the vector $\\begin{pmatrix} 8 \\\\ 1 \\end{pmatrix}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "From the formula for a projection,\n\\[\\operatorname{proj}_{\\begin{pmatrix} 8 \\\\ 1 \\end{pmatrix}} \\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix} = \\frac{\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix} \\cdot \\begin{pmatrix} 8 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 8 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 8 \\\\ 1 \\end{pmatrix} = \\frac{6}{65} \\begin{pmatrix} 8 \\\\ 1 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 48/65 \\\\ 6/65 \\end{pmatrix}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that there exist nonzero complex numbers $a,$ $b,$ $c,$ and $d$ such that $k$ is a root of both the equations $ax^3 + bx^2 + cx + d = 0$ and $bx^3 + cx^2 + dx + a = 0.$  Enter all possible values of $k,$ separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nak^3 + bk^2 + ck + d &= 0, \\\\\nbk^3 + ck^2 + dk + a &= 0.\n\\end{align*}Multiplying the first equation by $k,$ we get\n\\[ak^4 + bk^3 + ck^2 + dk = 0.\\]Subtracting the equation $bk^3 + ck^2 + dk + a = 0,$ we get $ak^4 = a.$  Since $a$ is nonzero, $k^4 = 1.$  Then $k^4 - 1 = 0,$ which factors as\n\\[(k - 1)(k + 1)(k^2 + 1) = 0.\\]This means $k$ is one of $1,$ $-1,$ $i,$ or $-i.$\n\nIf $a = b = c = d = 1,$ then $-1,$ $i,$ and $-i$ are roots of both polynomials.  If $a = b = c = 1$ and $d = -3,$ then 1 is a root of both polynomials.  Therefore, the possible values of $k$ are $\\boxed{1,-1,i,-i}.$"
+}

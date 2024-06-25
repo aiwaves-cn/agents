@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac mn,$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\\frac mn<90,$ find $m+n.$\n",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $s = \\sum_{k=1}^{35}\\sin 5k  = \\sin 5 + \\sin 10 + \\ldots + \\sin 175$. We could try to manipulate this sum by wrapping the terms around (since the first half is equal to the second half), but it quickly becomes apparent that this way is difficult to pull off. Instead, we look to telescope the sum. Using the identity $\\sin a \\sin b = \\frac 12(\\cos (a-b) - \\cos (a+b))$, we can rewrite $s$ as\n\\begin{align*} s \\cdot \\sin 5 = \\sum_{k=1}^{35} \\sin 5k \\sin 5 &= \\sum_{k=1}^{35} \\frac{1}{2}(\\cos (5k - 5)- \\cos (5k + 5))\\\\ &= \\frac{0.5(\\cos 0 - \\cos 10 + \\cos 5 - \\cos 15 + \\cos 10 \\ldots + \\cos 165 - \\cos 175+ \\cos 170 - \\cos 180)}{\\sin 5}\\end{align*}\nThis telescopes to\\[s = \\frac{\\cos 0 + \\cos 5 - \\cos 175 - \\cos 180}{2 \\sin 5} = \\frac{1 + \\cos 5}{\\sin 5}.\\]Manipulating this to use the identity $\\tan x = \\frac{1 - \\cos 2x}{\\sin 2x}$, we get\\[s = \\frac{1 - \\cos 175}{\\sin 175} \\Longrightarrow s = \\tan \\frac{175}{2},\\]and our answer is $\\boxed{177}$."
+}

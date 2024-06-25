@@ -1,0 +1,6 @@
+{
+    "problem": "What positive two-digit integer is exactly twice the sum of its digits?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Let the tens digit of the two-digit integer be $a$ and let its units digit be $b$.  The equation \\[\n10a+b=2(a+b)\n\\] is given.  Distributing on the right-hand side and subtracting $2a+b$ from both sides gives $8a=b$.  Since $8a>9$ for any digit $a>1$, we have $a=1$, $b=8$, and $10a+b=\\boxed{18}$."
+}

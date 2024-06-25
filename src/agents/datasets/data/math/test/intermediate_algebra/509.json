@@ -1,0 +1,6 @@
+{
+    "problem": "Find constants $A,$ $B,$ $C,$ and $D$ so that\n\\[\\frac{x^3 + 3x^2 - 12x + 36}{x^4 - 16} = \\frac{A}{x - 2} + \\frac{B}{x + 2} + \\frac{Cx + D}{x^2 + 4}.\\]Enter the ordered quadruple $(A,B,C,D).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying both sides by $(x - 2)(x + 2)(x^2 + 4),$ we get\n\\[x^3 + 3x^2 - 12x + 36 = A(x + 2)(x^2 + 4) + B(x - 2)(x^2 + 4) + (Cx + D)(x - 2)(x + 2).\\]Setting $x = 2,$ we get $32A = 32,$ so $A = 1.$\n\nSetting $x = -2,$ we get $-32B = 64,$ so $B = -2.$  Then\n\\[x^3 + 3x^2 - 12x + 36 = (x + 2)(x^2 + 4) - 2(x - 2)(x^2 + 4) + (Cx + D)(x - 2)(x + 2).\\]This simplifies to\n\\[2x^3 - 3x^2 - 8x + 12 = (Cx + D)(x - 2)(x + 2),\\]which factors as\n\\[(2x - 3)(x - 2)(x + 2) = (Cx + D)(x - 2)(x + 2).\\]Hence, $C = 2$ and $D = -3,$ so $(A,B,C,D) = \\boxed{(1,-2,2,-3)}.$"
+}

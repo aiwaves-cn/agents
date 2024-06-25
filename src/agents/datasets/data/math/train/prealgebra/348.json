@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify: $$\\dfrac{\\sqrt{338}}{\\sqrt{288}}+\\dfrac{\\sqrt{150}}{\\sqrt{96}}.$$Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We can simplify each square root first: $\\sqrt{338}=\\sqrt{2\\cdot169}=13\\sqrt2$, $\\sqrt{288}=\\sqrt{2\\cdot144}=12\\sqrt2$, $\\sqrt{150}=\\sqrt{6\\cdot25}=5\\sqrt6$, and $\\sqrt{96}=\\sqrt{6\\cdot16}=4\\sqrt6$. Now we can cancel a lot: $$\\dfrac{13\\sqrt2}{12\\sqrt2}+\\dfrac{5\\sqrt6}{4\\sqrt6}=\\dfrac{13}{12}+\\dfrac54=\\dfrac{13+15}{12}=\\dfrac{28}{12}=\\boxed{\\frac{7}{3}}.$$"
+}

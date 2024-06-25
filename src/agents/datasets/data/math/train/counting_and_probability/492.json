@@ -1,0 +1,6 @@
+{
+    "problem": "Eighty percent of adults drink coffee and seventy percent drink tea. What is the smallest possible percent of adults who drink both coffee and tea?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Adding together the percent of people who drink coffee with those who drink tea, we obtain a total of $150\\%$.  Thus, we double-counted at least $50\\%$, meaning that at least $\\boxed{50\\%}$ of adults drink both.  (The percentage who drink both ${\\it can}$ be exactly ${50\\%}$ if everybody drinks either coffee or tea; otherwise, the overlap is more than ${50\\%}$, but the problem asked for the smallest possible overlap.)"
+}

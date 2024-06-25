@@ -1,0 +1,6 @@
+{
+    "problem": "Find the quotient of the division $(3z^4-4z^3+5z^2-11z+2)/(2+3z)$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "\\[\n\\begin{array}{c|ccccc}\n\\multicolumn{2}{r}{z^3} & -2z^2&+3z&-\\frac{17}{3} \\\\\n\\cline{2-6}\n3z+2 & 3z^4 &- 4z^3 &+ 5z^2&-11z&+2   \\\\\n\\multicolumn{2}{r}{3z^4} & +2z^3  \\\\ \n\\cline{2-3}\n\\multicolumn{2}{r}{0} & -6z^3 & +5z^2   \\\\\n\\multicolumn{2}{r}{} &- 6z^3  &-4z^2  \\\\ \n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0& 9z^2 & -11z   \\\\\n\\multicolumn{2}{r}{} & & 9z^2 & +6z   \\\\\n\\cline{4-5}\n\\multicolumn{2}{r}{} & & 0 & -17z  & +2 \\\\\n\\multicolumn{2}{r}{} & &  & -17z  & -\\frac{34}{3} \\\\\n\\cline{5-6}\n\\multicolumn{2}{r}{} & &  & 0 & +\\frac{40}{3} \\\\\n\\end{array}\n\\]So the quotient is $\\boxed{z^3  -2z^2+3z-\\frac{17}{3}}$."
+}

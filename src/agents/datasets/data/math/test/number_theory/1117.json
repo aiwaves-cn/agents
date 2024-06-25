@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $24^{50} - 15^{50}$ is divided by 13.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We note that $24 \\equiv -2 \\pmod{13}$ and $15 \\equiv 2 \\pmod{13}$.  We cleverly use these congruences to set up values that vanish in the arithmetic: $$ 24^{50} - 15^{50} \\equiv (-2)^{50} - 2^{50} \\equiv 2^{50} - 2^{50} \\equiv \\boxed{0} \\pmod{13}. $$"
+}

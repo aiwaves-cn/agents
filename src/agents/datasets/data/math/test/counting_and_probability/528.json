@@ -1,0 +1,6 @@
+{
+    "problem": "A cook has 10 red peppers and 5 green peppers. If the cook selects 6 peppers at random, what is the probability that he selects at least 4 green peppers? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We can count the number of ways to choose a group of 4 green and 2 red peppers and the number of ways to choose 5 green and 1 red peppers. These are $\\binom{5}{4}\\binom{10}{2}=5\\cdot45=225$ and $\\binom{5}{5}\\binom{10}{1}=10$. The total number of ways the cook can choose peppers is $\\binom{15}{6}=5005$. Therefore, the probability that out of six randomly chosen peppers at least four will be green is $\\frac{235}{5005}=\\boxed{\\frac{47}{1001}}$."
+}

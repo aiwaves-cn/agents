@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $x,$ $0 \\le x \\le 2 \\pi,$ which satisfy\n\\[\\sin^2 x + \\cos x + 1 = 0.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Since $\\sin^2 x = 1 - \\cos^2 x,$ we get\n\\[1 - \\cos^2 x + \\cos x + 1 = 0.\\]Then $\\cos^2 x - \\cos x - 2 = 0,$ which factors as $(\\cos x - 2)(\\cos x + 1) = 0.$  Since $-1 \\le \\cos x \\le 1,$ the only possible value of $\\cos x = -1.$  The only solution in the range $0 \\le x \\le 2 \\pi$ is $x = \\boxed{\\pi}.$"
+}

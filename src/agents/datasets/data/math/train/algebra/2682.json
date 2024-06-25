@@ -1,0 +1,6 @@
+{
+    "problem": "The 3rd and 5th terms of an arithmetic sequence are 17 and 39, respectively. What is the 7th term of the same sequence?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Let the first term of the arithmetic sequence be $a$, and let the common difference be $d$.  Then the third term is $a + 2d = 17$, and the fifth term is $a + 4d = 39$.  Subtracting these equations, we get $2d = 22$.\n\nThen the seventh term is $a + 6d = (a + 4d) + 2d = 39 + 22 = \\boxed{61}$."
+}

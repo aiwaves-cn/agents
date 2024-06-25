@@ -1,0 +1,6 @@
+{
+    "problem": "Find the coefficient of $x^{49}$ in the expansion of\n\\[(x + 1)(x + 3)(x + 5) \\dotsm (x + 95)(x + 97)(x + 99).\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, the coefficient of $x^{49}$ is the negative of the sum of the roots, which is\n\\[-(-1 - 3 - 5 - \\dots - 95 - 97 - 99) = \\boxed{2500}.\\]"
+}

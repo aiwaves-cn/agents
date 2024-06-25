@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[f(x) = \\sqrt{x(50 - x)} + \\sqrt{x(2 - x)}\\]for $0 \\le x \\le 2.$  Let $M$ be the maximum value of $f(x),$ and let $x = x_0$ be the point where the maximum value is attained.  Enter the ordered pair $(x_0,M).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By Cauchy-Schwarz,\n\\[\\left[ \\sqrt{x(50 - x)} + \\sqrt{(2 - x)x} \\right]^2 \\le [(x + (2 - x))((50 - x) + x)] = 100,\\]so $f(x) \\le 10.$\n\nEquality occurs when\n\\[\\frac{x}{2 - x} = \\frac{50 - x}{x}.\\]Cross-multiplying, we get $x^2 = (2 - x)(50 - x) = x^2 - 52x + 100,$ so $x = \\frac{100}{52} = \\frac{25}{13}.$\n\nThus, $(x_0,M) = \\boxed{\\left( \\frac{25}{13}, 10 \\right)}.$"
+}

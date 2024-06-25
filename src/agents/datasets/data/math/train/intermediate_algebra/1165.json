@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\nx^2+2 &\\text{if } x<n, \\\\\n2x+5 &\\text{if }x\\ge{n}.\n\\end{cases}\n\\]If the graph $y=f(x)$ is continuous, find the sum of all possible values of $n$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "If the graph of $f(x)$ is continuous, the two pieces of the function must meet at $x=n$. In order for this to happen, we know that $n^2+2=2n+5$. Moving all the terms to one side, we are left with the quadratic $n^2-2n-3=0$. Vieta's formulas tell us that the sum of the roots of a quadratic in the form of $ax^2+bx+c$ is just $-\\frac{b}{a}$. Since the roots of this quadratic are the only possible values of $n$, our final answer is $-\\frac{2}{1}=\\boxed{2}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\sqrt{2x^2+1}=\\sqrt{19}$, find the average of all the possible values of $x.$",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "First, we start by squaring both sides of the equation \\begin{align*} (\\sqrt{2x^2+1})^2& =(\\sqrt{19})^2\n\\\\ 2x^2+1& =19\n\\\\\\Rightarrow 2x^2& =18\n\\\\\\Rightarrow x^2& =9\n\\end{align*}From here, we can see that the only possible values of $x$ are 3 and -3. Therefore the average is $\\boxed{0}$."
+}

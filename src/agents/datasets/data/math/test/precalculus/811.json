@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ be three unit vectors such that $\\mathbf{a} \\cdot \\mathbf{b} = \\mathbf{a} \\cdot \\mathbf{c} = 0,$ and the angle between $\\mathbf{b}$ and $\\mathbf{c}$ is $60^\\circ.$  Compute $|\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})|.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{b}$ and $\\mathbf{c}$ are both orthogonal to $\\mathbf{a},$ $\\mathbf{b} \\times \\mathbf{c}$ is proportional to $\\mathbf{a}.$  Also,\n\\[\\|\\mathbf{b} \\times \\mathbf{c}\\| = \\|\\mathbf{b}\\| \\|\\mathbf{c}\\| \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}.\\]Hence,\n\\[|\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})| = \\|\\mathbf{a}\\| \\|\\mathbf{b} \\times \\mathbf{c}\\| = \\boxed{\\frac{\\sqrt{3}}{2}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A math field day competition is held in a room with many tables, and there are 6 stools at each table. Each stool has 3 legs, and each table has 4 legs. If there is a total of 484 legs on all the tables and stools in the room, how many tables are in the room?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let $s$ be the number of stools in the room and $t$ be the number of tables. We are looking for the value of $t$. We can set up a system of equations to represent the given information, as follows:\n\n\\begin{align*}\ns &= 6t \\\\\n3s + 4t &= 484 \\\\\n\\end{align*}To solve for $t$, we need to eliminate $s$ from the equations above. Substitute the first equation into the second to eliminate $s$, to get $3(6t)+4t=484$, or $t=22$. Thus, there are $\\boxed{22}$ tables in the room."
+}

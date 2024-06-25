@@ -1,0 +1,6 @@
+{
+    "problem": "What is the intersection of the lines given by $y=-4x$ and $y-2=12x$? Express your answer as an ordered pair, with both coordinates expressed as common fractions.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "To find the intersection, we must find the point satisfying both equations. Hence we must solve the system \\begin{align*}\ny&=-4x, \\\\\ny-2&=12x.\n\\end{align*}Substituting the expression for $y$ in first equation into the second equation, we obtain $-4x-2=12x$. Solving for $x$ we find that $x=-\\frac{1}{8}$. Plugging this into the first expression for $y$ above, we find that $y=-4\\cdot -\\frac{1}{8}=\\frac{1}{2}$. So the intersection is $\\boxed{\\left(-\\frac{1}{8}, \\frac{1}{2}\\right)}$."
+}

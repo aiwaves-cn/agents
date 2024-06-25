@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least positive integer that satisfies the following conditions?\n\na) When divided by 2, the remainder is 1.\n\nb) When divided by 3, the remainder is 2.\n\nc) When divided by 4, the remainder is 3.\n\nd) When divided by 5, the remainder is 4.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let the smallest common solution be $a$. The given system of congruences is \\begin{align*}\na\\equiv 1\\equiv -1\\pmod 2,\\\\\na\\equiv 2\\equiv -1\\pmod 3,\\\\\na\\equiv 3\\equiv -1\\pmod 4,\\\\\na\\equiv 4\\equiv -1\\pmod 5.\n\\end{align*} Note that if $a\\equiv-1\\pmod 4$, then $a\\equiv-1\\pmod 2$ as well,  so we need only consider the final three congruences. Since $\\gcd(3,4)=\\gcd(4,5)=\\gcd(3,5)=1$, we have $$a\\equiv -1\\pmod{3\\cdot 4\\cdot 5},$$ that is, $a\\equiv 59\\pmod{60}$.\n\nSo $a$ has a lower bound of $59$, but $59$ also happens to satisfy all of the original congruences. Thus, $a=\\boxed{59}$."
+}

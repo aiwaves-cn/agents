@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[(1 + \\cot A - \\csc A)(1 + \\tan A + \\sec A).\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n(1 + \\cot A - \\csc A)(1 + \\tan A + \\sec A) &= \\left( 1 + \\frac{\\cos A}{\\sin A} - \\frac{1}{\\sin A} \\right) \\left( 1 + \\frac{\\sin A}{\\cos A} + \\frac{1}{\\cos A} \\right) \\\\\n&= \\frac{(\\sin A + \\cos A - 1)(\\cos A + \\sin A + 1)}{\\sin A \\cos A} \\\\\n&= \\frac{(\\sin A + \\cos A)^2 - 1}{\\sin A \\cos A} \\\\\n&= \\frac{\\sin^2 A + 2 \\sin A \\cos A + \\cos^2 A - 1}{\\sin A \\cos A} \\\\\n&= \\frac{2 \\sin A \\cos A}{\\sin A \\cos A} = \\boxed{2}.\n\\end{align*}"
+}

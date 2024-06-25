@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be positive real numbers such that\n\\[\\frac{1}{x + 2} + \\frac{1}{y + 2} = \\frac{1}{3}.\\]Find the minimum value of $x + 2y.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By the Cauchy-Schwarz inequality,\n\\[((x + 2) + 2(y + 2)) \\left( \\frac{1}{x + 2} + \\frac{1}{y + 2} \\right) \\ge (1 + \\sqrt{2})^2.\\]Then\n\\[x + 2 + 2y + 4 \\ge 3 (1 + \\sqrt{2})^2 = 9 + 6 \\sqrt{2},\\]so $x + 2y \\ge 3 + 6 \\sqrt{2}.$\n\nEquality occurs when $(x + 2)^2 = 2(y + 2)^2,$ or $x + 2 = (y + 2) \\sqrt{2}.$  Substituting into $\\frac{1}{x + 2} + \\frac{1}{y + 2} = \\frac{1}{3},$ we get\n\\[\\frac{1}{(y + 2) \\sqrt{2}} + \\frac{1}{y + 2} = \\frac{1}{3}.\\]Solving, we find $y = \\frac{2 + 3 \\sqrt{2}}{2}.$  Then $x = 1 + 3 \\sqrt{2}.$\n\nHence, the minimum value we seek is $\\boxed{3 + 6 \\sqrt{2}}.$"
+}

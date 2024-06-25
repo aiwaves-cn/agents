@@ -1,0 +1,6 @@
+{
+    "problem": "The Fibonacci sequence is the sequence 1, 1, 2, 3, 5, $\\ldots$ where each term is the sum of the previous two terms. What is the remainder when the $100^{\\mathrm{th}}$ term of the sequence is divided by 4?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If we look at the terms of the sequence mod 4, we see that they follow a pattern of period 6: \\begin{align*}\nF_1 &\\equiv 1\\pmod{4}, \\\\\nF_2 &\\equiv 1\\pmod{4}, \\\\\nF_3 &\\equiv 2\\pmod{4}, \\\\\nF_4 &\\equiv 3\\pmod{4}, \\\\\nF_5 &\\equiv 1\\pmod{4}, \\\\\nF_6 &\\equiv 0\\pmod{4}, \\\\\nF_7 &\\equiv 1\\pmod{4}, \\\\\nF_8 &\\equiv 1\\pmod{4},~\\ldots\n\\end{align*} Then we see that the terms repeat.  Therefore, the $100^{\\text{th}}$ term is the same as the $4^{\\text{th}}$ term, and thus has a remainder of $\\boxed{3}$ when divided by 4."
+}

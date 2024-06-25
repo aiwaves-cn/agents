@@ -1,0 +1,6 @@
+{
+    "problem": "The area of a square equals the square of a length of the side of the square. The perimeter of a square equals the sum of the lengths of all four sides. The sum of the areas of two squares is 65, while the difference in their areas is 33.  Find the sum of their perimeters.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let the side length of the larger square be $x$ and the side length of the smaller square be $y$.  We are told $x^2 + y^2 = 65$ and $x^2 - y^2 = 33$.  Adding these two equations gives $2x^2 = 98$, so $x^2 = 49$. Since $x$ must be positive, we have $x=7$. Substituting this into either equation above gives us $y^2 = 16$.  Since $y$ must be positive, we have $y=4$.  The perimeter of the larger square is $4x$ and that of the smaller square is $4y$, so the sum of their perimeters is $4x+4y = 4(x+y) = \\boxed{44}$."
+}

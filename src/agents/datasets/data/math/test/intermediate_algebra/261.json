@@ -1,0 +1,6 @@
+{
+    "problem": "The remainder when $kx^4+9x^3+kx^2+32x-11$ is divided by $x + 5$ is $4$.  Find $k.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Using the Remainder Theorem, we know that the remainder when $f(x) = kx^4+9x^3+kx^2+32x-11$ is divided by $x + 5$ is\n$$f(-5) = k(625)+9(-125)+k(25)+32(-5)-11 = 650k -1296.$$So we have the remainder\n$$650k - 1296 = 4$$Solving for $k$ gives us $k = \\boxed{2}$."
+}

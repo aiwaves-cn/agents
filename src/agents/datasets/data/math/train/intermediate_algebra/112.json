@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\left( \\frac{1 + i}{1 - i} \\right)^{1000}.\\]",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "First,\n\\[\\frac{1 + i}{1 - i} = \\frac{(1 + i)(1 + i)}{(1 - i)(1 + i)} = \\frac{1 + 2i + i^2}{1 - i^2} = \\frac{1 + 2i - 1}{1 + 1} = \\frac{2i}{2} = i.\\]So,\n\\[\\left( \\frac{1 + i}{1 - i} \\right)^{1000} = i^{1000} = (i^2)^{500} = (-1)^{500} = \\boxed{1}.\\]"
+}

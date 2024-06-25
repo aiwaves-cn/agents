@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real values of $x$ that satisfy \\[\\frac{x^2+11x+28}{x+4} - 7 = x.\\](Give your answer in interval notation.)",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Combining the two terms on the left-hand side under a common denominator, we get \\[\\frac{x^2+11x+28 - 7(x+4)}{x+4} = x,\\]or \\[\\frac{x^2+4x}{x+4} = x.\\]If $x \\neq -4,$ then the left-hand side reduces to $\\frac{x(x+4)}{x+4} = x,$ so the equation is always true. And if $x=-4,$ then the denominator of the left-hand side is zero, so the equation is not true. Hence, the solution set consists of all $x$ such that $x \\neq -4.$ In interval notation, this is \\[x \\in \\boxed{(-\\infty, -4) \\cup (-4, \\infty)}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $x = 101$ and $x^3y - 2x^2y + xy = 101000$, what is the value of $y$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Note that the left hand side of the second equation can be factored: $(x^2 - 2x + 1)xy = (x - 1)^2xy = 101000$. We are given that $x = 101$, so we have $(101- 1)^2(101)y = 1010000y = 101000$. It follows that $y = \\boxed{\\frac{1}{10}}$."
+}

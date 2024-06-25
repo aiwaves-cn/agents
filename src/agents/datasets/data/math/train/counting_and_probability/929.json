@@ -1,0 +1,6 @@
+{
+    "problem": "Our water polo team has 15 members.  I want to choose a starting team consisting of 7 players, one of whom will be the goalie (the other six positions are interchangeable, so the order in which they are chosen doesn't matter).  In how many ways can I choose my starting team?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "First we choose the goalie, and any of the 15 people can be the goalie. Then we choose 6 more players from the remaining 14 players, which is same as choosing a committee. There are 14 ways to choose the first player, 13 ways to choose the second player, and so on, down to 9 ways to choose the sixth player.  We must then divide by $6!$ since order of the six players doesn't matter.  So the answer is $\\dfrac{15 \\times 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6!} =\\boxed{45,\\!045}$."
+}

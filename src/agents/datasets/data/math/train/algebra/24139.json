@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x$: $x = \\dfrac{35}{6-\\frac{2}{5}}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We first deal with the denominator of this fraction by multiplying $6$ by $\\frac{5}{5}$ and then subtracting $\\frac{2}{5}$ from the resulting fraction to get: $$x = \\dfrac{35}{6-\\frac{2}{5}}= \\dfrac{35}{\\frac{30}{5}-\\frac{2}{5}} = \\dfrac{35}{\\frac{28}{5}}.$$  Since dividing by a fraction is the same as multiplying by its reciprocal, we have that $$x=\\dfrac{35}{\\frac{28}{5}}=35 \\cdot \\frac{5}{28} = 5 \\cdot \\frac{5}{4} = \\boxed{\\frac{25}{4}}.$$"
+}

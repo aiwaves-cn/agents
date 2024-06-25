@@ -1,0 +1,6 @@
+{
+    "problem": "A three-digit number has the same hundreds, tens and units digit.  The sum of the prime factors of the number is 47. What is the three-digit number?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We can tell that the three-digit number will be 111 times some number $x$ (resulting in 111, 222,...999), so the prime factors of the three-digit number will contain the prime factors of 111, which has prime factorization $3\\cdot37$. The sum of those two prime factors is 40, which means that $x$ is $47-40=7$. So, our answer is $111\\cdot7=\\boxed{777}$."
+}

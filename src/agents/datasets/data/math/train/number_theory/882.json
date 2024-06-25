@@ -1,0 +1,6 @@
+{
+    "problem": "Cindy wishes to arrange her coins into $X$ piles, each consisting of the same number of coins, $Y$. Each pile will have more than one coin and no pile will have all the coins. If there are 13 possible values for $Y$ given all of the restrictions, what is the smallest number of coins she could have?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If Cindy has $n$ coins, then the possible values for $Y$ are the proper factors of $n$ (recall that a proper factor of $n$ is a factor other than 1 or $n$).  Since there are 13 possible values of $Y$, there are $13+2=15$ factors of $n$.  Our goal is to find the least value of $n$ with exactly 15 factors.  Recall that we can determine the number of positive integer factors of $n$ by prime factorizing $n$, adding 1 to each exponent in the prime factorization, and multiplying the results.  The sets of exponents which would give rise to 15 factors are $\\{14\\}$ and $\\{2,4\\}$.  The least positive integer whose prime factorization has an exponent of 14 is $2^{14}$.  The least positive integer whose prime factorization has exponents 2 and 4 is obtained by assigning these exponents in decreasing order to the smallest two primes, which yields $2^4\\cdot 3^2=144$.  The smaller of these two numbers is 144, so Cindy has $\\boxed{144}$ coins."
+}

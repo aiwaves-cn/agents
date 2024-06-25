@@ -1,0 +1,6 @@
+{
+    "problem": "Find the perimeter of a triangle with points $A(1,2)$, $B(1,8)$, and $C(5,5)$ on a Cartesian coordinate plane.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We use the distance formula on each pair of points.\nFrom $A$ to $B$: $\\sqrt{(1-1)^2 + (8-2)^2} = 6$\nFrom $B$ to $C$: $\\sqrt{(5-1)^2 + (5-8)^2} = \\sqrt{16+9} = \\sqrt{25} = 5$\nFrom $C$ to $A$: $\\sqrt{(5-1)^2 + (5-2)^2} = \\sqrt{16+9} = \\sqrt{25} = 5$\nAdding the three side lengths of the triangle together, we get $6+5+5=\\boxed{16}$."
+}

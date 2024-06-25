@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest value of $n$ such that $5x^2+nx+48$ can be factored as the product of two linear factors with integer coefficients.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The two factors of $5x^2+nx+48$ must be in the form $(5x+A)(x+B)$. $A$ and $B$ must be positive integers to form the largest value of $n$. Therefore, $AB=48$ and $5B+A=n$. To form the largest value of $n$, $B$ must equal $48$. Therefore, $A=1$. \\[5B+A=5(48)+1=\\boxed{241}\\]"
+}

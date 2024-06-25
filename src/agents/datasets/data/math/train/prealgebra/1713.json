@@ -1,0 +1,6 @@
+{
+    "problem": "The square shown is divided into 4 congruent rectangles. If the perimeter of the square is 144 units, what is the perimeter of one of the four congruent rectangles? [asy]\nsize(75); defaultpen(linewidth(0.8));\ndraw(unitsquare);\ndraw((0,0.25)--(1,0.25)); draw((0,0.5)--(1,0.5)); draw((0,0.75)--(1,0.75));\n\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Problem 5. Let's call the side length of the square $s$. This makes the perimeter of the square $4s$, which we know is 144 units. Solving $4s = 144$ for  $s$, we get $s = 36$. We also can say that the perimeter of each rectangle is $2(s + 0.25s)$. Since we found that $s = 36$, we know that the perimeter of each rectangle is $2(36 + (0.25)(36)) = \\boxed{90\\text{ units}}$."
+}

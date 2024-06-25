@@ -1,0 +1,6 @@
+{
+    "problem": "Expanding $(1+0.2)^{1000}$ by the binomial theorem and doing no further manipulation gives\n\\[{1000 \\choose 0}(0.2)^0+{1000 \\choose 1}(0.2)^1+{1000 \\choose 2}(0.2)^2+\\cdots+{1000 \\choose 1000}(0.2)^{1000}= A_0 + A_1 + A_2 + \\cdots + A_{1000},\\]where $A_k = {1000 \\choose k}(0.2)^k$ for $k = 0,1,2,\\ldots,1000.$ For which $k$ is $A_k$ the largest?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "To compare different values of $A_k,$ we look at the ratio $A_k/A_{k-1},$ which equals \\[\\frac{A_k}{A_{k-1}} = \\frac{\\binom{1000}{k} (0.2)^k}{\\binom{1000}{k-1} (0.2)^{k-1}} = \\frac{\\frac{1000!}{k!(1000-k)!} (0.2)^k}{\\frac{1000!}{(k-1)!(1001-k)!} (0.2)^{k-1}} = \\frac{1001-k}{5k}.\\]The inequality \\[\\frac{A_k}{A_{k-1}} = \\frac{1001-k}{5k} > 1\\]holds if and only if $k < \\tfrac{1001}{6} = 166.8\\overline{3},$ that is, if $k \\le 166.$ Therefore, $A_k > A_{k-1}$ holds when $k \\le 166,$ and $A_k < A_{k-1}$ holds when $k \\ge 167.$ Thus, \\[A_{166} > A_{165} > \\dots > A_1\\]and \\[A_{1000} < A_{999} < \\dots < A_{166},\\]which means that $A_k$ is largest for $k=\\boxed{166}.$"
+}

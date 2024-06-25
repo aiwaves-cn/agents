@@ -1,0 +1,6 @@
+{
+    "problem": "We write $\\lfloor X \\rfloor$ to mean the greatest integer less than or equal to $X$; for example $\\lfloor 3\\frac{1}{2} \\rfloor = 3$. If $N = \\frac{1}{3}$, what is the value of $\\lfloor 10N \\rfloor + \\lfloor 100N \\rfloor + \\lfloor 1000N \\rfloor + \\lfloor 10,000N \\rfloor$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Substituting, we get:\n\n$\\lfloor 10N \\rfloor$ = $\\lfloor \\frac {10}{3} \\rfloor = 3$\n\n$\\lfloor 100N \\rfloor$ = $\\lfloor \\frac {100}{3} \\rfloor = 33$\n\n$\\lfloor 1000N \\rfloor$ = $\\lfloor \\frac {1000}{3} \\rfloor = 333$\n\n$\\lfloor 10000N \\rfloor$ = $\\lfloor \\frac {10000}{3} \\rfloor = 3333$\n\nAdding these values, we get $3+33+333+3333 = \\boxed{3702}$"
+}

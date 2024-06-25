@@ -1,0 +1,6 @@
+{
+    "problem": "Is\n\\[f(x) = \\frac{5^x - 1}{5^x + 1}\\]an even function, odd function, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nf(-x) &= \\frac{5^{-x} - 1}{5^{-x} + 1} \\\\\n&= \\frac{1 - 5^x}{1 + 5^x} \\\\\n&= -\\frac{5^x - 1}{5^x + 1} \\\\\n&= -f(x),\n\\end{align*}so $f(x)$ is an $\\boxed{\\text{odd}}$ function."
+}

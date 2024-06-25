@@ -1,0 +1,6 @@
+{
+    "problem": "What is the constant term of the expansion of $\\left(6x+\\dfrac{1}{3x}\\right)^6$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "A constant term occurs when three of the terms in the product contribute $6x$ and other three contribute $\\dfrac{1}{3x}$. Using the Binomial Theorem, we know that the constant term is $$\\binom{6}{3}(6x)^3\\left(\\dfrac{1}{3x}\\right)^3=(20)(2)^3=(20)(8)=\\boxed{160}.$$"
+}

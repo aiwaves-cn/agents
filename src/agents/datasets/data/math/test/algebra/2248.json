@@ -1,0 +1,6 @@
+{
+    "problem": "Express $\\dfrac{6}{\\sqrt{245}+3\\sqrt{125}+4\\sqrt{45}}$ in the form $\\frac{A\\sqrt{B}}{C}$ where $A$ and $C$ are relatively prime integers, $C$ is positive, and $B$ is not divisible by the square of any prime. Find $A+B+C$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we can write $\\sqrt{245}=7\\sqrt{5}$, $3\\sqrt{125}=15\\sqrt{5}$ and $4\\sqrt{45}=12\\sqrt{5}$.  Substituting these, the expression becomes: $$\\frac{6}{7\\sqrt{5}+15\\sqrt{5}+12\\sqrt{5}}=\\frac{6}{34\\sqrt{5}}=\\frac{3}{17\\sqrt{5}}=\\frac{3\\sqrt{5}}{85}.$$Thus $A+B+C=3+5+85=\\boxed{93}$."
+}

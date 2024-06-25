@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $i^5+i^{-25}+i^{45}$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We have $i^5 = i^4\\cdot i = 1\\cdot (i) = i$.  We also have $i^{-25} = 1/i^{25} = 1/(i^{24}\\cdot i) = 1/[1\\cdot (i)] = 1/i = \\frac1{i}\\cdot\\frac{i}{i} = i/(-1) = -i$ and $i^{45} = (i^{44})\\cdot i= 1\\cdot i =i$, and . So, adding these three results gives $i^5 + i^{-25} + i^{45} = i+-i+i = \\boxed{i}$."
+}

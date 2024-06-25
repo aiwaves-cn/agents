@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl} x^2-4 & \\text{ if }x < 7, \\\\\nx-13 & \\text{ if } x \\geq 7.\n\\end{array}\n\\right.\\] What is $f(f(f(17)))$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We approach this problem by working from the inside out, so we first find $f(17)$. Since $17 \\geq 7$, $f(17) = 17 - 13 = 4$. Next, $4<7$, so $f(f(17))=f(4)=(4)^2-4=12$. Finally we have that since $12 \\geq 7$, $f(f(f(17)))=f(12)=12-13=\\boxed{-1}$."
+}

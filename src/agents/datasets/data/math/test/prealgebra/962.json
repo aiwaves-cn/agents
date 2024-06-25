@@ -1,0 +1,6 @@
+{
+    "problem": "A number is selected at random from 1 through 100, inclusive.  What is the probability that the number is a perfect square?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are 100 numbers possible between 1 and 100. There are 10 perfect squares between 1 and 100: $1^2,2^2,\\ldots,10^2$.  So the probability that a randomly selected number is a perfect square is $\\dfrac{10}{100} = \\boxed{\\dfrac{1}{10}}$."
+}

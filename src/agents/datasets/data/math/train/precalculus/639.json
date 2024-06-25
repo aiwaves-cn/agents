@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\sqrt2 \\sin 10^\\circ$ can be written as $\\cos \\theta - \\sin\\theta$ for some acute angle $\\theta,$ what is $\\theta?$ (Give your answer in degrees, not radians.)",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have $\\sin\\theta = \\cos(90^\\circ - \\theta),$ so\n$$\\cos \\theta - \\sin\\theta = \\cos\\theta -\\cos(90^\\circ-\\theta).$$Applying the difference of cosines formula gives\n\\begin{align*}\n\\cos \\theta - \\cos(90^\\circ - \\theta) &= 2\\sin\\frac{\\theta + (90^\\circ - \\theta)}{2}\\sin\\frac{(90^\\circ-\\theta) - \\theta}{2} \\\\\n&= 2\\sin45^\\circ\\sin\\frac{90^\\circ - 2\\theta}{2} \\\\\n&= \\sqrt{2}\\sin\\frac{90^\\circ - 2\\theta}{2}.\n\\end{align*}We have $\\sqrt{2}\\sin10^\\circ = \\sqrt{2}\\sin\\frac{90^\\circ - 2\\theta}{2}$ when $10^\\circ = \\frac{90^\\circ - 2\\theta}{2}.$ Therefore, $90^\\circ - 2\\theta = 20^\\circ$, and $\\theta = \\boxed{35^\\circ}.$\n\nAlthough $\\sin 10^\\circ = \\sin 170^\\circ = \\sin (-190^\\circ)$ etc., because $\\theta$ is acute, $-45^\\circ < \\frac{90^\\circ - 2\\theta}{2} < 45^\\circ$ and so none of these other possibilities result in an acute $\\theta$."
+}

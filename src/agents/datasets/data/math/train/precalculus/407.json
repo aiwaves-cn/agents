@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive angle $x$ that satisfies $\\sin 2x \\sin 3x = \\cos 2x \\cos 3x,$ in degrees.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the given equation,\n\\[\\cos 2x \\cos 3x - \\sin 2x \\sin 3x = 0.\\]Then from the angle addition formula, $\\cos (2x + 3x) = 0,$ or $\\cos 5x = 0.$  To find the smallest positive solution, we take $5x = 90^\\circ,$ so $x = \\boxed{18^\\circ}.$"
+}

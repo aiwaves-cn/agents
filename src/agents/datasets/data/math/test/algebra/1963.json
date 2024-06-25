@@ -1,0 +1,6 @@
+{
+    "problem": "If $(ax+b)(2x+3)=20x^2+44x+21$, where $a$ and $b$ are two distinct integers, what is the value of the sum $a+b$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We expand the left side and get $2ax^2+(3a+2b)x+3b=20x^2+44x+21$. The coefficients of like terms must be equal, so that means $2a=20$ and $3b=21$. So, we get $a=10$, $b=7$, and $a+b=\\boxed{17}$. To check, we should make sure that $3a+2b=44$, which holds since $30+14=44$."
+}

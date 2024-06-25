@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive base $b$ in which the equation $5_b \\cdot 23_b = 151_b$ is valid.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "When we rewrite the base numbers in terms of $b$, we get the equation $$ 5 \\cdot (2b + 3) = b^2 + 5b + 1\\ \\ \\Rightarrow \\ \\ b^2 - 5b - 14 = 0. $$ Solving this quadratic equation, we get $b = 7$ and $b = -2$.  But, since the base must be positive, $b = \\boxed{7}$."
+}

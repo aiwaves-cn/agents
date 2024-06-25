@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure shown, segment $AB$ is parallel to segment $YZ$. If $AZ = 42$ units, $BQ = 12$ units, and $QY = 24$ units, what is the length of segment $QZ$? [asy]\nimport olympiad; import geometry; size(150); defaultpen(linewidth(0.8));\npair Y = (0,0), Z = (16,0), A = (0,8), B = (6,8);\ndraw(A--B--Y--Z--cycle);\nlabel(\"$A$\",A,W); label(\"$B$\",B,E); label(\"$Y$\",Y,W); label(\"$Z$\",Z,E);\npair Q = intersectionpoint(A--Z,B--Y);\nlabel(\"$Q$\",Q,E);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $AB \\parallel YZ,$ we know that $\\angle A = \\angle Z$ and $\\angle B = \\angle Y.$ That works out nicely, since that means $\\triangle ABQ \\sim ZYQ.$ If $BQ = 12$ and $QY = 24,$ that means the ratio of sides in $ABQ$ to $ZYQ$ is $1:2.$\n\nSince $AZ = 42 = AQ + QZ$ and $AQ = \\dfrac{QZ}{2},$ that means $\\dfrac{3 \\cdot QZ}{2} = 42$ and thus $QZ = \\boxed{28}.$"
+}

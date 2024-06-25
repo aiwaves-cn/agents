@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the digits of the base-2 expression for $222_{10}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We see that $2^7=128$ is the largest power of 2 less than 222, leaving us with $222-128=94$. Since the next largest power of 2, $2^6=64$, is less than 94, we are left with the remainder $94-64=30$. Because $2^5=32$ is greater than 30, the next non-zero coefficient goes to the $2^4=16$ term, giving us a remainder of $30-16=14$. Continuing from here, we find that $222_{10}=1\\cdot2^7+1\\cdot2^6+0\\cdot2^5+1\\cdot2^4+1\\cdot2^3+1\\cdot2^2+1\\cdot2^1+0\\cdot2^0=11011110_2$. This gives us the sum $1+1+0+1+1+1+1+0=\\boxed{6}$."
+}

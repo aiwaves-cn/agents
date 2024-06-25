@@ -1,0 +1,6 @@
+{
+    "problem": "Amy was born on a Tuesday. What is the probability that exactly two of her three best friends were also born on Tuesday? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Since her friends' birthdays are completely independent of her own, each of them has a $\\frac{1}{7}$ probability of being born on a Tuesday, and a $1 - \\frac{1}{7} = \\frac{6}{7}$ probability of not being born on a Tuesday. If exactly 2 friends were born on a Tuesday, the probability of this occurring is ${3 \\choose 2} \\cdot \\frac{1}{7} \\cdot \\frac{1}{7} \\cdot \\frac{6}{7} = 3 \\cdot \\frac{6}{343} = \\boxed{\\frac{18}{343}}$."
+}

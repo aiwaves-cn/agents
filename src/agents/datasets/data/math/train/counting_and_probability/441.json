@@ -1,0 +1,6 @@
+{
+    "problem": "How many different four-letter arrangements can be formed using the six letters $A, B, C, D, E$ and $F$, if the first letter must be $C$, one of the other letters must be $B$, and no letter can be used more than once in the arrangement?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There is 1 way to make the first letter C and 3 ways to make one of the other letters B. We now have 4 ways to pick the letter for the first remaining spot and 3 ways to pick the letter for the last remaining spot. This is a total of $1\\cdot3\\cdot4\\cdot3=\\boxed{36}$ ways to arrange the letters."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The sides of triangle $CAB$ are in the ratio of $2:3:4$. Segment $BD$ is the angle bisector drawn to the shortest side, dividing it into segments $AD$ and $DC$. What is the length, in inches, of the longer subsegment of side $AC$ if the length of side $AC$ is $10$ inches? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Without loss of generality, suppose that $BA < BC$. Since $BD$ is the angle bisector of $\\angle B$, by the Angle Bisector Theorem, it follows that $$\\frac{AD}{CD} = \\frac{BA}{BC} = \\frac 34.$$ Thus, $AD < CD$, so $CD$ is the longer subsegment of $AC$. Solving for $AD$, it follows that $AD = \\frac{3CD}{4}$. Also, we know that $AD + CD = AC = 10$, and substituting our previous value for $AD$, we find that $\\frac{3CD}{4} + CD = \\frac {7CD}4 = 10 \\Longrightarrow CD = \\boxed{\\frac {40}7}$ inches."
+}

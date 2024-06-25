@@ -1,0 +1,6 @@
+{
+    "problem": "If $4x\\equiv 8\\pmod{20}$ and $3x\\equiv 16\\pmod{20}$, then what is the remainder when $x^2$ is divided by $20$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We have \\begin{align*}\nx &\\equiv 4x - 3x \\\\\n&\\equiv 8-16 \\\\\n&\\equiv -8\\quad\\pmod{20}.\n\\end{align*}Therefore, $$x^2\\equiv (-8)^2 = 64\\equiv \\boxed{4}\\pmod{20}.$$"
+}

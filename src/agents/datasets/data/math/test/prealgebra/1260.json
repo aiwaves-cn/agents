@@ -1,0 +1,6 @@
+{
+    "problem": "There are eight furlongs in a mile. There are two weeks in a fortnight. The British cavalry traveled 2800 furlongs in a fortnight. How many miles per day did the cavalry average?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We have  \\[\n14\\text{ days} = 1 \\text{ fortnight}\n\\] and \\[\n8\\text{ furlongs} = 1\\text{ mile},\n\\] and we are asked to convert a quantity whose units are furlongs per fortnight to miles per day.  We divide the first equation by 14 days to obtain a quantity which is equal to 1 and has units of fortnight in the numerator. \\[\n1=\\frac{1\\text{ fortnight}}{14\\text{ days}}.\n\\] Similarly, \\[\n1=\\frac{1\\text{ mile}}{8\\text{ furlongs}}.\n\\] Since the right-hand sides of both of these equations are equal to 1, we may multiply them by 2800 furlongs per fortnight to change the units without changing the value of the expression: \\[\n2800\\frac{\\text{furlongs}}{\\text{fortnight}}\\cdot\\left(\\frac{1\\text{ fortnight}}{14\\text{ days}}\\right)\\left(\\frac{1\\text{ mile}}{8\\text{ furlongs}}\\right)=\\boxed{25}\\frac{\\text{miles}}{\\text{day}}.\n\\]"
+}

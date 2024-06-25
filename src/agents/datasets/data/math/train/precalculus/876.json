@@ -1,0 +1,6 @@
+{
+    "problem": "The dilation, centered at $2 + 3i,$ with scale factor 3, takes $-1 - i$ to which complex number?",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $z$ be the image of $-1 - i$ under the dilation.\n\n[asy]\nunitsize(0.5 cm);\n\npair C, P, Q;\n\nC = (2,3);\nP = (-1,-1);\nQ = interp(C,P,3);\ndraw((-10,0)--(10,0));\ndraw((0,-10)--(0,10));\ndraw(C--Q,dashed);\n\ndot(\"$2 + 3i$\", (2,3), NE);\ndot(\"$-1 - i$\", (-1,-1), NW);\ndot(\"$-7 - 9i$\", (-7,-9), SW);\n[/asy]\n\nSince the dilation is centered at $2 + 3i,$ with scale factor 3,\n\\[z - (2 + 3i) = 3((-1 - i) - (2 + 3i)).\\]Solving, we find $z = \\boxed{-7 - 9i}.$"
+}

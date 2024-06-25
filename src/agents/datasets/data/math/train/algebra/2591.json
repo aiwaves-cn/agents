@@ -1,0 +1,6 @@
+{
+    "problem": "Calculate $\\sqrt{10p} \\cdot \\sqrt{5p^2} \\cdot \\sqrt{6p^4}$ . Express your answer in simplest radical form in terms of $p$.\n\nNote: When entering a square root with more than one character, you must use parentheses or brackets.  For example, you should enter $\\sqrt{14}$ as \"sqrt(14)\" or \"sqrt{14}\".",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Writing everything in terms of prime factorizations, the given expression is  \\begin{align*}\n\\sqrt{2 \\cdot 5 \\cdot 5 \\cdot 2 \\cdot 3 \\cdot p^7} &= \\sqrt{(2^2 \\cdot 5^2 \\cdot p^6) \\cdot (3 \\cdot p)} \\\\\n&= \\boxed{10p^3 \\sqrt{3p}}.\n\\end{align*}"
+}

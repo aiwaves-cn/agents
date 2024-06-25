@@ -1,0 +1,6 @@
+{
+    "problem": "Find the ordered pair $(a,b)$ of integers such that\n\\[\\sqrt{9 - 8 \\sin 50^\\circ} = a + b \\csc 50^\\circ.\\]",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We write\n\\[9 - 8 \\sin 50^\\circ = \\frac{9 \\sin^2 50^\\circ - 8 \\sin^3 50^\\circ}{\\sin^2 50^\\circ} = \\frac{9 \\sin^2 50^\\circ - 6 \\sin 50^\\circ + 6 \\sin 50^\\circ - 8 \\sin^3 50^\\circ}{\\sin^2 50^\\circ}.\\]By the triple angle identity,\n\\begin{align*}\n6 \\sin 50^\\circ - 8 \\sin^3 50^\\circ &= 2 \\sin (3 \\cdot 50^\\circ) \\\\\n&= 2 \\sin 150^\\circ \\\\\n&= 1,\n\\end{align*}so\n\\[9 - 8 \\sin 50^\\circ = \\frac{9 \\sin^2 50^\\circ - 6 \\sin 50^\\circ + 1}{\\sin^2 50^\\circ} = \\left( \\frac{3 \\sin 50^\\circ - 1}{\\sin 50^\\circ} \\right)^2.\\]Since $3 \\sin 50^\\circ > 3 \\sin 30^\\circ = \\frac{3}{2} > 1,$ $3 \\sin 50^\\circ - 1 > 0.$  Therefore,\n\\[\\sqrt{9 - 8 \\sin 50^\\circ} = \\frac{3 \\sin 50^\\circ - 1}{\\sin 50^\\circ} = 3 - \\csc 50^\\circ,\\]so $(a,b) = \\boxed{(3,-1)}.$"
+}

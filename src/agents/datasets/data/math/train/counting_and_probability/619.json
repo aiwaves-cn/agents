@@ -1,0 +1,6 @@
+{
+    "problem": "Three marbles are randomly selected, without replacement, from a bag containing two red, two blue and two green marbles. What is the probability that one marble of each color is selected? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "First, we can find the denominator of our fraction.  There are a total of $\\dbinom{6}{3}=20$ ways to choose 3 marbles out of 6.  To find the numerator, we need to count the number of ways to choose one marble of each color.  There are 2 ways we could choose a red marble, 2 ways to choose a blue, and 2 ways to choose a green, making a total of $2\\cdot 2 \\cdot 2=8$ ways to choose one marble of each color.  Our final probability is $\\frac{8}{20}=\\boxed{\\frac{2}{5}}$."
+}

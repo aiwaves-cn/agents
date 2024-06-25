@@ -1,0 +1,6 @@
+{
+    "problem": "Rationalize the denominator: $\\frac{1}{\\sqrt{8}+\\sqrt{50}+\\sqrt{18}}$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Notice that $8 = 2 \\cdot 2^2$, $50 = 2 \\cdot 5^2$, and $18 = 2\\cdot 3^2$. Thus, $\\sqrt{8}+\\sqrt{50}+\\sqrt{18}$ simplifies to $2\\sqrt{2} + 5\\sqrt{2} + 3\\sqrt{2} = 10\\sqrt{2}$. To rationalize the denominator of $\\frac{1}{10\\sqrt{2}}$, simply multiply top and bottom by $\\sqrt{2}$ to get $\\frac{\\sqrt{2}}{10\\cdot2}= \\boxed{\\frac{\\sqrt{2}}{20}}$."
+}

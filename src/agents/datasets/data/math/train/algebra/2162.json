@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the distinct prime factors of $5^5 - 5^3$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The largest power of $5$ that divides both terms is $5^3$. We factor out $5^3$ as follows: \\begin{align*}\n5^5 - 5^3 &= 5^3 \\cdot 5^2 - 5^3 \\cdot 1 \\\\\n&= 5^3(5^2 - 1)\n\\end{align*} $5^2 - 1 = 24$, which factors as $2^3 \\cdot 3$. Thus, the prime factorization is ${2^3 \\cdot 3 \\cdot 5^3}$, and the sum of the prime factors is $2+3+5 = \\boxed{10}$."
+}

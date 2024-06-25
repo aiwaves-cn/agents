@@ -1,0 +1,6 @@
+{
+    "problem": "In a rectangular coordinate system, the line $3y = x$ intersects the line $2x + 5y = 11$ at point $A$. What is the sum of the coordinates of point $A$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "If the coordinates of point $A$ are $(x,y)$ then $x$ and $y$ must satisfy the equations of both lines (as $A$ is on both lines). Substituting the first equation into the second gives: \\begin{align*}\n2x+5y &=11\\\\\n6y+5y&= 11\\\\\n11y&= 11\\\\\ny &= 1.\n\\end{align*}So now $x = 3y = 3$, and so the coordinates of point $A$ are $(3,1)$. The sum of these is $3+1 = \\boxed{4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $ABC$, shown below, $\\cos{C}=\\frac{9\\sqrt{130}}{130}$.  Find $AC$.\n\n[asy]\ndraw((0,0)--(7,0)--(0,9)--cycle,black+linewidth(1));\ndraw(rightanglemark((7,0),(0,0),(0,9),20),black+linewidth(1));\nlabel(\"$A$\",(0,0),W);\nlabel(\"$B$\",(7,0),E);\nlabel(\"$C$\",(0,9),W);\nlabel(\"$\\sqrt{130}$\",(7,0)--(0,9),NE);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $\\cos{C}=\\frac{9\\sqrt{130}}{130}$ and $\\cos{C}=\\frac{AC}{BC}$, we have $\\frac{AC}{BC}=\\frac{AC}{\\sqrt{130}}=\\frac{9\\sqrt{130}}{130}$.  This means that $AC=\\frac{9\\sqrt{130}}{130}\\cdot\\sqrt{130}=\\frac{9\\cdot\\sqrt{130}\\cdot\\sqrt{130}}{130}=\\boxed{9}$."
+}

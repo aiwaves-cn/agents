@@ -1,0 +1,6 @@
+{
+    "problem": "The three-digit integer $63\\underline{\\hphantom{0}}$ is a multiple of 3. What is the greatest possible difference between two of the possibilities for the units digit?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The integer is a multiple of three if the sum of its digits is a multiple of three. Since 6 and 3 are both multiples of three, the units digit must also be a multiple of three. The possibilities for this digit are 0, 3, 6, or 9. The greatest possible difference between any two possibilities is $9-0=\\boxed{9}$."
+}

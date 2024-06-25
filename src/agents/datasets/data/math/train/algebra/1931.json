@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)=\\frac{ax+b}{cx+d}, abcd\\not=0$ and $f(f(x))=x$ for all $x$ in the domain of $f$, what is the value of $a+d$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The condition $f(f(x))$ means that $f$ is the inverse of itself, so its graph is symmetrical about the line $y = x$. With a rational function of this form, we will have two asymptotes: a vertical one at $x=-d/c$ if $cx+d$ does not divide $ax+b$, and a horizontal one at $y=a/c$, if we take the limit of $f(x)$ as $x$ goes to $\\pm\\infty$. In order for $f$ to be its own inverse, the intersection of the asymptotes must lie on the line $y=x$ so that it and its asymptotes reflect onto themselves. This means that $-d/c=a/c$, and therefore $-d=a$ and $a+d=\\boxed{0}$."
+}

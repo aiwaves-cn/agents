@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $(u_n)$ is a sequence of real numbers satisfying\n\\[u_{n+2}=2u_{n+1}+u_n\\]and that $u_3=9$ and $u_6=128$. What is $u_5$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $u_4 = a.$  Then $u_5 = 2u_4 + u_3 = 2a + 9$ and $u_6 = 2u_5 + u_4 = 2(2a + 9) + a = 5a + 18 = 128.$  Solving for $a,$ we find $a = 22,$ so $u_5 = 2 \\cdot 22 + 9 = \\boxed{53}.$"
+}

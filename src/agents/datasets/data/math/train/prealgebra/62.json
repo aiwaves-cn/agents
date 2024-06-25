@@ -1,0 +1,6 @@
+{
+    "problem": "Write $4.3+3.88$ as a decimal.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "We can perform this addition concisely in columns, though we have to \"carry\" a digit to the leftmost column because $3+8=11,$ which is greater than $10:$ \\[\n\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c}\n& 1 & & \\\\\n& 4. & 3 & \\\\\n+ & 3. & 8 & 8\n\\\\ \\cline{1-4}\n& 8. & 1 & 8 \\\\\n\\end{array}\n\\] The answer is $\\boxed{8.18}$."
+}

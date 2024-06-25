@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\cos x + \\cos 2x + \\cos 3x = 3,$ then find $\\sin x + \\sin 2x + \\sin 3x.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Remember that $\\cos \\theta \\le 1$ for all angles $\\theta.$  So, the only way that the equation\n\\[\\cos x + \\cos 2x + \\cos 3x = 3\\]can holds is if $\\cos x = \\cos 2x = \\cos 3x = 1.$  In such a case,\n\\[\\sin^2 x = 1 - \\cos^2 x = 0,\\]so $\\sin x = 0,$ which means $x$ is a multiple of $\\pi.$  Therefore, $\\sin x + \\sin 2x + \\sin 3x = \\boxed{0}.$  (Note that we can take $x = 0.$)"
+}

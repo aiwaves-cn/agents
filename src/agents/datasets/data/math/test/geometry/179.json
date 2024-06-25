@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, let angle bisectors $BD$ and $CE$ intersect at $I$.  The line through $I$ parallel to $BC$ intersects $AB$ and $AC$ at $M$ and $N$, respectively.  If $AB = 17$, $AC = 24$, and $BC = 33$, then find the perimeter of triangle $AMN$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Since $MN$ is parallel to $BC$, $\\angle MIB = \\angle IBC$.  But $BI$ is an angle bisector, so $\\angle IBC = \\angle IBM$.  Hence, triangle $MIB$ is isosceles with $MI = MB$.  By the same argument, triangle $NIC$ is isosceles, with $NI = NC$.\n\n[asy]\nimport geometry;\n\nunitsize(1 cm);\n\npair A, B, C, I, M, N;\n\nA = (1,3);\nB = (0,0);\nC = (4,0);\nI = incenter(A,B,C);\nM = extension(I, I + B - C, A, B);\nN = extension(I, I + B - C, A, C);\n\ndraw(A--B--C--cycle);\ndraw(B--I--C);\ndraw(M--N);\n\nlabel(\"$A$\", A, dir(90));\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$I$\", I, dir(90));\nlabel(\"$M$\", M, NW);\nlabel(\"$N$\", N, NE);\n[/asy]\n\nTherefore, the perimeter of triangle $AMN$ is simply \\begin{align*}\nAM + AN + MN &= AM + AN + MI + NI \\\\\n&= AM + AN + MB + NC \\\\\n&= (AM + MB) + (AN + NC) \\\\\n&= AB + AC \\\\\n&= 17 + 24 \\\\\n&= \\boxed{41}.\n\\end{align*}"
+}

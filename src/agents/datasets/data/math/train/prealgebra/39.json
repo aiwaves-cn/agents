@@ -1,0 +1,6 @@
+{
+    "problem": "In pentagon $MATHS$, $\\angle M \\cong \\angle T \\cong \\angle H$ and $\\angle A$ is supplementary to $\\angle S$. How many degrees are in the measure of $\\angle H$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The sum of the angle measures in a pentagon is $180(5-2) = 540$ degrees, so we must have \\[\\angle M + \\angle A + \\angle T + \\angle H + \\angle S = 540^\\circ.\\] Since $\\angle A$ and $\\angle S$ are supplementary, we have $\\angle A +\\angle S = 180^\\circ$.  Combining this with $\\angle H = \\angle M = \\angle T$, we have \\begin{align*}\n\\angle M + \\angle A + \\angle T + \\angle H + \\angle S& =\n(\\angle M + \\angle T + \\angle H) \\\\\n&\\qquad+ (\\angle A +\\angle S) \\\\\n&= 3\\angle H + 180^\\circ,\\end{align*} so $3\\angle H + 180^\\circ = 540^\\circ$.  Therefore, $3\\angle H = 360^\\circ$ and $\\angle H = \\boxed{120^\\circ}$."
+}

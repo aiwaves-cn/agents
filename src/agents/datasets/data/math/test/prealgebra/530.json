@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least common multiple of all positive integers smaller than 8?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We write out the prime factorization of all natural numbers smaller than 8: \\[1, \\: 2, \\: 3, \\: 2^2, \\: 5, \\: 2 \\cdot 3, \\: 7.\\]Multiplying the highest power of each prime number together yields a desired least common multiple of $2^2 \\cdot 3 \\cdot 5 \\cdot 7 = \\boxed{420}$."
+}

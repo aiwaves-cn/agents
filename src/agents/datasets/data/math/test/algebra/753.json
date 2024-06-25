@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\n5x^2+2&\\text{if } x\\le a, \\\\\n11x &\\text{if } x>a.\n\\end{cases}\n\\]Find the smallest possible value for $a$ if the graph of $y=f(x)$ is continuous (which means the graph can be drawn without lifting your pencil from the paper).",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If the graph of $f$ can be drawn without lifting your pencil from the paper, then the graphs of the two cases must meet when $x=a$, which (loosely speaking) is the dividing point between the two cases.  Therefore, we must have  \\begin{align*}\n5a^2+2&=11a \\\\\n\\Rightarrow \\quad 5a^2-11a+2&=0 \\\\\n\\Rightarrow \\quad (-5a+1)(-a+2)&=0.\n\\end{align*}Solving this equation gives $a=\\frac{1}{5}$ or $a=2$. The smaller value is $\\boxed{\\frac{1}{5}}$."
+}

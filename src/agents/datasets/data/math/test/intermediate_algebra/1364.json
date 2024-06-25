@@ -1,0 +1,6 @@
+{
+    "problem": "The $n$th term of a sequence is $a_n = (-1)^{n+1}(3n + 2)$. What is the value of $a_1 + a_2 + \\dots + a_{100}$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "$a_n$ is positive when $n$ is odd and negative when $n$ is even. Consider an arbitrary odd number $j.$ It follows that  \\[a_j + a_{j+1} = (3j+2)-(3(j+1)+2)=-3.\\] In $a_1+a_2+\\cdots+a_{100},$ there are $50$ such pairings, so the sum is $(-3)(50)=\\boxed{-150}.$"
+}

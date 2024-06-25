@@ -1,0 +1,6 @@
+{
+    "problem": "Find the coefficient of the $x^2$ term in the expansion of the product $$(2x^2 +3x +4)(5x^2 +6x +7).$$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Expanding shows \\begin{align*}\n&(2x^2 +3x +4)(5x^2 +6x +7) \\\\\n&\\qquad= 2x^2(5x^2+6x+7) + 3x(5x^2+6x+7) \\\\\n&\\qquad\\qquad+4(5x^2+6x+7) \\\\\n& \\qquad= 10x^4 +27x^3 +52x^2 +42x+7.\n\\end{align*}The coefficient of the quadratic term is 52. Instead of expanding the product of the two polynomials we can also observe that the quadratic term in the expansion is obtained by the sum of the terms of the form $(ax^2)(b)$ and $(cx)(dx)$ where $a,b,c,$ and $d$ are constants.  In the present case, we obtain the quadratic term from the expansion $2x^2 \\cdot 7 + 3x \\cdot 6x + 4 \\cdot 5x^2 = 52x^2$.  Thus, the answer is $\\boxed{52}$."
+}

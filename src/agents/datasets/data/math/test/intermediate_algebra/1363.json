@@ -1,0 +1,6 @@
+{
+    "problem": "In the complex plane, what is the length of the diagonal of the square with vertices $4$, $3+5i$, $-2+4i$, and $-1-i$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Drawing the square in the complex plane, we see that 4 and $-2+4i$ are opposite vertices. The length of the diagonal is the magnitude of the difference of these numbers, $|4-(-2+4i)| = |6-4i| = \\sqrt{6^2 + 4^2} = \\boxed{2\\sqrt{13}}$.\n\n[asy]\nunitsize(0.5 cm);\n\npair A, B, C, D;\n\nA = (4,0);\nB = (3,5);\nC = (-2,4);\nD = (-1,-1);\n\ndraw(A--B--C--D--cycle);\n\ndot(\"$4$\", A, SE);\ndot(\"$3 + 5i$\", B, NE);\ndot(\"$-2 + 4i$\", C, NW);\ndot(\"$-1 - i$\", D, SW);\n[/asy]\n\nAlternatively, we could note that 4 and $3+5i$ are adjacent vertices, so the square has side length $s = |4 - (3+5i)| = |1-5i| = \\sqrt{1^2 + 5^2} = \\sqrt{26}$. The diagonal then has length $s\\sqrt{2} = \\sqrt{26} \\cdot \\sqrt{2} = \\boxed{2\\sqrt{13}}$."
+}

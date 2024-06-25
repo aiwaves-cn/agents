@@ -1,0 +1,6 @@
+{
+    "problem": "Our club has 25 members, and wishes to pick a president, secretary, and treasurer.  In how many ways can we choose the officers, if individual members can only hold at most one office?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The president can be any of the 25 members, the secretary can be any of the 24 remaining members, and the treasurer can be any of the remaining 23 members. There are $25\\times 24\\times 23=\\boxed{13,\\!800}$ ways."
+}

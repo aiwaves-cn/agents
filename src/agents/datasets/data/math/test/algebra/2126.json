@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $x$ is a solution to $x^2 + 1 = 7x$. What is the sum of $x$ and its reciprocal?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We rearrange our equation: $x^2 - 7x + 1 = 0$. Then, we use the quadratic equation to solve for $x$: $$x = \\frac{7\\pm\\sqrt{(-7)^2-(4)(1)(1)}}{2} = \\frac{7\\pm 3\\sqrt{5}}{2}.$$ The two possible values of $x$ are reciprocals of each other. Here's why: \\begin{align*}\\frac{1}{(7+3\\sqrt{5})/2} &= \\frac{2}{7+3\\sqrt{5}}\\\\\n&=\\frac{2}{7+3\\sqrt{5}}\\cdot\\frac{7-3\\sqrt{5}}{7-3\\sqrt{5}} \\\\\n&=\\frac{2(7-3\\sqrt{5})}{7^2 - (3\\sqrt{5})^2} = \\frac{2(7-3\\sqrt{5})}{4} = \\frac{7-3\\sqrt{5}}{2}.\n\\end{align*}\n\nThus, our answer is $$\\frac{7 + 3\\sqrt{5}}{2} + \\frac{7 - 3\\sqrt{5}}{2} = \\boxed{7}.$$\n\n- OR -\n\nWe want the sum of $x$ and its reciprocal. This is $$x + \\frac{1}{x} = \\frac{x^2 + 1}{x}.$$ We are given that $x^2 + 1 = 7x$. Therefore, our answer is $$\\frac{x^2+1}{x} = \\frac{7x}{x} = \\boxed{7}.$$"
+}

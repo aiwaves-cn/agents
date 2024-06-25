@@ -1,0 +1,6 @@
+{
+    "problem": "The image of the point with coordinates $(1,1)$ under the reflection across the line $y=mx+b$ is the point with coordinates $(9,5)$.  Find $m+b$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The line of reflection is the perpendicular bisector of the segment connecting the point with its image under the reflection.  The slope of the segment is $\\frac{5-1}{9-1}=\\frac{1}{2}$.  Since the line of reflection is perpendicular, its slope, $m$, equals $-2$.  By the midpoint formula, the coordinates of the midpoint of the segment are $\\left(\\frac{9+1}2,\\frac{5+1}2\\right)=(5,3)$.   Since the line of reflection goes through this point, we have $3=(-2)(5)+b$, and so $b=13$.  Thus $m+b=-2+13=\\boxed{11}.$"
+}

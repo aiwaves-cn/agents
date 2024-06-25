@@ -1,0 +1,6 @@
+{
+    "problem": "In the magic square shown, the sums of the numbers in each row, column, and diagonal are the same. Five of these numbers are represented by $v$, $w$, $x$, $y$, and $z$. Find $y+z$.\n\n[asy]\npath a=(0,0)--(1,0)--(1,1)--(0,1)--cycle;\nfor (int i=0; i<3; ++i) {\nfor (int j=0; j<3; ++j) {\ndraw(shift((i,j))*a);\n};}\nlabel(\"25\",(0.5,0.3),N);\nlabel(\"$z$\",(1.5,0.3),N);\nlabel(\"21\",(2.5,0.3),N);\nlabel(\"18\",(0.5,1.3),N);\nlabel(\"$x$\",(1.5,1.3),N);\nlabel(\"$y$\",(2.5,1.3),N);\nlabel(\"$v$\",(0.5,2.3),N);\nlabel(\"24\",(1.5,2.3),N);\nlabel(\"$w$\",(2.5,2.3),N);\n[/asy]",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $v$ appears in the first row, first column, and on diagonal, the sum of the remaining two numbers in each of these lines must be the same. Thus, $$25+18 = 24 +w = 21+x,$$ so $w = 19$ and $x=22$. now 25,22, and 19 form a diagonal with a sum of 66, so we can find $v=23$, $y=26$, and $z=20$. Hence $y+z=\\boxed{46}$."
+}

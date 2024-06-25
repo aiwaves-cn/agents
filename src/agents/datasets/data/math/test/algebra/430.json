@@ -1,0 +1,6 @@
+{
+    "problem": "It took Lara five days to read a novel. Each day after the first day, Lara read half as many pages as the day before. If the novel was 248 pages long, how many pages did she read on the first day?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "If Lara read $P$ pages on the first day, then she read $P/2$ pages the second day, $P/4$ pages on the third day, $P/8$ pages on the fourth day, and $P/16$ pages on the fifth day.  In total, she read  \\[\nP+\\frac{P}{2}+\\frac{P}{4}+\\frac{P}{8}+\\frac{P}{16}=\\frac{31}{16}P\n\\] pages. Setting this equal to 248, we find that Lara read $P=\\frac{16}{31}\\cdot248=\\boxed{128}$ pages."
+}

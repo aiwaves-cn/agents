@@ -1,0 +1,6 @@
+{
+    "problem": "How many of the integers between 1 and 1000, inclusive, can be expressed as the difference of the squares of two nonnegative integers?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Notice that all odd numbers can be obtained by using $(a+1)^2-a^2=2a+1,$ where $a$ is a nonnegative integer. All multiples of $4$ can be obtained by using $(b+1)^2-(b-1)^2 = 4b$, where $b$ is a positive integer. Numbers congruent to $2 \\pmod 4$ cannot be obtained because squares are $0, 1 \\pmod 4.$ Thus, the answer is $500+250 = \\boxed{750}.$"
+}

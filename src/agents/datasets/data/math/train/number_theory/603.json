@@ -1,0 +1,6 @@
+{
+    "problem": "The number of students in Teresa's graduating class is more than 50 and fewer than 100 and is 1 less than a multiple of 3, 2 less than a multiple of 4, and 3 less than a multiple of 5. How many students are in Teresa's graduating class?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Let the number of students in Teresa's class be $a$. Then \\begin{align*}\na\\equiv -1\\equiv 2\\pmod 3,\\\\\na\\equiv -2\\equiv 2\\pmod 4,\\\\\na\\equiv -3\\equiv 2\\pmod 5.\n\\end{align*} Since $\\gcd(3,4)=\\gcd(4,5)=\\gcd(3,5)=1$, we have $$a\\equiv 2\\pmod{3\\cdot 4\\cdot 5},$$ that is, $a\\equiv 2\\pmod{60}$. Since $a$ is then of the form $a=2+60n$, the only such number in the range $50<a<100$ is $\\boxed{62}$."
+}

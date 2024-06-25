@@ -1,0 +1,6 @@
+{
+    "problem": "How many elements are in the intersection of the set of all the prime numbers less than 30 and the set of all the odd numbers greater than zero?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "In other words, we're looking for the number of positive odd prime numbers less than 30. We go through all odd numbers less than 30 and note how many of them are prime. We get that 3, 5, 7, 11, 13, 17, 19, 23, and 29 are all of the positive odd prime numbers less than 30, a total of $\\boxed{9}$ elements in the intersection."
+}

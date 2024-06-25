@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ is isosceles with angle $A$ congruent to angle $B$. The measure of angle $C$ is 30 degrees more than the measure of angle $A$. What is the number of degrees in the measure of angle $C$?",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Let $x$ be the number of degrees in the measure of angle $A$.  Then angle $B$ measures $x$ degrees as well and angle $C$ measures $x+30$ degrees.  Since the sum of the interior angles in a triangle sum to 180 degrees, we solve $x+x+x+30=180$ to find $x=50$.  Therefore, angle $C$ measures $x+30=50+30=\\boxed{80}$ degrees."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $3 \\times 13 \\times 23 \\times 33 \\times \\ldots \\times 183 \\times 193$ is divided by $5$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First, we use the property $a \\equiv b \\pmod{m}$ implies $ac \\equiv bc \\pmod{m}$.\n\nSince all numbers with units digit $3$ have a remainder of $3$ when divided by $5$ and there are $20$ numbers,  $$3 \\times 13 \\times 23 \\times 33 \\times \\ldots \\times 183 \\times 193 \\equiv 3^{20} \\pmod{5}.$$Next, we also use the property $a \\equiv b \\pmod{m}$ implies $a^c \\equiv b^c \\pmod{m}$.\n\nSince $3^4 \\equiv 81 \\equiv 1 \\pmod5$, and $3^{20} = (3^4)^5$, then $3^{20} \\equiv 1^5 \\equiv \\boxed{1} \\pmod{5}$."
+}

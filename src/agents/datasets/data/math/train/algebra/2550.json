@@ -1,0 +1,6 @@
+{
+    "problem": "Of the five points (3, 10), (6, 20), (12, 35), (18, 40) and (20, 50), what is the sum of the $x$-coordinates of the points that lie in the region above the line $y = 2x + 7$ in the coordinate plane?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "A point lies above $y=2x+7$ if its $y$-coordinate is greater than 2 times its $x$-coordinate plus 7.  Checking the given points, we find that $(6,20)$, $(12,35)$, and $(20,50)$ satisfy this condition.  The sum of the $x$-coordinates of these points is $6+12+20=\\boxed{38}$."
+}

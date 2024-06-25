@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P(x)$ be a cubic polynomial such that $P(0) = -3$ and $P(1) = 4.$  When $P(x)$ is divided by $x^2 + x + 1,$ the remainder is $2x - 1.$  What is the quotient when $P(x)$ is divided by $x^2 + x + 1$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let the quotient be $ax + b,$ so\n\\[P(x) = (ax + b)(x^2 + x + 1) + 2x - 1.\\]Setting $x = 0,$ we get\n\\[-3 = b - 1.\\]Setting $x = 1,$ we get\n\\[4 = 3(a + b) + 1.\\]Then $b = -2,$ so $4 = 3(a - 2) + 1.$  Solving, we find $a = 3.$  Hence, the quotient is $\\boxed{3x - 2}.$"
+}

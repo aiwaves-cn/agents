@@ -1,0 +1,6 @@
+{
+    "problem": "A circle centered at $O$ has radius 1 and contains the point $A$. Segment $AB$ is tangent to the circle at $A$ and $\\angle\nAOB=\\theta$. If point $C$ lies on $\\overline{OA}$ and $\\overline{BC}$ bisects $\\angle ABO$, then express $OC$ in terms of $s$ and $c,$ where $s = \\sin \\theta$ and $c = \\cos \\theta.$\n\n[asy]\npair A,B,C,O;\nO=(0,0);\nA=(1,0);\nC=(0.6,0);\nB=(1,2);\nlabel(\"$\\theta$\",(0.1,0),NE);\nlabel(\"$O$\",O,S);\nlabel(\"$C$\",C,S);\nlabel(\"$A$\",A,E);\nlabel(\"$B$\",B,E);\ndraw(A--O--B--cycle,linewidth(0.7));\ndraw(C--B,linewidth(0.7));\ndraw(Circle(O,1),linewidth(0.7));\n[/asy]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\alpha=\\angle CBO=\\angle ABC$.  By the Law of Sines on triangle $BCO,$\n\\[\\frac{BC}{\\sin\\theta} = \\frac{OC}{\\sin\\alpha},\\]so $OC=\\frac{BC\\sin\\alpha}{\\sin\\theta}$.\n\nIn right triangle $ABC$,\n\\[\\sin\\alpha = \\frac{AC}{BC} = \\frac{1-OC}{BC}.\\]Hence, $OC=\\frac{1-OC}{\\sin\\theta}$. Solving this for $OC$ yields $OC= \\frac{1}{1+\\sin\\theta} = \\boxed{\\frac{1}{1 + s}}.$"
+}

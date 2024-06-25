@@ -1,0 +1,6 @@
+{
+    "problem": "How many perfect squares less than 1000 have a ones digit of 2, 3 or 4?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Checking the squares from $1^2$ to $10^2$, we see that no squares end in 2 or 3, while a square ends in 4 if its square root ends in 2 or 8.  Since $31^2 < 1000 < 32^2$, we see that the squares less than 1000 ending in 4 are $2,8,12,18,22,28$.  Thus the desired answer is $\\boxed{6}$."
+}

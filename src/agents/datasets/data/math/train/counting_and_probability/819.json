@@ -1,0 +1,6 @@
+{
+    "problem": "In this square array of 16 dots, four dots are to be chosen at random. What is the probability that the four dots will be collinear? Express your answer as a common fraction.\n\n[asy]\nsize(59);\nfor(int i = 0; i<4; ++i)\nfor(int j = 0; j<4; ++j)\ndot((i,j),linewidth(7));\n[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "If all four of the dots are collinear, it is obvious that it must either be a horizontal line of dots, a vertical line of dots, or a diagonal line of dots. And inspection tells us that there are $4 + 4 + 2 = 10$ such collinear sets of 4. And in total, there are ${16 \\choose 4} = \\frac{16\\cdot 15 \\cdot 14 \\cdot 13}{4 \\cdot 3 \\cdot 2} = 2 \\cdot 5 \\cdot 13 \\cdot 14 = 1820$. So, the probability is $\\frac{10}{1820} = \\boxed{\\frac{1}{182}}$."
+}

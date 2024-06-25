@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of square units bounded by the $x$-axis, the $y$-axis and the line $x+ y= 6$.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The region bounded by these lines is a right-isosceles triangle with legs along the $x$ and $y$ axes.  The length of these legs are given by the $x$ and $y$ intercepts of the line which are both 6.  Thus the area of this region is $\\frac 12 \\cdot 6 \\cdot 6 = \\boxed{18}$ square units."
+}

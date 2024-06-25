@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of $y = ax^2 + bx + c$ has a maximum value of 54, and passes through the points $(-2,0)$ and $(4,0).$  Find $a + b + c.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since the graph passes through the points $(-2,0)$ and $(4,0),$ the equation is of the form $a(x + 2)(x - 4).$\n\nThe graph has a maximum, and this maximum value occurs at the average of $-2$ and 4, namely $x = \\frac{-2 + 4}{2} = 1.$  But $a + b + c$ is exactly the value of $y = ax^2 + bx + c$ at $x = 1,$ so $a + b + c = \\boxed{54}.$"
+}

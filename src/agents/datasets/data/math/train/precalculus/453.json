@@ -1,0 +1,6 @@
+{
+    "problem": "For real numbers $t,$ the point\n\\[(x,y) = \\left( \\frac{1 - t^2}{1 + t^2}, \\frac{2t}{1 + t^2} \\right)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $x = \\frac{1 - t^2}{1 + t^2}$ and $y = \\frac{2t}{1 + t^2}.$  Then\n\\begin{align*}\nx^2 + y^2 &= \\left( \\frac{1 - t^2}{1 + t^2} \\right)^2 + \\left( \\frac{2t}{1 + t^2} \\right)^2 \\\\\n&= \\frac{1 - 2t^2 + t^4}{1 + 2t^2 + t^4} + \\frac{4t^2}{1 + 2t^2 + t^4} \\\\\n&= \\frac{1 + 2t^2 + t^4}{1 + 2t^2 + t^4} \\\\\n&= 1.\n\\end{align*}Thus, all the plotted points lie on a circle.  The answer is $\\boxed{\\text{(B)}}.$"
+}

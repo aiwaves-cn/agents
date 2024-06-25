@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be a polynomial of degree 5 such that\n\\[p(n) = \\frac{n}{n^2 - 1}\\]for $n = 2,$ 3, 4, $\\dots,$ 7.  Find $p(8).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $q(x) = (x^2 - 1) p(x) - x.$  Then $q(x)$ has degree 7, and $q(n) = 0$ for $n = 2$, 3, 4, $\\dots,$ 7, so\n\\[q(x) = (ax + b)(x - 2)(x - 3) \\dotsm (x - 7)\\]for some constants $a$ and $b.$\n\nWe know that $q(1) = (1^2 - 1)p(1) - 1 = -1.$  Setting $x = 1$ in the equation above, we get\n\\[q(1) = 720(a + b),\\]so $a + b = -\\frac{1}{720}.$\n\nWe also know that $q(-1) = ((-1)^2 - 1)p(-1) + 1 = 1.$  Setting $x = -1$ in the equation above, we get\n\\[q(-1) = 20160(-a + b),\\]so $-a + b = \\frac{1}{20160}.$  Solving for $a$ and $b,$ we find $a = -\\frac{29}{40320}$ and $b = -\\frac{3}{4480}.$  Hence,\n\\begin{align*}\nq(x) &= \\left( -\\frac{29}{40320} x - \\frac{3}{4480} \\right) (x - 2)(x - 3) \\dotsm (x - 7) \\\\\n&= -\\frac{(29x + 27)(x - 2)(x - 3) \\dotsm (x - 7)}{40320}.\n\\end{align*}In particular,\n\\[q(8) = -\\frac{(29 \\cdot 8 + 27)(6)(5) \\dotsm (1)}{40320} = -\\frac{37}{8},\\]so\n\\[p(8) = \\frac{q(8) + 8}{8^2 - 1} = \\boxed{\\frac{3}{56}}.\\]"
+}

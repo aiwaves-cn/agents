@@ -1,0 +1,6 @@
+{
+    "problem": "In the graph below, each grid line counts as one unit. The line shown below passes through the point $(1001,n)$ (not shown on graph).  Find $n$.\n[asy]size(250,0);\nadd(shift(-10,-10)*grid(20,20));\ndraw((-10,0)--(10,0),linewidth(2));\ndraw((0,-10)--(0,10),linewidth(2));\nlabel(\"x\",(10,0),E);\nlabel(\"y\",(0,10),N);\ndraw((-10,-2.71) -- (10,8.71),blue,Arrows);[/asy]",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Looking at the graph, the line has a $y$-intercept of 3.  Also, counting carefully, we can see that when the line travels exactly 7 units horizontally, it travels 4 units vertically.  Therefore, the slope of the line is $4/7$.  So, the equation of the line in slope-intercept form is $y=\\frac{4}{7}x+3$.  Substituting 1001 for $x$ and $n$ for $y$, we can find $n$: \\begin{align*}\nn&=\\frac{4}{7}\\cdot 1001 +3\\\\\n\\Rightarrow\\qquad n&=4\\cdot 143 +3\\\\\n\\Rightarrow\\qquad n&=572+3=\\boxed{575}.\n\\end{align*}"
+}

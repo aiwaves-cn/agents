@@ -1,0 +1,6 @@
+{
+    "problem": "In the $n$th row of Pascal's Triangle where the first row is $n=0$, the arithmetic mean of the elements is $51.2$. What is the value of $n$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The arithmetic mean equals the sum of the elements divided by the number of elements in the row. In Pascal's Triangle where the first row is $n=0$, row $n$ has $n+1$ elements and the sum of the elements is $2^n$, which makes the arithmetic mean $\\frac{2^n}{n+1}$. Now we look for the value of $n$ that satisfies $51.2=\\frac{2^n}{n+1}$. If $51.2(n+1)=2^n$ and $n$ is a non-negative integer, we know that $2^n>51.2\\qquad\\Rightarrow n\\ge 6$. If $n=6$, $2^n=64$, but $51.2(7)$ is much greater than $64$ (we can estimate $51.2(7)$ with $50\\cdot7=350$). With $n=7$ and $n=8$, we also find that $51.2(n+1)$ is greater than $2^n$. When we try $n=9$, we get $51.2(10)=2^{9}=512$, which is true. The value of $n$ is $\\boxed{9}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Which type of conic section is described by the equation \\[x^2 - 4y^2 = -8(y-1)^2 + 2x?\\]Enter \"C\" for circle, \"P\" for parabola, \"E\" for ellipse, \"H\" for hyperbola, and \"N\" for none of the above.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The left-hand side contains $x^2$ and $y^2$ terms with opposite signs. But be careful! The right-hand side, when expanded, contains the term $-8y^2,$ and so when all the terms are moved to the left-hand side, the terms $x^2$ and $4y^2$ will appear. Because the coefficients of $x^2$ and $y^2$ are of the same signs but unequal, this conic section is an $\\boxed{(\\text{E})}$ ellipse."
+}

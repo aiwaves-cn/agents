@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 8 people sit around a round table if Pierre and Thomas want to sit together, but Rosa doesn't want to sit next to either of them? (Treat rotations as not distinct but reflections as distinct.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Solution 1: We choose any seat for Pierre, and then seat everyone else relative to Pierre.  There are 2 choices for Thomas; to the right or left of Pierre.  Then, there are 4 possible seats for Rosa that aren't adjacent to Pierre or Thomas. The five remaining people can be arranged in any of $5!$ ways, so there are a total of $2\\cdot 4\\cdot 5!=960$ valid ways to arrange the people around the table.\n\nSolution 2: The total number of ways in which Pierre and Thomas sit together is $6! \\cdot 2 = 1440$. The number of ways in which Pierre and Thomas sit together and Rosa sits next to one of them is $5! \\cdot 2 \\cdot 2 = 480$. So the answer is the difference $1440 - 480 = \\boxed{960}$."
+}

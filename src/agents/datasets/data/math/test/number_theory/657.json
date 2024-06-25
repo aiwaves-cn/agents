@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the congruence $6n \\equiv 7 \\pmod{13}$, as a residue modulo 13.  (That is, find the value of $n$ that satisfies the congruence such that $0\\le n \\le 12$.)",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Note that $7 \\equiv -6 \\pmod{13}$, so we can write the given congruence as $6n \\equiv -6 \\pmod{13}$.  Since 6 is relatively prime to 13, we can divide both sides by 6, to get $n \\equiv -1 \\equiv \\boxed{12} \\pmod{13}$."
+}

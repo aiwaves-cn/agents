@@ -1,0 +1,6 @@
+{
+    "problem": "If $a$ is three times $b$, $b$ is twice $c$, and $c$ is four times $d$, what is the value of $\\frac{a\\cdot c}{b\\cdot d}$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have that $c=4d$, $b=2c$, and $a=3b$ and thus we can use the equations $c=4d$, $b=8d$, and $a=24d$ to find the value of the expression.  Plugging in these values we get $\\frac{24d \\cdot 4d}{8d \\cdot d}=\\boxed{12}$."
+}

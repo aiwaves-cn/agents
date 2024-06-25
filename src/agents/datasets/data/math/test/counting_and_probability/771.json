@@ -1,0 +1,6 @@
+{
+    "problem": "Beginning at point $A$ in the diagram below, Dora selects one of the four possible directions with equal probability. Each time she comes to an intersection, she again randomly selects one of the possible directions. What is the probability that, in her first four steps, she will walk completely around the gray square? Express your answer as a common fraction. [asy]size(100);\nfill((1,1)--(1,2)--(2,2)--(2,1)--cycle, gray(.6));\ndraw((0,0)--(0,3)--(3,3)--(3,0)--cycle, linewidth(1.5));\ndraw((0,1)--(3,1), linewidth(1.5));\ndraw((0,2)--(3,2), linewidth(1.5));\ndraw((1,0)--(1,3), linewidth(1.5));\ndraw((2,0)--(2,3), linewidth(1.5));\ndot(MP(\"A\", (1,2), NW));\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The only way for the Dora to end up at her starting point in four steps is for her to traverse the four sides of the gray square.  She can do this in two ways: clockwise and counterclockwise. The probability of each of these two paths is $\\left(\\frac{1}{4}\\right)^4=\\frac{1}{256}$.  Therefore, the probability that she ends up where she started is $\\dfrac{1}{256}+\\dfrac{1}{256}=\\boxed{\\dfrac{1}{128}}$."
+}

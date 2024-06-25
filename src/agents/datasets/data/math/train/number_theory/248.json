@@ -1,0 +1,6 @@
+{
+    "problem": "Donna has $n$ boxes of doughnuts. Each box contains $13$ doughnuts.\n\nAfter eating one doughnut, Donna is able to rearrange the remaining doughnuts into bags so that each bag contains $9$ doughnuts, and none are left over. What is the smallest possible value of $n$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "At the beginning, there are $13n$ doughnuts. After $1$ doughnut is eaten, the number of remaining doughnuts is a multiple of $9$. Therefore, the original number of doughnuts was $1$ more than a multiple of $9$. Expressing this as a congruence, we have $$13n\\equiv 1\\pmod 9,$$or in other words, $n\\equiv 13^{-1}\\pmod 9$. Since $13\\equiv 4\\pmod 9$, we can also write $n\\equiv 4^{-1}\\pmod 9$.\n\nBecause $4\\cdot 7=28\\equiv 1$, we have $4^{-1}\\equiv 7\\pmod 9$. Therefore, $n\\equiv 7\\pmod 9$. We know $n$ must be a nonnegative integer, so the smallest possible value of $n$ is $\\boxed{7}$.\n\nWe can check our answer: If $n=7$, then Donna started with $7\\cdot 13=91$ doughnuts; after eating one, she had $90$, which is a multiple of $9$."
+}

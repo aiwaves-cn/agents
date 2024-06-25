@@ -1,0 +1,6 @@
+{
+    "problem": "Let $h(4x-1) = 2x + 7$.  For what value of $x$ is $h(x) = x$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we find an expression for $h(x)$.  From our definition of $h$, we have $h(4y-1) = 2y+7$.  So, if we let $x=4y-1$, so that $y = (x+1)/4$, we have  \\[h(x) = 2\\cdot\\frac{x+1}{4} + 7 = \\frac{x+1}{2} + 7.\\] Setting this equal to $x$ gives \\[x =\\frac{x+1}{2} + 7.\\] Multiplying both sides by 2 gives $2x = x+1 + 14$, so $x = \\boxed{15}$."
+}

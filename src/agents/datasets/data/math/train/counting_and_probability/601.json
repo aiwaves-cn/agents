@@ -1,0 +1,6 @@
+{
+    "problem": "John has 6 green marbles and 4 purple marbles. He chooses a marble at random, writes down its color, and then puts the marble back.  He performs this process 5 times. What is the probability that he chooses exactly two green marbles?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{5}{2}=10$ ways to choose which two of the five marbles John chose were green. For any of those 10 choices, there is a $\\left( \\frac{6}{10} \\right) ^2 \\left( \\frac{4}{10} \\right) ^3 = \\frac{72}{3125}$ chance for that choice to happen. The total probability is then $10 \\cdot \\frac{72}{3125}= \\boxed{\\frac{144}{625}}$."
+}

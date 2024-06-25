@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{A} = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ be two matrices such that $\\mathbf{A} \\mathbf{B} = \\mathbf{B} \\mathbf{A}.$  Assuming $3b \\neq c,$ find $\\frac{a - d}{c - 3b}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{A} \\mathbf{B} = \\mathbf{B} \\mathbf{A},$\n\\[\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}.\\]Expanding, we get\n\\[\\begin{pmatrix} a + 2c & b + 2d \\\\ 3a + 4c & 3b + 4d \\end{pmatrix} = \\begin{pmatrix} a + 3b & 2a + 4b \\\\ c + 3d & 2c + 4d \\end{pmatrix}.\\]Comparing entries, we find $3b = 2c$ and $3a + 3c = 3d,$ so $a + c = d.$  Then\n\\[\\frac{a - d}{c - 3b} = \\frac{-c}{c - 2c} = \\frac{-c}{-c} = \\boxed{1}.\\]"
+}

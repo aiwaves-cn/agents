@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $\\triangle ABC$ is right-angled at $C$. Also, points $M$, $N$ and $P$ are the midpoints of sides $BC$, $AC$ and $AB$, respectively.  If the area of $\\triangle APN$ is $2\\mbox{ cm}^2$, then what is the area, in square centimeters, of $\\triangle ABC$? [asy]\nsize(6cm);\nimport olympiad;\npair c = (0, 0); pair a = (0, 4); pair n = (0, 2); pair m = (4, 0); pair b = (8, 0); pair p = n + m;\ndraw(a--b--c--cycle); draw(n--p--m);\ndraw(rightanglemark(a,c,b));\nlabel(\"$C$\", c, SW); label(\"$A$\", a, N); label(\"$N$\", n, W); label(\"$M$\", m, S); label(\"$B$\", b, E); label(\"$P$\", p, NE);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since the ratio $AN:AC$ equals the ratio $AP:AB$ (each is $1:2$) and $\\angle A$ is common in $\\triangle APN$ and $\\triangle ABC$, then $\\triangle APN$ is similar to $\\triangle ABC$.\n\nSince the ratio of side lengths between these two triangles is $1:2$, then the ratio of areas is $1:2^2=1:4$.\n\nThus, the area of $\\triangle ABC$ is $4 \\times 2 = \\boxed{8}\\mbox{ cm}^2$."
+}

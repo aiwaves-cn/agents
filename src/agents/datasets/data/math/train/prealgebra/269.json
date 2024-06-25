@@ -1,0 +1,6 @@
+{
+    "problem": "The local theater has one ticket window. In how many ways can six people line up to buy a ticket?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We must count the number of permutations of 6 people.  There are 6 choices for the first person in line, 5 choices for the second person in line, etc.  So the answer is $6\\cdot5\\cdot 4\\cdot 3\\cdot2\\cdot 1=\\boxed{720}$."
+}

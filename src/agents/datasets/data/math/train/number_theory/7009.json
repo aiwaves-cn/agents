@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest possible value of $k$ for which $3^{11}$ is expressible as the sum of $k$ consecutive positive integers.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let us write down one such sum, with $m$ terms and first term $n + 1$:\n$3^{11} = (n + 1) + (n + 2) + \\ldots + (n + m) = \\frac{1}{2} m(2n + m + 1)$.\nThus $m(2n + m + 1) = 2 \\cdot 3^{11}$ so $m$ is a divisor of $2\\cdot 3^{11}$. However, because $n \\geq 0$ we have $m^2 < m(m + 1) \\leq 2\\cdot 3^{11}$ so $m < \\sqrt{2\\cdot 3^{11}} < 3^6$. Thus, we are looking for large factors of $2\\cdot 3^{11}$ which are less than $3^6$. The largest such factor is clearly $2\\cdot 3^5 = 486$; for this value of $m$ we do indeed have the valid expression $3^{11} = 122 + 123 + \\ldots + 607$, for which $k=\\boxed{486}$."
+}

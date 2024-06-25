@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive two-digit integers leave a remainder of 2 when divided by 8?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Our goal is to count the two-digit integers in the form $8n + 2$ for integer values of $n$.  We examine the inequality, $$ 10 \\le 8n + 2 < 100. $$Subtracting 2 from all parts simplifies things: $$ 8 \\le 8n < 98. $$Dividing everything by 8 isolates the possible values of $n$: $$ 1 \\le n < 12\\, \\frac{1}{4}. $$Since $n$ can be any integer from 1 to 12, there are $\\boxed{12}$ two-digit integers in the form $8n + 2$ (that leave a remainder of 2 when divided by 8)."
+}

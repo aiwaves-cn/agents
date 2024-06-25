@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[f(x) = x^3 + 6x^2 + 16x + 28.\\]The graphs of $y = f(x)$ and $y = f^{-1}(x)$ intersect at exactly one point $(a,b).$  Enter the ordered pair $(a,b).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We know that the graphs of $y = f(x)$ and $y = f^{-1}(x)$ are reflections of each other across the line $y = x.$  If they intersect at some point $(a,b),$ where $a \\neq b,$ then they must also intersect at the point $(b,a),$ which is the reflection of the point $(a,b)$ in the line $y = x.$\n\nBut we are told that the graphs have exactly one point of intersection, so it must be of the form $(a,a).$  Since this point lies on the graph of $y = f(x),$ $a = f(a).$  In other words,\n\\[a = a^3 + 6a^2 + 16a + 28.\\]Then $a^3 + 6a^2 + 15a + 28 = 0,$ which factors as $(a + 4)(a^2 + 2a + 7) = 0.$  The quadratic factor does not have any real roots, so $a = -4.$  The point of intersection is then $\\boxed{(-4,-4)}.$"
+}

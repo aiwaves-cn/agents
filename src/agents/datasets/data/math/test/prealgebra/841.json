@@ -1,0 +1,6 @@
+{
+    "problem": "What is $3^{-4} \\cdot 3^{-8} \\cdot 3^{14}$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We can use the property  $$a^m \\cdot a^n = a^{m+n}$$to multiply two exponents together, but first we can extend it to all three exponents. In our situation, we have $a^m \\cdot a^n \\cdot a^k$. By using this multiplication property on the first two numbers and then on the remaining two numbers, we get  $$a^m \\cdot a^n \\cdot a^k = a^{m+n} \\cdot a^k = a^{(m+n)+k} = a^{m+n+k}.$$Now we can use this property,  $$a^m \\cdot a^n \\cdot a^k = a^{m+n+k},$$to give $$3^{-4} \\cdot 3^{-8} \\cdot 3^{14} = 3^{(-4)+(-8)+14} = 3^{-12+14} = 3^2 = \\boxed{9}.$$"
+}

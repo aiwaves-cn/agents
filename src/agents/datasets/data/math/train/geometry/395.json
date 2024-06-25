@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\triangle ABC$ be a right triangle such that $B$ is a right angle. A circle with diameter of $BC$ meets side $AC$ at $D.$ If the area of $\\triangle ABC$ is $150$ and $AC = 25,$ then what is $BD$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "We might try sketching a diagram: [asy]\npair pA, pB, pC, pO, pD;\npA = (-15, 0);\npB = (0, 0);\npC = (0, 20);\npO = (0, 10);\npD = (-9.6, 7.2);\ndraw(pA--pB--pC--pA);\ndraw(pD--pB);\ndraw(circle(pO, 10));\nlabel(\"$A$\", pA, SW);\nlabel(\"$B$\", pB, S);\nlabel(\"$C$\", pC, N);\nlabel(\"$D$\", pD, W);\n[/asy] Since $BC$ is a diameter of the circle, that makes $\\angle BDC$ a right angle. That means that $BD$ is an altitude of $\\triangle ABC.$ Then, we use the area formula to find $150 = \\frac{1}{2} \\cdot AC \\cdot BD,$ where $AC = 25.$ Solving, we have $BD = \\boxed{12}.$"
+}

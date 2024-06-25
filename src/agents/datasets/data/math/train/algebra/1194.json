@@ -1,0 +1,6 @@
+{
+    "problem": "You have a whole pizza in the refrigerator. On your first trip to the refrigerator, you eat half the pizza. On each successive trip, you eat half of the remaining pizza. After five trips to the refrigerator, what fractional part of the pizza have you eaten?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "On the second, third, fourth, and fifth trips, you eat $\\frac1{2^2}$, $\\frac1{2^3}$, $\\frac1{2^4}$, and $\\frac1{2^5}$ of the pizza, respectively. The total portion of the pizza eaten is the geometric series \\begin{align*}\n\\frac12+\\frac1{2^2}+\\frac1{2^3}+\\frac1{2^4}+\\frac1{2^5} &= \\frac{\\frac12\\left(1-\\left(\\frac12\\right)^5\\right)}{1-\\frac12}\\\\\n&=1-\\left(\\frac12\\right)^5\\\\\n&=1-\\frac1{32}\\\\\n&=\\boxed{\\frac{31}{32}}.\n\\end{align*}"
+}

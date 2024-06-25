@@ -1,0 +1,6 @@
+{
+    "problem": "For how many real values of $c$ do we have $\\left|\\frac12-ci\\right| = \\frac34$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have $\\left|\\frac12-ci\\right| = \\sqrt{{\\frac12}^2 + (-c)^2} = \\sqrt{c^2 + \\frac14}$, so $\\left|\\frac12-ci\\right| = \\frac34$ gives us $\\sqrt{c^2 + \\frac14} = \\frac34$.  Squaring both sides gives $c^2 + \\frac14 = \\frac9{16}$, so $c^2=\\frac5{16}$.  Taking the square root of both sides gives $c = \\frac{\\sqrt5}4$ and $c=-\\frac{\\sqrt5}4$ as solutions, so there are $\\boxed{2}$ real values of $c$ that satisfy the equation.\n\nWe also could have solved this equation by noting that $\\left|\\frac12-ci\\right| = \\frac34$ means that the complex number $\\frac12-ci$ is $\\frac34$ units from the origin in the complex plane.  Therefore, it is on the circle centered at the origin with radius $\\frac34$.  The complex number $\\frac12-ci$ is also on the vertical line that intersects the real axis at $\\frac12$, which is inside the aforementioned circle.  Since this line goes inside the circle, it must intersect the circle at $\\boxed{2}$ points, which correspond to the values of $c$ that satisfy the original equation."
+}

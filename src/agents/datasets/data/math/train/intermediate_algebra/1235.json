@@ -1,0 +1,6 @@
+{
+    "problem": "The solution of the equation $7^{x+7} = 8^x$ can be expressed in the form $x = \\log_b 7^7$. What is $b$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have \\begin{align*} 7^{x+7} &= 8^x \\\\\n7^x\\cdot 7^7 &= 8^x \\\\\n\\left(\\frac{8}{7}\\right)^x &= 7^7 \\\\\nx &= \\log_{8/7}7^7 \\end{align*}Since we are looking for the base of the logarithm, our answer is $\\boxed{\\frac{8}{7}}$."
+}

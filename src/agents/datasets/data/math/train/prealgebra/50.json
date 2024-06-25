@@ -1,0 +1,6 @@
+{
+    "problem": "One of the following 8 figures is randomly chosen. What is the probability that the chosen figure is a triangle? [asy]\nsize(8cm);\npath tri = (0, 0)--(1, 0)--(0.5, Sin(60))--cycle;\npath circ = shift((0.5, 0.5)) * (scale(0.5) * unitcircle);\npath sq = unitsquare;\npair sf = (1.9, 0); // Shift factor\n\ndraw(sq); draw(shift(sf) * tri); draw(shift(2 * sf) * circ); draw(shift(3 * sf) * tri);\n\ndraw(shift(4 * sf) * sq); draw(shift(5 * sf) * circ); draw(shift(6 * sf) * tri); draw(shift(7 * sf) * sq);\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "There are 8 figures in total. Of these, 3 are triangles. Therefore, the probability is $\\boxed{\\frac38}$."
+}

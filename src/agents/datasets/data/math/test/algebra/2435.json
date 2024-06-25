@@ -1,0 +1,6 @@
+{
+    "problem": "For how many positive integer values of $k$ does $kx^2+10x+k=0$ have rational solutions?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "By considering the expression $\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ for the solutions of $ax^2+bx+c=0$, we find that the solutions are rational if and only if the discriminant $b^2-4ac$ has a rational square root. Therefore, the solutions of $kx^2+10x+k=0$ are rational if and only if $100-4(k)(k)$ is a perfect square. (Recall that if $n$ is an integer which is not a perfect square, then $\\sqrt{n}$ is irrational).  By writing the discriminant as $4(25-k^2)$, we see that we only need to check the integers $1\\leq k\\leq 5$.  Of these, 3, 4, and 5 work, for a total of $\\boxed{3}$ integer values of $k$."
+}

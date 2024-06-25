@@ -1,0 +1,6 @@
+{
+    "problem": "The points $A = (-1,1,1),$ $B = (1,-1,1),$ $C = (1,1,-1),$ and $D = (-1,-1,-1)$ form the vertices of a regular tetrahedron.  Find the coordinates of the point $E,$ other than $D,$ such that $ABCE$ is also a regular tetrahedron.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The side length of regular tetrahedron $ABCE$ is equal to the distance between $A$ and $B,$ which is $\\sqrt{2^2 + 2^2} = 2 \\sqrt{2}.$\n\nLet $E = (x,y,z).$  Since $ABCE$ is a regular tetrahedron, we want $AE = BE = CE = 2 \\sqrt{2}.$  Thus,\n\\begin{align*}\n(x + 1)^2 + (y - 1)^2 + (z - 1)^2 &= 8, \\\\\n(x - 1)^2 + (y + 1)^2 + (z - 1)^2 &= 8, \\\\\n(x - 1)^2 + (y - 1)^2 + (z + 1)^2 &= 8.\n\\end{align*}Subtracting the first two equations, we end up with $x = y.$  Subtracting the first and third equations, we end up with $x = z.$  Then we can write the first equation as\n\\[(x + 1)^2 + (x - 1)^2 + (x - 1)^2 = 8.\\]This simplifies to $3x^2 - 2x - 5 = 0,$ which factors as $(x + 1)(3x - 5) = 0.$  Hence, $x = -1$ or $x = \\frac{5}{3}.$\n\nIf $x = -1,$ then $E$ will coincide with $D,$ so $x = \\frac{5}{3},$ which means $E = \\boxed{\\left( \\frac{5}{3}, \\frac{5}{3}, \\frac{5}{3} \\right)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $58_9 - 18_9.$ Express your answer in base $9.$",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "This subtraction is fairly straightforward: we just subtract the respective digits. No borrowing occurs: $$ \\begin{array}{c@{}c@{\\;}c@{}c} & & 5 & 8_9 \\\\ &- & 1 & 8_9 \\\\ \\cline{2-4} & & 4 & 0_9 \\\\ \\end{array} $$ Thus, the answer is $\\boxed{40_9}.$"
+}

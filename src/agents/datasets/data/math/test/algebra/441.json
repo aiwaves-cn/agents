@@ -1,0 +1,6 @@
+{
+    "problem": "Assuming $x\\ne0$, simplify $\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\frac{35}{3x}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We have  \\begin{align*}\n\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\frac{35}{3x} &=\n\\frac{12 \\cdot x^4 \\cdot 35}{x^2\\cdot 14x \\cdot 3x}\\\\& = \\frac{(4 \\cdot 3) \\cdot (5 \\cdot 7) \\cdot x^4}{(3 \\cdot 2 \\cdot 7)(x^2 \\cdot x \\cdot x)}\\\\\n&= \\frac{2\\cdot 2 \\cdot 3 \\cdot 5 \\cdot 7}{2 \\cdot 3 \\cdot 7}\\cdot\\frac{x^4}{x^{4}}\\\\\n&= 2 \\cdot 5 = \\boxed{10}.\n\\end{align*}"
+}

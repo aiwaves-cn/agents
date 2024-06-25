@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of all real values of $x$ with $0 < x < \\frac{\\pi}{2}$ such that $\\sin x$, $\\cos x$, and $\\tan x$ form the side lengths (in some order) of a right triangle.  Compute the sum of $\\tan^2 x$ over all $x$ in $S$.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Since $\\sin x < \\tan x$ for $0 < x < \\frac{\\pi}{2},$ the hypotenuse of the right triangle can only be $\\cos x$ or $\\tan x.$\n\nIf $\\tan x$ is the hypotenuse, then\n\\[\\tan^2 x = \\sin^2 x + \\cos^2 x = 1.\\]If $\\cos x$ is the hypotenuse, then\n\\[\\cos^2 x = \\tan^2 x + \\sin^2 x.\\]Then\n\\[\\cos^2 x = \\frac{1 - \\cos^2 x}{\\cos^2 x} + 1 - \\cos^2 x.\\]This simplifies to $\\cos^4 x = \\frac{1}{2}.$  Then $\\cos^2 x = \\frac{1}{\\sqrt{2}},$ so\n\\[\\tan^2 x = \\frac{1 - \\cos^2 x}{\\cos^2 x} = \\frac{1 - \\frac{1}{\\sqrt{2}}}{\\frac{1}{\\sqrt{2}}} = \\sqrt{2} - 1.\\]Thus, the sum of all possible values of $\\tan^2 x$ is $1 + (\\sqrt{2} - 1) = \\boxed{\\sqrt{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c,$ $d$ be real numbers such that\n\\[\\frac{(a - b)(c - d)}{(b - c)(d - a)} = \\frac{2}{5}.\\]Find the sum of all possible values of\n\\[\\frac{(a - c)(b - d)}{(a - b)(c - d)}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the given equation, $5(a - b)(c - d) = 2(b - c)(d - a),$ which expands as\n\\[5ac - 5ad - 5bc + 5bd = 2bd - 2ab - 2cd + 2ac.\\]This simplifies to $2ab + 3ac + 3bd + 2cd = 5ad + 5bc,$ so\n\\[ad + bc = \\frac{2ab + 3ac + 3bd + 2cd}{5}.\\]Then\n\\begin{align*}\n\\frac{(a - c)(b - d)}{(a - b)(c - d)} &= \\frac{ab - ad - bc + cd}{ac - ad - bc + bd} \\\\\n&= \\frac{ab + cd - \\frac{2ab + 3ac + 3bd + 2cd}{5}}{ac + bd - \\frac{2ab + 3ac + 3bd + 2cd}{5}} \\\\\n&= \\frac{5ab + 5cd - 2ab - 3ac - 3bd - 2cd}{5ac + 5bd - 2ab - 3ac - 3bd - 2cd} \\\\\n&= \\frac{3ab - 3ac - 3bd + 3cd}{-2ab + 2ac + 2bd - 2cd} \\\\\n&= \\frac{3(ab - ac - bd + cd)}{-2(ab - ac - bd + cd)} \\\\\n&= \\boxed{-\\frac{3}{2}}.\n\\end{align*}"
+}

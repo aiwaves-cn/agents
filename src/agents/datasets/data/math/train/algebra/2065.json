@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the polynomials  \\[f(x)=1-12x+3x^2-4x^3+5x^4\\] and \\[g(x)=3-2x-6x^3+9x^4.\\] Find $c$ such that the polynomial $f(x)+cg(x)$ has degree 3.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The polynomial $f(x)+cg(x)$ will have degree 3 exactly when the $x^4$ terms cancel and the $x^3$ terms do not.  The $x^4$ term of $f(x)+cg(x)$ is \\[5x^4+c(9x^4)=(5+9c)x^4.\\]This is zero when $c=-5/9$.\n\nIf $c=-5/9$, the $x^3$ term is   \\[-4x^3+c(-6x^3)=(-4-6\\cdot -5/9)x^3=-\\frac{2}{3}x^3\\neq0.\\]Therefore there is only one solution $c=\\boxed{-\\frac{5}{9}}$."
+}

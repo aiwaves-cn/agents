@@ -1,0 +1,6 @@
+{
+    "problem": "What are the coordinates of the point on the line $5x-9y=42$ such that the $x$ and $y$ coordinates are the additive inverses of each other? Express your answer as an ordered pair.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Our point lies on $5x-9y=42$ with the condition that $x=-y$. Thus, we have the system of equations \\begin{align*}\n5x-9y &= 42\\\\\nx &= -y.\n\\end{align*} Substituting $x= -y$ into the first equation gives  \\begin{align*}\n5(-y) -9y &=42\\\\\n\\Rightarrow -14y &= 42\\\\\n\\Rightarrow y &=-3.\n\\end{align*} Thus $x = -y = -(-3) = 3$, so our desired point is $\\boxed{(3,-3)}$."
+}

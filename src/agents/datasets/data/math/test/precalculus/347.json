@@ -1,0 +1,6 @@
+{
+    "problem": "Find the vector $\\mathbf{v}$ such that\n\\[\\begin{pmatrix} 2 & 3 & -1 \\\\ 0 & 4 & 5 \\\\ 4 & 0 & -2 \\end{pmatrix} \\mathbf{v} = \\begin{pmatrix} 2 \\\\ 27 \\\\ -14 \\end{pmatrix}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\  z \\end{pmatrix}.$  Then\n\\[\\begin{pmatrix} 2 & 3 & -1 \\\\ 0 & 4 & 5 \\\\ 4 & 0 & -2 \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\\\  z \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 27 \\\\ -14 \\end{pmatrix}.\\]This gives us the system of equations\n\\begin{align*}\n2x + 3y - z &= 2, \\\\\n4y + 5z &= 27, \\\\\n4x - 2z &= -14.\n\\end{align*}Solving, we find $x = -2,$ $y = 3,$ and $z = 3,$ so $\\mathbf{v} = \\boxed{\\begin{pmatrix} -2 \\\\ 3 \\\\ 3 \\end{pmatrix}}.$"
+}

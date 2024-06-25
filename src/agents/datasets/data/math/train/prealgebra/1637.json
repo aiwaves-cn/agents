@@ -1,0 +1,6 @@
+{
+    "problem": "A digital music library contains 12 days of music and takes up 16,000 megabytes of disk space. On average, how many megabytes of disk space does one hour of music in this library take up? Express your answer to the nearest whole number.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Since there are 24 hours in a day, there are $12\\cdot24$ hours in 12 days. One hour of music takes up $1/(12\\cdot24)$ of the disk space that 12 days takes up, so one hour of music takes up $16000/(12\\cdot24)=500/(3\\cdot3)\\approx\\boxed{56}$ megabytes."
+}

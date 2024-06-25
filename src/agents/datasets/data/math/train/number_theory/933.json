@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest base-10 integer that can be represented as $12_a$ in one base and $21_b$ in another base, where $a$ and $b$ are any bases larger than 2?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We start by changing the expressions to base 10 in terms of $a$ and $b$. We also know that the two expressions should be equal since they represent the same number. \\begin{align*}\n12_a&=21_b\\quad\\Rightarrow\\\\\n1\\cdot a+2\\cdot 1&=2\\cdot b +1\\cdot1\\quad\\Rightarrow\\\\\na+2&=2b+1\\quad\\Rightarrow\\\\\na&=2b-1.\n\\end{align*}For the smallest base-10 integer, we would want the smallest bases $a$ and $b$. Since $a$ and $b$ must be greater than 2, we'll let $b=3$ and that means $a=2\\cdot3-1=5$. In these bases, the base-10 integer is $a+2=5+2=\\boxed{7}$. We can check that the base-$b$ expression also works and get $2\\cdot b+1=2\\cdot3+1=7$.\n\nAlternatively, we can just try different bases. The smallest possible value for $a$ and $b$ is 3. If we let $a=3$, we'd need a smaller base for $b$ (since we have $2\\cdot b\\approx1\\cdot a$), which isn't possible. When we let $b=3$, we get $21_3=7$ and try to find $b$ such that $12_b=7$. If $b+2=7$, then $b=5$ and we still get $\\boxed{7}$."
+}

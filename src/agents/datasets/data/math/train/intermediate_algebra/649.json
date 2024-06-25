@@ -1,0 +1,6 @@
+{
+    "problem": "Find a monic polynomial of degree $4,$ in $x,$ with rational coefficients such that $\\sqrt{2} +\\sqrt{3}$ is a root of the polynomial.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We start by constructing a quadratic polynomial with $\\sqrt{2} +\\sqrt{3}$ and $\\sqrt{2} - \\sqrt{3}$ as roots. The sum of the roots is $\\sqrt{2} +\\sqrt{3}+\\sqrt{2} -\\sqrt{3}=2\\sqrt{2}.$ The product of the roots is $(\\sqrt{2} +\\sqrt{3})(\\sqrt{2} -\\sqrt{3})=2-3=-1.$ Thus a quadratic with the roots $\\sqrt{2} +\\sqrt{3}$ and $\\sqrt{2} -\\sqrt{3}$ is $$x^2-2\\sqrt{2}x-1.$$Next, we want to get rid of the irrational coefficients. We can write $x^2-2\\sqrt{2}x-1$ as $x^2-1-2\\sqrt{2}x$. Then, multiplying by $x^2-1+2\\sqrt{2}x$ gives us\n$$(x^2-1-2\\sqrt{2}x)(x^2-1+2\\sqrt{2}x)=(x^2-1)^2-(2\\sqrt{2}x)^2=\\boxed{x^4-10x^2+1}$$which is a monic polynomial of degree $4$ with rational coefficients that has $\\sqrt{2} +\\sqrt{3}$ as a root."
+}

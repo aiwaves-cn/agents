@@ -1,0 +1,6 @@
+{
+    "problem": "What is the only integer value of $n$ for which $\\frac{n+1}{13-n}$ is a positive prime number?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The expression $\\frac{n+1}{13-n}$ is negative if $n$ is less than $-1$ or greater than $13$, so $n$ must be between 0 and $12$ inclusive.  Also, since $\\frac{n+1}{13-n}$ is prime, it must be greater than or equal to 2.  Solving \\begin{align*}\n\\frac{n+1}{13-n} &\\geq 2 \\\\\nn+1 &\\geq 26-2n \\\\\n3n &\\geq 25 \\\\\nn &\\geq 8\\frac{1}{3},\n\\end{align*} we only have to check 9, 10, 11, and 12.  (The multiplication by $13-n$ is justified since we have already know that $n$ is less than 13).  We find that when $n=\\boxed{12},$ the expression equals 13."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $r$ such that $\\log_{81} (2r-1) = -1/2$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Writing the equation $\\log_{81} (2r-1) = -1/2$ in exponential notation gives $2r-1 = 81^{-1/2} = (9^2)^{-1/2} = 9^{-1} = 1/9$. Solving $2r-1 = 1/9$ gives $r = \\boxed{\\frac{5}{9}}$."
+}

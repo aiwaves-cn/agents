@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure shown, a perpendicular segment is drawn from B in rectangle ABCD to meet diagonal AC at point X.  Side AB is 6 cm and diagonal AC is 10 cm.  How many centimeters away is point X from the midpoint M of the diagonal AC?  Express your answer as a decimal to the nearest tenth.\n\n[asy]\ndraw((0,0)--(25,0)--(25,15)--(0,15)--cycle,linewidth(1));\ndraw((0,0)--(25,15),linewidth(1));\ndraw((7.2,4.3)--(0,15),linewidth(1));\ndot((12.5,7.5));\nlabel(\"$M$\",(12.5,7.5),N);\nlabel(\"$A$\",(0,0),S);\nlabel(\"$B$\",(0,15),N);\nlabel(\"$C$\",(25,15),N);\nlabel(\"$D$\",(25,0),S);\nlabel(\"$X$\",(7.2,4.3),SE);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We see that $\\triangle ABX \\sim \\triangle ACB$ since $\\angle BXA = \\angle ABC$ and $\\angle A$ is shared by both triangles. From this similarity, we have the equation $\\frac{AB}{AC}=\\frac{AX}{AB}$. Plugging in the known values of the sides and solving for $AX$, we have $\\frac{6}{10}=\\frac{AX}{6}\\Rightarrow AX=3.6$. Since $AM=10/2=5$, $XM=5-3.6=\\boxed{1.4}$ centimeters."
+}

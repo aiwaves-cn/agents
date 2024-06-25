@@ -1,0 +1,6 @@
+{
+    "problem": "If $n=2^3 \\cdot 3^2 \\cdot 5$, how many even positive factors does $n$ have?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "A positive integer is a factor of $n$ if and only if its prime factorization is of the form $2^a\\cdot 3^b\\cdot 5^c$ where $0\\leq a\\leq 3$, $0\\leq b\\leq 2$, and $0\\leq c\\leq 1$.  An integer is even if and only if the exponent of 2 in its prime factorization is at least 1.  Therefore, we have 3 choices for $a$, 3 choices for $b$ and $2$ choices for $c$, for a total of $(3)(3)(2)=\\boxed{18}$ ways to form an even positive factor of $n$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area of trapezoid $OBCD$ below? [asy]\nsize(200);\ndefaultpen(linewidth(0.8));\nxaxis(\"$x$\",-4,10);\nyaxis(\"$y$\",-3,5);\ndot(Label(\"$O$\",align=SW),(0,0));\ndot(Label(\"$D(2,3)$\",align=NW),(2,3));\ndot(Label(\"$C(4,3)$\",align=NE),(4,3));\ndot(Label(\"$B(8,0)$\",align=S),(8,0));\ndraw((0,0)--(2,3)--(4,3)--(8,0));\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The area of a trapezoid is $\\frac{(b_1+b_2)h}{2}$. This trapezoid has bases of $2$ and $8$ units and a height of $3$ units, so the area is $\\frac{(2+8)3}{2}=\\boxed{15}$ square units."
+}

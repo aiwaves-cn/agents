@@ -1,0 +1,6 @@
+{
+    "problem": "Polygon $ABCDEF$ is a regular hexagon. What is the measure in degrees of angle $ABF$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "In triangle $ABF$, the two acute angles are equal since $AB=AF$. Also, the measure of $\\angle A$ is $180^\\circ(6-2)/6=120^\\circ$.  Letting $x$ be the measure of $\\angle ABF$, we have \\[\n120^\\circ+x+x=180^\\circ \\implies x=\\boxed{30}\\text{ degrees}.\n\\] [asy]\nsize(5cm);\ndefaultpen(linewidth(0.7));\nint i;\npair A=dir(0), B=dir(60), C=dir(120), D=dir(180), Ep=dir(240), F=dir(300);\npair[] dots = {A,B,C,D,Ep,F};\nstring[] alphabet={\"$A$\",\"$B$\",\"$C$\",\"$D$\",\"$E$\",\"$F$\"};\ndot(dots);\nfor(i=0;i<6;++i)\n{\n\ndraw(dir(60*i)--dir(60*i+60));\n\nlabel(alphabet[i],dots[i],dots[i]);\n}\ndraw(A--B--F);\ndraw(anglemark(F,B,A));\ndraw(anglemark(A,F,B));\n[/asy]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the largest solution to the equation \\[\\log_{10x^2} 10 + \\log_{100x^3} 10 = -2.\\]Find the value of $\\frac{1}{x^{12}},$ writing your answer in decimal representation.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Inverting each logarithm, we have \\[\\frac{1}{\\log_{10} 10x^2} + \\frac{1}{\\log_{10} 100x^3} = -2,\\]or \\[\\frac{1}{1 + 2\\log_{10} x} + \\frac{1}{2 + 3\\log_{10} x} = -2.\\]Now, make the substitution $y = \\log_{10} x,$ giving \\[\\frac{1}{1+2y} +\\frac{1}{2+3y}=-2.\\]To solve this equation, we multiply both sides by $(1+2y)(2+3y)$ to get \\[(2+3y)+(1+2y) = -2(1+2y)(2+3y),\\]which rearranges to \\[12y^2 + 19y + 7 = 0.\\]Factoring this quadratic, we get \\[(y+1)(12y+7) = 0,\\]so either $y = -1$ or $y = -\\tfrac{7}{12}.$ Since $y = \\log_{10} x,$ we have $x = 10^y,$ so either $x = 10^{-1}$ or $x = 10^{-7/12}.$ The larger of these two solutions is $x = 10^{-7/12},$ so the answer is \\[\\frac{1}{x^{12}} = x^{-12} = 10^7 = \\boxed{10000000}.\\]"
+}

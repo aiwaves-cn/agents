@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate: $-\\left(14\\div 2\\cdot 9-60+3\\cdot 9\\right)$.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Recall that the order of operations says that we must perform the multiplication and division before we do the addition and subtraction.  Also, the operations inside the parentheses must be done before we negate the entire expression.  Therefore, we have \\begin{align*}-\\left(14\\div 2\\cdot 9-60+3\\cdot 9\\right)&=-\\left(7\\cdot 9-60+3\\cdot 9\\right) \\\\ &=-\\left(63-60+3\\cdot 9\\right) \\\\ &=-\\left(63-60+27\\right) \\\\ &=-\\left(63+(-60)+27\\right) \\\\ &=-\\left(63+27+(-60)\\right) \\\\ &=-\\left(90+(-60)\\right) \\\\ &=-\\left(90-60\\right) \\\\ &=-\\left(30\\right) \\\\ &=\\boxed{-30}.\\end{align*}"
+}

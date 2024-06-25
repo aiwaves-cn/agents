@@ -1,0 +1,6 @@
+{
+    "problem": "Find $A$ and $B$ such that\n\\[\\frac{4x}{x^2-8x+15} = \\frac{A}{x-3} + \\frac{B}{x-5}\\]for all $x$ besides 3 and 5. Express your answer as an ordered pair in the form $(A, B).$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Factoring the denominator on the left side gives \\[ \\frac{4x}{(x-5)(x-3)}=\\frac{A}{x-3}+\\frac{B}{x-5}. \\]Then, we multiply both sides of the equation by $(x - 3)(x - 5)$ to get \\[ 4x = A(x-5) + B(x-3). \\]If the linear expression $4x$ agrees with the linear expression $A(x-5) + B(x-3)$ at all values of $x$ besides 3 and 5, then the two expressions must agree for $x=3$ and $x=5$ as well.  Substituting $x = 3$, we get $12 = -2A$, so $A = -6$.  Likewise, we plug in $x = 5$ to solve for $B$. Substituting $x = 5$, we get $20 = 2B$, so $B = 10$.  Therefore, $(A, B) = \\boxed{(-6, 10)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "An equilateral triangle shares a common side with a square as shown. What is the number of degrees in $m\\angle CDB$? [asy] pair A,E,C,D,B; D = dir(60); C = dir(0); E = (0,-1); B = C+E; draw(B--D--C--B--E--A--C--D--A); label(\"D\",D,N); label(\"C\",C,dir(0)); label(\"B\",B,dir(0));\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since the square and the equilateral triangle share a side, all sides of the square are the same length as all sides of the equilateral triangle. Specifically, we have $CD=CB$, and so $\\triangle BCD$ is isosceles with equal angles at $B$ and $D$. Let $x$ denote the number of degrees in the measure of each of these two angles (that is, $x^\\circ=m\\angle CDB=m\\angle CBD$).\n\nAngle $\\angle BCD$ is equal to $90^\\circ+60^\\circ = 150^\\circ$ (since a square and an equilateral triangle have interior angles of $90^\\circ$ and $60^\\circ$, respectively). Since the sum of angles in a triangle is $180^\\circ$, we have $$x + x + 150 = 180,$$ giving $x=\\boxed{15}$."
+}

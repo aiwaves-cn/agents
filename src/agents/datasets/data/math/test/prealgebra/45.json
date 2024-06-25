@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common factor of $144$ and $405$.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Writing out the prime factorization of $144$ and $405$, we see that $144 = 2^4 \\cdot 3^2$ and $405 = 3^4 \\cdot 5$. Their greatest common factor is $3^2 = \\boxed{9}$.\n\nAlternatively, since $405$ is odd, we know that we can ignore any factors of $2$ in $144$. Dividing by $2$ repeatedly, we find that $144/2^4 = 9$. Since $9$ divides into $405$, it follows that the greatest common factor is $9$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Our school's girls volleyball team has 14 players, including a set of 3 triplets: Alicia, Amanda, and Anna.  In how many ways can we choose 6 starters with no restrictions? (The triplets are treated as distinguishable.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We are choosing 6 starters from 14 players, which can be done in $\\binom{14}{6} = \\boxed{3003}$ ways."
+}

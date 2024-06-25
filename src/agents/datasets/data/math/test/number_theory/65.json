@@ -1,0 +1,6 @@
+{
+    "problem": "Some fractions can be expressed as repeating decimals. Given that $\\frac{1}{7}=0.14285714285$..., what is the 9th digit to the right of the decimal in the decimal representation of $\\frac{3}{7}$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since $\\frac17$ repeats every 6 digits, so does $3\\cdot\\frac17=\\frac37$. The 9th digit is therefore the same as the third digit. If we multiply $\\frac17$ by  3, we get $.4285\\ldots$, which has a third digit of $\\boxed{8}$."
+}

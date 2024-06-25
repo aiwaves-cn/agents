@@ -1,0 +1,6 @@
+{
+    "problem": "The four points $A(-4,0), B(0,-4), X(0,8),$ and $Y(14,k)$ are grouped on the Cartesian plane. If segment $AB$ is parallel to segment $XY$ what is the value of $k$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Lines that are parallel have the same slope. In this case, $AB$ has a slope of $(0 - (-4))/(-4 - 0) = -1.$ This now must be the slope for $XY$. Now we can use the equation $y_2 - y_1 = m(x_2 - x_1)$ to find the value of $k$. Plugging in the coordinates for $Y$ and $X$ we find that $k - 8 = -1(14 - 0)$, thus $k = -14 + 8 = -6$. We also could see that from $(0, 8)$ to $(14, k)$ we are moving 14 units right, so we also must move 14 units down to get a slope of $-14/14 = -1$. Moving 14 units down from $(0, 8)$ lands us at $(0, 8 - 14)$ or $(0, -6)$, so $k = \\boxed{-6}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all the solutions of $x = \\left|2x-|60-2x|\\right|$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We take cases on the sign of $60-2x.$ If $60-2x \\ge 0,$ then the equation becomes \\[x = \\left| 2x - (60-2x) \\right| = \\left| 4x - 60 \\right|.\\]Therefore, either $x = 4x-60,$ which gives $x=20,$ or $x=-(4x-60),$ which gives $x=12.$ Both solutions satisfy $60-2x \\ge 0,$ so they are valid.\n\nIf $60-2x<0,$ then the equation becomes \\[x = \\left| 2x + (60-2x) \\right| = 60,\\]which satisfies $60-2x<0,$ so $x=60$ is the only solution in this case.\n\nThe sum of all the solutions is therefore $12 + 20 + 60 = \\boxed{92}.$"
+}

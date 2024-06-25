@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit of $3^{2004}$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Write $3^{2004}$ as $(3^{4})^{501}$.  Since the units digit of $3^4=81$ is 1, the units digit of any power of $3^4$ is $\\boxed{1}$ as well."
+}

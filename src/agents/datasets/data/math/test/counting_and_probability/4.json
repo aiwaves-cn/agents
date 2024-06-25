@@ -1,0 +1,6 @@
+{
+    "problem": "At a school, all 60 students play on at least one of three teams: Basketball, Soccer, and Mathletics. 8 students play all three sports, half the students play basketball, and the ratio of the size of the math team to the size of the basketball team to the size of the soccer team is $4:3:2$. How many students at the school play on exactly two teams?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We have enough information to solve for the size of each team. There are $\\dfrac{60}{2}=30$ members of the basketball team, $\\dfrac{4}{3}(30)=40$ members of the math team, and $\\dfrac{2}{3}(30)=20$ members of the soccer team. Adding these up gives us 90, so clearly we're overcounting since there are only 60 students. The number of times that each student is counted in this total is equal to the number of teams that student plays on. This means that all 60 students will be counted at least once, all students who play exactly two sports will be counted one extra time, and all students who play three sports will be counted two extra times. Letting $x$ be the number of students who play two sports and $y$ be the number who play all three gives us $60+x+2y=90$. However, we know that $y=8$, so we can substitute that in and get $x=\\boxed{14}$."
+}

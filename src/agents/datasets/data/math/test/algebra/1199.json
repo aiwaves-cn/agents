@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $f$ is a function and $f^{-1}$ is the inverse of $f$.  If $f(1)=2$, $f(2) = 6$, and $f(3)=5$, then what is $f^{-1}(f^{-1}(6))$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since $f(2) = 6$, we have $f^{-1}(6)=2$. (Note that the hypothesis that $f$ has an inverse implies that there are no other values of $x$ with $f(x) = 6$.)  Similarly, $f(1) =2$ implies $f^{-1}(2)=1$.   So $f^{-1}(f^{-1}(6))=f^{-1}(2)=\\boxed{1}$."
+}

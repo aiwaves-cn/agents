@@ -1,0 +1,6 @@
+{
+    "problem": "The values of a function $f(x)$ are given in the table below.  \\begin{tabular}{|r||c|c|c|c|c|c|} \\hline $x$ & 1 & 2 & 3 & 5 & 8 & 13 \\\\ \\hline $f(x)$ & 3 & 13 & 8 & 1 & 0 & 5 \\\\ \\hline \\end{tabular}If $f^{-1}$ exists, what is $f^{-1}\\left(\\frac{f^{-1}(5) +f^{-1}(13)}{f^{-1}(1)}\\right)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "For $f^{-1}(5)$, $f^{-1}(13)$, and $f^{-1}(1)$, we read from the table \\[f(13)=5\\quad\\Rightarrow\\quad f^{-1}(5)=13,\\]\\[f(2)=13\\quad\\Rightarrow\\quad f^{-1}(13)=2,\\quad \\text{and}\\]\\[f(5)=1\\quad\\Rightarrow\\quad f^{-1}(1)=5.\\]Therefore,  \\[f^{-1}\\left(\\frac{f^{-1}(5) +f^{-1}(13)}{f^{-1}(1)}\\right)=f^{-1}\\left(\\frac{13+2}{5}\\right)=f^{-1}(3)\\]Because $f(1)=3$, $f^{-1}(3)=\\boxed{1}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the graph of $\\frac{x^2+3x+2}{x^3+x^2-2x}$, let $a$ be the number of holes in the graph, $b$ be the number of vertical asympotes, $c$ be the number of horizontal asymptotes, and $d$ be the number of oblique asymptotes. Find $a+2b+3c+4d$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor the numerator and denominator to get $$\\frac{x^2+3x+2}{x^3+x^2-2x} = \\frac{(x+1)(x+2)}{x(x-1)(x+2)}.$$In this representation we can immediately see that there is a hole at $x=-2$, and vertical asymptotes at $x=1$ and $x=0$. There are no more holes or vertical asymptotes, so $a=1$ and $b=2$. If we cancel out the common factors we have\n$$\\frac{(x+1)(x+2)}{x(x-1)(x+2)} =\\frac{x+1}{x^2-x}.$$We can now see that as $x$ becomes very large, the $x^2$ term in the denominator dominates and the graph tends towards $0$, giving us a horizontal asymptote.\nSince the graph cannot have more than one horizontal asymptote, or a horizontal asymptote and a slant asymptote, we have that $c=1$ and $d=0$. Therefore, $a+2b+3c+4d = 1+2\\cdot 2+3+0 = \\boxed{8}.$"
+}

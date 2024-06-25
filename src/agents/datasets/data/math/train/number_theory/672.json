@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least prime factor of $7^4 - 7^3$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Factor out $7^3$ in the given expression $7^4-7^3=7^3(7-1)=7^3\\cdot6=2\\cdot3\\cdot7^3$. Thus, the least prime factor of $7^4-7^3$ is $\\boxed{2}$."
+}

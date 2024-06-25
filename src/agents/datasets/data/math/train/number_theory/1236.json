@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers, not exceeding 100, are multiples of 2 or 3 but not 4?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The multiples of 2 from 1 to 100 are $2, 4, 6,\\ldots, 100$.  There are 50 such numbers.\n\nThe multiples of 3 from 1 to 100 are $3, 6, 9,\\ldots, 99$.  There are 33 such numbers.\n\nThese lists count all of the multiples of 6 twice.  The multiples of 6 are $6, 12,\\ldots,96$, and there are 16 such multiples of 6.  Therefore there are $50+33-16=67$ multiples of 2 or 3 from 1 to 100.\n\nAll of the 25 multiples of 4 from 1 to 100 are on this list.  Therefore there are $67-25=\\boxed{42}$ numbers from 1 to 100 that are multiples of 2 or 3 but not 4."
+}

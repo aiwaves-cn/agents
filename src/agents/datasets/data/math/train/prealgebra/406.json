@@ -1,0 +1,6 @@
+{
+    "problem": "In Mrs. Marsh's algebra class, 30 of the 36 students took the Chapter 4 test, and their mean score was $72 \\%$. The next day the other six students took the test and their mean score was $78 \\%$. What is the new class mean? Express your answer as a percent.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "To make this easier, you can scale all the student numbers down by a factor of 6: 5 students averaged a $72\\%$, and 1 student got a $78\\%$.  Then, instead of adding that up, you note, since 5 students averaged a 72, and only 1 student got a 78, the class average should be 5 times closer to 72 than 78.  And since $78 - 72 = 6$, we perfectly get $\\boxed{73\\%}$ as the class average, since $73 - 72 = 1$, and $78 - 73 = 5$."
+}

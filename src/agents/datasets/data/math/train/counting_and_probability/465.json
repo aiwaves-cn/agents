@@ -1,0 +1,6 @@
+{
+    "problem": "Two cubes with the faces numbered 1 through 6 are tossed and the numbers shown on the top faces are added. What is the probability that the sum is even? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "After the first cube has been rolled, the other cube has six possible results. Three are one parity, and three are the other parity, so no matter what the first cube shows, there is a $\\boxed{\\frac12}$ chance that the sum is either parity. Note that this is true no matter how many such cubes are rolled."
+}

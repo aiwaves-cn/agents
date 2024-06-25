@@ -1,0 +1,6 @@
+{
+    "problem": "Rationalize the denominator of $\\frac{5}{2+\\sqrt{6}}$. The answer can be written as $\\frac{A\\sqrt{B}+C}{D}$, where $A$, $B$, $C$, and $D$ are integers, $D$ is positive, and $B$ is not divisible by the square of any prime. If the greatest common divisor of $A$, $C$, and $D$ is 1, find $A+B+C+D$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We multiply both the top and bottom by the conjugate of the denominator: $$\\frac{5}{2+\\sqrt{6}} \\cdot \\frac{2-\\sqrt{6}}{2-\\sqrt{6}}=\\frac{10-5\\sqrt{6}}{4-6}=\\frac{5\\sqrt{6}-10}{2}$$Therefore, $A+B+C+D=5+6-10+2=\\boxed{3}$."
+}

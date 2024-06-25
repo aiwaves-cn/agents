@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a} = \\begin{pmatrix} 3 \\\\ p \\\\ -1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ 1 \\\\ q \\end{pmatrix}$ be vectors that are equal in magnitude, and orthogonal.  Enter the ordered pair $(p,q).$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Since the vectors are orthogonal, their dot product is 0, which gives us\n\\[(3)(2) + (p)(1) + (-1)(q) = 0.\\]Then $p - q = -6.$\n\nSince the vectors have equal magnitudes,\n\\[3^2 + p^2 + (-1)^2 = 2^2 + 1^2 + q^2.\\]Then $p^2 - q^2 = -5.$  This factors as $(p + q)(p - q) = -5,$ so\n\\[p + q = \\frac{5}{6}.\\]We can then solve the system, to obtain $(p,q) = \\boxed{\\left( -\\frac{31}{12}, \\frac{41}{12} \\right)}.$"
+}

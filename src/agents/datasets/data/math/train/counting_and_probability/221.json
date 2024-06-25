@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest prime divisor of 11! + 12!",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Since $12! = 12 \\cdot 11!$, we can examine the sum better by factoring $11!$ out of both parts: $$ 11! + 12! = 11! + 12 \\cdot 11! = 11!(1 + 12) = 11! \\cdot 13. $$Since no prime greater than 11 divides $11!$, $\\boxed{13}$ is the largest prime factor of $11! + 12!$."
+}

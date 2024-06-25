@@ -1,0 +1,6 @@
+{
+    "problem": "Define a function $A(m, n)$ by \\[ A(m,n) = \\left\\{ \\begin{aligned} &n+1& \\text{ if } m = 0 \\\\ &A(m-1, 1) & \\text{ if } m > 0 \\text{ and } n = 0 \\\\ &A(m-1, A(m, n-1))&\\text{ if } m > 0 \\text{ and } n > 0. \\end{aligned} \\right.\\]Compute $A(2, 1).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We iterate through the definition of $A(m, n).$ Each step below is marked either $(1),$ $(2),$ or $(3),$ corresponding to the three parts of the definition of $A(m, n)$: \\[\\begin{aligned} A(2, 1)&\\stackrel{(3)}{=}  A(1, A(2, 0)) \\\\ &\\stackrel{(2)}{=} A(1, A(1, 1)) \\\\ &\\stackrel{(3)}{=}  A(1, A(0, A(1, 0))) \\\\ &\\stackrel{(2)}{=}  A(1, A(0, A(0, 1))) \\\\ &\\stackrel{(1)}{=} A(1, A(0, 2)) \\\\  &\\stackrel{(1)}{=} A(1, 3) \\\\ &\\stackrel{(3)}{=}  A(0, A(1, 2)) \\\\ &\\stackrel{(3)}{=} A(0, A(0, A(1, 1))). \\end{aligned}\\]In the last few steps, we actually computed $A(1, 1) = 3,$ so we have \\[A(2, 1) = A(0, A(0, 3)) = A(0, 4) = \\boxed{5}\\]by applying $(1)$ twice.\n\n(Note: the function $A(m, n)$ is called the Ackermann function. Because of its deeply recursive definition, $A(m, n)$ grows extremely quickly. For example, other values of $A(m, n)$ include $A(3, 3) = 29$ and $A(4, 2) = 2^{65536} - 3,$ which has tens of thousands of digits in base ten!)"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $x = 1 + \\frac{x}{1 + \\frac{x}{1+ \\frac{x}{1 + \\cdots}}}$, then what is $x$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Notice that the in the equation $$x = 1 + \\frac{x}{\\left(1 + \\frac{x}{1+ \\frac{x}{1 + \\cdots}}\\right)},$$the term in the parentheses is the same as the definition of $x$. It thus follows that $$x = 1 + \\frac{x}{x} = \\boxed{2}.$$"
+}

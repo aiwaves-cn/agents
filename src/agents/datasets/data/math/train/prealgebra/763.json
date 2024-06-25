@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the sum of all single-digit replacements for $z$ such that the number ${24{,}z38}$ is divisible by 6.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "For a number to be divisible by 6, it must be divisible by 3 and 2. Since our number ${24{,}z38}$ is obviously an even number, we only need to worry about whether it is divisible by 3. In order to check divisibility by 3, we find the sum of our digits: $2 + 4 + z + 3 + 8 = 17 + z.$ In order for ${24{,}z38}$ to be divisible by 3, $17 + z$ must be divisible by 3, meaning that $z$ is $1,$ $4,$ or $7.$\n\nWe can verify that ${24{,}138},$ ${24{,}438},$ and ${24{,}738}$ are all divisible by 6, and therefore our answer is $1 + 4 + 7 = \\boxed{12}.$"
+}

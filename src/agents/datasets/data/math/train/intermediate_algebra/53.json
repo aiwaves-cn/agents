@@ -1,0 +1,6 @@
+{
+    "problem": "If $a,$ $b,$ $c,$ $x,$ $y,$ and $z$ are positive and $a^2 + b^2 + c^2 = 25,$ $x^2 + y^2 + z^2 = 36,$ and $ax + by + cz = 30,$ compute\n\\[\\frac{a + b + c}{x + y + z}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By the Cauchy-Schwarz inequality,\n\\[(a^2 + b^2 + c^2)(x^2 + y^2 + z^2) \\ge (ax + by + cz)^2.\\]This becomes $25 \\cdot 36 \\ge 30^2.$  Since $25 \\cdot 36 = 900 = 30^2,$ we get equality.\n\nFrom the equality condition in Cauchy-Schwarz,\n\\[\\frac{a}{x} = \\frac{b}{y} = \\frac{c}{z}.\\]Let\n\\[k = \\frac{a}{x} = \\frac{b}{y} = \\frac{c}{z}.\\]Then $a = kx,$ $b = ky$ and $c = kz,$ so\n\\[a^2 + b^2 + c^2 = k^2 x^2 + k^2 y^2 + k^2 z^2 = k^2 (x^2 + y^2 + z^2).\\]Then $36k^2 = 25,$ so $k^2 = \\frac{25}{36},$ which means $k = \\frac{5}{6}.$  Therefore,\n\\[\\frac{a + b + c}{x + y + z} = \\boxed{\\frac{5}{6}}.\\]"
+}

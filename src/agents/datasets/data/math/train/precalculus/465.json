@@ -1,0 +1,6 @@
+{
+    "problem": "What is the period of $y = \\tan \\frac{x}{2}$?",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "The graph of $y=\\tan \\frac{x}{2}$ passes through one full period as $\\frac{x}{2}$ ranges from $-\\frac{\\pi}{2}$ to $\\frac{\\pi}{2},$ which means $x$ ranges from $-\\pi$ to $\\pi.$  Thus, the period is $\\pi - (-\\pi) = \\boxed{2 \\pi}.$\n\nThe graph of $y=\\tan \\frac{x}{2}$ is shown below:\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal g(real x)\n{\n\treturn tan(x/2);\n}\n\ndraw(graph(g,-3*pi + 0.01,-pi - 0.01),red);\ndraw(graph(g,-pi + 0.01,pi - 0.01),red);\ndraw(graph(g,pi + 0.01,3*pi - 0.01),red);\nlimits((-3*pi,-5),(3*pi,5),Crop);\ndraw((-pi,-5)--(-pi,5),dashed);\ndraw((pi,-5)--(pi,5),dashed);\ntrig_axes(-3*pi,3*pi,-5,5,pi/2,1);\nlayer();\nrm_trig_labels(-5, 5, 2);\n[/asy]"
+}

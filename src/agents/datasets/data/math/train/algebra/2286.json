@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive difference between the two solutions to the equation $\\displaystyle\\sqrt[3]{4 - \\frac{x^2}{3}} = -2$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We get rid of the cube root sign by cubing both sides.  This gives us $4-\\frac{x^2}{3} = -8$.  Solving this equation gives $x^2 = 36$, so $x=6$ or $x=-6$, so the positive difference between the two solutions is $\\boxed{12}$."
+}

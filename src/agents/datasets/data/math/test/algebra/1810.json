@@ -1,0 +1,6 @@
+{
+    "problem": "Find the domain of the real-valued function \\[f(x)=\\sqrt{-6x^2+11x-4}.\\] Give the endpoints in your answer as common fractions (not mixed numbers or decimals).",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We need $-6x^2+11x-4\\geq 0$.  The quadratic factors as \\[(2x-1)(-3x+4) \\ge 0.\\] Thus the zeroes of the quadratic are at $\\frac{1}{2}$ and $\\frac{4}{3}$.  Since the quadratic faces downward, it is nonnegative between the zeroes.  So the domain is $x \\in \\boxed{\\left[\\frac{1}{2}, \\frac{4}{3}\\right]}$."
+}

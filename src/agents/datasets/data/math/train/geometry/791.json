@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $\\triangle ABE$, $\\triangle BCE$ and $\\triangle CDE$ are right-angled, with $\\angle AEB=\\angle BEC = \\angle CED = 60^\\circ$, and $AE=24$. [asy]\npair A, B, C, D, E;\nA=(0,20.785);\nB=(0,0);\nC=(9,-5.196);\nD=(13.5,-2.598);\nE=(12,0);\ndraw(A--B--C--D--E--A);\ndraw(B--E);\ndraw(C--E);\nlabel(\"A\", A, N);\nlabel(\"B\", B, W);\nlabel(\"C\", C, SW);\nlabel(\"D\", D, dir(0));\nlabel(\"E\", E, NE);\n[/asy] Find the perimeter of quadrilateral $ABCD.$",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Recognizing that all our triangles in the diagram are 30-60-90 triangles, we recall that the ratio of the longer leg to the hypotenuse in such a triangle is $\\frac{\\sqrt{3}}{2}$. Therefore, we can see that: \\begin{align*}\nAB & = 24 \\left(\\frac{\\sqrt{3}}{2}\\right) = 12\\sqrt{3}\\\\\nBC & = 12 \\left(\\frac{\\sqrt{3}}{2}\\right) = 6\\sqrt{3}\\\\\nCD & = 6 \\left(\\frac{\\sqrt{3}}{2}\\right) = 3\\sqrt{3}\\\\\nED & = 6 \\left(\\frac{1}{2}\\right) = 3\n\\end{align*} The perimeter of quadrilateral $ABCD$ is equal to $AB+BC+CD+DA$ and $DA=DE+EA$, so the perimeter is $12\\sqrt{3}+6\\sqrt{3}+3\\sqrt{3}+3+24 = \\boxed{27+21\\sqrt{3}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A function $f$ is defined recursively by $f(1)=f(2)=1$ and \\[f(n)=f(n-1)-f(n-2)+n\\]for all integers $n \\geq 3$. What is $f(2018)$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $g(n) = f(n) - n.$  Then $f(n) = g(n) + n,$ so\n\\[g(n) + n = g(n - 1) + (n - 1) - g(n - 2) - (n - 2) + n.\\]This simplifies to\n\\[g(n) = g(n - 1) + g(n - 2) + 1.\\]Also, $g(1) = 0$ and $g(2) = -1,$ so\n\\begin{align*}\ng(3) &= (-1) - 0 + 1 = 0, \\\\\ng(4) &= 0 - (-1) + 1 = 2, \\\\\ng(5) &= 2 - 0 + 1 = 3, \\\\\ng(6) &= 3 - 2 + 1 = 2, \\\\\ng(7) &= 2 - 3 + 1 = 0, \\\\\ng(8) &= 0 - 2 + 1 = -1.\n\\end{align*}Since $g(7) = g(1) = 0$ and $g(8) = g(2) = -1,$ and each term depends only on the two previous terms, the sequence $g(n)$ is periodic from here on, with a period of length 6.  Therefore, $g(2018) = g(2) = -1,$ so $f(2018) = g(2018) + 2018 = \\boxed{2017}.$"
+}

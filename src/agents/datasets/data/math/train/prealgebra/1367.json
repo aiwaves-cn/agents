@@ -1,0 +1,6 @@
+{
+    "problem": "The number of rounds of golf played by each golfer of an amateur golf association is shown in the chart below. What is the average number of rounds played by each golfer? Express your answer to the nearest whole number. [asy]\nsize(150);\ndraw((0,7)--(0,0)--(10,0));\nfor(int i = 1; i <= 5; ++i){\n\nlabel((string)i,(2*i,0),S);\n}\nlabel(\"Rounds of Golf Played\",(0,-1)--(10,-1),S);\nvoid addDots(int pos, int num){\n\nfor(int i = 1; i <= num; ++i){\n\ndot((2*pos,i));\n\n}\n}\naddDots(1,5); addDots(2,2); addDots(3,2); addDots(4,3); addDots(5,5);\npicture perpLabel;\nlabel(perpLabel,\"Number of Golfers\");\nadd(rotate(90)*perpLabel,(-1,3));\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The total number of rounds played by all the golfers is $5(1)+2(2)+2(3)+3(4)+5(5) = 52$. The number of golfers is obtained by simply counting the dots; there are $5+2+2+3+5 = 17$. This means the average number of rounds played is $\\dfrac{52}{17}$, which is equal to $3\\dfrac{1}{17}$. The nearest whole number is $\\boxed{3}$.\n\nNotice that we can estimate the answer rather effectively, based on the fact that the table is nearly symmetrical around the middle value of $3$."
+}

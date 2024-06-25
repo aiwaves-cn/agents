@@ -1,0 +1,6 @@
+{
+    "problem": "A square is divided into nine smaller squares of equal area. The center square is then divided into nine smaller squares of equal area and the pattern continues indefinitely. What fractional part of the figure is shaded? [asy]\nimport olympiad; size(150); defaultpen(linewidth(0.8)); dotfactor=4;\nvoid drawSquares(int n){\n\ndraw((n,n)--(n,-n)--(-n,-n)--(-n,n)--cycle);\n\nfill((-n,n)--(-1/3*n,n)--(-1/3*n,1/3*n)--(-n,1/3*n)--cycle);\n\nfill((-n,-n)--(-1/3*n,-n)--(-1/3*n,-1/3*n)--(-n,-1/3*n)--cycle);\n\nfill((n,-n)--(1/3*n,-n)--(1/3*n,-1/3*n)--(n,-1/3*n)--cycle);\n\nfill((n,n)--(1/3*n,n)--(1/3*n,1/3*n)--(n,1/3*n)--cycle);\n}\n\ndrawSquares(81); drawSquares(27); drawSquares(9); drawSquares(3); drawSquares(1);\n[/asy]",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The desired area is the infinite series $\\frac{4}{9}\\left(1+\\frac{1}{9} + \\frac{1}{9^2}+\\cdots\\right).$\n\nSimplifying, we have $\\frac{4}{9}\\left( \\frac{1}{1-\\frac{1}{9}}\\right)=\\boxed{\\frac{1}{2}}.$"
+}

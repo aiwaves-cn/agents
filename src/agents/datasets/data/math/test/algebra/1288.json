@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence starts with the term 2222. Each succeeding term is found by adding 1010 to the previous term. What is the sum of the sixth and seventh terms?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The $n$th term of the sequence is $2222+1010(n-1)$.  Therefore, the sum of the sixth and seventh terms is $2222+1010(5)+2222+1010(6)=4444+1010(11)=4444+11110=\\boxed{15554}$."
+}

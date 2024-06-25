@@ -1,0 +1,6 @@
+{
+    "problem": "For how many positive integers $x$ is $100 \\leq x^2 \\leq 200$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We have $10^2=100$, so $10$ is the smallest positive integer which satisfies the inequalities. From here, we can compute the next few perfect squares: \\begin{align*}\n11^2 &= 121, \\\\\n12^2 &= 144, \\\\\n13^2 &= 169, \\\\\n14^2 &= 196, \\\\\n15^2 &= 225.\n\\end{align*} The last $x$ for which $x^2\\le 200$ is $x=14$. In all, our solutions in positive integers are $$x=10,11,12,13,14,$$ so there are $\\boxed{5}$ such $x$."
+}

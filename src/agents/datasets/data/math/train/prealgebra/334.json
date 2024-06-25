@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A$, $B$, $C$ and $D$ are midpoints of the sides of the larger square.  If the larger square has area 60, what is the area of the smaller square? [asy]\npair a=(0,1),b=(1,0),c=(0,-1),d=(-1,0);\ndraw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle);\ndraw(a--b--c--d--cycle);\nlabel(\"$A$\", a, N);\nlabel(\"$B$\", b, E);\nlabel(\"$C$\", c, S);\nlabel(\"$D$\", d, W);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Divide the larger square into 8 congruent triangles, as shown, 4 of which make up the smaller square. [asy]\npair a=(0,1),b=(1,0),c=(0,-1),d=(-1,0);\ndraw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle);\nfilldraw(a--b--c--d--cycle, lightred, black);\ndraw(d--b, linetype(\"8 8\"));\ndraw(a--c, linetype(\"8 8\"));\nlabel(\"$A$\", a, N);\nlabel(\"$B$\", b, E);\nlabel(\"$C$\", c, S);\nlabel(\"$D$\", d, W);\n[/asy] The area of the smaller square is $\\frac{4}{8}$ or $\\frac{1}{2}$ of the area of the larger square, so the area of the smaller square is equal to $\\boxed{30}$."
+}

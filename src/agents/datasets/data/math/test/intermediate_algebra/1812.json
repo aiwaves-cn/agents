@@ -1,0 +1,6 @@
+{
+    "problem": "What is the hundreds digit of $2011^{2011}$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The hundreds digit of $2011^{2011}$ is the same as the hundreds digit of $11^{2011}.$\n\nBy the Binomial Theorem,\n\\begin{align*}\n11^{2011} &= (10 + 1)^{2011} \\\\\n&= 10^{2011} + \\binom{2011}{1} 10^{2010} + \\binom{2010}{2} 10^{2009} \\\\\n&\\quad + \\dots + \\binom{2011}{2008} 10^3 + \\binom{2011}{2009} 10^2 + \\binom{2011}{2010} 10 + \\binom{2011}{2011}.\n\\end{align*}Note that all the terms up to $\\binom{2011}{2008} 10^3$ are divisible by 1000.  Thus, the hundreds digit of the given number is the same as the hundreds digit of the number\n\\begin{align*}\n\\binom{2011}{2009} 10^2 + \\binom{2011}{2010} 10 + \\binom{2011}{2011} &= \\frac{2011 \\cdot 2010}{2} \\cdot 10^2 + 2011 \\cdot 10 + 1 \\\\\n&= 202125611.\n\\end{align*}Hence, the hundreds digit is $\\boxed{6}.$"
+}

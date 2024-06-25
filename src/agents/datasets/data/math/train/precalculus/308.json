@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be nonzero vectors such that\n\\[\\|\\mathbf{a}\\| = \\|\\mathbf{b}\\| = \\|\\mathbf{a} + \\mathbf{b}\\|.\\]Find the angle between $\\mathbf{a}$ and $\\mathbf{b},$ in degrees.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $d = \\|\\mathbf{a}\\| = \\|\\mathbf{b}\\| = \\|\\mathbf{a} + \\mathbf{b}\\|.$  Then\n\\begin{align*}\nd^2 &= \\|\\mathbf{a} + \\mathbf{b}\\|^2 \\\\\n&= (\\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} + \\mathbf{b}) \\\\\n&= \\mathbf{a} \\cdot \\mathbf{a} + 2 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b} \\\\\n&= \\|\\mathbf{a}\\|^2 + 2 \\mathbf{a} \\cdot \\mathbf{b} + \\|\\mathbf{b}\\|^2 \\\\\n&= 2d^2 + 2 \\mathbf{a} \\cdot \\mathbf{b},\n\\end{align*}so $\\mathbf{a} \\cdot \\mathbf{b} = -\\frac{d^2}{2}.$\n\nHence, if $\\theta$ is the angle between $\\mathbf{a}$ and $\\mathbf{b},$ then\n\\[\\cos \\theta = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\| \\|\\mathbf{b}\\|} = \\frac{-\\frac{d^2}{2}}{d^2} = -\\frac{1}{2},\\]so $\\theta = \\boxed{120^\\circ}.$"
+}

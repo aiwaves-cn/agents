@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $DEF$ is similar to triangle $ABC$.  If $DE=6$, $EF=12$, and $BC=18$ units, what is the length of segment $AB$?\n\n[asy]draw((0,0)--(7,0));\ndraw((0,0)--(0,4));\ndraw((0,4)--(7,0));\nlabel(\"E\",(0,0),W);\nlabel(\"F\",(7,0),E);\nlabel(\"D\",(0,4),W);\ndraw((15,0)--(25.5,0));\ndraw((15,0)--(15,6));\ndraw((15,6)--(25.5,0));\nlabel(\"C\",(25.5,0),E);\nlabel(\"B\",(15,0),W);\nlabel(\"A\",(15,6),W);[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Because $\\triangle DEF \\sim \\triangle ABC$, we have the equation \\[\\frac{AB}{DE}=\\frac{BC}{EF}\\] since corresponding sides are in proportion. Plugging in the lengths we know and solving for the length of $AB$, we have \\[\\frac{AB}{6}=\\frac{18}{12}\\Rightarrow AB=\\frac{18}{12}\\cdot6=\\boxed{9}\\]"
+}

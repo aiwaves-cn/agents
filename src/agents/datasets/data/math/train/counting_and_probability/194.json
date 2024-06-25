@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 6 distinct beads be placed on a bracelet? (Note that two arrangements are the same if one can be rotated or reflected to produce the other.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $6!$ ways to place the beads on the bracelet, but we must divide by 6 for rotational symmetry (6 rotations for each arrangement), and by 2 for reflectional symmetry (we can flip the bracelet to get the same arrangement).  The answer is $\\dfrac{6!}{6 \\times 2} = \\boxed{60}$."
+}

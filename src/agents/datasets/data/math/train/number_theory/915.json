@@ -1,0 +1,6 @@
+{
+    "problem": "Add $4_6 + 14_6.$ Express your answer in base $6.$",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "When adding the numbers, we notice that $4+4$ leaves a residue of $2$ when divided by $6.$ Thus, the sum will have a rightmost digit of $2,$ and we must carry-over. This yields that $$\\begin{array}{c@{}c@{\\;}c@{}c@{}c} & & & \\stackrel{1}{} & \\stackrel{}{4}_6 \\\\ &+ & & 1 & 4_6 \\\\ \\cline{2-5} && & 2 & 2_6 \\\\ \\end{array}$$ The sum is therefore $\\boxed{22_6}.$"
+}

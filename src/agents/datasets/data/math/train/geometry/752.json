@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ with vertices of $A(6,2)$, $B(2,5)$, and $C(2,2)$ is reflected over the x-axis to triangle $A'B'C'$. This triangle is reflected over the y-axis to triangle $A''B''C''$. What are the coordinates of point $C''$?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "A reflection over the $x$-axis negates the $y$-coordinate, while a reflection over the $y$-axis negates the $x$-coordinate. So reflecting $C$ over the $x$-axis and the $y$-axis means we negate both coordinates to get $\\boxed{(-2, -2)}$ as the coordinates of point $C''$."
+}

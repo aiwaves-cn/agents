@@ -1,0 +1,6 @@
+{
+    "problem": "How many two-digit numbers are there in which the tens digit is greater than the ones digit?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "In addition to two-digit numbers, consider the one-digit numbers $01$ through $09.$ Of these $99$ numbers, $9$ have repeated digits $01,$ $02,$ $03,$ $\\ldots,$ $99,$ namely: $11,$ $22,$ $33,$ $\\ldots,$ and $99.$ Of the remaining $90$ numbers, each one has a unique counterpart formed by swapping their tens and units digit. Thus among these, $45$ have a tens digit greater than the units digit. (The other $45$ have a tens digit smaller than the units digit.) The required answer is $\\boxed{45}.$"
+}

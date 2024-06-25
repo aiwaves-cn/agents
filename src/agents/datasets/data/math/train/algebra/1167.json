@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $(2 + 1)(2^2 + 1^2)(2^4 + 1^4)$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We could multiply this out, but that would be tedious. Instead, we multiply the entire expression by $\\frac{2-1}{2-1}$ and use differences of squares: \\begin{align*}\n&\\ \\ \\ \\ \\frac{1}{2-1}(2 - 1)(2 + 1)(2^2 + 1^2)(2^4 + 1^4) \\\\\n&= (2^2 - 1^2)(2^2 + 1^2)(2^4 + 1^4) \\\\\n&= (2^4 - 1^4)(2^4 + 1^4) \\\\\n&= 2^8 - 1^8 \\\\\n&= \\boxed{255}.\n\\end{align*}"
+}

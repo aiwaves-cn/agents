@@ -1,0 +1,6 @@
+{
+    "problem": "One angle of a triangle is twice another, and the sides opposite these angles have lengths 15 and 9.  Compute the length of the third side of the triangle.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Without loss of generality, let the triangle be $ABC,$ where $AB = 9,$ $AC = 15,$ and $\\angle B = 2 \\angle C.$  Let $a = BC.$  Then by the Law of Cosines,\n\\[\\cos C = \\frac{a^2 + 15^2 - 9^2}{2 \\cdot a \\cdot 15} = \\frac{a^2 + 144}{30a}.\\]By the Law of Sines,\n\\[\\frac{9}{\\sin C} = \\frac{15}{\\sin B} = \\frac{15}{\\sin 2C} = \\frac{15}{2 \\sin C \\cos C},\\]so $\\cos C = \\frac{5}{6}.$  Hence,\n\\[\\frac{a^2 + 144}{30a} = \\frac{5}{6}.\\]This gives us $a^2 + 144 = 25a,$ or $a^2 - 25a + 144 = 0.$  This factors as $(a - 9)(a - 16) = 0.$\n\nIf $a = 9,$ then $\\angle A = \\angle C,$ which implies $A + B + C = 4C = 180^\\circ.$  Then $B = 2C = 90^\\circ,$ contradiction, because a triangle with sides 9, 9, and 15 is not a right triangle.  Therefore, $a = \\boxed{16}.$"
+}

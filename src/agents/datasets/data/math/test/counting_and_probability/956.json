@@ -1,0 +1,6 @@
+{
+    "problem": "Two numbers between $0$ and $1$ on a number line are to be chosen at random. What is the probability that the second number chosen will exceed the first number chosen by a distance greater than $\\frac 14$ unit on the number line? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The probability that the second number is more than $\\frac14$ unit greater than the first number decreases linearly from $\\frac34$ to $0$ as the first number increases linearly from $0$ to $\\frac34$. The average of this probability is $\\frac12 \\cdot \\frac34= \\frac38$. Since there is a $\\frac34$ chance of choosing a number from $0$ to $\\frac34$, the probability is $\\frac34 \\cdot \\frac38 = \\boxed{\\frac{9}{32}}$."
+}

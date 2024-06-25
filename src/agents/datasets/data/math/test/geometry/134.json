@@ -1,0 +1,6 @@
+{
+    "problem": "What is the angle of rotation in degrees about point $C$ that maps the darker figure to the lighter image? [asy]\nimport olympiad; defaultpen(linewidth(0.7));\ndraw((4,-1)--(4,1)--(-4,1)--(-4,3)--(-6,0)--(-4,-3)--(-4,-1)--(4,-1)--cycle,linewidth(2));\ndraw((-4,1)--(-4,3)--(4,3)--(4,5)--(6,2)--(4,-1)--(4,1)--(-4,1)--cycle);\ndot(\"$C$\",(0,1),N);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "By looking at the diagram provided, we can see that the line containing the point of rotation lands on top of itself, but the arrow is facing the opposite direction. This tells us that 1/2 of a full $360^{\\circ}$ rotation was completed; therefore, the image rotated $360^{\\circ}/2 = \\boxed{180^{\\circ}}$ about point $C$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the units digit of $9^{8^7}$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "If $k$ is a positive even integer, then $$9^{k} = 81^{k/2}=\\overbrace{(81)(81)\\cdots (81)}^{k/2\\text{ times}},$$so $9^k$ has a units digit of 1. Since 8 is even, $8^7$ is even.  Therefore, $9^{8^7}$ has a units digit of $\\boxed{1}$."
+}

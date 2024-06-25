@@ -1,0 +1,6 @@
+{
+    "problem": "Find the modular inverse of $4$, modulo $21$.\n\nExpress your answer as an integer from $0$ to $20$, inclusive.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We are looking for an integer $a$ such that $4a$ is congruent to 1 modulo 21. One approach is to check integers of the form $21k+1$, where $k\\geq 0$ is an integer, for divisibility by 4. We find that 22 and 43 are not divisible by 4, but $21(3)+1=64$ is equal to $4\\times 16$. Thus $\\boxed{16}$ times 4 is congruent to 1 modulo 21."
+}

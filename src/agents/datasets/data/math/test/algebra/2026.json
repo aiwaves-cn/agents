@@ -1,0 +1,6 @@
+{
+    "problem": "The value of $\\log_{8}{2938}$ is between the consecutive integers $a$ and $b$.  Find $a+b$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can have $\\log_{8}512=3$ and $\\log_{8}4096=4$.  Since $\\log_{8}x$ increases as $x$ increases, we know that $\\log_{8}512<\\log_{8}2938<\\log_{8}4096$, meaning $3<\\log_{8}2938<4$.  Thus, the desired sum is $3+4=\\boxed{7}$."
+}

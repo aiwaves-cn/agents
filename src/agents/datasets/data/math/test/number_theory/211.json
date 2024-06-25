@@ -1,0 +1,6 @@
+{
+    "problem": "How many integers $n$ satisfy $0<n<60$ and $4n\\equiv 2\\pmod 6?$",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The residue of $4n\\pmod 6$ is determined by the residue of $n\\pmod 6.$ We can build a table showing the possibilities: $$\\begin{array}{r || c * 5 {| c}}\nn\\pmod 6 & 0 & 1 & 2 & 3 & 4 & 5 \\\\\n\\hline\n4n\\pmod 6 & 0 & 4 & 2 & 0 & 4 & 2\n\\end{array}$$As the table shows, $4n\\equiv 2\\pmod 6$ is true when $n\\equiv 2$ or $n\\equiv 5\\pmod 6.$ Otherwise, it's false.\n\nSo, our problem is to count all $n$ between $0$ and $60$ that leave a remainder of $2$ or $5$ modulo $6.$ These integers are $$2, 5, 8, 11, 14, 17, \\ldots, 56, 59.$$There are $\\boxed{20}$ integers in this list."
+}

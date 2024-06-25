@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when the polynomial $x^5 + x^4 + x^3 + x^2 + x$ is divided by $x^3-4x$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $P(x) = x^5 + x^4 + x^3 + x^2 + x$ and let $Q(x)$ be the quotient when $P(x)$ is divided by $x^3-4x$. Since we are dividing by a cubic, our remainder has degree at most $2$, meaning it is of the form $ax^2+bx+c$ for some constants $a$, $b$, and $c$. So we have\n$$P(x) = (x^3-4x)Q(x) + ax^2+bx+c.$$Since $x^3-4x = x(x^2-4) = x(x+2)(x-2)$, we can let $x = 0 \\, , 2$, or $-2$ to make $x^3-4x =0$. Doing each of them gives us the equations:\n$$ \\begin{aligned}\n0 &= P(0) = c, \\\\\n62 &= P(2) = 4a+2b+c, \\\\\n-22 &= P(-2) = 4a-2b+c. \\end{aligned}$$Since $P(0) = 0$, we know $c=0$. This gives us $4a+2b = 62$ and $4a-2b = -22$. Solving these equations gives us $a=5$ and $b = 21$.\n\nHence the remainder is $\\boxed{5x^2+21x}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $n$ is a constant and if there exists a unique value of $m$ for which the quadratic equation $x^2 + mx + (m+n) = 0$ has one real solution, then find $n$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If the given quadratic equation has one solution, it follows that its discriminant must be equal to $0$. The discriminant of the given quadratic is given by $m^2 - 4(m+n)$, and setting this equal to zero, we obtain another quadratic equation $m^2 - 4m - 4n = 0$. Since the value of $m$ is unique, it follows that again, the discriminant of this quadratic must be equal to zero. The discriminant is now $4^2 - 4(-4n) = 16 + 16n = 0$, so it follows that $n = \\boxed{-1}$."
+}

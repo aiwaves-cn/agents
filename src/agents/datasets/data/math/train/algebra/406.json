@@ -1,0 +1,6 @@
+{
+    "problem": "The difference between two positive integers is 6 and their product is 112. What is the sum of the integers?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let the integers be $x$ and $y$, with $x>y$. We have the equations \\begin{align*}\nx-y&=6\\\\\nxy&=112\n\\end{align*}Squaring the first equation, we get  \\[(x-y)^2=6^2\\Rightarrow x^2-2xy+y^2=36\\]Multiplying the second equation by four, we get $4xy = 4\\cdot112=448$. Adding these last two equations, we have \\[x^2-2xy+y^2+4xy=36+448 \\Rightarrow (x+y)^2=484 \\Rightarrow x+y = 22\\]In the last step, we take the positive square root because both $x$ and $y$ are given to be positive. The sum of the two integers is $\\boxed{22}$."
+}

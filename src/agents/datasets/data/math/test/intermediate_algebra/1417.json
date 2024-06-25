@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $k$ so that the graphs of $x^2 + y^2 = 4 + 12x + 6y$ and $x^2 + y^2 = k + 4x + 12y$ intersect.  Enter your answer using interval notation.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Completing the square in the first equation, we get\n\\[(x - 6)^2 + (y - 3)^2 = 7^2,\\]which represents a circle centered at $(6,3)$ with radius 7.\n\nCompleting the square in the second equation, we get\n\\[(x - 2)^2 + (y - 6)^2 = k + 40,\\]which represents a circle centered at $(2,6)$ with radius $\\sqrt{k + 40}.$\n\n[asy]\nunitsize(0.3 cm);\n\ndraw(Circle((6,3),7),red);\ndraw(Circle((2,6),2),blue);\ndraw(Circle((2,6),12),blue);\n\ndot(\"$(6,3)$\", (6,3), NE);\ndot((2,6));\nlabel(\"$(2,6)$\", (2,6), NE, UnFill);\n[/asy]\n\nThe distance between the centers is $\\sqrt{4^2 + 3^2} = 5,$ so the two circles intersect when the radius of the second circle is between $7 - 5 = 2$ and $7 + 5 = 12.$  This gives us\n\\[2^2 \\le k + 40 \\le 12^2,\\]or $k \\in \\boxed{[-36,104]}.$"
+}

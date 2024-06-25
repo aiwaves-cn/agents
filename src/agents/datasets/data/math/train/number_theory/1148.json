@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $x$ is an integer that satisfies the following congruences: \\begin{align*}\n3+x &\\equiv 2^2 \\pmod{3^3} \\\\\n5+x &\\equiv 3^2 \\pmod{5^3} \\\\\n7+x &\\equiv 5^2 \\pmod{7^3}\n\\end{align*}What is the remainder when $x$ is divided by $105$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since $105 = 3 \\cdot 5 \\cdot 7$, by the Chinese Remainder Theorem, it suffices to find the remainders when $x$ is divided by $3$, $5$, and $7$. As $3+x$ leaves a remainder of $4$ when divided by $27 = 3^3$, it follows that $3+x \\equiv 4 \\pmod{3}$, and thus that $x\\equiv 1 \\pmod{3}$. Similarly, \\begin{align*}\nx &\\equiv 9 \\equiv 4 \\pmod{5} \\\\\nx &\\equiv 25 \\equiv 4 \\pmod{7}.\n\\end{align*}As $4 \\equiv 1 \\pmod{3}$, it follows from the Chinese Remainder Theorem that $x \\equiv \\boxed{4} \\pmod{105}$."
+}

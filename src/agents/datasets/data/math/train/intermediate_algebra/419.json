@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $0\\le x_3 \\le x_2 \\le x_1\\le 1$ and $(1-x_1)^2+(x_1-x_2)^2+(x_2-x_3)^2+x_3^2=\\frac{1}{4},$ find $x_1.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By QM-AM, we have\n$$\\sqrt{\\frac{(1-x_1)^2+(x_1-x_2)^2+(x_2-x_3)^2+x_3^2}{4}} \\ge \\frac{(1-x_1)+(x_1-x_2)+(x_2-x_3)+x_3}{4} = \\frac{1}{4}.$$Taking the square of both sides, and then multiplying both sides by $4$ gives us,\n$$(1-x_1)^2+(x_1-x_2)^2+(x_2-x_3)^2+x_3^2 \\ge \\frac{1}{4}.$$Equality occurs if and only if $1-x_1=x_1-x_2=x_2-x_3=x_3 = \\frac{1}{4}$.  We can solve to get $x_1 = \\boxed{\\frac{3}{4}},$ $x_2 = \\frac{1}{2},$ and $x_3 = \\frac{1}{4}.$"
+}

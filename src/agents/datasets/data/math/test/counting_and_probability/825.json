@@ -1,0 +1,6 @@
+{
+    "problem": "In a lottery, a ticket costs $\\$3$, and the jackpot is worth $\\$250000$. In all, $100000$ tickets are sold, one ticket is randomly drawn, and the winner is awarded the jackpot. What are the expected winnings in dollars of buying one ticket (including the cost of the ticket)?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The chance of winning the jackpot is $\\frac{1}{100000}$. The value of the jackpot is $\\$250000$. The expected winnings, minus the cost of the ticket is $E = \\frac{1}{100000} \\cdot \\$250000 - \\$3 = \\$2.50-\\$3.00 = \\boxed{-\\$0.50}$."
+}

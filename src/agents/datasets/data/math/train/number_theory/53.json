@@ -1,0 +1,6 @@
+{
+    "problem": "Jenny has 8 stamp books that each contain 42 pages.  Each page in her books contains 6 stamps.  Jenny decides to reorganize her stamp books such that each page contains 10 stamps.  This will give her more space to collect stamps without having to buy new books.  Under her new system, Jenny fills up 4 complete books, still with 42 pages per book.  Her fifth book now contains 33 pages filled with 10 stamps per page and 1 last page with the remaining stamps.  How many stamps are on that last page?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since Jenny's new system of arranging stamps includes 10 on each page, the number of the last page will be the units digit of her total number of stamps (in base 10).  That units digit is the same as the units digit of $8 \\cdot 2 \\cdot 6 = 96$, which is $\\boxed{6}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n$$\\sum_{k=1}^{1000} k(\\lceil \\log_{\\sqrt{2}}{k}\\rceil- \\lfloor\\log_{\\sqrt{2}}{k} \\rfloor).$$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "First note that \\[\\lceil x \\rceil - \\lfloor x \\rfloor =\n\\begin{cases}1 & \\text{if $x$ is not an integer}, \\\\ 0 & \\text{if $x$\nis an integer}. \\end{cases} \\]Thus for any positive integer $k$, \\[\\lceil \\log_{\\sqrt{2}}{k}\\rceil-\\lfloor \\log_{\\sqrt{2}}{k}\\rfloor=\n\\begin{cases}1 & \\text{if $k$ not an integer power of $\\sqrt{2}$}, \\\\\n0 & \\text{if $k$ an integer power of $\\sqrt{2}$}. \\end{cases}\\]The integers $k$, $1 \\leq k \\leq 1000$, that are integer powers of $\\sqrt{2}$ are described by $k = 2^j$, $0 \\leq j \\leq 9$. Thus \\[\\sum_{k=1}^{1000} k (\\lceil \\log_{\\sqrt{2}}{k}\\rceil - \\lfloor\n\\log_{\\sqrt{2}}{k}\\rfloor) = \\sum_{k=1}^{1000}k - \\sum_{j=0}^9 2^j = \\frac{1000 \\cdot 1001}{2} - 1023 = \\boxed{499477}.\\]"
+}

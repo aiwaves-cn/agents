@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)=\\frac{1}{2x-5}$.  Find the largest $x$ which is not in the domain of $g(x)=f(f(x))$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "There are two ways for $x$ to not be in the domain of $g$: it can not be in the domain of $f$, or it can be in the domain of $f$ but not in the domain of $f(f)$.  In the first case, the denominator of $f$ is zero, so\n\n$$2x-5=0\\Rightarrow x=\\frac{5}{2}.$$\n\nFor the second case, we see that the denominator of $f(f(x))$ is $\\frac{2}{2x-5}-5$.  If this is zero, we have\n\n$$5(2x-5)=2\\Rightarrow 10x=27\\Rightarrow x=\\frac{27}{10}.$$\n\nThis is greater than $\\frac{5}{2}$.  So the largest $x$ not in the domain of $g$ is $\\boxed{\\frac{27}{10}}$."
+}

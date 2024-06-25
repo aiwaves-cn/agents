@@ -1,0 +1,6 @@
+{
+    "problem": "Find all solutions to the inequality \\[\\frac{(2x-7)(x-3)}{x} \\ge 0.\\](Give your answer in interval notation.)",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $f(x)$ be the quantity on the left-hand side. Constructing a sign table, we get \\begin{tabular}{c|ccc|c} &$2x-7$ &$x-3$ &$x$ &$f(x)$ \\\\ \\hline$x<0$ &$-$&$-$&$-$&$-$\\\\ [.1cm]$0<x<3$ &$-$&$-$&$+$&$+$\\\\ [.1cm]$3<x<\\frac{7}{2}$ &$-$&$+$&$+$&$-$\\\\ [.1cm]$x>\\frac{7}{2}$ &$+$&$+$&$+$&$+$\\\\ [.1cm]\\end{tabular}It follows that $f(x) > 0$ when $0 < x < 3$ or $x > \\tfrac72.$ Since the inequality is nonstrict, we must include the values of $x$ such that $f(x) = 0,$ which are $x=3$ and $x=\\tfrac72.$ Thus, the solution set is \\[x \\in \\boxed{(0, 3] \\cup [\\tfrac72, \\infty)}.\\]"
+}

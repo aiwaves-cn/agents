@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[4 \\sin x \\sin (60^\\circ - x) \\sin (60^\\circ + x).\\]The answer will be a trigonometric function of some simple function of $x,$ like \"$\\cos (2x)$\" or \"$\\sin (x^3)$\".",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "By product-to-sum,\n\\begin{align*}\n4 \\sin x \\sin (60^\\circ - x) \\sin (60^\\circ + x) &= 4 \\sin x \\cdot \\frac{1}{2} (\\cos 2x - \\cos 120^\\circ) \\\\\n&= 2 \\sin x \\left( \\cos 2x + \\frac{1}{2} \\right) \\\\\n&= 2 \\sin x \\cos 2x + \\sin x.\n\\end{align*}Again by product-to-sum,\n\\begin{align*}\n2 \\sin x \\cos 2x + \\sin x &= \\sin 3x + \\sin (-x) + \\sin x \\\\\n&= \\boxed{\\sin 3x}.\n\\end{align*}"
+}

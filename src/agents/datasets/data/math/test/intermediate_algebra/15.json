@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $|\\omega^2+2\\omega-8|$ if $\\omega=-1+4i$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "It's certainly possible to just calculate the complex number $\\omega^2+2\\omega-8$ by just plugging in the value of $\\omega$, but it's computationally simpler to use the fact that $|ab|=|a|\\cdot|b|$ and our knowledge of factoring quadratics: \\begin{align*}\n|\\omega^2+2\\omega-8|&=|(\\omega-2)(\\omega+4)|\\\\\n&=|\\omega-2|\\cdot|\\omega+4|\\\\\n&=|-3+4i|\\cdot|3+4i|\\\\\n&=\\sqrt{(-3)^2+4^2}\\sqrt{3^2+4^2}\\\\\n&=\\boxed{25}\n\\end{align*}"
+}

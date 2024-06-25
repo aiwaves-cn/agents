@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be positive real numbers.  Find the minimum value of\n\\[\\frac{a + b}{c} + \\frac{a + c}{b} + \\frac{b + c}{a}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\[\\frac{a + b}{c} + \\frac{a + c}{b} + \\frac{b + c}{a} = \\frac{a}{c} + \\frac{b}{c} + \\frac{a}{b} + \\frac{c}{b} + \\frac{b}{a} + \\frac{c}{a}.\\]By AM-GM,\n\\[\\frac{a}{c} + \\frac{b}{c} + \\frac{a}{b} + \\frac{c}{b} + \\frac{b}{a} + \\frac{c}{a} \\ge 6 \\sqrt[6]{\\frac{a}{c} \\cdot \\frac{b}{c} \\cdot \\frac{a}{b} \\cdot \\frac{c}{b} \\cdot \\frac{b}{a} \\cdot \\frac{c}{a}} = 6.\\]Equality occurs when $a = b = c,$ so the minimum value is $\\boxed{6}.$"
+}

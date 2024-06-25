@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be defined on $2 \\le x \\le 10$ such that $$p(x) = \\begin{cases} x + 1 &\\quad \\lfloor x \\rfloor\\text{ is prime} \\\\ p(y) + (x + 1 - \\lfloor x \\rfloor) &\\quad \\text{otherwise} \\end{cases}$$ where $y$ is the greatest prime factor of $\\lfloor x\\rfloor.$ Express the range of $p$ in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "By definition of $p$, for any prime number $x$ such that $2 \\le x \\le 10$, then $[x+1,x+2) \\subset \\text{range}\\,(p)$. It follows that $[3,4) \\cup [4,5) \\cup [6,7) \\cup [8,9) \\subset \\text{range}\\,(p)$. Since the largest prime factor of a composite number less than or equal to $10$ is $5$, then the largest possible value of $p$ on a composite number is $p(10) = p(5)+1 = 7$. Also, we notice that $[5,6) \\subset \\text{range}\\,(p)$, since for any $x \\in [6,7)$, then $p(x) = p(3) + (x + 1 - \\lfloor x \\rfloor) = 5 + x - \\lfloor x \\rfloor$. Combining all of this, it follows that the range of $p$ is equal to $[3,5) \\cup [6,7) \\cup [8,9) \\cup \\{7\\} \\cup [5,6) = \\boxed{[3,7] \\cup [8,9)}$."
+}

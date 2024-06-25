@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $x^6 + ax + b$ is divisible by $x^2 - 2x - 1.$  Find $a + b.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $u$ and $v$ be the roots of $x^2 - 2x - 1 = 0,$ which, by the quadratic formula, are $1 \\pm \\sqrt{2}.$\n\nIf $x^6 + ax + b = 0,$ then by Factor Theorem,\n\\begin{align*}\nu^6 + au + b &= 0, \\\\\nv^6 + av + b &= 0.\n\\end{align*}Adding these equations, we get\n\\[a(u + v) + 2b + u^6 + v^6 = 0,\\]so $2a + 2b = -(u^6 + v^6).$\n\nNow\n\\begin{align*}\nu^6 + v^6 &= (1 + \\sqrt{2})^6 + (1 - \\sqrt{2})^6 \\\\\n&= 1 + \\binom{6}{1} \\sqrt{2} + \\binom{6}{2} (\\sqrt{2})^2 + \\binom{6}{3} (\\sqrt{2})^3 + \\binom{6}{4} (\\sqrt{2})^4 + \\binom{6}{5} (\\sqrt{2})^5 + (\\sqrt{2})^6 \\\\\n&\\quad + 1 - \\binom{6}{1} \\sqrt{2} + \\binom{6}{2} (\\sqrt{2})^2 - \\binom{6}{3} (\\sqrt{2})^3 + \\binom{6}{4} (\\sqrt{2})^4 - \\binom{6}{5} (\\sqrt{2})^5 + (\\sqrt{2})^6 \\\\\n&= 2(1 + 15 \\cdot 2 + 15 \\cdot 4 + 8) \\\\\n&= 198,\n\\end{align*}so $a + b = -198/2 = \\boxed{-99}.$"
+}

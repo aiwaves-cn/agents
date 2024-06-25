@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that the values of $x$, $y$, and $z$ are given by  \\[x=-\\frac{2}{3} \\qquad y=\\frac{5}{7} \\qquad z=-\\frac{11}{13}.\\]What is $\\frac{xy}{z}$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Since division by $z$ is the same as multiplication by $\\frac{1}{z}$, we are being asked to find \\[\nx\\cdot y \\cdot \\frac{1}{z}.\n\\]Since $z=-\\frac{11}{13}$, the reciprocal of $z$ is $\\frac{1}{z}=-\\frac{13}{11}$. So we get \\[\n\\left(-\\frac{2}{3}\\right)\\left(\\frac{5}{7}\\right)\\left(-\\frac{13}{11}\\right)=\\frac{2\\cdot5\\cdot13}{3\\cdot7\\cdot 11}=\\boxed{\\frac{130}{231}}.\n\\]The final answer is positive, because two of the three numbers being multiplied are negative (and a negative number times a negative number is a positive number)."
+}

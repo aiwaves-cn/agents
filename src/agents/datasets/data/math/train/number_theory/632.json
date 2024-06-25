@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the digits of the base $7$ representation of $777_{10}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "To find the base $7$ representation of $777_{10}$, we first write $777$ as the sum of powers of $7$. To begin, we find that the largest power of $7$ that is less than $777$ is $7^3 = 343$. The largest multiple of $343$ that is less than $777$ is $2 \\cdot 343 = 686$, so we have $777 = 2 \\cdot 343 + 91$. We then consider the remainder $91$. The largest power of $7$ that is less than $91$ is $7^2 = 49$ and the largest multiple of $49$ that is less than $91$ is $1 \\cdot 49 = 49$. This leaves us with $91 - 49 = 42$, which can be expressed as $6 \\cdot 7^1$. Thus, we have $$777 = 2 \\cdot 7^3 + 1 \\cdot 7^2 + 6 \\cdot 7^1 + 0 \\cdot 7^0.$$Our base $7$ representation of $777_{10}$ is then $2160_7$. The sum of the digits of this number is $2 + 1 + 6 + 0 = \\boxed{9}$."
+}

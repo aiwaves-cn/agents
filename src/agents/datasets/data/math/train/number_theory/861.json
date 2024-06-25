@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product of the divisors of $50$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "For every divisor $d$ of $50$, then $50/d$ is also a divisor of $50$. Their product is $d \\cdot (50/d) = 50$. It follows that every divisor can be paired with another divisor of $50$ such that their product is $50 = 2 \\cdot 5^2$. There are $(1+1)(2+1) = 6$ divisors of $50$: $1,2,5,10,25,50$. Thus, the answer is $50^{6/2} = 50^3 = \\boxed{125,\\!000}$."
+}

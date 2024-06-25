@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\cos 36^\\circ - \\cos 72^\\circ.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $a = \\cos 36^\\circ$ and $b = \\cos 72^\\circ.$  Then\n\\[b = \\cos 72^\\circ = 2 \\cos^2 36^\\circ - 1 = 2a^2 - 1.\\]Also,\n\\[a = \\cos 36^\\circ = 1 - 2 \\sin^2 18^\\circ = 1 - 2 \\cos^2 72^\\circ = 1 - 2b^2.\\]Adding these equations, we get\n\\[a + b = 2a^2 - 2b^2 = 2(a + b)(a - b).\\]Since $a$ and $b$ are positive, $a + b \\neq 0.$  We can then divide both sides by $2(a + b),$ to get\n\\[a - b = \\boxed{\\frac{1}{2}}.\\]"
+}

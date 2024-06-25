@@ -1,0 +1,6 @@
+{
+    "problem": "Let $F$ be the first digit and $L$ be the last digit of the expanded integer form of $2007^3$. What is the value of $F + L$?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We can rewrite $2007^3$ as the cube of a binomial: \\begin{align*}\n2007^3 &= (2\\cdot 10^3 + 7)^3\\\\\n&= \\binom{3}{0} (2\\cdot 10^3)^3 + \\cdots + \\binom{3}{3} 7^3\n\\end{align*}\n\nOnly the first and last term of the binomial expansion affect the values of $F$ and $L$. The first term is equal to $8\\cdot 10^9$, so $F = 8$. The last term is equal to 343, so $L = 3$. Therefore, $F + L = \\boxed{11}$."
+}

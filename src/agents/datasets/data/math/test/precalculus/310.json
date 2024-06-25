@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of ordered pairs of real numbers $(a,b)$ such that $(a + bi)^{2002} = a - bi$.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $z = a + bi$, so $\\overline{z}= a - bi$. Then the given relation becomes $z^{2002} = \\overline{z}$. Note that\n$$|z|^{2002} = \\left|z^{2002}\\right| = |\\overline{z}| = |z|,$$from which it follows that\n$$|z|\\left(|z|^{2001} - 1\\right) = 0.$$Hence, $|z| = 0$ or $|z| = 1$.\n\nIf $|z| = 0,$ then $z = 0,$ and $(a,b) = (0,0).$\n\nIf $|z|=1$, then we have $z^{2002} = \\overline{z}$, which is equivalent to $z^{2003} = \\overline{z}\\cdot z = |z|^2 = 1$.  The equation $z^{2003} = 1$ has $2003$ distinct solutions, which gives us 2003 pairs $(a,b)$.\n\nTherefore, there are altogether $1 + 2003 = \\boxed{2004}$ ordered pairs that meet the required conditions."
+}

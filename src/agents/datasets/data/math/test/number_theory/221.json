@@ -1,0 +1,6 @@
+{
+    "problem": "How many natural numbers less than 1000 have exactly three distinct positive integer divisors?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "By the formula for the total number of positive divisors, only natural numbers in the form $p^{2}$ for some prime $p$ have exactly three positive divisors. Thus we must count the number of primes between 1 and $\\sqrt{1000}$ (the squares of these primes are all the natural numbers less than 1000 that have exactly three positive divisors). There are $\\boxed{11}$ such primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, and 31."
+}

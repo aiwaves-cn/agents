@@ -1,0 +1,6 @@
+{
+    "problem": "In Ms. Smith's class, each student averages one day absent out of thirty. What is the probability that out of any two students chosen at random, one student will be absent while the other is present? Express your answer as a percent rounded to the nearest tenth.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Since on each day a given student is either absent or not absent we know that the sum of the probabilities of those two events is 1, which means that the probability of a given student being present on a particular day is $1-\\frac{1}{30}=\\frac{29}{30}$. There are two ways in which we can have one student there and the other one not there: either the first one is there and the second one isn't which will occur with probability $\\frac{29}{30}\\cdot\\frac{1}{30}=\\frac{29}{900}$ or the first one will be absent and the second one will be present which occurs with probability $\\frac{1}{30}\\cdot\\frac{29}{30}=\\frac{29}{900}$. The sum of these gives us the desired probability: $\\frac{29}{900}+\\frac{29}{900}=\\frac{58}{900}=.06444...$, which, as a percent rounded to the nearest tenth, gives us our answer of $\\boxed{6.4}$."
+}

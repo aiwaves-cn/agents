@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = \\displaystyle \\frac{1}{ax+b}$ where $a$ and $b$ are nonzero constants. Find all solutions to $f^{-1}(x) = 0$. Express your answer in terms of $a$ and/or $b$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The equation $f^{-1}(x)=0$ is equivalent to $x=f(0)$.  If we substitute this into the original definition of $f$ we get  \\[x=f(0)=\\frac1{a\\cdot0+b}=\\boxed{\\frac1b}.\\]"
+}

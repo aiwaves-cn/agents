@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all values of $k$ such that the equation $2x^2-kx+8=0$ has two distinct integer solutions?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We use the fact that the sum and product of the roots of a quadratic equation $ax^2+bx+c=0$ are given by $-b/a$ and $c/a$, respectively. Let the two roots of the equation be $p$ and $q$. Then $p+q=k/2$. However the only other restriction on $p$ and $q$ is that $pq = 4$ and that $p$ and $q$ are distinct integers. For each such possibility $(p,q)$, we also have the possibility $(-p,-q)$ since $(-p)(-q) = pq = 4$. This gives two values of $k$: $k=2(p+q)$ and $k=2(-p-q)$. Since these occur in such pairs, the sum of all possible values of $k$ is $\\boxed{0}$.\n\nAlternatively, one can note that the only way to factor 4 into 2 distinct integer factors is $4\\cdot1$ and $(-4)(-1)$, so that the two possible values of $k$ are $10$ and $-10$, given a sum of $0$."
+}

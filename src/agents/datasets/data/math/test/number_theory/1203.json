@@ -1,0 +1,6 @@
+{
+    "problem": "What is $441_{10}$ in base $7$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We begin by realizing that the largest power of $7$ which is less than $441$ is $7^3 = 343$, and the greatest multiple of $343$ which is less than $441$ is $1 \\cdot 343 = 343$. We then have $441 = 1 \\cdot 343 + 98$. Now, we consider the remainder $98$. The largest power of $7$ that is less than $98$ is $7^2 = 49$ and $98 = 2 \\cdot 49$. There is no remainder so we have $$441 = 1 \\cdot 7^3 + 2 \\cdot 7^2 + 0 \\cdot 7^1 + 0 \\cdot 7^0.$$Therefore, our base $7$ representation of $441_{10}$ is $\\boxed{1200_7}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A car travels due east at $\\frac 23$ mile per minute on a long, straight road. At the same time, a circular storm, whose radius is $51$ miles, moves southeast at $\\frac 12\\sqrt{2}$ mile per minute. At time $t=0$, the center of the storm is $110$ miles due north of the car. At time $t=t_1$ minutes, the car enters the storm circle, and at time $t=t_2$ minutes, the car leaves the storm circle. Find $\\frac 12(t_1+t_2)$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "We set up a coordinate system, with the starting point of the car at the origin. At time $t$, the car is at $\\left(\\frac 23t,0\\right)$ and the center of the storm is at $\\left(\\frac{t}{2}, 110 - \\frac{t}{2}\\right)$. Using the distance formula,\n\\begin{eqnarray*} \\sqrt{\\left(\\frac{2}{3}t - \\frac 12t\\right)^2 + \\left(110-\\frac{t}{2}\\right)^2} &\\le& 51\\\\ \\frac{t^2}{36} + \\frac{t^2}{4} - 110t + 110^2 &\\le& 51^2\\\\ \\frac{5}{18}t^2 - 110t + 110^2 - 51^2 &\\le& 0\\\\ \\end{eqnarray*}\nNoting that $\\frac 12(t_1+t_2)$ is at the maximum point of the parabola, we can use $-\\frac{b}{2a} = \\frac{110}{2 \\cdot \\frac{5}{18}} = \\boxed{198}$."
+}

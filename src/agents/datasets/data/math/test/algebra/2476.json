@@ -1,0 +1,6 @@
+{
+    "problem": "The 7th and 8th grades have enrollments of 520 and 650 respectively. The two grades have a total of 18 representatives on the Student Council. How many representatives should the 8th grade have if there is to be a fair representation of the two grades?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The 8th grade has $\\frac{650}{520+650} = \\frac{650}{1170} = \\frac{65}{117}$ of the total students. To simplify this fraction further, we notice that $65 = 5 \\cdot 13$. Since $117$ is not divisible by $5$, we test if it's divisible by $13$ and find that $117 = 9 \\cdot 13$. Thus to have fair representation, the 8th grade should have $\\frac{65}{117} \\times 18 = \\frac{5}{9} \\times 18 = \\boxed{10}$ of the $18$ representatives."
+}

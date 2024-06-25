@@ -1,0 +1,6 @@
+{
+    "problem": "Find\n\\[\\sum_{N = 1}^{1024} \\lfloor \\log_2 N \\rfloor.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "For $1 \\le N \\le 1024,$ the possible values of $\\lfloor \\log_2 N \\rfloor$ are 0, 1, 2, $\\dots,$ 10.  For a given value of $k,$ $0 \\le k \\le 10,$\n\\[\\lfloor \\log_2 N \\rfloor = k\\]for $N = 2^k,$ $2^{k + 1},$ $\\dots,$ $2^{k + 1} - 1,$ for $2^k$ possible values.  The only exception is $k = 10$: $\\lfloor \\log_2 N \\rfloor = 10$ only for $N = 1024.$\n\nHence, the sum we seek is\n\\[S = 1 \\cdot 0 + 2 \\cdot 1 + 2^2 \\cdot 2 + 2^3 \\cdot 3 + \\dots + 2^8 \\cdot 8 + 2^9 \\cdot 9 + 10.\\]Then\n\\[2S = 2 \\cdot 0 + 2^2 \\cdot 1 + 2^3 \\cdot 2 + 2^4 \\cdot 3 + \\dots + 2^9 \\cdot 8 + 2^{10} \\cdot 9 + 20.\\]Subtracting these equations, we get\n\\begin{align*}\nS &= 10 + 2^{10} \\cdot 9 - 2^9 - 2^8 - \\dots - 2^2 - 2 \\\\\n&= 10 + 2^{10} \\cdot 9 - 2(2^8 + 2^7 + \\dots + 2 + 1) \\\\\n&= 10 + 2^{10} \\cdot 9 - 2(2^9 - 1) \\\\\n&= \\boxed{8204}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ $z$ be real numbers such that $x + y + z = 5$ and $xy + xz + yz = 8.$  Find the largest possible value of $x.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Squaring the equation $x + y + z = 5,$ we get\n\\[x^2 + y^2 + z^2 + 2(xy + xz + yz) = 25.\\]Then $x^2 + y^2 + z^2 = 25 - 2 \\cdot 8 = 9.$\n\nBy Cauchy-Schwarz,\n\\[(1^2 + 1^2)(y^2 + z^2) \\ge (y + z)^2.\\]Then $2(9 - x^2) \\ge (5 - x)^2,$ which expands as $18 - 2x^2 \\ge 25 - 10x + x^2.$  This simplifies to $3x^2 - 10x + 7 \\le 0,$ which factors as $(x - 1)(3x - 7) \\le 0.$  Hence, $x \\le \\frac{7}{3}.$\n\nEquality occurs when $y = z = \\frac{4}{3},$ so the maximum value of $x$ is $\\boxed{\\frac{7}{3}}.$"
+}

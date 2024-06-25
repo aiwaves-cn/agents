@@ -1,0 +1,6 @@
+{
+    "problem": "How many natural numbers between 150 and 300 are divisible by 9?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "For a number to be divisible by $9$, the sum of its digits must also be divisible by $9$. Thus, the least and greatest numbers in the range from $150$ to $300$ that are divisible by nine are $153$ and $297$.  So, we must count the numbers in the list  \\[9\\cdot 17, 9\\cdot 18, 9\\cdot 19, \\ldots, 9\\cdot 33.\\] This list has the same number of numbers as the list \\[17, 18, 19,\\ldots, 33.\\] Subtracting 16 from each of these gives  \\[1,2,3,\\ldots,17.\\] There are clearly $\\boxed{17}$ numbers in this list."
+}

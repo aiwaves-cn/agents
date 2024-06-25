@@ -1,0 +1,6 @@
+{
+    "problem": "Find a matrix of the form $\\mathbf{M} = \\begin{pmatrix} a & b \\\\ 0 & d \\end{pmatrix}$ such that\n\\[\\mathbf{M}^3 = \\begin{pmatrix} 8 & -57 \\\\ 0 & 27 \\end{pmatrix}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\mathbf{M}^3 &= \\begin{pmatrix} a & b \\\\ 0 & d \\end{pmatrix}^3 \\\\\n&= \\begin{pmatrix} a^2 & ab + bd \\\\ 0 & d^2 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ 0 & d \\end{pmatrix} \\\\\n&= \\begin{pmatrix} a^3 & a^2 b + abd + bd^2 \\\\ 0 & d^3 \\end{pmatrix}.\n\\end{align*}Thus, $a^3 = 8,$ $b(a^2 + ad + d^2) = -57,$ and $d^3 = 27.$  Hence, $a = 2$ and $d = 3,$ so\n\\[b(2^2 + 2 \\cdot 3 + 3^2) = -57.\\]Then $b = -3,$ so $\\mathbf{M} = \\boxed{\\begin{pmatrix} 2 & -3 \\\\ 0 & 3 \\end{pmatrix}}.$"
+}

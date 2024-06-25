@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[f(x) = \\left\\{\n\\begin{array}{cl}\n2x & \\text{if $0 \\le x < 2$}, \\\\\n8 - 2x & \\text{if $2 \\le x \\le 4$}.\n\\end{array}\n\\right.\\]Find the maximum value of the function.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "For $0 \\le x < 2,$\n\\[f(x) = 2x < 4.\\]For $2 \\le x \\le 4,$\n\\[f(x) = 8 - 2x \\le 8 - 2 \\cdot 2 = 4.\\]Thus, the maximum value of $f(x)$ is $\\boxed{4}.$"
+}

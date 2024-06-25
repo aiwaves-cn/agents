@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x}.\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\frac{\\sec x}{\\sin x} - \\frac{\\sin x}{\\cos x} &= \\frac{1}{\\cos x \\sin x} - \\frac{\\sin x}{\\cos x} \\\\\n&= \\frac{1 - \\sin^2 x}{\\cos x \\sin x} \\\\\n&= \\frac{\\cos^2 x}{\\cos x \\sin x} \\\\\n&= \\frac{\\cos x}{\\sin x} \\\\\n&= \\boxed{\\cot x}.\n\\end{align*}"
+}

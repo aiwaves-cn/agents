@@ -1,0 +1,6 @@
+{
+    "problem": "Is\n\\[f(x) = \\frac{1}{x + 2} - \\frac{1}{x - 2}\\]an even function, odd function, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since\n\\begin{align*}\nf(-x) &= \\frac{1}{-x + 2} - \\frac{1}{-x - 2} \\\\\n&= -\\frac{1}{x - 2} + \\frac{1}{x + 2} \\\\\n&= f(x),\n\\end{align*}$f(x)$ is an $\\boxed{\\text{even}}$ function.\n\nNote that\n\\[f(x) = \\frac{1}{x + 2} - \\frac{1}{x - 2} = \\frac{(x - 2) - (x + 2)}{x^2 - 4} = -\\frac{4}{x^2 - 4}.\\]In this form, it is clear that $f(x)$ is even."
+}

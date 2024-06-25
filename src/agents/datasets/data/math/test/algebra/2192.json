@@ -1,0 +1,6 @@
+{
+    "problem": "The domain of the function $h(x) = \\sqrt{25-x^2}+\\sqrt{-(x-2)}$ is an interval of what width?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "A real number $x$ is in the domain of $h$ if and only if $25-x^2$ and $-(x-2)$ are both nonnegative.\n\nThe solutions to $25-x^2\\ge 0$ are given by $-5\\le x\\le 5$.\n\nThe solutions to $-(x-2)\\ge 0$ are given by $x\\le 2$.\n\nThe overlap of these solution sets is the interval $[-5,2]$, which has width $\\boxed{7}$."
+}

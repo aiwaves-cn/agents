@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\frac{1}{-6} \\cdot 6 \\cdot 7 + 8 \\cdot 2 \\div 8 \\cdot (7-1)$.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "First, we recall that the reciprocal of a negative number is the negation of the reciprocal: $\\frac{1}{-x} = -\\frac{1}{x}$. Thus, we can rewrite $\\frac{1}{-6}$ as $-\\frac{1}{6}$. Now our expression is $-\\frac{1}{6} \\cdot 6 \\cdot 7 + 8 \\cdot 2 \\div 8 \\cdot (7-1)$.\n\nWe need to to what is in parentheses first, so we subtract 1 from 7 to get 6. Our expression is now $-\\frac{1}{6} \\cdot 6 \\cdot 7 + 8 \\cdot 2 \\div 8 \\cdot 6$.\n\nBecause multiplication and division is performed before addition and subtraction, we multiply and divide first, going from left to right. A number times its reciprocal is one, so our expression is $(-1) \\cdot 7 + 8 \\cdot 2 \\div 8 \\cdot 6$. Multiplying and dividing from left to right, we find  \\begin{align*}\n(-1) \\cdot 7 + 8 \\cdot 2 \\div 8 \\cdot 6 &= (-7) + 8\\cdot 2 \\div 8 \\cdot 6 \\\\\n&= (-7) + 16 \\div 8 \\cdot 6 \\\\\n&= (-7) + 2 \\cdot 6 \\\\\n&= (-7) + 12.\n\\end{align*}Now, completing the addition, our answer is $\\boxed{5}$."
+}

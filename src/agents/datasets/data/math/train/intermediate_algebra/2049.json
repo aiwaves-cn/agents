@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$, $b$, and $c$ be the roots of $x^3 - 20x^2 + 18x - 7 = 0$. Compute \\[(a+b)^2 + (b+c)^2 + (c+a)^2.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Expanding, we get \\[(a+b)^2+(b+c)^2+(c+a)^2 = 2(a^2+b^2+c^2) + 2(ab+bc+ca).\\]To compute this expression, note that \\[(a+b+c)^2 = (a^2+b^2+c^2) + 2(ab+bc+ca).\\]Then we can write the given expression in terms of $a+b+c$ and $ab+bc+ca$: \\[\\begin{aligned} 2(a^2+b^2+c^2) + 2(ab+bc+ca) &=[2(a^2+b^2+c^2) + 4(ab+bc+ca)] - 2(ab+bc+ca) \\\\ &=  2(a+b+c)^2 - 2(ab+bc+ca). \\end{aligned}\\]By Vieta's formulas, $a+b+c=20$ and $ab+bc+ca=18$, so the answer is $2 \\cdot 20^2 - 2 \\cdot 18 = \\boxed{764}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Which of the following, when rounded to the nearest hundredth, does not round to 65.14?\nA) 65.141\nB) 65.138\nC) 65.1339999\nD) 65.1401\nE) 65.14444\n\nYour answer should be a letter: A, B, C, D, or E.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "To round to the nearest hundredth, we look at the digit in the thousandth place. 65.141 (A), 65.1401 (D), and 65.14444 (E) all round down to 65.14 since the digit in the thousandth place is less than 5. 65.138 (B) rounds up to 65.14 since the digit in the thousandth place, 8, is greater than 5. 65.1339999 (C) rounds to 65.13, not 65.14. Thus, the answer is $\\boxed{C}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Square $ABCD$ is inscribed in the region bound by the parabola $y = x^2 - 8x + 12$ and the $x$-axis, as shown below.  Find the area of square $ABCD.$\n\n[asy]\nunitsize(0.8 cm);\n\nreal parab (real x) {\n  return(x^2 - 8*x + 12);\n}\n\npair A, B, C, D;\nreal x = -1 + sqrt(5);\n\nA = (4 - x,0);\nB = (4 + x,0);\nC = (4 + x,-2*x);\nD = (4 - x,-2*x);\n\ndraw(graph(parab,1.5,6.5));\ndraw(A--D--C--B);\ndraw((1,0)--(7,0));\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, N);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, SW);\n[/asy]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Note that the axis of symmetry of the parabola is $x = \\frac{-(-8)}{2\\cdot1}=4.$\n\nLet $2t$ be the side length of the square.  Then\n\\begin{align*}\nA &= (4 - t, 0), \\\\\nB &= (4 + t, 0), \\\\\nC &= (4 + t, -2t), \\\\\nD &= (4 - t, -2t).\n\\end{align*}But $C$ lies on the parabola $y = x^2 - 8x + 12 = (x - 4)^2 - 4,$ so\n\\[-2t = t^2 - 4.\\]Then $t^2 + 2t - 4 = 0,$ so by the quadratic formula,\n\\[t = -1 \\pm \\sqrt{5}.\\]Since $t$ is half a side length, it must be positive, and so $t = -1 + \\sqrt{5}.$  Therefore, the area of the square is\n\\[(2t)^2 = (-2 + 2 \\sqrt{5})^2 = \\boxed{24 - 8 \\sqrt{5}}.\\]"
+}

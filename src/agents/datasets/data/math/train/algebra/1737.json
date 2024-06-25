@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the value of $x$ that satisfies $\\sqrt[5]{x\\sqrt{x^3}}=3$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can first rewrite the term under the fifth root: $x\\sqrt{x^3} = x \\cdot x^{3/2} = x^{5/2}$. Then we simplify the entire expression on the left side of the equation, which gives  $\\sqrt[5]{x^{5/2}}=(x^{5/2})^{1/5} = x ^{(5/2)\\cdot(1/5)} = x^{1/2}$. We now have $\\sqrt{x}=3$ and we can square each side to find $x=\\boxed{9}$."
+}

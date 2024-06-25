@@ -1,0 +1,6 @@
+{
+    "problem": "In a parlor game, the magician asks one of the participants to think of a three digit number $(abc)$ where $a$, $b$, and $c$ represent digits in base $10$ in the order indicated. The magician then asks this person to form the numbers $(acb)$, $(bca)$, $(bac)$, $(cab)$, and $(cba)$, to add these five numbers, and to reveal their sum, $N$. If told the value of $N$, the magician can identify the original number, $(abc)$. Play the role of the magician and determine $(abc)$ if $N= 3194$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $m$ be the number $100a+10b+c$. Observe that $3194+m=222(a+b+c)$ so\n\\[m\\equiv -3194\\equiv -86\\equiv 136\\pmod{222}\\]\nThis reduces $m$ to one of $136, 358, 580, 802$. But also $a+b+c=\\frac{3194+m}{222}>\\frac{3194}{222}>14$ so $a+b+c\\geq 15$. Of the four options, only $m = \\boxed{358}$ satisfies this inequality."
+}

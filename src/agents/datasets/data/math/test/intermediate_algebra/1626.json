@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be a polynomial with positive leading coefficient such that\n\\[[p(x)]^2 = 4(x^2 + 2x + 1)(x^2 + 3x - 2) + (x - 3)^2.\\]Find $p(x).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Expanding, we get\n\\[[p(x)]^2 = 4x^4 + 20x^3 + 21x^2 - 10x + 1.\\]Then $p(x)$ is quadratic, with leading term $2x^2.$  Let\n\\[p(x) = 2x^2 + bx + c.\\]Then\n\\[[p(x)]^2 = 4x^4 + 4bx^3 + (b^2 + 4c) x^2 + 2bcx + c^2.\\]Matching coefficients, we get\n\\begin{align*}\n4b &= 20, \\\\\nb^2 + 4c &= 21, \\\\\n2bc &= -10, \\\\\nc^2 &= 1.\n\\end{align*}From $4b = 20,$ $b = 5.$  Then from $2bc = -10,$ $c = -1.$  Hence, $p(x) = \\boxed{2x^2 + 5x - 1}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Circles with centers $A$ and $B$ have radii  3 and 8, respectively. A common internal tangent touches the circles at $C$ and $D$, as shown. Lines $AB$ and $CD$ intersect at $E$, and $AE = 5$. What is $CD$?\n\n[asy]\nunitsize(0.2cm);\npair A,B,C,D,E;\nA=(0,0);\nB=(18.3,0);\nE=(5,0);\nC=(1.8,-2.4);\nD=(13.5,6.4);\ndraw(Circle(A,3),linewidth(0.7));\ndraw(Circle(B,8),linewidth(0.7));\ndraw(A--B,linewidth(0.7));\ndraw(C--D,linewidth(0.7));\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,NW);\nlabel(\"$E$\",E,S);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Radii $\\overline{AC}$ and $\\overline{BD}$ are each perpendicular to $\\overline{CD}$. By the Pythagorean Theorem, \\[\nCE = \\sqrt{5^2 - 3^2} = 4.\n\\] Because $\\triangle ACE$ and $\\triangle BDE$ are similar, we have  \\[\n\\frac{DE}{CE} = \\frac{BD}{AC},\\]  so \\[DE = CE\\cdot \\frac{BD}{AC} = 4\\cdot \\frac{8}{3} = \\frac{32}{3}.\n\\] Therefore \\[\nCD = CE + DE = 4 + \\frac{32}{3} = \\boxed{\\frac{44}{3}}.\n\\]"
+}

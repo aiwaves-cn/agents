@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive real number $x$ such that $\\lfloor x \\rfloor \\cdot x = 70$. Express $x$ as a decimal.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Knowing that $\\lfloor x \\rfloor \\leq x < \\lfloor x \\rfloor + 1,$ we see that $\\lfloor x \\rfloor$ must be $8,$ since $8 \\cdot 8 \\leq 70 < 9 \\cdot 9.$\n\nNow we see that $\\lfloor x \\rfloor \\cdot x = 8x = 70,$ so $x = \\frac{70}{8} = \\boxed{8.75}.$"
+}

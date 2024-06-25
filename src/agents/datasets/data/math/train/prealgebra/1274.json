@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $17^9 \\div 17^7$.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "We write $17^9=17^2\\cdot 17^7$ using the product-of-powers property, which says that $a^{m+n} = a^ma^n$. We get \\[\n17^9 \\div 17^7 = 17^2\\cdot 17^7 \\div 17^7 = 17^2 \\cdot 1 = \\boxed{289},\n\\]since any nonzero number divided by itself equals 1."
+}

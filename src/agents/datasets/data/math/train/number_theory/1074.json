@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all positive integers $\\nu$ for which $\\mathop{\\text{lcm}}[\\nu,20]=60$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that $60$ is divisible by $3$, but $20$ is not divisible by $3$. Therefore, if $\\mathop{\\text{lcm}}[\\nu,20]=60$, then $\\nu$ must be divisible by 3 and we may write $\\nu=3n$ (where $n$ is a positive integer).\n\nThus we have $\\mathop{\\text{lcm}}[3n,20]=60$, and since the $3n$ contributes the factor of $3$ to $\\mathop{\\text{lcm}}[3n,20]$, it follows that $\\mathop{\\text{lcm}}[n,20]=\\frac{60}{3}=20$. This is true if and only if $n$ is a divisor of $20$. Therefore, the possible values of $\\nu$ are $3$ times the positive divisors of $20$: $$\\nu = 3,6,12,15,30,\\,\\text{or}\\,60.$$The sum of these values is $\\boxed{126}$."
+}

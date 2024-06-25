@@ -1,0 +1,6 @@
+{
+    "problem": "Let $O$ and $H$ denote the circumcenter and orthocenter of triangle $ABC,$ respectively.  If $AO = AH,$ then enter all possible values of $\\angle A$ (in degrees), separated by commas.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $O$ be the origin.  Then $\\overrightarrow{H} = \\overrightarrow{A} + \\overrightarrow{B} + \\overrightarrow{C},$ so\n\\begin{align*}\nAH^2 &= \\|\\overrightarrow{B} + \\overrightarrow{C}\\|^2 \\\\\n&= (\\overrightarrow{B} + \\overrightarrow{C}) \\cdot (\\overrightarrow{B} + \\overrightarrow{C}) \\\\\n&= \\overrightarrow{B} \\cdot \\overrightarrow{B} + 2 \\overrightarrow{B} \\cdot \\overrightarrow{C} + \\overrightarrow{C} \\cdot \\overrightarrow{C} \\\\\n&= R^2 + 2 \\left( R^2 - \\frac{a^2}{2} \\right) + R^2 \\\\\n&= 4R^2 - a^2.\n\\end{align*}Also, $AO^2 = R^2,$ so $4R^2 - a^2 = R^2.$  Then $a^2 = 3R^2,$ so $a = R \\sqrt{3}.$\n\nBy the Extended Law of Sines,\n\\[\\frac{a}{\\sin A} = 2R,\\]so $a = 2R \\sin A.$  Then $\\sin A = \\frac{\\sqrt{3}}{2},$ so the possible values of $A$ are $\\boxed{60^\\circ, 120^\\circ}.$"
+}

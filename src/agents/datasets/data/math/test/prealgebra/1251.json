@@ -1,0 +1,6 @@
+{
+    "problem": "How many sides would there be in a convex polygon if the sum of all but one of its interior angles is $1070^{\\circ}$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The sum of the interior angles in any $n$-sided polygon is $180(n-2)$ degrees, so the angle measures in a polygon with 7 sides sum to $180(7-2) = 900$ degrees, which means that the desired polygon has more than 7 sides.  Meanwhile, the angle measures in a polygon with 8 sides sum to $180(8-2) = 1080$ degrees.  So, it's possible that the polygon has $\\boxed{8}$ sides, and that the last angle measures $10^\\circ$.\n\nTo see that this is the only possibility, note that the angle measures in a polygon with 9 sides sum to $180(9-2) = 1260$ degrees.  Therefore, if the polygon has more than 8 sides, then the last interior angle must measure at least $1260^\\circ - 1070^\\circ = 190^\\circ$.  But this is impossible because each interior angle of a convex polygon has measure less than $180^\\circ$."
+}

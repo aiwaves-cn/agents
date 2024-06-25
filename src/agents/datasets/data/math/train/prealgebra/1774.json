@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest integer less than 100 for which the greatest common factor of that integer and 18 is 3?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The prime factors of 18 are 2, 3, and 3. If the greatest common factor with 18 is 3, that means the other number is a multiple of 3 but not 2, 6, or 9. Since the other number cannot be an even number (multiple of 2), we start with 99 and look at decreasing odd numbers. 99 is a multiple of 9, 97 and 95 are not multiples of 3, so the greatest integer less than 100 that satisfies the conditions is $\\boxed{93}$."
+}

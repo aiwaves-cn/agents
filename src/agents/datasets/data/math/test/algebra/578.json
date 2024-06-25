@@ -1,0 +1,6 @@
+{
+    "problem": "Photons of red light have a wavelength of approximately $7\\times 10^{-7}$ meters. The energy of a photon is inversely proportional to its wavelength. A photon with 2000 times the energy as a photon of red light will have a wavelength that can be written as $a\\cdot 10^b$ meters, where $1\\le a < 10$. (In other words, in scientific notation.)  What is $a+b$ written as a decimal?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let the energy of a photon equal $E$ and the wavelength equal $\\lambda$.  Since the wavelength is inversely proportional to the energy, the product $E\\lambda$ must be equal to some constant, say $k$.  Given photons of red light with a wavelength of $7\\times10^{-7}$, we can write: \\begin{align*}\nE(7\\times10^{-7})&=k\\\\\n\\Rightarrow\\qquad 7\\times10^{-7}&=\\frac{k}{E}\n\\end{align*} Now, we are asked to find the wavelength of a photon with 2000 times the energy of red light.  Substitute $2000E$ for $E$ in the original expression: \\begin{align*}\n(2000E)\\lambda&=k\\\\\n\\Rightarrow\\qquad \\lambda&=\\frac{k}{2000E}\\\\\n&=\\frac{1}{2000}\\cdot\\frac{k}{E}\\\\\n&=\\frac{1}{2\\times10^3}\\cdot7\\times10^{-7}\\\\\n&={3.5\\times10^{-10} \\text{ meters}}\n\\end{align*} Therefore, we have $a+b = \\boxed{-6.5}$."
+}

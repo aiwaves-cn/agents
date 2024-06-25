@@ -1,0 +1,6 @@
+{
+    "problem": "If $(ax+b)(bx+a)=26x^2+\\Box\\cdot x+26$, where $a$, $b$, and $\\Box$ are distinct integers, what is the minimum possible value of $\\Box$, the coefficient of $x$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We expand the left side to get $(abx^2+(a^2+b^2)x+ab)=26x^2+\\Box\\cdot x+26$. The coefficients of like terms must be equal, so that means $ab=26$. The only possibilities for $(a,b)$ are $(2,13)$, $(-2,-13)$, $(13,2)$, $(-13,-2)$, $(1,26)$, $(26,1)$, $(-1,-26)$, or $(-26,-1)$. Since we're looking for $\\Box=a^2+b^2$, we just compute $1^2+26^2 = 677$ and $2^2+13^2=173$, the minimum of which is $\\boxed{173}$."
+}

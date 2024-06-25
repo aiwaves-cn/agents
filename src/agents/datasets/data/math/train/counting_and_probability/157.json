@@ -1,0 +1,6 @@
+{
+    "problem": "Four standard, six-sided dice are to be rolled. If the product of their values turns out to be an even number, what is the probability their sum is odd? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "If the product of their values is even, then at least one of the dice rolls must yield an even number. To find how many ways this is possible, we consider the complementary possibility: suppose that all of the dice rolls yield odd numbers. There are $3^4$ ways of this occurring, out of a total of $6^4$ possibilities. It follows that there are $6^4 - 3^4$ ways of obtaining at least one even value.\n\nNow, we need to count how many ways we can obtain an odd sum. There must then be an odd number of odd numbers rolled, so there must be either one or three odd numbers rolled. If one odd number is rolled, then there are $4$ ways to pick which die yielded the odd number, and $3$ possibilities for each dice, yielding a total of $4 \\cdot 3^4$ possibilities. If three odd numbers are rolled, then there are again $4$ ways to pick which die yielded the even number and $3$ possibilities for each dice, yielding $4 \\cdot 3^4$. Thus, the desired probability is given by $\\frac{4 \\cdot 3^4 + 4\\cdot 3^4}{6^4 - 3^4} = \\frac{8}{2^4 - 1} = \\boxed{\\frac{8}{15}}$."
+}

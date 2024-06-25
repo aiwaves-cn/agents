@@ -1,0 +1,6 @@
+{
+    "problem": "Two numbers $90$ and $m$ share exactly three positive divisors. What is the greatest of these three common divisors?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Recall that the common divisors of two integers are precisely the divisors of the greatest common divisor. So, for two numbers to have exactly three positive divisors in common, those divisors must be $1$, $p$, and $p^2$ such that $p$ is prime. We now look at the prime factorization of $90$: $90=2 \\cdot 3^2 \\cdot 5$. Since $3^2$ is the only perfect square divisor of $90$, the divisors that $90$ and $m$ share must be $1$, $3$, and $9$. The largest of these three numbers is $\\boxed{9}$."
+}

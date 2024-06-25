@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest perfect square less than 225 that is a multiple of 9?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "In order for a number to be a multiple of 9, the sum of its digits must be divisible by 9. Since $225=15^2$, the largest perfect square that is less than 225 is $14^2=196$. However, $1+9+6=16$, which is not divisible by 9. The next largest perfect square less than 225 is $13^2=169$, but again, $1+6+9$ is not divisible by 9. Continuing,  $12^2=144$. The sum of the digits of $144$ is $1+4+4=9$, so $\\boxed{144}$ is the largest perfect square less than 225 that is a multiple of 9."
+}

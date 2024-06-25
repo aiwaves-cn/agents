@@ -1,0 +1,6 @@
+{
+    "problem": "Find the last three digits of $9^{105}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can write $9^{105} = (10 - 1)^{105}.$  Then by the Binomial Theorem,\n\\[(10 - 1)^{105} = 10^{105} - \\binom{105}{1} 10^{104} + \\binom{105}{2} 10^{103} - \\dots + \\binom{105}{102} 10^3 - \\binom{105}{103} 10^2 + \\binom{105}{104} 10 - 1.\\]All the terms up to $\\binom{105}{102} 10^3$ are divisible by $10^3,$ so for the purpose of finding the last three digits, we can ignore them.  We are left with\n\\begin{align*}\n-\\binom{105}{103} 10^2 + \\binom{105}{104} 10 - 1 &= -\\binom{105}{2} 10^2 + \\binom{105}{1} 10 - 1 \\\\\n&= -\\frac{105 \\cdot 104}{2} \\cdot 10^2 + 105 \\cdot 10 - 1 \\\\\n&= -546000 + 1050 - 1 \\\\\n&= -546000 + 1049.\n\\end{align*}Hence, the last three digits are $\\boxed{049}.$"
+}

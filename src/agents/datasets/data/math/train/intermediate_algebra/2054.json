@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_1,$ $a_2,$ $\\dots,$ $a_{2018}$ be the roots of the polynomial\n\\[x^{2018} + x^{2017} + \\dots + x^2 + x - 1345 = 0.\\]Compute\n\\[\\sum_{n = 1}^{2018} \\frac{1}{1 - a_n}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $b_n = \\frac{1}{1 - a_n}.$  Solving for $a_n,$ we find\n\\[a_n = \\frac{b_n - 1}{b_n}.\\]Substituting, we get\n\\[\\left( \\frac{b_n - 1}{b_n} \\right)^{2018} + \\left( \\frac{b_n - 1}{b_n} \\right)^{2017} + \\dots + \\left( \\frac{b_n - 1}{b_n} \\right)^2 + \\frac{b_n - 1}{b_n} - 1345 = 0.\\]Hence,\n\\[(b_n - 1)^{2018} + b_n (b_n - 1)^{2017} + \\dots + b_n^{2016} (b_n - 1)^2 + b_n^{2017} (b_n - 1) - 1345 b_n^{2018} = 0.\\]Thus, the $b_i$ are the roots of the polynomial\n\\[(x - 1)^{2018} + x(x - 1)^{2017} + \\dots + x^{2016} (x - 1)^2 + x^{2017} (x - 1) - 1345x^{2018} = 0.\\]The coefficient of $x^{2018}$ is $2019 - 1346 = 673.$  The coefficient of $x^{2017}$ is $-1 - 2 - \\dots - 2018 = -\\frac{2018 \\cdot 2019}{2}.$  Therefore, the sum of the $b_i$ is\n\\[\\frac{2018 \\cdot 2019}{2 \\cdot 673} = \\boxed{3027}.\\]"
+}

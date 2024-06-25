@@ -1,0 +1,6 @@
+{
+    "problem": "A point has rectangular coordinates $(8,-3,-1)$ and spherical coordinates $(\\rho, \\theta, \\phi).$  Find the rectangular coordinates of the point with spherical coordinates $(\\rho, -\\theta, \\phi).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n8 &= \\rho \\sin \\phi \\cos \\theta, \\\\\n-3 &= \\rho \\sin \\phi \\sin \\theta, \\\\\n-1 &= \\rho \\cos \\phi.\n\\end{align*}Then\n\\begin{align*}\n\\rho \\sin \\phi \\cos (-\\theta) &= \\rho \\sin \\phi \\cos \\theta = 8, \\\\\n\\rho \\sin \\phi \\sin (-\\theta) &= -\\rho \\sin \\phi \\sin \\theta = 3, \\\\\n\\rho \\cos \\phi &= -1,\n\\end{align*}so the rectangular coordinates are $\\boxed{(8,3,-1)}.$"
+}

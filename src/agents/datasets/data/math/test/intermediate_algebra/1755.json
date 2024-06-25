@@ -1,0 +1,6 @@
+{
+    "problem": "For a positive integer $m,$ let $f(m) = m^2 + m + 1$.  Find the largest positive integer $n$ such that\n\\[1000 f(1^2) f(2^2) \\dotsm f(n^2) \\ge f(1)^2 f(2)^2 \\dotsm f(n)^2.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $f(k^2) = k^4 + k^2 + 1.$  By a little give and take,\n\\begin{align*}\nf(k^2) &= (k^4 + 2k^2 + 1) - k^2 \\\\\n&= (k^2 + 1)^2 - k^2 \\\\\n&= (k^2 + k + 1)(k^2 - k + 1) \\\\\n&= f(k) (k^2 - k + 1).\n\\end{align*}Furthermore,\n\\[f(k - 1) = (k - 1)^2 + (k - 1) + 1 = k^2 - 2k + 1 + k - 1 = k^2 - k + 1,\\]so\n\\[f(k^2) = f(k) f(k - 1).\\]Thus, the given inequality becomes\n\\[1000 f(1) f(0) \\cdot f(2) f(1) \\cdot f(3) f(2) \\dotsm f(n - 1) f(n - 2) \\cdot f(n) f(n - 1) \\ge f(1)^2 f(2)^2 \\dotsm f(n)^2,\\]which simplifies to\n\\[1000 \\ge f(n).\\]The function $f(n)$ is increasing, and $f(31) = 993$ and $f(32) = 1057,$ so the largest such $n$ is $\\boxed{31}.$"
+}

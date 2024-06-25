@@ -1,0 +1,6 @@
+{
+    "problem": "For how many ordered pairs of positive integers $(x,y),$ with $y<x\\le 100,$ are both $\\frac xy$ and $\\frac{x+1}{y+1}$ integers?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since $y|x$, $y+1|x+1$, then $\\text{gcd}\\,(y,x)=y$ (the bars indicate divisibility) and $\\text{gcd}\\,(y+1,x+1)=y+1$. By the Euclidean algorithm, these can be rewritten respectively as $\\text{gcd}\\,(y,x-y)=y$ and $\\text{gcd}\\, (y+1,x-y)=y+1$, which implies that both $y,y+1 | x-y$. Also, as $\\text{gcd}\\,(y,y+1) = 1$, it follows that $y(y+1)|x-y$. [1]\nThus, for a given value of $y$, we need the number of multiples of $y(y+1)$ from $0$ to $100-y$ (as $x \\le 100$). It follows that there are $\\left\\lfloor\\frac{100-y}{y(y+1)} \\right\\rfloor$ satisfactory positive integers for all integers $y \\le 100$. The answer is\n\\[\\sum_{y=1}^{99} \\left\\lfloor\\frac{100-y}{y(y+1)} \\right\\rfloor = 49 + 16 + 8 + 4 + 3 + 2 + 1 + 1 + 1 = \\boxed{85}.\\]"
+}

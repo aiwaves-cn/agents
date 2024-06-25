@@ -1,0 +1,6 @@
+{
+    "problem": "The values of a function $f(x)$ are given below:\n\n\\begin{tabular}{|c||c|c|c|c|c|} \\hline $x$ & 3 & 4 & 5 & 6 & 7 \\\\ \\hline $f(x)$ & 10 & 17 & 26 & 37 & 50 \\\\ \\hline \\end{tabular}Evaluate $f^{-1}\\left(f^{-1}(50)\\times f^{-1}(10)+f^{-1}(26)\\right)$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since $f(7)=50$, we have $f^{-1}(50)=7$. Similarly, $f(3)=10$ and $f(5)=26$, so $f^{-1}(10)=3$ and $f^{-1}(26)=5$. Therefore,  \\begin{align*}f^{-1}\\left(f^{-1}(50)\\times f^{-1}(10)+f^{-1}(26)\\right)&=f^{-1}(7\\times3+5)\\\\\n&=f^{-1}(26)=\\boxed{5}.\\end{align*}"
+}

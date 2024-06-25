@@ -1,0 +1,6 @@
+{
+    "problem": "Multiply $(2x^3-5y^2)(4x^6+10x^3y^2+25y^4)$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The given product can be rewritten in the form $(a-b)(a^2+ab+b^2)$, which is the factorization of $a^3-b^3$ for $a=2x^3$ and $b=5y^2$. Therefore, the expression can be rewritten as $a^3-b^3=(2x^3)^3-(5y^2)^3=\\boxed{8x^9-125y^6}$."
+}

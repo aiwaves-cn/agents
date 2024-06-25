@@ -1,0 +1,6 @@
+{
+    "problem": "Mackenzie bought 142 feet of fencing with which to enclose her rectangular garden. If the numbers of feet in the lengths of the garden's sides are natural numbers, what is the maximum number of square feet that can be enclosed by the fencing?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the perimeter is 142, the sides of the rectangle add up to $142/2 = 71.$  Let $x$ be one side length of the rectangle.  Then the other side length is $71 - x,$ so the area is\n\\[x(71 - x) = 71x - x^2.\\]Completing the square, we get\n\\[-x^2 + 71x = -x^2 + 71x - \\frac{71^2}{2^2} + \\frac{71^2}{2^2} = \\frac{5041}{4} - \\left( x - \\frac{71}{2} \\right)^2.\\]To minimize this, we want $x$ as close as possible to $\\frac{71}{2}.$  Normally, we could take $x = \\frac{71}{2},$ but $x$ must be an integer, so we can take $x$ as either 35 or 36.\n\nThus, the maximum area of the rectangle is $35 \\cdot 36 = \\boxed{1260}.$"
+}

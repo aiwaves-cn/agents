@@ -1,0 +1,6 @@
+{
+    "problem": "The value of $y$ varies inversely as $\\sqrt x$ and when $x=2$, $y=4$. What is $x$ when $y=1$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $y$ and $\\sqrt{x}$ are inversely proportional, this means that $y\\sqrt{x}=k$ for some constant $k$.  Substituting the given values, when $x=2$ and $y=4$, we find that $4\\sqrt{2}=k$.  Therefore, when $y=1$, we can solve for $x$: \\begin{align*}\n1\\cdot\\sqrt{x}&=4\\sqrt{2}\\\\\n\\Rightarrow\\qquad (\\sqrt{x})^2&=(4\\sqrt{2})^2\\\\\n\\Rightarrow\\qquad x&=16\\cdot2=\\boxed{32}\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram below, we have $\\sin \\angle RPQ = \\frac{7}{25}$.  What is $\\cos \\angle RPS$?\n\n[asy]\n\npair R,P,Q,SS;\n\nSS = (-2,0);\n\nP = (0,0);\n\nQ = (2,0);\n\nR = rotate(aSin(7/25))*(1.5,0);\n\ndot(\"$S$\",SS,S);\n\ndot(\"$Q$\",Q,S);\n\ndot(\"$R$\",R,N);\n\ndot(\"$P$\",P,S);\n\ndraw(Q--SS);\n\ndraw(P--R);\n\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "For any angle $x$, we have $\\cos(180^\\circ - x)=-\\cos x$, so $\\cos \\angle RPS = \\cos(180^\\circ - \\angle RPQ) =- \\cos\\angle RPQ$.\n\nSince $\\sin^2 \\angle RPQ + \\cos^2 \\angle RPQ = 1$, we have $\\cos^2\\angle RPQ = 1 - \\left(\\frac{7}{25}\\right)^2 = \\frac{576}{625}$.  Since $\\angle RPQ$ is acute, we have $\\cos\\angle RPQ = \\frac{24}{25}$, which gives us $\\cos\\angle RPS = -\\cos\\angle RPQ = \\boxed{-\\frac{24}{25}}$."
+}

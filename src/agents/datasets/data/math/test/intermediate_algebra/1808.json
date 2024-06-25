@@ -1,0 +1,6 @@
+{
+    "problem": "Let $e(x)$ be an even function, and let $o(x)$ be an odd function, such that\n\\[e(x) + o(x) = \\frac{6}{x + 2} + x^2 + 2^x\\]for all real numbers $x \\neq -2.$  Find $o(1).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = 1,$ we get\n\\[e(1) + o(1) = \\frac{6}{1 + 2} + 1^2 + 2^1 = 5.\\]Setting $x = -1,$ we get\n\\[e(-1) + o(-1) = \\frac{6}{-1 + 2} + (-1)^2 + 2^{-1} = \\frac{15}{2}.\\]Since $e(x)$ is an even function and $o(x)$ is an odd function, $e(-1) = e(1)$ and $o(-1) = -o(1),$ so\n\\[e(1) - o(1) = \\frac{15}{2}.\\]Subtracting this from the equation $e(1) + o(1) = 5,$ we get\n\\[2o(1) = -\\frac{5}{2},\\]so $o(1) = \\boxed{-\\frac{5}{4}}.$"
+}

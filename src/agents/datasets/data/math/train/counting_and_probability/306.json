@@ -1,0 +1,6 @@
+{
+    "problem": "Keisha's basketball team must decide on a new uniform.  The seventh-graders will pick the color of the shorts (black or gold) and the eighth-graders will pick the color of the jersey (black, white, or gold), but the two groups of players will not confer together.  If, for both garments, each possible color is equally likely to be chosen, what is the probability that the shorts will be a different color than the jersey? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We will count the number of garment configurations in which the garments do not match color and divide by the total number of garment configurations in order to find the probability that the garments do not match. If the seventh-graders choose a black garment, there are two garments the eighth-graders can choose such that the garments don't match: white and gold. If the seventh-graders choose a gold garment, there are two garments the eighth-graders can choose to not match: black and white. Thus, there are $2+2=4$ garment configurations such that the garments don't match. The total number of garment configurations is $2\\cdot3=6$ (one of two shorts and one of three jerseys), so the probability that the garments don't match is $4/6=\\boxed{\\frac{2}{3}}$."
+}

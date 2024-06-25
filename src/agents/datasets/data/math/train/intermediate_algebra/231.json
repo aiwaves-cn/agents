@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that all four of the numbers \\[3 - 2\\sqrt{2}, \\; -3-2\\sqrt{2}, \\; 1+\\sqrt{7}, \\; 1-\\sqrt{7}\\]are roots of the same nonzero polynomial with rational coefficients. What is the smallest possible degree of the polynomial?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Because the polynomial has rational coefficients, the radical conjugate of each of the given roots must also be roots of the polynomial. However, $1+\\sqrt{7}$ and $1-\\sqrt{7}$ are each other's radical conjugates, so we only get $2$ more roots. (You might be tempted to think that $3-2\\sqrt2$ and $-3-2\\sqrt2$ are also a pair of radical conjugates, but the radical conjugate of $3-2\\sqrt2$ is $3+2\\sqrt2,$ while the radical conjugate of $-3-2\\sqrt2$ is $-3+2\\sqrt2.$ Therefore, each one of the numbers $3-2\\sqrt2$ and $-3-2\\sqrt2$ is actually the negation of the radical conjugate of the other one.) In total, the polynomial must have at least $4+2=6$ roots.\n\nFurthermore, the polynomial\n\\[(x - 3 + 2 \\sqrt{2})(x - 3 - 2 \\sqrt{2})(x + 3 + 2 \\sqrt{2})(x + 3 - 2 \\sqrt{2})(x - 1 - \\sqrt{7})(x - 1 + \\sqrt{7}) = (x^2 - 6x + 1)(x^2 + 6x + 1)(x^2 - 2x - 6)\\]has roots $3 \\pm 2 \\sqrt{2},$ $-3 \\pm 2 \\sqrt{2},$ and $1 \\pm \\sqrt{7},$ and has rational coefficients.  Hence, the smallest possible degree is $\\boxed{6}.$"
+}

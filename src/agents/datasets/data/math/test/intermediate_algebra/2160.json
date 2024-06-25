@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f$ be a function taking the nonnegative integers to the positive integers such that $f(0) = f(1) = 1$ and\n\\[\\frac{f(n) f(m + 1)}{f(m)} + \\frac{f(n) f(n - m)}{f(n - m - 1)} = f(n + 1)\\]for all nonnegative integers $n$ and $m,$ where $n \\ge m + 1.$\n\nFind the smallest nonnegative integer $n$ such that $f(n) > 10^6.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $m = n - 1$ in the given functional equation, we get\n\\[\\frac{f(n) \\cdot f(n)}{f(n - 1)} + f(n) = f(n + 1),\\]for all $n \\ge 1.$  Then\n\\[\\frac{f(n)}{f(n - 1)} + 1 = \\frac{f(n + 1)}{f(n)}.\\]Let $g(n) = \\frac{f(n)}{f(n - 1)}$ for $n \\ge 1.$  Then $g(1) = \\frac{f(1)}{f(0)} = 1,$ and\n\\[g(n) + 1 = g(n + 1).\\]Then $g(n) = n$ for all $n \\ge 1.$  Hence,\n\\[g(n) g(n - 1) \\dotsm g(2) g(1) = \\frac{f(n)}{f(n - 1)} \\cdot \\frac{f(n - 1)}{f(n - 2)} \\dotsm \\frac{f(2)}{f(1)} \\cdot \\frac{f(1)}{f(0)},\\]which simplifies to\n\\[n(n - 1) \\dotsm (2)(1) = \\frac{f(n)}{f(0)}.\\]Therefore, $f(n) = n!$ for all $n \\ge 1.$\n\nSince $f(9) = 9! = 326880$ and $f(10) = 10! = 3628800,$ the smallest such $n$ is $\\boxed{10}.$"
+}

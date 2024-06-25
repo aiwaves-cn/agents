@@ -1,0 +1,6 @@
+{
+    "problem": "This pattern is made from toothpicks. If the pattern is continued by adding two toothpicks to the previous stage, how many toothpicks are used to create the figure for the $15^{th}$ stage?\n\n[asy]draw((0,0)--(7.5,13)--(-7.5,13)--cycle);\ndraw((0,0)--(-15,0)--(-7.5,13)--cycle);\nlabel(\"stage 2\",(-4,0),S);\ndraw((-23,0)--(-30.5,13)--(-38,0)--cycle);\nlabel(\"stage 1\",(-30,0),S);\ndraw((12,0)--(19.5,13)--(27,0)--cycle);\ndraw((19.5,13)--(34.5,13)--(27,0)--cycle);\ndraw((34.5,13)--(27,0)--(42,0)--cycle);\nlabel(\"stage 3\",(27,0),S);\n[/asy]",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are 3 used in the first stage, and 2 in every stage thereafter.  Thus, for the 15th stage, there will be $3 + 2(14) = \\boxed{31}$ toothpicks used."
+}

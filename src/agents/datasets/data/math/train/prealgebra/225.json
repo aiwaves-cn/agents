@@ -1,0 +1,6 @@
+{
+    "problem": "How many 4-digit positive integers exist that satisfy the following conditions: (A) Each of the first two digits must be 1, 4, or 5, and (B) the last two digits cannot be the same digit, and (C) each of the last two digits must be 5, 7, or 8?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The first two digits may be any of 3, so there are $3^2 = 9$ choices for the first two. There are $3\\times 2$ possible values for the last two, since we have 3 choices for the first and then 2 for the second, so there are $9\\times 6 = \\boxed{54}$ possible integers."
+}

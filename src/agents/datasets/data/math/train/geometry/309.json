@@ -1,0 +1,6 @@
+{
+    "problem": "In regular pentagon $ABCDE$, diagonal $AC$ is drawn, as shown. Given that each interior angle of a regular pentagon measures 108 degrees, what is the measure of angle $CAB$?\n\n[asy]\nsize(4cm,4cm);\ndefaultpen(linewidth(1pt)+fontsize(10pt));\n\npair A,B,C,D,E;\nA = (0,0);\nB = dir(108);\nC = B+dir(39);\nD = C+dir(-39);\nE = (1,0);\n\ndraw(A--B--C--D--E--cycle,linewidth(1));\ndraw(A--C,linewidth(1)+linetype(\"0 4\"));\n\nlabel(\"A\",A,S);\nlabel(\"B\",B,W);\nlabel(\"C\",C,N);\nlabel(\"D\",D,E);\nlabel(\"E\",E,S);\nlabel(\"$108^\\circ$\",B,E);;\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Since $ABCDE$ is a regular pentagon, we know by symmetry that the measures of $\\angle CAB$ and $\\angle BCA$ are equal. We also know that the sum of the measures of the angles of $\\triangle ABC$ equals $180$ degrees. Thus, if we let $x = $ the measure of $\\angle CAB$ = the measure of $\\angle BCA$, we have that $180 = 108 + x + x \\Rightarrow 2x = 72 \\Rightarrow x = 36$. The measure of angle $CAB$ is $\\boxed{36}$ degrees."
+}

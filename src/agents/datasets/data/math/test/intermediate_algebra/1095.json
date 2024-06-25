@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers satisfying $x^4y^5+y^4x^5=810$ and $x^3y^6+y^3x^6=945$. Evaluate $2x^3+(xy)^3+2y^3$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Factoring $x^4y^4$ and $x^3y^3$ from the left-hand sides of the two equations, respectively, we get \\[\\begin{aligned} x^4y^4(x+y) &= 810, \\\\ x^3y^3(x^3+y^3) &= 945. \\end{aligned}\\]Let $s = x+y$ and $p = xy.$ Then we can rewrite the given equations as \\[\\begin{aligned} p^4s &= 810, \\\\ p^3(s^3-3ps) &= 945,\\end{aligned}\\]using $x^3+y^3 = (x+y)^3 - 3xy(x+y) = s^3 - 3ps$. Substituting $s = 810/p^4$ into the second equation, we get \\[\\begin{aligned} p^3\\left(\\frac{810^3}{p^{12}} - 3p \\cdot \\frac{810}{p^4}\\right) &= 945 \\\\ \\frac{810^3}{p^9} - 3 \\cdot 810 &= 945 \\\\ p^9 &= \\frac{810^3}{3 \\cdot 810 + 945} = \\frac{810^3}{15^3} = 54^3. \\end{aligned}\\]Thus $p = \\sqrt[3]{54},$ and $s = 810/p^4 = 810/(54\\sqrt[3]{54}) = 15/\\sqrt[3]{54}.$ The quantity we want to compute is then \\[\\begin{aligned} 2x^3 + (xy)^3 + 2y^3 &= 2(s^3 - 3ps) + p^3 \\\\ &= 2s^3 - 6ps + p^3 \\\\ &= 2 \\cdot \\frac{15^3}{54} - 6 \\cdot \\sqrt[3]{54} \\cdot \\frac{15}{\\sqrt[3]{54}} + 54 \\\\ &= 125 - 90 + 54 \\\\ &= \\boxed{89}. \\end{aligned}\\]"
+}

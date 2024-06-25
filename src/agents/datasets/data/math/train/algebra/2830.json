@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest value of $x$ that satisfies the equation $8x^2 - 38x + 35 = 0$? Express your answer as a decimal.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We see that we can rewrite the left side of the equation $8x^2 - 38x + 35$ as $(2x - 7)(4x - 5)$, so we have $(2x - 7)(4x - 5) = 0$. Thus, solving the equations $2x - 7 = 0$ and $4x - 5 = 0$ gives us $x = 3.5$ and $x = 1.25$ as our solutions. Since $1.25 < 3.5$, our final answer is $x = \\boxed{1.25}$."
+}

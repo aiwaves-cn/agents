@@ -1,0 +1,6 @@
+{
+    "problem": "Gretchen has eight socks, two of each color: magenta, cyan, black, and white. She randomly draws four socks. What is the probability that she has exactly one pair of socks with the same color?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are a total of $\\binom{8}{4} = 70$ combinations of socks. We seek combinations that have one pair of socks with the same color and two separate socks with different colors for a total of three colors. There are $\\binom{4}{3}$ ways to choose three colors. From each combination of three colors, there are $\\binom{3}{1}$ ways to choose a color for the only pair of socks.  There are 2 socks to choose from for each of the colors that only appear once among the four socks she chooses.  Therefore, there are $\\binom{4}{3}\\binom{3}{1}\\cdot 2 \\cdot 2 = 48$ ways to choose an appropriate combination of socks. The probability of choosing such a combination is $\\frac{48}{70} = \\boxed{\\frac{24}{35}}$."
+}

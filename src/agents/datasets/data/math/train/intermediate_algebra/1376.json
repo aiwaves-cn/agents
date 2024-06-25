@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[x^2 + 2xy + 3y^2 - 6x - 2y,\\]over all real numbers $x$ and $y.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Suppose that $y$ is a fixed number, and $x$ can vary.  If we try to complete the square in $x,$ we would write\n\\[x^2 + (2y - 6) x + \\dotsb,\\]so the square would be of the form $(x + (y - 3))^2.$  Hence, for a fixed value of $y,$ the expression is minimized in $x$ for $x = 3 - y.$\n\nSetting $x = 3 - y,$ we get\n\\begin{align*}\nx^2 + 2xy + 3y^2 - 6x - 2y &= (3 - y)^2 + 2(3 - y)y + 3y^2 - 6(3 - y) - 2y \\\\\n&= 2y^2 + 4y - 9 \\\\\n&= 2(y + 1)^2 - 11.\n\\end{align*}Hence, the minimum value is $\\boxed{-11},$ which occurs when $x = 4$ and $y = -1.$"
+}

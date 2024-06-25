@@ -1,0 +1,6 @@
+{
+    "problem": "Square each integer $n$ in the range $1\\le n\\le 10$ and find the remainders when the squares are divided by $11$. Add up all the distinct results and call it $m$. What is the quotient when $m$ is divided by $11$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "First notice that $(11-n)^2=11^2-2\\cdot 11+n^2\\equiv n^2\\pmod{11}$, and since we're asked to find distinct results, we only need to compute the squares of $n=1,2,3,4,5$. Respectively, $n^2\\equiv 1,4,9,5,3\\pmod{11}$. Thus, $1+4+9+5+3=22=11\\cdot\\boxed{2}$."
+}

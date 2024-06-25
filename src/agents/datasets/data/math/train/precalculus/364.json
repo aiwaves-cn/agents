@@ -1,0 +1,6 @@
+{
+    "problem": "The line segment connecting $(-2,7)$ and $(3,11)$ can be parameterized by the equations\n\\begin{align*}\nx &= at + b, \\\\\ny &= ct + d,\n\\end{align*}where $0 \\le t \\le 1,$ and $t = 0$ corresponds to the point $(-2,7).$  Find $a^2 + b^2 + c^2 + d^2.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Taking $t = 0,$ we get $(x,y) = (b,d) = (-2,7),$ so $b = -2$ and $d = 7.$\n\nTaking $t = 1,$ we get $(x,y) = (a + b, c + d) = (3,11),$ so $a + b = 3$ and $c + d = 11.$  Hence, $a = 5$ and $c = 4.$\n\nThen $a^2 + b^2 + c^2 + d^2 = 5^2 + (-2)^2 + 4^2 + 7^2 = \\boxed{94}.$"
+}

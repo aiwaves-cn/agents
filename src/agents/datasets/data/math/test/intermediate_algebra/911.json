@@ -1,0 +1,6 @@
+{
+    "problem": "For $0 < k < 6,$ the graphs of $\\frac{(x - k)^2}{9} + y^2 = 1$ and $\\frac{x^2}{9} + y^2 = 1$ intersect at $A$ and $C,$ and have $x$-intercepts at $B$ and $D$ respectively.  Compute the value of $k$ for which $ABCD$ is a square.\n\n[asy]\nunitsize(1 cm);\n\npath ellone = xscale(3)*Circle((0,0),1);\npath elltwo = shift((24/5,0))*xscale(3)*Circle((0,0),1);\npair A, B, C, D;\n\nA = intersectionpoints(ellone,elltwo)[0];\nC = intersectionpoints(ellone,elltwo)[1];\nB = (-3 + 24/5,0);\nD = (3,0);\n\ndraw(ellone);\ndraw(elltwo);\n\ndraw((-3.5,0)--(9,0));\ndraw((0,-1.5)--(0,1.5));\ndraw(A--B--C--D--cycle);\n\nlabel(\"$A$\", A, N, fontsize(10));\nlabel(\"$B$\", B, NW, fontsize(10));\nlabel(\"$C$\", C, S, fontsize(10));\nlabel(\"$D$\", D, NE, fontsize(10));\n[/asy]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that $D = (3,0)$ and $B = (k - 3,0).$  Hence, the $x$-coordinates of $A$ and $C$ are $\\frac{k}{2}.$  The length of diagonal $BD$ is $6 - k,$ so the $y$-coordinate of $A$ is $\\frac{6 - k}{2}.$  Hence,\n\\[\\frac{(k/2)^2}{9} + \\left( \\frac{6 - k}{2} \\right)^2 = 1.\\]This simplifies to $5k^2 - 54k + 144 = 0,$ which factors as $(k - 6)(5k - 24) = 0.$  Hence, $k = \\boxed{\\frac{24}{5}}.$"
+}

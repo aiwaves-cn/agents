@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive real number $c,$ such that for all nonnegative real numbers $x$ and $y,$\n\\[\\sqrt{xy} + c |x - y| \\ge \\frac{x + y}{2}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x$ and $y$ are nonnegative, $x = a^2$ and $y = b^2$ for some nonnegative real numbers $a$ and $b.$  Then\n\\[ab + c |a^2 - b^2| \\ge \\frac{a^2 + b^2}{2}.\\]If $a = b,$ then both sides reduce to $a^2,$ and so the inequality holds.  Otherwise, without loss of generality, we can assume that $a < b.$  Then the inequality above becomes\n\\[ab + c(b^2 - a^2) \\ge \\frac{a^2 + b^2}{2}.\\]Then\n\\[c (b^2 - a^2) \\ge \\frac{a^2 + b^2}{2} - ab = \\frac{a^2 - 2ab + b^2}{2} = \\frac{(b - a)^2}{2},\\]so\n\\[c \\ge \\frac{(b - a)^2}{2(b^2 - a^2)} = \\frac{b - a}{2(b + a)}.\\]We want this inequality to hold for all nonnegative real numbers $a$ and $b$ where $a < b.$\n\nNote that\n\\[\\frac{b - a}{2(b + a)} < \\frac{b + a}{2(b + a)} = \\frac{1}{2}.\\]Furthermore, by letting $a$ approach 0, we can make $\\frac{b + a}{2(b - a)}$ arbitrarily close to $\\frac{1}{2}.$  Hence, the smallest such real number $c$ is $\\boxed{\\frac{1}{2}}.$"
+}

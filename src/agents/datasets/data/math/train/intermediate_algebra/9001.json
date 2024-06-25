@@ -1,0 +1,6 @@
+{
+    "problem": "The expansion of $(x+1)^n$ has 3 consecutive terms with coefficients in the ratio $1:2:3$ that can be written in the form\\[{n\\choose k} : {n\\choose k+1} : {n \\choose k+2}\\]Find the sum of all possible values of $n+k$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By definition, ${n\\choose k} = \\frac{n!}{k!(n-k)!}$. The ratio of the first two terms give us that\\begin{align*}\\frac{1}{2} &= \\frac{\\frac{n!}{k!(n-k)!}}{\\frac{n!}{(k+1)!(n-k-1)!}} = \\frac{k+1}{n-k}\\\\ 2&=n-3k\\end{align*}The ratio of the second and third terms give us that\\begin{align*}\\frac{2}{3} &= \\frac{\\frac{n!}{(k+1)!(n-k-1)!}}{\\frac{n!}{(k+2)!(n-k-2)!}} = \\frac{k+2}{n-k-1}\\\\ 8&=2n-5k\\end{align*}This is a linear system of two equations with two unknowns, indicating that there is a unique solution. Solving by substitution or multiplying the top equation and subtracting, we find $k = 4, n = 14$. Thus, $n+k=\\boxed{18}$."
+}

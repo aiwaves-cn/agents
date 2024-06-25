@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\omega$ be a complex number such that $\\omega^7 = 1$ and $\\omega \\ne 1.$  Compute\n\\[\\omega^{16} + \\omega^{18} + \\omega^{20} + \\dots + \\omega^{54}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "First, we can take out a factor of $\\omega^{16}$:\n\\[\\omega^{16} + \\omega^{18} + \\omega^{20} + \\dots + \\omega^{54} = \\omega^{16} (1 + \\omega^2 + \\omega^4 + \\dots + \\omega^{38}).\\]By the formula for a geometric series,\n\\[\\omega^{16} (1 + \\omega^2 + \\omega^4 + \\dots + \\omega^{38}) = \\omega^{16} \\cdot \\frac{1 - \\omega^{40}}{1 - \\omega^2}.\\](Note that this expression is valid, because $\\omega \\neq 1$ and $\\omega \\neq -1.$)\n\nSince $\\omega^7 = 1,$\n\\[\\omega^{16} \\cdot \\frac{1 - \\omega^{40}}{1 - \\omega^2} = \\omega^2 \\cdot \\frac{1 - \\omega^5}{1 - \\omega^2} = \\frac{\\omega^2 - \\omega^7}{1 - \\omega^2} = \\frac{\\omega^2 - 1}{1 - \\omega^2} = \\boxed{-1}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $7438+7439+7440+7441+7442+7443+7444+7445$ is divided by $8$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since $7438,7439,\\ldots,7445$ are $8$ consecutive integers, they include exactly one integer from each residue class $\\pmod 8$. Therefore, their sum is congruent $\\pmod 8$ to $0+1+2+3+4+5+6+7=28$. The remainder of this sum $\\pmod 8$ is $\\boxed{4}$."
+}

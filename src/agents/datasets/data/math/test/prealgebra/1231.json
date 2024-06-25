@@ -1,0 +1,6 @@
+{
+    "problem": "Forty-eight congruent parallelograms with sides of length 62 feet and 20 feet are placed in a chevron pattern forming hexagon $ABCDEF$, as shown. What is the perimeter of hexagon $\\allowbreak ABCDEF$?\n\n[asy]\nunitsize (0.1 cm);\n\ndraw((16,-20)--(-3,-20)--(0,0)--(-3,20)--(16,20));\ndraw((0,0)--(16,0));\ndraw((5,20)--(8,0)--(5,-20));\ndraw((13,20)--(16,0)--(13,-20));\ndot((18,0));\ndot((20,0));\ndot((22,0));\ndraw((24,0)--(50,0));\ndraw((23,20)--(47,20)--(50,0)--(47,-20)--(21,-20));\ndraw((23,20)--(26,0)--(23,-20));\ndraw((31,20)--(34,0)--(31,-20));\ndraw((39,20)--(42,0)--(39,-20));\ndraw((39,21)--(39,25));\ndraw((47,21)--(47,25));\ndraw((39,23)--(47,23));\nlabel(\"$A$\",(-3,20),NW);\nlabel(\"$B$\",(47,20),NE);\nlabel(\"$C$\",(50,0),E);\nlabel(\"$D$\",(47,-20),SE);\nlabel(\"$E$\",(-3,-20),SW);\nlabel(\"$F$\",(0,0),W);\nlabel(\"20'\",(43,23),N);\nlabel(\"62'\",(49,10),E);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "$AB$ consists of 24 segments each of length 20 feet, and so it measures $24\\cdot20=480$ feet. Similarly, $DE=480$ feet. Each of $BC$, $CD$, $EF$, and $FA$ measure 62 feet. In total, the perimeter is $480+480+62+62+62+62=\\boxed{1208}$ feet."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of a certain quadratic $y = ax^2 + bx + c$ is a parabola with vertex $(-4,0)$ which passes through the point $(1,-75)$.  What is the value of $a$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the vertex of the parabola is $(-4,0)$, the quadratic must be of the form $y = a(x + 4)^2$.  The parabola passes through the point $(1,-75)$, which gives us the equation $-75 = 25a$.  Hence, $a = -75/25 = \\boxed{-3}$."
+}

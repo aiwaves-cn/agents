@@ -1,0 +1,6 @@
+{
+    "problem": "A polynomial with integer coefficients is of the form\n\\[x^3 + a_2 x^2 + a_1 x - 11 = 0.\\]Enter all the possible integer roots of this polynomial, separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By the Integer Root Theorem, the possible integer roots are all the divisors of 11 (including negative divisors), so they are $\\boxed{-11, -1, 1, 11}.$"
+}

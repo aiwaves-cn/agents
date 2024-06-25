@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct arrangements of the letters in the word \"basic'' are there?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Let's consider building such an arrangement.  We can choose the first letter in 5 ways.  After we have chosen the first letter, we can choose the second in 4 ways.  Similarly, the third letter then has 3 ways of being chosen, the second letter 2, and the last letter only 1.  Thus the total number of arrangements is $5\\cdot 4\\cdot 3\\cdot 2\\cdot 1 = \\boxed{120}$."
+}

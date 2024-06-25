@@ -1,0 +1,6 @@
+{
+    "problem": "What is the probability that at least two of the faces match when you roll three fair six-sided dice? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Instead of directly finding the probability that at least two faces match, we can find the probability that no faces match and then subtract the result from 1. The results on the three dice are independent of each other, so we compute the probability for each die and then multiply the probabilities. The first die does not have to be a particular number. There are 6 possible numbers, but any number will work, so the probability is $\\frac{6}{6}=1$. In order for the second die to have a different number from the first, there are 5 other numbers out of the 6 possible outcomes, so the probability is $\\frac{5}{6}$. For the third die to have a different number from the first and second, there are 4 other numbers out of 6 possible outcomes, so the probability is $\\frac{4}{6}=\\frac{2}{3}$. The probability that no faces match is $1\\times\\frac{5}{6}\\times\\frac{2}{3}=\\frac{5}{9}$. That means the probability that at least two faces match is $1-\\frac{5}{9}=\\boxed{\\frac{4}{9}}$."
+}

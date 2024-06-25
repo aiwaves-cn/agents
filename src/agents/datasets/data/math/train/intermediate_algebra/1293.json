@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be nonnegative real numbers such that $x + y + z = 1.$  Find the maximum value of $x + y^2 + z^3.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x,$ $y,$ and $z$ are nonnegative real numbers such that $x + y + z = 1,$ $0 \\le x,$ $y,$ $z \\le 1.$  Then $y^2 \\le y$ and $z^3 \\le z,$ so\n\\[x + y^2 + z^3 \\le x + y + z = 1.\\]Equality occurs when $x = 1,$ $y = 0,$ and $z = 0,$ so the maximum value is $\\boxed{1}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Points $P$ and $R$ are located at (1, 3) and (7, 15) respectively. Point $M$ is the midpoint of segment $PR$. Segment $PR$ is reflected over the $x$-axis. What is the sum of the coordinates of the image of point $M$ (the midpoint of the reflected segment)?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Point $M$ has coordinates $(4,9)$. Therefore, its image has coordinates $(4,-9)$. Thus the sum is $\\boxed{-5}$.\n\nAlternatively, the image of point $M$ is the midpoint of the images of points $P$ and $R$ and thus is the midpoint of $(1,-3)$ and $(7,-15)$, which is also $(4,-9)$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $n$ be a positive integer and let $k$ be the number of positive integers less than $2^n$ that are invertible modulo $2^n$. If $2^n\\equiv 3\\pmod{13}$, then what is the remainder when $k$ is divided by $13$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since $2^n$ is a power of $2$, its only prime factor is $2$. So every odd integer is invertible modulo $2^n$ and every even integer is non-invertible modulo $2^n$. Among the positive integers less than $2^n$, there are precisely $\\frac{2^n}{2}=2^{n-1}$ odd integers. Thus, \\[k=2^{n-1}\\equiv 2^{-1}2^n\\equiv 7\\cdot 3\\equiv 21\\equiv \\boxed{8}\\pmod {13}\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A set of marbles can be divided in equal shares among $2$, $3$, $4$, $5$, or $6$ children with no marbles left over. What is the least number of marbles that the set could have?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The least number of marbles that the set could have is the least common multiple of $2$, $3$, $4$, $5$, and $6$. Prime factorizing these five numbers, we find that \\begin{align*}\n2 &= 2 \\\\\n3 &= 3 \\\\\n4 &= 2^2 \\\\\n5 &= 5 \\\\\n6 &= 2 \\cdot 3.\n\\end{align*}For a number to be divisible by each of these numbers, its prime factorization must include 2 to the second power, 3, and 5. So the least common multiple is $2^2 \\cdot 3 \\cdot 5 = \\boxed{60}$."
+}

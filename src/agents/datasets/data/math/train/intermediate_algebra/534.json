@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $x^{44} + x^{33} + x^{22} + x^{11} + 1$ is divided by $x^4 + x^3 + x^2 + x + 1.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $\\alpha$ be a root of $x^4 + x^3 + x^2 + x + 1 = 0,$ so\n\\[\\alpha^4 + \\alpha^3 + \\alpha^2 + \\alpha + 1 = 0.\\]Then $(\\alpha - 1)(\\alpha^4 + \\alpha^3 + \\alpha^2 + \\alpha + 1) = 0,$ which simplifies to $\\alpha^5 = 1.$  Then\n\\begin{align*}\n\\alpha^{44} + \\alpha^{33} + \\alpha^{22} + \\alpha^{11} + 1 &= (\\alpha^5)^8 \\cdot \\alpha^4 + (\\alpha^5)^6 \\cdot \\alpha^3 + (\\alpha^5)^4 \\cdot \\alpha^2 + (\\alpha^5)^2 \\cdot \\alpha + 1 \\\\\n&= \\alpha^4 + \\alpha^3 + \\alpha^2 + \\alpha + 1 \\\\\n&= 0.\n\\end{align*}Since the first polynomial is 0 for every root $\\alpha$ of the second polynomial, the first polynomial is divisible by the second polynomial, which means the remainder is $\\boxed{0}.$"
+}

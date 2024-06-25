@@ -1,0 +1,6 @@
+{
+    "problem": "How many non-empty subsets of $\\{ 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 \\}$ consist entirely of prime numbers?  (We form a subset of the group of numbers by choosing some number of them, without regard to order.  So, $\\{1,2,3\\}$ is the same as $\\{3,1,2\\}$.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We consider the subset $\\{ 2, 3, 5, 7, 11 \\}$ which consists only of the prime integers in the original set. Any subset consisting entirely of prime numbers must be a subset of this particular subset. And, there are $2^5 - 1 = \\boxed{31}$ non-empty subsets of this 5-element set, which we can easily see by making the choice of including or not including each element."
+}

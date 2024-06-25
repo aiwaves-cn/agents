@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$, $y$, and $z$ are positive with $xy=20\\sqrt[3]{2}$, $xz = 35\\sqrt[3]{2}$, and $yz=14\\sqrt[3]{2}$, then what is $xyz$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Taking the product of the equations gives  \\begin{align*}\nxy\\cdot xz\\cdot yz &= 20\\sqrt[3]{2} \\cdot 35\\sqrt[3]{2} \\cdot 14\\sqrt[3]{2}\\\\\n(xyz)^2 &= 2^4\\cdot5^2\\cdot7^2\\\\\nxyz &= 2^2\\cdot5\\cdot7 = \\pm 140\n\\end{align*} Since we were given that $x$, $y$, and $z$ are positive, we can conclude that $xyz = \\boxed{140}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z = 1+i$ and $w = \\dfrac{3z+1}{5z+7}$. Find $|w|$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Plugging in, we have $w = \\dfrac{3(1+i)+1}{5(1+i)+7} = \\dfrac{4+3i}{12+5i}$. We could write this in the form $a+bi$ and take the magnitude, but it's easier to use the fact that, for all complex numbers $a$ and $b$, $\\left|\\dfrac{a}{b}\\right| = \\dfrac{|a|}{|b|}$. The magnitude of the numerator is $\\sqrt{3^2+4^2} = \\sqrt{25} = 5$, and the magnitude of the denominator is $\\sqrt{12^2 + 5^2} = \\sqrt{169} = 13$. So $|w| = \\boxed{\\frac{5}{13}}$."
+}

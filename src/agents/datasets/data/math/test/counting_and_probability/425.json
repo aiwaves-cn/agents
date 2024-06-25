@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\frac{7!+8!}{6!+7!}$. Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We notice that 6! is a common factor of the numerator and denominator and then simplify: \\begin{align*}\n\\frac{7!+8!}{6!+7!} &= \\frac{7\\cdot6!+8\\cdot7\\cdot6!}{6!+7\\cdot6!} \\\\\n&=\\frac{6!(7+8\\cdot7)}{6!(1+7)} \\\\\n&=\\frac{7+56}{1+7}\\\\\n&=\\boxed{\\frac{63}{8}}\\\\\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all numbers $a$ for which the graph of $y=x^2+a$ and the graph of $y=ax$ intersect one time?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If these two graphs intersect then the point of intersection occur when  \\[x^2+a=ax,\\] or  \\[x^2-ax+a=0.\\] This quadratic has one solution exactly when the discriminant is equal to zero: \\[(-a)^2-4\\cdot1\\cdot a=0.\\] This simplifies to  \\[a(a-4)=0.\\]\n\nThere are exactly two values of $a$ for which the line and parabola intersect one time, namely $a=0$ and $a=4$.  The sum of these values is  \\[0+4=\\boxed{4}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathcal{P}$ be the parabola in the plane determined by the equation $y = x^2.$  Suppose a circle $\\mathcal{C}$ intersects $\\mathcal{P}$ at four distinct points.  If three of these points are $(-28,784),$ $(-2,4),$ and $(13,169),$ find the sum of the distances from the focus of $\\mathcal{P}$ to all four of the intersection points.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let the four intersection points be $(a,a^2),$ $(b,b^2),$ $(c,c^2),$ and $(d,d^2).$  Let the equation of the circle be\n\\[(x - k)^2 + (y - h)^2 = r^2.\\]Substituting $y = x^2,$ we get\n\\[(x - k)^2 + (x^2 - h)^2 = r^2.\\]Expanding this equation, we get a fourth degree polynomial whose roots are $a,$ $b,$ $c,$ and $d.$  Furthermore, the coefficient of $x^3$ is 0, so by Vieta's formulas, $a + b + c + d = 0.$\n\nWe are given that three intersection points are $(-28,784),$ $(-2,4),$ and $(13,196),$ so the fourth root is $-((-28) + (-2) + 13) = 17.$\n\nThe distance from the focus to a point on the parabola is equal to the distance from the point to the directrix, which is $y = -\\frac{1}{4}.$  Thus, the sum of the distances is\n\\[784 + \\frac{1}{4} + 4 + \\frac{1}{4} + 169 + \\frac{1}{4} + 17^2 + \\frac{1}{4} = \\boxed{1247}.\\]"
+}

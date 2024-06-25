@@ -1,0 +1,6 @@
+{
+    "problem": "The expression\n\\[\\sin^3 2x \\cos 6x + \\cos^3 2x \\sin 6x\\]can be written in the equivalent form $a \\sin bx$ for some positive constants $a$ and $b.$  Find $a + b.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Applying the triple angle formula, we get\n\\begin{align*}\n\\sin^3 2x \\cos 6x + \\cos^3 2x \\sin 6x &= \\left( \\frac{3}{4} \\sin 2x - \\frac{1}{4} \\sin 6x \\right) \\cos 6x + \\left( \\frac{3}{4} \\cos 2x + \\frac{1}{4} \\cos 6x \\right) \\sin 6x \\\\\n&= \\frac{3}{4} \\sin 2x \\cos 6x + \\frac{3}{4} \\cos 2x \\sin 6x.\n\\end{align*}Then by the angle addition formula,\n\\[\\frac{3}{4} \\sin 2x \\cos 6x + \\frac{3}{4} \\cos 2x \\sin 6x = \\frac{3}{4} \\sin (2x + 6x) = \\frac{3}{4} \\sin 8x.\\]Thus, $a + b = \\frac{3}{4} + 8 = \\boxed{\\frac{35}{4}}.$"
+}

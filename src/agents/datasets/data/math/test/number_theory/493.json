@@ -1,0 +1,6 @@
+{
+    "problem": "How many base-10 integers are exactly 4 digits in their base-3 representation and exactly 2 digits in their base-6 representation?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Base-10 integers that are exactly 4 digits in base 3 range from $1000_3=3^3=27$ to less than $10000_3=3^4=81$. Base-10 integers that are exactly 2 digits in base 6 range from $10_6=6^1=6$ to less than $100_6=6^2=36$. So, for a number $n$ to satisfy the conditions, it must be that $27\\le n <36$. $n$ could be a number from 27 to 35, inclusive, which means there are $\\boxed{9}$ integers that meet the conditions of the problem."
+}

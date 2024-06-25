@@ -1,0 +1,6 @@
+{
+    "problem": "Find the units digit of $n$ given that $mn = 21^6$ and $m$ has a units digit of 7.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The units digit of $mn$ is $1^6 = 1$.  Searching for a units digit for $n$ (which is clearly odd), we find that $7 \\cdot 3 = 1$, so $\\boxed{3}$ is the units digit of $n$."
+}

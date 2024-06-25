@@ -1,0 +1,6 @@
+{
+    "problem": "Henry's little brother has $8$ identical stickers and $4$ identical sheets of paper. How many ways are there for him to put all of the stickers on the sheets of paper, if only the number of stickers on each sheet matters?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Since only the number of stickers on the sheets matters, we can list the possibilities systematically:  \\begin{align*}\n& 8-0-0-0 \\\\\n& 7-1-0-0 \\\\\n& 6-2-0-0 \\\\\n& 6-1-1-0 \\\\\n& 5-3-0-0 \\\\\n& 5-2-1-0 \\\\\n& 5-1-1-1 \\\\\n& 4-4-0-0 \\\\\n& 4-3-1-0 \\\\\n& 4-2-2-0 \\\\\n& 4-2-1-1 \\\\\n& 3-3-2-0 \\\\\n& 3-3-1-1 \\\\\n& 3-2-2-1 \\\\\n& 2-2-2-2\n\\end{align*} There are $\\boxed{15}$ possible arrangements of stickers on sheets of paper."
+}

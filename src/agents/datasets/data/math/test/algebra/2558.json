@@ -1,0 +1,6 @@
+{
+    "problem": "Each of the symbols $\\star$ and $*$ represents an operation in the set $\\{+,-,\\times,\\div\\}$, and $\\frac{12\\star 2}{9*3}=4$.  What is the value of $\\frac{10\\star 7}{24*9}$?  Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "In the equation $\\frac{12\\star2}{9*3}=4$, the numerator of the fraction in the left hand side must be quadruple the denominator. By trial and error, the only way this works is if the $\\star$ operation is multiplication and the $*$ operation is subtraction, in which case the equation becomes $\\frac{12\\cdot2}{9-3}=\\frac{24}{6}=4$. Thus, the value of the given expression is $\\frac{10\\cdot7}{24-9}=\\frac{70}{15}=\\boxed{\\frac{14}{3}}$."
+}

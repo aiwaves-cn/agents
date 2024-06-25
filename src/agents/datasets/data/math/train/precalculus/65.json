@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = 4,$ then find\n\\[\\begin{vmatrix} a & 7a + 3b \\\\ c & 7c  +3d \\end{vmatrix}.\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Since $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = 4,$ $ad - bc = 4.$  Then\n\\[\\begin{vmatrix} a & 7a + 3b \\\\ c & 7c  +3d \\end{vmatrix} = a(7c + 3d) - (7a + 3b)c = 3ad - 3bc = 3(ad - bc) = \\boxed{12}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let set $\\mathcal{A}$ be a 90-element subset of $\\{1,2,3,\\ldots,100\\},$ and let $S$ be the sum of the elements of $\\mathcal{A}.$ Find the number of possible values of $S.$\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The smallest $S$ is $1+2+ \\ldots +90 = 91 \\cdot 45 = 4095$. The largest $S$ is $11+12+ \\ldots +100=111\\cdot 45=4995$. All numbers between $4095$ and $4995$ are possible values of S, so the number of possible values of S is $4995-4095+1=901$.\nAlternatively, for ease of calculation, let set $\\mathcal{B}$ be a 10-element subset of $\\{1,2,3,\\ldots,100\\}$, and let $T$ be the sum of the elements of $\\mathcal{B}$. Note that the number of possible $S$ is the number of possible $T=5050-S$. The smallest possible $T$ is $1+2+ \\ldots +10 = 55$ and the largest is $91+92+ \\ldots + 100 = 955$, so the number of possible values of T, and therefore S, is $955-55+1=\\boxed{901}$."
+}

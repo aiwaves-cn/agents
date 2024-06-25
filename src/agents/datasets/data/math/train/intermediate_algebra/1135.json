@@ -1,0 +1,6 @@
+{
+    "problem": "Each of the numbers $a_1,$ $a_2,$ $\\dots,$ $a_{95}$ is $\\pm 1.$  Find the smallest possible positive value of\n\\[\\sum_{1 \\le i < j \\le 95} a_i a_j.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $m$ and $n$ denote the number of 1's and $-1$'s among the $a_i,$ respectively.  Then $m + n = 95$ and\n\\[a_1^2 + a_2^2 + \\dots + a_{95}^2 = 95.\\]Let\n\\[S = \\sum_{1 \\le i < j \\le 95} a_i a_j.\\]Then\n\\[2S + 95 = (a_1 + a_2 + \\dots + a_{95})^2 = (m - n)^2.\\]Note that $m - n = m + n - 2n = 95 - 2n$ is odd, so $(m - n)^2$ is an odd perfect square.  To minimize $S,$ while still keeping it positive, we take $(m - n)^2$ as the smallest odd perfect square greater than 95, which is 121.  Then $S = \\frac{121 - 95}{2} = 13.$\n\nEquality occurs when $m = 53$ and $n = 42,$ so the smallest possible positive value of $S$ is $\\boxed{13}.$"
+}

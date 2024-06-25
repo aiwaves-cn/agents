@@ -1,0 +1,6 @@
+{
+    "problem": "A positive five-digit integer is in the form $AB,CBA$; where $A$, $B$ and $C$ are each distinct digits. What is the greatest possible value of $AB,CBA$ that is divisible by eleven?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We can test an integer for divisibility by $11$ by alternately adding and subtracting its digits.  For example, $8162$ is divisible by 11 because $8-1+6-2=11$ is divisible by 11.  In this case, $2A-2B+C$ must be divisible by 11.  If there are satisfactory values of $B$ and $C$ corresponding to $A=9$, then the resulting integer would be larger than any integer with $A<9$.  Therefore, we try $A=9$ first.  If $A=9$, then $C-2B+18$ must be divisible by $11$.  Equivalently, $C-2B$ equals $-7$ or $4$, which implies $C=2B-7$ or $C=2B+4$.  Wanting to make $B$ as large as possible, we try $B=9,8,7,\\ldots$. $B$ cannot be $9$ because $A$, $B$, and $C$ must be distinct.  If $B=8$, then $C=9$, so again the digits are not distinct.  If $B=7$, then $C=7$ and still the digits are not distinct.  If $B=6$, then $C=5$, and $AB,\\!CBA=\\boxed{96,\\!569}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For a polynomial $p(x),$ define its munificence as the maximum value of $|p(x)|$ on the interval $-1 \\le x \\le 1.$  For example, the munificence of the polynomial $p(x) = -x^2 + 3x - 17$ is 21, since the maximum value of $|-x^2 + 3x - 17|$ for $-1 \\le x \\le 1$ is 21, occurring at $x = -1.$\n\nFind the smallest possible munificence of a monic quadratic polynomial.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $f(x) = x^2 + bx + c,$ and let $M$ be the munificence of $f(x).$  Then $|f(-1)| \\le M,$ $|f(0)| \\le M$ and $|f(1)| \\le M.$  These lead to\n\\begin{align*}\n|1 - b + c| &\\le M, \\\\\n|c| &\\le M, \\\\\n|1 + b + c| & \\le M.\n\\end{align*}Then by Triangle Inequality,\n\\begin{align*}\n4M &= |1 - b + c| + 2|c| + |1 + b + c| \\\\\n&= |1 - b + c| + 2|-c| + |1 + b + c| \\\\\n&\\ge |(1 - b + c) + 2(-c) + (1 + b + c)| \\\\\n&= 2.\n\\end{align*}Hence, $M \\ge \\frac{1}{2}.$\n\nConsider the quadratic $f(x) = x^2 - \\frac{1}{2}.$  Then\n\\[-\\frac{1}{2} \\le x^2 - \\frac{1}{2} \\le \\frac{1}{2}\\]for $-1 \\le x \\le 1,$ and $|f(-1)| = |f(0)| = |f(1)| = \\frac{1}{2},$ so munificence of $f(x)$ is $\\frac{1}{2}.$\n\nTherefore, the smallest possible munificence of a monic quadratic polynomial is $\\boxed{\\frac{1}{2}}.$"
+}

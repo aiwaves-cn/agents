@@ -1,0 +1,6 @@
+{
+    "problem": "How many of the natural numbers from $1$ to $800,$ inclusive, contain the digit $6$ at least twice? (The numbers $266$ and $663$ are two natural numbers that contain the digit $6$ at least twice, but $430$ or $16$ are not.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $10$ numbers with a $6$ in the hundreds place and a $6$ in the units place.\n\nThere are $10$ numbers with a $6$ in the hundreds place and a $6$ in the tens place.\n\nThere are $8$ numbers with a $6$ in the tens place and a $6$ in the units place. (Remember, we only have the numbers from $1$ to $800.$)\n\nAdding them up, we have $10+10+8 = 28.$ However, we counted $666$ three times. Therefore subtract $2$ from $28$ to get $\\boxed{26}$ numbers containing the digit $6$ at least twice."
+}

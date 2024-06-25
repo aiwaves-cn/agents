@@ -1,0 +1,6 @@
+{
+    "problem": "The diagram shows 28 lattice points, each one unit from its nearest neighbors. Segment $AB$ meets segment $CD$ at $E$. Find the length of segment $AE$.\n\n[asy]\nunitsize(0.8cm);\nfor (int i=0; i<7; ++i) {\nfor (int j=0; j<4; ++j) {\ndot((i,j));\n};}\nlabel(\"$A$\",(0,3),W);\nlabel(\"$B$\",(6,0),E);\nlabel(\"$D$\",(2,0),S);\nlabel(\"$E$\",(3.4,1.3),S);\ndot((3.4,1.3));\nlabel(\"$C$\",(4,2),N);\ndraw((0,3)--(6,0),linewidth(0.7));\ndraw((2,0)--(4,2),linewidth(0.7));\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Extend $\\overline{DC}$ to $F$. Triangle $FAE$ and $DBE$ are similar with ratio $5:4$. Thus $AE=\\frac{5AB}{9}$, $AB=\\sqrt{3^2+6^2}=\\sqrt{45}=3\\sqrt{5}$, and $AE=\\frac{5(3\\sqrt{5})}{9}=\\boxed{\\frac{5\\sqrt{5}}{3}}$. [asy]\nunitsize(0.8cm);\nfor (int i=0; i<7; ++i) {\nfor (int j=0; j<4; ++j) {\ndot((i,j));\n};}\nlabel(\"$F$\",(5,3),N);\nlabel(\"$C$\",(4,2),N);\ndraw((2,0)--(5,3)--(0,3)--(6,0)--cycle,linewidth(0.7));\nlabel(\"$A$\",(0,3),W);\nlabel(\"$B$\",(6,0),E);\nlabel(\"$D$\",(2,0),S);\nlabel(\"$E$\",(3.4,1.3),N);\ndot((3.4,1.3));\nlabel(\"$C$\",(4,2),N);\n\n[/asy]"
+}

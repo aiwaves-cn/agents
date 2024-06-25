@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $x$ and $y$ are positive real numbers such that $x^2-xy+2y^2=8$.  Then the maximum possible value of $x^2+xy+2y^2$ can be expressed in simplest form as $\\frac{a + b \\sqrt{c}}{d},$ where $a,$ $b,$ $c,$ $d$ are positive integers.  Find $a + b + c + d.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $u = x^2 + 2y^2.$  By AM-GM,\n\\[u = x^2 + 2y^2 \\ge 2 \\sqrt{x^2 \\cdot 2y^2} = 2xy \\sqrt{2},\\]so $xy \\le \\frac{u}{2 \\sqrt{2}}.$\n\nLet $xy = ku,$ so $k \\le \\frac{1}{2 \\sqrt{2}}.$  Then from the equation $x^2 - xy + 2y^2,$\n\\[u(1 - k) = 8,\\]and\n\\[x^2 + xy + 2y^2 = u(1 + k) = 8 \\cdot \\frac{1 + k}{1 - k}.\\]This is an increasing function of $k$ for $k < 1,$ so it is maximized at $k = \\frac{1}{2 \\sqrt{2}}.$  Hence, the maximum value of $x^2 + xy + 2y^2$ is\n\\[8 \\cdot \\frac{1 + \\frac{1}{2 \\sqrt{2}}}{1 - \\frac{1}{2 \\sqrt{2}}} = \\frac{72 + 32 \\sqrt{2}}{7}.\\]The final answer is $72 + 32 + 2 + 7 = \\boxed{113}.$"
+}

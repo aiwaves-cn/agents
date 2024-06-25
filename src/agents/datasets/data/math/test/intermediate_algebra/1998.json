@@ -1,0 +1,6 @@
+{
+    "problem": "If $a^2 + b^2 = 3$ and $c^2 + d^2 = 4$, find the value of\n\n$$(ac+bd)^2 + (bc - ad)^2.$$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We expand $(ac + bd)^2 + (bc - ad)^2$ :\n\n\\begin{align*}\n(ac + bd)^2 + (bc - ad)^2 &=(ac)^2 + 2(ac)(bd) + (bd)^2 + (bc)^2 - 2(bc)(ad) + (ad)^2 \\\\\n&=a^2c^2 + 2abcd + b^2d^2 + b^2c^2 - 2abcd + a^2d^2 \\\\\n&=a^2c^2 + b^2d^2 + b^2c^2 + a^2d^2 \\\\\n&=a^2c^2 + b^2c^2 + b^2d^2 + a^2d^2.\n\\end{align*}Now we can factor out $c^2$ from the first two terms and $d^2$ from the last two terms and we get:\n\n$$a^2c^2 + b^2c^2 + b^2d^2 + a^2d^2 = c^2(a^2+b^2) + d^2(b^2 + a^2).$$Now we use distributive property and we have $$c^2(a^2+b^2) + d^2(b^2 + a^2) = (c^2+d^2)(a^2+b^2) = 4\\cdot 3 = \\boxed{12}.$$"
+}

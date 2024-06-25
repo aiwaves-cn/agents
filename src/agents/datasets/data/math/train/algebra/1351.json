@@ -1,0 +1,6 @@
+{
+    "problem": "There are three real numbers $x$ that are not in the domain of $$f(x) = \\frac{1}{1+\\frac{1}{1+\\frac 1x}}.$$ What is the sum of those three numbers?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "There are three denominators in the formula for $f(x)$: $$x, \\quad 1+\\frac 1x, \\quad 1+\\frac{1}{1+\\frac 1x}.$$ For $f(x)$ to be undefined, one of these denominators must be $0$. We go through them one by one.\n\nThe simplest denominator, $x$, is $0$ if $x=0$.\n\nThe second denominator, $1+\\frac 1x$, is $0$ if $x=-1$.\n\nThe third denominator, $1+\\frac{1}{1+\\frac 1x}$, is $0$ if $$\\frac{1}{1+\\frac 1x} = -1.$$ We can solve like this: \\begin{align*}\n-1 &= 1+\\frac 1x \\\\\n-2 &= \\frac 1x \\\\\nx &= -\\frac 12\n\\end{align*}\n\nThus, the sum of the three points not in the domain of $f(x)$ is $0+(-1)+\\left(-\\frac 12\\right) = \\boxed{-\\frac 32}$."
+}

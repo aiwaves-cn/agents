@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x+\\sin y=2008$ and $x+2008 \\cos y=2007$, where $0 \\leq y \\leq \\frac{\\pi}{2}$, find the value of $x+y$.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Subtracting the two equations gives $\\sin y - 2008 \\cos y = 1$. But since $0 \\leq y \\leq \\frac{\\pi}{2}$, the maximum of $\\sin y$ is 1 and the minimum of $\\cos y$ is 0, so we must have $\\sin y = 1$, so $y = \\frac{\\pi}{2}$ and $x = 2007,$ so $x+y = \\boxed{2007 + \\frac\\pi 2}$."
+}

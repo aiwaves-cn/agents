@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the sum of all integers $b$ for which the polynomial $x^2+bx+2008b$ can be factored over the integers. Compute $|S|$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let the roots of the quadratic be $r$ and $s$. By Vieta's Formulas, $r+s = -b$ and $rs$ = $2008b$.\nWe know that one of the possible values of $b$ is 0 because $x^2$ has integer roots. However, adding or removing 0 does not affect the value of $S$, so we can divide both sides by $-b$. Doing so results in\\begin{align*} \\frac{rs}{r+s} &= -2008 \\\\ rs &= -2008r - 2008s \\\\ rs + 2008r + 2008s &= 0 \\\\ (r+2008)(s+2008) &= 2008^2. \\end{align*}WLOG, let $|a| \\le 2008$ be a factor of $2008^2$, so $r+2008 = a$ and $s+2008 = \\tfrac{2008^2}{a}$. Thus,\\[-r-s = b = -a - \\tfrac{2008^2}{a} + 4016.\\]Since $a$ can be positive or negative, the positive values cancel with the negative values. The prime factorization of $2008^2$ is $2^6 \\cdot 251^2$, so there are $\\frac{21+2}{2} = 11$ positive factors that are less than $2008$. Thus, there are a total of $22$ values of $a$, so the absolute value of the sum of all values of $b$ equals $4016 \\cdot 22 = \\boxed{88352}$."
+}

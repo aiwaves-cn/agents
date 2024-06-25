@@ -1,0 +1,6 @@
+{
+    "problem": "Find the equation of the plane passing through the point $(0,7,-7)$ and containing the line\n\\[\\frac{x + 1}{-3} = \\frac{y - 3}{2} = \\frac{z + 2}{1}.\\]Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the equation, $\\frac{x + 1}{-3} = \\frac{y - 3}{2},$\n\\[2x + 3y - 7 = 0.\\]From the equation $\\frac{y - 3}{2} = \\frac{z + 2}{1},$\n\\[y - 2z - 7 = 0.\\]So, any point on the line given in the problem will satisfy $2x + 3y - 7 = 0$ and $y - 2z - 7 = 0,$ which means it will also satisfy any equation of the form\n\\[a(2x + 3y - 7) + b(y - 2z - 7) = 0,\\]where $a$ and $b$ are constants.\n\nWe also want the plane to contain $(0,7,-7).$  Plugging in these values, we get\n\\[14a + 14b = 0.\\]Thus, we can take $a = 1$ and $b = -1.$  This gives us\n\\[(2x + 3y - 7) - (y - 2z - 7) = 0,\\]which simplifies to $2x + 2y + 2z = 0.$  Thus, the equation of the plane is $\\boxed{x + y + z = 0}.$"
+}

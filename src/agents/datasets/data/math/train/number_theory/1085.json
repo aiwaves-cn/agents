@@ -1,0 +1,6 @@
+{
+    "problem": "A number $n$ has $3$ divisors. How many divisors does $n^2$ have?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If $n$ has $3$ divisors, since it is divisible by both $1$ and $n$, the only possibility for a third unique divisor is $\\sqrt{n}$, which must be prime. Therefore, $n$ is the square of a prime number. As a result, $n^2$ is the fourth power of a prime. Let $n^2 = p^4$ for the prime $p$. There are $\\boxed{5}$ divisors of $p^4$, namely $p^0$, $p^1$, $p^2$, $p^3$, and $p^4$."
+}

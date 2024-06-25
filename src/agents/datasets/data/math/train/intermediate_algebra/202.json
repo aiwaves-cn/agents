@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $x^4-7x^3+9x^2+16x-13$ is divided by $x-3$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Using the Remainder Theorem, the remainder when $f(x) = x^4-7x^3+9x^2+16x-13$ is divided by $x - 3$ is\n$$\\begin{aligned} f(3)&=3^4-7\\cdot3^3+9\\cdot3^2+16\\cdot3-13 \\\\&= 3^3(3-7+3) + 35\\\\ &= \\boxed{8}. \\end{aligned}$$"
+}

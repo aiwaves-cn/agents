@@ -1,0 +1,6 @@
+{
+    "problem": "A pyramid with volume 40 cubic inches has a rectangular base. If the length of the base is doubled, the width tripled and the height increased by $50\\%$, what is the volume of the new pyramid, in cubic inches?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since the volume of a pyramid is linear in each of length, width, and height (in particular, $V = \\frac{1}{3} lwh$), multiplying any of these dimensions by a scalar multiplies the volume by the same scalar.  So the new volume is $2\\cdot 3\\cdot 1.50 = 9$ times the old one, or $\\boxed{360}$ cubic inches."
+}

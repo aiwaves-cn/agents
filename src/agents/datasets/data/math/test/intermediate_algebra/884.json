@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate the product \\[(\\sqrt 5+\\sqrt6+\\sqrt7)(-\\sqrt 5+\\sqrt6+\\sqrt7)(\\sqrt 5-\\sqrt6+\\sqrt7)(\\sqrt 5+\\sqrt6-\\sqrt7).\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Using the difference-of-squares factorization repeatedly, we have \\[\\begin{aligned} &(\\sqrt 5+\\sqrt6+\\sqrt7)(-\\sqrt 5+\\sqrt6+\\sqrt7)(\\sqrt 5-\\sqrt6+\\sqrt7)(\\sqrt 5+\\sqrt6-\\sqrt7) \\\\ &= \\left((\\sqrt6+\\sqrt7)^2 - (\\sqrt5)^2\\right)\\left((\\sqrt5)^2-(\\sqrt6-\\sqrt7)^2\\right) \\\\ &= \\left((13+2\\sqrt{42})-5\\right)\\left(5-(13-2\\sqrt{42})\\right) \\\\ &= \\left(2\\sqrt{42}-8\\right)\\left(2\\sqrt{42}+8\\right) \\\\ &= (2\\sqrt{42})^2 - 8^2 \\\\ &= 168- 64 \\\\&= \\boxed{104}. \\end{aligned}\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A total of 180 marbles (gray, white, and black) are placed in a line. The first five are gray, followed by four white, followed by three black, followed by five gray, followed by four white, followed by three black,.... If this pattern continues, what is the color of the 158th marble in this line?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We notice that the marbles appear in strings of 5 gray, 4 white, 3 black.  These strings have 12 marbles each.  Since  \\[158=13\\cdot12+2,\\]there are 13 full strings of marbles and 2 extras.  Since the first 5 marbles in any group are gray, the two extra marbles must be $\\boxed{\\text{gray}}$."
+}

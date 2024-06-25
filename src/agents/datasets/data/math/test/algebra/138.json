@@ -1,0 +1,6 @@
+{
+    "problem": "Find the distance between the vertex of the graph of the equation $y=x^2 + 2x - 6 $ and the point $(4, 5)$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Completing the square, we get $y=(x + 1)^2 - 7 $. The vertex of the graph of this equation is thus $(-1, -7)$.The distance between $(4, 5)$ and $(-1, -7)$ is $\\sqrt{(4-(-1))^2 + (5-(-7))^2} = \\sqrt{25+144} =\\boxed{13}$."
+}

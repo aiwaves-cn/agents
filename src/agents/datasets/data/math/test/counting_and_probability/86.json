@@ -1,0 +1,6 @@
+{
+    "problem": "I have 18 distinguishable socks in my drawer: 8 white, 6 brown, and 4 blue.  In how many ways can I choose a pair of socks, provided that I get two socks of the same color?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The socks must be either both white, both brown, or both blue.  If the socks are white, there are $\\binom{8}{2} = 28$ choices.  If the socks are brown, there are $\\binom{6}{2} = 15$ choices.  If the socks are blue, there is $\\binom{4}{2} = 6$ choices.  So the total number of choices for socks is $28 + 15 + 6 = \\boxed{49}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In Pascal's Triangle, the third row has four elements, and the sum of these elements is 8. What is the sum of the elements in the tenth row? (Note that we are counting the top row with a single 1 as the 0th row).",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "If Pascal's Triangle begins with row zero, then row $n$ has $n+1$ elements and the sum of the elements in row $n$ is $2^n$. So when $n=3$, the row has four elements and the sum of the elements is $2^3=8$. For $n=10$, the sum of the elements is $2^{10}=\\boxed{1024}$."
+}

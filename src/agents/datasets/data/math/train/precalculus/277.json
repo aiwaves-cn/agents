@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\theta$ be an acute angle, and let\n\\[\\sin \\frac{\\theta}{2} = \\sqrt{\\frac{x - 1}{2x}}.\\]Express $\\tan \\theta$ in terms of $x.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "By the double-angle formula,\n\\[\\cos \\theta = 1 - 2 \\sin^2 \\frac{\\theta}{2} = 1 - 2 \\cdot \\frac{x - 1}{2x} = \\frac{1}{x}.\\]Since $\\theta$ is acute,\n\\[\\sin \\theta = \\sqrt{1 - \\cos^2 \\theta} = \\sqrt{1 - \\frac{1}{x^2}},\\]so\n\\[\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{\\sqrt{1 - \\frac{1}{x^2}}}{\\frac{1}{x}} = x \\sqrt{1 - \\frac{1}{x^2}} = \\boxed{\\sqrt{x^2 - 1}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Spinner I is divided into four equal sections labeled 2, 3, 4 and 5. Spinner II is divided into five equal sections labeled 1, 3, 5, 7 and 9. If each spinner is spun and the resulting numbers are multiplied, what is the probability that the product is a two-digit even number? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let results be denoted by ordered pairs where the first coordinate corresponds to Spinner I and the second coordinate corresponds to Spinner II.  Since all the section numbers on Spinner II are odd, Spinner I must given an even number in order for the product to be even. The results $(2,5)$, $(2,7)$, $(2,9)$, $(4,3)$, $(4,5)$, $(4,7)$, and $(4,9)$ are the ones whose products are two-digit even numbers.  Since there are $5\\times4=20$ equally likely results, the probability of obtaining an even two-digit product is $\\boxed{\\frac{7}{20}}$."
+}

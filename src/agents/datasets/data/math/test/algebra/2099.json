@@ -1,0 +1,6 @@
+{
+    "problem": "If $a,b,c,d$ are positive real numbers such that $a,b,c,d$ form an increasing arithmetic sequence and $a,b,d$ form a geometric sequence, then find the value of $\\dfrac{a}{d}.$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have $b=a + r$, $c=a + 2r$, and $d=a + 3r$, where $r$ is a positive real number. Also, $b^2 = ad$ yields $(a+r)^2 =\na(a+3r)$, or $r^2=ar$. It follows that $r=a$ and $d = a + 3a =\n4a$. Hence $\\displaystyle{\\frac{a}{d}} = \\boxed{\\frac{1}{4}}$."
+}

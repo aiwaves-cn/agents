@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of the ellipse given by $x^2 + 6x + 4y^2 - 8y + 9 = 0.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Completing the square in $x$ and $y,$ we get\n\\[(x + 3)^2 + 4(y - 1)^2 = 4.\\]Then\n\\[\\frac{(x + 3)^2}{4} + \\frac{(y - 1)^2}{1} = 1,\\]so the semi-major axis is 2, the semi-minor axis is 1, and the area is then $\\boxed{2 \\pi}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the number of solutions to\n\\[2\\sin^3 x - 5 \\sin^2 x + 2 \\sin x = 0\\]in the range $0 \\le x \\le 2 \\pi.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The given equation factors as\n\\[\\sin x (2 \\sin x - 1)(\\sin x - 2) = 0,\\]so $\\sin x = 0,$ $\\sin x = \\frac{1}{2},$ or $\\sin x = 2.$\n\nThe solutions to $\\sin x = 0$ are $x = 0,$ $x = \\pi,$ and $x = 2 \\pi.$\n\nThe solutions to $\\sin x = \\frac{1}{2}$ are $x = \\frac{\\pi}{6}$ and $x = \\frac{5 \\pi}{6}.$\n\nThe equation $\\sin x = 2$ has no solutions.\n\nThus, the solutions are $0,$ $\\pi,$ $2 \\pi,$ $\\frac{\\pi}{6},$ and $\\frac{5 \\pi}{6},$ for a total of $\\boxed{5}$ solutions."
+}

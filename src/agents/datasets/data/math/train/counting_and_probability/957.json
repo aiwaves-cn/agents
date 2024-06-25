@@ -1,0 +1,6 @@
+{
+    "problem": "George is planning a dinner party for three other couples, his wife, and himself. He plans to seat the four couples around a circular table for 8, and wants each husband to be seated opposite his wife. How many seating arrangements can he make, if rotations and reflections of each seating arrangement are not considered different?  (Note: In this problem, if one seating is a reflection of another, then the two are considered the same!)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let's suppose George decides to seat the husbands first. Once he chooses a seat for a husband, the opposite seat must go to his wife. So George has 8 choices for his seat, 6 choices for the next husband's seat, then 4, then 2. But we haven't accounted for the rotations and reflections. Each seating arrangement can be rotated to seven others, or reflected and then rotated to 8 more, for a total of 16 identical arrangements that we have counted as the same. This makes the actual number of seating arrangements $\\frac{8\\cdot6\\cdot4\\cdot2}{16}=\\boxed{24}$."
+}

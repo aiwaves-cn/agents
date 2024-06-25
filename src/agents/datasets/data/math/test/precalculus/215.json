@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive value of $x$ such that\n\\[\\tan 20^\\circ + 2 \\tan 50^\\circ = \\tan x^\\circ.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can start by looking at the expression $\\tan 20^\\circ + \\tan 50^\\circ.$  This shows up when applying the tangent addition formula to $20^\\circ$ and $50^\\circ$:\n\\[\\tan 70^\\circ = \\tan (20^\\circ + 50^\\circ) = \\frac{\\tan 20^\\circ + \\tan 50^\\circ}{1 - \\tan 20^\\circ \\tan 50^\\circ},\\]so\n\\begin{align*}\n\\tan 20^\\circ + \\tan 50^\\circ &= \\tan 70^\\circ (1 - \\tan 20^\\circ \\tan 50^\\circ) \\\\\n&= \\tan 70^\\circ - \\tan 20^\\circ \\tan 50^\\circ \\tan 70^\\circ.\n\\end{align*}Since $20^\\circ + 70^\\circ = 90^\\circ,$ $\\tan 20^\\circ \\tan 70^\\circ = 1,$ so\n\\[\\tan 20^\\circ + \\tan 50^\\circ = \\tan 70^\\circ - \\tan 50^\\circ.\\]Therefore, $\\tan 20^\\circ + 2 \\tan 50^\\circ = \\tan 70^\\circ,$ so $x = \\boxed{70}.$"
+}

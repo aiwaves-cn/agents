@@ -1,0 +1,6 @@
+{
+    "problem": "Five consecutive two-digit positive integers, each less than 30, are not prime. What is the largest of these five integers?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Consider the primes that are less than 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, and 29. We must find 2 primes on this list whose difference is at least 6 (which means there are 5 consecutive integers that are composite between them). $29-23=6$ and the other differences are all less than 6. Thus, the largest of the five composites is $\\boxed{28}$."
+}

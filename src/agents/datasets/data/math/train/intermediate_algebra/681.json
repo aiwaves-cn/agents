@@ -1,0 +1,6 @@
+{
+    "problem": "A function $f$ has domain $[0,2]$ and range $[0,1]$. (The notation $[a,b]$ denotes $\\{x:a \\le x \\le b \\}$.) Let\n\\[g(x) = 1 - f(x + 1).\\]Then the domain of $g(x)$ is $[a,b],$ and the range of $g(x)$ is $[c,d].$  Enter the ordered quadruple $(a,b,c,d).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "For $g(x) = 1 - f(x + 1)$ to be defined, we need\n\\[0 \\le x + 1 \\le 2,\\]or $-1 \\le x \\le 1.$  As $y$ ranges over $0 \\le y \\le 1,$ $1 - y$ ranges from 1 to 0.  Hence, $(a,b,c,d) = \\boxed{(-1,1,0,1)}.$"
+}

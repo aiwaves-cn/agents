@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = x^2 + ax + b$ and $g(x) = x^2 + cx + d$ be two distinct polynomials with real coefficients such that the $x$-coordinate of the vertex of $f$ is a root of $g,$ and the $x$-coordinate of the vertex of $g$ is a root of $f,$ and both $f$ and $g$ have the same minimum value.  If the graphs of the two polynomials intersect at the point $(100,-100),$ what is the value of $a + c$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By symmetry, the line $x = 100$ must be equidistant to both vertices of the parabolas.  Furthermore, the $x$-coordinate of the vertex of $f$ is $-\\frac{a}{2},$ and the $x$-coordinate of the vertex of $g$ is $-\\frac{c}{2}.$\n\n[asy]\nunitsize(2 cm);\n\nreal parabone (real x) {\n  return (x^2 - 1);\n}\n\nreal parabtwo (real x) {\n  return ((x - 1)^2 - 1);\n}\n\ndraw((-1.2,0)--(2.2,0));\ndraw(graph(parabone,-1.2,1.2),red);\ndraw(graph(parabtwo,-0.2,2.2),blue);\ndraw((0,0)--(0,-1),dashed);\ndraw((1,0)--(1,-1),dashed);\n\nlabel(\"$y = f(x)$\", (-1.2,parabone(1.2)), N, red);\nlabel(\"$y = g(x)$\", (2.2,parabtwo(2.2)), N, blue);\n\ndot((0,0));\ndot((0,-1));\ndot((1,0));\ndot((1,-1));\n[/asy]\n\nTherefore,\n\\[\\frac{-\\frac{a}{2} - \\frac{c}{2}}{2} = 100,\\]which implies $a + c = \\boxed{-400}.$"
+}

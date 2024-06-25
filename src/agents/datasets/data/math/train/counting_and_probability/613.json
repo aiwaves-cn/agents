@@ -1,0 +1,6 @@
+{
+    "problem": "The pattern of Pascal's triangle is illustrated in the diagram  shown. What is the fourth element in Row 15 of Pascal's triangle? $$\n\\begin{array}{ccccccccccccc}\\vspace{0.1in}\n\\textrm{Row 0}: & \\qquad & & & & & 1 & & & & & & \\\\ \\vspace{0.1in}\n\\textrm{Row 1}: & \\qquad & & & & 1 & & 1 & & & & &\\\\ \\vspace{0.1in}\n\\textrm{Row 2}: & \\qquad & & & 1 & & 2 & & 1 & & & &\\\\ \\vspace{0.1in}\n\\textrm{Row 3}: & \\qquad & & 1 && 3 && 3 && 1&& \\\\ \\vspace{0.1in}\n\\textrm{Row 4}: & \\qquad & 1&& 4 && 6 && 4 && 1\n\\end{array}\n$$",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "In Pascal's triangle, the $k^\\text{th}$ element in the row $n$ has the value $\\binom{n}{k-1}.$ Row $15$ starts with $\\binom{15}{0},$ $\\binom{15}{1},$ $\\binom{15}{2},$ $\\binom{15}{3},$ so the fourth element is $$\\binom{15}{3}=\\frac{15!}{3!(15-3)!}=\\frac{15\\cdot14\\cdot13}{3\\cdot2\\cdot1}=5\\cdot7\\cdot13=\\boxed{455}.$$"
+}

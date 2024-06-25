@@ -1,0 +1,6 @@
+{
+    "problem": "If two distinct members of the set $\\{ 2, 4, 12, 14, 21, 28, 98 \\}$ are randomly selected and multiplied, what is the probability that the product is a multiple of 196? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Since a multiple of 196 must have 2 factors of 2 and 2 factors of 7, we can count the pairs by focusing on the factors of 7. For one thing, 98 can be paired with any even number as it has 1 factor of 2, since $98=2 \\cdot 7^2$ takes care of all the other primes. So, 98 can be paired with 2, 4, 12, 14, and 28, for 5 pairs. Then, 28 can be paired with (excluding 98 which we already counted) 21 and 14, both of which have the necessary factor of 7, giving us 2 more pairs. There are no remaining pairs of numbers 21 and smaller that are multiples of 196, because the only pair with two factors of 7, $\\{14, 21 \\}$, has a factor of 2 but not 4. So, there are $5+2=7$ pairs. And in total, there are ${7 \\choose 2 } =21$ possible pairs, giving us a probability of $\\frac{7}{21} = \\boxed{\\frac{1}{3}}$."
+}

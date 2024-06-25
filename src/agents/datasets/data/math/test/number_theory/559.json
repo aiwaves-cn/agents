@@ -1,0 +1,6 @@
+{
+    "problem": "A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the same as the units digit of a number that is 4 more than a multiple of 5. What is the smallest possible value of $X$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If a positive integer is 4 more than a multiple of 5, then its units digit must be 4 or 9.  We check positive integers ending in 4 or 9 until we find one which is 2 more than a multiple of 3: 4 is 1 more than a multiple of 3, 9 is a multiple of 3, and $\\boxed{14}$ is 2 more than a multiple of 3."
+}

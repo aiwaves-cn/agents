@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of $9^x - 3^x + 1$ over all real numbers $x.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = 3^x.$  Then\n\\[9^x - 3^x + 1 = y^2 - y + 1 = \\left( y - \\frac{1}{2} \\right)^2 + \\frac{3}{4}.\\]Thus, the minimum value is $\\boxed{\\frac{3}{4}},$ which occurs when $y = \\frac{1}{2},$ or $x = \\log_3 \\frac{1}{2}.$"
+}

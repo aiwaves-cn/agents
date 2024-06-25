@@ -1,0 +1,6 @@
+{
+    "problem": "In base $b$, there are exactly one hundred three-digit numbers whose digits are all distinct. (That's \"one hundred\" in the ordinary sense, $100_{10}$.)\n\nWhat is $b$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "To form a three-digit number in base $b$ whose digits are all distinct, we must choose a first digit, a second digit, and a third digit. We have $b-1$ choices for the first digit ($1,2,3,\\ldots,b-2,b-1$). We have $b-1$ choices for the second digit ($0,1,2,\\ldots,b-2,b-1$, with the first digit removed from our choices). We have $b-2$ choices for the third digit. So, $$(b-1)^2(b-2) = 100.$$Trial and error is arguably the most reasonable way to solve this equation! Since $100=5\\cdot 5\\cdot 4$, the answer is $b=\\boxed{6}$."
+}

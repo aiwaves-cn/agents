@@ -1,0 +1,6 @@
+{
+    "problem": "There are four red balls and two white balls in a jar. One ball is randomly removed and replaced with a ball of the opposite color. The jar is then shaken and one ball is randomly selected. What is the probability that this ball is red? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We split the problem into two cases.\n\nCase I: A red ball is removed. The probability that a red ball is removed is $\\frac{4}{6} = \\frac{2}{3}$. After it is replaced by a white ball, the probability of drawing a red ball is $\\frac{1}{2}$. Thus, the probability that a red ball will be drawn in this case is $\\frac{2}{3} \\cdot \\frac{1}{2} = \\frac{1}{3}$.\n\nCase II: A white ball is removed. The probability that a white ball is removed is $\\frac{2}{6} = \\frac{1}{3}$. After it is replaced by a red ball, the probability of drawing a red ball is $\\frac{5}{6}$. Thus, the probability that a red ball will be drawn in this case is $\\frac{5}{18}$.\n\nWe add the two probabilities for a total probability of $\\boxed{\\frac{11}{18}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[\\sqrt{1 + \\sqrt{2 + \\sqrt{x}}} = \\sqrt[3]{1 + \\sqrt{x}}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = \\sqrt[3]{1 + \\sqrt{x}}.$  Then $y^3 = 1 + \\sqrt{x},$ so we can write the given equation as\n\\[\\sqrt{1 + \\sqrt{y^3 + 1}} = y.\\]Squaring both sides, we get\n\\[1 + \\sqrt{y^3 + 1} = y^2,\\]so $\\sqrt{y^3 + 1} = y^2 - 1.$  Squaring both sides, we get\n\\[y^3 + 1 = y^4 - 2y^2 + 1,\\]which simplifies to $y^4 - y^3 - 2y^2 = 0.$  This factors as $y^2 (y - 2)(y + 1) = 0.$  Since $y = \\sqrt[3]{1 + \\sqrt{x}}$ has to be at least one, $y = 2.$  Then\n\\[\\sqrt[3]{1 + \\sqrt{x}} = 2,\\]so $1 + \\sqrt{x} = 8.$  Then $\\sqrt{x} = 7,$ so $x = \\boxed{49}.$"
+}

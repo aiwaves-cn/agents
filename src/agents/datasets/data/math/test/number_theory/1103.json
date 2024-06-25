@@ -1,0 +1,6 @@
+{
+    "problem": "Lizzy, Megan, Oscar, and Patrick each have $x$ pieces of candy, where $x$ is a positive integer. Unfortunately, Patrick is the only one of the four who likes candy. So Lizzy gives all her candy to Megan. Then Megan gives all the candy she now has (which includes the candy Lizzy gave her) to Oscar. Then Oscar gives all the candy he now has to Patrick.\n\nLet $P$ be the number of pieces of candy Patrick has in the end. How many of the following statements are true? (Assume that we do not know exactly what $x$ is.)\n\n(a) $2$ can be a divisor of $P$.\n(b) $2$ must be a divisor of $P$.\n(c) $3$ can be a divisor of $P$.\n(d) $3$ must be a divisor of $P$.\n(e) $4$ can be a divisor of $P$.\n(f) $4$ must be a divisor of $P$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that in the end, Patrick ended up getting all the candy! So $$P = x + x + x + x = 4x.$$It follows that (e) and (f) are true. We can also write $P$ as $P = 2 \\cdot (2x)$, so (a) and (b) are true. It is possible that $x = 3$, so (c) is true. It is also possible that $x = 1$, which gives $P = 4$. The number $3$ is not a divisor of $4$, so (d) is false. So our final answer is $\\boxed{5}.$"
+}

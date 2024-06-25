@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ $z$ be nonzero real numbers such that $x + y + z = 0,$ and $xy + xz + yz \\neq 0.$  Find all possible values of\n\\[\\frac{x^5 + y^5 + z^5}{xyz (xy + xz + yz)}.\\]Enter all possible values, separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Substituting $z = -x - y,$ we get\n\\[\\frac{x^5 + y^5 - (x + y)^5}{xy(-x - y)(xy - x(x + y) - y(x + y))}.\\]Expanding the numerator and denominator, we get\n\\begin{align*}\n-\\frac{5x^4 y + 10x^3 y^2 + 10x^2 y^3 + 5xy^4}{xy(x + y)(x^2 + xy + y^2)} &= -\\frac{5xy (x^3 + 2x^2 y + 2xy^2 + y^3)}{xy(x + y)(x^2 + xy + y^2)} \\\\\n&= -\\frac{5 (x^3 + 2x^2 y + 2xy^2 + y^3)}{(x + y)(x^2 + xy + y^2)} \\\\\n&= -\\frac{5 (x + y)(x^2 + xy + y^2)}{(x + y)(x^2 + xy + y^2)} \\\\\n&= -5.\n\\end{align*}Hence, the only possible value of the expression is $\\boxed{-5}.$"
+}

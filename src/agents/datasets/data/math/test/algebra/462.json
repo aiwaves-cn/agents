@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate: $\\left( \\frac{1}{2} + \\frac{1}{3} \\right) \\left( \\frac{1}{2} - \\frac{1}{3} \\right)$",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "For any $x$ and $y$, $(x+y)(x-y)=x^2-y^2+xy-xy=x^2-y^2$, so \\begin{align*}\n\\left( \\frac{1}{2} + \\frac{1}{3} \\right) \\left( \\frac{1}{2} - \\frac{1}{3} \\right)&=\\left(\\frac12\\right)^2-\\left(\\frac13\\right)^2\\\\\n&=\\frac14-\\frac19\\\\\n&=\\frac{9}{36}-\\frac{4}{36}\\\\\n&=\\boxed{\\frac{5}{36}}\n\\end{align*}"
+}

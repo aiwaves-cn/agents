@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $a,b,$ and $c$ are positive integers satisfying $(a+b+c)^3 - a^3 - b^3 - c^3 = 150$. Find $a+b+c$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Consider the expression $P(a) = (a+b+c)^3 - a^3 - b^3 - c^3$ as a polynomial in $a$. It follows that $P(-b) = (b -b + c)^3 - (-b)^3 - b^3 - c^3 = 0$, so $a+b$ is a factor of the polynomial $P(a)$. By symmetry, $(a+b)(b+c)(c+a)$ divides into the expression $(a+b+c)^3 - a^3 - b^3 - c^3$; as both expressions are of degree $3$ in their variables, it follows that $$(a+b+c)^3 - a^3 - b^3 - c^3 = k(a+b)(b+c)(c+a) = 150 = 2 \\cdot 3 \\cdot 5 \\cdot 5,$$ where we can determine that $k = 3$ by examining what the expansion of $(a+b+c)^3$ will look like. Since $a,b,$ and $c$ are positive integers, then $a+b$, $b+c$, and $c+a$ must all be greater than $1$, so it follows that $\\{a+b, b+c, c+a\\} = \\{2,5,5\\}$. Summing all three, we obtain that $$(a+b) + (b+c) + (c+a) = 2(a+b+c) = 2 + 5 + 5 = 12,$$ so $a+b+c = \\boxed{6}$."
+}

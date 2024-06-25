@@ -1,0 +1,6 @@
+{
+    "problem": "The four-digit number $25AB$ is divisible by nine, with $A$ the tens digit and $B$ the units digit. How many different such four-digit numbers could $25AB$ represent?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since $2+5=7$ and $2+5+A+B$ is divisible by 9, $A+B$ must be at least 2. Therefore, the least multiple of 9 greater than 2500 is 2502.  We may add multiples of 9 to 2502 to obtain all the multiples of 9 between 2500 and 2600, and 90 is the greatest multiple of 9 we may add without exceeding 2600.  In other words, the multiples of 9 between 2500 and 2600 are the integers of the form $2502+9k$, where $k$ ranges from 0 to 10.  There are $\\boxed{11}$ values of $k$ between 0 and 10 inclusive."
+}

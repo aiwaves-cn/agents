@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[k = \\sin^6 \\theta + \\cos^6 \\theta = \\sin 2 \\theta,\\]then find $k.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\sin^6 \\theta + \\cos^6 \\theta &= (\\sin^2 \\theta + \\cos^2 \\theta)(\\sin^4 \\theta  - \\sin^2 \\theta \\cos^2 \\theta + \\cos^4 \\theta) \\\\\n&= \\sin^4 \\theta - \\sin^2 \\theta \\cos^2 \\theta + \\cos^4 \\theta \\\\\n&= (\\sin^4 \\theta + 2 \\sin^2 \\theta \\cos^2 \\theta + \\cos^4 \\theta) - 3 \\sin^2 \\theta \\cos^2 \\theta \\\\\n&= (\\sin^2 \\theta + \\cos^2 \\theta)^2 - 3 \\sin^2 \\theta \\cos^2 \\theta \\\\\n&= 1 - 3 \\sin^2 \\theta \\cos^2 \\theta \\\\\n&= 1 - 3 \\left( \\frac{\\sin 2 \\theta}{2} \\right)^2 \\\\\n&= 1 - \\frac{3}{4} \\sin^2 2 \\theta.\n\\end{align*}Hence,\n\\[1 - \\frac{3}{4} \\sin^2 2 \\theta = \\sin 2 \\theta.\\]Then $4 - 3 \\sin^2 \\theta = 4 \\sin 2 \\theta,$ or\n\\[3 \\sin^2 \\theta + 4 \\sin 2 \\theta - 4 = 0.\\]This factors as $(3 \\sin 2 \\theta - 2)(\\sin \\theta + 2) = 0.$  The only possible value of $\\sin 2 \\theta$ is then $k = \\boxed{\\frac{2}{3}}.$"
+}

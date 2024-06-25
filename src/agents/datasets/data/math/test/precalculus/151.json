@@ -1,0 +1,6 @@
+{
+    "problem": "Given $\\tan \\theta = \\frac{1}{7},$ find\n\\[\\frac{1}{1 + \\cos \\theta} + \\frac{1}{1 - \\cos \\theta}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\frac{1}{1 + \\cos \\theta} + \\frac{1}{1 - \\cos \\theta} &= \\frac{(1 - \\cos \\theta) + (1 + \\cos \\theta)}{(1 + \\cos \\theta)(1 - \\cos \\theta)} \\\\\n&= \\frac{2}{1 - \\cos^2 \\theta} \\\\\n&= \\frac{2}{\\sin^2 \\theta} \\\\\n&= \\frac{2 (\\sin^2 \\theta + \\cos^2 \\theta)}{\\sin^2 \\theta} \\\\\n&= 2 + 2 \\cdot \\frac{\\cos^2 \\theta}{\\sin^2 \\theta} \\\\\n&= 2 + \\frac{2}{\\tan^2 \\theta} = 2 + 2 \\cdot 7^2 = \\boxed{100}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that a parabola has vertex $\\left(\\frac{1}{4},-\\frac{9}{8}\\right)$ and equation $y = ax^2 + bx + c$, where $a > 0$ and $a + b + c$ is an integer.  Find the smallest possible value of $a.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since the vertex is at $\\left(\\frac{1}{4}, -\\frac{9}{8}\\right)$, the equation of the parabola can be expressed in the form\n\\[y=a\\left(x-\\frac{1}{4}\\right)^2-\\frac{9}{8}.\\]Expanding, we find that\n\\[y=a\\left(x^2-\\frac{x}{2}+\\frac{1}{16}\\right)-\\frac{9}{8} =ax^2-\\frac{ax}{2}+\\frac{a}{16}-\\frac{9}{8}.\\]From the problem, we know that the parabola can be expressed in the form $y=ax^2+bx+c$, where $a+b+c$ is an integer. From the above equation, we can conclude that $a=a$, $b = -\\frac{a}{2}$, and $c = \\frac{a}{16}-\\frac{9}{8}$.  Adding up all of these gives us\n\\[a + b + c = \\frac{9a-18}{16} = \\frac{9(a - 2)}{16}.\\]Let $n = a + b + c.$  Then $\\frac{9(a - 2)}{16} = n,$ so\n\\[a = \\frac{16n + 18}{9}.\\]For $a$ to be positive, we must have $16n + 18 > 0,$ or $n > -\\frac{9}{8}.$  Setting $n = -1,$ we get $a = \\frac{2}{9}.$\n\nThus, the smallest possible value of $a$ is $\\boxed{\\frac{2}{9}}.$"
+}

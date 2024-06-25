@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of \\[\\frac{x^1\\cdot x^2\\cdot x^3\\cdots x^9}{x^2\\cdot x^4 \\cdot x^6 \\cdots x^{12}}\\]if $x=5$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The numerator is equal to $x^{1+2+3+\\cdots + 9}$. The exponent is the sum of the first 9 consecutive positive integers, so its sum is $\\frac{9\\cdot10}{2}=45$. So the numerator is $x^{45}$.\n\nThe denominator is equal to $x^{2+4+6+\\cdots+12}=x^{2(1+2+3+\\cdots+6)}$. The exponent is twice the sum of the first 6 consecutive positive integers, so its sum is $2\\cdot \\frac{6\\cdot7}{2}=42$. So the denominator is $x^{42}$.\n\nThe entire fraction becomes $\\frac{x^{45}}{x^{42}}=x^{45-42}=x^3$. Plugging in $x=5$ yields $5^3=\\boxed{125}$."
+}

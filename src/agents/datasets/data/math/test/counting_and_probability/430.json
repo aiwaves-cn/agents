@@ -1,0 +1,6 @@
+{
+    "problem": "Bob and Alice each have a bag that contains one ball of each of the colors,  blue, green, orange, red, and violet. Alice randomly selects one ball from her bag and puts it into Bob's bag. Bob then randomly selects one ball from his bag and  puts it into Alice's bag. What is the probability that after this process the contents of the two bags are the same?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "After Alice puts the ball into Bob's bag, his bag will contain six balls: two of one color and one of each of the other colors. After Bob selects a ball and places it into Alice's bag, the two bags will have the same contents if and only if Bob picked one of the two balls in his bag that are the same color. Because there are six balls in the bag when Bob makes his selection, the probability of selecting one of the same colored pair is $2/6=\\boxed{\\frac{1}{3}}$."
+}

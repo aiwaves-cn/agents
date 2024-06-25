@@ -1,0 +1,6 @@
+{
+    "problem": "Sam is carrying a 2 gallon bucket of milk to his house from the barn, which is 3 miles away from his house. However, the bucket has a leak in it. For each mile he walks, there is $\\frac{2}{3}$ as much milk in the bucket as at the beginning of the mile. How many gallons of milk will be in the bucket when Sam gets home?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "At the end of the first mile, there will be $\\frac{2}{3}$ of the initial milk in the bucket. Each additional mile multiplies this amount by $\\frac{2}{3}$. Thus, when he arrives at home at the end of the third mile, there will be $\\frac{2}{3} \\cdot \\frac{2}{3} \\cdot \\frac{2}{3} = \\left(\\frac{2}{3}\\right)^{3}$ as much milk in the bucket. Since he had 2 gallons initially, the amount in the bucket when he gets home is $2 \\cdot \\left(\\frac{2}{3}\\right)^{3}$. Because $\\left(\\frac{a}{b}\\right)^{n} = \\frac{a^{n}}{b^{n}}$, this expression is equivalent to $2 \\cdot \\frac{2^{3}}{3^{3}}$. Because $n^{a} \\cdot n^{b} = n^{a+b}$, this equals $\\frac{2^{4}}{3^{3}}$. Multiplying the exponents out, we get $\\boxed{\\frac{16}{27}}$ gallons."
+}

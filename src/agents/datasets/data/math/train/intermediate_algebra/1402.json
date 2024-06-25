@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial\n$$g(x) = x^3 - x^2 - (m^2 + m) x + 2m^2 + 4m + 2$$is divisible by $x-4$ and all of its zeroes are integers. Find all possible values of $m$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $g(x)$ is divisible by $x-4$, we have $g(4)=0$. We also have\n\\begin{align*}\ng(4) &= 4^3 - 4^2 - (m^2+m)(4) + 2m^2+4m+2 \\\\\n&= 50 - 2m^2,\n\\end{align*}so $0=50-2m^2$. Thus $m$ can only be $5$ or $-5$. We check both possibilities.\n\nIf $m=5$, then $g(x)=x^3-x^2-30x+72=(x-4)(x^2+3x-18)=(x-4)(x+6)(x-3)$, so all zeroes are integers.\n\nIf $m=-5$, then $g(x)=x^3-x^2-20x+32=(x-4)(x^2+3x-8)$, but $x^2+3x-8$ does not have integer zeroes.\n\nTherefore, the only solution is $m=\\boxed{5}$."
+}

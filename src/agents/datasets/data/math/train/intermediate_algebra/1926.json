@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[1 \\cdot 1987 + 2 \\cdot 1986 + 3 \\cdot 1985 + \\dots + 1986 \\cdot 2 + 1987 \\cdot 1 = 1987 \\cdot 994 \\cdot x,\\]compute the integer $x.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can represent the sum as\n\\[\\sum_{n = 1}^{1987} n(1988 - n).\\]This is equal to\n\\begin{align*}\n\\sum_{n = 1}^{1987} (1988n - n^2) &= 1988 \\sum_{n = 1}^{1987} n - \\sum_{n = 1}^{1987} n^2 \\\\\n&= 1988 \\cdot \\frac{1987 \\cdot 1988}{2} - \\frac{1987 \\cdot 1988 \\cdot 3975}{6} \\\\\n&= \\frac{1987 \\cdot 1988}{6} (3 \\cdot 1988 - 3975) \\\\\n&= \\frac{1987 \\cdot 2 \\cdot 994}{6} \\cdot 1989 \\\\\n&= \\frac{1987 \\cdot 994}{3} \\cdot 1989 \\\\\n&= 1987 \\cdot 994 \\cdot 663.\n\\end{align*}Thus, $x = \\boxed{663}.$"
+}

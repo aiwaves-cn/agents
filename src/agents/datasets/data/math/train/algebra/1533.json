@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose functions $g$ and $f$ have the properties that $g(x)=3f^{-1}(x)$ and $f(x)=\\frac{24}{x+3}$. For what value of $x$ does $g(x)=15$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $g(x)=3f^{-1}(x)$, we have that $3f^{-1}(x)=15$. This means that $f^{-1}(x)=\\frac{15}{3}=5$. Since $f$ and $f^{-1}$ are inverse functions, if $f^{-1}(x)=5$, we also have that $f(5)=x$. Substituting this back into our equation $f(x)=\\frac{24}{x+3}$, we get that $$x=f(5)=\\frac{24}{5+3}=\\boxed{3}.$$"
+}

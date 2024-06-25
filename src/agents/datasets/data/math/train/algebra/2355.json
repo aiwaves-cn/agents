@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the function $f(x) = x^2 +2\\sqrt{x}$.  Evaluate $2f(2) - f(8)$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have $f(2) = 2^2 + 2\\sqrt{2} = 4 + 2\\sqrt{2}$ so $2f(2) = 8 + 4\\sqrt{2}$. We also have $f(8) = 8^2 + 2\\sqrt{8} = 64 + 2 \\cdot 2\\sqrt{2} = 64 + 4\\sqrt{2}$. We subtract $8 + 4\\sqrt{2} - (64 + 4\\sqrt{2}) = 8 + 4\\sqrt{2} - 64 - 4\\sqrt{2} = \\boxed{-56}$."
+}

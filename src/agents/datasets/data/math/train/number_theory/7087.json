@@ -1,0 +1,6 @@
+{
+    "problem": "The positive integers $N$ and $N^2$ both end in the same sequence of four digits $abcd$ when written in base $10$, where digit a is not zero. Find the three-digit number $abc$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We have that $N^2 - N = N(N - 1)\\equiv 0\\mod{10000}$\nThus, $N(N-1)$ must be divisible by both $5^4$ and $2^4$. Note, however, that if either $N$ or $N-1$ has both a $5$ and a $2$ in its factorization, the other must end in either $1$ or $9$, which is impossible for a number that is divisible by either $2$ or $5$. Thus, one of them is divisible by $2^4 = 16$, and the other is divisible by $5^4 = 625$. Noting that $625 \\equiv 1\\mod{16}$, we see that $625$ would work for $N$, except the thousands digit is $0$. The other possibility is that $N$ is a multiple of $16$ and $N-1$ is a multiple of $625$. In order for this to happen,\\[N-1 \\equiv -1 \\pmod {16}.\\]Since $625 \\equiv 1 \\pmod{16}$, we know that $15 \\cdot 625 = 9375 \\equiv 15 \\equiv -1 \\mod{16}$. Thus, $N-1 = 9375$, so $N = 9376$, and our answer is $\\boxed{937}$."
+}

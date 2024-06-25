@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that the minimum value of $f(x) = \\cos 2x - 2a (1 + \\cos x)$ is $-\\frac{1}{2}.$  Find $a.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\nf(x) &= 2 \\cos^2 x - 1 - 2a (1 + \\cos x) \\\\\n&= 2 \\cos^2 x - 2a \\cos x - 1 - 2a \\\\\n&= 2 \\left( \\cos x - \\frac{a}{2} \\right)^2 - \\frac{1}{2} a^2 - 2a - 1.\n\\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\\cos x = 1,$ in which case\n\\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\\]If $1 - 4a = -\\frac{1}{2},$ then $a = \\frac{3}{8},$ contradiction.\n\nIf $a < -2,$ then $f(x)$ attains its minimum value when $\\cos x = -1,$ in which case\n\\[f(x) = 2 + 2a - 1 - 2a = 1,\\]so this case is not possible either.\n\nOtherwise, $-2 \\le a \\le 2,$ and $f(x)$ attains its minimum when $\\cos x = \\frac{a}{2},$ in which case\n\\[f(x) = -\\frac{1}{2} a^2 - 2a - 1.\\]Thus, $-\\frac{1}{2} a^2 - 2a - 1 = -\\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,\n\\[a = -2 \\pm \\sqrt{3}.\\]Since $-2 \\le a \\le 2,$ $a = \\boxed{-2 + \\sqrt{3}}.$"
+}

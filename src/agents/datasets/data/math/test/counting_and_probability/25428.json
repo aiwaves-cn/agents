@@ -1,0 +1,6 @@
+{
+    "problem": "A standard deck of cards has 26 cards which are considered \"red\" (the 'hearts' and 'diamonds') and 26 which are considered \"black\" (the 'spades' and 'clubs'). In how many different ways can we choose two red cards from the deck? (Note: Order matters in the sense that drawing an ace of hearts followed by jack of diamonds is different than drawing a jack of diamonds followed by ace of hearts, for instance.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "For the number of successful possibilities, there are 26 ways to pick a red card first (since there are 26 total red cards), then there are 25 ways to also pick a second red card (since there are 25 red cards remaining after we've chosen the first card).  Thus, there are a total of $26 \\times 25 = \\boxed{650}$ total successful possibilities."
+}

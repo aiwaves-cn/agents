@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that we have an equation $y=ax^2+bx+c$ whose graph is a parabola with vertex $(3,2)$, vertical axis of symmetry, and contains the point $(1,0)$.\n\nWhat is $(a, b, c)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since the axis of symmetry is vertical and the vertex is $(3,2)$, the parabola may also be written as  \\[y=a(x-3)^2+2\\]for some value of $a$.  Plugging the point $(1,0)$ into this expression gives  \\[0=a(1-3)^2+2=4a+2.\\]This tells us $a=-\\frac12$.\n\nOur equation is  \\[y=-\\frac12(x-3)^2+2.\\]Putting it into $y=ax^2+bx+c$ form requires expanding the square, so we get  \\[y=-\\frac12(x^2-6x+9)+2=-\\frac12 x^2+3x-\\frac52.\\]Our answer is $(a, b, c) = \\boxed{\\left(-\\frac{1}{2}, 3, -\\frac{5}{2}\\right)}.$"
+}

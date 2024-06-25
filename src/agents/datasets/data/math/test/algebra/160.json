@@ -1,0 +1,6 @@
+{
+    "problem": "For each plumbing repair job, Mr. Wrench charges $N$ dollars for coming out to the house plus $x$ dollars per hour that he works at the house. He charged $\\$97$ for a one-hour repair job and $\\$265$ for a five-hour repair job. What is his charge for a two-hour repair job?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can rewrite the problem as the system of equations: \\begin{align*}\nN+x &= 97\\\\\nN+5x &= 265\n\\end{align*}Subtracting these gives: \\begin{align*}\n4x &= 265-97=168\\\\\nx &= 42.\n\\end{align*}So now $N = 97-42= 55$. So the charge for a two-hour repair job is $N+2x = \\$ 55+2\\cdot \\$ 42 = \\boxed{\\$ 139}$."
+}

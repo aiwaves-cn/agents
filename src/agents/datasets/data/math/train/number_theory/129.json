@@ -1,0 +1,6 @@
+{
+    "problem": "The remainders when three positive integers are divided by 5 are 1, 2, and 3.  Find the remainder when their product is divided by 5.",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "The product of the three integers is equivalent in modulo 5 to the product of the modulo 5 residues of the three integers.  We multiply these residues to find the remainder: $$ 1 \\cdot 2 \\cdot 3 \\equiv 6 \\equiv \\boxed{1} \\pmod{5}. $$"
+}

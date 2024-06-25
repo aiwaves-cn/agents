@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\sqrt{32670}$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "To begin, take out the factor of 10 and look at 3267.  With a quick check, we can see this number is divisible by 3. Taking out factors of 3, we find $3267=3\\cdot1089=3^2\\cdot363=3^3\\cdot121$.  Since $121=11^2$, the complete factorization is $32670=10\\cdot3^3\\cdot11^2$.  Therefore, $\\sqrt{32670}=\\boxed{33\\sqrt{30}}$."
+}

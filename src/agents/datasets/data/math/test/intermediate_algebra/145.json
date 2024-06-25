@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c,$ $d$ be nonnegative real numbers such that $a + b + c + d = 1.$  Find the maximum value of\n\\[ab + bc + cd.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Note that\n\\[ab + bc + cd \\le ab + bc + cd + da = (a + c)(b + d).\\]By AM-GM,\n\\[(a + c)(b + d) \\le \\left( \\frac{(a + c) + (b + d)}{2} \\right)^2 = \\frac{1}{4}.\\]Equality occurs when $a = 0,$ $b = \\frac{1}{2},$ $c = \\frac{1}{2},$ and $d = 0,$ so the maximum value of $ab + bc + cd$ is $\\boxed{\\frac{1}{4}}.$"
+}

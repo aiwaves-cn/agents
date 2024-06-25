@@ -1,0 +1,6 @@
+{
+    "problem": "Find the units digit of $18^6.$",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The units digit of $18^6$ is the same as in $8^6$.  There are several ways we could go about finding that units digit, but notice that $8^6 = 2^{18}$.  It's easy to find the pattern of units digits for powers of 2:  \\begin{align*} 2^1 &= 2 \\\\ 2^2 &= 4 \\\\ 2^3 &= 8 \\\\ 2^4 &= 16 \\\\ 2^5 &= 32 \\end{align*}Using this pattern, the units digit is found to be $\\boxed{4}$."
+}

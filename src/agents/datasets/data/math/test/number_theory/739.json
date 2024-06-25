@@ -1,0 +1,6 @@
+{
+    "problem": "For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot\\,\\cdots\\,\\cdot (n-1)\\cdot n$.\n\nWhat is the remainder when $9!$ is divided by $10$?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Notice that $10=2\\cdot 5$. Both are factors of $9!$, so the remainder is $\\boxed{0}$."
+}

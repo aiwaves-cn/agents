@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the smallest positive angle $x,$ in degrees, such that\n\\[\\tan 4x = \\frac{\\cos x - \\sin x}{\\cos x + \\sin x}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "From the given equation,\n\\[\\frac{\\sin 4x}{\\cos 4x} = \\frac{\\cos x - \\sin x}{\\cos x + \\sin x}.\\]Then\n\\[\\cos x \\sin 4x + \\sin x \\sin 4x = \\cos x \\cos 4x - \\sin x \\cos 4x,\\]or\n\\[\\cos x \\sin 4x + \\sin x \\cos 4x = \\cos x \\cos 4x - \\sin x \\sin 4x.\\]Applying sum-to-product to both sides, we get\n\\[\\sin 5x = \\cos 5x,\\]so $\\tan 5x = 1.$  The smallest such positive angle $x$ is $\\boxed{9^\\circ}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "There are 3 math clubs in the school district, with 5, 7, and 8 students respectively. Each club has two co-presidents. If I randomly select a club, and then randomly select three members of that club to give a copy of $\\emph{Introduction to} \\allowbreak\\ \\emph{Counting and} \\allowbreak\\ \\emph{Probability}$, what is the probability that two of the people who receive books are co-presidents?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There's a $\\dfrac{1}{3}$ chance that I will select each club. Let $n$ be the number of students in that club. There are $\\dbinom{n}{3}$ ways to choose a group of three students at a math club with $n$ members. Only $\\dbinom{n-2}{1}$ of these groups will contain the two co-presidents. Once I have selected that club, the probability that I give books to the co-presidents is $\\dfrac{\\dbinom{n-2}{1}}{\\dbinom{n}{3}}$. Since the clubs have 5, 7, and 8 students, this means that the total probability is $$\\dfrac{1}{3}\\left(\\dfrac{\\dbinom{5-2}{1}}{\\dbinom{5}{3}}+\\dfrac{\\dbinom{7-2}{1}}{\\dbinom{7}{3}}+\\dfrac{\\dbinom{8-2}{1}}{\\dbinom{8}{3}}\\right)$$which after a bit of arithmetic simplifies to $\\boxed{\\dfrac{11}{60}}$."
+}

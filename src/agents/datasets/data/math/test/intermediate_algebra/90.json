@@ -1,0 +1,6 @@
+{
+    "problem": "Given that \\begin{align*}x_{1}&=211,\\\\ x_{2}&=375,\\\\ x_{3}&=420,\\\\ x_{4}&=523,\\ \\text{and}\\\\ x_{n}&=x_{n-1}-x_{n-2}+x_{n-3}-x_{n-4}\\ \\text{when}\\ n\\geq5, \\end{align*}find the value of $x_{531}+x_{753}+x_{975}$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Shifting the recurrence over by one and adding, we have: \\[\\begin{aligned} x_n &= x_{n-1} - x_{n-2} + x_{n-3} - x_{n-4} \\\\ x_{n-1} &= x_{n-2} - x_{n-3} + x_{n-4} - x_{n-5} \\\\ \\implies x_n + x_{n-1} &= x_{n-1} - x_{n-5} \\end{aligned}\\]so $x_n = -x_{n-5}$ for all $n.$ In particular, $x_n = -x_{n-5} = -(-x_{n-10}) = x_{n-10},$ so the sequence repeats with period $10.$ Thus, \\[\\begin{aligned} x_{531} + x_{753} + x_{975} &= x_1 + x_3 + x_5 \\\\ &= x_1 + x_3 + (x_4-x_3+x_2-x_1) \\\\ &= x_2 + x_4 \\\\ &= 375 + 523 = \\boxed{898}. \\end{aligned}\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $d$ and $e$ denote the solutions of $3x^2+10x-25=0$. Find $(d-e)^2$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Factoring our original equation: \\[3x^2+10x-25=(3x-5)(x+5)=0\\]Therefore, the two solutions are $3x-5=0$ and $x+5=0$. \\begin{align*}\n3x-5&=0\\\\\n3x&=5\\\\\nx&=\\frac{5}{3}\n\\end{align*}\n\\begin{align*}\nx+5&=0\\\\\nx&=-5\n\\end{align*}Therefore, either $d$ or $e$ could equal either $\\frac{5}{3}$ or $-5$. However, $(d-e)^2=(e-d)^2$ as shown below. \\begin{align*}\n(d-e)^2&=\\{(-1)(e-d)\\}^2\\\\\n&=(-1)^2(e-d)^2\\\\\n&=(e-d)^2\n\\end{align*}Setting $\\frac{5}{3}=d$ and $-5=e$: \\begin{align*}\n(d-e)^2&=\\left(\\frac{5}{3}-(-5)\\right)^2\\\\\n&=\\left(\\frac{5}{3}+5\\right)^2\\\\\n&=\\left(\\frac{20}{3}\\right)^2\\\\\n&=\\boxed{\\frac{400}{9}}\n\\end{align*}"
+}

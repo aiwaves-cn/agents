@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S = \\{2^0,2^1,2^2,\\ldots,2^{10}\\}$. Consider all possible positive differences of pairs of elements of $S$. Let $N$ be the sum of all of these differences. Find $N.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "When computing $N$, the number $2^x$ will be added $x$ times (for terms $2^x-2^0$, $2^x-2^1$, $\\dots,$ $2^x - 2^{x-1}$), and subtracted $10-x$ times. Hence, $N$ can be computed as $$N=10\\cdot 2^{10} + 8\\cdot 2^9 + 6\\cdot 2^8 + \\cdots - 8\\cdot 2^1 - 10\\cdot 2^0.$$Then\n\\begin{align*}\nN & = 10(2^{10}-1) + 8(2^9 - 2^1) + 6(2^8-2^2) + 4(2^7-2^3) + 2(2^6-2^4) \\\\\n& = 10(1023) + 8(510) + 6(252) + 4(120) + 2(48) \\\\\n& = 10(1000+23) + 8(500+10) + 6(250+2) + 480 + 96 \\\\\n&= \\boxed{16398}.\n\\end{align*}"
+}

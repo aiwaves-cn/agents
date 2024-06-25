@@ -1,0 +1,6 @@
+{
+    "problem": "What is the last nonzero digit to the right of the decimal point in the decimal expansion of $\\frac{141}{400}$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Note that $400 = 4 \\cdot 10^2 = 2^2 \\cdot 10^2 = 2^4 \\cdot 5^2$. Therefore, $\\frac{141}{400} = \\frac{141}{2^4 \\cdot 5^2}$. If we multiply this fraction by $10^4$, we shift all digits $4$ places to the left, so $\\frac{141}{2^4 \\cdot 5^2} \\cdot 10^4 = 141 \\cdot 5^2 = 3525$. The last nonzero digit is therefore $\\boxed{5}$."
+}

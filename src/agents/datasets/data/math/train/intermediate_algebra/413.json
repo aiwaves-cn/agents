@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers such that\n\\[\n  2 < \\frac{x - y}{x + y} < 5.\n\\]If $\\frac{x}{y}$ is an integer, what is its value?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $\\frac{x}{y} = t$. Then $x = ty$, so we can write \\[\\frac{x-y}{x+y} = \\frac{ty-y}{ty+y} = \\frac{t-1}{t+1}.\\]Thus, we have \\[2 < \\frac{t-1}{t+1} < 5,\\]which we can rewrite as follows: \\[\\begin{aligned} 2 < 1 &- \\frac{2}{t+1} < 5 \\\\ 1 <&-\\frac{2}{t+1} < 4 \\\\ -\\frac{1}{2} > &\\frac{1}{t+1} > -2. \\end{aligned}\\]The only number of the form $\\frac{1}{t+1}$ (where $t$ is an integer) which lies in the interval $\\left(-2, -\\frac12\\right)$ is $-1 = \\frac1{-1}$, so we must have $t+1=-1$, and $t = -2$. This is achievable when $x = -2$ and $y =1$, so the answer is $\\boxed{-2}$."
+}

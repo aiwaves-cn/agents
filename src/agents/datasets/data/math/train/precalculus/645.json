@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\mathbf{A} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix},$ then its transpose is given by\n\\[\\mathbf{A}^T = \\begin{pmatrix} a & c \\\\ b & d \\end{pmatrix}.\\]Given that $\\mathbf{A}^T = \\mathbf{A}^{-1},$ find $a^2 + b^2 + c^2 + d^2.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From $\\mathbf{A}^T = \\mathbf{A}^{-1},$ $\\mathbf{A}^T \\mathbf{A} = \\mathbf{I}.$  Hence,\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} a & c \\\\ b & d \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}.\\]Then $a^2 + b^2 = 1$ and $c^2 + d^2 = 1,$ so $a^2 + b^2 + c^2 + d^2 = \\boxed{2}.$"
+}

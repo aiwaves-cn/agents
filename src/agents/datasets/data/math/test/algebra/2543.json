@@ -1,0 +1,6 @@
+{
+    "problem": "A bookstore is deciding what price it should charge for a certain book. After research, the store finds that if the book's price is $p$ dollars (where $p \\le 40$), then the number of books sold per month is $120-3p$. What price should the store charge to maximize its revenue?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The store's revenue is given by: number of books sold $\\times$ price of each book, or\n\\[p(120-3p)=120p-3p^2.\\]We want to maximize this expression by completing the square. We can factor out a $-3$ to get $-3(p^2-40p)$.\n\nTo complete the square, we add $(40/2)^2=400$ inside the parenthesis and subtract $-3\\cdot400=-1200$ outside. We are left with the expression\n\\[-3(p^2-40p+400)+1200=-3(p-20)^2+1200.\\]Note that the $-3(p-20)^2$ term will always be nonpositive since the perfect square is always nonnegative. Thus, the revenue is maximized when $-3(p-20)^2$ equals 0, which is when $p=20$. Thus, the store should charge $\\boxed{20}$ dollars for the book."
+}

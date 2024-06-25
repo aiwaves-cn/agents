@@ -1,0 +1,6 @@
+{
+    "problem": "Find the $3 \\times 3$ matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} y \\\\ z \\\\ x + y + z \\end{pmatrix}\\]for all real numbers $x,$ $y,$ and $z.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{r}_1,$ $\\mathbf{r}_2,$ $\\mathbf{r}_3$ be the row vectors of $\\mathbf{M},$ and let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix},$ so\n\\[\\mathbf{M} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} -\\mathbf{r}_1- \\\\ -\\mathbf{r}_2- \\\\ -\\mathbf{r}_3- \\end{pmatrix} \\mathbf{v} = \\begin{pmatrix} \\mathbf{r}_1 \\cdot \\mathbf{v} \\\\ \\mathbf{r}_2 \\cdot \\mathbf{v} \\\\ \\mathbf{r}_3 \\cdot \\mathbf{v} \\end{pmatrix}.\\]We want $\\mathbf{r}_1 \\cdot \\mathbf{v} = y.$  Thus, we can take $\\mathbf{r}_1 = (0,1,0).$\n\nAlso, we want $\\mathbf{r}_2 \\cdot \\mathbf{v} = z.$  Thus, we can take $\\mathbf{r}_2 = (0,0,1).$\n\nFinally, we want $\\mathbf{r}_3 \\cdot \\mathbf{v} = x + y + z.$  Thus, we can take $\\mathbf{r}_3 = (1,1,1).$  Hence,\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} 0 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 1 & 1 \\end{pmatrix}}.\\]"
+}

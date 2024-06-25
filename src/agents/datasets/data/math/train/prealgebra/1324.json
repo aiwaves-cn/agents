@@ -1,0 +1,6 @@
+{
+    "problem": "As shown in the figure below, a circular park consists of an outer-ring path for walkers (white) and a ring-shaped flower garden (gray) surrounding a central circular fountain (black). The walking path is six feet wide in all places, the garden ring is eight feet wide in all places, and the fountain has a diameter of 10 feet. What is the diameter, in feet, of the circle that is the outer boundary of the walking path?\n\n[asy]import graph;\nsize(101);\ndraw(Circle((0,0),19));\nfilldraw(Circle((0,0),13),gray(.6),black);\nfill(Circle((0,0),5),black);\ndraw(\"$8'$\",(0,5)--(0,13));\ndraw(\"$6'$\",(13,0)--(19,0));\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "To obtain the diameter of the circle that is the outer boundary of the walking path, we can find the radius and then double it. To find the radius, we add the radius of the fountain to the widths of the garden ring and the walking path. Thus, the radius is $5+8+6 = 19$. Doubling $19$ gives a diameter of $\\boxed{38}$ feet."
+}

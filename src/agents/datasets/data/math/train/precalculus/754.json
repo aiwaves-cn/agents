@@ -1,0 +1,6 @@
+{
+    "problem": "Complex numbers $a,$ $b,$ $c$ form an equilateral triangle with side length 18 in the complex plane.  If $|a + b + c| = 36,$ find $|ab + ac + bc|.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Note that given complex numbers $a$ and $b$ in the plane, there are two complex numbers $c$ such that $a,$ $b,$ and $c$ form an equilateral triangle.  They are shown as $c_1$ and $c_2$ below.\n\n[asy]\nunitsize(1 cm);\n\npair A, B;\npair[] C;\n\nA = (2,-1);\nB = (0,0);\nC[1] = rotate(60,B)*(A);\nC[2] = rotate(60,A)*(B);\n\ndraw(C[1]--A--C[2]--B--cycle);\ndraw(A--B);\n\nlabel(\"$a$\", A, SE);\nlabel(\"$b$\", B, NW);\nlabel(\"$c_1$\", C[1], NE);\nlabel(\"$c_2$\", C[2], SW);\n[/asy]\n\nThen for either position of $c,$\n\\[\\frac{c - a}{b - a}\\]is equal to $e^{\\pm \\pi i/6}.$  Note that both $z = e^{\\pm \\pi i/6}$ satisfy $z^2 - z + 1 = 0.$  Thus,\n\\[\\left( \\frac{c - a}{b - a} \\right)^2 - \\frac{c - a}{b - a} + 1 = 0.\\]This simplifies to\n\\[a^2 + b^2 + c^2 = ab + ac + bc.\\]Then\n\\[(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2ac + 2bc = 3(ab + ac + bc).\\]Hence,\n\\[|ab + ac + bc| = \\frac{|a + b + c|^2}{3} = \\frac{36^2}{3} = \\boxed{432}.\\]"
+}

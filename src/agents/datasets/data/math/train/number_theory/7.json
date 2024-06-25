@@ -1,0 +1,6 @@
+{
+    "problem": "When the binary number $100101110010_2$ is divided by 4, what is the remainder (give your answer in base 10)?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The binary number $b_k b_{k - 1} \\dots b_2 b_1 b_0$ is equal to $2^k b_k + 2^{k - 1} b_{k - 1} + \\dots + 4b_2 + 2b_1 + b_0$, so when this number is divided by 4, the remainder is $2b_1 + b_0$.  Hence, when the number $100101110010_2$ is divided by 4, the remainder is $2 \\cdot 1 + 0 = \\boxed{2}$."
+}

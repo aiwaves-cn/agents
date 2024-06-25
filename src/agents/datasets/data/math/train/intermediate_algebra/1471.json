@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that all four of the numbers \\[2 - \\sqrt{5}, \\;4+\\sqrt{10}, \\;14 - 2\\sqrt{7}, \\;-\\sqrt{2}\\]are roots of the same nonzero polynomial with rational coefficients. What is the smallest possible degree of the polynomial?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Because the polynomial has rational coefficients, the radical conjugate of each of the four roots must also be roots of the polynomial.  Therefore, the polynomial has at least $4 \\times 2 = 8$ roots, so its degree is at least 8.\n\nNote that for each of the four numbers, the monic quadratic with that number and its conjugate has rational coefficients.  For example, the quadratic with roots $2 - \\sqrt{5}$ and $2 + \\sqrt{5}$ is\n\\[(x - 2 + \\sqrt{5})(x - 2 - \\sqrt{5}) = (x - 2)^2 - 5 = x^2 - 4x - 1.\\]Thus, there exists such a polynomial of degree $\\boxed{8},$ so this is the minimum."
+}

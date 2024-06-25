@@ -1,0 +1,6 @@
+{
+    "problem": "A number $x$ factors as $107\\cdot109^5$, and $107$ and $109$ are primes. What is the exponent of $109$ in the prime factorization of $x^{11}$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We have $$x^{11}=(107\\cdot109^5)^{11}=107^{11}(109^5)^{11}=107^{11}109^{55},$$ so our answer is $\\boxed{55}$."
+}

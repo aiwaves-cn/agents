@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)$ is a monic quartic polynomial such that $f(-1)=-1$, $f(2)=-4$, $f(-3)=-9$, and $f(4)=-16$, find $f(1)$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $g(x) = f(x) + x^2.$  Then $g(x)$ is also a monic quartic polynomial, and $g(-1) = g(2) = g(-3) = f(4) = 0,$ so\n\\[g(x) = (x + 1)(x - 2)(x + 3)(x - 4).\\]Hence, $f(x) = (x + 1)(x - 2)(x + 3)(x - 4) - x^2.$  In particular, $f(1) = (2)(-1)(4)(-3) - 1 = \\boxed{23}.$"
+}

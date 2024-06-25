@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest value of $x$, if $\\frac{x}{5} + \\frac{1}{5x} = \\frac{1}{2}$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We multiply both sides of the equation by $10x$ to clear the fractions, leaving us with $2x^2 + 2 = 5x$. Rearranging the terms, we have $2x^2 - 5x + 2 = 0$. We can now solve for $x$ by factoring: $(2x - 1)(x - 2) = 0$. We could also use the quadratic formula:  $$x = \\frac{5 \\pm \\sqrt{(-5)^2 - 4(2)(2)}}{4}.$$Either way, we find that $x = 1/2$ or $x = 2$. Since we want the largest value of $x$, our answer is $\\boxed 2$."
+}

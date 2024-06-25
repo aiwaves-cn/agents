@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of positive integers $n$ for which the graph of\n\\[y = \\frac{(x + 3)(x - 7)^5}{(x - 1)(x - 7)^n}\\]has a hole at $x = 7.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The graph has a hole at $x = 7$ as long as there is at least one factor of $x - 7$ in the denominator, but at most five.  (If there were more than five, then there would be a vertical asymptote at $x = 7.$)  Hence, the possible values of $n$ are 1, 2, 3, 4, 5, for a total of $\\boxed{5}$ possible values."
+}

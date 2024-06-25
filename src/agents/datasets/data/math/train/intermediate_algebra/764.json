@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x) = 4-3x$ and $g(x) = x^2 +1$, find $f(g(\\sqrt{2}))$.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n$$g(\\sqrt{2}) = (\\sqrt{2})^2 + 1 = 2 +1 = 3.$$Then,\n$$f(g(\\sqrt{2})) = f(3) = 4 - 3(3) = 4 - 9 = \\boxed{-5}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For how many positive integers $n>1$ is it true that $2^{24}$ is a perfect $n^{\\text{th}}$ power?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that $2^{24}$ is a perfect $n$th power if and only if $n$ is a divisor of 24. The factors of 24 which are greater than 1 are 2, 3, 4, 6, 8, 12, and 24, so we have $\\boxed{7}$ possible values of $n$."
+}

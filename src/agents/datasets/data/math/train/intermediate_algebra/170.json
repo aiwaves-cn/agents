@@ -1,0 +1,6 @@
+{
+    "problem": "A polynomial of degree four with leading coefficient 1 and integer coefficients has two real zeros, both of which are integers. Which of the following can also be a zero of the polynomial?\n\n(A) $\\frac{1 + i \\sqrt{11}}{2}$\n\n(B) $\\frac{1 + i}{2}$\n\n(C) $\\frac{1}{2} + i$\n\n(D) $1 + \\frac{i}{2}$\n\n(E) $\\frac{1 + i \\sqrt{13}}{2}$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "If $r$ and $s$ are the integer zeros, the polynomial can be written in the form $$P(x)=(x-r)(x-s)(x^2+\\alpha x + \\beta).$$The coefficient of $x^3$, $\\alpha-(r+s)$, is an integer, so $\\alpha$ is an integer. The coefficient of $x^2$, $\\beta - \\alpha(r+s)+rs$, is an integer, so $\\beta$ is also an integer. Applying the quadratic formula gives the remaining zeros as $$\\frac{1}{2}(-\\alpha \\pm \\sqrt{\\alpha^2-4\\beta}) = -\\frac{\\alpha}{2} \\pm i\\frac{\\sqrt{4\\beta-\\alpha^2}}{2}.$$Answer choices (A), (B), (C), and (E) require that $\\alpha=-1$, which implies that the imaginary parts of the remaining zeros have the form $\\pm\\sqrt{4\\beta-1}/2$. This is true only for choice $\\boxed{\\text{(A)}}$.\nNote that choice (D) is not possible since this choice requires $\\alpha = -2$, which produces an imaginary part of the form $\\sqrt{\\beta-1}$, which cannot be $\\frac{1}{2}$."
+}

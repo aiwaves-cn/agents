@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ and $y$ are positive integers less than $20$ for which $x + y + xy = 76$, what is the value of $x + y$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "If we add $1$ to both sides of the equation, the left hand side may be factored using Simon's Favorite Factoring Trick. Thus, $$xy + x + y + 1 = (x+1)(y+1) = 77.$$ Since $x,y$ are positive integers, then $x+1, y+1$ must be a pair of factors of $77$, which are given by $\\{x+1,y+1\\} = \\{1,77\\},\\{7,11\\}$. Thus, $\\{x,y\\} = \\{0,76\\},\\{6,10\\}$, though only the latter satisfies the given conditions. Hence, $x+y = 6 + 10 = \\boxed{16}$."
+}

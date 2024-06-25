@@ -1,0 +1,6 @@
+{
+    "problem": "The perimeter of parallelogram $ABCD$ is 40, and its altitudes are 4 and 7.  Compute $\\sin A.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Label the parallelogram so that the distance between sides $\\overline{BC}$ and $\\overline{AD}$ is 4, and the distance between sides $\\overline{AB}$ and $\\overline{CD}$ is 7.  Then $AB = \\frac{4}{\\sin A}$ and $AD = \\frac{7}{\\sin A}.$\n\n[asy]\nunitsize(1.5 cm);\n\npair A, B, C, D, P, Q;\n\nA = (0,0);\nB = 2*dir(60);\nC = B + (3,0);\nD = (3,0);\nP = (B + reflect(A,D)*(B))/2;\nQ = (D + reflect(A,B)*(D))/2;\n\ndraw(A--B--C--D--cycle);\ndraw(B--P,dashed);\ndraw(D--Q,dashed);\n\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, N);\nlabel(\"$C$\", C, NE);\nlabel(\"$D$\", D, S);\nlabel(\"$4$\", interp(B,P,0.8), E, red);\nlabel(\"$7$\", interp(D,Q,0.5), NE, red);\nlabel(\"$\\frac{4}{\\sin A}$\", (A + B)/2, NW, red);\nlabel(\"$\\frac{7}{\\sin A}$\", (A + D)/2, S, red);\n[/asy]\n\nTherefore, the perimeter of $ABCD$ is\n\\[\\frac{4}{\\sin A} + \\frac{7}{\\sin A} + \\frac{4}{\\sin A} + \\frac{7}{\\sin A} = \\frac{22}{\\sin A} = 40.\\]Hence, $\\sin A = \\boxed{\\frac{11}{20}}.$"
+}

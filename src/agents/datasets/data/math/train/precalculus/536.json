@@ -1,0 +1,6 @@
+{
+    "problem": "In equilateral triangle $ABC,$ let points $D$ and $E$ trisect $\\overline{BC}$.  Find $\\sin \\angle DAE.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Without loss of generality, let the triangle sides have length 6.\n\n[asy]\npair A = (1, sqrt(3)), B = (0, 0), C= (2, 0);\npair M = (1, 0);\npair D = (2/3, 0), E = (4/3, 0);\ndraw(A--B--C--cycle);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, S);\nlabel(\"$M$\", M, S);\ndraw(A--D);\ndraw(A--E);\ndraw(A--M);[/asy]\n\nLet $M$ be the midpoint of $\\overline{DE}$. Then triangle $ACM$ is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle with $MC = 3$, $AC = 6,$ and $AM = 3\\sqrt{3}.$ Since triangle $AME$ is right, we use the Pythagorean Theorem to find $AE = 2 \\sqrt{7}$.\n\nThe area of triangle $DAE$ is\n\\[\\frac{1}{2} \\cdot DE \\cdot AM = \\frac{1}{2} \\cdot 2 \\cdot 3 \\sqrt{3} = 3 \\sqrt{3}.\\]The area of triangle $DAE$ is also\n\\[\\frac{1}{2} \\cdot AD \\cdot AE \\cdot \\sin \\angle DAE = 14 \\sin \\angle DAE.\\]Therefore, $\\sin \\angle DAE = \\boxed{\\frac{3 \\sqrt{3}}{14}}.$"
+}

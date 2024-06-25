@@ -1,0 +1,6 @@
+{
+    "problem": "In coordinate space, $A = (-2,3,5),$ $B = (7,0,-1),$ $C = (-3,-2,-5),$ and $D = (3,4,7).$  Find the intersection point of lines $AB$ and $CD.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{a} = \\begin{pmatrix} -2 \\\\ 3 \\\\ 5 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} 7 \\\\ 0 \\\\ -1 \\end{pmatrix},$ $\\mathbf{c} = \\begin{pmatrix} -3 \\\\ -2 \\\\ -5 \\end{pmatrix},$ and $\\mathbf{d} = \\begin{pmatrix} 3 \\\\ 4 \\\\ 7 \\end{pmatrix}.$  Then line $AB$ is parameterized by\n\\[\\mathbf{a} + t (\\mathbf{b} - \\mathbf{a}) = \\begin{pmatrix} -2 + 9t \\\\ 3 - 3t \\\\ 5 - 6t \\end{pmatrix}.\\]Also, line $CD$ is parameterized by\n\\[\\mathbf{c} + s (\\mathbf{d} - \\mathbf{c}) = \\begin{pmatrix} -3 + 6s \\\\ -2 + 6s \\\\ -5 + 12s \\end{pmatrix}.\\]Thus, we want\n\\begin{align*}\n-2 + 9t &= -3 + 6s, \\\\\n3 - 3t &= -2 + 6s, \\\\\n5 - 6t &= -5 + 12s.\n\\end{align*}Solving this system, we find $t = \\frac{1}{3}$ and $s = \\frac{2}{3}.$  We can find the point of intersection as $\\boxed{(1,2,3)}.$"
+}

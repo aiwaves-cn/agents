@@ -1,0 +1,6 @@
+{
+    "problem": "Ed and Sue bike at equal and constant rates. Similarly, they jog at equal and constant rates, and they swim at equal and constant rates. Ed covers $74$ kilometers after biking for $2$ hours, jogging for $3$ hours, and swimming for $4$ hours, while Sue covers $91$ kilometers after jogging for $2$ hours, swimming for $3$ hours, and biking for $4$ hours. Their biking, jogging, and swimming rates are all whole numbers of kilometers per hour. Find the sum of the squares of Ed's biking, jogging, and swimming rates.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let the biking rate be $b$, swimming rate be $s$, jogging rate be $j$, all in km/h.\nWe have $2b + 3j + 4s = 74,2j + 3s + 4b = 91$. Subtracting the second from twice the first gives $4j + 5s = 57$. Mod 4, we need $s\\equiv1\\pmod{4}$. Thus, $(j,s) = (13,1),(8,5),(3,9)$.\n$(13,1)$ and $(3,9)$ give non-integral $b$, but $(8,5)$ gives $b = 15$. Thus, our answer is $15^{2} + 8^{2} + 5^{2} = \\boxed{314}$."
+}

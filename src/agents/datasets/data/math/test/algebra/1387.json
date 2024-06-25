@@ -1,0 +1,6 @@
+{
+    "problem": "Let  \\[f(x) =\n\\begin{cases}\nk(x) &\\text{if }x>3, \\\\\nx^2-6x+12&\\text{if }x\\leq3.\n\\end{cases}\n\\] Find the function $k(x)$ such that $f$ is its own inverse.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Notice that since the linear term of the quadratic is $-6,$ the vertex of the parabola that is the left side of $f$ is at $x=3.$ Therefore it might help to complete the square. \\[x^2-6x+12=(x^2-6x+9)+3=(x-3)^2+3.\\]We want to have that $f(f(x))=x$ for every $x.$ Since $f(f(3))=3,$ we know $f$ is its own inverse at $x=3,$ so we can restrict our attention to $x\\neq 3.$\n\nSince $f$ applied to any number less than $3$ returns a number greater than $3,$ and we can get all numbers greater than $3$ this way, applying $f$ to any number greater than $3$ must give a number less than $3.$ Therefore $k(x)<3$ for any $x>3.$\n\nIf $x>3$ and $f$ is its own inverse then \\[x=f(f(x))=f(k(x))=3+\\left(k(x)-3\\right)^2,\\]where in the last step we used that $k(x)<3.$ Subtracting $3$ from both sides gives \\[\\left(k(x)-3\\right)^2 = x-3.\\]Since we must have $k(x) < 3,$ we know that $k(x) - 3$ is the negative number whose square is $x-3.$ Therefore, we have $k(x) - 3 = -\\sqrt{x-3}.$ Solving this for $k(x)$ gives  \\[k(x)=\\boxed{-\\sqrt{x-3}+3}.\\]"
+}

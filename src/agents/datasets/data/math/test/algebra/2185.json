@@ -1,0 +1,6 @@
+{
+    "problem": "How many square units are in the region satisfying the inequalities $y \\ge |x|$ and $y \\le -|x|+3$? Express your answer as a decimal.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The graph of the two inequalities is shown below:\n\n[asy]\nLabel f;\n\nf.p=fontsize(4);\n\nxaxis(-3,3,Ticks(f, 1.0));\n\nyaxis(-0,4,Ticks(f, 1.0));\n\nfill((0,0)--(-1.5,1.5)--(0,3)--(1.5,1.5)--cycle, grey);\ndraw((0,0)--(-3,3), Arrow);\ndraw((0,0)--(3,3), Arrow);\ndraw((0,3)--(-3,0), Arrow);\ndraw((0,3)--(3,0), Arrow);\nlabel(\"$A$\", (-1.5,1.5), W);\nlabel(\"$B$\", (0,3), N);\nlabel(\"$C$\", (1.5,1.5), E);\nlabel(\"$D$\", (0,0), S);\n[/asy]\n\nThe shaded region is the solution set to the two given inequalities. Angle $ADC$ is a right angle because $\\overline{AD}$ has slope -1 and $\\overline{DC}$ has slope 1, and the two slopes are negative reciprocals. Similarly, the other three angles between sides bounding the shaded region are also right angles. Since $AD=DC$ by symmetry, $ABCD$ is a square. A diagonal of the square is $BD$, which measures 3 units. So a side of the square measures $3/\\sqrt{2}$ units and the area is $(3/\\sqrt{2})^2=\\boxed{4.5}$ square units."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "$\\triangle ABC$ has side lengths 6, 8 and 10, as shown.  Each of the side lengths of $\\triangle ABC$ is increased by $50\\%$, forming a new triangle, $\\triangle DEF$.  What is the area of $\\triangle DEF?$",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since the side lengths of $\\triangle DEF$ are $50\\%$ larger than the side lengths of $\\triangle ABC$, then these new side lengths are $\\frac{3}{2}(6)=9$, $\\frac{3}{2}(8)=12$, and $\\frac{3}{2}(10)=15$.\n\nWe know that $\\triangle DEF$ is right-angled, and this right angle must occur between the sides of length 9 and 12 (since it is opposite the longest side). Therefore, the area of $\\triangle DEF$ is    $$\\frac{1}{2}(9)(12)=\\boxed{54}.$$"
+}

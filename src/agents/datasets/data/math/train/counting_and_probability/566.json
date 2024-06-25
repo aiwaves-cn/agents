@@ -1,0 +1,6 @@
+{
+    "problem": "A fair coin is flipped $7$ times. What is the probability that at least $5$ consecutive flips come up heads?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "First, we count the number of total outcomes. Each toss has $2$ possibilities - heads or tails - so the $7$ tosses have $2^7 = 128$ possible outcomes.\n\nTo count the number of outcomes with at least $5$ consecutive heads, we need to use casework.\n\n$\\bullet$  Case 1: Exactly $5$ heads. There are three positions for a string of $5$ heads in a row, so there are $3$ possibilities in this case.\n\n$\\bullet$  Case 2: Exactly $6$ heads in a row. There are two positions for a string of $6$ heads in a row, so there are $2$ possibilities in this case.\n\n$\\bullet$  Case 3: Exactly $6$ heads, but not six in a row. There are two possibilities: either the first five coins and the last coin are heads, or the last five coins and the first coin are heads.\n\n$\\bullet$  Case 4: $7$ heads. There's only $1$ way to do this -- all $7$ tosses must be heads.\n\nSo there are $3 + 2 + 2 + 1 = 8$ successful outcomes, hence the probability is $\\frac{8}{128}=\\boxed{\\frac{1}{16}}.$"
+}

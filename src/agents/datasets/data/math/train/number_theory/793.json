@@ -1,0 +1,6 @@
+{
+    "problem": "If $a,b,c$ are integers from the set of positive integers less than $7$ such that \\begin{align*}\nabc&\\equiv 1\\pmod 7,\\\\\n5c&\\equiv 2\\pmod 7,\\\\\n6b&\\equiv 3+b\\pmod 7,\n\\end{align*}then what is the remainder when $a+b+c$ is divided by $7$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "From the second given congruence, we have $$c\\equiv 3\\cdot 5c\\equiv 3\\cdot 2\\equiv 6\\pmod 7.$$From the third given congruence, we have $$5b\\equiv 3\\pmod 7$$$$\\implies b\\equiv 3\\cdot 5b\\equiv 3\\cdot 3\\equiv 2\\pmod 7.$$Then, from the first given congruence, we have $$1\\equiv abc a\\cdot 6\\cdot 2\\equiv 12a\\equiv 5a\\pmod 7$$$$\\implies a\\equiv 3\\cdot 5a\\equiv 3\\cdot 1\\equiv 3\\pmod 7.$$Thus, $$a+b+c\\equiv 3+2+6\\equiv \\boxed{4}\\pmod 7.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive  cubes  divide $3!\\cdot 5!\\cdot 7!\\,$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Written  as a product of primes, we have \\[\n3!\\cdot 5!\\cdot 7!=2^8\\cdot 3^4\\cdot 5^2\\cdot 7.\n\\]A cube that is a factor has a prime factorization of the form $2^p\\cdot 3^q\\cdot 5^r\\cdot 7^s$, where $p$, $q$, $r$, and $s$ are all multiples of 3. There are 3 possible values for $p$, which are  0, 3, and 6. There are 2 possible values for $q$, which are $0$ and $3$. The only value  for $r$ and for $s$ is 0. Hence, there are $\\boxed{6} = 3\\cdot 2\\cdot1\\cdot1$ distinct cubes that divide $3!\\cdot 5!\\cdot 7!$. They are\n\n\\begin{align*}\n1 &= 2^03^05^07^0, \\quad 8 = 2^33^05^07^0,\\quad 27 = 2^03^35^07^0,\\\\\n64 &= 2^63^05^07^0,\\quad 216 = 2^33^35^07^0,\\quad\\text{and}\\quad 1728 = 2^63^35^07^0.\n\\end{align*}"
+}

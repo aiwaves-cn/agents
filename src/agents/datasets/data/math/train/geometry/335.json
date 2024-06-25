@@ -1,0 +1,6 @@
+{
+    "problem": "Circle $T$ has a circumference of $12\\pi$ inches, and segment $XY$ is a diameter. If the measure of angle $TXZ$ is $60^{\\circ}$, what is the length, in inches, of segment $XZ$?\n\n[asy]\nsize(150);\ndraw(Circle((0,0),13),linewidth(1));\ndraw((-12,-5)--(-5,-12)--(12,5)--cycle,linewidth(1));\ndot((0,0));\n\nlabel(\"T\",(0,0),N);\nlabel(\"X\",(-12,-5),W);\nlabel(\"Z\",(-5,-12),S);\nlabel(\"Y\",(12,5),E);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "We can begin by using the circumference to solve for the radius of the circle.  If the circumference is $12\\pi$, then $2\\pi r=12\\pi$ which implies $r=6$.  Now, we can draw in the radius $TZ$ as shown: [asy]\nsize(150);\ndraw(Circle((0,0),13),linewidth(1));\ndraw((-12,-5)--(-5,-12)--(12,5)--cycle,linewidth(1));\ndraw((0,0)--(-5,-12),linewidth(1)+linetype(\"0 4\"));\ndot((0,0));\n\nlabel(\"T\",(0,0),N);\nlabel(\"X\",(-12,-5),W);\nlabel(\"Z\",(-5,-12),S);\nlabel(\"Y\",(12,5),E);\n\n[/asy]\n\nWe know that $TX=TZ$, since both are radii of length 6.  We are given $\\angle TXZ=60^{\\circ}$, so $\\angle TZX=60^{\\circ}$, and triangle $TXZ$ is equilateral.  Thus, $TX=TZ=XZ=\\boxed{6}$."
+}

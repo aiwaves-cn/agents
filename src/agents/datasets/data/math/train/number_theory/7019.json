@@ -1,0 +1,6 @@
+{
+    "problem": "Let $n$ be the smallest positive integer that is a multiple of $75$ and has exactly $75$ positive integral divisors, including $1$ and itself. Find $\\frac{n}{75}$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The prime factorization of $75 = 3^15^2 = (2+1)(4+1)(4+1)$. For $n$ to have exactly $75$ integral divisors, we need to have $n = p_1^{e_1-1}p_2^{e_2-1}\\cdots$ such that $e_1e_2 \\cdots = 75$. Since $75|n$, two of the prime factors must be $3$ and $5$. To minimize $n$, we can introduce a third prime factor, $2$. Also to minimize $n$, we want $5$, the greatest of all the factors, to be raised to the least power. Therefore, $n = 2^43^45^2$ and $\\frac{n}{75} = \\frac{2^43^45^2}{3 \\cdot 5^2} = 16 \\cdot 27 = \\boxed{432}$."
+}

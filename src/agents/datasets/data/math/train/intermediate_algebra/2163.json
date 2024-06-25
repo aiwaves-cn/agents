@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\frac{3 + 5i}{3 - 5i} + \\frac{3 - 5i}{3 + 5i}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\n\\frac{3 + 5i}{3 - 5i} + \\frac{3 - 5i}{3 + 5i} &= \\frac{(3 + 5i)(3 + 5i)}{(3 - 5i)(3 + 5i)} + \\frac{(3 - 5i)(3 - 5i)}{(3 + 5i)(3 - 5i)} \\\\\n&= \\frac{9 + 15i + 15i + 25i^2}{9 - 25i^2} + \\frac{9 - 15i - 15i + 25i^2}{9 - 25i^2} \\\\\n&= \\frac{9 + 30i - 25 + 9 - 30i - 25}{9 + 25} \\\\\n&= \\frac{-32}{34} = \\boxed{-\\frac{16}{17}}.\n\\end{align*}"
+}

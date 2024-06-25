@@ -1,0 +1,6 @@
+{
+    "problem": "We have positive integers $a,$ $b,$ and $c$ such that $a > b > c.$ When $a,$ $b,$ and $c$ are divided by $19$, the remainders are $4,$ $2,$ and $18,$ respectively.\n\nWhen the number $2a + b - c$ is divided by $19$, what is the remainder?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "First of all, we know that $a > c,$ we do not have to worry about $2a + b - c$ being negative. In any case, we have: \\begin{align*}\na &\\equiv 4\\pmod{19}, \\\\\nb &\\equiv 2\\pmod{19}, \\\\\nc &\\equiv 18\\pmod{19}.\n\\end{align*}Adding as needed, we have $2a + b - c = a + a + b - c \\equiv 4 + 4 + 2 - 18 \\equiv -8 \\equiv 11 \\pmod{19}.$ Therefore, our answer is $\\boxed{11}.$"
+}

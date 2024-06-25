@@ -1,0 +1,6 @@
+{
+    "problem": "Find the angle between the vectors $\\begin{pmatrix} 5 \\\\ -3 \\\\ -4 \\end{pmatrix}$ and $\\begin{pmatrix} 0 \\\\ -7 \\\\ -1 \\end{pmatrix},$ in degrees.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "If $\\theta$ is the angle between the vectors, then\n\\[\\cos \\theta = \\frac{\\begin{pmatrix} 5 \\\\ -3 \\\\ -4 \\end{pmatrix} \\cdot \\begin{pmatrix} 0 \\\\ -7 \\\\ -1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 5 \\\\ -3 \\\\ -4 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 0 \\\\ -7 \\\\ -1 \\end{pmatrix} \\right\\|} = \\frac{(5)(0) + (-3)(-7) + (-4)(-1)}{\\sqrt{50} \\cdot \\sqrt{50}} = \\frac{25}{50} = \\frac{1}{2}.\\]Hence, $\\theta = \\boxed{60^\\circ}.$"
+}

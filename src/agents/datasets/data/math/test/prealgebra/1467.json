@@ -1,0 +1,6 @@
+{
+    "problem": "In a class of $30$ students, exactly $7$ have been to Mexico and exactly $11$ have been to England. Of these $30$ students, $4$ have been to both Mexico and England. How many students in this class have not been to Mexico or England?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Of the $7$ students that have been to Mexico, $4$ have also been to England. Therefore, $7-4=3$ students have been to Mexico and not England.\n\nOf the $11$ students that have been to England, $4$ have also been to Mexico. Therefore, $11-4=7$ students have been to England and not Mexico.\n\nTherefore, $3$ students have been to Mexico only, $7$ students have been to England only, and $4$ students have been to both. In the class of $30$ students, this leaves $30-3-7-4=\\boxed{16}$ students who have not been to Mexico or England."
+}

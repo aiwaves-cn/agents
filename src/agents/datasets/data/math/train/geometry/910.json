@@ -1,0 +1,6 @@
+{
+    "problem": "Quadrilateral $ABCD$ has right angles at $B$ and $D$, and $AC=3$. If $ABCD$ has two sides with distinct integer lengths, then what is the area of $ABCD$? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Triangles $\\triangle ABC$ and $\\triangle ADC$ are both right and share hypotenuse $AC$, which has length $3$. Thus we have $$AB^2+BC^2 = AD^2+DC^2 = 3^2 = 9.$$The only possible integer values for $AB,$ $BC,$ $AD,$ or $DC$ are $1$ and $2$. Thus we may assume that one leg of $\\triangle ABC$ has length $1$ and one leg of $\\triangle ADC$ has length $2$ (it doesn't matter if the labels $B$ and $D$ have to be swapped to make this true).\n\nIf one leg of $\\triangle ABC$ has length $1,$ then the other leg has length $\\sqrt{3^2-1^2} = \\sqrt{8} = 2\\sqrt{2}$. If one leg of $\\triangle ADC$ has length $2,$ then the other leg has length $\\sqrt{3^2-2^2}= \\sqrt{5}$. Thus, quadrilateral $ABCD$ is divided by its diagonal $AC$ into right triangles of area $\\frac{1\\cdot2\\sqrt 2}{2}=\\sqrt 2$ and $\\frac{2\\cdot\\sqrt 5}{2}=\\sqrt 5$. So, the area of quadrilateral $ABCD$ is $\\boxed{\\sqrt 2+\\sqrt 5}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If we express $2x^2 + 6x + 11$ in the form $a(x - h)^2 + k$, then what is $h$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We complete the square.  First, we factor 2 out of the terms $2x^2 + 6x$ to get $2(x^2 + 3x)$.  We can square $x + 3/2$ to get $x^2 + 3x + 9/4$, so $h = \\boxed{-\\frac{3}{2}}$."
+}

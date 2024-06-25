@@ -1,0 +1,6 @@
+{
+    "problem": "When four positive integers are divided by $11$, the remainders are $2,$ $4,$ $6,$ and $8,$ respectively.\n\nWhen the sum of the four integers is divided by $11$, what is the remainder?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We can call the four integers in this problem $a,$ $b,$ $c$, and $d$. Then we have \\begin{align*}\na &\\equiv 2\\pmod{11}, \\\\\nb &\\equiv 4\\pmod{11}, \\\\\nc &\\equiv 6\\pmod{11}, \\\\\nd &\\equiv 8\\pmod{11}.\n\\end{align*}Adding these congruences, we have \\begin{align*}\na+b+c+d &\\equiv 2+4+6+8 \\\\\n&\\equiv 20\\pmod{11}.\n\\end{align*}Therefore, $a+b+c+d$ has the same remainder as $20$ upon division by $11$. This remainder is $\\boxed{9}$."
+}

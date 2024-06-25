@@ -1,0 +1,6 @@
+{
+    "problem": "Let GCF(a, b) be the abbreviation for the greatest common factor of a and b, and let LCM(c, d) be the abbreviation for the least common multiple of c and d. What is GCF(LCM(8, 14), LCM(7, 12))?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The least common multiple of $8=2^3$ and $14=2\\cdot 7$ is $2^3\\cdot 7 = 56$. The least common multiple of 7 and 12 is $7\\cdot 12=84$. The greatest common factor of $56=2^3\\cdot 7$ and $84=2^2\\cdot 3 \\cdot 7$ is $2^2\\cdot 7=\\boxed{28}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least four-digit whole number that is both a perfect square and a perfect cube?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let $n$ be the least four-digit whole number that is both a perfect square and a perfect cube.  In order for a number to be a perfect cube and a perfect square, it must be a perfect sixth power. Now we choose the smallest $a$ such that $n$ is four-digit: $2^6=64$, $3^6=729$, $4^6=4096$. Thus, $n=\\boxed{4096}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The length of the diameter of this spherical ball is equal to the height of the box in which it is placed. The box is a cube and has an edge length of 30 cm. How many cubic centimeters of the box are not occupied by the solid sphere? Express your answer in terms of $\\pi$. [asy]\ndraw(Circle((7.5,7.5),5));\ndraw((7.5,6.2)..(2.5,7.5)--(12.5,7.5)..cycle);\ndraw((7.5,8.8)..(2.5,7.5)--(12.5,7.5)..cycle,linetype(\"2 4\"));\nfill((2.6,7.4)--(2.6,7.6)--(12.4,7.6)--(12.4,7.4)--cycle,white);\ndot((7.5,7.5));\ndraw((0,0)--(10,0)--(10,10)--(0,10)--cycle);\ndraw((0,10)--(5,15)--(15,15)--(10,10));\ndraw((15,15)--(15,5)--(10,0));\ndraw((0,0)--(5,5)--(15,5),dashed); draw((5,5)--(5,15),dashed);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The box has volume $30^3=27000$ cubic cm.\n\nThe sphere has radius $30/2=15$ and volume $\\frac{4}{3}\\pi (15^3) = 2\\cdot 15 \\cdot 2\\cdot 15\\cdot 5\\pi = 30^2\\cdot 5\\pi = 4500\\pi$ cubic cm.\n\nThus, the volume of the space in the box not occupied by the sphere is $\\boxed{27000-4500\\pi}$ cubic cm."
+}

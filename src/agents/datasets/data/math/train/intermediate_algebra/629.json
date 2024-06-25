@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that the graph of \\[2x^2 + y^2 + 8x - 10y + c = 0\\]consists of a single point. (In this case, we call the graph a degenerate ellipse.) Find $c.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We try to rewrite the given equation in the standard form for an ellipse. Completing the square in both variables, we have \\[\\begin{aligned} 2(x^2+4x) + (y^2-10y) + c &= 0 \\\\ 2(x^2+4x+4) + (y^2-10y+25) + c &= 33 \\\\ 2(x+2)^2 + (y-5)^2 &= 33-c. \\end{aligned}\\]To get this equation in standard form, we would normally try to divide by $33-c,$ and if $33-c>0,$ then we get the standard form of a (non-degenerate) ellipse. But we cannot do so if $33-c=0.$ Indeed, if $33-c=0,$ then only one point $(x,y)$ satisfies the equation, because both $x+2$ and $y+5$ must be zero for the left-hand side to equal zero. (And if $33-c < 0$, then no points satisfy the equation, because the right-hand side is always nonnegative.) Thus, the value of $c$ that makes a degenerate ellipse satisfies $33-c=0,$ so $c=\\boxed{33}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Square $ ABCD $ has side length $10$. Point $E$ is on $\\overline{BC}$, and the area of $ \\triangle ABE $ is $40$. What is $ BE $? [asy]size(4cm);\npair A,B,C,D,E;\nA=(0,0);\nB=(0,50);\nC=(50,50);\nD=(50,0);\nE = (30,50);\ndraw(A--B);\ndraw(B--E);\ndraw(E--C);\ndraw(C--D);\ndraw(D--A);\ndraw(A--E);\ndot(A);\ndot(B);\ndot(C);\ndot(D);\ndot(E);\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,NW);\nlabel(\"$C$\",C,NE);\nlabel(\"$D$\",D,SE);\nlabel(\"$E$\",E,N);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "The area of $\\triangle ABC$ is $\\tfrac{1}{2} \\cdot AB \\cdot BE.$ With $AB=10$, we get $\\tfrac{1}{2} \\cdot 10 \\cdot BE = 40,$ or $5 \\cdot BE = 40.$ Thus, $BE = \\tfrac{40}{5} = \\boxed{8}.$"
+}

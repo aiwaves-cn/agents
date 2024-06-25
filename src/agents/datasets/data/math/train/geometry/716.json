@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $x$ if a cube's volume is $5x$ cubic units and its surface area is $x$ square units?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since the cube's volume is $5x$ cubic units, each side measures $\\sqrt[3]{5x}$ units. The surface area is then $6(\\sqrt[3]{5x})^2$. We are told the surface area is also $x$. We have the equation $6(\\sqrt[3]{5x})^2=x$ Solving for $x$, we find that $x=\\boxed{5400}$."
+}

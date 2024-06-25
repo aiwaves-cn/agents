@@ -1,0 +1,6 @@
+{
+    "problem": "Find all complex numbers $z$ such that\n\\begin{align*}\n\\left| \\frac{z - 4}{z - 8} \\right| &= 1, \\\\\n\\left| \\frac{z - 12}{z - 8i} \\right| &= \\frac{5}{3}.\n\\end{align*}Enter all the solutions, separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.\n\nFrom the equation $\\left| \\frac{z - 4}{z - 8} \\right| = 1,$ $|z - 4| = |z - 8|.$  Then\n\\[|x + yi - 4| = |x + yi - 8|,\\]so $(x - 4)^2 + y^2 = (x - 8)^2 + y^2.$  This simplifies to $x = 6.$\n\nFrom the equation $\\left| \\frac{z - 12}{z - 8i} \\right| = \\frac{5}{3},$ $3|z - 12| = 5|z - 8i|.$  Then\n\\[3|6 + yi - 12| = 5|6 + yi - 8i|,\\]so $9(36 + y^2) = 25(36 + (y - 8)^2).$  This simplifies to $16y^2 - 400y + 2176 = 0,$ which factors as $16(y - 8)(y - 17) = 0.$  Hence, $y = 8$ or $y = 17.$\n\nThus, the solutions in $z$ are $\\boxed{6 + 8i, 6 + 17i}.$"
+}

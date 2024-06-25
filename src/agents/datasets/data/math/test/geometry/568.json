@@ -1,0 +1,6 @@
+{
+    "problem": "A square with sides of 12 units is inscribed in a circle. What is the value of $K$ if the area of the circle is $K\\pi$ square units?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The diagonal of a square is the hypotenuse of a 45-45-90 right triangle whose legs are the sides of the square.  Therefore, the diagonal of the square measures $12\\sqrt{2}$ units.  The diagonal of the square is a diameter of the circle, so the radius of the circle is $6\\sqrt{2}$ units.  The area of the circle is $\\pi(6\\sqrt{2})^2=72\\pi$, so $K=\\boxed{72}$."
+}

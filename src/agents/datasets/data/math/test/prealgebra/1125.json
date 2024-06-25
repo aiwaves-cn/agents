@@ -1,0 +1,6 @@
+{
+    "problem": "At the national curling championships, there are three teams of four players each. After the championships are over, the very courteous participants each shake hands three times with every member of the opposing teams, and once with each member of their own team.\n\nHow many handshakes are there in total?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "For each participant, there are 8 opponents to shake hands with, and 3 team members to shake hands with, giving $3\\times8+3=27$ handshakes for each individual participant.\n\nThere are 12 players in total, which offers $12\\times27=324$ handshakes, but since a handshake takes place between two people, we've counted every handshake twice.\n\nThe final answer is $\\dfrac{324}{2}=\\boxed{162}$ handshakes."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What percent of the integers from 1 to 100, inclusive, leave remainder 1 when divided by 5?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The integers from 1 to 100 that leave a remainder of 1 are 1, 6, 11, $\\dots$, 96.  If we subtract 1 from each of these numbers, we get 0, 5, 10, $\\dots$, 95.  If we divide each of these numbers by 5, then we get 0, 1, 2, $\\dots$, 19.  Finally, if we add 1 to each of these numbers, then we get 1, 2, 3, $\\dots$, 20.  Therefore, the number of terms in 1, 6, 11, $\\dots$, 96 is the same as the number of terms in 1, 2, 3, $\\dots$, 20, which is $\\boxed{20}$.  (This number is the same as the percentage since we are dealing with 100 numbers.)"
+}

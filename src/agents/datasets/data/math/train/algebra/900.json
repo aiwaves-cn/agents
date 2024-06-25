@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest $a$ such that $\\frac{7\\sqrt{(2a)^2+(1)^2}-4a^2-1}{\\sqrt{1+4a^2}+3}=2$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Notice that the quantity $4a^2+1$ appears in various forms throughout the expression on the left-hand side. So let $4a^2+1=x$ to simplify the expression to $\\frac{7\\sqrt{x}-x}{\\sqrt{x}+3}$. This still looks messy, so let $\\sqrt{x}=y$. Our equation becomes \\begin{align*}\n\\frac{7y-y^2}{y+3}&=2.\n\\end{align*} Clearing denominators, rearranging, and factoring, we find \\begin{align*}\n7y-y^2&=2(y+3)\\quad \\Rightarrow\\\\\n7y-y^2&=2y+6\\quad \\Rightarrow\\\\\n0&=y^2-5y+6\\quad \\Rightarrow\\\\\n0&=(y-2)(y-3).\n\\end{align*} Thus $y=2$ or $y=3$, so $\\sqrt{x}=2,3$ and $x=4$ or $x=9$. Re-substituting, we have $4a^2+1=4$, meaning $4a^2=3$, $a^2=\\frac{3}{4}$, and $a=\\pm\\frac{\\sqrt{3}}{2}$. On the other hand we could have $4a^2+1=9$, giving $4a^2=8$, $a^2=2$, and $a=\\pm\\sqrt{2}$. The greatest possible value of $a$ is $\\boxed{\\sqrt{2}}$."
+}

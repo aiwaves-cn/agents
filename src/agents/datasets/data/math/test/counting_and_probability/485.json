@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to put 4 balls in 3 boxes if two balls are indistinguishably green, two are indistinguishably red, and the boxes are distinguishable?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We will consider this as a composite of two problems with two indistinguishable balls and 3 distinguishable boxes.  For two indistinguishable green balls, we can place the balls in a box together or in separate boxes.  There are $3$ options to arrange them together (in box 1, 2, or 3) and $3$ options for placing them separately (nothing in box 1, 2, or 3).  So there are 6 ways to arrange the indistinguishable green balls.  By the same reasoning, there are 6 ways to arrange the indistinguishable red balls, for a total of $6 \\times 6 = \\boxed{36}$ arrangements of the 4 balls."
+}

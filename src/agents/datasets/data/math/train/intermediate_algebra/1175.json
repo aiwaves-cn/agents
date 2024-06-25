@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real numbers $a$ such that the equation\n\\[x^3 - ax^2 - 2ax + a^2 - 1 = 0\\]has exactly one real solution in $x.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Writing the equation as a quadratic in $a,$ we get\n\\[a^2 - (x^2 + 2x) a + (x^3 - 1) = a^2 - (x^2 + 2x) a + (x - 1)(x^2 + x + 1) = 0.\\]We can then factor this as\n\\[(a - (x - 1))(a - (x^2 + x + 1)) = 0.\\]So, one root in $x$ is $x = a + 1.$  We want the values of $a$ so that\n\\[x^2 + x + 1 - a = 0\\]has no real root.  In other words, we want the discriminant to be negative.  This gives us $1 - 4(1 - a) < 0,$ or $a < \\frac{3}{4}.$\n\nThus, the solution is $a \\in \\boxed{\\left( -\\infty, \\frac{3}{4} \\right)}.$"
+}

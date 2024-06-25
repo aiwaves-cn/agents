@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $z$ such that $z^4 - 4z^2 + 3 = 0$.  Enter all the solutions, separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "If we let $y=z^2$, then our equation becomes a simple quadratic equation:\n$$y^2-4y+3=0.$$Indeed, this equation factors easily as $(y-3)(y-1)=0$, so either $y-3=0$ or $y-1=0$.\n\nWe now explore both possibilities.\n\nIf $y-3=0$, then $y=3$, so $z^2=3$, so $z=\\pm\\sqrt 3$.\n\nIf $y-1=0$, then $y=1$, so $z^2=1$, so $z=\\pm 1$.\n\nThus we have four solutions to the original equation: $z=\\boxed{-\\sqrt{3},-1,1,\\sqrt{3}}$."
+}

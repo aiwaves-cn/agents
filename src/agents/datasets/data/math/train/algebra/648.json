@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose the function $f(x)$ is defined on the domain $\\{x_1,x_2,x_3\\}$, so that the graph of $y=f(x)$ consists of just three points. Suppose those three points form a triangle of area $32$.\n\nThe graph of $y = 2f(2x)$ also consists of just three points. What is the area of the triangle formed by those three points?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The original graph consists of the points $(x_1,f(x_1)),$ $(x_2,f(x_2)),$ and $(x_3,f(x_3))$.\n\nThe graph of $y=2f(2x)$ consists of the points $\\left(\\frac{x_1}2,2f(x_1)\\right),$ $\\left(\\frac{x_2}2,2f(x_2)\\right),$ and $\\left(\\frac{x_3}2,2f(x_3)\\right)$. Relative to the original graph, it is stretched vertically by a factor of $2$, but also compressed horizontally by the same factor. The vertical transformation doubles the area of the triangle formed by the three points, but the horizontal transformation halves it again, so the final area is equal to the original $\\boxed{32}$."
+}

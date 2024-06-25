@@ -1,0 +1,6 @@
+{
+    "problem": "There are 5 blue chips, 4 red chips and 3 yellow chips in a bag. One chip is drawn from the bag. That chip is placed back into the bag, and a second chip is drawn. What is the probability that the two selected chips are of different colors? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "If the first chip drawn is blue, there is a probability of 7/12 of drawing a chip which isn't blue second. If the first chip drawn is red, there is a probability of 8/12 of drawing a chip which isn't red second. And if the first chip is yellow, there is a 9/12 probability of drawing a chip which isn't yellow second. So, the probability that the two selected chips are different colors is $\\frac{5}{12}\\cdot\\frac{7}{12} + \\frac{4}{12}\\cdot\\frac{8}{12} + \\frac{3}{12}\\cdot\\frac{9}{12} = \\frac{(35+32+27)}{144} = \\frac{94}{144} = \\boxed{\\frac{47}{72}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For $\\bold{v} = \\begin{pmatrix} 2 \\\\ 3 \\\\ -1 \\end{pmatrix}$ and $\\bold{w} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 0 \\end{pmatrix}$, compute $\\text{proj}_{\\bold{w}} \\bold{v}$.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\text{proj}_{\\bold{w}} \\bold{v} &= \\frac{\\bold{v} \\cdot \\bold{w}}{\\bold{w} \\cdot \\bold{w}} \\bold{w} \\\\\n&= \\frac{\\begin{pmatrix} 2 \\\\ 3 \\\\ -1 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ -1 \\\\ 0 \\end{pmatrix}}{\\begin{pmatrix} 2 \\\\ -1 \\\\ 0 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ -1 \\\\ 0 \\end{pmatrix}} \\begin{pmatrix} 2 \\\\ -1 \\\\ 0 \\end{pmatrix} \\\\\n&= \\frac{1}{5} \\begin{pmatrix} 2 \\\\ -1 \\\\ 0 \\end{pmatrix} \\\\\n&= \\boxed{\\begin{pmatrix} 2/5 \\\\ -1/5 \\\\ 0 \\end{pmatrix}}.\n\\end{align*}"
+}

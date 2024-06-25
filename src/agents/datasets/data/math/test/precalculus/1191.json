@@ -1,0 +1,6 @@
+{
+    "problem": "For a given constant $b > 10,$ there are two possible triangles $ABC$ satisfying $AB = 10,$ $AC = b,$ and $\\sin B = \\frac{3}{5}.$  Find the positive difference between the lengths of side $\\overline{BC}$ in these two triangles.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\cos^2 B = 1 - \\sin^2 B = \\frac{16}{25},\\]so $\\cos B = \\pm \\frac{4}{5}.$\n\nFor $\\cos B = \\frac{4}{5},$ let $a_1 = BC.$  Then by the Law of Cosines,\n\\[b^2 = a_1^2 + 100 - 20a_1 \\cdot \\frac{4}{5} = a_1^2 - 16a_1 + 100.\\]For $\\cos B = -\\frac{4}{5},$ let $a_2 = BC.$  Then by the Law of Cosines,\n\\[b^2 = a_2^2 + 100 - 20a_2 \\cdot \\left( -\\frac{4}{5} \\right) = a_2^2 + 16a_2 + 100.\\]Subtracting these equations, we get\n\\[a_2^2 - a_1^2 + 16a_2 + 16a_1 = 0.\\]We can factor as $(a_2 - a_1)(a_2 + a_1) + 16(a_2 + a_1) = 0.$  Since $a_1 + a_2$ is positive, we can safely divide both sides by $a_1 + a_2,$ to get\n\\[a_2 - a_1 + 16 = 0.\\]Hence, $a_1 - a_2 = \\boxed{16}.$"
+}

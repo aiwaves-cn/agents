@@ -1,0 +1,6 @@
+{
+    "problem": "When three numbers are added two at a time the sums are 29, 46, and 53. What is the sum of all three numbers?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "If we let our three numbers be $x$, $y$, and $z$, we have that $x+y=29$, $y+z=46$, and $z+x=53$. Adding these three equations together, we get that $(x+y)+(y+z)+(z+x)=29+46+53$, so $2x+2y+2z=128$. If we then divide both sides of this equation by $2$, we are left with the equation $x+y+z=64$. Therefore, the sum of the three numbers must equal $\\boxed{64}$."
+}

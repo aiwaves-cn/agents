@@ -1,0 +1,6 @@
+{
+    "problem": "Given that two of the roots of the equation \\[x^3 - 10x^2 + 55x - c = 0\\]have a product of $30,$ compute $c.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r,$ $s,$ and $t$ be the three roots, and suppose that $rs = 30.$ By Vieta's formulas, we also know that \\[\\begin{aligned} r+s+t&=10, \\\\rs+st+rt &= 55. \\end{aligned}\\]Since $rs=30,$ the second equation simplifies to $st+rt=25,$ or $t(r+s) = 25.$ Therefore, the numbers $r+s$ and $t$ have a sum of $10$ and a product of $25,$ so they must be the roots of the quadratic \\[y^2 - 10y + 25 = 0.\\]This quadratic factors as $(y-5)^2 = 0,$ so we have $r+s=t=5.$ Then by Vieta again, \\[c = rst = 30 \\cdot 5 = \\boxed{150}.\\]"
+}

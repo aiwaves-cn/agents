@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $n$ is a positive integer, and given that $\\mathop{\\text{lcm}}[24,n]=72$ and $\\mathop{\\text{lcm}}[n,27]=108$, what is $n$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We know that both $72$ and $108$ are multiples of $n$, so $108-72=36$ is also a multiple of $n$. That is, $n$ is a divisor of $36$.\n\nNote that $24$ is not divisible by $3^2$, but $\\mathop{\\text{lcm}}[24,n]=72$ is divisible by $3^2$. This implies that $n$ is a multiple of $3^2$.\n\nSimilarly, $27$ is not divisible by $2^2$, but $\\mathop{\\text{lcm}}[n,27]=108$ is divisible by $2^2$. This implies that $n$ is a multiple of $2^2$.\n\nThe only divisor of $36$ that is a multiple of $3^2$ and $2^2$ is $36$ itself. Thus, $n=\\boxed{36}$."
+}

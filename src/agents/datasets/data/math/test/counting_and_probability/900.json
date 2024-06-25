@@ -1,0 +1,6 @@
+{
+    "problem": "How many paths are there from $A$ to $C$, if every step must be up or to the right?[asy]size(4cm,4cm);int w=6;int h=5;int i;pen p=fontsize(9);for (i=0; i<h; ++i){draw((0,i) -- (w-1,i));}for (i=0; i<w; ++i){draw((i, 0)--(i,h-1));}label(\"A\", (0,0), SW, p);label(\"C\", (1,2), NE, p);label(\"B\", (w-1,h-1), NE, p);[/asy]",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There is 1 step to the right, and 2 steps up.  These 3 steps can be made in any order, so the answer is $\\binom{3}{1} = \\boxed{3}$."
+}

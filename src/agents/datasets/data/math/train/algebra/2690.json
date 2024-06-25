@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate: $(723)(723)-(722)(724)$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Note that we have a difference of squares: $(722)(724) = (723 - 1)(723 + 1) = 723^2 - 1^2$. Thus, this expression evaluates to $(723)(723) - (722)(724) = 723^2 - (723^2 - 1^2) = 1^2 = \\boxed{1}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive solution to\n\\[\\tan 2x + \\tan 3x = \\sec 3x\\]in radians.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the given equation,\n\\[\\tan 2x = \\sec 3x - \\tan 3x = \\frac{1}{\\cos 3x} - \\frac{\\sin 3x}{\\cos 3x} = \\frac{1 - \\sin 3x}{\\cos 3x}.\\]Recall the identity\n\\[\\tan \\frac{\\theta}{2} = \\frac{1 - \\cos \\theta}{\\sin \\theta}.\\]Thus,\n\\[\\frac{1 - \\sin 3x}{\\cos 3x} = \\frac{1 - \\cos (\\frac{\\pi}{2} - 3x)}{\\sin (\\frac{\\pi}{2} - 3x)} = \\tan \\left( \\frac{\\pi}{4} - \\frac{3x}{2} \\right),\\]so\n\\[\\tan 2x = \\tan \\left( \\frac{\\pi}{4} - \\frac{3x}{2} \\right).\\]Since the tangent function has a period of $\\pi,$\n\\[2x - \\left( \\frac{\\pi}{4} - \\frac{3x}{2} \\right) = n \\pi\\]for some integer $n.$  Solving for $x,$ we find\n\\[x = \\frac{(4n + 1) \\pi}{14}.\\]The smallest positive solution of this form, where $n$ is an integer, is $x = \\boxed{\\frac{\\pi}{14}}.$"
+}

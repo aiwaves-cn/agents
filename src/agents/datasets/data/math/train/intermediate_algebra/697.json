@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[(x - 3)^4 + (x - 5)^4 = -8.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can introduce symmetry into the equation by letting $z = x - 4.$  Then $x = z + 4,$ so the equation becomes\n\\[(z + 1)^4 + (z - 1)^4 = -8.\\]This simplifies to $2z^4 + 12z^2 + 10 = 0,$ or $z^4 + 6z^2 + 5 = 0.$  This factors as\n\\[(z^2 + 1)(z^2 + 5) = 0,\\]so $z = \\pm i$ or $z = \\pm i \\sqrt{5}.$\n\nTherefore, the solutions are $\\boxed{4 + i, 4 - i, 4 + i \\sqrt{5}, 4 - i \\sqrt{5}}.$"
+}

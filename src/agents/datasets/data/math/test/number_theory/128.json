@@ -1,0 +1,6 @@
+{
+    "problem": "How many digits does the decimal equal to $\\frac{54317}{80000}$ have to the right of the decimal point?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We first get the prime factorization of $80000$. \\begin{align*}\n80000 &= 8 \\cdot 10^4 \\\\\n\\qquad &= 2^3 \\cdot 10^4 \\\\\n\\qquad &= 2^3 \\cdot 2^4 \\cdot 5^4 \\\\\n\\qquad &= 2^7 \\cdot 5^4\n\\end{align*}Therefore, we can rewrite $\\frac{54317}{80000}$ as $\\frac{54317}{2^7 \\cdot 5^4}$. If we multiply this fraction by $10^7$, the denominator is eliminated entirely. Note that multiplying by $10^6$ is insufficient, so since $10^7$ is the smallest power of ten we can multiply this fraction by to get an integer, there are $\\boxed{7}$ digits to the right of the decimal point."
+}

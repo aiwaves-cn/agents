@@ -1,0 +1,6 @@
+{
+    "problem": "The lattice shown is continued for $9$ rows. What will be the third number in the $9$th row? \\begin{tabular}{rccccc}\nRow 1: & 1 & 2 & 3 & 4 & 5 \\\\\nRow 2: & 6 & 7 & 8 & 9 & 10 \\\\\nRow 3: & 11 & 12 & 13 & 14 & 15 \\\\\nRow 4: & 16 & 17 & 18 & 19 & 20\n\\end{tabular}",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Notice that the last element in row $i$ is equal to $5i$. Thus, the last element in the $9$th row is equal to $5 \\times 9 = 45$. The third number in the same row is just two smaller than the last element of the row, so the answer is $45-2 = \\boxed{43}$."
+}

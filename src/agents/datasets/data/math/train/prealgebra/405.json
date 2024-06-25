@@ -1,0 +1,6 @@
+{
+    "problem": "Jordan and his three best friends are on a relay team.  His relay team will run a race, where the first runner runs a lap, then the second, then the third, then the fourth.\n\nJordan is the fastest so he will run the fourth lap.  How many different orders can the four team members run, assuming that Jordan runs the fourth lap?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Jordan runs the last lap.  There are three choices left for the person to run the first lap.  After the first lap, there are then two choices for the person to run the second lap.  The third lap must be run by the remaining team member.\n\nThe total number of ways for the team to run the relay is $3\\cdot2\\cdot1=\\boxed{6}$."
+}

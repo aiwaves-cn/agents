@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\sec (-300^\\circ).$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\sec (-300^\\circ) = \\frac{1}{\\cos (-300^\\circ)}.\\]Since the cosine function has period $360^\\circ,$\n\\[\\cos (-300^\\circ) = \\cos (-300^\\circ + 360^\\circ) = \\cos 60^\\circ = \\frac{1}{2},\\]so\n\\[\\frac{1}{\\cos (-300^\\circ)} = \\boxed{2}.\\]"
+}

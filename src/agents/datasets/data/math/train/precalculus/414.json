@@ -1,0 +1,6 @@
+{
+    "problem": "The curve parameterized by $(x,y) = (2t + 4, 4t - 5)$ is a line, where $t$ is a real number.  Find the equation of the line.  Enter the equation in the form \"$y = mx + b$\".",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Solving for $t$ in $x = 2t + 4,$ we find\n\\[t = \\frac{x - 4}{2}.\\]Then\n\\[y = 4t - 5 = 4 \\cdot \\frac{x - 4}{2} - 5 = 2x - 13.\\]Thus, the equation is $\\boxed{y = 2x - 13}.$"
+}

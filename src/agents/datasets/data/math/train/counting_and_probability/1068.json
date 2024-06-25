@@ -1,0 +1,6 @@
+{
+    "problem": "How many triangles can be formed using the vertices of a regular dodecagon (a 12-sided polygon)?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "No three vertices are collinear, so any combination of 3 vertices will make a triangle. Choosing 3 out of 12 is $\\binom{12}{3}=\\boxed{220}.$"
+}

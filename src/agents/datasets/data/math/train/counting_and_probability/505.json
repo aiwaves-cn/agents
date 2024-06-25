@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\dbinom{8}{4}$.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "\\begin{align*}\n\\dbinom{8}{4} &= \\dfrac{8!}{4!4!} \\\\\n&= \\dfrac{8\\times 7\\times 6\\times 5}{4\\times 3\\times 2\\times 1} \\\\\n&= \\dfrac{8}{4\\times 2\\times 1}\\times 7 \\times \\dfrac{6}{3} \\times 5 \\\\\n&= 1\\times 7\\times 2\\times 5 \\\\\n&= \\boxed{70}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "When three positive integers are divided by $24$, the remainders are $10,$ $4,$ and $12,$ respectively.\n\nWhen the sum of the three integers is divided by $24$, what is the remainder?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We can call the three integers in this problem $a,$ $b,$ and $c$. Then we have \\begin{align*}\na &\\equiv 10\\pmod{24}, \\\\\nb &\\equiv 4\\pmod{24}, \\\\\nc &\\equiv 12\\pmod{24}.\n\\end{align*}Adding these congruences, we have \\begin{align*}\na+b+c &\\equiv 10+4+12 \\\\\n&= 26\\pmod{24}.\n\\end{align*}Therefore, $a+b+c$ has the same remainder as $26$ upon division by $24$. This remainder is $\\boxed{2}$."
+}

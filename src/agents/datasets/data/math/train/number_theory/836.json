@@ -1,0 +1,6 @@
+{
+    "problem": "A natural number is abundant if it is less than the sum of its proper divisors. What is the smallest abundant number?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "For any prime number, the sum of its proper divisors is equal to $1$, so a prime number cannot be an abundant number. Therefore, it suffices to check only composite numbers:\n\n$\\bullet$ For $4$, $1 + 2 < 4$,\n\n$\\bullet$ For $6$, $1 + 2 + 3 = 6$,\n\n$\\bullet$ For $8$, $1 + 2 + 4 < 8$,\n\n$\\bullet$ For $9$, $1 + 3 < 9$,\n\n$\\bullet$ For $10$, $1 + 2 + 5 < 10$,\n\n$\\bullet$ For $12$, $1 + 2 + 3 + 4 + 6 = 16 > 12$.\n\nThus, the answer is $\\boxed{12}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive three-digit integers are divisible by both 11 and 5?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "To be divisible by both 5 and 11, an integer must be a multiple of 55.  The smallest three-digit multiple of 55 is $2 \\cdot 55 = 110,$ and the largest three-digit multiple of 55 is $18 \\cdot 55 = 990$. So we can count the number of integers by the number of multiples, $2, 3, \\ldots , 17 , 18$, of which there are $\\boxed{17}$."
+}

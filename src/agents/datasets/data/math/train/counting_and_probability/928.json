@@ -1,0 +1,6 @@
+{
+    "problem": "There are 30 students in Mrs. Taylor's kindergarten class.  If there are twice as many students with blond hair as with blue eyes, 6 students with blond hair and blue eyes, and 3 students with neither blond hair nor blue eyes, how many students have blue eyes?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Let the number of blue-eyed students be $x$, so the number of blond students is $2x$.  Since the number of blue-eyed blond students is $6$, the number of blue-eyed non-blond students is $x - 6$, while the number of blond non-blue-eyed students is $2x - 6$.  Since the number of non-blue-eyed non-blond students is $3$, we can add up these four exclusive categories (blond blue-eyed, blond non-blue-eyed, etc.) to sum to 30 students in the class.\n\n[asy]\nunitsize(0.05cm);\nlabel(\"Blue eyes\", (2,74));\nlabel(\"Blond hair\", (80,74));\nlabel(\"Neither: 3\", (44,10));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$6$\", (44, 45));\nlabel(scale(0.8)*\"$x-6$\",(28,58));\nlabel(scale(0.8)*\"$2x-6$\",(63,58));\n[/asy]\n\nSo $(x - 6) + (2x - 6) + 6 + 3 = 30$ and $x = \\boxed{11}$, which is the number of blue-eyed students."
+}

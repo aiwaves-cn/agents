@@ -1,0 +1,6 @@
+{
+    "problem": "The operation $*$ is defined by\n\\[a * b = \\frac{a - b}{1 - ab}.\\]Compute\n\\[1 * (2 * (3 * (\\dotsb (999 * 1000) \\dotsb))).\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = 2 * (3 * ( \\dotsb (999 * 1000) \\dotsb ))).$  Then\n\\[1 * (2 * (3 * (\\dotsb (999 * 1000) \\dotsb))) = 1 * x = \\frac{1 - x}{1 - x} = \\boxed{1}.\\]For the sake of rigor, we should prove that $x \\neq 1.$  This is left as an exercise for the reader."
+}

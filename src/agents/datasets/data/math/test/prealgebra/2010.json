@@ -1,0 +1,6 @@
+{
+    "problem": "A birdbath is designed to overflow so that it will be self-cleaning.  Water flows in at the rate of 20 milliliters per minute and drains at the rate of 18 milliliters per minute.  One of these graphs shows the volume of water in the birdbath during the filling time and continuing into the overflow time.  Which one is it?\n\n[asy]\n/* AMC8 2002 #6 Problem */\nsize(3inch,0.75inch);\nfor ( int x = 0; x <= 4; ++x )\n{\n\ndraw((x*1.5,1)--(x*1.5,0)--(x*1.5+1,0));\n\nlabel(rotate(90)*scale(0.7)*\"Volume\", (x*1.5-.2,.5));\n}\nlabel(\"$A$\", (.5,0), S);\nlabel(\"$B$\", (2,0), S);\nlabel(\"$C$\", (3.5,0), S);\nlabel(\"$D$\", (5,0), S);\nlabel(\"$E$\", (6.5,0), S);\ndraw((0,0)--(.5,.5)--(1,.5),linewidth(1));\ndraw((1.5,0.6)--(1.8,0.6)--(2.5,0), linewidth(1));\ndraw((3,0)--(4,.75), linewidth(1));\ndraw((4.5,.8)--(5.5,.8), linewidth(1));\ndraw((6,0)--(6.5,.5)--(7,0), linewidth(1));\n[/asy]\n\nProvide the correct letter (A, B, C, D, or E) answer.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Initially, volume increases with time as shown by graphs $A$, $C$, and $E$.  But once the birdbath is full, the volume remains constant as the birdbath overflows.  Only graph $\\boxed{A}$ shows both features."
+}

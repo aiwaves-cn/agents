@@ -1,0 +1,6 @@
+{
+    "problem": "$n$ fair 6-sided dice are simultaneously rolled. The probability that exactly two of them show a number other than 1 is $\\frac{25}{216}$. Find $n$.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "For $n$ dice, there are $\\binom{n}{2}=\\frac{n(n-1)}{2}$ ways to choose two of them. For each of these ways, there is a $\\left( \\frac{5}{6} \\right)^2 \\left( \\frac{1}{6} \\right)^{n-2}$ chance that all but the chosen two dice will roll a 1. Therefore, we need to find the value of $n$ for which $\\frac{25n(n-1)}{2 \\cdot 6^n}=\\frac{25}{216}$, or $108n(n-1)=6^n$. Plugging in values for $n$, we can see that $n=\\boxed{4}$ works and no value of $n$ less than 4 works. Now we just need to prove that no values of $n$ greater than 4 work. Note that if $n \\geq 5$, then $n < 3^{n-3}$ and $n-1 < 2\\cdot 2^{n-3}$. We can multiply these inequalities to get that when $n \\geq 5$, we have $n(n-1) < 2\\cdot 6^{n-3}$, or $108n(n-1)<6^n$."
+}

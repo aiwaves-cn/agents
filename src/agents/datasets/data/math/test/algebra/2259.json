@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ is a positive integer such that $1^x + 2^x + 5^x = 642$, what is the value of $x$?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We first note that the $5^x$ term grows much faster than the other two terms. Indeed, for $n\\geq2$, $5^x \\geq 5(2^x + 1^x)$. Consequently, we focus on that term. The first four powers of $5$ are $5^1=5, 5^2=25, 5^3=125,$ and $5^4=625$. The last of these is close to $642$ so we check $x=4$ and get that $1^x+2^x+5^x = 1 + 16 + 625 = 642$, as desired, so $x=\\boxed{4}$."
+}

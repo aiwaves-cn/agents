@@ -1,0 +1,6 @@
+{
+    "problem": "In quadrilateral $ABCD,$ $AB = 5,$ $BC = 8$, and $CD = 20$ units. Angle $B$ and angle $C$ are both right angles. What is the length of segment $AD$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Begin by drawing a segment from $A$ to $E$ parallel to $CB$. [asy]\ndraw((0,0)--(8,0)--(8,20)--(0,5)--cycle,linewidth(1));\ndraw((0,5)--(8,5),linewidth(1));\nlabel(\"B\",(0,0),W);\nlabel(\"A\",(0,5),W);\nlabel(\"C\",(8,0),E);\nlabel(\"E\",(8,5),E);\nlabel(\"D\",(8,20),N);\nlabel(\"\\small{5}\",(0,2.5),W);\nlabel(\"\\small{15}\",(8,12.5),E);\nlabel(\"\\small{5}\",(8,2.5),E);\nlabel(\"\\small{8}\",(4,0),S);\nlabel(\"\\small{8}\",(4,5),S);\n[/asy] We have that $AE=BC=8$.  Then, $DE=DC-5=20-5=15$.  Now, we can apply the Pythagorean Theorem to find $AD$. $$AD^2=8^2+15^2=289=17^2$$ $$AD=\\boxed{17}$$"
+}

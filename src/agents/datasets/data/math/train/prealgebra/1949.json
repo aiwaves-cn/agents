@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive number that is prime and $10$ less than a perfect square?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "A number 10 less than an even perfect square cannot be prime, so let's check odd perfect squares greater than 10:\n\n$\\bullet$ $5^2=25,$ $25-10=15,$ composite.\n\n$\\bullet$ $7^2=49,$ $49-10=39,$ composite.\n\n$\\bullet$ $9^2=81,$ $81-10=71.$\n\nChecking prime numbers up to $7$ $($the  largest prime less than $\\sqrt{71})$ as potential divisors, we  see that $71$ is prime. Thus, the smallest prime that is $10$ less  than a perfect square is $\\boxed{71}.$"
+}

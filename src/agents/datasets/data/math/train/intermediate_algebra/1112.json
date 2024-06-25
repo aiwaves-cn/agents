@@ -1,0 +1,6 @@
+{
+    "problem": "A function $f:\\mathbb{Z} \\to \\mathbb{Z}$ satisfies\n\\begin{align*}\nf(x+4)-f(x) &= 8x+20, \\\\\nf(x^2-1) &= (f(x)-x)^2+x^2-2\n\\end{align*}for all integers $x.$  Enter the ordered pair $(f(0),f(1)).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = 0$ in the second equation, we get\n\\[f(-1) = f(0)^2 - 2.\\]Setting $x = -1$ in the second equation, we get\n\\[f(0) = (f(-1) + 1)^2 - 1.\\]Let $a = f(0)$ and $b = f(-1)$; then $b = a^2 - 2$ and $a = (b + 1)^2 - 1.$  Substituting $b = a^2 - 2,$ we get\n\\[a = (a^2 - 1)^2 - 1.\\]This simplifies to $a^4 - 2a^2 - a = 0,$ which factors as $a(a + 1)(a^2 - a - 1) = 0.$  The quadratic $a^2 - a - 1 = 0$ has no integer solutions, so $a = 0$ or $a = -1.$\n\nSuppose $f(0) = a = 0.$  Then $f(-1) = -2.$  Setting $x = -1$ in the first equation, we get\n\\[f(3) - f(-1) = 12,\\]so $f(3) = f(-1) + 12 = 10.$  But setting $x = 2$ in the second equation, we get\n\\[f(3) = (f(2) - 2)^2 + 2,\\]so $(f(2) - 2)^2 = 8.$  No integer value for $f(2)$ satisfies this equation.\n\nTherefore, $f(0) = a = -1.$  Setting $x = 1$ in the second equation, we get\n\\[f(0) = (f(1) - 1)^2 - 1,\\]so $(f(1) - 1)^2 = 0,$ which forces $f(1) = 1.$\n\nHence, $(f(0),f(1)) = \\boxed{(-1,1)}.$  Note that the function $f(n) = n^2 + n - 1$ satisfies the given conditions."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Find $z + \\frac {1}{y}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $t = z + \\frac{1}{y}.$ Notice that \\[\\left(x+\\frac{1}{z}\\right)\\left(y+\\frac{1}{x}\\right)\\left(z+\\frac{1}{y}\\right) = xyz + x+y+z + \\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z} + \\frac{1}{xyz}.\\]Substituting known values, we have \\[5 \\cdot 29 \\cdot t = 1 + (5 + 29 + t) + 1,\\]or $145t = 36 + t.$ Thus, $t = \\frac{36}{144} = \\boxed{\\frac{1}{4}}\\,.$"
+}

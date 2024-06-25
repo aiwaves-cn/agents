@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of functions $f  : \\mathbb{R} \\to \\mathbb{R}$ such that\n\\[f(xy) + f(xz) - f(x) f(yz) \\ge 1\\]for all real numbers $x,$ $y,$ and $z.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = y = z = 0,$ we get\n\\[f(0) + f(0) - f(0)^2 \\ge 1,\\]so $f(0)^2 - 2f(0) + 1 \\le 0.$  Then $(f(0) - 1)^2 \\le 0,$ which forces $f(0) = 1.$\n\nSetting $x = y = z = 1,$ we get\n\\[f(1) + f(1) - f(1)^2 \\ge 1,\\]so $f(1)^2 - 2f(1) + 1 \\le 0.$  Then $(f(1) - 1)^2 \\le 0,$ which forces $f(1) = 1.$\n\nSetting $y = z = 0,$ we get\n\\[f(0) + f(0) - f(x) f(0) \\ge 1,\\]so $f(x) \\le 1$ for all $x.$\n\nSetting $y = z = 1,$ we get\n\\[f(x) + f(x) - f(x) f(1) \\ge 1,\\]so $f(x) \\ge 1$ for all $x.$\n\nThis tells us that the only possible function is $f(x) = 1.$  We readily see that this function works, so there is only $\\boxed{1}$ possible function $f(x).$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The decimal representation of a fraction ends in $0.\\overline{3}$. When the decimal is changed to a common fraction and reduced to lowest terms, what is the denominator of the fraction?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Let $S = 0.\\overline{3}$. Then $10S = 3.\\overline{3}$. Subtracting the second equation from the first we obtain $9S = 3$, so $S = \\frac13$. The desired denominator is $\\boxed{3}$."
+}

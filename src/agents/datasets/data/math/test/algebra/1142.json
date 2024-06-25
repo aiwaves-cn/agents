@@ -1,0 +1,6 @@
+{
+    "problem": "Let $m$ and $n$ satisfy $mn=7$ and $m+n=8$. What is $|m-n|$?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We have two equations and two variables, so it's possible to solve for $m$ and $n$ directly and then calculate $|m-n|$. However, doing so is messy, so we look for an alternative approach. We square the second equation to get $(m+n)^2 = m^2 + 2mn +n^2 = 64$. We know that $mn=7$, so we can subtract the equation $4mn=28$ to get that $m^2 -2mn + n^2 = (m-n)^2 = 36$. This gives us that $m-n=\\pm 6$ so $|m-n|=\\boxed{6}$."
+}

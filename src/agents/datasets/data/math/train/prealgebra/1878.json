@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than 60 have an even number of positive divisors?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Perfect squares have an odd number of positive divisors, while all other integers have an even number of positive divisors.\n\nThe perfect squares less than or equal to 60 are 1, 4, 9, 16, 25, 36, and 49. Therefore, of the 59 positive integers less than 60, 7 of them have an odd number of factors, so $59-7=\\boxed{52}$ of them have an even number of factors."
+}

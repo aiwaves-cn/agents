@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\n$\\frac{1622^2-1615^2}{1629^2-1608^2}$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The numerator factors as $(1622-1615)(1622+1615)=7(3237)$.\n\nThe denominator factors as $(1629-1608)(1629+1608)=21(3237)$.\n\nThus the fraction is equal to\n\n$$\\frac{7(3237)}{21(3237)}=\\frac{7}{21}=\\boxed{\\frac{1}{3}}$$"
+}

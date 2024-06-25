@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a, b, c$ be distinct complex numbers such that \\[\\begin{aligned} 2a^3 + 7a^2 - 8a + 5 &= 0, \\\\ 2b^3 + 7b^2 - 8b + 5 &= 0, \\\\ 2c^3 + 7c^2 - 8c + 5 &= 0. \\end{aligned}\\]Compute the value of the product $abc.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We are given that the roots of the polynomial equation \\[2x^3 + 7x^2 - 8x + 5 = 0\\]are $a, b, c$ (because they all satisfy the equation). Therefore, by Vieta's formulas, $abc = \\boxed{-\\tfrac{5}{2}}.$"
+}

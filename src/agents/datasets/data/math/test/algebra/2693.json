@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A$ and $B$ are on parabola $y=3x^2-5x-3$, and the origin is the midpoint of $\\overline{AB}$. Find the square of the length of $\\overline{AB}$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The graph of the parabola is shown below:\n\n[asy]\nLabel f;\n\nf.p=fontsize(6);\n\nxaxis(-1.5,3.17,Ticks(f, 1.0));\n\nyaxis(-6,12,Ticks(f, 3.0));\nreal f(real x)\n\n{\n\nreturn 3x^2-5x-3;\n\n}\n\ndraw(graph(f,-1.5,3.17));\ndot((1,-5));\ndot((-1,5));\nlabel(\"$A$\", (1,-5), W);\nlabel(\"$B$\", (-1,5), W);\n[/asy]\n\nLet the coordinates of point $A$ be $(x,y)$. Then since the midpoint of $\\overline{AB}$ is the origin, the coordinates of $B$ are $(-x,-y)$. Both of these points must lie on the parabola, so we plug them into the equation for the parabola to get the equations \\begin{align*}\ny&=3x^2-5x-3,\\\\\n-y&=3(-x)^2-5(-x)-3 \\Rightarrow y=-3x^2-5x+3.\n\\end{align*} Substituting the first equation into the second to eliminate $y$, we have $3x^2-5x-3=-3x^2-5x+3$, or $6x^2=6\\Rightarrow x^2=1$. So $x=1$ (the negative alternative for $x$ gives the same answer) and $y=3(1)^2-5(1)-3=-5$. Thus, point $A$ is at $(1,-5)$ and point $B$ is at $(-1,5)$. The length of $\\overline{AB}$ is then $\\sqrt{(-1-1)^2+(5-(-5))^2}=\\sqrt{104}$. Hence, $AB^2=\\boxed{104}$."
+}

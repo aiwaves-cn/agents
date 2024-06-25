@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the square of 9997 without a calculator.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "\\[9997^2=(10^4-3)^2=10^8-2\\cdot3\\cdot10^4+9.\\]We can factor out $10^4$ from the first two terms to make the computation easier: \\[9997^2=10^4(10^4-6)+9=10^4\\cdot9994+9=\\boxed{99940009}.\\]"
+}

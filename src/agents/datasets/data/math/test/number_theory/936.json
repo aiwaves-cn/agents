@@ -1,0 +1,6 @@
+{
+    "problem": "If $r$ is a positive integer such that $\\mathop{\\text{lcm}}[r,100]\\cdot\\gcd(r,100) = 13200$, then what is $\\mathop{\\text{lcm}}[r,100]$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The identity $\\mathop{\\text{lcm}}[a,b]\\cdot\\gcd(a,b) = ab$ holds for all positive integer pairs $(a,b)$, so in this case, we have $$13200 = \\mathop{\\text{lcm}}[r,100]\\cdot\\gcd(r,100) = r\\cdot 100.$$Solving this equation yields $r=132$, so we are looking for $\\mathop{\\text{lcm}}[132,100]$. We have the prime factorizations $132=2^2\\cdot 3\\cdot 11$ and $100=2^2\\cdot 5^2$, so, taking the maximum exponent of each prime, we obtain $$\\mathop{\\text{lcm}}[132,100] = 2^2\\cdot 3\\cdot 5^2\\cdot 11 = (2^2\\cdot 5^2)(3\\cdot 11) = (100)(33) = \\boxed{3300}.$$(We could also note that the common prime factors of $132$ and $100$ are just $2^2$, which tells us that $\\gcd(132,100)=4$ and so $\\mathop{\\text{lcm}}[132,100]=\\frac{13200}{4}=3300$.)"
+}

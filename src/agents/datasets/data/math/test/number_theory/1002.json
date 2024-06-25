@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest integer less than $2010$ that has a remainder of $5$ when divided by $7,$ a remainder of $10$ when divided by $11,$ and a remainder of $10$ when divided by $13$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We want a remainder of $10$ when divided by both $11$ and $13$. The least common multiple of $11$ and $13$ is $143$. We add $10$ to the number such that the remainder would be $10$ when divided by $11$ and $13$ so we get $143+10=153$. However, that does not give a remainder of $5$ when divided by $7$, so we add more $143$s until we get a value that works. We get that $153+143+143=439$ gives a remainder of $5$ when divided by $7$.\n\nSince we want the largest integer less than 2010, we keep adding the least common multiple of $7$, $11$, and $13$ until we go over. The least common multiple is $7 \\cdot 11 \\cdot 13 =1001$. We add it to $439$ to get $1440$, adding it again would give a value greater than $2010$, so our answer is $\\boxed{1440}$."
+}

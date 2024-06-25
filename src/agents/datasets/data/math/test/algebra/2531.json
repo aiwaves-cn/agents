@@ -1,0 +1,6 @@
+{
+    "problem": "If $c$ is a nonzero constant such that $x^2+cx+9c$ is equal to the square of a binomial, then what is $c$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If $x^2+cx+9c$ is the square of a binomial, then because the coefficient of $x^2$ is $1$, the binomial must be of the form $x+a$ for some $a$. So, we have $$(x+a)^2 = x^2+cx+9c.$$Expanding the left side, we have $$x^2 + 2ax + a^2 = x^2 + cx + 9c.$$The coefficients of $x$ must agree, so $2a=c$. Also, the constant terms must agree, so $a^2=9c$, giving $c=\\frac{a^2}{9}$. We have two expressions for $c$ in terms of $a$, so we set them equal to each other: $$2a = \\frac{a^2}{9}.$$To solve for $a$, we subtract $2a$ from both sides: $$0 = \\frac{a^2}{9} - 2a$$and then factor: $$0 = a\\left(\\frac{a}{9}-2\\right),$$which has solutions $a=0$ and $a=18$.\n\nFinally, we have $c=2a$, so $c=0$ or $c=36$. But we are looking for a nonzero answer, so we can reject $c=0$. We obtain $c=\\boxed{36}$.\n\n(Checking, we find that $x^2+36x+9\\cdot 36$ is indeed equal to $(x+18)^2$.)"
+}

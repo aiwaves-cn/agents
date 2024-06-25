@@ -1,0 +1,6 @@
+{
+    "problem": "Find the constant term in the expansion of $\\left( \\frac{3}{2} x^2 - \\frac{1}{3x} \\right)^6.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The general term in the expansion of $\\left( \\frac{3}{2} x^2 - \\frac{1}{3x} \\right)^6$ is\n\\[\\binom{6}{k} \\left( \\frac{3}{2} x^2 \\right)^k \\left( -\\frac{1}{3x} \\right)^{6 - k} = \\binom{6}{k} \\left( \\frac{3}{2} \\right)^k \\left( -\\frac{1}{3} \\right)^{6 - k} x^{3k - 6}.\\]To get the constant term, we take $k = 2,$ which gives us\n\\[\\binom{6}{2} \\left( \\frac{3}{2} \\right)^2 \\left( -\\frac{1}{3} \\right)^4 = \\boxed{\\frac{5}{12}}.\\]"
+}

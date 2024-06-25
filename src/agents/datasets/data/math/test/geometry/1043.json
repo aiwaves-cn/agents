@@ -1,0 +1,6 @@
+{
+    "problem": "Coplanar squares $ABGH$ and $BCDF$ are adjacent, with $CD = 10$ units and $AH = 5$ units. Point $E$ is on segments $AD$ and $GB$. What is the area of triangle $ABE$, in square units? Express your answer as a common fraction.\n\n[asy]\ndraw((0,0)--(5,0)--(5,5)--(0,5)--(0,0)--cycle,linewidth(2));\ndraw((5,0)--(15,0)--(15,10)--(5,10)--(5,0)--cycle,linewidth(2));\n\ndraw((0,0)--(15,10),linewidth(2));\n\nfilldraw((0,0)--(5,0)--(5,10/3)--(0,0)--cycle,gray,linewidth(2));\n\nlabel(\"A\",(0,0),SW);\nlabel(\"B\",(5,0),S);\nlabel(\"C\",(15,0),SE);\nlabel(\"D\",(15,10),NE);\nlabel(\"E\",(5,10/3),SE);\nlabel(\"F\",(5,10),NW);\nlabel(\"G\",(5,5),NW);\nlabel(\"H\",(0,5),NW);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The area of triangle $ACD$ is $\\frac{1}{2}(AC)(DC) = \\frac{1}{2}(5+10)(10) = 75$. Triangle $ABE$ is similar to triangle $ACD$, with ratio of similitude $AB/AC = 5/15 = 1/3$. So the ratio of their areas is $(1/3)^2 = 1/9$, so the area of $ABE$ is $(1/9)(75) = \\boxed{\\frac{25}{3}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Tina randomly selects two distinct numbers from the set $$\\{1,2,3,4,5\\},$$and Sergio randomly selects a number from the set $$\\{1,2,\\ldots,10\\}.$$What is the probability that Sergio's number is larger than the sum of the two numbers chosen by Tina?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are ten ways for Tina to select a pair of numbers. The sums 9, 8, 4, and 3 can be obtained in just one way, and the sums 7, 6, and 5 can each be obtained in two ways. The probability for each of Sergio's choices is $1/10$. Considering his selections in decreasing order, the total probability of Sergio's choice being greater is \\begin{align*}\n&\\left(\\frac{1}{10}\\right)\\left(1 + \\frac{9}{10} + \\frac{8}{10} +\n\\frac{6}{10} + \\frac{4}{10} + \\frac{2}{10} + \\frac{1}{10} + 0 + 0 + 0\n\\right) \\\\\n& = \\boxed{\\frac{2}{5}}.\n\\end{align*}"
+}

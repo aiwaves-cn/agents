@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate\n\\[\\begin{vmatrix} x & \\sin \\theta & \\cos \\theta \\\\ -\\sin \\theta & -x & 1 \\\\ \\cos \\theta & 1 & x \\end{vmatrix}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} x & \\sin \\theta & \\cos \\theta \\\\ -\\sin \\theta & -x & 1 \\\\ \\cos \\theta & 1 & x \\end{vmatrix} &= x \\begin{vmatrix} -x & 1 \\\\ 1 & x  \\end{vmatrix} - \\sin \\theta \\begin{vmatrix} -\\sin \\theta & 1 \\\\ \\cos \\theta & x \\end{vmatrix} + \\cos \\theta \\begin{vmatrix} -\\sin \\theta & -x \\\\ \\cos \\theta & 1 \\end{vmatrix} \\\\\n&= x((-x)(x) - (1)(1)) - \\sin \\theta ((-\\sin \\theta)(x) - (1)(\\cos \\theta)) + \\cos \\theta ((-\\sin \\theta)(1) - (-x)(\\cos \\theta)) \\\\\n&= -x^3 - x + x \\sin^2 \\theta + \\sin \\theta \\cos \\theta - \\sin \\theta \\cos \\theta + x \\cos^2 \\theta \\\\\n&= \\boxed{-x^3}.\n\\end{align*}"
+}

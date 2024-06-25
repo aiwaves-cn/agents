@@ -1,0 +1,6 @@
+{
+    "problem": "We are given that $$54+(98\\div14)+(23\\cdot 17)-200-(312\\div 6)=200.$$Now, let's remove the parentheses:  $$54+98\\div14+23\\cdot 17-200-312\\div 6.$$What does this expression equal?",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Notice how the parentheses are only around pairs of numbers that are being multiplied or divided. Since multiplication and division are performed before addition and subtraction, it doesn't matter if we remove the parentheses. That's why  \\begin{align*}\n&54+(98\\div14)+(23\\cdot 17)-200-(312\\div 6)\\\\\n&=54+98\\div14+23\\cdot17-200-312\\div 6\\\\\n&=\\boxed{200}.\\end{align*}"
+}

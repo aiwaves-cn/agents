@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(1)=5$, $f(2)=8$ and $f(x)=ax+bx+2$, what is the value of $f(3)$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "By the definition of $f(x)$, we have $f(3) = 3a+3b + 2$, so if we find $3a+3b$, we can find $f(3)$. Since $f(1) = a+b+2$ (by the definition of $f(x)$) and $f(1) = 5$, we have $a+b+2 = 5$, so $a+b = 3$.  Multiplying this by 3 gives $3a+3b = 9$, so $f(3) = 3a+3b + 2 = 9+2 = \\boxed{11}$.   Notice that we didn't even need the information about $f(2)$!"
+}

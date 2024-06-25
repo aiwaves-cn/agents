@@ -1,0 +1,6 @@
+{
+    "problem": "What is the 43rd digit after the decimal point in the decimal representation of $\\frac{1}{13}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The decimal representation of $\\frac{1}{13}$ is $0.\\overline{076923}$. Since the first six digits repeat, we know that after every 6th digit the pattern will restart. Since $43\\div 6 = 7 r 1$, the first 42 digits will be seven repetitions of the same pattern followed by the first digit of the pattern. Since the first digit is $\\boxed{0}$, this is our final answer."
+}

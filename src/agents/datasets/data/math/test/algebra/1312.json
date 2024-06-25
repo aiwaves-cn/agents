@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a number that satisfies both equations $18x^2+25x-3=0$ and $4x^2+8x+3=0$. Find the value of $x$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We begin by factoring both quadratics. We find that the $18x^2+25x-3=0$ factors to: \\[ (2x+3)(9x-1)=0. \\]Thus, the only values of $x$ that satisfy this equation are $-\\frac32$ and $\\frac19$. When we factor the second quadratic, $4x^2+8x+3=0$, we find that it is equal to: \\[ (2x+1)(2x+3)=0. \\]Thus, the only values that satisfy this equation are $-\\frac12$ and $-\\frac32$. Since $-\\frac32$ is the only root both polynomials have in common, the answer must be $\\boxed{-\\frac32}$"
+}

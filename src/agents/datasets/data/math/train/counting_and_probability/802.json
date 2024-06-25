@@ -1,0 +1,6 @@
+{
+    "problem": "How many triangles are in the figure below? [asy]\ndraw((0,0)--(30,0)--(30,20)--(0,20)--cycle);\ndraw((15,0)--(15,20));\ndraw((0,0)--(15,20));\ndraw((15,0)--(0,20));\ndraw((15,0)--(30,20));\ndraw((30,0)--(15,20));\ndraw((0,10)--(30,10));\ndraw((7.5,0)--(7.5,20));\ndraw((22.5,0)--(22.5,20));\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The smallest triangles in the figure are the right triangles with legs equal to one-half the width and one-quarter the length of the large rectangle; there are 16 of these. Putting two of these triangles together yields either the isosceles triangle with base equal to the width of the rectangle (4 of these), or half the length of the rectangle (6 of these). Putting these two triangles together yield the large right triangle with legs equal to the width and half the base (8 of these), and combining two large right triangles gives the large isosceles triangle with base equal to the full width of the rectangle (2 of these). In all, this gives $\\boxed{36}$ triangles. (Since the basic unit of the figure is the small right triangle, and other triangles can only be made up of 1, 2, 4, or 8 of these triangles, we know we have found all possible triangles.)"
+}

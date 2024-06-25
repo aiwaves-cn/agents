@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $2 \\times 12 \\times 22 \\times 32 \\times \\ldots \\times 72 \\times 82 \\times 92$ is divided by $5$.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We use the property $a \\equiv b \\pmod{m}$ implies $ac \\equiv bc \\pmod{m}$.\n\nSince all numbers with the units digit of $2$ has a remainder of $2$ when divided by $5$ and we have $10$ numbers,  $$2 \\times 12 \\times 22 \\times 32 \\times \\ldots \\times 72 \\times 82 \\times 92 \\equiv 2^{10} \\equiv 1024 \\equiv \\boxed{4} \\pmod{5}.$$"
+}

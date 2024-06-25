@@ -1,0 +1,6 @@
+{
+    "problem": "A fair coin is tossed six times and the sequence of heads and tails is recorded. What is the probability that the sequence contains exactly two heads? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are a total of $2^6=64$ equally likely sequences of heads and tails we could record from the fair coin, since heads and tails are equally likely for each of the six tosses.  This is the denominator of our probability.  Now, we need the number of sequences that contain exactly two heads.  We can think of this as counting the number of sequences of T and H of length six where H appears exactly twice.  The number of such sequences will be equal to the number of ways to choose the two positions for H, which is $\\dbinom{6}{2}=15$.  Thus, the final probability is $\\boxed{\\frac{15}{64}}$."
+}

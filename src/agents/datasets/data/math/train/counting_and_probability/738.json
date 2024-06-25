@@ -1,0 +1,6 @@
+{
+    "problem": "Our football team has 10 members, of which only 3 are strong enough to play offensive lineman, while all other positions can be played by anyone. In how many ways can we choose a starting lineup consisting of a quarterback, a running back, an offensive lineman, and a wide receiver?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 3 choices for the offensive lineman position. Then there are 9 choices for the next position, 8 choices for the  position after, and 7 choices for the last position. So that's a total of $3\\times9\\times8\\times7 = \\boxed{1512}$."
+}

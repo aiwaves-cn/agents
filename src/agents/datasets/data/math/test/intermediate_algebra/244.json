@@ -1,0 +1,6 @@
+{
+    "problem": "A circle has the same center as an ellipse and passes through the foci $F_1$ and $F_2$ of the ellipse.  The two curves intersect in 4 points.  Let $P$ be any point of intersection.  If the major axis of the ellipse is 15 and the area of triangle $PF_1 F_2$ is 26, compute the distance between the foci.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = PF_1$ and $y = PF_2.$  Then $x + y = 15$ and $\\frac{1}{2} xy = 26,$ so $xy = 52.$\n\n[asy]\nunitsize(0.5 cm);\n\npath ell = xscale(5)*yscale(3)*Circle((0,0),1);\npair P = intersectionpoints(ell,Circle((0,0),4))[1];\npair[] F;\n\nF[1] = (-4,0);\nF[2] = (4,0);\n\ndraw(ell);\ndraw(Circle((0,0),4));\ndraw((-5,0)--(5,0),dashed);\ndraw(F[1]--P--F[2]);\ndraw(rightanglemark(F[1],P,F[2],15));\n \ndot(\"$F_1$\", F[1], SW);\ndot(\"$F_2$\", F[2], SE);\ndot(\"$P$\", P, NW);\n[/asy]\n\nSince $P$ lies on the circle with diameter $\\overline{F_1 F_2},$ $\\angle F_1 PF_2 = 90^\\circ.$  Then by Pythagoras,\n\\[(F_1 F_2)^2 = x^2 + y^2.\\]Squaring the equation $x + y = 15,$ we get $x^2 + 2xy + y^2 = 225.$  Then $x^2 + y^2 = 225 - 2xy = 225 - 2 \\cdot 52 = 121,$ so $F_1 F_2 = \\boxed{11}.$"
+}

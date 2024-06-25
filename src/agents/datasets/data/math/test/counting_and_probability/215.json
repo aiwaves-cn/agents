@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 8 different people be seated around a round table with 8 places? Two seatings are considered equivalent if one can be rotated to form the other.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are $8!$ ways to place the people around the table, but this counts each valid arrangement 8 times (once for each rotation of the same arrangement).  The answer is $\\dfrac{8!}{8} = 7! = \\boxed{5040}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For certain real numbers $a$, $b$, and $c$, the polynomial \\[g(x) = x^3 + ax^2 + x + 10\\]has three distinct roots, and each root of $g(x)$ is also a root of the polynomial \\[f(x) = x^4 + x^3 + bx^2 + 100x + c.\\]What is $f(1)$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since every root of $g(x)$ is a root of $f(x)$ (and these roots are distinct), $g(x)$ is a factor of $f(x).$  Furthermore, $g(x)$ is a monic polynomial of degree 3, and $f(x)$ is a monic polynomial of degree 4, so\n\\[x^4 + x^3 + bx^2 + 100x + c = (x^3 + ax^2 + x + 10)(x - r)\\]for some real number $r.$  Expanding, we get\n\\[x^4 + x^3 + bx^2 + 100x + c = x^4 + (a - r) x^3 + (1 - ar) x^2 + (10 - r) x - 10r.\\]Matching coefficients, we get\n\\begin{align*}\na - r &= 1, \\\\\n1 - ar &= b, \\\\\n10 - r &= 100, \\\\\n-10r &= c.\n\\end{align*}From the equation $10 - r = 100,$ $r = -90.$  Then $a = r + 1 = -89,$ so\n\\[f(x) = (x^3 - 89x^2 + x + 10)(x + 90),\\]and $f(1) = (1 - 89 + 1 + 10)(1 + 90) = \\boxed{-7007}.$"
+}

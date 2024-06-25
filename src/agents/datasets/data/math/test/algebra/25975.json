@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)$ is a polynomial of degree 7, and $g(x)$ is a polynomial of degree 7, then what is the product of the minimum and the maximum possible degrees of $f(x) + g(x)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The minimum possible degree is $0$, since we can find polynomials such that $f(x) = -g(x)+c,$ where $c$ is some nonzero constant. This gives us $f(x) + g(x)=c,$ which has degree $0$. Since we are looking for the product of the minimum and the maximum possible degrees, we can easily see that our answer is $\\boxed{0}.$\n\nNote: The maximum possible degree of $f(x) + g(x)$ is $7,$ since it is impossible for a sum of two polynomials of degree $7$ to include any terms of degree higher than $7.$"
+}

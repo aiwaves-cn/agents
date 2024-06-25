@@ -1,0 +1,6 @@
+{
+    "problem": "How many four-digit numbers whose digits add up to $9$ are divisible by $11$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "For a number $\\underline{a}\\underline{b}\\underline{c}\\underline{d}$ to be divisible by $11$, we need $(a+c)-(b+d)$ to be divisible by $11$. If the digits of $\\underline{a}\\underline{b}\\underline{c}\\underline{d}$ add up to $9$, then $(a+c)-(b+d)$ must be $0$, because $(a+c)-(b+d)$ cannot be as large as 11 or as small as $-11$ without having $a+c+b+d\\geq 11$.\n\nNow $(a+c)-(b+d)=0$ implies that $a+c=b+d$, which in turn implies that $a+c$ and $b+d$ have the same parity (that is, they are either both odd or both even). Therefore, $a+b+c+d = (a+c)+(b+d)$ is even and therefore cannot be equal to $9$. So there are $\\boxed{0}$ possible numbers."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Seven sticks with lengths 2, 3, 5, 7, 11, 13 and 17 inches are placed in a box. Three of the sticks are randomly selected. What is the probability that a triangle can be formed by joining the endpoints of the sticks? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "By the triangle inequality, three segments form a triangle if and only if the sum of the smaller two lengths exceeds the greatest length.  Therefore, if $2$ is one of the sticks drawn, then the three sticks cannot be used to form a triangle.  If 3 is the smallest length drawn, then the possible sets of sticks are (3,5,7) and (3,11,13).  If 5 is the smallest length drawn, then (5,7,11), (5,11,13), and (5,13,17) are the sets that satisfy the triangle inequality.  If 7 is the smallest length drawn, then (7,11,13), (7,11,17), (7,13,17) all satisfy the triangle inequality.  Finally, (11,13,17) satisfies the triangle inequality.  In total, there are $2+3+3+1=9$ sets of sticks that could be used to form a triangle.  There are $\\binom{7}{3}=35$ equally likely sets of 3 sticks, so the probability that one of the 9 sets that form a triangle will be chosen is $\\boxed{\\frac{9}{35}}$."
+}

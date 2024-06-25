@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x) = x^3 + ax^2 + bx + c$, where $a$, $b$, and $c$ are complex numbers.  Suppose that \\begin{align*} p(2009 + 9002\\pi i) = p(2009) = p(9002) = 0 \\end{align*}What is the number of nonreal zeros of $x^{12} + ax^8 + bx^4 + c$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Note that\n\\[x^{12} + ax^8 + bx^4 + c = p(x^4).\\]From the three zeroes, we have $p(x) = (x - (2009 + 9002\\pi i))(x - 2009)(x - 9002)$.  Then, we also have\n\\[p(x^4) = (x^4 - (2009 + 9002\\pi i))(x^4 - 2009)(x^4 - 9002).\\]Let's do each factor case by case:\n\nFirst, $x^4 - (2009 + 9002\\pi i) = 0$: Clearly, all the fourth roots are going to be nonreal.\n\nSecond, $x^4 - 2009 = 0$: The real roots are $\\pm \\sqrt [4]{2009}$, and there are two nonreal roots.\n\nThird, $x^4 - 9002 = 0$: The real roots are $\\pm \\sqrt [4]{9002}$, and there are two nonreal roots.\n\nThus, the answer is $4 + 2 + 2 = \\boxed{8}$."
+}

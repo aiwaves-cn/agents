@@ -1,0 +1,6 @@
+{
+    "problem": "Many television screens are rectangles that are measured by the length of their diagonals. The ratio of the horizontal length to the height in a standard television screen is $4:3$. What is the horizontal length (in inches) of a ``27-inch'' television screen?\n\n[asy]\nfill((0,0)--(8,0)--(8,6)--cycle,gray(0.7));\ndraw((0,0)--(8,0)--(8,6)--(0,6)--cycle,linewidth(0.7));\ndraw((0,0)--(8,6),linewidth(0.7));\nlabel(\"length\",(4,0),S);\nlabel(\"height\",(8,3),E);\nlabel(\"diagonal\",(4,3),NW);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The height, length, and diagonal are in the ratio $3:4:5$. The length of the diagonal is 27, so the horizontal length is $\\frac{4}{5} (27) = \\boxed{21.6}$ inches."
+}

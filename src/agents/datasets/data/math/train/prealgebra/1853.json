@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram shown, $\\overrightarrow{OA}\\perp\\overrightarrow{OC}$ and $\\overrightarrow{OB}\\perp\\overrightarrow{OD}$. If $\\angle{AOD}$ is 3.5 times $\\angle{BOC}$, what is $\\angle{AOD}$? [asy]\nunitsize(1.5cm);\ndefaultpen(linewidth(.7pt)+fontsize(10pt));\ndotfactor=4;\n\npair O=(0,0), A=dir(0), B=dir(50), C=dir(90), D=dir(140);\npair[] dots={O,A,B,C,D};\n\ndot(dots);\ndraw(O--1.2*D,EndArrow(4));\ndraw(O--1.2*B,EndArrow(4));\ndraw(O--1.2*C,EndArrow(4));\ndraw(O--1.2*A,EndArrow(4));\n\nlabel(\"$D$\",D,SW);\nlabel(\"$C$\",C,W);\nlabel(\"$B$\",B,E);\nlabel(\"$A$\",A,N);\nlabel(\"$O$\",O,S);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let $x$ denote the measure in degrees of $\\angle BOC$.  Because $\\angle BOD$ and $\\angle COA$ are right angles, $\\angle COD$ and $\\angle BOA$ each measure $90-x$ degrees.  Therefore $\\angle AOD=x+(90-x)+(90-x)$ degrees.  Solving \\[\n3.5x=x+90-x+90-x\n\\]we find $x=180/4.5=40$.  Therefore $\\angle AOD=180^\\circ-40^\\circ=\\boxed{140\\text{ degrees}}$."
+}

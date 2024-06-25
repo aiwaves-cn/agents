@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest solution of the equation $x^4-34x^2+225=0$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We would like to factor the left-hand side in the form \\[\n(x^2-\\boxed{\\phantom{09}})(x^2-\\boxed{\\phantom{25}}).\n\\] The numbers in the boxes must multiply to give $225$ and add to give $34$.  We write $225=3\\cdot3\\cdot5\\cdot5$ and try a few different pairs until we find that 9 and 25 satisfy the requirements.  We factor further using difference of squares and solve. \\begin{align*}\n(x^2-9)(x^2-25)&=0 \\\\\n(x+3)(x-3)(x-5)(x+5)&=0 \\\\\nx = \\pm 3, x=\\pm 5&\n\\end{align*} The smallest of these solutions is $x=\\boxed{-5}$."
+}

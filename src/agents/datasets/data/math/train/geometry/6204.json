@@ -1,0 +1,6 @@
+{
+    "problem": "The six edges of a tetrahedron $ABCD$ measure $7, 13, 18, 27, 36$ and $41$ units. If the length of edge $AB$ is $41$, then the length of edge $CD$ is\n$\\textbf{(A)}\\ 7\\qquad \\textbf{(B)}\\ 13\\qquad \\textbf{(C)}\\ 18\\qquad \\textbf{(D)}\\ 27\\qquad \\textbf{(E)}\\ 36$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "By the triangle inequality in $\\triangle ABC$, we find that $BC$ and $CA$ must sum to greater than $41$, so they must be (in some order) $7$ and $36$, $13$ and $36$, $18$ and $27$, $18$ and $36$, or $27$ and $36$. We try $7$ and $36$, and now by the triangle inequality in $\\triangle ABD$, we must use the remaining numbers $13$, $18$, and $27$ to get a sum greater than $41$, so the only possibility is $18$ and $27$. This works as we can put $BC = 36$, $AC = 7$, $AD = 18$, $BD = 27$, $CD = 13$, so that $\\triangle ADC$ and $\\triangle BDC$ also satisfy the triangle inequality. Hence we have found a solution that works, and it can be verified that the other possibilities don't work, though as this is a multiple-choice competition, you probably wouldn't do that in order to save time. In any case, the answer is $CD = \\boxed{13}$."
+}

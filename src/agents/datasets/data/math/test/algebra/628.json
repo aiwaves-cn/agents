@@ -1,0 +1,6 @@
+{
+    "problem": "What is the range of the function $$F(x) = |x+1|+|x-5|~?$$Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We have $$F(x) = \\begin{cases}\n-(x+1)-(x-5) &\\text{if }x<-1 \\\\\n(x+1)-(x-5) &\\text{if }-1\\le x<5 \\\\\n(x+1)+(x-5) &\\text{if }x\\ge 5\n\\end{cases}.$$Simplifying, we have $$F(x) = \\begin{cases}\n4-2x &\\text{if }x<-1 \\\\\n6 &\\text{if }-1\\le x<5 \\\\\n2x-4 &\\text{if }x\\ge 5\n\\end{cases}.$$For $x<-1,$ the function $4-2x$ achieves all values in $(6,\\infty),$ and for $x\\ge 5,$ the function $2x-4$ achieves all values in $[6,\\infty).$Thus, the range of $F(x)$ is $\\boxed{[6,\\infty)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the maximum value of\n\\[f(x) = 3x - x^3\\]for $0 \\le x \\le \\sqrt{3}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Graphing the function, or trying different values of $x,$ we may think that the function is maximized at $x = 1,$ which would make the maximum value 2.\n\nTo confirm this, we can consider the expression\n\\[2 - f(x) = x^3 - 3x + 2.\\]We know that this is zero at $x = 1,$ so $x - 1$ is a factor:\n\\[2 - f(x) = (x - 1)(x^2 + x - 2) = (x - 1)^2 (x + 2).\\]Since $0 \\le x \\le \\sqrt{3},$ $x + 2$ is always positive.  Hence, $f(x) \\le 2$ for all $x,$ which confirms that the maximum value is $\\boxed{2}.$"
+}

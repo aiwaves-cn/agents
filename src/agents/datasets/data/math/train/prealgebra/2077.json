@@ -1,0 +1,6 @@
+{
+    "problem": "In trapezoid $ABCD$, sides $\\overline{AB}$ and $\\overline{CD}$ are parallel, $\\angle A = 2\\angle D$, and $\\angle C = 3\\angle B$.  Find $\\angle A$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since $\\overline{AB}\\parallel\\overline{CD}$, we have $\\angle A+ \\angle D = 180^\\circ$.  Since $\\angle A = 2\\angle D$, we have $2\\angle D + \\angle D = 180^\\circ$, so $3\\angle D = 180^\\circ$, which means $\\angle D = 60^\\circ$.  Therefore, $\\angle A = 2\\angle D = \\boxed{120^\\circ}$.\n\n[asy]\npair A,B,C,D;\n\nA = (0,0);\nB = (1,0);\nD = rotate(120)*(0.8,0);\nC = intersectionpoint(D--(D + (40,0)), B--(B + (rotate(135)*(1,0))));\ndraw(A--B--C--D--A);\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\", B,SE);\nlabel(\"$C$\",C,NE);\nlabel(\"$D$\",D,NW);\n[/asy]"
+}

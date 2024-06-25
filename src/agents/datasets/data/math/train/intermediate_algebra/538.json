@@ -1,0 +1,6 @@
+{
+    "problem": "Is $f(x) = \\frac{3}{2x^{6}-5}$ an even function, odd function, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "$$f(-x) = \\frac{3}{2(-x)^{6}-5} = \\frac{3}{2x^{6}-5} = f(x)$$Hence $f$ is $\\boxed{\\text{even}}.$"
+}

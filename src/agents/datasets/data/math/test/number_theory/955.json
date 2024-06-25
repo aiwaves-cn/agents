@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $1234_5+2341_5$. Express your answer in base 5.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We have\n\n$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c}& & 1 & 2 & 3 & 4_{5}\\\\ +& & 2& 3 & 4 & 1_{5}\\\\ \\cline{1-6}&& 4 & 1 & 3 & 0 _{5}\\\\ \\end{array}$\n\nSo, the final answer is $\\boxed{4130_5}$."
+}

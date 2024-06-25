@@ -1,0 +1,6 @@
+{
+    "problem": "Palindromes are numbers that read the same backwards and forwards, like 5665. What is the least possible positive four-digit palindrome that is divisible by 3?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The smallest four-digit palindromes have $1$ on each end.  $1001$ is not divisible by $3$, nor is $1111$, but $\\boxed{1221}$ is, so it is the smallest possible."
+}

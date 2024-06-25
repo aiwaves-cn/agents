@@ -1,0 +1,6 @@
+{
+    "problem": "Given that the point $(4,7)$ is on the graph of $y=3f\\left(2x\\right)+1$, there is one point that must be on the graph of $y=f(x)$. What is the sum of coordinates of that point?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Given that $(4,7)$ is on the graph of $y=3f\\left(2x\\right)+1$, we can substitute $x=4$ and $y=7$ in that equation to obtain $$7 = 3f\\left(2\\cdot4\\right)+1.$$We can rewrite this information as $$2 = f(8),$$which tells us that $(8,2)$ must be on the graph of $y=f(x)$. The sum of coordinates of this point is $\\boxed{10}$."
+}

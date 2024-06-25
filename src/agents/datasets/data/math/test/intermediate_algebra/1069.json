@@ -1,0 +1,6 @@
+{
+    "problem": "For how many real values of $c$ do we have $|3-ci| = 7$?",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We have $|3-ci| = \\sqrt{3^2 + (-c)^2} = \\sqrt{c^2 + 9}$, so $|3-ci| = 7$ gives us $\\sqrt{c^2 + 9} = 7$.  Squaring both sides gives $c^2 + 9 = 49$, so $c^2=40$.  Taking the square root of both sides gives $c = 2\\sqrt{10}$ and $c=-2\\sqrt{10}$ as solutions, so there are $\\boxed{2}$ real values of $c$ that satisfy the equation.\n\nWe also could have solved this equation by noting that $|3-ci| = 7$ means that the complex number $3-ci$ is 7 units from the origin in the complex plane.  Therefore, it is on the circle centered at the origin with radius 7.  The complex number $3-ci$ is also on the vertical line that intersects the real axis at 3, which is inside the aforementioned circle.  Since this line goes inside the circle, it must intersect the circle at $\\boxed{2}$ points, which correspond to the values of $c$ that satisfy the original equation."
+}

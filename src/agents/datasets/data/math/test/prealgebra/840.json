@@ -1,0 +1,6 @@
+{
+    "problem": "The capacity of a school is 1100 students and the current enrollment is 980 students. If the student population increases at a rate of 5 percent per year, what is the smallest integer $n$ such that the enrollment will exceed the capacity in $n$ years?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Five percent of 980 is $980/20=49$, so after one year the enrollment will be $980+49=1029$.  Five percent of 1029 is $49+5\\%(49)=51\\frac{9}{20}$, so at the end of the second year, there will be $1029+51\\frac{9}{10}=1080\\frac{9}{20}$ students (or, rather, 1080 students).  Five percent of $1080\\frac{9}{20}$ is greater than 50, so at the end of $\\boxed{3}$ years, there will be more than 1100 students."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $\\binom{17}{7}=19448$, $\\binom{17}{8}=24310$ and $\\binom{17}{9}=24310$, calculate $\\binom{19}{9}$.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We can apply Pascal's identity to get that $\\binom{19}{9}=\\binom{18}{8}+\\binom{18}{9}$. From here, we can apply it twice more to get that  $\\binom{19}{9}=\\binom{18}{8}+\\binom{18}{9}=\\left(\\binom{17}{7}+\\binom{17}{8}\\right)+\\left(\\binom{17}{8}+\\binom{17}{9}\\right)$. Substituting the provided values of $\\binom{17}{7}$, $\\binom{17}{8}$, and $\\binom{17}{9}$ gives us $\\binom{19}{9}=19448+2(24310)+24310=\\boxed{92378}$."
+}

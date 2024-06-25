@@ -1,0 +1,6 @@
+{
+    "problem": "April has four different basil plants and four different tomato plants. In how many ways can she arrange the plants in a row if she puts all the tomato plants next to each other?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "First, consider arranging the four basil plants and the one group of tomato plants (not worrying about the order of the tomato plants within the group). There are $5!=120$ ways to arrange them. Then, for each arrangement, there are $4!=24$ ways to arrange the plants in the group of tomato plants. Therefore, there are a total of $120\\cdot24=\\boxed{2880}$ ways for April to arrange her plants such that all the tomato plants are next to each other."
+}

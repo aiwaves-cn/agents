@@ -1,0 +1,6 @@
+{
+    "problem": "If I have four boxes arranged in a $2$ x $2$ grid, in how many distinct ways can I place the digits $1$, $2$, and $3$ in the boxes such that each box contains at most one digit?  (I only have one of each digit, so one box will remain blank.)",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We can think of placing a $0$ in the fourth box that will necessarily be empty. Now the problem is simple: we have four choices of digits for the first box, three for the second, two for the third, and one for the last. Thus, there are $4\\cdot 3\\cdot 2\\cdot 1 = \\boxed{24}$ distinct ways to fill the boxes."
+}

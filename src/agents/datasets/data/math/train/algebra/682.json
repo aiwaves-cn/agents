@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product of all real values of $r$ for which $\\frac{1}{2x}=\\frac{r-x}{7}$ has exactly one real solution.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Observe first that $x=0$ is not a solution to the equation since it makes the denominator of $\\frac{1}{2x}$ equal to 0.  For $x\\neq 0$, we may multiply both sides by both denominators and move all the resulting terms to the left-hand side to get $2x^2-2rx+7=0$. Observe that there are two ways the original equation could have exactly one solution.  Either $2x^2-2rx+7=0$ has two solutions and one of them is 0, or else $2x^2-2rx+7=0$ has exactly one nonzero solution.  By trying $x=0$, we rule out the first possibility.\n\nConsidering the expression $\\frac{-b\\pm \\sqrt{b^2-4ac}}{2a}$ for the solutions of $ax^2+bx+c=0$, we find that there is exactly one solution if and only if the discriminant $b^2-4ac$ is zero.  Setting $(-2r)^2-4(2)(7)$ equal to 0 gives $4r^2-4(14) = 0$.  Add 4(14) and divide by 4 to find $r^2=14$.  The two solutions of this equation are $\\sqrt{14}$ and $-\\sqrt{14}$, and their product is $\\boxed{-14}$."
+}

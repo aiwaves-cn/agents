@@ -1,0 +1,6 @@
+{
+    "problem": "A turn consists of rolling a standard die and tossing a fair coin. The game is won when the die shows a 1 or a 6 and the coin shows heads. What is the probability the game will be won before the fourth turn? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The probability of rolling 1 or 6 is $\\frac{2}{6}$, and the probability of flipping heads is $\\frac{1}{2}$.  Therefore, the probability that the game will end on the first turn is $\\frac{2}{6}\\cdot \\frac{1}{2}=\\frac{1}{6}$.  The probability that the game will not end on the first turn is $1-\\frac{1}{6}=\\frac{5}{6}$.  Given that the game is still going after 1 turn, the probability that the game will not end on the second turn is also $\\frac{5}{6}$.  Therefore, the probability that the game does not end by the end of the second turn is $\\left(\\frac{5}{6}\\right)^2$.  Similarly, the probability that the game is still going after 3 turns is $\\left(\\frac{5}{6}\\right)^3=\\frac{125}{216}$.  So the probability that the game is over by the end of the third turn is $1-\\dfrac{125}{216}=\\boxed{\\dfrac{91}{216}}$."
+}

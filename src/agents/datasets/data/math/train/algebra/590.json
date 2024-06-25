@@ -1,0 +1,6 @@
+{
+    "problem": "For real numbers $x$, let \\[f(x) = \\left\\{\n\\begin{array}{cl}\nx+2 &\\text{ if }x>3, \\\\\n2x+a &\\text{ if }x\\le 3.\n\\end{array}\n\\right.\\]What must the value of $a$ be to make the piecewise function continuous (which means that its graph can be drawn without lifting your pencil from the paper)?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "For the function to be continuous, both of the two expressions must have the same value when $x=3$. Therefore, $3+2=2(3)+a$. Solving, we get that $a=\\boxed{-1}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of the first $m$ positive odd integers is 212 more than the sum of the first $n$ positive even integers. What is the sum of all possible values of $n$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "the sum of the first $m$ positive odd integers is\n\\[1 + 3 + 5 + \\dots + (2m - 1) = m^2,\\]and the sum of the first $n$ positive even integers is\n\\[2 + 4 + 6 + \\dots + 2n = n^2 + n,\\]so $m^2 - (n^2 + n) = 212.$  Then\n\\[4m^2 - (4n^2 + 4n) = 848,\\]so $4m^2 - (2n + 1)^2 = 847.$  By difference of squares,\n\\[(2m + 2n + 1)(2m - 2n - 1) = 847.\\]We list the ways of writing 847 as the product of two positive integers, and the corresponding values of $m$ and $n.$  (Note that $2m + n + 1$ must be the larger factor.)\n\n\\[\n\\begin{array}{c|c|c|c}\n2m + 2n + 1 & 2m - 2n - 1 & m & n \\\\ \\hline\n847 & 1 & 212 & 211 \\\\\n121 & 7 & 32 & 28 \\\\\n77 & 11 & 22 & 16\n\\end{array}\n\\]Thus, the sum of the possible values of $n$ is $211 + 28 + 16 = \\boxed{255}.$"
+}

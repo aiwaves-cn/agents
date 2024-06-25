@@ -1,0 +1,6 @@
+{
+    "problem": "What is the slope of the line that is tangent to a circle at point (5,5) if the center of the circle is (3,2)? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "If a line can be drawn tangent to a circle a the point $(5,5)$, then it must be possible to draw a radius from the center of the circle to the point $(5,5)$.  This radius will have a slope of: $$\\frac{5-2}{5-3}=\\frac{3}{2}$$ A key fact to remember is that tangents to a circle at a certain point are perpendicular to radii drawn from the center of the circle to that point.  This diagram summarizes that fact: [asy]\ndraw(Circle((0,0),sqrt(13)),linewidth(.8));\ndraw((-1,5)--(5,1),linewidth(.8));\ndraw((0,0)--(2,3),linewidth(.8));\ndraw((2-0.3,3+0.2)--(2-0.5,3-0.1)--(2-0.2,3-0.3));\n[/asy] Therefore, the slope of the tangent will be the negative inverse of the slope of the radius, which is equal to $\\boxed{-\\frac{2}{3}}$."
+}

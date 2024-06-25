@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P$ be a point on the graph of the equation $xyz = 1$ in three-dimensional space.  Find the minimum possible distance between $P$ and the origin.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $P = (x,y,z),$ so $xyz = 1.$  We want to minimize $\\sqrt{x^2 + y^2 + z^2},$ which is equivalent to minimizing $x^2 + y^2 + z^2.$  By AM-GM,\n\\[x^2 + y^2 + z^2 \\ge 3 \\sqrt[3]{x^2 y^2 z^2} = 3,\\]so $\\sqrt{x^2 + y^2 + z^2} \\ge \\sqrt{3}.$\n\nEquality occurs when $x = y = z = 1,$ so the minimum distance is $\\boxed{\\sqrt{3}}.$"
+}

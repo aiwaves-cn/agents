@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[\\sqrt[3]{2} = a + \\cfrac{1}{b + \\cfrac{1}{c + \\cfrac{1}{d + \\dotsb}}},\\]where $a,$ $b,$ $c,$ $d$ are positive integers, compute $b.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We know that\n\\[\\sqrt[3]{2} = a + \\cfrac{1}{b + \\cfrac{1}{c + \\cfrac{1}{d + \\dotsb}}} > a,\\]and\n\\[\\sqrt[3]{2} = a + \\cfrac{1}{b + \\cfrac{1}{c + \\cfrac{1}{d + \\dotsb}}} < a + 1.\\]The integer $a$ that satisfies $a < \\sqrt[3]{2} < a + 1$ is $a = 1.$\n\nThen\n\\[\\sqrt[3]{2} - 1 = \\cfrac{1}{b + \\cfrac{1}{c + \\cfrac{1}{d + \\dotsb}}},\\]so\n\\[\\frac{1}{\\sqrt[3]{2} - 1} = b + \\cfrac{1}{c + \\cfrac{1}{d + \\dotsb}}.\\]As before, $b$ must satisfy\n\\[b < \\frac{1}{\\sqrt[3]{2} - 1} < b + 1.\\]Rationalizing the denominator, we get\n\\[\\frac{1}{\\sqrt[3]{2} - 1} = \\frac{\\sqrt[3]{4} + \\sqrt[3]{2} + 1}{(\\sqrt[3]{2} - 1)(\\sqrt[3]{4} + \\sqrt[3]{2} + 1)} = \\frac{\\sqrt[3]{4} + \\sqrt[3]{2} + 1}{2 - 1} = \\sqrt[3]{4} + \\sqrt[3]{2} + 1.\\]We have that\n\\[\\sqrt[3]{4} + \\sqrt[3]{2} + 1 > 1 + 1 + 1 = 3.\\]Also, $1.3^3 = 2.197 > 2$ and $1.6^3 = 4.096 > 4,$ so\n\\[\\sqrt[3]{4} + \\sqrt[3]{2} + 1 < 1.3 + 1.6 + 1 = 3.9 < 4,\\]so $b = \\boxed{3}.$"
+}

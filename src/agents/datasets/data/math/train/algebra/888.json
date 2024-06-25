@@ -1,0 +1,6 @@
+{
+    "problem": "An infinite geometric series has a first term of $12$ and a second term of $4.$ A second infinite geometric series has the same first term of $12,$ a second term of $4+n,$ and a sum of four times that of the first series. Find the value of $n.$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Note that if the the two series have constant ratios of $a$ and $b,$ respectively, then $4\\left( \\frac{12}{1-a} \\right) = \\frac{12}{1-b}.$ Simplifying, $4(1-b)=1-a.$ Substituting in $a= \\frac{4}{12}=\\frac{1}{3}$ and $b= \\frac{4+n}{12}=\\frac{1}{3}+\\frac{n}{12},$ we quickly find that $n=\\boxed{6}.$"
+}

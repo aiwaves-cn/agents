@@ -1,0 +1,6 @@
+{
+    "problem": "The force needed to loosen a bolt varies inversely with the length of the handle of the wrench used. A wrench with a handle length of 9 inches requires 375 pounds of force to loosen a certain bolt. A wrench of 15 inches will require how many pounds of force to loosen the same bolt?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "When we change from a 9-inch wrench to a 15-inch wrench, we multiply the length of the wrench by $\\frac{15}{9} = \\frac{5}{3}$.  Since the wrench length and the force required are inversely proportional, their product must be constant.  So, when we multiply the wrench length by $\\dfrac53$, we must multiply the force required by $\\dfrac35$ in order to keep their product constant.  So, the force required is $(375)\\left(\\frac35\\right) = \\boxed{225}$ pounds of force."
+}

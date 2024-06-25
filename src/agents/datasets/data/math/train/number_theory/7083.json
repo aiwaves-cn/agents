@@ -1,0 +1,6 @@
+{
+    "problem": "Let $m \\ge 3$ be an integer and let $S = \\{3,4,5,\\ldots,m\\}$. Find the smallest value of $m$ such that for every partition of $S$ into two subsets, at least one of the subsets contains integers $a$, $b$, and $c$ (not necessarily distinct) such that $ab = c$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We claim that $243$ is the minimal value of $m$. Let the two partitioned sets be $A$ and $B$; we will try to partition $3, 9, 27, 81,$ and $243$ such that the $ab=c$ condition is not satisfied. Without loss of generality, we place $3$ in $A$. Then $9$ must be placed in $B$, so $81$ must be placed in $A$, and $27$ must be placed in $B$. Then $243$ cannot be placed in any set, so we know $m$ is less than or equal to $243$.\nFor $m \\le 242$, we can partition $S$ into $S \\cap \\{3, 4, 5, 6, 7, 8, 81, 82, 83, 84 ... 242\\}$ and $S \\cap \\{9, 10, 11 ... 80\\}$, and in neither set are there values where $ab=c$ (since $8 < (3\\text{ to }8)^2 < 81$ and $(9\\text{ to }80)^2 > 80$). Thus $m = \\boxed{243}$."
+}

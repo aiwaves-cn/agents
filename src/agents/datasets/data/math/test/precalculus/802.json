@@ -1,0 +1,6 @@
+{
+    "problem": "One line is described by\n\\[\\begin{pmatrix} -1 \\\\ -3 \\\\ -5 \\end{pmatrix} + t \\begin{pmatrix} 3 \\\\ k \\\\ 7 \\end{pmatrix}.\\]Another line is described by\n\\[\\begin{pmatrix} 2 \\\\ 4 \\\\ 6 \\end{pmatrix} + u \\begin{pmatrix} 1 \\\\ 4 \\\\ 7 \\end{pmatrix}.\\]Find $k$ so that the lines are coplanar (i.e. there is a plane that contains both lines).",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The direction vectors of the lines are $\\begin{pmatrix} 3 \\\\ k \\\\ 7 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 4 \\\\ 7 \\end{pmatrix}.$  These vectors cannot be proportional, which means that the lines cannot be parallel.  Therefore, the only way that the lines can be coplanar is if they intersect.\n\nMatching the entries in both lines, we obtain the system\n\\begin{align*}\n-1 + 3t &= 2 + u, \\\\\n-3 + kt &= 4 + 4u, \\\\\n-5 + 7t &= 6 + 7u.\n\\end{align*}Solving the equations $-1 + 3t = 2 + u$ and $-5 + 7t = 6 + 7u,$ we find $t = \\frac{5}{7}$ and $u = -\\frac{6}{7}$.  Substituting into the second equation, we get\n\\[-3 + \\frac{5}{7} k = 4 - \\frac{24}{7}.\\]This leads to $k = \\boxed{5}.$"
+}

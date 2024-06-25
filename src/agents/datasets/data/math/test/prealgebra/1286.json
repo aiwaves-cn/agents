@@ -1,0 +1,6 @@
+{
+    "problem": "How many multiples of $17$ are greater than $-50$ and less than $50$?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The positive multiples of $17$ that are less than $50$ are $17$ and $34$. There are not any more since $17 \\cdot 3 = 51$, and $51$ is not less than $50$. Then we know that the negative multiples of $17$ that are greater than $-50$ are $-17$ and $-34$. We still have to think about whether $0$ is a multiple of $17$ or not, and it is since $0 = 0 \\cdot 17$ (or because of the more general rule that $0$ is a multiple of every integer).\n\nSo there are $\\boxed{5}$ multiples of $17$ that are greater than $-50$ and less than $50$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common divisor of 957 and 1537.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Observing that neither $957$ nor $1537$ can be divided by $2,$ $3,$ $5,$ or $7,$ we turn to the Euclidean algorithm. We get \\begin{align*}\n\\text{gcd}(957,1537) &= \\text{gcd}(957, 1537 - 957) \\\\\n&= \\text{gcd}(957,580) \\\\\n&= \\text{gcd}(580, 957 -580) \\\\\n&= \\text{gcd}(580,377) \\\\\n&= \\text{gcd}(377,580-377) \\\\\n&= \\text{gcd}(377,203) \\\\\n&= \\text{gcd}(203,174) \\\\\n&= \\text{gcd}(174,203-174) \\\\\n&= \\text{gcd}(174,29) \\\\\n&= \\boxed{29}.\n\\end{align*}Remark: Note that we could have computed $\\text{gcd}(957,580)$ more quickly by observing that  \\[\n\\text{957 is divisible by neither 2 nor 5}\\]\\[ \\implies \\text{gcd}(957,580)=\\text{gcd}(957,58).\n\\]The greatest common divisor of 957 and 58 can be calculated using the Euclidean algorithm in one step: long division gives $957 \\div 58 = 16\\text{ remainder }29$."
+}

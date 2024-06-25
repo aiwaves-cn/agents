@@ -1,0 +1,6 @@
+{
+    "problem": "Alice and Bob each arrive at a party at a random time between 1:00 and 2:00. If Alice arrives after Bob, what is the probability that Bob arrived before 1:30?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We let the $x$-axis represent the time Bob arrives, and the $y$-axis represent the time Alice arrives. Then we shade in the region where Alice arrives after Bob, and mark off the part of that area where Bob arrives before 1:30.\n\n[asy]\nfill((0,0)--(60,60)--(0,60)--cycle, gray(.7));\ndraw((30,0)--(30,60));\nlabel(\"1:30\", (30,0), S);\n\ndraw((0,0)--(60,0)--(60,60)--(0,60));\ndraw((0,0)--(0,60));\nlabel(\"1:00\", (0,0), SW);\nlabel(\"2:00\", (60,0), S);\nlabel(\"2:00\", (0,60), W);\n[/asy]\n\nWe need the ratio of the area of the shaded region to the left of the line marking 1:30 to the area of the whole shaded region. This ratio is $\\boxed{\\frac{3}{4}}$."
+}

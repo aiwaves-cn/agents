@@ -1,0 +1,6 @@
+{
+    "problem": "How many congruent 4-foot tall cylindrical pipes with an inside diameter of 2 inches are needed to hold the same amount of water as one pipe of the same height with an inside diameter of 12 inches?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Each cylindrical pipe with diameter 2 has radius $2/2=1$ and volume $\\pi(1^2)(4)=4\\pi$.\n\nThe cylindrical pipe with diameter 12 has radius $12/2=6$ and volume $\\pi(6^2)(4)=144\\pi$.\n\nThus, we need $\\frac{144\\pi}{4\\pi}=\\boxed{36}$ pipes with diameter 2 to hold the same amount of water as a pipe with diameter 12."
+}

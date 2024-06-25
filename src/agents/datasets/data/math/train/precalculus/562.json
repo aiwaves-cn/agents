@@ -1,0 +1,6 @@
+{
+    "problem": "If $e^{i \\alpha} + e^{i \\beta} = \\frac{1}{4} + \\frac{3}{7} i,$ then find $e^{-i \\alpha} + e^{-i \\beta}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can write\n\\[\\cos \\alpha + i \\sin \\alpha + \\cos \\beta + i \\sin \\beta = \\frac{1}{4} + \\frac{3}{7} i,\\]so $\\cos \\alpha + \\cos \\beta = \\frac{1}{4}$ and $\\sin \\alpha + \\sin \\beta = \\frac{3}{7}.$  Therefore,\n\\begin{align*}\ne^{-i \\alpha} + e^{-i \\beta} &= \\cos (-\\alpha) + i \\sin (-\\alpha) + \\cos (-\\beta) + i \\sin (-\\beta) \\\\\n&= \\cos \\alpha - i \\sin \\alpha + \\cos \\beta - i \\sin \\beta \\\\\n&= \\boxed{\\frac{1}{4} - \\frac{3}{7} i}.\n\\end{align*}"
+}

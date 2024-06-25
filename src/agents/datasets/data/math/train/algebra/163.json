@@ -1,0 +1,6 @@
+{
+    "problem": "The quadratic equation $ax^2+20x+c=0$ has exactly one solution. If $a+c=29$, and $a<c$ find the ordered pair $(a,c)$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the quadratic has only one solution, the discriminant must be equal to zero. The discriminant is $b^2-4ac=400-4ac=0$, so $ac=\\frac{400}{4}=100$. We need to find $a$ and $c$ given $a+c=29$ and $ac=100$. We could write a quadratic equation and solve, but instead we rely on clever algebraic manipulations: Since $a+c=29$, we have $$(a+c)^2=a^2+c^2+2ac=29^2=841.$$We subtract $4ac=400$ from each side to find $$a^2+c^2+2ac-4ac=a^2+c^2-2ac=841-400=441.$$We recognize each side as a square, so we take the square root of both sides: $$\\sqrt{a^2+c^2-2ac}=\\sqrt{(c-a)^2}=c-a=\\sqrt{441}=21.$$(Technically we should take the positive and negative square root of both sides, but since $c>a$ we know $c-a>0$.) Thus we have  \\begin{align*}\nc-a&=21\\\\\nc+a&=29\n\\end{align*}Summing these equations gives \\begin{align*}\n2c&=50\\\\\n\\Rightarrow\\qquad c&=25,\n\\end{align*}and $a=29-c=4$. Thus our ordered pair $(a,c)$ is $\\boxed{(4,25)}$."
+}

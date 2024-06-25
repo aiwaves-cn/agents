@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[17 \\log_{30} x - 3 \\log_x 5 + 20 \\log_x 15 - 3 \\log_x 6 + 20 \\log_x 2\\]for $x > 1.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\begin{align*}\n&17 \\log_{30} x - 3 \\log_x 5 + 20 \\log_x 15 - 3 \\log_x 6 + 20 \\log_x 2 \\\\\n&= 17 \\log_{30} x - \\log_x 5^3 + \\log_x 15^{20} - \\log_x 6^3 + \\log_x 2^{20} \\\\\n&= 17 \\log_{30} x + \\log_x \\frac{15^{20} \\cdot 2^{20}}{5^3 \\cdot 6^3} \\\\\n&= 17 \\log_{30} x + \\log_x (2^{17} \\cdot 3^{17} \\cdot 5^{17}) \\\\\n&= 17 \\log_{30} x + 17 \\log_x 30 \\\\\n&= 17 \\left( \\log_{30} x + \\frac{1}{\\log_{30} x} \\right).\n\\end{align*}By AM-GM,\n\\[\\log_{30} x + \\frac{1}{\\log_{30} x} \\ge 2,\\]so $17 \\left( \\log_{30} x + \\frac{1}{\\log_{30} x} \\right) \\ge 34.$  Equality occurs when $x = 30,$ so the minimum value is $\\boxed{34}.$"
+}

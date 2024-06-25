@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of the two $5$-digit numbers $AMC10$ and $AMC12$ is $123422.$ What is $A + M + C?$",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Since the last two digits of $AMC10$ and $AMC12$ sum to $22,$ we have \\[\nAMC + AMC = 2(AMC) = 1234.\n\\] Hence $AMC=617,$ so $A=6,$ $M=1,$ $C=7,$ and $A+M+C = 6+1+7 = \\boxed{14}.$"
+}

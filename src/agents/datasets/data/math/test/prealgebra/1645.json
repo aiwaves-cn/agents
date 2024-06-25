@@ -1,0 +1,6 @@
+{
+    "problem": "Carpet costs $\\$21.95$ per square yard and the padding to put under it costs $\\$2.55$ per square yard. Felix plans to install padding and carpet in the region shown in the diagram. What is the cost of the carpet and padding needed to exactly cover the room?\n\n[asy]\nunitsize(0.2 inch);\n//import geometry;\ndraw((0,0)--(9,0)--(9,2)--(4,2)--(4,5)--(0,5)--(0,0));\n\nlabel(\"4 yds\",(2,5),N);\nlabel(\"3 yds\",(4,3.5),E);\nlabel(\"5 yds\",(6.5,2),N);\nlabel(\"2 yds\",(9,1),E);\n\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The room is a 5 yard by 9 yard rectangle with a 3 yard by 5 yard rectangle removed from one corner.  The area of the room is $(5\\text{ yd.})(9\\text{ yd.})-(3\\text{ yd.})(5\\text{ yd.})=30$ square yards.  The total cost per square yard for the carpet and padding is $\\$21.95+\\$2.55=\\$24.50$.  The total cost is $30$ square yards times $\\$24.50$ per square yard, or $\\boxed{735}$ dollars."
+}

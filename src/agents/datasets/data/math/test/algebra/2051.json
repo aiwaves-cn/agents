@@ -1,0 +1,6 @@
+{
+    "problem": "Find the coefficient of $x$ when $(7+8x)-3(2+6x+2x^2)+9(1+3x+4x^2+12x^3)-9(7-x^2-8x^3+13x^4)$ is simplified.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Ignoring the non-linear terms, we see that the coefficient of $x$ is  \\[1\\cdot8-3\\cdot6+9\\cdot3=8-18+27=\\boxed{17}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "There exists a positive real number $x$ such that $ \\cos (\\arctan (x)) = x $. Find the value of $x^2$.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Construct a right triangle with legs 1 and $x.$  Let the angle opposite the side length $x$ be $\\theta.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C;\n\nA = (2,1.8);\nB = (0,0);\nC = (2,0);\n\ndraw(A--B--C--cycle);\ndraw(rightanglemark(A,C,B,8));\n\nlabel(\"$\\theta$\", B + (0.7,0.3));\nlabel(\"$1$\", (B + C)/2, S);\nlabel(\"$x$\", (A + C)/2, E);\nlabel(\"$\\sqrt{x^2 + 1}$\", (A + B)/2, NW);\n[/asy]\n\nThen $\\tan \\theta = x,$ so $\\theta = \\arctan x.$  Then\n\\[\\cos (\\arctan x) = \\frac{1}{\\sqrt{x^2 + 1}},\\]so\n\\[\\frac{1}{\\sqrt{x^2 + 1}} = x.\\]Squaring both sides, we get\n\\[\\frac{1}{x^2 + 1} = x^2,\\]so $x^4 + x^2 - 1 = 0.$  By the quadratic formula,\n\\[x^2 = \\frac{-1 \\pm \\sqrt{5}}{2}.\\]Since $x^2$ is positive,\n\\[x^2 = \\boxed{\\frac{-1 + \\sqrt{5}}{2}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $x,$ $y,$ and $z$ are positive real numbers such that\n\\[\\frac{x + 2y + 4z + 8}{4} = \\frac{4}{\\frac{1}{x} + \\frac{1}{2y} + \\frac{1}{4z} + \\frac{1}{8}}.\\]Find the ordered triple $(x,y,z).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "This is the equality case of AM-HM applied to $x,$ $2y,$ $4z,$ and 8, so they must be equal.  Hence, $(x,y,z) = \\boxed{(8,4,2)}.$"
+}

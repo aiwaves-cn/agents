@@ -1,0 +1,6 @@
+{
+    "problem": "The five tallest buildings in Los Angeles in 1985 had a mean height of 733 feet. The tallest of the five buildings has a height of 858 feet, the shortest of the five 625 feet. If a new building were constructed with a height of 885 feet, by how many feet would it increase the mean height of the five tallest buildings of the city?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since the mean of the heights of the 5 tallest buildings in Los Angeles before the new building was built was 733, the sum of their heights must have been $5\\cdot733 = 3665$. After the new building is built, the shortest of these, which was 625 feet tall, is replaced as a member of the five tallest buildings, which, since it is 885 feet tall, is $885-625 = 260$ feet taller. Therefore the sum of the heights of the five tallest buildings increases by 260 feet, to $3665 + 260 = 3925$ feet. This means that the new mean height of the 5 tallest buildings is $\\frac{3925}{5}=785$ feet, so the mean has increased by $785-733=\\boxed{52}$ feet. Note that this amount is just the difference in the height of the two buildings divided by 5."
+}

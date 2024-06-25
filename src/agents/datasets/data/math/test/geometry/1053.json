@@ -1,0 +1,6 @@
+{
+    "problem": "The volume of a cube is numerically equal to six times the sum of the lengths of its edges. What is the volume, in cubic units, of the cube? Express your answer in simplest radical form.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let $s$ be the side length of the cube.  The volume of the cube is $s^3$ and the sum of the lengths of the edges of the cube is $12s$.  Therefore, we must have $s^3 = 6\\cdot 12s$, so $s^3=72s$.  Subtracting $72s$ from both sides gives\n\\[\ns^3-72s=0,\n\\]so \\[\ns(s^2-72)=0, \n\\]which means \\[\ns = 0 \\text{ or } s=\\pm \\sqrt{72}\n\\] Discarding the non-positive solutions, we find $s=\\sqrt{72}=6\\sqrt{2}$.  The volume of the cube is $s^3=6^3\\cdot(\\sqrt{2})^3=\\boxed{432\\sqrt{2}}$ cubic units."
+}

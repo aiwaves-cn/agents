@@ -1,0 +1,6 @@
+{
+    "problem": "If we express $x^2 - 5x$ in the form $a(x - h)^2 + k$, then what is $k$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We complete the square.  We can square $x - \\frac{5}{2}$ to get $x^2 - 5x + \\frac{25}{4}$, so $x^2 - 5x = \\left( x - \\frac{5}{2} \\right)^2 - \\frac{25}{4}$.  We see that $k = \\boxed{-\\frac{25}{4}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The coefficients of the polynomial $p(x)$ are all nonnegative integers.  If $p(1) = 4$ and $p(5) = 136,$ then find $p(6).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[p(x) = a_n x^n + a_{n - 1} x^{n - 1} + \\dots + a_1 x + a_0.\\]Since $p(1) = 4,$ and all the coefficients of $p(x)$ are nonnegative integers, each coefficient $a_i$ of $p(x)$ is at most 4.  We also know\n\\[p(5) = a_n 5^n + a_{n - 1} 5^{n - 1} + \\dots + a_1 5 + a_0 = 136.\\]Since $5^4 = 625 > 136,$ the degree $n$ of the polynomial can be at most 3, and we can write\n\\[p(5) = 125a_3 + 25a_2 + 5a_1 + a_0 = 136.\\]The only possible values of $a_3$ are 0 and 1.  Since\n\\[25a_2 + 5a_1 + a_0 \\le 25 \\cdot 4 + 5 \\cdot 4 + 4 = 124 < 136,\\]$a_3$ cannot be 0, so $a_3 = 1.$  Then\n\\[25a_2 + 5a_1 + a_0 = 136 - 125 = 11.\\]This forces $a_2 = 0,$ so\n\\[5a_1 + a_0 = 11.\\]We can then fill in that $a_1 = 2$ and $a_0 = 1,$ so\n\\[p(x) = x^3 + 2x + 1.\\](Note that we are effectively expressing 136 in base 5: $136 = 1021_5.$)\n\nTherefore, $p(6) = 6^3 + 2 \\cdot 6 + 1 = \\boxed{229}.$"
+}

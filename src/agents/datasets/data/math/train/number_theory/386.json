@@ -1,0 +1,6 @@
+{
+    "problem": "Find the ones digit of the largest power of $2$ that divides into $(2^4)!$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We first need to find the largest power of $2$ that divides into $16! = 16 \\times 15 \\times 14 \\times \\cdots \\times 2 \\times 1$. There are $8$ even numbers less than or equal to $16$, which contribute a power of $2^8$; of these, $4$ are divisible by $4$ and contribute an additional power of $2^4$; two are divisible by $8$ and contributes an additional power of $2^2$; and finally, one is divisible by $16$ and contributes an additional power of $2$. In total, the largest power of $2$ that divides into $16!$ is equal to $2^{8+4+2+1} = 2^{15}$.\n\nChecking the ones digits of the powers of $2$, we see that the ones digit of $2^1$ is $2$, of $2^2$ is $4$, of $2^3$ is $8$, of $2^4$ is $6$, and of $2^5$ is $2$. Thus, the ones digit will repeat every $4$ exponents, and the ones digit of $2^{15} = 2^{4 \\times 3 + 3}$ is the same as the ones digit of $2^3 = \\boxed{8}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A two-row triangle is created with a total of 15 pieces: nine unit rods and six connectors, as shown. What is the total number of pieces that would be used to create an eight-row triangle?\n\n[asy]\ndraw((0,0)--(4,0)--(2,2sqrt(3))--(0,0)--cycle,linewidth(1));\ndraw((2,0)--(3,sqrt(3))--(1,sqrt(3))--(2,0)--cycle,linewidth(1));\n\ndot((0,0));\ndot((2,0));\ndot((4,0));\ndot((1,sqrt(3)));\ndot((3,sqrt(3)));\ndot((2,2sqrt(3)));\n\nlabel(\"Row 2\",(-1,1));\nlabel(\"Row 1\",(0,2.5));\n\ndraw((3.5,2sqrt(3))--(2.2,2sqrt(3)),Arrow);\ndraw((4,2.5)--(2.8,2.5),Arrow);\n\nlabel(\"connector\",(5,2sqrt(3)));\nlabel(\"unit rod\",(5.5,2.5));\n[/asy]",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We'll start with rods. The first row has 3 rods, the second row has 6 rods, and continuing down, we see that the next rows have 9, 12, 15, and so on rods. So the total number of rods in an eight-row triangle is $$\n3 + 6 + 9 + \\cdots + 24 = 3(1+2+3+\\cdots+8) = 3(36) = 108.\n$$For the connectors, note that in an $n$-row triangle, the connectors form a triangle which has $n+1$ rows. For example, a two-row triangle has three rows of connectors, and $1+2+3 = 6$ connectors. So an eight-row triangle has $1+2+3+\\cdots+9 = 45$ connectors. We have a total of $108+45 = \\boxed{153}$ pieces."
+}

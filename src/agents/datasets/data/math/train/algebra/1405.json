@@ -1,0 +1,6 @@
+{
+    "problem": "Find the radius of the circle with equation $9x^2-18x+9y^2+36y+44=0.$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we factor out the constants of the squared terms to get $9(x^2-2x)+9(y^2+4y)=-44.$\n\nTo complete the square, we need to add $\\left(\\dfrac{2}{2}\\right)^2=1$ after the $-2x$ and $\\left(\\dfrac{4}{2}\\right)^2=4$ after the $4y,$ giving $$9(x-1)^2+9(y+2)^2=-44+9+36=1.$$ Dividing the equation by $9$ gives $$(x-1)^2+(y+2)^2=\\frac{1}{9},$$ so the radius is $\\sqrt{\\frac{1}{9}}=\\boxed{\\frac{1}{3}}.$"
+}

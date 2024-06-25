@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of solutions to $\\cos \\frac{x}{4} = \\cos x$ in the interval $0 < x < 24 \\pi.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the equation $\\cos \\frac{x}{4} = \\cos x,$ $\\cos x - \\cos \\frac{x}{4} = 0.$  From the sum-to-product formula, we can write this as\n\\[-2 \\sin \\frac{5x}{8} \\sin \\frac{3x}{8} = 0.\\]Hence, $\\sin \\frac{5x}{8} = 0$ or $\\sin \\frac{3x}{8} = 0.$\n\nIf $\\sin \\frac{5x}{8} = 0,$ then $x = \\frac{8m \\pi}{5}$ for some integer $m,$ $1 \\le m \\le 14.$  If $\\sin \\frac{3x}{8} = 0,$ then $x = \\frac{8m \\pi}{3}$ for some integer $n,$ $1 \\le n \\le 8.$  Note that $m = 5$ and $n = 3$ give the same solution $x = 8 \\pi,$ and $m = 10$ and $n = 6$ give the same solution $x = 16 \\pi.$  Thus, the number of solutions is $14 + 8 - 2 = \\boxed{20}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The area of an equilateral triangle is numerically equal to the length of one of its sides. What is the perimeter of the triangle, in units? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The formula for the area of an equilateral triangle is $\\frac{s^2 \\sqrt{3}}{4}$. This must equal $s$. Setting the two equal and solving, we get \\begin{align*}\ns&=\\frac{s^2 \\sqrt{3}}{4} \\\\\n4s&=s^2\\sqrt{3} \\\\\n4 &= s\\sqrt{3} \\\\\n4\\sqrt{3}&= 3s \\\\\n\\frac{4\\sqrt{3}}{3} &=s\n\\end{align*} Thus, the perimeter of the triangle is $3s=\\frac{4\\sqrt{3}}{3} \\cdot 3 = \\boxed{4\\sqrt{3}} \\text{units}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence $a_1$, $a_2$, $\\ldots$ of non-negative integers is defined by the rule $a_{n+2}=|a_{n+1}-a_n|$ for $n\\geq1$. If $a_1=999$, $a_2<999$, and $a_{2006}=1$, how many different values of $a_2$ are possible?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The condition $a_{n+2}=|a_{n+1}-a_n|$ implies that $a_n$ and $a_{n+3}$ have the same parity for all $n\\geq 1$. Because $a_{2006}$ is odd, $a_2$ is also odd.  Because $a_{2006}=1$ and $a_n$ is a multiple of $\\gcd(a_1,a_2)$ for all $n$, it follows that $1=\\gcd(a_1,a_2)=\\gcd(3^3\\cdot 37,a_2)$. There are 499 odd integers in the interval $[1,998]$, of which 166 are multiples of 3, 13 are multiples of 37, and 4 are multiples of $3\\cdot 37=111$. By the Inclusion-Exclusion Principle, the number of possible values of $a_2$ cannot exceed $499-166-13+4=\\boxed{324}$.\n\nTo see that there are actually 324 possibilities, note that for $n\\geq 3$, $a_n<\\max(a_{n-2},a_{n-1})$ whenever $a_{n-2}$ and $a_{n-1}$ are both positive.  Thus $a_N=0$ for some $N\\leq 1999$. If $\\gcd(a_1,a_2)=1$, then $a_{N-2}=a_{N-1}=1$, and for $n>N$ the sequence cycles through the values 1, 1, 0.  If in addition $a_2$ is odd, then $a_{3k+2}$ is odd for $k\\geq 1$, so $a_{2006}=1$."
+}

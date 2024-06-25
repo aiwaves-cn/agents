@@ -1,0 +1,6 @@
+{
+    "problem": "The numbers $a_1,$ $a_2,$ $a_3,$ $b_1,$ $b_2,$ $b_3,$ $c_1,$ $c_2,$ $c_3$ are equal to the numbers $1,$ $2,$ $3,$ $\\dots,$ $9$ in some order.  Find the smallest possible value of\n\\[a_1 a_2 a_3 + b_1 b_2 b_3 + c_1 c_2 c_3.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $S = a_1 a_2 a_3 + b_1 b_2 b_3 + c_1 c_2 c_3.$  Then by AM-GM,\n\\[S \\ge 3 \\sqrt[3]{a_1 a_2 a_3 b_1 b_2 b_3 c_1 c_2 c_3} = 3 \\sqrt[3]{9!} \\approx 213.98.\\]Since $S$ is an integer, $S \\ge 214.$\n\nNote that\n\\[2 \\cdot 5 \\cdot 7 + 1 \\cdot 8 \\cdot 9 + 3 \\cdot 4 \\cdot 6 = 214,\\]so the smallest possible value of $S$ is $\\boxed{214}.$"
+}

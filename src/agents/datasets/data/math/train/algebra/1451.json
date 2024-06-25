@@ -1,0 +1,6 @@
+{
+    "problem": "The difference between two positive integers is 12 and their product is 45. What is the sum of the integers?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let the integers be $x$ and $y$ with $x>y$. We have the equations \\begin{align*}\nx-y&=12\\\\\nxy&=45\n\\end{align*}Squaring the first equation, we get  \\[(x-y)^2=12^2\\Rightarrow x^2-2xy+y^2=144\\]Multiplying the second equation by four, we get $4xy = 4\\cdot45=180$. Adding these last two equations, we have \\[x^2-2xy+y^2+4xy=144+180 \\Rightarrow (x+y)^2=324 \\Rightarrow x+y = 18\\]In the last step, we take the positive square root because both $x$ and $y$ are given to be positive. The sum of the two integers is $\\boxed{18}$."
+}

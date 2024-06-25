@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that $f(1) = 1$ and\n\\[f(x + f(y + z)) + f(f(x + y) + z) = 2y\\]for all real numbers $x,$ $y,$ and $z.$\n\nLet $n$ be the number of possible values of $f(5),$ and let $s$ be the sum of all possible values of $f(5).$  Find $n \\times s.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = z = 0,$ we get\n\\[2f(f(y)) = 2y,\\]so $f(f(y)) = y$ for all $y.$\n\nSetting $y = z = 0,$ we get\n\\[f(x + f(0)) + f(f(x)) = 0.\\]Since $f(f(x)) = x,$\n\\[f(x + f(0)) + x = 0,\\]so $f(x + f(0)) = -x.$\n\nLet $w = x + f(0),$ so\n\\[f(w) = f(0) - w.\\]Since $x$ can represent any number, this holds for all $w.$  Hence, $f(x) = c - x$ for some constant $c.$  And since $f(1) = 1,$ we must have $f(x) = 2 - x.$  We can check that this function works.\n\nThus, $n = 1$ and $s = 2 - 5 = -3,$ so $n \\times s = \\boxed{-3}.$"
+}

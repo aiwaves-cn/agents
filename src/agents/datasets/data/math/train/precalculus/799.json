@@ -1,0 +1,6 @@
+{
+    "problem": "Find the curve defined by the equation\n\\[r = \\frac{1}{1 - \\cos \\theta}.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From $r = \\frac{1}{1 - \\cos \\theta},$\n\\[r - r \\cos \\theta = 1.\\]Then $r = 1 + r \\cos \\theta = x + 1,$ so\n\\[r^2 = (x + 1)^2 = x^2 + 2x + 1.\\]Hence, $x^2 + y^2 = x^2 + 2x + 1,$ so\n\\[y^2 = 2x + 1.\\]This represents the graph of a parabola, so the answer is $\\boxed{\\text{(C)}}.$\n\n[asy]\nunitsize(0.5 cm);\n\npair moo (real t) {\n  real r = 1/(1 - Cos(t));\n  return (r*Cos(t), r*Sin(t));\n}\n\npath foo = moo(1);\nreal t;\n\nfor (t = 1; t <= 359; t = t + 0.1) {\n  foo = foo--moo(t);\n}\n\ndraw(foo,red);\n\ndraw((-4,0)--(4,0));\ndraw((0,-4)--(0,4));\n\nlimits((-4,-4),(4,4),Crop);\n\nlabel(\"$r = \\frac{1}{1 - \\cos \\theta}$\", (6.5,1.5), red);\n[/asy]"
+}

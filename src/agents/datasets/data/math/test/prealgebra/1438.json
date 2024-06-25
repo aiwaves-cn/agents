@@ -1,0 +1,6 @@
+{
+    "problem": "What is the product of all possible digits $x$ such that the six-digit number $341,\\!4x7$ is divisible by 3?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "$341,\\!4x7$ is divisible by 3 if and only if the sum of its digits, $3+4+1+4+x+7=19+x$, is divisible by 3. Since $x$ is a digit, it must be a number 1 through 9. Therefore, $x=2$, $5$, or $8$, as these would make the sum of the digits $21$, $24$, and $27$, respectively. The product of all possible $x$ is $2\\times5\\times8=\\boxed{80}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x_1=97,$ and for $n>1,$ define $x_n=\\frac{n}{x_{n-1}}.$ Calculate $x_1x_2 \\cdots x_8.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Using the given recurrence relation, we have $x_2 = \\frac{2}{x_1},$ so $x_1x_2 = 2.$ Similarly, $x_4 = \\frac{4}{x_3},$ so $x_4x_3 = 4,$ and $x_6x_5 = 6,$ $x_8x_7 = 8.$ Therefore, \\[x_1x_2 \\cdots x_8 = (x_1x_2)(x_3x_4)(x_5x_6)(x_7x_8) = 2\\cdot4\\cdot6\\cdot8=\\boxed{384}.\\](Note that the initial value $x_1=97$ was unnecessary.)"
+}

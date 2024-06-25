@@ -1,0 +1,6 @@
+{
+    "problem": "$A$, $B$ and $C$ are circular regions as shown. There are 7 items in circle $C$. There are exactly 20 items in $A$ and 10 of those items are not in $B$. How many items are in $B$, but not in $C$?\n\n[asy]\ndraw(Circle((0,0),50));\nlabel(\"$A$\",(39,39));\ndraw(Circle((10,-10),32));\nlabel(\"$B$\",(-16,16));\ndraw(Circle((5,-5),20));\nlabel(\"$C$\",(22,-22));\n[/asy]",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Everything in circle $B$ is either in circle $B$, but not in circle $C$; or in both circle $B$ and circle $C$. Similarly, everything in Circle $A$ is either in circle $A$, but not in circle $B$; or in both circle $A$ and circle $B$. Additionally, everything in circle $C$ is in circle $B$ and everything in circle $B$ is in circle $A$. We are told that there are exactly 20 items in $A$ and 10 of those items are in $A$, but not in $B$. This means that there is a total of $$20-10=10$$ items in circle $B$. we are also told that there are 7 items in circle $C$. Because everything in circle $C$ is in circle $B$, we get that there are $$10-7=\\boxed{3}$$ items in circle $B$ but not in circle $C$."
+}

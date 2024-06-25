@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest integer value of $n$ such that $n^2-5n-14$ is negative.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Writing this as an inequality, we get the expression \\begin{align*} n^2-5n-14&<0 \\quad \\Rightarrow\n\\\\ (n-7)(n+2)&<0.\n\\end{align*} Since -2 and 7 are roots of the quadratic, the inequality must change sign at these two points. Thus, we continue by testing the 3 intervals of $n$. For $n<-2$, both factors of the inequality are negative, thus making it positive. For $-2<n<7$, only $n-7$ is negative, so the inequality is negative. Finally, for $n>7$, both factors are positive, making the inequality positive once again. This tells us that the range of $n$ that satisfy the inequality is $-2<n<7$. Since the question asks for the smallest integer value of $n$, the answer is the smallest integer greater than $-2$, which is $\\boxed{-1}$."
+}

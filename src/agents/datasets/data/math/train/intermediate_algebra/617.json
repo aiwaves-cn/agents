@@ -1,0 +1,6 @@
+{
+    "problem": "An ellipse whose axes are parallel to the coordinate axes is tangent to the $x$-axis at $(4, 0)$ and tangent to the $y$-axis at $(0, 1).$ Find the distance between the foci of the ellipse.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The ellipse must have its center at the point $(4, 1).$ Because $(4,1)$ is further from $(0,1)$ than it is from $(4,0),$ the major axis must lie parallel to the $x$-axis and have length $2 \\cdot 4 = 8,$ and so the minor axis lies parallel to the $y$-axis and has length $2 \\cdot 1 = 2.$ Therefore, the distance between the foci of the ellipse is $\\sqrt{8^2 - 2^2} = \\boxed{2\\sqrt{15}}.$\n[asy]\npair A=(4,0),B=(0,1),F1=(4-sqrt(15),1),F2=(4+sqrt(15),1),O=(4,1); real f(real x) { return 1 + sqrt(1 - (x-4)*(x-4)/16); } real g(real x) { return 1 - sqrt(1 - (x-4)*(x-4)/16);  } draw(graph(f, 0, 8) ^^ graph(g, 0, 8));\ndraw((0,-1)--(0,3),EndArrow); draw((-1,0)--(9,0),EndArrow); label(\"$x$\",(9,0),E); label(\"$y$\",(0,3),N); size(8cm); dot(A^^B^^O); label(\"$(0,1)$\",B,W);label(\"$(4,0)$\",A,S);label(\"$(4,1)$\",O,E);\n[/asy]"
+}

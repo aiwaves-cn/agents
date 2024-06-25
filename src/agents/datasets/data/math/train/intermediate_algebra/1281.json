@@ -1,0 +1,6 @@
+{
+    "problem": "The real number $x$ satisfies $x^2 - 5x + 6 < 0.$  Find all possible values of $x^2 + 5x + 6.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The inequality $x^2 - 5x + 6 < 0$ factors as $(x - 2)(x - 3) < 0,$ so the solution is $2 < x < 3.$  Since $x^2 + 5x + 6$ is increasing on this interval, we have that\n\\[x^2 + 5x + 6 > 2^2 + 5 \\cdot 2 + 6 = 20\\]and\n\\[x^2 + 5x + 6 < 3^2 + 5 \\cdot 3 + 6 = 30.\\]Therefore, the set of possible values of $x^2 + 5x + 6$ is $\\boxed{(20,30)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of all points $(x,y,z)$ such that $x^2 + y^2 + z^2 \\le 25$ and $z \\ge 0.$  Compute the side length of the largest cube contained in $S.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Note that $S$ is the upper-half of a sphere with radius 5.\n\nLet $s$ be the side length of the cube.  Then one face of the cube aligns with the $xy$-plane; the center of this face is at $O = (0,0,0).$\n\n[asy]\nunitsize(1.2 cm);\n\npair A, B, C, D, O, T, X, Y, Z;\npair x, y, z;\n\nx = (2,-0.2);\ny = (1.2,0.8);\nz = (0,2);\n\nX = (0,0);\nY = x;\nT = y;\nA = z;\nZ = x + y;\nB = x + z;\nD = y + z;\nC = x + y + z;\nO = (X + Y + T + Z)/4;\n\ndraw(X--Y--Z--C--D--A--cycle);\ndraw(B--A);\ndraw(B--C);\ndraw(B--Y);\ndraw(T--X,dashed);\ndraw(T--D,dashed);\ndraw(T--Z,dashed);\ndraw(O--Z,dashed);\ndraw(O--C,dashed);\n\nlabel(\"$A$\", Z, E);\nlabel(\"$B$\", C, NE);\ndot(\"$O$\", O, SW);\nlabel(\"$s$\", (C + Z)/2, dir(0));\n[/asy]\n\nLet $A$ be one vertex of this face, so\n\\[OA = \\frac{\\sqrt{2}}{2} s.\\]Let $B$ be the vertex above $A,$ so $AB = s$ and $OB = 5.$  Then by Pythagoras, $OA^2 + AB^2 = OB^2,$ so\n\\[\\frac{s^2}{2} + s^2 = 25.\\]Then $s^2 = \\frac{50}{3},$ so $s = \\boxed{\\frac{5 \\sqrt{6}}{3}}.$"
+}

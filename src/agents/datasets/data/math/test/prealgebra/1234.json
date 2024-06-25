@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer with factors of 16, 15, and 12?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We are asked to find the least common multiple of 16, 15, and 12.  Prime factorizing these three numbers as $2^4$, $3\\cdot5$, and $2^2\\cdot 3$, we find that a common multiple must have at least four twos, one three, and one five in its prime factorization.  Therefore, the least common multiple is $2^4\\cdot3\\cdot5=\\boxed{240}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest possible value of $$\\frac{(y-x)^2}{(y-z)(z-x)} + \\frac{(z-y)^2}{(z-x)(x-y)} + \\frac{(x-z)^2}{(x-y)(y-z)},$$ where $x,y,$ and $z$ are distinct real numbers.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Combining all three fractions under a single denominator, the given expression is equal to $$\\frac{(x-y)^3 + (y-z)^3 + (z-x)^3}{(x-y)(y-z)(z-x)}.$$ Consider the numerator as a polynomial in $x$, so that $P(x) = (x-y)^3 + (y-z)^3 + (z-x)^3$ (where we treat $y$ and $z$ as fixed values). It follows that $P(y) = (y-y)^3 + (y-z)^3 + (z-y)^3 = 0$, so $y$ is a root of $P(x) = 0$ and $x-y$ divides into $P(x)$. By symmetry, it follows that $y-z$ and $z-x$ divide into $P(x)$. Since $P$ is a cubic in its variables, it follows that $P = k(x-y)(y-z)(z-x)$, where $k$ is a constant. By either expanding the definition of $P$, or by trying test values (if we take $x = 0, y = -1, z = 1$, we obtain $P = -6 = k \\cdot (-2)$), it follows that $k = 3$. Thus, $$\\frac{(x-y)^3 + (y-z)^3 + (z-x)^3}{(x-y)(y-z)(z-x)} = \\boxed{3}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $0.8= \\frac{y}{186+x}$, find the smallest value of $x$, if $x$ and $y$ are positive integers.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that $0.8 = \\frac{8}{10} = \\frac{4}{5}$, so $\\frac{4}{5} = \\frac{y}{186+x}$. As $x$ is positive, we want to find the smallest number greater than $186$ which is a multiple of $5$. This number is 190, which implies $\\boxed{x=4}$."
+}

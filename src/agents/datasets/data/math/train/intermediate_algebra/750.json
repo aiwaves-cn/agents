@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)$ be a function such that $f(0) = 1$ and\n\\[f(xy) = f \\left( \\frac{x^2 + y^2}{2} \\right) + (x - y)^2\\]for all real numbers $x$ and $y.$  Find $f(x).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $y = 0,$ we get\n\\[f(0) = f \\left( \\frac{x^2}{2} \\right) + x^2.\\]Hence, $f(u) = 1 - 2u$ for all $u \\ge 0.$\n\nSetting $y = 1,$ we get\n\\[f(x) =  f \\left( \\frac{x^2 + 1}{2} \\right) + (x - 1)^2 = 1 - 2 \\cdot \\frac{x^2 + 1}{2} + (x - 1)^2 = \\boxed{1 - 2x}.\\]"
+}

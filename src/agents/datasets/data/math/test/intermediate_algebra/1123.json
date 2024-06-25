@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be a quadratic polynomial with integer coefficients which has $4-\\sqrt{11}$ as a root. Compute $\\frac{p(3)}{p(4)}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Because $p(x)$ has integer coefficients (in particular, because it has rational coefficients), the other root of $p(x)$ must be the radical conjugate of $4-\\sqrt{11},$ which is $4+\\sqrt{11}.$ Then, $p(x)$ must take the form \\[p(x) = A(x-(4-\\sqrt{11}))(x-(4+\\sqrt{11}))\\]for some nonzero constant $A$. This means that \\[p(3) = A(-1+\\sqrt{11})(-1-\\sqrt{11}) = -10A\\]and \\[p(4) = A(\\sqrt{11})(-\\sqrt{11}) = -11A,\\]so \\[\\frac{p(3)}{p(4)} = \\frac{-10A}{-11A} = \\boxed{\\frac{10}{11}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit when $7^{53}$ is multiplied out?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let's find the cycle of units digits of $7^n$, starting with $n=1$ : $7, 9, 3, 1, 7, 9, 3, 1,\\ldots$ . The cycle of units digits of $7^{n}$ is 4 digits long: 7, 9, 3, 1. Thus, to find the units digit of $7^n$ for any positive $n$, we must find the remainder, $R$, when $n$ is divided by 4 ($R=1$ corresponds to the units digit 7, $R=2$ corresponds to the units digit 9, etc.) Since $53\\div4=13R1$, the units digit of $7^{53}$ is $\\boxed{7}$."
+}

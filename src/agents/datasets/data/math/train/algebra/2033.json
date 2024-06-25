@@ -1,0 +1,6 @@
+{
+    "problem": "There are two pairs $(x,y)$ of real numbers that satisfy the equation $x+y = 3xy = 4$. Given that the solutions $x$ are in the form $x = \\frac{a \\pm b\\sqrt{c}}{d}$ where $a$, $b$, $c$, and $d$ are positive integers and the expression is completely simplified, what is the value of $a + b + c + d$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We begin by considering the equation $x + y = 4$. From this, we know that $y = 4-x$. We can then substitute this into the equation $3xy = 4$ to get $3x(4-x) = 12x - 3x^2 = 4$. This then becomes $3x^2 - 12x + 4 = 0$. Using the quadratic formula, we find  \\begin{align*}\nx &= \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\quad \\Rightarrow \\\\\nx &= \\frac{12 \\pm \\sqrt{144-48}}{6} \\quad \\Rightarrow \\\\\nx &= \\frac{6 \\pm 2\\sqrt{6}}{3}.\n\\end{align*}Thus, $a + b + c + d = 6 + 2 + 6 + 3 = \\boxed{17}$."
+}

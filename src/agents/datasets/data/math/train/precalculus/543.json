@@ -1,0 +1,6 @@
+{
+    "problem": "Find the curve defined by the equation\n\\[r = 2.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Every point on the graph has a distance of 2 from the origin, so the graph is a circle.\n\n[asy]\nunitsize(2 cm);\n\ndraw(Circle((0,0),1),red);\ndraw((-1.2,0)--(1.2,0));\ndraw((0,-1.2)--(0,1.2));\n\nlabel(\"$r = 2$\", (1.2,0.8), red);\n[/asy]\n\nThe answer is $\\boxed{\\text{(B)}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The lines defined by\n\\[\\begin{pmatrix} 1 \\\\ -3 \\\\ -1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix}\\]and\n\\[\\begin{pmatrix} -3 \\\\ 2 \\\\ -10 \\end{pmatrix} + u \\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix}\\]intersect at $P.$  Find the acute angle formed by the two lines at $P,$ in degrees.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The direction vectors of the lines are $\\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix}.$  The cosine of the angle between them is then\n\\[\\frac{\\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix} \\right\\|} = \\frac{3}{\\sqrt{6} \\sqrt{6}} = \\frac{1}{2}.\\]Hence, $\\theta = \\boxed{60^\\circ}.$"
+}

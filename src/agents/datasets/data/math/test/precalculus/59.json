@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\frac{\\sin^4 x + \\cos^4 x - 1}{\\sin^6 x + \\cos^6 x - 1}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $p = \\sin x \\cos x.$  We know that $\\sin^2 x + \\cos^2 x = 1.$  Squaring both sides, we get\n\\[\\sin^4 x + 2 \\sin^2 x \\cos^2 x + \\cos^4 x = 1.\\]Hence, $\\sin^4 x + \\cos^4 x = 1 - 2 \\sin^2 x \\cos^2 x = 1 - 2p^2.$\n\nThen $(\\sin^2 x + \\cos^2 x)(\\sin^4 x + \\cos^4 x) = 1 - 2p^2.$  Expanding, we get\n\\[\\sin^6 x + \\sin^2 x \\cos^4 x + \\cos^2 x \\sin^4 x + \\cos^6 x = 1 - 2p^2.\\]Hence,\n\\begin{align*}\n\\sin^6 x + \\cos^6 x &= 1 - 2p^2 - (\\sin^2 x \\cos^4 x + \\cos^2 x \\sin^4 x) \\\\\n&= 1 - 2p^2 - \\sin^2 x \\cos^2 x (\\sin^2 x + \\cos^2 x) \\\\\n&= 1 - 3p^2.\n\\end{align*}Therefore,\n\\[\\frac{\\sin^4 x + \\cos^4 x - 1}{\\sin^6 x + \\cos^6 x - 1} = \\frac{-2p^2}{-3p^2} = \\boxed{\\frac{2}{3}}.\\]"
+}

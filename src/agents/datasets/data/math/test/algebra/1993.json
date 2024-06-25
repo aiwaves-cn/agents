@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $3x^2-2(x^2+4)=42$, what is the value of $x^4$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Begin by simplifying the left side: $$3x^2-2x^2-8=42$$ We can combine terms and solve for $x^2$: \\begin{align*}\n3x^2-2x^2&=42+8\\\\\n\\Rightarrow\\qquad x^2&=50\n\\end{align*} Squaring both sides, we find: \\begin{align*}\n(x^2)^2&=50^2\\\\\n\\Rightarrow\\qquad x^4&=\\boxed{2500}\n\\end{align*}"
+}

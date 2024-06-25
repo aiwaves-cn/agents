@@ -1,0 +1,6 @@
+{
+    "problem": "Given any two positive real numbers $x$ and $y$, then $x \\, \\Diamond \\, y$ is a positive real number defined in terms of $x$ and $y$ by some fixed rule.  Suppose the operation $x \\, \\Diamond \\, y$ satisfies the equations $(xy) \\, \\Diamond \\, y=x(y \\, \\Diamond \\, y)$ and $(x \\, \\Diamond \\, 1) \\, \\Diamond \\, x = x \\, \\Diamond \\, 1$ for all $x,y>0$.  Given that $1 \\, \\Diamond \\, 1=1$, find $19 \\, \\Diamond \\, 98$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $y = 1$ in the first equation, we get\n\\[x \\, \\Diamond \\, 1 = x (1 \\, \\Diamond \\, 1) = x.\\]Then from the second equation,\n\\[x \\, \\Diamond \\, x = x \\, \\Diamond \\, 1 = x.\\]Then from the first equation,\n\\[(xy) \\, \\Diamond \\, y=x(y \\, \\Diamond \\, y) = xy.\\]Therefore,\n\\[19 \\, \\Diamond \\, 98 = \\left( \\frac{19}{98} \\cdot 98 \\right) \\, \\Diamond \\, 98 = \\frac{19}{98} \\cdot 98 = \\boxed{19}.\\]"
+}

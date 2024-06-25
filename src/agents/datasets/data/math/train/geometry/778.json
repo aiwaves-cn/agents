@@ -1,0 +1,6 @@
+{
+    "problem": "The numbers $\\sqrt{2u-1}$, $\\sqrt{2u+1}$ and $2\\sqrt{u}$ are the side lengths of a triangle. How many degrees are in the measure of the largest angle?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Square each side length to obtain $2u-1$, $2u+1$, and $4u$.  Notice that the first two expressions, $2u-1$, $2u+1$, sum to give the third.  Therefore, the sides of the triangle satisfy the Pythagorean theorem, and the triangle is a right triangle. The measure of the largest angle in a right triangle is $\\boxed{90}$ degrees."
+}

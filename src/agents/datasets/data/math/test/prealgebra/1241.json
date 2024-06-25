@@ -1,0 +1,6 @@
+{
+    "problem": "What is the $2007^{\\text{th}}$ digit to the right of the decimal point in the decimal expansion of $\\frac{1}{7}$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The decimal representation of $\\frac{1}{7}$ is $0.\\overline{142857}$, which repeats every six digits. Since 2007 divided by 6 has a remainder of 3, the $2007^{\\text{th}}$ digit is the same as the third digit after the decimal point, which is $\\boxed{2}$."
+}

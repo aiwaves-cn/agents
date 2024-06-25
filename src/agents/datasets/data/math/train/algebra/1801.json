@@ -1,0 +1,6 @@
+{
+    "problem": "The graphs of $y=3-x^2+x^3$ and $y=1+x^2+x^3$ intersect in multiple points.  Find the maximum difference between the $y$-coordinates of these intersection points.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The graphs intersect when the $y$-values at a particular $x$ are equal.  We can find this by solving \\[3-x^2+x^3=1+x^2+x^3.\\]This simplifies to  \\[2(x^2-1)=0.\\]This has two solutions, at $x=1$ and $x=-1$.  The $y$-coordinates for these points are  \\[1+1^2+1^3=3\\]and \\[1+(-1)^2+(-1)^3=1.\\]The difference between these values is $\\boxed{2}$."
+}

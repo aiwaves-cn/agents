@@ -1,0 +1,6 @@
+{
+    "problem": "I coach a soccer team with 15 members.  I want to choose a starting lineup consisting of 11 players, two of whom will represent the team in the captains meeting at the beginning of the game.  In how many ways can I choose my starting lineup, including designating the two captains?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{15}{2}=105$ ways to select the 2 captains from among the 15 players on the team. We then need to choose the remaining 9 starters from among the remaining 13 players, which can be done in $\\binom{13}{9}=715$ ways. This gives us a total of $\\binom{15}{2}\\cdot\\binom{13}{9}=105\\cdot715=\\boxed{75,\\!075}$ ways."
+}

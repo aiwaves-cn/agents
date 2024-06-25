@@ -1,0 +1,6 @@
+{
+    "problem": "A standard die is rolled six times. What is the probability that the product of all six rolls is odd? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The product of all six rolls is odd if and only if each roll is odd.  Any given roll has an odd result with probability $\\frac{1}{2}$.  The probability of all six rolls being odd is therefore $\\left(\\frac{1}{2}\\right)^6 = \\boxed{\\frac{1}{64}}$."
+}

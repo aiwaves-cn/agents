@@ -1,0 +1,6 @@
+{
+    "problem": "The number of diagonals of a regular polygon is subtracted from the number of sides of the polygon and the result is zero. What is the number of sides of this polygon?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Let the polygon have $n$ sides. The number of diagonals then is $n(n-3)/2$, because each vertex is connected to $n-3$ other vertices by diagonals, but $n(n-3)$ counts each diagonal twice.  We then have $$n=\\frac{n(n-3)}{2}\\implies 1=\\frac{n-3}{2}\\implies n=\\boxed{5}$$"
+}

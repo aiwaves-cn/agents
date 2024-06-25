@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the area of the ellipse $9x^2 + y^2 = 36.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Dividing by $36$ gives the standard form of the equation of this ellipse, \\[\\frac{x^2}{4} + \\frac{y^2}{36} = 1.\\]Then, the semimajor and semiminor axes have lengths $\\sqrt{36} = 6$ and $\\sqrt{4} = 2,$ respectively. By the area formula for an ellipse, the area of the ellipse is $6 \\cdot 2 \\cdot \\pi = \\boxed{12\\pi}.$"
+}

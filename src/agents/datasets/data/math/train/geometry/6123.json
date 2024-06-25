@@ -1,0 +1,6 @@
+{
+    "problem": "Two noncongruent integer-sided isosceles triangles have the same perimeter and the same area. The ratio of the lengths of the bases of the two triangles is $8: 7$. Find the minimum possible value of their common perimeter.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the first triangle have side lengths $a$, $a$, $14c$, and the second triangle have side lengths $b$, $b$, $16c$, where $a, b, 2c \\in \\mathbb{Z}$.\nEqual perimeter:\n$\\begin{array}{ccc} 2a+14c&=&2b+16c\\\\ a+7c&=&b+8c\\\\ c&=&a-b\\\\ \\end{array}$\nEqual Area:\n$\\begin{array}{cccl} 7c(\\sqrt{a^2-(7c)^2})&=&8c(\\sqrt{b^2-(8c)^2})&{}\\\\ 7(\\sqrt{(a+7c)(a-7c)})&=&8(\\sqrt{(b+8c)(b-8c)})&{}\\\\ 7(\\sqrt{(a-7c)})&=&8(\\sqrt{(b-8c)})&\\text{(Note that } a+7c=b+8c)\\\\ 49a-343c&=&64b-512c&{}\\\\ 49a+169c&=&64b&{}\\\\ 49a+169(a-b)&=&64b&\\text{(Note that } c=a-b)\\\\ 218a&=&233b&{}\\\\ \\end{array}$\nSince $a$ and $b$ are integer, the minimum occurs when $a=233$, $b=218$, and $c=15$. Hence, the perimeter is $2a+14c=2(233)+14(15)=\\boxed{676}$."
+}

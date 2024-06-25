@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the squares of the solutions to $2x^2+4x-1=0$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We use the fact that the sum and product of the roots of a quadratic equation $ax^2+bx+c = 0$ are given by $-b/a$ and $c/a$, respectively. Letting the solutions to the given equation be $p$ and $q$, we have $p+q = -4/2 = -2$ and $pq = -1/2$, so the answer is $p^2+q^2 = (p+q)^2-2pq=(-2)^2-2(-1/2) = \\boxed{5}$."
+}

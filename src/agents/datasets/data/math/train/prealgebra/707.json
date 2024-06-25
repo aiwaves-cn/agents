@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive multiples of nine are two-digit numbers?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "If we divide 99 (the largest two digit number) by 9, we get 11. So, there are 11 positive multiples of 9 that are less than or equal to 99. However, we must eliminate any that are not two digit numbers. The first multiple of 9 is $9\\cdot1=9$ and the second is $9\\cdot2=18$ . So, only one positive multiple of nine is not at least a two digit number and there are $11-1=\\boxed{10}$ two-digit multiples of 9."
+}

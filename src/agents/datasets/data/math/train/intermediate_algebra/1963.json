@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a real number.  Consider the following five statements:\n\n$0 < x^2 < 1$\n$x^2 > 1$\n$-1 < x < 0$\n$0 < x < 1$\n$0 < x - x^2 < 1$\n\nWhat is the maximum number of these statements that can be true for any value of $x$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "One the first two statements, at most one of them can be true ($x^2$ cannot be both less than 1 and greater than 1).  Of the next two statements, at most one of them can be true ($x$ cannot be both less than 0 and greater than 0).  Hence, at most three statements can be true.\n\nFor $0 < x < 1,$ the first, fourth, and fifth statements are true, so the maximum number of statements that can be true is $\\boxed{3}.$"
+}

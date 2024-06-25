@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[f(x) = \\frac{ax}{x + 1}.\\]Find the constant $a$ so that $f(f(x)) = x$ for all $x \\neq -1.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nf(f(x)) &= f \\left( \\frac{ax}{x + 1} \\right) \\\\\n&= \\frac{a \\cdot \\frac{ax}{x + 1}}{\\frac{ax}{x + 1} + 1} \\\\\n&= \\frac{a^2 x}{ax + x + 1}.\n\\end{align*}We want\n\\[\\frac{a^2 x}{ax + x + 1} = x\\]for $x \\neq -1.$  This gives us\n\\[a^2 x = ax^2 + x^2 + x.\\]Matching the coefficients, we get $a^2 = 1$ and $a + 1 = 0.$  Thus, $a = \\boxed{-1}.$"
+}

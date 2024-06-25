@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x$: $\\frac{6x^2 + 111x +1}{2x+37} = 3x + 1$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Multiplying both sides by $2x+37$ gives  \\begin{align*}\n6x^2 + 111x + 1 &= (2x+37)(3x+1)\\\\\n&=2x(3x+1) + 37(3x+1)\\\\\n&= 6x^2 + 2x + 111x + 37\\\\\n&= 6x^2 +113x + 37\n\\end{align*}So, we have \\[6x^2 + 111x + 1 = 6x^2+ 113x + 37.\\]Subtracting $6x^2$ from both sides gives $111x+1 = 113x + 37$.  Rearranging this equation gives $2x = -36$, from which we find $x = \\boxed{-18}$."
+}

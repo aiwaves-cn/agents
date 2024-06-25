@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be complex numbers such that\n\\begin{align*}\nab + 4b &= -16, \\\\\nbc + 4c &= -16, \\\\\nca + 4a &= -16.\n\\end{align*}Enter all possible values of $abc,$ separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Adding the equations, we get\n\\[ab + ac + bc + 4(a + b + c) = -48.\\]Multiplying the equations by $c,$ $a,$ $b,$ respectively, we get\n\\begin{align*}\nabc + 4bc &= -16c, \\\\\nabc + 4ac &= -16a, \\\\\nabc + 4ab &= -16b.\n\\end{align*}Adding all these equations, we get\n\\[3abc + 4(ab + ac + bc) = -16(a + b + c).\\]Then\n\\begin{align*}\n3abc &= -4(ab + ac + bc) - 16(a + b +c) \\\\\n&= -4(ab + ac + bc + 4(a + b + c)) \\\\\n&= (-4)(-48) = 192,\n\\end{align*}so $abc = \\boxed{64}.$"
+}

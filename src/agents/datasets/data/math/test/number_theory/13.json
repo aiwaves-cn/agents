@@ -1,0 +1,6 @@
+{
+    "problem": "What is the average of the two smallest positive integer solutions to the congruence $$14u \\equiv 46 \\pmod{100}~?$$",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that $14$, $46$, and $100$ all have a common factor of $2$, so we can divide it out: the solutions to $$14u \\equiv 46 \\pmod{100}$$ are identical to the solutions to $$7u \\equiv 23 \\pmod{50}.$$ Make sure you see why this is the case.\n\nNow we can multiply both sides of the congruence by $7$ to obtain $$49u \\equiv 161 \\pmod{50},$$ which also has the same solutions as the previous congruence, since we could reverse the step above by multiplying both sides by $7^{-1}$. (We know that $7^{-1}$ exists modulo $50$ because $7$ and $50$ are relatively prime.)\n\nReplacing each side of $49u\\equiv 161$ by a $\\pmod{50}$ equivalent, we have $$-u \\equiv 11\\pmod{50},$$ and thus $$u \\equiv -11\\pmod{50}.$$ This is the set of solutions to our original congruence. The two smallest positive solutions are $-11+50 = 39$ and $-11+2\\cdot 50 = 89$. Their average is $\\boxed{64}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Each solution to $x^2 + 5x + 8 = 0$ can be written in the form $x = a + b i,$ where $a$ and $b$ are real numbers. What is $a + b^2$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Seeing that factoring will not work, we apply the Quadratic Formula: \\begin{align*}\nx &= \\frac{-(5) \\pm \\sqrt{(5)^2 - 4(1)(8)}}{2 (1)}\\\\\n&= \\frac{-5 \\pm \\sqrt{25 - 32}}{2} = \\frac{-5 \\pm \\sqrt{-7}}{2} = -\\frac{5}{2} \\pm \\frac{\\sqrt{7}}{2}i.\n\\end{align*} Now we see that $a = -\\dfrac{5}{2}$ and $b = \\pm \\frac{\\sqrt{7}}{2},$ so $a + b^2 = -\\dfrac{5}{2} + \\dfrac{7}{4} = \\boxed{-\\dfrac{3}{4}}.$"
+}

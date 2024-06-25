@@ -1,0 +1,6 @@
+{
+    "problem": "The lengths in feet of three pieces of timber are 48, 72, and 40. The sawmill operator needs to cut the timber into logs of equal length with no waste. How many feet long is the greatest possible length she can cut?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "In order to cut all three pieces of timber into equal length logs, the length of the logs must be a factor of each of the three original lengths. The prime factors of 48 are $2^4\\cdot3$, those of 72 are $2^3\\cdot3^2$, and those of 40 are $2^3\\cdot5$. The greatest common factor of all three is $2^3=\\boxed{8}$, so that is the greatest possible length the sawmill operator can cut."
+}

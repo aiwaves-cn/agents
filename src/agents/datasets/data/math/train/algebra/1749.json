@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product of all positive integer values of $c$ such that $8x^2+15x+c=0$ has two real roots.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "For a quadratic to have two real roots, the discriminant must be greater than 0. So we require \\begin{align*}15^2-4 \\cdot 8 \\cdot c &> 0 \\\\ \\Rightarrow \\quad 225-32c &> 0 \\\\ \\Rightarrow \\quad c&< \\frac{225}{32}.\\end{align*}The largest integer smaller than $\\frac{225}{32}$ is 7. Thus, the positive integer values of $c$ are 1, 2, 3, 4, 5, 6, and 7 and their product is $\\boxed{5040}$."
+}

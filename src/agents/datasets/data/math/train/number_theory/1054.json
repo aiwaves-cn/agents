@@ -1,0 +1,6 @@
+{
+    "problem": "For what value of $n$ is the four-digit number $712n$, with units digit $n$, divisible by 18?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We know that $18=9\\cdot2$, so in order for the four digit number to be divisible by 18 it must also be divisible by 9 and 2. In order for a number to be divisible by 9, the sum of its digits must be divisible by 9. Thus, $7+1+2+n$, or $10+n$, must be divisible by 9. Since 18 is the smallest multiple of 9 that is greater than 10, $n=18-10=\\boxed{8}$."
+}

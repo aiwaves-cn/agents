@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that the graph of a certain function, $y=f(x)$, has the property that if it is shifted $20$ units to the right, then the resulting graph is identical to the original graph of $y=f(x)$.\n\nWhat is the smallest positive $a$ such that if the graph of $y=f\\left(\\frac x5\\right)$ is shifted $a$ units to the right, then we know that the resulting graph is identical to the original graph of $y=f\\left(\\frac x5\\right)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The stated property of $f(x)$ can be written as an equation which holds for all $x$: $$f(x-20) = f(x).$$We are looking for the smallest positive $a$ such that the equation $$f\\left(\\frac{x-a}5\\right) = f\\left(\\frac x5\\right)$$holds for all $x$. Rewriting this equation as $$f\\left(\\frac x5-\\frac a5\\right) = f\\left(\\frac x5\\right),$$we see that it is implied by the known property of $f(x)$ if $\\frac a5$ is equal to $20$ (or a multiple of $20$), or in other words, if $a$ is equal to $100$ (or a multiple of $100$). So, the smallest positive $a$ for which we know that this property holds is $a=\\boxed{100}$."
+}

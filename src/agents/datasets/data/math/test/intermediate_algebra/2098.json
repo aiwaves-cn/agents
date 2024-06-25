@@ -1,0 +1,6 @@
+{
+    "problem": "The equation of an ellipse is given $2x^2 - 8x + 3y^2 + 6y + 5 = 0.$  Find the maximum value of the $x$-coordinate of a point on this ellipse.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Completing the square in $x$ and $y,$ we get\n\\[2(x - 2)^2 + 3(y + 1)^2 = 6.\\]Then\n\\[\\frac{(x - 2)^2}{3} + \\frac{(y + 1)^2}{2} = 1.\\]Thus, the center of the ellipse is $(2,-1),$ and the semi-axis in the $x$-direction is $\\sqrt{3}.$\n\n[asy]\nunitsize(1.5 cm);\n\ndraw(xscale(sqrt(3))*yscale(sqrt(2))*(Circle((0,0),1)));\ndraw((-sqrt(3),0)--(sqrt(3),0));\ndraw((0,-sqrt(2))--(0,sqrt(2)));\n\nlabel(\"$\\sqrt{3}$\", (sqrt(3)/2,0), S);\n\ndot(\"$(2,-1)$\", (0,0), SW);\n[/asy]\n\nHence, the maximum $x$-coordinate of a point on the ellipse is $\\boxed{2 + \\sqrt{3}}.$"
+}

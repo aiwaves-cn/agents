@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest integer $n$ for which $12^n$ evenly divides $20!$.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since $12^n = 2^{2n} \\cdot 3^n$, we are looking for the largest value of $n$ such that $2^{2n}$ and $3^n$ are divisors of $20!$. $$ \\frac{20}{2} = 10 \\qquad \\qquad \\frac{10}{2} = 5 \\qquad \\qquad \\frac{5}{2} = 2.5 \\qquad \\qquad \\frac{2}{2} = 1 $$ The largest power of 2 that divides $20!$ is $2^{(10 + 5 + 2 + 1)} = 2^{18}$. $$ \\frac{20}{3} = 6 \\frac{2}{3} \\qquad \\qquad \\frac{6}{3} = 2 $$ The largest power of 3 that divides $20!$ is $3^{(6 + 2)} = 3^8$.  Since there are 18 powers of 2 and 8 powers of 3 in $20!$, we want the largest value of $n$ such that $2n \\le 18$ and $n \\le 8$, so $\\boxed{8}$ is the answer and $12^8$ is the largest power of 12 that divides $20!$."
+}

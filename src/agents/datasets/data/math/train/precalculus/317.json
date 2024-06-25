@@ -1,0 +1,6 @@
+{
+    "problem": "Find the curve defined by the equation\n\\[\\theta = \\frac{\\pi}{3}.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "All points that make an angle of $\\frac{\\pi}{3}$ with the positive $x$-axis lie on the graph.\n\n[asy]\nunitsize(1 cm);\n\ndraw(3*dir(240)--3*dir(60),red);\ndraw((-2,0)--(2,0));\ndraw((0,-3)--(0,3));\n\nlabel(\"$\\frac{\\pi}{3}$\", (0.5,0.4));\nlabel(\"$\\theta = \\frac{\\pi}{3}$\", (2,1.8), red);\n[/asy]\n\nBut all points that make an angle of $\\frac{\\pi}{3} + \\pi$ with the positive $x$-axis also lie on the graph, since the radius $r$ can be negative.  Thus, the graph is a line.  The answer is $\\boxed{\\text{(A)}}.$"
+}

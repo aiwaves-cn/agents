@@ -1,0 +1,6 @@
+{
+    "problem": "What is the constant term in the expansion of $\\left(\\sqrt{x}+\\dfrac5x\\right)^{9}$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "To get the constant term, the $\\sqrt{x}$'s and $5/x$'s must cancel out. This occurs for the term with six $\\sqrt{x}$'s and three $5/x$'s, so the coefficient is $$\\binom93\\cdot5^3=84\\cdot125=\\boxed{10500}.$$"
+}

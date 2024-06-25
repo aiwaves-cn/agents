@@ -1,0 +1,6 @@
+{
+    "problem": "Given the nine-sided regular polygon $A_1A_2A_3A_4A_5A_6A_7A_8A_9$, how many distinct equilateral triangles in the plane of the polygon have at least two vertices in the set $\\{A_1, A_2, \\ldots A_9\\}$?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Each of the $\\binom{9}{2} = 36$ pairs of vertices determines two equilateral triangles, for a total of 72 triangles. However, the three triangles $A_1A_4A_7$, $A_2A_5A_8$, and $A_3A_6A_9$ are each counted 3 times, resulting in an overcount of 6. Thus, there are $\\boxed{66}$ distinct equilateral triangles."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "$\\Delta ABC$ is isosceles with $AC = BC$. If $m\\angle C = 40^{\\circ}$, what is the number of degrees in $m\\angle CBD$? [asy] pair A,B,C,D,E;\nC = dir(65); B = C + dir(-65); D = (1.5,0); E = (2,0);\ndraw(B--C--A--E); dot(D);\nlabel(\"$A$\",A,S); label(\"$B$\",B,S); label(\"$D$\",D,S); label(\"$C$\",C,N);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Let $x$ be the number of degrees in $\\angle ABC$. Since $\\triangle ABC$ is isosceles with $AC=BC$, we have $\\angle BAC=\\angle ABC$.\n\nSo, the three interior angles of $\\triangle ABC$ measure $x^\\circ$, $x^\\circ$, and $40^\\circ$. The sum of the angles in a triangle is $180^\\circ$, so we have $$x+x+40 = 180,$$which we can solve to obtain $x=70$. Finally, $\\angle CBD$ is supplementary to angle $\\angle ABC$, so \\begin{align*}\nm\\angle CBD &= 180^\\circ - m\\angle ABC \\\\\n&= 180^\\circ - 70^\\circ \\\\\n&= \\boxed{110}^\\circ.\n\\end{align*}"
+}

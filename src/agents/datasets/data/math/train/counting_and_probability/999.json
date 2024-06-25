@@ -1,0 +1,6 @@
+{
+    "problem": "A card is chosen at random from a standard deck of 52 cards, and then it is replaced and another card is chosen. What is the probability that at least one of the cards is a diamond or an ace?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 16 cards in a standard deck which are either diamonds or aces. The probability that neither card chosen is a diamond or an ace is $\\left( \\frac{36}{52} \\right) ^2=\\left( \\frac{9}{13} \\right) ^2=\\frac{81}{169}$. Therefore, the probability that at least one of the cards chosen was a diamond or an ace is $1-\\frac{81}{169}=\\boxed{\\frac{88}{169}}$."
+}

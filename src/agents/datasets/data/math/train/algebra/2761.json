@@ -1,0 +1,6 @@
+{
+    "problem": "What is the ordered pair of integers $(x,y)$ for which $12x + 21y = 15$ and $21x + 12y = 51$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Simplify both equations by dividing by 3: \\begin{align*}\n4x + 7y &= 5 \\\\\n7x + 4y &= 17.\n\\end{align*} We solve this system using the elimination method.  Multiply the first equation by 7 and the second equation by $-4$ to obtain \\begin{align*}\n28x + 49y &= 35 \\\\\n-28x -16y &= -68.\n\\end{align*} Adding the equations gives $33y=-33$, so $y=-1$.  Substituting $y=-1$ into either equation and solving, we get $x=3$.  Therefore, $(x,y)=\\boxed{(3,-1)}$."
+}

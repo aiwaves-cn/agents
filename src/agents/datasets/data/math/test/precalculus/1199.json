@@ -1,0 +1,6 @@
+{
+    "problem": "Below is the graph of $y = a \\sin (bx + c) + d$ for some positive constants $a,$ $b,$ $c,$ and $d.$  Find the smallest possible value of $c.$\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal f(real x)\n{\n\treturn 2*sin(3*x + pi) + 1;\n}\n\ndraw(graph(f,-3*pi,3*pi,n=700,join=operator ..),red);\ntrig_axes(-3*pi,3*pi,-4,4,pi/2,1);\nlayer();\nrm_trig_labels(-5,5, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$3$\", (0,3), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\nlabel(\"$-3$\", (0,-3), E);\n[/asy]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We see that the graph reaches its midpoint at $x = 0.$  It is also decreasing at $x = 0.$  The graph of $y = \\sin x$ first reaches its midpoint at $x = \\pi$ for positive values of $x$ (and is decreasing at this point), so the smallest possible value of $c$ is $\\boxed{\\pi}.$"
+}

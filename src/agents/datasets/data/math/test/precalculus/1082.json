@@ -1,0 +1,6 @@
+{
+    "problem": "The area of triangle $ABC$ is equal to $a^2 - (b - c)^2,$ where $a,$ $b,$ and $c$ are the sides of triangle $ABC,$ as usual.  Compute $\\tan A.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The area of triangle $ABC$ is given by\n\\[\\frac{1}{2} bc \\sin A.\\]Hence,\n\\[\\frac{1}{2} bc \\sin A = a^2 - (b - c)^2 = a^2 - b^2 + 2bc - c^2.\\]By the Law of Cosines, $b^2 + c^2 - 2bc \\cos A = a^2,$ so\n\\[\\frac{1}{2} bc \\sin A = 2bc - 2bc \\cos A.\\]This simplifies to $\\sin A = 4 - 4 \\cos A.$  Squaring both sides, we get\n\\[\\sin^2 A = 16 - 32 \\cos A + 16 \\cos^2 A,\\]so $1 - \\cos^2 A = 16 - 32 \\cos A + 16 \\cos^2 A.$  This simplifies to\n\\[17 \\cos^2 A - 32 \\cos A + 15 = 0.\\]This factors as $(\\cos A - 1)(17 \\cos A - 15) = 0.$  Since $\\cos A$ cannot be equal to 1, $\\cos A = \\frac{15}{17}.$\n\nThen $\\sin A = 4 - 4 \\cos A = \\frac{8}{17},$ so\n\\[\\tan A = \\frac{\\sin A}{\\cos A} = \\boxed{\\frac{8}{15}}.\\]"
+}

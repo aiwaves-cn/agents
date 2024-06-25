@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a} = \\begin{pmatrix} 5 \\\\ 1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}.$  Find the area of the triangle with vertices $\\mathbf{0},$ $\\mathbf{a},$ and $\\mathbf{b}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The area of the triangle formed by $\\mathbf{0},$ $\\mathbf{a},$ and $\\mathbf{b}$ is half the area of the parallelogram formed by $\\mathbf{0},$ $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{a} + \\mathbf{b}.$\n\n[asy]\nunitsize(0.8 cm);\n\npair A, B, O;\n\nA = (5,1);\nB = (2,4);\nO = (0,0);\n\ndraw(O--A,Arrow(6));\ndraw(O--B,Arrow(6));\ndraw(A--B--(A + B)--cycle,dashed);\ndraw((-1,0)--(8,0));\ndraw((0,-1)--(0,6));\n\nlabel(\"$\\mathbf{a}$\", A, SE);\nlabel(\"$\\mathbf{b}$\", B, NW);\nlabel(\"$\\mathbf{a} + \\mathbf{b}$\", A + B, NE);\nlabel(\"$\\mathbf{0}$\", O, SW);\n[/asy]\n\nThe area of the parallelogram formed by $\\mathbf{0},$ $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{a} + \\mathbf{b}$ is\n\\[|(5)(4) - (2)(1)| = 18,\\]so the area of the triangle is $18/2 = \\boxed{9}.$"
+}

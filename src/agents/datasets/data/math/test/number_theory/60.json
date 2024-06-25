@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $ABC_4+200_{10}=ABC_9$, where $A$, $B$, and $C$ are valid digits in base 4 and 9. What is the sum when you add all possible values of $A$, all possible values of $B$, and all possible values of $C$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "First we change everything to base 10: \\begin{align*}\n16A+4B+C+200&=81A+9B+C\\quad\\Rightarrow\\\\\n200&=65A+5B.\n\\end{align*}Notice that the $C$ cancels out on both sides, so $C$ could be any valid digit that works in both base 4 and 9 (0, 1, 2, 3). Now we maximize $A$ with $A=3$ and solve $200=65(3)+5B$ to get $B=1$. If we take any smaller value for $A$, then $B$ will be too large to be a digit. So there is only one value of $A$, one value of $B$, and four possible values for $C$. The sum is $3+1+0+1+2+3=\\boxed{10}$."
+}

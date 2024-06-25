@@ -1,0 +1,6 @@
+{
+    "problem": "The circular region of the sign (below, left) has an area of 154 square inches. Vanessa would like to place a tiny ribbon (shaded) around the circle's edge. To be sure she has enough ribbon, she decides to buy 2 inches more of the ribbon than the original circle's circumference. How many inches of ribbon will Vanessa need to buy if she estimates $\\pi = \\frac{22}{7}$?\n\n[asy]import graph;\nsize(125,72.5);\npicture p;\ndraw(p,unitsquare);\nfilldraw(p,Circle((.5,.5),.3),white);\nlabel(p,\"Enter\",(.5,.5),ZapfChancery(\"m\",\"n\"));\nadd(p);\nfilldraw(Circle((2,.5),.4),gray(.6));\nadd(shift(1.5*right)*p);\ndraw((1.1,.5)--(1.4,.5),EndArrow(5,25));[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Say the radius of the circle is $r$. Then the area of the circle is $\\pi r^2,$ which we estimate to $154=\\frac{22}{7}r^2$. If we multiply both sides by $\\frac{7}{22}$, we get $r^2=49$ or $r=7$. The circle's circumference is $2\\pi r$, which we again estimate to $\\frac{44}{7}r=44$. Vanessa wants two extra inches of ribbon, so she needs to buy $44+2=\\boxed{46}$ inches of ribbon."
+}

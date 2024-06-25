@@ -1,0 +1,6 @@
+{
+    "problem": "If $r$ is a root of $x^2 + 2x - 15 = 0$, what is the greatest possible value of $\\frac{r^3-1}{r^5+r^4-r^3-r^2}$? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Factor $x^2+2x-15$ as $(x+5)(x-3)$ to find that $r$ is either $3$ or $-5$.  Before evaluating $\\frac{r^3-1}{r^5+r^4-r^3-r^2}$ at each of these values, we first simplify it.  The numerator factors as a difference of cubes, and the denominator has a common factor of $r^2$. \\[\n\\frac{r^3-1}{r^5+r^4-r^3-r^2}=\\frac{(r-1)(r^2+r+1)}{r^2(r^3+r^2-r-1)}.\n\\]The expression in parentheses in the denominator factors as \\[\nr^3+r^2-r-1=r^2(r+1)-(r+1)=(r^2-1)(r+1),\n\\]so the original expression is  \\[\n\\frac{(r-1)(r^2+r+1)}{r^2(r^2-1)(r+1)}=\\frac{(r-1)(r^2+r+1)}{r^2(r-1)(r+1)(r+1)}=\\frac{(r^2+r+1)}{r^2(r+1)^2}.\n\\]Evaluating this expression at $r=3$ and $r=-5$ yields $13/144$ and $21/400$ respectively.  Therefore, the maximum value of the expression is $\\boxed{\\frac{13}{144}}$."
+}

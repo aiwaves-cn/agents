@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $M(2,5)$ is the midpoint of $\\overline{AB}$ and $A(3,1)$ is one endpoint, what is the product of the coordinates of point $B$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Call the coordinates of point $B$ $(x,y)$. Because the coordinates of a midpoint of a line segment are the average of the coordinates of the two endpoints, we have that $\\frac{3+x}{2} = 2$ and $\\frac{1+y}{2} = 5$. Solving for $x$ and $y$ yields $x = 1$ and $y = 9$. Thus, point $B$ has coordinates $(1,9)$, so the product of its coordinates is $\\boxed{9}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can I choose a 4-person committee from a club of 9 people?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Choosing a committee is a combination, and order does not matter. We are choosing a 4-person committee from 9 people, so there are $9 \\times 8 \\times 7 \\times 6$ ways to pick the four people for the positions, but then we must divide by $4!$ since order doesn't matter, so the answer is $\\dfrac{9 \\times 8 \\times 7 \\times 6}{4!} =\\boxed{126}$."
+}

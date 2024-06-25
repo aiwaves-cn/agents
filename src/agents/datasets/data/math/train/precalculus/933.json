@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\sin x,$ $\\cos x,$ $\\tan x$ form a geometric sequence, in this order, then find $\\cot^6 x - \\cot^2 x.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Since $\\sin x,$ $\\cos x,$ $\\tan x$ is a geometric sequence,\n\\[\\cos^2 x = \\sin x \\tan x.\\]Then\n\\[\\cot^2 x = \\frac{\\cos^2 x}{\\sin ^2 x} = \\frac{\\sin x \\tan x}{\\sin^2 x} = \\frac{1}{\\cos x},\\]so\n\\[\\cot^4 x = \\frac{1}{\\cos^2 x} = \\frac{\\sin^2 x + \\cos^2 x}{\\cos^2 x} = \\tan^2 x + 1.\\]Therefore,\n\\begin{align*}\n\\cot^6 x - \\cot^2 x &= \\cot^2 x (\\cot^4 x - 1) \\\\\n&= \\cot^2 x \\tan^2 x = \\boxed{1}.\n\\end{align*}"
+}

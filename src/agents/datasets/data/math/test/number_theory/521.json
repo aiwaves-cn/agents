@@ -1,0 +1,6 @@
+{
+    "problem": "The product of two consecutive positive even integers is 288. What is the greater of the two integers?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "First we find the prime factorization of 288 to be $2^5\\cdot 3^2$, and we have to split these factors among two consecutive even integers. The 3 must be with at least one 2 for the integer to be even, meaning one of the factors must be a multiple of $6.$ After some playing around, we find that when one factor is 18, that leaves us with $2^4=16$. So, our two integers are 16 and 18, with the greater integer being $\\boxed{18}$."
+}

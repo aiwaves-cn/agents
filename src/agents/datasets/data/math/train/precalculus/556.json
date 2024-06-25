@@ -1,0 +1,6 @@
+{
+    "problem": "Two transformations are applied to the complex number $-3 - 8i$:\n\nA $45^\\circ$ rotation around the origin in the counter-clockwise direction.\nA dilation, centered at the origin, with scale factor $\\sqrt{2}.$\n\nWhat is the resulting complex number?",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "A $45^\\circ$ rotation in the counter-clockwise direction corresponds to multiplication by $\\operatorname{cis} 45^\\circ = \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}},$ and the dilation corresponds to multiplication by $\\sqrt{2}.$  Therefore, both transformations correspond to multiplication by $\\left( \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}} \\right) \\sqrt{2} = 1 + i.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A = (-3,-8), B = (5,-11);\n\ndraw((-4,0)--(6,0));\ndraw((0,-12)--(0,2));\ndraw((0,0)--A,dashed);\ndraw((0,0)--B,dashed);\n\ndot(\"$-3 - 8i$\", A, SW);\ndot(\"$5 - 11i$\", B, SE);\n[/asy]\n\nThis means the image of $-3 - 8i$ is $(-3 - 8i)(1 + i) = \\boxed{5 - 11i}.$"
+}

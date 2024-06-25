@@ -1,0 +1,6 @@
+{
+    "problem": "Define $a \\Delta b = a^2 -b $.  What is the value of $ (2^{4 \\Delta13})\\Delta(3^{3\\Delta5})$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have $4 \\Delta 13 = 4^2-13=16-13=3$ and $3 \\Delta 5 = 3^2-5 = 9-5=4$. Thus we are looking for $(2^3) \\Delta (3^4) = 2^6-3^4 = 64-81 = \\boxed{-17}$."
+}

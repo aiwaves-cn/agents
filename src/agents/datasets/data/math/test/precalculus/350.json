@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC, AB = AC = 10$ and $BC = 12$. Point $D$ lies strictly between $A$ and $B$ on $\\overline{AB}$ and point $E$ lies strictly between $A$ and $C$ on $\\overline{AC}$ so that $AD = DE = EC$.  Find $AD.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "By the Law of Cosines on triangle $ABC,$\n\\[\\cos A = \\frac{10^2 + 10^2 - 12^2}{2 \\cdot 10 \\cdot 10} = \\frac{7}{25}.\\]Let $x = AD = DE = CE.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A, B, C, D, E;\nreal x = 250/39;\n\nA = (0,8);\nB = (-6,0);\nC = (6,0);\nD = interp(A,B,x/10);\nE = interp(A,C,(10 - x)/10);\n\ndraw(A--B--C--cycle);\ndraw(D--E);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);;\nlabel(\"$D$\", D, NW);\nlabel(\"$E$\", E, NE);\n\nlabel(\"$x$\", (A + D)/2, NW);\nlabel(\"$x$\", (D + E)/2, SE);\nlabel(\"$x$\", (C + E)/2, NE);\nlabel(\"$10 - x$\", (A + E)/2, NE);\n[/asy]\n\nThen by the Law of Cosines on Triangle $ADE$,\n\\[x^2 = x^2 + (10 - x)^2 - 2x(10 - x) \\cos A = x^2 + (10 - x)^2 - 2x(10 - x) \\cdot \\frac{7}{25}.\\]Then\n\\[(10 - x)^2 - 2x(10 - x) \\cdot \\frac{7}{25} = 0.\\]Since $x \\neq 10,$ we can divide both sides by $10 - x,$ to get\n\\[10 - x - 2x \\cdot \\frac{7}{25} = 0.\\]Solving, we find $x = \\boxed{\\frac{250}{39}}.$"
+}

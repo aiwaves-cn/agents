@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram below, we have $\\sin \\angle RPQ = \\frac{7}{25}$.  What is $\\sin \\angle RPS$?\n\n[asy]\npair R,P,Q,SS;\nSS = (-2,0);\nP = (0,0);\nQ = (2,0);\nR = rotate(aSin(7/25))*(1.5,0);\ndot(\"$S$\",SS,S);\ndot(\"$Q$\",Q,S);\ndot(\"$R$\",R,N);\ndot(\"$P$\",P,S);\ndraw(Q--SS);\ndraw(P--R);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "For any angle $x$, we have $\\sin (180^\\circ - x)=\\sin x$, so $\\sin RPS = \\sin(180^\\circ - \\angle RPS) = \\sin \\angle RPQ = \\boxed{\\frac{7}{25}}$."
+}

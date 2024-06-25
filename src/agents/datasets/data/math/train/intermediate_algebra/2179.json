@@ -1,0 +1,6 @@
+{
+    "problem": "Let $k$ be a real number such that $k > 1$ and\n\\[\\sum_{n=1}^{\\infty} \\frac{5n-1}{k^n} = \\frac{13}{4}.\\]Find $k.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $$S =\\sum_{n=1}^{\\infty} \\frac{5n-1}{k^n} = \\frac{4}{k} +   \\frac{9}{k^2} +  \\frac{14}{k^3} + \\dotsb.$$Multiplying by $k$ gives us\n$$kS = 4 + \\frac{9}{k} +   \\frac{14}{k^2} +  \\frac{19}{k^3} + \\dotsb.$$Subtracting the first equation from the second gives us\n$$\\begin{aligned}(k-1)S &= 4 + \\frac{5}{k} +   \\frac{5}{k^2} +  \\frac{5}{k^3} + \\dotsb \\\\\n&= 4 + \\frac{\\frac{5}{k}}{1-\\frac{1}{k}} \\\\\n&= 4 + \\frac{5}{k-1} \\\\\n&= \\frac{4k +1}{k-1}.\n\\end{aligned}$$Therefore,\n$$S = \\frac{4k +1}{(k-1)^2} = \\frac{13}{4}.$$Rearranging gives,\n$$16k + 4 = 13(k^2-2k+1).$$Bringing all the terms on one side gives us\n$$13k^2-42k+9 = 0$$Factoring gives\n$$(k-3)(13k-3) = 0.$$Hence, $k=3$ or $k= \\frac{3}{13}$. Since we are told that $k > 1$ (and more importantly, the series converges), we have that $k = \\boxed{3}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways can I put down two indistinguishable pieces on an ordinary $8\\times 8$ chessboard, if the pieces must either be in the same row or be in the same column?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The first piece can go in any of the $64$ squares. The second piece can then be in any of $14$ positions, since there are $7$ unoccupied squares in the row of the first piece, as well as $7$ unoccupied squares in the column of the first piece. This would seem to give us $64\\cdot 14$ choices for the placement of the two pieces. However, order doesn't matter (we said the pieces are indistinguishable), so the actual number of choices is $(64\\cdot 14)/2$, which is $\\boxed{448}$."
+}

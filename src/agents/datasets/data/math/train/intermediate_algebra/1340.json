@@ -1,0 +1,6 @@
+{
+    "problem": "A parabola has vertex $V = (0,0)$ and focus $F = (0,1).$  Let $P$ be a point in the first quadrant, lying on the parabola, so that $PF = 101.$  Find $P.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Using the vertex and focus, we can see that the equation of the directrix must be $y = -1.$\n\n[asy]\nunitsize(3 cm);\n\nreal func (real x) {\n  return(x^2);\n}\n\npair F, P, Q;\n\nF = (0,1/4);\nP = (0.8,func(0.8));\nQ = (0.8,-1/4);\n\ndraw(graph(func,-1,1));\ndraw((-1,-1/4)--(1,-1/4),dashed);\ndraw(F--P--Q);\n\nlabel(\"$y = -1$\", (1,-1/4), E);\nlabel(\"$y + 1$\", (P + Q)/2, E);\n\ndot(\"$F = (0,1)$\", F, NW);\ndot(\"$P = (x,y)$\", P, E);\ndot(\"$(x,-1)$\", Q, S);\n[/asy]\n\nLet $P = (x,y)$ be a point on the parabola.  Then by definition of the parabola, $PF$ is equal to the distance from $P$ to the directrix, which is $y + 1.$  Hence,\n\\[\\sqrt{x^2 + (y - 1)^2} = y + 1.\\]Squaring, we get $x^2 + (y - 1)^2 = (y + 1)^2.$  This simplifies to $x^2 = 4y.$\n\nWe are given that $PF = 101,$ so $y + 1 = 101,$ and hence $y = 100.$  Then $x^2 = 400.$  Since the point is in the first quadrant, $x = 20.$  Hence, $P = \\boxed{(20,100)}.$"
+}

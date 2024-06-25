@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f$ be a function defined on the positive integers, such that\n\\[f(xy) = f(x) + f(y)\\]for all positive integers $x$ and $y.$  Given $f(10) = 14$ and $f(40) = 20,$ find $f(500).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = f(2)$ and $b = f(5).$  Setting $x = 2$ and $y = 5,$ we get\n\\[14 = f(10) = f(2) + f(5) = a + b.\\]Setting $x = 10$ and $y = 2,$ we get\n\\[f(20) = f(10) + f(2) = a + b + a = 2a + b.\\]Setting $x = 20$ and $y = 2,$ we get\n\\[20 = f(40) = f(20) + f(2) = 2a + b + a = 3a + b.\\]Solving the system $a + b = 14$ and $3a + b = 20,$ we find $a = 3$ and $b = 11.$  Then\n\\begin{align*}\nf(500) &= f(2 \\cdot 2 \\cdot 5 \\cdot 5 \\cdot 5) \\\\\n&= f(2) + f(2) + f(5) + f(5) + f(5) \\\\\n&= 2 \\cdot 3 + 3 \\cdot 11 \\\\\n&= \\boxed{39}.\n\\end{align*}"
+}

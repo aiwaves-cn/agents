@@ -1,0 +1,6 @@
+{
+    "problem": "Everyone in a class of 30 students takes math and history.  Seven students received an A in history and 13 received an A in math, including four that received an A in both courses. How many students did not receive an A in any of these two courses?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Adding the numbers of students with A's in history and math gives $7+13 = 20$.  But this counts the 4 kids who got A's in both twice, so there are $20-4=16$ different students total who received an A in at least one of the courses.  That leaves $30-16=\\boxed{14}$ who didn't get an A in either."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A regular octagon $ABCDEFGH$ has an area of one square unit. What is the area of the rectangle  $ABEF$?\n\n[asy]\npair A,B,C,D,I,F,G,H;\nA=(-1,1);\nB=(1,1);\nH=(-2.41,-0.41);\nC=(2.41,-0.41);\nG=(-2.41,-2.41);\nD=(2.41,-2.41);\nF=(-1,-3.82);\nI=(1,-3.82);\ndraw(A--B--C--D--I--F--G--H--cycle,linewidth(0.7));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,N);\nlabel(\"$C$\",C,E);\nlabel(\"$D$\",D,E);\nlabel(\"$E$\",I,S);\nlabel(\"$F$\",F,S);\nlabel(\"$G$\",G,W);\nlabel(\"$H$\",H,W);\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $O$ be the intersection of the diagonals of $ABEF$. Since the octagon is regular, $\\triangle AOB$ has area $1/8$. Since $O$ is the midpoint of $\\overline{AE}$, $\\triangle OAB$ and $\\triangle\nBOE$ have the same area. Thus  $\\triangle ABE$ has area $1/4$, so $ABEF$ has area $\\boxed{\\frac{1}{2}}$. [asy]\npair A,B,C,D,I,F,G,H;\nA=(-1,1);\nB=(1,1);\nH=(-2.41,-0.41);\nC=(2.41,-0.41);\nG=(-2.41,-2.41);\nD=(2.41,-2.41);\nF=(-1,-3.82);\nI=(1,-3.82);\ndraw(A--B--C--D--I--F--G--H--cycle,linewidth(0.7));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,N);\nlabel(\"$C$\",C,E);\nlabel(\"$D$\",D,E);\nlabel(\"$E$\",I,S);\nlabel(\"$F$\",F,S);\nlabel(\"$G$\",G,W);\nlabel(\"$H$\",H,W);\ndraw(A--F);\ndraw(B--I);\ndraw(A--I,dashed);\ndraw(B--F,dashed);\nlabel(\"$o$\",(0,-1.42),E);\n[/asy]"
+}

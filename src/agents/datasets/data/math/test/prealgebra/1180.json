@@ -1,0 +1,6 @@
+{
+    "problem": "A regular pentagon and a regular hexagon are coplanar and share a common side $\\overline{AD}$, as shown. What is the degree measure of angle $BAC$?\n\n[asy]\ndraw((-10,0)--(10,0)--(20,17.3)--(10,34.6)--(-10,34.6)--(-20,17.3)--cycle,linewidth(1));\nlabel(\"$A$\",(-10,0),SW);\nlabel(\"$B$\",(-20,17.3),W);\nlabel(\"$D$\",(10,0),SE);\nlabel(\"$C$\",(-16.2,19),ESE);\ndraw((-10,0)--(-16.2,19)--(0,30.8)--(16.2,19)--(10,0),linewidth(1));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The measure of each interior angle in a regular $n$-gon is $180(n-2)/n$ degrees.  Therefore, the measure of angle $\\angle BAD$ is $180(6-2)/6=120$ degrees and the measure of angle $CAD$ is 108 degrees.  Their difference, $\\angle BAC$, measures $120-108=\\boxed{12\\text{ degrees}}$."
+}

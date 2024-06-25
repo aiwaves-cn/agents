@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[(-\\sqrt{3} + \\sqrt{5} + \\sqrt{6} + \\sqrt{7})^2 + (\\sqrt{3} - \\sqrt{5} + \\sqrt{6} + \\sqrt{7})^2 + (\\sqrt{3} + \\sqrt{5} - \\sqrt{6} + \\sqrt{7})^2 + (\\sqrt{3} + \\sqrt{5} + \\sqrt{6} - \\sqrt{7})^2.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = \\sqrt{3},$ $b = \\sqrt{5},$ $c = \\sqrt{6},$ $d = \\sqrt{7},$ and $s = a + b + c + d.$  Then the given expression is\n\\begin{align*}\n&(s - 2a)^2 + (s - 2b)^2 + (s - 2c)^2 + (s - 2d)^2 \\\\\n&= (s^2 - 4as + 4a^2) + (s^2 - 4bs + 4b^2) + (s^2 - 4cs + 4c^2) + (s^2 - 4ds + 4d^2) \\\\\n&= 4s^2 - 4(a + b + c + d)s + 4a^2 + 4b^2 + 4c^2 + 4d^2 \\\\\n&= 4s^2 - 4s^2 + 4a^2 + 4b^2 + 4c^2 + 4d^2 \\\\\n&= 4(a^2 + b^2 + c^2 + d^2) \\\\\n&= 4(3 + 5 + 6 + 7) \\\\\n&= \\boxed{84}.\n\\end{align*}"
+}

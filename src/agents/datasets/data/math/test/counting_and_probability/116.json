@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\dbinom{31}{28}$.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "\\begin{align*}\n\\dbinom{31}{28} &= \\dbinom{31}{3} \\\\\n&= \\dfrac{31!}{28!3!} \\\\\n&= \\dfrac{31\\times 30\\times 29}{3\\times 2\\times 1} \\\\\n&= 31 \\times \\dfrac{30}{3\\times 2\\times 1} \\times 29 \\\\\n&= 31\\times 5\\times 29 \\\\\n&= \\boxed{4495}.\n\\end{align*}"
+}

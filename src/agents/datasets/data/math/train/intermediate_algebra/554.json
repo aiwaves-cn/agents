@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\frac{1}{\\log_{15} 2 + 1} + \\frac{1}{\\log_{10} 3 + 1} + \\frac{1}{\\log_6 5 + 1}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the change-of-base formula,\n\\begin{align*}\n\\frac{1}{\\log_{15} 2 + 1} + \\frac{1}{\\log_{10} 3 + 1} + \\frac{1}{\\log_6 5 + 1} &= \\frac{1}{\\frac{\\log 2}{\\log 15} + 1} + \\frac{1}{\\frac{\\log 3}{\\log 10} + 1} + \\frac{1}{\\frac{\\log 5}{\\log 6} + 1} \\\\\n&= \\frac{\\log 15}{\\log 2 + \\log 15} + \\frac{\\log 10}{\\log 3 + \\log 10} + \\frac{\\log 6}{\\log 5 + \\log 6} \\\\\n&= \\frac{\\log 15}{\\log 30} + \\frac{\\log 10}{\\log 30} + \\frac{\\log 6}{\\log 30} \\\\\n&= \\frac{\\log 15 + \\log 10 + \\log 6}{\\log 30} \\\\\n&= \\frac{\\log 900}{\\log 30} = \\frac{2 \\log 30}{\\log 30} = \\boxed{2}.\n\\end{align*}"
+}

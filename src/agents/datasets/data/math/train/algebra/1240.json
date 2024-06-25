@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $n$: $2^n\\cdot 4^n=64^{n-36}$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since $4=2^2$, $4^n=2^{2n}$.  Since $64=2^6$, $64^{n-36}=2^{6(n-36)}$.  Thus,\n\n$$2^{n+2n}=2^{6(n-36)}\\Rightarrow 3n=6n-216$$\n\nSo $3n=216\\Rightarrow n=\\boxed{72}$."
+}

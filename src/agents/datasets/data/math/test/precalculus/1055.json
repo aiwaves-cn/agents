@@ -1,0 +1,6 @@
+{
+    "problem": "The curve parameterized by $(x,y) = (2t + 5, 12t^2 - 8t - 7)$ is a parabola, where $t$ is a real number.  Find the equation of the parabola.  Enter the equation in the form \"$y = ax^2 + bx + c$\".",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $x = 2t + 5$ and $y = 12t^2 - 8t - 7.$  Then $t = \\frac{x - 5}{2},$ and\n\\begin{align*}\ny &= 12t^2 - 8t - 7 \\\\\n&= 12 \\left( \\frac{x - 5}{2} \\right)^2 - 8 \\cdot \\frac{x - 5}{2} - 7 \\\\\n&= 3x^2 - 34x + 88.\n\\end{align*}Thus, the equation of the parabola is $\\boxed{y = 3x^2 - 34x + 88}.$"
+}

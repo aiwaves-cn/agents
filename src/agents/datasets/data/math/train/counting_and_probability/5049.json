@@ -1,0 +1,6 @@
+{
+    "problem": "Jane is 25 years old. Dick is older than Jane. In $n$ years, where $n$ is a positive integer, Dick's age and Jane's age will both be two-digit number and will have the property that Jane's age is obtained by interchanging the digits of Dick's age. Let $d$ be Dick's present age. How many ordered pairs of positive integers $(d,n)$ are possible?\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let Jane's age $n$ years from now be $10a+b$, and let Dick's age be $10b+a$. If $10b+a>10a+b$, then $b>a$. The possible pairs of $a,b$ are:\n$(1,2), (1,3), (2,3), (1,4), (2,4), (3,4), \\dots , (8,9)$\nThat makes 36. But $10a+b>25$, so we subtract all the extraneous pairs: $(1,2), (1,3), (2,3), (1,4), (2,4), (1,5), (2,5), (1,6), (1,7), (1,8),$ and $(1,9)$. $36-11=\\boxed{25}$"
+}

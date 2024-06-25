@@ -1,0 +1,6 @@
+{
+    "problem": "The parabola $y = x^2$ is tangent to the graph of $y = x^4 + ax^3 + x^2 + bx + 1$ at two points.  Find the positive difference between the $x$-coordinates of the points of tangency.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ and $s$ be the $x$-coordinates of the two points of tangency.  As such, they will be double roots of the polynomial\n\\[(x^4 + ax^3 + x^2 + bx + 1) - x^2 = x^4 + ax^3 + bx + 1.\\]Hence,\n\\begin{align*}\nx^4 + ax^3 + bx + 1 &= (x - r)^2 (x - s)^2 \\\\\n&= (x^2 - 2rx + r^2)(x^2 - 2sx + s^2) \\\\\n&= x^4 - (2r + 2s) x^3 + (r^2 + 4rs + s^2) x^2 - (2r^2 s + 2rs^2) x + r^2 s^2.\n\\end{align*}Matching coefficients, we get\n\\begin{align*}\nr^2 + 4rs + s^2 &= 0, \\\\\nr^2 s^2 &= 1.\n\\end{align*}From $r^2 s^2 = 1,$ either $rs = 1$ or $rs = -1.$  But $4rs = -(r^2 + s^2)$ is nonpositive, so $rs = -1.$  Then\n\\[r^2 + s^2 = 4.\\]Hence, $(r - s)^2 = r^2 - 2rs + s^2 = 6,$ so $|r - s| = \\boxed{\\sqrt{6}}.$"
+}

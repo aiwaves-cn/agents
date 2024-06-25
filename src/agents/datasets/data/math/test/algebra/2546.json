@@ -1,0 +1,6 @@
+{
+    "problem": "A store carries chocolate, vanilla, peppermint, and lemon candies. One day, the store clerk notices that he has fifteen candies total. Furthermore, the number of peppermint and lemon candies together is twice the number of chocolate and vanilla candies together, and there are eight more peppermint candies than lemon candies. How many lemon candies are there?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let $a$ denote the number of chocolate candies, $b$ the number of vanilla, $c$ the number of peppermint, and $d$ the number of lemon. We can represent the information given in the problem with the following system of linear equations:\n\\begin{align*}\na+b+c+d &= 15 \\\\\n2(a+b) &= c+d \\\\\nc-8 &= d\n\\end{align*} Substituting for $c+d$ in terms of $a+b$ into the first equation gives $3a + 3b = 15$, or $a + b = 5$. This means that $c + d = 10$. The third equation can also be expressed as $c - d = 8$. Adding these two equations gives $2c = 18$, so $c = 9$. Because $d = c - 8$, $d = \\boxed{1}$."
+}

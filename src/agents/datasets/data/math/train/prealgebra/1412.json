@@ -1,0 +1,6 @@
+{
+    "problem": "A bus can hold a maximum of 38 students. What is the minimum number of buses needed to transport 411 students?",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Since $n$ buses will carry $38n$ students, we need $38n>411$.\n\nDividing both sides of this inequality by $38$, we have $n>\\dfrac{411}{38}$. We can convert $\\dfrac{411}{38}$ to a mixed number: $$\\frac{411}{38} = \\frac{380}{38}+\\frac{31}{38} = 10\\frac{31}{38}.$$ Since the number of buses must be an integer, the smallest possible number of buses is $\\boxed{11}$."
+}

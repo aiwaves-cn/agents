@@ -1,116 +1,67 @@
+<div align="center">
+<img src='./assets/agents-logo.png'  width=300px>
 
-# <p align="center"><img src='./assets/agents-logo.png'  width=300> </p>
-## <p align="center" style="display:inline-block;"><font  face="Calisto MT"><font  size="4">An Open-source Framework for Autonomous Language Agents</font></font></p>
+## <p align="center">Agents 2.0: Symbolic Learning Enables Self-Evolving Agents</p>
 
-<p align="center"><a href="https://arxiv.org/pdf/2309.07870.pdf">[📄 Paper]</a> <a href="https://agents-readthedocsio.readthedocs.io/en/latest/index.html">[📄 Doc]</a>
-<a href="http://www.aiwaves-agents.com/">[🌐 Website]</a>
-<a href="#web-demos">[🤖️ Demos]</a> <a href="https://discord.gg/DDPBeFt7">[🔥 Discord]</a> <a href='./assets/wechat.jpg'>[🔥 Wechat Group] </a>
+<p align="center">
+<a href="https://oe-heart.github.io/Agents2.0/">[🤖Project]</a>
+<a href="">[📄Paper]</a>
+<a href="https://agentsv2.readthedocs.io/">[📝Docs]</a>
+<a href="#overview">[🌟Overview]</a>
+<a href="#installation">[🔧Installation]</a>
+<a href="#citation">[🚩Citation]</a>
 </p>
- </p>
-<hr>
-  
 
-## Overview
+![](https://img.shields.io/badge/version-v2.0.0-blue)
+[![License: Apache](https://img.shields.io/badge/License-Apache2.0-yellow.svg)](https://opensource.org/license/apache-2-0)
+![](https://img.shields.io/github/last-commit/aiwaves-cn/agents?color=green)
+![](https://img.shields.io/badge/PRs-Welcome-red) 
 
-**Agents** is an open-source library/framework for building autonomous language agents. The library is carefully engineered to support important features including **long-short term memory**, **tool usage**, **web navigation**, **multi-agent communication**, and brand new features including **human-agent interaction** and **symbolic control**. With **Agents**, one can customize a language agent or a multi-agent system by simply filling in a config file in natural language and deploy the language agents in a terminal, a Gradio interface, or a backend service.
+---
 
-One major difference between **Agents** and other existing frameworks for language agents is that our framework allows users to provide fine-grained control and guidance to language agents via an **SOP (Standard Operation Process)**. An SOP defines subgoals/subtasks for the overall task and allows users to customize a fine-grained workflow for the language agents.
-
-<p align="center"><img src='./assets/agents-cover.png'  width=800></p>
-
-## 📢 Updates
-
-[x] 2023.10.7 **Support LLM-based SOP generation**🎉🎉🎉🎉
- - [SOP Generation for Multi-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-multi)[on Huggingface Space]
- - [SOP Generation for Single-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-single)[on Huggingface Space]
- - We recommend strongly that you can create your OWN DEMO  by clicking the three dots at the top right and selecting **Duplicate this Space** on Huggingface Space.
-
-[x] 2023.9.20 Deploy Demos on Huggingface Space
-
-[x] 2023.9.12 Official Release
-
-## 💡 Highlights
-
-- **Long-short Term Memory**: Language agents in the library are equipped with both long-term memory implemented via VectorDB + Semantic Search and short-term memory (working memory) maintained and updated by an LLM.
-- **Tool Usage**: Language agents in the library can use any external tools via [function-calling](https://platform.openai.com/docs/guides/gpt/function-calling) and developers can add customized tools/APIs [here](https://github.com/aiwaves-cn/agents/blob/master/src/agents/Component/ToolComponent.py).
-- **Web Navigation**: Language agents in the library can use search engines to navigate the web and get useful information.
-- **Multi-agent Communication**: In addition to single language agents, the library supports building multi-agent systems in which language agents can communicate with other language agents and the environment. Different from most existing frameworks for multi-agent systems that use pre-defined rules to control the order for agents' action, **Agents** includes a *controller* function that dynamically decides which agent will perform the next action using an LLM by considering the previous actions, the environment, and the target of the current states. This makes multi-agent communication more flexible.
-- **Human-Agent interaction**: In addition to letting language agents communicate with each other in an environment, our framework seamlessly supports human users to play the role of the agent by himself/herself and input his/her own actions, and interact with other language agents in the environment.
-- **Symbolic Control**: Different from existing frameworks for language agents that only use a simple task description to control the entire multi-agent system over the whole task completion process, **Agents** allows users to use an **SOP (Standard Operation Process)** that defines subgoals/subtasks for the overall task to customize fine-grained workflows for the language agents.
+</div>
 
 
-## 🛠 Installation
+## 🔔News
+- [2024-06-25] We release new agents2.0, supporting for agent evaluation and optimazation.
+---
 
-#### Option 1.  Build from source
+## 🌟Overview
 
-    
-    git clone https://github.com/aiwaves-cn/agents.git
-    cd agents
-    pip install -e . 
-    
+Agent symbolic learning is a systematic framework for training language agents, which is inspired by the connectionist learning procedure used for training neural nets. We make an analogy between language agents and neural nets: the agent pipeline of an agent corresponds to the computational graph of a neural net, a node in the agent pipeline corresponds to a layer in the neural net, and the prompts and tools for a node correspond to the weights of a layer. In this way, we are able to implement the main components of connectionist learning, i.e., backward propagation and gradient-based weight update, in the context of agent training using language-based loss, gradients, and weights.
 
-#### Option 2.  Install via PyPI
+<img src='./assets/overview.png'>
 
-    
-    pip install ai-agents
-    
+We implement loss function, back-propagation, and weight optimizer in the context of agent training with carefully designed prompt pipelines. For a training example, our framework first conducts the "forward pass" (agent execution) and stores the input, output, prompts, and tool usage in each node in a "trajectory". We then use a prompt-based loss function to evaluate the outcome, resulting in a "language loss". Afterward, we back-propagate the language loss from the last to the first node along the trajectory, resulting in textual analyses and reflections for the symbolic components within each node, we call them language gradients. Finally, we update all symbolic components in each node, as well as the computational graph consisting of the nodes and their connections, according to the language gradients with another carefully designed prompt. Our approach also naturally supports optimizing multi-agent systems by considering nodes as different agents or allowing multiple agents to take actions in one node. 
 
-##  📦 Usage
-### 🛠️ Generate the config file
+---
 
-#### Option 1. Fill in the config template manually
+## 🔧Installation
 
-Modify `example/{Muti|Single_Agent}/{target_agent}/config.json`
+**Installation from git repo branch:**
+```
+pip install git+https://github.com/aiwaves-cn/agents@master
+```
 
-#### Option 2. Try our [WebUI](http://www.aiwaves.cn/create-agent/) for customizing the config file.
+**Installation for local development:**
+```
+git clone -b master https://github.com/aiwaves-cn/agents
+cd agents
+pip install -e .
+```
 
-Haven't figured out how to write the JSON file yet? Check out our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html)!
-
-#### Option 3. Try Huggingface Space for generating the SOP automatically.
-
- - [SOP Generation for Multi-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-multi)[on Huggingface Space]
- - [SOP Generation for Single-Agent](https://huggingface.co/spaces/AIWaves/SOP_Generation-single)[on Huggingface Space]
- - We recommend strongly that you can create your OWN DEMO  by clicking the three dots at the top right and selecting **Duplicate this Space** on Huggingface Space.
-
-### 🤖️ The Agent Hub
-
-We provide an **AgentHub**, where you can search for interesting Agents shared by us or other developers, try them out or use them as the starting point to customize your own agent. We encourage you to share your customized agents to help others build their own agents more easily! You can share your customized agents by submitting PRs that adds configs and customized codes [here](https://github.com/aiwaves-cn/agents/tree/master/examples/Community_Agent). You can also send us your own config files and codes for customized agents by [email](mailto:contact@aiwaves.cn), and we will share your examples and acknowledge your contribution in future updates!
-
-
-
-## 📷 Examples and Demos
-
-We have provided exemplar config files, code, and demos for both single-agent and multi-agent systems [here](https://github.com/aiwaves-cn/agents/tree/master/examples).
-
-### Web demos
-#### Note
-1.Due to massive traffic,  our online demos may suffer from long queue time and unstable issues. **Please follow our [quick start guide](https://github.com/aiwaves-cn/agents/blob/master/examples/README.md)) and deploy language agents locally for testing. Or checkout our [website](http://www.aiwaves-agents.com/)**.
-2.Software Company is unable to generate executable code online, **if you wish to generate executable code directly, please run it locally :)**
-- [Customer Service Agent](https://www.aiwaves.cn/customer-service-agent/)
-- [Debate](https://huggingface.co/spaces/AIWaves/Debate)[now on  Huggingface Space]
-- [Software Company](https://huggingface.co/spaces/AIWaves/Software_Company)[now on  Huggingface Space]
-- [Fiction Studio](https://www.aiwaves.cn/fiction-studio/)
-
-
-## Contributing to Agents
-We appreciate your interest in contributing to our open-source initiative. Please feel free to submit a PR or share your thoughts on how to improve the library in Issues!
-
-## Note：
-1. When running the code, we will download an embedding model, which will cause the code to run slowly. We will adjust it to the API interface later
-2. Currently, the shopping assistant cannot be used. We will replace the API later. Stay tuned
-
-
-## 📚 Documentation
-
-Please check our [documentation](https://agents-readthedocsio.readthedocs.io/en/latest/index.html) for detailed documentation of the framework.
+---
 
 ## ⭐ Star History  
 [![Star History Chart](https://api.star-history.com/svg?repos=aiwaves-cn/agents&type=Date)](https://star-history.com/#aiwaves-cn/agents&Date)
 
-## Citation
-If you find our repo useful in your research, please kindly consider cite:
-```angular2
-@misc{zhou2023agents,
+---
+
+## 🚩Citation
+
+If you find our repository useful in your research, please kindly consider cite:
+```bibtex
+@article{zhou2023agents,
       title={Agents: An Open-source Framework for Autonomous Language Agents}, 
       author={Wangchunshu Zhou and Yuchen Eleanor Jiang and Long Li and Jialong Wu and Tiannan Wang and Shi Qiu and Jintian Zhang and Jing Chen and Ruipu Wu and Shuai Wang and Shiding Zhu and Jiyu Chen and Wentao Zhang and Ningyu Zhang and Huajun Chen and Peng Cui and Mrinmaya Sachan},
       year={2023},

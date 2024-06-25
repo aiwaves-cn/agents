@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $\\angle PQR=\\angle PRQ$.  If $QR=5$ and $PR=7$, what is the perimeter of $\\triangle PQR$? [asy]\ndraw((0,0)--(2.5,7.43)--(5,0)--cycle);\nlabel(\"5\",(2.5,0),S);\nlabel(\"$Q$\",(0,0),SW);\nlabel(\"$R$\",(5,0),SE);\nlabel(\"$P$\",(2.5,7.43),N);\nlabel(\"7\",(4.2,3.7));\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Since $\\angle PQR=\\angle PRQ$, then $\\triangle PQR$ is an isosceles triangle and $PQ=PR=7$. Therefore, the perimeter of $\\triangle PQR$ is $PQ+QR+PR=7+5+7=\\boxed{19}$."
+}

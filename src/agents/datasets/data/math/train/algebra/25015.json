@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate the product \\[ (n-1) \\cdot n \\cdot (n+1) \\cdot (n+2) \\cdot (n+3), \\] where $n=2$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We have \\begin{align*}\n(n-1) \\cdot n &\\cdot (n+1) \\cdot (n+2) \\cdot (n+3)\\\\\n&= (2-1) \\cdot 2 \\cdot (2+1) \\cdot (2+2) \\cdot (2+3) \\\\\n&= 1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5,\n\\end{align*} which is equal to $5!$, or $\\boxed{120}$.\n\nWe could also multiply the last expression out by hand: \\begin{align*}\n(1 \\cdot 2 \\cdot 3) \\cdot 4 \\cdot 5 &= 6 \\cdot 4 \\cdot 5 \\\\\n&= 6 \\cdot 20 \\\\\n&= 120 .\n\\end{align*}"
+}

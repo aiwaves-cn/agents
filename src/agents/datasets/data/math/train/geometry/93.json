@@ -1,0 +1,6 @@
+{
+    "problem": "A cylindrical glass is half full of lemonade. The ratio of lemon juice to water in the lemonade is 1:11. If the glass is 6 inches tall and has a diameter of 2 inches, what is the volume of lemon juice in the glass? Express your answer as a decimal to the nearest hundredth.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We can begin by calculating the volume of the liquid in the glass.  Since the glass is half full, the portion filled with liquid has height 3 inches.  The volume will be $\\pi r^2 h=\\pi\\cdot 1^2 \\cdot 3 = 3\\pi$.  Now, since the ratio of lemon juice to water is 1:11, the ratio of lemon juice to the liquid will be 1:(1+11) which is 1:12.  So, the volume of lemon juice in the glass is: $$3\\pi \\cdot \\frac{1}{12}=\\frac{\\pi}{4}\\approx .7854$$ So, the answer is $\\boxed{.79}$ to the nearest hundredth."
+}

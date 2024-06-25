@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $$\\sqrt{6+4\\sqrt2}+\\sqrt{6-4\\sqrt2}.$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $(\\sqrt2\\pm1)^2=2\\pm2\\sqrt2+1=3\\pm2\\sqrt2$, $$\\sqrt{6+4\\sqrt2}=\\sqrt{2(3+2\\sqrt2)}=\\sqrt2(\\sqrt2+1)=2+\\sqrt2.$$Similarly, $$\\sqrt{6-4\\sqrt2}=\\sqrt2(\\sqrt2-1)=2-\\sqrt2.$$Therefore, $$\\sqrt{6+4\\sqrt2}+\\sqrt{6-4\\sqrt2}=(2+\\sqrt2)+(2-\\sqrt2)=\\boxed{4}.$$"
+}

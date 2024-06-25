@@ -1,0 +1,6 @@
+{
+    "problem": "What is the base-10 integer 340 when expressed in base 7?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "If you notice that 340 is close to $7^3=343=1000_7$, then it makes the problem much easier. Since $343=1000_7$, that makes $342=666_7$, or the largest three-digit number in base 7. To get 340, we subtract 2, which means subtracting 2 from the digit in the $7^0$ place. That leaves us with $\\boxed{664_7}$.\n\nAlternatively, the largest power of 7 less than 340 is $7^2=49$, and the largest multiple of 49 less than 340 is $6\\cdot49=294$. That means there is a 6 in the $7^2$ place. We have $340-294=46$ left, which can be represented as $6\\cdot7^1+4\\cdot7^0$. So, we get $340=6\\cdot7^2+6\\cdot7^1+4\\cdot7^0=\\boxed{664_7}$."
+}

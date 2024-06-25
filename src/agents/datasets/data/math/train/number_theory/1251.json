@@ -1,0 +1,6 @@
+{
+    "problem": "The number $m$ is a three-digit positive integer and is the product of the three distinct prime factors $x$, $y$ and $10x+y$, where $x$ and $y$ are each less than 10. What is the largest possible value of $m$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If $10x+y$ is prime, then $y$ cannot be 2 or 5.  So if $x$ and $y$ are prime digits, then $y$ must be 3 or 7 and $x$ must be one of the other three prime digits.  Checking the six resulting cases, we find that the prime numbers of the form $10x+y$ where $x$ and $y$ are both prime digits are 23, 53, 73, and 37.  The values of $xy(10x+y)$ for these four numbers are 138, 795, 1533, and 777.  The largest of these values which is less than 1000 is $\\boxed{795}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(n)$ be the integer closest to $\\sqrt[4]{n}.$ Find $\\sum_{k=1}^{1995}\\frac 1{f(k)}.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have $f(n) = m$ if and only if \\[m - \\frac{1}{2} < \\sqrt[4]{n} < m + \\frac{1}{2},\\]or \\[\\left(m - \\frac{1}{2}\\right)^4 < n < \\left(m + \\frac{1}{2}\\right)^4.\\]Expanding the fourth powers, we get \\[m^4 - 2m^3 + \\frac{3}{2}m^2 - \\frac{1}{2}m + \\frac{1}{16} < n < m^4+ 2m^3 + \\frac{3}{2}m^2 + \\frac{1}{2}m + \\frac{1}{16}.\\]The leftmost and rightmost expressions are both non-integers, and their difference is $4m^3 + m$. Therefore, there are exactly $4m^3 + m$ values of $n$ that satisfy this inequality.\n\nFor each $m$, there are $4m^3 + m$ terms of the form $\\frac{1}{m}$ in the sum, so those terms contribute $(4m^3+m) \\cdot \\frac{1}{m} = 4m^2 + 1$ to the sum. Thus, from $m=1$ to $m=6$, we get $4(1+4+9+16+25+36) + 6 = 370$.\n\nThe remaining terms have $m=7$. Since $6.5^4 = 1785 \\frac{1}{16}$, these are the terms from $n=1786$ to $n=1995$, inclusive. There are $1995 - 1786 + 1 = 210$ such terms, so they contribute $210 \\cdot \\frac{1}{7} = 30$ to the sum. Therefore, the final answer is $370 + 30 = \\boxed{400}$."
+}

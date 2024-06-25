@@ -1,0 +1,6 @@
+{
+    "problem": "In isosceles triangle $\\triangle ABC$ we have $AB=AC=4$.  The altitude from $B$ meets $\\overline{AC}$ at $H$.  If $AH=3(HC)$ then determine $BC$.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "[asy]\nimport olympiad; import geometry; size(100); defaultpen(linewidth(0.8)); dotfactor=4;\ndraw((0,0)--(sqrt(8),0)--(sqrt(2),sqrt(14))--cycle);\ndot(\"$B$\",(0,0),W); dot(\"$A$\",(sqrt(2),sqrt(14)),N); dot(\"$C$\",(sqrt(8),0),E);\npair footB = foot((0,0),(sqrt(2),sqrt(14)),(sqrt(8),0));\ndraw((0,0)--footB);\ndot(\"$H$\",(footB),E);\ndraw(rightanglemark((sqrt(2),sqrt(14)),footB,(0,0),10));\n[/asy] Since $AC=4$ and $H$ divides $\\overline{AC}$ into two pieces for which $AH=3(HC)$ we deduce that $AH=3$ and $HC=1$.  We can now employ the Pythagorean Theorem in triangle $ABH$ to compute \\[ BH = \\sqrt{(AB)^2-(AH)^2} = \\sqrt{4^2-3^2} = \\sqrt{7}. \\] Finally, we use the Pythagorean Theorem in triangle $BHC$ to find that \\[ BC = \\sqrt{(BH)^2+(HC)^2} = \\sqrt{(\\sqrt{7})^2+1^2} = \\sqrt{8} = \\boxed{2\\sqrt{2}}. \\]"
+}

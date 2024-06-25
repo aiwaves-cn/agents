@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x) = x + 1$ and $g(x) = x^2 + 3$, what is the value of $f(g(2))$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We are asked to apply the function $f$ to the number $g(2)$.  First, we need to find $g(2)$.  We substitute $x=2$ into the expression given for $g$ to find that $g(2)=2^2+3=7$.  Then we substitute $x=7$ into the expression for $f$ to find $f(7)=7+1=\\boxed{8}$."
+}

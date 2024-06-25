@@ -1,0 +1,6 @@
+{
+    "problem": "Cheldelin Middle School has 12 doors to enter or leave the building. In how many ways is it possible to enter the building by one door and leave the building by a different door?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "You can enter the building through one of 12 different doors. Since only that door is eliminated from the doors for you to exit, there are 11 choices for the exit door. So the total number of ordered pairs of enter, exit doors is $12 \\cdot 11 = \\boxed{132}$."
+}

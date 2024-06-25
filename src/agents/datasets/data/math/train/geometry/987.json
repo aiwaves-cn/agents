@@ -1,0 +1,6 @@
+{
+    "problem": "$\\triangle ABC\\sim\\triangle DBE$, $BC=20\\text{ cm}.$ How many centimeters long is $DE$? Express your answer as a decimal to the nearest tenth. [asy]\ndraw((0,0)--(20,0)--(20,12)--cycle);\ndraw((13,0)--(13,7.8));\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$E$\",(13,0),S);\nlabel(\"$D$\",(13,7.8),NW);\nlabel(\"$A$\",(20,12),NE);\nlabel(\"$C$\",(20,0),SE);\nlabel(\"13\",(6.5,0),S);\nlabel(\"12\",(20,6),E);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "From our similarity, we have that: \\begin{align*}\n\\frac{DE}{AC} &= \\frac{BE}{BC} \\\\\nDE &= \\frac{BE \\cdot AC}{BC}\\\\\n&= \\frac{13\\text{ cm} \\cdot 12\\text{ cm}}{20\\text{ cm}} = \\boxed{7.8}\\text{ cm}.\n\\end{align*}"
+}

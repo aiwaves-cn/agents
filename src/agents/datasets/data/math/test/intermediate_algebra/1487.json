@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be quadratic with rational coefficients.  If $p(\\sqrt{7}) = 22$ and $p(\\sqrt{11}) = 30,$ then find $p(\\sqrt{17}).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $p(x) = ax^2 + bx + c.$  Then\n\\begin{align*}\n7a + b \\sqrt{7} + c &= 22, \\\\\n11a + b \\sqrt{11} + c &= 30.\n\\end{align*}Since $a,$ $b,$ and $c$ are rational, the only way that the equations above can hold is if $b = 0.$  Then\n\\begin{align*}\n7a + c &= 22, \\\\\n11a + c &= 30.\n\\end{align*}Solving this system, we find $a = 2$ and $c = 8.$\n\nThen $p(x) = 2x^2 + 8,$ so $p(\\sqrt{17}) = 2 \\cdot 17 + 8 = \\boxed{42}.$"
+}

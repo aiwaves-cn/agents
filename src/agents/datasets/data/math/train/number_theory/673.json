@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct prime factors does the sum of the positive divisors of $400$ have?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "First, we find what the sum of the divisors of $400$ is.\n\nThe prime factorization of $400$ is $2^4 \\cdot 5^2$. Therefore, the sum of the divisors is $(1+2+2^2+2^3+2^4)(1+5+5^2) = 31 \\cdot 31$. To see why the expression on the left-hand side gives the sum of the divisors of 400, note that if you distribute (without simplifying), you get 15 terms, each divisor of $2^4\\cdot 5^2$ appearing exactly once.\n\nSince $31$ is a prime number, the sum of the positive divisors of $400$ only has $\\boxed{1}$ prime factor."
+}

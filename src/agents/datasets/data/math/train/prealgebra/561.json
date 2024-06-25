@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\frac{1}{330} + \\frac{19}{30}$.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We see that the denominators have a common multiple of 330, so the expression becomes $\\frac{1}{330} + \\frac{11 \\cdot 19}{11 \\cdot 30} = \\frac{1}{330} + \\frac{209}{330} = \\frac{1+209}{330} = \\frac{210}{330}$. Factoring the numerator and denominator, we see that the fraction is $\\frac{2 \\cdot 3 \\cdot 5 \\cdot 7}{2 \\cdot 3 \\cdot 5 \\cdot 11}$. Thus, the numerator and denominator share common factors of 2, 3, and 5. Thus, cancelling, we find the answer is $\\frac{\\cancel{2} \\cdot \\cancel{3} \\cdot \\cancel{5} \\cdot 7}{\\cancel{2} \\cdot \\cancel{3} \\cdot \\cancel{5} \\cdot 11} = \\boxed{\\frac{7}{11}}.$"
+}

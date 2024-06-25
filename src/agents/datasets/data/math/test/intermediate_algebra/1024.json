@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[2 \\log_{10} x - \\log_x \\frac{1}{100}\\]for $x > 1.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\begin{align*}\n2 \\log_{10} x - \\log_x \\frac{1}{100} &= 2 \\log_{10} x + \\log_x 100 \\\\\n&= 2 \\log_{10} x + \\log_x 10^2 \\\\\n&= 2 \\log_{10} x + 2 \\log_x 10 \\\\\n&= 2 (\\log_{10} x + \\log_x 10) \\\\\n&= 2 \\left( \\log_{10} x + \\frac{1}{\\log_{10} x} \\right).\n\\end{align*}By AM-GM,\n\\[\\log_{10} x + \\frac{1}{\\log_{10} x} \\ge 2,\\]so $2 \\left( \\log_{10} x + \\frac{1}{\\log_{10} x} \\right) \\ge 4.$\n\nEquality occurs when $x = 10,$ so the minimum value is $\\boxed{4}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In quadrilateral $ABCD$, $\\angle B$ is a right angle, diagonal $\\overline{AC}$ is perpendicular to $\\overline{CD}$, $AB=18$, $BC=21$, and $CD=14$. Find the perimeter of $ABCD$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "From the problem statement, we construct the following diagram:\n[asy] pointpen = black; pathpen = black + linewidth(0.65); pair C=(0,0), D=(0,-14),A=(-(961-196)^.5,0),B=IP(circle(C,21),circle(A,18)); D(MP(\"A\",A,W)--MP(\"B\",B,N)--MP(\"C\",C,E)--MP(\"D\",D,E)--A--C); D(rightanglemark(A,C,D,40)); D(rightanglemark(A,B,C,40)); [/asy]\nUsing the Pythagorean Theorem:\n$(AD)^2 = (AC)^2 + (CD)^2$\n$(AC)^2 = (AB)^2 + (BC)^2$\nSubstituting $(AB)^2 + (BC)^2$ for $(AC)^2$:\n$(AD)^2 = (AB)^2 + (BC)^2 + (CD)^2$\nPlugging in the given information:\n$(AD)^2 = (18)^2 + (21)^2 + (14)^2$\n$(AD)^2 = 961$\n$(AD)= 31$\nSo the perimeter is $18+21+14+31=84$, and the answer is $\\boxed{84}$."
+}

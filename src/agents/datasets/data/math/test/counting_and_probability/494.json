@@ -1,0 +1,6 @@
+{
+    "problem": "I have four identical oranges. How many ways are there for me to divide these oranges into at most three groups?  (By definition, a group must have at least one orange.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "All the oranges can go in one group, or $3$ can go in one group and $1$ in another group, or $2$ can go in one group and $2$ in another group, or $2$ can go in one group and each of the other $2$ can be in a group by itself.\n\nAs a list, we have: \\begin{align*}\n&4 \\\\\n&3,1\\\\\n&2,2\\\\\n&2,1,1.\n\\end{align*} This gives a total of $\\boxed{4}$ possibilities."
+}

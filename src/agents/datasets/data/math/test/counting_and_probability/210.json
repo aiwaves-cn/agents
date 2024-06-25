@@ -1,0 +1,6 @@
+{
+    "problem": "In a math class of 30 students, 12 out of 15 girls are freshmen and 11 out of 15 boys are freshmen. What is the probability that in a randomly selected group of five students from the class, there will be two freshmen girls and three freshmen boys? Express your answer as a decimal to the nearest thousandth.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We can choose 2 freshmen girls and 3 freshman boys in $\\binom{12}{2}\\binom{11}{3} = 10890$ ways.  There are a total of $\\binom{30}{5} = 142506$ possible groups of 5 students we can choose.  Thus the probability of selecting a group of 5 students with 2 freshman girls and 3 freshmen boys is $\\frac{10890}{142506} \\approx \\boxed{0.076}$."
+}

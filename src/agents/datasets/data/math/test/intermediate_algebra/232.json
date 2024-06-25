@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of ordered pairs $(a,b)$ of integers such that $|a + bi| \\le 5.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The problem asks us to count the number of complex numbers that lie in or on the circle of radius 5 centered at the origin, with integer real and imaginary parts.\n\n[asy]\nunitsize(0.5 cm);\n\nint i, j;\n\ndraw((-5,0)--(5,0));\ndraw((0,-5)--(0,5));\ndraw(Circle((0,0),5));\n\nfor (i = -5; i <= 5; ++i) {\nfor (j = -5; j <= 5; ++j) {\n  if (i^2 + j^2 > 25) {dot((i,j));}\n  if (i^2 + j^2 <= 25) {dot((i,j),red);}\n}}\n[/asy]\n\nWe can count that there are 15 such complex numbers in the first quadrant (not including the axes).  Then there are 5 complex on the positive real axis, the negative real axis, the positive imaginary axis, and negative imaginary axis.  Finally, there is the origin itself, which gives us $4 \\cdot 15 + 4 \\cdot 5 + 1 = \\boxed{81}$ complex numbers."
+}

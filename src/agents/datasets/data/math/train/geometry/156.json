@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $\\cos Q = 0.4$ in the diagram below.  What is $QR$?\n\n\n\n[asy]\npair P,Q,R;\nP = (0,0);\nQ = (6,0);\nR = (0,6*tan(acos(0.4)));\ndraw(P--Q--R--P);\ndraw(rightanglemark(Q,P,R,18));\nlabel(\"$P$\",P,SW);\nlabel(\"$Q$\",Q,SE);\nlabel(\"$R$\",R,N);\nlabel(\"$12$\",Q/2,S);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $\\cos Q = 0.4$ and $\\cos Q = \\frac{QP}{QR}=\\frac{12}{QR}$, we have $\\frac{12}{QR} = 0.4$, so $QR = \\frac{12}{0.4} = \\boxed{30}$."
+}

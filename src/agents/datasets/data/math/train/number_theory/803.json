@@ -1,0 +1,6 @@
+{
+    "problem": "Nine stones are arranged in a straight line. They are counted from  left to right as $1,2,3, \\ldots, 9$, and then from right to left, so that the stone previously counted as 8 is counted as 10. The pattern is continued to the left until the stone previously counted as 1 is counted as 17. The pattern then reverses so that the stone originally counted as 2 is counted as 18, 3 as 19, and so on. The counting continues in this manner. Which of the original stones is counted as 99? Express your answer as a single digit which corresponds to the first digit assigned to that stone.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "First we note that 16 stones are enumerated before the pattern repeats.  Therefore, if the count enumerates a stone as $n$, then that stone is enumerated $k$ for every  \\[k\\equiv n\\pmod{16}\\] (though all but the end stones are represented by two residue classes in this way).\n\nSince $99\\equiv3\\pmod{16}$, stone number $\\boxed{3}$ is counted as 99."
+}

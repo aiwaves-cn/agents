@@ -1,0 +1,6 @@
+{
+    "problem": "Let $w_1, w_2, \\dots, w_n$ be complex numbers. A line $L$ in the complex plane is called a mean line for the points $w_1, w_2, \\dots, w_n$ if $L$ contains points (complex numbers) $z_1, z_2, \\dots, z_n$ such that\n\\[\\sum_{k = 1}^n (z_k - w_k) = 0.\\]For the numbers $w_1 = 32 + 170i$, $w_2 = -7 + 64i$, $w_3 = -9 +200i$, $w_4 = 1 + 27i$, and $w_5 = -14 + 43i$, there is a unique mean line with $y$-intercept $3$. Find the slope of this mean line.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $L$ be the given mean line. Then, we must have \\[\\sum_{k=1}^5 (z_k-w_k) = 0,\\]so \\[z_1+z_2+z_3+z_4+z_5=w_1+w_2+w_3+w_4+w_5=3+504i.\\]Since $L$ has $y$-intercept $3$, it passes through the complex number $3i$, so the points on $L$ can be described parametrically by $3i + zt$, where $z$ is a fixed complex number and $t$ is a real parameter. Let $z_k = 3i + zt_k$ for each $k$. Then \\[z_1 + z_2+z_3+z_4+z_5=15i+z(t_1+t_2+t_3+t_4+t_5) = 3+504i.\\]Setting $t=t_1+t_2+t_3+t_4+t_5$, we have \\[zt = 3+504i - 15i = 3+489i,\\]so $z = \\frac{3}{t} + \\frac{489}{t}i$. Thus the slope of $L$ is $\\frac{489/t}{3/t} = \\boxed{163}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of the squares of two positive integers is 90. The product of the two integers is 27. What is the sum of the two integers?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Call the two integers $x$ and $y$. We are given that $x^2 + y^2 = 90$ and that $xy = 27$. We want to find $x + y$. Note that $(x + y)^2 = x^2 + y^2 + 2xy = 90 + 2\\cdot 27 = 144$. Taking the square root of 144, we see that $x + y = \\boxed{12}$."
+}

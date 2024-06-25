@@ -1,0 +1,6 @@
+{
+    "problem": "A parametric graph is given by\n\\begin{align*}\nx &= \\cos t + \\frac{t}{2}, \\\\\ny &= \\sin t.\n\\end{align*}How many times does the graph intersect itself between $x = 1$ and $x = 40$?",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The portion of the path for $-\\frac{5 \\pi}{2} \\le t \\le \\frac{7 \\pi}{2}$ is shown below.  The corresponding value of $t$ is labelled for certain points.\n\n[asy]\nunitsize(1 cm);\n\npair moo (real t) {\n return (cos(t) + t/2, sin(t));\n}\n\nreal t;\npath foo = moo(-5/2*pi);\n\nfor (t = -5/2*pi; t <= 7/2*pi; t = t + 0.1) {\n  foo = foo--moo(t);\n}\n\ndraw(foo,red);\n\ndot(\"$-\\frac{5 \\pi}{2}$\", moo(-5/2*pi), S);\ndot(\"$-\\frac{3 \\pi}{2}$\", moo(-3/2*pi), N);\ndot(\"$-\\frac{\\pi}{2}$\", moo(-1/2*pi), S);\ndot(\"$\\frac{\\pi}{2}$\", moo(1/2*pi), N);\ndot(\"$\\frac{3 \\pi}{2}$\", moo(3/2*pi), S);\ndot(\"$\\frac{5 \\pi}{2}$\", moo(5/2*pi), N);\ndot(\"$\\frac{7 \\pi}{2}$\", moo(7/2*pi), S);\n[/asy]\n\nThus, the path \"repeats\" with a period of $2 \\pi$ (in $t$), and the path intersects itself once each period.  The $x$-coordinates of the points of intersection are of the form $\\frac{(4n + 1) \\pi}{4},$ where $n$ is an integer.  We note that\n\\[1 \\le \\frac{(4n + 1) \\pi}{4} \\le 40\\]for $n = 1,$ $2,$ $\\dots,$ $12,$ giving us $\\boxed{12}$ points of intersection."
+}

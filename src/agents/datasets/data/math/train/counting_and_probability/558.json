@@ -1,0 +1,6 @@
+{
+    "problem": "A palindrome is an integer that reads the same forward and backward, such as 3663. What percent of the palindromes between 100 and 500 contain at least one 5?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since none of the palindromes between 100 and 500 begin with a 5, the only place a 5 can appear is in the tens digit.  Therefore, there are 4 palindromes between 100 and 500 with a 5: 151, 252, 353, and 454.  To count the total number of palindromes, we observe that there are 4 choices to make for the first/last digit and 10 choices to make for the middle digit.  Therefore, the percentage of palindromes that contain 5 as a digit is $\\frac{4}{4\\cdot 10}=\\boxed{10\\%}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "At the mall's food court, Crystal wants to buy a meal consisting of one entree, one drink and one dessert. The table below lists Crystal's favorite foods in the food court. How many distinct possible meals can she buy from these options?\n\n\\begin{tabular}{ |c | c | c | }\n\\hline \\textbf{Entrees} & \\textbf{Drinks}&\\textbf{Desserts} \\\\ \\hline\nPizza & Lemonade & Frozen Yogurt \\\\ \\hline\nChicken Teriyaki & Root Beer & Chocolate Chip Cookie \\\\ \\hline\nCorn Dog& & \\\\ \\hline\nFish and Chips& & \\\\ \\hline\n\\end{tabular}",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Crystal has $4$ ways to select the entree. Once she has done that, there are $2$ drinks that can go with each entree for a total of $4\\cdot2=8$ ways to select the entree and the drink. For each of the $8$ ways of selecting the first two items, there are $2$ ways to select the dessert for a final answer of $8\\cdot2=\\boxed{16}$ ways to choose the whole meal."
+}

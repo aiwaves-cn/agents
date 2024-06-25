@@ -1,0 +1,6 @@
+{
+    "problem": "If $r$, $s$, and $t$ are constants such that $\\frac{x^{r-2}\\cdot y^{2s}\\cdot z^{3t+1}}{x^{2r}\\cdot y^{s-4}\\cdot z^{2t-3}}=xyz$ for all non-zero $x$, $y$, and $z$, then solve for $r^s\\cdot t$. Express your answer as a fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we should solve for $r$, $s$, and $t$.  From what is given, we know that $\\frac{x^{r-2}}{x^{2r}}=x$, $\\frac{y^{2s}}{y^{s-4}}=y$, and $\\frac{z^{3t+1}}{z^{2t-3}}=z$. Solving for r, s, and t we have: \\begin{align*}\nr-2=2r+1\\Rightarrow r=-3\\\\\n2s=s-4+1\\Rightarrow s=-3\\\\\n3t+1=2t-3+1\\Rightarrow t=-3\\\\\n\\end{align*}Solving for $r^s\\cdot t$, we have $(-3)^{-3}\\cdot {-3}=\\frac{-1}{27}\\cdot {-3}=\\boxed{\\frac{1}{9}}$."
+}

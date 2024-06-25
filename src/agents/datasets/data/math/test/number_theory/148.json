@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $b$ and $c$ are positive integers.\n\nWhen $b^2$ is written in base $c$, the result is $121_c$. When $c^2$ is written in base $b$, the result is $71_b$.\n\nWhat is $b+c$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We have \\begin{align*}\nb^2 &= 121_c \\\\\n&= c^2 + 2c + 1 \\\\\n&= (c+1)^2,\n\\end{align*}so $b=c+1$ (we don't consider the \"solution\" $b=-(c+1)$ since $b$ and $c$ are both required to be positive).\n\nWe also have \\begin{align*}\nc^2 &= 71_b \\\\\n&= 7b + 1.\n\\end{align*}We also know that $c=b-1$, so $c^2=(b-1)^2=b^2-2b+1$. Thus $$b^2-2b+1 = 7b+1.$$Adding $2b-1$ to both sides, we have $$b^2=9b.$$The only positive solution is $b=9$, which gives $c=8$ and thus $b+c=\\boxed{17}$."
+}

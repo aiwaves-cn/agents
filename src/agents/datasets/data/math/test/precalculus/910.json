@@ -1,0 +1,6 @@
+{
+    "problem": "Let $t$ be the smallest positive real number for which $\\cos t = \\cos t^\\circ.$  (We are taking the cosine of $t$ radians on the left and of $t$ degrees on the right.)  Determine $\\lfloor t \\rfloor.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\cos t = \\cos \\left( \\frac{180t}{\\pi} \\right)^\\circ.\\]If the cosines of two angles (in degrees) are equal, either their difference is a multiple of $360^\\circ,$ or their sum is a multiple of $360^\\circ.$  Thus, $t + \\frac{180t}{\\pi} = 360^\\circ k$ for $t - \\frac{180t}{\\pi} = 360^\\circ k.$\n\nFrom the first equation,\n\\[t = \\frac{360^\\circ \\pi k}{\\pi + 180}.\\]The smallest positive real number of this form is $\\frac{360 \\pi}{\\pi + 180}.$\n\nFrom the second equation,\n\\[t = \\frac{360^\\circ \\pi k}{\\pi - 180}.\\]The smallest positive real number of this form is $\\frac{360 \\pi}{180 - \\pi}.$\n\nTherefore, $t = \\frac{360 \\pi}{\\pi + 180} \\approx 6.175,$ so $\\lfloor t \\rfloor = \\boxed{6}.$"
+}

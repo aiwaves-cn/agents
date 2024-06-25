@@ -1,0 +1,6 @@
+{
+    "problem": "If $e^{i \\alpha} = \\frac{3}{5}  +\\frac{4}{5} i$ and $e^{i \\beta} = -\\frac{12}{13} + \\frac{5}{13} i,$ then find $\\cos (\\alpha - \\beta).$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Dividing the given equations, we obtain\n\\begin{align*}\ne^{i (\\alpha - \\beta)} &= \\frac{\\frac{3}{5}  +\\frac{4}{5} i}{-\\frac{12}{13} + \\frac{5}{13} i} \\\\\n&= \\frac{(\\frac{3}{5}  +\\frac{4}{5} i)(-\\frac{12}{13} - \\frac{5}{13} i)}{(-\\frac{12}{13} + \\frac{5}{13} i)(-\\frac{12}{13} - \\frac{5}{13} i)} \\\\\n&= -\\frac{16}{65} - \\frac{63}{65} i.\n\\end{align*}But $e^{i (\\alpha - \\beta)} = \\cos (\\alpha - \\beta) + i \\sin (\\alpha - \\beta),$ so $\\cos (\\alpha - \\beta) = \\boxed{-\\frac{16}{65}}.$"
+}

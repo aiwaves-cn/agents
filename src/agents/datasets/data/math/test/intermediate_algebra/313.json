@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $f(x) = -x^2+3x+4$ and $g(x) = -2x^3+9x^2-x-12$. Every root of $f(x)$ is also a root of $g(x)$. What is the third root of $g(x)$ (that is not a root of $f(x)$)?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since the roots of $f(x)$ are roots of $g(x)$, and $\\deg f < \\deg g$, we guess that $f(x)$ is a factor of $g(x)$. In other words, we guess that we can write $g(x) = f(x)q(x)$ for some polynomial $q(x)$. If that is the case, then any root of $f(x)$ will also be a root of $g(x)$.\n\nDividing $g(x)$ by $f(x)$ gives us\n$$-2x^3+9x^2-x-12=(-x^2+3x+4)(2x-3)$$so we can see that $x = \\boxed{\\frac{3}{2}}$ is the third root of $g(x)$.\n\nIt is also easy to verify that $-1$ and $4$ are roots of both $f(x)$ and $g(x)$ (the roots can be found by factoring $f(x)$)."
+}

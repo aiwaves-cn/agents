@@ -1,0 +1,6 @@
+{
+    "problem": "There exist real numbers $t$ and $s$ such that\n\\[\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} + t \\begin{pmatrix} 7 \\\\ -5 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} + s \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}.\\]Enter the ordered pair $(t,s).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We see that\n\\[\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} + t \\begin{pmatrix} 7 \\\\ -5 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} + \\begin{pmatrix} 7t \\\\ -5t \\end{pmatrix} = \\begin{pmatrix} 7t + 2 \\\\ -5t \\end{pmatrix}\\]and\n\\[\\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} + s \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} + \\begin{pmatrix} -2s \\\\ 3s \\end{pmatrix} = \\begin{pmatrix} 1 - 2s \\\\ -1 + 3s \\end{pmatrix}.\\]Thus, we want $s$ and $t$ to satisfy the system of equations\n\\begin{align*}\n7t + 2 &= 1 - 2s, \\\\\n-5t &= -1 + 3s.\n\\end{align*}Solving, we find $(t,s) = \\boxed{\\left( -\\frac{5}{11}, \\frac{12}{11} \\right)}.$"
+}

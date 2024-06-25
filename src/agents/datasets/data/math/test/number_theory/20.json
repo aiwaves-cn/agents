@@ -1,0 +1,6 @@
+{
+    "problem": "What is $2121_3 - 212_3?$ Express your answer in base 3.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can line up the numbers and subtract just as we do in base 10.  For example, when we borrow from the $3^1$s place, the digit 1 in the units place becomes $4$, while the digit in the $3^1$s place decreases by 1. Continuing in this way, we find $$\\begin{array}{c@{}c@{}c@{}c@{}c}\n& \\cancelto{1}{2} & \\cancelto{4}{1} & \\cancelto{1}{2} & \\cancelto{4}{1}_3 \\\\\n-& & 2 & 1 & 2_3 \\\\\n\\cline{2-5}\n& 1 & 2 & 0 & 2_3 \\\\\n\\end{array}$$So the difference is $\\boxed{1202_3}$."
+}

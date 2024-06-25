@@ -1,0 +1,6 @@
+{
+    "problem": "Find the projection of the vector $\\begin{pmatrix} 4 \\\\ -4 \\\\ -1 \\end{pmatrix}$ onto the line\n\\[2x = -3y = z.\\]",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We can write the equation of the line as\n\\[\\frac{x}{3} = \\frac{y}{-2} = \\frac{z}{6}.\\]Thus, the direction vector of the line is $\\begin{pmatrix} 3 \\\\ -2 \\\\ 6 \\end{pmatrix}.$  The projection of $\\begin{pmatrix} 4 \\\\ -4 \\\\ -1 \\end{pmatrix}$ onto the line is then\n\\[\\frac{\\begin{pmatrix} 4 \\\\ -4 \\\\ -1 \\end{pmatrix} \\cdot \\begin{pmatrix} 3 \\\\ -2 \\\\ 6 \\end{pmatrix}}{\\begin{pmatrix} 3 \\\\ -2 \\\\ 6 \\end{pmatrix} \\cdot \\begin{pmatrix} 3 \\\\ -2 \\\\ 6 \\end{pmatrix}} \\begin{pmatrix} 3 \\\\ -2 \\\\ 6 \\end{pmatrix} = \\frac{14}{49} \\begin{pmatrix} 3 \\\\ -2 \\\\ 6 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 6/7 \\\\ -4/7 \\\\ 12/7 \\end{pmatrix}}.\\]"
+}

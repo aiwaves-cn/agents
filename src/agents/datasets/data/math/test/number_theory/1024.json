@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer $n$ such that, out of the $n$ unit fractions $\\frac{1}{k}$ where $1 \\le k \\le n$, exactly half of the fractions give a terminating decimal?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If $\\frac{1}{k}$ has a terminating decimal representation, then $k$ can be written in the form $2^a5^b$ for nonnegative integers $a$ and $b$. To see this, note that by multiplying and dividing by a sufficiently large power of 10, we can write a terminating decimal as $r/10^s$ for some integers $r$ and $s$. Since the denominator's prime factorization contains only twos and fives, it may contain only twos and fives after simplification as well. Therefore, we start by listing the first several integers which are divisible by no primes other than 2 and 5. The first seven such values of $k$ are 1, 2, 4, 5, 8, 10, and 16.  Seeing that the list contains six elements preceding the large gap between 10 and 16, we guess that $2\\times 6=12$ is the least positive integer up to which half of the positive integers give terminating decimals. Checking that the proportion is above 1/2 for $n=10, 8, 6, 4,$ and $2$, we find that $\\boxed{12}$ is indeed the least integer satisfying the given condition."
+}

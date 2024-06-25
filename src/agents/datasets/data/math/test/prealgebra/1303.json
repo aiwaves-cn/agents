@@ -1,0 +1,6 @@
+{
+    "problem": "A referendum failed by a vote of 36 No's and 24 Yes's. To make this pie chart of this result, what is the lesser measure in degrees of angle $ACB$?\n\n[asy]\nimport graph;\ndraw(Circle((0,0),20));\ndraw((0,0)--(0,20));\ndraw((0,0)--(12,-16));\nlabel(\"$A$\",(0,20),N);\nlabel(\"$B$\",(12,-16),SE);\nlabel(\"$C$\",(0,0),W);\nlabel(\"YES\",(10,13),S);\nlabel(\"NO\",(-10,13),S);\nlabel(\"36\",(-10,10),S);\nlabel(\"24\",(10,10),S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The ratio of the number Yes's to the number of votes is $24/(24+36)=2/5$.  Therefore, angle $ACB$ is $\\frac{2}{5}$ of 360 degrees, which is $\\boxed{144}$ degrees."
+}

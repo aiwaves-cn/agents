@@ -1,0 +1,6 @@
+{
+    "problem": "The points $(0,0)\\,$, $(a,11)\\,$, and $(b,37)\\,$ are the vertices of an equilateral triangle. Find the value of $ab\\,$.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Identify the vertices of the triangle with $a + 11i,$ $b + 37i,$ and $0.$\n\n[asy]\nunitsize(0.1 cm);\n\npair A, B, O;\n\nA = (21*sqrt(3),11);\nB = (5*sqrt(3),37);\nO = (0,0);\n\ndraw(A--B--O--cycle);\ndraw((-5,0)--(40,0));\ndraw((0,-5)--(0,40));\n\nlabel(\"$a + 11i$\", A, E);\nlabel(\"$b + 37i$\", B, N);\nlabel(\"$O$\", O, SW);\n[/asy]\n\nThen we can obtain $b + 37i$ by rotating $a + 11i$ about the origin by $60^\\circ$ counter-clockwise, so\n\\begin{align*}\nb + 37i &= (a + 11i) \\cdot \\operatorname{cis} 60^\\circ \\\\\n&= (a + 11i) \\cdot \\frac{1 + i \\sqrt{3}}{2} \\\\\n&= \\left( \\frac{a - 11 \\sqrt{3}}{2} \\right) + i \\left( \\frac{11 + a \\sqrt{3}}{2} \\right).\n\\end{align*}Hence, $2b = a - 11 \\sqrt{3}$ and $11 + a \\sqrt{3} = 74.$  Solving this system, we find $a = 21 \\sqrt{3}$ and $b = 5 \\sqrt{3},$ so $ab = \\boxed{315}.$"
+}

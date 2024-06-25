@@ -1,0 +1,6 @@
+{
+    "problem": "The expression $\\cos x + \\cos 3x + \\cos 7x + \\cos 9x$ can be written in the equivalent form\n\\[a \\cos bx \\cos cx \\cos dx\\]for some positive integers $a,$ $b,$ $c,$ and $d.$  Find $a + b + c + d.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By sum-to-product,\n\\[\\cos x + \\cos 9x = 2 \\cos 5x \\cos 4x\\]and\n\\[\\cos 3x + \\cos 7x = 2 \\cos 5x \\cos 2x.\\]Then\n\\begin{align*}\n\\cos x + \\cos 3x + \\cos 7x + \\cos 9x &= 2 \\cos 5x \\cos 4x + 2 \\cos 5x \\cos 2x \\\\\n&= 2 \\cos 5x (\\cos 2x + \\cos 4x).\n\\end{align*}Again by sum-to-product,\n\\[2 \\cos 5x (\\cos 2x + \\cos 4x) = 4 \\cos 5x \\cos 3x \\cos x,\\]so $a + b + c + d = 4 + 1 + 3 + 5 = \\boxed{13}.$"
+}

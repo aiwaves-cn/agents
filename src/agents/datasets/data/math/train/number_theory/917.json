@@ -1,0 +1,6 @@
+{
+    "problem": "Find $2^{-1} \\pmod{185}$, as a residue modulo 185.  (Give an answer between 0 and 184, inclusive.)",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since $2 \\cdot 93 \\equiv 186 \\equiv 1 \\pmod{185}$, $2^{-1} \\equiv \\boxed{93} \\pmod{185}$."
+}

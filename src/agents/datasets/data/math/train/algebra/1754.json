@@ -1,0 +1,6 @@
+{
+    "problem": "If $a$ is a constant such that $4x^2 - 12x + a$ is the square of a binomial, then what is $a$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "If $4x^2 - 12x + a$ is the square of a binomial, then the binomial has the form $2x+b$ for some number $b$, since $(2x)^2 = 4x^2$.  So, we compare $(2x+b)^2$ to $4x^2 - 12x + a$. Expanding $(2x+b)^2$ gives \\[(2x+b)^2 = 4x^2 + 4bx + b^2.\\]Equating the linear term of this to the linear term of $4x^2 - 12x+a$, we have $4bx=-12x$, so $b=-3$.  Thus, $a=b^2 = \\boxed{9}$."
+}

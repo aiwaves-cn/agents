@@ -1,0 +1,6 @@
+{
+    "problem": "A $180^\\circ$ rotation around the origin in the counter-clockwise direction is applied to $-6 - 3i.$  What is the resulting complex number?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "A $180^\\circ$ rotation in the counter-clockwise direction corresponds to multiplication by $\\operatorname{cis} 180^\\circ = -1.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A = (-6,-3), B = (6,3);\n\ndraw((-8,0)--(8,0));\ndraw((0,-4)--(0,4));\ndraw((0,0)--A,dashed);\ndraw((0,0)--B,dashed);\n\ndot(\"$-6 - 3i$\", A, SW);\ndot(\"$6 + 3i$\", B,  NE);\n[/asy]\n\nHence, the image of $-6 - 3i$ is $(-1)(-6 - 3i) = \\boxed{6 + 3i}.$"
+}
