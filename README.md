@@ -1,7 +1,7 @@
 <div align="center">
 <img src='./assets/agents-logo.png'  width=300px>
 
-## <p align="center">Symbolic Learning Enables Self-Evolving Agents</p>
+## <p align="center">Agents 2.0: Symbolic Learning Enables Self-Evolving Agents</p>
 
 <p align="center">
 <a href="https://oe-heart.github.io/Agents2.0/">[🤖Project]</a>
