@@ -23,7 +23,7 @@
 
 
 ## 🔔News
-- [2024-06-25] We release new agents2.0, supporting for agent evaluation and optimazation.
+- [2024-06-25] We release Agents 2.0, a major update to the original library, adding support for agent learning and evaluation.
 ---
 
 ## 🌟Overview
