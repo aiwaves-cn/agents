@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of two positive integers $a$ and $b$ is 1001.  What is the largest possible value of $\\gcd(a,b)$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that $\\gcd(a,b)$ divides both $a$ and $b$, so $\\gcd(a,b)$ must also divide $a + b = 1001$.  Clearly, $\\gcd(a,b)$ cannot be equal to 1001 (because both $a$ and $b$ must be less than 1001).  The next-largest divisor of 1001 is 143.  If $a = 143$ and $b = 1001 - 143 = 858$, then $\\gcd(a,b) = \\gcd(143,858) = 143$.  Therefore, the largest possible value of $\\gcd(a,b)$ is $\\boxed{143}$."
-}

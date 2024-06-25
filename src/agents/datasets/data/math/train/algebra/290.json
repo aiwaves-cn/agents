@@ -1,6 +1,0 @@
-{
-    "problem": "Find the greatest value of $b$ such that $-b^2+7b-10 \\ge 0$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We factor the quadratic, getting $(b-5)(2-b) \\ge 0$. The expression is equal to $0$ when $b=5 \\text{ or } 2$.  When $b \\le 2$ or $b \\ge 5$, the quadratic is negative. When $2 \\le b \\le 5$, the quadratic is non-negative. Therefore, the greatest value of $b$ for which $(b-5)(2-b)\\ge 0$ is $b=\\boxed{5}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find $x.$\n\n[asy]\nunitsize(0.7 cm);\n\npair A, B, C, D, O;\n\nO = (0,0);\nA = 4*dir(160);\nB = 5*dir(160 + 180);\nC = 8*dir(20);\nD = 4*dir(20 + 180);\n\ndraw(A--B);\ndraw(C--D);\ndraw(A--C);\ndraw(B--D);\n\nlabel(\"$4$\", (A + O)/2, SW);\nlabel(\"$10$\", (C + O)/2, SE);\nlabel(\"$4$\", (D + O)/2, NW);\nlabel(\"$5$\", (B + O)/2, NE);\nlabel(\"$8$\", (B + D)/2, S);\nlabel(\"$x$\", (A + C)/2, N);\nlabel(\"$A$\", A, W);\nlabel(\"$B$\", B, E);\nlabel(\"$C$\", C, E);\nlabel(\"$D$\", D, W);\nlabel(\"$O$\", O, N);\n[/asy]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\theta = \\angle AOC = \\angle BOD.$  Then by the Law of Cosines on triangle $BOD,$\n\\[\\cos \\theta = \\frac{4^2 + 5^2 - 8^2}{2 \\cdot 4 \\cdot 5} = -\\frac{23}{40}.\\]Then by the Law of Cosines on triangle $AOC,$\n\\begin{align*}\nx^2 &= 4^2 + 10^2 - 2 \\cdot 4 \\cdot 10 \\cos \\theta \\\\\n&= 4^2 + 10^2 - 2 \\cdot 4 \\cdot 10 \\cdot \\left( -\\frac{23}{40} \\right) \\\\\n&= 162,\n\\end{align*}so $x = \\sqrt{162} = \\boxed{9 \\sqrt{2}}.$"
-}

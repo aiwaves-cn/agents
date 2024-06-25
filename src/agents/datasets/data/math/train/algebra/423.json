@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $(576)^\\frac{1}{4}(216)^\\frac{1}{2}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Simplify the two factors first.  Factor $2^4$ from $576$ to get $36$, and since $36=6^2$, the fourth root of $576$ is $(2^\\frac44)(6^\\frac24)=2\\sqrt{6}$.  Because $6^2$ evenly divides $216$, the square root of $216$ is $(6^\\frac22)(6^\\frac12)=6\\sqrt{6}$.  Multiply those two quantities together to obtain $\\boxed{72}$ as an answer."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is $\\dbinom{n}{0}$ for any positive integer $n$?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "By definition $0!=1$. Thus, $\\dbinom{n}{0}=\\dfrac{n!}{0!n!}=\\boxed{1}$.  Also, the only way to choose 0 objects out of $n$ is not to choose any of them, so $\\binom{n}{0} = \\boxed{1}$."
-}

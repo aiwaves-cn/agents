@@ -1,6 +1,0 @@
-{
-    "problem": "The parabola with equation $y=ax^2+bx+c$ is graphed below:\n\n[asy]\nxaxis(-3,7);\n\nyaxis(-5,32);\n\nreal g(real x)\n\n{\n\nreturn 4(x-2)^2-4;\n}\n\ndraw(graph(g,-1,5));\ndot((2,-4));\nlabel(\"Vertex: $(2,-4)$\", (2,-4), SE);\ndot((4,12));\nlabel(\"$(4,12)$\", (4,12), E);\n[/asy]\n\nThe zeros of the quadratic $ax^2 + bx + c$ are at $x=m$ and $x=n$, where $m>n$. What is $m-n$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The vertex form of a parabolic equation is $y=a(x-h)^2+k$. Since we are given that the vertex is at $(2,-4)$, we know that $h=2$ and $k=-4$. Plugging that into our equation gives $y=a(x-2)^2-4$. Now, substituting the other given point $(4,12)$ into the equation to solve for $a$, we have  \\begin{align*}\n12&=a(4-2)^2-4\\\\\n16&=a(2)^2\\\\\n16&=4a\\\\\n4&=a\n\\end{align*} So the equation for the graphed parabola is $y=4(x-2)^2-4$. The zeros of the quadratic occur when $y=0$, so plugging that value into the equation to solve for $x$, we have $0=4(x-2)^2-4 \\Rightarrow (x-2)^2=1$. Taking the square root of both sides yields $x-2=\\pm 1$, so $x=3$ or $x=1$. Thus, $m=3$ and $n=1$, so $m-n=3-1=\\boxed{2}$."
-}

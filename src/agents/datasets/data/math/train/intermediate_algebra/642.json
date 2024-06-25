@@ -1,6 +1,0 @@
-{
-    "problem": "The line $y = 2x + c$ is tangent to the parabola $y^2 = 8x.$  Find $c.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Rearranging $y = 2x + c$ gives $2x = y - c.$  Substituting into $y^2 = 8x,$ we get\n\\[y^2 = 4(y - c) = 4y - 4c,\\]or $y^2 - 4y + 4c = 0.$  Since we have a tangent, this quadratic will have a double root.  In other words, its discriminant will be 0.  Hence, $(-4)^2 - 4(4c) = 16 - 16c = 0,$ which means $c = \\boxed{1}.$"
-}

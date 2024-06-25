@@ -1,6 +1,0 @@
-{
-    "problem": "Your friend has an egg collection comprising at least $200$ eggs. He wants to store them in dozen-egg containers. After filling as many containers as possible, the last container had $1$ egg left over. He then decided to store his eggs in customized baker-dozen-egg containers, where each container can hold $13$ eggs. It turns out that, after filling as many of these containers as possible, he still has $1$ egg left over. What is the minimum number of eggs that your friend could have?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We want the smallest integer $x$ such that $x \\ge 200$ and $x$ gives a remainder of $1$ when divided by both $12$ and $13$. We can write $x = 12 \\cdot 13n + 1 = 156n+1$, so now we need to find a sufficiently large value of $n$ such that $x \\ge 200$. If $n = 1$, $x = 157$, but when $n = 2$, $x = 313$. Therefore, your friend has $\\boxed{313}$ eggs."
-}

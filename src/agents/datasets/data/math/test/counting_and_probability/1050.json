@@ -1,6 +1,0 @@
-{
-    "problem": "Five balls are numbered with the integers 1 through 5 and placed in a jar. Three are drawn without replacement. What is the probability that the sum of the three integers on the balls is odd? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The sum of the three integers on the drawn balls is 15 minus the sum of the integers on the two balls that were left behind.  Therefore, we are looking for the probability that the two balls that were left behind sum to an even number.  There are $\\binom{5}{2}$ ways to choose these two balls.  Their sum is even only if they are both even or both odd.  The probability they are both even is $\\frac{1}{10}$ and the probability that they are both odd is $\\frac{3}{10}$.  In total, the probability that their sum is even is $\\frac{1}{10}+\\frac{3}{10}=\\boxed{\\frac{2}{5}}$."
-}

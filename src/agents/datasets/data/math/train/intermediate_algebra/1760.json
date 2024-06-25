@@ -1,6 +1,0 @@
-{
-    "problem": "For the ellipse shown below, find the distance between the foci.\n\n[asy]\nunitsize(0.3 cm);\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(shift((1,1))*xscale(2)*yscale(6)*Circle((0,0),1),red);\n\ndot((1,1));\n[/asy]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We see that the semi-major axis is $a = 6,$ and the semi-minor axis is $b = 2,$ so $c = \\sqrt{a^2 - b^2} = 4 \\sqrt{2}.$  Hence, the distance between the foci is $2c = \\boxed{8 \\sqrt{2}}.$"
-}

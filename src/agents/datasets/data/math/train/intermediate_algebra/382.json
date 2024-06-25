@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r$, $s$, and $t$ be solutions of the equation $x^3-5x^2+6x=9$.\n\nCompute $\\frac{rs}t + \\frac{st}r + \\frac{tr}s$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The cubic equation can be rewritten as $x^3-5x^2+6x-9=0$. First, we list the relations that Vieta's formulas give us:\n\\begin{align*}\n-(r+s+t) &= -5,\\quad(\\clubsuit) \\\\\nrs+rt+st &= 6,\\phantom{-}\\quad(\\textcolor{red}{\\diamondsuit}) \\\\\n-rst &= -9.\\,\\quad(\\textcolor{red}{\\heartsuit})\n\\end{align*}We wish to compute\n$$\\frac{rs}t + \\frac{rt}s + \\frac{st}r = \\frac{r^2s^2+r^2t^2+s^2t^2}{rst}.$$The denominator is $rst=9$. To obtain the numerator, we square equation $(\\textcolor{red}{\\diamondsuit})$ to get\n$$r^2s^2 + r^2t^2 + s^2t^2 + 2r^2st + 2rs^2t + 2rst^2 = 36.$$We can rewrite this as\n$$r^2s^2 + r^2t^2 + s^2t^2 + 2rst(r+s+t) = 36.$$From equations $(\\clubsuit)$ and $(\\textcolor{red}{\\heartsuit})$, we have\n$$2rst(r+s+t) = 2\\cdot 9\\cdot 5 = 90,$$so\n$$r^2s^2 + r^2t^2 + s^2t^2 = 36 - 90 = -54.$$Finally, we have\n$$\\frac{rs}t + \\frac{rt}s + \\frac{st}r = \\frac{r^2s^2 + r^2t^2 + s^2t^2}{rst} = \\frac{-54}{9} = \\boxed{-6}.$$"
-}

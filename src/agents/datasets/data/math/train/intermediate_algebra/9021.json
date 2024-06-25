@@ -1,6 +1,0 @@
-{
-    "problem": "Let\\[S=\\sqrt{1+\\dfrac1{1^2}+\\dfrac1{2^2}}+\\sqrt{1+\\dfrac1{2^2}+\\dfrac1{3^2}}+\\cdots+\\sqrt{1+\\dfrac1{2007^2}+\\dfrac1{2008^2}}.\\]Compute $\\lfloor S^2\\rfloor$.\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "With summation notation, $S = \\sum_{i=1}^{2007} \\sqrt{1 + \\tfrac{1}{i^2} + \\tfrac{1}{(i+1)^2}}$. By using a common denominator and simplifying, we have\n\\begin{align*} S &= \\sum_{i=1}^{2007} \\sqrt{ \\frac{i^2 (i^2 + 2i + 1) + i^2 + 2i + 1 + i^2}{i^2 (i+1)^2} } \\\\ &= \\sum_{i=1}^{2007} \\sqrt{ \\frac{i^4 + 2i^3 + 3i^2 + 2i + 1}{i^2 (i+1)^2} } \\\\ &= \\sum_{i=1}^{2007} \\sqrt{ \\frac{(i^2 + i + 1)^2}{i^2 (i+1)^2} } \\\\ &= \\sum_{i=1}^{2007} \\frac{i^2 + i + 1}{i^2 + i} \\\\ &= \\sum_{i=1}^{2007} (1 + \\frac{1}{i(i+1)}) \\\\ &= \\sum_{i=1}^{2007} (1 + \\frac{1}{i} - \\frac{1}{i+1}) \\end{align*}\nNotice that part of the terms telescope, making calculation simpler. Calculation results in $S = 2007 + 1 - \\tfrac{1}{2008}$. Thus, $S^2 = (2008 - \\tfrac{1}{2008})^2 = 4032064 - 2 + (\\tfrac{1}{2008})^2$. Since $0 < (\\tfrac{1}{2008})^2 < 1$, we conclude that $\\lfloor S^2\\rfloor = \\boxed{4032062}$."
-}

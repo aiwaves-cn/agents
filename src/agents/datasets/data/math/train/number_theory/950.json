@@ -1,6 +1,0 @@
-{
-    "problem": "The greatest common divisor of two integers is $(x+2)$ and their least common multiple is $x(x+2)$, where $x$ is a positive integer. If one of the integers is 24, what is the smallest possible value of the other one?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We know that $\\gcd(m,n) \\cdot \\mathop{\\text{lcm}}[m,n] = mn$ for all positive integers $m$ and $n$.  Hence, in this case, the other number is \\[\\frac{(x + 2) \\cdot x(x + 2)}{24} = \\frac{x(x + 2)^2}{24}.\\]To minimize this number, we minimize $x$.\n\nThis expression is not an integer for $x =$ 1, 2, or 3, but when $x = 4$, this expression is $4 \\cdot 6^2/24 = 6$.\n\nNote that that the greatest common divisor of 6 and 24 is 6, and $x + 2 = 4 + 2 = 6$.  The least common multiple is 24, and $x(x + 2) = 4 \\cdot (4 + 2) = 24$, so $x = 4$ is a possible value.  Therefore, the smallest possible value for the other number is $\\boxed{6}$."
-}

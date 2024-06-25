@@ -1,6 +1,0 @@
-{
-    "problem": "The diameter of a circle is 16. By what number must the radius be decreased in order to decrease the area of the circle by $48\\pi$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "If the diameter of the circle is $16$, then its radius is $8$. The area of this circle is then $\\pi r^2 = \\pi (8^2) = 64 \\pi$. If we want the area of the new circle to be $48 \\pi$ less than the area of this one, then the new circle must have an area of $64 \\pi - 48 \\pi = 16 \\pi$. Now that we know the area of this circle, we can find its radius $R$ by setting $\\pi R^2$ equal to $16 \\pi$, so we have that $\\pi R^2 = 16 \\pi$ and $R = 4$.\n\nThe radius of the first circle was $8$ and the new radius is $4$, so the radius was decreased by $8-4=\\boxed{4}$."
-}

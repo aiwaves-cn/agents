@@ -1,6 +1,0 @@
-{
-    "problem": "An amoeba is placed in a puddle one day, and on that same day it splits into two amoebas.  The next day, each new amoeba splits into two new amoebas, and so on, so that each day every living amoeba splits into two new amoebas. After one week, how many amoebas are in the puddle? (Assume the puddle has no amoebas before the first one is placed in the puddle.)",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "At the end of the first day, there are 2 amoebas.  At the end of the second, there are $2\\cdot 2 = 2^2$ amoebas.  At the end of the third day, there are $2\\cdot 2^2 = 2^3$ amoebas, and so on.  So, after the seventh day, there are $2^7= \\boxed{128}$ amoebas."
-}

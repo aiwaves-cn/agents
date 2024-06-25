@@ -1,6 +1,0 @@
-{
-    "problem": "A fair eight-faced die with faces numbered 1, 2, 3, 4, 5, 6, 7 and 8 is tossed six times and the sequence of numbers is recorded. How many sequences are possible?\n\n[asy]\ndraw((0,0)--(10,10)--(-2,8)--cycle);\ndraw((-2,8)--(0,0)--(-11,10)--cycle);\ndraw((-2,8)--(0,23)--(10,10));\ndraw((0,23)--(-11,10));\ndraw((0,23)--(2.5,13)--(10,10),dashed);\ndraw((2.5,13)--(-11,10),dashed);\ndraw((2.5,13)--(0,0),dashed);\n[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Each of the six rolls can produce any of the eight outcomes, so the answer is $$8^6=\\boxed{262144}$$"
-}

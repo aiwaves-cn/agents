@@ -1,6 +1,0 @@
-{
-    "problem": "Find the second smallest positive integer that gives a remainder of $2$ when divided by $3$ and gives a remainder of $3$ when divided by $7$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We start by taking $3$ and adding multiples of $7$ until we see an integer that gives a remainder of $2$ when divided by $3$. We find that $3$ and $10$ do not, but $17$ does. By the Chinese Remainder Theorem, the other integers which leave a remainder of 2 when divided by 3 and a remainder of 3 when divided by 7 differ from 17 by a multiple of $3\\cdot7=21$. Thus the next one is $17+21=\\boxed{38}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find an ordered pair $(x,y)$ that satisfies both of the equations below: \\begin{align*} 2x - 3y &= -5,\\\\ 5x - 2y &= 4. \\end{align*}",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Multiplying the first equation by 5 and the second equation by $-2$ gives\n\\begin{align*}\n10x-15y&=-25,\\\\\n-10x + 4y &=-8.\\\\\n\\end{align*}Adding the two equations gives $-11y = -33$, so $y=3$.  Substituting $y=3$ in the first original equation gives $2x - 9 = -5$, so $2x = 4$ and $x = 2$.  Therefore, the solution is $(x,y) = \\boxed{(2,3)}$."
-}

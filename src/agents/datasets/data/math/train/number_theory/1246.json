@@ -1,6 +1,0 @@
-{
-    "problem": "A divisor of a number is a proper divisor if it is not equal to the number. What is the sum of the proper divisors of $432$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The prime factorization of $432 = 2^4 \\cdot 3^3$. It follows that the sum of the divisors is equal to $(1 + 2 + 2^2 + 2^3 + 2^4)(1 + 3 + 3^2 + 3^3)$, as each factor of $432$ is represented when the product is expanded. We have to subtract $432$ so that we only count the proper divisors, so the answer is \\begin{align*}\n(1 + 2 + 4 + 8 + 16)(1 + 3 + 9 + 27) - 432 &= (31)(40) - 432\\\\\n&= 1240 - 432\\\\\n&= \\boxed{808}.\\\\\n\\end{align*}"
-}

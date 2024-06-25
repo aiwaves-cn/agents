@@ -1,6 +1,0 @@
-{
-    "problem": "How many even three-digit integers  have the property that their digits, read left to right, are in strictly increasing order (each digit is greater than the previous digit)?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let the integer have digits $a$, $b$, and $c$, read left to right.  Because $1 \\leq a<b<c$, none of the digits can be zero and $c$ cannot be 2.  If $c=4$, then $a$ and $b$ must each be chosen from the digits 1, 2, and 3.  Therefore there are $\\binom{3}{2}=3$ choices for $a$ and $b$, and for each choice there is one acceptable order.  Similarly, for $c=6$ and $c=8$ there are, respectively, $\\binom{5}{2}=10$ and $\\binom{7}{2}=21$ choices for $a$ and $b$. Thus there are altogether $3+10+21=\\boxed{34}$ such integers."
-}

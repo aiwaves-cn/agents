@@ -1,6 +1,0 @@
-{
-    "problem": "A moving particle starts at the point $(4,4)$ and moves until it hits one of the coordinate axes for the first time. When the particle is at the point $(a,b)$, it moves at random to one of the points $(a-1,b)$, $(a,b-1)$, or $(a-1,b-1)$, each with probability $\\frac{1}{3}$, independently of its previous moves. The probability that it will hit the coordinate axes at $(0,0)$ is $\\frac{m}{3^n}$, where $m$ and $n$ are positive integers such that $m$ is not divisible by $3$. Find $m + n$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "One could recursively compute the probabilities of reaching $(0,0)$ as the first axes point from any point $(x,y)$ as\\[P(x,y) = \\frac{1}{3} P(x-1,y) + \\frac{1}{3} P(x,y-1) + \\frac{1}{3} P(x-1,y-1)\\]for $x,y \\geq 1,$ and the base cases are $P(0,0) = 1, P(x,0) = P(y,0) = 0$ for any $x,y$ not equal to zero. We then recursively find $P(4,4) = \\frac{245}{2187}$ so the answer is $245 + 7 = \\boxed{252}$."
-}

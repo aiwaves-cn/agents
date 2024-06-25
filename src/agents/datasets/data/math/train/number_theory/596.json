@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $2^{87} +3$ is divided by $7$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We are looking at powers of 2, so we notice that $2^3=8=7+1$.  Therefore  \\[2^3\\equiv1\\pmod7.\\] In particular \\[2^{87}\\equiv2^{3\\cdot29}\\equiv 8^{29}\\equiv 1^{29}\\equiv1\\pmod7.\\] Therefore \\[2^{87}+3\\equiv1+3\\equiv4\\pmod7.\\] The remainder upon division by 7 is $\\boxed{4}$."
-}

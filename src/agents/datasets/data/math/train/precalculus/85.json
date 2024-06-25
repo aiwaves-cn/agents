@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of\n\\[f(A)=\\frac{\\sin A(3\\cos^{2}A+\\cos^{4}A+3\\sin^{2}A+\\sin^{2}A\\cos^{2}A)}{\\tan A (\\sec A-\\sin A\\tan A)}\\]if $A\\neq \\dfrac{n\\pi}{2}$ for any integer $n.$  Enter your answer using interval notation.",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "We can factor the numerator, and write the denominator in terms of $\\sin A$ and $\\cos A,$ to get\n\\begin{align*}\nf(A) &= \\frac{\\sin A (3 \\cos^2 A + \\cos^4 A + 3 \\sin^2 A + \\sin^2 A \\cos^2 A)}{\\tan A (\\sec A - \\sin A \\tan A)} \\\\\n&= \\frac{\\sin A (\\sin^2 A + \\cos^2 A)(\\cos^2 A + 3)}{\\frac{\\sin A}{\\cos A} (\\frac{1}{\\cos A} - \\frac{\\sin^2 A}{\\cos A})} \\\\\n&= \\frac{\\sin A (\\cos^2 A + 3)}{\\frac{\\sin A}{\\cos A} \\cdot \\frac{1 - \\sin^2 A}{\\cos A}} \\\\\n&= \\frac{\\sin A (\\cos^2 A + 3)}{\\frac{\\sin A}{\\cos A} \\cdot \\frac{\\cos^2 A}{\\cos A}} \\\\\n&= \\cos^2 A + 3.\n\\end{align*}The range of $\\cos^2 A$ is $(0,1).$  (Note that 0 and 1 are not included, since $A$ cannot be an integer multiple of $\\frac{\\pi}{2}.$)  Hence, the range of $f(A) = \\cos^2 A + 3$ is $\\boxed{(3,4)}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Jon teaches a fourth grade class at an elementary school where class sizes are always at least 20 students and at most 28.  One day Jon decides that he wants to arrange the students in their desks in a rectangular grid with no gaps.  Unfortunately for Jon he discovers that doing so could only result in one straight line of desks.  How many students does Jon have in his class?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Let $m$ be the number of rows in the grid of students and let $n$ be the number of columns.  The total number of students is $mn$.  If the only way to express $mn$ as a product of positive integers is for one of the integers to be 1, then 1 and $mn$ are the only divisors of $mn$, so $mn$ is prime.  The number of students in Jon's class is $\\boxed{23}$, the only prime between 20 and 28."
-}

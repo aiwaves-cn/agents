@@ -1,6 +1,0 @@
-{
-    "problem": "Which of the following integers round to $40$ when rounded to the nearest ten?\nA. $43$\nB. $23$\nC. $38$\nD. $51$\nE. $45$\nF. $35$\nExpress your answer as a block of letters corresponding to the answer choices that round to $40$, in alphabetic order with no punctuation. For example, if all six answer choices rounded to $40$, then your answer would be ABCDEF.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Consider each of the answer choices individually.\nA. $43$ is between $40$ and $40+10=50$. Since $3$ is less than $5$, $43$ rounds down to ${\\bf 40}$.\nB. $23$ is between $20$ and $20+10=30$, so it cannot round to $40$.\nC. $38$ is between $30$ and $30+10=40$. Because $8$ is greater than or equal to $5$, $38$ rounds up to ${\\bf 40}$.\nD. $51$ is between $50$ and $50+10=60$, so it cannot round to $40$.\nE. $45$ is between $40$ and $40+10=50$. $5$ is greater than or equal to $5$, so $45$ rounds up to $50$.\nF. $35$ is between $30$ and $30+10=40$. $5$ is greater than or equal to $5$, so $35$ rounds up to ${\\bf 40}$.\nThe answer choices that round up to $40$ are A, C, and F. The final answer is $\\boxed{\\text{ACF}}$."
-}

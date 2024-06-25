@@ -1,6 +1,0 @@
-{
-    "problem": "If $|x| + x + y = 10$ and $x + |y| - y = 12,$ find $x + y.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If $x < 0,$ then $|x| = -x,$ so from the first equation, $y = 10.$  But then the second equation gives us $x = 12,$ contradiction, so $x \\ge 0,$ which means $|x| = x.$\n\nIf $y > 0,$ then $|y| = y,$ so from the second equation, $x = 12.$  But the the first equation gives us $y = -14,$ contradiction, so $y \\le 0,$ which means $|y| = -y.$\n\nThus, the given equations become $2x + y = 10$ and $x - 2y = 12.$  Solving, we find $x = \\frac{32}{5}$ and $y = -\\frac{14}{5},$ so $x + y = \\boxed{\\frac{18}{5}}.$"
-}

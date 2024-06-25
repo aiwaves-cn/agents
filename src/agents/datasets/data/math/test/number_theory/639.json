@@ -1,6 +1,0 @@
-{
-    "problem": "How many of the positive divisors of 252 are even?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "$$ 252 = 2^2 \\cdot 3^2 \\cdot 7^1 $$An even number contains at least one power of 2 in its prime factorization.  This means that an even divisor of 252 must be in the form $2^a \\cdot 3^b \\cdot 7^c$, where there are 2 choices for $a$ (1 or 2), three are 3 choices for $b$ (0, 1, or 2), and 2 choices for $c$ (0 or 1).  This means that $2 \\cdot 3 \\cdot 2 = \\boxed{12}$ of the positive divisors of 252 are even.  Now, see if you can find a complementary counting approach."
-}

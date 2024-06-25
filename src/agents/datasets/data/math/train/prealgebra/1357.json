@@ -1,6 +1,0 @@
-{
-    "problem": "There are 8 sprinters in the Olympic 100-meter finals. Three of the sprinters are Americans.  The gold medal goes to first place, silver to second, and bronze to third.   In how many ways can the medals be awarded if at most one American gets a medal?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Consider two cases:\n\nCase 1: No Americans get a medal. So there are 5 choices for the gold medal, 4 choices for the silver, and 3 choices for bronze, which is $5\\times4\\times3=60$ ways.\n\nCase 2: One American gets a medal. There are 3 Americans to choose from. After we choose which American to get the medal, we have to decide which medal to reward the American, for which we have 3 choices. Then we have 5 choices for one of the remaining medal and 4 choices for the last medal. So, we have a total of $3\\times3\\times5\\times4=180$ ways.\n\nSum up the two cases, and we have a total of $180+60=\\boxed{240}$ ways."
-}

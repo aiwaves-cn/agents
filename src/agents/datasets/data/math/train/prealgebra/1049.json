@@ -1,6 +1,0 @@
-{
-    "problem": "How many of the numbers from the set $\\{1,\\ 2,\\ 3,\\ldots,\\ 50\\}$ have a perfect square factor other than one?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The potential square factors are $4$, $9$, $16$, $25$, $36$, and $49$. $4$ divides $12$ of the numbers. $9$ divides $5$ of the numbers, but we've counted $4 \\cdot 9 = 36$ twice, so we subtract $1$. $16$ divides $3$ of the numbers, but each of those is also divisible by $4$, so we don't count them. $25$ divides $2$. $36$ divides $1$, itself, but it's already been counted. Finally, $49$ divides $1$. Thus, our final answer is $12 + (5-1) + 2 + 1 = \\boxed{19}$."
-}

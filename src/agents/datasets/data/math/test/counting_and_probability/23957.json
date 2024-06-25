@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. Brennan has 7 boys and 4 girls in his statistics class. In how many ways can he pick 3 boys and 2 girls to give a group presentation tomorrow? (The order in which the boys and girls are chosen does not matter.)",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are 4 ways to pick the first girl and 3 ways to pick the second one; however, this counts each pair of girls twice since selecting girl A followed by girl B is the same as selecting girl B followed by girl A, so the total number of ways to pick the girls is $\\frac{4\\times3}{2}=6$. Similarly, there are 7 ways to pick the first boy, 6 ways to pick the second one, and 5 ways to pick the last one, but this counts each combination of boys 6 times since picking any of the three boys first followed by either of the other two followed by the third one will give the same triplet of boys. So the total number of ways to pick the boys is $\\frac{7\\times6\\times5}{3\\times2}=35$, and the total of number of ways to pick the students for the group presentation is $\\frac{4\\times3}{2}\\cdot \\frac{7\\times6\\times5}{3\\times2}=\\boxed{210}$"
-}

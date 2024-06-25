@@ -1,6 +1,0 @@
-{
-    "problem": "An $\\textit{abundant number}$ is a positive integer, the sum of whose distinct proper factors is greater than the number. (The $\\textit{proper factors}$ of a number are all of its factors except the number itself.) How many numbers less than 25 are abundant numbers?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "First we note that no prime number is abundant since the sum of the proper factors of any prime is 1. Analyzing the remaining numbers, we find that 12 ($1+2+3+4+6=16>12$), 18 ($1+2+3+6+9=21>18$), 20 ($1+2+4+5+10=22>20$), and 24 ($1+2+3+4+6+8+12=36>24$) are abundant numbers. Thus, $\\boxed{4}$ numbers less than 25 are abundant numbers."
-}

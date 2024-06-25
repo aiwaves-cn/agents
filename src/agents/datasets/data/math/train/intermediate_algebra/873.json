@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[-1 < \\frac{x^2 - 14x + 11}{x^2 - 2x + 3} < 1.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We consider both inequalities separately.\n\nThe left inequality is equivalent to\n\\[\\frac{x^2 - 14x + 11}{x^2 - 2x + 3} + 1 > 0,\\]or\n\\[\\frac{2x^2 - 16x + 14}{x^2 - 2x + 3} > 0.\\]Then\n\\[\\frac{x^2 - 8x + 7}{x^2 - 2x + 3} > 0.\\]The numerator factors as\n\\[\\frac{(x - 1)(x - 7)}{x^2 - 2x + 3} > 0.\\]The denominator $x^2 - 2x + 3 = (x - 1)^2 + 2$ is always positive.\n\nThe quadratic $(x - 1)(x - 7)$ is positive precisely when $x < 1$ or $x > 7.$\n\nThe right inequality is equivalent to\n\\[1 - \\frac{x^2 - 14x + 11}{x^2 - 2x + 3} > 0,\\]or\n\\[\\frac{12x - 8}{x^2 - 2x + 3} > 0.\\]Then\n\\[\\frac{3x - 2}{x^2 - 2x + 3} > 0.\\]Since the denominator is always positive, this inequality holds if and only if $x > \\frac{2}{3}.$\n\nThe solution is then\n\\[x \\in \\boxed{\\left( \\frac{2}{3}, 1 \\right) \\cup (7,\\infty)}.\\]"
-}

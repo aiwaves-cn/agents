@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest solution to the equation \\[\\frac{2x}{x-2} + \\frac{2x^2-24}{x} = 11.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Multiplying both sides by $x(x-2),$ we get \\[2x^2 + (2x^2-24)(x-2) = 11x(x-2),\\]which simplifies to \\[2x^3 - 13x^2 - 2x + 48 = 0.\\]Looking for rational roots to the equation, we see that $x=6$ is a solution. Performing the polynomial division, we get \\[2x^3 - 13x^2 - 2x + 48 = (x-6)(2x^2-x-8) = 0,\\]so either $x = 6$ or $2x^2 - x - 8 =0.$ The latter quadratic has solutions \\[x = \\frac{1 \\pm \\sqrt{65}}{4},\\]so the smallest root of the original equation is $x = \\boxed{\\frac{1-\\sqrt{65}}{4}}.$"
-}

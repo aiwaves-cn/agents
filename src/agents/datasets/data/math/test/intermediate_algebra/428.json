@@ -1,6 +1,0 @@
-{
-    "problem": "Find the roots of $(x - 3)^3 + (x -7)^3 = (2x - 10)^3.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = x - 3$ and $b = x - 7.$  Then we can write the given equation as\n\\[a^3 + b^3 = (a + b)^3.\\]Expanding, we get $a^3 + b^3 = a^3 + 3a^2 b + 3ab^2 + b^3,$ so $3a^2 b + 3ab^2 = 0,$ which factors as\n\\[3ab(a + b) = 0.\\]Thus, $a = 0,$ $b = 0,$ or $a + b = 0.$  Then $x - 3 = 0,$ $x - 7 = 0,$ or $2x - 10 = 0.$  This gives us the roots $\\boxed{3, 5, 7}.$"
-}

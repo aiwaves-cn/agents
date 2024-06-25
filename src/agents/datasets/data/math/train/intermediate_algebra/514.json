@@ -1,6 +1,0 @@
-{
-    "problem": "The Fibonacci sequence is defined $F_1 = F_2 = 1$ and $F_n = F_{n - 1} + F_{n - 2}$ for all $n \\ge 3.$\n\nThe Fibonacci numbers $F_a,$ $F_b,$ $F_c$ form an increasing arithmetic sequence.  If $a + b + c = 2000,$ compute $a.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We claim that if $F_a,$ $F_b,$ $F_c$ form an increasing arithmetic sequence, then $(a,b,c)$ must be of the form $(n,n + 2,n + 3)$ for some positive integer $n.$  (The only exception is $(2,3,4).$)\n\nFrom $F_c - F_b = F_b - F_a,$ we get\n\\[F_c = F_b + (F_b - F_a) < F_b + F_{b + 1} = F_{b + 2}.\\]Also, $F_c > F_b.$  Therefore, $F_c = F_{b + 1}.$\n\nThen\n\\begin{align*}\nF_a &= 2F_b - F_c \\\\\n&= 2F_b - F_{b + 1} \\\\\n&= F_b - (F_{b + 1} - F_b) \\\\\n&= F_b - F_{b - 1} \\\\\n&= F_{b - 2}.\n\\end{align*}Then $a$ must be equal to $b - 2$ (unless $b = 3,$ which leads to the exceptional case of $(2,3,4)$).  Taking $n = b - 2,$ we get $(a,b,c) = (n,n + 2,n + 3).$\n\nThen $a + (a + 2) + (a + 3) = 2000,$ so $a = \\boxed{665}.$"
-}

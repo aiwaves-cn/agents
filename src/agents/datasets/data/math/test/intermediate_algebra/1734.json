@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be real numbers such that $x + y + z = 0$ and $xyz = 2.$  Find the maximum value of\n\\[x^3 y + y^3 z + z^3 x.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $k = xy + xz + yz.$  Then by Vieta's formulas, $x,$ $y,$ and $z$ are the roots of\n\\[t^3 + kt - 2 = 0.\\]Then $x^3 + kx - 2 = 0,$ so $x^3 = 2 - kx,$ and $x^3 y = 2y - kxy.$  Similarly, $y^3 z = 2z - kyz$ and $z^3 x = 2x - kxz,$ so\n\\[x^3 y + y^3 z + z^3 x = 2(x + y + z) - k(xy + xz + yz) = -k^2.\\]Since $xyz = 2,$ none of $x,$ $y,$ $z$ can be equal to 0.  And since $x + y + z = 0,$ at least one of $x,$ $y,$ $z$ must be negative.  Without loss of generality, assume that $x < 0.$  From the equation $x^3 + kx - 2 = 0,$ $x^2 + k - \\frac{2}{x} = 0,$ so\n\\[k = \\frac{2}{x} - x^2.\\]Let $u = -x,$ so $u > 0,$ and\n\\[k = -\\frac{2}{u} - u^2 = -\\left( u^2 + \\frac{2}{u} \\right).\\]By AM-GM,\n\\[u^2 + \\frac{2}{u} = u^2 + \\frac{1}{u} + \\frac{1}{u} \\ge  3 \\sqrt[3]{u^2 \\cdot \\frac{1}{u} \\cdot \\frac{1}{u}} = 3,\\]so $k \\le -3$.  Therefore,\n\\[x^3 y + y^3 z + z^3 x = -k^2 \\le -9.\\]Equality occurs when $x = y = -1$ and $z = 2,$ so the maximum value is $\\boxed{-9}.$"
-}

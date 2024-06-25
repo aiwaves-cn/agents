@@ -1,6 +1,0 @@
-{
-    "problem": "How many 5-digit numbers have at least one 2 or one 3 among their digits?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "A 5-digit number can have for its leftmost digit anything from 1 to 9 inclusive, and for each of its next four digits anything from 0 through 9 inclusive. Thus there are $9\\times 10\\times 10\\times 10\\times 10=90,\\!000$ 5-digit numbers.\n\nA 5-digit number with no 2 or 3 as a digit can have for its first digit 1 or anything from 4 through 9, and can have for each other digit any of those numbers or 0.\n\nThere are $7 \\times 8\\times 8\\times 8\\times 8=28,\\!672$ such 5-digit numbers. Therefore the number of 5-digit numbers with at least one 2 or one 3 as a digit is  $90,\\!000-28,\\!672=\\boxed{61,328}.$"
-}

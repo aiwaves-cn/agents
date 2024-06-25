@@ -1,6 +1,0 @@
-{
-    "problem": "Two eight-sided dice each have faces numbered 1 through 8. When the dice are rolled, each face has an equal probability of appearing on the top. What is the probability that the product of the two top numbers is greater than their sum? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $8\\cdot 8 = 64$ ordered pairs that can represent the top numbers on the two dice. Let $m$ and $n$ represent the top numbers on the dice.  Then $mn > m+n$ implies that $mn - m - n >\n0$, that is, $$1 < mn - m - n + 1 = (m-1)(n-1).$$This inequality is satisfied except when $m=1$, $n=1$, or when $m=n=2$. There are 16 ordered pairs $(m,n)$ excluded by these conditions, so the probability that the product is greater than the sum is \\[\n\\frac{64-16}{64} = \\frac{48}{64} = \\boxed{\\frac{3}{4}}.\n\\]"
-}

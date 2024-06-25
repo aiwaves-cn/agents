@@ -1,6 +1,0 @@
-{
-    "problem": "The product of three even consecutive positive integers is twenty times their sum. What is the sum of the three integers?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Call the three integers $x-2$, $x$, and $x+2$. We know that $(x-2)x(x+2) = 20(x-2 + x + x+2)$, or $(x^2-4)x = 20(3x)$. Canceling an $x$ on either side gives $(x^2 - 4) = 60$, so $x^2 = 64$. Thus, $x = 8$, (since the numbers are positive), so the sum of the three integers is $3 \\cdot 8 = \\boxed{24}$."
-}

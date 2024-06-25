@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest prime whose digits sum to $19$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "To have a digit sum of 19, we need at least a 3-digit prime, since the maximum digit sum for 2-digit numbers is $9 + 9 = 18$. The smallest such prime will have first digit 1, so a possible candidate is 199, the only number with hundreds digit 1 and digit sum 19. We just need to check that this number is a prime. We note that since $\\sqrt{199}$ is between 14 and 15, we only have to check divisibility by integers through 14. Actually, we don't have to check every such integer: it's enough to check divisibility by 2, 3, 5, 7, 11, and 13. (If it's not divisible by 2, it's not divisible by 4, 6, 8, 10, 12, or 14; similarly, if it's not divisible by 3, it's not divisible by 6, 9, or 12.) 199 is odd, so it's not divisible by 2. Its digit sum is 19, which is not divisible by 3, so 199 isn't divisible by 3. 199 doesn't end in 5 or 0, so it's not divisible by 5. 199 has alternating digit sum $1 - 9 + 9 =1$, which isn't divisible by 11, so it's not divisible by 11. We can check that 199 isn't divisible by 7 or 13 just by division, after which we can conclude that $\\boxed{199}$ is the prime we're looking for."
-}

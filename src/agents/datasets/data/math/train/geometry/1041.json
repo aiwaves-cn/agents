@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $O$ is the center of a circle with radii $OP=OQ=5$.  What is the perimeter of the shaded region?\n\n[asy]\nsize(100);\nimport graph;\nlabel(\"$P$\",(-1,0),W); label(\"$O$\",(0,0),NE); label(\"$Q$\",(0,-1),S);\n\nfill(Arc((0,0),1,-90,180)--cycle,mediumgray);\ndraw(Arc((0,0),1,-90,180));\nfill((0,0)--(-1,0)--(0,-1)--cycle,white);\ndraw((-1,0)--(0,0)--(0,-1));\ndraw((-.1,0)--(-.1,-.1)--(0,-.1));\n\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The perimeter of the shaded region equals the sum of the lengths of $OP$ and $OQ$ plus the length of arc $PQ$.\n\nEach of $OP$ and $OQ$ has length 5.\n\nArc $PQ$ forms $\\frac{3}{4}$ of the circle with center $O$ and radius 5, because the missing portion corresponds to a central angle of $90^\\circ$, and so is $\\frac{1}{4}$ of the total circle.\n\nThus, the length of arc $PQ$ is $\\frac{3}{4}$ of the circumference of this circle, or $\\frac{3}{4}(2\\pi(5))=\\frac{15}{2}\\pi$. Therefore, the perimeter is $5+5+\\frac{15}{2}\\pi = \\boxed{10 + \\frac{15}{2}\\pi}$."
-}

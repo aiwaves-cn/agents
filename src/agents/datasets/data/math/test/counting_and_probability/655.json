@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\displaystyle \\binom{11}{4}$.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "By the equation $$ \\dbinom{n}{r} = \\frac{n!}{r!(n-r)!} $$we have $$ \\binom{11}{4} = \\frac{11!}{4!7!}. $$$$ \\binom{11}{4} = \\frac{11 \\times 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times1}{(4 \\times 3 \\times 2 \\times 1)\\times (7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times1)}. $$This leaves us with just the first 4 terms of $11!$ in the numerator, and $4!$ in the denominator.  Thus: $$ \\binom{11}{4} = \\frac{11!}{4!7!} = \\frac{11 \\times 10 \\times 9 \\times 8}{4 \\times 3 \\times 2 \\times 1} = \\boxed{330}. $$"
-}

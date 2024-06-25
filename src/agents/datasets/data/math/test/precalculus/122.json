@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\frac{\\sin 13^\\circ + \\sin 47^\\circ + \\sin 73^\\circ + \\sin 107^\\circ}{\\cos 17^\\circ}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "By the sum-to-product formula,\n\\begin{align*}\n\\frac{\\sin 13^\\circ + \\sin 47^\\circ + \\sin 73^\\circ + \\sin 107^\\circ}{\\cos 17^\\circ} &= \\frac{2 \\sin 30^\\circ \\cos 17^\\circ + 2 \\sin 90^\\circ \\cos 17^\\circ}{\\cos 17^\\circ} \\\\\n&= 2 \\sin 30^\\circ + 2 \\sin 90^\\circ \\\\\n&= \\boxed{3}.\n\\end{align*}"
-}

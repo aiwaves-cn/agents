@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[3f(x) - 2 f \\left( \\frac{1}{x} \\right) = x\\]for all $x \\neq 0.$  Find $f(4).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 4,$ we get\n\\[3f(4) - 2 f \\left( \\frac{1}{4} \\right) = 4.\\]Setting $x = \\frac{1}{4},$ we get\n\\[3 f \\left( \\frac{1}{4} \\right) - 2f(4) = \\frac{1}{4}.\\]We can view these equations as a system in $f(4)$ and $f \\left( \\frac{1}{4} \\right).$  Solving this system, we find $f(4) = \\boxed{\\frac{5}{2}}.$"
-}

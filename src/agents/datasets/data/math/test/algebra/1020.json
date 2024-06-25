@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=7x+5$ and $g(x)=x-1$.  If $h(x)=f(g(x))$, then what is the inverse of $h(x)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "\\[h(x)=f(g(x))=7(x-1)+5=7x-2.\\]Let's replace $h(x)$ with $y$ for simplicity, so \\[y=7x-2.\\]In order to invert $h(x)$ we may solve this equation for $x$.  That gives \\[y+2=7x\\]or  \\[x=\\frac{y+2}{7}.\\]Writing this in terms of $x$ gives the inverse function of $h$ as  \\[h^{-1}(x)=\\boxed{\\frac{x+2}{7}}.\\]"
-}

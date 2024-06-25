@@ -1,6 +1,0 @@
-{
-    "problem": "Define a function $h(x),$ for positive integer values of $x,$ by \\[h(x) = \\left\\{\\begin{aligned} \\log_2 x & \\quad \\text{ if } \\log_2 x \\text{ is an integer} \\\\ 1 + h(x + 1) & \\quad \\text{ otherwise}. \\end{aligned} \\right.\\]Compute $h(100).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Using the second part of the definition, we get \\[h(100) = 1 + h(101) = 2 + h(102) = 3 + h(103) = \\dots = 28 + h(128).\\]Since $128 = 2^7,$ we use the first part of the definition to get \\[h(100) = 28 + 7 = \\boxed{35}.\\]"
-}

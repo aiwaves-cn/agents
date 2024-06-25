@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\theta$ is the angle between the vectors $\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$ and $\\begin{pmatrix} 12 \\\\ 5 \\end{pmatrix}$, then find $\\cos \\theta$.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that\n\\begin{align*}\n\\cos \\theta &= \\frac{\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix} \\cdot \\begin{pmatrix} 12 \\\\ 5 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix} \\right\\| \\cdot \\left\\| \\begin{pmatrix} 12 \\\\ 5 \\end{pmatrix} \\right\\|} \\\\\n&= \\frac{3 \\cdot 12 + (-4) \\cdot 5}{\\sqrt{3^2 + (-4)^2} \\cdot \\sqrt{12^2 + 5^2}} \\\\\n&= \\frac{36 - 20}{5 \\cdot 13} \\\\\n&= \\boxed{\\frac{16}{65}}.\n\\end{align*}"
-}

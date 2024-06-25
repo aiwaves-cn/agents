@@ -1,6 +1,0 @@
-{
-    "problem": "How many zeroes are at the end of $42!$ (42 factorial)?  (Reminder: The number $n!$ is the product of the integers from 1 to $n$.  For example, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "You get a digit $0$ on the end of a number whenever it has a factor of $10$, so the question is really asking, how many $10$s are in the prime factorization of $42!$. Since $10=2\\cdot5$, we need to count how many of each there are. We're going to have more $2$s than $5$s, so we actually only need to count how many times $5$ appears in the prime factorization.\n\nEvery time a number is a multiple of $5$, it adds a factor of $5$ to the prime factorization. There are $8$ multiples of $5$ between $1$ and $42$. Now look at $25$. It actually has two factors of $5$. We've already counted one of them, so now we need to count one more. This gives a total of $8+1=9$ times the factor $5$ appears, so $42!$ has $\\boxed{9}$ zeroes at the end."
-}

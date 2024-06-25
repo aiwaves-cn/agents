@@ -1,6 +1,0 @@
-{
-    "problem": "For how many positive integers $n$ does $1+2+\\cdots+n$ evenly divide $6n$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Because \\[\n1 + 2 + \\cdots + n = \\frac{n(n+1)}{2},\n\\]$1+2+ \\cdots + n$ divides the positive integer $6n$ if and only if \\[\n\\frac{6n}{n(n+1)/2} = \\frac{12}{n+1}\\ \\text{is an integer.}\n\\]There are  $\\boxed{5}$ such positive values of $n$, namely,  1, 2, 3, 5,  and 11."
-}

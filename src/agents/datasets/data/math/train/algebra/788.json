@@ -1,6 +1,0 @@
-{
-    "problem": "What is the domain of the function $$j(x) = \\frac{1}{x+8} + \\frac{1}{x^2+8} + \\frac{1}{x^3+8}~?$$Express your answer as a union of intervals.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We note that $j(x)$ is defined unless one or more of the denominators $x+8,~x^2+8,~x^3+8$ is equal to $0$.\n\nWe have $x+8=0$ if $x=-8$, and $x^3+8$ if $x=\\sqrt[3]{-8} = -2$. There is no real $x$ for which $x^2+8=0$. Therefore, the domain of $j(x)$ consists of all real $x$ except $-8$ and $-2$. As a union of intervals, this is $\\boxed{(-\\infty,-8)\\cup (-8,-2)\\cup (-2,\\infty)}$."
-}

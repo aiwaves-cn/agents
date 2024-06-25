@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $c$ if $x\\cdot(3x+1)<c$ if and only when $x\\in \\left(-\\frac{7}{3},2\\right)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "When $x\\in \\left(-\\frac{7}{3},2\\right)$, we have $x\\cdot(3x+1)-c<0$. This means that $x(3x+1)-c=0$ at $x=-\\frac{7}{3}$ and $x=2$. We now know that $x(3x+1)-c=0$ is a quadratic equation with roots at $x=-\\frac{7}{3}$ and $x=2$, and we want to use these roots to find a quadratic of the same form as the problem.  $x=-\\frac{7}{3}$ gives us $(3x+7)=0$ and $x=2$ gives us $(x-2)=0$. \\begin{align*}\nx(3x+1)-c&=(3x+7)(x-2)\\\\\n&=3x^2+x-14\\\\\n&=x(3x+1)-14.\n\\end{align*} So, $c=\\boxed{14}$."
-}

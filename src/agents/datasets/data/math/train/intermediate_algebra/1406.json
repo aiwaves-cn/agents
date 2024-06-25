@@ -1,6 +1,0 @@
-{
-    "problem": "Real numbers $x,$ $y,$ and $z$ satisfy the following equality:\n\\[4(x + y + z) = x^2 + y^2 + z^2.\\]Let $M$ be the maximum value of $xy + xz + yz,$ and let $m$ be the minimum value of $xy + xz + yz.$  Find $M + 10m.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $A = x + y + z,$ $B = x^2 + y^2 + z^2,$ and $C = xy + xz + yz.$  We are told that\n\\[4A = B.\\]Then\n\\[A^2 = (x + y + z)^2 = x^2 + y^2 + z^2 + 2(xy + xz + yz) = B + 2C = 4A + 2C.\\]Hence,\n\\[C = \\frac{1}{2} (A - 2)^2 - 2.\\]Also,\n\\[B - C = x^2 + y^2 + z^2 - (xy + xz + yz) = \\frac{(x - y)^2 + (x - z)^2 + (y - z)^2}{2} \\ge 0,\\]so $C \\le B.$  Then $A^2 = B + 2C \\le 3B = 12A.$  Hence, $0 \\le A \\le 12,$ so $-2 \\le C \\le 48.$\n\nWe see that $C = -2$ when $(x,y,z) = (2,-\\sqrt{2},\\sqrt{2}),$ and $C = 48$ when $(x,y,z) = (4,4,4),$ so $M = 48$ and $m = -2,$ and $M + 10m = \\boxed{28}.$"
-}

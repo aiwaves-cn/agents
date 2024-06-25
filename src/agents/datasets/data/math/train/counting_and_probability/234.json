@@ -1,6 +1,0 @@
-{
-    "problem": "A yogurt shop sells four flavors of yogurt and has six different toppings. How many combinations of one flavor and two different toppings are available?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are 4 choices of flavor, and $\\binom{6}{2}=15$ ways to choose two of the six toppings. The total number of combinations is $4\\cdot 15=\\boxed{60}$."
-}

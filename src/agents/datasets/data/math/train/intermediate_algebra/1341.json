@@ -1,6 +1,0 @@
-{
-    "problem": "Is\n\\[f(x) = \\log (x + \\sqrt{1 + x^2})\\]an even function, odd function, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Note that\n\\begin{align*}\n-x + \\sqrt{1 + (-x)^2} &= -x + \\sqrt{1 + x^2} \\\\\n&= \\frac{(-x + \\sqrt{1 + x^2})(x + \\sqrt{1 + x^2})}{x + \\sqrt{1 + x^2}} \\\\\n&= \\frac{-x^2 + (1 + x^2)}{x + \\sqrt{1 + x^2}} \\\\\n&= \\frac{1}{x + \\sqrt{1 + x^2}},\n\\end{align*}so\n\\begin{align*}\nf(-x) &= \\log (-x + \\sqrt{1 + x^2}) \\\\\n&= \\log \\left( \\frac{1}{x + \\sqrt{1 + x^2}} \\right) \\\\\n&= -\\log (x + \\sqrt{1 + x^2}) \\\\\n&= -f(x).\n\\end{align*}Thus, $f(x)$ is an $\\boxed{\\text{odd}}$ function."
-}

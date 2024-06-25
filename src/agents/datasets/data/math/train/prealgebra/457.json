@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $1-(1+(1-(1+(1-x))))$.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Starting from the furthest inside the parentheses and working outwards, we get $1-(1+(1-(1+(1-x))))=1-(1+(1-(2-x)))$. $1-(1+(1-(2-x)))=(1-(1+(x-1))$. $(1-(1+(x-1))=\\boxed{1-x}$."
-}

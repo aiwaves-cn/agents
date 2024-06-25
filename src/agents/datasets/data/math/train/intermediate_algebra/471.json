@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the sum of the squares of the roots of the equation \\[x^{2018} +44x^{2015} + 3x^3 + 404 = 0.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $r_1, r_2, \\dots, r_{2018}$ be the roots. By Vieta's formulas, $r_1+r_2+\\dots+r_{2018}=0.$ To get the squared terms we want, we square both sides, giving \\[(r_1^2+r_2^2+\\dots+r_{2018}^2) + 2(r_1r_2+r_1r_3+\\dotsb) = 0,\\]where the second term on the left-hand side is the sum of all terms $r_ir_j,$ where $i < j.$ By Vieta's formulas, this also equals $0,$ so \\[r_1^2+r_2^2+\\dots+r_{2018}^2=\\boxed{0}\\,.\\]"
-}

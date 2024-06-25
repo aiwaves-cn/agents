@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P(z)=x^3+ax^2+bx+c$, where $a,$ $b,$ and $c$ are real. There exists a complex number $w$ such that the three roots of $P(z)$ are $w+3i$, $w+9i$, and $2w-4$, where $i^2=-1$. Find $a+b+c$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $w = x + yi,$ where $x$ and $y$ are real numbers.  Then the sum of the three roots is\n\\[(w + 3i) + (w + 9i) + (2w - 4) = 4w - 4 + 12i = 4x + 4yi - 4 + 12i.\\]By Vieta's formulas, the sum of the roots is $-a,$ are real number.  Hence, $(4x - 4) + (4y + 12)i$ must be a real number, which means $y = -3.$  Thus, the three roots are $w + 3i = x,$ $w + 9i = x + 6i,$ and $2w - 4 = 2x - 4 - 6i.$\n\nSince the coefficients of $P(z)$ are all real, the nonreal roots must come in conjugate pairs.  Thus, $x + 6i$ must be the conjugate of $2x - 4 - 6i,$ which means $x = 2x - 4.$  Hence, $x = 4,$ so\n\\[P(z) = (z - 4)(z - 4 - 6i)(z - 4 + 6i).\\]In particular,\n\\[P(1) = (1 - 4)(1 - 4 - 6i)(1 - 4 + 6i) = -135.\\]But $P(1) = 1 + a + b + c,$ so $a + b + c = \\boxed{-136}.$"
-}

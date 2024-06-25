@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ is the smallest positive two-digit multiple of $3$, and $b$ is the smallest positive three-digit multiple of $4$, then find $a+b$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Dividing 10 by 3 gives a quotient of 3 and a remainder of 1. Therefore, $3 \\cdot 3$ is the largest one-digit multiple of 3, and $3 \\cdot 4$ is the least positive two-digit multiple of 3. This calculation shows that $a=12$.\n\nDividing 100 by 4 gives a quotient of 25 and no remainder. Therefore, $4 \\cdot 25$ is the least positive three-digit multiple of 4, and $b=100$.\n\nCombining these results gives $a+b = 12+100 = \\boxed{112}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the minimum value of\n\\[\\frac{x^2 + 7}{\\sqrt{x^2 + 3}}\\]over all real numbers $x.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\[\\frac{x^2 + 7}{\\sqrt{x^2 + 3}} = \\frac{x^2 + 3 + 4}{\\sqrt{x^2 + 3}} = \\frac{x^2 + 3}{\\sqrt{x^2 + 3}} + \\frac{4}{\\sqrt{x^2 + 3}} = \\sqrt{x^2 + 3} + \\frac{4}{\\sqrt{x^2 + 3}}.\\]By AM-GM,\n\\[\\sqrt{x^2 + 3} + \\frac{4}{\\sqrt{x^2 + 3}} \\ge 2 \\sqrt{\\sqrt{x^2 + 3} \\cdot \\frac{4}{\\sqrt{x^2 + 3}}} = 4.\\]Equality occurs when $x = 1,$ so the minimum value is $\\boxed{4}.$"
-}

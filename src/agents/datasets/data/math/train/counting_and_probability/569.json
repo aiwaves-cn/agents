@@ -1,6 +1,0 @@
-{
-    "problem": "Each page number of a 488-page book is printed one time in the book.  The first page is page 1 and the last page is page 488. When printing all of the page numbers, how many more 4's are printed than 8's?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Insert leading zeros if necessary to give every page number three digits.  Every digit is used an equal number of times in writing the digits 00, 01, 02, ..., 98, 99, so from page 1 to page 399, the number of 4's used and the number of 8's used are equal.\n\nFrom page 400 to page 488, there are 89 appearances of 4 as a hundreds digit versus 0 appearances of 8 as a hundreds digit.  All 10 numbers 440, 441, ..., 449 with 4 as the tens digit are printed, whereas only the 9 numbers 480, 481, ..., 488 with 8 as the tens digit are printed.  So 4 is used one more time than 8 as a tens digit.  Four and 8 appear 9 times each as a units digit in the numbers 400, 401, ..., 488, so there are no extra 4's in the units place.  In total, $89+1+0=\\boxed{90}$ more 4's are printed than 8's."
-}

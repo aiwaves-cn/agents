@@ -1,6 +1,0 @@
-{
-    "problem": "If $A = (3,4)$ and $C = (7,10)$ are opposite vertices of a rectangle $ABCD,$ then vertices $A, B, C,$ and $D$ must lie on the circle\n\\[x^2 + y^2 - px - qy + s = 0.\\]Compute the ordered triple of real numbers $(p,q,s).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $\\angle ABC = \\angle ADC = 90^\\circ,$ $\\overline{AC}$ must be a diameter of this circle.\n\n[asy]\nunitsize (0.8 cm);\n\npair A, B, C, D, O;\n\nA = (3,4);\nC = (7,10);\nO = (A + C)/2;\nB = O + abs(O - A)*dir(170);\nD = O + abs(O - A)*dir(350);\n\ndraw(Circle(O,abs(O - A)));\ndraw(A--C);\ndraw(B--D);\ndraw(A--B--C--D--cycle);\n\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, W);\nlabel(\"$C$\", C, NE);\nlabel(\"$D$\", D, E);\n\ndot(O);\n[/asy]\n\nThe center of the circle is then $(5,7)$ (the mid-point of $A$ and $C$), and its radius is $\\sqrt{(5 - 3)^2 + (7 - 4)^2} = \\sqrt{13},$ so its equation is\n\\[(x - 5)^2 + (y - 7)^2 = 13.\\]This simplifies to $x^2 + y^2 - 10x - 14y + 61 = 0,$ so $(p,q,s) = \\boxed{(10,14,61)}.$"
-}

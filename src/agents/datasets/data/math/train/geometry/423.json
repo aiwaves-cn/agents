@@ -1,6 +1,0 @@
-{
-    "problem": "A wire is cut into two pieces, one of length $a$ and the other of length $b$. The piece of length $a$ is bent to form an equilateral triangle, and the piece of length $b$ is bent to form a regular hexagon. The triangle and the hexagon have equal area. What is $\\frac{a}{b}$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The side length of the triangle and hexagon are $\\frac{a}{3}$ and $\\frac{b}{6},$ respectively, so their areas are \\[\\frac{\\sqrt{3}}{4} \\left(\\frac{a}{3}\\right)^2 = \\frac{a^2 \\sqrt3}{36} \\quad \\text{and} \\quad \\frac{3\\sqrt3}{2} \\left(\\frac{b}{6}\\right)^2 = \\frac{b^2\\sqrt3}{24},\\]respectively. Therefore, we have \\[\\frac{a^2\\sqrt3}{36} = \\frac{b^2\\sqrt3}{24},\\]so \\[\\frac{a^2}{b^2} = \\frac{36}{24} = \\frac{3}{2}.\\]Taking the square root of both sides, we get \\[\\frac{a}{b} = \\frac{\\sqrt3}{\\sqrt2} = \\boxed{\\frac{\\sqrt6}2}.\\]"
-}

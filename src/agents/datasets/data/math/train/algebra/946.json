@@ -1,6 +1,0 @@
-{
-    "problem": "Mark borrows $10$ dollars from Emily with a simple interest rate of $15\\%$ everyday. What is the least integer number of days after which Mark will have to pay her back at least twice as much as he borrowed?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since the interest rate is simple, he has to pay an interest of $10 \\cdot 0.15 =1.5$ dollars every day.\n\nLet $x$ be the number of days needed to repay at least double the amount borrowed. Since he has to repay $10 as well as $\\$1.5x$ in interest, we have the inequality $10+1.5x \\ge 10 \\cdot 2$. Solving for $x$, we get $x \\ge 6.\\overline{6}$. The smallest integer greater than $6.\\overline{6}$ is $7$. Therefore, it would take at least $\\boxed{7 \\text{ days}}$."
-}

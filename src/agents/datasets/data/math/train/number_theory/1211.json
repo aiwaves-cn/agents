@@ -1,6 +1,0 @@
-{
-    "problem": "The members of a band are arranged in a rectangular formation. When they are arranged in 8 rows, there are 2 positions unoccupied in the formation. When they are arranged in 9 rows, there are 3 positions unoccupied. How many members are in the band if the membership is between 100 and 200?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The number of members in the band leaves a remainder of 6 when divided by 8 and a remainder of 6 when divided by 9.  Therefore, the number of members is 6 more than a multiple of $9\\times8=72$.  The only such number between 100 and 200 is $72\\cdot 2 + 6=150$, so there are $\\boxed{150}$ members."
-}

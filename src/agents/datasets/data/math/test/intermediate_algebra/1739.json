@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be real numbers such that\n\\begin{align*}\na + b + c + d &= 1, \\\\\na + 2b + 4c + 8d &= 16, \\\\\na - 5b + 25c - 125d &= 625, \\\\\na + 6b + 36c + 216d &= 1296.\n\\end{align*}Enter the ordered quadruple $(a,b,c,d).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Consider the polynomial\n\\[p(x) = x^4 - dx^3 - cx^2 - bx - a.\\]Then $p(1) = 1 - d - c - b - a = 0.$  Similarly,\n\\begin{align*}\np(2) &= 16 - 8d - 4c - 2b - a = 0, \\\\\np(-5) &= 625 - 125d - 25c - 5b - a = 0, \\\\\np(6) &= 1296 - 216d - 36c - 6b - a = 0.\n\\end{align*}Since $p(x)$ has degree 4 and is monic,\n\\begin{align*}\np(x) &= (x - 1)(x - 2)(x + 5)(x - 6) \\\\\n&= x^4 - 4x^3 - 25x^2 + 88x - 60.\n\\end{align*}Hence, $(a,b,c,d) = \\boxed{(60,-88,25,4)}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many vertical asymptotes does the graph of $y=\\frac{x-3}{x^2+7x-30}$ have?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Factoring the denominator $x^2 + 7x - 30$, we get \\[y = \\frac{x - 3}{x^2 + 7x - 30} = \\frac{x - 3}{(x-3)(x+10)}.\\]The graph has a vertical asymptote at $x = -10$.  There is no vertical asymptote at $x = 3$, because the factors of $x - 3$ in the numerator and denominator cancel.  Therefore, the graph has $\\boxed{1}$ vertical asymptote."
-}

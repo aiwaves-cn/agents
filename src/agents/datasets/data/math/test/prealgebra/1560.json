@@ -1,6 +1,0 @@
-{
-    "problem": "Ellen baked $2$ dozen cupcakes of which half contained chocolate, two-thirds contained raisins, one-fourth contained chocolate chips, and one-sixth contained nuts.  What is the largest possible number of cupcakes that had none of these ingredients?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We know that two-thirds of the cupcakes contained raisins, so at most $1/3\\cdot24=8$ cupcakes had none of the ingredients. This is possible if all cupcakes with chocolate, chocolate chips, and nuts were also raisin cupcakes (there are more raisin cupcakes than each of the other cupcake types). Thus, the answer is $\\boxed{8}$."
-}

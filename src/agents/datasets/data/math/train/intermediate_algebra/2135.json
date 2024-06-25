@@ -1,6 +1,0 @@
-{
-    "problem": "Find the complex number $z$ such that\n\\[|z - 1| = |z + 3| = |z - i|.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z = a + bi,$ where $a$ and $b$ are real numbers.  Then\n\\[|(a - 1) + bi| = |(a + 3) + bi| = |a + (b - 1)i|.\\]Hence, $(a - 1)^2 + b^2 = (a + 3)^2 + b^2 = a^2 + (b - 1)^2.$\n\nFrom $(a - 1)^2 + b^2 = (a + 3)^2 + b^2,$ $8a = -8,$ so $a = -1.$  Then the equations above become\n\\[4 + b^2 = 1 + (b - 1)^2.\\]Solving, we find $b = -1.$  Therefore, $z = \\boxed{-1 - i}.$"
-}

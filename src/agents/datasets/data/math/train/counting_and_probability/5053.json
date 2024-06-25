@@ -1,6 +1,0 @@
-{
-    "problem": "An integer between $1000$ and $9999$, inclusive, is called balanced if the sum of its two leftmost digits equals the sum of its two rightmost digits. How many balanced integers are there?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "If the common sum of the first two and last two digits is $n$, such that $1 \\leq n \\leq 9$, there are $n$ choices for the first two digits and $n + 1$ choices for the second two digits (since zero may not be the first digit). This gives $\\sum_{n = 1}^9 n(n + 1) = 330$ balanced numbers. If the common sum of the first two and last two digits is $n$, such that $10 \\leq n \\leq 18$, there are $19 - n$ choices for both pairs. This gives $\\sum_{n = 10}^{18} (19 - n)^2 = \\sum_{n = 1}^9 n^2 = 285$ balanced numbers. Thus, there are in total $330 + 285 = \\boxed{615}$ balanced numbers.\nBoth summations may be calculated using the formula for the sum of consecutive squares, namely $\\sum_{k=1}^n k^2 = \\frac{n(n+1)(2n+1)}{6}$."
-}

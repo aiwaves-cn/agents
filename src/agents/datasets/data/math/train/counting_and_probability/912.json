@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive integer that is both an integer power of 11 and is not a palindrome.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Because of the symmetric nature of the number 11, it is a divisor of many palindromes.  Expanding powers of $x+y$ (where $x = 10$ and $y = 1$) helps us see why the first few powers of 11 are all palindromes:  \\begin{align*}\n(x + y)^2 &= x^2 + 2xy + y^2 \\\\\n11^2 &= 121 \\\\\n(x + y)^3 &= x^3 + 3x^2y + 3xy^2 + y^3 \\\\\n11^3 &= 1331 \\\\\n(x + y)^4 &= x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + y^4\\\\\n11^4 &= 14641 \\\\\n(x + y)^5 &= x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 + y^5 \\\\\n11^5 &= 161051 \\end{align*} Notice that each term of the form $x^i y^{n-i}$ ends up being a power of $10$, and the digits of $(x+y)^n$ end up being the binomial coefficients when these coefficients are less than $10$, as there is no carrying. Because of the identity $\\binom{n}{i}=\\binom{n}{n-i}$, the number is a palindrome whenever the coefficients are all less than $10$, which is true for powers less than 5. However, from the list above, we see that $(x+y)^5$ has coefficients at least 10, and indeed, we have $11^5 = \\boxed{161051}$, which is not a palindrome."
-}

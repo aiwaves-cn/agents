@@ -1,6 +1,0 @@
-{
-    "problem": "If Michael rolls three fair dice, what is the probability that he will roll at least two 1's? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We calculate the complement, or the probability that Michael does not roll at least two 1's, and then subtract from 1.  If Michael does not roll at least two 1's, he must roll either zero or one.  The probability that he rolls no 1's is  $$\\frac{5}{6}\\cdot\\frac{5}{6}\\cdot\\frac{5}{6} = \\left(\\frac{5}{6}\\right)^3 = \\frac{125}{216}$$The probability that he rolls one 1 is $$\\left(\\binom{3}{1}\\cdot\\frac{1}{6}\\right)\\cdot\\frac{5}{6}\\cdot\\frac{5}{6} = \\binom{3}{1}\\left(\\frac{25}{216}\\right) = \\frac{75}{216},$$since we can choose which of the dice rolled a 1 in $\\binom{3}{1}$ ways.  Thus our answer is $1-\\frac{125}{216}-\\frac{75}{216} = \\frac{16}{216}=\\boxed{\\frac{2}{27}}$."
-}

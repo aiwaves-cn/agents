@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $$\\frac{11!}{9! + 2\\cdot 8!}$$",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The denominator can be simplified a bit to make this easier to calculate:\n\n\\begin{align*}\n\\frac{11!}{9! + 2\\cdot 8!} &= \\frac{11!}{9\\cdot 8! + 2\\cdot 8!} \\\\\n&= \\frac{11!}{11\\cdot 8!} \\\\\n&= \\frac{10!}{8!} \\\\\n&= 10 \\cdot 9 \\\\\n&= \\boxed{90}\n\\end{align*}"
-}

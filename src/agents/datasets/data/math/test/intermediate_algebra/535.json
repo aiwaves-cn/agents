@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $|2\\omega^2-4\\omega-30|$ if $\\omega=1-5i$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "It's certainly possible to just calculate the complex number $2\\omega^2-4\\omega-30$ by just plugging in the value of $\\omega$, but it's computationally simpler to use the fact that $|ab|=|a||b|$ and our knowledge of factoring quadratics: \\begin{align*}\n|2\\omega^2-4\\omega-30|&=|2(\\omega-5)(\\omega+3)|\\\\\n&=2|\\omega-5|\\cdot|\\omega+3|\\\\\n&=2|-4-5i|\\cdot|4-5i|\\\\\n&=2\\sqrt{(-4)^2+5^2}\\sqrt{4^2+5^2}\\\\\n&=\\boxed{82}\n\\end{align*}"
-}

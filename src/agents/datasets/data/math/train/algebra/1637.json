@@ -1,6 +1,0 @@
-{
-    "problem": "Juan, Carlos and Manu take turns flipping a coin in their respective order. The first one to flip heads wins. What is the probability that Manu will win? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "For Manu to win on his first turn, the sequence of flips would have to be TTH, which has probability $\\left(\\frac{1}{2}\\right)^3$.  For Manu to win on his second turn, the sequence of flips would have to be TTTTTH, which has probability $\\left(\\frac{1}{2}\\right)^6$.  Continuing, we find that the probability that Manu wins on his $n$th turn is $\\left(\\frac{1}{2}\\right)^{3n}$.  The probability that Manu wins is the sum of these probabilities, which is \\[\n\\frac{1}{2^3}+\\frac{1}{2^6}+\\frac{1}{2^9}+\\cdots=\\frac{\\frac{1}{2^3}}{1-\\frac{1}{2^3}}=\\boxed{\\frac{1}{7}},\n\\] where we have used the formula $a/(1-r)$ for the sum of an infinite geometric series whose first term is $a$ and whose common ratio is $r$."
-}

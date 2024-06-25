@@ -1,6 +1,0 @@
-{
-    "problem": "The matrices\n\\[\\begin{pmatrix} 3 & -8 \\\\ a & 11 \\end{pmatrix} \\quad \\text{and} \\quad \\begin{pmatrix} 11 & b \\\\ 4 & 3 \\end{pmatrix}\\]are inverses.  Enter the ordered pair $(a,b).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The product of the matrices is\n\\[\\begin{pmatrix} 3 & -8 \\\\ a & 11 \\end{pmatrix} \\begin{pmatrix} 11 & b \\\\ 4 & 3 \\end{pmatrix} = \\begin{pmatrix} 1 & 3b - 24 \\\\ 11a + 44 & ab + 33 \\end{pmatrix}.\\]We want this to be the identity matrix, so $3b - 24 = 0,$ $11a + 44 = 0,$ and $ab + 33 = 1.$  Solving, we find $(a,b) = \\boxed{(-4,8)}.$"
-}

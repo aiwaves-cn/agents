@@ -1,6 +1,0 @@
-{
-    "problem": "$5$ green balls and $2$ red balls together weigh $10$ pounds, and $1$ green ball and $4$ red balls together weigh $7$ pounds. If all red balls weigh the same amount and all green balls weigh the same, then what is the weight of $8$ red and $8$ green balls together?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Find the sum of the weights of a green and a red ball.\n\nAs before, we have $5g + 2r =10$ and $g+4r=7.$ Before solving this system of equations, we note that we seek $8g+8r,$ which equals $8(g+r).$  So, if we can find $g+r,$ we can find the total weight of the balls $\\emph{without finding the weight of each ball}.$ Looking at our equations, we see a total of $6g$ and $6r$ on the left, so adding the two equations can get us to $g+r.$ Adding the equations gives $6g+6r = 17,$ and dividing both sides by $6$ gives $$g+r = \\frac{17}{6}.$$ Therefore, we have $$8g+8r= 8(g+r) = 8\\cdot\\frac{17}{6} = \\boxed{\\frac{68}{3}\\text{ pounds}}.$$"
-}

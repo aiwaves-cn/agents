@@ -1,6 +1,0 @@
-{
-    "problem": "Phil has 7 green marbles and 3 purple marbles in a bag. He removes a marble at random, records the color, puts it back, and then repeats this process until he has withdrawn 6 marbles. What is the probability that exactly three of the marbles that he removes are green? Express your answer as a decimal rounded to the nearest thousandth.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There is a $\\left( \\frac{7}{10} \\right) ^3 \\left( \\frac{3}{10} \\right) ^3 = \\frac{9261}{1000000}$ probability that 3 particular marbles out of 6 will be green and the rest will be purple. There are also  $\\binom{6}{3}=20$ ways to choose which 3 out of the 6 are the green ones. Because these ways are all mutually exclusive, we multiply to get the probability that we're looking for: $20 \\cdot \\frac{9261}{1000000}\\approx \\boxed{.185}$."
-}

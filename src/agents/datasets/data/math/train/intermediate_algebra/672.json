@@ -1,6 +1,0 @@
-{
-    "problem": "Find the maximum of\n\\[\\sqrt{x + 27} + \\sqrt{13 - x} + \\sqrt{x}\\]for $0 \\le x \\le 13.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz applied to $ \\left( 1,\\frac{1}{3},\\frac{1}{2}\\right) $ and $ (\\sqrt{x+27},\\sqrt{13-x},\\sqrt{x}) $,\n\\[\\left( 1 + \\frac{1}{3} + \\frac{1}{2} \\right) ((x + 27) + 3(13 - x) + 2x) \\ge (\\sqrt{x + 27} + \\sqrt{13 - x} + \\sqrt{x})^2.\\]Hence,\n\\[(\\sqrt{x + 27} + \\sqrt{13 - x} + \\sqrt{x})^2 \\le 121,\\]so $\\sqrt{x + 27} + \\sqrt{13 - x} + \\sqrt{x} \\le 11.$\n\nEquality occurs when $x = 9,$ so the maximum value is $\\boxed{11}.$"
-}

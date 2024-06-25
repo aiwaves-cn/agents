@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be nonzero real numbers.  Find the maximum angle between the vectors $\\begin{pmatrix} a \\\\ b \\\\ c \\end{pmatrix}$ and $\\begin{pmatrix} b \\\\ c \\\\ a \\end{pmatrix},$ in degrees.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\theta$ be the angle between the two vectors.  Then\n\\[\\cos \\theta = \\frac{\\begin{pmatrix} a \\\\ b \\\\ c \\end{pmatrix} \\cdot \\begin{pmatrix} b \\\\ c \\\\ a \\end{pmatrix}}{\\left\\| \\begin{pmatrix} a \\\\ b \\\\ c \\end{pmatrix} \\right\\| \\left\\|\\begin{pmatrix} b \\\\ c \\\\ a \\end{pmatrix} \\right\\|} = \\frac{ab + ac + bc}{a^2 + b^2 + c^2}.\\]We can say that\n\\[(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + ac + bc) \\ge 0,\\]so $2(ab + ac + bc) \\ge -(a^2 + b^2 + c^2).$  Since $a,$ $b,$ and $c$ are nonzero, $a^2 + b^2 + c^2 > 0,$ so\n\\[\\frac{2(ab + ac + bc)}{a^2 + b^2 + c^2} \\ge -1.\\]Hence,\n\\[\\cos \\theta = \\frac{ab + ac + bc}{a^2 + b^2 + c^2} \\ge -\\frac{1}{2}.\\]The largest angle $\\theta$ that satisfies this is $\\boxed{120^\\circ}.$  Equality occurs for any nonzero real numbers $a,$ $b,$ $c$ that satisfy $a + b + c = 0.$"
-}

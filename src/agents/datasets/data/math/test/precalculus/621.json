@@ -1,6 +1,0 @@
-{
-    "problem": "For real numbers $t$ where $\\tan t$ and $\\sec t$ are defined, the point\n\\[(x,y) = (\\tan t, \\sec t)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Let $x = \\tan t$ and $y = \\sec t.$  Then\n\\[y^2 - x^2 = \\sec^2 t - \\tan^2 t = 1,\\]so all the plotted points lie on a hyperbola.  The answer is $\\boxed{\\text{(E)}}.$"
-}

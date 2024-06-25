@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[b^2 f(a) = a^2 f(b)\\]for all real numbers $a$ and $b.$  If $f(2) \\neq 0,$ find\n\\[\\frac{f(5) - f(1)}{f(2)}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $a = 5$ and $b = 2,$ we get\n\\[4f(5) = 25f(2),\\]so $\\frac{f(5)}{f(2)} = \\frac{25}{4}.$\n\nSetting $a = 1$ and $b = 2,$ we get\n\\[4f(1) = f(2),\\]so $\\frac{f(1)}{f(2)} = \\frac{1}{4}.$  Hence,\n\\[\\frac{f(5) - f(1)}{f(2)} = \\frac{25}{4} - \\frac{1}{4} = \\boxed{6}.\\]"
-}

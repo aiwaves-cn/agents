@@ -1,6 +1,0 @@
-{
-    "problem": "Randy presses RAND on his calculator twice to obtain two random numbers between 0 and 1. Let $p$ be the probability that these two numbers and 1 form the sides of an obtuse triangle.  Find $4p$.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let the two random numbers be $x$ and $y$. In order to form an obtuse triangle, since 1 will be the longest side, we must simultaneously satisfy the following inequalities: $$x+y>1\\text{ and }x^2+y^2<1.$$The first is the triangle inequality and the second guarantees that the triangle is obtuse. Graphing these in the $xy$-plane, we get the following shaded region. [asy]\ndraw(unitsquare);\ndraw((0,0)--(1,0),EndArrow);\ndraw((0,0)--(0,1),EndArrow);\nlabel(\"0\",(0,0),SW);\nlabel(\"1\",(1,0),S);\nlabel(\"1\",(0,1),W);\nlabel(\"$x$\",(.5,0),S);\nlabel(\"$y$\",(0,.5),W);\nfill((1,0)--(0,1)..(3/5,4/5)..cycle,gray(.7));\n[/asy] The curve is an arc of the unit circle centered at the origin. This area is then equal to that sector minus the right isosceles triangle within it, or $\\frac{\\pi}{4}-\\frac{1}{2}=\\frac{\\pi-2}{4}.$ And since the area of the square is $1,$ $p = \\frac{\\pi-2}{4}.$\n\nFour times $p$ is $\\boxed{\\pi-2}$."
-}

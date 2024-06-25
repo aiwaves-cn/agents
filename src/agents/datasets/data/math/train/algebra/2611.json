@@ -1,6 +1,0 @@
-{
-    "problem": "Participation in the local soccer league is $10\\%$ higher this year than it was last year. Also, from last year to this year, the number of males increased by $5\\%$ and the number of females increased by $20\\%$. There were $20$ males participating in the league last year. What fraction of the league's participants is female this year? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since there were $20$ males last year, there are $1.05 \\cdot 20 =21$ males this year.\n\nWe set the number of females last year as $x$. This means that there are $1.2x$ females this year.\n\nIn total, there were $20+x$ people in the league last year, and $1.1 \\cdot (20+x)$ this year. We then have: \\begin{align*}\n22+1.1x &= 21+1.2x \\\\\n1 &= 0.1x \\\\\nx &= 10.\n\\end{align*} Therefore, there were $10$ girls last year. This means there are $1.2 \\cdot 10 =12$ girls this year. So there are $\\frac{12}{12+21}=\\frac{12}{33}=\\boxed{\\frac{4}{11}}$ girls out of the participants this year."
-}

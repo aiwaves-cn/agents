@@ -1,6 +1,0 @@
-{
-    "problem": "Find [the decimal form of] the largest prime divisor of $100111011_6$.\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Using the definition of base numbers, $100111011_6 = 6^8 + 6^5 + 6^4 + 6^3 + 6 + 1$. Let $x = 6$, so the number equals $x^8 + x^5 + x^4 + x^3 + x + 1$.\nBy using the Rational Root Theorem, $x+1$ is a factor of $x^8 + x^5 + x^4 + x^3 + x + 1$, so the polynomial factors into $(x+1)(x^7 - x^6 + x^5 + x^3 + 1)$.\nThe first three terms share a common factor of $x^5$, and the last two terms is a sum of cubes, so the expression can be grouped and factored as $(x+1)(x^5 (x^2 - x + 1) + (x+1)(x^2 - x + 1) = (x+1)(x^2 - x + 1)(x^5 + x + 1)$.\nTo factor the quintic polynomial, add and subtract $x^2$ to get $x^5 - x^2 + x^2 + x + 1$. Factoring out $x^2$ in the first two terms results in $x^2 (x^3 - 1) + x^2 + x + 1 = x^2 (x-1)(x^2 + x + 1) + x^2 + x + 1$, and factoring by grouping results in $(x^2 + x + 1)(x^3 - x^2 + 1)$.\nThus, the polynomial can be factored into $(x+1)(x^2 - x + 1)(x^2 + x + 1)(x^3 - x^2 + 1)$, and substituting $x = 6$ results in $7 \\cdot 31 \\cdot 43 \\cdot 181$. A prime test shows that $\\boxed{181}$ is the largest prime factor of $100111011_6$ in decimal form."
-}

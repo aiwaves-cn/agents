@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of the quadratic $y = ax^2 + bx + c$ has the following properties: (1) The maximum value of $y = ax^2 + bx + c$ is 5, which occurs at $x = 3$. (2) The graph passes through the point $(0,-13)$. If the graph passes through the point $(4,m)$, then what is the value of $m$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since the maximum value of $y = ax^2 + bx + c$ is 5, which occurs at $x = 3$, this tells us that the vertex of the parabola is $(3,5)$.  Hence, the quadratic is of the form $y = a(x - 3)^2 + 5$, where $a$ is a negative number.  (We know that $a$ is negative because $y$ has a maximum value.)\n\nWe are also told that the graph passes through the point $(0,-13)$.  Substituting these coordinates into the equation $y = a(x - 3)^2 + 5$, we get $-13 = 9a + 5$, so $a = (-5 - 13)/9 = -18/9 = -2$.  Therefore, the equation is $y =- 2(x - 3)^2+5$.\n\nWhen $x = 4$, we have $m = - 2 \\cdot 1^2 + 5 = \\boxed{3}$."
-}

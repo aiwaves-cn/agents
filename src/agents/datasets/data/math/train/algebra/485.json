@@ -1,6 +1,0 @@
-{
-    "problem": "What non-zero, real value of $x$ satisfies $(5x)^4= (10x)^3$? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "It may be easier to work with this if we leave both sides in somewhat factored form: \\begin{align*}\n(5x)^4&=(10x)^3\\\\\n\\Rightarrow\\qquad 5^4 x^4&=10^3 x^3\\\\\n\\Rightarrow\\qquad 5^4 x^4&=5^3 2^3 x^3\n\\end{align*} Since $x$ is non-zero, we can cancel the common factor of $x^3$: $$\\Rightarrow\\qquad 5^4 x=5^3 2^3$$ Now, cancel $5^3$: \\begin{align*}\n5x&=8\\\\\n\\Rightarrow\\qquad x&=\\boxed{\\frac{8}{5}}\n\\end{align*}"
-}

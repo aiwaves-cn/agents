@@ -1,6 +1,0 @@
-{
-    "problem": "Some positive integers have exactly four positive factors. For example, 35 has only 1, 5, 7 and 35 as its factors. What is the sum of the smallest five positive integers that each have exactly four positive factors?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The positive integers with exactly four positive factors can be written in the form $pq$, where $p$ and $q$ are distinct prime numbers, or $p^3$, where $p$ is a prime number.\n\nUsing this, we can see that the smallest five positive integers with exactly four positive factors are $2\\cdot 3 = 6$, $2^3 = 8$, $2\\cdot 5 = 10$, $2\\cdot 7 = 14$, and $3\\cdot 5 = 15$. Summing these numbers, we get $6 + 8 + 10 + 14 + 15 = \\boxed{53}$."
-}

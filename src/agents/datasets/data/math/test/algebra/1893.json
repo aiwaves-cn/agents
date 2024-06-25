@@ -1,6 +1,0 @@
-{
-    "problem": "Richard is building a rectangular playground from 200 feet of fencing. The fencing must entirely enclose the playground. What is the maximum area of this playground?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let the length of the playground be $l$ and the width be $w$. We have the equation $2l+2w=200 \\Rightarrow l + w = 100$. We want to maximize the area of this rectangular playground, which is given by $lw$. From our equation, we know that $l=100-w$. Substituting this in to our expression for area, we have \\[(100-w)(w)=100w-w^2\\]We will now complete the square to find the maximum value of this expression. Factoring a $-1$ out, we have \\[-(w^2-100w)\\]In order for the expression inside the parenthesis to be a perfect square, we need to add and subtract $(100/2)^2=2500$ inside the parenthesis. Doing this, we get \\[-(w^2-100w+2500-2500) \\Rightarrow -(w-50)^2+2500\\]Since the maximum value of $-(w-50)^2$ is 0 (perfect squares are always nonnegative), the maximum value of the entire expression is 2500, which is achieved when $w=50$ and $l=100-w=50$ (the playground is a square). Thus, the maximum area of the playground is $\\boxed{2500}$ square feet."
-}

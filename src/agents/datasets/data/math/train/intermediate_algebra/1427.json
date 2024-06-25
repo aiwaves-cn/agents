@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ $z$ be real numbers, all greater than 3, so that\n\\[\\frac{(x + 2)^2}{y + z - 2} + \\frac{(y + 4)^2}{z + x - 4} + \\frac{(z + 6)^2}{x + y - 6} = 36.\\]Enter the ordered triple $(x,y,z).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(y + z - 2) + (z + x - 4) + (x + y - 6)] \\left[ \\frac{(x + 2)^2}{y + z - 2} + \\frac{(y + 4)^2}{z + x - 4} + \\frac{(z + 6)^2}{x + y - 6} \\right] \\ge [(x + 2) + (y + 4) + (z + 6)]^2.\\]This simplifies to\n\\[36(2x + 2y + 2z - 12) \\ge (x + y + z + 12)^2.\\]Let $s = x + y + z.$  Then $36(2s - 12) \\ge (s + 12)^2.$  This simplifies to $s^2 - 48s + 576 \\le 0,$ which then factors as $(s - 24)^2 \\le 0.$  Hence, $s = 24.$\n\nThus, the inequality above turns into an equality, which means\n\\[\\frac{x + 2}{y + z - 2} = \\frac{y + 4}{z + x - 4} = \\frac{z + 6}{x + y - 6}.\\]Since $x + y + z = 24,$\n\\[\\frac{x + 2}{22 - x} = \\frac{y + 4}{20 - y} = \\frac{z + 6}{18 - z}.\\]Each fraction must then be equal to\n\\[\\frac{(x + 2) + (y + 4) + (z + 6)}{(22 - x) + (20 - y) + (18 - z)} = \\frac{x + y + z + 12}{60 - (x + y + z)} = 1.\\]From here, it is easy to solve for $x,$ $y,$ and $z,$ to find $x = 10,$ $y = 8,$ and $z = 6.$\n\nHence, $(x,y,z) = \\boxed{(10,8,6)}.$"
-}

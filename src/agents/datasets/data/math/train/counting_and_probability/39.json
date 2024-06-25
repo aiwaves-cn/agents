@@ -1,6 +1,0 @@
-{
-    "problem": "The Boston weatherman says there is a 75 percent chance of rain for each day of the Labor Day four-day weekend. If it doesn't rain, then the weather will be sunny.  Paul and Yuri want it to be sunny one of those days for a World War III preenactment, but if it's sunny for more than one day they won't know what to do with themselves. What is the probability they get the weather they want? Give your answer as a fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{4}{3}=4$ ways to choose which three of the four days it will be rainy so that the other day it will be sunny. For any of those 4 choices, there is a $\\left( \\frac{3}{4} \\right) ^3 \\left( \\frac{1}{4} \\right) ^1 = \\frac{27}{256}$ chance for that choice to happen, because there is a $\\frac{3}{4}$ chance that we get what we want when we want it to be rainy, and a $\\frac{1}{4}$ chance that we get what we want when we want it to be sunny. The total probability is then $4 \\cdot \\frac{27}{256}= \\boxed{\\frac{27}{64}}$."
-}

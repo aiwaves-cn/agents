@@ -1,6 +1,0 @@
-{
-    "problem": "We have that $3 \\cdot f(x) + 4 \\cdot g(x) = h(x)$ where $f(x),$ $g(x),$ and $h(x)$ are all polynomials in $x.$ If the degree of $f(x)$ is $8$ and the degree of $h(x)$ is $9$, then what is the minimum possible degree of $g(x)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If the degree of $h(x)$ is $9,$ that means there is a $x^9$ term in $h(x).$ That term cannot come from $f(x),$ since its degree is $8,$ so it must come from $g(x).$ That means the degree of $g(x)$ has to be at least $\\boxed{9},$ and indeed, it can only be $9.$"
-}

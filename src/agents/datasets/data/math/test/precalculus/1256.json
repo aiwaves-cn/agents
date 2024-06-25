@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$,\n\\[2a^2 + 4b^2 + c^2 = 4ab + 2ac.\\]Compute the numerical value of $\\cos B.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Moving everything to one side, we get\n\\[2a^2 + 4b^2 + c^2 - 4ab - 2ac = 0.\\]We can write this equation as\n\\[(a - 2b)^2 + (a - c)^2 = 0,\\]so $b = \\frac{a}{2}$ and $a = c.$  Then by the Law of Cosines,\n\\[\\cos B = \\frac{a^2 + c^2 - b^2}{2ac} = \\frac{a^2 + a^2 - \\frac{a^2}{4}}{2a^2} = \\boxed{\\frac{7}{8}}.\\]"
-}

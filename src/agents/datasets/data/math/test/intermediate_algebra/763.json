@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a_1,$ $a_2,$ $\\dots,$ $a_{12}$ be real numbers such that $a_1 + a_2 + \\dots + a_{12} = 1.$  Find the minimum value of\n\\[a_1^2 + a_2^2 + \\dots + a_{12}^2.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(1^2 + 1^2 + \\dots + 1^2)(a_1^2 + a_2^2 + \\dots + a_{12}^2) \\ge (a_1 + a_2 + \\dots + a_{12})^2,\\]so\n\\[a_1^2 + a_2^2 + \\dots + a_{12}^2 \\ge \\frac{1}{12}.\\]Equality occurs when $a_i = \\frac{1}{12}$ for all $i,$ so the minimum value is $\\boxed{\\frac{1}{12}}.$"
-}

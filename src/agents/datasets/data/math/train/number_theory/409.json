@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $10^{-1}\\pmod{1001}$. Express your answer as a residue from $0$ to $1000$, inclusive.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Notice that $1001=10\\cdot 100+1$. Therefore, $$10\\cdot 100\\equiv -1 \\pmod{1001},$$which implies that $$10\\cdot -100\\equiv 1\\pmod{1001}.$$The inverse of $10\\pmod{1001}$ is $-100$, but we need an answer in the interval from $0$ to $1000$. The equivalent residue in this interval is $-100+1001 = \\boxed{901}$.\n\nWe can check our answer: $10\\cdot 901 = 9010 = 9(1001)+1 \\equiv 1\\pmod{1001}$, so $901$ is indeed the inverse of $10\\pmod{1001}$."
-}

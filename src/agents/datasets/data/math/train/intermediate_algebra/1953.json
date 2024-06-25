@@ -1,6 +1,0 @@
-{
-    "problem": "Find the maximum number of real roots to a polynomial of the form\n\\[x^n + x^{n - 1} + \\dots + x + 1 = 0,\\]where $n$ is a positive integer.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "If $x^n + x^{n - 1} + \\dots + x + 1 = 0,$ then\n\\[(x - 1)(x^n + x^{n - 1} + \\dots + x + 1) = 0,\\]which expands as $x^{n + 1} - 1 = 0.$  Then $x^{n + 1} = 1.$  The only possible real roots of this equation are $x = 1$ and $x = -1.$\n\nNote that $x = 1$ cannot be a real root of\n\\[x^n + x^{n - 1} + \\dots + x + 1 = 0,\\]but $x = -1$ is a root whenever $n$ is odd.  Therefore, the maximum number of real roots is $\\boxed{1}.$"
-}

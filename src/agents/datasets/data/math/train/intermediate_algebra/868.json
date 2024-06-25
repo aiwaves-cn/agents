@@ -1,6 +1,0 @@
-{
-    "problem": "Complex numbers $a,$ $b,$ and $c$ are zeros of a polynomial $P(z) = z^3 + qz + r,$ and $|a|^2 + |b|^2 + |c|^2 = 250.$ The points corresponding to $a,$ $b,$ and $c$ in the complex plane are the vertices of a right triangle with hypotenuse $h.$ Find $h^2.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formula, the sum of the roots is equal to 0, or $a+b+c=0$. Therefore, $\\frac{a+b+c}{3}=0$.  Since the centroid of any triangle is the average of its vertices, the centroid of this triangle is the origin.\n\nWithout loss of generality, let the right angle be at $b.$  Let $x = |b - c|$ and $y = |a - b|.$  The magnitudes of $a$, $b$, and $c$ are just $\\frac{2}{3}$ of the medians because the origin, or the centroid in this case, cuts the median in a ratio of $2:1$.\n\nHence,\n\\[|a|^2=\\frac{4}{9}\\cdot \\left( \\left(\\frac{x}{2} \\right)^2+y^2 \\right)=\\frac{x^2}{9}+\\frac{4y^2}{9}\\]because $|a|$ is two thirds of the median from $a$. Similarly,\n\\[|c|^2=\\frac{4}{9}\\cdot \\left(x^2 + \\left( \\frac{y}{2} \\right)^2 \\right)=\\frac{4x^2}{9}+\\frac{y^2}{9}.\\]Furthermore,\n\\[|b|^2=\\frac{4}{9}\\cdot\\frac{x^2+y^2}{4}=\\frac{x^2}{9}+\\frac{y^2}{9}.\\]Hence,\n\\[|a|^2+|b|^2+|c|^2=\\frac{6x^2+6y^2}{9}=\\frac{2x^2+2y^2}{3}=250.\\]Thus, $h^2=x^2+y^2=\\frac{3}{2}\\cdot 250=\\boxed{375}.$"
-}

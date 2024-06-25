@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose 5 different integers are randomly chosen from between 20 and 69, inclusive.  What is the probability that they each have a different tens digit?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "In this set of integers, there are 5 tens digits: {2, 3, 4, 5, 6}.  If 5 integers all have different tens digits, then there must be exactly one integer among the 5 with each tens digit.  Since there are 10 different integers for each tens digit, the number of ways to pick, without regard to order, 5 different integers with different tens digits is $10^5$.  The total number of combinations of 5 integers is $\\binom{50}{5}$.  So the probability that 5 integers drawn all have the different tens digits is $$ \\frac{10^5}{\\binom{50}{5}} = \\frac{100000}{2118760} = \\boxed{\\frac{2500}{52969}}. $$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The sign function $\\text{sgn}(x)$ is defined by \\[\\text{sgn}(x) = \\left\\{ \\begin{aligned} -1 \\quad &\\text{if } x < 0 \\\\ 0 \\quad &\\text{if } x = 0 \\\\ 1 \\quad &\\text{if } x > 0. \\end{aligned} \\right. \\]Compute $\\sum_{n=-10}^{20} \\text{sgn}(n).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The given sum equals \\[\\text{sgn}(-10) + \\text{sgn}(-9) + \\dots + \\text{sgn}(-1) + \\text{sgn}(0) + \\text{sgn}(1) + \\text{sgn}(2) + \\dots + \\text{sgn}(20),\\]which comes out to $10(-1) + 1(0) + 20(1) = \\boxed{10}.$"
-}

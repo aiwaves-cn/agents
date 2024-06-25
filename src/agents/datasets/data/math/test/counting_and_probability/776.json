@@ -1,6 +1,0 @@
-{
-    "problem": "The planning committee at school has 11 members. Exactly five of these members are teachers. A four-person subcommittee with at least one member who is not a teacher must be formed from the members of the planning committee. How many distinct subcommittees are possible?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Because there are 5 teachers on the committee, there are 6 non-teachers. Now, in total, we can form ${11 \\choose 4} = 330$ subcomittees. The number of subcommittees with zero non-teachers is the number of subcommittees formed by the 5 teachers, totaling ${5 \\choose 4} = 5$. So, the number of subcomittees with at least one non-teacher is $330 - 5 = \\boxed{325}$."
-}

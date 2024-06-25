@@ -1,6 +1,0 @@
-{
-    "problem": "Let $F_n$ be the Fibonacci sequence, that is, $F_0 = 0$, $F_1 = 1$, and $F_{n+2} = F_{n+1} + F_n$.  Compute\n\\[\\sum_{n=0}^{\\infty} \\frac{F_n}{10^n}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $S = \\sum_{n = 0}^\\infty \\frac{F_n}{10^n}.$  Then\n\\begin{align*}\nS &= F_0 + \\frac{F_1}{10} + \\frac{F_2}{10^2} + \\frac{F_3}{10^3} + \\dotsb \\\\\n&= \\frac{F_0 + 1}{10} + \\frac{F_1 + F_0}{10^2} + \\frac{F_2 + F_1}{10^3} + \\dotsb \\\\\n&= \\frac{1}{10} + \\frac{F_0}{10} + \\frac{F_1}{10^2} + \\frac{F_2}{10^3} + \\dotsb + \\frac{F_0}{10^2} + \\frac{F_1}{10^3} + \\dotsb \\\\\n&= \\frac{1}{10} + \\frac{1}{10} S + \\frac{1}{10^2} S.\n\\end{align*}Solving, we find $S = \\boxed{\\frac{10}{89}}.$"
-}

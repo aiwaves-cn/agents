@@ -1,6 +1,0 @@
-{
-    "problem": "A line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -3 \\\\ -4 \\end{pmatrix} + t \\begin{pmatrix} 7 \\\\ -2 \\end{pmatrix}.\\]The equation of the line can be expressed in the form $y = mx + b.$  Enter the ordered pair $(m,b).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that $x = -3 + 7t$ and $y = -4 - 2t.$  Isolating $t$ in $x = -3 + 7t,$ we find\n\\[t = \\frac{x + 3}{7}.\\]Then\n\\begin{align*}\ny &= -4 - 2t \\\\\n&= -4 - 2 \\cdot \\frac{x + 3}{7} \\\\\n&= -\\frac{2}{7} x - \\frac{34}{7}.\n\\end{align*}Thus, $(m,b) = \\boxed{\\left( -\\frac{2}{7}, -\\frac{34}{7} \\right)}.$"
-}

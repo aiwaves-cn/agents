@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify: $$\\sqrt[3]{2744000}$$",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "First, we can factor out $1000=10^3$, so $\\sqrt[3]{2744000}=10\\sqrt[3]{2744}$.  To proceed, we can take out factors of two from 2744, to find that $2744=2\\cdot1372=2\\cdot2\\cdot686=2^3\\cdot343$.  With a little bit of guess and check, notice that $7^3=343$.  Therefore, $10\\sqrt[3]{2744}=10(14)=\\boxed{140}$."
-}

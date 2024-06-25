@@ -1,6 +1,0 @@
-{
-    "problem": "The Lucas numbers $L_n$ are given by the recursion $L_0 = 2, L_1 = 1$, and $L_n = L_{n-1} + L_{n-2}$. Find the units digit of $L_{L_{10}}$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we need to find $L_{10}$. We find that \\begin{align*}L_2 &= L_1 + L_0 = 3,\\\\ L_3 &= L_2 + L_1 = 4,\\\\ L_4 &= 7,\\\\ L_5 &= 11,\\\\ L_6 &= 18,\\\\ L_7 &= 29,\\\\ L_8 &= 47,\\\\ L_9 &= 76,\\\\ L_{10} &= 123\\end{align*}Thus, $L_{L_{10}} = L_{123}$. To find its units digit, we continue listing more values in the sequence until we reach a pattern: the units digit of $L_{11}$ is that of $123 + 76$, and so is $9$; that of $L_{12}$ is $2$; and that of $L_{13}$ is $1$. Hence, the units digit repeats starting from here, with a period of $12$. As $123 = 12 \\times 10 + 3$, then the units digit of $L_{123}$ is the same as that of $L_3$, or $\\boxed{4}$."
-}

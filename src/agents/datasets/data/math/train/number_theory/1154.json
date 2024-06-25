@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $9^{1995}$ is divided by 7?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that $9^{1995} \\equiv 2^{1995} \\pmod{7}$.  Also, note that $2^3 = 8 \\equiv 1 \\pmod{7}$.  Therefore, \\[2^{1995} = 2^{3 \\cdot 665} = (2^3)^{665} \\equiv \\boxed{1} \\pmod{7}.\\]"
-}

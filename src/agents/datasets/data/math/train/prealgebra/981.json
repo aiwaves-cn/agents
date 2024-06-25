@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $ABCD$ is a square with side length $6,$ and $WXYZ$ is a rectangle with $ZY=10$ and $XY=6.$ Also, $AD$ and $WX$ are perpendicular. If the shaded area is equal to half of the area of $WXYZ,$ what is the length of $AP?$\n\n[asy]\ndraw((0,0)--(10,0)--(10,6)--(0,6)--cycle,black+linewidth(1));\ndraw((1.5,1)--(7.5,1)--(7.5,7)--(1.5,7)--cycle,black+linewidth(1));\nfilldraw((1.5,1)--(7.5,1)--(7.5,6)--(1.5,6)--cycle,gray,black+linewidth(1));\nlabel(\"$W$\",(0,6),NW);\nlabel(\"$X$\",(10,6),NE);\nlabel(\"$Y$\",(10,0),SE);\nlabel(\"$Z$\",(0,0),SW);\nlabel(\"$A$\",(1.5,7),NW);\nlabel(\"$B$\",(7.5,7),NE);\nlabel(\"$C$\",(7.5,1),E);\nlabel(\"$D$\",(1.5,1),W);\nlabel(\"$P$\",(1.5,6),SW);\nlabel(\"6\",(1.5,7)--(7.5,7),N);\nlabel(\"6\",(10,0)--(10,6),E);\nlabel(\"10\",(0,0)--(10,0),S);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The area of rectangle $WXYZ$ is $10 \\times 6 = 60.$\n\nSince the shaded area is half of the total area of $WXYZ,$ its area is $\\frac{1}{2}\\times 60=30.$\n\nSince $AD$ and $WX$ are perpendicular, the shaded area has four right angles, so is a rectangle.\n\nSince square $ABCD$ has a side length of $6,$ we have $DC=6.$\n\nSince the shaded area is $30,$ then $PD \\times DC=30$ or $PD \\times 6 = 30$ or $PD=5.$\n\nSince $AD=6$ and $PD=5,$ we obtain $AP=\\boxed{1}.$"
-}

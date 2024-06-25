@@ -1,6 +1,0 @@
-{
-    "problem": "The harmonic mean of two positive integers is the reciprocal of the arithmetic mean of their reciprocals. For how many ordered pairs of positive integers $(x,y)$ with $x<y$ is the harmonic mean of $x$ and $y$ equal to $6^{20}$?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The harmonic mean of $x$ and $y$ is equal to $\\frac{1}{\\frac{\\frac{1}{x}+\\frac{1}{y}}2} = \\frac{2xy}{x+y}$, so we have $xy=(x+y)(3^{20}\\cdot2^{19})$, and by SFFT, $(x-3^{20}\\cdot2^{19})(y-3^{20}\\cdot2^{19})=3^{40}\\cdot2^{38}$. Now, $3^{40}\\cdot2^{38}$ has $41\\cdot39=1599$ factors, one of which is the square root ($3^{20}2^{19}$). Since $x<y$, the answer is half of the remaining number of factors, which is $\\frac{1599-1}{2}= \\boxed{799}$."
-}

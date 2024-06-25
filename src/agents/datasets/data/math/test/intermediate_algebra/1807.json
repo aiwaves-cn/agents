@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be nonnegative real numbers such that $x + y = 1.$  Find the maximum value of\n\\[x^4 y + xy^4.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\begin{align*}\nx^4 y + xy^4 &= xy(x^3 + y^3) \\\\\n&= xy (x + y)(x^2 - xy + y^2) \\\\\n&= xy [(x + y)^2 - 3xy] \\\\\n&= xy (1 - 3xy) \\\\\n&= \\frac{3xy (1 - 3xy)}{3}.\n\\end{align*}By AM-GM,\n\\[3xy (1 - 3xy) \\le \\left( \\frac{3xy + (1 - 3xy)}{2} \\right)^2 = \\frac{1}{4},\\]so\n\\[x^4 y + xy^4 \\le \\frac{1}{12}.\\]Equality occurs when $x + y = 1$ and $3xy = \\frac{1}{2}.$  By Vieta's formulas, $x$ and $y$ are the roots of $t^2 - t + \\frac{1}{6} = 0.$  These roots are\n\\[\\frac{3 \\pm \\sqrt{3}}{6}.\\]Hence, the maximum value is $\\boxed{\\frac{1}{12}}.$"
-}

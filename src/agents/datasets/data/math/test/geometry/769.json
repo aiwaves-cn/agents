@@ -1,6 +1,0 @@
-{
-    "problem": "Points $A$, $B$, and $C$ are on a circle such that $AB = 8$, $BC = 15$, and $AC = 17$.  Find the radius of the circle.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Since $AB^2 + BC^2 = AC^2$, triangle $ABC$ is a right triangle with right angle at $\\angle B$.  The circumcenter of a right triangle is the midpoint of the hypotenuse of the triangle.  So, the midpoint of $\\overline{AC}$ is the center of the circle, and the radius is $AC/2 = \\boxed{\\frac{17}{2}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $ \\sum_{n=1}^\\infty  (\\tan^{-1}\\sqrt{n}-\\tan^{-1}\\sqrt{n+1})$?\n\nYour answer should be in radians.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The $k$th partial sum is\n\\begin{align*}\n\\sum_{n = 1}^k (\\tan^{-1} \\sqrt{n} - \\tan^{-1} \\sqrt{n + 1}) &= (\\tan^{-1} 1 - \\tan^{-1} \\sqrt{2}) + (\\tan^{-1} \\sqrt{2} - \\tan^{-1} \\sqrt{3}) \\\\\n&\\quad + (\\tan^{-1} \\sqrt{3} - \\tan^{-1} \\sqrt{4}) + \\dots + (\\tan^{-1} \\sqrt{k} - \\tan^{-1} \\sqrt{k + 1}) \\\\\n&= \\tan^{-1} 1 - \\tan^{-1} \\sqrt{k + 1} \\\\\n&= \\frac{\\pi}{4} - \\tan^{-1} \\sqrt{k + 1}.\n\\end{align*}As $k$ goes to infinity, $\\tan^{-1} \\sqrt{k + 1}$ approaches $\\frac{\\pi}{2},$ so the limit of the sum as $n$ goes to infinity is $\\frac{\\pi}{4} - \\frac{\\pi}{2} = \\boxed{-\\frac{\\pi}{4}}.$"
-}

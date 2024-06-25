@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)$ be a monic polynomial of degree 4.  Three of the roots of $p(x)$ are 1, 2, and 3.  Find $p(0) + p(4).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since three of the roots of $p(x)$ are 1, 2, and 3, we can write\n\\[p(x) = (x - 1)(x - 2)(x - 3)(x - r).\\]Then\n\\begin{align*}\np(0) + p(4) &= (-1)(-2)(-3)(-r) + (3)(2)(1)(4 - r) \\\\\n&= 6r + 24 - 6r = \\boxed{24}.\n\\end{align*}"
-}

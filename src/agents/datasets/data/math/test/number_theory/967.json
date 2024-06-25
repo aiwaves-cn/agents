@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $$\\begin{array}{@{}c@{\\;}c@{}c@{}c} && &P_b \\\\ & \\times & & P_b \\\\ \\cline{2-4} & & Q & P_b, \\\\ \\end{array} $$where $P$, $Q$, and $b$ represent three distinct digits 1-9. If $Q=\\frac{P}{2}$, and $P$ is two less than $b$, what is the value of the digit $P$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can rewrite $QP_b$ as $Q\\cdot b+P$, or $\\left(\\frac{P}{2}\\right)b+P$ in base 10. So, we have $P\\cdot P=\\left(\\frac{P}{2}\\right)b+P$. The value of $P$ is two less than $b$, so we substitute $(P+2)$ for $b$ and get \\begin{align*}\nP^2&=\\frac{P(P+2)}{2}+P\\quad\\Rightarrow\\\\\nP^2&=\\frac{P^2+2P+2P}{2}\\quad\\Rightarrow\\\\\n2P^2&=P^2+4P\\quad\\Rightarrow\\\\\nP^2-4P&=0\\quad\\Rightarrow\\\\\nP(P-4)&=0.\n\\end{align*}That means $P=0$ or $P=4$, but the problem says $P$ is a digit from 1 to 9. So, the value of $P$ is $\\boxed{4}$."
-}

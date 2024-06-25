@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be two non-zero vectors such that\n\\[\\mathbf{a} \\times (\\mathbf{a} \\times \\mathbf{b}) = -3 \\mathbf{b}.\\]Find $\\|\\mathbf{a}\\|.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "In general, the vector triple product states that for any vectors $\\mathbf{u},$ $\\mathbf{v},$ and $\\mathbf{w},$\n\\[\\mathbf{u} \\times (\\mathbf{v} \\times \\mathbf{w}) = (\\mathbf{u} \\cdot \\mathbf{w}) \\mathbf{v} - (\\mathbf{u} \\cdot \\mathbf{v}) \\mathbf{w}.\\]Thus, the given equation becomes\n\\[(\\mathbf{a} \\cdot \\mathbf{b}) \\mathbf{a} - (\\mathbf{a} \\cdot \\mathbf{a}) \\mathbf{b} = -3 \\mathbf{b}.\\]Then\n\\[(\\mathbf{a} \\cdot \\mathbf{b}) \\mathbf{a} = (\\mathbf{a} \\cdot \\mathbf{a} - 3) \\mathbf{b}.\\]If $\\mathbf{a}$ and $\\mathbf{b}$ are parallel, then $\\mathbf{a} \\times \\mathbf{b} = \\mathbf{0},$ which implies that $\\mathbf{b} = \\mathbf{0},$ which is not possible.  Hence, $\\mathbf{a}$ and $\\mathbf{b}$ are not parallel, i.e. neither is a scalar multiple of the other.  Therefore, the only way that this equation can hold is if both sides are equal to the zero vector.  This also implies $\\mathbf{a} \\cdot \\mathbf{a} = 3.$  Hence, $\\|\\mathbf{a}\\| = \\boxed{\\sqrt{3}}.$"
-}

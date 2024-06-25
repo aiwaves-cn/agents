@@ -1,6 +1,0 @@
-{
-    "problem": "The matrix\n\\[\\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix}\\]is its own inverse.  Enter the ordered pair $(c,d).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since $\\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix}$ is its own inverse,\n\\[\\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix}^2 = \\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 3 & -1 \\\\ c & d \\end{pmatrix} = \\mathbf{I}.\\]This gives us\n\\[\\begin{pmatrix} 9 - c & -d - 3 \\\\ cd + 3c & d^2 - c \\end{pmatrix} = \\mathbf{I}.\\]Then $9 - c = 1,$ $-d - 3 = 0,$ $cd + 3c = 0,$ and $d^2 - c = 1.$  Solving, we find $(c,d) = \\boxed{(8,-3)}.$"
-}

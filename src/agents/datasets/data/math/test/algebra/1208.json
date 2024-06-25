@@ -1,6 +1,0 @@
-{
-    "problem": "An infinite geometric series has sum 2000.  A new series, obtained by squaring each term of the original series, has sum 16 times the sum of the original series.  The common ratio of the original series is $m/n$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $a$ be the first term and $r$ the ratio of the original series, and let $S=2000$.  Then $\\displaystyle{a\\over{1-r}}=S$ and $\\displaystyle{{a^2}\\over{1-r^2}}=16S$. Factor to obtain $16S=\\displaystyle\\left({a\\over{1-r}}\\right)\n\\left({a\\over{1+r}}\\right)=S\\cdot{a\\over{1+r}}$.  Then $16=\\displaystyle{a\\over{1+r}}$ and $S=\\displaystyle{a\\over{1-r}}$ imply that $S(1-r)=16(1+r)$, so $r=\\displaystyle{{S-16}\\over{S+16}}=\\frac{1984}{2016}=\\frac{62}{63}$, and $m+n=62+63=\\boxed{125}$."
-}

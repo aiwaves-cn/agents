@@ -1,6 +1,0 @@
-{
-    "problem": "Point $P$ is inside equilateral $\\triangle ABC$.  Points $Q$, $R$, and $S$ are the feet of the perpendiculars from $P$ to $\\overline{AB}$, $\\overline{BC}$, and $\\overline{CA}$, respectively. Given that $PQ=1$, $PR=2$, and $PS=3$, what is $AB$ in terms of radicals?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let the side length of $\\triangle ABC$ be $s$. Then the areas of $\\triangle APB$, $\\triangle BPC$, and $\\triangle CPA$ are, respectively, $s/2$, $s$, and $3s/2$.  The area of $\\triangle ABC$ is the sum of these, which is $3s$.  The area of $\\triangle ABC$ may also be expressed as $(\\sqrt{3}/4)s^2$, so $3s = (\\sqrt{3}/4)s^2$. The unique positive solution for $s$ is $\\boxed{4\\sqrt{3}}$."
-}

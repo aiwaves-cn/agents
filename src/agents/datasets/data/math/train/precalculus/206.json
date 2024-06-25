@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the point $(\\rho,\\theta,\\phi) = \\left( 12, \\frac{7 \\pi}{6}, \\frac{\\pi}{3} \\right)$ in spherical coordinates to rectangular coordinates.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that $\\rho = 12,$ $\\theta = \\frac{7 \\pi}{6},$ and $\\phi = \\frac{\\pi}{3},$ so\n\\begin{align*}\nx &= \\rho \\sin \\phi \\cos \\theta = 12 \\sin \\frac{\\pi}{3} \\cos \\frac{7 \\pi}{6} = -9, \\\\\ny &= \\rho \\sin \\phi \\sin \\theta = 12 \\sin \\frac{\\pi}{3} \\sin \\frac{7 \\pi}{6} = -3 \\sqrt{3}, \\\\\nz &= \\rho \\cos \\phi = 12 \\cos \\frac{\\pi}{3} = 12 \\cdot \\frac{1}{2} = 6.\n\\end{align*}Therefore, the rectangular coordinates are $\\boxed{(-9, -3 \\sqrt{3}, 6)}.$"
-}

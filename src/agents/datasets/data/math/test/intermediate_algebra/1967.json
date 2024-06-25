@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[\\frac{|x - 13|}{x^2 - 9x - 52} \\le 0.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor the denominator to get\n\\[\\frac{|x - 13|}{(x + 4)(x - 13)} \\le 0.\\]Note that $|x - 13| \\ge 0$ for all real numbers $x.$\n\nIf $x < -4,$ then $x + 4 < 0$ and $x - 13 < 0,$ so the inequality is not satisfied.\n\nIf $-4 < x < 13,$ then $x + 4 > 0$ and $x - 13 < 0,$ so the inequality is satisfied.\n\nIf $x > 13,$ then $x + 4 > 0$ and $x - 13 > 0,$ so the inequality is not satisfied.\n\nThe solution is then $x \\in \\boxed{(-4,13)}.$"
-}

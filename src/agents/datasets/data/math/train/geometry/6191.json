@@ -1,6 +1,0 @@
-{
-    "problem": "Let $ABCD$ be an isosceles trapezoid with bases $AB=92$ and $CD=19$. Suppose $AD=BC=x$ and a circle with center on $\\overline{AB}$ is tangent to segments $\\overline{AD}$ and $\\overline{BC}$. If $m$ is the smallest possible value of $x$, then $m^2$=\n$\\text{(A) } 1369\\quad \\text{(B) } 1679\\quad \\text{(C) } 1748\\quad \\text{(D) } 2109\\quad \\text{(E) } 8825$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Note that the center of the circle is the midpoint of $AB$, call it $M$. When we decrease $x$, the limiting condition is that the circle will eventually be tangent to segment $AD$ at $D$ and segment $BC$ at $C$. That is, $MD\\perp AD$ and $MC\\perp BC$.\nFrom here, we drop the altitude from $D$ to $AM$; call the base $N$. Since $\\triangle DNM \\sim \\triangle ADM$, we have\\[\\frac{DM}{19/2}=\\frac{46}{DM}.\\]Thus, $DM=\\sqrt{19\\cdot 23}$. Furthermore, $x^2=AM^2-DM^2=46^2-19\\cdot 23=\\boxed{1679}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "On the Saturday of a weekend softball tournament, Team A plays Team B and Team C plays Team D. Then on Sunday, the two Saturday winners play for first and second places while the two Saturday losers play for third and fourth places. There are no ties. One possible ranking of the team from first place to fourth place at the end of the tournament is the sequence ACBD. What is the total number of possible four-team ranking sequences at the end of the tournament?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Looking at the ranking sequence, we see that A and B cannot both win on Saturday, and so neither AB nor BA can be the first and second places. Similarly, CD and DC cannot be the third and fourth places. Thus, the first and second place may be (A or B) and (C or D) or vice versa. This makes 2 (for the order) $\\times 2\\times 2 = 8$ possibilities for the first and second places. Then the third and fourth places can be two possible arrangements of the losers. In total, this is $8\\times 2 = \\boxed{16}$ arrangements."
-}

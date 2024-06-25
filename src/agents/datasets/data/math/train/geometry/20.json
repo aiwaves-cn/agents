@@ -1,6 +1,0 @@
-{
-    "problem": "A stick 5 cm long, a stick 9 cm long, and a third stick $n$ cm long form a triangle. What is the sum of all possible whole number values of $n$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Using the Triangle Inequality, we see that $n > 4$ and $n < 14,$ so $n$ can be any integer from $5$ to $13,$ inclusive. The sum can be calculated in several ways, but regardless, $5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 = \\boxed{81}.$"
-}

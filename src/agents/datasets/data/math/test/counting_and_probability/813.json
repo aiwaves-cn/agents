@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct six-letter rearrangements of the word ``Hawaii\" can I form?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "If every letter of ``Hawaii\" were different, there would be $6! = 6\\cdot 5 \\cdots 2 \\cdot 1$ distinct six-letter rearrangements, since for the first letter of the rearrangement there would be six letters to choose from, for the second there would be five, etc. However, ``Hawaii\" contains two copies of the letter $a$ and two copies of the letter $i$. Thus, we must divide by $2$ to eliminate the overcounting we get from two indistinguishable $a$'s, and we must divide by $2$ again to eliminate the overcounting we get from two indistinguishable $i$'s. Our final count is therefore $\\frac{6!}{2\\cdot 2}$. Canceling the $4$ top and bottom gives $6\\cdot 5 \\cdot 3 \\cdot 2 = 30 \\cdot 6 = \\boxed{180}$."
-}

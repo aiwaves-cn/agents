@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest possible value of the expression $$\\frac{(a+b)^2+(b-c)^2+(c-a)^2}{b^2},$$where $b > c > a$ are real numbers, and $b \\neq 0.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "The squared terms suggests the quadratic mean. Since we have no reciprocals or products, we can start with the QM-AM inequality on the numbers $a+b$, $b-c$, and $c-a$, which gives us\n$$\\sqrt{\\frac{(a+b)^2+(b-c)^2+(c-a)^2}{3}}\\ge\\frac{(a+b)+(b-c)+(c-a)}{3}=\\frac{2b}{3}.$$Squaring both sides gives\n$$\\frac{(a+b)^2+(b-c)^2+(c-a)^2}{3}\\ge\\frac{4b^2}{9}.$$Dividing both sides by $b^2$ and multiplting both sides by $3$ gives us\n$$\\frac{(a+b)^2+(b-c)^2+(c-a)^2}{b^2}\\ge\\frac{4}{3}.$$Equality is achieved if $a+b=b-c=c-a$. From $a+b=b-c$ we get that $a=-c$. Then $a+b=c-a$ gives us $b=3c$. Hence if we pick $c=1$, $a=-1$, and $b=3$, we have $$\\frac{(a+b)^2+(b-c)^2+(c-a)^2}{b^2}=\\frac{(-1+3)^2+(3-1)^2+(1+1)^2}{3^2}=\\frac{12}{9} = \\boxed{\\frac{4}{3}}.$$"
-}

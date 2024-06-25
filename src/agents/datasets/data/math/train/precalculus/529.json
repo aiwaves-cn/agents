@@ -1,6 +1,0 @@
-{
-    "problem": "Let $l,$ $m,$ and $n$ be real numbers, and let $A,$ $B,$ $C$ be points such that the midpoint of $\\overline{BC}$ is $(l,0,0),$ the midpoint of $\\overline{AC}$ is $(0,m,0),$ and the midpoint of $\\overline{AB}$ is $(0,0,n).$  Find\n\\[\\frac{AB^2 + AC^2 + BC^2}{l^2 + m^2 + n^2}.\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $D = (l,0,0),$ $E = (0,m,0),$ and $F = (0,0,n).$  Then triangle $DEF$ is the medial triangle of triangle $ABC.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A, B, C, D, E, F;\n\nA = (2,5);\nB = (0,0);\nC = (9,0);\nD = (B + C)/2;\nE = (A + C)/2;\nF = (A + B)/2;\n\ndraw(A--B--C--cycle);\ndraw(D--E--F--cycle);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, NW);\n[/asy]\n\nHence, $EF = \\frac{BC}{2},$ so\n\\[BC^2 = 4EF^2 = 4m^2 + 4n^2.\\]Similarly, $AC^2 = 4l^2 + 4n^2,$ and $AB^2 = 4l^2 + 4m^2,$ so\n\\[\\frac{AB^2 + AC^2 + BC^2}{l^2 + m^2 + n^2} = \\frac{(4l^2 + 4m^2) + (4l^2 + 4n^2) + (4m^2 + 4n^2)}{l^2 + m^2 + n^2} = \\frac{8l^2 + 8m^2 + 8n^2}{l^2 + m^2 + n^2} = \\boxed{8}.\\]"
-}

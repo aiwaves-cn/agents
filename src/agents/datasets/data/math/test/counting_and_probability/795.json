@@ -1,6 +1,0 @@
-{
-    "problem": "How many nine-digit numbers can be made using each of the digits 1 through 9 exactly once with the digits alternating between odd and even?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are five odd digits and four even digits to be used. Because the digits must alternate between odd and even, this means that there is only one possible way to distribute odds (O) and evens (E): OEOEOEOEO. Now, there are $5\\cdot 4\\cdot 3\\cdot 2 = 120$ ways to arrange the odd numbers, as there are five choices for the first slot, four for the second, and so on. Similarly, there are $4 \\cdot 3 \\cdot 2 = 24$ ways to arrange the even numbers. Our final answer is the product of $120$ and $24$, which is $\\boxed{2880}$."
-}

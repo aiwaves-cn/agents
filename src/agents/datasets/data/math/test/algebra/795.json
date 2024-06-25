@@ -1,6 +1,0 @@
-{
-    "problem": "Robert wants to fence a rectangular plot of land of at least 500 square feet while using the least amount of fencing possible. He wants the width of the plot to be 5 ft longer than the length. What is the width of the plot?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We set the length to be $l$ and the width to $l+5$. We can write the problem as the inequality $l(l+5)\\ge500$. Distributing on the left-hand side, subtracting 500 from both sides, and factoring, we get \\begin{align*}\nl(l+5)&\\ge500 \\quad \\Rightarrow \\\\\nl^2+5l-500&\\ge 0 \\quad \\Rightarrow \\\\\n(l+25)(l-20)&\\ge 0.\n\\end{align*}The area is at least 500 square feet when the $l \\le -25 \\text{ or } l \\ge 20$. The dimensions can't be negative, so the smallest length possible while still having an area of at least 500 square ft is $20$ ft. Therefore, the width of the plot is $20+5=\\boxed{25 \\text{ ft}}$."
-}

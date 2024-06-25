@@ -1,6 +1,0 @@
-{
-    "problem": "Points $A(2,5)$ and $B(10,5)$ are the endpoints of a diameter of a circle graphed in a coordinate plane. How many square units are in the area of the circle? Express your answer in terms of $\\pi$.",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "We must find the radius of the circle in order to find the area. We are told that points $A$ and $B$ are the endpoints of a diameter, so we can find the distance between these two points. We could use the distance formula, but since $A$ and $B$ have the same $y$-coordinate, we can see that the distance between them is $10 - 2 = 8$.\n\nSince the diameter has a length of 8, the radius must have length 4. Therefore, the answer is $4^2\\pi = \\boxed{16\\pi}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A circle of radius $2$ is inscribed in a semicircle, as shown. The area inside the semicircle but outside the circle is shaded. What fraction of the semicircle's area is shaded?\n\n[asy]\nunitsize(6mm);\ndefaultpen(linewidth(.8pt)+fontsize(8pt));\ndotfactor=4;\n\nfilldraw(Arc((0,0),4,0,180)--cycle,gray,black);\nfilldraw(Circle((0,2),2),white,black);\ndot((0,2));\ndraw((0,2)--((0,2)+2*dir(60)));\nlabel(\"$2$\",midpoint((0,2)--((0,2)+2*dir(60))),SE);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The area of the circle inscribed inside the semicircle is $ \\pi r^2 \\Rightarrow \\pi(2^2) = 4 \\pi .$ The area of the larger circle (semicircle's area x 2) is $ \\pi r^2 \\Rightarrow \\pi(4^2)= 16 \\pi$ (the diameter of the inscribed circle, $4$, is the same as the radius of the semicircle). Thus, the area of the semicircle is $\\frac{1}{2}(16 \\pi) \\Rightarrow 8 \\pi .$ The fraction of the semicircle that is unshaded is $\\frac{4 \\pi}{8 \\pi} = \\frac{1}{2}$. Therefore, the fraction of the semicircle that is shaded is $1 - \\frac{1}{2} = \\boxed{\\frac{1}{2}}$."
-}

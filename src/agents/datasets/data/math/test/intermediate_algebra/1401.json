@@ -1,6 +1,0 @@
-{
-    "problem": "If $y - x,$ $y - 2x,$ and $y - kx$ are all factors of\n\\[x^3 - 3x^2 y + p_1 xy^2 + p_2 y^3,\\]then find $k$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Expanding $(y - x)(y - 2x)(y - kx),$ we get\n\\[-2kx^3 + (3k + 2) x^2 y - (k + 3) xy^2 + y^3.\\]To make the coefficients of $x^3$ match, we multiply by $-\\frac{1}{2k}.$  Then the coefficient of $x^3$ becomes 1, and the coefficient of $x^2$ becomes\n\\[-\\frac{3k + 2}{2k} = -3.\\]Solving for $k,$ we find $k = \\boxed{\\frac{2}{3}}.$"
-}

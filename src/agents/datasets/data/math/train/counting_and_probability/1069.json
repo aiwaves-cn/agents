@@ -1,6 +1,0 @@
-{
-    "problem": "How many of the natural numbers from 1 to 600, inclusive, contain the digit 5 at least once? (The numbers 152 and 553 are two natural numbers that contain the digit 5 at least once, but 430 is not.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The \"at least\" is a clue to try complementary counting -- we count number of numbers with no 5's at all, and subtract this from 600, since there are 600 numbers from 1 to 600.\n\nTo make a number with no 5's at all that is less than 600, we have 5 choices for the first number: 0, 1, 2, 3, or 4.  (We have to remember to include 600 at the end.)  We can use any digit besides 5 for the tens and for the units digit, so we have 9 choices for each of these digits.  This gives us a total of $5\\cdot 9\\cdot 9 = 405$ numbers less than 600 with no 5's.  However, this count includes 000, and doesn't include 600.  (Always be careful about extremes!)  Including 600 and excluding 000, we still have 405 numbers less than 600 with no 5's, so we have $600-405 = \\boxed{195}$ numbers with at least one 5."
-}

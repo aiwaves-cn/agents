@@ -1,6 +1,0 @@
-{
-    "problem": "Expand the product ${(2p^2 - 1)(3p^2 + 4)}$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "When using the distributive property for the first time, we add the product of $2p^2 - 1$ and $3p^2$ to the product of $2p^2 - 1$ and $4$:\n\n\\begin{align*}\n(2p^2 - 1)(3p^2 + 4) &= (2p^2 - 1) \\cdot (3p^2) + (2p^2 - 1) \\cdot 4\n\\end{align*}We use the distributive property again and combine like terms:\n\n\\begin{align*}\n(3p^2)(2p^2 - 1) + 4(2p^2 - 1) &= 6p^4 - 3p^2 + 8p^2 - 4\\\\\n&= \\boxed{6p^4 + 5p^2 - 4}\n\\end{align*}"
-}

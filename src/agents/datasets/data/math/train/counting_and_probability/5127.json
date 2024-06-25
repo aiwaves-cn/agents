@@ -1,6 +1,0 @@
-{
-    "problem": "A mother purchases 5 blue plates, 2 red plates, 2 green plates, and 1 orange plate. How many ways are there for her to arrange these plates for dinner around her circular table if she doesn't want the 2 green plates to be adjacent?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We apply the complement principle: we find the total number of cases in which the 2 green places are adjacent, and subtract from the total number of cases.\nThere are $\\frac{10!}{5!2!2!1!} = 7560$ ways to arrange the plates in a linear fashion. However, since the plates are arranged in a circle, there are $10$ ways to rotate the plates, and so there are $7560/10 = 756$ ways to arrange the plates in a circular fashion (consider, for example, fixing the orange plate at the top of the table).\nIf the two green plates are adjacent, we may think of them as a single entity, so that there are now $9$ objects to be placed around the table in a circular fashion. Using the same argument, there are $\\frac{9!}{5!2!1!1!} = 1512$ ways to arrange the objects in a linear fashion, and $1512/9 = 168$ ways in a circular fashion.\nThus, the answer is $756 - 168 = \\boxed{588}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Factor $w^4-16$ as far as possible, where the factors are monic polynomials with real coefficients.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since $w^4$ and 16 are both perfect squares, we can use our difference of squares factorization: \\[w^4-16=(w^2)^2 - 4^2 = (w^2-4)(w^2+4)\\]. We're not finished!  The expression $w^2 - 4$ is also a difference of squares, which we can factor as $w^2 - 4=(w-2)(w+2)$. So, we have \\[w^4-16 = (w^2-4)(w^2+4) = \\boxed{(w-2)(w+2)(w^2+4)}\\]."
-}

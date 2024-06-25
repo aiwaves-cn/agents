@@ -1,6 +1,0 @@
-{
-    "problem": "Five balls are numbered 1 through 5 and placed in a bowl.  Josh  will randomly choose a ball from the bowl, look at its number and  then put it back into the bowl.  Then Josh will again randomly  choose a ball from the bowl and look at its number.  What is the  probability that the product of the two numbers will be even and  greater than 10?  Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are a total of $5 \\times 5 = 25$ possibilities. Multiplying $1$ or $2$ by any of the other numbers in the bowl will not result in a number greater than $10,$ so we know that Josh does not draw $1$ or $2.$ Therefore, Josh must draw a $4$ in order for the result to be even. Thus, his possibilities are: $(3,4);(4,3);(4,4);(4,5);(5,4)$, making for 5 possibilities, and a probability of $\\frac{5}{25} = \\boxed{\\frac{1}{5}}.$"
-}

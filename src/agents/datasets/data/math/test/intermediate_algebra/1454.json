@@ -1,6 +1,0 @@
-{
-    "problem": "For $0 \\le x \\le 40$ and $0 \\le y \\le 50,$ find the minimum value of\n\\[\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{x^2 + y^2 - 80x - 100y + 4100}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ and $y,$ the expression becomes\n\\[\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{(x - 40)^2 + (y - 50)^2} = \\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{(40 - x)^2 + (50 - y)^2}.\\]By QM-AM,\n\\begin{align*}\n\\sqrt{\\frac{x^2 + 400}{2}} &\\ge \\frac{x + 20}{2}, \\\\\n\\sqrt{\\frac{y^2 + 900}{2}} &\\ge \\frac{y + 30}{2}, \\\\\n\\sqrt{\\frac{(40 - x)^2 + (50 - y)^2}{2}} &\\ge \\frac{(40 - x) + (50 - y)}{2},\n\\end{align*}so\n\\begin{align*}\n&\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{(40 - x)^2 + (50 - y)^2} \\\\\n&\\ge \\sqrt{2} \\cdot \\frac{x + 20}{2} + \\sqrt{2} \\cdot \\frac{y + 30}{2} + \\sqrt{2} \\cdot \\frac{(40 - x) + (50 - y)}{2} \\\\\n&= 70 \\sqrt{2}.\n\\end{align*}Equality occurs when $x = 20$ and $y = 30,$ so the minimum value is $\\boxed{70 \\sqrt{2}}.$"
-}

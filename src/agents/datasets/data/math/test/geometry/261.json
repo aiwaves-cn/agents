@@ -1,6 +1,0 @@
-{
-    "problem": "What is the radius of the circle inscribed in triangle $ABC$ if $AB = 15,$ $AC = 41,$ and $BC = 52$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $r$ be the radius of the inscribed circle. Let $s$ be the semiperimeter of the triangle, that is, $s=\\frac{AB+AC+BC}{2}=54$. Let $K$ denote the area of $\\triangle ABC$.\n\nHeron's formula tells us that \\begin{align*}\nK &= \\sqrt{s(s-AB)(s-AC)(s-BC)} \\\\\n&= \\sqrt{54\\cdot 39\\cdot 13\\cdot 2} \\\\\n&= \\sqrt{2^2 \\cdot 3^4\\cdot 13^2} \\\\\n&= 234.\n\\end{align*}The area of a triangle is equal to its semiperimeter multiplied by the radius of its inscribed circle ($K=rs$), so we have $$234 = r\\cdot 54,$$which yields the radius $r=\\boxed{\\frac{13}{3}}$."
-}

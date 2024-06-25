@@ -1,6 +1,0 @@
-{
-    "problem": "Several figures can be made by attaching two equilateral triangles to the regular pentagon $ABCDE$ in two of the five positions shown. How many non-congruent figures can be constructed in this way?\n\n[asy]\npair A,B,C,D,I;\nA=(10,0);\nB=(0,0);\nC=(-3.1,9.5);\nD=(5,15.4);\nI=(13.1,9.5);\ndraw(A--B--C--D--I--cycle,linewidth(0.7));\ndraw(A--B--(5,-8.7)--cycle,dashed);\ndraw(A--I--(19.8,2.1)--cycle,dashed);\ndraw(C--B--(-9.8,2.1)--cycle,dashed);\ndraw(I--D--(14.15,19.4)--cycle,dashed);\ndraw(D--C--(-4.15,19.4)--cycle,dashed);\nlabel(\"$A$\",A,SE);\nlabel(\"$B$\",B,SW);\nlabel(\"$C$\",C,W);\nlabel(\"$E$\",I,E);\nlabel(\"$D$\",D,N);\n[/asy]",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We may assume that one of the triangles is attached to side $\\overline{AB}$. The second triangle can be attached to $\\overline{BC}$ or $\\overline{CD}$ to obtain two non-congruent figures. If the second triangle is attached to $\\overline{AE}$ or to $\\overline{DE}$, the figure can be reflected about the vertical axis of symmetry of the pentagon to obtain one of the two already counted. Thus the total is $\\boxed{2}$."
-}

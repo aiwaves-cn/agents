@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $x$ for which the matrix\n\\[\\begin{pmatrix} 1 + x & 7 \\\\ 3 - x & 8 \\end{pmatrix}\\]is not invertible.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "A matrix is not invertible if and only its determinant is 0.  This gives us the equation\n\\[(1 + x)(8) - (7)(3 - x) = 0.\\]Solving, we find $x = \\boxed{\\frac{13}{15}}.$"
-}

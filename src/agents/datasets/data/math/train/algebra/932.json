@@ -1,6 +1,0 @@
-{
-    "problem": "For how many integer values of $x$ is $5x^{2}+19x+16 > 20$ not satisfied?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can simplify the inequality to $5x^{2}+19x-4 > 0$, which can then be factored into $(5x-1)(x+4)>0$. We see that this inequality is satisfied when $x<-4$ and $\\frac{1}{5}<x$, because in former case $5x-1$ and $x+4$ are both negative, and in the latter case they are both positive. This means that the inequality is not satisfied for $x$ between $-4$ and $\\frac{1}{5}$. The integer values of $x$ in this range are $-4, -3, -2, -1, \\text{ and }0$, and there are $\\boxed{5}$ of them."
-}

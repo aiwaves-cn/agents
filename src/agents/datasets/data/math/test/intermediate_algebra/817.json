@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of the positive roots of $\\sqrt{1995} \\cdot x^{\\log_{1995}x}=x^2.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We must have $x>0$ for $\\log_{1995} x$ to be defined. Thus, $x^2 > 0$, so both sides are positive. Then we may take logarithms of both sides, giving \\[\\log_{1995} \\left(\\sqrt{1995} x^{\\log_{1995} x} \\right) = \\log_{1995} x^2\\]or \\[\\log_{1995} \\sqrt{1995} + \\log_{1995} x^{\\log_{1995} x} = \\log_{1995} x^2.\\]Using logarithm identities, this simplifies to \\[\\tfrac{1}{2} + \\left(\\log_{1995} x\\right)^2 = 2\\log_{1995} x\\]or \\[(\\log_{1995} x)^2 - 2\\log_{1995} x - \\tfrac{1}{2} = 0.\\]By Vieta's formulas, the sum of the roots of this equation is $2$. That is, if $r_1$ and $r_2$ are the two values of $x$ that satisfy this equation, then \\[\\log_{1995} r_1 + \\log_{1995} r_2 = 2.\\]Now we have $\\log_{1995} (r_1r_2) = 2$, so $r_1r_2 = 1995^2 = \\boxed{3980025}$."
-}

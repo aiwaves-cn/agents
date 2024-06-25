@@ -1,6 +1,0 @@
-{
-    "problem": "The graphs $y = 3(x-h)^2 + j$ and $y = 2(x-h)^2 + k$ have $y$-intercepts of $2013$ and $2014$, respectively, and each graph has two positive integer $x$-intercepts. Find $h$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x=0$ in both equations, we get \\[2013 = 3h^2 + j \\quad \\text{and} \\quad 2014 = 2h^2 + k.\\]Solving for $j$ and $k,$ we can rewrite the given equations as \\[y = 3(x-h)^2 + (2013-3h^2) \\quad \\text{and} \\quad y = 2(x-h)^2 + (2014-2h^2),\\]or \\[y = 3x^2 - 6xh + 2013 = 3(x^2-2hx+671) \\quad \\text{ and } \\quad y = 2x^2 - 4hx + 2014 = 2(x^2 - 2hx + 1007).\\]The left equation has positive integer roots, which must multiply to $671$ and sum to $2h.$ Similarly, the right equation has positive integer roots, which must multiply to $1007$ and sum to $2h.$ Since $671 = 61 \\cdot 11$ and $1007 = 19 \\cdot 53,$ we see that \\[2h = 61 + 11 = 19 + 53 = 72,\\]so $h = \\boxed{36}.$"
-}

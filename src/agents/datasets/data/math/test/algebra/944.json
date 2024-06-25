@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify: $\\displaystyle \\frac{\\frac 12\\times 1024}{0.125\\times 2^{12}}$.",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "Each number in the expression equals 2 raised to an integer power, so we can use the laws of exponents to simplify the expression: \\[\\displaystyle \\frac{\\frac 12\\times 1024}{0.125\\times 2^{12}} = \\frac{2^{-1} \\times 2^{10}}{2^{-3}\\times 2^{12}} = \\frac{2^{-1+10}}{2^{-3+12}} = \\frac{2^9}{2^9} = \\boxed{1}.\\]"
-}

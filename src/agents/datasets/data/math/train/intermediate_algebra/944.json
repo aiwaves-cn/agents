@@ -1,6 +1,0 @@
-{
-    "problem": "How many times do the graphs of the line $5x + 8y = 10$ and the circle $x^2 + y^2 = 1$ intersect?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Solving for $y$ in $5x + 8y = 10,$ we find $y = \\frac{10 - 5x}{8}.$  Substituting into $x^2 + y^2 = 1,$ we get\n\\[x^2 + \\left( \\frac{10 - 5x}{8} \\right)^2 = 1.\\]This simplifies to $89x^2 - 100x + 36 = 0.$  The discriminant of this quadratic is $100^2 - 4 \\cdot 89 \\cdot 36 = -2816.$  Since the discriminant is negative, the quadratic has no real roots.   Therefore, the line and circle intersect at $\\boxed{0}$ points."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For how many real values of $x$ is $\\sqrt{63-\\sqrt{x}}$ an integer?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Suppose that  $k = \\sqrt{63 - \\sqrt{x}}$ is an integer. Then $0\\le k \\le \\sqrt{63}$. 7 is the largest integer less than $\\sqrt{63}$, and since $k$ is an integer, we have $0\\le k \\le 7$. Thus there are 8 possible integer values of $k$. For each such $k$, the corresponding value of $x$ is $\\left(63 - k^2\\right)^2$. Because  $\\left(63 -\nk^2\\right)^2$ is positive and decreasing for $0\\le k \\le 7$, the $\\boxed{8}$ values of $x$ are distinct."
-}

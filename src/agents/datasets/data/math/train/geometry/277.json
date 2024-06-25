@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram below, points $A$, $B$, $C$, and $P$ are situated so that $PA=2$, $PB=3$, $PC=4$, and $BC=5$. What is the maximum possible area of $\\triangle ABC$? [asy]\ndefaultpen(linewidth(0.8)); size(150);\npair B = (0,0), C = (5,0), A = (2,3), P = (2.2,2);\ndraw(A--B--C--cycle^^B--P^^C--P^^A--P);\nlabel(\"$A$\",A,N); label(\"$B$\",B,S); label(\"$C$\",C,S); label(\"$P$\",P,S);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "We first observe that by the Pythagorean theorem $\\triangle PBC$ must be a right triangle with right angle at $P$, since $PB=3$, $PC=4$, and $BC=5$.\n\n$[\\triangle PBC]=\\frac{1}{2}(3)(4) = 6=\\frac{1}{2}(PH)(5)$. Hence, the altitude $\\overline{PH}$ from $P$ to $\\overline{BC}$ has length $\\frac{12}{5}$. Let $h$ be the length of the altitude from $A$ to $\\overline{BC}$. Then $[\\triangle ABC] = \\frac{1}{2}(h)(5)$, so the area is maximized when $A$ is most high above $\\overline {BC}$. Since $AP=2$, maximization occurs when $A$ is directly over $P$, leading to a height of $h=\\frac{12}{5}+2=\\frac{22}{5}$. In this case, \\[[\\triangle ABC] = \\frac{1}{2} \\left( \\frac{22}{5} \\right)(5)=\\boxed{11}.\\]"
-}

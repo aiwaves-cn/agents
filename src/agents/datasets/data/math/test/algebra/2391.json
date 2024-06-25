@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the values of $a$ that satisfy the equation $$(3)5^2-4(5-a)^2 \\div 3=63?$$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First we multiply all terms in the equation by 3 to avoid fractions and then solve for $a$. \\begin{align*}\n9\\cdot5^2-4(5-a)^2&=3\\cdot63\\quad\\Rightarrow\\\\\n-4(5-a)^2&=9\\cdot21-9\\cdot25\\quad\\Rightarrow\\\\\n&=9(-4)\\quad\\Rightarrow\\\\\n(5-a)^2&=9\n\\end{align*} Therefore, \\begin{align*}\n5-a=3\\quad\\text{ OR }\\quad 5-a=-3\\quad\\Rightarrow\\\\\n2=a \\quad\\text{ OR }\\quad 8=a.\n\\end{align*} The sum of the values of $a$ is $2+8=\\boxed{10}$."
-}

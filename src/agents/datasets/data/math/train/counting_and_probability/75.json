@@ -1,6 +1,0 @@
-{
-    "problem": "A certain coin is weighted such that the chance of flipping heads is $\\frac{1}{3}$ and the chance of flipping tails is $\\frac{2}{3}$.  Suppose that we win $\\$3$ if we flip a heads on a coin toss, but lose $\\$2$ if we flip tails.  What is the expected value, in dollars, of our winnings after one flip?  Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "In one flip, we have a $1/3$ chance of getting heads and winning 3 dollars, and a $2/3$ chance of getting tails and losing 2 dollars.  So the expected value of one flip is $E = \\frac{1}{3}(\\$3) + \\frac{2}{3}(-\\$2) = \\boxed{-\\frac{1}{3}}$."
-}

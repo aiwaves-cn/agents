@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$, $M$ and $N$ are midpoints of legs $\\overline{AB}$ and $\\overline{BC}$, respectively. Leg $\\overline{AB}$ is 6 units long, and leg $\\overline{BC}$ is 8 units long. How many square units are in the area of $\\triangle APC$? [asy]\ndraw((0,0)--(8,0)--(0,6)--cycle);\ndraw((4,0)--(0,6));\ndraw((0,3)--(8,0));\nlabel(\"$A$\",(0,6),NW); label(\"$B$\",(0,0),SW); label(\"$C$\",(8,0),SE); label(\"$M$\",(0,3),W); label(\"$N$\",(4,0),S); label(\"$P$\",(8/3,2),SW);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "[asy]\ndraw((0,0)--(8,0)--(0,6)--cycle);\ndraw((0,0)--(4,3));\ndraw((4,0)--(0,6));\ndraw((0,3)--(8,0));\nlabel(\"$A$\",(0,6),NW); label(\"$B$\",(0,0),SW); label(\"$C$\",(8,0),SE); label(\"$M$\",(0,3),W); label(\"$N$\",(4,0),S); label(\"$P$\",(8/3,2),N);\n[/asy]\n\nDrawing the three medians of a triangle divides the triangle into six triangles with equal area.  Triangle $APC$ consists of two of these triangles, so $[APC] = [ABC]/3 = (6\\cdot 8/2)/3 = \\boxed{8}$."
-}

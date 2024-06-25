@@ -1,6 +1,0 @@
-{
-    "problem": "How many zeroes does $10!$ end with, when $10!$ is written in base 9?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $10!$ be written in base 9 as $a_na_{n-1}\\cdots a_1a_0$, where $10! = 9^na_n + 9^{n-1}a_{n-1} + \\cdots + 9a_1 + a_0$, and let $k$ be the number of zeroes at the end of the base 9 expansion of $10!$. This means that $9^k$ divides $10!$ without yielding a remainder, because $9^{k-1}a_{k-1} + \\cdots + 9a_1 + a_0 = 0$, and every other term on the left-hand side is divisible by $9^k$. However, since $a_k$ is nonzero, $9^{k+1}$ does not divide $10!$. Therefore, we need to find the highest power of $9$ that divides $10!$ without remainder. We can prime factorize $10!$ by prime factorizing each integer between 2 and 10. The exponent of 3 in the prime factorization of $10!$ is 4, since 3 and 6 each contribute one factor of 3 while 9 contributes two. Therefore, $9^2$ divides $10!$ while $9^3$ does not. As a result, when $10!$ is written in base 9, it ends in $\\boxed{2}$ zeroes."
-}

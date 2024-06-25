@@ -1,6 +1,0 @@
-{
-    "problem": "A circular dartboard is divided into regions with various central angles, as shown. The probability of a dart randomly landing in a particular region is $\\frac16$. What is the corresponding measure, in degrees, of the central angle of this section of the dartboard? [asy]\nunitsize(1.5cm);\ndefaultpen(linewidth(.7pt));\n\npair O=(0,0);\ndraw(Circle(O,1));\ndraw(dir(0)--O--dir(90));\ndraw(dir(150)--O--dir(225));\n[/asy]",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Let $A$ be the area of the circular dartboard.  If the measure of a central angle of a sector is $x$ degrees, then the area of the sector is $\\left(\\frac{x}{360}\\right)A$.  The probability of the dart landing in a region is ratio of the area of the region to the area of the dartboard, so  \\[\n\\frac{1}{6} = \\frac{\\left(\\frac{x}{360}\\right)A}{A}.\n\\] Solve to find $x=\\boxed{60}$."
-}

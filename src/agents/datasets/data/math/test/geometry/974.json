@@ -1,6 +1,0 @@
-{
-    "problem": "Two sides of a triangle have lengths of 18 and 29 units. If the third side has an integer length, what is the positive difference between the maximum and minimum length of the third side?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Let the third side have a length of $x$ units.  By the triangle inequality, $29<x+18$ and $x<18+29$.  Solving these two inequalities, we find $11<x<47$.  Therefore, the maximum and minimum integral values of $x$ are $46$ and $12$, respectively.  The difference between these two values is $46-12=\\boxed{34}$."
-}

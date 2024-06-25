@@ -1,6 +1,0 @@
-{
-    "problem": "Between what two consecutive integers on the number line is the graph of the sum $\\sqrt{30} + \\sqrt{50}$ located? Enter your answer in the form \"$m$ and $n$\", where $m$ and $n$ are replaced by appropriate numbers.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since $25<30<36$, we have $5<\\sqrt{30}<6$. We also know that $7^2=49$, so $\\sqrt{50}\\approx7$. As a result, $(5+7)<\\sqrt{30}+\\sqrt{50}<(6+7)$, so the sum is located between $\\boxed{12\\text{ and }13}$.\n\nTo be more precise, $\\sqrt{50}>7$, but we're still able to say that $\\sqrt{30}+\\sqrt{50}<(6+7)$ when we add a slightly greater quantity to the left side since the difference between $6$ and $\\sqrt{30}$ is much greater than the difference between $\\sqrt{50}$ and $7$."
-}

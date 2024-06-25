@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $$\\sum_{n=0}^{\\infty}\\frac{n}{n^4+n^2+1}.$$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $$n^4+n^2+1=(n^4+2n^2+1)-n^2=(n^2+1)^2-n^2=(n^2+n+1)(n^2-n+1).$$Decomposing into partial fractions, we find that $$\\frac{n}{n^4+n^2+1}=\\frac{1}{2}\\left(\\frac{1}{n^2-n+1}-\\frac{1}{n^2+n+1}\\right).$$Now, note that if $f(n)=\\frac{1}{n^2-n+1}$, then $f(n+1)=\\frac{1}{(n+1)^2-(n+1)+1}=\\frac{1}{n^2+n+1}$. It follows that $$\\sum_{n=0}^{\\infty}\\frac{n}{n^4+n^2+1}=\\frac{1}{2}\\Bigl((f(0)-f(1))+(f(1)-f(2))+(f(2)-f(3))+\\cdots\\Bigr).$$Since $f(n)$ tends towards 0 as $n$ gets large, this sum telescopes to $f(0)/2=\\boxed{\\frac{1}{2}}$."
-}

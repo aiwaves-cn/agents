@@ -1,6 +1,0 @@
-{
-    "problem": "Five people are sitting at a round table. Let $f\\geq 0$ be the number of people sitting next to at least 1 female and $m\\geq0$ be the number of people sitting next to at least one male. The number of possible ordered pairs $(f,m)$ is\n$\\mathrm{(A) \\ 7 } \\qquad \\mathrm{(B) \\ 8 } \\qquad \\mathrm{(C) \\ 9 } \\qquad \\mathrm{(D) \\ 10 } \\qquad \\mathrm{(E) \\ 11 }$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Suppose there are more men than women; then there are between zero and two women.\nIf there are no women, the pair is $(0,5)$. If there is one woman, the pair is $(2,5)$.\nIf there are two women, there are two arrangements: one in which they are together, and one in which they are apart, giving the pairs $(4,5)$ and $(3,5)$.\nAll four pairs are asymmetrical; therefore by symmetry there are $\\boxed{8}$ pairs altogether."
-}

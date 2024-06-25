@@ -1,6 +1,0 @@
-{
-    "problem": "Given two real numbers $p>1$ and $q>1$ so that $\\frac{1}{p} + \\frac{1}{q} = 1$, what is the value of $(p-1)(q-1)$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Multiplying both sides of the given equation by $p$, we see that $1+\\frac{p}{q} = p \\Rightarrow \\frac{p}{q} = p-1 \\Rightarrow p = q(p-1)$. But then $(p-1)(q-1) = q(p-1) - (p-1) = p -p +1 = \\boxed{1}$."
-}

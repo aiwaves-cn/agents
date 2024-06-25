@@ -1,6 +1,0 @@
-{
-    "problem": "For what values of $x$ is $x^3-10x^2>-25x$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Rewriting the original equation: \\begin{align*}\nx^3-10x^2+25x&>0\\\\\n\\Rightarrow \\quad x(x^2-10x+25)&>0 \\\\\n\\Rightarrow \\quad x(x-5)^2&>0\n\\end{align*}If $x < 0,$ then $x(x - 5)^2 < 0,$ and if $x = 0,$ then $x(x - 5)^2 = 0.$\n\nIf $0 < x < 5,$ then $x(x - 5)^2 > 0.$  If $x = 5,$ then $x(x - 5)^2 = 0.$  If $x > 5,$ then $x(x - 5)^2 > 0.$  Therefore, the solution is\n\\[x \\in \\boxed{(0,5) \\cup (5,\\infty)}.\\]"
-}

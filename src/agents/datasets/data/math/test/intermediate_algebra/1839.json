@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a = 1 + i$ and $b = 4 + 7i.$  The complex number $c$ lies on the line segment connecting $a$ and $b$ so that the distance between $a$ and $c$ is equal to twice the distance between $c$ and $b.$  Find $c.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equation, $c - a = 2(b - c).$  Then $c - a = 2b - 2c.$  Solving for $c,$ we find\n\\[c = \\frac{a + 2b}{3} = \\frac{(1 + i) + 2(4 + 7i)}{3} = \\boxed{3 + 5i}.\\][asy]\nunitsize(1 cm);\n\npair A, B, C;\n\nA = (1,1);\nB = (4,7);\nC = interp(A,B,2/3);\n\ndraw(A--B);\n\ndot(\"$a$\", A, NW);\ndot(\"$b$\", B, NW);\ndot(\"$c$\", C, NW);\n[/asy]"
-}

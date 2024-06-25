@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\cos 36^\\circ.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Let $a = \\cos 36^\\circ$ and $b = \\cos 72^\\circ.$  Then by the double angle formula,\n\\[b = 2a^2 - 1.\\]Also, $\\cos (2 \\cdot 72^\\circ) = \\cos 144^\\circ = -\\cos 36^\\circ,$ so\n\\[-a = 2b^2 - 1.\\]Subtracting these equations, we get\n\\[a + b = 2a^2 - 2b^2 = 2(a - b)(a + b).\\]Since $a$ and $b$ are positive, $a + b$ is nonzero.  Hence, we can divide both sides by $2(a + b),$ to get\n\\[a - b = \\frac{1}{2}.\\]Then $b = a - \\frac{1}{2}.$  Substituting into $b = 2a^2 - 1,$ we get\n\\[a - \\frac{1}{2} = 2a^2 - 1.\\]Then $2a - 1 = 4a^2 - 2,$ or $4a^2 - 2a - 1 = 0.$  By the quadratic formula,\n\\[a = \\frac{1 \\pm \\sqrt{5}}{4}.\\]Since $a = \\cos 36^\\circ$ is positive, $a = \\boxed{\\frac{1 + \\sqrt{5}}{4}}.$"
-}

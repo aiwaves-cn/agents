@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $x^2+ ax = -14$ has only integer solutions for $x$. If $a$ is a positive integer, what is the greatest possible value of $a$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The left-hand side factors into $x(x+a)=-14$, so $x$ and $x+a$ both divide $-14$. One of the two factors is negative and the other positive, since their product is negative. $x+a>x$, so $x+a>0$ and $x<0$. This leaves 4 possibilities for $x$, since it is negative and divides $-14$ evenly: $-1$, $-2$, $-7$, and $-14$. $x=-1$ gives $x+a=14$ and therefore $a=15$. Similarly, $x=-2$, $x=-7$, and $x=-14$ give $a=9$, $a=9$, and $a=15$, respectively. The largest value for $a$ is thus $\\boxed{15}$."
-}

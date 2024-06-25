@@ -1,6 +1,0 @@
-{
-    "problem": "Three consecutive positive prime numbers have a sum that is a multiple of 7. What is the least possible sum?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We are interested in the remainders when prime numbers are divided by 7. The first ten primes are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. The remainders when these prime are divided by 7 are 2, 3, 5, 0, 4, 6, 3, 5, 2, 1, respectively. Starting with the first triple, add the remainders to see whether the sum is a multiple of 7, in which case the corresponding prime numbers have a sum that is a multiple of 7. We see that $6+3+5=14$. Thus, the least possible sum is $13+17+19=\\boxed{49}$."
-}

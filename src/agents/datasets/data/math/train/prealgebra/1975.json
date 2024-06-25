@@ -1,6 +1,0 @@
-{
-    "problem": "Bill is sent to a donut shop to purchase exactly six donuts. If the shop has four kinds of donuts and Bill is to get at least one of each kind, how many combinations will satisfy Bill's order requirements?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Bill is required to get at least 1 of each of the 4 kinds. Once he has done that, he has two donuts left to buy with no restrictions. He can do this by buying 2 of the same kind, which can be done in 4 ways, or he can do this by buying two donuts which are different kinds. If he buys donuts of different kinds, there are 4 options for the type of the first donut and 3 options for the second donut, but since the order that he selects them in doesn't matter we need to divide by two to get to a final count of $\\dfrac{4\\cdot3}{2}=6$ ways to buy two distinct donuts. This gives us a total of $6+4=10$ ways to buy the last 2 donuts once he has bought one of each kind, so $\\boxed{10}$ is our answer."
-}

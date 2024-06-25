@@ -1,6 +1,0 @@
-{
-    "problem": "The following line is parameterized, so that its direction vector is of the form $\\begin{pmatrix} a \\\\ -1 \\end{pmatrix}.$  Find $a.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, L, R;\nint i, n;\n\nfor (i = -8; i <= 8; ++i) {\n  draw((i,-8)--(i,8),gray(0.7));\n  draw((-8,i)--(8,i),gray(0.7));\n}\n\ndraw((-8,0)--(8,0),Arrows(6));\ndraw((0,-8)--(0,8),Arrows(6));\n\nA = (-2,5);\nB = (1,0);\nL = extension(A, B, (0,8), (1,8));\nR = extension(A, B, (0,-8), (1,-8));\n\ndraw(L--R, red);\n\nlabel(\"$x$\", (8,0), E);\nlabel(\"$y$\", (0,8), N);\n[/asy]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The line passes through $\\begin{pmatrix} -2 \\\\ 5 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix},$ so its direction vector is proportional to\n\\[\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} - \\begin{pmatrix} -2 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ -5 \\end{pmatrix}.\\]To get a $y$-coordinate of $-1,$ we can multiply this vector by the scalar $\\frac{1}{5}.$  This gives us\n\\[\\frac{1}{5} \\begin{pmatrix} 3 \\\\ -5 \\end{pmatrix} = \\begin{pmatrix} 3/5 \\\\ -1 \\end{pmatrix}.\\]Therefore, $a = \\boxed{\\frac{3}{5}}.$"
-}

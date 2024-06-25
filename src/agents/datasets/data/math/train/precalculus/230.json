@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of positive solutions to\n\\[\\sin (\\arccos( \\tan (\\arcsin x) ) ) ) = x.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Let $\\theta = \\arcsin x,$ so $0 < \\theta < \\frac{\\pi}{2}$ and $\\sin \\theta = x.$  Then\n\\[\\cos \\theta = \\sqrt{1 - x^2},\\]so\n\\[\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{x}{\\sqrt{1 - x^2}}.\\]Thus,\n\\[\\sin (\\arccos (\\tan (\\arcsin x) ) ) ) = \\sin \\left( \\arccos \\frac{x}{\\sqrt{1 - x^2}} \\right).\\]Let $\\psi = \\arccos \\frac{x}{\\sqrt{1 - x^2}},$ so $0 < \\psi < \\frac{\\pi}{2}$ and $\\cos \\psi = \\frac{x}{\\sqrt{1 - x^2}}.$  Then\n\\[\\sin \\psi = \\sqrt{1 - \\cos^2 \\psi} = \\sqrt{1 - \\frac{x^2}{1 - x^2}} = \\sqrt{\\frac{1 - 2x^2}{1 - x^2}} = x.\\]Squaring both sides, we get\n\\[\\frac{1 - 2x^2}{1 - x^2} = x^2.\\]Then $1 - 2x^2 = x^2 - x^4,$ so $x^4 - 3x^2 + 1 = 0.$  By the quadratic formula,\n\\[x^2 = \\frac{3 \\pm \\sqrt{5}}{2}.\\]The positive solutions are then $\\sqrt{\\frac{3 + \\sqrt{5}}{2}}$ and $\\sqrt{\\frac{3 - \\sqrt{5}}{2}}.$  However, $\\arcsin x$ is defined only for $-1 \\le x \\le 1,$ so there is only $\\boxed{1}$ positive solution, namely\n\\[x = \\sqrt{\\frac{3 - \\sqrt{5}}{2}}.\\]"
-}

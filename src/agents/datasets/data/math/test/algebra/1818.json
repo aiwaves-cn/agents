@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area of the region bounded by the graph of the equation $x^2+y^2 + 3 = -4y + 6x-1$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We rewrite the equation as $x^2 - 6x + y^2 + 4y = -4$ and then complete the square, resulting in  $(x-3)^2-9 + (y+2)^2-4=-4$, or $(x-3)^2+(y+2)^2=9$. This is the equation of a circle with center $(3, -2)$ and radius 3, so the area of this region is $\\pi r^2 = \\pi (3)^2 = \\boxed{9\\pi}$."
-}

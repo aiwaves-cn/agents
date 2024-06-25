@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S_i$ be the set of all integers $n$ such that $100i\\leq n < 100(i + 1)$. For example, $S_4$ is the set ${400,401,402,\\ldots,499}$. How many of the sets $S_0, S_1, S_2, \\ldots, S_{999}$ do not contain a perfect square?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The difference between consecutive squares is $(x + 1)^2 - x^2 = 2x + 1$, which means that all squares above $50^2 = 2500$ are more than $100$ apart.\nThen the first $26$ sets ($S_0,\\cdots S_{25}$) each have at least one perfect square. Also, since $316^2 < 100000$ (which is when $i = 1000$), there are $316 - 50 = 266$ other sets after $S_{25}$ that have a perfect square.\nThere are $1000 - 266 - 26 = \\boxed{708}$ sets without a perfect square."
-}

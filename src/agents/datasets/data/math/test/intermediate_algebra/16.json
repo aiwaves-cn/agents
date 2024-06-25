@@ -1,6 +1,0 @@
-{
-    "problem": "A parabola has vertex of $(4,-5)$ and has two $x$-intercepts, one positive, and one negative.  If this parabola is the graph of $y = ax^2 + bx + c,$ which of $a,$ $b,$ and $c$ must be positive?\n\nEnter the coefficients that must be positive, separated by commas.  For example, if you think $a$ and $c$ must be positive, enter \"$a,$ $c$\", without the quotation marks.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The $y$-coordinate of the vertex is negative, and there are two $x$-intercepts, so the parabola must be upward facing, which means that $a$ must be positive.    Furthermore, one $x$-intercept is positive and the other is negative, so the $y$-intercept $c$ must be negative.\n\nThe $x$-coordinate of the vertex is positive, which is also $-\\frac{b}{2a}.$  Since $a$ is positive, $b$ is negative.\n\nTherefore, the only coefficient that must be positive is $\\boxed{a}.$"
-}

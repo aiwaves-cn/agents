@@ -1,6 +1,0 @@
-{
-    "problem": "Let $(x,y)$ be a pair of real numbers satisfying \\[\n56x + 33y = \\frac{-y}{x^2+y^2}, \\qquad \\text{and} \\qquad 33x-56y = \\frac{x}{x^2+y^2}.\n\\]Determine the value of $|x| + |y|$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Observe that \\[\n\\frac{1}{x+yi} = \\frac{x - yi}{x^2 + y^2} = 33x - 56 y + (56x + 33y)i = (33 + 56i)(x + yi).\n\\]So \\[\n(x+yi)^2 = \\frac{1}{33+56i} = \\frac{1}{(7 +4i)^2} = \\left( \\frac{7 - 4i}{65} \\right)^2.\n\\]It follows that $(x,y) = \\pm \\left( \\frac{7}{65}, -\\frac{4}{65} \\right)$, so $|x| + |y| = \\boxed{\\frac{11}{65}}$."
-}

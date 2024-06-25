@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $a$ and $b$ are positive real numbers, and let \\[f(x) =\n\\begin{cases}\n\\frac{a}{b}x & \\text{ if }x\\le-4, \\\\\nabx^2 & \\text{ if }x>-4.\n\\end{cases}\n\\]If $f(-4)=-\\frac{60}{13}$ and $f(4)=3120$, what is $a+b$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Since $-4\\le-4$, we know that $f(-4)=\\frac{a}{b}(-4)=-\\frac{60}{13}$. So, $\\frac{a}{b}=\\frac{15}{13}$. Next we look at $4>-4$, so $f(4)=ab\\cdot4^2=3120$. That means $ab=\\frac{3120}{16}=195$. Now that we have two equations and two variables, we can solve for $a$ and $b$. From $ab=195$, we get that $a=\\frac{195}{b}$. We substitute this value for $a$ into the equation $\\frac{a}{b}=\\frac{15}{13}$ to get $\\frac{195}{b^2}=\\frac{15}{13}$.\n\nNext we cross-multiply and get $15b^2=13\\cdot195$. Before multiplying 13 by 195, we try factoring 195 and notice that 15 is a factor of 195, so we can rewrite this as $15b^2=13\\cdot13\\cdot15$. Finally, $b^2=13^2$, so $b=\\pm13$. The problem says that $a$ and $b$ are positive, so $b=13$ and $a=\\frac{195}{13}=15$. The sum $a+b$ equals $\\boxed{28}$."
-}

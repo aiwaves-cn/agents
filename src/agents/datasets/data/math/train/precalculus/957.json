@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive integer $n$ such that\n\\[\\begin{pmatrix} \\cos 170^\\circ & -\\sin 170^\\circ \\\\ \\sin 170^\\circ & \\cos 170^\\circ \\end{pmatrix}^n = \\mathbf{I}.\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The matrix\n\\[\\begin{pmatrix} \\cos 170^\\circ & -\\sin 170^\\circ \\\\ \\sin 170^\\circ & \\cos 170^\\circ \\end{pmatrix}\\]corresponds to rotating the origin by an angle of $170^\\circ$ counter-clockwise.\n\n[asy]\nunitsize(2 cm);\n\ndraw((-1,0)--(1,0));\ndraw((0,-1)--(0,1));\ndraw(arc((0,0),0.8,40,210),red,Arrow(6));\ndraw((0,0)--dir(40),Arrow(6));\ndraw((0,0)--dir(40 + 170),Arrow(6));\n\nlabel(\"$170^\\circ$\", (-0.6,0.8));\n[/asy]\n\nThus, we seek the smallest positive integer $n$ such that $170^\\circ \\cdot n$ is a multiple of $360^\\circ.$  In other words, we want\n\\[170n = 360m\\]for some positive integer $m.$  This reduces to\n\\[17n = 36m,\\]so the smallest such $n$ is $\\boxed{36}.$"
-}

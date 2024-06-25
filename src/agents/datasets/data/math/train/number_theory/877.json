@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive divisors do 8400 and 7560 have in common?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "$$ \\text{gcd}(7560, 8400) = 840 = 2^3 \\cdot 3^1 \\cdot 5^1 \\cdot 7^1 $$The common divisors of 7560 and 8400 are the divisors of their GCD: $$ t(840) = (3+1)(1+1)(1+1)(1+1) = \\boxed{32}. $$"
-}

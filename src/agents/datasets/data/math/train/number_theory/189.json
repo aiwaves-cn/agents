@@ -1,6 +1,0 @@
-{
-    "problem": "For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot\\,\\cdots\\,\\cdot (n-1)\\cdot n$.\n\nWhat is the remainder when $9!$ is divided by $11$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "It is easy to bash this out. Otherwise the following clever observation can be made:\n\\begin{align*}\n&~ 1\\cdot 2\\cdot 3\\cdot 4\\cdot 5\\cdot 6\\cdot 7\\cdot 8\\cdot 9 \\\\\n=&~ 1\\cdot(2\\cdot 6)\\cdot(3\\cdot 4)\\cdot(5\\cdot 9)\\cdot(7\\cdot 8)\\\\\n=&~ 1\\cdot 12\\cdot 12\\cdot 45\\cdot 56\\\\\n\\equiv &~ 1\\cdot 1\\cdot 1\\cdot 1\\cdot 1 \\pmod{11}\\\\\n=&~ \\boxed{1}.\n\\end{align*}"
-}

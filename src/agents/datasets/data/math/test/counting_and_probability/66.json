@@ -1,6 +1,0 @@
-{
-    "problem": "A player pays $\\$5$ to play a game. A six-sided die is rolled. If the number on the die is odd, the game is lost. If the number on the die is even, the die is rolled again. In this case the player wins some amount of money if the second number matches the first and loses otherwise. How much money should the player win if the game is fair? (In a fair game the probability of winning times the amount won is what the player should pay.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Let $x$ represent the amount the player wins if the game is fair.  The chance of an even number is $1/2$, and the chance of matching this number on the second roll is $1/6$. So the probability of winning is $(1/2)(1/6)=1/12$. Therefore $(1/12)x=\\$5$ and $x=\\boxed{60}$."
-}

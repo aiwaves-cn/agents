@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real numbers $x$ such that $\\left(\\dfrac{x}{3}\\right)^3-3x^2+81x-729=25+2(5)(3)+9.$",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Both sides of this equation can be simplified using the Binomial Theorem. Note that $-729=(-9)^3$, $25=5^2$, and $9=3^2$. This gives us $\\left(\\dfrac{x}{3}-9\\right)^3=(5+3)^2=8^2=64$, so $\\dfrac{x}{3}-9=4$. Therefore, $x=3(4+9)=\\boxed{39}$."
-}

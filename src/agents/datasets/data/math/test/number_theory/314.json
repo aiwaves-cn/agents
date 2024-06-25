@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r$ be the remainder when $1342$ is divided by $13$.\n\nDetermine the smallest positive integer that has these two properties:\n\n$\\bullet~$ It is a multiple of $1342$.\n\n$\\bullet~$ Its remainder upon being divided by $13$ is smaller than $r$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Note that \\begin{align*}\n1342 &= 1300+39+3 \\\\\n&= 13(100+3)+3,\n\\end{align*}so $r=3$.\n\nWe are seeking the smallest multiple of $1342$ that is congruent to $0$, $1$, or $2$ modulo $13$.\n\nWe have $1342n \\equiv 3n\\pmod{13}$, so the remainders of the first four multiples of $1342$ are $3,6,9,12$. The next number in this sequence is $15$, but $15$ reduces to $2$ modulo $13$. That is: $$5\\cdot 1342 \\equiv 5\\cdot 3 \\equiv 2\\pmod{13}.$$Therefore, the number we are looking for is $5\\cdot 1342 = \\boxed{6710}$."
-}

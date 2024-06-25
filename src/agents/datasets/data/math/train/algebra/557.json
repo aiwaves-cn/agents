@@ -1,6 +1,0 @@
-{
-    "problem": "What is the minimum possible value for $y$ in the equation $y = x^2 + 12x + 5$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We complete the square on the right side by adding $(12/2)^2 = 36$ to both sides: $y+36 = x^2 + 12x + 36 + 5$, so $y+36 = (x+6)^2 + 5$, which gives $y = (x+6)^2 - 31$.  Since $(x+6)^2$ is nonnegative, and $(x+6)^2=0$ when $x=-6$, the smallest possible value of $y$ is $\\boxed{-31}$."
-}

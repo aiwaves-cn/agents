@@ -1,6 +1,0 @@
-{
-    "problem": "Fruit salad can be made with any $3$ of these $5$ fruits: apples, bananas, grapes, strawberries, and pineapples. If strawberries and pineapples do not taste good together and grapes and bananas do not look appetizing together, how many possible good tasting and appetizing salads are there?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "The number of combinations of fruit possible is $\\binom{5}{3} = 10$. However, if strawberries and pineapples cannot go together, that decreases the number of combinations by three (because they could be paired with apples, grapes, or bananas). Similarly, if grapes and bananas cannot go together, the number of combinations is reduced by another three. Thus, $10 - 3 - 3 = \\boxed{4}$ such salads are possible."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "An ellipse is defined parametrically by\n\\[(x,y) = \\left( \\frac{2 (\\sin t - 1)}{2 - \\cos t}, \\frac{3 (\\cos t - 5)}{2 - \\cos t} \\right).\\]Then the equation of the ellipse can be written in the form\n\\[Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0,\\]where $A,$ $B,$ $C,$ $D,$ $E,$ and $F$ are integers, and $\\gcd(|A|,|B|,|C|,|D|,|E|,|F|) = 1.$  Find $|A| + |B| + |C| + |D| + |E| + |F|.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "In the equation $y = \\frac{3 (\\cos t - 5)}{2 - \\cos t},$ we can solve for $\\cos t$ to get\n\\[\\cos t = \\frac{2y + 15}{y + 3}.\\]In the equation $x = \\frac{2 (\\sin t - 1)}{2 - \\cos t},$ we can solve for $\\sin t$ to get\n\\[\\sin t = \\frac{1}{2} x (2 - \\cos t) + 1 = \\frac{1}{2} x \\left( 2 - \\frac{2y + 15}{y + 3} \\right) + 1 = 1 - \\frac{9x}{2(y + 3)}.\\]Since $\\cos^2 t + \\sin^2 t = 1,$\n\\[\\left( \\frac{2y + 15}{y + 3} \\right)^2 + \\left( 1 - \\frac{9x}{2(y + 3)} \\right)^2 = 1.\\]Multiplying both sides by $(2(y + 3))^2$ and expanding, it will simplify to\n\\[81x^2 - 36xy + 16y^2 - 108x + 240y + 900 = 0.\\]Therefore, $|A| + |B| + |C| + |D| + |E| + |F| = 81 + 36 + 16 + 108 + 240 + 900 = \\boxed{1381}.$"
-}

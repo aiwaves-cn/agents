@@ -1,6 +1,0 @@
-{
-    "problem": "All triangles have the same value, and all circles have the same value. What is the sum of three circles? \\begin{align*}\n\\Delta + \\bigcirc + \\Delta + \\bigcirc + \\Delta&= 21\\\\\n\\bigcirc + \\Delta+\\bigcirc+\\Delta+\\bigcirc &= 19\\\\\n\\bigcirc + \\bigcirc + \\bigcirc &= \\ ?\n\\end{align*}",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Replace a triangle with the letter $a$ and a circle with the letter $b.$ The two given equations become \\begin{align*}\n3a+2b&=21\\\\\n2a+3b&=19.\n\\end{align*}Multiplying the first equation by $2,$ we get $6a+4b=42.$ Multiplying the second equation by $3,$ we get $6a+9b=57.$ Subtracting these two equations to eliminate $a,$ we have $5b=15.$ Multiplying both sides by $\\frac{3}{5},$ we get $$\\frac{3}{5}\\cdot 5b = \\frac{3}{5} \\cdot 15 \\Rightarrow 3b=9.$$Thus, three circles equals $\\boxed{9}.$"
-}

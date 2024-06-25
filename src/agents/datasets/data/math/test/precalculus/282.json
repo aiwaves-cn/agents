@@ -1,6 +1,0 @@
-{
-    "problem": "Below is the graph of $y = a \\sin bx$ for some constants $a < 0$ and $b > 0.$  Find $b.$\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal g(real x)\n{\n\treturn (-2*sin(x/3));\n}\n\ndraw(graph(g,-3*pi,3*pi,n=700,join=operator ..),red);\ntrig_axes(-3*pi,3*pi,-3,3,pi/2,1);\nlayer();\nrm_trig_labels(-5, 5, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\n[/asy]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The graph has period $6 \\pi.$  The period of $y = a \\sin bx$ is $\\frac{2 \\pi}{b},$ so $b = \\boxed{\\frac{1}{3}}.$"
-}

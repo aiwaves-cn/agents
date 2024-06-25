@@ -1,6 +1,0 @@
-{
-    "problem": "For the ellipse $16x^2 - 64x + y^2 + 4y + 4 = 0,$ find the distance between the foci.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ and $y,$ we get\n\\[16(x - 2)^2 + (y + 2)^2 = 64.\\]Then\n\\[\\frac{(x - 2)^2}{4} + \\frac{(y + 2)^2}{64} = 1.\\]Thus, $a = 8$ and $b = 2,$ so $c = \\sqrt{a^2 - b^2} = \\sqrt{60} = 2 \\sqrt{15}.$  Therefore, the distance between the foci is $2c = \\boxed{4 \\sqrt{15}}.$"
-}

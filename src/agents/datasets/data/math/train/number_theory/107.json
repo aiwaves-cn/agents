@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer with exactly 10 positive integer divisors?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Recall that the number of whole number divisors of a positive integer can be determined by prime factorizing the integer, adding 1 to each of the exponents, and multiplying the results.  If a positive integer has 10 factors, then the set of exponents in the prime factorization is $\\{1,4\\}$ or $\\{9\\}$.  For each set of exponents, the smallest positive integer whose prime factorization has the given set of exponents is achieved by assigning the exponents in decreasing order to the primes 2, 3, 5, etc.  The smallest positive integer with an exponent of 9 in the prime factorization is $2^9=512$.  The smallest positive integer whose prime factorization has exponents 1 and 4 is $2^4\\cdot 3^1=48$.  Since $48<512$, $\\boxed{48}$ is the smallest positive integer with 10 positive integer divisors."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix}^{2018}.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "In general,\n\\[\\begin{pmatrix} 1 & 0 \\\\ a & 1 \\end{pmatrix} \\begin{pmatrix} 1 & 0 \\\\ b & 1 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ a + b & 1 \\end{pmatrix},\\]so\n\\[\\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix}^{2018} = \\underbrace{\\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix} \\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix} \\dotsm \\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix}}_{\\text{2018 matrices}} = \\boxed{\\begin{pmatrix} 1 & 0 \\\\ 2018 & 1 \\end{pmatrix}}.\\]"
-}

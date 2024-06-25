@@ -1,6 +1,0 @@
-{
-    "problem": "A positive integer $M$ divided by six gives a remainder of three. Another positive integer $N$ divided by six gives a remainder of five. What is the remainder when the sum $M+N$ is divided by six?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "This means that $M$ is in the form $6m+3$ for an integer $m$ and $N$ is in the form $6n+5$ for an integer $n$. $M+N=6m+6n+8=6(m+n+1)+2$ leaves a remainder of $\\boxed{2}$ after division by 6."
-}

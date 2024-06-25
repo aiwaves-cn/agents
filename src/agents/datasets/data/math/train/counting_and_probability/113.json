@@ -1,6 +1,0 @@
-{
-    "problem": "The first digit of a string of 2002 digits is a 1. Any two-digit number formed by consecutive digits within this string is divisible by 19 or 31. What is the largest possible last digit in this string?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Make a list of the two-digit multiples of 19 and 31: 19, 31, 38, 57, 62, 76, 93, and 95.  If we build the string from the beginning, we have different possibilities to check.  For example, the second digit is 9, but the third digit could be 3 or 5.  However, no units digit appears more than once, so if we build the string in reverse then the order is determined.  If the 2002nd digit is 9, then the 2001st digit is 1, the 2000th digit is 3, the 1999th digit is 9, etc.  Therefore, the first digit would be 9.  So if the first digit is 1, then the final digit cannot be 9.  If the 2002nd digit is 8, the the 2001st digit is 3, the 2000th digit is 9, the 1999th digit is 1, the 1998th digit is 3, etc.  In this case, the first digit is 1, so the maximum possible last digit is $\\boxed{8}$."
-}

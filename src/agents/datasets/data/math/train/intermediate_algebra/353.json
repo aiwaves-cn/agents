@@ -1,6 +1,0 @@
-{
-    "problem": "A certain collection of numbered indexed cards includes one card with a 1 written on it, two cards with a 2, and so forth up to $n$ cards showing an $n,$ for some positive integer $n$.  Determine $n,$ if the average value of a card in this collection is 2017.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The number of cards is $1 + 2 + 3 + \\dots + n = \\frac{n(n + 1)}{2},$ and the sum of the values of all cards is\n\\[1^2 + 2^2 + 3^2 + \\dots + n^2 = \\frac{n(n + 1)(2n + 1)}{6}.\\]Therefore, the average value of a card is\n\\[\\frac{\\frac{n(n + 1)(2n + 1)}{6}}{\\frac{n(n + 1)}{2}} = \\frac{2n + 1}{3}.\\]Setting this to 2017 and solving, we find $n = \\boxed{3025}.$"
-}

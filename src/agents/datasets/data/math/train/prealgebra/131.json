@@ -1,6 +1,0 @@
-{
-    "problem": "Ming and Catherine walked to the store together to buy some pencils.  Ming bought $40$ pencils and Catherine bought $24$.  If each package of pencils sold at the store contain the same number of pencils, what is the largest possible number of pencils in a package?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since the number of pencils in a package must be a divisor of both $24$ and $40$, the largest possible number of pencils in a package is the GCD of $40$ and $24$.  Factoring, $24 = 2^3\\cdot 3$ and $40 = 2^3\\cdot 5$.  The only prime common to both factorizations is $2$, raised the $3$rd power, so the GCD is $2^3 = \\boxed{8}$."
-}

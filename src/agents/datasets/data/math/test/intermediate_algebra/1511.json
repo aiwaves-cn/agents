@@ -1,6 +1,0 @@
-{
-    "problem": "Find the maximum value of\n\\[f(x) = \\sqrt{8x - x^2} - \\sqrt{14x - x^2 - 48}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\[f(x) = \\sqrt{x(8 - x)} - \\sqrt{(x - 6)(8 - x)}.\\]Thus, $x$ is defined only for $6 \\le x \\le 8.$  Then\n\\begin{align*}\nf(x) &= \\sqrt{8 - x} (\\sqrt{x} - \\sqrt{x - 6}) \\\\\n&= \\sqrt{8 - x} \\cdot \\frac{(\\sqrt{x} - \\sqrt{x - 6})(\\sqrt{x} + \\sqrt{x - 6})}{\\sqrt{x} + \\sqrt{x - 6}} \\\\\n&= \\sqrt{8 - x} \\cdot \\frac{x - (x - 6)}{\\sqrt{x} + \\sqrt{x - 6}} \\\\\n&= \\sqrt{8 - x} \\cdot \\frac{6}{\\sqrt{x} + \\sqrt{x - 6}}.\n\\end{align*}On the interval $6 \\le x \\le 8,$ $\\sqrt{8 - x}$ is decreasing, and $\\sqrt{x} + \\sqrt{x - 6}$ is increasing, which means $\\frac{6}{\\sqrt{x} + \\sqrt{x - 6}}$ is decreasing.  Therefore, the maximum value of $f(x)$ is\n\\[f(6) = \\sqrt{2} \\cdot \\frac{6}{\\sqrt{6}} = \\boxed{2 \\sqrt{3}}.\\]"
-}

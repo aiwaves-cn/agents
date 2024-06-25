@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the minimum possible value of the sum\n\\[\\frac{a}{2b} + \\frac{b}{4c} + \\frac{c}{8a},\\]where $a,$ $b,$ and $c$ are positive real numbers.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[\\frac{a}{2b} + \\frac{b}{4c} + \\frac{c}{8a} \\ge 3 \\sqrt[3]{\\frac{a}{2b} \\cdot \\frac{b}{4c} \\cdot \\frac{c}{8a}} = 3 \\sqrt[3]{\\frac{1}{64}} = \\frac{3}{4}.\\]Equality occurs when $\\frac{a}{2b} = \\frac{b}{4c} = \\frac{c}{8a} = \\frac{1}{4}.$  For example, $a = 1$ and $b = c = 2$ will work, so the minimum value is $\\boxed{\\frac{3}{4}}.$"
-}

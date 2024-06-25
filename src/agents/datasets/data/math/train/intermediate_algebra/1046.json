@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha$ and $\\beta$ be complex numbers such that $|\\beta| = 1$ and $\\overline{\\alpha} \\beta \\neq 1.$  Find the maximum value of\n\\[\\left| \\frac{\\beta - \\alpha}{1 - \\overline{\\alpha} \\beta} \\right|.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $|\\beta| = 1,$ $|\\overline{\\beta}| = 1,$ so\n\\begin{align*}\n\\left| \\frac{\\beta - \\alpha}{1 - \\overline{\\alpha} \\beta} \\right| &= \\frac{1}{|\\overline{\\beta}|} \\cdot \\left| \\frac{\\beta - \\alpha}{1 - \\overline{\\alpha} \\beta} \\right| \\\\\n&= \\left| \\frac{\\beta - \\alpha}{\\overline{\\beta} - \\overline{\\alpha} \\beta \\overline{\\beta}} \\right| \\\\\n&= \\left| \\frac{\\beta - \\alpha}{\\overline{\\beta} - \\overline{\\alpha} |\\beta|^2} \\right| \\\\\n&= \\left| \\frac{\\beta - \\alpha}{\\overline{\\beta} - \\overline{\\alpha}} \\right| \\\\\n&= \\boxed{1}.\n\\end{align*}"
-}

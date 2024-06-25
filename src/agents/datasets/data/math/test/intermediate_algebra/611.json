@@ -1,6 +1,0 @@
-{
-    "problem": "Compute \\[\\log_{\\log_{\\log_2 256} 64} 256.\\]",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "We simplify the innermost logarithm first. We have $\\log_2 256 = 8,$ so the expression becomes $\\log_{\\log_8 64} 256.$ Now, we have $\\log_8 64=2,$ so the expression becomes \\[\\log_2 256,\\]which we already found to be equal to $\\boxed{8}.$"
-}

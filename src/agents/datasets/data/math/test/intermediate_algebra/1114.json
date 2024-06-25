@@ -1,6 +1,0 @@
-{
-    "problem": "If $3+\\sqrt{5}$ is a root of the equation \\[x^2 - 3x + b = 0,\\]compute $b.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We do not know that $b$ is rational, so we cannot conclude that the radical conjugate of $3+\\sqrt{5},$ or $3-\\sqrt{5},$ must also be a root of the equation. Instead, we turn to Vieta's formulas: the sum of the roots of the equation is $3,$ so the other root of the equation must be $3 - (3+\\sqrt5) = -\\sqrt5.$ Then $b$ equals the product of the roots: \\[b = -\\sqrt5(3+\\sqrt5) = \\boxed{-3\\sqrt5-5}.\\]Alternatively, since $3 + \\sqrt{5}$ is a root of the equation,\n\\[(3 + \\sqrt{5})^2 - 3(3 + \\sqrt{5}) + b = 0.\\]Hence, $b = \\boxed{-3 \\sqrt{5} - 5}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of the function \\[f(x) = \\left\\{ \\begin{aligned} x^2 & \\quad \\text{ if } x \\le 0 \\\\ x^3 - 5 & \\quad \\text{ if } x > 0. \\end{aligned} \\right.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "For $x \\le 0,$ the expression $x^2$ takes all nonnegative values. Meanwhile, for $x > 0,$ the expression $x^3$ takes all positive values, so $x^3 - 5$ takes all values in the interval $(-5, \\infty).$ It follows that the range of $f(x)$ is the union of the two intervals $[0, \\infty)$ and $(-5, \\infty).$ Because the second interval contains the first one, the range of $f(x)$ is simply $\\boxed{(-5, \\infty)}.$"
-}

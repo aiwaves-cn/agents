@@ -1,6 +1,0 @@
-{
-    "problem": "Find the equation of the plane containing the points $(-3,4,-2),$ $(1,4,0),$ and $(3,2,-1).$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{a} = \\begin{pmatrix} -3 \\\\ 4 \\\\ -2 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} 1 \\\\ 4 \\\\ 0 \\end{pmatrix},$ and $\\mathbf{c} = \\begin{pmatrix} 3 \\\\ 2 \\\\ -1 \\end{pmatrix}.$  Then the normal vector of the plane is orthogonal to both\n\\[\\mathbf{b} - \\mathbf{a} = \\begin{pmatrix} 4 \\\\ 0 \\\\ 2 \\end{pmatrix}\\]and\n\\[\\mathbf{c} - \\mathbf{a} = \\begin{pmatrix} 6 \\\\ -2 \\\\ 1 \\end{pmatrix}.\\]So to compute the normal vector, we take the cross product of these vectors:\n\\[\\begin{pmatrix} 4 \\\\ 0 \\\\ 2 \\end{pmatrix} \\times \\begin{pmatrix} 6 \\\\ -2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ 8 \\\\ -8 \\end{pmatrix}.\\]We can scale this vector, and take $\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$ as the normal vector.  Then the equation of the plane is of the form\n\\[x + 2y - 2z + D = 0.\\]Substituting the coordinates of any of the points, we find that the equation of the plane is $\\boxed{x + 2y - 2z - 9 = 0}.$"
-}

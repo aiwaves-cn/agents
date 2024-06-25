@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[\\arccos 2x - \\arccos x = \\frac{\\pi}{3}.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the given equation,\n\\[\\arccos 2x = \\arccos x + \\frac{\\pi}{3}.\\]Then\n\\[\\cos (\\arccos 2x) = \\cos \\left( \\arccos x + \\frac{\\pi}{3} \\right).\\]Hence, from the angle addition formula,\n\\begin{align*}\n2x &= \\cos (\\arccos x) \\cos \\frac{\\pi}{3} - \\sin (\\arccos x) \\sin \\frac{\\pi}{3} \\\\\n&= \\frac{x}{2} - \\frac{\\sqrt{3}}{2} \\sqrt{1 - x^2},\n\\end{align*}so\n\\[-3x = \\sqrt{3} \\cdot \\sqrt{1 - x^2}.\\]Squaring both sides, we get $9x^2 = 3 - 3x^2.$  Then $12x^2 = 3,$ so $x^2 = \\frac{1}{4},$ and $x = \\pm \\frac{1}{2}.$  Checking, we find only $x = \\boxed{-\\frac{1}{2}}$ works."
-}

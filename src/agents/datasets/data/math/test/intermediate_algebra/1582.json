@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered triples $(x,y,z)$ of positive real numbers such that\n\\[\\left( x + \\frac{1}{y} \\right) \\left( y + \\frac{1}{z} \\right) \\left( z + \\frac{1}{x} \\right) = 8.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\nx + \\frac{1}{y} &\\ge 2 \\sqrt{\\frac{x}{y}}, \\\\\ny + \\frac{1}{z} &\\ge 2 \\sqrt{\\frac{y}{z}}, \\\\\nz + \\frac{1}{x} &\\ge 2 \\sqrt{\\frac{z}{x}},\n\\end{align*}so\n\\[\\left( x + \\frac{1}{y} \\right) \\left( y + \\frac{1}{z} \\right) \\left( z + \\frac{1}{x} \\right) \\ge 2 \\sqrt{\\frac{x}{y}} \\cdot 2 \\sqrt{\\frac{y}{z}} \\cdot 2 \\sqrt{\\frac{z}{x}} = 8.\\]Equality occurs when $x = \\frac{1}{y},$ $y = \\frac{1}{z},$ and $z = \\frac{1}{x},$ or $xy = 1,$ $yz = 1,$ and $xz = 1.$  Multiplying all three equations, we get $x^2 y^2 z^2 = 1.$  Since $x,$ $y,$ and $z$ are all positive,\n\\[xyz = 1.\\]Dividing $yz = 1,$ we get $x = 1.$  Similarly, $y = 1$ and $z = 1,$ so there is only $\\boxed{1}$ triple $(x,y,z),$ namely $(1,1,1).$"
-}

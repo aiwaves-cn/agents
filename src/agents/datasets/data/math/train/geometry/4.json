@@ -1,6 +1,0 @@
-{
-    "problem": "A fly is on the edge of a ceiling of a circular room with a radius of 58 feet. The fly walks straight across the ceiling to the opposite edge, passing through the center of the circle. It then walks straight to another point on the edge of the circle but not back through the center. The third part of the journey is straight back to the original starting point. If the third part of the journey was 80 feet long, how many total feet did the fly travel over the course of all three parts?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The fly's journey traces out the three sides of triangle.  Because one side of this triangle is a diameter of the circular ceiling and the other two sides are chords of this circle, the triangle is a right triangle. If the radius of the circular room is 58 feet, then the diameter is $2 \\times 58 = 116$ feet. This is the hypotenuse of the right triangle. One of the legs is 80 feet, so the other leg must be equal to $\\sqrt{116^2 - 80^2} = \\sqrt{(13{,}456 - 6400)} = \\sqrt{7056} = 84$ feet. The total distance traveled by the fly is $116 + 84 + 80 = \\boxed{280}$ feet."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $a^2 + b^2 + c^2,$ given that $a,$ $b,$ and $c$ are the roots of \\[2x^3 - x^2 + 4x + 10 = 0.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, we know that \\[\\begin{aligned} a+b+c &= \\frac12, \\\\ ab+bc+ca &= \\frac42 = 2, \\\\ abc &= -\\frac{10}2 = -5. \\end{aligned}\\]We square both sides of $a+b+c=\\frac12,$ which will produce the terms $a^2+b^2+c^2$: \\[(a+b+c)^2 = a^2+b^2+c^2+2ab+2bc+2ca = \\frac14.\\]Substituting $ab+bc+ca=2,$ we have \\[a^2+b^2+c^2+2(2)=\\frac14,\\]so \\[a^2+b^2+c^2=\\frac14-4=\\boxed{-\\frac{15}4}.\\]"
-}

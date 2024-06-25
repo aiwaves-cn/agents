@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest common divisor of $654321$ and $543210$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "By the Euclidean Algorithm, \\begin{align*}\\text{gcd}\\,(654321,543210) &= \\text{gcd}\\,(654321-543210,543210) \\\\\n&= \\text{gcd}\\,(111111,543210) \\\\\n&= \\text{gcd}\\,(5 \\cdot 111111 - 543210, 111111) \\\\\n&= \\text{gcd}\\,(12345, 111111) \\\\\n&= \\text{gcd}\\,(12345, 12345 \\cdot 10 - 111111) \\\\\n&= \\text{gcd}\\,(12345, 12339) \\\\\n&= \\text{gcd}\\,(12345-12339, 12339) \\\\\n&= \\text{gcd}\\,(6,12339). \\end{align*}We notice that $3 | 12339$ as $3 | 1+2+3+3+9 = 18$, but $12339$ is odd and thus not divisible by $6$. The answer is $\\boxed{3}$."
-}

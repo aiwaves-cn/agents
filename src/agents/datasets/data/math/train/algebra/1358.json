@@ -1,6 +1,0 @@
-{
-    "problem": "A ball travels on a parabolic path in which the height (in feet) is given by the expression $-16t^2+80t+21$, where $t$ is the time after launch. What is the maximum height of the ball, in feet?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "To find the maximum height of the ball is to maximize the expression $-16t^2+80t+21$. We will do this by completing the square. Factoring a $-16$ from the first two terms, we have  \\[-16t^2+80t+21=-16(t^2-5t)+21\\]To complete the square, we add and subtract $(-5/2)^2=6.25$ inside the parenthesis to get \\begin{align*}\n-16(t^2-5t)+21&=-16(t^2-5t+6.25-6.25)+21\\\\\n&=-16([t-2.5]^2-6.25)+21\\\\\n&=-16(t-2.5)^2+121\n\\end{align*}Since $-16(t-2.5)^2$ is always non-positive, the maximum value of the expression is achieved when $-16(t-2.5)^2=0$, so the maximum value is $0+121=\\boxed{121}$ feet."
-}

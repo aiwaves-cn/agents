@@ -1,6 +1,0 @@
-{
-    "problem": "$ABC$ is a triangle: $A=(0,0), B=(36,15)$ and both the coordinates of $C$ are integers. What is the minimum area $\\triangle ABC$ can have?\n$\\textbf{(A)}\\ \\frac{1}{2} \\qquad \\textbf{(B)}\\ 1 \\qquad \\textbf{(C)}\\ \\frac{3}{2} \\qquad \\textbf{(D)}\\ \\frac{13}{2}\\qquad \\textbf{(E)}\\ \\text{there is no minimum}$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $C$ have coordinates $(p, q)$. Then by the Shoelace Formula, the area of $\\triangle ABC$ is $\\frac{3}{2} \\lvert {12q-5p} \\rvert$. Since $p$ and $q$ are integers, $\\lvert {12q-5p} \\rvert$ is a positive integer, and by Bezout's Lemma, it can equal $1$ (e.g. with $q = 2, p = 5$), so the minimum area is $\\frac{3}{2} \\times 1 = \\boxed{\\frac{3}{2}}$."
-}

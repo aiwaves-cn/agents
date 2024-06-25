@@ -1,6 +1,0 @@
-{
-    "problem": "Amy and Belinda each roll a sheet of 6-inch by 8-inch paper to form a cylindrical tube. Amy tapes the two 8-inch sides together without overlap. Belinda tapes the two 6-inch sides together without overlap. What is $\\pi$ times the positive difference of the volumes of the two tubes?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Amy's cylinder has a height of 8 and a base circumference of 6.  Let her cylinder have volume $V_A$ and radius $r_A$; we have $2\\pi r_A = 6$ so $r_A = 3/\\pi$ and $V_A = \\pi r_A ^2 h = \\pi (3/\\pi)^2 (8) = 72/\\pi$.\n\nBelinda's cylinder has a height of 6 and a base circumference of 8.  Similarly, let her cylinder have volume $V_B$ and radius $r_B$; we have $2\\pi r_B = 8$ so $r_B = 4/\\pi$ and $V_B = \\pi r_B^2 h = \\pi (4/\\pi)^2 (6) = 96/\\pi$.\n\nThe positive difference between the volume of the two tubes is $96/\\pi - 72/\\pi = 24/\\pi$ cubic inches; $\\pi$ times this difference is $\\boxed{24}$ cubic inches."
-}

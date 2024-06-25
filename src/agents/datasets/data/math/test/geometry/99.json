@@ -1,6 +1,0 @@
-{
-    "problem": "A piece of wire 72 cm long is cut into two equal pieces and each is formed into a circle. What is the sum, in square centimeters, of the areas of these circles?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Since the $72$ cm wire is cut into two equal pieces, each piece must have a length of $36$ cm. This means that the circumference of each of the circles is $36$ cm. Next, we find the radius of one of these circles. The circumference of a circle is equal to $2\\pi r$, where $r$ is the radius of the circle. Setting this expression equal to $36$, we have that $2 \\pi r = 36$, so $r = 18/\\pi$ cm.\n\nSince the area of a circle is $\\pi r^2$, we know that the area of each of these circles is $\\pi \\cdot \\left(\\frac{18}{\\pi}\\right)^2 = \\frac{324}{\\pi}$. There are two such circles, the sum of their areas is $2 \\cdot \\frac{324}{\\pi} = \\boxed{\\frac{648}{\\pi}} \\text{ cm}^2$."
-}

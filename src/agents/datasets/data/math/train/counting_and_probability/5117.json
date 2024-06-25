@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of the sum $S=\\sum_{k=0}^{49}(-1)^k\\binom{99}{2k}=\\binom{99}{0}-\\binom{99}{2}+\\binom{99}{4}-\\cdots -\\binom{99}{98}?$\n(A) $-2^{50}$ (B) $-2^{49}$ (C) 0 (D) $2^{49}$ (E) $2^{50}$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "By the Binomial Theorem, $(1+i)^{99}=\\sum_{n=0}^{99}\\binom{99}{j}i^n =$ $\\binom{99}{0}i^0+\\binom{99}{1}i^1+\\binom{99}{2}i^2+\\binom{99}{3}i^3+\\binom{99}{4}i^4+\\cdots +\\binom{99}{98}i^{98}$.\nUsing the fact that $i^1=i$, $i^2=-1$, $i^3=-i$, $i^4=1$, and $i^{n+4}=i^n$, the sum becomes:\n$(1+i)^{99}=\\binom{99}{0}+\\binom{99}{1}i-\\binom{99}{2}-\\binom{99}{3}i+\\binom{99}{4}+\\cdots -\\binom{99}{98}$.\nSo, $Re[(1+i)^{99}]=\\binom{99}{0}-\\binom{99}{2}+\\binom{99}{4}-\\cdots -\\binom{99}{98} = S$.\nUsing De Moivre's Theorem, $(1+i)^{99}=[\\sqrt{2}cis(45^\\circ)]^{99}=\\sqrt{2^{99}}\\cdot cis(99\\cdot45^\\circ)=2^{49}\\sqrt{2}\\cdot cis(135^\\circ) = -2^{49}+2^{49}i$.\nAnd finally, $S=Re[-2^{49}+2^{49}i] = \\boxed{-2^{49}}$."
-}

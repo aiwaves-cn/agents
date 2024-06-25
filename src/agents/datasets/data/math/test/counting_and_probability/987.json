@@ -1,6 +1,0 @@
-{
-    "problem": "23 people attend a party. Each person shakes hands with at least one other person. What is the minimum possible number of handshakes?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "If each person shakes hands with exactly one other person, then there will be $\\frac{23 \\cdot 1}{2}$ handshakes, since two people are required to complete a handshake. This is equal to 11.5 handshakes, which is clearly impossible. We can achieve 12 handshakes by forming two rows of 11 and 12 people. Each person in the first row shakes hands a different person in the second row. This will give eleven handshakes. The leftover person must shake hands with someone, giving $\\boxed{12}$ handshakes total."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "As $n$ ranges over the positive integers, what is the maximum possible value that the greatest common divisor of $13n + 8$ and $5n+3$ can take?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can apply the Euclidean algorithm here. \\begin{align*}\n\\gcd(13n+8, 5n+3) &= \\gcd(5n+3, (13n+8)-2(5n+3)) \\\\\n&= \\gcd(5n+3, 3n + 2) \\\\\n&= \\gcd(3n+2, (5n+3)-(3n+2)) \\\\\n&= \\gcd(3n+2, 2n + 1) \\\\\n&= \\gcd(2n+1, (3n+2)-(2n+1)) \\\\\n&= \\gcd(2n+1, n+1) \\\\\n&= \\gcd(n+1, (2n+1)-(n+1)) \\\\\n&= \\gcd(n+1, n) \\\\\n&= \\gcd(n, (n+1)-n) \\\\\n&= \\gcd(n, 1) \\\\\n&= \\boxed{1}.\n\\end{align*}"
-}

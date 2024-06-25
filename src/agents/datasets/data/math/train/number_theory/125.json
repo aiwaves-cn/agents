@@ -1,6 +1,0 @@
-{
-    "problem": "What is the units digit of the product of all the odd positive integers between 10 and 110?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Any odd multiple of 5 will end in a units digit of 5 (even multiples will end in a units digit of 0). Since all the integers we are multiplying are odd and some of them have a factor of 5, the product will be an odd multiple of 5 with a units digit of $\\boxed{5}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many perfect square factors does the number 46,656 have?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "$46656=2^6\\cdot3^6$. So, $x$ is a factor of $46656$ if and only if there exist integers $a$ and $b$ such that $0\\le a\\le6$, $0\\le b\\le6$, and $x=2^a3^b$. Such an $x$ is a perfect square if and only if $a$ and $b$ are both even, which is true if and only if $a$ and $b$ are each 0, 2, 4, or 6. There are $4$ possible values of $a$, and $4$ possible values of $b$, so there are $4\\cdot4=\\boxed{16}$ possible values of $x$."
-}

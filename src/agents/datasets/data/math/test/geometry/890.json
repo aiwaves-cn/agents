@@ -1,6 +1,0 @@
-{
-    "problem": "The side lengths of a right triangle measure $x$, $x + y$ and $x - y$ units where $0 < y < x$. What is the value of $y \\div x$? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Clearly $x+y$ is the largest of $x, x+y,x-y$, and this value is thus the length of the triangle's hypotenuse.  By the Pythagorean theorem, we see that $x^2 + \\left(x-y\\right)^2 = \\left(x+y\\right)^2$.  Dividing through by $x^2$, we find that $1 + \\left(1 - \\frac{y}{x}\\right)^2 = \\left(1 + \\frac{y}{x}\\right)^2$.\n\nRearranging and factoring a difference of squares, we obtain $1 = 2 \\left(2 \\cdot \\frac{y}{x}\\right)$.  Thus we see that $y \\div x = \\boxed{\\frac{1}{4}}$."
-}

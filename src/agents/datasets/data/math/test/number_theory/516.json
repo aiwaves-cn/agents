@@ -1,6 +1,0 @@
-{
-    "problem": "The binary number $10101001110_{2}$ is equal to what number in base eight?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Since $2^3=8$, we may convert between base 2 and base 8 representations by replacing each block of three digits in base 2 with its equivalent in base 8. In this case, we begin by noticing that the last three digits are worth $110_2=6_8$. The next block of three digits is $001_2=1_8$. Continuing, we find that the next two digits (moving right-to-left) are $101_2=5_8$ and $010_2=2_8$. Altogether, we find that $10101001110_{2}=\\boxed{2516_8}$."
-}

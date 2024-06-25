@@ -1,6 +1,0 @@
-{
-    "problem": "The positive integers up to 2007 are alternately subtracted and added:\n\\[1 - 2 + 3 - 4 + \\cdots + 2001 - 2002 + 2003 - 2004 + 2005 - 2006 + 2007.\\]What is the value of the expression?",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "$(1-2) + (3-4)+\\cdots + (2003-2004)+(2005-2006) + 2007 = (-1)(1003)+2007=\\boxed{1004}.$"
-}

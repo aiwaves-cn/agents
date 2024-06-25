@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $EAD$ with right angle at $A$, $AE=4$ units, $AB=BC=CD$ and the area of triangle $ABE=6$ sq units. What is the length of segment $CE$? Express your answer as a decimal to the nearest tenth. [asy]\ndraw((0,0)--(0,4)--(9,0)--cycle);\ndraw((0,4)--(3,0));\ndraw((0,4)--(6,0));\ndraw(rightanglemark((9,0),(0,0),(0,4)));\nlabel(\"A\",(0,0),S);\nlabel(\"B\",(3,0),S);\nlabel(\"C\",(6,0),S);\nlabel(\"D\",(9,0),S);\nlabel(\"E\",(0,4),N);\nlabel(\"4\",(0,0)--(0,4),W);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The formula for the area of a triangle is $\\frac{1}{2} \\text{base} \\times \\text{height}$.  Using this, we can find the length of $AB$, because we know the area of triangle $ABE$. $$6=\\frac{1}{2}AB\\times4$$$$12=AB\\times4$$$$AB=3$$Since $AB=BC=CD$, $AC=2\\times{AB}=6$.\n\nTo find $CE$, use the Pythagorean Theorem, treating $CE$ as the hypotenuse of triangle $ACE$. $$4^2+6^2=CE^2$$$$CE^2=52$$Then $CE = \\sqrt{52}.$  Rounded to the nearest tenth, this is $\\boxed{7.2}.$"
-}

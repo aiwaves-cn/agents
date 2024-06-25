@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the base-$64$ number $100_{64}$ to base $62$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The number $100_{64}$ is, by definition, $64^2$. We can rewrite this as $(62+2)^2$, then use algebra to expand it out as $62^2 + 4\\cdot 62 + 4$. Writing this in base $62$, we obtain $\\boxed{144}$ (that is, $144_{62}$)."
-}

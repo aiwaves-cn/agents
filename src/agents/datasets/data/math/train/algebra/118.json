@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $x^2 - (1A)x + A0 = 0$ has positive integer solutions where $A$ is a positive  single digit. How many such $A$s exist? (Since $A$ is representing a digit, if $A = 2$ then   $A0$ represents the integer 20.)",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We need to find two numbers with a product of $A0$ and a sum of $1A$, where $A$ is a positive single digit. There are only 9 digits to try for $A$. Suppose we have a product of 10 and a sum of 11, then the two numbers could be 1 and 10. Suppose we have a product of 20 and a sum of 12, then the two numbers are 2 and 10. This will work for all values of $A$ from 1 to 9, so there are $\\boxed{9\\text{ values}}$ of $A$ that work."
-}

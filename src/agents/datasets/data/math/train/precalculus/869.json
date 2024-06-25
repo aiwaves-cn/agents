@@ -1,6 +1,0 @@
-{
-    "problem": "A certain point has rectangular coordinates $(10,3)$ and polar coordinates $(r, \\theta).$  What are the rectangular coordinates of the point with polar coordinates $(r^2, 2 \\theta)$?",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "From the given information, $r \\cos \\theta = 10$ and $r \\sin \\theta = 3.$  Then for $(r^2, 2 \\theta),$ the $x$-coordinate is\n\\begin{align*}\nr^2 \\cos 2 \\theta &= r^2 (\\cos^2 \\theta - \\sin^2 \\theta) \\\\\n&= r^2 \\cos^2 \\theta - r^2 \\sin^2 \\theta \\\\\n&= 10^2 - 3^2 \\\\\n&= 91,\n\\end{align*}and the $y$-coordinate is\n\\begin{align*}\nr^2 \\sin 2 \\theta &= r^2 (2 \\sin \\theta \\cos \\theta) \\\\\n&= 2(r \\cos \\theta)(r \\sin \\theta) \\\\\n&= 2 \\cdot 10 \\cdot 3 \\\\\n&= 60.\n\\end{align*}Thus, the rectangular coordinates are $\\boxed{(91,60)}.$"
-}

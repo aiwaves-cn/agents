@@ -1,6 +1,0 @@
-{
-    "problem": "The arithmetic mean, geometric mean, and harmonic mean of $a$, $b$, $c$ are $8$, $5$, $3$ respectively. What is the value of $a^2+b^2+c^2$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We start by trying to get as much information as possible from what is given to us about $a$, $b$, and $c$. Since their arithmetic mean is $8$, we know that $\\frac{a+b+c}{3} = 8$ which when we multiply both sides by $3$ gives us $a+b+c=24$. Since their geometric mean is $5$ we have $\\sqrt[3]{abc}=5$, which when we cube both sides gives us $abc = 125$. Now since the harmonic mean is $3$, we have\n$$\\frac{3}{\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}}=3.$$We can simplify to get\n$$\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} = 1.$$Converting to a common denominator gives\n$$\\frac{ab+bc+ca}{abc}=1$$which tells us that $ab+bc+ca=abc=125$.\n\nNow, we try and use this information to find $a^2+b^2+c^2$. Since we already know $a+b+c$, we can start by squaring that whole expression and expanding. This gives us,\n$$(a+b+c)^2=a^2+b^2+c^2+2(ab+bc+ca).$$We can rewrite the equation above as\n$$a^2+b^2+c^2=(a+b+c)^2-2(ab+bc+ca).$$Since we know both expressions on the right, we can substitute them in and solve to get\n$$a^2+b^2+c^2=(24)^2-2(125)=576-250=\\boxed{326}.$$"
-}

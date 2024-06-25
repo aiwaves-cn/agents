@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\lfloor \\sqrt{n^2 - 10n + 29} \\rfloor$ when $n = 19941994.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Note that\n\\[n^2 - 10n + 29 = (n - 5)^2 + 4 > (n - 5)^2.\\]We also claim that $n^2 - 10n + 29 < (n - 4)^2.$  Expanding, we get\n\\[n^2 - 10n + 29 < n^2 - 8n + 16,\\]which is equivalent to $2n > 13.$  This certainly holds for $n = 19941994.$\n\nHence,\n\\[(n - 5)^2 < n^2 - 10n + 29 < (n - 4)^2,\\]so $n - 5 < \\sqrt{n^2 - 10n + 29} < n - 4,$ which means that\n\\[\\lfloor \\sqrt{n^2 - 10n + 29} \\rfloor = n - 5 = \\boxed{19941989}.\\]"
-}

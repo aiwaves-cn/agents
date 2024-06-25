@@ -1,6 +1,0 @@
-{
-    "problem": "Find the $2 \\times 2$ matrix $\\mathbf{M}$ such that $\\mathbf{M} \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 6 \\\\ 21 \\end{pmatrix}$ and $\\mathbf{M} \\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ -17 \\end{pmatrix}.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Dividing both sides of $\\mathbf{M} \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 6 \\\\ 21 \\end{pmatrix}$ by 3, we get\n\\[\\mathbf{M} \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 7 \\end{pmatrix}.\\]This tells us that the first column of $\\mathbf{M}$ is $\\begin{pmatrix} 2 \\\\ 7 \\end{pmatrix}.$\n\nSince $\\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix} + \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 5 \\end{pmatrix},$\n\\[\\mathbf{M} \\begin{pmatrix} 0 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ -17 \\end{pmatrix} + \\begin{pmatrix} 2 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} 5 \\\\ -10 \\end{pmatrix}.\\]Dividing both sides by 5, we get\n\\[\\mathbf{M} \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}.\\]This tells us that the second column of $\\mathbf{M}$ is $\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}.$\n\nTherefore,\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} 2 & 1 \\\\ 7 & -2 \\end{pmatrix}}.\\]"
-}

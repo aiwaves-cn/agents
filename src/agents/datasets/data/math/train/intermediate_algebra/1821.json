@@ -1,6 +1,0 @@
-{
-    "problem": "Functions that aren't invertible can be made invertible by restricting their domains. For example, the function $x^2$ is invertible if we restrict $x$ to the interval $[0,\\infty)$, or to any subset of that interval. In that case, the inverse function is $\\sqrt x$. (We could also restrict $x^2$ to the domain $(-\\infty,0]$, in which case the inverse function would be $-\\sqrt{x}$.)\n\nSimilarly, by restricting the domain of the function $f(x) = 2x^2-4x-5$ to an interval, we can make it invertible. What is the largest such interval that includes the point $x=0$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square, we have $f(x)=2(x-1)^2-7$. The graph of this function is a parabola with its vertex at $x=1$. To the left of that point, $f(x)$ is decreasing; to the right, it's increasing. Thus, by restricting the domain to either $(-\\infty,1]$ or $[1,\\infty)$, we make $f$ invertible. The choice that includes $x=0$ is $\\boxed{(-\\infty,1]}$."
-}

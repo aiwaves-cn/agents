@@ -1,6 +1,0 @@
-{
-    "problem": "Express $\\sqrt{x} \\div\\sqrt{y}$ as a common fraction, given:\n\n$\\frac{ {\\left( \\frac{1}{2} \\right)}^2 + {\\left( \\frac{1}{3} \\right)}^2 }{ {\\left( \\frac{1}{4} \\right)}^2 + {\\left( \\frac{1}{5} \\right)}^2} = \\frac{13x}{41y} $",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We first simplify the expression on the left hand side of the equation:  $$\n\\frac{13x}{41y}= \\frac{ {\\left( \\frac{1}{2} \\right)}^2 + {\\left( \\frac{1}{3} \\right)}^2 }{ {\\left( \\frac{1}{4} \\right)}^2 + {\\left( \\frac{1}{5} \\right)}^2}\n= \\frac{\\frac{1}{4} + \\frac{1}{9}}{\\frac{1}{16}+\\frac{1}{25}}\n= \\frac{\\frac{9+4}{9\\cdot 4}}{\\frac{16+25}{16\\cdot25}}\n= \\frac{13/36}{41/400}.\n$$ Since dividing by a fraction is the same thing as multiplying by its reciprocal, we have that $\\frac{13x}{41y}=\\frac{13}{36}\\cdot \\frac{400}{41}=\\frac{13 \\cdot 400}{36 \\cdot 41}$. We can then multiply both sides of the equation by $\\frac{41}{13}$ to get that $\\frac{x}{y}=\\frac{400}{36}$. Since $\\sqrt{x} \\div\\sqrt{y} = \\sqrt{\\frac{x}{y}}$, to find $\\sqrt{x} \\div \\sqrt{y}$, we can take the square root of both sides of the equation: $$\\sqrt{\\frac{x}{y}}=\\sqrt{\\frac{400}{36}}=\\frac{20}{6}=\\boxed{\\frac{10}{3}}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\mathbf{v} \\times \\mathbf{w} = \\begin{pmatrix} 5 \\\\ -2 \\\\ 4 \\end{pmatrix},$ then find $(\\mathbf{v} + \\mathbf{w}) \\times (\\mathbf{v} + \\mathbf{w}).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The cross product of any vector with itself is $\\mathbf{0} = \\boxed{\\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}}.$\n\nWe can also see this by expanding:\n\\begin{align*}\n(\\mathbf{v} + \\mathbf{w}) \\times (\\mathbf{v} + \\mathbf{w}) &= \\mathbf{v} \\times \\mathbf{v} + \\mathbf{v} \\times \\mathbf{w} + \\mathbf{w} \\times \\mathbf{v} + \\mathbf{w} \\times \\mathbf{w} \\\\\n&= \\mathbf{0} + \\mathbf{v} \\times \\mathbf{w} - \\mathbf{v} \\times \\mathbf{w} + \\mathbf{0} \\\\\n&= \\mathbf{0}.\n\\end{align*}"
-}

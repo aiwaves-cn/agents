@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $126_7 - 54_7.$ Express your answer in base $7.$",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We subtract the rightmost digits as usual. However, for the next digits, we need to borrow as shown: $$ \\begin{array}{cccccc} & & & \\cancelto{0}{1} & \\cancelto{9}{2} & 6_7\\\\ &- & & & 5 & 4_7\\\\ \\cline{2-6} & & & & 4 & 2_7\\\\ \\end{array} $$ Thus, the answer is $\\boxed{42_7}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $x^2-kx-12=0$ has only integer solutions for certain positive integers $k$. What is the sum of all such values of $k$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Here we take advantage of the relationship between the sum and product of the roots of a polynomial and the coefficients of the polynomial.\n\nIf $\\alpha,\\beta$ are the roots of the equation, then $k = \\alpha + \\beta$ and $\\alpha\\beta = -12$. Knowing that $\\alpha\\beta = -12$ and $\\alpha,\\beta$ are integers, we can make a list of possible values for $\\alpha$ and $\\beta$. \\begin{align*}\n(1,-12), (-1,12) \\\\\n(2,-6),(-2,6) \\\\\n(3,-4),(4,-3)\n\\end{align*} The possible values for $k$ are $1 - 12 = -11$, $12 - 1 = 11$, $2 -6 = -4$, $6 - 2 = 4$, $3 - 4 = -1$, $ 4 - 3 = 1$.\n\nAdding up the positive values of $k$, we get $11 + 4 + 1 = \\boxed{16}$."
-}

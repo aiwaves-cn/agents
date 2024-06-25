@@ -1,6 +1,0 @@
-{
-    "problem": "When simplified, what is the value of $\\sqrt{3} \\times 3^{\\frac{1}{2}} + 12 \\div 3 \\times 2 - 4^{\\frac{3}{2}}$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We first note that $\\sqrt{3}\\times 3^{\\frac{1}{2}} = 3^{\\frac{1}{2}}\\times 3^{\\frac{1}{2}} = 3^{\\frac{1}{2} + \\frac{1}{2}} = 3^1 = 3$ and $4^{3/2} = (2^2)^{\\frac{3}{2}} = 2^{2\\cdot \\frac{3}{2}} = 2^3 = 8$, so \\begin{align*}\n\\sqrt{3} \\times 3^{\\frac{1}{2}} + 12 \\div 3 \\times 2 - 4^{\\frac{3}{2}} &= 3 + 12\\div 3 \\times 2 - 8\\\\\n&=3 + 4\\times 2 - 8\\\\\n&=3+8-8 = \\boxed{3}.\n\\end{align*}"
-}

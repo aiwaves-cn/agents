@@ -1,6 +1,0 @@
-{
-    "problem": "Max picks two different cards without replacement from a standard 52-card deck. What is the probability that the cards are of different suits?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Once Max has chosen the first card, there are 51 cards remaining, of which 39 do not have the same suit as the first chosen card.  Therefore, the probability that the two cards have different suits is $\\dfrac{39}{51} = \\boxed{\\frac{13}{17}}$."
-}

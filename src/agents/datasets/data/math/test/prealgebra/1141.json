@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers are factors of 120 and also factors of 40?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Because 120 is a multiple of 40, every divisor of 40 is also a divisor of 120. Thus, if a number is a divisor of 40, it is automatically a factor of 120 too. The problem is asking \"How many positive integers are factors of 40?\". Listing out the factors, we get \\[1, 2, 4, 5, 8, 10, 20, 40.\\]Counting, we see there are $\\boxed{8}$ positive integers."
-}

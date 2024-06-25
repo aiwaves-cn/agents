@@ -1,6 +1,0 @@
-{
-    "problem": "The width, length, and height of a rectangular prism are each increased by $10\\%$. What is the percent increase in the volume of the prism? Express your answer to the nearest whole number.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Recall that increasing a quantity by $p\\%$ is equivalent to multiplying it by $1+p\\%$.   If the original length, width, and height are $l$, $w$, and $h$, respectively, then the new length, width, and height are $1.1l$, $1.1w$, and $1.1h$.  Therefore, the new volume is $(1.1l)(1.1w)(1.1h)=(1.1)^3(lwh)=1.331(lwh)$, which is 1.331 times greater than the original volume $lwh$.  Multiplication by 1.331 corresponds to an increase of $33.1\\%$, which to the nearest percent is $\\boxed{33\\%}$.\n\nNote: The identity  \\[\n(1+x)^3=1+3x+3x^2+x^3\n\\] with the substitution $x=0.1$ may be used to quickly calculate $1.1^3$."
-}

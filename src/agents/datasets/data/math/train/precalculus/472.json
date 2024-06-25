@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = 5,$ then find\n\\[\\begin{vmatrix} a - c & b - d \\\\ c & d \\end{vmatrix}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = 5,$ $ad - bc = 5.$  Then\n\\[\\begin{vmatrix} a - c & b - d \\\\ c & d \\end{vmatrix} = (a - c)d - (b - d)c = ad - bc = \\boxed{5}.\\](Why does this make sense geometrically?)"
-}

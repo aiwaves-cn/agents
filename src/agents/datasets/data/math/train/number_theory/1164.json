@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer $n$ such that $\\frac{1}{n}$ is a terminating decimal and $n$ contains the digit 9?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $n$ is divisible by both 2 and 5, then we can write $n$ in the form $10^a \\cdot 2^b$ or $10^a \\cdot 5^b$, where $a$ and $b$ are positive integers. Since $10^a$ simply contributes trailing zeros, we can continue dividing by 10 until $n$ is a power of two or a power of 5. We generate a list of powers of 2. \\begin{align*}\n2^1 &= 2 \\\\\n2^2 &= 4 \\\\\n2^3 &= 8 \\\\\n2^4 &= 16 \\\\\n2^5 &= 32 \\\\\n2^6 &= 64 \\\\\n2^7 &= 128 \\\\\n2^8 &= 256 \\\\\n2^9 &= 512 \\\\\n2^{10} &= 1024 \\\\\n2^{11} &= 2048 \\\\\n2^{12} &= 4096\n\\end{align*}Therefore, we can conclude that $n \\le 4096$. Looking at the powers of 5, we note that the first five powers of five do not contain the digit 9, and since $5^6 = 15625$, the smallest integer that works is $n = \\boxed{4096}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many non-congruent right triangles are there, all of whose sides have positive integer lengths, and one of whose legs (i.e. not the hypotenuse) has length $162$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $x$ be the length of the hypotenuse, and let $y$ be the length of the other leg.  Then we have $x^2-y^2=162^2$.  Factoring both sides gives $(x+y)(x-y)=(2\\times3^4)^2=2^2\\times3^8$.  A pair of positive integers $(x,y)$ gives a solution to this equation if and only if $(x+y)$ and $(x-y)$ are factors whose product is $2^2*3^8$.  For positive integers $a$ and $b$, the equations $x+y=a$ and $x-y=b$ have positive integer solutions if and only if  $a-b$ is an even positive integer.  Thus if $ab=2^2*3^8$ and the difference between $a$ and $b$ is even, then we get a valid triangle with $x+y=a$ and $x-y=b$.  Since $ab$ is even, at least one of the factors is even, and since their difference is even, the other must be as well.  Since $x+y>x-y$ we have $a>b$ i.e. $a>2\\times3^4.$  Since the prime factorization of $a$ must have exactly one $2$, the choices for $a$ that give valid triangles are $2\\times3^5,2\\times3^6,2\\times3^7,2\\times3^8.$  Thus there are $\\boxed{4}$ valid triangles."
-}

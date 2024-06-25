@@ -1,6 +1,0 @@
-{
-    "problem": "Find the $r$ that satisfies $\\log_{16} (r+16) = \\frac{5}{4}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Writing the equation $\\log_{16} (r+16) = \\frac{5}{4}$ in exponential notation gives $r+16 = 16^{\\frac{5}{4}} = (2^4)^{\\frac{5}{4}} = 2^5 = 32$. Solving $r+16 = 32$ gives $r = \\boxed{16}$."
-}

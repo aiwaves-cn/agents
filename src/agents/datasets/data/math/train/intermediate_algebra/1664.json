@@ -1,6 +1,0 @@
-{
-    "problem": "Six congruent copies of the parabola $y = x^2$ are arranged in the plane so that each vertex is tangent to a circle, and each parabola is tangent to its two neighbors.  Find the radius of the circle.\n\n[asy]\nunitsize(1 cm);\n\nreal func (real x) {\n  return (x^2 + 3/4);\n}\n\npath parab = graph(func,-1.5,1.5);\n\ndraw(parab);\ndraw(rotate(60)*(parab));\ndraw(rotate(120)*(parab));\ndraw(rotate(180)*(parab));\ndraw(rotate(240)*(parab));\ndraw(rotate(300)*(parab));\ndraw(Circle((0,0),3/4));\n[/asy]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $r$ be the radius of the circle.  Then we can assume that the graph of one of the parabolas is $y = x^2 + r.$\n\nSince $\\tan 60^\\circ = \\sqrt{3},$ the parabola $y = x^2 + r$ will be tangent to the line $y = x \\sqrt{3}.$\n\n[asy]\nunitsize(1 cm);\n\nreal func (real x) {\n  return (x^2 + 3/4);\n}\n\npath parab = graph(func,-1.5,1.5);\n\ndraw(dir(240)--3*dir(60),red);\ndraw(parab);\ndraw(Circle((0,0),3/4));\ndraw((-2,0)--(2,0));\n\nlabel(\"$60^\\circ$\", 0.5*dir(30));\n\ndot((0,0),red);\n[/asy]\n\nThis means the equation $x^2 + r = x \\sqrt{3},$ or $x^2 - x \\sqrt{3} + r = 0$ will have exactly one solution.  Hence, the discriminant will be 0, so $3 - 4r = 0,$ or $r = \\boxed{\\frac{3}{4}}.$"
-}

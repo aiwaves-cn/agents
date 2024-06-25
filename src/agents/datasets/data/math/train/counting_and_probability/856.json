@@ -1,6 +1,0 @@
-{
-    "problem": "How many 5-digit numbers have at least one zero?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "A 5-digit number can have for its leftmost digit anything from 1 to 9 inclusive, and for each of its next four digits anything from 0 through 9 inclusive. Thus there are $9\\times 10\\times 10\\times 10\\times 10=90,\\!000$ 5-digit numbers.\n\nA 5-digit number with no zero as a digit can have for each of its five digits anything from 1 through 9 inclusive. There are $9\\times 9\\times 9\\times 9\\times 9=59,\\!049$ such 5-digit numbers. Therefore the number of 5-digit numbers with at least one zero as a digit is  $90,\\!000-59,\\!049=\\boxed{30,951}.$"
-}

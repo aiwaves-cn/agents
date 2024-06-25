@@ -1,6 +1,0 @@
-{
-    "problem": "Two real numbers $x$ and $y$ satisfy $x-y=4$ and $x^3-y^3=28$.  Compute $xy$.",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Solution 1. The first equation gives $x = y+4$. Substituting into the second equation, we get \\[(y+4)^3 - y^3 = 28 \\implies 12y^2 + 48y + 36 = 0.\\]Thus, $y^2 + 4y + 3 = 0$, so $(y+1)(y+3) = 0$. Therefore, either $y=-1$ and $x=y+4=3$, or $y=-3$ and $x=y+4=1$. Either way, $xy = \\boxed{-3}$.\n\nSolution 2. The second equation factors via difference of cubes, as \\[(x-y)(x^2+xy+y^2) = 28.\\]Since $x-y=4$, we have $x^2+xy+y^2=\\frac{28}{4} =7$. Now, squaring the first equation, we get $x^2-2xy+y^2=16$. Thus, \\[3xy = (x^2+xy+y^2) - (x^2-2xy+y^2) = 7-16=-9,\\]so $xy = \\frac{-9}{3} = \\boxed{-3}$."
-}

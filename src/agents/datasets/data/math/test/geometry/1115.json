@@ -1,6 +1,0 @@
-{
-    "problem": "What is the ratio of the area of triangle $BDC$ to the area of triangle $ADC$? Express your answer as a common fraction.\n\n[asy]\ndraw((0,0)--(10sqrt(3),0)--(0,10)--(0,0)--cycle,linewidth(2));\ndraw(5sqrt(3)*dir(60)--(0,0),linewidth(2));\n\ndraw((1,0)--(1,1)--(0,1),linewidth(1));\ndraw(5sqrt(3)*dir(60)+1*dir(-120)--(5sqrt(3)-1)*dir(60)+1*dir(-30)--5sqrt(3)*dir(60)+1*dir(-30),linewidth(1));\n\nlabel(\"A\",(10sqrt(3),0),E);\nlabel(\"B\",(0,10),W);\nlabel(\"C\",(0,0),SW);\nlabel(\"D\",5sqrt(3)*dir(60),NE);\nlabel(\"$30^{\\circ}$\",(12,0),N);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "We have $\\angle CBD = 90^\\circ - \\angle A = 60^\\circ$, so $\\triangle BDC$ and $\\triangle CDA$ are similar 30-60-90 triangles.  Side $\\overline{CD}$ of $\\triangle BCD$ corresponds to $\\overline{AD}$ of $\\triangle CAD$ (each is opposite the $60^\\circ$ angle), so the ratio of corresponding sides in these triangles is $\\frac{CD}{AD}$.  From 30-60-90 triangle $ACD$, this ratio equals $\\frac{1}{\\sqrt{3}}$.  The ratio of the areas of these triangles equals the square of the ratio of the corresponding sides, or \\[\\left(\\frac{1}{\\sqrt{3}}\\right)^2 = \\boxed{\\frac13}.\\]"
-}

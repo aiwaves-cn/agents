@@ -1,6 +1,0 @@
-{
-    "problem": "There are ten meerkats in a colony. Every night, two meerkats stand guard while the others sleep. During a certain period of nights, every meerkat stands guard with every other meerkat exactly once. During that period, how many nights of sleep does each meerkat get?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "First, we figure out how many nights it takes for every meerkat to stand guard with every other meerkat exactly once. There are $10$ possibilities for the first guard and $9$ possibilities for the second guard, making $10\\cdot 9$ pairs; but this actually counts each pair twice (since it doesn't matter which guard is \"first\" and which is \"second\"). So, the number of nights in one complete period is $(10\\cdot 9)/2$, which is $45$.\n\nDuring that period, each meerkat has to stand guard for $9$ nights. So, each meerkat gets $\\boxed{36}$ nights of sleep.\n\nAlternative solution: Let's say we want to know how many nights of sleep a particular meerkat (let's call him Max) gets. This is equal to the number of pairs of meerkats that don't include Max. To form such a pair, we can choose the first (non-Max) meerkat in $9$ ways and the second in $8$ ways, but again, this overcounts by a factor of $2$. The number of pairs without Max is thus $(9\\cdot 8)/2$, which is $\\boxed{36}$."
-}

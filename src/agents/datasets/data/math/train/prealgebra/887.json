@@ -1,6 +1,0 @@
-{
-    "problem": "Two circles have the same center O. Point X is the midpoint of segment OP. What is the ratio of the area of the circle with radius OX to the area of the circle with radius OP? Express your answer as a common fraction.\n\n[asy]\nimport graph;\ndraw(Circle((0,0),20));\ndraw(Circle((0,0),12));\ndot((0,0));\ndot((20,0));\ndot((12,0));\ndraw((0,0)--(20,0));\nlabel(\"$O$\",(0,0),SE);\nlabel(\"$P$\",(20,0),E);\nlabel(\"$X$\",(12,0),SE);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "If $X$ is the midpoint of $OP$, the ratio of the radius of the circle with radius $OX$ to the radius of the circle with radius $OP$ is $1/2$. To find the ratio of the areas, we square this number: $(1/2)^2 = \\boxed{\\frac{1}{4}}$."
-}

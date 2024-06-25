@@ -1,6 +1,0 @@
-{
-    "problem": "The ones digit of the product of four consecutive positive integers is 4. If this product is greater than 1000, what is the sum of the four smallest such integers?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Note that exactly two of every four consecutive integers are divisible by 2. Therefore, since the ones digit of the product of four consecutive positive integers is 4, none of the integers is divisible by 5 (else the product $2\\times5$ would make the units digit 0). Thus, the four consecutive integers can only have ones digits 1, 2, 3, 4, respectively, or 6, 7, 8, 9 respectively. Indeed, the units digit of both $1\\times2\\times3\\times4=24$ and $6\\times7\\times8\\times9=3024$ is 4. We wish to minimize the four integers given that their product is greater than 1000, so we take the bigger ones digits (to have smaller tens digits). $6\\times7\\times8\\times9>1000$, so we are done. The desired sum is $6+7+8+9=\\boxed{30}$."
-}

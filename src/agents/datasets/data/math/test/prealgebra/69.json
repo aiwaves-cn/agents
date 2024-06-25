@@ -1,6 +1,0 @@
-{
-    "problem": "Lincoln Elementary School has 120 students. Of these 120 students, $\\frac{2}{5}$ ride the bus to school and $\\frac{5}{12}$ have a parent drive them to school. If the rest of the students walk to school, what fraction of students walk to school?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We first have to find what fraction of students walk to school. Since the total fraction of students is $\\frac{120}{120}$ or 1, we must find:\\[\\frac{120}{120} - \\frac{2}{5} - \\frac{5}{12}.\\]To solve this expression, we have to get common denominators. In this case, the common denominator is 120.\n\nTo get this common denominator for the fraction $\\frac{2}{5}$, multiply the numerator and denominator by 24 to get $\\frac{48}{120}$.\n\nTo get the common denominator for $\\frac{5}{12}$, multiply the numerator and denominator by 10 to get $\\frac{50}{120}$. So now we have: \\[\\frac{120}{120} - \\frac{48}{120} - \\frac{50}{120} = \\frac{120 - 48 - 50}{120} = \\frac{22}{120}.\\]Notice that $\\frac{22}{120}$ can be written as $\\frac{2\\cdot11}{2\\cdot60}$, so our final answer is $\\boxed{\\frac{11}{60}}$."
-}

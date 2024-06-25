@@ -1,6 +1,0 @@
-{
-    "problem": "How many natural numbers greater than 6 but less than 60 are relatively prime to 15?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We are interested in how many numbers among $7, 8, 9, \\dots, 59$ are relatively prime to 15.\n\nFirst, we count how many numbers among $1, 2, 3, \\dots, 60$ are relatively prime to 15.  Note that $15 = 3 \\cdot 5$.  Among these 60 numbers, $60/3 = 20$ are multiples of 3, $60/5 = 12$ are multiples of 5, and $60/15 = 4$ are multiples of 15.  We can take 60, and subtract 20 and 12, but we have subtracted the multiples of 15 twice.  Therefore, among the 60 numbers, there are $60 - 20 - 12 + 4 = 32$ numbers that are relatively prime to 15.\n\nGoing back to the set $7, 8, 9, \\dots, 59$, we must account for the numbers 1, 2, and 4 that are relatively prime to 15.  Thus, the answer is $32 - 3 = \\boxed{29}$."
-}

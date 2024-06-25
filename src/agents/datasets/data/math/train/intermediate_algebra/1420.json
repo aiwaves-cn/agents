@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the largest positive integer $n$ such that there exist positive integers $x, y, z$ so that \\[\nn^2 = x^2+y^2+z^2+2xy+2yz+2zx+3x+3y+3z-6\n\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "The given equation rewrites as $n^2 = (x+y+z+1)^2+(x+y+z+1)-8$. Writing $r = x+y+z+1$, we have $n^2 = r^2+r-8$. Clearly, one possibility is $n=r=\\boxed{8}$, which is realized by $x=y=1, z=6$. On the other hand, for $r > 8$, we have $r^2 < r^2+r-8 < (r+1)^2.$"
-}

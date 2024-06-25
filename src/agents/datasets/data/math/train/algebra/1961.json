@@ -1,6 +1,0 @@
-{
-    "problem": "The positive difference between the two roots of the quadratic equation $3x^2 - 7x - 8 = 0$ can be written as $\\frac{\\sqrt{m}}{n}$, where $n$ is an integer and $m$ is an integer not divisible by the square of any prime number. Find $m + n$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The roots of the equation are given by $\\frac{7 \\pm \\sqrt{7^2 + 4 \\cdot 3 \\cdot 8}}{2 \\cdot 3}$. When taking their difference, the term $7$ in the numerator cancels out, so the difference is $2 \\times \\frac{\\sqrt{7^2 + 4 \\cdot 3 \\cdot 8}}{2 \\cdot 3} = \\frac{\\sqrt{145}}{3}$. Thus, the answer is $145 + 3 = \\boxed{148}$."
-}

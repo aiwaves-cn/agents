@@ -1,6 +1,0 @@
-{
-    "problem": "For integers $a$, $b$, $c$, and $d$, $(x^2+ax+b)(x^2+cx+d)=x^4+x^3-2x^2+17x-5$. What is the value of $a+b+c+d$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We expand the expression on the left and attempt to match up the coefficients with those in the expression on the right. \\begin{align*}\n(x^2+ax+b)(x^2+cx+d) = x^4+cx^3 \\ +& \\ dx^2 \\\\\nax^3 \\ +& \\ acx^2+adx \\\\\n\\ +& \\ \\ bx^2 \\ +bcx+bd\n\\end{align*} $$=x^4+x^3-2x^2+17x-5$$ So we have $a+c=1$, $ac+b+d=-2$, $ad+bc=17$, $bd=-5$.\n\nFrom the final equation, we know that either $b=1, d=-5$ or $b=-1, d=5$. We test each case:\n\nIf $b=1, d=-5$, then $ac+b+d=ac-4=-2$, so $ac=2$. We substitute $a=1-c$ from the first equation to get the quadratic $c^2-c+2=0$. This equation does not have any integer solutions, as we can test by finding that the discriminant is less than zero, $(-1)^2-4(1)(2)=-7$.\n\nIf $b=-1, d=5$, then $ac+b+d=ac+4=-2$, so $ac=-6$. We substitute $a=1-c$ from the first equation to get the quadratic $c^2-c-6=0$, which has solutions $c=-2$ (so $a=3$) or $c=3$ (so $a=-2$). In either case, we get that $a+b+c+d=\\boxed{5}$.\n\nThe remaining equation, $ad + bc = 17$, tells us that the coefficients are $a = 3, b = -1, c = -2, d = 5.$"
-}

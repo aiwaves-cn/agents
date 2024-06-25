@@ -1,6 +1,0 @@
-{
-    "problem": "James has a total of 66 dollars in his piggy bank. He only has one dollar bills and two dollar bills in his piggy bank. If there are a total of 49 bills in James's piggy bank, how many one dollar bills does he have?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Call the number of one dollar bills $x$ and the number of two dollar bills $y$. We can use the following system of equations to represent the given information: \\begin{align*}\nx + y &= 49, \\\\\n1x + 2y &= 66. \\\\\n\\end{align*}The first equation represents the total number of dollar bills in the piggy bank, and the second equation represents how much money is in the piggy bank. Solving for $x$ in the first equation gives $x = 49 - y$. Substituting for $x$ in the second equation yields $49 - y + 2y = 66$, or $y = 17$. But $y$ is the number of two dollar bills, and the question asks for the number of one dollar bills, so solve for $x$: $x = 49 - 17$. Thus, there are $\\boxed{32}$ one dollar bills."
-}

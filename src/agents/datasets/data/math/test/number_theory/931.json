@@ -1,6 +1,0 @@
-{
-    "problem": "If Rosa's age is divided by 2, 3, 4, or 6, the remainder is 1. If her age is divided by 7, the remainder is 0. She is less than 75 years old. How many years old is Rosa?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Since her age divided by 7 results in a remainder of 0, her age must be a multiple of 7. If her age is $n$, we notice that $n-1$ must be a multiple of 2, 3, 4, and 6. The least common multiple of those numbers is 12, so $n-1$ must be a multiple of 12. The multiples of 12 less than 75 are 12, 24, 36, 48, and 60. Adding 1 results in 13, 25, 37, 49, and 61, where 49 is the only multiple of 7. So Rosa is $\\boxed{49}$ years old.\n\nOR\n\nWe look for a multiple of 7 that is not divisible by 2, 3, 4, or 6. First we list all odd multiples of 7 less than 75, which are 7, 21, 35, 49, and 63. Since 21 and 63 are multiples of 3, we're left with 7, 35, and 49 as possibilities. Only $\\boxed{49}$ has a remainder of 1 when divided by 2, 3, 4, or 6."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the volume, in cubic units, of a cube whose surface area is 600 square units?",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "The surface area of a cube equals 6 times the area of each face (since there are 6 faces). If the cube has a sidelength of $s$, then the surface area equals $6s^2$. We set that equal to 600 and solve for $s$, which must be positive. $$600=6s^2\\qquad\\Rightarrow 100=s^2\\qquad\\Rightarrow 10=s$$ The volume of the cube is $s^3=10^3=\\boxed{1000}$ cubic units."
-}

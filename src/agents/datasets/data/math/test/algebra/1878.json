@@ -1,6 +1,0 @@
-{
-    "problem": "Find all solutions to the equation $\\sqrt{3x+6}=x+2$.  If there are multiple solutions, order them from least to greatest, separated by comma(s).",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We square both sides to get rid of the square root. This gives $3x+6= (x+2)^2=x^2+4x+4$. Moving everything to one side, we get $x^2+x-2 = 0 = (x+2)(x-1)$. Solving, we get $ x = 1, -2$.\n\nWe plug both values back into the equation to see if either of them are extraneous.\n\nFor $x=1$, we get $\\sqrt{3 \\cdot 1+6}=1+2$, which works.\n\nFor $x=-2$, we get $\\sqrt{3 \\cdot -2+6}=-2+2$, which is also valid.\n\nTherefore, the answers are $\\boxed{-2}$ and $\\boxed{1}$."
-}

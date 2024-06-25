@@ -1,6 +1,0 @@
-{
-    "problem": "On a balance scale, $3$ green balls balance $6$ blue balls, $2$ yellow balls balance $5$ blue balls, and $6$ blue balls balance $4$ white balls. How many blue balls are needed to balance $4$ green, $2$ yellow and $2$ white balls?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We will herein give the weight of each color ball a variable determined by the first letter of the color. We have $3G=6B\\implies 1G=2B$, $2Y=5B\\implies 1Y=2.5B$, and $6B=4W\\implies 1W=1.5B$. Thus $4G+2Y+2W=4(2B)+2(2.5B)+2(1.5B)=8B+5B+3B=16B$, and our answer is $\\boxed{16}$."
-}

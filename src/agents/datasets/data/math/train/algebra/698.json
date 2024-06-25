@@ -1,6 +1,0 @@
-{
-    "problem": "Here are two functions: $$\\begin{array}{ccc}\nf(x) & = & 3x^2-2x+ 4\\\\\ng(x) & = & x^2-kx-6\n\\end{array}$$ If $f(10) - g(10) = 10,$ what is the value of $k?$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have that \\begin{align*} f(x) - g(x) &= (3x^2-2x+ 4) - (x^2-kx-6) \\\\ &= 2x^2 + (k-2)\\cdot x +10. \\end{align*}So $f(10) - g(10) = 2\\cdot 10^2 + (k - 2)\\cdot 10 +10 = 10.$ Thus $-2\\cdot 10^2 = (k-2)\\cdot 10,$ and $k = \\boxed{-18}.$"
-}

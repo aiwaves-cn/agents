@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive multiples of $9$ are less than $1000$?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "First, we'll find the largest multiple of $9$ less than $1000$.  Because $1000 \\div 9 = 111$ remainder 1, the largest multiple of $9$ less than $1000$ is $111 \\cdot 9$, or $999$.\n\nTherefore, every number in the form $n \\cdot 9$ works, as long as $n$ is positive and at most $111$.  There are $111$ such values of $n$, so there are $\\boxed{111}$ multiples of $9$ that are less than $1000$."
-}

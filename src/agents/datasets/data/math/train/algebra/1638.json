@@ -1,6 +1,0 @@
-{
-    "problem": "Given that the point $(9,7)$ is on the graph of $y=f(x)$, there is one point that must be on the graph of $2y=\\frac{f(2x)}2+2$. What is the sum of coordinates of that point?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $(9,7)$ is on the graph of $y=f(x)$, we know  \\[7=f(9).\\]If we substitute $x=\\frac92$ into $2y=\\frac{f(2x)}2+2$ we get  \\[2y=\\frac{f(2\\cdot9/2)}2+2=\\frac72+2=\\frac{11}2.\\]Therefore $(x,y)=\\left(\\frac92,\\frac{11}4\\right)$ is on the graph of  \\[2y=\\frac{f(2x)}2+2.\\]The sum of these coordinates is  \\[\\frac92+\\frac{11}4=\\boxed{\\frac{29}4}.\\]"
-}

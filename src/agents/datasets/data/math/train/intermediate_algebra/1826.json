@@ -1,6 +1,0 @@
-{
-    "problem": "Find the minimum value of\n\\[2 \\sqrt{x} + \\frac{1}{x}\\]for $x > 0.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[2 \\sqrt{x} + \\frac{1}{x} = \\sqrt{x} + \\sqrt{x} + \\frac{1}{x} \\ge 3 \\sqrt[3]{\\sqrt{x} \\cdot \\sqrt{x} \\cdot \\frac{1}{x}} = 3.\\]Equality occurs when $x = 1,$ so the minimum value is $\\boxed{3}.$"
-}

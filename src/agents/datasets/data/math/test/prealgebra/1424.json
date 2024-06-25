@@ -1,6 +1,0 @@
-{
-    "problem": "The rectangle pictured consists of two squares placed side by side. The perimeter of the rectangle is 60 cm.  What is the number of square centimeters in the area of the rectangle?\n\n[asy]\nsize(60); draw((0,0)--(2,0)--(2,1)--(0,1)--cycle); draw((1,0)--(1,1),linetype(\"6 4\"));\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The sides of the rectangle consist of a total of 6 side lengths of one of the squares.  Therefore, each side of a square has length $60/6 = 10$ cm.  So, the rectangle is 10 cm by 20 cm, and its area is $(10)(20) = \\boxed{200}$ square centimeters."
-}

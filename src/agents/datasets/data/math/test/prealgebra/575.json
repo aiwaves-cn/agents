@@ -1,6 +1,0 @@
-{
-    "problem": "Line $l$ is a straight line. What is the value of $x$ in the diagram? [asy]\nsize(150); defaultpen(linewidth(0.8)); import geometry;\ndraw(origin--(10,0),Arrows);\npair X = (5,0) + 5*dir(80);\ndraw((5,0)--X,EndArrow);\nlabel(\"$x$\",(5.4,0),NE);\nlabel(\"$x+20^\\circ$\",(5,0),NW);\nlabel(\"$l$\",(0,0),NW);\n[/asy]",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "Since the two angles together form a line, we have $x+ (x+20^\\circ) = 180^\\circ$.  Simplifying gives $2x + 20^\\circ = 180^\\circ$, so $2x = 160^\\circ$ and $x = \\boxed{80^\\circ}$."
-}

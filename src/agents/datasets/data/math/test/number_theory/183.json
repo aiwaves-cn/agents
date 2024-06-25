@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the digits in the terminating decimal representation of the fraction $\\frac{4321}{5^7\\cdot2^8}$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Rewriting $\\frac{4321}{5^7\\cdot2^8}$ as a decimal with a denominator of $5^8\\cdot2^8=10^8$, we have \\[ \\frac{4321}{5^7\\cdot2^8}\\cdot\\frac{5^{1}}{5^{1}}=\\frac{4321\\cdot5}{10^8}=\\frac{21605}{10^{8}}=0.00021605.\\]So, the sum of the digits of the decimal representation is $2+1+6+0+5 = \\boxed{14}$."
-}

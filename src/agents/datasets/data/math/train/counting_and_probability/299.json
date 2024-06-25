@@ -1,6 +1,0 @@
-{
-    "problem": "A weather forecast predicts that for each day from Monday to Friday this week, there is a $40\\%$ chance of sun, a $25\\%$ chance of getting 4 inches of rain, and a $35\\%$ chance of getting 10 inches of rain. What is the expected value of the total number of inches of rain which will fall from Monday to Friday?  Give your answer as a decimal rounded to the nearest tenth.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "For each day, the expected amount of rain is $(.40)(0)+(.25)(4)+(.35)(10)=0+1+3.5=4.5$. To find the total expected amount of rain for the days from Monday to Friday, we can add the amounts for each day, getting $5\\cdot4.5= \\boxed{22.5}$ inches total."
-}

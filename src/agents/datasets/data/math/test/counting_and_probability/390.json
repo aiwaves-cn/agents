@@ -1,6 +1,0 @@
-{
-    "problem": "Congruent segments are used to form equilateral triangles in this sequence so that each figure contains one more triangle than the preceding figure. Figure 3 of the sequence is made with seven congruent segments. How many congruent segments must be used to make Figure 25 of the sequence?\n\n[asy]\ndraw((0,0)--(10,0)--(5,8.7)--cycle);\ndraw((15,0)--(25,0)--(30,8.7)--(20,8.7)--cycle);\ndraw((20,8.7)--(25,0));\ndraw((35,0)--(55,0)--(50,8.7)--(40,8.7)--cycle);\ndraw((40,8.7)--(45,0)--(50,8.7));\ndraw((60,0)--(80,0)--(85,8.7)--(65,8.7)--cycle);\ndraw((65,8.7)--(70,0)--(75,8.7)--(80,0));\nlabel(\"Figure 1\",(2,0),S);\nlabel(\"Figure 2\",(20,-10),S);\nlabel(\"Figure 3\",(45,0),S);\nlabel(\"Figure 4\",(76,-10),S);\n[/asy]",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "It takes 2 additional segments to create an additional triangle after the first. Since Figure $n$ has $n$ triangles, Figure 25 has 25 triangles. It takes 3 segments to create the first triangle and $2\\cdot24=48$ segments to create the 24 additional triangles, for a total of $3+48=\\boxed{51}$ segments."
-}

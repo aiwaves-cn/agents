@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that the point $\\left(\\rho,\\theta,\\phi \\right)=\\left( 12, \\frac{2 \\pi}{3}, \\frac{\\pi}{4} \\right)$ in spherical coordinates can be expressed as $(x, y, z)$ in rectangular coordinates.  Find $x+z$.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that $\\rho = 12,$ $\\theta = \\frac{2 \\pi}{3},$ and $\\phi = \\frac{\\pi}{4},$ so\n\\begin{align*}\nx &= \\rho \\sin \\phi \\cos \\theta = 12 \\sin \\frac{\\pi}{4} \\cos \\frac{2 \\pi}{3} = 12 \\cdot \\frac{1}{\\sqrt{2}} \\cdot \\left( -\\frac{1}{2} \\right) = -3 \\sqrt{2}, \\\\\ny &= \\rho \\sin \\phi \\sin \\theta = 12 \\sin \\frac{\\pi}{4} \\sin \\frac{2 \\pi}{3} = 12 \\cdot \\frac{1}{\\sqrt{2}} \\cdot \\frac{\\sqrt{3}}{2} = 3 \\sqrt{6}, \\\\\nz &= \\rho \\cos \\phi = 12 \\cos \\frac{\\pi}{4} = 12 \\cdot \\frac{1}{\\sqrt{2}} = 6 \\sqrt{2}.\n\\end{align*}Therefore, we have $x + z = \\boxed{3\\sqrt{2}}$."
-}

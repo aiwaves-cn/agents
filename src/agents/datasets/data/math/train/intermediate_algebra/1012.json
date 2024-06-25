@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ and $t$ be real numbers such that $a + b = t.$  Find, in terms of $t,$ the minimum value of $a^2 + b^2.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By QM-AM,\n\\[\\sqrt{\\frac{a^2 + b^2}{2}} \\ge \\frac{a + b}{2} = \\frac{t}{2}.\\]Then\n\\[\\frac{a^2 + b^2}{2} \\ge \\frac{t^2}{4},\\]so $a^2 + b^2 \\ge \\frac{t^2}{2}.$\n\nEquality occurs when $a = b = \\frac{t}{2},$ so the minimum value of $a^2 + b^2$ is $\\boxed{\\frac{t^2}{2}}.$"
-}

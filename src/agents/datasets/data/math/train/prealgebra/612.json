@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive perfect square that is divisible by both 2 and 3?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Squaring the first few positive integers, we find that the first few perfect squares are 1, 4, 9, 16, 25, 36, 49, and 64. First we strike off the ones that are not even, leaving us with 4, 16, 36, and 64. Four is not divisible by 3, and 16 is not divisible by 3 since the sum of its digits, $1+6=7$, is not divisible by 3. However, the sum of the digits of 36 is $3+6=9$, so 36 is divisible by 3. Thus $\\boxed{36}$ is the least perfect square divisible by both 2 and 3."
-}

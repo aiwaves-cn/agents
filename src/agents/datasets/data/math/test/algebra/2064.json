@@ -1,6 +1,0 @@
-{
-    "problem": "What is the maximum value of $4(x + 7)(2 - x)$, over all real numbers $x$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The graph of $y = 4(x + 7)(2 - x)$ is a parabola.  Since $y = 0$ when $x = -7$ and $x = 2$, the $x$-intercepts of the parabola are $(-7,0)$ and $(2,0)$.  If the vertex of the parabola is $(h,k)$, then the $x$-intercepts $(-7,0)$ and $(2,0)$ are symmetric around the line $x = h$, so $h = (-7 + 2)/2 = -5/2$.\n\nHence, the maximum value of $y = 4(x + 7)(2 - x)$ occurs at $x = -5/2$, in which case \\[y = 4 \\left( -\\frac{5}{2} + 7 \\right) \\left( 2 + \\frac{5}{2} \\right) = 4 \\cdot \\frac{9}{2} \\cdot \\frac{9}{2} = \\boxed{81}.\\] (Note that this is a maximum value, and not a minimum value, because the coefficient of $x^2$ in $y = 4(x + 7)(2 - x) = -4x^2 - 20x + 56$ is negative.)"
-}

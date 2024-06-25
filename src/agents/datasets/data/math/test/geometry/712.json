@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$ with $\\angle A = 90^\\circ$, we have $AB = 5$ and $BC = 8$.  Find $\\sin B$.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The triangle is shown below:\n\n[asy]\npair A,B,C;\nA = (0,0);\nB = (5,0);\nC = (0,sqrt(39));\ndraw(A--B--C--A);\ndraw(rightanglemark(B,A,C,10));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\nlabel(\"$8$\",(B+C)/2,NE);\nlabel(\"$5$\",B/2,S);\n[/asy]\n\nThe Pythagorean Theorem gives us $AC = \\sqrt{BC^2 - AB^2} = \\sqrt{64 - 25} = \\sqrt{39}$, so $\\sin B = \\frac{AC}{BC} = \\boxed{\\frac{\\sqrt{39}}{8}}$."
-}

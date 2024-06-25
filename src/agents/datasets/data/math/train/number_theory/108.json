@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of $1011_2 \\cdot 101_2$.  Express your answer in base 2.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We carry out the multiplication as we carry out multiplication in base $10$. Fortunately, we do not have to worry about carrying over, since we are only multiplying by digits of $0$ or $1$. Thus:  $$ \\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c}\n& & & 1 & 0 & 1 & 1_2 \\\\\n& & & \\times & 1 & 0 & 1_2 \\\\\n\\cline{4-7} & & & 1 & 0 & 1 & 1_2 \\\\\n& & 0 & 0 & 0 & 0 & 0_2 \\\\\n+ & 1 & 0 & 1 & 1 & 0 & 0_2 \\\\ \\cline{1-7}\n& 1 & 1 & 0 & 1 & 1 & 1_2 \\\\\n\\end{array}$$When summing, we need to carry-over for the second digit from the left. Thus, the sum is equal to $\\boxed{110111}_2$."
-}

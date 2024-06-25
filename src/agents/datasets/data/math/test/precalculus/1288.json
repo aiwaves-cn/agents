@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\mathbf{A}^{-1} = \\begin{pmatrix} 4 & 6 \\\\ -2 & 10 \\end{pmatrix},$ and $\\mathbf{B} = \\frac{1}{2} \\mathbf{A},$ then find $\\mathbf{B}^{-1}.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From $\\mathbf{A}^{-1} = \\begin{pmatrix} 4 & 6 \\\\ -2 & 10 \\end{pmatrix},$\n\\[\\mathbf{A} \\begin{pmatrix} 4 & 6 \\\\ -2 & 10 \\end{pmatrix} = \\mathbf{I}.\\]Since $\\mathbf{B} = \\frac{1}{2} \\mathbf{A},$ $\\mathbf{A} = 2 \\mathbf{B},$ so\n\\[2 \\mathbf{B} \\begin{pmatrix} 4 & 6 \\\\ -2 & 10 \\end{pmatrix} = \\mathbf{I}.\\]In other words,\n\\[\\mathbf{B} \\begin{pmatrix} 8 & 12 \\\\ -4 & 20 \\end{pmatrix} = \\mathbf{I}.\\]Therefore,\n\\[\\mathbf{B}^{-1} = \\boxed{\\begin{pmatrix} 8 & 12 \\\\ -4 & 20 \\end{pmatrix}}.\\]"
-}

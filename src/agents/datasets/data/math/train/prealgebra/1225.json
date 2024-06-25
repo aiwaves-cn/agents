@@ -1,6 +1,0 @@
-{
-    "problem": "A running track is the ring formed by two concentric circles. If the circumferences of the two circles differ by $10\\pi $ feet, how wide is the track in feet?\n\n[asy]size(100); path g=scale(2)*unitcircle;\nfilldraw(unitcircle^^g,evenodd+grey,black);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Call the radius of the outer circle $r_1$ and that of the inner circle $r_2$. The width of the track is $r_1-r_2$. The circumference of a circle is $2\\pi$ times the radius, so the difference in circumferences is $2\\pi r_1-2\\pi r_2=10\\pi$ feet. If we divide each side by $2\\pi$, we get $r_1-r_2=\\boxed{5}$ feet."
-}

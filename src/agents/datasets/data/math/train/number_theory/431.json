@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest three-digit number that is one more than a multiple of 9 and three more than a multiple of 5?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Consider the first several positive integers that are one more than a multiple of 9, and check their remainders when divided by 5.  One leaves a remainder of 1, 10 leaves a remainder of 0, 19 leaves a remainder of 4, and 28 leaves a remainder of 3.  By the Chinese Remainder Theorem, the numbers that are one more than a multiple of 9 and three more than a multiple of 5 are those that differ from 28 by a multiple of $9\\cdot 5=45$.  Dividing $1000-28=972$ by 45, we get a quotient of 21 and a remainder of 27.  Therefore, $45\\cdot 21+28=\\boxed{973}$ is the largest three-digit integer which leaves a remainder of 1 when divided by 9 and a remainder of 3 when divided by 5."
-}

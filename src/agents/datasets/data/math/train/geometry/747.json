@@ -1,6 +1,0 @@
-{
-    "problem": "In a triangle with integer side lengths, one side is three times as long as a second  side, and the length of the third side is 15. What is the greatest possible perimeter of the triangle?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let the sides of the triangle have lengths $x$, $3x$, and 15. The Triangle Inequality implies that $3x<x+15$, so $x<7.5$. Because $x$ is an integer, the greatest possible perimeter is $7+21+15=\\boxed{43}$."
-}

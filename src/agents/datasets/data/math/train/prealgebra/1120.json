@@ -1,6 +1,0 @@
-{
-    "problem": "Figure $ABCD$ is a square. Inside this square three smaller squares are drawn with side lengths as labeled. What is the area of the shaded $\\text L$-shaped region? [asy]\n/* AMC8 2000 #6 Problem */\ndraw((0,0)--(5,0)--(5,5)--(0,5)--cycle);\ndraw((1,5)--(1,1)--(5,1));\ndraw((0,4)--(4,4)--(4,0));\nfill((0,4)--(1,4)--(1,1)--(4,1)--(4,0)--(0,0)--cycle);\nlabel(\"$A$\", (5,5), NE);\nlabel(\"$B$\", (5,0), SE);\nlabel(\"$C$\", (0,0), SW);\nlabel(\"$D$\", (0,5), NW);\nlabel(\"1\",(.5,5), N);\nlabel(\"1\",(1,4.5), E);\nlabel(\"1\",(4.5,1), N);\nlabel(\"1\",(4,.5), E);\nlabel(\"3\",(1,2.5), E);\nlabel(\"3\",(2.5,1), N);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The $\\text L$-shaped region is made up of two rectangles with area $3\\times 1=3$ plus the corner square with area $1\\times 1=1,$ so the area of the $\\text L$-shaped figure is $2\\times 3+1=\\boxed{7}.$\n\nOR\n\n$\\text{Square }FECG-\\text{Square }FHIJ=4\\times 4-3\\times 3 =16-9=\\boxed{7}.$\n\nOR\n\nThe $\\text L$-shaped region can be decomposed into a $4\\times 1$ rectangle and a $3\\times 1$ rectangle. So the total area is $\\boxed{7}.$"
-}

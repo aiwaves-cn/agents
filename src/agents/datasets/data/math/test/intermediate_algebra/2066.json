@@ -1,6 +1,0 @@
-{
-    "problem": "The equation \\[2000x^6+100x^5+10x^3+x-2=0\\]has two real roots. Compute the square of the difference between them.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We try to factor the equation piece by piece. Start with the terms $2000x^6$ and $-2,$ and use difference of cubes: \\[\\begin{aligned} 2000x^6 - 2 & = 2((10x^2)^3 - 1) \\\\ &= 2(10x^2-1)(100x^4 + 10x^2 + 1) \\\\ &= (20x^2-2)(100x^4+10x^2+1). \\end{aligned}\\]Now we notice that the remaining terms make \\[100x^5 + 10x^3 + x =x(100x^4 + 10x^2 + 1),\\]so we can factor the whole left-hand side, giving \\[(20x^2 + x - 2)(100x^4 + 10x^2 + 1) = 0.\\]The term $100x^4 + 10x^2 + 1$ is always positive for real $x$, so the two real roots must be the roots of the quadratic $20x^2 + x - 2 = 0$. By the quadratic formula, \\[x = \\frac{-1 \\pm \\sqrt{1^2 + 4\\cdot 2 \\cdot 20}}{40} = \\frac{-1 \\pm \\sqrt{161}}{40}.\\]The difference between these roots is $\\frac{\\sqrt{161}}{20}$, so the answer is $\\boxed{\\frac{161}{400}}$."
-}

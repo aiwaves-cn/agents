@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P$ be a point outside of circle $O.$ A segment is drawn from $P$ such that it is tangent to circle $O$ at point $T.$ Meanwhile, a secant from $P$ intersects $O$ at $A$ and $B,$ such that $PA < PB.$ If $PA = 3$ and $PT = AB - PA,$ then what is $PB$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "First of all, we see that $PB = PA + AB = 3 + AB.$ By Power of a Point, we know that $(PA)(PB) = (PT)^2,$ so we have $3(PB) = (AB - 3)^2.$\n\n[asy]\nunitsize(2 cm);\n\npair A, B, O, P, T;\n\nT = dir(70);\nP = T + dir(-20);\nB = dir(150);\nO = (0,0);\nA = intersectionpoint(P--interp(P,B,0.9),Circle(O,1));\n\ndraw(Circle(O,1));\ndraw(T--P--B);\n\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, NW);\ndot(\"$O$\", O, S);\nlabel(\"$P$\", P, E);\nlabel(\"$T$\", T, NE);\n[/asy]\n\nLet us define $x$ such that $x = PB = 3 + AB,$ then $AB = x - 3.$ Substituting, we now have $3x = (x - 6)^2.$\n\nThen, we see that $3x = x^2 - 12x + 36,$ so $x^2 - 15x + 36 = 0.$ Factoring, we have $(x - 3)(x - 12) = 0$ so $x = 3$ or $x = 12,$ but we are given that $PA < PB,$ so $x > 3.$ That means our only answer for $x,$ hence $PB,$ is $\\boxed{12}.$"
-}

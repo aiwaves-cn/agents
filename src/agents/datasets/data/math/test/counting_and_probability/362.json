@@ -1,6 +1,0 @@
-{
-    "problem": "For how many positive integer values of $n$ is $3^n$ a factor of $15!$?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We first determine the largest positive integer value of $n$ such that $3^n | 15!$. We determine this by counting the number of factors of 3 in the product.  There are 5 multiples of 3 in the product, and there is one extra factor of 3 in 9, so there are a total of  $5+ 1 = \\boxed{6}$ factors of 3 in the product of the first 15 integers. So, for all $n$ between 1 and 6, inclusive, $3^n$ is a factor of 15!."
-}

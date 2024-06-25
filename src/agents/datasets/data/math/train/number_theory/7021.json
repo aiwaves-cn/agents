@@ -1,6 +1,0 @@
-{
-    "problem": "Define a positive integer $n$ to be a factorial tail if there is some positive integer $m$ such that the decimal representation of $m!$ ends with exactly $n$ zeroes. How many positive integers less than $1992$ are not factorial tails?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let the number of zeros at the end of $m!$ be $f(m)$. We have $f(m) = \\left\\lfloor \\frac{m}{5} \\right\\rfloor + \\left\\lfloor \\frac{m}{25} \\right\\rfloor + \\left\\lfloor \\frac{m}{125} \\right\\rfloor + \\left\\lfloor \\frac{m}{625} \\right\\rfloor + \\left\\lfloor \\frac{m}{3125} \\right\\rfloor + \\cdots$.\nNote that if $m$ is a multiple of $5$, $f(m) = f(m+1) = f(m+2) = f(m+3) = f(m+4)$.\nSince $f(m) \\le \\frac{m}{5} + \\frac{m}{25} + \\frac{m}{125} + \\cdots  = \\frac{m}{4}$, a value of $m$ such that $f(m) = 1991$ is greater than $7964$. Testing values greater than this yields $f(7975)=1991$.\nThere are $\\frac{7975}{5} = 1595$ distinct positive integers, $f(m)$, less than $1992$. Thus, there are $1991-1595 = \\boxed{396}$ positive integers less than $1992$ that are not factorial tails."
-}

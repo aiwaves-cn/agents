@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive four-digit integers of the form $\\_\\_45$ are divisible by 45?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let the four-digit integer be $ab45$, where $a$ and $b$ denote digits.  We may subtract 45 without changing whether the integer is divisible by 45, so let's consider $ab00$ instead of $ab45$.  A number is divisible by $45$ if and only if it is divisible by both 9 and 5.  Since the prime factorization of $ab00$ is the prime factorization of $ab$ times $2^2\\cdot5^2$, $ab00$ is divisible by 45 if and only if $ab$ is divisible by $9$.  The two-digit integers divisible by 9 are $9\\cdot 2$, $9\\cdot 3$, $\\ldots$, and $9\\cdot 11$.  There are $11-2+1=\\boxed{10}$ of them."
-}

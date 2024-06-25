@@ -1,6 +1,0 @@
-{
-    "problem": "The lengths of the sides of a triangle are consecutive integers, and the largest angle is twice the smallest angle.  Find the cosine of the smallest angle.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let the side lengths be $n,$ $n + 1,$ $n + 2.$  Then the smallest angle $x$ is opposite the side of length $n,$ and its cosine is\n\\[\\cos x = \\frac{(n + 1)^2 + (n + 2)^2 - n^2}{2(n + 1)(n + 2)} = \\frac{n^2 + 6n + 5}{2(n + 1)(n + 2)} = \\frac{(n + 1)(n + 5)}{2(n + 1)(n + 2)} = \\frac{n + 5}{2(n + 2)}.\\]The largest angle $y$ is opposite the side of length $n + 2,$ and its cosine is\n\\[\\cos y = \\frac{n^2 + (n + 1)^2 - (n + 2)^2}{2n(n + 1)} = \\frac{n^2 - 2n - 3}{2n(n + 1)} = \\frac{(n + 1)(n - 3)}{2n(n + 1)} = \\frac{n - 3}{2n}.\\]Since $y = 2x,$\n\\[\\cos y = \\cos 2x = 2 \\cos^2 x - 1.\\]Thus,\n\\[\\frac{n - 3}{2n} = 2 \\left( \\frac{n + 5}{2(n + 2)} \\right)^2 - 1.\\]This simplifies to $2n^3 - n^2 - 25n - 12 = 0.$  This equation factors as $(n - 4)(n + 3)(2n + 1) = 0,$ so $n = 4.$\n\nThen the cosine of the smallest angle is $\\cos x = \\boxed{\\frac{3}{4}}.$"
-}

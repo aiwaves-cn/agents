@@ -1,6 +1,0 @@
-{
-    "problem": "Compute: $0.\\overline{7}-0.\\overline{4}+0.\\overline{2}$. Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "In general, to express the number $0.\\overline{n}$ as a fraction, we call it $x$ and subtract it from $10x$: $$\\begin{array}{r r c r@{}l}\n&10x &=& n&.nnnnn\\ldots \\\\\n- &x &=& 0&.nnnnn\\ldots \\\\\n\\hline\n&9x &=& n &\n\\end{array}$$ This shows that $0.\\overline{n} = \\frac{n}{9}$.\n\nHence, our original problem reduces to computing $\\frac 79 - \\frac 49 + \\frac 29 = \\boxed{\\frac 59}$."
-}

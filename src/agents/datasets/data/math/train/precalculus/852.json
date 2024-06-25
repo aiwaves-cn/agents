@@ -1,6 +1,0 @@
-{
-    "problem": "Three of the vertices of parallelogram $ABCD$ are $A = (3,-1,2),$ $B = (1,2,-4),$ and $C = (-1,1,2).$  Find the coordinates of $D.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Since $ABCD$ is a parallelogram, the midpoints of diagonals $\\overline{AC}$ and $\\overline{BD}$ coincide.\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D;\n\nA = (0,0);\nB = (7,2);\nD = (1,3);\nC = B + D;\n\ndraw(A--B--C--D--cycle);\ndraw(A--C,dashed);\ndraw(B--D,dashed);\n\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, SE);\nlabel(\"$C$\", C, NE);\nlabel(\"$D$\", D, NW);\n\ndot((A + C)/2);\n[/asy]\n\nThe midpoint of $\\overline{AC}$ is\n\\[\\left( \\frac{3 + (-1)}{2}, \\frac{(-1) + 1}{2}, \\frac{2 + 2}{2} \\right) = (1,0,2).\\]This is also the midpoint of $\\overline{BD},$ so the coordinates of $D$ are\n\\[(2 \\cdot 1 - 1, 2 \\cdot 0 - 2, 2 \\cdot 2 - (-4)) = \\boxed{(1,-2,8)}.\\]"
-}

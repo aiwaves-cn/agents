@@ -1,6 +1,0 @@
-{
-    "problem": "If $10^{51} - 9$ is written as an integer in standard form, what is the sum of the integer's digits?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Since $10^{51}$ is the least integer with $52$ digits, $10^{51}-9$ has 51 digits.  The ones digit is 1 and all the other digits are 9.  The sum of the digits is $9\\cdot 50 + 1=\\boxed{451}$."
-}

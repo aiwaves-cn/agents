@@ -1,6 +1,0 @@
-{
-    "problem": "While on her vacation in Cancun, Colleen can buy a sombrero and a pair of flip-flops for $\\$32$. She can buy the pair of flip-flops and sunglasses for $\\$42$. She can buy the sombrero and the sunglasses for $\\$30$. How many dollars does the sombrero cost?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let $\\$ x, \\$ y$ and $\\$ z$ be the prices of a sombrero, a pair of flip-flops and sunglasses, respectively. We can then rewrite the problem as a system of equations: \\begin{align*}\nx+y &= 32\\\\\ny+z &= 42\\\\\nx+z &= 30\n\\end{align*} Adding these gives: \\begin{align*}\n2x+2y+2z &= 32+42+30 = 104\\\\\nx+y+z &= 52\n\\end{align*} So $x = (x+y+z)-(y+z) = 52-42=10$. So the sombrero costs $\\boxed{\\$ 10}$."
-}

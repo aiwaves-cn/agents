@@ -1,6 +1,0 @@
-{
-    "problem": "What is the probability that flipping a fair coin three times produces fewer than two heads? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "This is the probability of flipping no heads (three tails) or one head (two tails). This is the same as the probability of flipping two heads (one tail) or three heads (no tails), since we can just interchange heads and tails. Since all outcomes are covered, both probabilities add up to 1, so the desired probability is $\\boxed{\\frac{1}{2}}$."
-}

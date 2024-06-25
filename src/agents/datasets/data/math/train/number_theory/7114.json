@@ -1,6 +1,0 @@
-{
-    "problem": "A subset of the integers $1,2,\\cdots,100$ has the property that none of its members is 3 times another. What is the largest number of members such a subset can have?\n$\\text{(A) } 50\\quad \\text{(B) } 66\\quad \\text{(C) } 67\\quad \\text{(D) } 76\\quad \\text{(E) } 78$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Notice that inclusion of the integers from $34$ to $100$ is allowed as long as no integer between $11$ and $33$ inclusive is within the set. This provides a total of $100 - 34 + 1$ = 67 solutions.\nFurther analyzation of the remaining integers between $1$ and $10$, we notice that we can include all the numbers except $3$ (as including $3$ would force us to remove both $9$ and $1$) to obtain the maximum number of $9$ solutions.\nThus, $67 + 9 = \\boxed{76}$."
-}

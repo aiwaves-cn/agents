@@ -1,6 +1,0 @@
-{
-    "problem": "A bag contains 10 red marbles and 6 blue marbles. Three marbles are selected at random and without replacement. What is the probability that one marble is red and two are blue? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are three ways to draw two blue marbles and a red one: RBB, BRB, and  BBR. Since there are no overlapping outcomes, these are distinct cases and their sum is the total probability that two of the three drawn will be blue.  The desired probability therefore is  \\[\\frac{10}{16}\\cdot\\frac{6}{15}\\cdot\\frac{5}{14} + \\frac{6}{16}\\cdot\\frac{10}{15}\\cdot\\frac{5}{14} + \\frac{6}{16}\\cdot\\frac{5}{15}\\cdot\\frac{10}{14} = \\boxed{\\frac{15}{56}}.\\]"
-}

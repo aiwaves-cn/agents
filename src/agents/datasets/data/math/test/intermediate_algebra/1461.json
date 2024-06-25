@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be the positive roots of $x^2 - 3x + 1 = 0.$  Find\n\\[\\frac{a}{\\sqrt{b}} + \\frac{b}{\\sqrt{a}}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, $a + b = 3$ and $ab = 1.$\n\nLet\n\\[t = \\frac{a}{\\sqrt{b}} + \\frac{b}{\\sqrt{a}}.\\]Then\n\\begin{align*}\nt^2 &= \\frac{a^2}{b} + 2 \\sqrt{ab} + \\frac{b^2}{a} \\\\\n&= \\frac{a^3 + b^3}{ab} + 2 \\\\\n&= \\frac{(a + b)(a^2 - ab + b^2)}{ab} + 2 \\\\\n&= \\frac{(a + b)((a + b)^2 - 3ab)}{ab} + 2 \\\\\n&= \\frac{3 \\cdot (3^2 - 3)}{1} + 2 \\\\\n&= 20,\n\\end{align*}so $t = \\sqrt{20} = \\boxed{2 \\sqrt{5}}.$"
-}

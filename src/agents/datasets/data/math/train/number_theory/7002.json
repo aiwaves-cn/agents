@@ -1,6 +1,0 @@
-{
-    "problem": "The integer $n$ is the largest positive multiple of $15$ such that every digit of $n$ is either $8$ or $0$. Compute $\\frac{n}{15}$.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Any multiple of 15 is a multiple of 5 and a multiple of 3.\nAny multiple of 5 ends in 0 or 5; since $n$ only contains the digits 0 and 8, the units digit of $n$ must be 0.\nThe sum of the digits of any multiple of 3 must be divisible by 3. If $n$ has $a$ digits equal to 8, the sum of the digits of $n$ is $8a$. For this number to be divisible by 3, $a$ must be divisible by 3. We also know that $a>0$ since $n$ is positive. Thus $n$ must have at least three copies of the digit 8.\nThe smallest number which meets these two requirements is 8880. Thus the answer is $\\frac{8880}{15} = \\boxed{592}$."
-}

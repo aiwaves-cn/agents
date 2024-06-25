@@ -1,6 +1,0 @@
-{
-    "problem": "Determine $(r + s)(s + t)(t + r),$ if $r,$ $s,$ and $t$ are the three real roots of the polynomial $x^3 + 9x^2 - 9x - 8.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, $r + s + t = -9.$\n\nSince $r,$ $s,$ $t$ are the roots of $x^3 + 9x^2 - 9x - 8,$\n\\[x^3 + 9x^2 - 9x - 8 = (x - r)(x - s)(x - t).\\]Substituting $x = r + s + t = -9$ into the polynomial, we get\n\\begin{align*}\n (r + s)(r + t)(s + t) &= (-9)^3+9\\cdot (-9)^2-9\\cdot(-9)-8 \\\\\n  &= \\boxed{73}.\n\\end{align*}"
-}

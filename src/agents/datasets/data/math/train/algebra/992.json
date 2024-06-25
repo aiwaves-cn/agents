@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest three-digit integer whose digits are distinct and form a geometric sequence?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If we can find such a number whose hundreds digit is 9, then this number will be greater than any with a hundreds digit lower than 9. We want the common ratio to be as small as possible, so that the other digits are as large as possible. If $r$ is the common ratio, then the ones digit is $\\frac{9}{r^2}$. One might therefore expect that $r$ has a $3$ in its numerator. We could set $r=3$ for $931$. But $r=\\frac{3}{2}$ also works and is actually smaller, giving $\\boxed{964}$.\n\n(Note that $r=1$ would not give distinct digits, and $r<1$ would make the ones digit too large.)"
-}

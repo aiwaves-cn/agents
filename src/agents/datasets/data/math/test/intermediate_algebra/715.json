@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of solutions to the equation\n\\[\\frac{1}{(7 - x)(1 + x)(1 - x)} + \\frac{3x^2 - 18x - 22}{(x^2 - 1)(x - 7)} + \\frac{3}{x - 2} = \\frac{3}{(x - 1)(x - 2)}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can move the $\\frac{3}{x - 2}$ to the right-hand side.  We can also combine the first two fractions, to get\n\\begin{align*}\n\\frac{3x^2 - 18x - 21}{(x - 1)(x + 1)(x - 7)} &= \\frac{3}{(x - 1)(x - 2)} - \\frac{3}{x - 2} \\\\\n&= \\frac{3 - 3(x - 1)}{(x - 1)(x - 2)} \\\\\n&= \\frac{6 - 3x}{(x - 1)(x - 2)} \\\\\n&= \\frac{3(2 - x)}{(x - 1)(x - 2)} \\\\\n&= -\\frac{3}{x - 1}.\n\\end{align*}Note that $3x^2 - 18x - 21$ factors as $3(x + 1)(x - 7),$ so\n\\[\\frac{3(x + 1)(x - 7)}{(x - 1)(x + 1)(x - 7)} = -\\frac{3}{x - 1}.\\]This simplifies to\n\\[\\frac{3}{x - 1} = -\\frac{3}{x - 1}.\\]This can never occur, so the number of solutions is $\\boxed{0}.$"
-}

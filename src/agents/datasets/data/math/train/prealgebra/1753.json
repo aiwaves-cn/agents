@@ -1,6 +1,0 @@
-{
-    "problem": "Angle $EAB$ is a right angle, and $BE=9$ units. What is the number of square units in the sum of the areas of the two squares $ABCD$ and $AEFG$?\n\n[asy]\ndraw((0,0)--(1,1)--(0,2)--(-1,1)--cycle);\ndraw((0,2)--(2,4)--(0,6)--(-2,4)--cycle);\ndraw((1,1)--(2,4));\ndraw((-1,1)--(-2,4));\n\nlabel(\"A\", (0,2), S);\nlabel(\"B\", (1,1), SE);\nlabel(\"C\", (0,0), S);\nlabel(\"D\", (-1,1), SW);\nlabel(\"E\", (2,4), NE);\nlabel(\"F\", (0,6), N);\nlabel(\"G\", (-2,4), NW);\nlabel(\"9\", (1.5, 2.5), SE);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The sum of the areas of the two squares is $AE^2+AB^2$.  By the Pythagorean theorem applied to right triangle $BAE$, we have $AE^2+AB^2= BE^2 = \\boxed{81}$ square units."
-}

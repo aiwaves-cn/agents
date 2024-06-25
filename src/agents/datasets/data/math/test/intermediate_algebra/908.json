@@ -1,6 +1,0 @@
-{
-    "problem": "Express, in simplest form, the value of\n\\[\\sqrt{\\frac{3}{4} - \\sqrt{\\frac{1}{2}}} - \\sqrt{\\frac{3}{4} + \\sqrt{\\frac{1}{2}}}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[x = \\sqrt{\\frac{3}{4} - \\sqrt{\\frac{1}{2}}} - \\sqrt{\\frac{3}{4} + \\sqrt{\\frac{1}{2}}}.\\]Then\n\\begin{align*}\nx^2 &= \\frac{3}{4} - \\sqrt{\\frac{1}{2}} - 2 \\sqrt{\\frac{3}{4} - \\sqrt{\\frac{1}{2}}} \\sqrt{\\frac{3}{4} + \\sqrt{\\frac{1}{2}}} + \\frac{3}{4} + \\sqrt{\\frac{1}{2}} \\\\\n&= \\frac{3}{2} - 2 \\sqrt{\\frac{9}{16} - \\frac{1}{2}} \\\\\n&= \\frac{3}{2} - 2 \\sqrt{\\frac{1}{16}} \\\\\n&= \\frac{3}{2} - \\frac{1}{2} = 1.\n\\end{align*}Since $\\sqrt{\\frac{3}{4} + \\sqrt{\\frac{1}{2}}} > \\sqrt{\\frac{3}{4} - \\sqrt{\\frac{1}{2}}},$ $x$ is negative, so $x = \\boxed{-1}.$"
-}

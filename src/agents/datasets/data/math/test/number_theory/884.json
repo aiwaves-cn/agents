@@ -1,6 +1,0 @@
-{
-    "problem": "The product of all the prime numbers between 1 and 100 is equal to $P$. What is the remainder when $P$ is divided by 16?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The primes between 1 and 100 are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, and 97.\n\nWe compute their residues modulo 16: 2, 3, 5, 7, 11, 13, 1, 3, 7, 13, 15, 5, 9, 11, 15, 5, 11, 13, 3, 7, 9, 15, 3, 9, 1.\n\nWe multiply all of these numbers modulo 16, taking advantage of the fact that $3\\cdot 5 \\equiv -1 (\\text{mod }16)$, $7\\cdot9\\equiv -1 (\\text{mod }16)$, $11\\cdot 13\\equiv -1 (\\text{mod }16)$, and $15\\equiv -1(\\text{mod }16)$. We find that our answer is $\\boxed{6}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Olga purchases a rectangular mirror (the shaded region) that fits exactly inside a frame. The outer perimeter of the frame measures 60 cm by 80 cm. The width of each side of the frame is 10 cm. What is the area of the mirror?\n\n[asy]\nunitsize(0.15inch);\ndefaultpen(black);\ndraw(((0,0)--(8,0)--(8,6)--(0,6)--cycle));\ndraw(((1,1)--(7,1)--(7,5)--(1,5)--cycle));\nfill(((1,1)--(7,1)--(7,5)--(1,5)--cycle),gray);\ndraw(((0,-.7)--(2.3,-.7)));\ndraw(((5.7,-.7)--(8,-.7)));\ndraw(((0,-.5)--(0,-.9)));\ndraw(((8,-.5)--(8,-.9)));\nlabel(\"80 cm\",(4,0),S);\ndraw(((-1.8,0)--(-1.8,2.5)));\ndraw(((-1.8,3.5)--(-1.8,6)));\ndraw(((-2,0)--(-1.6,0)));\ndraw(((-2,6)--(-1.6,6)));\nlabel(\"60 cm\",(0,3),W);\ndraw(((7,6.7)--(8,6.7)));\ndraw(((7,6.5)--(7,6.9)));\ndraw(((8,6.5)--(8,6.9)));\nlabel(\"10 cm\",(7.5,6.7),N);\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The fact that the width of each side of the frame is 10 cm means that each side of the mirror is 20 cm smaller than the corresponding side of the frame. Therefore, the mirror measures 40 cm by 60 cm, with an area of $\\boxed{2400 \\mbox{ cm}^2}$."
-}

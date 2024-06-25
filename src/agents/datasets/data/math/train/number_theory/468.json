@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive four-digit number that is divisible by each of the four smallest prime numbers.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We want to find the smallest four-digit number that is a multiple of lcm[2, 3, 5, 7] = 210, so we need to find the smallest value of $n$ such that $$ 210n \\ge 1000. $$Dividing this inequality by 210 we get $n \\ge 4\\, \\frac{16}{21}$, so $n = 5$ gives us the smallest four-digit multiple of 210: $210 \\cdot 5 = \\boxed{1050}$."
-}

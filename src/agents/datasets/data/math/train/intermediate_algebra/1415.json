@@ -1,6 +1,0 @@
-{
-    "problem": "There are two values of $a$ for which the equation $4x^2 + ax + 8x + 9 = 0$ has only one solution for $x$. What is the sum of these values of $a$?",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the quadratic as\n\\[4x^2 + (a + 8)x + 9 = 0.\\]If the quadratic has one solution, then its discriminant must be zero:\n\\[(a + 8)^2 - 4 \\cdot 4 \\cdot 9 = 0.\\]Expanding, we get $a^2 + 16a - 80 = 0.$  By Vieta's formulas, the sum of the roots is $\\boxed{-16}.$"
-}

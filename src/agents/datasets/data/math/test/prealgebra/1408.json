@@ -1,6 +1,0 @@
-{
-    "problem": "Each interior angle of a polygon measures 170 degrees. How many sides does the polygon have?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The sum of the interior angles of a polygon is $180(n-2)$, where $n$ is the number of sides. That means each interior angle has a measure of $\\frac{180(n-2)}{n}$ degrees. We set this equal to 170 degrees and solve for $n$. \\begin{align*}\n\\frac{180(n-2)}{n}&=170\\\\\n\\Rightarrow \\qquad 180n-360&=170n\\\\\\Rightarrow \\qquad 10n&=360\\\\\n\\Rightarrow\\qquad n&=36.\n\\end{align*} The polygon has $\\boxed{36}$ sides."
-}

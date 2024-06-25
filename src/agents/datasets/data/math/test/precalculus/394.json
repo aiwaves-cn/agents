@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive integer $n$ such that\n\\[(\\cos 84^\\circ + i \\sin 84^\\circ)^n\\]is a real number.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "By DeMoivre's Theorem,\n\\[(\\cos 84^\\circ + i \\sin 84^\\circ)^n = \\cos (84n)^\\circ + i \\sin (84n)^\\circ.\\]This is a real number if and only if $84n$ is a multiple of 180.  Since $84 = 2^2 \\cdot 3 \\cdot 7$ and $180 = 2^2 \\cdot 3^2 \\cdot 5,$ the smallest positive integer $n$ such that $84n$ is a multiple of 180 is $3 \\cdot 5 = \\boxed{15}.$"
-}

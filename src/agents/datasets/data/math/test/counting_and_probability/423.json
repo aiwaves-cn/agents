@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct positive integers can be represented as the difference of two numbers in the set $\\{1, 3, 5, 7, 9, 11, 13\\}$?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Since all of the integers are odd, the differences between any pair of them is always even. So, $13 - 1 = 12$ is the largest even integer that could be one of the differences. The smallest positive (even) integer that can be a difference is 2. So, the integers include 2, 4, 6, 8, 10 and 12, for a total of $\\boxed{6}$ integers."
-}

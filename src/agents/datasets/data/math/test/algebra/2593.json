@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $(26^2 - 24^2 - 10)^2 - 10^2$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We know that $x^2 - y^2 = (x+y)(x-y)$. To begin with, let $x = 26^2 - 24^2 - 10$ and $y = 10$. Factoring $x^2 - y^2$ and substituting in gives $(26^2-24^2-10+10)(26^2-24^2-10-10)$. Now, let $x = 26$ and $y = 24$. Factoring $x^2 - y^2$ and substituting in gives $((26+24)(26-24)-10+10)((26+24)(26-24)-10-10)$. This simplifies to $(50\\cdot 2)(50 \\cdot 2 - 20)$, or $100 \\cdot 80$. Thus, our final answer is $\\boxed{8000}$."
-}

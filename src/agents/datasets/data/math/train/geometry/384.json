@@ -1,6 +1,0 @@
-{
-    "problem": "A section is cut out of a circular piece of paper having radius four inches, as shown. Points A and B are then glued together to form a right circular cone. What is the circumference of the base of the resulting cone? Express your answer in terms of $\\pi$.  (The $270^\\circ$ sector forms the cone.)\n\n[asy]import graph;\ndraw(Circle((0,0),42.4),linewidth(1));\ndraw((0,0)--(30,30),linewidth(2));\ndraw((0,0)--(30,-30),linewidth(2));\nlabel(\"$A$\",(30,30),E);\nlabel(\"$B$\",(30,-30),E);\nlabel(\"4''\",(15,15),NW);\ndraw((3,3)--(6,0));\ndraw((6,0)--(3,-3));\n\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The circumference of the whole circle is $2 \\pi \\cdot 4 = 8 \\pi$.  Then the circumference of the base of the cone is \\[\\frac{270^\\circ}{360^\\circ} \\cdot 8 \\pi = \\boxed{6 \\pi}.\\]"
-}

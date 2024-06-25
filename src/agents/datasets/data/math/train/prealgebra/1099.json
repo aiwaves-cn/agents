@@ -1,6 +1,0 @@
-{
-    "problem": "What is $\\left(\\frac{6}{7}\\right)^2 \\cdot \\left(\\frac{1}{2}\\right)^2$?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since $\\left(\\frac{a}{b}\\right)^j \\cdot \\left(\\frac{c}{d}\\right)^j = \\left(\\frac{a \\cdot c}{b \\cdot d}\\right)^{j}$, we know  $\\left(\\frac{6}{7}\\right)^2 \\cdot \\left(\\frac{1}{2}\\right)^2 = \\left(\\frac{6 \\cdot 1}{7 \\cdot 2}\\right)^2$.  Simplifying, we have $\\left(\\frac{3}{7}\\right)^2 = \\frac{3^2}{7^2}$, because $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$.  We know $3^2 = 9$ and $7^2 = 49$, so our answer is $\\boxed{\\frac{9}{49}}$."
-}

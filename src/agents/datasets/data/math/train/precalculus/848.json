@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the point $(0, -3 \\sqrt{3}, 3)$ in rectangular coordinates to spherical coordinates.  Enter your answer in the form $(\\rho,\\theta,\\phi),$ where $\\rho > 0,$ $0 \\le \\theta < 2 \\pi,$ and $0 \\le \\phi \\le \\pi.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We have that $\\rho = \\sqrt{0^2 + (-3 \\sqrt{3})^2 + 3^2} = 6.$  We want $\\phi$ to satisfy\n\\[3 = 6 \\cos \\phi,\\]so $\\phi = \\frac{\\pi}{3}.$\n\nWe want $\\theta$ to satisfy\n\\begin{align*}\n0 &= 6 \\sin \\frac{\\pi}{3} \\cos \\theta, \\\\\n-3 \\sqrt{3} &= 6 \\sin \\frac{\\pi}{3} \\sin \\theta.\n\\end{align*}Thus, $\\theta = \\frac{3 \\pi}{2},$ so the spherical coordinates are $\\boxed{\\left( 6, \\frac{3 \\pi}{2}, \\frac{\\pi}{3} \\right)}.$"
-}

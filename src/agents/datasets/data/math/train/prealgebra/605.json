@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest five-digit integer whose digits have a product equal to the product $(7)(6)(5)(4)(3)(2)(1)$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since we want a large 5-digit integer, we want the digits to the left to be as large as possible. We prime factorize the product to get $7 \\cdot 5 \\cdot 3^2 \\cdot 2^4$. The largest single-digit number is $9$, which can be found by $3^2$. This leaves us $7 \\cdot 5 \\cdot 2^4$. We can get the next largest number, $8$, by using $2^3$. This leaves $7 \\cdot 5\\cdot 2$. We can't multiply any of those numbers together to get a single-digit number, so we have that the remaining three digits are $7,5$, and $2$. Ordering the digits from largest to smallest, we get $\\boxed{98752}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The volume of the box is 240 cubic units where $a,b,$ and $c$ are integers with $1<c<b<a$. What is the largest possible value of $b$? [asy]\n\ndraw((0,0)--(0,3)--(6,3)--(6,0)--cycle);\ndraw((2,1.5)--(2,4.5)--(8,4.5)--(8,1.5)--cycle);\ndraw((0,0)--(2,1.5)--(2,4.5)--(0,3)--cycle);\ndraw((6,0)--(6,3)--(8,4.5)--(8,1.5)--cycle);\nlabel(\"a\",(3,0),S);\nlabel(\"b\",(7,0.75),SE);\nlabel(\"c\",(8,3.5),E);\n[/asy]",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The prime factorization of 240 is $2^4\\cdot3\\cdot5$. We want $c$ to be as small as possible, so $c=2$. Now we have $a\\cdot b=2^3\\cdot3\\cdot5=120$. For the maximum $b$, we seek the minimum $a$ while $b<a$. If $b<a$ then $a\\cdot b<a^2$, so $120<a^2$. That means $a$ is at least 11. However, 11 is not a factor of 240. The least factor of 240 greater than 11 is $2^2\\cdot3=12$. So the minimum $a$ is 12 and that makes the maximum $b=\\frac{2^3\\cdot3\\cdot5}{2^2\\cdot3}=2\\cdot5=\\boxed{10}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The number 4641 can be expressed as the product of two 2-digit whole numbers. What is the sum of these two numbers?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "$4641$ has a prime factorization of $4641=3\\cdot 7\\cdot 13\\cdot 17$. Multiplying any $3$ of its prime factors yields a number that is greater than $100$, so the two $2$-digit numbers must each be the product of $2$ of its prime factors. The only other prime factor $17$ can be multiplied by without getting a $3$-digit number is $3$, so one of them must be $17\\cdot3=51$. That makes the other $7\\cdot13=91$. $51+91=\\boxed{142}$."
-}

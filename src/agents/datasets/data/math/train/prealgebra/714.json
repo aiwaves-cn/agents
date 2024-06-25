@@ -1,6 +1,0 @@
-{
-    "problem": "Two sides of a right triangle have the lengths 4 and 5. What is the product of the possible lengths of the third side? Express the product as a decimal rounded to the nearest tenth.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are two possible right triangles. One of the triangles has $4$ and $5$ as its legs, so by the Pythagorean Theorem, the hypotenuse has a length of $\\sqrt{4^2+5^2}=\\sqrt{41}$. The other possible triangle is that the longer length, $5$, is the hypotenuse. We can use the Pythagorean Theorem to solve for the other leg, or we recognize that $4$ and $5$ are part of the Pythagorean triple $(3,4,5)$, so the other leg has a length of $3$ units. Since the hypotenuse is the longest side in a right triangle, there isn't a triangle with a hypotenuse of $4$ and a leg of $5$. So $\\sqrt{41}$ and $3$ are the only possible lengths of the third side. Using a calculator, we find that the product as a decimal rounded to the nearest tenth is $3\\sqrt{41}=\\boxed{19.2}$."
-}

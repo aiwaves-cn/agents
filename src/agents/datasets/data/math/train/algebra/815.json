@@ -1,6 +1,0 @@
-{
-    "problem": "The product of two positive integers plus their sum is 103. The integers are relatively prime, and each is less than 20. What is the sum of the two integers?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let our numbers be $a$ and $b$ with $a>b.$ Then $ab+a+b=103$. With Simon's Favorite Factoring Trick in mind, we add $1$ to both sides and get $ab+a+b+1 = 104$, which factors as $(a+1)(b+1)=104$. We consider pairs $(a+1, b+1)$ of factors of $104$: $(104,1), (52,2), (26,4), (13,8)$. Since $a<20$, we can rule out the first 3 pairs, which gives $a=12$ and $b=7$, so $a+b=\\boxed{19}$."
-}

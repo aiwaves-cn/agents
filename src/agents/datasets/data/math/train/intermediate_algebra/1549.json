@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ be a positive real number. Find the maximum possible value of $$\\frac{x^2+2-\\sqrt{x^4+4}}{x}.$$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Rationalizing the numerator, we get\n\n\\begin{align*}\n\\frac{x^2+2-\\sqrt{x^4+4}}{x}\\cdot\\frac{x^2+2+\\sqrt{x^4+4}}{x^2+2+\\sqrt{x^4+4}}&=\\frac{(x^2+2)^2-(x^4+4)}{x(x^2+2+\\sqrt{x^4+4})}\\\\\n&=\\frac{4x^2}{x(x^2+2+\\sqrt{x^4+4})}\\\\\n&=\\frac{4}{\\frac{1}{x}(x^2+2+\\sqrt{x^4+4})}\\\\\n&=\\frac{4}{x+\\frac{2}{x}+\\sqrt{x^2+\\frac{4}{x^2}}}.\n\\end{align*}Since we wish to maximize this quantity, we wish to minimize the denominator. By AM-GM, $x+\\frac{2}{x}\\geq 2\\sqrt{2}$ and $x^2+\\frac{4}{x^2}\\geq 4$, so that the denominator is at least $2\\sqrt{2}+2$. Therefore, $$\\frac{x^2+2-\\sqrt{x^4+4}}{x}\\leq \\frac{4}{2\\sqrt{2}+2}=\\boxed{2\\sqrt{2}-2},$$with equality when $x=\\sqrt{2}$."
-}

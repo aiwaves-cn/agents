@@ -1,6 +1,0 @@
-{
-    "problem": "Two standard 6-sided dice are tossed. What is the probability that the sum of the numbers shown on the dice is a prime number? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $6\\cdot6=36$ possible outcomes when two dice are tossed. The greatest possible sum is 12 and the prime numbers less than 12 are 2, 3, 5, 7, 11. There is exactly one way to get a sum of 2 (1+1), exactly two ways to get 3 (1+2, 2+1), exactly four ways to get 5 (1+4, 4+1, 2+3, 3+2), exactly six ways to get 7 (1+6, 6+1, 2+5, 5+2, 3+4, 4+3), and exactly two ways to get 11 (5+6, 6+5). Thus, exactly 15 of the 36 sums are prime. The probability that the sum is prime is $15/36=\\boxed{\\frac{5}{12}}$."
-}

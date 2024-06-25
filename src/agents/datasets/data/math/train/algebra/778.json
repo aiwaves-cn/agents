@@ -1,6 +1,0 @@
-{
-    "problem": "A point $(3\\sqrt{5},d+3)$ is $3d$ units away from the origin. What is the smallest possible value of $d$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "By the distance formula, the distance between the origin and $(3\\sqrt{5},d+3)$ is $\\sqrt{(3\\sqrt{5})^2+(d+3)^2}$. Setting this equal to $3d$, we have  \\begin{align*}\n9d^2&=(3\\sqrt{5})^2+(d+3)^2\\\\\n9d^2&=45+d^2+6d+9\\\\\n8d^2-6d-54&=0\\\\\n4d^2-3d-27&=0\\\\\n(4d+9)(d-3)&=0\n\\end{align*}Thus, the values of $d$ are $-\\frac{9}{4}$ and $3$. We find that $-\\frac{9}{4}$ is an extraneous answer (since distance cannot be negative), so our answer is $d=\\boxed{3}$."
-}

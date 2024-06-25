@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be real numbers such that\n\\[3x^2 - 18x + 4y^2 - 32y + 91 = 300.\\]Find the maximum value of $x^2 + y^2 + 2xy - 14x - 14y + 49.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "In the equation\n\\[3x^2 - 18x + 4y^2 - 32y + 91 = 300,\\]we can complete the square in $x$ and $y$ to get\n\\[3(x - 3)^2 + 4(y - 4)^2 = 300.\\]We want to find the maximum value of\n\\[x^2 + y^2 + 2xy - 14x - 14y + 49 = (x + y)^2 - 14(x + y) + 49 = (x + y - 7)^2.\\]By Cauchy-Schwarz,\n\\[\\left( \\frac{1}{3} + \\frac{1}{4} \\right) [3(x - 3)^2 + 4(y - 4)^2] \\ge ((x - 3) + (y - 4))^2 = (x + y - 7)^2,\\]so\n\\[(x + y - 7)^2 \\le \\frac{7}{12} \\cdot 300 = 175.\\]Equality occurs when $3(x - 3) = 4(y - 4)$ and $3(x - 3)^2 + 4(y - 4)^2 = 300.$  We can solve to get $x = \\frac{1}{7} (21 \\pm 20 \\sqrt{7})$ and $y = \\frac{1}{7} (28 \\pm 15 \\sqrt{7}),$ so the maximum value is $\\boxed{175}.$"
-}

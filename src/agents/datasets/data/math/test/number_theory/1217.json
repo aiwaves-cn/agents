@@ -1,6 +1,0 @@
-{
-    "problem": "If $n=1d41_8$, where $d$ represents a base-8 digit (and $1d41_8$ represents a four-digit number whose second digit is $d$), then what is the sum of all possible values of $n$ in base 10?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Convert $1d41_8$ to base 10 to get $1d41_8=8^3+8^2d+8^1\\cdot 4 + 8^0=512+64d+32+1=545+64d$. Since the possible values of $d$ are 0, 1, 2,..., 7, the possible values of $n$ form an arithmetic series with first term 545 and last term $545+64\\cdot 7 = 993$. The sum of an arithmetic series is $(\\text{first term}+\\text{last term})(\\text{number of terms})/2$, so the sum of the possible values of $n$ is $(545+993)(8)/2=\\boxed{6152}$."
-}

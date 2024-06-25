@@ -1,6 +1,0 @@
-{
-    "problem": "Each face of a cube is assigned a different integer. Then each vertex is assigned the sum of the integer values on the faces that meet at the vertex. Finally, the vertex numbers are added. What is the largest number that must divide the final sum for every possible numbering of the faces?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let the total sum be $S$. The number on each face is added to $S$ four separate times, since each face borders on $4$ vertices. There are $8$ vertices, and each is the sum of $3$ face numbers since each vertex borders $3$ faces. Thus $S$ is the sum of $8\\cdot 3=24$ face numbers. Since each face is added $4$ times, and there are $6$ faces, we know none of the faces are repeated or left out and each is added exactly $4$ times,  so $S=4(\\text{sum of numbers on faces})$. Thus no matter what the sum of the numbers on the faces is, the total sum $S$ is always divisible by $\\boxed{4}$."
-}

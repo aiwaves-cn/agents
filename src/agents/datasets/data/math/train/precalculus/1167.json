@@ -1,6 +1,0 @@
-{
-    "problem": "Find the area of the triangle with vertices $(0,7,10),$ $(-1,6,6),$ and $(-4,9,6).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Let $A = (0,7,10),$ $B = (-1,6,6),$ and $C = (-4,9,6).$  Then from the distance formula, $AB = 3 \\sqrt{2},$ $AC = 6,$ and $BC = 3 \\sqrt{2}.$  Note that\n\\[AB^2 + BC^2 = 18 + 18 = 36 = AC,\\]so triangle $ABC$ is a right triangle, with a right angle at vertex $B.$  Hence, the area of the triangle is\n\\[\\frac{1}{2} \\cdot AB \\cdot BC = \\frac{1}{2} \\cdot 3 \\sqrt{2} \\cdot 3 \\sqrt{2} = \\boxed{9}.\\]"
-}

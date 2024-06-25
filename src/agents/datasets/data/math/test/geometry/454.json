@@ -1,6 +1,0 @@
-{
-    "problem": "In $\\triangle ABC$ we have $AB=7$, $AC=8$, and $BC=9$. Point $D$ is on the circumscribed circle of the triangle so that $\\overline{AD}$ bisects $\\angle BAC$. What is the value of $AD/CD$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Suppose that $AD$ and $BC$ intersect at $E$.\n\n[asy]\npair A,B,C,D,I;\nA=(-9,-4.36);\nB=(-7,7.14);\nC=(8,-6);\nD=(7.5,6.61);\nI=(2.7,3);\ndraw(Circle((0,0),10));\ndraw(A--B--C--cycle,linewidth(0.7));\ndraw(B--D--C);\ndraw(A--D);\nlabel(\"$E$\",I,S);\nlabel(\"$B$\",B,N);\nlabel(\"$D$\",D,NE);\nlabel(\"$C$\",C,E);\nlabel(\"$A$\",A,SW);\n[/asy]\n\nSince $\\angle ADC$ and $\\angle ABC$ cut the same arc of the circumscribed circle, the Inscribed Angle Theorem implies that \\[\n\\angle ABC= \\angle ADC.\n\\]Also, $ \\angle EAB = \\angle CAD$, so $\\triangle ABE$ is similar to $\\triangle ADC$, and \\[\n\\frac{AD}{CD} = \\frac{AB}{BE}.\n\\]By the Angle Bisector Theorem, \\[\n\\frac{BE}{EC} = \\frac{AB}{AC},\n\\]so \\[\nBE = \\frac{AB}{AC} \\cdot EC = \\frac{AB}{AC}(BC - BE)\n\\quad\\text{and}\\quad BE = \\frac{AB\\cdot BC}{AB+AC}.\n\\]Hence \\[\n\\frac{AD}{CD} = \\frac{AB}{BE} = \\frac{AB+AC}{BC} =\n\\frac{7+8}{9} = \\boxed{\\frac{5}{3}}.\n\\]"
-}

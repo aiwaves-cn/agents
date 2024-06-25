@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be positive real numbers such that $x + y = 10.$  Find the minimum value of $\\frac{1}{x} + \\frac{1}{y}.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-HM,\n\\[\\frac{x + y}{2} \\ge \\frac{2}{\\frac{1}{x} + \\frac{1}{y}}.\\]Hence,\n\\[\\frac{1}{x} + \\frac{1}{y} \\ge \\frac{4}{x + y} = \\frac{4}{10} = \\frac{2}{5}.\\]Equality occurs when $x = y = 5,$ so the minimum value is $\\boxed{\\frac{2}{5}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix $\\mathbf{M}$ that triples the second row of a matrix.  In other words,\n\\[\\mathbf{M} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ 3c & 3d \\end{pmatrix}.\\]If no such matrix $\\mathbf{M}$ exists, then enter the zero matrix.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{M} = \\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix}.$  Then\n\\[\\mathbf{M} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} pa + qc & pb + qd \\\\ ra + sc & rb + sd \\end{pmatrix}.\\]We want this to be equal to $\\begin{pmatrix} a & b \\\\ 3c & 3d \\end{pmatrix}.$  We can achieve this by taking $p = 1,$ $q = 0,$ $r = 0,$ and $s = 3,$ so $\\mathbf{M} = \\boxed{\\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix}}.$"
-}

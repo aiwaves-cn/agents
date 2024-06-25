@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate the infinite series $\\sum_{k = 1}^\\infty \\frac{k^2}{2^k}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[S = \\sum_{k = 1}^\\infty \\frac{k^2}{2^k} = \\frac{1^2}{2} + \\frac{2^2}{2^2} + \\frac{3^2}{2^3} + \\frac{4^2}{2^4} + \\dotsb.\\]Then\n\\[2S = 1 + \\frac{2^2}{2} + \\frac{3^2}{2^2} + \\frac{4^2}{2^3} + \\frac{5^2}{2^4} + \\dotsb.\\]Subtracting these equations, we get\n\\[S = 1 + \\frac{3}{2} + \\frac{5}{2^2} + \\frac{7}{2^3} + \\frac{9}{2^4} + \\dotsb.\\]Then\n\\[2S = 2 + 3 + \\frac{5}{2} + \\frac{7}{2^2} + \\frac{9}{2^3} + \\frac{11}{2^4} + \\dotsb.\\]Subtracting these equations, we get\n\\[S = 4 + \\frac{2}{2} + \\frac{2}{2^2} + \\frac{2}{2^3} + \\frac{2}{2^4} + \\dotsb = 4 + \\frac{1}{1 - 1/2} = \\boxed{6}.\\]"
-}

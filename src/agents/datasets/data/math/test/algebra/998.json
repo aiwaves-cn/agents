@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of the $x$-coordinates of the vertices of a triangle in the Cartesian plane equals $\\sqrt{13}$.  Let $S$ equal the sum of the $x$-coordinates of the midpoints of the sides of the triangle. Find $S^2$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let the $x$-coordinates of the vertices be $a,b,c$.  Then the $x$-coordinates of the midpoints of the sides are $\\frac{a+b}2,\\frac{a+c}2,\\frac{b+c}2$.  The sum of these equals $\\frac{2a+2b+2c}2=a+b+c$.  Thus the desired answer is $\\left(\\sqrt{13}\\right)^2=\\boxed{13}$."
-}

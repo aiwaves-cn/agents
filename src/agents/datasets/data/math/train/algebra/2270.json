@@ -1,6 +1,0 @@
-{
-    "problem": "Write the following expression as a polynomial: $$(2x^2+3x+7)(x+1)-(x+1)(x^2+4x-63)+(3x-14)(x+1)(x+5).$$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Factoring out $(x+1)$, we have:\n\n\\begin{align*}\n&(x+1)((2x^2+3x+7)-(x^2+4x-63)+(3x-14)(x+5))\\\\\n=\\text{ }&(x+1)(2x^2+3x+7-x^2-4x+63+3x^2+x-70) \\\\\n=\\text{ }&(x+1)(2x^2-x^2+3x^2+3x-4x+x+7+63-70) \\\\\n=\\text{ }&(x+1)(4x^2+0x+0) \\\\\n=\\text{ }&4x^2(x+1) \\\\\n=\\text{ }&\\boxed{4x^3+4x^2}.\n\\end{align*}"
-}

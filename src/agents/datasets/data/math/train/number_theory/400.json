@@ -1,6 +1,0 @@
-{
-    "problem": "How many more digits does the base-3 representation of $987_{10}$ have than the base-8 representation of $987_{10}$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "In order to solve this problem, we must first find the number of digits when $987_{10}$ is converted to each base. Beginning with base-3, we have that $2187>987>729$ or $3^7>987>3^6$. So, we know that the base-3 representation of $987_{10}$ has 7 digits. Similarly with base-8, we have that $4096>987>512$ or $8^4>987>8^3$. So, the base-8 representation of $987_{10}$ has only 4 digits. Therefore, the base-3 equivalent has $7-4=\\boxed{3}$ more digits than the base-8 equivalent."
-}

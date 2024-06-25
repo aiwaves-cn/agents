@@ -1,6 +1,0 @@
-{
-    "problem": "The slope of a line is $-2$ and its $x$-intercept is $(5,0).$ What is the $y$-intercept point of the line? Express your answer as an ordered pair.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "$\\emph{Solution 1: Find the equation of the line.}$\n\nA point-slope equation of the line is $y-0= -2(x-5),$ so the standard form of the equation of the line is $2x+y=10.$ When $x=0,$ we have $y=10,$ so the $y$-intercept is $\\boxed{(0,10)}.$\n\n$\\emph{Solution 2: Use the slope without finding the equation.}$\n\nBecause the slope of the line is $-2,$ the line goes down $2$ steps for each $1$ step right. However, the point we are given on the line, $(5,0),$ is already to the right of the $y$-axis, which is where the $y$-intercept is.Therefore, we instead think of the slope as going up $2$ steps for each $1$ step left. We must take $1$ step left $5$ times to get to the $y$-axis from point $(5,0),$ so to stay on this line, we must also take $2$ steps up $5$ times, for a total of $10$ steps. The point that is $10$ steps up and $5$ steps to the left of $(5,0)$ is $\\boxed{(0,10)}.$"
-}

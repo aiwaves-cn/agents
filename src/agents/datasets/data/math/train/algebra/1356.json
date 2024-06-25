@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the odd integers from 11 through 39, inclusive?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We want to sum the arithmetic series $11 + 13 + \\cdots + 39$, which has common difference 2. Suppose the series has $n$ terms. 39 is the $n$th term, so $39 = 11 + (n-1)\\cdot2$. Solving, we get $n = 15$.The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $(11 + 39)/2 \\cdot 15 = \\boxed{375}$."
-}

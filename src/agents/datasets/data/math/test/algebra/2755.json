@@ -1,6 +1,0 @@
-{
-    "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n3ax+3y&=5b,\\\\\n2x+y&=5.\n\\end{align*}",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is three times that of $y$ in the second equation, the multiplier is 3. This implies that the first equation must be $3(2x+y)=3(5)$. After equating coefficients, this gives $3a=3\\cdot2$ and $5b=3\\cdot5$, or $(a,b)=\\boxed{(2,3)}$."
-}

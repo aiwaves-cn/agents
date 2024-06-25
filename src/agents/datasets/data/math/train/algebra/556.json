@@ -1,6 +1,0 @@
-{
-    "problem": "If a regular polygon has a total of nine diagonals, how many sides does it have?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Given the number of sides of a polygon, $n$, the number of diagonals is given by $D=\\frac{n(n-3)}{2}$.  To find the number of sides given the number of diagonals, we can solve this equation for $n$. \\begin{align*}D&=\\frac{n(n-3)}{2} \\\\ 2D&=n^2-3n \\\\ 0&=n^2-3n-2D.\\end{align*}  Then, using the quadratic formula we have $n=\\frac{3\\pm\\sqrt{3^2-4(1)(-2D)}}{2(1)}=\\frac{3\\pm\\sqrt{9+8D}}{2}$.\n\nSince we are given that $D=9$, we have $n=\\frac{3\\pm\\sqrt{9+8(9)}}{2}=\\frac{3\\pm9}{2}=-3\\text{ or }6$.  Since we must have a positive number of sides, a polygon with nine diagonals has $\\boxed{6}$ sides."
-}

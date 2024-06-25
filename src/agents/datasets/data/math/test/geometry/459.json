@@ -1,6 +1,0 @@
-{
-    "problem": "We have a right triangle $\\triangle ABC$ where the legs $AB$ and $BC$ have lengths $6$ and $3\\sqrt{3},$ respectively. Medians $AM$ and $CN$ meet at point $P.$ What is the length of $CP$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "First, it is probably a good idea to sketch our triangle: [asy]\npair A, B, C, M, N, P;\nA = (0, 6);\nB = (0, 0);\nC = (5.196, 0);\nM = 0.5 * B + 0.5 * C;\nN = 0.5 * A + 0.5 * B;\nP = 0.66 * N + 0.34 * C;\ndraw(A--B--C--cycle);\ndraw(A--M);\ndraw(C--N);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$N$\", N, NE);\nlabel(\"$P$\", P, SW);\nlabel(\"$6$\", A--B, W);\nlabel(\"$3\\sqrt{3}$\", B--C, S);\ndraw(rightanglemark(A,B,C,10));\n[/asy] Since $P$ is the intersection of medians, it is the centroid of $\\triangle ABC.$ That means that the ratio of $CP:PN$ is $2:1.$ We can easily find $CN$ by using the right triangle $\\triangle CBN.$ Since $N$ is the midpoint of $AB,$ $BN = 3.$ At this point, we might recognize that $\\triangle CBN$ is a $30^\\circ-60^\\circ-90^\\circ$ triangle, which is handy since we can easily find $CN = 6.$ Therefore, $CP$ is $\\frac{2}{3}$ of $CN,$ or $\\boxed{4}.$"
-}

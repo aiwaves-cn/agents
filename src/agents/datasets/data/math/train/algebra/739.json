@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the domain of the function  $$f(x)=\\frac{1}{\\lfloor x^2-7x+13\\rfloor}.$$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The discriminant of the quadratic is $7^2-4(13)=-3<0$, so the quadratic has no real roots and is always positive for real inputs.  The function is undefined if $0\\leq x^2-7x+13<1$, since $\\lfloor x^2-7x+13 \\rfloor = 0$ in that case. Since the quadratic is always positive, we consider the inequality $x^2-7x+13<1$.\n\nTo find when $x^2-7x+13=1$, subtract 1 from both sides to obtain $x^2-7x+12=0$ and factor as $(x-3)(x-4)=0$, so $x=3$ or $x=4$.  The parabola $x^2-7x+12$ is negative between these points, so we must exclude the interval $(3,4)$ from the domain. So the domain of $f$ is $\\boxed{(-\\infty,3] \\cup [4,\\infty)}$."
-}

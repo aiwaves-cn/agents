@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\lceil{\\sqrt{20}}\\rceil^2$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since $\\sqrt{16}<\\sqrt{20}<\\sqrt{25}$, or, equivalently, $4<\\sqrt{20}<5$, the smallest integer greater than or equal to $\\sqrt{20}$ must be $5$. Thus, $\\lceil{\\sqrt{20}}\\rceil^2=5^2=\\boxed{25}$."
-}

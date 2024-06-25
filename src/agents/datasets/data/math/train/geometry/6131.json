@@ -1,6 +1,0 @@
-{
-    "problem": "On square $ABCD$, point $E$ lies on side $AD$ and point $F$ lies on side $BC$, so that $BE=EF=FD=30$. Find the area of the square $ABCD$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Drawing the square and examining the given lengths,[asy] size(2inch, 2inch); currentpen = fontsize(8pt); pair A = (0, 0); dot(A); label(\"$A$\", A, plain.SW); pair B = (3, 0); dot(B); label(\"$B$\", B, plain.SE); pair C = (3, 3); dot(C); label(\"$C$\", C, plain.NE); pair D = (0, 3); dot(D); label(\"$D$\", D, plain.NW); pair E = (0, 1); dot(E); label(\"$E$\", E, plain.W); pair F = (3, 2); dot(F); label(\"$F$\", F, plain.E); label(\"$\\frac x3$\", E--A); label(\"$\\frac x3$\", F--C); label(\"$x$\", A--B); label(\"$x$\", C--D); label(\"$\\frac {2x}3$\", B--F); label(\"$\\frac {2x}3$\", D--E); label(\"$30$\", B--E); label(\"$30$\", F--E); label(\"$30$\", F--D); draw(B--C--D--F--E--B--A--D); [/asy]you find that the three segments cut the square into three equal horizontal sections. Therefore, ($x$ being the side length), $\\sqrt{x^2+(x/3)^2}=30$, or $x^2+(x/3)^2=900$. Solving for $x$, we get $x=9\\sqrt{10}$, and $x^2=810.$\nArea of the square is $\\boxed{810}$."
-}

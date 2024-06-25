@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest $4$ digit integer congruent to $15 \\pmod{22}?$",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "An integer that is congruent to $15 \\pmod{22}$ is of the form $22n+15$.\n\nTherefore, we make the equation $22n+15<10000$, and find the largest possible $n$. \\begin{align*}\n22n+15&<10000 \\\\\n22n&<9985 \\\\\nn&<\\frac{9985}{22} \\approx 453.85\n\\end{align*}The largest possible integer $n$ is $453$. We plug it in for $n$ to get $22 \\cdot 453 +15 =\\boxed{9981}$."
-}

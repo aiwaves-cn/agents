@@ -1,6 +1,0 @@
-{
-    "problem": "The roots of the equation $2x^2 - 5x - 4 = 0$ can be written in the form $x = \\frac{m \\pm \\sqrt{n}}{p}$, where $m$, $n$, and $p$ are positive integers with a greatest common divisor of 1. What is the value of $n$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "This problem is an application of the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$. Using the quadratic formula, we find that $x = \\frac{5 \\pm \\sqrt{25 +32}}{4} = \\frac{5 \\pm \\sqrt{57}}{4}$. Since $4$ and $57$ are relatively prime, $n = \\boxed{57}$."
-}

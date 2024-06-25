@@ -1,6 +1,0 @@
-{
-    "problem": "Many states use a sequence of three letters followed by a sequence of three digits as their standard license-plate pattern. Given that each three-letter three-digit arrangement is equally likely, the probability that such a license plate will contain at least one palindrome (a three-letter arrangement or a three-digit arrangement that reads the same left-to-right as it does right-to-left) is $\\dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n.$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Consider the three-digit arrangement, $\\overline{aba}$. There are $10$ choices for $a$ and $10$ choices for $b$ (since it is possible for $a=b$), and so the probability of picking the palindrome is $\\frac{10 \\times 10}{10^3} = \\frac 1{10}$. Similarly, there is a $\\frac 1{26}$ probability of picking the three-letter palindrome.\nBy the Principle of Inclusion-Exclusion, the total probability is\n$\\frac{1}{26}+\\frac{1}{10}-\\frac{1}{260}=\\frac{35}{260}=\\frac{7}{52}\\quad\\Longrightarrow\\quad7+52=\\boxed{59}$"
-}

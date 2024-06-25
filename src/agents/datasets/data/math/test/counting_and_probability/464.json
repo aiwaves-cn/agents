@@ -1,6 +1,0 @@
-{
-    "problem": "An unfair coin lands on heads with probability $\\frac35$, on tails with probability $\\frac15$, and on its edge with probability $\\frac15$.  If it comes up heads, I win 4 dollars.  If it comes up tails, I lose 1 dollar.  But if it lands on its edge, I lose 10 dollars.  What is the expected winnings from one flip?  Express your answer as a dollar value, rounded to the nearest cent.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "The expected value is $$\\left(\\dfrac{3}{5}\\times\\$4\\right) + \\left(\\dfrac{1}{5}\\times(-\\$1)\\right) + \\left(\\dfrac{1}{5}\\times(-\\$10)\\right) =\\boxed{\\$0.20}.$$"
-}

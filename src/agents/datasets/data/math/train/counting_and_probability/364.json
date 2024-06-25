@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. Jones has 6 children. Assuming that the gender of each child is determined independently and with equal likelihood of male and female, what is the probability that Mr. Jones has more sons than daughters or more daughters than sons?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We could do this with a bit of casework, but that gets boring after a while. Instead, we can use complementary probability. Since each child can be male or female with equal likelihood, there are $2^6=64$ possible ways in which the genders of the children can be determined. The only way in which Mr. Jones won't have more sons than daughters or more daughters than sons is if he has exactly 3 of each, which can occur in $\\binom{6}{3}=20$ ways. Using the concept of complementary counting gives us that there are $64-20=44$ ways in which he can have more children of one gender than the other out of a total of 64 possible ways, for a final probability of $\\dfrac{44}{64}=\\boxed{\\dfrac{11}{16}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)$ be a function defined for all positive real numbers satisfying the conditions $f(x) > 0$ for all $x > 0$ and\n\\[f(x - y) = \\sqrt{f(xy) + 2}\\]for all $x > y > 0.$  Determine $f(2009).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "First, we claim there exist positive real numbers $x$ and $y$ so that $x - y = xy = 2009.$  From these equations,\n\\[x^2 - 2xy + y^2 = 2009^2,\\]so $x^2 + 2xy + y^2 = 2009^2 + 4 \\cdot 2009.$  Then $x + y = \\sqrt{2009^2 + 4 \\cdot 2009},$ so by Vieta's formulas, $x$ and $y$ are the roots of\n\\[t^2 - (\\sqrt{2009^2 + 4 \\cdot 2009}) t + 2009 = 0.\\](The discriminant of this quadratic is $2009^2,$ so it does have real roots.)\n\nThen for these values of $x$ and $y,$\n\\[f(2009) = \\sqrt{f(2009) + 2}.\\]Let $a = f(2009),$ so $a = \\sqrt{a + 2}.$  Squaring both sides, we get $a^2 = a + 2,$ so $a^2 - a - 2 = 0.$  This factors as $(a - 2)(a + 1) = 0.$  Since $a$ is positive, $a = \\boxed{2}.$"
-}

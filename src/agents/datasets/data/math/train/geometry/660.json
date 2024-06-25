@@ -1,6 +1,0 @@
-{
-    "problem": "The diagonals of a regular hexagon have two possible lengths. What is the ratio of the shorter length to the longer length? Express your answer as a common fraction in simplest radical form.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The two possible diagonal lengths are $AB$ and $AC$.  The measure of an interior angle of a regular hexagon is $180(6-2)/6=120$ degrees. Therefore, angle $BCA$ measures $120/2=60$ degrees.  Also, the base angles of the isosceles triangle with the marked 120-degree angle each measure $(180-120)/2=30$ degrees. This implies that $\\angle CBA$ is a right angle, so triangle $ABC$ is a 30-60-90 triangle.  Therefore, the ratio of $AB$ to $AC$ is $\\boxed{\\frac{\\sqrt{3}}{2}}$. [asy]\nsize(150);\ndefaultpen(linewidth(0.7));\nint i;\nfor(i=0;i<=5;++i) draw(dir(60*i)--dir(60*(i+1)));\ndraw(dir(0)--dir(120));\ndraw(dir(0)--dir(180));\nlabel(\"$A$\",dir(0),dir(0));\nlabel(\"$B$\",dir(120),dir(120));\nlabel(\"$C$\",dir(180),dir(180));\ndraw(anglemark(dir(60)+dir(180),dir(60),dir(0),3));\n[/asy]"
-}

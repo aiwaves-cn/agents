@@ -1,6 +1,0 @@
-{
-    "problem": "The perimeter of triangle $APM$ is $152$, and the angle $PAM$ is a right angle. A circle of radius $19$ with center $O$ on $\\overline{AP}$ is drawn so that it is tangent to $\\overline{AM}$ and $\\overline{PM}$. Given that $OP=m/n$ where $m$ and $n$ are relatively prime positive integers, find $m+n$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let the circle intersect $\\overline{PM}$ at $B$. Then note $\\triangle OPB$ and $\\triangle MPA$ are similar. Also note that $AM = BM$ by power of a point. Using the fact that the ratio of corresponding sides in similar triangles is equal to the ratio of their perimeters, we have\\[\\frac{19}{AM} = \\frac{152-2AM-19+19}{152} = \\frac{152-2AM}{152}\\]Solving, $AM = 38$. So the ratio of the side lengths of the triangles is 2. Therefore,\\[\\frac{PB+38}{OP}= 2 \\text{ and } \\frac{OP+19}{PB} = 2\\]so $2OP = PB+38$ and $2PB = OP+19.$ Substituting for $PB$, we see that $4OP-76 = OP+19$, so $OP = \\frac{95}3$ and the answer is $\\boxed{98}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{R}$ be the matrix for reflecting over the vector $\\begin{pmatrix} 1 \\\\ 5 \\end{pmatrix}.$  Find $\\det \\mathbf{R}.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "A reflection matrix is always of the form\n\\[\\begin{pmatrix} \\cos 2 \\theta & \\sin 2 \\theta \\\\ \\sin 2 \\theta & -\\cos 2 \\theta \\end{pmatrix},\\]where the vector being reflected over has direction vector $\\begin{pmatrix} \\cos \\theta \\\\ \\sin \\theta \\end{pmatrix}.$  The determinant of this matrix is then\n\\[(\\cos 2 \\theta)(-\\cos 2 \\theta) - \\sin^2 2 \\theta = -\\cos^2 2 \\theta - \\sin^2 2 \\theta = \\boxed{-1}.\\](Why does this make sense geometrically?)"
-}

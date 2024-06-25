@@ -1,6 +1,0 @@
-{
-    "problem": "Two of the vertices of a regular octahedron are to be chosen at random. What is the probability that they will be the endpoints of an edge of the octahedron? Express your answer as a common fraction. [asy]\nsize(150);\npair A, B, C, D, E, F;\nA=(1,1);\nB=(-1,-1);\nC=(0,6);\nD=(0,-6);\nE=(6, 0);\nF=(-6,0);\ndraw(C--F--D--E--C--B--F);\ndraw(D--B--E);\ndraw(F--A--C, dashed);\ndraw(D--A--E, dashed);\n[/asy]",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Because the octahedron is symmetric and all vertices have the same number of edges, we can assume that the first vertex we choose is the top one. If we do not choose this vertex, we can simply rotate the octahedron so that we have. From here, there are 5 other vertices. 4 of them share an edge with the vertex we have already chosen, so the probability that the 2 vertices chosen form an edge is $\\boxed{\\frac{4}{5}}$."
-}

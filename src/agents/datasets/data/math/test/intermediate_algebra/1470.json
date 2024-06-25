@@ -1,6 +1,0 @@
-{
-    "problem": "Two different positive numbers $a$ and $b$ each differ from their reciprocals by $1$. What is $a+b$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If a positive number $x$ differs from its reciprocal by 1, then either $x - \\frac{1}{x} = 1$ or $\\frac{1}{x} - 1 = 1.$\n\nIf $x - \\frac{1}{x} = 1,$ then\n\\[x^2 - x - 1 = 0.\\]By the quadratic formula,\n\\[x = \\frac{1 \\pm \\sqrt{5}}{2}.\\]We want $x$ to be positive, so $x = \\frac{1 + \\sqrt{5}}{2}.$\n\nIf $\\frac{1}{x} - x = 1,$ then\n\\[x^2 + x - 1 = 0.\\]By the quadratic formula,\n\\[x = \\frac{-1 \\pm \\sqrt{5}}{2}.\\]We want $x$ to be positive, so $x = \\frac{-1 + \\sqrt{5}}{2}.$\n\nHence,\n\\[a + b = \\frac{1 + \\sqrt{5}}{2} + \\frac{-1 + \\sqrt{5}}{2} = \\boxed{\\sqrt{5}}.\\]"
-}

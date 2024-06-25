@@ -1,6 +1,0 @@
-{
-    "problem": "A piece of string fits exactly once around the perimeter of a square whose area is 144.  Rounded to the nearest whole number, what is the area of the largest circle that can be formed from the piece of string?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since the area of the square is 144, each side has length $\\sqrt{144}=12$.  The length of the string equals the perimeter of the square which is $4 \\times 12=48$.  The largest circle that can be formed from this string has a circumference of 48 or $2\\pi r=48$.  Solving for the radius $r$, we get $r=\\frac{48}{2\\pi} = \\frac{24}{\\pi}$. Therefore, the maximum area of a circle that can be formed using the string is $\\pi \\cdot \\left( \\frac{24}{\\pi} \\right)^2 = \\frac{576}{\\pi} \\approx \\boxed{183}$."
-}

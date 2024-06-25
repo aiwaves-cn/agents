@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f$ takes nonnegative integers to real numbers, such that $f(1) = 1,$ and\n\\[f(m + n) + f(m - n) = \\frac{f(2m) + f(2n)}{2}\\]for all nonnnegative integers $m \\ge n.$  Find the sum of all possible values of $f(10).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $m = n = 0,$ we get\n\\[2f(0) = f(0),\\]so $f(0) = 0.$\n\nSetting $n = 0,$ we get\n\\[2f(m) = \\frac{f(2m)}{2}.\\]Thus, we can write the given functional equation as\n\\[f(m + n) + f(m - n) = 2f(m) + 2f(n).\\]In particular, setting $n = 1,$ we get\n\\[f(m + 1) + f(m - 1) = 2 + 2f(m),\\]so\n\\[f(m + 1) = 2f(m) - f(m - 1) + 2\\]for all $m \\ge 1.$\n\nThen\n\\begin{align*}\nf(2) &= 2f(1) - f(0) + 2 = 4, \\\\\nf(3) &= 2f(2) - f(1) + 2 = 9, \\\\\nf(4) &= 2f(3) - f(2) + 2 = 16,\n\\end{align*}and so on.\n\nBy a straight-forward induction argument,\n\\[f(m) = m^2\\]for all nonnegative integers $m.$  Note that this function satisfies the given functional equation, so the sum of all possible values of $f(10)$ is $\\boxed{100}.$"
-}

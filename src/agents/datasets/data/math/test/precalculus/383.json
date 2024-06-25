@@ -1,6 +1,0 @@
-{
-    "problem": "Find the $2 \\times 2$ matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix}\\]and\n\\[\\mathbf{M} \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -7 \\end{pmatrix}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "In general, $\\mathbf{M} \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ is the first column of $\\mathbf{M}$, and $\\mathbf{M} \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ is the second column of $\\mathbf{M}$, so\n\\[\\bold{M} = \\boxed{\\begin{pmatrix} 3 & 2 \\\\ 0 & -7 \\end{pmatrix}}.\\]"
-}

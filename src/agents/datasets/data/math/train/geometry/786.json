@@ -1,6 +1,0 @@
-{
-    "problem": "A circle passes through the three vertices of an isosceles triangle that has two sides of length 3  and a base of length 2. What is the area of this circle? Express your answer in terms of $\\pi$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $\\overline{BD}$ be an altitude of the isosceles $\\triangle ABC$, and let $O$ denote the center of the  circle with radius $r$ that passes through $A$, $B$, and $C$, as shown.\n\n[asy]\npair O,A,C,B,D;\nO=(0,0);\nA=(-12,-16); C=(12,-16);\nD=(0,-16); B=(0,20);\ndraw(Circle(O,20),linewidth(0.7));\ndraw(A--B--C--cycle,linewidth(0.7));\ndraw(B--D,linewidth(0.7));\ndraw(O--A,linewidth(0.7));\nlabel(\"$r$\",(0.6,10),W);\nlabel(\"$r$\",(-5.3,-7.7),NW);\nlabel(\"1\",(-6,-16),N);\nlabel(\"3\",(-6,0),NW);\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,N);\nlabel(\"$C$\",C,SE);\nlabel(\"$D$\",(0,-15.7),S);\nlabel(\"$O$\",O,E);\n[/asy]\n\nThen \\[\nBD = \\sqrt{3^2 - 1^2} = 2\\sqrt{2}\\quad\\text{and}\\quad OD = 2\\sqrt{2} - r.\n\\] Since $\\triangle ADO$ is a right triangle, we have \\[\nr^2 = 1^2 + \\left(2\\sqrt{2} - r\\right)^2 = 1 + 8 -4\\sqrt{2}r + r^2,\n\\quad\\text{and}\\quad r = \\frac{9}{4\\sqrt{2}} = \\frac{9}{8}\\sqrt{2}.\n\\] As a consequence, the circle has area \\[\n\\left( \\frac{9}{8}\\sqrt{2}\\right)^2\\pi = \\boxed{\\frac{81}{32}\\pi}.\n\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In a round-robin tournament with $n$ teams, the number of games that must be played is $(n^2-n)/2$. How many teams are in a round-robin tournament in which 55 games are played?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "There are two ways to do this quickly: Set $\\frac{n^2-n}{2} = 55$, multiply both sides by 2, so that you have $n^2 - n = 110$.  Then, quickly notice that $n = 11$ is the only number conceivably close enough such that that equation will work (namely, $n = 10$ is too small, and $n = 12$ is too big, since 144 is way greater than 110.)  If you do the problem in this manner, you should do it all in your head so as to be able to do it more quickly (and you gain nothing from writing it out).\n\nThe other way is to quickly factor the numerator to $n(n-1)$, and once again multiply both sides by 2.  Then, you'll have $n(n-1) = 110$, from which you should recognize that both 10 and 11 are factors, from which you get $n = \\boxed{11}$.\n\nWe can also solve this as a quadratic equation. $n(n-1) = 110$ becomes $n^2 - n - 110 = 0$. Factoring, we find that $(n - 11)(n + 10) = 0.$ This gives us $n = 11$ or $n = -10,$ but $n$ must be positive, so $n = \\boxed{11}$."
-}

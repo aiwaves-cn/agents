@@ -1,6 +1,0 @@
-{
-    "problem": "What is the ratio of the volume of cone $A$ to the volume of cone $B$? Express your answer as a common fraction. [asy]\nsize(260);\ndraw(ellipse((0,0),14.8,6),S);\nlabel(\"Cone $A$\", (0,-6), S);\ndraw((0,28.3)--(0,0),dashed);\nlabel(\"$28.3$\",(0,14),SW);\ndraw((-14.8,0)--(0,28.3)--(14.8,0));\ndraw(\"$14.8$\",(-14.8,0)--(0,0),N,dashed);\ndraw(ellipse((50,0),28.3,6),S);\nlabel(\"Cone $B$\", (50,-6), S);\ndraw((21.7,0)--(50,14.8)--(78.3,0));\ndraw(\"$14.8$\",(50,14.8)--(50,0),W,dashed);\ndraw(\"$28.3$\", (21.7,0)--(50,0),N,dashed);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $x = 14.8$ and $y = 28.3$.  Then the volume of cone $A$ is \\[\\frac{1}{3} \\pi x^2 y,\\] and the volume of cone $B$ is \\[\\frac{1}{3} \\pi y^2 x,\\] so the desired ratio is \\[\\frac{\\frac{1}{3} \\pi x^2 y}{\\frac{1}{3} \\pi xy^2} = \\frac{x}{y} = \\frac{14.8}{28.3} = \\boxed{\\frac{148}{283}}.\\]"
-}

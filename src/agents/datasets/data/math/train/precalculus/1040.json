@@ -1,6 +1,0 @@
-{
-    "problem": "There are infinitely many positive integers $k$ which satisfy the equation\n\\[\\cos^2 (k^2 + 6^2)^\\circ = 1.\\]Enter the two smallest solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Note that $\\cos^2 \\theta = 1$ if and only if $\\theta$ is a multiple of $180^\\circ.$  Thus, we seek $k$ so that\n\\[k^2 + 36 = 180n\\]for some nonnegative integer $n.$  Then\n\\[k^2 = 180n - 36 = 36 (5n - 1).\\]Hence, $k$ must be a multiple of 6.  We see that $k = 6$ does not work, but $k = \\boxed{12}$ and $k = \\boxed{18}$ work, so these are the two smallest solutions."
-}

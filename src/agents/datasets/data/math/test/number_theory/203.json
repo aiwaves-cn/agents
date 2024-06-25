@@ -1,6 +1,0 @@
-{
-    "problem": "The product of a set of distinct positive integers is 84. What is the least possible sum of these integers?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We know that the prime factors of the set of numbers must equal the prime factors of 84, which are $2^2\\cdot3\\cdot7$. The set with the smallest sum would be the factors themselves - 2, 2, 3, and 7. However, the set can't have two 2's since the integers must be distinct, but it can have a 4, 3, and 7 instead.  The sum of those numbers is $\\boxed{14}$.  We could also have paired one of the 2's with the 3, to have 2, 6, and 7, but these have sum 15.  Grouping the extra 2 with 7 gives 2, 3, and 14 (which sum to 19), and any other grouping clearly gives a sum higher than 14."
-}

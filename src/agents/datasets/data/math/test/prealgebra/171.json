@@ -1,6 +1,0 @@
-{
-    "problem": "A committee of three students met with the principal today and agreed that Rachel will report to the principal every $9$ days, Jessica every $12$ days, and Richard every $15$ days. What is the least number of days before all three will again report to the principal on the same day?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "We need to find the least common multiple (LCM) of $9$, $12$, and $15$. Their prime factorizations are $9 = 3^2$, $12 = 2^2\\cdot 3$, and $15 = 3 \\cdot 5$. The prime factorization of the LCM must include all of these primes, raised to at least the highest power that they appear in any factorization.  Therefore, the LCM is $2^2 \\cdot 3^2 \\cdot 5 = 180$, and the answer is $\\boxed{180}$ days."
-}

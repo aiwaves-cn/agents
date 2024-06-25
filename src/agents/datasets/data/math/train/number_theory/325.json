@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct digits can appear as the units digit of an integral perfect-square number?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Let $d$ be the last digit of a number $n$.  Then $n^2 \\equiv d^2 \\pmod{10}$, so the units digit of $n^2$ is the same as the units digit of $d^2$.  Checking all the digits from 0 to 9, we find that the possible units digits of $d^2$ are 0, 1, 4, 5, 6, and 9, for a total of $\\boxed{6}$."
-}

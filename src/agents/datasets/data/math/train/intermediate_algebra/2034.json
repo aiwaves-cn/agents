@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[f(x) + 2f(1 - x) = 3x^2\\]for all real numbers $x.$  Find $f(3).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 3,$ we get\n\\[f(3) + 2f(-2) = 27.\\]Setting $x = -2,$ we get\n\\[f(-2) + 2f(3) = 12.\\]Solving these equations as a system in $f(3)$ and $f(-2),$ we find $f(3) = \\boxed{-1}$ and $f(-2) = 14.$"
-}

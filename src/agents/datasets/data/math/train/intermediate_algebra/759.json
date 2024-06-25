@@ -1,6 +1,0 @@
-{
-    "problem": "A right triangle has legs $a$ and $b$ and hypotenuse $c.$  Find the largest possible value of\n\\[\\frac{a + b}{c}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By QM-AM,\n\\[\\sqrt{\\frac{a^2 + b^2}{2}} \\ge \\frac{a + b}{2}.\\]Since $a^2 + b^2 = c^2,$\n\\[\\frac{c}{\\sqrt{2}} \\ge \\frac{a + b}{2},\\]so\n\\[\\frac{a + b}{c} \\le \\sqrt{2}.\\]Equality occurs when $a = b,$ so the largest possible value is $\\boxed{\\sqrt{2}}.$"
-}

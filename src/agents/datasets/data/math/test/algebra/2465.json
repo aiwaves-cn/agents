@@ -1,6 +1,0 @@
-{
-    "problem": "Below is a drawing of all $26$ letters in the English alphabet. As drawn below, some of these letters could be portions of the graph of a function, and some cannot. For example, the $\\textsf{O}$ resembles an ellipse, which cannot be part of the graph of a function.\n\nAs drawn below, which of these letters could be portions of the graph of a function? (You may not rotate them.)\n\nGive your answer as a list of letters with no spaces or other punctuation between them, in alphabetic order.\n\n$$\\begin{array}{c c c c c}\n\\textsf{A} & \\textsf{B} & \\textsf{C} & \\textsf{D} & \\textsf{E}\\\\\\\\\n\\textsf{F} & \\textsf{G} & \\textsf{H} & \\textsf{I} & \\textsf{J}\\\\\\\\\n\\textsf{K} & \\textsf{L} & \\textsf{M} & \\textsf{N} & \\textsf{O}\\\\\\\\\n\\textsf{P} & \\textsf{Q} & \\textsf{R} & \\textsf{S} & \\textsf{T}\\\\\\\\\n\\textsf{U} & \\textsf{V} & \\textsf{W} & \\textsf{X} & \\textsf{Y}\\\\\\\\\n&& \\textsf{Z} &&\n\\end{array}$$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "To be part of the graph of a function, a figure must have at most one point of intersection with any vertical line. Only two letters (as drawn in the problem) have this property: $\\textsf{V}$ and $\\textsf{W}.$ (Following the instructions, your answer should be formatted as $\\boxed{\\text{VW}}.$)"
-}

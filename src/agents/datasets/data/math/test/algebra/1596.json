@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of three numbers $a, b$ and $c$ is 88. If we decrease $a$ by 5, we get $N$. If we increase $b$ by 5, we get $N$. If we multiply $c$ by 5, we get $N$. What is the value of $N$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Translating words into math, we have the equations \\begin{align*}\na+b+c&=88\\\\\na-5&=N\\\\\nb+5&=N\\\\\n5c&=N\\\\\n\\end{align*} We will express the value of each of $a$, $b$, and $c$ in terms of $N$ and then substitute these equations into the first given equation to solve for $N$. From the second given equation, we have $a=N+5$. From the third given equation, we have $b=N-5$. From the fourth given equation, we have $c=N/5$. Plugging these equations into the first given equation to eliminate $a$, $b$, and $c$, we have $(N+5)+(N-5)+(N/5)=88\\Rightarrow N=\\boxed{40}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Four distinct points, $A$, $B$, $C$, and $D$, are to be selected from $1996$ points evenly spaced around a circle. All quadruples are equally likely to be chosen. What is the probability that the chord $\\overline{AB}$ intersects the chord $\\overline{CD}$?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Because all quadruples are equally likely, we need only examine the six clockwise orderings of the points: \\[ACBD, ADBC, ABCD, ADCB, ABDC, \\text{ and } ACDB.\\] Only the first two of these equally likely orderings satisfy the intersection condition, so the probability is $2/6=\\boxed{\\frac{1}{3}}$."
-}

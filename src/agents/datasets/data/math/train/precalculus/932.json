@@ -1,6 +1,0 @@
-{
-    "problem": "What is the range of the function $y=\\log_2 (\\sqrt{\\cos x})$ for $-90^\\circ< x < 90^\\circ$?",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Since $-90^\\circ < x < 90^\\circ$, we have that $0 < \\cos x \\le 1$. Thus, $0 < \\sqrt{\\cos x} \\le 1$. Since the range of $\\log_2 x$ for $0<x\\le1$ is all non-positive numbers, the range of the entire function is all non-positive numbers, or $\\boxed{(-\\infty,0]}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of the terms in an infinite geometric series is 15, and the sum of their squares is 45.  Find the first term.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a$ be the first term, and let $r$ be the common ratio.  Then\n\\begin{align*}\n\\frac{a}{1 - r} &= 15, \\\\\n\\frac{a^2}{1 - r^2} &= 45.\n\\end{align*}From the first equation, $a = 15(1 - r).$  Substituting into the second equation, we get\n\\[\\frac{225 (1 - r)^2}{1 - r^2} = 45.\\]The denominator factors as $(1 + r)(1 - r),$ so the equation simplifies to\n\\[\\frac{5 (1 - r)}{1 + r} = 1.\\]Then $5 - 5r = 1 + r,$ so $r = \\frac{2}{3}.$  Then $a = 15 \\left( 1 - \\frac{2}{3} \\right) = \\boxed{5}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the number of ways to arrange the letters of the word ALABAMA.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "First we count the arrangements if the four A's are unique, which is $7!$. Then since the A's are not unique, we divide by $4!$ for the arrangements of A, for an answer of $\\dfrac{7!}{4!} = \\boxed{210}$."
-}

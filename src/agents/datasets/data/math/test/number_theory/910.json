@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all of the odd divisors of $6300$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we find the prime factorization of $6300$ to be $2^2 \\cdot 3^2 \\cdot 5^2 \\cdot 7$. Note that the odd divisors of 6300 are precisely the integers of the form $3^a5^b7^c$ where $0\\leq a \\leq 2$, $0\\leq b\\leq 2$, and $0\\leq c \\leq 1$. Note also that distributing $(1+3+9)(1+5+25)(1+7)$ yields 18 terms, with each integer of the form $3^a5^b7^c$ (again, where $0\\leq a \\leq 2$, $0\\leq b\\leq 2$, and $0\\leq c \\leq 1$) appearing exactly once.  It follows that the sum of the odd divisors of 6300 is $(1+3+9)(1+5+25)(1+7)=\\boxed{3224}$."
-}

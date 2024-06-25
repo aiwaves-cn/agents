@@ -1,6 +1,0 @@
-{
-    "problem": "Two concentric circles with radii of 19 and 29 units bound a shaded region. A third circle will be drawn with area equal to that of the shaded area. What must the radius of the third circle be? Express your answer in simplest radical form.\n\n[asy]\nfilldraw(circle((0,0),29),gray);\nfilldraw(circle((0,0),19),white);\n\ndot((0,0));\n\ndraw((0,0)--19dir(45),linewidth(1));\n\nlabel(\"19\",9.5dir(45),NW);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since the shaded region is everything inside the larger circle but outside the smaller, its area is $29^2 \\pi - 19^2\\pi = 480\\pi$.  So, letting the radius of the third circle be $r$, we have $\\pi r^2 = 480 \\pi$, or $r = \\sqrt{480} = \\boxed{4\\sqrt{30}}$."
-}

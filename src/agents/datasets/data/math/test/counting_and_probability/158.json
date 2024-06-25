@@ -1,6 +1,0 @@
-{
-    "problem": "How many different rectangles are in the figure? [asy]\ndefaultpen(linewidth(0.8));\ndraw((0,0)--(0,5)--(8,5)--(8,0)--cycle);\ndraw((0,3)--(8,3));\ndraw((6,5)--(6,0));\n[/asy]",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We start off with $\\emph{1}$ large rectangle. Then the horizontal and vertical lines together split the large rectangle into $\\emph{4}$ smaller rectangles. In addition, the vertical line by itself splits the large rectangle into $\\emph{2}$ rectangles and the horizontal line by itself splits the large rectangle into $\\emph{2}$ other rectangles. There are $1+4+2+2=\\boxed{9}$ different rectangles in the figure."
-}

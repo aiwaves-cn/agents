@@ -1,6 +1,0 @@
-{
-    "problem": "When $\\frac{3}{1250}$ is written as a decimal, how many zeros are there between the decimal point and the first non-zero digit?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Rather than doing long division, we will write the given fraction to have a denominator of the form $10^b=2^b \\cdot 5^b$, where $b$ is a positive integer. First, we write $\\dfrac{3}{1250}$ as $\\dfrac{3}{2^1 \\cdot 5^4}$. To make the denominator fit the form $2^b \\cdot 5^b$, we make $b$ the larger of the two exponents, which in this case is $4$. Thus, we have $$\\frac{3}{5^4 \\cdot 2^1} \\cdot \\frac{2^3}{2^3}=\\frac{3 \\cdot 2^3}{5^4 \\cdot 2^4} = \\frac{24}{10^4}$$The exponent in the denominator is $4$, and $24$ are the last two digits. Therefore, there are $4-2=\\boxed{2}$ zeros between the decimal point and the first non-zero digit."
-}

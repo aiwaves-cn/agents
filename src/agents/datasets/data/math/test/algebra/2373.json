@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $x$ if $x$ is positive and $x\\cdot\\lfloor x\\rfloor=27$. Express your answer as a decimal.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We know that $\\lfloor x\\rfloor \\leq x < \\lfloor x\\rfloor + 1$. This implies that $\\lfloor x\\rfloor^2 \\leq x\\cdot\\lfloor x\\rfloor < \\left(\\lfloor x\\rfloor + 1\\right)^2$ for all values of $x$. In particular since $x\\cdot\\lfloor x\\rfloor=27$ and $5^2<27<6^2$, we can conclude that $5<x<6\\rightarrow\\lfloor x\\rfloor=5$. From there, all we have to do is divide to get that $x=\\frac{27}{5}=\\boxed{5.4}$."
-}

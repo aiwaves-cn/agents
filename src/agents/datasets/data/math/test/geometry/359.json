@@ -1,6 +1,0 @@
-{
-    "problem": "The height of a right cylinder is 2.5 times its radius. If the surface area of the cylinder is $112\\pi\\text{ cm}^2$, what is the radius of the cylinder in centimeters?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The surface area of a cylinder with radius $r$ and height $h$ is $2\\pi r^2+2\\pi rh$.  Setting this expression equal to $112\\pi$ and substituting $h=2.5r$ gives  \\begin{align*}\n2\\pi r(r+2.5r) &= 112\\pi \\\\\n7\\pi r^2 &= 112\\pi \\\\\nr^2 &= 16 \\\\\nr&=\\boxed{4} \\text{ cm}.\n\\end{align*}"
-}

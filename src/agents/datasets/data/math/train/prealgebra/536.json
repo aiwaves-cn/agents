@@ -1,6 +1,0 @@
-{
-    "problem": "A zoo has a menagerie containing four pairs of different animals, one male and one female for each. The zookeeper wishes to feed the animals in a specific pattern: each time he feeds a single animal, the next one he feeds must be a different gender. If he starts by feeding the male giraffe, how many ways can he feed all the animals?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If the zookeeper starts with the male giraffe, there are 4 females which he can feed next. Once one is selected, there are 3 males he can feed next, then 3 females, 2 males, 2 females, 1 male, and 1 female.\n\nThe total number of possibilities is $4\\times3\\times3\\times2\\times2 = \\boxed{144}$ ways."
-}

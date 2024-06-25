@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the absolute values of the roots of $x^4-4x^3-4x^2+16x-8=0$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "\\begin{align*}\nx^4-4x^3-4x^2+16x-8&=(x^4-4x^3+4x^2)-(8x^2-16x+8)\\\\\n&=x^2(x-2)^2-8(x-1)^2\\\\\n&=(x^2-2x)^2-(2\\sqrt{2}x-2\\sqrt{2})^2\\\\\n&=(x^2-(2+2\\sqrt{2})x+2\\sqrt{2})(x^2-(2-2\\sqrt{2})x-2\\sqrt{2}).\n\\end{align*}But noting that $(1+\\sqrt{2})^2=3+2\\sqrt{2}$ and completing the square, \\begin{align*}\nx^2-(2+2\\sqrt{2})x+2\\sqrt{2}&= x^2-(2+2\\sqrt{2})x+3+2\\sqrt{2}-3\\\\\n&=(x-(1+\\sqrt{2}))^2-(\\sqrt{3})^2\\\\\n&=(x-1-\\sqrt{2}+\\sqrt{3})(x-1-\\sqrt{2}-\\sqrt{3}).\n\\end{align*}Likewise, \\begin{align*}\nx^2-(2-2\\sqrt{2})x-2\\sqrt{2}=(x-1+\\sqrt{2}+\\sqrt{3})(x-1+\\sqrt{2}-\\sqrt{3}),\n\\end{align*}so the roots of the quartic are $1\\pm\\sqrt{2}\\pm\\sqrt{3}$. Only one of these is negative, namely $1-\\sqrt{2}-\\sqrt{3}$, so the sum of the absolute values of the roots is $$(1+\\sqrt{2}+\\sqrt{3})+(1+\\sqrt{2}-\\sqrt{3})+(1-\\sqrt{2}+\\sqrt{3})-(1-\\sqrt{2}-\\sqrt{3})=\\boxed{2+2\\sqrt{2}+2\\sqrt{3}}.$$"
-}

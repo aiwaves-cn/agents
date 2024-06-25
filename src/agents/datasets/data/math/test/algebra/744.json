@@ -1,6 +1,0 @@
-{
-    "problem": "Lana defines a function $f(x)$ which is given by the formula $$f(x) = x^2,$$ but only on a domain she has specified which consists of finitely many values $x$; she leaves the function undefined for all other $x$.\n\nGiven that the range of $f(x)$ is $\\{0,1,2,3,4,5,6,7,8,9\\}$, what is the maximum number of points that could be in its domain?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We know $x$ can be in the domain of $f(x)$ only if $x^2$ is an element of the set $\\{0,1,2,3,4,5,6,7,8,9\\}$. There are $19$ values of $x$ for which this is true: $$x=0, \\pm 1, \\pm\\sqrt2, \\pm\\sqrt3, \\pm 2, \\pm\\sqrt 5, \\pm\\sqrt 6, \\pm\\sqrt 7, \\pm\\sqrt 8, \\pm 3.$$ Therefore, the domain of $f(x)$ contains at most $\\boxed{19}$ points."
-}

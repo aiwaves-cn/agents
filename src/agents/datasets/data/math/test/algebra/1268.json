@@ -1,6 +1,0 @@
-{
-    "problem": "Square A and Square B are both $2009$ by $2009$ squares.  Square A has both its length and width increased by an amount $x$, while Square B has its length and width decreased by the same amount $x$.  What is the minimum value of $x$ such that the difference in area between the two new squares is at least as great as the area of a $2009$ by $2009$ square?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The new area of Square A is $(2009+x)^2$, while the new area of Square B is $(2009-x)^2$.  The difference in area is \\begin{align*}\n&(2009+x)^2-(2009-x)^2\\\\\n&\\qquad=(2009+x+2009-x)(2009+x-2009+x) \\\\ &\\qquad=(2\\cdot 2009)(2x)\n\\end{align*}For this to be at least as great as the area of a $2009$ by $2009$ square, we must have  $$2(2009)2(x)\\geq 2009^2\\Rightarrow x\\geq \\boxed{\\frac{2009}{4}}.$$"
-}

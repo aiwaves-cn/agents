@@ -1,6 +1,0 @@
-{
-    "problem": "Completely factor the following expression: \\[(9x^5+25x^3-4)-(x^5-3x^3-4).\\]",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First, we combine like terms in the expression: \\begin{align*}\n(9x^5&+25x^3-4)-(x^5-3x^3-4)\\\\\n&=9x^5+25x^3-4-x^5+3x^3+4\\\\\n&=8x^5+28x^3.\n\\end{align*} We can factor out a $4x^3$ from the expression, to get \\[8x^5+28x^3=\\boxed{4x^3(2x^2+7)}.\\]"
-}

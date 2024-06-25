@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)$ be a polynomial of degree 2006 with real coefficients, and let its roots be $r_1,$ $r_2,$ $\\dots,$ $r_{2006}.$  There are exactly 1006 distinct values among\n\\[|r_1|, |r_2|, \\dots, |r_{2006}|.\\]What is the minimum number of real roots that $f(x)$ can have?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Since the coefficient of $f(x)$ are real, the nonreal roots of $f(x)$ must come in conjugate pairs.  Furthermore, the magnitude of a complex number and its conjugate are always equal.  If $n$ is the number of magnitudes $|r_i|$ that correspond to nonreal roots, then $f(x)$ has at least $2n$ nonreal roots, which means it has at most $2006 - 2n$ real roots.\n\nAlso, this leaves $1006 - n$ magnitudes that correspond to real roots, which means that the number of real roots is at least $1006 - n.$  Hence,\n\\[1006 - n \\le 2006 - 2n,\\]so $n \\le 1000.$  Then the number of real roots is at least $1006 - n \\ge 6.$\n\nThe monic polynomial with roots $\\pm i,$ $\\pm 2i,$ $\\dots,$ $\\pm 1000i,$ 1001, 1002, 1003, 1004, 1005, 1006 satisfies the conditions, and has 6 real roots, so the minimum number of real roots is $\\boxed{6}.$"
-}

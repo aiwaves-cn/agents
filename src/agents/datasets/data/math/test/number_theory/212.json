@@ -1,6 +1,0 @@
-{
-    "problem": "Find the units digit of $16^{17} \\times 17^{18} \\times 18^{19}$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can re-write the given expression as $(16 \\times 17 \\times 18)^{17} \\times 17 \\times 18^2$. First, we find the units digit of $(16 \\times 17 \\times 18)^{17}$. The units digit of $16 \\times 17 \\times 18$ is that of $6 \\times 7 \\times 8,$ or that of $2 \\times 8$, or $6$. When raised to any perfect power, a positive integer ending in $6$ will still end in $6$, so $(16 \\times 17 \\times 18)^{17}$ has a units digit of $6$. Now, we need to find the units digit of $6 \\times 17 \\times 18^2$, or the units digit of $2 \\times 18^2$, which is $\\boxed{8}$."
-}

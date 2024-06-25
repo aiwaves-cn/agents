@@ -1,6 +1,0 @@
-{
-    "problem": "In a recent basketball game, Shenille attempted only three-point shots and two-point shots.  She was successful on $20\\%$ of her three-point shots and $30\\%$ of her two-point shots.  Shenille attempted $30$ shots.  How many points did she score?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let the number of attempted three-point shots made be $x$ and the number of attempted two-point shots be $y$.  We know that $x+y=30$.   We need to evaluate $(0.2\\cdot3)x +(0.3\\cdot2)y$, as we know that the three-point shots are worth 3 points and that she made $20\\%$ of them and that the two-point shots are worth 2 and that she made $30\\%$ of them.\n\nSimplifying, we see that this is equal to $0.6x + 0.6y = 0.6(x+y)$.  Plugging in $x+y=30$, we get $0.6(30) = \\boxed{18}$."
-}

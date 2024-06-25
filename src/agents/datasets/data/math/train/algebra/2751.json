@@ -1,6 +1,0 @@
-{
-    "problem": "Given the square of an integer $x$ is 1521, what is the value of $(x+1)(x-1)$?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "Using the difference of squares factorization, we see that $(x+1)(x-1) = x^2-1$. Since we're given $x^2= 1521$, we can easily compute $x^2-1 = 1521-1 = \\boxed{1520}$."
-}

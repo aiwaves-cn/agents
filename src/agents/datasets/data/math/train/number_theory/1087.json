@@ -1,6 +1,0 @@
-{
-    "problem": "What is the $100$th digit after the decimal point when $\\frac{3}{26}$ is expressed as a decimal?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Using long division, we find that $\\frac{3}{26}$ can be expressed as a repeating decimal $0.1\\overline{153846}$.\n\nAfter the first digit, there is a six-digit repeating block. We want to find the $99$th digit after the first digit. The remainder when $99$ is divided by $6$ is $3$. Therefore, the $100$th digit is the third digit in the repeating block, which is $\\boxed{3}$."
-}

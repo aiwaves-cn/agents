@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $1492\\cdot 1999$ is divided by $500$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We have $1492 = 1500-8 \\equiv -8\\pmod{500}$ and $1999 = 2000-1\\equiv -1\\pmod{500}$.\n\nTherefore, $1492\\cdot 1999\\equiv (-8)\\cdot(-1) \\equiv 8 \\pmod{500}$. The remainder is $\\boxed{8}$."
-}

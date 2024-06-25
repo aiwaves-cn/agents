@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers less than $101$ are multiples of either $5$ or $7$, but not both at once?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are $20$ positive multiples of $5$ less than $101$.  There are $14$ positive multiples of $7$ less than $101$.  However, the least common multiple of $5$ and $7$ is $35$, and there are $2$ positive multiples of $35$ less than $101$.  This means there are $20 - 2 = 18$ multiples of $5$ that aren't multiples of $7$, and $14 - 2 = 12$ multiples of 7 that aren't multiples of $5$, for a total of $18 + 12 = \\boxed{30}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Trapezoid $ABCD$ has sides $AB=92$, $BC=50$, $CD=19$, and $AD=70$, with $AB$ parallel to $CD$. A circle with center $P$ on $AB$ is drawn tangent to $BC$ and $AD$. Given that $AP=\\frac mn$, where $m$ and $n$ are relatively prime positive integers, find $m+n$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $AP=x$ so that $PB=92-x.$ Extend $AD, BC$ to meet at $X,$ and note that $XP$ bisects $\\angle AXB;$ let it meet $CD$ at $E.$ Using the angle bisector theorem, we let $XB=y(92-x), XA=xy$ for some $y.$\nThen $XD=xy-70, XC=y(92-x)-50,$ thus\\[\\frac{xy-70}{y(92-x)-50} = \\frac{XD}{XC} = \\frac{ED}{EC}=\\frac{AP}{PB} = \\frac{x}{92-x},\\]which we can rearrange, expand and cancel to get $120x=70\\cdot 92,$ hence $AP=x=\\frac{161}{3}$. This gives us a final answer of $161+3=\\boxed{164}$."
-}

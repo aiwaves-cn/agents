@@ -1,6 +1,0 @@
-{
-    "problem": "The product of the first and the third terms of an arithmetic sequence is $5$. If all terms of the sequence are positive integers, what is the fourth term?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "The only way that 5 can be expressed as the product of two positive integers is as $5 = 1 \\times 5$.  Therefore, the first and third terms are 1 and 5, in some order.  Since all the terms in the sequence are positive integers, the common difference must be nonnegative, so the first term is 1, and the third term is 5.\n\nThen the second term is the average of the first term (namely 1) and the third term (namely 5), or $(1 + 5)/2 = 3$.  Therefore, the common difference is $3 - 1 = 2$, and the fourth term is $5 + 2 = \\boxed{7}$."
-}

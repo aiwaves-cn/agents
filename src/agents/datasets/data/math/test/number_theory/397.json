@@ -1,6 +1,0 @@
-{
-    "problem": "Arnold must water his cactus plants every 9 days and he must feed them every 60 days. He watered and fed them last Tuesday. What day of the week will it be the next time he waters and feeds them on the same day?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "The next time he feeds and waters them on the same day is after $\\text{lcm}(9,60)=180$ days.  Now to determine the day of the week we compute  \\[180\\equiv5\\pmod7.\\] This day falls 5 days later in the week than a Tuesday, so he next feeds them on the same day on a $\\boxed{\\text{Sunday}}$."
-}

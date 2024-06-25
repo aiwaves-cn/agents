@@ -1,6 +1,0 @@
-{
-    "problem": "For any two real numbers $x$ and $y,$ define\n\\[x \\star y = ax + by + cxy,\\]where $a,$ $b,$ and $c$ are constants.  It is known that $1 \\star 2 = 3,$ $2 \\star 3 = 4,$ and there is a non-zero real number $d$ such that $x \\star d = x$ for any real number $x.$  What is the value of $d$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 0$ in $x \\star d = x,$ we get $0 \\star d = 0,$ so $bd = 0.$  Since $d \\neq 0,$ $b = 0,$ and\n\\[x \\star y = ax + cxy.\\]From $1 \\star 2 = 3,$ $a + 2c = 3$.  From $2 \\star 3 = 4,$ $2a + 6c = 4.$  Solving, we find $a = 5$ and $c = -1.$\n\nThen $d$ satisfies\n\\[x = x \\star d = 5x - dx\\]for any real number $x.$  This implies $5 - d = 1,$ so $d = \\boxed{4}.$"
-}

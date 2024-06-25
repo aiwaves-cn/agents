@@ -1,6 +1,0 @@
-{
-    "problem": "The polynomial equation \\[x^3 + bx + c = 0,\\]where $b$ and $c$ are rational numbers, has $5-\\sqrt{2}$ as a root. It also has an integer root. What is it?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Because the coefficients of the polynomial are rational, the radical conjugate of $5-\\sqrt{2},$ which is $5+\\sqrt{2},$ must also be a root of the polynomial. By Vieta's formulas, the sum of the roots of this polynomial is $0$; since $(5-\\sqrt2) + (5+\\sqrt2) = 10,$ the third, integer root must be $0 - 10 = \\boxed{-10}.$"
-}

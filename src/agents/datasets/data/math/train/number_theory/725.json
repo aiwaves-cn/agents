@@ -1,6 +1,0 @@
-{
-    "problem": "Josef and Timothy play a game in which Josef picks an integer between 1 and 1000 inclusive and Timothy divides 1000 by that integer and states whether or not the quotient is an integer.  How many integers could Josef pick such that Timothy's quotient is an integer?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Timothy's quotient is an integer if and only if Josef's number is a divisor of 1000.  Our goal is to count the positive divisors of $1000 = 2^3 \\cdot 5^3$. We see that 1000 has $(3 + 1)(3+1) = 16$ positive divisors, hence there are $\\boxed{16}$ integers Josef could pick to make Timothy's number an integer."
-}

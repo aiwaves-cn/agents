@@ -1,6 +1,0 @@
-{
-    "problem": "George purchases a sack of apples, a bunch of bananas, a cantaloupe, and a carton of dates for $ \\$ 20$. If a carton of dates costs twice as much as a sack of apples and the price of a cantaloupe is equal to the price of a sack of apples minus a bunch of bananas, how much would it cost George to purchase a bunch of bananas and a cantaloupe?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let $a$ denote the price of a sack of apples, $b$ the price of a bunch of bananas, $c$ the price of a cantaloupe, and $d$ the price of a carton of dates. We can express the information given in the problem by the following system of linear equations:  \\begin{align*}\na+b+c+d &= 20\\\\\n2a &= d\\\\\na-b &= c\n\\end{align*}\n\nSubstituting into the first equation for $c$ and $d$ gives $a + b + a - b + 2a = 20$, which simplifies to $4a = 20$, so $a = 5$. From here, we use $a$ to find $d = 2 \\cdot 5 = 10$. We put these values into the first equation to get $5 + b + c + 10 = 20$, so $b + c = \\boxed{ \\$ 5}$."
-}

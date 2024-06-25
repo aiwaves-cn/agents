@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers $n$ satisfy $(n-2)(n+4)<0$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We consider the signs of the two factors for all possible values of $n$.\n\nIf $n>2$, then both $n-2$ and $n+4$ are positive, so the product is positive.\n\nIf $n=2$, then $n-2=0$, so the product is 0.\n\nIf $-4<n<2$, then $n-2<0$ and $n+4>0$, so the product is negative.\n\nIf $n=-4$, then the product is 0.\n\nIf $n <-4$, then both factors are negative, and the product is positive.\n\nTherefore, only the integers $-3$, $-2$, $-1$, $0$, and $1$ satisfy the inequality, for a total of $\\boxed{5}$."
-}

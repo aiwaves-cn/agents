@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the number of ways to arrange the letters of the word MISSISSIPPI.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "First we count the arrangements if all the letters are unique, which is $11!$. Then since the I's, S's and the P's are not unique, we divide by $4!$, $4!$, and $2!$ for the arrangements of I's, S's, and P's, for an answer of $\\dfrac{11!}{4! \\times 4! \\times 2!} = \\boxed{34,\\!650}$."
-}

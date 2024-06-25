@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $a$, $b,$ and $c$ are positive numbers satisfying: \\begin{align*}\na^2/b &= 1, \\\\\nb^2/c &= 2, \\text{ and}\\\\\nc^2/a &= 3.\n\\end{align*} Find $a$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Notice that multiplying all three of the original equations together tells us that $(a^2b^2c^2)/(abc) = 6$, which implies $abc=6$. Rewriting the first and third equations as $b = a^2$ and $c = \\sqrt{3a}$ and plugging these into $abc=6$ yields $a \\cdot a^2\\cdot \\sqrt{3a} = 6$. By squaring both sides of the equation, we obtain $3a^7 = 36 \\Rightarrow a = \\boxed{12^{1/7}}$."
-}

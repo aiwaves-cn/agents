@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ -2 \\\\ -5 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} \\sqrt{7} \\\\ 4 \\\\ -1 \\end{pmatrix},$ and $\\mathbf{c} = \\begin{pmatrix} 13 \\\\ -4 \\\\ 17 \\end{pmatrix}.$  Find the angle between the vectors $\\mathbf{a}$ and $(\\mathbf{a} \\cdot \\mathbf{c}) \\mathbf{b} - (\\mathbf{a} \\cdot \\mathbf{b}) \\mathbf{c},$ in degrees.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Note that the dot product of $\\mathbf{a}$ and $(\\mathbf{a} \\cdot \\mathbf{c}) \\mathbf{b} - (\\mathbf{a} \\cdot \\mathbf{b}) \\mathbf{c}$ is\n\\[\\mathbf{a} \\cdot [(\\mathbf{a} \\cdot \\mathbf{c}) \\mathbf{b} - (\\mathbf{a} \\cdot \\mathbf{b}) \\mathbf{c}] = (\\mathbf{a} \\cdot \\mathbf{c}) (\\mathbf{a} \\cdot \\mathbf{b}) - (\\mathbf{a} \\cdot \\mathbf{b}) (\\mathbf{a} \\cdot \\mathbf{c}) = 0.\\]Therefore, the angle between the vectors is $\\boxed{90^\\circ}.$"
-}

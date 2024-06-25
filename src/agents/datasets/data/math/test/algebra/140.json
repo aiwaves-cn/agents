@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $24x^2-19x-35$ can be written as $(Ax-5)(2Bx+C)$, where $A$, $B$, and $C$ are positive numbers. Find $AB-3C$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The expression $24x^2-19x-35$ can be factored as $(3x-5)(8x+7)$. Therefore, $(Ax-5)=(3x-5)$ and $(2Bx+C)=(8x+7)$. From that, $A=3$, $B=4$, and $C=7$. \\begin{align*}\nAB-3C&=3\\cdot4-3\\cdot7\\\\\n&=12-21\\\\\n&=\\boxed{-9}\n\\end{align*}"
-}

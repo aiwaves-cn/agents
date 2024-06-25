@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $x<1$ and \\[(\\log_{10} x)^2 - \\log_{10}(x^2) = 48,\\]compute the value of \\[(\\log_{10}x)^3 - \\log_{10}(x^3).\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Using the identity $\\log_{10}(x^2) = 2 \\log_{10} x,$ the first equation simplifies to \\[(\\log_{10}x)^2 - 2\\log_{10} x = 48.\\]Subtracting $48$ from both sides gives a quadratic equation in $\\log_{10} x,$ which factors as \\[(\\log_{10} x- 8)(\\log_{10} x + 6) = 0.\\]Since $x < 1,$ we have $\\log_{10} x < 0,$ so we must choose the negative root, $\\log_{10} x = -6.$ Then using the identity $\\log_{10}(x^3) = 3 \\log_{10} x$ gives the answer: \\[\\begin{aligned} (\\log_{10}x)^3 - \\log_{10}x^3 &= (\\log_{10}x)^3 - 3\\log_{10} x \\\\ &= (-6)^3 - 3(-6) \\\\ &= -216 + 18 \\\\ &= \\boxed{-198}. \\end{aligned}\\]"
-}

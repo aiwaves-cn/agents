@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be real numbers. The function $h(x)=ax+b$ satisfies $h(1)=5$ and $h(-1)=1$.  What is $h(6)$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since $h(1)=5$, we have $a\\cdot 1 + b= 5$, so $a+b=5$. Since $h(-1) = 1$, we have $a\\cdot (-1) + b = 1$, so $-a + b=1$. Adding these two equations gives $2b=6$, so $b=3$.  From $a+b=5$, we find $a=2$. Therefore, $h(x) = 2x+3$, so $h(6) = 2\\cdot 6+3=\\boxed{15}$."
-}

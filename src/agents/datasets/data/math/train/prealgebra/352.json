@@ -1,6 +1,0 @@
-{
-    "problem": "Rodney uses the following clues to try to guess a secret number:\n\\begin{tabular}{ c }\nIt is a two-digit integer.\\\\\nThe tens digit is odd.\\\\\nThe units digit is even.\\\\\nThe number is greater than 65.\n\\end{tabular}If Rodney guesses a number that has each of these properties, what is the probability that Rodney will guess the correct number? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We need to count the number of two-digit integers with odd tens digit and even units digit that are greater than $65.$ Notice that the only two possibilities for the tens digit are $7$ and $9.$ For each of these, the units digits $0,$ $2,$ $4,$ $6,$ and $8$ are all possible, for a total of $5$ choices. Therefore there are $2\\cdot 5=10$ possible integers to choose from. Since there are $10$ integers to choose from, the probability of selecting the right one is $\\boxed{\\frac{1}{10}}.$\n\nFor your information, the possible numbers are $$\\{ 70, 72, 74, 76, 78, 90, 92, 94, 96, 98 \\}.$$"
-}

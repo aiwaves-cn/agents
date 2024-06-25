@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be nonzero integers such that\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}^2 = \\begin{pmatrix} 7 & 0 \\\\ 0 & 7 \\end{pmatrix}.\\]Find the smallest possible value of $|a| + |b| + |c| + |d|.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}^2 = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a^2 + bc & ab + bd \\\\ ac + cd & bc + d^2 \\end{pmatrix},\\]so $a^2 + bc = bc + d^2 = 7$ and $ab + bd = ac + cd = 0.$  Then $b(a + d) = c(a + d) = 0.$  Since $b$ and $c$ are nonzero, $a + d = 0.$\n\nIf $|a| = |d| = 1,$ then\n\\[bc = 7 - a^2 = 6.\\]To minimize $|a| + |b| + |c| + |d| = |b| + |c| + 2,$ we take $b = 2$ and $c = 3,$ so $|a| + |b| + |c| + |d| = 7.$\n\nIf $|a| = |d| = 2,$ then\n\\[bc = 7 - a^2 = 3.\\]Then $|b|$ and $|c|$ must be equal to 1 and 3 in some order, so $|a| + |b| + |c| + |d| = 8.$\n\nIf $|a| = |d| \\ge 3,$ then $|a| + |b| + |c| + |d| \\ge 8.$\n\nTherefore, the minimum value of $|a| + |b| + |c| + |d|$ is $\\boxed{7}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Sides $\\overline{AB}$ and $\\overline{EF}$ of regular hexagon $ABCDEF$ are extended to meet at point $P$. What is the degree measure of angle $P$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The sum of the angle measures of a hexagon is $180(6-2) = 720$ degrees, so each angle of a regular hexagon measures $720^\\circ/6=120^\\circ$.  Therefore, $\\angle BAF = 120^\\circ$, which means $\\angle FAP = 180^\\circ - \\angle BAF = 60^\\circ$.  Similarly, $\\angle PFA = 60^\\circ$.  Since the angles of $\\triangle APF$ sum to $180^\\circ$, we have $\\angle APF = 180^\\circ - 60^\\circ - 60^\\circ = \\boxed{60^\\circ}$.\n\n[asy]\nunitsize(0.6inch);\npair A,B,C,D,EE,F,P;\n\nA = (1,0);\nB = rotate(60)*A;\nC=rotate(60)*B;\nD = rotate(60)*C;\nEE = rotate(60)*D;\nF = rotate(60)*EE;\n\nP = A + (A - B);\ndraw (A--B--C--D--EE--F--A--P--F,linewidth(1));\nlabel(\"$A$\",A,NE);\nlabel(\"$B$\",B,N);\nlabel(\"$C$\",C,N);\nlabel(\"$D$\",D,W);\nlabel(\"$E$\",EE,S);\nlabel(\"$F$\",F,S);\nlabel(\"$P$\",P,S);\n[/asy]"
-}

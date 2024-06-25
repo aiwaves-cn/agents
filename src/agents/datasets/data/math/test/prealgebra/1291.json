@@ -1,6 +1,0 @@
-{
-    "problem": "A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \\[\nx+x+2x+2x+2x=540 \\implies 8x = 540 \\implies x=135/2.\n\\] The large angles each measure $2x=\\boxed{135}$ degrees."
-}

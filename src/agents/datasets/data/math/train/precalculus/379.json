@@ -1,6 +1,0 @@
-{
-    "problem": "The projection of $\\begin{pmatrix} -8 \\\\ b \\end{pmatrix}$ onto $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ is\n\\[-\\frac{13}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}.\\]Find $b.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The projection of $\\begin{pmatrix} -8 \\\\ b \\end{pmatrix}$ onto $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ is given by\n\\[\\frac{\\begin{pmatrix} -8 \\\\ b \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = \\frac{b - 16}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}.\\]So, we want $\\frac{b - 16}{5} = \\frac{-13}{5}.$  Solving, we find $b = \\boxed{3}.$"
-}

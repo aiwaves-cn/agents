@@ -1,6 +1,0 @@
-{
-    "problem": "Find the domain of the function $\\frac{x+1}{x^2+6x+8}$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Because we cannot divide by zero, values of $x$ that make the denominator of the fraction equal to zero must be excluded from the domain. Thus, we must first find all values of $x$ that satisfy the equation $x^2+6x+8=0$. Since this factors as $(x+4)(x+2)=0$, the only two values we need to exclude from the domain are $-4$ and $-2$. This gives us the solution $x\\in\\boxed{(-\\infty,-4)\\cup(-4, -2)\\cup(-2,\\infty)}$."
-}

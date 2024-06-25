@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer $n$ such that $3n \\equiv 1356 \\pmod{22}?$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we simplify $1356 \\pmod{22}$ to $1356 \\equiv 14 \\pmod{22}$. Therefore, we have $$3n \\equiv 14 \\pmod{22}$$This means that $3n$ can be written in the form $22a+14$, where $a$ is an integer. So we have $3n=22a+14$.\n\nWe want to find the smallest $a$ such that $\\frac{22a+14}{3}=n$ is an integer, which we can easily find to be $1$. Therefore, $n=\\frac{22+14}{3}=\\boxed{12}$."
-}

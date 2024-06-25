@@ -1,6 +1,0 @@
-{
-    "problem": "Write $(-5)^5\\div5^3+3^{4}-6^{1}$ as an integer.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Recall that $(-a)^n=-a^n$ when $n$ is odd so we can rewrite $(-5)^5$ as $-5^5$. Because $a^m\\div a^n=a^{m-n}$ for positive integers $m>n$, we get $$-5^5\\div5^3=-5^{5-3} =-5^2.$$ Now we can rewrite the expression to get  \\begin{align*}\n(-5)^5\\div5^3+3^{4}-6^{1}&=-5^2+3^4-6\\\\\n&=-25+81-6\\\\\n&=\\boxed{50}.\n\\end{align*}"
-}

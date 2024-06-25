@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of an infinite geometric series is $27$ times the series that results if the first three terms of the original series are removed. What is the value of the series' common ratio?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let's denote the first term as $a$ and the common ratio as $r.$ Additionally, call the original sum of the series $S.$ It follows that \\[\\frac{a}{1-r}=S.\\] After the first three terms of the sequence are removed, the new leading term is $ar^3.$ Then one $27^{\\text{th}}$ of the original series is equivalent to \\[\\frac{ar^3}{1-r}=r^3\\left( \\frac{a}{1-r}\\right)=\\frac{S}{27}.\\]\n\nDividing the second equation by the first, $r^3= \\frac{1}{27}$ and $r=\\boxed{\\frac{1}{3}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the set of all points $(x,y)$ in the coordinate plane for which one of the coordinates is exactly twice the other.  If we were to plot all such points, into how many regions would the resulting graph split up the plane?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Either the $y$ coordinate is twice the $x$ coordinate, in which case we have the line $y=2x$, or the $x$ coordinate is twice the $y$ coordinate, in which case we have the line $y=\\frac{1}{2}x$. The graph of these two lines is shown below:\n\n[asy]\nLabel f;\n\nf.p=fontsize(3);\n\nxaxis(-5,5,Ticks(f, 1.0));\n\nyaxis(-10,10,Ticks(f, 1.0));\n\ndraw((-5,-10)--(5,10),Arrows);\ndraw((-5,-2.5)--(5,2.5),Arrows);\n[/asy]\n\nThe plane is split into $\\boxed{4}$ regions."
-}

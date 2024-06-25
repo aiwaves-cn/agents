@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least perfect square with 3 different prime factors?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Suppose the 3 different prime factors are $a$, $b$, and $c$.  The prime powers in the prime factorization of a perfect square must have even exponents.  Since the square must be as small as possible, we let the exponents all be 2, so the prime factorization is $a^2b^2c^2$.  We make the square as small as possible by letting the three primes be 2, 3, and 5, so we have \\[a^2b^2c^2 = 2^2\\cdot 3^2 \\cdot 5^2 = (2\\cdot 3\\cdot 5)^2 = 30^2 =\\boxed{900}.\\]"
-}

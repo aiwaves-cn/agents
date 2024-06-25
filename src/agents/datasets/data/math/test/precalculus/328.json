@@ -1,6 +1,0 @@
-{
-    "problem": "Find the integer $n,$ $0 \\le n \\le 180,$ such that $\\cos n^\\circ = \\cos 568^\\circ.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since the cosine function has period $360^\\circ,$\n\\[\\cos 568^\\circ = \\cos (568^\\circ - 2 \\cdot 360^\\circ) = \\cos (-152^\\circ).\\]And since the cosine function is even, $\\cos (-152^\\circ) = \\cos 152^\\circ,$ so $n = \\boxed{152}.$"
-}

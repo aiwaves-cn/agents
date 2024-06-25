@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $PQR$, we have $\\angle P = 90^\\circ$, $QR = 15$, and $\\tan R = 5\\cos Q$.  What is $PQ$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "[asy]\npair P,Q,R;\nP = (0,0);\nQ = (3*sqrt(24),0);\nR = (0,3);\ndraw(P--Q--R--P);\ndraw(rightanglemark(Q,P,R,18));\nlabel(\"$P$\",P,SW);\nlabel(\"$Q$\",Q,SE);\nlabel(\"$R$\",R,N);\nlabel(\"$15$\",(R+Q)/2,NE);\n[/asy]\n\nWe have $\\tan R = \\frac{PQ}{PR}$ and $\\cos Q = \\frac{PQ}{QR} = \\frac{PQ}{15}$, so $\\tan R = 5\\cos Q$ gives us $\\frac{PQ}{PR} = 5\\cdot \\frac{PQ}{15} = \\frac{PQ}{3}$.  From $\\frac{PQ}{PR} = \\frac{PQ}{3}$, we have $PR = 3$.  Finally, the Pythagorean Theorem gives us \\begin{align*}\nPQ & = \\sqrt{QR^2 - PR^2} \\\\\n&=\\sqrt{15^2 - 3^2}\\\\\n&=\\sqrt{(5\\cdot 3)^2 - 3^2} \\\\\n&= \\sqrt{25\\cdot 3^2 - 3^2} \\\\\n&= \\sqrt{24\\cdot 3^2} \\\\\n&= \\sqrt{6\\cdot 4\\cdot 3^2} \\\\\n&= \\boxed{6\\sqrt{6}}.\n\\end{align*}"
-}

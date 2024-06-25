@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $x^2 + 2x = i$ has two complex solutions. Determine the product of their real parts.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Complete the square by adding 1 to each side. Then $(x+1)^2 = 1+i=e^{\\frac{i\\pi}{4}} \\sqrt{2}$, so $x+1 = \\pm e^{\\frac{i\\pi}{8}}\\sqrt[4]{2}$. The desired product is then\n\\begin{align*}\n\\left( -1+\\cos\\left(\\frac{\\pi}{8}\\right)\\sqrt[4]{2} \\right) \\left( -1-\\cos\\left( \\frac{\\pi}{8}\\right) \\sqrt[4]{2}\\right) &= 1-\\cos^2\\left( \\frac{\\pi}{8}\\right) \\sqrt{2} \\\\\n&= 1-\\frac{\\left( 1 +\\cos\\left( \\frac{\\pi}{4}\\right) \\right)}{2}\\sqrt{2}\\\\\n&= \\boxed{\\frac{1-\\sqrt{2}}{2}}.\n\\end{align*}"
-}

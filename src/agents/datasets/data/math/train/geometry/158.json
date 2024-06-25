@@ -1,6 +1,0 @@
-{
-    "problem": "A circle with radius 4 cm is tangent to three sides of a rectangle, as shown. The area of the rectangle is twice the area of the circle. What is the length of the longer side of the rectangle, in centimeters? Express your answer in terms of $\\pi$.\n\n[asy]\nimport graph;\ndraw((0,0)--(30,0)--(30,20)--(0,20)--cycle);\ndraw(Circle((10,10),10));\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "If the circle has radius 4, its area is $16\\pi$. Thus, the area of the rectangle is $32\\pi$.\n\nThe length of the shorter side of the rectangle is equal to the diameter of the circle, so it is 8 centimeters long. This means that the length of the other side is $32\\pi/8 = \\boxed{4\\pi}$."
-}

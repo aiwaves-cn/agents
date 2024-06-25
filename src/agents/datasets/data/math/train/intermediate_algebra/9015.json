@@ -1,6 +1,0 @@
-{
-    "problem": "Let b be a real number randomly selected from the interval $[-17,17]$. Then, m and n are two relatively prime positive integers such that m/n is the probability that the equation $x^4+25b^2=(4b^2-10b)x^2$ has $\\textit{at least}$ two distinct real solutions. Find the value of $m+n$.\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "The equation has quadratic form, so complete the square to solve for x.\n\\[x^4 - (4b^2 - 10b)x^2 + 25b^2 = 0\\]\\[x^4 - (4b^2 - 10b)x^2 + (2b^2 - 5b)^2 - 4b^4 + 20b^3 = 0\\]\\[(x^2 - (2b^2 - 5b))^2 = 4b^4 - 20b^3\\]\nIn order for the equation to have real solutions,\n\\[16b^4 - 80b^3 \\ge 0\\]\\[b^3(b - 5) \\ge 0\\]\\[b \\le 0 \\text{ or } b \\ge 5\\]\nNote that $2b^2 - 5b = b(2b-5)$ is greater than or equal to $0$ when $b \\le 0$ or $b \\ge 5$. Also, if $b = 0$, then expression leads to $x^4 = 0$ and only has one unique solution, so discard $b = 0$ as a solution. The rest of the values leads to $b^2$ equalling some positive value, so these values will lead to two distinct real solutions.\nTherefore, in interval notation, $b \\in [-17,0) \\cup [5,17]$, so the probability that the equation has at least two distinct real solutions when $b$ is randomly picked from interval $[-17,17]$ is $\\frac{29}{34}$. This means that $m+n = \\boxed{63}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest 9 digit number of the form $aaa, \\! aaa, \\! aaa$ such that it is divisible by 9? (Notice that all the digits of this number must be the same!)",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "For a number to be divisible by 9, the sum of its digits must be divisible by 9. If the number is of the above form, then the sum of its digits is $a+a+a+a+a+a+a+a+a=9a$. Thus, whatever digit $a$ is, the sum of its digits will always be divisible by 9. Thus, to minimize the 9 digit number, the number is $\\boxed{111, \\! 111, \\! 111}$."
-}

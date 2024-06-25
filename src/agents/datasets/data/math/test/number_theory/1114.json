@@ -1,6 +1,0 @@
-{
-    "problem": "$12! = 47a001600$, for some digit $a$. What is the value of $a$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Testing for divisibility by 9 does not work, because the sum of the digits is 18, so the digit could be either 0 or 9. Test for divisibility by 11. The alternating sum of the digits of $12!$ is $4-7+a-1+6 = 2+a$, which must be divisible by 11. Therefore, since $2+9=11$, we have $\\boxed{a=9}$."
-}

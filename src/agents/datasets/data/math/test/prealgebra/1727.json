@@ -1,6 +1,0 @@
-{
-    "problem": "Four politicians and three lawyers attend a party. Each politician shakes hands exactly once with everyone, and each lawyer shakes hands exactly once with each politician. How many handshakes take place?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We can count the total number of handshakes by counting the lawyers shaking hands with each of the politicians and then the politicians shaking hands among themselves.\n\nIf each lawyer shakes hands with each of the politicians, then each lawyer shakes hands with four people. Since there are three lawyers, $4 \\cdot 3 = 12$ handshakes occur.\n\nIf each politician shakes hands with each of the other politicians, the first shakes hands with three others, the second shakes hands with two others (not counting the handshake with the first that has already transpired), and the last two each shake the hand of the other. Thus, there are $3 + 2 + 1 = 6$ handshakes that occur.\n\nSo, $12 + 6 = \\boxed{18}$ total handshakes take place."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest possible value of $a$ in the system of equations $5a + 2b = 0$ and $ab = -10$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Though we can solve this by substitution, an easier way to solve the problem is to simply add the two equations. Then, $$ab + 5a + 2b = -10 \\Longrightarrow ab + 5a + 2b + 10 = 0.$$ This factors! Thus, $(a+2)(b+5) = 0$, from which it follows that at least one of the two statements $a = -2$, $b = -5$ is true. In the latter case, we obtain $a = \\boxed{2}$, which yields the largest possible value of $a$."
-}

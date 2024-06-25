@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when 5462 is divided by 9?",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "A number is congruent to the sum of its own digits modulo 9.  (In other words, if you have a number $n$, and the sum of its digits is $m$, then $n$ and $m$ leave the same remainder when divided by 9.)\n\nThe sum of the digits of 5462 is $5 + 4 + 6 + 2 = 17$, and the sum of the digits of 17 is $1 + 7 = 8$.  Therefore, the remainder when 5462 is divided by 9 is $\\boxed{8}$."
-}

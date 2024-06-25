@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $i^6+i^{16}+i^{-26}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We have $i^6 = i^4\\cdot i^2 = 1\\cdot (-1) = -1$.  We also have $i^{16} = (i^4)^4 = 1^4 =1$, and $i^{-26} = 1/i^{26} = 1/(i^{24}\\cdot i^2) = 1/[1\\cdot (-1)] = -1$. So, adding these three results gives $i^6 + i^{16} + i^{-26} = -1+1-1 = \\boxed{-1}$."
-}

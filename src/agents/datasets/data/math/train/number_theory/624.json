@@ -1,6 +1,0 @@
-{
-    "problem": "Convert $1357_{10}$ to base 5.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We see that the largest power of 5 that is less than 1357 is $5^4=625$, and the largest multiple of 625 less than 1357 is 1250, or $2\\cdot625$. From here, we find that the largest power of five less than $1357-1250=107$ is $5^2=25$, and the largest multiple of 25 less than 107 is 100, or $4\\cdot25$. Next, the largest power of five that is less than $107-100=7$ is $5^1=5$, simply giving us 5 or $1\\cdot 5$ as the largest multiple of 5. Finally, this leaves us with $7-5=2$, or $2\\cdot1=2\\cdot5^0$. Therefore, we can express 1357 as $2\\cdot5^4+0\\cdot5^3+4\\cdot5^2+1\\cdot5^1+2\\cdot5^0$, which gives us $\\boxed{20412_5}$."
-}

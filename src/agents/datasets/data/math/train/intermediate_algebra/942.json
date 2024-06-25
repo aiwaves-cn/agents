@@ -1,6 +1,0 @@
-{
-    "problem": "Solve the inequality\n\\[2 - \\frac{1}{2x + 3} < 4.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The given inequality is equivalent to\n\\[\\frac{1}{2x + 3} + 2 > 0,\\]or\n\\[\\frac{4x + 7}{2x + 3} > 0.\\]If $x < -\\frac{7}{4},$ then $4x + 7 < 0$ and $2x + 3 < 0,$ so the inequality is satisfied.\n\nIf $-\\frac{7}{4} < x < -\\frac{3}{2},$ then $4x + 7 > 0$ and $2x + 3 < 0,$ so the inequality is not satisfied.\n\nIf $x > -\\frac{3}{2},$ then $4x + 7 > 0$ and $2x + 3 > 0,$ so the inequality is satisfied.  Thus, the solution is\n\\[x \\in \\boxed{\\left( -\\infty, -\\frac{7}{4} \\right) \\cup \\left( -\\frac{3}{2}, \\infty \\right)}.\\]"
-}

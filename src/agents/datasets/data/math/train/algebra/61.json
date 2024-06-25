@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest possible positive integer value of $x$ if $\\displaystyle\\frac{x^4}{x^2} < 10$?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "On the left-hand side, $x^2$ cancels, reducing the inequality to $x^2<10$. Since  $3^2=9<10$ while $4^2=16>10$, the greatest possible value of $x$ is $\\boxed{3}$."
-}

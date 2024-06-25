@@ -1,6 +1,0 @@
-{
-    "problem": "A square sheet of paper has area $6 \\text{ cm}^2$. The front is white and the back is black. When the sheet is folded so that point $A$ rests on the diagonal as shown, the visible black area is equal to the visible white area. How many centimeters is $A$ from its original position? Express your answer in simplest radical form.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $x$ be the length of a leg of the black isosceles triangle.  Then the black area is $\\frac{1}{2}(x)(x)=\\frac{1}{2}x^2$.  The white area is $6-x^2$.  Solving $\\frac{1}{2}x^2=6-x^2$, we find $x^2=4$, so $x=2$.  The distance from A to its original position is the length of a hypotenuse of a right triangle whose legs have length $x$.  Therefore, A is $\\boxed{2\\sqrt{2}}$ centimeters from its original position."
-}

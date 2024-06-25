@@ -1,6 +1,0 @@
-{
-    "problem": "How many possible distinct 5 card hands can be dealt from a standard 52 card deck? The order in which the cards are dealt doesn't matter.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We're selecting 5 cards out of 52 total which is represented by ${{52}\\choose{5}}=\\boxed{2,\\!598,\\!960}$"
-}

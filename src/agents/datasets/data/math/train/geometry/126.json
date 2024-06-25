@@ -1,6 +1,0 @@
-{
-    "problem": "Altitudes $\\overline{AP}$ and $\\overline{BQ}$ of an acute triangle $\\triangle ABC$ intersect at point $H$.  If $HP=5$ while $HQ=2$, then calculate $(BP)(PC)-(AQ)(QC)$. [asy]\nsize(150); defaultpen(linewidth(0.8));\npair B = (0,0), C = (3,0), A = (2,2), P = foot(A,B,C), Q = foot(B,A,C),H = intersectionpoint(B--Q,A--P);\ndraw(A--B--C--cycle);\ndraw(A--P^^B--Q);\nlabel(\"$A$\",A,N); label(\"$B$\",B,W); label(\"$C$\",C,E); label(\"$P$\",P,S); label(\"$Q$\",Q,E); label(\"$H$\",H,NW);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "We use similar triangles: $\\triangle BPH \\sim \\triangle APC$ since they are both right triangles and the angles at $A$ and $B$ are each complementary to $\\angle C$, and thus congruent. Similarly, $\\triangle AQH \\sim \\triangle BQC$.  We know that $HP=5$ and $HQ=2$, so we have the ratios \\[ \\frac{BP}{5} = \\frac{AH+5}{PC}\\]and  \\[ \\frac{AQ}{2} = \\frac{BH+2}{QC}. \\]Cross-multiplying and then subtracting the second equality from the first yields \\[ (BP)(PC) - (AQ)(QC) = 5(AH)+25 - 2(BH) - 4. \\]But $\\triangle BPH \\sim \\triangle AQH$, so $BH/5 = AH/2$, so $5(AH)-2(BH)=0.$ Hence our desired answer is simply $25-4=\\boxed{21}$."
-}

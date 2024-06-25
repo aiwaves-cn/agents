@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that we have a right triangle $ABC$ with the right angle at $B$ such that $AC = \\sqrt{61}$ and $AB = 5.$ A circle is drawn with its center on $AB$ such that the circle is tangent to $AC$ and $BC.$ If $P$ is the point where the circle and side $AC$ meet, then what is $CP$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Since we have a right triangle, we can see that any circle with center on $AB$ is tangent to $BC$ at the right angle itself, or $B.$ Since $P$ is the point at which $AC$ and the circle meet, we see that $CP$ is a tangent from $C,$ as is $BC.$ That means $BC = CP.$ We can easily find $BC$ via the Pythagorean Theorem, as $AB^2 + BC^2 = AC^2.$ Plugging in $(5)^2 + BC^2 = (\\sqrt{61})^2,$ we can find $BC = CP = \\boxed{6}.$"
-}

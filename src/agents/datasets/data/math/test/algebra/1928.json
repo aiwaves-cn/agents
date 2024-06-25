@@ -1,6 +1,0 @@
-{
-    "problem": "Let $$x={4\\over{(\\sqrt5+1)(\\root 4\\of5+1)(\\root 8\\of5+1)(\\root\n{16}\\of5+1)}}.$$Find $(x+1)^{48}$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Multiplying the top and bottom by $\\sqrt[16]{5} - 1$, we get a lot of simplification by difference-of-squares: \\[\\begin{aligned} x& = \\frac{4(\\sqrt[16]{5}-1)}{(\\sqrt{5}+1)(\\sqrt[4]{5}+1)(\\sqrt[8]{5}+1)(\\sqrt[16]{5}+1)(\\sqrt[16]{5}-1)} \\\\ &= \\frac{4(\\sqrt[16]{5}-1)}{(\\sqrt{5}+1)(\\sqrt[4]{5}+1)(\\sqrt[8]{5}+1)(\\sqrt[8]{5}-1)} \\\\ &= \\frac{4(\\sqrt[16]{5}-1)}{(\\sqrt{5}+1)(\\sqrt[4]{5}+1)(\\sqrt[4]{5}-1)} \\\\ &= \\frac{4(\\sqrt[16]{5}-1)}{(\\sqrt{5}+1)(\\sqrt{5}-1)} \\\\ &= \\frac{4(\\sqrt[16]{5}-1)}{4} = \\sqrt[16]{5} - 1. \\end{aligned}\\]Thus, \\[(x+1)^{48} = \\left(\\sqrt[16]{5}\\right)^{48} = 5^3 = \\boxed{125}.\\]"
-}

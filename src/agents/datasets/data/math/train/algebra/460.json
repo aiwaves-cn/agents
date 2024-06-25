@@ -1,6 +1,0 @@
-{
-    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\nax+3 & \\text{ if }x>0, \\\\\nab & \\text{ if }x=0, \\\\\nbx+c & \\text{ if }x<0.\n\\end{array}\n\\right.\\]If $f(2)=5$, $f(0)=5$, and $f(-2)=-10$, and $a$, $b$, and $c$ are nonnegative integers, then what is $a+b+c$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since $2>0$ we know that $f(2)=a(2)+3=5$. Solving for $a$, we get that $a=1$. With $x=0$, we get that $f(0)=ab=5$. We already know that $a=1$, so $b=5$. Because -2 is negative, we know that $f(-2)=b(-2)+c=(5)(-2)+c=-10$. This tells us that $c=0$, so our answer is $a+b+c=1+5+0=\\boxed{6}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $n$ is an integer, such that $2 \\le n \\le 2010$, for how many values of $n$ is $\\left(1 + \\frac 12 \\right)\\left(1 + \\frac 13 \\right) \\dotsm \\left(1 + \\frac 1n \\right)$ equal to a positive integer?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can re-write the product as $$\\left(1 + \\frac 12 \\right)\\left(1 + \\frac 13 \\right) \\dotsm \\left(1 + \\frac 1n \\right) = \\frac{3}{2} \\cdot \\frac 43 \\dotsm \\frac{n+1}{n}.$$The numerator of each fraction nicely cancels with the denominator of the next fraction, so the entire product telescopes, leaving just the fraction $\\frac{n+1}{2}$. For $\\frac{n+1}2$ to be an integer, it follows that $n+1$ must be even and $n$ must be odd. The odd numbers from $2 \\le n \\le 2010$ are given by $3,5, \\ldots, 2009$; there are $\\frac{2009 - 3}{2} + 1 = \\boxed{1004}$ such numbers."
-}

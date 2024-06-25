@@ -1,6 +1,0 @@
-{
-    "problem": "If $3p+4q=8$ and $4p+3q=13$, what is $q$ equal to?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Because the question only asks for the value of $q$, we can begin by eliminating $p$. In order to do this, we multiply the first equation by 4 and the second equation by 3, giving us a system of two equations that both have 12 as the coefficient of $p$ \\begin{align*} 12p+16q&=32\n\\\\ 12p+9q&=39\n\\end{align*}From here, we can just subtract the second equation from the first. This gives us $(12p+16q)-(12p+9q)=32-(39)$, which simplifies to $7q=-7$ or $q=\\boxed{-1}$."
-}

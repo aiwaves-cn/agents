@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = x^2-3x$. For what values of $x$ is $f(f(x)) = f(x)$?  Enter all the solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Expanding $f(f(x)) = f(x)$ gives us $$(x^2-3x)^2-3(x^2-3x)=x^2-3x.$$Rather than expanding, we can subtract $x^2-3x$ from both sides to get $$(x^2-3x)^2-4(x^2-3x)=0.$$Factoring out $x^2-3x$ gives $(x^2-3x)(x^2-3x-4)=0$. Factoring each quadratic separately, we get $$x(x-3)(x+1)(x-4)=0.$$Thus the values of $x$ are $\\boxed{0, 3, -1, 4}$."
-}

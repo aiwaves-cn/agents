@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $f(x)$ and $g(x)$ are functions on $\\mathbb{R}$ such that the range of $f$ is $[-5,3]$, and the range of $g$ is $[-2,1]$.  The range of $f(x) \\cdot g(x)$ is $[a,b]$.  What is the largest possible value of $b$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $|f(x)| \\le 5$ for all $x$ and $|g(x)| \\le 2$ for all $x$, $|f(x) g(x)| \\le 10$ for all $x$.  It follows that $f(x) g(x) \\le 10$ for all $x$, so $b$ is at most 10.\n\nFurthermore, if $f$ is any function such that the range of $f$ is $[-5,3]$ and $f(0) = -5$, and $g$ is any function such the range of $g$ is $[-2,1]$ and $g(0) = -2$, then $f(0) g(0) = (-5) \\cdot (-2) = 10$.  Therefore, the largest possible value of $b$ is $\\boxed{10}$."
-}

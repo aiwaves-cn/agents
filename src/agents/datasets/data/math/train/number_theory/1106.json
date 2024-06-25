@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(n)$ be the sum of all the divisors of a positive integer $n$. If $f(f(n)) = n+2$, then call $n$ superdeficient. How many superdeficient positive integers are there?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "For $n = 1,$ $f(1) = 1,$ so\n\\[f(f(1)) = f(1) = 1.\\]Thus, $n = 1$ does not satisfy $f(f(n)) = n + 2.$  Henceforth, assume that $n \\ge 2$.\n\nSince $1$ and $n$ always divide $n$, we have that $f(n) \\ge n+1$, so $f(f(n)) \\ge n+2$. Therefore, in order for $n$ to be superdeficient, $f(n) = n+1$ and $f(n+1) = n+2$. However, if $f(k) = k+1$, then $k$ must be prime. Therefore, we are searching for consecutive prime integers. However, one of those primes must necessarily be even, and the only even prime is $2$. Note that $f(2) = 3$ and $f(3) = 4$, so there is exactly $\\boxed{1}$ superdeficient number: $2$."
-}

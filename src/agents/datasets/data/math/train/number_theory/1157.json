@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer $n$ for which $n^2$ is divisible by 18 and $n^3$ is divisible by 640?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note firstly that $18 = 2 \\cdot 3^2$, so $n$ must be divisible by both $2$ and $3$. Furthermore, $640 = 2^7 \\cdot 5$, so $n$ must be divisible by $2^3$ and $5$, since the smallest power of 2 that, when cubed, is no smaller than $2^7$ is $2^3$. Therefore, $n$ must be divisible by $2^3$, $3$, and $5$. Note that $2^3 \\cdot 3 \\cdot 5 = 120$ is the smallest possible integer that satisfies all of these conditions, so we have $n = \\boxed{120}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "When the digits in the number $2005$ are reversed we obtain the number $5002,$ and $5002 = a \\cdot b \\cdot c$, such that $a$, $b$ and $c$ are three distinct primes. How many other positive integers are the products of exactly three distinct primes $p_1$, $p_2$ and $p_3$ such that $p_1 + p_2 + p_3 = a+b+c$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "5002 factors to $2 \\cdot 41 \\cdot 61$, which sums to 104.  Since 2 is the only even prime number, and we need the sum of these 3 distinct primes to be even, 2 must be one of these primes, meaning we need to look at pairs of primes that sum to 102.  We start with 3, subtract that from 102, and see if the resulting number is prime.  We need check only primes up to 51 in this manner because if the prime is greater than 51, its corresponding prime would be less than 51, meaning we would have found the pair already.  In this manner, we find the following 7 different pairs: $(5,97);(13,89);(19,83);(23,79);(29,73);(31,71);(43,59)$, and thus, there are $\\boxed{7 \\text{ distinct integers}}$."
-}

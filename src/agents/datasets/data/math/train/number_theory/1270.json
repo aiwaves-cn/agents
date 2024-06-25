@@ -1,6 +1,0 @@
-{
-    "problem": "How many of the positive divisors of 3240 are multiples of 3?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "$$ 3240 = 2^3 \\cdot 3^4 \\cdot 5^1 $$A positive divisor of 3240 is a multiple of 3 when it has a prime factorization in the form $2^a \\cdot 3^b \\cdot 5^c$ where $0 \\le a \\le 3$, $1 \\le b \\le 4$, and $0 \\le c \\le 1$.  There are $4 \\cdot 4 \\cdot 2 = \\boxed{32}$ choices for $a$, $b$, and $c$, giving the number of positive divisors of 3240 that are multiples of 3."
-}

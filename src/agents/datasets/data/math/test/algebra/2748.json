@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $i+i^2+i^3+\\cdots+i^{258}+i^{259}$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Each group of 4 consecutive powers of $i$ adds to 0: \\[ i + i^2 + i^3 + i^4 = i - 1 - i +1 = 0,\\] \\[ i^5+i^6+i^7+i^8 = i^4(i+i^2+i^3+i^4) = 1(0) = 0, \\] and so on.  Because $259 =64\\cdot4+3$, we know that if we start grouping the powers of $i$ as suggested by our first two groups above, we will have 64 groups of 4 and 3 terms left without a group: $i^{257}+i^{258}+i^{259}$. To evaluate the sum of these three terms, we use the fact that $i^{256}=(i^4)^{64}=1^{64}$, so \\[ i^{257}+i^{258}+i^{259}=i^{256}(i+i^2+i^3)=1(i-1-i)=-1. \\] So \\begin{align*}\n&\\quad i+i^2+i^3+\\cdots+i^{258}+i^{259} \\\\\n&= (i+i^2+i^3+i^4) + (i^5+i^6+i^7+i^8) + \\cdots \\\\\n&\\quad + (i^{253}+i^{254}+i^{255}+i^{256}) + (i^{257}+i^{258}+i^{259}) \\\\\n&= 0 + 0 + \\cdots + 0 + -1 \\\\\n&= \\boxed{-1}.\n\\end{align*}"
-}

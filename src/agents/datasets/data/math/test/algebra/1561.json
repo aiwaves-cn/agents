@@ -1,6 +1,0 @@
-{
-    "problem": "There are real numbers $A$ and $B$ such that\n\\[\\frac{5x-16}{x^2-7x+10}=\\frac{A}{x-2}+\\frac{B}{x-5}.\\]Find $A+B$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We factor the denominator in the left-hand side to get \\[\\frac{5x - 16}{(x - 2)(x - 5)}= \\frac{A}{x - 2} + \\frac{B}{x - 5}.\\]We then multiply both sides by $(x - 2)(x - 5)$, to get \\[5x - 16 = A(x - 5) + B(x - 2).\\]We can solve for $A$ and $B$ by substituting suitable values of $x$.  For example, setting $x = 2$, the equation becomes $-6 = -3A$, so $A = 2$.  Setting $x = 5$, the equation becomes $9 = 3B$, so $B = 3$.  Therefore, $A + B = 2 + 3 = \\boxed{5}$."
-}

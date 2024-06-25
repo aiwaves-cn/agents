@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that we win $\\$3$ if we flip a heads on a coin toss, but lose $\\$2$ if we flip tails.  What is the expected value, in dollars, of our winnings after one flip?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "In one flip, we have a $1/2$ chance of getting heads and winning 3 dollars, and a $1/2$ chance of getting tails and losing two dollars.  So the expected value of one flip is $E = \\frac{1}{2}(\\$3) + \\frac{1}{2}(-\\$2) = \\boxed{\\$0.50}$."
-}

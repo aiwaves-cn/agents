@@ -1,6 +1,0 @@
-{
-    "problem": "For $x > 0$, the area of the triangle with vertices $(0, 0), (x, 0)$ and $(x, 5)$ is 30 square units. What is the value of $x$?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Sketching the points, we find that the triangle is a right triangle whose legs measure $x$ and $5$ units.  Solving $\\frac{1}{2}(x)(5)=30$, we find $x=\\boxed{12}$.\n\n[asy]\nsize(5cm,IgnoreAspect);\nimport graph;\ndefaultpen(linewidth(0.7)+fontsize(10));\nreal x = 12;\npair A=(0,0), B=(x,0), C=(x,5);\npair[] dots = {A,B,C};\ndot(dots);\ndraw(A--B--C--cycle);\nxaxis(-2,14,Arrows(4));\nyaxis(-1,7,Arrows(4));\nlabel(\"$(0,0)$\",A,SW);\nlabel(\"$(x,0)$\",B,S);\nlabel(\"$(x,5)$\",C,N);[/asy]"
-}

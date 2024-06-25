@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be positive real numbers.  Find the maximum value of\n\\[2(a - x)(x + \\sqrt{x^2 + b^2})\\]in terms of $a$ and $b.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $t = x + \\sqrt{x^2 + b^2}.$  Then $t - x = \\sqrt{x^2 + b^2},$ so\n\\[(t - x)^2 = x^2 + b^2.\\]Expanding, we get\n\\[t^2 - 2tx + x^2 = x^2 + b^2,\\]so\n\\[x = \\frac{t^2 - b^2}{2t}.\\]Hence,\n\\begin{align*}\n2(a - x)(x + \\sqrt{x^2 + b^2}) &= 2 \\left( a - \\frac{t^2 - b^2}{2t} \\right) t \\\\\n&= 2at - t^2 + b^2 \\\\\n&= a^2 + b^2 - (t - a)^2 \\\\\n&\\le a^2 + b^2.\n\\end{align*}Equality occurs when $t = a$ or $x = \\frac{a^2 - b^2}{2a},$ so the maximum value is $\\boxed{a^2 + b^2}.$"
-}

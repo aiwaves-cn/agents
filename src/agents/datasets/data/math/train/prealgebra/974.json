@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive 3-digit numbers are divisible by 7?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Note that $7 \\times 14 = 98 < 100 < 105 = 7 \\times 15$ and $7 \\times 142 = 994 < 1000 < 1001 = 7 \\times 143$.  So the list of 3-digit numbers divisible by 7 is $105,112,\\ldots,994$, and when we divide this list by 7, we get the list $15,16,17,\\ldots,141,142$, which has $142 - 15 + 1 = \\boxed{128}$ numbers."
-}

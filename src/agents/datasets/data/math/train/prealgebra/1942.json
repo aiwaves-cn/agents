@@ -1,6 +1,0 @@
-{
-    "problem": "The sides of this parallelogram measure 7,9, $8y-1$ and $2x+3$ units, consecutively. What is the value of $x+y$?\n\n[asy]draw((0,0)--(21,0)--(30,25)--(9,25)--cycle);\nlabel(\"$8y-1$\",(10,0),S);\nlabel(\"9\",(25.5,12.5),E);\nlabel(\"7\",(19.5,25),N);\nlabel(\"$2x+3$\",(4.5,12.5),W);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "We know that opposite sides of a parallelogram are equal, thus, we can set: \\begin{align*}\n2x + 3 &= 9\n\\\\8y - 1 &= 7\n\\end{align*}Thus, $2x = 6 \\rightarrow x = 3$, and $8y = 8 \\rightarrow y = 1$, thus $x + y = \\boxed{4}$."
-}

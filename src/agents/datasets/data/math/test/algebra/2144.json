@@ -1,6 +1,0 @@
-{
-    "problem": "Find all $x$ that satisfy the inequality $(2x+10)(x+3)<(3x+9)(x+8)$. Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have \\begin{align*} (2x+10)(x+3)&<(3x+9)(x+8) \\quad \\Rightarrow\n\\\\ 2(x+5)(x+3)&<3(x+3)(x+8) \\quad \\Rightarrow\n\\\\ 2(x+5)(x+3)-3(x+3)(x+8)&<0 \\quad \\Rightarrow\n\\\\ (2x+10-(3x+24))(x+3)&<0 \\quad \\Rightarrow\n\\\\ (-x-14)(x+3)&<0 \\quad \\Rightarrow\n\\\\ (x+14)(x+3)&>0.\n\\end{align*} This inequality is satisfied if and only if $(x+14)$ and $(x+3)$ are either both positive or both negative.  Both factors are positive for $x>-3$ and both factors are negative for $x<-14$.  When $-14<x<-3$, one factor is positive and the other negative, so their product is negative.   Therefore, the range of $x$ that satisfies the inequality is $ \\boxed{(-\\infty, -14)\\cup(-3,\\infty)} $."
-}

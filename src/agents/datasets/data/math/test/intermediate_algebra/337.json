@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$, $y$, and $z$ are positive with $xy = 24$, $xz = 48$, and $yz = 72$, then find $x + y + z.$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Multiplying all three equations, we get $x^2 y^2 z^2 = 82944.$  Since $x,$$y,$ and $z$ are positive, $xyz = \\sqrt{82944} = 288.$  Then\n\\begin{align*}\nx &= \\frac{xyz}{yz} = \\frac{288}{72} = 4, \\\\\ny &= \\frac{xyz}{xz} = \\frac{288}{48} = 6, \\\\\nz &= \\frac{xyz}{xy} = \\frac{288}{24} = 12.\n\\end{align*}Hence, $x + y + z = \\boxed{22}.$"
-}

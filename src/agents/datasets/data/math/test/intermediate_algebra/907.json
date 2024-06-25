@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest value of $k$ for which the polynomials $Q_1(x) = x^2 + (k - 29)x - k$ and $Q_2(x) = 2x^2 + (2k - 43)x + k$ can both be factors of a cubic polynomial $P(x)$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Because $P(x)$ has three roots, if $Q_1(x) = x^2 + (k - 29)x - k$ and $Q_2(x) = 2x^2 + (2k - 43)x + k$ are both factors of $P(x)$, then they must have a common root $r$. Then $Q_1(r) = Q_2(r) = 0$, and $mQ_1(r) + nQ_2(r) = 0$, for any two constants $m$ and $n$. Taking $m= 2$ and $n = -1$ yields the equation\n\\[2(r^2 + (k - 29)r - k) - (2r^2 + (2k - 43)r + k) = -3k - 15r = 0.\\]Then $15r + 3k = 0$, so $r =\\frac{-k}{5}$. Thus\n\\[Q_1(r) = \\frac{k^2}{25} -(k-29)\\left(\\frac{k}{5}\\right) -k = 0,\\]which is equivalent to $4k^2 - 120k = 0$, whose roots are $k = 30$ and 0. When $k = 30$, $Q_1(x) = x^2 + x - 30$ and $Q_2(x) = 2x^2 + 17x + 30$, and both polynomials are factors of $P(x) = (x+6)(x-5)(2x+5)$. Thus the requested value of $k$ is $\\boxed{30}$."
-}

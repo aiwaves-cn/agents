@@ -1,6 +1,0 @@
-{
-    "problem": "The point at $(a, b)$ on a Cartesian plane is reflected over the  $y$-axis to the point at $(j, k)$. If $a + j = 0$ and $b + k = 0$, what is the value of $b$?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "If the point $(a,b)$ is reflected over the $y$-axis, it will land on the point $(-a,b)$.  Thus, $j=-a$ and $k=b$.  We were given that $a+j=0$, and $a+(-a)=0$ so this is satisfied.  From $b+k=0$, we find  $$b+(b)=0\\Rightarrow 2b=0$$ $$\\boxed{b=0}$$"
-}

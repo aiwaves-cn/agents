@@ -1,6 +1,0 @@
-{
-    "problem": "A pizza parlor has six different toppings. How many different one- and two-topping pizzas can you order?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Obviously, there are $6$ one-topping pizzas.\n\nNow we count the two-topping pizzas. There are $6$ options for the first topping and $5$ options left for the second topping for a preliminary count of $6\\cdot5=30$ options. However, the order in which we put the toppings on doesn't matter, so we've counted each combination twice, which means there are really only $\\dfrac{6\\cdot5}{2}=15$ two-topping pizzas.\n\nAdding our answers, we see that there are $6+15=\\boxed{21}$ possible pizzas with one or two toppings."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the square root of $\\dfrac{8!}{70}$.  (Reminder: The number $n!$ is the product of the integers from 1 to $n$.  For example, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Simplify to get\n\n$$\\dfrac{8!}{70}=\\dfrac{8\\cdot7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1}{2\\cdot5\\cdot7}=8\\cdot6\\cdot4\\cdot3=2^6 \\cdot 3^2.$$Now, we can take the square root by raising to the power $\\dfrac12$:\n\n$$\\sqrt{2^6 \\cdot 3^2}=(2^6 \\cdot 3^2)^\\frac12=2^\\frac62 \\cdot 3^\\frac22=2^3 \\cdot 3=\\boxed{24}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of real roots of\n\\[2x^{2001} + 3x^{2000} + 2x^{1999} + 3x^{1998} + \\dots + 2x + 3 = 0.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor the given equation as\n\\[(2x + 3) x^{2000} + (2x + 3) x^{1998} + \\dots + (2x + 3) = (2x + 3)(x^{2000} + x^{1998} + \\dots + 1) = 0.\\]Thus, $x = -\\frac{3}{2}$ is a root.  Note that\n\\[x^{2000} + x^{1998} + \\dots + 1 \\ge 1\\]for all real $x,$ so the given polynomial has only $\\boxed{1}$ real root."
-}

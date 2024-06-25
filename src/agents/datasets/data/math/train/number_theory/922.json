@@ -1,6 +1,0 @@
-{
-    "problem": "What is the ones digit of $7^{35}$ when written as an integer?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Let's find the cycle of ones digits of $7^n$, starting with $n=1$ : $7, 9, 3, 1, 7, 9, 3, 1,\\ldots$ . The cycle of ones digits of $7^{n}$ is 4 digits long: 7, 9, 3, 1. Thus, to find the ones digit of $7^n$ for any positive $n$, we must find the remainder, $R$, when $n$ is divided by 4 ($R=1$ corresponds to the ones digit 7, $R=2$ corresponds to the ones digit 9, etc.) Since $35\\div4=8R3$, the ones digit of $7^{35}$ is $\\boxed{3}$."
-}

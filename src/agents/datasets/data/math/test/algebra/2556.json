@@ -1,6 +1,0 @@
-{
-    "problem": "For $(x,y)$, positive integers, let  $10xy+14x+15y=166$.  Find $x+y$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We apply Simon's Favorite Factoring Trick to the left side.  We first find a pair of binomials whose product produces the three terms on the left side: $(2x+3)(5y+7) = 10xy+14x+15y+21$.  So, we add $21$ to both sides of the original equation to get $10xy+14x+15y+21=187$.  Factoring then gives $(2x+3)(5y+7)=187=11\\cdot17$.  If either $(2x+3)$ or $(5y+7)$ equal 1, then $x$ or $y$ would be negative.  If $5y+7$ equals 11, then $y$ would not be an integer.  So, $5y+7=17$ and $2x+3=11$.  Solving for $(x,y)$ gives $(4,2)$.  Therefore, $x+y=\\boxed{6}$."
-}

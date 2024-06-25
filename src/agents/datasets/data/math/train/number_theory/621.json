@@ -1,6 +1,0 @@
-{
-    "problem": "The value $b^n$ has both $b$ and $n$ as positive integers less than or equal to 15. What is the greatest number of positive factors $b^n$ can have?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If we fix $b$ then increasing $n$ increases the number of factors, so we want $n$ to equal $15$.  Recall that the number of prime factors of $p_1^{e_1}p_2^{e_2}\\cdots p_m^{e_m}$ equals $(e_1+1)(e_2+1)\\cdots (e_m+1)$, where the $p_i$ are primes.  Thus we want the exponents in the prime factorization of $b$ to be as large as possible.  Choosing $b=12=2^2\\cdot 3$ gives $e_1=2,e_2=1$.  Any other number less than or equal to $15$ will either be prime or will be the product of two primes, giving smaller exponents in the prime factorization.  Thus $b=12$ is the best choice, and we have $b^n=2^{30}3^{15}$, which has $(30+1)(15+1)=\\boxed{496}$ positive factors."
-}

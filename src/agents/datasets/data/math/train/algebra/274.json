@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $x^2-3x+9=x+41$ has two solutions.  What is the positive difference between these solutions?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "First we bring $x$ to the left side to get  \\[x^2-4x+9=41.\\]We notice that the left side is almost the square $(x-2)^2=x^2-4x+4$. Subtracting 5 from both sides lets us complete the square on the left-hand side, \\[x^2-4x+4=36,\\]so  \\[(x-2)^2=6^2.\\]Therefore $x=2\\pm6$.  The positive difference between these solutions is $8-(-4)=\\boxed{12}$."
-}

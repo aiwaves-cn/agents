@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(n)$ be the sum of the positive integer divisors of $n$. For how many values of $n$, where $1 \\le n \\le 25$, is $f(n)$ prime?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $n$ is prime, then $f(n) = n+1$. If $n+1$ is prime, then $n$ must be even. Therefore, the only prime value of $n$ for which $n+1$ is prime is $n = 2$. If $n = p^a$ for some prime $p$ and an integer $a > 1$, then $f(n) = \\frac{p^{a+1}-1}{p-1}$. This value is not guaranteed to be composite, so we must check all powers of primes. Checking powers of $2$ first, $f(4) = 7$, $f(8) = 15$, and $f(16) = 31$. Two of these powers of 2 work. Checking powers of $3$, $f(9) = 13$ and $f(27)$ is beyond our boundary for $n$, so one power of $3$ works. Finally, $f(25) = 31$, which gives one more value of $n$ that works. Finally, if $n$ is any other composite integer, it can be written as the product of two distinct primes $p$ and $q$. Since $n \\le 25$, $n$ cannot be the product of three distinct primes, so $n = p^aq^b$ for positive integers $a$ and $b$. As a result, $f(n) = \\left(\\frac{p^{a+1}-1}{p-1}\\right)\\left(\\frac{q^{b+1}-1}{q-1}\\right)$, but then $f(n)$ is the product of two integers which are greater than $1$, so $f(n)$ is composite. Therefore, there are $2 + 1 + 1 + 1 = \\boxed{5}$ values of $n$ for which $f(n)$ is prime."
-}

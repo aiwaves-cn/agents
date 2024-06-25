@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of the quadratic $y = ax^2 + bx + c$ is a parabola that passes through the points $(-1,7)$, $(5,7)$, and $(6,10)$.  What is the $x$-coordinate of the vertex of the parabola?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We could substitute the points into the equation $y = ax^2 + bx + c$, solve for $a$, $b$, and $c$, and then complete the square to find the coordinates of the vertex.\n\nHowever, a much faster way is to recognize that two of the points, namely $(-1,7)$ and $(5,7)$, have the same $y$-coordinate.  Therefore, these two points are symmetric about the parabola's axis of symmetry.  The axis must pass through the midpoint of the segment connecting these two symmetric points, so the axis must pass through $\\left(\\frac{-1+5}{2},\\frac{7+7}{2}\\right)$, which is $(2,7)$.  Therefore, the axis of symmetry is a vertical line through $(2,7)$.  This line is the graph of the equation $x=2$.  The axis of symmetry also passes through the vertex of the parabola, so the $x$-coordinate of the vertex is $\\boxed{2}$."
-}

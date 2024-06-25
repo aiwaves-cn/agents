@@ -1,6 +1,0 @@
-{
-    "problem": "Say that a complex number $z$ is three-presentable if there is a complex number $w$ of absolute value $3$ such that $z = w - \\frac{1}{w}$.  Let $T$ be the set of all three-presentable complex numbers.  The set $T$ forms a closed curve in the complex plane.  What is the area inside $T$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z$ be a member of the set $T$. Then $z = w - \\frac{1}{w}$ for some complex number $w$ with absolute value $3$. We can rewrite $z$ as\n$$z = w - \\frac{1}{w} = w - \\frac{\\overline{w}}{|w|^2}= w - \\frac{\\overline{w}}{9}.$$Let $w=x+iy$ where $x$ and $y$ are real numbers. Then we have\n$$z = x+iy - \\frac{x-iy}{9} =\\frac{8x + 10iy}{9}.$$This tells us that to go from $w$ to $z$ we need to stretch the real part by a factor of $\\frac{8}{9}$ and the imaginary part by a factor of $\\frac{10}{9}$.\n\n$T$ includes all complex numbers formed by stretching a complex number of absolute value $3$ in this way. Since all complex numbers of absolute value $3$ form a circle of radius $3$, $T$ is an ellipse formed by stretching a circle of radius $3$ by a factor of $\\frac{8}{9}$ in the $x$ direction and by a factor of $\\frac{10}{9}$ in the $y$ direction. Therefore, the area inside $T$ is\n$$\\frac{8}{9}\\cdot\\frac{10}{9}\\cdot9\\pi = \\boxed{\\frac{80}{9}\\pi}.$$"
-}

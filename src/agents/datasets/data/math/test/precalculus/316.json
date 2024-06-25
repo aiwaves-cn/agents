@@ -1,6 +1,0 @@
-{
-    "problem": "The set of vectors $\\left\\{ \\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix}, \\begin{pmatrix} k \\\\ -2 \\end{pmatrix} \\right\\}$ is linearly independent.  Find all possible values of $k.$  Enter your answer as an interval.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Suppose the set $\\left\\{ \\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix}, \\begin{pmatrix} k \\\\ -2 \\end{pmatrix} \\right\\}$ is linearly dependent.  Then there exist non-zero constants $c_1$ and $c_2$ such that\n\\[c_1 \\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix} + c_2 \\begin{pmatrix} k \\\\ -2 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}.\\]Then $3c_1 + kc_2 = 0$ and $7c_1 - 2c_2 = 0.$  From the second equation, $c_2 = \\frac{7}{2} c_1.$  Then\n\\[3c_1 + \\frac{7k}{2} c_1 = 0,\\]or $\\left( 3 + \\frac{7k}{2} \\right) c_1 = 0.$  Since $c_2 \\neq 0,$ $3 + \\frac{7k}{2} = 0,$ so $k = -\\frac{6}{7}.$\n\nTherefore, the set $\\left\\{ \\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix}, \\begin{pmatrix} k \\\\ -2 \\end{pmatrix} \\right\\}$ is linearly independent for $k \\neq -\\frac{6}{7},$ or $k \\in \\boxed{\\left( -\\infty, -\\frac{6}{7} \\right) \\cup \\left( -\\frac{6}{7}, \\infty \\right)}.$"
-}

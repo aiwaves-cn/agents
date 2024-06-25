@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest solution to the equation \\[\\frac{1}{x-2} + \\frac{1}{x-4} = \\frac{3}{x-3}.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "To clear denominators, we multiply both sides by $(x-2)(x-4)(x-3)$: \\[(x-4)(x-3) + (x-2)(x-3) = 3(x-2)(x-4),\\]or \\[(x^2-7x+12) + (x^2-5x+6) = 3(x^2-6x+8).\\]Moving all the terms to the right-hand side, we get \\[x^2 - 6x + 6= 0.\\]By the quadratic formula, \\[x = \\frac{6 \\pm \\sqrt{6^2 - 4 \\cdot 6}}{2} = 3 \\pm \\sqrt{3}.\\]Therefore, the smallest solution is $x = \\boxed{3 - \\sqrt3}.$"
-}

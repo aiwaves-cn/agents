@@ -1,6 +1,0 @@
-{
-    "problem": "There are four points that are $5$ units from the line $y=13$ and $13$ units from the point $(7,13)$.  What is the sum of the $x$- and $y$-coordinates of all four of these points?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $(x,y)$ be one such point. Since $(x,y)$ is $5$ units from the line $y=13$, it must be 5 units above the line or 5 units below it.  This means that the $y$-coordinate is 8 or 18.  By the distance formula, since $(x,y)$ is 13 units from $(7,13)$, we have $$\\sqrt{(x-7)^2+(y-13)^2}=13.$$Since $y$ is either 5 more or 5 less than 13, we know that $(y-13)^2=25$. So we substitute:\n\n\\begin{align*}\n\\sqrt{(x-7)^2+25}&=13\\\\\n\\Rightarrow\\qquad (x-7)^2+25&=13^2\\\\\n\\Rightarrow\\qquad (x-7)^2&=144\\\\\n\\Rightarrow\\qquad x-7&=\\pm 12.\\\\\n\\end{align*}So we have $x-7=12$ or $x-7=-12$, giving $x=19$ or $x=-5$.\n\nPutting it all together, we have $y=8 \\text{ or } 18$ and $x=-5\\text{ or }19$, so our four possible points are $(-5,8),$ $(-5,18),$ $(19,8),$ and $(19,18).$  The sum of all of these coordinates is $\\boxed{80}$."
-}

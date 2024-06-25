@@ -1,6 +1,0 @@
-{
-    "problem": "If $x = \\frac34$ and $y = \\frac43$ , find the value of $\\frac12x^6y^7$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have  \\[\\frac{1}{2} x^6 y^7 = \\frac{1}{2}\\left(\\frac{3}{4}\\right)^6\\left(\\frac43\\right)^7 = \\frac{1}{2}\\cdot \\frac{3^6}{4^6} \\cdot \\frac{4^7}{3^7}\n=\\frac{1}{2} \\cdot\\frac{3^6}{3^7} \\cdot \\frac{4^7}{4^6} = \\frac{1}{2}\\cdot \\frac{1}{3} \\cdot 4 = \\boxed{\\frac{2}{3}}.\\]\n\nWe also could have tackled this problem quickly by noticing that if $x=\\frac34$ and $y=\\frac43$, then $xy=1$, so $\\frac{1}{2}x^6y^7 = \\frac{1}{2} (xy)^6y=\\frac{1}{2}\\cdot 1^6y = \\frac{1}{2}y = \\frac{2}{3}$."
-}

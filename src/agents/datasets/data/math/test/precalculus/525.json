@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix that corresponds to rotating about the origin by an angle of $45^\\circ$ clockwise.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The transformation that rotates about the origin by an angle of $45^\\circ$ clockwise takes $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ to $\\begin{pmatrix} 1/\\sqrt{2} \\\\ -1/\\sqrt{2} \\end{pmatrix}$ and $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ to $\\begin{pmatrix} 1/\\sqrt{2} \\\\ 1/\\sqrt{2} \\end{pmatrix},$ so the matrix is\n\\[\\boxed{\\begin{pmatrix} 1/\\sqrt{2} & 1/\\sqrt{2} \\\\ -1/\\sqrt{2} & 1/\\sqrt{2} \\end{pmatrix}}.\\]"
-}

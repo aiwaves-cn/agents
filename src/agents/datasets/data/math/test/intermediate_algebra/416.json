@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z$ be a complex number such that\n\\[z + \\frac{1}{z} = 1.\\]Find $z^3.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "From the equation $z + \\frac{1}{z} = 1,$\n\\[z^2 + 1 = z,\\]so $z^2 - z + 1 = 0.$  Then $(z + 1)(z^2 - z + 1) = 0,$ which expands as $z^3 + 1 = 0.$  Hence, $z^3 = \\boxed{-1}.$"
-}

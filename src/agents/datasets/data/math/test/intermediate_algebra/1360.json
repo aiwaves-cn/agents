@@ -1,6 +1,0 @@
-{
-    "problem": "In the graph of $\\frac{x^2+3x}{x^2+4x+3}$, let $a$ be the number of holes in the graph, $b$ be the number of vertical asympotes, $c$ be the number of horizontal asymptotes, and $d$ be the number of oblique asymptotes. Find $a+2b+3c+4d$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor the numerator and denominator to get $$\\frac{x^2+3x}{x^2+4x+3} = \\frac{x(x+3)}{(x+3)(x+1)}.$$In this representation we can immediately read that there is a hole at $x=-3$, and a vertical asymptote at $x=-1$. There are no more holes or vertical asymptotes, so $a=1$ and $b=1$. If we cancel out the common factors we have\n$$\\frac{x(x+3)}{(x+3)(x+1)} = \\frac{x}{x+1}.$$We can write $\\frac{x}{x+1}$ as $1 - \\frac{1}{x+1}$ which shows that as $x$ becomes very large, the graph tends towards $1$, giving us a horizontal asymptote.\n\nSince the graph cannot have more than one horizontal asymptote, or a horizontal asymptote and a slant asymptote, we have that $c=1$ and $d=0$. Therefore, $a+2b+3c+4d = 1+2+3+0 = \\boxed{6}.$"
-}

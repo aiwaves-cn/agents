@@ -1,6 +1,0 @@
-{
-    "problem": "The length of a rectangle is four times its width. The perimeter is 100 cm. What is the number of square centimeters in the area of the rectangle?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let the length of the rectangle be $l$ and the width be $w$. We are trying to find the area of the rectangle, or $l \\cdot w$, so we need to first find both $l$ and $w$. We can set up the following system of equations to represent the given information:\n\n\\begin{align*}\nl &= 4w \\\\\n2l + 2w &= 100 \\\\\n\\end{align*}\n\nWe will first solve for $w$ by eliminating $l$ from the equations above. Substituting the first equation into the second to eliminate $l$, we get $2(4w)+2w=100$ or $w=10$. Plugging this value into the first equation gives $l=4(10)=40$. Thus, the area of the rectangle is $l \\cdot w = 40 \\cdot 10 = \\boxed{400}$ square centimeters."
-}

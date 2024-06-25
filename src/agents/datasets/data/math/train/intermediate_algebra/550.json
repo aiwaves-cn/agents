@@ -1,6 +1,0 @@
-{
-    "problem": "For each positive integer $n$, the mean of the first $n$ terms of a sequence is $n$. What is the 2008th term of the sequence?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a_n$ denote the $n$th term.  Then\n\\[\\frac{a_1 + a_2 + \\dots + a_{2008}}{2008} = 2008,\\]so $a_1 + a_2 + \\dots + a_{2008} = 2008^2.$\n\nAlso,\n\\[\\frac{a_1 + a_2 + \\dots + a_{2007}}{2007} = 2007,\\]so $a_1 + a_2 + \\dots + a_{2007} = 2007^2.$  Subtracting these equations, we get\n\\[a_{2008} = 2008^2 - 2007^2 = (2008 + 2007)(2008 - 2007) = \\boxed{4015}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify\n\\[\\sin 70^\\circ \\cos 50^\\circ + \\sin 260^\\circ \\cos 280^\\circ.\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that $\\sin 70^\\circ = \\cos 20^\\circ,$ $\\sin 260^\\circ = -\\sin 80^\\circ = -\\cos 10^\\circ,$ and $\\cos 280^\\circ = \\cos 80^\\circ = \\sin 10^\\circ,$ so\n\\[\\sin 70^\\circ \\cos 50^\\circ + \\sin 260^\\circ \\cos 280^\\circ = \\cos 20^\\circ \\cos 50^\\circ - \\sin 10^\\circ \\cos 10^\\circ.\\]Then by product-to-sum,\n\\begin{align*}\n\\cos 20^\\circ \\cos 50^\\circ - \\sin 10^\\circ \\cos 10^\\circ &= \\frac{1}{2} (\\cos 70^\\circ + \\cos 30^\\circ) - \\frac{1}{2} \\cdot 2 \\sin 10^\\circ \\cos 10^\\circ \\\\\n&= \\frac{1}{2} \\cos 70^\\circ + \\frac{1}{2} \\cos 30^\\circ - \\frac{1}{2} \\sin 20^\\circ \\\\\n&= \\frac{1}{2} \\cos 30^\\circ = \\boxed{\\frac{\\sqrt{3}}{4}}.\n\\end{align*}"
-}

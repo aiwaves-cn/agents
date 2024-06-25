@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum $$\\frac{2^1}{4^1 - 1} + \\frac{2^2}{4^2 - 1} + \\frac{2^4}{4^4 - 1} + \\frac{2^8}{4^8 - 1} + \\cdots.$$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Notice that $$\\frac{2^{2^k}}{4^{2^k} - 1} = \\frac{2^{2^k} + 1}{4^{2^k} - 1} - \\frac{1}{4^{2^k} - 1} = \\frac{1}{2^{2^k}-1} - \\frac{1}{4^{2^k}-1} = \\frac{1}{4^{2^{k-1}}-1} - \\frac{1}{4^{2^k}-1}.$$Therefore, the sum telescopes as $$\\left(\\frac{1}{4^{2^{-1}}-1} - \\frac{1}{4^{2^0}-1}\\right) + \\left(\\frac{1}{4^{2^0}-1} - \\frac{1}{4^{2^1}-1}\\right) + \\left(\\frac{1}{4^{2^1}-1} - \\frac{1}{4^{2^2}-1}\\right) + \\cdots$$and evaluates to $1/(4^{2^{-1}}-1) = \\boxed{1}$."
-}

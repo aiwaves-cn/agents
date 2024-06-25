@@ -1,6 +1,0 @@
-{
-    "problem": "If we write $\\sqrt{2}+\\frac{1}{\\sqrt{2}} + \\sqrt{3} + \\frac{1}{\\sqrt{3}}$ in the form $\\dfrac{a\\sqrt{2} + b\\sqrt{3}}{c}$ such that $a$, $b$, and $c$ are positive integers and $c$ is as small as possible, then what is $a+b+c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The common denominator desired is $\\sqrt{2}\\cdot\\sqrt{3} = \\sqrt{6}$. So, this expression becomes $\\frac{\\sqrt{2}\\cdot(\\sqrt{2}\\cdot\\sqrt{3})+1\\cdot\\sqrt{3}+\\sqrt{3}\\cdot(\\sqrt{2}\\cdot\\sqrt{3})+1\\cdot\\sqrt{2}}{\\sqrt{6}}$. Simplifying this gives $\\frac{2\\sqrt{3}+\\sqrt{3}+3\\sqrt{2}+\\sqrt{2}}{\\sqrt{6}} = \\frac{4\\sqrt{2}+3\\sqrt{3}}{\\sqrt{6}}$. To rationalize, multiply numerator and denominator by $\\sqrt{6}$ to get $\\frac{4\\sqrt{2}\\sqrt{6}+3\\sqrt{3}\\sqrt{6}}{6}$. Simplifying yields ${\\frac{9\\sqrt{2}+8\\sqrt{3}}{6}}$, so the desired sum is $9+8+6=\\boxed{23}$."
-}

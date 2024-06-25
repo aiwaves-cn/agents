@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the slope and $y$-intercept of the line through the points $(7,8)$ and $(9,0)$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The slope of the line through $(7,8)$ and $(9,0)$ is $\\frac{8-0}{7-9}=\\frac{8}{-2}=-4$.  Thus, the line has equation $y=-4x+b$ for some $b$.  Since $B(9,0)$ lies on this line, we have $0=-4(9)+b $, so $b=36$.  Hence, the equation of the line is $y=-4x+36$, and the desired sum is $-4+36=\\boxed{32}$."
-}

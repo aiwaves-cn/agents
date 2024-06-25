@@ -1,6 +1,0 @@
-{
-    "problem": "Let the line $p$ be the perpendicular bisector of $A = (24, 7)$ and $B = (3, 4).$ Given that $AB$ meets $p$ at $C = (x, y),$ what is $2x - 4y$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The perpendicular bisector of $AB$ must meet $AB$ at its midpoint, so $C$ is the midpoint of $AB$. We use the midpoint formula to find that $C = \\left(\\frac{24 + 3}{2}, \\frac{7 + 4}{2} \\right) = \\left(\\frac{27}{2}, \\frac{11}{2} \\right).$ Therefore, $2x - 4y = 27 - 22 = \\boxed{5}.$"
-}

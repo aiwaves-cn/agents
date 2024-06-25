@@ -1,6 +1,0 @@
-{
-    "problem": "The first term of an arithmetic sequence is $2$. The sum of the third and the sixth terms is $25$. What is the fourth term?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Call the difference between two consecutive terms $x$. The third term is then $2+2x$, and the sixth term is $2+5x$. So, $25 = (2+2x) + (2+5x)$. Solving for $x$ gives $7x = 21$, or $x = 3$. So, the fourth term is $2 + 3\\cdot 3 = \\boxed{11}$."
-}

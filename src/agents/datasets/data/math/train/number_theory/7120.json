@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$ is an odd number, then find the largest integer that always divides the expression\\[(10x+2)(10x+6)(5x+5)\\]\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Rewrite the expression as\\[4(5x + 1)(5x + 3)(5x+5)\\]Since $x$ is odd, let $x = 2n-1$. The expression becomes\\[4(10n-4)(10n-2)(10n)=32(5n-2)(5n-1)(5n)\\]Consider just the product of the last three terms, $5n-2,5n-1,5n$, which are consecutive. At least one term must be divisible by $2$ and one term must be divisible by $3$ then. Also, since there is the $5n$ term, the expression must be divisible by $5$. Therefore, the minimum integer that always divides the expression must be $32 \\cdot 2 \\cdot 3 \\cdot 5 = \\boxed{960}$.\nTo prove that the number is the largest integer to work, consider when $x=1$ and $x = 5$. These respectively evaluate to be $1920,\\ 87360$; their greatest common factor is indeed $960$."
-}

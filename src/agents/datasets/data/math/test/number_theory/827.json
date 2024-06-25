@@ -1,6 +1,0 @@
-{
-    "problem": "How many days in a year have a $3$ in the tens digit of the day of the month?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "There are $12$ months in a year.  January, March, May, July, August, October, and December have $31$ days, so there are $7$ months with $2$ days that have a $3$ in the tens digit.  April, June, September, and November each have $1$ day with a $3$ in the tens place, and February has none.  Therefore, there are $7\\times2+4=\\boxed{18}$ days with a $3$ in the tens digit.\n\nAlternatively, this problem can be solved by subtraction.  There are $365$ days in a year, and $11$ months have $29$ days without a $3$ in the tens digit, and the last month has $28$ (assuming a non-leap year).  $365-(11\\times29)-28=\\boxed{18}$"
-}

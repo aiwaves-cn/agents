@@ -1,6 +1,0 @@
-{
-    "problem": "Let $Q$ be a polynomial \\[Q(x)=a_0+a_1x+\\cdots+a_nx^n,\\]where $a_0,\\ldots,a_n$ are nonnegative integers.  Given that $Q(1)=4$ and $Q(5)=152$, find $Q(6)$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "If $n \\ge 4,$ then $Q(5) \\ge 5^4 = 625,$ so $n \\le 3,$ and we can write\n\\[Q(x) = a_3 x^3 + a_2 x^2 + a_1 x + a_0.\\]We have that $Q(1) = a_3 + a_2 + a_1 + a_0 = 4,$ so $a_i \\le 4$ for all $i.$  Also,\n\\[Q(5) = 125a_3 + 25a_2 + 5a_1 + a_0 = 152.\\]Clearly, $a_3 \\le 1.$  If $a_3 = 0,$ then $25a_2 + 5a_1 + a_0 = 152.$  But $25a_2 + 5a_1 + a_0 \\le 25 \\cdot 4 + 5 \\cdot 4 + 4 = 125,$ so $a_3 = 1.$\n\nThen\n\\[25a_2 + 5a_1 + a_0 = 27.\\]Clearly, $a_2 \\le 1.$  If $a_2 = 0,$ then $5a_1 + a_0 = 27.$  But $5a_1 + a_0 \\le 5 \\cdot 4 + 4 = 24,$ so $a_2 = 1.$\n\nThen\n\\[5a_1 + a_0 = 2.\\]It follows that $a_1 = 0$ and $a_0 = 2,$ so\n\\[Q(x) = x^3 + x^2 + 2.\\]In particular, $Q(6) = 6^3 + 6^2 + 2 = \\boxed{254}.$"
-}

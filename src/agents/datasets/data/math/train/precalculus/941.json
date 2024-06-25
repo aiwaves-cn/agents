@@ -1,6 +1,0 @@
-{
-    "problem": "For each integer $n$ greater than 1, let $F(n)$ be the number of solutions of the equation $\\sin x = \\sin nx$ on the interval $[0, \\pi]$.  What is $\\sum_{n=2}^{2007} F(n)$?",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Note that $F(n)$ is the number of points at which the graphs of $y=\\sin x$ and $y=\\sin nx$ intersect on $[0,\\pi]$.  For each $n$, $\\sin nx \\geq 0$ on each interval $\\left[ \\frac{(2k-2) \\pi}{n}, \\frac{(2k-1) \\pi}{n} \\right]$ where $k $ is a positive integer and $2k-1 \\leq n$.  The number of such intervals is $\\frac{n}{2}$ if $n$ is even and $\\frac{n + 1}{2}$ if $n$ is odd.\n\nThe graphs intersect twice on each interval unless $\\sin x = 1 = \\sin nx$ at some point in the interval, in which case the graphs intersect once. This last equation is satisfied if and only if $n \\equiv 1\\pmod 4$ and the interval contains $\\frac{\\pi}{2}$.  If $n$ is even, this count does not include the point of intersection at $(\\pi,0)$.\n\nTherefore $F(n)= 2 \\cdot \\frac{n}{2} + 1=n+1$ if $n$ is even, $F(n)=\\frac{2(n+1)}{2}=n+1$ if $n \\equiv 3\\pmod 4$, and $F(n)=n$ if $n \\equiv 1\\pmod 4$.  Hence,\n\\[\\sum_{n=2}^{2007} F(n)=\\left(\\sum_{n=2}^{2007} (n+1)\\right) - \\left\\lfloor \\frac{2007-1}{4}\\right\\rfloor = \\frac{(2006)(3+2008)}{2}-501 = \\boxed{2{,}016{,}532}.\\]"
-}

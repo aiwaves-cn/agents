@@ -1,6 +1,0 @@
-{
-    "problem": "An element is randomly chosen from among the first $15$ rows of Pascal's Triangle. What is the probability that the value of the element chosen is $1$?\n\nNote:  The 1 at the top is often labelled the \"zeroth\" row of Pascal's Triangle, by convention. So to count a total of 15 rows, use rows 0 through 14.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "First we find the total number of elements in the first $15$ rows. The first row of Pascal's Triangle has one element, the second row has two, and so on. The first $15$ rows thus have $1+2+\\cdots+15$ elements. Instead of manually adding the summands, we can find the sum by multiplying the average of the first and last term $\\frac{1+15}{2}$ by the number of terms, $15$. The sum is $\\frac{16}{2}\\cdot15=8\\cdot15=120$, so there are $120$ elements. Now we find the number of ones in the first $15$ rows. Each row except the first has two ones, and the first row only has one. So there are $14\\cdot2+1=29$ ones. With $29$ ones among the $120$ possible elements we could choose, the probability is $\\boxed{\\frac{29}{120}}$."
-}

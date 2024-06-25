@@ -1,6 +1,0 @@
-{
-    "problem": "Consider this pattern where the positive, proper fractions with denominator $(n+1)$  are arranged in the $n$th row in a triangular formation. The 1st through 4th rows are shown; each row has one more entry than the previous row. What is the sum of the fractions in the 15th row?\n\n[asy]\nlabel(\"$\\frac{1}{2}$\",(0,0),S);\nlabel(\"$\\frac{1}{3}$\",(-5,-5),S);\nlabel(\"$\\frac{2}{3}$\",(5,-5),S);\nlabel(\"$\\frac{1}{4}$\",(-10,-10),S);\nlabel(\"$\\frac{2}{4}$\",(0,-10),S);\nlabel(\"$\\frac{3}{4}$\",(10,-10),S);\nlabel(\"$\\frac{1}{5}$\",(-15,-15),S);\nlabel(\"$\\frac{2}{5}$\",(-5,-15),S);\nlabel(\"$\\frac{3}{5}$\",(5,-15),S);\nlabel(\"$\\frac{4}{5}$\",(15,-15),S);\ndot((0,-22));\ndot((0,-20));\ndot((0,-24));\n[/asy]",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The fractions in the $n^{\\text{th}}$ row are $1/(n + 1)$, $2/(n + 1)$, $\\dots$, $n/(n + 1)$, so their sum is \\[\\frac{1 + 2 + \\dots + n}{n + 1}.\\]For all $n$, $1 + 2 + \\dots + n = n(n + 1)/2$, so \\[\\frac{1 + 2 + \\dots + n}{n + 1} = \\frac{n}{2}.\\]In particular, the sum of the fractions in the 15th row is $\\boxed{\\frac{15}{2}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The polynomial $x^3 - 2004 x^2 + mx + n$ has integer coefficients and three distinct positive zeros.  Exactly one of these is an integer, and it is the sum of the other two.  How many values of $n$ are possible?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a$ denote the zero that is an integer.  Because the coefficient of $x^3$ is 1, there can be no other rational zeros, so the two other zeros must be $\\frac{a}{2} \\pm r$ for some irrational number $r$.  The polynomial is then \\[(x-a) \\left( x - \\frac{a}{2} - r \\right) \\left( x - \\frac{a}{2} + r \\right) = x^3 - 2ax^2 + \\left( \\frac{5}{4}a^2 - r^2 \\right) x - a \\left( \\frac{1}{4}a^2 - r^2 \\right).\\]Therefore $a=1002$ and the polynomial is \\[x^3 - 2004 x^2 + (5(501)^2 - r^2)x - 1002((501)^2-r^2).\\]All coefficients are integers if and only if $r^2$ is an integer, and the zeros are positive and distinct if and only if $1 \\leq r^2\n\\leq 501^2 - 1 = 251000$.  Because $r$ cannot be an integer, there are $251000 - 500 = \\boxed{250500}$ possible values of $n$."
-}

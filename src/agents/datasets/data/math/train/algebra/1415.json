@@ -1,6 +1,0 @@
-{
-    "problem": "The difference between two perfect squares is 133.  What is the smallest possible sum of the two perfect squares?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We are given that $x^2 - y^2 = 133$, which is the same as $(x+y)(x-y) = 133$. $133$ has two pairs of factors: 1 and 133, and 7 and 19. So, either $x+y = 133$ and $x-y = 1$, or $x+y = 19$ and $x-y = 7$. It is clear that $x$ and $y$ will be much larger in the first case, because they must sum to 133, so, because we are trying to minimize $x^2 + y^2$, we can simply consider the second case. Through simple algebra, we find that $x = 13$ and $y = 6$. Thus, $x^2 + y^2$ is minimized as $169 + 36 = \\boxed{205}$."
-}

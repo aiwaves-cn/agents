@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P(x)$ be a nonzero polynomial such that $(x-1)P(x+1)=(x+2)P(x)$ for every real $x$, and $\\left(P(2)\\right)^2 = P(3)$. Find $P(\\tfrac72).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 1,$ we get\n\\[0 = 3P(1),\\]so $P(x)$ has a factor of $x - 1.$\n\nSetting $x = -2,$ we get\n\\[(-3) P(-1) = 0,\\]so $P(x)$ has a factor of $x + 1.$\n\nSetting $x = 0,$ we get\n\\[(-1) P(1) = 2P(0).\\]Since $P(1) = 0,$ $P(0) = 0,$ which means $P(0)$ has a factor of $x.$\n\nLet\n\\[P(x) = (x - 1)(x + 1)x Q(x).\\]Then\n\\[(x - 1)x(x + 2)(x + 1) Q(x + 1) = (x + 2)(x - 1)(x + 1)x Q(x).\\]This simplifies to $Q(x + 1) = Q(x).$\n\nThen\n\\[Q(1) = Q(2) = Q(3) = Q(4) = \\dotsb.\\]Since $Q(x) = Q(1)$ for infinitely many values of $x,$ $Q(x)$ must be a constant polynomial.  Let $Q(x) = c,$ so\n\\[P(x) = c(x - 1)(x + 1)x.\\]Then $P(2) = 6c$ and $P(3) = 24c,$ so\n\\[(6c)^2 = 24c.\\]Solving, keeping in mind that $c \\neq 0,$ we get $c = \\frac{2}{3}.$  Then $P(x) = \\frac{2}{3} (x - 1)(x + 1)x,$ and\n\\[P \\left( \\frac{7}{2} \\right) = \\frac{2}{3} \\cdot \\frac{5}{2} \\cdot \\frac{9}{2} \\cdot \\frac{7}{2} = \\boxed{\\frac{105}{4}}.\\]"
-}

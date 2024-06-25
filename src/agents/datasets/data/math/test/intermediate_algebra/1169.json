@@ -1,6 +1,0 @@
-{
-    "problem": "Find the equation of the directrix of the parabola $y = x^2.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Recall that a parabola is defined as the set of all points that are equidistant to the focus $F$ and the directrix.\n\nSince the parabola $y = x^2$ is symmetric about the $y$-axis, the focus is at a point of the form $(0,f).$  Let $y = d$ be the equation of the directrix.\n\n[asy]\nunitsize(1.5 cm);\n\npair F, P, Q;\n\nF = (0,1/4);\nP = (1,1);\nQ = (1,-1/4);\n\nreal parab (real x) {\n  return(x^2);\n}\n\ndraw(graph(parab,-1.5,1.5),red);\ndraw((-1.5,-1/4)--(1.5,-1/4),dashed);\ndraw(P--F);\ndraw(P--Q);\n\ndot(\"$F$\", F, NW);\ndot(\"$P$\", P, E);\ndot(\"$Q$\", Q, S);\n[/asy]\n\nLet $(x,x^2)$ be a point on the parabola $y = x^2.$  Then\n\\[PF^2 = x^2 + (x^2 - f)^2\\]and $PQ^2 = (x^2 - d)^2.$  Thus,\n\\[x^2 + (x^2 - f)^2 = (x^2 - d)^2.\\]Expanding, we get\n\\[x^2 + x^4 - 2fx^2 + f^2 = x^4 - 2dx^2 + d^2.\\]Matching coefficients, we get\n\\begin{align*}\n1 - 2f &= -2d, \\\\\nf^2 &= d^2.\n\\end{align*}From the first equation, $f - d = \\frac{1}{2}.$  Since $f^2 = d^2,$ $f = d$ or $f = -d.$  We cannot have $f = d,$ so $f = -d.$  Then $-2d = \\frac{1}{2},$ so $d = -\\frac{1}{4}.$\n\nThus, the equation of the directrix is $\\boxed{y = -\\frac{1}{4}}.$"
-}

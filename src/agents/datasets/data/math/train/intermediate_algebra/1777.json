@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the exact value of the expression\n\\[|\\pi - |\\pi - 7||.\\]Write your answer using only integers and $\\pi,$ without any absolute value signs.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since $\\pi < 7,$\n\\[|\\pi - 7| = 7 - \\pi.\\]Hence,\n\\[|\\pi - |\\pi - 7|| = |\\pi - (7 - \\pi)| = |2 \\pi - 7|.\\]We know that $\\pi \\approx 3.1416 < \\frac{7}{2},$ so\n\\[|2 \\pi - 7| = \\boxed{7 - 2 \\pi}.\\]"
-}

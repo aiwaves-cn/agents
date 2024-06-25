@@ -1,6 +1,0 @@
-{
-    "problem": "What is $(3+3+5)\\div2 - 1\\div2$ in simplest terms?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Note that the term inside the parenthesis must be simplified first, \\[(3+3+5) = 11.\\]This is substituted back into the original expression,  \\[11 \\div 2 - 1 \\div 2 .\\]Since $a\\div c - b \\div c = (a-b)\\div c$, we have \\[ 11 \\div 2 - 1 \\div 2 = (11-1) \\div 2 = 10 \\div 2 = \\boxed{5} .\\]"
-}

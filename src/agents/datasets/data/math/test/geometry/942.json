@@ -1,6 +1,0 @@
-{
-    "problem": "Two sides of a nondegenerate triangle measure 2'' and 4'' and the third side measures some whole number of inches. If a cube with faces numbered 1 through 6 is rolled, what is the probability, expressed as a common fraction, that the number showing on top could be the number of inches in the length of the third side of the triangle?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Using the Triangle Inequality, if two of the sides are 2\" and 4,\" that means the third side must be larger than 2\" but smaller than 6\". That means of the six possible rolls, only three (3, 4, 5) work. Therefore, our answer is $\\frac{3}{6} = \\boxed{\\frac{1}{2}}.$"
-}

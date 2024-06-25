@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $3x^7-x^6-7x^5+2x^3+4x^2-11$ is divided by $2x-4$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $2x - 4 = 2(x - 2),$ by the Remainder Theorem, we can find the remainder by setting $x = 2.$  Thus, the remainder is\n\\[3 \\cdot 2^7 - 2^6 - 7 \\cdot 2^5 + 2 \\cdot 2^3 + 4 \\cdot 2^2 - 11 = \\boxed{117}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$,$b$, and $c$ are positive real numbers such that $a(b+c) = 152$, $b(c+a) = 162$, and $c(a+b) = 170$, then find $abc.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Adding the given equations gives $2(ab+bc+ca) = 484$, so $ab+bc+ca = 242$. Subtracting from this each of the given equations yields $bc=90$, $ca=80$, and $ab=72$. It follows that $a^2b^2c^2 = 90 \\cdot 80 \\cdot 72 = 720^2$. Since $abc>0$, we have $abc =\\boxed{720}$."
-}

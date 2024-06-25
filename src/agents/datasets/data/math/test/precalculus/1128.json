@@ -1,6 +1,0 @@
-{
-    "problem": "The sets $A = \\{z : z^{18} = 1\\}$ and $B = \\{w : w^{48} = 1\\}$ are both sets of complex roots of unity. The set $C = \\{zw : z \\in A ~ \\mbox{and} ~ w \\in B\\}$ is also a set of complex roots of unity. How many distinct elements are in $C^{}_{}$?",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Note that $\\operatorname{lcm}(18,48) = 144.$  So,\n\\[(zw)^{144} = z^{144} w^{144} = (z^{18})^8 \\cdot (w^{48})^3 = 1.\\]Hence, every element in $C$ is a 144th root of unity.\n\nConversely, consider an arbitrary 144th root of unity, say\n\\[\\operatorname{cis} \\frac{2 \\pi k}{144}.\\]Note that $\\operatorname{cis} \\frac{2 \\pi (2k)}{18} \\in A$ and $\\operatorname{cis} \\frac{2 \\pi (-5k)}{48} \\in B,$ and their product is\n\\[\\operatorname{cis} \\frac{2 \\pi (2k)}{18} \\cdot \\operatorname{cis} \\frac{2 \\pi (-5k)}{48} = \\operatorname{cis} \\frac{2 \\pi (16k)}{144} \\cdot \\operatorname{cis} \\frac{2 \\pi (-15k)}{144} = \\operatorname{cis} \\frac{2 \\pi k}{144}.\\]Therefore, every 144th root of unity lies in $C,$ which means $C$ is precisely the set of 144th roots of unity.  It follows that $C$ contains $\\boxed{144}$ elements."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest multiple of 6 greater than 115?",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "Let $M$ be the smallest multiple of 6 greater than 115. $M$ is both a multiple of 2, which means its units digit must be even, and a multiple of 3, which means the sum of its digits is a multiple of 3.  By the first condition, consider multiples of 2 in increasing order: 116, 118, 120, 122, etc. 116 and 118 are not multiples of 3 (since 1+1+6=8 and 1+1+8=10), but 120 is a multiple of 3. Therefore, $M=\\boxed{120}$."
-}

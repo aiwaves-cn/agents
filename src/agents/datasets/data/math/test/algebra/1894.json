@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $6+\\frac{1}{2+\\frac{1}{6+\\frac{1}{2+\\frac{1}{6+\\cdots}}}}$. Your answer will be of the form $a+b\\sqrt{c}$ where no factor of $c$ (other than $1$) is a square. Find $a+b+c$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $x=6+\\frac{1}{2+\\frac{1}{6+\\frac{1}{2+\\frac{1}{6+\\cdots}}}}$. Then we have $x=6+\\frac{1}{2+\\frac{1}{x}}$. This means $x-6=\\frac{1}{2+\\frac{1}{x}}$ or $(x-6)\\left(2+\\frac{1}{x}\\right)=1$. Expanding the product gives $2x-12+1-\\frac{6}{x}=1$, or $2x-12-\\frac{6}{x}=0$. Multiply through by $x$ and divide by $2$ to find $x^2-6x-3=0$. Using the quadratic formula, we find $x=\\frac{6\\pm\\sqrt{(-6)^2-4(-3)(1)}}{2(1)}=\\frac{6\\pm\\sqrt{48}}{2}=3\\pm2\\sqrt{3}$. Looking at the original expression for $x$, we can see that it is greater than $6$. So we take the positive value $3+2\\sqrt{3}$ and get $a+b+c=3+2+3=\\boxed{8}$. (Remark: Notice that $3+2\\sqrt{3}\\approx 6.46\\ldots$ is greater than 6, as we said it must be.)"
-}

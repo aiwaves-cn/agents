@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways is it possible to arrange the digits of 1150 to get a four-digit multiple of 5?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "A multiple of 5 has to end in 0 or 5. If it ends in 0, the three remaining digits can go anywhere. There are 3! ways to arrange 3 digits, but we must divide by 2! to correct for overcounting since the 1's are identical. If the number ends in 5, the digit 0 can go in either of 2 places. Then the two remaining digits can go anywhere. There are 2! ways to arrange 2 digits, but we must divide this by 2! to correct for overcounting since the 1's are identical. So, there are $3!/2!+2\\cdot 2!/2!=3+2=\\boxed{5}$ possible ways to arrange the digits of 1150 to get a four-digit multiple of 5."
-}

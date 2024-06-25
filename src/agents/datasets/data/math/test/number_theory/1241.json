@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of $123_4 \\cdot 3_4$.  Express your answer in base 4.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We begin by multiplying the units digit: $3_4 \\times 3_4 = 9_{10} = 21_4$. So, we write down a $1$ and carry-over the $2$. Moving on to the next digit, we need to evaluate $2_4 \\times 3_4 + 2_4 = 8_{10} = 20_{4}$. Thus, the next digit is a $0$ and a $2$ is carried over. Finally, the leftmost digits are given by the operation $1_4 \\times 3_4 + 2_4 = 5_{10} = 11_4$. Writing this out, we have  $$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c}\n& & & & \\stackrel{2}{1} & \\stackrel{2}{2} & \\stackrel{}{3}_4 \\\\\n& & & \\times & & & 3_4 \\\\\n\\cline{4-7} & & & 1 & 1 & 0 & 1_4 \\\\\n\\end{array}$$So our final answer is $\\boxed{1101_4}$."
-}

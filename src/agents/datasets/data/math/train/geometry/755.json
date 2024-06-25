@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $XYZ$ with $\\angle YXZ = 90^\\circ$, we have $XY = 24$ and $YZ = 25$.  Find $\\tan Y$.",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "[asy]\n\npair X,Y,Z;\n\nX = (0,0);\n\nY = (24,0);\n\nZ = (0,7);\n\ndraw(X--Y--Z--X);\n\ndraw(rightanglemark(Y,X,Z,23));\n\nlabel(\"$X$\",X,SW);\n\nlabel(\"$Y$\",Y,SE);\n\nlabel(\"$Z$\",Z,N);\n\nlabel(\"$25$\",(Y+Z)/2,NE);\n\nlabel(\"$24$\",Y/2,S);\n\n[/asy]\n\nThe Pythagorean Theorem gives us $XZ= \\sqrt{YZ^2 - XY^2} = \\sqrt{625-576} = \\sqrt{49}=7$, so $\\tan Y = \\frac{XZ}{XY} = \\ \\boxed{\\frac{7}{24}}$."
-}

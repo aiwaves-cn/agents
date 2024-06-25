@@ -1,6 +1,0 @@
-{
-    "problem": "Rationalize the denominator of $\\frac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}$. The answer can be written as $\\frac{A+B\\sqrt{C}}{D}$, where $A$, $B$, $C$, and $D$ are integers, $D$ is positive, and $C$ is not divisible by the square of any prime. If the greatest common divisor of $A$, $B$, and $D$ is 1, find $A+B+C+D$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We rationalize the denominator by multiplying both the top and bottom by the conjugate of the denominator. $$\\frac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}} \\cdot \\frac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}=\\frac{5+2\\sqrt{5}\\cdot \\sqrt{2}+2}{5-2}=\\frac{7+2\\sqrt{10}}{3}$$ Therefore, $A+B+C+D=7+2+10+3=\\boxed{22}$."
-}

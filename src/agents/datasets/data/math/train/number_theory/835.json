@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $b$ is a positive integer greater than or equal to $2.$ When $197$ is converted to base $b$, the resulting representation has $4$ digits. What is the number of possible values for $b$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We would like to find $b$ for which $b^3 \\leq 197_{10} < b^4.$ We can see that this inequality is satisfied for $4\\leq b \\leq 5.$ So, there are $\\boxed{2}$ bases for which this holds."
-}

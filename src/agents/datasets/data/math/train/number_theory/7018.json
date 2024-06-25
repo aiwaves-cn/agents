@@ -1,6 +1,0 @@
-{
-    "problem": "Someone observed that $6! = 8 \\cdot 9 \\cdot 10$. Find the largest positive integer $n$ for which $n!$ can be expressed as the product of $n - 3$ consecutive positive integers.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The product of $n - 3$ consecutive integers can be written as $\\frac{(n - 3 + a)!}{a!}$ for some integer $a$. Thus, $n! = \\frac{(n - 3 + a)!}{a!}$, from which it becomes evident that $a \\ge 3$. Since $(n - 3 + a)! > n!$, we can rewrite this as $\\frac{n!(n+1)(n+2) \\ldots (n-3+a)}{a!} = n! \\Longrightarrow (n+1)(n+2) \\ldots (n-3+a) = a!$. For $a = 4$, we get $n + 1 = 4!$ so $n = 23$. For greater values of $a$, we need to find the product of $a-3$ consecutive integers that equals $a!$. $n$ can be approximated as $^{a-3}\\sqrt{a!}$, which decreases as $a$ increases. Thus, $n = \\boxed{23}$ is the greatest possible value to satisfy the given conditions."
-}

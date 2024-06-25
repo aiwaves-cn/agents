@@ -1,6 +1,0 @@
-{
-    "problem": "Mikka wants to order a pizza with two different toppings. He has 8 different toppings to choose from. How many different pizzas could he order?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are 8 choices of toppings, and we need to choose 2 distinct toppings. This is represented by the number of 2-element subsets of an 8 -element set. We use the binomial coefficient ${8 \\choose 2} = \\boxed{28}$ to compute this."
-}

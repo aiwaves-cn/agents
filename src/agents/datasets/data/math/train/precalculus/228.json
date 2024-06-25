@@ -1,6 +1,0 @@
-{
-    "problem": "Find the curve defined by the equation\n\\[r = \\frac{1}{\\sin \\theta - \\cos \\theta}.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From $r = \\frac{1}{\\sin \\theta - \\cos \\theta},$\n\\[r \\sin \\theta - r \\cos \\theta = 1.\\]Then $y - x = 1,$ which is the equation of a line.  The answer is $\\boxed{\\text{(A)}}.$\n\n[asy]\nunitsize(2 cm);\n\ndraw((-1.3,-0.3)--(0.3,1.3),red);\ndraw((-1.3,0)--(0.3,0));\ndraw((0,-0.3)--(0,1.3));\nlabel(\"$r = \\frac{1}{\\sin \\theta - \\cos \\theta}$\", (-1,1), red);\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Alexio has 100 cards numbered 1-100, inclusive, and places them in a box. Alexio then chooses a card from the box at random. What is the probability that the number on the card he chooses is a multiple of 2, 3 or 5? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are 50 numbers between 1-100 inclusive which are divisible by 2 --- all the even numbers. To avoid overcounting, we must find all the odd multiples of 3. Beginning with 3, the sequence of all such numbers is $3, 9, 15\\cdots99$, which gives $\\dfrac{99-3}{6}+1=17$ such numbers.\n\nFinally, we must find all odd multiples of 5 which are not divisible by 3. These are 5, 25, 35, 55, 65, 85, and 95. This gives a final count of $50+17+7=74$ numbers between 1-100 inclusive which are multiples of 2, 3, or 5.\n\nThe probability that Alexio selects one of these is therefore $\\boxed{\\dfrac{37}{50}}$."
-}

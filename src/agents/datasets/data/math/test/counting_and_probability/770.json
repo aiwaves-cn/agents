@@ -1,6 +1,0 @@
-{
-    "problem": "A deli sandwich consists of one type of bread, one type of meat, and one type of sauce. The deli offers wheat, rye, and white bread; ham, turkey, roast beef, and tuna; ranch and southwest chipotle sauce. Javier is allergic to rye bread, tuna, and southwest chipotle sauce. He tells the server to assemble a random deli sandwich. What is the probability that Javier will suffer an allergic reaction?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We find the probability that Javier does not suffer an allergic reaction, and subtract from 1. For Javier to not suffer an allergic reaction, the server must choose wheat or white bread; turkey, roast beef, or ham; and ranch sauce. The probability of this occurring is $\\frac{2}{3} \\times \\frac{3}{4} \\times \\frac{1}{2} = \\frac{1}{4}$. Therefore, the probability that Javier suffers an allergic reaction is $1-\\frac{1}{4} = \\boxed{\\frac{3}{4}}$."
-}

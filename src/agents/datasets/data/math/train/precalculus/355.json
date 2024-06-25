@@ -1,6 +1,0 @@
-{
-    "problem": "For some constants $a$ and $c,$\n\\[\\begin{pmatrix} a \\\\ -1 \\\\ c \\end{pmatrix} \\times \\begin{pmatrix} 7 \\\\ 3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -11 \\\\ -16 \\\\ 25 \\end{pmatrix}.\\]Enter the ordered pair $(a,c).$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[\\begin{pmatrix} a \\\\ -1 \\\\ c \\end{pmatrix} \\times \\begin{pmatrix} 7 \\\\ 3 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -3c - 5 \\\\ -5a + 7c \\\\ 3a + 7 \\end{pmatrix}.\\]Comparing entries, we get $-3c - 5 = -11,$ $-5a + 7c = -16,$ and $3a + 7 = 25.$  Solving, we find $(a,c) = \\boxed{(6,2)}.$"
-}

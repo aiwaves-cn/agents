@@ -1,6 +1,0 @@
-{
-    "problem": "The integers 195 and 61 are expressed in base 4 and added.  What is the resulting sum, expressed in base 4?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Since changing the base does not change the underlying quantity being represented, the sum of the base-4 representations of 195 and 61 is the same as the base-4 representation of 195+61.  Recognizing that 195+61=256 is a power of 4, we put 1 in the place whose value is $4^4$ and 0 in the remaining places to obtain the sum $\\boxed{10000}$."
-}

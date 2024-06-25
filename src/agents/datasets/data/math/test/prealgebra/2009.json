@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$, the length of side $BC$ is 2 units, the length of side $AC$ is 4 units and the measure of angle $C$ is 60 degrees. What is the length of side $AB$, in units? Express your answer in simplest radical form.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The right angle is either $\\angle A$ or $\\angle B$. It can't be $\\angle A$ since it must be opposite the longest side, and $BC<AC$, so $\\angle B$ is a right angle. By the Pythagorean Theorem, $AB^2+BC^2=AC^2$, or $AB^2=16-4=12$ and $AB=\\sqrt{12}=\\boxed{2\\sqrt3}$."
-}

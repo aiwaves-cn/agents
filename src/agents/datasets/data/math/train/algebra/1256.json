@@ -1,6 +1,0 @@
-{
-    "problem": "A stack of logs has 12 logs on the bottom row, and one less in each successive row, ending with three logs at the top. How many logs are in the stack?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We can manually add $3+4+\\cdots+12$, or we can use the formula for the sum of an arithmetic series. We multiply the average of the first and last terms $\\frac{3+12}{2}$ by the number of terms, $12-3+1=10$. The value of the sum is $\\frac{15}{2}\\cdot10=15\\cdot5=75$, so there are $\\boxed{75}$ logs in the stack."
-}

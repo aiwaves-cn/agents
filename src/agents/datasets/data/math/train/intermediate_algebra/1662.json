@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$, $b$ are nonzero real numbers such that $a^2+b^2=8ab$, find the value of $\\left|\\frac{a+b}{a-b}\\right|$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that \\[\n\\left|\\frac{a+b}{a-b}\\right| = \\sqrt{\\frac{(a+b)^2}{(a-b)^2}}\n= \\sqrt{\\frac{a^2+b^2+2ab}{a^2+b^2-2ab}} = \\sqrt{\\frac{10ab}{6ab}} =\n\\boxed{\\frac{\\sqrt{15}}{3}}.\n\\]"
-}

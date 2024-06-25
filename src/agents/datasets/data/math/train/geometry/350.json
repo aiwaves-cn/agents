@@ -1,6 +1,0 @@
-{
-    "problem": "The lengths of the sides of a triangle are 6 cm, 7 cm and 9 cm.  In a similar triangle whose perimeter is 110 cm, what is the length of the longest side, in centimeters?",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Let the ratio of side lengths between the similar triangle and the given triangle be $x$, so the lengths of the similar triangle are $6x$, $7x$, and $9x$.  We are given that $6x+7x+9x=110$; solving yields $x=\\frac{110}{(6+7+9)} = \\frac{110}{22}=5$.  The length of the longest side is thus $9x = 9 \\cdot 5 = \\boxed{45}$."
-}

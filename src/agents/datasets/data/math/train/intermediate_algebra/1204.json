@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $k$ for which the positive difference between the solutions of\n\\[5x^2 + 4x + k = 0\\]equals the sum of the squares of these solutions.  Enter all possible values of $k,$ separated by commas.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a$ and $b$ be the roots of this equation.  Then we want\n\\[|a - b| = a^2 + b^2.\\]Squaring both sides, we get\n\\[(a - b)^2 = (a^2 + b^2)^2.\\]By Vieta's formulas, $a + b = -\\frac{4}{5}$ and $ab = \\frac{k}{5}.$  Squaring the equation $a + b = -\\frac{4}{5},$ we get\n\\[a^2 + 2ab + b^2 = \\frac{16}{25}.\\]Then\n\\[(a - b)^2 = a^2 - 2ab + b^2 = (a + b)^2 - 4ab = \\frac{16}{25} - \\frac{4k}{5} = \\frac{16 - 20k}{25}.\\]Also,\n\\[a^2 + b^2 = \\frac{16}{25} - 2ab = \\frac{16}{25} - \\frac{2k}{5} = \\frac{16 - 10k}{25}.\\]Hence,\n\\[\\frac{16 - 20k}{25} = \\left( \\frac{16 - 10k}{25} \\right)^2.\\]This simplifies to $25k^2 + 45k - 36 = 0,$ which factors as $(5k - 3)(5k + 12) = 0.$  Thus, the possible values of $k$ are $\\boxed{\\frac{3}{5}, -\\frac{12}{5}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A := \\mathbb{Q} \\setminus \\{0,1\\}$ denote the set of all rationals other than 0 and 1. A function $f : A \\rightarrow \\mathbb{R}$ has the property that for all $x \\in A$,\n\\[\nf\\left( x\\right) + f\\left( 1 - \\frac{1}{x}\\right) = \\log\\lvert x\\rvert.\n\\]Compute the value of $f(2007)$.  Enter your answer in the form \"$\\log(a)$\", where $a$ is some number.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $g : A \\to A$ be defined by $g(x) := 1-1/x$; the key property is that \\[\ng(g(g(x))) = 1-\\frac{1}{1-\\frac{1}{1-\\frac{1}{x}}} = x.\n\\]The given equation rewrites as $f(x) + f(g(x)) = \\log|x|$. Substituting $x=g(y)$ and $x=g(g(z))$ gives the further equations $f(g(y)) + f(g) g(y)) = \\log|g(x)|$ and $f(g) g(z)) + f(z) = \\log|g(g(x))|.$ Setting $y$ and $z$ to $x$ and solving the system of three equations for $f(x)$ gives \\[\nf(x) = \\frac{1}{2} \\cdot \\left (\\log|x| - \\log|g(x)| + \\log|g(g(x))| \\right).\n\\]For $x=2007$, we have $g(x) = \\frac{2006}{2007}$ and $g(g(x)) = \\frac{-1}{2006}$, so that \\[\nf(2007) = \\frac{\\log|2007| - \\log\\left|\\frac{2006}{2007}\\right| + \\log\\left|\\frac{-1}{2006}\\right|}{2} = \\boxed{\\log\\left(\\frac{2007}{2006}\\right)}.\n\\]"
-}

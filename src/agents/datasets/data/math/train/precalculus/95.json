@@ -1,6 +1,0 @@
-{
-    "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} -\\frac{5}{2} \\\\ -1 \\end{pmatrix}\\]lie on a line.  Enter the equation of this line in the form \"$y = mx + b$\".",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.$\n\nFrom the formula of a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix}} \\mathbf{v} &= \\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix} \\\\\n&= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix}}{29} \\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix} \\\\\n&= \\frac{5x + 2y}{29} \\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} -\\frac{5}{2} \\\\ -1 \\end{pmatrix}.\n\\end{align*}Then\n\\[\\frac{5x + 2y}{29} = -\\frac{1}{2},\\]so $5x + 2y = -\\frac{29}{2}.$  Solving for $y,$ we find\n\\[\\boxed{y = -\\frac{5}{2} x - \\frac{29}{4}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $$1\\cdot 2^2+2\\cdot 3^2+3\\cdot4^2+\\cdots+19\\cdot 20^2.$$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the sum as\n\\begin{align*}\n0 \\cdot 1^2 + 1 \\cdot 2^2 + 3 \\cdot 4^2 + \\dots + 19 \\cdot 20^2 &= \\sum_{n = 1}^{20} (n - 1) n^2 \\\\\n&= \\sum_{n = 1}^{20} (n^3 - n^2) \\\\\n&= \\sum_{n = 1}^{20} n^3 - \\sum_{n = 1}^{20} n^2 \\\\\n&= \\frac{20^2 \\cdot 21^2}{4} - \\frac{20 \\cdot 21 \\cdot 41}{6} \\\\\n&= 20 \\cdot 21 \\cdot \\left( \\frac{20 \\cdot 21}{4} - \\frac{41}{6} \\right) \\\\\n&= \\boxed{41230}.\n\\end{align*}"
-}

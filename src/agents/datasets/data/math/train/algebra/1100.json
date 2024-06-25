@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p$ and $q$ be the two distinct solutions to the equation $$(x-5)(2x+9) = x^2-13x+40.$$What is $(p + 3)(q + 3)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We can expand the left side to simplify, or we might notice that $x^2-13x+40 = (x-5)(x-8).$ Thus, we see that $(x-5)(2x+9) = (x-5)(x-8).$ Simplifying, we have $(x-5)(2x+9) - (x-5)(x-8) = (x-5)(x+17) = 0.$ Therefore, $p$ and $q$ are 5 and -17, and $(p + 3)(q + 3) = (8) (-14) = \\boxed{-112}.$"
-}

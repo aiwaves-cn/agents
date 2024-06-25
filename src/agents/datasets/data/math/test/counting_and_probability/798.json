@@ -1,6 +1,0 @@
-{
-    "problem": "Six 6-sided dice are rolled. What is the probability that three of the dice show prime numbers and the rest show composite numbers?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{6}{3}=20$ ways to choose three of the dice to show prime numbers. Each roll is prime with probability $\\frac{1}{2}$ and composite with probability $\\frac{1}{3}$, so each arrangement of 3 prime numbers and 3 composite numbers occurs with probability $\\left(\\frac{1}{2}\\right)^{\\!3}\\left(\\frac{1}{3}\\right)^{\\!3}.$ Therefore, the probability that three dice show prime numbers and the rest show composite numbers is $$20\\cdot \\left(\\frac{1}{2}\\right)^{\\!3}\\left(\\frac{1}{3}\\right)^{\\!3}=\\boxed{\\frac{5}{54}}.$$"
-}

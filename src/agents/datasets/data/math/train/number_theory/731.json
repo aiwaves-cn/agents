@@ -1,6 +1,0 @@
-{
-    "problem": "Eleanor is making chocolate chip cookies for her friends. If she divides the cookies equally among $11$ of her friends, she'll have $4$ cookies left over. If she divides the cookies equally among $7$ of her friends, she'll have $1$ cookie left over. Assuming that Eleanor made fewer than $100$ cookies, what is the sum of the possible numbers of cookies that she could have made?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "If Eleanor made $N$ cookies, we know from the first requirement that $N = 11x + 4$ for some integer $x,$ and from the second requirement we know that $N = 7y+1$ for some integer $y.$ Therefore,  $$11x+4 = 7y+1\\Rightarrow 11x+3 = 7y$$If we list the possible values of $11x+3$ such that $N = 11x+4<100,$ we have $14,$ $25,$ $36,$ $47,$ $58,$ $69,$ $80,$ $91.$ The only members of this list divisible by $7$ are $14$ and $91,$ and so the possible values of $$11x+4 = 7y+1$$are $14+1 = 15$ and $91+1 = 92$, and thus the sum of the possible numbers of cookies is $15+92 =\\boxed{107}.$"
-}

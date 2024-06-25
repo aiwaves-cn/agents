@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all the odd integers between $500$ and $700$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We want to find the sum of the arithmetic series $501 + 503 + \\dots + 699$.\n\nThe common difference is 2, so the $n^{\\text{th}}$ term in this arithmetic sequence is $501 + 2(n - 1) = 2n + 499$.  If $2n + 499 = 699$, then $n = 100$, so the number of terms in this sequence is 100.\n\nThe sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $(501 + 699)/2 \\cdot 100 = \\boxed{60000}$."
-}

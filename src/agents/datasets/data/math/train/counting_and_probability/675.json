@@ -1,6 +1,0 @@
-{
-    "problem": "Four prime numbers are randomly selected without replacement from the first ten prime numbers. What is the probability that the sum of the four selected numbers is odd? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The first 10 prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, and 29.  The sum of four of these numbers is only odd if 2, the only even number on the list, is among them because the sum of four odd numbers is even. Once 2 is picked, there are $\\binom{9}{3}=\\frac{9!}{3!6!}=84$ ways to pick three numbers from the remaining nine. The total number of ways to select four prime numbers from the ten is $\\binom{10}{4}=\\frac{10!}{4!6!}=210$. Therefore, the probability that the sum of the four selected numbers is odd is $\\frac{84}{210}=\\boxed{\\frac{2}{5}}$."
-}

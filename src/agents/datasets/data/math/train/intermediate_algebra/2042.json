@@ -1,6 +1,0 @@
-{
-    "problem": "There exists a complex number of the form $z = x + yi,$ where $x$ and $y$ are positive integers, such that\n\\[z^3 = -74 + ci,\\]for some integer $c.$  Find $z.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Cubing the equation $z = x + yi,$ we get\n\\begin{align*}\nz^3 &= (x + yi)^3 \\\\\n&= x^3 + 3x^2 yi + 3xy^2 i^2 + y^3 i^3 \\\\\n&= x^3 + 3x^2 yi - 3xy^2 - y^3 i \\\\\n&= (x^3 - 3xy^2) + (3x^2 y - y^3)i.\n\\end{align*}Hence, $x^3 - 3xy^2 = -74.$  We then have\n\\[x(x^2 - 3y^2) = -74.\\]Thus, $x$ must be a divisor of 74, which means $x$ must be 1, 2, 37, or 74.  Checking these values, we find that the equation $x(x^2 - 3y^2) = -74$ has an integer solution in $y$ only when $x = 1,$ and that integer solution is $y = 5.$  Therefore, $z = \\boxed{1 + 5i}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to put 5 balls in 2 boxes if the balls are distinguishable but the boxes are not?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Since the boxes are indistinguishable, there are 3 possibilities for arrangements of the number of balls in each box.\n\nCase 1: 5 balls in one box, 0 in the other box. We must choose 5 balls to go in one box, which can be done in $\\binom{5}{5} = 1$ way.\n\nCase 2: 4 balls in one box, 1 in the other box. We must choose 4 balls to go in one box, which can be done in  $\\binom{5}{4} = 5$ ways.\n\nCase 3: 3 balls in one box, 2 in the other box. We must choose 3 balls to go in one box, which can be done in $\\binom{5}{3} = 10$ ways.\n\nThis gives us a total of $1 + 5 + 10 = \\boxed{16}$ arrangements."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $f(x) = 6x - 9$ and $g(x) = \\frac{x}{3} + 2$. Find $f(g(x)) - g(f(x))$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n$$\\begin{aligned} f(g(x)) &= f\\left(\\frac{x}{3} + 2\\right) = 6\\left(\\frac{x}{3} + 2\\right) - 9 \\\\\n&= 2x + 12 - 9\\\\\n&= 2x + 3\n\\end{aligned}$$and\n$$\\begin{aligned} g(f(x)) &= g(6x-9) = \\frac{6x-9}{3} + 2 \\\\\n&= 2x -3 +2\\\\\n&= 2x -1.\n\\end{aligned}$$So\n$$f(g(x)) - g(f(x)) = 2x+3 - (2x-1) = 2x + 3 - 2x +1 = \\boxed{4}.$$"
-}

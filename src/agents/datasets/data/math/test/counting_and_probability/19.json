@@ -1,6 +1,0 @@
-{
-    "problem": "The Smith family has 4 sons and 3 daughters.  In how many ways can they be seated in a row of 7 chairs such that all 3 girls sit next to each other?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We want to deal with the restriction first.\n\nWithout worrying about which specific boys and girls go in which seats, in how many ways can the girls sit together?\n\nThere are 5 basic configurations of boys and girls:  $$GGGBBBB, BGGGBBB, BBGGGBB,$$ $$BBBGGGB, BBBBGGG$$ where $B$ is a boy and $G$ is a girl.  Then, within each configuration, there are $4!$ ways in which we can assign the 4 sons to seats, and $3!$ ways in which we can assign the 3 daughters to seats.\n\nTherefore the number of possible seatings is $5 \\times 4! \\times 3! = \\boxed{720}$."
-}

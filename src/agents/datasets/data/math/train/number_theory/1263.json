@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest positive integer that must divide the sum of the first ten terms of any arithmetic sequence whose terms are positive integers?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The first 10 terms of any arithmetic sequence can be represented as $x$, $x+c$, $x+2c$, $\\ldots x+9c$, where $x$ is the first term and $c$ is the constant difference between each consecutive term. So, the sum of all of these terms will include $10x$ and $(1+2+\\ldots+9)c$, which equals $45c$. As a result, the sum of all the terms is $10x+45c$ and the greatest number we can factor out is $\\boxed{5}$, where we end up with $5(2x+9c)$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a = e^{4 \\pi i/5}$ and $b = e^{2 \\pi i/17}.$  Compute the value of the product\n\\[(a + b)(a + b^{16})(a^2 + b^2)(a^2 + b^{15})(a^3 + b^8)(a^3 + b^9)(a^4 + b^4)(a^4 + b^{13}).\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We see the factors $a + b,$ $a^2 + b^2,$ and $a^4 + b^4.$  Knowing that $a^5 = 1$ and $b^{17} = 1,$ we can write\n\\begin{align*}\na^3 + b^8 &= a^8 + b^8, \\\\\na + b^{16} &= a^{16} + b^{16}, \\\\\na^2 + b^{15} &= a^{32} + b^{32}, \\\\\na^4 + b^{13} &= a^{64} + b^{64}, \\\\\na^3 + b^9 &= a^{128} + b^{128}.\n\\end{align*}Hence, the given product is equal to\n\\begin{align*}\n&(a + b)(a^2 + b^2)(a^4 + b^4)(a^8 + b^8)(a^{16} + b^{16})(a^{32} + b^{32})(a^{64} + b^{64})(a^{128} + b^{128}) \\\\\n&= \\frac{a^2 - b^2}{a - b} \\cdot \\frac{a^4 - b^4}{a^2 - b^2} \\dotsm \\frac{a^{256} - b^{256}}{a^{128} - b^{128}} \\\\\n&= \\frac{a^{256} - b^{256}}{a - b} = \\frac{a - b}{a - b} = \\boxed{1}.\n\\end{align*}"
-}

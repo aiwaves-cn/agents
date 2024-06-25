@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $y = -4.9t^2 - 3.5t + 2.4$ relates the height $y$ (in meters) to the elapsed time $t$ (in seconds) for a ball thrown downward at 3.5 meters per second from a height of 2.4 meters from the ground. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest hundredth.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Setting $y$ equal to zero, we find the following: \\begin{align*}\n0& = -4.9t^2 -3.5t + 2.4\\\\\n& = 49t^2 + 35t - 24\\\\\n& = (7t-3)(7t + 8)\\\\\n\\end{align*}As $t$ must be positive, we can see that $t = \\frac{3}{7} \\approx \\boxed{0.43}.$"
-}

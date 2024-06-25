@@ -1,6 +1,0 @@
-{
-    "problem": "A student must choose a program of four courses from a list of courses consisting of English, Algebra, Geometry, History, Art, and Latin. This program must contain English and at least one mathematics course. In how many ways can this program be chosen?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The program must contain exactly $3$ of the $5$ classes that are not English. Therefore, there are $\\tbinom{5}{3} = 10$ valid programs if we ignore the mathematics requirement.\n\nSince there are $2$ math classes (Algebra and Geometry), $3$ of the $5$ classes besides English are not math. Therefore, there is only one program that satisfies the English requirement, but does not satisfy the mathematics requirement (the program consisting of English, History, Art, and Latin). It follows that the number of programs satisfying both requirements is $10-1=\\boxed{9}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $y$ such that $\\lceil y\\rceil+y=15.5?$",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "First, it must be true that $y$ is positive because, otherwise, $\\lceil y\\rceil+y$ would be negative. Since $\\lceil y\\rceil$ is an integer, $0.5$ must be the decimal component of $y$. Therefore, $y$ can be rewritten as $x+0.5$. $\\lceil y\\rceil$ can then also be rewritten as $x+1$. The equation can then be written as $x+1+x+0.5=15.5$. $x$ must then equal $7$, and $y$ can only be $\\boxed{7.5}$."
-}

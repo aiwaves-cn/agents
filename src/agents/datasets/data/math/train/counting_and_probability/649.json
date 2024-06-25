@@ -1,6 +1,0 @@
-{
-    "problem": "The numbers 1 through 25 are written on 25 cards with one number on each card. Sara picks one of the 25 cards at random. What is the probability that the number on her card will be a multiple of 2 or 5? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are $12$ even numbers and $5$ multiples of $5$ in the range $1$ to $25$.  However, we have double-counted $10$ and $20$, which are divisible by both $2$ and $5$.  So the number of good outcomes is $12+5-2=15$ and the probability is $\\frac{15}{25}=\\boxed{\\frac{3}{5}}$."
-}

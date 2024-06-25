@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest integer less than 100 for which the greatest common divisor of that integer and 12 is 4?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The prime factors of 12 are 2, 2, and 3. If the greatest common factor with 12 is 4, that means the other number is a multiple of 4 but not 6, 12. Since the other number must an even number (multiple of 2), we start with 98 and look at decreasing even numbers. 98 is not a multiple of 4. 96 is a multiple of 6 and 12. 94 is not a multiple of 4. So, the greatest integer less than 100 that satisfies the conditions is $\\boxed{92}$."
-}

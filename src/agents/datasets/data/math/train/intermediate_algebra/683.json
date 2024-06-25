@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ takes positive real numbers to real numbers, such that\n\\[xf(y) - yf(x) = f \\left( \\frac{x}{y} \\right)\\]for all positive real numbers $x$ and $y.$  Find all possible values of $f(100).$  Enter all possible values, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = y,$ we get\n\\[0 = f(1).\\]Setting $y = 1,$ we get\n\\[xf(1) - f(x) = f(x),\\]so $2f(x) = 0,$ which means $f(x) = \\boxed{0}$ for all $x.$  (Note that this function satisfies the given functional equation.)"
-}

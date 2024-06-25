@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of the line $x+y=b$ is a perpendicular bisector of the line segment from $(0,3)$ to $(6,9)$. What is the value of b?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If the line $x+y=b$ is the perpendicular bisector of the segment from $(0,3)$ to $(6,9)$, it must pass through the midpoint of this segment.  The midpoint is: $$\\left(\\frac{0+6}{2},\\frac{3+9}{2}\\right)=(3,6)$$This point lies on the line $x+y=b$, so we must have $3+6=b\\Rightarrow b=\\boxed{9}$."
-}

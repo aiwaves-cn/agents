@@ -1,6 +1,0 @@
-{
-    "problem": "Express the following sum as a common fraction: $$\\frac{1}{1\\cdot 2} + \\frac{1}{2\\cdot 3} + \\frac{1}{3\\cdot 4} + \\frac{1}{4\\cdot 5} + \\dots + \\frac{1}{9\\cdot 10}$$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Notice that each term can be written as \\[ \\frac{1}{n (n+1)} = \\frac{1}{n} -\\frac{1}{n+1}.\\] This can be obtained by setting  \\[\\frac{1}{n (n+1)} = \\frac{A}{n} + \\frac{B}{n+1} \\] for some unknown values of $A$ and $B,$ and then cross multiplying to solve for $A$ and $B.$ From this point, we see that $-\\frac{1}{n+1}$ of each term cancels with $\\frac{1}{n}$ of the next term, and so the sum is $1 - \\frac{1}{(9)+1} = \\boxed{\\frac{9}{10}}.$"
-}

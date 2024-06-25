@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer with exactly 14 positive divisors?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "If the prime factorization of an integer is given as $p_1^{a_1}\\cdot p_2^{a_2}\\cdot p_3^{a_3}\\cdot...$ the number of divisors will be: $$(a_1+1)(a_2+1)(a_3+1)...$$ So, we need to factor 14 in a similar manner to the expression above.  We can write: $$14=(13+1)=(1+1)(6+1)$$ The smallest integer in the first case will be $2^{13}$, and the smallest in the second case will be $2^6\\cdot 3^1=192$.  Therefore, $\\boxed{192}$ is clearly the smallest positive integer with exactly 14 positive divisors."
-}

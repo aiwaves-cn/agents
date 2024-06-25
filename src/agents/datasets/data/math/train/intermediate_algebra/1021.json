@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be a three-term arithmetic series where all the terms are positive, such that $abc = 64.$  Find the smallest possible value of $b.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[\\frac{a + b + c}{3} \\ge \\sqrt[3]{abc} = \\sqrt[3]{64} = 4.\\]Since $a,$ $b,$ $c$ form an arithmetic series, $\\frac{a + b + c}{3} = b,$ so $b \\ge 4.$\n\nEquality occurs when $a = b = c = 4,$ so the smallest possible value of $b$ is $\\boxed{4}.$"
-}

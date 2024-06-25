@@ -1,6 +1,0 @@
-{
-    "problem": "Faces $ABC$ and $BCD$ of tetrahedron $ABCD$ meet at an angle of $30^\\circ$. The area of face $ABC$ is $120$, the area of face $BCD$ is $80$, and $BC=10$. Find the volume of the tetrahedron.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Since the area $BCD=80=\\frac{1}{2}\\cdot10\\cdot16$, the perpendicular from $D$ to $BC$ has length $16$.\nThe perpendicular from $D$ to $ABC$ is $16 \\cdot \\sin 30^\\circ=8$. Therefore, the volume is $\\frac{8\\cdot120}{3}=\\boxed{320}$."
-}

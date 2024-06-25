@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. Sanchez's students were asked to add two positive integers. Juan subtracted by mistake and got 2. Maria mistakenly multiplied and got 120. What was the correct answer?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Call the two positive integers $x$ and $y$. Without loss of generality, assume $x > y$. We can write a system of equations to represent the information given in the problem:  \\begin{align*}\nx - y &= 2 \\\\\nx \\cdot y &= 120\n\\end{align*} Solving for $x$ in the first equation yields $x = y + 2$.\n\nSubstituting this into the second equation gives $(y + 2) \\cdot y = 120$, or $y^2 + 2y - 120 = 0$.\n\nThis quadratic equation factors into $(y + 12)(y-10) = 0$, so $y = 10$.\n\nGiven $y$, we can solve for $x$ to get $x = 12$, so $x + y = \\boxed{22}$."
-}

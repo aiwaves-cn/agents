@@ -1,6 +1,0 @@
-{
-    "problem": "For how many non-negative real values of $x$ is $\\sqrt{144-\\sqrt[3]{x}}$ an integer?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If we look at the smallest possible value for $x$, namely $x=0$, then the expression evaluates to $\\sqrt{144}=12$.  If we choose $x=144^3$ so that $\\sqrt[3]{x}=144$, and then the expression evaluates to $\\sqrt{144-144}=0$.  Similarly, values of $x$ may be chosen so the expression evaluates to any integer between 0 to 12.  For example, if we choose $x=143^3$ so that $\\sqrt[3]{x}=143$, the expression evaluates to $\\sqrt{144-143}=1$.  Thus, there are a total of $12-0+1=\\boxed{13}$ values of $x$."
-}

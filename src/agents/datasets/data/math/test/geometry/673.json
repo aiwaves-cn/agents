@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that there is a right triangle $\\triangle ABC$ such that the legs $AB$ and $BC$ have lengths $4\\sqrt{2}$ and $2,$ respectively. What is the length of the median $BM$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "First, it is probably a good idea to sketch our triangle: [asy]\npair A, B, C, M;\nA = (0, 5.657);\nB = (0, 0);\nC = (2, 0);\nM = 0.5 * A + 0.5 * C;\ndraw(A--B--C--cycle);\ndraw(B--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$4\\sqrt{2}$\", A--B, W);\nlabel(\"$2$\", B--C, S);\ndraw(rightanglemark(A,B,C,10));\n[/asy] Using the Pythagorean Theorem, we can find $AC^2 = AB^2 + BC^2 = 32 + 4 = 36,$ so $AC = 6.$ Since $\\triangle ABC$ is a right triangle, $BM = \\frac{1}{2} \\cdot AC = \\boxed{3}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the reciprocal of the sum of a half, a third, and a fourth?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We first add a half, a third, and a fourth: $\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4}$. To do this, we notice that the least common multiple of $2$, $3$, and $4$ is $12$. We can then rewrite each of the three fractions so that they have a denominator of $12$. Since $\\frac{1}{2} = \\frac{1}{2} \\cdot \\frac{6}{6} = \\frac{6}{12}$ , $\\frac{1}{3} = \\frac{1}{3} \\cdot \\frac{4}{4} = \\frac{4}{12}$ , and $\\frac{1}{4} = \\frac{1}{4} \\cdot \\frac{3}{3} = \\frac{3}{12}$, our sum is: $$\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} = \\frac{6}{12} + \\frac{4}{12} + \\frac{3}{12} = \\frac{6+4+3}{12} = \\frac{13}{12}.$$Taking the reciprocal of this sum, we have that our final answer is $\\boxed{\\frac{12}{13}}$."
-}

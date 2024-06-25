@@ -1,6 +1,0 @@
-{
-    "problem": "Line $l$ has equation $y = 4x - 7$, and line $m$ with equation $y = ax + b$ is perpendicular to line $l$ at $(2,1)$. What is the $y$-coordinate of the point on $m$ that has $x$-coordinate 6?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We find the equation of $m$ first. Since it is perpendicular to $l$, its slope must be $-1\\times(4)^{-1}$. Thus $a = -1/4$. Since $m$ also passes through the point $(2,1)$, we can find the equation of line $m$ by substituting 2 for $x$ and $1$ for $y$ in $m$'s point-slope form: $1 = 2\\times-\\frac{1}{4} + t$, where $(0,t)$ is the $y$-intercept of $m$. $t = \\frac{3}{2}$. Thus, at $x = 6$, the equation of line $m$ has y value $-6\\times\\frac{1}{4} + \\frac{3}{2} = \\boxed{0}$."
-}

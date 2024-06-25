@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram below, $\\overline{AB}\\parallel \\overline{CD}$ and $\\angle AXE$ is $108^\\circ$ less than 3 times $\\angle CYX$.  Find $\\angle BXY$.\n\n[asy]\n\nunitsize(1inch);\n\npair A,B,C,D,X,Y,EE,F;\n\nA = (0,0);\n\nB=(1,0);\n\nC = (0,0.8);\n\nD=(1,0.8);\n\nEE = (0.35,-0.3);\n\nF = (0.8,1.1);\n\ndraw(EE--F);\n\ndraw(A--B);\n\ndraw(C--D);\n\ndot(A);\n\ndot(B);\n\ndot(C);\n\ndot(D);\n\ndot(EE);\n\ndot(F);\n\nlabel(\"$E$\",EE,S);\n\nlabel(\"$F$\",F,N);\n\nX = intersectionpoint(A--B,EE--F);\n\nY = intersectionpoint(C--D,EE--F);\n\nlabel(\"$X$\",X,NNW);\n\nlabel(\"$Y$\",Y,NNW);\n\nlabel(\"$A$\",A,W);\n\nlabel(\"$B$\",B,E);\n\nlabel(\"$C$\",C,W);\n\nlabel(\"$D$\",D,E);\n\ndot(X);\n\ndot(Y);\n\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since $\\overline{AB}\\parallel\\overline{CD}$, we have $\\angle AXE = \\angle CYX$.  Letting $x = \\angle AXE$, we have $x = 3x - 108^\\circ$.  Solving this equation gives $x = 54^\\circ$.  We therefore have $\\angle BXY = \\angle AXE = \\boxed{54^\\circ}$."
-}

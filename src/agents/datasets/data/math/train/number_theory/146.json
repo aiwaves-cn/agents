@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence 12, 15, 18, 21, 51, 81, $\\ldots$ consists of all positive multiples of 3 that contain at least one digit that is a 1. What is the $50^{\\mathrm{th}}$ term of the sequence?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We know that the rule for divisibility by $3$ is that the digits of the number must add up to a multiple of $3$. So, it's clear that there are no other such two-digit numbers beyond the ones listed in the problem. Every number divisible by $3$ between $100$ and $199$ is in the sequence, so that gets us through the $39$th term of the sequence. Using the rule for divisibility by $3$, it is fairly simple to list out the remaining $11$ terms of the sequence: $201, 210, 213, 216, 219, 231, 261, 291, 312, 315, 318$. Thus, the $50$th term is $\\boxed{318}$."
-}

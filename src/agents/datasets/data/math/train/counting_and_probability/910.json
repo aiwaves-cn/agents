@@ -1,6 +1,0 @@
-{
-    "problem": "My school's Physics Club has 22 members.  It needs to select 3 officers: chairman, vice-chairman, and sergeant-at-arms.  Each person can hold at most one office.  Two of the members, Penelope and Quentin, will only be officers if the other one is also an officer.  (In other words, either both Penelope and Quentin are officers, or neither are.)  In how many ways can the club choose its officers?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "If both Penelope and Quentin are not officers, then there are 20 choices for chairman, 19 choices for vice-chairman, and 18 choices for sergeant-at-arms. There are $20\\times 19\\times 18=6840$ ways in this case.\n\nIf both are officers, Penelope can take one of the 3 positions, Quentin can take one of the 2 remaining positions, and one of the 20 remaining members can take the third position. There are $3\\times 2\\times 20=120$ ways in this case.\n\nThe answer is $6840+120=\\boxed{6960}.$"
-}

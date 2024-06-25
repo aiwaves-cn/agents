@@ -1,6 +1,0 @@
-{
-    "problem": "If $-3\\le x+5 \\le 8$ and $x$ is an integer, what is the sum of all the possible solutions?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We simplify the inequality by subtracting $5$ from all 3 values to yield \\[-8\\le x\\le 3.\\]  The integers in this range are the possible solutions, and to find their sum, notice that we can group certain numbers with their opposite to sum to 0, namely \\[(-3+3)+(-2+2)+(-1+1)+0=0.\\]  Since these numbers contribute a sum of $0$, we now only need to find the sum of the integers from $-8$ to $-4$.  Their sum is $-8-7-6-5-4=-30$, and hence our answer is $\\boxed{-30}$."
-}

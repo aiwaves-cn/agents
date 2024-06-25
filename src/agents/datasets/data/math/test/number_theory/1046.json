@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive factors of 4000 are multiples of 100?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We have $4000=2^5\\cdot5^3$. Any factor of 4000 is in the form $2^a\\cdot5^b$ for $0\\le a\\le5$ and $0\\le b\\le3$. Since $100=2^2\\cdot5^2$, we must count the factors of 4000 that have $a\\ge2$ and $b\\ge2$. That gives $(5-2+1)(3-2+1)=4\\cdot2=\\boxed{8}$ factors."
-}

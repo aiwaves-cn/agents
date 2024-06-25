@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A,$ $R,$ $M,$ and $L$ be positive real numbers such that\n\\begin{align*}\n\\log_{10} (AL) + \\log_{10} (AM) &= 2, \\\\\n\\log_{10} (ML) + \\log_{10} (MR) &= 3, \\\\\n\\log_{10} (RA) + \\log_{10} (RL) &= 4.\n\\end{align*}Compute the value of the product $ARML.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the given equations as\n\\begin{align*}\n\\log_{10} (A^2 ML) &= 2, \\\\\n\\log_{10} (RM^2 L) &= 3, \\\\\n\\log_{10} (AR^2 L) &= 4.\n\\end{align*}Then $A^2 ML = 10^2,$ $RM^2 L = 10^3,$ and $AR^2 L = 10^4.$  Multiplying these equations, we get $A^3 R^3 M^3 L^3 = 10^9,$ so $ARML = 10^3 = \\boxed{1000}.$"
-}

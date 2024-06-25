@@ -1,6 +1,0 @@
-{
-    "problem": "Given $\\mathbf{A} = \\begin{pmatrix} 0 & 1 \\\\ -1 & 0 \\end{pmatrix},$ there exist positive real numbers $x$ and $y$ such that\n\\[(x \\mathbf{I} + y \\mathbf{A})^2 = \\mathbf{A}.\\]Enter the ordered pair $(x,y).$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We have that\n\\begin{align*}\n(x \\mathbf{I} + y \\mathbf{A}) &= \\left( x \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} + y \\begin{pmatrix} 0 & 1 \\\\ -1 & 0 \\end{pmatrix} \\right)^2 \\\\\n&= \\begin{pmatrix} x & y \\\\ -y & x \\end{pmatrix}^2 \\\\\n&= \\begin{pmatrix} x & y \\\\ -y & x \\end{pmatrix} \\begin{pmatrix} x & y \\\\ -y & x \\end{pmatrix} \\\\\n&= \\begin{pmatrix} x^2 - y^2 & 2xy \\\\ -2xy & x^2 - y^2 \\end{pmatrix}.\n\\end{align*}We want this to equal $\\mathbf{A} = \\begin{pmatrix} 0 & 1 \\\\ -1 & 0 \\end{pmatrix},$ so comparing coefficients, we get $x^2 - y^2 = 0$ and $2xy = 1.$  Then $x^2 = y^2.$  Since $x$ and $y$ are positive, $x = y.$  Then $2x^2 = 1,$ or $x^2 = \\frac{1}{2},$ so $(x,y) = \\boxed{\\left( \\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}} \\right)}.$"
-}

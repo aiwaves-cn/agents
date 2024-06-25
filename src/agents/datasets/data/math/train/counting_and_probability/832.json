@@ -1,6 +1,0 @@
-{
-    "problem": "How many pairs of positive integers $(m,n)$ satisfy $m^2 + n < 22?$",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "It may not be obvious how to proceed with this problem, but a little experimentation might lead you to determine the possible values of $m.$\n\nSince $0 < m^2 < 22,$ we can see that $m$ must be one of $1,$ $2,$ $3,$ or $4.$ So let's use these as our cases.\n\nCase 1: When $m=1$, we must have $n < 22-1 = 21.$ Thus there are $20$ possible choices for $n$ when $m=1.$\nCase 2: When $m=2,$ we must have $n < 22-4 = 18.$ Thus there are $17$ possible choices for $n$ when $m=2.$\nCase 3: When $m=3,$ we must have $n < 22-9 = 13.$ Thus there are $12$ possible choices for $n$ when $m=3.$\nCase 4: When $m=4,$ we must have $n < 22-16 = 6.$ Thus there are $5$ possible choices for $n$ when $m=4.$\n\nSo to get the total number of pairs of positive integers satisfying the inequality, we add up all of our possible cases, and see that there are $20 + 17 + 12 + 5 = \\boxed{54}$ possible pairs."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many digits are in the value of the following expression: $2^{2001}\\times 5^{1950}\\div 4^{27}$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We have \\begin{align*}\n2^{2001}\\times5^{1950}\\div4^{27}&= 2^{2001}\\div2^{54}\\times5^{1950} \\\\\n&= 2^{1947}\\times5^{1950}\\\\\n&= (2\\times5)^{1947}\\times5^3 \\\\\n&= 125\\times10^{1947}\n\\end{align*}Since $125\\times10^{1947}$ has three non-zero digits followed by 1947 zeros, it has a total of $\\boxed{1950}$ digits."
-}

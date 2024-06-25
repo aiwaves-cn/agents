@@ -1,6 +1,0 @@
-{
-    "problem": "Find the greatest root of $f(x) = 15x^4-13x^2+2$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We notice that $f(x)$ has only even powers of $x,$ so if we let $y = x^2,$ we can write\n$$f(x)=15x^4-13x^2+2=15y^2-13y+2 = (3y-2)(5y-1) .$$Substituting back $x^2$ for $y$ gives us $$f(x)  = (3x^2-2)(5x^2-1).$$Then the roots of $f(x)$ are the roots of $3x^2-2$ and $5x^2-1$, which are $\\sqrt{\\frac{2}{3}}, -\\sqrt{\\frac{2}{3}}, \\frac{1}{\\sqrt{5}},$ and $ -\\frac{1}{\\sqrt{5}}$. Therefore, the greatest root is $\\sqrt{\\frac 23} = \\boxed{\\frac{\\sqrt{6}}{3}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The measures of angles $A$ and $B$ are both positive, integer numbers of degrees. The measure of angle $A$ is a multiple of the measure of angle $B$, and angles $A$ and $B$ are complementary angles. How many measures are possible for angle $A$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The given information tells us that $A = 90^\\circ -B$ and $A=kB$ for some $k\\ge1$.  Therefore, we have $kB = 90^\\circ - B$. This simplifies to $(k+1)B=90^\\circ$. $k+1$ can be any factor of $90$ except one, since $k+1\\ge2$. $90=2\\cdot3^2\\cdot5$ has $2\\cdot3\\cdot2=12$ factors, so there are 11 possible values of $k$. Each value of $k$ uniquely determines the value of $B$ and therefore the value of $A$, so there are $\\boxed{11}$ possible measures for $A$."
-}

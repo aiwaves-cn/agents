@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{b} = \\begin{pmatrix} -1 \\\\ 4 \\\\ 6 \\end{pmatrix}$ and $\\mathbf{c} = \\begin{pmatrix} 2 \\\\ -7 \\\\ -10 \\end{pmatrix}.$  Find the maximum value of\n\\[\\mathbf{c} \\cdot (\\mathbf{a} \\times \\mathbf{b}),\\]where $\\mathbf{a}$ is a unit vector.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "By the scalar triple product,\n\\begin{align*}\n\\mathbf{c} \\cdot (\\mathbf{a} \\times \\mathbf{b}) &= \\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}) \\\\\n&= \\mathbf{a} \\cdot \\left( \\begin{pmatrix} -1 \\\\ 4 \\\\ 6 \\end{pmatrix} \\times \\begin{pmatrix} 2 \\\\ -7 \\\\ -10 \\end{pmatrix} \\right) \\\\\n&= \\mathbf{a} \\cdot \\begin{pmatrix} 2 \\\\ 2 \\\\ -1 \\end{pmatrix}.\n\\end{align*}Note that\n\\[\\left| \\mathbf{a} \\cdot \\begin{pmatrix} 2 \\\\ 2 \\\\ -1 \\end{pmatrix} \\right| \\le \\|\\mathbf{a}\\| \\left\\| \\begin{pmatrix} 2 \\\\ 2 \\\\ -1 \\end{pmatrix} \\right\\| \\le 3.\\]Equality occurs when $\\mathbf{a}$ is the unit vector pointing in the direction of $\\begin{pmatrix} 2 \\\\ 2 \\\\ -1 \\end{pmatrix},$ which is $\\begin{pmatrix} 2/3 \\\\ 2/3 \\\\ -1/3 \\end{pmatrix},$ so the maximum value we seek is $\\boxed{3}.$"
-}

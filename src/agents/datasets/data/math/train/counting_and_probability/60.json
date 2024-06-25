@@ -1,6 +1,0 @@
-{
-    "problem": "A plane is uniquely determined by three non-collinear points. What is the maximum possible number of planes that can be determined by 12 points in space?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{12}{3} = \\boxed{220}$ ways to pick any 3 points, which we assume to determine a unique plane."
-}

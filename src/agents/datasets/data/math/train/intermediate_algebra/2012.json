@@ -1,6 +1,0 @@
-{
-    "problem": "The functions $p(x),$ $q(x),$ and $r(x)$ are all invertible.  We set\n\\[f = q \\circ p \\circ r.\\]Which is the correct expression for $f^{-1}$?\n\nA. $r^{-1} \\circ q^{-1} \\circ p^{-1}$\n\nB. $p^{-1} \\circ q^{-1} \\circ r^{-1}$\n\nC. $r^{-1} \\circ p^{-1} \\circ q^{-1}$\n\nD. $q^{-1} \\circ p^{-1} \\circ r^{-1}$\n\nE. $q^{-1} \\circ r^{-1} \\circ p^{-1}$\n\nF. $p^{-1} \\circ r^{-1} \\circ q^{-1}$\n\nEnter the letter of the correct expression for $f^{-1}.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = f(x) = q(p(r(x))).$  Applying $q^{-1},$ we get\n\\[q^{-1}(y) = p(r(x)).\\]Applying $p^{-1},$ we get\n\\[p^{-1}(q^{-1}(y)) = r(x).\\]Finally, applying $r^{-1}(x),$ we get\n\\[r^{-1}(p^{-1}(q^{-1}(y))) = x.\\]Hence, $f^{-1} = r^{-1} \\circ p^{-1} \\circ q^{-1}.$  The correct answer is $\\boxed{\\text{C}}.$"
-}

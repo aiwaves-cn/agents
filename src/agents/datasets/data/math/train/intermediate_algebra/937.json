@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest real number $\\lambda$ such that\n\\[a^2 + b^2 + c^2 + d^2 \\ge ab + \\lambda bc + cd\\]for all nonnegative real numbers $a,$ $b,$ $c,$ $d.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[f(a,b,c,d) = a^2 + b^2 + c^2 + d^2 - (ab + \\lambda bc + cd).\\]For fixed values of $b,$ $c,$ and $d,$ $f(a,b,c,d)$ is minimized when $a = \\frac{b}{2}.$  Similarly, for fixed values of $a,$ $b,$ $c,$ $f(a,b,c,d)$ is minimized when $d = \\frac{c}{2}.$  Thus, it suffices to look at the case where $a = \\frac{b}{2}$ and $d = \\frac{c}{2},$ in which case the given inequality becomes\n\\[\\frac{5b^2}{4} + \\frac{5c^2}{4} \\ge \\frac{b^2}{2} + \\lambda bc + \\frac{c^2}{2},\\]or $5b^2 + 5c^2 \\ge 2b^2 + 4 \\lambda bc + 2c^2.$  This reduces to\n\\[3b^2 + 3c^2 \\ge 4 \\lambda bc.\\]Taking $b = c = 1,$ we find $6 \\ge 4 \\lambda,$ so $\\lambda \\le \\frac{3}{2}.$\n\nOn the other hand, if $\\lambda = \\frac{3}{2},$ then the inequality above becomes\n\\[3b^2 + 3c^2 \\ge 6bc,\\]which holds due to AM-GM.  Therefore, the largest such $\\lambda$ is $\\boxed{\\frac{3}{2}}.$"
-}

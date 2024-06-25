@@ -1,6 +1,0 @@
-{
-    "problem": "There are an infinite number of vectors $\\mathbf{v}$ such that\n\\[\\begin{pmatrix} 1 \\\\ 2 \\\\ -5 \\end{pmatrix} \\times \\mathbf{v} = \\begin{pmatrix} 90 \\\\ 30 \\\\ 30 \\end{pmatrix}.\\]Find the vector $\\mathbf{v}$ that has the smallest magnitude.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{v} = \\begin{pmatrix} a \\\\ b \\\\ c \\end{pmatrix}.$  Then\n\\[\\begin{pmatrix} 1 \\\\ 2 \\\\ -5 \\end{pmatrix} \\times \\begin{pmatrix} a \\\\ b \\\\ c \\end{pmatrix} = \\begin{pmatrix} 90 \\\\ 30 \\\\ 30 \\end{pmatrix},\\]so\n\\[\\begin{pmatrix} 5b + 2c \\\\ -5a - c \\\\ -2a + b \\end{pmatrix} = \\begin{pmatrix} 90 \\\\ 30 \\\\ 30 \\end{pmatrix}.\\]Comparing the components, we get\n\\begin{align*}\n5b + 2c &= 90, \\\\\n-5a - c &= 30, \\\\\n-2a + b &= 30.\n\\end{align*}From the second equation, $c = -5a - 30.$  From the third equation, $b = 2a + 30.$  We want to minimize the magnitude of $\\mathbf{v},$ which is equivalent to minimizing\n\\[a^2 + b^2 + c^2 = a^2 + (2a + 30)^2 + (-5a - 30)^2 = 30a^2 + 420a + 1800.\\]Completing the square, we get $30 (a + 7)^2 + 330,$ so the magnitude is minimized when $a = -7.$  Then $b = 16$ and $c = 5,$ so the vector $\\mathbf{v}$ we seek is $\\boxed{\\begin{pmatrix} -7 \\\\ 16 \\\\ 5 \\end{pmatrix}}.$"
-}

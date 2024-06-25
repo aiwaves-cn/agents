@@ -1,6 +1,0 @@
-{
-    "problem": "Robert likes chocolate milk, so he decides to visit the milk bottling plant every day for a week to get the free samples. Unfortunately for him, the bottling plant sometimes bottles regular milk instead of chocolate milk, so each day the plant has a 2/3 chance of bottling chocolate milk. What is the probability that the bottling plant bottles chocolate milk exactly 4 of the 5 days he visits?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{5}{4}=5$ ways to choose which 4 of the 5 days the plant will bottle chocolate milk. For each choice, there is a probability of $\\left( \\frac{2}{3} \\right)^4 \\left( \\frac{1}{3} \\right)^1$ that on those 4 days they will be bottling chocolate milk and on the other day they will not. Therefore, the total probability on that exactly 4 of the 5 days they will be bottling chocolate milk is $5 \\left( \\frac{2}{3} \\right)^4 \\left( \\frac{1}{3} \\right)^1 = \\boxed{\\frac{80}{243}}$."
-}

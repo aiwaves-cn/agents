@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\left\\lceil\\left(\\frac{7}{4}\\right)^2\\right\\rceil$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The expression inside the ceiling function evaluates to $$\\left(\\frac{7}{4}\\right)^2=\\frac{49}{16}=3+\\frac{1}{16} $$Because $0\\le\\frac1{16}<1$, we have $$ \\left\\lceil\\left(\\frac{7}{4}\\right)^2\\right\\rceil = \\left\\lceil 3 + \\frac1{16} \\right\\rceil = \\boxed{4}.$$"
-}

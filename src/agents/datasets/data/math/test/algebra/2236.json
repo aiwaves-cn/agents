@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $f(2)=5$ and $f^{-1}(x+4)=2f^{-1}(x)+1$ for all $x$, find $f^{-1}(17)$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Note that $f(2)=5$ implies $f^{-1}(5)=2$. Applying $f^{-1}(x+4)=2f^{-1}(x)+1$ repeatedly, we have: \\begin{align*}\nf^{-1}(5)&=2 \\\\\n\\Rightarrow \\quad f^{-1}(9)&=2f^{-1}(5)+1=5 \\\\\n\\Rightarrow \\quad f^{-1}(13)&=2f^{-1}(9)+1=11 \\\\\n\\Rightarrow \\quad f^{-1}(17)&=2f^{-1}(13)+1=23.\n\\end{align*}So $f^{-1}(17)=\\boxed{23}$."
-}

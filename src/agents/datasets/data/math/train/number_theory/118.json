@@ -1,6 +1,0 @@
-{
-    "problem": "You have a number of gold coins that you were going to distribute equally among your 11 best friends. However, after dividing your gold coins into 11 equal piles, you realize that if you give away all your gold coins, 2 people will receive an extra gold coin. You have less than 100 gold coins. What is the largest number of gold coins you could have to cause this to happen?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "If the two people received one fewer coin, then the number of gold coins you would have would be a multiple of 11. However, there are two extra coins there, so the number of gold coins you have can be written in the form $11k+2$. We have that $11k+2 < 100$, so $k < \\frac{98}{11}$. Since $k$ is the number of gold coins each person is receiving, $k$ must be an integer, so we have that $k = 8$. Therefore, the largest number of gold coins you could have is $11(8) + 2 = \\boxed{90}$."
-}

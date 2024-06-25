@@ -1,6 +1,0 @@
-{
-    "problem": "In any isosceles triangle $ABC$ with $AB=AC$, the altitude $AD$ bisects the base $BC$ so that $BD=DC$.\n\nDetermine the area of $\\triangle ABC$.\n\n[asy]\ndraw((0,0)--(14,0)--(7,24)--cycle,black+linewidth(1));\ndraw((7,24)--(7,0),black+linewidth(1)+dashed);\ndraw((7,0)--(7,1)--(6,1)--(6,0)--cycle,black+linewidth(1));\ndraw((5.5,-4)--(0,-4),black+linewidth(1));\ndraw((5.5,-4)--(0,-4),EndArrow);\ndraw((8.5,-4)--(14,-4),black+linewidth(1));\ndraw((8.5,-4)--(14,-4),EndArrow);\nlabel(\"$A$\",(7,24),N);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(14,0),SE);\nlabel(\"$D$\",(7,0),S);\nlabel(\"25\",(0,0)--(7,24),NW);\nlabel(\"25\",(7,24)--(14,0),NE);\nlabel(\"14\",(7,-4));\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The altitude of an isosceles triangle splits the base into two congruent segments, so $BD = DC = 7$.  Applying the Pythagorean Theorem to $\\triangle ABD$, or remembering the 7-24-25 Pythagorean triple, gives $AD = 24$, so the area of $\\triangle ABC$ is $(24)(14)/2 = \\boxed{168}$."
-}

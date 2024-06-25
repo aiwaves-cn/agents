@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$, $b$, and $c$ are positive integers satisfying $ab+c = bc+a = ac+b = 41$, what is the value of $a+b+c$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The first equality implies that $ab+c-bc-a = b(a-c)-(a-c) = 0 \\Rightarrow (b-1)(a-c) = 0$. By symmetry, we have: \\begin{align*}\n(b-1)(a-c) &= 0 \\\\\n(c-1)(b-a) &= 0 \\\\\n(a-1)(c-b) &= 0\n\\end{align*} By inspection, at least one of the following is true: $a=b$, $b=c$, or $c=a$. Without loss of generality, assume $a=b$. Substituting this into the first of our original equations, we obtain $a^2+c = ac+a \\Rightarrow a^2+c = a(c+1)=41$. Since $41$ is prime and $a$ and $c$ are positive integers, either $a=1$ or $a=41$. Note that if $a=41$, then $c+1 = 1 \\Rightarrow c=0$, a contradiction with the fact that $c$ is positive. Thus, $a=b=1 \\Rightarrow c+1=41 \\Rightarrow c=40$. Therefore $a+b+c = \\boxed{42}$"
-}

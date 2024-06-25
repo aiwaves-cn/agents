@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the smallest positive integer $x$ greater than 9 such that\n\\[\\lfloor x \\rfloor - 19 \\left\\lfloor \\frac{x}{19} \\right\\rfloor = 9 = \\lfloor x \\rfloor - 89 \\left\\lfloor \\frac{x}{89} \\right\\rfloor.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $q$ and $r$ be the remainder when $x$ is divided by 19, so $x = 19q + r,$ where $0 \\le r \\le 18.$  Then\n\\begin{align*}\n\\lfloor x \\rfloor - 19 \\left\\lfloor \\frac{x}{19} \\right\\rfloor &= 19q + r - 19 \\left\\lfloor \\frac{19q + r}{19} \\right\\rfloor \\\\\n&= 19q + r - 19 \\left\\lfloor q + \\frac{r}{19} \\right\\rfloor \\\\\n&= 19q + r - 19q \\\\\n&= r.\n\\end{align*}Thus, when $x$ is divided by 19, the remainder is 9.  In other words, $x$ is 9 more than a multiple of 19.\n\nSimilarly, when $x$ is 9 more than a multiple of 89.  Since 19 and 89 are relatively prime, $x$ is 9 greater than a multiple of $19 \\cdot 89 = 1691.$  Since $x$ is greater than 9, the smallest possible value of $x$ is $1691 + 9 = \\boxed{1700}.$"
-}

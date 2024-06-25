@@ -1,6 +1,0 @@
-{
-    "problem": "The rightmost non-zero digit in  \\begin{align*}\n&(1001001)(1010101)+(989899)(1001001)\\\\\n&\\qquad -(1001)(989899)-(1010101)(1001)\n\\end{align*}is $a$, and it is followed by $b$ zeroes. Find the ordered pair $(a,b)$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can factor the given product using Simon's Favorite Factoring Trick. Factor $1001001$ out of the first two terms and $-1001$ out of the second two terms to find $$(1001001)(1010101+989899)-1001(989899+1010101).$$Since $1010101+989899=2000000$, we can complete the factoring as \\begin{align*}(1001001-1001)(2000000)&=(1000000)(2000000)\\\\&=2000000000000.\\end{align*}Thus we can see that the rightmost non-zero digit $a=2$, and it is followed by 12 zeroes so $b=12$. Thus $(a,b)=\\boxed{(2,12)}$."
-}

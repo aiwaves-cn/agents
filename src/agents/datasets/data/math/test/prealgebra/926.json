@@ -1,6 +1,0 @@
-{
-    "problem": "Everyone in a class of 35 students takes math and history. 8 students received an A in history, 15 received an A in math and 3 received an A in both courses. How many students did not receive an A in either course?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Adding the numbers of students with A's in history and math gives $8+15 = 23$.  But this counts the 3 kids who got A's in both twice, so there are $23-3=20$ different students total who received an A in at least one of the courses.  That leaves $35-20=\\boxed{15}$ who didn't get an A in either."
-}

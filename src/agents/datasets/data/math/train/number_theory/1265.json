@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest whole number that must be a divisor of the product of any three consecutive positive integers?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We know that at least one of our three consecutive positive integers must be a multiple of $2$ since every other integer in a list of consecutive integers is divisible by $2$. Similarly, one of our three consecutive integers must also be divisible by $3$. Thus, the product of our three integers must be divisible by $2 \\cdot 3 = 6$. By choosing the example where our three consecutive integers are $1$, $2$, and $3$ and their product is $6$, we see that $\\boxed{6}$ is indeed the greatest whole number that must be a factor of the product of any three consecutive positive integers."
-}

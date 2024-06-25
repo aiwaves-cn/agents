@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a > 0$, and let $P(x)$ be a polynomial with integer coefficients such that\n\\[P(1) = P(3) = P(5) = P(7) = a\\]and\n\\[P(2) = P(4) = P(6) = P(8) = -a.\\]What is the smallest possible value of $a$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "There must be some polynomial $Q(x)$ such that $$P(x)-a=(x-1)(x-3)(x-5)(x-7)Q(x).$$Then, plugging in values of $2,4,6,8,$ we get\n\n$$P(2)-a=(2-1)(2-3)(2-5)(2-7)Q(2) = -15Q(2) = -2a,$$$$P(4)-a=(4-1)(4-3)(4-5)(4-7)Q(4) = 9Q(4) = -2a,$$$$P(6)-a=(6-1)(6-3)(6-5)(6-7)Q(6) = -15Q(6) = -2a,$$$$P(8)-a=(8-1)(8-3)(8-5)(8-7)Q(8) = 105Q(8) = -2a.$$That is,\n$$-2a=-15Q(2)=9Q(4)=-15Q(6)=105Q(8).$$Thus, $a$ must be a multiple of $\\text{lcm}(15,9,15,105)=315$.\n\nNow we show that there exists $Q(x)$ such that $a=315.$ Inputting this value into the above equation gives us\n$$Q(2)=42, \\quad Q(4)=-70, \\quad Q(6)=42, \\quad Q(8)=-6.$$From $Q(2) = Q(6) = 42,$ $Q(x)=R(x)(x-2)(x-6)+42$ for some $R(x).$  We can take $R(x) = -8x + 60,$ so that $Q(x)$ satisfies both $Q(4) = -70$ and $Q(8) = -6.$\n\nTherefore, our answer is $ \\boxed{ 315}. $"
-}

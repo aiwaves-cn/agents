@@ -1,6 +1,0 @@
-{
-    "problem": "How many possible distinct arrangements are there of the letters in the word DOG?",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "We could list them: DOG, DGO, ODG, OGD, GDO, GOD.  Or we could have noticed that we have 3 ways to pick the first letter, 2 ways left to pick the second, and 1 way to pick the third, for a total of $3\\cdot2\\cdot 1 = \\boxed{6}$ ways."
-}

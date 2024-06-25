@@ -1,6 +1,0 @@
-{
-    "problem": "The fifth and eighth terms of a geometric sequence of real numbers are $7!$ and $8!$ respectively. What is the first term?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Since $ar^7=8!$ and $ar^4= 7!,$ dividing the two terms allows us to solve for the common ratio $r:$ \\[r^3= \\frac{ar^7}{ar^4}=8.\\]Thus, $r=2$ and the first term equals \\[a=\\frac{7!}{16}= \\boxed{315}.\\]"
-}

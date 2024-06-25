@@ -1,6 +1,0 @@
-{
-    "problem": "Find the ordered pair $(a,b)$ of real numbers such that the cubic polynomials $x^3 + ax^2 + 11x + 6 = 0$ and $x^3 + bx^2 + 14x + 8 = 0$ have two distinct roots in common.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $r$ and $s$ be the two common roots.  Then $r$ and $s$ are the roots of\n\\[(x^3 + ax^2 + 11x + 6) - (x^3 + bx^2 + 14 + 8) = (a - b) x^2 - 3x - 2.\\]Note that $r$ and $s$ are also the roots of\n\\begin{align*}\n&4(x^3 + ax^2 + 11x + 6) - 3(x^3 + bx^2 + 14x + 8) \\\\\n&= x^3 + (4a - 3b) x^2 + 2x \\\\\n&= x[x^2 + (4a - 3b) x + 2].\n\\end{align*}Since the constant coefficient of $x^3 + ax^2 + 11x + 6$ is nonzero, both $r$ and $s$ are non-zero.  Therefore, $r$ and $s$ are the roots of\n\\[x^2 + (4a - 3b) x + 2.\\]Hence, both $r$ and $s$ are the roots of $-x^2 + (3b - 4a) x - 2.$  But $r$ and $s$ are also the roots of $(a - b) x^2 - 3x - 2,$ so the coefficients must match.  This gives us $a - b = -1$ and $3b - 4a = -3.$  Solving, we find $(a,b) = \\boxed{(6,7)}.$\n\nFor these values, the given cubics become\n\\begin{align*}\nx^3 + 6x^2 + 11x + 6 &= (x + 1)(x + 2)(x + 3), \\\\\nx^3 + 7x^2 + 14x + 8 &= (x + 1)(x + 2)(x + 4).\n\\end{align*}"
-}

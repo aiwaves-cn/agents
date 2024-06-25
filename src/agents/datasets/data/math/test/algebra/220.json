@@ -1,6 +1,0 @@
-{
-    "problem": "The vertex of the parabola described by the equation $3y=2x^2-16x+18$ is $(m,n)$. What is $m+n$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We will complete the square on the given quadratic expression to find the vertex. Dividing by 3 and factoring $2$ from the first two terms, we have \\[y=\\frac23(x^2-8x)+6\\] In order to make the expression inside the parentheses a perfect square, we need to add and subtract $(8/2)^2=16$ inside the parentheses. Doing this, we get \\[y=\\frac23(x^2-8x+16-16)+6\\] so \\[y=\\frac23(x-4)^2-\\frac{32}3+6=\\frac23(x-4)^2-\\frac{14}3\\] The graph of an equation of the form $y=a(x-h)^2+k$ is a parabola with vertex at $(h,k)$, so the vertex of our parabola is at $\\left(4,-\\frac{14}3\\right)$. Thus, $m+n=4-\\frac{14}3=\\boxed{-\\frac{2}{3}}$."
-}

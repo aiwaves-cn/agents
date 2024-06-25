@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n$ be the product of the two smallest 3-digit prime numbers.  Find the sum of the digits of $n$.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "To test for primes, we start from 100 and work upward: 100 is not prime, 101 is prime, 102 is not prime; 103 is prime.  Hence the two smallest 3-digit prime numbers are 101 and 103; their product is \\[n=(101)(103)=101(100+3)=10100+303=10403.\\]Finally, the sum of the digits of $n$ is $1+0+4+0+3=\\boxed{8}$."
-}

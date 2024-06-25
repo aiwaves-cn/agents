@@ -1,6 +1,0 @@
-{
-    "problem": "Three coplanar circles intersect as shown. What is the maximum number of points on the circles that a line passing through all three circles can touch?\n\n[asy]import graph;\ndraw(Circle((-9,9),15));\ndraw(Circle((0,-9),15));\ndraw(Circle((9,9),15));\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The maximum number of points at which a line can intersect 1 circle is 2 distinct points.  Thus, for 3 circles, the maximum should be $3 \\times 2 = 6$ points at most.  If you're going for speed, you should probably guess 6 points at this point with a reasonable degree of certainty.  If you have time and want to be certain, you should only check for the existence of a line that intersects the three circles at $\\boxed{6}$ distinct points, because it is impossible that a line could intersect the circles at more than 6 points.  (There are, in fact, many lines that satisfy the conditions.)"
-}

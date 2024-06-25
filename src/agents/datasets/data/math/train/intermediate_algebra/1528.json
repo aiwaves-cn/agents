@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of the sum\n\\[\\binom{99}{0} - \\binom{99}{2} + \\binom{99}{4} - \\dots - \\binom{99}{98}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By the Binomial Theorem,\n\\begin{align*}\n(1 + i)^{99} &= \\binom{99}{0} + \\binom{99}{1} i + \\binom{99}{2} i^2 + \\binom{99}{3} i^3 + \\dots + \\binom{99}{98} i^{98} + \\binom{99}{99} i^{99} \\\\\n&= \\binom{99}{0} + \\binom{99}{1} i - \\binom{99}{2} - \\binom{99}{3} i + \\dots - \\binom{99}{98} - \\binom{99}{99} i.\n\\end{align*}Thus, the sum we seek is the real part of $(1 + i)^{99}.$\n\nNote that $(1 + i)^2 = 1 + 2i + i^2 = 2i,$ so\n\\begin{align*}\n(1 + i)^{99} &= (1 + i)^{98} \\cdot (1 + i) \\\\\n&= (2i)^{49} (1 + i) \\\\\n&= 2^{49} \\cdot i^{49} \\cdot (1 + i) \\\\\n&= 2^{49} \\cdot i \\cdot (1 + i) \\\\\n&= 2^{49} (-1 + i) \\\\\n&= -2^{49} + 2^{49} i.\n\\end{align*}Hence, the given sum is $\\boxed{-2^{49}}.$"
-}

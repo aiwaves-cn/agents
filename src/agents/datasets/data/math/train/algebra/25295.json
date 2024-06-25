@@ -1,6 +1,0 @@
-{
-    "problem": "Po is trying to solve the following equation by completing the square: $$49x^2+56x-64 = 0.$$He successfully rewrites the above equation in the following form: $$(ax + b)^2 = c,$$where $a$, $b$, and $c$ are integers and $a > 0$. What is the value of $a + b + c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We look for a binomial $ax+b$ whose square agrees with $49x^2+56x-64$, except possibly at the constant term. First we note that $a$ must be $7$ or $-7$, since the coefficient of $x^2$ in $(ax+b)^2$ is $a^2$, and we need this to equal $49$. Since we are given that $a>0$, we reject $-7$ and select $a=7$.\n\nNow we want $49x^2+56x-64$ to have the same coefficient of $x$ as $(7x+b)^2$. Since the coefficient of $x$ in $(7x+b)^2$ is $14b$, we solve $56 = 14b$ to obtain $b=4$. Therefore, $49x^2+56x-64$ agrees with $(7x+4)^2$, except that the constant term is different. Specifically, $(7x+4)^2 = 49x^2+56x+16$.\n\nNow we can rewrite Po's original equation as follows: \\begin{align*}\n49x^2+56x-64 &= 0\\\\\n49x^2+56x+16 &= 80\\\\\n(7x+4)^2 &= 80.\n\\end{align*}This gives $a + b + c = 7 + 4 + 80 = \\boxed{91}.$"
-}

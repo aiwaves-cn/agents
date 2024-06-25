@@ -1,6 +1,0 @@
-{
-    "problem": "What is $3^{-1} + 13^{-1} \\pmod{19}$? Express your answer as an integer from $0$ to $18$, inclusive.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "If we first get a \"common denominator\" as if 3 and 13 represent real numbers rather than residues, we get $$\\frac 13 + \\frac 1{13} \\equiv \\frac{13 + 3}{39} \\equiv \\frac{16}{2 \\cdot 19 + 1} \\equiv \\frac {16}1 \\equiv \\boxed{16} \\pmod{19}.$$We can justify this as follows: let $a \\equiv 3^{-1} \\pmod{19}$ and $b \\equiv 13^{-1} \\pmod{19}$. Then $39a \\equiv 13 \\pmod{19}$ and $39b \\equiv 3 \\pmod{19}$. Summing these congruences shows that $39(a+b) \\equiv a+b \\equiv 13 + 3 \\equiv 16 \\pmod{19}$, so $a+b \\equiv 16 \\pmod{19}$, as desired."
-}

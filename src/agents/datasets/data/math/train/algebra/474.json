@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of two numbers is $30$.   If we double the larger number, and subtract three times the smaller number, the result is 5.  What is the positive difference between the two numbers?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let $x$ be the smaller integer and $y$ be the larger integer. We have $x+y=30$ and $2y-3x=5$. Solving for $x$ in terms of $y$ using the first equation, we get $x=30-y$. Now we substitute $x$ in terms of $y$ into the second equation. \\begin{align*}\n2y-3(30-y)&=5\\quad\\Rightarrow\\\\\n2y-90+3y&=5\\quad\\Rightarrow\\\\\n5y&=95\\quad\\Rightarrow\\\\\ny&=19\n\\end{align*} And $x=30-19=11$. The positive difference is $y-x=\\boxed{8}$."
-}

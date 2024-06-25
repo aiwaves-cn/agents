@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $35^{1723} - 16^{1723}$ modulo 6.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that, modulo 6, $35 \\equiv -1$ and $16 \\equiv 4$. Therefore, $35^{1723} - 16^{1723} \\equiv (-1)^{1723} - 4^{1723} \\equiv -1 - 4^{1723}$. Note that $4^2 \\equiv 4$ modulo 6, so $-1 - 4^{1723} \\equiv -1 - 4 \\equiv -5 \\equiv \\boxed{1}$ modulo 6."
-}

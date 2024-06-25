@@ -1,6 +1,0 @@
-{
-    "problem": "What is the 123,999th digit after the decimal in the decimal expansion of $\\frac{123}{999}$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We can write $\\frac{123}{999}$ as $0.\\overline{123}$. To see why, let $x=0.\\overline{123}$, and subtract $x$ from $1000x$: $$\\begin{array}{r r c r@{}l}\n&1000x &=& 123&.123123123\\ldots \\\\\n- &x &=& 0&.123123123\\ldots \\\\\n\\hline\n&999x &=& 123 &\n\\end{array}$$ This shows that $0.\\overline{123} = \\frac{123}{999}$.\n\nThis decimal repeats every 3 digits. Since $123{,}999$ is divisible by $3$ (as the sum of the digits of $123{,}999$ is equal to $33$), it follows that $123{,}999^{\\rm th}$ digit after the decimal point is the same as the third digit after the decimal point, namely $\\boxed{3}$."
-}

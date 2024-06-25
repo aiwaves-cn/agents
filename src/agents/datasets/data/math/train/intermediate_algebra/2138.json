@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f$ be a non-constant polynomial such that\n\\[f(x - 1) + f(x) + f(x + 1) = \\frac{[f(x)]^2}{2013x}\\]for all nonzero real numbers $x.$  Find the sum of all possible values of $f(1).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equation,\n\\[2013x [f(x - 1) + f(x) + f(x + 1)] = [f(x)]^2\\]for all $x \\neq 0.$\n\nLet $d$ be the degree of $f(x).$  Then the degree of $2013x [f(x - 1) + f(x) + f(x + 1)]$ is $d + 1,$ and the degree of $[f(x)]^2$ is $2d.$  Hence, $2d = d + 1,$ so $d = 1.$\n\nAccordingly, let $f(x) = ax + b.$  Then the equation $2013x [f(x - 1) + f(x) + f(x + 1)] = [f(x)]^2$ becomes\n\\[2013x (3ax + 3b) = (ax + b)^2.\\]Since $f(x) = ax + b,$ we can write this as $[f(x)]^2 = 6039xf(x),$ so\n\\[f(x) (f(x) - 6039x) = 0.\\]Thus, $f(x) = 0$ or $f(x) = 6039x.$  Since $f(x)$ is non-constant, $f(x) = 6039x.$  Thus, $f(1) = \\boxed{6039}.$  We can check that $f(x) = 6039x$ satisfies the given equation."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A,$ $B,$ and $C$ be points on a circle of radius $18.$ If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi.$",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "A diagram can help us get on the right track.\n\n[asy]\npair pA, pB, pC, pO;\npO = (0, 0);\npA = pO + dir(-40);\npB = pO + dir(100);\npC = pO + dir(180);\ndraw(pA--pC--pB);\nlabel(\"$A$\", pA, SE);\nlabel(\"$B$\", pB, N);\nlabel(\"$C$\", pC, W);\ndraw(circle(pO, 1));\n[/asy]\n\nFirst of all, the circumference of the entire circle is $36\\pi.$ Since $\\angle C = 70^\\circ,$ we can see that the minor arc ${AB}$ has measure of twice that, or $140^\\circ.$ Therefore, we can find its circumference by finding $36\\pi \\cdot \\frac{140^\\circ}{360^\\circ} = \\boxed{14\\pi}.$"
-}

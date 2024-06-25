@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ be a positive real number such that $x - \\frac{1}{x} = 3.$  Find $x + \\frac{1}{x}.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Squaring the equation $x - \\frac{1}{x} = 3,$ we get\n\\[x^2 - 2 + \\frac{1}{x^2} = 9.\\]Adding 4, we get $x^2 + 2 + \\frac{1}{x}^2 = 13,$ so\n\\[\\left( x + \\frac{1}{x} \\right)^2 = 13.\\]Since $x$ is positive,\n\\[x + \\frac{1}{x} = \\boxed{\\sqrt{13}}.\\]"
-}

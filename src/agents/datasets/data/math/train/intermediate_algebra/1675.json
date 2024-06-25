@@ -1,6 +1,0 @@
-{
-    "problem": "A polynomial $p(x)$ is called self-centered if it has integer coefficients and $p(100) = 100.$  If $p(x)$ is a self-centered polynomial, what is the maximum number of integer solutions $k$ to the equation $p(k) = k^3$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $q(x) = p(x) - x^3,$ and let $r_1,$ $r_2,$ $\\dots,$ $r_n$ be the integer roots to $p(k) = k^3.$  Then\n\\[q(x) = (x - r_1)(x - r_2) \\dotsm (x - r_n) q_0(x)\\]for some polynomial $q_0(x)$ with integer coefficients.\n\nSetting $x = 100,$ we get\n\\[q(100) = (100 - r_1)(100 - r_2) \\dotsm (100 - r_n) q_0(100).\\]Since $p(100) = 100,$\n\\[q(100) = 100 - 100^3 = -999900 = -2^2 \\cdot 3^2 \\cdot 5^2 \\cdot 11 \\cdot 101.\\]We can then write $-999900$ as a product of at most 10 different integer factors:\n\\[-999900 = (1)(-1)(2)(-2)(3)(-3)(5)(-5)(-11)(101).\\]Thus, the number of integer solutions $n$ is at most 10.\n\nAccordingly, we can take\n\\[q(x) = (x - 99)(x - 101)(x - 98)(x - 102)(x - 97)(x - 103)(x - 95)(x - 105)(x - 111)(x - 1),\\]and $p(x) = q(x) + x^3,$ so $p(k) = k^3$ has 10 integer roots, namely 99, 101, 98, 102, 97, 103, 95, 105, 111, and 1.  Thus, $\\boxed{10}$ integer roots is the maximum."
-}

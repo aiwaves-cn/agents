@@ -1,6 +1,0 @@
-{
-    "problem": "The director of a marching band wishes to place the members into a formation that includes all of them and has no unfilled positions. If they are arranged in a square formation, there are 5 members left over. The director realizes that if he arranges the group in a formation with 7 more rows than columns, there are no members left over. Find the maximum number of members this band can have.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $n > 14$ then $n^2 + 6n + 14 < n^2 + 7n < n^2 + 8n + 21$ and so $(n + 3)^2 + 5 < n(n + 7) < (n + 4)^2 + 5$. If $n$ is an integer there are no numbers which are 5 more than a perfect square strictly between $(n + 3)^2 + 5$ and $(n + 4)^2 + 5$. Thus, if the number of columns is $n$, the number of students is $n(n + 7)$ which must be 5 more than a perfect square, so $n \\leq 14$. In fact, when $n = 14$ we have $n(n + 7) = 14\\cdot 21 = 294 = 17^2 + 5$, so this number works and no larger number can. Thus, the answer is $\\boxed{294}$."
-}

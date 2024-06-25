@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=ax+b$ and $f^{-1}(x)=bx+a$ with $a$ and $b$ real, what is the value of $a+b$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $f(f^{-1}(x))=x$, it follows that $a(bx+a)+b=x$, which implies $abx + a^2 +b = x$. This equation holds for all values of $x$ only if $ab=1$ and $a^2+b=0$.\n\nThen $b = -a^2$.  Substituting into the equation $ab = 1$, we get $-a^3 = 1$.  Then $a = -1$, so $b = -1$, and  \\[f(x)=-x-1.\\]Likewise  \\[f^{-1}(x)=-x-1.\\]These are inverses to one another since  \\[f(f^{-1}(x))=-(-x-1)-1=x+1-1=x.\\]\\[f^{-1}(f(x))=-(-x-1)-1=x+1-1=x.\\]Therefore $a+b=\\boxed{-2}$."
-}

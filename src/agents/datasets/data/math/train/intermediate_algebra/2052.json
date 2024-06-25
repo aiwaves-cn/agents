@@ -1,6 +1,0 @@
-{
-    "problem": "A sequence is defined by $a_0 = \\frac{1}{2}$ and $a_n = 1 + (a_{n - 1} - 1)^2.$  Compute\n\\[a_0 a_1 a_2 \\dotsm.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $b_n = a_n - 1.$  Then $b_ n = b_{n - 1}^2,$ and\n\\begin{align*}\na_0 a_1 a_2 \\dotsm &= (1 + b_0)(1 + b_0^2)(1 + b_0^4) \\dotsm \\\\\n&= \\frac{1 - b_0^2}{1 - b_0} \\cdot \\frac{1 - b_0^4}{1 - b_0^2} \\cdot \\frac{1 - b_0^8}{1 - b_0^4} \\dotsm \\\\\n&= \\frac{1}{1 - b_0} = \\frac{1}{1 - (-1/2)} = \\boxed{\\frac{2}{3}}.\n\\end{align*}"
-}

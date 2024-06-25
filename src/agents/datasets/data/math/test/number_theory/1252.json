@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest integer less than 1000 which is divisible by 11?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We find that 1000 gives a quotient of 90 and a remainder of 10 when divided by 11. Therefore, if we subtract 10 from 1000 we should subtract 10 from the remainder as well, which gives us zero. This means that $1000-10 = \\boxed{990}$ is divisible by 11, while the next number divisible by 11 is $990+11 = 1001.$"
-}

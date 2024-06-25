@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ $z$ be real numbers such that\n\\begin{align*}\nx + y + z &= 4, \\\\\nx^2 + y^2 + z^2 &= 6.\n\\end{align*}Let $m$ and $M$ be the smallest and largest possible values of $x,$ respectively.  Find $m + M.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equations, $y + z = 4 - x$ and $y^2 + z^2 = 6 - x^2.$  By Cauchy-Schwarz,\n\\[(1 + 1)(y^2 + z^2) \\ge (y + z)^2.\\]Hence, $2(6 - x^2) \\ge (4 - x)^2.$  This simplifies to $3x^2 - 8x + 4 \\le 0,$ which factors as $(x - 2)(3x - 2) \\le 0.$  Hence, $\\frac{2}{3} \\le x \\le 2.$\n\nFor $x = \\frac{3}{2},$ we can take $y = z = \\frac{5}{3}.$  For $x = 2,$ we can take $y = z = 1.$  Thus, $m = \\frac{2}{3}$ and $M = 2,$ so $m + M = \\boxed{\\frac{8}{3}}.$"
-}

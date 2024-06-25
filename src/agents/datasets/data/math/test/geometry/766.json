@@ -1,6 +1,0 @@
-{
-    "problem": "Each of the small circles in the figure has radius one. The innermost circle is tangent to the six circles that surround it, and each of those circles is tangent to the large circle and to its small-circle neighbors. Find the area of the shaded region.\n\n[asy]\nfill(Circle((0,0),3),gray(0.7));\nfill(Circle((0,0),1),white);\nfill(Circle((1.73,1),1),white);\nfill(Circle((-1.73,1),1),white);\nfill(Circle((-1.73,-1),1),white);\nfill(Circle((1.73,-1),1),white);\nfill(Circle((0,2),1),white);\nfill(Circle((0,-2),1),white);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The large circle has radius 3, so its area is $\\pi \\cdot 3^2= 9\\pi$. The seven small circles have a total area of $7\\left(\\pi\\cdot 1^2\\right)= 7\\pi$. So the shaded region has area $9\\pi - 7\\pi = \\boxed{2\\pi}$."
-}

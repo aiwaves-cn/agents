@@ -1,6 +1,0 @@
-{
-    "problem": "Find $24^{-1} \\pmod{11^2}$. That is, find the residue $b$ for which $24b \\equiv 1\\pmod{11^2}$.\n\nExpress your answer as an integer from $0$ to $11^2-1$, inclusive.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $5 \\times 24 = 120 = 121 - 1$, it follows that $-5 \\times 24 \\equiv 1 \\pmod{121}$. Adding 121 to $-5$ to make it positive, we find $(-5 + 121) \\times 24 \\equiv 116 \\times 24 \\equiv 1 \\pmod{121}$, so it follows that the modular inverse of $24$ is $\\boxed{116}$ when taken modulo $121$."
-}

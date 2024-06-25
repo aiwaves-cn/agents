@@ -1,6 +1,0 @@
-{
-    "problem": "Add $1_3 + 12_3 + 212_3 + 2121_3.$ Express your answer in base 3.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We may sum in base 3 just as in base 10. For example, in the rightmost column, the digits sum to 6. Since we are working in base 3, we record the remainder 0 as the rightmost digit in the sum and carry the quotient 2 to the next column. Continuing in this way, we find $$\\begin{array}{c@{}c@{}c@{}c@{}c@{}c}\n& & 2 & 1 & 2 & 1_3 \\\\\n& & & 2 & 1 & 2_3 \\\\\n& & & & 1 & 2_3 \\\\\n& + & & & & 1_3 \\\\\n\\cline{2-6}\n& 1 & 0 & 2 & 0 & 0_3, \\\\\n\\end{array}$$so the sum is $\\boxed{10200_3}$."
-}

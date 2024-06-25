@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real values of $a$ for which the quadratic equation\n\\[(3 - i) x^2 + (a + 4i) x - 115 + 5i = 0\\]has at least one real root.\n\nEnter all the possible values of $a,$ separated by commas.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $r$ be the real root.  Then\n\\[(3 - i) r^2 + (a + 4i) r - 115 + 5i = 0.\\]We can write this as\n\\[(3r^2 + ar - 115) + (-r^2 + 4r + 5)i = 0.\\]The real and imaginary parts must both be 0, so $3r^2 + ar - 115 = 0$ and $-r^2 + 4r + 5 = 0.$\n\nThe equation $-r^2 + 4r + 5 = 0$ factors as $-(r - 5)(r + 1) = 0,$ so $r = 5$ or $r = -1.$\n\nIf $r = 5,$ then\n\\[3 \\cdot 25 + 5a - 115 = 0.\\]Solving for $a,$ we find $a = 8.$\n\nIf $r = -1,$ then\n\\[3 \\cdot (-1)^2 - a - 115 = 0.\\]Solving for $a,$ we find $a = -112.$\n\nThus, the possible values of $a$ are $\\boxed{8,-112}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Four distinct circles are drawn in a plane. What is the maximum number of points where at least two of the circles intersect?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Each pair of circles has at most two intersection points. There are $\\binom{4}{2} = 6$ pairs of circles, so there are at most $6\\times 2 = 12$ points of intersection. The following configuration shows that $\\boxed{12}$ points of intersection are indeed possible:\n\n[asy]\ndraw(Circle((0,0),2));\ndraw(Circle((1,1.3),2));\ndraw(Circle((-1,1.3),2));\ndraw(Circle((0,0.7),2));\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $(x_n)$ is defined by $x_1 = 115$ and $x_k = x_{k - 1}^2 + x_{k - 1}$ for all $k \\ge 2.$  Compute\n\\[\\frac{1}{x_1 + 1} + \\frac{1}{x_2 + 1} + \\frac{1}{x_3 + 1} + \\dotsb.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Consider the term $\\frac{1}{x_{k - 1} + 1}.$  We can multiply the numerator and denominator by $x_{k - 1},$ to get\n\\[\\frac{x_{k - 1}}{x_{k - 1}^2 + x_{k - 1}} = \\frac{x_{k - 1}}{x_k}.\\]To get the sum to telescope, we can multiply the numerator and denominator again by $x_{k - 1}$:\n\\[\\frac{x_{k - 1}^2}{x_{k - 1} x_k} = \\frac{x_k - x_{k - 1}}{x_{k - 1} x_k} = \\frac{1}{x_{k - 1}} - \\frac{1}{x_k}.\\]Hence,\n\\begin{align*}\n\\frac{1}{x_1 + 1} + \\frac{1}{x_2 + 1} + \\frac{1}{x_3 + 1} + \\dotsb &= \\left( \\frac{1}{x_1} - \\frac{1}{x_2} \\right) + \\left( \\frac{1}{x_2} - \\frac{1}{x_3} \\right) + \\left( \\frac{1}{x_3} - \\frac{1}{x_4} \\right) + \\dotsb \\\\\n&= \\frac{1}{x_1} = \\boxed{\\frac{1}{115}}.\n\\end{align*}"
-}

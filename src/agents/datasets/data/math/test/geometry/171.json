@@ -1,6 +1,0 @@
-{
-    "problem": "How many isosceles triangles with whole-number length sides have a perimeter of 20 units?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Let $x$ denote the measure of each of the two equal sides.  Then the remaining side has measure $20-2x$ units.  By the triangle inequality, the third side must be shorter than the two equal sides combined.  In other words, $x+x>20-2x$.  Solving this inequality, we find $x>5$.  Also, the third side length has to be positive, so $20-2x>0$ which implies $x<10$.  Therefore, the $\\boxed{4}$ integers strictly between 5 and 10 are the possible integer values of $x$."
-}

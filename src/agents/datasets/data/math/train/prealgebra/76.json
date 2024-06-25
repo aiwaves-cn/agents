@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate \\begin{align*}\n\\left(c^c-c(c-1)^c\\right)^c\n\\end{align*} when $c=3$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Substituting $c=3$ into the given expression, we find that $\\left(3^3-3(3-1)^3\\right)^3$. We must always begin in the parentheses first, so we calculate $(3-1)^3=2^3=8$. Now our expression is $\\left(3^3-3\\cdot 8\\right)^3$. Carrying out exponentiation first, we find $\\left(27-3\\cdot 8\\right)^3$. Next we do multiplication to get $\\left(27-24\\right)^3$. Finally, we carry out the subtraction last and we find $(3)^3$. Thus, our answer is $\\boxed{27}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "As $x$ ranges over all real numbers, find the range of\n\\[f(x) = \\sin^4 x + \\cos ^2 x.\\]Enter your answer using interval notation.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We can write\n\\begin{align*}\nf(x) &= \\sin^4 x + 1 - \\sin^2 x \\\\\n&= \\left( \\sin^2 x - \\frac{1}{2} \\right)^2 + \\frac{3}{4}.\n\\end{align*}Since $\\sin^2 x$ varies between 0 and 1, the range of $f(x)$ is $\\boxed{\\left[ \\frac{3}{4}, 1 \\right]}.$"
-}

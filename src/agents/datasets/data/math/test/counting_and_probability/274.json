@@ -1,6 +1,0 @@
-{
-    "problem": "Find the least common multiple of $6!$ and $(4!)^2.$",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We use the prime factorizations of $6!$ and $(4!)^2$ to find their $\\text{lcm}$ (as we would with most pairs of integers): $$ \\begin{array}{rcrcr} 6! &=& 6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 &=& 2^4 \\cdot 3^2 \\cdot 5^1 \\\\ (4!)^2 &=& (4 \\cdot 3 \\cdot 2 \\cdot 1)^2 &=& 2^6 \\cdot 3^2 \\\\ \\text{lcm}[6!, (4!)^2] &=& 2^6 \\cdot 3^2 \\cdot 5^1 &=& \\boxed{2880} \\end{array} $$"
-}

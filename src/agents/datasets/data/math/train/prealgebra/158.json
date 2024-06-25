@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can four people sit in a row of five chairs?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Have the youngest sit first, then the next youngest, and so on.  The first person has 5 choices.  No matter where the first person sits, the next person has 4 choices.  No matter where the first two people sit, the third person has 3 choices.  The fourth person then has 2 choices.  Therefore, there are $5\\cdot 4\\cdot 3\\cdot 2 = \\boxed{120}$ ways for the four people to sit."
-}

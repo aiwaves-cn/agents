@@ -1,6 +1,0 @@
-{
-    "problem": "What is the number of square units in the area of a triangle whose sides measure 5, 5 and 6 units?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "This triangle is isosceles, and so the altitude to the side with length 6 must hit that side at its midpoint. Thus our triangle is divided into two right triangles with hypotenuse $5$ and one side of length $3$. Thus each of these is a $3-4-5$ triangle, and each one has area $\\frac{3 \\times 4}{2} = 6$, for a total area of $\\boxed{12}$."
-}

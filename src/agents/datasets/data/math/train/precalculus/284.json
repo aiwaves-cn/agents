@@ -1,6 +1,0 @@
-{
-    "problem": "Find the distance between the planes $x + 2y - 2z + 1 = 0$ and $2x + 4y - 4z + 5 = 0.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "A point on the first plane is $(-1,0,0).$  Then from the formula for the distance from a point to a plane, the distance from $(-1,0,0)$ to the plane $2x + 4y - 4z + 5 = 0$ is\n\\[\\frac{|(2)(-1) + (4)(0) + (-4)(0) + 5|}{\\sqrt{2^2 + 4^2 + (-4)^2}} = \\boxed{\\frac{1}{2}}.\\](Note that we can write the equation of the second plane as $x + 2y - 2z + \\frac{5}{2} = 0.$  Thus, both planes have the same normal vector, so they are parallel.)"
-}

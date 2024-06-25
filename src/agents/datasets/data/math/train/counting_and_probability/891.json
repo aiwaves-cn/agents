@@ -1,6 +1,0 @@
-{
-    "problem": "If 2 cards from a standard deck are selected randomly, what is the probability that either two kings or at least 1 ace occurs? (There are 4 Aces, 4 kings and 52 total cards in a standard deck.)",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We clearly can't have both two kings and at least 1 ace, so we have two exclusive cases to evaluate separately.\n\nCase 1: Two kings. The probability that two kings are drawn is $\\frac{4}{52} \\cdot \\frac{3}{51} = \\frac{1}{221}$.\n\nCase 2: At least 1 ace.  We can break this into two cases:\n\nSubcase 2A: Exactly 1 ace.  We can choose the ace first with probability $\\frac{4}{52}\\cdot \\frac{48}{51}$, and we can choose the ace last with probablity $\\frac{48}{52} \\cdot \\frac{4}{51}$.  So, the total probability of getting exactly one ace is $2\\cdot\\frac{48}{52}\\cdot\\frac{4}{51} = \\frac{32}{221}$.\n\nSubcase 2B: 2 aces.  The probability of this occurring is the same as that of two kings, $\\frac{1}{221}$.\n\nSo, the total probability for Case 2 is $\\frac{33}{221}$.\n\nAdding this to our probability for Case 1, we have $\\frac{34}{221} =\\boxed{ \\frac{2}{13}}$."
-}

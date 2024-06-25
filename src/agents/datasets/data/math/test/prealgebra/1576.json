@@ -1,6 +1,0 @@
-{
-    "problem": "In a convex heptagon, the degree measures of the interior angles are $x, ~x, ~x-2, ~x-2,\n~x + 2, ~x + 2$ and $x + 4$ degrees. What is the degree measure of the largest interior angle?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The sum of the angle measures in a polygon with 7 angles is $180(7-2) = 900$ degrees. Therefore, we must have \\[x + x + (x-2) + (x-2) + (x+2) + (x+2) + (x+4) = 900.\\] Simplifying the left side gives $7x + 4 = 900$, so $7x = 896$ and $x = 128$.  Therefore, the measure of the largest interior angle is $x + 4 = \\boxed{132}$ degrees."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Rewrite the expression $6j^2 - 4j + 12$ in the form $c(j + p)^2 + q$, where $c$, $p$, and $q$ are constants. What is $\\frac{q}{p}$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We complete the square:  \\begin{align*}\n6j^2 - 4j + 12 &= 6\\left(j^2 - \\frac{2}{3} j\\right) + 12 \\\\\n&= 6\\left(j^2 - \\frac{2}{3} j + \\frac{1}{9}\\right) + 12 - \\frac{6}{9} \\\\\n&= 6\\left(j - \\frac{1}{3} \\right)^2 + \\frac{34}{3}\n\\end{align*}Then $q = \\frac{34}{3}$ and $p = - \\frac{1}{3}$. The question asks for $\\frac{q}{p}$, which is equal to $\\boxed{-34}$."
-}

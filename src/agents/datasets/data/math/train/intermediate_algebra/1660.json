@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the squares of the solutions to\n\\[\\left| x^2 - x + \\frac{1}{2008} \\right| = \\frac{1}{2008}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "If\n\\[\\left| x^2 - x + \\frac{1}{2008} \\right| = \\frac{1}{2008},\\]then either $x^2 - x + \\frac{1}{2008} = \\frac{1}{2008}$ or $x^2 - x + \\frac{1}{2008} = -\\frac{1}{2008}.$\n\nIn the first case, $x^2 - x = x(x - 1) = 0,$ so $x = 0$ or $x = 1,$ and the sum of the squares is $0^2 + 1^2 = 1.$\n\nIn the second case,\n\\[x^2 - x + \\frac{1}{1004} = 0.\\]Let the roots be $a$ and $b.$  Then by Vieta's formulas, $a + b = 1$ and $ab = \\frac{1}{1004},$ so\n\\[a^2 + b^2 = (a + b)^2 - 2ab = 1 - \\frac{1}{502} = \\frac{501}{502}.\\]Therefore, the sum of the squares of the solutions is $1 + \\frac{501}{502} = \\boxed{\\frac{1003}{502}}.$"
-}

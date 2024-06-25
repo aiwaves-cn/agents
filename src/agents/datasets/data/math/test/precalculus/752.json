@@ -1,6 +1,0 @@
-{
-    "problem": "There exist vectors $\\mathbf{a}$ and $\\mathbf{b}$ such that\n\\[\\mathbf{a} + \\mathbf{b} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix},\\]where $\\mathbf{a}$ is parallel to $\\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix},$ and $\\mathbf{b}$ is orthogonal to $\\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix}.$  Find $\\mathbf{b}.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Since $\\mathbf{a}$ is parallel to $\\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix},$\n\\[\\mathbf{a} = t \\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} t \\\\ 2t \\\\ -t \\end{pmatrix}\\]for some scalar $t.$  Then\n\\[\\mathbf{b} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} - \\begin{pmatrix} t \\\\ 2t \\\\ -t \\end{pmatrix} = \\begin{pmatrix} 2 - t \\\\ -1 - 2t \\\\ 3 + t \\end{pmatrix}.\\]We want this to be orthogonal to $\\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix},$ so\n\\[\\begin{pmatrix} 2 - t \\\\ -1 - 2t \\\\ 3 + t \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix} = 0.\\]Then $(2 - t)(1) + (-1 - 2t)(2) + (3 + t)(-1) = 0.$  Solving, we find $t = -\\frac{1}{2}.$  Then $\\mathbf{b} = \\boxed{\\begin{pmatrix} 5/2 \\\\ 0 \\\\ 5/2 \\end{pmatrix}}.$"
-}

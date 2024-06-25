@@ -1,6 +1,0 @@
-{
-    "problem": "For how many bases between two and nine inclusive does the representation of $576_{10}$ have a final digit of 1?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "For 576 to have a final digit of 1 when represented in base $b$, we must have that $576-1$ is divisible by $b$. To see this, note that any integer whose base-$b$ representation ends in 0 is divisible by $b$, just as any integer whose decimal representation ends in 0 is divisible by 10.  Since $575 = 5^2 \\cdot 23$, the only base which satisfies the given condition is 5.  Therefore, there is $\\boxed{1}$ such base."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers less than 2008 have an even number of divisors?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "A number $n$ has an odd number of divisors if and only if it is a perfect square. To see this, notice that the divisors $d$ and $n/d$ pair up, except for when $d=n/d$, or $n=d^2$.\n\nTherefore, the only integers not counted are the perfect squares. Since $45^2=2025$ and $44^2=1936$, there are 44 positive integers less than 2008 with an odd number of divisors, leaving $2007-44=\\boxed{1963}$ positive integers less than 2008 with an even number of divisors."
-}

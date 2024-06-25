@@ -1,6 +1,0 @@
-{
-    "problem": "Find a nonzero monic polynomial $P(x)$ with integer coefficients and minimal degree such that $P(1-\\sqrt[3]2+\\sqrt[3]4)=0$.  (A polynomial is called $\\textit{monic}$ if its leading coefficient is $1$.)",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = 1 - \\sqrt[3]{2} + \\sqrt[3]{4}.$  Note that $(1 - \\sqrt[3]{2} + \\sqrt[3]{4})(1 + \\sqrt[3]{2}) = 3,$ so\n\\[x = \\frac{3}{1 + \\sqrt[3]{2}}.\\]Then\n\\[\\frac{3}{x} = 1 + \\sqrt[3]{2},\\]so\n\\[\\frac{3}{x} - 1 = \\frac{3 - x}{x} = \\sqrt[3]{2}.\\]Cubing both sides, we get\n\\[\\frac{-x^3 + 9x^2 - 27x + 27}{x^3} = 2,\\]so $-x^3 + 9x^2 - 27x + 27 = 2x^3.$  This simplifies to $3x^3 - 9x^2 + 27x - 27 = 3(x^3 - 3x^2 + 9x - 9) = 0,$ so we can take\n\\[f(x) = \\boxed{x^3 - 3x^2 + 9x - 9}.\\]"
-}

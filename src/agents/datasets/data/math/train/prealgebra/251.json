@@ -1,6 +1,0 @@
-{
-    "problem": "Robin bought a four-scoop ice cream cone having a scoop each of vanilla, chocolate, strawberry and cherry. In how many orders can the four scoops be stacked on the cone if they are stacked one on top of the other?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "There are four choices for the bottom scoop. Once this decision is made, there are only 3 choices for the scoop above that.  Similarly there are 2 choices for the third scoop, and the final scoop is uniquely determined.  In total, there are $4\\cdot3\\cdot2\\cdot1 = \\boxed{24}$ orders."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $2000^3-1999\\cdot 2000^2-1999^2\\cdot 2000+1999^3$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = 1999$ and $b = 2000.$  Then\n\\begin{align*}\n2000^3 - 1999 \\cdot 2000^2 - 1999^2 \\cdot 2000 + 1999^3 &= b^3 - ab^2 - a^2 b + a^3 \\\\\n&= b^2 (b - a) - a^2 (b - a) \\\\\n&= (b^2 - a^2)(b - a) \\\\\n&= (b + a)(b - a)(b - a) \\\\\n&= \\boxed{3999}.\n\\end{align*}"
-}

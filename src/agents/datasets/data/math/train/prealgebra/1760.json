@@ -1,6 +1,0 @@
-{
-    "problem": "Three friends are driving to New York City and splitting the gas cost equally. At the last minute, 2 more friends joined the trip. The cost of gas was then evenly redistributed among all of the friends. The cost for each of the original 3 decreased by $\\$$11.00. What was the total cost of the gas, in dollars?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Suppose the total cost is $x$ dollars.  Then we have that the cost for each the original 3 friends was $\\frac{x}{3}$, while after the 2 extra friends joined, the cost was $\\frac{x}{5}$ per person.  So the given information translates into $\\frac{x}{3} - 11.00 = \\frac{x}{5}$.  Solving for $x$, find: \\begin{align*}\n\\frac{x}{3}-11&=\\frac{x}{5}\\\\\n\\Rightarrow\\qquad \\frac{x}{3}-\\frac{x}{5}&=11\\\\\n\\Rightarrow\\qquad \\frac{5x-3x}{15}&=11\\\\\n\\Rightarrow\\qquad x&=\\frac{15}{2}\\cdot11=\\boxed{82.50}\n\\end{align*}"
-}

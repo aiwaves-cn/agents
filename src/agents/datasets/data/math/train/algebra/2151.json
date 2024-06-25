@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of the line $x+y=b$ is a perpendicular bisector of the line segment from $(1,3)$ to $(5,7)$. What is the value of b?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If the line $x+y=b$ is the perpendicular bisector of the segment from $(1,3)$ to $(5,7)$, it must pass through the midpoint of this segment.  The midpoint is: $$\\left(\\frac{1+5}{2},\\frac{3+7}{2}\\right)=(3,5)$$This point lies on the line $x+y=b$, so we must have $3+5=b\\Rightarrow b=\\boxed{8}$."
-}

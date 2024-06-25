@@ -1,6 +1,0 @@
-{
-    "problem": "How many multiples of 6 are greater than -25, but less than 25?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "To find out how many multiples there are that fit this description, first we find all the positive multiples, which are 6, 12, 18, and 24. Since 30 is greater than 25, it doesn't match the description and we now know that there are 4 positive multiples of 6 that are less than 25.\n\nBecause the limits for negative multiples are the same as the limits for positive multiples, we can figure out that the only negative multiples that are greater than -25 are -6, -12, -18, and -24.\n\nFour positive multiples, four negative multiples, and zero (because $6 \\cdot 0=0$) means that there are $\\boxed{9 \\text{ multiples}}$ that will work."
-}

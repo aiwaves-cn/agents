@@ -1,6 +1,0 @@
-{
-    "problem": "In the game Deal or No Deal, participants choose a box at random from a set of $26,$ one containing each of the following values: \\begin{tabular}{|c|c|}\\hline\\$.01&\\$1,000\\\\\\hline\\$1&\\$5,000\\\\\\hline\\$5&\\$10,000\\\\\\hline\\$10&\\$25,000\\\\\\hline\\$25&\\$50,000\\\\\\hline\\$50&\\$75,000\\\\\\hline\\$75&\\$100,000\\\\\\hline\\$100&\\$200,000\\\\\\hline\\$200&\\$300,000\\\\\\hline\\$300&\\$400,000\\\\\\hline\\$400&\\$500,000\\\\\\hline\\$500&\\$750,000\\\\\\hline\\$750&\\$1,000,000\\\\\\hline\\end{tabular} After choosing a box, participants eliminate other boxes by opening them, showing the amount of money in the box to the crowd, and then removing that box (and its money!) from the game. What is the minimum number of boxes a participant needs to eliminate in order to have a half chance of holding at least $\\$100,\\!000$ as his or her chosen box?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Seven of the boxes contain at least this amount. If a participant is going to be holding one of these boxes with a probability of $1/2,$ there can be at most $7$ other boxes left. This means that at least $26-7-7=\\boxed{12}$ boxes must be eliminated."
-}

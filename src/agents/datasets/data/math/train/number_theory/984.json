@@ -1,6 +1,0 @@
-{
-    "problem": "Natural numbers of the form $F_n=2^{2^n} + 1 $ are called Fermat numbers. In 1640, Fermat conjectured that all numbers $F_n$, where $n\\neq 0$, are prime. (The conjecture was later shown to be false.) What is the units digit of $F_{1000}$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let's first try to find the cycle of units digits of $2^n$, starting with $n=1$: $2, 4, 8, 6, 2, 4, 8, 6,\\ldots$ . The cycle of units digits of $2^n$ is 4 digits long: 2, 4, 8, 6. To find the units digit of $2^n$, for any positive integer $n$, we simply need to find the remainder, $R$, when $n$ is divided by 4 ($R=1$ corresponds to the units digit 2, $R=2$ corresponds to the units digit 4, etc.) Since $2^{1000}\\div4=2^{998}$ without remainder, the units digit of $2^{2^{1000}}$ is 6. Therefore, the units digit of $F_n=2^{2^{1000}}+1$ is $6+1=\\boxed{7}$."
-}

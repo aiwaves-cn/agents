@@ -1,6 +1,0 @@
-{
-    "problem": "Bob placed three regular pentagons together at a vertex, thinking he might be able to form a tessellation. However, they left a gap. What is the number of degrees in the measure indicated? [asy]size(100);\npath A = dir(0) -- dir(72) -- dir (144) -- dir(216) -- dir (288) -- cycle;\npath B = reflect ( dir(72), dir(144)) * A;\npath C = reflect( dir(72), dir(0))* A;\ndraw(rotate(18) *A);\ndraw(rotate(18) *B);\ndraw(rotate(18) *C);\nlabel(\"?\", (0,1.5), N);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The angles of a pentagon sum to $180(5-2) = 540$ degrees, so each angle of a regular pentagon is $540^\\circ/5 = 108^\\circ$.  Therefore, three of these angles sum to $3\\cdot 108^\\circ = 324^\\circ$, which means the indicated angle measures $360^\\circ - 324^\\circ = \\boxed{36^\\circ}$."
-}

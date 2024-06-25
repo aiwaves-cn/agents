@@ -1,6 +1,0 @@
-{
-    "problem": "Given $a \\neq 0,$ solve for $x$ in\n\\[\\begin{vmatrix} x + a & x  & x \\\\ x & x + a & x \\\\ x & x & x + a \\end{vmatrix} = 0.\\]Give your answer in terms of $a.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} x + a & x  & x \\\\ x & x + a & x \\\\ x & x & x + a \\end{vmatrix} &= (x + a) \\begin{vmatrix} x + a & x \\\\ x & x + a \\end{vmatrix} - x \\begin{vmatrix} x & x \\\\ x & x + a \\end{vmatrix} + x \\begin{vmatrix} x & x + a \\\\ x & x \\end{vmatrix} \\\\\n&= (x + a)((x + a)^2 - x^2) - x(x(x + a) - x^2) + x(x^2 - (x + a)(x)) \\\\\n&= 3a^2 x + a^3 \\\\\n&= a^2 (3x + a).\n\\end{align*}Hence, $x = \\boxed{-\\frac{a}{3}}.$"
-}

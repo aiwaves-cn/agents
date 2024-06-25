@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest possible area, in square units, of a right triangle with two sides measuring $4$ units and $5$ units?",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $5>4$, $4$ cannot be the length of the hypotenuse. Thus either $4$ and $5$ are the lengths of the two smaller sides, or $5$ is the hypotenuse, meaning the two smaller sides are $4$ and $3$. In this latter case, the area will be smaller, so the area is $\\frac{(3)(4)}{2} = \\boxed{6}$."
-}

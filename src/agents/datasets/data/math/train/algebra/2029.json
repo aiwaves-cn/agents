@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the roots of the equation $(x - 5)^2 = 9$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Knowing that $3$ is a root of $9$, we see that $x = 8,2$. Hence, the sum of the roots is $10$.\n\nAlternatively, we can rearrange the equation so that we have $x^2 - 10x + 16 = 0$. Then, using the case of Vieta's formula for a quadratic, we again see that the sum of the roots is $\\boxed{10}$."
-}

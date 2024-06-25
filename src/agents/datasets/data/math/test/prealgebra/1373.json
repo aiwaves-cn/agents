@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $317^{3}+8^{3}-(2^{(3^{2})}+317^{3})$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Recall that $-(x+y)=-x-y$ for all $x$ and $y$. Thus,  $$317^{3}+8^{3}-(2^{(3^{2})}+317^{3})=317^{3}+8^{3}-2^{(3^{2})}-317^{3}.$$ Using the commutative property of addition, we can rearrange the terms to get  \\begin{align*}\n317^{3}+8^{3}-2^{(3^{2})}-317^{3}&=317^{3}+8^{3}+(-2^{(3^{2})})+(-317^{3})\\\\\n&=317^{3}+(-317^{3})+8^{3}+(-2^{(3^{2})})\\\\\n&=8^{3}+(-2^{(3^{2})})\n\\end{align*} Since a number and its negation sum to $0$, we are left with $8^{3}+(-2^{(3^{2})})$. Because $8=2^3$, we get $$8^{3}+(-2^{(3^{2})})=(2^{3})^{3}+(-2^{(3^{2})}).$$ From the properties of exponents, we know that $(a^{m})^{n}=a^{mn}$ so $(2^{3})^{3}=2^9$.  We then have  $$(2^{3})^{3}+(-2^{(3^{2})})=2^9+(-2^9)$$ Because a number and its negation sum to $0$, we get that $2^9+(-2^9)=\\boxed{0}$."
-}

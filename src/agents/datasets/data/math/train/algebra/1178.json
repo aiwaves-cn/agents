@@ -1,6 +1,0 @@
-{
-    "problem": "The lines $-2x + y = k$ and $0.5x + y = 14$ intersect when $x = -8.4$. What is the value of $k$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We first find the $y$-coordinate of the intersection point by substituting $x = -8.4$ into the second equation.  This gives us $0.5(-8.4) + y = 14$, so $y = 14 - (0.5)(-8.4) = 14 -(-4.2) = 14 + 4.2 = 18.2$.  Substituting $x = -8.4$ and $y=18.2$ into the first equation gives  \\[k = -2x + y = -2(-8.4) + 18.2 = 16.8 + 18.2 = \\boxed{35}.\\]\n\nA faster way to solve this problem is to eliminate $y$ by subtracting the first equation from the second.  This gives us $0.5x - (-2x) = 14 - k$, so  $2.5x = 14-k$.  When $x = -8.4$, this gives us $14 - k = 2.5(-8.4) = -21$, and solving this equation gives $k = \\boxed{35}$."
-}

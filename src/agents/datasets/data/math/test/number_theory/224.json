@@ -1,6 +1,0 @@
-{
-    "problem": "Convert $222_{10}$ to base $13$.  Use digits A, B, and C if necessary.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "The largest power of $13$ which is smaller than $222$ is $13^2=169$. The largest multiple of $169$ less than $222$ is $1\\cdot 169$, and $222-1 \\cdot 169 = 53$. The largest power of $13$ which is smaller than $53$ is $13$, and the largest multiple of $13$ less than $53$ is $4\\cdot 13$. $53-4 \\cdot 13= 1$. Thus, $222=1 \\cdot 13^2 + 4 \\cdot 13^1 + 1 \\cdot 13^0$. So $222$ in base $13$ is $\\boxed{141_{13}}$."
-}

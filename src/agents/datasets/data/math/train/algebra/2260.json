@@ -1,6 +1,0 @@
-{
-    "problem": "The function $\\lfloor x\\rfloor$ is defined as the largest integer less than or equal to $x$. For example, $\\lfloor 5.67\\rfloor = 5$, $\\lfloor -\\tfrac 14\\rfloor = -1$, and $\\lfloor 8\\rfloor = 8$.\n\nWhat is the range of the function $$f(x) = \\lfloor x\\rfloor - x~?$$Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Note that if $0\\le x<1$, then $\\lfloor x\\rfloor = 0$, so $f(x)=-x$. Therefore, the range of $f(x)$ includes the interval $(-1,0]$. This is in fact the whole domain; $f(x)$ can't be less than or equal to $-1$, because $x$ and $\\lfloor x\\rfloor$ necessarily differ by less than $1$, and $f(x)$ can't be positive, because $\\lfloor x\\rfloor$ is by definition less than or equal to $x$.\n\nTherefore, the range of $f(x)$ is $\\boxed{(-1,0]}$."
-}

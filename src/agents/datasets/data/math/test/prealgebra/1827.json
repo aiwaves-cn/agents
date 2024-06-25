@@ -1,6 +1,0 @@
-{
-    "problem": "Three identical squares are placed side by side to form a rectangle with a perimeter of 104 inches. What is the area, in square inches, of each square?\n\n[asy]\nsize(150);\npair x = (2,0);\ndraw((-1,-1)-- (1,-1)--(1,1)--(-1,1)--cycle);\ndraw((-1,-1)+x-- (1,-1)+x--(1,1)+x--(-1,1)+x--cycle);\ndraw((-1,-1)-x-- (1,-1)-x--(1,1)-x--(-1,1)-x--cycle);\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "If we let $s$ be the side length of one square, we have that one side length makes up the height of the rectangle and three side lengths makes up the length of the rectangle. Then, in terms of $s$, the rectangle has a perimeter of $s+3s+s+3s=8s$. We know that the perimeter of the rectangle is $104$ inches, so we have that $8s=104$. Dividing both sides of this equation by $8$, we have that $s=13$. One square must have an area of $s^2=13^2=\\boxed{169}$ square inches."
-}

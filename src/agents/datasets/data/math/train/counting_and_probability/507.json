@@ -1,6 +1,0 @@
-{
-    "problem": "Two cards are dealt from a standard deck of 52 cards.  What is the probability that the first card dealt is a $\\diamondsuit$ and the second card dealt is a $\\spadesuit$?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Once a $\\diamondsuit$ is dealt, there are only 51 cards left in the deck, so the probability of the second card being a $\\spadesuit$ is $\\frac{13}{51}$, not $\\frac14.$ Therefore, the probability of both cards being the required suits is $\\frac14 \\times \\frac{13}{51} =\\boxed{ \\frac{13}{204}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find $\\frac{16}{25}\\left(\\frac{5}{2}\\right)^4$.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Recall that $\\left(\\frac{a}{b}\\right)^n=\\frac{a^n}{b^n}$. In this case, we have \\[\n\\frac{16}{25}\\left(\\frac{5}{2}\\right)^4 = \\frac{16}{25} \\cdot \\frac{5^4}{2^4} = \\frac{16 \\cdot 5^4}{25 \\cdot 2^4}\n\\]Now, note that $16=2^4$, $25=5^2$, and the exponent law $\\frac{a^m}{a^n}=a^{m-n}$, so we can simplify. \\[\n\\frac{16 \\cdot 5^4}{25 \\cdot 2^4} = \\frac{2^4 \\cdot 5^4}{5^2 \\cdot 2^4} = \\frac{2^4 \\cdot 5^4}{2^4 \\cdot 5^2} = \\frac{2^4}{2^4} \\cdot \\frac{5^4}{5^2} = 1 \\cdot 5^{4-2} = 5^2 = \\boxed{25}.\n\\]"
-}

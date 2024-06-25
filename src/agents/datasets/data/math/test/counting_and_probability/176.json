@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\dbinom{1001}{2}$.",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "\\begin{align*}\n\\dbinom{1001}{2} &= \\dfrac{1001!}{999!2!} \\\\\n&= \\dfrac{1001\\times 1000}{2\\times 1} \\\\\n&= 1001 \\times \\dfrac{1000}{2} \\\\\n&= 1001 \\times 500 \\\\\n&= \\boxed{500500}.\n\\end{align*}"
-}

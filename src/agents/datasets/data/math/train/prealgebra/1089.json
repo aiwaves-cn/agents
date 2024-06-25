@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate $(-1)^{47} + 2^{(3^3+4^2-6^2)}$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Recall that $(-a)^n=-a^n$ when $n$ is odd. Because 47 is odd, $(-1)^{47}=-1^{47}=-1$. Evaluating the remaining exponents, we get \\begin{align*}\n(-1)^{47} + 2^{(3^3+4^2-6^2)}&= -1 + 2^{(3^3+4^2-6^2)} \\\\\n&=-1 + 2^{(27+16-36)} \\\\\n&=-1 + 2^{(43-36)} \\\\\n&=-1 + 2^{7} \\\\\n&=-1+128 \\\\\n&=\\boxed{127}\n\\end{align*}"
-}

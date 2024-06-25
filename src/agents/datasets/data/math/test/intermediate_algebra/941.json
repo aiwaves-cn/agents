@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct four-tuples $(a,b,c,d)$ of rational numbers are there with \\[a\\log_{10} 2+b\\log_{10} 3+c\\log_{10} 5+d\\log_{10} 7=2005?\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The given equation is equivalent to \\[\n\\log_{10}\\left(2^a\\cdot 3^b\\cdot 5^c\\cdot 7^d\\right)= 2005, \\quad \\text{so} \\quad 2^a\\cdot 3^b\\cdot 5^c\\cdot 7^d = 10^{2005} = 2^{2005}\\cdot 5^{2005}.\n\\]Express $a$, $b$, $c$ and $d$ as simplified fractions and let $M$ be the least common multiple of their denominators. It follows that \\[\n2^{Ma}\\cdot 3^{Mb}\\cdot 5^{Mc}\\cdot 7^{Md} = 2^{2005M}\\cdot 5^{2005M}.\n\\]Since the exponents are all integers, the Fundamental Theorem of Arithmetic implies that \\[\nMa = 2005M, \\quad Mb = 0, \\quad Mc= 2005M,\\quad\\text{and}\\quad Md = 0.\n\\]Hence the only solution is $(a, b, c, d) = ( 2005, 0, 2005, 0)$, and the answer is $\\boxed{1}$."
-}

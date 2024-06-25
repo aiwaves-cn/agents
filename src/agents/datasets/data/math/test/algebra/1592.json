@@ -1,6 +1,0 @@
-{
-    "problem": "If $x \\geq 0$ and $y \\geq 0$, how many lattice points does the line $y = -2x + 18$ pass through? (A lattice point is a point with integer coordinates.)",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We look at the $x$-intercept and the $y$-intercept. Since $y = -2(x - 9)$, at $x = 0,\\; y = 18$, and at $x = 9,\\; y = 0$, the $y$-intercept is $(0,18)$ and the $x$-intercept is $(9,0)$. In order to keep both $x$ and $y$ integral, we investigate further. Since the slope is $-2$, a negative integer, and $y$ must be a nonnegative integer, $x - 9$ must be a nonpositive integer. This means that all the integer $x$ values between 0 and $9$, inclusive are valid, since $x \\leq 9$ and so $x - 9 \\leq 0$. Therefore, there are $\\boxed{10}$ total lattice points."
-}

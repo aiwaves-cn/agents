@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the squares of all real values of $x$ for which $|2-|x| |=1$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The absolute value of a number equals 1 if and only if the number equals either $-1$ or 1.  Setting $2-|x|$ equal to 1 and to $-1$, we solve \\begin{align*}\n2-|x|=1 \\quad &\\text{or} \\quad 2-|x|=-1 \\\\\n|x|=1 \\quad &\\text{or} \\quad |x|=3 \\\\\nx=\\pm1 \\quad &\\text{or} \\quad x=\\pm3.\n\\end{align*} The sum of the squares of these four solutions is $(-1)^2+1^2+(-3)^2+3^2=\\boxed{20}$."
-}

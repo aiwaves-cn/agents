@@ -1,6 +1,0 @@
-{
-    "problem": "A cylindrical water tank is $\\frac{1}{5}$ full. If three liters were added, the tank would be $\\frac{1}{4}$ full. How many liters does the tank hold when it is full?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let the number of liters of water in the tank originally be $w$, and let the number of liters of water the tank can hold when it is full be $c$. Originally, we have the equation $\\frac{w}{c}=\\frac{1}{5}$. Cross multiplying, we have $c = 5w$, or $w=\\frac{c}{5}$. After three liters of water are added, we have the equation $\\frac{w+3}{c} = \\frac{1}{4}$. Cross multiplying, we have $c=4w+12$. Substituting the previous expression for $w$ into this last equation to eliminate $w$, we get $c=4(\\frac{c}{5})+12$, or $c=60$. Thus, the number of liters of water the tank can hold is $\\boxed{60}$."
-}

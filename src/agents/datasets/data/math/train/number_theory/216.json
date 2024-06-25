@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)$ is a function, then we define the function $f^{(n)}(x)$ to be the result of $n$ applications of $f$ to $x$, where $n$ is a positive integer. For example, $f^{(3)}(x)=f(f(f(x)))$.\n\nWe define the $\\textit{order}$ of an input $x$ with respect to $f$ to be the smallest positive integer $m$ such that $f^{(m)}(x)=x$.\n\nNow suppose $f(x)$ is the function defined as the remainder when $x^2$ is divided by $11$. What is the order of $5$ with respect to this function $f$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "By computing the first few $f^{(n)}(5)$, we get \\begin{align*}\nf^{(1)}(5)=f(5) = 3,\\\\\nf^{(2)}(5)=f(f^{(1)}(5))=f(3)=9,\\\\\nf^{(3)}(5)=f(f^{(2)}(5))=f(9)=4,\\\\\nf^{(4)}(5)=f(f^{(3)}(5))=f(4)=5.\n\\end{align*}Thus, the desired order is $\\boxed{4}$."
-}

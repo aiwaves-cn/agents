@@ -1,6 +1,0 @@
-{
-    "problem": "When the product $(3x+2y+1)(x+4y+5)$ is expanded, what is the sum of the coefficients of the terms which contain a nonzero power of $y$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We multiply out using the distributive property:\n\n\\begin{align*}\n&\\phantom{==}(3x+2y+1)(x+4y+5)\\\\\n&=3x(x+4y+5)+2y(x+4y+5)+1(x+4y+5)\\\\\n&=3x^2+12xy+15x+2xy+8y^2+10y+x+4y+5\\\\\n&=3x^2+14xy+16x+8y^2+14y+5.\n\\end{align*}Those terms which contain some power of $y$ are $14xy$, $8y^2$, and $14y$, and the sum of the coefficients is $14+8+14=\\boxed{36}$."
-}

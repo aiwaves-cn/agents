@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = x^7 + ax^3 + cx$  If $f(5) = 3,$ then find $f(-5).$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "$f$ is an odd function, hence $f(x) = -f(-x)$. So $f(5) = -f(-5)$, which means $f(-5) = -f(5) = \\boxed{-3}.$"
-}

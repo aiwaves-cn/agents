@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be real numbers such that\n\\[a^2 + b^2 + c^2 + d^2 = 4.\\]Find the maximum value of $a^3 + b^3 + c^3 + d^3.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "From the equation $a^2 + b^2 + c^2 + d^2 = 4,$ $a^2 \\le 4,$ so $a \\le 2,$ or $2 - a \\ge 0.$  Then\n\\[(2 - a) a^2 \\ge 0,\\]so $a^3 \\le 2a^2.$  Similarly, $b^3 \\le 2b^2,$ $c^3 \\le 2c^2,$ and $d^3 \\le 2d^2.$  Adding all these inequalities, we get\n\\[a^3 + b^3 + c^3 + d^3 \\le 2(a^2 + b^2 + c^2 + d^2) = 8.\\]Equality occurs when $a = 2$ and $b = c = d = 0,$ so the maximum value is $\\boxed{8}.$"
-}

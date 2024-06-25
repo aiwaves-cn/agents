@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest value of $n$ such that $3x^2 +nx + 72$ can be factored as the product of two linear factors with integer coefficients.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "When we factor $3x^2 + nx + 72$, our two factors are of the form $(3x + A)(x+B)$, where $A$ and $B$ are integers.  We must have $AB = 72$, and we want $3B +A$ to be as large as possible (because $3B+A$ is the coefficient of $x$ when $(3x+A)(x+B)$ is expanded). We make $3B + A$ as large as possible by letting $B=72$ and $A=1$; any other possibility reduces $3B$ much more than $A$ increases.  Therefore, the largest possible value of $n$ is $3B+A = 3(72) +1 =\\boxed{217}$."
-}

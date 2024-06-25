@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ and $c$ be distinct real numbers.  Simplify the expression\n\\[\\frac{(x + a)^2}{(a - b)(a - c)} + \\frac{(x + b)^2}{(b - a)(b - c)} + \\frac{(x + c)^2}{(c - a)(c - b)}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[p(x) = \\frac{(x + a)^2}{(a - b)(a - c)} + \\frac{(x + b)^2}{(b - a)(b - c)} + \\frac{(x + c)^2}{(c - a)(c - b)}.\\]Then\n\\begin{align*}\np(-a) &= \\frac{(-a + a)^2}{(a - b)(a - c)} + \\frac{(-a + b)^2}{(b - a)(b - c)} + \\frac{(-a + c)^2}{(c - a)(c - b)} \\\\\n&= \\frac{(b - a)^2}{(b - a)(b - c)} + \\frac{(c - a)^2}{(c - a)(c - b)} \\\\\n&= \\frac{b - a}{b - c} + \\frac{c - a}{c - b} \\\\\n&= \\frac{b - a}{b - c} + \\frac{a - c}{b - c} \\\\\n&= \\frac{b - c}{b - c} \\\\\n&= 1.\n\\end{align*}Similarly, $p(-b) = p(-c) = 1.$  Since $p(x) = 1$ for three distinct values of $x,$ by the Identity Theorem, $p(x) = \\boxed{1}$ for all $x.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "To start to eliminate the logarithms, we raise $8$ to the power of both sides, giving \\[8^{\\log_2(\\log_8 x)} = 8^{\\log_8(\\log_2 x)}\\]or \\[2^{3\\log_2(\\log_8 x)} = 8^{\\log_8(\\log_2 x)},\\]so $(\\log_8 x)^3 = \\log_2 x.$ Now, by the change-of-base formula, $\\log_8 x = \\frac{\\log_2 x}{\\log_2 8} = \\frac{\\log_2 x}{3},$ so we have \\[\\left(\\frac{\\log_2 x}{3}\\right)^3 = \\log_2 x.\\]Thus $(\\log_2 x)^2 = 3^3 = \\boxed{27}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Express as a common fraction: $(0.\\overline{09})(0.\\overline{7})$.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We begin by expressing $0.\\overline{09}$ and $0.\\overline{7}$ as common fractions.\n\nTo express the number $0.\\overline{09}$ as a fraction, we call it $x$ and subtract it from $100x$: $$\\begin{array}{r r c r@{}l}\n&100x &=& 9&.090909\\ldots \\\\\n- &x &=& 0&.090909\\ldots \\\\\n\\hline\n&99x &=& 9 &\n\\end{array}$$ This shows that $0.\\overline{09} = \\frac{9}{99} = \\frac{1}{11}$.\n\nWe can do a similar trick to express $0.\\overline{7}$ as a fraction. Call this number $y$ and subtract it from $10y$: $$\\begin{array}{r r c r@{}l}\n&10y &=& 7&.77777\\ldots \\\\\n- &y &=& 0&.77777\\ldots \\\\\n\\hline\n&9y &=& 7 &\n\\end{array}$$ This shows that $0.\\overline{7} = \\frac{7}{9}$.\n\nTherefore, $(0.\\overline{09})(0.\\overline{7})=\\frac{1}{11} \\cdot \\frac{7}{9} = \\boxed{\\frac{7}{99}}$."
-}

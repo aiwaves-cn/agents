@@ -1,6 +1,0 @@
-{
-    "problem": "The average value of all the pennies, nickels, dimes, and quarters in Paula's purse is 20 cents.  If she had one more quarter, the average value would be 21 cents.  How many dimes does she have in her purse?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If $n$ is the number of coins in Paula's purse, then their total value is $20n$ cents. If she had one more quarter, she would have $n+1$ coins whose total value in cents could be expressed both as $20n+25$ and as $21(n+1)$. Therefore \\[\n20n + 25 = 21 (n+1), \\quad \\text{so} \\quad n=4.\n\\]Since Paula has four coins with a total value of 80 cents, she must have three quarters and one nickel, so the number of dimes is $\\boxed{0}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many different positive three-digit integers can be formed using only the digits in the set $\\{2, 3, 5, 5, 5, 6, 6\\}$ if no digit may be used more times than it appears in the given set of available digits?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "If all three digits are different, there are 4 choices for the first digit, 3 for the second, and 2 for the third, giving $(4)(3)(2) = 24$ integers. If two of them are the same, the repeated digit digit is either 5 or 6. There are 2 choices for the repeated digit, then 3 choices for the non-repeating digit, and 3 ways to arrange these digits (for example, if the repeating digit is 5 and the non-repeating digit is 6, we can have 655, 565, and 556). This gives $(2)(3)(3) = 18$ integers. Finally, if all three digits are the same, the number must be 555. So there are $24+18+1 = \\boxed{43}$ possible integers."
-}

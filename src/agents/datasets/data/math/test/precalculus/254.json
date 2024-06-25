@@ -1,6 +1,0 @@
-{
-    "problem": "A plane contains the vector $\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ and has normal vector $\\begin{pmatrix} 4 \\\\ 5 \\\\ 6 \\end{pmatrix}.$  A line contains the vector $\\begin{pmatrix} -1 \\\\ 0 \\\\ 5 \\end{pmatrix}$ and has direction vector $\\begin{pmatrix} -1 \\\\ -1 \\\\ 2 \\end{pmatrix}.$  Find the point of intersection of the plane and line.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The line is parameterized by\n\\[\\begin{pmatrix} -1 - t \\\\ -t \\\\ 5 + 2t \\end{pmatrix}.\\]If this vector belongs in the plane, then its difference with $\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ must be orthogonal to $\\begin{pmatrix} 4 \\\\ 5 \\\\ 6 \\end{pmatrix}.$  Thus,\n\\[\\begin{pmatrix} -2 - t \\\\ -2 - t \\\\ 2 + 2t \\end{pmatrix} \\cdot \\begin{pmatrix} 4 \\\\ 5 \\\\ 6 \\end{pmatrix} = 0.\\]Then $(-2 - t)(4) + (-2 - t)(5) + (2 + 2t)(6) = 0.$  Solving, we find $t = 2.$  Hence, the point of intersection is $\\boxed{\\begin{pmatrix} -3 \\\\ -2 \\\\ 9 \\end{pmatrix}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The points $A = (3,-4,2),$ $B = (5,-8,5),$ $C = (4,-3,0),$ and $D = (6,-7,3)$ in space form a flat quadrilateral.  Find the area of this quadrilateral.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{a} = \\begin{pmatrix} 3 \\\\ -4 \\\\ 2 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} 5 \\\\ -8 \\\\ 5 \\end{pmatrix},$ $\\mathbf{c} = \\begin{pmatrix} 4 \\\\ -3 \\\\ 0 \\end{pmatrix},$ and $\\mathbf{d} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}.$  Note that\n\\[\\mathbf{b} - \\mathbf{a} = \\begin{pmatrix} 2 \\\\ -4 \\\\ 3 \\end{pmatrix} = \\mathbf{d} - \\mathbf{c},\\]so quadrilateral $ABDC$ is a parallelogram.\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, D;\n\nA = (0,0);\nB = (7,2);\nC = (1,3);\nD = B + C;\n\ndraw(A--B--D--C--cycle);\n\nlabel(\"$A = (3,-4,2)$\", A, SW);\nlabel(\"$B = (5,-8,5)$\", B, SE);\nlabel(\"$C = (4,-3,0)$\", C, NW);\nlabel(\"$D = (6,-7,3)$\", D, NE);\n[/asy]\n\nThe area of the parallelogram is then given by\n\\[\\|(\\mathbf{b} - \\mathbf{a}) \\times (\\mathbf{c} - \\mathbf{a})\\| = \\left\\| \\begin{pmatrix} 2 \\\\ -4 \\\\ 3 \\end{pmatrix} \\times \\begin{pmatrix} 1 \\\\ 1 \\\\ -2 \\end{pmatrix} \\right\\| = \\left\\| \\begin{pmatrix} 5 \\\\ 7 \\\\ 6 \\end{pmatrix} \\right\\| = \\boxed{\\sqrt{110}}.\\]"
-}

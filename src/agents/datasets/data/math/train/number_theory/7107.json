@@ -1,6 +1,0 @@
-{
-    "problem": "Let $N=123456789101112\\dots4344$ be the $79$-digit number that is formed by writing the integers from $1$ to $44$ in order, one after the other. What is the remainder when $N$ is divided by $45$?\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 4\\qquad\\textbf{(C)}\\ 9\\qquad\\textbf{(D)}\\ 18\\qquad\\textbf{(E)}\\ 44$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We will consider this number $\\bmod\\ 5$ and $\\bmod\\ 9$. By looking at the last digit, it is obvious that the number is $\\equiv 4\\bmod\\ 5$. To calculate the number $\\bmod\\ 9$, note that\n\\[123456\\cdots 4344 \\equiv 1+2+3+4+5+6+7+8+9+(1+0)+(1+1)+\\cdots+(4+3)+(4+4) \\equiv 1+2+\\cdots+44 \\bmod\\ 9,\\]\nso it is equivalent to\n\\[\\frac{44\\cdot 45}{2} = 22\\cdot 45 \\equiv 0\\bmod\\ 9.\\]\nLet $x$ be the remainder when this number is divided by $45$. We know that $x\\equiv 0 \\pmod {9}$ and $x\\equiv 4 \\pmod {5}$, so by the Chinese remainder theorem, since $9(-1)\\equiv 1 \\pmod{5}$, $x\\equiv 5(0)+9(-1)(4) \\pmod {5\\cdot 9}$, or $x\\equiv -36 \\equiv \\boxed{9} \\pmod {45}$."
-}

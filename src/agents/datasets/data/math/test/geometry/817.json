@@ -1,6 +1,0 @@
-{
-    "problem": "In the circle with center $Q$, radii $AQ$ and $BQ$ form a right angle. The two smaller regions are tangent semicircles, as shown. The radius of the circle with center $Q$ is 14 inches. What is the radius of the smaller semicircle? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $C$ and $D$ be the centers of the larger and smaller semicircles, respectively, and let $r$ be the radius of the smaller semicircle.  We have $QD=QB-DB=14-r$ and $QC=7$, so we can apply the Pythagorean theorem to triangle $QCD$ to obtain  \\[\n(14-r)^2+7^2=(7+r)^2.\n\\] After squaring both binomials and subtracting $7^2+r^2$ from both sides simplifies to $196-28r=14r$.  Adding $28r$ to both sides and dividing by 42, we find $r=\\boxed{\\frac{14}{3}}$ inches.\n\n[asy]\nsize(6cm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\ndotfactor=4;\n\ndraw((1,0)..(0,1)..(-1,0)..(0,-1)..cycle);\ndraw((-1,0)--(0,0)--(0,-1));\ndraw((0,0)..(-.5,-.5)..(-1,0));\ndraw((0,-1)..(-1/3,-2/3)..(0,-1/3));\ndraw((-1/2,0)--(0,-2/3));\nlabel(\"$Q$\",(0,0),NE);\nlabel(\"$A$\",(-1,0),W);\nlabel(\"$B$\",(0,-1),S);\nlabel(\"$C$\",(-1/2,0),N);\nlabel(\"$D$\",(0,-2/3),E);\ndot((-1/2,0));\ndot((0,-2/3));\nlabel(\"$7$\",(-7/20,-1/5),E);\nlabel(\"$r$\",(-1/10,-8/15),SW);[/asy]"
-}

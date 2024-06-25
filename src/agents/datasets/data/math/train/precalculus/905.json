@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered quadruples $(a,b,c,d)$ of real numbers such that\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}^{-1} = \\renewcommand{\\arraystretch}{1.5} \\begin{pmatrix} \\frac{1}{a} & \\frac{1}{b} \\\\ \\frac{1}{c} & \\frac{1}{d} \\end{pmatrix} \\renewcommand{\\arraystretch}{1}.\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "If $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}^{-1} = \\renewcommand{\\arraystretch}{1.5} \\begin{pmatrix} \\frac{1}{a} & \\frac{1}{b} \\\\ \\frac{1}{c} & \\frac{1}{d} \\end{pmatrix} \\renewcommand{\\arraystretch}{1},$ then\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\renewcommand{\\arraystretch}{1.5} \\begin{pmatrix} \\frac{1}{a} & \\frac{1}{b} \\\\ \\frac{1}{c} & \\frac{1}{d} \\end{pmatrix} \\renewcommand{\\arraystretch}{1} = \\mathbf{I}.\\]This becomes\n\\[\\renewcommand{\\arraystretch}{1.5} \\begin{pmatrix} 1 + \\frac{b}{c} & \\frac{a}{b} + \\frac{b}{d} \\\\ \\frac{c}{a} + \\frac{d}{c} & \\frac{c}{b} + 1 \\end{pmatrix} \\renewcommand{\\arraystretch}{1} = \\mathbf{I}.\\]Then $1 + \\frac{b}{c} = 1,$ so $\\frac{b}{c} = 0,$ which means $b = 0.$  But then $\\frac{1}{b}$ is undefined, so there are $\\boxed{0}$ solutions."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $a\\equiv 18\\pmod{42}$ and $b\\equiv 73\\pmod{42}$, then for what integer $n$ in the set $\\{100,101,102,\\ldots,140,141\\}$ is it true that $$a-b\\equiv n\\pmod{42}~?$$",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Reading all congruences $\\pmod{42}$, we have \\begin{align*}\na-b &\\equiv 18-73 \\\\\n&\\equiv -55 \\\\\n&\\equiv -55+42+42 \\\\\n&\\equiv 29\\pmod{42}.\n\\end{align*}That's great, except we want to find $n$ with $100\\leq n<142$.  Therefore we should add copies of 42 until we get into this range: \\[29\\equiv 29+42\\equiv71\\pmod{42}.\\]That's not large enough. \\[71\\equiv71+42\\equiv113\\pmod{42}.\\]That is in our range, so $n=\\boxed{113}$."
-}

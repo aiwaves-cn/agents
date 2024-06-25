@@ -1,6 +1,0 @@
-{
-    "problem": "The number 1341 can be written as the sum of three consecutive positive integers. What is the largest of these integers?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Let the three integers be $n-1$, $n$, $n+1$.  We have  $$(n-1)+n+(n+1) = 1341,$$ so $3n=1341$, which gives $n=447$.\n\nThe largest of the three numbers is $n+1=\\boxed{448}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=g(g(x))-g(x)$ and $g(x)=2x-1$, find $f(3)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We have $f(3) = g(g(3)) - g(3)$.  Since $g(3) = 2(3) - 1 = 5$, we have $f(3) = g(g(3)) - g(3) = g(5) - 5 = 2(5)-1-5 = \\boxed{4}$."
-}

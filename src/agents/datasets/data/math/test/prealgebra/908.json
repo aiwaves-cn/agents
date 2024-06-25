@@ -1,6 +1,0 @@
-{
-    "problem": "A stairway with three steps has three risers that are each 8 inches high and three treads that are each 10 inches deep. What is the area, in square inches, of this figure that is the side panel of the stairway?\n\n[asy]size(101);\nreal textsize = 10pt;\ndraw((0,0)--(30,0)--(30,8)--(20,8)--(20,16)--(10,16)--(10,24)--(0,24)--cycle);\ndraw((31,0)--(33,0)^^(32,0)--(32,8)^^(31,8)--(33,8));\nlabel(\"$8''$ riser\",(33,4),E,fontsize(textsize));\ndraw((10,25)--(10,27)^^(10,26)--(20,26)^^(20,25)--(20,27));\nlabel(\"$10''$\",(15,27),N,fontsize(textsize));\nlabel(\"tread\",(15,32),N,fontsize(textsize));[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We can see that this figure is composed of six $8$ inch by $10$ inch rectangles. Thus, the total area is $6 \\cdot 8 \\cdot 10 = \\boxed{480}$ square inches."
-}

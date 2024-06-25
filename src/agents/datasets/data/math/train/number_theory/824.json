@@ -1,6 +1,0 @@
-{
-    "problem": "Find $10110_2\\times10100_2\\div10_2$. Express your answer in base 2.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "It is much easier to find $10110_2\\div10_2$ and then multiply by $10100_2$ than it is to do the calculations in the original order. For $10110_2\\div10_2$, since the last digit of $10110_2$ is a 0, we can simply take it off to get $1011_2$. This is similar to base 10, where $10110_{10}\\div10_{10}=1011_{10}$. In base 2, each place represents a power of 2, and since we're dividing by 2, each place goes down by a power 2, so each digit shifts to the right. Now we find the product of $1011_2$ and $10100_2$. $$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c}\n& & &1 &0 & 1 & 1_2 & & \\\\\n& & & \\times & 1& 0 & 1& 0 & 0_2 \\\\\n\\cline{1-9}& & &1 &0 &1 &1 & & \\\\\n& & & & & &0 & & \\\\\n& 1 &\\stackrel{1}{0}&1 &1 &0 &0 &\\downarrow &\\downarrow \\\\\n\\cline{1-9}\n&1 &1 &0 &1 &1 &1 &0 &0_2 \\\\\n\\end{array}$$The answer is $\\boxed{11011100_2}$."
-}

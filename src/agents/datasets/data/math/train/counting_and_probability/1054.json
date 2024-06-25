@@ -1,6 +1,0 @@
-{
-    "problem": "Two dice are tossed. What is the probability that the sum is greater than three?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We compute the probability that the sum is three or less and subtract from 1. A sum of 2 or 3 can be obtained only with the following tosses: $(1,1), (2,1), (1,2)$. There are 36 total toss possibilities, so the probability of getting a sum of 2 or 3 is $\\frac{3}{36} = \\frac{1}{12}$. Therefore, the probability of getting a sum greater than 3 is $1-\\frac{1}{12} = \\boxed{\\frac{11}{12}}$."
-}

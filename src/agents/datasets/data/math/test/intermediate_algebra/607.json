@@ -1,6 +1,0 @@
-{
-    "problem": "Find the greatest integer less than $(\\sqrt{7} + \\sqrt{5})^6.$  (Do not use a calculator!)",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = \\sqrt{7} + \\sqrt{5}$ and $y = \\sqrt{7} - \\sqrt{5}.$\n\nFirst, we can square $x = \\sqrt{7} + \\sqrt{5}$ and $y = \\sqrt{7} - \\sqrt{5},$ to get\n\\begin{align*}\nx^2 &= (\\sqrt{7} + \\sqrt{5})^2 = 7 + 2 \\sqrt{35} + 5 = 12 + 2 \\sqrt{35}, \\\\\ny^2 &= (\\sqrt{7} - \\sqrt{5})^2 = 7 - 2 \\sqrt{35} + 5 = 12 - 2 \\sqrt{35}.\n\\end{align*}Note that $x^2$ and $y^2$ are radical conjugates.  Also, $x^2 y^2 = (12 + 2 \\sqrt{35})(12 - 2 \\sqrt{35}) = 12^2 - 2^2 \\cdot 35 = 4,$ so\n\\[y^2 = \\frac{4}{x^2} = \\frac{4}{12 + 2 \\sqrt{35}} < 1.\\]Then\n\\[x^4 = (12 + 2 \\sqrt{35})^2 = 12^2 + 2 \\cdot 12 \\cdot 2 \\sqrt{35} + 2^2 \\cdot 35 = 284 + 48 \\sqrt{35},\\]and\n\\begin{align*}\nx^6 &= x^2 \\cdot x^4 \\\\\n&= (12 + 2 \\sqrt{35})(284 + 48 \\sqrt{35}) \\\\\n&= 12 \\cdot 284 + 12 \\cdot 48 \\sqrt{35} + 2 \\sqrt{35} \\cdot 284 + 2 \\cdot \\sqrt{35} \\cdot 48 \\cdot \\sqrt{35} \\\\\n&= 6768 + 1144 \\sqrt{35}.\n\\end{align*}Then $y^6$ is the radical conjugate of $x^6,$ so $y^6 = 6768 - 1144 \\sqrt{35}.$  Hence,\n\\[x^6 + y^6 = (6768 + 1144 \\sqrt{35}) + (6768 - 1144 \\sqrt{35}) = 13536.\\]Since $0 < y^6 < 1,$ the greatest integer less than $x^6$ is $\\boxed{13535}.$"
-}

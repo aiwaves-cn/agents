@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{M} = \\begin{pmatrix} 1 & -4 \\\\ 1 & 2 \\end{pmatrix}.$  Find constants $a$ and $b$ so that\n\\[\\mathbf{M}^{-1} = a \\mathbf{M} + b \\mathbf{I}.\\]Enter the ordered pair $(a,b).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[\\begin{pmatrix} 1 & -4 \\\\ 1 & 2 \\end{pmatrix}^{-1} = \\frac{1}{(1)(2) - (-4)(1)} \\begin{pmatrix} 2 & 4 \\\\ -1 & 1 \\end{pmatrix} = \\begin{pmatrix} \\frac{1}{3} & \\frac{2}{3} \\\\ -\\frac{1}{6} & \\frac{1}{6} \\end{pmatrix}.\\]Also,\n\\[a \\mathbf{M} + b \\mathbf{I} = a \\begin{pmatrix} 1 & -4 \\\\ 1  & 2 \\end{pmatrix} + b \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} a + b & -4a \\\\ a & 2a + b \\end{pmatrix}.\\]Thus, $a + b = \\frac{1}{3},$ $-4a = \\frac{2}{3},$ $a = -\\frac{1}{6},$ and $2a + b = \\frac{1}{6}.$  Solving, we find $(a,b) = \\boxed{\\left( -\\frac{1}{6}, \\frac{1}{2} \\right)}.$"
-}

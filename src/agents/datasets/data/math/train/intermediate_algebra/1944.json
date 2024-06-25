@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be distinct real numbers such that the roots of $x^2 - 10ax - 11b = 0$ are $c$ and $d,$ and the roots of $x^2 - 10cx - 11d = 0$ are $a$ and $b.$  Find the value of $a + b + c + d.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas,\n\\begin{align*}\nc + d &= 10a, \\\\\ncd &= -11b, \\\\\na + b &= 10c, \\\\\nab &= -11d.\n\\end{align*}From the first equation,\n\\[d = 10a - c.\\]From the third equation,\n\\[b = 10c - a.\\]Substituting into the second and fourth equations, we get\n\\begin{align*}\nc(10a - c) &= -11(10c - a), \\\\\na(10c - a) &= -11(10a - c).\n\\end{align*}Expanding, we get\n\\begin{align*}\n10ac - c^2 &= -110c + 11a, \\\\\n10ac - a^2 &= -110a + 11c.\n\\end{align*}Subtracting these equations, we get\n\\[a^2 - c^2 = 121a - 121c,\\]so $(a + c)(a - c) = 121(a - c).$  Since $a$ and $c$ are distinct, we can divide both sides by $a - c,$ to get\n\\[a + c = 121.\\]Hence, $a + b + c + d = 10c + 10a = 10(a + c) = \\boxed{1210}.$"
-}

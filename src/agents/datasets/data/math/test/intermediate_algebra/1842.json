@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered triples $(x,y,z)$ of real numbers such that\n\\[x^4 + y^4 + z^4 - 4xyz = -1.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the equation as\n\\[x^4 + y^4 + z^4 + 1 = 4xyz.\\]Then $xyz$ must be positive.\n\nLet $a = |x|,$ $b = |y|,$ and $c = |z|,$ so $abc = |xyz| = xyz.$  Hence,\n\\[a^4 + b^4 + c^4 + 1 = 4abc.\\]By AM-GM,\n\\[a^4 + b^4 + c^4 + 1 \\ge 4 \\sqrt[4]{a^4 b^4 c^4} = 4abc.\\]Since we have the equality case, we must have $a = b = c = 1.$  Hence $|x| = |y| = |z| = 1.$\n\nSince $xyz$ is positive, the only possible triples are $(1,1,1),$ $(1,-1,-1),$ $(-1,1,-1),$ and $(-1,-1,1),$ giving us $\\boxed{4}$ solutions."
-}

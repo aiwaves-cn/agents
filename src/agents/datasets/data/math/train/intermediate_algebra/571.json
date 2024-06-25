@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z$ be a complex number satisfying $z^2 + z + 1 = 0.$  Compute\n\\[z^{97} + z^{98} + z^{99} + z^{100} + z^{101}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $z^2 + z + 1 = 0,$ $(z - 1)(z^2 + z + 1) = 0.$  This expands as $z^3 - 1 = 0,$ so $z^3 = 1.$  Therefore,\n\\[z^{97} = z^{32 \\cdot 3 + 1} = (z^3)^{32} z = z.\\]Similarly, we can reduce $z^{98},$ $z^{99},$ $z^{100},$ $z^{101},$ to $z^2,$ 1, $z,$ $z^2,$ respectively, so\n\\begin{align*}\nz^{97} + z^{98} + z^{99} + z^{100} + z^{101} &= z + z^2 + 1 + z + z^2 \\\\\n&= (1 + z + z^2) + (1 + z + z^2) - 1 \\\\\n&= \\boxed{-1}.\n\\end{align*}"
-}

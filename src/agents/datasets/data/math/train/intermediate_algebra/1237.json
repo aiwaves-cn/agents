@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of the function \\[g(t) = \\frac{t^2+\\tfrac34 t}{t^2+1},\\]where $t$ can be any real number. (Give your answer in interval notation.)",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y$ be a number in the range of $g.$ This means that there is a real number $t$ such that \\[y = \\frac{t^2+\\tfrac34 t}{t^2+1}.\\]Multiplying both sides by $t^2+1$ and rearranging, we get the equation \\[(y-1)t^2 - \\tfrac34 t + y = 0.\\]Since $t^2+1 \\neq 0$ for all $t,$ our steps are reversible, so $y$ is in the range of $g$ if and only if this equation has a real solution for $t.$ In turn, this equation has a real solution for $t$ if and only if the discriminant of this quadratic is nonnegative. Therefore, the range of $g$ consists exactly of the values of $y$ which satisfy \\[\\left(\\tfrac34\\right)^2 - 4(y-1)y \\ge 0,\\]or \\[0 \\ge 64y^2 -64y -9.\\]This quadratic factors as \\[0 \\ge (8y-9)(8y+1),\\]which means that the solutions to the inequality are given by $-\\tfrac18 \\le y \\le \\tfrac98.$ Therefore, the range of $g$ is the closed interval $\\boxed{[-\\tfrac18, \\tfrac98]}.$"
-}

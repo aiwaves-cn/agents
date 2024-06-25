@@ -1,6 +1,0 @@
-{
-    "problem": "What is the minimum value of $5x^2-20x+1357$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $y=5x^2 -20x + 1357$.  First, complete the square as follows: $y=5x^2-20x+1357=5(x^2-4x)+1357$. To complete the square, we need to add $\\left(\\dfrac{4}{2}\\right)^2=4$ after the $-4x$. So we have $y+20=5\\left(x^2-4x+4\\right)+1357$. This gives $y=5\\left(x-2\\right)^2+1337$.\n\nNow, since $\\left(x-2\\right)^2\\ge0$, the minimum value is when the squared term is equal to $0$.  So the minimum value is $y=5\\left(x-2\\right)^2+1337=5\\cdot0+1337=\\boxed{1337}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $m$ is a real number and $x^2+mx+4$ has two distinct real roots, then what are the possible values of $m$?  Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "By considering the expression $\\frac{-b\\pm \\sqrt{b^2-4ac}}{2a}$ for the roots of $ax^2+bx+c$, we find that the roots are real and distinct if and only if the discriminant $b^2-4ac$ is positive. So the roots of $x^2+mx+4$ are real and positive when $m^2-4(1)(4) > 0$.  Simplifying and factoring the left-hand side, we find $(m-4)(m+4) > 0$, which implies $m\\in \\boxed{(-\\infty,-4)\\cup (4,\\infty)}$."
-}

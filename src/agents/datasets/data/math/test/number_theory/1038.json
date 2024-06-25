@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that a $30$-digit integer $N$ is composed of thirteen $7$s and seventeen $3$s. What is the remainder when $N$ is divided by $36$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "By the Chinese Remainder Theorem, it suffices to find the remainders when $N$ is divided by $4$ and $9$. The last two digits of $N$ must be one of $33, 37, 73,$ or $77$; each of these leave a remainder of $1$ after division by $4$. By the divisibility property of $4$, it follows that $N \\equiv 1 \\pmod{4}$.\n\nThe sum of the digits of $N$ is equal to $13 \\times 7 + 17 \\times 3 = 142 = 15 \\times 9 + 7$. This leaves a remainder of $7$ after division by $9$, so it follows that $N \\equiv 7 \\pmod{9}$.\n\nBy the Chinese Remainder Theorem and inspection, it follows that $N \\equiv 25 \\pmod{36}$ satisfies the two congruences, and so $N$ leaves a remainder of $\\boxed{25}$ upon division by $36$."
-}

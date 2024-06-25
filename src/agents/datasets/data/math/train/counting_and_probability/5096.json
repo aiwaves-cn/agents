@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A = \\{1, 2, 3, 4, 5, 6, 7\\}$, and let $N$ be the number of functions $f$ from set $A$ to set $A$ such that $f(f(x))$ is a constant function. Find the remainder when $N$ is divided by $1000$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Any such function can be constructed by distributing the elements of $A$ on three tiers.\nThe bottom tier contains the constant value, $c=f(f(x))$ for any $x$. (Obviously $f(c)=c$.)\nThe middle tier contains $k$ elements $x\\ne c$ such that $f(x)=c$, where $1\\le k\\le 6$.\nThe top tier contains $6-k$ elements such that $f(x)$ equals an element on the middle tier.\nThere are $7$ choices for $c$. Then for a given $k$, there are $\\tbinom6k$ ways to choose the elements on the middle tier, and then $k^{6-k}$ ways to draw arrows down from elements on the top tier to elements on the middle tier.\nThus $N=7\\cdot\\sum_{k=1}^6\\tbinom6k\\cdot k^{6-k}=7399$, giving the answer $\\boxed{399}$."
-}

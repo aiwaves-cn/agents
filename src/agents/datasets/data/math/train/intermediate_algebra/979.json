@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $x^3 - 9x^2 + 8x +2 = 0$ has three real roots $p$, $q$, $r$.  Find $\\frac{1}{p^2} + \\frac{1}{q^2} + \\frac{1}{r^2}$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "From Vieta's relations, we have $p+q+r = 9$, $pq+qr+pr = 8$ and $pqr = -2$. So \\begin{align*}\n\\frac{1}{p^2} + \\frac{1}{q^2} + \\frac{1}{r^2} = \\frac{(pq + qr + rp)^2 - 2 (p + q + r)(pqr)}{(pqr)^2} = \\frac{8^2 - 2 \\cdot 9 \\cdot (-2)}{(-2)^2} = \\boxed{25}.\n\\end{align*}"
-}

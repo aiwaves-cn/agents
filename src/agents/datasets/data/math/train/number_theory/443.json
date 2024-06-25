@@ -1,6 +1,0 @@
-{
-    "problem": "For each positive integer $n$, let $S(n)$ denote the sum of the digits of $n$.  For how many values of $n$ is $n+S(n)+S(S(n))=2007$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $n\\leq 2007$, then $S(n)\\leq S(1999)=28$. If $n\\leq\n28$, then $S(n)\\leq S(28)=10$. Therefore if $n$ satisfies the required condition it must also satisfy \\[\nn\\geq 2007-28-10=1969.\n\\] In addition, $n,S(n),\\text{ and }S(S(n))$ all leave the same remainder when divided by 9. Because 2007 is a multiple of 9, it follows that $n,S(n),\\text{ and }S(S(n))$ must all be multiples of 3. The required condition is satisfied by $\\boxed{4}$ multiples of 3 between 1969 and 2007, namely 1977, 1980, 1983, and 2001.\n\nNote: There appear to be many cases to check, that is, all the multiples of 3 between 1969 and 2007. However, for $1987\\leq n\\leq 1999$, we have $n+S(n)\\geq 1990+19=2009$, so these numbers are eliminated. Thus we need only check 1971, 1974, 1977, 1980, 1983, 1986, 2001, and 2004."
-}

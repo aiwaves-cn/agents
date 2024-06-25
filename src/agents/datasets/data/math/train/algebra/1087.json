@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=3x-2$, and let $g(x)=f(f(f(f(x))))$.  If the domain of $g$ is $0\\leq x\\leq 2$, compute the range of $g$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We iterate the function to find $g$:\n\n\\begin{align*}\nf(f(x))&=3(3x-2)-2=9x-8\\\\\nf(f(f(x)))&=3(9x-8)-2=27x-26\\\\\nf(f(f(f(x))))&=3(27x-26)-2=81x-80\n\\end{align*}\n\nThis is an increasing, continuous function.  The minimum in the domain is at $0$, where it equals $-80$, and the maximum is at $2$, where it equals $-80+2(81)=82$.  It covers all values between these, so the range is $\\boxed{-80\\leq g(x)\\leq 82}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered pairs $(x,y)$ of real numbers such that\n\\[16^{x^2 + y} + 16^{x + y^2} = 1.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[1 = 16^{x^2 + y} + 16^{x + y^2} \\ge 2 \\sqrt{16^{x^2 + y} \\cdot 16^{x + y^2}} = 2 \\cdot 4^{x^2 + y^2 + x + y} = 2^{2x^2 + 2y^2 + 2x + 2y + 1},\\]so\n\\[2x^2 + 2y^2 + 2x + 2y + 1 \\le 0.\\]Then\n\\[x^2 + x + y^2 + y + \\frac{1}{2} \\le 0.\\]Completing the square in $x$ and $y,$ we get\n\\[\\left( x + \\frac{1}{2} \\right)^2 + \\left( y + \\frac{1}{2} \\right)^2 \\le 0.\\]The only possible pair is then $(x,y) = \\left( -\\frac{1}{2}, -\\frac{1}{2} \\right).$  Hence, there is only $\\boxed{1}$ solution."
-}

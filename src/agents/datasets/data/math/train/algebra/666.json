@@ -1,6 +1,0 @@
-{
-    "problem": "How many pairs of positive integers $(x,y)$ satisfy $x^2-y^2=51$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Factoring, we have $(x+y)(x-y)=51$.  Since $x,y$ are positive, we have $x+y>x-y>0$.  Note that $51=51*1=17*3$.  Thus either $x+y=51$, $x-y=1$ or $x+y=17$, $x-y=3$.  Solving in the first case gives $x=26,y=25$, and the second case gives $x=10,y=7$.  Thus there are $\\boxed{2}$ pairs $(x,y)$ that solve the equation."
-}

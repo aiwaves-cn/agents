@@ -1,6 +1,0 @@
-{
-    "problem": "What is the intersection of the lines given by $2y=-x+3$ and $-y=5x+1$?  Enter the answer as an ordered pair.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "To find the intersection, we must find the point satisfying both equations. Hence we must solve the system \\begin{align*}\n2y&=-x+3, \\\\\n-y&=5x+1.\n\\end{align*}Adding two times the second equation to the first, we get $2y+2(-y)=-x+3+2(5x+1)$, which simplifies to $0=9x+5$. Solving for $x$, we find that $x=-\\frac{5}{9}$. Plugging this into the second equation above, we obtain $-y=5\\cdot -\\frac{5}{9}+1=-\\frac{16}{9}$. So the intersection is $\\boxed{\\left(-\\frac{5}{9}, \\frac{16}{9}\\right)}$."
-}

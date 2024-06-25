@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the infinite series $1+2\\left(\\dfrac{1}{1998}\\right)+3\\left(\\dfrac{1}{1998}\\right)^2+4\\left(\\dfrac{1}{1998}\\right)^3+\\cdots$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[S = 1+2\\left(\\dfrac{1}{1998}\\right)+3\\left(\\dfrac{1}{1998}\\right)^2+4\\left(\\dfrac{1}{1998}\\right)^3+\\dotsb.\\]Then\n\\[1998S = 1998 + 2 + \\frac{3}{1998} + \\frac{4}{1998^2} + \\dotsb.\\]Subtracting these equations, we get\n\\[1997S = 1998 + 1 + \\frac{1}{1998} + \\frac{1}{1988^2} + \\dotsb = \\frac{1998}{1 - 1/1998} = \\frac{3992004}{1997},\\]so $S = \\boxed{\\frac{3992004}{3988009}}.$"
-}

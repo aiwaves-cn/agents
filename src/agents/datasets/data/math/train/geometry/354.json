@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $BP$ and $BQ$ trisect $\\angle ABC$. $BM$ bisects $\\angle PBQ$. Find the ratio of the measure of $\\angle MBQ$ to the measure of $\\angle ABQ$.",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Let $\\angle MBQ = x$, so $\\angle MBP=x$ as well.  Therefore, we have $\\angle PBQ = 2x$, so $\\angle ABP = \\angle PBQ = \\angle QBC = 2x$.  Finally, we have $\\angle ABQ = \\angle ABP + \\angle PBQ = 4x$, so  \\[\\frac{\\angle MBQ}{\\angle ABQ} = \\frac{x}{4x} = \\boxed{\\frac14}.\\]"
-}

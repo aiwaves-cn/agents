@@ -1,6 +1,0 @@
-{
-    "problem": "In isosceles right triangle $ABC$, point $D$ is on hypotenuse $\\overline{BC}$ such that $\\overline{AD}$ is an altitude of $\\triangle ABC$ and $DC = 5$. What is the area of triangle $ABC$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=4));\ndraw(rightanglemark(C,D,A,s=4));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DA=DB = DC = 5$, so $BC = BD+DC = 10$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(5)({10})}{2} = \\boxed{25}.\\]"
-}

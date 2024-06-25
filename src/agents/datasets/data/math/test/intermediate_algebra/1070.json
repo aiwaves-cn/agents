@@ -1,6 +1,0 @@
-{
-    "problem": "Is the function $f(x) = 5^x - 5^{-x}$ even, odd, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since\n\\[f(-x) = 5^{-x} - 5^x = -f(x),\\]the function $f(x)$ is $\\boxed{\\text{odd}}.$"
-}

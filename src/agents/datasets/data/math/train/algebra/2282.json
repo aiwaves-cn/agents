@@ -1,6 +1,0 @@
-{
-    "problem": "Given that the polynomial $x^2-kx+16$ has only positive integer roots, find the average of all distinct possibilities for $k$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the roots of this polynomial be $r_1$ and $r_2$. Since $\\frac{c}{a}$ is the product and $-\\frac{b}{a}$ is the sum of the roots of $ax^2+bx+c=0$, we have $r_1r_2=16$ and $r_1+r_2=k$. Since $r_1$ and $r_2$ are integers, both must be factors of 16. The only possible combinations for $(r_1,r_2)$ are $(16,1),(8,2),(4,4)$, and the inverses of each ordered pair, which replicate values of $k$ already accounted for. Therefore, the only possible values of $k$ are 17,10, and 8, which average to $\\boxed{\\frac{35}{3}}$."
-}

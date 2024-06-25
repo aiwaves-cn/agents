@@ -1,6 +1,0 @@
-{
-    "problem": "Find an ordered pair $(x,y)$ that solves the system: \\begin{align*} 2x - 3y &= -3.2 - 0.2x + 0.1y,\\\\ x &= 0.6x - y + 8.8 \\end{align*}",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, we organize each equation by getting the variables on one side and the constants on the other.  This makes our equations $2.2x -3.1y = -3.2$ and $0.4x + y = 8.8$. Solving the second equation for $y$ in terms of $x$ gives $y = 8.8-0.4x$.  Substituting this into our other equation gives \\begin{align*}&2.2x - 3.1(8.8-0.4x) = -3.2 \\\\ &2.2x -27.28 + 1.24x =-3.2 \\\\ &3.44x = 24.08 \\\\ &x = 7. \\end{align*}So, $y = 8.8-0.4x = 6$, and our solution is $(x,y) = \\boxed{(7,6)}$."
-}

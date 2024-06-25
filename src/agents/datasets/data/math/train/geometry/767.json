@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, the angle bisectors are $AD$, $BE$, and $CF$, which intersect at the incenter $I$.  If $\\angle ACB = 38^\\circ$, then find the measure of $\\angle AIE$, in degrees.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Since $AD$ is an angle bisector, $\\angle BAI = \\angle BAC/2$.  Since $BE$ is an angle bisector, $\\angle ABI = \\angle ABC/2$.  As an angle that is external to triangle $ABI$, $\\angle AIE = \\angle BAI + \\angle ABI = \\angle BAC/2 + \\angle ABC/2$.\n\n[asy]\nimport geometry;\n\nunitsize(0.3 cm);\n\npair A, B, C, D, E, F, I;\n\nA = (2,12);\nB = (0,0);\nC = (14,0);\nI = incenter(A,B,C);\nD = extension(A,I,B,C);\nE = extension(B,I,C,A);\nF = extension(C,I,A,B);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\ndraw(B--E);\ndraw(C--F);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, NW);\nlabel(\"$I$\", I, NNE);\n[/asy]\n\nSince $\\angle ACB = 38^\\circ$, \\[\\angle AIE = \\frac{\\angle BAC + \\angle ABC}{2} = \\frac{180^\\circ - \\angle ACB}{2} = \\frac{180^\\circ - 38^\\circ}{2} = \\boxed{71^\\circ}.\\]"
-}

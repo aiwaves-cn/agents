@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ be a positive real number such that all the roots of\n\\[x^3 + ax^2 + ax + 1 = 0\\]are real.  Find the smallest possible value of $a.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $x = -1$ is always a root of $x^3 + ax^2 + ax + 1 = 0,$ so we can factor out $x + 1,$ to get\n\\[(x + 1) (x^2 + (a - 1) x + 1) = 0.\\]The quadratic factor has real roots if and only if its discriminant is nonnegative:\n\\[(a - 1)^2 - 4 \\ge 0.\\]This reduces to $a^2 - 2a - 3 \\ge 0,$ which factors as $(a + 1)(a - 3) \\ge 0.$  The smallest positive value that satisfies this inequality is $\\boxed{3}.$"
-}

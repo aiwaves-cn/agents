@@ -1,6 +1,0 @@
-{
-    "problem": "The quantity $\\sqrt{45} - 2\\sqrt{5} + \\frac{\\sqrt{360}}{\\sqrt{2}}$ can be expressed as $\\sqrt{N}$, where $N$ is an integer. Find $N$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First, we try to simplify like terms. We find the prime factorizations of $45$ and $360$: $45 = 3^2 \\cdot 5$ and $360 = 2^3 \\cdot 3^2 \\cdot 5$. Hence, $$\\sqrt{45} = \\sqrt{3^2 \\cdot 5} = 3\\sqrt{5}$$and \\begin{align*}\n\\sqrt{360} &= \\sqrt{2^3 \\cdot 3^2 \\cdot 5}\\\\\n&= \\sqrt{(2 \\cdot 3)^2} \\cdot \\sqrt{2 \\cdot 5} = 6 \\sqrt{2 \\cdot 5}.\n\\end{align*}Returning to the given expression,  \\begin{align*}\n3\\sqrt{5} - 2\\sqrt{5} + \\frac{6 \\sqrt{2} \\cdot \\sqrt{5}}{\\sqrt{2}} &= 3\\sqrt{5} - 2\\sqrt{5} + 6\\sqrt{5}\\\\\n&= 7\\sqrt{5} = \\sqrt{7^2 \\cdot 5} = \\sqrt{245}.\n\\end{align*}Thus, $N = \\boxed{245}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The first term of a given sequence is 1, and each successive term is the sum of all the previous terms of the sequence. What is the value of the first term which exceeds 5000?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We calculate the first several terms directly and find the sequence starts\n\\[ 1, 1, 2, 4, 8, 16, \\ldots \\] It appears the $n$th term is $2^{n-2}$ for $n\\geq 2$.  Since $2^{12}=4096$, the first power of 2 that exceeds 5000 is $2^{13}=\\boxed{8192}$.\n\nLet's prove by induction that the $n$th term of the sequence is $2^{n-2}$ for all integers $n\\geq 2$.  The base case $n=2$ holds since the second term of the sequence is the sum of all the terms before it, which is just 1.  For the induction step, let $n>2$ and suppose that the $(n-1)$st term is $2^{n-1-2}=2^{n-3}$.  Then the sum of the first $n-2$ terms of the sequence is $2^{n-3}$, since the $(n-1)$st term is equal to the sum of the first $n-2$ terms.  So the $n$th term, which is defined to be the sum of the first $n-1$ terms, is \\[\\underbrace{2^{n-3}}_{\\text{sum of first }n-2\\text{ terms}}+\\underbrace{2^{n-3}}_{(n-1)\\text{st term}}=2\\cdot2^{n-3}=2^{n-2}.\\]   This completes the induction step, so the statement is proved for all $n\\geq 2$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "12 balls numbered 1 through 12 are placed in a bin.  In how many ways can 3 balls be drawn, in order, from the bin, if the first ball is replaced after it is drawn but the second ball remains outside the bin?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 12 options for the first ball, 12 options for the second ball (since it is replaced), and 11 options for the third ball (since the second ball is not replaced), for a total of $12 \\times 12 \\times 11 = \\boxed{1584}$ possible drawings."
-}

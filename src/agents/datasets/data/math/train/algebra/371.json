@@ -1,6 +1,0 @@
-{
-    "problem": "Completely factor the following expression: \\[(15x^3+80x-5)-(-4x^3+4x-5).\\]",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First, we combine like terms in the expression: \\begin{align*}\n(15x^3+80x-5)&-(-4x^3+4x-5)\\\\\n&=15x^3+80x-5+4x^3-4x+5\\\\\n&=19x^3+76x.\\end{align*}We can factor out a $19x$ from the expression, to get $$19x^3+76x=\\boxed{19x(x^2+4)}.$$"
-}

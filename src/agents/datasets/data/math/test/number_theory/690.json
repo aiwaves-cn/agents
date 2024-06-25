@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the smallest non-negative integer $a$ that satisfies the congruences: \\begin{align*}\n&a\\equiv 2\\pmod 3,\\\\\n&a\\equiv 4\\pmod 5,\\\\\n&a\\equiv 6\\pmod 7,\\\\\n&a\\equiv 8\\pmod 9.\n\\end{align*}",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First notice that $a\\equiv 8\\pmod 9$ tells us that $a\\equiv 2\\pmod 3$, so once we satisfy the former, we have the latter.    So, we focus on the final three congruences.  We do so by rewriting them as \\begin{align*}\na&\\equiv -1\\pmod 5,\\\\\na&\\equiv -1\\pmod 7,\\\\\na&\\equiv -1\\pmod 9.\n\\end{align*} Since $\\gcd(5,7)=\\gcd(7,9)=\\gcd(9,5)=1$, the above congruences apply that $a\\equiv -1\\pmod{5\\cdot 7\\cdot 9}$, or $a\\equiv 314\\pmod{315}$. So $a$ is of the form $314+315n$ for an integer $n$. The smallest non-negative number of this form is $\\boxed{314}$, which satisfies the original congruences."
-}

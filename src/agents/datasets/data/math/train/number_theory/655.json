@@ -1,6 +1,0 @@
-{
-    "problem": "A marathon is $26$ miles and $385$ yards. One mile equals $1760$ yards.\n\nLeila has run ten marathons in her life. If the total distance Leila covered in these marathons is $m$ miles and $y$ yards, where $0\\le y<1760$, what is the value of $y$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "If one marathon equals $26$ miles and $385$ yards, then ten marathons equal $260$ miles and $3850$ yards. Those $3850$ yards can be broken down as $2$ miles and $3850 - (2\\cdot 1760) = 3850 - 3520 = 330$ yards. Therefore, $y=\\boxed{330}$."
-}

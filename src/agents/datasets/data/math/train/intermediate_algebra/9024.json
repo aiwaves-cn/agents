@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x) = x^{2008} + x^{2007} + x^{2006} + \\cdots + x + 1,$\nand let $r(x)$ be the polynomial remainder when $p(x)$ is divided by $x^4+x^3+2x^2+x+1$. Find the remainder when $|r(2008)|$ is divided by $1000$.\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "$x^4+x^3+2x^2+x+1 = (x^2 + 1)(x^2 + x + 1)$. We apply the polynomial generalization of the Chinese Remainder Theorem.\nIndeed,\n$p(x) = (x^{2008} + x^{2007} + x^{2006}) + \\cdots + (x^4 + x^3 + x^2) + x + 1 \\equiv x+1 \\pmod{x^2 + x + 1}$\nsince $x^{n+2} + x_{n+1} + x^{n} = x^{n-2}(x^2 + x + 1) \\equiv 0 \\pmod{x^2 + x + 1}$. Also,\n$p(x) = (x^{2008} + x^{2006}) + (x^{2007} + x^{2005}) + \\cdots + (x^4 + x^2) + (x^3 + x) + 1 \\equiv 1 \\pmod{x^2 + 1}$\nusing similar reasoning. Hence $p(x) \\equiv x+1 \\pmod{x^2 + x + 1}, p(x) \\equiv 1 \\pmod{x^2 + 1}$, and by CRT we have $p(x) \\equiv -x^2 \\pmod{x^4+x^3+2x^2+x+1}$.\nThen $|r(2008)| \\equiv 2008^2 \\equiv \\boxed{64} \\pmod{1000}$."
-}

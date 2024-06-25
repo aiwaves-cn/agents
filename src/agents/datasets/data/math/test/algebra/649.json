@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose the function $f(x)$ is defined explicitly by the table $$\\begin{array}{c || c | c | c | c | c}\nx & 0 & 1 & 2 & 3 & 4 \\\\\n\\hline\nf(x) & 0 & 0 & 1 & 3 & 6\n\\end{array}$$ This function is defined only for the values of $x$ listed in the table.\n\nSuppose $g(x)$ is defined as $f(x)-x$ for all numbers $x$ in the domain of $f.$ How many distinct numbers are in the range of $g(x)?$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We can extend our table to include $g(x):$ $$\\begin{array}{c || c | c | c | c | c}\nx & 0 & 1 & 2 & 3 & 4 \\\\\n\\hline\nf(x) & 0 & 0 & 1 & 3 & 6 \\\\\n\\hline\ng(x) & 0 & -1 & -1 & 0 & 2\n\\end{array}$$ As the table clearly shows, $g(x)$ takes three distinct values: $0,$ $-1,$ and $2.$ Thus, the range of $g(x)$ contains $\\boxed{3}$ numbers."
-}

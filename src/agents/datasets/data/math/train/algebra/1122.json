@@ -1,6 +1,0 @@
-{
-    "problem": "What is the distance between the center of the circle with equation $x^2+y^2=-4x+6y-12$ and the point $(1,7)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Moving terms to the LHS, we have $x^2+4x+y^2-6y=-12$. Completing the square on the quadratic in $x$, we add $(4/2)^2=4$ to both sides. Completing the square on the quadratic in $y$, we add $(6/2)^2=9$ to both sides. We are left with the equation $x^2+4x+4+y^2-6y+9=1 \\Rightarrow (x+2)^2+(y-3)^2=1$. Thus, our circle has center $(-2,3)$. The distance between this center and the point $(1,7)$ is $\\sqrt{(1-(-2))^2+(7-3)^2}=\\boxed{5}$."
-}

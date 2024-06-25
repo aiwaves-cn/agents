@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ $\\angle A = 90^\\circ,$ $AC = 1,$ and $AB = 5.$  Point $D$ lies on ray $\\overrightarrow{AC}$ such that $\\angle DBC = 2 \\angle CBA.$  Compute $AD.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\theta = \\angle CBA.$  Since $\\angle DBC = 2 \\theta,$ $\\angle DBA = 3 \\theta.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D;\n\nA = (0,0);\nB = (5,0);\nC = (0,1);\nD = (0,37/11);\n\ndraw(A--B--D---cycle);\ndraw(B--C);\n\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, SE);\nlabel(\"$C$\", C, W);\nlabel(\"$D$\", D, NW);\nlabel(\"$1$\", (A + C)/2, W);\nlabel(\"$5$\", (A + B)/2, S);\n[/asy]\n\nNote that $\\tan \\theta = \\frac{1}{5}.$  By the triple angle formula,\n\\[\\tan 3 \\theta = \\frac{3 \\tan \\theta - \\tan^3 \\theta}{1 - 3 \\tan^2 \\theta} = \\frac{3 (\\frac{1}{5}) - (\\frac{1}{5})^3}{1 - 3 (\\frac{1}{5})^2} = \\frac{37}{55}.\\]Therefore,\n\\[AD = AB \\tan 3 \\theta = 5 \\cdot \\frac{37}{55} = \\boxed{\\frac{37}{11}}.\\]"
-}

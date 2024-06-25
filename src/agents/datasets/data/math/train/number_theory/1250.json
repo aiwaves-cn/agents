@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $2001 \\cdot 2002 \\cdot 2003 \\cdot 2004 \\cdot 2005$ is divided by 19?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Reducing each factor modulo 19 first, we see that $2001 \\cdot 2002 \\cdot 2003 \\cdot 2004 \\cdot 2005 \\equiv 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10 \\equiv 30240 \\equiv \\boxed{11} \\pmod{19}$."
-}

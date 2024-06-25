@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n$ be the inverse of $2\\pmod{17}$. That is, let $n$ be the integer $0\\leq n < 17$ for which $2n \\equiv 1 \\pmod{17}$. What is $\\left(2^n\\right)^2 - 2 \\pmod{17}$?\n\nExpress your answer as an integer from $0$ to $16$, inclusive.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $9 \\cdot 2 = 18 = 17 + 1$, it follows that $9$ is the modular inverse of $2$, modulo $17$. Thus, $2^n \\equiv 2^9 \\pmod{17}$. After computing some powers of $2$, we notice that $2^4 \\equiv -1 \\pmod{17}$, so $2^8 \\equiv 1 \\pmod{17}$, and $2^9 \\equiv 2 \\pmod{17}$. Thus, $(2^9)^2 \\equiv 4 \\pmod{17}$, and $(2^9)^2 - 2 \\equiv \\boxed{2} \\pmod{17}$.\n\nNotice that this problem implies that $\\left(a^{2^{-1}}\\right)^2 \\not\\equiv a \\pmod{p}$ in general, so that certain properties of modular inverses do not extend to exponentiation (for that, one needs to turn to Fermat's Little Theorem or other related theorems)."
-}

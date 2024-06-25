@@ -1,6 +1,0 @@
-{
-    "problem": "Let $O$ be the origin.  A variable plane has a distance of 1 from the origin, and intersects the $x$-axis, $y$-axis, and $z$-axis at $A,$ $B,$ and $C,$ respectively, all distinct from $O.$  Let $(p,q,r)$ be the centroid of triangle $ABC.$  Find\n\\[\\frac{1}{p^2} + \\frac{1}{q^2} + \\frac{1}{r^2}.\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $A = (\\alpha,0,0),$ $B = (0,\\beta,0),$ and $C = (0,0,\\gamma).$  Then the equation of plane $ABC$ is given by\n\\[\\frac{x}{\\alpha} + \\frac{y}{\\beta} + \\frac{z}{\\gamma} = 1.\\]Since the distance between the origin and plane is 1,\n\\[\\frac{1}{\\sqrt{\\frac{1}{\\alpha^2} + \\frac{1}{\\beta^2} + \\frac{1}{\\gamma^2}}} = 1.\\]Then\n\\[\\frac{1}{\\alpha^2} + \\frac{1}{\\beta^2} + \\frac{1}{\\gamma^2} = 1.\\]The centroid of triangle $ABC$ is\n\\[(p,q,r) = \\left( \\frac{\\alpha}{3}, \\frac{\\beta}{3}, \\frac{\\gamma}{3} \\right).\\]Then $p = \\frac{\\alpha}{3},$ $q = \\frac{\\beta}{3},$ and $r = \\frac{\\gamma}{3},$ so\n\\[\\frac{1}{p^2} + \\frac{1}{q^2} + \\frac{1}{r^2} = \\frac{9}{\\alpha^2} + \\frac{9}{\\beta^2} + \\frac{9}{\\gamma^2} = \\boxed{9}.\\]"
-}

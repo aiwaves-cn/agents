@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest integer $x$ such that $\\frac{x}{3}+\\frac{4}{5} < \\frac{5}{3}$?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We begin by multiplying both sides of the inequality by $15$, so as to get rid of denominators: $$15\\cdot \\frac{x}{3} + 15\\cdot \\frac{4}{5} < 15\\cdot\\frac{5}{3},$$which simplifies to $$5x + 12 < 25.$$Subtracting $12$ from both sides gives $5x<13$, then dividing both sides by $5$ gives $x<2\\frac35$. The largest integer $x$ satisfying this inequality is $\\boxed{2}$."
-}

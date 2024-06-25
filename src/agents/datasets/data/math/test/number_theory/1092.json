@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the repeating decimal $3.283283283\\ldots$ to an improper fraction.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can express the decimal as a geometric series, with first term $.283$, and common ratio $.001$.\n\nLet S denote the sum of this infinite geometric series:\n\n$S = .283 + .000283 + \\dots$\n\nThen,\n\n$1000S = 283.283283283\\dots$\n\nThus,\n\n$999S = 283$\n\nand\n\n$S = \\frac{283}{999}$\n\nThus, $3.283283\\dots = 3 + \\frac{283}{999} = \\boxed{\\frac{3280}{999}}$"
-}

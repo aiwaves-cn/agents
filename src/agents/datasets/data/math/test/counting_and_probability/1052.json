@@ -1,6 +1,0 @@
-{
-    "problem": "A senate committee has 5 Republicans and 4 Democrats.  In how many ways can the committee members sit in a row of 9 chairs, such that all 4 Democrats sit together?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "If we consider the group of Democrats as one person, then there are $6!$ ways to arrange the 6 people (the 5 Republicans and the one Democrat group). Then there are $4!$ ways to arrange arranging the 4 Democrats within their group.  So the number of arrangements is $6! \\times 4! = \\boxed{17,\\!280}$."
-}

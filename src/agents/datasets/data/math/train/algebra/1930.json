@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $r$ such that $\\lfloor r \\rfloor + r = 12.2$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "First, we note that $r$ must be positive, since otherwise $\\lfloor r \\rfloor + r$ is nonpositive. Next, because $\\lfloor r \\rfloor$ is an integer and $\\lfloor r \\rfloor + r=12.2$, the decimal part of $r$ must be $0.2$.  Therefore, $r=n+0.2$ for some integer $n$, so that $\\lfloor r\\rfloor =n$ and $\\lfloor r \\rfloor + r = 2n+0.2 =12.2$. Therefore, $n=6$, and the only value of $r$ that satisfies the equation is $\\boxed{r=6.2}$."
-}

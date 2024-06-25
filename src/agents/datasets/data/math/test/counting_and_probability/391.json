@@ -1,6 +1,0 @@
-{
-    "problem": "In the row of Pascal's triangle that starts with 1 and then 10, what is the next number?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The row that starts 1, 10 is the row $\\binom{10}{0}, \\binom{10}{1}, \\binom{10}{2},\\ldots$, so the next number is $\\binom{10}{2} = \\frac{10\\cdot 9}{2\\cdot 1} = \\boxed{45}$."
-}

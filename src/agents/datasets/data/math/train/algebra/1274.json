@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $\\sqrt{15 - 6\\sqrt{6}} + \\sqrt{15 + 6\\sqrt{6}}$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Solution 1:\nLet $x = \\sqrt{15 - 6\\sqrt{6}} + \\sqrt{15 + 6\\sqrt{6}}.$  Then \\[x^2 = \\left( \\sqrt{15 - 6\\sqrt{6}} \\right)^2 + 2 \\sqrt{15 - 6\\sqrt{6}} \\sqrt{15 + 6\\sqrt{6}} + \\left( \\sqrt{15 + 6\\sqrt{6}} \\right)^2 \\] We observe that $\\left( 15 - 6\\sqrt{6} \\right)\\left( 15 + 6\\sqrt{6} \\right) = 15^2 - \\left(6\\sqrt{6}\\right)^2 = 225 - 216 = 9$ because of difference of squares.  So \\[x^2 = \\left( 15 - 6\\sqrt{6} \\right) + 2\\sqrt{9} + \\left( 15 + 6\\sqrt{6} \\right)\\] The $6\\sqrt{6}$ terms cancel, and so $x^2 = 36.$  Since $x$ must be positive, then $x = \\boxed{6}$ and not $-6$.\n\nSolution 2:\nLet $a+b\\sqrt{6} = \\sqrt{15+6\\sqrt{6}}$ for some $a$ and $b$. Squaring, we get $(a^2+6b^2) + 2ab\\sqrt{6} = 15 + 6\\sqrt{6}$. After some experimentation, we see this is true if $a=3$, $b=1$. So $\\sqrt{15+6\\sqrt{6}} = 3+\\sqrt{6}$. Similarly, we find that $\\sqrt{15-6\\sqrt{6}} = 3-\\sqrt{6}$. So $\\sqrt{15-6\\sqrt{6}} + \\sqrt{15+6\\sqrt{6}} = (3-\\sqrt{6}) + (3+\\sqrt{6}) = \\boxed{6}$."
-}

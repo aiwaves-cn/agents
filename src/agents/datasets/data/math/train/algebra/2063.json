@@ -1,6 +1,0 @@
-{
-    "problem": "John is 24 years younger than his dad. The sum of their ages is 68 years. How many years old is John?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "Let $j$ be John's age and $d$ be his dad's age. We are trying to find the value of $j$. We can create a system of two equations to represent the given information. They are\n\n\\begin{align*}\nj &= d - 24 \\\\\nj + d &= 68 \\\\\n\\end{align*}We want to find $j$, so we need to eliminate $d$ from the equations above. Rewriting the first equation we get $d = j+24$. Substituting this into the second equation to eliminate $d$, we have $j+(j+24)=68$, or $j=22$. Thus, John is $\\boxed{22}$ years old."
-}

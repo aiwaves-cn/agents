@@ -1,6 +1,0 @@
-{
-    "problem": "What is the probability that the same number will be facing up on each of three standard six-sided dice that are tossed simultaneously? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The results on the three dice are independent of each other, so we compute the probability for each die and then multiply the probabilities. The first die does not have to be a particular number. There are 6 possible numbers, but any number will work, so the probability is $\\frac{6}{6}=1$. The second die must be the same number as the first die, which is one number out of the 6 possible outcomes, so the probability is $\\frac{1}{6}$. The third die must also be the same number as the first die, so the probability is also $\\frac{1}{6}$. The probability that all three dice will have the same number is then $1\\times\\frac{1}{6}\\times\\frac{1}{6}=\\boxed{\\frac{1}{36}}$."
-}

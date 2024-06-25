@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\sqrt{(31)(30)(29)(28)+1}.$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = 29.$ Then we can write \\[\\begin{aligned} (31)(30)(29)(28) + 1 &= (x+2)(x+1)(x)(x-1) + 1 \\\\ &= [(x+2)(x-1)][(x+1)x] - 1 \\\\& = (x^2+x-2)(x^2+x) + 1 \\\\&= (x^2+x)^2 - 2(x^2+x) + 1 \\\\&= (x^2+x-1)^2. \\end{aligned} \\]Therefore, the answer is \\[ \\begin{aligned} x^2+x-1&= 29^2 + 29 - 1\\\\& = \\boxed{869}. \\end{aligned}\\]"
-}

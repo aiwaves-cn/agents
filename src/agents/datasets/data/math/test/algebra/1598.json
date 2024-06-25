@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a, b$, and $c$ be real numbers such that $a-7b+8c = 4$ and $8a+4b-c = 7$. Find $a^2 - b^2 + c^2.$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have $a+8c = 4+7b$ and $8a-c = 7-4b$. Squaring both equations and adding the results yields $$\n(a+8c)^2 + (8a-c)^2 = (4+7b)^2 + (7-4b)^2.\n$$Expanding gives $65(a^2+c^2) = 65(1+b^2)$. So $a^2 + c^2 = 1 + b^2$, and $a^2-b^2+c^2 = \\boxed{1}$."
-}

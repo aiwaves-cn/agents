@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the product of $0.\\overline{123}$ and $9$, and write your result as a fraction in simplified form.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If we define the variable $s$ to be $0.\\overline{123}$, then multiplying both sides of $s=0.\\overline{123}$ by 1000 gives us $$1000s = 123.\\overline{123}.$$ Subtracting $s$ from $1000s$ and $0.\\overline{123}$ from $123.\\overline{123}$ tells us that $$999s = 123$$ and thus $$s=\\frac{123}{999}.$$ We can now calculate that our final answer is   $$\\frac{123}{999} \\cdot 9 = \\frac{123}{999 \\div 9} = \\frac{123 \\div 3}{111 \\div 3}=\\boxed{\\frac{41}{37}}.$$"
-}

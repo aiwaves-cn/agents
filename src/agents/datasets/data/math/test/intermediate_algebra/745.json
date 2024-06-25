@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r,$ $s,$ and $t$ be the roots of the equation $4x^3 - 59x^2 + 32x - 32 = 0.$ Find the value of $f(r) + f(s) + f(t)$, where $f(x) = 4x^3 - 59x^2$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $r$ is a root of $4x^3 - 59x^2 + 32x - 32 = 0,$ we have $4r^3 - 59r^2 + 32r - 32 = 0.$ Thus, \\[f(r) = 4r^3 - 59r^2 = 32 - 32r.\\]Similarly, $f(s) = 32-32s$ and $f(r) = 32-32r.$ Then \\[\\begin{aligned} f(r) + f(s) + f(t) &= 96 - 32(r+s+t) \\\\ &= 96 - 32\\left(\\frac{59}{4}\\right) \\\\ &= \\boxed{-376}.\\end{aligned}\\]"
-}

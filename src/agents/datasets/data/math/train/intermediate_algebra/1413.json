@@ -1,6 +1,0 @@
-{
-    "problem": "Find the ordered pair $(a,b)$ of positive integers, with $a < b,$ for which\n\\[\\sqrt{1 + \\sqrt{21 + 12 \\sqrt{3}}} = \\sqrt{a} + \\sqrt{b}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "First, we simplify $\\sqrt{21 + 12 \\sqrt{3}}.$  Let\n\\[\\sqrt{21 + 12 \\sqrt{3}} = x + y.\\]Squaring both sides, we get\n\\[21 + 12 \\sqrt{3} = x^2 + 2xy + y^2.\\]To make the right-hand side look like the left-hand side, we set $x^2 + y^2 = 21$ and $2xy = 12 \\sqrt{3},$ so $xy = 6 \\sqrt{3}.$  Then $x^2 y^2 = 108,$ so by Vieta's formulas, $x^2$ and $y^2$ are the roots of the quadratic\n\\[t^2 - 21t + 108 = 0.\\]This factors as $(t - 9)(t - 12) = 0,$ whose solutions are 9 and 12.  Therefore,\n\\[\\sqrt{21 + 12 \\sqrt{3}} = \\sqrt{9} + \\sqrt{12} = 3 + 2 \\sqrt{3}.\\]Now we must simplify\n\\[\\sqrt{1 + 3 + 2 \\sqrt{3}} = \\sqrt{4 + 2 \\sqrt{3}}.\\]Performing the same technique gives us\n\\[\\sqrt{4 + 2 \\sqrt{3}} = 1 + \\sqrt{3},\\]so $(a,b) = \\boxed{(1,3)}.$"
-}

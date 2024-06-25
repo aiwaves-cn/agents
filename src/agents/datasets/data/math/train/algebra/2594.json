@@ -1,6 +1,0 @@
-{
-    "problem": "The third and fourth terms of a geometric sequence are 12 and 16, respectively. What is the first term of the sequence?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The common ratio of the geometric sequence is $\\frac{16}{12} = \\frac{4}{3}$. Thus, the $n^{\\text{th}}$ term of the sequence is given by $a\\left(\\frac{4}{3}\\right)^{n-1}$, where $a$ is the first term of the sequence. Since the third term is 12, we plug in $n=3$ to get $a\\left(\\frac{4}{3}\\right)^2 = 12$. Solving, we have $a\\left(\\frac{16}{9}\\right) = 12 \\Rightarrow a = 12\\left(\\frac{9}{16}\\right) = \\boxed{\\frac{27}{4}}$."
-}

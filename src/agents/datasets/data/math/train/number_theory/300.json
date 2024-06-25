@@ -1,6 +1,0 @@
-{
-    "problem": "The number 236! ends in how many zeros when expressed as an integer?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "To find the number of terminal zeros, we must find the number of products $2\\times5$ in $236!$. Since there are more factors of 2 than factors of 5, we can get our answer by finding the largest power of 5 that divides $236!$.  Every multiple of 5 less than 236 gives a factor of 5, each multiple of 25 gives an additional factor of 5, and each multiple of 125 gives a third factor of 5.  Therefore, the number of factors of 5 in $236!$ is $\\left\\lfloor\\frac{236}{5}\\right\\rfloor+ \\left\\lfloor\\frac{236}{25}\\right\\rfloor+ \\left\\lfloor\\frac{236}{125}\\right\\rfloor = 47+9+1=57$. The highest power of 5 that divides $236!$ is $5^{57}$ so $236!$ ends in $\\boxed{57}$ zeros."
-}

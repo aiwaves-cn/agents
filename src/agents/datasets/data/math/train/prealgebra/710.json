@@ -1,6 +1,0 @@
-{
-    "problem": "How many multiples of 10 are between 11 and 103?",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "The first multiple of $10$ that is greater than $11$ is $20$, and the last multiple of $10$ that is less than $103$ is $100$. The list of multiples is $20$, $30$, $\\ldots$, $100$. Divide each of these numbers by $10$ to get the list $2$, $3$, $\\ldots$, $10$. Subtracting $1$ from each number in this list gives a new list of $1$, $2$, $\\ldots $, $9$, so it is clear that there are $\\boxed{9}$ such numbers."
-}

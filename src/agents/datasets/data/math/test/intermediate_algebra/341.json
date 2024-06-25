@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be positive real numbers such that $x + \\frac{1}{y} = 5.$  Find the minimum value of $\\frac{1}{x} + y.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-HM,\n\\[\\frac{x + \\frac{1}{y}}{2} \\ge \\frac{2}{\\frac{1}{x} + y}.\\]Hence,\n\\[\\frac{1}{x} + y \\ge \\frac{4}{x + \\frac{1}{y}} = \\frac{4}{5}.\\]Equality occurs when $x = \\frac{5}{2}$ and $y = \\frac{2}{5},$ so the minimum value is $\\boxed{\\frac{4}{5}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For $x > 0$, the area of the triangle with vertices $(0, 0), (x, 2x)$, and $(x, 0)$ is 64 square units. What is the value of $x$?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Plotting the given points, we find that the triangle is a right triangle whose legs measure $x$ and $2x$ units.  Therefore, $\\frac{1}{2}(x)(2x)=64$, which we solve to find $x=\\boxed{8}$ units. [asy]\nimport graph;\ndefaultpen(linewidth(0.7));\nreal x=8;\npair A=(0,0), B=(x,2*x), C=(x,0);\npair[] dots = {A,B,C};\ndot(dots);\ndraw(A--B--C--cycle);\nxaxis(-2,10,Arrows(4));\nyaxis(-2,20,Arrows(4));\nlabel(\"$(x,0)$\",C,S);\nlabel(\"$(x,2x)$\",B,N);\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x = -1$. Find $$x + x^2 + x^3 + \\cdots + x^{2010} + x^{2011}.$$",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Remember, even powers of $-1$ equal $1$, and odd powers of $-1$ equal $-1$.  Therefore, $x + x^2 = -1 + (-1)^2 = -1 + 1 = 0$.  The next pair cancels out in the same way: $x^3 + x^4 = (-1)^3 + (-1)^4 = -1 + 1 = 0$.  Now, it is easy to see that the pattern continues for every pair of powers, all the way up to $x^{2009} + x^{2010}$.  Notice that $x^{2011}$ is the only power that hasn't been canceled out.  Therefore, the answer is $(-1)^{2011} = \\boxed{-1}.$"
-}

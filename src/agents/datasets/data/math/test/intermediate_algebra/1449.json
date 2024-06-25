@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $4^a = 5$, $5^b = 6$, $6^c = 7$, and $7^d = 8$. What is $a \\cdot b \\cdot c \\cdot d$?",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\[4^{ab} = 5^b = 6.\\]Then\n\\[4^{abc} = 6^c = 7,\\]and\n\\[4^{abcd} = 7^d = 8.\\]Then $2^{2abcd} = 2^3,$ so $abcd = \\boxed{\\frac{3}{2}}.$"
-}

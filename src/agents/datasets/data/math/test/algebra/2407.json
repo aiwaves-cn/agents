@@ -1,6 +1,0 @@
-{
-    "problem": "If $(x + y)^2 = 105$ and $x^2 + y^2 = 65$, what is the value of $xy$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "If we expand the left hand side of the first equation, we get $x^2 + 2xy + y^2 = 105$, so $2xy + (x^2 + y^2) = 105$. We are given that $x^2 + y^2 = 65$, so we can substitute for $x^2 + y^2$ to obtain $2xy + 65 = 105$. It follows that $xy = \\boxed{20}$."
-}

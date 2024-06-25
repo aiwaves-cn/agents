@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of the first $n$ terms in the infinite geometric sequence $\\left\\{\\frac{1}{4},\\frac{1}{8},\\frac{1}{16},\\dots \\right\\}$ is $\\frac{255}{512}$. Find $n$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "This is a geometric sequence with first term $\\frac{1}{4}$ and common ratio $\\frac{1}{2}$. Thus the sum of the first $n$ terms is:\n\n$\\frac{255}{512}=\\frac{1}{4}\\left(\\frac{1-\\left(\\frac{1}{2}\\right)^n}{1-\\frac{1}{2}}\\right)=\\frac{2^n-1}{2^{n+1}}$.\n\nWe see that $\\frac{255}{512}=\\frac{2^8-1}{2^9}$, so $n=\\boxed{8}$."
-}

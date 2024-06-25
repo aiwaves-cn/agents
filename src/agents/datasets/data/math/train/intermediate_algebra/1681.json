@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $x^5-x^4-x^3+x^2+x$ is divided by $(x^2-4)(x+1)$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since our divisor $(x^2-4)(x+1)$ has degree $3$, our remainder must have degree at most $2$. In other words, our remainder is of the form $ax^2+bx+c$ for some constants $a$, $b$, and $c$. Let the quotient of the division be $q(x)$. Then\n$$x^5-x^4-x^3+x^2+x =(x^2-4)(x+1)q(x) + ax^2+bx+c $$We can see that our divisor $(x^2-4)(x+1)$ has roots $x=2$, $x= -2,$ and $x= -1$. Plugging in these roots gives us equations:\nFor $x=2$ we have $32-16-8+4+2 = 0+4a+2b+c$ which gives us\n$$4a + 2b+c = 14.$$For $x=-2$ we have $-32-16+8+4-2 = 0+4a-2b+c$ which gives us\n$$4a - 2b+c = -38.$$For $x=-1$ we have $-1-1+1+1-1 = 0+a-b+c$ which gives us\n$$a - b+c = 1.$$Solving these three equations gives us $a=-8$, $b=13,$ and $c=20$.\n\nSo our remainder is $\\boxed{-8x^2+13x+20}$."
-}

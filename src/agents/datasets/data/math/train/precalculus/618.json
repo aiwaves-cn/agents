@@ -1,6 +1,0 @@
-{
-    "problem": "Find the equation of the plane passing through $(-1,1,1)$ and $(1,-1,1),$ and which is perpendicular to the plane $x + 2y + 3z = 5.$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "The vector pointing from $(-1,1,1)$ to $(1,-1,1)$ is $\\begin{pmatrix} 2 \\\\ -2 \\\\ 0 \\end{pmatrix}.$  Since the plane we are interested in is perpendicular to the plane $x + 2y + 3z = 5,$ its normal vector must be orthogonal to $\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}.$  But the normal vector of the plane is also orthogonal to $\\begin{pmatrix} 2 \\\\ -2 \\\\ 0 \\end{pmatrix}.$  So, to find the normal vector of the plane we are interested in, we take the cross product of these vectors:\n\\[\\begin{pmatrix} 2 \\\\ -2 \\\\ 0 \\end{pmatrix} \\times \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} = \\begin{pmatrix} -6 \\\\ -6 \\\\ 6 \\end{pmatrix}.\\]Scaling, we take $\\begin{pmatrix} 1 \\\\ 1 \\\\ -1 \\end{pmatrix}$ as the normal vector.  Therefore, the equation of the plane is of the form\n\\[x + y - z + D = 0.\\]Substituting the coordinates of $(-1,1,1),$ we find that the equation of the plane is $\\boxed{x + y - z + 1 = 0}.$"
-}

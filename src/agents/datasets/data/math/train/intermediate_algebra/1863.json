@@ -1,6 +1,0 @@
-{
-    "problem": "If the parabola defined by $y = ax^2 + 6$ is tangent to the line $y = x,$ then calculate the constant $a.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The parabola $y = ax^2 + 6$ is tangent to the line $y = x$ when the equation\n\\[ax^2 + 6 = x\\]has a double root (which is the $x$-coordinate of the point of tangency).  From this equation,\n\\[ax^2 - x + 6 = 0.\\]This quadratic has a double root when the discriminant is 0, which gives us $1 - 24a = 0.$  Hence, $a = \\boxed{\\frac{1}{24}}.$"
-}

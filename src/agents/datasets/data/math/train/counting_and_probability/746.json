@@ -1,6 +1,0 @@
-{
-    "problem": "Seven distinct points are identified on the circumference of a circle. How many different triangles can be formed if each vertex must be one of these 7 points?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "To form a triangle, we must choose 3 of the 7 points to be the vertices. So, selecting 3 points (without concern for order) out of 7 we get ${7 \\choose 3} = \\frac{7 \\cdot 6 \\cdot 5}{3 \\cdot 2 \\cdot 1} = \\boxed{35}$ triangles."
-}

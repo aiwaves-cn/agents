@@ -1,6 +1,0 @@
-{
-    "problem": "Using the digits 1, 2, 3, 4, 5, how many even three-digit numbers less than 500 can be formed if each digit can be used more than once?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are four choices for the hundreds digit: 1, 2, 3, or 4. The tens digit is unrestricted; it could be any one of the five. Finally, the units digit can only be a 2 or 4. Thus, there are $4 \\cdot 5 \\cdot 2 = \\boxed{40}$ such numbers that can be formed."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "There are thirty-five red, yellow, orange, and white marbles in a bag. If half the number of red marbles equals two less than the number of yellow marbles, equals a third the number of orange marbles, and equals a third of three more than the number of white marbles, how many red marbles are there?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Call the number of red marbles $a$, the number of yellow marbles $b$, the number of orange marbles $c$, and the number of white marbles $d$. We can express the information given in the problem by the following system of linear equations:  \\begin{align*}\na+b+c+d &= 35\\\\\n\\frac{a}{2} = b - 2 = \\frac{c}{3} &= \\frac{d+3}{3}\n\\end{align*} Using the second expression, we can solve for $a$, $c$, and $d$ in terms of $b$:\n\\begin{align*}\na &= 2b - 4,\\\\\nc &= 3b - 6, \\\\\nd &= 3b - 9\n\\end{align*} Putting these values into the first equation gives $2b - 4 + b + 3b - 6 + 3b - 9 = 35$, so $b = 6$. Because $a = 2b - 4$, $a = 12 - 4 = \\boxed{8}$."
-}

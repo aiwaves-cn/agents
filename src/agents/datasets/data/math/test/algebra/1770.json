@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\lceil x\\rceil+\\lfloor x\\rfloor+x=4.8$, solve for $x$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since $\\lceil x\\rceil+\\lfloor x\\rfloor+x=4.8$, we know that $x$ must be a number ending in $.8$ because $\\lceil x\\rceil$ and $\\lfloor x\\rfloor$ will both be integers. This means that $\\lceil x\\rceil=x+0.2$ and $\\lfloor x\\rfloor=x-0.8$. Using substitution we can rewrite the original equation as $x+0.2+x-0.8+x=4.8$. So, $3x=5.4$ and $x=\\boxed{1.8}$."
-}

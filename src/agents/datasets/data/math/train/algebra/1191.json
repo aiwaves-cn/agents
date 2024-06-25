@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\frac{\\sqrt{2}}{\\sqrt{5}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{6}} \\cdot \\frac{\\sqrt{4}}{\\sqrt{7}}$ and rationalize the denominator of the resulting fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The problem is to simplify $\\frac{\\sqrt{2}\\cdot\\sqrt{3}\\cdot\\sqrt{4}}{\\sqrt{5}\\cdot\\sqrt{6}\\cdot\\sqrt{7}}$. Writing $\\sqrt{6}$ as $\\sqrt{2}\\cdot\\sqrt{3}$ shows that it is possible to cancel a $\\sqrt{2}$ and a $\\sqrt{3}$ top and bottom. Also, simplify $\\sqrt{4}$ to $2$. This gives $\\frac{2}{\\sqrt{5}\\cdot\\sqrt{7}} = \\frac{2}{\\sqrt{35}}$. Finally, to rationalize the denominator, multiply top and bottom by $\\sqrt{35}$ to get $\\boxed{\\frac{2\\sqrt{35}}{35}}$."
-}

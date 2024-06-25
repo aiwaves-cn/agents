@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(n)$ is defined on the positive integers such that $f(f(n)) = 2n$ and $f(4n + 1) = 4n + 3$ for all positive integers $n.$  Find $f(1000).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Consider the expression $f(f(f(a))).$  Since $f(f(a)) = 2a,$ this is equal to $f(2a).$  But taking $n = f(a)$ in $f(f(n)) = 2n,$ we get\n\\[f(f(f(a))) = 2f(a).\\]Hence,\n\\[f(2a) = 2f(a)\\]for all positive integers $a.$\n\nThen\n\\[f(1000) = 2f(500) = 4f(250) = 8f(125).\\]Taking $n = 31$ in $f(4n + 1) = 4n + 3,$ we get\n\\[f(125) = 127,\\]so $f(1000) = \\boxed{1016}.$"
-}

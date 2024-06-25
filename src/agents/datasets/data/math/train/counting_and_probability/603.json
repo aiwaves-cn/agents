@@ -1,6 +1,0 @@
-{
-    "problem": "How many four-digit positive integers are multiples of 3?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The first four-digit multiple of 3 is 1002, which is $3\\times 334$.  The last is 9999, which is $3\\times 3333$.  From 334 to 3333, inclusive, there are $3333-334+1 = 3000$ positive integers.  So, there are $\\boxed{3000}$ positive integers that are multiples of 3.  Notice that this happens to equal $9000/3$.  Is this a coincidence?  (Beware of always using this reasoning!  What if we asked for the number of multiples of 7?)"
-}

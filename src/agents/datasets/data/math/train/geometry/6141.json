@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ has positive integer side lengths with $AB=AC$. Let $I$ be the intersection of the bisectors of $\\angle B$ and $\\angle C$. Suppose $BI=8$. Find the smallest possible perimeter of $\\triangle ABC$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $D$ be the midpoint of $\\overline{BC}$. Then by SAS Congruence, $\\triangle ABD \\cong \\triangle ACD$, so $\\angle ADB = \\angle ADC = 90^o$.\nNow let $BD=y$, $AB=x$, and $\\angle IBD = \\dfrac{\\angle ABD}{2} = \\theta$.\nThen $\\mathrm{cos}{(\\theta)} = \\dfrac{y}{8}$\nand $\\mathrm{cos}{(2\\theta)} = \\dfrac{y}{x} = 2\\mathrm{cos^2}{(\\theta)} - 1 = \\dfrac{y^2-32}{32}$.\nCross-multiplying yields $32y = x(y^2-32)$.\nSince $x,y>0$, $y^2-32$ must be positive, so $y > 5.5$.\nAdditionally, since $\\triangle IBD$ has hypotenuse $\\overline{IB}$ of length $8$, $BD=y < 8$.\nTherefore, given that $BC=2y$ is an integer, the only possible values for $y$ are $6$, $6.5$, $7$, and $7.5$.\nHowever, only one of these values, $y=6$, yields an integral value for $AB=x$, so we conclude that $y=6$ and $x=\\dfrac{32(6)}{(6)^2-32}=48$.\nThus the perimeter of $\\triangle ABC$ must be $2(x+y) = \\boxed{108}$."
-}

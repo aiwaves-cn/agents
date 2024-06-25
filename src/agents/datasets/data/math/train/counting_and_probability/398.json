@@ -1,6 +1,0 @@
-{
-    "problem": "How many three-digit numbers are composed of three distinct digits such that one digit is the average of the other two?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The set of the three digits of such a number can be arranged to form an increasing arithmetic sequence.  There are 8 possible sequences with a common difference of 1, since the first term can be any of the digits 0 through 7.  There are 6 possible sequences with a common difference of 2, 4 with a common difference of 3, and 2 with a common difference of 4. Hence there are 20 possible arithmetic sequences. Each of the 4 sets that contain 0 can be arranged to form $2\\cdot2!=4$ different numbers, and the 16 sets that do not contain 0 can be arranged to form $3!=6$ different numbers.  Thus there are a total of $4\\cdot4+16\\cdot6=\\boxed{112}$ numbers with the required properties."
-}

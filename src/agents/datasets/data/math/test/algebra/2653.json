@@ -1,6 +1,0 @@
-{
-    "problem": "Jane has been growing two bacteria farms.\n\nBacteria farm Rod has a starting population of 2 bacteria, while Bacteria farm Sphere has a starting population of 8 bacteria.  However, Jane starts growing Rod five hours before she starts growing Sphere.\n\nAt 8 p.m., Jane checks her farms and finds that they have the exact same population. If the population of Rod doubles every hour, but the population of Sphere is quadrupled every hour, how many hours ago did she start growing Sphere?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $x$ denote the number of hours Sphere has been growing. We can express this problem as an exponential equation, as follows: $$2^{x+6} = 2\\cdot 4^{x+1}.$$Now, since $4 = 2^2$, we have $2\\cdot 4^{x+1} = 2\\cdot (2^2)^{x+1} = 2\\cdot 2^{2x+2} = 2^{2x + 3}$, which means our equation is: $$2^{x + 6} = 2^{2x + 3}.$$Then, we set the exponents equal to each other, and obtain $$x + 6 = 2x + 3.$$Solving for $x$, we get $\\boxed{x = 3}$."
-}

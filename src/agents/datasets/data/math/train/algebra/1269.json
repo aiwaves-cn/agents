@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate the sum \\[\\frac{1}{3^1} + \\frac{2}{3^2} + \\frac{3}{3^3} + \\cdots + \\frac{k}{3^k} + \\cdots \\]",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the sum be $S$. This series looks almost geometric, but not quite. We can turn it into a geometric series as follows: \\begin{align*}\nS &= \\frac{1}{3^1} +\\frac{2}{3^2} + \\frac{3}{3^3} + \\frac{4}{3^4} + \\cdots \\\\\n\\frac{1}{3}S &= \\frac{0}{3^1} + \\frac{1}{3^2} + \\frac{2}{3^3} + \\frac{3}{3^4} + \\cdots \\\\\n\\frac{2}{3}S = S - \\frac{1}{3}S &= \\frac{1}{3^1} + \\frac{1}{3^2} + \\frac{1}{3^3} + \\frac{1}{3^4} + \\cdots\n\\end{align*}Now, we do have a geometric series, so we can find $\\frac{2}{3}S = \\frac{\\frac{1}{3}}{1 - \\frac{1}{3}} = \\frac{1}{2}$, and $S = \\boxed{\\frac{3}{4}}$."
-}

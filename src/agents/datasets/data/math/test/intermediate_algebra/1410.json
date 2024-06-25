@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $a+b+c,$ given that $a,$ $b,$ and $c$ are the roots of \\[\\frac{1}{x} + 5x^2 = 6x - 24.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We want to apply Vieta's formulas, but the given equation is not a polynomial equation, because of the $\\frac1x$ term. To turn this equation into an equivalent polynomial equation, we multiply both sides by $x$ and rearrange: \\[\\begin{aligned} 1+5x^3 &= 6x^2 - 24x \\\\ 5x^3 - 6x^2 + 24x + 1 &= 0 .\\end{aligned}\\]Now we can use Vieta: the sum of the roots is $a+b+c=\\boxed{\\frac65}.$"
-}

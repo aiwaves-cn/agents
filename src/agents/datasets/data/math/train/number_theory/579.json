@@ -1,6 +1,0 @@
-{
-    "problem": "Winnie has 17 red balloons, 33 white balloons, 65 green balloons, and 83 chartreuse balloons.  With no regard to color, Winnie gives each of her 8 nearest and dearest friends some balloons.  Each friend gets the same number of balloons and she hands out as many balloons as possible.  How many balloons does Winnie end up keeping for herself?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We want to know the remainder when $17+33+65+83$ is divided by 8.  The remainders of each of these numbers are easy to compute individually so we can say \\[17+33+65+83\\equiv1+1+1+3\\equiv6\\pmod8.\\]Therefore Winnie has $\\boxed{6}$ balloons left over after giving out her balloons."
-}

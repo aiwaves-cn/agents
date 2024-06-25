@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can four people line up in a straight line if the youngest person cannot be first in line?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Consider the number of people that can fill each place in line. There are three people who could be first (the youngest is excluded). There are then three people who could be second, two people who could be third, and the last is determined. Thus, there are $3 \\cdot 3 \\cdot 2 = \\boxed{18}$ ways in which to form a line."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\omega$ be a complex number such that $\\omega^7 = 1$ and $\\omega \\ne 1.$  Let $\\alpha = \\omega + \\omega^2 + \\omega^4$ and $\\beta = \\omega^3 + \\omega^5 + \\omega^6.$  Then $\\alpha$ and $\\beta$ satisfy the quadratic\n\\[x^2 + ax + b = 0\\]for some real numbers $a$ and $b.$  Enter the ordered pair $(a,b).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the equation $\\omega^7 = 1,$ $\\omega^7 - 1 = 0,$ which factors as\n\\[(\\omega - 1)(\\omega^6 + \\omega^5 + \\omega^4 + \\omega^3 + \\omega^2 + \\omega + 1) = 0.\\]Since $\\omega \\neq 1,$\n\\[\\omega^6 + \\omega^5 + \\omega^4 + \\omega^3 + \\omega^2 + \\omega + 1 = 0.\\]We have that\n\\[\\alpha + \\beta = \\omega + \\omega^2 + \\omega^4 + \\omega^3 + \\omega^5 + \\omega^6 = -1.\\]Also,\n\\begin{align*}\n\\alpha \\beta &= (\\omega + \\omega^2 + \\omega^4)(\\omega^3 + \\omega^5 + \\omega^6) \\\\\n&= \\omega^4 + \\omega^6 + \\omega^7 + \\omega^5 + \\omega^7 + \\omega^8 + \\omega^7 + \\omega^9 + \\omega^{10} \\\\\n&= \\omega^4 + \\omega^6 + 1 + \\omega^5 + 1 + \\omega + 1 + \\omega^2 + \\omega^3 \\\\\n&= 2 + (\\omega^6 + \\omega^5 + \\omega^4 + \\omega^3 + \\omega^2 + \\omega + 1) \\\\\n&= 2.\n\\end{align*}Then by Vieta's formulas, $\\alpha$ and $\\beta$ are the roots of $x^2 + x + 2 = 0,$ so $(a,b) = \\boxed{(1,2)}.$"
-}

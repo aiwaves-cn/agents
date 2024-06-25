@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, what is the value of $x?$ [asy]\ndraw((0,0)--(3,0)--(1,2.5)--cycle);\nlabel(\"$60^\\circ$\",(2.9,0),NW);\nlabel(\"$50^\\circ$\",(1.1,2.2),S);\nlabel(\"$x^\\circ$\",(0,0),SW);\ndraw((-1,0)--(0,0));\ndraw((0,0)--(-.5,-1.25));\n[/asy]",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "Since the angles in a triangle add to $180^\\circ,$ then the missing angle in the triangle is $180^\\circ-50^\\circ-60^\\circ=70^\\circ.$ We then have: [asy]\ndraw((0,0)--(3,0)--(1,2.5)--cycle);\nlabel(\"$60^\\circ$\",(2.9,0),NW);\nlabel(\"$50^\\circ$\",(1.1,2.2),S);\nlabel(\"$x^\\circ$\",(0,0),SW);\ndraw((-1,0)--(0,0));\ndraw((0,0)--(-.5,-1.25));\nlabel(\"$A$\",(-1,0),W);\nlabel(\"$B$\",(3,0),E);\nlabel(\"$C$\",(1,2.5),N);\nlabel(\"$D$\",(-.5,-1.25),S);\nlabel(\"$X$\",(0,0),NW);\n[/asy] Since $\\angle BXC=70^\\circ,$ then $\\angle AXC = 180^\\circ - \\angle BXC = 110^\\circ.$\n\nSince $\\angle AXC = 110^\\circ,$ then $\\angle DXA = 180^\\circ - \\angle AXC = 70^\\circ.$\n\nTherefore, $x=\\boxed{70}.$\n\n(Alternatively, we could note that when two lines intersect, the vertically opposite angles are equal so $\\angle DXA=\\angle BXC =70^\\circ.$)"
-}

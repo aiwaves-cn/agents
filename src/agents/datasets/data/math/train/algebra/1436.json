@@ -1,6 +1,0 @@
-{
-    "problem": "The values of $a$, $b$, $c$ and $d$ are 1, 2, 3 and 4, but not necessarily in that order. What is the largest possible value of the sum of the four products $ab$, $bc$, $cd$ and $da$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Seeing pairwise products, we consider  \\[\n(a+b+c+d)^2=a^2+b^2+c^2+d^2+2(ab+ac+ad+bc+bd+cd),\n\\]so \\[\nab+bc+cd+da=\\frac{(a+b+c+d)^2-a^2-b^2-c^2-d^2}{2}-(ac+bd).\n\\]Since the fraction on the right-hand side does not depend on how the values of $a$, $b$, $c$, and $d$ are assigned, we maximize $ab+bc+cd+da$ by minimizing $ac+bd$.  Checking the three distinct values for $ac+bd$, we find that $1\\cdot4+2\\cdot3=10$ is its minimum value.  Therefore, the largest possible value of $ab+bc+cd+da$ is $$\\frac{(1+2+3+4)^2-1^2-2^2-3^2-4^2}{2}-10=\\boxed{25}.$$"
-}

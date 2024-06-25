@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify\n\\[\\frac{\\tan x}{\\sec x + 1} - \\frac{\\sec x - 1}{\\tan x}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We can write\n\\begin{align*}\n\\frac{\\tan x}{\\sec x + 1} - \\frac{\\sec x - 1}{\\tan x} &= \\frac{\\frac{\\sin x}{\\cos x}}{\\frac{1}{\\cos x} + 1} - \\frac{\\frac{1}{\\cos x} - 1}{\\frac{\\sin x}{\\cos x}} \\\\\n&= \\frac{\\sin x}{1 + \\cos x} - \\frac{1 - \\cos x}{\\sin x} \\\\\n&= \\frac{\\sin^2 x - (1 - \\cos x)(1 + \\cos x)}{(1 + \\cos x) \\sin x} \\\\\n&= \\frac{\\sin^2 x - (1 - \\cos^2 x)}{(1 + \\cos x) \\sin x} \\\\\n&= \\frac{\\sin^2 x + \\cos^2 x - 1}{(1 + \\cos x) \\sin x} \\\\\n&= \\boxed{0}.\n\\end{align*}"
-}

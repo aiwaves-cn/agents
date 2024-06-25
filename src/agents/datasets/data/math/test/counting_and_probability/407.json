@@ -1,6 +1,0 @@
-{
-    "problem": "What is the coefficient of $x^2y^2$ in the expansion of $(x+y)^4+(x+2y)^4$?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "To find the coefficient of $x^2y^2$, we can find the coefficient in each of the 4th powers. These are the only things that can contribute $x^2y^2$ terms to the final expansion.\n\nThe expansion of $(x+y)^4$ will have a coefficient of $\\binom{4}{2}$ for $x^2y^2$, by the Binomial Theorem.\n\nThe expansion of $(x+2y)^4$ will have a coefficient of $2^2\\binom{4}{2}$ for $x^2y^2$.\n\nThus the coefficient of $x^2y^2$ in the expansion of $(x+y)^4+(x+2y)^4$ will be $\\binom{4}{2}+4\\binom{4}{2}=\\boxed{30}$."
-}

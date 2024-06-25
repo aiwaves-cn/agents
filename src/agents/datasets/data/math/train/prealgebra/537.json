@@ -1,6 +1,0 @@
-{
-    "problem": "The students at Sherry Curtis School were able to vote for one or more events for their field day. Below are the top three choices. List the names of the choices from most popular to least popular, separated by commas.\n\n\\begin{tabular}{|c|c|c|c|} \\hline\nEvent & Kickball & Picnic & Softball \\\\ \\hline \n& & &\\\\[-1.5ex]\nFraction liking event & $\\frac{11}{30}$ & $\\frac{7}{20}$ & $\\frac{5}{12}$ \\\\[1ex] \\hline\n\\end{tabular}",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Rewriting the fractions to have a common denominator of $60,$ we have \\begin{align*}\n\\text{Kickball: }&\\frac{22}{60} \\\\\n\\text{Picnic: }&\\frac{21}{60} \\\\\n\\text{Softball: }&\\frac{25}{60}\n\\end{align*} So the order is $\\boxed{\\text{Softball, Kickball, Picnic}}.$"
-}

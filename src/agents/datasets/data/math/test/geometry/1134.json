@@ -1,6 +1,0 @@
-{
-    "problem": "Rhombus $ABCD$, with side length 6, is rolled to form a cylinder of volume 6 by taping $\\overline{AB}$ to $\\overline{DC}$.  What is $\\sin\\left(\\angle ABC\\right)$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $\\theta = \\angle ABC$. The base of the cylinder is a circle with circumference 6, so the radius of the base is $6/(2\\pi)=3/\\pi$. The height of the cylinder is the altitude of the rhombus, which is $6\\sin \\theta$. Thus the volume of the cylinder is \\[\n6=\\pi\\left(\\frac{3}{\\pi}\\right)^2\\left(6\\sin \\theta \\right)\n=\\frac{54}{\\pi}\\sin \\theta,\n\\] so $\\sin \\theta=\\boxed{\\frac{\\pi}{9}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The points $A\\, (5,-5)$ and $B\\, (-1,-1)$ are the endpoints of the hypotenuse of an isosceles right triangle $\\triangle ABC$. What is the area of $ABC$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The length of the hypotenuse is given by the distance formula to be $\\sqrt{(5-(-1))^2 + (-5-(-1))^2} = \\sqrt{6^2+4^2} = \\sqrt{52}$. The length of the leg is then given by $\\sqrt{52}/\\sqrt{2} = \\sqrt{26}$ (alternatively, the Pythagorean Theorem can be applied), and the area of the isosceles right triangle is then equal to $\\frac 12 \\cdot \\sqrt{26} \\cdot \\sqrt{26} = \\boxed{13}.$"
-}

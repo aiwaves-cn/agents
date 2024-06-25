@@ -1,6 +1,0 @@
-{
-    "problem": "What is the volume, in cubic centimeters, of a right rectangular prism with all integer edge lengths, and faces having areas of $30, 180$ and $24$ square centimeters?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Suppose that the dimensions of the rectangular prism are given by $x$, $y$, and $z$, such that $xy = 30, yz = 180,$ and $zx = 24$. If we multiply all three equations together, we get that $xy \\cdot yz \\cdot zx = (xyz)^2 = 30 \\cdot 180 \\cdot 24$. Using prime factorizations, we find that the right-hand side is equal to $(2 \\cdot 3 \\cdot 5) \\times (2^2 \\cdot 3^2 \\cdot 5) \\times (2^3 \\cdot 3) = 2^6 \\cdot 3^4 \\cdot 5^2$. Thus, $(xyz)^2 = (2^3 \\cdot 3^2 \\cdot 5)^2$, so $xyz = \\boxed{360}$. This is the formula for the volume of the box."
-}

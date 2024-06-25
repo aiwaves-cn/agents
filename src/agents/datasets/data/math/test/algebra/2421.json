@@ -1,6 +1,0 @@
-{
-    "problem": "How many values of $r$ are there such that $\\lfloor r \\rfloor + r = 15.5?$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, we note that $r$ must be positive, since otherwise $\\lfloor r \\rfloor + r$ is nonpositive. Next, we know that the decimal part of $r$ must be $0.5$. We write $r$ as $n+0.5$, where $n$ is the greatest integer less than $r.$ Therefore, we can write $\\lfloor r \\rfloor + r$ as $n+n+0.5=15.5$. Solving, we get $n=7.5$. This is impossible because $n$ must be an integer. Therefore, there are $\\boxed{0}$ values of $r$ such that $\\lfloor r \\rfloor + r = 15.5$."
-}

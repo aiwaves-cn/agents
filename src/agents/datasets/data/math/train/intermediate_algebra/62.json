@@ -1,6 +1,0 @@
-{
-    "problem": "The cubic polynomial\n\\[8x^3 - 3x^2 - 3x - 1 = 0\\]has a real root of the form $\\frac{\\sqrt[3]{a} + \\sqrt[3]{b} + 1}{c},$ where $a,$ $b,$ and $c$ are positive integers.  Find $a + b + c.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can arrange the equation as\n\\[9x^3 = x^3 + 3x^2 + 3x + 1 = (x + 1)^3.\\]Taking the cube root of both sides, we get\n\\[x \\sqrt[3]{9} = x + 1.\\]Then $(\\sqrt[3]{9} - 1)x = 1$, so\n\\[x = \\frac{1}{\\sqrt[3]{9} - 1}.\\]To rationalize the denominator, we multiply the numerator and denominator by $\\sqrt[3]{9^2} + \\sqrt[3]{9} + 1.$  This gives us\n\\[\\frac{\\sqrt[3]{9^2} + \\sqrt[3]{9} + 1}{(\\sqrt[3]{9} - 1)(\\sqrt[3]{9^2} + \\sqrt[3]{9} + 1)} = \\frac{\\sqrt[3]{81} + \\sqrt[3]{9} + 1}{8}.\\]Then $a + b + c = 81 + 9 + 8 = \\boxed{98}.$"
-}

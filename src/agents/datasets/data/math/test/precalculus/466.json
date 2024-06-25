@@ -1,6 +1,0 @@
-{
-    "problem": "The polar coordinates of points $A,$ $B,$ and $C$ are $(2,70^\\circ),$ $(2 \\sqrt{3}, 40^\\circ),$ and $(3,10^\\circ),$ respectively.  Compute the area of triangle $ABC.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $O$ be the origin.  Then we can express the area of triangle $ABC$ as\n\\[[ABC] = [ABO] + [BCO] - [ACO].\\][asy]\nunitsize(1.5 cm);\n\npair A, B, C, O;\n\nA = 2*dir(70);\nB = 2*sqrt(3)*dir(40);\nC = 3*dir(10);\n\ndraw(A--B--C--cycle);\ndraw(A--O);\ndraw(B--O);\ndraw(C--O);\ndraw((-0.5,0)--(3,0));\ndraw((0,-0.5)--(0,2.5));\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, NE);\nlabel(\"$C$\", C, E);\nlabel(\"$O$\", O, SW);\n[/asy]\n\nWe have that\n\\begin{align*}\n[ABO] &= \\frac{1}{2} AO \\cdot BO \\sin \\angle AOB = \\frac{1}{2} \\cdot 2 \\cdot 2 \\sqrt{3} \\sin 30^\\circ = \\sqrt{3}, \\\\\n[BCO] &= \\frac{1}{2} BO \\cdot CO \\sin \\angle BOC = \\frac{1}{2} \\cdot 2 \\sqrt{3} \\cdot 3 \\sin 30^\\circ = \\frac{3 \\sqrt{3}}{2}, \\\\\n[ACO] &= \\frac{1}{2} AO \\cdot CO \\sin \\angle AOC = \\frac{1}{2} \\cdot 2 \\cdot 3 \\sin 60^\\circ = \\frac{3 \\sqrt{3}}{2}.\n\\end{align*}Therefore,\n\\[[ABC] = [ABO] + [BCO] - [ACO] = \\boxed{\\sqrt{3}}.\\]"
-}

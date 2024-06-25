@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Multiplying out all of the denominators, we get:\n\\begin{align*}104(n+k) &< 195n< 105(n+k)\\\\ 0 &< 91n - 104k < n + k\\end{align*}\nSince $91n - 104k < n + k$, $k > \\frac{6}{7}n$. Also, $0 < 91n - 104k$, so $k < \\frac{7n}{8}$. Thus, $48n < 56k < 49n$. $k$ is unique if it is within a maximum range of $112$, so $n = \\boxed{112}$."
-}

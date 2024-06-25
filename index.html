@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Agents2.0</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="static/images/agents-logo.png" width="50%">
+            <h1 class="title is-2 publication-title">Symbolic Learning Enables Self-Evolving Agents.</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"><a>Wangchunshu Zhou</a><sup>♠*†</sup>,</span>
+              <span class="author-block"><a>Yixin Ou</a><sup>♠♡*</sup>,</span>
+              <span class="author-block"><a>Shengwei Ding</a><sup>♠*</sup>,</span>
+              <span class="author-block"><a>Long Li</a><sup>♠</sup>,</span>
+              <span class="author-block"><a>Jialong Wu</a><sup>♠</sup>,</span>
+              <span class="author-block"><a>Tiannan Wang</a><sup>♠</sup>,</span>
+              <span class="author-block"><a>Jiamin Chen</a><sup>♠</sup>,</span>
+              <span class="author-block"><a>Shuai Wang</a><sup>♠</sup>,</span>
+              <span class="author-block"><a>Xiaohua Xu</a><sup>♠</sup>,</span>
+              <span class="author-block"><a>Ningyu Zhang</a><sup>♡</sup>,</span>
+              <span class="author-block"><a>Huajun Chen</a><sup>♡</sup>,</span>
+              <span class="author-block"><a>Yuchen Eleanor Jiang</a><sup>♠†</sup>,</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>♠</sup>AIWaves Inc.</span>
+              <span class="author-block"><sup>♡</sup>Zhejiang University</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+              <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Author</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>ArXiv</span>
+                  </a>
+                </span>
+
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/aiwaves-cn/agents" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The AI community has been exploring a pathway to artificial general intelligence (AGI) by developing
+              "language agents", which are complex large language models (LLMs) pipelines involving both prompting
+              techniques and tool usage methods.
+              While language agents have demonstrated impressive capabilities for many real-world tasks, a fundamental
+              limitation of current language agents research is that they are model-centric, or engineering-centric.
+              That's to say, the progress on prompts, tools, and pipelines of language agents requires substantial
+              manual engineering efforts from human experts rather than automatically learning from data.
+              We believe the transition from model-centric, or engineering-centric, to data-centric, i.e., the ability
+              of language agents to autonomously learn and evolve in environments, is the key for them to possibly
+              achieve AGI.
+            </p>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              In this work, we introduce <b>agent symbolic learning</b>, a systematic framework that enables language
+              agents to optimize themselves on their own in a data-centric way using <i>symbolic optimizers</i>.
+              Specifically, we consider agents as symbolic networks where learnable weights are defined by prompts,
+              tools, and the way they are stacked together.
+              Agent symbolic learning is designed to optimize the symbolic network within language agents by mimicking
+              two fundamental algorithms in connectionist learning: back-propagation and gradient descent.
+              Instead of dealing with numeric weights, agent symbolic learning works with natural language simulacrums
+              of weights, loss, and gradients.
+              We conduct proof-of-concept experiments on both standard benchmarks and complex real-world tasks and show
+              that agent symbolic learning enables language agents to update themselves after being created and deployed
+              in the wild, resulting in "self-evolving agents".
+              We demonstrate the potential of the agent symbolic learning framework and open-source the entire framework
+              to facilitate future research on <i>data-centric</i> agent learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Overview -->
+  <section class="section" id="Overview">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-fifths">
+          <h2 class="title is-3">🌟Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              Agent symbolic learning is a systematic framework for training language agents, which is inspired by the
+              connectionist learning procedure used for training neural nets.
+              We make an analogy between language agents and neural nets: the agent pipeline of an agent corresponds to
+              the computational graph of a neural net, a node in the agent pipeline corresponds to a layer in the neural
+              net, and the prompts and tools for a node correspond to the weights of a layer.
+              In this way, we are able to implement the main components of connectionist learning, i.e., backward
+              propagation and gradient-based weight update, in the context of agent training using language-based loss,
+              gradients, and weights.
+            </p>
+          </div>
+          <img src="static/images/overview.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              We implement loss function, back-propagation, and weight optimizer in the context of agent training with
+              carefully designed prompt pipelines.
+              For a training example, our framework first conducts the "forward pass" (agent execution) and stores the
+              input, output, prompts, and tool usage in each node in a "trajectory". We then use a prompt-based loss
+              function to evaluate the outcome, resulting in a "language loss".
+              Afterward, we back-propagate the language loss from the last to the first node along the trajectory,
+              resulting in textual analyses and reflections for the symbolic components within each node, we call them
+              language gradients.
+              Finally, we update all symbolic components in each node, as well as the computational graph consisting of
+              the nodes and their connections, according to the language gradients with another carefully designed
+              prompt.
+              Our approach also naturally supports optimizing multi-agent systems by considering nodes as different
+              agents or allowing multiple agents to take actions in one node.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End Overview -->
+
+  <!-- Framework -->
+  <section class="section" id="Framework">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-fifths">
+          <h2 class="title is-3">🤖Agent Symbolic Learning</h2>
+          <img src="static/images/workflow.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              <b>Forward Pass.</b> The forward pass is almost identical to standard agent execution. The main difference
+              is that we store the input, prompts, tool usage, and the output to the trajectory, which is used for
+              language gradient back-propagation. This is similar to deep learning frameworks such as PyTorch and
+              TensorFlow that store the intermediate outputs and activation in the computation graph of the neural
+              network.
+            </p>
+            <p>
+              <b>Language Loss Computation.</b> After the forward pass, we compute the language loss for a training
+              example by feeding the trajectory into an LLM using a carefully designed prompt template. The key is the
+              design for the prompt template, which is expected to <i>holistically</i> evaluate how the agent performs
+              with respect to the input, environment, and task requirements. To this end, we carefully design a prompt
+              template for language loss computation consisting of the following components: task description, input,
+              trajectory, few-shot demonstrations, principles, and output format control. Among them, task description,
+              input, and trajectory are data-dependent while the few-shot demonstrations, principles, and output format
+              control are fixed for all tasks and training examples. The language loss consists of both natural language
+              comments and a numerical score (also generated via prompting). We can optionally feed the ground-truth
+              label for the input when generating the language loss. We call this scenario <i>supervised agent
+                learning</i>. It can also generate language loss without ground-truth by evaluating the output and
+              trajectory according to the task description. In this case, we can say that the agent is doing
+              <i>unsupervised agent learning</i>, which enables language agents to self-evolving.
+            </p>
+            <p>
+              <b>Back-propagation of Language Gradients.</b> In standard connectionist learning, the goal of gradient
+              back-propagation is to calculate the impact of the weights with respect to the overall loss so that the
+              optimizers can update the weights accordingly. Similarly, in our framework, we also design a
+              "back-propagation" algorithm for language gradients. Specifically, we iterate from the last node to the
+              first node and compute the gradient for each node with LLMs using a carefully designed prompt. The prompt
+              template is designed to instruct the LLM to generate language gradients that are analyses and reflections
+              for the symbolic components within the node. Inspired by the idea of back-propagation, we give the
+              language gradients of the node executed after the current node, as well as the information on the
+              execution of the current node, which is stored in the trajectory. That's to say, when doing analysis and
+              reflection, the LLM not only needs to consider how the prompts and tools suit the subgoal of the current
+              node but also has to consider how they affect the accomplishment of the subgoal of the next node. By
+              chaining from top to bottom, the language gradients for all nodes are relevant and responsible for the
+              overall success of the agent. This method effectively reduces the risk of optimizing toward the local
+              optimum for each isolated prompt and tool, leading to the overall performance of agent systems.
+            </p>
+            <p>
+              <b>Language Gradient-based Update.</b> The final step in the framework is to update the prompts and tools
+              in each node and optimize the overall agent pipeline with the help of language gradients. This is
+              accomplished via "symbolic optimizers". Symbolic optimizers are carefully designed prompt pipelines that
+              can optimize the symbolic weights of an agent. We create three types of symbolic optimizers:
+              PromptOptimizer, ToolOptimizer, and PipelineOptimizer.
+            </p>
+            <p>
+              <b>Batched Training.</b> The aforementioned optimization scheme works with one training example at a time,
+              which resembles stochastic gradient descent. Inspired by the fact that mini-batch stochastic gradient
+              descent works better, or more stably, in practice, we also devise a batched training variant for symbolic
+              optimizers. Specifically, we conduct forward pass, loss computation, and back-propagation for each example
+              separately. Then we feed a batch of language gradients for the same node, and prompt the LLM to
+              holistically consider all these language gradients when updating the agent.
+            </p>
+          </div>
+          <img src="static/images/algorithm.png" width="80%">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Framework -->
+
+  <!-- Experiments -->
+  <section class="section" id="Experiments">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-fifths">
+          <h2 class="title is-3">📊Experiments</h2>
+          <div class="content has-text-justified">
+            <p>
+              <b>Results on Standard Benchmarks.</b> We conduct experiments on standard benchmarks for LLMs including
+              HotpotQA, MATH, and HumanEval.
+              We can see that the proposed agent symbolic learning framework consistently improves over all compared
+              methods. The performance improvement on MATH, a competition-level benchmark, is especially large. In
+              contrast, conventional LLM-based prompt optimization method (Agents w/ AutoPE) and the search-based prompt
+              optimization approach (DSPy) are not as stable: they results in good performance improvements in some
+              cases but leads to significant performance degration in some other cases. This suggests that the agent
+              symbolic learning framework is more robust and can optimize the overall performance of language agents
+              more effectively.
+            </p>
+          </div>
+          <img src="static/images/main_results.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              <b>Results on Complex Agent Tasks.</b> We consider creative writing and software development as two
+              complex agentic tasks.
+              We can see that our approach significantly outperforms all compared baselines on both tasks with a even
+              larger performance gap compared to that on conventional LLM benchmarks. Interestingly, our approach even
+              outperforms tree-of-throught, a carefully designed prompt engineering and inference algorithm, on the
+              creative writing task. We find that our approach successfully finds the plan, write, and revision pipeline
+              and the prompts are very well optimized in each step. We also find that the agent symbolic learning
+              framework recovers similar standard operation procedure developed in MetaGPT, an agent framework
+              specifically designed for software development. This confirms the effectiveness of the proposed agent
+              symbolic learning framework on real-world tasks where there is no ground truth and the overall performance
+              cannot be calculated by equations or codes, as contrary to search-based algorithms such as DSPy.
+            </p>
+          </div>
+          <img src="static/images/other_results.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              <b>Case Study.</b> We then show a case study for the optimization dynamics of the agent symbolic learning
+              framework. We can see that our approach can effectively do prompt engineering and designing the agent
+              pipeline in the way a human expert develops language agents.
+            </p>
+          </div>
+          <img src="static/images/case.png" width="80%">
+          <div class="content has-text-justified">
+            <p>
+              <b>Analysis.</b> Moreover, we find that the initialization of the agent system has non-negligible impacts
+              on the final performance, just as the initialization of a neural nets is important for training. In
+              general, we find that it is generally helpful to initialize the agent in the simplest way and let the
+              symbolic optimizers to do the optimization.
+              In contrast, the performance tends to become unstable if the initial agent system is over-engineered.
+              A natural extension of this observation is that maybe we can do some kind of pre-training on large-scale
+              and diverse tasks as a versatile initialization for general-purpose agents and then adapt it to
+              specialized tasks with agent symbolic learning.
+              We also find that the success of our approach is more significant and stable on complex real-world tasks
+              compared to that on standard benchmarks where the
+              performance is evaluated by accuracy or F1.
+              This suggests that future research on agent learning should focus more on real-world tasks, and the agent
+              research community should work on building a benchmark focusing on agent learning evaluation that consists
+              of diverse complex agentic tasks and investigating robust approaches to measure progress.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End Experiments -->
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">🚩Citation</h2>
+      <pre><code>@misc{zhou2023agents,
+        title={Agents: An Open-source Framework for Autonomous Language Agents}, 
+        author={Wangchunshu Zhou and Yuchen Eleanor Jiang and Long Li and Jialong Wu and Tiannan Wang and Shi Qiu and Jintian Zhang and Jing Chen and Ruipu Wu and Shuai Wang and Shiding Zhu and Jiyu Chen and Wentao Zhang and Ningyu Zhang and Huajun Chen and Peng Cui and Mrinmaya Sachan},
+        year={2023},
+        eprint={2309.07870},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL}
+  }</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>

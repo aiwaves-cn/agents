@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)$ be a monic quartic polynomial such that $p(1) = 2,$ $p(2) = 5,$ $p(3) = 10,$ and $p(4) = 17.$  Find $p(5).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $p(x)$ takes on the same values as $x^2 + 1$ for $x = 1,$ 2, 3, and 4.  So, let\n\\[q(x) = p(x) - x^2 - 1.\\]Then $q(x)$ is also a monic quartic polynomial.  Also, $q(1) = q(2) = q(3) = q(4) = 0,$ so\n\\[q(x) = (x - 1)(x - 2)(x - 3)(x - 4).\\]Hence, $p(x) = (x - 1)(x - 2)(x - 3)(x - 4) + x^2 + 1.$  We can set $x = 5,$ to get $p(5) = \\boxed{50}.$"
-}

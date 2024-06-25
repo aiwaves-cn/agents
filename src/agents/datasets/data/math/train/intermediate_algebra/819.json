@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of the roots of the equation \\[(2x^3 + x^2 - 8x + 20)(5x^3 - 25x^2 + 19) = 0.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "The left-hand side, when multiplied out, is a polynomial of degree $6.$ By Vieta's formulas, the product of the roots is determined by its $x^6$ coefficient and its constant term. The $x^6$ coefficient is $2 \\cdot 5 = 10$ and the constant term is $20 \\cdot 19 = 380,$ so the product of the roots is $\\tfrac{380}{10} = \\boxed{38}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The two externally tangent circles each have a radius of 1 unit. Each circle is tangent to three sides of the rectangle. What is the area of the shaded region? Express your answer in terms of $\\pi$.\n\n[asy]import graph;\ndefaultpen(linewidth(.8pt));\nfill((-40,20)--(40,20)--(40,-20)--(-40,-20)--cycle,gray);\nfill(Circle((-20,0),20),white);\nfill(Circle((20,0),20),white);\ndraw((-40,20)--(40,20)--(40,-20)--(-40,-20)--cycle);\ndraw(Circle((-20,0),20));\ndraw(Circle((20,0),20));\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Each diameter of a circle is 2 units. The rectangle is 2 diameters by 1 diameter, or 4 units by 2 units. Its area is thus 8 square units. Each circle has an area of $1^2\\pi=\\pi$ square units, so the two circles have a combined area of $2\\pi$ square units. The total shaded area is that of the rectangle minus that of the excluded circles, or $\\boxed{8-2\\pi}$ square units."
-}

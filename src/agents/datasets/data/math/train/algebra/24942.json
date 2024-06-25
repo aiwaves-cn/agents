@@ -1,6 +1,0 @@
-{
-    "problem": "The energy stored by any pair of positive charges is inversely proportional to the distance between them, and directly proportional to their charges. Three identical point charges start at the vertices of an equilateral triangle, and this configuration stores 15 Joules of energy. How much more energy, in Joules, would be stored if one of these charges was moved to the midpoint of the opposite side?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the side length of the equilateral triangle be $d$. $15/3=5$ Joules of energy are stored when two charges are at distance $d$, so $2\\cdot5=10$ Joules are stored when they are at distance $d/2$, because energy is inversely proportional to distance. This means that in the second configuration, the pair $(A,C)$ and $(B,C)$ store 10 Joules each, and since $(A,B)$ still stores 5 Joules, the final configuration stores a total of $10+10+5=25$ Joules, which is $25-15=\\boxed{10}$ Joules more than the initial configuration. [asy]\ndot((0,0)); dot((2,0)); dot((1,1.732));\nlabel(\"$A$\",(0,0),S); label(\"$B$\",(2,0),S); label(\"$C$\",(1,1.732),N);\ndraw((3,.866)--(5,.866),EndArrow);\ndot((6,0)); dot((8,0)); dot((7,0));\nlabel(\"$A$\",(6,0),S); label(\"$B$\",(8,0),S); label(\"$C$\",(7,0),S);\n[/asy]"
-}

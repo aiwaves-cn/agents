@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic equation $ax^2+32x+c=0$ has exactly one solution. If $a+c=130$, and $a>c$, find the ordered pair $(a,c)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Since the quadratic has only one solution, the discriminant must be equal to zero. The discriminant is $b^2-4ac=1024-4ac=0$, so $ac=\\frac{1024}{4}=256$. We need to find $a$ and $c$ given $a+c=130$ and $ac=256$. We could write a quadratic equation and solve, but instead we rely on clever algebraic manipulations: Since $a+c=130$, we have $$(a+c)^2=a^2+c^2+2ac=130^2=16900.$$We subtract $4ac=1024$ from each side to find $$a^2+c^2+2ac-4ac=a^2+c^2-2ac=16900-1024=15876.$$We recognize each side as a square, so we take the square root of both sides: $$\\sqrt{a^2+c^2-2ac}=\\sqrt{(a-c)^2}=a-c=\\sqrt{15876}=126.$$(Technically we should take the positive and negative square root of both sides, but since $a>c$ we know $a-c>0$.) Thus we have  \\begin{align*}\na-c&=126\\\\\na+c&=130\n\\end{align*}Summing these equations gives \\begin{align*}\n2a&=256\\\\\n\\Rightarrow\\qquad a&=128,\n\\end{align*}and $c=130-a=2$. Thus our ordered pair $(a,c)$ is $\\boxed{(128,2)}$."
-}

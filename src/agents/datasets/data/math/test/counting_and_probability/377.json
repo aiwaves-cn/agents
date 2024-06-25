@@ -1,6 +1,0 @@
-{
-    "problem": "A pirate searches seven islands for buried treasure. If each island has a $\\frac{1}{5}$ chance of having treasure, what is the probability that exactly 4 of the islands have treasure?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{7}{4}=35$ ways to choose 4 of the islands. For each choice, there is a probability of $\\left( \\frac{1}{5} \\right)^4 \\left( \\frac{4}{5} \\right)^3$ that those 4 islands will have treasure and the others will not. Therefore, the total probability that exactly 4 of the islands have treasure is $35 \\left( \\frac{1}{5} \\right)^4 \\left( \\frac{4}{5} \\right)^3 = \\boxed{\\frac{448}{15625}}$."
-}

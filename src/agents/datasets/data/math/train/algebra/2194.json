@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers $n$ less than 100 have a corresponding integer $m$ divisible by 3 such that the roots of $x^2-nx+m=0$ are consecutive positive integers?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "In the quadratic $ax^2+bx+c$, the roots sum to $\\frac{-b}{a}$ and multiply to $\\frac{c}{a}$. Therefore, for $x^2-nx+m$, we know that the sum of the roots is $n$ and the product of the roots is $m$. The requirement that $n$ be an integer with $0<n<100$ along with the requirement that the roots are consecutive positive integers leaves us with 49 possible values of $n$: $(1+2), (2+3), (3+4),...,(48+49),(49+50)$. Of these values of $n$, the corresponding value of $m$ would be $(1\\ast2), (2\\ast3), (3\\ast4),...,(48\\ast49), (49\\ast50)$. In order for $m$ to be divisible by 3, thus, one of the roots has to be divisible by three. The values of $n$ in $(2+3), (3+4), (5+6), ... ,(48+49)$ satisfy that requirement, but in $(1+2), (4+5), ... ,(49+50)$ they do not. This eliminates one third of the possibilities for $n$. Since $n=(49+50)$ is disqualified, we are left with $48-(48\\div 3) = 48-16=\\boxed{32}$ possible values of $n$."
-}

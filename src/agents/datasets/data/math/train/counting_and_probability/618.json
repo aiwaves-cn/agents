@@ -1,6 +1,0 @@
-{
-    "problem": "Ten distinct points are identified on the circumference of a circle. How many different convex quadrilaterals can be formed if each vertex must be one of these 10 points?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "With the ten points on the circumference of a circle, any set of 4 of them will form a convex (indeed, cyclic) quadrilateral. So, with ten points, and we can choose any 4 of them to form a distinct quadrilateral, we get ${10 \\choose 4} = \\frac{10 \\cdot 9 \\cdot 8 \\cdot 7}{4 \\cdot 3 \\cdot 2} = 10 \\cdot 3 \\cdot 7 = \\boxed{210}$ quadrilaterals."
-}

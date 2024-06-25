@@ -1,6 +1,0 @@
-{
-    "problem": "A palindrome is a number that reads the same forward and backward. How many three-digit perfect squares are palindromes?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The possible units digits of a perfect square are 0 ($0^2$), 1 ($1^2$, $9^2$), 4 ($2^2$, $8^2$), 9 ($3^2$, $7^2$), 6 ($4^2$, $6^2$), and 5 ($5^2$). Clearly, a three-digit perfect square with 0 as the units digit is not a palindrome because its hundreds digit cannot be 0. The only perfect square palindrome with 1 as the units digit is $11^2=121$; the only perfect square palindrome with 4 as the units digit is $22^2=484$; the only perfect square palindrome with 6 as the units digit is $26^2=676$; no perfect square palindrome has 9 or 5 as the units digit. Therefore, there are $\\boxed{3}$ perfect squares that are palindromes."
-}

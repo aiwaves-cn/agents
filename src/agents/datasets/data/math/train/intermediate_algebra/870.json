@@ -1,6 +1,0 @@
-{
-    "problem": "Find the only real number that can be expressed in the form \\[(a + bi)^3 - 107i,\\]where $i^2 = -1,$ and $a$ and $b$ are positive integers.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have \\[\\begin{aligned} (a+bi)^3 - 107i &= (a^3 + 3a^2bi - 3ab^2 - b^3i) - 107i \\\\ &=(a^3 - 3ab^2) + (3a^2b-b^3-107)i. \\end{aligned}\\]If this is a real number, then we must have \\[0 = 3a^2b-b^3-107\\]or \\[107 = b(3a^2-b^2).\\]Since $107$ is prime, either $b=1$ or $b=107.$ If $b=1,$ then we have $107 = 3a^2-1,$ so $a^2 = 36$ and $a=6.$ If $b = 107,$ then we have $1 = 3a^2 - 107^2,$ so $a^2 = \\frac{1 + 107^2}{3}.$ But $107^2 \\equiv 2^2 \\equiv 1 \\pmod{3},$ so the right-hand side is not an integer. Thus, $(a, b) = (6, 1)$ is the only possibility. Then the answer is \\[a^3 - 3ab^2 = 6^3-3 \\cdot 6 \\cdot 1^2 = \\boxed{198}.\\]"
-}

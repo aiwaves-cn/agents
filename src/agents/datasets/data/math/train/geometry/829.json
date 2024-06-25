@@ -1,6 +1,0 @@
-{
-    "problem": "The figure shown is a cube. The distance between vertices $B$ and $G$ is $5\\sqrt{2}$ units. What is the volume of the cube, in cubic units?\n\n[asy]\n\nsize(3cm,3cm);\n\npair A,B,C,D,a,b,c,d;\n\nA=(0,0);\nB=(1,0);\nC=(1,1);\nD=(0,1);\n\ndraw(A--B--C--D--A);\n\na=(-0.25,0.1);\nb=D+(A+a);\nc=C+(A+a);\n\ndraw(A--a);\n\ndraw(D--b);\n\ndraw(C--c);\n\ndraw(a--b--c);\n\ndraw(A--b,1pt+dotted);\n\nlabel(\"$B$\",b,W);\nlabel(\"$G$\",A,NE);\n\ndot(A);\ndot(b);\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "$BG$ is a diagonal along one face of the cube. Since this diagonal splits the square face into two $45-45-90$ triangles, the diagonal is $\\sqrt{2}$ times longer than a side of the square, so a side of the square measures $5\\sqrt{2}/\\sqrt{2}=5$ units. Thus, the volume of the cube is $5^3=\\boxed{125}$ cubic units."
-}

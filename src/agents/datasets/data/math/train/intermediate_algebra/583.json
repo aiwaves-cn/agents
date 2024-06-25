@@ -1,6 +1,0 @@
-{
-    "problem": "If $60^a = 3$ and $60^b = 5,$ then find $12^{(1 - a - b)/(2(1 - b))}.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We have that $a = \\log_{60} 3$ and $b = \\log_{60} 5,$ so\n\\[1 - a - b = \\log_{60} 60 - \\log_{60} 3 - \\log_{60} 5 = \\log_{60} \\frac{60}{3 \\cdot 5} = \\log_{60} 4 = 2 \\log_{60} 2\\]and\n\\[2 (1 - b) = 2 (\\log_{60} 60 - \\log_{60} 5) = 2 \\log_{60} 12,\\]so\n\\[\\frac{1 - a - b}{2(1 - b)} = \\frac{2 \\log_{60} 2}{2 \\log_{60} 12} = \\log_{12} 2.\\]Therefore,\n\\[12^{(1 - a - b)/(2(1 - b))} = \\boxed{2}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Solve the congruence $11n \\equiv 7 \\pmod{43}$, as a residue modulo 43.  (Give an answer between 0 and 42.)",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Note that 43 is a close to a multiple of 11, namely 44.  Multiplying both sides of the given congruence by 4, we get $44n \\equiv 28 \\pmod{43}$, which reduces to $n \\equiv \\boxed{28} \\pmod{43}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A fenced, rectangular field measures $24$ meters by $52$ meters. An agricultural researcher has 1994 meters of fence that can be used for internal fencing to partition the field into congruent, square test plots. The entire field must be partitioned, and the sides of the squares must be parallel to the edges of the field. What is the largest number of square test plots into which the field can be partitioned using all or some of the 1994 meters of fence?\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Suppose there are $n$ squares in every column of the grid, so there are $\\frac{52}{24}n = \\frac {13}6n$ squares in every row. Then $6|n$, and our goal is to maximize the value of $n$.\nEach vertical fence has length $24$, and there are $\\frac{13}{6}n - 1$ vertical fences; each horizontal fence has length $52$, and there are $n-1$ such fences. Then the total length of the internal fencing is $24\\left(\\frac{13n}{6}-1\\right) + 52(n-1) = 104n - 76 \\le 1994 \\Longrightarrow n \\le \\frac{1035}{52} \\approx 19.9$, so $n \\le 19$. The largest multiple of $6$ that is $\\le 19$ is $n = 18$, which we can easily verify works, and the answer is $\\frac{13}{6}n^2 = \\boxed{702}$."
-}

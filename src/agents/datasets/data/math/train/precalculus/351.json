@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $3 \\sin A + 4 \\cos B = 6$ and $4 \\sin B + 3 \\cos A = 1$. Find all possible values of $\\angle C,$ in degrees.  Enter all the possible values, separated by commas.",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Squaring both equations, we get\n\\begin{align*}\n9 \\sin^2 A + 24 \\sin A \\cos B + 16 \\cos^2 B &= 36, \\\\\n9 \\cos^2 A + 24 \\cos A \\sin B + 16 \\sin^2 B &= 1.\n\\end{align*}Adding these equations, and using the identity $\\cos^2 \\theta + \\sin^2 \\theta = 1,$ we get\n\\[24 \\sin A \\cos B + 24 \\cos A \\sin B = 12,\\]so\n\\[\\sin A \\cos B + \\cos A \\sin B = \\frac{1}{2}.\\]Then from the angle addition formula, $\\sin (A + B) = \\frac{1}{2},$ so\n\\[\\sin C = \\sin (180^\\circ - A - B) = \\sin (A + B) = \\frac{1}{2}.\\]Hence, $C = 30^\\circ$ or $C = 150^\\circ.$\n\nIf $C = 150^\\circ,$ then $A < 30^\\circ,$ so\n\\[3 \\sin A + 4 \\cos B < 3 \\cdot \\frac{1}{2} + 4 < 6,\\]contradiction.  Hence, the only possible value of $C$ is $\\boxed{30^\\circ}.$\n\nThere exists a triangle $ABC$ that does satisfy the given conditions; in this triangle, $\\cos A = \\frac{5 - 12 \\sqrt{3}}{37}$ and $\\cos B = \\frac{66 - 3 \\sqrt{3}}{74}.$"
-}

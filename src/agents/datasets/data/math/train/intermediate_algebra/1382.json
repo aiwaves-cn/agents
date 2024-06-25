@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z$ be a complex number with $|z| = \\sqrt{2}.$  Find the maximum value of\n\\[|(z - 1)^2 (z + 1)|.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Since $|z| = \\sqrt{2},$ $x^2 + y^2 = 2.$  Then\n\\begin{align*}\n|z - 1| &= |x + yi - 1| \\\\\n&= \\sqrt{(x - 1)^2 + y^2} \\\\\n&= \\sqrt{x^2 - 2x + 1 + 2 - x^2} \\\\\n&= \\sqrt{3 - 2x},\n\\end{align*}and\n\\begin{align*}\n|z + 1| &= |x + yi + 1| \\\\\n&= \\sqrt{(x + 1)^2 + y^2} \\\\\n&= \\sqrt{x^2 + 2x + 1 + 2 - x^2} \\\\\n&= \\sqrt{2x + 3},\n\\end{align*}so\n\\[|(z - 1)^2 (z + 1)| = \\sqrt{(3 - 2x)^2 (2x + 3)}.\\]Thus, we want to maximize $(3 - 2x)^2 (2x + 3),$ subject to $-\\sqrt{2} \\le x \\le \\sqrt{2}.$\n\nWe claim the maximum occurs at $x = -\\frac{1}{2}.$  At $x = -\\frac{1}{2},$ $(3 - 2x)^2 (2x + 3) = 32.$  Note that\n\\[32 - (3 - 2x)^2 (2x + 3) = -8x^3 + 12x^2 + 18x + 5 = (2x + 1)^2 (5 - 2x) \\ge 0,\\]so $(3 - 2x)^2 (2x + 3) \\le 32$ for $-\\sqrt{2} \\le x \\le \\sqrt{2},$ with equality if and only if $x = -\\frac{1}{2}.$\n\nTherefore, the maximum value of $|(z - 1)^2 (z + 1)| = \\sqrt{(3 - 2x)^2 (2x + 3)}$ is $\\sqrt{32} = \\boxed{4 \\sqrt{2}}.$"
-}

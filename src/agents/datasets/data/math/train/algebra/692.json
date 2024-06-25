@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of two numbers is 25 and their product is 126. What is the absolute value of the difference of the two numbers?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We are given that $x + y = 25$ and $xy = 126$ for some numbers $x$ and $y$. We note that \\begin{align*}\n(x-y)^2&= x^2 - 2xy + y^2\\\\\n&= x^2 + 2xy + y^2 - 4xy\\\\\n&= (x + y)^2 - 4xy\\\\\n&= (25)^2 - 4\\cdot 126\\\\\n&= 121.\n\\end{align*}\n\nThus, we have $(x - y)^2 = 121$. Taking the square root of both sides, we have $\\sqrt{(x- y)^2} = |x - y| = \\boxed{11}$."
-}

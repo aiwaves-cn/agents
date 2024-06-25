@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f_0(x)=x+|x-100|-|x+100|$, and for $n\\geq 1$, let $f_n(x)=|f_{n-1}(x)|-1$. For how many values of $x$ is $f_{100}(x)=0$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "For integers $n \\ge 1$ and $k \\ge 0,$ if $f_{n - 1}(x) = \\pm k,$ then\n\\[f_n(x) = |f_{n - 1}(x)| - 1 = k - 1.\\]This means if $f_0(x) = \\pm k,$ then $f_k(x) = 0.$\n\nFurthermore, if $f_n(x) = 0,$ then $f_{n + 1}(x) = -1,$ and $f_{n + 2}(x) = 0.$  Hence, $f_{100}(x) = 0$ if and only if $f_0(x) = 2k$ for some integer $k,$ $-50 \\le k \\le 50.$\n\nWe can write\n\\[f_0(x) = \\left\\{\n\\begin{array}{cl}\nx + 200 & \\text{if $x < -100$}, \\\\\n-x & \\text{if $-100 \\le x < 100$}, \\\\\nx - 200 & \\text{if $x \\ge 100$}.\n\\end{array}\n\\right.\\][asy]\nunitsize(0.01 cm);\n\ndraw((-400,-200)--(-100,100)--(100,-100)--(400,200));\ndraw((-400,0)--(400,0));\ndraw((0,-200)--(0,200));\n\nlabel(\"$y = f_0(x)$\", (400,200), E);\nlabel(\"$(-100,100)$\", (-100,100), N);\nlabel(\"$(100,-100)$\", (100,-100), S);\n[/asy]\n\nThus, the equation $f_0(x) = \\pm 100$ has two solutions, and the equation $f_0(x) = 2k$ has three solutions for $-49 \\le k \\le 49.$  Thus, the number of solutions to $f_{100}(x) = 0$ is $2 + 2 + 3 \\cdot 99 = \\boxed{301}.$"
-}

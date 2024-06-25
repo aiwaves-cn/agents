@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\displaystyle\\frac{2+2i}{-3+4i}$.  Express your answer as a complex number in the form $a+bi$, where $a$ and $b$ are real numbers.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Multiplying the numerator and denominator by the conjugate of the denominator, we have \\begin{align*}\n\\frac{2+2i}{-3+4i} \\cdot \\frac{-3-4i}{-3-4i} &= \\frac{2(-3) + 2(-4i) - 3(2i) + 2i(-4i)}{-3(-3) -3(4i) + 3(4i) -4i(4i)} \\\\\n&= \\frac{2-14i}{25} \\\\\n&= \\boxed{\\frac{2}{25} - \\frac{14}{25}i}.\n\\end{align*}"
-}

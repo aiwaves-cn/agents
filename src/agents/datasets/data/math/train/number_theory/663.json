@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $A$, $B$, and $C$ are non-zero distinct digits less than $6$, and suppose we have ${AB_6}+{C_6}={C}0_6$ and ${AB_6}+{BA_6}={CC_6}$. Find the three-digit number ${ABC}$. (Interpret $AB_6$ as a base-6 number with digits $A$ and $B$, not as $A$ times $B$. The other expressions should be interpreted in this way as well).",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Dealing with the second condition, it is set up in the following manner. $$\\begin{array}{c@{}c@{}c@{}c} &&A&B_6\\\\ &+&&C_6\\\\ \\cline{2-4} &&C&0_6\\\\ \\end{array}$$Because $B+C$ can not equal $0$, we must carry in this column. Therefore, we arrive at two equations. $B+C-6=0$ and $A+1=C$ Looking at the third condition: $$\\begin{array}{c@{}c@{}c@{}c} &&A&B_6\\\\ &+&B&A_6\\\\ \\cline{2-4} &&C&C_6\\\\ \\end{array}$$We can determine that no carrying occurs. Therefore, $A+B=C$. We now have a system of equations for our three variables. \\[B+C-6=0\\]\\[A+1=C\\]\\[A+B=C\\]Subtracting the third equation from the second, $1-B=0$, or $B=1$. Plugging that into our first equation we can determine that $C=5$. $A$ must then equal $4$. Thus, $\\overline{ABC}$ is $\\boxed{415}$."
-}

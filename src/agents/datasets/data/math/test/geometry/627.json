@@ -1,6 +1,0 @@
-{
-    "problem": "The coordinates of a parallelogram are (5, 3), (6, 8), (7, 4) and $(x, y)$ and $x > 7$. What is the value of $x + y$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Name the points $A(5,3)$, $B(6,8)$, $C(7,4)$, and $D(x,y)$ and sketch the first three.  We find that there are three possible locations for $D$ (see figure).  Only the one to the right has an $x$-coordinate greater than 7.  Since $AC$ is parallel to $BD$ and equal in length to it, $D$ is two units to the right and one unit up from $B$, just as $C$ is two units to the right and one unit up from $A$.  Therefore, the coordinates of $D$ are $(8,9)$, and $x+y=8+9=\\boxed{17}$.\n\n[asy]\nsize(5cm);\nimport graph;\ndefaultpen(linewidth(0.7)+fontsize(10));\ndotfactor=5;\nreal x = 7;\npair A=(5,3), B=(6,8), C=(7,4), D1=(8,9), D2=(4,7),D3=(6,-1);\npair[] dots = {A,B,C};\ndot(dots);\nxaxis(-2,10,Ticks(\" \",1.0,begin=false,end=false,NoZero),Arrows(4));\nyaxis(-2,10,Ticks(\" \",1.0,begin=false,end=false,NoZero),Arrows(4));\ndraw(A--C--D1--B--cycle);//linetype(\"8 8\"));\ndraw(A--D3--C);\ndraw(A--C--B--D2--cycle);//,linetype(\"1 2 3 1\"));\nlabel(\"$A(5,3)$\",A,SW);\nlabel(\"$B(6,8)$\",B,NW);\nlabel(\"$C(7,4)$\",C,E);\ndot(D1,UnFill);\ndot(D2,UnFill);\ndot(D3,UnFill);[/asy]"
-}

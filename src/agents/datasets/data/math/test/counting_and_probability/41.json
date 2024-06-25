@@ -1,6 +1,0 @@
-{
-    "problem": "An ant is walking on a hexagon. At each step, he moves from the vertex on which he is standing to an adjacent vertex. After $15$ steps, what is the probability that he is standing on the same vertex on which he began?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are two ways in which the ant can return to his original vertex: either he can go part of the way around the hexagon and then retrace his steps, or he can go all the way around the hexagon. In the first case, the ant necessarily moves an even number of steps, because his total number of steps is twice the number of steps needed to get to the point at which he begins to retrace. In the second case, because a hexagon has an even number of vertices, the ant is again moving an even number of steps. Thus, he has no way to return to the vertex on which he began in an odd number of steps, so the probability is $\\boxed{0}$."
-}

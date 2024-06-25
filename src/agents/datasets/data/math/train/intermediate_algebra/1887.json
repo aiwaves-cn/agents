@@ -1,6 +1,0 @@
-{
-    "problem": "The real function $f$ has the property that, whenever $a,$ $b,$ $n$ are positive integers such that $a + b = 2^n,$ the equation\n\\[f(a) + f(b) = n^2\\]holds.  What is $f(2002)$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the given property,\n\\begin{align*}\nf(2002) &= 11^2 - f(46), \\\\\nf(46) &= 6^2 - f(18), \\\\\nf(18) &= 5^2 - f(14), \\\\\nf(14) &= 4^2 - f(2).\n\\end{align*}Also, $f(2) + f(2) = 4,$ so $f(2) = 2.$  Hence,\n\\begin{align*}\nf(14) &= 4^2 - 2 = 14, \\\\\nf(18) &= 5^2 - 14 = 11, \\\\\nf(46) &= 6^2 - 11 = 25, \\\\\nf(2002) &= 11^2 - 25 = \\boxed{96}.\n\\end{align*}"
-}

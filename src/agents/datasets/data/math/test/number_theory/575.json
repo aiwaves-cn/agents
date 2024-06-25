@@ -1,6 +1,0 @@
-{
-    "problem": "Alice, Bailey, Cindy, and Daniel walked around their neighborhoods selling pens. Alice earned $\\$25.67$, Bailey earned $\\$17.21$, Cindy earned $\\$39.17$, and Daniel earned $\\$26.32$. After the sale, they pooled their money together and went to the bank to convert the coins into dollars. How many cents in change did they have left after they converted as many of the coins into bills as they could?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Instead of adding large numbers together, we can find the residue for each person for easier computation. We convert the amount they earned to cents and find the modulo $100$ for each.  \\begin{align*}\n2567 &\\equiv 67 \\pmod{100}\\\\\n1721 &\\equiv 21 \\pmod{100}\\\\\n3917 &\\equiv 17 \\pmod{100}\\\\\n2632 &\\equiv 32 \\pmod{100}\n\\end{align*}We want to find the modulo $100$ of the total number of cents. We can add the separate residues to get $$67+21+17+32 \\equiv 137 \\equiv 37 \\pmod{100}$$Therefore, they have $\\boxed{37}$ cents left after converting as much of the money into bills as possible."
-}

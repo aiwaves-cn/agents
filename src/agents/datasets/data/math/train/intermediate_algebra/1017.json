@@ -1,6 +1,0 @@
-{
-    "problem": "The expression\n\\[a^3 (b^2 - c^2) + b^3 (c^2 - a^2) + c^3 (a^2 - b^2)\\]can be factored into the form  $(a - b)(b - c)(c - a) p(a,b,c),$ for some polynomial $p(a,b,c).$  Find $p(a,b,c).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "First, we take out a factor of $a - b$:\n\\begin{align*}\na^3 (b^2 - c^2) + b^3 (c^2 - a^2) + c^3 (a^2 - b^2) &= a^3 b^2 - a^2 b^3 + b^3 c^2 - a^3 c^2 + c^3 (a + b)(a - b) \\\\\n&= a^2 b^2 (a - b) + (b^3 - a^3) c^2 + c^3 (a + b)(a - b) \\\\\n&= (a - b)[a^2 b^2 - (a^2 + ab + b^2) c^2 + c^3 (a + b)] \\\\\n&= (a - b)(a^2 b^2 - a^2 c^2 - abc^2 - b^2 c^2 + ac^3 + bc^3).\n\\end{align*}We can then take out a factor of $b - c$:\n\\begin{align*}\na^2 b^2 - a^2 c^2 - abc^2 - b^2 c^2 + ac^3 + bc^3 &= a^2 (b^2 - c^2) + ac^3 - abc^2 + bc^3 - b^2 c^2 \\\\\n&= a^2 (b^2 - c^2) + ac^2 (c - b) + bc^2 (c - b) \\\\\n&= a^2 (b - c)(b + c) + ac^2 (c - b) + bc^2 (c - b) \\\\\n&= (b - c)[a^2 (b + c) - ac^2 - bc^2] \\\\\n&= (b - c)(a^2 b + a^2 c - ac^2 - bc^2).\n\\end{align*}Finally, we take out a factor of $c - a$:\n\\begin{align*}\na^2 b + a^2 c - ac^2 - bc^2 &= a^2 b - bc^2 + a^2 c - ac^2 \\\\\n&= b (a^2 - c^2) + ac(a - c) \\\\\n&= b (a - c)(a + c) + ac(a - c) \\\\\n&= -(c - a)(ab + ac + bc).\n\\end{align*}Thus, $p(a,b,c) = \\boxed{-(ab + ac + bc)}.$"
-}

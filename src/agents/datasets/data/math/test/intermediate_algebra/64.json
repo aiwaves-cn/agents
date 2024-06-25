@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be positive real numbers such that $2x + 3y = 5.$  Find the minimum value of\n\\[\\frac{3}{x} + \\frac{2}{y}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-HM,\n\\[\\frac{2x + 3y}{2} \\ge \\frac{2}{\\frac{1}{2x} + \\frac{1}{3y}}.\\]Then\n\\[\\frac{1}{2x} + \\frac{1}{3y} \\ge \\frac{4}{2x + 3y} = \\frac{4}{5}.\\]Multiplying both sides by 6, we get\n\\[\\frac{3}{x} + \\frac{2}{y} \\ge \\frac{24}{5}.\\]Equality occurs when $2x = 3y = \\frac{5}{2},$ or $x = \\frac{5}{4}$ and $y = \\frac{5}{6},$ so the minimum value is $\\boxed{\\frac{24}{5}}.$"
-}

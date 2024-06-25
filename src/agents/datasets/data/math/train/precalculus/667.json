@@ -1,6 +1,0 @@
-{
-    "problem": "A point has rectangular coordinates $(x,y,z)$ and spherical coordinates $\\left(2, \\frac{8 \\pi}{7}, \\frac{2 \\pi}{9} \\right).$  Find the spherical coordinates of the point with rectangular coordinates $(x,y,-z).$  Enter your answer in the form $(\\rho,\\theta,\\phi),$ where $\\rho > 0,$ $0 \\le \\theta < 2 \\pi,$ and $0 \\le \\phi \\le \\pi.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We have that\n\\begin{align*}\nx &= \\rho \\sin \\frac{2 \\pi}{9} \\cos \\frac{8 \\pi}{7}, \\\\\ny &= \\rho \\sin \\frac{2 \\pi}{9} \\sin \\frac{8 \\pi}{7}, \\\\\nz &= \\rho \\cos \\frac{2 \\pi}{9}.\n\\end{align*}We want to negate the $z$-coordinate.  We can accomplish this by replacing $\\frac{2 \\pi}{9}$ with $\\pi - \\frac{2 \\pi}{9} = \\frac{7 \\pi}{9}$:\n\\begin{align*}\n\\rho \\sin \\frac{7 \\pi}{9} \\cos \\frac{8 \\pi}{7} &= \\rho \\sin \\frac{2 \\pi}{9} \\cos \\frac{8 \\pi}{7} = x, \\\\\n\\rho \\sin \\frac{7 \\pi}{9} \\sin \\frac{8 \\pi}{7} &= \\rho \\sin \\frac{2 \\pi}{9} \\sin \\frac{8 \\pi}{7} = y, \\\\\n\\rho \\cos \\frac{7 \\pi}{9} &= -\\rho \\cos \\frac{2 \\pi}{9} = -z.\n\\end{align*}Thus, the spherical coordinates of $(x,y,z)$ are $\\boxed{\\left( 2, \\frac{8 \\pi}{7}, \\frac{7 \\pi}{9} \\right)}.$"
-}

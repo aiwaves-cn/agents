@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the ordered pair of positive integers $(x,y)$ such that\n\n\\begin{align*}\nx^y+1&=y^x,\\\\\n2x^y&=y^x+7.\n\\end{align*}",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We substitute $a=x^y$ and $b=y^x$ to form the equations\n\n\\begin{align*}\na+1&=b,\\\\\n2a &=b+7.\n\\end{align*}\n\nSubtracting the first equation from the second, we obtain $a-1=7$, so $a=8$.\n\nSubstituting this into the first equation, we find $b=9$.\n\nWe see from $x^y=8$ and $y^x=9$ that the solution is $(x,y)=\\boxed{(2,3)}$."
-}

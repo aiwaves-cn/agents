@@ -1,6 +1,0 @@
-{
-    "problem": "$N^2$ is a divisor of $8!$. What is the greatest possible integer value of $N$?  (Reminder: For a positive integer $n$, the expression $n!$ stands for the product of the integers from 1 up to (and including) $n$.)",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Prime factorize $8!$. \\begin{align*}\n8! &= 8\\cdot 7\\cdot 6\\cdot 5\\cdot 4\\cdot 3\\cdot 2 \\\\\n&=2^3\\cdot 7\\cdot(3\\cdot2)\\cdot5\\cdot 2^2\\cdot 3\\cdot 2\\\\\n&=2^7\\cdot 3^2\\cdot 5 \\cdot 7.\n\\end{align*}Since $N^2$ is a divisor of $8!$, the exponents in the prime factorization of $N^2$ must be less than or equal to the corresponding exponents in the prime factorization of 8!.  Also, because $N^2$ is a perfect square, the exponents in its prime factorization are all even.  Therefore, the largest possible value of $N^2$ is $2^6\\cdot 3^2$.  Square rooting both sides, $N=2^3\\cdot 3=\\boxed{24}$."
-}

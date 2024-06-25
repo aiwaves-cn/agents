@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $PQR$, we have $\\angle Q = \\angle R$ and $PR = 6\\sqrt{2}$.  What is the area of $\\triangle PQR$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "A triangle can't have two right angles, so a right triangle with two congruent angles must have congruent acute angles.  That is, $\\triangle PQR$ must be an isosceles right triangle with acute angles at $Q$ and $R$.  Therefore, $PQ=PR=6\\sqrt{2}$,  and $[QRP]=(QP)(RP)/2 = (6\\sqrt{2})(6\\sqrt{2})/2 = (6\\cdot 6\\cdot\\sqrt{2}\\cdot \\sqrt{2})/2 =\\boxed{36}$.\n\n[asy]\n\nunitsize(1inch);\n\npair P,Q,R;\n\nP = (0,0);\n\nQ= (1,0);\n\nR = (0,1);\n\ndraw (P--Q--R--P,linewidth(0.9));\n\ndraw(rightanglemark(Q,P,R,3));\n\nlabel(\"$P$\",P,S);\n\nlabel(\"$Q$\",Q,S);\n\nlabel(\"$R$\",R,N);\n\n[/asy]"
-}

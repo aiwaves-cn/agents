@@ -1,6 +1,0 @@
-{
-    "problem": "The students in Mrs. Sawyer's class were asked to do a taste test of five kinds of candy. Each student chose one kind of candy. A bar graph of their preferences is shown.  What percent of her class chose candy E? [asy]\n/* AMC8 2002 #7 Problem */\nsize(3.5inch, 1.5inch);\nfor ( int y = 0; y <= 8; y += 2 )\n{\n\ndraw((0,y)--(15,y));\n\nlabel(scale(0.7)*(string)y, (0,y), W);\n}\nlabel(scale(0.9)*\"$A$\", (1.5, 0), S);\nlabel(scale(0.9)*\"$B$\", (4.5, 0), S);\nlabel(scale(0.9)*\"$C$\", (7.5,0), S);\nlabel(scale(0.9)*\"$D$\", (10.5, 0), S);\nlabel(scale(0.9)*\"$E$\", (13.5, 0), S);\nlabel(scale(0.7)*rotate(90)*\"Number of Students\", (-0.8,4), W);\nlabel(scale(0.9)*\"Kinds of candy\", (7.5,-2.5));\n\nfill((0.5,0)--(0.5,6)--(2.5,6)--(2.5,0)--cycle, red);\nfill((3.5,0)--(3.5,8)--(5.5,8)--(5.5,0)--cycle, blue);\nfill((6.5,0)--(6.5,4)--(8.5,4)--(8.5,0)--cycle, pink);\nfill((9.5,0)--(9.5,2)--(11.5,2)--(11.5,0)--cycle, green);\nfill((12.5,0)--(12.5,5)--(14.5,5)--(14.5,0)--cycle, purple);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "There are $6+8+4+2+5 = 25$ students.  Of the 25 students 5 prefer candy $E$ and $\\frac{5}{25} = \\frac{20}{100} = \\boxed{20\\%} $."
-}

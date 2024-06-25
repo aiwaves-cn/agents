@@ -1,6 +1,0 @@
-{
-    "problem": "Given that the fraction $\\frac{8x^3+27y^3}{2x+3y}$ can be simplified and written in the form $ax^2 + bxy + cy^2$ where $a$, $b$, and $c$ are integers, what is $a+b+c$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We notice that the terms in the numerator of our fraction are both perfect cubes, suggesting that we can use a sum of cubes factorization. Thus we have  \\begin{align*}\n\\frac{8x^3+27y^3}{2x+3y} & = \\frac{(2x)^3+(3y)^3}{2x+3y} \\\\\n& = \\frac{(2x+3y)((2x)^2-(2x)(3y)+(3y)^2)}{2x+3y} \\\\\n& = (2x)^2-(2x)(3y)+(3y)^2 \\\\\n& = 4x^2 - 6xy + 9y^2.\n\\end{align*}  Thus, $a=4$, $b=-6$, and $c=9$, so $a+b+c=4+(-6)+9=\\boxed{7}$."
-}

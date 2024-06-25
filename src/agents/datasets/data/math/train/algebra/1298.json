@@ -1,6 +1,0 @@
-{
-    "problem": "A ball is dropped from 1000 feet high and always bounces back up half the distance it just fell. After how many bounces will the ball first reach a maximum height less than 1 foot?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have a geometric sequence with first term 1000 and common ratio $1/2$. Any term in this sequence can be represented as $1000\\cdot\\left(\\frac{1}{2}\\right)^k$, where $k$ is the number of bounces (for example, when $k=1$, $1000\\cdot\\left(\\frac{1}{2}\\right)^k=500$, or the height of the $k=1^\\text{st}$ bounce). We need to find the smallest $k$ such that $1000\\cdot\\left(\\frac{1}{2}\\right)^k<1$. Through trial and error, we find that $k=10$, so it takes $\\boxed{10}$ bounces for the maximum height to be less than 1 foot."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all complex numbers $z$ that satisfy\n\\[z^3 + z^2 - |z|^2 + 2z = 0.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Since $|z|^2 = z \\overline{z},$ we can write\n\\[z^3 + z^2 - z \\overline{z} + 2z = 0.\\]Then\n\\[z (z^2 + z - \\overline{z} + 2) = 0.\\]So, $z = 0$ or $z^2 + z - \\overline{z} + 2 = 0.$\n\nLet $z = x + yi,$ where $x$ and $y$ are real numbers.  Then\n\\[(x + yi)^2 + (x + yi) - (x - yi) + 2 = 0,\\]which expands as\n\\[x^2 + 2xyi - y^2 + 2yi + 2 = 0.\\]Equating real and imaginary parts, we get $x^2 - y^2 + 2 = 0$ and $2xy + 2y = 0.$  Then $2y(x + 1) = 0,$ so either $x = -1$ or $y = 0.$\n\nIf $x = -1,$ then $1 - y^2 + 2 = 0,$ so $y = \\pm \\sqrt{3}.$  If $y = 0,$ then $x^2 + 2 = 0,$ which has no solutions.\n\nTherefore, the solutions in $z$ are 0, $-1 + i \\sqrt{3},$ and $-1 - i \\sqrt{3},$ and their sum is $\\boxed{-2}.$"
-}

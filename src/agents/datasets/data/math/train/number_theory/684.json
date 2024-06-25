@@ -1,6 +1,0 @@
-{
-    "problem": "Alex is at the candy store buying jellybeans. He wants to buy at least 100 jellybeans. He wants to buy the least amount such that he would have exactly $11$ leftover after dividing the jellybeans evenly among $13$ people. How many jellybeans should Alex buy?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Alex wants a remainder of $11$ after he divides the number of jellybeans he buys by $13$. When you divide $100$ by $13$, you get $7$ with a remainder of $9$. Since Alex wants $11$ jellybeans left over, he should buy $11-9=2$ more than $100$. Therefore, he should buy $100+2=\\boxed{102}$ jellybeans."
-}

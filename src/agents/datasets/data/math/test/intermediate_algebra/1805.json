@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest value of $\\frac{y}{x}$ for pairs of real numbers $(x,y)$ that satisfy\n\\[(x - 3)^2 + (y - 3)^2 = 6.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $k = \\frac{y}{x}.$  Then $y = kx,$ so\n\\[(x - 3)^2 + (kx - 3)^2 = 6.\\]Expressing this as a quadratic in $x,$ we get\n\\[(k^2 + 1) x^2 - (6k + 6) k + 12 = 0.\\]This quadratic has real roots when its discriminant is nonnegative:\n\\[(6k + 6)^2 - 4(k^2 + 1)(12) \\ge 0.\\]This simplifies to $k^2 - 6k + 1 \\le 0.$  The roots of the corresponding equation $k^2 - 6k + 1 = 0$ are\n\\[3 \\pm 2 \\sqrt{2},\\]so the solution to $k^2 - 6k + 1 \\le 0$ is $3 - 2 \\sqrt{2} \\le k \\le 3 + 2 \\sqrt{2}.$\n\nTherefore, the largest possible value of $k = \\frac{y}{x}$ is $\\boxed{3 + 2 \\sqrt{2}}.$"
-}

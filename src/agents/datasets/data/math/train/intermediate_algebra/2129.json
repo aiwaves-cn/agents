@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be real numbers such that $a + 4i$ and $b + 5i$ are the roots of\n\\[z^2 - (10 + 9i) z + (4 + 46i) = 0.\\]Enter the ordered pair $(a,b).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas,\n\\begin{align*}\n(a + 4i) + (b + 5i) &= 10 + 9i, \\\\\n(a + 4i)(b + 5i) &= 4 + 46i.\n\\end{align*}From the first equation, $a + b + 9i = 10 + 9i,$ so $a + b = 10.$\n\nExpanding the second equation, we get\n\\[(ab - 20) + (5a + 4b)i = 4 + 46i.\\]Hence, $ab = 24$ and $5a + 4b = 46.$\n\nSolving $a + b = 10$ and $5a + 4b = 46,$ we find $a = 6$ and $b = 4.$  (Note that these values satisfy $ab = 24.$)  Therefore, $(a,b) = \\boxed{(6,4)}.$"
-}

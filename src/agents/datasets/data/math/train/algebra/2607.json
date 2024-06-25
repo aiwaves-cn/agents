@@ -1,6 +1,0 @@
-{
-    "problem": "For all complex numbers $z$, let \\[f(z) = \\left\\{\n\\begin{array}{cl}\nz^{2}&\\text{ if }z\\text{ is not real}, \\\\\n-z^2 &\\text{ if }z\\text{ is real}.\n\\end{array}\n\\right.\\]Find $f(f(f(f(1+i))))$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We work from the inside out. Since $1+i$ is not real, $f(1+i)=(1+i)^2=1+2i-1=2i$. So $f(f(f(f(1+i))))=f(f(f(2i)))$. Since $2i$ is also non-real, $f(2i)=(2i)^2=-4$. So $f(f(f(2i)))=f(f(-4))$. Since $-4$ is real, $f(-4)=-(-4)^2=-16$. So $f(f(-4))=f(-16)$. Since $-16$ is real, $f(-16)=\\boxed{-256}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The length of one leg of a right triangle is 9 meters. The lengths of the other two sides are consecutive integer numbers of meters. What is the number of meters in the perimeter of the triangle?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "By the Pythagorean theorem, we have \\begin{align*}\n9^2+x^2&=(x+1)^2 \\implies \\\\\n81+x^2&=x^2+2x+1 \\implies \\\\\n2x&=80 \\implies \\\\\nx&=40,\n\\end{align*}where $x$ is the shorter missing side.  It follows that the sides of the triangle are 9, 40, and 41 meters, and the perimeter of the triangle is $9+40+41=\\boxed{90}$ meters.\n\nNote: for any odd integer $n$, the two integers closest to $n^2/2$ along with $n$ form a Pythagorean triple."
-}

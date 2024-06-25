@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive divisors do 48 and 156 have in common?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The common divisors of two integers are the divisors of their GCD.\n\nWe have $\\mathop{\\text{gcd}}(48,156)=12$, and 12 has six divisors: 1, 2, 3, 4, 6, and 12. So the answer is $\\boxed{6}$."
-}

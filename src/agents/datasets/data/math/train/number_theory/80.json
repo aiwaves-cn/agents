@@ -1,6 +1,0 @@
-{
-    "problem": "A $\\textit{composite number}$ is a number that has two or more prime factors. The number 87 can be expressed as the sum of two composite numbers in many ways. What is the minimum positive difference between two such numbers?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The minimum difference between two numbers whose sum is 87 is achieved when the numbers are as close as possible to $87\\div2=43.5$. These numbers are 43 and 44, but 43 is prime, so we consider the next pair, 42 and 45, both of which are composite. Thus, the minimum positive difference is $45-42=\\boxed{3}$."
-}

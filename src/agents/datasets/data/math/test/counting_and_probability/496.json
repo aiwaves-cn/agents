@@ -1,6 +1,0 @@
-{
-    "problem": "Adam rolled two standard six-sided dice once.  What is the probability that he did not roll a prime number on either die? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The prime numbers from 1 to 6 are 2, 3, and 5. Thus, the probability of Adam not rolling a prime number on any one die is equal to $\\frac{3}{6}=\\frac{1}{2}$, since there is an equal probability of rolling any number from 1 to 6. Since the two dice are independent, the probability of Adam not rolling a prime number on either die is equal to $\\frac{1}{2}\\cdot\\frac{1}{2}=\\boxed{\\frac{1}{4}}$."
-}

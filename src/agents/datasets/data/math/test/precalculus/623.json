@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $DEF$, we have $\\angle E = 90^\\circ$ and $\\tan D = 3\\sin D$.  What is $\\sin F$?",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "We start with a diagram:\n\n[asy]\n\npair D,EE,F;\n\nEE = (0,0);\n\nF = (2*sqrt(2),0);\n\nD = (0,1);\n\ndraw(D--EE--F--D);\n\ndraw(rightanglemark(F,EE,D,6));\n\nlabel(\"$E$\",EE,SW);\n\nlabel(\"$F$\",F,SE);\n\nlabel(\"$D$\",D,N);\n\n//label(\"$9$\",F/2,S);\n\n[/asy]\n\nFirst, we note that $\\tan D = \\frac{\\sin D}{\\cos D}$, so $\\tan D = 3\\sin D$ gives us $\\frac{\\sin D}{\\cos D} = 3\\sin D$, from which we have $\\cos D = \\frac13$.  Then, we note that $\\sin F = \\frac{DE}{DF} = \\cos D = \\boxed{\\frac13}$."
-}

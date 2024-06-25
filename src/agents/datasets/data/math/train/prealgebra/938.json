@@ -1,6 +1,0 @@
-{
-    "problem": "For how many three-digit positive integers is the sum of the digits equal to $5?$",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let the three digit integer be $abc.$ We must have $a+b+c=5,$ and $a\\geq 1.$ Let $d=a-1.$ Then $d,$ $b,$ and $c$ are all nonnegative integers with $d+b+c=4.$ We can view this as placing two dividers among four dots, which can be done in a total of $\\binom{6}{2}=\\boxed{15}$ ways."
-}

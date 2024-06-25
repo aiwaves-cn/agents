@@ -1,6 +1,0 @@
-{
-    "problem": "January 1, 2000 was on a Saturday. On what day of the week was January 1, 1960?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Consider a \"normal\" year with 365 days.  Since 365 leaves a remainder of 1 when divided by 7, for every normal year that passes, the first day of the year shifts to the next day of the week.  (For example, if the first day of one normal year is on a Tuesday, then the first day of the next year will be on a Wednesday.)\n\nHowever, leap years have 366 days.  Since 366 leaves a remainder of 2 when divided by 7, a leap year shifts the first day of the year by two days.\n\nThere are 40 years between 1960 and 2000, and $40/4 = 10$ of these years were leap years.  The remaining $40 - 10 = 30$ years were normal years.  Therefore, the first day shifted forward by $30 + 2 \\cdot 10 = 50$ days day-wise.\n\nSince 50 leaves a remainder of 1 by 7, shifting forward 50 days day-wise is equivalent to shifting forward 1 day day-wise.  Since January 1, 2000 was a Saturday, we conclude that January 1, 1960 was a $\\boxed{\\text{Friday}}$."
-}

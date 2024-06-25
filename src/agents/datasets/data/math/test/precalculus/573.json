@@ -1,6 +1,0 @@
-{
-    "problem": "Let line $L$ be the intersection of the planes $x + y + z - 6 = 0$ and $2x + 3y + 4z + 5 = 0.$  Find the equation of the plane containing line $L$ and the point $(1,1,1).$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Consider the equation\n\\[a(x + y + z - 6) + b(2x + 3y + 4z + 5) = 0,\\]where $a$ and $b$ are some real constants.  Since $L$ lies in both planes, $L$ satisfies both equations $x + y + z - 6 = 0$ and $2x + 3y + 4z + 5 = 0,$ so $L$ satisfies the equation above.\n\nWe also want $(1,1,1)$ to satisfy the equation, so we plug in these values, to get\n\\[-3a + 14b = 0.\\]We can take $a = 14$ and $b = 3.$  This gives us\n\\[14(x + y + z - 6) + 3(2x + 3y + 4z + 5) = 0,\\]which simplifies to $\\boxed{20x + 23y + 26z - 69 = 0}.$"
-}

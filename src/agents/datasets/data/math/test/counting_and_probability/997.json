@@ -1,6 +1,0 @@
-{
-    "problem": "How many three-digit positive integers are multiples of 11?",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "The first three-digit positive integer that is a multiple of 11 is 110, which is $11\\times 10$.  The last is 990, which is $11\\times 90$.  So, the number of three-digit multiples of 11 is the same as the number of numbers in the list $10, 11, 12, \\ldots, 90$, which is $90-10+1 = \\boxed{81}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The center of the circle with equation $x^2+y^2=8x-6y-20$ is the point $(x,y)$. What is $x+y$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We will complete the square to determine the standard form equation of the circle. Shifting all but the constant term from the RHS to the LHS, we have $x^2-8x+y^2+6y=-20$. Completing the square in $x$, we add $(-8/2)^2=16$ to both sides. Completing the square in $y$, we add $(6/2)^2=9$ to both sides. The equation becomes \\begin{align*}\nx^2-8x+y^2+6y&=-20\\\\\n\\Rightarrow x^2-8x+16+y^2+6y+9&=5\\\\\n\\Rightarrow (x-4)^2+(y+3)^2&=5\n\\end{align*} Thus, the center of the circle is at point $(4,-3)$ so $x+y=4+(-3)=\\boxed{1}$."
-}

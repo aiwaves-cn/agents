@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the two functions $f(x) = x^2 + 2bx + 1$ and $g(x) = 2a(x + b),$ where the variables $x$ and the constants $a$ and $b$ are real numbers.  Each such pair of constants $a$ and $b$ may be considered as a point $(a,b)$ in an $ab$-plane.  Let $S$ be the set of points $(a,b)$ for which the graphs of $y = f(x)$ and $y = g(x)$ do not intersect (in the $xy$-plane).  Find the area of $S.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The graphs intersect when $f(x) = g(x)$ has a real root, or\n\\[x^2 + 2bx + 1 = 2a(x + b).\\]This simplifies to $x^2 + (2b - 2a) x + (1 - 2ab) = 0.$  Thus, we want this quadratic to have no real roots, which means its discriminant is negative:\n\\[(2b - 2a)^2 - 4(1 - 2ab) < 0.\\]This simplifies to $a^2 + b^2 < 1.$  This is the interior of the circle centered at $(0,0)$ with radius 1, so its area is $\\boxed{\\pi}.$"
-}

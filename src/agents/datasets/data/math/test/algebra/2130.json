@@ -1,6 +1,0 @@
-{
-    "problem": "What is the following value when expressed as a common fraction: $$\\frac{1}{2^{1}}+\\frac{1}{2^{2}}+\\frac{1}{2^{3}}+\\cdots + \\frac{1}{2^{8}}+\\frac{1}{2^{9}}+\\frac{1}{2^{10}}?$$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "This is a finite geometric series with first term $\\frac{1}{2}$, common ratio $\\frac{1}{2}$ and $10$ terms. Therefore the sum is: $$\\frac{\\frac{1}{2}\\left(1-\\frac{1}{2^{10}}\\right)}{1-\\frac{1}{2}}\n=\\frac{\\frac{2^{10}-1}{2^{11}}}{\\frac{1}{2}}\n= \\frac{2^{10}-1}{2^{10}}=\\boxed{\\frac{1023}{1024}}.$$"
-}

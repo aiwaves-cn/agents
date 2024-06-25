@@ -1,6 +1,0 @@
-{
-    "problem": "When $11^4$ is written out in base 10, the sum of its digits is $16=2^4$. What is the largest base $b$ such that the base-$b$ digits of $11^4$ do not add up to $2^4$?  (Note: here, $11^4$ in base $b$ means that the base-$b$ number $11$ is raised to the fourth power.)",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "In any base, $11 = 10+1$, so we can think of $11^4$ as $(10+1)(10+1)(10+1)(10+1)$. Expanded out, this is $$10^4 + 4(10^3) + 6(10^2) + 4(10) + 1.$$In base 7 or higher, this can be written as $14641$ (just as in base 10). Put another way, when we multiply out $11\\times 11\\times 11\\times 11$ in base 7 or higher, there is no carrying, so we get $14641$ just as in base 10.\n\nHowever, in base 6, we have to carry from the $100$'s place, so we get $15041_6$, whose digits do not add up to $2^4$. So the answer is $b=\\boxed{6}$."
-}

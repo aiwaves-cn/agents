@@ -1,6 +1,0 @@
-{
-    "problem": "Find the point of tangency of the parabolas $y = x^2 + 15x + 32$ and $x = y^2 + 49y + 593.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Adding the equations, we get\n\\[x + y = x^2 + 15x + 32 + y^2 + 49y + 593,\\]or $x^2 + 14x + y^2 + 48y + 625.$  Completing the square in $x$ and $y,$ we get\n\\[(x + 7)^2 + (y + 24)^2 = 0.\\]We can check that $\\boxed{(-7,-24)}$ lies on both parabolas, so this is the point of tangency."
-}

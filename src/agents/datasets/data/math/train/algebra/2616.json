@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $$\\lceil\\sqrt{5}\\rceil + \\lceil\\sqrt{6}\\rceil + \\lceil\\sqrt{7}\\rceil + \\cdots + \\lceil\\sqrt{29}\\rceil$$Note: For a real number $x,$ $\\lceil x \\rceil$ denotes the smallest integer that is greater than or equal to $x.$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We note that if $a^2 < n \\leq (a+1)^2$ for some integer $a$, then $a < \\sqrt{x} \\leq a+1$, so $a$ is the least integer greater than or equal to $x$. Consequently, we break up our sum into the blocks of integers between consecutive perfect squares:\n\nFor $5\\leq n \\leq 9$, $\\lceil\\sqrt{n}\\rceil=3$. There are $5$ values of $3$ in this range.\n\nFor $10\\leq n\\leq 16$, $\\lceil\\sqrt{n}\\rceil=4$. There are $7$ values of $4$ in this range.\n\nFor $17\\leq n \\leq 25$, $\\lceil\\sqrt{n}\\rceil=5$. There are $9$ values of $5$ in this range.\n\nFor $26\\leq n \\leq 29$, $\\lceil\\sqrt{n}\\rceil=6$. There are $4$ values of $6$ in this range.\n\nConsequently, our total sum is $5\\cdot3+7\\cdot4+9\\cdot5+4\\cdot 6= \\boxed{112}$."
-}

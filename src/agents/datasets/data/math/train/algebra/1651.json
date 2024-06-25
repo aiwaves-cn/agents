@@ -1,6 +1,0 @@
-{
-    "problem": "$3^n = 3 \\cdot 9^3 \\cdot 81^2$. What is the value of $n$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We want to write everything in terms of powers of 3. Doing so gives us $3^n = 3 \\cdot (3^2)^3 \\cdot (3^4)^2$. This simplifies to $3^n = 3 \\cdot 3^6 \\cdot 3^8$, so $3^n = 3^{15}$. Therefore, $n = \\boxed{15}$."
-}

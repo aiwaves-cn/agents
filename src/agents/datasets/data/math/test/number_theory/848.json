@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest odd integer that is a factor of $5!$ ?  (Reminder: For a positive integer $n$, the expression $n!$ stands for the product of the integers from 1 up to (and including) $n$.)",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Since a product of odd integers is odd, we can find the largest odd factor of an integer by removing the factors of 2 from its prime factorization. Since the only odd prime factors of 5! are 5 and 3, the greatest odd divisor of 5! is $5 \\times 3 = \\boxed{15}$."
-}

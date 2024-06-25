@@ -1,6 +1,0 @@
-{
-    "problem": "Marsha has two numbers, $a$ and $b$.  When she divides $a$ by 70 she gets a remainder of 64.  When she divides $b$ by 105 she gets a remainder of 99.  What remainder does she get when she divides $a+b$ by 35?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Marsha has two equations: \\[a=70n+64\\]and \\[b=105m+99.\\]When she adds these she gets \\begin{align*}\na+b&=70n+105m+64+99 \\\\\n&=35(2n+3m)+163=35(2n+3m+4)+23.\n\\end{align*}The remainder when $a+b$ is divided by 35 is $\\boxed{23}$."
-}

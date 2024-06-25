@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\left\\lceil\\sqrt{2}\\,\\right\\rceil+\\left\\lceil\\sqrt{22}\\,\\right\\rceil+\\left\\lceil\\sqrt{222}\\,\\right\\rceil$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since the following inequalities are true, \\[\\sqrt{1}<\\sqrt{2}<\\sqrt{4} \\Rightarrow 1<\\sqrt{2}<2\\]\\[\\sqrt{16}<\\sqrt{22}<\\sqrt{25} \\Rightarrow 4<\\sqrt{22}<5\\]\\[\\sqrt{196}<\\sqrt{222}<\\sqrt{225} \\Rightarrow 14<\\sqrt{222}<15\\]the smallest integer greater than $\\sqrt{2}$ is $2$, the smallest integer greater than $\\sqrt{22}$ is $5$, and the smallest integer greater than $\\sqrt{222}$ is $15$. Therefore, $2+5+15=\\boxed{22}$."
-}

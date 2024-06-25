@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P$ be a cubic polynomial with $P(0) = k$, $P(1) = 2k$, and $P(-1) = 3k$. What is $P(2) + P(-2)$ ?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $P(0) = k,$ the polynomial $P(x)$ is of the form\n\\[P(x) = ax^3 + bx^2 + cx + k.\\]Since $P(1) = 2k,$\n\\[a + b + c + k = 2k,\\]so $a + b + c = k.$\n\nSince $P(-1) = 3k,$\n\\[-a + b - c + k = 3k,\\]so $-a + b - c = 2k.$   Adding the equations $a + b + c = k$ and $-a + b - c = 2k,$ we get $2b = 3k,$ so $b = \\frac{3}{2} k.$\n\nThen\n\\begin{align*}\nP(2) + P(-2) &= (8a + 4b + 2c + k) + (-8a + 4b - 2c + k) \\\\\n&= 8b + 2k = 12k + 2k = \\boxed{14k}.\n\\end{align*}"
-}

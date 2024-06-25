@@ -1,6 +1,0 @@
-{
-    "problem": "For $k > 0$, let $I_k = 10\\ldots 064$, where there are $k$ zeros between the $1$ and the $6$. Let $N(k)$ be the number of factors of $2$ in the prime factorization of $I_k$. What is the maximum value of $N(k)$?\n$\\textbf{(A)}\\ 6\\qquad \\textbf{(B)}\\ 7\\qquad \\textbf{(C)}\\ 8\\qquad \\textbf{(D)}\\ 9\\qquad \\textbf{(E)}\\ 10$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The number $I_k$ can be written as $10^{k+2} + 64 = 5^{k+2}\\cdot 2^{k+2} + 2^6$.\nFor $k\\in\\{1,2,3\\}$ we have $I_k = 2^{k+2} \\left( 5^{k+2} + 2^{4-k} \\right)$. The first value in the parentheses is odd, the second one is even, hence their sum is odd and we have $N(k)=k+2\\leq 5$.\nFor $k>4$ we have $I_k=2^6 \\left( 5^{k+2}\\cdot 2^{k-4} + 1 \\right)$. For $k>4$ the value in the parentheses is odd, hence $N(k)=6$.\nThis leaves the case $k=4$. We have $I_4 = 2^6 \\left( 5^6 + 1 \\right)$. The value $5^6 + 1$ is obviously even. And as $5\\equiv 1 \\pmod 4$, we have $5^6 \\equiv 1 \\pmod 4$, and therefore $5^6 + 1 \\equiv 2 \\pmod 4$. Hence the largest power of $2$ that divides $5^6+1$ is $2^1$, and this gives us the desired maximum of the function $N$: $N(4) = \\boxed{7}$."
-}

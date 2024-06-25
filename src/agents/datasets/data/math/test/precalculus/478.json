@@ -1,6 +1,0 @@
-{
-    "problem": "Below is the graph of $y = a \\csc bx$ for some positive constants $a$ and $b.$  Find $b.$\n\n[asy]import TrigMacros;\n\nsize(500);\n\nreal g(real x)\n{\n\treturn 2*csc(x/3);\n}\n\ndraw(graph(g,-6*pi + 0.01, -3*pi - 0.01),red);\ndraw(graph(g,-3*pi + 0.01,-0.01),red);\ndraw(graph(g,0.01,3*pi - 0.01),red);\ndraw(graph(g,3*pi + 0.01,6*pi - 0.01),red);\nlimits((-6*pi,-5),(6*pi,5),Crop);\ndraw((-3*pi,-5)--(-3*pi,5),dashed);\ndraw((3*pi,-5)--(3*pi,5),dashed);\ntrig_axes(-6*pi,6*pi,-5,5,pi/2,1);\nlayer();\nrm_trig_labels(-11, 11, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$3$\", (0,3), E);\nlabel(\"$4$\", (0,4), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\nlabel(\"$-3$\", (0,-3), E);\nlabel(\"$-4$\", (0,-4), E);\n[/asy]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The period of the graph is $6 \\pi.$  The period of $y = a \\csc bx$ is $\\frac{2 \\pi}{b},$ so $b = \\boxed{\\frac{1}{3}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$, we have $AB = 10$, $BC = 24$, and $\\angle ABC = 90^\\circ$. If $M$ is on $\\overline{AC}$ such that $\\overline{BM}$ is an angle bisector of $\\triangle ABC$, then what is $\\cos \\angle ABM$?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since $\\angle ABC = 90^\\circ$ and $\\overline{BM}$ bisects $\\angle ABC$, we have $\\angle ABM = 45^\\circ$, so $\\cos \\angle ABM = \\cos 45^\\circ = \\boxed{\\frac{\\sqrt{2}}{2}}$.\n\n[asy]\nunitsize(0.25 cm);\n\npair A, B, C, M;\n\nA = (0,10);\nB = (0,0);\nC = (24,0);\nM = extension(B, B + dir(45), A, C);\n\ndraw(A--B--C--cycle);\ndraw(B--M);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\n[/asy]"
-}

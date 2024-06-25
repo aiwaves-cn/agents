@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n=2^{31}3^{19}.$ How many positive integer divisors of $n^2$ are less than $n$ but do not divide $n$?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We know that $n^2 = 2^{62}3^{38}$ must have $(62+1)\\times (38+1)$ factors by its prime factorization. If we group all of these factors (excluding $n$) into pairs that multiply to $n^2$, then one factor per pair is less than $n$, and so there are $\\frac{63\\times 39-1}{2} = 1228$ factors of $n^2$ that are less than $n$. There are $32\\times20-1 = 639$ factors of $n$, which clearly are less than $n$, but are still factors of $n$. Therefore, using complementary counting, there are $1228-639=\\boxed{589}$ factors of $n^2$ that do not divide $n$."
-}

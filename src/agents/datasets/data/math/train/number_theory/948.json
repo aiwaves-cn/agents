@@ -1,6 +1,0 @@
-{
-    "problem": "Add $10_7 + 163_7.$ Express your answer in base 7.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We can line up the numbers and add just as we do in base 10.  For example, in the second column we get $1+6=7$, which we carry just as in base 10 by placing the digit 0 in the sum and carrying 1 to the next column. We get $$\n\\begin{array}{c@{}c@{}c@{}c}\n& & 1 & 0_7 \\\\\n+ & 1 & 6 & 3_7 \\\\\n\\cline{2-4}\n& 2 & 0 & 3_7, \\\\\n\\end{array}$$so the sum is $\\boxed{203_7}$"
-}

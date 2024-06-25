@@ -1,6 +1,0 @@
-{
-    "problem": "The integer $x$ has 12 positive factors. The numbers 12 and 15 are factors of $x$. What is $x$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since $12=2^2\\cdot3$ and $15=3\\cdot5$ are factors of $x$, $x$ must be divisible by the least common multiple of 12 and 15, which is $2^2\\cdot3\\cdot5$. Since $x$ has 12 factors and the LCM has $(2+1)(1+1)(1+1)=12$ factors, $x=2^2\\cdot3\\cdot5=\\boxed{60}$."
-}

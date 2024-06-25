@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\begin{pmatrix} 0 & 2 & -1 \\\\ 3 & 0 & -3 \\\\ 1 & 4 & -5 \\end{pmatrix} \\begin{pmatrix} 3 \\\\ 2 \\\\ 2 \\end{pmatrix}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[\\begin{pmatrix} 0 & 2 & -1 \\\\ 3 & 0 & -3 \\\\ 1 & 4 & -5 \\end{pmatrix} \\begin{pmatrix} 3 \\\\ 2 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} (0)(3) + (2)(2) + (-1)(2) \\\\ (3)(3) + (0)(2) + (-3)(2) \\\\ (1)(3) + (4)(2) + (-5)(2) \\end{pmatrix} = \\boxed{\\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\end{pmatrix}}.\\]"
-}

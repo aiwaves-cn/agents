@@ -1,6 +1,0 @@
-{
-    "problem": "A plane $P$ is parmeterized by\n\\[\\mathbf{v} = \\begin{pmatrix} 1 \\\\ 6 \\\\ 7 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -1 \\\\ -1 \\end{pmatrix} + s \\begin{pmatrix} 2 \\\\ -3 \\\\ -5 \\end{pmatrix},\\]and line $L$ is parameterized by\n\\[\\mathbf{w} = \\begin{pmatrix} 7 \\\\ 4 \\\\ 1 \\end{pmatrix} + u \\begin{pmatrix} 3 \\\\ 0 \\\\ -1 \\end{pmatrix}.\\]Find the intersection of plane $P$ and line $L.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Setting the parameterizations to be equal, we obtain\n\\begin{align*}\n1 + 2t + 2s &= 7 + 3u, \\\\\n6 - t - 3s &= 4 \\\\\n7 - t - 5s &= 1 - u.\n\\end{align*}Solving this system, we find $s = 1,$ $t = -1,$ and $u = -2.$  Thus, the point of intersection is $\\boxed{\\begin{pmatrix} 1 \\\\ 4 \\\\ 3 \\end{pmatrix}}.$"
-}

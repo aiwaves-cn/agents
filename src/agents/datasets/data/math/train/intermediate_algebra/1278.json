@@ -1,6 +1,0 @@
-{
-    "problem": "Compute \\[\\sum_{n=1}^{1000} \\frac{1}{n^2 + n}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can write \\[\\frac{1}{n^2+n} = \\frac{(n+1) - n}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}.\\]Thus, the sum telescopes: \\[\\sum_{n=1}^{1000} \\frac{1}{n^2+n} = \\left(\\frac11-\\frac12\\right)+\\left(\\frac12-\\frac23\\right)+\\dots+\\left(\\frac1{1000}-\\frac1{1001}\\right) = \\frac11-\\frac1{1001} = \\boxed{\\frac{1000}{1001}}.\\]"
-}

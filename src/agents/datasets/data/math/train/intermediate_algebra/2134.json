@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ be nonzero real numbers such that $a + b + c = 0.$  Find all possible values of\n\\[\\frac{a^2 b^2}{(a^2 - bc)(b^2 - ac)} + \\frac{a^2 c^2}{(a^2 - bc)(c^2 - ab)} + \\frac{b^2 c^2}{(b^2 - ac)(c^2 - ab)}.\\]Enter all possible values, separated by commas.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let's consider the expressions in the denominators.  Since $a + b + c = 0,$\n\\[a^2 - bc = (-b - c)^2 - bc = b^2 + bc + c^2 = b^2 + c(b + c) = b^2 - ac.\\]Similarly, we can prove that $b^2 - ac = c^2 - ab.$\n\nLet $x = a^2 - bc = b^2 - ac = c^2 - ab.$  Then the sum is\n\\[\\frac{a^2 b^2 + a^2 c^2 + b^2 c^2}{x^2}.\\]Note that\n\\begin{align*}\nx^2 &= (a^2 - bc)(b^2 - ac) \\\\\n&= a^2 b^2 - a^3 c - b^3 c + abc^2 \\\\\n&= a^2 b^2 - (a^3 + b^3) c + abc^2 \\\\\n&= a^2 b^2 - (a + b)(a^2 - ab + b^2) c + abc^2 \\\\\n&= a^2 b^2 + (a^2 - ab + b^2) c^2 + abc^2 \\\\\n&= a^2 b^2 + a^2 c^2 + b^2 c^2.\n\\end{align*}Therefore,\n\\[\\frac{a^2 b^2 + a^2 c^2 + b^2 c^2}{x^2} = 1.\\]Thus, the given expression can only be equal to $\\boxed{1}.$"
-}

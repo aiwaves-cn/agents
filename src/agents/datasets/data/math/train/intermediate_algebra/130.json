@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the complex number $z$ satisfying the equation $2z-3i\\bar{z}=-7+3i$.  Note that $\\bar{z}$ denotes the conjugate of $z$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z=a+bi$, where $a$ and $b$ are real numbers representing the real and imaginary parts of $z$, respectively.  Then $\\bar{z}=a-bi$, so that $-3i\\bar{z}=-3b-3ia$.  We now find that \\[ 2z-3i\\bar{z} = 2a+2ib -3b - 3ia = (2a-3b) + (2b-3a)i. \\]So if $2z-3i\\bar{z}=-7+3i$ then (by matching real and imaginary components) we must have $2a-3b=-7$ and $-3a+2b=3$.  This system of equations is routine to solve, leading to the values $a=1$ and $b=3$.  Therefore the complex number we are seeking is $z=\\boxed{1+3i}$."
-}

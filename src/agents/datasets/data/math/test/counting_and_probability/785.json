@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the number of ways to arrange the letters of the word THAT.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$."
-}

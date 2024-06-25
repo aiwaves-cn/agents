@@ -1,6 +1,0 @@
-{
-    "problem": "What number can be added to both the numerator and denominator of $\\frac{3}{5}$ so that the resulting fraction will be equivalent to $\\frac{5}{6}$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We seek the number $n$ such that $\\frac{3+n}{5+n} = \\frac{5}{6}$.  Multiplying both sides by $5+n$ and by 6 gives $(3+n)(6) = 5(5+n)$.  Expanding both sides gives $18 + 6n = 25 + 5n$.  Simplifying this equation gives $n = \\boxed{7}$."
-}

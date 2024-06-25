@@ -1,6 +1,0 @@
-{
-    "problem": "How many multiples of 3 are between 62 and 215?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The first multiple of $3$ that is greater than $62$ is $63$, and the last multiple of $3$ that is less than $215$ is $213$. We're only interested in numbers that are divisible by $3$, and the list of such numbers is $$63, 66, 69, \\ldots, 210, 213.$$ To count the number of numbers in this list, first divide each by $3$. Our list then becomes $$21, 22, 23, \\ldots, 70, 71.$$ Finally, subtract $20$ from each number, and the list becomes $$1, 2, 3, \\ldots, 50, 51.$$ Thus, there are $\\boxed{51}$ multiples of $3$ between $62$ and $215$."
-}

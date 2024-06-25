@@ -1,6 +1,0 @@
-{
-    "problem": "When the square of three times a positive integer is decreased by the integer, the result is $2010$. What is the integer?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $x$ be the positive integer. The problem implies that $(3x)^2 - x = 2010$, or re-arranging, that $9x^2 - x - 2010 = 0$. Suppose this factors as $9x^2 - x - 2010 = (ax+b)(cx+d) = acx^2 + (bc + ad)x + bd$. We can factor $2010 = 2 \\cdot 3 \\cdot 5 \\cdot 67$. If both $a$ and $c$ are divisible by $3$, then $bc + ad$ is also divisible by $3$, which is not the case. Thus, one of $a$ and $c$ is equal to $9$, and the other is equal to $1$; we will choose $a = 9$. Then $b + 9d = -1$ and $bd = 2010$; after a bit of experimentation, we find that $b= 2 \\cdot 67, d = 3 \\cdot 5$ works. Thus, $$9x^2 - x - 2010 = (9x + 134)(x - 15) = 0,$$ and since $x$ is a positive integer, then $x = \\boxed{15}$."
-}

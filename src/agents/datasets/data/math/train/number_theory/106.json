@@ -1,6 +1,0 @@
-{
-    "problem": "Base prime representation of a natural number is defined using the exponents of its prime factorization as follows. Each place in a base prime represents a prime number, and it is occupied by the corresponding exponent of that prime, starting on the right side with the smallest prime number and proceeding to the left with the next largest prime number. For instance, since $84 = 7^1 \\times 5^0 \\times 3^1 \\times 2^2$, then $84$ would be written as $1012$ in base prime. What is $225$ written in base prime?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The prime factorization of $225$ is $225 = 15^2 = 3^2 \\times 5^2$. Since $2$ does not divide into $225$, we treat $2$ as having a $0$ exponent; the next two primes are $3$ and $5$. Thus, the answer is $\\boxed{220}.$"
-}

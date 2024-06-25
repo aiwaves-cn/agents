@@ -1,6 +1,0 @@
-{
-    "problem": "The numbers from 1 to 150, inclusive, are placed in a bag and a number is randomly selected from the bag. What is the probability it is not a perfect power (integers that can be expressed as $x^{y}$ where $x$ is an integer and $y$ is an integer greater than 1. For example, $2^{4}=16$ is a perfect power, while $2\\times3=6$ is not a perfect power)? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "It is easier to count the number of integers from 1 to 150 that are perfect powers. We see there are 12 perfect squares from 1 to 150, namely $1^{2}, 2^{2}, \\ldots, 12^{2}$, and there are 5 perfect cubes, namely $1^{3}, \\ldots, 5^{3}$. Notice all the perfect fourth powers are also perfect squares. Similarly, all the perfect sixth powers are also perfect squares. The only perfect powers not yet counted are $2^5=32$ and $2^7=128$. Then notice there are two repetitions, $1^{6} =1$ and $2^{6} = 64$ which we counted both as perfect squares and perfect cubes. So there is a total $12+5+1+1-2=17$ of integers from 1 to 150 that are perfect powers. Thus, $150-17=133$ integers are not perfect powers. The probability that we select such a number is $\\boxed{\\frac{133}{150}}$."
-}

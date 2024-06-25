@@ -1,6 +1,0 @@
-{
-    "problem": "If\n\\[x^5 + 5x^4 + 10x^3 + 10x^2 - 5x + 1 = 10,\\]and $x \\neq -1,$ compute the numerical value of $(x + 1)^4.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Adding $10x$ to both sides, we get\n\\[x^5 + 5x^4 + 10x^3 + 10x^2 + 5x + 1 = 10x + 10.\\]Then $(x + 1)^5 = 10(x + 1).$  Since $x + 1 \\neq 0,$ we can divide both sides by $x + 1,$ to get $(x + 1)^4 = \\boxed{10}.$"
-}

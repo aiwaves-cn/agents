@@ -1,6 +1,0 @@
-{
-    "problem": "For how many positive integral values of $a$ is it true that $x = 2$ is the only positive integer solution of the system of inequalities $$\n\\begin{cases}\n2x>3x-3\\\\\n3x-a>-6\n\\end{cases}\n$$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If we start by looking at the first inequality, we see it is equivalent to $3>x,$ so the only possible positive integers $x$ could be are $x=1$ or $x=2.$ Now, looking at the second equation, if $x=2$ we have $$3(2)-a>-6 \\Rightarrow 12>a$$ If $x=1,$ then $$3(1)-a>-6 \\Rightarrow 9>a.$$ We want $x=2$ to be the only solution. Thus, we must choose $a=9,$ $10,$ $11.$ This is $\\boxed{3}$ possible values."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{u},$ $\\mathbf{v},$ and $\\mathbf{w}$ be vectors such that $\\|\\mathbf{u}\\| = 3,$ $\\|\\mathbf{v}\\| = 4,$ and $\\|\\mathbf{w}\\| = 5,$ and\n\\[\\mathbf{u} + \\mathbf{v} + \\mathbf{w} = \\mathbf{0}.\\]Compute $\\mathbf{u} \\cdot \\mathbf{v} + \\mathbf{u} \\cdot \\mathbf{w} + \\mathbf{v} \\cdot \\mathbf{w}.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "From $\\mathbf{u} + \\mathbf{v} + \\mathbf{w} = \\mathbf{0},$ we have $(\\mathbf{u} + \\mathbf{v} + \\mathbf{w}) \\cdot (\\mathbf{u} + \\mathbf{v} + \\mathbf{w}) = 0.$  Expanding, we get\n\\[\\mathbf{u} \\cdot \\mathbf{u} + \\mathbf{v} \\cdot \\mathbf{v} + \\mathbf{w} \\cdot \\mathbf{w} + 2 (\\mathbf{u} \\cdot \\mathbf{v} + \\mathbf{u} \\cdot \\mathbf{w} + \\mathbf{v} \\cdot \\mathbf{w}) = 0.\\]Note that $\\mathbf{u} \\cdot \\mathbf{u} = \\|\\mathbf{u}\\|^2 = 9,$ $\\mathbf{v} \\cdot \\mathbf{v} = \\|\\mathbf{v}\\|^2 = 16,$ and $\\mathbf{w} \\cdot \\mathbf{w} = \\|\\mathbf{w}\\|^2 = 25,$ so\n\\[2 (\\mathbf{u} \\cdot \\mathbf{v} + \\mathbf{u} \\cdot \\mathbf{w} + \\mathbf{v} \\cdot \\mathbf{w}) + 50 = 0.\\]Therefore, $\\mathbf{u} \\cdot \\mathbf{v} + \\mathbf{u} \\cdot \\mathbf{w} + \\mathbf{v} \\cdot \\mathbf{w} = \\boxed{-25}.$"
-}

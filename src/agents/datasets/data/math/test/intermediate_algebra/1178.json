@@ -1,6 +1,0 @@
-{
-    "problem": "If $y=\\frac{27x^2+9x+3}{27x^3+9x^2+3x+1}$, at what value of $y$ will there be a horizontal asymptote?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "For a rational function, when the degree of the numerator is smaller than the degree of the denominator, the denominator grows at a faster rate than the numerator. In this case, the numerator has a degree of 2 while the denominator has a degree of 3. Thus, the function approaches the asymptote $y=\\boxed{0}$."
-}

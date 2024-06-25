@@ -1,6 +1,0 @@
-{
-    "problem": "Your math club has 20 members.  In how many ways can it select a president, a vice-president, and a treasurer if no member can hold more than one office?",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "There are $20$ potential members that could be president. Once the president is chosen, there are $19$ that could be vice-president. Finally, once those two offices are filled, there are $18$ that could be treasurer. Thus, there are $20 \\cdot 19 \\cdot 18 = \\boxed{6840}$ ways in which the math club can select the officers."
-}

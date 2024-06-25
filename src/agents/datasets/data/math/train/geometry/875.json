@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of square units in the area of the shaded region. [asy]\nsize(200);\ndraw((0,0)--(30,0)--(30,30)--(0, 30)--cycle);\ndot((30,0));dot((0,0));dot((10,0));dot((30,20));dot((30,30)); dot((20,30));dot((0,30));dot((0,10));\nfilldraw((0,0)--(10,0)--(30,20)--(30,30)--(20,30)--(0,10)--(0,0)--cycle, lightgray);\ndraw((0,0)--(60,0),EndArrow);\ndraw((0,0)--(-30,0),EndArrow);\ndraw((0,0)--(0,50),EndArrow);\ndraw((0,0)--(0,-30),EndArrow);\nlabel(\"(0,0)\",(0,0), SW, fontsize(8));\nlabel(\"(10,0)\",(10,0), S, fontsize(8));\nlabel(\"(30,0)\",(30,0), S, fontsize(8));\nlabel(\"(30,20)\",(30,20), E, fontsize(8));\nlabel(\"(20,30)\",(20,30), N, fontsize(8));\nlabel(\"(0,30)\",(0,30), W, fontsize(8));\nlabel(\"(30,30)\",(30,30), NE, fontsize(8));\nlabel(\"(0,10)\",(0,10), W, fontsize(8));\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The area of the shaded figure can be found by taking the area of the large square and then subtracting the areas of the two unshaded triangles. The square has dimensions $30$-by-$30$ so it has an area of $30\\cdot 30 = 900$. Both triangles have a base and height of $20$ so their combined area is $2\\cdot \\frac{1}{2}bh = 2 \\cdot \\frac{1}{2}(20)(20)=400$. Therefore, the area of the shaded region is $900-400=\\boxed{500}$ square units."
-}

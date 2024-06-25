@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z$ be a nonreal complex number.  Find the smallest possible value of\n\\[\\frac{\\text{Im}(z^5)}{[\\text{Im}(z)]^5}.\\]Note: For a complex number $z,$ $\\text{Im}(z)$ denotes the imaginary part of $z.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z = x + yi,$ where $x$ and $y$ be real numbers.  Since $z$ is nonreal, $y \\neq 0.$\n\nNow,\n\\[z^5 = (x + yi)^5 = x^5 + 5ix^4 y - 10x^3 y^2 - 10ix^2 y^3 + 5xy^4 + iy^5,\\]so\n\\[\\text{Im}(z^5) = 5x^4 y - 10x^2 y^3 + y^5.\\]Hence,\n\\begin{align*}\n\\frac{\\text{Im}(z^5)}{[\\text{Im}(z)]^5} &= \\frac{5x^4 y - 10x^2 y^3 + y^5}{y^5} \\\\\n&= \\frac{5x^4 - 10x^2 y^2 + y^4}{y^4} \\\\\n&= 5 \\cdot \\frac{x^4}{y^4} - 10 \\cdot \\frac{x^2}{y^2} + 1 \\\\\n&= 5t^2 - 10t + 1,\n\\end{align*}where $t = \\frac{x^2}{y^2}.$  Now,\n\\[5t^2 - 10t + 1 = (5t^2 - 10t + 5) - 4 = 5(t - 1)^2 - 4 \\ge -4.\\]Equality occurs when $t = 1,$ which occurs for $z = 1 + i,$ for example.  Therefore, the smallest possible value is $\\boxed{-4}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If the second term of a geometric sequence of real numbers is $-2$ and the fifth term is $16,$ then what is the fourteenth term?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "$\\emph{Solution 1: Find the first term and common ratio.}$\n\nLet the first term be $a$ and the common ratio be $r.$ Because the second term is $-2,$ we have $ar = -2.$ Because the fifth term is $16,$ we have $ar^4 = 16.$ Dividing this by $ar = -2,$ we have $r^3=-8.$ Therefore, $r=-2.$ So, $a = -2/r = 1.$ Therefore, the fourteenth term is $ar^{13} = (1)(-2)^{13} = \\boxed{-8192}.$\n\n$\\emph{Solution 2: Use our understanding of geometric sequences.}$\n\nTo get from the second term to the fifth term, we multiply by the common ratio, $r,$ three times. Therefore, multiplying $-2$ by $r^3$ gives us $16.$ So, $r^3=-8.$ Rather than finding $r,$ we note that to get to the fourteenth term from the fifth term, we multiply by $r$ nine times, which is the same as multiplying by $r^3$ three times. So, the fourteenth term is $16(-8)^3 = \\boxed{-8192}.$"
-}

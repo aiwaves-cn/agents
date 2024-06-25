@@ -1,6 +1,0 @@
-{
-    "problem": "For any integer $n>1$, the number of prime numbers greater than $n!+1$ and less than $n!+n$ is:\n$\\text{(A) } 0\\quad\\qquad \\text{(B) } 1\\quad\\\\ \\text{(C) } \\frac{n}{2} \\text{ for n even, } \\frac{n+1}{2} \\text{ for n odd}\\quad\\\\ \\text{(D) } n-1\\quad \\text{(E) } n$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Observe that for all $k \\in 1< k< n$, since $k$ divides $n!$, $k$ also divides $n!+k$. Therefore, all numbers $a$ in the range $n!+1<a<n!+n$ are composite. Therefore there are $\\boxed{}$ primes in that range."
-}

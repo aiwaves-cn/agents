@@ -1,6 +1,0 @@
-{
-    "problem": "The equation\n\\[(x - \\sqrt[3]{13})(x - \\sqrt[3]{53})(x - \\sqrt[3]{103}) = \\frac{1}{3}\\]has three distinct solutions $r,$ $s,$ and $t.$  Calculate the value of $r^3 + s^3 + t^3.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let the roots of $(x - \\sqrt[3]{13})(x - \\sqrt[3]{53})(x - \\sqrt[3]{103}) = 0$ be $\\alpha,$ $\\beta,$ and $\\gamma.$  Then by Vieta's formulas,\n\\begin{align*}\nr + s + t &= \\alpha + \\beta + \\gamma, \\\\\nrs + rt + st &= \\alpha \\beta + \\alpha \\gamma + \\beta \\gamma, \\\\\nrst &= \\alpha \\beta \\gamma + \\frac{1}{3}.\n\\end{align*}We have the factorization\n\\[r^3 + s^3 + t^3 - 3rst = (r + s + t)((r + s + t)^2 - 3(rs + rt + st)).\\]Thus, from the equations above,\n\\[r^3 + s^3 + t^3 - 3rst = \\alpha^3 + \\beta^3 + \\gamma^3 - 3 \\alpha \\beta \\gamma.\\]Hence,\n\\begin{align*}\nr^3 + s^3 + t^3 &= \\alpha^3 + \\beta^3 + \\gamma^3 + 3(rst - \\alpha \\beta \\gamma) \\\\\n&= 13 + 53 + 103 + 1 \\\\\n&= \\boxed{170}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be two positive real numbers such that $x + y = 35.$  Enter the ordered pair $(x,y)$ for which $x^5 y^2$ is maximized.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\nx + y &= \\frac{x}{5} + \\frac{x}{5} + \\frac{x}{5} + \\frac{x}{5} + \\frac{x}{5} + \\frac{y}{2} + \\frac{y}{2} \\\\\n&\\ge 7 \\sqrt[7]{\\left( \\frac{x}{5} \\right)^5 \\left( \\frac{y}{2} \\right)^2} \\\\\n&= 7 \\sqrt[7]{\\frac{x^5 y^2}{5^5 \\cdot 2^2}}.\n\\end{align*}Since $x + y = 35,$ this gives us\n\\[x^5 y^2 \\le 5^7 \\cdot 5^5 \\cdot 2^2,\\]and equality occurs when $x + y = 35$ and $\\frac{x}{5} = \\frac{y}{2}.$  We can solve, we get $(x,y) = \\boxed{(25,10)}.$"
-}

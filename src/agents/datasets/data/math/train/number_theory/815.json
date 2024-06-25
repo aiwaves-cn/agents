@@ -1,6 +1,0 @@
-{
-    "problem": "What is the digit in the thousandths place of the decimal equivalent of $\\frac{3}{16}$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Since the denominator of $\\dfrac{3}{16}$ is $2^4$, we multiply numerator and denominator by $5^4$ to obtain  \\[\n\\frac{3}{16} = \\frac{3\\cdot 5^4}{2^4\\cdot 5^4} = \\frac{3\\cdot 625}{10^4} = \\frac{1875}{10^4} = 0.1875.\n\\] The digit in the thousandths place is $\\boxed{7}$."
-}

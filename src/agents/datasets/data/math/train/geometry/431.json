@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of square units in the area of the triangle.\n\n[asy]size(125);\ndraw( (-10,-2) -- (2,10), Arrows);\ndraw( (0,-2)-- (0,10) ,Arrows);\ndraw( (5,0) -- (-10,0),Arrows);\n\nlabel(\"$l$\",(2,10), NE);\nlabel(\"$x$\", (5,0) , E);\nlabel(\"$y$\", (0,-2) , S);\nfilldraw( (-8,0) -- (0,8) -- (0,0) -- cycle, lightgray);\ndot( (-2, 6)); dot( (-6, 2)); label( \"(-2, 6)\", (-2, 6), W, fontsize(10)); label( \"(-6, 2)\", (-6, 2), W, fontsize(10));\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "We first notice that the vertical and horizontal distances between the two points are both $4$, so the slope of the line which the two points are on must be $1$. We now find the length of the legs of the triangle. Since the slope of the line is one, we can add $2$ to both the $x$ and $y$-coordinates of $(-2,6)$ and get that the line passes through $(0,8)$. Similarly, we can subtract $2$ from the $x$ and $y$-coordinates of $(-6,2)$ to find that it passes through $(-8,0)$. We now have a right triangle with legs of length $8$, so its area is $\\frac{1}{2}bh=\\frac{1}{2}(8)(8)=\\boxed{32}$ square units."
-}

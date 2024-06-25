@@ -1,6 +1,0 @@
-{
-    "problem": "Find $x$ such that $\\lceil x \\rceil \\cdot x = 135$. Express $x$ as a decimal.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First, we note that $x$ must be positive, since otherwise $\\lceil x \\rceil \\cdot x$ is nonpositive. Now, knowing that $\\lceil x \\rceil - 1 < x \\leq \\lceil x \\rceil,$ we see that $\\lceil x \\rceil$ must be $12,$ since $11 \\cdot 11 < 135 \\leq 12 \\cdot 12.$\n\nNow we see that $\\lceil x \\rceil \\cdot x = 12x = 135,$ so $x = \\frac{135}{12} = \\boxed{11.25}.$"
-}

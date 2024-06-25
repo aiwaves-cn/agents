@@ -1,6 +1,0 @@
-{
-    "problem": "When the single digit $D$ is written at the end of the positive two-digit integer $XY$, with tens digit $X$ and ones digit $Y$, the resulting positive three-digit integer $XYD$ is 619 more than the original integer $XY$. What is the value of the three-digit integer $XYD$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We are given $XYD = 619+XY$.  Examining hundreds digits, we know that $X$ is  $6$ or $7$.  Examining tens digits, on the right side we cannot have carrying into the hundreds digit, so $X = 6$, and thus $Y$ is  $7$ or $8$.  However, we see that the sum on the right side must have carrying into the tens digit, so $Y = 8$.  Finally, $D = 7$ is trivial.  Thus $XYD =\\boxed{687}$."
-}

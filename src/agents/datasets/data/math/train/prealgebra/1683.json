@@ -1,6 +1,0 @@
-{
-    "problem": "Dots are spaced one unit part, horizontally and vertically. What is the number of square units enclosed by the polygon?\n[asy]\n/* AMC8 1998 #6P */\nsize(1inch,1inch);\npair a=(0,0), b=(10,0), c=(20,0), d=(30, 0);\npair e=(0,10), f=(10,10), g=(20,10), h=(30,10);\npair i=(0,20), j=(10,20), k=(20,20), l=(30,20);\npair m=(0,30), n=(10,30), o=(20,30), p=(30,30);\ndot(a);\ndot(b);\ndot(c);\ndot(d);\ndot(e);\ndot(f);\ndot(g);\ndot(h);\ndot(i);\ndot(j);\ndot(k);\ndot(l);\ndot(m);\ndot(n);\ndot(o);\ndot(p);\ndraw(a--b--g--c--d--h--l--k--o--j--i--e--a);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Slide triangle $A$ down to fill in triangle $B$. The resulting $2\\times 3$ rectangle has area $\\boxed{6}$. [asy]\n/* AMC8 1998 #6S */\nsize(1inch,1inch);\npair a=(0,0), b=(10,0), c=(20,0), d=(30, 0);\npair e=(0,10), f=(10,10), g=(20,10), h=(30,10);\npair i=(0,20), j=(10,20), k=(20,20), l=(30,20);\npair m=(0,30), n=(10,30), o=(20,30), p=(30,30);\ndot(a);\ndot(b);\ndot(c);\ndot(d);\ndot(e);\ndot(f);\ndot(g);\ndot(h);\ndot(i);\ndot(j);\ndot(k);\ndot(l);\ndot(m);\ndot(n);\ndot(o);\ndot(p);\ndraw(a--b--g--c--d--h--l--k--o--j--i--e--a);\npen p = linetype(\"4 4\");\ndraw(b--c, p);\ndraw(j--k, p);\nlabel(\"A\", k, NW);\nlabel(\"B\", c, NW);\n[/asy]"
-}

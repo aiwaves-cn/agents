@@ -1,6 +1,0 @@
-{
-    "problem": "Mohan is selling cookies at the economics fair. As he decides how to package the cookies, he finds that when he bags them in groups of 4, he has 3 left over. When he bags them in groups of 5, he has 2 left over. When he bags them in groups of 7, he has 4 left over. What is the least number of cookies that Mohan could have?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Let $a$ be the least number of cookies Mohan could have. From the given information, we know that \\begin{align*}\na&\\equiv 3\\pmod 4\\\\\na&\\equiv 2\\pmod 5\\\\\na&\\equiv 4\\pmod 7\n\\end{align*} Congruence $(1)$ means that there exists a non-negative integer $m$ such that $a=3+4m$. Substituting this into $(2)$ yields \\[3+4m\\equiv 2\\pmod 5\\implies m\\equiv 1\\pmod 5.\\] So there exists a non-negative integer $n$ such that $m=1+5n$. Substituting $a=3+4m$ into $(3)$ yields \\[3+4m\\equiv 4\\pmod 7\\implies m\\equiv 2\\pmod 7.\\] Substituting $m=1+5n$ into this gives \\[1+5n\\equiv 2\\pmod 7\\implies n\\equiv 3\\pmod 7.\\] The least $n$ such that $n\\equiv 3\\pmod 7$ is $n=3$. Since \\[a=3+4m=3+4(1+5n)=7+20n,\\]we have\\[n\\ge 3\\implies a=7+20n\\ge 67.\\] Since $67$ satisfies the three congruences, $a=\\boxed{67}$."
-}

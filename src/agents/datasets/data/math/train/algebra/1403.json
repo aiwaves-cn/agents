@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $f$ is a function and $f^{-1}$ is the inverse of $f$. If $f(3)=4$, $f(5)=1$, and $f(2)=5$, evaluate $f^{-1}\\left(f^{-1}(5)+f^{-1}(4)\\right)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If $f(2)=5$ and $f(3)=4$, then $f^{-1}(5)=2$ and $f^{-1}(4)=3$, respectively. Therefore, $f^{-1}\\left(f^{-1}(5)+f^{-1}(4)\\right)=f^{-1}\\left(2+3\\right)=f^{-1}(5) = \\boxed{2}$."
-}

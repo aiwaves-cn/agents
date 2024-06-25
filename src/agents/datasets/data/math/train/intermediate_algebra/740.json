@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $a+b=3$ and $a^3+b^3=81$, find $ab$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Recall the sum of cubes factorization $a^3+b^3= (a+b)(a^{2}-ab+b^{2}).$ We plug in the numbers from the equations given to obtain $81=(3)(a^2-ab+b^2)$. Therefore, $a^2-ab+b^2=27$. We also know that $(a+b)^2=9=a^2+2ab+b^2$. We use the two equations  $$a^2+2ab+b^2=9$$and  $$a^2-ab+b^2=27.$$By subtracting the second equation from the first, we get that $2ab+ab=9-27$. Therefore, $3ab=-18$, so $ab=\\boxed{-6}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $$\\begin{array}{@{}l@{\\;}l@{}l@{}l} && & P_b \\\\ & \\times & & P_b \\\\ \\cline{2-4} & & 3 & 1_b, \\\\ \\end{array} $$where $P$ and $b$ represent two distinct digits 0-9 and $P$ is one less than $b$, what is the value of the base $b$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can rewrite $31_b$ as $3b+1$ in base 10. So, we have $P\\cdot P=3b+1$. The value of $P$ is one less than $b$, so we substitute $(b-1)$ for $P$ and get \\begin{align*}\n(b-1)^2&=3b+1\\quad\\Rightarrow\\\\\nb^2-2b+1&=3b+1\\quad\\Rightarrow\\\\\nb^2-5b&=0\\quad\\Rightarrow\\\\\nb(b-5)&=0.\n\\end{align*}That means $b=0$ or $b=5$, but a base of 0 would mean $P=-1$ and the multiplication problem would not be true. So, the base $b$ is $\\boxed{5}$."
-}

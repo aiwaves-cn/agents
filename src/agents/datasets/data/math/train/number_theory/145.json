@@ -1,6 +1,0 @@
-{
-    "problem": "The least common multiple of two numbers is 3780, and the greatest common divisor is 18. Given that one of the numbers is 180, what is the other number?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We use the identity $\\gcd(a,b) \\cdot \\mathop{\\text{lcm}}[a,b] = ab$ for all positive integers $a$ and $b$.  We are told that $\\gcd(a,b) = 18$, and $\\mathop{\\text{lcm}}[a,b] = 3780$, so $ab = 18 \\cdot 3780$.  If one number is 180, then the other number is $18 \\cdot 3780/180 = \\boxed{378}$."
-}

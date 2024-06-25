@@ -1,6 +1,0 @@
-{
-    "problem": "What perfect-square integer is closest to 273?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Note that $16^2 = 256 < 273$ while $17^2 = 289 > 273$.  Since all other perfect squares are farther away from $273$, our answer is the closer of these two, $\\boxed{289}$."
-}

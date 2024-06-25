@@ -1,6 +1,0 @@
-{
-    "problem": "Quadrilateral $ABCD$ is a square, and segment $AE$ is perpendicular to segment $ED$. If $AE = 8$ units and $DE = 6$ units, what is the area of pentagon $AEDCB$, in square units? [asy]\nsize(150);\npair A, B, C, D, E;\nA=(0,10);\nB=(0,0);\nC=(10,0);\nD=(10,10);\nE=(6.4,5.2);\ndraw(A--B--C--D--A);\ndraw(A--E--D);\nlabel(\"A\", A, NW);\nlabel(\"B\", B, SW);\nlabel(\"C\", C, SE);\nlabel(\"D\", D, NE);\nlabel(\"E\", E, S);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Noticing that $ADE$ is a 3-4-5 right triangle scaled by a factor of 2, we have $AD=2 \\cdot 5=10$. Thus, the area of square $ABCD$ is $10 \\cdot 10=100$. The area of triangle $ADE$ is $\\frac{1}{2}\\cdot 6 \\cdot 8=3 \\cdot 8=24$. Finally, we calculate the area of pentagon $ABCDE$ to be the difference of the two: $100-24=\\boxed{76} \\text{ sq units}$."
-}

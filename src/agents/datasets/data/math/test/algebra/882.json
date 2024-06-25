@@ -1,6 +1,0 @@
-{
-    "problem": "Find $x$ such that $7^{\\log_x 49} = 49$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Since $7^2 = 49$, it follows $\\log_x 49 = 2$. Writing this equation in exponential notation gives $x^2 = 49$. Solving this gives $x = \\pm 7$, but the base of a logarithm cannot be negative, so $x = \\boxed{7}$."
-}

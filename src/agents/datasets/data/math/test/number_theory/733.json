@@ -1,6 +1,0 @@
-{
-    "problem": "How many increasing sequences of three distinct prime numbers have a sum of 20?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "List the primes up to 20 (2, 3, 5, 7, 11, 13, 17, 19) and note that the largest possible prime in the sum is 13 because no two primes add up to $20-17=3$ and of course 19 is too large as well. Also, observe that 2, the only even prime, must be in the sum, because the sum of three odd primes can never be 20. Starting with 2 and 3, we see that $20-(2+3)=15$ is not prime. Next, 2 and 5 give $20-(2+5)=13$, a prime, so one such increasing sequence is 2, 5, 13. Next, we take 2 and 7, and we see that $20-(2+7)=11$ is prime as well, giving us the second sequence 2, 7, 11. 11 and 13 are already included, so we are done. Thus, there are $\\boxed{2}$ increasing sequences of three distinct prime numbers that have a sum of 20."
-}

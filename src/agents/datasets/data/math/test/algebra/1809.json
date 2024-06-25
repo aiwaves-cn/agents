@@ -1,6 +1,0 @@
-{
-    "problem": "Find the domain of $\\frac{x^2 + 10x + 21}{x^2 + 4x - 21}$.  (Express your answer using interval notation.)",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We cannot divide by 0 so we have to exclude from the domain the values of $x$ that make the denominator 0. First we factor the denominator into $(x-3)(x+7)$. Then we set it equal to 0 and solve for $x$. We find that $x$ cannot be 3 or -7, so $x \\in \\boxed{(-\\infty, -7)\\cup(-7, 3)\\cup(3, \\infty)}.$"
-}

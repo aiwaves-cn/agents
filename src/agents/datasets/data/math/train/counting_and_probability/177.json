@@ -1,6 +1,0 @@
-{
-    "problem": "Each face of a cube is painted either  red or blue, each with probability 1/2. The color of each face is determined independently.  What is the probability that the painted cube can be placed on a horizontal surface so that the four vertical faces are all the same color?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "If the orientation of the cube is fixed, there are $2^6 = 64$ possible arrangements of colors on the faces. There are \\[\n2\\binom{6}{6}=2\n\\]arrangements in which all six faces are the same color and \\[\n2\\binom{6}{5}=12\n\\]arrangements in which exactly five faces have the same color. In each of these cases the cube can be placed so that the four vertical faces have the same color. The only other suitable arrangements have four faces of one color, with the other color on a pair of opposing faces. Since there are three pairs of opposing faces, there are $2(3)=6$ such arrangements. The total number of suitable arrangements is therefore $2+12+6=20$, and the probability is $20/64= \\boxed{\\frac{5}{16}}$."
-}

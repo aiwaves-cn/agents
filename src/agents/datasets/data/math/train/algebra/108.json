@@ -1,6 +1,0 @@
-{
-    "problem": "Krzysztof solved the quadratic equation $11x^2-44x-99=0$ by completing the square. In the process, he came up with the equivalent equation $$(x+r)^2 = s,$$where $r$ and $s$ are constants.\n\nWhat is $r+s$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Dividing both sides of the equation $11x^2-44x-99$ by $11$, we have $$x^2-4x-9 = 0.$$The square which agrees with $x^2-4x-9$ except for the constant term is $(x-2)^2$, which is equal to $x^2-4x+4$ and thus to $(x^2-4x-9)+13$.\n\nTherefore, by adding $13$ to each side, Krzysztof rewrote the equation $x^2-4x-9 = 0$ as $$(x-2)^2 = 13$$We have $r=-2$, $s=13$, and thus $r+s=\\boxed{11}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A point whose coordinates are both integers is called a lattice point. How many lattice points lie on the hyperbola $x^2 - y^2 = 2000^2$?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "\\[(x-y)(x+y)=2000^2=2^8 \\cdot 5^6\\]\nNote that $(x-y)$ and $(x+y)$ have the same parities, so both must be even. We first give a factor of $2$ to both $(x-y)$ and $(x+y)$. We have $2^6 \\cdot 5^6$ left. Since there are $7 \\cdot 7=49$ factors of $2^6 \\cdot 5^6$, and since both $x$ and $y$ can be negative, this gives us $49\\cdot2=\\boxed{98}$ lattice points."
-}

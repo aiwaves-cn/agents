@@ -1,6 +1,0 @@
-{
-    "problem": "For how many integers $n$ from $1$ to $29$ is the fraction $\\frac{n}{30}$ a repeating decimal?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Recall that a simplified fraction has a terminating decimal representation if and only if the denominator is divisible by no primes other than 2 or 5.\n\nThe prime factorization for $30$ is $3 \\cdot 2 \\cdot 5$. Therefore, the decimal representation for $n/30$ terminates if and only if $n$ has a factor of 3 to cancel the 3 in the denominator. There are $9$ multiples of 3 less than 30 (namely $3(1), 3(2) 3(3), \\ldots, 3(9)$) so there are $29-9=\\boxed{20}$ integers $n$ between 1 and 29 for which $n/30$ is a repeating decimal."
-}

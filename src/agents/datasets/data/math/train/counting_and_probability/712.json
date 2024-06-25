@@ -1,6 +1,0 @@
-{
-    "problem": "What is $\\dbinom{n}{1}$ for any positive integer $n$?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "$\\dbinom{n}{1}=\\dfrac{n!}{1!(n-1)!}=\\boxed{n}$.  Also, $\\binom{n}{1}$ is the number of ways to choose 1 object out of $n$.  Since there are $n$ different objects, there are $\\boxed{n}$ ways to do this."
-}

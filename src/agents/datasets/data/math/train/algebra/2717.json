@@ -1,6 +1,0 @@
-{
-    "problem": "Betty goes to the store to get flour and sugar.  The amount of flour she buys, in pounds, is at least 6 pounds more than half the amount of sugar, and is no more than twice the amount of sugar.  Find the least number of pounds of sugar that Betty could buy.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Suppose Betty buys $f$ pounds of flour and $s$ pounds of sugar.  From the problem, we have $f \\ge 6+s/2$ and $f \\le 2s$.  Putting these together, we have $2s \\ge f \\ge 6 +s/2$. The expression on the left end of this inequality chain must therefore be greater than or equal to the $6+s/2$ on the right, so \\[2s \\ge 6 + s/2 \\implies 3s/2 \\ge 6 \\implies s\\ge \\boxed{4}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A four-digit integer $m$ and the four-digit integer obtained by reversing the order of the digits of $m$ are both divisible by 45. If $m$ is divisible by 7, what is the greatest possible value of $m$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let the integer obtained by reversing the digits of $m$ be $n$. $m$ and $n$ are both divisible by $45$, which means that they are both divisible by $5$.  Thus, they both have units digits of $5$ or $0$.  If one has a units digit of $0$, the other will have a leading digit of $0$, which cannot be.  So both end in $5$; reversing them shows that both start with $5$ as well.  Since $m$ is divisible by $45$ and by $7$, it is divisible by $7(45)=315$.  There are four multiples of $315$ between $5000$ and $6000$: $5040$, $5355$, $5670$, and $5985$. $5985$ is the largest, and it is easy to see that it and its reversal, $5895$, meet all requirements.  So $\\boxed{5985}$ is the answer."
-}

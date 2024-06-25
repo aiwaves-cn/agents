@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real numbers $x$ satisfying \\[\\frac{2x-5}{x+3} \\ge 2.\\](Give your answer in interval notation.)",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Subtracting $2$ from both sides, we get\n\\begin{align*}\n \\frac{2x-5}{x+3} - 2 &\\ge 0 \\\\\n \\frac{2x-5 - 2(x+3)}{x+3} &\\geq 0 \\\\\n \\frac{-11}{x+3} &\\ge 0.\n\\end{align*}Therefore, we must have $x+3 < 0,$ so $x < -3.$ Therefore, the solution set is $\\boxed{ (-\\infty, -3) }.$"
-}

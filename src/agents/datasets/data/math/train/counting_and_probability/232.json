@@ -1,6 +1,0 @@
-{
-    "problem": "A point $(x,y)$ is randomly and uniformly chosen inside the square with vertices (0,0), (0,2), (2,2), and (2,0).  What is the probability that $x+y < 3$?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We note that the points for which $x+y<3$ are those that lie below the line $x+y = 3$, or $y= -x + 3$.  As the diagram below illustrates, these are all the points in the square except those in the triangle with vertices (2,1), (2,2), and (1,2).\n\n[asy]\ndefaultpen(.7);\n\ndraw((-.1,0)--(3,0),Arrow);\ndraw((0,-.1)--(0,4),Arrow);\n\ndraw((0,2)--(2,2)--(2,0));\ndraw((-.5,3.5)--(2.5,.5),dashed,Arrows);\n\nfill((0,0)--(0,2)--(1,2)--(2,1)--(2,0)--cycle,gray(.7));\n\nlabel(\"(1,2)\",(1,2),NE);\nlabel(\"(2,2)\",(2,2),NE);\nlabel(\"(2,1)\",(2,1),NE);\n[/asy]\n\nSince this is a right triangle whose sides both of length 1, its area is $\\frac{1}{2} \\cdot 1^2 = 1/2$.  Since the square in question has side length 2, its area is $2^2 = 4$, so the shaded region has area $4 - 1/2 = 7/2$.  Our probability is therefore $\\dfrac{7/2}{4} = \\boxed{\\dfrac{7}{8}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $a^7xy-a^6y-a^5x=a^4(b^4-1)$ is equivalent to the equation $(a^mx-a^n)(a^py-a^2)=a^4b^4$ for some integers $m$, $n$, and $p$.  Find $mnp$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Notice that if we add $a^4$ to both sides of the first equation, we get $a^7xy-a^6y-a^5x +a^4=a^4b^4$.   Factoring the left side gives $(a^3x-a^2)(a^4y-a^2)=a^4b^4$.  So, $(m,n,p)=(3,2,4)$, which means $mnp=3\\cdot2\\cdot4=\\boxed{24}$."
-}

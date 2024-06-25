@@ -1,6 +1,0 @@
-{
-    "problem": "A circle having center $(0,k)$, with $k>6$, is tangent to the lines $y=x$, $y=-x$ and $y=6$. What is the radius of  this circle?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $O$ denote the origin, $P$ the center of the circle, and $r$ the radius. A radius from the center to the point of tangency with the line $y = x$ forms a right triangle with hypotenuse $\\overline{OP}$. This  right  triangle is isosceles since the line $y=x$ forms a $45^\\circ$ angle with the $y$-axis. So \\[r\\sqrt{2}=r+6\\]and \\[r=\\frac{6}{\\sqrt{2}-1}=\\boxed{6\\sqrt{2}+6}.\\][asy]\nunitsize(0.2cm);\npair P,O;\nO=(0,0);\nP=(0,20.4);\ndraw(Circle(P,14.4),linewidth(0.7));\ndot(P);\ndot(O);\ndraw((-15,0)--(15,0),Arrow);\nlabel(\"$x$\",(15,0),S);\ndraw((0,-0.2)--(0,30),Arrow);\nlabel(\"$y$\",(0,30),E);\ndraw((-14,6)--(12,6),linewidth(0.7));\nlabel(\"$y=6$\",(12,6),E);\ndraw((-1,-1)--(17,17),linewidth(0.7));\nlabel(\"$y=x$\",(17,17),NE);\nlabel(\"$y=-x$\",(-17,17),NW);\ndraw((1,-1)--(-17,17),linewidth(0.7));\nlabel(\"$O$\",O,S);\nlabel(\"$P$\",P,W);\ndraw(P--(10.2,10.2),linewidth(0.7));\nlabel(\"$r$\",(5.1,15.3),N);\n[/asy]"
-}

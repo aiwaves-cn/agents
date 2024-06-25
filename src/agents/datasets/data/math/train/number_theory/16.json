@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct, positive factors does $1100$ have?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "The prime factorization of $1100$ is $2^2\\cdot5^2\\cdot11$. To find the number of factors, we consider that each factor has a prime factorization of $2^a\\cdot5^b\\cdot11^c$, where $a$ could be from $0$ to $2$ (3 possible values), $b$ could be from $0$ to $2$ (3 possible values), and $c$ could be $0$ or $1$ (2 possible values). So the number of factors is $3\\cdot3\\cdot2=\\boxed{18}$."
-}

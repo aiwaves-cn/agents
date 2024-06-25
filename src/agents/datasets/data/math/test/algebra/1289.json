@@ -1,6 +1,0 @@
-{
-    "problem": "For how many positive integers $n$ is $n^2-3n+2$ a prime number?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "If $n \\ge 4$, then $$\nn^2-3n+2=(n-1)(n-2)\n$$is the product of two integers greater than 1, and thus is not prime. For $n=1$, $2$, and $3$ we have, respectively, $$\n(1-1)(1-2) = 0,\\quad (2-1)(2-2) = 0,\\quad\\text{and}\\quad (3-1)(3-2) = 2.\n$$Therefore, $n^2-3n+2$ is prime only when $n=3$, for a total of $\\boxed{1}$ positive integer $n$."
-}

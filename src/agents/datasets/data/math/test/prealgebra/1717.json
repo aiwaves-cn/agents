@@ -1,6 +1,0 @@
-{
-    "problem": "The vertex of the angle below is the center of the circle.  Find $n$ if $n\\%$ of the circle is shaded.  Give your answer as a mixed fraction.\n\n[asy]\nunitsize(0.6inch);\nfill((0,0)--(1,0)..(rotate(60)*(1,0))..(rotate(120)*(1,0))--cycle,gray(0.6));\ndraw(Circle((0,0),1));\ndraw((1,0)--(0,0)--(rotate(120)*(1,0)));\nlabel(\"$120^\\circ$\",(0,0),NE);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are $360$ degrees in a circle, so the portion of the circle that is shaded is \\[\\frac{120^\\circ}{360^\\circ} = \\frac13 =33\\frac13 \\%.\\]Hence, $n = \\boxed{33 \\frac{1}{3}}$."
-}

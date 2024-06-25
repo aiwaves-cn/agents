@@ -1,6 +1,0 @@
-{
-    "problem": "Circle $C$ has radius 6 cm. How many square centimeters are in the area of the largest possible inscribed triangle having one side as a diameter of circle $C$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "We may consider the diameter of circle $C$ as the base of the inscribed triangle; its length is $12\\text{ cm}$. Then the corresponding height extends from some point on the diameter to some point on the circle $C$. The greatest possible height is a radius of $C$, achieved when the triangle is right isosceles: [asy]\nunitsize(8);\ndraw(Circle((0,0),6));\ndraw(((-6,0)--(6,0)));\nlabel(\"$12$\",(0,0),S);\ndraw(((-6,-0.6)--(-0.6,-0.6)),BeginArrow);\ndraw(((0.6,-0.6)--(6,-0.6)),EndArrow);\ndraw(((-6,0)--(0,6)));\ndraw(((0,6)--(6,0)));\ndraw(((0,0)--(0,6)),dashed);\nlabel(\"$6$\",(0,2.5),E);\n[/asy] In this case, the height is $6\\text{ cm}$, so the area of the triangle is $$\\frac 12\\cdot 12\\cdot 6 = \\boxed{36}\\text{ square centimeters}.$$"
-}

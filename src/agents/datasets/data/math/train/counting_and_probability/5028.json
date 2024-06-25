@@ -1,6 +1,0 @@
-{
-    "problem": "For each permutation $a_1,a_2,a_3,\\cdots,a_{10}$ of the integers $1,2,3,\\cdots,10$, form the sum\n\\[|a_1-a_2|+|a_3-a_4|+|a_5-a_6|+|a_7-a_8|+|a_9-a_{10}|.\\]\nThe average value of all such sums can be written in the form $\\dfrac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Because of symmetry, we may find all the possible values for $|a_n - a_{n - 1}|$ and multiply by the number of times this value appears. Each occurs $5 \\cdot 8!$, because if you fix $a_n$ and $a_{n + 1}$ there are still $8!$ spots for the others and you can do this $5$ times because there are $5$ places $a_n$ and $a_{n + 1}$ can be.\nTo find all possible values for $|a_n - a_{n - 1}|$ we have to compute\\begin{eqnarray*} |1 - 10| + |1 - 9| + \\ldots + |1 - 2|\\\\ + |2 - 10| + \\ldots + |2 - 3| + |2 - 1|\\\\ + \\ldots\\\\ + |10 - 9| \\end{eqnarray*}\nThis is equivalent to\n\\[2\\sum\\limits_{k = 1}^{9}\\sum\\limits_{j = 1}^{k}j = 330\\]\nThe total number of permutations is $10!$, so the average value is $\\frac {330 \\cdot  8!  \\cdot  5}{10!} = \\frac {55}{3}$, and $m+n = \\boxed{58}$."
-}

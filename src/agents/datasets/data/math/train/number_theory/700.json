@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the number of positive integers $a$ less than $12$ such that the congruence $ax\\equiv 1\\pmod{12}$ has a solution in $x$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The given congruence has a solution if and only if $a$ is invertible modulo $12$ since the congruence implies that $a,x$ are inverses of each other modulo $12$. In other words, $\\gcd(12,a)=1$. The only such positive $a$ less than $12$ are $1,5,7,11$. So the number of possible values of $a$ is $\\boxed{4}$."
-}

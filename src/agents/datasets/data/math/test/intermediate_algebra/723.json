@@ -1,6 +1,0 @@
-{
-    "problem": "The real numbers $a,$ $b,$ $c,$ and $d$ satisfy\n\\[a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}.\\]Find $a + b + c + d.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = \\sqrt{10a + 14b + 22c - d}.$  Then $x^2 = 10a + 14b + 22c - d,$ so $d = 10a + 14b + 22c - x^2.$  Then we can write the given equation as\n\\[a^2 + b^2 + c^2 + 519 = 10a + 14b + 22c - x^2 + 36x.\\]Hence,\n\\[a^2 + b^2 + c^2 + x^2 - 10a - 14b - 22c - 36x + 519 = 0.\\]Completing the square in $a,$ $b,$ $c,$ and $x,$ we get\n\\[(a - 5)^2 + (b - 7)^2 + (c - 11)^2 + (x - 18)^2 = 0.\\]Therefore, $a = 5,$ $b = 7,$ $c = 11,$ and $x = 18.$  Then\n\\[d = 10a + 14b + 22c - x^2 = 66,\\]so $a + b + c + d = 5 + 7 + 11 + 66 = \\boxed{89}.$"
-}

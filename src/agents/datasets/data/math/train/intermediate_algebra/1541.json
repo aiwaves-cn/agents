@@ -1,6 +1,0 @@
-{
-    "problem": "Let\n\\[f(x) = \\left\\{\n\\begin{array}{cl}\nx + 3 & \\text{if $x < 20$}, \\\\\n2x - 2 & \\text{if $x \\ge 20$}.\n\\end{array}\n\\right.\\]Find $f^{-1}(7) + f^{-1}(46).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "To find $f^{-1}(7),$ we try solving $f(x) = 7$ on each piece.\n\nIf $x + 3 = 7$, then $x = 4,$ which satisfies $x < 20.$  If $2x - 2 = 7,$ then $x = \\frac{9}{2},$ which does not satisfy $x \\ge 20,$ so $f^{-1}(7) = 4.$\n\nSimilarly, $x + 3 = 46,$ then $x = 43,$ which does not satisfy $x < 20.$  If $2x - 2= 46,$ then $x = 24,$ which satisfies $x \\ge 20,$ so $f^{-1}(46) = 24.$\n\nHence, $f^{-1}(7) + f^{-1}(46) = 4 + 24 = \\boxed{28}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. and Mrs. Lopez have two children.  When they get into their family car, two people sit in the front, and the other two sit in the back.  Either Mr. Lopez or Mrs. Lopez must sit in the driver's seat.  How many seating arrangements are possible?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are only two possible occupants for the driver's seat. After the driver is chosen, any of the remaining three people can sit in the front, and there are two arrangements for the other two people  in the back.  Thus, there are $2\\cdot 3\\cdot 2 =\n\\boxed{12}$ possible seating arrangements."
-}

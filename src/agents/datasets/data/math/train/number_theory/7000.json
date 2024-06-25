@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a_n=6^{n}+8^{n}$. Determine the remainder upon dividing $a_ {83}$ by $49$.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $\\phi(49) = 42$ (see Euler's totient function), Euler's Totient Theorem tells us that $a^{42} \\equiv 1 \\pmod{49}$ where $\\text{gcd}(a,49) = 1$. Thus $6^{83} + 8^{83} \\equiv 6^{2(42)-1}+8^{2(42)-1}$ $\\equiv 6^{-1} + 8^{-1} \\equiv \\frac{8+6}{48}$ $\\equiv \\frac{14}{-1}\\equiv \\boxed{35} \\pmod{49}$."
-}

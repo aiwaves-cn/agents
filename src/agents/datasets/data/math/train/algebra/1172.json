@@ -1,6 +1,0 @@
-{
-    "problem": "Given the two functions $f(x)=x^2+1$ and $g(x)=2x-1$, find $f(g(5))$.",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "Since we know that $f(x)=x^2+1$ and $g(x)=2x-1$, the expression for $f(g(x))$ is just $(2x-1)^2+1$. From here, we can just plug 5 in as the value for $x$. \\begin{align*} (f(g(5))&=(2(5)-1)^2+1\n\\\\ &=(10-1)^2+1\n\\\\ &=(9)^2+1\n\\\\ &=81+1\n\\\\ &=\\boxed{82}\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of $315_6 \\cdot 4_6$.  Express your answer in base 6.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "First, we need to multiply the units digit: $5_6 \\times 4_6 = 20_{10} = 32_6$. Hence, we write down a $2$ and carry-over the $3$. Evaluating the next digit, we need to multiply $1_6 \\times 4_6 + 3_6 = 7_{10} = 11_{6}$. Thus, the next digit is a $1$ and $1$ is carried over. Finally, the leftmost digits are given by $3_6 \\times 4_6 + 1_6 = 13_{10} = 21_6$. Writing this out:  $$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c}\n& & & & \\stackrel{1}{3} & \\stackrel{3}{1} & \\stackrel{}{5}_6 \\\\\n& & & \\times & & & 4_6 \\\\\n\\cline{4-7} & & & 2 & 1 & 1 & 2_6 \\\\\n\\end{array}$$Thus, the answer is $\\boxed{2112_6}$."
-}

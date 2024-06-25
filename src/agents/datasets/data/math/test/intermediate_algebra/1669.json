@@ -1,6 +1,0 @@
-{
-    "problem": "At a competition with $N$ players, the number of players given elite status is equal to $2^{1+\\lfloor \\log_{2} (N-1) \\rfloor}-N$. Suppose that $19$ players are given elite status. What is the sum of the two smallest possible values of $N$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We start with $ 2^{1+\\lfloor\\log_{2}(N-1)\\rfloor}-N = 19$. After rearranging, we get\n\\[\\lfloor\\log_{2}(N-1)\\rfloor = \\log_{2} \\left(\\frac{N+19}{2}\\right).\\]Since $ \\lfloor\\log_{2}(N-1)\\rfloor $ is a positive integer, $ \\frac{N+19}{2}$ must be in the form of $2^{m} $ for some positive integer $ m $. From this fact, we get $N=2^{m+1}-19$.\n\nIf we now check integer values of $N$ that satisfy this condition, starting from $N=19$, we quickly see that the first values that work for $N$ are $2^6 -19$ and $2^7 -19$, giving values of $5$ and $6$ for $m$, respectively. Adding up these two values for $N$, we get $45 + 109 = \\boxed{154}$."
-}

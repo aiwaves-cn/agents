@@ -1,6 +1,0 @@
-{
-    "problem": "Find the distance between the vertices of the hyperbola $9x^2 + 54x - y^2 + 10y + 55 = 0.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ and $y,$ we get\n\\[9(x + 3)^2 - (y - 5)^2 = 1,\\]which we can write as\n\\[\\frac{(x + 3)^2}{1/9} - \\frac{(y - 5)^2}{1} = 1.\\]Thus, $a^2 = \\frac{1}{9}$ and $b^2 = 1,$ so $a = \\frac{1}{3}.$  Therefore, the distance between the vertices is $2a = \\boxed{\\frac{2}{3}}.$"
-}

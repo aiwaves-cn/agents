@@ -1,6 +1,0 @@
-{
-    "problem": "As $n$ ranges over the positive integers, what is the maximum possible value for the greatest common divisor of $11n+3$ and $6n+1$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We use the Euclidean Algorithm. \\begin{align*}\n\\gcd(11n+3, 6n+1) &= \\gcd(6n+1, (11n+3) - (6n+1)) \\\\\n&= \\gcd(6n+1, 5n+2) \\\\\n&= \\gcd(5n+2, (6n+1)-(5n+2)) \\\\\n&= \\gcd(5n+2, n-1) \\\\\n&= \\gcd(n-1, (5n+2)-5(n-1)) \\\\\n&= \\gcd(n-1, 7).\n\\end{align*}Therefore, if $n-1$ is a multiple of 7, then the greatest common divisor of $11n+3$ and $6n+1$ is 7. Otherwise, the greatest common divisor is 1. This implies that the maximum possible value for the greatest common divisor of $11n+3$ and $6n+1$ is $\\boxed{7}$."
-}

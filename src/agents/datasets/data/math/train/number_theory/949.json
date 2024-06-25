@@ -1,6 +1,0 @@
-{
-    "problem": "The solution of $8x+1\\equiv 5 \\pmod{12}$ is $x\\equiv a\\pmod{m}$ for some positive integers $m\\geq 2$ and $a<m$. Find $a+m$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Subtract 1 from both sides to obtain $8x \\equiv 4 \\pmod{12}$. Add 12 to the right-hand side to get $8x \\equiv 16 \\pmod{12}$. Now divide both sides by 8, remembering to divide 12 by the greatest common factor of 12 and 8, thus obtaining $x \\equiv 2\\pmod{3}$. This gives $a+m = 2 + 3 = \\boxed{5}$. Here we have used the fact that $ad \\equiv bd\\pmod{m}$ if and only if $a\\equiv b \\pmod{m/\\text{gcd}(m,d)}$, for integers $m\\geq 2$ and $a$, $b$, and $d$."
-}

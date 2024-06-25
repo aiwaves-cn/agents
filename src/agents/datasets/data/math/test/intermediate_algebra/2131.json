@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r_1,$ $r_2,$ $\\dots,$ $r_7$ be the distinct complex roots of the polynomial $P(x) = x^7 - 7.$  Let\n\\[K = \\prod_{1 \\le i < j \\le 7} (r_i + r_j).\\]In other words, $K$ is the product of all numbers of the of the form $r_i + r_j,$ where $i$ and $j$ are integers for which $1 \\le i < j \\le 7.$  Determine $K^2.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\[x^7 - 7 = (x - r_1)(x - r_2) \\dotsm (x - r_7).\\]Substituting $-x$ for $x,$ we get\n\\[-x^7 - 7 = (-x - r_1)(-x - r_2) \\dotsm (-x - r_7),\\]so\n\\[x^7 + 7 = (x + r_1)(x + r_2) \\dotsm (x + r_7).\\]Setting $x = r_i,$ we get\n\\[r_i^7 + 7 = (r_i + r_1)(r_i + r_2) \\dotsm (r_i + r_7).\\]Since $r_i$ is a root of $x^7 - 7,$ $r_i^7 = 7.$  Hence,\n\\[(r_i + r_1)(r_i + r_2) \\dotsm (r_i + r_7) = 14.\\]Taking the product over $1 \\le i \\le 7,$ we get\n\\[(2r_1)(2r_2) \\dotsm (2r_7) K^2 = 14^7.\\]By Vieta's formulas, $r_1 r_2 \\dotsm r_7 = 7,$ so\n\\[K^2 = \\frac{14^7}{2^7 \\cdot 7} = 7^6 = \\boxed{117649}.\\]"
-}

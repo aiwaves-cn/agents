@@ -1,6 +1,0 @@
-{
-    "problem": "If the product $\\left(4^5\\right)\\left(5^{13}\\right)$ is written as an integer, how many digits are in this integer?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "By pairing up factors of 2 with factors of 5 to make factors of 10, the product may be written as \\begin{align*}\n4^5\\cdot5^{13} &= 2^{10}\\cdot 5^{13} \\\\\n&= (2\\cdot5)^{10}\\cdot5^3 \\\\\n&= 125\\cdot 10^{10}.\n\\end{align*} `125' followed by 10 zeros has $10+3=\\boxed{13}$ digits."
-}

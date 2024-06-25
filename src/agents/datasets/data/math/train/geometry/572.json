@@ -1,6 +1,0 @@
-{
-    "problem": "How many non-congruent triangles with only integer side lengths have a perimeter of 15 units?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "In a triangle, the lengths of any two sides must add up to a value larger than the third length's side.  This is known as the Triangle Inequality.  Keeping this in mind, we list out cases based on the length of the shortest side.\n\nCase 1:  shortest side has length $1$.  Then the other two sides must have lengths $7$ and $7$.  This leads to the set $\\{1,7,7\\}$.\n\nCase 2:  shortest side has length $2$.  Then the other two sides must have lengths $6$ and $7$.  This leads to the set $\\{2,6,7\\}$.\n\nCase 3:  shortest side has length $3$.  Then the other two sides can have lengths $6$ and $6$ or $5$ and $7$.  This leads to the sets $\\{3,6,6\\}$ and $\\{3,5,7\\}$.\n\nCase 4:  shortest side has length $4$.  Then the other two sides can have lengths $5$ and $6$ or $4$ and $7$.  This leads to the sets $\\{4,5,6\\}$ and $\\{4,4,7\\}$.\n\nCase 5:  shortest side has length $5$.  Then the other two sides must have lengths $5$ and $5$.  This leads to the set $\\{5,5,5\\}$.\n\nHence there are $\\boxed{7}$ sets of non-congruent triangles with a perimeter of $15$ units."
-}

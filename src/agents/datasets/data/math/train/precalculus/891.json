@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify\n\\[\\cos ^2 x + \\cos^2 (x + y) - 2 \\cos x \\cos y \\cos (x + y).\\]",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "First, we can write\n\\begin{align*}\n&\\cos^2 x + \\cos^2 (x + y) - 2 \\cos x \\cos y \\cos (x + y) \\\\\n&= \\cos^2 x + \\cos (x + y) (\\cos (x + y) - 2 \\cos x \\cos y).\n\\end{align*}From the angle addition formula, $\\cos (x + y) = \\cos x \\cos y - \\sin x \\sin y,$ so\n\\begin{align*}\n&\\cos^2 x + \\cos (x + y) (\\cos (x + y) - 2 \\cos x \\cos y) \\\\\n&= \\cos^2 x + \\cos (x + y) (-\\cos x \\cos y - \\sin x \\sin y).\n\\end{align*}From the angle subtraction formula, $\\cos (x - y) = \\cos x \\cos y + \\sin x \\sin y,$ so\n\\begin{align*}\n&\\cos^2 x + \\cos (x + y) (-\\cos x \\cos y - \\sin x \\sin y) \\\\\n&= \\cos^2 x - \\cos (x + y) \\cos (x - y).\n\\end{align*}From the product-to-sum formula,\n\\begin{align*}\n\\cos^2 x - \\cos (x + y) \\cos (x - y) &= \\cos^2 x - \\frac{1}{2} (\\cos 2x + \\cos 2y) \\\\\n&= \\cos^2 x - \\frac{1}{2} \\cos 2x - \\frac{1}{2} \\cos 2y.\n\\end{align*}Finally, from the double-angle formula,\n\\begin{align*}\n\\cos^2 x - \\frac{1}{2} \\cos 2x - \\frac{1}{2} \\cos 2y &= \\cos^2 x - \\frac{1}{2} \\cdot (2 \\cos^2 x - 1) - \\frac{1}{2} (2 \\cos^2 y - 1) \\\\\n&= 1 - \\cos^2 y = \\boxed{\\sin^2 y}.\n\\end{align*}"
-}

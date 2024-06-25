@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha,$ $\\beta,$ $\\gamma,$ and $\\delta$ be the roots of\n\\[x^4 + kx^2 + 90x - 2009 = 0.\\]If $\\alpha \\beta = 49,$ find $k.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $\\alpha$ and $\\beta$ be the roots of $x^2 + ux + 49,$ which is a factor of $x^4 + kx^2 + 90x - 2009.$  Then the other factor must be of the form $x^2 + vx - 41.$  Thus,\n\\[(x^2 + ux + 49)(x^2 + vx - 41) = x^4 + kx^2 + 90x - 2009.\\]Expanding, we get\n\\[x^4 + (u + v) x^3 + (uv + 8) x^2 + (-41u + 49v) - 2009 = x^4 + kx^2 + 90x - 2009.\\]Matching coefficients, we get\n\\begin{align*}\nu + v &= 0, \\\\\nuv + 8 &= k, \\\\\n-41u + 49v &= 90.\n\\end{align*}Solving the system $u + v = 0$ and $-41u + 49v = 90,$ we find $u = -1$ and $v = 1.$  Therefore, $k = uv + 8 = \\boxed{7}.$"
-}

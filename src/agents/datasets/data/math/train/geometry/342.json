@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, if $\\angle PQR = 48^\\circ$, what is the measure of $\\angle PMN$? [asy]\n\nsize(6cm);\n\npair p = (0, 0); pair m = dir(180 - 24); pair n = dir(180 + 24); pair r = 1.3 * dir(24); pair q = 2 * 1.3 * Cos(48) * dir(-24);\n\nlabel(\"$M$\", m, N); label(\"$R$\", r, N); label(\"$P$\", p, 1.5 * S); label(\"$N$\", n, S); label(\"$Q$\", q, SE);\n\ndraw(m--q--r--n--cycle);\n\nadd(pathticks(m--p, s=4));\n\nadd(pathticks(n--p, s=4));\n\nadd(pathticks(r--p, 2, spacing=0.9, s=4));\n\nadd(pathticks(r--q, 2, spacing=0.9, s=4));\n\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "In $\\triangle PQR$, since $PR=RQ$, then $\\angle RPQ=\\angle PQR = 48^\\circ$.\n\nSince $\\angle MPN$ and $\\angle RPQ$ are opposite angles, we have $\\angle MPN = \\angle RPQ=48^\\circ$.\n\nIn $\\triangle PMN$, $PM=PN$, so $\\angle PMN = \\angle PNM$.\n\nTherefore, $$\\angle PMN = \\frac{1}{2}(180^\\circ - \\angle MPN) = \\frac{1}{2}(180^\\circ - 48^\\circ) = \\frac{1}{2}(132^\\circ)=\\boxed{66^\\circ}.$$"
-}

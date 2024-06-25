@@ -1,6 +1,0 @@
-{
-    "problem": "How many of the divisors of $8!$ are larger than $7!$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Suppose that $d$ divides $8!$ and that $d>7!$.  Taking the reciprocal of both sides of $d>7!$ and multiplying by $8!$, we find $\\frac{8!}{d}<\\frac{8!}{7!}=8$.  There are 7 positive integers less than 8, and $d$ can be chosen so that $\\frac{8!}{d}$ takes on any of these values, since $\\frac{8!}{d}$ ranges over all the divisors of 8! as $d$ ranges over the divisors of $8!$.  Therefore, $\\boxed{7}$ divisors of 8! are greater than $7!$."
-}

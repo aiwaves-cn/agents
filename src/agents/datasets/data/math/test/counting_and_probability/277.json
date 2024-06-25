@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to put 8 beads of different colors on the vertices of a cube, if rotations of the cube (but not reflections) are considered the same?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Consider one vertex of the cube. When the cube is rotated, there are 8 vertices which that vertex could end up at. At each of those vertices, there are 3 ways to rotate the cube onto itself with that vertex fixed. So, there are a total of $8\\cdot3=24$ ways to rotate a cube. There are $8!$ ways to arrange the beads, not considering rotations. Since the arrangements come in groups of 24 equivalent arrangements, the actual number of ways to arrange the beads is $8!/24=\\boxed{1680}$."
-}

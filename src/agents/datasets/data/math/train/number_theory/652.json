@@ -1,6 +1,0 @@
-{
-    "problem": "The product of the base seven numbers $24_7$ and $30_7$ is expressed in base seven. What is the base seven sum of the digits of this product?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can ignore the $0$ digit for now, and find the product of $24_7 \\times 3_7$. First, we need to multiply the units digit: $4_7 \\times 3_7 = 12_{10} = 15_7$. Hence, we write down a $5$ and carry-over the $1$. Evaluating the next digit, we need to multiply $2_7 \\times 3_7 + 1_7 = 7_{10} = 10_{7}$. Thus, the next digit is a $0$ and $1$ is carried over. Writing this out:  $$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c}\n& & & & & \\stackrel{1}{2} & \\stackrel{}{4}_7 \\\\\n& & & \\times & & & 3_7 \\\\\n\\cline{4-7} & & & & 1 & 0 & 5_7 \\\\\n\\end{array}$$ We can ignore the $0$ in $30_7$, since it does not contribute to the sum. Thus, the answer is $1+0+5 = \\boxed{6}$.\n\nNotice that the base seven sum of the digits of a number leaves the same remainder upon division by $6$ as the number itself."
-}

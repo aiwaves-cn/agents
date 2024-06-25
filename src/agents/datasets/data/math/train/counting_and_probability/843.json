@@ -1,6 +1,0 @@
-{
-    "problem": "A bag contains 3 tan, 2 pink and 4 violet chips. If the 9 chips are randomly drawn from the bag, one at a time and without replacement, what is the probability that the chips are drawn in such a way that the 3 tan chips are drawn consecutively, the 2 pink chips are drawn consecutively, and the 4 violet chips are drawn consecutively, but not necessarily in the tan-pink-violet order? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We count the number of ways to draw the tan chips consecutively, the pink chips consecutively, and the violet chips consecutively (although not necessarily in that order).  First of all, we can draw the tan chips in $3!$ ways, the pink chips in $2!$ ways, and the violet chips in $4!$ ways.  We can choose our drawing order (e.g pink-tan-violet) in $3!$ ways.  Thus we have $3!2!4!3!$ satisfying arrangements and $9!$ total ways of drawing the chips.  So our answer is $\\frac{3!2!4!3!}{9!} = \\boxed{\\frac{1}{210}}$."
-}

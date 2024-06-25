@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha$ and $\\beta$ be real numbers.  Find the minimum value of\n\\[(2 \\cos \\alpha + 5 \\sin \\beta - 8)^2 + (2 \\sin \\alpha + 5 \\cos \\beta - 15)^2.\\]",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Let $x = 2 \\cos \\alpha + 5 \\sin \\beta$ and $y = 2 \\sin \\alpha + 5 \\cos \\beta.$  Then\n\\begin{align*}\nx^2 + y^2 &= (2 \\cos \\alpha + 5 \\sin \\beta)^2 + (2 \\sin \\alpha + 5 \\cos \\beta)^2 \\\\\n&= 4 \\cos^2 \\alpha + 20 \\cos \\alpha \\sin \\beta + 25 \\sin^2 \\beta +  4 \\sin^2 \\alpha + 20 \\sin \\alpha \\cos \\beta + 25 \\cos^2 \\beta \\\\\n&= 29 + 20 \\cos \\alpha \\sin \\beta + 20 \\sin \\alpha \\cos \\beta.\n\\end{align*}From the angle addition formula, this is equal to $29 + 20 \\sin (\\alpha + \\beta),$ which is at most $29 + 20 = 49.$\n\nIn the coordinate plane, let $O = (0,0),$ $P = (8,15),$ and $Q = (x,y).$   Then by the Triangle Inequality,\n\\[OQ + PQ \\ge OP,\\]so $PQ \\ge OP - OQ = 17 - \\sqrt{x^2 + y^2} \\ge 10.$  Therefore,\n\\[(2 \\cos \\alpha + 5 \\sin \\beta - 8)^2 + (2 \\sin \\alpha + 5 \\cos \\beta - 15)^2 \\ge 100.\\]Equality occurs when $\\alpha$ is the angle such that $\\cos \\alpha = \\frac{8}{17}$ and $\\sin \\alpha = \\frac{15}{17},$ and $\\beta = 90^\\circ - \\alpha.$  Thus, the minimum value of the expression is $\\boxed{100}.$"
-}

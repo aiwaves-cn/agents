@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $b$ for which the equations $1988x^2 + bx + 8891 = 0$ and $8891x^2 + bx + 1988 = 0$ have a common root.\n\nEnter all the possible values of $b,$ separated by commas.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $r$ be a common root, so\n\\begin{align*}\n1988r^2 + br + 8891 &= 0, \\\\\n8891r^2 + br + 1988 &= 0.\n\\end{align*}Subtracting these equations, we get $6903r^2 - 6903 = 6903 (r^2 - 1) = 0,$ so $r = \\pm 1.$\n\nIf $r = 1,$ then $1988 + b + 8891 = 0,$ so $b = \\boxed{-10879}.$  If $r = -1,$ then $1988 - b + 8891 = 0,$ so $b = \\boxed{10879}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest possible perimeter, in units, of a triangle whose side-length measures are consecutive integer values?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The smallest such triangle has lengths 1, 2, and 3. However, this triangle doesn't work since the sum of any two side lengths must be greater than the third side length (by the Triangle Inequality). The next smallest triangle has lengths 2, 3, and 4, which works. Thus, the smallest possible perimeter is $2+3+4=\\boxed{9}$ units."
-}

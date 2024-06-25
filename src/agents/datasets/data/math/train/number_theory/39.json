@@ -1,6 +1,0 @@
-{
-    "problem": "Find the least positive integer $x$ that satisfies $x+4609 \\equiv 2104 \\pmod{12}$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Subtract 4609 from both sides of the congruence to obtain $x\\equiv -2505\\pmod{12}$. By dividing 2505 by 12, we find that the least integer $k$ for which $-2505+12k>0$ is $k=209$. Adding $12\\cdot 209$ to $-2505$, we find that $x\\equiv 3\\pmod{12}$. Thus $\\boxed{3}$ is the least integer satisfying the given congruence."
-}

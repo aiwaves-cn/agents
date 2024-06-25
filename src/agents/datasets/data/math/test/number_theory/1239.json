@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose we have four integers, no two of which are congruent $\\pmod 6$. Let $N$ be the product of the four integers.\n\nIf $N$ is not a multiple of $6$, then what is the remainder of $N$ when $N$ is divided by $6$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since no two of the four integers are congruent modulo 6, they must represent four of the possible residues $0,1,2,3,4,5$.\n\nNone of the integers can be $0\\pmod 6$, since this would make their product a multiple of 6.\n\nThe remaining possible residues are $1,2,3,4,5$. Our integers must cover all but one of these, so either 2 or 4 must be among the residues of our four integers. Therefore, at least one of the integers is even, which rules out also having a multiple of 3 (since this would again make $N$ a multiple of 6). Any integer that leaves a remainder of 3 (mod 6) is a multiple of 3, so such integers are not allowed.\n\nTherefore, the four integers must be congruent to $1,2,4,$ and $5\\pmod 6$. Their product is congruent modulo 6 to $1\\cdot 2\\cdot 4\\cdot 5=40$, which leaves a remainder of $\\boxed{4}$."
-}

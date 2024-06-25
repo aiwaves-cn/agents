@@ -1,6 +1,0 @@
-{
-    "problem": "Completely factor the following expression: $9x^2+3x$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "The largest common factor of $9x^2$ and $3x$ is $3x$. We factor $3x$ out of each term to get\\begin{align*}\n9x^2+3x &= 3x\\cdot 3x + 3x \\cdot 1\\\\\n&= \\boxed{3x(3x+1)}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A grocer makes a display of cans in which the top row has one can and each lower row has two more cans than the row above it. If the display contains 100 cans, how many rows does it contain?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The number of cans in each row form an arithmetic sequence, with first term 1 and common difference 2.  If there are $n$ terms, then the terms are 1, 3, $\\dots$, $2n - 1$.\n\nThe total number of cans is therefore the sum of the arithmetic series \\[1 + 3 + 5 + \\dots + (2n - 1).\\]The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $[1 + (2n - 1)]/2 \\cdot n = n^2$.\n\nThen from $n^2 = 100$, we get $n = \\boxed{10}$."
-}

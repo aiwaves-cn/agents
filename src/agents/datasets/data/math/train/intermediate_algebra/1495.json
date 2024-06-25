@@ -1,6 +1,0 @@
-{
-    "problem": "Find the point of intersection of the asymptotes of the graph of\n\\[y = \\frac{x^2 - 4x + 3}{x^2 - 4x + 4}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The denominator factors as $x^2 - 4x + 4 = (x - 2)^2,$ so the vertical asymptote is $x = 2.$\n\nSince\n\\[y = \\frac{x^2 - 4x + 3}{x^2 - 4x + 4} = \\frac{(x^2 - 4x + 4) - 1}{x^2 - 4x + 4} = 1 - \\frac{1}{x^2 - 4x + 4}.\\]Thus, the horizontal asymptote is $y = 1,$ and the intersection of the two asymptote is $\\boxed{(2,1)}.$"
-}

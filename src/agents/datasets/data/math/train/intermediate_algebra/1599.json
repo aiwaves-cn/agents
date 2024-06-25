@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P$ be the parabola with equation $y=x^2$ and let $Q = (20, 14)$. There are real numbers $r$ and $s$ such that the line through $Q$ with slope $m$ does not intersect $P$ if and only if $r < m < s.$  What is $r + s$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The equation of the line passing through $Q = (20,14)$ with slope $m$ is $y - 14 = m(x - 20).$  Thus, we seek the values of $m$ for which the system\n\\begin{align*}\ny - 14 &= m(x - 20), \\\\\ny &= x^2\n\\end{align*}has no real solutions.\n\nSubstituting $y = x^2$ into the first equation, we get\n\\[x^2 - 14 = m(x - 20).\\]Then $x^2 - mx + (20m - 14) = 0.$  This equation has no real solutions when the discriminant is negative:\n\\[m^2 - 4(20m - 14) < 0.\\]Then $m^2 - 80m + 56 < 0.$  Thus, $r$ and $s$ are the roots of $m^2 - 80m + 56 = 0.$  By Vieta's formulas, $r + s = \\boxed{80}.$"
-}

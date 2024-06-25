@@ -1,6 +1,0 @@
-{
-    "problem": "Find constants $A,$ $B,$ and $C$ so that\n\\[\\frac{4x}{(x - 5)(x - 3)^2} = \\frac{A}{x - 5} + \\frac{B}{x - 3} + \\frac{C}{(x - 3)^2}.\\]Enter the ordered triple $(A,B,C).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Multiplying both sides by $(x - 5)(x - 3)^2,$ we get\n\\[4x = A (x - 3)^2 + B(x - 5)(x - 3) + C (x - 5).\\]Setting $x = 5,$ we get $4A = 20,$ so $A = 5.$\n\nSetting $x = 3,$ we get $-2C = 12,$ so $C = -6.$  Hence,\n\\[4x = 5(x - 3)^2 + B(x - 5)(x - 3) - 6(x - 5).\\]Then\n\\[B(x - 5)(x - 3) = -5x^2 + 40x - 75 = -5(x - 3)(x - 5),\\]so $B = -5.$  Therefore, $(A,B,C) = \\boxed{(5,-5,-6)}.$"
-}

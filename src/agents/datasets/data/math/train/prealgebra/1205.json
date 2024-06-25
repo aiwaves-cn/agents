@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose we flip four coins simultaneously: a penny, a nickel, a dime, and a quarter.  What is the probability that the penny and dime both come up the same?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are $2^4=16$ possible outcomes, since each of the 4 coins can land 2 different ways (heads or tails).  There are 2 possibilities for the penny and the dime: either they're both heads or they're both tails.  There are also 2 possibilities for the nickel and 2 possibilities for the quarter.  So there are $2 \\times 2 \\times 2 = 8$ successful outcomes, and the probability of success is $\\dfrac{8}{16} = \\boxed{\\dfrac{1}{2}}$."
-}

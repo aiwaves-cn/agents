@@ -1,6 +1,0 @@
-{
-    "problem": "Find all numbers in the range of\n\\[f(x) = \\arctan x + \\arctan \\frac{1 - x}{1 + x},\\]expressed in radians.  Enter all the numbers, separated by commas.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "From the addition formula for tangent,\n\\[\\tan f(x) = \\tan \\left( \\arctan x + \\arctan \\frac{1 - x}{1 + x} \\right) = \\frac{x + \\frac{1 - x}{1 + x}}{1 - x \\cdot \\frac{1 - x}{1 + x}} = 1.\\]If $x < -1,$ then $-\\frac{\\pi}{2} < \\arctan x < -\\frac{\\pi}{4}.$  Also,\n\\[1 + \\frac{1 - x}{1 + x} = \\frac{2}{1 + x} < 0,\\]so $\\frac{1 - x}{1 + x} < -1,$ which means $-\\frac{\\pi}{2} < \\arctan \\frac{1 - x}{1 + x} < -\\frac{\\pi}{4}.$  Therefore, $-\\pi < f(x) < -\\frac{\\pi}{2}.$  Since $\\tan f(x) = 1,$ $f(x) = -\\frac{3 \\pi}{4}.$\n\nIf $x > -1,$ then $-\\frac{\\pi}{4} < \\arctan x < \\frac{\\pi}{2}.$  Also,\n\\[1 + \\frac{1 - x}{1 + x} = \\frac{2}{1 + x} > 0,\\]so $\\frac{1 - x}{1 + x} > -1,$ which means $-\\frac{\\pi}{4} < \\arctan \\frac{1 - x}{1 + x} < \\frac{\\pi}{2}.$  Therefore, $-\\frac{\\pi}{2} < f(x) < \\pi.$  Since $\\tan f(x) = 1,$ $f(x) = \\frac{\\pi}{4}.$\n\nTherefore, the range of $f(x)$ consists of the numbers $\\boxed{-\\frac{3 \\pi}{4}, \\frac{\\pi}{4}}.$"
-}

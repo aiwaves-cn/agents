@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $(1 + \\tan 20^\\circ)(1 + \\tan 25^\\circ).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From the angle addition formula,\n\\[1 = \\tan 45^\\circ = \\tan (20^\\circ + 25^\\circ) = \\frac{\\tan 20^\\circ + \\tan 25^\\circ}{1 - \\tan 20^\\circ \\tan 25^\\circ},\\]so $\\tan 20^\\circ + \\tan 25^\\circ = 1 - \\tan 20^\\circ \\tan 25^\\circ.$\n\nThen\n\\[(1 + \\tan 20^\\circ)(1 + \\tan 25^\\circ) = 1 + \\tan 20^\\circ + \\tan 25^\\circ + \\tan 20^\\circ \\tan 25^\\circ = \\boxed{2}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A regular octagon has the same perimeter as the regular hexagon shown here with side length 16 cm.  How long is each side of the octagon? [asy]size(80); pair A = dir(120); pair B=dir(60); pair M=(A+B)/2; draw(dir(360)--B--A--dir(180)--dir(240)--dir(300)--cycle); label(\"16 cm\", M, N);[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The hexagon has a side length of 16 centimeters, so its perimeter is $16\\times 6 = 96$ centimeters. Since the octagon and the hexagon have the same perimeter, it follows that each side of the octagon has a length of $96/8 = \\boxed{12}$ centimeters."
-}

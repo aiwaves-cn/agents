@@ -1,6 +1,0 @@
-{
-    "problem": "Container A holds 4 red balls and 6 green balls; containers B and C each hold 6 red balls and 4 green balls. A container is selected at random and then a ball is randomly selected from that container. What is the probability that the ball selected is green? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are three different possibilities for our first decision, each corresponding to which container we choose. So, if we choose container A, with $\\frac{1}{3}$ probability, we have a $\\frac{6}{10} = \\frac{3}{5}$ probability of drawing green, which means we have  a $\\frac{1}{3} \\cdot \\frac{3}{5} = \\frac{1}{5}$ of picking Container A and then picking a green ball. Similarly for container B the probability is $\\frac{1}{3} \\cdot \\frac{4}{10} = \\frac{2}{15}$, and the same for container C. So, the total probability is $\\frac{1}{5} + \\frac{2}{15} + \\frac{2}{15} =\\boxed{ \\frac{7}{15}}$."
-}

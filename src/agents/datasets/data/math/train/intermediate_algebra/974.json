@@ -1,6 +1,0 @@
-{
-    "problem": "Say that an integer $A$ is yummy if there exist several consecutive integers, including $A$, that add up to 2014.  What is the smallest yummy integer?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Here is a sequence of consecutive integers that add up to $2014$:\n$$-2013, -2012, \\dots , -1, 0, 1, \\dots , 2012, 2013, 2014.$$So $-2013$ is yummy.\n\nAssume there is a yummy integer less than $-2013$. Then there is a sequence of consecutive integers (including at least one less than $-2013$) that add up to $2014$. Let $A$ be the least integer in the sequence, so $A < -2013$.\n\nBecause the sum of the sequence is nonnegative, it includes the numbers $A, \\dots, -1, 0, 1, \\dots , -A$.  Because the sum of the sequence is positive, besides the numbers above, it includes $-A + 1$. But $-A + 1 > 2013 + 1 = 2014.$\n\nSo the sum of the sequence exceeds $2014$, which is a contradiction. Hence there is no yummy integer less than $-2013$.\n\nTherefore the least yummy integer is $\\boxed{-2013}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $\\cos x =0$ and $\\cos(x+z)= \\frac{1}{2}$. What is the smallest possible positive value of $z,$ in radians?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Because $\\cos x =0$ and $\\cos(x+z)=\\frac{1}{2}$, it follows that $x= \\frac{m\\pi}{2}$ for some odd integer $m$ and $x+z=2n\\pi \\pm \\frac{\\pi}{3}$ for some integer $n$. Therefore\n\\[z = 2n\\pi - \\frac{m\\pi}{2}\\pm\\frac{\\pi}{3} = k\\pi + \\frac{\\pi}{2}\\pm\\frac{\\pi}{3}\\]for some integer $k$.  The smallest value of $k$ that yields a positive value for $z$ is 0, and the smallest positive value of $z$ is $\\frac{\\pi}{2} - \\frac{\\pi}{3} = \\boxed{\\frac{\\pi}{6}}$."
-}

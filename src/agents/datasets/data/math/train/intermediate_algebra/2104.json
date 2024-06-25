@@ -1,6 +1,0 @@
-{
-    "problem": "Is $f(x) = \\log{x} $ an even function, odd function, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We can try a few values to see if the function satisfies the properties.  $f(1) = \\log{1}$ and $f(-1) = \\log (-1)$ which is not defined! Since to be even, $f(x) = f(-x)$ for all $x$ in the domain of $f$, $f$ is not even.  For the same reason, $f$ is not odd.  The answer is $\\boxed{\\text{neither}}.$"
-}

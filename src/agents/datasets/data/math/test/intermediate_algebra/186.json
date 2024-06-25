@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be a set containing distinct integers such that the smallest element is 0 and the largest element is 2015.  Find the smallest possible average of the elements in $S.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "It is clear that to get the smallest positive average, the set should be of the form $S = \\{0, 1, 2, \\dots, n, 2015\\}$ for some nonnegative integer $n.$  For this set, the average is\n\\begin{align*}\n\\frac{\\frac{n(n + 1)}{2} + 2015}{n + 2} &= \\frac{n^2 + n + 4032}{2(n + 2)} \\\\\n&= \\frac{1}{2} \\left( n - 1 + \\frac{4032}{n + 2} \\right) \\\\\n&= \\frac{1}{2} \\left( n + 2 + \\frac{4032}{n + 2} \\right) - \\frac{3}{2}.\n\\end{align*}By AM-GM,\n\\[\\frac{4032}{n + 2} + n + 2 \\ge 2 \\sqrt{4032}.\\]However, equality cannot occur, since $n + 2 = \\sqrt{4032}$ does not lead to an integer, so we look for integers close to $\\sqrt{4032} - 2 \\approx 61.5.$\n\nFor both $n = 61$ and $n = 62,$ the average works out to $\\boxed{62},$ so this is the smallest possible average."
-}

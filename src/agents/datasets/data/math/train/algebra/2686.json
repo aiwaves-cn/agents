@@ -1,6 +1,0 @@
-{
-    "problem": "Lauren solved the equation $|x-5| = 2$. Meanwhile Jane solved an equation of the form $x^2+ bx + c = 0$ that had the same two solutions for $x$ as Lauren's equation. What is the ordered pair $(b, c)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "To start, we solve Lauren's equation.  If $x-5$ is positive, then: $$|x-5|=x-5=2$$ $$x=7$$ On the other hand, if $x-5$ is negative, then: $$|x-5|=5-x=2$$ $$x=3$$ Jane's quadratic equation must have roots of 7 and 3.  In factored form , this quadratic will look like: $$(x-3)(x-7)=0$$ Expanding, we find Jane's equation is: $$x^2-10x+21=0$$ The ordered pair is $\\boxed{(-10,21)}$."
-}

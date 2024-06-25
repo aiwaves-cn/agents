@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest real number $x$ such that\n\\[\\frac{\\lfloor x \\rfloor}{x} = \\frac{9}{10}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can write $9x = 10 \\lfloor x \\rfloor.$  Since $x = \\lfloor x \\rfloor + \\{x\\},$\n\\[9 \\lfloor x \\rfloor + 9 \\{x\\} = 10 \\lfloor x \\rfloor.\\]Then $9 \\{x\\} = \\lfloor x \\rfloor.$ Since $\\{x\\} < 1,$ $\\lfloor x \\rfloor = 9 \\{x\\} < 9.$   Thus, $\\lfloor x \\rfloor \\le 8.$\n\nIf $\\lfloor x \\rfloor = 8,$ then $\\{x\\} = \\frac{8}{9},$ so the largest possible value of $x$ is $8 + \\frac{8}{9} = \\boxed{\\frac{80}{9}}.$"
-}

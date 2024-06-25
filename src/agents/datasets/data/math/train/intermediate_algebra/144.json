@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ $z$ be real numbers such that $4x^2 + y^2 + 16z^2 = 1.$  Find the maximum value of\n\\[7x + 2y + 8z.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz\n\\[\\left( \\frac{49}{4} + 4 + 4 \\right) (4x^2 + y^2 + 16z^2) \\ge (7x + 2y + 8z)^2.\\]Since $4x^2 + y^2 + 16z^2 = 1,$\n\\[(7x + 2y + 8z)^2 \\le \\frac{81}{4}.\\]Hence, $7x + 2y + 8z \\le \\frac{9}{2}.$\n\nFor equality to occur, we must have $\\frac{2x}{7/2} = \\frac{y}{2} = \\frac{4z}{2}$ and $4x^2 + y^2 + 16z^2 = 1.$  We can solve, to find $x = \\frac{7}{18},$ $y = \\frac{4}{9},$ and $z = \\frac{1}{9},$ so the maximum value of $7x + 2y + 8z$ is $\\boxed{\\frac{9}{2}}.$"
-}

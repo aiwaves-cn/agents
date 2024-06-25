@@ -1,6 +1,0 @@
-{
-    "problem": "Find the distance between the foci of the ellipse\n\\[\\frac{x^2}{20} + \\frac{y^2}{4} = 7.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "First, we divide both sides by 7, to get\n\\[\\frac{x^2}{140} + \\frac{y^2}{28} = 1.\\]Thus, $a^2 = 140$ and $b^2 = 28,$ so $c^2 = a^2 - b^2 = 140 - 28 = 112.$  Thus, $c = \\sqrt{112} = 4 \\sqrt{7},$ so the distance between the foci is $2c = \\boxed{8 \\sqrt{7}}.$"
-}

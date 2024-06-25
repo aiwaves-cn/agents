@@ -1,6 +1,0 @@
-{
-    "problem": "For each pair of real numbers $a \\ne b$, define the operation $\\star$ as \\[\n(a \\star b) = \\frac{a + b}{a - b}.\n\\]What is the value of $((1 \\star 2) \\star 3)$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "First we have \\[\n(1 \\star 2) = \\frac{1 + 2}{1 - 2} = -3.\n\\]Then \\[\n((1 \\star 2) \\star 3) = (-3 \\star 3) = \\frac{-3 + 3}{-3 - 3} = \\frac{0}{-6} = \\boxed{0}.\n\\]"
-}

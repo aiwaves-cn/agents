@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. Madoff invests 1000 dollars in a fund that compounds annually at a constant interest rate.  After three years, his investment has grown to 1225 dollars.  What is the annual interest rate, as a percentage?  (Round your answer to the nearest integer.)",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $r$ be the annual interest rate.  Then after three years, Mr. Madoff's investment is $1000 \\cdot \\left( 1 + \\frac{r}{100} \\right)^3$, so \\[1000 \\cdot \\left( 1 + \\frac{r}{100} \\right)^3 = 1225.\\]Then \\[\\left( 1 + \\frac{r}{100} \\right)^3 = 1.225,\\]so \\[1 + \\frac{r}{100} = \\sqrt[3]{1.225} = 1.069987 \\dots,\\]which means $r = \\boxed{7}$, to the nearest integer."
-}

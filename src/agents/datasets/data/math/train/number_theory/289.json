@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n$ be the integer such that $0 \\le n < 31$ and $3n \\equiv 1 \\pmod{31}$. What is $\\left(2^n\\right)^3 - 2 \\pmod{31}$?\n\nExpress your answer as an integer from $0$ to $30$, inclusive.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $21 \\cdot 3 = 63 = 2 \\cdot 31 + 1$, it follows that $21$ is the modular inverse of $3$, modulo $31$. Thus, $2^n \\equiv 2^{21} \\pmod{31}$. After computing some powers of $2$, we notice that $2^5 \\equiv 1 \\pmod{31}$, so $2^{21} \\equiv 2 \\cdot \\left(2^{5}\\right)^{4} \\equiv 2 \\pmod{31}$. Thus, $\\left(2^{21}\\right)^3 \\equiv 2^3 \\equiv 8 \\pmod{31}$, and $$\\left(2^{21}\\right)^3 - 2 \\equiv 8 - 2 \\equiv \\boxed{6} \\pmod{31}$$Notice that this problem implies that $\\left(a^{3^{-1}}\\right)^3 \\not\\equiv a \\pmod{p}$ in general, so that certain properties of modular inverses do not extend to exponentiation (for that, one needs to turn to Fermat's Little Theorem or other related theorems)."
-}

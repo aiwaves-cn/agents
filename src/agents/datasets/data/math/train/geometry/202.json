@@ -1,6 +1,0 @@
-{
-    "problem": "The area of the base of a hemisphere is $100\\pi$. What is the total surface area of the hemisphere? Express your answer in terms of $\\pi$.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let the hemisphere's radius be $r$.  The hemisphere's base is a circle with radius $r$; thus, we have $\\pi r^2 = 100\\pi$.  Taking the positive solution for $r$ yields $r = 10$.  The surface area of the curved part of the hemisphere is half the surface area of a sphere with radius 10, which is $\\frac{1}{2} \\cdot 4\\pi (10^2) = 200\\pi$.  The total surface area of the hemisphere is the sum of this curved surface area and the base area, which is $200\\pi+100\\pi=\\boxed{300\\pi}$."
-}

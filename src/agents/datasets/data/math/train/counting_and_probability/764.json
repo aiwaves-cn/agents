@@ -1,6 +1,0 @@
-{
-    "problem": "What is the probability that the square root of a randomly selected two-digit whole number is less than eight? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 90 choices for a two-digit positive integer. Of these, all of the integers $n<64$ satisfy $\\sqrt{n} < 8$. So, $n$ can be chosen from the set $\\{ 10, 11, 12, \\ldots , 63\\}$ which has 54 members. So the probability is $\\frac{54}{90} = \\boxed{\\frac{3}{5}}$."
-}

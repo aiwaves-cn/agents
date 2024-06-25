@@ -1,6 +1,0 @@
-{
-    "problem": "Find the greatest integer less than $10.3^3$ without using a calculator.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "In general, \\[(a+b)^3=a^3+3a^2b+3ab^2+b^3\\]\n\nConsider the decimal part separately, so we're trying to find the greatest integer less than $(10+0.3)^3$. By the Binomial Theorem in the above expansion, this is equal to  \\[10^3+3(10^2)(.3)+3(10)(.3^2)+.3^3\\] Expanding these terms, we have that $(10.3)^3=1000+90+2.7+.027$. From this, we find that the greatest integer less than this quantity is $\\boxed{1092}$."
-}

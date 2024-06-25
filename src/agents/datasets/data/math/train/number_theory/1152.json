@@ -1,6 +1,0 @@
-{
-    "problem": "Find the $1314^{\\text{th}}$ digit past the decimal point in the decimal expansion of $\\dfrac{5}{14}$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "First, we find the repeating decimal expansion of 5/14: $$ \\frac{5}{14} = \\frac{5}{5} \\cdot \\frac{5}{14} = \\frac{25}{70} = \\frac{25}{7} \\cdot \\frac{1}{10} = (3.\\overline{571428})(0.1) = 0.3\\overline{571428}. $$The $1314^{\\text{th}}$ digit after the decimal point is the $1313^{\\text{th}}$ digit in the 6-digit repeating block 5-7-1-4-2-8.  Since $1313 \\div 6$ leaves a remainder of 5, our answer is the $5^{\\text{th}}$ digit in the 6-digit block, which is $\\boxed{2}$."
-}

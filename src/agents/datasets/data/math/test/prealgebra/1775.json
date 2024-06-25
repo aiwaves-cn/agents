@@ -1,6 +1,0 @@
-{
-    "problem": "An $\\textit{emirp}$ is an integer that, when its digits are written in reverse order, is a prime number. For example, 73 is an emirp because 37 is prime. What is the smallest two-digit prime number that is NOT an emirp?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Right away we note that if a prime number begins with 2, then it is not an emirp because the number obtained by reversing its digit is even. Thus, we know 23 is not an emirp. Let's check the smaller two-digit primes: 11, 13, 17, 19. 11 is clearly an emirp. Since 31 and 71 are prime, 13 and 17 are emirps as well. $\\boxed{19}$, however, is not an emirp since $91=7\\cdot13$. Therefore, 19 is the smallest two-digit prime that is not an emirp."
-}

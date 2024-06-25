@@ -1,6 +1,0 @@
-{
-    "problem": "A ball travels on a parabolic path in which the height (in feet) is given by the expression $-25t^2+75t+24$, where $t$ is the time after launch. At what time is the height of the ball at its maximum?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, we find the maximum height of the ball by maximizing the expression $-25t^2+75t+24$. We will do this by completing the square. Factoring a $-25$ from the first two terms, we have  \\[-25t^2+75t+24=-25(t^2-3t)+24\\]To complete the square, we add and subtract $\\left( -\\frac{3}{2}\\right)^2=\\frac{9}{4}$ inside the parentheses to get \\begin{align*}\n-25(t^2-3t)+24&=-25\\left(t^2-3t+\\frac{9}{4}-\\frac{9}{4}\\right)+24\\\\\n&=-25\\left(\\left(t-\\frac{3}{2}\\right)^2-\\frac{9}{4}\\right)+24\\\\\n&=-25\\left(t-\\frac{3}{2}\\right)^2+\\frac{225}{4}+\\frac{96}{4}\\\\\n&=-25\\left(t-\\frac{3}{2}\\right)^2+\\frac{321}{4}\n\\end{align*}Since $-25\\left(t-\\frac{3}{2}\\right)^2$ is always non-positive, the maximum value of the expression is achieved when $-25\\left(t-\\frac{3}{2}\\right)^2=0$. This happens when $t-\\frac{3}{2}=0$. Therefore the height of the ball is at its maximum when $t=\\boxed{\\frac{3}{2}}$."
-}

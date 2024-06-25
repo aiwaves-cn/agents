@@ -1,6 +1,0 @@
-{
-    "problem": "Find the equation of the vertical asymptote of the graph of $\\frac{3x^2+16x+5}{2x^2+7x-c}$, if the graph has a hole at $x=-5$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor the numerator to get $$\\frac{3x^2+16x+5}{2x^2+7x-c} = \\frac{(x+5)(3x+1)}{2x^2+7x-c}.$$Since there is a hole at $x=-5$ (rather than an asymptote), we must have a factor of $x+5$ in the denominator that cancels out with the corresponding factor in the numerator. So by the Factor theorem,\n$$2(-5)^2+7(-5)-c = 0$$which we can solve for $c$ to get $c = 15$.\nThen the denominator is $2x^2+7x-15$ which can be factored as $(2x-3)(x+5)$. Hence, the vertical asymptote is given by $\\boxed{x = \\frac{3}{2}}$."
-}

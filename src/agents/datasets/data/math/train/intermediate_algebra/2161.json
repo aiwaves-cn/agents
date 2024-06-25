@@ -1,6 +1,0 @@
-{
-    "problem": "Find $A^2$, where $A$ is the sum of the absolute values of all roots of the following equation:\n\\[x = \\sqrt{19} + \\frac{91}{{\\sqrt{19}+\\frac{91}{{\\sqrt{19}+\\frac{91}{{\\sqrt{19}+\\frac{91}{{\\sqrt{19}+\\frac{91}{x}}}}}}}}}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $f(x) = \\sqrt{19} + \\frac{91}{x}.$ Then the given equation says \\[x = f(f(f(f(f(x))))). \\quad (*)\\]Notice that any root of $x = f(x)$ is also a root of $(*),$ since if $x = f(x),$ then replacing $x$ with $f(x)$ four times gives \\[x = f(x) = f(f(x)) = f(f(f(x))) = f(f(f(f(x)))) = f(f(f(f(f(x))))).\\]In fact, the roots of $x = f(x)$ are the only roots of $(*).$ This is because, upon expanding both equations, they become quadratics in $x,$ so they both have exactly two roots for $x.$\n\nThus, it suffices to solve $x = f(x),$ or \\[x = \\sqrt{19} + \\frac{91}{x} \\implies x^2 - x\\sqrt{19} - 91 = 0.\\]By the quadratic formula, we have \\[x = \\frac{\\sqrt{19}\\pm \\sqrt{19 + 4 \\cdot 91} }{2} = \\frac{\\sqrt{19} \\pm\\sqrt{383}}{2}.\\]The root $\\frac{\\sqrt{19}-\\sqrt{383}}{2}$ is negative (while the other root is positive), so the sum of the absolute values of the roots is \\[A = \\frac{\\sqrt{19}+\\sqrt{383}}{2}-\\frac{\\sqrt{19}-\\sqrt{383}}{2} = \\sqrt{383}.\\]The answer is $A^2 = \\boxed{383}.$"
-}

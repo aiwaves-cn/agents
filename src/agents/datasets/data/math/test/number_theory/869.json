@@ -1,6 +1,0 @@
-{
-    "problem": "How many three-digit numbers are divisible by 13?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "The smallest three-digit number divisible by 13 is $13\\times 8=104$, so there are seven two-digit multiples of 13. The greatest three-digit number divisible by 13 is $13\\times 76=988$. Therefore, there are $76-7=\\boxed{69}$ three-digit numbers divisible by 13.\n\n\\[ OR \\]Because the integer part of $\\frac{999}{13}$ is 76, there are 76 multiples of 13 less than or equal to 999. Because the integer part of $\\frac{99}{13}$ is 7, there are 7 multiples of 13 less than or equal to 99. That means there are $76-7=\\boxed{69}$ multiples of 13 between 100 and 999."
-}

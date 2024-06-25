@@ -1,6 +1,0 @@
-{
-    "problem": "The perimeter of $\\triangle ABC$ is $32.$ If $\\angle ABC=\\angle ACB$ and $BC=12,$ what is the length of $AB?$\n\n[asy]\ndraw((0,0)--(12,0)--(6,10)--cycle,black+linewidth(1));\nMarkAngle((12,0),(0,0),(6,10),1,black+linewidth(1));\nMarkAngle((6,10),(12,0),(0,0),1,black+linewidth(1));\nlabel(\"$A$\",(6,10),N);\nlabel(\"$B$\",(0,0),W);\nlabel(\"$C$\",(12,0),E);\nlabel(\"12\",(0,0)--(12,0),S);\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $\\angle ABC=\\angle ACB,$ then $\\triangle ABC$ is isosceles and $AB=AC.$ Given that  $\\triangle ABC$ has a perimeter of $32,$ $AB+AC+12=32$ or $AB+AC=20.$ But $AB=AC,$ so $2AB=20$ or $AB=\\boxed{10}.$"
-}

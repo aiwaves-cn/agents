@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\dbinom{9}{2}\\times \\dbinom{7}{2}$.",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "\\begin{align*} \n\\dbinom{9}{2}\\times \\dbinom{7}{2} &= \\dfrac{9!}{2!7!}\\times \\dfrac{7!}{2!5!} \\\\\n&= \\dfrac{9!}{2!2!5!} \\\\\n&= \\dfrac{9\\times 8\\times 7\\times 6}{(2\\times 1)\\times (2\\times 1)} \\\\\n&= 9\\times 2\\times 7\\times 6 \\\\\n&= \\boxed{756}.\n\\end{align*}"
-}

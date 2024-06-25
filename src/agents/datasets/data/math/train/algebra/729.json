@@ -1,6 +1,0 @@
-{
-    "problem": "The ratio of the areas of two squares is $\\frac{192}{80}$. After rationalizing the denominator, the ratio of their side lengths can be expressed in the simplified form $\\frac{a\\sqrt{b}}{c}$ where $a$, $b$, and $c$ are integers. What is the value of the sum $a+b+c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We start off by simplifying the ratio $\\frac{192}{80}$ to $\\frac{12}{5}$. The area of a square equals the side length squared, so we can get the ratio of sidelengths by taking the square root of the ratio of areas: $$\\sqrt{\\frac{12}{5}}=\\frac{\\sqrt{12}}{\\sqrt{5}}=\\frac{2\\sqrt{3}}{\\sqrt{5}}=\\frac{2\\sqrt{3}}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}=\\frac{2\\sqrt{15}}{5}.$$So, our answer is $2+15+5=\\boxed{22}$. If you started off by taking the square root of $\\frac{192}{80}$ directly without simplifying it first, you still get the same answer. $$\\sqrt{\\frac{192}{80}}=\\frac{\\sqrt{192}}{\\sqrt{80}}=\\frac{8\\sqrt{3}}{4\\sqrt{5}}=\\frac{2\\sqrt{3}}{\\sqrt{5}}=\\frac{2\\sqrt{15}}{5}.$$"
-}

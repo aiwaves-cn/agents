@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ and $b$ are real numbers, $a^2b^3=\\frac{32}{27}$, and $\\frac{a}{b^3}=\\frac{27}{4}$, what is $a+b$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Rearranging the second equation, we have that $b^3=\\frac{4}{27}a$. If we substitute this into the original equation, we get $\\frac{4}{27}a^3=\\frac{32}{27}$; after multiplying each side by $\\frac{27}{4}$ and taking the cube root, we see that $a=2$. Substituting $a$ into the first equation, we get that $b^3=\\frac{8}{27}$ or $b=\\frac23$. Thus, $a+b=2+\\frac23=\\boxed{\\frac83}$."
-}

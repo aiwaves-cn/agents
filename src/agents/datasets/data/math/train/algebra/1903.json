@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\log_9 (x-2)=\\frac{1}{2}$, find $\\log_{625} x$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "In order to find $\\log_{625} x$, we must first find $x$. We begin by writing $\\log_9 (x-2)=\\frac{1}{2}$ in exponential form, which gives us $9^{\\frac12}=x-2$. Solving for $x$, we find that $x=9^{\\frac12}+2=3+2=5$. After plugging this value of $x$ into the second expression, the final step is to find $\\log_{625} 5$. Since we know that $625=5^4$ or $625^{\\frac14}=5$, $\\log_{625} 5=\\boxed{\\frac14}$."
-}

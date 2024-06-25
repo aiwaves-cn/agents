@@ -1,6 +1,0 @@
-{
-    "problem": "A portion of the graph of $f(x)=ax^3+bx^2+cx+d$ is shown below.\n\nWhat is the value of $8a-4b+2c-d$?\n\n[asy]\nimport graph; size(7cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-3.25,xmax=4.25,ymin=-9.25,ymax=4.25;\n\npen cqcqcq=rgb(0.75,0.75,0.75);\n\n/*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(\"2 2\"); real gx=1,gy=1;\nfor(real i=ceil(xmin/gx)*gx;i<=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i<=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);\n\nLabel laxis; laxis.p=fontsize(10);\n\nxaxis(\"\",xmin,xmax,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true); yaxis(\"\",ymin,ymax,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true);\nreal f1(real x){return x*(x-1)*(x-2)/8;} draw(graph(f1,-3.25,4.25),linewidth(0.75));\nclip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);\n\n[/asy]",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Note that $f(-2) = a(-8)+b(4)+c(-2)+d$. Therefore, $$8a-4b+2c-d = -f(-2).$$Since the point $(-2,-3)$ is on the graph of $f(x)$, we infer that $$-f(-2) = -(-3) = \\boxed{3}.$$"
-}

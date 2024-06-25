@@ -1,6 +1,0 @@
-{
-    "problem": "The combined weight of three basset hounds is $185$ pounds. The two smaller dogs weigh the same. The difference between the larger weight and the smaller weight is $20$ pounds. How many pounds does the largest dog weigh?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let the three basset hounds weigh $a$, $a$, and $b$ pounds, where $a < b$. We have the two equations \\begin{align*}\n2a+b&=185\\\\\nb-a&=20\n\\end{align*} From the second equation, we have $a=b-20$. Substituting this in to the first equation to eliminate $a$, we have $2(b-20)+b=185 \\Rightarrow b=75$. Thus, the largest dog weighs $\\boxed{75}$ pounds."
-}

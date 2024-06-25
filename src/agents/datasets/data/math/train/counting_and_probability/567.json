@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangle has a perimeter of 64 inches and each side has an integer length. How many non-congruent rectangles meet these criteria?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Call the height $h$ and the width $w$. We want to find the number of solutions to $2(w+h)=64$ or $w+h=32$. The solutions to this are  \\[\n\\{(1,31),(2,30),\\ldots,(16,16),\\ldots,(31,1)\\}.\n\\] There are 31 solutions to this, but we are double-counting all the rectangles for which $w \\neq h$. There are 30 of these, so the total number of rectangles is $\\frac{30}{2}+1=\\boxed{16}$ rectangles."
-}

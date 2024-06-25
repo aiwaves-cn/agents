@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of the greatest common divisor and the least common multiple of $100$ and $120.$",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "First we find the prime factorization of each number: $$100=10\\times 10=(2\\times 5)\\times(2\\times 5)=2^2\\times 5^2$$ and $$120=10\\times 12=(2\\times 5)\\times(2\\times 6)=(2\\times 5)\\times(2\\times(2\\times 3))=2^3\\times 3\\times 5.$$ The common factors are $2^2$ and $5,$ so $\\gcd(100,120) = 2^2\\times 5=20.$\n\nThe least common multiple is formed by multiplying together the highest powers of all primes occurring in the factorization of either $100$ or $120:$ $$\\text{lcm}(100,120) = 2^3\\times 3\\times 5^2 = 8\\times 3\\times 25 = 24\\times 25 = 600.$$ Thus, the product of the $\\gcd$ and the $\\text{lcm}$ is $20\\times 600=\\boxed{12000}.$\n\n(Notice that this product is equal to the product of the original two numbers, $100$ and $120.$ Is that just a coincidence?)"
-}

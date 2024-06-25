@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $$1 + 2 + 3 - 4 + 5 + 6$$is equivalent to 13. If we add parentheses in various locations, we can change this value. For example, $1+2+3-(4+5)+6=1+2+3-9+6=6-9+6=3$. If we only add parentheses (and not rearrange the order of the terms), what is the minimum possible value this expression can obtain? (For the purposes of this problem, we cannot change addition or subtraction into multiplication. For example, $ (1+2+3)(-4)+5+6 $ is not a valid placement of parentheses.)\n\nEnter your answer as a single value.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Because every term before the subtraction sign is added, and addition is associative (parentheses don't matter) placing parentheses on them will not change their value. However, subtraction is not associative. Since we are trying to minimize this expression's value, we want to subtract as much as possible. The expression is thus minimized when parentheses are placed in the following location: $1+2+3-(4+5+6)$. This simplifies to $1+2+3-15 = 6-15=\\boxed{-9}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A regular hexagon is inscribed in a circle of radius 2 units. In square units, what is the area of the hexagon? Express your answer in simplest radical form.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Connect opposite pairs of vertices of the regular hexagon with line segments as shown.  Since each angle of a regular hexagon measures 120 degrees, the six triangles produced are equilateral.  The diameter of the circle circumscribed around the hexagon is equal to twice the side length of each of the triangles.  Therefore, each triangle has side length 2 units.  The area of an equilateral triangle with side length $s$ units is $s^2\\sqrt{3}/4$ square units.  (To show this, divide the equilateral triangle into two smaller 30-60-90 triangles.)  Substituting $s=2$, we find that the area of each triangle is $\\sqrt{3}$ square units.  Therefore, area of the hexagon is $\\boxed{6\\sqrt{3}}$ square units.\n\n[asy]\nsize(3.5cm);\ndotfactor=4;\nint i;\n\nfor(i=0;i<=5;i=i+1)\n\n{\n\ndot((cos(2*pi*i/6),sin(2*pi*i/6)));\n\ndraw((cos(2*pi*i/6),sin(2*pi*i/6))--(cos(2*pi*(i+1)/6),sin(2*pi*(i+1)/6)));\n\ndraw((0,0)--(cos(2*pi*i/6),sin(2*pi*i/6)));\n\n}\ndraw(circle((0,0),1));[/asy]"
-}

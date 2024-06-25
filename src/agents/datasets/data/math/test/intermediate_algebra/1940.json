@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the value of the expression\n\\[ 2009^4 - 4 \\times 2007^4 + 6 \\times 2005^4 - 4 \\times 2003^4 + 2001^4 \\, .\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = 2005$. Then the expression becomes\n$$(x+4)^4 - 4(x+2)^4 + 6x^4 - 4(x-2)^4 + (x-4)^4$$We use the Binomial theorem (or Pascal's triangle) to expand the expression and get\n$$\\begin{aligned} &x^4 + 4x^3\\cdot4 + 6x^24^2+4x\\cdot4^3 +4^4 \\\\\n&-4(x^4 + 4x^3\\cdot2 + 6x^2\\cdot2^2 + 4x\\cdot2^3 + 2^4) \\\\\n&+ 6x^4\\\\\n& - 4 (x^4 + 4x^3\\cdot2 + 6x^2\\cdot2^2 + 4x\\cdot2^3 + 2^4) \\\\\n&+ x^4 + 4x^3\\cdot4 + 6x^24^2+4x\\cdot4^3 +4^4. \\end{aligned}$$Many of these terms cancel out! After simplifying, we are left with\n$$4^4 - 4\\cdot 2^4 - 4\\cdot 2^4 + 4^4 =2\\cdot4^3 (4-1) = 128 \\cdot 3 = \\boxed{384}$$"
-}

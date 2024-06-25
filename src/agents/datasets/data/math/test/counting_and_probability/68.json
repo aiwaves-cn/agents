@@ -1,6 +1,0 @@
-{
-    "problem": "I want to read 4 books over the next month.  My bookshelf has 12 different books.  In how many ways can I choose which books to read over the next month, without regard to the order that I read them?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Order does not matter, so it is a combination. Choosing $4$ from $12$ is $\\binom{12}{4}=\\boxed{495}.$"
-}

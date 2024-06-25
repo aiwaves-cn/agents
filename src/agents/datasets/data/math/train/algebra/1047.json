@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $(2x - 5)(x + 7) - (x + 5)(2x - 1)$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We expand each product separately: \\begin{align*}\n(2x-5)(x+7) &= 2x(x) + 2x(7) -5(x) -5(7)\\\\\n&=2x^2 +14x - 5x -35\\\\\n&= 2x^2 +9x - 35\n\\end{align*}and \\begin{align*}\n(x+5)(2x-1) &=x(2x) + x(-1) +5(2x) + 5(-1)\\\\\n&=2x^2 -x + 10x -5\\\\\n&=2x^2 +9x - 5.\n\\end{align*}So, we have  \\begin{align*}&\\ \\ \\ \\ (2x-5)(x+7) - (x+5)(2x-1) \\\\&= 2x^2+9x -35 - (2x^2 +9x -5) = \\boxed{-30}.\\end{align*}"
-}

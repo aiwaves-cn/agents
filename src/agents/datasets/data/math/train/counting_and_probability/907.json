@@ -1,6 +1,0 @@
-{
-    "problem": "A point is chosen at random on the number line between 0 and 1, and the point is colored green. Then, another point is chosen at random on the number line between 0 and 1, and this point is colored purple. What is the probability that the number of the purple point is greater than the number of the green point, but less than twice the number of the green point?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We let the $x$-axis represent the number of the green point and the $y$-axis represent the number of the purple point, and we shade in the region where the number of the purple point is between the number of the green point and twice the number of the green point.\n\n[asy]\ndraw((0,0)--(1,0), Arrow);\ndraw((0,0)--(0,1), Arrow);\nlabel(\"(0,0)\", (0,0), SW);\nlabel(\"(0,1)\", (0,1), W);\nlabel(\"(1,0)\", (1,0), S);\n\nfill((0,0)--(1,1)--(.5,1)--cycle, gray(.7));\ndraw((.5,1)--(.5,.5));\n[/asy]\n\nThe shaded region can be divided into two triangles, each with base $\\frac{1}{2}$ and height $\\frac{1}{2}$. The total area of the shaded region is then $\\frac{1}{4}$. Since the area of the whole square is 1, the probability that a randomly chosen point lies in the shaded region is $\\boxed{\\frac{1}{4}}$."
-}

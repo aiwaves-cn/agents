@@ -1,6 +1,0 @@
-{
-    "problem": "If each of the variables represents a different digit, what is the value of $a+b+c+d$?\n\n[asy]\nlabel(\"$a$\",(1,0),E);\nlabel(\"$b$\",(2,0),E);\nlabel(\"$c$\",(3,0),E);\nlabel(\"$d$\",(1,-1),E);\nlabel(\"$c$\",(2,-1),E);\nlabel(\"$a$\",(3,-1),E);\nlabel(\"+\",(-2,-1),E);\ndraw((-2.1,-1.4)--(4.1,-1.4),linewidth(0.5));\nlabel(\"1\",(0,-2),E);\nfor (int i =0; i<3; ++i) {\nlabel(\"0\",(1+i,-2),E);\n}\n[/asy]",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let's perform the addition one step at a time. The first step is adding $c$ and $a$ in the right column. Since $c$ and $a$ can't both be 0 and $c+a$ is at most $9+8=17$, we know that $c+a=10$. The one carries over.\n\nThe second step is adding $b$ and $c$ in the middle column. Similarly, we know that $b+c+1=10$ (the one is from the carrying over), so $b+c=9$. The one carries over.\n\nThe third step is adding $a$ and $d$ in the left column. Similarly, we know that $a+d+1=10$ so $a+d=9$.\n\nThus, we have the three equations \\begin{align*}\na+c&=10\\\\\nb+c&=9\\\\\na+d&=9\n\\end{align*} Adding the last two equations gives $b+c+a+d = 9 + 9 =18$, so our answer is $\\boxed{18}$. This corresponds to $(a,b,c,d)\\Rightarrow (4,3,6,5)$."
-}

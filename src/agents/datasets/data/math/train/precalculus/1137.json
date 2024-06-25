@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ the side lengths $a,$ $b,$ and $c$ satisfy $a + 2b + 2c = a^2$ and $a + 2b - 2c = -3.$  Find the largest angle of the triangle, in degrees.\n\nNote: $a$ is the side length opposite $\\angle A,$ etc.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Multiplying the given equations, we get\n\\[(a + 2b + 2c)(a + 2b - 2c) = -3a^2.\\]We can write the left-hand side as $((a + 2b) + 2c)((a + 2b) - 2c),$ so by difference of squares,\n\\[(a + 2b)^2 - (2c)^2 = -3a^2.\\]Then $a^2 + 4ab + 4b^2 - 4c^2 = -3a^2,$ so\n\\[4a^2 + 4ab + 4b^2 - 4c^2 = 0,\\]or $a^2 + ab + b^2 = c^2.$\n\nThen by the Law of Cosines,\n\\[\\cos C = \\frac{a^2 + b^2 - c^2}{2ab} = \\frac{-ab}{2ab} = -\\frac{1}{2}.\\]which means $C = \\boxed{120^\\circ}.$  This clearly must be the largest angle in triangle $ABC.$"
-}

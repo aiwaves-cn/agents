@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer which when divided by 5 gives a remainder of 4, when divided by 6 gives a remainder of 5, when divided by 7 gives a remainder of 6, when divided by 8 gives a remainder of 7, when divided by 9 gives a remainder of 8, and when divided by 10 gives a remainder of 9?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Suppose that $N$ is a positive integer satisfying all the given conditions. Note that since $N$ gives a remainder of 4 when divided by 5, $N+1$ must be divisible by 5. Similarly, $N+1$ is also divisible by 6, 7, 8, 9, and 10. Thus the least possible value for $N+1$ is the least common multiple of 6, 7, 8, 9, and 10. Prime factorizing these numbers, we find that their least common multiple is $2^3\\cdot 3^2\\cdot 5\\cdot 7 = 2520$. Thus the least possible value for $N$ is $\\boxed{2519}$."
-}

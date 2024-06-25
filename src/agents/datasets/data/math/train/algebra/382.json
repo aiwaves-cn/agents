@@ -1,6 +1,0 @@
-{
-    "problem": "How many square units are in the area of the triangle whose vertices are the $x$ and $y$ intercepts of the curve $y = (x-3)^2 (x+2)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, we need to find where this curve intersects the $x$ and $y$ axes.  If $y=0$, then $(x-3)^2(x+2)=0$, which has solutions of $x=3$ and $x=-2$.  If $x=0$, then $y=(-3)^2(2)=18$.  So, the curve has two $x$-intercepts and one $y$-intercept.  The length of the base along the $x$-axis is $3-(-2)=5$.  The height from this base is equal to the $y$-intercept, 18.  The area of the triangle is $\\frac{1}{2}\\cdot 5\\cdot 18=\\boxed{45}$."
-}

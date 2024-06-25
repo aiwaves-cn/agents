@@ -1,6 +1,0 @@
-{
-    "problem": "For how many values of $k$ is $12^{12}$ the least common multiple of the positive integers $6^6$, $8^8$, and $k$?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "It is evident that $k$ has only 2s and 3s in its prime factorization, or $k = 2^a3^b$.\n$6^6 = 2^6\\cdot3^6$\n$8^8 = 2^{24}$\n$12^{12} = 2^{24}\\cdot3^{12}$\nThe LCM of any numbers an be found by writing out their factorizations and taking the greatest power for each factor. $[6^6,8^8] = 2^{24}3^6$. Therefore $12^{12} = 2^{24}\\cdot3^{12} = [2^{24}3^6,2^a3^b] = 2^{\\max(24,a)}3^{\\max(6,b)}$, and $b = 12$. Since $0 \\le a \\le 24$, there are $\\boxed{25}$ values of $k$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the projection of the vector $\\begin{pmatrix} 3 \\\\ 0 \\\\ -2 \\end{pmatrix}$ onto the line\n\\[\\frac{x}{2} = y = \\frac{z}{-1}.\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The direction vector of the line is $\\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix}.$  The projection of $\\begin{pmatrix} 3 \\\\ 0 \\\\ -2 \\end{pmatrix}$ onto the line is then\n\\[\\frac{\\begin{pmatrix} 3 \\\\ 0 \\\\ -2 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix}}{\\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix}} \\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix} = \\frac{8}{6} \\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 8/3 \\\\ 4/3 \\\\ -4/3 \\end{pmatrix}}.\\]"
-}

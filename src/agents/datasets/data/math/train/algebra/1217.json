@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $x^2+12x=73$ has two solutions. The positive solution has the form $\\sqrt{a}-b$ for positive natural numbers $a$ and $b$. What is $a+b$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Completing the square, we add $(12/2)^2=36$ to both sides of the equation to get $x^2+12x+36=109 \\Rightarrow (x+6)^2=109$. Taking the square root of both sides, we get $x+6=\\sqrt{109}$ (we take the positive square root because we want the positive solution), or $x=\\sqrt{109}-6$. Thus, $a=109$ and $b=6$, so $a+b=\\boxed{115}$."
-}

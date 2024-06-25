@@ -1,6 +1,0 @@
-{
-    "problem": "The solutions to $z^4 = -16i$ can be expressed in the form\n\\begin{align*}\nz_1 &= r_1 (\\cos \\theta_1 + i \\sin \\theta_1), \\\\\nz_2 &= r_2 (\\cos \\theta_2 + i \\sin \\theta_2), \\\\\nz_3 &= r_3 (\\cos \\theta_3 + i \\sin \\theta_3), \\\\\nz_4 &= r_4 (\\cos \\theta_4 + i \\sin \\theta_4),\n\\end{align*}where $r_k > 0$ and $0^\\circ \\le \\theta_k < 360^\\circ.$  Find $\\theta_1 + \\theta_2 + \\theta_3 + \\theta_4,$ in degrees.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "First, we can write $z^4 = -16i = 16 \\operatorname{cis} 270^\\circ.$  Therefore, the four roots are\n\\begin{align*}\n&2 \\operatorname{cis} 67.5^\\circ, \\\\\n&2 \\operatorname{cis} (67.5^\\circ + 90^\\circ) = 2 \\operatorname{cis} 157.5^\\circ, \\\\\n&2 \\operatorname{cis} (67.5^\\circ + 180^\\circ) = 2 \\operatorname{cis} 247.5^\\circ, \\\\\n&2 \\operatorname{cis} (67.5^\\circ + 270^\\circ) = 2 \\operatorname{cis} 337.5^\\circ.\n\\end{align*}Then $\\theta_1 + \\theta_2 + \\theta_3 + \\theta_4 = 67.5^\\circ + 157.5^\\circ + 247.5^\\circ + 337.5^\\circ = \\boxed{810^\\circ}.$"
-}

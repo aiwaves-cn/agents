@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = x - 3$ and $q(x) = bx +1$.  If $f(q(1)) = -3$, what is $b$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We have $q(1) = b\\cdot 1 + 1 = b+1$, so $f(q(1)) = f(b+1)$. Applying the definition of $f$, we have $f(q(1)) = f(b+1) = (b+1) - 3 = b-2$.  Therefore, the equation $f(q(1)) = -3$ gives us $b-2 = -3$, so $ b= \\boxed{-1}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "William Sydney Porter tried to perform the calculation $\\frac{-3+4i}{1+2i}$. However, he accidentally missed the minus sign, finding $\\frac{3+4i}{1+2i}=\\frac{11}{5}-\\frac{2}{5}i$. What answer should he have obtained?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "To perform division in complex numbers, we multiply both the numerator and the denominator by the conjugate of the denominator. In this case, the conjugate of $1+2i$ is $1-2i$. Multiplying: \\begin{align*}\n\\frac{-3+4i}{1+2i}&=\\frac{(-3+4i)(1-2i)}{(1+2i)(1-2i)}\\\\\n&=\\frac{-3+4i+6i-8i^2}{1+2i-2i-4i^2}\\\\\n&=\\frac{5+10i}{5}\\\\\n&=\\boxed{1+2i}\n\\end{align*}"
-}

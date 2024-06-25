@@ -1,6 +1,0 @@
-{
-    "problem": "The inhabitants of the island of Jumble use the standard Kobish alphabet ($20$ letters, A through T).  Each word in their language is $4$ letters or less, and for some reason, they insist that all words contain the letter A at least once. How many words are possible?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We consider the opposite; we try to find the number of words that do not contain A, and then subtract it from the total possible number of words. So we have a few cases to consider:\n\n$\\bullet$  One letter words: There is only $1$ one-letter word that contains A, that's A.\n\n$\\bullet$  Two letter words: There are $19\\times19=361$ words that do not contain A. There is a total of $20\\times20=400$ words, so we have $400-361=39$ words that satisfy the condition.\n\n$\\bullet$  Three letter words: There are $19\\times19\\times19=6859$ words without A, and there are $20^{3}=8000$ words available. So there are $8000-6859=1141$ words that satisfy the condition.\n\n$\\bullet$  Four letter words: Using the same idea as above, we have $20^{4}-19^{4}=29679$ words satisfying the requirement.\n\nSo this gives a total of $1+39+1141+29679=\\boxed{30860}$ words."
-}

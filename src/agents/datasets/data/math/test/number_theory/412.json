@@ -1,6 +1,0 @@
-{
-    "problem": "If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then find the remainder when $(x + 1)^2 (y + 5)^3$ is divided by 19.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then \\begin{align*}\n(x + 1)^2 (y + 5)^3 &\\equiv 5^2 \\cdot 12^3 \\\\\n&\\equiv 25 \\cdot 1728 \\\\\n&\\equiv 6 \\cdot 18 \\\\\n&\\equiv 108 \\\\\n&\\equiv \\boxed{13} \\pmod{19}.\n\\end{align*}"
-}

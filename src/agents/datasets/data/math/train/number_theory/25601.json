@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest positive integer with only even digits that is less than $10,000$ and is a multiple of $9$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can tell that the integer is a multiple of $9$ if the sum of its digits is a multiple of $9$. For the largest integer with even digits that is less than $10,\\!000$, it must have the largest even digit, $8$, in the thousands place. So we have $8\\_\\_\\_$. Notice that the maximum integer with even digits is $8888$. However, the digits must add up to a multiple of $9$, and more specifically, an even multiple of $9$ since all of the digits are even. The closest even multiples of $9$ are $18$ and $36$, but the sum of the maximum integer $8888$ is only $32$. So the sum of the digits must be $18$. We maximize the integer with $88\\_\\_$, with a sum of $16$, which leaves a sum of $2$ for the remaining digits. For the digits to be even and to maximize the integer, the tens digit must be $2$ and the units digit must be $0$. The largest integer is $\\boxed{8820}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Eight circles of diameter 1 are packed in the first quadrant of the coordinate plane as shown. Let region $\\mathcal{R}$ be the union of the eight circular regions. Line $l,$ with slope 3, divides $\\mathcal{R}$ into two regions of equal area. Line $l$'s equation can be expressed in the form $ax=by+c,$ where $a, b,$ and $c$ are positive integers whose greatest common divisor is 1. Find $a^2+b^2+c^2.$[asy] size(150);defaultpen(linewidth(0.7)); draw((6.5,0)--origin--(0,6.5), Arrows(5)); int[] array={3,3,2}; int i,j; for(i=0; i<3; i=i+1) { for(j=0; j<array[i]; j=j+1) { draw(Circle((1+2*i,1+2*j),1)); }} label(\"x\", (7,0)); label(\"y\", (0,7));[/asy]\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The line passing through the tangency point of the bottom left circle and the one to its right and through the tangency of the top circle in the middle column and the one beneath it is the line we are looking for: a line passing through the tangency of two circles cuts congruent areas, so our line cuts through the four aforementioned circles splitting into congruent areas, and there are an additional two circles on each side. The line passes through $\\left(1,\\frac 12\\right)$ and $\\left(\\frac 32,2\\right)$, which can be easily solved to be $6x = 2y + 5$. Thus, $a^2 + b^2 + c^2 = \\boxed{65}$."
-}

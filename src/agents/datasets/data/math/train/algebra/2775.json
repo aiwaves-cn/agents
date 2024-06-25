@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a \\clubsuit b = \\frac{2a}{b} \\cdot \\frac{b}{a}$. What is $(5 \\clubsuit (3 \\clubsuit 6)) \\clubsuit 1$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Looking at the definition of $a \\clubsuit b$, we see that $a \\clubsuit b = \\frac{2a}{b} \\cdot \\frac{b}{a}=\\frac{2a \\cdot b}{b \\cdot a} = \\frac{2ab}{ab}.$ Both the numerator and denominator share a common factor of ab, so $a \\clubsuit b = \\frac{2 \\cancel{ab}}{\\cancel{ab}}=2.$ Thus, regardless of what a and b are (as long as neither are zero), $a \\clubsuit b$ will always be 2. Looking at the given expression, a and b are never zero. Thus whatever the values of a and b, the expression will always evaluate to 2. Thus, the expression simplifies to $(5 \\clubsuit (3 \\clubsuit 6)) \\clubsuit 1 = (5 \\clubsuit 2) \\clubsuit 1 = 2 \\clubsuit 1 = \\boxed{2}.$"
-}

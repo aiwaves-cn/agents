@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix that corresponds to a dilation centered at the origin with scale factor $-3.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The dilation centered at the origin with scale factor $-3$ takes $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ to $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix},$ and $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ to $\\begin{pmatrix} 0 \\\\ -3 \\end{pmatrix},$ so the matrix is\n\\[\\boxed{\\begin{pmatrix} -3 & 0 \\\\ 0 & -3 \\end{pmatrix}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A = (8,0,0),$ $B = (0,-4,0),$ $C = (0,0,6),$ and $D = (0,0,0).$  Find the point $P$ such that\n\\[AP = BP = CP = DP.\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $P = (x,y,z).$  Then from the equation $AP = DP,$\n\\[(x - 8)^2 + y^2 + z^2 = x^2 + y^2 + z^2.\\]This gives us $x = 4.$\n\nSimilarly, from the equation $BP = DP,$\n\\[x^2 + (y + 4)^2 + z^2 = x^2 + y^2 + z^2,\\]so $y = -2.$\n\nAnd from the equation $CP = DP,$\n\\[x^2 + y^2 + (z - 6)^2 = x^2 + y^2 + z^2,\\]so $z = 3.$\n\nTherefore, $P = \\boxed{(4,-2,3)}.$"
-}

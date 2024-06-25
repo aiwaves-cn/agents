@@ -1,6 +1,0 @@
-{
-    "problem": "The scores on Trisha's first three tests were 88, 73 and 70. After two more tests, the mean score for all five tests was 81. Each test score was less than 90, and all of Trisha's test scores were different integer values. List Trisha's five test scores from the greatest to the least, separated by commas.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If Trisha's mean score is 81 after five tests, she must have scored a total of $5\\cdot 81 - (88 + 73 + 70) = 174$ on her last two tests. Keeping in mind that each test score was less than 90, this means that Trisha got scores of 87 and 87, 88 and 86, or 89 and 85 on her last two tests.\n\nSince all of Trisha's scores are different integer values, she can't have gotten scores of 87 and 87 on her last two tests. Also, since she already got an 88 on a test, she can't have gotten scores of 88 and 86 either. This means that she must have gotten scores of 89 and 85 on her last two tests.\n\nThus, Trisha's scores are 88, 73, 70, 89, and 85. Listing these from greatest to least, we see that our answer is $\\boxed{89, 88, 85, 73, 70}$."
-}

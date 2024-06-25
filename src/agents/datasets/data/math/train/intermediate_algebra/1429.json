@@ -1,6 +1,0 @@
-{
-    "problem": "The planet Xavier follows an elliptical orbit with its sun at one focus.  At its nearest point (perigee), it is 2 astronomical units (AU) from the sun, while at its furthest point (apogee) it is 12 AU away.  When Xavier is midway along its orbit, as shown, how far is it from the sun, in AU?\n\n[asy]\nunitsize(1 cm);\n\npath ell = xscale(2)*arc((0,0),1,-85,265);\n\nfilldraw(Circle((0,-1),0.1));\nfilldraw(Circle((-1.4,0),0.2),yellow);\ndraw(ell,Arrow(6));\n[/asy]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $A$ be the perigee, let $B$ be the apogee, let $F$ be the focus where the sun is, let $O$ be the center of the ellipse, and let $M$ be the current position of Xavier.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, F, M, O;\n\npath ell = xscale(2)*Circle((0,0),1);\n\nA = (-2,0);\nB = (2,0);\nF = (-sqrt(3),0);\nO = (0,0);\nM = (0,-1);\n\ndraw(ell);\ndraw(A--M);\ndraw(O--M);\ndraw(F--M);\ndraw(A--B);\n\ndot(\"$A$\", A, W);\ndot(\"$B$\", B, E);\ndot(\"$F$\", F, N);\ndot(\"$M$\", M, S);\ndot(\"$O$\", O, N);\n[/asy]\n\nThen $AB$ is a major axis of the ellipse, and $AB = 2 + 12 = 14.$  Since $M$ is the midway point, $MF = AO = \\frac{14}{2} = \\boxed{7}.$"
-}

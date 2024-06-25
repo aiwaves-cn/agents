@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $y = -6t^2 - 10t + 56$ describes the height (in feet) of a ball thrown downward at 10 feet per second from a height of 56 feet from the surface from Mars. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest hundredth.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Setting $y$ to zero, we find the following:\n\\begin{align*}\n-6t^2 - 10t + 56 &= 0 \\\\\n\\Rightarrow \\quad 6t^2 + 10t - 56 &= 0 \\\\\n\\Rightarrow \\quad 3t^2 + 5t - 28 &= 0 \\\\\n\\Rightarrow \\quad (3t-7)(t+4) &= 0.\n\\end{align*}As $t$ must be positive, we can see that $t = \\frac{7}{3} \\approx \\boxed{2.33}.$"
-}

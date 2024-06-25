@@ -1,6 +1,0 @@
-{
-    "problem": "For how many integer values of $a$ does the equation $$x^2 + ax + 8a = 0$$ have integer solutions for $x$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Suppose the roots of the quadratic are given by $m$ and $n$ with $m\\leq n$. Note that $$(x-m)(x-n) = x^2 - (m+n)x + mn = x^2 + ax + 8a,$$ and setting coefficients equal, it follows that  \\begin{align*}\nm + n &= -a \\\\\nmn &= 8a\n\\end{align*} (This also follows directly from Vieta's formulas.) Adding $8$ times the first equation to the second gives us that $$8(m+n)+mn=0$$ Simon's Favorite Factoring Trick can now be applied by adding $64$ to both sides: $$mn + 8m + 8n + 64 = (m+8)(n+8) = 64.$$ It follows that $m+8$ and $n+8$ are divisors of $64$, whose pairs of divisors are given by $\\pm \\{(1,64),(2,32),(4,16)$ and $(8,8)\\}$. Solving, we see that $(m,n)$ must be among the pairs  \\begin{align*}\n&(-7,56),(-6,24),(-4,8),(0,0),\\\\\n&(-72,-9),(-40,-10),(-24,-12),(-16,-16).\n\\end{align*} Since $a=-(m+n)$ and each of these pairs gives a distinct value of $m+n$, each of these $8$ pairs gives a distinct value of $a$, so our answer is $\\boxed{8}$."
-}

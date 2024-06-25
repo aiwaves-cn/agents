@@ -1,6 +1,0 @@
-{
-    "problem": "Let $N$ be the largest integer whose square has exactly $3$ digits when written in base 9.\n\nWhat is $N$, expressed in base 9?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let $n$ be a positive integer. Then $n^2$ has exactly $3$ digits in base 9 if and only if $$9^2\\le n^2<9^3.$$Taking square roots, we have $$3^2\\le n<3^3.$$We are looking for $N$, the ${\\bf largest}$ integer $n$ satisfying the above constraints. So, $$N=3^3-1=3\\cdot 9-1 =2\\cdot 9+8.$$Written in base $9$, this is $\\boxed{28}$ or $\\boxed{28_9}$."
-}

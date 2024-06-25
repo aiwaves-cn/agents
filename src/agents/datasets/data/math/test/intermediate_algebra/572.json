@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ and $c$ be nonzero real numbers such that $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} = 0.$  Compute\n\\[\\frac{bc}{a^2} + \\frac{ac}{b^2} + \\frac{ab}{c^2}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\[x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - xz - yz).\\]Setting $x = \\frac{1}{a},$ $y = \\frac{1}{b},$ and $z = \\frac{1}{c},$ we get\n\\[x^3 + y^3 + z^3 - 3xyz = 0,\\]since $x + y + z = 0.$\n\nThen\n\\[\\frac{1}{a^3} + \\frac{1}{b^3} + \\frac{1}{c^3} = \\frac{3}{abc},\\]so\n\\[\\frac{bc}{a^2} + \\frac{ac}{b^2} + \\frac{ab}{c^2} = \\boxed{3}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)$ be a cubic polynomial such that $p(-3) = -6,$ $p(4) = 8,$ $p(5) = 10,$ and $p(7) = 15.$  Find $p(12).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $p(x) = 2x$ for $x = -3,$ 4, and 5, so we consider the polynomial\n\\[q(x) = p(x) - 2x,\\]which is cubic.\n\nThen $q(-3) = q(4) = q(5) = 0,$ so $q(x)$ is of the form\n\\[q(x) = c(x + 3)(x - 4)(x - 5)\\]for some constant $c$.  Furthermore, $q(7) = 15 - 2 \\cdot 7 = 1,$ and\n\\[q(7) = c(7 + 3)(7 - 4)(7 - 5) = 60c,\\]so $c = \\frac{1}{60}.$  Hence,\n\\[q(x) = \\frac{(x + 3)(x - 4)(x - 5)}{60}.\\]In particular,\n\\[q(12) = \\frac{(12 + 3)(12 - 4)(12 - 5)}{60} = 14,\\]so $p(12) = q(12) + 2 \\cdot 12 = \\boxed{38}.$"
-}

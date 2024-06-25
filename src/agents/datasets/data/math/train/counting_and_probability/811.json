@@ -1,6 +1,0 @@
-{
-    "problem": "How many different routes are there from point $A$ to point $B$ if you can only move to the right or down along the drawn segments?\n\n[asy]\nunitsize(0.09inch);\ndraw((0,0)--(10,0)--(10,10)--(0,10)--cycle);\ndraw((5,0)--(5,10));\ndraw((0,5)--(10,5));\ndot((0,10));\ndot((10,0));\nlabel(\"$A$\",(0,10),NW);\nlabel(\"$B$\",(10,0),SE);\n[/asy]",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "To get from A to B, four moves are required: two down and two to the right. This problem can be thought of as asking how many ways there are to arrange the order of the four moves. Think of a downward move as the letter ``D\" and a move to the right as the letter ``R\". So, we are trying to count the total number of four-letter words formed with two Ds and two Rs. To do so, we can simply count the number of ways to arrange the Ds (the other slots will be automatically filled in with Rs). So, there are $4$ slots in which the first D could go, and three in which the second could. However, we must divide by $2$ for over-counting because the Ds are indistinct. Thus, there are $\\frac{4 \\cdot 3}{2} = \\boxed{6}$ different routes."
-}

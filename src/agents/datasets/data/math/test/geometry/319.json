@@ -1,6 +1,0 @@
-{
-    "problem": "Regular hexagon $ABCDEF$ is the base of the right pyramid $PABCDEF.$  If $PAD$ is an equilateral triangle with side length 6, then what is the sum of the lengths of the edges of the pyramid?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]\nimport three;\ntriple A = (1,0,0);\ntriple B = (0.5,sqrt(3)/2,0);\ntriple C = (-0.5,sqrt(3)/2,0);\ntriple D = (-1,0,0);\ntriple EE = (-0.5,-sqrt(3)/2,0);\ntriple F = (0.5,-sqrt(3)/2,0);\n\ntriple P = (0,0,1);\n\ndraw(F--A--B--C);\ndraw(C--D--EE--F,dashed);\ndraw(A--P--C);\ndraw(EE--P--D,dashed);\ndraw(B--P--F);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,E);\nlabel(\"$D$\",D,S);\nlabel(\"$P$\",P,N);\nlabel(\"$E$\",EE,S);\ndraw(A--D,dashed);\nlabel(\"$F$\",F,W);\ndraw(EE--B,dashed);\ndraw(C--F,dashed);\n[/asy]\n\nDrawing the long diagonals of a regular hexagon divides the hexagon into equilateral triangles with side length equal to half the length of each long diagonal.  So, the side length of the base is 3.  Since the pyramid is a right regular pyramid, each edge from the apex to a vertex of the base has the same length.  So, the sum of the lengths of the edges from the apex to the vertices on the base is $6\\cdot 6 = 36$.  Adding the perimeter of the base gives us the sum of all the edge lengths, which is $36 + 6\\cdot 3 = \\boxed{54}$."
-}

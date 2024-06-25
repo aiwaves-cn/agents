@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all real numbers $x$ such that $5x^4-10x^3+10x^2-5x-11=0$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Because the problem only asks about the real roots of the polynomial, we can't apply Vieta's formulas directly. Instead, we recognize the coefficients from the expansion of $(x-1)^5$: \\[(x-1)^5 = x^5 - 5x^4 + 10x^3 - 10x^2 + 5x - 1.\\]Seeing this, we subtract $x^5$ from both sides, giving \\[\\begin{aligned} -x^5 + 5x^4 - 10x^3 + 10x^2 - 5x - 11 &= -x^5 \\\\ -(x-1)^5 - 12 &= -x^5 \\\\ (x-1)^5 + 12  &= x^5. \\end{aligned}\\]Hence,\n\\[x^5 + (1 - x)^5 = 12.\\]Let $x = \\frac{1}{2} + y.$  Then $1 - x = \\frac{1}{2} - y,$ so\n\\[\\left( \\frac{1}{2} + y \\right)^5 + \\left( \\frac{1}{2} - y \\right)^5 = 12.\\]This expands to\n\\[5y^4 + \\frac{5}{2} y^2 + \\frac{1}{16} = 12.\\]Consider the function\n\\[f(y) = 5y^4 + \\frac{5}{2} y^2 + \\frac{1}{16}.\\]Then $f(0) = \\frac{1}{16},$ and $f(y)$ is increasing on $[0,\\infty),$ so there is exactly one positive value of $y$ for which $f(y) = 12.$  Also, if $f(y) = 12,$ then $f(-y) = 12.$\n\nThis means that there are exactly two solutions in $x,$ and if $x$ is one solution, then the other solution is $1 - x.$  Therefore, the sum of the solutions is $\\boxed{1}.$"
-}

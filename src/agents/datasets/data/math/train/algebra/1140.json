@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$: $$5^{x + 4} = 125^x.$$",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Writing the right side with $5$ as the base, we have $125^x = (5^3)^x = 5^{3x}$, so our equation is: $$5^{x + 4} = 5^{3x}.$$Then, setting the exponents equal, we obtain $$x + 4 = 3x.$$This yields $2x = 4 \\implies \\boxed{x = 2}$"
-}

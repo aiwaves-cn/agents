@@ -1,6 +1,0 @@
-{
-    "problem": "Enter all the solutions to\n\\[ \\sqrt{4x-3}+\\frac{10}{\\sqrt{4x-3}}=7,\\]separated by commas.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We start by substituting $u=\\sqrt{4x-3}$. Then it is easy to solve for $u$:\n\\begin{align*}\nu + \\frac{10}{u} &= 7 \\\\\nu^2 + 10 &= 7u \\\\\nu^2 - 7u + 10 &= 0 \\\\\n(u - 5)(u - 2) &= 0\n\\end{align*}Thus, we must have $u = 2$ or $u = 5$.\n\nIf $u = 2$, we get $\\sqrt{4x - 3} = 2$, so $4x - 3 = 4$ and $x = \\frac{7}{4}$.\n\nIf $u = 5$, we get $\\sqrt{4x - 3} = 5$ and so $4x - 3 = 25$, yielding $x = 7$.\n\nThus our two solutions are $x=\\boxed{\\frac 74,7}$."
-}

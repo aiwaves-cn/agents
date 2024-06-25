@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=x+3$ and $g(x)=3x+5$.  Find $f(g(4))-g(f(4))$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have $g(4) = 3\\cdot 4 + 5= 17$, so $f(g(4)) = f(17) = 17 + 3 = 20$. We also have $f(4) = 4+3 = 7$, so $g(f(4)) = g(7)=3\\cdot 7 + 5 = 26$.  Therefore, $f(g(4)) - g(f(4)) = 20 - 26 = \\boxed{-6}$."
-}

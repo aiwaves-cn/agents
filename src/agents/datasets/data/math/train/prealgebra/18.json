@@ -1,6 +1,0 @@
-{
-    "problem": "Twenty gremlins and fifteen imps are at the Annual Mischief Convention. The imps have had a lot of in-fighting lately and refuse to shake hands with each other, but they readily shake hands with all of the gremlins. Meanwhile, all the gremlins are quite friendly and shake hands with all of the other gremlins as well as imps. Each pair of creatures shakes hands at most once. How many handshakes were at the convention?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let us first count the handshakes between two gremlins. There are $20$ gremlins, so there must be $\\dfrac{20 \\cdot 19}{2} = 190$ handshakes between two gremlins, making sure to divide by two to avoid over-counting.\n\nMeanwhile, there are $15$ imps that shake hands with each of the $20$ gremlins, which makes $15 \\cdot 20 = 300$ handshakes between imps and gremlins.\n\nAdding them up, we have $300 + 190 = \\boxed{490}$ total handshakes."
-}

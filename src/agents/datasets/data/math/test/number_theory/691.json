@@ -1,6 +1,0 @@
-{
-    "problem": "What's the largest eight-digit base 2 integer?  Express your answer in base 10.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The largest eight-digit base 2 integer is 1 less than the smallest nine-digit base 2 integer, which is $$ 100000000_{2} = 1 \\cdot 2^8 = 256. $$Thus, the largest eight-digit base 2 integer is $256 - 1 = \\boxed{255}$."
-}

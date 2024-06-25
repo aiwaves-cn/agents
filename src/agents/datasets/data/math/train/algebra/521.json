@@ -1,6 +1,0 @@
-{
-    "problem": "Given positive integers $x$ and $y$ such that $x\\neq y$ and $\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{18}$, what is the smallest possible value for $x + y$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Simplifying, we have  $18(x+y)=xy$, so $xy - 18x - 18y = 0$ Applying Simon's Favorite Factoring Trick by adding 324 to both sides, we get $xy-18x-18y +324=324$, so \\[(x-18)(y-18)=324.\\]Now we seek the minimal $x+y,$ which occurs when $x-18$ and $y-18$ are as close to each other in value as possible. The two best candidates are $(x-18,y-18)=(12,27)$ or $(9,36),$ of which $(x,y)=(30,45)$ attains the minimum sum of $\\boxed{75}$."
-}

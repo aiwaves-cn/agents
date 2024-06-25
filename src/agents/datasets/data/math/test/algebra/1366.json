@@ -1,6 +1,0 @@
-{
-    "problem": "There are two distinct solutions $x$ to the equation $18+5x^2=20x$. If each solution is rounded to the nearest integer, and then these two integers are multiplied together, what is the result?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First, we rearrange the equation so that one side is a quadratic written in the usual way and the other side is $0$. We can do this by subtracting $20x$ from each side (and reordering the terms): $$5x^2-20x+18 = 0$$This doesn't factor in any obvious way, so we apply the quadratic formula, which gives \\begin{align*}\nx = \\frac{-(-20)\\pm \\sqrt{(-20)^2-4(5)(18)}}{2(5)} &= \\frac{20\\pm \\sqrt{400-360}}{10} \\\\\n&= \\frac{20\\pm \\sqrt{40}}{10} \\\\\n&= 2\\pm \\frac{\\sqrt{40}}{10}.\n\\end{align*}We observe that $\\sqrt{40}$ is between $6$ and $7$, so $\\frac{\\sqrt{40}}{10}$ is between $0.6$ and $0.7$. Thus one of our solutions is between $1.3$ and $1.4$, while the other is between $2.6$ and $2.7$. Rounding each solution to the nearest integer, we get $1$ and $3$, the product of which is $\\boxed{3}$."
-}

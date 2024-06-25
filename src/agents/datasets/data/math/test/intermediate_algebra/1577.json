@@ -1,6 +1,0 @@
-{
-    "problem": "Find the distance between the foci of the ellipse \\[9x^2 + \\frac{y^2}{9} = 99.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Dividing by $99,$ we get \\[\\frac{x^2}{11} + \\frac{y^2}{9^2 \\cdot 11} = 1.\\]Thus, the length of the major and minor axes are $2\\sqrt{9^2 \\cdot 11} = 18\\sqrt{11}$ and $2\\sqrt{11},$ respectively. Then the distance between the foci of the ellipse is \\[\\sqrt{(18\\sqrt{11})^2 - (2\\sqrt{11})^2} = 2\\sqrt{11} \\cdot \\sqrt{9^2-1} = \\boxed{8\\sqrt{55}}.\\]"
-}

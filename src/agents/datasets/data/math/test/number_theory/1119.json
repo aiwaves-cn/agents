@@ -1,6 +1,0 @@
-{
-    "problem": "The digits $1$, $2$, $3$, $4$, $5$, $6$, $7$, and $9$ are used to form four two-digit prime numbers, with each digit used exactly once. What is the sum of these four primes?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "The digits $2$, $4$, $5$, and $6$ cannot be the units digit of any two-digit prime, so these four digits must be the tens digits, and $1$, $3$, $7$, and $9$ are  the units digits. The sum is thus  $$\n10(2 + 4+ 5+ 6) + (1+3+7+9) = \\boxed{190}.\n$$(One set that satisfies the conditions is $\\{23, 47, 59, 61\\}$.)"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In the circle below, $\\overline{AB} \\| \\overline{CD}$. $\\overline{AD}$ is a diameter of the circle, and $AD = 36^{\\prime \\prime}$. What is the number of inches in the length of $\\widehat{AB}$? Express your answer in terms of $\\pi$. [asy]\nimport markers;\nimport olympiad; size(150); import geometry; import graph; defaultpen(linewidth(0.8));\ndraw(Circle(origin,36));\npair A = 36*dir(130);\npair B = 36*dir(50);\npair D = 36*dir(-50);\npair C = 36*dir(-130);\ndraw(B--A--D--C);\nlabel(\"$A$\",A,W); label(\"$B$\",B,E); label(\"$C$\",C,W); label(\"$D$\",D,E);\nmarkangle(\"$50^{\\circ}$\",D,A,B,radius=10);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "By symmetry, $\\widehat{BD}=\\widehat{CA}=100^\\circ$.  Furthermore, $\\widehat{AB}=\\widehat{CD}$, so \\[360^\\circ=\\widehat{AB}+\\widehat{BD}+\\widehat{DC}+\\widehat{CA}=2\\widehat{AB}+200^\\circ.\\] Therefore the arc $\\widehat{AB}$ measures $80^\\circ$.  Since the diameter of the circle is $36''$, the length of the arc is \\[\\frac{80}{360}(\\pi\\cdot36)=\\boxed{8\\pi}\\text{~inches}.\\]"
-}

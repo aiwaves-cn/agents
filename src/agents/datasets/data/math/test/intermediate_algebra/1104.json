@@ -1,6 +1,0 @@
-{
-    "problem": "For how many positive integers $m,$ $1 \\le m \\le 1000,$ does there exist at least one positive integer $n$ such that $m \\cdot n \\le m + n$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "If we set $n = 1,$ then the given inequality becomes $m \\le m + 1,$ which is satisfied by any integer $m.$  Thus, the answer is $\\boxed{1000}.$"
-}

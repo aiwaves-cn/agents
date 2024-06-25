@@ -1,6 +1,0 @@
-{
-    "problem": "For a real number $x,$ let\n\\[f(x) = \\max \\{|x + 15|, |x + 12|, |x + 8|, |x - 1|, |x - 3|, |x - 19|\\}.\\]Find the minimum value of $f(x).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can think of $|x + 15|$ as the distance between $x$ and $-15$ on the real numbers line, and $|x - 19|$ as the distance between $x$ and 19 on the real number line.\n\n[asy]\nunitsize(0.2 cm);\n\ndraw((-25,0)--(25,0));\ndraw((-15,-0.5)--(-15,0.5));\ndraw((19,-0.5)--(19,0.5));\ndraw((4,-0.5)--(4,0.5));\n\nlabel(\"$-15$\", (-15,-0.5), S);\nlabel(\"$19$\", (19,-0.5), S);\nlabel(\"$x$\", (4,-0.5), S);\n[/asy]\n\nBy the Triangle Inequality, the sum of these distances is at least $19 - (-15) = 34,$ which implies that at least one of $|x + 15|$ and $|x - 19|$ is always at least 17.  Therefore, $f(x) \\ge 17.$\n\nNote that $f(2) = 17,$ so the minimum value of $f(x)$ is $\\boxed{17}.$"
-}

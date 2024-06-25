@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate\n\\[\\begin{vmatrix} y + 1 & y & y \\\\ y & y + 1 & y \\\\ y & y & y + 1 \\end{vmatrix}.\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} y + 1 & y & y \\\\ y & y + 1 & y \\\\ y & y & y + 1 \\end{vmatrix} &= (y + 1)\\begin{vmatrix} y + 1 & y \\\\ y & y + 1 \\end{vmatrix} - y \\begin{vmatrix} y & y \\\\ y & y + 1 \\end{vmatrix} + y \\begin{vmatrix} y & y + 1 \\\\ y & y \\end{vmatrix} \\\\\n&= (y + 1)((y + 1)(y + 1) - y^2) - y(y(y + 1) - y^2) + y(y^2 - y(y + 1)) \\\\\n&= \\boxed{3y + 1}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $a + 4b = 33$ and $6a + 3b = 51$, what is the value of $a + b$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Since the problem asks for $a+b$, we look for a way to isolate $a+b$ from the given equations.\n\n\nNotice that $a + 6a = 7a$ and $4b + 3b = 7b$. This gives us the key to isolating $a + b$. We simply add the two equations together:  \\begin{align*}\n7a + 7b &= 84 \\\\\n7(a + b) &= 84 \\\\\na + b &= \\frac{84}{7} \\\\\na + b &= \\boxed{12}\n\\end{align*}"
-}

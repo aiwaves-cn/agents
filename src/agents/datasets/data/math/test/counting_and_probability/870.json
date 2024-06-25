@@ -1,6 +1,0 @@
-{
-    "problem": "Four points, $A$, $B$, $C$, and $D$, are chosen randomly and independently on the circumference of a circle. What is the probability that segments $AB$ and $CD$ intersect?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Consider the four random points before they are labeled $A$, $B$, $C$, or $D$. In the general case, they will be distinct, forming a convex quadrilateral. Suppose $A$ is labeled. If $B$ is labeled as the vertex opposite $A$, segments $AB$ and $CD$ will intersect; otherwise, they will not. Since there are 3 points to label as $B$, the probability these segments intersect is $\\boxed{\\frac{1}{3}}$. [asy]\ndraw((0,1)..(1,0)..(0,-1)..(-1,0)..cycle);\ndot((0,1)); dot((-5/13,-12/13)); dot((-1,0)); dot((4/5,3/5));\nlabel(\"$A$\",(0,1),N); label(\"$B$\",(-5/13,-12/13),SSW); label(\"$C$\",(-1,0),W); label(\"$D$\",(4/5,3/5),NE);\ndraw((0,1)--(-5/13,-12/13),green); draw((-1,0)--(4/5,3/5),green);\ndraw((0,1)--(4/5,3/5),blue); draw((-1,0)--(-5/13,-12/13),blue);\ndraw((0,1)--(-1,0),red); draw((-5/13,-12/13)--(4/5,3/5),red);\n[/asy] In this diagram, the green edges represent the labeling where $AB$ and $CD$ intersect, and the blue and red edges represent the equally likely labelings where $AB$ and $CD$ do not intersect."
-}

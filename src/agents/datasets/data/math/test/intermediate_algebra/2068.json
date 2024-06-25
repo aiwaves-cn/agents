@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = \\frac{2x+9}{x-7}.$ Find the product of all solutions to the equation $f(f(x)) = x.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have \\[\\begin{aligned} f(f(x)) &= f\\left(\\frac{2x+9}{x-7}\\right) \\\\ &= \\frac{2 \\cdot \\frac{2x+9}{x-7} + 9}{\\frac{2x+9}{x-7} - 7} \\\\ &= \\frac{2(2x+9) + 9(x-7)}{(2x+9) - 7(x-7)} \\\\ &= \\frac{13x - 45}{-5x + 58}.\\end{aligned}\\]Therefore, the equation $f(f(x)) = x$ becomes \\[13x - 45 = -5x^2 + 58x,\\]or \\[5x^2 - 45x - 45 = 0.\\]By Vieta's formulas, the product of the solutions to this equation is $\\frac{-45}{5},$ or $\\boxed{-9}.$"
-}

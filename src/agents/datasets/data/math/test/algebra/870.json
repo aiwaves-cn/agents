@@ -1,6 +1,0 @@
-{
-    "problem": "Factor $9z^3 - 27z^2 + 27z$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Both 9 and $z$ are factors of each term, so we can factor out $9z$: \\[9z^3 -27z^2 + 27z = (9z)\\cdot(z^2) - (9z)\\cdot (3z) + (9z)\\cdot 3 = \\boxed{9z(z^2 - 3z + 3)}.\\]"
-}

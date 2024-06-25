@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area, in square units, of the interior region formed by the lines $y = 2x - 4, y = -3x +16$ and the $y$-axis?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "To find the vertices of the triangle, we find where the two lines $y=2x-4$ and $y=-3x+16$ intersect. Solving $2x-4=-3x+16$, we get $x=4$.  Substituting $x=4$ back into $y=2x-4$, we find $y=4$.  Therefore, $(4,4)$ is one of the vertices of the triangle.  The other two vertices are the $y$-intercepts of the two lines, namely $(0,16)$ and $(0,-4)$.  Taking the side joining $(0,16)$ and $(0,-4)$ as the base of the triangle, we find that the area of the triangle is $\\frac{1}{2}(\\text{base})(\\text{height})=\\frac{1}{2}(16-(-4))(4)=\\boxed{40}$ square units.\n\n[asy]\nunitsize(3mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\ndotfactor=4;\n\nfill((0,-4)--(0,16)--(4,4)--cycle,gray);\n\ndraw((-2,0)--(5,0),Arrows(4));\ndraw((0,-5)--(0,18),Arrows(4));\n\ndraw((0,-4)--(4,4));\ndraw((0,16)--(4,4)); [/asy]"
-}

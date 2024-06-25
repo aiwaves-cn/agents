@@ -1,6 +1,0 @@
-{
-    "problem": "There are two cameras that take pictures of a traffic intersection. Camera A starts taking pictures at $6$ AM and takes a picture every $11$ minutes. Camera B starts taking pictures at $7$ AM and takes pictures every $7$ minutes. Camera A and Camera B take a picture at the same time at four different times before noon. When Camera A and Camera B take their last picture together, how many minutes before noon is it?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If Camera A and Camera B take a picture at the same time, they will take a picture $77$ minutes later at the same time. Therefore, if we can find the first time they take a picture together, then we can continue adding $77$ minutes to figure out when the fourth picture was taken. Camera A's first pictures after $7$ AM is at $7:06$, followed by $7:17$ and $7:28$. Camera B will take a picture at $7:28$. From here, we add $77$ minutes until we have taken four pictures. $7:28$ is followed by $8:45$, which is followed by $10:02$, which is followed by $11:19$. This is $\\boxed{41}$ minutes before noon."
-}

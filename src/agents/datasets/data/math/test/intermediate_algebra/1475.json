@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $(a_n)$ is defined by $a_0 = 2,$ $a_1 = 1,$ and\n\\[a_n = a_{n - 1} \\sqrt{3} - a_{n - 2}\\]for all $n \\ge 2.$  Find $a_{100}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\begin{align*}\na_2 &= \\sqrt{3} - 2, \\\\\na_3 &= (\\sqrt{3} - 2) \\sqrt{3} - 1 = 2 - 2 \\sqrt{3}, \\\\\na_4 &= (2 - 2 \\sqrt{3}) \\sqrt{3} - (\\sqrt{3} - 2) = \\sqrt{3} - 4, \\\\\na_5 &= (\\sqrt{3} - 4) \\sqrt{3} - (2 - 2 \\sqrt{3}) = 1 - 2 \\sqrt{3}, \\\\\na_6 &= (1 - 2 \\sqrt{3}) \\sqrt{3} - (\\sqrt{3} - 4) = -2, \\\\\na_7 &= (-2) \\sqrt{3} - (1 - 2 \\sqrt{3}) = -1, \\\\\na_8 &= (-1) \\sqrt{3} - (-2) = 2 - \\sqrt{3}, \\\\\na_9 &= (2 - \\sqrt{3}) \\sqrt{3} - (-1) = 2 \\sqrt{3} - 2, \\\\\na_{10} &= (2 \\sqrt{3} - 2) \\sqrt{3} - (2 - \\sqrt{3}) = 4 - \\sqrt{3}, \\\\\na_{11} &= (4 - \\sqrt{3}) \\sqrt{3} - (2 \\sqrt{3} - 2) = 2 \\sqrt{3} - 1, \\\\\na_{12} &= (2 \\sqrt{3} - 1) \\sqrt{3} - (4 - \\sqrt{3}) = 2, \\\\\na_{13} &= 2 \\sqrt{3} - (2 \\sqrt{3} - 1) = 1.\n\\end{align*}Since $a_{12} = a_0 = 2$ and $a_{13} = a_1 = 1,$ and each term depends only on the previous two terms, the sequence is periodic from here on, with a period of length 12.  Hence, $a_{100} = a_4 = \\boxed{\\sqrt{3} - 4}.$"
-}

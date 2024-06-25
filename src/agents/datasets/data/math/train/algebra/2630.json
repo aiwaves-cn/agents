@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of $y=\\frac{5x^2-9}{3x^2+5x+2}$ has a horizontal asymptote at $y=a$.  What is $a$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "To determine the horizontal asymptotes, we consider what happens as $x$ becomes very large.  It appears that, as $x$ becomes very large, the rational function becomes more and more like  \\[y\\approx\\frac{5x^2}{3x^2},\\]so it should become closer and closer to $\\frac53$.\n\nWe can see this explicitly by dividing both the numerator and denominator by $x^2$.  This gives  \\[y=\\frac{5-\\frac{9}{x^2}}{3+\\frac{5}{x}+\\frac{2}{x^2}}.\\]Indeed, as $x$ gets larger, all of the terms other than 5 in the numerator and 3 in the denominator become very small, so the horizontal asymptote is $y=\\boxed{\\frac53}$."
-}

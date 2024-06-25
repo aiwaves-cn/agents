@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $\\tan \\angle CAB = \\frac{22}{7}$, and the altitude from $A$ divides $\\overline{BC}$ into segments of length $3$ and $17$. What is the area of triangle $ABC$?",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $h = AD.$\n\n[asy]\nunitsize(0.3 cm);\n\npair A, B, C, D;\n\nA = (3,11);\nB = (0,0);\nD = (3,0);\nC = (20,0);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$3$\", (B + D)/2, S);\nlabel(\"$17$\", (C + D)/2, S);\nlabel(\"$h$\", (A + D)/2, E);\n[/asy]\n\nThen $\\tan \\angle BAD = \\frac{3}{h}$ and $\\tan \\angle CAD = \\frac{17}{h},$ so\n\\begin{align*}\n\\tan A &= \\tan (\\angle BAD + \\angle CAD) \\\\\n&= \\frac{\\tan \\angle BAD + \\tan \\angle CAD}{1 - \\tan \\angle BAD \\cdot \\tan \\angle CAD} \\\\\n&= \\frac{\\frac{3}{h} + \\frac{17}{h}}{1 - \\frac{3}{h} \\cdot \\frac{17}{h}} \\\\\n&= \\frac{20h}{h^2 - 51}.\n\\end{align*}Thus, $\\frac{20h}{h^2 - 51} = \\frac{22}{7}.$  This simplifies to\n\\[11h^2 - 70h - 561 = 0,\\]which factors as $(h - 11)(11h + 51) = 0.$  Hence, $h = 11,$ and the area of triangle $ABC$ is $\\frac{1}{2} \\cdot 20 \\cdot 11 = \\boxed{110}.$"
-}

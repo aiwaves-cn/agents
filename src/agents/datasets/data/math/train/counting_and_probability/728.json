@@ -1,6 +1,0 @@
-{
-    "problem": "There are six clearly distinguishable frogs sitting in a row. Two are green, three are red, and one is blue. Green frogs refuse to sit next to the red frogs, for they are highly poisonous. In how many ways can the frogs be arranged?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Because of the restrictions, the frogs must be grouped by color, which gives two possibilities: green, blue, red, or red, blue, green. For each of these possibilities, there are $3!$ ways to arrange the red frogs and $2!$ ways to arrange the green frogs.\n\nTherefore, the answer is $2\\times2!\\times3!=\\boxed{24}$ ways."
-}

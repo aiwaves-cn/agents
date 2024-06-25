@@ -1,6 +1,0 @@
-{
-    "problem": "The values of a function $f(x)$ are given in the table below.\n\n\\begin{tabular}{|c||c|c|c|c|c|} \\hline $x$ & 1 & 2 & 3 & 4 & 5 \\\\ \\hline $f(x)$ & 3 & 1 & 5 & 4 & 2 \\\\ \\hline\n\\end{tabular}If $f^{-1}$ exists, then what is $f^{-1}(f^{-1}(f^{-1}(1)))$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First, we notice that $f(2) = 1$, so $f^{-1}(1) = 2$. Hence, $$f^{-1}(f^{-1}(f^{-1}(1))) = f^{-1}(f^{-1}(2)).$$Next, $f(5) = 2$, so $f^{-1}(2) = 5$. Thus, $f^{-1}(f^{-1}(2)) = f^{-1}(5)$. Finally, $f(3) = 5$, so $f^{-1}(5) = 3$. Thus, $f^{-1}(f^{-1}(f^{-1}(1))) = \\boxed{3}.$"
-}

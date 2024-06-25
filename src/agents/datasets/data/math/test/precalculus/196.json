@@ -1,6 +1,0 @@
-{
-    "problem": "The dilation, centered at the origin, with scale factor $-3,$ takes $4 - 5i$ to which complex number?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The dilation, centered at the origin, with scale factor $c,$ takes $z$ to $cz.$\n\n[asy]\nunitsize(0.2 cm);\n\ndraw((0,0)--(4,-5),dashed);\ndraw((0,0)--(-3)*(4,-5),dashed);\ndraw((-15,0)--(15,0));\ndraw((0,-15)--(0,15));\n\ndot(\"$4 - 5i$\", (4,-5), SE);\ndot(\"$-12 + 15i$\", (-3)*(4,-5), NW);\n[/asy]\n\nThus, this dilation takes $4 - 5i$ to $(-3)(4 - 5i) = \\boxed{-12 + 15i}.$"
-}

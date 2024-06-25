@@ -1,6 +1,0 @@
-{
-    "problem": "Factor $x^3 - 9x^2 + 27x - 35$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We could check to see which divisors of $-35$ are roots of the cubic $x^3 - 9x^2 + 27x - 35 = 0$.\n\nHowever, notice that $x^3 - 9x^2 + 27x - 35 = (x - 3)^3 - 2^3$. As such, we can factor this as a difference of cubes: $(x-3)^3 - 2^3 = ((x-3)-2)((x-3)^2+2(x-3)+2^2) = (x-5)(x^2-4x+7)$.\n\nWe see that $x^2-4x+7$ cannot be factored any further, so our answer is $\\boxed{(x-5)(x^2-4x+7)}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The difference between two numbers is 9, and the sum of the squares of each number is 153. What is the value of the product of the two numbers?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Call the first number $x$ and the second number $y$. Without loss of generality, assume $x > y$. We can represent the information given in the problem with the following system of linear equations:\n\\begin{align*}\nx - y &= 9\\\\\nx^2 + y^2 &= 153\n\\end{align*} Solving for $x$ in the first equation and substituting into the second yields $(9+y)^2 + y^2 = 153$, or $2y^2 + 18y - 72 = 0$. Canceling a $2$ gives $y^2 + 9y - 36 = 0$, which factors into $(y+12)(y-3)$. Thus, $y = 3$ and $x = 12$. So, $x \\cdot y = \\boxed{36}$."
-}

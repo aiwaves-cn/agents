@@ -1,6 +1,0 @@
-{
-    "problem": "Winnie has 45 cherry lollipops, 116 wintergreen lollipops, 4 grape lollipops, and 229 shrimp cocktail lollipops.  With no regard to flavor, Winnie gives each of her 11 nearest and dearest friends some lollipops.  Each friend gets the same number of lollipops and she hands out as many lollipops as possible.  How many lollipops does Winnie end up keeping for herself?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We want to know the remainder when $45+116+4+229$ is divided by 11.  The remainders of each of these numbers are easy to compute individually so we can say \\[45+116+4+229\\equiv1+6+4+9=20\\equiv9\\pmod{11}.\\]Therefore Winnie has $\\boxed{9}$ lollipops left over after the distribution.  Hopefully she did not keep any shrimp cocktails."
-}

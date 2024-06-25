@@ -1,6 +1,0 @@
-{
-    "problem": "If $x+\\frac1x=-5$, what is $x^3+\\frac1{x^3}$?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "To get $x^3$ and $\\frac1{x^3}$, we cube $x+\\frac1x$: $$-125=(-5)^3=\\left(x+\\frac1x\\right)^3=x^3+3x+\\frac3x+\\frac1{x^3}$$ by the Binomial Theorem. Conveniently, we can evaluate $3x +\n\\frac{3}{x}$ as  $3\\left(x+\\frac1x\\right)=3(-5)=-15$, so $$x^3+\\frac1{x^3}=(-125)-(-15)=\\boxed{-110}.$$"
-}

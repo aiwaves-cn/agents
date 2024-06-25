@@ -1,6 +1,0 @@
-{
-    "problem": "To determine whether a number $\\textit{N}$ is prime, we must test for divisibility by every prime less than or equal to the square root of $\\textit{N}$. How many primes must we test to determine whether $2003$ is prime?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We must test every prime less than or equal to $\\sqrt{2003}<45$. There are $\\boxed{14}$ such primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, and 43."
-}

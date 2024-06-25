@@ -1,6 +1,0 @@
-{
-    "problem": "Three aluminum cans can be recycled to make a new can. How many new cans can eventually be made from 243 aluminum cans? (Remember that the first new cans that are made can then be recycled into even newer cans!)  Do not include the original 243 cans in your count.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We start with $243 = 3^5$ cans. After recycling these cans, we will have made $243\\cdot\\frac13 = 3^4$ new cans. We can then recycle these new cans to make $3^4\\cdot\\frac13 = 3^3$ new cans. Continuing this process, we want to find the sum $3^4 + 3^3 + 3^2 + 3^1 + 3^0$. This is a finite geometric series with first term $81$, common ratio $1/3$, and five terms. Thus, the sum is $\\frac{81\\left(1-\\left(\\frac13\\right)^5\\right)}{1-\\frac13} = \\boxed{121}$."
-}

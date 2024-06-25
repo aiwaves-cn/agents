@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)$, whose graph is shown below, is defined on $1 \\le x \\le 6$, what is the maximum value of $f^{-1}(x)$? [asy]\n\nimport graph; size(7.94cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-0.96,xmax=8.96,ymin=-2.66,ymax=4.38;\n\nLabel laxis; laxis.p=fontsize(10);\n\nxaxis(\"$x$\",-0.96,8.96,Ticks(laxis,Step=1.0,Size=2,OmitTick(0)),Arrows(6),above=true); yaxis(\"$y$\",-2.66,4.38,Ticks(laxis,Step=1.0,Size=2,OmitTick(0)),Arrows(6),above=true); draw((1,2)--(3,0),linewidth(1.2)); draw((3,3)--(5,2),linewidth(1.2)); draw((5,-2)--(6,0),linewidth(1.2)); filldraw(circle((5,-2),0.08),white); label(\"$ f(x) $\",(0.5,4.3),SE*lsf);\n\ndot((3,0),UnFill(0)); dot((1,2)); dot((3,3)); dot((5,2),ds); dot((6,0));\n\nclip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);\n\n[/asy]",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We are asked to find the largest value of $x = f^{-1}(y)$, that is the largest value of $x$ for which $f(x)$ exists. Since the point farthest to the right on the graph of $f$ is (6,0), this value is $x = \\boxed{6}$. To say it another way, the maximum value of $f^{-1}(x)$ is the largest number in the domain of $f$."
-}

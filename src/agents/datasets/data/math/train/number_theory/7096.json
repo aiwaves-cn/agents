@@ -1,6 +1,0 @@
-{
-    "problem": "Call a positive integer $n$ $k$-pretty if $n$ has exactly $k$ positive divisors and $n$ is divisible by $k$. For example, $18$ is $6$-pretty. Let $S$ be the sum of positive integers less than $2019$ that are $20$-pretty. Find $\\tfrac{S}{20}$.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Every 20-pretty integer can be written in form $n = 2^a 5^b k$, where $a \\ge 2$, $b \\ge 1$, $\\gcd(k,10) = 1$, and $d(n) = 20$, where $d(n)$ is the number of divisors of $n$. Thus, we have $20 = (a+1)(b+1)d(k)$, using the fact that the divisor function is multiplicative. As $(a+1)(b+1)$ must be a divisor of 20, there are not many cases to check.\nIf $a+1 = 4$, then $b+1 = 5$. But this leads to no solutions, as $(a,b) = (3,4)$ gives $2^3 5^4 > 2019$.\nIf $a+1 = 5$, then $b+1 = 2$ or $4$. The first case gives $n = 2^4 \\cdot 5^1 \\cdot p$ where $p$ is a prime other than 2 or 5. Thus we have $80p < 2019 \\implies p = 3, 7, 11, 13, 17, 19, 23$. The sum of all such $n$ is $80(3+7+11+13+17+19+23) = 7440$. In the second case $b+1 = 4$ and $d(k) = 1$, and there is one solution $n = 2^4 \\cdot 5^3 = 2000$.\nIf $a+1 = 10$, then $b+1 = 2$, but this gives $2^9 \\cdot 5^1 > 2019$. No other values for $a+1$ work.\nThen we have $\\frac{S}{20} = \\frac{80(3+7+11+13+17+19+23) + 2000}{20} = 372 + 100 = \\boxed{472}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "$AB = 20$ cm, $m \\angle A = 30^\\circ$, and $m \\angle C = 45^\\circ$. Express the number of centimeters in the length of $\\overline{BC}$ in simplest radical form. [asy]\nimport olympiad; size(200); import geometry; import graph; defaultpen(linewidth(0.8));\npair A = origin, B = (10*sqrt(3),10), C = (10*sqrt(3) + 10,0);\ndraw(Label(\"$20$\",align=NW),A--B); draw(B--C); draw(A--C);\nlabel(\"$A$\",A,W); label(\"$B$\",B,N); label(\"$C$\",C,E);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Drawing altitude $\\overline{BD}$ splits $\\triangle ABC$ into 30-60-90 triangle $ABD$ and 45-45-90 triangle $BCD$:\n\n[asy]\nimport olympiad; size(200); import geometry; import graph; defaultpen(linewidth(0.8));\npair A = origin, B = (10*sqrt(3),10), C = (10*sqrt(3) + 10,0);\ndraw(Label(\"$20$\",align=NW),A--B); draw(B--C); draw(A--C);\nlabel(\"$A$\",A,W); label(\"$B$\",B,N); label(\"$C$\",C,E);\npair D = (10*sqrt(3),0);\nlabel(\"$D$\",D,S);\ndraw(B--D);\ndraw(rightanglemark(B,D,A,40));\n[/asy]\n\nFrom 30-60-90 triangle $ABD$, we have $BD = AB/2 = 10$.  From 45-45-90 triangle $BCD$, we have $BC = BD\\sqrt{2} = \\boxed{10\\sqrt{2}}$."
-}

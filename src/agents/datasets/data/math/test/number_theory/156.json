@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n$ be a positive integer.  What is the greatest possible value of $\\gcd(n + 7, 2n + 1)$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $d = \\gcd(n + 7, 2n + 1)$, so $d$ divides both $n + 7$ and $2n + 1$.  Then $d$ divides $2(n + 7) - (2n + 1) = 13$, so $d$ is at most 13.\n\nIf $n = 6$, then $\\gcd(n + 7, 2n + 1) = \\gcd(13,13) = 13$, which shows that the value of 13 is attainable.  Therefore, the greatest possible value of $\\gcd(n + 7, 2n + 1)$ is $\\boxed{13}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the units digit of the sum of the squares of the first nine positive integers?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We can reduce the amount of work we have to do in this problem by realizing that the units digit of the sum of the squares is the units digit of the sum of the units digits of the squares. In other words, the units digit of $1^2+2^2+\\ldots+9^2$ is the units digit of $1+4+9+6+5+6+9+4+1=45$, which is $\\boxed{5}$."
-}

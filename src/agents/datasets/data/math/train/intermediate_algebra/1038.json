@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,b,c,d,e,f,g$ and $h$ be distinct elements in the set \\[\n\\{-7,-5,-3,-2,2,4,6,13\\}.\n\\]What is the minimum possible value of \\[\n(a+b+c+d)^{2} + (e+f+g+h)^{2}?\n\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that the sum of the elements in the set is 8. Let $x=a+b+c+d$, so $e+f+g+h=8-x$. Then\n\n\\begin{align*}\n(a+b+c+d)^{2} &+ (e+f+g+h)^{2} = x^{2} + (8-x)^{2}\\\\\n&= 2x^{2} - 16x + 64\n= 2(x-4)^{2} + 32\n\\geq 32.\n\\end{align*}The value of 32 can be attained if and only if $x=4$. However, it may be assumed without loss of generality that $a=13$, and no choice of $b,c$, and $d$ gives a total of 4 for $x$. Thus $(x - 4)^2 \\ge 1$, and \\[\n(a+b+c+d)^2 + (e+f+g+h)^2 = 2(x-4)^2 + 32 \\geq \\boxed{34}.\n\\]A total of 34 can be attained by letting $a,b,c$, and $d$ be distinct elements in the set $\\{-7,-5,2,13\\}$."
-}

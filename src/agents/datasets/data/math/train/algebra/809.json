@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=\\frac{3x^2+5x+8}{x^2-x+4}$ and $g(x)=x-1$. Find $f(g(x))+g(f(x))$, evaluated when $x=1$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We could find the value of $f(g(x))+g(f(x))$ in terms of $x$ and then plug in $1$, but it's simpler to plug in $1$ from the start. $f(1)=\\frac{3+5+8}{1-1+4}=\\frac{16}{4}=4$, and $g(1)=1-1=0$, so $f(g(1))+g(f(1))=f(0)+g(4)$. Now $g(4)=4-1=3$, and $f(0)=\\frac{0+0+8}{0+0+4}=2$, so we have $f(0)+g(4)=2+3=\\boxed{5}$."
-}

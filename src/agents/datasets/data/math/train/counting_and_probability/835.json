@@ -1,6 +1,0 @@
-{
-    "problem": "On the refrigerator, MATHCOUNTS is spelled out with 10 magnets, one letter per magnet. Two vowels and three consonants fall off and are put away in a bag. If the Ts are indistinguishable, how many distinct possible collections of letters could be put in the bag?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let's divide the problem into two cases: one where 0 or 1 T's fall off and one where both T's fall off:\n\n0 or 1 T's: \\[\\dbinom{3}{2}\\dbinom{6}{3}=3\\times20=60\\]\n\n2 T's: \\[\\dbinom{3}{2}\\dbinom{5}{1}=3\\times5=15\\]\n\nTotal: $60+15=\\boxed{75}$"
-}

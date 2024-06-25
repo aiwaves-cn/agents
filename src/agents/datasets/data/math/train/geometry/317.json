@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, medians $AD$ and $CE$ intersect at $P$, $PE=1.5$, $PD=2$, and $DE=2.5$.  What is the area of $AEDC$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Note that $1.5^2 + 2^2 = 2.5^2,$ so $\\triangle PED$ has a right angle at $P.$ (Alternatively, you could note that $(1.5, 2, 2.5)$ is half of the Pythagorean triple $(3,4,5).$) [asy]size(6cm);pair P=(0,0),D=(0,-2),E=(-1.5,0),C=(3,0),A=(0,4),B=extension(A,E,D,C);draw(A--B--C--cycle^^C--E^^A--D);draw(rightanglemark(E,P,D));draw(E--D);dot(\"$A$\",A,N);dot(\"$B$\",B,SW);dot(\"$C$\",C,dir(0));dot(\"$D$\",D,SSE);dot(\"$E$\",E,NW);dot(\"$P$\",P,NE);[/asy] Since the centroid $P$ divides medians $AD$ and $CE$ in the ratio $2 : 1,$ we have $CP = 2 \\cdot EP = 2 \\cdot 1.5 = 3$ and $AP = 2 \\cdot DP = 2 \\cdot 2 = 4.$ Then quadrilateral $AEDC$ consists of four right triangles; we can then compute its area as \\[[AEDC] = \\tfrac12 (4 \\cdot 1.5 + 2 \\cdot 1.5 + 3 \\cdot 2 + 4 \\cdot 3) = \\boxed{13.5}.\\]"
-}

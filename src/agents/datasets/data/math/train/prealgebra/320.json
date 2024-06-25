@@ -1,6 +1,0 @@
-{
-    "problem": "The vertical drop of a roller coaster is the largest difference in height between any high point and the next low point. The vertical drops of five roller coasters at Mandelbrot Amusement Park are shown in the table. \\begin{tabular}{|l|c|} \\hline\nThe Parabola & 165 feet \\\\ \\hline\nThe G Force & 119 feet \\\\ \\hline\nThe Mean Streak & 138 feet \\\\ \\hline\nThe Tower of Power & 300 feet \\\\ \\hline\nThe Maximum Ride & 198 feet \\\\ \\hline\n\\end{tabular} What is the positive difference between the mean and the median of these values?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "First, we must find the mean and median of the values. In order to find the mean, we sum all the values and divide the result by the number of values: \\begin{align*} \\frac{165+119+138+300+198}{5} &= 184. \\end{align*} in order to find the median, we must first list the values in order from least to greatest: \\[ 119, 138, 165, 198, 300. \\] There are $5$ values, so the median is the middle value, which here is $165.$\n\nSo, the positive difference between the mean and the median is $184-165=\\boxed{19}.$"
-}

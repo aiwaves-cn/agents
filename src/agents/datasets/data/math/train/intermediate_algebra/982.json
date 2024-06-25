@@ -1,6 +1,0 @@
-{
-    "problem": "Let \\[P(x) = (2x^4 - 26x^3 + ax^2 + bx + c)(5x^4 - 80x^3 + dx^2 + ex + f),\\]where $a, b, c, d, e, f$ are real numbers. Suppose that the set of all complex roots of $P(x)$ is $\\{1, 2, 3, 4, 5\\}.$ Find $P(6).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $Q(x)$ and $R(x)$ denote the two factors on the right-hand side, so that $P(x) = Q(x) \\cdot R(x).$ By Vieta's formulas, the sum of the roots of $Q(x)$ is $\\tfrac{26}{2} = 13,$ and the sum of the roots of $R(x)$ is $\\tfrac{80}{5} = 16$ (counting with multiplicity). Therefore, the sum of the eight roots of $P(x)$ is $13 + 16 = 29.$\n\nEach of the numbers $1, 2, 3, 4, 5$ must be one of those roots, so the remaining three roots, which must also come from the set $\\{1, 2, 3, 4, 5\\},$ must sum to $29 - (1+2+3+4+5) = 14.$ The only way this is possible is if the remaining three roots are $4, 5, 5.$ Therefore, the roots of $P(x)$ are $1, 2, 3, 4, 4, 5, 5, 5$ (with multiplicity). Since the leading coefficient of $P(x)$ is $2 \\cdot 5 = 10,$ this means that \\[P(x) = 10(x-1)(x-2)(x-3)(x-4)^2(x-5)^3.\\]Therefore, $P(6) = 10 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2^2 \\cdot 1^3 = \\boxed{2400}.$"
-}

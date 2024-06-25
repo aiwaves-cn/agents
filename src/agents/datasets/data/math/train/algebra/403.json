@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $r$: $$\\frac{r+3}{r-2} = \\frac{r-1}{r+1}.$$Express your answer as a fraction.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Cross-multiplying (which is the same as multiplying both sides by $r-2$ and by $r+1$) gives \\[(r+3)(r+1) = (r-1)(r-2).\\]Expanding the products on both sides gives  \\[r^2 + 3r + r + 3 = r^2 -r - 2r + 2.\\]which simplifies to $r^2 + 4r + 3 = r^2 - 3r + 2$. Subtracting $r^2$ from both sides and collecting terms gives $7r = -1$, so $r = \\boxed{-\\frac{1}{7}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ is similar to triangle $XYZ$ with side $AB$ measuring 4 units, side $BC$ measuring 6 units and side $XY$ measuring 14 units. What is the measure of side $YZ?$",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Because triangle $ABC$ is similar to triangle $XYZ,$ $\\frac{AB}{XY}=\\frac{BC}{YZ}.$ Plugging in the values we are given yields \\begin{align*}\n\\frac{4}{14} &= \\frac{6}{YZ}\\\\\n\\Rightarrow\\qquad \\frac{4\\cdot YZ}{14} &= 6\\\\\n\\Rightarrow\\qquad 4\\cdot YZ &= 84\\\\\n\\Rightarrow\\qquad YZ &= \\boxed{21}.\n\\end{align*}"
-}

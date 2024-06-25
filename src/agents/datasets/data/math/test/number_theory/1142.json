@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the least and the greatest positive four-digit multiples of 4 that can be written each using the digits 1, 2, 3 and 4 exactly once?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The number formed by the last two digits of a multiple of 4 is a multiple of 4. 12, 24, and 32 are the only two-digit multiples of 4 that can be formed using each of 1, 2, 3, and 4 at most once. Therefore, the least four-digit multiple of 4 that can be written is 1324 and the greatest is 4312. Their sum is $1324+4312=\\boxed{5636}$."
-}

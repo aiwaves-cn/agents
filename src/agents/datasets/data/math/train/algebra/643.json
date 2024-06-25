@@ -1,6 +1,0 @@
-{
-    "problem": "Billy's age is twice Joe's age and the sum of their ages is 45. How old is Billy?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "Let $B$ and $J$ represent the respective ages of Billy and Joe. We can write the equations $B=2J$ and $B+J=45$. We use the second equation to solve for $J$ in terms of $B$ and get $J=45-B$. Now we plug in this expression for $J$ into the first equation. $$B=2(45-B)=90-2B\\qquad\\Rightarrow 3B=90\\qquad\\Rightarrow B=30$$ So Billy is $\\boxed{30}$ years old."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of the function $f(x) = \\arctan x + \\frac{1}{2} \\arcsin x.$  All functions are in radians.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The domain of $f(x)$ is limited by the domain of $\\arcsin x,$ which is $[-1,1].$  Note that both $\\arctan x$ and $\\arcsin x$ are increasing functions on this interval, and\n\\[f(-1) = \\arctan (-1) + \\frac{1}{2} \\arcsin (-1) = -\\frac{\\pi}{2}\\]and\n\\[f(1) = \\arctan 1 + \\frac{1}{2} \\arcsin 1 = \\frac{\\pi}{2},\\]so the range of $f(x)$ is $\\boxed{\\left[ -\\frac{\\pi}{2}, \\frac{\\pi}{2} \\right]}.$"
-}

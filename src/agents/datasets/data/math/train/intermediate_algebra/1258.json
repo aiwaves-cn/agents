@@ -1,6 +1,0 @@
-{
-    "problem": "Let $ a$, $ b$, $ c$, $ x$, $ y$, and $ z$ be real numbers that satisfy the three equations\n\\begin{align*}\n  13x +  by +  cz &= 0 \\\\\n   ax + 23y +  cz &= 0 \\\\\n   ax +  by + 42z &= 0.\n\\end{align*}Suppose that $ a \\ne 13$ and $ x \\ne 0$.  What is the value of\n\\[ \\frac{a}{a - 13} + \\frac{b}{b - 23} + \\frac{c}{c - 42} \\, ?\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "In the first equation, adding $(a-13)x$ to both sides gives us $ax+by+cz=(a-13)x$.  Solving for $x$, we have $$x = \\frac{ax+by+cz}{a-13}.$$Since $ a \\ne 13$ and $ x \\ne 0$, both sides of the equation are non-zero.  Similarly from the 2nd and 3rd equation,\n$$ y = \\frac{ax+by+cz}{b-23}$$and\n$$z = \\frac{ax+by+cz}{c-42}.$$Then we know that\n$$\\begin{aligned} ax+by+cz &= a \\cdot  \\frac{ax+by+cz}{a-13} + b \\cdot \\frac{ax+by+cz}{b-23} + c \\cdot \\frac{ax+by+cz}{c-42}\\\\\n&= (ax+by+cz)\\left(\\frac{a}{a-13} + \\frac{b}{b-23} + \\frac{c}{c-42}\\right). \\end{aligned} $$If $ax+by+cz = 0 $, then $x = \\frac{ax+by+cz}{a-13} = 0$. But we know $x\\ne0$. Hence, $ax+by+cz \\ne 0 $. Thus,\n$$\\frac{a}{a-13} + \\frac{b}{b-23} + \\frac{c}{c-42} = \\boxed{1}.$$"
-}

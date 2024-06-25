@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d,$ $e,$ $f,$ $g,$ and $h$ be real numbers such that $abcd = 4$ and $efgh = 9.$  Find the minimum value of\n\\[(ae)^2 + (bf)^2 + (cg)^2 + (dh)^2.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\n(ae)^2 + (bf)^2 + (cg)^2 + (dh)^2 &\\ge 4 \\sqrt[4]{(ae)^2 (bf)^2 (cg)^2 (dh)^2} \\\\\n&= 4 \\sqrt[4]{(abcdefgh)^2} \\\\\n&= 24.\n\\end{align*}Equality occurs when $(ae)^2 = (bf)^2 = (cg)^2 = (dh)^2,$ $abcd = 4,$ and $efgh = 9.$  For example, we can take $a = b = c = d = \\sqrt{2}$ and $e = f = g = h = \\sqrt{3}.$  Hence, the minimum value is $\\boxed{24}.$"
-}

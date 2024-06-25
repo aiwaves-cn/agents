@@ -1,6 +1,0 @@
-{
-    "problem": "Isosceles right triangle $ABC$ encloses a semicircle of area $2\\pi$. The circle has its center $O$ on hypotenuse $\\overline{AB}$ and is tangent to sides $\\overline{AC}$ and $\\overline{BC}$. What is the area of triangle $ABC$? [asy]\npair a=(4,4), b=(0,0), c=(0,4), d=(4,0), o=(2,2);\ndraw(circle(o, 2));\nclip(a--b--c--cycle);\ndraw(a--b--c--cycle);\ndot(o);\nlabel(\"$C$\", c, NW);\nlabel(\"$A$\", a, NE);\nlabel(\"$B$\", b, SW);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Reflect the triangle and the semicircle across the hypotenuse $\\overline{AB}$ to obtain a circle inscribed in a square. The circle has area $4\\pi$. The radius of a circle with area $4\\pi$ is 2. The side length of the square is 4 and the area of the square is 16. So the area of the triangle is $\\boxed{8}$. [asy]\npair a=(4,4), b=(0,0), c=(0,4), d=(4,0), o=(2,2);\ndraw(circle(o, 2));\ndraw(a--d--b--c--cycle);\ndraw(a--b);\nlabel(\"$C$\", c, NW);\nlabel(\"$A$\", a, NE);\nlabel(\"$B$\", b, SW);\nlabel(\"$D$\", d, SE);\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the largest possible integer $n$ such that $942!$ is divisible by $15^n$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $15 = 3^1 \\cdot 5^1$, the largest possible value of $n$ for which $15^n \\mid 942!$ is the largest possible value of $n$ for which both $3^n \\mid 942!$ and $5^n \\mid 942!$.  Since $942!$ has many more factors of 3 than it does 5, our answer will be the number of factors of 5 in $942!$. $$ \\frac{942}{5} = 188\\frac{2}{5} \\qquad \\frac{188}{5} = 37\\frac{3}{5} \\qquad \\frac{37}{5} = 7\\frac{2}{5} \\qquad \\frac{7}{5} = 1\\frac{2}{5} $$There are $188 + 37 + 7 + 1 = 233$ factors of 5 in $942!$, so the largest possible value of $n$ is $\\boxed{233}$."
-}

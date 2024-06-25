@@ -1,6 +1,0 @@
-{
-    "problem": "Four primes $a$, $b$, $c$ and $d$ form an increasing arithmetic sequence with $a > 5$ and common difference 6. What is the ones digit of $a$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Every prime number greater than 5 has a ones digit of 1, 3, 7, or 9.  For each of these digits, let's add 6, take the resulting ones digit, and repeat the process two more times. We get the following sequences of digits. \\begin{align*}\n1, 7, 3, 9 \\\\\n3, 9, 5, 1 \\\\\n7, 3, 9, 5 \\\\\n9, 5, 1, 7\n\\end{align*} Only the first of these sequences could be the sequence of ones digits of four prime numbers, since each of the other three sequences contains 5.  Therefore, the units digit of $a$ is $\\boxed{1}$. The example $a=11$ shows that there exists such a sequence of consecutive prime numbers."
-}

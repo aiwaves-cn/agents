@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive four-digit integer that is the product of two consecutive integers?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We look for the smallest positive integer $n$ for which $n(n+1)$ is greater than 999.  We expect this value of $n$ to be near $\\sqrt{1000}$, which is between 31 and 32. Trying $n=31$, we find that $31(32)=992$. Adding 1 gives us $n=32$ and $32(33)=\\boxed{1056}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The number $2017$ is prime. Let $S = \\sum \\limits_{k=0}^{62} \\dbinom{2014}{k}$. What is the remainder when $S$ is divided by $2017?$\n$\\textbf{(A) }32\\qquad \\textbf{(B) }684\\qquad \\textbf{(C) }1024\\qquad \\textbf{(D) }1576\\qquad \\textbf{(E) }2016\\qquad$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that $2014\\equiv -3 \\mod2017$. We have for $k\\ge1$\\[\\dbinom{2014}{k}\\equiv \\frac{(-3)(-4)(-5)....(-2-k)}{k!}\\mod 2017\\]\\[\\equiv (-1)^k\\dbinom{k+2}{k} \\mod 2017\\]\\[\\equiv (-1)^k\\dbinom{k+2}{2} \\mod 2017\\]Therefore\\[\\sum \\limits_{k=0}^{62} \\dbinom{2014}{k}\\equiv \\sum \\limits_{k=0}^{62}(-1)^k\\dbinom{k+2}{2} \\mod 2017\\]This is simply an alternating series of triangular numbers that goes like this: $1-3+6-10+15-21....$ After finding the first few sums of the series, it becomes apparent that\\[\\sum \\limits_{k=1}^{n}(-1)^k\\dbinom{k+2}{2}\\equiv -\\left(\\frac{n+1}{2} \\right) \\left(\\frac{n+1}{2}+1 \\right) \\mod 2017 \\textnormal{  if n is odd}\\]and\\[\\sum \\limits_{k=1}^{n}(-1)^k\\dbinom{k+2}{2}\\equiv \\left(\\frac{n}{2}+1 \\right)^2 \\mod 2017 \\textnormal{  if n is even}\\]Obviously, $62$ falls in the second category, so our desired value is\\[\\left(\\frac{62}{2}+1 \\right)^2 = 32^2 = \\boxed{1024}\\]"
-}

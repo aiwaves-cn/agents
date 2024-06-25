@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ the midpoint of $\\overline{BC}$ is $(1,5,-1),$ the midpoint of $\\overline{AC}$ is $(0,4,-2),$ and the midpoint of $\\overline{AB}$ is $(2,3,4).$  Find the coordinates of vertex $A.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $D,$ $E,$ $F$ be the midpoints of $\\overline{BC},$ $\\overline{AC},$ $\\overline{AB},$ respectively.  Then geometrically, $AEDF$ is a parallelogram.  This means the midpoints of $\\overline{AD}$ and $\\overline{EF}$ coincide.\n\n[asy]\nunitsize(0.5 cm);\n\npair A, B, C, D, E, F;\n\nA = (2,5);\nB = (0,0);\nC = (9,0);\nD = (B + C)/2;\nE = (A + C)/2;\nF = (A + B)/2;\n\ndraw(A--B--C--cycle);\ndraw(D--E--F--cycle);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, NW);\n[/asy]\n\nThe midpoint of $\\overline{EF}$ is\n\\[\\left( \\frac{0 + 2}{2}, \\frac{4 + 3}{2}, \\frac{4 - 2}{2} \\right) = \\left( 1, \\frac{7}{2}, 1\\right).\\]This is also the midpoint of $\\overline{AD},$ so we can find the coordinates of $A$ by doubling the coordinates of this midpoint, and subtracting the coordinates of $D$:\n\\[\\left( 2 \\cdot 1 - 1, 2 \\cdot \\frac{7}{2} - 5, 2 \\cdot 1 - (-1) \\right) = \\boxed{(1, 2, 3)}.\\]"
-}

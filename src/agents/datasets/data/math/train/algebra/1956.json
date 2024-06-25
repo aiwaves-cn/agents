@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $2^x+ 2^x+ 2^x+ 2^x= 512$, what is the value of $x$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "First, we simplify the left side, and we have \\[2^x+2^x+2^x+2^x = 4\\cdot 2^x = 2^2\\cdot 2^x = 2^{x+2}.\\]Noting that $512 = 2^9$, our equation now is $2^{x+2} = 2^9$, so $x+2 = 9$.  Therefore, $x=\\boxed{7}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A group of 10 Caltech students go to Lake Street for lunch. Each student eats at either Chipotle or Panda Express.  In how many different ways can the students collectively go to lunch?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "For each person, there are 2 choices: eat at Chipotle, or eat at Panda Express. To get the total number of outcomes, we multiply the number of possibilities for each person; $2 \\cdot 2 \\cdot 2 \\cdot \\ldots \\cdot 2 = 2^{10}=\\boxed{1024}$."
-}

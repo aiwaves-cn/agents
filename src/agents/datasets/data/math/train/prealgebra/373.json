@@ -1,6 +1,0 @@
-{
-    "problem": "There are 30 people in my math class.  12 of them have cool dads, 15 of them have cool moms, and 9 of them have cool dads and cool moms.  How many people have moms and dads who are both uncool?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "We can solve this with a Venn diagram.  First we notice that there are 9 people with both cool dads and cool moms.\n\n[asy]\n\nlabel(\"Cool Dad\", (2,75));\n\nlabel(\"Cool Mom\", (80,75));\n\ndraw(Circle((30,45), 22));\n\ndraw(Circle((58, 45), 22));\n\nlabel(scale(0.8)*\"$9$\", (44, 45));\n\n//label(scale(0.8)*\"$33$\",(28,45));\n\n//label(scale(0.8)*\"$23$\",(63,45));\n\n//label(scale(0.8)*\"$17$\", (70, 15));\n\n[/asy]\n\nSince 12 people have cool dads and 9 of those have cool moms, too, $12-9=3$ of the people have cool dads and uncool moms.  Likewise, $15-9=6$ people have cool moms and uncool dads.\n\n[asy]\n\nlabel(\"Cool Dad\", (2,75));\n\nlabel(\"Cool Mom\", (80,75));\n\ndraw(Circle((30,45), 22));\n\ndraw(Circle((58, 45), 22));\n\nlabel(scale(0.8)*\"$9$\", (44, 45));\n\nlabel(scale(0.8)*\"$3$\",(28,45));\n\nlabel(scale(0.8)*\"$6$\",(63,45));\n\n//label(scale(0.8)*\"$17$\", (70, 15));\n\n[/asy]\n\nThis means that $3+9+6=18$ people have at least one cool parent.  That leaves $30-18=\\boxed{12}$ sad people with a pair of uncool parents."
-}

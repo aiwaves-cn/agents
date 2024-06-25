@@ -1,6 +1,0 @@
-{
-    "problem": "Four packages are delivered to four houses, one to each house. If these packages are randomly delivered, what is the probability that exactly two of them are delivered to the correct houses? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Since there are 4 houses and 4 packages, we can choose ${4 \\choose 2} = 6$ pairs of houses to be the pair that will receive the correct package. In that case, the other two houses must have one another's package. The probability of this occuring for any arrangement is $\\frac{1}{4} \\cdot \\frac{1}{3} \\cdot \\frac{1}{2}$, as the first fraction represents the probability of a given house getting the correct package, and the second fraction the subsequent probability that the other given house gets the correct package, and the final fraction the probability that the last two houses have each other's packages. So, the probability is $6 \\cdot \\frac{1}{2 \\cdot 3 \\cdot 4} = \\boxed{\\frac{1}{4}}$."
-}

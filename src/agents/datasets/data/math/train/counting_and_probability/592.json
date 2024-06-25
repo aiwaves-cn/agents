@@ -1,6 +1,0 @@
-{
-    "problem": "Harry, Ron and Neville are having a race on their broomsticks.  If there are no ties, in how many different possible orders can they finish?",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "There are 3 ways to choose who finishes first.  For each possibility, there are 2 ways to choose who comes in second, and the remaining person comes in last.  That gives us $3\\cdot 2 \\cdot 1 = \\boxed{6}$ possible orders."
-}

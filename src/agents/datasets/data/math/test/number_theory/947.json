@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest prime number (in decimal form) that divides the sum, $$ 1_2 + 10_2 + 100_2 + \\cdots + 100000000_2. $$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We can see that \\begin{align*}\n1_2 + 10_2 + 100_2 + \\cdots + 100000000_2 &= 111111111_2 \\\\\n&= 1000000000_2 - 1\\\\\n& = 2^9 - 1.\n\\end{align*}We can factor $2^9 - 1 = 8^3 - 1$ as a difference of cubes to make our task easier: $$ 8^3 - 1 = (8 - 1)(8^2 + 8 + 1) = 7 \\cdot 73. $$Since $\\boxed{73}$ is prime, it is the largest prime divisor of the sum."
-}

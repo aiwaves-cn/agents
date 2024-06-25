@@ -1,6 +1,0 @@
-{
-    "problem": "Jimmy owns a cube-shaped container that measures $10$ inches on each side. He fills this container with water until it is half full. Then he throws ten giant ice cubes that measure $2$ inches on each side into the container. In inches cubed, how much of the container is unoccupied by ice or water?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "First let's compute the volume of the container. The container measures $10\\times10\\times10$ so its volume is  $$10\\cdot10\\cdot10=10^3=1000$$inches cubed. Since the container is only half full, there are $$\\frac{1}{2}\\cdot10^3=500$$inches cubed of water in it. Additionally, there are ten ice cubes each with a volume of $2^3$. This means that the total volume of the ice cubes is $$10\\cdot2^3=10\\cdot8=80.$$Altogether, the water and the ice cubes occupy $500+80=580$ inches cubed. This means that there are $1000-580=\\boxed{420}$ inches cubed of space in the container unoccupied by water and ice."
-}

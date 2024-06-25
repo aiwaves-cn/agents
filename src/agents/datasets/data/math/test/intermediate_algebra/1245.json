@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when the polynomial $x + x^3 + x^9 + x^{27} + x^{81} + x^{243}$ is divided by $x^2 - 1$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "When $x + x^3 + x^9 + x^{27} + x^{81} + x^{243}$ is divided by $x^2 - 1,$ the remainder is of the form $ax + b,$ so\n\\[x + x^3 + x^9 + x^{27} + x^{81} + x^{243} = (x^2 - 1) q(x) + ax + b\\]for some polynomial $q(x).$\n\nSetting $x = 1,$ we get\n\\[6 = a + b.\\]Setting $x = -1,$ we get\n\\[-6 = -a + b.\\]Solving this system, we find $a = 6$ and $b = 0,$ so the remainder is $\\boxed{6x}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\binom{23}{3}=1771$, $\\binom{23}{4}=8855$, and $\\binom{23}{5}=33649$, find $\\binom{25}{5}$.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We can use Pascal's identity $\\binom{n-1}{k-1}+\\binom{n-1}{k}=\\binom{n}{k}$ to find $\\binom{24}{4}$ and $\\binom{24}{5}$.\n\n$$\\binom{24}{4}=\\binom{23}{3}+\\binom{23}{4}=1771+8855=10626$$ $$\\binom{24}{5}=\\binom{23}{4}+\\binom{23}{5}=8855+33649=42504$$\n\nNow that we have $\\binom{24}{4}$ and $\\binom{24}{5}$, we can use Pascal's identity again to find $\\binom{25}{5}$.\n\n$$\\binom{25}{5}=\\binom{24}{4}+\\binom{24}{5}=10626+42504=\\boxed{53130}$$"
-}

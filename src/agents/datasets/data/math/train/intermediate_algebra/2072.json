@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $x^3$ is divided by $x^2 + 5x + 1.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "\\[\n\\begin{array}{c|cc cc}\n\\multicolumn{2}{r}{x} & -5 \\\\\n\\cline{2-5}\nx^2 + 5x + 1 & x^3& & &  \\\\\n\\multicolumn{2}{r}{x^3} & +5x^2 & +x  \\\\\n\\cline{2-4}\n\\multicolumn{2}{r}{} & -5x^2 & -x & \\\\\n\\multicolumn{2}{r}{} & -5x^2 & -25x & -5 \\\\\n\\cline{3-5}\n\\multicolumn{2}{r}{} & & 24x & +5 \\\\\n\\end{array}\n\\]Thus, the remainder is $\\boxed{24x + 5}.$"
-}

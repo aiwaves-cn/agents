@@ -1,6 +1,0 @@
-{
-    "problem": "The Grunters play the Screamers 4 times.  The Grunters are the much better team, and are $75\\%$ likely to win any given game.  What is the probability that the Grunters will win all 4 games? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Each of the 4 games is independent of the others, and in each game, the Grunters have probability $\\frac34$ of winning.  Therefore, to get the probability that the Grunters will win all 4 games, we multiply the probabilities that the Grunters win each individual game.  This gives:  \\begin{align*}\n&P(\\text{Grunters win all 4 games}) \\\\\n&\\quad= P(\\text{Grunters win Game 1}) \\times \\cdots \\times P(\\text{Grunters win Game 4}) \\\\\n&\\quad= \\frac{3}{4} \\times \\frac{3}{4} \\times \\frac{3}{4} \\times \\frac{3}{4} \\\\\n&\\quad= \\left(\\frac{3}{4}\\right)^{\\!4} = \\boxed{\\frac{81}{256}}.\n\\end{align*}"
-}

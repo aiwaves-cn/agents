@@ -1,6 +1,0 @@
-{
-    "problem": "Expand $(2t^2 -3t+2)(-3t^2 + t-5)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We use the distributive property to find \\begin{align*}\n&(2t^2 -3t+2)(-3t^2 + t-5)\\\\\n&=2t^2(-3t^2 + t-5) -3t(-3t^2 + t-5) + 2(-3t^2 + t-5)\\\\\n&=(-6t^4 + 2t^3-10t^2) +(9t^3 - 3t^2+15t) + (-6t^2 + 2t-10)\\\\\n&=-6t^4 + (2+9)t^3 + (-10 -3 -6)t^2 + (15+2)t - 10\\\\\n&=\\boxed{-6t^4 +11t^3 -19t^2 +17t -10}.\n\\end{align*}"
-}

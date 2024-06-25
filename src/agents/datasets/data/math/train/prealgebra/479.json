@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ has sides of $6$ units, $8$ units, and $10$ units. The width of a rectangle, whose area is equal to the area of the triangle, is $4$ units. What is the perimeter of this rectangle, in units?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We use the Pythagorean Theorem to verify that triangle $ABC$ is a right triangle, or we recognize that $(6,8,10)$ is a multiple of the Pythagorean triple $(3,4,5)$. The area of a right triangle is $\\frac{1}{2}bh$ where $b$ and $h$ are the lengths of the two legs, so the area of triangle $ABC$ is $\\frac{1}{2}(6)(8)=24$. If the area of the rectangle is $24$ square units and the width is $4$ units, then the length is $\\frac{24}{4}=6$ units. That makes the perimeter $6+6+4+4=\\boxed{20}$ units."
-}

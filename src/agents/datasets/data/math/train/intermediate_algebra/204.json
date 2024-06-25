@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $x^4 +x + 2$ is divided by $x-3$.",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "We divide the two given polynomials to obtain \\[\n\\begin{array}{c|ccccc}\n\\multicolumn{2}{r}{x^3} & +3x^2 & +9x & +28 & +\\frac{86}{x-3} \\\\\n\\cline{2-6}\nx-3 & x^4 & +0x^3 & +0x^2 &+ x &+ 2 \\\\\n\\multicolumn{2}{r}{-x^4} & +3x^3 & \\\\ \\cline{2-3}\n\\multicolumn{2}{r}{0} & 3x^3 & & & \\\\\n\\multicolumn{2}{r}{} & -3x^3 & + 9x^2 & & \\\\ \\cline{3-4}\n\\multicolumn{2}{r}{} & & 9x^2 & & \\\\\n\\multicolumn{2}{r}{} & & -9x^2 &+27x & \\\\ \\cline{4-5}\n\\multicolumn{2}{r}{} & & &+28x & \\\\\n\\multicolumn{2}{r}{} & & &-28x & +84 \\\\ \\cline{5-6}\n\\multicolumn{2}{r}{} & & & & 86, \\\\\n\\end{array}\n\\]which shows that the remainder is $\\boxed{86}$. Alternatively, we could use the remainder theorem, which states that the remainder when a polynomial $p(x)$ is divided by $x-a$, the remainder is $p(a)$. We find that the remainder is $3^4+3+2=86$."
-}

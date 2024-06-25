@@ -1,6 +1,0 @@
-{
-    "problem": "Let \\[f(n) = \\left\\{\n\\begin{array}{cl}\nn^3+2n-1 &\\text{ if }n>1, \\\\\nn-1 &\\text{ if }n \\le 1.\n\\end{array}\n\\right.\\]Find $f(0)+f(1)+f(2)$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Since $0 \\leq 1$, we use the second case to find $f(0)=0-1=-1$. Since $1 \\le 1$, we again use the second case to find $f(1)=1-1=0$. Since $2>1$, we use the first case to find $f(2)=2^3+2(2)-1=11$. Therefore, $f(0)+f(1)+f(2)=-1+0+11=\\boxed{10}$."
-}

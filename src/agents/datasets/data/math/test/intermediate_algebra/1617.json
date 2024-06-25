@@ -1,6 +1,0 @@
-{
-    "problem": "A polynomial with integer coefficients is of the form\n\\[7x^4 + a_3 x^3 + a_2 x^2 + a_1 x - 14 = 0.\\]Find the number of different possible rational roots of this polynomial.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By the Rational Root Theorem, the only possible rational roots are of the form $\\pm \\frac{a}{b},$ where $a$ divides 14 and $b$ divides 7.  Thus, the possible rational roots are\n\\[\\pm 1, \\ \\pm 2, \\ \\pm 7, \\ \\pm 14, \\ \\pm \\frac{1}{7}, \\ \\pm \\frac{2}{7}.\\]Thus, there are $\\boxed{12}$ possible rational roots."
-}

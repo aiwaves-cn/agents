@@ -1,6 +1,0 @@
-{
-    "problem": "If\n\\[\\cos 41^\\circ + \\sin 41^\\circ = \\sqrt{2} \\sin A,\\]where $0^\\circ < A < 90^\\circ,$ compute the degree measure of $A.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From the sum-to-product formula,\n\\begin{align*}\n\\cos 41^\\circ + \\sin 41^\\circ &= \\cos 41^\\circ + \\cos 49^\\circ \\\\\n&= 2 \\cos 45^\\circ \\cos 4^\\circ \\\\\n&= \\sqrt{2} \\sin 86^\\circ.\n\\end{align*}Thus, $A = \\boxed{86^\\circ}.$"
-}

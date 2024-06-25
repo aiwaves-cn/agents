@@ -1,6 +1,0 @@
-{
-    "problem": "Find all solutions to\n\\[\\sqrt{x + 3 - 4 \\sqrt{x - 1}} + \\sqrt{x + 8 - 6 \\sqrt{x - 1}} = 1.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that for the expression to be defined, we must have $x \\ge 1.$  Let $y = \\sqrt{x - 1}.$  Then $y^2 = x - 1,$ so $x = y^2 + 1.$  We can then write the given equation as\n\\[\\sqrt{y^2 - 4y + 4} + \\sqrt{y^2 - 6y + 9} = 1.\\]Thus, $\\sqrt{(y - 2)^2} + \\sqrt{(y - 3)^2} = 1,$ or\n\\[|y - 2| + |y - 3| = 1.\\]If $y < 2,$ then\n\\[|y - 2| + |y - 3| = 2 - y + 3 - y = 5 - 2y > 1.\\]If $y > 3,$ then\n\\[|y - 2| + |y - 3| = y - 2 + y - 3 = 2y - 5 > 1.\\]If $2 \\le y \\le 3,$ then\n\\[|y - 2| + |y - 3| = y - 2 + 3 - y = 1,\\]so we must have $2 \\le y \\le 3.$  Then\n\\[2 \\le \\sqrt{x - 1} \\le 3,\\]so\n\\[4 \\le x - 1 \\le 9,\\]or $5 \\le x \\le 10.$  Thus, the solution is $x \\in \\boxed{[5,10]}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $r$ such that \\[\\frac{r^2 - 5r + 4}{r^2-8r+7} = \\frac{r^2 - 2r -15}{r^2 -r - 20}.\\]",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We could cross-multiply, but that looks terrifying.  Instead, we start by factoring each of the quadratics, hoping that we'll get some convenient cancellation.  Factoring each of the 4 quadratics gives  \\[\\frac{(r-4)(r-1)}{(r-7)(r-1)} = \\frac{(r-5)(r+3)}{(r-5)(r+4)}.\\]Canceling the common factors on each side gives us  \\[\\frac{r-4}{r-7} = \\frac{r+3}{r+4}.\\]Cross-multiplying gives $(r-4)(r+4) = (r+3)(r-7)$.  Expanding both sides gives $r^2 - 16 = r^2 - 4r - 21$.  Solving for $r$ gives $r=\\boxed{-5/4}$."
-}

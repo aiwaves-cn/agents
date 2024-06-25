@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers between $500$ and $1000$ contain both the digits $3$ and $4$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "First we notice that the hundreds digit of any integer between $500$ and $1000$ cannot be $3$ or $4$, so $3$ and $4$ must be the units and tens digits (in either the order $34$ or $43$). Since the integer must be between $500$ and $1000$, there are $5$ choices for the hundreds digit of this integer ($5$, $6$, $7$, $8$, or $9$). Thus, there are $2 \\times 5 = \\boxed{10}$ ways to form such a number."
-}

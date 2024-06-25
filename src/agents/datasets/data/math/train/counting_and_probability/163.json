@@ -1,6 +1,0 @@
-{
-    "problem": "When three standard dice are tossed, the numbers $a,b,c$ are obtained. Find the probability that $abc = 180$.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We first factor 180 into three positive integers from the set $\\{1,2,3,4,5,6\\}$. Since $180 > 5^3 = 125,$ at least one of the integers must be 6. Since $180 > 5^2\\cdot 6 = 150$, at least two integers must equal 6. Indeed, $180 = 5\\cdot6\\cdot6$ is the only such way to factor 180. Therefore, $(a,b,c) = (5,6,6), (6,5,6),(6,6,5)$ are the only possibilities for $a,b,c$. Each occurs with probability $\\left(\\frac16\\right)^3 = \\frac1{216}$, so the probability that $abc = 180$ is $3\\cdot \\frac1{216} = \\boxed{\\frac1{72}}$."
-}

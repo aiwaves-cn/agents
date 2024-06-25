@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$: $$81^{2x} = 27^{3x - 4}.$$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Rewriting both sides with $3$ as the base, we have $81^{2x} = (3^4)^{2x} = 3^{8x}$ and $27^{3x-4} = (3^3)^{3x - 4} = 3^{9x - 12}$, and so our equation is $$3^{8x} = 3^{9x - 12}.$$Then, setting the exponents equal to each other, we obtain $$8x = 9x - 12.$$This yields our solution $\\boxed{x = 12}.$"
-}

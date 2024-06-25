@@ -1,6 +1,0 @@
-{
-    "problem": "I have 6 shirts, 6 pairs of pants, and 6 hats.  Each item comes in the same 6 colors (so that I have one of each item of each color).  I refuse to wear an outfit in which all 3 items are the same color.  How many choices for outfits do I have?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The number of all outfit combinations is $6\\times 6\\times 6=216$. There are 6 outfits in which all three items are the same color. Thus there are $216-6=\\boxed{210}$ outfits in which not all three items are the same color."
-}

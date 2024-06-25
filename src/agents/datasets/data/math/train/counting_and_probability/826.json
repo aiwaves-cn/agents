@@ -1,6 +1,0 @@
-{
-    "problem": "A bin has 5 green balls and $k$ purple balls in it, where $k$ is an unknown positive integer.  A ball is drawn at random from the bin.  If a green ball is drawn, the player wins 2 dollars, but if a purple ball is drawn, the player loses 2 dollars.  If the expected amount won for playing the game is 50 cents, then what is $k$?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are 5 green balls and $5+k$ total balls, so the probability that a green ball is drawn is $\\dfrac{5}{5+k}$. Similarly, the probability that a purple ball is drawn is $\\dfrac{k}{5+k}$. So the expected value is $$\\frac{5}{5+k}(2)+\\frac{k}{5+k}(-2)=\\frac{1}{2}$$.\n\nMultiplying both sides of the equation by $2(5+k)$ gives $20-4k=5+k$, or $15=5k$. Therefore, $\\boxed{k=3}$."
-}

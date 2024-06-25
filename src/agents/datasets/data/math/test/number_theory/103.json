@@ -1,6 +1,0 @@
-{
-    "problem": "Find the positive base $b$ in which the equation $5 \\cdot 25_b = 137_b$ is valid.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "When we rewrite the base numbers as sums of digit bundles, we get the equation $$ 5 \\cdot (2b + 5) = b^2 + 3b+7 \\ \\ \\Rightarrow \\ \\ b^2 - 7b - 18 = 0. $$Solving this quadratic equation, we get $b = 9$ and $b = -2$.  But, since the base must be positive, $b = \\boxed{9}$. We can check our answer by verifying that $5 \\cdot 25_9 = 137_9$, which turns out to be true."
-}

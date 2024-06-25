@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$ with $\\angle B = 90^\\circ$, we have $\\sin A = 2\\cos A$.  What is $\\tan A$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The triangle is shown below:\n\n[asy]\npair A,B,C;\nA = (0,0);\nB = (5,0);\nC = (5,10);\ndraw(A--B--C--A);\ndraw(rightanglemark(C,B,A,16));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\n[/asy]\n\nWe have $\\sin A = \\frac{BC}{AC}$ and $\\cos A = \\frac{AB}{AC}$, so $\\sin A = 2\\cos A$ gives us $\\frac{BC}{AC} = 2\\cdot\\frac{AB}{AC}$.  Multiplying both sides by $AC$ gives $BC = 2AB$, so $\\frac{BC}{AB} = 2$.  Finally, we have $\\tan A = \\frac{BC}{AB} = \\boxed{2}$.\n\nWe also could have noted that $\\tan A = \\frac{\\sin A}{\\cos A} = \\frac{2\\cos A}{\\cos A } =\\boxed{2}$."
-}

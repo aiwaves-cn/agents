@@ -1,6 +1,0 @@
-{
-    "problem": "What is the circumference of the circle defined by $x^2+6x +y^2-12y-4=0$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Add $(6/2)^2$ and $(-12/2)^2$ to both sides to find that the given equation is equivalent to  \\[\n(x^2+6x +9)+(y^2-12y +36)=49.\n\\] The two trinomials on the left-hand side may be rewritten to give $(x+3)^2 + (y-6)^2 =7^2$. The set of points $(x,y)$ which satisfy this equation are a distance of 7 units from $(-3,6)$, by the Pythagorean theorem. Hence, the equation defines a circle of radius $7$, which implies that the circumference of the circle is $2 \\pi \\cdot 7 = \\boxed{14 \\pi}$."
-}

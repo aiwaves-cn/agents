@@ -1,6 +1,0 @@
-{
-    "problem": "Which type of conic section is described by the equation \\[|y+5| = \\sqrt{(x-2)^2 + y^2}?\\]Enter \"C\" for circle, \"P\" for parabola, \"E\" for ellipse, \"H\" for hyperbola, and \"N\" for none of the above.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We try to rewrite the given equation in one of the standard forms of a conic section. Because both sides are nonnegative, we may square both sides, knowing that this operation is reversible: \\[(y+5)^2 = (x-2)^2 + y^2.\\]Then \\[(y+5)^2 - y^2 = (x-2)^2,\\]or \\[10y + 25 = x^2 - 4x + 4.\\]Because there is an $x^2$ term but no $y^2$ term, we recognize that this equation describes a $\\boxed{\\text{(P)}}$ parabola."
-}

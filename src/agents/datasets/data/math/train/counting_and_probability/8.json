@@ -1,6 +1,0 @@
-{
-    "problem": "Sue owns 11 pairs of shoes: six identical black pairs, three identical brown pairs and two identical gray pairs. If she picks two shoes at random, what is the probability that they are the same color and that one is a left shoe and the other is a right shoe? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We will consider these by the cases of what our first shoe selection is. If our first shoe is black, which happens with probability $\\frac{12}{22}$, then our second shoe will be black and for the opposite foot with probability $\\frac{6}{21}$. Likewise, for brown shoes, our probability is the product $\\frac{6}{22} \\cdot \\frac{3}{21}$. And for gray, $\\frac{4}{22} \\cdot \\frac{2}{21}$. So the sum is equal to $\\frac{12\\cdot 6 + 6 \\cdot 3 + 4 \\cdot 2}{22 \\cdot 21} = \\frac{98}{33\\cdot 14} = \\boxed{\\frac{7}{33}}$."
-}

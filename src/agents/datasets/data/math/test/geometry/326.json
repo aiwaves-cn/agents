@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ has three different integer side lengths. Side $AC$ is the longest side and side $AB$ is the shortest side. If the perimeter of $ABC$ is 384 units, what is the greatest possible difference $AC - AB$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "For this problem we must remember the Triangle Inequality Theorem that states that the shortest side must be longer than the positive difference of the other two sides. We will try to make a long skinny triangle with side $AB$ as short as possible. First we try making $AB$ equal to 1 unit.  Then the other two sides must have a difference less than 1 unit in order to form a triangle. The closest we can come with integers is 191 and 192, but that won't work. The shorter sides will lay flat on the longest side and will fail to make a triangle. Next we try making AB equal to 2 units. If the  other two sides were 191 each, we would have a triangle, but all three sides would not have different lengths. If the other two sides were 190 and 192, we wouldn't have a triangle. Finally, we try making $AB$ equal to 3 units. Then the other two sides could be 190 and 191 units, and we can now form a  triangle. The greatest possible difference is therefore $191 - 3 = \\boxed{188\\text{ units}}$."
-}

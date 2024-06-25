@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $101^{3} - 3 \\cdot 101^{2} + 3 \\cdot 101 -1$?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The given expression is the expansion of $(101-1)^3$. In general, the expansion of $(a-b)^3$ is equal to  \\[a^3-3\\cdot a^2\\cdot b+3\\cdot a\\cdot b^2-b^3\\]\n\nIn this case, $a=101,b=1$. Thus $101^3-3\\cdot 101^2+3\\cdot 101-1=(101-1)^3$; we can easily calculate $100^3=\\boxed{1000000}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Expand $-(3-c)(c+2(3-c))$. What is the sum of the coefficients of the expanded form?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Simplifying the term $(c+2(3-c))$ gives $c+6-2c=6-c$. Distributing the negative sign over the first term gives $-(3-c)=c-3$. So our product is $$(c-3)(6-c)=6c-c^2-18+3c=-c^2+9c-18.$$ The sum of the coefficients is $(-1)+(9)+(-18)=\\boxed{-10}$."
-}

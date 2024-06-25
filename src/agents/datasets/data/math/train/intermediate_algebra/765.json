@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x_1, x_2, \\ldots, x_n$ be real numbers which satisfy $|x_i| < 1$ for $i = 1, 2, \\dots, n,$ and \\[|x_1| + |x_2| + \\dots + |x_n| = 19 + |x_1 + x_2 + \\dots + x_n|.\\]What is the smallest possible value of $n$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The left-hand side satisfies \\[|x_1| + |x_2| + \\dots + |x_n| < 1 + 1 + \\dots + 1 = n,\\]while the right-hand side satisfies \\[19 + |x_1 + x_2 + \\dots + x_n| \\ge 19.\\]Therefore, $n > 19,$ so $n \\ge 20.$ It is possible that $n=20,$ since, for example, we can choose \\[\\begin{aligned} x_1 = x_2 = \\dots = x_{10} &= \\tfrac{19}{20}, \\\\ x_{11} =x_{12} = \\dots =x_{20}& = -\\tfrac{19}{20}, \\end{aligned}\\]which makes $|x_1| + |x_2| + \\dots = |x_{20}| = 19$ and $|x_1 + x_2 + \\dots + x_{20}| = 0.$ Therefore the answer is $\\boxed{20}.$"
-}

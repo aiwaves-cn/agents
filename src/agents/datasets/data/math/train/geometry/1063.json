@@ -1,6 +1,0 @@
-{
-    "problem": "The sides of a triangle have lengths of $15$, $20$, and $25$. Find the length of the shortest altitude.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "First notice that this is a right triangle, so two of the altitudes are the legs, whose lengths are $15$ and $20$.  The third altitude, whose length is  $x$, is the one drawn to the hypotenuse. The area of the triangle is $\\frac{1}{2}(15)(20) = 150$. Using 25 as the base and $x$ as the altitude, we have $$\n\\frac{1}{2}(25)x = 150, \\quad \\text{so} \\quad\nx = \\frac{300}{25} = \\boxed{12}.\n$$\n\n\n[asy]\ndraw((0,0)--(15,0)--(0,20)--cycle);\ndraw((0,0)--(9.6,7.2),dashed);\nlabel(\"15\",(7.5,0),S);\nlabel(\"20\",(0,10),W);\nlabel(\"25\",(7.5,10),NE);\nlabel(\"$x$\",(4.8,3.6),N);\n[/asy]\n\n$$\n\\text{OR}\n$$\n\nSince the three right triangles in the figure are similar, $$\n\\frac{x}{15} = \\frac{20}{25}, \\quad \\text{so} \\quad\nx=\\frac{300}{25} = \\boxed{12}.\n$$"
-}

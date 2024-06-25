@@ -1,6 +1,0 @@
-{
-    "problem": "Compute \\[\\sum_{k=2}^{63} \\log_2\\left(1 + \\frac{1}{k}\\right) \\log_k 2 \\log_{k+1} 2.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can rewrite the summand as \\[\\begin{aligned} \\log_2\\left(1+\\frac1k\\right) \\log_k2 \\log_{k+1}2 &= \\frac{ \\log_2\\left(\\frac{k+1}{k}\\right)}{\\log_2 k \\log_2 (k+1)} \\\\ &= \\frac{\\log_2(k+1) - \\log_2 k}{\\log_2 k \\log_2 (k+1)} \\\\ &= \\frac{1}{\\log_2 k} - \\frac{1}{\\log_2 (k+1)}. \\end{aligned}\\]Therefore, the sum telescopes: \\[\\begin{aligned} \\sum_{k=2}^{63} \\log_2\\left(1 + \\frac{1}{k}\\right) \\log_k 2 \\log_{k+1} 2 &= \\left(\\frac{1}{\\log_2 2} - \\frac{1}{\\log_2 3}\\right) + \\left(\\frac{1}{\\log_2 3} - \\frac1{\\log_2 4}\\right) + \\dots + \\left(\\frac{1}{\\log_2 63} - \\frac{1}{\\log_2 64}\\right) \\\\ &= \\frac{1}{\\log_2 2} - \\frac{1}{\\log_2 64} \\\\ &= 1 - \\frac16 \\\\ &= \\boxed{\\frac56}. \\end{aligned}\\]"
-}

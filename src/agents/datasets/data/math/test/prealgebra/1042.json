@@ -1,6 +1,0 @@
-{
-    "problem": "An ordinary $6$-sided die has a number on each face from $1$ to $6$ (each number appears on one face). How many ways can I paint two faces of a die blue, so that the product of the numbers on the painted faces isn't equal to $6$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "First, let's ignore the requirement that the product can't be $6$. Then I can pick the first blue face in $6$ ways, and the second blue face in $5$ ways, making $6\\cdot 5 = 30$ choices in all. But we've actually counted each possible result twice, because it makes no difference which of the two blue faces I chose first and which I chose second. So the number of different pairs of faces is really $(6\\cdot 5)/2$, or $15$.\n\nNow we exclude the pairs which have a product of $6$. There are two such pairs: $\\{1,6\\}$ and $\\{2,3\\}$. That leaves me $\\boxed{13}$ pairs of faces I can paint blue."
-}

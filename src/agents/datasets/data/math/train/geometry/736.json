@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $\\triangle JKL$ shown, $\\tan K = \\frac{3}{2}$. What is $KL$?\n\n[asy]\npair J,K,L;\nL = (0,0);\nJ = (0,3);\nK = (2,3);\ndraw(L--J--K--L);\ndraw(rightanglemark(L,J,K,7));\nlabel(\"$L$\",L,SW);\nlabel(\"$J$\",J,NW);\nlabel(\"$K$\",K,NE);\nlabel(\"$2$\",(J+K)/2,N);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Because $\\triangle JKL$ is a right triangle, $\\tan K = \\frac{JL}{JK}$. So $\\tan K = \\frac{3}{2} = \\frac{JL}{2}$. Then $JL = 3$.\n\nBy the Pythagorean Theorem, $KL = \\sqrt{JL^2 + JK^2} = \\sqrt{3^2 + 2^2} = \\boxed{\\sqrt{13}}$."
-}

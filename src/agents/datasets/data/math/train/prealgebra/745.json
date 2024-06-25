@@ -1,6 +1,0 @@
-{
-    "problem": "How many diagonals does a convex polygon with 23 sides have?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If the polygon has 23 sides, then it has 23 vertices. A diagonal is created by choosing 2 non-adjacent vertices and connecting them. First we choose a vertex. There are 23 choices. Then we choose another vertex that is not adjacent to the one we already chose. There are 20 choices for this. However, we have double counted all the diagonals, so the number of diagonals is $\\frac{23 \\cdot 20}{2}=23 \\cdot 10=\\boxed{230} \\text{ diagonals}$."
-}

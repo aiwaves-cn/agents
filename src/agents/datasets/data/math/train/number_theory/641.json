@@ -1,6 +1,0 @@
-{
-    "problem": "Convert $1011001_2$ to base 4.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since $2^2 = 4$, we can convert directly to base 4 by pairing digits together starting from the right side of our base 2 integer:  \\begin{align*} 01_2 &= 1_4\n\\\\ 01_2 &= 1_4\n\\\\ 10_2 &= 2_4\n\\\\ 01_2 &= 1_4\n\\end{align*}  Putting the base 4 digits together, we get $1011001_2 = \\boxed{1121_4}$."
-}

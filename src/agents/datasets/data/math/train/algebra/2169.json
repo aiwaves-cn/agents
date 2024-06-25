@@ -1,6 +1,0 @@
-{
-    "problem": "Three of the four vertices of a rectangle are $(5, 11)$, $(16, 11)$ and $(16, -2)$. What is the area of the intersection of this rectangular region and the region inside the graph of the equation $(x - 5)^2 + (y + 2)^2 = 9$? Express your answer in terms of $\\pi$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The sides of the rectangle are parallel to the axes, so the fourth point must make a vertical line with (5,11) and a horizontal one with (16,-2); this means that the fourth point is (5,-2). The graph of the region inside the equation is a circle with radius 3 and center (5,-2): [asy]\nsize(150);\ndefaultpen(linewidth(.8pt));\n\nfill(Arc((5,-2),3,0,90)--(5,-2)--cycle,gray);\ndraw(Circle((5,-2),3));\ndraw((5,-2)--(16,-2)--(16,11)---(5,11)--cycle);\n[/asy] Since each angle of a rectangle is $90^{\\circ}$ and the corner coincides with the center of the circle, the rectangle covers exactly a quarter of the circle. The area of the intersection is thus $\\frac14r^2\\pi=\\frac14\\cdot3^2\\pi=\\boxed{\\frac94\\pi}$."
-}

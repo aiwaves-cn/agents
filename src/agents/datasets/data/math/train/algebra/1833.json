@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify and write the result as a common fraction: $$\\sqrt{\\sqrt[3]{\\sqrt{\\frac{1}{4096}}}}$$",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "First, notice that $4096=4^6$.  We can begin simplifying from the innermost square root: $$\\sqrt{\\sqrt[3]{\\frac{1}{\\sqrt{4096}}}}=\\sqrt{\\sqrt[3]{\\frac{1}{64}}}=\\sqrt{\\frac{1}{4}}=\\frac{1}{\\sqrt{4}}=\\boxed{\\frac{1}{2}}$$"
-}

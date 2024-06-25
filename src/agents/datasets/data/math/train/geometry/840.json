@@ -1,6 +1,0 @@
-{
-    "problem": "A 6 cm by 8 cm rectangle is inscribed in a circle. What is the number of centimeters in the circumference of the circle? Express your answer in terms of $\\pi$.\n\n[asy]import graph;\ndefaultpen(linewidth(0.7));\ndraw(Circle((0,0),20));\ndraw((-16,-12)--(16,-12)--(16,12)--(-16,12)--cycle);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Draw a diagonal of the rectangle.  By the Pythagorean theorem, the length of the diagonal is $\\sqrt{6^2+8^2}=10$ centimeters.  Also, by symmetry the diagonal of the rectangle is a diameter of the circle.  The circumference of the circle is $\\pi\\times (\\text{diameter})=\\boxed{10\\pi}$ centimeters. [asy]\nimport graph;\ndefaultpen(linewidth(0.7));\ndraw(Circle((0,0),20));\ndraw((-16,-12)--(16,-12)--(16,12)--(-16,12)--cycle);\ndraw((16,-12)--(-16,12));\ndraw(rightanglemark((16,-12),(16,12),(-16,12),45));[/asy]"
-}

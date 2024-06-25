@@ -1,6 +1,0 @@
-{
-    "problem": "A circle is inscribed  in a square, then a square is inscribed  in this circle, and finally, a circle is inscribed  in this square. What is the ratio of the area of the smaller circle to the area of the larger square?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let the radius of the smaller circle be $r$. Then the side length of the smaller square is $2r$. The radius of the larger circle is half the length of the diagonal of the smaller square, so it is $\\sqrt{2}r$. Hence the larger square has sides of length $2\\sqrt{2}r$. The ratio of the area of the smaller circle to the area of the larger square is therefore \\[\n\\frac{\\pi r^2}{\\left(2\\sqrt{2}r\\right)^2} =\\boxed{\\frac{\\pi}{8}}.\n\\]\n\n[asy]\ndraw(Circle((0,0),10),linewidth(0.7));\ndraw(Circle((0,0),14.1),linewidth(0.7));\ndraw((0,14.1)--(14.1,0)--(0,-14.1)--(-14.1,0)--cycle,linewidth(0.7));\ndraw((-14.1,14.1)--(14.1,14.1)--(14.1,-14.1)--(-14.1,-14.1)--cycle,linewidth(0.7));\ndraw((0,0)--(-14.1,0),linewidth(0.7));\ndraw((-7.1,7.1)--(0,0),linewidth(0.7));\nlabel(\"$\\sqrt{2}r$\",(-6,0),S);\nlabel(\"$r$\",(-3.5,3.5),NE);\nlabel(\"$2r$\",(-7.1,7.1),W);\nlabel(\"$2\\sqrt{2}r$\",(0,14.1),N);\n[/asy]"
-}

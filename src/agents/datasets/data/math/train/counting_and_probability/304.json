@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\frac{6! + 7!}{5!}$",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "This simplifies nicely because $5!$ divides both $6!$ and $7!$ evenly:\n\n\n\\begin{align*}\n\\frac{6! + 7!}{5!} &=\\frac{6!}{5!} + \\frac{7!}{5!}\\\\&= 6 + 6 \\cdot 7\\\\\n&= 6 \\cdot 8 \\\\\n&= \\boxed{48}\n\\end{align*}"
-}

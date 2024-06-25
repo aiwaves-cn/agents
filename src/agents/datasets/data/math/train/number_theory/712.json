@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $11^5\\equiv n\\pmod 9$, where $0\\le n<9$.\n\nWhat is the value of $n$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We have $11\\equiv 2\\pmod 9$. Therefore, we have \\begin{align*}\n11^5 &\\equiv 2^5 \\\\\n&= 32 \\\\\n&\\equiv \\boxed{5}\\pmod 9.\n\\end{align*}"
-}

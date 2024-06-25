@@ -1,6 +1,0 @@
-{
-    "problem": "If $w$, $x$, $y$, and $z$ are real numbers satisfying: \\begin{align*}\nw+x+y &= -2, \\\\\nw+x+z &= 4, \\\\\nw+y+z &= 19, \\text{ and} \\\\\nx+y+z &= 12,\n\\end{align*} what is $wx + yz$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Adding all four equations together results in $3w+3x+3y+3z = 33 \\Rightarrow w+x+y+z = 11$. Subtracting the four original equations from this sum gives: $z = 11-(-2) = 13$, $y = 11-4 = 7$, $x = 11-19 = -8$, and $w = 11-12 = -1$, respectively. Therefore, $wx + yz = -1\\cdot-8 + 7\\cdot13 = 8+91 = \\boxed{99}$"
-}

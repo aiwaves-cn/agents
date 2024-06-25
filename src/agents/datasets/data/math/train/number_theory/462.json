@@ -1,6 +1,0 @@
-{
-    "problem": "Find the greatest common divisor of $10293$ and $29384$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We use the Euclidean algorithm to find the greatest common divisor. \\begin{align*}\n\\text{gcd}\\,(10293,29384) &=\\text{gcd}\\,(29384-2 \\cdot 10293,10293)\\\\\n&=\\text{gcd}\\,(8798,10293)\\\\\n&=\\text{gcd}\\,(8798,10293-8798)\\\\\n&=\\text{gcd}\\,(8798,1495)\\\\\n&=\\text{gcd}\\,(8798-1495 \\cdot 5 ,1495)\\\\\n&=\\text{gcd}\\,(1323,1495)\\\\\n&=\\text{gcd}\\,(1323,1495-1323)\\\\\n&=\\text{gcd}\\,(1323,172)\\\\\n&=\\text{gcd}\\,(1323-172 \\cdot 7 ,172)\\\\\n&=\\text{gcd}\\,(119,172)\\\\\n&=\\text{gcd}\\,(119,172-119)\\\\\n&=\\text{gcd}\\,(119,53)\\\\\n&=\\text{gcd}\\,(119-53 \\cdot 2,53)\\\\\n&=\\text{gcd}\\,(13,53).\\\\\n\\end{align*}At this point we can see that since $53$ is not divisible by the prime number $13$, the greatest common divisor is just $\\boxed{1}$."
-}

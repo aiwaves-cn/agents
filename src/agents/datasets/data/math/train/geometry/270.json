@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $VWX$ shown, $VX = \\sqrt{13}$ and $VW = 3$. What is $\\tan V$?\n\n[asy]\npair V,W,X;\nW = (0,0);\nV = (0,3);\nX = (2,0);\ndraw(V--W--X--V);\ndraw(rightanglemark(V,W,X,7));\nlabel(\"$W$\",W,SW);\nlabel(\"$V$\",V,NW);\nlabel(\"$X$\",X,SE);\nlabel(\"$3$\",(V+W)/2,NW);\nlabel(\"$\\sqrt{13}$\",(V+X)/2,NE);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Because $\\triangle VWX$ is a right triangle, $\\tan V = \\frac{WX}{VW}$.\n\nBy the Pythagorean Theorem, $$WX = \\sqrt{VX^2 - WX^2} = \\sqrt{13 - 9} = \\sqrt{4} = 2.$$Then $\\tan V = \\boxed{\\frac{2}{3}}$."
-}

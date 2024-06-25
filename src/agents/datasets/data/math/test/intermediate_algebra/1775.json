@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $(a_n)$ is defined by $a_1 = 14$ and\n\\[a_n = 24 - 5a_{n - 1}\\]for all $n \\ge 2.$  Then the formula for the $n$th term can be expressed in the form $a_n = p \\cdot q^n + r,$ where $p,$ $q,$ and $r$ are constants.  Find $p + q + r.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Taking $n = 1,$ we get $pq + r = 14.$  Also, from the formula $a_n = 24 - 5a_{n - 1},$\n\\[p \\cdot q^n + r = 24 - 5(p \\cdot q^{n - 1} + r) = 24 - 5p \\cdot q^{n - 1} - 5r.\\]We can write this as\n\\[pq \\cdot q^{n - 1} + r = 24 - 5p \\cdot q^{n - 1} - 5r.\\]Then we must have $pq = -5p$ and $r = 24 - 5r.$  Hence, $6r = 24,$ so $r = 4.$\n\nFrom $pq + 5p = 0,$ $p(q + 5) = 0,$ so $p = 0$ or $q = -5.$  If $p = 0,$ then $r = 14,$ contradiction, so $q = -5.$  Then\n\\[-5p + 4 = 14,\\]whence $p = -2.$  Therefore, $p + q + r = (-2) + (-5) + 4 = \\boxed{-3}.$"
-}

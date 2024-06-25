@@ -1,6 +1,0 @@
-{
-    "problem": "Compute \\[ \\frac {\\sum_{n = 1}^{44} \\cos n^\\circ}{\\sum_{n = 1}^{44} \\sin n^\\circ} .\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $A = \\sum_{n = 1}^{44} \\cos n^\\circ$ and $B = \\sum_{n = 1}^{44} \\sin n^\\circ.$\n\nFrom the angle subtraction formula,\n\\[\\cos (45^\\circ - n^\\circ) = \\cos 45^\\circ \\cos n^\\circ + \\sin 45^\\circ \\sin n^\\circ = \\frac{1}{\\sqrt{2}} \\cos n^\\circ + \\frac{1}{\\sqrt{2}} \\sin n^\\circ,\\]so $\\cos n^\\circ + \\sin n^\\circ = \\sqrt{2} \\cos (45^\\circ - n^\\circ).$  Summing over $1 \\le n \\le 44,$ we get\n\\[A + B = \\sqrt{2} \\sum_{n = 1}^{44} \\cos (45^\\circ - n^\\circ) = A \\sqrt{2}.\\]Then $B = A \\sqrt{2} - A = A (\\sqrt{2} - 1),$ so\n\\[\\frac{A}{B} = \\frac{A}{A (\\sqrt{2} - 1)} = \\boxed{1 + \\sqrt{2}}.\\]"
-}

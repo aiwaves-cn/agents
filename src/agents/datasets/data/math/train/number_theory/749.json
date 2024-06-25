@@ -1,6 +1,0 @@
-{
-    "problem": "\"Modulo $m$ graph paper\" consists of a grid of $m^2$ points, representing all pairs of integer residues $(x,y)$ where $0\\le x<m$. To graph a congruence on modulo $m$ graph paper, we mark every point $(x,y)$ that satisfies the congruence. For example, a graph of $y\\equiv x^2\\pmod 5$ would consist of the points $(0,0)$, $(1,1)$, $(2,4)$, $(3,4)$, and $(4,1)$.\n\nThe graphs of $$y\\equiv 5x+2\\pmod{16}$$and $$y\\equiv 11x+12\\pmod{16}$$on modulo $16$ graph paper have some points in common. What is the sum of the $x$-coordinates of those points?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We are looking for pairs $(x,y)$ that satisfy both $y\\equiv 5x+2$ and $y\\equiv 11x+12\\pmod{16}$. Thus, the $x$-coordinates in all such pairs satisfy $$5x+2 \\equiv 11x+12\\pmod{16}.$$Subtracting $5x+2$ from both sides of this congruence, we have $$0 \\equiv 6x+10\\pmod{16},$$which is equivalent to $$0 \\equiv 6x-6\\pmod{16}$$(since $10\\equiv -6\\pmod{16}$).\n\nThus the solutions we seek are values $x$ in the range $0\\le x<16$ such that $16$ divides $6(x-1)$. The solutions are $x=1,$ $x=9,$ so the sum of $x$-coordinates is $1+9=\\boxed{10}$.\n\n(As a check, note that the pairs $(1,7)$ and $(9,15)$ satisfy both of the original congruences, so these are the points shared by the two graphs.)"
-}

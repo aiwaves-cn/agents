@@ -1,6 +1,0 @@
-{
-    "problem": "If altitude $CD$ is $\\sqrt3$ centimeters, what is the number of square centimeters in the area of $\\Delta ABC$?\n\n[asy] import olympiad; pair A,B,C,D; A = (0,sqrt(3)); B = (1,0);\nC = foot(A,B,-B); D = foot(C,A,B); draw(A--B--C--A); draw(C--D,dashed);\nlabel(\"$30^{\\circ}$\",A-(0.05,0.4),E);\nlabel(\"$A$\",A,N);label(\"$B$\",B,E);label(\"$C$\",C,W);label(\"$D$\",D,NE);\ndraw((0,.1)--(.1,.1)--(.1,0)); draw(D + .1*dir(210)--D + sqrt(2)*.1*dir(165)--D+.1*dir(120));\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "From 30-60-90 right triangle $ACD$ with hypotenuse $\\overline{AC}$ and shorter leg $\\overline{CD}$, we have $AC = 2CD = 2\\sqrt{3}$.\n\nFrom 30-60-90 triangle $ABC$ with shorter leg $\\overline{BC}$ and longer leg $\\overline{AC}$, we have $AC = BC \\sqrt{3}$.  Since $AC = 2\\sqrt{3}$, we have $BC = 2$.  Therefore, the area of $\\triangle ABC$ is  \\[\\frac{(AC)(BC)}{2} = \\frac{(2\\sqrt{3})(2)}{2} = \\boxed{2\\sqrt{3}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Alice and Bob both go to a party which starts at 5:00. Each of them arrives at a random time between 5:00 and 6:00. What is the probability that the number of minutes Alice is late for the party plus the number of minutes Bob is late for the party is less than 45? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We let the $x$-axis represent the time Alice arrives at the party, and we let the $y$-axis represent the time Bob arrives at the party. Then we shade in the area where the number of minutes Alice is late for the party plus the number of minutes Bob is late for the party is less than 45.\n\n[asy]\ndraw((0,0)--(0,60));\ndraw((0,60)--(60,60)--(60,0));\ndraw((0,0)--(60,0));\nlabel(\"5:00\", (0,0), SW);\nlabel(\"6:00\", (0,60), W);\nlabel(\"6:00\", (60,0), S);\n\nfill((0,0)--(45,0)--(0,45)--cycle, gray(.7));\n[/asy]\n\nIf we let 1 unit be one minute, the area of the shaded region is $\\frac{45^2}{2}$ square units and the whole area is 3600 square units. Therefore, the probability that a randomly chosen point will land in the shaded region is $\\frac{45^2}{2\\cdot 3600}=\\boxed{\\frac{9}{32}}$."
-}

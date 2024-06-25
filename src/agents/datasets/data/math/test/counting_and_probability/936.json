@@ -1,6 +1,0 @@
-{
-    "problem": "Two jokers are added to a $52$ card deck and the entire stack of $54$ cards is shuffled randomly.  What is the expected number of cards that will be strictly between the two jokers?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Each card has an equal likelihood of being either on top of the jokers, in between them, or below the jokers.  Thus, on average, $1/3$ of them will land between the two jokers. Multiplying this by the 52 yields our answer of $\\boxed{\\frac{52}{3}}$."
-}

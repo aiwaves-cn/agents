@@ -1,6 +1,0 @@
-{
-    "problem": "Find all the solutions to\n\\[3 \\sqrt[3]{3x - 2} = x^3 + 2.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = \\sqrt[3]{3x - 2}.$  Then the given equation becomes $3y = x^3 + 2,$ so\n\\[x^3 = 3y - 2.\\]Also, from the equation $y = \\sqrt[3]{3x - 2},$ $y^3 = 3x - 2.$  Subtracting these equations, we get\n\\[x^3 - y^3 = 3y - 3x.\\]Then $x^3 - y^3 + 3x - 3y = 0,$ which factors as\n\\[(x - y)(x^2 + xy + y^2 + 3) = 0.\\]Since\n\\[x^2 + xy + y^2 + 3 = \\left( x + \\frac{y}{2} \\right)^2 + \\frac{3}{4} y^2 + 3 > 0,\\]we must have $x = y.$  Then $x^3 - 3x + 2 = 0,$ which factors as $(x - 1)^2 (x + 2) = 0.$  Hence, the solutions are $\\boxed{1,-2}.$"
-}

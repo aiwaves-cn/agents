@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $x$ such that\n\\[3^x + 4^x + 5^x = 6^x.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $x = 3$ satisfies $3^x + 4^x + 5^x = 6^x.$  We prove that this is the only solution.\n\nDividing both sides by $6^x,$ we get\n\\[\\frac{3^x}{6^x} + \\frac{4^x}{6^x} + \\frac{5^x}{6^x} = 1.\\]Let\n\\[f(x) = \\left( \\frac{3}{6} \\right)^x + \\left( \\frac{4}{6} \\right)^x + \\left( \\frac{5}{6} \\right)^x.\\]Note that the function $f(x)$ is decreasing.  We know that $x = \\boxed{3}$ is a solution, so it is the unique solution."
-}

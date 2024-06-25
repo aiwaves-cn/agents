@@ -1,6 +1,0 @@
-{
-    "problem": "Find the curve defined by the equation\n\\[r = 4 \\tan \\theta \\sec \\theta.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From $r = 4 \\tan \\theta \\sec \\theta,$\n\\[r = 4 \\cdot \\frac{\\sin \\theta}{\\cos \\theta} \\cdot \\frac{1}{\\cos \\theta}.\\]Then $r \\cos^2 \\theta = 4 \\sin \\theta,$ so\n\\[r^2 \\cos^2 \\theta = 4r \\sin \\theta.\\]Hence, $x^2 = 4y.$  This is the equation of a parabola, so the answer is $\\boxed{\\text{(C)}}.$\n\n[asy]\nunitsize(0.15 cm);\n\npair moo (real t) {\n  real r = 4*tan(t)/cos(t);\n  return (r*cos(t), r*sin(t));\n}\n\npath foo = moo(0);\nreal t;\n\nfor (t = 0; t <= 1.2; t = t + 0.1) {\n  foo = foo--moo(t);\n}\n\ndraw(foo,red);\ndraw(reflect((0,0),(0,1))*(foo),red);\n\ndraw((-12,0)--(12,0));\ndraw((0,-5)--(0,30));\nlabel(\"$r = 4 \\tan \\theta \\sec \\theta$\", (22,15), red);\n[/asy]"
-}

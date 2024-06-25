@@ -1,6 +1,0 @@
-{
-    "problem": "How many ordered pairs, $(x, y)$, of positive integers satisfy the equation $xy = 144$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Since $xy = 144$, $x$ can be any positive divisor of 144.  Since $y = \\dfrac{144}{x}$, there is exactly one positive integer $y$ for each positive integer $x$.  We can count the ordered pairs by counting the values of $x$, which are the divisors of 144: $$ 144 = 2^4 \\cdot 3^2 \\qquad \\Rightarrow \\qquad t(144) = (4 + 1)(2 + 1) = \\boxed{15}. $$"
-}

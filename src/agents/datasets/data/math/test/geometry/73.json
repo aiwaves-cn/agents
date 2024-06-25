@@ -1,6 +1,0 @@
-{
-    "problem": "A cylindrical beaker is 8 cm high and has a radius of 3 cm. How many such beakers of water will it take to fill a spherical tank of radius 6 cm?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "We first have to remember our formulas for the volumes of 3 dimensional objects. The volume of a cylinder with radius $r$ and height $h$ is $r^2h\\pi$ and the volume of a sphere with radius $r$ is $\\frac{4}{3} r^3 \\pi$. Since the cylindrical beaker has a height of 8 centimeters and a radius of 3 centimeters, that means that its volume is $3^2\\cdot8\\cdot\\pi=72\\pi$ cubic centimeters. Since the sphere has a radius of 6 centimeters, its volume is $\\frac{4}{3}\\cdot6^3\\pi = 288\\pi$ cubic centimeters. The number of beakers of what it will take to fill the spherical tank is just the ratio of the volume of the tank to the volume of the cylinder, which is given by $\\dfrac{288\\pi}{72\\pi}=\\boxed{4}$."
-}

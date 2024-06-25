@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to put 5 balls in 3 boxes if the balls are not distinguishable but the boxes are?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Since the balls are indistinguishable, we must only count the number of balls in the different boxes.\n\nThere are $3$ ways to arrange the balls as $(5,0,0)$ (specifically, box 1 can have 5, box 2 can have 5, box 3 can have 5).\n\nThere are $3! = 6$ to arrange $(4,1,0)$ and $3! = 6$ ways to arrange $(3,2,0)$; in each case, we must choose one of the 3 boxes to have the largest number of balls, and also one of the remaining two boxes to be left empty.\n\nHowever, there are only $3$ ways to arrange $(3,1,1)$, and $3$ ways to arrange $(2,2,1)$; in each case, we must choose one box to have the `different' number of balls (3 in the $(3,1,1)$ case and 1 in the $(2,2,1)$ case).\n\nThis gives a total of $3 + 6 + 6 + 3 + 3 = \\boxed{21}$ arrangements."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{M} = \\begin{pmatrix} 2 & 0 \\\\ 1 & -3 \\end{pmatrix}.$  Find constants $a$ and $b$ so that\n\\[\\mathbf{M}^{-1} = a \\mathbf{M} + b \\mathbf{I}.\\]Enter the ordered pair $(a,b).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[\\begin{pmatrix} 2 & 0 \\\\ 1 & -3 \\end{pmatrix}^{-1} = \\frac{1}{(2)(-3) - (0)(1)} \\begin{pmatrix} -3 & 0 \\\\ -1 & 2 \\end{pmatrix} = \\begin{pmatrix} \\frac{1}{2} & 0 \\\\ \\frac{1}{6} & -\\frac{1}{3} \\end{pmatrix}.\\]Also,\n\\[a \\mathbf{M} + b \\mathbf{I} = a \\begin{pmatrix} 2 & 0 \\\\ 1 & -3 \\end{pmatrix} + b \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 2a + b & 0 \\\\ a & -3a + b \\end{pmatrix}.\\]Thus, $2a + b = \\frac{1}{2},$ $a = \\frac{1}{6},$ and $-3a + b = -\\frac{1}{3}.$  Solving, we find $(a,b) = \\boxed{\\left( \\frac{1}{6}, \\frac{1}{6} \\right)}.$"
-}

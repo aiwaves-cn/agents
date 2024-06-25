@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\dbinom{10}{2}\\times \\dbinom{8}{3}$.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "\\begin{align*}\n\\dbinom{10}{2}\\times \\dbinom{8}{3} &= \\dfrac{10!}{2!8!}\\times \\dfrac{8!}{3!5!} \\\\\n&= \\dfrac{10!}{2!3!5!} \\\\\n&= \\dfrac{10\\times 9\\times 8\\times 7\\times 6}{(2\\times 1)\\times (3\\times 2\\times 1)} \\\\\n&= \\dfrac{10}{2\\times 1} \\times 9 \\times 8 \\times 7 \\times \\dfrac{6}{3\\times 2\\times 1} \\\\\n&= 5\\times 9\\times 8\\times 7\\times 1 \\\\\n&= \\boxed{2520}.\n\\end{align*}"
-}

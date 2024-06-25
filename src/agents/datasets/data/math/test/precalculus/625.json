@@ -1,6 +1,0 @@
-{
-    "problem": "Find the projection of $\\mathbf{a}$ onto $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ 6 \\\\ 3 \\end{pmatrix}$ if $\\mathbf{a} \\cdot \\mathbf{b} = 8.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The projection of $\\mathbf{a}$ onto $\\mathbf{b}$ is given by\n\\[\\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}} \\mathbf{b} = \\frac{8}{2^2 + 6^2 + 3^2} \\begin{pmatrix} 2 \\\\ 6 \\\\ 3 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Tom's graduating class has 288 students. At the graduation ceremony, the students will sit in rows with the same number of students in each row. If there must be at least 10 rows and at least 15 students in each row, then there can be $x$ students in each row. What is the sum of all possible values of $x$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $x$ students sit in each row and there is a total of $y$ rows, then $xy=288=2^5\\cdot3^2$. Given that $x\\ge15$ and $y\\ge10$, the possible values for $x$ are $2^4=16$, $2^3\\cdot3=24$, and $2\\cdot3^2=18$. Their sum is $16+24+18=\\boxed{58}$."
-}

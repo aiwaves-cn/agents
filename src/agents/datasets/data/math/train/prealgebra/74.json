@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest digit $d$ so that $437{,}d03$ is divisible by 9.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "In order for a number to be divisible by 9, the sum of its digits must be a multiple of 9. So in this case the known digits sum to $4+3+7+0+3=17$, so $17+d$ must be divisible by 9. Since 18 is the smallest multiple of 9 that is greater than 17, $d$ must equal $\\boxed{1}$."
-}

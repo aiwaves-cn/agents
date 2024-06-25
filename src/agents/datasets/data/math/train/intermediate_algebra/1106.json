@@ -1,6 +1,0 @@
-{
-    "problem": "Find all complex numbers $z$ such that\n\\[z^2 = -77 - 36i.\\]Enter all complex numbers, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z = a + bi.$  Then\n\\[z^2 = (a + bi)^2 = a^2 + 2abi + b^2 i^2 = a^2 + 2ab - b^2.\\]We want this to equal $-77 - 36i.$  Setting the real and imaginary parts equal, we get\n\\begin{align*}\na^2 - b^2 &= -77, \\\\\n2ab &= -36,\n\\end{align*}so $ab = -18.$  Then $b = -\\frac{18}{a}.$  Substituting, we get\n\\[a^2 - \\frac{324}{a^2} = -77,\\]so $a^4 + 77a^2 - 324 = 0.$  This factors as $(a^2 - 4)(a^2 + 81) = 0,$ so $a^2 = 4.$\n\nIf $a = 2,$ then $b = -\\frac{18}{a} = -9.$  If $a = -2,$ then $b = -\\frac{18}{a} = 9.$  Therefore, the solutions are $\\boxed{2 - 9i, -2 + 9i}.$"
-}

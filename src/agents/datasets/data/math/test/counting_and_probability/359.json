@@ -1,6 +1,0 @@
-{
-    "problem": "Joe's batting average is .323.  (That is, he averages 0.323 hits per at bat.)  What is the probability that he will get three hits in three at-bats? Express your answer as a decimal to the nearest hundredth.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Each of Joe's hits is independent of the others. That is, the probability for one hit does not change depending on whether he hit or missed the previous ball. So, to calculate the probability that he will get three hits in three at-bats, we simply cube $0.323$ to get $0.033$. Rounded to the nearest hundredth, this gives $\\boxed{0.03}$."
-}

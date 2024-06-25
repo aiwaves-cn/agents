@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer $n$ for which $(12{,}500{,}000)\\cdot n$ leaves a remainder of $111$ when divided by $999{,}999{,}999$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Suppose $n$ is a solution to the congruence $$(12{,}500{,}000)\\cdot n\\equiv 111\\pmod{999{,}999{,}999}.$$Then, by multiplying both sides by $80$, we see that $n$ satisfies $$(1{,}000{,}000{,}000)\\cdot n\\equiv 8{,}880 \\pmod{999{,}999{,}999}.$$The left side of this congruence is equivalent to $1\\cdot n = n\\pmod{999{,}999{,}999}$, so we have $n\\equiv 8{,}880\\pmod{999{,}999{,}999}$.\n\nSince $80$ is relatively prime to $999{,}999{,}999$, it has an inverse $\\pmod{999{,}999{,}999}$. (In fact, we know this inverse: it's $12{,}500{,}000$.) Thus we can reverse the steps above by multiplying both sides by $80^{-1}$. So, any integer $n$ satisfying $n\\equiv 8{,}880\\pmod{999{,}999{,}999}$ is a solution to the original congruence.\n\nThe smallest positive integer in this solution set is $n=\\boxed{8{,}880}$."
-}

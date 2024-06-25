@@ -1,6 +1,0 @@
-{
-    "problem": "For how many integer values of $n$ between 1 and 474 inclusive does the decimal representation of $\\frac{n}{475}$ terminate?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Recall that the decimal representation of a simplified fraction terminates if and only if the denominator is divisible by no primes other than 2 and 5. Prime factorizing 475 as $5^2\\cdot 19$, we see that $\\frac{n}{475}$ terminates if and only if $n$ is divisible by 19. There are 24 multiples of 19 from 1 to 474, so there are $\\boxed{24}$ possible values of $n$ that make $\\frac{n}{475}$ a terminating decimal."
-}

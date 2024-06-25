@@ -1,6 +1,0 @@
-{
-    "problem": "Find the domain of the function\n\\[f(x) = \\sqrt{1 - \\sqrt{2 - \\sqrt{3 - x}}}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The function $f(x) = \\sqrt{1 - \\sqrt{2 - \\sqrt{3 - x}}}$ is defined only when\n\\[1 - \\sqrt{2 - \\sqrt{3 - x}} \\ge 0,\\]or\n\\[\\sqrt{2 - \\sqrt{3 - x}} \\le 1. \\quad (*)\\]Squaring both sides, we get\n\\[2 - \\sqrt{3 - x} \\le 1.\\]Then\n\\[\\sqrt{3 - x} \\ge 1.\\]Squaring both sides, we get\n\\[3 - x \\ge 1,\\]so $x \\le 2.$\n\nAlso, for $(*)$ to hold, we must also have\n\\[2 - \\sqrt{3 - x} \\ge 0.\\]Then $\\sqrt{3 - x} \\le 2.$  Squaring both sides, we get\n\\[3 - x \\le 4,\\]so $x \\ge -1.$\n\nHence, the domain of $f(x)$ is $\\boxed{[-1,2]}.$"
-}

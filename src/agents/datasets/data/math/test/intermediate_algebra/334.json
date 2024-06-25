@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $a+b=5$ and $a^2+b^2=15$, find $a^3+b^3$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We know that $(a+b)^2=a^2+2ab+b^2$. Therefore, we plug in the given values to get $5^2=15+2ab$. Solving, we get that $ab=5$. We also have the sum of cubes factorization $a^3+b^3=(a+b)(a^2-ab+b^2)$. Plugging in the values given and solving, we get that $a^3+b^3=(5)(15-5)=(5)(10)=\\boxed{50}$."
-}

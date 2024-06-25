@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest value of $c$ such that $1$ is in the range of $f(x)=x^2-5x+c$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We see that 1 is in the range of $f(x) = x^2 - 5x + c$ if and only if the equation $x^2 - 5x + c = 1$ has a real root.  We can re-write this equation as $x^2 - 5x + (c - 1) = 0$.  The discriminant of this quadratic is $(-5)^2 - 4(c - 1) = 29 - 4c$.  The quadratic has a real root if and only if the discriminant is nonnegative, so $29 - 4c \\ge 0$.  Then $c \\le 29/4$, so the largest possible value of $c$ is $\\boxed{\\frac{29}{4}}$."
-}

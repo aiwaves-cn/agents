@@ -1,6 +1,0 @@
-{
-    "problem": "Let A = 1, B = 2, C = 3, ..., Z = 26. The product value of a word is equal to the product of the values of its letters. For example, CAB has a product value of 3 $\\times$ 1 $\\times$ 2 = 6. What common English word has a product value of 715? It does not have to be of length 3.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Prime factorize 715 to find $715=5\\cdot11\\cdot13$.  The only ways to write 715 as a product of positive integers greater than 1 are the distinct ways of grouping the prime factors: \\begin{align*}\n(5)\\cdot (11) \\cdot (13) &= 5\\cdot 11\\cdot 13 \\\\\n(5\\cdot11)\\cdot 13&=55\\cdot 13 \\\\\n5\\cdot(11\\cdot 13) &= 5\\cdot 143 \\\\\n(5\\cdot 13) \\cdot 11 &= 65 \\cdot 11\\text{, and}\\\\\n(5\\cdot11\\cdot13)&=715,\n\\end{align*} where the last one is a product with only one factor.  Since the letters cannot represent numbers greater than 26, only $5\\cdot11\\cdot 13$ could come from calculating the product value of a word. The 5th, 11th, and 13th letters of the alphabet are E, K, and M.  Since E, K, and M do not form a word, we introduce the letter A (which doesn't affect the product since its value is 1) to form the word $\\boxed{\\text{MAKE}}$."
-}

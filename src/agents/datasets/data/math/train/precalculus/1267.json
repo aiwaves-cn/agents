@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ 0 \\\\ -1 \\end{pmatrix}.$  Find the vector $\\mathbf{v}$ that satisfies $\\mathbf{v} \\times \\mathbf{a} = \\mathbf{b} \\times \\mathbf{a}$ and $\\mathbf{v} \\times \\mathbf{b} = \\mathbf{a} \\times \\mathbf{b}.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the first equation, $\\mathbf{v} \\times \\mathbf{a} - \\mathbf{b} \\times \\mathbf{a} = \\mathbf{0},$ so\n\\[(\\mathbf{v} - \\mathbf{b}) \\times \\mathbf{a} = \\mathbf{0}.\\]This tells us that the vectors $\\mathbf{v} - \\mathbf{b}$ and $\\mathbf{a}$ are parallel, so $\\mathbf{v} - \\mathbf{b}$ is of the form $t \\mathbf{a}.$  Thus, $\\mathbf{v} = t \\mathbf{a} + \\mathbf{b}.$\n\nFrom the second equation, $\\mathbf{v} \\times \\mathbf{b} - \\mathbf{a} \\times \\mathbf{b} = \\mathbf{0},$ so\n\\[(\\mathbf{v} - \\mathbf{a}) \\times \\mathbf{b} = \\mathbf{0}.\\]This tells us that the vectors $\\mathbf{v} - \\mathbf{a}$ and $\\mathbf{b}$ are parallel, so $\\mathbf{v} - \\mathbf{a}$ is of the form $s \\mathbf{b}.$  Thus, $\\mathbf{v} = \\mathbf{a} + s \\mathbf{b}.$\n\nTherefore, $\\mathbf{v} = \\mathbf{a} + \\mathbf{b} = \\boxed{\\begin{pmatrix} 3 \\\\ 1 \\\\ -1 \\end{pmatrix}}.$"
-}

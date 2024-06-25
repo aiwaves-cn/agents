@@ -1,6 +1,0 @@
-{
-    "problem": "You have linear functions $p(x)$ and $q(x)$. You know $p(2)=3$, and $p(q(x))=4x+7$ for all $x$. Find $q(-1)$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have $p(2)=3$, but we have no information about how $p(x)$ acts when we put numbers like $2$ into it. We can only put outputs of $q(x)$ into $p(x)$. So, let's force $2$ to be an output of $q(x)$: Let $q(a)=2$ for some $a$.  Then we know $p(q(a))=4a+7$. But since $q(a)=2$, we really have $p(2)=4a+7$. But we're given that $p(2)=3$, so $3=4a+7$. Solving this gives $a=-1$ (so as it turns out, there was a value of $a$ for which $q(a)=2$.) By the definition of $a$, $q(a)=2$, so since $a=-1$, $q(-1)=2$. But that's exactly what we wanted to find! So $q(-1)=\\boxed{2}$."
-}

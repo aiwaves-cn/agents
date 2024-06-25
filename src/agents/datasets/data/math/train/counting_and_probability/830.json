@@ -1,6 +1,0 @@
-{
-    "problem": "How many three-digit numbers satisfy the property that the middle digit is the average of the first and the last digits?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "The first and last digits must be both odd or both even for their average to be an integer.  There are $5\\cdot 5 =25$ odd-odd combinations for the first and last digits.  There are $4\\cdot 5=20$ even-even combinations that do not use zero as the first digit. Hence, the total is $\\boxed{45}$."
-}

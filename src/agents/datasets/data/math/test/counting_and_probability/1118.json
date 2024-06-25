@@ -1,6 +1,0 @@
-{
-    "problem": "Ten people are sitting around a round table.  Three of them are chosen at random to give a presentation.  What is the probability that the three chosen people were sitting in consecutive seats?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let's count as our outcomes the ways to select 3 people without regard to order.  There are $\\binom{10}{3} = 120$ ways to select any 3 people.  The number of successful outcomes is the number of ways to select 3 consecutive people.  There are only 10 ways to do this -- think of first selecting the middle person, then we take his or her two neighbors.  Therefore, the probability is $\\frac{10}{120} = \\boxed{\\frac{1}{12}}$."
-}

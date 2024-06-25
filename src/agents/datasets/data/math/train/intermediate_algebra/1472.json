@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be real numbers such that $x + y = 3.$  Find the maximum value of\n\\[x^4 y + x^3 y + x^2 y + xy + xy^2 + xy^3 + xy^4.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "First, we can factor out $xy,$ to get\n\\[xy (x^3 + x^2 + x + 1 + y + y^2 + y^3) = xy(x^3 + y^3 + x^2 + y^2 + x + y + 1).\\]We know $x + y = 3.$  Let $p = xy.$  Then\n\\[9 = (x + y)^2 = x^2 + 2xy + y^2 = x^2 + 2xy + y^2,\\]so $x^2 + y^2 = 9 - 2p.$\n\nAlso,\n\\[27 = (x + y)^3 = x^3 + 3x^2 y + 3xy^2 + y^3,\\]so $x^3 + y^3 = 27 - 3xy(x + y) = 27 - 9p.$\n\nThus,\n\\begin{align*}\nxy (x^3 + y^3 + x^2 + y^2 + x + y + 1) &= p (27 - 9p + 9 - 2p + 3 + 1) \\\\\n&= p(40 - 11p) \\\\\n&= -11p^2 + 40p \\\\\n&= -11 \\left( p - \\frac{20}{11} \\right)^2 + \\frac{400}{11} \\\\\n&\\le \\frac{400}{11}.\n\\end{align*}Equality occurs when $xy = p = \\frac{20}{11}.$  By Vieta's formulas, $x$ and $y$ are the roots of\n\\[t^2 - 3t + \\frac{20}{11} = 0.\\]The discriminant of this quadratic is positive, so equality is possible.  Thus, the maximum value is $\\boxed{\\frac{400}{11}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "My school's math club has 6 boys and 8 girls.  I need to select a team to send to the state math competition.  We want 6 people on the team.  In how many ways can I select the team to have 3 boys and 3 girls?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We are picking 3 boys out of 6, so there are $\\binom{6}{3} = 20$ options for the boys on the team.  We are picking 3 girls out of 8, so there are $\\binom{8}{3} = 56$ options for the girls on the team.  This gives a total of $20 \\times 56 = \\boxed{1120}$ choices."
-}

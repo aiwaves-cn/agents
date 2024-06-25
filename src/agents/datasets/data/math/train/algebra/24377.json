@@ -1,6 +1,0 @@
-{
-    "problem": "Real numbers $x$ and $y$ satisfy the equation $x^2 + y^2 = 10x - 6y - 34$. What is $x+y$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can write the equation as\n\\[x^2 - 10x + y^2 + 6y + 34 = 0.\\]Completing the square in $x$ and $y,$ we get\n\\[(x - 5)^2 + (y + 3)^2 = 0.\\]Hence, $x = 5$ and $y = -3,$ so $x + y = \\boxed{2}.$"
-}

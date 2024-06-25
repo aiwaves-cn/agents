@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\tan \\frac{\\pi}{24} + \\tan \\frac{7 \\pi}{24}.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We can write\n\\[\\tan \\frac{\\pi}{24} + \\tan \\frac{7 \\pi}{24} = \\frac{\\sin \\frac{\\pi}{24}}{\\cos \\frac{\\pi}{24}} + \\frac{\\sin \\frac{7 \\pi}{24}}{\\cos \\frac{7 \\pi}{24}} \n= \\frac{\\sin \\frac{\\pi}{24} \\cos \\frac{7 \\pi}{24} + \\cos \\frac{\\pi}{24} \\sin \\frac{7 \\pi}{24}}{\\cos \\frac{\\pi}{24} \\cos \\frac{7 \\pi}{24}}.\\]By the angle addition formula and the product-to-sum formula,\n\\begin{align*}\n\\frac{\\sin \\frac{\\pi}{24} \\cos \\frac{7 \\pi}{24} + \\cos \\frac{\\pi}{24} \\sin \\frac{7 \\pi}{24}}{\\cos \\frac{\\pi}{24} \\cos \\frac{7 \\pi}{24}} &= \\frac{\\sin (\\frac{\\pi}{24} + \\frac{7 \\pi}{24})}{\\frac{1}{2} (\\cos \\frac{\\pi}{3} + \\cos \\frac{\\pi}{4})} \\\\\n&= \\frac{2 \\sin \\frac{\\pi}{3}}{\\cos \\frac{\\pi}{3} + \\cos \\frac{\\pi}{4}} \\\\\n&= \\frac{\\sqrt{3}}{\\frac{1}{2} + \\frac{\\sqrt{2}}{2}} \\\\\n&= \\frac{2 \\sqrt{3}}{1 + \\sqrt{2}} \\\\\n&= \\frac{2 \\sqrt{3} (\\sqrt{2} - 1)}{(\\sqrt{2} + 1)(\\sqrt{2} - 1)} \\\\\n&= \\boxed{2 \\sqrt{6} - 2 \\sqrt{3}}.\n\\end{align*}"
-}

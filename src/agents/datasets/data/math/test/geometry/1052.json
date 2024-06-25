@@ -1,6 +1,0 @@
-{
-    "problem": "In acute triangle $ABC$, altitudes $AD$, $BE$, and $CF$ intersect at the orthocenter $H$.  If $BD = 5$, $CD = 9$, and $CE = 42/5$, then find the length of $HE$.\n\n[asy]\nunitsize(0.3 cm);\n\npair A, B, C, D, E, F, H;\n\nA = (5,12);\nB = (0,0);\nC = (14,0);\nD = (A + reflect(B,C)*(A))/2;\nE = (B + reflect(C,A)*(B))/2;\nF = (C + reflect(A,B)*(C))/2;\nH = extension(B,E,C,F);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\ndraw(B--E);\ndraw(C--F);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, NW);\nlabel(\"$H$\", H, SE);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "By Pythagoras, $BE^2 = BC^2 - CE^2 = 14^2 - (42/5)^2 = 3136/25$, so $BE = \\sqrt{3136/25} = 56/5$.\n\nTriangles $BDH$ and $BEC$ are right, and share $\\angle HBD$, so they are similar.  Hence, \\[\\frac{BH}{BD} = \\frac{BC}{BE},\\]so \\[BH = \\frac{BC}{BE} \\cdot BD = \\frac{14}{56/5} \\cdot 5 = \\frac{25}{4}.\\]Then $HE = BE - BH = 56/5 - 25/4 = \\boxed{\\frac{99}{20}}$."
-}

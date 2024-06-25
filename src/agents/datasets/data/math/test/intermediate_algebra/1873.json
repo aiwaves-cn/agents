@@ -1,6 +1,0 @@
-{
-    "problem": "There exist constants $c_2,$ $c_1,$ and $c_0$ such that\n\\[x^3 + x^2 - 5 = (x - 3)^3 + c_2 (x - 3)^2 + c_1 (x - 3) + c_0.\\]Find $c_2^2 + c_1^2 + c_0^2.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = x - 3.$  Then $x = y + 3,$ and\n\\begin{align*}\nx^3 + x^2 - 5 &= (y + 3)^3 + (y + 3)^2 - 5 \\\\\n&= y^3 + 10y^2 + 33y + 31.\n\\end{align*}Thus, $c_2^2 + c_1^2 + c_0^2 = 10^2 + 33^2 + 31^2 = \\boxed{2150}.$"
-}

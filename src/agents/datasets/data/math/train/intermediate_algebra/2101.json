@@ -1,6 +1,0 @@
-{
-    "problem": "There are exactly three integers $x$ satisfying the inequality\n\\[x^2 + bx + 2 \\le 0.\\]How many integer values of $b$ are possible?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The roots of the corresponding equation $x^2 + bx + 2 = 0$ are\n\\[\\frac{-b \\pm \\sqrt{b^2 - 8}}{2}.\\](Note that these roots must be real, otherwise, the inequality $x^2 + bx + 2 \\le 0$ has no real solutions.)  Thus, the solution to this inequality $x^2 + bx + 2 \\le 0$ is\n\\[\\frac{-b - \\sqrt{b^2 - 8}}{2} \\le x \\le \\frac{-b + \\sqrt{b^2 - 8}}{2}.\\]If the length of this interval is at least 4, then it must contain at least 4 integers, so the width of this interval must be less than 4.  Thus,\n\\[\\sqrt{b^2 - 8} < 4.\\]Then $b^2 - 8 < 16,$ so $b^2 < 24.$  We must also have $b^2 > 8.$  The only possible values of $b$ are then $-4,$ $-3,$ 3, and 4.  We can look at each case.\n\n\\[\n\\begin{array}{c|c}\nb & \\text{Integer solutions to $x^2 + bx + 2 \\le 0$} \\\\ \\hline\n-4 & 1, 2, 3 \\\\\n-3 & 1, 2 \\\\\n3 & -2, -1 \\\\\n4 & -3, -2, -1\n\\end{array}\n\\]Thus, there are $\\boxed{2}$ values of $b$ that work, namely $-4$ and 4."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A sorcerer is concocting a healing potion. In order to do so, he must have one of three roots, and one of five minerals. However, one of the minerals is incompatible with two of the roots. Otherwise, he does not foresee any complications with other combinations of roots and minerals. In how many ways can he brew his potion?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are three roots and five minerals, meaning $3 \\cdot 5 = 15$ possible combinations of roots and minerals. However, two of them are not valid, therefore there are $15 - 2 = \\boxed{13}$ possible ways in which the sorcerer can brew his potion."
-}

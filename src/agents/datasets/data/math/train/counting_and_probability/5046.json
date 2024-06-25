@@ -1,6 +1,0 @@
-{
-    "problem": "A set of positive numbers has the triangle property if it has three distinct elements that are the lengths of the sides of a triangle whose area is positive. Consider sets $\\{4, 5, 6, \\ldots, n\\}$ of consecutive positive integers, all of whose ten-element subsets have the triangle property. What is the largest possible value of $n$?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Out of all ten-element subsets with distinct elements that do not possess the triangle property, we want to find the one with the smallest maximum element. Call this subset $\\mathcal{S}$. Without loss of generality, consider any $a, b, c \\,\\in \\mathcal{S}$ with $a < b < c$. $\\,\\mathcal{S}$ does not possess the triangle property, so $c \\geq a + b$. We use this property to build up $\\mathcal{S}$ from the smallest possible $a$ and $b$:\n\\[\\mathcal{S} = \\{\\, 4,\\, 5,\\, 4+5, \\,5+(4+5),\\, \\ldots\\,\\} = \\{4, 5, 9, 14, 23, 37, 60, 97, 157, 254\\}\\]\n$\\mathcal{S}$ is the \"smallest\" ten-element subset without the triangle property, and since the set $\\{4, 5, 6, \\ldots, 253\\}$ is the largest set of consecutive integers that does not contain this subset, it is also the largest set of consecutive integers in which all ten-element subsets possess the triangle property. Thus, our answer is $n = \\boxed{253}$."
-}

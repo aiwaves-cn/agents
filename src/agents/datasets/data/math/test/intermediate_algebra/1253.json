@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers.  Then the minimum value of\n\\[\\frac{(x^4 + 1)(y^4 + 1)(z^4 + 1)}{xy^2 z}\\]is of the form $\\frac{a \\sqrt{b}}{c},$ for some positive integers $a,$ $b,$ and $c,$ where $a$ and $c$ are relatively prime, and $b$ is not divisible by the square of a prime.  Enter $a + b + c.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\n\\frac{x^4 + 1}{x} &= x^3 + \\frac{1}{x} \\\\\n&= x^3 + \\frac{1}{3x} + \\frac{1}{3x} + \\frac{1}{3x} \\\\\n&\\ge 4 \\sqrt[4]{x^3 \\cdot \\frac{1}{3x} \\cdot \\frac{1}{3x} \\cdot \\frac{1}{3x}} \\\\\n&= \\frac{4}{\\sqrt[4]{27}}.\n\\end{align*}Similarly,\n\\[\\frac{z^4 + 1}{z} \\ge  \\frac{4}{\\sqrt[4]{27}}.\\]Again by AM-GM,\n\\[\\frac{y^4 + 1}{y^2} = y^2 + \\frac{1}{y^2} \\ge 2 \\sqrt{y^2 \\cdot \\frac{1}{y^2}} = 2.\\]Therefore,\n\\[\\frac{(x^4 + 1)(y^4 + 1)(z^4 + 1)}{xy^2 z} \\ge \\frac{4}{\\sqrt[4]{27}} \\cdot 2 \\cdot \\frac{4}{\\sqrt[4]{27}} = \\frac{32 \\sqrt{3}}{9}.\\]Equality occurs when $x^3 = \\frac{1}{3x},$ $y^2 = \\frac{1}{y^2},$ and $z^3 = \\frac{1}{3z}.$  We can solve, to get $x = \\frac{1}{\\sqrt[4]{3}},$ $y = 1,$ and $z = \\frac{1}{\\sqrt[4]{3}},$ so the minimum value is $\\frac{32 \\sqrt{3}}{9}.$  The final answer is $32 + 3 + 9 = \\boxed{44}.$"
-}

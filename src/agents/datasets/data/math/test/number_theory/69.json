@@ -1,6 +1,0 @@
-{
-    "problem": "Let S be the set of all three-digit numbers formed by three consecutive digits in increasing order. What is the greatest common factor of all the three-digit numbers in S?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "S=$\\{123, 234, 345, 456, 567, 678, 789\\}$. Since the sum of the digits of each number in S is divisible by 3, we know that 3 is a common factor of all the numbers in S. Dividing 123 by 3, we get the prime number 41, which does not divide 234. We conclude that the GCF of all the numbers in S is $\\boxed{3}$."
-}

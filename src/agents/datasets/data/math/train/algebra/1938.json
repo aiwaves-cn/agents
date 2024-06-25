@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of all positive integral values of $n$ such that $n^2-35n+306= p$ for some prime number $p$. Note that there is at least one such $n$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First we note that since $n^2-35n = n(n-35)$, and at least one of $n$ and $n-35$ is even, thus $n^2-35n$ is even. So $n^2-35n+306$ is also even. Thus the prime $p$ must equal 2. This means that we want the product of the positive integral solutions to $n^2-35n+306=2$, or $n^2-35n+304=0$.\n\nThe problem tells us that there is at least one positive integral solution. Now we use the fact that the product of the solutions to a quadratic equation $ax^2+bx+c=0$ is given by $c/a$, which equals 304 in this case. This means that both solutions must in fact be positive, since if only one were, their product would be negative. Additionally, the sum of the solutions is given by $-b/a$, which is 35 in this case. Since one solution is integral, and the sum of both solutions is integral, the other solution is integral as well. So we want the product of both, which is $\\boxed{304}$."
-}

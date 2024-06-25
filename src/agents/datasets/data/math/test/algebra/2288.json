@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$, $b$, and $c$ are integers satisfying $a + \\frac 1b = \\frac{22}{7}$, $b + \\frac 1c = 8$, and $abc = 21$, then find $c + \\frac 1a$. Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $x = c + \\frac 1a$. Multiplying to take advantage of the symmetry, \\begin{align*}\\frac {22}7 \\cdot 8 \\cdot x &= \\left(a + \\frac 1b\\right)\\left(b + \\frac 1c\\right)\\left(c + \\frac 1a\\right) \\\\\n&= abc + a + b + c + \\frac 1a + \\frac 1b + \\frac 1c + \\frac{1}{abc} \\\\\n&= 21 + \\left(a + \\frac 1b\\right) + \\left(b + \\frac 1c \\right) + \\left(c + \\frac 1a\\right) + \\frac{1}{21} \\\\\n&= 21 + \\frac{22}{7} + 8 + x + \\frac 1{21} \\\\\n&= \\frac{29 \\cdot 21 + 22 \\cdot 3 + 1}{21} + x\n\\end{align*} Thus, $\\frac{22 \\cdot 8 \\cdot 3}{21} x = \\frac{29 \\cdot 21 + 22 \\cdot 3 + 1}{21} + x \\Longrightarrow x = \\frac{29 \\cdot 21 + 22 \\cdot 3 + 1}{22 \\cdot 8 \\cdot 3 - 21} = \\frac{676}{507} = \\boxed{\\frac 43}.$"
-}

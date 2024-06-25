@@ -1,6 +1,0 @@
-{
-    "problem": "$a$ and $b$ are real numbers and satisfy $ab^2=\\frac{27}{5}$ and $a^2b=135$. Compute $a+5b$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Rearranging the first equation, we have that $a=\\frac{27}{5b^2}$. If we substitute this into the original equation, we get $\\frac{729}{25b^4}b=135$; multiplying each side by $\\frac{b^3}{135}$ yields $b^3=\\frac{27}{125}$. Taking the cube root, we see that $b=\\frac{3}{5}$. Substituting $b$ into the first equation, we get that $\\frac{9}{25}a=\\frac{27}{5}$ or $a=15$. Thus, $a+5b=15+3=\\boxed{18}$."
-}

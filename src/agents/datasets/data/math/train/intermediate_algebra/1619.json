@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $(a_n)$ satisfies $a_0=0$ and $a_{n + 1} = \\frac{8}{5}a_n + \\frac{6}{5}\\sqrt{4^n - a_n^2}$ for $n \\geq 0$. Find $a_{10}$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Define a new sequence $(b_n)$ such that $a_n = 2^n b_n$ for each $n.$ Then the recurrence becomes \\[2^{n+1} b_{n+1} = \\frac{8}{5} \\cdot 2^n b_n + \\frac{6}{5} \\sqrt{4^n - 4^n b_n^2} = \\frac{8}{5} \\cdot 2^n b_n + \\frac{6}{5} \\cdot 2^n \\sqrt{1 - b_n^2},\\]or, dividing by $2^{n+1},$ \\[b_{n+1} = \\frac{4}{5} b_n + \\frac{3}{5} \\sqrt{1-b_n^2}.\\]Compute by hand: \\[\\begin{aligned}\nb_1 & = \\frac 35\n\\\\\nb_2 & = \\frac 45\\cdot \\frac 35 + \\frac 35 \\sqrt{1 - \\left(\\frac 35\\right)^2} = \\frac{24}{25}\n\\\\\nb_3 & = \\frac 45\\cdot \\frac {24}{25} + \\frac 35 \\sqrt{1 - \\left(\\frac {24}{25}\\right)^2} = \\frac{96}{125} + \\frac 35\\cdot\\frac 7{25} = \\frac{117}{125}\n\\\\\nb_4 & = \\frac 45\\cdot \\frac {117}{125} + \\frac 35 \\sqrt{1 - \\left(\\frac {117}{125}\\right)^2} = \\frac{468}{625} + \\frac 35\\cdot\\frac {44}{125} = \\frac{600}{625} = \\frac{24}{25} \\end{aligned}\\]Since $b_2 = b_4,$ the sequence $(b_n)$ starts to repeat with period $2.$ Thus, $b_{10} = b_2 = \\frac{24}{25},$ so $a_{10} = 2^{10} b_{10} = \\frac{2^{10} \\cdot 24}{25} = \\boxed{\\frac{24576}{25}}.$"
-}

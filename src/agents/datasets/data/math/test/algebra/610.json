@@ -1,6 +1,0 @@
-{
-    "problem": "Expand the product ${6(x+2)(x+3)}$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "First, we use the distributive property to expand the first two factors:\n\n\\begin{align*}\n6(x+2)(x+3) &= (6\\cdot x + 6 \\cdot 2) (x+3)\\\\\n&=(6x+12)(x+3)\n\\end{align*}We use the distributive property again by adding the product of $6x+12$ and $x$ to the product of $6x+12$ and 3:\n\n\\begin{align*}\n(6x+12)(x+3) &= (6x+12) \\cdot x +(6x+12) \\cdot 3\\\\\n&= x(6x+12) + 3(6x+12)\n\\end{align*}We use the distributive property again and combine like terms:\n\n\\begin{align*}\nx(6x+12) + 3(6x+12) &= 6x^2 + 12x + 18x+ 36\\\\\n&= \\boxed{6x^2 + 30x + 36}\n\\end{align*}"
-}

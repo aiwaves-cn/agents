@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that  $4^{x_1}=5$, $5^{x_2}=6$, $6^{x_3}=7, \\dots, 127^{x_{124}}=128$. What is $x_1x_2\\cdots x_{124}$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $4^{x_1}=5$, $5^{x_2}=6,\\ldots, 127^{x_{124}} = 128$, we have \\[\n4^{7/2}= 128 = 127^{x_{124}} = \\left(126^{x_{123}}\\right)^{x_{124}}\n= 126^{x_{123}\\cdot x_{124}} = \\cdots = 4^{x_1x_2\\cdots x_{124}}.\n\\]So $x_1 x_2\\cdots x_{124} = \\boxed{\\frac{7}{2}}$."
-}

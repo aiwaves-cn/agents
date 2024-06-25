@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be the set of points $(a,b)$ in the coordinate plane, where each of $a$ and $b$ may be $-1$, 0, or 1. How many distinct lines pass through at least two members of $S$?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{9}{2}=36$ pairs of points in $S$, and each pair determines a line. However, there are three horizontal, three vertical, and two diagonal lines that pass through three points of $S$, and these lines are each determined by three different pairs of points in $S$. Thus the number of distinct lines is $36 - 2 \\cdot 8= \\boxed{20}$."
-}

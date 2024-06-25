@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest four-digit number that is divisible by $33$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "For a number to be divisible by $33$, it needs to be divisible by both $11$ and $3$.\nFor an integer $abcd$ to be divisible by $11$, then $a-b+c-d$ must be divisible by $11$. For it to be divisible by $3$, then $a+b+c+d$ must be divisible by $3$.\nFor our digits to be as small as possible, we want $a-b+c-d$ to be equal to $0$. So $a+c=b+d$. We set $a+c=b+d=x$. Thus, we also have that $2x$ must be divisible by $3$. The smallest even positive integer that's divisible by $3$ is $6$, so $x=3$. Thus we have $a+c=3$ and $b+d=3$.\nFor a number to be as small as possible, we want the left digits to be as small as possible. The smallest number $a$ could be is $1$, so $c=2$. For $b$ and $d$, we want $b$ to be as small as possible since it's a larger place than $d$, so $b=0$ and $d=3$. Therefore, we have the number $\\boxed{1023}$."
-}

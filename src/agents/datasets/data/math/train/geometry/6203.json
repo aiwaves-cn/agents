@@ -1,6 +1,0 @@
-{
-    "problem": "An isosceles trapezoid is circumscribed around a circle. The longer base of the trapezoid is $16$, and one of the base angles is $\\arcsin(.8)$. Find the area of the trapezoid.\n$\\textbf{(A)}\\ 72\\qquad \\textbf{(B)}\\ 75\\qquad \\textbf{(C)}\\ 80\\qquad \\textbf{(D)}\\ 90\\qquad \\textbf{(E)}\\ \\text{not uniquely determined}$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let the trapezium have diagonal legs of length $x$ and a shorter base of length $y$. Drop altitudes from the endpoints of the shorter base to the longer base to form two right-angled triangles, which are congruent since the trapezium is isosceles. Thus using the base angle of $\\arcsin(0.8)$ gives the vertical side of these triangles as $0.8x$ and the horizontal side as $0.6x$. Now notice that the sides of the trapezium can be seen as being made up of tangents to the circle, and thus using the fact that \"the tangents from a point to a circle are equal in length\" gives $2y + 0.6x + 0.6x = 2x$. Also, using the given length of the longer base tells us that $y + 0.6x + 0.6x = 16$. Solving these equations simultaneously gives $x=10$ and $y=4$, so the height of the trapezium is $0.8 \\times 10 = 8$. Thus the area is $\\frac{1}{2}(4+16)(8) = \\boxed{80}$."
-}

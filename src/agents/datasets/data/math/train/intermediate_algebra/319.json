@@ -1,6 +1,0 @@
-{
-    "problem": "Let $t$ be a parameter that varies over all real numbers.  Any parabola of the form\n\\[y = 3x^2 + tx - 2t\\]passes through a fixed point.  Find this fixed point.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "To obtain the fixed point, we want to eliminate $t$ in the equation\n\\[y = 3x^2 + tx - 2t.\\]We can do so by taking $x = 2.$  This leaves us with $y = 3 \\cdot 2^2 = 12,$ so the fixed point is $\\boxed{(2,12)}.$"
-}

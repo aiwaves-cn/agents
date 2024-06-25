@@ -1,6 +1,0 @@
-{
-    "problem": "Circles with centers of $(2,2)$ and $(17,10)$ are both tangent to the $x$-axis. What is the distance between the closest points of the two circles?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The radius of the first circle is 2, and the radius of the second circle is 10.  The distances between the centers of the circles is $\\sqrt{(17 - 2)^2 + (10 - 2)^2} = 17,$ so the distance between the two closest points of the two circle is $17 - 2 - 10 = \\boxed{5}.$\n\n[asy]\nunitsize(0.3 cm);\n\ndraw((2,2)--(2,0),dashed);\ndraw((17,10)--(17,0),dashed);\ndraw((-1,0)--(28,0));\ndraw((0,-1)--(0,20));\ndraw(Circle((2,2),2));\ndraw(Circle((17,10),10));\ndraw((2,2)--(17,10));\n\nlabel(\"$2$\", (2,1), E);\nlabel(\"$10$\", (17,5), E);\n\ndot(\"$(2,2)$\", (2,2), NW);\ndot(\"$(17,10)$\", (17,10), NE);\n[/asy]"
-}

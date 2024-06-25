@@ -1,6 +1,0 @@
-{
-    "problem": "A child has a set of 96 distinct blocks. Each block is one of 2 materials (plastic, wood), 3 sizes (small, medium, large), 4 colors (blue, green, red, yellow), and 4 shapes (circle, hexagon, square, triangle). How many blocks in the set differ from the 'plastic medium red circle' in exactly 2 ways? (The 'wood medium red square' is such a block)\n(A) 29 (B) 39 (C) 48 (D) 56 (E) 62\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The process of choosing a block can be represented by a generating function. Each choice we make can match the 'plastic medium red circle' in one of its qualities $(1)$ or differ from it in $k$ different ways $(kx)$. Choosing the material is represented by the factor $(1+1x)$, choosing the size by the factor $(1+2x)$, etc:\\[(1+x)(1+2x)(1+3x)^2\\]Expanding out the first two factors and the square:\\[(1+3x+2x^2)(1+6x+9x^2)\\]By expanding further we can find the coefficient of $x^2$, which represents the number of blocks differing from the original block in exactly two ways. We don't have to expand it completely, but choose the terms which will be multiplied together to result in a constant multiple of $x^2$:\\[1\\cdot9+3\\cdot6+2\\cdot1=\\boxed{29}\\]"
-}

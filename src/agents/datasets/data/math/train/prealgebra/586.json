@@ -1,6 +1,0 @@
-{
-    "problem": "Two siblings, Andy and Alexa, bake 24 cookies. Alexa eats some number of cookies that is a positive multiple of the number of cookies eaten by her brother. If the siblings finish all 24 cookies, then what is the maximum number of cookies that the brother, Andy, could have eaten?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The number of cookies eaten by Andy depends on the number eaten by his sister: if Andy eats more, then Alexa eats fewer, and the total always adds up to 24. We want to maximize the number eaten by the brother, so we want to minimize the number eaten by the sister. The smallest positive multiple of the number eaten by Andy is one times that number, which is the number itself. Alexa must eat the same number as Andy, so each sibling eats half the cookies.\n\nThe brother could have eaten a maximum of $24\\div 2 = \\boxed{12}$ cookies."
-}

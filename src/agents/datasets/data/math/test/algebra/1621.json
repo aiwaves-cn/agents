@@ -1,6 +1,0 @@
-{
-    "problem": "The equation of the circle that passes through $(-1,6)$ and which has a center at $(2,3)$ can be written as $x^2 + y^2 + Ax + By + C = 0$. Find $A\\times B\\times C$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "As the center of the circle is at the point $(2,3)$, and one point on the circle is at the point $(-1,6)$, by the distance formula, the radius of the circle is $\\sqrt{(2-(-1))^2 + (3-6)^2} = \\sqrt{3^2 + 3^2} = \\sqrt{18}$. The equation of the circle is then given by $(x -2)^2 + (y-3)^2 = 18$, and expanding, $$x^2 - 4x + 4 + y^2 - 6y + 9 - 18 = 0 \\Longrightarrow x^2 + y^2 - 4x - 6y - 5 = 0.$$ Thus, $A\\times B\\times C= -4\\times -6\\times -5= \\boxed{-120}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be the set of complex numbers $z$ such that the real part of $\\frac{1}{z}$ is equal to $\\frac{1}{6}.$  This set forms a curve.  Find the area of the region inside the curve.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "In general, the real part of a complex number $z$ is given by\n\\[\\frac{z + \\overline{z}}{2}.\\]Hence, the real part of $1/z$ is equal to 1/6 if and only if\n\\[\\frac{\\frac{1}{z} + \\frac{1}{\\overline{z}}}{2} = \\frac{1}{6},\\]or\n\\[\\frac{1}{z} + \\frac{1}{\\overline{z}} = \\frac{1}{3}.\\]Multiplying both sides by $3z \\overline{z}$, we get\n\\[3z + 3 \\overline{z} = z \\overline{z}.\\]We can re-write this equation as\n\\[z \\overline{z} - 3z - 3 \\overline{z} + 9 = 9.\\]The left-hand side factors as\n\\[(z - 3)(\\overline{z} - 3) = 9.\\]Since $\\overline{z} - 3$ is the conjugate of $z - 3$, this equation becomes\n\\[|z - 3|^2 = 9.\\][asy]\nunitsize(0.5 cm);\n\ndraw(Circle((3,0),3),red);\ndraw((-0.5,0)--(6.5,0));\ndraw((0,-3)--(0,3));\nfilldraw(Circle((0,0),0.1),white,red);\n\nlabel(\"Re\", (6.5,0), NE);\nlabel(\"Im\", (0,3), NE);\ndot(\"$3$\", (3,0), N);\n[/asy]\n\nHence, $S$ is the set of complex numbers that have a distance of 3 from the complex number 3 (except 0).  This is a circle of radius 3, so the area of the region inside is $\\boxed{9 \\pi}$."
-}

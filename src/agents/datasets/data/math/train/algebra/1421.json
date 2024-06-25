@@ -1,6 +1,0 @@
-{
-    "problem": "For how many integer values of $x$ is $x^2 < 7x$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "First, we see that $0$ does not satisfy the inequality, so we can divide by $x$.  If $x$ is positive, we can divide to get $x<7$, and there are $6$ positive integers satisfying this. If $x$ is negative, we divide to get $x>7$, which is not satisfied by any negative integers.  So the number of integer solutions is $\\boxed{6}$."
-}

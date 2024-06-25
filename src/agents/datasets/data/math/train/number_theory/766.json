@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the positive whole number divisors of 210?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The prime factorization of $210$ is $2 \\cdot 3 \\cdot 5 \\cdot 7$. It follows that the sum of the divisors of $210$ is equal to $(1 + 2)(1 + 3)(1+5)(1+7)$, as each factor of $210$ is represented when the product is expanded. It follows that the answer is equal to $3 \\cdot 4 \\cdot 6 \\cdot 8 = \\boxed{576}$."
-}

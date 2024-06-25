@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be real numbers such that $1 \\le a \\le b \\le c \\le 4.$  Find the minimum value of\n\\[(a - 1)^2 + \\left( \\frac{b}{a} - 1 \\right)^2 + \\left( \\frac{c}{b} - 1 \\right)^2 + \\left( \\frac{4}{c} - 1 \\right)^2.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By QM-AM,\n\\begin{align*}\n\\sqrt{\\frac{(a - 1)^2 + (\\frac{b}{a} - 1)^2 + (\\frac{c}{b} - 1)^2 + (\\frac{4}{c} - 1)^2}{4}} &\\ge \\frac{(a - 1) + (\\frac{b}{a} - 1) + (\\frac{c}{b} - 1) + (\\frac{4}{c} - 1)}{4} \\\\\n&= \\frac{a + \\frac{b}{a} + \\frac{c}{b} + \\frac{4}{c} - 4}{4}.\n\\end{align*}By AM-GM,\n\\[a + \\frac{b}{a} + \\frac{c}{b} + \\frac{4}{c} \\ge 4 \\sqrt[4]{4} = 4 \\sqrt{2},\\]so\n\\[\\sqrt{\\frac{(a - 1)^2 + (\\frac{b}{a} - 1)^2 + (\\frac{c}{b} - 1)^2 + (\\frac{4}{c} - 1)^2}{4}} \\ge \\sqrt{2} - 1,\\]and\n\\[(a - 1)^2 + \\left( \\frac{b}{a} - 1 \\right)^2 + \\left( \\frac{c}{b} - 1 \\right)^2 + \\left( \\frac{4}{c} - 1 \\right)^2 \\ge 4 (\\sqrt{2} - 1)^2 = 12 - 8 \\sqrt{2}.\\]Equality occurs when $a = \\sqrt{2},$ $b = 2,$ and $c = 2 \\sqrt{2},$ so the minimum value is $\\boxed{12 - 8 \\sqrt{2}}.$"
-}

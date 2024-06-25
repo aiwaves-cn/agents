@@ -1,6 +1,0 @@
-{
-    "problem": "Let \\[A = \\lceil \\log_2 2 \\rceil + \\lceil \\log_2 3 \\rceil + \\dots + \\lceil \\log_2 1000 \\rceil\\]and \\[B =  \\lfloor \\log_2 2 \\rfloor + \\lfloor \\log_2 3 \\rfloor + \\dots + \\lfloor \\log_2 1000 \\rfloor.\\]Compute $A-B.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Grouping the corresponding terms in $A-B,$ we can write \\[A-B = \\left(\\lceil \\log_2 2 \\rceil - \\lfloor \\log_2 2 \\rfloor\\right) + \\left(\\lceil \\log_2 3 \\rceil - \\lfloor \\log_2 3 \\rfloor\\right) + \\dots + \\left(\\lceil \\log_2 1000 \\rceil - \\lfloor \\log_2 1000 \\rfloor\\right). \\]For a real number $x,$ we have $\\lceil x \\rceil - \\lfloor x \\rfloor = 1$ if $x$ is not an integer, and $\\lceil x\\rceil - \\lfloor x\\rfloor = 0$ otherwise. Therefore, $A-B$ is simply equal to the number of non-integer values in the list $\\log_2 2, \\log_2 3, \\dots, \\log_2 1000.$\n\nThe only integer values in the list are $\\log_2 2 = 1,$ $\\log_2 4 =2,$ and so on, up to $\\log_2 512 = 9.$ Since there are $999$ numbers in the list and $9$ of them are integers, the number of non-integers is $999-9 = \\boxed{990}.$"
-}

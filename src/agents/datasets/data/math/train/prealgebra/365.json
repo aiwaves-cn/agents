@@ -1,6 +1,0 @@
-{
-    "problem": "The figure shows rectangle $ABCD$ with segment $PQ$ dividing the rectangle into two congruent squares. How many right triangles can be drawn using three of the points $\\{A,P,B,C,Q,D\\}$ as vertices? [asy]\ndraw((0,0)--(8,0)--(8,4)--(0,4)--cycle);\ndraw((4,0)--(4,4));\nlabel(\"D\",(0,0),S);\nlabel(\"Q\",(4,0),S);\nlabel(\"C\",(8,0),S);\nlabel(\"B\",(8,4),N);\nlabel(\"P\",(4,4),N);\nlabel(\"A\",(0,4),N);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "First, we consider the triangles that have the vertices of the rectangle $ABCD$ as the right angle. We can get $2$ right triangles for each vertex. For example, for vertex $A$, we can get right triangles $DAP$ and $DAB$. Since there are four vertices, we can get $2 \\cdot 4 =8$ right triangles.\n\nNext, we consider triangles that have $P$ or $Q$ as the vertices. We can set $PQ$ as a leg of the right triangles and get $4$ right triangles with the third vertex $A,B,C$, and $D$.\n\nLastly, we can draw the diagonals $DP, CP, AQ$, and $BQ$. Since $ADQP$ and $BCQP$ are squares, each diagonal creates a $45$ degree angle with the line segment $PQ$. Therefore, we have two right triangles: $DPC$ and $AQB$.\n\nAdding them together, we have a total of $$8+4+2=\\boxed{14 \\text{ right triangles}}.$$"
-}

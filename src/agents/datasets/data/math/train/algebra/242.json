@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of two fractions is $\\frac{11}{12}$ and their product is $\\frac{1}{6}$. What is the lesser of the two fractions? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We can make use of the fact that the sum of the roots of the quadratic equation $ax^2 + bx + c = 0$ is $-b/a$ and the product of the roots is $c/a$.  Choosing $a$, $b$, and $c$ so that $-b/a=11/12$ and $c/a=1/6$, we find that the fractions are the solutions to $12x^2 - 11x + 2=0$. Factoring this, we get \\[ 12x^2 - 11x + 2 = (3x - 2)(4x - 1). \\] Therefore, the solutions of $12x^2 - 11x + 2=0$ are $x=\\frac{1}{4}$ and $x=\\frac{2}{3}$.  The smaller of these fractions is $\\boxed{\\frac{1}{4}}$.\n\nAn alternative way to obtain the equation $12x^2 - 11x + 2=0$ is to begin with the given equations $x+y=\\frac{11}{12}$ and $xy=\\frac{1}{6}$.  Solve the first equation for $y$ and substitute $y=\\frac{11}{12}-x$ into the second equation.  Distributing, clearing denominators, and rearranging gives $12x^2 - 11x + 2=0$. Then we proceed as before."
-}

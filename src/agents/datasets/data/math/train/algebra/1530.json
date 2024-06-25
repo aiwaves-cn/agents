@@ -1,6 +1,0 @@
-{
-    "problem": "The average of two 2-digit positive integers is equal to the decimal number obtained by writing one of the two-digit integers before the decimal point and the other two-digit integer after the decimal point. What is the smaller of the two integers?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the two numbers be $m=AB$ and $n=CD$ (where $A,B,C$ and $D$ are digits). The average of $m$ and $n$ is $\\frac{m+n}{2}$ and the number formed by writing $m$ before the decimal point and $n$ after the decimal point is: $$AB.CD = AB + 0.CD = AB+\\frac{CD}{100} = m+\\frac{n}{100}.$$ Setting these equal gives: \\begin{align*}\n\\frac{m+n}{2} &= m+\\frac{n}{100}\\\\\n50m+50n &= 100m+n\\\\\n49n &= 50m\n\\end{align*} From this it follows that $n$ a multiple of 50. As $n$ is a 2-digit positive integer this means that $n=50$. So now $50m = 49n = 49\\cdot 50$, so $m=49$. Thus the integers are $49$ and $50$, so the smaller integer is $\\boxed{49}$."
-}

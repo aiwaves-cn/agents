@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate the expression \\[\\frac{(xy)^5}{y^3}\\] where $x=2$ and $y=-3$.",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "Exponents distribute over multiplication, so $(xy)^5=x^5y^5.$ Then the expression becomes \\[\\frac{x^5y^5}{y^3}=x^5y^{5-3}=x^5y^2.\\] Substituting in the given values for $x$ and $y$ yields \\[2^5(-3)^2=2^5(9)=32(9)=\\boxed{288}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ $\\angle C = \\frac{\\pi}{2}.$  Find\n\\[\\arctan \\left( \\frac{a}{b + c} \\right) + \\arctan \\left( \\frac{b}{a + c} \\right).\\]",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "From the addition formula for tangent,\n\\begin{align*}\n\\tan \\left( \\arctan \\left( \\frac{a}{b + c} \\right) + \\arctan \\left( \\frac{b}{a + c} \\right) \\right) &= \\frac{\\frac{a}{b + c} + \\frac{b}{a + c}}{1 - \\frac{a}{b + c} \\cdot \\frac{b}{a + c}} \\\\\n&= \\frac{a(a + c) + b(b + c)}{(a + c)(b + c) - ab} \\\\\n&= \\frac{a^2 + ac + b^2 + bc}{ab + ac + bc + c^2 - ab} \\\\\n&= \\frac{a^2 + b^2 + ac + bc}{ac + bc + c^2}.\n\\end{align*}Since $a^2 + b^2 = c^2,$ this tangent is 1.  Furthermore,\n\\[0 < \\arctan \\left( \\frac{a}{b + c} \\right) + \\arctan \\left( \\frac{b}{a + c} \\right) < \\pi,\\]so\n\\[\\arctan \\left( \\frac{a}{b + c} \\right) + \\arctan \\left( \\frac{b}{a + c} \\right) = \\boxed{\\frac{\\pi}{4}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A map of the town that Annie, Barbara, and Charlie live in can be represented by the Cartesian plane. Annie is located at $(6,-20)$ and Barbara is located at $(1, 14)$. They agree to meet at the closest point that is equidistant from their current locations and walk upwards together to get to Charlie's location at $\\left(\\frac{7}{2}, 2\\right)$. How many units upward do Annie and Barbara walk together to get to Charlie?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Annie and Barbara will be meeting up at the midpoint of $(6,-20)$ and $(1, 14)$. We only need to find the $y$-coordinate of the midpoint since the problem says they only walk upwards from the midpoint to get to Charlie's location. (If you want, you can verify that the $x$-coordinate of the midpoint equals $7/2$.) The $y$-coordinate of the midpoint is $\\frac{-20+14}{2}=-3$. To get to Charlie at $y=2$, the girls walk $2-(-3)=\\boxed{5}$ units upward."
-}

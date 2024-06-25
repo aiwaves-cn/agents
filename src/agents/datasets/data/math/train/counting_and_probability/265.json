@@ -1,6 +1,0 @@
-{
-    "problem": "Phil rolls 6 fair 6-sided dice. What is the probability that at least two dice show the same number?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The only way in which there won't be two dice of the same number is if for each number between 1 and 6 there is exactly one die displaying that number. If we line the dice up, there are a total of $6!$ ways in which we could order 6 dice all displaying different numbers and a total of $6^6$ possible outcomes since each of the 6 dice can have 6 outcomes and all of the rolls are determined independently. That means that the probability of all of the dice showing different numbers is $\\dfrac{6!}{6^6}=\\dfrac{5}{324}$, so the probability that we want is $1-\\dfrac{5}{324}=\\boxed{\\dfrac{319}{324}}$."
-}

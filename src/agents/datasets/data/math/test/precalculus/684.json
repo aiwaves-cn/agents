@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\tan \\left( \\arccos \\frac{1}{3} \\right).$",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "Consider a right triangle where the adjacent side is 1 and the hypotenuse is 3.\n\n[asy]\nunitsize (1 cm);\n\ndraw((0,0)--(1,0)--(1,2*sqrt(2))--cycle);\n\nlabel(\"$1$\", (1/2,0), S);\nlabel(\"$3$\", (1/2,sqrt(2)), NW);\nlabel(\"$2 \\sqrt{2}$\", (1,sqrt(2)), E);\nlabel(\"$\\theta$\", (0.3,0.3));\n[/asy]\n\nThen $\\cos \\theta = \\frac{1}{3},$ so $\\theta = \\arccos \\frac{1}{3}.$  By Pythagoras, the opposite side is $2 \\sqrt{2},$ so $\\tan \\theta = \\boxed{2 \\sqrt{2}}.$"
-}

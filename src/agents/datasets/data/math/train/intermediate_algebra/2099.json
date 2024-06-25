@@ -1,6 +1,0 @@
-{
-    "problem": "The expressions \\[A=1 \\times 2 + 3 \\times 4 + 5 \\times 6 + \\cdots + 37 \\times 38 + 39\\]and \\[B = 1 + 2 \\times 3 + 4 \\times 5 + \\cdots + 36 \\times 37 + 38 \\times 39\\]are obtained by writing multiplication and addition operators in an alternating pattern between successive integers. Find the positive difference between integers $A$ and $B$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Instead of computing $A$ and $B$ separately, we can write a simple expression for $A-B,$ as follows: \\[\\begin{aligned} A - B &= (1 \\cdot2 + 3 \\cdot4 + 5 \\cdot6 + \\cdots + 37 \\cdot38 + 39) - (1 + 2 \\cdot3 + 4 \\cdot5 + \\cdots + 36 \\cdot37 + 38 \\cdot39) \\\\ &= -1 + (1 \\cdot2 - 2 \\cdot3) + (3 \\cdot4 - 4 \\cdot5) + \\cdots + (37 \\cdot 38 - 38 \\cdot 39) + 39 \\\\ &= -1 + 2(-2) + 4(-2) + \\cdots + 38(-2) + 39 \\\\ &= -1 - 2 \\cdot 2 \\cdot \\frac{19 \\cdot 20}{2} + 39 \\\\ &= -1 - 760 + 39 \\\\ &= -722. \\end{aligned}\\]Thus, $|A-B| = \\boxed{722}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "When each edge of a cube is increased by $50\\%$, by what percent is the surface area of the cube increased?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $s$ represent the length of the edge of a cube. The surface area of the cube is 6 times the area of each face (since there are 6 faces), or $6s^2$. Increasing $s$ by $50\\%$ gives us $1.5s$. The new surface area is $6(1.5s)^2=6s^2(2.25)$. Increasing the surface area by $x\\%$ is $6s^2\\left(1+\\frac{x}{100}\\right)$, so we solve for $x$ when the surface area is $6s^2(2.25)$. $$2.25=1+\\frac{x}{100}\\qquad\\Rightarrow 1.25=\\frac{x}{100}\\qquad\\Rightarrow 125=x$$ The surface area increases by $\\boxed{125\\%}$."
-}

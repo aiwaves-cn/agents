@@ -1,6 +1,0 @@
-{
-    "problem": "An audience of $450$ people is seated in an auditorium. Each row contains the same number of seats and each seat in the auditorium is occupied. With three fewer seats per row, and five extra rows, the same audience could still be seated, occupying all seats. How many rows does the auditorium have?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $r$ be the number of rows, and $s$ be the number of seats per row. It follows that $rs = 450$ and $(r + 5)(s - 3) = 450$. Expanding the second equation, it follows that $rs - 3r + 5s - 15 = 450$, and substituting the value of $rs$, it follows that $3r - 5s + 15 = 0$. Substituting $s = \\frac{450}{r}$ into this new equation, we obtain that $$3r - 5 \\cdot \\frac{450}{r}+ 15 = 0 \\Longrightarrow r +5 -\\frac{750}{r} = 0.$$ Multiplying both sides of the equation by $r$ yields the quadratic equation $r^2 + 5r - 750 = 0$, which factors as $(r + 30)(r - 25) = 0$. Thus, $r = \\boxed{25}$."
-}

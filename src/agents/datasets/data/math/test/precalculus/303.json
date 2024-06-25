@@ -1,6 +1,0 @@
-{
-    "problem": "A line passes through the distinct vectors $\\mathbf{a}$ and $\\mathbf{b}.$  Then for a certain value of $k,$ the vector\n\\[3 \\mathbf{a} + k \\mathbf{b}\\]must also lie on the line.  Find $k.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The line passing through $\\mathbf{a}$ and $\\mathbf{b}$ can be parameterized by\n\\[\\mathbf{a} + t (\\mathbf{b} - \\mathbf{a}).\\]Taking $t = -2,$ we get\n\\[\\mathbf{a} + (-2)(\\mathbf{b} - \\mathbf{a}) = 3 \\mathbf{a} - 2 \\mathbf{b}.\\]Thus, $k = \\boxed{-2}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be positive real numbers.  Find the minimum value of\n\\[\\frac{(a + b)(a + c)(b + c)}{abc}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\na + b \\ge 2 \\sqrt{ab}, \\\\\na + c \\ge 2 \\sqrt{ac}, \\\\\nb + c \\ge 2 \\sqrt{bc},\n\\end{align*}so\n\\[\\frac{(a + b)(a + c)(b + c)}{abc} \\ge \\frac{2 \\sqrt{ab} \\cdot 2 \\sqrt{ac} \\cdot 2 \\sqrt{bc}}{abc} = 8.\\]Equality occurs when $a = b = c,$ so the minimum value is $\\boxed{8}.$"
-}

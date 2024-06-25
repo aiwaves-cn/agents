@@ -1,6 +1,0 @@
-{
-    "problem": "In $\\triangle ABC, AB = 8, BC = 7, CA = 6$ and side $BC$ is extended, as shown in the figure, to a point $P$ so that $\\triangle PAB$ is similar to $\\triangle PCA$. The length of $PC$ is\n[asy] defaultpen(linewidth(0.7)+fontsize(10)); pair A=origin, P=(1.5,5), B=(8,0), C=P+2.5*dir(P--B); draw(A--P--C--A--B--C); label(\"A\", A, W); label(\"B\", B, E); label(\"C\", C, NE); label(\"P\", P, NW); label(\"6\", 3*dir(A--C), SE); label(\"7\", B+3*dir(B--C), NE); label(\"8\", (4,0), S); [/asy]\n$\\textbf{(A)}\\ 7\\qquad \\textbf{(B)}\\ 8\\qquad \\textbf{(C)}\\ 9\\qquad \\textbf{(D)}\\ 10\\qquad \\textbf{(E)}\\ 11$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Since we are given that $\\triangle{PAB}\\sim\\triangle{PCA}$, we have $\\frac{PC}{PA}=\\frac{6}{8}=\\frac{PA}{PC+7}$.\nSolving for $PA$ in $\\frac{PC}{PA}=\\frac{6}{8}=\\frac{3}{4}$ gives us $PA=\\frac{4PC}{3}$.\nWe also have $\\frac{PA}{PC+7}=\\frac{3}{4}$. Substituting $PA$ in for our expression yields $\\frac{\\frac{4PC}{3}}{PC+7}=\\frac{3}{4}$\nWhich we can further simplify to $\\frac{16PC}{3}=3PC+21$\n$\\frac{7PC}{3}=21$\n$PC=\\boxed{9}$"
-}

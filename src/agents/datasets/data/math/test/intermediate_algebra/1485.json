@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[f(x) + f(2x) + f(2 - x) + f(x + 1) = x\\]for all real numbers $x.$  Find $f(0).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 0,$ we get\n\\[2f(0) + f(1) + f(2) = 0.\\]Setting $x = 1,$ we get\n\\[2f(1) + 2f(2) = 1.\\]Hence, $f(1) + f(2) = \\frac{1}{2},$ so $2f(0) + \\frac{1}{2} = 0.$  Then $f(0) = \\boxed{-\\frac{1}{4}}.$"
-}

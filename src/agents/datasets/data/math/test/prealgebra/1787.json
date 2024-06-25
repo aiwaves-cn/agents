@@ -1,6 +1,0 @@
-{
-    "problem": "What is $\\left(4\\dfrac{5}{8}\\right)^{55} \\cdot \\left(\\dfrac{8}{37}\\right)^{55}$?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "First we convert $4\\dfrac{5}{8}$ into an improper fraction: \\[4\\dfrac{5}{8} = 4 + \\dfrac{5}{8} = \\dfrac{32}{8} + \\dfrac{5}{8} = \\dfrac{37}{8}.\\]We discover that $4\\dfrac{5}{8}$ and $\\dfrac{8}{37}$ are in fact reciprocals of each other. Using the fact that $(ab)^n = a^nb^n$, we get our answer: \\[\n\\left(4\\dfrac{5}{8}\\right)^{55} \\cdot \\left(\\dfrac{8}{37}\\right)^{55} = \\left(4\\dfrac{5}{8} \\cdot \\dfrac{8}{37}\\right)^{55} = 1^{55} = \\boxed{1}.\\]"
-}

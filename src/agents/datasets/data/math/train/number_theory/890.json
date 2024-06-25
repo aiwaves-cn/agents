@@ -1,6 +1,0 @@
-{
-    "problem": "A book has 136 pages. Each page has the same number of words, and each page has no more than 100 words on it. The number of words in the book is congruent to 184, modulo 203. How many words are on each page?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If there are $p$ words on each page, then we are given $136p \\equiv 184 \\pmod{203}$. We can divide both sides of the congruence by 8 since 8 is relatively prime to 203, and this yields $17p \\equiv 23 \\pmod{203}$. Checking integers which are 1 more than multiples of 203, we find that the modular inverse of 17 modulo 203 is 12. Therefore, $p \\equiv 12(23) \\equiv 73 \\pmod{203}$. Therefore, each page has $\\boxed{73}$ words on it."
-}

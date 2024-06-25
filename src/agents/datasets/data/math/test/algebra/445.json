@@ -1,6 +1,0 @@
-{
-    "problem": "What is the domain of the function $f(x)=\\frac{x+2}{x^2-2x-24}$? Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "After factoring the denominator, we get $f(x)=\\frac{x+2}{(x-6)(x+4)}$. The domain of a rational function is the set of  all real numbers, except for those at which the function is undefined, which is where our denominator equals 0. The denominator equals 0 when $x=6$ or $x=-4$, which means that the domain is $x \\in \\boxed{(-\\infty,-4)\\cup(-4,6)\\cup(6,\\infty)}$."
-}

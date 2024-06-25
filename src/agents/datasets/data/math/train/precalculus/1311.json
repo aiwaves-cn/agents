@@ -1,6 +1,0 @@
-{
-    "problem": "For all real numbers $x$ except $x=0$ and $x=1$ the function $f(x)$ is defined by\n\\[f \\left( \\frac{x}{x - 1} \\right) = \\frac{1}{x}.\\]Suppose $0\\leq t\\leq \\frac{\\pi}{2}$. What is the value of $f(\\sec^2t)$?",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "First, we must solve\n\\[\\frac{x}{x - 1} = \\sec^2 t.\\]Solving for $x,$ we find $x = \\frac{\\sec^2 t}{\\sec^2 t - 1}.$  Then\n\\[f(\\sec^2 t) = \\frac{1}{x} = \\frac{\\sec^2 t - 1}{\\sec^2 t} = 1 - \\cos^2 t = \\boxed{\\sin^2 t}.\\]"
-}

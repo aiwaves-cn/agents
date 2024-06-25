@@ -1,6 +1,0 @@
-{
-    "problem": "On the number line shown, $AE$ = 40 cm, $AD$ = 30 cm, $BE$ = 20 cm, and $C$ is the midpoint of $\\overline{BD}$. In centimeters, what is $AC$? [asy] size(8cm);\npair A,B,C,D,E;\nA = (0,0);\nB = (2,0);\nD = (3,0);\nE = (4,0);\nC = (B+D)/2;\ndraw((-.5,0)--(4.5,0),Arrows);\ndot(A);\ndot(B);\ndot(C);\ndot(D);\ndot(E);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\nlabel(\"$E$\",E,S);\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We have $AB+BD=30\\text{ cm}$, $BD+DE=20\\text{ cm}$, and $AB+BD+DE=40\\text{ cm}$.  Summing the first two equations and subtracting the third gives $BD=30\\text{ cm}+20\\text{ cm}-40\\text{ cm}=10$ cm.  Therefore, $BC=BD/2=5\\text{ cm}$, $AB=AD-BD=20\\text{ cm}$, and $AC=AB+BC=5\\text{ cm}+20\\text{ cm}=\\boxed{25}\\text{ cm}$."
-}

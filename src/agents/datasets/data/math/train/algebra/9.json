@@ -1,6 +1,0 @@
-{
-    "problem": "For what values of $b$ is $-2$ not in the range of the function $f(x)=x^2+bx+2$? Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We see that $-2$ is not in the range of $f(x) = x^2 + bx + 2$ if and only if the equation $x^2 + bx + 2 = -2$ has no real roots.  We can re-write this equation as $x^2 + bx + 4 = 0$.  The discriminant of this quadratic is $b^2 - 4 \\cdot 4 = b^2 - 16$.  The quadratic has no real roots if and only if the discriminant is negative, so $b^2 - 16 < 0$, or $b^2 < 16$.  The set of values of $b$ that satisfy this inequality is $b \\in \\boxed{(-4,4)}$."
-}

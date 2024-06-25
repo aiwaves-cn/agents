@@ -1,6 +1,0 @@
-{
-    "problem": "For integers $n$, let \\[f(n) = \\left\\{\n\\begin{array}{cl}\nn^2 & \\text{ if }n\\text{ is odd}, \\\\\nn^2 - 4n - 1 & \\text{ if }n\\text{ is even}.\n\\end{array}\n\\right.\\]Find $f(f(f(f(f(4)))))$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Working from the inside out, we first compute $f(4) = 4^2-4(4)-1=-1$.  Next we find $f(-1)=(-1)^2=1$, and then $f(1)=1^2=1$. Putting these together, we have $f(f(f(f(f(4)))))=f(f(f(f(-1))))=f(f(f(1)))=f(f(1))=f(1)=\\boxed{1}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest value of $x$ such that $(4x+11)(2x-8)=x(2x+7)$? Express your answer as a fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We expand both sides: \\begin{align*}\n(4x+11)(2x-8)&= x(2x+7)\\\\\n8x^2-10x-88 &= 2x^2 + 7x\\\\\n6x^2-17x-88 &= 0\\\\\n(2x-11)(3x+8) &= 0\n\\end{align*}Therefore, the smaller of the two solutions is $x=-8/3$ and the larger is $x=\\boxed{\\frac{11}{2}}$"
-}

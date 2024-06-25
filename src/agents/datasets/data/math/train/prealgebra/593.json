@@ -1,6 +1,0 @@
-{
-    "problem": "What is the number of degrees in $x$? [asy]\nimport olympiad; import geometry; defaultpen(linewidth(0.8)); size(150);\npair A = origin, B = (Cos(50),Sin(50)), C = (Cos(50) + Sin(50)*sqrt(3),0);\ndraw(A--B--C--cycle);\nlabel(\"$30^\\circ$\",C-(0.3,-.03),NW);\nlabel(\"$2x$\",B + (-.10,-0.1),SE);\nlabel(\"$x$\",A+(0.15,.03),NE);\n[/asy]",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "The angles of a triangle sum to $180^\\circ$, so we have $x + 2x + 30^\\circ = 180^\\circ$.  Simplifying gives $3x +30^\\circ = 180^\\circ$, so $3x =150^\\circ$ and $x = \\boxed{50^\\circ}$."
-}

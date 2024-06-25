@@ -1,6 +1,0 @@
-{
-    "problem": "A standard deck of 52 cards has 13 ranks (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King) and 4 suits ($\\spadesuit$, $\\heartsuit$, $\\diamondsuit$, and $\\clubsuit$), such that there is exactly one card for any given rank and suit.  Two of the suits ($\\spadesuit$ and $\\clubsuit$) are black and the other two suits ($\\heartsuit$ and $\\diamondsuit$) are red.  The deck is randomly arranged. What is the probability that the top card is a face card (a Jack, Queen, or King)?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "There are $3 \\times 4 = 12$ face cards and 52 cards total, so the probability that the top card is a face card is $\\dfrac{12}{52} = \\boxed{\\dfrac{3}{13}}$."
-}

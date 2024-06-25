@@ -1,6 +1,0 @@
-{
-    "problem": "The prime numbers are added in order starting with $2$: $2$, $2 + 3$, $2 + 3 + 5$, and so on. How many of the first 12 such sums are also prime?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Approach this problem systematically: 2 is prime, 2+3=5 is prime, 5+5=10 is composite, 10+7=17 is prime, 17+11=28 is composite, 28+13=41 is prime, 41+17=58 is composite, 58+19=77 is composite, 77+23=100 is composite, 100+29=129 is composite, 129+31=160 is composite, and finally 160+37=197 is prime. Thus, $\\boxed{5}$ of the first 12 such sums are prime."
-}

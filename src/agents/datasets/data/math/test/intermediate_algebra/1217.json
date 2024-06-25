@@ -1,6 +1,0 @@
-{
-    "problem": "Find the quotient when $x^6 - 3$ is divided by $x + 1.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We can perform long division.  Alternatively, by the Remainder Theorem, the remainder upon division is $(-1)^6 - 3 = -2.$  Thus, we can write\n\\begin{align*}\n\\frac{x^6 - 3}{x + 1} &= \\frac{(x^6 - 1) - 2}{x + 1} \\\\\n&= \\frac{x^6 - 1}{x + 1} - \\frac{2}{x + 1} \\\\\n&= \\frac{(x^3 - 1)(x^3 + 1)}{x + 1} - \\frac{2}{x + 1} \\\\\n&= \\frac{(x^3 - 1)(x + 1)(x^2 - x + 1)}{x + 1} - \\frac{2}{x + 1} \\\\\n&= (x^3 - 1)(x^2 - x + 1) - \\frac{2}{x + 1} \\\\\n&= x^5 - x^4 + x^3 - x^2 + x - 1 - \\frac{2}{x + 1}.\n\\end{align*}Thus, the quotient is $\\boxed{x^5 - x^4 + x^3 - x^2 + x - 1}.$"
-}

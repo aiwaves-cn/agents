@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\left\\lceil\\sqrt{140}\\right\\rceil$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "The value $\\sqrt{140}$ lies between the two nearest integers.  Let the two nearest integers be $z_1$ and $z_2$.  Then we have $$z_1<\\sqrt{140}<z_2$$Because all values in the inequality are positive, it is appropriate to square each value and obtain $$z_1^2<140<z_2^2$$We only need the value of the perfect square greater than 140, which is 144.  Thus the least integer greater than $\\sqrt{140}$ is $\\sqrt{144}=\\boxed{12}$."
-}

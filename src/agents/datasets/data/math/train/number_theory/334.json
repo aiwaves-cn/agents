@@ -1,6 +1,0 @@
-{
-    "problem": "The base six number $53_{6}$ is equal to the base $b$ number $113_{b}$. What is the positive value of $b$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "First, we have $$53_6=5\\cdot6^1+3\\cdot6^0=33_{10}.$$ and  $$113_b=1\\cdot b^2+1\\cdot b^1+3\\cdot b^0=(b^2+b+3)_{10}.$$ Therefore, we must have $b^2+b+3=33$, so $b^2+b-30=0$. Factoring we have $(b-5)(b+6)=0$. Thus, $b=5$ or $b=-6$. The positive value is $b=\\boxed{5}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Solve the inequality\n\\[\\frac{x^2 - 25}{x + 5} < 0.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor the numerator, to get\n\\[\\frac{(x - 5)(x + 5)}{x + 5} < 0.\\]If $x \\neq -5,$ then this simplifies to $x - 5 < 0.$  Since the expression is not defined for $x = -5,$ the solution is\n\\[x \\in \\boxed{(-\\infty,-5) \\cup (-5,5)}.\\]"
-}

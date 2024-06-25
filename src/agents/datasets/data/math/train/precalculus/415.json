@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the point $(2 \\sqrt{3}, 6, -4)$ in rectangular coordinates to spherical coordinates.  Enter your answer in the form $(\\rho,\\theta,\\phi),$ where $\\rho > 0,$ $0 \\le \\theta < 2 \\pi,$ and $0 \\le \\phi \\le \\pi.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We have that $\\rho = \\sqrt{(2 \\sqrt{3})^2 + 6^2 + (-4)^2} = 8.$  We want $\\phi$ to satisfy\n\\[-4 = 8 \\cos \\phi,\\]so $\\phi = \\frac{2 \\pi}{3}.$\n\nWe want $\\theta$ to satisfy\n\\begin{align*}\n2 \\sqrt{3} &= 8 \\sin \\frac{2 \\pi}{3} \\cos \\theta, \\\\\n6 &= 8 \\sin \\frac{2 \\pi}{3} \\sin \\theta.\n\\end{align*}Thus, $\\theta = \\frac{\\pi}{3},$ so the spherical coordinates are $\\boxed{\\left( 8, \\frac{\\pi}{3}, \\frac{2 \\pi}{3} \\right)}.$"
-}

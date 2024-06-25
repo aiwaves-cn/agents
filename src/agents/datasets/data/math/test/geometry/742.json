@@ -1,6 +1,0 @@
-{
-    "problem": "Dakota randomly selected three different integers $1$ through $6.$ What is the probability that the three numbers selected could be the sides of a triangle? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "There are $\\binom{6}{3} = \\frac{6 \\cdot 5 \\cdot 4}{3 \\cdot 2 \\cdot 1} = 20$ possible sets of three different integers. We need to figure out how many of these could be the sides of a triangle.\n\nClearly, none of the sides can be $1,$ since that would violate the Triangle Inequality. As for the rest, it is quite a simple matter to just list them all in an organized fashion: \\begin{align*}\n&(2, 3, 4)\\\\\n&(2, 4, 5)\\\\\n&(2, 5, 6)\\\\\n&(3, 4, 5)\\\\\n&(3, 4, 6)\\\\\n&(3, 5, 6)\\\\\n&(4, 5, 6)\n\\end{align*} Therefore, there are $7$ possible sets of numbers that could be sides of a triangle, out of $20$ possible sets, so our answer is $\\boxed{\\frac{7}{20}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A row of 8 light switches controls different banks of lights in a school gymnasium. In preparation for a school dance, students decide that they want either one or two banks of lights on during the dance. How many possible ways are there of setting these 8 switches so that either one or two banks of lights are on?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are two cases here. If one bank of lights is on, there are $\\binom{8}{1}=8$ ways to choose which bank of lights it is. If two banks of lights are on, there are $\\binom{8}{2}=28$ ways to choose which banks of lights they are. The total number of valid settings is $8+28=\\boxed{36}$."
-}

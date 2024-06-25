@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$, $y$, and $z$ be distinct real numbers that sum to 0. Find the maximum possible value of $$\\frac{xy+yz+zx}{x^2+y^2+z^2}.$$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $0=(x+y+z)^2=x^2+y^2+z^2+2xy+2yz+2zx$. Rearranging, we get that $xy+yz+zx=-\\frac{1}{2}(x^2+y^2+z^2)$, so that in fact the quantity is always equal to $\\boxed{-\\frac{1}{2}}$."
-}

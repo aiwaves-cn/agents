@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $*(n) = \\left\\{ n-2, n+2, 2n, \\frac{n}{2} \\right\\}$. For example, $*(6) = \\{4, 8, 12, 3\\}$. For how many distinct integers $n$ does $*(n)$ have exactly three distinct elements?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "To have three distinct elements, two of $n-2$, $n+2$, $2n$, and $\\frac{n}{2}$ must be equal. It is clear that $n-2$ can never equal $n+2$. However, any other equality pairing among the four is possible, so we simply check for distinctness. If $2n = \\frac{n}{2}$, the solution is $n= 0$. If $n+ 2 = 2n$, $n = 2$. If $n - 2 = 2n$, $n = -2$. If $\\frac{n}{2} = n - 2$, $n = 4$. Finally, if $\\frac{n}{2} = n+ 2$, $n = -4$. Thus, there are $\\boxed{5}$ such $n$."
-}

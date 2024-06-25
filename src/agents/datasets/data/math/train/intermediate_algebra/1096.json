@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$ is a real number and $k$ is a nonnegative integer, recall that the binomial coefficient $\\binom{x}{k}$ is defined by the formula\n\\[\n  \\binom{x}{k} = \\frac{x(x - 1)(x - 2) \\dots (x - k + 1)}{k!} \\, .\n\\]Compute the value of\n\\[\n  \\frac{\\binom{1/2}{2014} \\cdot 4^{2014}}{\\binom{4028}{2014}} \\, .\n\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "$$\\begin{aligned} \\binom{1/2}{2014} &= \\frac{(1/2)(1/2-1)(1/2-2)\\dotsm(1/2-2014+1)}{2014!}  \\\\\n&= \\frac{(1/2)(-1/2)(-3/2)\\dotsm(-4025/2)}{2014!} \\\\\n&= \\frac{(-1)(-3)\\dotsm(-4025)}{(2014!)2^{2014}} \\\\\n&= -\\frac{(1)(3)\\dotsm(4025)}{(2014!)2^{2014}} \\cdot \\frac{2\\cdot4\\cdot6\\cdot\\dots\\cdot 4026}{2\\cdot4\\cdot6\\cdot\\dots\\cdot 4026} \\\\\n&= -\\frac{4026!} {(2014!)2^{2014+2013}(2013!)} \\\\\n\\end{aligned}$$So then\n$$\\begin{aligned} \\frac{\\binom{1/2}{2014}\\cdot 4^{2014}}{{4028 \\choose 2014}} &= -\\frac{4026!\\cdot 4^{2014}} {(2014!)2^{2014+2013}(2013!){4028 \\choose 2014}}  \\\\\n&= -\\frac{4026!\\cdot 2^{4028}(2014!)(2014!)} {(2014!)2^{4027}(2013!)(4028!)}  \\\\\n&= \\boxed{-\\frac{1} { 4027}}.  \\\\\n\\end{aligned}$$"
-}

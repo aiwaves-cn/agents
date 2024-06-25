@@ -1,6 +1,0 @@
-{
-    "problem": "A $5 \\times 8$ rectangle can be rolled to form two different cylinders with different maximum volumes. What is the ratio of the larger volume to the smaller volume? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Holding the rectangle vertically, we can form a cylinder with height 8 and base circumference of 5.  Let this cylinder have volume $V_A$ and radius $r_A$; we have $2\\pi r_A = 5$ so $r_A = \\frac{5}{2\\pi}$ and $V_A = \\pi r_A ^2 h = \\pi \\left(\\frac{5}{2\\pi}\\right)^2 (8) = \\frac{50}{\\pi}$.\n\nHolding the rectangle horizontally, we can form a cylinder with height 5 and base circumference of 8.  Similarly, let this cylinder have volume $V_B$ and radius $r_B$; we have $2\\pi r_B = 8$ so $r_B = \\frac{4}{\\pi}$ and $V_B = \\pi r_B^2 h = \\pi \\left(\\frac{4}{\\pi}\\right)^2 (5) = \\frac{80}{\\pi}$.\n\nHence, the ratio of the larger volume to the smaller volume is $\\frac{80/\\pi}{50/\\pi}=\\boxed{\\frac{8}{5}}$."
-}

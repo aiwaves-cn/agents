@@ -1,6 +1,0 @@
-{
-    "problem": "A circle centered at $O$ is circumscribed about $\\triangle ABC$ as follows: [asy]\npair pA, pB, pC, pO;\npO = (0, 0);\npA = pO + dir(-20);\npB = pO + dir(90);\npC = pO + dir(190);\ndraw(pA--pB--pC--pA);\ndraw(pO--pA);\ndraw(pO--pB);\ndraw(pO--pC);\nlabel(\"$O$\", pO, S);\nlabel(\"$110^\\circ$\", pO, NE);\nlabel(\"$100^\\circ$\", pO, NW);\nlabel(\"$A$\", pA, SE);\nlabel(\"$B$\", pB, N);\nlabel(\"$C$\", pC, SW);\ndraw(circle(pO, 1));\n[/asy] What is the measure of $\\angle BAC$, in degrees?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "We can see that $\\angle AOC = 360^\\circ - (110^\\circ + 100^\\circ) = 150^\\circ.$ Now, $\\triangle AOC$ and $\\triangle AOB$ are both isosceles triangles. That means that $\\angle OAC = \\frac{1}{2} \\cdot (180^\\circ - 150^\\circ) = 15^\\circ$ and $\\angle OAB = \\frac{1}{2} \\cdot (180^\\circ - 110^\\circ) = 35^\\circ.$  Therefore, our answer is $\\angle BAC = \\angle OAB + \\angle OAC = 15^\\circ + 35^\\circ = \\boxed{50^\\circ}.$"
-}

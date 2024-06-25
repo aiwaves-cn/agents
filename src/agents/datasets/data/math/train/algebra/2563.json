@@ -1,6 +1,0 @@
-{
-    "problem": "If $x+\\frac{1}{y}=1$ and $y+\\frac{1}{z}=1$, what is the value of the product $xyz$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Multiply both sides of the first equation by $y$ and both sides of the second equation by $z$ to obtain \\begin{align*}\nxy+1 &= y \\\\\nyz+1 &= z.\n\\end{align*} Substituting $xy+1$ for $y$ in the second equation, we find \\[\n(xy+1)z+1=z,\n\\] which simplifies to \\[\nxyz+z+1=z.\n\\] Subtracting $z+1$ from both sides, we find that $xyz=z-(z+1)=\\boxed{-1}.$"
-}

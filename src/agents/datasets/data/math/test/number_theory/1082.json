@@ -1,6 +1,0 @@
-{
-    "problem": "Alice is given the numbers $2$, $3$, $5$, $7$, and $9.$ She must choose a pair of these digits, with the digits being different, to form a two-digit number. How many of the numbers she can construct will be divisible by $3$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "For a number to be divisible by $3$, its digits must add up to be a number divisible by $3$. We can easily find that three combinations work: $2+7=9$, $5+7=12$, and $3+9=12$. Since the unit and tens digits are interchangeable (the digits will still add up to a multiple of 3), there are $3 \\cdot 2 =\\boxed{6}$ possible numbers."
-}

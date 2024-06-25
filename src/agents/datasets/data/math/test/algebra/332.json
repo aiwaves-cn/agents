@@ -1,6 +1,0 @@
-{
-    "problem": "Real numbers $x$ and $y$ have an arithmetic mean of 7 and a geometric mean of $\\sqrt{19}$. Find $x^2+y^2$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The givens tell us that $\\frac{x+y}{2}=7$ and $\\sqrt{xy}=\\sqrt{19}$, or $x+y=14$ and $xy=19$. $(x+y)^2=x^2+2xy+y^2$, so  \\[\nx^2+y^2=(x+y)^2-2xy=14^2-2\\cdot19=196-38=\\boxed{158}\n\\]"
-}

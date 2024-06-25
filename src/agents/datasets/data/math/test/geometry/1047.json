@@ -1,6 +1,0 @@
-{
-    "problem": "A right triangle is inscribed in a circle with a diameter $100$ units long. What is the maximum area of the triangle, in square units?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let the triangle be $ABC$, with hypotenuse $\\overline{AB}$, and let $O$ be the center of the circle.   The hypotenuse of a right triangle that is inscribed in a circle is a diameter of the circle, so $\\overline{AB}$ is the diameter of the circle.  Since point $C$ is on the circle, point $C$ is $100/2=50$ units from the midpoint of $\\overline{AB}$ (which is the center of the circle).  So, point $C$ cannot be any more than 50 units from $\\overline{AB}$.  This maximum can be achieved when $\\overline{OC}\\perp\\overline{AB}$.  The area of $\\triangle ABC$ then is $(50)(100)/2 = \\boxed{2500}$ square units.\n\n[asy]\npair A,B,C,O;\nA = (-1,0);\nB=-A;\nC = (0,1);\ndraw(A--B--C--A);\ndraw(C--(0,0),dashed);\nO = (0,0);\nlabel(\"$O$\",O,S);\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,E);\nlabel(\"$C$\",C,N);\ndraw(Circle(O,1));\n[/asy]"
-}

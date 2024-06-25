@@ -1,6 +1,0 @@
-{
-    "problem": "How many multiples of $9^3$ are greater than $9^4$ and less than $9^5$?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Since $9^4=9(9^3)$ and $9^5=9^2\\cdot9^3=81(9^3)$, we must count the number of integers between 10 and 80, inclusive. That number is $80-10+1=71$, so there are $\\boxed{71}$ multiples of $9^3$ greater than $9^4$ and less than $9^5$."
-}

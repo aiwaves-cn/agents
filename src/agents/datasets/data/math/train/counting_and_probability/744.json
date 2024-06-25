@@ -1,6 +1,0 @@
-{
-    "problem": "Twenty tiles are numbered 1 through 20 and are placed into box $A$. Twenty other tiles numbered 11 through 30 are placed into box $B$. One tile is randomly drawn from each box. What is the probability that the tile from box $A$ is less than 15 and the tile from box $B$ is either even or greater than 25? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Since the two events are independent, we consider each separately. The probability of the tile from A being less than 15 is equal to $\\frac{14}{20} = \\frac{7}{10}$. The probability of a tile from B being even or greater than 25 is $\\frac{10+2}{20} = \\frac{3}{5}$. So we multiply the probabilities for the independent events, giving us probability $\\frac{7}{10} \\cdot \\frac{3}{5} = \\boxed{\\frac{21}{50}}$."
-}

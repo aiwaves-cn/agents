@@ -1,6 +1,0 @@
-{
-    "problem": "The value $2^8 -1$ is divisible by 3 prime numbers. What is the sum of the three prime numbers?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Factor twice using difference squares to obtain $(2^8-1)=(2^4+1)(2^4-1)=(2^4+1)(2^2+1)(2^2-1)=17\\cdot5\\cdot3$. The sum of the 3 prime factors of $2^8-1$ is $17+5+3=\\boxed{25}$."
-}

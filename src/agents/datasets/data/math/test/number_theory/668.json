@@ -1,6 +1,0 @@
-{
-    "problem": "Given $m\\geq 2$, denote by $b^{-1}$ the inverse of $b\\pmod{m}$. That is, $b^{-1}$ is the residue for which $bb^{-1}\\equiv 1\\pmod{m}$. Sadie wonders if $(a+b)^{-1}$ is always congruent to $a^{-1}+b^{-1}$ (modulo $m$). She tries the example $a=2$, $b=3$, and $m=7$. Let $L$ be the residue of $(2+3)^{-1}\\pmod{7}$, and let $R$ be the residue of $2^{-1}+3^{-1}\\pmod{7}$, where $L$ and $R$ are integers from $0$ to $6$ (inclusive). Find $L-R$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The inverse of $5\\pmod{7}$ is 3, since $5\\cdot3 \\equiv 1\\pmod{7}$. Also, inverse of $2\\pmod{7}$ is 4, since $2\\cdot 4\\equiv 1\\pmod{7}$. Finally, the inverse of $3\\pmod{7}$ is 5 (again because $5\\cdot3 \\equiv 1\\pmod{7}$). So the residue of $2^{-1}+3^{-1}$ is the residue of $4+5\\pmod{7}$, which is $2$. Thus $L-R=3-2=\\boxed{1}$. Since the left-hand side $L$ and the right-hand side $R$ of the equation $$\n(a+b)^{-1} \\stackrel{?}{=} a^{-1} + b^{-1} \\pmod{m}\n$$are not equal, we may conclude that the equation is not true in general."
-}

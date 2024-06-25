@@ -1,6 +1,0 @@
-{
-    "problem": "In base $10,$ $44 \\times 55$ does not equal $3506.$ In what base does $44 \\times 55 = 3506$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If we are working in base $b$, then we have $(4b+4)(5b+5) - 3b^3 - 5b^2 - 6 = 0$. \\begin{align*}\n0 &= (4b+4)(5b+5) - 3b^3 - 5b^2 - 6 \\\\\n&= 20(b+1)^2 - 3b^3 - 5b^2 - 6 \\\\\n&= 20b^2 + 40b + 20 - 3b^3 - 5b^2 - 6 \\\\\n&= -3b^3 + 15b^2 + 40b + 14\n\\end{align*}Therefore, we must solve the cubic $3b^3 - 15b^2 - 40b - 14 = 0$. By the Rational Root Theorem, the only possible positive integer solutions to this equation are 1, 2, 7, and 14. 1 and 2 are invalid bases since the digit 6 is used, so we first try $b=7$. It turns out that $b=7$ is a solution to this cubic. If we divide by $b-7$, we get the quadratic $3b^2 + 6b + 2$, which has no integral solutions. Therefore, in base $\\boxed{7}$, we have $44 \\times 55 = 3506$."
-}

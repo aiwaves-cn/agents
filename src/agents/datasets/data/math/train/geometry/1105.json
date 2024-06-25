@@ -1,6 +1,0 @@
-{
-    "problem": "The vertices of a $3 - 4 - 5$ right triangle are the centers of three mutually externally tangent circles, as shown.   What is the sum of the areas of these circles?\n\n[asy]unitsize(1cm);\ndraw(Circle((1.8,2.4),1),linewidth(0.7));\ndraw(Circle((0,0),2),linewidth(0.7));\ndraw(Circle((5,0),3),linewidth(0.7));\ndraw((0,0)--(5,0)--(1.8,2.4)--cycle,linewidth(0.7));\nlabel(\"$A$\",(1.8,2.4),N);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(5,0),E);\nlabel(\"5\",(2.5,0),S);\nlabel(\"4\",(3.4,1.2),NE);\nlabel(\"3\",(0.9,1.2),NW);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Let $r$, $s$, and $t$ be the radii of the circles centered at $A$, $B$, and $C$, respectively. Then $r+s=3$, $r+t=4$, and $s+t=5$.  Adding these three equations gives $2(r+s+t) = 12$, so $r+s+t = 6$.  Combining this with the original three equations, we get $r=1$, $s=2$, and $t=3$. Thus the sum of the areas of the circles is \\[\n\\pi(1^2+2^2+3^2)=\\boxed{14\\pi}.\n\\]"
-}

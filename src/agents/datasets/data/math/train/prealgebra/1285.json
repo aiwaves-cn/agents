@@ -1,6 +1,0 @@
-{
-    "problem": "I have three distinct mystery novels, three distinct fantasy novels, and three distinct biographies. I'm going on vacation, and I want to take two books of different genres. How many possible pairs can I choose?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "I can choose one book in $9$ ways. Then, for the second book, I have $6$ choices that aren't in the same genre as the first book. It would seem that I have $9\\cdot 6$ choices for the two books; however, this overcounts pairs by a factor of $2$, since each pair has been counted in two ways (once in either order). So, the actual number of pairs is $(9\\cdot 6)/2$, which is $\\boxed{27}$.\n\nAlternative solution: Of the three genres of book, one must be excluded. We can choose the genre to be excluded in $3$ ways. Then, of the two remaining genres, we can choose a book of the first genre in $3$ ways, and we can choose a book of the second genre in $3$ ways. This gives us $3\\cdot 3\\cdot 3 = \\boxed{27}$ possible sets of choices (all of which produce different pairs of books, with no overcounting)."
-}

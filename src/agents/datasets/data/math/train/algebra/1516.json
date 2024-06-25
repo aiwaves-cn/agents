@@ -1,6 +1,0 @@
-{
-    "problem": "Find $A$ and $B$ such that\n\\[\\frac{3x+5}{x^2-x-42}=\\frac{A}{x-7}+\\frac{B}{x+6}.\\]Write your answer in the form $(A,B)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We factor the denominator in the left-hand side to get \\[\\frac{3x+5}{(x-7)(x+6)}= \\frac{A}{x - 7} + \\frac{B}{x + 6}.\\]We then multiply both sides by $(x - 7)(x + 6)$, to get \\[3x + 5 = A(x + 6) + B(x - 7).\\]We can solve for $A$ and $B$ by substituting suitable values of $x$.  For example, setting $x = 7$, the equation becomes $26 = 13A$, so $A = 2$.  Setting $x = -6$, the equation becomes $-13 = -13B$, so $B = 1$.  Therefore, $(A,B) = \\boxed{(2,1)}$."
-}

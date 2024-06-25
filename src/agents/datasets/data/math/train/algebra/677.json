@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$ is a positive integer such that $1^{x+2} + 2^{x+1} + 3^{x-1} + 4^x = 1170$, what is the value of $x$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We first note that the $4^x$ term grows much faster than the other three terms. Indeed, since $x$ is a positive integer, we have: $$4^x < 1^{x+2} + 2^{x+1} + 3^{x-1} + 4^x < 4^x + 4^x + 4^x + 4^x = 4^{x+1}.$$Thus we know that $1170$ lies between $4^x$ and $4^{x+1}$.\n\nThe first six powers of $4$ are $4^1=4,$ $4^2=16,$ $4^3=64,$ $4^4=256,$ $4^5 = 1024,$ and $4^6=4096.$\n\nWe can see that $1170$ lies between the last two of these, so we check $x=5$ and find: $$1^{x+2} + 2^{x+1} + 3^{x-1} + 4^x = 1 + 64 + 81 +1024 = 1170.$$Therefore, $x=\\boxed{5}$."
-}

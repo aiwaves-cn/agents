@@ -1,6 +1,0 @@
-{
-    "problem": "There are 30 cars in my building's parking lot.  All of the cars are red or white, and a car can have either 2 doors or 4 doors. $\\frac{1}{3}$ of them are red, $50\\%$ of them are 4-door, and 8 of them are 2-door and white.  How many of the cars are 4-door and red?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let the number of red 4-door cars be $x$.  Since $\\frac13$ of the cars are red, there are $\\frac13\\cdot 30 = 10$ red cars, so there are $10 -x$ red 2-door cars.  There are $(50\\%)\\cdot 30 = (0.5)(30) = 15$ cars that are 4-door cars, so $15-x$ of the 4-door cars are not red.  We then have the following Venn diagram:\n\n[asy]\nunitsize(0.05cm);\nlabel(\"Red cars\", (2,74));\nlabel(\"4-door cars\", (80,74));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"White 2-door cars: 8\",(44,10));\nlabel(\"$x$\", (44, 45));\nlabel(scale(0.8)*\"$10-x$\",(28,58));\nlabel(scale(0.8)*\"$15-x$\",(63,58));\n[/asy]\n\nAdding all four categories, we have  \\[(10-x)+x+(15-x) + 8 = 30.\\]Simplifying gives $33-x = 30$, so $x = \\boxed{3}$."
-}

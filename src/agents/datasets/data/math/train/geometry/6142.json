@@ -1,6 +1,0 @@
-{
-    "problem": "With all angles measured in degrees, the product $\\prod_{k=1}^{45} \\csc^2(2k-1)^\\circ=m^n$, where $m$ and $n$ are integers greater than 1. Find $m+n$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $x = \\cos 1^\\circ + i \\sin 1^\\circ$. Then from the identity\\[\\sin 1 = \\frac{x - \\frac{1}{x}}{2i} = \\frac{x^2 - 1}{2 i x},\\]we deduce that (taking absolute values and noticing $|x| = 1$)\\[|2\\sin 1| = |x^2 - 1|.\\]But because $\\csc$ is the reciprocal of $\\sin$ and because $\\sin z = \\sin (180^\\circ - z)$, if we let our product be $M$ then\\[\\frac{1}{M} = \\sin 1^\\circ \\sin 3^\\circ \\sin 5^\\circ \\dots \\sin 177^\\circ \\sin 179^\\circ\\]\\[= \\frac{1}{2^{90}} |x^2 - 1| |x^6 - 1| |x^{10} - 1| \\dots |x^{354} - 1| |x^{358} - 1|\\]because $\\sin$ is positive in the first and second quadrants. Now, notice that $x^2, x^6, x^{10}, \\dots, x^{358}$ are the roots of $z^{90} + 1 = 0.$ Hence, we can write $(z - x^2)(z - x^6)\\dots (z - x^{358}) = z^{90} + 1$, and so\\[\\frac{1}{M} = \\dfrac{1}{2^{90}}|1 - x^2| |1 - x^6| \\dots |1 - x^{358}| = \\dfrac{1}{2^{90}} |1^{90} + 1| = \\dfrac{1}{2^{89}}.\\]It is easy to see that $M = 2^{89}$ and that our answer is $2 + 89 = \\boxed{91}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the ratio of the sum of the odd integers between 0 and 100, to the sum of the odd integers between 100 and 200? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The sum of the first $n$ odd integers is $1 + 3 + \\dots + (2n - 1)$.  The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so this sum is $[1 + (2n - 1)]/2 \\cdot n = n^2$.\n\nThen the sum of the odd integers between 0 and 100 is $50^2$, and the sum of the odd integers between 0 and 200 is $100^2$.  Therefore, the ratio of the sum of the odd integers between 0 and 100 to the sum of the odd integers between 100 and 200 is $\\frac{50^2}{100^2-50^2}=\\frac{1}{4-1}=\\boxed{\\frac{1}{3}}$."
-}

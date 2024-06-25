@@ -1,6 +1,0 @@
-{
-    "problem": "If $f^{-1}(g(x))=x^3-1$ and $g$ has an inverse, find $g^{-1}(f(7))$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We know that $f^{-1}(u)=v$ is the same as $u=f(v)$.  Therefore $f^{-1}(g(x))=x^3-1$ is the same as  \\[g(x)=f(x^3-1).\\]We can also use that $g(s)=t$ is equivalent to $s=g^{-1}(t)$ to say \\[x=g^{-1}(f(x^3-1)).\\]This gives an expression containing $g^{-1}\\circ f$.\n\nTherefore, $g^{-1}(f(7))$ is the value of $x$ such that $x^3 - 1 = 7$.  Solving for $x$, we find $x = \\boxed{2}$."
-}

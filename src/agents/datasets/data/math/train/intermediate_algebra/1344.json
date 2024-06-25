@@ -1,6 +1,0 @@
-{
-    "problem": "Express the following sum as a simple fraction in lowest terms.\n\n$$\\frac{1}{1\\times2} + \\frac{1}{2\\times3} + \\frac{1}{3\\times4} + \\frac{1}{4\\times5} + \\frac{1}{5\\times6}$$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Any unit fraction whose denominator is the product of two consecutive numbers can be expressed as a difference of unit fractions as shown below. The second equation is the general rule.\n\n$$\\frac{1}{99\\times100} = \\frac{1}{99} - \\frac{1}{100}$$$$\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}$$Each of the fractions in the given sum can be expressed as the difference of two unit fractions like so:\n\n$$\\left(1-\\frac{1}{2}\\right) + \\left(\\frac{1}{2}-\\frac{1}{3}\\right) + \\left(\\frac{1}{3}-\\frac{1}{4}\\right) + \\left(\\frac{1}{4}-\\frac{1}{5}\\right) + \\left(\\frac{1}{5}-\\frac{1}{6}\\right)$$Observe that when the addition is performed, all terms but the first and last drop out. Therefore the sum is $1-\\frac{1}{6}$ or $\\boxed{\\frac{5}{6}}$."
-}

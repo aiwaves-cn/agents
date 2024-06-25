@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\binom{17}{9}$. You are told that $\\binom{15}{6} = 5005$ and $\\binom{15}{8} = 6435$.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "By Pascal's Rule, \\begin{align*}\n\\binom{17}{9} &= \\binom{16}{9} + \\binom{16}{8} \\\\\n\\binom{17}{9} &= \\binom{15}{8} + \\binom{15}{9} + \\binom{15}{7} + \\binom{15}{8} \\\\\n\\binom{17}{9} &= \\binom{15}{8} + \\binom{15}{15-9} + \\binom{15}{15-7} + \\binom{15}{8} \\\\\n\\binom{17}{9} &= \\binom{15}{8} + \\binom{15}{6} + \\binom{15}{8} + \\binom{15}{8} \\\\\n\\binom{17}{9} &= 6435 + 5005 + 6435 + 6435 \\\\\n\\binom{17}{9} &= \\boxed{24310}\n\\end{align*}"
-}

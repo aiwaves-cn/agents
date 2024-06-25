@@ -1,6 +1,0 @@
-{
-    "problem": "When the decimal $0.1\\overline{23}$ is written as a fraction $\\frac{a}{b}$ with $a$ and $b$ being positive integers with a greatest common divisor of 1, what is $a+b$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We can rewrite $0.1\\overline{23}$ as $0.1$ + $0.0\\overline{23}$. The first decimal is simply $\\frac{1}{10}$. Let the second decimal be $x$. Multiplying by 100, we have $100x = 2.3\\overline{23}$, which gives $99x = 2.3 \\implies x = \\frac{23}{990}$. Therefore, $0.1\\overline{23} = \\frac{1}{10} + \\frac{23}{990} = \\frac{61}{495}$. Thus $a+b=61+495 = \\boxed{556}$."
-}

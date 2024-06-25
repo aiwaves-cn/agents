@@ -1,6 +1,0 @@
-{
-    "problem": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The numbers $a_i - i$ are ten not-necessarily distinct even elements of the set $\\{0, 1, 2, \\ldots, 1997\\}$. Moreover, given ten not-necessarily distinct elements of $\\{0, 1, 2, \\ldots, 1997\\}$, we can reconstruct the list $a_1, a_2, \\ldots, a_{10}$ in exactly one way, by adding 1 to the smallest, then adding 2 to the second-smallest (which might actually be equal to the smallest), and so on.\nThus, the answer is the same as the number of ways to choose 10 elements with replacement from the set $\\{0, 2, 4, \\ldots, 1996\\}$, which has 999 elements. This is a classic problem of combinatorics; in general, there are ${m + n - 1 \\choose m}$ ways to choose $m$ things from a set of $n$ with replacement. In our case, this gives the value of ${999 + 10 - 1 \\choose 10} = {1008 \\choose 10}$, so the answer is $\\boxed{8}$."
-}

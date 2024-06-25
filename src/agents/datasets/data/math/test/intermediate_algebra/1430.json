@@ -1,6 +1,0 @@
-{
-    "problem": "Find the center of the ellipse whose equation is $5x^2 - 20x + 9y^2 - 18y - 16 = 0.$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ and $y,$ we get\n\\[5(x - 2)^2 + 9(y - 1)^2 = 45.\\]Then\n\\[\\frac{(x - 2)^2}{9} + \\frac{(y - 1)^2}{5} = 1,\\]so the center of the ellipse is $\\boxed{(2,1)}.$"
-}

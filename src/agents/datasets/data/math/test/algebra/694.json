@@ -1,6 +1,0 @@
-{
-    "problem": "I have a bag with yellow and blue marbles in it. At the moment, the ratio of blue marbles to yellow marbles is 4:3. If I add 5 blue marbles and remove 3 yellow marbles, the ratio will be 7:3. How many blue marbles were in the bag before I added more?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let $x$ be the number of blue marbles and $y$ the number of yellow marbles before I added more. We are given that the ratio of blue to yellow is 4:3, so $\\dfrac{x}{y}=\\dfrac{4}{3}$. Additionally, after we add blue marbles and remove yellow marbles the total number of blue marbles and yellow marbles will be x+5 and y-3 respectively. We're given that at this point the ratio will be $7:3$, so $\\dfrac{x+5}{y-3}=\\dfrac{7}{3}$. Cross multiplying the first equation gives $3x=4y$ and cross multiplying the second gives $3(x+5)=7(y-3)$. Solving two linear equations on two variables is routine; we get the solution $y=12$, $x=16$. Since $x$ represents the number of blue marbles before more were added, the answer to the problem is just $\\boxed{16}$."
-}

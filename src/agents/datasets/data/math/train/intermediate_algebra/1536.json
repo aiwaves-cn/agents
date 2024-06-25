@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real numbers $x$ so that the product $(x + i)((x + 1) + i)((x + 2) + i)$ is pure imaginary.  Enter all the solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Expanding, we get\n\\begin{align*}\n(x + i)((x + 1) + i)((x + 2) + i) &= (x^2 + x + xi + (x + 1)i + i^2)((x + 2) + i) \\\\\n&= (x^2 + x - 1 + (2x + 1)i)((x + 2) + i) \\\\\n&= (x^2 + x - 1)(x + 2) + (x^2 + x - 1)i + (2x + 1)(x + 2)i + (2x + 1)i^2 \\\\\n&= (x^3 + 3x^2 - x - 3) + (3x^2 + 6x + 1)i\n\\end{align*}We want this complex number to be pure imaginary, so the real part $x^3 + 3x^2 - x - 3$ must be 0.  This factors as\n\\[(x + 3)(x + 1)(x - 1) = 0,\\]so the solutions are $\\boxed{-3,-1,1}.$"
-}

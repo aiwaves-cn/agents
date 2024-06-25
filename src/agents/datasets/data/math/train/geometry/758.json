@@ -1,6 +1,0 @@
-{
-    "problem": "One of the five faces of the triangular prism shown here will be used as the base of a new pyramid. The numbers of exterior faces, vertices and edges of the resulting shape (the fusion of the prism and pyramid) are added. What is the maximum value of this sum?\n\n[asy]\ndraw((0,0)--(9,12)--(25,0)--cycle);\ndraw((9,12)--(12,14)--(28,2)--(25,0));\ndraw((12,14)--(3,2)--(0,0),dashed);\ndraw((3,2)--(28,2),dashed);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The original prism has 5 faces, 9 edges, and 6 vertices.  If the new pyramid is added to a triangular face, it will cover one of these faces while adding 1 new vertex, 3 new edges, and 3 new faces.  If instead the new pyramid is added to a quadrilateral face, it will cover one of these faces while adding 1 new vertex, 4 new edges, and 4 new faces.  So, we maximize the sum by adding a pyramid to a quadrilateral face.  This gives us a solid with $5-1+4 = 8$ faces, $9+4=13$ edges, and $6 + 1 = 7$ vertices.  The sum of these is $\\boxed{28}$."
-}

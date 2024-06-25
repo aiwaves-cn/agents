@@ -1,6 +1,0 @@
-{
-    "problem": "Two circles of radius 10 cm overlap such that each circle passes through the center of the other, as shown. How long, in cm, is the common chord (dotted segment) of the two circles? Express your answer in simplest radical form.\n\n[asy]\ndraw(Circle((0,0),10),linewidth(1));\ndraw(Circle((10,0),10),linewidth(1));\ndot((0,0));\ndot((10,0));\ndraw((5,8.66)--(5,-8.66),linetype(\"0 4\")+linewidth(1));\n\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "[asy]\ndraw(Circle((0,0),10),linewidth(1));\ndraw(Circle((10,0),10),linewidth(1));\ndraw((0,0)--(5,8.66)--(10,0)--cycle,linewidth(1));\ndraw((5,8.66)--(5,-8.66),linetype(\"0 4\")+linewidth(1));\n[/asy] The triangle is equilateral, since the three sides are equal radii. The common chord is twice an altitude of the triangle. The area of the triangle is $\\frac{10^2\\sqrt3}{4}=25\\sqrt3$ sq cm, so the altitude (length $h$ cm) has $\\frac{10h}{2}=25\\sqrt{3}$ or $h=5\\sqrt3$. The chord is twice this or $\\boxed{10\\sqrt3}$ cm."
-}

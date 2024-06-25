@@ -1,6 +1,0 @@
-{
-    "problem": "How many different two-person sub-committees can be selected from a committee of six people (the order of choosing the people does not matter)?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 6 options for the first person and 5 options left for the second person for a preliminary count of $6\\cdot5=30$ options. However, the order in which we choose the two members of the committee doesn't matter, so we've counted each pair twice, which means our final answer is $\\dfrac{6\\cdot5}{2}=\\boxed{15}$ combinations."
-}

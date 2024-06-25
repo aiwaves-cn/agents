@@ -1,6 +1,0 @@
-{
-    "problem": "For what values of the constant $c$ does the graph of $f(x) = \\frac{x^2-x+c}{x^2+x-6}$ have exactly one vertical asymptote?\n\nEnter the possible values of $c,$ separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor the denominator to get $f(x) = \\frac{x^2-x+c}{(x-2)(x+3)}$. Hence, the graph of $f(x)$ has vertical asymptotes at $x=2$ and $x=-3$, unless there is a factor of $x-2$ or $x+3$ in the numerator that cancels out the corresponding factor in the denominator (in this case there will be a hole at that point rather than an asymptote).\n\nBy the Factor theorem, if $x^2-x+c$ has a factor of $x-2$, we must have $2^2-2+c=0$ which gives us $c=-2$. Similarly, if $x^2-x+c$ has a factor of $x+3$, we must have $3^2+3+c=0$ which gives us $c=-12$. Therefore, in order to have exactly one asymptote, we need $c = \\boxed{-2 \\text{ or } -12}$."
-}

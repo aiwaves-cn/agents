@@ -1,6 +1,0 @@
-{
-    "problem": "Let $m$ be the product of all positive integers less than $4!$ which are invertible modulo $4!$. Find the remainder when $m$ is divided by $4!$.\n\n(Here $n!$ denotes $1\\times\\cdots\\times n$ for each positive integer $n$.)",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We compute that $4!=1\\times 2\\times 3\\times 4 = 2^{3}\\times 3=24$. So we want exactly the numbers in the set $\\{1,\\ldots,24\\}$ which are divisible by neither $2$ nor $3$, since an integer $a$ is invertible modulo $n$ for some positive integer $n$ if and only if $\\gcd(a,n)=1$. These turn out to be $\\{1,5,7,11,13,17,19,23\\}$. Then \\begin{align*}\nm & \\equiv 1\\cdot 5\\cdot 7\\cdot 11\\cdot 13\\cdot 17\\cdot 19\\cdot 23\\\\\n& \\equiv 1\\cdot 5\\cdot 7\\cdot 11\\cdot (-11)\\cdot (-7)\\cdot (-5)\\cdot (-1)\\\\\n& \\equiv (5\\cdot 7\\cdot 11)^2\\\\\n& \\equiv (35\\cdot 11)^2\\\\\n& \\equiv (11\\cdot 11)^2\\\\\n& \\equiv (121)^2\\\\\n& \\equiv 1^2\\\\\n& \\equiv \\boxed{1}\\pmod {24}\n\\end{align*}"
-}

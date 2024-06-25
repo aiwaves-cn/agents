@@ -1,6 +1,0 @@
-{
-    "problem": "If the two roots of the quadratic $7x^2+3x+k$ are $\\frac{-3\\pm i\\sqrt{299}}{14}$, what is $k$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Using the quadratic formula, we find that the roots of the quadratic are $\\frac{-3\\pm\\sqrt{3^2-4(7)(k)}}{14}=\\frac{-3\\pm\\sqrt{9-28k}}{14}$. Since the problem tells us that these roots must equal $\\frac{-3\\pm i\\sqrt{299}}{14}$, we have \\begin{align*} \\sqrt{9-28k}&=i\\sqrt{299}\n\\\\\\Rightarrow\\qquad 9-28k&=-299\n\\\\\\Rightarrow\\qquad -28k&=-308\n\\\\\\Rightarrow\\qquad k&=\\boxed{11}.\n\\end{align*}"
-}

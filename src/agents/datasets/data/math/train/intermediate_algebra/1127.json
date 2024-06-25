@@ -1,6 +1,0 @@
-{
-    "problem": "Find constants $A$, $B$, and $C$, such that\n$$\\frac{-x^2+3x-4}{x^3+x}= \\frac{A}{x} +\\frac{Bx+C}{x^2+1} $$Enter your answer as the ordered triplet $(A,B,C)$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By partial fractions,\n$$\\frac{-x^2+3x-4}{x^3+x}=\\frac{-x^2+3x-4}{x(x^2+1)} = \\frac{A}{x} +\\frac{Bx+C}{x^2+1} $$Multiplying by $x(x^2+1)$ gives\n$$-x^2+3x-4 = (A+B)x^2 +Cx + A.$$By comparing coefficients, we can see that $A=-4$ and $C=3.$ Then, $-4+B=-1$ which means $B=3$.\nThus,\n$$\\frac{-x^2+3x-4}{x^3+x} = \\frac{-4}{x}+\\frac{3x+3}{x^2+1}.$$and $(A,B,C) = \\boxed{(-4,3,3)}.$"
-}

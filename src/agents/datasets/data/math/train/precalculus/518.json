@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A = (-1,1,2),$ $B = (1,2,3),$ and $C = (t,1,1),$ where $t$ is a real number.  Find the smallest possible area of triangle $ABC.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{a} = \\begin{pmatrix} -1 \\\\ 1 \\\\ 2 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix},$ and $\\mathbf{c} = \\begin{pmatrix} t \\\\ 1 \\\\ 1 \\end{pmatrix}.$  Then the area of triangle $ABC$ is given by\n\\begin{align*}\n\\frac{1}{2} \\|(\\mathbf{b} - \\mathbf{a}) \\times (\\mathbf{c} - \\mathbf{a})\\| &= \\frac{1}{2} \\left\\| \\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix} \\times \\begin{pmatrix} t + 1 \\\\ 0 \\\\ -1 \\end{pmatrix} \\right\\| \\\\\n&= \\frac{1}{2} \\left\\| \\begin{pmatrix} -1 \\\\ 3 + t \\\\ -1 - t \\end{pmatrix} \\right\\| \\\\\n&= \\frac{1}{2} \\sqrt{(-1)^2 + (3 + t)^2 + (-1 - t)^2} \\\\\n&= \\frac{1}{2} \\sqrt{2t^2 + 8t + 11}.\n\\end{align*}Completing the square on $2t^2 + 8t + 11,$ we get\n\\[2(t + 2)^2 + 3.\\]Thus, the smallest possible area of the triangle is $\\boxed{\\frac{\\sqrt{3}}{2}}.$"
-}

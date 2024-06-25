@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real solutions to\n\\[\\frac{1}{(x - 1)(x - 2)} + \\frac{1}{(x - 2)(x - 3)} + \\frac{1}{(x - 3)(x - 4)} = \\frac{1}{6}.\\]Enter all solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By partial fractions,\n\\begin{align*}\n\\frac{1}{(x - 1)(x - 2)} &= \\frac{1}{x - 2} - \\frac{1}{x - 1}, \\\\\n\\frac{1}{(x - 2)(x - 3)} &= \\frac{1}{x - 3} - \\frac{1}{x - 2}, \\\\\n\\frac{1}{(x - 3)(x - 4)} &= \\frac{1}{x - 4} - \\frac{1}{x - 3},\n\\end{align*}so the given equation reduces to\n\\[\\frac{1}{x - 4} - \\frac{1}{x - 1} = \\frac{1}{6}.\\]Multiplying both sides by $6(x - 4)(x - 1),$ we get\n\\[6(x - 1) - 6(x - 4) = (x - 4)(x - 1),\\]which simplifies to $x^2 - 5x - 14 = 0.$  This factors as $(x - 7)(x + 2) = 0,$ so the solutions are $\\boxed{7,-2}.$"
-}

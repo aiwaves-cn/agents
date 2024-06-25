@@ -1,6 +1,0 @@
-{
-    "problem": "Two sides of a triangle are each $8$ units long. If the third side has a whole number length, what is the greatest possible perimeter, in units, for the triangle?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The Triangle Inequality says that the sum of the lengths of any two sides must be greater than the length of the third side. That means $8+8=16$ must be greater than the length of the third side. The third side has a whole number length, so the greatest possible length is 15 units. That makes the perimeter $8+8+15=\\boxed{31}$ units."
-}

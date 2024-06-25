@@ -1,6 +1,0 @@
-{
-    "problem": "What value of $x$ will give the minimum value for $x^2 + 11x - 5$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We start by completing the square: \\begin{align*}\nx^2+11x-5&= x^2+11x +\\left(\\frac{11}{2}\\right)^2 - \\left(\\frac{11}{2}\\right)^2 - 5\\\\ &= x^2 +11x+ \\left(\\frac{11}{2}\\right)^2 - \\left(\\frac{11}{2}\\right)^2 - 5\\\\ &=\\left(x+\\frac{11}{2}\\right)^2 -5 - \\frac{121}{4}.\\end{align*}Since the square of a real number is at least 0, we have $\\left(x+\\frac{11}{2}\\right)^2\\ge 0$, where $\\left(x+\\frac{11}{2}\\right)^2 =0$ only if $x=-\\frac{11}{2}$.   Therefore, the expression is minimized when $x=\\boxed{-\\frac{11}{2}}.$"
-}

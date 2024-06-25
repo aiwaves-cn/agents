@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix $\\mathbf{M}$ that swaps the columns of a matrix.  In other words,\n\\[\\mathbf{M} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} b & a \\\\ d & c \\end{pmatrix}.\\]If no such matrix $\\mathbf{M}$ exists, then enter the zero matrix.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{M} = \\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix}.$  Then\n\\[\\mathbf{M} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} pa + qc & pb + qd \\\\ ra + sc & rb + sd \\end{pmatrix}.\\]We want this to be equal to $\\begin{pmatrix} b & a \\\\ d & c \\end{pmatrix}.$  There are no constants $p,$ $q,$ $r,$ $s$ that will make this work, so the answer is the zero matrix $\\boxed{\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}}.$"
-}

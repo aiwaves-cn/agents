@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ be unit vectors such that\n\\[\\mathbf{a} + \\mathbf{b} + \\sqrt{3} \\mathbf{c} = \\mathbf{0}.\\]Find the angle between $\\mathbf{a}$ and $\\mathbf{b},$ in degrees.\n\nNote: A unit vector is a vector of magnitude 1.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From the given equation,\n\\[\\mathbf{a} + \\mathbf{b} = -\\sqrt{3} \\mathbf{c}.\\]Then $(\\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} + \\mathbf{b}) = 3 \\mathbf{c} \\cdot \\mathbf{c} = 3.$  Expanding, we get\n\\[\\mathbf{a} \\cdot \\mathbf{a} + 2 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b} = 3.\\]Then $2 \\mathbf{a} \\cdot \\mathbf{b} = 1,$ so $\\mathbf{a} \\cdot \\mathbf{b} = \\frac{1}{2}.$\n\nIf $\\theta$ is the angle between $\\mathbf{a}$ and $\\mathbf{b},$ then\n\\[\\cos \\theta = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\| \\|\\mathbf{b}\\|} = \\frac{1/2}{1 \\cdot 1} = \\frac{1}{2},\\]so $\\theta = \\boxed{60^\\circ}.$"
-}

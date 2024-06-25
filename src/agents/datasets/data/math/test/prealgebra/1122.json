@@ -1,6 +1,0 @@
-{
-    "problem": "On a protractor, ray $BA$ goes through the 85-degree mark and ray $BC$ goes through the 30-degree mark. What is the measure, in degrees, of angle $ABC$?\n\n[asy]\ndraw((0,0)--(2,0)..(1,1)..(0,0)..cycle,linewidth(2));\n\ndraw((1,0)--1.4dir(30)+(1,0),Arrow);\ndraw((1,0)--1.3dir(85)+(1,0),Arrow);\n\ndot(1.1dir(85)+(1,0));\ndot(1.2dir(30)+(1,0));\n\nlabel(\"A\",1.1dir(85)+(1,0),NW);\nlabel(\"B\",(1,0),S);\nlabel(\"C\",1.2dir(30)+(1,0),SE);\n\nlabel(\"85\",.9dir(85)+(1,0));\nlabel(\"30\",.9dir(30)+(1,0));\n\n[/asy]",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "The measure of angle $ABC$ is $85-30=\\boxed{55}$ degrees."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that I have $6$ different books, $2$ of which are math books. In how many ways can I stack my $6$ books on a shelf if I do not want the math books to be next to each other?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We first place the non-math books. There are $4$ choices for the first book, $3$ choices for the second book, $2$ choices for the third book, and $1$ choice for the last book. Then we have to put the two math books between the four non-math books such that there is at least one non-math book between the two math books. We see there is a total of $5$ openings created by the four non-math books. So the first math book has $5$ choices, and the second math book has $4$ choices.\n\nSo the total number of ways the books can be placed is $4\\times3\\times2\\times1\\times5\\times 4 =\\boxed{480}.$"
-}

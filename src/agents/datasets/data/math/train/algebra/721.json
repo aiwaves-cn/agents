@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\lfloor0.999\\rfloor+\\lceil2.001\\rceil$.",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "The greatest integer that is less than or equal to $0.999$ is $0$, so $\\lfloor0.999\\rfloor=0$. The smallest integer that is greater than or equal to $2.001$ is $3$, so $\\lceil2.001\\rceil=3$. Therefore, $\\lfloor0.999\\rfloor+\\lceil2.001\\rceil=0+3=\\boxed{3}$."
-}

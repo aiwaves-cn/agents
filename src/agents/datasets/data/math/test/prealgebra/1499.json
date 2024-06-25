@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers $n$ satisfy both of the inequalities $4n + 3 < 25$ and $-7n + 5 < 24$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Subtract 3 and divide by 4 on both sides of the first inequality to obtain \\begin{align*}\n4n + 3 &< 25 \\\\\n\\Rightarrow\\qquad 4n &< 22 \\\\\n\\Rightarrow\\qquad n &< 5.5.\n\\end{align*}Similarly, the second inequality yields \\begin{align*}\n-7n + 5 &< 24 \\\\\n\\Rightarrow\\qquad -7n &< 19 \\\\\n\\Rightarrow\\qquad n &> -\\frac{19}{7}.\n\\end{align*}Therefore, we are looking for all the integers between $-\\frac{19}{7}$ and $5.5$. Since $-\\frac{19}{7}$ is between $-3$ and $-2$ and the largest integer less than $5.5$ is 5, we need to count the number of integers between $-2$ and $5$, inclusive. There are $5$ positive integers, $2$ negative integers, and zero, so there are $\\boxed{8}$ integers that satisfy both $4n + 3 < 25$ and $-7n + 5 < 24$."
-}

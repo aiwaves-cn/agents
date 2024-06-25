@@ -1,6 +1,0 @@
-{
-    "problem": "What is the residue modulo $16$ of the sum of the modulo $16$ inverses of the first $8$ positive odd integers?\n\nExpress your answer as an integer from $0$ to $15$, inclusive.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $16$ is even and only has a prime factor of $2$, all of the odd numbers are relatively prime with $16$ and their modular inverses exist. Furthermore, the inverses must be distinct: suppose that $a^{-1} \\equiv b^{-1} \\pmod{16}$. Then, we can multiply both sides of the congruence by $ab$ to obtain that $b \\equiv ab \\cdot a^{-1} \\equiv ab \\cdot b^{-1} \\equiv a \\pmod{16}$.\n\nAlso, the modular inverse of an odd integer $\\mod{16}$ must also be odd: if the modular inverse of $m$ was of the form $2n$, then $2mn = 16k + 1$, but the left-hand side is even and the right-hand side is odd.\n\nThus, the set of the inverses of the first $8$ positive odd integers is simply a permutation of the first $8$ positive odd integers. Then, \\begin{align*}&1^{-1} + 3^{-1} + \\cdots + 15^{-1} \\\\\n&\\equiv 1 + 3 + \\cdots + 15 \\\\ &\\equiv 1 + 3 + 5 + 7 + (-7) + (-5) + (-3) + (-1) \\\\ &\\equiv \\boxed{0} \\pmod{16}.\\end{align*}"
-}

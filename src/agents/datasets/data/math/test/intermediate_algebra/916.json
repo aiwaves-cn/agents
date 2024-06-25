@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of the following expression: $100 - 99 +98 - 97 + 96 - 95 + \\cdots + 4 - 3 +2 - 1$?",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Each pair of consecutive terms makes 1 (for example, $100-99=1$). Since there are $100/2=50$ such pairs, the entire expression is equal to $1\\cdot50=\\boxed{50}$."
-}

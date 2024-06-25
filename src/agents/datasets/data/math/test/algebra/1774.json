@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $y = -16t^2 - 60t + 54$ describes the height (in feet) of a ball thrown downward at 60 feet per second from a height of 54 feet from the ground, where $t$ represents time, measured in seconds. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest hundredth.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Setting $y$ to zero, we find the following: \\begin{align*}\n0& = -16t^2 - 60t + 54\\\\\n& = 16t^2 + 60t - 54\\\\\n& = 8t^2 + 30t - 27\\\\\n& = (4t-3)(2t+9)\\\\\n\\end{align*}As $t$ must be positive, we can see that $t = \\frac{3}{4} = \\boxed{0.75}.$"
-}

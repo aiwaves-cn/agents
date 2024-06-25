@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all integer values of $n$ such that $\\frac{20}{2n - 1}$ is an integer?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The expression $2n-1$ is odd for every integer $n$, and conversely every odd integer takes the form $2n-1$ for some integer $n$.  Therefore, there is one solution $n$ for each (not necessarily positive) odd divisor of 20.  The positive odd divisors of 20 are 1 and 5, so we solve $2n-1=-5$, $2n-1=-1$, $2n-1=1$, and $2n-1=5$ to find the solutions $n=-2$, $n=0$, $n=1$, and $n=3$.  These values for $n$ sum to $\\boxed{2}$."
-}

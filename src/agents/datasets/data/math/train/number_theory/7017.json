@@ -1,6 +1,0 @@
-{
-    "problem": "Let $T = \\{9^k : k ~ \\mbox{is an integer}, 0 \\le k \\le 4000\\}$. Given that $9^{4000}$ has 3817 digits and that its first (leftmost) digit is 9, how many elements of $T$ have 9 as their leftmost digit?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $9^{4000}$ has 3816 digits more than $9^1$, $4000 - 3816 = \\boxed{184}$ numbers have 9 as their leftmost digits."
-}

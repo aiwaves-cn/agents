@@ -1,6 +1,0 @@
-{
-    "problem": "When the first $50$ counting numbers are arranged in columns, as shown, what is the sum of all of the counting numbers in column $\\text E?$ \\begin{tabular}{lllll}\nA & B & C & D & E\\\\\n1 & 2 & 3 & 4 & 5\\\\\n10 & 9 & 8 & 7 & 6\\\\\n11 & 12 & 13 & 14 & 15\\\\\n20 & 19 & 18 & 17 & 16\\\\\n. & . & . & . & .\\\\\n. & . & . & . & .\\\\\n. & . & . & . & .\n\\end{tabular}",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The numbers in the last row are $50,$ $49,$ $48,$ $47,$ $46,$ so we want to find the sum \\[5+6+15+16+\\dots+45+46.\\] The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms.\n\nWe first add $5+15+25+35+45$ by observing that the mean of these five terms is $25,$ so their sum is $25\\cdot5.$ Similarly, the mean of the five terms in the sum $6+16+26+36+46$ is $26,$ so their sum is $26\\cdot 5.$ Adding these sums, we find that the original sum is $$25\\cdot5+26\\cdot 5=(25+26)\\cdot5=51\\cdot5=\\boxed{255}.$$"
-}

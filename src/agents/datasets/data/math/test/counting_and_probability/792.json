@@ -1,6 +1,0 @@
-{
-    "problem": "Camy made a list of every possible distinct five-digit positive integer that can be formed using each of the digits 1, 3, 4, 5 and 9 exactly once in each integer. What is the sum of the integers on Camy's list?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Note that there are $4! = 24$ numbers ending in 1, since we have 4 choices for the 10s digit, 3 choices for the 100s digit, 2 choices for the 1000s digit, and 1 choice for the remaining digit.  Thus there are also 24 numbers ending in each of 3, 4, 5, 9, and the total contribution of ones digits to the sum is $24 (1 + 3 + 4 + 5 + 9) = 528$.  But we can make a similar argument about the contribution of the digits in the other places (10s, 100s, etc.), so our total sum is $528 + 5280 + \\ldots + 5280000 = 528 (1 + 10 + \\ldots + 10000) = 528\\cdot 11,111 = \\boxed{5,\\!866,\\!608}$."
-}

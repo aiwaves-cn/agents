@@ -1,6 +1,0 @@
-{
-    "problem": "Two cards are dealt at random from a standard deck of 52 cards.  What is the probability that the first card is a $\\diamondsuit$ and the second card is an ace?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We have two cases because if the first card is a $\\diamondsuit$, it could be an ace or not be an ace.\n\nThere is a $\\dfrac{1}{52}$ chance that the ace of $\\diamondsuit$ is drawn first, and a $\\dfrac{3}{51} = \\dfrac{1}{17}$ chance that the second card drawn is one of the three remaining aces, which gives a probability of $\\dfrac{1}{52}\\cdot \\dfrac{1}{17} = \\dfrac{1}{884}$ chance that this occurs.\n\nThere is a $\\dfrac{12}{52} = \\dfrac{3}{13}$ chance that a $\\diamondsuit$ other than the ace is drawn first, and a $\\dfrac{4}{51}$ chance that an ace is drawn second, giving a $\\dfrac{3}{13}\\cdot \\dfrac{4}{51} = \\dfrac{4}{221}$ chance that this occurs.\n\nSo the probability that one of these two cases happens is $\\dfrac{1}{884} + \\dfrac{4}{221} = \\boxed{\\dfrac{1}{52}}$.\n\nNotice that we can avoid some of the large denominators above by organizing this computation as follows: $$\\dfrac{1}{52}\\cdot\\dfrac{3}{51}+\\dfrac{12}{52}\\cdot\\dfrac{4}{51} = \\dfrac{1\\cdot 3+12\\cdot 4}{52\\cdot 51} = \\dfrac{51}{52\\cdot 51}=\\boxed{\\dfrac{1}{52}}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $\\{a_n\\}$ is defined by $$\na_0 = 1,a_1 = 1, \\text{ and } a_n = a_{n - 1} + \\frac {a_{n - 1}^2}{a_{n - 2}}\\text{ for }n\\ge2.\n$$The sequence $\\{b_n\\}$ is defined by $$\nb_0 = 1,b_1 = 3, \\text{ and } b_n = b_{n - 1} + \\frac {b_{n - 1}^2}{b_{n - 2}}\\text{ for }n\\ge2.$$Find $\\frac {b_{32}}{a_{32}}$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Dividing the recurrence relation for $\\{a_n\\}$ by $a_{n-1}$, we get \\[\\frac{a_n}{a_{n-1}} = 1 + \\frac{a_{n-1}}{a_{n-2}}.\\]Then, since $a_1/a_0 = 1$, we have $a_2/a_1 = 1 + (a_1/a_0) = 2$, $a_3/a_2 = 1 +(a_2/a_1) = 3$, and so on. In general, $a_n/a_{n-1} = n$ for all $n$. Then \\[a_{32} = 32a_{31} = 32 \\cdot 31a_{30} = \\dots = 32! a_0 = 32!.\\]For $\\{b_n\\}$, we also have $b_n/b_{n-1} = 1 + (b_{n-1}/b_{n-2})$, but here $b_1/b_0 = 3$. Therefore, in general, $b_n/b_{n-1} = n+2$ for all $n$. Then \\[b_{32} = 34b_{31} = 34\\cdot 33b_{30} = \\dots = (34 \\cdot 33 \\cdots 3)b_0 = \\frac{34!}{2}.\\]Thus, \\[\\frac{b_{32}}{a_{32}} = \\frac{34!/ 2}{32!} = \\frac{34 \\cdot 33}{2} = \\boxed{561}.\\]"
-}

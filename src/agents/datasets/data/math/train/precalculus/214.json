@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of $x$-intercepts on the graph of $y = \\sin \\frac{1}{x}$ (evaluated in terms of radians) in the interval $(0.0001, 0.001).$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "The intercepts occur where $\\sin \\frac{1}{x}= 0$, that is, where $x = \\frac{1}{k\\pi}$ and $k$ is a nonzero integer. Solving\n\\[0.0001 < \\frac{1}{k\\pi} < 0.001\\]yields\n\\[\\frac{1000}{\\pi} < k < \\frac{10{,}000}{\\pi}.\\]Thus the number of $x$ intercepts in $(0.0001, 0.001)$ is\n\\[\\left\\lfloor\\frac{10{,}000}{\\pi}\\right\\rfloor -\\left\\lfloor\\frac{1000}{\\pi}\\right\\rfloor = 3183 - 318 = \\boxed{2865}.\\]"
-}

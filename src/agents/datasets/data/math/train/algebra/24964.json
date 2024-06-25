@@ -1,6 +1,0 @@
-{
-    "problem": "If $x+y=9$ and $xy=10$, what is the value of $x^3+y^3$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If we cube both sides of the first equation, we find that $x^3+3x^2y+3xy^2+y^3=729$, so $x^3+y^3=729-(3x^2y+3xy^2)$. Since $3x^2y+3xy^2=3(xy)(x+y)=3(10)(9)$, we see that $x^3+y^3=729-(3x^2y+3xy^2)=729-270=\\boxed{459}$."
-}

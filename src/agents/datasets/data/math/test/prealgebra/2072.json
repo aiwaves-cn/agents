@@ -1,6 +1,0 @@
-{
-    "problem": "One computer in a lab is programmed to back up data at the turn of the minute every five minutes. Another computer is programmed to back up data at the turn of the minute every two minutes. Find the number of times in twenty-four hours that the two computers back up data at the same time.\n\n(Assume that the computers do not back up at the start of the 24-hour period.)",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "First, we find the least common multiple of $5$ and $2$ so as to determine the intervals at which the computers back up together. Both $5$ and $2$ are prime, so the least common multiple is $10$. In one hour, there are $60/10=6$ ten minute intervals, so in $24$ hours, there are $6 \\cdot 24 = 144$ ten-minute intervals. Thus, the computers back up data at the same time $\\boxed{144}$ times."
-}

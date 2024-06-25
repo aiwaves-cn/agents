@@ -1,6 +1,0 @@
-{
-    "problem": "If $x + \\frac{1}{x} = 5,$ then compute the value of\n\\[(x - 2)^2 + \\frac{25}{(x - 2)^2}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "From the equation $x + \\frac{1}{x} = 5,$ $x^2 + 1 = 5x,$ so\n\\[x^2 = 5x - 1.\\]Then\n\\[(x - 2)^2 = x^2 - 4x + 4 = (5x - 1) - 4x + 4 = x + 3.\\]Hence,\n\\begin{align*}\n(x - 2)^2 + \\frac{25}{(x - 2)^2} &= x + 3 + \\frac{25}{x + 3} \\\\\n&= \\frac{(x + 3)^2 + 25}{x + 3} \\\\\n&= \\frac{x^2 + 6x + 9 + 25}{x + 3} \\\\\n&= \\frac{(5x - 1) + 6x + 34}{x + 3} \\\\\n&= \\frac{11x + 33}{x + 3} \\\\\n&= \\boxed{11}.\n\\end{align*}"
-}

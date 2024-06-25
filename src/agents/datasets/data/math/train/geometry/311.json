@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $BC = 20 \\sqrt{3}$ and $\\angle C = 30^\\circ$.  Let the perpendicular bisector of $BC$ intersect $BC$ and $AC$ at $D$ and $E$, respectively.  Find the length of $DE$.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "We have that $D$ is the midpoint of $BC$, and that $CD = BC/2 = 20 \\sqrt{3}/2 = 10 \\sqrt{3}$.\n\n[asy]\nunitsize(3 cm);\n\npair A, B, C, D, E;\n\nA = dir(133);\nB = dir(193);\nC = dir(-13);\nD = (B + C)/2;\nE = extension(A, C, D, D + rotate(90)*(B - C));\n\ndraw(A--B--C--cycle);\ndraw(D--E);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\n[/asy]\n\nAlso, triangle $CED$ is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, so $DE = CD/\\sqrt{3} = 10 \\sqrt{3}/\\sqrt{3} = \\boxed{10}$."
-}

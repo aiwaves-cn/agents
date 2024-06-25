@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest $2$-digit prime factor of the integer $n = {200\\choose 100}$?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Expanding the binomial coefficient, we get ${200 \\choose 100}=\\frac{200!}{100!100!}$. Let the required prime be $p$; then $10 \\le p < 100$. If $p > 50$, then the factor of $p$ appears twice in the denominator. Thus, we need $p$ to appear as a factor at least three times in the numerator, so $3p<200$. The largest such prime is $\\boxed{61}$, which is our answer."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Define $f(x)=3x-8$. If $f^{-1}$ is the inverse of $f$, find the value(s) of $x$ for which $f(x)=f^{-1}(x)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Substituting $f^{-1}(x)$ into our expression for $f$ we get  \\[f(f^{-1}(x))=3f^{-1}(x)-8.\\]Since $f(f^{-1}(x))=x$ for all $x$ in the domain of $f^{-1}$, we have \\[x=3f^{-1}(x)-8.\\]or  \\[f^{-1}(x)=\\frac{x+8}3.\\]We want to solve the equation $f(x) = f^{-1}(x)$, so \\[3x-8=\\frac{x+8}3.\\]or \\[9x-24=x+8.\\]Solving for $x$, we find $x = \\boxed{4}$."
-}

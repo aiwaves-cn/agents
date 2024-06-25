@@ -1,6 +1,0 @@
-{
-    "problem": "A mathematical organization is producing a set of commemorative license plates. Each plate contains a sequence of five characters chosen from the four letters in AIME and the four digits in 2007. No character may appear in a sequence more times than it appears among the four letters in AIME or the four digits in 2007. A set of plates in which each possible sequence appears exactly once contains $N$ license plates. Find $\\frac{N}{10}$.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "If a sequence contains no more than one 0, there are $7\\cdot 6\\cdot\n5\\cdot 4\\cdot 3 = 2520$ sequences formed from the characters A, I, M, E, 2, 0, and 7. If a sequence contains two 0's, the 0's can be placed in $\\binom{5}{2} = 10$ ways, the remaining characters can be chosen in $\\binom{6}{3} = 20$ ways, and those remaining characters can be arranged in $3! = 6$ ways, for a total of $10\\cdot 20\\cdot 6\n= 1200$ sequences. Thus $N = 2520 + 1200 = 3720$, and $\\frac{N}{10}=\n\\boxed{372}$."
-}

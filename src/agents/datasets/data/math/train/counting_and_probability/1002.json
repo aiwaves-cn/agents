@@ -1,6 +1,0 @@
-{
-    "problem": "If three people are selected at random from a group of seven men and three women, what is the probability that at least one woman is selected? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We can find the probability that no women are selected and subtract it from 1 to find the probability that at least one woman is selected. To find the probability that only men are selected, we consider that the chance that the first person selected is male is $\\frac{7}{10}$. Then the probability that the second person selected is male is reduced to $\\frac{6}{9}=\\frac{2}{3}$. For the third person, the probability is $\\frac{5}{8}$. So the probability that only men are selected is $$\\frac{7}{10}\\cdot\\frac{2}{3}\\cdot\\frac{5}{8}=\\frac{7}{24}.$$ Notice that the 2 and 5 in the numerator cancel with the 10 in the denominator to leave $\\frac{7}{24}$. Now we subtract from 1 to find the probability that at least one woman is selected. The probability is $1-\\frac{7}{24}=\\boxed{\\frac{17}{24}}$."
-}

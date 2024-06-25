@@ -1,6 +1,0 @@
-{
-    "problem": "Amerigo Vespucci has a map of America drawn on the complex plane. The map does not distort distances. Los Angeles corresponds to $0$ on this complex plane, and Boston corresponds to $2600i$. Meanwhile, Knoxville corresponds to the point $780+1040i$. With these city-point correspondences, how far is it from Knoxville to Los Angeles on this complex plane?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $780=\\frac 3{10}\\cdot 2600$, and $1040=\\frac{4}{10}\\cdot 2600$. Thus, geometrically, the distance from Los Angeles to Knoxville forms a 3-4-5 right triangle, with hypotenuse of length $\\frac{5}{10}\\cdot 2600=\\boxed{1300}$. Since magnitude of a number is defined to be the distance from the origin of that number, $1300$ is our answer."
-}

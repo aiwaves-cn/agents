@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be a subset of $\\{1,2,3,\\ldots,1989\\}$ such that no two members of $S$ differ by $4$ or $7$. What is the largest number of elements $S$ can have?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We first show that we can choose at most 5 numbers from $\\{1, 2, \\ldots , 11\\}$ such that no two numbers have a difference of $4$ or $7$. We take the smallest number to be $1$, which rules out $5,8$. Now we can take at most one from each of the pairs: $[2,9]$, $[3,7]$, $[4,11]$, $[6,10]$. Now, $1989 = 180\\cdot 11 + 9$. Because this isn't an exact multiple of $11$, we need to consider some numbers separately.\nNotice that $1969 = 180\\cdot11 - 11 = 179\\cdot11$. Therefore we can put the last $1969$ numbers into groups of 11. Now let's examine $\\{1, 2, \\ldots , 20\\}$. If we pick $1, 3, 4, 6, 9$ from the first $11$ numbers, then we're allowed to pick $11 + 1$, $11 + 3$, $11 + 4$, $11 + 6$, $11 + 9$. This means we get 10 members from the 20 numbers. Our answer is thus $179\\cdot 5 + 10 = \\boxed{905}$."
-}

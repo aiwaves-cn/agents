@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest integer value of $b$ such that $-4$ is not in the range of $y=x^2+bx+12$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We see that $-4$ is not in the range of $f(x) = x^2 + bx + 12$ if and only if the equation $x^2 + bx + 12 = -4$ has no real roots.  We can re-write this equation as $x^2 + bx + 16 = 0$.  The discriminant of this quadratic is $b^2 - 4 \\cdot 16 = b^2 - 64$.  The quadratic has no real roots if and only if the discriminant is negative, so $b^2 - 64 < 0$, or $b^2 < 64$.  The greatest integer $b$ that satisfies this inequality is $b = \\boxed{7}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $3x^2-24x+72$ can be written in the form $a(x+b)^2+c$, where $a$, $b$, and $c$ are constants. What is $a+b+c$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We complete the square.\n\nFactoring $3$ out of the quadratic and linear terms gives $3x^2 - 24x = 3(x^2 - 8x)$.\n\nSince $(x-4)^2 = x^2 - 8x + 16$, we can write $$3(x-4)^2 = 3x^2 - 24x + 48.$$This quadratic agrees with the given $3x^2-24x+72$ in all but the constant term. We can write\n\n\\begin{align*}\n3x^2 - 24x + 72 &= (3x^2 - 24x + 48) + 24 \\\\\n&= 3(x-4)^2 + 24.\n\\end{align*}Therefore, $a=3$, $b=-4$, $c=24$, and $a+b+c = 3-4+24 = \\boxed{23}$."
-}

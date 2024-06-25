@@ -1,6 +1,0 @@
-{
-    "problem": "Find $x,$ given that $x$ is nonzero and the numbers $\\{x\\},$ $\\lfloor x \\rfloor,$ and $x$ form an arithmetic sequence in that order. (We define $\\{x\\} = x - \\lfloor x\\rfloor.$)",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We must have \\[\\lfloor x \\rfloor - \\{x\\} = x - \\lfloor x \\rfloor,\\]or, simplifying the right-hand side, \\[\\lfloor x \\rfloor - \\{x\\} = \\{x\\}.\\]Thus, \\[\\lfloor x \\rfloor = 2\\{x\\}.\\]Since the left-hand side is an integer, $2\\{x\\}$ must be an integer. We know that $0 \\le \\{x\\} < 1,$ so either $\\{x\\} = 0$ or $\\{x\\} = \\tfrac12.$ If $\\{x\\} = 0,$ then $\\lfloor x \\rfloor = 2 \\cdot 0 = 0,$ so $x = 0,$ which is impossible because we are given that $x$ is nonzero. So we must have $\\{x\\} = \\tfrac12,$ so $\\lfloor x \\rfloor = 2 \\cdot \\tfrac12 = 1,$ and $x = 1 + \\tfrac12 = \\boxed{\\tfrac32}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$, we have $\\angle BAC = 90^\\circ$ and $D$ is on $\\overline{AC}$ such that $\\overline{BD}$ bisects $\\angle ABC$. If $AB = 12$ and $BC = 15$, then what is $\\cos \\angle BDC$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]\n\npair A,B,C,D;\n\nA = (0,0);\n\nB = (0,12);\n\nC = (9,0);\n\nD = (4,0);\n\ndraw(D--B--C--A--B);\n\ndraw(rightanglemark(D,A,B,20));\n\nlabel(\"$A$\",A,SW);\n\nlabel(\"$B$\",B,N);\n\nlabel(\"$D$\",D,S);\n\nlabel(\"$C$\",C,SE);\n\n[/asy]\n\nSince  $\\cos (180^\\circ - x) = -\\cos x$ for any angle, we have $\\cos\\angle BDC = -\\cos\\angle BDA$.\n\nFrom the Pythagorean Theorem, we have $AC = \\sqrt{BC^2 - BA^2} = 9$.  Applying the Angle Bisector Theorem to $\\overline{BD}$, we have $\\frac{AD}{DC} = \\frac{AB}{BC} = \\frac{4}{5}$.  Since $AD+DC =AC = 9$ and $\\frac{AD}{DC} = \\frac45$, we have $AD = 4$ and $DC = 5$.\n\nApplying the Pythagorean Theorem to $\\triangle ABD$ gives $BD = \\sqrt{AB^2 + AD^2} = \\sqrt{144+16} = 4\\sqrt{10}$, so $$\\cos BDC = -\\cos BDA = -\\frac{AD}{BD} = - \\frac{4}{4\\sqrt{10}} =-\\frac{1}{\\sqrt{10}} = \\boxed{-\\frac{\\sqrt{10}}{10}}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\sin 600^\\circ$.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Rotating $360^\\circ$ is the same as doing nothing, so rotating $600^\\circ$ is the same as rotating $600^\\circ - 360^\\circ = 240^\\circ$.  Therefore, we have $\\sin 600^\\circ = \\sin (600^\\circ - 360^\\circ) = \\sin 240^\\circ$.\n\nLet $P$ be the point on the unit circle that is $240^\\circ$ counterclockwise from $(1,0)$, and let $D$ be the foot of the altitude from $P$ to the $x$-axis, as shown below.\n\n[asy]\npair A,C,P,O,D;\ndraw((0,-1.2)--(0,1.2),p=black+1.2bp,Arrows(0.15cm));\ndraw((-1.2,0)--(1.2,0),p=black+1.2bp,Arrows(0.15cm));\nA = (1,0);\nO= (0,0);\nlabel(\"$x$\",(1.2,0),SE);\nlabel(\"$y$\",(0,1.2),NE);\n\nP = rotate(240)*A;\nD = foot(P,A,-A);\ndraw(O--P--D);\ndraw(rightanglemark(O,D,P,2));\ndraw(Circle(O,1));\nlabel(\"$O$\",O,SE);\nlabel(\"$P$\",P,SW);\n//label(\"$A$\",A,SE);\nlabel(\"$D$\",D,N);\n[/asy]\n\nTriangle $POD$ is a 30-60-90 triangle, so $DO = \\frac{1}{2}$ and $DP = \\frac{\\sqrt{3}}{2}$.  Therefore, the coordinates of $P$ are $\\left(-\\frac12,-\\frac{\\sqrt{3}}{2}\\right)$, so $\\sin 600^\\circ = \\sin240^\\circ = \\boxed{-\\frac{\\sqrt{3}}{2}}$."
-}

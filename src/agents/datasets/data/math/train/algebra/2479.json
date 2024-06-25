@@ -1,6 +1,0 @@
-{
-    "problem": "A certain organization consists of five leaders and some number of regular members. Every year, the current leaders are kicked out of the organization. Next, each regular member must find two new people to join as regular members. Finally, five new people are elected from outside the organization to become leaders. In the beginning, there are fifteen people in the organization total. How many people total will be in the organization five years from now?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $a_k$ denote the number of people in year $k$ (with initially $k=0$). One might notice that after the leaders are kicked out, there are $a_k-5$ regular members. Then, there are $3(a_k-5)$ regular members after the new regular members join. Finally, after the new leaders are elected, we have a grand total of $3(a_k-5)+5 = 3a_k-10$ people the next year. One might wish to solve this recursion with $a_0=15$. But there is an easier way.\n\nNotice that the number of leaders stays the same each year, and the number of regular members triples. Thus the number of regular members follows a geometric sequence. In the beginning, there are $15-5=10$ regular members. Therefore, five years later, there will be $(3^5)(10)=2430$ regular members. The total number of people will be $5+2430=\\boxed{2435}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, altitudes $AD$, $BE$, and $CF$ intersect at the orthocenter $H$.  If $\\angle ABC = 49^\\circ$ and $\\angle ACB = 12^\\circ$, then find the measure of $\\angle BHC$, in degrees.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Note that triangle $ABC$ is obtuse, so $H$ lies outside triangle $ABC$.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D, E, F, H;\n\nB = (0,0);\nC = (4,0);\nA = extension(B, B + dir(49), C, C + dir(180 - 12));\nD = (A + reflect(B,C)*(A))/2;\nE = (B + reflect(C,A)*(B))/2;\nF = (C + reflect(A,B)*(C))/2;\nH = extension(B,E,C,F);\n\ndraw(B--H--C--cycle);\ndraw(H--D);\ndraw(B--F);\ndraw(C--E);\n\nlabel(\"$A$\", A, SE);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, W);\nlabel(\"$F$\", F, NE);\nlabel(\"$H$\", H, N);\n[/asy]\n\nSince triangle $BEC$ is right, $\\angle CBE = 90^\\circ - \\angle BCE = 90^\\circ - 12^\\circ = 78^\\circ$.  Since triangle $BFC$ is right, $\\angle BCF = 90^\\circ - \\angle CBF = 90^\\circ - 49^\\circ = 41^\\circ$.  Therefore, $\\angle BHC = 180^\\circ - \\angle CBH - \\angle BCH = 180^\\circ - 78^\\circ - 41^\\circ = \\boxed{61^\\circ}$."
-}

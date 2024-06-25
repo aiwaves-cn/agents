@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=-3x^2+x-4$, $g(x)=-5x^2+3x-8$, and $h(x)=5x^2+5x+1$. Express $f(x)+g(x)+h(x)$ as a single polynomial, with the terms in order by decreasing degree.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We rearrange the sum to make it easier to collect like terms: \\begin{align*}\n&f(x)+g(x)+h(x)\\\\\n&\\qquad=(-3x^2+x-4)+(-5x^2+3x-8)\\\\\n&\\qquad\\qquad+(5x^2+5x+1)\\\\\n&\\qquad= (-3-5+5)x^2+(1+3+5)x+(-4-8+1)\\\\\n&\\qquad= \\boxed{-3x^2 +9x -11}.\n\\end{align*}"
-}

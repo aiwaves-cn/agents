@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ $z$ be positive real number such that $xyz = \\frac{2}{3}.$  Compute the minimum value of\n\\[x^2 + 6xy + 18y^2 + 12yz + 4z^2.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We may think of trying to apply AM-GM directly to all five terms.  Ignoring the constants, this give us a term of\n\\[\\sqrt[5]{x^2 \\cdot xy \\cdot y^2 \\cdot yz \\cdot z^2} = \\sqrt[5]{x^3 y^4 z^3}.\\]This doesn't work, because the condition is $xyz = \\frac{2}{3},$ so we want a power of $xyz.$  So, to get more one power of $y,$ relative to $x$ and $z,$ we split every term except $y^2$ in half:\n\\[\\frac{x^2}{2} + \\frac{x^2}{2} + 3xy + 3xy + 18y^2 + 6yz + 6yz + 2z^2 + 2z^2.\\]Then by AM-GM,\n\\begin{align*}\n&\\frac{x^2}{2} + \\frac{x^2}{2} + 3xy + 3xy + 18y^2 + 6yz + 6yz + 2z^2 + 2z^2 \\\\\n&\\ge 9 \\sqrt[9]{\\frac{x^2}{2} \\cdot \\frac{x^2}{2} \\cdot 3xy \\cdot 3xy \\cdot 18y^2 \\cdot 6yz \\cdot 6yz \\cdot 2z^2 \\cdot 2z^2} \\\\\n&= 9 \\sqrt[9]{5832x^6 y^6 z^6} \\\\\n&= 18.\n\\end{align*}Equality occurs when $\\frac{x^2}{2} = 3xy = 18y^2 = 6yz = 2z^2.$  Along with the condition $xyz = \\frac{2}{3},$ we can solve to get $x = 2,$ $y = \\frac{1}{3},$ $z = 1,$ so the minimum value is $\\boxed{18}.$"
-}

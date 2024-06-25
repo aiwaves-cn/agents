@@ -1,6 +1,0 @@
-{
-    "problem": "What is the difference between the largest and smallest of the following numbers? \\[\n0.78 \\qquad 0.12 \\qquad 1.33 \\qquad 1.328\n\\]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We can compare numbers in decimal form digit-by-digit, starting with the largest digit. The ones digits of the four numbers are  \\begin{tabular}{cc}\nnumber & ones digit \\\\ \\hline\n0.78 & 0 \\\\\n0.12 & 0 \\\\\n1.33 & 1 \\\\\n1.328 & 1\n\\end{tabular}Since $1$ is bigger than $0,$ this tells us that each of the first two numbers is smaller than each of the second two numbers. Continuing to compare $1.33$ and $1.328,$ we go to the next digit. The tenths digit of each number is $3,$ so we have to go to the next digit. The hundredths digit of $1.33$ is $3,$ while the hundredths digit of $1.328$ is $2.$ Since $3$ is bigger than $2,$ we conclude that $1.33$ is bigger than $1.328.$\n\nComparing the two numbers that are less than $1,$ we see that the tenths digit of $0.12$ is smaller than the tenths digit of $0.78.$ So, $0.12$ is the smallest of these four numbers.\n\nTherefore, the difference between the largest and smallest numbers in the list is $1.33 - 0.12 = \\boxed{1.21}.$"
-}

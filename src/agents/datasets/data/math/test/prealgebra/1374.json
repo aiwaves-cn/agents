@@ -1,6 +1,0 @@
-{
-    "problem": "The $5\\times 5$ grid shown contains a collection of squares with sizes from $1\\times 1$ to $5\\times 5$. How many of these squares contain the black center square?\n\n[asy]\nfill((2,2)--(3,2)--(3,3)--(2,3)--cycle,gray(0.1));\nfor (int i=0; i<6; ++i) {\nfor (int j=0; j<6; ++j) {\ndraw((0,i)--(5,i),linewidth(0.7));\ndraw((j,0)--(j,5),linewidth(0.7));\n};}\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "All of the squares of size $5 \\times 5$, $4 \\times 4$, and $3 \\times 3$ contain the black square and there are $$1^2 +\n2^2 +3^2 = 14$$of these.  In addition, 4 of the $2 \\times 2$ squares and 1 of the $1 \\times 1$ squares contain the black square, for a total of $14 + 4 + 1 = \\boxed{19}$."
-}

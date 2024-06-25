@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $a + b + c = 5$ and $1 \\le a,$ $b,$ $c \\le 2,$ find the minimum value of\n\\[\\frac{1}{a + b} + \\frac{1}{b + c}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-HM,\n\\[\\frac{(a + b) + (b + c)}{2} \\ge \\frac{2}{\\frac{1}{a + b} + \\frac{1}{b + c}},\\]so\n\\[\\frac{1}{a + b} + \\frac{1}{b + c} \\ge \\frac{4}{a + 2b + c} = \\frac{4}{b + 5}.\\]Since $b \\le 2,$ $\\frac{4}{b + 5} \\ge \\frac{4}{7}.$  Equality occurs when $a = c = \\frac{3}{2}$ and $b = 2,$ so the minimum value is $\\boxed{\\frac{4}{7}}.$"
-}

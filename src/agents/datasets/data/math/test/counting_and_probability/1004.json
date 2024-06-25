@@ -1,6 +1,0 @@
-{
-    "problem": "How many numbers between 1 and 2005 are integer multiples of 3 or 4 but not 12?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Since $\\frac{2005}{3} = 668\\frac13$, there are 668 multiples of 3 between 1 and 2005.  Since $\\frac{2005}{4} = 501\\frac14$, there are 501 multiples of 4 between 1 and 2005.  Since $\\frac{2005}{12} = 167\\frac{1}{12}$, there are 167 multiples of 12 between 1 and 2005.\n\nEvery multiple of 12 is also a multiple of 3 and of 4, so there are $668-167 = 501$ multiples of 3 that are not multiples of 12 and $501-167 = 334$ multiples of 4 that are not multiples of 12.  That leaves $501 + 334 = \\boxed{835}$ numbers that are multiples of 3 or 4 but not 12.  (Note: no number can be a multiple of 3 and 4 without also being a multiple of 12.  So, no number is included twice in our count $501+334$.)"
-}

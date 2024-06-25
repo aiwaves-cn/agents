@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be nonzero complex numbers such that $a^2 + ab + b^2 = 0.$  Evaluate\n\\[\\frac{a^9 + b^9}{(a + b)^9}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Since $a^2 + ab + b^2 = 0,$ $(a - b)(a^2 + ab + b^2) = 0.$  This simplifies to $a^3 - b^3 = 0,$ so $a^3 = b^3.$\n\nThen $b^9 = a^9.$  Also,\n\\[(a + b)^2 = a^2 + 2ab + b^2 = (a^2 + ab + b^2) + ab = ab,\\]so\n\\[(a + b)^3 = ab(a + b) = a(ab + b^2) = a(-a^2) = -a^3.\\]Then $(a + b)^9 = (-a^3)^3 = -a^9,$ so\n\\[\\frac{a^9 + b^9}{(a + b)^9} = \\frac{2a^9}{-a^9} = \\boxed{-2}.\\]"
-}

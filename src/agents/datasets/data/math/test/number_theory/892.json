@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $33^{-1} \\equiv 77 \\pmod{508}$, find $11^{-1} \\pmod{508}$ as a residue modulo 508.  (Give an answer between 0 and 507, inclusive.)",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $33^{-1} \\equiv 77 \\pmod{508}$, \\begin{align*}\n11^{-1} &\\equiv (33 \\cdot 3^{-1})^{-1} \\\\\n&\\equiv 33^{-1} \\cdot 3 \\\\\n&\\equiv 77 \\cdot 3 \\\\\n&\\equiv \\boxed{231} \\pmod{508}.\n\\end{align*}"
-}

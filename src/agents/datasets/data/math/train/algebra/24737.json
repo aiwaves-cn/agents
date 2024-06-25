@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$: $4x^{1/3}-2 \\cdot \\frac{x}{x^{2/3}}=7+\\sqrt[3]{x}$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "To start, note that $\\frac{x}{x^{2/3}}=x^{1-\\frac{2}{3}}=x^{1/3}$.  Also note that we can rewrite the cube root with a fractional exponent, so $\\sqrt[3]{x}=x^{1/3}$.  Using these pieces of information, rewrite the given equation as: $$4x^{1/3}-2x^{1/3}=7+x^{1/3}$$ Move all $x^{1/3}$ terms to one side and simplify: \\begin{align*}\n2x^{1/3}-x^{1/3}&=7\\\\\n\\Rightarrow\\qquad x^{1/3}&=7\\\\\n\\Rightarrow\\qquad (x^{1/3})^3&=7^3\\\\\n\\Rightarrow\\qquad x&=\\boxed{343}\n\\end{align*}"
-}

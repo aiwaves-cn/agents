@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that  $a$ and $b$ are digits, not both nine and not both zero, and the repeating decimal  $0.\\overline{ab}$ is expressed as a fraction in lowest terms. How many different denominators are possible?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $0.\\overline{ab} = \\frac{ab}{99}$, the denominator must be a factor of $99 = 3^2 \\cdot 11$. The factors of $99$ are $1,$ $3,$ $9,$ $11,$ $33,$ and  $99$. Since $a$ and $b$ are not both nine,  the denominator cannot be $1$. By choosing $a$ and $b$ appropriately,  we can make fractions with each of the other denominators.\n\nThus, the answer is $\\boxed{5}$."
-}

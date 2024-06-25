@@ -1,6 +1,0 @@
-{
-    "problem": "A parabola with equation  $y = x^2 + bx + c$ passes through the points $(2,3)$ and $(4,3)$. What is $c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Substitute $(2,3)$ and $(4,3)$ into the equation to give \\[\n3 = 4 + 2b + c \\quad\\text{and}\\quad 3 = 16 + 4b + c.\n\\] Subtracting corresponding terms in these equations gives $0 = 12 + 2b$. So \\[\nb = -6\\quad\\text{and}\\quad c = 3 -4 -2(-6) = \\boxed{11}.\n\\]\n\n\nOR\n\n\nThe parabola is symmetric about the vertical line through its vertex, and the points $(2,3)$ and $(4,3)$  have the same $y$-coordinate. The vertex has $x$-coordinate $(2+4)/2=3$, so  the equation has the form \\[\ny = (x-3)^2 + k\n\\] for some constant $k$. Since $y = 3$ when $x = 4$, we have $3 = 1^2 + k$ and $k=2$. Consequently the constant term $c$ is \\[\n(-3)^2 + k = 9 + 2 = 11.\n\\]\n\n\n\nOR\n\n\nThe parabola is symmetric about the vertical line through its vertex, so the $x$-coordinate of the vertex is 3. Also, the coefficient  of $x^2$ is 1, so the parabola opens upward and the $y$-coordinate of the vertex is 2. We find $c$, the $y$-intercept of the graph by observing that the $y$-intercept occurs 3 units away horizontally from the vertex. On this interval the graph decreased by $3^2 = 9$ units hence the $y$-intercept is 9 units higher than the vertex, so $c = 9 + 2 = \\boxed{11}.$"
-}

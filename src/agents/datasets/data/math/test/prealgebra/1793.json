@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the sum of all single-digit replacements for $n$ such that the number ${42{,}789{,}n37}$ is divisible by 3.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "For a number to be divisible by 3, the sum of its digits must be divisible by 3. Since $4+2+7+8+9+3+7=40$, the single-digit replacements for $n$ that make the sum divisible by 3 are $2$, $5$, or $8$. The sums would be $42$, $45$, and $48$, respectively, which are all multiples of 3. Therefore, the sum of all single-digit replacements for $n$ is $2+5+8=\\boxed{15}$."
-}

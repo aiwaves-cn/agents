@@ -1,6 +1,0 @@
-{
-    "problem": "Points $X$ and $Y$ lie on sides $AB$ and $AC$ respectively of triangle $ABC$. If $AB=7$, $AC=10$, $AX=4$ and $AY=6$, what is the ratio of the area of triangle $AXY$ to the area of triangle $ABC$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Triangles $AXC$ and $ABC$ share an altitude from $C$, so \\[\\frac{[AXC]}{[ABC]} = \\frac{AX}{AB} =\\frac47.\\] Therefore, $[AXC] = \\frac47[ABC]$.\n\nTriangles $AXY$ and $AXC$ share an altitude from $X$, so \\[\\frac{[AXY]}{[AXC]}=\\frac{AY}{AC} = \\frac{6}{10} = \\frac35.\\] Therefore, $[AXY] = \\frac35[AXC]$, so \\[[AXY] = \\frac35[AXC] = \\frac35\\cdot \\frac47[ABC] = \\frac{12}{35}[ABC],\\] which means that the desired ratio is $\\boxed{\\frac{12}{35}}$.\n\n\n[asy]\nsize(7cm);\npair A=(2,7), B=(0,0), C=(6,-0.5), X=(A+B)/2, Y=6/10*A+4/10*C;\npair[] dots={A,B,C,X,Y};\ndot(dots);\ndraw(A--B--C--cycle);\ndraw(X--Y);\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,SW);\nlabel(\"$C$\",C,SE);\nlabel(\"$X$\",X,W);\nlabel(\"$Y$\",Y,E);\ndraw(C--X);\n[/asy]"
-}

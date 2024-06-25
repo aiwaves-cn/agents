@@ -1,6 +1,0 @@
-{
-    "problem": "Given $ab+bc+cd+da = 30$ and $b+d = 5$, find $a+c$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Write $ab+bc+cd+da = (a+c)b + (c+a)d = (a+c)(b+d)$, so $a+c = \\frac{ab+bc+cd+da}{b+d} = \\frac{30}{5} = \\boxed{6}$."
-}

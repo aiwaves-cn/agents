@@ -1,6 +1,0 @@
-{
-    "problem": "How many times does the digit 6 appear in the list of all integers from 1 to 100?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The easiest approach is to consider how many times $6$ can appear in the units place and how many times in the tens place. If we put a $6$ in the units place, there are $10$ choices for the tens place. Likewise, if we put a $6$ in the tens place, there are $10$ choices for the units place. So, there are $\\boxed{20}$ appearances of the digit $6.$\n\nNote: Read the question carefully. There are $19$ numbers that include $6,$ but $6$ appears $20$ times. Always answer the question that is asked."
-}

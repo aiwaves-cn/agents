@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\left\\lfloor \\left\\lceil \\left(\\frac{13}{7}\\right)^2\\right\\rceil+\\frac{17}{4}\\right\\rfloor$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We know that $\\left(\\frac{13}{7}\\right)^2=\\frac{169}{49}$. Then, since $3=\\frac{147}{49}<\\frac{169}{49}<\\frac{196}{49}=4$, we conclude that $\\left\\lceil\\left(\\frac{13}{7}\\right)^2\\right\\rceil=4$. Because $4+\\frac{17}{4}=\\frac{33}{4}$, which is a number between $8$ and $9$, $\\left\\lfloor \\left\\lceil \\left(\\frac{13}{7}\\right)^2\\right\\rceil+\\frac{17}{4}\\right\\rfloor=\\boxed{8}$."
-}

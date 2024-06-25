@@ -1,6 +1,0 @@
-{
-    "problem": "Below is a portion of the graph of a quadratic function, $y=q(x)=ax^2+bx+c$:\n\n[asy]\nimport graph; size(8cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-0.99,xmax=10.5,ymin=-5.5,ymax=5.5;\n\npen cqcqcq=rgb(0.75,0.75,0.75);\n/*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(\"2 2\"); real gx=1,gy=1;\nfor(real i=ceil(xmin/gx)*gx;i<=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i<=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);\n\nLabel laxis; laxis.p=fontsize(10);\n\nxaxis(\"\",xmin,xmax,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true); yaxis(\"\",ymin,ymax,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true);\nreal f1(real x){return 4-(x-8)*(x-7)/8;}\ndraw(graph(f1,-0.99,10.5),linewidth(1));\nclip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);\nlabel(\"$y=q(x)$\",(10.75,2.5),E);\n[/asy] The value of $q(15)$ is an integer. What is that integer?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The graph of a quadratic function has an axis of symmetry. Observing that $q(7)=q(8),$ $q(6)=q(9),$ and so on, we see that this graph's axis of symmetry is $x=7.5$, and so $q(15)=q(0)$.\n\nThe graph passes through the point $(0,-3)$, so $q(0)=-3$, which tells us that $q(15)=\\boxed{-3}$ as well."
-}

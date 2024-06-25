@@ -1,6 +1,0 @@
-{
-    "problem": "Let \\[f(n) =\n\\begin{cases}\nn^2-1 & \\text{ if }n < 4,\n\\\\ 3n-2 & \\text{ if }n \\geq 4.\n\\end{cases}\n\\]Find $f(f(f(2)))$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Working from the inside out, since $2<4$ we have that $f(2)=(2)^2-1=3$. Continuing, since $3<4$ we have that $f(f(2))=f(3)=(3)^2-1=8$. Finally, since $8 \\geq 4$ we have that $f(f(f(2)))=f(8)=3(8)-2=\\boxed{22}$."
-}

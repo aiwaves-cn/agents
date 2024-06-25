@@ -1,6 +1,0 @@
-{
-    "problem": "The positive number $a$ is chosen such that the terms $20, a, \\frac{5}{4}$ are the first, second and third terms, respectively, of a geometric sequence. What is the value of $a$, if $a$ is positive?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let the common ratio of the geometric sequence be $r$. We have the equations $20\\cdot r = a$ and $a \\cdot r = \\frac{5}{4}$. In the first equation, we solve for $r$ to get $r=\\frac{a}{20}$, and substitute this into the second equation to eliminate $r$, resulting in $a \\cdot \\frac{a}{20} = \\frac{5}{4}$, or $a = \\boxed{5}$."
-}

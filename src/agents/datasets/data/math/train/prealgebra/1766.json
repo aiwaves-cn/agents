@@ -1,6 +1,0 @@
-{
-    "problem": "A floor decoration is a circle with eight rays pointing from the center.  The rays form eight congruent central angles.  One of the rays points due north.  What is the measure in degrees of the smaller angle formed between the ray pointing East and the ray pointing Southwest?\n\n[asy]\n\nsize(3cm,3cm);\n\ndraw(unitcircle);\n\ndraw((0,0.8)--(0,-0.8),Arrows(HookHead));\ndraw((-0.8,0)--(0.8,0),Arrows(HookHead));\n\ndraw((-0.55,0.55)--(0.55,-0.55),Arrows(HookHead));\ndraw((-0.55,-0.55)--(0.55,0.55),Arrows(HookHead));\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since there are eight rays forming congruent central angles and the sum of these angles is equal to 360 degrees, each central angle is $360/8=45$ degrees. Since the angle between the East ray and the Southwest ray includes 3 of these central angles, the angle is $45\\cdot3=\\boxed{135}$ degrees."
-}

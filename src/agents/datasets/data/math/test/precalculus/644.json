@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $a$ so that the lines described by\n\\[\\begin{pmatrix} -1 \\\\ 2 \\\\ 5 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ a \\\\ 4 \\end{pmatrix}\\]and\n\\[\\begin{pmatrix} -7 \\\\ -3 \\\\ 11 \\end{pmatrix} + u \\begin{pmatrix} -1 \\\\ 4 \\\\ 2 \\end{pmatrix}\\]are perpendicular.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The direction vector of the first line is $\\begin{pmatrix} 2 \\\\ a \\\\ 4 \\end{pmatrix}.$  The direction vector of the second line is $\\begin{pmatrix} -1 \\\\ 4 \\\\ 2 \\end{pmatrix}.$\n\nSince the lines are perpendicular, the direction vectors will be orthogonal, which means their dot product will be 0.  This gives us\n\\[(2)(-1) + (a)(4) + (4)(2) = 0.\\]Solving, we find $a = \\boxed{-\\frac{3}{2}}.$"
-}

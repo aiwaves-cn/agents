@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest integer less than 80 that leaves a remainder of 3 when divided by 5.",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "An integer that leaves a remainder of 3 when divided by 5 can be written as $5n + 3$ for some whole number $n$.  The largest permissible value of $n$ will lead us to the largest value of $5n + 3$ less than 80, so we solve the inequality. $$ 5n + 3 < 80. $$Subtracting 3 from both sides gives $5n < 77$.  Dividing both sides by 5, we have $$ n < 15\\, \\frac{2}{5}, $$so the largest permissible value of $n$ is 15 and the largest integer less than 80 that leaves a remainder of 3 when divided by 5 is $5 \\cdot 15 + 3 = \\boxed{78}$."
-}

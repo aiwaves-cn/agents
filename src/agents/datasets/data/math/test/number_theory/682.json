@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n$ be a positive integer greater than or equal to $3$. Let $a,b$ be integers such that $ab$ is invertible modulo $n$ and $(ab)^{-1}\\equiv 2\\pmod n$. Given $a+b$ is invertible, what is the remainder when $(a+b)^{-1}(a^{-1}+b^{-1})$ is divided by $n$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We can use the fact that $x\\cdot x^{-1}\\equiv 1\\pmod n$ for all invertible $x$ in the following clever way: \\begin{align*}\n& (a+b)^{-1}(a^{-1}+b^{-1})\\\\\n\\equiv~ & (a+b)^{-1}(a^{-1}+b^{-1})(ab)(ab)^{-1}\\\\\n\\equiv~ & (a+b)^{-1}(a^{-1}ab+abb^{-1})(ab)^{-1}\\\\\n\\equiv~ & (a+b)^{-1}(a+b)(ab)^{-1}\\\\\n\\equiv~ & (ab)^{-1}\\\\\n\\equiv~ & \\boxed{2}\\pmod n\n\\end{align*}"
-}

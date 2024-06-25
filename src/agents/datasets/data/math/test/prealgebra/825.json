@@ -1,6 +1,0 @@
-{
-    "problem": "What is $\\left(20 \\cdot \\left(\\frac{2}{5}\\right)^2 \\cdot \\left(\\frac{3}{4}\\right)^2 \\cdot \\frac{5}{9}\\right)^5$?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Observing a small portion of the expression first, we have: $\\left(\\frac{2}{5}\\right)^2 \\cdot \\left(\\frac{3}{4}\\right)^2 \\cdot \\frac{5}{9} = \\frac{2^2 \\cdot 3^2 \\cdot 5}{5^2 \\cdot 4^2 \\cdot 9}$ by combining numerators and denominators through multiplication.  Then, by rearranging, we obtain: $\\frac{4 \\cdot 9 \\cdot 5}{4^2 \\cdot 9 \\cdot 5^2} = \\frac{4}{4^2} \\cdot \\frac{9}{9} \\cdot \\frac{5}{5^2} = \\frac{1}{4} \\cdot 1 \\cdot \\frac{1}{5} = \\frac{1}{20}$.\n\nThen, we multiply by twenty and raise the expression to the fifth power.  This yields $\\left(20 \\cdot \\frac{1}{20}\\right)^5 = 1^5 = \\boxed{1}$."
-}

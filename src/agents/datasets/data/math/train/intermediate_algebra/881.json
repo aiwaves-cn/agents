@@ -1,6 +1,0 @@
-{
-    "problem": "The line with equation $y = x$ is an axis of symmetry of the curve with equation\n\\[y = \\frac{px + q}{rx + s},\\]where $p,$ $q,$ $r,$ $s$ are all nonzero.  Which of the following statements must hold?\n\n(A) $p + q = 0$\n\n(B) $p + r = 0$\n\n(C) $p + s = 0$\n\n(D) $q + r = 0$\n\n(E) $q + s = 0$\n\n(F) $r + s = 0$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $y = x$ is an axis of symmetry, if point $(a,b)$ lies on the graph, then so does $(b,a).$  Thus, the equation of the graph can also be written as\n\\[x = \\frac{py + q}{ry + s}.\\]Substituting $y = \\frac{px + q}{rx + s},$ we get\n\\[x = \\frac{p \\cdot \\frac{px + q}{rx + s} + q}{r \\cdot \\frac{px + q}{rx + s} + s} = \\frac{p(px + q) + q(rx + s)}{r(px + q) + s(rx + s)}.\\]Cross-multiplying, we get\n\\[x[r(px + q) + s(rx + s)] = p(px + q) + q(rx + s).\\]Expanding, we get\n\\[(pr + rs) x^2 + (s^2 - p^2) x - (pq + qs) = 0.\\]We can take out a factor of $p + s$:\n\\[(p + s)(rx^2 + (s - p) x - q) = 0.\\]This equation must holds for all $x.$  Since $r \\neq 0,$ the quadratic $rx^2 + (s - p) x - q$ cannot be 0 for all $x,$ so we must have $p + s = 0.$  The correct statement is $\\boxed{\\text{(C)}}.$"
-}

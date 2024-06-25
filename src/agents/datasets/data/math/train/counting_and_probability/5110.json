@@ -1,6 +1,0 @@
-{
-    "problem": "Consider polynomials $P(x)$ of degree at most $3$, each of whose coefficients is an element of $\\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\}$. How many such polynomials satisfy $P(-1) = -9$?\n$\\textbf{(A) } 110 \\qquad \\textbf{(B) } 143 \\qquad \\textbf{(C) } 165 \\qquad \\textbf{(D) } 220 \\qquad \\textbf{(E) } 286$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Suppose our polynomial is equal to\\[ax^3+bx^2+cx+d\\]Then we are given that\\[-9=b+d-a-c.\\]If we let $-a=a'-9, -c=c'-9$ then we have\\[9=a'+c'+b+d.\\]This way all four variables are within 0 and 9. The number of solutions to this equation is simply $\\binom{12}{3}=\\boxed{220}$ by stars and bars."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Factor $36-4x^2$ completely.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have $36-4x^2 = 6^2 - (2x)^2 = (6-2x)(6+2x)$.  We can factor a 2 out of each of $6-2x$ and $6+2x$ to give $2\\cdot(3-x)\\cdot 2\\cdot(3+x) = \\boxed{4(3-x)(3+x)}$. (We could also have factored out a 4 at the beginning: $36-4x^2 = 4(9-x^2)=4(3-x)(3+x)$.)"
-}

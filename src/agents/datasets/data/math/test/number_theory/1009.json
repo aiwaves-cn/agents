@@ -1,6 +1,0 @@
-{
-    "problem": "The greatest common divisor of two positive integers less than $100$ is equal to $3$. Their least common multiple is twelve times one of the integers. What is the largest possible sum of the two integers?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let the two integers be $a$ and $b$. Then, $\\gcd(a,b) = 3$ and, without loss of generality, let $\\mathop{\\text{lcm}}[a,b] = 12a$. Multiplying the two equations yields that $\\mathop{\\text{lcm}}[a,b] \\cdot \\gcd(a,b) = 36a$. Using the identity that $ab = \\mathop{\\text{lcm}}[a,b] \\cdot \\gcd(a,b)$, it follows that $ab = 36a$, and so $b = 36$.\n\nSince $\\gcd(a,b) = 3$, we know $a$ is divisible by 3.  However, $a$ cannot be divisible by $3^2 = 9$, because if $a$ was divisible by 9, then $\\gcd(a,b)$ would be divisible by 9 as well, since 36 is divisible by 9.  This cannot occur since $\\gcd(a,b) = 3$.  Similarly, $a$ cannot be divisible by 2, because if $a$ were divisible by 2, then $\\gcd(a,b)$ would be divisible by 2 as well, since 36 is divisible by 2.\n\nIn summary, $a$ is a multiple of 3, but not 9, and $a$ is not divisible by 2.  The largest such number less than 100 is 93.  We can verify that $\\mathop{\\text{lcm}}[93,36] = 1116 = 12 \\cdot 93$, so the largest possible sum of $a + b$ is $36 + 93 = \\boxed{129}$."
-}

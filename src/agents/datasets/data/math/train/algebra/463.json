@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $f(x)$ and $g(x)$ are polynomials of degree $4$ and $5$ respectively.  What is the degree of $f(x^3) \\cdot g(x^2)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $f(x)$ is a polynomial of degree $4$, its highest degree term is of the form $ax^4$.  Substituting $x^3$ for $x$ shows that the highest degree term is $a(x^3)^4 = ax^{12}$, which means that $f(x^3)$ has degree $12$.  Similarly, $g(x^2)$ has degree $10$.  Since the degree of the product of two polynomials is the sum of the degrees of the two polynomials, the degree of $f(x^3) \\cdot g(x^2)$ is $12+10=\\boxed{22}$."
-}

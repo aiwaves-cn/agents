@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the base-2 geometric series $0.1_2-0.01_2+0.001_2-0.0001_2+0.00001_2\\ldots$; give your answer as a fraction in which the numerator and denominator are both expressed in base 10.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Places to the right of the decimal point represent negative powers of the base, so we notice that the series in base 10 is $2^{-1}-2^{-2}+2^{-3}\\ldots=\\frac{1}{2}-\\frac{1}{4}+\\frac{1}{8}\\ldots$. We recognize this as a geometric series with a common ratio of $-\\frac{1}{2}$ and apply the formula $\\frac{a}{1-r}$ for the sum of a geometric series with first term $a$ and common ratio $r$. We get $$\\frac{\\frac{1}{2}}{1-\\left(-\\frac{1}{2}\\right)}=\\frac{\\frac{1}{2}}{\\frac{3}{2}}=\\frac{1}{3}.$$So, the sum of the geometric series is $\\boxed{\\frac{1}{3}}$."
-}

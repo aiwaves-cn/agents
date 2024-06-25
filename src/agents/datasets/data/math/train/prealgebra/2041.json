@@ -1,6 +1,0 @@
-{
-    "problem": "A collection of five positive integers has mean 4.4, unique mode 3 and median 4. If an 8 is added to the collection, what is the new median? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Of the original five positive integers, we know that the median value, or the medium-valued number, is 4. Since the unique mode is 3, there must be at least 2 threes, and since this is less than the median, we know both of the smallest numbers are 3. Finally, since the mean is 4.4, the sum of the five integers is $5\\cdot 4.4 = 22$, and $22 - 3 - 3 - 4 = 12$ is the sum of the two largest integers. And since the mode of 3 was unique, we know that the larger digits must be greater than 4, and cannot both be 6. So they must be 5 and 7. So our set of integers is $\\{ 3, 3, 4, 5, 7\\}$. By adding in an 8, we move the median to $\\frac{1}{2}(4+5) = \\boxed{4.5}$."
-}

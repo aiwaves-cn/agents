@@ -1,6 +1,0 @@
-{
-    "problem": "What is the product of the positive integer divisors of 100?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "By listing all the positive integer divisors of 100, we find that the requested product is $1\\times2\\times4\\times5\\times10\\times20\\times25\\times50\\times100$. Pair 1 with 100, 2 with 50, 4 with 25, and 5 with 20  to obtain 4 factors of 100, leaving one more factor of 10. In total, the product is $(100^4)(10)=10^9=\\boxed{1,\\!000,\\!000,\\!000}$. Notice that this method may be generalized to show that for all positive integers $n$, the product of the the positive integer divisors of $n$ is $n^{d/2}$ where $d$ is the number of divisors of $n$."
-}

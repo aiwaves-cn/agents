@@ -1,6 +1,0 @@
-{
-    "problem": "The center of the circle with equation $x^2+y^2=-2x-10y-16$ is the point $(x,y)$. What is $x+y$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We will complete the square to determine the standard form equation of the circle. Shifting all but the constant term from the RHS to the LHS, we have $x^2+2x+y^2+10y=-16$. Completing the square in $x$, we add $(2/2)^2=1$ to both sides. Completing the square in $y$, we add $(10/2)^2=25$ to both sides. The equation becomes \\begin{align*}\nx^2+2x+y^2+10y&=-16\\\\\n\\Rightarrow x^2+2x+1+y^2+10y+25&=10\\\\\n\\Rightarrow (x+1)^2+(y+5)^2&=10\n\\end{align*} Thus, the center of the circle is at point $(-1,-5)$ so $x+y=-1+(-5)=\\boxed{-6}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\triangle ABC$ be an isosceles triangle such that $BC = 30$ and $AB = AC.$ We have that $I$ is the incenter of $\\triangle ABC,$ and $IC = 18.$ What is the length of the inradius of the triangle?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let's sketch our triangle first. Knowing that the incenter is the intersection of angle bisectors, we draw the angle bisectors as well. [asy]\npair A, B, C, D, E, F, I;\nA = (0, 35.535);\nB = (-15, 0);\nC = (15, 0);\nD = (0, 0);\nE = (8.437, 15.547);\nF = (-8.437, 15.547);\nI = (0, 9.95);\ndraw(A--B--C--cycle);\ndraw(A--D);\ndraw(B--E);\ndraw(C--F);\ndraw(circle(I,9.95));\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, NW);\nlabel(\"$I$\", I + (1.5, 3));\n[/asy] Since $\\angle BAD = \\angle CAD$ by definition and $\\angle ABC = \\angle ACB$ since $\\triangle ABC$ is isosceles, we can see that $\\angle ADB = \\angle ADC = 90^\\circ.$ Therefore, we see that $AD \\perp BC,$ which means that $ID$ is an inradius. What's more, we can find $ID$ using the Pythagorean Theorem, since we have $IC = 18$ and $CD = \\frac{1}{2} \\cdot 30 = 15.$\n\nTherefore, $ID = \\sqrt{IC^2 - CD^2} = \\sqrt{18^2 - 15^2} = \\sqrt{99} = \\boxed{3\\sqrt{11}}.$"
-}

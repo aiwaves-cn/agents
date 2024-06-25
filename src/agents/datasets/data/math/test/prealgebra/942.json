@@ -1,6 +1,0 @@
-{
-    "problem": "I have twenty balls numbered 1 through 20 in a bin.  In how many ways can I select 2 balls, if the order in which I draw them doesn't matter?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "If the order the balls are selected matters, there are 20 choices for the first selection and 19 choices for the second selection.  However, $20\\cdot 19$ counts each pair of balls twice, once for each possible order in which they can be selected.  So, we must divide by $2$, , to get $\\dfrac{20 \\times 19}{2} = \\boxed{190}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Rectangle $WXYZ$ is drawn on $\\triangle ABC$, such that point $W$ lies on segment $AB$, point $X$ lies on segment $AC$, and points $Y$ and $Z$ lies on segment $BC$, as shown. If $m\\angle BWZ=26^{\\circ}$ and $m\\angle CXY=64^{\\circ}$, what is $m\\angle BAC$, in degrees? [asy]\nunitsize(0.3cm);\ndraw((0,0)--(4.5,6)--(21,0)--cycle);\ndraw((3,0)--(3,4)--(10,4)--(10,0)--cycle);\nlabel(\"B\",(0,0),SW);\nlabel(\"W\",(3,4),W);\nlabel(\"A\",(4.5,6),N);\nlabel(\"X\",(10,4),NE);\nlabel(\"C\",(21,0),E);\nlabel(\"Y\",(10,0),S);\nlabel(\"Z\",(3,0),S);\nlabel(scale(0.7)*Label(\"$26^{\\circ}$\",(2.4,2.6),S));\nlabel(scale(0.8)*Label(\"$64^{\\circ}$\",(11,3.5),S));\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $WXYZ$ is a rectangle, angles $XYC$ and $WZB$ are right angles. Since the acute angles of a right triangle sum to $90^\\circ$, $m\\angle WBZ=90-m\\angle BWZ=90-26=64^\\circ$ and $m\\angle XCY=90-m\\angle CXY=90-64=26^\\circ$. In triangle $ABC$, the interior angles must sum to $180^\\circ$, so $m\\angle BAC=180-m\\angle WBZ-m\\angle XCY=180-64-26=\\boxed{90^\\circ}$."
-}

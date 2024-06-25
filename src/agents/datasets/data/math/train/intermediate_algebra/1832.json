@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all real values of $x$ that satisfy\n\\[x = 1 - x + x^2 - x^3 + x^4 - x^5 + \\dotsb.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the formula for an infinite geometric series,\n\\[1 - x + x^2 - x^3 + \\dotsb = \\frac{1}{1 + x}.\\]Thus, we want to solve\n\\[x = \\frac{1}{1 + x}.\\]This simplifies to $x^2 + x - 1 = 0.$  By the quadratic formula,\n\\[x = \\frac{-1 \\pm \\sqrt{5}}{2}.\\]The infinite geometric series\n\\[1 - x + x^2 - x^3 + \\dotsb\\]converges only for $|x| < 1,$ so the only solution in $x$ is $\\boxed{\\frac{-1 + \\sqrt{5}}{2}}.$"
-}

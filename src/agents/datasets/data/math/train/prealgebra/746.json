@@ -1,6 +1,0 @@
-{
-    "problem": "How many different primes are in the prime factorization of $87\\cdot89\\cdot91\\cdot93$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "$91$ is the first number that makes it hard to tell whether it's prime or not. Anything smaller, you can check if it's even, or ends in a $5$, or the digits sum to $3$, or maybe it's the same digit repeated twice, such as $77$. Remember that $91$ is not prime!\n\n$87$ factors as $3\\cdot29$, $89$ is prime, $91$ factors into $7\\cdot13$, and $93$ as $3\\cdot31$. All together, that is $3^2\\cdot7\\cdot13\\cdot29\\cdot31\\cdot89$, for a total of $\\boxed{6}$ different prime factors."
-}

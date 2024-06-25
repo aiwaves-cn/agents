@@ -1,6 +1,0 @@
-{
-    "problem": "The amount of money a certain company has can be modeled with the line $y=-265x+2800$, where $x$ is the number of workers the company decides to hire. What is the maximum number of workers the company can hire before the company has no money left and goes bankrupt?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "The point at which the company goes bankrupt is where $y=0$, the $x$-intercept. To solve for the $x$-intercept, we set $y=0$ and get \\begin{align*}\n0 &=-265x+2800\\\\\n\\Rightarrow\\qquad -2800&=-265x\\\\\n\\Rightarrow\\qquad \\frac{2800}{265} &= x.\n\\end{align*} Realizing that $\\frac{2800}{265}$ is between 10, or $\\frac{2650}{265}$, and 11, or $\\frac{2915}{265}$, then the company can hire at most $\\boxed{10}$ workers, since hiring 11 would bring it past the $x$-intercept and into debt."
-}

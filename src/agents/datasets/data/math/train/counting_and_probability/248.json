@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose two distinct integers are chosen from between 5 and 17, inclusive.  What is the probability that their product is odd?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are 13 integers between 5 and 17 inclusive, so there are $\\binom{13}{2} = 78$ ways to choose two of them without regard to order.  In order for the product of two integers to be odd, both of the integers themselves must be odd. There are 7 odd integers between 5 and 17 inclusive, so there are $\\binom72 = 21$ ways to choose two of them without regard to order.  Therefore, the desired probability is $\\dfrac{21}{78} = \\boxed{\\dfrac{7}{26}}$."
-}

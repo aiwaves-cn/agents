@@ -1,6 +1,0 @@
-{
-    "problem": "Four students agreed to pool their savings to purchase a computer. The portions contributed are represented proportionately by the areas in the diagram below. What percent of the total did $Q$ contribute?\n\n[asy]size(100);\ndraw((0,2)--(48,2),black);\ndraw((48,2)--(48,50),black);\ndraw((48,50)--(0,50),black);\ndraw((0,50)--(0,2),black);\ndraw((24,26)--(0,2),black);\ndraw((24,26)--(24,2),black);\ndraw((24,26)--(48,26),black);\ndraw((24,26)--(0,50),black);\ndraw((12,0)--(12,4),black);\ndraw((36,0)--(36,4),black);\ndraw((46,14)--(50,14),black);\ndraw((46,38)--(50,38),black);\ndraw((36,24)--(36,28),black);\nlabel(\"P\",(36,35),N);\nlabel(\"Q\",(11,22),N);\nlabel(\"R\",(16,7),N);\nlabel(\"S\",(36,11),N);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Suppose the side length of the large square is $1$. Then the area of the large square is $1$. The triangular area $Q$ has base $1$ and height $\\frac{1}{2}$ and thus has an area of $\\frac{1}{2}\\cdot 1\\cdot \\frac{1}{2}=\\frac{1}{4}$. Thus the percentage is $\\frac{\\frac{1}{4}}{1}=\\boxed{25\\%}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find all solutions to the inequality \\[\\frac{1}{2} \\le \\frac{x+1}{x} \\le \\frac{3}{2}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Subtracting $1$ from both sides, we get \\[-\\frac{1}{2} \\le \\frac{1}{x} \\le \\frac{1}{2}.\\]Note that we cannot take the reciprocal of all the quantities to solve for $x,$ because the quantities do not have the same signs. Instead, we consider the two inequalities $-\\frac{1}{2} \\le \\frac{1}{x}$ and $\\frac{1}{x} \\le \\frac{1}{2}$ separately. Break into cases on the sign of $x.$ If $x > 0,$ then $-\\frac{1}{2} \\le \\frac{1}{x}$ is always true, and the inequality $\\frac{1}{x} \\le \\frac{1}{2}$ implies $x \\ge 2.$ If $x < 0,$ then $\\frac{1}{x} \\le \\frac{1}{2}$ is always true, and the inequality $-\\frac{1}{2} \\le \\frac{1}{x}$ implies $x \\le -2.$ Hence, the solution set is \\[x \\in \\boxed{(-\\infty, -2] \\cup [2, \\infty)}.\\]"
-}

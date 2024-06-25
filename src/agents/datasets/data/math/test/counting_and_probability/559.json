@@ -1,6 +1,0 @@
-{
-    "problem": "Coin $A$ is flipped three times and coin $B$ is flipped four times. What is the probability that the number of heads obtained from flipping the two fair coins is the same?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The result will occur when both $A$ and $B$ have either $0,$ $1,$ $2,$ or $3$ heads, and these probabilities are shown in the table. \\[\n\\begin{array}{ccccc}\n\\text{Heads} & 0 & 1 & 2 & 3 \\\\\n\\hline\n{} & & & & \\\\[-9pt]\nA & \\dfrac{1}{8} & \\dfrac{3}{8} & \\dfrac{3}{8} & \\dfrac{1}{8} \\\\[8pt]\n\\hline\n{} & & & & \\\\[-9pt]\nB & \\dfrac{1}{16}& \\dfrac{4}{16}& \\dfrac{6}{16}& \\dfrac{4}{16}\n\\end{array}\n\\] The probability of both coins having the same number of heads is \\[\n\\frac{1}{8}\\cdot \\frac{1}{16} + \\frac{3}{8}\\cdot \\frac{4}{16} + \\frac{3}{8}\\cdot \\frac{6}{16} + \\frac{1}{8}\\cdot \\frac{4}{16} = \\boxed{\\frac{35}{128}}.\n\\]"
-}

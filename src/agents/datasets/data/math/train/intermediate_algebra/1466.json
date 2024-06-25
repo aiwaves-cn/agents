@@ -1,6 +1,0 @@
-{
-    "problem": "An ellipse has foci at $F_1 = (0,2)$ and $F_2 = (3,0).$  The ellipse intersects the $x$-axis at the origin, and one other point.  What is the other point of intersection?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "The distance between the origin and $F_1$ is 2, and the distance between the origin and $F_2$ is 3, so every point $P$ on the ellipse satisfies\n\\[PF_1 + PF_2 = 5.\\]So, if $(x,0)$ is an intercept of the ellipse, then\n\\[\\sqrt{x^2 + 4} + \\sqrt{(x - 3)^2} = 5.\\]We can write this as\n\\[\\sqrt{x^2 + 4} + |x - 3| = 5.\\]If $x \\le 3,$ then\n\\[\\sqrt{x^2 + 4} + (3 - x) = 5,\\]so $\\sqrt{x^2 + 4} = x + 2.$  Squaring both sides, we get\n\\[x^2 + 4 = x^2 + 4x + 4,\\]which leads to $x = 0.$  This solution corresponds to the origin.\n\nIf $x \\ge 3,$ then\n\\[\\sqrt{x^2 + 4} + (x - 3) = 5,\\]so $\\sqrt{x^2 + 4} = 8 - x.$  Squaring both sides, we get\n\\[x^2 + 4 = 64 - 16x + x^2,\\]which leads to $x = \\frac{15}{4}.$  Thus, the other $x$-intercept is $\\boxed{\\left( \\frac{15}{4}, 0 \\right)}.$"
-}

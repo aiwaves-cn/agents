@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers.  Find the minimum value of\n\\[\\frac{\\sqrt{x^2 + y^2} + \\sqrt{x^2 + z^2} + \\sqrt{y^2 + z^2}}{x + y + z}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By QM-AM,\n\\[\\sqrt{\\frac{x^2 + y^2}{2}} \\ge \\frac{x + y}{2}.\\]Then $\\sqrt{x^2 + y^2} \\ge \\frac{x + y}{\\sqrt{2}}.$\n\nSimilarly,\n\\begin{align*}\n\\sqrt{x^2 + z^2} &\\ge \\frac{x + z}{\\sqrt{2}}, \\\\\n\\sqrt{y^2 + z^2} &\\ge \\frac{y + z}{\\sqrt{2}},\n\\end{align*}so\n\\[\\sqrt{x^2 + y^2} + \\sqrt{x^2 + z^2} + \\sqrt{y^2 + z^2} \\ge \\frac{x + y}{\\sqrt{2}} + \\frac{x + z}{\\sqrt{2}} + \\frac{y + z}{\\sqrt{2}} = \\sqrt{2} (x + y + z).\\]Therefore,\n\\[\\frac{\\sqrt{x^2 + y^2} + \\sqrt{x^2 + z^2} + \\sqrt{y^2 + z^2}}{x + y + z} \\ge \\sqrt{2}.\\]Equality occurs when $x = y = z,$ so the minimum value is $\\boxed{\\sqrt{2}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to put five beads on a necklace if there are eight distinct beads to choose from, and rotations and reflections of the necklace are considered the same?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Not considering rotations and reflections, there are 8 ways to choose the first bead to put on the necklace, followed by 7, 6, 5, and 4 ways to choose the next beads. For each arrangements of beads on the necklace, there are 5 ways to rotate it and another 5 ways to reflect it and then rotate it to another arrangement. Thus, arrangements of beads on the necklace come in groups of 10 equivalent arrangements. The total number of different arrangements is therefore $8\\cdot7\\cdot6\\cdot5\\cdot4/10=\\boxed{672}$."
-}

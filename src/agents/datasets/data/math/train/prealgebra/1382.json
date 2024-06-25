@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest possible median for the five number set        $\\{x, 2x, 3, 2, 5\\}$ if $x$ can be any integer?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The median is the number in the set with half the other numbers larger than it and half the others smaller. To maximize the median, we need to make $x$ as large as possible, so the items $x$ and $2x$ are as large as possible. Then, the median is $\\boxed{5}$, since 3 and 2 (half the other members) are smaller than it and $x$ and $2x$ are larger than it."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = 3x^2 - 7$ and $g(f(4)) = 9$.  What is $g(f(-4))$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We have $f(-4) = 3(-4)^2 -7 =41$, so we seek $g(f(-4)) = g(41)$.  But what's $g(41)$? So, we turn to the other information we are given, $g(f(4)) = 9$. Since $f(4) = 3(4)^2 - 7=41$, this equation gives us $g(41) = \\boxed{9}$."
-}

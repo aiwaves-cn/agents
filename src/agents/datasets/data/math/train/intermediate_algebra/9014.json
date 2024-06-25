@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x) = \\frac{1 + x}{1 - 3x}, f_1(x) = f(f(x)), f_2(x) = f(f_1(x)),$ and in general $f_n(x) = f(f_{n-1}(x)),$ then $f_{1993}(3)=$\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "$f(3) = \\frac{1 + 3}{1 - 3\\cdot 3} = -\\frac{1}{2}$. Then $f_1(3) = f(-\\frac12) = \\frac{1 - \\frac12}{1 + 3\\cdot\\frac12} = \\frac15$, $\\displaystyle f_2(3) = f(\\frac15) = \\frac{1 + \\frac15}{1 - 3\\cdot\\frac15} = 3$ and $f_3(3) = f(3) = \\frac{1 + 3}{1 - 3\\cdot 3} = -\\frac{1}{2}$.\nIt follows immediately that the function cycles and $f_n(3) = -\\frac12$ if $n = 3k$, $f_n(3) = \\frac15$ if $n = 3k + 1$ and $f_n(3) = 3$ if $n = 3k + 2$. Since $1993 = 3\\cdot 664 + 1$, $f_{1993}(3) = \\boxed{\\frac{1}{5}}$."
-}

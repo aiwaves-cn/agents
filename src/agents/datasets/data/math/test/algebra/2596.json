@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $x$ such that $\\displaystyle\\frac{1}{x-1} + \\frac{2x}{x - 1} = 5$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We can combine the two terms on the left side to get $\\dfrac{1+2x}{x-1} = 5$.  We then multiply both sides of this equation by $x-1$ to get rid of the fractions.   This gives us $1+2x = 5(x-1)$. Expanding the right side gives $1+2x = 5x -5$.  Subtracting $5x$ from both sides   gives $1-3x = -5$, and subtracting 1 from both sides of this equation yields $-3x = -6$.  Dividing both sides   of this equation by $-3$ gives us our answer, $x = \\boxed{2}$."
-}

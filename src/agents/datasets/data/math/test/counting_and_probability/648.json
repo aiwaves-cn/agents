@@ -1,6 +1,0 @@
-{
-    "problem": "A bag contains 12 red marbles and 6 blue marbles. Two marbles are selected at random and without replacement. What is the probability that one marble is red and one is blue? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "If a red marble is chosen first ($\\frac{12}{18}=\\frac{2}{3}$ chance), then there is a $\\frac{6}{17}$ chance that a blue marble will be chosen second. If a blue marble is chosen first ($\\frac{6}{18}=\\frac{1}{3}$ chance), then there is a $\\frac{12}{17}$ chance that a red marble will be chosen second. The total probability that one red and one blue marble will be chosen is $\\frac{2}{3}\\cdot\\frac{6}{17}+\\frac{1}{3}\\cdot\\frac{12}{17}=\\boxed{\\frac{8}{17}}$."
-}

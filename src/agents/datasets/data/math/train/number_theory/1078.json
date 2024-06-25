@@ -1,6 +1,0 @@
-{
-    "problem": "When an integer is divided by 15, the remainder is 7. Find the sum of the remainders when the same integer is divided by 3 and by 5.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We let our integer be $n$.  the first sentence tells us that  \\[n\\equiv 7\\pmod {15}.\\] Since 3 and 5 are both factors of 15 we deduce \\begin{align*}\nn&\\equiv7\\equiv1\\pmod3\\\\\nn&\\equiv7\\equiv2\\pmod5.\n\\end{align*} Therefore the remainders in question are 1 and 2, and their sum is $\\boxed{3}$."
-}

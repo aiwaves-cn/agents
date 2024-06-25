@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $a$ and $b$ are nonzero integers such that two of the roots of\n\\[x^3 + ax^2 + bx + 9a\\]coincide, and all three roots are integers.  Find $|ab|.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let the integer roots be $r,$ $r,$ and $s,$ so\n\\[x^3 + ax^2 + bx + 9a = (x - r)^2 (x - s).\\]Expanding and matching coefficients, we get\n\\begin{align*}\n2r + s  &= -a, \\\\\nr^2 + 2rs &= b, \\\\\nr^2 s &= -9a.\n\\end{align*}From the first and third equations, $r^2 s = 9(2r + s),$ so\n\\[s r^2 - 18r - 9s = 0.\\]As a quadratic in $r,$ the discriminant is\n\\[\\sqrt{18^2 - 4(s)(-9s)} = \\sqrt{324 + 36s^2} = 3 \\sqrt{s^2 + 9}.\\]Since $r$ and $s$ are integers, $s^2 + 9$ must be a perfect square.  Let $s^2 + 9 = d^2,$ where $d > 0.$  Then\n\\[(d + s)(d - s) = 9.\\]If $s = 0,$ then $a = 0,$ which is not allowed.  Otherwise, $d = \\pm 5$ and $s = \\pm 4.$  If $s = 4,$ then $r = 6,$ and $a = -16$ and $b = 84.$  If $s = -4,$ then $r = -6,$ and $a = 16$ and $b = 84.$  In either case,\n\\[|ab| = 16 \\cdot 84 = \\boxed{1344}.\\]"
-}

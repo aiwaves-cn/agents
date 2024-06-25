@@ -1,6 +1,0 @@
-{
-    "problem": "In a regular tetrahedron the centers of the four faces are the vertices of a smaller tetrahedron. The ratio of the volume of the smaller tetrahedron to that of the larger is $m/n$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Embed the tetrahedron in 4-space to make calculations easier. Its vertices are $(1,0,0,0)$, $(0,1,0,0)$, $(0,0,1,0)$, $(0,0,0,1)$.\nTo get the center of any face, we take the average of the three coordinates of that face. The vertices of the center of the faces are: $(\\frac{1}{3}, \\frac{1}{3}, \\frac{1}{3}, 0)$,$(\\frac{1}{3}, \\frac{1}{3},0, \\frac{1}{3})$,$(\\frac{1}{3},0, \\frac{1}{3}, \\frac{1}{3})$,$(0,\\frac{1}{3}, \\frac{1}{3}, \\frac{1}{3})$.\nThe side length of the large tetrahedron is $\\sqrt{2}$ by the distance formula. The side length of the smaller tetrahedron is $\\frac{\\sqrt{2}}{3}$ by the distance formula.\nTheir ratio is $1:3$, so the ratio of their volumes is $\\left(\\frac{1}{3}\\right)^3 = \\frac{1}{27}$.\n$m+n = 1 + 27 = \\boxed{28}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the center of the ellipse whose equation is $9x^2 + 72x + 4y^2 - 8y - 176 = 0.$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ and $y,$ we get\n\\[9(x + 4)^2 + 4(y - 1)^2 = 324.\\]Then\n\\[\\frac{(x + 4)^2}{36} + \\frac{(y - 1)^2}{81} = 1.\\]Thus, the center of the ellipse is $\\boxed{(-4,1)}.$"
-}

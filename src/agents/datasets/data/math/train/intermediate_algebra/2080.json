@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r,$ $s,$ and $t$ be the roots of the equation $x^3 - 20x^2 + 18x - 7 = 0.$ Find the value of $(1+r)(1+s)(1+t).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Expanding, we have \\[(1+r)(1+s)(1+t) = 1 + (r+s+t) + (rs+st+tr) + rst.\\]By Vieta's formulas, this comes out to \\[1 + 20 + 18 + 7 = \\boxed{46}.\\]"
-}

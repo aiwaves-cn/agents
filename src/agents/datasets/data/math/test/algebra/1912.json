@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = x - \\lfloor \\sqrt{x} \\rfloor^2$. What is $f(101) + f(102) + f(103) + \\cdots + f(110)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If $101 \\le x \\le 110$, then notice that $10 = \\sqrt{100} < \\sqrt{x}< 11 = \\sqrt{121}$. Thus, $\\lfloor \\sqrt{x} \\rfloor^2 = 10^2 = 100$. The desired sum is then $(101 - 100) + (102 - 100) + \\cdots + (110 - 100) = 1 + 2 + \\cdots + 10 = \\frac{10 \\cdot 11}{2} = \\boxed{55}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose the point $(1,2)$ is on the graph of $y=\\frac{f(x)}2$. Then there is one point which must be on the graph of $y=\\frac{f^{-1}(x)}{2}$. What is the sum of that point's coordinates?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $(1,2)$ is on the graph of $y=\\frac{f(x)}2$, we know that $$2 = \\frac{f(1)}{2},$$which implies that $f(1)=4$. Therefore, $f^{-1}(4)=1$, which implies that $\\left(4,\\frac12\\right)$ is on the graph of $y=\\frac{f^{-1}(x)}{2}$. The sum of this point's coordinates is $\\boxed{\\frac 92}$."
-}

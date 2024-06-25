@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p$ be a prime number between 40 and 60. What is the probability that $p + 12$ is also a prime number? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are 5 prime numbers between 40 and 60: 41, 43, 47, 53, and 59. Adding 12 to each and checking whether the sum is prime, we find that only $41+12=53$, $47+12=59$, and $59+12=71$ are prime. Thus, the probability that $p+12$ is prime is $\\boxed{\\frac{3}{5}}$."
-}

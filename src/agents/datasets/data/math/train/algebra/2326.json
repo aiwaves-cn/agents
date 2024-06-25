@@ -1,6 +1,0 @@
-{
-    "problem": "Darren has borrowed $100$ clams from Ethan at a $10\\%$ simple daily interest. Meanwhile, Fergie has borrowed $150$ clams from Gertie at a $5\\%$ simple daily interest. In how many days will Darren and Fergie owe the same amounts, assuming that they will not make any repayments in that time period?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $t$ be the number of days that has passed. Darren's balance, in clams, is $100(1 + 0.10t) = 100 + 10t,$ whereas Fergie's balance, in clams, is $150(1 + 0.05t) = 150 + 7.5t$. Setting them equal to each other, we have $100 + 10t = 150 + 7.5t.$ Collecting like terms, we have $2.5t = 50,$ so $t = \\boxed{20\\text{ days}}.$"
-}

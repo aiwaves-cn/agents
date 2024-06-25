@@ -1,6 +1,0 @@
-{
-    "problem": "A circle with center $C$ is shown. Express the area of the circle in terms of $\\pi$. [asy]\nsize(200); import graph; import markers; defaultpen(linewidth(0.7));\nxaxis(\"$x$\",-5,11,Arrows);\nyaxis(\"$y$\",-7,7,Arrows);\ndraw(Circle((3,1),5));\ndot(Label(\"$C(3,1)$\",align=N),(3,1));\ndot(Label(\"$(8,1)$\",align=N),(8,1));\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "We see that the radius of the circle is $8-3=5$, so the area is $\\pi r^2=\\boxed{25\\pi}$."
-}

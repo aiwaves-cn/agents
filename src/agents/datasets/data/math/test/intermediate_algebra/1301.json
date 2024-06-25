@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[\\frac{x(x + 1)^2}{x - 7} \\le 0.\\]Enter your answer using interval notation.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $(x + 1)^2 \\ge 0$ for all $x.$  For the remaining part of the expression, we can build a sign chart.\n\n\\[\n\\begin{array}{c|ccc}\n& x < 0 & 0 < x < 7 & 7 < x \\\\ \\hline\nx & - & + & + \\\\\nx - 7 & - & - & + \\\\\n\\frac{x(x + 1)^2}{x - 7} & + & - & +\n\\end{array}\n\\]Also, $\\frac{x(x + 1)^2}{x - 7} = 0$ at $x = 0$ and $x = -1.$  Thus, the solution is $x \\in \\boxed{\\{-1\\} \\cup [0,7)}.$"
-}

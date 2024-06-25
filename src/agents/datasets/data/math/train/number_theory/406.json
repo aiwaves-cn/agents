@@ -1,6 +1,0 @@
-{
-    "problem": "Express $\\frac{31}{2\\cdot5^6}$ as a terminating decimal.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since a terminating decimal can be written in the form of $\\frac{a}{10^b}$, where $a$ and $b$ are integers, we want to rewrite our fraction with a denominator of $10^b=2^b\\cdot5^b$. \\[ \\frac{31}{2\\cdot5^6}\\cdot\\frac{2^{5}}{2^{5}}=\\frac{31\\cdot2^{5}}{10^{6}}=\\frac{992}{10^{6}}. \\]Because the denominator consists only of a $10^6$ term, there are a total of 6 digits to the right of the decimal point, the last three of which are $992$. Therefore, the decimal representation of $\\frac{31}{2\\cdot5^6}$ is $\\boxed{0.000992}$"
-}

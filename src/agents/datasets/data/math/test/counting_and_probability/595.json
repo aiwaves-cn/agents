@@ -1,6 +1,0 @@
-{
-    "problem": "If the grocery store has 15 different kinds of fruit and 10 different kinds of canned soup, in how many ways can Michael choose 2 different kinds of fruit and 3 different kinds of soup to buy?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{15}{2}=105$ ways for Michael to choose two of the 15 kinds of fruits, and there are $\\binom{10}{3}=120$ ways for Michael to choose three of the 10 kinds of soup. Therefore, there are $105\\cdot 120=\\boxed{12600}$ ways for Michael to choose fruit and soup."
-}

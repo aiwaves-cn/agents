@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $PQ=PR$ and $\\angle QRP = 65^\\circ$.\n\n[asy]\ndraw((0,0)--(cos(13pi/36),sin(13pi/36))--(2cos(13pi/36),0)--(0,0), linewidth(1));\ndraw((0,0)--(sin(13pi/18)*cos(5pi/36),sin(13pi/18)*sin(5pi/36)), linewidth(1));\ndraw(((15/16)*sin(13pi/18)*cos(5pi/36),(15/16)*sin(13pi/18)*sin(5pi/36))--((15/16)*sin(13pi/18)*cos(5pi/36)+(1/16)*sin(13pi/18)*sin(5pi/36),(15/16)*sin(13pi/18)*sin(5pi/36)-(1/16)*sin(13pi/18)*cos(5pi/36))--(sin(13pi/18)*cos(5pi/36)+(1/16)*sin(13pi/18)*sin(5pi/36),sin(13pi/18)*sin(5pi/36)-(1/16)*sin(13pi/18)*cos(5pi/36)), linewidth(1));\nlabel(\"$Q$\", (0,0), SW);\nlabel(\"$R$\", (2cos(13pi/36),0), SE);\nlabel(\"$S$\", (sin(13pi/18)*cos(5pi/36),sin(13pi/18)*sin(5pi/36)), NE);\nlabel(\"$P$\", (cos(13pi/36),sin(13pi/36)), N);\nlabel(\"$65^\\circ$\", (2cos(13pi/36)-0.04,0), NW);\nlabel(\"$x^\\circ$\", (0.05,0.11), E);\n[/asy]\n\nWhat is the value of $x?$",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Since the sum of the angles in any triangle is $180^\\circ,$ then looking at $\\triangle QSR,$ we have \\[ \\angle SQR = 180^\\circ - \\angle QSR - \\angle SRQ = 180^\\circ - 90^\\circ - 65^\\circ = 25^\\circ \\]Since $PQ = PR,$ then $\\angle PQR = \\angle PRQ.$ Thus, $x^\\circ + 25^\\circ = 65^\\circ$ or $x+25=65$, and so $x = \\boxed{40}.$"
-}

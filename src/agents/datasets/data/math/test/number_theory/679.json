@@ -1,6 +1,0 @@
-{
-    "problem": "Linda, Sherry, June, and Connie walked around their neighborhoods selling girl scout cookies. Linda earned $\\$27.47$, Sherry earned $\\$35.23$, June earned $\\$37.37$, and Connie earned $\\$26.52$. After the sale, they pooled their money together and went to the bank to convert the coins into dollars. How much money, in cents, was left after they converted as many of the coins into bills as they could?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Instead of adding large numbers together, we can find the residue for each person for easier computation. We convert the amount they earned to cents and find the modulo $100$ for each.  \\begin{align*}\n2747 &\\equiv 47 \\pmod{100},\\\\\n3523 &\\equiv 23 \\pmod{100},\\\\\n3737 &\\equiv 37 \\pmod{100},\\\\\n2652 &\\equiv 52 \\pmod{100}\n\\end{align*}We want to find the modulo $100$ of the total number of cents. We can add the separate residues to get $$47+23+37+52 \\equiv 159 \\equiv 59 \\pmod{100}$$Therefore, they have $\\boxed{59}$ cents left after converting as much of the money into bills as possible."
-}

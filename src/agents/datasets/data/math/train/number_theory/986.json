@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $a$ and $b$ are integers such that   $$3b = 8 - 2a.$$How many of the first six positive integers must be divisors of $2b + 12$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Note that it is possible that $a = 1$ and $b = 2$, since $3\\cdot 2 = 8 - 2 \\cdot 1$. Then $2b + 12 = 16$. Since $3,$ $5,$ and $6,$ are not factors of $16$, it is not true that these numbers must be divisors of $2b + 12.$\n\nIt only remains to check whether $1$, $2$, and $4$ must be divisors of $2b + 12$. The distributive property gives us   $$8 - 2a = 2 \\cdot 4 - 2a = 2(4 -a),$$so $2$ is a factor of $3b$. Note that   $$b = 3b - 2b,$$so since $2$ is a factor of $3b$ and $2$ is a factor of $2b,$ $2$ must be a factor of $b.$ So we can say $b = 2n$ for some integer $n$. Substituting gives us    \\begin{align*}\n2b + 12 &= 2(2n) + 12\\\\\n&= 4n + 4 \\cdot 3\\\\\n&= 4(n + 3),\n\\end{align*}so $4$ is a factor of $2b + 12$. Since $1,$ $2,$ and $4$ are factors of $4$ and $4$ is a factor of $2b + 12$, it must be true that $1,$ $2,$ and $4$ are factors of $2b + 12$. So our final answer is $\\boxed{3}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the first 9 prime numbers.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The first prime number is $2$ and we know that all prime numbers after that must be odd. $3$, $5$, and $7$ are prime because their only positive integer divisors are $1$ and themselves. $9$ is divisible by $3$ so it is not prime. $11$ and $13$ are prime, but $15$ is not because it is divisible by $3$ and $5$. Continuing, $17$ and $19$ are prime, but $21$ isn't because it is divisible by $3$ and $7$. Finally we know that $23$ is prime.\n\nTo sum these nine numbers quicker, we can group them so that they sum to multiples of $10$: \\begin{align*}\n2+ 3 + 5& + 7 + 11 + 13 + 17 + 19 + 23 \\\\\n& = (3+7) + (11+19) + (13+17) + (23 + 5 + 2) \\\\\n& = 10 + 30 + 30 + 30 \\\\\n& = \\boxed{100}\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the perimeter, in units, of a rhombus if its area is 120 square units and one diagonal is 10 units?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The diagonals of a rhombus divide the rhombus into four congruent right triangles, the legs of which are half-diagonals of the rhombus.  Let $a$ and $b$ be the half-diagonal lengths of the rhombus.  The area of the rhombus is 4 times the area of one of the right triangles, in other words $4\\times\\frac{1}{2}ab=2ab$.  Since $a=5$ units and the area of the rhombus is $120$ square units, we find $b=120/(2\\cdot5)=12$ units.  The perimeter is 4 times the hypotenuse of one of the right triangles: \\[\n\\text{Perimeter}=4\\sqrt{a^2+b^2}=4\\sqrt{5^2+12^2}=4\\cdot13=\\boxed{52}\\text{ units}.\n\\]"
-}

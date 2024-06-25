@@ -1,6 +1,0 @@
-{
-    "problem": "Find the least positive integer such that when its leftmost digit is deleted, the resulting integer is 1/29 of the original integer.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The desired integer has at least two digits.  Let $d$ be its leftmost digit, and let $n$ be the integer that results when $d$ is deleted.  Then for some positive integer $p$, $10^p\\cdot\nd+n=29n$, and so $10^p\\cdot d=28n$. Therefore 7 is a divisor of $d$, and because $1\\le d\\le9$, it follows that $d=7$. Hence $10^p=4n$, so $\\displaystyle n={{10^p}\\over4}=\n{{100\\cdot10^{p-2}}\\over4}=25\\cdot10^{p-2}$.  Thus every positive integer with the desired property must be of the form $7\\cdot10^p+25\\cdot10^{p-2}=10^{p-2}(7\\cdot10^2+25)=725\\cdot10^{p-2}$ for some $p\\ge2$. The smallest such integer is $\\boxed{725}$."
-}

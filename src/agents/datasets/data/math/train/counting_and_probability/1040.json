@@ -1,6 +1,0 @@
-{
-    "problem": "The faces of an octahedral die are labeled with digits $1$ through $8$. What is the probability, expressed as a common fraction, of rolling a sum of $15$ with a pair of such octahedral dice?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are 8 digits upon which the die can land in the first roll and 8 digits upon which the die can land in the second roll. Thus, there are $8 \\cdot 8 = 64 $ pairs of digits that can result from two rolls. Of these, only two will produce a sum of 15: 8 and 7 or 7 and 8. Thus, the probability of rolling a 15 is $\\frac{2}{64} = \\boxed{\\frac{1}{32}}$."
-}

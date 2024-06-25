@@ -1,6 +1,0 @@
-{
-    "problem": "A bookstore is deciding what price it should charge for a certain book. After research, the store finds that if the book's price is $p$ dollars (where $p \\le 32$), then the number of books sold per month is $128-4p$. What price should the store charge to maximize its revenue?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The store's revenue is given by: number of books sold $\\times$ price of each book, or $p(128-4p)=128p-4p^2$. We want to maximize this expression by completing the square. We can factor out a $-4$ to get $-4(p^2-32p)$.\n\nTo complete the square, we add $(32/2)^2=256$ inside the parentheses and subtract $-4\\cdot256=-1024$ outside. We are left with the expression\n\\[-4(p^2-32p+256)+1024=-4(p-16)^2+1024.\\]Note that the $-4(p-16)^2$ term will always be nonpositive since the perfect square is always nonnegative. Thus, the revenue is maximized when $-4(p-16)^2$ equals 0, which is when $p=16$. Thus, the store should charge $\\boxed{16}$ dollars for the book.\n\nAlternatively, since the roots of $p(128-4p)$ are 0 and 32, symmetry tells us that the extreme value will be at $p=16$.  Since the coefficient on $p^2$ is negative, this is a maximum."
-}

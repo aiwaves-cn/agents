@@ -1,6 +1,0 @@
-{
-    "problem": "There exist constants $a$ and $b$ so that\n\\[\\cos^3 \\theta = a \\cos 3 \\theta  + b \\cos \\theta\\]for all angles $\\theta.$  Enter the ordered pair $(a,b).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the triple angle formulas, $\\cos 3 \\theta = 4 \\cos^3 \\theta - 3 \\cos \\theta.$  Hence,\n\\[\\cos^3 \\theta = \\frac{1}{4} \\cos 3 \\theta + \\frac{3}{4} \\cos \\theta,\\]so $(a,b) = \\boxed{\\left( \\frac{1}{4}, \\frac{3}{4} \\right)}.$"
-}

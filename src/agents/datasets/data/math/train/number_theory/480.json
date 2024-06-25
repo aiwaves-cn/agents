@@ -1,6 +1,0 @@
-{
-    "problem": "Let $g(n)$ be the product of the proper positive integer divisors of $n$. (Recall that a proper divisor of $n$ is a divisor other than $n$.) For how many values of $n$ does $n$ not divide $g(n)$, given that $2 \\le n \\le 50$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $n$ is prime, then $g(n) = 1$, so $n$ cannot divide $g(n)$. The primes less than or equal to $50$ are $$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.$$There are $15$ of these primes. Also, if $n$ is the square of a prime, then $g(n) = \\sqrt{n}$, so $n$ cannot divide $g(n)$. By looking at the list of primes we already generated, we see that there are four perfect squares of primes less than $50$. If $n$ is any other composite integer, then it can be decomposed into the product of integers $a$ and $b$ with both integers greater than $1$. We have that $ab$ divides $g(n)$ (since $g(n)$ is the product of a collection of integers including $a$ and $b$). Since $ab=n$, this implies that $n$ divides $g(n)$. As a result, there are $15 + 4 = \\boxed{19}$ values of $n$ for which $n$ does not divide $g(n)$."
-}

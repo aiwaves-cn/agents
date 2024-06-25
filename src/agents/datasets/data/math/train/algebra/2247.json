@@ -1,6 +1,0 @@
-{
-    "problem": "The cost of five pencils and one pen is $\\$2.50$, and the cost of one pencil and two pens is $\\$1.85$. What is the cost of two pencils and one pen?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let the cost of one pencil be $a$ and the cost of one pen be $b$. We can set up a system of two equations to represent the given information. The equations are:\n\n\\begin{align*}\n5a + b &= 2.5 \\\\\na + 2b &= 1.85 \\\\\n\\end{align*}\n\nWe are trying to find the value of $2a + b$. Notice that when we add the two equations, we get $6a+3b=4.35$. This is just three times what we are looking for, so dividing both sides of this last equation by three, we get that $2a+b=1.45$. Thus, the cost of two pencils and one pen is $\\boxed{1.45}$ dollars.\n\nAlternatively, we could solve our system of equations for $a$ and $b$ and then find the value of $2a+b$. In this case, we get that $a=.35$ and $b=.75$, so $2a+b=1.45$, as expected."
-}

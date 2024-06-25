@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $7145 + 7146 + 7147 + 7148 + 7149$ is divided by 8.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Reducing each number modulo 8 first, we see that \\begin{align*}\n7145 + 7146 + 7147 + 7148 + 7149 &\\equiv 1 + 2 + 3 + 4 + 5 \\\\\n&\\equiv 15 \\\\\n&\\equiv \\boxed{7} \\pmod{8}.\n\\end{align*}"
-}

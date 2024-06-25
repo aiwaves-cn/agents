@@ -1,6 +1,0 @@
-{
-    "problem": "Two cross sections of a right hexagonal pyramid are obtained by cutting the pyramid with planes parallel to the hexagonal base. The areas of the cross sections are $216\\sqrt{3}$ square feet and $486\\sqrt{3}$ square feet. The two planes are $8$ feet apart. How far from the apex of the pyramid is the larger cross section, in feet?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The ratio of the areas of the cross sections is equal to $\\frac{216\\sqrt{3}}{486\\sqrt{3}} = \\frac 49$. Since the ratio of the area of two similar figures is the square of the ratio of their corresponding sides, it follows that the ratio of the corresponding sides of the cross-sections is equal to $\\sqrt{\\frac 49} = \\frac 23$.\n\nNow consider the right triangles formed by the apex of the pyramid, the foot of the altitude from the apex to the cross section, and a vertex of the hexagon. It follows that these two right triangles will be similar, since they share an angle at the apex. The ratio of their legs in the cross-section is $2/3$, so it follows that the heights of the right triangles are in the same ratio. Suppose that the larger cross section is $h$ feet away from the apex; then $h - \\frac{2}{3} h = 8$, so $\\frac h3 = 8 \\Longrightarrow h = \\boxed{24}$ feet."
-}

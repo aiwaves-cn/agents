@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $XYZ$, we have $\\angle Z = 90^\\circ$, $XY = 10$, and $YZ = \\sqrt{51}$. What is $\\tan X$?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "[asy]\n\npair X,Y,Z;\n\nZ = (0,0);\n\nY = (sqrt(51),0);\n\nX = (0,7);\n\ndraw(X--Y--Z--X);\n\ndraw(rightanglemark(Y,Z,X,15));\n\nlabel(\"$X$\",X,NE);\n\nlabel(\"$Y$\",Y,SE);\n\nlabel(\"$Z$\",Z,SW);\n\nlabel(\"$10$\",(X+Y)/2,NE);\n\nlabel(\"$\\sqrt{51}$\",(Z+Y)/2,S);\n\n[/asy]\n\nBecause this is a right triangle, $\\tan X = \\frac{YZ}{XZ}$.\n\nUsing the Pythagorean Theorem, we find $XZ = \\sqrt{XY^2 - YZ^2} = \\sqrt{100-51} = 7$.\n\nSo $\\tan X = \\boxed{\\frac{\\sqrt{51}}{7}}$."
-}

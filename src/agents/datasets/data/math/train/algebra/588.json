@@ -1,6 +1,0 @@
-{
-    "problem": "Find the only positive real number $x$ for which $\\displaystyle \\frac{x-4}{9} = \\frac{4}{x-9}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The first approach that comes to mind is probably also the best one.  So we cross-multiply to obtain $(x-4)(x-9) = 36$.  Multiplying out the left-hand side and cancelling the 36 yields $x^2-13x = 0$, or $x(x-13)=0$.  This equation has two solutions, $x=0$ and 13.  Since we are looking for positive answers, we take $x=\\boxed{13}$."
-}

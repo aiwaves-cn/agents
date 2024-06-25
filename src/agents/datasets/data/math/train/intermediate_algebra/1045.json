@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be the set of all nonzero real numbers.  Let $f : S \\to S$ be a function such that\n\\[f(x) + f(y) = f(xyf(x +  y))\\]for all $x,$ $y \\in S$ such that $x + y \\neq 0.$\n\nLet $n$ be the number of possible values of $f(4),$ and let $s$ be the sum of all possible values of $f(4).$  Find $n \\times s.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Fix $s \\in S.$  Setting $y = s - x,$ we get\n\\[f(x) + f(s - x) = f(x(s - x)f(s)). \\quad (*)\\]This holds for all $x \\in S,$ $x \\neq s.$\n\nConsider the equation\n\\[s - x = x(s - x) f(s).\\]The solutions in $x$ are $x = s$ and $x = \\frac{1}{f(s)}.$  Since $x \\in S,$ $f(s)$ is well-defined.  Furthermore, $f(s) \\neq 0,$ so $\\frac{1}{f(s)}$ is well-defined.  If $f(s) \\neq \\frac{1}{s},$ then we can set $x = \\frac{1}{f(s)}$ in $(*),$ which gives us\n\\[f \\left( \\frac{1}{f(s)} \\right) + f \\left( s - \\frac{1}{f(s)} \\right) = f \\left( s - \\frac{1}{f(s)} \\right).\\]Then $f \\left( \\frac{1}{f(s)} \\right) = 0,$ contradiction.\n\nThe only possibility then is that $f(s) = \\frac{1}{s}.$  In other words,\n\\[f(x) = \\frac{1}{x}\\]for all $x \\in S.$\n\nWe can check that $f(x) = \\frac{1}{x}$ works, so $n = 1$ and $s = \\frac{1}{4},$ so $n \\times s = \\boxed{\\frac{1}{4}}.$"
-}

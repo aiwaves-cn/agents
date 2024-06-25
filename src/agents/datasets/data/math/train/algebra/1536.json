@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = (x+2)^2-5$. If the domain of $f$ is all real numbers, then $f$ does not have an inverse function, but if we restrict the domain of $f$ to an interval $[c,\\infty)$, then $f$ may have an inverse function. What is the smallest value of $c$ we can use here, so that $f$ does have an inverse function?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "For $f$ to have an inverse function, it must not take any repeated value -- that is, we must not have $f(x_1)=f(x_2)$ for distinct $x_1$ and $x_2$ in its domain.\n\nThe graph of $y=(x+2)^2-5$ is a parabola with vertex at $(-2,-5)$:\n\n[asy]\nunitsize(0.2 cm);\nLabel f;\n\nf.p=fontsize(4);\n\nxaxis(-6,3,Ticks(f, 1.0, Size=1));\nyaxis(-6,5,Ticks(f, 1.0, Size=1));\n\nreal g(real x)\n\n{\n\nreturn (x+2)^2-5;\n}\n\ndraw(graph(g,-5.2,1.2));\ndot((-2,-5));\nlabel(\"Vertex: $(-2,-5)$\", (-2,-5), SW);\n[/asy] The axis of symmetry is the line $x=-2$, so for every $x$ less than $-2$, there is a corresponding $x$ greater than $-2$ where $f$ takes the same value. If we restrict the domain of $f$ to $[-2,\\infty)$, then $f$ has no repeated values, as $f$ is increasing throughout its domain. But if we restrict the domain to $[c,\\infty)$ where $c<-2$, then $f$ has repeated values. So, the smallest $c$ which will work is $c=\\boxed{-2}$."
-}

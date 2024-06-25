@@ -1,6 +1,0 @@
-{
-    "problem": "I have five apples and ten oranges. If a fruit basket must contain at least one piece of fruit, how many kinds of fruit baskets can I make?  (The apples are identical and the oranges are identical.  A fruit basket consists of some number of pieces of fruit, and it doesn't matter how the fruit are arranged in the basket.)",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "For a moment, consider empty fruit baskets. Now there are $6$ choices total for the apples: no apples, one apple, two apples, three, four, or all five apples. Similarly, there are $11$ choices total for the oranges. Thus, there are $6\\cdot 11 = 66$ potential fruit baskets. But we must subtract one off of that because we counted empty fruit baskets, which aren't actually allowed. So there are $\\boxed{65}$ possible fruit baskets."
-}

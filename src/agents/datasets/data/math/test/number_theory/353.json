@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S = 2010 + 2011 + \\cdots + 4018$. Compute the residue of $S$, modulo 2009.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Modulo 2009, $S \\equiv 1 + 2 + \\cdots + 2008 + 0$. Now, the right-hand side is simply the sum of the integers from 1 to 2008, which is $\\frac{2008 \\cdot 2009}{2} = 1004 \\cdot 2009$, so $S \\equiv 1004 \\cdot 2009 \\equiv 1004 \\cdot 0 \\equiv \\boxed{0}$ modulo 2009."
-}

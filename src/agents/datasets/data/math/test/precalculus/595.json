@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\tan 10^\\circ \\tan 20^\\circ \\tan 30^\\circ \\tan 40^\\circ \\tan 50^\\circ \\tan 60^\\circ \\tan 70^\\circ \\tan 80^\\circ.$",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "Note that\n\\[\\tan (90^\\circ - x) \\tan x = \\frac{\\sin (90^\\circ - x)}{\\cos (90^\\circ - x)} \\cdot \\frac{\\sin x}{\\cos x} = \\frac{\\cos x}{\\sin x} \\cdot \\frac{\\sin x}{\\cos x} = 1,\\]so\n\\begin{align*}\n&\\tan 10^\\circ \\tan 20^\\circ \\tan 30^\\circ \\tan 40^\\circ \\tan 50^\\circ \\tan 60^\\circ \\tan 70^\\circ \\tan 80^\\circ \\\\\n&= (\\tan 10^\\circ \\tan 80^\\circ) (\\tan 20^\\circ \\tan 70^\\circ) (\\tan 30^\\circ \\tan 60^\\circ) (\\tan 40^\\circ \\tan 50^\\circ) \\\\\n&= \\boxed{1}.\n\\end{align*}"
-}

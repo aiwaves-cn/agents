@@ -1,6 +1,0 @@
-{
-    "problem": "The area of the smallest square that will contain a circle of radius 4 is what?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The smallest square has side 8 and area $8^2=\\boxed{64}$. [asy]\ndraw(Circle((12,12), 12));\ndraw((0,0)--(0,24)--(24,24)--(24,0)--cycle);\ndraw((0,12)--(24,12));\ndot((12,12));\nlabel(\"4\",(18,12),N);\nlabel(\"8\",(12, 0),S);\n[/asy]"
-}

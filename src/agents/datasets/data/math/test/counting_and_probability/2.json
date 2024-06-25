@@ -1,6 +1,0 @@
-{
-    "problem": "We flip a fair coin 10 times.  What is the probability that we get heads in at least 6 of the 10 flips?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $2^{10} = 1024$ possible outcomes of the 10 coin flips. The probability that we flip at least 6 heads is equal to the probability that we flip at least 6 tails, by symmetry.  Let's call this probability $p$.  The only other possibility is that we flip exactly 5 heads and 5 tails, for which the probability is $\\dfrac{\\binom{10}{5}}{2^{10}} = \\dfrac{252}{1024} = \\dfrac{63}{256}$.  Therefore, $\\dfrac{63}{256} + 2p = 1$, giving $$ p=\\frac{1}{2}\\left(1-\\frac{63}{256}\\right)=\\boxed{\\frac{193}{512}} $$"
-}

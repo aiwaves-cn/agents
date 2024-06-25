@@ -1,6 +1,0 @@
-{
-    "problem": "Define $E(a,b,c) = a \\cdot b^2 + c$. What value of $a$ is the solution to the equation $E(a,4,5) = E(a,6,7)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "$E(a,4,5) = a \\cdot 4^2 + 5 = 16a + 5$ and $E(a,6,7) = a \\cdot 6^2 + 7 = 36a + 7.$ We set these equal to each other: $16a + 5 = 36a + 7.$ Now we simplify and have $20a=-2$, so $a = \\boxed{-\\frac{1}{10}}.$"
-}

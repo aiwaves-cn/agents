@@ -1,6 +1,0 @@
-{
-    "problem": "Carlos has chosen twelve different compact discs (CDs) he would like to buy. Four are rap music, five are country music, and three are heavy metal music. Carlos then randomly selects five of the 12 CDs to purchase. What is the probability that his purchase includes at least one CD from each of the three categories? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{12}{5}=792$ equally likely choices for the set of 5 CDs Carlos purchases.  Of these, $\\binom{9}{5}$ include no heavy metal CDs, $\\binom{8}{5}$ include no rap CDs, and $\\binom{7}{5}$ include no country CDs.  We can add these numbers to find the number of sets of CDs which do not include at least one CD from each category, except that we have counted the set of 5 country CDs twice, since it omits both heavy metal and rap.  Therefore,  \\[\n\\binom{9}{5}+\\binom{8}{5}+\\binom{7}{5}-1=126+56+21-1=202\n\\] of the sets of 5 CDs do not include at least one CD from each category.  Subtracting from 792, we find that 590 of the sets do include at least one CD from each category.  The probability that a chosen randomly set will be one of these is $\\dfrac{590}{792}=\\boxed{\\frac{295}{396}}$."
-}

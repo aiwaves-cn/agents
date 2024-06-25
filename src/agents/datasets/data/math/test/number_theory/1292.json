@@ -1,6 +1,0 @@
-{
-    "problem": "The least common multiple of $1!+2!$, $2!+3!$, $3!+4!$, $4!+5!$, $5!+6!$, $6!+7!$, $7!+8!$, and $8!+9!$ can be expressed in the form $a\\cdot b!$, where $a$ and $b$ are integers and $b$ is as large as possible. What is $a+b$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that we can factor $n!+(n+1)!$ as $n!\\cdot [1+(n+1)] = n!\\cdot(n+2)$. Thus, we have \\begin{align*}\n1!+2! &= 1!\\cdot 3 \\\\\n2!+3! &= 2!\\cdot 4 \\\\\n3!+4! &= 3!\\cdot 5 \\\\\n4!+5! &= 4!\\cdot 6 \\\\\n5!+6! &= 5!\\cdot 7 \\\\\n6!+7! &= 6!\\cdot 8 \\\\\n7!+8! &= 7!\\cdot 9 \\\\\n8!+9! &= 8!\\cdot 10\n\\end{align*}The last two numbers are $9\\cdot 7!$ and $(8\\cdot 10)\\cdot 7!$, so their least common multiple is equal to $\\mathop{\\text{lcm}}[9,8\\cdot 10]\\cdot 7!$. Since $9$ and $8\\cdot 10$ are relatively prime, we have $\\mathop{\\text{lcm}}[9,8\\cdot 10] = 9\\cdot 8\\cdot 10$, and so $$\\mathop{\\text{lcm}}[7!+8!,8!+9!] = 9\\cdot 8\\cdot 10\\cdot 7! = 10!.$$Finally, we note that all the other numbers in our list ($1!+2!,2!+3!,\\ldots,6!+7!$) are clearly divisors of $10!$. So, the least common multiple of all the numbers in our list is $10!$. Writing this in the form specified in the problem, we get $1\\cdot 10!$, so $a=1$ and $b=10$ and their sum is $\\boxed{11}$."
-}

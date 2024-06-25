@@ -1,6 +1,0 @@
-{
-    "problem": "Find $4^4 \\cdot 5^4$",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Finding $4^4$ and $5^4$ individually, then multiplying the result, is quite hard and time-consuming.  So, let's list out the full product, and see if we can regroup anything: $$ 4^4 \\cdot 5^4 = (4 \\cdot 4 \\cdot 4 \\cdot 4) \\cdot (5 \\cdot 5 \\cdot 5 \\cdot 5) $$Now, multiplication is associative, so we can group a $5$ with each $4$, to get $ (4 \\cdot 5) \\cdot (4 \\cdot 5) \\cdot (4 \\cdot 5) \\cdot (4 \\cdot 5)$, which equals $20 \\cdot 20 \\cdot 20 \\cdot 20 = 400 \\cdot 400 = \\boxed{160000}$.  In the last step, remember the rules of multiplying with zeros at the end."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $x^2 + \\frac{1}{x^2} = A,$ and $x - \\frac{1}{x} = B,$ where $A$ and $B$ are positive numbers, find the minimum possible numerical value for $\\frac{A}{B}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that\n\\[B^2 = \\left( x - \\frac{1}{x} \\right)^2 = x^2 - 2 + \\frac{1}{x^2} = A - 2,\\]so\n\\[\\frac{A}{B} = \\frac{B^2 + 2}{B} = B + \\frac{2}{B}.\\]By AM-GM,\n\\[B + \\frac{2}{B} \\ge 2 \\sqrt{B \\cdot \\frac{2}{B}} = 2 \\sqrt{2}.\\]Equality occurs when $x - \\frac{1}{x} = \\sqrt{2}$ (which has $x = \\frac{1 + \\sqrt{3}}{\\sqrt{2}}$ as a root), so the minimum value is $\\boxed{2 \\sqrt{2}}.$"
-}

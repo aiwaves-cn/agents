@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the product\n\\[\\frac{(1998^2 - 1996^2)(1998^2 - 1995^2) \\dotsm (1998^2 - 0^2)}{(1997^2 - 1996^2)(1997^2 - 1995^2) \\dotsm (1997^2 - 0^2)}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Applying difference of squares, we get\n\\begin{align*}\n&\\frac{(1998^2 - 1996^2)(1998^2 - 1995^2) \\dotsm (1998^2 - 0^2)}{(1997^2 - 1996^2)(1997^2 - 1995^2) \\dotsm (1997^2 - 0^2)} \\\\\n&= \\frac{(1998 + 1996)(1998 - 1996)(1998 + 1995)(1998 - 1995) \\dotsm (1998 + 0)(1998 - 0)}{(1997 + 1996)(1997 - 1996)(1997 + 1995)(1997 - 1995) \\dotsm (1997 - 0)(1997 + 0)} \\\\\n&= \\frac{3994 \\cdot 2 \\cdot 3996 \\cdot 3 \\dotsm 1998 \\cdot 1998}{3993 \\cdot 1 \\cdot 3992 \\cdot 2 \\dotsm 1997 \\cdot 1997}.\n\\end{align*}In the numerator, we get every number from 2 to 3994 as a factor, with 1998 appearing twice.  In the denominator, we get every number from 1 to 3993 as a factor, with 1997 appearing twice.  Thus, the fraction simplifies to\n\\[\\frac{1998 \\cdot 3994}{1997} = \\boxed{3996}.\\]"
-}

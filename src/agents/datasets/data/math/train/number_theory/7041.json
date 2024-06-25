@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integer multiples of $1001$ can be expressed in the form $10^{j} - 10^{i}$, where $i$ and $j$ are integers and $0\\leq i < j \\leq 99$?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The prime factorization of $1001 = 7\\times 11\\times 13$. We have $7\\times 11\\times 13\\times k = 10^j - 10^i = 10^i(10^{j - i} - 1)$. Since $\\text{gcd}\\,(10^i = 2^i \\times 5^i, 7 \\times 11 \\times 13) = 1$, we require that $1001 = 10^3 + 1 | 10^{j-i} - 1$. From the factorization $10^6 - 1 = (10^3 + 1)(10^{3} - 1)$, we see that $j-i = 6$ works; also, $a-b | a^n - b^n$ implies that $10^{6} - 1 | 10^{6k} - 1$, and so any $\\boxed{j-i \\equiv 0 \\pmod{6}}$ will work.\nTo show that no other possibilities work, suppose $j-i \\equiv a \\pmod{6},\\ 1 \\le a \\le 5$, and let $j-i-a = 6k$. Then we can write $10^{j-i} - 1 = 10^{a} (10^{6k} - 1) + (10^{a} - 1)$, and we can easily verify that $10^6 - 1 \\nmid 10^a - 1$ for $1 \\le a \\le 5$.\nIf $j - i = 6, j\\leq 99$, then we can have solutions of $10^6 - 10^0, 10^7 - 10^1, \\dots\\implies 94$ ways. If $j - i = 12$, we can have the solutions of $10^{12} - 10^{0},\\dots\\implies 94 - 6 = 88$, and so forth. Therefore, the answer is $94 + 88 + 82 + \\dots + 4\\implies 16\\left(\\dfrac{98}{2}\\right) = \\boxed{784}$."
-}

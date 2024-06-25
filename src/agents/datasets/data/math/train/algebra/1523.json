@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $3x^2+4x-9$ has two real roots. What is the sum of the squares of these roots? Express your answer as a common fraction in lowest terms.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $x_1$ and $x_2$ be the roots of the equation $3x^2+4x-9$. We want to find $x_1^2+x_2^2$. Note that $x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2$. We know that $x_1+x_2$, the sum of the roots, is equal to $\\frac{-b}{a}$, which for this equation is $\\frac{-4}{3}$. Likewise, we know that $x_1x_2$, the product of the roots, is equal to $\\frac{c}{a}$, which for this equation is $\\frac{-9}{3}$. Thus, $x_1^2+x_2^2=\\left(\\frac{-4}{3}\\right)^2-2\\left(\\frac{-9}{3}\\right)=\\frac{16}{9}+\\frac{18}{3}=\\boxed{\\frac{70}{9}}$."
-}

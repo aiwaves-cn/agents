@@ -1,6 +1,0 @@
-{
-    "problem": "The noon temperatures for seven consecutive days were $80^{\\circ}$, $79^{\\circ}$, $81^{\\circ}$, $85^{\\circ}$, $87^{\\circ}$, $89^{\\circ}$, and $87^{\\circ}$ Fahrenheit. What is the mean noon temperature, in degrees Fahrenheit, for the week?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Writing each temperature as 80 degrees plus or minus some number of degrees, the sum of the temperatures is  \\begin{align*}\n80+79&+81+85+87+89+87 \\\\&= 80 +(80-1) + (80+1) + (80+5) \\\\\n&\\qquad+ (80+7)+(80+9)+(80+7)\\\\\n&=7\\cdot 80 + (-1+1+5+7+9+7)\\\\\n&=7\\cdot 80 + 28.\n\\end{align*} So, the mean of the 7 temperatures is  \\[\\frac{7\\cdot 80 + 28}{7} = \\frac{7\\cdot 80}{7} + \\frac{28}{7} = \\boxed{84}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "When a polynomial $p(x)$ is divided by $x + 1,$ the remainder is 5.  When $p(x)$ is divided by $x + 5,$ the remainder is $-7.$  Find the remainder when $p(x)$ is divided by $(x + 1)(x + 5).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The remainder when $p(x)$ is divided by $(x + 1)(x + 5)$ is of the form $ax + b.$  Thus, we can let\n\\[p(x) = (x + 1)(x + 5) q(x) + ax + b,\\]where $q(x)$ is the quotient in the division.\n\nBy the Remainder Theorem, $p(-1) = 5$ and $p(-5) = -7.$  Setting $x = -1$ and $x = -5$ in the equation above, we get\n\\begin{align*}\n-a + b &= 5, \\\\\n-5a + b &= -7.\n\\end{align*}Solving, we find $a = 3$ and $b = 8,$ so the remainder is $\\boxed{3x + 8}.$"
-}

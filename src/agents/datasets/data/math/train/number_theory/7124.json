@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be the sum of all positive integers $n$ such that $n^2+12n-2007$ is a perfect square. Find the remainder when $S$ is divided by $1000.$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $n^2 + 12n - 2007 = m^2$, we can complete the square on the left-hand side to get $n^2 + 12n + 36 = m^2 + 2043$ so $(n+6)^2 = m^2 + 2043$. Subtracting $m^2$ and factoring the left-hand side, we get $(n + m + 6)(n - m + 6) = 2043$. $2043 = 3^2 \\cdot 227$, which can be split into two factors in 3 ways, $2043 \\cdot 1 = 3 \\cdot 681 = 227 \\cdot 9$. This gives us three pairs of equations to solve for $n$:\n$n + m + 6 = 2043$ and $n - m + 6 = 1$ give $2n + 12 = 2044$ and $n = 1016$.\n$n + m + 6 = 681$ and $n - m + 6 = 3$ give $2n + 12 = 684$ and $n = 336$.\n$n + m + 6 = 227$ and $n - m + 6 = 9$ give $2n + 12 = 236$ and $n = 112$.\nFinally, $1016 + 336 + 112 = 1464$, so the answer is $\\boxed{464}$."
-}

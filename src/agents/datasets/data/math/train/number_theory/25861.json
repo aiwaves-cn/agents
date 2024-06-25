@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest prime factor of $12! + 14!$?  (Reminder: If $n$ is a positive integer, then $n!$ stands for the product $1\\cdot 2\\cdot 3\\cdot \\cdots \\cdot (n-1)\\cdot n$.)",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Factor out $12!$ from both terms: $12!+14!=12!(1+13\\cdot 14)=12!\\cdot 183$.  Factor $183=3\\cdot 61$.  Since $12!$ has no prime factors greater than 11, $\\boxed{61}$ is the greatest prime factor of $12!+14!$."
-}

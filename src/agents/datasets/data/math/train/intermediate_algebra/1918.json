@@ -1,6 +1,0 @@
-{
-    "problem": "The expression\n\\[a(b - c)^3 + b(c - a)^3 + c(a - b)^3\\]can be factored into the form  $(a - b)(b - c)(c - a) p(a,b,c),$ for some polynomial $p(a,b,c).$  Find $p(a,b,c).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can expand, to get\n\\[a(b - c)^3 + b(c - a)^3 + c(a - b)^3 = -a^3 b + ab^3 - b^3 c + bc^3 + a^3 c - ac^3.\\]First, we take out a factor of $a - b$:\n\\begin{align*}\n-a^3 b + ab^3 - b^3 c + bc^3 + a^3 c - ac^3 &= ab(b^2 - a^2) + (a^3 - b^3) c + (b - a) c^3 \\\\\n&= ab(b - a)(b + a) + (a - b)(a^2 + ab + b^2) c + (b - a) c^3 \\\\\n&= (a - b)(-ab(a + b) + (a^2 + ab + b^2) c - c^3) \\\\\n&= (a - b)(-a^2 b + a^2 c - ab^2 + abc + b^2 c - c^3).\n\\end{align*}We can then take out a factor of $b - c$:\n\\begin{align*}\n-a^2 b + a^2 c - ab^2 + abc + b^2 c - c^3 &= a^2 (c - b) + ab(c - b) + c(b^2 - c^2) \\\\\n&= a^2 (c - b) + ab(c - b) + c(b + c)(b - c) \\\\\n&= (b - c)(-a^2 - ab + c(b + c)) \\\\\n&= (b - c)(-a^2 - ab + bc + c^2).\n\\end{align*}Finally, we take out a factor of $c - a$:\n\\begin{align*}\n-a^2 - ab + bc + c^2 &= (c^2 - a^2) + b(c - a) \\\\\n&= (c + a)(c - a) + b(c - a) \\\\\n&= (c - a)(a + b + c).\n\\end{align*}Thus, $p(a,b,c) = \\boxed{a + b + c}.$"
-}

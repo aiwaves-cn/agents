@@ -1,6 +1,0 @@
-{
-    "problem": "If each point of the circle $x^2 + y^2 = 25$ is reflected in the point $(4,1),$ the set of image points satisfies the equation\n\\[x^2 + ay^2 + bx + cy + d = 0.\\]Compute the ordered quadruple $(a,b,c,d)$ of real numbers.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The center of the original circle is $(0,0).$  The reflection of the point $(0,0)$ in the point $(4,1)$ is $(8,2),$ so the equation of the new circle is\n\\[(x - 8)^2 + (y - 2)^2 = 25.\\]This simplifies to $x^2 + y^2 - 16x - 4y + 43 = 0.$  Hence, $(a,b,c,d) = \\boxed{(1,-16,-4,43)}.$"
-}

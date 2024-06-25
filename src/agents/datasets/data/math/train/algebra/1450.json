@@ -1,6 +1,0 @@
-{
-    "problem": "Define the function $f(x) = 2x - 5$. For what value of $x$ is $f(x)$ equal to $f^{-1}(x)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Substituting $f^{-1}(x)$ into our expression for $f$ we get  \\[f(f^{-1}(x))=2f^{-1}(x)-5.\\]Since $f(f^{-1}(x))=x$ for all $x$ in the domain of $f^{-1}$, we have \\[x=2f^{-1}(x)-5.\\]or  \\[f^{-1}(x)=\\frac{x+5}2.\\]We want to solve the equation $f(x) = f^{-1}(x)$, so \\[2x-5=\\frac{x+5}2.\\]or \\[4x-10=x+5.\\]Solving for $x$, we find $x = \\boxed{5}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A root of unity is a complex number that is a solution to $z^n = 1$ for some positive integer $n$. Determine the number of roots of unity that are also roots of $z^2 + az + b = 0$ for some integers $a$ and $b$.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The only real roots of unity are 1 and $-1$.  If $\\omega$ is a nonreal root of unity that is also a root of the equation $z^2 + az + b$, then its conjugate $\\overline{\\omega}$ must also be a root.  Then\n\\[|a| = |\\omega + \\overline{\\omega}| \\le |\\omega| + |\\overline{\\omega}| = 2\\]and $b = \\omega \\overline{\\omega} = |\\omega|^2 = 1.$\n\nSo we only need to check the quadratic equations of the form $z^2 + az + 1 = 0,$ where $-2 \\le a \\le 2.$  This gives us the following $\\boxed{8}$ roots of unity: $\\pm 1,$ $\\pm i,$ and $\\pm \\frac{1}{2} \\pm \\frac{\\sqrt{3}}{2} i.$"
-}

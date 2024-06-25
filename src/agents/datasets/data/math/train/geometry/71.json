@@ -1,6 +1,0 @@
-{
-    "problem": "How many different isosceles triangles have integer side lengths and perimeter 23?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Because the perimeter of such a triangle is 23, and the sum of the two equal side lengths is even, the length of the base is odd. Also, the length of the base is less than the sum of the other two side lengths, so it is less than half of 23. Thus the $\\boxed{6}$ possible triangles have side lengths 1, 11, 11; 3, 10, 10; 5, 9, 9; 7, 8, 8; 9, 7, 7 and 11, 6, 6."
-}

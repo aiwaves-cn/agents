@@ -1,6 +1,0 @@
-{
-    "problem": "What is the units digit of $7^7$ when expressed as an integer?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "If we are only interested in the units digit of a product of several numbers, we may drop any digits other than units digits as they will not affect the units digit of the product.  Bringing in each factor one at a time, we find:\n\n\\begin{tabular}{r}\nThe units digit of $\\,7^1\\,$ is 7, \\\\\n$7\\times7\\,$ ends in 9, so the units digit of $\\,7^2\\,$ is 9, \\\\\n$9\\times7\\,$ ends in 3, so the units digit of $\\,7^3\\,$ is 3, \\\\\n$3\\times7\\,$ ends in 1, so the units digit of $\\,7^4\\,$ is 1, \\\\\n$1\\times7\\,$ ends in 7, so the units digit of $\\,7^5\\,$ is 7, \\\\\n$7\\times7\\,$ ends in 9, so the units digit of $\\,7^6\\,$ is 9, \\\\\n$9\\times7\\,$ ends in 3, so the units digit of $\\,7^7\\,$ is $\\,\\boxed{3}$.\n\\end{tabular}"
-}

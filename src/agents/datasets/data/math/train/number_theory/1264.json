@@ -1,6 +1,0 @@
-{
-    "problem": "What is the units digit of the sum of the nine terms of the sequence $1! + 1, \\, 2! + 2, \\, 3! + 3, \\, ..., \\, 8! + 8, \\, 9! + 9$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "For $n\\ge5$, $n!$ includes the product $2\\times5=10$, which means the units digit of $n!$ is 0 (since 0 multiplied by any number is 0). The units digits of $1!+ 2!+3!+4!$ is the units digit of $1+2+6+4=13$, which is 3. The units digit of the sum $1+2+\\ldots+9=\\frac{9(1+9)}{2}=45$ is 5. Therefore, the units digit of $(1!+1)+(2!+2)+\\ldots+(9!+9)= (1!+2!+\\ldots+9!)+(1+2+\\ldots+9)$ is $3+5=\\boxed{8}.$"
-}

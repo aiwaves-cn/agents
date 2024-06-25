@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be real numbers such that $a > 2b > 0.$  Find the minimum value of\n\\[3a^3 \\sqrt{3} + \\frac{2}{ab - 2b^2}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "First, we deal with the term $\\frac{2}{ab - 2b^2} = \\frac{2}{b(a - 2b)} = \\frac{4}{2b(a - 2b)}.$\n\nThe quadratic $2b(a - 2b),$ in $b,$ is maximized when $2b = \\frac{a}{2},$ or $b = \\frac{a}{4}.$  Thus,\n\\[\\frac{4}{2b(a - 2b)} \\ge \\frac{4}{\\frac{a}{2} \\cdot \\frac{a}{2}} = \\frac{16}{a^2}.\\]Then\n\\[3a^3 \\sqrt{3} + \\frac{2}{ab - 2b^2} \\ge 3a^3 \\sqrt{3} + \\frac{16}{a^2}.\\]By AM-GM,\n\\begin{align*}\n3a^3 \\sqrt{3} + \\frac{16}{a^2} &= \\frac{3a^3 \\sqrt{3}}{2} + \\frac{3a^3 \\sqrt{3}}{2} + \\frac{16}{3a^2} + \\frac{16}{3a^2} + \\frac{16}{3a^2} \\\\\n&\\ge 5 \\sqrt[5]{\\frac{3a^3 \\sqrt{3}}{2} \\cdot \\frac{3a^3 \\sqrt{3}}{2} \\cdot \\frac{16}{3a^2} \\cdot \\frac{16}{3a^2} \\cdot \\frac{16}{3a^2}} \\\\\n&= 20.\n\\end{align*}Equality occurs when $\\frac{3a^3 \\sqrt{3}}{2} = \\frac{16}{3a^2}$ and $b = \\frac{a}{4}.$  We can solve to get $a = \\frac{2}{\\sqrt{3}}$ and $b = \\frac{1}{2 \\sqrt{3}},$ so the minimum value is $\\boxed{20}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "When the base-$b$ number $11011_b$ is multiplied by $b-1$, then $1001_b$ is added, what is the result (written in base $b$)?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We can write out what $11011_b$ means in terms of powers of $b$: $$11011_b = b^4+b^3+b+1.$$Multiplying this by $b-1$ gives \\begin{align*}\n11011_b &= (b-1)b^4 + (b-1)b^3 + (b-1)b + (b-1) \\\\\n&= b^5 - b^4 + b^4 - b^3 + b^2 - b + b - 1 \\\\\n&= b^5 - b^3 + b^2 - 1.\n\\end{align*}Now $$1001_b = b^3 + 1,$$so when we add this to the result above, we get $b^5+b^2$, which is written in base $b$ as $\\boxed{100100}$.\n\nInstead of taking this algebraic approach, you can also think in terms of base-$b$ long arithmetic (note that each $(b-1)$ below represents a single digit): $$\\begin{array}{r *5{c@{~}}c}\n&& 1 & 1 & 0 & 1 & 1 \\\\\n\\times &&&&&& (b-1) \\\\\n\\hline\n&& (b-1) & (b-1) & 0 & (b-1) & (b-1) \\\\\n\\\\\n\\\\\n& \\stackrel{1}{\\phantom{(0)}} & \\stackrel{1}{(b-1)} & (b-1) & \\stackrel{1}{\\phantom{(}0\\phantom{)}} & \\stackrel{1}{(b-1)} & (b-1) \\\\\n+ &&& 1 & 0 & 0 & 1 \\\\\n\\hline\n& 1 & 0 & 0 & 1 & 0 & 0\n\\end{array}$$Note that no carries are needed in the multiplication step, since $b-1$ is a digit in base $b$. Carries are needed in the addition step, since $(b-1)+1=10_b$."
-}

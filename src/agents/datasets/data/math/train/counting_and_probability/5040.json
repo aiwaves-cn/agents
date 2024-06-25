@@ -1,6 +1,0 @@
-{
-    "problem": "Given that\n$\\frac 1{2!17!}+\\frac 1{3!16!}+\\frac 1{4!15!}+\\frac 1{5!14!}+\\frac 1{6!13!}+\\frac 1{7!12!}+\\frac 1{8!11!}+\\frac 1{9!10!}=\\frac N{1!18!}$\nfind the greatest integer that is less than $\\frac N{100}$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Multiplying both sides by $19!$ yields:\n\\[\\frac {19!}{2!17!}+\\frac {19!}{3!16!}+\\frac {19!}{4!15!}+\\frac {19!}{5!14!}+\\frac {19!}{6!13!}+\\frac {19!}{7!12!}+\\frac {19!}{8!11!}+\\frac {19!}{9!10!}=\\frac {19!N}{1!18!}.\\]\n\\[\\binom{19}{2}+\\binom{19}{3}+\\binom{19}{4}+\\binom{19}{5}+\\binom{19}{6}+\\binom{19}{7}+\\binom{19}{8}+\\binom{19}{9} = 19N.\\]\nRecall the Combinatorial Identity $2^{19} = \\sum_{n=0}^{19} {19 \\choose n}$. Since ${19 \\choose n} = {19 \\choose 19-n}$, it follows that $\\sum_{n=0}^{9} {19 \\choose n} = \\frac{2^{19}}{2} = 2^{18}$.\nThus, $19N = 2^{18}-\\binom{19}{1}-\\binom{19}{0}=2^{18}-19-1 = (2^9)^2-20 = (512)^2-20 = 262124$.\nSo, $N=\\frac{262124}{19}=13796$ and $\\left\\lfloor \\frac{N}{100} \\right\\rfloor =\\boxed{137}$."
-}

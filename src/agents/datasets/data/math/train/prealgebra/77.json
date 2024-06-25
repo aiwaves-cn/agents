@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ be the number of positive multiples of $6$ that are less than $30$. Let $b$ be the number of positive integers that are less than $30$, and a multiple of $3$ and a multiple of $2$. Compute $(a - b)^3$.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Let $x$ be a multiple of $6$. Then $x = 6 \\cdot n$ for some integer $n$. So $x = 2 \\cdot (3n)$ and $x = 3 \\cdot (2n)$. This means that $x$ is a multiple of $3$ and $x$ is a multiple of $2$. So multiples of $6$ must be multiples of $2$ and multiples of $3$.\n\nEvery number that is a multiple of both 2 and 3 must also be a multiple of the least common multiple of 2 and 3, which is 6.  Hence any number that is a multiple of $3$ and a multiple of $2$ is a multiple of $6$.\n\nWe have shown that the numbers that are multiples of $6$ and the numbers that are multiples of $2$ and multiples of $3$ are exactly the same numbers, since any multiple of $6$ is a multiple of $2$ and a multiple of $3$, and any number that is a multiple of $2$ and a multiple of $3$ is a multiple of $6$. So we must have $a = b$. A number minus itself is zero, so our final answer is   $$(a - b)^3 = 0^3 = \\boxed{0}.$$"
-}

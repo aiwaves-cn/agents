@@ -1,6 +1,0 @@
-{
-    "problem": "Four-digit integers are formed using the digits 2, 3, 4 and 5. Any of the digits can be used any number of times. How many such four-digit integers are palindromes? Palindromes read the same forward and backward.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "If the four-digit integer is to be a palindrome, then the third digit must be the same as the second and the fourth must be the same as the first.  So, once we choose the first two digits, we can only form the palindrome in one way. There are 4 choices for the first digit and 4 choices for the second digit, so there are $4 \\times 4 = \\boxed{16}$ such integers."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ be the smallest multiple of $11$ that is greater than $1000$ and $y$ be the greatest multiple of $11$ less than $11^2$.  Compute $x - y$.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "$1001$ is the smallest integer greater than $1000$. It also happens to be a multiple of $11$, since $1001 = 11 \\cdot 91$. So $1001$ is the smallest multiple of $11$ greater than $1000$ and thus $x = 1001$.\n\nThe greatest multiple of $11$ that is less than $11^2 = 11 \\cdot 11$ is  $$11 \\cdot (11 - 1) = 11 \\cdot 10 = 110$$Thus $y = 110$, and we compute $$x - y = 1001 - 110 = \\boxed{891}$$"
-}

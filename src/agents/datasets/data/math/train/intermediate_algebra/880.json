@@ -1,6 +1,0 @@
-{
-    "problem": "Write $x^{10} + x^5 + 1$ as the product of two polynomials with integer coefficients.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $\\omega$ satisfy $x^2 + x + 1 = 0,$ so $\\omega^2 + \\omega + 1 = 0.$  Then $(\\omega - 1)(\\omega^2 + \\omega + 1) = \\omega^3 - 1 = 0,$ so $\\omega^3 = 1.$  Also,\n\\begin{align*}\n\\omega^{10} + \\omega^5 + 1 &= \\omega^9 \\cdot \\omega + \\omega^3 \\cdot \\omega^2 + 1 \\\\\n&= \\omega + \\omega^2 + 1 \\\\\n&= 0.\n\\end{align*}Therefore, $x^2 + x + 1$ is a factor of $x^{10} + x^5 + 1.$\n\nTo bring out this factorization, we can write\n\\begin{align*}\nx^{10} + x^5 + 1 &= x^{10} - x + x^5 - x^2 + x^2 + x + 1 \\\\\n&= x(x^9 - 1) + x^2 (x^3 - 1) + x^2 + x + 1 \\\\\n&= x(x^3 - 1)(x^6 + x^3 + 1) + x^2 (x - 1)(x^2 + x + 1) + x^2 + x + 1 \\\\\n&= x(x - 1)(x^2 + x + 1)(x^6 + x^3 + 1) + x^2 (x - 1)(x^2 + x + 1) + x^2 + x + 1 \\\\\n&= \\boxed{(x^2 + x + 1)(x^8 - x^7 + x^5 - x^4 + x^3 - x + 1)}.\n\\end{align*}"
-}

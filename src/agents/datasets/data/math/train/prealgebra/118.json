@@ -1,6 +1,0 @@
-{
-    "problem": "The diagonals of a rhombus are 6 inches and 8 inches. What is the perimeter, in inches, of the rhombus below? [asy]\nimport geometry; size(150); defaultpen(linewidth(0.8));\npair A = (0,0),B = (8,6),C = (16,0),D = (8,-6), E = (8,0);\ndraw(A--B--C--D--cycle);\ndraw(A--C,StickIntervalMarker(2,2,10)); draw(B--D,StickIntervalMarker(2,1,10));\ndraw(rightanglemark(A,E,B,30));\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The rhombus is split into four congruent right triangles. Each right triangle has a leg of $\\frac{6}{2}=3$ inches and another leg of $\\frac82=4$ inches. We use the Pythagorean Theorem to solve for the length of the hypotenuse, or we recognize that $3$ and $4$ are part of the Pythagorean triple $(3,4,5)$, so the length of the hypotenuse is $5$ inches. Each side of the rhombus is $5$ inches long, so the perimeter is $4(5)=\\boxed{20}$ inches."
-}

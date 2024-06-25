@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $\\sin N = \\frac{2}{3}$ in the diagram below.  What is $LN$?\n\n\n\n[asy]\npair L,M,N;\nM = (0,0);\nN = (17.89,0);\nL = (0,16);\ndraw(L--M--N--L);\ndraw(rightanglemark(L,M,N,18));\nlabel(\"$M$\",M,SW);\nlabel(\"$N$\",N,SE);\nlabel(\"$L$\",L,NE);\nlabel(\"$16$\",L/2,W);\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $\\sin N = \\frac{2}{3}$ and $\\sin N = \\frac{LM}{LN}=\\frac{16}{LN}$, we have $\\frac{16}{LN} = \\frac{2}{3}$, so $LN = \\frac{16}{\\frac{2}{3}} = \\boxed{24}$."
-}

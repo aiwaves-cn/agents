@@ -1,6 +1,0 @@
-{
-    "problem": "Express $\\frac{37}{80}$ as a terminating decimal.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Since a terminating decimal can be written in the form of $\\frac{a}{10^b}$, where $a$ and $b$ are integers, we want to rewrite our fraction with a denominator of $10^b=2^b\\cdot5^b$. \\[ \\frac{37}{80}=\\frac{37}{2^{4}\\cdot5}\\cdot\\frac{5^{3}}{5^{3}}=\\frac{37\\cdot5^{3}}{10^{4}}=\\frac{4625}{10^{4}}=\\boxed{0.4625}. \\]"
-}

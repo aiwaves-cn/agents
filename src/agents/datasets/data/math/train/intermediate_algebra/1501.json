@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that\n\\[f((x - y)^2) = f(x)^2 - 2xf(y) + y^2\\]for all real numbers $x$ and $y.$\n\nLet $n$ be the number of possible values of $f(1),$ and let $s$ be the sum of all possible values of $f(1).$  Find $n \\times s.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $y = 0,$ we get\n\\[f(x^2) = f(x)^2 - 2xf(0).\\]Let $c = f(0),$ so $f(x^2) = f(x)^2 - 2cx.$  In particular, for $x = 0,$ $c = c^2,$ so $c = 0$ or $c = 1.$\n\nSetting $x = 0,$ we get\n\\[f(y^2) = c^2 + y^2.\\]In other words, $f(x^2) = x^2 + c^2$ for all $x.$  But $f(x^2) = f(x)^2 - 2cx,$ so\n\\[f(x)^2 - 2cx = x^2 + c^2.\\]Hence,\n\\[f(x)^2 = x^2 + 2cx + c^2 = (x + c)^2. \\quad (*)\\]Setting $y = x,$ we get\n\\[c = f(x)^2 - 2xf(x) + x^2,\\]or\n\\[f(x)^2 = -x^2 + 2xf(x) + c.\\]From $(*),$ $f(x)^2 = x^2 + 2cx + c^2,$ so $-x^2 + 2xf(x) + c = x^2 + 2cx + c^2.$  Hence,\n\\[2xf(x) = 2x^2 + 2cx = 2x (x + c).\\]So for $x \\neq 0,$\n\\[f(x) = x + c.\\]We can then extend this to say $f(x) = x + c$ for all $x.$\n\nSince $c$ must be 0 or 1, the only possible solutions are $f(x) = x$ and $f(x) = x + 1.$  We can check that both functions work.\n\nThus, $n = 2$ and $s = 1 + 2 = 3,$ so $n \\times s = \\boxed{6}.$"
-}

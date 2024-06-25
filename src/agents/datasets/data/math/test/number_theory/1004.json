@@ -1,6 +1,0 @@
-{
-    "problem": "Find the positive base $b$ in which the equation $13\\cdot15=243$ is valid.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "When we rewrite the above equation with the base numbers as sums of digit bundles we arrive at the following to work with: \\begin{align*}\n13_b\\cdot15_b&=243_b\\quad\\Rightarrow\\\\\n(b+3)(b+5)&=2b^2+4b+3\\quad\\Rightarrow\\\\\nb^2+8b+15&=2b^2+4b+3\\quad\\Rightarrow\\\\\n0&=b^2-4b-12\\quad\\Rightarrow\\\\\n0&=(b-6)(b+2).\n\\end{align*} Since $b$ must be positive, the necessary base is base $\\boxed{6}$."
-}

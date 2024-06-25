@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the point $(-4,0)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "We have that $r = \\sqrt{(-4)^2 + 0^2} = 4.$  Also, if we draw the line connecting the origin and $(-4,0),$ this line makes an angle of $\\pi$ with the positive $x$-axis.\n\n[asy]\nunitsize(0.5 cm);\n\ndraw((-5,0)--(5,0));\ndraw((0,-1)--(0,5));\ndraw(arc((0,0),4,0,180),red,Arrow(6));\n\ndot((-4,0), red);\nlabel(\"$(-4,0)$\", (-4,0), S);\ndot((4,0), red);\n[/asy]\n\nTherefore, the polar coordinates are $\\boxed{(4,\\pi)}.$"
-}

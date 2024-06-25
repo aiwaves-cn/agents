@@ -1,6 +1,0 @@
-{
-    "problem": "If\n$$\\frac{5x-7}{(x-1)^3} = \\frac{A}{x-1}+\\frac{B}{(x-1)^2}+\\frac{C}{(x-1)^3},$$find $A+B+C$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can start by multiplying both sides of the equation by $(x+1)^3$. This gives\n$$5x-7=A(x-1)^2+B(x-1)+C.$$Expanding and rearranging the right hand side gives\n$$5x-7 = Ax^2+(B-2A)x-A-B+C.$$By comparing coefficients we know that $A=0$, $B-2A=5$, and $-A-B+C=-7.$ So $B=5$ and $C=-7+5=-2$. Therefore $A+B+C=\\boxed{3}.$\n\nAlternatively, we can substitute $x = 2$ into the given equation, which gives us $A + B + C = 3$ right away."
-}

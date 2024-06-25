@@ -1,6 +1,0 @@
-{
-    "problem": "The point $(0,0)$ is reflected over the vertical line $x=1$.  When its image is then reflected over the line $y=2$, what is the resulting point?\n\nWrite your answer in the form $(x, y)$ where $x$ and $y$ are real numbers.",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "When $(0,0)$ is reflected over the line $x=1$, the image is $(2,0)$. [asy]\ndraw((-2, 0)--(6, 0), Arrow); draw((0, -2)--(0, 6), Arrow);\nlabel(\"$x$\", (6, 0), E); label(\"$y$\", (0, 6), N);\nlabel(\"$(0, 0)$\", (0, 0), SW); label(\"$(2, 0)$\", (2, 0), SE);\nlabel(\"$(2, 4)$\", (2, 4), NE);\nlabel(\"$y = 2$\", (6, 2), E); label(\"$x = 1$\", (1, -2), S);\ndraw((-2, 2)--(6, 2), dashed); draw((1, -2)--(1, 6), dashed);\ndot((0, 0)); dot((2, 0)); dot((2, 4));\n[/asy] When $(2,0)$ is reflected over the line $y=2$, the image is $\\boxed{(2,4)}$."
-}

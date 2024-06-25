@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S(n)$ equal the sum of the digits of positive integer $n$. For example, $S(1507) = 13$. For a particular positive integer $n$, $S(n) = 1274$. Which of the following could be the value of $S(n+1)$?\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 3\\qquad\\textbf{(C)}\\ 12\\qquad\\textbf{(D)}\\ 1239\\qquad\\textbf{(E)}\\ 1265$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that $n \\equiv S(n) \\pmod{9}$. This can be seen from the fact that $\\sum_{k=0}^{n}10^{k}a_k \\equiv \\sum_{k=0}^{n}a_k \\pmod{9}$. Thus, if $S(n) = 1274$, then $n \\equiv 5 \\pmod{9}$, and thus $n+1 \\equiv S(n+1) \\equiv 6 \\pmod{9}$. The only answer choice that is $6 \\pmod{9}$ is $\\boxed{1239}$."
-}

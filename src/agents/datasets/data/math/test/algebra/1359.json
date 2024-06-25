@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the geometric sequence $\\frac{16}{9}, \\frac{8}{3}, 4, 6, 9, \\ldots$. What is the eighth term of the sequence? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The common ratio between consecutive terms is $\\frac{6}{4} = \\frac{3}{2}$ (we could have chosen any two consecutive terms and divided the second one by the first to find the common ratio; we chose 4 and 6 because they seemed simple). So the $n^\\text{th}$ term of the sequence is $\\frac{16}{9} \\cdot \\left( \\frac{3}{2} \\right)^{n-1}$. Plugging in $n=8$, we get $$\n\\frac{16}{9} \\cdot \\left( \\frac{3}{2} \\right)^{7} = \\frac{2^4}{3^2} \\cdot \\frac{3^7}{2^7}\n= \\frac{3^5}{2^3}\n= \\boxed{\\frac{243}{8}}.\n$$"
-}

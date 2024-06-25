@@ -1,6 +1,0 @@
-{
-    "problem": "The three roots of the cubic $ 30 x^3 - 50x^2 + 22x - 1$ are distinct real numbers strictly between $ 0$ and $ 1$.  If the roots are $p$, $q$, and $r$, what is the sum\n\\[ \\frac{1}{1-p} + \\frac{1}{1-q} +\\frac{1}{1-r} ?\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $p,q, r$ are roots of $ 30 x^3 - 50x^2 + 22x - 1$, $ {1-p},{1-q}, {1-r} $ are roots of $ 30 (1-x)^3 - 50(1-x)^2 + 22(1-x) - 1$.\n\nIf we consider only the constant terms in the expansion of the above polynomial, we find that the constant coefficient is $30 - 50 +22 -1 = 1$.  Similarly, the linear coefficient of the above polynomial is $30(-3)+50(2)-22=-12$\n\nHence, $\\frac{1}{1-p} , \\frac{1}{1-q} ,\\frac{1}{1-r} $ are the roots of a cubic in the reversed form $1x^3-12x^2+\\dotsb$.  Using Vieta's formula,\n\\[\\frac{1}{1-p} + \\frac{1}{1-q} +\\frac{1}{1-r} = - \\frac{-12}{1} = \\boxed{12}.\\]"
-}

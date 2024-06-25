@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers $n$ are there such that $3 \\leq n \\leq 10$ and $121_n$ (the number written as $121$ in base $n$) is a perfect square?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The value of 121 base $n$ is $1\\cdot n^2+2\\cdot n^1+1\\cdot n^0=n^2+2n+1$.  Since $n^2+2n+1=(n+1)^2$, the digit string 121 is a perfect square in any base except binary (where the digit 2 is not allowed).  There are $10-3+1=\\boxed{8}$ integers between 3 and 10 inclusive."
-}

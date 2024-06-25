@@ -1,6 +1,0 @@
-{
-    "problem": "Joe wants to find all the four-letter words that begin and end with the same letter. How many combinations of letters satisfy this property?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are $26$ choices for the first letter, $26$ for the second, and $26$ for the third. The last letter is determined by the first letter. Thus, there are $26^3 = \\boxed{17576}$ such combinations."
-}

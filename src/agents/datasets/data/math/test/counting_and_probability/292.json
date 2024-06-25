@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive three-digit numbers are not multiples of 7?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "It's easy to count the number of three-digit numbers which are multiples of 7: the smallest multiple of 7 which is a three-digit number is $15 \\times 7 = 105$, and the largest multiple of 7 which is a three-digit number is $142 \\times 7 = 994$.  Therefore, there are $142-15+1 = 128$ three-digit numbers which are multiples of 7.  There are 900 three-digit numbers in total (from 100 to 999), so there are $900-128 = \\boxed{772}$ three-digit numbers which are not multiples of 7."
-}

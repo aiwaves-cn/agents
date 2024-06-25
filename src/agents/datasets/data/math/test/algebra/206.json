@@ -1,6 +1,0 @@
-{
-    "problem": "The polynomial $p(x) = x^2+ax+b$ has distinct roots $2a$ and $b$. Find $a+b$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We use the fact that the sum and product of the roots of a quadratic equation $x^2+ax+b=0$ are given by $-a$ and $b$, respectively.\n\nIn this problem, we see that $2a+b = -a$ and $(2a)(b) = b$. From the second equation, we see that either $2a = 1$ or else $b = 0$. But if $b = 0$, then the first equation gives $2a = -a$, implying that $a = 0$. This makes the two solutions of our original polynomial the same, and we are given that they are distinct. Hence $b \\not=0$, so $2a = 1,$ or $a = 1/2$. Then $b = -3a = -3/2$, so $a+b = \\boxed{-1}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x_1,$ $x_2,$ $x_3,$ $\\dots,$ $x_{100}$ be positive real numbers such that $x_1^2 + x_2^2 + x_3^2 + \\dots + x_{100}^2 = 1.$  Find the minimum value of\n\\[\\frac{x_1}{1 - x_1^2} + \\frac{x_2}{1 - x_2^2} + \\frac{x_3}{1 - x_3^2} + \\dots + \\frac{x_{100}}{1 - x_{100}^2}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $x_i < 1$ for all $i.$\n\nWe claim that\n\\[\\frac{x}{1 - x^2} \\ge \\frac{3 \\sqrt{3}}{2} x^2\\]for all $0 < x < 1.$  This is equivalent to $2x \\ge 3 \\sqrt{3} x^2 (1 - x^2) = 3x^2 \\sqrt{3} - 3x^4 \\sqrt{3},$ or\n\\[3 \\sqrt{3} x^4 - 3x^2 \\sqrt{3} + 2x \\ge 0.\\]We can factor this as\n\\[x (x \\sqrt{3} - 1)^2 (x \\sqrt{3} + 2) \\ge 0,\\]which clearly holds.  Thus,\n\\[\\frac{x}{1 - x^2} \\ge \\frac{3 \\sqrt{3}}{2} x^2.\\]It follows that\n\\[\\frac{x_1}{1 - x_1^2} + \\frac{x_2}{1 - x_2^2} + \\frac{x_3}{1 - x_3^2} + \\dots + \\frac{x_{100}}{1 - x_{100}^2} \\ge \\frac{3 \\sqrt{3}}{2} (x_1^2 + x_2^2 + x_3^2 + \\dots + x_{100}^2) = \\frac{3 \\sqrt{3}}{2}.\\]Equality occurs when $x_1 = x_2 = x_3 = \\frac{1}{\\sqrt{3}}$ and $x_4 = x_5 = \\dots = x_{100} = 0,$ so the minimum value is $\\boxed{\\frac{3 \\sqrt{3}}{2}}.$"
-}

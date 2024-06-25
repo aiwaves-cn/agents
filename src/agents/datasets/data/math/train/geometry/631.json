@@ -1,6 +1,0 @@
-{
-    "problem": "A circular sheet of paper with radius of $6$ cm is cut into three congruent sectors. What is the height of the cone in centimeters that can be created by rolling one of the sections until the edges meet? Express your answer in simplest radical form.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The circumference of the whole circle is $2 \\pi \\cdot 6 = 12 \\pi$, so the circumference of the base of the cone is $12 \\pi/3 = 4 \\pi$.  Hence, the radius of the base of the cone is $4 \\pi/(2 \\pi) = 2$.\n\n[asy]\nunitsize(2 cm);\n\nfill((0,0)--arc((0,0),1,-60,60)--cycle,gray(0.7));\ndraw(Circle((0,0),1));\ndraw((0,0)--dir(60));\ndraw((0,0)--dir(180));\ndraw((0,0)--dir(300));\nlabel(\"$6$\", dir(60)/2, NW);\n[/asy]\n\nThe slant height of the cone is 6 (the radius of the original circle), so by Pythagoras, the height of the cone is $\\sqrt{6^2 - 2^2} = \\sqrt{32} = \\boxed{4 \\sqrt{2}}$.\n\n[asy]\nunitsize(0.8 cm);\n\ndraw((-2,0)--(2,0)--(0,4*sqrt(2))--cycle);\ndraw((0,0)--(0,4*sqrt(2)));\n\nlabel(\"$2$\", (1,0), S);\nlabel(\"$6$\", (1,2*sqrt(2)), NE);\nlabel(\"$4 \\sqrt{2}$\", (0,0.7*2*sqrt(2)), W);\n[/asy]"
-}

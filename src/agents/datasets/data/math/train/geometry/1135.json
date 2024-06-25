@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $DEF$, we have $\\angle D = 25^\\circ$, $\\angle E = 90^\\circ$, and $EF = 9$.  Find $DE$ to the nearest tenth.  You may use a calculator for this problem.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "We start with a diagram:\n\n[asy]\npair D,EE,F;\n\nEE = (0,0);\nF = (8,0);\nD = (0,8*Tan(65));\ndraw(D--EE--F--D);\ndraw(rightanglemark(F,EE,D,18));\nlabel(\"$E$\",EE,SW);\nlabel(\"$F$\",F,SE);\nlabel(\"$D$\",D,N);\nlabel(\"$9$\",F/2,S);\n[/asy]\n\nWe seek $DE$, and we have $EF$ and $\\angle D$.  We can relate these three with the tangent function: \\[\\tan D = \\frac{EF}{DE},\\]so  \\[DE = \\frac{EF}{\\tan D} = \\frac{9}{\\tan D} \\approx \\boxed{19.3}.\\]"
-}

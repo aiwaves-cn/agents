@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers $n$ satisfy $(n+3)(n-7) \\le 0$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The product of two positive numbers is positive, and the product of two negative numbers is also positive. Therefore, if the product of two numbers is less than or equal to $0$, then one of the numbers must be greater than or equal to $0$ and one of the numbers must be less than or equal to $0$.\n\nIf $(n+3)(n-7)\\le 0$, then because we know $n+3\\ge n-7$, we must specifically have $n+3\\ge 0$ and $n-7\\le 0$. The first condition, $n+3\\ge 0$, is true when $n\\ge -3$. The second condition, $n-7\\le 0$, is true when $n\\le 7$. Since both conditions must be true, the only solutions are the integers from $-3$ through $7$ (inclusive). These are $$n = -3,-2,-1,0,1,2,3,4,5,6,7.$$ Counting, we see that there are $\\boxed{11}$ solutions."
-}

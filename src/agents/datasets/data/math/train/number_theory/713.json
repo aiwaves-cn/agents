@@ -1,6 +1,0 @@
-{
-    "problem": "What is the residue of $9^{2010}$, modulo 17?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We start by generating powers of 9 modulo 17. Note that we can generate $9^{2k}$ from $9^k$ by squaring $9^k$. We get \\begin{align*}\n9^1 &\\equiv 9 \\pmod{17} \\\\\n9^2 &\\equiv 13 \\pmod{17} \\\\\n9^4 &\\equiv 16 \\pmod{17} \\\\\n9^8 &\\equiv 1 \\pmod{17}.\n\\end{align*}Since $9^8 \\equiv 1$ modulo 17, we have \\begin{align*}\n9^{2010} &\\equiv 9^2 9^{2008} \\\\\n&\\equiv 9^2 (9^8)^{251} \\\\\n&\\equiv 9^2 1^{251} \\\\\n&\\equiv 9^2 \\\\\n&\\equiv \\boxed{13} \\pmod{17}.\n\\end{align*}"
-}

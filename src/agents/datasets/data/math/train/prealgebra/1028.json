@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the first seven prime numbers that have a units digit of 7.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We write out the first few numbers with a units digit of 7: \\[7, 17, 27, 37, 47, 57, 67, 77, 87, 97, 107, 117\\] Note how 7 and 17 are prime, but 27 (9 times 3) is not.  37 and 47 are prime, but 57 (3 times 19) is not.  67 is prime, but 77 (7 times 11) is not.  87 has a units sum of 15 which is divisible by 3, so 87 itself is divisible by 3 and thus is not prime.  97 and 107 are prime.  By now, we have found our desired first seven prime numbers.  Their sum is  \\begin{align*}\n7 &+ 17 + 37 + 47 + 67 + 97 + 107 \\\\\n&= 7+7+7+7+7+7+7 + 10 + 30 + 40 + 60 + 90 + 100 \\\\\n&= 7(7) + 10(1+3+4+6+9+10) \\\\\n&= 49 + 10(33)=\\boxed{379}.\n\\end{align*}"
-}

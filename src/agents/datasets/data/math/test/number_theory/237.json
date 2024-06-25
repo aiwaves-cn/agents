@@ -1,6 +1,0 @@
-{
-    "problem": "What is the modulo $6$ remainder of the sum $1+2+3+4+\\dots+98+99+100?$",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Instead of adding up the sum and finding the residue, we can find the residue of each number to make computation easier.\n\nEach group of 6 numbers would have the sum of residues $1+2+3+4+5+0 \\equiv 15 \\equiv 3 \\pmod6$.\n\nThere are $\\left\\lfloor\\frac{100}{6}\\right\\rfloor=16$ sets of $6$ numbers. This leaves the numbers $97,98,99,$ and $100$, which have the residues $1,2,3,$ and $4$. Adding together all the residues, we have $3 \\cdot 16 + 1+2+3+4 \\equiv 58 \\equiv \\boxed{4} \\pmod6$."
-}

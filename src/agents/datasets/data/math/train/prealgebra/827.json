@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $(5^7+3^6)(1^5-(-1)^4)^{10}$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Recall that $1^n=1$ for positive integers $n$ and $(-a)^n=a^n$ for even $n$. So, $1^5=1$ and $(-1)^4=1$. Thus we get  $(1^5-(-1)^4)=(1-1)=0$. Since $0^n=0$ for all positive $n$, $0^{10}=0$ and we get  $$(5^7+3^6)(1^5-(-1)^4)^{10}=(5^7+3^6)\\cdot0=\\boxed{0}.$$"
-}

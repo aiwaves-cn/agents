@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer with exactly five distinct positive factors?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Recall that we can determine the number of factors of $n$ by adding $1$ to each of the exponents in the prime factorization of $n$ and multiplying the results.  We work backwards to find the smallest positive integer with $5$ factors. Since 5 is prime, the only way for a positive integer to have 5 factors is for the only exponent in its prime factorization to be 4.  The smallest fourth power of a prime number is $2^4=\\boxed{16}$."
-}

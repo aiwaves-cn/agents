@@ -1,6 +1,0 @@
-{
-    "problem": "Segment $s_1$ has endpoints at $(1,2)$ and $(7,10)$.  Segment $s_2$ is obtained by translating $s_1$ by $3$ units to the right and $2$ units down. Find the midpoint of segment $s_2$.  Express your answer as $(a,b)$ with $a$ and $b$ integers.",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The midpoint of segment $s_1$ can be found using the midpoint formula: $\\left(\\frac{1+7}2,\\frac{2+10}2\\right)=(4,6).$  The midpoint of $s_2$ is the translation of the midpoint of $s_1$ be $3$ units to the right and $2$ units down.  Thus its coordinates are $(4+3,6-2)=\\boxed{(7,4)}.$"
-}

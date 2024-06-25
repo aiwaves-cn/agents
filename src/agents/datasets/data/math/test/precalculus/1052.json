@@ -1,6 +1,0 @@
-{
-    "problem": "Find the inverse of the matrix\n\\[\\begin{pmatrix} 5 & -4 \\\\ 0 & 1 \\end{pmatrix}.\\]If the inverse does not exist, then enter the zero matrix.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From the formula,\n\\[\\begin{pmatrix} 5 & -4 \\\\ 0 & 1 \\end{pmatrix}^{-1} = \\frac{1}{(5)(1) - (-4)(0)} \\begin{pmatrix} 1 & 4 \\\\ 0 & 5 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 1/5 & 4/5 \\\\ 0 & 1 \\end{pmatrix}}.\\]"
-}

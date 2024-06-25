@@ -1,6 +1,0 @@
-{
-    "problem": "If $(x^2 - k)(x + k) = x^3 + k(x^2 - x - 5)$ and $k\\neq 0$, what is the value of $k$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If we multiply $(x^2 - k)$ by $(x + k)$, we get $x^3 + kx^2 - kx - k^2$. We can now factor out a $k$ from the last three terms of this expression, which gives us $x^3 + k(x^2 - x - k)$. When we set this equal to the right side of the original equation $x^3 + k(x^2 -x - 5)$, we get $x^3 + k(x^2 - x - k) = x^3 + k(x^2 - x - 5)$. A careful comparison of the two sides of this equation reveals that $k$ must be 5 (consider the constant terms). Alternatively, we could multiply out both sides of the equation and get $x^3 + kx^2 - kx - k^2 = x^3 + kx^2 - kx - 5k$. The left side and the right side are the exact same when $k^2 = 5k$, so $k = \\boxed{5}$."
-}

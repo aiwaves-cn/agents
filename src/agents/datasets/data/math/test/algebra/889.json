@@ -1,6 +1,0 @@
-{
-    "problem": "A band is marching in a rectangular formation with dimensions $n-2$ and $n + 8$ (members). In the second stage of their performance, they re-arrange to form a different rectangle with dimensions $n$ and $2n - 3$, excluding all the drummers. If there are at least 4 drummers, then find the sum of all possible values of $n$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Originally, there are $(n-2)(n+8) = n^2 + 6n - 16$ members in the band. In the second formation, there are at least $4$ more than $(n)(2n-3) = 2n^2 - 3n$ members in the band. Thus, $n^2 + 6n - 16 \\ge 2n^2 - 3n + 4$, or simplifying, $$0 \\ge n^2 - 9n + 20.$$ The quadratic expression factors as $0 \\ge (n-4)(n-5)$. Thus $4 \\le n \\le 5$, and $n = 4,5$. We can verify that both values work, from which it follows that the answer is $4+5 = \\boxed{9}$."
-}

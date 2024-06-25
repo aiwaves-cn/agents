@@ -1,6 +1,0 @@
-{
-    "problem": "Find $x$ such that $\\log_x 81=\\log_2 16$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We begin by evaluating (or simplifying) the RHS of the equation. Since $2^4=16$, we know that $\\log_2 16=4$, so we have $\\log_x 81=4$. Writing this equation in exponential form, we get that $x^4=81$. This gives us the possible solutions $x=\\pm3$. However since the base of a logarithm is always positive, $x$ must equal $\\boxed{3}$."
-}

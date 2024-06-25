@@ -1,6 +1,0 @@
-{
-    "problem": "In the adjoining figure, $AB$ is a diameter of the circle, $CD$ is a chord parallel to $AB$, and $AC$ intersects $BD$ at $E$, with $\\angle AED = \\alpha$. The ratio of the area of $\\triangle CDE$ to that of $\\triangle ABE$ is\n[asy] defaultpen(fontsize(10pt)+linewidth(.8pt)); pair A=(-1,0), B=(1,0), E=(0,-.4), C=(.6,-.8), D=(-.6,-.8), E=(0,-.8/(1.6)); draw(unitcircle); draw(A--B--D--C--A); draw(Arc(E,.2,155,205)); label(\"$A$\",A,W); label(\"$B$\",B,C); label(\"$C$\",C,C); label(\"$D$\",D,W); label(\"$\\alpha$\",E-(.2,0),W); label(\"$E$\",E,N); [/asy]\n$\\textbf{(A)}\\ \\cos\\ \\alpha\\qquad \\textbf{(B)}\\ \\sin\\ \\alpha\\qquad \\textbf{(C)}\\ \\cos^2\\alpha\\qquad \\textbf{(D)}\\ \\sin^2\\alpha\\qquad \\textbf{(E)}\\ 1-\\sin\\ \\alpha$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "$ABE$ and $DCE$ are similar isosceles triangles. It remains to find the square of the ratio of their sides. Draw in $AD$. Because $AB$ is a diameter, $\\angle ADB=\\angle ADE=90^{\\circ}$. Thus,\\[\\frac{DE}{AE}=\\cos\\alpha\\]So\\[\\frac{DE^2}{AE^2}=\\boxed{\\cos^2\\alpha}\\]"
-}

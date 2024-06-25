@@ -1,6 +1,0 @@
-{
-    "problem": "Integers $a$, $b$, $c$, and $d$, not necessarily distinct, are chosen independently and at random from 0 to 2007, inclusive. What is the probability that $ad-bc$ is even?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The number $ad-bc$ is even if and only if $ad$ and $bc$ are both odd or are both even.  Each of $ad$ and $bc$ is odd if both of its factors are odd, and even otherwise. Exactly half of the integers from 0 to 2007 are odd, so  each of $ad$ and $bc$ is odd with probability $(1/2)\\cdot(1/2) = 1/4$ and are even with probability $3/4$. Hence the probability that $ad-bc$ is even is \\[\n\\frac{1}{4}\\cdot \\frac{1}{4} + \\frac{3}{4}\\cdot \\frac{3}{4} =\\boxed{\\frac{5}{8}}.\n\\]"
-}

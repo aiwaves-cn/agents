@@ -1,6 +1,0 @@
-{
-    "problem": "If $m$ is a 3-digit positive integer such that $\\mathop{\\text{lcm}}[8m,10^{10}] = 4\\cdot\\mathop{\\text{lcm}}[m,10^{10}]$, then what is the value of $m$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let $\\alpha$ be the exponent of $2$ in the prime factorization of $m$. That is, $m=2^\\alpha\\cdot t$, where $t$ is some odd integer.\n\nNote that $\\mathop{\\text{lcm}}[8m,10^{10}] = \\mathop{\\text{lcm}}[2^3m,2^{10}5^{10}]$, so the exponent of $2$ in the prime factorization of $\\mathop{\\text{lcm}}[8m,10^{10}]$ is equal to $\\max\\{3+\\alpha,10\\}$.\n\nSimilarly, the exponent of $2$ in the prime factorization of $4\\cdot\\mathop{\\text{lcm}}[m,10^{10}]$ is $2+\\max\\{\\alpha,10\\}$. Thus we have $$\\max\\{3+\\alpha,10\\} = 2+\\max\\{\\alpha,10\\},$$which is possible only if $\\alpha=9$. So, $m$ is divisible by $2^9=512$. The only 3-digit multiple of $2^9$ is $512$ itself, so $m=\\boxed{512}$."
-}

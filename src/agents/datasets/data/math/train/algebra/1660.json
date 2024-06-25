@@ -1,6 +1,0 @@
-{
-    "problem": "Expand the product ${(2x+3)(x+5)}$.",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "When using the distributive property for the first time, we add the product of $2x+3$ and $x$ to the product of $2x+3$ and 5:\n\n\\begin{align*}\n(2x+3)(x+5) &= (2x+3) \\cdot x + (2x+3) \\cdot 5\\\\\n&= x(2x+3) + 5(2x+3)\n\\end{align*}We use the distributive property again and combine like terms:\n\n\\begin{align*}\nx(2x+3) + 5(2x+3) &= 2x^2 + 3x + 10x+ 15\\\\\n&= \\boxed{2x^2 + 13x + 15}\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many perfect squares are factors of 180?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The prime factorization of 180 is $2^2\\cdot3^2\\cdot5$.  An integer is a divisor of $180$ if and only if each exponent in its prime factorization is less than or equal to the corresponding exponent in the prime factorization of 180.  An integer is a perfect square if and only if every exponent in its prime factorization is even.  Therefore, to form the prime factorization of a perfect square divisor of 180, we may take either 0 or 2 as the exponent of 2 and we may take either 0 or 2 as the exponent of 3.  Therefore, there are $\\boxed{4}$ perfect square divisors of 180: $2^0\\cdot3^0$, $2^0\\cdot3^2$, $2^2\\cdot3^0$, and $2^2\\cdot3^2$."
-}

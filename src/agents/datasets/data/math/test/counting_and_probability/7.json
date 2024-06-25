@@ -1,6 +1,0 @@
-{
-    "problem": "A 12-slice pizza was made with only pepperoni and mushroom toppings, and every slice has at least one topping. Only five slices have pepperoni, and exactly eight slices have mushrooms. How many slices have both pepperoni and mushrooms?",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "There are 12 total slices, and 5 of them have pepperoni and 8 have mushrooms. Let $n$ be the number that have both toppings. So, there are $5-n$ slices with only pepperoni and $8-n$ with only mushrooms.  So, there are a total of $n + (5-n) + (8-n)$ slices.  Since there are 12 slices, we have $(5-n) + (8-n) + n = 12$, from which we find that $n=\\boxed{1}$."
-}

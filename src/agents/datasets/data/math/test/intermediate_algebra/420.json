@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = \\sqrt{ax^2 + bx}$. For how many real values of $a$ is there at least one positive value of $b$ for which the domain of $f$ and the range of $f$ are the same set?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The domain of $f$ is $\\{x\\ |\\ ax^2 + bx\\ge 0\\}$. If $a=0$, then for every positive value of $b$, the domain and range of $f$ are each equal to the interval $[0,\\infty)$, so $0$ is a possible value of $a$.\n\nIf $a\\ne0$, the graph of $y=ax^2+bx$ is a parabola with $x$-intercepts at $x=0$ and $x=-b/a$.\n\nIf $a>0$, the domain of $f$ is $(-\\infty,-b/a] \\cup [0,\\infty)$, but the range of $f$ cannot contain negative numbers.\n\nIf $a<0$, the domain of $f$ is $[0,-b/a]$. The maximum value of $f$ occurs halfway between the $x$-intercepts, at $x=-b/2a$, and $$\nf\\left(-\\frac{b}{2a}\\right)=\\sqrt{a\\left(\\frac{b^2}{4a^2}\\right)+b\\left(-\\frac{b}{2a}\\right)}=\n\\frac{b}{2\\sqrt{-a}}.\n$$Hence, the range of $f$ is $[0,b/2\\sqrt{-a}]$. For the domain and range to be equal, we must have\n\n\\[\n-\\frac{b}{a} = \\frac{b}{2\\sqrt{-a}}\\quad \\text{so} \\quad 2\\sqrt{-a}=-a.\n\\]The only solution is $a=-4$. Thus, there are $\\boxed{2}$ possible values of $a$, and they  are $a=0$ and $a=-4$."
-}

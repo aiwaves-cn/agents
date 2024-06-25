@@ -1,6 +1,0 @@
-{
-    "problem": "For real numbers $t > 3,$ find the minimum value of\n\\[\\frac{t}{\\sqrt{t - 3}}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = \\sqrt{t - 3}.$  Then $a^2 = t - 3,$ so $t = a^2 + 3.$  Then\n\\[\\frac{t}{\\sqrt{t - 3}} = \\frac{a^2 + 3}{a} = a + \\frac{3}{a}.\\]By AM-GM,\n\\[a + \\frac{3}{a} \\ge 2 \\sqrt{3}.\\]Equality occurs when $a = \\sqrt{3},$ or $t = 6,$ so the minimum value is $\\boxed{2 \\sqrt{3}}.$"
-}

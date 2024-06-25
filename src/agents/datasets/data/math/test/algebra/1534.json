@@ -1,6 +1,0 @@
-{
-    "problem": "The two solutions of the equation $x^2+bx+18=0$ are in the ratio of $2$ to $1$ for some values of $b.$ What is the largest possible value of $b?$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "For this problem, we make use of the correspondence between sums/products of roots and coefficients of a polynomial.\n\nDenote the two roots of the equation $\\alpha$ and $\\beta$. We know that $\\alpha\\beta = 18,$ and $\\alpha/\\beta = 2 \\implies \\alpha = 2\\beta.$\n\nSo $ b = -\\alpha - \\beta = -3\\beta.$ To maximize $b,$ we want to make $\\beta$ negative and as large as possible. Given the relationship that $\\alpha = 2\\beta,$ we see that $\\beta = 3$ or $-3.$ Clearly $-3$ maximizes $b,$ and $b = \\boxed{9}.$"
-}

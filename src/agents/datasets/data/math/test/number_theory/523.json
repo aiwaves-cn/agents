@@ -1,6 +1,0 @@
-{
-    "problem": "In the addition problem  each letter represents a distinct digit. What is the numerical value of E? [asy]\nsize(50);\nlabel(\"G\",(0,0)); label(\"M\",(1,0)); label(\"M\",(2,0));\ndraw((-0.3,0.6)--(2.3,0.6));\nlabel(\"G\",(1,1)); label(\"M\",(2,1));\nlabel(\"E\",(0,2)); label(\"G\",(1,2)); label(\"M\",(2,2));\nlabel(\"+\",(0,1));\n[/asy]",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We first look at the hundreds place. Since $E\\ne G$, it must be that $E+1=G$ in order to get $G$ in the hundreds place. Since a $1$ is carried over, we have $G+G=10+M$. Now we look at the units place. Either $M+M=M$ or $M+M=10+M$. In the second case, $2M=10+M\\qquad\\Rightarrow M=10$, which is not a possible digit. So it must be that $2M=M$, which is only possible if $M=0$. Now $2G=10\\qquad\\Rightarrow G=5$ and $E+1=G\\qquad\\Rightarrow E=4$. The numerical value of $E$ is $\\boxed{4}$. We can check that $450+50=500$, which matches the digits in the addition problem."
-}

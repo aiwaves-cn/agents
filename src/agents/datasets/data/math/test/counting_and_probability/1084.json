@@ -1,6 +1,0 @@
-{
-    "problem": "A state had three letters followed by three digits as the format for license plates. In order to increase the number of plates available, the state changed the format to four letters followed by two digits. What is the positive difference between the number of plates available with the new format and the number of plates available with the old format?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "With the original format, any one of 26 letters can be used for each of the first three slots, and any one of 10 digits can be used for each of the last three. Therefore, there are $26^3 \\cdot 10^3$ license plates possible. With the new format, any one of 26 letters can be used for each of the first four slots, and any one of 10 digits can be used for each of the last two: thus, there are now $26^4 \\cdot 10^2$ license plates possible. Subtracting the two yields an answer of $26^3 \\cdot 10^2 \\cdot (26 - 10)$, which equals $\\boxed{28121600}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the smallest positive integer $n$ such that $5^n\\equiv n^5\\pmod 3$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "First notice that $5^n\\equiv 2^n\\pmod 3$, which should make our computations easier. For $n=1,2,3,4$, we get $2^n\\equiv 2,1,2,1\\pmod 3$ respectively and $n^5\\equiv 1,2,0,1\\pmod 3$ respectively. Since we have a congruent pair at $n=\\boxed{4}$, we don't need to look any further."
-}

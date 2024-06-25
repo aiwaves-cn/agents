@@ -1,6 +1,0 @@
-{
-    "problem": "The graphs of $y=x^4$ and $y=7x^2-10$ intersect at four points with $x$-coordinates $\\pm \\sqrt{m}$ and $\\pm \\sqrt{n}$, where $m > n$. What is $m-n$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "At the intersection points, the $y$-coordinates of the two graphs must be equal, so we have the equation $x^4=y=7x^2-10$, or $x^4=7x^2-10$. Putting all the terms on one side, we get $x^4-7x^2+10=0$. Factoring, we get $(x^2-2)(x^2-5)=0$, so $x^2-2=0 \\Rightarrow x=\\pm \\sqrt{2}$ or $x^2-5=0 \\Rightarrow x=\\pm \\sqrt{5}$. Thus, $m=5$ and $n=2$ and $m-n=\\boxed{3}$."
-}

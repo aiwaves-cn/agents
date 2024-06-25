@@ -1,6 +1,0 @@
-{
-    "problem": "What constant $k$ will make $y^2 + 24y + 16 + k$ the square of a binomial?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We have that $y^2 + 24y + 16 + k = (y + b)^2 = y^2 + 2by + b^2$ for some $b.$ Since $2by = 24y,$ we see that $b = 12.$ Now, expanding $(y + 12)^2$ gives us $y^2 + 24x + 144,$ so $16 + k = 144,$ so $k = \\boxed{128}.$"
-}

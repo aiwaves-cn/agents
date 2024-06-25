@@ -1,6 +1,0 @@
-{
-    "problem": "Sean adds up all the even integers from 2 to 500, inclusive. Julie adds up all the integers from 1 to 250, inclusive. What is Sean's sum divided by Julie's sum?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Note that if we factor out a 2, then Sean's sum is $2 + 4 + \\cdots + 500 = 2(1 + 2 + \\cdots + 250)$. Julie's sum is $1 + 2 + \\cdots + 250$. So Sean's sum divided by Julie's sum is $$\n\\frac{2(1 + 2 + \\cdots + 250)}{(1 + 2 + \\cdots + 250)} = \\boxed{2}.\n$$"
-}

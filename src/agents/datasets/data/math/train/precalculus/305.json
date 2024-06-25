@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be vectors, and let $\\mathbf{m}$ be the midpoint of $\\mathbf{a}$ and $\\mathbf{b}.$  Given $\\mathbf{m} = \\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix}$ and $\\mathbf{a} \\cdot \\mathbf{b} = 6,$ find $\\|\\mathbf{a}\\|^2 + \\|\\mathbf{b}\\|^2.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Since $\\mathbf{m}$ is the midpoint of $\\mathbf{a}$ and $\\mathbf{b},$\n\\[\\mathbf{m} = \\frac{\\mathbf{a} + \\mathbf{b}}{2}.\\]Hence, $\\mathbf{a} + \\mathbf{b} = 2 \\mathbf{m} = \\begin{pmatrix} 6 \\\\ 14 \\end{pmatrix}.$  Then\n\\[\\|\\mathbf{a} + \\mathbf{b}\\|^2 = \\left\\| \\begin{pmatrix} 6 \\\\ 14 \\end{pmatrix} \\right\\|^2 = 6^2  + 14^2 = 232.\\]But\n\\begin{align*}\n\\|\\mathbf{a} + \\mathbf{b}\\|^2 &= (\\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} + \\mathbf{b}) \\\\\n&= \\mathbf{a} \\cdot \\mathbf{a} + 2 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b} \\\\\n&= \\|\\mathbf{a}\\|^2 + 2 \\mathbf{a} \\cdot \\mathbf{b} + \\|\\mathbf{b}\\|^2,\n\\end{align*}so\n\\[\\|\\mathbf{a}\\|^2 + \\|\\mathbf{b}\\|^2 = \\|\\mathbf{a} + \\mathbf{b}\\|^2 - 2 \\mathbf{a} \\cdot \\mathbf{b} = 232 - 2 \\cdot 6 = \\boxed{220}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Bag A has 3 white marbles and 4 black marbles.  Bag B has 6 yellow marbles and 4 blue marbles.  Bag C has 2 yellow marbles and 5 blue marbles.  A marble is drawn at random from Bag A.  If it is white, a marble is drawn at random from Bag B, otherwise, if it is black, a marble is drawn at random from Bag C.  What is the probability that the second marble drawn is yellow?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We can get the second marble to be yellow in two ways:  either a white from A (with probability 3/7) then a yellow from B (with probability 6/10), or a black from A (with probability 4/7) then a yellow from C (with probability 2/7). Thus, the probability is \\[ \\left(\\frac{3}{7}\\times\\frac{6}{10}\\right)+\\left(\\frac{4}{7}\\times\\frac{2}{7}\\right)=\\boxed{\\frac{103}{245}}.\\]"
-}

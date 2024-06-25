@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the values of $x$ such that $\\cos^{3}3x+\\cos^{3}5x= 8\\cos^{3}4x\\cos^{3}x$, where $x$ is measured in degrees and $100 ^\\circ < x < 200^\\circ$.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The given equation implies that\n\\[\\cos^{3}3x+ \\cos^{3}5x =(2\\cos 4x\\cos x)^3,\\]and from the product-to-sum formula, $2 \\cos 4x \\cos x = \\cos 5x + \\cos 3x,$ so\n\\[\\cos^{3}3x+ \\cos^{3}5x = (\\cos5x+\\cos 3x)^3.\\]Let $a=\\cos 3x$ and $b=\\cos 5x$. Then $a^3+b^3=(a+b)^3$. Expand and simplify to obtain\n\\[3ab(a + b) = 0.\\]Thus, $a=0,$ $b=0,$ or $a+b=0$; that is, $\\cos 3x=0,$ $\\cos 5x=0,$ or $\\cos5x+\\cos3x=0$.\n\nThe solutions to $\\cos 3x = 0$ are of the form $x=30^\\circ+60^\\circ j$, where $j$ is an integer\n\nThe solutions to $\\cos 5x = 0$ are of the form $x=18^\\circ+36^\\circ k$, where $k$ is an integer.\n\nThe equation $\\cos 3x + \\cos 5x = 0$ is equivalent to\n\\[\\cos4x\\cos x=0,\\]so its solutions are of the form $x=22{1\\over2}^\\circ +45^\\circ m$ and $x=90^\\circ +180^\\circ n$, where $m$ and $n$ are integers.\n\nThe solutions in the interval $100^\\circ<x<200^\\circ$ are $150^\\circ,$ $126^\\circ,$ $162^\\circ,$ $198^\\circ,$ $112{1\\over2}^\\circ$, and $157{1\\over2}^\\circ$, and their sum is $\\boxed{906}$ (in degrees)."
-}

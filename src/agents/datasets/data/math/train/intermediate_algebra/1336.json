@@ -1,6 +1,0 @@
-{
-    "problem": "Find the quadratic function $f(x) = x^2 + ax + b$ such that\n\\[\\frac{f(f(x) + x)}{f(x)} = x^2 + 1776x + 2010.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\begin{align*}\nf(f(x) + x) &= f(x^2 + (a + 1) x + b) \\\\\n&= (x^2 + (a + 1)x + b)^2 + a(x^2 + (a + 1) x + b) + b \\\\\n&= x^4 + (2a + 2) x^3 + (a^2 + 3a + 2b + 1) x^2 + (a^2 + 2ab + a + 2b) x + (ab + b^2 + b).\n\\end{align*}We can write this as\n\\begin{align*}\n&x^4 + (2a + 2) x^3 + (a^2 + 3a + 2b + 1) x^2 + (a^2 + 2ab + a + 2b) x + (ab + b^2 + b) \\\\\n&= x^2 (x^2 + ax + b) + (a + 2) x^3 + (a^2 + 3a + b + 1) x^2 + (a^2 + 2ab + a + 2b) x + (ab + b^2 + b) \\\\\n&= x^2 (x^2 + ax + b) + (a + 2)x \\cdot (x^2 + ax + b) + (a + b + 1) x^2 + (a^2 + ab + a) x + (ab + b^2 + b) \\\\\n&= x^2 (x^2 + ax + b) + (a + 2)x \\cdot (x^2 + ax + b) + (a + b + 1)(x^2 + ax + b) \\\\\n&= (x^2 + ax + b)(x^2 + (a + 2) x + (a + b + 1)).\n\\end{align*}(The factor of $f(x) = x^2 + ax + b$ should not be surprising.  Why?)\n\nThus, we want $a$ and $b$ to satisfy $a + 2 = 1776$ and $a + b + 1 = 2010.$  Solving, we find $a = 1774$ and $b = 235,$ so $f(x) = \\boxed{x^2 + 1774x + 235}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "There are 5 blue chips and 3 yellow chips in a bag. One chip is drawn from the bag. That chip is placed back into the bag. A second chip is then drawn. What is the probability that the two selected chips are of different colors? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "If we draw a blue chip and then a yellow chip, or if we draw a yellow chip and then a blue chip, then our draws will be different colors. So, the probability is $\\frac{5}{8} \\cdot \\frac{3}{8} + \\frac{3}{8} \\cdot \\frac{5}{8} = 2 \\cdot \\frac{15}{64} = \\boxed{\\frac{15}{32}}$."
-}

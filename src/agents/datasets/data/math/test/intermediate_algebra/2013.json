@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x_1,$ $x_2,$ $\\dots,$ $x_{101}$ be positive real numbers such that $x_1^2 + x_2^2 + \\dots + x_{101}^2 = 1.$  Find the maximum value of\n\\[x_1 x_2 + x_1 x_3 + \\dots + x_1 x_{101}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By the AM-QM inequality,\n\\[\\frac{x_2 + x_3 + \\dots + x_{101}}{100} \\le \\sqrt{\\frac{x_2^2 + x_3^2 + \\dots + x_{101}^2}{100}}.\\]Then $x_2 + x_3 + \\dots + x_{101} \\le 10 \\sqrt{x_2^2 + x_3^2 + \\dots + x_{101}^2},$ so\n\\[x_1 x_2 + x_1 x_3 + \\dots + x_1 x_{101} \\le 10x_1 \\sqrt{x_2^2 + x_3^2 + \\dots + x_{101}^2} = 10x_1 \\sqrt{1 - x_1^2}.\\]By the AM-GM inequality,\n\\[x_1 \\sqrt{1 - x_1^2} \\le \\frac{x_1^2 + (1 - x_1^2)}{2} = \\frac{1}{2},\\]so $10x_1 \\sqrt{1 - x_1^2} \\le 5.$\n\nEquality occurs when $x_1 = \\frac{1}{\\sqrt{2}}$ and $x_2 = x_3 = \\dots = x_{101} = \\frac{1}{10 \\sqrt{2}},$ so the maximum value is $\\boxed{5}.$"
-}

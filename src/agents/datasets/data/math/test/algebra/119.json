@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $e$, given that $2d$ is $8$ less than $17e$, and $2e$ is $9$ less than $d$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We begin with a system of two equations \\begin{align*}\n2d&=17e-8\n\\\\2e&=d-9\n\\end{align*}Since the second equation can also be rewritten as $d=2e+9$, we can plug this expression for $d$ back into the first equation and solve for $e$ \\begin{align*}\n2d&=17e-8\n\\\\\\Rightarrow \\qquad 2(2e+9)&=17e-8\n\\\\\\Rightarrow \\qquad 4e+18&=17e-8\n\\\\\\Rightarrow \\qquad -13e&=-26\n\\\\\\Rightarrow \\qquad e&=\\boxed{2}.\n\\end{align*}"
-}

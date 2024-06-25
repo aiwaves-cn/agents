@@ -1,6 +1,0 @@
-{
-    "problem": "Find all solutions to the equation $$(z^2 - 3z + 1)^2 - 3(z^2 - 3z + 1) + 1 = z.$$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The expression $z^2-3z+1$ appears twice in the equation we're trying to solve. This suggests that we should try the substitution $y=z^2-3z+1$. Applying this to the left side of our original equation, we get\n$$y^2-3y+1=z,$$which, interestingly, looks just like the substitution we made except that the variables are reversed. Thus we have a symmetric system of equations:\n\\begin{align*}\ny &= z^2-3z+1, \\\\\ny^2-3y+1 &= z.\n\\end{align*}Adding these two equations gives us\n$$y^2-2y+1 = z^2-2z+1,$$which looks promising as each side can be factored as a perfect square:\n$$(y-1)^2 = (z-1)^2.$$It follows that either $y-1 = z-1$ (and so $y=z$), or $y-1 = -(z-1)$ (and so $y=2-z$). We consider each of these two cases.\n\nIf $y=z$, then we have $z = z^2-3z+1$, and so $0 = z^2-4z+1$. Solving this quadratic yields $z=\\frac{4\\pm\\sqrt{12}}2 = 2\\pm\\sqrt 3$.\n\nIf $y=2-z$, then we have $2-z = z^2-3z+1$, and so $2 = z^2-2z+1 = (z-1)^2$. Thus we have $z-1=\\pm\\sqrt 2$, and $z=1\\pm\\sqrt 2$.\n\nPutting our two cases together, we have four solutions in all: $z=\\boxed{1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3}$."
-}

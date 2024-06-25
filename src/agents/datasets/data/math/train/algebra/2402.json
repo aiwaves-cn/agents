@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of three different numbers is 67. The two larger numbers differ by 7 and the two smaller numbers differ by 3. What is the value of the largest number?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "$\\textbf{Solution 1}$: Let the three numbers be $a$, $b$, and $c$, and WLOG assume that $a\\le b \\le c$. We have the three equations \\begin{align*}\na+b+c&=67\\\\\nc-b&=7\\\\\nb-a&=3\n\\end{align*} From the second equation, we have $c=b+7$. Substituting this into the first equation to eliminate $c$, we have $a+b+(b+7)=67\\Rightarrow a+2b=60$. Adding this last equation to the third equation, we have $a+2b+b-a=60+3\\Rightarrow b=21$. Substituting this value into the second equation to find $c$, we get $c=b+7=28$. Thus, the largest number is $\\boxed{28}$.\n\n$\\textbf{Solution 2}$: Let the middle number be $x.$ Then, the largest number is $x+7$ and the smallest number is $x-3.$ The numbers have a sum of $67,$ so we have the equation $$(x-3) + (x) + (x+7) = 67.$$ Simplifying, we get $$3x + 4 = 67$$ $$\\implies x = 21.$$ So, the largest number is $x+7 = 21+7 = \\boxed{28}.$"
-}

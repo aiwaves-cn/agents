@@ -1,6 +1,0 @@
-{
-    "problem": "A triangle has vertices at coordinates $(1, 2), (7, 10)$ and $(1, 12)$.  What is the number of units in the length of the shortest side of the triangle?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We must find the distance between each pair of points.\n\nThe distance between $(1, 2)$ and $(1, 12)$ is simply 10, since these two points have the same $x$-coordinate.\n\nThe distance between $(1, 2)$ and $(7, 10)$ is \\[\\sqrt{(1-7)^2 + (2-10)^2} = \\sqrt{36 + 64} = 10.\\]\n\nThe distance between $(7, 10)$ and $(1, 12)$ is \\[\\sqrt{(7 - 1)^2 + (10 - 12)^2} = \\sqrt{36 + 4} = 2\\sqrt{10}.\\]\n\nOut of 10, 10, and $2\\sqrt{10}$, $2\\sqrt{10}$ is the shortest value. We know this because $\\sqrt{10} > \\sqrt{9}$, so $\\sqrt{10} > 3$, so $2\\sqrt{10} < (\\sqrt{10})^2 = 10$. Thus, the shortest side of the triangle has length $\\boxed{2\\sqrt{10}}$."
-}

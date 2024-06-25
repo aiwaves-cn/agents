@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ is an isosceles right triangle with a right angle at $A$. Segments $BD$ and $BE$ trisect angle $ABC$. What is the degree measure of angle $BDE$?\n\n[asy]draw((0,0)--(-1,0)--(-1,1)--(0,0)--cycle,linewidth(2));\ndraw((0,0)--dir(165)*1/cos(pi/12),linewidth(2));\ndraw((0,0)--dir(150)*1/cos(pi/6),linewidth(2));\ndraw((-1,.07)--(-.93,.07)--(-.93,0),linewidth(1));\n\nlabel(\"A\",(-1,0),SW);\nlabel(\"B\",(0,0),SE);\nlabel(\"C\",(-1,1),NW);\nlabel(\"D\",dir(150)*1/cos(pi/6),W);\nlabel(\"E\",dir(165)*1/cos(pi/12),W);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "From the given information, we see that $\\angle ACB = \\angle ABC = 45^\\circ$.  Thus $\\angle ABE = \\angle EBD = \\angle DBC = 15^\\circ$.  So we obtain that $\\angle ABD = 30^\\circ$, and since $\\triangle ABD$ is a right triangle, $\\angle ADB = 90-\\angle ABD = 60^\\circ$. Then, we see that $\\angle ADB = \\angle BDE,$ so we have $\\angle BDE = \\boxed{60^\\circ}.$"
-}

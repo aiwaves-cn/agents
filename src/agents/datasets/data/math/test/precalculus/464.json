@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $FGH$ with $\\angle H = 90^\\circ$, we have $FG = 17$ and $HG = 15$.  Find $\\sin G$.",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "The triangle is shown below:\n\n[asy]\npair F,G,H;\nH = (0,0);\nG = (15,0);\nF = (0,8);\ndraw(F--G--H--F);\ndraw(rightanglemark(G,H,F,20));\nlabel(\"$H$\",H,SW);\nlabel(\"$G$\",G,SE);\nlabel(\"$F$\",F,N);\nlabel(\"$17$\",(F+G)/2,NE);\nlabel(\"$15$\",G/2,S);\n[/asy]\n\nThe Pythagorean Theorem gives us $FH = \\sqrt{FG^2 - GH^2} = \\sqrt{289 - 225} = 8$, so $\\sin G = \\frac{FH}{FG} = \\boxed{\\frac{8}{17}}$."
-}

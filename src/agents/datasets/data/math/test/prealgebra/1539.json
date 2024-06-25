@@ -1,6 +1,0 @@
-{
-    "problem": "How many different primes appear in the prime factorization of $20!$ (20 factorial)? (Reminder: The number $n!$ is the product of the integers from 1 to $n$.  For example, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "When we multiply the numbers from 1 to 20, we include every prime less than 20, and no numbers with prime factors greater than 20.  So, the prime factorization of $20!$ includes all primes less than 20, and no other primes.\n\nThe primes that fit this are $\\{2,3,5,7,11,13,17,19\\}$, and there are $\\boxed{8}$ of them."
-}

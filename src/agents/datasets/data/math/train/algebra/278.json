@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest value of $t$ such that \\[\\frac{13t^2 - 34t + 12}{3t - 2 } + 5t = 6t - 1.\\]",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We might try to factor the quadratic, but unfortunately that doesn't get us anywhere.  Instead, we start by subtracting $5t$ from both sides so as to isolate the fraction. This gives us  \\[\\frac{13t^2 -34t + 12}{3t-2 } = t-1.\\]Multiplying both sides by $3t-2$ gives  \\[13t^ 2-34t + 12 = (t-1)(3t-2).\\]Expanding the right side gives $13t^2 - 34t + 12 = 3t^2 -5t+2$, so  $10t^2 -29t +10 = 0$. Factoring gives $(2t - 5)(5t-2)=0$, which has solutions $t=2/5$ and $t=5/2$.  The largest of these is $\\boxed{\\frac{5}{2}}$."
-}

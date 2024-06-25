@@ -1,6 +1,0 @@
-{
-    "problem": "Find the ordered pair $(j,k)$ that satisfies the equations $5j-42k=1$ and $2k-j=3$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We can multiply the second equation by 5, so that our equations are \\begin{align*}\n5j -42k &=1\\text{, and} \\\\\n-5j +10k &=15. \\end{align*}Summing these equations gives $-32k=16$, so $k=-16/32=-1/2$. We substitute this value for $k$ into one of the equations to solve for $j$: \\begin{align*}\n2\\left(\\frac{-1}{2}\\right)-j&=3 \\quad \\Rightarrow \\\\ j &= -4.\n\\end{align*}So the solution is $\\boxed{(-4,-\\frac{1}{2})}$."
-}

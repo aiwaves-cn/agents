@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest prime divisor of $25^2+72^2$.\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "$25^2+72^2=5^4+4\\cdot 6^4$, and we can use the Sophie Germain Identity on that to get\n\\[25^2+72^2=(5^2+2\\cdot 6^2+2\\cdot 5\\cdot 6)(5^2+2\\cdot 6^2-2\\cdot 5\\cdot 6)=157\\cdot 37.\\]\n$\\boxed{157}$ is the largest prime factor."
-}

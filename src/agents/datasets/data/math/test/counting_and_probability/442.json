@@ -1,6 +1,0 @@
-{
-    "problem": "A particular committee needs one $7^{\\mathrm{th}}$-grader and three $8^{\\mathrm{th}}$-graders. If there are four $7^{\\mathrm{th}}$-graders and six $8^{\\mathrm{th}}$-graders applying to the committee, in how many ways can the committee be filled?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{4}{1}=4$ ways to choose the 7th grader for the committee from the four 7th graders and $\\binom{6}{3}=20$ ways to choose the three 8th graders for the committee from the six 8th graders, for a total of $4\\cdot20=\\boxed{80}$ ways the committee can be filled."
-}

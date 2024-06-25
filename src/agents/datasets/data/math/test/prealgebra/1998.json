@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can I arrange four different books on a shelf?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "There are four slots in which to place four books. Think of filling each slot one at a time. For the first slot, there are four books that could be placed. Then, for the second, there are three, because one book has been placed in the first slot. For the third, there are two, and, for the fourth, one. Thus, there are $4 \\cdot 3 \\cdot 2 \\cdot 1 = \\boxed{24}$ ways to arrange the four different books."
-}

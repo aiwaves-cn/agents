@@ -1,6 +1,0 @@
-{
-    "problem": "A $120^\\circ$ rotation around the origin in the clockwise direction is applied to $4 - \\sqrt{3} + (-1 - 4 \\sqrt{3})i.$  What is the resulting complex number?",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "A $120^\\circ$ rotation around the origin in the clockwise direction corresponds to multiplication by $\\operatorname{cis} (-120)^\\circ = -\\frac{1}{2} + \\frac{\\sqrt{3}}{2} i.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A = (4 - sqrt(3),-1 - 4*sqrt(3)), B = (-8,2);\n\ndraw((-8,0)--(8,0));\ndraw((0,-8)--(0,3));\ndraw((0,0)--A,dashed);\ndraw((0,0)--B,dashed);\n\ndot(\"$4 - \\sqrt{3} + (-1 - 4 \\sqrt{3})i$\", A, S);\ndot(\"$-8 + 2i$\", B, W);\n[/asy]\n\nThus, the image of $4 - \\sqrt{3} + (-1 - 4 \\sqrt{3})i$ is\n\\[(4 - \\sqrt{3} + (-1 - 4 \\sqrt{3})i) \\left( -\\frac{1}{2} - \\frac{\\sqrt{3}}{2} i \\right) = \\boxed{-8 + 2i}.\\]"
-}

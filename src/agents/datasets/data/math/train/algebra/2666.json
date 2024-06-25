@@ -1,6 +1,0 @@
-{
-    "problem": "Find $\\left \\lceil \\frac{12}{7} \\cdot \\frac{-29}{3}\\right\\rceil - \\left\\lfloor \\frac{12}{7} \\cdot \\left \\lfloor \\frac{-29}{3}\\right \\rfloor \\right \\rfloor$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Evaluating the first term, $\\frac {12}7 \\cdot \\frac{-29}{3} = \\frac{-116}{7}$. Since $$-17 = \\frac{-119}{7} < \\frac{-116}{7} < \\frac{-112}{7} = -16,$$ the ceiling of $\\frac{-116}{7}$ is $-16$.\n\nIn the second term, since $$-10 = \\frac{-30}{3} < \\frac{-29}{3} < \\frac{-27}{3} = -9,$$ then the floor of $\\frac{-29}3$ is $-10$. The product of this with $\\frac{12}{7}$ is $\\frac{-120}{7}$. Since $$-18 = \\frac{-126}{7} < \\frac{-120}{7} < \\frac{-119}{7} = -17,$$ the floor of $\\frac{-120}{7}$ is $-18$. Hence, the answer is $-16 - (-18) = \\boxed{2}$."
-}

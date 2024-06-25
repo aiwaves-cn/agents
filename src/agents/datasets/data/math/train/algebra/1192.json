@@ -1,6 +1,0 @@
-{
-    "problem": "George has a quadratic of the form $x^2+bx+\\frac13$, where $b$ is a specific negative number. Using his knowledge of how to complete the square, George is able to rewrite this quadratic in the form $(x+m)^2+\\frac{1}{12}$. What is $b$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The expansion of $(x+m)^2+\\frac{1}{12}$ is $x^2+2mx+m^2+\\frac{1}{12}$, which has a constant term of $m^2+\\frac{1}{12}$. This constant term must be equal to the constant term of the original quadratic, so $$m^2+\\frac{1}{12} = \\frac13,$$and $$m^2 = \\frac13-\\frac{1}{12} = \\frac14.$$This yields the possibilities $m=\\frac12$ and $m=-\\frac12$.\n\nIf $m=\\frac12$, then $(x+m)^2+\\frac{1}{12} = x^2+x+\\frac14+\\frac{1}{12} = x^2+x+\\frac13$. This implies $b=1$, but we reject this possibility because we were told that $b$ is a negative number.\n\nIf $m=-\\frac12$, then $(x+m)^2+\\frac{1}{12} = x^2-x+\\frac14+\\frac{1}{12} = x^2-x+\\frac13$, giving the result $b=\\boxed{-1}$."
-}

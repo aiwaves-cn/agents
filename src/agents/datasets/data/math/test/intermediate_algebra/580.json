@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z_1$ and $z_2$ be complex numbers such that $\\frac{z_2}{z_1}$ is pure imaginary and $2z_1 \\neq 7z_2.$  Compute\n\\[\\left| \\frac{2z_1 + 7z_2}{2z_1 - 7z_2} \\right|.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $w = \\frac{z_2}{z_1}.$  Then $w$ is pure imaginary, so $\\overline{w} = -w.$\n\nWe can write\n\\[\\left| \\frac{2z_1 + 7z_2}{2z_1 - 7z_2} \\right| = \\left| \\frac{2 + 7 \\cdot \\frac{z_2}{z_1}}{2 - 7 \\cdot \\frac{z_2}{z_1}} \\right| = \\left| \\frac{2 + 7w}{2 - 7w} \\right|.\\]The conjugate of $2 + 7w$ is $\\overline{2 + 7w} = 2 + 7 \\overline{w} = 2 - 7w.$  Thus, the denominator $2 - 7w$ is the conjugate of the numerator $2 + 7w,$ which means they have the same absolute value.  Therefore,\n\\[\\left| \\frac{2 + 7w}{2 - 7w} \\right| = \\boxed{1}.\\]"
-}

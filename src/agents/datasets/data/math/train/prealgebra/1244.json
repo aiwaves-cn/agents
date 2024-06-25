@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $9\\cdot\\frac{12}{7}\\cdot \\frac{-35}{36}$.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Note that 12 and 36 have a common factor of 12. Also, 7 and 35 have a common factor of 7. Since there is one negative sign among all the factors, our result will be negative. We get \\[\n9\\cdot\\frac{12}{7}\\cdot \\frac{-35}{36}=-9\\cdot\\frac{\\cancel{12}}{\\cancel{7}}\\cdot \\frac{\\cancelto{5}{35}}{\\cancelto{3}{36}} \\quad =-\\frac{9\\cdot 5}{3}\n\\]Now, we see that 9 and 3 have a common factor of 3. So, we get \\[\n-\\frac{9\\cdot 5}{3}=-\\frac{\\cancelto{3}{9}\\cdot 5}{\\cancel{3}}=\\boxed{-15}.\n\\]"
-}

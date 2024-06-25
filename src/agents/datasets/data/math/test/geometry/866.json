@@ -1,6 +1,0 @@
-{
-    "problem": "The point  $(-3,2)$ is rotated $90^{\\circ}$ clockwise around the origin to point $B$.  Point $B$ is then reflected in the line $y=x$ to point $C$. What are the coordinates of $C$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The rotation takes $(-3,2)$ into $B=(2,3)$, and the reflection takes $B$ into $C=\\boxed{(3,2)}$.\n\n[asy]\nunitsize(0.5cm);\ndraw((-4,0)--(4,0),linewidth(0.7));\ndraw((0,-2)--(0,5),linewidth(0.7));\ndraw((-3,2)--(0,0)--(2,3),linewidth(0.7));\ndot((-3,2));\ndot((2,3));\ndot((3,2));\ndraw((0,0)--(4,4));\ndraw((2,3)--(3,2),dashed);\nlabel(\"$A$\",(-3,2),NW);\nlabel(\"$(-3,2)$\",(-3,2),SW);\nlabel(\"$B$\",(2,3),N);\nlabel(\"$(2,3)$\",(2,3),W);\nlabel(\"$C$\",(3,2),NE);\nlabel(\"$(3,2)$\",(3,2),SE);\n[/asy]"
-}

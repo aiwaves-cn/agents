@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $PQRS$ is a trapezoid with an area of $12.$ $RS$ is twice the length of $PQ.$ What is the area of $\\triangle PQS?$\n\n[asy]\ndraw((0,0)--(1,4)--(7,4)--(12,0)--cycle);\ndraw((7,4)--(0,0));\nlabel(\"$S$\",(0,0),W);\nlabel(\"$P$\",(1,4),NW);\nlabel(\"$Q$\",(7,4),NE);\nlabel(\"$R$\",(12,0),E);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Since $PQ$ is parallel to $SR,$ the height of $\\triangle PQS$ (considering $PQ$ as the base) and the height of $\\triangle SRQ$ (considering $SR$ as the base) are the same (that is, the vertical distance between $PQ$ and $SR$).\n\nSince $SR$ is twice the length of $PQ$ and the heights are the same, the area of $\\triangle SRQ$ is twice the area of $\\triangle PQS.$ In other words, the area of $\\triangle PQS$ is $\\frac{1}{3}$ of the total area of the trapezoid, or $\\frac{1}{3}\\times 12 = \\boxed{4}.$"
-}

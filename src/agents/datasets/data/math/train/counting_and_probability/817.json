@@ -1,6 +1,0 @@
-{
-    "problem": "Eight women of different heights are at a party. Each woman decides to only shake hands with women shorter than herself. How many handshakes take place?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Because the women are of different heights, any handshake will take place between two people, one of whom is taller than the other. Of course, the shorter of the two will not participate in the handshake because her handshake partner is not shorter than herself. Applying this logic to all of the pairs, there are $\\boxed{0}$ handshakes."
-}

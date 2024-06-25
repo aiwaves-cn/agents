@@ -1,6 +1,0 @@
-{
-    "problem": "The base $9$ representation of a positive integer is $AB$ and its base $7$ representation is $BA$. What is the integer expressed in base $10$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Converting the two expressions to base $10$, it follows that the given positive integer is equal to $9A + B$ and is also equal to $7B + A$. Setting these two expressions equal, we have that $$9A+B = 7B+A \\Longrightarrow 8A = 6B \\Longrightarrow 4A = 3B.$$ Thus, $B$ is divisible by $4$. Since $B$ is a digit in base $7$, it follows that $B$ is either equal to $0$ or $4$. However, we can discard the case $B = 0$, since its base $7$ representation is no longer a two-digit number. Thus, $B = 4$ and $A = 3$. In base $10$, the number is $9 \\cdot 3 + 4 = 7 \\cdot 4 + 3 = \\boxed{31}.$"
-}

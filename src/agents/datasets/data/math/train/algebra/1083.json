@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct solutions are there to the equation $|x-7| = |x+1|$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If $|x-7| = |x+1|$, then either $x-7 = x+1$ or $x-7 = -(x+1)$.  Simplifying $x-7=x+1$ gives $0=8$, which has no solutions, so no values of $x$ satisfy $x-7 = x+1$.  If $x-7 = -(x+1)$, then $x-7 = -x-1$, so $2x = 6$, which gives $x=3$.  So, there is $\\boxed{1}$ solution.\n\nChallenge: See if you can find a quick solution to this problem by simply thinking about the graphs of $y=|x-7|$ and $y=|x+1|$."
-}

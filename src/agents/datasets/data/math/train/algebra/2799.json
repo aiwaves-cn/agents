@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $x^2 + 13x + 30$ can be written as  $(x + a)(x + b),$ and the expression $x^2 + 5x - 50$ written as $(x + b)(x - c)$, where $a$, $b$, and $c$ are integers. What is the value of $a + b + c$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Factoring, we find that $x^2 + 13x + 30 = (x + 3)(x + 10)$ and $x^2 + 5x - 50 = (x + 10)(x - 5)$. We can see that $b = 10$, therefore $a = 3$ and $c = 5$, and $a + b + c = \\boxed{18}.$"
-}

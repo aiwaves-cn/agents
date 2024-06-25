@@ -1,6 +1,0 @@
-{
-    "problem": "James has 7 apples. 4 of them are red, and 3 of them are green. If he chooses 2 apples at random, what is the probability that both the apples he chooses are green?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{7}{2}=21$ total ways for James to choose 2 apples from 7, but only $\\binom{3}{2}=3$ ways for him to choose 2 green apples. So, the probability that he chooses 2 green apples is $\\frac{3}{21}=\\boxed{\\frac{1}{7}}$."
-}

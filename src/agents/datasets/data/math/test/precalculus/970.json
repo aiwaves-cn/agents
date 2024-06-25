@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $LMN$, we have $\\angle M = 90^\\circ$, $MN = 2$, and $LM = \\sqrt{21}$. What is $\\sin L$?",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "[asy]\npair L,M,N;\nN = (0,0);\nM = (2,0);\nL = (2,-sqrt(21));\ndraw(L--M--N--L);\ndraw(rightanglemark(L,M,N,10));\nlabel(\"$M$\",M,NE);\nlabel(\"$L$\",L,SE);\nlabel(\"$N$\",N,NW);\nlabel(\"$2$\",(N+M)/2,NW);\nlabel(\"$\\sqrt{21}$\",(M+L)/2,E);\n[/asy]\n\nBecause this is a right triangle, $\\sin L = \\frac{MN}{LN}.$\n\nUsing the Pythagorean Theorem, we find that $$LN = \\sqrt{MN^2 + LM^2} = \\sqrt{4 + 21} = 5.$$Then $\\sin L = \\boxed{\\frac{2}{5}}$."
-}

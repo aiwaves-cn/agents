@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of a 15-term arithmetic series with first term 7  is $-210$.  What is the common difference?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $d$ be the common difference.  Then the last term is $7 + (15-1)d = 7+14d$.  The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum of the series is \\[\\frac{7 + (7 + 14d)}{2} \\cdot 15 = 15(7d + 7) = 105d + 105.\\]We are told that this sum equals $-210$, so we have $105+105d = -210$, from which we find $d=\\boxed{-3}$.\n\nNote: $\\boxed{3}$ is also accepted as an answer."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Line $a$ is parallel to line $b$ and goes through the point $(1,2)$. Line $b$ goes through the point $(3,1)$ and is perpendicular to line $c$ whose equation is $y=-2x+3$. Find the y-intercept of line $a$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The slopes of perpendicular lines are negative reciprocals. Therefore, the slope of line $b$ is the negative reciprocal of $-2$, which is $\\frac12$. The slopes of parallel lines are the same, therefore the slope of line $a$ is also $\\frac12$. Using the point-slope formula, the equation of line $a$ is $y-2=\\frac12(x-1)$. Changing the form to slope-intercept, we get the equation $y=\\frac{x}{2}+\\frac32$. Therefore, the y-intercept is $\\boxed{\\frac32}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If the three-digit number $\\underline{2d2}$ is divisible by 7, what is $d$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Here we can use the divisibility rule for 7: drop the last digit, subtract twice its value from the number formed from the remaining digits, and check if the result is divisible by 7. (This rule isn't often used since it's not nearly as simple as the other divisibility rules, but it can still be useful!) To see how this works for the number $\\underline{2d2}$, the rule says drop the last digit (2), leaving the number $\\underline{2d}$; subtracting twice the last digit gives $\\underline{2d} - 4$. This needs to be divisible by 7, but the only multiple of 7 between $20-4=16$ and $29-4=25$ is 21, so we must have $d=\\boxed{5}$ since $25 - 4 = 21$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let\n\\[x^5 - x^2 - x - 1 = p_1(x) p_2(x) \\dotsm p_k(x),\\]where each non-constant polynomial $p_i(x)$ is monic with integer coefficients, and cannot be factored further over the integers.  Compute $p_1(2) + p_2(2) + \\dots + p_k(2).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor by pairing $x^5$ and $-x,$ and $-x^2$ and $-1$:\n\\begin{align*}\nx^5 - x^2 - x - 1 &= (x^5 - x) - (x^2 + 1) \\\\\n&= x(x^4 - 1) - (x^2 + 1) \\\\\n&= x(x^2 + 1)(x^2 - 1) - (x^2 + 1) \\\\\n&= (x^2 + 1)(x^3 - x - 1).\n\\end{align*}If $x^3 - x - 1$ factors further, then it must have a linear factor, which means it has an integer root.  By the Integer Root Theorem, the only possible integer roots are $\\pm 1,$ and neither of these work, so $x^3 - x - 1$ is irreducible.\n\nThus, $(x^2 + 1)(x^3 - x - 1)$ is the complete factorization.  Evaluating each factor at 2, we get $(2^2 + 1) + (2^3 - 2 - 1) = \\boxed{10}.$"
-}

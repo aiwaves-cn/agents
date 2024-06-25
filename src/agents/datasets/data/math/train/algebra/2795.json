@@ -1,6 +1,0 @@
-{
-    "problem": "A triangle has vertices at coordinates (2,2), (5,6) and (6,2).  What is the number of units in the length of the longest side of the triangle?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We must find the distance between each pair of points.\n\nThe distance between $(2, 2)$ and $(6, 2)$ is 4, since these two points have the same $y$-coordinate.\n\nThe distance between $(2, 2)$ and $(5, 6)$ is $\\sqrt{(5 - 2)^2 + (6 - 2)^2} = \\sqrt{9 + 16} = 5$.\n\nThe distance between $(5, 6)$ and $(6, 2)$ is $\\sqrt{(6 - 5)^2 + (2 - 6)^2} = \\sqrt{1 + 16} = \\sqrt{17}$.\n\nOut of 4, 5, and $\\sqrt{17}$, 5 is the largest value. Thus, the longest side of the triangle has length $\\boxed{5}$."
-}

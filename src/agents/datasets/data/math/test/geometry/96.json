@@ -1,6 +1,0 @@
-{
-    "problem": "If all angles are measured in degrees, the ratio of three times the measure of $\\angle A$ to four times the measure of the complement of $\\angle A$ to half the measure of the supplement of $\\angle A$ is $3:14:4$. What is the number of degrees in the measure of the complement of $\\angle A$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Let $x$ be the number of degrees in the measure of $\\angle A$.  Then we have  \\[\n\\frac{3x}{4(90-x)}=\\frac{3}{14},\n\\]from the information \"the ratio of three times the measure of $\\angle A$ to four times the measure of the complement of $\\angle A$ is $3:14$.\" Multiplying both sides by $\\frac{2}{3}$ and clearing denominators, we find $$7x=180-2x\\implies 9x=180\\implies x=20.$$The measure of the complement of 20 degrees is $\\boxed{70}$ degrees.\n\nNote: The hypothesis \"if all angles are measured in degrees'' is not necessary.  The angle is determined uniquely by the given information regardless of the units used."
-}

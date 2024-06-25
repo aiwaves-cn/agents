@@ -1,6 +1,0 @@
-{
-    "problem": "If $P(x)$ is a polynomial in $x,$ and\n\\[x^{23} + 23x^{17} - 18x^{16} - 24x^{15} + 108x^{14} = (x^4 - 3x^2 - 2x + 9) P(x)\\]for all values of $x,$ compute the sum of the coefficients of $P(x).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The sum of the coefficient is given by $P(1).$  Setting $x = 1,$ we get\n\\[90 = 5P(1),\\]so $P(1) = \\boxed{18}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The digits of a four-digit positive integer add up to 14. The sum of the two middle digits is nine, and the thousands digit minus the units digit is one. If the integer is divisible by 11, what is the integer?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let the integer be $abcd$.  We know that \\begin{align*}\na+b+c+d&=14,\\\\\nb+c&=9,\\\\\na-d&=1.\n\\end{align*} Subtracting the second equation from the first, we get $a+d=5$.  Adding this to the third equation, we get $$2a=6\\Rightarrow a=3$$ Substituting this into the third equation, we get $d=2$.\n\nNow, the fact that the integer is divisible by $11$ means that $a-b+c-d$ is divisible by $11$.  Substituting in the values for $a$ and $d$, this means that $1-b+c$ is divisible by $11$.  If this quantity was a positive or negative multiple of $11$, either $b$ or $c$ would need to be greater than $9$, so we must have $1-b+c=0$.  With the second equation above, we now have \\begin{align*}\nc-b&=-1,\\\\\nc+b&=9.\n\\end{align*} Adding these equations, we get $2c=8$, or $c=4$.  Substituting this back in, we get $b=5$.  Thus the integer is $\\boxed{3542}$."
-}

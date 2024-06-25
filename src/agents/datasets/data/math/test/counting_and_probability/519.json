@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can 4 distinct beads be placed on a bracelet that has a knot in it?  (Beads cannot slide past the knot.  Two ways are considered the same if one is a reflection of the other, since we can flip the bracelet over.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We can just treat the knot as another bead. There are $5!$ ways to place the beads and the knot on the bracelet, but we must divide by 5 for rotational symmetry (5 rotations for each arrangement), and by 2 for reflectional symmetry (we can flip the bracelet to get the same arrangement).  The answer is $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the absolute value of the difference of the solutions of $x^2-5x+5=0$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the roots of this polynomial be $r_1$ and $r_2$. Since the sum of the roots of a polynomial $ax^2+bx+c=0$ is $-\\frac{b}{a}$ and the product of the roots is $\\frac{c}{a}$, $r_1+r_2=5$ and $r_1r_2=5$. Squaring the first equation results in $r_1^2+2r_1r_2+r_2^2=25$.\n\nNotice that $(r_1-r_2)^2=r_1^2-2r_1r_2+r_2^2$, so the difference of the roots can be obtained by subtracting 4 copies of the product of the roots from the square of their sum: $r_1^2-2r_1r_2+r_2^2=r_1^2+2r_1r_2+r_2^2-4r_1r_2=25-4(5)=5$. Therefore, $|r_1-r_2|=\\boxed{\\sqrt{5}}$.\n\nWe also could have used the quadratic formula to determine that the roots are $\\dfrac{5 \\pm \\sqrt{5}}{2}$, and the positive difference of these roots is indeed $\\boxed{\\sqrt{5}}$."
-}

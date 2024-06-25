@@ -1,6 +1,0 @@
-{
-    "problem": "Find the distance between the points (0,4) and (3,0).",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We use the distance formula: $\\sqrt{(3 - 0)^2 + (0 - 4)^2} = \\sqrt{9 + 16} = \\boxed{5}$.\n\n- OR -\n\nWe note that the points $(0, 4)$, $(3, 0)$, and $(0, 0)$ form a right triangle with legs of length 3 and 4. This is a Pythagorean triple, so the hypotenuse must have length $\\boxed{5}$."
-}

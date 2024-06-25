@@ -1,6 +1,0 @@
-{
-    "problem": "The operation $*$ is defined for non-zero integers as follows: $a * b = \\frac{1}{a} + \\frac{1}{b}$. If $a+b = 9$ and $ a \\times b = 20$, what is the value of $a*b$? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Note that $a * b = \\frac{1}{a} + \\frac{1}{b} = \\frac{a + b}{ab}$. We are given that $a + b = 9$ and $ab = 20$. If we substitute these values into $\\frac{a + b}{ab}$, we can see that $a * b = \\boxed{\\frac{9}{20}}$."
-}

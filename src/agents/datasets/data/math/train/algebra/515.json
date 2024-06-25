@@ -1,6 +1,0 @@
-{
-    "problem": "An infinite geometric series has common ratio $\\frac{-1}{3}$ and sum $25.$  What is the second term of the sequence?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The second term seems difficult to calculate directly, so we will first find the value of the first term. Let the first term be $a$.  Because the sum of the series is $25,$ we have  \\[25= \\frac{a}{1-\\left(\\frac{-1}{3}\\right)} = \\frac{a}{\\frac{4}{3}} = \\frac{3a}{4}.\\]Thus, $a=\\frac{100}{3}.$ Now, we can calculate the second term knowing the value of the first. The second term $ar$ is \\[ar=\\left( \\frac{100}{3} \\right)\\left(\\frac{-1}{3}\\right)=\\boxed{\\frac{-100}{9}} .\\]"
-}

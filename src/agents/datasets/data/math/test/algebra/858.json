@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest number which is one less than twice its reciprocal?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The question is asking us to find the smallest value of $x$ such that $x = 2\\cdot\\frac{1}{x} - 1$. We multiply through by $x$ to clear the fraction, then rearrange terms: $x^2 + x - 2 = 0$. This can be factored as $(x + 2)(x - 1) = 0$. We could also use the quadratic formula to find $x$: $$x = \\frac{-1 \\pm \\sqrt{1^2 - 4(1)(-2)}}{2}.$$ Either way, we find that $x = 1$ or $x = -2$. Since we want the smallest value of $x$, our answer is $\\boxed{-2}$."
-}

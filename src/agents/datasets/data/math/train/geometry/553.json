@@ -1,6 +1,0 @@
-{
-    "problem": "The lengths of the sides of a non-degenerate triangle are $x$, 13 and 37 units. How many integer values of $x$ are possible?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "By the triangle inequality, \\begin{align*}\nx + 13 &> 37, \\\\\nx + 37 &> 13, \\\\\n13 + 37 &> x,\n\\end{align*} which tell us that $x > 24$, $x > -24$, and $x < 50$.  Hence, the possible values of $x$ are $25, 26, \\dots, 49$, for a total of $49 - 25 + 1 = \\boxed{25}$."
-}

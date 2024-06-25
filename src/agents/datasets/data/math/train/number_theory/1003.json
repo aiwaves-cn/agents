@@ -1,6 +1,0 @@
-{
-    "problem": "When the base-16 number $66666_{16}$ is written in base 2, how many base-2 digits (bits) does it have?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We have \\begin{align*}\n66666_{16} &= 6\\cdot 16^4 + 6\\cdot 16^3 + 6\\cdot 16^2 + 6\\cdot 16 + 6 \\\\\n&= 6\\cdot (16^4+16^3+16^2+16+1) \\\\\n&= 6\\cdot (2^{16}+2^{12}+2^8+2^4+1) \\\\\n&= (2^2+2)\\cdot (2^{16}+2^{12}+2^8+2^4+1) \\\\\n&= 2^{18}+2^{17}+2^{14}+2^{13}+2^{10}+2^9+2^6+2^5+2^2+2.\n\\end{align*}Actually, this is more detail than necessary; what is important is that $2^{18} \\le 66666_{16} < 2^{19}$, which tells us that the base-2 expression of this number has $\\boxed{19}$ digits or bits (with place values $2^{18},2^{17},2^{16},\\ldots,2^2,2^1,2^0$)."
-}

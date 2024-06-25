@@ -1,6 +1,0 @@
-{
-    "problem": "Four concentric circles are drawn with radii of 1, 3, 5 and 7. The inner circle is painted black, the ring around it is white, the next ring is black and the outer ring is white. What is the ratio of the black area to the white area? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The areas of the four circles are $\\pi, 9\\pi, 25\\pi$ and $49\\pi$. The areas of the two black regions are $\\pi$ and $25\\pi - 9\\pi = 16\\pi$, for a total black area of $\\pi + 16\\pi = 17\\pi$. The areas of the two white regions are $9\\pi - \\pi = 8\\pi$ and $49\\pi - 25\\pi = 24\\pi$, for a total white area of $8\\pi + 24\\pi = 32\\pi$. The ratio of the black area to the white area is $17\\pi/32\\pi = \\boxed{\\frac{17}{32}}.$"
-}

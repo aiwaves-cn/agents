@@ -1,6 +1,0 @@
-{
-    "problem": "A particle moves so that it is at $\\left( 3 \\sin \\frac{t}{4}, 3 \\cos \\frac{t}{4} \\right)$ at time $t.$  Find the speed of the particle, measured in unit of distance per unit of time.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The parametric curve $(x,y) = \\left( 3 \\sin \\frac{t}{4}, 3 \\cos \\frac{t}{4} \\right)$ describes a circle with radius 3.  Furthermore, it makes a full revolution at time $t = 8 \\pi.$\n\n[asy]\nunitsize(2 cm);\n\npair moo (real t) {\n  return (sin(t/4),cos(t/4));\n}\n\nreal t;\npath foo = moo(0);\n\nfor (t = 0; t <= 8*pi; t = t + 0.01) {\n  foo = foo--moo(t);\n}\n\ndraw((-1.2,0)--(1.2,0));\ndraw((0,-1.2)--(0,1.2));\ndraw(foo,red);\n\ndot(\"$t = 0$\", moo(0), NE);\ndot(\"$t = 2 \\pi$\", moo(2*pi), NE);\ndot(\"$t = 4 \\pi$\", moo(4*pi), SE);\ndot(\"$t = 6 \\pi$\", moo(6*pi), NW);\ndot(\"$t = 8 \\pi$\", moo(8*pi), NW);\n\nlabel(\"$3$\", (1/2,0), S);\n[/asy]\n\nTherefore, the speed of the particle is $\\frac{6 \\pi}{8 \\pi} = \\boxed{\\frac{3}{4}}.$"
-}

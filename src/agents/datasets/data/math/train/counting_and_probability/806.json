@@ -1,6 +1,0 @@
-{
-    "problem": "How many odd numbers between $100$ and $999$ have distinct digits?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The fact that the number is odd means that the last digit can only be a $1$, $3$, $5$, $7$, or $9$. So there are $5$ choices for the units digit. There are nine potential choices for the hundreds-place digit ($1$, $2$, $\\ldots$ , $9$), but we know that we've used one of these numbers for the units digit, so, since our digits must be distinct, we subtract one off for $8$ total choices for the hundreds digit. Finally, the tens-place digit can be anything from $0$ to $9$, minus the two digits we've used already, leaving $8$ choices for the tens digit. Thus, there are $5\\cdot 8 \\cdot 8 = \\boxed{320}$ such numbers."
-}

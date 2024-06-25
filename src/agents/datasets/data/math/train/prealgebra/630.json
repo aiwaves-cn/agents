@@ -1,6 +1,0 @@
-{
-    "problem": "I am playing a walking game with myself.  On move 1, I do nothing, but on move $n$ where $2 \\le n \\le 25$, I take one step forward if $n$ is prime and two steps backwards if the number is composite.  After all 25 moves, I stop and walk back to my original starting point.  How many steps long is my walk back?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We begin by counting how many prime and composite numbers there are between 2 and 25 inclusive.  The prime numbers in that range are 2, 3, 5, 7, 11, 13, 17, 19, 23, so there are 9 prime numbers.  This means that there are $24 - 9 = 15$ composite numbers.\n\nFor each of the 9 prime numbers, I take one step forward, and for each of the 15 composite numbers, I take two steps back, for a net total of $9(1)+(15)(-2)=-21$ steps forward, i.e., 21 steps backwards.  Hence after 25 moves, I am 21 steps away from my original starting point, so my walk back is $\\boxed{21}$ steps long."
-}

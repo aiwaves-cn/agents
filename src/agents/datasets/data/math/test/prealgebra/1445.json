@@ -1,6 +1,0 @@
-{
-    "problem": "At Annville Junior High School, $30\\%$ of the students in the Math Club are in the Science Club, and $80\\%$ of the students in the Science Club are in the Math Club. There are 15 students in the Science Club. How many students are in the Math Club?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Since $80\\%$ of the Science Club members are also in the Math Club, there are $0.8(15)=12$ students common to both clubs. Because $30\\%$ of the students in the Math Club are also in the Science Club, there are $12\\div 0.3=\\boxed{40}$ students in the Math Club. [asy]\n/* AMC8 1998 #14S */\nlabel(\"Math\", (0,72), SE);\nlabel(\"Science\", (60, 72), SE);\nlabel(\"$28+12=40$\", (46, 10), N);\ndraw(Circle((30,45), 20));\ndraw(Circle((57, 45), 17));\nlabel(\"28\", (30,45));\nlabel(\"3\", (57,45));\nlabel(\"12\", (44.5, 45));\n[/asy]"
-}

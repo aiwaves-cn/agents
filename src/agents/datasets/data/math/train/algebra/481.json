@@ -1,6 +1,0 @@
-{
-    "problem": "For what values of $x$ is $x^2-2x>35$? Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "After moving the constant over, we get a quadratic expression and solve for the roots: \\begin{align*}\nx^2-2x-35&>0\\quad\\Rightarrow\\\\\n(x-7)(x+5)&>0.\n\\end{align*} The quadratic expression equals 0 at $x=7$ and $x=-5$, meaning it changes sign at each root. Now we look at the sign of the quadratic when $x<-5$, when $-5<x<7$, and when $x>7$. When $x<-5$, $(x-7)$ and $(x+5)$ are both negative, so the product is positive. When $-5<x<7$, $(x+5)$ becomes positive, while $(x-7)$ remains negative - the product is negative. When $x>7$, both factors are positive, so the product is positive. So, $(x-7)(x+5)>0$ when $x<-5$ or $x>7$, which means our answer in interval notation is $\\boxed{(-\\infty, -5) \\cup (7, \\infty)}$.\n\nAlternatively, consider that the coefficient of $x^2$ is positive, so a graph of $(x-7)(x+5)=0$ would open up. When there are two distinct roots, the shape of the parabola means that product is negative when $x$ is between the roots and positive when $x$ is less than both roots or greater than both roots."
-}

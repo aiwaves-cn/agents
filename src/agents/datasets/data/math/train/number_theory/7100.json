@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p$ and $q$ be positive integers such that\\[\\frac{5}{9} < \\frac{p}{q} < \\frac{4}{7}\\]and $q$ is as small as possible. What is $q-p$?\n$\\textbf{(A) } 7 \\qquad \\textbf{(B) } 11 \\qquad \\textbf{(C) } 13 \\qquad \\textbf{(D) } 17 \\qquad \\textbf{(E) } 19$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We claim that, between any two fractions $a/b$ and $c/d$, if $bc-ad=1$, the fraction with smallest denominator between them is $\\frac{a+c}{b+d}$. To prove this, we see that\n\\[\\frac{1}{bd}=\\frac{c}{d}-\\frac{a}{b}=\\left(\\frac{c}{d}-\\frac{p}{q}\\right)+\\left(\\frac{p}{q}-\\frac{a}{b}\\right) \\geq \\frac{1}{dq}+\\frac{1}{bq},\\]which reduces to $q\\geq b+d$. We can easily find that $p=a+c$, giving an answer of $\\boxed{7}$."
-}

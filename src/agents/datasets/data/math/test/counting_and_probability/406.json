@@ -1,6 +1,0 @@
-{
-    "problem": "A drawer contains 3 white balls and 6 black balls.  Two balls are drawn out of the box at random.  What is the probability that they both are white?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{9}{2} = 36$ combinations of two balls that can be drawn.  There are $\\binom{3}{2} = 3$ combinations of two white balls that can be drawn.  So the probability that two balls pulled out are both white is $\\dfrac{3}{36} = \\boxed{\\dfrac{1}{12}}$."
-}

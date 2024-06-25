@@ -1,6 +1,0 @@
-{
-    "problem": "When $-24 + 7i$ is converted to the exponential form $re^{i \\theta}$, what is $\\cos \\theta$?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We see that $r = \\sqrt{(-24)^2 + 7^2} = \\sqrt{625} = 25$, so\n\\[-24 + 7i = 25 \\left( -\\frac{24}{25} + \\frac{7}{25} i \\right) = 25 e^{i \\theta}\\]for some angle $\\theta$.  Hence, $\\cos \\theta = \\boxed{-\\frac{24}{25}}$."
-}

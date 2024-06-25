@@ -1,6 +1,0 @@
-{
-    "problem": "In the coordinate plane, the curve $xy = 1$ intersects a circle at four points, three of which are $\\left( 2, \\frac{1}{2} \\right),$ $\\left( -5, -\\frac{1}{5} \\right),$ and $\\left( \\frac{1}{3}, 3 \\right).$  Find the fourth point of intersection.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let the equation of the circle be $(x - a)^2 + (y - b)^2 = r^2.$  From $xy = 1,$ $y = \\frac{1}{x}.$  Substituting, we get\n\\[(x - a)^2 + \\left( \\frac{1}{x} - b \\right)^2 = r^2.\\]Then\n\\[x^2 - 2ax + a^2 + \\frac{1}{x^2} - \\frac{2b}{x} + b^2 = r^2,\\]so\n\\[x^4 - 2ax^3 + (a^2 + b^2 - r^2) x^2 - 2bx + 1 = 0.\\]By Vieta's formulas, the product of the roots is 1.  Three of the roots are 2, $-5,$ and $\\frac{1}{3},$ so the fourth root is $-\\frac{3}{10}.$  Therefore, the fourth point is $\\boxed{\\left( -\\frac{3}{10}, -\\frac{10}{3} \\right)}.$"
-}

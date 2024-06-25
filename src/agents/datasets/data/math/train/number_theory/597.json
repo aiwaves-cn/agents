@@ -1,6 +1,0 @@
-{
-    "problem": "You recently bought more than 100 eggs. The eggs are sorted in containers that can store exactly 12 eggs. However, upon inspecting the containers, you realize that two containers each hold only 11 eggs, while all the other containers hold 12 eggs. What is the smallest number of eggs you could have right now?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "If the two containers that held 11 eggs each held 12 eggs, then the number of eggs that you have would have been a multiple of 12. However, two eggs were removed, so the number of eggs you can have is two less than a multiple of 12. Therefore, the number of eggs you could have can be written in the form $12c-2$, where $c$ represents the number of containers you have. As a result, we would like to solve the inequality $12c-2 > 100$, which has solution $c > 8\\frac{1}{2}$. Therefore, since the number of containers must be an integer, we must have $c=9$, so the smallest number of eggs you could have right now is $12(9) - 2 = \\boxed{106}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Of the four points $(2,2)$, $(9,11)$, $(5,7)$, and $(11,17)$, three lie on the same line. Which point is not on the line?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Consider points $P$, $Q$, and $R$. If the slope between point $P$ and point $Q$ is the same as the slope between point $Q$ and point $R$, $P$, $Q$, and $R$ are collinear. So we must find the slopes between every pair of possible points. Let us name the points: $A=(2,2)$, $B=(9,11)$, $C=(5,7)$, and $D=(11,17)$. We make a chart of all possible pairs of points and calculate the slope:\n\n\\begin{tabular}{c|c}\nPoints& Slope \\\\ \\hline\n\\vspace{0.05in} A,B&$\\frac{11-2}{9-2}=\\frac{9}{7}$\\\\ \\vspace{0.05in}\n$A,C$&$\\frac{7-2}{5-2}=\\frac{5}{3}$\\\\ \\vspace{0.05in}\n$A,D$&$\\frac{17-2}{11-2}=\\frac{15}{9}=\\frac{5}{3}$\\\\ \\vspace{0.05in}\n$B,C$&$\\frac{7-11}{5-9}=\\frac{-4}{-4}=1$\\\\ \\vspace{0.05in}\n$B,D$&$\\frac{17-11}{11-9}=\\frac{6}{2}=3$\\\\ \\vspace{0.05in}\n$C,D$&$\\frac{17-7}{11-5}=\\frac{10}{6}=\\frac{5}{3}$\n\\end{tabular}As we can see, the slopes between $A$ and $C$, $A$ and $D$, and $C$ and $D$ are the same, so $A$, $C$, and $D$ lie on a line, Thus $B$, or the point $\\boxed{(9,11)}$, is not on the line."
-}

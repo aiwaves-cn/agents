@@ -1,6 +1,0 @@
-{
-    "problem": "If we express $-2x^2 + 4x + 5$ in the form $a(x - h)^2 + k$, then what is $k$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We complete the square.  First, we factor $-2$ out of the terms $-2x^2 + 4x$ to get $-2(x^2 - 2x)$.  We can square $x - 1$ to get $x^2 - 2x + 1$, so $-2(x^2 - 2x) = -2[(x - 1)^2 - 1] = -2(x - 1)^2 + 2$, and \\[-2(x^2 - 2x) + 5 = -2(x - 1)^2 + 2 + 5 = -2(x - 1)^2 + 7.\\]We see that $k = \\boxed{7}$."
-}

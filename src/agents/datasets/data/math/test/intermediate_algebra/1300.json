@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be positive real numbers.  Find the minimum value of\n\\[(a + b + c + d) \\left( \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} \\right).\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[a + b + c + d \\ge 4 \\sqrt[4]{abcd},\\]and\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} \\ge 4 \\sqrt[4]{\\frac{1}{abcd}},\\]so\n\\[(a + b + c + d) \\left( \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} \\right) \\ge 4 \\sqrt[4]{abcd} \\cdot 4 \\sqrt[4]{\\frac{1}{abcd}} = 16.\\]Equality occurs when $a = b = c = d,$ so the minimum value is $\\boxed{16}.$"
-}

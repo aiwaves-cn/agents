@@ -1,6 +1,0 @@
-{
-    "problem": "In a triangle with side lengths 5, 6 and $x$, what is the sum of all possible integral values of $x$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Using the Triangle Inequality, we see that $x > 1$ and $x < 11,$ so $x$ can be any integer from $2$ to $10,$ inclusive. The sum can be calculated in several ways, but regardless, $2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = \\boxed{54}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $\\overline{abcd}$ is a four-digit integer with no digits equal to zero such that $\\overline{ab}$, $\\overline{bc}$, and $\\overline{cd}$ are distinct integers that each divide into $\\overline{abcd}$. Find the smallest possible value of $\\overline{abcd}$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $\\overline{ab} | \\overline{abcd} = 100 \\cdot \\overline{ab} + \\overline{cd}$, then $\\overline{ab}$ also divides into $\\overline{abcd} - 100 \\cdot \\overline{ab} = \\overline{cd}$. Similarly, since $\\overline{cd} | \\overline{abcd} = 100 \\cdot \\overline{ab} + \\overline{cd}$, then $\\overline{cd}$ must divide into $\\overline{abcd} - \\overline{cd} = 100 \\cdot \\overline{ab}$. To minimize $\\overline{abcd}$, then we would like to try $a = b = 1$. It follows that $\\overline{cd}$ is divisible by $11$, and also divides into $100 \\cdot \\overline{ab} = 1100$. Thus, $\\overline{cd} = 11,22,44,55$, but we can eliminate the first due to the distinctness condition. Trying each of the others, we see that $1122 = 2 \\cdot 3 \\cdot 11 \\cdot 17$ is not divisible by $12$; $1144 = 2^3 \\cdot 11 \\cdot 13$ is not divisible by $14$; and $\\boxed{1155} = 3 \\cdot 5 \\cdot 7 \\cdot 11$ is indeed divisible by $15$."
-}

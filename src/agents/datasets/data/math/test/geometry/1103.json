@@ -1,6 +1,0 @@
-{
-    "problem": "In convex hexagon $ABCDEF$, all six sides are congruent, $\\angle A$ and $\\angle D$ are right angles, and  $\\angle B$, $\\angle C$, $\\angle E$, and $\\angle F$ are congruent. The area of the hexagonal region is $2116(\\sqrt2+1)$. Find $AB$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Because $\\angle\nB$, $\\angle C$, $\\angle E$, and $\\angle F$ are congruent, the degree-measure of each of them is $\\displaystyle\n{{720-2\\cdot90}\\over4}= 135$. Lines $BF$ and $CE$ divide the hexagonal region into two right triangles and a rectangle. Let $AB=x$. Then $BF=x\\sqrt2$. Thus  \\begin{align*}\n2116(\\sqrt2+1)&=[ABCDEF]\\\\\n&=2\\cdot {1\\over2}x^2+x\\cdot x\\sqrt2=x^2(1+\\sqrt2),\n\\end{align*}so $x^2=2116$, and $x=\\boxed{46}$.\n\n[asy]\npair A,B,C,D,I,F;\nA=(0,0);\nB=(7,0);\nF=(0,7);\nI=(6,13);\nD=(13,13);\nC=(13,6);\ndot(A);\ndot(B);\ndot(C);\ndot(D);\ndot(I);\ndot(F);\ndraw(A--B--C--D--I--F--cycle,linewidth(0.7));\nlabel(\"{\\tiny $A$}\",A,S);\nlabel(\"{\\tiny $B$}\",B,S);\nlabel(\"{\\tiny $C$}\",C,E);\nlabel(\"{\\tiny $D$}\",D,N);\nlabel(\"{\\tiny $E$}\",I,N);\nlabel(\"{\\tiny $F$}\",F,W);\n[/asy]"
-}

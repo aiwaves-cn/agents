@@ -1,6 +1,0 @@
-{
-    "problem": "If two lines $l$ and $m$ have equations $y = -x + 6$, and $y = -4x + 6$, what is the probability that a point randomly selected in the 1st quadrant and below $l$ will fall between $l$ and $m$? Express your answer as a decimal to the nearest hundredth.\n\n[asy]\nimport cse5; import olympiad;\nsize(150);\nadd(grid(8,8));\ndraw((0,0)--(8,0),linewidth(1.2));\ndraw((0,0)--(0,8),linewidth(1.2));\nlabel(\"$x$\",(8,0),E);\nlabel(\"$y$\",(0,8),N);\ndraw((6,0)--(0,6)--(3/2,0));\nlabel(\"$l$\",(6,0)--(0,6),NE);\nlabel(\"$m$\",(0,6)--(3/2,0),NE);\n[/asy]",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We first find the areas of the triangles under $l$ and $m$ and in the first quadrant. From $l$'s equation, we find that at $x = 6$, $y = 0$. From $m$, we find that at $x = \\frac{3}{2}$, we find that $y = 0$.\n\nWe then find the areas using the formula for a triangle: $\\frac{1}{2}bh$. The area under $l$ is $\\frac{1}{2}(6\\times 6) = 18$. The area under $m$ is $\\frac{1}{2}\\left(\\frac{3}{2}\\times 6\\right) = \\frac{9}{2}$. Thus, the probability that the point selected will fall between $l$ and $m$ has probability $\\frac{18 - \\frac{9}{2}}{18} = \\frac{27/2}{18} = \\frac{3}{4} = 0.75$. Thus, the probability is $\\boxed{0.75}$."
-}

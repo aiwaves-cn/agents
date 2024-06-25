@@ -1,6 +1,0 @@
-{
-    "problem": "Find $s$ given that \\[3 \\log_2 s = \\log_2 (3s).\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By logarithm identities, we have \\[\\log_2 (s^3) = \\log_2 (3s).\\]Thus, $s^3 = 3s$, and since $s$ must be positive, we can divide by $s$ to get $s^2 = 3.$ Thus, $s = \\boxed{\\sqrt{3}}.$"
-}

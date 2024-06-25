@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $f(x) = x^k$ where $k < 0$, what is the range of $f(x)$ on the interval $[1, \\infty)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We are looking at the range of $f(x)$ when $x$ is in the interval $[1,\\infty)$. Because $k < 0$, $f(x)$ is decreasing on the interval $[1, \\infty)$. We see that $f(1) = 1^k = 1$, and as $x$ increases, $f(x) = x^k$ approaches 0, but never reaches it.  Hence, on the interval $[1,\\infty)$, $f(x)$ takes on all values between 0 (exclusive) and 1 inclusive, which means the range of $f(x)$ is $\\boxed{(0,1]}$."
-}

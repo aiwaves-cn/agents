@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate\n\\[\\prod_{n = 1}^{2004} \\frac{n^2 + 2n - 1}{n^2 + n + \\sqrt{2} - 2}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can apply difference of squares to the numerator:\n\\[n^2 + 2n - 1 = (n + 1)^2 - 2 = (n + 1 + \\sqrt{2})(n + 1 - \\sqrt{2}).\\]We can also factor the denominator:\n\\[n^2 + n + \\sqrt{2} - 2 = (n + \\sqrt{2}) + (n^2 - 2) = (n + \\sqrt{2}) + (n + \\sqrt{2})(n - \\sqrt{2}) = (n + \\sqrt{2})(n - \\sqrt{2} + 1).\\]Hence,\n\\[\\frac{n^2 + 2n - 1}{n^2 + n + \\sqrt{2} - 2} = \\frac{(n + 1 + \\sqrt{2})(n + 1 - \\sqrt{2})}{(n + \\sqrt{2})(n - \\sqrt{2} + 1)} = \\frac{n + 1 + \\sqrt{2}}{n + \\sqrt{2}}.\\]Therefore,\n\\begin{align*}\n\\prod_{n = 1}^{2004} \\frac{n^2 + 2n - 1}{n^2 + n + \\sqrt{2} - 2} &= \\prod_{n = 1}^{2004} \\frac{n + 1 + \\sqrt{2}}{n + \\sqrt{2}} \\\\\n&= \\frac{2 + \\sqrt{2}}{1 + \\sqrt{2}} \\cdot \\frac{3 + \\sqrt{2}}{2 + \\sqrt{2}} \\cdot \\frac{4 + \\sqrt{2}}{3 + \\sqrt{2}} \\dotsm \\frac{2005 + \\sqrt{2}}{2004 + \\sqrt{2}} \\\\\n&= \\frac{2005 + \\sqrt{2}}{1 + \\sqrt{2}} \\\\\n&= \\frac{(2005 + \\sqrt{2})(\\sqrt{2} - 1)}{(1 + \\sqrt{2})(\\sqrt{2} - 1)} \\\\\n&= \\frac{2004 \\sqrt{2} - 2003}{1} \\\\\n&= \\boxed{2004 \\sqrt{2} - 2003}.\n\\end{align*}"
-}

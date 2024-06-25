@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be distinct complex numbers such that\n\\[\\frac{a}{1 - b} = \\frac{b}{1 - c} = \\frac{c}{1 - a} = k.\\]Find the sum of all possible values of $k.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equation,\n\\begin{align*}\na &= k(1 - b), \\\\\nb &= k(1 - c), \\\\\nc &= k(1 - a).\n\\end{align*}Then\n\\begin{align*}\na &= k(1 - b) \\\\\n&= k(1 - k(1 - c)) \\\\\n&= k(1 - k(1 - k(1 - a))).\n\\end{align*}Expanding, we get $ak^3 + a - k^3 + k^2 - k = 0,$ which factors as\n\\[(k^2 - k + 1)(ak + a - k) = 0.\\]If $ak + a - k = 0,$ then $a = \\frac{k}{k + 1},$ in which case $b = c = \\frac{k}{k + 1}.$  This is not allowed, as $a,$ $b,$ and $c$ are distinct, so $k^2 - k + 1 = 0.$  The sum of the roots is $\\boxed{1}.$\n\nNote: The roots of $k^2 - k + 1 = 0$ are\n\\[\\frac{1 \\pm i \\sqrt{3}}{2}.\\]For either value of $k,$ we can take $a = 0,$ $b = 1,$ and $c = k.$"
-}

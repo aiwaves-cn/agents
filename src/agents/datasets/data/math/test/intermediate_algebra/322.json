@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the sum of all possible values for $x,$ where $(x, y)$ is a solution to the system of equations \\[\\begin{aligned} x &= y^2 - 6y + 5, \\\\ y &= |x|. \\end{aligned}\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $y = |x|,$ either $x = y$ (if $x \\ge 0$) or $x = -y$ (if $x < 0$). In the first case, substituting into the first equation, we get $y = y^2-6y+5,$ or \\[0 = y^2-7y+5.\\]This equation has the roots \\[y = \\frac{7 \\pm \\sqrt{7^2 - 4 \\cdot 5}}{2} = \\frac{7 \\pm \\sqrt{29}}{2},\\]which are both positive and have a sum of $7.$ Since $x=y$ in this case, the sum of the possible values of $x$ is also $7.$\n\nIn the second case, substituting into the first equation, we get $-y = y^2-6y+5,$ or \\[0 = y^2 - 5y + 5.\\]This equation has the roots \\[y = \\frac{5 \\pm \\sqrt{5^2 - 4 \\cdot 5}}{2} = \\frac{5 \\pm \\sqrt{5}}{2},\\]which are both positive and have a sum of $5.$ Since $x=-y$ in this case, the sum of the possible values of $x$ is $-5.$\n\nWe conclude that the sum of all possible values for $x$ is $7 + (-5) = \\boxed{2}.$"
-}

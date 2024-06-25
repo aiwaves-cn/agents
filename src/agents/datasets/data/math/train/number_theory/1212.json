@@ -1,6 +1,0 @@
-{
-    "problem": "To express 20 as a sum of different powers of 2, we would write $20 = 2^4 + 2^2$. The sum of the exponents of these powers is $4 + 2 = 6$. If 400 were expressed as a sum of at least two distinct powers of 2, what would be the least possible sum of the exponents of these powers?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "By the uniqueness of the binary representation of positive integers, there is only one way to represent 400 as a sum of distinct powers of $2$.  To find this representation, we convert 400 to binary form.  The largest power of $2$ less than 400 is $2^8=256$.  The difference between 400 and 256 is 144. The largest power of 2 less than 144 is $2^7=128$.  The difference between 144 and 128 is 16.  Since $16=2^4$, we have found that $400=2^8+2^7+2^4$.  The sum of the exponents of 2 in this representation is $\\boxed{19}$."
-}

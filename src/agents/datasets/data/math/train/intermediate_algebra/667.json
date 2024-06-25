@@ -1,6 +1,0 @@
-{
-    "problem": "The value of\n\\[\\frac{n}{2} + \\frac{18}{n}\\]is smallest for which positive integer $n$?",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[\\frac{n}{2} + \\frac{18}{n} \\ge 2 \\sqrt{\\frac{n}{2} \\cdot \\frac{18}{n}} = 6.\\]Equality occurs when $\\frac{n}{2} = \\frac{18}{n} = 3,$ which leads to $n = \\boxed{6}.$"
-}

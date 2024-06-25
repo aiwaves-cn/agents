@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers $n$ satisfy $200 < n^2 < 900$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since $f(n)=n^2$ is a monotonically increasing function (on the set of positive integers), we can find the least and greatest integer solutions and count the integers between them.  Since $14^2=196$ and $15^2=225$, $n=15$ is the smallest solution.  Since $30^2=900$, $n=29$ is the largest solution.  There are $29-15+1=\\boxed{15}$ integers between 15 and 29 inclusive."
-}

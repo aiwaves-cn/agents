@@ -1,6 +1,0 @@
-{
-    "problem": "This circle passes through the points $(-1, 2)$, $(3,0)$ and $(9,0)$. The center of the circle is at $(h,k)$. What is the value of $h+k$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The center of the circle must lie on the perpendicular bisector of the points $(3,0)$ and $(9,0),$ which is the line $x = 6,$ so $h = 6.$  Thus, the center of the circle is $(6,k).$\n\nThis point must be equidistant to $(-1,2)$ and $(3,0),$ so\n\\[7^2 + (k - 2)^2 = 9 + k^2.\\]This gives us $k = 11.$  Hence, $h + k = 6 + 11 = \\boxed{17}.$"
-}

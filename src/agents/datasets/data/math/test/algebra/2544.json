@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest three-digit number \"abc'' such that $4,a,b$ forms a geometric sequence and $b,c,5$ forms an arithmetic sequence?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The three-digit number $abc$ is maximized when $a$ is maximized, and $a$ is maximized when $b$ is maximized, since 4, $a$, $b$ is a geometric sequence.  The largest digit is 9, so we'd like to find a digit $a$ such that 4, $a$, 9 is a geometric sequence.  The condition that 4, $a$, 9 is a geometric sequence is equivalent to $\\frac{9}{a}=\\frac{a}{4}$, which by clearing denominators is equivalent to $36=a^2$, which has solutions $a=\\pm 6$.  One of these solutions is a digit, so $a=6$ and $b=9$ are the maximum values of $a$ and $b$.  If $b$, $c$, 5 is an arithmetic sequence, then the $c$ equals the average of $b$ and $5$, which is $(9+5)/2=7$.  So, $abc=\\boxed{697}$."
-}

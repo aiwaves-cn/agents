@@ -1,6 +1,0 @@
-{
-    "problem": "A regular octagon $ABCDEFGH$ has sides of length two. Find the area of $\\bigtriangleup ADG$. Express your answer in simplest radical form.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Construct the right triangle $\\bigtriangleup AOB$ as shown in the figure. Since $AB=2$, we have $AO=\\sqrt{2}$ and $AD=2+2\\sqrt{2}$. Similarly, we have $OG=2+\\sqrt{2}$, so \\begin{align*}\n\\text{Area}(\\bigtriangleup ADG)&=\\frac{1}{2}(2+2\\sqrt{2})(2+\\sqrt{2})\\\\&=(1+\\sqrt{2})(2+\\sqrt{2})=\\boxed{4+3\\sqrt{2}}.\n\\end{align*} [asy]\nunitsize(1.75cm);\npair A,B,C,D,I,F,G,H,K;\nA=(0,0);\nB=(1,1);\nK=(1,0);\nC=(2.41,1);\nD=(3.41,0);\nI=(3.41,-1.41);\nF=(2.41,-2.41);\nG=(1,-2.41);\nH=(0,-1.41);\nlabel(\"2\",(1.7,1),N);\nlabel(\"2\",(1.7,0),N);\nlabel(\"2\",(1,-0.7),E);\nlabel(\"$\\sqrt{2}$\",(0.5,0),N);\nlabel(\"$\\sqrt{2}$\",(2.91,0),N);\nlabel(\"$\\sqrt{2}$\",(1,-1.7),E);\ndraw(A--B--C--D--I--F--G--H--cycle);\ndraw(A--D--G--cycle);\ndraw(H--I);\ndraw(B--G);\ndraw(C--F);\nlabel(\"$O$\",K,NE);\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,N);\nlabel(\"$C$\",C,N);\nlabel(\"$D$\",D,E);\nlabel(\"$E$\",I,E);\nlabel(\"$F$\",F,S);\nlabel(\"$G$\",G,S);\nlabel(\"$H$\",H,W);\n[/asy]"
-}

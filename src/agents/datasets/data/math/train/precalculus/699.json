@@ -1,6 +1,0 @@
-{
-    "problem": "Let point $O$ be the origin of a three-dimensional coordinate system, and let points $A,$ $B,$ and $C$ be located on the positive $x,$ $y,$ and $z$ axes, respectively.  If $OA = \\sqrt[4]{75}$ and $\\angle BAC = 30^\\circ,$ then compute the area of triangle $ABC.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Let $b = OB$ and $c = OC.$\n\n[asy]\nimport three;\n\nsize(250);\ncurrentprojection = perspective(6,3,2);\n\ntriple A, B, C, O;\n\nA = (3,0,0);\nB = (0,4,0);\nC = (0,0,2);\nO = (0,0,0);\n\ndraw(O--(5,0,0));\ndraw(O--(0,5,0));\ndraw(O--(0,0,3));\ndraw(A--B--C--cycle);\n\nlabel(\"$A$\", A, S);\nlabel(\"$B$\", B, S);\nlabel(\"$C$\", C, NW);\nlabel(\"$O$\", O, S);\nlabel(\"$b$\", (O + B)/2, N);\nlabel(\"$c$\", (O + C)/2, E);\n[/asy]\n\nBy the Law of Cosines on triangle $ABC,$\n\\begin{align*}\nBC^2 &= AB^2 + AC^2 - 2 \\cdot AC \\cdot AB \\cos \\angle BAC \\\\\n&= AC^2 + AB^2 - AB \\cdot AC \\sqrt{3}.\n\\end{align*}From Pythagoras,\n\\[b^2 + c^2 = c^2 + \\sqrt{75} + b^2 + \\sqrt{75} - AB \\cdot AC \\sqrt{3},\\]which gives us $AB \\cdot AC = 10.$\n\nThen the area of triangle $ABC$ is\n\\[\\frac{1}{2} \\cdot AB \\cdot AC \\sin \\angle BAC = \\frac{1}{2} \\cdot 10 \\cdot \\frac{1}{2} = \\boxed{\\frac{5}{2}}.\\]"
-}

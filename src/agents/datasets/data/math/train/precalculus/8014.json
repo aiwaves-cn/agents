@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the values of $x$ such that $\\cos^3 3x+ \\cos^3 5x = 8 \\cos^3 4x \\cos^3 x$, where $x$ is measured in degrees and $100< x< 200.$\n",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Observe that $2\\cos 4x\\cos x = \\cos 5x + \\cos 3x$ by the sum-to-product formulas. Defining $a = \\cos 3x$ and $b = \\cos 5x$, we have $a^3 + b^3 = (a+b)^3 \\rightarrow ab(a+b) = 0$. But $a+b = 2\\cos 4x\\cos x$, so we require $\\cos x = 0$, $\\cos 3x = 0$, $\\cos 4x = 0$, or $\\cos 5x = 0$.\nHence we see by careful analysis of the cases that the solution set is $A = \\{150, 126, 162, 198, 112.5, 157.5\\}$ and thus $\\sum_{x \\in A} x = \\boxed{906}$."
-}

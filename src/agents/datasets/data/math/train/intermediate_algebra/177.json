@@ -1,6 +1,0 @@
-{
-    "problem": "Solve the inequality\n\\[\\dfrac{x+1}{x+2}>\\dfrac{3x+4}{2x+9}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "From the given inequality,\n\\[\\frac{x + 1}{x + 2} - \\frac{3x + 4}{2x + 9} > 0,\\]which simplifies to\n\\[-\\frac{x^2 - x - 1}{(x + 2)(2x + 9)} > 0,\\]or\n\\[\\frac{x^2 - x - 1}{(x + 2)(2x + 9)} < 0.\\]The solutions to $x^2 - x - 1 = 0$ are $x = \\frac{1 \\pm \\sqrt{5}}{2}.$  We can fill in a sign chart as follows:\n\n\\[\n\\begin{array}{c|ccccc}\n& x < -\\frac{9}{2} & -\\frac{9}{2} < x < -2 & -2 < x < \\frac{1 - \\sqrt{5}}{2} & \\frac{1 - \\sqrt{5}}{2} < x < \\frac{1 + \\sqrt{5}}{2} & \\frac{1 + \\sqrt{5}}{2} < x \\\\ \\hline\n2x + 9 & - & + & + & + & + \\\\\nx + 2 & - & - & + & + & + \\\\\nx - \\frac{1 - \\sqrt{5}}{2} & - & - & - & + & + \\\\\nx - \\frac{1 + \\sqrt{5}}{2} & - & - & - & - & + \\\\\n\\frac{x^2 - x - 1}{(x + 2)(2x + 9)} & + & - & + & - & +\n\\end{array}\n\\]Thus, the solution to $\\frac{x^2 - x - 1}{(x + 2)(2x + 9)} < 0$ is\n\\[x \\in \\boxed{\\left( -\\frac{9}{2} , -2 \\right) \\cup \\left( \\frac{1 - \\sqrt{5}}{2}, \\frac{1 + \\sqrt{5}}{2} \\right)}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In how many distinct ways can I arrange my five keys on a keychain, if I want to put my house key next to my car key? Two arrangements are not considered different if the keys are in the same order (or can be made to be in the same order without taking the keys off the chain--that is, by reflection or rotation).",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "First, put the house key and car key next to each other on the keychain. It doesn't matter where they are put, because the keychain can be rotated and reflected to move them to any other pair of adjacent locations. The remaining three keys can be put on the keychain in $3!=\\boxed{6}$ ways."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a, b, c$ be complex numbers, with $a$ real, such that \\[a+b+c=ab+bc+ca=abc=3.\\]Find $a$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, $a, b, c$ are the roots of the polynomial \\[x^3 - 3x^2 + 3x - 3 = 0.\\]Adding $2$ to both sides, we can factor this equation as \\[(x-1)^3 = 2.\\]For the real value $x = a$, we have $a - 1 = \\sqrt[3]{2}$, so $a = \\boxed{1 + \\sqrt[3]{2}}$."
-}

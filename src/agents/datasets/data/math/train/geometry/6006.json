@@ -1,6 +1,0 @@
-{
-    "problem": "In tetrahedron $ABCD$, edge $AB$ has length 3 cm. The area of face $ABC$ is $15\\mbox{cm}^2$ and the area of face $ABD$ is $12 \\mbox { cm}^2$. These two faces meet each other at a $30^\\circ$ angle. Find the volume of the tetrahedron in $\\mbox{cm}^3$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "It is clear that $DX=8$ and $CX=10$ where $X$ is the foot of the perpendicular from $D$ and $C$ to side $AB$. Thus $[DXC]=\\frac{ab\\sin{c}}{2}=20=5 \\cdot h \\rightarrow h = 4$ where h is the height of the tetrahedron from $D$. Hence, the volume of the tetrahedron is $\\frac{bh}{3}=15\\cdot \\frac{4}{3}=\\boxed{20}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A deck of forty cards consists of four $1$'s, four $2$'s,..., and four $10$'s. A matching pair (two cards with the same number) is removed from the deck. Given that these cards are not returned to the deck, let $m/n$ be the probability that two randomly selected cards also form a pair, where $m$ and $n$ are relatively prime positive integers. Find $m + n.$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are ${38 \\choose 2} = 703$ ways we can draw two cards from the reduced deck. The two cards will form a pair if both are one of the nine numbers that were not removed, which can happen in $9{4 \\choose 2} = 54$ ways, or if the two cards are the remaining two cards of the number that was removed, which can happen in $1$ way. Thus, the answer is $\\frac{54+1}{703} = \\frac{55}{703}$, and $m+n = \\boxed{758}$."
-}

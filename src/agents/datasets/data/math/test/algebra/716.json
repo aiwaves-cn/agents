@@ -1,6 +1,0 @@
-{
-    "problem": "If \\[f(x) =\n\\begin{cases}\n2x-5 &\\quad \\text{if } x \\ge 3, \\\\\n-x + 5 &\\quad \\text{if } x < 3,\n\\end{cases}\n\\]then for how many values of $x$ is $f(f(x)) = 3$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $y = f(x)$. Then, $f(f(x)) = f(y) = 3$, so either $2y - 5 = 3$ or $-y + 5 = 3$.  If $2y - 5 = 3$, then $y = 4$.  Note that $4 \\ge 3$, so $f(4) = 3$.  If $-y + 5 = 3$, then $y = 2$.  Note that $2 < 3$, so $f(2) = 3$.  So the two possible values of $y$ are 2 and 4.\n\nNow, we solve the equation $f(x) = 2$.  In this case, either $2x - 5 = 2$ or $-x + 5 = 2$.  If $2x - 5 = 2$, then $x = 7/2$.  Note that $7/2 \\ge 3$, so $f(7/2) = 2$.  If $-x + 5 = 2$, then $x = 3$.  But $3 \\ge 3$, so $f(3) = 2 \\cdot 3 - 5 = 1$, which is not 2.\n\nNext, we solve the equation $f(x) = 4$.  In this case, either $2x - 5 = 4$ or $-x + 5 = 4$.  If $2x - 5 = 4$, then $x = 9/2$.  Note that $9/2 \\ge 3$, so $f(9/2) = 3$.  If $-x + 5 = 4$, then $x = 1$.  Note that $1 < 3$, so $f(1) = 4$.\n\nTherefore, there are $\\boxed{3}$ solutions to $f(f(x)) = 3$, namely $x = 1$, 7/2, and 9/2."
-}

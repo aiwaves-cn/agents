@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{v} = \\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix}$ and $\\mathbf{w} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 3 \\end{pmatrix}.$  The columns of a matrix are $\\mathbf{u},$ $\\mathbf{v},$ and $\\mathbf{w},$ where $\\mathbf{u}$ is a unit vector.  Find the largest possible determinant of the matrix.",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "The determinant of the matrix is given by the scalar triple product\n\\[\\mathbf{u} \\cdot (\\mathbf{v} \\times \\mathbf{w}) = \\mathbf{u} \\cdot \\begin{pmatrix} 3 \\\\ -7 \\\\ -1 \\end{pmatrix}.\\]In turn, this is equal to\n\\[\\mathbf{u} \\cdot \\begin{pmatrix} 3 \\\\ -7 \\\\ -1 \\end{pmatrix} = \\|\\mathbf{u}\\| \\left\\| \\begin{pmatrix} 3 \\\\ -7 \\\\ -1 \\end{pmatrix} \\right\\| \\cos \\theta = \\sqrt{59} \\cos \\theta,\\]where $\\theta$ is the angle between $\\mathbf{u}$ and $\\begin{pmatrix} 3 \\\\ -7 \\\\ -1 \\end{pmatrix}.$\n\nHence, the maximum value of the determinant is $\\boxed{\\sqrt{59}},$ and this is achieved when $\\mathbf{u}$ is the unit vector pointing in the direction of $\\begin{pmatrix} 3 \\\\ -7 \\\\ -1 \\end{pmatrix}.$"
-}

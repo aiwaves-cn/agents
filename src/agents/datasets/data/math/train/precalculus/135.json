@@ -1,6 +1,0 @@
-{
-    "problem": "Find the positive integer $n$ such that\n\\[\\sin \\left( \\frac{\\pi}{2n} \\right) + \\cos \\left (\\frac{\\pi}{2n} \\right) = \\frac{\\sqrt{n}}{2}.\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Squaring both sides, we get\n\\[\\sin^2 \\left( \\frac{\\pi}{2n} \\right) + 2 \\sin \\left( \\frac{\\pi}{2n} \\right) \\cos \\left( \\frac{\\pi}{2n} \\right) + \\cos^2 \\left( \\frac{\\pi}{2n} \\right) = \\frac{n}{4},\\]which we can re-write as\n\\[\\sin \\frac{\\pi}{n} + 1 = \\frac{n}{4},\\]so\n\\[\\sin \\frac{\\pi}{n} = \\frac{n}{4} - 1.\\]Since $-1 \\le \\sin \\frac{\\pi}{n} \\le 1,$ we must also have $-1 \\le \\frac{n}{4} - 1 \\le 1,$ which is equivalent to $0 \\le n \\le 8.$\n\nThe integer $n$ cannot be 0, so $1 \\le n \\le 8,$ which means $\\sin \\frac{\\pi}{n}$ is positive.  Hence, $5 \\le n \\le 8.$\n\nNote that $n = 6$ works:\n\\[\\sin \\frac{\\pi}{6} = \\frac{1}{2} = \\frac{6}{4} - 1.\\]Furthermore, $\\sin \\frac{\\pi}{n}$ is a decreasing function of $n,$ and $\\frac{n}{4} - 1$ is an increasing function of $n,$ so $n = \\boxed{6}$ is the unique solution."
-}

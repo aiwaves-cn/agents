@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\dfrac{111}{9999} \\cdot 33.$",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Note that 111 and 9999 have a common factor of 3. Also, 33 and 3333 have a common factor of 33. We get \\begin{align*}\n\\dfrac{\\cancelto{37}{111}\\hspace{8mm}}{\\cancelto{3333}{9999}\\hspace{8mm}} \\cdot 33 &= \\dfrac{37}{\\cancelto{101}{3333}\\hspace{6mm}} \\cdot \\cancelto{1}{33}\\hspace{6mm} \\\\ &= \\boxed{\\dfrac{37}{101}}.\n\\end{align*}"
-}

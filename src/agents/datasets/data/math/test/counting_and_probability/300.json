@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct arrangements are there of PAPA?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We pretend that the letters are all different, and we have P$_1$A$_1$P$_2$A$_2$.  We have $4!$ permutations (since all the letters are different).\n\nBut how many arrangements of P$_1$A$_1$P$_2$A$_2$ (where the P's and A's are considered different) correspond to a single arrangement of PAPA (where the P's and A's are identical)?  PAPA is counted in 4 different ways: as P$_1$A$_1$P$_2$A$_2$, P$_1$A$_2$P$_2$A$_1$, P$_2$A$_1$P$_1$A$_2$, and P$_2$A$_2$P$_1$A$_1$.  Rather than list out the possibilities, we could have reasoned as follows: For the 2 P's, each possibility is counted $2! = 2$ times, and for the 2 A's, each of these 2 possibilities is counted $2! = 2$ times, for a total of $2 \\times 2 = 4$ ways. (Make sure you see why it isn't $2+2 = 4$ ways.) Therefore, there are 4! ways to arrange the 4 letters P$_1$A$_1$P$_2$A$_2$; this counts each arrangement of PAPA $2! \\times 2! = 4$ times, so we have $4!/(2! \\times 2!) = \\boxed{6}$ ways to arrange PAPA."
-}

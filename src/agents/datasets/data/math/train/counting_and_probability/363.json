@@ -1,6 +1,0 @@
-{
-    "problem": "Tyler has entered a buffet line in which he chooses one kind of meat, two different vegetables and one dessert.  If the order of food items is not important, how many different meals might he choose?\n\n$\\bullet$  Meat: beef, chicken, pork\n\n$\\bullet$  Vegetables: baked beans, corn, potatoes, tomatoes\n\n$\\bullet$  Dessert: brownies, chocolate cake, chocolate pudding, ice cream",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $3$ choices for the meat and $4$ for dessert.\n\nThere are $\\binom{4}{2} = 6$ ways to choose $2$ of the $4$ vegetables, since we don't care about the order in which the vegetables are chosen.\n\nThe answer therefore is $3\\cdot 4\\cdot 6=\\boxed{72}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[f(x) + f(x + 2y) = 6x + 6y - 8\\]for all real numbers $x$ and $y.$  Find the value of $x$ such that $f(x) = 0.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $y = 0,$ we get\n\\[2f(x) = 6x - 8,\\]so $f(x) = 3x - 4.$  Note that this function satisfies the given functional equation.  Then the value of $x$ such that $f(x) = 0$ is $x = \\boxed{\\frac{4}{3}}.$"
-}

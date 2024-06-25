@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer that satisfies the congruence $30x \\equiv 42 \\pmod{47}$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Note that 6 divides both $30x$ and $42$, and since 6 is relatively prime to 47, we can write $5x \\equiv 7 \\pmod{47}$. Note that $5 \\cdot 19 = 95 = 2(47) + 1$, so 19 is the modular inverse of 5, modulo 47. We multiply both sides of the given congruence by 19 to obtain $95x \\equiv 19(7) \\pmod{47}\\implies x \\equiv \\boxed{39} \\pmod{47}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, what is the value of $y$?\n\n[asy]\ndraw((0,0)--(18,0),black+linewidth(1));\ndraw((18,0)--(18,-6),black+linewidth(1));\ndraw((0,0)--(4,6)--(18,-6),black+linewidth(1));\ndraw((18,0)--(18,-0.5)--(17.5,-0.5)--(17.5,0)--cycle,black+linewidth(1));\nlabel(\"$80^{\\circ}$\",(4.5,5),S);\nlabel(\"$60^{\\circ}$\",(1,0),NE);\nlabel(\"$y^{\\circ}$\",(18.25,-5),NW);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since $\\angle ABC + \\angle BAC + \\angle BCA=180^\\circ$ and $\\angle ABC=80^\\circ$ and $\\angle BAC=60^\\circ$, then $\\angle BCA=40^\\circ$.\n\n[asy]\ndraw((0,0)--(18,0),black+linewidth(1));\ndraw((18,0)--(18,-6),black+linewidth(1));\ndraw((0,0)--(4,6)--(18,-6),black+linewidth(1));\ndraw((18,0)--(18,-0.5)--(17.5,-0.5)--(17.5,0)--cycle,black+linewidth(1));\nlabel(\"$80^{\\circ}$\",(4.5,5),S);\nlabel(\"$60^{\\circ}$\",(1,0),NE);\nlabel(\"$y^{\\circ}$\",(18.25,-5),NW);\nlabel(\"$40^{\\circ}$\",(9.75,0),NW);\nlabel(\"$A$\",(0,0),W);\nlabel(\"$B$\",(4,6),N);\nlabel(\"$C$\",(11,0),SW);\nlabel(\"$D$\",(18,0),N);\nlabel(\"$E$\",(18,-6),SE);\n[/asy]\n\nSince $\\angle DCE = \\angle BCA = 40^\\circ$, and looking at triangle $CDE$, we see that $\\angle DCE + \\angle CED = 90^\\circ$ then $40^\\circ + y^\\circ = 90^\\circ$ or $y=\\boxed{50}$."
-}

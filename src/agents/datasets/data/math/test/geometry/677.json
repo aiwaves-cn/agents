@@ -1,6 +1,0 @@
-{
-    "problem": "What is the length, in units, of the shortest possible diagonal of a rectangle with all integer side lengths and perimeter 26 units? Express your answer in simplest radical form.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Let the two different sides of the rectangle be $a$ and $b$. Since the perimeter is 26 units, we have the equation $2a+2b=26\\Rightarrow a+b=13$. We can rearrange this equation to get $a=13-b$. We want to minimize the value of $\\sqrt{a^2+b^2}$. Substituting in the last equation, we have $\\sqrt{(13-b)^2+b^2}=\\sqrt{169-26b+2b^2}$. This value is minimized when the quadratic $169-26b+2b^2$ is minimized, which occurs when $b$ (which must be an integer) is as close to $-\\frac{-26}{2\\cdot2}=6.5$ as possible. So let $b=7$ and $a=13-7=6$. So, the shortest possible diagonal is $\\sqrt{7^2+6^2}=\\boxed{\\sqrt{85}}$."
-}

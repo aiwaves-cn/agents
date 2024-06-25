@@ -1,6 +1,0 @@
-{
-    "problem": "The number $100$ can be written as the sum of a $1$-digit prime number and a $2$-digit prime number. What is the product of these prime numbers?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The $1$-digit primes are $2,$ $3,$ $5,$ and $7.$ Let's check each:\n\n$\\bullet$ $100-2=98$ is a composite.\n\n$\\bullet$ $100-3=97$ is a prime.\n\n$\\bullet$ $100-5=95,$ is a composite.\n\n$\\bullet$ $100-7=93$ is a composite.\n\n(Check primes less than $\\sqrt{100}=10$ as potential divisors.) Thus $100=3+97.$ Our answer is $3\\times97=\\boxed{291}.$"
-}

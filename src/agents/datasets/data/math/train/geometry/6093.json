@@ -1,6 +1,0 @@
-{
-    "problem": "In quadrilateral $ABCD,\\ BC=8,\\ CD=12,\\ AD=10,$ and $m\\angle A= m\\angle B = 60^\\circ.$ Given that $AB = p + \\sqrt{q},$ where $p$ and $q$ are positive integers, find $p+q.$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]draw((0,0)--(20.87,0)--(15.87,8.66)--(5,8.66)--cycle); draw((5,8.66)--(5,0)); draw((15.87,8.66)--(15.87,0)); draw((5,8.66)--(16.87,6.928)); label(\"$A$\",(0,0),SW); label(\"$B$\",(20.87,0),SE); label(\"$E$\",(15.87,8.66),NE); label(\"$D$\",(5,8.66),NW); label(\"$P$\",(5,0),S); label(\"$Q$\",(15.87,0),S); label(\"$C$\",(16.87,7),E); label(\"$12$\",(10.935,7.794),S); label(\"$10$\",(2.5,4.5),W); label(\"$10$\",(18.37,4.5),E); [/asy]\nDraw line segment $DE$ such that line $DE$ is concurrent with line $BC$. Then, $ABED$ is an isosceles trapezoid so $AD=BE=10$, and $BC=8$ and $EC=2$. We are given that $DC=12$. Since $\\angle CED = 120^{\\circ}$, using Law of Cosines on $\\bigtriangleup CED$ gives\\[12^2=DE^2+4-2(2)(DE)(\\cos 120^{\\circ})\\]which gives\\[144-4=DE^2+2DE\\]. Adding $1$ to both sides gives $141=(DE+1)^2$, so $DE=\\sqrt{141}-1$. $\\bigtriangleup DAP$ and $\\bigtriangleup EBQ$ are both $30-60-90$, so $AP=5$ and $BQ=5$. $PQ=DE$, and therefore $AB=AP+PQ+BQ=5+\\sqrt{141}-1+5=9+\\sqrt{141} \\rightarrow (p,q)=(9,141) \\rightarrow \\boxed{150}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The triangle with vertices $A (6, 1)$, $B (4, 1)$ and $C (4, 4)$ is rotated 90 degrees counterclockwise about $B$. What are the coordinates of the image of $C$ (the point where $C$ is located after the rotation)? Express your answer as an ordered pair.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Draw point $B$ and point $C$ and rotate $C$ 90 degrees counterclockwise about $B$, as shown.  Point $C$ is 3 units above $B$, so its image is 3 units to the left of $B$ at $(4-3,1)=\\boxed{(1,1)}$.\n\n[asy]\nsize(200);\ndefaultpen(linewidth(0.7));\n\nimport graph;\n\nxaxis(-2,5,Ticks(\" \",1.0,begin=false,end=false,NoZero,Size=3),Arrows(4));\nyaxis(-2,5,Ticks(\" \",1.0,begin=false,end=false,NoZero,Size=3),Arrows(4));\n\ndot(\"$B$\",(4,1),SE);\ndot(\"$C$\",(4,4),N);\ndot(\"$C'$\",(1,1),W);\ndraw((1,1)--(4,1)--(4,4),dashed);\ndraw(rightanglemark((1,1),(4,1),(4,4)));[/asy]"
-}

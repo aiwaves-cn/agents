@@ -1,6 +1,0 @@
-{
-    "problem": "For a positive integer $n,$ let\n\\[f(n) = \\frac{1}{2^n} + \\frac{1}{3^n} + \\frac{1}{4^n} + \\dotsb.\\]Find\n\\[\\sum_{n = 2}^\\infty f(n).\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We want to find the sum\n\\begin{align*}\n&\\quad \\frac{1}{2^2} + \\frac{1}{3^2} + \\frac{1}{4^2} + \\dotsb \\\\\n&+ \\frac{1}{2^3} + \\frac{1}{3^3} + \\frac{1}{4^3} + \\dotsb \\\\\n&+ \\frac{1}{2^4} + \\frac{1}{3^4} + \\frac{1}{4^4} + \\dotsb \\\\\n&+ \\dotsb.\n\\end{align*}The sum of the numbers in the $n$th column is an infinite geometric series, with first term $\\frac{1}{(n + 1)^2}$ and common ratio $\\frac{1}{n + 1},$ so the sum of its terms is\n\\[\\frac{\\frac{1}{(n + 1)^2}}{1 - \\frac{1}{n + 1}} = \\frac{1}{n(n + 1)} = \\frac{(n + 1) - n}{n(n + 1)} = \\frac{1}{n} - \\frac{1}{n + 1}.\\]Hence, the sum of the terms is\n\\[\\sum_{n = 1}^\\infty \\left( \\frac{1}{n} - \\frac{1}{n + 1} \\right) = \\left( 1 - \\frac{1}{2} \\right) + \\left( \\frac{1}{2} - \\frac{1}{3} \\right) + \\left( \\frac{1}{3} - \\frac{1}{4} \\right) + \\dotsb = \\boxed{1}.\\]"
-}

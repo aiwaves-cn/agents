@@ -1,6 +1,0 @@
-{
-    "problem": "How many times does the digit 8 appear in the list of all integers from 1 to 1000?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The easiest approach is to consider how many times 8 can appear in the units place, how many times in the tens place, and how many times in the hundreds place.  If we put a 8 in the units place, there are 10 choices for the tens place and 10 choices for the hundreds place (including having no hundreds digit) for a total of $10\\times10=100$ options, which means that 8 will appear in the ones place 100 times. (If we choose the hundreds place to be equal to 0, we can just think of that as either a two digit or a one digit number.) Likewise, if we put an 8 in the tens place, there are 10 choices for the units place and 10 choices for the hundreds place for a total of 100 options and 100 appearances of 8 in the tens place. Finally, if we put a 8 in the hundreds place, we have 10 options for the units place and 10 options for the tens place for another 100 options and 100 appearances of 8. Since $100 + 100+100=300$, there will be a total of $\\boxed{300}$ appearances of 8."
-}

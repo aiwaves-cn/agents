@@ -1,6 +1,0 @@
-{
-    "problem": "If six people decide to come to a basketball game, but three of them are only 2/5 sure that they will stay for the entire time (the other three are sure they'll stay the whole time), what is the probability that at the end, at least 5 people stayed the entire time?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are two cases: 5 people and 6 people stayed.\n\nCase 1: 5 people stayed the whole time.  The probability that exactly 2 of those that are unsure stayed the entire time is $\\binom{3}{2}\\times \\frac{2}{5}\\times\\frac{2}{5}\\times\\frac{3}{5}= 36/125$.\n\nCase 2: 6 people stayed the whole time.  The probability that all three unsure people stayed is $(2/5)^3 = 8/125$.\n\nThe sum of these probabilities is $\\boxed{\\frac{44}{125}}$."
-}

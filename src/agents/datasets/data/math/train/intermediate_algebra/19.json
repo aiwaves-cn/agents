@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be nonzero real numbers such that\n\\[(2 - 7i)(a + bi)\\]is pure imaginary.  Find $\\frac{a}{b}.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Expanding $(2 - 7i)(a + bi),$ we get\n\\[2a - 7ai + 2bi - 7bi^2 = 2a - 7ai + 2bi + 7b.\\]Since this number is pure imaginary, the real part $2a + 7b$ is equal to 0.  Hence, $\\frac{a}{b} = \\boxed{-\\frac{7}{2}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Marius is entering a wildlife photo contest, and wishes to arrange his seven snow leopards of different heights in a row. If the shortest two leopards have inferiority complexes and demand to be placed at the ends of the row, how many ways can he line up the leopards?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are two ways to arrange the shortest two leopards. For the five remaining leopards, there are $5!$ ways to arrange them.\n\nTherefore, the answer is $2\\times5!=\\boxed{240\\text{ ways.}}$"
-}

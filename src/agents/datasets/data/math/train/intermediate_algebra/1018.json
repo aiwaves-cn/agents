@@ -1,6 +1,0 @@
-{
-    "problem": "Find the distance between the foci of the hyperbola $x^2 - 6x - 4y^2 - 8y = 27.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ and $y,$ we get\n\\[(x - 3)^2 - 4(y + 1)^2 = 32.\\]Then\n\\[\\frac{(x - 3)^2}{32} - \\frac{(y + 1)^2}{8} = 1.\\]We see that $a^2 = 32$ and $b^2 = 8,$ so $c^2 = a^2 + b^2 = 40,$ and $c = 2 \\sqrt{10}.$  Therefore, the distance between the foci is $2c = \\boxed{4 \\sqrt{10}}.$"
-}

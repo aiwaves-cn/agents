@@ -1,6 +1,0 @@
-{
-    "problem": "If $x^2 + 2x + 5$ is a factor of $x^4 + Px^2 + Q,$ find $P + Q.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\[(x^2 + 2x + 5)(x^2 + bx + c) = x^4 + Px^2 + Q.\\]for some coefficients $b$ and $c.$  Expanding, we get\n\\[x^4 + (b + 2) x^3 + (2b + c + 5) x^2 + (5b + 2c) x + 5c = x^4 + Px^2 + Q.\\]Matching coefficients, we get\n\\begin{align*}\nb + 2 &= 0, \\\\\n2b + c + 5 &= P, \\\\\n5b + 2c &= 0, \\\\\n5c &= Q.\n\\end{align*}Solving $b + 2 = 0$ and $5b + 2c = 0,$ we get $b = -2$ and $c = 5.$  Then $P = 2b + c + 5 = 6$ and $Q = 5c = 25,$ so $P + Q = \\boxed{31}.$"
-}

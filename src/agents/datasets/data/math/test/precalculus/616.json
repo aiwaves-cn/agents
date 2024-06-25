@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{v}_1,$ $\\mathbf{v}_2,$ $\\dots,$ $\\mathbf{v}_k$ be unit vectors such that\n\\[\\mathbf{v}_1 + \\mathbf{v}_2 + \\dots + \\mathbf{v}_k = \\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix}.\\]Find the smallest possible value of $k.$\n\nNote: A unit vector is a vector of magnitude 1.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "By the Triangle Inequality,\n\\[\\|\\mathbf{v}_1 + \\mathbf{v}_2 + \\dots + \\mathbf{v}_k\\| \\le  \\|\\mathbf{v}_1\\| + \\|\\mathbf{v}_2\\| + \\dots + \\|\\mathbf{v}_k\\| = k.\\]Then\n\\[k \\ge \\left\\|\\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix} \\right\\| = \\sqrt{61} > \\sqrt{49} = 7,\\]so $k \\ge 8.$\n\nWe can express $\\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix}$ as the sum of 8 unit vectors, as shown below, so the smallest possible value of $k$ is $\\boxed{8}.$\n\n[asy]\nusepackage(\"amsmath\");\n\nunitsize(1 cm);\n\nint i;\npair A, B, C;\n\nA = 6*(6,-5)/abs((6,-5));\nC = (6,-5);\nB = intersectionpoint(arc(A,1,-45,0),arc(C,1,90,180));\n\nfor (i = 0; i <= 5; ++i) {\n  draw(i*(6,-5)/abs((6,-5))--(i + 1)*(6,-5)/abs((6,-5)),red,Arrow(6));\n}\ndraw(A--B,red,Arrow(6));\ndraw(B--C,red,Arrow(6));\n\ndraw((-1,0)--(7,0));\ndraw((0,-6)--(0,1));\n\ndot(\"$\\begin{pmatrix} 6 \\\\ -5 \\end{pmatrix}$\", (6,-5), SE);\n[/asy]"
-}

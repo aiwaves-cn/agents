@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=16x+3$. Find the sum of all $x$ that satisfy the equation $f^{-1}(x)=f((2x)^{-1})$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Applying $f$ to both sides of the equation $f^{-1}(x) = f((2x)^{-1})$, we get $f(f^{-1}(x)) = f(f((2x)^{-1}))$.  By definition of the inverse function, $f(f^{-1}(x)) = x$, and \\[f(f((2x)^{-1})) = f \\left( f \\left( \\frac{1}{2x} \\right) \\right) = f \\left( \\frac{16}{2x} + 3 \\right) = f \\left( \\frac{8}{x} + 3 \\right) = f \\left( \\frac{3x + 8}{x} \\right) = 16 \\cdot \\frac{3x + 8}{x} + 3 = \\frac{51x + 128}{x}.\\]Hence, \\[x = \\frac{51x + 128}{x}.\\]Then $x^2 = 51x + 128$, or $x^2 - 51x - 128 = 0$.  Vieta's formula tells us that the sum of the roots of a quadratic $ax^2+bx+c$ is $-\\frac{b}{a}$, so in this case, the sum of the roots is $\\boxed{51}$."
-}

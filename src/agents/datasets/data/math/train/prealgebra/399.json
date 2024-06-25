@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest digit $N$ for which $2345N$ is divisible by 6?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The number $2345N$ is divisible by 6 if and only if it is divisible by both 2 and 3.\n\nThe number $2345N$ is divisible by 2 if and only if its last digit $N$ is even, so $N$ must be 0, 2, 4, 6, or 8.\n\nThe number $2345N$ is divisible by 3 if and only if the sum of its digits is divisible by 3, which is $2 + 3 + 4 + 5 + N = N + 14$.  We see that $N + 14$ is divisible by 3 if and only if $N$ is one of the digits 1, 4, or 7.\n\nTherefore, there is in fact only one digit $N$ for which $2345N$ is divisible by 6, namely $N = \\boxed{4}$."
-}

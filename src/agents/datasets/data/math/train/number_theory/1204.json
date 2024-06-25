@@ -1,6 +1,0 @@
-{
-    "problem": "Two distinct positive integers $x$ and $y$ are factors of 36. If $x\\cdot y$ is not a factor of 36, what is the smallest possible value of $x\\cdot y$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We begin by listing all the factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. We can now start listing products of factors from least to greatest and find the first item in the second list that is not in the first; 1, 2, 3, 4, 6, 8... 8 is not a factor of 36, but is the product of 2 and 4. We can check that there are no smaller products of factors that do not divide 36: 5 and 7 are the only possibilities, and obviously neither of them can be products of factors of 36. $\\boxed{8}$ is thus the smallest such product."
-}

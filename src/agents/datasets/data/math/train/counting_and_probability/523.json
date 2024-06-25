@@ -1,6 +1,0 @@
-{
-    "problem": "The science club has 25 members: 10 boys and 15 girls.  A 5-person committee is chosen at random.  What is the probability that the committee has at least 1 boy and at least 1 girl?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We can use the idea of complementary probability to solve this problem without too much nasty casework. The probability that the committee has at least 1 boy and 1 girl is equal to 1 minus the probability that the committee is either all boys or all girls. The number of ways to choose a committee of all boys is $\\binom{10}{5}=252$, the number of ways to choose a committee of all girls is $\\binom{15}{5}=3,\\!003$, and the total number of committees is $\\binom{25}{5}=53,\\!130$, so the probability of selecting a committee of all boys or all girls is $\\dfrac{252+3003}{53,\\!130}=\\dfrac{31}{506}$. Thus the probability that the committee contains at least one boy and one girl is $1-\\dfrac{31}{506} = \\boxed{\\dfrac{475}{506}}$."
-}

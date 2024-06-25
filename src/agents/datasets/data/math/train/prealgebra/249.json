@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers between $100$ and $150$ have three different digits in increasing order? One such integer is $129$.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We will break up the problem into cases based on the second digit and count the number of integers in each case. If the second digit is 0, there are no integers because the first digit (1) is larger than the second. Similarly, if the second digit is 1, there are no integers. If the second digit is 2, there are 7 integers (with third digit from 3 to 9, inclusive). If the second digit is 3, there are 6 integers (with third digit from 4 to 9, inclusive). If the second digit is 4, there are 5 integers (with third digit from 5 to 9, inclusive). Among all the cases, there are $7+6+5=\\boxed{18}$ integers."
-}

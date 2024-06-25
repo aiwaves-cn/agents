@@ -1,6 +1,0 @@
-{
-    "problem": "A line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}.\\]A second line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 5 \\\\ -9 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix}.\\]Find the point where the lines intersect.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "For the first line,\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} = \\begin{pmatrix} 1 + 2t \\\\ 1 - 3t \\end{pmatrix}.\\]For the second line,\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 5 \\\\ -9 \\end{pmatrix} + u \\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 5 + 4u \\\\ -9 + 2u \\end{pmatrix}.\\]Hence, $1 + 2t = 5 + 4u$ and $1 - 3t = -9 + 2u.$  Solving, we find $t = 3$ and $u = \\frac{1}{2},$ so\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\boxed{\\begin{pmatrix} 7 \\\\ -8 \\end{pmatrix}}.\\]"
-}

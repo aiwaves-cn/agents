@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=\\sqrt{x-3}$, what is the smallest real number $x$ in the domain of $f(f(x))$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Note that $f(x)$ is defined if and only if $x\\ge 3$.\n\nThus $f(f(x)) = f(\\sqrt{x-3})$ is defined if and only if $$\\sqrt{x-3}\\ge 3.$$ This is true if and only if $$x-3\\ge 3^2,$$ or equivalently, if $x\\ge 12$. So the smallest real number for which $f(f(x))$ is defined is $\\boxed{12}$."
-}

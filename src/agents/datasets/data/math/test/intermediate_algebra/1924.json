@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ and $c$ be positive real numbers such that $a^2 = bc$ and $a + b + c = abc.$  Find the smallest possible value of $a^2.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[abc = a + b + c \\ge 3 \\sqrt[3]{abc},\\]so $(abc)^3 \\ge 27abc,$ which means $(abc)^2 \\ge 27.$\n\nSince $bc = a^2,$ $a^6 \\ge 27,$ so $a^2 \\ge 3.$\n\nEquality occurs when $a = b = c = \\sqrt{3},$ so the smallest possible value of $a^2$ is $\\boxed{3}.$"
-}

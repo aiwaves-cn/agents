@@ -1,6 +1,0 @@
-{
-    "problem": "A cube has a side length of $s,$ and its vertices are $A = (0,0,0),$ $B = (s,0,0),$ $C = (s,s,0),$ $D = (0,s,0),$ $E = (0,0,s),$ $F = (s,0,s),$ $G = (s,s,s),$ and $H = (0,s,s).$  A point $P$ inside the cube satisfies $PA = \\sqrt{70},$ $PB = \\sqrt{97},$ $PC = \\sqrt{88},$ and $PE = \\sqrt{43}.$  Find the side length $s.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $P = (x,y,z).$  Then from the given information,\n\\begin{align*}\nx^2 + y^2 + z^2 &= 70, \\quad (1) \\\\\n(x - s)^2 + y^2 + z^2 &= 97, \\quad (2) \\\\\n(x - s)^2 + (y - s)^2 + z^2 &= 88, \\quad (3) \\\\\nx^2 + y^2 + (z - s)^2 &= 43. \\quad (4)\n\\end{align*}Subtracting equations (1) and (2) gives us\n\\[-2sx + s^2 = 27,\\]so $x = \\frac{s^2 - 27}{2s}.$\n\nSubtracting equations (2) and (3) gives us\n\\[-2sy + s^2 = -9,\\]so $y = \\frac{s^2 + 9}{2s}.$\n\nSubtracting equations (1) and (4) gives us\n\\[-2sz + s^2 = -27,\\]so $z = \\frac{s^2 + 27}{2s}.$\n\nSubstituting into equation (1), we get\n\\[\\left( \\frac{s^2 - 27}{2s} \\right)^2 + \\left( \\frac{s^2 + 9}{2s} \\right)^2 + \\left( \\frac{s^2 + 27}{2s} \\right)^2 = 70.\\]This simplifies to $3s^4 - 262s^2 + 1539 = 0,$ which factors as $(s^2 - 81)(3s^2 - 19) = 0.$  Since $x = \\frac{s^2 - 27}{2s}$ must be positive, $s^2 = 81.$  Hence, $s = \\boxed{9}.$"
-}

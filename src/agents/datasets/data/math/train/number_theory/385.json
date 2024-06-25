@@ -1,6 +1,0 @@
-{
-    "problem": "What integer $n$ satisfies $0\\le n<{101}$ and $$100n\\equiv 72\\pmod {101}~?$$",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Notice that $100\\equiv-1\\pmod{101}$.  Therefore if we have any multiple of 100, that number will be congruent to the negative of the number we get by deleting the final two zeros and changing the sign.  For example \\[111100\\equiv-1111\\pmod{101}.\\]In particular, $100n\\equiv -n\\pmod{101}$.  Therefore we want to solve \\[-n\\equiv72\\pmod{101},\\]or \\[n\\equiv-72\\pmod{101}.\\]Adding 101 does not change the residue class, so this is equivalent to \\[n\\equiv \\boxed{29}\\pmod{101}.\\]"
-}

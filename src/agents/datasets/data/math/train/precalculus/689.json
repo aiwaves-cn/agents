@@ -1,6 +1,0 @@
-{
-    "problem": "For real numbers $t,$ the point\n\\[(x,y) = \\left( e^t + e^{-t}, 3 (e^t - e^{-t}) \\right)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.\n\nNote: $e$ is a mathematical constant that is approximately $2.71828.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[x^2 = (e^t + e^{-t})^2 = e^{2t} + 2 + e^{-2t},\\]and\n\\begin{align*}\n\\frac{y^2}{9} &= (e^t - e^{-t})^2 \\\\\n&= e^{2t} - 2 + e^{-2t}.\n\\end{align*}Then\n\\[x^2 - \\frac{y^2}{9} = 4,\\]so\n\\[\\frac{x^2}{4} - \\frac{y^2}{36} = 1.\\]Thus, all plotted points lie on a hyperbola.  The answer is $\\boxed{\\text{(E)}}.$"
-}

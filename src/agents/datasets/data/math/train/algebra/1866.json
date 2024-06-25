@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=\\frac{x^5-1}3$, find $f^{-1}(-31/96)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The value $x=f^{-1}(-31/96)$ is the solution to $f(x)=-31/96$.  This means \\[\\frac{x^5-1}3=\\frac{-31}{96}.\\]Multiplying by 3 gives \\[x^5-1=\\frac{-31}{32}.\\]If we add 1 we get  \\[x^5=\\frac{-31}{32}+\\frac{32}{32}=\\frac1{32},\\]and the only value that solves this equation is  \\[x=\\boxed{\\frac12}.\\]"
-}

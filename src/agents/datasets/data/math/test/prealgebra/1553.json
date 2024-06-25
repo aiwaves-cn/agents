@@ -1,6 +1,0 @@
-{
-    "problem": "Two interior angles of a convex pentagon are right angles and the other three interior angles are congruent. In degrees, what is the measure of one of the three congruent interior angles?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The sum of the interior angles of a polygon with $n$ sides is $180(n-2)$. The pentagon has 5 sides, so the sum of the interior angles is $180\\cdot3$. We subtract the degree measures of the two right angles to get $180\\cdot3-90-90=180\\cdot2$, which is the sum of the measures of the three congruent interior angles. We divide by 3 to get the measure of one of the three congruent interior angles: $\\frac{180\\cdot2}{3}=60\\cdot2=\\boxed{120^\\circ}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the  sum of the reciprocals of the roots of the equation $\n\\frac{2003}{2004}x + 1 + \\frac{1}{x} = 0?\n$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $a = 2003/2004$. The given equation is equivalent to \\[\na x^2 + x + 1 = 0.\n\\] If the roots of this equation are denoted $r$ and $s$, then \\[\nrs = \\frac{1}{a}\\quad\\text{and}\\quad r + s = - \\frac{1}{a},\n\\] so \\[\n\\frac{1}{r} + \\frac{1}{s} = \\frac{r+s}{rs} = \\boxed{-1}.\n\\]"
-}

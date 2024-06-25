@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all of the positive even factors of $504$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we find that the prime factorization of $504$ is $2^3 \\cdot 3^2 \\cdot 7$. Note that the even divisors of 504 are precisely the integers of the form $2^a3^b7^c$ where $1\\leq a \\leq 3$, $0\\leq b\\leq 2$, and $0\\leq c \\leq 1$. Note also that distributing $(2+4+8)(1+3+9)(1+7)$ yields 18 terms, with each integer of the form $2^a3^b7^c$ (again, where $1\\leq a \\leq 3$, $0\\leq b\\leq 2$, and $0\\leq c \\leq 1$) appearing exactly once.  It follows that the sum of the even divisors of 504 is $(2+4+8)(1+3+9)(1+7)=\\boxed{1456}$."
-}

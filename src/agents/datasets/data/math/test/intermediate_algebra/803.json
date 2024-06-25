@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $a$ and $b$ are positive real numbers with $a > b$ and $ab = 8.$  Find the minimum value of $\\frac{a^2 + b^2}{a - b}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\[\\frac{a^2 + b^2}{a - b} = \\frac{a^2 + b^2 - 2ab + 16}{a - b} = \\frac{(a - b)^2 + 16}{a - b} = a - b + \\frac{16}{a - b}.\\]By AM-GM,\n\\[a - b + \\frac{16}{a - b} \\ge 2 \\sqrt{(a - b) \\cdot \\frac{16}{a - b}} = 8.\\]Equality occurs when $a - b = 4$ and $ab = 8.$  We can solve these equations to find $a = 2 \\sqrt{3} + 2$ and $b = 2 \\sqrt{3} - 2.$  Thus, the minimum value is $\\boxed{8}.$"
-}

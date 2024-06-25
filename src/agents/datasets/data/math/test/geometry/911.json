@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of the perimeters of two equilateral triangles is $45$ inches, and the area of the larger one is $16$ times the area of the smaller one. What is the area, in square inches, of the larger triangle? Express your answer in the simplest radical form.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "We set $a$ as the length of the side of the first triangle and $b$ as the length of the side of the second. We know that the sum of the perimeter is $45$, so $3a+3b=45 \\rightarrow a+b=15$.\n\nWe also know that the area of the second is $16$ times the area of the first, so $b^2=16a^2$. Solving and taking the positive root, we get that $b=4a$. Thus, $a+4a=15 \\rightarrow a=3$. Therefore, the side of the larger triangle $b=4 \\cdot 3 =12$.\n\nThe area of an equilateral triangle with side length $s$ is $\\frac{s^2 \\cdot \\sqrt{3}}{4}$, so the desired area is $\\frac{12^2 \\cdot \\sqrt{3}}{4}=\\boxed{36 \\sqrt{3}}$."
-}

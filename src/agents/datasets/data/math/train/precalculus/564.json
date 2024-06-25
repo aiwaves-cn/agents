@@ -1,6 +1,0 @@
-{
-    "problem": "The dilation, centered at $-1 + 4i,$ with scale factor $-2,$ takes $2i$ to which complex number?",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $z$ be the image of $2i$ under the dilation.\n\n[asy]\nunitsize(0.5 cm);\n\npair C, P, Q;\n\nC = (-1,4);\nP = (0,2);\nQ = (-3,8);\ndraw((-5,0)--(5,0));\ndraw((0,-1)--(0,10));\ndraw(P--Q,dashed);\n\ndot(\"$-1 + 4i$\", C, SW);\ndot(\"$2i$\", P, E);\ndot(\"$-3 + 8i$\", Q, NW);\n[/asy]\n\nSince the dilation is centered at $-1 + 4i,$ with scale factor $-2,$\n\\[z - (-1 + 4i) = (-2)(2i - (-1 + 4i)).\\]Solving, we find $z = \\boxed{-3 + 8i}.$"
-}

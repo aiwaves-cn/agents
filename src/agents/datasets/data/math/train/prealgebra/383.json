@@ -1,6 +1,0 @@
-{
-    "problem": "The stem-and-leaf plot shows the number of minutes and seconds of one ride on each of the $17$ top-rated roller coasters in the world. In the stem-and-leaf plot, $2 \\ 20$ represents $2$ minutes, $20$ seconds, which is the same as $140$ seconds. What is the median of this data set? Express your answer in seconds.\n\n\\begin{tabular}{c|ccccc}\n0&28&28&50&&\\\\\n1&00&02&&&\\\\\n2&20&25&35&43&45\\\\\n3&00&00&00&30&36\\\\\n4&00&00&&&\\\\\n\\end{tabular}",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 17 times, so the median time will be the ninth when the times are listed from least time to most time.  Fortunately, the stem-and-leaf plot gives us the times in order.  For example, the first time is 0 minutes and 28 seconds, the second time is also 0 minutes and 28 seconds, and so on.  The ninth time is 2 minutes and 43 seconds.  Converting to seconds gives $2 \\cdot 60 + 43 = \\boxed{163}$ seconds."
-}

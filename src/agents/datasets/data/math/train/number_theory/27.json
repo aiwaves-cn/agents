@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $a$ is a multiple of $1428$, find the greatest common divisor of $a^2+9a+24$ and $a+4$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can use the Euclidean Algorithm. \\begin{align*}\n&\\text{gcd}\\,(a^2+9a+24,a+4) \\\\\n&\\qquad=\\text{gcd}\\,(a^2+9a+24-(a+5)(a+4),a+4)\\\\\n&\\qquad=\\text{gcd}\\,(a^2+9a+24-(a^2+9a+20),a+4)\\\\\n&\\qquad=\\text{gcd}\\,(4,a+4).\n\\end{align*} Since $4$ is a factor of $a$ and thus $a+4$, the greatest common divisor is $\\boxed{4}$."
-}

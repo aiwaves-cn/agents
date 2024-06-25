@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate\n\\[\\sin (\\arcsin 0.4 + \\arcsin 0.5) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4).\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From the angle addition and subtraction formulas,\n\\begin{align*}\n\\sin (x + y) &= \\sin x \\cos y + \\cos x \\sin y, \\\\\n\\sin (x - y) &= \\sin x \\cos y - \\cos x \\sin y,\n\\end{align*}so\n\\begin{align*}\n\\sin (x + y) \\sin (x - y) &= (\\sin x \\cos y + \\cos x \\sin y)(\\sin x \\cos y - \\cos x \\sin y) \\\\\n&= \\sin^2 x \\cos^2 y + \\sin x \\cos x \\sin y \\cos y - \\sin x \\cos x \\sin y \\cos y - \\cos^2 x \\sin^2 y \\\\\n&= \\sin^2 x (1 - \\sin^2 y) - (1 - \\sin^2 x) \\sin^2 y \\\\\n&= \\sin^2 x - \\sin^2 x \\sin^2 y - \\sin^2 y + \\sin^2 x \\sin^2 y \\\\\n&= \\sin^2 x - \\sin^2 y.\n\\end{align*}Taking $x = \\arcsin 0.5$ and $y = \\arcsin 0.4,$ we get\n\\begin{align*}\n\\sin (\\arcsin 0.5 + \\arcsin 0.4) \\cdot \\sin (\\arcsin 0.5 - \\arcsin 0.4) &= \\sin^2 (\\arcsin 0.5) - \\sin^2 (\\arcsin 0.4) \\\\\n&= 0.5^2 - 0.4^2 \\\\\n&= 0.09 = \\boxed{\\frac{9}{100}}.\n\\end{align*}"
-}

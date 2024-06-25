@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest solution to \\[\\lfloor x \\rfloor = 5 + 100 \\{ x \\},\\]where $\\{x\\} = x - \\lfloor x \\rfloor.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $0 \\le \\{x\\} < 1,$ we have $0 \\le 100 \\{x\\} < 100,$ so $5 \\le 5 + 100 \\{x\\} < 105.$ Thus, \\[5 \\le \\lfloor x\\rfloor < 105.\\]Since $\\lfloor x\\rfloor$ is an integer, the possible values of $\\lfloor x\\rfloor$ are $5, 6, \\dots, 104.$ For each of these values of $\\lfloor x\\rfloor,$ we get a corresponding value \\[\\{x\\} = \\frac{\\lfloor x\\rfloor - 5}{100} = 0.01 \\lfloor x \\rfloor - 0.05,\\]and then we have \\[x = \\lfloor x\\rfloor + \\{x\\} = 1.01 \\lfloor x \\rfloor - 0.05.\\]To maximize $x,$ we choose $\\lfloor x \\rfloor = 104,$ giving \\[x = 1.01 \\cdot 104 - 0.05 = \\boxed{104.99}.\\]"
-}

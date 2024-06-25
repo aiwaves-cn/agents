@@ -1,6 +1,0 @@
-{
-    "problem": "What value of $x$ will give the minimum value for $9x^2 + 18x + 7$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We start by completing the square: \\begin{align*}\n9x^2 + 18x + 7 &= (3x)^2+18x + 3^2 - 3^2 + 7\\\\ &= (3x+3)^2 -9 +7.\\end{align*} Since the square of a real number is at least 0, we have $(3x+3)^2\\ge 0$, where $(3x+3)^2=0$ only if $3x=-3$.   Therefore, the expression is minimized when $x=\\boxed{-1}.$"
-}

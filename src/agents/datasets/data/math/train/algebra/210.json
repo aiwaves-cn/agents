@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the first ten positive multiples of $13$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "The first ten positive multiples of 13 are 13, $13 \\cdot 2$, $\\dots$, $13 \\cdot 10$, so we want to find the sum $13 + 13 \\cdot 2 + \\dots + 13 \\cdot 10 = 13 \\cdot (1 + 2 + \\dots + 10)$.\n\nFor all $n$, $1 + 2 + \\dots + n = n(n + 1)/2$, so $13 \\cdot (1 + 2 + \\dots + 10) = 13 \\cdot 10 \\cdot 11/2 = \\boxed{715}$."
-}

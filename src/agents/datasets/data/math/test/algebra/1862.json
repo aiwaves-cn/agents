@@ -1,6 +1,0 @@
-{
-    "problem": "Sue can either borrow $10,\\!000$ dollars for $5$ years with a simple interest of $7\\%$ annually or an interest which compounds annually for $6\\%$. How much more money, rounded to the nearest dollar, would she have to pay back for the more expensive interest than the less expensive interest?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "For the simple interest rate, she would have to pay an interest of $10000 \\cdot 0.07=700$ dollars every year. Since there are $5$ years, in the end she would have to pay back $10000+5\\cdot 700=13500$ dollars.\n\nFor the compounded interest, her balance is multiplied by $1+6\\%=1.06$ each year. Therefore, at the end of 5 years her balance is $A=10000(1+0.06)^5=13382.255..$.\n\nThe simple interest rate would be more expensive by $13500-13382.255 \\approx \\boxed{118 \\text{ dollars}}$."
-}

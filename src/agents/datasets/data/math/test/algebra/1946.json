@@ -1,6 +1,0 @@
-{
-    "problem": "Two non-zero real numbers, $a$ and $b$, satisfy $ab=a-b$. Find the smallest possible value of: $\\frac{a}{b}+\\frac{b}{a}-ab$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Find the common denominator and replace the $ab$ in the numerator with $a-b$ to get\n\n\\begin{align*}\n\\frac{a}{b}+\\frac{b}{a}-ab &= \\frac{a^2+b^2-(ab)^2}{ab}\\\\\n&= \\frac{a^2+b^2-(a-b)^2}{ab}\\\\\n&= \\frac{a^2+b^2-(a^2-2ab+b^2)}{ab}\\\\\n&= \\frac{2ab}{ab}=2.\n\\end{align*}Hence the minimum possible value is the only possible value, $\\boxed{2}$."
-}

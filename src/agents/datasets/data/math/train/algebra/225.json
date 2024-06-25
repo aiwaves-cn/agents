@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $x^2+1300x+1300$ can be written in the form $(x+b)^2+c$, where $b$ and $c$ are constants. What is $\\frac{c}{b}$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We complete the square.\n\nThe square whose non-constant terms agree with $x^2+1300x+1300$ is $(x+650)^2$. Specifically, we have $$(x+650)^2 = x^2 + 1300x + 650^2,$$so \\begin{align*}\nx^2+1300x+1300 &= (x+650)^2 - 650^2 + 1300 \\\\\n&= (x+650)^2 - 650\\cdot 650 + 2\\cdot 650 \\\\\n&= (x+650)^2 + (-650+2)\\cdot 650 \\\\\n&= (x+650)^2 + (-648)(650).\n\\end{align*}This has the target form $(x+b)^2+c$, where $b=650$ and $c=(-648)(650)$. Therefore, $\\frac{c}{b} = \\frac{(-648)(650)}{650} = \\boxed{-648}$."
-}

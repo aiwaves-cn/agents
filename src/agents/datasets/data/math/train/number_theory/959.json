@@ -1,6 +1,0 @@
-{
-    "problem": "Vinny wrote down all the single-digit base-$b$ numbers and added them in base $b$, getting $34_b$.\n\nWhat is $b$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The single-digit base-$b$ numbers are $$0,1,2,3,\\ldots,b-2,b-1.$$We can ignore the $0$. If we pair off the rest of the numbers from either end ($1$ with $b-1$, $2$ with $b-2$, and so on), we get a bunch of pairs that add up to $b$. If $b$ is even, we also get one leftover number in the middle, which must be $\\frac b2$.\n\nThus, the sum of all the single-digit base-$b$ numbers is a multiple of $b$ when $b$ is odd; when $b$ is even, it's a multiple of $b$ plus $\\frac b2$. In the first case ($b$ odd), the units digit of the sum (when written in base $b$) is $0$. In the second case ($b$ even), the units digit is $\\frac b2$.\n\nGiven that Vinny's sum has a units digit of $4$ when written in base $b$, we conclude that $\\frac b2=4$, which yields $b=\\boxed{8}$.\n\nWe can check this answer by summing the single-digit base-$8$ numbers, which are $0,1,2,3,4,5,6,7$. Their sum is $28$, which is $34_8$ in base $8$."
-}

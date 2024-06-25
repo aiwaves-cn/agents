@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\tan \\left( 2 \\arctan \\frac{1}{5} - \\frac{\\pi}{4} \\right).\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $x = \\arctan \\frac{1}{5},$ so $\\tan x = \\frac{1}{5}.$  Then\n\\[\\tan 2x = \\frac{2 \\tan x}{1 - \\tan^2 x} = \\frac{2 \\cdot \\frac{1}{5}}{1 - (\\frac{1}{5})^2} = \\frac{5}{12}.\\]Hence,\n\\begin{align*}\n\\tan \\left( 2x - \\frac{\\pi}{4} \\right) &= \\frac{\\tan 2x - \\tan \\frac{\\pi}{4}}{1 + \\tan 2x \\tan \\frac{\\pi}{4}} \\\\\n&= \\frac{\\frac{5}{12} - 1}{1 + \\frac{5}{12} \\cdot 1} \\\\\n&= \\boxed{-\\frac{7}{17}}.\n\\end{align*}"
-}

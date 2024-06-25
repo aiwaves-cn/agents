@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of all the positive factors of integer $x$ is 24. If one of the factors is 3, what is the value of $x$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "From the given information, the positive factors of $x$ include $1, 3,\\frac{x}{3}$, and $x$. Therefore, we must have $1+3+\\frac{x}{3}+x\\le24$. Simplifying, we find $x\\le15$. Testing $x=15$, we succeed: $1+3+5+15=24$. We try 3, 6, 9, and 12 to confirm that only 15 yields a sum of 24. Thus, $x=\\boxed{15}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Which of the following could NOT be the lengths of the external diagonals of a right regular prism [a \"box\"]? (An $\\textit{external diagonal}$ is a diagonal of one of the rectangular faces of the box.)\n$\\text{(A) }\\{4,5,6\\} \\quad \\text{(B) } \\{4,5,7\\}  \\quad \\text{(C) } \\{4,6,7\\} \\quad \\text{(D) } \\{5,6,7\\} \\quad \\text{(E) } \\{5,7,8\\}$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $a,$ $b,$ and $c$ be the side lengths of the rectangular prism. By Pythagoras, the lengths of the external diagonals are $\\sqrt{a^2 + b^2},$ $\\sqrt{b^2 + c^2},$ and $\\sqrt{a^2 + c^2}.$ If we square each of these to obtain $a^2 + b^2,$ $b^2 + c^2,$ and $a^2 + c^2,$ we observe that since each of $a,$ $b,$ and $c$ are positive, then the sum of any two of the squared diagonal lengths must be larger than the square of the third diagonal length. For example, $(a^2 + b^2) + (b^2 + c^2) = (a^2 + c^2) + 2b^2 > a^2 + c^2$ because $2b^2 > 0.$\nThus, we test each answer choice to see if the sum of the squares of the two smaller numbers is larger than the square of the largest number. Looking at choice (B), we see that $4^2 + 5^2 = 41 < 7^2 = 49,$ so the answer is $\\boxed{\\{4,5,7\\}}.$"
-}

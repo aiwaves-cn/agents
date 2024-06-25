@@ -1,6 +1,0 @@
-{
-    "problem": "Find the inverse of the function\n\\[f(x) = \\frac{2x + 5}{x - 11}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = \\frac{2x + 5}{x - 11}.$  Then\n\\[xy - 11y = 2x + 5,\\]so $xy - 2x = 11y + 5.$  Then $x = \\frac{11y + 5}{y - 2}.$\n\nHence, the inverse function is given by\n\\[f^{-1}(x) = \\boxed{\\frac{11x + 5}{x - 2}}.\\]"
-}

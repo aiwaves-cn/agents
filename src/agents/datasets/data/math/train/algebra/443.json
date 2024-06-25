@@ -1,6 +1,0 @@
-{
-    "problem": "What is the range of the function $$r(x) = \\frac{1}{(1-x)^2}~?$$ Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Every real number can be expressed in the form $1-x$ for some real $x$. Thus, as $x$ runs through the real numbers, $(1-x)^2$ runs through all nonnegative values, and its reciprocal (which is $r(x)$) runs through all positive values. The range of $r(x)$ is $\\boxed{(0,\\infty)}$."
-}

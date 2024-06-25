@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be angles such that $\\cos a + \\cos b = \\frac{1}{2}$ and $\\sin a + \\sin b = \\frac{3}{11}.$  Find\n\\[\\tan \\left( \\frac{a + b}{2} \\right).\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "From the equation $\\cos a + \\cos b = \\frac{1}{2},$ by sum-to-product,\n\\[2 \\cos \\left( \\frac{a + b}{2} \\right) \\cos \\left( \\frac{a - b}{2} \\right) = \\frac{1}{2}.\\]Similarly, from the equation $\\sin a + \\sin b = \\frac{3}{11},$\n\\[2 \\sin \\left( \\frac{a + b}{2} \\right) \\cos \\left( \\frac{a - b}{2} \\right) = \\frac{3}{11}.\\]Dividing these equations, we get\n\\[\\tan \\left( \\frac{a + b}{2} \\right) = \\boxed{\\frac{6}{11}}.\\]"
-}

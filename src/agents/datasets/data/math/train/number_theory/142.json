@@ -1,6 +1,0 @@
-{
-    "problem": "What is the first digit (from left to right) of the base $8$ representation of $473_{10}$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The largest power of $8$ that is still less than $473$ is $8^2 = 64$ and the largest multiple of $64$ that is less than $473$ is $7 \\cdot 64 = 448$. Thus, when $473_{10}$ is written in base $8$, its first digit is $\\boxed{7}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The first term of a sequence is $2005$. Each succeeding term is the sum of the cubes of the digits of the previous term. What is the ${2005}^{\\text{th}}$ term of the sequence?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "The first few terms of the sequence are\n\\[2005, 133, 55, 250, 133.\\]Since each term depends only on the previous term, and the fifth term coincides with the second term, the sequence becomes periodic, with period 3.\n\nTherefore, the 2005th term is equal to the 4th term, which is $\\boxed{250}.$"
-}

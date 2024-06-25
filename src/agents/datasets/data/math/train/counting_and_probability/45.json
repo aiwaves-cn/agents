@@ -1,6 +1,0 @@
-{
-    "problem": "When three standard dice are tossed, the numbers $a,b,c$ are obtained. Find the probability that $abc = 1$.",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "$abc = 1$ only when $a=b=c= 1$. The probability that $a=1$ is $\\frac16$. Therefore, the probability that $a,b,c$ are all 1 is $\\left(\\frac16\\right)^3 = \\boxed{\\frac1{216}}$."
-}

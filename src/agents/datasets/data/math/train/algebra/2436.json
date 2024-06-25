@@ -1,6 +1,0 @@
-{
-    "problem": "$\\sqrt{53+20\\sqrt{7}}$ can be written in the form $a+b\\sqrt{c}$, where $a,$ $b,$ and $c$ are integers and $c$ has no factors which is a perfect square of any positive integer other than 1. Find $a+b+c$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We make $a+\\sqrt{d}=\\sqrt{53+20\\sqrt{7}}$. Squaring both sides, we get: \\begin{align*}\na^2+2a\\sqrt{d}+d=(a^2+d)+\\sqrt{4a^2 \\cdot d}=53+20\\sqrt{7}=53+\\sqrt{2800}\\\\\n\\end{align*}We set the terms with radicals equal to each other, and ones without radicals equal.  From this, we get that $a^2+d=53$ and $\\sqrt{4a^2 \\cdot d}=\\sqrt{2800}$, so $4a^2 \\cdot d =2800$. Solving, we get that $a=5$, and $d=28$.\n\nTherefore, $\\sqrt{53+20\\sqrt{7}}=5+\\sqrt{28}=5+2\\sqrt{7}$. $a=5$, $b=2$, and $c=7$. $a+b+c=5+2+7=\\boxed{14}$."
-}

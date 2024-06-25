@@ -1,6 +1,0 @@
-{
-    "problem": "Given that both $i - 3$ and $b$ are roots of $ax^3 + 9x^2 + ax - 30,$ where $a$ and $b$ are real numbers, find $a + b.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = i - 3,$ we get\n\\[a(i - 3)^3 + 9(i - 3)^2 + a(i - 3) - 30 = 0.\\]Expanding, we get $42 - 21a - 54i + 27ai = 0,$ so $a = 2.$\n\nThen the polynomial is $2x^3 + 9x^2 + 2x - 30.$  Since $i - 3$ is a root, $-i - 3$ is also a root, which means\n\\[(x - i + 3)(x + i + 3) = x^2 + 6x + 10\\]is a factor.  We can then say that the polynomial factors as $(2x - 3)(x^2 + 6x + 10).$  Thus, $b = \\frac{3}{2},$ and\n\\[a + b = \\frac{3}{2} + 2 = \\boxed{\\frac{7}{2}}.\\]"
-}

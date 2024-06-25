@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ is the $x$-intercept, $b$ is the $y$-intercept, and $m$ is the slope of the line with equation $\\frac{x}4 + \\frac{y}{12} = 1$, then what is the value of $a + b + m$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We can find the $x$-intercept by setting $y=0$ in the equation.  This gives us $\\frac{x}{4} = 1$, so $x =4$, which means $a=4$.  Similarly, letting $x=0$ gives $\\frac{y}{12} = 1$, so $y=12$, which means $b=12$.  There are several ways we can find the slope.  First, we could put the equation in slope-intercept form by subtracting $\\frac{x}{4}$ from both sides, and then multiplying by 12.  This gives $y = -3x +12$, which tells us that the slope is $-3$ (and confirms our solution for the $y$-intercept).  We also could have noted that since we have already shown that $(4,0)$ and $(0,12)$ are on the line, the slope of the line is $\\frac{12 -0}{0-4} = -3$.  Therefore, the desired sum is $4+12 -3 = \\boxed{13}$."
-}

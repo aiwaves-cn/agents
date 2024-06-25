@@ -1,6 +1,0 @@
-{
-    "problem": "The matrix\n\\[\\begin{pmatrix} a & 3 \\\\ -8 & d \\end{pmatrix}\\]is its own inverse, for some real numbers $a$ and $d.$  Find the number of possible pairs $(a,d).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Since $\\begin{pmatrix} a & 3 \\\\ -8 & d \\end{pmatrix}$ is its own inverse,\n\\[\\begin{pmatrix} a & 3 \\\\ -8 & d \\end{pmatrix}^2 = \\begin{pmatrix} a & 3 \\\\ -8 & d \\end{pmatrix} \\begin{pmatrix} a & 3 \\\\ -8 & d \\end{pmatrix} = \\mathbf{I}.\\]This gives us\n\\[\\begin{pmatrix} a^2 - 24 & 3a + 3d \\\\ -8a - 8d & d^2 - 24 \\end{pmatrix} = \\mathbf{I}.\\]Then $a^2 - 24 = 1,$ $3a + 3d = 0,$ $-8a - 8d = 0,$ and $d^2 - 24 = 1.$  Hence, $a + d = 0,$ $a^2 = 25,$ and $d^2 = 25.$  The possible pairs $(a,d)$ are then $(5,-5)$ and $(-5,5),$ giving us $\\boxed{2}$ solutions."
-}

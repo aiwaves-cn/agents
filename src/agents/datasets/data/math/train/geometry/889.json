@@ -1,6 +1,0 @@
-{
-    "problem": "In the figure, $ABCD$ is a rectangle, $AZ=WC=6$ units, $AB=12$ units and the area of trapezoid $ZWCD$ is 120 square units. What is the area of triangle $BQW$? [asy]\ndraw((0,0)--(12,0)--(12,20)--(0,20)--(0,0)--(12,20));\ndraw((0,14)--(12,6));\nlabel(\"$A$\",(0,20),W);\nlabel(\"$Z$\",(0,14),W);\nlabel(\"$D$\",(0,0),W);\nlabel(\"$Q$\",(6,10),2S);\nlabel(\"$B$\",(12,20),E);\nlabel(\"$W$\",(12,6),E);\nlabel(\"$C$\",(12,0),E);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Because the figure has rotational symmetry, $Q$ is the midpoint of $ZW$. Consequently, the triangles $BZQ$ and $BWQ$ have the same area because they share a height and have bases that are the same length. We have\n\n$$[BQW]=\\dfrac{1}{2}[BZW]=\\dfrac{1}{2}\\left([ABWZ]-[ABZ]\\right)$$$$=\\dfrac{1}{2}\\left(120-\\dfrac{1}{2}\\cdot6\\cdot12\\right)=\\dfrac{1}{2}(120-36)=\\dfrac{84}{2}=\\boxed{42}.$$"
-}

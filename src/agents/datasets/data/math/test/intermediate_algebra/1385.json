@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f: \\mathbb{R}\\rightarrow \\mathbb{R}$ be a function satisfying $f(x)f(y)=f(x-y)$. Find all possible values of $f(2017)$.  Enter all the possible values, separated by commas.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = y = 0,$ we get\n\\[f(0)^2 = f(0),\\]so $f(0) = 0$ or $f(0) = 1.$\n\nSuppose $f(0) = 0.$  Setting $y = 0,$ we get\n\\[f(x) f(0) = f(x),\\]so $f(x) = 0$ for all $x.$  Note that this function works, and in particular, $f(2017) = 0.$\n\nNow suppose $f(0) = 1.$  Setting $x = 0,$ we get\n\\[f(0) f(y) = f(-y),\\]so $f(-y) = f(y)$ for all $y.$\n\nReplacing $y$ with $-y$, we get\n\\[f(x) f(-y) = f(x + y).\\]Then $f(x + y) = f(x) f(-y) = f(x) f(y) = f(x - y)$ for all $x$ and $y.$  Setting $x = y = \\frac{a}{2},$ we get\n\\[f(a) = f(0) = 1\\]for all $a.$  Note that this function works, and in particular, $f(2017) = 1.$\n\nTherefore, the possible values of $f(2017)$ are $\\boxed{0,1}.$"
-}

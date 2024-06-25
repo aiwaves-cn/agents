@@ -1,6 +1,0 @@
-{
-    "problem": "A tribe of eight Native Americans sits in a circle around a campfire. If the chief must sit between his mother and his wife, how many different seating arrangements are possible? Two seating arrangements are considered the same if each individual has the same person to the right and the same person to the left in both.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We first consider the possible neighbors of the chief's mother. One must be the chief (and the chief's wife sits on the other side of the chief), the other is one of the remaining 5 natives. That native can, in turn, have one of 4 neighbors in addition to the chief's mother. Continuing around, there are $5\\cdot4\\cdot3\\cdot2\\cdot1={120}$ possible arrangements.  The chief can be on his mother's left or right, for a total of $2\\cdot 120 = \\boxed{240}$ arrangements.\n\nAlternatively, we know that the seating arrangement is the same if it is rotated. Once the chief's spot is chosen, the rotations are eliminated.  There are 2 ways to seat his wife and his mother, and then there are 5 distinct positions for the remaining 5 natives, which makes for $2\\cdot 5!=\\boxed{240}$ possible arrangements."
-}

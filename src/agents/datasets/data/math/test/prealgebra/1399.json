@@ -1,6 +1,0 @@
-{
-    "problem": "We are given the following numbers: 13, 14, 22, 52, 63, 74. Calculate $a$ by adding the numbers and then rounding the sum to the nearest ten. Calculate $b$ by first rounding each number to the nearest ten and then adding the rounded numbers. What is $a-b$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "First let's calculate $a$. The sum of the numbers is $13+14+22+52+63+74=238$. $238$ rounded to the nearest ten gives us $a=240$.\n\nNow let's calculate $b$. Rounding $13, 14, 22, 52, 63, 74$ each to the nearest ten, we get $10, 10, 20, 50, 60, 70$ respectively. This means that $b=10+10+20+50+60+70=220$. Therefore,  $$a-b=240-220=\\boxed{20}.$$"
-}

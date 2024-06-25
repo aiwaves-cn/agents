@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify\n\\[\\frac{\\cos x}{1 + \\sin x} + \\frac{1 + \\sin x}{\\cos x}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We can write\n\\begin{align*}\n\\frac{\\cos x}{1 + \\sin x} + \\frac{1 + \\sin x}{\\cos x} &= \\frac{\\cos^2 x + (1 + \\sin x)^2}{(1 + \\sin x) \\cos x} \\\\\n&= \\frac{\\cos^2 x + 1 + 2 \\sin x + \\sin^2 x}{(1 + \\sin x) \\cos x} \\\\\n&= \\frac{2 + 2 \\sin x}{(1 + \\sin x) \\cos x} \\\\\n&= \\frac{2 (1 + \\sin x)}{(1 + \\sin x) \\cos x} \\\\\n&= \\frac{2}{\\cos x} = \\boxed{2 \\sec x}.\n\\end{align*}"
-}

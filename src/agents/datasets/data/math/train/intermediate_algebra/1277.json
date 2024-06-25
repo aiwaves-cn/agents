@@ -1,6 +1,0 @@
-{
-    "problem": "Find the minimum value of\n\\[2 \\cos \\theta + \\frac{1}{\\sin \\theta} + \\sqrt{2} \\tan \\theta\\]for $0 < \\theta < \\frac{\\pi}{2}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[2 \\cos \\theta + \\frac{1}{\\sin \\theta} + \\sqrt{2} \\tan \\theta \\ge 3 \\sqrt[3]{2 \\cos \\theta \\cdot \\frac{1}{\\sin \\theta} \\cdot \\sqrt{2} \\tan \\theta} = 3 \\sqrt{2}.\\]Equality occurs when $\\theta = \\frac{\\pi}{4},$ so the minimum value is $\\boxed{3 \\sqrt{2}}.$"
-}

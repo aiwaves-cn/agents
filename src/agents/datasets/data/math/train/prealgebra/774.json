@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers less than $250$ are multiples of $5$, but not multiples of $10$?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "To start, let's list out the multiples of $5$: $5, 10, 15, 20, 25, 30, 35...$  Now, let's eliminate the multiples of $10$, and look for a pattern in the remaining numbers (which are the numbers we are trying to count): $5, 15, 25, 35,...$  It's easy to see that all multiples of $5$ that are not multiples of $10$ follow a pattern.  They have a units digit of $5$.\n\nThe largest number below $250$ with a units digit of $5$ is $245$.  All of these multiples are in the form $\\_\\_5$, where the blank can be filled with an integer between $0$ and $24$, inclusive.  Therefore our answer is the number of integers between $0$ and $24$.  There are $\\boxed{25}$ integers in all."
-}

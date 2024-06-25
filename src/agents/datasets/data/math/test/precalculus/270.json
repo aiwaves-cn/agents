@@ -1,6 +1,0 @@
-{
-    "problem": "The parametric curve $(x,y) = (\\cos 2t, \\cos^2 t),$ for real numbers $t,$ describes a line segment.  Find the length of this line segment.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $x = \\cos 2t$ and $y = \\cos^2 t$.  Then\n\\[y = \\cos^2 t = \\frac{\\cos 2t + 1}{2} = \\frac{x + 1}{2}.\\]Furthermore, $x = \\cos 2t$ varies between $-1$ and 1, so the endpoints of the line segments are $(-1,0)$ and $(1,1).$  Hence, the length of the line segment is $\\sqrt{2^2 + 1^2} = \\boxed{\\sqrt{5}}.$"
-}

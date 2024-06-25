@@ -1,6 +1,0 @@
-{
-    "problem": "How many numbers in the list $43$, $4343$, $434343$, $\\dots$, are prime?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "43 is prime.  Notice how we can rewrite all the other numbers in the list as sums of smaller numbers which we can then factor: \\[4343 = 4300 + 43 = 43(100+1)=43(101)\\]and \\[ 434343 = 430000 + 4300 + 43 = 43(10000+100+1) = 43(10101).\\]We can perform a similar factorization for each subsequent numbers in the list.  Thus, none of these numbers are prime, so the only prime number in the list is 43.  Hence, the answer is $\\boxed{1}$."
-}

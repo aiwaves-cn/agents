@@ -1,6 +1,0 @@
-{
-    "problem": "Find $\\left \\lceil \\frac{\\left \\lfloor 52/3 \\right. \\rfloor}{5/23} \\right \\rceil$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Since $17 = \\frac{51}{3} < \\frac {52}3 < \\frac {54}3 = 18$, the floor  of $52/3$ is $17$. The given quantity is thus equal to $$\\left \\lceil \\frac{17}{5/23} \\right \\rceil = \\left \\lceil \\frac{391}{5} \\right \\rceil = \\left \\lceil 78.2 \\right. \\rceil = \\boxed{79}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A bacteria colony doubles in size every hour. At 1:00 pm there are 10 bacteria in a petri dish. At 9:00 pm on the same day, what is the bacteria population?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Every hour, the bacteria population is multiplied by 2. At 2:00 pm, the bacteria population has doubled once and there are $10\\cdot2$ bacteria. At 3:00 pm, the bacteria population has doubled twice and there are $10\\cdot2\\cdot2$ bacteria, etc. By 9:00 pm, the bacteria colony has doubled in size 8 times. Therefore, there are $10\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2\\cdot2$ or $10\\cdot2^8$ bacteria so we get  $$10\\cdot2^8=10\\cdot256=\\boxed{2560}\\mbox{ bacteria.}$$"
-}

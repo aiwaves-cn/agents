@@ -1,6 +1,0 @@
-{
-    "problem": "For $-1<r<1$, let $S(r)$ denote the sum of the geometric series \\[12+12r+12r^2+12r^3+\\cdots .\\]Let $a$ between $-1$ and $1$ satisfy $S(a)S(-a)=2016$. Find $S(a)+S(-a)$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By the formula for an infinite geometric series, \\[S(r) = \\frac{12}{1-r}.\\]Thus, we are given that \\[S(a)S(-a) = \\frac{12}{1-a} \\cdot \\frac{12}{1+a} = \\frac{144}{1-a^2} = 2016.\\]Instead of solving for $a$ explicitly, we note that \\[\\begin{aligned} S(a) + S(-a) &= \\frac{12}{1-a} + \\frac{12}{1+a}\\\\& = \\frac{12(1-a)+12(1+a)}{1-a^2}\\\\& = \\frac{24}{1-a^2}\\\\& = \\frac{1}{6} \\cdot \\frac{144}{1-a^2} \\\\&= \\frac{1}{6} \\cdot 2016\\\\& = \\boxed{336},\\end{aligned}\\]which is the answer."
-}

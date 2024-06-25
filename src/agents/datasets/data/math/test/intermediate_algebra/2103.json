@@ -1,6 +1,0 @@
-{
-    "problem": "Find the equation of the line that is tangent to both of the parabolas $y^2 = 4x$ and $x^2 = -32y.$  Enter your answer in the form \"$y = mx + b$\".",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = \\frac{y^2}{4},$ we get\n\\[y = \\frac{my^2}{4} + b,\\]or $my^2 - 4y + 4b = 0.$  Since we have tangent, this quadratic has a double root, meaning that its discriminant is equal to 0.  Thus,\n\\[16 - 4(m)(4b) = 0,\\]or $bm = 1.$\n\nSetting $y = -\\frac{x^2}{32},$ we get\n\\[-\\frac{x^2}{32} = mx + b,\\]or $x^2 + 32mx + 32b = 0.$  Again, this quadratic has a double root.  Thus,\n\\[(32m)^2 - 4(32b) = 0,\\]or $b = 8m^2.$\n\nSubstituting into $bm = 1,$ we get $8m^3 = 1,$ so $m = \\frac{1}{2}.$  Then $b = 2,$ so the equation of the line is $\\boxed{y = \\frac{1}{2} x + 2}.$"
-}

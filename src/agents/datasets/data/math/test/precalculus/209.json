@@ -1,6 +1,0 @@
-{
-    "problem": "The complex number $z = re^{i \\theta}$ satisfies\n\\[\\left| 2z + \\frac{1}{z} \\right| = 1.\\]Find the minimum value of $\\sin^2 \\theta.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Setting $z = re^{i \\theta}$ in the given equation, we get\n\\[\\left| 2re^{i \\theta} + \\frac{1}{r} e^{-i \\theta} \\right| = 1.\\]Then\n\\[\\left| 2r \\cos \\theta + 2ri \\sin \\theta + \\frac{1}{r} \\cos \\theta - \\frac{i}{r} \\sin \\theta \\right| = 1.\\]Thus,\n\\[\\left( 2r \\cos \\theta + \\frac{1}{r} \\cos \\theta \\right)^2 + \\left( 2r \\sin \\theta - \\frac{1}{r} \\sin \\theta \\right)^2 = 1.\\]Expanding, we get\n\\[4r^2 \\cos^2 \\theta + 4 \\cos^2 \\theta + \\frac{1}{r^2} \\cos^2 \\theta + 4r^2 \\sin^2 \\theta - 4 \\sin^2 \\theta + \\frac{1}{r^2} \\sin^2 \\theta = 1,\\]which simplifies to\n\\[4r^2 + 4 \\cos^2 \\theta - 4 \\sin^2 \\theta + \\frac{1}{r^2} = 1.\\]Since $\\cos^2 \\theta = 1 - \\sin^2 \\theta,$\n\\[4r^2 + 4 - 4 \\sin^2 \\theta - 4 \\sin^2 \\theta + \\frac{1}{r^2} = 1,\\]so\n\\[8 \\sin^2 \\theta = 4r^2 + \\frac{1}{r^2} + 3.\\]By AM-GM, $4r^2 + \\frac{1}{r^2} \\ge 2 \\sqrt{4r^2 \\cdot \\frac{1}{r^2}} = 4,$ so $8 \\sin^2 \\ge 7,$ or\n\\[\\sin^2 \\theta \\ge \\frac{7}{8}.\\]Equality occurs when $r = \\frac{1}{\\sqrt{2}},$ so the minimum value of $\\sin^2 \\theta$ is $\\boxed{\\frac{7}{8}}.$"
-}

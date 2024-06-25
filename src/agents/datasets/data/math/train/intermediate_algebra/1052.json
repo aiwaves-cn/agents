@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real $x$ such that \\[\\left\\lfloor x \\lfloor x \\rfloor\\right \\rfloor = 29.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have \\[29 \\le x \\lfloor x \\rfloor < 30.\\]First, suppose that $x \\ge 0.$ Then we have $x \\lfloor x \\rfloor \\ge \\lfloor x \\rfloor^2,$ so $\\lfloor x \\rfloor^2 < 30,$ and $\\lfloor x \\rfloor \\le 5.$ Also, $x\\lfloor x \\rfloor \\le x^2,$ so $29 \\le x^2,$ which means that $\\lfloor x \\rfloor \\ge 5.$ Thus, $\\lfloor x \\rfloor = 5,$ so $\\lfloor 5x \\rfloor = 29$ from the original equation. Thus, $29 \\le 5x < 30,$ so \\[5.8 \\le x < 6.\\]Indeed, if $5.8 \\le x < 6,$ then $\\lfloor x \\lfloor x \\rfloor \\rfloor = \\lfloor 5x \\rfloor = 29,$ so all $x \\in [5.8,6)$ are solutions to the equation.\n\nNow suppose that $x < 0.$ Then we have $x\\lfloor x \\rfloor \\le \\lfloor x \\rfloor^2,$ so $29 \\le \\lfloor x \\rfloor^2,$ and $\\lfloor x \\rfloor \\le -6.$ But then $x < -5,$ so \\[x \\lfloor x \\rfloor \\ge -6x > -6(-5) = 30,\\]a contradiction. Hence, no negative $x$ satisfy the equation.\n\nThus, the solution set is the interval $\\boxed{[5.8,6)}.$"
-}

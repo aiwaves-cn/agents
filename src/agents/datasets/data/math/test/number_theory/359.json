@@ -1,6 +1,0 @@
-{
-    "problem": "Find $4321_{5}-1234_{5}$. Express your answer in base $5$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We start subtract the rightmost digits, keeping in mind that we are in base $5$.\n\nSince $1$ is less than $4$, we must borrow $1$ from the $2$, which then becomes $1$. Since $11_5-4_5=2_5$, we have $2$ in the rightmost digit. Since the $1$ left over is less than $3$, we must borrow $1$ from the $3$, which becomes a $2$. Next, $11_5-3_5=3_5$, so we have $3$ in the second rightmost digit. Since $2-2=0$, the third digit is 0. We subtract $1$ from $4$ to get $3$ for the fourth digit. In column format, this process reads $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & &4 & \\cancelto{2}{3}& \\cancelto{1}{2} & 1_5\\\\ & -& 1 & 2 & 3 & 4_5\\\\ \\cline{2-6} & & 3 & 0 & 3& 2_5\\\\ \\end{array} $$The difference is $\\boxed{3032_5}$."
-}

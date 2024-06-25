@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\arctan 1 + \\arctan \\frac{1}{2} + \\arctan \\frac{1}{3}.$  Express your answer in radians.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since $\\tan \\frac{\\pi}{4} = 1,$ we know that $\\arctan 1 = \\frac{\\pi}{4}.$\n\nNow, consider the triangle in the $2 \\times 3$ grid below.\n\n[asy]\nunitsize(2 cm);\n\nfilldraw(arc((3,1),0.5,180 - aTan(1/3),180)--(3,1)--cycle,paleblue,white);\nfilldraw(arc((3,1),0.5,180,180 + aTan(1/2))--(3,1)--cycle,palered,white);\ndraw((0,0)--(3,0));\ndraw((0,1)--(3,1));\ndraw((0,2)--(3,2));\ndraw((0,0)--(0,2));\ndraw((1,0)--(1,2));\ndraw((2,0)--(2,2));\ndraw((3,0)--(3,2));\ndraw((0,2)--(1,0)--(3,1)--cycle);\n[/asy]\n\nThe red angle is equal to $\\arctan \\frac{1}{2},$ and the blue angle is equal to $\\arctan \\frac{1}{3}.$  Furthermore, the sides of the triangle are $\\sqrt{5},$ $\\sqrt{5},$ and $\\sqrt{10},$ so the triangle is a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle.  Therefore,\n\\[\\arctan 1 + \\arctan \\frac{1}{2} + \\arctan \\frac{1}{3} = \\frac{\\pi}{4} + \\frac{\\pi}{4} = \\boxed{\\frac{\\pi}{2}}.\\]"
-}

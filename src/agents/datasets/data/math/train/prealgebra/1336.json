@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least four-digit positive integer, with all different digits, that is divisible by each of its digits?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Since the problem asks for the least possible number, you should start with the lowest number ($0$) and work your way up (and across the number.) Nothing is divisible by zero, so zero cannot be one of the digits in the four-digit number. Every whole number is divisible by $1$, so the digit $1$ should be in the thousands place to create the smallest number. The digits must be different, so put a $2$ in the hundreds place. Now, you have to make sure the number is even. You can put a $3$ in the tens place, but you cannot use $4$ for the ones place since $1234$ is not divisible by $3$ or $4$. $1235$ is not even, so it is not divisible by $2$ (or for that matter, by $3$). $\\boxed{1236}$ is divisible by all of its own digits."
-}

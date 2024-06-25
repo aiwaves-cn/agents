@@ -1,6 +1,0 @@
-{
-    "problem": "If  $a \\ge b > 1$, what is the largest possible value of  $\\log_a (a/b) + \\log_b (b/a)$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have \\begin{align*}\n\\log_a \\frac{a}{b} + \\log_b \\frac{b}{a}=& \\log_a a - \\log_a b + \\log_b b - \\log_b a\\\\\n=&1 - \\log_a b + 1 - \\log_b a\\\\\n=&2 - \\log_a b - \\log_b a.\n\\end{align*}Let $c = \\log_a b$, and note that $c>0$ since $a$ and $b$ are both greater than 1. Thus \\[\n\\log_a \\frac{a}{b} + \\log_b \\frac{b}{a}= 2 - c - \\frac{1}{c} = \\frac{c^2 - 2c + 1}{-c}=\n\\frac{(c-1)^2}{-c}\\le 0.\n\\]This expression is 0 when $c=1$, that is, when $a=b$.  Hence the answer is $\\boxed{0}$."
-}

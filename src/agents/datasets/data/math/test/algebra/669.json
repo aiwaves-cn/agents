@@ -1,6 +1,0 @@
-{
-    "problem": "Define $f(x)=\\frac{1+x}{1-x}$ and $g(x)=\\frac{-2}{x+1}$. Find the value of \\[g(f(g(f(\\dotsb g(f(12)) \\dotsb ))))\\]where the function $f$ is applied 8 times, and the function $g$ is applied 8 times, alternating between the two.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Define a new function $h(x)$ so that $h(x)=g(f(x))$. Then  \\begin{align*}\nh(x) &= g\\left(\\frac{1+x}{1-x}\\right)=\\frac{-2}{\\frac{1+x}{1-x}+1}\\\\\n&= \\frac{-2}{\\frac{1+x}{1-x}+\\frac{1-x}{1-x}}=\\frac{-2}{\\frac{2}{1-x}}\\\\\n&= \\frac{-1}{\\frac{1}{1-x}}=-(1-x)=x-1.\n\\end{align*}Thus our desired value is equivalent to $8$ compositions of the function $h(x)$. For each composition we subtract $1$ from the input value, so for $8$ compositions we subtract a total of $8$ from the input value, which is $12$. So our answer is $12-8=\\boxed{4}$."
-}

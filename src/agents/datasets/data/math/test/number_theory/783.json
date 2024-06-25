@@ -1,6 +1,0 @@
-{
-    "problem": "How many of the 401 integers from $-200$ to $200$ are congruent to $5 \\pmod{13}?$",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "An integer congruent to $5 \\pmod{13}$ can be written as $13n+5$. Therefore, we have the inequality $$-200 \\le 13n+5 \\le 200.$$We solve for the inequality by subtracting each term by $5$ and then dividing by $13$ to get  $$-205 \\le 13n \\le 195 \\implies -\\frac{205}{13} \\le n \\le \\frac{195}{13}.$$The smallest integer greater than $-\\frac{205}{13}$ is $-15$ and the largest integer less than $\\frac{195}{13}$ is $15$. There are $\\boxed{31}$ integers from $-15$ to $15$ inclusive."
-}

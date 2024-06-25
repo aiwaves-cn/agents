@@ -1,6 +1,0 @@
-{
-    "problem": "Find the $291^{\\text{st}}$ digit past the decimal point in the expansion of $\\dfrac{1}{37}$.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "First, we use long division or another method to find that $\\dfrac{1}{37} = 0.\\overline{027}$.  We are looking for the $291^{\\text{st}}$ digit in the 3-digit repeating block 0-2-7.  Since 291 is a multiple of 3, we want the last digit in the trio, which is $\\boxed{7}$."
-}

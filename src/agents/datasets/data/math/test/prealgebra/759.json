@@ -1,6 +1,0 @@
-{
-    "problem": "How many 3-letter sequences can be formed if the second letter must be a vowel (A, E, I, O, or U), and the third letter must be different from the first letter?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 26 options for the first letter, only 5 options for the second (vowels only), and 25 options for the third letter (all letters but the first letter).  This gives $26 \\times 5 \\times 25 = \\boxed{3,\\!250}$ combinations."
-}

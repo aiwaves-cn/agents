@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $x^2+14x=33$ has two solutions. The positive solution has the form $\\sqrt{a}-b$ for positive natural numbers $a$ and $b$. What is $a+b$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Completing the square, we add $(14/2)^2=49$ to both sides of the equation to get $x^2+14x+49=82 \\Rightarrow (x+7)^2=82$. Taking the square root of both sides, we get $x+7=\\sqrt{82}$ (we take the positive square root because we want the positive solution), or $x=\\sqrt{82}-7$. Thus, $a=82$ and $b=7$, so $a+b=\\boxed{89}$."
-}

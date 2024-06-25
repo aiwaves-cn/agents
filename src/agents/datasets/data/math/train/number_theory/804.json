@@ -1,6 +1,0 @@
-{
-    "problem": "What is $11111111_2+111111_2$? Write your answer in base $10$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "One could add them up by carrying in base $2$. But there is a simpler way. Note that the first number is $2^0+2^1+2^2+2^3+2^4+2^5+2^6+2^7$, which, by the formula for geometric series, is $2^8-1=256-1=255$. The second number is $2^0+2^1+2^2+2^3+2^4+2^5=2^6-1=64-1=63$. Thus the sum is $255+63=305+13=\\boxed{318}$."
-}

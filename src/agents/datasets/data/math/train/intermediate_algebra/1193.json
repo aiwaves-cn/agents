@@ -1,6 +1,0 @@
-{
-    "problem": "How many ordered pairs of integers $(a,b)$ satisfy all of the following inequalities? \\[ \\begin{aligned} a^2 + b^2 &< 16 \\\\ a^2 + b^2 &< 8a \\\\ a^2 + b^2 &< 8b \\end{aligned}\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We graph the points $(a,b)$ that satisfy each inequality.  The graph of $a^2 + b^2 < 16$ is the set of points inside the circle centered at the origin with radius 4.\n\nFrom $a^2 + b^2 < 8a,$\n\\[(a - 4)^2 + b^2 < 16.\\]This represents the inside of the circle centered at $(4,0)$ with radius 4.\n\nFrom $a^2 + b^2 < 8b,$\n\\[a^2 + (b - 4)^2 < 16.\\]This represents the inside of the circle centered at $(0,4)$ with radius 4.\n\n[asy]\nunitsize(1 cm);\n\nint i, j;\n\ndraw((0,-1.5)--(0,4.5));\ndraw((-1.5,0)--(4.5,0));\ndraw(arc((0,0),4,-20,110));\ndraw(arc((4,0),4,85,200));\ndraw(arc((0,4),4,5,-110));\ndraw(Circle((1,1),0.15),red);\ndraw(Circle((2,1),0.15),red);\ndraw(Circle((1,2),0.15),red);\ndraw(Circle((2,2),0.15),red);\ndraw(Circle((3,2),0.15),red);\ndraw(Circle((2,3),0.15),red);\n\nfor (i = -1; i <= 4; ++i) {\nfor (j = -1; j <= 4; ++j) {\n  dot((i,j));\n}}\n[/asy]\n\nWe see that there are $\\boxed{6}$ lattice points that lie inside all three circles."
-}

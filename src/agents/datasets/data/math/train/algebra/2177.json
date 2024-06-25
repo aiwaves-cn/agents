@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers, $x$, satisfy $|5x - 3| \\le 7$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We'll consider two cases.\n\n\nCase 1: $5x-3$ is nonnegative.  If $5x-3$ is nonnegative, then $|5x-3| = 5x-3$, so we have $5x - 3 \\le 7$.  Solving this gives $x \\le 2$.  The only integers for which $x\\le 2$ and $5x-3$ is nonnegative are $1$ and $2$.\n\nCase 2: $5x-3$ is negative.  If $5x - 3$ is negative, then $|5x-3| = -(5x-3)$, so the inequality becomes $-(5x-3) \\le 7$.  Multiplying by $-1$ gives $5x-3 \\ge -7$, so $5x \\ge -4$, which means $x \\ge -0.8$.  The only integer greater than $-0.8$ for which $5x-3$ is negative is $0$.\n\nCombining these cases gives us $\\boxed{3}$ integers that satisfy the inequality."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A point $(x,y)$ is randomly picked from inside the rectangle with vertices  $(0,0)$, $(3,0)$, $(3,2)$, and $(0,2)$.  What is the probability that  $x < y$?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The point $(x,y)$ satisfies $x < y$ if and only if it belongs to the shaded triangle bounded by the lines $x=y$, $y=2$, and $x=0$, the area of which is 2.  The rectangle has area 6, so the probability in question is $\\dfrac{2}{6} = \\boxed{\\dfrac{1}{3}}$.\n\n[asy]\ndefaultpen(.7);\ndraw((-1,0)--(5,0),Arrow);\ndraw((0,-1)--(0,3),Arrow);\nfor (int i=1; i<4; ++i) {\ndraw((i,-0.1)--(i,0.1));\n}\nfill((0,0)--(0,2)--(2,2)--cycle,gray(0.7));\ndraw((-0.1,1)--(0.1,1));\ndraw((-.1,2)--(0,2));\ndraw((3,0)--(3,2)--(0,2),linewidth(1.0));\ndraw((-0.5,-0.5)--(2.8,2.8),dashed);\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x) = \\frac{3x+2}{5}$ what is the value of $\\left[f^{-1}(4)\\right]^{-1}$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Substituting $f^{-1}(x)$ into our expression for $f$, we find \\[f(f^{-1}(x))=\\frac{3f^{-1}(x)+2}{5}.\\]Since $f(f^{-1}(x))=x$ for all $x$ in the domain of $f^{-1}$, we have \\[x=\\frac{3f^{-1}(x)+2}{5}.\\]Solving for $f^{-1}(x)$, we obtain $f^{-1}(x) = \\frac{5x-2}{3}$.  In particular, $f^{-1}(4) = \\frac{5 \\cdot 4 - 2}{3} = 18/3=6$, so $[f^{-1}(4)]^{-1} = \\boxed{\\frac16}$."
-}

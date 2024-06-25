@@ -1,6 +1,0 @@
-{
-    "problem": "What is the product of all constants $k$ such that the quadratic $x^2 + kx +15$ can be factored in the form $(x+a)(x+b)$, where $a$ and $b$ are integers?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If $x^2 + kx + 15= (x+a)(x+b)$, then \\[x^2 + kx + 15 = x^2 + ax +bx +ab = x^2 +(a+b)x + ab.\\]Therefore, we must have $ab = 15$, and for any such $a$ and $b$, we have $k = a+b$.   There are four pairs of integers that multiply to 15.  They are 1 and 15 (which give $k=16$), 3 and 5 (which give $k=8$), $-1$ and $-15$ (which gives $k=-16$), and -3 and -5 (which give $k=-8$).  The product of these four possible values of $k$ is \\begin{align*}\n(16)(8)(-16)(-8)& = (2^4)(2^3)(-2^4)(-2^3)\\\\\n& = 2^{4+3+4+3} \\\\&= 2^{14}\\\\& = 2^{10}\\cdot 2^4 = (1024)(16) = \\boxed{16384}.\n\\end{align*}"
-}

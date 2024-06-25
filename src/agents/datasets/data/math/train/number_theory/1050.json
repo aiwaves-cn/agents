@@ -1,6 +1,0 @@
-{
-    "problem": "Find $325_{8}-237_{8}$. Express your answer in base $8$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We start subtract the rightmost digits, keeping in mind that we are in base $8$.\n\nSince $5$ is less than $7$, we must borrow $1$ from the $2$, which then becomes $1$. Since $15_8-7_8=6_8$, we have $6$ in the rightmost digit. Since the $1$ left over is less than $3$, we must borrow $1$ from the $3$, which becomes a $2$. $11_8-3_8=6_8$, so we have $6$ in the second rightmost digit. Since $2-2=0$, the third rightmost digit is 0. In the usual notation, this process looks like $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & \\cancelto{2}{3}& \\cancelto{1}{2} & 5_8\\\\ & & - & 2 & 3 & 7_8\\\\ \\cline{2-6} & & & & 6& 6_8\\\\ \\end{array}$$Therefore, our answer is $\\boxed{66_8}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the 100th digit to the right of the decimal point in the decimal representation of $\\frac{13}{90}$?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Recall that for any digit $d$ between 1 and 8 inclusive, $d/9=0.\\overline{d}$.  Rewrite $13/90$ as $\\frac{1}{10}\\cdot\\frac{13}{9}$ to find that  \\[\n\\frac{13}{90}=\\frac{1}{10}\\left(1\\frac{4}{9}\\right)=\\frac{1}{10}(1.\\overline{4})=0.1\\overline{4}.\n\\]Every digit beyond the tenths digit is $\\boxed{4}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A non-square rectangle has integer dimensions. The number  of square units in its area is numerically equal to the number of units in its perimeter. What is the number of units in the perimeter of this rectangle?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let the two sides of the rectangle be $a$ and $b$.  The problem is now telling us $ab=2a+2b$.  Putting everything on one side of the equation, we have $ab-2a-2b=0.$  This looks tricky.  However, we can add a number to both sides of the equation to make it factor nicely.  4 works here:  $$ab-2a-2b+4=4 \\Rightarrow (a-2)(b-2)=4$$Since we don't have a square, $a$ and $b$ must be different.  It doesn't matter which one is which, so we can just say $a=6 $ and $b=3 $.  The perimeter is then $2(6+3)=\\boxed{18}$"
-}

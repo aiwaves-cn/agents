@@ -1,6 +1,0 @@
-{
-    "problem": "If $n$ is $1$ less than a multiple of $50$, then what is the remainder when $n^2+2n+3$ is divided by $50$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We have $n = 50a-1$ for some integer $a$, so $n\\equiv -1\\pmod{50}$. Therefore, \\begin{align*}\nn^2+2n+3 &\\equiv (-1)^2+2(-1)+3 \\\\\n&\\equiv 1-2+3 \\\\\n&\\equiv 2\\quad\\pmod{50}.\n\\end{align*}The remainder when $n^2+2n+3$ is divided by $50$ is $\\boxed{2}$."
-}

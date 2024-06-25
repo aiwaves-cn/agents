@@ -1,6 +1,0 @@
-{
-    "problem": "The set of points $(x,y)$ such that $|x - 3| \\le y \\le 4 - |x - 1|$ defines a region in the $xy$-plane.  Compute the area of this region.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Plotting $y = |x - 3|$ and $y = 4 - |x - 1|,$ we find that the two graphs intersect at $(0,3)$ and $(4,1).$\n\n\n[asy]\nunitsize(1 cm);\n\nreal funcone (real x) {\n  return(abs(x - 3));\n}\n\nreal functwo (real x) {\n  return(4 - abs(x - 1));\n}\n\nfill((3,0)--(4,1)--(1,4)--(0,3)--cycle,gray(0.7));\ndraw(graph(funcone,-0.5,4.5));\ndraw(graph(functwo,-0.5,4.5));\ndraw((-0.5,0)--(4.5,0));\ndraw((0,-0.5)--(0,4.5));\n\nlabel(\"$y = |x - 3|$\", (3.5,3));\nlabel(\"$y = 4 - |x - 1|$\", (0,1), UnFill);\n\ndot(\"$(0,3)$\", (0,3), W);\ndot(\"$(4,1)$\", (4,1), E);\ndot(\"$(3,0)$\", (3,0), S);\ndot(\"$(1,4)$\", (1,4), N);\n[/asy]\n\nThe region then is a rectangle with side lengths $\\sqrt{2}$ and $3 \\sqrt{2},$ so its area is $(\\sqrt{2})(3 \\sqrt{2}) = \\boxed{6}.$"
-}

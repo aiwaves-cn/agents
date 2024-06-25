@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $x^{100}$ is divided by $x^8 - x^6 + x^4 - x^2 + 1.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Note that\n\\[x^{10} + 1 = (x^2 + 1)(x^8 - x^6 + x^4 - x^2 + 1)\\]is divisible by $x^8 - x^6 + x^4 - x^2 + 1,$ and\n\\[x^{100} - 1 = (x^{10} + 1)(x^{90} - x^{80} + x^{70} - x^{60} + x^{50} - x^{40} + x^{30} - x^{20} + x^{10} - 1)\\]is divisible by $x^{10} + 1.$\n\nHence, $x^{100} - 1$ is divisible by $x^8 - x^6 + x^4 - x^2 + 1,$ so the remainder when $x^{100}$ is divided by $x^8 - x^6 + x^4 - x^2 + 1$ is $\\boxed{1}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\log_{3}{81}-\\log_{3}{\\frac{1}{9}}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let $\\log_{3}{81}=a$. Then $3^a=81=3^4$, so $a=4$. Let $\\log_{3}{\\frac{1}{9}}=b$. Then $\\frac{1}{9}=3^b$. Express $\\frac{1}{9}$ as a power of $3$: $\\frac{1}{9}=\\frac{1}{3^2}=3^{-2}$. Thus $3^b=3^{-2}$ and $b=-2$. We want to find $\\log_{3}{81}-\\log_{3}{\\frac{1}{9}}=a-b=(4)-(-2)=\\boxed{6}$."
-}

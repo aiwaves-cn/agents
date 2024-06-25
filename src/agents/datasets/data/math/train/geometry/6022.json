@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $A'$, $B'$, and $C'$ are on the sides $BC$, $AC$, and $AB$, respectively. Given that $AA'$, $BB'$, and $CC'$ are concurrent at the point $O$, and that $\\frac{AO}{OA'}+\\frac{BO}{OB'}+\\frac{CO}{OC'}=92$, find $\\frac{AO}{OA'}\\cdot \\frac{BO}{OB'}\\cdot \\frac{CO}{OC'}$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $K_A=[BOC], K_B=[COA],$ and $K_C=[AOB].$ Due to triangles $BOC$ and $ABC$ having the same base,\\[\\frac{AO}{OA'}+1=\\frac{AA'}{OA'}=\\frac{[ABC]}{[BOC]}=\\frac{K_A+K_B+K_C}{K_A}.\\]Therefore, we have\\[\\frac{AO}{OA'}=\\frac{K_B+K_C}{K_A}\\]\\[\\frac{BO}{OB'}=\\frac{K_A+K_C}{K_B}\\]\\[\\frac{CO}{OC'}=\\frac{K_A+K_B}{K_C}.\\]Thus, we are given\\[\\frac{K_B+K_C}{K_A}+\\frac{K_A+K_C}{K_B}+\\frac{K_A+K_B}{K_C}=92.\\]Combining and expanding gives\\[\\frac{K_A^2K_B+K_AK_B^2+K_A^2K_C+K_AK_C^2+K_B^2K_C+K_BK_C^2}{K_AK_BK_C}=92.\\]We desire $\\frac{(K_B+K_C)(K_C+K_A)(K_A+K_B)}{K_AK_BK_C}.$ Expanding this gives\\[\\frac{K_A^2K_B+K_AK_B^2+K_A^2K_C+K_AK_C^2+K_B^2K_C+K_BK_C^2}{K_AK_BK_C}+2=\\boxed{94}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Bekah has four brass house number digits: 2, 3, 5 and 7, and only has one of each number. How many distinct numbers can she form using one or more of the digits?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We have four cases to consider:\n\nCase 1: When there is only one digit, we have 4 choices.\n\nCase 2: When there are two digits, we have 4 choices for the first digit and 3 choices for the second digit. So a total of $4\\times3=12$ choices.\n\nCase 3: When there are three digits, we have 4 choices for the first digit, 3 choices for the second digit, and 2 choices for the third digit, so a total of $4\\times3\\times2=24$ choices.\n\nCase 4: When there are four digits, we have 4 choices for the first digit, 3 choices for the second digit, 2 choices for the third digit, and 1 choice for the last digit. So a total of $4\\times3\\times2\\times1=24$ choices.\n\nSum the four cases up, we have a total of $4+12+24+24=\\boxed{64}$ numbers."
-}

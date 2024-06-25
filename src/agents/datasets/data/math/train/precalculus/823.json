@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be two vectors such that\n\\[\\|\\mathbf{a} + \\mathbf{b}\\| = \\|\\mathbf{b}\\|.\\]Find the angle between the vectors $\\mathbf{a} + 2 \\mathbf{b}$ and $\\mathbf{a},$ in degrees",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the equation $\\|\\mathbf{a} + \\mathbf{b}\\| = \\|\\mathbf{b}\\|,$ $\\|\\mathbf{a} + \\mathbf{b}\\|^2 = \\|\\mathbf{b}\\|^2,$ so\n\\[(\\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} + \\mathbf{b}) = \\mathbf{b} \\cdot \\mathbf{b}.\\]Expanding, we get $\\mathbf{a} \\cdot \\mathbf{a} + 2 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b} = \\mathbf{b} \\cdot \\mathbf{b},$ so\n\\[\\mathbf{a} \\cdot \\mathbf{a} + 2 \\mathbf{a} \\cdot \\mathbf{b} = 0.\\]We can write this as $\\mathbf{a} \\cdot (\\mathbf{a} + 2 \\mathbf{b}) = 0.$  Thus, the vectors $\\mathbf{a}$ and $\\mathbf{a} + 2 \\mathbf{b}$ are orthogonal, and the angle between them is $\\boxed{90^\\circ}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the value of\n\\[\\frac{\\frac{2016}{1} + \\frac{2015}{2} + \\frac{2014}{3} + \\dots + \\frac{1}{2016}}{\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} + \\dots + \\frac{1}{2017}}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\begin{align*}\n\\frac{2016}{1} + \\frac{2015}{2} + \\frac{2014}{3} + \\dots + \\frac{1}{2016} &= \\frac{2017 - 1}{1} + \\frac{2017 - 2}{2} + \\frac{2017 - 3}{3} + \\dots + \\frac{2017 - 2016}{2016} \\\\\n&= \\frac{2017}{1} - 1  +\\frac{2017}{2} - 1 + \\frac{2017}{3} - 1 + \\dots + \\frac{2017}{2016} - 1 \\\\\n&= \\frac{2017}{1} + \\frac{2017}{2} + \\frac{2017}{3} + \\dots + \\frac{2017}{2016} - 2016 \\\\\n&= 2017 \\left( \\frac{1}{2} + \\frac{1}{3} + \\dots + \\frac{1}{2016} \\right) + 1 \\\\\n&= 2017 \\left( \\frac{1}{2} + \\frac{1}{3} + \\dots + \\frac{1}{2016} + \\frac{1}{2017} \\right).\n\\end{align*}Therefore,\n\\[\\frac{\\frac{2016}{1} + \\frac{2015}{2} + \\frac{2014}{3} + \\dots + \\frac{1}{2016}}{\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} + \\dots + \\frac{1}{2017}} = \\boxed{2017}.\\]"
-}

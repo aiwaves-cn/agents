@@ -1,6 +1,0 @@
-{
-    "problem": "If the probability that a baby born in a certain hospital will speak in the next day is 1/4, what is the probability that at least 2 babies out of a cluster of 5 babies will speak tomorrow?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We will use complementary probability: we will find the probability that no more than 1 baby speaks tomorrow, and then subtract the result from 1. There are two cases to consider: None of the babies will speak and that exactly 1 will speak.\n\n1) The probability that none of the babies will speak tomorrow is $\\left(\\frac{3}{4}\\right)^{5} = 243/1024$.\n\n2) The probability that exactly 1 will speak is $\\binom{5}{1}\\left(\\frac{3}{4}\\right)^{4}\\left(\\frac{1}{4}\\right) = \\frac{405}{1024}$.\n\nThe sum of these probabilities is $\\frac{243 + 405}{1024} = \\frac{648}{1024} = \\frac{81}{128}$.  Since the probability that no more than 1 baby will speak is $\\frac{81}{128}$, the probability that more than 1 baby will speak is $1 - \\frac{81}{128} = \\boxed{\\frac{47}{128}}$."
-}

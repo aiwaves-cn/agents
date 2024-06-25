@@ -1,6 +1,0 @@
-{
-    "problem": "The ellipse shown below is defined by the equation\n\\[PF_1 + PF_2 = d.\\]Find $d.$\n\n[asy]\nunitsize(0.3 cm);\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(shift((-1,0))*xscale(7)*yscale(5)*Circle((0,0),1),red);\n\ndot((-1,0));\n[/asy]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The semi-major axis is 7, so $d = 2 \\cdot 7 = \\boxed{14}.$"
-}

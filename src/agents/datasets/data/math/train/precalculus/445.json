@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $PQR,$ $\\angle Q = 30^\\circ,$ $\\angle R = 105^\\circ,$ and $PR = 4 \\sqrt{2}.$  Find $QR.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that $\\angle P = 180^\\circ - 30^\\circ - 105^\\circ = 45^\\circ.$  Then by the Law of Sines,\n\\[\\frac{QR}{\\sin P} = \\frac{PR}{\\sin Q}.\\]Hence,\n\\[QR = PR \\cdot \\frac{\\sin P}{\\sin Q} = 4 \\sqrt{2} \\cdot \\frac{\\sin 45^\\circ}{\\sin 30^\\circ} = \\boxed{8}.\\]"
-}

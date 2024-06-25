@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $a$ and $b$ are different prime numbers greater than 2. How many whole-number divisors are there for the integer $a(2a+b)-2a^{2}+ab$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Distributing and combining like terms, we have $a(2a+b)-2a^2+ab=2a^2+ab-2a^2+ab=2ab$. Now $a$ and $b$ are different prime numbers greater than 2, so $2ab=2^1\\cdot a^1\\cdot b^1$ has $(1+1)(1+1)(1+1)=\\boxed{8}$ divisors."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A right cylindrical tank with circular bases is being filled with water at a rate of $20\\pi$ cubic meters per hour. As the tank is filled, the water level rises four meters per hour. What is the radius of the tank, in meters? Express your answer in simplest radical form.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The volume of the water increases by $20\\pi$ cubic meters each hour, while the height of the water in the tank rises by 4 meters each hour. The volume of a right cylinder is $\\pi r^2h$. If we look at the changes in volume and height in just one hour, we can solve for the radius.  \\begin{align*}\n\\pi r^2h_f-\\pi r^2h_0&=V_f-V_0\\quad\\Rightarrow\\\\\n\\pi r^2(\\Delta h)&=\\Delta V\\quad\\Rightarrow\\\\\n\\pi r^2(4)&=20\\pi\\quad\\Rightarrow\\\\\n4r^2&=20\\quad\\Rightarrow\\\\\nr^2&=5\n\\end{align*} Since the radius must be positive, $r=\\boxed{\\sqrt{5}}$ meters."
-}

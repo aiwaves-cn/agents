@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $x \\in [-5,-3]$ and $y \\in [2,4]$. What is the largest possible value of $\\frac{x+y}{x-y}$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Maximizing $\\frac{x + y}{x - y}$ is equivalent to maximizing\n\\[\\frac{x + y}{x - y} + 1 = \\frac{2x}{x - y} = \\frac{-2x}{y - x}.\\]Note that $-2x$ and $y - x$ are always positive, so to maximize this expression, we take $y = 2,$ the smallest possible value of $y.$\n\nThen maximizing $\\frac{x + 2}{x - 2}$ is equivalent to maximizing\n\\[\\frac{x + 2}{x - 2} - 1 = \\frac{4}{x - 2} = -\\frac{4}{2 - x}.\\]Note that $2 - x$ is always positive, so to maximize this expression, we take $x = -5.$  Hence, the maximum value is $\\frac{-5 + 2}{-5 - 2} = \\boxed{\\frac{3}{7}}.$"
-}

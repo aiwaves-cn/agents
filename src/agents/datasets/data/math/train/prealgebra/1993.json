@@ -1,6 +1,0 @@
-{
-    "problem": "A right triangle has an area of 120 square units, and a leg length of 24 units. What is the perimeter of the triangle, in units?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Let the other leg have length $x$.  From the area of the triangle, we have $\\frac12(24)(x) = 120$, so $12x = 120$ and $x=10$.  Let $c$ be the hypotenuse of the triangle.  The Pythagorean Theorem gives us $c^2 = 10^2 + 24^2 = 100 + 576 = 676$, so $c = 26$.  Therefore,  the perimeter is $10+24+26=\\boxed{60}$."
-}

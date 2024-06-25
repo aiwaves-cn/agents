@@ -1,6 +1,0 @@
-{
-    "problem": "Joe is studying a bacteria population.  There are 20 bacteria present at 3:00 p.m. and the population doubles every 3 minutes.  Assuming none of the bacteria die, how many bacteria are present at 3:15 p.m. the same day?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "There are five 3-minute increments between 3:00 pm and 3:15 pm, so the bacteria doubles 5 times, so the final population is $2^5 = 32$ times the initial population.  Hence at 3:15 pm there are $20 \\cdot 32 = \\boxed{640}$ bacteria."
-}

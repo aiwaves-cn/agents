@@ -1,6 +1,0 @@
-{
-    "problem": "In regular pentagon $PQRST$, $X$ is the midpoint of segment $ST$. What is the measure of angle $XQS,$ in degrees?\n\n[asy]\nsize(101);\npicture p;\npair P = (0,0); pair Q = (-cos(108),sin(108)); pair R = Q + expi(36*pi/180); pair T = (1,0); pair S1 = T + (cos(108),sin(108));\ndraw(p,(P--Q--R--S1--T--cycle),linewidth(1)); pair X = (S1+T)/2;\nlabel(p,rotate(20)*\"$P$\",P,rotate(20)*W,fontsize(10pt)); label(p,rotate(20)*\"$Q$\",Q,rotate(20)*NW,fontsize(10pt)); label(p,rotate(20)*\"$R$\",R,S,fontsize(10pt)); label(p,rotate(20)*\"$S$\",S1,rotate(20)*E,fontsize(10pt)); label(p,rotate(20)*\"$T$\",T,rotate(20)*N,fontsize(10pt));label(p,rotate(20)*\"$X$\",X,rotate(-40)*NE,fontsize(10pt));\ndot(p,X);\nadd(rotate(-20)*p);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The measure of an interior angle in a regular pentagon is  $$\\frac{180(5-2)}{5}=108^{\\circ},$$ so $\\angle QPT = 108^\\circ$.  From isosceles triangle $PQT$, we have $\\angle PQT = (180^\\circ - \\angle QPT)/2 = 36^\\circ$.  Similarly, $\\angle RQS = 36^\\circ$.  Finally, $\\triangle SQT$ is isosceles with $SQ=QT$, so median $\\overline{QX}$ is also an angle bisector of $\\angle SQT$.  Since $\\angle SQT = \\angle PQR - 36^\\circ-36^\\circ = 108^\\circ-36^\\circ-36^\\circ = 36^\\circ$, we have $\\angle XQS = (\\angle SQT)/2 = \\boxed{18^\\circ}$."
-}

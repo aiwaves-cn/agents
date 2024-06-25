@@ -1,6 +1,0 @@
-{
-    "problem": "Find the point of intersection of the line\n\\[\\frac{x - 2}{3} = \\frac{y + 1}{4} = \\frac{z - 2}{12}\\]and $x - y + z = 5.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let\n\\[t = \\frac{x - 2}{3} = \\frac{y + 1}{4} = \\frac{z - 2}{12}.\\]Then $x = 3t + 2,$ $y = 4t - 1,$ and $z = 12t + 2.$  Substituting into $x - y + z = 5$ gives us\n\\[(3t + 2) - (4t - 1) + (12t + 2) = 5.\\]Solving, we find $t = 0.$  Thus, $(x,y,z) = \\boxed{(2,-1,2)}.$"
-}

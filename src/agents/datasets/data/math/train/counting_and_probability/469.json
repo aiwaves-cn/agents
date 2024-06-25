@@ -1,6 +1,0 @@
-{
-    "problem": "How many different positive, six-digit integers can be formed using the digits 2, 2, 5, 5, 9 and 9?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We could go ahead and count these directly, but instead we could count in general and then correct for overcounting. That is, if we had 6 distinct digits, there would be $6! = 720$ orderings. However, we must divide by 2! once for the repetition of the digit 2, 2! for the repetition of the digit 5, and again 2! for the repetition of the digit 9 (this should make sense because if the repeated digits were different then we could rearrange them in 2! ways).  So, our answer is $\\frac{6!}{2!\\cdot 2!\\cdot 2!} = \\boxed{90}$."
-}

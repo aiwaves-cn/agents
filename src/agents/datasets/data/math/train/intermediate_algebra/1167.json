@@ -1,6 +1,0 @@
-{
-    "problem": "A polynomial $p(x)$ leaves a remainder of $-1$ when divided by $x - 1,$ a remainder of 3 when divided by $x - 2,$ and a remainder of 4 when divided by $x + 3.$  Let $r(x)$ be the remainder when $p(x)$ is divided by $(x - 1)(x - 2)(x + 3).$  Find $r(6).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By the Remainder Theorem, $p(1) = -1,$ $p(2) = 3,$ and $p(-3) = 4.$\n\nWhen $p(x)$ is divided by $(x - 1)(x - 2)(x + 3),$ the remainder is of the form $ax^2 + bx + c.$  Thus,\n\\[p(x) = (x - 1)(x - 2)(x + 3) q(x) + ax^2 + bx + c\\]for some polynomial $q(x).$  Setting $x = 1,$ $x = 2,$ and $x = -3,$ we get\n\\begin{align*}\na + b + c &= p(1) = -1, \\\\\n4a + 2b + c &= p(2) = 3, \\\\\n9a - 3b + c &= p(-3) = 4.\n\\end{align*}Subtracting these equations in pairs, we get\n\\begin{align*}\n3a + b &= 4, \\\\\n5a - 5b &= 1.\n\\end{align*}Solving, we find $a = \\frac{21}{20}$ and $b = \\frac{17}{20}.$  Then $c = -\\frac{29}{10},$ so\n\\[r(x) = \\frac{21}{20} x^2 + \\frac{17}{20} x - \\frac{29}{10}.\\]Thus, $r(6) = \\frac{21}{20} \\cdot 6^2 + \\frac{17}{20} \\cdot 6 - \\frac{29}{10} = \\boxed{40}.$"
-}

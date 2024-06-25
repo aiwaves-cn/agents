@@ -1,6 +1,0 @@
-{
-    "problem": "Six green balls and four red balls are in a bag.  A ball is taken from the bag, its color recorded, then placed back in the bag.  A second ball is taken and its color recorded.  What is the probability the two balls are the same color?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We could have either two greens or two reds. The probability of drawing two greens is $\\left(\\dfrac{6}{10}\\right)^{\\!2}=\\dfrac{9}{25}$. The probability of drawing two reds is $\\left(\\dfrac{4}{10}\\right)^{\\!2}=\\dfrac{4}{25}$.  So the answer is $\\dfrac{9}{25} + \\dfrac{4}{25} = \\boxed{\\dfrac{13}{25}}$."
-}

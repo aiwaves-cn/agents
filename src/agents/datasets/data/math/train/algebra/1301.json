@@ -1,6 +1,0 @@
-{
-    "problem": "Phoenix hiked the Rocky Path Trail last week. It took four days to complete the trip. The first two days she hiked a total of 22 miles. The second and third days she averaged 13 miles per day. The last two days she hiked a total of 30 miles. The total hike for the first and third days was 26 miles. How many miles long was the trail?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let the number of miles Phoenix hiked in each day be $a$, $b$, $c$, and $d$. We have the equations \\begin{align*}\na+b&=22\\\\\n(b+c)/2=13 \\Rightarrow b+c&=26\\\\\nc+d&=30\\\\\na+c&=26\n\\end{align*} Notice that we do not have to solve for any of the variables. We can add $a + b = 22$ to $c + d = 30$ and find that $a + b + c + d = 11 + 11 + 15 + 15 = 52.$ Therefore, the entire trail was $\\boxed{52}$ miles long."
-}

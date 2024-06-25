@@ -1,6 +1,0 @@
-{
-    "problem": "When the two-digit integer $``\\text{AB}\"$ is cubed, the value is $912,\\!673$. What is $A + B$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Since $90^3=729,\\!000$, $\\text{AB}$ is greater than 90.  Therefore, $\\text{A}=9$.  Since the ones digit of $\\text{AB}^3$ is 3, $\\text{AB}$ must be odd.  The ones digit of $\\text{AB}^3$ is the same as the ones digit of $\\text{B}^3$, so we look at the ones digits of the cubes of the odd digits. \\[\n\\begin{array}{c}\n\\text{The ones digit of }1^3 \\text{ is } 1. \\\\ \\text{The ones digit of }3^3 \\text{ is } 7. \\\\ \\text{The ones digit of }5^3 \\text{ is } 5. \\\\ \\text{The ones digit of }7^3 \\text{ is } 3. \\\\ \\text{The ones digit of }9^3 \\text{ is } 9.\n\\end{array}\n\\] Only $7^3$ has a ones digit of 3, so $\\text{B}=7$.  Therefore, $\\text{A}+\\text{B}=9+7=\\boxed{16}$."
-}

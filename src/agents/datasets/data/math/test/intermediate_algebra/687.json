@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate the expression \\[(751 - 745) + (748 - 742) + (745 - 739) + (742 - 736) + \\cdots + (499 - 493) + (496 - 490).\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We could view the sum as the sum of a bunch of 6's, but a closer look simplifies the sum considerably.  Both $-745$ and $+745$ appear in the expression, as do both $-742$ and $+742$, and both $-739$ and $+739$, and so on down to $-496$ and $+496$.  These all cancel out, leaving $751 + 748 - 493 - 490 = \\boxed{516}$."
-}

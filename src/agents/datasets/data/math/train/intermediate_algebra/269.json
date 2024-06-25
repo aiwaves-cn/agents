@@ -1,6 +1,0 @@
-{
-    "problem": "Find the real roots of\n\\[x^4 - 2x^3 - x + 2 = 0.\\]",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor the polynomial as\n\\begin{align*}\nx^4 - 2x^3 - x + 2 &= (x - 2) x^3 - (x - 2) \\\\\n&= (x - 2)(x^3 - 1) \\\\\n&= (x - 2)(x - 1)(x^2 + x + 1).\n\\end{align*}The quadratic factor $x^2 + x + 1$ has no real roots, so the real roots are $\\boxed{1,2}.$"
-}

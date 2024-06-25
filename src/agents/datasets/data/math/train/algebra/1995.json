@@ -1,6 +1,0 @@
-{
-    "problem": "In the game of Frood, dropping $n$ froods gives a score of the sum of the first $n$ positive integers. For example, dropping five froods scores $1 + 2 + 3 + 4 + 5 = 15$ points. Eating $n$ froods earns $10n$ points. For example, eating five froods earns $10(5) = 50$ points. What is the least number of froods for which dropping them will earn more points than eating them?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Dropping $n$ Froods earns $1 + 2 +\\ldots + n = \\frac{n(n+1)}{2}$ points.  Eating $n$ Froods earns $10n$ points.  So we seek the least $n$ such that $\\frac{n(n+1)}{2} > 10n$.  Solving, we see that $n > 19$.  Thus, $n = \\boxed{20}$ is our desired answer."
-}

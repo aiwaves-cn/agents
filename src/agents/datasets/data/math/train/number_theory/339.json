@@ -1,6 +1,0 @@
-{
-    "problem": "\"Modulo $m$ graph paper\" consists of a grid of $m^2$ points, representing all pairs of integer residues $(x,y)$ where $0\\le x, y <m$. To graph a congruence on modulo $m$ graph paper, we mark every point $(x,y)$ that satisfies the congruence. For example, a graph of $y\\equiv x^2\\pmod 5$ would consist of the points $(0,0)$, $(1,1)$, $(2,4)$, $(3,4)$, and $(4,1)$.\n\nThe graph of $$3x\\equiv 4y-1 \\pmod{35}$$has a single $x$-intercept $(x_0,0)$ and a single $y$-intercept $(0,y_0)$, where $0\\le x_0,y_0<35$.\n\nWhat is the value of $x_0+y_0$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "To find the $x$-intercept, we plug in $0$ for $y$ and solve $$3x\\equiv 4(0)-1 \\pmod{35}.$$Multiplying both sides by $12$, we get $$36x \\equiv -12\\pmod{35}$$and thus $x\\equiv -12\\pmod{35}$. Translating this to the interval $0\\le x<35$, we have $x\\equiv 23\\pmod{35}$, so the $x$-intercept on our graph is at $(23,0)$.\n\nTo find the $y$-intercept, we plug in $0$ for $x$ and solve $$3(0)\\equiv 4y-1 \\pmod{35}.$$We can rewrite this as $$1\\equiv 4y\\pmod{35}.$$Multiplying both sides by $9$, we get $$9\\equiv 36y\\pmod{35},$$and thus $y\\equiv 9\\pmod{35}$. So the $y$-intercept is at $(0,9)$.\n\nWe have $x_0+y_0 = 23+9 = \\boxed{32}$."
-}

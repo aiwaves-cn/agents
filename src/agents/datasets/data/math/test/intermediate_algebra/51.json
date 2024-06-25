@@ -1,6 +1,0 @@
-{
-    "problem": "Let\n\\[f(x) = \\frac{-px - 3}{-qx + 3},\\]and let $g(x)$ be the inverse of $f(x).$  If $(7,-22)$ lies on both of the graphs of $y = f(x)$ and $y = g(x),$ then find $p + q.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "If $(7,-22)$ lies on both $y = f(x)$ and the graph of its inverse, then $f(7) = -22$ and $f(-22) = 7.$  Hence,\n\\begin{align*}\n\\frac{-7p - 3}{-7q + 3} &= -22, \\\\\n\\frac{22p - 3}{22q + 3} &= 7.\n\\end{align*}Then $-7p - 3 = -22(-7q + 3) = 154q - 66$ and $22p - 3 = 7(22q + 3) = 154q + 21.$\nSolving, we find $p = 3$ and $q = \\frac{3}{11},$ so $p + q = 3 + \\frac{3}{11} = \\boxed{\\frac{36}{11}}.$"
-}

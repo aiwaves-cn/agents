@@ -1,6 +1,0 @@
-{
-    "problem": "Two parabolas are the graphs of the equations $y=2x^2-10x-10$ and $y=x^2-4x+6$. Find all points where they intersect. List the points in order of increasing $x$-coordinate, separated by semicolons.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, set the two equations equal to each other to get $2x^2-10x-10=x^2-4x+6$. Combine like terms to get $x^2-6x=16$. To complete the square, we need to add $\\left(\\dfrac{6}{2}\\right)^2=9$ to both sides, giving $(x-3)^2=16+9=25$.\n\nSo we have $x-3=\\pm5$. Solving for $x$ gives us $x=-2$ or $8$. Using these in our original parabolas, we find the points of intersection to be $\\boxed{(-2,18)}$ and $\\boxed{(8,38)}$."
-}

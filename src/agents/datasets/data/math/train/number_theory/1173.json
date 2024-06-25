@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $a$ that satisfies the equation $293_{a}+468_{a}=73B_{a}$, where $B_{a}=11_{10}$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "In the rightmost column there is no carrying, so our base must be greater than 11. In the next column, we see that $9_{a}+6_{a}=13_{a}$. This tells us that $a$ goes into 15 once, leaving a remainder of 3. Therefore, $a=\\boxed{12}$."
-}

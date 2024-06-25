@@ -1,6 +1,0 @@
-{
-    "problem": "The gravitational force that Earth exerts on an object is inversely proportional to the square of the distance between the center of the Earth and the object. When Bill is on the surface of Earth, 4,000 miles from the center, the gravitational force is 600 Newtons. What is the gravitational force (in Newtons) that the Earth exerts on him when he's standing on the moon, 240,000 miles from the center of the earth? Express your answer as a fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $d$ be the distance from Bill to the center of the Earth and $f$ be the gravitational force that the Earth exerts on him. Since $f$ is inversely proportional to $d^2$, $f\\cdot d^2=k$ for some constant $k$. Since the force when Bill is on the surface of Earth is 600 Newtons, $k=600\\cdot4000^2=9,\\!600,\\!000,000$. Therefore, if we let $x$ be the force that the Earth acts on  Bill with when he is on the Moon, $x\\cdot240,\\!000^2=960,\\!000,\\!000$ so $x=\\boxed{\\dfrac{1}{6}}$.\n\nAlternatively, the distance between Bill and the center of the Earth has been increased by a factor of 60, so the force has to be decreased by a factor of $60^2=3600$. Since $\\frac{600}{3600}=\\boxed{\\frac{1}{6}}$, we get the same answer."
-}

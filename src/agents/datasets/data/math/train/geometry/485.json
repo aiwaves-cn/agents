@@ -1,6 +1,0 @@
-{
-    "problem": "The midpoints of the sides of a triangle with area $T$ are joined to form a triangle with area $M$. What is the ratio of $M$ to $T$? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "When you connect the midpoints of two sides of a triangle, you get a segment which is half as long as the third side of the triangle. Therefore, every side in the smaller triangle is $\\frac{1}{2}$ the side length of the original triangle. Therefore, the area of the smaller triangle is $\\left(\\frac{1}{2}\\right)^2 = \\boxed{\\frac{1}{4}}$ the area of the larger triangle."
-}

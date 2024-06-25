@@ -1,6 +1,0 @@
-{
-    "problem": "How many real numbers $x$ are solutions to the following equation? \\[ |x-1| = |x-2| + |x-3| \\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We take cases on the value of $x.$ If $x \\le 1,$ then we have $(1-x) = (2-x) + (3-x),$ so $x = 4.$ But this does not satisfy $x<1,$ so it is not a valid solution.\n\nIf $1< x \\le 2,$ then we have $x-1 = (2-x) + (3-x),$ so $x = 2,$ which is a valid solution.\n\nIf $2 < x \\le 3,$ then we have $x-1 = (x-2) + (3-x),$ so $x=2$ again.\n\nIf $3 < x,$ then we have $(x-1) = (x-2) + (x-3),$ which gives $x=4.$ This time, $x=4$ is a valid solution because it satisfies $3 <x .$\n\nHence there are $\\boxed{2}$ values of $x,$ namely $x=2$ and $x=4.$"
-}

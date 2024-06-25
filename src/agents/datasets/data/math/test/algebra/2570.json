@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all of the multiples of 7 between 100 and 200?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The smallest multiple of 7 between 100 and 200 is 105, and the largest multiple is 196.  Thus, we want to find the sum of the arithmetic series $105 + 112 + \\dots + 196$.\n\nThe $n^{\\text{th}}$ term in this arithmetic sequence is $105 + 7(n - 1) = 7n + 98$.  If $7n + 98 = 196$, then $n = 14$, so the number of terms in this sequence is 14.\n\nThe sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $(105 + 196)/2 \\cdot 14 = \\boxed{2107}$."
-}

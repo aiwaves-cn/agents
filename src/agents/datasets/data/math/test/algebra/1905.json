@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\log_{x-1}(10-2x)=2$, find $x$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Putting our logarithm into exponential notation gives $(x-1)^2=10-2x$. Expanding, we have\n\n\\begin{align*}\nx^2-2x+1&=10-2x\\\\\n\\Rightarrow\\qquad x^2+1&=10\\\\\n\\Rightarrow\\qquad x^2&=9\\\\\n\\Rightarrow\\qquad x&=\\pm 3.\\\\\n\\end{align*}However, $x=-3$ does not work, because then the base of the logarithm would be $x-1=-3-1=-4$, and the base of a logarithm can't be negative. So our only solution is $x=\\boxed{3}$."
-}

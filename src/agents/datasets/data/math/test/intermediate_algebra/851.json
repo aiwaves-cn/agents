@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be the roots of $x^3 - 7x + 2 = 0.$  Find\n\\[abc + ab + ac + bc + a + b + c + 1.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, $a + b + c = 0,$ $ab + ac + bc = -7,$ and $abc = -2,$ so\n\\[abc + ab + ac + bc + a + b + c + 1 = (-2) + (-7) + 0 + 1 = \\boxed{-8}.\\]"
-}

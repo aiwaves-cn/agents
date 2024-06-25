@@ -1,6 +1,0 @@
-{
-    "problem": "In circle $O$, $\\overline{PN}$ and $\\overline{GA}$ are diameters and m$\\angle GOP=78^\\circ$. How many degrees are in the measure of $\\angle NGA$? [asy]\ndraw((0,1)..(1,0)..(0,-1)..(-1,0)..cycle);\ndraw((.777,.629)--(-.777,-.629));\ndraw((-.777,.629)--(.777,-.629));\ndraw((.777,.629)--(-.777,.629));\nlabel(\"$O$\",(0,0),S);\nlabel(\"$N$\",(.777,.629),NE);\nlabel(\"$A$\",(.777,-.629),SE);\nlabel(\"$P$\",(-.777,-.629),SW);\nlabel(\"$G$\",(-.777,.629),NW);\nlabel(\"$78^\\circ$\",(0,0),2W);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Since $\\overline{GA}$ and $\\overline{PN}$ are diameters, point $O$ is the center of the circle.  We have $\\angle AON = \\angle GOP = 78^\\circ$, so arc $AN$ has measure $78^\\circ$.  Since $\\angle NGA$ is inscribed in arc $AN$, we have $\\angle NGA = \\frac12\\cdot 78^\\circ = \\boxed{39^\\circ}$."
-}

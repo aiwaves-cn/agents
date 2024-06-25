@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be positive real numbers such that $a + b + c + d = 1.$  Find the minimum value of\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{4}{c} + \\frac{16}{d}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(a + b + c + d) \\left( \\frac{1}{a} + \\frac{1}{b} + \\frac{4}{c} + \\frac{16}{d} \\right) \\ge (1 + 1 + 2 + 4)^2 = 64.\\]Equality occurs when $a = b = \\frac{c}{2} = \\frac{d}{4}$ and $a + b + c + d = 1.$  We can solve to get $a = \\frac{1}{8},$ $b = \\frac{1}{8},$ $c = \\frac{1}{4},$ and $d = \\frac{1}{2},$ so the minimum value is $\\boxed{64}.$"
-}

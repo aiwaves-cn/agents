@@ -1,6 +1,0 @@
-{
-    "problem": "A cylinder has a radius of 3 cm and a height of 8 cm. What is the longest segment, in centimeters, that would fit inside the cylinder?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The longest segment stretches from the bottom to the top of the cylinder and across a diameter, and is thus the hypotenuse of a right triangle where one leg is the height $8$, and the other is a diameter of length $2(3)=6$.  Thus its length is\n\n$$\\sqrt{6^2+8^2}=\\boxed{10}$$"
-}

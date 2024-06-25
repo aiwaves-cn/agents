@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z = 2 + \\sqrt{2} - (3 + 3 \\sqrt{2})i$, and let $c = 2 - 3i$.  Let $w$ be the result when $z$ is rotated around $c$ by $\\frac{\\pi}{4}$ counter-clockwise.\n\n[asy]\nunitsize(0.6 cm);\n\npair C, W, Z;\n\nZ = (2 + sqrt(2), -3 - 3*sqrt(2));\nC = (2,-3);\nW = rotate(45,C)*(Z);\n\ndraw(Z--C--W);\n\ndot(\"$c$\", C, N);\ndot(\"$w$\", W, SE);\ndot(\"$z$\", Z, S);\nlabel(\"$\\frac{\\pi}{4}$\", C + (0.6,-1));\n[/asy]\n\nFind $w.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Rotating by $\\frac{\\pi}{4}$ counter-clockwise corresponds to the complex number\n\\[e^{\\pi i/4} = \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}}.\\]Hence,\n\\[w - c = \\left( \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}} \\right) (z - c),\\]so\n\\begin{align*}\nw &= \\left( \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}} \\right) (z - c) + c \\\\\n&= \\left( \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}} \\right) (\\sqrt{2} - 3i \\sqrt{2}) + 2 - 3i \\\\\n&= (4 - 2i) + 2 - 3i \\\\\n&= \\boxed{6 - 5i}.\n\\end{align*}"
-}

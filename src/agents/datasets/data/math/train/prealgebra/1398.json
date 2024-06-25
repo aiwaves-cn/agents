@@ -1,6 +1,0 @@
-{
-    "problem": "A square is divided into five congruent rectangles, as shown. If the perimeter of each of these five rectangles is 36 inches, what is the perimeter of the square, in inches?\n\n[asy]\ndraw((0,0)--(0,5)--(5,5)--(5,0)--cycle);\ndraw((1,0)--(1,5));\ndraw((2,0)--(2,5));\ndraw((3,0)--(3,5));\ndraw((4,0)--(4,5));\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Let $s$ be the side length of the square.  Then the dimensions of each rectangle are $s\\times\\frac{s}{5}$.  The perimeter of one of the rectangles is $s+\\frac{s}{5}+s+\\frac{s}{5}=\\frac{12}{5}s$.  Setting $\\frac{12}{5}s=36$ inches, we find $s=15$ inches.  The perimeter of the square is $4s=4(15\\text{ in.})=\\boxed{60}$ inches."
-}

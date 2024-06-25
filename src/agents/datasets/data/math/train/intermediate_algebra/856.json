@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the length of the segment tangent from the origin to the circle that passes through the points $(3,4),$ $(6,8),$ and $(5,13).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $O = (0,0),$ $A = (3,4),$ $B = (6,8),$ and $C = (5,13).$  Let $T$ be a point on the circumcircle of triangle $ABC,$ so that $\\overline{OT}$ is tangent to the circumcircle.  Note that $O,$ $A,$ and $B$ are collinear.\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C, O, T;\n\nA = (3,4);\nB = (6,8);\nC = (5,13);\nO = circumcenter(A,B,C);\nT = intersectionpoints(Circle(O/2,abs(O)/2),circumcircle(A,B,C))[1];\n\ndraw(circumcircle(A,B,C));\ndraw((0,0)--(6,8));\ndraw((0,0)--T);\ndraw((-10,0)--(10,0));\ndraw((0,-2)--(0,18));\n\nlabel(\"$O = (0,0)$\", (0,0), SW);\n\ndot(\"$A = (3,4)$\", A, SE);\ndot(\"$B = (6,8)$\", B, E);\ndot(\"$C = (5,13)$\", C, NE);\ndot(\"$T$\", T, SW);\n[/asy]\n\nThen by power of a point, $OT^2 = OA \\cdot OB = 5 \\cdot 10 = 50,$ so $OT = \\sqrt{50} = \\boxed{5 \\sqrt{2}}.$"
-}

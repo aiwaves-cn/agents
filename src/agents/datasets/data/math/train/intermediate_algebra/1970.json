@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify: $i^0+i^1+\\cdots+i^{2009}.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The powers of $i$ cycle through $i^0 = 1,$ $i^1 = i,$ $i^2 = -1,$ and $i^3 = -i,$ and the sum of any four consecutive powers of $i$ is\n\\[1 + i + (-1) + (-i) = 0.\\]Thus, the sum reduces to $i^{2008} + i^{2009} = \\boxed{1 + i}.$"
-}

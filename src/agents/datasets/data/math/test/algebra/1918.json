@@ -1,6 +1,0 @@
-{
-    "problem": "What is the maximum value of $-x^2- 8x + 12$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We start by completing the square: \\begin{align*}\n-x^2 -8x +12 &= -(x^2 + 8x) + 12\\\\\n& = -(x^2 + 8x + (8/2)^2 - (8/2)^2) + 12\\\\\n& = -((x+4)^2 -4^2) + 12 \\\\\n&= -(x+4)^2 +4^2 + 12 \\\\\n&= -(x+4)^2 + 28.\\end{align*} Since the square of a real number is at least 0, we have $(x+4)^2\\ge 0$, so $-(x+4)^2 \\le 0$.  Therefore, $-(x+4)^2 + 28$ is at most 28.  Since $(x+4)^2 =0$ when $x=-4$, this maximum of $\\boxed{28}$ is achieved when $x= -4$."
-}

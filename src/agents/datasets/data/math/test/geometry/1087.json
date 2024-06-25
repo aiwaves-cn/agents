@@ -1,6 +1,0 @@
-{
-    "problem": "The point $A(3,3)$ is reflected across the $x$-axis to $A^{'}$. Then $A^{'}$ is translated two units to the left to $A^{''}$. The coordinates of $A^{''}$ are $(x,y)$. What is the value of $x+y$? [asy]\ndraw((-7,0)--(7,0),linewidth(1),Arrows);\ndraw((0,-7)--(0,7),linewidth(1),Arrows);\n\nfor(int i=-5; i<0; ++i)\n{\n\ndraw((i,-.5)--(i,.5),linewidth(1));\n}\n\nfor(int i=1; i<6; ++i)\n{\n\ndraw((i,-.5)--(i,.5),linewidth(1));\n}\n\nfor(int i=-5; i<0; ++i)\n{\n\ndraw((-.5,i)--(.5,i),linewidth(1));\n}\n\nfor(int i=-5; i<0; ++i)\n{\n\ndraw((-.5,-i)--(.5,-i),linewidth(1));\n}\n\nlabel(\"$x$\", (8,0));\nlabel(\"$y$\", (0,8));\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "After reflection, the point $A(3,3)$ becomes $A'(3,-3)$. After translation, the point $A'(3,-3)$ becomes $A''(1,-3)$. Thus, $x+y$ is equal to $1+(-3)=\\boxed{-2}$. A picture of the transformations is below.\n\n[asy]\nLabel f;\n\nf.p=fontsize(6);\n\nxaxis(0,4,Ticks(f, 1.0));\n\nyaxis(-4,4,Ticks(f, 1.0));\n\ndot((3,3));\ndot((3,-3));\ndot((1,-3));\nlabel(\"$A$\", (3,3), W);\nlabel(\"$A'$\", (3,-3), W);\nlabel(\"$A''$\", (1,-3), W);\n[/asy]"
-}

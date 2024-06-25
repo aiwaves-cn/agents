@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)$ be the polynomial \\[f(x)=x^7-3x^3+2.\\]If $g(x) = f(x + 1)$, what is the sum of the coefficients of $g(x)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The sum of the coefficients of $g(x)$ can be found by evaluating $g(1)$.  Since $g(x)=f(x+1)$, we know that $g(1)=f(2)$.  Therefore the sum of the coefficients is equal to $f(2)=2^7-3 \\cdot 2^3 + 2 = 128 - 24 + 2 = \\boxed{106}.$"
-}

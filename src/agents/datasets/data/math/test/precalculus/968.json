@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix $\\mathbf{R}$ such that for any vector $\\mathbf{v},$ $\\mathbf{R} \\mathbf{v}$ is the reflection of $\\mathbf{v}$ through the $xy$-plane.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Geometrically, we see that\n\\[\\mathbf{P} \\mathbf{i} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{k} = \\begin{pmatrix} 0 \\\\ 0 \\\\ -1 \\end{pmatrix},\\]so\n\\[\\mathbf{P} = \\boxed{\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & -1 \\end{pmatrix}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Maria has three identical apples and three identical oranges. How many ways are there for her to distribute the fruits among her four friends if she doesn't give Jacky any oranges?  (Note: Maria takes none of the fruit herself, and some of her friends might not receive any fruit at all.)",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "First, just consider the apples. Imagine putting three dividers among the apples, so that Maria's first friend gets the apples to the left of the first divider, Maria's second friend gets the apples between the first and second dividers, Maria's third friend gets the apples between the second and third dividers, and Maria's last friend gets the apples after the third divider. With three dividers and three apples, there are $\\binom{6}{3}=20$ ways to arrange the dividers. Now, consider the oranges. Since Maria won't give Jacky any oranges, Maria has to distribute the oranges among her other three friends. With three oranges and two dividers, there are $\\binom{5}{2}=10$ ways for Maria to distribute the oranges. The total number of ways for Maria to distribute the fruit is $20\\cdot 10=\\boxed{200}$."
-}

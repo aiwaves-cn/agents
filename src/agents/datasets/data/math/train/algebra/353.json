@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\log_{\\sqrt{6}} (216\\sqrt{6})$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let $x= \\log_{\\sqrt{6}}(216\\sqrt{6})$.  Putting this in exponential notation gives $(\\sqrt{6})^x = 216\\sqrt{6}$.  Writing both sides with $6$ as the base gives us $6^{\\frac{x}{2}} = 6^3\\cdot 6^{\\frac{1}{2}} = 6^{\\frac{7}{2}}$, so $x/2=7/2$.  Therefore, $x=\\boxed{7}$."
-}

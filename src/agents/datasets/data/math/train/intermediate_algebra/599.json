@@ -1,6 +1,0 @@
-{
-    "problem": "Find the quadratic polynomial $p(x)$ such that $p(-2) = 13,$ $p(1) = -2,$ and $p(3) = 8.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $p(x) = ax^2 + bx + c.$  Then from the given information,\n\\begin{align*}\n4a - 2b + c &= 13, \\\\\na + b + c &= -2, \\\\\n9a + 3b + c &= 8.\n\\end{align*}Subtracting the first and second equations, and second and third equations, we get\n\\begin{align*}\n-3a + 3b &= -15, \\\\\n8a + 2b &= 10.\n\\end{align*}Then $-a + b = -5$ and $4a + b = 5.$  We can quickly solve, to find $a = 2$ and $b = -3.$  Substituting into the equation $a + b + c = -2,$ we get $2 - 3 + c = -2,$ so $c = -1.$  Therefore, $p(x) = \\boxed{2x^2 - 3x - 1}.$"
-}

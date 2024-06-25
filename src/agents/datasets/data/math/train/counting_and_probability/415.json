@@ -1,6 +1,0 @@
-{
-    "problem": "The numbers from 1 to 150, inclusive, are placed in a bag and a number is randomly selected from the bag. What is the probability it is neither a perfect square nor a perfect cube? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "It is easier to count the number of integers from 1 to 150 that are perfect squares or perfect cubes. We see there are 12 perfect squares from 1 to 150, namely $1^{2}, 2^{2}, \\ldots, 12^{2}$, and there are 5 perfect cubes, namely $1^{3}, \\ldots, 5^{3}$. Then notice there are two repetitions, $1^{6} =1^2 = 1^3 = 1$ and $2^{6} = 8^2 = 4^3 = 64$. So there is a total of $12+5-2=15$ integers from 1 to 150 that are perfect squares or perfect cubes. Thus, we get $150-15=135$ integers from 1 to 150 that are neither perfect squares nor perfect cubes. So the probability that we select such a number is $\\frac{135}{150} = \\boxed{\\frac{9}{10}}$."
-}

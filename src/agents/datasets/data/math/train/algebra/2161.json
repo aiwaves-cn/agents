@@ -1,6 +1,0 @@
-{
-    "problem": "What value of $k$ will make $x^2 - 16x + k$ the square of a binomial?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have that $x^2 - 16x + k = (x + b)^2 = x^2 + 2bx + b^2$ for some $b.$ Since $2bx = -16x,$ it stands to reason that $b = -8.$ Now, expanding $(x - 8)^2$ gives us $x^2 - 16x + 64,$ so $k = \\boxed{64}.$"
-}

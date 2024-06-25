@@ -1,6 +1,0 @@
-{
-    "problem": "For which values of $k$ does the quadratic $kx^2 - 3kx + 4k + 7 = 0$ have real roots?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "In order for the quadratic $kx^2 - 3kx + 4k + 7 = 0$ to have real roots, its discriminant must be nonnegative.  This gives us the inquality\n\\[(-3k)^2 - 4(k)(4k + 7) \\ge 0.\\]This expands as $-7k^2 - 28k \\ge 0.$  This is equivalent to $k^2 + 4k \\le 0,$ which factors as $k(k + 4) \\le 0.$  The solution to this inequality is $-4 \\le k \\le 0.$  However, if $k = 0,$ then the given equation is not quadratic, so the set of $k$ which works is $\\boxed{[-4,0)}.$"
-}

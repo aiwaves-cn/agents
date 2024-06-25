@@ -1,6 +1,0 @@
-{
-    "problem": "A sphere is inscribed in a cube. Given that one edge of the cube is 6 inches, how many cubic inches are in the volume of the inscribed sphere? Express your answer in terms of $\\pi$.",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "[asy]\nsize(70);\ndraw(Circle((6,6),4.5));\ndraw((10.5,6)..(6,6.9)..(1.5,6),linetype(\"2 4\"));\ndraw((10.5,6)..(6,5.1)..(1.5,6));\ndraw((0,0)--(9,0)--(9,9)--(0,9)--cycle);\ndraw((0,9)--(3,12)--(12,12)--(9,9));\ndraw((12,12)--(12,3)--(9,0));\ndraw((0,0)--(3,3)--(12,3),dashed); draw((3,3)--(3,12),dashed);\n[/asy] A sphere inscribed in a cube has diameter length equal to the side length of the cube.  Thus, the inscribed sphere has diameter 6 inches, radius $6/2=3$ inches, and volume \\[\\frac{4}{3}\\pi(3)^3=4\\cdot 3^2\\pi=\\boxed{36\\pi}\\] cubic inches."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Ten unit cubes are glued together as shown.   How many square units are in the surface area of the resulting solid?\n\n[asy]\ndraw((0,0)--(30,0)--(30,10)--(0,10)--cycle);\ndraw((10,0)--(10,10));\ndraw((20,0)--(20,10));\ndraw((5,15)--(35,15));\ndraw((0,10)--(5,15));\ndraw((10,10)--(15,15));\ndraw((20,10)--(25,15));\ndraw((35,15)--(35,5)--(30,0));\ndraw((30,10)--(35,15));\ndraw((-7,0)--(33,0)--(33,-10)--(-7,-10)--cycle);\ndraw((-7,0)--(-2,5)--(0,5));\ndraw((3,-10)--(3,0));\ndraw((13,-10)--(13,0));\ndraw((23,-10)--(23,0));\ndraw((35,5)--(38,5)--(33,0));\ndraw((38,5)--(38,-5)--(33,-10));\ndraw((2,-10)--(2,-20)--(32,-20)--(32,-10)--cycle);\ndraw((12,-10)--(12,-20));\ndraw((22,-10)--(22,-20));\ndraw((32,-20)--(37,-15)--(37,-6));\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "There are 10 cubes, thus, there are 10 sq. units in each of the faces facing towards us and away from us.  The figure has a height of 3, so there 6 sq. units total in each of the vertical sides.  And the figure has a total width of 4 cubes, so despite the fact that there is overlap, there is still a horizontal width of 4, making for 4 sq. units in each of the horizontal sides, making 8 total sq. units.  Thus, there is a total of $10 + 10 + 8 + 6 = \\boxed{34\\text{ sq. units}}$."
-}

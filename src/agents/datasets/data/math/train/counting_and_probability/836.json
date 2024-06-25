@@ -1,6 +1,0 @@
-{
-    "problem": "Geoff and Trevor each roll a fair six-sided die.  What is the probability that the product of the numbers they roll is even?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $6 \\times 6 = 36$ possible outcomes.  The only way that they can roll an odd product is if both their rolls are odd.  Since 3 of the 6 faces on each die are odd, this can occur in $3 \\times 3 = 9$ ways.  So a even product can occur in $36-9= 27$ ways, and the probability is thus $\\dfrac{27}{36} = \\boxed{\\dfrac34}$."
-}

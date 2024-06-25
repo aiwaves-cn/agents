@@ -1,6 +1,0 @@
-{
-    "problem": "When $3z^3-4z^2-14z+3$ is divided by $3z+5$, the quotient is $z^2-3z+\\frac{1}{3}$. What is the remainder?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since we are given the quotient, we do not need long division to find the remainder. Instead, remember that if our remainder is $r(z)$,\n$$3z^3-4z^2-14z+3=(3z+5)\\left(z^2-3z+\\frac{1}{3}\\right)+r(z).$$Multiplying the divisor and the quotient gives us\n$$(3z+5)\\left(z^2-3z+\\frac{1}{3}\\right)=3z^3+5z^2-9z^2-15z+z+\\frac{5}{3} = 3z^3-4z^2-14z+\\frac{5}{3} $$Subtracting the above result from the dividend gives us the remainder\n$$r(z) = 3z^3-4z^2-14z+3 - \\left(3z^3-4z^2-14z+\\frac{5}{3}\\right) = \\boxed{\\frac{4}{3}}$$We can make the computation easier by realizing that $r(z)$ is a constant.  The constants on both sides must be equal, so\n\\[3 = 5 \\cdot \\frac{1}{3} + r(z).\\]Hence, $r(z) = 3 - \\frac{5}{3} = \\frac{4}{3}.$"
-}

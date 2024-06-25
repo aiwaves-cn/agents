@@ -1,6 +1,0 @@
-{
-    "problem": "Each outcome on the spinner below has equal probability. If you spin the spinner three times and form a three-digit number from the three outcomes, such that the first outcome is the hundreds digit, the second outcome is the tens digit and the third outcome is the units digit, what is the probability that you will end up with a three-digit number that is divisible by 4? Express your answer as a common fraction.\n\n[asy]\ndraw(Circle((0,0),10));\ndraw((0,0)--(8.7,-5));\ndraw((0,0)--(-8.7,-5));\ndraw((0,0)--(0,10));\nlabel(\"1\",(7,7),SW);\nlabel(\"3\",(-7,7),SE);\nlabel(\"2\",(0,-2),S);\ndraw((0,0)--(3,5),Arrow);\n[/asy]",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We first count the total number of three-digit integers we can construct.  Since each digit can occur in each of the three spins, there are $3^3 = 27$ possible integers.  Since we are only looking for numbers that are divisible by 4, we know the units digit must be even.  In this case, the only possibility for an even units digit is 2.  The divisibility rule for 4 is any number in which the last two digits are divisible by 4 - in this case, 12 and 32.  The hundreds digit doesn't matter.  There are 6 possibilities, 112, 132, 212, 232, 312, and 332.  Therefore, the probability is $\\frac{6}{27}=\\boxed{\\frac{2}{9}}$."
-}

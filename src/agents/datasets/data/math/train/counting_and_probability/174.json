@@ -1,6 +1,0 @@
-{
-    "problem": "How many three-digit numbers are multiples of neither 5 nor 7?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "It's easy to count the number of three-digit numbers which are multiples of 5 or 7: the smallest multiple of 7 which is a three-digit number is $15 \\times 7 = 105$, and the largest multiple of 7 that is a three-digit number is $142 \\times 7 = 994$.  Therefore, there are $142-15+1 = 128$ three-digit numbers that are multiples of 7.  The smallest multiple of 5 that is a three-digit number is $20\\times 5 = 100$, and the largest multiple of 5 that is a three digit number is $199\\times 5 =995$. So there are $199-20+1=180$ multiples of 5.\n\nNow notice that we have counted some numbers twice: those multiples of $5\\times7=35$. The smallest multiple of 35 is $3\\times 35 = 105$, the largest multiple of 35 is $28\\times35 =980$. So there are $28-3+1=26$ multiples of 35.\n\nWe have 128 multiples of 7 and 180 multiples of 5, but we count 26 multiples twice.  So, there are a total of $128+180-26 = 282$ distinct three-digit numbers that are multiples of 5 or 7 (or both).   There are 900 three-digit numbers in total (from 100 to 999), so there are $900-282=\\boxed{618}$ three-digit numbers that are not multiples of 7 nor 5."
-}

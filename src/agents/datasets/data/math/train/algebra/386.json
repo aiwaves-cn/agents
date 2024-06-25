@@ -1,6 +1,0 @@
-{
-    "problem": "There are two ${\\bf positive}$ integers $c$ for which the equation $$5x^2+11x+c=0$$has rational solutions. What is the product of those two values of $c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "By the quadratic formula, the equation $5x^2+11x+c=0$ has solutions $$x = \\frac{-(11)\\pm\\sqrt{(11)^2-4(5)(c)}}{2(5)} = \\frac{-11\\pm\\sqrt{121-20c}}{10}.$$For these solutions to be rational, the quantity under the square root (i.e., the discriminant) must be a perfect square. So, we seek the possible (positive integer) values of $c$ for which $121-20c$ is a square. The possible nonnegative values for $121-20c$ are $101$, $81$, $61$, $41$, $21$, or $1$. The only squares in this list are $81$, coming from $c=2$, and $1$, coming from $c=6$. So the product of the two possible $c$ values is $2\\cdot 6=\\boxed{12}$."
-}

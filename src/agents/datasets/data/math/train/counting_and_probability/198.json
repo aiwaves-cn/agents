@@ -1,6 +1,0 @@
-{
-    "problem": "An unfair coin lands on heads with probability $\\frac34$ and tails with probability $\\frac14$.  A heads flip gains $\\$3$, but a tails flip loses $\\$8$.  What is the expected worth of a coin flip? Express your answer as a decimal rounded to the nearest hundredth.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "By definition, we multiply the outcomes by their respective probabilities, and add them up: $E = \\frac34(+\\$3) + \\frac14(-\\$8) = \\boxed{\\$0.25}$."
-}

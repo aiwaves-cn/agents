@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ and $c$ be distinct complex numbers such that\n\\begin{align*}\na^3 &= 2a + 5, \\\\\nb^3 &= 2b + 5, \\\\\nc^3 &= 2c + 5.\n\\end{align*}Find $a^3 + b^3 + c^3.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Adding the given equations, we get\n\\[a^3 + b^3 + c^3 = 2(a + b + c) + 15.\\]We see that $a,$ $b,$ and $c$ are the roots of $x^3 - 2x - 5 = 0.$  By Vieta's formulas, $a + b + c = 0,$ so $a^3 + b^3 + c^3 = \\boxed{15}.$"
-}

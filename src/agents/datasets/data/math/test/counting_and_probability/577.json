@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. Smith brings home 7 animals for his 7 children.  Each child will adopt a pet to be her or his own.  There are 4 different cats (a Siamese, a Persian, a Calico, and a Minx), 2 different dogs (a Poodle and a Golden Retriever), and a goldfish.  Anna and Betty refuse to take care of the goldfish, and Charlie and Danny insist on having cats.  The other 3 kids are easier to please -- they'll take anything.  In how many ways can Mr. Smith give the children pets they'll want?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Charlie can take one of the 4 cats, and Danny can take one of the 3 remaining cats, so there are $4\\times 3=12$ ways to give cats to these two kids. Since Anna and Betty can't take a goldfish, they select from the 4 remaining animals so there are $4\\times 3=12$ ways to give pets to these two kids. For the other three kids, there are $3\\times 2\\times 1=6$ ways to give out the remaining 3 pets. The answer is $12\\times 12\\times 6=\\boxed{864}.$"
-}

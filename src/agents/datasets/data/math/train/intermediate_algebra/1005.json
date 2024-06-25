@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[(x^3 + 3x^2 \\sqrt{2} + 6x + 2 \\sqrt{2}) + (x + \\sqrt{2}) = 0.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the equation as\n\\[(x + \\sqrt{2})^3 + (x + \\sqrt{2}) = 0.\\]Then\n\\[(x + \\sqrt{2})[(x + \\sqrt{2})^2 + 1] = 0,\\]so $x = -\\sqrt{2}$ or $(x + \\sqrt{2})^2 = -1.$  For the latter equation,\n\\[x + \\sqrt{2} = \\pm i,\\]so $x = -\\sqrt{2} \\pm i.$\n\nThus, the solutions are $\\boxed{-\\sqrt{2}, -\\sqrt{2} + i, -\\sqrt{2} - i}.$"
-}

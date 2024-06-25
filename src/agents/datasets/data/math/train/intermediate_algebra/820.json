@@ -1,6 +1,0 @@
-{
-    "problem": "Find the roots of $6x^4+19x^3-51x^2+20x$. Enter your answer as a list of numbers separated by commas.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since the polynomial has no constant term, we can immediately factor out an $x$ from every term\n$$x(6x^3+19x^2-51x+20),$$and our first root $x=0$. Let $g(x) = 6x^3+19x^2-51x+20$. Then the remaining roots of our original polynomial are the roots of $g(x)$. By trying out simple values, we can see that $g(0) = 20 > 0$ and $g(1) = 6+19-51+20 = -6<0$. Thus, there must be a root of $g(x)$ between $0$ and $1$. From the Rational Root Theorem, we know that if $g(p/q) = 0$ then $p$ must divide $20$ and $q$ must divide $6$.\n\nChecking rational numbers of the form $p/q$, where $p$ divides $20$ and $q$ divides $6$, and $p/q$ is between $0$ and $1$, we find that\n$$\\begin{aligned} g\\left(\\frac{1}{2}\\right) &= 6\\cdot\\frac{1}{8}+19\\cdot\\frac{1}{4}-51\\cdot\\frac{1}{2}+20 = 0.\n\\end{aligned}$$This means that $2x - 1$ is a factor of $g(x).$ Dividing by $2x-1$ gives us $g(x) = (2x-1)(3x^2+11x-20)$.\n\nThe quadratic $3x^2+11x-20$ factors as $(3x-4)(x+5),$ so our last two roots are $4/3$ and $-5$.\n\nThus, the roots of $6x^4+19x^3-51x^2+20x$ are $\\boxed{0, \\frac{1}{2}, \\frac{4}{3}, -5}$."
-}

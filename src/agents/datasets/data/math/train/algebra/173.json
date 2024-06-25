@@ -1,6 +1,0 @@
-{
-    "problem": "Let $m$ and $n$ satisfy $mn=4$ and $m+n=5$. What is $|m-n|$?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "We have two equations and two variables, so it's possible to solve for $m$ and $n$ directly and then calculate $|m-n|$ to get our answer. However, doing so is messy, so we look for an alternative approach. We square the second equation to get $(m+n)^2 = m^2 + 2mn + n^2 = 25$. Since $mn=4$, we can subtract $4mn = 16$ to get $$m^2 -2mn +n^2 = 9\\Longrightarrow (m-n)^2=9$$ This implies that $m-n =\\pm3$, so $|m-n|=\\boxed{3}$."
-}

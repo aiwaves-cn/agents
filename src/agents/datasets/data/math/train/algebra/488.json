@@ -1,6 +1,0 @@
-{
-    "problem": "A bookstore is deciding what price it should charge for a certain book. After research, the store finds that if the book's price is $p$ dollars (where $p \\le 26$), then the number of books sold per month is $130-5p$. What price should the store charge to maximize its revenue?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The store's revenue is given by: number of books sold $\\times$ price of each book, or $p(130-5p)=130p-5p^2$. We want to maximize this expression by completing the square. We can factor out a $-5$ to get $-5(p^2-26p)$.\n\nTo complete the square, we add $(26/2)^2=169$ inside the parenthesis and subtract $-5\\cdot169=-845$ outside. We are left with the expression\n\\[-5(p^2-26p+169)+845=-5(p-13)^2+845.\\]Note that the $-5(p-13)^2$ term will always be nonpositive since the perfect square is always nonnegative. Thus, the revenue is maximized when $-5(p-13)^2$ equals 0, which is when $p=13$. Thus, the store should charge $\\boxed{13}$ dollars for the book."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest integer $n$ such that  $$(1 + 2 + 3 + \\cdots+ n)^2 < 1^3 + 2^3 + \\cdots+ 7^3?$$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Recall that $$(1 + 2 + 3 + \\ldots + n)^2 = 1^3 + 2^3 + 3^3 +\\ldots + n^3.$$  Thus we have that for $n\\geq 7$, $(1 + 2 + 3 + \\ldots + n)^2 = 1^3 + 2^3 + 3^3 +\\ldots + n^3 \\geq 1^3 + 2^3 +\\ldots + 7^3$, while $(1 + 2 + 3 + \\ldots + 6)^2 = 1^3 + 2^3 + 3^3 +\\ldots + 6^3$, which is less than the desired sum.  So our answer is $\\boxed{6}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $a$ so that the lines with the given equations are perpendicular. \\begin{align*}\ny &= 2x+13 \\\\\n6y+ax &= 6.\n\\end{align*}",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Recall that two lines are perpendicular if and only if the product of their slopes is $-1$.  The first equation is already in slope-intercept form, so we can see that its slope is 2.  Subtract $ax$ and divide by 6 in the second equation to get it in slope-intercept form as well: $y=-\\frac{a}{6}x+1$.  The negative reciprocal of 2 is $-1/2$, so setting $-a/6=-1/2$ we find that $a=\\boxed{3}$ is the value for which the two lines are perpendicular."
-}

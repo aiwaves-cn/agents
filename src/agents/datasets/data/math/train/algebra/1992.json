@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of three numbers $a, b$ and $c$ is 60. If we decrease $a$ by 7, we get the value $N$. If we increase $b$ by 7, we get the value $N$. If we multiply $c$ by 7, we also get the value $N$. What is the value of $N$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Translating words into math, we have the equations \\begin{align*}\na+b+c&=60\\\\\na-7&=N\\\\\nb+7&=N\\\\\n7c&=N\\\\\n\\end{align*} We will express the value of each of $a$, $b$, and $c$ in terms of $N$ and then substitute these equations into the first given equation to solve for $N$. From the second given equation, we have $a=N+7$. From the third given equation, we have $b=N-7$. From the fourth given equation, we have $c=N/7$. Plugging these equations into the first given equation to eliminate $a$, $b$, and $c$, we have $(N+7)+(N-7)+(N/7)=60\\Rightarrow N=\\boxed{28}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the average of all the integer values of $M$ such that $\\frac{M}{56}$ is strictly between $\\frac{3}{7}$ and $\\frac{1}{4}$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Begin by turning $3/7$ and $1/4$ into fractions with denominators of 56 to get $$\\frac{3}{7}=\\frac{24}{56},$$$$\\frac{1}{4}=\\frac{14}{56}.$$We can see that $14<M<24$, so the average of the possible values is $\\dfrac{15+23}{2}=\\dfrac{38}{2}=\\boxed{19}$."
-}

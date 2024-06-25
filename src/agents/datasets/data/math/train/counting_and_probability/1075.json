@@ -1,6 +1,0 @@
-{
-    "problem": "What are the last two digits in the sum of factorials of the first 100 positive integers?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Since for all $n \\ge 10$, $n$ has two factors of 5, $n$ will end in two zeros, and so contributes nothing to the last two digits. So we need only compute $1! + 2! + 3! + 4! + 5! + 6! + 7! + 8! + 9! = 1 + 2 + 6 + 24 + 120 + 720 + 5040 + 40320 + 362880$, and the relevant digits add up to $1 + 2 + 6 + 24 + 20 + 20 + 40 + 20 + 80$ whose last two digits are $\\boxed{13}$."
-}

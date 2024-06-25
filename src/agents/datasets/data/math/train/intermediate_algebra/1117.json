@@ -1,6 +1,0 @@
-{
-    "problem": "Given a sequence $a_1,$ $a_2,$ $a_3,$ $\\dots,$ let $S_n$ denote the sum of the first $n$ terms of the sequence.\n\nIf $a_1 = 1$ and\n\\[a_n = \\frac{2S_n^2}{2S_n - 1}\\]for all $n \\ge 2,$ then find $a_{100}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By definition of $S_n,$ we can write $a_n = S_n - S_{n - 1}.$  Then\n\\[S_n - S_{n - 1} = \\frac{2S_n^2}{2S_n - 1},\\]so $(2S_n - 1)(S_n - S_{n - 1}) = 2S_n^2.$  This simplifies to\n\\[S_{n - 1} = 2S_{n - 1} S_n + S_n.\\]If $S_n = 0,$ then $S_{n - 1} = 0.$  This tells us that if $S_n = 0,$ then all previous sums must be equal to 0 as well.  Since $S_1 = 1,$ we conclude that all the $S_n$ are nonzero.  Thus, we can divide both sides by $S_{n - 1} S_n,$ to get\n\\[\\frac{1}{S_n} = \\frac{1}{S_{n - 1}} + 2.\\]Since $\\frac{1}{S_1} = 1,$ it follows that $\\frac{1}{S_2} = 3,$ $\\frac{1}{S_3} = 5,$ and so on.  In general,\n\\[\\frac{1}{S_n} = 2n - 1,\\]so $S_n = \\frac{1}{2n - 1}.$\n\nTherefore,\n\\[a_{100} = S_{100} - S_{99} = \\frac{1}{199} - \\frac{1}{197} = \\boxed{-\\frac{2}{39203}}.\\]"
-}

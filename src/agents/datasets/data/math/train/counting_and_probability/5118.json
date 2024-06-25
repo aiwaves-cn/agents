@@ -1,6 +1,0 @@
-{
-    "problem": "In a certain cross country meet between 2 teams of 5 runners each, a runner who finishes in the $n$th position contributes $n$ to his teams score. The team with the lower score wins. If there are no ties among the runners, how many different winning scores are possible?\n(A) 10 (B) 13 (C) 27 (D) 120 (E) 126\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The scores of all ten runners must sum to $55$. So a winning score is anything between $1+2+3+4+5=15$ and $\\lfloor\\tfrac{55}{2}\\rfloor=27$ inclusive. It is easy to check that this range is covered by considering $1+2+3+4+x$, $1+2+3+x+10$ and $1+2+x+9+10$, so the answer is $\\boxed{13}$."
-}

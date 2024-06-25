@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $a<c$ and $b<0$. Which of the following must be true?\n\n$ab < ac$\n$a+b<c+b$\n$a-b < c-b$\n$c/a > 1$\n\nEnter your answer as a list of those options that are always true. For instance, if you think only the first and third are true, enter 'A, C'.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If we consider a negative $a$ and a positive $c$, we can see that this is not true.\nIf we subtract $b$ from both sides we get $a<c$ which we know is true.\nAdding $b$ to both sides again gives us $a<c$ which we know is true.\nAgain, if we consider a negative $a$ and a positive $c$, we see that $c/a$ is negative and hence not greater than $1$.\n\nThus, the answer is $\\boxed{B, C}$."
-}

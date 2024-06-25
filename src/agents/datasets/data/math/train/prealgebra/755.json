@@ -1,6 +1,0 @@
-{
-    "problem": "Four of the six numbers 1867, 1993, 2019, 2025, 2109, and 2121 have a mean (average) of 2008. What is the mean (average) of the other two numbers?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The sum of the six given integers is $1867+1993+2019+2025+2109+2121=12134$.\n\nThe four of these integers that have a mean of 2008 must have a sum of $4(2008)=8032$.  (We do not know which integers they are, but we do not actually need to know.)\n\nThus, the sum of the remaining two integers must be $12134-8032=4102$.\n\nTherefore, the mean of the remaining two integers is $\\frac{4102}{2}=\\boxed{2051}$.\n\n(We can verify that 1867, 2019, 2025 and 2121 do actually have a mean of 2008, and that 1993 and 2109 have a mean of 2051.)"
-}

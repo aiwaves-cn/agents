@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\mathbf{A}^{-1} = \\begin{pmatrix} -4 & 1 \\\\ 0 & 2 \\end{pmatrix},$ then find the inverse of $\\mathbf{A}^2.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Note that $(\\mathbf{A}^{-1})^2 \\mathbf{A}^2 = \\mathbf{A}^{-1} \\mathbf{A}^{-1} \\mathbf{A} \\mathbf{A} = \\mathbf{I},$ so the inverse of $\\mathbf{A}^2$ is\n\\[(\\mathbf{A}^{-1})^2 = \\begin{pmatrix} -4 & 1 \\\\ 0 & 2 \\end{pmatrix}^2 = \\boxed{\\begin{pmatrix}16 & -2 \\\\ 0 & 4 \\end{pmatrix}}.\\]"
-}

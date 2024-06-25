@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of two numbers is 15. Four times the smaller number is 60 less than twice the larger number. What is the larger number?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let $y$ be the larger of the numbers.  Since the numbers sum to 15, the other number is $15-y$.   Since four times the smaller number is 60 less than twice the larger, we have: \\begin{align*}\n4(15-y)&=2y-60\\quad\\Rightarrow\\\\\n60-4y&=2y-60\\quad\\Rightarrow\\\\\n120&=6y\\quad\\Rightarrow\\\\\n20&=y.\n\\end{align*} The larger number is $\\boxed{20}$, which makes the smaller number -5. We can check that our answer is correct by plugging the values into the original problem. We get $-5+20=15$ and $4(-5)=2(20)-60$, which result in $15=15$ and $-20=-20$."
-}

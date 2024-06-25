@@ -1,6 +1,0 @@
-{
-    "problem": "A large rectangle has side lengths of $(x+7)$ and $(x+5)$. In the large rectangle, there is a rectangular hole with side lengths of $(2x-3)$ and $(x-2)$. What is the area of the large rectangle (not including the area of the hole)? Express your answer as a polynomial in $x$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The area of the large rectangle is $(x+7)(x+5)$, and the area of the hole is $(2x-3)(x-2)$. To get our answer, we subtract the area of the hole from the area of the large rectangle. \\begin{align*}\n(x&+7)(x+5)-(2x-3)(x-2)\\\\\n&=x(x+5)+7(x+5)-2x(x-2)+3(x-2)\\\\\n&=x^2+5x+7x+35-2x^2+4x+3x-6\\\\\n&=\\boxed{-x^2+19x+29}.\n\\end{align*}"
-}

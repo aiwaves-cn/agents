@@ -1,6 +1,0 @@
-{
-    "problem": "We know the following to be true:\n\n$\\bullet$ 1.  $Z$ and $K$ are integers with $500 < Z < 1000$ and $K > 1;$\n\n$\\bullet$ 2.  $Z$ = $K \\times K^2.$\n\nWhat is the value of $K$ for which $Z$ is a perfect square?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "From the second fact, we know that $Z=K^3.$ $Z$ is a perfect square if $K^3$ is a perfect square, so $Z$ is the sixth power of some integer. Since $500<Z<1000,$ the only value of $Z$ that works is $Z=3^6=729.$ Thus, $K=\\sqrt[3]{729}=\\boxed{9}.$"
-}

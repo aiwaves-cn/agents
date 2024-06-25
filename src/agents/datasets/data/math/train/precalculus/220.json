@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\sec x + \\tan x = \\frac{5}{2},$ then find $\\sec x - \\tan x.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Note that\n\\begin{align*}\n(\\sec x + \\tan x)(\\sec x - \\tan x) &= \\sec^2 x - \\tan^2 x \\\\\n&= \\frac{1}{\\cos^2 x} - \\frac{\\sin^2 x}{\\cos^2 x} \\\\\n&= \\frac{1 - \\sin^2 x}{\\cos^2 x} = \\frac{\\cos^2 x}{\\cos^2 x} = 1.\n\\end{align*}Therefore, $\\sec x - \\tan x = \\boxed{\\frac{2}{5}}.$"
-}

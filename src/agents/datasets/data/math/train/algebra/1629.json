@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ be a positive integer, and define the integers $n=x^2+2x+17$ and $d=2x+5$. When dividing $n$ by $d$, the quotient is $x$, and the remainder is $7$. Find $x$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since we know that the quotient when we divide $n$ by $d$ is $x$ with a remainder of $7$, we can write $n/d = x + 7/d$.  Substituting for $n$ and $d$, this gives $$\\frac{x^2+2x+17}{2x+5}=x+\\frac{7}{2x+5}.$$Multiplying through by $2x+5$ gives\n\n\\begin{align*}\nx^2+2x+17&=x(2x+5)+7\\\\\nx^2+2x+17&=2x^2+5x+7\\\\\n0&=x^2+3x-10\\\\\n0&=(x-2)(x+5).\n\\end{align*}Thus $x=2$ or $x=-5$. We are given that $x$ must be positive, so we have $x=\\boxed{2}$.\n\nTo check, we see that $x^2+2x+17=(2)^2+2(2)+17=25$, and $2x+5=2(2)+5=9$, and indeed, the quotient when $25$ is divided by $9$ is $x=2$, with a remainder of $7$."
-}

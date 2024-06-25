@@ -1,6 +1,0 @@
-{
-    "problem": "What is the period of $y = \\sin x + \\cos x$?",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "From the angle addition formula, we can write\n\\begin{align*}\n\\sin x + \\cos x &= \\sqrt{2} \\left( \\frac{1}{\\sqrt{2}} \\sin x + \\frac{1}{\\sqrt{2}} \\cos x \\right) \\\\\n&= \\sqrt{2} \\left( \\cos \\frac{\\pi}{4} \\sin x + \\sin \\frac{\\pi}{4} \\cos x \\right) \\\\\n&= \\sqrt{2} \\sin \\left( x + \\frac{\\pi}{4} \\right).\n\\end{align*}Thus, the graph of $y = \\sin x + \\cos x$ has period $\\boxed{2 \\pi}.$\n\nThe graph of $y = \\sin x + \\cos x$ is shown below:\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal g(real x)\n{\n\treturn sin(x) + cos(x);\n}\n\ndraw(graph(g,-3*pi,3*pi,n=700,join=operator ..),red);\ntrig_axes(-3*pi,3*pi,-2,2,pi/2,1);\nlayer();\nrm_trig_labels(-5, 5, 2);\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Define a function $f(x)$ by \\[f(x) = \\left\\{ \\begin{aligned} \\sqrt{x} & \\quad \\text{ if } \\sqrt{x} \\text{ is an integer}, \\\\ (f(x-1))^2 - 1 & \\quad \\text{ otherwise}. \\end{aligned}\\right.\\]Compute $f(8).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "According to the second part of the definition of $f,$ the value of $f(8)$ depends on the value of $f(7),$ which depends on the value of $f(6),$ which depends on the value of $f(5),$ which depends on the value of $f(4),$ and $f(4) = \\sqrt{4} = 2$ by the first part of the definition. So, we compute $f(5),$ $f(6),$ $f(7),$ and $f(8),$ in that order: \\[\\begin{aligned} f(5) &= (f(4))^2 - 1 = 2^2 - 1 = 3, \\\\ f(6) &= (f(5))^2 - 1 = 3^2 - 1 = 8, \\\\ f(7) &= (f(6))^2 - 1 = 8^2 - 1 = 63, \\\\ f(8) &= (f(7))^2 - 1 = 63^2 - 1 = \\boxed{3968}. \\end{aligned}\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{A}$ and $\\mathbf{B}$ be matrices such that\n\\[\\mathbf{A} + \\mathbf{B} = \\mathbf{A} \\mathbf{B}.\\]If $\\mathbf{A} \\mathbf{B} = \\begin{pmatrix} 20/3 & 4/3 \\\\ -8/3 & 8/3 \\end{pmatrix},$ find $\\mathbf{B} \\mathbf{A}.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "From $\\mathbf{A} \\mathbf{B} = \\mathbf{A} + \\mathbf{B},$\n\\[\\mathbf{A} \\mathbf{B} - \\mathbf{A} - \\mathbf{B} = \\mathbf{0}.\\]Then $\\mathbf{A} \\mathbf{B} - \\mathbf{A} - \\mathbf{B} + \\mathbf{I} = \\mathbf{I}.$  In the style of Simon's Favorite Factoring Trick, we can write this as\n\\[(\\mathbf{A} - \\mathbf{I})(\\mathbf{B} - \\mathbf{I}) = \\mathbf{I}.\\]Thus, $\\mathbf{A} - \\mathbf{I}$ and $\\mathbf{B} - \\mathbf{I}$ are inverses, so\n\\[(\\mathbf{B} - \\mathbf{I})(\\mathbf{A} - \\mathbf{I}) = \\mathbf{I}.\\]Then $\\mathbf{B} \\mathbf{A} - \\mathbf{A} - \\mathbf{B} + \\mathbf{I} = \\mathbf{I},$ so\n\\[\\mathbf{B} \\mathbf{A} = \\mathbf{A} + \\mathbf{B} = \\mathbf{A} \\mathbf{B} = \\boxed{\\begin{pmatrix} 20/3 & 4/3 \\\\ -8/3 & 8/3 \\end{pmatrix}}.\\]"
-}

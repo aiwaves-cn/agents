@@ -1,6 +1,0 @@
-{
-    "problem": "I have 7 books I want to arrange on a shelf. Two of them are math books, and one is a physics book. How many ways are there for me to arrange the books if I want to put the math books next to each other, and put both of them to the left of the physics book? (Note that all the books are distinguishable.)",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We can arrange the books on the shelf, pretending that the two math books are actually one book because they must be next to each other. In exactly half of these arrangements, the math books will be to the left of the physics book, giving $6!/2=360$ arrangements. However, in each of these arrangements there are two ways to arrange the math books, so the total number of arrangements is $360\\cdot2=\\boxed{720}$."
-}

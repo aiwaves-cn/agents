@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of Jim's weight and Bob's weight is 180 pounds. If you subtract Jim's weight from Bob's weight, you get half of Bob's weight. How many pounds does Bob weigh?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Call Jim's weight $j$ and Bob's weight $b$. We can use the following system of equations to represent the information given: \\begin{align*}\nj + b &= 180 \\\\\nb - j &= \\frac{b}{2} \\\\\n\\end{align*} Adding the two equations together gives $2b = 180 + \\frac{b}{2}$. Solving for $b$ gives $3b = 360$, or $b = 120$. Thus, Bob weighs $\\boxed{120}$ pounds."
-}

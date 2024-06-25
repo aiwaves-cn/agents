@@ -1,6 +1,0 @@
-{
-    "problem": "Find the point in the $xz$-plane that is equidistant from the points $(1,-1,0),$ $(2,1,2),$ and $(3,2,-1).$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Since the point lies in the $xz$-plane, it is of the form $(x,0,z).$  We want this point to be equidistant to the points $(1,-1,0),$ $(2,1,2),$ and $(3,2,-1),$ which gives us the equations\n\\begin{align*}\n(x - 1)^2 + 1^2 + z^2 &= (x - 2)^2 + 1^2 + (z - 2)^2, \\\\\n(x - 1)^2 + 1^2 + z^2 &= (x - 3)^2 + 2^2 + (z + 1)^2.\n\\end{align*}These equations simplify to $2x + 4z = 7$ and $4x - 2z = 12.$  Solving these equation, we find $x = \\frac{31}{10}$ and $z = \\frac{1}{5},$ so the point we seek is $\\boxed{\\left( \\frac{31}{10}, 0, \\frac{1}{5} \\right)}.$"
-}

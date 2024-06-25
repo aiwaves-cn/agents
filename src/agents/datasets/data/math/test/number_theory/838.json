@@ -1,6 +1,0 @@
-{
-    "problem": "If $x^3$ is a positive factor of $10!,$ how many possible integer values of $x$ are there?  (Reminder: For a positive integer $n$, the expression $n!$ stands for the product of the integers from 1 up to (and including) $n$.)",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we factor $10!:$\n\\begin{align*} 10!&=10\\cdot 9\\cdot 8\\cdot 7 \\cdot 6\\cdot 5\\cdot 4\\cdot 3\\cdot 2\\cdot 1\\\\ &=2^8\\cdot 3^4 \\cdot 5^2 \\cdot 7.\\end{align*}\nHence, $x$ can be $1, 2^1, 2^2, 3, 2^1\\cdot 3,\\text{ or }2^2\\cdot 3$ for a total of $\\boxed{6}$ possible values of $x.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $6x^4-14x^3-4x^2+2x-26$ is divided by $2x - 6.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $2x - 6 = 2(x - 3),$ by the Remainder Theorem, we can find the remainder by setting $x = 3.$  Thus, the remainder is\n\\[6 \\cdot 3^4 - 14 \\cdot 3^3 - 4 \\cdot 3^2 + 2 \\cdot 3 - 26 = \\boxed{52}.\\]"
-}

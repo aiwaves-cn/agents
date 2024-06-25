@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of positive divisors of 9!.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The prime factorization of 9! is\n\\[2^7 \\cdot 3^4 \\cdot 5 \\cdot 7,\\]so from the formula for the number of factors of a number, the number of factors of 9! is $(7+1)(4+1)(1+1)(1+1) = \\boxed{160}.$"
-}

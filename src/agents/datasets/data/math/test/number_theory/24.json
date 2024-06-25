@@ -1,6 +1,0 @@
-{
-    "problem": "What is the tens digit in the sum $11^1 + 11^2 + 11^3 + \\ldots + 11^9$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "First of all, we notice that $11 = 1 + 10,$ and so we write $11^n$ as follows: $$(1 + 10)^n = \\binom{n}{0} \\cdot 1^n + \\binom{n}{1} \\cdot 1^{n-1} \\cdot 10^{1} + \\binom{n}{2} \\cdot 1^{n-2} \\cdot 10^{2} + \\cdots$$ We can see that every term after the first two in our expansion has at least two powers of $10,$ therefore they will not contribute to the tens digit of anything. Meanwhile, the first term is always $1,$ and the second term can be simplified to $10n.$\n\nTherefore, we have: \\begin{align*}\n&11^1 + 11^2 + 11^3 + \\cdots + 11^9 \\\\\n&\\qquad\\equiv (1 + 10) + (1 + 20) + \\cdots + (1 + 90) \\pmod{100}. \\\\\n&\\qquad\\equiv 459 \\equiv 59 \\pmod{100}.\n\\end{align*} Thus, the tens digit must be $\\boxed{5}.$"
-}

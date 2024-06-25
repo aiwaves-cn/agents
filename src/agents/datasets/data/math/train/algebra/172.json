@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct $x$-intercepts does the graph of $y = (x-5)(x^2+5x+6)$ have?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "An $x$-intercept occurs when $y=0$.  So, the $x$-intercepts are the solutions to the equation $0 = (x-5)(x^2+5x+6)$.  From this equation, we see that solutions occur when $x-5=0$ and when $x^2+5x+6=0$.  Now, $x^2+5x+6$ factors to $(x+3)(x+2)$.  So, the solutions are $5, -2, -3$, which comes to $\\boxed{3}$ intercepts."
-}

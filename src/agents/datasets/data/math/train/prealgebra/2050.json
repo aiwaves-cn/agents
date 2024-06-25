@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive divisors does $24$ have?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "We will find the positive divisors of 24 by finding pairs that multiply to 24.  We begin with $1$ and $24$, so our list is $$1 \\quad \\underline{\\hphantom{10}} \\quad \\dots \\quad \\underline{\\hphantom{10}} \\quad 24.$$  Checking $2$, we find that $2\\cdot 12=24$, so our list becomes $$1 \\quad 2 \\quad \\underline{\\hphantom{10}} \\quad \\dots \\quad \\underline{\\hphantom{10}} \\quad 12 \\quad 24.$$  Checking $3$, we find that $3\\cdot 8=24$, so our list becomes $$1 \\quad 2 \\quad 3 \\quad \\underline{\\hphantom{10}} \\quad \\dots \\quad \\underline{\\hphantom{10}} \\quad 8 \\quad 12 \\quad 24.$$  Checking $4$, we find that $4\\cdot 6=24$, so our list becomes $$1 \\quad 2 \\quad 3 \\quad 4 \\quad \\underline{\\hphantom{10}} \\quad \\dots \\quad \\underline{\\hphantom{10}} \\quad 6 \\quad 8 \\quad 12 \\quad 24.$$  Checking $5$, we find that $24$ is not divisible by $5$, and since $6$ is already on our list, we are done.  Thus our final list is $$1 \\quad 2 \\quad 3 \\quad 4 \\quad 6 \\quad 8 \\quad 12 \\quad 24.$$  Therefore, we can count the number of numbers in our list to find that $24$ has $\\boxed{8}$ positive divisors."
-}

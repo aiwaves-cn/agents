@@ -1,6 +1,0 @@
-{
-    "problem": "Find the units digit of $13^{19} \\cdot 19^{13}$",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since the tens digits don't matter to us, the problem is the same as finding the units digit of $3^{19} \\cdot 9^{13} = 3^{19} \\cdot 3^{26} = 3^{45}$.  Now we go hunting for the pattern of units digits of powers of 3:  \\begin{align*} 3^1 &= 3 \\\\ 3^2 &= 9 \\\\ 3^3 &= 27 \\\\ 3^4 &= 81 \\\\ 3^5 &= 243 \\end{align*}  The cycle of units digits is 4 long.  Since $45 \\div 4 \\equiv 1\\pmod 4$, we know that $3^{45}$ has the same units digit as $3^1 = \\boxed{3}$."
-}

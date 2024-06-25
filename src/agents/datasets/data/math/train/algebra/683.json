@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\sqrt{2\\sqrt{t-2}} = \\sqrt[4]{7 - t}$, then find $t$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We raise both sides to the fourth power, which is equivalent to squaring twice, in order to get rid of the radicals. The left-hand side becomes $$\\left(\\sqrt{2\\sqrt{t-2}}\\right)^4 = \\left(2\\sqrt{t-2}\\right)^2 = 4 \\cdot (t-2) = 4t-8.$$The right-hand side becomes $\\left(\\sqrt[4]{7-t}\\right)^4 = 7-t$. Setting them equal, $$4t-8 = 7-t \\quad\\Longrightarrow\\quad 5t = 15,$$and $t = \\boxed{3}$.  Checking, we find that this value does indeed satisfy the original equation."
-}

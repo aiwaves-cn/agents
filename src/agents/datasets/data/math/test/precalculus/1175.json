@@ -1,6 +1,0 @@
-{
-    "problem": "The vectors $\\begin{pmatrix} 1 \\\\ - 1 \\\\ 2 \\end{pmatrix},$ $\\begin{pmatrix} 2 \\\\ 4 \\\\ 1 \\end{pmatrix},$ and $\\begin{pmatrix} a \\\\ 1 \\\\ c \\end{pmatrix}$ are pairwise orthogonal.  Enter the ordered pair $(a,c).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Since $\\begin{pmatrix} a \\\\ 1 \\\\ c \\end{pmatrix}$ is orthogonal to both $\\begin{pmatrix} 1 \\\\ - 1 \\\\ 2 \\end{pmatrix}$ and $\\begin{pmatrix} 2 \\\\ 4 \\\\ 1 \\end{pmatrix},$ it must be proportional to their cross product:\n\\[\\begin{pmatrix} 1 \\\\ - 1 \\\\ 2 \\end{pmatrix} \\times \\begin{pmatrix} 2 \\\\ 4 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} -9 \\\\ 3 \\\\ 6 \\end{pmatrix}.\\]We want the $y$-coordinate to be 1, so we can divide by 3, to get $\\begin{pmatrix} -3 \\\\ 1 \\\\ 2 \\end{pmatrix}.$  Thus, $(a,c) = \\boxed{(-3,2)}.$"
-}

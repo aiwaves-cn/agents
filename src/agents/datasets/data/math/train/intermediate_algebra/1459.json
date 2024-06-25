@@ -1,6 +1,0 @@
-{
-    "problem": "The function $y=\\frac{x^3+8x^2+21x+18}{x+2}$ can be simplified into the function $y=Ax^2+Bx+C$, defined everywhere except at $x=D$. What is the sum of the values of $A$, $B$, $C$, and $D$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The fact that the function can be simplified to a quadratic means we can probably divide $(x+2)$ out of the numerator after factoring the numerator into $(x+2)$ and the quadratic $Ax^2+Bx+C$. Using long division or synthetic division, we find that the numerator breaks down into $(x+2)$ and $(x^2+6x+9)$.\n\nNow, we have\n\\[y=\\frac{(x+2)(x^2+6x+9)}{x+2}.\\]After we divide out the $x+2$, we're left with $x^2+6x+9$, so $A=1$, $B=6$, and $C=9$.\n\nThe domain of the quadratic function is all real numbers, but our original function was undefined when the denominator $x+2$ equaled 0. After dividing out the $x+2$ we still have to take into account that the function is undefined at $x+2=0$. So, the function is not defined at $x=-2$, giving us our value for $D$.\nTherefore, $A+B+C+D=1+6+9+(-2)=\\boxed{14}$."
-}

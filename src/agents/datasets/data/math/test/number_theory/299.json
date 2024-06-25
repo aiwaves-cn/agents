@@ -1,6 +1,0 @@
-{
-    "problem": "What is the ones digit of $1 \\cdot 3 \\cdot 5 \\cdot 7 \\cdot 9 \\cdot 11 \\cdot 13$?",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "Instead of just starting to multiply, let's look around to see if we can make things easier first. We see that one of the numbers being multiplied is 5. The commutative and associative properties of multiplication allow us to write the product as \\[\n1 \\cdot 3 \\cdot 5 \\cdot 7 \\cdot 9 \\cdot 11 \\cdot 13 = (\\text{some big odd number})\\cdot 5. \\\\\n\\]Since $a\\cdot 5$ has a ones digit of $5$ for any odd integer value of $a$, it doesn't matter what the big number is. The ones digit of the product is $\\boxed{5}$."
-}

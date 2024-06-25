@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be nonzero real numbers such that\n\\[\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = 7 \\quad \\text{and} \\quad \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c} = 9.\\]Find\n\\[\\frac{a^3}{b^3} + \\frac{b^3}{c^3} + \\frac{c^3}{a^3}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = \\frac{a}{b},$ $y = \\frac{b}{c},$ and $z = \\frac{c}{a}.$  Then $x + y + z = 7$ and $\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} = 9.$  Also,\n\\[xyz = \\frac{a}{b} \\cdot \\frac{b}{c} \\cdot \\frac{c}{a} = 1,\\]so $xy + xz + yz = 9.$\n\nWe want to compute $x^3 + y^3 + z^3.$  Recall the factorization\n\\[x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - xz - yz).\\]Squaring the equation $x + y + z = 7,$ we get\n\\[x^2 + y^2 + z^2 + 2(xy + xz + yz) = 49.\\]Then\n\\[x^2 + y^2 + z^2 - xy - xz - yz = 49 - 3(xy + xz + yz) = 49 - 3 \\cdot 9 = 22.\\]Hence,\n\\[x^3 + y^3 + z^3 = 7 \\cdot 22 + 3 = \\boxed{157}.\\]"
-}

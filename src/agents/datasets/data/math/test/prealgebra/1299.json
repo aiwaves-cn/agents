@@ -1,6 +1,0 @@
-{
-    "problem": "Two bicycle racers cross the starting line on a circular track at 12:15 PM. One cyclist takes $12$ minutes per lap, while the other completes a lap every $16$ minutes. Assuming their speeds remain constant, what is the next time they cross the starting line together?  Your answer should be in the form $h:m_1m_2,$ like 3:45.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We seek the least common multiple of $12$ minutes and $16$ minutes. This gives the amount of time that transpires until the two again cross the starting line together. $12=2^2\\cdot 3$ and $16=2^4$, so taking the highest power of each yields $LCM(12,16)=2^4\\cdot 3=48$ minutes, so that the desired time is $48$ minutes past $\\text{12:15 PM}$, or $\\boxed{\\text{1:03 PM}}$."
-}

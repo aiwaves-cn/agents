@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\sum_{n = 0}^{\\infty}\\cos^{2n}\\theta = 5$, what is the value of $\\cos{2\\theta}$?",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "From the formula for an infinite geometric series,\n\\[\\sum_{n = 0}^\\infty \\cos^{2n} \\theta = 1 + \\cos^2 \\theta + \\cos^4 \\theta + \\dotsb = \\frac{1}{1 - \\cos^2 \\theta} = 5.\\]Hence, $\\cos^2 \\theta = \\frac{4}{5}.$  Then\n\\[\\cos 2 \\theta = 2 \\cos^2 \\theta - 1 = \\boxed{\\frac{3}{5}}.\\]"
-}

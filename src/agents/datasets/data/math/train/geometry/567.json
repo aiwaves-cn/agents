@@ -1,6 +1,0 @@
-{
-    "problem": "How many non-similar triangles have angles whose degree measures are distinct positive integers in  arithmetic progression?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $n-d$, $n$, and $n+d$ be the angles in the triangle. Then \\[\n180 = n-d+n+n+d= 3n, \\quad \\text{so} \\quad n=60.\n\\] Because the sum of the degree measures of two angles of a triangle is less than 180, we have $$180 > n + (n+d) = 120 + d,$$ which implies that $0<d<60$.\n\nThere are $\\boxed{59}$ triangles   with this property."
-}

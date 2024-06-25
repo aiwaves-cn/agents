@@ -1,6 +1,0 @@
-{
-    "problem": "Two interior angles $A$ and $B$ of pentagon $ABCDE$ are $60^{\\circ}$ and $85^{\\circ}$. Two of the remaining angles, $C$ and $D$, are equal and the fifth angle $E$ is $15^{\\circ}$ more than twice $C$. Find the measure of the largest angle.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The sum of the angle measures in a polygon with $n$ sides is $180(n-2)$ degrees.  So, the sum of the pentagon's angles is $180(5-2) = 540$ degrees.\n\nLet $\\angle C$ and $\\angle D$ each have measure $x$, so $\\angle E = 2x + 15^\\circ$.  Therefore, we must have \\[60^\\circ + 85^\\circ + x + x+ 2x + 15^\\circ = 540^\\circ.\\] Simplifying the left side gives $4x + 160^\\circ = 540^\\circ$, so $4x = 380^\\circ$ and $x = 95^\\circ$.  This means the largest angle has measure $2x + 15^\\circ = 190^\\circ + 15^\\circ = \\boxed{205^\\circ}$."
-}

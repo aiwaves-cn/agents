@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of two numbers $x$ and $y$ is 399, and the value of the fraction $\\frac{x}{y}$ is 0.9. What is the value of $y - x$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We have the system of equations: \\begin{align*}\nx + y &= 399 \\\\\n\\frac{x}{y} &= 0.9 \\\\\n\\end{align*} From the second equation, multiplying both sides by $y$ gives $x=.9y$. Next, substituting the second equation into the first to eliminate $x$ gives $.9y+y=399$, or $y=210$. Plugging in this value into the first equation in the original system of equations gives $x+210=399$ or $x=189$. Thus, $y-x=210-189=\\boxed{21}$."
-}

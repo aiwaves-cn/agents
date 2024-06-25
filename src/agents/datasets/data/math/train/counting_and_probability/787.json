@@ -1,6 +1,0 @@
-{
-    "problem": "A point $P$ is randomly selected from the square region with vertices at $(\\pm 2, \\pm 2)$. What is the probability that $P$ is within one unit of the origin? Express your answer as a common fraction in terms of $\\pi$.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The probability that $P$ lies within one unit of the origin is the same as the probability that $P$ lies inside the unit circle centered at the origin, since this circle is by definition the set of points of distance 1 from the origin.\n\n[asy]\ndefaultpen(1);\ndraw((-2,-2)--(-2,2)--(2,2)--(2,-2)--cycle);\n\ndraw(circle((0,0),1));\nfill(circle((0,0),1),gray(.7));\n[/asy]\n\nSince the unit circle centered at the origin lies inside our square, the probability we seek is the area of the circle divided by the area of the square.  Since the circle has radius 1, its area is $\\pi(1^2) = \\pi$.  Since the square has side length 4, its area is $4^2 = 16$.  Therefore the probability in question is $\\boxed{\\frac{\\pi}{16}}$."
-}

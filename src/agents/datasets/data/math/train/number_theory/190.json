@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers less than 1000 are congruent to 6 (mod 11)?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The least positive integer which is congruent to 6 (mod 11) is 6. The other positive integers which are congruent to 6 (mod 11) are $6+11$, $6+22$, $6+33$, and so on. We seek the maximum positive integer $k$ for which $6+11k<1000$. This maximal $k$ is the greatest integer less than $\\frac{1000-6}{11}$, which is 90. So the set of positive integers less than 1000 which are congruent to 6 (mod 11) is  $$\n\\{11(0)+6, 11(1)+6, 11(2)+6, \\ldots, 11(90)+6\\},\n$$and there are $\\boxed{91}$ elements in this set (since there are 91 elements in the set $\\{0,1,2,\\ldots,90\\}$)."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A solid 6-by-6-by-6 cube is constructed from unit cubes and the entire outer surface is painted. What fraction of the unit cubes has at least two painted faces? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The corner cubes and edge cubes are the only ones with at least two painted faces. There are $4\\cdot12=48$ edge cubes and $8$ corner cubes, for a total of $56$ out of $6^3$. The fraction is  \\[\n\\frac{56}{6^3}=\\frac{7\\cdot2^3}{3^3\\cdot2^3}=\\boxed{\\frac{7}{27}}.\n\\]"
-}

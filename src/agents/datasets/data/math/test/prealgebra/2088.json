@@ -1,6 +1,0 @@
-{
-    "problem": "A sheet of 8-inch by 10-inch paper is placed on top of a sheet of $8 \\frac{1}{2}$-inch by 11-inch paper, as shown. What is the area of the region of overlap in square inches?\n\n[asy]draw((0,0)--(10,0)--(10,8)--(0,8)--(0,0)--cycle,linewidth(2));\ndraw((0,8)--(8.5,8)--(8.5,11.5)--(0,11.5)--(0,8)--cycle,linewidth(2));\n\ndraw((8.5,0)--(8.5,8),dashed);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We label the lengths on the diagram:\n[asy]\npair A = (0,0), B = (10,0), C = (10,8), D = (0,8), F = (0,8), G = (8.5,8), H = (8.5,11), I = (0,11), J = (8.5,0);\n\ndraw(A--B--C--D--cycle,linewidth(2));\ndraw(F--G--H--I--cycle,linewidth(2));\ndraw(G--J,dashed);\nlabel(\"8.5\",(A+J)/2,S);\nlabel(\"1.5\",(J+B)/2,S);\nlabel(\"8\",(A+F)/2,W);\nlabel(\"3\",(F+I)/2,W);\n[/asy]\nSo the area of the overlapping region is $8.5\\cdot8=\\boxed{68}$ square inches."
-}

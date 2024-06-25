@@ -1,6 +1,0 @@
-{
-    "problem": "If $x\\%$ of four-digit numbers have a repeated digit (the repeated digits do not need to be adjacent), then what is $x$? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 9000 four-digit numbers, from 1000 to 9999, inclusive. Rather than counting the numbers with repeated digits, we'll count the numbers without a repeated digit. In this case, there are 9 choices for the first digit (all except 0), 9 choices for the second digit (all except the first), 8 choices for the third digit (two are already picked), and 7 choices for the fourth digit (three are already picked). Therefore, there are $9\\cdot9\\cdot8\\cdot7$ numbers without a repeated digit, leaving $9000-9\\cdot9\\cdot8\\cdot7$ numbers with a repeated digit. To find the percent, we divide this result by 9000, so we get $$\\frac{9000-9\\cdot9\\cdot8\\cdot7}{9000}=\\frac{1000-504}{1000}=.496$$which is $49.6$ percent. Therefore, $x = \\boxed{49.6}.$"
-}

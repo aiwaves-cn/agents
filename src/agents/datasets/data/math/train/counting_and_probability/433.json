@@ -1,6 +1,0 @@
-{
-    "problem": "Point $(x,y)$ is randomly picked from the rectangular region with vertices at $(0,0),(2009,0),(2009,2010),$ and $(0,2010)$. What is the probability that $x > 7y$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "To see which points in the rectangle satisfy $x>7y$, we rewrite the inequality as $y<\\frac{1}{7}x$.  This inequality is satisfied by the points below the line $y=\\frac{1}{7}x$.  Drawing a line with slope $\\frac{1}{7}$ and $y$-intercept 0, we obtain the figure below.  We are asked to find the ratio of the area of the shaded triangle to the area of the rectangle.  The vertices of the triangle are $(0,0), (2009,0)$, and $(2009,2009/7)$, so the ratio of areas is  \\[\n\\frac{\\frac{1}{2}(2009)\\left(\\frac{2009}{7}\\right)}{2009(2010)}=\\frac{2009/14}{2010}=\\boxed{\\frac{287}{4020}}.\n\\]\n\n[asy]\nunitsize(7mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\ndotfactor=4;\n\nfill((0,0)--(4,0)--(4,.5714)--cycle,gray);\n\ndraw((-2,0)--(5,0),Arrows(4));\ndraw((0,-2)--(0,5),Arrows(4));\n\ndraw((0,0)--(4,0)--(4,4.2)--(0,4.2)--cycle);\n\ndot((4,4.2));\nlabel(\"$(2009,2010)$\",(4,4.2),NE);\n\ndraw((0,0)--(4.8,.686),linetype(\"4 4\"),Arrows(4));\nlabel(\"$y=x/7$\",(4.8,.686),NE); [/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find all the rational roots of\n\\[2x^3 - 9x^2 - 32x - 21 = 0.\\]Enter all the rational roots, separated by commas.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By the Rational Root Theorem, the only possible rational roots are of the form $\\pm \\frac{a}{b},$ where $a$ divides 21 and $b$ divides 2.  Thus, the possible rational roots are\n\\[\\pm 1, \\ \\pm 3, \\ \\pm 7, \\ \\pm 21, \\ \\pm \\frac{1}{2}, \\ \\pm \\frac{3}{2}, \\ \\pm \\frac{7}{2}, \\ \\pm \\frac{21}{2}.\\]Checking these values, we find that the rational roots are $\\boxed{-\\frac{3}{2}, -1, 7}.$"
-}

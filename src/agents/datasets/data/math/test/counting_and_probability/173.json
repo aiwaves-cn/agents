@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose 2 distinct integers are chosen from 1 through 9, inclusive.  What is the probability that they are both odd?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Let's consider an `outcome' to be a choice of 2 numbers without regard to order.  There are $\\binom{9}{2} = 36$ ways to choose 2 numbers from our set of 9 if we don't care about order.  There are $\\binom{5}{2} = 10$ ways to choose 2 numbers from the 5 odd numbers without regard to order.  Therefore, the probability is $\\frac{10}{36} = \\boxed{\\frac{5}{18}}$."
-}

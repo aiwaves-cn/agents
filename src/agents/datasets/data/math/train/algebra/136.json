@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $$(x+y+z)(xy+xz+yz)=25$$and that $$x^2(y+z)+y^2(x+z)+z^2(x+y)=7$$for real numbers $x$, $y$, and $z$, what is the value of $xyz$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Expanding the first given equation using the distributive property, we have \\begin{align*}\n25&=(x+y+z)(xy+xz+yz)\\\\&=x(xy+xz+yz)+y(xy+xz+yz)+z(xy+xz+yz)\\\\\n&=x^2y+x^2z+xyz+xy^2+xyz+y^2z+xyz+xz^2+yz^2\\\\\n&=3xyz+x^2y+x^2z+xy^2+y^2z+xz^2+yz^2\n\\end{align*}Expanding the second given equation using the distributive property, we have \\begin{align*}\n7&=x^2(y+z)+y^2(x+z)+z^2(x+y)\\\\\n&=x^2y+x^2z+xy^2+y^2z+xz^2+yz^2.\\end{align*}We substitute the equation $$7=x^2y+x^2z+xy^2+y^2z+xz^2+yz^2$$into the expanded form of the first given equation to get \\[25=3xyz+7\\]or $xyz=\\boxed{6}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "One gear turns $33\\frac{1}{3}$ times in a minute.  Another gear turns   45 times in a minute.  Initially, a mark on each gear is pointing  due north.  After how many seconds will the two gears next  have both their marks pointing due north?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "One gear turns $33\\frac{1}{3}=100/3$ times in 60 seconds, so it turns 5/9 times in one second, or 5 times in 9 seconds. The other gear turns 45 times in 60 seconds, so it turns 3/4 times in one second, or 3 times in 4 seconds. To find out after how many seconds the two gears next have both their marks pointing due north, we have to find the least common multiple of $4=2^2$ and $9=3^2$, which is $2^2\\cdot3^2=36$. Therefore, the two gears next have both their marks pointing due north after $\\boxed{36}$ seconds. (One gear turns exactly $5\\times4=20$ times, and the other gear turns exactly $3\\times9=27$ times.)"
-}

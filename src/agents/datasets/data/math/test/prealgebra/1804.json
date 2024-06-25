@@ -1,6 +1,0 @@
-{
-    "problem": "For the eight counties listed below, what was the median number of students in $2005?$\n\n\\begin{tabular}[t]{|l|c|c|c|c|c|}\n\\multicolumn{6}{c}{\\textbf{Number of Students per County}}\\\\\\hline\n\\textbf{COUNTY}&\\textbf{$2001$}&\\textbf{$2002$}&\\textbf{$2003$}&\\textbf{$2004$}&\\textbf{$2005$}\\\\\\hline\nAiken&124&141&130&143&136\\\\\\hline\nBamberg&17&15&15&14&11\\\\\\hline\nBarnwell&25&22&26&28&29\\\\\\hline\nBerkeley&583&557&554&553&524\\\\\\hline\nCalhoun&15&12&10&18&11\\\\\\hline\nCherokee&19&13&18&13&19\\\\\\hline\nChesterfield&46&18&13&22&29\\\\\\hline\nColleton&64&49&52&46&41\\\\\\hline\n\\end{tabular}",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The median of a set of values is a number with half of the values in the set greater than it and half of the values in the set less than it. If there are an even number of values in the set, then the median is the average of the two \"middle\" values. Since there are $8$ counties, the median number of students is the average of the number of students in the county with the $4^\\text{th}$ most number of students and the number of students in the county with the $5^\\text{th}$ most number of students. Looking at the chart, these two counties both have $29$ students, so the median number of students is $\\boxed{29}$ students."
-}

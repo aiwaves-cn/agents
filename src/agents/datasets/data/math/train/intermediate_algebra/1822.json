@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of the first 2011 terms of a geometric sequence is 200. The sum of the first 4022 terms is 380. Find the sum of the first 6033 terms.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let the first term be $a,$ and let the common ratio be $r.$  Then\n\\[a + ar + ar^2 + \\dots + ar^{2010} = 200\\]and\n\\[a + ar + ar^2 + \\dots + ar^{4021} = 380.\\]Subtracting these equations, we get\n\\[ar^{2011} + ar^{2012} + \\dots + ar^{4021} = 180.\\]Then\n\\[r^{2011} (a + ar + \\dots + ar^{2010}) = 180,\\]so\n\\[r^{2011} = \\frac{180}{200} = \\frac{9}{10}.\\]Then the sum of the first 6033 terms is\n\\begin{align*}\na + ar + ar^2 + \\dots + ar^{6032} &= (a + ar + ar^2 + \\dots + ar^{4021}) + (ar^{4022} + ar^{4023} + \\dots + ar^{6032}) \\\\\n&= 380 + r^{4022} (a + ar + \\dots + ar^{2010}) \\\\\n&= 380 + \\left( \\frac{9}{10} \\right)^2 \\cdot 200 \\\\\n&= \\boxed{542}.\n\\end{align*}"
-}

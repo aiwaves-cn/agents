@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of $f(x) = \\sin^4 x - \\sin x \\cos x  +\\cos^4 x.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We know that $\\sin^2 x + \\cos^2 x = 1.$  Squaring, we get\n\\[\\sin^4 x + 2 \\sin^2 x \\cos^2 x + \\cos^4 x = 1.\\]Hence,\n\\begin{align*}\nf(x) &= (\\sin^4 x + \\cos^4 x) - \\sin x \\cos x \\\\\n&= (1 - 2 \\sin^2 x \\cos^2 x) - \\sin x \\cos x \\\\\n&= 1 - \\frac{1}{2} \\sin 2x - \\frac{1}{2} \\sin^2 2x \\\\\n&= \\frac{9}{8} - \\frac{1}{2} \\left( \\sin 2x + \\frac{1}{2} \\right)^2.\n\\end{align*}Since the range of $\\sin x$ is $[-1,1],$ the range of $f(x)$ reaches a minimum when $\\sin 2x = 1,$ in which case $f(x) = 0,$ and a maximum when $\\sin 2x = -\\frac{1}{2},$ in which case $f(x) = \\frac{9}{8}.$  Therefore, the range of $f(x)$ is $\\boxed{\\left[ 0, \\frac{9}{8} \\right]}.$"
-}

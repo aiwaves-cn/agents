@@ -1,6 +1,0 @@
-{
-    "problem": "The parabola with equation $y=ax^2+bx+c$ and vertex $(h,k)$ is reflected about the line $y=k$. This results in the parabola with equation $y=dx^2+ex+f$.  Express $a+b+c+d+e+f$ in terms of $k.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The equation of the original parabola can be written as\n\\[y = a(x - h)^2 + k.\\]The equation of the reflected parabola is then\n\\[y = -a(x - h)^2 + k.\\]Thus,\n\\[ax^2 + bx + c + dx^2 + ex + f = 2k.\\]Setting $x = 1,$ we get $a + b + c + d + e + f = \\boxed{2k}.$"
-}

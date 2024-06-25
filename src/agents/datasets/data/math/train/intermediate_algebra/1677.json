@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x_1< x_2 < x_3$ be the three real roots of the equation $\\sqrt{2014} x^3 - 4029x^2 + 2 = 0$. Find $x_2(x_1+x_3)$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The expression $x_2(x_1+x_3)$ is not symmetric in the roots $x_1, x_2, x_3,$ so Vieta's formulas can't be used directly to find its value. We hope that we can determine some of the values of the roots explicitly. Letting $a = \\sqrt{2014},$ the equation becomes \\[ax^3 - (2a^2+1)x^2 + 2 = 0.\\]We can rearrange this as \\[(ax^3-x^2) - (2a^2x^2-2) = 0,\\]or \\[x^2(ax-1) - 2(ax-1)(ax+1) = 0.\\]Therefore, we have \\[(ax-1)(x^2-2ax-2) = 0.\\]It follows that one of the roots of the equation is $x = \\tfrac{1}{a},$ and the other two roots satisfy the quadratic $x^2 - 2ax - 2 = 0.$ By Vieta's formulas, the product of the roots of the quadratic is $-2,$ which is negative, so one of the roots must be negative and the other must be positive. Furthermore, the sum of the roots is $2a,$ so the positive root must be greater than $2a.$ Since $2a > \\tfrac1a,$ it follows that $\\tfrac{1}{a}$ is the middle root of the equation. That is, $x_2 = \\tfrac1a.$\n\nThen $x_1$ and $x_3$ are the roots of $x^2-2ax-2=0,$ so by Vieta, $x_1+x_3=2a.$ Thus, \\[x_2(x_1+x_3) = \\frac1a \\cdot 2a = \\boxed{2}.\\]"
-}

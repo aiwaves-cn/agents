@@ -1,6 +1,0 @@
-{
-    "problem": "Wanda is trying to locate the Fermat point $P$ of $\\triangle ABC$, where $A$ is at the origin, $B$ is at $(8,-1)$, and $C$ is at $(5,4)$ (the Fermat point is the point such that the sum of its distances from the vertices of a triangle is minimized). She guesses that the point is at $P = (4,2)$, and computes the sum of the distances from $P$ to the vertices of $\\triangle ABC$. If she obtains $m + n\\sqrt{5}$, where $m$ and $n$ are integers, what is $m + n$?\n\n[asy]\nstring sp(pair P1, string P2){return \"$\" + P2 + \"\\,(\" + string(P1.x) + \",\" + string(P1.y) + \")$\";}\nsize(150); defaultpen(fontsize(10)); draw((-3,0)--(10,0),Arrows(4)); draw((0,-3)--(0,8),Arrows(4)); pair A=(0,0),B=(8,-1),C=(5,4),P=(4,2); draw(A--B--C--cycle, linewidth(0.7)); draw(A--P, dashed); draw(B--P, dashed); draw(C--P, dashed); label(sp(A,\"A\"),A,NW); label(sp(B,\"B\"),B,S); label(sp(C,\"C\"),C,N); label(sp(P,\"P\"),P,(-0.5,-2.8)); dot(A); dot(B); dot(C); dot(P);\n[/asy]",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "By the distance formula,  \\begin{align*}\nAP &= \\sqrt{(4-0)^2 + (2-0)^2} = \\sqrt{16 + 4} = 2\\sqrt{5} \\\\\nBP &= \\sqrt{(4-8)^2 + (2-(-1))^2} = \\sqrt{16 + 9} = 5 \\\\\nCP &= \\sqrt{(4-5)^2 + (2-4)^2} = \\sqrt{1+4} = \\sqrt{5}\n\\end{align*}Hence, $AP + BP + CP = 5 + 3\\sqrt{5}$, and $m+n = \\boxed{8}$."
-}

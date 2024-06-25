@@ -1,6 +1,0 @@
-{
-    "problem": "Determine $\\sqrt[6]{1061520150601}$ without a calculator.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We can write\n\\begin{align*}\n1061520150601 &= 1 \\cdot 100^6 + 6 \\cdot 100^5 + 15 \\cdot 100^4\\\\\n&\\quad + 20 \\cdot 100^3+ 15 \\cdot 100^2 + 6 \\cdot 100 + 1. \\\\\n\\end{align*}Notice that the cofficients on powers of 100 are all binomial. In fact, we have\n\\begin{align*}\n1061520150601 &= \\binom66 \\cdot 100^6 + \\binom65 \\cdot 100^5 + \\binom64 \\cdot 100^4 \\\\\n&\\quad+ \\binom63 \\cdot 100^3 + \\binom62 \\cdot 100^2 + \\binom61 \\cdot 100 + \\binom60.\\\\\n\\end{align*}By the binomial theorem, this is equal to $(100 + 1)^6$, so its sixth root is $\\boxed{101}$."
-}

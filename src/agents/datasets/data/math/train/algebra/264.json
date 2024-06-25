@@ -1,6 +1,0 @@
-{
-    "problem": "Each letter represents a non-zero digit. What is the value of $t?$ \\begin{align*}\nc + o &= u \\\\\nu + n &= t \\\\\nt + c &= s \\\\\no + n + s &= 12\n\\end{align*}",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Sum the first two equations to find $c+o+n=t.$ Solve the third equation for $c$ to find $c=s-t,$ and substitute $s-t$ for $c$ in $c+o+n=t$ to find $o+n+s-t=t\\implies o+n+s=2t.$ Substitute $12$ for $o+n+s$ to find $t=12/2=\\boxed{6}.$"
-}

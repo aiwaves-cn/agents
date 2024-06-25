@@ -1,6 +1,0 @@
-{
-    "problem": "How many whole numbers less than $18,\\!632$ are congruent to $ 23 \\pmod {37} $?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Every positive integer, $ n \\equiv 23\\pmod{37}, $ can be written in the form: $23 + 37k$. Thus for every $n<18,632,$ $$0 < 23+37k < 18,632.$$ Since $k$ must be a whole number, $$0 \\le k \\le 502.$$\n\n\nThe set of all $ n \\equiv 23\\pmod{37} < 18,632$ is then: $$ \\{ 23+37(0), \\; 23+37(1), \\; 23+37(2), \\; ..., \\; 23+37(502) \\}. $$ Counting the number of elements in this set yields $502-0+1= \\boxed{503}$ positive integers less than 18,632 which are congruent to $23\\pmod{37}.$"
-}

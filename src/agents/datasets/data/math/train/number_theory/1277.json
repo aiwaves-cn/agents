@@ -1,6 +1,0 @@
-{
-    "problem": "When the set of natural numbers is listed in ascending order, what is the smallest prime number that occurs after a sequence of five consecutive positive integers all of which are nonprime?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Consider the differences between consecutive prime numbers and look for the first difference of 6 or greater.  The first several prime numbers are \\[\n2,3,5,7,11,13,17,19,23,29,31, 37,\\ldots,\n\\] and the differences between consecutive terms of this sequence are  \\[\n1,2,2,4,2,4,2,4,6,2,\\ldots.\n\\] The first appearance of a difference of 6 or greater occurs between 23 and $\\boxed{29}$."
-}

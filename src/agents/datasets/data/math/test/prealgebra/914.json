@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram below, we have $\\overline{ST}\\parallel\\overline{QR}$, $\\angle P= 40^\\circ$, and $\\angle Q =35^\\circ$. Find the measure of $\\angle STR$ in degrees.\n\n[asy]\npair P,Q,R,SS,T;\nQ = (0,0);\nR = (1,0);\nP = (1.1,0.5);\nSS = 0.6*P;\nT = R + 0.6*(P-R);\ndraw(T--SS--P--R--Q--SS);\nlabel(\"$P$\",P,N);\nlabel(\"$S$\",SS,NW);\nlabel(\"$Q$\",Q,S);\nlabel(\"$R$\",R,S);\nlabel(\"$T$\",T,ENE);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "From $\\triangle PQR$, we have $\\angle R = 180^\\circ - \\angle Q - \\angle P = 105^\\circ$.  Since $\\overline{ST}\\parallel \\overline{QR}$, we have $\\angle STR = 180^\\circ - \\angle R = \\boxed{75^\\circ}$."
-}

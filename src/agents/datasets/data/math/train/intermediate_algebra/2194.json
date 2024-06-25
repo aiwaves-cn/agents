@@ -1,6 +1,0 @@
-{
-    "problem": "A sequence of integers is defined as follows: $a_i = i$ for $1 \\le i \\le 5,$ and\n\\[a_i = a_1 a_2 \\dotsm a_{i - 1} - 1\\]for $i > 5.$  Evaluate $a_1 a_2 \\dotsm a_{2011} - \\sum_{i = 1}^{2011} a_i^2.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "For $i \\ge 6,$ $a_i = a_1 a_2 \\dotsm a_{i - 1} - 1.$  So\n\\begin{align*}\na_{i + 1} &= a_1 a_2 \\dotsm a_i - 1 \\\\\n&= (a_1 a_2 \\dotsm a_{i - 1}) a_i - 1 \\\\\n&= (a_i + 1) a_i - 1 \\\\\n&= a_i^2 + a_i - 1.\n\\end{align*}Then $a_i^2 = a_{i + 1} - a_i + 1,$ so\n\\begin{align*}\na_1 a_2 \\dotsm a_{2011} - \\sum_{i = 1}^{2011} a_i^2 &= a_{2012} + 1 - (a_1^2 + a_2^2 + a_3^2 + a_4^2 + a_5^2) - \\sum_{i = 6}^{2011} (a_{i + 1} - a_i + 1) \\\\\n&= a_{2012} + 1 - (a_1^2 + a_2^2 + a_3^2 + a_4^2 + a_5^2) - (a_{2012} - a_6 + 2006) \\\\\n&= a_6 - (a_1^2 + a_2^2 + a_3^2 + a_4^2 + a_5^2) - 2005 \\\\\n&= 119 - (1^2 + 2^2 + 3^2 + 4^2 + 5^2) - 2005 \\\\\n&= \\boxed{-1941}.\n\\end{align*}"
-}

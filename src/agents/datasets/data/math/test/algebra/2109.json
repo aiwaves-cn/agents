@@ -1,6 +1,0 @@
-{
-    "problem": "If the two roots of the quadratic $4x^2+7x+k$ are $\\frac{-7\\pm i\\sqrt{15}}{8}$, what is $k$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Using the quadratic formula, we find that the roots of the quadratic are $\\frac{-7\\pm\\sqrt{7^2-4(4)(k)}}{8}=\\frac{-7\\pm\\sqrt{49-16k}}{8}$. Since the problem tells us that these roots must equal $\\frac{-7\\pm\\sqrt{15}i}{8}$, \\begin{align*} \\sqrt{49-16k}&=\\sqrt{15}i\n\\\\\\Rightarrow\\qquad \\sqrt{49-16k}&=\\sqrt{-15}\n\\\\\\Rightarrow\\qquad 49-16k&=-15\n\\\\\\Rightarrow\\qquad 16k&=64\n\\\\\\Rightarrow\\qquad k&=\\boxed{4}.\n\\end{align*}"
-}

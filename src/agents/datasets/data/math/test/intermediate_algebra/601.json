@@ -1,6 +1,0 @@
-{
-    "problem": "Find $q(x)$ if the graph of $\\frac{3x^3-x^2-10x}{q(x)}$ has a hole at $x=2$, a vertical asymptote at $x=-1$, no horizontal asymptote, and $q(1) = -6$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Factorising the numerator gives us\n$$\\frac{3x^3-x^2-10x}{q(x)} = \\frac{x(x-2)(3x+5)}{q(x)}.$$There will only be a hole at $x=2$ if both the numerator and denominator are $0$ when $x=2$. We can see that this is already true for the numerator, hence $q(x)$ must have a factor of $x-2$.\n\nSince there is a vertical asymptote at $x=-1$, $q(-1) = 0$. By the Factor theorem, $q(x)$ must have a factor of $x+1$.\n\nSince there is no horizontal asymptote, we know that the degree of $q(x)$ must be less than the degree of the numerator. The numerator has a degree of $3$, which means that $q(x)$ has degree at most $2$.\n\nPutting all of this together, we have that $q(x) = a(x-2)(x+1)$ for some constant $a$. Since $q(1) = -6$, we have $a(1-2)(1+1) = -6$. which we can solve to get $a = 3$.  Hence, $q(x) = \\boxed{3(x-2)(x+1)} = 3x^2-3x-6$."
-}

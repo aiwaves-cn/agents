@@ -1,6 +1,0 @@
-{
-    "problem": "The value of $\\log_{10}{579}$ is between the consecutive integers $a$ and $b$.  Find $a+b$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We can have $\\log_{10}100=2$ and $\\log_{10}1000=3$.  Since $\\log_{10}x$ increases as $x$ increases, we know that $\\log_{10}100<\\log_{10}579<\\log_{10}1000$, meaning $2<\\log_{10}579<3$.  Thus, the desired sum is $2+3=\\boxed{5}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If the six solutions of $x^6=-64$ are written in the form $a+bi$, where $a$ and $b$ are real, find the product of those solutions with $a>0.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We write $-64 = 2^6 \\operatorname{cis} 180^\\circ,$ so $x^6 = 2^6 \\operatorname{cis} 180^\\circ.$  The solutions are of the form\n\\[x = 2 \\operatorname{cis} (30^\\circ + 60^\\circ k),\\]where $0 \\le k \\le 5.$\n\n[asy]\nunitsize(1 cm);\n\nint i;\n\ndraw(Circle((0,0),2));\ndraw((-2.2,0)--(2.2,0));\ndraw((0,-2.2)--(0,2.2));\n\ndot(\"$30^\\circ$\", 2*dir(30), dir(30));\ndot(\"$90^\\circ$\", 2*dir(90), NE);\ndot(\"$150^\\circ$\", 2*dir(150), dir(150));\ndot(\"$210^\\circ$\", 2*dir(210), dir(210));\ndot(\"$270^\\circ$\", 2*dir(270), SW);\ndot(\"$330^\\circ$\", 2*dir(330), dir(330));\n[/asy]\n\nThe solutions where the real part is positive are then $2 \\operatorname{cis} 30^\\circ$ and $2 \\operatorname{cis} 330^\\circ,$ and their product is $2 \\operatorname{cis} 30^\\circ \\cdot 2 \\operatorname{cis} 330^\\circ = 4 \\operatorname{cis} 360^\\circ = \\boxed{4}.$"
-}

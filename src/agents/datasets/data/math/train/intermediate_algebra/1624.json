@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the value of $k$ such that the equation\n\\[\\frac{x + 2}{kx - 1} = x\\]has exactly one solution.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Assume $k \\neq 0.$  Then\n\\[x + 2 = x(kx - 1) = kx^2 - x,\\]so $kx^2 - 2x - 2 = 0.$  This quadratic has exactly one solution if its discriminant is 0, or $(-2)^2 - 4(k)(-2) = 4 + 8k = 0.$  Then $k = -\\frac{1}{2}.$  But then\n\\[-\\frac{1}{2} x^2 - 2x - 2 = 0,\\]or $x^2 + 4x + 4 = (x + 2)^2 = 0,$ which means $x = -2,$ and\n\\[\\frac{x + 2}{kx - 1} = \\frac{x + 2}{-\\frac{1}{2} x - 1}\\]is not defined for $x = -2.$\n\nSo, we must have $k = 0.$  For $k = 0,$ the equation is\n\\[\\frac{x + 2}{-1} = x,\\]which yields $x = -1.$  Hence, $k = \\boxed{0}$ is the value we seek."
-}

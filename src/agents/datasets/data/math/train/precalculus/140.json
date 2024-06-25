@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be angles such that\n\\[\\cos (a + b) = \\cos a + \\cos b.\\]Find the maximum value of $\\cos a.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "From $\\cos (a + b) = \\cos a + \\cos b,$ $\\cos a = \\cos (a + b) - \\cos b.$  Then from sum-to-product,\n\\[\\cos (a + b) - \\cos b = -2 \\sin \\frac{a + 2b}{2} \\sin \\frac{a}{2}.\\]Let $k = \\sin \\frac{a + 2b}{2},$ so\n\\[\\cos a = -2k \\sin \\frac{a}{2}.\\]Then\n\\[\\cos^2 a = 4k^2 \\sin^2 \\frac{a}{2} = 4k^2 \\cdot \\frac{1}{2} (1 - \\cos a) = 2k^2 (1 - \\cos a),\\]so\n\\[\\frac{\\cos^2 a}{1 - \\cos a} = 2k^2 \\le 2.\\]Then $\\cos^2 a \\le 2 - 2 \\cos a,$ so\n\\[\\cos^2 a + 2 \\cos a + 1 \\le 3.\\]This means $(\\cos a + 1)^2 \\le 3,$ so $\\cos a + 1 \\le \\sqrt{3},$ or $\\cos a \\le \\sqrt{3} - 1.$\n\nEquality occurs if we take $a = \\arccos (\\sqrt{3} - 1)$ and $b = \\frac{3 \\pi - a}{2}$ (which will make $k = \\sin \\frac{a + 2b}{2} = -1$), so the maximum value of $\\cos a$ is $\\boxed{\\sqrt{3} - 1}.$"
-}

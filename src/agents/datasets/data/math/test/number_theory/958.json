@@ -1,6 +1,0 @@
-{
-    "problem": "Let an integer $x$ be bad if there is no way to insert a colon among the digits of $x$ to form a time of day (on a twelve-hour, digital clock), and good if a colon can be inserted to form a time. For example, 100 is good because we can write 1:00, but 164 is bad. How many bad integers between 100 and 200 are equivalent to 3 mod 4?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "A way of obtaining all good integers is by analyzing all possible times and removing the colon. Therefore, we get that the integers between 100 and 159 are good, along with the integer 200. Therefore, the integers between 160 and 199 are all bad. Since we can write an integer equivalent to 3 mod 4 in the from $4k+3$, we have to solve the inequalities $4k+3 \\ge 160$ and $4k+3 \\le 199$. The first inequality has solution $k \\ge \\frac{157}{4}$, and the second inequality has solution $k \\le 49$. Since $k$ must be an integer, $k$ is between 40 and 49. There are $\\boxed{10}$ such integers."
-}

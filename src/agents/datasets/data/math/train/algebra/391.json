@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=\\frac{16}{5+3x}$, what is the value of $\\left[f^{-1}(2)\\right]^{-2}$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Substituting $f^{-1}(x)$ into our expression for $f$, we get \\[f(f^{-1}(x))=\\frac{16}{5+3f^{-1}(x)}.\\]Since $f(f^{-1}(x))=x$ for all $x$ in the domain of $f^{-1}$, we have \\[x=\\frac{16}{5+3f^{-1}(x)}.\\]When $x=2$ this says \\[2=\\frac{16}{5+3f^{-1}(2)}.\\]Solving for $f^{-1}(2)$, we find $f^{-1}(2) = 1$.  Then $[f^{-1}(2)]^{-2} = 1^{-2} = \\boxed{1}$."
-}

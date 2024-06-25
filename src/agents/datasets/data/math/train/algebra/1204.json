@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\dfrac{5+12i}{2-3i}$. Your answer should be of the form $a+bi$, where $a$ and $b$ are both real numbers and written as improper fractions (if necessary).",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Multiplying the numerator and denominator by the conjugate of the denominator, we have \\begin{align*}\n\\dfrac{5+12i}{2-3i} \\cdot \\frac{2+3i}{2+3i} &= \\frac{5(2) + 5(3i) + 12i(2) +12i(3i)}{2(2) + 2(3i) + -3i(2) -3i(3i)}\\\\\n& = \\frac{-26+39i}{13} \\\\\n&= \\boxed{-2+3i}.\n\\end{align*}"
-}

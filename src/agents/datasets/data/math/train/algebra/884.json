@@ -1,6 +1,0 @@
-{
-    "problem": "What is the $x$-coordinate of the point on the $x$-axis that is equidistant from points $A( -2, 0)$ and $B(0,4)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Because the point for which we are looking is on the $x$-axis, we know that it is of the form $(x, 0)$. We apply the distance formula. The distance from A is  \\begin{align*}\n\\sqrt{(-2-x)^2+(0-0)^2} &= \\sqrt{x^2+4x+4}\n\\end{align*} The distance from B is  \\begin{align*}\n\\sqrt{(0-x)^2 + (4-0)^2} &= \\sqrt{x^2+16}\n\\end{align*} Because the point is equidistant from A and B, we set the two distances equal: $x^2+4x+4 = x^2 + 16$. Simplifying gives us $4x = 12$, or $x = \\boxed{3}$."
-}

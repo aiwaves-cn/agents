@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r(\\theta) = \\frac{1}{1-\\theta}$. What is $r(r(r(r(r(r(30))))))$ (where $r$ is applied $6$ times)?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We evaluate $r$ several times to see if there is a pattern. Indeed, $r(\\theta) = \\frac{1}{1-\\theta}$, so \\begin{align*}\nr(r(\\theta)) &= r\\left(\\frac{1}{1- \\theta}\\right) = \\frac{1}{1 - \\frac{1}{1-\\theta}} \\cdot \\frac{1 - \\theta}{1 - \\theta} \\\\ &= \\frac{1 - \\theta}{1 - \\theta - 1} = \\frac{1 - \\theta}{- \\theta} = 1 - \\frac{1}{\\theta}.\n\\end{align*} Then, $$r(r(r(\\theta ))) = r\\left(1 - \\frac 1{\\theta}\\right) = \\frac{1}{1 - \\left(1 - \\frac 1{\\theta}\\right)} = \\frac{1}{\\frac {1}{\\theta}} = \\theta.$$ Hence, for any $\\theta$, we have that $r(r(r(\\theta))) = \\theta$ is the identity. Then, $$r(r(r(r(r(r(30)))))) = r(r(r(30))) = \\boxed{30}.$$"
-}

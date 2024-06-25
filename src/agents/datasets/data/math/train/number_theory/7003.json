@@ -1,6 +1,0 @@
-{
-    "problem": "The numbers in the sequence $101$, $104$, $109$, $116$,$\\ldots$ are of the form $a_n=100+n^2$, where $n=1,2,3,\\ldots$ For each $n$, let $d_n$ be the greatest common divisor of $a_n$ and $a_{n+1}$. Find the maximum value of $d_n$ as $n$ ranges through the positive integers.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $(x,y)$ denotes the greatest common divisor of $x$ and $y$, then we have $d_n=(a_n,a_{n+1})=(100+n^2,100+n^2+2n+1)$. Now assuming that $d_n$ divides $100+n^2$, it must divide $2n+1$ if it is going to divide the entire expression $100+n^2+2n+1$.\nThus the equation turns into $d_n=(100+n^2,2n+1)$. Now note that since $2n+1$ is odd for integral $n$, we can multiply the left integer, $100+n^2$, by a power of two without affecting the greatest common divisor. Since the $n^2$ term is quite restrictive, let's multiply by $4$ so that we can get a $(2n+1)^2$ in there.\nSo $d_n=(4n^2+400,2n+1)=((2n+1)^2-4n+399,2n+1)=(-4n+399,2n+1)$. It simplified the way we wanted it to! Now using similar techniques we can write $d_n=(-2(2n+1)+401,2n+1)=(401,2n+1)$. Thus $d_n$ must divide $\\boxed{401}$ for every single $n$. This means the largest possible value for $d_n$ is $401$, and we see that it can be achieved when $n = 200$."
-}

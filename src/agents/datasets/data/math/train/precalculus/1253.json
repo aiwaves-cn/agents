@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be angles such that $\\sin (a + b) = \\frac{3}{4}$ and $\\sin (a - b) = \\frac{1}{2}.$  Find $\\frac{\\tan a}{\\tan b}.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "By product-to-sum,\n\\[2 \\sin a \\cos b = \\sin (a + b) + \\sin (a - b) = \\frac{3}{4} + \\frac{1}{2} = \\frac{5}{4}\\]and\n\\[2 \\cos a \\sin b = \\sin (a + b) - \\sin (a - b) = \\frac{3}{4} - \\frac{1}{2} = \\frac{1}{4}.\\]Dividing these equations, we get\n\\[\\frac{\\sin a \\cos b}{\\cos a \\sin b} = 5,\\]which simplifies to $\\frac{\\tan a}{\\tan b} = \\boxed{5}.$"
-}

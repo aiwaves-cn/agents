@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of a positive number and its square is 156. What is the number?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "To do this problem rigorously, simply note that if $n$ is your number, the sum of it and its square is: $n^2 + n = n(n+1) = 156$.  Factoring 156 yields a prime factor of 13, and normally you'd have to check other combinations of factors, but the factoring out of 13 conveniently leaves 12 as the product of the other factors, which yields $n = \\boxed{12}$.\n\nWe can also solve it as a quadratic equation. $n^2 + n = 156$ becomes $n^2 + n - 156 = 0$. Factoring, we find that $(n - 12)(n + 13) = 0.$ This gives us $n = 12$ or $n = -13,$ but $n$ must be positive, so $n = \\boxed{12}$.\n\n\nHowever, in the countdown round, you're going to need to do this quickly, and the quickest way to do this (if you have the first 20 or so squares memorized) is to think of which squares are closest to 156 (since adding by the number itself is small compared to the magnitude of squaring), and then note that $13^2$ is too large by a little bit (169), at which point you should simply instinctively guess $\\boxed{12}$, because $12^2$ is less than 156, and that $11^2$ should be way too small ($121+11 = 132$)."
-}

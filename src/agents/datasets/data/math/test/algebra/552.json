@@ -1,6 +1,0 @@
-{
-    "problem": "What is the domain of the function $$f(x) = \\frac{(2x-3)(2x+5)}{(3x-9)(3x+6)}~?$$ Express your answer as an interval or as a union of intervals.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have $x$ in the domain of $f(x)$ as long as the denominator, $(3x-9)(3x+6)$, is nonzero. This is true for all $x$ except the solutions to the equations $3x-9=0$ and $3x+6=0$. These solutions are $x=3$ and $x=-2$, respectively.\n\nTherefore, the domain of $f(x)$ is all real numbers except $3$ and $-2$. Expressed as a union of intervals, the domain is $\\boxed{(-\\infty,-2)\\cup (-2,3)\\cup (3,\\infty)}$."
-}

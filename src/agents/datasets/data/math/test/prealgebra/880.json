@@ -1,6 +1,0 @@
-{
-    "problem": "In octagon $ABCDEFGH$, every side is perpendicular to each of its adjacent sides. What is the perimeter of $ABCDEFGH$?\n\n[asy]\ndraw((0,0)--(10,0)--(10,6)--(6,6)--(6,2)--(2,2)--(2,10)--(0,10)--(0,0)--cycle,linewidth(2));\n\nlabel(\"A\",(0,10),W);\nlabel(\"B\",(0,0),W);\nlabel(\"C\",(10,0),E);\nlabel(\"D\",(10,6),NE);\nlabel(\"E\",(6,6),NW);\nlabel(\"F\",(6,2),SE);\nlabel(\"G\",(2,2),SW);\nlabel(\"H\",(2,10),NE);\n\nlabel(\"10\",(5,0),S);\nlabel(\"6\",(10,3),E);\nlabel(\"4\",(6,4),E);\nlabel(\"8\",(2,6),E);\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Consider translating segment $GF$ vertically until $G$ coincides with $H$, and then translate $ED$ up until $E$ coincides with $F$.  Then we have that $AH + GF + ED = BC = 10$.  Also, we see that $AB = DC - EF + GH = 10$.  Thus the perimeter of the figure is $(AH+GF+ED) + AB + BC + HG + EF + DC = 10 + 10 + 10 + 8 + 4 + 6 = \\boxed{48}$."
-}

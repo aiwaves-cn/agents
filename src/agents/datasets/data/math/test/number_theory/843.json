@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangle has integer side lengths. One pair of opposite sides is increased by $30\\%$ and the other pair of sides is decreased by $20\\%$. The new side lengths are also integers. What is the smallest possible area, in square units, of the new rectangle?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $a$ and $b$ be the original side lengths.  The new side lengths are $1.3a=13a/10$ and $0.8b=4b/5$.  Therefore, the smallest possible integer values of $a$ and $b$ are $a=10$ and $b=5$.  The new side lengths are $13$ and $4$, and the area of the new rectangle is $13\\cdot4=\\boxed{52}$ square units."
-}

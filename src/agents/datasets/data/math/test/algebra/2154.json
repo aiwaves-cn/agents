@@ -1,6 +1,0 @@
-{
-    "problem": "If the sum of three real numbers is $0$ and their product is $17$, then what is the sum of their cubes?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the three real numbers be $x,y,z$. We want to find a way to relate $x^3 + y^3 + z^3$, $x+y+z$, and $xyz$. As a guess, we can try to expand the quantity \\begin{align*}\n(x+y+z)^3 &= x^3 + y^3 + z^3 \\\\\n&\\;\\; + 3x^2y + 3x^2z + 3y^2x + 3y^2z \\\\\n& \\;\\; + 3z^2x + 3z^2y + 6xyz.\n\\end{align*} Substituting $x+y+z = 0$, we obtain $$x^3 + y^3 + z^3 = -3(x^2y + x^2z + y^2x + y^2z + z^2x + z^2y + 2xyz).$$ After some experimentation, we notice that we can group certain terms to factor out a $x+y+z$ term, such as that $x^2y + y^2x + xyz = xy(x+y+z) = 0$. Similarly, $z^2x + x^2x + xyz = xz(x+y+z)$ and $y^2z + z^2y + xyz = yz(x+y+z)$. Hence, the equation reduces to $x^3 + y^3 + z^3 = -3(-xyz) = 3xyz = \\boxed{51}.$\n\nThis also follows from the following identity about the sum of three cubes: $$x^3 + y^3 + z^3 - 3xyz = (x+y+z)(x^2 + y^2 + z^2 - xy - yz - zx).$$"
-}

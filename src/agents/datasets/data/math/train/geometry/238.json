@@ -1,6 +1,0 @@
-{
-    "problem": "The area of rectangle $ABCD$ with vertices $A$(0, 0), $B$(0, 4), $C$($x$, 4) and $D$($x$, 0) is 28 square units. If $x > 0$, what is the value of $x$?",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Plotting the points, we see that the dimensions of the rectangle are $x$ and $4$.  The area of the rectangle is $(\\text{length})(\\text{width})=4x$, so $4x=28$ and $x=\\boxed{7}$. [asy]\nsize(5cm);\nimport graph;\ndefaultpen(linewidth(0.7)+fontsize(12));\nreal x = 7;\npair A=(0,0), B=(0,4), C=(x,4), D=(x,0);\npair[] dots = {A,B,C,D};\ndot(dots);\ndraw(A--B--C--D--cycle);\nxaxis(-2,9,Arrows(4));\nyaxis(-2,7,Arrows(4));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,NW);\nlabel(\"$C$\",C,NE);\nlabel(\"$D$\",D,SE);\nlabel(\"$x$\",(B+C)/2,N);\nlabel(\"$4$\",(C+D)/2,E);[/asy]"
-}

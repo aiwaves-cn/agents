@@ -1,6 +1,0 @@
-{
-    "problem": "Find the projection of the vector $\\begin{pmatrix} 4 \\\\ 5 \\end{pmatrix}$ onto the vector $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From the formula for a projection,\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}} \\begin{pmatrix} 4 \\\\ 5 \\end{pmatrix} = \\frac{\\begin{pmatrix} 4 \\\\ 5 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} = \\frac{8}{4} \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 4 \\\\ 0 \\end{pmatrix}}.\\]"
-}

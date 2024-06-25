@@ -1,6 +1,0 @@
-{
-    "problem": "Alistair Inc. shipped 32 packs of batteries to a retail store. Regular packs contain four batteries each, and super packs contain six batteries. A total of 166 batteries were shipped. How many regular packs were sent?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Call the number of regular packs $r$ and the number of super packs $s$. We can use the following system of equations to represent the information given:  \\begin{align*}\nr + s &= 32 \\\\\n4r + 6s &= 166 \\\\\n\\end{align*} Multiplying the first equation by six and subtracting the second equation from that yields $(6r - 4r) + (6s - 6s) = (192 - 166)$. Solving for $r$ gives $2r = 26$, or $r = 13$. Thus, $\\boxed{13}$ regular packs were sent."
-}

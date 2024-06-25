@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha$ and $\\beta$ be complex numbers such that $\\alpha + \\beta$ and $i(\\alpha - 2 \\beta)$ are both positive real numbers.  If $\\beta = 3 + 2i,$ compute $\\alpha.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = \\alpha + \\beta$ and $y = i (\\alpha - 2 \\beta).$  Then $\\alpha - 2 \\beta = \\frac{y}{i} = -yi.$  Solving for $\\alpha$ and $\\beta,$ we get\n\\begin{align*}\n\\alpha &= \\frac{2}{3} x - \\frac{y}{3} i, \\\\\n\\beta &= \\frac{1}{3} x + \\frac{y}{3} i.\n\\end{align*}Since $x$ and $y$ are real, and $\\beta = 3 + 2i,$ $x = 9$ and $y = 6.$  Then $\\alpha = \\boxed{6 - 2i}.$"
-}

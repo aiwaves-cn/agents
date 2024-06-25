@@ -1,6 +1,0 @@
-{
-    "problem": "Every bag of Dummies (a chocolate candy) contains the same number of pieces.\n\nThe Dummies in one bag can't be divided equally among $9$ kids, because after each kid gets the same (whole) number of pieces, $7$ pieces are left over.\n\nIf the Dummies in three bags are divided equally among $9$ kids, what is the smallest number of pieces that could possibly be left over?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let $n$ be the number of Dummies in one bag. Then we know $n\\equiv 7\\pmod 9$, so $$3n\\equiv 3(7) = 21\\equiv 3\\pmod 9.$$Thus, when the Dummies in three bags are divided equally among $9$ kids, there is a remainder of $\\boxed{3}$ leftover pieces.\n\nWe can also explain this solution without using modular arithmetic. Each bag can be divided equally among the $9$ kids with $7$ pieces from each bag left over. This makes $21$ leftover pieces, which are enough to give each kid $2$ more candies and have $3$ candies left over. Those last $3$ candies can't be divided equally among the kids, so the answer is $\\boxed{3}$."
-}

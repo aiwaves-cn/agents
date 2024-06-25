@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be distinct real numbers such that\n\\[\n\\begin{vmatrix} 1 & 4 & 9 \\\\ 3 & x & y \\\\ 3 & y & x \\end{vmatrix}\n= 0.\\]Find $x + y.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Expanding the determinant, we obtain\n\\begin{align*}\n\\begin{vmatrix} 1 & 4 & 9 \\\\ 3 & x & y \\\\ 3 & y & x \\end{vmatrix} &= \\begin{vmatrix} x & y \\\\ y & x \\end{vmatrix} - 4 \\begin{vmatrix} 3 & y \\\\ 3 & x \\end{vmatrix} + 9 \\begin{vmatrix} 3 & x \\\\ 3 & y \\end{vmatrix} \\\\\n&= (x^2 - y^2) - 4(3x - 3y) + 9(3y - 3x) \\\\\n&= x^2 - y^2 - 39x + 39y \\\\\n&= (x - y)(x + y) - 39(x - y) \\\\\n&= (x - y)(x + y - 39).\n\\end{align*}Since this is 0, either $x - y = 0$ or $x + y - 39 = 0.$  But $x$ and $y$ are distinct, so $x + y = \\boxed{39}.$"
-}

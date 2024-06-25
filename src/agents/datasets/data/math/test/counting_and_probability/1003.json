@@ -1,6 +1,0 @@
-{
-    "problem": "When rolling a certain unfair six-sided die with faces numbered 1, 2, 3, 4, 5, and 6, the probability of obtaining face $F$ is greater than $1/6$, the probability of obtaining the face opposite face $F$ is less than $1/6$, the probability of obtaining each of the other faces is $1/6$, and the sum of the numbers on each pair of opposite faces is 7. When two such dice are rolled, the probability of obtaining a sum of 7 is $ \\frac{47}{288} $. Given that the probability of obtaining face $F$ is $m/n$, where $m$ and $n$ are relatively prime positive integers, find $m+n$.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let $p(a,b)$ denote the probability of obtaining  $a$ on the first die and $b$ on the second.  Then the probability of obtaining a sum of 7 is $$p(1,6)+p(2,5)+p(3,4)+p(4,3)+p(5,2)+p(6,1).$$Let the probability of obtaining face $F$ be $(1/6)+x$.  Then the probability of obtaining the face opposite face $F$ is $(1/6)-x$. Therefore $$\\begin{aligned}{{47}\\over{288}}&=\n4\\left({1\\over6}\\right)^2+2\\left({1\\over6}+x\\right)\n\\left({1\\over6}-x\\right)\\cr&=\n{4\\over36}+2\\left({1\\over36}-x^2\\right)\\cr&=\n{1\\over6}-2x^2.\\end{aligned}$$Then $2x^2=1/288$, and so $x=1/24$. The probability of obtaining face $F$ is therefore $(1/6)+(1/24)=5/24$, and $m+n=\\boxed{29}$."
-}

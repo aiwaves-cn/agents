@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the multiplicative inverse of $201$ modulo $299$. Express your answer as an integer from $0$ to $298$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let $a$ be the inverse of $201$ modulo $299$. Then, by the definition of the inverse, $201\\cdot a \\equiv 1\\pmod{299}$. We are looking for an integer $a$ that satisfies this congruence.\n\nTo make our task easier, we note that $603\\equiv 5\\pmod{299}$, and so \\begin{align*}\n603\\cdot 60 &\\equiv 5\\cdot 60 \\\\\n&= 300 \\\\\n&\\equiv 1\\pmod{299}.\n\\end{align*}Now we write $603$ as $201\\cdot 3$: $$201\\cdot 3\\cdot 60 \\equiv 1\\pmod{299}.$$Thus, the inverse we seek is $a = 3\\cdot 60 = \\boxed{180}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the following function $g(x)$ defined as\\[(x^{2^{2008}-1}-1)g(x) = (x+1)(x^2+1)(x^4+1)\\cdots (x^{2^{2007}}+1) - 1\\]Find $g(2)$.\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Multiply both sides by $x-1$; the right hand side collapses by the reverse of the difference of squares.\n\\begin{align*}(x-1)(x^{2^{2008}-1}-1)g(x) &= (x-1)(x+1)(x^2+1)(x^4+1)\\cdots (x^{2^{2007}}+1) - (x-1)\\\\ &= (x^2-1) (x^2+1)(x^4+1)\\cdots (x^{2^{2007}}+1) - (x-1)\\\\ &= \\cdots\\\\ &= \\left(x^{2^{2008}}-1\\right) - (x-1) = x^{2^{2008}} - x \\end{align*}Substituting $x = 2$, we have\\[\\left(2^{2^{2008}-1}-1\\right) \\cdot g(2) = 2^{2^{2008}}-2 = 2\\left(2^{2^{2008}-1}-1\\right)\\]Dividing both sides by $2^{2^{2008}-1}$, we find $g(2) = \\boxed{2}$."
-}

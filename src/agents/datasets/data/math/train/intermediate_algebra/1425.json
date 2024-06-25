@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$, $b$, $c$, $d$, $e$, and $f$ are integers for which  $1000x^3+27= (ax^2 + bx +c )(d x^2 +ex + f)$ for all $x$, then what is $a^2+b^2+c^2+d^2+e^2+f^2$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Apply the sum of cubes factorization to the expression $1000x^3+27 = (10x)^3+3^3$ to obtain  \\[\n1000x^3+27 = (10x+3)(100x^2-30x+9).\n\\]Thus $a^2+b^2+c^2+d^2+e^2+f^2=0^2+10^2+3^2+100^2+(-30)^2+9^2=\\boxed{11,\\!090}$. Note that the fundamental theorem of algebra implies that the factorization we have given is unique, since the discriminant $(-30)^2-4(100)(9)$ of the quadratic $100x^2-30x+9$ is negative."
-}

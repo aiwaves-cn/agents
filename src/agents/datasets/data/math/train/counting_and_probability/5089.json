@@ -1,6 +1,0 @@
-{
-    "problem": "Define an ordered quadruple of integers $(a, b, c, d)$ as interesting if $1 \\le a<b<c<d \\le 10$, and $a+d>b+c$. How many interesting ordered quadruples are there?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Rearranging the inequality we get $d-c > b-a$. Let $e = 11$, then $(a, b-a, c-b, d-c, e-d)$ is a partition of 11 into 5 positive integers or equivalently: $(a-1, b-a-1, c-b-1, d-c-1, e-d-1)$ is a partition of 6 into 5 non-negative integer parts. Via a standard stars and bars argument, the number of ways to partition 6 into 5 non-negative parts is $\\binom{6+4}4 = \\binom{10}4 = 210$. The interesting quadruples correspond to partitions where the second number is less than the fourth. By symmetry, there are as many partitions where the fourth is less than the second. So, if $N$ is the number of partitions where the second element is equal to the fourth, our answer is $(210-N)/2$.\nWe find $N$ as a sum of 4 cases:\ntwo parts equal to zero, $\\binom82 = 28$ ways,\ntwo parts equal to one, $\\binom62 = 15$ ways,\ntwo parts equal to two, $\\binom42 = 6$ ways,\ntwo parts equal to three, $\\binom22 = 1$ way.\nTherefore, $N = 28 + 15 + 6 + 1 = 50$ and our answer is $(210 - 50)/2 = \\boxed{80}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In convex quadrilateral $KLMN$ side $\\overline{MN}$ is perpendicular to diagonal $\\overline{KM}$, side $\\overline{KL}$ is perpendicular to diagonal $\\overline{LN}$, $MN = 65$, and $KL = 28$. The line through $L$ perpendicular to side $\\overline{KN}$ intersects diagonal $\\overline{KM}$ at $O$ with $KO = 8$. Find $MO$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $\\angle MKN=\\alpha$ and $\\angle LNK=\\beta$. Note $\\angle KLP=\\beta$.\nThen, $KP=28\\sin\\beta=8\\cos\\alpha$. Furthermore, $KN=\\frac{65}{\\sin\\alpha}=\\frac{28}{\\sin\\beta} \\Rightarrow 65\\sin\\beta=28\\sin\\alpha$.\nDividing the equations gives\\[\\frac{65}{28}=\\frac{28\\sin\\alpha}{8\\cos\\alpha}=\\frac{7}{2}\\tan\\alpha\\Rightarrow \\tan\\alpha=\\frac{65}{98}\\]\nThus, $MK=\\frac{MN}{\\tan\\alpha}=98$, so $MO=MK-KO=\\boxed{90}$."
-}

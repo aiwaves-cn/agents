@@ -1,6 +1,0 @@
-{
-    "problem": "When $555_{10}$ is expressed in this base, it has 4 digits, in the form ABAB, where A and B are two different digits.  What base is it?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "First, let us find which bases result in $555_{10}$ having four digits. We must find base b such that $b^{4}>555_{10}\\geq b^{3}$. We easily determine that b can range from 5 to 8, inclusive.  We can now try each of these four bases to see which yields a number in the form ABAB.  For base six, we find that $6^{3}=216$, which can go into 555 only two times at most, leaving $555-2\\cdot216 = 123$ for the next three digits. $6^{2}=36$ goes into 123 three times at most, leaving us with $123-3\\cdot36 = 15$. Then, $6^{1}=6$ goes into 15 two times at most, leaving $15-2\\cdot6 = 3$ for the ones digit. So, the base $\\boxed{6}$ equivalent of $555_{10}$ is $2323_{6}$, which satisfies all of the requirements stated."
-}

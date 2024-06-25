@@ -1,6 +1,0 @@
-{
-    "problem": "An 18-slice pizza was made with only pepperoni and mushroom toppings, and every slice has at least one topping. Exactly ten slices have pepperoni, and exactly ten slices have mushrooms. How many slices have both pepperoni and mushrooms?",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "There are 18 total slices, and 10 of them have pepperoni and 10 have mushrooms. Let there be $n$ slices that have both.  Then there are $10-n$ with only pepperoni and $10-n$ with mushrooms.  The total number of slices then is $n+(10-n)+(10-n)=18$.  Simplifying gives $20-n = 18$, so $n=\\boxed{2}$:\n\n\n[asy]\nunitsize(0.05cm);\nlabel(\"Pepperoni\", (2,74));\nlabel(\"Mushrooms\", (80,74));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$n$\", (44, 45));\nlabel(scale(0.8)*\"$10-n$\",(28,58));\nlabel(scale(0.8)*\"$10-n$\",(63,58));\n[/asy]"
-}

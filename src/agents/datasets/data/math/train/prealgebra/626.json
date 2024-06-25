@@ -1,6 +1,0 @@
-{
-    "problem": "The arithmetic mean of 12 scores is 82. When the highest and lowest scores are  removed, the new mean becomes 84. If the highest of the 12 scores is 98, what is the lowest score?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If the mean of the $12$ scores is $82$, then the sum of the $12$ scores is $82\\times12$. After the two scores are removed, the sum of the $10$ remaining scores is $84\\times10=840$. The sum of the two removed scores is $$82\\times12-840=4(41\\times6-210)=4(246-210)=4(36)=144.$$ Since one of the removed scores is $98$, the other removed score is $144-98=\\boxed{46}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Six 6-sided dice are rolled.  What is the probability that the number of dice showing even numbers and the number of dice showing odd numbers is equal?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{6}{3}$ ways for 3 of the dice to show even numbers and 3 of them to show odd numbers.  Each roll is even with probability $\\frac12$ and odd with probability $\\frac12$, so each arrangement of 3 odd numbers and 3 even number occurs with probability $\\left(\\dfrac{1}{2}\\right)^{\\!6}$.  Thus, the probability that 3 dice out of 6 show even numbers is \\[\\binom{6}{3}\\frac{1}{2^6}=\\boxed{\\frac{5}{16}}.\\]"
-}

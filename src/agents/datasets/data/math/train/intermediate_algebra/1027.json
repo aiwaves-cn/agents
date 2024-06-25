@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ $z$ be positive real numbers.  Find the set of all possible values of\n\\[f(x,y,z) = \\frac{x}{x + y} + \\frac{y}{y + z} + \\frac{z}{z + x}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "First, note that\n\\begin{align*}\nf(x,y,z) &= \\frac{x}{x + y} + \\frac{y}{y + z} + \\frac{z}{z + x} \\\\\n&> \\frac{x}{x + y + z} + \\frac{y}{y + z + x} + \\frac{z}{z + x + y} \\\\\n&= \\frac{x + y + z}{x + y + z} = 1.\n\\end{align*}Let $\\epsilon$ be a small positive number.  Then\n\\begin{align*}\nf(\\epsilon^2,\\epsilon,1) &= \\frac{\\epsilon^2}{\\epsilon^2 + \\epsilon} + \\frac{\\epsilon}{\\epsilon + 1} + \\frac{1}{1 + \\epsilon^2} \\\\\n&= \\frac{\\epsilon}{\\epsilon + 1} + \\frac{\\epsilon}{\\epsilon + 1} + \\frac{1}{1 + \\epsilon^2}.\n\\end{align*}As $\\epsilon$ approaches 0, $f(\\epsilon^2,\\epsilon,1)$ approaches 1.  This means we can make $f(x,y,z)$ arbitrarily close to 1, without actually reaching 1.\n\nNow, note that\n\\[f(x,y,z) + f(x,z,y) = \\frac{x}{x + y} + \\frac{y}{y + z} + \\frac{z}{z + x} + \\frac{x}{x + z} + \\frac{z}{z + y} + \\frac{y}{x + y} = 3.\\]Therefore, $f(x,y,z) < 2,$ and we can make $f(x,y,z)$ arbitrarily close to 2.\n\nHence, the set of all possible values of $f(x,y,z)$ is $\\boxed{(1,2)}.$"
-}

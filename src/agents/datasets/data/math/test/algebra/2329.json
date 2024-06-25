@@ -1,6 +1,0 @@
-{
-    "problem": "The difference between the squares of two different primes is 1488. Given both primes are less than 50, find the primes.\n\nNote: Submit the numbers in either order separated by a comma.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Call the primes $p$ and $q$. $1488=p^2-q^2=(p-q)\\cdot(p+q)$. If $p$ or $q$ was $2$, $p^2-q^2$ would be odd, so $p$ and $q$ are both odd numbers that are less than $50$. That means $p-q$ and $p+q$ are both even numbers that are less than $100$. $1488=2^4\\cdot3\\cdot31$, so $p+q$ or $p-q$ must be divisible by $31$. The only even multiple of $31$ that is less than $100$ is $62$ so one must equal $62$, and the other must be $1488/62=24$. So, $p=\\frac{62+24}{2}=43$ and $q=\\frac{62-24}{2}=19$. So, the primes are $\\boxed{19 \\text{ and }43}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a} = \\begin{pmatrix} 2 \\\\ 0 \\\\ 1 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$ and $\\mathbf{c} = \\begin{pmatrix} 4 \\\\ - 3 \\\\ 7 \\end{pmatrix}.$  Find the vector $\\mathbf{v}$ such that $\\mathbf{v} \\times \\mathbf{b} = \\mathbf{c} \\times \\mathbf{b}$ and $\\mathbf{v} \\cdot \\mathbf{a} = 0.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the equation $\\mathbf{v} \\times \\mathbf{b} = \\mathbf{c} \\times \\mathbf{b},$\n\\[\\mathbf{v} \\times \\mathbf{b} - \\mathbf{c} \\times \\mathbf{b} = \\mathbf{0}.\\]We can write this as $(\\mathbf{v} - \\mathbf{c}) \\times \\mathbf{b} = \\mathbf{0}.$  For this to hold the vectors $\\mathbf{v} - \\mathbf{c}$ and $\\mathbf{b}$ must be parallel.  In other words,\n\\[\\mathbf{v} - \\mathbf{c} = k \\mathbf{b}\\]for some scalar $k.$  Thus, $\\mathbf{v} = k \\mathbf{b} + \\mathbf{c}.$  Since $\\mathbf{v} \\cdot \\mathbf{a} = 0,$\n\\[(k \\mathbf{b} + \\mathbf{c}) \\cdot \\mathbf{a} = 0,\\]or $k (\\mathbf{a} \\cdot \\mathbf{b}) + \\mathbf{a} \\cdot \\mathbf{c} = 0.$  Hence, $3k + 15 = 0,$ which means $k = -5.$  Hence, $\\mathbf{v} = \\boxed{\\begin{pmatrix} -1 \\\\ -8 \\\\ 2 \\end{pmatrix}}.$"
-}

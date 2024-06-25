@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $8735 + 8736 + 8737 + 8738$ is divided by 11.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Reducing each number modulo 11 first, we get \\[8735 + 8736 + 8737 + 8738 \\equiv 1 + 2 + 3 + 4 \\equiv \\boxed{10} \\pmod{11}.\\]"
-}

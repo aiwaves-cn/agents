@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f$ satisfies \\[\nf(x) + f(2x+y) + 5xy = f(3x - y) + 2x^2 + 1\n\\]for all real numbers $x,y$. Determine the value of $f(10)$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 10$ and $y=5$ gives $f(10) + f(25) + 250 = f(25) + 200 + 1$, from which we get $f(10) = \\boxed{-49}$.\n\n$\\text{Remark:}$ By setting $y = \\frac x 2$, we see that the function is $f(x) = -\\frac 1 2 x^2 + 1$, and it can be checked that this function indeed satisfies the given equation."
-}

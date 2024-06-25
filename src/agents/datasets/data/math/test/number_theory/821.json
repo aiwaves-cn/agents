@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all positive integer values of $n$ such that $n^2$ is a factor of $1200$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The prime factorization of $1200$ is $1200=2^4 \\cdot 3 \\cdot 5^2$. Thus, the factors of $1200$ that can be written in the form $n^2$ are $1^2$, $2^2$, $4^2$, $5^2$, $10^2$ and $20^2$. The sum of these values of $n$ is $1+2+4+5+10+20=\\boxed{42}$."
-}

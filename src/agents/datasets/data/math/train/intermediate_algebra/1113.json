@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $f(x) = x^2,$ and $g(x)$ is a polynomial such that $f(g(x)) = 4x^2 + 4x + 1$. Enter all possible polynomials $g(x),$ separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $f(x)=x^2$, $f(g(x))=g(x)^2$. Therefore, $g(x)^2=4x^2+4x+1=(2x+1)^2$ and $g(x)=\\boxed{2x+1}$ or $g(x)=\\boxed{-2x-1}$."
-}

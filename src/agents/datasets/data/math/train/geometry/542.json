@@ -1,6 +1,0 @@
-{
-    "problem": "An isosceles trapezoid has legs of length 30 cm each, two diagonals of length 40 cm each and the longer base is 50 cm. What is the trapezoid's area in sq cm?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "We can pick a diagonal and a leg of the trapezoid such that, along with the longer base, these lines form a triangle with sides of length 30, 40, and 50. This is a Pythagorean triple, so the triangle is a right triangle. It follows that the altitude to the longer base of the trapezoid is $30\\cdot 40/50 = 24$. This altitude is the same length as the height of the trapezoid.\n\nWe now look at the right triangle formed by this altitude, the adjacent leg of the trapezoid, and part of the longer base. These three sides form a right triangle, with hypotenuse of 30 and one leg (the altitude) of length 24. It follows that the other leg has length 18.\n\nBecause this is an isosceles trapezoid, we can now calculate the shorter base to have length $50 - 2\\cdot 18 = 14$. Therefore, the area of the trapezoid is $\\dfrac{(50 + 14)(24)}{2} = \\boxed{768}$."
-}

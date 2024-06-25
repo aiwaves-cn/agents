@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $a$ so that the lines specified by\n\\[\\begin{pmatrix} 1 \\\\ 2 \\\\ a \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 3 \\\\ 4 \\end{pmatrix}\\]and\n\\[\\begin{pmatrix} 4 \\\\ 1 \\\\ 0 \\end{pmatrix} + u \\begin{pmatrix} 5 \\\\ 2 \\\\ 1 \\end{pmatrix}\\]are skew.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The direction vector of the first line is $\\begin{pmatrix} 2 \\\\ 3 \\\\ 4 \\end{pmatrix},$ and the direction vector of the second line is $\\begin{pmatrix} 5 \\\\ 2 \\\\ 1 \\end{pmatrix}.$  Since these vectors are not parallel, the two lines are skew if and only if they do not intersect.\n\nSuppose the two lines intersect.  Equating the vectors for the two lines, and comparing components, we obtain the system of equations\n\\begin{align*}\n1 + 2t &= 4 + 5u, \\\\\n2 + 3t &= 1 + 2u, \\\\\na + 4t &= u.\n\\end{align*}Solving, we find $t = -1,$ $u = -1,$ and $a = 3.$\n\nTherefore, the two lines are skew for $a \\neq 3,$ or $a \\in \\boxed{(-\\infty,3) \\cup (3,\\infty)}.$"
-}

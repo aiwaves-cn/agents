@@ -1,6 +1,0 @@
-{
-    "problem": "If $$1+12+123+1234+12345+123456+1234567+12345678$$is congruent to $n$ modulo 9, where $0\\le n<9$, what is the value of $n$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "A number is congruent to the sum of its digits $\\pmod 9$. Thus, \\begin{align*}\n&1+12+123+1234+12345+123456\\\\\n&\\qquad+1234567+12345678\\\\\n&\\quad\\equiv 1+3+6+10+15+21+28+36\\pmod 9 \\\\\n&\\quad\\equiv 1+3+6+1+6+3+1+9\\pmod 9 \\\\\n&\\quad\\equiv 30\\pmod 9 \\\\\n&\\quad\\equiv \\boxed{3}\\pmod 9.\n\\end{align*}"
-}

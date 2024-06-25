@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate $2^{(2^3)} - \\left(2^2\\right)^3$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Recall that $\\left(a^m\\right)^n=a^{mn}$. Because of this, the second number is $\\left(2^2\\right)^3=2^{2\\cdot 3}=2^6$. Because the exponents in the first number are in parentheses, we must complete that exponentiation first. $2^3=8$, so the first number is $2^{(2^3)}=2^8$. Thus, we have  \\[2^8-2^6.\\] Evaluating these exponents and subtracting, we get $256-64=\\boxed{192}$."
-}

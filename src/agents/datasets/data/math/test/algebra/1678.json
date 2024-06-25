@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ satisfy $ab=7$ and $a+b=5$. What is the value of $a^2 + b^2$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have two equations and two variables, so it's possible to solve for $a$ and $b$ directly and then calculate $a^2$ and $b^2$ separately to get our answer. However, doing so involves a fair amount of computation with complex numbers and square roots, so we look for an alternative approach. We square the second equation to get $(a+b)^2 = a^2 + 2ab + b^2 = 25$, which is close to what we want but has the extra $2ab$ term. Since we know that $ab=7$, we can substitute to get $$a^2 + 2(7) +b^2 = 25 \\Longrightarrow a^2+b^2 = \\boxed{11}.$$"
-}

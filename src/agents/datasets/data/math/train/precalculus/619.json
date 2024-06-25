@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify\n\\[\\frac{\\sin x + \\sin 2x}{1 + \\cos x + \\cos 2x}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We can write\n\\begin{align*}\n\\frac{\\sin x + \\sin 2x}{1 + \\cos x + \\cos 2x} &= \\frac{\\sin x + 2 \\sin x \\cos x}{1 + \\cos x + 2 \\cos^2 x - 1} \\\\\n&= \\frac{\\sin x + 2 \\sin x \\cos x}{\\cos x + 2 \\cos^2 x} \\\\\n&= \\frac{\\sin x (1 + 2 \\cos x)}{\\cos x (1 + 2 \\cos x)} \\\\\n&= \\frac{\\sin x}{\\cos x} = \\boxed{\\tan x}.\n\\end{align*}"
-}

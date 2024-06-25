@@ -1,6 +1,0 @@
-{
-    "problem": "For how many positive integers $n\\geq 2$ is $1001_n$ a prime number?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We see that the given number is equal to $1 \\cdot n^3 + 1 = n^3 + 1$. Using the sum of cubes factorization, it follows that $n^3 + 1 = (n+1)(n^2 - n + 1)$. Since $1$ is a digit in the base, then $n > 1$, and $n+1 > 1$ and $n^2 - n + 1 > n - n + 1 = 1$, so $n^3 + 1$ is the product of two integers greater than $1$. Thus, $1001_n$ is prime for $\\boxed{0}$ values of $n$."
-}

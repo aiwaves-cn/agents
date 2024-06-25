@@ -1,6 +1,0 @@
-{
-    "problem": "Juan rolls a fair regular octahedral die marked with the numbers 1 through 8. Then Amal rolls a fair six-sided die. What is the probability that the product of the two rolls is a multiple of 3?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The product will be a multiple of 3 if and only if at least one of the two rolls is a 3 or a 6. The probability that Juan rolls  3 or 6 is $2/8 = 1/4$. The probability that Juan does not roll 3 or 6, but Amal does is $(3/4) (1/3) = 1/4$. Thus, the probability that the product of the rolls is a multiple of 3 is $$\n\\frac{1}{4} + \\frac{1}{4} = \\boxed{\\frac{1}{2}}.\n$$"
-}

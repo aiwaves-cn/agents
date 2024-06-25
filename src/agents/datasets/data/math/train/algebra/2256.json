@@ -1,6 +1,0 @@
-{
-    "problem": "The value of the expression  \\[(2^{1004}+5^{1005})^2-(2^{1004}-5^{1005})^2\\]is $k\\cdot10^{1004}$ for some positive integer $k$. What is $k$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Simplifying the squares, we have \\begin{align*}\n&(2^{1004}+5^{1005})^2-(2^{1004}-5^{1005})^2\\\\\n&\\qquad=2^{2008}+2\\cdot2^{1004}\\cdot5^{1005}+5^{2010}\\\\\n&\\qquad\\qquad-2^{2008}+2\\cdot2^{1004}\\cdot5^{1005}-5^{2010}\\\\\n&\\qquad=4\\cdot2^{1004}\\cdot5^{1005}\n\\end{align*}Since $4\\cdot2^{1004}=2\\cdot2^{1005}$, we can rewrite the expression as  \\[2\\cdot2^{1005}\\cdot5^{1005}=2\\cdot10^{1005}=20\\cdot10^{1004}\\]Thus, $k=\\boxed{20}$."
-}

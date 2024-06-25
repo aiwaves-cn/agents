@@ -1,6 +1,0 @@
-{
-    "problem": "A car travels the 120 miles from $A$ to $B$ at 60 miles per hour, and then returns to $A$ on the same road. If the average rate of the round trip is 45 miles per hour, what is the rate, in miles per hour, of the car traveling back from $B$ to $A$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $d$ denote the number of miles in the distance from $A$ to $B$ and let $r$ denote the speed of the car (in miles per hour) on the return trip.  It takes $d/60$ hours to travel from $A$ to $B$ and $d/r$ hours to travel from $B$ to $A$.  Round trip, $2d$ miles are covered in $d/60+d/r$ hours for an average speed of  \\[\n\\frac{2d}{\\frac{d}{60}+\\frac{d}{r}} \\cdot \\frac{\\frac{60}{d}}{\\frac{60}{d}} =\n\\frac{120}{1+\\frac{60}{r}}\n\\] Setting this expression equal to $45$, we find $r=\\boxed{36}$."
-}

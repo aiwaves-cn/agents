@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of four positive integers that form an arithmetic sequence is 46. Of all such possible sequences, what is the greatest possible third term?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the first term be $a$, and let the common difference be $d$.  Then the four positive integers are $a$, $a + d$, $a + 2d$, and $a + 3d$.  The sum of these four positive integers is $4a + 6d = 46$, so $2a + 3d = 23$.  Solving for $d$, we find $d = (23 - 2a)/3$.\n\nThe third term is \\[a + 2d = a + 2 \\cdot \\frac{23 - 2a}{3} = \\frac{46 - a}{3}.\\] Thus, to maximize this expression, we should minimize $a$.  Since $a$ is a positive integer, the smallest possible value of $a$ is 1.  Furthermore, when $a = 1$, $d = (23 - 2)/3 = 7$, which gives us the arithmetic sequence 1, 8, 15, 22.  Therefore, the greatest possible third term is $\\boxed{15}$."
-}

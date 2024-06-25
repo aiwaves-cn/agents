@@ -1,6 +1,0 @@
-{
-    "problem": "Let $g(x)$ be a function piecewise defined as \\[g(x) = \\left\\{\n\\begin{array}{cl}\n-x & x\\le 0, \\\\\n2x-41 & x>0.\n\\end{array}\n\\right.\\] If $a$ is negative, find $a$ so that $g(g(g(10.5)))=g(g(g(a)))$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First we must find $g(g(g(10.5)))$. We have $10.5>0$, so $g(10.5)=2(10.5)-41=-20$. Thus $g(g(g(10.5)))=g(g(-20))$. Since $-20\\le 0$, $g(-20)=-(-20)=20$, so we have $g(g(-20))=g(20)$. Finally, since $20>0$, we have $g(20)=2(20)-41=-1$.\n\nNow we must find $a$ so that $g(g(g(a)))=-1$. Let $g(g(a))=b$. Then we need to find $b$ so that $g(b)=-1$. Which definition of $g(x)$ should we use? If we use the definition when $x \\le 0$, the output will always be non-negative, but $-1$ is negative, so we must assume $b>0$. Then $g(b)=2b-41=-1$, and $b=20$.\n\nSo now we have $g(g(a))=b=20$. Since we know $a$ is negative, we know we're going to use the $x\\le 0$ definition of $g(x)$, so $g(a)=-a$, and $-a$ must be positive. We substitute for $g(a)$ to find $g(-a)=20$. Since $-a$ is positive, we use the $x>0$ definition for $g(x)$, to find that $g(-a)=2(-a)-41=20$, so $-2a=61$ and $\\boxed{a=-30.5}$."
-}

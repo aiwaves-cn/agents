@@ -1,6 +1,0 @@
-{
-    "problem": "The number of apples that Sophia has is a multiple of $6$. When she sells one apple, the number of apples is a multiple of $n$. If $n$ is a positive integer less than $10$, how many possible values are there for $n$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $a$ be the number of apples that Sophia originally had. Clearly $a=6b$ for some positive integer $b$. Additionally, $a-1\\equiv 0\\pmod n\\implies 6b\\equiv 1\\pmod n$. This is solvable for $b$ if and only if $6$ is invertible modulo $n$. In other words, $\\gcd(6,n)=1$. The only such $n$ less than $10$ are $1,5,7$, so there are $\\boxed{3}$ possibilities for $n$."
-}

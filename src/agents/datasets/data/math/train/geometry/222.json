@@ -1,6 +1,0 @@
-{
-    "problem": "Circle $A$ has its center at $A(4, 4)$ and has a radius of 4 units. Circle $B$ has its center at $B(12, 4)$ and has a radius of 4 units. What is the area of the gray region bound by the circles and the $x$-axis? Express your answer in terms of $\\pi$. [asy]\nimport olympiad; size(150); defaultpen(linewidth(0.8));\nxaxis(0,16,Ticks(\"%\",1.0));\nyaxis(0,8,Ticks(\"%\",1.0));\nfill((4,4)--(12,4)--(12,0)--(4,0)--cycle,gray(0.7));\nfilldraw(circle((4,4),4),fillpen=white);\nfilldraw(circle((12,4),4),fillpen=white);\ndot(\"$A$\",(4,4),S); dot(\"$B$\",(12,4),S);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Draw a 4 by 8 rectangle with the vertices at $(4, 4), (12, 4), (12, 0)$ and $(4, 0)$. The area of that box is $4 \\times 8 = 32$ square units. From that we can subtract the area of the sectors of the 2 circles that are binding our shaded region. The area of each sector is $(1/4)4^2\\pi = 4\\pi$; therefore, we need to subtract $2(4\\pi) = 8\\pi$. This gives us $\\boxed{32 - 8\\pi}$ square units."
-}

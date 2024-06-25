@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $x^2 + y^2 = 14x + 6y + 6,$ find the largest possible value of $3x + 4y.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z = 3x + 4y.$  Then $y = \\frac{z - 3x}{4}.$  Substituting into $x^2 + y^2 = 14x + 6y + 6,$ we get\n\\[x^2 + \\left( \\frac{z - 3x}{4} \\right)^2 = 14x + 6 \\cdot \\frac{z - 3x}{4} + 6.\\]This simplifies to\n\\[25x^2 - 6xz + z^2 - 152x - 24z - 96 = 0.\\]Writing this as a quadratic in $x,$ we get\n\\[25x^2 - (6z + 152) x + z^2 - 24z - 96 = 0.\\]This quadratic has real roots, so its discriminant is nonnnegative.  This gives us\n\\[(6z + 152)^2 - 4 \\cdot 25 \\cdot (z^2 - 24z - 96) \\ge 0.\\]This simplifies to $-64z^2 + 4224z + 32704 \\ge 0,$ which factors as $-64(z + 7)(z - 73) \\ge 0.$  Therefore, $z \\le 73.$\n\nEquality occurs when $x = \\frac{59}{5}$ and $y = \\frac{47}{5},$ so the maximum value is $\\boxed{73}.$"
-}

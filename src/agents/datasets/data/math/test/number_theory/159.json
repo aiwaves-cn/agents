@@ -1,6 +1,0 @@
-{
-    "problem": "Subtract $101_{6} - 32_{6}$.  Express your answer in base $6$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "When subtracting, we notice that we can't perform the subtraction of the right-most digits unless we borrow. However, we cannot borrow from the $6$'s digit, since it is $0$, so we must borrow from the $36$'s digit. Borrowing allows us to replace $1 \\cdot 36^2 + 0 \\cdot 6 + 1$ with $0 \\cdot 36 + 6 \\cdot 6 + 1$, which in turn we can borrow to replace with $0 \\cdot 36 + 5 \\cdot 6 + 7$. Now, we can subtract directly to find that: $$\\begin{array}{c@{}c@{\\;}c@{\\ }c@{\\ }c@{\\ }c} & & & \\cancelto{0}{1} & \\cancelto{5}{0} & \\cancelto{7}{1}_{6} \\\\ &- & & & 3 & 2_{6} \\\\ \\cline{2-6} && & & 2 & 5_{6} \\\\ \\end{array}$$Thus, the answer is $\\boxed{25_{6}}$."
-}

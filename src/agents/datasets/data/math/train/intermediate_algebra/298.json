@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that\n\\[f(xf(y) + x) = xy + f(x)\\]for all $x,$ $y.$\n\nLet $n$ be the number of possible values of $f(2),$ and let $s$ be the sum of all possible values of $f(2).$  Find $n \\times s.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 1$ and $y = -1 - f(1),$ we get\n\\[f(f(-1 - f(1)) + 1) = -1 - f(1) + f(1) = -1.\\]Let $a = f(-1 - f(1)) + 1,$ so $f(a) = -1.$\n\nSetting $y = a,$ we get\n\\[f(0) = ax + f(x).\\]Let $b = f(0),$ so $f(x) = -ax + b.$  Substituting into the given functional equation, we get\n\\[-a(x(-ay + b) + x) + b = xy - ax + b.\\]This expands as\n\\[a^2 xy - (ab + a) x + b = xy - ax + b.\\]For this to hold for all $x$ and $y,$ we must have $a^2 = 1,$ and $ab + a = a.$  From $a^2 = 1,$ $a = 1$ or $a = -1.$  For either value, $b = 0.$\n\nHence, the solutions are $f(x) = x$ and $f(x) = -x.$  Therefore, $n = 2$ and $s = 2 + (-2) = 0,$ so $n \\times s = \\boxed{0}.$"
-}

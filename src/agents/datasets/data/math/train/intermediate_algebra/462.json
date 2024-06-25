@@ -1,6 +1,0 @@
-{
-    "problem": "If $x^5 - x^4 + x^3 - px^2 + qx + 4$ is divisible by $(x + 2)(x - 1),$ find the ordered pair $(p,q).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Factor Theorem, the polynomial will become 0 when $x = -2$ and $x = 1.$  Thus,\n\\begin{align*}\n(-2)^5 - (-2)^4 + (-2)^3 - p(-2)^2 + q(-2) + 4 &= 0, \\\\\n1 - 1 + 1 - p + q + 4 &= 0.\n\\end{align*}Then $-4p - 2q = 52$ and $-p + q = -5.$  Solving, we find $(p,q) = \\boxed{(-7,-12)}.$"
-}

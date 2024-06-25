@@ -1,6 +1,0 @@
-{
-    "problem": "Spot's doghouse has a regular hexagonal base that measures one yard on each side. He is tethered to a vertex with a two-yard rope. What is the area, in square yards, of the region outside the doghouse that Spot can reach? Express your answer in terms of $\\pi$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Spot can go anywhere in a $240^{\\circ}$ sector of radius two yards and can cover a $60^{\\circ}$ sector of radius one yard around each of the adjoining corners. The total area is $$\n\\pi(2)^2\\cdot\\frac{240}{360} + 2\\left(\\pi(1)^2\\cdot\\frac{60}{360}\\right) = \\boxed{3\\pi}.\n$$[asy]\nunitsize(1.5 cm);\n\nfill(arc((1,0),2,-120,120)--(1,0)--cycle,gray(0.7));\nfill(arc(dir(60),1,120,180)--dir(60)--cycle,gray(0.7));\nfill(arc(dir(-60),1,180,240)--dir(-60)--cycle,gray(0.7));\ndraw((1,0)--dir(60)--dir(120)--(-1,0)--dir(240)--dir(300)--cycle);\ndraw(arc((1,0),2,-120,120));\ndraw(arc(dir(60),1,120,180));\ndraw(arc(dir(-60),1,180,240));\ndraw(dir(60)--(dir(60) + dir(120)));\ndraw(dir(-60)--(dir(-60) + dir(-120)));\ndraw((1,0)--((1,0) + 2*dir(45)),dashed);\n\nlabel(\"$240^\\circ$\", (1,0), E);\nlabel(\"$2$\", (1,0) + dir(45), NW);\nlabel(\"$1$\", dir(60) + 0.5*dir(120), NE);\n[/asy]"
-}

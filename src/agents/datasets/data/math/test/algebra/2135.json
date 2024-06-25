@@ -1,6 +1,0 @@
-{
-    "problem": "We define a function $f(x)$ such that $f(14)=7$, and if there exists an integer $a$ such that $f(a)=b$, then $f(b)$ is defined and\n\n$f(b)=3b+1$ if $b$ is odd\n\n$f(b)=\\frac{b}{2}$ if $b$ is even.\n\nWhat is the smallest possible number of integers in the domain of $f$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $f(14)=7$, we know that $f(7)$ is defined, and it must equal $22$.  Similarly, we know that $f(22)$ is defined, and it must equal $11$.  Continuing on this way,  \\begin{align*}\nf(11)&=34\\\\\nf(34)&=17\\\\\nf(17)&=52\\\\\nf(52)&=26\\\\\nf(26)&=13\\\\\nf(13)&=40\\\\\nf(40)&=20\\\\\nf(20)&=10\\\\\nf(10)&=5\\\\\nf(5)&=16\\\\\nf(16)&=8\\\\\nf(8)&=4\\\\\nf(4)&=2\\\\\nf(2)&=1\\\\\nf(1)&=4\n\\end{align*}We are now in a cycle $1$, $4$, $2$, $1$, and so on.  Thus there are no more values which need to be defined, as there is no $a$ currently defined for which $f(a)$ is a $b$ not already defined.  Thus the minimum number of integers we can define is the number we have already defined, which is $\\boxed{18}$."
-}

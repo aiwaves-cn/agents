@@ -1,6 +1,0 @@
-{
-    "problem": "Convert $\\rm{A}03_{16}$ to a base 10 integer, where the 'digits' A through F represent the values 10, 11, 12, 13, 14, and 15 in order.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "In base 16, $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, and $F = 15$. So $A03 = 10\\cdot16^2 + 0\\cdot16 + 3 = \\boxed{2563}.$"
-}

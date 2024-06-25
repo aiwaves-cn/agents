@@ -1,6 +1,0 @@
-{
-    "problem": "A sequence $(S_n)$ is defined as follows: $S_1 = 1,$ $S_2 = 1,$\n\\[S_n = \\frac{S_{n - 2} \\cdot S_{n - 1}}{S_{n - 2} + S_{n - 1}}\\]for $n > 2.$  Compute $S_{12}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\[\\frac{1}{S_n} = \\frac{S_{n - 2} + S_{n - 1}}{S_{n - 2} \\cdot S_{n - 1}} = \\frac{1}{S_{n - 1}} + \\frac{1}{S_{n - 2}}.\\]Accordingly, let $T_n = \\frac{1}{S_n}.$  Then $T_1 = 1,$ $T_2 = 1,$ and\n\\[T_n = T_{n - 1} + T_{n - 2}\\]for $n \\ge 3.$  Then $T_3 = 2,$ $T_4 = 3,$ $\\dots,$ $T_{12} = 144,$ so $S_{12} = \\boxed{\\frac{1}{144}}.$"
-}

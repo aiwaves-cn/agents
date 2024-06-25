@@ -1,6 +1,0 @@
-{
-    "problem": "What is the positive difference between the sum of the first 20 positive multiples of 5 and the sum of the first 20 positive, even integers?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The sum of the first 20 positive multiples of 5 is $5+10+15+\\cdots+95+100 = 5 (1 + 2 + \\dots + 20)$.  For all $n$, $1 + 2 + \\dots + n = n(n + 1)/2$, so $5 (1 + 2 + \\dots + 20) = 5 \\cdot 20 \\cdot 21/2 = 1050$.\n\nThe sum of the first 20 positive even integers is $2+4+6+8+\\cdots+38+40 = 2 (1 + 2 + \\dots + 20) = 2 \\cdot 20 \\cdot 21/2 = 420$.  The difference is $1050-420=\\boxed{630}.$\n\nAlternatively, we can subtract the sums, to get\n\\begin{align*}\n5(1 + 2 + \\dots + 20) - 2(1 + 2 + \\dots + 20) &= 3 (1 + 2 + \\dots + 20) \\\\\n&= 3 \\cdot \\frac{20 \\cdot 21}{2} \\\\\n&= 630.\n\\end{align*}"
-}

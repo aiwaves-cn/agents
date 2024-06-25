@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer $n$ such that $n^2 - n$ is divisible by some but not all integer values of $k$ when $1\\leq k \\leq n$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that $n^2-n=n(n-1)$ is divisible by $1$, $n-1$, and $n$. Since we want $n^2-n$ to be divisible by some but not all integer values of $k$ when $1\\le k\\le n$, we must have $n-1>2$ so $n>3$. If $n=4$, $n$ is divisible by 2, so $n^2-n$ is divisible by all integer values of $k$ when $1\\le k\\le n$. Therefore, the least $n$ is $n=\\boxed{5}$."
-}

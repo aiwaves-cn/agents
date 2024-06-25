@@ -1,6 +1,0 @@
-{
-    "problem": "The length of the hypotenuse of a right triangle is $h$ , and the radius of the inscribed circle is $r$. The ratio of the area of the circle to the area of the triangle is\n$\\textbf{(A) }\\frac{\\pi r}{h+2r}\\qquad \\textbf{(B) }\\frac{\\pi r}{h+r}\\qquad \\textbf{(C) }\\frac{\\pi}{2h+r}\\qquad \\textbf{(D) }\\frac{\\pi r^2}{r^2+h^2}\\qquad \\textbf{(E) }\\text{none of these}$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Since $rs = A$, where $r$ is the inradius, $s$ is the semiperimeter, and $A$ is the area, we have that the ratio of the area of the circle to the area of the triangle is $\\frac{\\pi r^2}{rs} = \\frac{\\pi r}{s}$. Now we try to express $s$ as $h$ and $r$. Denote the points where the incircle meets the triangle as $X,Y,Z$, where $O$ is the incenter, and denote $AX = AY = z, BX = BZ = y, CY = CZ = x$. Since $XOZB$ is a square (tangents are perpendicular to radius), $r = BX = BZ = y$. The perimeter can be expressed as $2(x+y+z)$, so the semiperimeter is $x+y+z$. The hypotenuse is $AY+CY = z+x$. Thus we have $s = x+y+z = (z+x)+y = h+r$. The answer is $\\boxed{\\frac{\\pi r}{h+r}}$."
-}

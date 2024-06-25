@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic equation $x^2+mx+n=0$ has roots that are twice those of $x^2+px+m=0,$ and none of $m,$ $n,$ and $p$ is zero. What is the value of $n/p?$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $r_1$ and $r_2$ be the roots of $x^2+px+m=0.$ Since the roots of $x^2+mx+n=0$ are $2r_1$ and $2r_2,$ we have the following relationships: \\[\nm=r_1 r_2,\\quad n=4r_1 r_2,\\quad p=-(r_1+r_2), \\quad\\text{and}\\quad\nm=-2(r_1+r_2).\n\\] So \\[\nn = 4m, \\quad p = \\frac{1}{2}m,\n\\quad\\text{and}\\quad\n\\frac{n}{p}=\\frac{4m}{\\frac{1}{2}m}=\\boxed{8}.\n\\]\nAlternatively, the roots of \\[\n\\left(\\frac{x}{2}\\right)^2 + p\\left(\\frac{x}{2}\\right) + m = 0\n\\] are twice those of $x^2 + px + m = 0.$ Since the first equation is equivalent to $x^2 + 2px + 4m = 0,$ we have \\[\nm = 2p \\quad\\text{and}\\quad n = 4m, \\quad\\text{so}\\quad \\frac{n}{p} = \\boxed{8}.\\]"
-}

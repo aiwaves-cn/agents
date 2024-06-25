@@ -1,6 +1,0 @@
-{
-    "problem": "If a pyramid has $14$ edges, how many vertices does it have?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "If the base of a pyramid has $n$ sides, then the pyramid has $n$ edges on the base and $n$ edges connecting the base vertices to the apex (a total of $2n$ edges). The base has $n$ vertices and the apex is a vertex, so there are $n+1$ vertices. If a pyramid has $14$ edges, then $n=\\frac{14}{2}=7$ and there are $n+1=\\boxed{8}$ vertices."
-}

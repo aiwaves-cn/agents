@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha$ and $\\beta$ be angles such that\n\\[\\frac{\\cos \\alpha}{\\cos \\beta} + \\frac{\\sin \\alpha}{\\sin \\beta} = -1.\\]Find all possible values of\n\\[\\frac{\\cos^3 \\beta}{\\cos \\alpha} + \\frac{\\sin^3 \\beta}{\\sin \\alpha}.\\]Enter all possible values, separated by commas.",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Let $k = \\frac{\\cos \\alpha}{\\cos \\beta}.$  Then $\\frac{\\sin \\alpha}{\\sin \\beta} = -k - 1,$ so $\\cos \\alpha = k \\cos \\beta$ and $\\sin \\alpha = -(k + 1) \\sin \\beta.$  Substituting into $\\cos^2 \\alpha + \\sin^2 \\alpha = 1,$ we get\n\\[k^2 \\cos^2 \\beta + (k + 1)^2 \\sin^2 \\beta = 1.\\]Then $k^2 \\cos^2 \\beta + (k + 1)^2 (1 - \\cos^2 \\beta) = 1,$ which leads to\n\\[\\cos^2 \\beta = \\frac{k^2 + 2k}{2k + 1}.\\]Therefore,\n\\[\\sin^2 \\beta = 1 - \\cos^2 \\beta = \\frac{1 - k^2}{2k + 1}.\\]Hence,\n\\begin{align*}\n\\frac{\\cos^3 \\beta}{\\cos \\alpha} + \\frac{\\sin^3 \\beta}{\\sin \\alpha} &= \\cos^2 \\beta \\cdot \\frac{\\cos \\beta}{\\cos \\alpha} + \\sin^2 \\beta \\cdot \\frac{\\sin \\beta}{\\sin \\alpha} \\\\\n&= \\frac{k^2 + 2k}{2k + 1} \\cdot \\frac{1}{k} + \\frac{1 - k^2}{2k + 1} \\cdot \\frac{1}{-k - 1} \\\\\n&= \\frac{k + 2}{2k + 1} + \\frac{k - 1}{2k + 1} \\\\\n&= \\frac{2k + 1}{2k + 1} = \\boxed{1}.\n\\end{align*}"
-}

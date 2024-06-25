@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. Cole needs to select 3 girls and 5 boys to go on a backpacking trip. In how many ways can he do this if 6 girls and 11 boys are interested in going on the trip?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "In this problem, Mr. Cole is really selecting two separate groups.  He can choose 3 girls from the 6 girls total in $$ \\binom{6}{3} = \\frac{6 \\times 5 \\times 4}{3 \\times 2 \\times 1} = 20 $$ways, and 5 boys from the 11 boys total in $$ \\binom{11}{5} = \\frac{11 \\times 10 \\times 9 \\times 8 \\times 7}{5 \\times 4 \\times 3 \\times 2 \\times 1} = 462 $$ways.  Since these two selections are independent (since for each of the 20 ways to pick the girls, there are 462 ways to pick the boys), we multiply them together to get the number of ways that we can form the 8-member trip: $$ \\binom{6}{3}\\binom{11}{5} = (20)(462) = \\boxed{9,\\!240}. $$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of complex numbers $z$ satisfying $|z| = 1$ and\n\\[\\left| \\frac{z}{\\overline{z}} + \\frac{\\overline{z}}{z} \\right| = 1.\\]",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Since $|z| = 1,$ $z = e^{i \\theta}$ for some angle $\\theta.$  Then\n\\begin{align*}\n\\left| \\frac{z}{\\overline{z}} + \\frac{\\overline{z}}{z} \\right| &= \\left| \\frac{e^{i \\theta}}{e^{-i \\theta}} + \\frac{e^{-i \\theta}}{e^{i \\theta}} \\right| \\\\\n&= |e^{2i \\theta} + e^{-2i \\theta}| \\\\\n&= |\\cos 2 \\theta + i \\sin 2 \\theta + \\cos 2 \\theta - i \\sin 2 \\theta| \\\\\n&= 2 |\\cos 2 \\theta|.\n\\end{align*}Thus, $\\cos 2 \\theta = \\pm \\frac{1}{2}.$\n\nFor $\\cos 2 \\theta = \\frac{1}{2},$ there are four solutions between 0 and $2 \\pi,$ namely $\\frac{\\pi}{6},$ $\\frac{5 \\pi}{6},$ $\\frac{7 \\pi}{6},$ and $\\frac{11 \\pi}{6}.$\n\nFor $\\cos 2 \\theta = -\\frac{1}{2},$ there are four solutions between 0 and $2 \\pi,$ namely $\\frac{\\pi}{3},$ $\\frac{2 \\pi}{3},$ $\\frac{4 \\pi}{3},$ and $\\frac{5 \\pi}{3}.$\n\nTherefore, there are $\\boxed{8}$ solutions in $z.$"
-}

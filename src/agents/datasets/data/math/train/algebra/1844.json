@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all possible positive integer values of $b$ such that the quadratic equation $2x^2 + 5x + b = 0$ has rational roots.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If $2x^2 + 5x + b = 0$ has two rational solutions, then its discriminant, $5^2 - 4 \\cdot 2 \\cdot b = 25 - 8b$, must be a perfect square. Since $b$ is positive, it follows that $25 - 8b \\ge 0 \\Longrightarrow b \\in \\{1,2,3\\}$. Checking each one, we see that $b = 2$ and $b = 3$ indeed work, and their sum is $2 + 3 = \\boxed{5}$."
-}

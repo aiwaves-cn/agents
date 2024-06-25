@@ -1,6 +1,0 @@
-{
-    "problem": "John is thinking of a number. He gives the following 3 clues. ``My number has 125 as a factor. My number is a multiple of 30. My number is between 800 and 2000.'' What is John's number?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Let $n$ be John's number. $n$ is a multiple of $125=5^3$ and of $30=2\\cdot3\\cdot5$, so the prime factorization of $n$ must contain 5 raised to at least the 3rd power, 2 raised to at least the 1st power, and 3 raised to at least the 1st power. Thus, $\\text{LCM}(125, 30)=2\\cdot3\\cdot5^3= 750$. $n$ is then some multiple of 750. Since $n$ is between 800 and 2000, $n=750$ is too small. Thus, we try $n=2 \\cdot 750=1500$. This number could be John's number. Notice that $n=3 \\cdot 750=2250$ is too large. Thus, John's number is $\\boxed{1500}$."
-}

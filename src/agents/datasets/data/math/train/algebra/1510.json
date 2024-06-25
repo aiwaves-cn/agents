@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\frac{x^6-16x^3+64}{x^3-8}$ when $x=6$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Note that $\\left(x^3-8\\right)^2=x^6-16x^3+64$. So $\\frac{x^6-16x^3+64}{x^3-8}=\\frac{\\left(x^3-8\\right)^2}{x^3-8}=x^3-8$. So, the answer is $6^3-8=216-8=\\boxed{208}$."
-}

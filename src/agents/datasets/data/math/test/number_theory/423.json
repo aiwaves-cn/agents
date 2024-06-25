@@ -1,6 +1,0 @@
-{
-    "problem": "What is the average of all positive integers that have three digits when written in base $5$, but two digits when written in base $8$? Write your answer in base $10$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If an integer $n$ has three digits in base $5$, then $5^2\\le n<5^3$. If an integer $n$ has two digits in base $8$, then $8^1\\le n<8^2$. The overlap of these intervals is $$\\{25,26,27,28,\\ldots,61,62,63\\}.$$The average of the integers in this set is $\\frac{25+63}{2} = \\boxed{44}$."
-}

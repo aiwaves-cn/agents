@@ -1,6 +1,0 @@
-{
-    "problem": "For how many different values of $x$ does $x^5 = x^4 + 72x^3$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Move every term to the left-hand side and factor to find \\begin{align*}\nx^3(x^2-x-72)&=0 \\\\\nx^3(x-9)(x+8)&=0 \\\\\nx^3(x-9)(x+8)&=0.\n\\end{align*}Setting $x^3=0$, $x-9=0$ and $x+8=0$, we find that there are $\\boxed{3}$ solutions: $x=0$, $x-9$ and $x=-8$."
-}

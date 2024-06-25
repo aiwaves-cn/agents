@@ -1,6 +1,0 @@
-{
-    "problem": "The diameter, in inches, of a sphere with twice the volume of a sphere of radius 9 inches can be expressed in the form $a\\sqrt[3]{b}$ where $a$ and $b$ are positive integers and $b$ contains no perfect cube factors.  Compute $a+b$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "A sphere with radius 9 inches has volume $\\frac{4}{3}\\pi(9^3)=4\\cdot 9^2 \\cdot 3\\pi$ cubic inches; twice this is $8\\cdot 9^2\\cdot 3 \\pi$ cubic inches.  Let the radius of the larger sphere be $r$, so we have \\[\\frac{4}{3}\\pi r^3= 8\\cdot 9^2\\cdot 3\\pi .\\] Solving for $r$ yields \\[r^3 =2\\cdot 9^3 \\Rightarrow r = 9\\sqrt[3]{2}.\\]  The diameter is twice this value, or $18\\sqrt[3]{2}$ inches.  Hence $a=18$, $b=2$, and $a+b=\\boxed{20}$."
-}

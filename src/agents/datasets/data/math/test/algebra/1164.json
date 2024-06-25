@@ -1,6 +1,0 @@
-{
-    "problem": "A parabola $ax^2+bx+c$ contains the points $(-1,0)$, $(0,5)$, and $(5,0)$.  Find the value $100a+10b+c$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since the points $(-1,0)$ and $(5,0)$ have the same $y$-value, the axis of symmetry of the parabola must be between these 2 points.  The $x$-value halfway between $-1$ and $5$ is $x=2$.  Therefore the vertex of the parabola is equal to $(2,k)$ for some $k$ and the parabola may also be written as  \\[a(x-2)^2+k.\\] Now we substitute.  The point $(5,0)$ gives  \\[0=a(5-2)^2+k,\\] or  \\[9a+k=0.\\] The point $(0,5)$ gives  \\[5=a(0-2)^2+k\\] or  \\[4a+k=5.\\] Subtracting the second equation from the first gives  \\[(9a+k)-(4a+k)=0-5\\] so $5a=-5$, giving $a=-1$.\n\nSince $a=-1$ and $9a+k=0$ we know that $k=9$ and our parabola is  \\[ax^2+bx+c=-(x-2)^2+9.\\] In order to compute $100a+10b+c$ we can substitute $x=10$ and that gives  \\[100a+10b+c=-(10-2)^2+9=\\boxed{-55}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest base-10 integer that can be represented as $AA_5$ and $BB_7$, where $A$ and $B$ are valid digits in their respective bases?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can rewrite $AA_5$ and $BB_7$ to get \\begin{align*}\n5A+A&=7B+B\\quad\\Rightarrow\\\\\n6A&=8B\\quad\\Rightarrow\\\\\n3A&=4B.\n\\end{align*}We can see that the smallest possible values for $A$ and $B$ are $A=4$ and $B=3$. So the integer can be expressed as $44_5=33_7=\\boxed{24_{10}}$."
-}

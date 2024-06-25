@@ -1,6 +1,0 @@
-{
-    "problem": "An octagon is inscribed in a square so that the vertices of the octagon trisect the sides of the square. The perimeter of the square is 108 centimeters. What is the number of square centimeters in the area of the octagon?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Each side of the square has length $27$. Each trisected segment therefore has length $9$. We can form the octagon by taking away four triangles, each of which has area $\\frac{(9)(9)}{2}$, for a total of $(2)(9)(9) = 162$. The total area of the square is $27^2=729$, so the area of the octagon is $729-162=\\boxed{567}$."
-}

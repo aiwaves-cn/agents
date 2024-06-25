@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer $n$ such that $4125$ is a factor of $n!$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We find the prime factorization of $4125$. $4125= 11 \\cdot 3 \\cdot 5^3$. Thus, we want $n!$ to have a factor of $11$, a factor of $3$, and $3$ factors of $5$. The largest prime in the factorization is $11$, so $n \\ge 11$. The exponent of 5 in the prime factorization of 11! is only 2, since only the factors 5 and 10 are divisible by 5. Similarly, 12!, 13!, and 14! only have 2 fives in their prime factorizations. Since $15!$ contains a factor of $11$, a factor of $3$, and three factors of $5$, the least positive integer $n$ is $\\boxed{15}$."
-}

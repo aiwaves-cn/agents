@@ -1,6 +1,0 @@
-{
-    "problem": "How many odd five-digit counting numbers can be formed by  choosing digits from the set $\\{1, 2, 3, 4, 5, 6, 7\\}$ if digits can be repeated?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We know a number is odd if and only if its unit digit is odd. so we have 4 choices for its units digit. Then we have 7 choices for each of the other digits, yielding $7\\times7\\times7\\times7\\times4=\\boxed{9604}$ numbers."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If an integer ends in the digit $0$ and the sum of its digits is divisible by $3$, then how many of the numbers $2, 3, 4, 5, 6, 8, 9$ necessarily divide it?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Since the integer ends in $0$, it is divisible by $2$ and $5$.  Because the sum of its digits is divisible by $3$, the number is divisible by $3$, and we know that a number divisible by both $2$ and $3$ is also divisible by $6$.  If the number is $30$, however, then it is not divisible by $4$, $8$, or $9$.  So exactly $\\boxed{4}$ of the numbers in the original problem statement must divide it."
-}

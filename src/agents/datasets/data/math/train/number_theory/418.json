@@ -1,6 +1,0 @@
-{
-    "problem": "Convert $2014_{10}$ to base 9.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We see that the largest power of 9 that is less than 2014 is $9^3=729$, and the largest multiple of 729 less than 2014 is 1458, or $2\\cdot729$. From here, we find that the largest power of nine less than $2014-1458=556$ is $9^2=81$, and the largest multiple of 81 less than 556 is 486, or $6\\cdot81$. Next, the largest power of nine that is less than $556-486=70$ is $9^1=9$, giving us 63 or $7\\cdot 9$ as the largest multiple of 9. Finally, this leaves us with $70-63=7$, or $7\\cdot1=7\\cdot9^0$. Therefore, we can express 2014 as $2\\cdot9^3+6\\cdot9^2+7\\cdot9^1+7\\cdot9^0$, which gives us $\\boxed{2677_9}$."
-}

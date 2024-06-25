@@ -1,6 +1,0 @@
-{
-    "problem": "Fourteen white cubes are put together to form the figure on the right.  The complete surface of the figure, including the bottom, is painted red.  The figure is then separated into individual cubes.  How many of the individual cubes have exactly four red faces?\n\n[asy]\nsize(150);\npair a=(1,0),b=(0,1),c=(0.45,0.4);\n\nvoid drawcube(pair loc){\n     filldraw(loc+b--loc--loc+a--loc+a+c--loc+a+b+c--loc+b+c--cycle,white);\n     draw(loc+b--loc+a+b--loc+a+b+c^^loc+a+b--loc+a);\n}\n\npair location[]={origin,b,a,2a,3a,3a+b,-c,3a-c,-2c,-2c+b,-2c+a,-2c+2a,-2c+3a,-2c+3a+b};\n\nfor(int i; i<14;++i){\n   drawcube(location[i]);\n}\n\n\n[/asy]",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "A cube has four red faces if it is attached to exactly two other cubes.  The four top cubes are each attached to only one other cube,  so they have five red faces.  The four bottom corner cubes are each attached to three others, so they have three red faces.  The remaining $\\boxed{6}$ each have four red faces."
-}

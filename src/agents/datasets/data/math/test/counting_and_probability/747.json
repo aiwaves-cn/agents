@@ -1,6 +1,0 @@
-{
-    "problem": "A blue plane, a red plane and a white plane are waiting to take off from an airport that has two runways. Planes must take off from the airport one at a time, but can take off from either runway. In how many ways can the three takeoffs be scheduled? (One such way is the blue plane on runway A, followed by the red plane on runway B, followed by the white plane on runway B.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 3 ways to choose the first plane and 2 ways to choose where it takes off. Similarly, there are 2 ways to choose the second plane after the first has taken off and 2 ways to choose where it takes off, as well as 1 way to choose the last plane and 2 ways to choose its runway. These multiply to a total of $3\\cdot2\\cdot2\\cdot2\\cdot1\\cdot2=3\\cdot2^4=\\boxed{48}$."
-}

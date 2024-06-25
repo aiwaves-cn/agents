@@ -1,6 +1,0 @@
-{
-    "problem": "Find the maximum value of $10^x - 100^x,$ over all real numbers $x.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = 10^x.$  Then\n\\[10^x - 100^x = y - y^2 = \\frac{1}{4} - \\left( y -  \\frac{1}{2} \\right)^2.\\]Thus, the maximum value is $\\boxed{\\frac{1}{4}},$ which occurs when $y = \\frac{1}{2},$ or $x = \\log_{10} \\left( \\frac{1}{2} \\right).$"
-}

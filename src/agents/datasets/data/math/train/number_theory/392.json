@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest four-digit number whose digits add up to 16?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "For the number to be as large as possible, the leftmost digit should be as large as possible. Therefore, the thousandth digit should be $9$. The other three digits would have to add up to $16-9=7$. The leftmost digit is now the hundredth digit, which should be the largest number possible, $7$. Therefore, the largest four-digit number possible is $\\boxed{9700}$."
-}

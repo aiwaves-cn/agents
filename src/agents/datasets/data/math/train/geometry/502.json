@@ -1,6 +1,0 @@
-{
-    "problem": "A circular cylindrical post with a circumference of 4 feet has a string wrapped around it, spiraling from the bottom of the post to the top of the post. The string evenly loops around the post exactly four full times, starting at the bottom edge and finishing at the top edge. The height of the post is 12 feet. What is the length, in feet, of the string?\n\n[asy]\nsize(150);\ndraw((0,0)--(0,20)..(1,19.5)..(2,20)--(2,0)..(1,-.5)..(0,0),linewidth(1));\ndraw((0,20)..(1,20.5)..(2,20),linewidth(1));\ndraw((1,19.5)--(0,18.5),linewidth(1));\ndraw((2,.5)--(1,-.5),linewidth(1));\ndraw((2,16)--(0,14),linewidth(1));\ndraw((2,11)--(0,9),linewidth(1));\n\ndraw((2,6)--(0,4),linewidth(1));\n\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Each time the string spirals around the post, it travels 3 feet up and 4 feet around the post.  If we were to unroll this path, it would look like: [asy]\nsize(150);\ndraw((0,0)--(0,3)--(4,3)--(4,0)--cycle, linewidth(.7));\ndraw((0,0)--(4,3),linewidth(.7));\nlabel(\"3\",(0,1.5),W);\nlabel(\"4\",(2,3),N);\n[/asy] Clearly, a 3-4-5 right triangle has been formed.  For each time around the post, the string has length 5.  So, the total length of the string will be $4\\cdot 5=\\boxed{20}$ feet."
-}

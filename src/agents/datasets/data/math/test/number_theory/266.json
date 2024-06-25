@@ -1,6 +1,0 @@
-{
-    "problem": "What is the arithmetic mean of all of the positive two-digit integers with the property that the integer is equal to the sum of its first digit plus its second digit plus the product of its two digits?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $AB$ be a two-digit integer with the property that $AB$ is equal to the sum of its first digit plus its second digit plus the product of its two digits. Thus we have $10A+B=A+B+AB\\Leftrightarrow9A=AB$. Now since $AB$ is a two-digit integer, $A\\ne0$, so we can divide both sides by $A$ to get $9=B$. Therefore, 19, 29, 39, 49, 59, 69, 79, 89, and 99 all have the property. Their arithmetic mean is $\\frac{\\frac{9(19+99)}{2}}{9}=\\frac{19+99}{2}=\\boxed{59}$."
-}

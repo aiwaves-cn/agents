@@ -1,6 +1,0 @@
-{
-    "problem": "An integer is randomly chosen from the integers 1 through 100, inclusive. What is the probability that the chosen integer is a perfect square or a perfect cube, but not both? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "A number is a perfect square and a perfect cube if and only if it is a perfect sixth power.  Note that $10^2 = 100$ and $4^3<100<5^3$, while $2^6 < 100 < 3^6 = 9^3$.  Hence, there are 10 squares and 4 cubes between 1 and 100, inclusive.  However, there are also 2 sixth powers, so when we add $10 + 4$ to count the number of squares and cubes, we count these sixth powers twice.  However, we don't want to count these sixth powers at all, so we must subtract them twice.  This gives us a total of $10 + 4 - 2\\cdot 2 = 10$ different numbers that are perfect squares or perfect cubes, but not both.  Thus, our probability is $\\frac{10}{100} = \\boxed{\\frac{1}{10}}$."
-}

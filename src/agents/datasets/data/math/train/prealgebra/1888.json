@@ -1,6 +1,0 @@
-{
-    "problem": "How many two-digit prime numbers have a units digit of 7?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The tens digit cannot be 2, 5, or 8 because otherwise, the sum of the digits, and thus the number itself, is divisible by 3. The remaining possibilities are 17, 37, 47, 67, 77, and 97. Only $77=7\\cdot11$ is composite, so there are $\\boxed{5}$ two-digit prime numbers that have a units digit of 7."
-}

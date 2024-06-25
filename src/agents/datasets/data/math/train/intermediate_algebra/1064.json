@@ -1,6 +1,0 @@
-{
-    "problem": "Compute \\[\\lfloor 1 \\rfloor + \\lfloor 1.6 \\rfloor + \\lfloor 2.2 \\rfloor + \\lfloor 2.8 \\rfloor + \\dots + \\lfloor 99.4 \\rfloor + \\lfloor 100 \\rfloor,\\]where the arguments of the floor functions are in arithmetic progression.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We use the fact that $\\lfloor x \\rfloor = x - \\{x\\}$ for all $x.$ Therefore, it suffices to compute the sum of the arithmetic sequence itself, \\[1 + 1.6 + 2.2 + \\dots + 100,\\]and then subtract off the sum of the fractional parts, \\[\\{1\\} + \\{1.6\\} + \\{2.2\\} + \\dots + \\{100\\}.\\]The common difference of the arithmetic sequence is $0.6,$ so the number of terms is $1 + \\frac{100 - 1}{0.6} = 166.$ Then, the sum of the arithmetic sequence is \\[\\frac{1 + 100}{2} \\cdot 166 = 101 \\cdot 83 = 8383.\\]Because five times the common difference is $5 \\cdot 0.6 = 3,$ which is an integer, the fractional parts of the arithmetic sequence repeat every five terms. Thus, the sum of the fractional parts is \\[\\frac{165}{5} \\left( 0 + 0.6 + 0.2 + 0.8 + 0.4 \\right) + 0 = 33 \\cdot 2 = 66.\\]Therefore, the given sum equals \\[8383 - 66 = \\boxed{8317} \\,.\\]"
-}

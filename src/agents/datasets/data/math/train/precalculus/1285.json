@@ -1,6 +1,0 @@
-{
-    "problem": "Given $\\tan \\theta = 5,$ find\n\\[\\frac{1 - \\cos \\theta}{\\sin \\theta} - \\frac{\\sin \\theta}{1 + \\cos \\theta}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that\n\\begin{align*}\n\\frac{1 - \\cos \\theta}{\\sin \\theta} - \\frac{\\sin \\theta}{1 + \\cos \\theta} &= \\frac{(1 - \\cos \\theta)(1 + \\cos \\theta) - \\sin^2 \\theta}{\\sin \\theta (1 + \\cos \\theta)} \\\\\n&= \\frac{1 - \\cos^2 \\theta - \\sin^2 \\theta}{\\sin \\theta (1 + \\cos \\theta)} \\\\\n&= \\boxed{0}.\n\\end{align*}"
-}

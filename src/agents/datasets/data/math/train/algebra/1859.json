@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all values of $x$ such that $2^{x^2-3x-2} = 4^{x - 4}$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Writing the right hand side with 2 as the base, we have $4^{x-4} = (2^2)^{x-4} = 2^{2(x-4)} = 2^{2x-8}$, so our equation is $$2^{x^2-3x-2} = 2^{2x - 8}.$$Then, by setting the exponents equal to each other, we obtain $$x^2 - 3x - 2 = 2x - 8.$$This gives the quadratic $$x^2 - 5x + 6 = 0.$$Factoring gives $(x-2)(x-3)=0$, which has solutions $x = 2,3$.  The sum of these solutions is $\\boxed{5}$."
-}

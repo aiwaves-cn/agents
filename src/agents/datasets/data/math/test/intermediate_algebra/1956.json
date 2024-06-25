@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$: $$\\log_2 \\frac{2x+8}{x+2} +\\log_2\\frac{x+2}{x-5}=3$$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Begin by combining logs: $$\\log_2\\left (\\frac{2x+8}{x+2}\\cdot\\frac{x+2}{x-5}\\right. )=3$$Notice that $x+2$ cancels.  We are left with: $$\\log_2\\left(\\frac{2x+8}{x-5}\\right)=3$$Now, eliminate logs and solve: \\begin{align*}\n\\frac{2x+8}{x-5}&=2^3\\\\\n\\Rightarrow\\qquad 2x+8&=8(x-5)\\\\\n\\Rightarrow\\qquad 2x+8&=8x-40\\\\\n\\Rightarrow\\qquad 48&=6x\\\\\n\\Rightarrow\\qquad \\boxed{8}&=x.\n\\end{align*}"
-}

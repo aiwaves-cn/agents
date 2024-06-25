@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[\\sqrt{x + \\sqrt{3x + 6}} + \\sqrt{x - \\sqrt{3x + 6}} = 6.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Squaring both sides, we get\n\\[x + \\sqrt{3x + 6} + 2 \\sqrt{x + \\sqrt{3x + 6}} \\sqrt{x - \\sqrt{3x + 6}} + x - \\sqrt{3x + 6} = 36.\\]Then\n\\[2x + 2 \\sqrt{x^2 - 3x - 6} = 36,\\]so\n\\[\\sqrt{x^2 - 3x - 6} = 18 - x.\\]Squaring both sides, we get $x^2 - 3x - 6 = 324 - 36x + x^2.$  Hence, $x = \\boxed{10}.$  We check that this solution works."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest 3-digit number of the form $aaa$ such that it is divisible by 9? (Here, $a$ represents a digit.)",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "For a number to be divisible by 9, the sum of its digits must be divisible by 9. If the number is of the above form, then the sum of its digits is $a+a+a=3a$. The smallest value of $a$ for which 9 divides $3a$ is $a=3$. Therefore, $\\boxed{333}$ is the smallest 3-digit number of the form $aaa$ which is divisible by 9."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $x^2-20x+36$ can be written in the form $(x+b)^2+c$, where $b$ and $c$ are constants. What is $b+c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We complete the square.\n\nWe have $(x-10)^2 = x^2 - 20x + 100$, and so\n\n\\begin{align*}\nx^2-20x+ 36 &= (x-10)^2 + (36-100) \\\\\n&= (x-10)^2 - 64.\n\\end{align*}Therefore, $b=-10$ and $c=-64$, which gives us $b+c = \\boxed{-74}$."
-}

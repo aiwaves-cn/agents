@@ -1,6 +1,0 @@
-{
-    "problem": "The smallest distance between the origin and a point on the parabola $y=x^2-5$ can be expressed as $\\sqrt{a}/b$, where $a$ and $b$ are positive integers, and $a$ is not divisible by the square of any prime.  Find $a+b$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "By the distance formula, we are trying to minimize $\\sqrt{x^2+y^2}=\\sqrt{x^2+x^4-10x^2+25}$. In general minimization problems like this require calculus, but one elementary optimization method that sometimes works is completing the square.  We have $$\\sqrt{x^2+x^4-10x^2+25}=\\sqrt{(x^2-9/2)^2+(25-81/4)}.$$This expression is minimized when the square equals $0$, i.e. when $x=\\pm 3/\\sqrt{2}.$ For this value of $x$, the distance is $$\\sqrt{25-\\frac{81}{4}}=\\frac{\\sqrt{19}}{2}.$$Hence the desired answer is $\\boxed{21}$."
-}

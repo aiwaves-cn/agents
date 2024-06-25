@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can 81 be written as the sum of three positive perfect squares if the order of the three perfect squares does not matter?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Since we are partitioning 81 into sums of perfect squares, we proceed by subtracting out perfect squares and seeing which work: $81 - 64 = 17 = 16 + 1$. Further, $81 - 49 = 32 = 16+ 16$. And finally, $81 - 36 = 45 = 36 + 9$. Although there is more to check through, this sort of method should convince us that these are the only $\\boxed{3}$ solutions: $1^2 + 4^2 + 8^2 = 81$, $4^2 + 4^2 + 7^2 = 81$, and $3^2 + 6^2 + 6^2 = 81$."
-}

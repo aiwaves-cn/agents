@@ -1,6 +1,0 @@
-{
-    "problem": "In a certain colony of bacteria, the number of bacteria doubles every day. The colony starts with 3 bacteria, and has 6 at the end of day 1, 12 at the end of day 2, and so on. What is the number of the first day which ends with the colony having more than 100 bacteria?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "The number of bacteria is multiplied by 2 at the end of each day, so the number of bacteria at the end of day $n$ is $3\\cdot2^n$. We want $3\\cdot2^n > 100$, or $2^n > 33\\frac{1}{3}$. The smallest $n$ for which this happens is $n = \\boxed{6}$."
-}

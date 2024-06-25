@@ -1,6 +1,0 @@
-{
-    "problem": "Two rays with common endpoint $O$ form a $30^\\circ$ angle. Point $A$ lies on one ray, point $B$ on the other ray, and $AB=1$. What is the maximum possible length of $\\overline{OB}$?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "By the Law of Sines applied to triangle $OAB$, $$\\frac{OB}{\\sin\\angle\nOAB}=\\frac{AB}{\\sin\\angle AOB}.$$With $AB = 1$ and $\\angle AOB = 30^\\circ$, we have \\[\\frac{OB}{\\sin \\angle OAB} = \\frac{1}{\\sin 30^\\circ} = 2,\\]so  so $OB=2\\sin\\angle OAB$. Thus, $OB \\le \\boxed{2}$, with equality if and only if $\\angle OAB=90^\\circ$.\n\n[asy]\nunitsize(1.5 cm);\n\npair O, A, B;\n\nO = (0,0);\nA = sqrt(3)*dir(30);\nB = (2,0);\n\ndraw((0,0)--3*dir(30),Arrow(6));\ndraw((0,0)--(3,0),Arrow(6));\ndraw(A--B);\ndraw(rightanglemark(O,A,B,4));\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, S);\nlabel(\"$O$\", O, W);\nlabel(\"$1$\", (A + B)/2, NE, red);\n[/asy]"
-}

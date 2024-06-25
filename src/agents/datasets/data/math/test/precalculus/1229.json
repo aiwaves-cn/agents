@@ -1,6 +1,0 @@
-{
-    "problem": "Find $\\csc (-120^\\circ).$",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[\\csc (-120^\\circ) = \\frac{1}{\\sin (-120^\\circ)}.\\]Then\n\\[\\sin (-120^\\circ) = -\\sin (-120^\\circ + 180^\\circ) = -\\sin 60^\\circ = -\\frac{\\sqrt{3}}{2},\\]so\n\\[\\frac{1}{\\sin (-120^\\circ)} = -\\frac{2}{\\sqrt{3}} = \\boxed{-\\frac{2 \\sqrt{3}}{3}}.\\]"
-}

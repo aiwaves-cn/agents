@@ -1,6 +1,0 @@
-{
-    "problem": "In a certain base $b$, the square of $22_b$ is $514_b$.  What is $b$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We have that $22_b = 2b + 2$ and $514_b = 5b^2 + b + 4$.  Hence, $(2b + 2)^2 = 5b^2 + b + 4$, which simplifies to $b^2 - 7b = 0$.  This equation factors as $b(b - 7) = 0$, so $b = \\boxed{7}$."
-}

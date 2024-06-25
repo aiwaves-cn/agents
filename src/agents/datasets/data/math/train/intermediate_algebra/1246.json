@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that a real number $x$ satisfies \\[\\sqrt{49-x^2}-\\sqrt{25-x^2}=3.\\]What is the value of $\\sqrt{49-x^2}+\\sqrt{25-x^2}$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Adding $\\sqrt{25-x^2}$ to both sides gives \\[\\sqrt{49-x^2} = 3 + \\sqrt{25-x^2}.\\]Then, squaring both sides, we get \\[49-x^2 = 9 + 6\\sqrt{25-x^2} + (25-x^2),\\]so \\[15 = 6\\sqrt{25-x^2}.\\]Thus, $\\sqrt{25-x^2} = \\frac{15}{6} = \\frac{5}{2}.$ Instead of solving for $x$ from here, we notice that \\[\\sqrt{49-x^2} = 3 + \\sqrt{25-x^2} = 3 + \\frac{5}{2} = \\frac{11}{2}.\\]Thus, \\[\\sqrt{49-x^2} + \\sqrt{25-x^2} = \\frac{11}{2} + \\frac{5}{2} = \\boxed{8}.\\]"
-}

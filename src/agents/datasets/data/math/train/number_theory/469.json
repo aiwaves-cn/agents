@@ -1,6 +1,0 @@
-{
-    "problem": "As $n$ ranges over the positive integers, what is the sum of all possible values of the greatest common divisor of $3n+4$ and $n$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can apply the Euclidean algorithm here.\n\\begin{align*}\n\\gcd(3n+4, n) &= \\gcd(n, 3n+4 - 3n) \\\\\n&= \\gcd(n, 4).\n\\end{align*}There are three cases to consider:\n\nCase 1: $n$ is odd. Therefore, $n$ and 4 are relatively prime and have a greatest common divisor of 1.\n\nCase 2: $n$ is a multiple of 2, but not a multiple of 4. In this case, $n$ and 4 share a common factor of 2. Since 4 has no other factors, $n$ and 4 have a greatest common divisor of 2.\n\nCase 3: $n$ is a multiple of 4. In this case, $n$ and 4 have a greatest common divisor of 4.\n\nTherefore, the three possible values for the greatest common divisor of $3n+4$ and $n$ are 1, 2, and 4. It follows that the sum of all possible value of the greatest common divisor of $3n+4$ and $n$ is $1+2+4 = \\boxed{7}$."
-}

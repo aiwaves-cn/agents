@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a=\\frac{3}{5}$ and let $b=\\frac{2}{3}$. Compute $a^{2}b^{-3}.$",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Substituting the given values, we need to calculate, $\\left(\\frac{3}{5}\\right)^{2} \\left(\\frac{2}{3}\\right)^{-3}$. Because $n^{ab} = \\left(n^{a}\\right)^{b}$, this expression is equivalent to $$\\left(\\frac{3}{5}\\right)^{2} \\left(\\left(\\frac{2}{3}\\right)^{-1}\\right)^{3} = \\left(\\frac{3}{5}\\right)^{2} \\left(\\frac{3}{2}\\right)^{3}.$$Because $\\left(\\frac{a}{b}\\right)^{n} = \\frac{a^{n}}{b^{n}}$, we can rewrite this as $$\\frac{3^{2}}{5^{2}} \\cdot \\frac{3^{3}}{2^{3}} = \\frac{3^{2} \\cdot 3^{3}}{5^{2} \\cdot 2^{3}}.$$We then have \\[\\frac{3^{2} \\cdot 3^{3}}{5^{2} \\cdot 2^{3}} = \\frac{9\\cdot 27}{25\\cdot 8} = \\boxed{\\frac{243}{200}}.\\]"
-}

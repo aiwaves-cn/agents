@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate the whole number remainder when 987,670 is divided by 128.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We long divide as follows: $$\n\\begin{array}{c|c@{\\hspace{0pt}}c@{\\hspace{0pt}}c@{\\hspace{0pt}}c@{\\hspace{0pt}}c@{\\hspace{0pt}}c@{\\hspace{0pt}}c@{\\hspace{0pt}}c}\n\\multicolumn{2}{r}{} & & & 7 & 7 & 1 & 6 & \\\\\n\\cline{2-8}\n128 && 9&8&7&6&7&0 \\\\\n\\multicolumn{2}{r}{} & 8 & 9 & 6 &&&& \\\\ \\cline{3-5}\n\\multicolumn{2}{r}{} & & 9 & 1 & 6 &&& \\\\\n\\multicolumn{2}{r}{} & & 8 & 9 & 6 &&& \\\\ \\cline{4-6}\n\\multicolumn{2}{r}{} & & & 2 & 0 & 7 && \\\\\n\\multicolumn{2}{r}{} & & & 1 & 2 & 8 && \\\\ \\cline{5-7}\n\\multicolumn{2}{r}{} & & & & 7 & 9 & 0 & \\\\\n\\multicolumn{2}{r}{} & & & & 7 & 6 & 8 & \\\\ \\cline{6-8}\n\\multicolumn{2}{r}{} & & & & & 2 & 2 & \\\\\n\\end{array}\n$$ So the remainder is $\\boxed{22}$.\n\n$$\\text{-OR-}$$\n\nAssuming use of a calculator, we can divide $987,\\!670$ by 128 to find that the quotient is between 7716 and 7717. Subtracting the product of 7716 and 128 from $987,\\!670$ gives $\\boxed{22}$."
-}

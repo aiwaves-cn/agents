@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers $n$ satisfy the condition $100 < n < 200$ and the condition $n$ has the same remainder whether it is divided by $6$ or by $8$?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Since $n$ has the same remainder whether divided by 6 or by 8, we can write that $n = 6a + r = 8b + r$, where $0\\leq r \\leq 5$.  This implies that $3a = 4b$, and so $a$ is a multiple of 4 and we can write $a = 4k$ for some integer $k$.  Since $100<n<200$, we see that $95<6a<200$, or $\\frac{95}{24} < k <\\frac{200}{24}$.  Since $k$ is an integer, $4\\leq k \\leq 8$.  If $k = 4$, then we must have $r = 5$.  Otherwise, $r = 0,1,2,3,4,5$ are all allowable.  Thus we have a total of $\\boxed{25}$ possible values for $n$."
-}

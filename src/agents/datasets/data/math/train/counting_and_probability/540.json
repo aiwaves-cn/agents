@@ -1,6 +1,0 @@
-{
-    "problem": "Two different numbers are randomly selected from the set $S = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\\}$. The probability that their sum is 12 would be greater if the number $n$ had first been removed from set $S$. What is the value of $n$?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "All of the integers in the set $S$ have exactly one complementary number, $12-x$, such that their sum is 12, except for the number 6. Because $6+6= 12$, and the two numbers chosen are distinct, removing 6 will not eliminate any of the pairs that sum to 12, and it will reduce the total number of pairs possible. So $n=\\boxed{6}$."
-}

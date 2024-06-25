@@ -1,6 +1,0 @@
-{
-    "problem": "A $\\textit{palindrome}$ is a number which reads the same forward as backward, for example 313 or 1001. Ignoring the colon, how many different palindromes are possible on a 12-hour digital clock displaying only the hours and minutes? (Notice a zero may not be inserted before a time with a single-digit hour value. Therefore, 01:10 may not be used.)",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "First, consider the three-digit palindromes.  There are $9$ choices for the first digit (the hour): $1$, $2$,..., $9$.  There are $6$ choices for the second digit (the tens digit of the minutes): $0$, $1$, ..., $5$.  The last digit (the units digit of the minutes) has to be the same as the first digit.  So there are $9 \\cdot 6 = 54$ three-digit palindromes.\n\nSecond, consider the four-digit palindromes.  The first digit (the tens digit of the hour) must be $1$.  There are $3$ choices for the second digit (the units digit of the hour): $0$, $1$, and $2$.  The third digit must be the same as the second digit, and the fourth digit must be the same as the first digit.  So there are $3$ four-digit palindromes.\n\nIn total, there are $54+3=\\boxed{57}$ different palindromes."
-}

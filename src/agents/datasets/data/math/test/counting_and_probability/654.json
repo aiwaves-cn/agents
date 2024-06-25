@@ -1,6 +1,0 @@
-{
-    "problem": "If all multiples of 3 and all multiples of 4 are removed from the list of whole numbers 1 through 100, then how many whole numbers are left?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We know that every third whole number starting from one must be removed from the list. Since the greatest multiple of $3$ less than $100$ is $3\\cdot33=99$, this gives us a total of $33$ such numbers. We then consider the multiples of four. Every fourth whole number starting from one is a multiple of four and since $4 \\cdot 25=100$, this gives us $25$ such numbers. However, we also have to account for the numbers that are multiples of both $3$ and $4$ which we counted twice. These are the multiples of $12$ (the least common multiple of $3$ and $4$). Since $100 \\div 12 = 8 \\text{ R}4$, we know that there are $8$ multiples of both $3$ and $4$. Thus, we have $33+25-8=50$ numbers that we removed from the list. Since there were $100$ whole numbers total, this leaves us with $100-50=\\boxed{50}$ whole numbers."
-}

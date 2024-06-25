@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix}^3.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that\n\\begin{align*}\n\\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix}^3 &= \\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} 0 & -1 \\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix} \\\\\n&= \\boxed{\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}.}\n\\end{align*}"
-}

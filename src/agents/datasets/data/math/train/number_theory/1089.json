@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least five-digit positive integer which is congruent to 5 (mod 15)?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Using long division, we find that $10,\\!000$ divided by 15 yields a quotient of 666 with a remainder of 10. Thus $10,\\!005$ is a multiple of 15, and $\\boxed{10,\\!010}$ is the least five-digit integer which is congruent to 5 (mod 15). For confirmation, note that $10,\\!010-15=9,\\!995$ is the next-highest integer which is congruent to 5 (mod 15)."
-}

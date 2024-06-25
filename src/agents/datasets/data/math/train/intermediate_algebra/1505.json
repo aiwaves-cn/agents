@@ -1,6 +1,0 @@
-{
-    "problem": "Find the quadratic polynomial, with real coefficients, which has $-2 - 3i$ as a root, and where the coefficient of $x$ is $-4$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since the coefficients are real, the other roots must be $-2 + 3i.$  Thus, the quadratic is a constant multiple of\n\\[(x + 2 + 3i)(x + 2 - 3i) = (x + 2)^2 - (3i)^2 = (x + 2)^2 + 9 = x^2 + 4x + 13.\\]We want the coefficient of $x$ to be $-4,$ so we simply multiply this quadratic by $-1,$ to get $\\boxed{-x^2 - 4x - 13}.$"
-}

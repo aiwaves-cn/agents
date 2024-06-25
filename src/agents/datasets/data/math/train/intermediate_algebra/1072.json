@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $729x^3+8$ can be written as $(ax+b)(cx^2+dx+e)$. Find $a+b+c+d+e$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We recognize $729x^3+8$ as a sum of cubes. We can write $729x^3+8$ as $(9x)^3+2^3$. We know the formula: $$a^3+b^3= (a+b)(a^{2}-ab+b^{2}). $$Thus, $$ (9x)^3+2^3=(9x+2)(81x^2-18x+4).$$Therefore, $a+b+c+d+e=9+2+81-18+4=\\boxed{78}$."
-}

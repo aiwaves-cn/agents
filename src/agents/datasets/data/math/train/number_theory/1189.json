@@ -1,6 +1,0 @@
-{
-    "problem": "The number $101$ is the smallest three-digit palindromic prime. What is the second-smallest one?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We will search for palindromic primes in the 100s. Since the hundreds digit is 1, the ones digit must also be 1. We can only vary the tens digit. Setting the tens digit equal to 1, we look at the number 111. This number is not prime (divisible by 3). Setting the tens digit equal to 2, we look at the number 121. This number is not prime (divisible by 11). Setting the tens digit equal to 3, we look at the number 131. This number is prime, so the second-smallest palindromic prime is $\\boxed{131}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Coach Grunt is preparing the 5-person starting lineup for his basketball team, the Grunters.  There are 12 players on the team.  Two of them, Ace and Zeppo, are league All-Stars, so they'll definitely be in the starting lineup.  How many different starting lineups are possible?  (The order of the players in a basketball lineup doesn't matter.)",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Coach Grunt has to choose 3 players from the 10 players that are remaining after Ace and Zeppo have been placed in the lineup.  The order in which the players are chosen doesn't matter, so the answer is $$ \\binom{10}{3} = \\frac{10 \\times 9 \\times 8}{3 \\times 2 \\times 1} = \\boxed{120}. $$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d,$ $e,$ $f$ be positive real numbers such that $a + b + c + d + e + f = 7.$  Find the minimum value of\n\\[\\frac{1}{a} + \\frac{4}{b} + \\frac{9}{c} + \\frac{16}{d} + \\frac{25}{e} + \\frac{36}{f}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(a + b + c + d + e + f) \\left( \\frac{1}{a} + \\frac{4}{b} + \\frac{9}{c} + \\frac{16}{d} + \\frac{25}{e} + \\frac{36}{f} \\right) \\ge (1 + 2 + 3 + 4 + 5 + 6)^2 = 441,\\]so\n\\[\\frac{1}{a} + \\frac{4}{b} + \\frac{9}{c} + \\frac{16}{d} + \\frac{25}{e} + \\frac{36}{f} \\ge \\frac{441}{7} = 63.\\]Equality occurs when $a^2 = \\frac{b^2}{4} = \\frac{c^2}{9} = \\frac{d^2}{16} = \\frac{e^2}{25} = \\frac{f^2}{36}$ and $a + b + c + d + e + f = 7.$  Solving, we find $a = \\frac{1}{3},$ $b = \\frac{2}{3},$ $c = 1,$ $d = \\frac{4}{3},$ $e = \\frac{5}{3},$ and $f = 2,$ so the minimum value is $\\boxed{63}.$"
-}

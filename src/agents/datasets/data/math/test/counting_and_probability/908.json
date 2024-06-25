@@ -1,6 +1,0 @@
-{
-    "problem": "Seven cards each containing one of the following letters C, B, T, A, E, M and H are placed in a hat. Each letter is used only once. Stu will pull four cards out at random and without replacement. What is the probability that Stu pulls out M, A, T, H in this order? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The probability that Stu pulls the M out first is 1/7. The probability that he then pulls the A out next is 1/6, since there are now 6 letter remaining.  Continuing in this way, the probability that he pulls out T next is 1/5 and the probability that H then follows is 1/4.  Therefore, the probability that he pulls out M, A, T, H in this order is $1/7 \\times 1/6 \\times 1/5 \\times 1/4 = \\boxed{\\frac{1}{840}}$."
-}

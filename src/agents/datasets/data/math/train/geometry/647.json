@@ -1,6 +1,0 @@
-{
-    "problem": "In $\\Delta ABC$, $AC = BC$, $m\\angle DCB = 40^{\\circ}$, and $CD \\parallel AB$. What is the number of degrees in $m\\angle ECD$?\n\n[asy] pair A,B,C,D,E; B = dir(-40); A = dir(-140); D = (.5,0); E = .4 * dir(40);\ndraw(C--B--A--E,EndArrow); draw(C--D,EndArrow);\nlabel(\"$A$\",A,W); label(\"$C$\",C,NW);label(\"$B$\",B,E);label(\"$D$\",D,E);label(\"$E$\",E,E);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Angles $\\angle DCB$ and $\\angle B$ are alternate interior angles, so they are congruent. Therefore, $m\\angle B=40^\\circ$.\n\nSince $AC=BC$, triangle $\\triangle ABC$ is isosceles with equal angles at $A$ and $B$. Therefore, $m\\angle A=40^\\circ$.\n\nFinally, $\\angle A$ and $\\angle ECD$ are corresponding angles, so $m\\angle ECD=m\\angle A = \\boxed{40}$ degrees."
-}

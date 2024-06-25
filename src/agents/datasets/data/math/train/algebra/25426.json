@@ -1,6 +1,0 @@
-{
-    "problem": "Find all solutions $x$ of the inequality $$\\frac{5}{24} + \\left|x-\\frac{11}{48}\\right| < \\frac{5}{16}.$$Express your answer in interval notation, simplifying all fractions in your answer.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can make our work easier by rewriting all fractions in the inequality so that they have a common denominator of $48$: $$\\frac{10}{48} + \\left|x-\\frac{11}{48}\\right| < \\frac{15}{48}$$Then we subtract $\\frac{10}{48}$ from both sides: $$\\left|x-\\frac{11}{48}\\right| < \\frac{5}{48}$$The expression on the left side is the positive difference between $x$ and $\\frac{11}{48}$. So, the inequality says that $x$ is strictly between $\\frac{11}{48}-\\frac{5}{48}$ and $\\frac{11}{48}+\\frac{5}{48}$. Simplifying these expressions and writing our answer in interval notation, we have $x\\in\\boxed{\\left(\\frac{1}{8},\\frac{1}{3}\\right)}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P(x)$ be a polynomial such that\n\\[P(P(x)) + P(x) = 6x\\]for all real numbers $x.$  Find the sum of all possible values of $P(10).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $d$ be the degree of $P(x).$  Then the degree of $P(P(x))$ is $d^2.$  Hence, the degree of $P(P(x)) + P(x)$ is $d^2,$ and the degree of $6x$ is 1, so we must have $d = 1.$\n\nAccordingly, let $P(x) = ax + b.$  Then\n\\[a(ax + b) + b + ax + b = 6x.\\]Expanding, we get $(a^2 + a) x + ab + 2b = 6x.$  Comparing coefficients, we get\n\\begin{align*}\na^2 + a &= 6, \\\\\nab + 2b &= 0.\n\\end{align*}From the first equation, $a^2 + a - 6 = 0,$ which factors as $(a - 2)(a + 3) = 0,$ so $a = 2$ or $a = -3.$\n\nFrom the second equation, $(a + 2) b = 0.$  Since $a$ cannot be $-2,$ $b = 0.$\n\nHence, $P(x) = 2x$ or $P(x) = -3x,$ and the sum of all possible values of $P(10)$ is $20 + (-30) = \\boxed{-10}.$"
-}

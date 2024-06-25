@@ -1,6 +1,0 @@
-{
-    "problem": "How many numbers are in the list $$ 2.5, 5.5, 8.5, 11.5, \\ldots, 80.5, 83.5? $$",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "We can add $0.5$ to each member of the list, to make it easier to deal with: $$\n3, 6, 9, 12, \\ldots, 81, 84.\n$$ Now if we divide by 3, we get $$\n1, 2, 3, 4, \\ldots, 27, 28,\n$$ so there are $\\boxed{28}$ numbers in the list."
-}

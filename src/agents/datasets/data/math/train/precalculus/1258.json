@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ be vectors such that $\\|\\mathbf{a}\\| = 1,$ $\\|\\mathbf{b}\\| = 5,$ $\\|\\mathbf{c}\\| = 3,$ and\n\\[\\mathbf{a} \\times (\\mathbf{a} \\times \\mathbf{b}) = \\mathbf{c}.\\]If $\\theta$ is the angle between $\\mathbf{a}$ and $\\mathbf{b},$ then find $\\sin \\theta.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Note that vectors $\\mathbf{a}$ and $\\mathbf{a} \\times \\mathbf{b}$ are orthogonal, so\n\\[\\|\\mathbf{c}\\| = \\|\\mathbf{a} \\times (\\mathbf{a} \\times \\mathbf{b})\\| = \\|\\mathbf{a}\\| \\|\\mathbf{a} \\times \\mathbf{b}\\|.\\]Also, $\\|\\mathbf{a} \\times \\mathbf{b}\\| = \\|\\mathbf{a}\\| \\|\\mathbf{b}\\| \\sin \\theta,$ so\n\\[3 = 1 \\cdot 1 \\cdot 5 \\sin \\theta.\\]Hence, $\\sin \\theta = \\boxed{\\frac{3}{5}}.$"
-}

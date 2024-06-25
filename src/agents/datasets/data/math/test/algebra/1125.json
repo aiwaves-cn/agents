@@ -1,6 +1,0 @@
-{
-    "problem": "I choose a random integer $n$ between $1$ and $10$ inclusive. What is the probability that for the $n$ I chose, there exist no real solutions to the equation $x(x+5) = -n$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First we find the solution set that results in the equation having no real solutions. We begin by rearranging the equation $x(x+5) = -n$ to $x^2 + 5x + n = 0$. If the discriminant $b^2 - 4ac < 0$, then there are no real solutions. Thus, we want to solve for $n$ in the inequality $25 - 4n < 0$. Adding $4n$ and dividing by 4, we find $n>6.25$. The probability that I chose one of the numbers 7, 8, 9, or 10 is $\\boxed{\\frac{2}{5}}$."
-}

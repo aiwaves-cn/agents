@@ -1,6 +1,0 @@
-{
-    "problem": "Find $ 8^8 \\cdot 4^4 \\div 2^{28}$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Obviously, multiplying out each of the exponents is not an option.  Instead, notice that the bases of all three exponents are themselves powers of $2$.  Let's convert the bases to $2$: $$ 8^8 \\cdot 4^4 \\div 2^{28} = (2^3)^8 \\cdot (2^2)^4 \\div 2^{28}.$$Using the power of a power rule in reverse, $(2^3)^8 = 2^{3 \\cdot 8} = 2^{24}$.  Likewise, $(2^2)^4 = 2^{2 \\cdot 4} = 2^8$.  Therefore, our simplified expression is $2^{24} \\cdot 2^8 \\div 2^{28}$.\n\nNow, using the product of powers rule, $2^{24} \\cdot 2^8 = 2^{24 + 8} = 2^{32}$.  Our expression is now stands at $2^{32} \\div 2^{28}$.  Finally, we'll use quotient of powers to simplify that to $2^{32-28} = 2^4 = \\boxed{16}$."
-}

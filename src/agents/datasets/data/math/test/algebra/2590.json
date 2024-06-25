@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x) = x^2 - 1$ and $g(x) = x + 7,$ evaluate $f(g(7)) + g(f(3)).$",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We just plug into our function definitions given in the problem:\n\n\\begin{align*}\nf(g(7)) + g(f(3)) &= f(7 + 7) + g(3^2 - 1) \\\\\n&= f(14) + g(8) = (14^2 - 1) + (8 + 7) \\\\\n&= 195 + 15 = \\boxed{210}\n\\end{align*}"
-}

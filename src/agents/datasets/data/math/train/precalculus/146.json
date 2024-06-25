@@ -1,6 +1,0 @@
-{
-    "problem": "A certain regular tetrahedron has three of its vertices at the points $(0,1,2),$ $(4,2,1),$ and $(3,1,5).$  Find the coordinates of the fourth vertex, given that they are also all integers.",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "The side length of the regular tetrahedron is the distance between $(0,1,2)$ and $(4,2,1),$ which is\n\\[\\sqrt{(0 - 4)^2 + (1 - 2)^2 + (2 - 1)^2} = \\sqrt{18} = 3 \\sqrt{2}.\\]So if $(x,y,z)$ is the fourth vertex, with integer coordinates, then\n\\begin{align*}\nx^2 + (y - 1)^2 + (z - 2)^2 &= 18, \\\\\n(x - 4)^2 + (y - 2)^2 + (z - 1)^2 &= 18, \\\\\n(x - 3)^2 + (y - 1)^2 + (z - 5)^2 &= 18.\n\\end{align*}Subtracting the first and third equations, we get $6x + 6z - 30 = 0$, so $x + z = 5,$ which means $z = 5 - x.$  Subtracting the first and second equation, we get $8x + 2y - 2z - 16 = 0,$ so\n\\[y = z - 4x + 8 = (5 - x) - 4x + 8 = 13 - 5x.\\]Substituting into the first equation, we get\n\\[x^2 + (12 - 5x)^2 + (3 - x)^2 = 18.\\]This simplifies to $27x^2 - 126x + 135 = 0,$ which factors as $9(x - 3)(3x - 5) = 0.$  Since $x$ is an integer, $x = 3.$  Then $y = -2$ and $z = 2.$  Thus, the fourth vertex is $\\boxed{(3,-2,2)}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the quadratic polynomial $p(x)$ such that $p(-7) = 0,$ $p(4) = 0,$ and $p(5) = -36.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $p(-7) = p(4) = 0,$ the quadratic polynomial $p(x)$ is of the form\n\\[p(x) = c(x + 7)(x - 4),\\]for some constant $c.$  To find $c,$ we set $x = 5,$ and use the fact that $p(5) = -36$:\n\\[-36 = c(12)(1),\\]so $c = -3.$  Hence, $p(x) = -3(x + 7)(x - 4) = \\boxed{-3x^2 - 9x + 84}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$ in the equation\n\\[2^{(16^x)} = 16^{(2^x)}.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\[16^{(2^x)} = (2^4)^{(2^x)} = 2^{4 \\cdot 2^x}.\\]Then $2^{16^x} = 2^{4 \\cdot 2^x},$ so\n\\[16^x = 4 \\cdot 2^x.\\]In turn, we can write this as\n\\[2^{4x} = 2^{x + 2},\\]so $4x = x + 2.$  Therefore, $x = \\boxed{\\frac{2}{3}}.$"
-}

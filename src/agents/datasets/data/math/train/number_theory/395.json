@@ -1,6 +1,0 @@
-{
-    "problem": "By what common fraction does $0.\\overline{81}$ exceed $0.81$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "First, we convert $0.\\overline{81}$ to a fraction by the following trick. Let $x=0.\\overline{81}$. Then $100x=81.\\overline{81}$, so we can subtract:\n\n$$\\begin{array}{r r c r@{}l}\n&100x &=& 81&.818181\\ldots \\\\\n- &x &=& 0&.818181\\ldots \\\\\n\\hline\n&99x &=& 81 &\n\\end{array}$$\n\nTherefore, $x=\\frac{81}{99}=\\frac{9}{11}$.\n\nAt this point, we could write $0.81$ as $\\frac{81}{100}$ and subtract this from $\\frac{9}{11}$. However, the following observation will save us some work: \\begin{align*}\n0.\\overline{81} - 0.81 &= 0.818181\\ldots - 0.81 \\\\\n&= 0.008181\\ldots \\\\\n&= \\frac{x}{100}.\n\\end{align*} Therefore, $$0.\\overline{81} - 0.81 = \\boxed{\\frac{9}{1100}}.$$"
-}

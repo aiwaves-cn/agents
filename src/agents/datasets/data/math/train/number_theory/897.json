@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways can 1995 be factored as a product of two two-digit numbers? (Two factorizations of the form $a\\cdot b$ and $b\\cdot a$ are considered the same).",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "$1995=5\\cdot399=3\\cdot5\\cdot133=3\\cdot5\\cdot7\\cdot19$. Since $3\\cdot5\\cdot7=105$ has three digits, in any expression of $1995$ as the product of two two-digit numbers, $19$ must be a proper factor of one of them. $19\\cdot3=57$ and $19\\cdot5=95$ are two-digit numbers that are divisible by $19$ and divide $1995$, but $19\\cdot7=133$ and $19\\cdot3\\cdot5=285$ are three digits, so the only possible expressions of $1995$ as the product of two two-digit numbers are $57\\cdot35$ and $95\\cdot21$. So, there are $\\boxed{2}$ such factorizations."
-}

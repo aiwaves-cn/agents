@@ -1,6 +1,0 @@
-{
-    "problem": "If $p(x) = x^4 - 3x + 2$, then find the coefficient of the $x^3$ term in the polynomial $(p(x))^3$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "By inspection, upon expanding the terms of the product $(x^4 - 3x + 2)(x^4 - 3x + 2)(x^4 - 3x + 2)$, the only term that has a degree of $3$ will be the term found by multiplying together the three linear terms. Thus, the desired coefficient is the coefficient is $(-3)(-3)(-3)=\\boxed{-27}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = x^4 + ax^3 + bx^2 + cx + d$ be a polynomial whose roots are all negative integers.  If $a + b + c + d = 2009,$ find $d.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let the roots be $-r_1,$ $-r_2,$ $-r_3,$ $-r_4,$ so all the $r_i$ are positive integers.  Then\n\\[f(x) = (x + r_1)(x + r_2)(x + r_3)(x + r_4),\\]and $f(1) = (1 + r_1)(1 + r_2)(1 + r_3)(1 + r_4).$  Also, $f(1) = 1 + a + b + c + d = 2010.$  The prime factorization of 2010 is $2 \\cdot 3 \\cdot 5 \\cdot 67,$ so $1 + r_1,$ $1 + r_2,$ $1 + r_3$, and $1 + r_4$ are equal to 2, 3, 5, and 67, in some order.  Therefore,\n\\[f(x) = (x + 1)(x + 2)(x + 4)(x + 66),\\]and $d = 1 \\cdot 2 \\cdot 4 \\cdot 66 = \\boxed{528}.$"
-}

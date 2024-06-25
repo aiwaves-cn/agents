@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\left\\lfloor n^2/4 \\right\\rfloor - \\lfloor n/2 \\rfloor^2 = 2$, then find all integer values of $n$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If $n$ is even, then we can write $n = 2m$ for some integer $m$. Substituting, $$\\left \\lfloor (2m)^2/4 \\right\\rfloor - \\left\\lfloor (2m)/2 \\right\\rfloor^2 = m^2 - m^2 = 0.$$Hence, $n$ must be odd; we can write $n = 2m+1$ for some integer $m$. Substituting,   \\begin{align*}\n&\\left \\lfloor (2m+1)^2/4 \\right. \\rfloor - \\left\\lfloor (2m+1)/2 \\right\\rfloor^2\\\\\n&\\qquad= \\left \\lfloor (4m^2 + 4m + 1)/4 \\right\\rfloor - \\left\\lfloor (2m+1)/2 \\right\\rfloor^2 \\\\\n&\\qquad= \\left\\lfloor m^2 + m + \\frac 14 \\right\\rfloor - \\left\\lfloor m + \\frac 12 \\right\\rfloor^2 \\\\\n&\\qquad= m^2 + m - m^2\\\\\n& = m.\n\\end{align*}Thus, we find $m = 2$ and $n = \\boxed{5}$ as the unique integer solution."
-}

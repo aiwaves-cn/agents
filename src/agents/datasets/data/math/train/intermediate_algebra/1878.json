@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be distinct, nonzero real numbers such that\n\\[a + \\frac{1}{b} = b + \\frac{1}{c} = c + \\frac{1}{a}.\\]Find $|abc|.$\n\nNote: Intermediate Algebra writing problem, week 12.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equations,\n\\begin{align*}\na - b &= \\frac{1}{c} - \\frac{1}{b}  =\\frac{b - c}{bc}, \\\\\nb - c &= \\frac{1}{a} - \\frac{1}{c} = \\frac{c - a}{ac}, \\\\\nc - a &= \\frac{1}{b} - \\frac{1}{a} = \\frac{a - b}{ab}.\n\\end{align*}Multiplying these equations, we get\n\\[(a - b)(b - c)(c - a) = \\frac{(a - b)(b - c)(c - a)}{a^2 b^2 c^2}.\\]Since $a,$ $b,$ and $c$ are distinct, we can cancel the factors of $a - b,$ $b - c,$ $c - a,$ to get\n\\[a^2 b^2 c^2 = 1.\\]Therefore, $|abc| = \\boxed{1}.$"
-}

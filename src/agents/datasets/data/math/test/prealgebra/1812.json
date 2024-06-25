@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $ \\frac{1}{31} \\div \\frac{1}{93} $.",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "Recall that division is multiplication by a reciprocal. So we rewrite the division by $\\frac{1}{93}$ as multiplication by the reciprocal of $\\frac{1}{93}$. Since the reciprocal of $\\frac{1}{93}$ is 93, we get  \\[\n\\frac{1}{31} \\div \\frac{1}{93} = \\frac{1}{31} \\cdot 93.\n\\]Now we can use the commutative property of multiplication to turn this into a division problem:  \\[\n\\frac{1}{31} \\cdot 93 = 93 \\cdot \\frac{1}{31} = 93 \\div 31 = \\boxed{3}.\n\\]"
-}

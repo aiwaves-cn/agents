@@ -1,6 +1,0 @@
-{
-    "problem": "The positive integer divisors of 175, except 1, are arranged around a circle so that every pair of adjacent integers has a common factor greater than 1. What is the sum of the two integers adjacent to 7?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "$175=5^2\\cdot7^1$. To arrange the divisors of 175, we can (conveniently) start with the divisor 7. Since $\\gcd(5,7)=1$, the two divisors that are adjacent to 7 must be multiples of 7, which means they have to be $5^1\\cdot7=35$ and $5^2\\cdot7=175$. Thus, the sum of the two integers adjacent to 7 is $35+175=\\boxed{210}$."
-}

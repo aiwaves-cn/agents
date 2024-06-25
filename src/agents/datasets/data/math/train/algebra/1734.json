@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x) = -\\dfrac{1}{x},$ what is $f(f(f(f(f(6)))))$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We see that $f(f(x)) = -\\dfrac{1}{-\\frac{1}{x}} = x$, therefore $f(f(f(f(f(6))))) = f(f(f(6))) = f(6) = \\boxed{-\\dfrac{1}{6}}.$"
-}

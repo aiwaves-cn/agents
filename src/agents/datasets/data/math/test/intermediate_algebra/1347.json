@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)$ be a polynomial of degree greater than $2$. If $f(1) = 2$ and $f(2) = 3$, find the remainder when $f(x)$ is divided by $(x-1)(x-2)$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $(x-1)(x-2)$ has degree $2$, we know the remainder has degree at most $1$, and thus is of the form $ax+b$ for some constants $a$ and $b$. Let $q(x)$ be the quotient. Then we have,\n$$f(x) = (x-1)(x-2)q(x)+ax+b.$$Substituting $x=1$ and $x=2$ gives us the equations:\n$$\\begin{aligned} f(1) &= 2 = a +b \\\\\nf(2) &= 3 = 2a+b \\end{aligned}$$Subtracting the first equation from the second gives us $a=1$ and consequently, $b=1$. Hence the remainder is $\\boxed{x+1}$."
-}

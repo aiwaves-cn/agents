@@ -1,6 +1,0 @@
-{
-    "problem": "The complex numbers $5 + 10i,$ $7 + 2i,$ and $11 + 3i$ are three vertices of a rectangle.  Find the fourth vertex.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Let $a = 5 + 10i,$ $b = 7 + 2i,$ and $c = 11 + 3i.$  Let $d$ be the fourth vertex.\n\nNote that\n\\[c - b = 4 + i\\]and\n\\[a - b = -2 + 8i = 2i(4 +i) = 2i(c - b).\\]Thus, the angle between the segment joining $a$ and $b$ and the segment joining $b$ and $c$ is $90^\\circ.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A, B, C, D;\n\nA = (5,10);\nB = (7,2);\nC = (11,3);\nD = (9,11);\n\ndraw(A--B--C--D--cycle);\ndraw(A--C,dashed);\ndraw(B--D,dashed);\n\ndot(\"$a = 5 + 10i$\", A, W);\ndot(\"$b = 7 + 2i$\", B, S);\ndot(\"$c = 11 + 3i$\", C, E);\ndot(\"$d = 9 + 11i$\", D, N);\ndot((A + C)/2);\n[/asy]\n\nAs a rectangle, the midpoints of the diagonals coincide.  The midpoint of $a$ and $c$ is\n\\[\\frac{5 + 10i + 11 + 3i}{2} = 8 + \\frac{13}{2} i,\\]so\n\\[d = 2 \\left( 8 + \\frac{13}{2} i \\right) - (7 + 2i) = \\boxed{9 + 11i}.\\]"
-}

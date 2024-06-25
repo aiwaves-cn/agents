@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify the expression \\[\\sqrt{37-20\\sqrt3}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We look for integers $a$ and $b$ such that \\[\\sqrt{37-20\\sqrt3} = a-b\\sqrt3.\\]Squaring both sides, we have $37-20\\sqrt3=(a-b\\sqrt3)^2 = (a^2+3b^2) - 2ab\\sqrt3.$ Therefore, we must have \\[\\begin{aligned} a^2+3b^2 &= 37, \\\\ -2ab &= -20. \\end{aligned}\\]The second equation gives $ab=10.$ Trying the factor pairs of $10,$ we find that $(a,b)=(5,2)$ satisfies $a^2+3b^2=37.$ Therefore, $(37-20\\sqrt3)=(5-2\\sqrt3)^2.$ Since $5-2\\sqrt3 \\ge 0,$ it follows that \\[\\sqrt{37-20\\sqrt3} = \\boxed{5-2\\sqrt3}.\\]"
-}

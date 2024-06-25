@@ -1,6 +1,0 @@
-{
-    "problem": "Find $\\left(\\frac{1+i}{\\sqrt{2}}\\right)^{46}$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Not wanting to multiply out a product with 46 factors, we first see what happens when we square $(1+i)/\\sqrt{2}$. We have  \\[\n\\left(\\frac{1+i}{\\sqrt{2}}\\right)^2 =\\frac{1+2i+i^2}{(\\sqrt{2})^2}= \\frac{1+2i-1}{2} = i.\n\\] So $\\left(\\frac{1+i}{\\sqrt{2}}\\right)^{46}=\\left(\\left(\\frac{1+i}{\\sqrt{2}}\\right)^2\\right)^{23}=i^{23}=(i^{20})(i^3)=i^3=\\boxed{-i}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find $y$ if $\\dfrac{y^2 - 9y + 8}{y-1} + \\dfrac{3y^2 +16y-12 }{3y -2} = -3$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We can factor the quadratics in the numerators on the left side, and lo and behold, we can simplify the fractions: \\begin{align*} \\frac{y^2 - 9y + 8}{y-1} + \\dfrac{3y^2 +16y-12 }{3y -2} &= \\frac{\\cancel{(y-1)}(y-8)}{\\cancel{y-1}} + \\frac{\\cancel{(3y-2)}(y+6)}{\\cancel{3y-2}} \\\\ &= y-8 + y+6. \\end{align*}So, our equation is $2y-2 = -3$, which gives $y =\\boxed{-\\frac{1}{2}}$.  (A quick check shows that this solution is not extraneous.)"
-}

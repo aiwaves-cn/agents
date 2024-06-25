@@ -1,6 +1,0 @@
-{
-    "problem": "When a number is divided by 5, the remainder is 3. What is the remainder when twice the number is divided by 5?",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "If our number is $n$, then $n\\equiv 3\\pmod5$.  This tells us that  \\[2n=n+n\\equiv 3+3\\equiv1\\pmod5.\\] The remainder is $\\boxed{1}$ when the number is divided by 5."
-}

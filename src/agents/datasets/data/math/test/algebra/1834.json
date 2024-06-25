@@ -1,6 +1,0 @@
-{
-    "problem": "A standard deck of playing cards with $26$ red cards and $26$ black cards is split into two piles, each having at least one card. In pile $A$ there are six times as many black cards as red cards. In pile $B,$ the number of red cards is a multiple of the number of black cards. How many red cards are in pile $B?$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let pile $A$ have $r_A$ red cards and $b_A$ black cards, and let pile $B$ have $r_B$ red cards and $b_B$ black cards. From the given information, we have  $$\\left\\{ \\begin{array}{ll}\nr_A+r_B & = 26 \\\\\nb_A+b_B & = 26 \\\\\nb_A &= 6\\cdot r_A \\\\\nr_B &= m\\cdot b_B \\\\\n\\end{array} \\right.$$ for some positive integer $m.$ Substituting $6\\cdot r_A$ and $m\\cdot b_B$ for $b_A$ and $r_B,$ respectively, in the first two equations, we have $$\\left\\{ \\begin{array}{ll}\nr_A+m\\cdot b_B & = 26 \\\\\n6\\cdot r_A+b_B & = 26.\n\\end{array} \\right.$$ Multiplying the first equation by 6 and subtracting, we get $$(6m-1)b_B=5\\cdot26=2\\cdot5\\cdot13.$$ Since $m$ is an integer, we have two possibilities: $b_B=2$ and $m=11,$ or $b_B=26$ and $m=1.$ The latter implies that pile $A$ is empty, which is contrary to the statement of the problem, so we conclude that $b_B=2$ and $m=11.$ Then, there are $r_B=m\\cdot b_B=11\\cdot2=\\boxed{22}$ red cards in pile $B.$"
-}

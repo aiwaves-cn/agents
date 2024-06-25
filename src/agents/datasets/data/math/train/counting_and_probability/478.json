@@ -1,6 +1,0 @@
-{
-    "problem": "A bin has 8 black balls and 7 white balls.  3 of the balls are drawn at random.  What is the probability of drawing 2 of one color and 1 of the other color?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The number of ways to draw out 3 balls from 15 is $\\binom{15}{3}=455$.  We can choose 2 black balls and 1 white ball in $\\binom{8}{2}\\binom{7}{1}=196$ ways.  We can pick 1 black ball and 2 white balls in $\\binom{8}{1}\\binom{7}{2}=168$ ways.  Therefore we have $196+168=364$ ways to satisfy the condition, so the answer is $\\dfrac{364}{455}=\\boxed{\\frac{4}{5}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest integer less than or equal to \\[\\frac{3^{100}+2^{100}}{3^{96}+2^{96}}?\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since the powers of 3 are much greater than the corresponding powers of 2, we expect the fraction to be approximately $\\frac{3^{100}}{3^{96}} = 81.$\n\nTo make this more precise, let $a = 3^{96}$ and $b = 2^{96}.$  Then\n\\begin{align*}\n\\frac{3^{100} + 2^{100}}{3^{96} + 2^{96}} &= \\frac{81a + 16b}{a + b} \\\\\n&= \\frac{81a + 81b - 65b}{a + b} \\\\\n&= 81 - \\frac{65b}{a + b}.\n\\end{align*}Thus, the fraction is certainly less than 81.  Now,\n\\[\\frac{65b}{a + b} < \\frac{65b}{a} = 65 \\left( \\frac{2}{3} \\right)^{96} = 65 \\left( \\frac{4}{9} \\right)^{48} < 65 \\left( \\frac{1}{2} \\right)^{48} < 65 \\left( \\frac{1}{2} \\right)^7 = \\frac{65}{128} < 1.\\]Therefore, the fraction is greater than 80.  Hence, the answer is $\\boxed{80}.$"
-}

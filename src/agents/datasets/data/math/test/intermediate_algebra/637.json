@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the sum of the $y$-coordinates of the four points of intersection of $y  = x^4 - 5x^2 - x + 4$ and $y = x^2 - 3x.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting the $y$-values to be equal, we get\n\\[x^4 - 5x^2 - x + 4 = x^2 - 3x,\\]so $x^4 - 6x^2 + 2x + 4 = 0.$  Let the four roots of this polynomial be $a,$ $b,$ $c,$ and $d.$  Then by Vieta's formulas,\n\\begin{align*}\na + b + c + d &= 0, \\\\\nab + ac + ad + bc + bd + cd &= -6.\n\\end{align*}We want the sum of the $y$-values, which is\n\\[(a^2 - 3a) + (b^2 - 3b) + (c^2 - 3c) + (d^2 - 3d) = (a^2 + b^2 + c^2 + d^2) - 3(a + b + c + d) = a^2 + b^2 + c^2 + d^2.\\]Squaring the equation $a + b + c + d = 0,$ we get\n\\[a^2 + b^2 + c^2 + d^2 + 2(ab + ac + ad + bc + bd + cd) = 0.\\]Then\n\\[a^2 + b^2 + c^2 + d^2 = -2(ab + ac + ad + bc + bd + cd) = \\boxed{12}.\\]"
-}

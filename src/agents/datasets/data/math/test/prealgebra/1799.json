@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $36^{10} \\div 6^{19}$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Properties of exponents allow us to simplify exponential expressions like this one that are much more difficult to calculate outright. We can use the power of a power property to rewrite $36^{10} = (6^2)^{10} = 6^{20}$, which gives us \\[36^{10} \\div 6^{19} = 6^{20} \\div 6^{19}.\\]The quotient of powers property tells us that \\[6^{20} \\div 6^{19}= 6^{20-19} = 6^1 = \\boxed{6}.\\]"
-}

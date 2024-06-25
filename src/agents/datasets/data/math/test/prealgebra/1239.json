@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers between 200 and 300 have the sum of their digits equal to 15?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Because the integers are between 200 and 300, we know that the hundreds digit is a 2. Thus, we are looking for two digits that sum to $15 - 2 = 13$. There are three such pairs of digits: 6 and 7, 5 and 8, and 4 and 9. Each pair yields two possibilities for creating a three-digit integer, since the order matters. Thus, there are $3 \\cdot 2 = \\boxed{6}$ such integers."
-}

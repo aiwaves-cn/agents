@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha,$ $\\beta,$ and $\\gamma$ be three angles such that $\\alpha + \\beta + \\gamma = \\pi.$  If we are given that $\\tan \\alpha \\tan \\beta = \\csc \\frac{\\pi}{3},$ then determine $\\frac{\\cos \\alpha \\cos \\beta}{\\cos \\gamma}.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "First, $\\tan \\alpha \\tan \\beta = \\csc \\frac{\\pi}{3} = \\frac{2}{\\sqrt{3}}.$  Then\n\\[\\sin \\alpha \\sin \\beta = \\frac{2}{\\sqrt{3}} \\cos \\alpha \\cos \\beta.\\]Now, from the angle addition formula,\n\\begin{align*}\n\\cos \\gamma &= \\cos (\\pi - \\alpha - \\beta) \\\\\n&= -\\cos (\\alpha + \\beta) \\\\\n&= \\sin \\alpha \\sin \\beta - \\cos \\alpha \\cos \\beta \\\\\n&= \\frac{2}{\\sqrt{3}} \\cos \\alpha \\cos \\beta - \\cos \\alpha \\cos \\beta \\\\\n&= \\frac{2 - \\sqrt{3}}{\\sqrt{3}} \\cos \\alpha \\cos \\beta.\n\\end{align*}Therefore,\n\\[\\frac{\\cos \\alpha \\cos \\beta}{\\cos \\gamma} = \\frac{\\sqrt{3}}{2 - \\sqrt{3}} = \\frac{\\sqrt{3} (2 + \\sqrt{3})}{(2 - \\sqrt{3})(2 + \\sqrt{3})} = \\boxed{2 \\sqrt{3} + 3}.\\]"
-}

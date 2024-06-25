@@ -1,6 +1,0 @@
-{
-    "problem": "The product $N$ of three positive integers is $6$ times their sum, and one of the integers is the sum of the other two. Find the sum of all possible values of $N$.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let the three integers be $a, b, c$. $N = abc = 6(a + b + c)$ and $c = a + b$. Then $N = ab(a + b) = 6(a + b + a + b) = 12(a + b)$. Since $a$ and $b$ are positive, $ab = 12$ so $\\{a, b\\}$ is one of $\\{1, 12\\}, \\{2, 6\\}, \\{3, 4\\}$ so $a + b$ is one of $13, 8, 7$ so $N$ is one of $12\\cdot 13 = 156, 12\\cdot 8 = 96, 12\\cdot 7 = 84$ so the answer is $156 + 96 + 84 = \\boxed{336}$."
-}

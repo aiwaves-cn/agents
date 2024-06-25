@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $x^2 + \\frac{3}{2} x - 1$ has the following property: the roots, which are $\\frac{1}{2}$ and $-2,$ are one less than the final two coefficients.  Find a quadratic with leading term $x^2$ such that the final two coefficients are both non-zero, and the roots are one more than these coefficients.  Enter the roots of this quadratic.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let the quadratic be\n\\[x^2 + ax + b.\\]Then the roots are $a + 1$ and $b + 1.$  By Vieta's formulas,\n\\begin{align*}\n(a + 1) + (b + 1) &= -a, \\\\\n(a + 1)(b + 1) &= b.\n\\end{align*}From the first equation, $a + 1 = -\\frac{b}{2}.$  Substituting into the second equation, we get\n\\[-\\frac{b}{2} (b + 1) = b.\\]Since $b$ is non-zero, we can divide both sides by $b,$ to get $-\\frac{1}{2} (b + 1) = 1.$  This leads to $b = -3.$  Then $a = \\frac{1}{2},$ so the roots are $\\boxed{-2,\\frac{3}{2}}.$"
-}

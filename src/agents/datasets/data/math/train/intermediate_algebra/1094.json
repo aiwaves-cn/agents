@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $x > 4$ which satisfy\n\\[\\sqrt{x - 4 \\sqrt{x - 4}} + 2 = \\sqrt{x + 4 \\sqrt{x - 4}} - 2.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equation,\n\\[\\sqrt{x + 4 \\sqrt{x - 4}} - \\sqrt{x - 4 \\sqrt{x - 4}} = 4.\\]Squaring both sides, we get\n\\[x + 4 \\sqrt{x - 4} - 2 \\sqrt{x + 4 \\sqrt{x - 4}} \\sqrt{x - 4 \\sqrt{x - 4}} + x - 4 \\sqrt{x - 4} = 16.\\]Hence,\n\\begin{align*}\n2x - 16 &= 2 \\sqrt{(x + 4 \\sqrt{x - 4})(x - 4 \\sqrt{x - 4})} \\\\\n&= 2 \\sqrt{x^2 - 16(x - 4)} \\\\\n&= 2 \\sqrt{x^2 - 16x + 64} \\\\\n&= 2 \\sqrt{(x - 8)^2}.\n\\end{align*}Equivalently, $x - 8 = \\sqrt{(x - 8)^2}.$  This holds if and only if $x \\ge 8.$\n\nAll our steps are reversible, so the solution is $x \\in \\boxed{[8,\\infty)}.$"
-}

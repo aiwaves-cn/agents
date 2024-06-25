@@ -1,6 +1,0 @@
-{
-    "problem": "A cube of cheese\n\\[C = \\{(x,y,z) : 0 \\le x, y, z \\le 1\\}\\]is cut along the planes $x = y,$ $y = z,$ and $z = x.$  How many pieces are there?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The plane $x = y$ cuts into two regions: one where $x < y$ and one where $x > y.$   We can make similar statements for the other two planar cuts.  Thus, which piece a point lies in depends only on the relative sizes of its coordinates.  For example, the points $(x,y,z)$ where $y < z < x$ represents one piece. Since there are $3! = 6$ ways to arrange $x,$ $y,$ and $z$ from smallest to largest, there are $\\boxed{6}$ pieces."
-}

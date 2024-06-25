@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the final three digits of the integer representation of $5^{100}$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let's find the cycle of the final three digits of $5^n$, starting with $n=3$ : $125, 625, 125, 625,\\ldots$ . The cycle of the final three digits of $5^{n}$ is 2 numbers long: 125, 625. Thus, to find the final three digits of $5^n$ for any positive $n\\ge3$, we must find the remainder, $R$, when $n$ is divided by 2 ($R=1$ corresponds to 125, and $R=0$ corresponds to 625). Since $100\\div2=50$ without remainder, the final three digits of $5^{100}$ are 625. Their sum is $6+2+5=\\boxed{13}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A domino is a rectangular tile composed of two squares. An integer is represented on both squares, and each integer 0-9 is paired with every integer 0-9 exactly once to form a complete set. A $\\textit{double}$ is a domino that has the same integer on both of its squares. What is the probability that a domino randomly selected from a set will be a $\\textit{double}$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "To obtain this probability, we want to take the number of double pairings over the total number of pairings. Because each integer is paired with each other integer exactly once, we must be careful when counting how many integer pairings there are. That is, $0$ can be paired with $10$ other numbers, $1$ can be paired with $9$ other numbers (not $0$, because we've already paired $0$ and $1$), $2$ can be paired with $8$ other numbers, etc. So, there are $10 + 9 + \\ldots + 1 = 55$ pairings. Ten of these pairings are doubles ($00$, $11$, etc.). Thus, the probability of choosing a double is $\\frac{10}{55}$, which simplifies to $\\boxed{\\frac{2}{11}}$."
-}

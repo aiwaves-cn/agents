@@ -1,6 +1,0 @@
-{
-    "problem": "Find $PQ$ in the triangle below.\n\n\n[asy]\nunitsize(1inch);\npair P,Q,R;\nP = (0,0);\nQ= (sqrt(3),0);\nR = (0,1);\ndraw (P--Q--R--P,linewidth(0.9));\ndraw(rightanglemark(Q,P,R,3));\nlabel(\"$P$\",P,S);\nlabel(\"$Q$\",Q,S);\nlabel(\"$R$\",R,N);\nlabel(\"$9\\sqrt{3}$\",R/2,W);\nlabel(\"$30^\\circ$\",(1.25,0),N);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since $PQR$ is a 30-60-90 triangle, we have $PQ = PR\\sqrt{3} = 9\\sqrt{3}\\cdot \\sqrt{3} = 9\\cdot 3 = \\boxed{27}$."
-}

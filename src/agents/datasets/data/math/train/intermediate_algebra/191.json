@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f$ is defined on positive integers as follows:\n\\[f(n) = \\left\\{\n\\begin{array}{cl}\nn + 10 & \\text{if $n < 10$}, \\\\\nf(n - 5) & \\text{if $n \\ge 10$}.\n\\end{array}\n\\right.\\]Find the maximum value of the function.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We see that $f(n) = n + 10$ for $n = 1,$ 2, 3, $\\dots,$ 9.  Then\n\\begin{align*}\nf(10) &= f(5) = 15, \\\\\nf(11) &= f(6) = 16, \\\\\nf(12) &= f(7) = 17, \\\\\nf(13) &= f(8) = 18, \\\\\nf(14) &= f(9) = 19, \\\\\nf(15) &= f(10) = 15,\n\\end{align*}and so on.  At this point, the function becomes periodic, with period 5.  Therefore, the maximum value of the function is $\\boxed{19}.$"
-}

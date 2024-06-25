@@ -1,6 +1,0 @@
-{
-    "problem": "A right rectangular prism $P$ (i.e., a rectangular parallelpiped) has sides of integral length $a, b, c,$ with $a\\le b\\le c.$ A plane parallel to one of the faces of $P$ cuts $P$ into two prisms, one of which is similar to $P,$ and both of which have nonzero volume. Given that $b=1995,$ for how many ordered triples $(a, b, c)$ does such a plane exist?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let $P'$ be the prism similar to $P$, and let the sides of $P'$ be of length $x,y,z$, such that $x \\le y \\le z$. Then\n\\[\\frac{x}{a} = \\frac{y}{b} = \\frac zc < 1.\\]\nNote that if the ratio of similarity was equal to $1$, we would have a prism with zero volume. As one face of $P'$ is a face of $P$, it follows that $P$ and $P'$ share at least two side lengths in common. Since $x < a, y < b, z < c$, it follows that the only possibility is $y=a,z=b=1995$. Then,\n\\[\\frac{x}{a} = \\frac{a}{1995} = \\frac{1995}{c} \\Longrightarrow ac = 1995^2 = 3^25^27^219^2.\\]\nThe number of factors of $3^25^27^219^2$ is $(2+1)(2+1)(2+1)(2+1) = 81$. Only in $\\left\\lfloor \\frac {81}2 \\right\\rfloor = 40$ of these cases is $a < c$ (for $a=c$, we end with a prism of zero volume). We can easily verify that these will yield nondegenerate prisms, so the answer is $\\boxed{40}$."
-}

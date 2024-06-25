@@ -1,6 +1,0 @@
-{
-    "problem": "Let $g(x) = x^2 - 11x + 30.$  Find the polynomial $f(x),$ with positive leading coefficient, that satisfies\n\\[g(f(x)) = x^4 - 14x^3 + 62x^2 - 91x + 42.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Clearly, $f(x)$ must be quadratic.  Let $f(x) = ax^2 + bx + c.$  Then\n\\begin{align*}\ng(f(x)) &= g(ax^2 + bx + c) \\\\\n&= (ax^2 + bx + c)^2 - 11(ax^2 + bx + c) + 30 \\\\\n&= a^2 x^4 + 2abx^3 + (2ac + b^2 - 11a) x^2 + (2bc - 11b) x + c^2 - 11c + 30 \\\\\n&= x^4 - 14x^3 + 62x^2 - 91x + 42.\n\\end{align*}Matching coefficients, we get\n\\begin{align*}\na^2 &= 1, \\\\\n2ab &= -14, \\\\\n2ac + b^2 - 11a &= 62, \\\\\n2bc - 11b &= -91, \\\\\nc^2 - 11c + 30 &= 42.\n\\end{align*}Since the leading coefficient $a$ is positive, $a = 1.$  Then $2b = -14,$ so $b = -7.$  From the fourth equation,\n\\[-14c + 77 = -91,\\]so $c = 12.$  We can verify that all the equations are satisfied, so $f(x) = \\boxed{x^2 - 7x + 12}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest integer value of $x$ for which $6x^2 + x - 2 < 0$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We can factor $6x^2+x-2$ as $(3x+2)(2x-1)$. For this quantity to be negative, one of the factors must be positive and one of the factors must be negative.\n\nThe first factor, $3x+2$, is zero at $x=-\\frac{2}{3}$. It's negative for $x<-\\frac{2}{3}$ and positive for $x>-\\frac{2}{3}$.\n\nThe second factor, $2x-1$, is zero at $x=\\frac{1}{2}$. It's negative for $x<\\frac{1}{2}$ and positive for $x>\\frac{1}{2}$.\n\nThe interval on which one factor is positive and the other is negative is $-\\frac{2}{3}<x<\\frac{1}{2}$. In this interval, the largest integer (indeed, the only integer!) is $x=\\boxed{0}$."
-}

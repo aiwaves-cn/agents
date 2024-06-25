@@ -1,6 +1,0 @@
-{
-    "problem": "The complex numbers $z$ and $w$ satisfy $z^{13} = w,$ $w^{11} = z,$ and the imaginary part of $z$ is $\\sin{\\frac{m\\pi}{n}}$, for relatively prime positive integers $m$ and $n$ with $m<n.$ Find $n.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Substituting the first equation into the second, we find that $(z^{13})^{11} = z$ and thus $z^{142} = 1.$  Therefore, $z$ must be a $142$nd root of unity, and thus the imaginary part of $z$ will be\n\\[\\sin{\\frac{2m\\pi}{142}} = \\sin{\\frac{m\\pi}{71}}\\]for some $m$ with $0 \\le m < 142.$\n\nHowever, note that $71$ is prime and $m<71$ by the conditions of the problem, so the denominator in the argument of this value will always be $71$ and thus $n = \\boxed{71}.$"
-}

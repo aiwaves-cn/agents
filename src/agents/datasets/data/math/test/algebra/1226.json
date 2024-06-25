@@ -1,6 +1,0 @@
-{
-    "problem": "Factor $30x^3-8x^2+20x$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We see that the largest common factor of the coefficients is $2$ and that $x^1$ is the largest power of $x$ which divides all the terms, so we can factor out $2x$ from each term. Doing so gives: \\begin{align*}\n30x^3-8x^2+20x &= 2x\\cdot 15x^2 + 2x \\cdot (-4x) + 2x \\cdot 10\\\\\n&= \\boxed{2x(15x^2-4x+10)}\n\\end{align*}"
-}

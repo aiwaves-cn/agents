@@ -1,6 +1,0 @@
-{
-    "problem": "The solution to the inequality\n\\[y = -x^2 + ax + b \\le 0\\]is $(-\\infty,-3] \\cup [5,\\infty).$  Find the vertex of the parabola $y = -x^2 + ax + b.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The roots of the quadratic are $-3$ and 5, so\n\\[y = -x^2 + ax + b = -(x + 3)(x - 5) = -x^2 + 2x + 15 = -(x - 1)^2 + 16.\\]Thus, the vertex is $\\boxed{(1,16)}.$"
-}

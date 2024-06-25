@@ -1,6 +1,0 @@
-{
-    "problem": "How many different positive, five-digit integers can be formed using the digits 2, 2, 2, 9 and 9?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We could go ahead and count these directly, but instead we could count in general and then correct for overcounting. That is, if we had 5 distinct digits, there would be $5! = 120$ orderings. However, we must divide by 3! once for the repetition of the digit 2, and divide by 2! for the repetition of the digit 9 (this should make sense because if the repeated digits were different then we could rearrange them in that many ways).  So, our answer is $\\frac{5!}{3!\\cdot 2!} = \\frac{5 \\cdot 4}{2} = \\boxed{10}$."
-}

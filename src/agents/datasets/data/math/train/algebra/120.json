@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of the first four terms of an arithmetic sequence is $10$. If the fifth term is $5$, what is the sixth term?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Call the common difference between any two consecutive terms $x$. We can express the first four terms in terms of $x$ and the fifth term: The fourth term is $5-x$, the third is $5-2x$, etc. So, we have $(5-4x) + (5-3x) + (5-2x) + (5-x) = 10$, which simplifies to $-10x = -10$, or $x = 1$. So the sixth term is $5+1 = \\boxed{6}$."
-}

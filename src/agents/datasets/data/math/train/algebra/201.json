@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x, y, z$ be real numbers so that  \\begin{align*}\ny+z & = 13, \\\\\nz+x & = 14, \\\\\nx+y & = 15.\n\\end{align*} Find $\\sqrt{xyz(x+y+z)}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Add the three equations together and divide by 2 to get $x+y+z = 21$. Hence, $x = 8, y = 7, z = 6$, and $\\sqrt{xyz(x+y+z)} = \\sqrt{21(8)(7)(6)} = \\sqrt{2^4\\cdot 3^2 \\cdot 7^2} = \\boxed{84}$."
-}

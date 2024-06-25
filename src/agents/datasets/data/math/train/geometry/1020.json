@@ -1,6 +1,0 @@
-{
-    "problem": "In a trapezoid $ABCD$ with $AB$ parallel to $CD$, the diagonals $AC$ and $BD$ intersect at $E$. If the area of triangle $ABE$ is 50 square units, and the area of triangle $ADE$ is 20 square units, what is the area of trapezoid $ABCD$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]\nsize(2.5inch);\npair A,B,C,D,E;\nA = (-3,4);\nB = (5,4);\nC = (4,0);\nD = (0,0);\nE = intersectionpoint(A--C, B--D);\ndraw(A--B--C--D--cycle); draw(A--C); draw(B--D);\nlabel(\"$A$\", A, NW); label(\"$B$\", B, NE); label(\"$C$\", C, SE); label(\"$D$\", D, SW); label(\"$E$\", E, N);\n[/asy] We will write the area of triangle $XYZ$ as $[XYZ].$  Since triangles $ADC$ and $BCD$ share a base and have the same altitude length to that base, they have the same area. Since $[BCD] = [ADC]$, we have $[BCE] + [CDE] = [ADE] + [CDE]$, so  $[BCE] = [ADE] = 20$.\n\nTo find the area of triangle $CDE$, we note that triangles $CDE$ and $ABE$ are similar, and the ratio of their sides is $DE/BE$. Triangles $ADE$ and $ABE$ share an altitude, so $DE/BE = [ADE]/[ABE] = 20/50 = 2/5$. Since the ratio of the areas of two similar triangles is the square of the ratio of their sides, $[CDE]/[ABE] = (DE/BE)^2 = 4/25$, and $[CDE] = (4/25)[ABE] = (4/25)(50) = 8$. Thus, the area of trapezoid $ABCD$ is $[ABE] + [ADE] + [BCE] + [CDE] = 50+20+20+8 = \\boxed{98}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For a positive integer $n,$ let\n\\[a_n = \\sum_{k = 0}^n \\frac{1}{\\binom{n}{k}} \\quad \\text{and} \\quad b_n = \\sum_{k = 0}^n \\frac{k}{\\binom{n}{k}}.\\]Simplify $\\frac{a_n}{b_n}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "For the sum $b_n,$ let $j = n - k,$ so $k = n - j.$  Then\n\\begin{align*}\nb_n &= \\sum_{k = 0}^n \\frac{k}{\\binom{n}{k}} \\\\\n&= \\sum_{j = n}^0 \\frac{n - j}{\\binom{n}{n - j}} \\\\\n&= \\sum_{j = 0}^n \\frac{n - j}{\\binom{n}{j}} \\\\\n&= \\sum_{k = 0}^n \\frac{n - k}{\\binom{n}{k}},\n\\end{align*}so\n\\[b_n + b_n = \\sum_{k = 0}^n \\frac{k}{\\binom{n}{k}} + \\sum_{k = 0}^n \\frac{n - k}{\\binom{n}{k}} = \\sum_{k = 0}^n \\frac{n}{\\binom{n}{k}} = n \\sum_{k = 0}^n \\frac{1}{\\binom{n}{k}} = na_n.\\]Then $2b_n = na_n,$ so $\\frac{a_n}{b_n} = \\boxed{\\frac{2}{n}}.$"
-}

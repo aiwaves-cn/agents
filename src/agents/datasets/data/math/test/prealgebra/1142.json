@@ -1,6 +1,0 @@
-{
-    "problem": "You can get anything you want at Alberto's restaurant, as long as what you want is a sandwich with two different fillings. There are nine fillings to choose from (turkey, ham, roast beef, cheese, tomatoes, peppers, sprouts, oranges, and licorice). How many different sandwiches can you order (including the ones that nobody in their right mind would order)?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 9 options for the first filling and 8 options left for the second filling for a preliminary count of $9\\cdot8=72$ options. However, the order of the fillings doesn't matter, so we've counted each combination twice, which means our final answer is $\\dfrac{9\\cdot8}{2}=\\boxed{36}$ combinations."
-}

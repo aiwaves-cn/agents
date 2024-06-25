@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $(\\cos 185^\\circ + i \\sin 185^\\circ)^{54}.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "By DeMoivre's Theorem,\n\\begin{align*}\n(\\cos 185^\\circ + i \\sin 185^\\circ)^{54} &= \\cos 9990^\\circ + i \\sin 9990^\\circ \\\\\n&= \\cos 270^\\circ + i \\sin 270^\\circ \\\\\n&= \\boxed{-i}.\n\\end{align*}"
-}

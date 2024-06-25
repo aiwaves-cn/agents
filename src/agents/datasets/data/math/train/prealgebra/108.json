@@ -1,6 +1,0 @@
-{
-    "problem": "On this 5 by 5 grid of points, what fraction of the larger square's area is inside the shaded square? Express your answer as a common fraction.\n\n[asy]\nfill((2,2)--(3,3)--(2,4)--(1,3)--cycle,gray(0.7));\ndot((0,0));\ndot((0,1));\ndot((0,2));\ndot((0,3));\ndot((0,4));\ndot((1,0));\ndot((1,1));\ndot((1,2));\ndot((1,3));\ndot((1,4));\ndot((2,0));\ndot((2,1));\ndot((2,2));\ndot((2,3));\ndot((2,4));\ndot((3,0));\ndot((3,1));\ndot((3,2));\ndot((3,3));\ndot((3,4));\ndot((4,0));\ndot((4,1));\ndot((4,2));\ndot((4,3));\ndot((4,4));\ndraw((0,0)--(4,0)--(4,4)--(0,4)--cycle);\ndraw((2,2)--(3,3)--(2,4)--(1,3)--cycle);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since the side of the shaded square is a diagonal of the smaller squares, it has area $(\\sqrt{2})^2 = 2$ square units. The whole grid has area $4^2 = 16$ units, so the ratio of areas is $\\frac{2}{16} =\\boxed{\\frac 18}$."
-}

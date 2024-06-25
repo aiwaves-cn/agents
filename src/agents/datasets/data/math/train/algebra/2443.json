@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $x^2 + 15x + 54$ can be written as  $(x + a)(x + b),$ and the expression $x^2 - 17x + 72$ written as $(x - b)(x - c)$, where $a$, $b$, and $c$ are integers. What is the value of $a + b + c$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Factoring, we find that $x^2 + 15x + 54 = (x + 9)(x + 6)$ and $x^2 - 17x + 72 = (x - 9)(x - 8)$. We can see that $b = 9$, therefore $a = 6$ and $c = 8$, and $a + b + c = \\boxed{23}.$"
-}

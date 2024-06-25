@@ -1,6 +1,0 @@
-{
-    "problem": "Billy and Bobbi each selected a positive integer less than 200. Billy's number is a multiple of 18, and Bobbi's number is a multiple of 24. What is the probability that they selected the same number? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We must first find how many positive integers less than 200 are multiples of both 18 and 24. $18=2\\cdot3^2$ and $24=2^3\\cdot3$, so the LCM of 18 and 24 is $2^3\\cdot3^2=72$. Therefore, an integer is a multiple of both 18 and 24 if and only if it is a multiple of 72.\n\nDividing 200 by 72 gives quotient 2 (and remainder 56), so there are 2 multiples of 72 less than 200.\n\nDividing 200 by 18 gives quotient 11 (and remainder 2), so there are 11 multiples of 18 less than 200.\n\nDividing 200 by 24 gives quotient 8 (and remainder 8), so there are 8 multiples of 24 less than 200.\n\nTherefore, Billy and Bobbi together can pick $11\\cdot8=88$ different two-number combinations, and 2 of these involve them choosing the same number (the two multiples of 72 are the possible duplicate numbers). Thus, the probability that they selected the same number is $2/88=\\boxed{\\frac{1}{44}}$."
-}

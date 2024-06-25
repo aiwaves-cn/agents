@@ -1,6 +1,0 @@
-{
-    "problem": "Convert $427_8$ to base 5.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "First we convert to base 10, obtaining $427_8 = 4 \\cdot 8^2 + 2 \\cdot 8^1 + 7 \\cdot 8^0 = 279.$ Then we convert 279 to base 5 to get  \\begin{align*}\n279 &= 2 \\cdot 5^3 + 29 \\\\\n&= 2 \\cdot 5^3 + 1 \\cdot 5^2 + 4 \\\\\n&= 2 \\cdot 5^3 + 1 \\cdot 5^2 + 4 \\cdot 5^0 \\\\\n&=\\boxed{2104_5}.\n\\end{align*}"
-}

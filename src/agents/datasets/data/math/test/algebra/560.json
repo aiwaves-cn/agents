@@ -1,6 +1,0 @@
-{
-    "problem": "On the graph of $y=(x+2)^4-100$, how many points are there whose coordinates are both negative integers?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "A point $(x,y)$ is on the graph if and only if $y=(x+2)^4-100$, so we seek to determine all pairs of negative integers $(x,y)$ which satisfy this equation. We can obtain pairs by plugging in $-1,-2,-3,$ and so on for $x$: \\begin{align*}\nx=-1 &\\Rightarrow y=1^4-100=-99 \\\\\nx=-2 &\\Rightarrow y=0^4-100=-100 \\\\\nx=-3 &\\Rightarrow y=(-1)^4-100=-99 \\\\\nx=-4 &\\Rightarrow y=(-2)^4-100=-84 \\\\\nx=-5 &\\Rightarrow y=(-3)^4-100=-19 \\\\\n\\end{align*}Starting at $x=-6$, the $y$-coordinates obtained in this way are positive. To be sure that there are no more solutions, we can solve the equation $$(x+2)^4-100 < 0,$$which yields $-2-\\sqrt[4]{100}<x<-2+\\sqrt[4]{100}$ (in decimals, this is roughly $-5.16<x<1.16$). Thus, the graph of $y=(x+2)^4-100$ passes through $\\boxed{5}$ points with negative integer coordinates."
-}

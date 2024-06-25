@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 - 7x^2 + 5x + 2 = 0.$  Find\n\\[\\frac{a}{bc + 1} + \\frac{b}{ac + 1} + \\frac{c}{ab + 1}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, $a + b + c = 7,$ $ab + ac + bc = 5,$ and $abc = -2.$\n\nWe can say\n\\[\\frac{a}{bc + 1} + \\frac{b}{ac + 1} + \\frac{c}{ab + 1} = \\frac{a^2}{abc + a} + \\frac{b^2}{abc + b} + \\frac{c^2}{abc + c}.\\]Since $abc = -2,$ this becomes\n\\[\\frac{a^2}{a - 2} + \\frac{b^2}{b - 2} + \\frac{c^2}{c - 2}.\\]By Long Division, $\\frac{x^2}{x - 2} = x + 2 + \\frac{4}{x - 2},$ so\n\\begin{align*}\n\\frac{a^2}{a - 2} + \\frac{b^2}{b - 2} + \\frac{c^2}{c - 2} &= a + 2 + \\frac{4}{a - 2} + b + 2 + \\frac{4}{b - 2} + c + 2 + \\frac{4}{c - 2} \\\\\n&= a + b + c + 6 + 4 \\left( \\frac{1}{a - 2} + \\frac{1}{b - 2} + \\frac{1}{c - 2} \\right) \\\\\n&= 7 + 6 + 4 \\cdot \\frac{(b - 2)(c - 2) + (a - 2)(c - 2) + (a - 2)(b - 2)}{(a - 2)(b - 2)(c - 2)} \\\\\n&= 13 + 4 \\cdot \\frac{(ab + ac + bc) - 4(a + b + c) + 12}{abc - 2(ab + ac + bc) + 4(a + b + c) - 8} \\\\\n&= 13 + 4 \\cdot \\frac{5 - 4 \\cdot 7 + 12}{-2 - 2 \\cdot 5 + 4 \\cdot 7 - 8} \\\\\n&= \\boxed{\\frac{15}{2}}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "There is a committee composed of eight women and two men. When they meet, they sit in a row---the women in indistinguishable rocking chairs and the men on indistinguishable stools.  How many distinct ways are there for me to arrange the eight chairs and two stools for a meeting?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Because the rocking chairs are indistinguishable from each other and the stools are indistinguishable from each other, we can think of first placing the two stools somewhere in the ten slots and then filling the rest with rocking chairs. The first stool has $10$ slots in which it can go, and the second has $9$. However, because they are indistinguishable from each other, we have overcounted the number of ways to place the stools by a factor of $2$, so we divide by $2$. Thus, there are $\\frac{10 \\cdot 9}{2} = \\boxed{45}$ distinct ways to arrange the ten chairs and stools for a meeting."
-}

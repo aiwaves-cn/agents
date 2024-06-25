@@ -1,6 +1,0 @@
-{
-    "problem": "In the circle with center $O$, the measure of $\\angle RIP$ is $36^\\circ$ and $OR=10$ cm. Find the number of centimeters in the length of arc $RP$. Express your answer in terms of $\\pi$. [asy]\ndraw((1,0)..(0,1)..(-1,0)..(0,-1)..cycle);\ndraw((0,0)--(4/5,3/5)--(-1,0)--(4/5,-3/5)--cycle);\nlabel(\"$O$\",(0,0),W); label(\"$I$\",(-1,0),W); label(\"$R$\",(4/5,3/5),ENE); label(\"$P$\",(4/5,-3/5),ESE);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Since $\\angle RIP$ is inscribed in arc $RP$, the measure of arc $RP$ is $2\\angle RIP = 72^\\circ$.  Therefore, arc $RP$ is $\\frac{72}{360} =\\frac15$ of the circumference of the whole circle.  The circle's circumference is $2OR\\pi = 20\\pi$ cm, so the length of arc $RP$ is $\\frac15\\cdot 20\\pi = \\boxed{4\\pi}$ cm."
-}

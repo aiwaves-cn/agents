@@ -1,6 +1,0 @@
-{
-    "problem": "What is the base-10 integer 515 when expressed in base 6?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The largest power of 6 less than 515 is $6^3=216$, and the largest multiple of 216 less than 515 is $2\\cdot216=432$. That means there is a 2 in the $6^3$ place. We have $515-432=83$ left. The largest multiple of a power of 6 that is less than 83 is $2\\cdot6^2=72$. There is a 2 in the $6^2$ place. Now we're left with $83-72=11$, which can be represented as $1\\cdot6^1+5\\cdot6^0$. So, we get $515=2\\cdot6^3+2\\cdot6^2+1\\cdot6^1+5\\cdot6^0=\\boxed{2215_6}$."
-}

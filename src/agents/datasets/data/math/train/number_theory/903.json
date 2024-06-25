@@ -1,6 +1,0 @@
-{
-    "problem": "A standard six-sided die is rolled, and  $P$ is the product of the five numbers that are visible. What is the largest number that is certain to divide $P$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $6! = 720 = 2^4 \\cdot 3^2 \\cdot 5$, the prime factors of $P$ can consist of at most 2's, 3's, and 5's.  The least possible number of 2's is two, which occurs when 4 is not visible. The least possible number of 3's is one, which occurs when either 3 or 6 is not visible, and the least number of 5's is zero, when 5 is not visible.  Thus $P$ must be divisible by $2^2\\cdot3 =\n\\boxed{12}$, but not necessarily by any larger number."
-}

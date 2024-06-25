@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $k$ for which the angle between the vectors $\\begin{pmatrix} k \\\\ 1 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ k \\\\ 1 \\end{pmatrix}$ is $\\frac{\\pi}{3}.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Since the angle between the vectors is $\\frac{\\pi}{3},$\n\\[\\cos \\theta = \\frac{\\begin{pmatrix} k \\\\ 1 \\\\ 1 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ k \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} k \\\\ 1 \\\\ 1 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 1 \\\\ k \\\\ 1 \\end{pmatrix} \\right\\|} = \\cos \\frac{\\pi}{3} = \\frac{1}{2}.\\]Then\n\\[\\frac{2k + 1}{\\sqrt{k^2 + 2} \\sqrt{k^2 + 2}} = \\frac{1}{2},\\]so $4k + 2 = k^2 + 2.$  This simplifies to $k^2 - 4k = k(k - 4) = 0,$ so the possible values of $k$ are $\\boxed{0,4}.$"
-}

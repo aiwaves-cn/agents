@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram below, $\\overline{AB}\\parallel \\overline{CD}$ and $\\angle AXF= 118^\\circ$.  Find $\\angle FYD$.\n\n[asy]\nunitsize(1inch);\npair A,B,C,D,X,Y,EE,F;\nA = (0,0);\nB=(1,0);\nC = (0,0.8);\nD=(1,0.8);\nEE = (0.35,-0.3);\nF = (0.8,1.1);\ndraw(EE--F);\ndraw(A--B);\ndraw(C--D);\ndot(A);\ndot(B);\ndot(C);\ndot(D);\ndot(EE);\ndot(F);\nlabel(\"$E$\",EE,S);\nlabel(\"$F$\",F,N);\nX = intersectionpoint(A--B,EE--F);\nY = intersectionpoint(C--D,EE--F);\nlabel(\"$X$\",X,NNW);\nlabel(\"$Y$\",Y,NNW);\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,E);\nlabel(\"$C$\",C,W);\nlabel(\"$D$\",D,E);\ndot(X);\ndot(Y);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since $\\overline{AB} \\parallel \\overline{CD}$, we know that $\\angle AXF + \\angle FYD = 180^\\circ$, so $\\angle FYD = 180^\\circ - 118^\\circ = \\boxed{62^\\circ}$."
-}

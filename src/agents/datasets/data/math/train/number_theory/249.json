@@ -1,6 +1,0 @@
-{
-    "problem": "A palindrome is a number that reads the same forward and backward. What is the smallest 5-digit palindrome in base 2 that can be expressed as a 3-digit palindrome in a different base?  Give your response in base 2.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The smallest possible 5-digit palindrome in base 2 is $10001_2$, which is $2^4+2^0=17_{10}$. Now we try converting 17 to other bases. In base 3, we get $122_3$, and in base 4, we get $101_4$, which is a palindrome. So $\\boxed{10001_2}$ works."
-}

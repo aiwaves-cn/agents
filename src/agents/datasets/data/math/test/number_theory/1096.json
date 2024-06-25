@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer $n$ such that $\\frac{n}{2010}$ is a terminating decimal?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The prime factorization of $2010$ is $2 \\cdot 3 \\cdot 5 \\cdot 67$. We must eliminate the factor of $3 \\cdot 67$ in the denominator, so the smallest positive integer that makes $\\frac{n}{2010}$ a terminating decimal is $3 \\cdot 67 = \\boxed{201}$."
-}

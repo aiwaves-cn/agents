@@ -1,6 +1,0 @@
-{
-    "problem": "Find all the solutions to\n\\[\\sqrt{(2 + \\sqrt{3})^x} + \\sqrt{(2 - \\sqrt{3})^x} = 4.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = \\sqrt{(2 + \\sqrt{3})^x}.$  Then\n\\[\\sqrt{(2 - \\sqrt{3})^x} = \\sqrt{ \\left( \\frac{1}{2 + \\sqrt{3}} \\right)^x } = \\frac{1}{\\sqrt{(2 + \\sqrt{3})^x}} = \\frac{1}{y},\\]so the given equation becomes $y + \\frac{1}{y} = 4.$  Then $y^2 + 1 = 4y,$ or\n\\[y^2 - 4y + 1 = 0.\\]By the quadratic formula,\n\\[y = 2 \\pm \\sqrt{3}.\\]Thus,\n\\[\\sqrt{(2 + \\sqrt{3})^x} = 2 \\pm \\sqrt{3}.\\]For the $+$ root,\n\\[\\sqrt{(2 + \\sqrt{3})^x} = 2 + \\sqrt{3},\\]so $x = 2.$  For the $-$ root,\n\\[\\sqrt{(2 + \\sqrt{3})^x} = 2 - \\sqrt{3} = \\frac{1}{2 + \\sqrt{3}} = (2 + \\sqrt{3})^{-1},\\]so $x = -2.$   Thus, the solutions are $\\boxed{2,-2}.$"
-}

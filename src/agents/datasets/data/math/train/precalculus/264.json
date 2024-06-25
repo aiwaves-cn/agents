@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest possible distance between two points, one on the sphere of radius 19 with center $(-2,-10,5),$ and the other on the sphere of radius 87 with center $(12,8,-16)$?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Let $O$ be center of the first sphere, and let $P$ be the center of the second sphere.  Then\n\\[OP = \\sqrt{(-2 - 12)^2 + (-10 - 8)^2 + (5 - (-16))^2} = 31.\\][asy]\nunitsize(1 cm);\n\npair A, B, O, P;\n\nO = (0,0);\nP = 8*dir(15);\nA = dir(195);\nB = P + 2*dir(15);\n\ndraw(Circle(O,1));\ndraw(Circle(P,2));\ndraw(A--B);\n\nlabel(\"$A$\", A, W);\nlabel(\"$B$\", B, E);\ndot(\"$O$\", O, S);\ndot(\"$P$\", P, S);\n[/asy]\n\nLet $A$ be a point on the first sphere, and let $B$ be a point on the second sphere.  Then by the Triangle Inequality,\n\\[AB \\le AO + OP + PB = 19 + 31 + 87 = 137.\\]We can achieve this by taking $A$ and $B$ to be the intersections of line $OP$ with the spheres, as shown above.  Hence, the largest possible distance is $\\boxed{137}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $x$ in the plane figure shown?\n\n[asy]\npair A;\ndraw(dir(40)--A); draw(dir(200)--A); draw(dir(300)--A);\nlabel(\"$160^{\\circ}$\",A,dir(120)); label(\"$x^{\\circ}$\",A,dir(250)); label(\"$x^{\\circ}$\",A,dir(350));\n[/asy]",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "The angles around a point sum to $360^\\circ$, so $x^\\circ + x^\\circ + 160^\\circ = 360^\\circ$.  Simplifying gives $2x^\\circ + 160^\\circ = 360^\\circ$, so $2x^\\circ = 200^\\circ$ and $x=\\boxed{100}$."
-}

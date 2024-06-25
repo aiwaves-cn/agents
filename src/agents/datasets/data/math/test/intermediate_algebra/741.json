@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest integer $x$ such that\n\\[\\sqrt{3620 + 322x - 4x^2}\\]is a real number.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We want to find the largest positive integer $x$ such that\n\\[3620 + 322x - 4x^2 \\ge 0.\\]The inequality factors as\n\\[-2(x + 10)(2x - 181) \\le 0,\\]so\n\\[-10 \\le x \\le \\frac{181}{2}.\\]The largest integer in this interval is $\\boxed{90}.$"
-}

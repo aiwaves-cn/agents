@@ -1,6 +1,0 @@
-{
-    "problem": "Among all the roots of\n\\[z^8 - z^6 + z^4 - z^2 + 1 = 0,\\]the maximum imaginary part of a root can be expressed as $\\sin \\theta,$ where $-90^\\circ \\le \\theta \\le 90^\\circ.$  Find $\\theta.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "If $z^8 - z^6 + z^4 - z^2 + 1 = 0,$ then\n\\[(z^2 + 1)(z^8 - z^6 + z^4 - z^2 + 1) = z^{10} + 1 = 0.\\]So $z^{10} = -1 = \\operatorname{cis} 180^\\circ,$ which means\n\\[z = 18^\\circ + \\frac{360^\\circ \\cdot k}{10} = 18^\\circ + 36^\\circ \\cdot k\\]for some integer $k.$  Furthermore, $z^2 \\neq -1.$  Thus, the roots $z$ are graphed below, labelled in black.\n\n[asy]\nunitsize(2 cm);\n\ndraw((-1.2,0)--(1.2,0));\ndraw((0,-1.2)--(0,1.2));\ndraw(Circle((0,0),1));\n\ndot(\"$18^\\circ$\", dir(18), dir(18));\ndot(\"$54^\\circ$\", dir(54), dir(54));\ndot(\"$90^\\circ$\", dir(90), NE, red);\ndot(\"$126^\\circ$\", dir(126), dir(126));\ndot(\"$162^\\circ$\", dir(162), dir(162));\ndot(\"$198^\\circ$\", dir(198), dir(198));\ndot(\"$234^\\circ$\", dir(234), dir(234));\ndot(\"$270^\\circ$\", dir(270), SW, red);\ndot(\"$306^\\circ$\", dir(306), dir(306));\ndot(\"$342^\\circ$\", dir(342), dir(342));\n[/asy]\n\nThe roots with the maximum imaginary part are $\\operatorname{cis} 54^\\circ$ and $\\operatorname{cis} 126^\\circ,$ so $\\theta = \\boxed{54^\\circ}.$"
-}

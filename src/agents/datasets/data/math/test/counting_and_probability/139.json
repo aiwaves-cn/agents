@@ -1,6 +1,0 @@
-{
-    "problem": "How many paths are there from $A$ to $B$ on the lines of the grid shown, if every step must be up or to the right?[asy]size(3cm,3cm);int w=6;int h=3;int i;for (i=0; i<h; ++i){ draw((0,i) -- (w-1,i));}for (i=0; i<w; ++i){ draw((i, 0)--(i,h-1));}label(\"$B$\", (w-1,h-1), NE);label(\"$A$\", (0,0), SW);[/asy]\nFor example, here is one such valid path highlighted in blue:\n[asy]\nsize(3cm,3cm);\nint w=6;\nint h=3;\nint i;\nfor (i=0; i<h; ++i){ \ndraw((0,i) -- (w-1,i));\n}for (i=0; i<w; ++i){ \ndraw((i, 0)--(i,h-1));\n}\nlabel(\"$B$\", (w-1,h-1), NE);\nlabel(\"$A$\", (0,0), SW);\n\ndraw((0,0)--(1,0), blue+1.5);\ndraw((1,0)--(1,1), blue+1.5);\ndraw((1,1)--(2,1), blue+1.5);\ndraw((2,1)--(3,1), blue+1.5);\ndraw((3,1)--(4,1), blue+1.5);\ndraw((4,1)--(4,2), blue+1.5);\ndraw((4,2)--(5,2), blue+1.5);\n[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are 5 steps to the right, and 2 steps up.  These 7 steps can be made in any order, so the answer is $\\dbinom{7}{2} = \\dfrac{7 \\times 6}{2 \\times 1} = \\boxed{21}$."
-}

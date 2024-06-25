@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\sqrt[3]{4x^2}=4$, find all possible values of $x$ and list them from least to greatest.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "In order to get rid of the cube root, we start by cubing the both sides of the equation \\begin{align*} (\\sqrt[3]{4x^2})^3&=(4)^3\n\\\\ \\Rightarrow \\qquad 4x^2& =64\n\\\\\\Rightarrow \\qquad x^2& =16\n\\end{align*}From here, we can see that the only possible values of $x$ are 4 and -4. Since the question asked to list them from least to greatest, the final answer is $\\boxed{-4, 4}$."
-}

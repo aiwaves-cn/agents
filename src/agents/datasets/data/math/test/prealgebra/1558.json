@@ -1,6 +1,0 @@
-{
-    "problem": "Bill walks $\\frac{1}{2}$ mile south, then $\\frac{3}{4}$ mile east, and finally $\\frac{1}{2}$ mile south. How many miles is he, in a direct line, from his starting point?  Express your answer as a decimal to the nearest hundredth.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The diagram on the left shows the path of Bill's walk. As the diagram on the right illustrates, he could also have walked from $A$ to $B$ by first walking 1 mile south then $\\frac{3}{4}$ mile east. [asy]\npair a=(0,1), b=(.75, 0), c=(0,.5), d=(.75,.5), o=(0,0);\ndraw(a--b--d--c--cycle);\nlabel(\"$A$\", a, NW);\nlabel(\"$B$\", b, SE);\nlabel(\"$\\frac{1}{2}$\", (0,0.75), W);\nlabel(\"$\\frac{3}{4}$\", (.7, 0.66),W);\nlabel(\"$\\frac{1}{2}$\", (.75, .25), E);\n\npicture pic;\ndraw(pic, a--b--o--cycle);\nlabel(pic, \"$A$\", a, NW);\nlabel(pic, \"$B$\", b, SE);\nlabel(pic, \"$\\frac{3}{4}$\", (.375,0), S);\nlabel(pic, \"1\", (0, .5), W);\nadd(shift(1.5,0)*pic);\n[/asy] By the Pythagorean Theorem, \\[(AB)^2=1^2+\\left(\\frac{3}{4}\\right)^2=1+\\frac{9}{16}=\\frac{25}{16},\\]so $AB=\\frac{5}{4}=1\\frac{1}{4}$, or $\\boxed{1.25}$."
-}

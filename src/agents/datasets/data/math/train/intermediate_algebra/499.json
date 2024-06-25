@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r$ and $s$ denote the two real roots of $x^2 - x \\sqrt{5} + 1 = 0.$  Then determine $r^8 + s^8.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, $r + s = \\sqrt{5}$ and $rs = 1.$  Squaring the equation $r + s = \\sqrt{5},$ we get\n\\[r^2 + 2rs + s^2 = 5,\\]so $r^2 + s^2 = 5 - 2rs = 3.$  Squaring this equation, we get\n\\[r^4 + 2r^2 s^2 + s^4 = 9,\\]so $r^4 + s^4 = 9 - 2r^2 s^2 = 9 - 2 = 7.$  Squaring once more, we get\n\\[r^8 + 2r^4 s^4 + s^8 = 49,\\]so $r^8 + s^8 = 49 - 2r^4 s^4 = \\boxed{47}.$"
-}

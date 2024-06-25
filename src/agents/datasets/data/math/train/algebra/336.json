@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A$ be the vertex of the graph of the equation $y=x^2 - 2x + 3 $. Let $B$ be the vertex of the graph of the equation $y=x^2 + 4x + 10 $. What is the distance between $A$ and $B$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Completing the square in each equation results in the equations $y=(x - 1)^2 + 2 $ and $y=(x + 2)^2 + 6$. Thus, $A = (1, 2)$ and $B = (-2, 6)$. We can then find the distance between $A$ and $B$ to be $\\sqrt{(1-(-2))^2 + (2-6)^2} = \\sqrt{9+16} =\\boxed{5}$."
-}

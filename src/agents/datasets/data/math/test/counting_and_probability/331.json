@@ -1,6 +1,0 @@
-{
-    "problem": "The letters C, O, U, N and T are randomly placed around a circle. One such arrangement is shown here. If we always start with the C and continue to read the rest of the letters in order clockwise, in how many different orders can the letters appear?\n\n[asy]\ndraw(circle((0,0),1),dashed);\nlabel(\"U\",dir(90));\nlabel(\"C\",dir(90+360/5));\nlabel(\"O\",dir(90+2*360/5));\nlabel(\"N\",dir(90+3*360/5));\nlabel(\"T\",dir(90+4*360/5));\n[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Since we always read the letters clockwise, this is really the same as counting the number of linear permutations of the 5 letters, given that C must go first. So, there are $1 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 4! = \\boxed{24}$ orders."
-}

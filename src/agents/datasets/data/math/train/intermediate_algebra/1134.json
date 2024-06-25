@@ -1,6 +1,0 @@
-{
-    "problem": "A set contains four numbers. The six pairwise sums of distinct elements of the set, in no particular order, are $189$, $320$, $287$, $234$, $x$, and $y$. Find the greatest possible value of $x+y$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "For such a set $\\{a, b, c, d\\},$ the six pairwise sums can be themselves paired up into three pairs which all have the same sum: \\[\\begin{aligned} a+b\\; &\\text{ with } \\;c+d, \\\\  a+c\\; &\\text{ with }\\; b+d, \\\\  a+d \\;&\\text{ with } \\;b+c. \\end{aligned}\\]Thus, the sum of all six pairwise sums is $3S,$ where $S = a+b+c+d,$ and so in our case, \\[x+y=3S - (189 + 320 + 287 + 234) = 3S - 1030.\\]Therefore, we want to maximize $S.$\n\nBecause of the pairing of the six pairwise sums, $S$ must be the sum of two of the four given numbers $189,$ $320,$ $287,$ and $234,$ so the greatest possible value of $S$ is $320 + 287 = 607.$ Therefore, the greatest possible value of $x+y$ is $3(607) - 1030 = 791.$ This value is achievable for the set $\\{51.5, 137.5, 182.5, 235.5\\},$ which has pairwise sums $189,$ $320,$ $287,$ $234,$ $373,$ and $418.$ Therefore the answer is $\\boxed{791}.$"
-}

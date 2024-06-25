@@ -1,6 +1,0 @@
-{
-    "problem": "A circular sector has fixed perimeter, but the central angle $\\theta$ and radius $r$ are allowed to vary.\n\n[asy]\nunitsize(2 cm);\n\npair A, B, O;\n\nA = (1,0);\nB = dir(110);\nO = (0,0);\n\ndraw(A--O--B);\ndraw(arc(O,1,0,110));\n\nlabel(\"$r$\", (O + A)/2, S);\nlabel(\"$r$\", (O + B)/2, SW);\nlabel(\"$\\theta$\", (0.1,0.15));\n[/asy]\n\nWhich central angle $\\theta$ maximizes the area of the circular sector?  Give the answer in radians.\n\nNote: The arc length of the sector is $r \\theta,$ and the area of the sector is $\\frac{r^2 \\theta}{2}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $P = 2r + r \\theta,$ the perimeter of the circular sector.  By AM-GM,\n\\[P = 2r + r \\theta \\ge 2 \\sqrt{(2r)(r \\theta)} = 2 \\sqrt{2r^2 \\theta}.\\]Then $P^2 \\ge 8r^2 \\theta,$ so\n\\[\\frac{r^2 \\theta}{2} \\le \\frac{P^2}{16}.\\]Equality occurs when $2r = r \\theta,$ or $\\theta = \\boxed{2}.$"
-}

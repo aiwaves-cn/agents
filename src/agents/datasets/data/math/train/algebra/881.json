@@ -1,6 +1,0 @@
-{
-    "problem": "Jo adds up all the positive integers from 1 to 100. Kate does a similar thing with the first 100 positive integers; however, she first rounds every integer to its nearest multiple of 10 (rounding 5s up) and then adds the 100 values. What is the positive difference between Jo's sum and Kate's sum?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Consider the numbers $1, 2, 3,..., 10$. Jo would add these integers up as is, while Kate would round the first four down to 0, decreasing her sum by $1+2+3+4=10$, and would round the last six up to 10, increasing her sum by $5+4+3+2+1+0=15$. Thus, her sum is $-10+15=5$ more than Jo's sum for the numbers $1, 2, 3,..., 10$. This same logic applies to the numbers $11, 12, 13,..., 20$ also, and in general it applies to every ten numbers greater than 20. Since there are ten sets of ten numbers from 1 to 100, Kate's sum is $10 \\cdot 5 = \\boxed{50}$ more than Jo's sum."
-}

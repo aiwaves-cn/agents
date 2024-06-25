@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of the function\n\\[j(x) = \\frac{5x + 3}{x}.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\[j(x) = \\frac{5x + 3}{x} = 5 + \\frac{3}{x}.\\]First, $x$ can take on any non-zero value.  Second, as $x$ takes on all non-zero values, $\\frac{3}{x}$ also takes on all real values except 0, which means $5 + \\frac{3}{x}$ takes on all values except 5.  Therefore, the range of the function is $\\boxed{(-\\infty,5) \\cup (5,\\infty)}.$"
-}

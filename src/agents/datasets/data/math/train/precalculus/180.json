@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{R}$ be the matrix for rotating about the origin counter-clockwise by an angle of $58^\\circ.$  Find $\\det \\mathbf{R}.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The matrix corresponding to rotating about the origin counter-clockwise by an angle of $\\theta$ is given by\n\\[\\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix}.\\]The determinant of this matrix is then\n\\[\\cos^2 \\theta - (-\\sin \\theta)(\\sin \\theta) = \\cos^2 \\theta + \\sin^2 \\theta = \\boxed{1}.\\](Why does this make sense geometrically?)"
-}

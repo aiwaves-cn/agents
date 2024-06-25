@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that\n\\[f(f(x) - y) = f(x) + f(f(y) - f(-x)) + x\\]for all real numbers $x$ and $y.$\n\nLet $n$ be the number of possible values of $f(3),$ and let $s$ be the sum of all possible values of $f(3).$  Find $n \\times s.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = y = 0,$ we get\n\\[f(f(0)) = 2f(0).\\]Let $c = f(0),$ so $f(c) = 2c.$\n\nSetting $x = 0$ and $y = c,$ we get\n\\[f(0) = f(0) + f(f(c) - c).\\]Then $f(c) = 0,$ so $c = 0.$\n\nSetting $x = 0,$ we get\n\\[f(-y) = f(f(y))\\]for all $y.$\n\nSetting $y = f(x),$ we get\n\\[0 = f(x) + f(f(f(x)) - f(-x)) + x.\\]Since $f(f(x)) = f(-x),$ this becomes $f(x) = -x$ for all $x.$  We can check that this function works.\n\nThus, $n = 1$ and $s = -3,$ so $n \\times s = \\boxed{-3}.$"
-}

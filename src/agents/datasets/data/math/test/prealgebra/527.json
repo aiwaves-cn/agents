@@ -1,6 +1,0 @@
-{
-    "problem": "Marie is thinking of a multiple of 63, while Jay is thinking of a factor of 63. They happen to be thinking of the same number. There are two possibilities for the number that each of them is thinking of, one positive and one negative. Find the product of these two numbers.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The positive multiples of $63$ are $63$, $126$, $189$, .... All of these numbers except for $63$ are bigger than $63.$ On the other hand, all the positive factors of $63$ other than $63$ are less than $63.$ So if Marie and Jay are thinking of the same positive number, that number must be $63.$\n\nBy the same reasoning, the list $-63$, $-126$, $-189$, ..., of negative multiples cannot include any factors of $63$ except $-63$. Thus the two possible values for the number Marie and Jay are thinking of are $-63$ and $63.$ The product of these two numbers is $(-63)(63)=\\boxed{-3969}$, since the product of a positive number and negative number is negative."
-}

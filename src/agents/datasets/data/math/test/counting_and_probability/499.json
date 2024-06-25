@@ -1,6 +1,0 @@
-{
-    "problem": "An airline serves a dinner to all the passengers on an airplane. They get their choice of steak or fish. Three steak meals and three fish meals are set aside for the six-member crew. If the meals are distributed to the crew members randomly, what is the probability that both pilots get the fish?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{6}{2} = 15$ ways to choose 2 of the 6 meals for the pilots. There are $\\binom{3}{2} = 3$ ways to choose 2 of the 3 fish meals. So the probability is $3/15 = \\boxed{\\frac{1}{5}}$."
-}

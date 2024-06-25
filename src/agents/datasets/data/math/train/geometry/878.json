@@ -1,6 +1,0 @@
-{
-    "problem": "For the quadrilateral shown, how many different whole numbers could be the length of the diagonal represented by the dashed line?\n\n[asy]\ndraw((0,0)--(5,5)--(12,1)--(7,-8)--cycle,linewidth(0.7));\ndraw((0,0)--(12,1),dashed);\nlabel(\"8\",(2.5,2.5),NW);\nlabel(\"10\",(8.5,3),NE);\nlabel(\"16\",(9.5, -3.5),SE);\nlabel(\"12\",(3.5,-4),SW);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Label the vertices $A$, $B$, $C$, and $D$ as shown, and let $x = AC$.\n\n[asy]\ndraw((0,0)--(5,5)--(12,1)--(7,-8)--cycle,linewidth(0.7));\ndraw((0,0)--(12,1),dashed);\nlabel(\"8\",(2.5,2.5),NW);\nlabel(\"10\",(8.5,3),NE);\nlabel(\"16\",(9.5, -3.5),SE);\nlabel(\"12\",(3.5,-4),SW);\nlabel(\"$A$\",(0,0),W);\nlabel(\"$B$\",(5,5),N);\nlabel(\"$C$\",(12,1),E);\nlabel(\"$D$\",(7,-8),S);\nlabel(\"$x$\", ((0,0) + (12,1))/2, N);\n[/asy]\n\nBy the triangle inequality on triangle $ABC$, \\begin{align*}\nx + 8 &> 10, \\\\\nx + 10 &> 8, \\\\\n8 + 10 &> x,\n\\end{align*} which tell us that $x > 2$, $x > -2$, and $x < 18$.\n\nBy the triangle inequality on triangle $CDA$, \\begin{align*}\nx + 12 &> 16, \\\\\nx + 16 &> 12, \\\\\n12 + 16 &> x,\n\\end{align*} which tell us that $x > 4$, $x > -4$, and $x < 28$.\n\nTherefore, the possible values of $x$ are $5, 6, \\dots, 17$, for a total of $17 - 5 + 1 = \\boxed{13}$."
-}

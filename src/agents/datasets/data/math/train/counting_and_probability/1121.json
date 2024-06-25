@@ -1,6 +1,0 @@
-{
-    "problem": "If the sum of $1! + 2! + 3! + \\cdots + 49! + 50!$ is divided by $15$, what is the remainder?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "For positive integers $n$ greater than 4, $n!$ is divisible by 15.  Therefore, all the terms beyond $1!+2!+3!+4!$ do not affect the remainder of the sum when it is divided by 15.  The remainder when $1!+2!+3!+4!=33$ is divided by 15 is $\\boxed{3}$."
-}

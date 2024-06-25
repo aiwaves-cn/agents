@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all positive integer solutions less than or equal to $20$ to the congruence $13(3x-2)\\equiv 26\\pmod 8$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We can simplify as follows:\n\\begin{align*}\n13(3x-2)&\\equiv 26 &\\pmod 8\\\\\n3x-2&\\equiv 2 &\\pmod 8\\\\\n3x&\\equiv 4 &\\pmod 8\\\\\n9x&\\equiv 4\\cdot 3 &\\pmod 8\\\\\nx&\\equiv 12 &\\pmod 8\\\\\nx&\\equiv 4 &\\pmod 8\n\\end{align*}So $x=4+8n$ is a solution for all $n$ and all solutions are of this form. The solutions in the range $0<x\\le 20$ are $4,12,20$, so their sum is $4+12+20=\\boxed{36}$."
-}

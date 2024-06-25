@@ -1,6 +1,0 @@
-{
-    "problem": "Express $0.\\overline{1}+0.\\overline{02}+0.\\overline{003}$  as a common fraction.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We write each repeating decimal as a fraction. We convert $0.\\overline{1}$ to a fraction by setting $0.\\overline{1}=x$. Multiplying both sides by 10, we get $10x =1.\\overline{1}$. We subtract those two equations to get \\begin{align*}\n10 x -x&=1.\\overline{1}-0.\\overline{1} \\quad \\implies \\\\\n9 x&=1 \\quad \\implies \\\\\nx &= \\frac19.\n\\end{align*}Next, we convert $0.\\overline{02}$ to a fraction by setting $0.\\overline{02}=y$. Multiplying by 100, we get $100 y =2.\\overline{02}$. We subtract those two equations to get: \\begin{align*}\n100 y - y &=2.\\overline{02}-0.\\overline{02} \\quad \\implies \\\\\n99 y &=2 \\quad \\implies \\\\\ny &= \\frac{2}{99}.\n\\end{align*}Finally, we convert $0.\\overline{003}$ to a fraction by setting $0.\\overline{003}=z$. Multiplying by 1000, we get $1000z =3.\\overline{003}$. We subtract those two numbers to get: \\begin{align*}\n1000 z -z &=3.\\overline{003}-0.\\overline{003} \\quad \\implies \\\\\n999 z &=3 \\quad \\implies \\\\\nz &= \\frac{3}{999}.\n\\end{align*}The requested sum is $\\frac19+\\frac{2}{99}+\\frac{3}{999}=\\boxed{\\frac{164}{1221}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $2^{10} \\cdot 2^{15}$ is expressed as some integer to the fifth power, what is that integer?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The properties of exponents that need to be used here are product of powers, which states that $a^{m+n}=a^ma^n$ for positive integers $n$, and power of a power, which states that $(a^m)^n=a^{mn}$ for positive integers $n$. Using the product of powers rule, we have \\[2^{10} \\cdot 2^{15} = 2^{10+15} = 2^{25}.\\]Writing $25$ as $5\\cdot5$ and using the power of a power rule, we then get \\[2^{25} = 2^{5 \\cdot 5} = (2^5)^5 = 32^5.\\]Thus, the value is $\\boxed{32}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "When written in standard form, how many zeroes are in the product $\\left(9.2 \\times 10^2\\right)\\left(8 \\times 10^6\\right)$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "First, simplify $(9.2\\times 10^2)(8\\times 10^6)=73.6\\times 10^8$.  The factor of $10^8$ instructs us to move the decimal point in 73.6 eight places to the right.  The first step moves the decimal past the 6 and the next $\\boxed{7}$ steps each introduce a digit of 0."
-}

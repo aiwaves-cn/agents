@@ -1,6 +1,0 @@
-{
-    "problem": "How many degrees are in the sum of the measures of the six numbered angles pictured? [asy]\ndraw((3,8)--(10,4)--(1,0)--cycle,linewidth(1));\ndraw((7,8)--(9,0)--(0,4)--cycle,linewidth(1));\nlabel(\"1\",(3,8),SSE);\nlabel(\"2\",(7,8),SSW);\nlabel(\"3\",(10,4),2W);\nlabel(\"4\",(9,0),NW+NNW);\nlabel(\"5\",(1,0),NE+NNE);\nlabel(\"6\",(0,4),2E);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The angles numbered 1, 3, and 5 are the three interior angles of a triangle, so they sum to $180^\\circ$.  Similarly, the angles numbered 2, 4, and 6 are the three interior angles of a triangle, so they also sum to $180^\\circ$.  Combining these, the sum of all six angle measures is $180^\\circ + 180^\\circ = \\boxed{360^\\circ}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ is a right triangle with $AC = 7,$ $BC = 24,$ and right angle at $C.$ Point $M$ is the midpoint of $AB,$ and $D$ is on the same side of line $AB$ as $C$ so that $AD = BD = 15.$ Given that the area of triangle $CDM$ may be expressed as $\\frac {m\\sqrt {n}}{p},$ where $m,$ $n,$ and $p$ are positive integers, $m$ and $p$ are relatively prime, and $n$ is not divisible by the square of any prime, find $m + n + p.$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "We use the Pythagorean Theorem on $ABC$ to determine that $AB=25.$\nLet $N$ be the orthogonal projection from $C$ to $AB.$ Thus, $[CDM]=\\frac{(DM)(MN)} {2}$, $MN=AM-AN$, and $[ABC]=\\frac{24 \\cdot 7} {2} =\\frac{25 \\cdot (CN)} {2}.$\nFrom the third equation, we get $CN=\\frac{168} {25}.$\nBy the Pythagorean Theorem in $\\Delta ACN,$ we have\n$AN=\\sqrt{\\left(\\frac{24 \\cdot 25} {25}\\right)^2-\\left(\\frac{24 \\cdot 7} {25}\\right)^2}=\\frac{24} {25}\\sqrt{25^2-7^2}=\\frac{576} {25}.$\nThus, $MN=\\frac{576} {25}-\\frac{25} {2}=\\frac{527} {50}.$\nIn $\\Delta ADM$, we use the Pythagorean Theorem to get $DM=\\sqrt{15^2-\\left(\\frac{25} {2}\\right)^2}=\\frac{5} {2} \\sqrt{11}.$\nThus, $[CDM]=\\frac{527 \\cdot 5\\sqrt{11}} {50 \\cdot 2 \\cdot 2}= \\frac{527\\sqrt{11}} {40}.$\nHence, the answer is $527+11+40=\\boxed{578}.$"
-}

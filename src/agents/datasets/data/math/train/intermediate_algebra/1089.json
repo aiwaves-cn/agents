@@ -1,6 +1,0 @@
-{
-    "problem": "Find the coordinates of the center of the hyperbola \\[\\frac{(2y-2)^2}{5^2} - \\frac{(3x-4)^2}{4^2} = 1.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The standard form for the equation of a vertically oriented hyperbola centered at $(h, k)$ is \\[\\frac{(y-k)^2}{a^2} - \\frac{(x-h)^2}{b^2} = 1.\\]But the given equation is not in standard form, because the terms $2y$ and $3x$ appear instead of $y$ and $x.$ So we factor out $2^2$ and $3^2$ from the two terms on the left-hand side, giving \\[\\frac{2^2(y-1)^2}{5^2} - \\frac{3^2(x-\\tfrac43)^2}{4^2} = 1,\\]or \\[\\frac{(y-1)^2}{\\left(\\tfrac52\\right)^2} - \\frac{(x-\\tfrac43)^2}{\\left(\\tfrac43\\right)^2} = 1.\\]This equation is in standard form, so we can read off the center of the hyperbola as $\\boxed{\\left(\\frac43, 1\\right)}.$"
-}

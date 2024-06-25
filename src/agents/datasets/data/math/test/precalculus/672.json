@@ -1,6 +1,0 @@
-{
-    "problem": "The matrices\n\\[\\begin{pmatrix} 2 & a \\\\ -3 & -1 \\end{pmatrix} \\quad \\text{and} \\quad \\begin{pmatrix} -\\frac{1}{16} & b \\\\ \\frac{3}{16} & \\frac{1}{8} \\end{pmatrix}\\]are inverses.  Enter the ordered pair $(a,b).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The product of the matrices is\n\\[\\begin{pmatrix} 2 & a \\\\ -3 & -1 \\end{pmatrix} \\begin{pmatrix} -\\frac{1}{16} & b \\\\ \\frac{3}{16} & \\frac{1}{8} \\end{pmatrix} = \\begin{pmatrix} \\frac{3a}{16} - \\frac{1}{8} & \\frac{a}{8} + 2b \\\\ 0 & -3b - \\frac{1}{8} \\end{pmatrix}.\\]We want this to be the identity matrix, so $\\frac{3a}{16} - \\frac{1}{8} = 1,$ $\\frac{a}{8} + 2b = 0,$ and $-3b - \\frac{1}{8} = 1.$  Solving, we find $(a,b) = \\boxed{\\left( 6, -\\frac{3}{8} \\right)}.$"
-}

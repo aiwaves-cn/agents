@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $289 + 9 \\cdot 51 + 3^6 + 4 \\cdot 187$ is divided by $17$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We can see that that $289,$ $51,$ and $187$ are all multiples of $17,$ so the only term in question is $3^6 = 729.$ We find that $729 = 42 \\cdot 17 + 15,$ so the remainder is $\\boxed{15}.$"
-}

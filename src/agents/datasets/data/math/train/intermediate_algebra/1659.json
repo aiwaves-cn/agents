@@ -1,6 +1,0 @@
-{
-    "problem": "For a certain positive integer $n,$ there exist real numbers $x_1,$ $x_2,$ $\\dots,$ $x_n$ such that\n\\begin{align*}\nx_1 + x_2 + x_3 + \\dots + x_n &= 1000, \\\\\nx_1^4 + x_2^4 + x_3^4 + \\dots + x_n^4 &= 512000.\n\\end{align*}Find the smallest positive integer $n$ for which this is possible.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(1^2 + 1^2 + \\dots + 1^2)(x_1^2 + x_2^2 + \\dots + \\dots + x_n^2) \\ge (x_1 + x_2 + \\dots + x_n)^2 = 1000^2,\\]so $x_1^2 + x_2^2 + \\dots + x_n^2 \\ge \\frac{1000^2}{n}.$\n\nAgain by Cauchy-Schwarz,\n\\[(1^2 + 1^2 + \\dots + 1^2)(x_1^4 + x_2^4 + \\dots + \\dots + x_n^4) \\ge (x_1^2 + x_2^2 + \\dots + x_n^2)^2,\\]so\n\\[n \\cdot 512000 \\ge \\frac{1000^4}{n^2}.\\]Then\n\\[n^3 \\ge \\frac{1000^4}{512000} = \\frac{1000^3}{512} = 5^9,\\]so $n \\ge 125.$\n\nFor $n = 125,$ we can take $x_1 = x_2 = \\dots = x_{125} = 8,$ so the smallest such $n$ is $\\boxed{125}.$"
-}

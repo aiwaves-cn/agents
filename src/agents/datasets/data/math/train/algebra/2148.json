@@ -1,6 +1,0 @@
-{
-    "problem": "The numbers 2, 4, 6, and 8 are a set of four consecutive even numbers. Suppose the sum of five consecutive even numbers is 320. What is the smallest of the five numbers?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "$\\underline{\\text{Method 1}}$\n\nThe middle term of an arithmetic sequence containing an odd number of terms is always the average of the terms in the sequence.  In this case, the average of the numbers is $\\frac{320}{5} = 64$, which is also the third term. Counting back by twos, we find that the required number is $\\boxed{60}$.\n\n$\\underline{\\text{Method 2}}$\n\nRepresent the middle number by $n$. Then the five consecutive even numbers are $n-4, n-2, n, n+2$, and $n+4$. The sum of the five numbers is $5n$. Since $5n=320$, $n=64$. Thus, the first number, is $n - 4 = \\boxed{60}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $x$ with $0 \\le x < 2 \\pi$ that satisfy $\\sin x + \\cos x = \\sqrt{2}.$  Enter all the solutions, separated by commas.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Squaring both sides, we get\n\\[\\sin^2 x + 2 \\sin x \\cos x + \\cos x^2 = 2.\\]Then $2 \\sin x \\cos x = 1,$ so $\\sin 2x = 1.$  Since $0 \\le x < 2 \\pi,$ $2x = \\frac{\\pi}{2}$ or $2x = \\frac{5 \\pi}{2},$ so $x = \\frac{\\pi}{4}$ or $x = \\frac{5 \\pi}{4}.$  We check that only $\\boxed{\\frac{\\pi}{4}}$ works."
-}

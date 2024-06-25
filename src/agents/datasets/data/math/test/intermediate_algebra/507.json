@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\omega$ be a complex number such that $|\\omega| = 1,$ and the equation\n\\[z^2 + z + \\omega = 0\\]has a pure imaginary root $z.$  Find $\\omega + \\overline{\\omega}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let the pure imaginary root be $ki,$ where $k$ is real, so\n\\[-k^2 + ki + \\omega = 0.\\]Thus, $\\omega = k^2 - ki.$  Then $\\overline{\\omega} = k^2 + ki,$ so\n\\[1 = |\\omega|^2 = \\omega \\overline{\\omega} = (k^2 - ki)(k^2 + ki) = k^4 + k^2.\\]Then $k^4 + k^2 - 1 = 0.$  By the quadratic formula,\n\\[k^2 = \\frac{-1 \\pm \\sqrt{5}}{2}.\\]Since $k$ is real,\n\\[k^2 = \\frac{-1 + \\sqrt{5}}{2}.\\]Therefore,\n\\[\\omega + \\overline{\\omega} = k^2 - ki + k^2 + ki = 2k^2 = \\boxed{\\sqrt{5} - 1}.\\]"
-}

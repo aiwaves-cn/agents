@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f_1$, $f_2$, $f_3$, $\\dots$ be a sequence of numbers such that\n\\[\n  f_n = f_{n - 1} + f_{n - 2}\n\\]for every integer $n \\ge 3$.  If $f_7 = 83$, what is the sum of the first 10 terms of the sequence?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let's express each of the first 10 terms using only $f_1$ and $f_2$:\n\\begin{align*}\nf_1 &= f_1, \\\\\nf_2 &= f_2, \\\\\nf_3 &= f_1 + f_2, \\\\\nf_4 &= f_1 + 2f_2, \\\\\nf_5 &= 2f_1 + 3f_2, \\\\\nf_6 &= 3f_1 + 5f_2, \\\\\nf_7 &= 5f_1 + 8f_2, \\\\\nf_8 &= 8f_1 + 13f_2, \\\\\nf_9 &=13f_1 + 21f_2, \\\\\nf_{10} &= 21f_1 + 34f_2.\n\\end{align*}(Notice anything interesting about the coefficients? These are the Fibonacci numbers!)\n\nAdding both sides tells us that the sum of the first 10 terms is\n$$55f_1+88f_2 = 11(5f_1+8f_2) = 11f_7 = 11\\cdot83 = \\boxed{913} .$$"
-}

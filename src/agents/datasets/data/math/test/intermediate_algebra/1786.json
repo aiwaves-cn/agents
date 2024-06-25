@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when the polynomial $x^{18}+x^{13}+x^7+x^4+x$ is divided by $x^3-x$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $x^3-x = x(x^2-1) = x(x+1)(x-1)$ has degree $3$, we know that the remainder is of the form $ax^2+bx+c$ for some constants $a$, $b$, and $c$. Let the quotient be $q(x)$. Then,\n$$x^{18}+x^{13}+x^7+x^4+x =x(x+1)(x-1)q(x) +  ax^2+bx+c.$$If we plug in $x=0$, we get $c=0$. If we plug in $x=1$, we get $5 = a+b$. And if we plug in $x=-1$ we get $-1= a-b$.\nSolving these two equations together gives us $a=2$ and $b=3$ which means the remainder is $\\boxed{2x^2+3x}$."
-}

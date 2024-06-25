@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a_1, a_2, a_3,\\dots$ be an increasing arithmetic sequence of integers. If $a_4a_5 = 13$, what is $a_3a_6$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The only ways to write 13 as the product of two integers is as $13 = 1 \\times 13$ or $13 = (-1) \\times (-13)$.  We take these two cases separately.\n\nIn the case $13 = 1 \\times 13$, we must have $a_4 = 1$ and $a_5 = 13$, since the sequence is increasing.  Then the common difference is $13 - 1 = 12$, so $a_3 = a_4 - 12 = 1 - 12 = -11$, and $a_6 = a_5 + 12 = 13 + 12 = 25$, so $a_3 a_6 = (-11) \\cdot 25 = -275$.\n\nIn the case $13 = (-1) \\times (-13)$, we must have $a_4 = -13$ and $a_5 = -1$.  Then the common difference is $-1 - (-13) = 12$, so $a_3 = a_4 - 12 = -13 - 12 = -25$, and $a_6 = a_5 + 12 = (-1) + 12 = 11$, so $a_3 a_6 = (-25) \\cdot 11 = -275$.\n\nHence, $a_3 a_6 = \\boxed{-275}$."
-}

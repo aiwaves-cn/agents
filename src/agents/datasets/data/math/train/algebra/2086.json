@@ -1,6 +1,0 @@
-{
-    "problem": "For what value of $k$ does the equation $x^2+10x+y^2+6y-k=0$ represent a circle of radius 6?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Completing the square, we can rewrite this equation as $(x+5)^2-25+(y+3)^2-9=k$, or $(x+5)^2+(y+3)^2=34+k$. Because this equation must represent a circle of radius 6, we need $34+k=6^2=36$, so $k=\\boxed{2}$."
-}

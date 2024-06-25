@@ -1,6 +1,0 @@
-{
-    "problem": "The perimeter of a rectangle is 24 inches. What is the number of square inches in the maximum possible area for this rectangle?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let one pair of parallel sides have length $x$ and the other pair of parallel sides have length $12-x$. This means that the perimeter of the rectangle is $x+x+12-x+12-x=24$ as the problem states. The area of this rectangle is $12x-x^2$. Completing the square results in $-(x-6)^2+36\\le 36$ since $(x-6)^2\\ge 0$, so the maximum area of $\\boxed{36}$ is obtained when the rectangle is a square of side length 6 inches."
-}

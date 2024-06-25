@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest possible number of whole 2-by-3 non-overlapping rectangles needed to cover a square region exactly, without extra over-hangs and without gaps?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The area of each rectangle is $6$, so the area of the square must be divisible by $6$.  The smallest square side length that satisfies this is $6$.  It is easy to see that we can tile a $6$ by $6$ square with $2$ by $3$ rectangles - split the rows into pairs of two, then cover each pair with two rectangles laid end-to-end.  Since the area of the square is $6^2=36$, and each rectangle has area $6$, the number of rectangles required is $\\boxed{6}$."
-}

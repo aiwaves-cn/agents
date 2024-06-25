@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x_1,$ $x_2,$ $x_3$ be positive real numbers such that $x_1 + 2x_2 + 3x_3 = 60.$  Find the smallest possible value of\n\\[x_1^2 + x_2^2 + x_3^2.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(1 + 4 + 9)(x_1^2 + x_2^2 + x_3^2) \\ge (x_1 + 2x_2 + 3x_3)^2 = 60^2,\\]so $x_1^2 + x_2^2 + x_3^2 \\ge \\frac{3600}{14} = \\frac{1800}{7}.$\n\nEquality occurs when $x_1 = \\frac{x_2}{2} = \\frac{x_3}{3}$ and $x_1 + 2x_2 + 3x_3 = 60.$  We can solve, to find $x_1 = \\frac{30}{7},$ $x_2 = \\frac{60}{7},$ and $x_3 = \\frac{90}{7}.$  Hence, the smallest possible value is $\\boxed{\\frac{1800}{7}}.$"
-}

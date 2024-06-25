@@ -1,6 +1,0 @@
-{
-    "problem": "Two different  numbers are selected simultaneously and at random from the set $\\{1, 2, 3, 4, 5, 6, 7\\}$. What is the probability that the positive difference between the two numbers is $2$ or greater? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "The only time the two numbers selected will not have a positive difference which is 2 or greater is when the two numbers are consecutive. There are 6 pairs of consecutive numbers in the set $\\{1,2,3,4,5,6,7\\}$, and there are $\\binom{7}{2}=21$ pairs of numbers total. So, the probability that the pair of numbers chosen is not consecutive is $1-\\frac{6}{21}=\\frac{15}{21}=\\boxed{\\frac{5}{7}}$."
-}

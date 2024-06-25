@@ -1,6 +1,0 @@
-{
-    "problem": "A traffic light runs repeatedly through the following cycle: green for 30 seconds, then yellow for 3 seconds, and then red for 30 seconds.  Leah picks a random three-second time interval to watch the light.  What is the probability that the color changes while she is watching?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The light completes a cycle every 63 seconds.  Leah sees the color change if and only if she begins to look within three seconds before the change from green to yellow, from yellow to red, or from red to green.  Thus she sees the color change with probability $(3+3+3)/63=\\boxed{\\frac{1}{7}}$."
-}

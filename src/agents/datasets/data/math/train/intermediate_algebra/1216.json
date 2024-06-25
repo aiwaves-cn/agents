@@ -1,6 +1,0 @@
-{
-    "problem": "For how many real numbers $a^{}_{}$ does the quadratic equation $x^2 + ax^{}_{} + 6a=0$ have only integer roots for $x^{}_{}$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $r$ and $s$ be the integer roots. Then by Vieta's formulas, $r+s=-a$ and $rs=6a.$ Thus, \\[rs + 6(r+s) = 0.\\]Applying Simon's Favorite Factoring Trick, we have \\[rs + 6(r+s) + 36 = 36 \\implies (r+6)(s+6) = 36.\\]The number $36 = 2^2 3^2$ has $2(2+1)(2+1) = 18$ factors, both positive and negative; they come in $8$ pairs, with singletons $6$ and $-6.$ However, since the order of $r$ and $s$ does not matter, each pair should only be counted once, so there are $8 + 1 + 1 = \\boxed{10}$ possible values for $a.$"
-}

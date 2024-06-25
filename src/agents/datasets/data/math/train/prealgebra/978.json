@@ -1,6 +1,0 @@
-{
-    "problem": "In a right-angled triangle, the sum of the squares of the three side lengths is 1800.  What is the length of the hypotenuse of this triangle?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Suppose the side lengths of the triangle are $a$, $b$, and $c$, with $c$ the hypotenuse. Then $c^2 = a^2+b^2$ by the Pythagorean Theorem. We are told that $$a^2+b^2+c^2 = 1800.$$ Since $a^2+b^2=c^2$, then $c^2 + c^2 = 1800$ or $2c^2 = 1800$ or $c^2 = 900$ or $c=30$ (since the side lengths are positive). So the hypotenuse has length $\\boxed{30}$."
-}

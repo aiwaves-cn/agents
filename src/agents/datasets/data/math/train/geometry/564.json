@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $PQR$, we have $\\angle P = 90^\\circ$, $QR = 20$, and $\\tan R = 4\\sin R$.  What is $PR$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "[asy]\n\npair P,Q,R;\n\nP = (0,0);\n\nQ = (5*sqrt(15),0);\n\nR = (0,5);\n\ndraw(P--Q--R--P);\n\ndraw(rightanglemark(Q,P,R,18));\n\nlabel(\"$P$\",P,SW);\n\nlabel(\"$Q$\",Q,SE);\n\nlabel(\"$R$\",R,N);\n\nlabel(\"$20$\",(R+Q)/2,NE);\n\n[/asy]\n\nWe have $\\tan R = \\frac{PQ}{PR}$ and $\\sin R = \\frac{PQ}{RQ} = \\frac{PQ}{20}$, so $\\tan R = 4\\sin R$ gives us $\\frac{PQ}{PR} = 4\\cdot \\frac{PQ}{20} = \\frac{PQ}{5}$.  From $\\frac{PQ}{PR} = \\frac{PQ}{5}$, we have $PR = \\boxed{5}$."
-}

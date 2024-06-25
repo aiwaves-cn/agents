@@ -1,6 +1,0 @@
-{
-    "problem": "The measure of an interior angle of a regular decagon is how many degrees greater than the measure of an interior angle of a regular pentagon?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The sum of the angle measures in a polygon with $n$ sides is $180(n-2)$ degrees.  So, the sum of the decagon's angles is $180(10-2) = 1440$ degrees.  The polygon is regular, so all the angles have the same measure, which means each is $\\frac{1440^\\circ}{10} = 144^\\circ$.  Similarly, the sum of the angles of a pentagon is $180(5-2) = 540$ degrees, which means each angle in a regular pentagon has measure $\\frac{540^\\circ}{5} = 108^\\circ$.\n\nTherefore, the desired difference is $144^\\circ - 108^\\circ = \\boxed{36^\\circ}$."
-}

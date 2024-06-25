@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of the function\n\\[m(x) = \\sqrt{x + 5} + \\sqrt{20 - x}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "First, $m(x) = \\sqrt{x + 5} + \\sqrt{20 - x}$ is always nonnegative.\n\nNote that\n\\begin{align*}\n[m(x)]^2 &= x + 5 + 2 \\sqrt{x + 5} \\cdot \\sqrt{20 - x} + 20 - x \\\\\n&= 25 + 2 \\sqrt{(x + 5)(20 - x)} \\\\\n&= 25 + 2 \\sqrt{-x^2 + 15x + 100} \\\\\n&= 25 + 2 \\sqrt{\\frac{625}{4} - \\left( x - \\frac{15}{2} \\right)^2}.\n\\end{align*}Looking at the formula\n\\[[m(x)]^2 = 25 + 2 \\sqrt{(x + 5)(20 - x)},\\]the square root $\\sqrt{(x + 5)(20 - x)}$ is always nonnegative, so $[m(x)]^2$ is at least 25, which means $m(x)$ is at least 5 (since $m(x)$ is always nonnegative).  Furthermore, $m(-5) = \\sqrt{0} + \\sqrt{25} = 5,$ so the minimum value of $m(x)$ is 5.\n\nLooking at the formula\n\\[[m(x)]^2 = 25 + 2 \\sqrt{\\frac{625}{4} - \\left( x - \\frac{15}{2} \\right)^2},\\]the expression under the square root attains its maximum when $x = \\frac{15}{2}.$  At this value,\n\\[\\left[ m \\left( \\frac{15}{2} \\right) \\right]^2 = 25 + 2 \\sqrt{\\frac{625}{4}} = 50,\\]so $m \\left( \\frac{15}{2} \\right) = \\sqrt{50} = 5 \\sqrt{2}.$\n\nTherefore, the range of the function is $\\boxed{[5,5 \\sqrt{2}]}.$"
-}

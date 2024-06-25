@@ -1,6 +1,0 @@
-{
-    "problem": "If $re^{i \\theta}$ is a root of\n\\[z^8 - z^7 + z^6 - z^5 + z^4 - z^3 + z^2 - z + 1 = 0,\\]where $r > 0$ and $0 \\le \\theta < 2 \\pi,$ then find the sum of all possible values of $\\theta.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "The given equation can be written as\n\\[\\frac{z^9 + 1}{z + 1} = 0.\\]Then $z^9 + 1 = 0,$ or $z^9 = -1.$  Since $z = e^{i \\theta},$\n\\[e^{9i \\theta} = -1.\\]This means $9 \\theta = \\pi + 2 \\pi k$ for some integer $k.$  Since $0 \\le \\theta < 2 \\pi,$ the possible values of $k$ are 0, 1, 2, 3, 5, 6, 7, and 8.   (We omit $k = 4,$ because if $k = 4,$ then $\\theta = \\pi,$ so $z = -1,$ which makes $z + 1 = 0.$)  Therefore, the sum of all possible values of $\\theta$ is\n\\[\\frac{\\pi}{9} + \\frac{3 \\pi}{9} + \\frac{5 \\pi}{9} + \\frac{7 \\pi}{9} + \\frac{11 \\pi}{9} + \\frac{13 \\pi}{9} + \\frac{15 \\pi}{9} + \\frac{17 \\pi}{9} = \\boxed{8 \\pi}.\\]"
-}

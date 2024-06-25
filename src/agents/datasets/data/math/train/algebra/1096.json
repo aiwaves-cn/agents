@@ -1,6 +1,0 @@
-{
-    "problem": "Each term of a sequence, after the first term, is inversely proportional to the term preceding it, and the constant of proportionality stays the same. If the first term is 2 and the second term is 5, what is the 12th term?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Recall that two quantities are inversely proportional if their product is constant.  Therefore, the product of every pair of consecutive terms of the sequence is the same.  Since the first two terms are 2 and 5, the product of every pair of consecutive terms is 10.  Therefore, the third term is $10/5=2$, the fourth term is $10/2=5$, and so on.  We see that the $n$th term is 5 for every even $n$, so the 12th term is $\\boxed{5}$."
-}

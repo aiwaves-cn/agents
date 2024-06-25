@@ -1,6 +1,0 @@
-{
-    "problem": "Four red candies and three green candies can be combined to make many different flavors. Flavors are different if the percent red is different, so 3 red / 0 green is the same flavor as 2 red / 0 green; and likewise 4 red / 2 green is the same flavor as 2 red / 1 green. If a flavor is to be made using some or all of the seven candies, how many different flavors are possible?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Denote the ratio by $x:y$, where $x$ is the number of red candies and $y$ is the number of green. We can have $0$, $1$, $2$, $3$, or $4$ red candies and $0$, $1$, $2$, or $3$ green candies. Thus, there are $5 \\cdot 4 = 20$ potential ratios. However, a $0:0$ ratio is not allowed (there would be no candy!), so we subtract one for a total of $19$ ratios possible. Now we must subtract the ratios we've over-counted. In particular, $0:1$ is the same as $0:2$ and $0:3$, and $1:0$ is the same as $2:0$, $3:0$, and $4:0$. Also, $1:1$ is the same as $2:2$ and $3:3$, and $2:1$ is the same as $4:2$. Thus, we have over-counted by $8$ ratios, so our final answer is $19 - 8 = \\boxed{11}$."
-}

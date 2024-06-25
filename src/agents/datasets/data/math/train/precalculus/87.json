@@ -1,6 +1,0 @@
-{
-    "problem": "The matrix\n\\[\\begin{pmatrix} a & \\frac{15}{34} \\\\ c & \\frac{25}{34} \\end{pmatrix}\\]corresponds to a projection.  Enter the ordered pair $(a,c).$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Suppose $\\mathbf{P}$ is the matrix for projecting onto the vector $\\mathbf{p}.$  Then for any vector $\\mathbf{v},$ $\\mathbf{P} \\mathbf{v}$ is a scalar multiple of $\\mathbf{p}.$  So when we apply the projection again to $\\mathbf{P} \\mathbf{v},$ the result is still $\\mathbf{P} \\mathbf{v}.$  This means\n\\[\\mathbf{P} (\\mathbf{P} \\mathbf{v}) = \\mathbf{P} \\mathbf{v}.\\]In other words, $\\mathbf{P}^2 \\mathbf{v} = \\mathbf{P} \\mathbf{v}.$  Since this holds for all vectors $\\mathbf{v},$\n\\[\\mathbf{P}^2 = \\mathbf{P}.\\]Here,\n\\[\\mathbf{P}^2 = \\begin{pmatrix} a & \\frac{15}{34} \\\\ c & \\frac{25}{34} \\end{pmatrix} \\begin{pmatrix} a & \\frac{15}{34} \\\\ c & \\frac{25}{34} \\end{pmatrix} = \\begin{pmatrix} a^2 + \\frac{15}{34} c & \\frac{15}{34} a + \\frac{375}{1156} \\\\ ac + \\frac{25}{34} c & \\frac{15}{34} c + \\frac{625}{1156} \\end{pmatrix}.\\]Thus, $\\frac{15}{34} a + \\frac{375}{1156} = \\frac{15}{34}$ and $\\frac{15}{34} c + \\frac{625}{1156} = \\frac{25}{34}.$  Solving, we find $(a,c) = \\boxed{\\left( \\frac{9}{34}, \\frac{15}{34} \\right)}.$"
-}

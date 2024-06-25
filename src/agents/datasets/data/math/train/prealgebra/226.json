@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangular garden 50 feet long and 10 feet wide is enclosed by a fence. To make the garden larger, while using the same fence, its shape is changed to a square. By how many square feet does this enlarge the garden?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The area of the garden was 500 square feet$(50\\times 10)$ and its perimeter was 120 feet, $2\\times (50+10)$. The square garden is also enclosed by 120 feet of fence so its sides are each 30 feet long. The square garden's area is 900 square feet ($30\\times 30)$. and this has increased the garden area by $\\boxed{400}$ square feet. [asy]\n/* AMC8 1999 #5 Solution*/\ndraw((0,0)--(10,0)--(10,50)--(0,50)--cycle);\ndraw((25,20)--(55,20)--(55,50)--(25,50)--cycle);\nlabel(\"50\", (0, 25), W);\nlabel(\"10\", (5, 0), S);\nlabel(\"30\", (40, 20), S);\nlabel(\"30\", (25, 35), W);\n[/asy]"
-}

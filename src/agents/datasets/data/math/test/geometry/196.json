@@ -1,6 +1,0 @@
-{
-    "problem": "A chord of length $6$ units divides a circle into two distinct areas. If the circle has a radius of 6 units, what is the area of the larger region, in square units? Express your answer in simplest radical form in terms of $\\pi$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Draw radii to the intersection points of the chord with the circle. An equilateral triangle is formed with area $\\frac{6^2\\sqrt{3}}{4} = 9\\sqrt{3}$. However, the whole section has area $\\frac{36\\pi}{6} = 6\\pi$. If we take the area of the sector away from the area of the entire circle and then add back in the area of the equilateral triangle, we will get the area of the larger region. The area is therefore $36\\pi - 6\\pi + 9\\sqrt{3} = \\boxed{30\\pi + 9\\sqrt{3}}$."
-}

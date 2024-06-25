@@ -1,6 +1,0 @@
-{
-    "problem": "How many diagonals can be drawn for a hexagon?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "If we label the six points of our hexagon $A$, $B$, $C$, $D$, $E$, and $F$, diagonals can only be drawn between non-adjacent points. Therefore, the diagonals are $\\overline{AC}$, $\\overline{AD}$, $\\overline{AE}$, $\\overline{BD}$, $\\overline{BE}$, $\\overline{BF}$, $\\overline{CE}$, $\\overline{CF}$, and $\\overline{DF}$. There are $\\boxed{9}$ diagonals that can be drawn.  [asy]\nunitsize(50);\npair A,B,C,D,E,F;\nA=(0,1.73); B=(1,1.73); C=(1.43,0.87); D=(1,0); E=(0,0); F=(-0.43, 0.87);\ndraw(A--B--C--D--E--F--cycle,linewidth(1));\ndraw(A--C--E--cycle);\ndraw(B--D--F--cycle);\ndraw(A--D);\ndraw(B--E);\ndraw(C--F);\nlabel(\"A\", A, NW);\nlabel(\"B\", B, NE);\nlabel(\"C\",(1.55,0.87),E);\nlabel(\"D\",D,SE);\nlabel(\"E\",E,SW);\nlabel(\"F\",F,W);\n[/asy]"
-}

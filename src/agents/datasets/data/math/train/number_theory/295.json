@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $99^{36}$ is divided by 100?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Noticing that $99=100-1$ we see that \\[99\\equiv-1\\pmod{100}.\\] Therefore  \\[99^{36}\\equiv(-1)^{36}\\equiv1\\pmod{100}.\\] The remainder when $99^{36}$ is divided by 100 is $\\boxed{1}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the minimum value of\n\\[f(x) = x + \\frac{1}{x} + \\frac{1}{x + \\frac{1}{x}}\\]for $x > 0.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "First, consider the function\n\\[g(x) = x + \\frac{1}{x}.\\]If $1 \\le x < y,$ then\n\\begin{align*}\ng(y) - g(x) &= y + \\frac{1}{y} - x - \\frac{1}{x} \\\\\n&= y - x + \\frac{1}{y} - \\frac{1}{x} \\\\\n&= y - x + \\frac{x - y}{xy} \\\\\n&= (y - x) \\left( 1 - \\frac{1}{xy} \\right) \\\\\n&= \\frac{(y - x)(xy - 1)}{xy} \\\\\n&> 0.\n\\end{align*}Thus, $g(x)$ is increasing on the interval $[1,\\infty).$\n\nBy AM-GM (and what we just proved above),\n\\[x + \\frac{1}{x} \\ge 2,\\]so\n\\[g \\left( x + \\frac{1}{x} \\right) \\ge 2 + \\frac{1}{2} = \\frac{5}{2}.\\]Equality occurs when $x = 1,$ to the minimum value of $f(x)$ for $x > 0$ is $\\boxed{\\frac{5}{2}}.$\n\nIn particular, we cannot use the following argument: By AM-GM,\n\\[x + \\frac{1}{x} + \\frac{1}{x + \\frac{1}{x}} \\ge 2 \\sqrt{\\left( x + \\frac{1}{x} \\right) \\cdot \\frac{1}{x + \\frac{1}{x}}} = 2.\\]However, we cannot conclude that the minimum is 2, because equality can occur only when $x + \\frac{1}{x} = 1,$ and this is not possible."
-}

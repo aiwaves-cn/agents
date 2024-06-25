@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\mathbf{a}$ and $\\mathbf{b}$ are vectors such that $\\|\\mathbf{a}\\| = 7$ and $\\|\\mathbf{b}\\| = 11$, then find all possible values of $\\mathbf{a} \\cdot \\mathbf{b}$.\n\nSubmit your answer in interval notation.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We know that $\\mathbf{a}\\cdot\\mathbf{b}=\\|\\mathbf{a}\\|\\cdot\\|\\mathbf{b}\\|\\cdot\\cos \\theta =7\\cdot 11\\cdot\\cos \\theta$, where $\\theta$ is the angle between $\\mathbf{a}$ and $\\mathbf{b}$. The range of values of $\\cos \\theta$ is $[-1,1]$, so the range of values of $\\mathbf{a}\\cdot\\mathbf{b}$ is $\\boxed{[-77,77]}$."
-}

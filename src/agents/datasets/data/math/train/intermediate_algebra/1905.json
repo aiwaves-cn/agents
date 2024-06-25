@@ -1,6 +1,0 @@
-{
-    "problem": "By partial fractions,\n\\[\\frac{1}{x(x + 1)(x + 2)(x + 3)(x + 4)} = \\frac{A}{x} + \\frac{B}{x + 1} + \\frac{C}{x + 2} + \\frac{D}{x + 3} + \\frac{E}{x + 4}\\]for some constants $A,$ $B,$ $C,$ $D,$ and $E.$  Find $A + B + C + D + E.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Clearing the fractions, we get\n\\begin{align*}\n1 &= A(x + 1)(x + 2)(x + 3)(x + 4) \\\\\n&\\quad + Bx(x + 2)(x + 3)(x + 4) \\\\\n&\\quad + Cx(x + 1)(x + 3)(x + 4) \\\\\n&\\quad + Dx(x + 1)(x + 2)(x + 4) \\\\\n&\\quad + Ex(x + 1)(x + 2)(x + 3).\n\\end{align*}We can use the usual technique of solving for each constant.  Or, we can recognize that both sides represent the same polynomial, which means that the polynomial on the right must simplify to 1.  Furthermore, $A + B + C + D + E$ is the coefficient of $x^4$ on the right-hand side, so $A + B + C + D + E = \\boxed{0}.$"
-}

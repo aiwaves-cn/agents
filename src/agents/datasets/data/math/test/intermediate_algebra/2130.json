@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area of the region in the $xy-$plane that satisfies \\[\\lfloor x \\rfloor \\lfloor y \\rfloor = 16\\, ?\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Because $\\lfloor x \\rfloor$ and $\\lfloor y \\rfloor$ are both integers, they must be a factor pair of $16,$ possibly both negative. For each factor pair of $16,$ say $(a, b),$ the graph of the equations $\\lfloor x \\rfloor = a$ and $\\lfloor y \\rfloor = b$ is a unit square (aligned with the axes) whose bottom-left corner is $(a, b),$ so the area of the graph is simply $1.$ Therefore, the area of the given region is equal to the number of factor pairs of $16.$\n\nSince $16$ has $5$ positive factors (namely, $1, 2, 4, 8, 16$) and $5$ negative factors, there are $5 + 5 = \\boxed{10}$ ordered pairs of integers $(a, b)$ such that $ab=16,$ which is the answer."
-}

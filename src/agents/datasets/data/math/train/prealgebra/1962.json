@@ -1,6 +1,0 @@
-{
-    "problem": "Each of the boxes in the figure below is a square. How many different squares can be traced using the lines in the figure?\n\n[asy]\nunitsize(0.2inch);\ndraw((0,1)--(1,1)--(1,4)--(0,4)--(0,1));\ndraw((1,1)--(1,0)--(2,0)--(2,5)--(1,5)--(1,4));\ndraw((2,0)--(3,0)--(3,5)--(2,5));\ndraw((3,0)--(4,0)--(4,5)--(3,5));\ndraw((4,1)--(5,1)--(5,4)--(4,4));\n\ndraw((0,2)--(5,2));\ndraw((0,3)--(5,3));\ndraw((1,1)--(4,1));\ndraw((1,4)--(4,4));\n\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are three different sizes for the squares that can be traced in the figure: $1 \\times 1,$ $2 \\times 2,$ and $3 \\times 3.$ The table below shows how many squares can be traced for each size. $$\n\\begin{array}{|c|c|}\n\\hline\n& \\textbf{Number of} \\\\\n\\textbf{Sizes} & \\textbf{Squares} \\\\\n\\hline\n1 \\times 1 & 21 \\\\\n2 \\times 2 & 12 \\\\\n3 \\times 3 & 5 \\\\\n\\hline\n\\multicolumn{2}{|c|}{\\text{Total \\boxed{38}}} \\\\\n\\hline\n\\end{array}\n$$"
-}

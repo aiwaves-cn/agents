@@ -1,6 +1,0 @@
-{
-    "problem": "Consider two infinite geometric series. The first has leading term $a,$ common ratio $b,$ and sum $S.$ The second has a leading term $b,$ common ratio $a,$ and sum $1/S.$ Find the value of $a+b.$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Writing $S$ in terms of $a$ and $b,$ $\\frac{a}{1-b}=S$ and $\\frac{b}{1-a} = \\frac{1}{S}.$ Thus, equating the second equation with the reciprocal of the first, \\[\\frac{1}{S}=\\frac{1-b}{a}=\\frac{b}{1-a}.\\]Cross multiplying and simplifying, $ab=(1-a)(1-b)$ and the result is $a+b=\\boxed{1}.$"
-}

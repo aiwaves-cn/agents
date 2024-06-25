@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the square of 989 without a calculator.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "\\[989^2=(10^3-11)^2=10^6-2\\cdot11\\cdot10^3+121.\\]We can factor out $10^3$ from the first two terms to make the computation easier: \\[989^2=10^3(10^3-22)+121=10^3\\cdot978+121=\\boxed{978121}.\\]"
-}

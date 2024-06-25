@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest common divisor of $2^{1998}-1$ and $2^{1989}-1$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let $m = 2^{1998} - 1$ and $n = 2^{1989}-1$. Then, $2^9n = 2^9(2^{1989}-1) = 2^{1998} - 2^9 = m - (2^9 - 1)$. By the Euclidean algorithm, it follows that \\begin{align*}\n\\text{gcd}\\,(m,n) &= \\text{gcd}\\,(n,m-2^9n) \\\\\n&= \\text{gcd}\\,(n,2^9-1). \\\\\n\\end{align*}Since $9$ divides $1998$, by the difference of odd powers factorization, it follows that $2^{1989}-1$ is divisible by $2^9 - 1$. Thus, the greatest common divisor of $m$ and $n$ is $2^9 - 1 = \\boxed{511}$."
-}

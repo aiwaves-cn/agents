@@ -1,6 +1,0 @@
-{
-    "problem": "A European train compartment has six seats.  Four of the seats are broken.  Wilhelm needs to fill out a form like the one here to indicate that there are broken seats.  If he randomly checks off four of the seats in the diagram, what is the probability that he marked the correct seats?  Express your answer as a common fraction.\n\n[asy]\n\ndraw((0,0)--(24,0)--(24,18)--(0,18)--(0,0));\n\nlabel(\"$\\textbf{Maintenance Report}$\",(12,16));\n\ndraw((2,2)--(22,2)--(22,14)--(2,14)--(2,2));\n\ndraw((4,4)--(8,4)--(8,6)--(4,6)--(4,4));\n\ndraw((10,4)--(14,4)--(14,6)--(10,6)--(10,4));\nlabel(\"$\\surd$\",(12,5));\n\ndraw((16,4)--(20,4)--(20,6)--(16,6)--(16,4));\nlabel(\"$\\surd$\",(18,5));\n\ndraw((4,10)--(8,10)--(8,12)--(4,12)--(4,10));\nlabel(\"$\\surd$\",(6,11));\n\ndraw((10,10)--(14,10)--(14,12)--(10,12)--(10,10));\nlabel(\"$\\surd$\",(12,11));\n\ndraw((16,10)--(20,10)--(20,12)--(16,12)--(16,10));\n\n[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{6}{4} = 15$ ways to mark any four seats. Of these 15 ways, only one is correct, so the answer is $\\boxed{\\frac{1}{15}}$."
-  }

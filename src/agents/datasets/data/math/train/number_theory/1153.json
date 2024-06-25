@@ -1,6 +1,0 @@
-{
-    "problem": "Find a positive integer that is divisible by 18 and whose cube root is a number between 8 and 8.1.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We want an integer $n$ such that $8 < \\sqrt[3]{n} < 8.1$. Cubing each part of the inequality gives $8^3 < n < 8.1^3$, or $512 < n < 531.441$. We know $n$ is a multiple of 18, so we try to find a multiple of 18 in this range (we can do this by letting $n = 18k$, and trying out different integer values of $k$). We find that $18 \\cdot 29 = 522$ is the only multiple of 18 in this range. So $\\boxed{522}$ is the answer."
-}

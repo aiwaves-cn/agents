@@ -1,6 +1,0 @@
-{
-    "problem": "Brad has a cylindrical barrel with radius 10 inches and height 15 inches.  He wants to fill it from a well, using a bucket in the shape of a hemisphere with a radius of 10 inches. How many trips must Brad make to the well in order to fill the barrel?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "We start by finding the volume of the bucket and the volume of the barrel.  Let $r$ be ten inches.   The bucket is half of a sphere of radius $r$, so the volume it can hold is \\[ \\frac{1}{2} \\cdot \\frac{4}{3} \\pi r^3 = \\frac{2}{3} \\pi r^3 . \\]On the other hand, the barrel is a cylinder of radius $r$ and height $15 \\text{ in} = \\frac{3}{2} r$, so its volume is \\[ \\pi r^2 \\cdot \\text{height} = \\frac{3}{2} \\pi r^3 . \\]Therefore the ratio of the volume of the barrel to the volume of the bucket is \\[ \\frac{(3/2) \\pi r^3}{(2/3) \\pi r^3} = \\frac{9}{4}\n= 2 + \\frac{1}{4} . \\]Thus two buckets will not suffice to fill the barrel, but three will, so Brad needs $\\boxed{3}$ trips to the well."
-}

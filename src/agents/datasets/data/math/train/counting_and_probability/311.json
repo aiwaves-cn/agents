@@ -1,6 +1,0 @@
-{
-    "problem": "Cory has $3$ apples, $2$ oranges and $2$ bananas. If Cory eats one piece of his fruit per day for a week and the pieces of fruit within each category are indistinguishable, in how many orders can Cory eat the fruit? One such order is $AAAOOBB.$",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are a total of $7$ fruits, so there are $7!$ ways to arrange them. However, since the fruits in each category are indistinguishable, we must divide out the repeats: $$\\frac{7!}{3!2!2!}=7\\times6\\times5=\\boxed{210}.$$"
-}

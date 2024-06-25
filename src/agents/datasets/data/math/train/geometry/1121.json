@@ -1,6 +1,0 @@
-{
-    "problem": "Three faces of a right rectangular prism have areas of 48, 49 and 50 square units. What is the volume of the prism, in cubic units? Express your answer to the nearest whole number.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "If the length, width, and height of the rectangular prism are $a$, $b$, and $c$, then we are given $ab=48$, $bc=49$, and $ac=50$.  Since we are looking for $abc$, the volume of the rectangular prism, we multiply these three equations to find \\begin{align*}\n(ab)(bc)(ac)&=48\\cdot49\\cdot50 \\implies \\\\\na^2b^2c^2&=48\\cdot49\\cdot 50 \\implies \\\\\n(abc)^2 &= 48\\cdot49\\cdot50 \\implies \\\\\nabc &= \\sqrt{48\\cdot49\\cdot50} \\\\\n&= \\sqrt{(16\\cdot 3)\\cdot 7^2\\cdot(2\\cdot 5^2)} \\\\\n&= 4\\cdot7\\cdot5\\sqrt{2\\cdot3} \\\\\n&= 140\\sqrt{6},\n\\end{align*} which to the nearest whole number is $\\boxed{343}$ cubic units."
-}

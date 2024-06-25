@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose we have 2 fair 6-sided dice numbered from 1 to 6.  If we roll them both, what is the probability that the two numbers shown sum to 7?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 6 equally likely outcomes for each die, so there are $6 \\times 6 = 36$ total equally likely outcomes for both dice together. The outcomes which sum to 7 are: 1 + 6, 2 + 5, 3 + 4, 4 + 3, 5 + 2, and 6 + 1, for a total of 6 equally likely successful outcomes.  Therefore, the probability of rolling a sum of 7 is $\\frac{6}{36} = \\boxed{\\frac{1}{6}}$."
-}

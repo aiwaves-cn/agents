@@ -1,6 +1,0 @@
-{
-    "problem": "What is the coefficient of $a^2b^2$ in $(a+b)^4\\left(c+\\dfrac{1}{c}\\right)^6$?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "To find the coefficient of $a^2b^2$ in $(a+b)^4\\left(c+\\dfrac{1}{c}\\right)^6$, we need to find the coefficient of $a^2b^2$ in $(a+b)^4$ and the constant term of $\\left(c+\\dfrac{1}{c}\\right)^6$. Using the Binomial Theorem, we find that these are $\\binom{4}{2}=6$ and $\\binom{6}{3}=20$. The coefficient of $a^2b^2$ in $(a+b)^4\\left(c+\\dfrac{1}{c}\\right)^6$ is the product of these, or $\\boxed{120}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $3^{x+8}=9^{x+3}$, what is $x$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We write $9$ as a power of $3$, and we have $9^{x+3}=(3^2)^{x+3}=3^{2(x+3)} = 3^{2x+6}$.  Therefore, the original equation is $3^{x+8} = 3^{2x+6}$. Equating the two exponents, we get $x+8=2x+6$. Solving, we get that $x=\\boxed{2}$."
-}

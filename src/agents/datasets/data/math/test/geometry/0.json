@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$, shown below, $\\cos{B}=\\frac{6}{10}$.  What is $\\tan{C}$?\n\n[asy]\ndraw((0,0)--(10,0)--(3.6,4.8)--cycle,black+linewidth(1));\ndraw(rightanglemark((0,0),(3.6,4.8),(10,0),20),black+linewidth(1));\nlabel(\"$C$\",(10,0),E);\nlabel(\"$A$\",(3.6,4.8),N);\nlabel(\"$B$\",(0,0),W);\nlabel(\"10\",(0,0)--(10,0),S);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Since $\\cos{B}=\\frac{6}{10}$, and the length of the hypotenuse is $BC=10$, $AB=6$.  Then, from the Pythagorean Theorem, we have \\begin{align*}AB^2+AC^2&=BC^2 \\\\ \\Rightarrow\\qquad{AC}&=\\sqrt{BC^2-AB^2} \\\\ &=\\sqrt{10^2-6^2} \\\\ &=\\sqrt{64} \\\\ &=8.\\end{align*}Therefore, $\\tan{C}=\\frac{AB}{AC}=\\frac{6}{8} = \\boxed{\\frac34}$."
-}

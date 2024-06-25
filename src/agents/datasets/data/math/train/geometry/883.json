@@ -1,6 +1,0 @@
-{
-    "problem": "Medians $\\overline{DP}$ and $\\overline{EQ}$ of $\\triangle DEF$ are perpendicular.  If $DP= 18$ and $EQ = 24$, then what is ${DF}$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]\npair D,EE,F,P,Q,G;\n\nG = (0,0);\nD = (1.2,0);\nP= (-0.6,0);\nEE = (0,1.6);\nQ = (0,-0.8);\nF = 2*Q - D;\ndraw(P--D--EE--F--D);\ndraw(EE--Q);\nlabel(\"$D$\",D,E);\nlabel(\"$P$\",P,NW);\nlabel(\"$Q$\",Q,SE);\nlabel(\"$E$\",EE,N);\nlabel(\"$F$\",F,SW);\ndraw(rightanglemark(Q,G,D,3.5));\nlabel(\"$G$\",G,SW);\n[/asy]\n\nPoint $G$ is the centroid of $\\triangle DEF$, so $DG:GP = EG:GQ = 2:1$.  Therefore, $DG = \\frac23(DP) = 12$ and $QG = \\frac13(EQ) =8$, so applying the Pythagorean Theorem to $\\triangle QGD$ gives us $QD = \\sqrt{QG^2 + GD^2} = \\sqrt{64+144} = \\sqrt{16(4+9)} = 4\\sqrt{13}$, which means $DF = 2 QD = \\boxed{8\\sqrt{13}}$."
-}

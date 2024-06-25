@@ -1,6 +1,0 @@
-{
-    "problem": "What integer $n$ satisfies $0\\le n<{101}$ and $$-314159\\equiv n\\pmod {101}~?$$",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Notice that $100\\equiv-1\\pmod{101}$.  Therefore  \\[310000\\equiv-3100\\equiv31\\pmod{101}.\\]Likewise  \\[4100\\equiv-41\\pmod{101}.\\]Combining these lets us write  \\[314159\\equiv 31-41+59\\equiv49\\pmod{101}.\\]However we started with a negative.  We actually want to compute \\[-314159\\equiv -49\\equiv \\boxed{52}\\pmod{101}.\\]"
-}

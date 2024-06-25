@@ -1,6 +1,0 @@
-{
-    "problem": "Lulu has a quadratic of the form $x^2+bx+44$, where $b$ is a specific positive number. Using her knowledge of how to complete the square, Lulu is able to rewrite this quadratic in the form $(x+m)^2+8$. What is $b$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The expansion of $(x+m)^2+8$ is $x^2+2mx+m^2+8$, which has a constant term of $m^2+8$. This constant term must be equal to the constant term of the original quadratic, so $m^2+8 = 44$, which yields the possibilities $m=6$ and $m=-6$.\n\nIf $m=6$, then $(x+m)^2+8 = x^2+12x+44$. If $m=-6$, then $(x+m)^2+8 = x^2-12x+44$. Of these two possibilities, only the first conforms to our information that $b$ was a positive number. So, the original quadratic was $x^2+12x+44$, giving $b=\\boxed{12}$."
-}

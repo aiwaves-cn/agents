@@ -1,6 +1,0 @@
-{
-    "problem": "If $x-y=6$ and $x^2+y^2=24$, find $x^3-y^3$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, we note  \\[x^3-y^3 = (x-y)(x^2 +xy +y^2) = 6(24+xy),\\] so we just need to find $xy$ now.  Squaring both sides of $x-y=6$ gives  $$x^2 - 2xy + y^2 = 36.$$ Since $x^2 + y^2 = 24$, we have $24-2xy = 36$, so $xy = -6$, from which we have  \\[x^3-y^3 = 6(24 +xy) = 6(24 - 6) = 6(18) = \\boxed{108}.\\]"
-}

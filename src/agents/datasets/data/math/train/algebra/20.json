@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers are solutions to the equation $$(x-2)^{(25-x^2)}=1?$$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We need some basic facts from number theory: $a^0 = 1$ for any $a,$ $1^b = 1$ for any $b,$ and $(-1)^c = 1$ if $c$ is an even integer. Unless the base is a complex number (which is excluded since we are looking for integer solutions), there are no other ways to get an RHS of $1.$ Thus, either the exponent is zero $($giving the equation $25 - x^2 = 0),$ the base is $1$ $($giving $x -2 = 1),$ or the base is $-1$ and the exponent is even $($giving the simultaneous equations $x - 2 = -1$ and $25 - x^2 = 2n$ for some integer $n).$ Solving the first equation gives $x = \\pm 5,$ and solving the second gives $x = 3.$ The third equation implies that $x = 1,$ in which case $25 - x^2 = 24$ is indeed even, so $x = 1$ is a valid solution. In all, there are $\\boxed{4}$ integer solutions."
-}

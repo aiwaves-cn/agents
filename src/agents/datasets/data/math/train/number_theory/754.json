@@ -1,6 +1,0 @@
-{
-    "problem": "Find the terminating decimal expansion of $\\frac{11}{125}$.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Terminating decimals can be expressed as $\\frac{a}{10^b}$. So, we try to get our fraction in this form: $$\\frac{11}{125} = \\frac{11}{5^3} = \\frac{11}{5^3} \\cdot \\frac{2^3}{2^3} = \\frac{11\\cdot2^3}{10^3} = \\frac{88}{1000} = \\boxed{0.088}.$$"
-}

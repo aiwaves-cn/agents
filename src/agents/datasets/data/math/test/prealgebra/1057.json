@@ -1,6 +1,0 @@
-{
-    "problem": "How many unique values can be created by forming the fraction $\\frac{x}{y}$ where $x$ is either 4, 8, or 12 and $y$ is either 4, 8, or 12?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let's write down all the possibilities, simplify the resulting fractions, and count the number of values we can achieve. \\[\n\\frac{4}{4}=1 \\qquad \\frac{4}{8}=\\frac{1}{2}\\qquad \\frac{4}{12} =\\frac{1}{3}\n\\]\\[\n\\frac{8}{4} = 2 \\qquad \\frac{8}{8}=1 \\qquad \\frac{8}{12}=\\frac{2}{3}\n\\]\\[\n\\frac{12}{4} = 3 \\qquad \\frac{12}{8} =\\frac{3}{2} \\qquad \\frac{12}{12}=1.\n\\]We can get 1, 2, 3, 1/2, 3/2, 1/3 and 2/3, for a total of $\\boxed{7}$ different values."
-}

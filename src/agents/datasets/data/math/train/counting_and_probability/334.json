@@ -1,6 +1,0 @@
-{
-    "problem": "No two students in Mrs. Vale's 26-student mathematics class have the same two initials. Each student's first name and last name begin with the same letter. If the letter ``Y'' is considered a vowel, what is the probability of randomly picking a student whose initials are vowels? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The students' initials are AA, BB, CC, $\\cdots$, ZZ, representing all 26 letters. The vowels are A, E, I, O, U, and Y, which are 6 letters out of the possible 26. So the probability of picking a student whose initials are vowels is $\\frac{6}{26}=\\boxed{\\frac{3}{13}}$."
-}

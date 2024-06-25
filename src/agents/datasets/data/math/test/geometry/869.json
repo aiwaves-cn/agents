@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, the centre of the circle is $O.$ The area of the shaded region is $20\\%$ of the area of the circle. What is the value of $x?$ [asy]\nfilldraw(Circle((0,0),1),gray(0.8),linewidth(1));\nfilldraw((cos(pi/5),sin(pi/5))--(0,0)--(cos(-pi/5),sin(-pi/5))..(-1,0)..cycle,white,linewidth(1));\nlabel(\"$O$\", (0,0), W);\nlabel(\"$x^\\circ$\", (0.1,0), E);\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since the shaded area is $20\\%$ of the area of the circle, then the central angle should be $20\\%$ of the total possible central angle.\n\nThus, $x^\\circ = \\frac{20}{100}\\cdot 360^\\circ$ or $x = \\frac{1}{5}\\cdot 360=\\boxed{72}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "One line is parameterized by\n\\[\\begin{pmatrix} -1 + s \\\\ 3 - ks \\\\ 1 + ks \\end{pmatrix}.\\]Another line is parameterized by\n\\[\\begin{pmatrix} t/2 \\\\ 1 + t \\\\ 2 - t \\end{pmatrix}.\\]If the lines are coplanar (i.e. there is a plane that contains both lines), then find $k.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "First, we check if the two lines can intersect.  For the two lines to intersect, we must have\n\\begin{align*}\n-1 + s &= \\frac{t}{2}, \\\\\n3 - ks &= 1 + t, \\\\\n1 + ks &= 2 - t.\n\\end{align*}Adding the second equation and third equation, we get $4 = 3,$ contradiction.  Thus, the two lines cannot intersect.\n\nSo for the two lines to be coplanar, the only other possibility is that they are parallel.  For the two lines to be parallel, their direction vectors must be proportional.  The direction vectors of the lines are $\\begin{pmatrix} 1 \\\\ -k \\\\ k \\end{pmatrix}$ and $\\begin{pmatrix} 1/2 \\\\ 1 \\\\ -1 \\end{pmatrix},$ respectively.  These vectors are proportional when\n\\[2 = -k.\\]Hence, $k = \\boxed{-2}.$"
-}

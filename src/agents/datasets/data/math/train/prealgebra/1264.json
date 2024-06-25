@@ -1,6 +1,0 @@
-{
-    "problem": "An ordinary $6$-sided die has a number on each face from $1$ to $6$ (each number appears on one face). How many ways can I paint two faces of a die red, so that the numbers on the red faces don't add up to $7$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "I can pick one face in $6$ ways. Then, I have $4$ choices for the second face, because I can't pick the first face again, nor can I pick the unique face with which it makes $7$. So I seem to have $6\\cdot 4 = 24$ choices -- but this actually overcounts the possible results by a factor of $2$, because in the end, it doesn't matter which of the two red faces I chose first and which I chose second. So the actual number of possibilities is $24/2$, or $\\boxed{12}$.\n\nThere's another neat way to see this! If you have an ordinary die, you may notice that the pairs of numbers which add up to $7$ are all on pairs of opposite faces. (For example, the $1$ is opposite the $6$.) This means that in order to paint two faces that don't add up to $7$, I must choose any two faces that aren't opposite. Two faces that aren't opposite must share an edge, and there is exactly one pair of faces meeting along each edge of the die. Since a cube has $12$ edges, there are $\\boxed{12}$ choices I can make."
-}

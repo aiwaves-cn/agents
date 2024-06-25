@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify the following expression: $$\\sqrt{\\sqrt{4096} + \\sqrt[3]{4096} + \\sqrt[4]{4096}}$$",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We note that $4096=2^{12}$, so the expression becomes $$\\sqrt{\\sqrt{2^{12}} + \\sqrt[3]{2^{12}} + \\sqrt[4]{2^{12}}} = \\sqrt{2^6 + 2^4 + 2^3} = \\sqrt{64+16+8} = \\sqrt{88}$$\n\nFactoring out $4$ from $88$ gives $\\boxed{2\\sqrt{22}}$, which cannot be simplified further."
-}

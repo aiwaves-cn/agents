@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f$, $g$, and $h$ be polynomials such that $h(x) = f(x)\\cdot g(x)$.  If the constant term of $f(x)$ is $-4$ and the constant term of $h(x)$ is 3, what is $g(0)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Because $h(x) = f(x)\\cdot g(x)$, the constant term of $h$ equals the product of the constant terms of $f(x)$ and $g(x)$.  We are told that the constant terms of $h(x)$ and $f(x)$ are 3 and $-4$, respectively.  Let the constant term of $g(x)$ be $c$.  When we evaluate $g(0)$, all terms with $x$ in them equal 0, so we are left with the constant term, $c$. Therefore, $g(0) = c$.  So, we must have $3 = (-4)\\cdot c$, from which we find $c=\\boxed{-\\frac{3}{4}}$."
-}

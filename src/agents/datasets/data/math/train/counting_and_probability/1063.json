@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct sequences of four letters can be made from the letters in EQUALS if each sequence must begin with L, end with Q, and no letter can appear in a sequence more than once?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "The first letter, as stated, must be L, and the last must be Q. So the only choices are for the middle two letters. The second letter may be any remaining letter, namely E, U, A or S. Whichever letter we choose for it, for the third letter we must choose one of three remaining letters. So, there are $4 \\cdot 3 = \\boxed{12}$ sequences."
-}

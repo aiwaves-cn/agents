@@ -1,6 +1,0 @@
-{
-    "problem": "The product of two consecutive page numbers is $18{,}360.$ What is the sum of the two page numbers?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let the page numbers be $n$ and $n + 1.$ Then, the problem can be modeled by the equation $n(n+1) = 18360.$ We can rewrite the equation as $n^2 + n - 18360=0.$\n\nNow using the quadratic formula, we find that $$n = \\frac{-1 \\pm \\sqrt{1 + 4\\cdot 18360}}{2}.$$ So, $n = 135.$ Hence, $n + (n + 1) = \\boxed{271}.$\n\nThis equation can be factored as well, but that would not save much time. The best way to solve this quickly would be to notice that $18360$ falls between $135^2=18225$ and $136^2=18496,$ so since we know that $n$ is an integer, we can guess that $n = 135.$ Plugging it back into the equation, we see that it works, so $n + (n + 1) = \\boxed{271}.$"
-}

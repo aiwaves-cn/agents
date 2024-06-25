@@ -1,6 +1,0 @@
-{
-    "problem": "How many integer side lengths are possible to complete a triangle in which the other sides measure 6 units and 3 units?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "By the Triangle Inequality, the unknown side must measure less than $6+3=9$ units. Also, the length of that side plus 3 units must be more than 6 units, so the unknown length must be more than 3 units. There are $\\boxed{5}$ possible integer side lengths greater than 3 units and less than 9 units."
-}

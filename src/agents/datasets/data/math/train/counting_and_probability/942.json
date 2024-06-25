@@ -1,6 +1,0 @@
-{
-    "problem": "How many different positive integers can be represented as a difference of two distinct members of the set $\\{1, 2, 3, \\ldots, 14, 15, 16 \\}?$",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We can see that the maximum positive difference is $16 - 1 = 15.$ Some quick calculations show that we can get all values between $1$ and $15.$ \\begin{align*}\n16 - 1 &= 15 \\\\\n16 - 2 &= 14 \\\\\n16 - 3 &= 13 \\\\\n& \\ \\,\\vdots \\\\\n16-14&=2\\\\\n16-15&=1\n\\end{align*} Therefore there are $\\boxed{15}$ different positive integers that can be represented as a difference of two distinct members of the set $\\{1, 2, 3, \\ldots, 14, 15, 16 \\}.$"
-}

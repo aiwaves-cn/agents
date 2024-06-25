@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{A}$ and $\\mathbf{B}$ be $2 \\times 2$ matrices such that $\\det \\mathbf{A} = -1$ and $\\det \\mathbf{B} = 3.$  Find $\\det (3 \\mathbf{A} \\mathbf{B}).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "First,\n\\[\\det (\\mathbf{A} \\mathbf{B}) = (\\det \\mathbf{A})(\\det \\mathbf{B}) = (-1)(3) = -3.\\]In general, $\\det (k \\mathbf{M}) = k^2 \\det \\mathbf{M}.$  Therefore,\n\\[\\det (3 \\mathbf{A} \\mathbf{B}) = 3^2 \\cdot (-3) = \\boxed{-27}.\\]"
-}

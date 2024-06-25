@@ -1,6 +1,0 @@
-{
-    "problem": "From a group of six students, how many different four-student committees can be chosen?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{n}{k}=\\frac{n!}{k!(n-k)!}$ ways to choose $k$ objects from a group of $n$ distinct objects, so $\\binom{6}{4}=\\frac{6!}{4!2!}=\\frac{6\\cdot5}{2}=\\boxed{15}$ four-member committees may be formed from a group of six students."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "When the expression $2005^2 + 2005^0 + 2005^0 + 2005^5$ is evaluated, what are the final two digits?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "First, $2005^2 = 4020025$, so the last two digits of $2005^2$ are 25.\n\nWe need to look at $2005^5$, but since we only need the final two digits, we don't actually have to calculate this number entirely.\n\nConsider $2005^3 = 2005^2 \\times 2005 = 4020025 \\times 2005$.  When we carry out this multiplication, the last two digits of the product will only depend on the last two digits of the each of the two numbers being multiplied (try this by hand!), so the last two digits of $2005^3$ are the same as the last two digits of $25 \\times 5 = 125$, ie. are 25.\n\nSimilarly, to calculate $2005^4$, we multiply $2005^3$ (which ends in 25) by $2005$, so by the same reasoning $2005^4$ ends in 25. Similarly, $2005^5$ ends in 25.\n\nTherefore, $2005^2$ and $2005^5$ both end in 25.\n\nAlso, $2005^0 = 1$, so the expression overall is equal to $$\\ldots 25 + 1 + 1 + \\ldots 25 = \\ldots 52.$$Therefore, the final two digits are $\\boxed{52}$."
-}

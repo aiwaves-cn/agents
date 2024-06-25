@@ -1,6 +1,0 @@
-{
-    "problem": "Two vertices of an obtuse triangle are $(6,4)$ and $(0,0)$. The third vertex is located on the negative branch of the $x$-axis. What are the coordinates of the third vertex if the area of the triangle is 30 square units?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "We know that, for a triangle, area = 1/2(base)(height), which equals 30 in this problem. We also know that the height of the triangle is 4 if we use the horizontal leg on the x-axis as the base. Now we can plug this information into the equation to find the length of the base that runs along the x-axis. The equation is $(1/2)(b)(4) = 30$, so $b = 30/2 = 15$. Since the 3rd vertex is on the x-axis we know that it extends straight left 15 units from the vertex at (0, 0), bringing us to the point $\\boxed{(-15, 0)}$."
-}

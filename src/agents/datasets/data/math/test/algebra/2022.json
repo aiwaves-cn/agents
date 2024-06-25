@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)=\\sqrt{-x}$, and $q(x)=8x^2+10x-3$. The domain of $p(q(x))$ can be written in the form $a\\le x \\le b$. Find $b-a$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have $p(q(x))=p(8x^2+10x-3)=\\sqrt{-(8x^2+10x-3)}=\\sqrt{-8x^2-10x+3}$. The input of this function is restricted since the quantity inside the square root cannot be negative. So we have  \\begin{align*}\n-8x^2-10x+3&\\ge 0\\\\\n8x^2+10x-3&\\le 0\\\\\n\\end{align*}Factoring by trial and error gives  $$ (4x-1)(2x+3)\\le 0$$Thus the roots of $8x^2+10x-3$ are $\\frac{1}{4}$ and $-\\frac{3}{2}$. Since we know the function $ 8x^2+10x-3$ is a parabola that opens up, its value is negative between the roots. Thus, our inequality is satisfied when $-\\frac{3}{2}\\le x \\le \\frac{1}{4}$. Thus $a=-\\frac{3}{2}$, $b=\\frac{1}{4}$, and $b-a=\\frac{1}{4}-\\left(-\\frac{3}{2}\\right)=\\frac{1}{4}+\\frac{6}{4}=\\boxed{\\frac{7}{4}}$."
-}

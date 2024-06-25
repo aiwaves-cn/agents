@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to put 4 balls in 3 boxes if the balls are not distinguishable and neither are the boxes?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Since the balls and boxes are indistinguishable, we only need to consider the number of the balls in boxes without considering order.  The arrangements are (4,0,0),(3,1,0),(2,2,0),(2,1,1), for a total of $\\boxed{4}$ ways."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Each of the digits 3, 4, 6, 7, 8, and 9 is used once and only once to form a six-digit integer. What is the largest six-digit multiple of 4 that can be formed?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Divisibility by 4 depends only on the last two digits, since 100 is divisible by 4.  Therefore, to form the largest possible multiple of 4, we must use the smallest pair of digits which form a multiple of 4 as the last two digits and place the remaining digits in descending order in the first four positions.  Neither 43 nor 34 is a multiple of 4, but the next smallest pair of digits does form a multiple of 4, namely 36.  Therefore, the smallest multiple of 4 using the given digits is $\\boxed{987,\\!436}$."
-}

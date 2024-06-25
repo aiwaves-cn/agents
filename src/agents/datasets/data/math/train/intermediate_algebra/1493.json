@@ -1,6 +1,0 @@
-{
-    "problem": "A function $f$ is defined by $f(z) = (4 + i) z^2 + \\alpha z + \\gamma$ for all complex numbers $z$, where $\\alpha$ and $\\gamma$ are complex numbers and $i^2 = - 1$. Suppose that $f(1)$ and $f(i)$ are both real. What is the smallest possible value of $| \\alpha | + |\\gamma |$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $\\alpha = a + bi$ and $\\gamma = c + di,$ where $a,$ $b,$ $c,$ and $d$ are real numbers.  Then\n\\begin{align*}\nf(1) &= (4 + i) + \\alpha + \\gamma = (a + c + 4) + (b + d + 1)i, \\\\\nf(i) &= (4 + i)(-1) + \\alpha i + \\gamma = (-b + c - 4) + (a + d - 1)i.\n\\end{align*}Since $f(1)$ and $f(i)$ are both real, $b + d + 1 = 0$ and $a + d - 1 = 0,$ so $a = -d + 1$ and $b = -d - 1.$  Then\n\\begin{align*}\n|\\alpha| + |\\gamma| &= \\sqrt{a^2 + b^2} + \\sqrt{c^2 + d^2} \\\\\n&= \\sqrt{(-d + 1)^2 + (-d - 1)^2} + \\sqrt{c^2 + d^2} \\\\\n&= \\sqrt{2d^2 + 2} + \\sqrt{c^2 + d^2} \\\\\n&\\ge \\sqrt{2}.\n\\end{align*}Equality occurs when $a = 1,$ $b = -1,$ $c = 0,$ and $d = 0.$  Therefore, the minimum value is $\\boxed{\\sqrt{2}}.$"
-}

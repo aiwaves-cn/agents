@@ -1,6 +1,0 @@
-{
-    "problem": "Cameron writes down the smallest positive multiple of 20 that is a perfect square, the smallest positive multiple of 20 that is a perfect cube, and all the multiples of 20 between them.  How many integers are in Cameron's list?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "A perfect square that is a multiple of $20 = 2^2 \\cdot 5^1$ must be a multiple of $2^2 \\cdot 5^2 = 100$.  A perfect cube that is a multiple of 20 must be a multiple of $2^3 \\cdot 5^3 = 1000$.  Our goal is thus to count the multiples of 20 from 100 to 1000 inclusive: $$ 100 \\le 20n \\le 1000. $$Dividing this entire inequality by 20 we get $5 \\le n \\le 50$, so there are $50 - 5 + 1 = \\boxed{46}$ integers in Cameron's list."
-}

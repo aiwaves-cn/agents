@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the point $( -5, 0, -8 )$ in rectangular coordinates to cylindrical coordinates.  Enter your answer in the form $(r,\\theta,z),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that $r = \\sqrt{(-5)^2 + 0^2} = 5.$  We want $\\theta$ to satisfy\n\\begin{align*}\n-5 &= 5 \\cos \\theta, \\\\\n0 &= 5 \\sin \\theta.\n\\end{align*}Thus, $\\theta = \\pi,$ so the cylindrical coordinates are $\\boxed{(5,\\pi,-8)}.$"
-}

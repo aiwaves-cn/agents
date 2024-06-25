@@ -1,6 +1,0 @@
-{
-    "problem": "What is the total surface area, in square inches, of a cube with a volume of $1$ cubic foot?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Recall that  $$1 \\mbox{ foot} = 12 \\mbox{ inches}$$\n\nHence $$1 \\mbox{ foot}^2 = 12^2 \\mbox{ inches}^2 = 144 \\mbox{ inches}^2$$\n\nFinally, remember the formula $V = l \\times w \\times h$, that is, Volume is the product of length, width, and height.\n\nThe length, height, and width for a cube are equal, so the cube we are given has sides of length $1 \\mbox{ feet}$. Now, a cube has 6 faces, so the surface area of our cube is $$6 \\times (1 \\mbox{ foot} \\times 1 \\mbox{ foot}) = 6 \\mbox{ feet}^2$$\n\nNow, convert: $$ 6 \\mbox{ feet}^2 \\frac{144 \\mbox{ inches}^2}{1 \\mbox{ foot}^2} = 864 \\mbox{ inches}^2$$\n\nSo, our final answer is $\\boxed{864 \\mbox{ inches}^2}$"
-}

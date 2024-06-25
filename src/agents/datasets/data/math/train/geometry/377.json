@@ -1,6 +1,0 @@
-{
-    "problem": "We have a triangle $\\triangle ABC$ and a point $K$ on $BC$ such that $AK$ is an altitude of $\\triangle ABC$. If $AC = 10,$ $BK = 7$, and $BC = 13,$ then what is the area of $\\triangle ABC$?",
-    "level": "Level ?",
-    "type": "Geometry",
-    "solution": "First, we sketch! [asy]\npair A, B, C, K;\nA = (0, 8);\nB = (-7, 0);\nC = (6, 0);\nK = (0, 0);\ndraw(A--B--C--cycle);\ndraw(A--K);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$K$\", K, NE);\nlabel(\"10\", C--A, NE);\nlabel(\"7\", B--K, N);\nlabel(\"13\", B--C, S);\ndraw(rightanglemark(A,K,B,10));\n[/asy] We now see that $CK = BC - BK = 6.$ That means $\\triangle AKC$ is a $3:4:5$ right triangle, so $AK = 8.$ At this point, we can see that the area of $\\triangle ABC$ is $\\frac{1}{2} \\cdot AK \\cdot BC = \\frac{1}{2} \\cdot 8 \\cdot 13 = \\boxed{52}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Add $1_2 + 11_2 + 111_2 + 1111_2.$ Express your answer in base 2.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can line up the numbers and add just as we do in base 10.  For example, when we sum the digits in the rightmost column, we get a sum of 4. Since 4 divided by 2 gives a quotient of 2 and a remainder of 0, we leave 0 as the rightmost digit of the sum and carry 2 to the next column. Continuing in this way, we find $$\\begin{array}{c@{}c@{}c@{}c@{}c@{}c}\n& & 1 & 1 & 1 & 1_2 \\\\\n& & & 1 & 1 & 1_2 \\\\\n& & & & 1 & 1_2 \\\\\n& + & & & & 1_2 \\\\\n\\cline{2-6}\n& 1 & 1 & 0 & 1 & 0_2, \\\\\n\\end{array}$$so the sum is $\\boxed{11010_2}$."
-}

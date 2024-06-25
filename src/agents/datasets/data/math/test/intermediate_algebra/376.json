@@ -1,6 +1,0 @@
-{
-    "problem": "Find the eighth term of the sequence $1440, 1716, 1848, \\ldots$, whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If $a_n =an + b$ and $b_n = cn + d$ are two arithmetic sequences, then their term-wise product takes the form \\[a_nb_n = (an+b)(cn+d) = An^2 + Bn + C,\\]where $A, B, C$ are constants. Therefore, some sequence $x_n = An^2 + Bn + C$ has $x_0 = 1440,$ $x_1 = 1716,$ and $x_2 = 1848.$ Then we have the equations \\[\\begin{aligned} C &= 1440, \\\\ A+B+C&=1716,\\\\  4A+2B+C&=1848. \\end{aligned}\\]Subtracting $C=1440$ from the second and third equations, we have $A+B=276$ and $4A+2B=408,$ or $2A+B=204.$ Then \\[A = (2A+B) - (A+B) = 204 - 276 = -72,\\]and so $B = 276-A=348.$ We conclude that the given sequence has the general formula \\[x_n = -72n^2 + 348n + 1440.\\]Then the eighth term is \\[\\begin{aligned} x_7 &= -72 \\cdot 7^2 + 348 \\cdot 7 + 1440 = \\boxed{348}. \\end{aligned}\\]"
-}

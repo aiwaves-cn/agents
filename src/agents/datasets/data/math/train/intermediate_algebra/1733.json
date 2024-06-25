@@ -1,6 +1,0 @@
-{
-    "problem": "Each of $a_1,$ $a_2,$ $\\dots,$ $a_{100}$ is equal to $1$ or $-1.$  Find the minimum positive value of\n\\[\\sum_{1 \\le i < j \\le 100} a_i a_j.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $S$ denote the given sum.  Then\n\\begin{align*}\n2S &= (a_1 + a_2 + \\dots + a_{100})^2 - (a_1^2 + a_2^2 + \\dots + a_{100}^2) \\\\\n&= (a_1 + a_2 + \\dots + a_{100})^2 - 100.\n\\end{align*}To find the minimum positive value of $2S,$ we want $(a_1 + a_2 + \\dots + a_{100})^2$ to be as close to 100 as possible (while being greater than 100).  Since each $a_i$ is $1$ or $-1,$ $a_1 + a_2 + \\dots + a_{100}$ must be an even integer.  Thus, the smallest we could make $(a_1 + a_2 + \\dots + a_{100})^2$ is $12^2 = 144.$  This is achievable by setting 56 of the $a_i$ to be equal to $1,$ and the remaining 44 to be equal to $-1.$\n\nThus, the minimum positive value of $S$ is $\\frac{144 - 100}{2} = \\boxed{22}.$"
-}

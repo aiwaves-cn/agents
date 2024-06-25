@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $f(x)$ is an invertible function, and suppose that $f(2)=f^{-1}(2)=4$.\n\nWhat is the value of $f(f(2))$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $f(2)=f^{-1}(2)$, we can substitute $f^{-1}(2)$ freely for $f(2)$. Therefore, $f(f(2)) = f(f^{-1}(2))$, which is $\\boxed{2}$ (since $f(f^{-1}(x))=x$ by definition).\n\nNotice that we didn't actually need the value $4$ given in the problem."
-}

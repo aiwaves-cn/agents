@@ -1,6 +1,0 @@
-{
-    "problem": "For how many values of the digit $A$ is it true that $63$ is divisible by $A$ and $273{,}1A2$ is divisible by $4$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "In order for the number $273{,}1A2$ to be divisible by $4,$ the last two digits must be divisible by $4.$ The multiples of $4$ less than $100$ that end with the digit $2$ are $12,$ $32,$ $52,$ $72,$ and $92.$ This gives us five possibilities for $A$: $1,$ $3,$ $5,$ $7,$ and $9.$\n\nOf these, all but the number $5$ are divisors of $63,$ so we have that $A$ could be $1,$ $3,$ $7,$ or $9.$ Therefore, there are $\\boxed{4}$ values of $A$ such that $63$ is divisible by $A$ and $273{,}1A2$ is divisible by 4."
-}

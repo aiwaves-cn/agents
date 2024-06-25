@@ -1,6 +1,0 @@
-{
-    "problem": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: $i^2 = -1$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The real numbers in the sum follow the pattern\n\\[-2 + 4 - 6 + 8 - 10 + 12 + \\dotsb.\\]Placing the numbers in pairs, we get\n\\[(-2 + 4) + (-6 + 8) + (-10 + 12) + \\dotsb = 2 + 2 + 2 + \\dotsb.\\]Thus, we want 24 pairs.  The second number in the $n$th pair is $4n,$ which means the last real term is $96 = 96i^{96}.$  Thus, $n$ is either 96 or 97.\n\nUp to $96i^{96},$ the sum of the imaginary numbers is\n\\[i - 3i + 5i - 7i + 9i - 11i + \\dots + 93i - 95i.\\]Similarly, if we pair these numbers, we get\n\\[(i - 3i) + (5i - 7i) + (9i - 11i) + \\dots + (93i - 95i) = -2i - 2i - 2i - \\dots - 2i = -48i.\\]Adding $97i^{97} = 97i,$ we get $97i - 48i = 49i.$  Hence, $n = \\boxed{97}.$"
-}

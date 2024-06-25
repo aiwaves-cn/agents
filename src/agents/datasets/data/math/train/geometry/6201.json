@@ -1,6 +1,0 @@
-{
-    "problem": "A triangle is inscribed in a circle. The vertices of the triangle divide the circle into three arcs of lengths 3, 4, and 5. What is the area of the triangle?\n$\\mathrm{(A) \\ 6 } \\qquad \\mathrm{(B) \\frac{18}{\\pi^2} } \\qquad \\mathrm{(C) \\frac{9}{\\pi^2}(\\sqrt{3}-1) } \\qquad \\mathrm{(D) \\frac{9}{\\pi^2}(\\sqrt{3}-1) } \\qquad \\mathrm{(E) \\frac{9}{\\pi^2}(\\sqrt{3}+3) }$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The three arcs make up the entire circle, so the circumference of the circle is $3+4+5=12$ and the radius is $\\frac{12}{2\\pi}=\\frac{6}{\\pi}$. Also, the lengths of the arcs are proportional to their corresponding central angles. Thus, we can write the values of the arcs as $3\\theta$, $4\\theta$, and $5\\theta$ for some $\\theta$. By Circle Angle Sum, we obtain $3\\theta+4\\theta+5\\theta=360$. Solving yields $\\theta=30$. Thus, the angles of the triangle are $90$, $120$, and $150$. Using $[ABC]=\\frac{1}{2}ab\\sin{C}$, we obtain $\\frac{r^2}{2}(\\sin{90}+\\sin{120}+\\sin{150})$. Substituting $\\frac{6}{\\pi}$ for $r$ and evaluating yields $\\boxed{\\frac{9}{\\pi^2}(\\sqrt{3}+3)}$."
-}

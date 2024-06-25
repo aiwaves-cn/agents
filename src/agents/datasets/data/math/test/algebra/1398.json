@@ -1,6 +1,0 @@
-{
-    "problem": "The difference of the roots of the quadratic equation $x^2 + bx + c = 0$ is $|b - 2c|$. If $c \\neq 0$, then find $c$ in terms of $b$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "By the quadratic formula, $x = \\frac{-b + \\sqrt{b^2 - 4c}}{2}, \\frac{-b - \\sqrt{b^2 - 4c}}{2}$. The difference of these is $\\frac{2\\sqrt{b^2 - 4c}}{2} = \\sqrt{b^2 - 4c}$. Setting this equal to $|b - 2c|$, it follows that (after squaring) $b^2 - 4c = (b-2c)^2 = b^2 + 4c^2 - 4bc$. Thus $$0 = 4c^2 + 4c - 4bc = 4c(c - b + 1).$$As $c \\neq 0$, it follows that $c = \\boxed{b - 1}$."
-}

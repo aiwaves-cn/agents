@@ -1,6 +1,0 @@
-{
-    "problem": "A line is expressed in the form\n\\[\\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} -2 \\\\ 8 \\end{pmatrix} \\right) = 0.\\]The equation of the line can be expressed in the form $y = mx + b.$  Enter the ordered pair $(m,b).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Expanding, we get\n\\[\\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} -2 \\\\ 8 \\end{pmatrix} \\right) = \\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix} \\cdot \\begin{pmatrix} x + 2 \\\\ y - 8 \\end{pmatrix} = (x + 2) + 3(y - 8) = 0.\\]Solving for $y,$ we find\n\\[y = -\\frac{1}{3} x + \\frac{22}{3}.\\]Thus, $(m,b) = \\boxed{\\left( -\\frac{1}{3}, \\frac{22}{3} \\right)}.$"
-}

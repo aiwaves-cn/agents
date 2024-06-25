@@ -1,6 +1,0 @@
-{
-    "problem": "Let $w,$ $x,$ $y,$ and $z$ be nonnegative numbers whose sum is 100.  Find the largest possible value of\n\\[wx + xy + yz.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\[wx + xy + yz \\le wx + xy + yz + zw = (w + y)(x + z).\\]By AM-GM,\n\\[(w + y)(x + z) \\le \\left( \\frac{(w + y) + (x + z)}{2} \\right)^2 = 2500.\\]Equality occurs when $w = x = 50$ and $y = z = 0,$ so the largest possible value is $\\boxed{2500}.$"
-}

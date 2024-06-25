@@ -1,6 +1,0 @@
-{
-    "problem": "Each block on the grid shown in the Figure is 1 unit by 1 unit.  Suppose we wish to walk from $A$ to $B$ via a 7 unit path, but we have to stay on the grid -- no cutting across blocks.  How many different paths can we take?[asy]size(3cm,3cm);int w=5;int h=4;int i;for (i=0; i<h; ++i){draw((0,i) -- (w-1,i));}for (i=0; i<w; ++i){draw((i, 0)--(i,h-1));}label(\"B\", (w-1,h-1), NE);label(\"A\", (0,0), SW);[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We know that we must take a 7 unit path.  If we look at the grid a little more carefully, we can see that our path must consist of 4 steps to the right and 3 steps up, and we can take those steps in any order.  So in order to specify a path, we must choose 3 of our 7 steps to be `up' (and the other 4 steps will thus be `right').  Hence the number of paths is $$ \\binom{7}{3} = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} = \\boxed{35}. $$"
-}

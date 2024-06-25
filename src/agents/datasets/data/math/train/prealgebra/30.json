@@ -1,6 +1,0 @@
-{
-    "problem": "There are four positive integers that are divisors of each number in the list $$36, 72, -12, 114, 96.$$Find the sum of these four positive integers.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We will begin by finding all the positive factors of $-12$, which are the same as the positive factors of $12$. The positive factors of 12 are 1, 2, 3, 4, 6, and 12. The four numbers we seek must be among these six numbers.\n\nNote that the number $4$ is not a factor of each number on the list, since dividing $114$ by $4$ gives a remainder of $2$. We also know that $12$ cannot be a factor of $114$, since dividing $114$ by $12$ gives a remainder of $6$. However, $6$ is a factor of each number on the list, since   \\begin{align*}\n36 &= 6 \\cdot 6\\\\\n72 &= 6 \\cdot 12\\\\\n-12 &= 6 \\cdot (-2)\\\\\n96 &= 6 \\cdot 16\\\\\n114 &= 6 \\cdot 19\n\\end{align*}Since $1$, $2$, $3$, and $6$ are factors of $6$, and $6$ is a factor of each number on the list, $1$, $2$, $3$, and $6$ must be a factor of each number on the list. So these are the four numbers we were looking for, and our final answer is $$1 + 2 + 3 + 6 = \\boxed{12}.$$"
-}

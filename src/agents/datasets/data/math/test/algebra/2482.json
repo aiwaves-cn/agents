@@ -1,6 +1,0 @@
-{
-    "problem": "What is the domain of the real-valued function $$q(x) = \\frac{\\sqrt{x}}{\\sqrt{1-x^2}}~?$$Express your answer as an interval or as a union of intervals.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "For $q(x)$ to be defined, the quantities under both radicals must be nonnegative, and the denominator must be nonzero. Thus we must have $x\\ge 0$ and $1-x^2>0$. The solution to the second inequality is $|x|<1$, so both inequalities are satisfied precisely when $x$ is in the interval $\\boxed{[0,1)}$."
-}

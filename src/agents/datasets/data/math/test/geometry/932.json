@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $ABC$, we have $\\angle BAC = 90^\\circ$ and $D$ is the midpoint of $\\overline{AC}$.  If $AB = 7$ and $BC = 25$, then what is $\\tan \\angle BDC$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]\npair A,B,C,D;\nA = (0,0);\nB = (0,7);\nC = (24,0);\nD = C/2;\ndraw(D--B--C--A--B);\ndraw(rightanglemark(D,A,B,40));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,N);\nlabel(\"$D$\",D,S);\nlabel(\"$C$\",C,SE);\n[/asy]\n\nSince $\\sin (180^\\circ - x) =\\sin x$ and $\\cos (180^\\circ - x) = -\\cos x$ for any angle, we have $$\\tan(180^\\circ - x) =\n\\frac{\\sin(180^\\circ - x)}{\\cos(180^\\circ - x)} = \\frac{\\sin x}{-\\cos x} = -\\tan x$$for any angle for which $\\tan x$ is defined.  Therefore, $\\tan\\angle BDC = -\\tan\\angle BDA$.\n\nFrom the Pythagorean Theorem, we have $AC = \\sqrt{BC^2 - BA^2} = 24$.  Since $D$ is the midpoint of $\\overline{AC}$, we have $AD = AC/2 =12$.  Therefore, we have $\\tan \\angle BDC = -\\tan \\angle BDA = -\\frac{BA}{AD} = \\boxed{-\\frac{7}{12}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\binom{15}{8}=6435$, $\\binom{16}{9}=11440$, and $\\binom{16}{10}=8008$, find $\\binom{15}{10}$.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We can use Pascal's identity $ \\binom{n-1}{k-1}+\\binom{n-1}{k}=\\binom{n}{k}$ to find $\\binom{15}{9}$.\n\n\\begin{align*}\n\\binom{15}{8}+\\binom{15}{9}&=\\binom{16}{9} \\rightarrow \\\\\n6435+\\binom{15}{9}&=11440 \\rightarrow \\\\\n\\binom{15}{9}&=5005\n\\end{align*}\n\nWe can use the identity again to find $\\binom{15}{10}$.\n\n\\begin{align*}\n\\binom{15}{9}+\\binom{15}{10}&=\\binom{16}{10} \\rightarrow \\\\\n5005+\\binom{15}{10}&=8008 \\rightarrow \\\\\n\\binom{15}{10}&=3003\n\\end{align*}\n\nTherefore, $\\binom{15}{10}=\\boxed{3003}$."
-}

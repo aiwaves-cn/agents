@@ -1,6 +1,0 @@
-{
-    "problem": "The set of points $(x,y,z)$ that satisfy\n\\[2x = 3y = -z\\]is a line.\n\nThe set of points $(x,y,z)$ that satisfy\n\\[6x = -y = -4z\\]is another line.\n\nFind the angle between these lines, in degrees.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "For the first line, let $t = 2x = 3y = -z.$  Then\n\\[\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} t/2 \\\\ t/3 \\\\ -t \\end{pmatrix} = \\frac{t}{6} \\begin{pmatrix} 3 \\\\ 2 \\\\ -6 \\end{pmatrix}.\\]Thus, the direction vector of the first line is $\\begin{pmatrix} 3 \\\\ 2 \\\\ -6 \\end{pmatrix}.$\n\nFor the second line, let $t = 6x = -y = -4z.$  Then\n\\[\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} t/6 \\\\ -t \\\\ -t/4 \\end{pmatrix} = \\frac{t}{12} \\begin{pmatrix} 2 \\\\ -12 \\\\ -3 \\end{pmatrix}.\\]Thus, the direction vector of the first line is $\\begin{pmatrix} 2 \\\\ -12 \\\\ -3 \\end{pmatrix}.$\n\nNote that\n\\[\\begin{pmatrix} 3 \\\\ 2 \\\\ -6 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ -12 \\\\ -3 \\end{pmatrix} = 0.\\]Hence, the angle between the lines is $\\boxed{90^\\circ}.$"
-}

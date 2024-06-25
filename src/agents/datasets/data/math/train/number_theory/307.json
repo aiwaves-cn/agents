@@ -1,6 +1,0 @@
-{
-    "problem": "It is now 12:00:00 midnight, as read on a 12-hour digital clock. In 122 hours, 39 minutes and 44 seconds the time will be $A:B:C$. What is the value of $A + B + C$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Since the clock reads the same time every 12 hours, we find the remainder after dividing 122 hours by 12 hours, which is 2 hours. Counting forward from midnight, the clock will read 2:39:44, so $A+B+C = \\boxed{85}$."
-}

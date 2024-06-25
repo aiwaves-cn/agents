@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x) = -7x^4 + 3x^3 + x - 5$, and $g(x)$ is a polynomial such that the degree of $f(x) + g(x)$ is 1, then what is the degree of $g(x)$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The degree of $f(x) + g(x)$ is 1, and the only way that $g(x)$ can cancel the term of $-7x^4$ in $f(x)$ is if $g(x)$ contains the term $7x^4$.  Therefore, the degree of $g(x)$ is $\\boxed{4}$."
-}

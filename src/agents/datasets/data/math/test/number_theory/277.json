@@ -1,6 +1,0 @@
-{
-    "problem": "The greatest common divisor of positive integers $m$ and $n$ is 6. The least common multiple of $m$ and $n$ is 126. What is the least possible value of $m+n$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since the GCD of $m$ and $n$ is 6, $m = 6x$ and $n = 6y$ for some integers $x$ and $y$.  Note that minimizing $m + n = 6x + 6y = 6(x + y)$ is equivalent to minimizing $x + y$.\n\nThe LCM of $m$ and $n$ is $126=2\\cdot3^2\\cdot7= 6 \\cdot 3 \\cdot 7$, so one of $x$ and $y$ is divisible by 3 and one is divisible by 7.  Then we can minimize $x + y$ by setting $x$ and $y$ to be 3 and 7 in some order.  Therefore, the least possible value of $m+n$ is $6(3 + 7) = \\boxed{60}$."
-}

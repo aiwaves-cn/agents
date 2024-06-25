@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer divisible by each of the first eight positive integers?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "To find the least common multiple of the positive integers less than or equal to 8, we prime factorize each of them. \\begin{align*}\n2 &= 2 \\\\\n3 &= 3 \\\\\n4 &= 2^2 \\\\\n5 &= 5 \\\\\n6 &= 2\\cdot 3 \\\\\n7 &= 7 \\\\\n8 &= 2^3.\n\\end{align*} Taking the maximum exponent for each prime, we find a least common multiple of $2^3\\cdot3\\cdot5\\cdot7=(2\\cdot5)\\cdot 2^2\\cdot3\\cdot7=10\\cdot84=\\boxed{840}$."
-}

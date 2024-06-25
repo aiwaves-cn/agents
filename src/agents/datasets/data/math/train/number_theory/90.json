@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when the product $1734\\times 5389 \\times 80,\\!607$ is divided by 10?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "The remainder when a number is divided by 10 is simply the units digit of that number. So we only look for the units digit of the product. With $1734\\times 5389$, $4\\times9=36$, so the result will have a units digit of 6. Then we multiply 6 by the units digit of $80,607$ and get $6\\times7=42$. That means the final product will have a units digit of $\\boxed{2}$."
-}

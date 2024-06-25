@@ -1,6 +1,0 @@
-{
-    "problem": "Expand the product ${(x+5)(x+7)}$.",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "When using the distributive property for the first time, we add the product of $x+5$ and $x$ to the product of $x+5$ and 7: \\begin{align*}\n(x+5)(x+7) &= (x+5) \\cdot x + (x+5) \\cdot 7\\\\\n&= x(x+5) + 7(x+5).\n\\end{align*}We use the distributive property again and combine like terms: \\begin{align*}\nx(x+5) + 7(x+5) &= x^2 + 5x + 7x+ 35\\\\\n&= \\boxed{x^2 + 12x + 35}.\n\\end{align*}"
-}

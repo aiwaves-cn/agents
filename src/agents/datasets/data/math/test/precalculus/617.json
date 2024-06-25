@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{M} = \\begin{pmatrix} 0 & -5 \\\\ -2 & 4 \\end{pmatrix}.$  There exist scalars $p$ and $q$ such that\n\\[\\mathbf{M}^2 = p \\mathbf{M} + q \\mathbf{I}.\\]Enter the ordered pair $(p,q).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since $\\mathbf{M}^2 = \\begin{pmatrix} 0 & -5 \\\\ -2 & 4 \\end{pmatrix} \\begin{pmatrix} 0 & -5 \\\\ -2 & 4 \\end{pmatrix} = \\begin{pmatrix} 10 & -20 \\\\ -8 & 26 \\end{pmatrix},$ we seek $p$ and $q$ such that\n\\[\\begin{pmatrix} 10 & -20 \\\\ -8 & 26 \\end{pmatrix} = p \\begin{pmatrix} 0 & -5 \\\\ -2 & 4 \\end{pmatrix} + q \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}.\\]Thus, we want $p$ and $q$ to satisfy $q = 10,$ $-5p = -20,$ $-2p = -8,$ and $4p + q = 26.$  Solving, we find $(p,q) = \\boxed{(4,10)}.$"
-}

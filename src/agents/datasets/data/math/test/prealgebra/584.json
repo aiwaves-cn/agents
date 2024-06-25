@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer divisible by each of the first five composite numbers?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The first five composite numbers are 4, 6, 8, 9, and 10. Their prime factorizations are $2^2, 2\\cdot 3, 2^3, 3^2$, and $2\\cdot 5$. Taking the maximum exponent for each prime, we find that the least common multiple is $2^3\\cdot 3^2\\cdot 5=\\boxed{360}$."
-}

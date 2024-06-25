@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive real number $a$ so that the polynomial\n\\[x^6 + 3ax^5 + (3a^2 + 3) x^4 + (a^3 + 6a) x^3 + (3a^2 + 3) x^2 + 3ax + 1 = 0\\]has at least one real root.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $x = 0$ cannot be a real root.  Dividing by $x^3,$ we get\n\\[x^3 + 3ax^2 + (3a^2 + 3) x + a^3 + 6a + \\frac{3a^2 + 3}{x} + \\frac{3a}{x^2} + \\frac{1}{x^3} = 0.\\]Let $y = x + \\frac{1}{x}.$  Then\n\\[y^2 = x^2 + 2 + \\frac{1}{x^2},\\]so $x^2 + \\frac{1}{x^2} = y^2 - 2,$ and\n\\[y^3 = x^3 + 3x + \\frac{3}{x} + \\frac{1}{x^3},\\]so $x^3 + \\frac{1}{x^3} = y^3 - 3y.$  Thus,\n\\[y^3 - 3y + 3a (y^2 - 2) + (3a^2 + 3) y + a^3 + 6a = 0.\\]Simplifying, we get\n\\[y^3 + 3ay^2 + 3a^2 y + a^3 = 0,\\]so $(y + a)^3 = 0.$  Then $y + a = 0,$ so\n\\[x + \\frac{1}{x} + a = 0.\\]Hence, $x^2 + ax + 1 = 0.$  For the quadratic to have real roots, the discriminant must be nonnegative, so $a^2 \\ge 4.$  The smallest positive real number $a$ that satisfies this inequality is $a = \\boxed{2}.$"
-}

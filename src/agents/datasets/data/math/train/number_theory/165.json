@@ -1,6 +1,0 @@
-{
-    "problem": "The prime factorization of 2007 is $3^{2}\\times223$. How many ordered pairs of positive integers $(x,y)$ satisfy the equation $xy=2007$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "$x$ must be a divisor of 2007. To count the number of divisors, we note that a divisor can have zero factors of 3, one factor, or two factors, and (independently) it can have zero factors of 223 or one factor. The total number of divisors is then $3\\cdot2=6$ (3 choices for the factors of 3 and 2 choices for the factors of 223). Since each divisor is unique, each creates a unique ordered pair. So there are $\\boxed{6}$ ordered pairs."
-}

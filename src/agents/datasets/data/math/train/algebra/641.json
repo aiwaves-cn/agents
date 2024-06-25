@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $f(x)=\\frac{1}{2x+b}$. For what value of $b$ does $f^{-1}(x)=\\frac{1-2x}{2x}$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Substituting $f(x)$ into the equation $f^{-1}(x) = \\frac{1 - 2x}{2x}$, and noting that $f^{-1}(f(x)) = x$ for all $x$ in the domain of $f$, we get \\[x = \\frac{1 - 2f(x)}{2f(x)}.\\] Solving for $f(x)$, we get \\[f(x) = \\frac{1}{2x + 2}.\\] Therefore, $b = \\boxed{2}$."
-}

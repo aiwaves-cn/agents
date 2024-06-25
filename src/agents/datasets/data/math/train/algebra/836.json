@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangle is called cool if the number of square units in its area is equal to twice the number of units in its perimeter. A cool rectangle also must have integer side lengths. What is the sum of all the different possible areas of cool rectangles?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the side lengths of the rectangle be $a$ and $b.$ It follows that $ab=4(a+b).$ Expanding and moving all the terms to the left hand side, $ab-4a-4b=0.$ Adding 16 to both sides allows us to factor:\n\\[a(b-4)-4(b-4)=(a-4)(b-4)=16. \\]From this point, the pairs $(a,b)$ that provide different areas are $(5,20),$ $(6,12),$ and $(8,8),$ and the sum of the possible areas is $\\boxed{236}.$"
-}

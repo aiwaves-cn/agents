@@ -1,6 +1,0 @@
-{
-    "problem": "The increasing sequence $1,3,4,9,10,12,13\\cdots$ consists of all those positive integers which are powers of 3 or sums of distinct powers of 3. Find the $100^{\\mbox{th}}$ term of this sequence.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Rewrite all of the terms in base 3. Since the numbers are sums of distinct powers of 3, in base 3 each number is a sequence of 1s and 0s (if there is a 2, then it is no longer the sum of distinct powers of 3). Therefore, we can recast this into base 2 (binary) in order to determine the 100th number. $100$ is equal to $64 + 32 + 4$, so in binary form we get $1100100$. However, we must change it back to base 10 for the answer, which is $3^6 + 3^5 + 3^2 = 729 + 243 + 9 = \\boxed{981}$."
-}

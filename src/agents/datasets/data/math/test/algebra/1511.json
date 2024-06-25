@@ -1,6 +1,0 @@
-{
-    "problem": "Alex, Bob, Camille, and Danielle's mothers are comparing their children's ages. They observe that the sum of Alex, Bob, and Danielle's ages is fourteen times Camille's age. They also note that the sum of Alex and Bob's ages is six times Camille's age, and Bob's age is two years less than the difference in ages of Danielle and Alex. How old is Camille?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $a$ be Alex's age, $b$ be Bob's age, $c$ be Camille's age, and $d$ be Danielle's age. We can express the information given in the problem with the following system of linear equations:\n\\begin{align*}\na + b + d &= 14c \\\\\na + b &= 6c \\\\\nb &= d - a - 2\n\\end{align*} Substituting for $a+b$ in terms of $c$ into the first equation gives $d = 8c$. Rearranging the third equation gives $a + b = d - 2$, and substituting for $a+b$ in terms of $c$ gives $d - 2 = 6c$. Substituting $8c$ for $d$ gives $8c - 2 = 6c$, so $c = \\boxed{1}$."
-}

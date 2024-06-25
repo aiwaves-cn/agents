@@ -1,6 +1,0 @@
-{
-    "problem": "Sviatoslav solved the quadratic equation $x^2-x-1=0$ by completing the square. In the process, he came up with the equivalent equation $$(x+a)^2 = b,$$where $a$ and $b$ are constants.\n\nWhat is $b$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The square which agrees with $x^2-x-1$ except for the constant term is $\\left(x-\\frac 12\\right)^2$, which is equal to $x^2-x+\\frac 14$, and thus to $(x^2-x-1) + \\frac 54$.\n\nTherefore, by adding $\\frac 54$ to each side, Sviatoslav rewrote the equation $x^2-x-1 = 0$ as $$\\left(x-\\frac 12\\right)^2 = \\frac 54.$$We have $a=-\\frac 12$ and $b=\\boxed{\\frac 54}$."
-}

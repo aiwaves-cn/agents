@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest integer less than or equal to\\[\\frac{3^{100}+2^{100}}{3^{96}+2^{96}}?\\]\n$\\textbf{(A) }80\\qquad \\textbf{(B) }81 \\qquad \\textbf{(C) }96 \\qquad \\textbf{(D) }97 \\qquad \\textbf{(E) }625\\qquad$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We write\\[\\frac{3^{100}+2^{100}}{3^{96}+2^{96}}=\\frac{3^{96}}{3^{96}+2^{96}}\\cdot\\frac{3^{100}}{3^{96}}+\\frac{2^{96}}{3^{96}+2^{96}}\\cdot\\frac{2^{100}}{2^{96}}=\\frac{3^{96}}{3^{96}+2^{96}}\\cdot 81+\\frac{2^{96}}{3^{96}+2^{96}}\\cdot 16.\\]Hence we see that our number is a weighted average of 81 and 16, extremely heavily weighted toward 81. Hence the number is ever so slightly less than 81, so the answer is $\\boxed{80}$."
-}

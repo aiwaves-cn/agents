@@ -1,6 +1,0 @@
-{
-    "problem": "If two distinct members of the set $\\{ 2, 4, 10, 12, 15, 20, 50 \\}$ are randomly selected and multiplied, what is the probability that the product is a multiple of 100? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Since a multiple of 100 must have 2 factors of 2 and 2 factors of 5, we can count the pairs by focusing on the factors of 5. For one thing, 50 can be paired with any number that has one factor of 2, since $50=2 \\cdot 5^2$ takes care of all the other primes. So, 50 can be paired with 2, 4, 10, 12, and 20, for 5 pairs. Then, 20 can be paired with (excluding 50 which we already counted) 15 and 10, both of which have the necessary factor of 5, giving us 2 more pairs. There are no remaining pairs of numbers 15 and smaller that are multiples of 100, because the only pair with two factors of 5, $\\{10, 15 \\}$, lacks a factor of 2. So, there are $5+2 = 7$ pairs. And in total, there are ${7 \\choose 2 } =21$ possible pairs, giving us a probability of $\\frac{7}{21} = \\boxed{\\frac{1}{3}}$."
-}

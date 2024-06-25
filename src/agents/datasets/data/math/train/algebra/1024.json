@@ -1,6 +1,0 @@
-{
-    "problem": "Let \\[f(x) =\n\\begin{cases}\n2x^2 - 3&\\text{if } x\\le 2, \\\\\nax + 4 &\\text{if } x>2.\n\\end{cases}\n\\]Find $a$ if the graph of $y=f(x)$ is continuous (which means the graph can be drawn without lifting your pencil from the paper).",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If the graph of $f$ is continuous, then the graphs of the two cases must meet when $x=2,$ which (loosely speaking) is the dividing point between the two cases. Therefore, we must have $2\\cdot 2^2 -3 = 2a + 4.$ Solving this equation gives $a = \\boxed{\\frac{1}{2}}.$"
-}

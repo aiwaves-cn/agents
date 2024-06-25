@@ -1,6 +1,0 @@
-{
-    "problem": "There are real numbers $a$ and $b$ such that for every positive number $x$, we have the identity\n\\[\n  \\tan^{-1} \\left( \\frac{1}{x} - \\frac{x}{8} \\right) + \\tan^{-1}(ax) + \\tan^{-1}(bx) \n    = \\frac{\\pi}{2} \\, .\n\\](Throughout this equation, $\\tan^{-1}$ means the inverse tangent function, sometimes written $\\arctan$.)  What is the value of $a^2 + b^2$?",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "By the tangent addition formula,\n\\[\\tan (\\tan^{-1} p + \\tan^{-1} q) = \\frac{p + q}{1 - pq}.\\]From the given equation,\n\\[\\tan^{-1} ax + \\tan^{-1} bx = \\frac{\\pi}{2} - \\tan^{-1} \\left( \\frac{1}{x} - \\frac{x}{8} \\right).\\]Then\n\\[\\tan (\\tan^{-1} ax + \\tan^{-1} bx) = \\tan \\left( \\frac{\\pi}{2} - \\tan^{-1} \\left( \\frac{1}{x} - \\frac{x}{8} \\right) \\right),\\]The left-hand side is $\\frac{ax + bx}{1 - abx^2}.$  The right-hand side is\n\\begin{align*}\n\\tan \\left( \\frac{\\pi}{2} - \\tan^{-1} \\left( \\frac{1}{x} - \\frac{x}{8} \\right) \\right) &= \\frac{1}{\\tan \\left( \\tan^{-1} \\left( \\frac{1}{x} - \\frac{x}{8} \\right) \\right)} \\\\\n&= \\frac{1}{\\frac{1}{x} - \\frac{x}{8}} \\\\\n&= \\frac{x}{1 - \\frac{1}{8} x^2}.\n\\end{align*}Hence, $a + b = 1$ and $ab = \\frac{1}{8},$ so\n\\[a^2 + b^2 = (a + b)^2 - 2ab = 1 - \\frac{2}{8} = \\boxed{\\frac{3}{4}}.\\]"
-}

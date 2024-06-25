@@ -1,6 +1,0 @@
-{
-    "problem": "What is the measure of the smaller angle between the hands of a 12-hour clock at 12:25 pm, in degrees? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Every minute, the minute hand moves $360 \\div 60 = 6$ degrees. At 25 minutes past the hour, the minute hand is $25 \\times 6 = 150$ degrees past the vertical 12:00 position. Every minute, the hour hand moves $360 \\div 12 \\div 60 = 0.5$ degrees. At 25 minutes past 12:00, the hour hand is $25 \\times 0.5 = 12.5$ degrees past the vertical 12:00 position. The angle between the hands of the clock at 12:25 is $150 - 12.5 = \\boxed{137.5\\text{ degrees}}$.\n\n[asy]\nunitsize(2.5 cm);\n\nint i;\n\ndraw(Circle((0,0),1));\n\nfor (i = 0; i <= 11; ++i) {\n  draw(0.9*dir(30*i)--dir(30*i));\n  label(\"$\" + string(i + 1) + \"$\", 1.15*dir(90 - 30*i - 30));\n}\n\ndraw((0,0)--0.8*dir(300));\ndraw((0,0)--0.6*dir(90 - 12/25*30));\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "When a certain biased coin is flipped five times, the probability of getting heads exactly once is not equal to $0$ and is the same as that of getting heads exactly twice. Let $\\frac ij$, in lowest terms, be the probability that the coin comes up heads in exactly $3$ out of $5$ flips. Find $i+j$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Denote the probability of getting a heads in one flip of the biased coin as $h$. Based upon the problem, note that ${5\\choose1}(h)^1(1-h)^4 = {5\\choose2}(h)^2(1-h)^3$. After canceling out terms, we get $1 - h = 2h$, so $h = \\frac{1}{3}$. The answer we are looking for is ${5\\choose3}(h)^3(1-h)^2 = 10\\left(\\frac{1}{3}\\right)^3\\left(\\frac{2}{3}\\right)^2 = \\frac{40}{243}$, so $i+j=40+243=\\boxed{283}$."
-}

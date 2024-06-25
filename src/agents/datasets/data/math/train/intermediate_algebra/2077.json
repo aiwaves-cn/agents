@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the value of \\[N = 100^2 + 99^2 - 98^2 - 97^2 + 96^2 + \\cdots + 4^2 + 3^2 - 2^2 - 1^2,\\]where the additions and subtractions alternate in pairs.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Using the difference of squares factorization, we have \\[\\begin{aligned} N &= (100^2-98^2) + (99^2-97^2) + (96^2-94^2) + (95^2-93^2) + \\dots + (4^2-2^2) + (3^2-1^2) \\\\ &= 2(100 + 98) + 2(99 + 97) + 2(96 + 94) + 2(95 + 93) + \\dots + 2(4 + 2) + 2(3+1) \\\\ &= 2(1 + 2 + \\dots + 100) \\\\ &= 2 \\cdot \\frac{100 \\cdot 101}{2} \\\\ &= \\boxed{10100}.\\end{aligned}\\]"
-}

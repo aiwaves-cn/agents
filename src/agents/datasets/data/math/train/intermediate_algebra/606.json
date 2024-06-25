@@ -1,6 +1,0 @@
-{
-    "problem": "Find the positive real number $x$ for which\n\\[5 \\sqrt{1 + x} + 5 \\sqrt{1 - x} = 7 \\sqrt{2}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equation,\n\\[\\sqrt{1 + x} + \\sqrt{1 - x} = \\frac{7 \\sqrt{2}}{5}.\\]Squaring both sides, we get\n\\[1 + x + 2 \\sqrt{1 - x^2} + 1 - x = \\frac{98}{25},\\]which simplifies to\n\\[2 \\sqrt{1 - x^2} = \\frac{48}{25}.\\]Dividing both sides by 2, we get\n\\[\\sqrt{1 - x^2} = \\frac{24}{25}.\\]Squaring both sides again, we get\n\\[1 - x^2 = \\frac{576}{625},\\]so\n\\[x^2 = \\frac{49}{625}.\\]The positive value of $x$ is then $\\boxed{\\frac{7}{25}}.$"
-}

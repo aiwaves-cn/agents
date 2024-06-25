@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{P}$ be the matrix for projecting onto the vector $\\begin{pmatrix} -3 \\\\ -2 \\end{pmatrix}.$  Find $\\mathbf{P}^{-1}.$\n\nIf the inverse does not exist, then enter the zero matrix.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "A projection matrix is always of the form\n\\[\\begin{pmatrix} \\cos^2 \\theta & \\cos \\theta \\sin \\theta \\\\ \\cos \\theta \\sin \\theta & \\sin^2 \\theta \\end{pmatrix},\\]where the vector being projected onto has direction vector $\\begin{pmatrix} \\cos \\theta \\\\ \\sin \\theta \\end{pmatrix}.$  The determinant of this matrix is then\n\\[\\cos^2 \\theta \\sin^2 \\theta - (\\cos \\theta \\sin \\theta)^2 = 0,\\]so the inverse does not exist, and the answer is the zero matrix $\\boxed{\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}}.$"
-}

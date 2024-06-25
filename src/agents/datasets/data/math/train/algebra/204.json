@@ -1,6 +1,0 @@
-{
-    "problem": "In a sequence of positive integers each term after the first is $\\frac{1}{3}$ of the sum of the term that precedes it and the term that follows it in the sequence. What is the 5th term of this sequence if the 1st term is 2 and the 4th term is 34?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $a,b,c$ be 2nd, 3rd, and 5th terms respectively. Our sequence is therefore $2,a,b,34,c,\\dots$. From the information given, we have \\begin{align*}\na &= \\frac13(2+b)\\\\\nb &= \\frac13(a+34)\\\\\n34 &= \\frac13(b+c).\n\\end{align*} Before we find $c$, we use the first two equations to solve for $b$. Substituting $a = \\frac13(2+b)$, we obtain \\begin{align*}\nb &= \\frac13(\\frac13(2+b)+34)\\\\\n\\Rightarrow 3b &= \\frac13(2+b)+34\\\\\n\\Rightarrow 9b &= 2+b+102\\\\\n\\Rightarrow 8b &= 104\\\\\n\\Rightarrow b &= 13.\n\\end{align*} Substituting $b = 13$ into $34 = \\frac13(b+c)$, we obtain \\begin{align*}\n34 &= \\frac13(13+c)\\\\\n\\Rightarrow 102 &= 13+c\\\\\n\\Rightarrow c &= \\boxed{89}.\n\\end{align*}"
-}

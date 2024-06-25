@@ -1,6 +1,0 @@
-{
-    "problem": "Given that\n\\[\\sin \\left( \\theta + \\frac{\\pi}{4} \\right) = \\frac{1}{3},\\]compute $\\sin 2 \\theta.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the double angle formula,\n\\[\\cos \\left( 2 \\theta + \\frac{\\pi}{2} \\right) = 1 - 2 \\sin^2 \\left( \\theta + \\frac{\\pi}{4} \\right) = 1 - 2 \\left( \\frac{1}{3} \\right)^2 = \\frac{7}{9}.\\]But $\\cos \\left( 2 \\theta + \\frac{\\pi}{2} \\right) = -\\sin 2 \\theta,$ so $\\sin 2 \\theta = \\boxed{-\\frac{7}{9}}.$"
-}

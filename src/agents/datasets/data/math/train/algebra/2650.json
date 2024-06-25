@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of 18 consecutive positive integers is a perfect square.  What is the smallest possible value of this sum?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $n, n+1, \\dots , n+17$ be the 18 consecutive integers.  The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is \\[\\frac{n + (n + 17)}{2} \\cdot 18 = 9(2n + 17).\\]Since 9 is a perfect square, $2n+17$ must also be a perfect square. The smallest value of $n$ for which this occurs is  $n = 4$, so  $9(2n+17) = 9\\cdot 25 = \\boxed{225}$."
-}

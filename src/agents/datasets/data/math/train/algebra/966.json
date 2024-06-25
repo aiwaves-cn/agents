@@ -1,6 +1,0 @@
-{
-    "problem": "Let $X,$ $Y,$ and $Z$ be points such that $\\frac{XZ}{XY} = \\frac{ZY}{XY} = \\frac{1}{2}.$ If $Y = (1, 7)$, $Z = (-1, -7)$, then what is the sum of the coordinates of $X$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "From the problem, we can see that $XZ = ZY$ and $XZ + ZY = XY$, which means that $X,$ $Y,$ and $Z$ form a degenerate triangle. In other words, $Z$ is the midpoint of $XY$. Since from Y to Z, we go 2 steps left and 14 steps down, we do the same to arrive at $X = (-1 - 2, -7 -14) = (-3, -21).$ Therefore, the sum of the coordinates of $X$ is $\\boxed{-24}.$"
-}

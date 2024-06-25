@@ -1,6 +1,0 @@
-{
-    "problem": "Jenna collects stamps.  She puts the same number of stamps on each page and then inserts each page into one of her two stamp books.  One of her stamp books has a total of 840 stamps.  The other has 1008.  What is the largest number of stamps that Jenna could be putting on each page?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The number of stamps Jenna puts on each page must divide the number of stamps she puts into each book, so the largest possible number of stamps she puts on each page is gcd$(840, 1008) = \\boxed{168}$."
-}

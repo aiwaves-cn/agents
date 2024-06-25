@@ -1,6 +1,0 @@
-{
-    "problem": "Use each of the digits 3, 4, 6, 8 and 9 exactly once to create the greatest possible five-digit multiple of 6. What is that multiple of 6?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "A multiple of 6 is a multiple of 3, which means the sum of its digits is a multiple of 3, and a multiple of 2, which means its units digit is even. We note that 4, 6, and 8 are even and that $3+4+6+8+9=30=3(10)$, so indeed it is possible to create a multiple of 6. Choose the smallest even number on the list, 4, for the units digit and arrange the rest of the digits in decreasing order to maximize the multiple of 6: $\\boxed{98,634}$."
-}

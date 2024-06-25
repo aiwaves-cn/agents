@@ -1,6 +1,0 @@
-{
-    "problem": "What is the perimeter of the polygon formed when the points $A(-6,6), B(9,6)$ and $C(9,-2)$ are graphed and connected with straight lines?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Two side lengths are straightforward.  We have $AB = 15$ because the $y$-coordinates of $A$ and $B$ are the same and their $x$-coordinates differ by 15.  Similarly, the $y$-coordinates of $B$ and $C$ differ by 8 and their $x$-coordinates are the same, so $BC = 8$.  We could either notice that $\\triangle ABC$ is right, or use the distance formula (i.e., the Pythagorean Theorem) to see that  \\[AC = \\sqrt{(9-(-6))^2 + (-2-6)^2} = \\sqrt{15^2 + (-8)^2} = 17.\\] So, the perimeter of $ABC$ is $15+8+17 = \\boxed{40}$."
-}

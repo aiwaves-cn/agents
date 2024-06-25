@@ -1,6 +1,0 @@
-{
-    "problem": "I have a drawer with 6 forks, 6 spoons, and 6 knives in it. If I reach in and randomly remove three pieces of silverware, what is the probability that I get one fork, one spoon, and one knife?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "First, we can find the denominator of our fraction.  There are a total of $\\dbinom{18}{3}=816$ ways to choose 3 pieces of silverware out of 18.  To find the numerator, we need to count the number of ways to choose one piece of each type of silverware.  There are 6 ways we could choose a fork, 6 ways to choose a spoon, and 6 ways to choose a knife, making a total of $6\\cdot 6 \\cdot 6=216$ ways to choose a fork, a knife, and a spoon so our final probability is $\\frac{216}{816}=\\boxed{\\frac{9}{34}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $N$ be the number of ordered pairs of nonempty sets $\\mathcal{A}$ and $\\mathcal{B}$ that have the following properties:\n$\\mathcal{A} \\cup \\mathcal{B} = \\{1,2,3,4,5,6,7,8,9,10,11,12\\}$,\n$\\mathcal{A} \\cap \\mathcal{B} = \\emptyset$,\nThe number of elements of $\\mathcal{A}$ is not an element of $\\mathcal{A}$,\nThe number of elements of $\\mathcal{B}$ is not an element of $\\mathcal{B}$.\nFind $N$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let us partition the set $\\{1,2,\\cdots,12\\}$ into $n$ numbers in $A$ and $12-n$ numbers in $B$,\nSince $n$ must be in $B$ and $12-n$ must be in $A$ ($n\\ne6$, we cannot partition into two sets of 6 because $6$ needs to end up somewhere, $n\\ne 0$ or $12$ either).\nWe have $\\dbinom{10}{n-1}$ ways of picking the numbers to be in $A$.\nSo the answer is $\\left(\\sum_{n=1}^{11} \\dbinom{10}{n-1}\\right) - \\dbinom{10}{5}=2^{10}-252= \\boxed{772}$."
-}

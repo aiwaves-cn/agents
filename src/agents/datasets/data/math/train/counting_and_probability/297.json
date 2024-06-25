@@ -1,6 +1,0 @@
-{
-    "problem": "At breakfast, lunch, and dinner, Joe randomly chooses with equal probabilities either an apple, an orange, or a banana to eat. On a given day, what is the probability that Joe will eat at least two different kinds of fruit?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The only way for Joe not to eat at least two different kinds of fruit is if he eats all apples, all oranges, or all bananas. The probability that he eats all apples is $\\left( \\frac{1}{3} \\right) ^3=\\frac{1}{27}$. The probability that he eats all oranges and the probability that he eats all bananas are the same. So, the probability that Joe eats at least two different kinds of fruit is $1-\\frac{1}{27}-\\frac{1}{27}-\\frac{1}{27}=\\boxed{\\frac{8}{9}}$."
-}

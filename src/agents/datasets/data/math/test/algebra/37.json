@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $x+y = 7$ and $3x+y = 45,$ evaluate $x^2-y^2.$",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "From the first equation, we can see that $y = 7 - x.$ Substituting for $y$ in the second equation, we obtain $3x + (7 - x) = 45,$ so $x = 19.$ We can then find that $y = -12.$ Thus, $$x^2 - y^2 = 19^2 - (-12)^2 = \\boxed{217}.$$- OR -\n\nNote that $$x^2 - y^2 = (x + y)(x - y).$$If we subtract two times the first equation from the second equation, we obtain $x - y = 31.$ We can then substitute for $x + y$ and $x - y$ to obtain $7\\cdot 31 = \\boxed{217}.$"
-}

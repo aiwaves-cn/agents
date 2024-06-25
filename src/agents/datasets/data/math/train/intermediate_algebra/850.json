@@ -1,6 +1,0 @@
-{
-    "problem": "The parabola $y=ax^2+bx+c$ has vertex $(p,p)$ and $y$-intercept $(0,-p)$, where $p\\ne 0$. What is $b$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since the vertex is $(p,p),$ the parabola is of the form\n\\[y = a(x - p)^2 + p.\\]Setting $x = 0,$ we get $y = ap^2 + p = -p,$ so $a = -\\frac{2}{p}.$  Then\n\\[y = -\\frac{2}{p} (x^2 - 2px + p^2) + p = -\\frac{2}{p} x^2 + 4x - p,\\]so $b = \\boxed{4}.$"
-}

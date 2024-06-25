@@ -1,6 +1,0 @@
-{
-    "problem": "A set of three points is chosen randomly from the grid shown. Each three-point set has the same probability of being chosen. What is the probability that the points lie on the same straight line?\n\n[asy]\nsize(50);\nfor (int i=0; i<3; ++i) {\nfor (int j=0; j<3; ++j) {\ndot((i,j));};}\n[/asy]",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The number of three-point sets that can be chosen from the nine grid points is \\[\n\\binom{9}{3} = \\frac{9!}{3!\\cdot 6!} = 84.\n\\]Eight of these sets consist of three collinear points: 3 sets of points lie on vertical lines, 3 on horizontal lines, and 2 on diagonals. Hence the probability is $8/84 = \\boxed{\\frac{2}{21}}$."
-}

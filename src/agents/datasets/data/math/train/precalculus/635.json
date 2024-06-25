@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\left( 1 + \\cos \\frac {\\pi}{8} \\right) \\left( 1 + \\cos \\frac {3 \\pi}{8} \\right) \\left( 1 + \\cos \\frac {5 \\pi}{8} \\right) \\left( 1 + \\cos \\frac {7 \\pi}{8} \\right).\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "First, we have that $\\cos \\frac{7 \\pi}{8} = -\\cos \\frac{\\pi}{8}$ and $\\cos \\frac{5 \\pi}{8} = -\\cos \\frac{3 \\pi}{8},$ so\n\\begin{align*}\n\\left( 1 + \\cos \\frac {\\pi}{8} \\right) \\left( 1 + \\cos \\frac {3 \\pi}{8} \\right) \\left( 1 + \\cos \\frac {5 \\pi}{8} \\right) \\left( 1 + \\cos \\frac {7 \\pi}{8} \\right) &= \\left( 1 + \\cos \\frac {\\pi}{8} \\right) \\left( 1 + \\cos \\frac {3 \\pi}{8} \\right) \\left( 1 - \\cos \\frac {3 \\pi}{8} \\right) \\left( 1 - \\cos \\frac {\\pi}{8} \\right) \\\\\n&= \\left( 1 - \\cos^2 \\frac{\\pi}{8} \\right) \\left( 1 - \\cos^2 \\frac{3 \\pi}{8} \\right) \\\\\n&= \\sin^2 \\frac{\\pi}{8} \\sin^2 \\frac{3 \\pi}{8} \\\\\n&= \\sin^2 \\frac{\\pi}{8} \\cos^2 \\frac{\\pi}{8}.\n\\end{align*}By the double angle formula,\n\\[2 \\sin \\frac{\\pi}{8} \\cos \\frac{\\pi}{8} = \\sin \\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}},\\]so $\\sin^2 \\frac{\\pi}{8} \\cos^2 \\frac{\\pi}{8} = \\left( \\frac{1}{2 \\sqrt{2}} \\right)^2 = \\boxed{\\frac{1}{8}}.$"
-}

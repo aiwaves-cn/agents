@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of the nonreal roots of $x^4-4x^3+6x^2-4x=2005.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We recognize part of the expansion of $(x-1)^4$ on the left-hand side. Adding $1$ to both sides, we have \\[x^4-4x^3+6x^2-4x+1=2006,\\]which means $(x-1)^4 = 2006.$ Therefore, \\[x-1 = \\sqrt[4]{2006}, i\\sqrt[4]{2006}, -\\sqrt[4]{2006}, -i\\sqrt[4]{2006}.\\]Since we want the nonreal roots, we only consider the roots \\[ x = 1 \\pm i\\sqrt[4]{2006}.\\]The product of these roots is \\[P = (1 + i\\sqrt[4]{2006})(1 - i\\sqrt[4]{2006}) = \\boxed{1 +\\sqrt{2006}}.\\]"
-}

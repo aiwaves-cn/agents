@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all the rational terms in the expansion of\n\\[(\\sqrt{2} + \\sqrt[3]{3})^{12}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = \\sqrt{2}$ and $b = \\sqrt[3]{3}.$  By the Binomial Theorem,\n\\[(a + b)^{12} = \\binom{12}{0} a^{12} + \\binom{12}{1} a^{11} b + \\binom{12}{2} a^{10} b^2 + \\dots + \\binom{12}{12} b^{12}.\\]The term $a^k b^{12 - k}$ is rational if and only if $k$ is divisible by 2, and $12 - k$ is divisible by 3.  Then $k$ must be divisible by 3, so $k$ must be a multiple of 6.  Therefore, the sum of the rational terms is\n\\[\\binom{12}{0} a^{12} + \\binom{12}{6} a^6 b^6 + \\binom{12}{12} b^{12} = \\boxed{66673}.\\]"
-}

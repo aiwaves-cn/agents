@@ -1,6 +1,0 @@
-{
-    "problem": "If $x^2 + bx + b + 3 = 0$ has roots of the form $\\frac{-b \\pm \\sqrt{5}}{2}$, where $b > 0 $, then $b = m+\\sqrt{n}$ for positive integers $m,n$. Find $m + n$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Using the quadratic formula, we see that the solutions of the quadratic equation $x^2 + bx + (b+3) = 0$ are given by $\\frac{-b \\pm \\sqrt{b^2 - 4(b+3)}}{2}$. So we may set $\\frac{-b + \\sqrt{b^2 - 4(b+3)}}{2}$ equal to $\\frac{-b+\\sqrt{5}}{2}$ which implies $b^2 - 4b - 12 = 5 \\Longrightarrow b^2 - 4b - 17 = 0$. (Note that setting $\\frac{-b + \\sqrt{b^2 - 4(b+3)}}{2}$ equal to $\\frac{-b-\\sqrt{5}}{2}$ gives no solution). We must use the quadratic formula again. We get $$b = \\frac{4 \\pm \\sqrt{4^2 - 4(-17)}}{2} = \\frac{4 \\pm \\sqrt{84}}{2} = 2 \\pm \\sqrt{21}.$$Take the positive root and sum: $m+n = 2+21 = \\boxed{23}$."
-}

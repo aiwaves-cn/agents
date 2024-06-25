@@ -1,6 +1,0 @@
-{
-    "problem": "2 distinct vertices of an octagon are chosen at random.  What is the probability that they are adjacent?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "After we choose the first vertex, there are 7 ways to choose the second.  There are only 2 of these that are adjacent to the first vertex, so the probability the two vertices are adjacent is $\\boxed{\\frac{2}{7}}$."
-}

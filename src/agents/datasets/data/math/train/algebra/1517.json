@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate the sum of the geometric series $1+\\left(\\frac{1}{3}\\right)+\\left(\\frac{1}{3}\\right)^2 + \\left(\\frac{1}{3}\\right)^3 + \\dots$. Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "This is an infinite geometric series with first term $a=1$ and common ratio $r=\\frac{1}{3}$. Thus the sum is: $$\\frac{a}{1-r} = \\frac{1}{1-\\frac13} = \\frac{1}{\\frac{2}{3}}=\\boxed{\\frac{3}{2}}.$$"
-}

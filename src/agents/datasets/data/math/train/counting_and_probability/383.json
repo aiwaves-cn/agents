@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\dbinom{15}{3}$.",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "\\begin{align*}\n\\dbinom{15}{3} &= \\dfrac{15!}{12!3!} \\\\\n&= \\dfrac{15\\times 14\\times 13}{3\\times 2\\times 1} \\\\\n&= \\dfrac{15}{3} \\times \\dfrac{14}{2} \\times \\dfrac{13}{1} \\\\\n&= 5\\times 7\\times 13 \\\\\n&= \\boxed{455}.\n\\end{align*}"
-}

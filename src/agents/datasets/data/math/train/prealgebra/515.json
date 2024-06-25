@@ -1,6 +1,0 @@
-{
-    "problem": "What is the 125th digit beyond the decimal point in the decimal representation of $\\frac47$?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Manually dividing, we see that $4 \\div 7 = 0.57142857\\ldots$. Therefore, the decimal representation of $\\frac 47$ repeats after every $6$ digits. Since $125 = 20 \\times 6 + 5$, the $125$th digit beyond the decimal point is the same as the $5$th digit beyond the decimal point, which is $\\boxed{2}$."
-}

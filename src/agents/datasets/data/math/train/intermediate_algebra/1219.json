@@ -1,6 +1,0 @@
-{
-    "problem": "From the set of integers $\\{1,2,3,\\dots,2009\\}$, choose $k$ pairs $\\{a_i,b_i\\}$ with $a_i<b_i$ so that no two pairs have a common element. Suppose that all the sums $a_i+b_i$ are distinct and less than or equal to $2009$. Find the maximum possible value of $k$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[S = \\sum_{i = 1}^k (a_i + b_i).\\]Since the $a_i$ and $b_i$ are all distinct,\n\\[S \\ge 1 + 2 + \\dots + 2k = \\frac{(2k)(2k + 1)}{2} = k(2k + 1).\\]Since the $k$ sums $a_1 + b_1,$ $a_2 + b_2,$ $\\dots,$ $a_k + b_k$ are all distinct and less than or equal to 2009,\n\\[S \\le (2010 - k) + (2011 - k) + \\dots + 2009 = \\frac{(4019 - k)(k)}{2}.\\]Hence,\n\\[k(2k + 1) \\le \\frac{k(4019 - k)}{2}.\\]Then\n\\[2k + 1 \\le \\frac{4019 - k}{2},\\]so $k \\le \\frac{4017}{5},$ which means $k \\le 803.$\n\nThe 803 pairs $(1,1207),$ $(2,1208),$ $\\dots,$ $(401,1607),$ $(402,805),$ $(403,806),$ $\\dots,$ $(803,1206)$ show that $k$ can be 803.  Thus, the maximum value of $k$ is $\\boxed{803}.$"
-}

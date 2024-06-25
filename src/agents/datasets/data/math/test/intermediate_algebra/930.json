@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$ is a positive integer and $x(x + 1)(x + 2)(x + 3) + 1 = 379^2,$ compute $x.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We have that $x(x + 3) = x^2 + 3x$ and $(x + 1)(x + 2) = x^2 + 3x + 2.$  So, let $y = x^2 + 3x + 1.$  Then\n\\begin{align*}\nx(x + 1)(x + 2)(x + 3) + 1 &= (x^2 + 3x)(x^2 + 3x + 2) + 1 \\\\\n&= (y - 1)(y + 1) + 1 \\\\\n&= y^2 - 1 + 1 \\\\\n&= y^2.\n\\end{align*}So, $y = 379,$ or $x^2 + 3x + 1 = 379.$  Then $x^2 + 3x - 378 = 0,$ which factors as $(x - 18)(x + 21) = 0.$  Hence, $x = \\boxed{18}.$"
-}

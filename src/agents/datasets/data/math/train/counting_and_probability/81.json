@@ -1,6 +1,0 @@
-{
-    "problem": "Alice and Bob play a game with a baseball. On each turn, if Alice has the ball, there is a 1/2 chance that she will toss it to Bob and a 1/2 chance that she will keep the ball. If Bob has the ball, there is a 2/5 chance that he will toss it to Alice, and if he doesn't toss it to Alice, he keeps it. Alice starts with the ball. What is the probability that Alice has the ball again after two turns?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We can solve this problem by dividing it into cases. If Alice tosses the baseball to Bob on the first turn, there is a 2/5 chance that Bob will toss it back to her on the next turn. On the other hand, if Alice keeps the baseball on the first turn, there is a 1/2 chance that she will also keep it on the second turn. The total probability is then $\\frac{1}{2}\\cdot\\frac{2}{5} + \\frac{1}{2}\\cdot\\frac{1}{2}=\\boxed{\\frac{9}{20}}$."
-}

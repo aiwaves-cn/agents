@@ -1,6 +1,0 @@
-{
-    "problem": "For a complex number $z,$ find the minimum value of\n\\[|z - 3|^2 + |z - 5 + 2i|^2 + |z - 1 + i|^2.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Then\n\\begin{align*}\n|z - 3|^2 + |z - 5 + 2i|^2 + |z - 1 + i|^2 &= |x + yi - 3|^2 + |x + yi - 5 + 2i|^2 + |x + yi - 1 + i|^2 \\\\\n&= |(x - 3) + yi|^2 + |(x - 5) + (y + 2)i|^2 + |(x - 1) + (y + 1)i|^2 \\\\\n&= (x - 3)^2 + y^2 + (x - 5)^2 + (y + 2)^2 + (x - 1)^2 + (y + 1)^2 \\\\\n&= 3x^2 - 18x + 3y^2 + 6y + 40 \\\\\n&= 3(x - 3)^2 + 3(y + 1)^2 + 10 \\\\\n&\\ge 10.\n\\end{align*}Equality occurs when $x = 3$ and $y = -1,$ so the minimum value is $\\boxed{10}.$"
-}

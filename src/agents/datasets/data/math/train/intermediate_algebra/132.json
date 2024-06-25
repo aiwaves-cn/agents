@@ -1,6 +1,0 @@
-{
-    "problem": "Determine if the graph of the equation below is a parabola, circle, ellipse, hyperbola, point, line, two lines, or empty.\n\n$x^2 + 2y^2 - 6x - 8y + 21 = 0$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We try completing the square in $x$ again, that gives \\[ (x-3)^2 - 9 + 2y^2 - 8y + 21 = 0.\\]Then completing the square in $y$ gives \\[ (x-3)^2 - 9 + 2(y-2)^2 - 8 + 21 =  0.\\]Combining all the constants we have \\[ (x-3)^2 + 2(y-2)^2 = -4.\\]The left hand side is always nonnegative, so this graph is $\\boxed{\\text{empty}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate $\\sqrt{60x} \\cdot \\sqrt{12x} \\cdot \\sqrt{63x}$ . Express your answer in simplest radical form in terms of $x$.\n\nNote: When entering a square root with more than one character, you must use parentheses or brackets.  For example, you should enter $\\sqrt{14}$ as \"sqrt(14)\" or \"sqrt{14}\".",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Writing everything in terms of prime factorizations, the given expression is  \\begin{align*}\n&\\sqrt{3 \\cdot 5 \\cdot 2^2 \\cdot 3 \\cdot 2^2 \\cdot 7 \\cdot 3^2 \\cdot x^3} \\\\\n& \\qquad = \\sqrt{(3^4 \\cdot 2^4 \\cdot x^2) \\cdot (5 \\cdot 7 \\cdot x)} \\\\\n& \\qquad = \\boxed{36x \\sqrt{35x}}.\n\\end{align*}"
-}

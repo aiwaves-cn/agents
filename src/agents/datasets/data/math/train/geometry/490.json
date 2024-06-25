@@ -1,6 +1,0 @@
-{
-    "problem": "Let $C_1$ and $C_2$ be circles defined by $$\n(x-10)^2+y^2=36\n$$and $$\n(x+15)^2+y^2=81,\n$$respectively. What is the length of the shortest line segment $\\overline{PQ}$ that is tangent to $C_1$ at $P$ and to $C_2$ at $Q$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The centers are at $A=(10,0)$ and $B=(-15,0)$, and the radii are 6 and 9, respectively. Since the internal tangent is shorter than the external tangent, $\\overline{PQ}$ intersects  $\\overline{AB}$ at a point $D$ that divides  $\\overline{AB}$ into parts proportional to the radii. The right triangles $\\triangle APD$ and $\\triangle BQD$ are similar with ratio of similarity $2:3$. Therefore, $D=(0,0), \\, PD=8,$ and $QD=12$. Thus $PQ=\\boxed{20}$.\n\n[asy]\nunitsize(0.23cm);\npair Q,P,D;\nQ=(-9.6,7.2);\nP=(6.4,-4.8);\nD=(0,0);\ndraw(Q--P);\ndraw(Circle((-15,0),9));\ndraw(Circle((10,0),6));\ndraw((-15,0)--Q--P--(10,0));\ndraw((-25,0)--(17,0));\nlabel(\"$Q$\",Q,NE);\nlabel(\"$P$\",P,SW);\nlabel(\"$D$\",D,N);\nlabel(\"$B$\",(-15,0),SW);\nlabel(\"$(-15,0)$\",(-15,0),SE);\nlabel(\"$(10,0)$\",(10,0),NE);\nlabel(\"$A$\",(10,0),NW);\nlabel(\"9\",(-12.1,3.6),NW);\nlabel(\"6\",(8,-2.4),SE);\n[/asy]"
-}

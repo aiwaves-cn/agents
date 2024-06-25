@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ is an obtuse, isosceles triangle. Angle $A$ measures 20 degrees. What is number of degrees in the measure of the largest interior angle of triangle $ABC$?\n\n[asy]\ndraw((-20,0)--(0,8)--(20,0)--cycle);\nlabel(\"$20^{\\circ}$\",(-13,-0.7),NE);\nlabel(\"$A$\",(-20,0),W);\nlabel(\"$B$\",(0,8),N);\nlabel(\"$C$\",(20,0),E);\n\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $\\triangle ABC$ is isosceles, $\\angle C = 20$ degrees. Thus, $\\angle B = 180 - 20 - 20 = 140$ degrees. So the largest interior angle is $\\boxed{140}$ degrees."
-}

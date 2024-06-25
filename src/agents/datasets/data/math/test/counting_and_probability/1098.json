@@ -1,6 +1,0 @@
-{
-    "problem": "Three different one-digit positive integers are placed in the bottom row of cells. Numbers in adjacent cells are added and the sum is placed in the cell above them. In the second row, continue the same process to obtain a number in the top cell. What is the difference between the largest and smallest numbers possible in the top cell? [asy]\npath box=(0,0)--(1,0)--(1,1)--(0,1)--cycle;\ndraw(box);\ndraw(shift(1.5,0)*box);\ndraw(shift(3,0)*box);\ndraw(shift(.75,2)*box);\ndraw(shift(2.25,2)*box);\ndraw(shift(1.5,4)*box);\npicture p;\ndraw(p, (.6,.2)--(.95, .8), EndArrow);\ndraw(p, (1.9,.2)--(1.55, .8), EndArrow);\ndraw(p, (1.25, .8)--(1.25,.6));\ndraw(p, (1.15, .7)--(1.35,.7));\nadd(shift(0,1)*p);\nadd(shift(1.5,1)*p);\nadd(shift(.75,3)*p);\n[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "If the lower cells contain $A$, $B$ and $C$, then the second row will contain $A + B$ and $B + C$, and the top cell will contain $A + 2B+C$. To obtain the smallest sum, place 1  in the center cell and 2 and 3 in the outer ones. The top number will be 7. For the largest sum, place 9 in the center cell and 7 and 8 in the outer ones. This top number will be 33. The difference is $33-7=\\boxed{26}$."
-}

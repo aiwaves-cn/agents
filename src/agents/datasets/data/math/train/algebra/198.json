@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of three consecutive one-digit, positive, odd integers is one-seventh of the product of the same three integers. What is the middle integer when the three integers are listed in ascending order?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Represent the three integers as $n-2$, $n$, and $n+2$, where $n$ is the middle integer.  The problem states that  \\[\nn(n-2)(n+2)=7(n+(n+2)+(n-2)),\n\\] which simplifies to $(n-2)(n+2)=21$.  Since $7\\cdot3$ and $21\\cdot1$ are the only representations of 21 as a product of two positive integers, we see that $n-2=3$ and $n+2=7$ which implies $n=\\boxed{5}$."
-}

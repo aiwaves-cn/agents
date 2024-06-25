@@ -1,6 +1,0 @@
-{
-    "problem": "If $3^{x + y} = 81$ and $81^{x - y} = 3,$ then what is the value of the product $xy$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $81 = 3^4$, then $3 = 81^{1/4}$. Comparing exponents, it follows that we have the system of equations \\begin{align*}\nx+y &= 4 \\\\\nx -y &= 1/4.\n\\end{align*} Summing the two equations yields that $2x = 4+1/4 = 17/4$, so $x = 17/8$. Subtracting the two equations yields that $2y = 4-1/4 = 15/4$, so $y = 15/8$. Thus, $xy = \\frac{17}{8} \\cdot \\frac{15}{8} = \\boxed{\\frac{255}{64}}$."
-}

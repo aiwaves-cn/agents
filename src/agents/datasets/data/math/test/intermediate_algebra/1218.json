@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $a_0$, $a_1$, $a_2$, $\\ldots\\,$ satisfies the recurrence equation\n\\[\n  a_n = 2 a_{n-1} - 2 a_{n - 2} + a_{n - 3}\n\\]for every integer $n \\ge 3$.  If $a_{20} = 1$, $a_{25} = 10$, and $a_{30} = 100$, what is the value of $a_{1331}$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can calculate the first few terms of the sequence and look for a pattern. For $n=3$,\n$$a_3 = 2a_2 - 2a_1 + a_0.$$For $n=4$ we get\n$$a_4 = 2a_3 - 2a_2 + a_1 = 2(2a_2 - 2a_1 + a_0) - 2a_2+a_1 = 2a_2 - 3a_1+2a_0.$$With $n=5$ we have\n$$a_5 = 2a_4 - 2a_3 + a_2 = 2(2a_2 - 3a_1+2a_0) - 2(2a_2 - 2a_1 + a_0) +a_2 = a_2 - 2a_1+2a_0.$$With $n=6$ we have\n$$a_6 = 2a_5 - 2a_4 + a_3 = 2(a_2 - 2a_1+2a_0) - 2(2a_2 - 3a_1+2a_0)+ 2(2a_2 - 2a_1 + a_0)  = a_0.$$Brilliant! We found that $a_6 = a_0$ and we can similarly check that $a_7 = a_1$ and $a_8 = a_2$ and so on because of the recursive rules of the sequence. This means that the sequence is periodic with a period of 6.\n\nThis means that $a_0 = a_{30} = 100$. Similarly, $a_1 = a_{25} = 10$ and $a_2 = a_{20} = 1$.  Then,\n\\[a_{1331} = a_5 =  a_2 - 2a_1+2a_0 = 1 - 2(10) + 2(100) = \\boxed{181}.\\]"
-}

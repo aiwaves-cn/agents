@@ -1,6 +1,0 @@
-{
-    "problem": "For the opening home game of the baseball season, the Madd Batters minor league baseball team offered the following incentives to its fans:\n\nEvery 75th fan who entered the stadium got a coupon for a free hot dog.\n\nEvery 30th fan who entered the stadium got a coupon for a free cup of soda.\n\nEvery 50th fan who entered the stadium got a coupon for a free bag of popcorn.\n\nThe stadium holds 4000 fans and was completely full for this game. How many of the fans at the game were lucky enough to receive all three free items?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We are asked to count the common multiples of $\\{75,30,50\\}$ among the positive integers less than or equal to $4000$.  Since $75=3\\cdot 5^2$, $30=2\\cdot3\\cdot 5$, and $50=2\\cdot 5^2$, the least common multiple of the three numbers is $2\\cdot 3 \\cdot 5^2=150$.  Since every common multiple is divisible by the least common multiple, we may count the multiples of $150$ less than $4000$. We divide $4000$ by $150$ and find a quotient of $\\boxed{26}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ has side lengths $AB = 12$, $BC = 25$, and $CA = 17$. Rectangle $PQRS$ has vertex $P$ on $\\overline{AB}$, vertex $Q$ on $\\overline{AC}$, and vertices $R$ and $S$ on $\\overline{BC}$. In terms of the side length $PQ = \\omega$, the area of $PQRS$ can be expressed as the quadratic polynomial\\[Area(PQRS) = \\alpha \\omega - \\beta \\omega^2.\\]\nThen the coefficient $\\beta = \\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "If $\\omega = 25$, the area of rectangle $PQRS$ is $0$, so\n\\[\\alpha\\omega - \\beta\\omega^2 = 25\\alpha - 625\\beta = 0\\]\nand $\\alpha = 25\\beta$. If $\\omega = \\frac{25}{2}$, we can reflect $APQ$ over $PQ$, $PBS$ over $PS$, and $QCR$ over $QR$ to completely cover rectangle $PQRS$, so the area of $PQRS$ is half the area of the triangle. Using Heron's formula, since $s = \\frac{12 + 17 + 25}{2} = 27$,\n\\[[ABC] = \\sqrt{27 \\cdot 15 \\cdot 10 \\cdot 2} = 90\\]\nso\n\\[45 = \\alpha\\omega - \\beta\\omega^2 = \\frac{625}{2} \\beta - \\beta\\frac{625}{4} = \\beta\\frac{625}{4}\\]\nand\n\\[\\beta = \\frac{180}{625} = \\frac{36}{125}\\]\nso the answer is $m + n = 36 + 125 = \\boxed{161}$."
-}

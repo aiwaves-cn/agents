@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\cfrac{\\left\\lceil\\cfrac{17}{7}-\\left\\lceil\\cfrac{27}{17}\\right\\rceil\\right\\rceil}{\\left\\lceil\\cfrac{27}{7}+\\left\\lceil\\cfrac{7\\cdot17}{27}\\right\\rceil\\right\\rceil}$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The first thing to be addressed is the fractions under the inner sets of ceiling functions. The smallest integer greater than $\\frac{27}{17}$ is $2$. The smallest integer greater than $\\frac{7\\cdot17}{27}$, which is equal to $\\frac{119}{27}$ is $5$. Therefore, the original problem can be rewritten as: \\[\\frac{\\left\\lceil\\frac{17}{7}-2\\right\\rceil}{\\left\\lceil\\frac{27}{7}+5\\right\\rceil}=\\frac{\\left\\lceil\\frac{3}{7}\\right\\rceil}{\\left\\lceil\\frac{62}{7}\\right\\rceil}\\] The smallest integer greater than $\\frac{3}{7}$ is $1$ and the smallest integer greater than $\\frac{62}{7}$ is $9$. Hence, the final simplified fraction is $\\boxed{\\frac{1}{9}}$."
-}

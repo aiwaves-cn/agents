@@ -1,6 +1,0 @@
-{
-    "problem": "Two standard dice are rolled. What is the expected number of 1's obtained? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The probability of rolling a number other than 1 on one die is $\\frac{5}{6}$, so the probability of rolling zero 1's on two dice is $\\left(\\frac{5}{6}\\right)^2 = \\frac{25}{36}$. The probability of rolling a 1 on one die is $\\frac{1}{6}$, so the probability of rolling 1's on two dice (for a total of two 1's) is $\\left(\\frac{1}{6}\\right)^2 = \\frac{1}{36}$. Since the only other possibility is rolling exactly one 1, the probability of rolling one 1 is $1-\\frac{25}{36}-\\frac{1}{36} = \\frac{10}{36}$. We find the expected number of 1's to be $E = \\frac{1}{36} \\cdot 2 + \\frac{10}{36} \\cdot 1 + \\frac{25}{36} \\cdot 0 = \\boxed{\\frac{1}{3}}$."
-}

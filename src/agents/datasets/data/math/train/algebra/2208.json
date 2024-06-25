@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x^2+bx+c = 0$ be a quadratic whose roots are each two more than the roots of $3x^2-5x-7$. What is $c$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We use the fact that the sum and the product of the roots of a quadratic of the form $ax^2+bx+c$ are given by $-b/a$ and $c/a$, respectively.\n\nLet $p$ and $q$ be the roots of $3x^2-5x-7$. Then the roots of $x^2+bx+c$ are $p+2$ and $q+2$, $c/1 = (p+2)(q+2)$. Since $c = c/1$, this means we are looking for $(p+2)(q+2)$. Since $3x^2-5x-7$ is also a quadratic, the sum $p+q$ is given by $-(-5)/3=5/3$ and the product $pq$ is given by $-7/3$. Thus, our answer is $(p+2)(q+2) = pq+2p+2q+4 = (pq)+2(p+q)+4 = (-7/3)+2(5/3)+4 = \\boxed{5}$."
-}

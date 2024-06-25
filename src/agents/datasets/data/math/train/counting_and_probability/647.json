@@ -1,6 +1,0 @@
-{
-    "problem": "Two distinct numbers are selected simultaneously and at random from the set $\\{1, 2, 3, 4, 5\\}$. What is the probability that their product is an even number? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We will use complementary counting for this problem, which is a big fancy term for saying we will determine the probability of the event we want NOT occuring. Then we will subtract our answer from 1 to get the real answer. So, what is the probability of the product being an odd number? This is an easier question to answer because it requires that both numbers be odd. There are a total of ${5 \\choose 2} = 10$ pairs of distinct numbers, and with only 3 of them odd, ${3 \\choose 2} = 3$ pairs of odd numbers. So, the probability of having an odd product is $\\frac{3}{10}$, leaving the probability of an even product being $1- \\frac{3}{10} = \\boxed{\\frac{7}{10}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A club has 15 members and needs to choose 2 members to be co-presidents.  In how many ways can the club choose its co-presidents?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "If the co-president positions are unique, there are 15 choices for the first president and 14 choices for the second president.  However, since the positions are identical, we must divide by $2$, since $15\\cdot 14$ counts each possible pair of co-presidents twice, once for each order in which they are selected.  This gives us $\\dfrac{15 \\times 14}{2} = \\boxed{105}$ ways to choose the co-presidents."
-}

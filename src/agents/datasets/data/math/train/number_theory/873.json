@@ -1,6 +1,0 @@
-{
-    "problem": "To express 20 as a sum of distinct powers of 2, we would write $20 = 2^4 + 2^2$. The sum of the exponents of these powers is $4 + 2 = 6$. If 1562 were expressed as a sum of distinct powers of 2, what would be the least possible sum of the exponents of these powers?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "By the uniqueness of the binary representation of positive integers, there is only one way to represent 1562 as a sum of distinct powers of $2$.  To find this representation, we convert 1562 to binary form.  The largest power of $2$ less than 1562 is $2^{10}=1024$.  The difference between 1024 and 1562 is $538$. The largest power of 2 less than 538 is $2^9=512$.  The difference between 538 and 512 is 26.  The largest power of 2 less than 26 is $2^4=16$, which leaves us with $26-16=10$. Continuing the process, we get $2^3=8$ and $2^1=2$. So, we have found that $1562=2^{10}+2^9+2^4+2^3+2^1$.  The sum of the exponents of 2 in this representation is $\\boxed{27}$."
-}

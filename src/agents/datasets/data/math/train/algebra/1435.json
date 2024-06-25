@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of the values of $x$ that satisfy the equation $|4x|+3=35$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We begin by subtracting 3 from both sides of the equation, in order to isolate the absolute value. This gives us $|4x|=35-3=32$, which we can split into two separate cases: $4x=32$ and $4x=-32$. For the first case, solving for $x$ would give us $x=\\frac{32}{4}=8$. For the second case, we would get $x=-\\frac{32}{4}=-8$. Therefore, the two values of $x$ that satisfy the initial equation are $x=8$ and $x=-8$. Since the problem asks for the product of these values, our solution is $(8)(-8)=\\boxed{-64}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of three numbers $x$ ,$y$, $z$ is 165. When the smallest number $x$ is multiplied by 7, the result is $n$. The value $n$ is obtained by subtracting 9 from the largest number $y$. This number $n$ also results by adding 9 to the third number $z$. What is the product of the three numbers?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We are given $x+y+z=165$, $n=7x = y-9 = z+9$.  Solving the last three equations for $x$, $y$, and $z$, respectively, and substituting into the first equation, we have $n/7+(n+9)+(n-9)=165$, which implies $n=77$.  Therefore, the three numbers are 11, 68, and 86.  The product of 11, 68, and 86 is $\\boxed{64,\\!328}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "An Internet service provider allows a certain number of free hours each month and then charges for each additional hour used. Wells, Ted, and Vino each have separate accounts. This month the total hours used by Wells and Ted was 105, and each used all of their free hours. Their total cost was $\\$10$. Vino used 105 hours by himself and had to pay $\\$26$. What is the number of cents charged for each extra hour?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $f$ be the number of free hours per month, and let $c$ be the cost for each extra hour, in dollars.  Wells and Ted together have $2f$ free hours, so they used $105-2f$ extra hours.  Since the cost for each extra hour is $c$ dollars, we are given $c(105-2f)=10$.  Similarly, Vino's bill implies $c(105-f)=26$.  Subtracting the first equation from the second equation, we find $fc=16$.  Rewrite the second equation as $105c-fc=26$, substitute 16 for $fc$, and solve to get $c=2/5$.  Two-fifths of a dollar is $\\boxed{40}$ cents."
-}

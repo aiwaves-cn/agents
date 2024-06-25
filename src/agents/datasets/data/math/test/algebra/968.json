@@ -1,6 +1,0 @@
-{
-    "problem": "If \\begin{align*}\n4x-y+2z&=7,\\\\\n6x+3y+3z&=5,\n\\end{align*} compute $y$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $w=2x+z$.  The equations become \\begin{align*}\n2w-y&=7,\\\\\n3w+3y&=5.\n\\end{align*} Subtracting twice the second equation from three times the first equation,  $$6w-3y-6w-6y=21-10\\Rightarrow -9y=11.$$ Thus $y=\\boxed{-\\frac{11}{9}}$."
-}

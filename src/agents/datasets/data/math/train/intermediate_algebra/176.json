@@ -1,6 +1,0 @@
-{
-    "problem": "Find all positive real numbers $x$ that satisfy\n\\[x \\sqrt{12 - x} + \\sqrt{12x - x^3} \\ge 12.\\]Enter all solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We write\n\\[x \\sqrt{12 - x} + \\sqrt{12x - x^3} = \\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2}\\]By Cauchy-Schwarz,\n\\[(\\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2})^2 \\le (12 - x + x)(x^2 + 12 - x^2) = 144,\\]so\n\\[\\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2} \\le 12.\\]But $\\sqrt{12 - x} \\cdot \\sqrt{x^2} + \\sqrt{x} \\cdot \\sqrt{12 - x^2} \\ge 12,$ so the expression must be equal to 12.  From the equality condition for Cauchy-Schwarz,\n\\[\\frac{12 - x}{x} = \\frac{x^2}{12 - x^2}.\\]Then $(12 - x)(12 - x^2) = x^3,$ which simplifies to $x^2 + x - 12 = 0.$  This factors as $(x - 3)(x + 4) = 0,$ so the only solution is $x = \\boxed{3}.$"
-}

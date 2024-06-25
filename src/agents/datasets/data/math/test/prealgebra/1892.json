@@ -1,6 +1,0 @@
-{
-    "problem": "Two 6-sided dice, one red and one green, are rolled.  What is the probability that the red die shows a 2 and the green die shows a 5?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We solve this problem by counting outcomes.  There is only 1 successful outcome: a red 2 and a green 5.  Rolling each die is an independent event, so we multiply the 6 possible outcomes for the red die by the 6 possible outcomes for the green die, to get 36 total outcomes.  Hence the desired probability is $\\boxed{\\frac{1}{36}}$."
-}

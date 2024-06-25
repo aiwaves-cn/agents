@@ -1,6 +1,0 @@
-{
-    "problem": "A fair, twenty-faced die has $19$ of its faces numbered from $1$ through $19$ and has one blank face. Another fair, twenty-faced die has $19$ of its faces numbered from $1$ through $8$ and $10$ through $20$ and has one blank face. When the two dice are rolled, what is the probability that the sum of the two numbers facing up will be $24?$ Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "If both dice were numbered $1$ through $20,$ we could get a sum of $24$ in the following ways: \\begin{align*}\n4&+20\\\\\n5&+19\\\\\n6&+18\\\\\n& \\ \\, \\vdots \\\\\n18&+6\\\\\n19&+5\\\\\n20&+4\n\\end{align*} This is a total of $20-4+1=17$ ways. However, the first die does not have a face with $20,$ so we must remove the possibility of rolling $20+4.$  Also, the second die does not have a face with $9,$ so we must remove the possibility of rolling $15+9.$ This leaves $17-2=15$ possible ways to roll $24.$ There are a total of $20\\cdot 20=400$ possible rolls, so the final probability is: $$\\frac{15}{400}=\\boxed{\\frac{3}{80}}.$$"
-}

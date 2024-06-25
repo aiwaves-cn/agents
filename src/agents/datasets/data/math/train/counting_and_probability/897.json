@@ -1,6 +1,0 @@
-{
-    "problem": "Our school's girls volleyball team has 14 players, including a set of 3 triplets: Alicia, Amanda, and Anna.  In how many ways can we choose 6 starters if at most one of the triplets is in the starting lineup?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We can add together the number of lineups with one triplet and with no triplets.   The number of lineups with no triplets is $\\binom{11}{6} = 462$, since we must choose 6 starters from the 11 remaining players.  When one triplet is in the lineup, there are $3\\cdot \\binom{11}{5} = 1386$ options.  So the total number of lineups with at most one triplet is $1386 + 462 = \\boxed{1848}$."
-}

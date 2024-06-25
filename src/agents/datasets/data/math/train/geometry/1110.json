@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangular prism measures 10-inches by 20-inches by 10-inches. What is the length, in inches, of the diagonal connecting point A and point B? Express your answer in simplest radical form. [asy]\nunitsize(0.75cm);\ndefaultpen(linewidth(0.7pt)+fontsize(10pt));\ndotfactor=4;\n\ndraw((0,1)--(1,1)--(1,0)--(0,0)--(0,1)--(1,2)--(2,2)--(1,1));\ndraw((1,0)--(2,1)--(2,2));\ndot((0,1));\nlabel(\"$A$\",(0,1),W);\ndot((2,1));\nlabel(\"$B$\",(2,1),E);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Let $D$ be the vertex opposite $B$ on the bottom face, and let $C$ be one of the other two vertices on the bottom face.  Because $BCD$ is a right triangle, we can use the Pythagorean theorem to get $BD=\\sqrt{10^2+20^2}$.  Then applying the Pythagorean theorem to right triangle $BDA$, we find \\begin{align*} AB&=\\sqrt{10^2+\\left(\\sqrt{10^2+20^2}\\right)^2}\\\\&=\\sqrt{10^2+10^2+20^2}\\\\&=\\sqrt{600}=\\boxed{10\\sqrt{6}} \\text{ inches}.\\end{align*}\n\n[asy]\nsize(150);\ndefaultpen(linewidth(0.7pt)+fontsize(10pt));\ndotfactor=4;\ndraw((0,1)--(1,1)--(1,0)--(0,0)--(0,1)--(1,2)--(2,2)--(1,1));\ndraw((1,0)--(2,1)--(2,2));\ndot((1,0));\nlabel(\"$C$\",(1,0),SE);\ndot((0,0));\nlabel(\"$D$\",(0,0),SW);\ndot((0,1));\nlabel(\"$A$\",(0,1),W);\ndot((2,1));\nlabel(\"$B$\",(2,1),E);\n[/asy]"
-}

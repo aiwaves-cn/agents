@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can 8 people sit around a round table if 3 of the people -- Pierre, Rosa, and Thomas -- all want to sit together?  (Two seatings are considered the same if one is a rotation of the other.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "First choose three consecutive seats for Pierre, Rosa, and Thomas.  It doesn't matter which three consecutive seats that we choose, since any three such seats can be rotated to any other such seats.  Once the three seats are chosen, there are $3!$ ways to seat the three friends there.  The other five seats are for the other five people, so there are $5!$ ways to seat them there.  The answer is $3! \\times 5! = \\boxed{720}$."
-}

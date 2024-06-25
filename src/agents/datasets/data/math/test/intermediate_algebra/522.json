@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\prod_{n = 0}^\\infty \\left[ 1 - \\left( \\frac{1}{2} \\right)^{3^n} + \\left( \\frac{1}{4} \\right)^{3^n} \\right].\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "In general,\n\\[1 - x + x^2 = \\frac{1 + x^3}{1 + x}.\\]Thus,\n\\begin{align*}\n\\prod_{n = 0}^\\infty \\left[ 1 - \\left( \\frac{1}{2} \\right)^{3^n} + \\left( \\frac{1}{4} \\right)^{3^n} \\right] &= \\prod_{n = 0}^\\infty \\frac{1 + \\left( \\frac{1}{2} \\right)^{3^{n + 1}}}{1 + \\left( \\frac{1}{2} \\right)^{3^n}} \\\\\n&= \\frac{1 + \\left( \\frac{1}{2} \\right)^3}{1 + \\left( \\frac{1}{2} \\right)^0} \\cdot \\frac{1 + \\left( \\frac{1}{2} \\right)^{3^2}}{1 + \\left( \\frac{1}{2} \\right)^3} \\cdot \\frac{1 + \\left( \\frac{1}{2} \\right)^{3^3}}{1 + \\left( \\frac{1}{2} \\right)^{3^2}} \\dotsm \\\\\n&= \\frac{1}{1 + \\frac{1}{2}} = \\boxed{\\frac{2}{3}}.\n\\end{align*}"
-}

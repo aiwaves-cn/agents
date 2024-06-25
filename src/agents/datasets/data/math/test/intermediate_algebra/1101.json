@@ -1,6 +1,0 @@
-{
-    "problem": "Find all solutions to\n\\[\\sqrt{x^2 + \\sqrt{x^2 + 11}} + \\sqrt{x^2 - \\sqrt{x^2 + 11}} = 4.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = \\sqrt{x^2 + 11},$ let\n\\[a = \\sqrt{x^2 + \\sqrt{x^2 + 11}} = \\sqrt{y^2 + y - 11},\\]and let\n\\[b = \\sqrt{x^2 - \\sqrt{x^2 + 11}} = \\sqrt{y^2 - y - 11}.\\]Then $a + b = 4.$  Also,\n\\[a^2 - b^2 = (y^2 + y - 11) - (y^2 - y - 11) = 2y,\\]and $a^2 - b^2 = (a + b)(a - b),$ so\n\\[a - b = \\frac{2y}{4} = \\frac{y}{2}.\\]Adding $a + b = 4$ and $a - b = \\frac{y}{2},$ we get\n\\[2a = \\frac{y}{2} + 4,\\]so $4a = y + 8.$  Squaring both sides, we get\n\\[16 (y^2 + y - 11) = y^2 + 16y + 64.\\]Then $y^2 = 16.$  Since $y$ is positive, $y = 4.$\n\nThen $\\sqrt{x^2 + 11} = 4,$ so $x^2 = 5,$ and the solutions are $\\boxed{\\sqrt{5}, -\\sqrt{5}}.$  We check that these solutions work."
-}

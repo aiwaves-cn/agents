@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\cos \\theta = \\frac{1}{3},$ find $\\cos 5 \\theta.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "By DeMoivre's Theorem,\n\\begin{align*}\n\\cos 5 \\theta + i \\sin 5 \\theta &= (\\cos \\theta + i \\sin \\theta)^5 \\\\\n&= \\cos^5 \\theta + 5i \\cos^4 \\theta \\sin \\theta - 10 \\cos^3 \\theta \\sin^2 \\theta - 10i \\cos^2 \\theta \\sin^3 \\theta + 5 \\cos \\theta \\sin^4 \\theta + i \\sin^5 \\theta.\n\\end{align*}Equating real parts, we get\n\\[\\cos 5 \\theta = \\cos^5 \\theta - 10 \\cos^3 \\theta \\sin^2 \\theta + 5 \\cos \\theta \\sin^4 \\theta.\\]Since $\\cos \\theta = \\frac{1}{3},$ $\\sin^2 \\theta = 1 - \\cos^2 \\theta = \\frac{8}{9}.$  Therefore,\n\\begin{align*}\n\\cos 5 \\theta &= \\cos^5 \\theta - 10 \\cos^3 \\theta \\sin^2 \\theta + 5 \\cos \\theta \\sin^4 \\theta \\\\\n&= \\left( \\frac{1}{3} \\right)^5 - 10 \\left (\\frac{1}{3} \\right)^3 \\cdot \\frac{8}{9} + 5 \\cdot \\frac{1}{3} \\cdot \\left( \\frac{8}{9} \\right)^2 \\\\\n&= \\boxed{\\frac{241}{243}}.\n\\end{align*}"
-}

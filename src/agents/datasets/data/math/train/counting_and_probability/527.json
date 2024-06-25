@@ -1,6 +1,0 @@
-{
-    "problem": "Call a set of integers \"spacy\" if it contains no more than one out of any three consecutive integers.  How many subsets of $\\{1, 2,\n3, \\dots, 12\\}$, including the empty set, are spacy?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "For each positive integer $n$, let $S_n = \\{k:1\\leq k\\leq\nn\\}$, and let $c_n$ be the number of spacy subsets of $S_n$.  Then $c_1=2$, $c_2=3$, and $c_3=4$. For $n\\geq 4$, the spacy subsets of $S_n$ can be partitioned into two types:  those that contain $n$ and those that do not.  Those that do not contain $n$ are precisely the spacy subsets of $S_{n-1}$.  Those that contain $n$ do not contain either $n-1$ or $n-2$ and are therefore in one-to-one correspondence with the spacy subsets of $S_{n-3}$.  It follows that $c_n=c_{n-3}+c_{n-1}$.  Thus the first twelve terms in the sequence $\\left(c_n\\right)$ are $2$, $3$, $4$, $6$, $9$, $13$, $19$, $28$, $41$, $60$, $88$, $129$, and there are $c_{12}=\\boxed{129}$ spacy subsets of $S_{12}$."
-}

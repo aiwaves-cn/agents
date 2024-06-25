@@ -1,6 +1,0 @@
-{
-    "problem": "What is the product of the digits in the base 8 representation of $6543_{10}$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "To convert to base 8, we realize $8^{5}>6543_{10}>8^{4}$. So, we can tell that $6543_{10}$ in base eight will have five digits. $8^{4}=4096$, which can go into 6543 only one time at most, leaving $6543-1\\cdot4096 = 2447$ for the next four digits. $8^{3}=512$ goes into 2447 four times at most, leaving us with $2447-4\\cdot512 = 399$. Then, $8^{2}=64$ goes into 399 six times at most, leaving $399-6\\cdot64 = 15$. Next, we have $8^{1}=8$, which can go into 15 one time, leaving $15-1\\cdot8 = 7$ for the ones digit. All together, the base eight equivalent of $6543_{10}$ is $14617_{8}$.  We are looking for the product of the digits, which is $1\\cdot4\\cdot6\\cdot1\\cdot7 = \\boxed{168}$."
-}

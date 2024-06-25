@@ -1,6 +1,0 @@
-{
-    "problem": "Reversing the digits in John's age results in his father's age. The positive difference between their ages is 27 years. If the sum of the digits in each age is 5, what is the number of years in John's father's age?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let $t$ and $u$ be the tens and units digits of John's age.  We are told that $t+u=5$ and $10u+t-(10t+u)=27$.  Rewriting the second equation as $9(u-t)=27$ and dividing by 9, we have \\begin{align*}\nt+u&=5 \\\\\nt-u&=3.\n\\end{align*} Summing these equations, we find $2t=8$, which implies $t=4$.  Substituting back into either equation, we find $u=1$, so John's father is $10t+u=\\boxed{41}$ years old."
-}

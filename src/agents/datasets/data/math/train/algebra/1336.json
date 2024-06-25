@@ -1,6 +1,0 @@
-{
-    "problem": "Uri buys two burgers and a soda for $\\$2.10$, and Gen buys a burger and two sodas for $\\$2.40$. How many cents does a soda cost?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let's work with this problem in cents, not dollars, because the answer calls for a number in cents. So, Uri's two burgers and a soda cost 210 cents and Gen's food costs 240 cents. Let a burger cost $b$ cents and a soda cost $s$ cents. We are trying to find the value of $s$. We can set up a system of two equations to represent the given information. These equations are:\n\n\\begin{align*}\n2b + s &= 210 \\\\\nb + 2s &= 240 \\\\\n\\end{align*}\n\nWe are solving for $s$, so we want to eliminate $b$ from the equations above. Multiplying both sides of the second equation by 2, we get $2b+4s = 480$, or $2b = 480 - 4s$. Substituting this equation into the first equation above to eliminate $b$, we get that $(480 - 4s) + s = 210$, or $s=90$. Thus, a soda costs $\\boxed{90}$ cents."
-}

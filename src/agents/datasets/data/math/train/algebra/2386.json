@@ -1,6 +1,0 @@
-{
-    "problem": "Find the intersection of the lines $9x-4y=6$ and $7x+y=17$. Express your answer as an ordered pair $(x,y)$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We can find $x$ by taking four times the second equation plus the first:\n\n$4(7x+y)+(9x-4y)=28x+9x=37x=4(17)+6=74\\implies x=2$.\n\nSubstituting into the second equation, we can find $y$:\n\n$7x+y=17\\implies y=17-7x=17-7(2)=3$.\n\nThus our answer is $\\boxed{(2,3)}$."
-}

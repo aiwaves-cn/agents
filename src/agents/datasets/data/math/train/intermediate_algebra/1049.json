@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of the equation \\[ x^2 + 4y^2 - 10x + 56y = k\\]is a non-degenerate ellipse if and only if $k > a.$ What is $a?$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "To try and write the given equation in standard form, we complete the square in each variable: \\[\\begin{aligned} (x^2-10x) + 4(y^2+14y) &= k \\\\ (x^2-10x+25) + 4(y^2+14y+49) &= k + 25 + 4(49) = k + 221 \\\\ (x-5)^2 + 4(y+7)^2 &= k + 221. \\end{aligned}\\]We see that if $k + 221 > 0,$ then we can divide both sides by $k + 221$ to obtain the standard form for the equation of an ellipse. On the other hand, if $k + 221 = 0,$ then this equation is only satisfied when $x-5 = 0$ and $y+7=0,$ so the graph of the equation only consists of a single point. And if $k + 221 < 0,$ then no points $(x, y)$ satisfy this equation. Therefore, the graph is a non-degenerate ellipse if and only if $k + 221 > 0,$ that is, $k > -221.$ Thus, $a = \\boxed{-221}.$"
-}

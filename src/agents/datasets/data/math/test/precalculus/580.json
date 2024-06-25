@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A = (1,-11,2),$ $B = (3,-4,1),$ and $C = (-2,1,-1).$  Compute $\\angle ABC,$ in degrees.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the distance formula, we compute that $AB = 3 \\sqrt{6},$ $AC = 9 \\sqrt{2},$ and $BC = 3 \\sqrt{6}.$  Then from the Law of Cosines,\n\\[\\cos \\angle ABC = \\frac{(3 \\sqrt{6})^2 + (3 \\sqrt{6})^2 - (9 \\sqrt{2})^2}{2 \\cdot 3 \\sqrt{6} \\cdot 3 \\sqrt{6}} = -\\frac{1}{2}.\\]Therefore, $\\angle ABC = \\boxed{120^\\circ}.$"
-}

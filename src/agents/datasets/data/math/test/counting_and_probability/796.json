@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can we seat 8 people around a table if Alice and Bob won't sit next to each other?  (Two seatings are the same if one is a rotation of the other.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 8 choices for seats for Alice to sit in.  Once Alice is seated, there are 5 seats left for Bob, since he won't sit in either seat immediately next to Alice.  This leaves 6 people to place in the remaining 6 seats, which can be done in $6!$ ways.  However, we must divide by 8 to account for the 8 rotations of the table.  So the number of arrangements is $\\dfrac{8 \\times 5 \\times 6!}{8} = 5 \\times 6! = \\boxed{3600}$. Alternatively, we can account for the rotations at the beginning, by fixing the table around Alice.  Bob can't sit in her seat, or the two seats next to her.  This leaves 5 places for him to sit.  Then, this leaves 6 unique seats for the 6 remaining people, so there are 6! ways to sit them after Bob is sitting.  So the answer is $5 \\times 6! = \\boxed{3600}$."
-}

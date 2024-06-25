@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$:\n\n$$x^2 + 4x + 3 = -(x + 3)(x + 5).$$",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Expanding the product on the right, we have $x^2 + 4x + 3 = -(x^2 + 8x + 15),$ so $x^2 + 4x + 3 + (x^2 + 8x + 15) = 0$.  Simplifying the left side gives $2x^2 + 12x + 18 = 0.$ Dividing by 2, we have $x^2 + 6x + 9 = 0$, so $(x + 3)(x + 3) = 0.$ The only solution for $x$ is $\\boxed{-3}.$"
-}

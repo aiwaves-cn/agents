@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\dbinom{4}{0}+\\dbinom{4}{1}+\\dbinom{4}{2}+\\dbinom{4}{3}+\\dbinom{4}{4}$.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We have \\begin{align*}\n\\dbinom{4}{0}&+\\dbinom{4}{1}+\\dbinom{4}{2}+\\dbinom{4}{3}+\\dbinom{4}{4} \\\\\n&= \\dfrac{4!}{0!4!} + \\dfrac{4!}{1!3!} + \\dfrac{4!}{2!2!} + \\dfrac{4!}{3!1!} + \\dfrac{4!}{4!0!} \\\\\n&= \\dfrac{4\\cdot 3\\cdot 2\\cdot 1}{4\\cdot 3\\cdot 2\\cdot 1} + \\dfrac{4\\cdot 3\\cdot 2\\cdot 1}{1\\cdot 3\\cdot 2\\cdot 1} + \\dfrac{4\\cdot 3\\cdot 2\\cdot 1}{2\\cdot 1\\cdot 2\\cdot 1}\\\\\n&\\qquad + \\dfrac{4\\cdot 3\\cdot 2\\cdot 1}{3\\cdot 2\\cdot 1\\cdot 1} + \\dfrac{4\\cdot 3\\cdot 2\\cdot 1}{4\\cdot 3\\cdot 2\\cdot 1} \\\\\n&= 1 + 4 + \\dfrac{4\\cdot3}{2} + 4 + 1 \\\\\n&= 1 + 4 + 6 + 4 + 1 \\\\\n&= \\boxed{16}.\n\\end{align*}Notice that this is $2^4$. There is an explanation for this: $$\\dbinom{4}{0}+\\dbinom{4}{1}+\\dbinom{4}{2}+\\dbinom{4}{3}+\\dbinom{4}{4}$$is the sum of the number of ways to choose $0$, $1$, $2$, $3$, or $4$ out of $4$ objects. This accounts for every way of choosing any number of the $4$ objects. There are $2\\times 2\\times 2\\times 2 = 2^4$ ways of doing so, because there are two options for each object: choose that object or don't choose it."
-}

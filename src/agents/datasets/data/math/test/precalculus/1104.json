@@ -1,6 +1,0 @@
-{
-    "problem": "Given $\\cos (\\alpha + \\beta) + \\sin (\\alpha - \\beta) = 0$ and $\\tan \\beta = \\frac{1}{2000},$ find $\\tan \\alpha.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "From the angle addition and subtraction formula, $\\cos (\\alpha + \\beta) + \\sin (\\alpha - \\beta) = 0$ becomes\n\\[\\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta + \\sin \\alpha \\cos \\beta - \\cos \\alpha \\sin \\beta = 0.\\]Dividing by $\\cos \\alpha \\cos \\beta,$ this becomes\n\\[1 - \\tan \\alpha \\tan \\beta + \\tan \\alpha - \\tan \\beta = 0.\\]We can factor this as\n\\[(1 + \\tan \\alpha)(1 - \\tan \\beta) = 0.\\]Since $\\tan \\beta \\neq 1,$ we have that $\\tan \\alpha = \\boxed{-1}.$"
-}

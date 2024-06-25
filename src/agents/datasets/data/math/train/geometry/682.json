@@ -1,6 +1,0 @@
-{
-    "problem": "A wooden model of a square pyramid has a base edge of 12 cm and an altitude of 8 cm. A cut is made parallel to the base of the pyramid that separates it into two pieces: a smaller pyramid and a frustum. Each base edge of the smaller pyramid is 6 cm and its altitude is 4 cm. How many cubic centimeters are in the volume of the frustum?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The piece that is removed from the original pyramid to create the frustum is itself a square pyramid that is similar to the original pyramid.  The ratio of corresponding side lengths is 1/2, so the piece that was removed has volume $(1/2)^3 = 1/8$ of the volume of the original pyramid.  Therefore, the remaining frustum has volume $1-(1/8) = {7/8}$ of the original pyramid.\n\nThe original pyramid has base area $12^2 = 144$ square cm, so its volume is $144\\cdot 8/3 = 48\\cdot 8$ cubic centimeters.  Therefore, the frustum has volume \\[\\frac{7}{8}\\cdot (48\\cdot 8) = 48\\cdot 7 = \\boxed{336}\\text{ cubic centimeters}.\\]"
-}

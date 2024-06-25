@@ -1,6 +1,0 @@
-{
-    "problem": "A fair 6-sided die is rolled.  If I roll $n$, then I win $n^2$ dollars.  What is the expected value of my win?  Express your answer as a dollar value rounded to the nearest cent.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Each number from 1 to 6 has probability $\\dfrac16$ of being rolled, so the expected value is \\begin{align*}\nE &= \\left(\\dfrac{1}{6}\\times \\$1^2\\right) + \\left(\\dfrac{1}{6}\\times \\$2^2\\right) + \\cdots + \\left(\\dfrac{1}{6} \\times \\$6^2\\right) \\\\\n&= \\dfrac{1}{6}(\\$1 + \\$4 + \\$9 + \\$16 + \\$25 + \\$36) \\\\\n&= \\$\\dfrac{91}{6} \\\\\n& \\approx \\boxed{\\$15.17}.\n\\end{align*}"
-}

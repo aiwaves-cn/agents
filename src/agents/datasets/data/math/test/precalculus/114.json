@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the solutions to\n\\[2 \\sin^3 x - 3 \\sin x = -\\frac{3}{2} \\sin 2x\\]in the interval $0 \\le x \\le 2 \\pi.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "By the double-angle formula, $\\sin 2x = 2 \\sin x \\cos x,$ so\n\\[2 \\sin^3 x - 3 \\sin x = -3 \\sin x \\cos x.\\]Moving everything to one side, and taking out a factor of $\\sin x,$ we get\n\\[\\sin x (2 \\sin^2 x - 3 \\cos x - 3) = 0.\\]From $\\sin^2 x = 1 - \\cos^2 x,$ $\\sin x (2 - 2 \\cos^2 x - 3 \\cos x - 3) = 0,$ or\n\\[\\sin x (-2 \\cos^2 x - 3 \\cos x - 1) = 0.\\]This factors as\n\\[-\\sin x (\\cos x - 1)(2 \\cos x - 1) = 0.\\]We have that $\\sin x = 0$ for $x = 0,$ $\\pi,$ and $2 \\pi,$ $\\cos x = 1$ for $x = 0$ and $x = 2 \\pi,$ and $\\cos x = \\frac{1}{2}$ for $x = \\frac{\\pi}{3}$ and $x = \\frac{5 \\pi}{3}.$  Thus, the sum of the solutions is\n\\[0 + \\frac{\\pi}{3} + \\pi + \\frac{5 \\pi}{3} + 2 \\pi = \\boxed{5 \\pi}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the equation whose graph is a parabola with vertex $(2,4)$, vertical axis of symmetry, and contains the point $(1,1)$. Express your answer in the form \"$ax^2+bx+c$\".",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since the axis of symmetry is vertical and the vertex is $(2,4)$, the parabola may also be written as  \\[y=a(x-2)^2+4\\] for some value of $a$.  Plugging the point $(1,1)$ into this expression gives  \\[1=a(1-2)^2+4=a+4.\\] This tells us $a=-3$.\n\nOur equation is  \\[y=-3(x-2)^2+4.\\] Putting it $y=ax^2+bx+c$ form requires expanding the square, so we get  \\[y=-3(x^2-4x+4)+4=\\boxed{-3x^2+12x-8}.\\]"
-}

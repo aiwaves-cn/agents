@@ -1,6 +1,0 @@
-{
-    "problem": "In convex quadrilateral $ABCD$, $\\angle A = \\angle C$, $AB=CD=180$, and $AD \\ne BC$.  The perimeter of $ABCD$ is 640. Find $\\cos A$.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\angle A = \\angle C = \\alpha$, $AD=x$, and $BC=y$.  Apply the Law of Cosines in triangles $ABD$ and $CDB$ to obtain $$BD^2=x^2+180^2-2\\cdot180x\\cos\\alpha =y^2+180^2-2\\cdot180\ny\\cos\\alpha.$$Because $x\\ne y$, this yields $$\\cos\\alpha={{x^2-y^2}\\over{2\\cdot180(x-y)}} ={{x+y}\\over360} =\n{280\\over360}=\\boxed{\\frac{7}{9}}.$$[asy]\npair A,B,C,D;\nA=(0,0);\nB=(10,0);\nC=(16,4);\nD=(8,6);\ndraw(A--B--C--D--cycle,linewidth(0.7));\ndraw(B--D,linewidth(0.7));\n\nlabel(\"{\\small $A$}\",A,SW);\nlabel(\"{\\small $B$}\",B,S);\nlabel(\"{\\small $C$}\",C,E);\nlabel(\"{\\small $D$}\",D,N);\nlabel(\"{\\small $\\alpha$}\",(1.5,-0.2),N);\nlabel(\"{\\small $\\alpha$}\",(15.2,3.8),W);\nlabel(\"{\\small 180}\",(5,0),S);\nlabel(\"{\\small 180}\",(12,5),NE);\nlabel(\"$x$\", (A + D)/2, NW);\nlabel(\"$y$\", (B + C)/2, SE);\n[/asy]"
-}

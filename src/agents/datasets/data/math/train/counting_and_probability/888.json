@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least number of colors needed to shade the tessellation shown, such that no two tiles sharing a side are the same color?\n\n[asy]\ndraw((-8,-2)--(8,-2));\ndraw((-8,2)--(8,2));\ndraw((-8,6)--(8,6));\ndraw((-8,10)--(8,10));\ndraw((-8,14)--(8,14));\npath a=(-8,14)--(-6.5,12)--(-10,8)--(-6.5,4)--(-10,0)--(-8,-2);\ndraw(a);\ndraw(shift((4,0))*a);\ndraw(shift((8,0))*a);\ndraw(shift((12,0))*a);\ndraw(shift((16,0))*a);\n[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Clearly one color isn't enough; $\\boxed{2}$ colors will work because the tessellation shown is topologically identical to a chessboard (that is, imagine straightening out the diagonal lines to form an array of squares. This process doesn't change which tiles share a side.)."
-}

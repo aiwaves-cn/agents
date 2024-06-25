@@ -1,6 +1,0 @@
-{
-    "problem": "The digits 2, 3, 5 and 7 are arranged randomly to form a four-digit number. What is the probability that the number is odd? Express your answer as a common fraction.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "The number formed is odd if and only if its units digit is not 2. Since the digits 2, 3, 5, and 7 are arranged randomly, the probability that 2 is the units digit is 1/4. Therefore, the probability that the number is odd is $1-1/4=\\boxed{\\frac{3}{4}}$."
-}

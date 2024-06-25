@@ -1,6 +1,0 @@
-{
-    "problem": "Find a quadratic with rational coefficients and quadratic term $x^2$ that has $\\sqrt{3}-2$ as a root.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since the root $\\sqrt{3}-2$ is irrational but the coefficients of the quadratic are rational, from the quadratic formula we can see that the other root must be $-\\sqrt{3}-2.$\n\nTo find the quadratic, we can note that the sum of the roots is $\\sqrt{3}-2-\\sqrt{3}-2=-4$ and the product is $(\\sqrt{3}-2)(-\\sqrt{3}-2) =4-3=1.$ Then by Vieta's formulas, we know that the quadratic $\\boxed{x^2+4x+1}$ has $\\sqrt{3}-2$ as a root."
-}

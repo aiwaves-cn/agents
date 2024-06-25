@@ -1,6 +1,0 @@
-{
-    "problem": "Express as a fraction in lowest terms: $0.\\overline{1} + 0.\\overline{01}$",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We begin by realizing that $0.\\overline{1}=0.\\overline{11}$, so $0.\\overline{1}+0.\\overline{01}=0.\\overline{11}+0.\\overline{01}=0.\\overline{12}$. (Note that this can be done because there is no carrying involved.)\n\nTo express the number $0.\\overline{12}$ as a fraction, we call it $x$ and subtract it from $100x$: $$\\begin{array}{r r c r@{}l}\n&100x &=& 12&.121212\\ldots \\\\\n- &x &=& 0&.121212\\ldots \\\\\n\\hline\n&99x &=& 12 &\n\\end{array}$$ This shows that $0.\\overline{12} = \\frac{12}{99}$.\n\nBut that isn't in lowest terms, since $12$ and $99$ share a common factor of $3$. We can reduce $\\frac{12}{99}$ to $\\boxed{\\frac{4}{33}}$, which is in lowest terms."
-}

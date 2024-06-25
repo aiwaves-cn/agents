@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers $-11 \\leq n \\leq 11$ satisfy $(n-2)(n+4)(n + 8)<0$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since $(n-2)(n+4)(n+8)=0$ when $n=2, -4,$ or $-8$, we will consider the four cases $-11 \\leq n < -8$, $-8<n<-4$, $-4<n<2$, and $2<n\\leq 11$ separately. If $n=2$, $n=-4$, or $n=-8$, then all three factors are 0.   If $n>2$, then all three factors are positive. If $-4<n<2$, then $n-2$ is negative, while the other two factors are positive, so the product is negative. If $-8<n<-4$, then $n+8$ is positive, while the other two factors are negative, so the product is positive. If $n<-8$, then all three factors are negative, so the product is negative. In total, there are $\\boxed{8}$ solutions: $-11,-10,-9,-3,-2,-1,0,1$."
-}

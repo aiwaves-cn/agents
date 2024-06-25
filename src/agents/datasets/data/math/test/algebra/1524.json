@@ -1,6 +1,0 @@
-{
-    "problem": "The first term of an arithmetic sequence is 1, another term of the sequence is 91 and all of the terms of the sequence are integers. How many distinct arithmetic sequences meet these three conditions?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "An arithmetic sequence is formed by adding the common difference to each term to find the next term.  Thus, the common difference must evenly divide the difference $91-1=90$.  Each factor of 90 will correspond to one possible sequence.  For example, the factor 30 corresponds to the sequence $1,31,61,91,...$.  So, we need to count the factors of 90.  Factoring, we find: $$90=2\\cdot 3^2\\cdot 5$$ So, 90 has: $$(1+1)(2+1)(1+1)=12\\text{ factors}$$ This corresponds to $\\boxed{12}$ possible sequences."
-}

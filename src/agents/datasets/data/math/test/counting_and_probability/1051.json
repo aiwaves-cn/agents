@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that I have an unlimited supply of identical math books, history books, and physics books.  All are the same size, and I have room on a shelf for 8 books.  In how many ways can I arrange eight books on the shelf if no two books of the same type can be adjacent?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We can choose any book for the first position on the shelf.  This is $3$ possibilities.  After placing this book, we can choose either of the other two types of books to place directly after it.  Similarly, there will be two choices for the third book once the second has been chosen.  There will be two choices for each book after the first.  So, the total number of ways to arrange the books on the shelf will be: $$3\\times2\\times2\\times2\\times2\\times2\\times2\\times2=3\\cdot2^7=\\boxed{384}.$$"
-}

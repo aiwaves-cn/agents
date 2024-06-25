@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[\\frac{|x^2 - 81|}{x^2 - 36x} < 0.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $|x^2 - 81| \\ge 0$ for all $x,$ with $|x^2 - 81| = 0$ only for $x = \\pm 9.$\n\nThe denominator factors as $x(x - 36).$  This is negative only for $0 < x < 36.$  Thus, the solution is\n\\[x \\in \\boxed{(0,9) \\cup (9,36)}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\pi=3.1415926...$, what is the exact value of $|\\pi-3.14|+|\\pi-\\frac{22}{7}|$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $\\pi>3.14$, we know that $\\pi-3.14>0$, and so $|\\pi-3.14|=\\pi-3.14$.  Also, since $\\pi<22/7=3.\\overline{142857}$, we have $|\\pi-\\frac{22}{7}|=\\frac{22}{7}-\\pi$.  The exact value of the sum is \\begin{align*}\n|\\pi-3.14|+\\left|\\pi-\\frac{22}{7}\\right|&=\\pi-3.14+\\frac{22}{7}-\\pi \\\\\n&=\\frac{22}{7}-3.14 \\\\\n&=\\frac{22}{7}-\\frac{314}{100} \\\\\n&=\\frac{2200}{700}-\\frac{7(314)}{700} \\\\\n&=\\frac{2200-2198}{700}\\\\\n&=\\frac{2}{700}\\\\\n&=\\boxed{\\frac{1}{350}}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A card is drawn at random from a standard 52-card deck.  What is the probability that it is an odd number (3,5,7,9) or a $\\spadesuit$ (or both)?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are 16 odd-numbered cards, namely 4 suits for each of the 4 odd digits. There are 13 $\\spadesuit$s, but 4 of these we already counted among the odd-numbered cards.  So the total number of cards that are odd or a $\\spadesuit$ is $16+(13-4)=25$, and the probability is $\\boxed{\\dfrac{25}{52}}$."
-}

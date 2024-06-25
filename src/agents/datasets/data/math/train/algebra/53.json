@@ -1,6 +1,0 @@
-{
-    "problem": "The teacher asks Bill to calculate $a-b-c$, but Bill mistakenly calculates $a-(b-c)$ and gets an answer of 11. If the correct answer was 3, what is the value of $a-b$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Instead of calculating $a - b - c$, Bill calculated $a - b + c$.  Therefore, the value of $a - b$ is simply the average of the two, making for $\\frac{11+3}{2} = \\boxed{7}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A club has 20 members, 12 boys and 8 girls.  Two of the members are chosen at random.  What is the probability that a boy and a girl are chosen?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{20}{2} = 190$ ways to choose two members of the group. There are $12$ ways to choose a boy and $8$ ways to choose a girl for a total of $12 \\cdot 8 = 96$ ways to choose a boy and a girl.  This means that there is a $\\dfrac{96}{190} = \\boxed{\\dfrac{48}{95}}$ chance that the two random members of the group are a boy and a girl."
-}

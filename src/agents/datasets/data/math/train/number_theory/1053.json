@@ -1,6 +1,0 @@
-{
-    "problem": "Find the difference between $1000_7$ and $666_7$ in base $7$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Setting up the subtraction and borrowing as shown: $$\\begin{array}{c@{}c@{}c@{}c@{}c} &&&&\\\\ &\\cancelto{0}{1}&\\cancelto{6}{0}&\\cancelto{6}{0}&{\\cancelto{7}{0}}_{7}\\\\ &-&6&6&6_7\\\\ \\cline{2-5} &&&&1_7.\\\\ \\end{array}$$So the difference is $\\boxed{1_7}$."
-}

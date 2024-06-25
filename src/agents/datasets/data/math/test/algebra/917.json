@@ -1,6 +1,0 @@
-{
-    "problem": "Chris labels every lattice point in the coordinate plane with the square of the distance from the point to the origin (a lattice point is a point such that both of its coordinates are integers). How many times does he label a point with the number $25$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Consider the point $(x,y)$. Then, he labels the point with the number $$(\\sqrt{(x-0)^2 + (y-0)^2})^2 = x^2 + y^2,$$ so it follows that $x^2 + y^2 = 25$. From here, some casework needs to be done to find the number of pairs $(x,y)$ that satisfy $x^2 + y^2 = 25$. We note that $x^2 = 25 - y^2 \\le 25 \\Longrightarrow |x| \\le 5$, and so $|x|$ can only be equal to $0,1,2,3,4,5$. Of these, only $0,3,4,5$ produce integer solutions for $|y|$.\n\nIf $|x| = 3$, then $|y| = 4$, and any of the four combinations $(3,4)(-3,4)(3,-4)(-3,-4)$ work. Similarly, if $|x| = 4, |y| = 3$, there are four feasible distinct combinations.\n\nIf $|x| = 0$, then $|y| = 5$, but then there is only one possible value for $x$, and so there are only two combinations that work: $(0,5)$ and $(0,-5)$. Similarly, if $|x| = 5, |y| = 0$, there are two feasible distinct combinations.\nIn total, there are $\\boxed{12}$ possible pairs of integer coordinates that are labeled with $25$."
-}

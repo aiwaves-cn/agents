@@ -1,6 +1,0 @@
-{
-    "problem": "How many squares have all four vertices on the 5 by 5 rectangular grid of dots below? Two such squares are displayed. [asy]\nsize(50);\nfor(int i = 0; i < 5; ++i){\n\nfor(int j = 0; j < 5; ++j){\n\ndot((i,j));\n\n}\n}\ndraw((0,4)--(1,4)--(1,3)--(0,3)--cycle,linewidth(0.7));\ndraw((2,0)--(4,1)--(3,3)--(1,2)--cycle,linewidth(0.7));\n[/asy]",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Identify all the possible sizes of squares and count the number of squares of each size separately.   \\[\n\\begin{array}{cc}\n\\text{Size} & \\text{number of squares} \\\\ \\hline\n\\rule{0pt}{12pt}1\\times 1 & 16 \\\\\n2 \\times 2 & 9 \\\\\n3 \\times 3 & 4 \\\\\n4 \\times 4 & 1 \\\\\n\\sqrt{2}\\times\\sqrt{2} & 9 \\\\\n\\sqrt{5}\\times\\sqrt{5} & 8 \\\\\n\\sqrt{8}\\times\\sqrt{8} & 1 \\\\\n\\sqrt{10}\\times\\sqrt{10} & 2\n\\end{array}\n\\] The sum of the numbers in the second column is $\\boxed{50}$.\n\nNote: the possible side lengths of a square drawn on a square grid with $n^2$ dots are the real numbers of the form $\\sqrt{x^2+y^2}$ where $x$ and $y$ are nonnegative integers satisfying $x+y\\leq n-1$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the minimum value of $\\frac{9x^2\\sin^2 x + 4}{x\\sin x}$ for $0 < x < \\pi.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The given expression can be rewritten as \\[9x\\sin x + \\frac{4}{x \\sin x}\\]or $9y + \\frac{4}{y},$ where $y = x \\sin x.$ By the AM-GM inequality, we have \\[\\frac{9y + \\frac{4}{y}}{2} \\ge \\sqrt{9y \\cdot \\frac{4}{y}} = 6,\\]so $9y + \\frac{4}{y} \\ge \\boxed{12},$ which is the answer.\n\nTo see that the minimum is achievable, recall that equality in AM-GM holds when all the terms are equal. Therefore, we want $9y = \\tfrac{4}{y},$ or $y = x \\sin x = \\tfrac{2}{3}.$ Since $x \\sin x$ is a continuous function of $x,$ and $0 \\sin 0 = 0 < \\tfrac{2}{3}$ while $\\tfrac{\\pi}{2} \\sin \\tfrac{\\pi}{2} = \\tfrac{\\pi}{2} > \\tfrac{2}{3},$ the equation $x \\sin x = \\tfrac{2}{3}$ must have a solution in the given interval. Therefore, equality holds for some value of $x.$"
-}

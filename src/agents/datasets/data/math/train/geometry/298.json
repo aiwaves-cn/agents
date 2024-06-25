@@ -1,6 +1,0 @@
-{
-    "problem": "The sides of triangle $PQR$ are tangent to a circle with center $C$ as shown. Given that $\\angle PQR = 65^\\circ$ and $\\angle QRC = 30^\\circ$, find $\\angle QPR$, in degrees.\n\n[asy]\nunitsize(1.0 cm);\n\npair Q, P, R, C;\n\nQ = (2.43,3.46);\nP = (0,0);\nR = (4.43,0);\nC = incenter(Q,P,R);\n\ndraw(Q--P--R--cycle);\ndraw(incircle(Q,P,R));\ndraw(R--C);\n\nlabel(\"$Q$\", Q, N);\nlabel(\"$P$\", P, SW);\nlabel(\"$R$\", R, SE);\nlabel(\"$C$\", C, N);\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The circle with center $C$ is the incircle of $\\triangle PQR$. So, any segment from a vertex of the triangle to $C$ is an angle bisector.\n\nFrom $\\angle QRC = 30^\\circ$, we find that $\\angle QRP = 60^\\circ$ because $RC$ is an angle bisector.\n\nThe sum of the measures of the internal angles of a triangle is $180^\\circ$, so\n\n\\begin{align*}\n\\angle QPR &= 180^\\circ - \\angle PQR - \\angle QRP \\\\\n&= 180^\\circ - 65^\\circ - 60^\\circ.\n\\end{align*}This yields $\\angle QPR = \\boxed{55^\\circ}$."
-}

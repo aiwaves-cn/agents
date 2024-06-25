@@ -1,6 +1,0 @@
-{
-    "problem": "If $n = 2^{10} \\cdot 3^{14} \\cdot 5^{8}$, how many of the natural-number factors of $n$ are multiples of 150?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "$150=2^13^15^2$.  Thus the coefficient of $2$ must be between $1$ and $10$, the coefficient of $3$ must be between $1$ and $14$, and the coefficient of $5$ must be between $2$ and $8$.  So the number of possible factors is\n\n$$(10)(14)(7)=\\boxed{980}$$"
-}

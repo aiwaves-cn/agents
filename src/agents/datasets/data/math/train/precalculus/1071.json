@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be vectors such that $\\|\\mathbf{a}\\| = 2,$ $\\|\\mathbf{b}\\| = 5,$ and $\\|\\mathbf{a} \\times \\mathbf{b}\\| = 8.$  Find $|\\mathbf{a} \\cdot \\mathbf{b}|.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Recall that\n\\[\\|\\mathbf{a} \\times \\mathbf{b}\\| = \\|\\mathbf{a}\\| \\|\\mathbf{b}\\| \\sin \\theta,\\]where $\\theta$ is the angle between $\\mathbf{a}$ and $\\mathbf{b}.$  Hence,\n\\[8 = 2 \\cdot 5 \\cdot \\sin \\theta,\\]so $\\sin \\theta = \\frac{4}{5}.$  Then\n\\[\\cos^2 \\theta = 1 - \\sin^2 \\theta = \\frac{9}{25},\\]so $\\cos \\theta = \\pm \\frac{3}{5}.$  Hence,\n\\[|\\mathbf{a} \\cdot \\mathbf{b}| = \\|\\mathbf{a}\\| \\|\\mathbf{b}\\| |\\cos \\theta| = 2 \\cdot 5 \\cdot \\frac{3}{5} = \\boxed{6}.\\]"
-}

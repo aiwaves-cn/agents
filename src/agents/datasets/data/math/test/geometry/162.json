@@ -1,6 +1,0 @@
-{
-    "problem": "A paper cone is to be made from a three-quarter circle having radius 4 inches (shaded). What is the length of the arc on the discarded quarter-circle (dotted portion)? Express your answer in terms of $\\pi$.\n\n[asy]\nsize(80);\nimport graph;\ndraw(Arc((0,0),1,0,90),linetype(\"2 4\"));\nfilldraw((0,0)--(0,1)--Arc((0,0),1,90,360)--cycle,gray(.6),linewidth(1));\nlabel(\"$4''$\",(.5,0),S,fontsize(12pt));[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The total circumference of the original circle was $2\\cdot 4 \\cdot \\pi = 8\\pi$.  The quarter-circle has length that is $\\frac{1}{4}$ of this, or $\\frac{1}{4}\\cdot 8\\pi = \\boxed{2\\pi}$ inches."
-}

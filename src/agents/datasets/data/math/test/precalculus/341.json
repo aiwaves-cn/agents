@@ -1,6 +1,0 @@
-{
-    "problem": "The matrix for projecting onto a certain line $\\ell,$ which passes through the origin, is given by\n\\[\\begin{pmatrix} \\frac{1}{50} & \\frac{7}{50} \\\\ \\frac{7}{50} & \\frac{49}{50} \\end{pmatrix}.\\]Find the direction vector of line $\\ell.$  Enter your answer in the form $\\begin{pmatrix} a \\\\ b \\end{pmatrix},$ where $a,$ and $b$ are integers, $a > 0,$ and $\\gcd(|a|,|b|) = 1.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{P}$ denote the given matrix, so $\\mathbf{P} \\mathbf{v}$ is the projection of $\\mathbf{v}$ onto $\\ell.$  In particular, $\\mathbf{P} \\mathbf{v}$ lies on $\\ell$ for any vector $\\mathbf{v}.$  So, we can take $\\mathbf{v} = \\mathbf{i}.$  Then\n\\[\\mathbf{P} \\mathbf{i} = \\begin{pmatrix} \\frac{1}{50} \\\\ \\frac{7}{50} \\end{pmatrix} = \\frac{1}{50} \\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix}.\\]Thus, the direction vector we seek is $\\boxed{\\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix}}.$"
-}

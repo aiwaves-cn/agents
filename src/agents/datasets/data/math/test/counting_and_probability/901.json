@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can a President, Vice-President, and Treasurer be chosen from a group of $4$ guys and $4$ girls and at least one girl and at least one guy holds at least one of those three positions? One person cannot serve in more than one position.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We have $8$ choices for president, $7$ choices for vice-president, and $6$ choices for treasurer, for a total of $8\\times7\\times6 = 336$ choices. Now we have to subtract the number of choices that don't satisfy the requirement, where the $3$ officers are all boys or all girls. For either case, we have $4$ choices for president, $3$ choices of vice-president, and $2$ choices for treasurer, a total of $4\\times3\\times2 = 24$ choices. So we have $2\\times 24 = 48$ total choices that don't satisfy the requirement.\n\nThus, there are $336-48=\\boxed{288}$ good choices."
-}

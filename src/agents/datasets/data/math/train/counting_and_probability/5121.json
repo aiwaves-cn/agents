@@ -1,6 +1,0 @@
-{
-    "problem": "At the end of a professional bowling tournament, the top 5 bowlers have a playoff. First #5 bowls #4. The loser receives $5$th prize and the winner bowls #3 in another game. The loser of this game receives $4$th prize and the winner bowls #2. The loser of this game receives $3$rd prize and the winner bowls #1. The winner of this game gets 1st prize and the loser gets 2nd prize. In how many orders can bowlers #1 through #5 receive the prizes?\n$\\textbf{(A)}\\ 10\\qquad \\textbf{(B)}\\ 16\\qquad \\textbf{(C)}\\ 24\\qquad \\textbf{(D)}\\ 120\\qquad \\textbf{(E)}\\ \\text{none of these}$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We have $2$ choices for who wins the first game, and that uniquely determines $5^{\\text{th}}$ place. Then there are $2$ choices for a next game and that uniquely determines $4^{\\text{th}}$ place, followed by $2$ choices for the next game that uniquely determines $3^{\\text{rd}}$ place. Finally, there are $2$ choices for the last game, which uniquely determines both $1^{\\text{st}}$ and $2^{\\text{nd}}$ places, since the winner is $1^{\\text{st}}$ and the loser is $2^{\\text{nd}}$. Thus the number of possible orders is $2 \\times 2 \\times 2 \\times 2 = \\boxed{16}$."
-}

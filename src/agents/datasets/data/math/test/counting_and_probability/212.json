@@ -1,6 +1,0 @@
-{
-    "problem": "An international meeting is held between England, Germany, and France.  Three representatives attend from England, four from Germany, and two from France.  How many ways can all nine representatives sit around a circular table, if representatives of the same country sit together?  (Two ways are considered the same if one can be rotated to produce the other.)",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "To begin, consider the number of ways to arrange the three countries around the circle.  We can consider the English representatives a block, the Germans another block, and the French a third block.  There are $(3-1)!=2$ ways to arrange these three blocks around a circle.  We can also see this by simply drawing the two possible arrangements: [asy]\nlabel(\"E\",(0,0));\nlabel(\"F\",(-.75,-1));\nlabel(\"G\",(.75,-1));\nlabel(\"E\",(3,0));\nlabel(\"F\",(3.75,-1));\nlabel(\"G\",(2.25,-1));\n[/asy] Within the English group, there are $3!=6$ ways to arrange the three representatives.  Similarly, there are $4!$ ways to arrange the Germans and $2!$ ways to arrange the French representatives.  Overall, the total number of ways to seat the 9 representatives is: $$2!\\times3!\\times4!\\times2!=2\\times6\\times24\\times2=\\boxed{576}$$"
-}

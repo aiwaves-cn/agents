@@ -1,6 +1,0 @@
-{
-    "problem": "If $n$ and $k$ are positive integers such that $5<\\frac nk<6$, then what is the smallest possible value of $\\frac{\\mathop{\\text{lcm}}[n,k]}{\\gcd(n,k)}$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We can consider both $n$ and $k$ as multiples of their greatest common divisor: \\begin{align*}\nn &= n'\\cdot\\gcd(n,k), \\\\\nk &= k'\\cdot\\gcd(n,k),\n\\end{align*}where $n'$ and $k'$ are relatively prime integers. Then $\\mathop{\\text{lcm}}[n,k] = \\frac{n\\cdot k}{\\gcd(n,k)} = n'\\cdot k'\\cdot\\gcd(n,k)$, so $$\\frac{\\mathop{\\text{lcm}}[n,k]}{\\gcd(n,k)} = n'k'.$$We have $\\frac{n'}{k'} = \\frac nk$. So, we wish to minimize $n'k'$ under the constraint that $5<\\frac{n'}{k'}<6$. That is, we wish to find the smallest possible product of the numerator and denominator of a fraction whose value is between 5 and 6. Clearly the denominator $k'$ is at least $2$, and the numerator $n'$ is at least $5(2)+1=11$, so the smallest possible value for $n'k'$ is $(11)(2)=\\boxed{22}$.\n\nNote that this result, $\\frac{\\mathop{\\text{lcm}}[n,k]}{\\gcd(n,k)}=22$, can be achieved by the example $n=11,k=2$."
-}

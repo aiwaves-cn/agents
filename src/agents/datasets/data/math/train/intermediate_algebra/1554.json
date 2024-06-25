@@ -1,6 +1,0 @@
-{
-    "problem": "Point $O$ is the center of an ellipse with major axis $\\overline{AB}$ and minor axis $\\overline{CD}.$  Point $F$ is one focus of the ellipse.  If $OF = 6$ and the diameter of the inscribed circle of triangle $OCF$ is 2, compute the product $(AB)(CD).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = OA = OB$ and $b = OC = OD.$  Then $a^2 - b^2 = OF^2 = 36.$\n\n[asy]\nunitsize(0.5 cm);\n\npath ell = xscale(5)*yscale(3)*Circle((0,0),1);\npair A, B, C, D, F, O;\n\nA = (5,0);\nB = (-5,0);\nC = (0,3);\nD = (0,-3);\nF = (4,0);\nO = (0,0);\n\ndraw(ell);\ndraw(A--B);\ndraw(C--D);\ndraw(C--F);\ndraw(incircle(O,C,F));\n\nlabel(\"$A$\", A, E);\nlabel(\"$B$\", B, W);\nlabel(\"$C$\", C, N);\nlabel(\"$D$\", D, S);\nlabel(\"$F$\", F, S);\nlabel(\"$O$\", O, SW);\n[/asy]\n\nIn general, if a right triangle has legs $x$ and $y,$ and hypotenuse $z,$ then its inradius is given by\n\\[\\frac{x + y - z}{2}.\\]Hence, the diameter of the incircle of triangle $OCF$ is\n\\[OC + OF - CF = 2.\\]Then $b + 6 - a = 2,$ so $a - b = 4.$\n\nBy difference of squares on the equation $a^2 - b^2 = 36,$ $(a + b)(a - b) = 36,$ so\n\\[a + b = \\frac{36}{a - b} = 9.\\]With the equation $a - b = 4,$ we can solve to get $a = \\frac{13}{2}$ and $b = \\frac{5}{2}.$\n\nThen $AB = 13$ and $CD = 5,$ so $(AB)(CD) = \\boxed{65}.$"
-}

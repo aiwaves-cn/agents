@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be positive real numbers.  Find the minimum value of\n\\[\\frac{a}{b} + \\frac{5b}{a}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[\\frac{a}{b} + \\frac{5b}{a} \\ge 2 \\sqrt{\\frac{a}{b} \\cdot \\frac{5b}{a}} = 2 \\sqrt{5}.\\]Equality occurs when $\\frac{a}{b} = \\frac{5b}{a},$ or $a^2 = 5b^2,$ so the minimum value is $\\boxed{2 \\sqrt{5}}.$"
-}

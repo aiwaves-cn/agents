@@ -1,6 +1,0 @@
-{
-    "problem": "When $(x\\sqrt{x^3})^4$ is simplified, what is the exponent of $x$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We have  \\begin{align*}\n(x\\sqrt{x^3})^4 &=(x\\cdot x^{\\frac{3}{2}})^4\\\\\n&=(x^{1+\\frac{3}{2}})^4\\\\\n&= (x^{\\frac{5}{2}})^4\\\\\n&= x^{\\frac{5}{2}\\cdot4}\\\\\n&= x^{10}\n\\end{align*} So, the exponent of $x$ is $\\boxed{10}$."
-}

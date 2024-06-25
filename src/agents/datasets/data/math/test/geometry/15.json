@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, what is the area of $\\triangle ABC$? [asy]\nsize(5cm);\nreal xmax = 15; real ymax = 13; real xmin = -3; real ymin = -3;\npair a = (4, 9); pair b = (0, 0); pair c = (12, 0); draw(b--a--c);\ndraw((xmin, 0)--(xmax, 0), Arrow); label(\"$x$\", (xmax, 0), E);\ndraw((0, ymin)--(0, ymax), Arrow); label(\"$y$\", (0, ymax), N);\nlabel(\"$B(0, 0)$\", b, SW);\nlabel(\"$C(12, 0)$\", c, S);\nlabel(\"$A(4, 9)$\", a, N);\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "We think of $BC$ as the base of $\\triangle ABC$. Its length is $12$.\n\nSince the $y$-coordinate of $A$ is $9$, then the height of $\\triangle ABC$ from base $BC$ is $9$.\n\nTherefore, the area of $\\triangle ABC$ is $\\frac12 (12)(9) = \\boxed{54}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Circle $C$ has radius 10 cm. How many square centimeters are in the area of the largest possible inscribed triangle having one side as a diameter of circle $C$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "We may consider the diameter of circle $C$ as the base of the inscribed triangle; its length is $20\\text{ cm}$. Then the corresponding height extends from some point on the diameter to some point on the circle $C$. The greatest possible height is a radius of $C$, achieved when the triangle is right isosceles: [asy]\nunitsize(8);\ndraw(Circle((0,0),10));\ndraw(((-10,0)--(10,0)));\nlabel(\"$20$\",(0,0),S);\ndraw(((-10,-0.8)--(-0.8,-0.6)),BeginArrow);\ndraw(((0.8,-0.8)--(10,-0.8)),EndArrow);\ndraw(((-10,0)--(0,10)));\ndraw(((0,10)--(10,0)));\ndraw(((0,0)--(0,10)),dashed);\nlabel(\"$10$\",(0,2.5),E);\n[/asy] In this case, the height is $10\\text{ cm}$, so the area of the triangle is $$\\frac 12\\cdot 20\\cdot 10 = \\boxed{100}\\text{ square centimeters}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Three mutually tangent spheres of radius 1 rest on a horizontal plane.  A sphere of radius 2 rests on them.  What is the distance from the plane to the top of the larger sphere?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $A,B,C$ and $E$ be  the centers of the three small spheres and the large sphere, respectively. Then $\\triangle ABC$ is equilateral with side length 2. If $D$ is the intersection of the medians of $\\triangle ABC$, then $E$ is directly above $D$. Because $AE=3$ and $AD=2\\sqrt{3}/3$, it follows that \\[\nDE= \\sqrt{3^{2}-\\left(\\frac{2\\sqrt{3}}{3}\\right)^{2}}= \\frac{\\sqrt{69}}{3}.\n\\]Because $D$ is 1 unit above the plane and the top of the larger sphere is 2 units above $E$, the distance from the plane to the top of the larger sphere is \\[\n\\boxed{3+ \\frac{\\sqrt{69}}{3}}.\n\\][asy]\npair A,B,C,D;\nA=(10,0);\nB=(0,0);\nC=(5,8.7);\nD=(5,2.9);\ndraw(Circle(A,5),linewidth(0.7));\ndraw(Circle(B,5),linewidth(0.7));\ndraw(Circle(C,5),linewidth(0.7));\ndraw(A--B--C--cycle,linewidth(0.7));\ndraw(C--D--B,linewidth(0.7));\ndraw(D--A,linewidth(0.7));\nlabel(\"1\",(2.5,0),S);\nlabel(\"1\",(7.5,0),S);\nlabel(\"$A$\",(10,0),SE);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(5,8.7),N);\nlabel(\"$D$\",(3,4),S);\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\gcd(6^210^2,15^4)$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We begin by breaking down $6^210^2$ and $15^4$ into prime factors. Thus we are looking for \\begin{align*}\n\\gcd(6^210^2,15^4) &= \\gcd(2^23^2\\cdot 2^25^2,3^45^4) \\\\\n&= \\gcd(2^43^25^2,3^45^4).\n\\end{align*}To build the greatest common divisor of two integers with known prime factors, we take the smaller power of each prime: $$\\gcd(2^43^25^2,3^45^4) = 3^25^2 = 15^2 = \\boxed{225}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Two adjacent sides of a rhombus form a $60$-degree angle. If each side of the rhombus measures $2$ cm, what is the area of the rhombus, in square centimeters? Express your answer in simplest radical form.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "In rhombus $ABCD$, the acute angle $DAB$ has a measure of $60^\\circ$. We drop a perpendicular from $D$ to $\\overline{AB}$, which creates a 30-60-90 right triangle. Since the hypotenuse $\\overline{AD}$ has a length of $2$ cm, the length of $\\overline{AE}$ is $\\frac{AD}{2}=1$ cm and the length of $\\overline{DE}$ is $AE\\cdot\\sqrt{3}=\\sqrt{3}$ cm. We now know the base of the rhombus is $2$ cm and the height of the rhombus is $\\sqrt{3}$ cm, so the area is $bh=\\boxed{2\\sqrt{3}}$ sq cm.\n\n[asy]/* size(50); import three; defaultpen(linewidth(0.7)); currentprojection = orthographic(1,-2,1/2);\n\n*/ size(100); defaultpen(linewidth(0.7)); real sx = 0.6, sy = 0.2;\npath f1 = (0,0)--(1,1.7)--(3,1.7)--(2,0)--cycle;\nfilldraw(f1, rgb(0.9,0.9,0.9));\npath f2=(1,1.7)--(1,0);\ndraw(f2);\nlabel(\"$A$\",(0,0),SW);\nlabel(\"$B$\",(2,0),SE);\nlabel(\"$C$\",(3,1.7),NE);\nlabel(\"$D$\",(1,1.7),NW);\nlabel(\"$E$\",(1,0),S);\n\n[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Link is coloring a triforce, which consists of four equilateral triangles and is depicted below. He has three colors to use: gold, black, and green. So that it remains recognizable, he doesn't want to color any two triangles the same color if they share a side. How many different ways can he color the triforce? (Two colorings that differ by rotation are considered distinct.) [asy]\nsize(50);\ndraw((0,0)--(2,0)--(1,1.732)--cycle);\ndraw((1,0)--(1.5,.866)--(.5,.866)--cycle);\n[/asy]",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 3 ways to choose a color for the center.  Once the center color is chosen, for each of the remaining triangles there are 2 ways to choose a color (any color except the center color).  Therefore, there are $3\\times 2\\times 2\\times 2 = \\boxed{24}$ ways to color the triforce."
-}

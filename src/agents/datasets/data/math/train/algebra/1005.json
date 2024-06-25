@@ -1,6 +1,0 @@
-{
-    "problem": "Sam is hired for a 20-day period. On days that he works, he earns $\\$$60. For each day that he does not work, $\\$$30 is subtracted from his earnings. At the end of the 20-day period, he received $\\$$660. How many days did he not work?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Call $x$ the number of days Sam works and $y$ the number of days he does not. We can set up the following system of equations to represent the given information: \\begin{align*}\nx+y &= 20 \\\\\n60x - 30y &= 660 \\\\\n\\end{align*} The first equation represents the total number of days Sam works, and the second equation represents his total profit. Solving for $x$ in the first equation yields $x = 20 - y$. Substituting into the second equation gives $60(20-y) - 30y = 660$. Canceling a factor of $10$ and multiplying out gives $120 - 6y - 3y = 66$. This simplifies to $-9y = -54$, or $y = 6$. Thus, Sam did not work for $\\boxed{6}$ days."
-}

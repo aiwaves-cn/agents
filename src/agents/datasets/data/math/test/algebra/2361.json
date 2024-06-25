@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $x^2 + \\frac{1}{x^2} = 7$, what is the value of $x^4 + \\frac{1}{x^4}$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Observe that \\[\n\\left(x^2+\\frac{1}{x^2}\\right)^2=x^4+2\\cdot x^2\\left(\\frac{1}{x^2}\\right)+\\frac{1}{x^4}=x^4+\\frac{1}{x^4}+2.\n\\] Therefore, $x^4+\\frac{1}{x^4}=\\left(x^2+\\frac{1}{x^2}\\right)^2-2=7^2-2=\\boxed{47}$."
-}

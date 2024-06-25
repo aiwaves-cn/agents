@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\|\\mathbf{a}\\| = 3$ and $\\|\\mathbf{b}\\| = 6,$ then find $(\\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} - \\mathbf{b}).$",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "Expanding the dot product, we get\n\\begin{align*}\n(\\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} - \\mathbf{b}) &= (\\mathbf{a} + \\mathbf{b}) \\cdot \\mathbf{a} - (\\mathbf{a} + \\mathbf{b}) \\cdot \\mathbf{b} \\\\\n&= \\mathbf{a} \\cdot \\mathbf{a} + \\mathbf{b} \\cdot \\mathbf{a} - \\mathbf{a} \\cdot \\mathbf{b} - \\mathbf{b} \\cdot \\mathbf{b} \\\\\n&= \\mathbf{a} \\cdot \\mathbf{a} - \\mathbf{b} \\cdot \\mathbf{b} \\\\\n&= \\|\\mathbf{a}\\|^2 - \\|\\mathbf{b}\\|^2 \\\\\n&= 3^2 - 6^2 = \\boxed{-27}.\n\\end{align*}"
-}

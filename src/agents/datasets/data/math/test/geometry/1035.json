@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P$ be the point $(0,5),$ let $Q$ be the point $(6,9),$ and let $R$ be the point $(12,0).$ Determine the area of right-angled $\\triangle PQR.$",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Triangle $PQR$ is right-angled at $Q,$ so its area is $\\frac{1}{2}\\cdot PQ\\cdot QR.$ Since the coordinates of $P$ are $(0,5),$ of $Q$ are $(6,9),$ and of $R$ are $(12,0),$ then \\begin{align*}\nPQ &= \\sqrt{(6-0)^2+(9-5)^2} \\\\\n&= \\sqrt{6^2+4^2} \\\\\n&=\\sqrt{52} \\\\\n&= 2 \\sqrt{13},\n\\end{align*}and \\begin{align*}\nQR &= \\sqrt{(6-12)^2 + (9-0)^2} \\\\\n&= \\sqrt{6^2+9^2} \\\\\n&= \\sqrt{117} \\\\\n&= 3 \\sqrt{13}.\n\\end{align*}Therefore, the area is $$\\frac{1}{2}\\cdot 2\\sqrt{13}\\cdot 3\\sqrt{13}=3\\cdot 13=\\boxed{39}.$$"
-}

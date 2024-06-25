@@ -1,6 +1,0 @@
-{
-    "problem": "We have two geometric sequences of positive real numbers: $$6,a,b\\text{ and }\\frac{1}{b},a,54$$Solve for $a$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Utilizing the properties of geometric sequences, we obtain: $$a^2 = 6b\\text{ and }a^2 = \\frac{54}{b}.$$Thus, $6b = \\frac{54}{b}$, and $b = 3.$\n\nPlugging that into the first equation, we have $a^2 = 18$, meaning $a = \\boxed{3\\sqrt{2}}$"
-}

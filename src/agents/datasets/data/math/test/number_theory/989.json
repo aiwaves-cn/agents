@@ -1,6 +1,0 @@
-{
-    "problem": "Let $m$ be a positive integer, and suppose that $9$ is its own inverse $\\pmod m$, but $3$ is $\\textbf{not}$ its own inverse $\\pmod m$.\n\nHow many possible values for $m$ are there?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $9$ is its own inverse $\\pmod m$, then $9\\cdot 9\\equiv 1\\pmod m$, or in other words, $m$ is a divisor of $9^2-1=80$.\n\nBut if $3$ is $\\textbf{not}$ its own inverse $\\pmod m$, then $3\\cdot 3\\not\\equiv 1\\pmod m$, so $m$ is not a divisor of $3^2-1=8$.\n\nThus, we wish to count divisors of $80$ which are not divisors of $8$. There are ten divisors of $80$: $$1, 2, 4, 5, 8, 10, 16, 20, 40, 80.$$ Of these, six are not divisors of $8$: $$5, 10, 16, 20, 40, 80.$$ Therefore, there are $\\boxed{6}$ possible values of $m$."
-}

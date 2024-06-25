@@ -1,6 +1,0 @@
-{
-    "problem": "Let  \\[ f(x) =\n\\begin{cases}\n-x^2 & \\text{if } x \\geq 0,\\\\\nx+8& \\text{if } x <0.\n\\end{cases}\n\\]Compute $f(f(f(f(f(1))))).$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "\\begin{align*}\n(f(f(f(f(1)))))\n&=f(f(f(f(-1))))\\\\\n&=f(f(f(7)))\\\\\n&=f(f(-49))\\\\\n&=f(-41)\\\\\n&=\\boxed{-33}.\\\\\n\\end{align*}"
-}

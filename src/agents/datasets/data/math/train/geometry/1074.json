@@ -1,6 +1,0 @@
-{
-    "problem": "An equilateral triangle has sides 8 units long. An equilateral triangle with sides 4 units long is cut off at the top, leaving an isosceles trapezoid. What is the ratio of the area of the smaller triangle to the area of the trapezoid? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Connect the midpoints of the sides of the equilateral triangle as shown.  The triangle is divided into four congruent equilateral triangles, and the isosceles trapezoid is made up of 3 of these 4 triangles.  Therefore, the ratio of the area of one of the triangles to the area of the trapezoid is $\\boxed{\\frac{1}{3}}$.\n\n[asy]\nunitsize(12mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\ndotfactor=3;\n\ndraw((0,0)--dir(0)--2*dir(0)--dir(60)+(1,0)--dir(60)--cycle);\n\ndraw(dir(60)+(1,0)--dir(0)--dir(60)--2*dir(60)--cycle);\n\ndot((0,0));\ndot(2*dir(0));\ndot(2*dir(60));[/asy]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Expand $(2z^2 + 5z - 6)(3z^3 - 2z + 1)$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "$$\\begin{array}{crrrrrrr}\n& & & 3z^3 & & -2z & + 1 & \\\\\n\\times & & & & 2z^2 & +5z & -6 \\\\\n\\cline{1-7}\\rule{0pt}{0.17in}\n& & & -18z^3 & & +12z & -6 & \\\\\n& & +15z^4 & & -10z^2 & +5z & & \\\\\n+ & 6z^5 & & -4z^3 & +2z^2 & & & \\\\\n\\cline{1-7}\\rule{0pt}{0.17in}\n& 6z^5 & +15z^4 & -22z^3 & - 8z^2 &+17z & -6 &\n\\end{array}$$ As such, the answer is $\\boxed{6z^5+15z^4-22z^3-8z^2+17z-6}$."
-}

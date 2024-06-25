@@ -1,6 +1,0 @@
-{
-    "problem": "I need to learn vocabulary words for my Spanish exam. There are 500 words and the exam grade is the percentage of these words that I recall correctly. Assuming I will recall correctly the words I learn and assuming my guesses will not yield any points, what is the least number of words I should learn to get at least $85\\%$ on the exam?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since the exam grade is the percentage of words I recall correctly, we can set up a proportion to find the minimum number of words I need to learn: \\begin{align*}\n\\frac{\\text{number of words I need to learn}}{\\text{total words}}&=\\frac{85\\%}{100\\%}\\\\\n\\frac{x}{500}&=\\frac{85}{100}\\\\\nx&=\\frac{85}{100}\\cdot 500\\\\\nx&=85\\cdot 5\\\\\nx&=\\boxed{425}.\n\\end{align*}Learning 425 words will lead to a score of exactly $85\\%$, so I do not need to learn any more words than 425."
-}

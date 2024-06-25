@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be positive real numbers such that $a + 2b = 1.$  Find the minimum value of\n\\[\\frac{1}{a} + \\frac{1}{b}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(a + 2b) \\left( \\frac{1}{a} + \\frac{1}{b} \\right) \\ge (1 + \\sqrt{2})^2 = 3 + 2 \\sqrt{2}.\\]For equality to occur, we must have $a^2 = 2b^2,$ or $a = b \\sqrt{2}.$  Then $b \\sqrt{2} + 2b = 1,$ or\n\\[b = \\frac{1}{2 + \\sqrt{2}} = \\frac{2 - \\sqrt{2}}{(2 + \\sqrt{2})(2 - \\sqrt{2})} = \\frac{2 - \\sqrt{2}}{2},\\]and $a = b \\sqrt{2} = \\frac{2 \\sqrt{2} - 2}{2} = \\sqrt{2} - 1.$\n\nHence, the minimum value is $\\boxed{3 + 2 \\sqrt{2}}.$"
-}

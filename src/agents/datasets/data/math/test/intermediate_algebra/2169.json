@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest possible value not in the domain of $\\log\\frac{x-2}{x^2-5}$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "In order for $\\dfrac{x-2}{x^2-5}$ to be defined, we must have $x^2 - 5 \\not = 0$. So, $x \\not = \\pm \\sqrt 5$.\n\nIn order for $\\log \\dfrac{x-2}{x^2-5}$ to be defined, we must have $\\dfrac{x-2}{x^2 - 5} > 0$. There are two cases to consider: when $x^2 - 5 > 0$ and when $x^2 - 5 < 0$.\n\nCase 1: $x^2 - 5 > 0$. Since $x^2 - 5 > 0$, we have that $x < -\\sqrt{5}$ or $x > \\sqrt 5$. From $\\dfrac{x-2}{x^2 - 5} > 0$, we have $x -2 > 0$, or $x > 2$. Combining all of these facts, we must have $x > \\sqrt 5$.\n\nCase 2: $x^2 - 5 < 0$. Since $x^2 - 5 < 0$, we have that $-\\sqrt 5 < x < \\sqrt 5$. From $\\dfrac{x-2}{x^2 - 5} > 0$, we have that $x - 2 < 0$, or $x < 2$. Combining all of these facts, we must have $-\\sqrt 5 < x < 2$.\n\nSo, we must have $-\\sqrt 5 < x < 2$ or $x > \\sqrt 5$. (We can also write this as $x = (-\\sqrt 5 , 2) \\cup (\\sqrt 5, \\infty)$.) The largest value not in the domain is therefore $\\boxed{\\sqrt 5}$."
-}

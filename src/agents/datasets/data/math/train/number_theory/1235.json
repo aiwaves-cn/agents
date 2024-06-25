@@ -1,6 +1,0 @@
-{
-    "problem": "A number is divisible by $9$ if the sum of its digits is divisible by $9.$ For example, the number $19\\,836$ is divisible by $9$ but $19\\,825$ is not.\n\nIf $D\\,767\\,E89$ is divisible by $9,$ where $D$ and $E$ each represent a single digit, what is the sum of all possible values of the sum $D+E?$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "For $D\\,767\\,E89$ to be divisible by $9,$ we must have $$D+7+6+7+E+8+9 = 37+D+E$$ divisible by $9.$ Since $D$ and $E$ are each a single digit, we know each is between $0$ and $9.$ Therefore, $D+E$ is between $0$ and $18.$ Therefore, $37+D+E$ is between $37$ and $55.$ The numbers between $37$ and $55$ that are divisible by $9$ are $45$ and $54.$\n\nIf $37+D+E=45,$ then $D+E=8.$\n\nIf $37+D+E=54,$ then $D+E=17.$\n\nTherefore, the possible values of $D+E$ are $8$ and $17.$ Our answer is then $8+17=\\boxed{25}.$"
-}

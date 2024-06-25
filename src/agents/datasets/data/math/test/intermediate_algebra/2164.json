@@ -1,6 +1,0 @@
-{
-    "problem": "What real values of $x$ are not in the domain of\n\n$f(x)=\\frac{1}{|x^2-6x+8|+|x^2+x-6|}$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "$x$ is not in the domain of $f$ if the denominator is zero.  Since both absolute values are nonnegative, both must be zero for the denominator to be zero.  So\n\n\\begin{align*}\n0&=x^2-6x+8=(x-2)(x-4)\\Rightarrow x=2\\text{ or }x=4.\\\\\n0&=x^2+x-6=(x-2)(x+3)\\Rightarrow x=2\\text{ or }x=-3.\n\\end{align*}The only value of $x$ which makes both absolute values zero is $x=\\boxed{2}$."
-}

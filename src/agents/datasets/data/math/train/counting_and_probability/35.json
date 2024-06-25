@@ -1,6 +1,0 @@
-{
-    "problem": "Ben rolls four fair 20-sided dice, and each of the dice has faces numbered from 1 to 20. What is the probability that exactly two of the dice show an even number?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There is a $\\frac{1}{2}$ probability that a 20-sided die will show an even number and a $\\frac{1}{2}$ probability that it will show an odd number. We can choose which dice will show the even numbers in $\\binom{4}{2}=6$ ways. For each way, there is a $\\left( \\frac{1}{2} \\right) ^4=\\frac{1}{16}$ probability that the chosen dice actually roll even numbers and the other dice roll odd numbers. Therefore, the probability that exactly two of the dice show an even number is $6\\cdot \\frac{1}{16}=\\boxed{\\frac{3}{8}}$."
-}

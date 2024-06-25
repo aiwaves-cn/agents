@@ -1,6 +1,0 @@
-{
-    "problem": "In the coordinate plane, let $F = (4,0).$  Let $P$ be a point, and let $Q$ be the projection of the point $P$ onto the line $x = \\frac{25}{4}.$  The point $P$ traces a curve in the plane, so that\n\\[\\frac{PF}{PQ} = \\frac{4}{5}\\]for all points $P$ on the curve.  Find the area of the region formed by the curve.\n\n[asy]\nunitsize(1 cm);\n\npair P, F, Q;\n\nF = (4,0);\nP = (5*Cos(60),3*Sin(60));\nQ = (25/4,3*Sin(60));\n\ndraw(F--P--Q);\ndraw((25/4,-1)--(25/4,3),dashed);\n\ndot(\"$F$\", F, S);\ndot(\"$P$\", P, W);\ndot(\"$Q$\", Q, E);\n\nlabel(\"$x = \\frac{25}{4}$\", (25/4,-1), S);\n[/asy]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $P = (x,y)$; then $Q = \\left( \\frac{25}{4}, y \\right).$  The condition $\\frac{PF}{PQ} = \\frac{4}{5}$ becomes\n\\[\\frac{\\sqrt{(x - 4)^2  +y^2}}{|\\frac{25}{4} - x|} = \\frac{4}{5}.\\]Hence, $\\sqrt{(x - 4)^2 + y^2} = \\left| 5 - \\frac{4}{5} x \\right|,$ or\n\\[5 \\sqrt{(x - 4)^2 + y^2} = |25 - 4x|.\\]Squaring both sides, we get\n\\[25 ((x - 4)^2 + y^2) = (25 - 4x)^2.\\]This simplifies to $9x^2 + 25y^2 = 225,$ or\n\\[\\frac{x^2}{25} + \\frac{y^2}{9} = 1.\\]Hence, the curve is an ellipse, and its area is $\\pi \\cdot 5 \\cdot 3 = \\boxed{15 \\pi}.$"
-}

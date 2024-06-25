@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $h(x)=f^{-1}(x)$. If $h(2)=10$, $h(10)=1$ and $h(1)=2$, what is $f(f(10))$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Since $f$ and $h$ are inverse functions and $h(2) = 10$, $f(10) = 2$, so $f(f(10)) = f(2)$.  And since $h(1) = 2$, $f(2) = \\boxed{1}$."
-}

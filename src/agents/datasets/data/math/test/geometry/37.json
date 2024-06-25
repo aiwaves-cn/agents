@@ -1,6 +1,0 @@
-{
-    "problem": "A circle is centered at $O$, $\\overline{AB}$ is a diameter and $C$ is a point on the circle with $\\angle COB = 50^\\circ$.  What is the degree measure of $\\angle CAB$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Note that $\\angle AOC = 180^\\circ - 50^\\circ = 130^\\circ$.  Because triangle $AOC$ is isosceles, $\\angle CAB = (180^\\circ - 130^\\circ)/2 = \\boxed{25^\\circ}$.\n\n[asy]\nimport graph;\n\nunitsize(2 cm);\n\npair O, A, B, C;\n\nO = (0,0);\nA = (-1,0);\nB = (1,0);\nC = dir(50);\n\ndraw(Circle(O,1));\ndraw(B--A--C--O);\n\nlabel(\"$A$\", A, W);\nlabel(\"$B$\", B, E);\nlabel(\"$C$\", C, NE);\nlabel(\"$O$\", O, S);\n[/asy]"
-}

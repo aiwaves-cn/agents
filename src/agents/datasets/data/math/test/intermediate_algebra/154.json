@@ -1,6 +1,0 @@
-{
-    "problem": "Find constants $A,$ $B,$ $C,$ and $D$ such that\n\\[\\frac{4x^3 - 20x^2 + 37x  -25}{(x-2)^3(x-1)} = \\frac{A}{x - 1} + \\frac{B}{(x -2)^3} + \\frac{C}{(x-2)^2}+\\frac{D}{x-2}.\\]Enter the order quadruple $(A,B,C,D).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Multiplying both sides by $(x-2)^3(x-1)$ gives us\n$$4x^3 - 20x^2 + 37x  -25 = A(x -2)^3+B(x-1)+C(x -1)(x -2)+D(x-1)(x -2)^2.$$Setting $x=2$ gives $4(8)-20(4)+74-25=B$. Evaluating the expression on the left gives us $B=1$.\n\nSetting $x=1$ gives $4-20+37-25=A(-1)^3$, and so $A=4$.\n\nWe still need to find $C$ and $D$. By choosing 2 new values for $x$, we can get two equations which we can solve for $C$ and $D$. We can pick convenient values to make our work easier.\n\nWhen $x=0$, we get\n$$-25=4(-2)^3+(-1)+C(-1)(-2)+D(-1)(-2)^2$$which simplifies to\n$$2C-D=8.$$When $x=-1$, we get\n$$4(-1)^3-20(-1)^2+37(-1)-25=4(-3)^3+(-2)+C(-2)(-3)+D(-2)(-3)^2$$which simplifies to\n$$C-3D=4.$$We can multiply this equation by $2$ and subtract it from the previous one to get $-D+6D=8-2\\cdot4=0$ and hence $D=0$. Then $2C=8$ and $C=4$.  Therefore $(A,B,C,D)=\\boxed{(4,1,4,0)}.$"
-}

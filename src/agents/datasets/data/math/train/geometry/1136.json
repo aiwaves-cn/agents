@@ -1,6 +1,0 @@
-{
-    "problem": "Two circles of radius 2 are centered at $(2,0)$ and at $(0,2)$. What is the area of the intersection of the interiors of the two circles? Express your answer in fully expanded form in terms of $\\pi$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The two circles intersect at $(0,0)$ and $(2,2)$, as shown.\n\n[asy]\nunitsize(1cm);\nlinewidth(1);\ndraw((-2.5,0)--(5,0),Arrow);\ndraw((0,-2.5)--(0,5),Arrow);\ndraw((-2.5,0)--(5,0),linewidth(0.6));\ndraw((0,-2.5)--(0,5),linewidth(0.6));\nlabel(\"$x$\",(5,0),S);\nlabel(\"$y$\",(0,5),E);\nfor (int i=0; i<6; ++i) {\ndraw((-2+i,-0.2)--(-2+i,0.2));\ndraw((-0.2,-2+i)--(0.2,-2+i));\n}\ndraw(Circle((2,0),2),linewidth(1));\ndraw(Circle((0,2),2),linewidth(1));\nfill((0.6,1.4)..(2,2)--(0,0)..cycle,gray(0.7));\nlabel(\"$(2,2)$\",(2,2),NE);\ndraw((2,0)--(2,2)--(0,0)--cycle);\n[/asy]\n\nHalf of the region described is formed by removing an isosceles right triangle of leg length 2 from a quarter of one of the circles. Because the quarter-circle has area $(1/4)\\pi(2)^2=\\pi$ and the triangle has area $(1/2)(2)^2=2$, the area of the region is $2(\\pi-2)$, or $\\boxed{2\\pi-4}$."
-}

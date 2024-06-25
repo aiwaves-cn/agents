@@ -1,6 +1,0 @@
-{
-    "problem": "It is known that, for all positive integers $k$,\n$1^2+2^2+3^2+\\ldots+k^{2}=\\frac{k(k+1)(2k+1)}6$.\nFind the smallest positive integer $k$ such that $1^2+2^2+3^2+\\ldots+k^2$ is a multiple of $200$.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "$\\frac{k(k+1)(2k+1)}{6}$ is a multiple of $200$ if $k(k+1)(2k+1)$ is a multiple of $1200 = 2^4 \\cdot 3 \\cdot 5^2$. So $16,3,25|k(k+1)(2k+1)$.\nSince $2k+1$ is always odd, and only one of $k$ and $k+1$ is even, either $k, k+1 \\equiv 0 \\pmod{16}$.\nThus, $k \\equiv 0, 15 \\pmod{16}$.\nIf $k \\equiv 0 \\pmod{3}$, then $3|k$. If $k \\equiv 1 \\pmod{3}$, then $3|2k+1$. If $k \\equiv 2 \\pmod{3}$, then $3|k+1$.\nThus, there are no restrictions on $k$ in $\\pmod{3}$.\nIt is easy to see that only one of $k$, $k+1$, and $2k+1$ is divisible by $5$. So either $k, k+1, 2k+1 \\equiv 0 \\pmod{25}$.\nThus, $k \\equiv 0, 24, 12 \\pmod{25}$.\nFrom the Chinese Remainder Theorem, $k \\equiv 0, 112, 224, 175, 287, 399 \\pmod{400}$. Thus, the smallest positive integer $k$ is $\\boxed{112}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "$\\triangle PQR$ has an area of $27\\,\\text{cm}^2$ and a base measuring $6$ cm. What is the height, $h,$ of $\\triangle PQR?$ [asy]\ndraw((0,0)--(6,0)--(4,9)--cycle);\ndraw((4,.5)--(4.5,.5)--(4.5,0));\ndraw((4,9)--(4,0));\nlabel(\"$h$\",(4,4.5),E);\nlabel(\"$Q$\",(0,0),W);\nlabel(\"$R$\",(6,0),E);\nlabel(\"$P$\",(4,9),N);\nlabel(\"6 cm\",(3,0),S);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The area of a triangle can be calculated using the formula $\\mbox{Area}=\\frac{1}{2}\\times \\mbox{base} \\times \\mbox{height}.$\n\nThe area is $27\\,\\text{cm}^2$ and the base measures $6\\,\\text{cm}.$ Substituting these values into the formula, $$A=\\frac{1}{2}\\times b \\times h$$becomes $$27=\\frac{1}{2} \\times 6 \\times h$$or $27=3h.$ Therefore, $h=\\boxed{9}\\,\\text{cm}.$"
-}

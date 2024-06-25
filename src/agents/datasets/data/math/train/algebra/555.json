@@ -1,6 +1,0 @@
-{
-    "problem": "Given that the point $(4,7)$ is on the graph of $y=f(x)$, there is one point that must be on the graph of $2y=3f(4x)+5$. What is the sum of the coordinates of that point?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $(4,7)$ is on the graph of $y=f(x)$, we know  \\[7=f(4).\\]Using that $f(4\\cdot1)=7$, we can also say \\[3f(4\\cdot1)+5=3\\cdot7+5=26=2\\cdot13.\\]Therefore $(x,y)=(1,13)$ is on the graph of  \\[2y=3f(4\\cdot x)+5.\\]The sum of these coordinates is $1+13=\\boxed{14}$."
-}

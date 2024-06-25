@@ -1,6 +1,0 @@
-{
-    "problem": "Find the solution to the equation $\\log_{3x} 4 = \\log_{2x} 8$, where $x$ is a positive real number other than $\\tfrac{1}{3}$ or $\\tfrac{1}{2}$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By the change-of-base formula,\n\\[\\frac{\\log 4}{\\log 3x} = \\frac{\\log 8}{\\log 2x}.\\]Then\n\\[\\frac{\\log 3x}{\\log 2^2} = \\frac{\\log 2x}{\\log 2^3},\\]so\n\\[\\frac{\\log x + \\log 3}{2 \\log 2} = \\frac{\\log x + \\log 2}{3 \\log 2}.\\]Hence,\n\\[\\frac{\\log x + \\log 3}{2} = \\frac{\\log x + \\log 2}{3},\\]so $3 \\log x + 3 \\log 3 = 2 \\log x + 2 \\log 2.$  Then\n\\[\\log x = 2 \\log 2 - 3 \\log 3 = \\log 4 - \\log 27 = \\log \\frac{4}{27},\\]so $x = \\boxed{\\frac{4}{27}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=\\dfrac{a}{x+2}$, solve for the value of $a$ so that $f(0)=f^{-1}(3a)$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The definition of $f$ lets us evaluate $f(0)$: \\[f(0)=\\frac{a}{0+2}=\\frac a{2}.\\]Therefore we want to find all possible $a$ for which \\[\\frac a2=f^{-1}(3a).\\]This is equivalent to  \\[f\\left(\\frac a2\\right)=3a.\\]When we substitute $x=\\frac a2$ into the definition of $f$ we get  \\[f\\left(\\frac a2\\right)=\\frac{a}{\\frac a2+2}=\\frac{2a}{a+4},\\]so we are looking for all solutions $a$ to the equation \\[\\frac{2a}{a+4}=3a.\\]Multiplying both sides by $a + 4$, we get $2a = 3a(a + 4) = 3a^2 + 12a$, so \\[3a^2 + 10a = 0.\\]Then $a(3a + 10) = 0$, so $a = 0$ or $a = -10/3$.  If $a = 0$, then $f(x) = 0$ for all $x \\neq -2$, which means that the inverse function $f^{-1}(x)$ isn't defined, so $a = \\boxed{-\\frac{10}{3}}$."
-}

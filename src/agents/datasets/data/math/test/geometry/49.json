@@ -1,6 +1,0 @@
-{
-    "problem": "We have a triangle $\\triangle ABC$ and a point $K$ on segment $\\overline{BC}$ such that $AK$ is an altitude to $\\triangle ABC$. If $AK = 6,$ $BK = 8$, and $CK = 6,$ then what is the perimeter of the triangle?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Time to draw! [asy]\npair A, B, C, K;\nA = (0, 6);\nB = (-8, 0);\nC = (6, 0);\nK = (0, 0);\ndraw(A--B--C--cycle);\ndraw(A--K);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$K$\", K, S);\nlabel(\"6\", A--K, E);\nlabel(\"8\", B--K, S);\nlabel(\"6\", C--K, S);\ndraw(rightanglemark(A,K,B,10));\n[/asy] To find the perimeter, we need $AB$ and $AC.$ We recognize $\\triangle ABK$ as a $3:4:5$ triangle and and $\\triangle ACK$ as a $45^\\circ-45^\\circ-90^\\circ$ triangle, which means that $AB = 10$ and $AC = 6\\sqrt{2}.$ As for $BC,$ we have $BC = BK + CK = 14.$ Therefore, our answer is $AB + AC + BC = \\boxed{24 + 6\\sqrt{2}}.$"
-}

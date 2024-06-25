@@ -1,6 +1,0 @@
-{
-    "problem": "Find the integer $n,$ $-90 \\le n \\le 90,$ such that $\\sin n^\\circ = \\cos 456^\\circ.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since the cosine function has period $360^\\circ,$\n\\[\\cos 456^\\circ = \\cos (456^\\circ - 360^\\circ) = \\cos 96^\\circ.\\]Since $\\cos x = \\sin (90^\\circ - x)$ for all angles $x,$\n\\[\\cos 96^\\circ = \\sin (90^\\circ - 96^\\circ) = \\sin (-6^\\circ),\\]so $n = \\boxed{-6}.$"
-}

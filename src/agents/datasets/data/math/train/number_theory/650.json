@@ -1,6 +1,0 @@
-{
-    "problem": "Two positive integers $m$ and $n$ are chosen such that $m$ is the smallest positive integer with only two positive divisors and $n$ is the largest integer less than $100$ with exactly three positive divisors. What is $m+n$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "For an integer to have only two positive divisors, it must be prime (the only positive divisors of a prime number are $1$ and itself). Since $2$ is the smallest positive prime, $m=2$. For a positive integer to have exactly three positive divisors, it must be in the form $p^2$ where $p$ is prime (its only factors would be $1$, $p$, and $p^2$). The largest $p^2$ less than $100$ is $7^2=49$. Thus, $n=49$ and $m+n=2+49=\\boxed{51}$."
-}

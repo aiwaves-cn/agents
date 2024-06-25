@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $2011 \\cdot 2012 \\cdot 2013 \\cdot 2014$ modulo 5.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Using the properties of modular arithmetic, $2011 \\cdot 2012 \\cdot 2013 \\cdot 2014 \\equiv 1 \\cdot 2 \\cdot 3 \\cdot 4$ modulo 5. Continuing, $1 \\cdot 2 \\cdot 3 \\cdot 4 \\equiv 4$ modulo 5, so $2011 \\cdot 2012 \\cdot 2013 \\cdot 2014 \\equiv \\boxed{4}$ modulo 5."
-}

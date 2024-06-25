@@ -1,6 +1,0 @@
-{
-    "problem": "Part of the graph of $f(x) = ax^3 + bx^2 + cx + d$ is shown. What is $b$?\n\n[asy]\nunitsize(1.5 cm);\n\nreal func(real x) {\n  return((x + 1)*(x - 1)*(x - 2));\n}\n\ndraw(graph(func,-1.1,1.5));\ndraw((-1.5,0)--(1.5,0),Arrows(6));\ndraw((0,-1)--(0,2.5),Arrows(6));\n\nlabel(\"$x$\", (1.5,0), E);\nlabel(\"$f(x)$\", (0,2.5), N);\n\ndot(\"$(-1,0)$\", (-1,0), SE, fontsize(10));\ndot(\"$(1,0)$\", (1,0), SW, fontsize(10));\ndot(\"$(0,2)$\", (0,2), NE, fontsize(10));\n[/asy]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We have \\[\n0 = f(-1) = -a+b-c+d\\]and \\[0 = f(1) = a+b+c+d,\n\\]so $b+d=0$. Also $d=f(0) = 2$, so $b=\\boxed{-2}$."
-}

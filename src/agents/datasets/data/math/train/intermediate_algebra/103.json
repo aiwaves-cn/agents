@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ $z$ be real numbers such that $x + 2y + z = 4.$  Find the maximum value of\n\\[xy + xz + yz.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can solve for $y,$ to get\n\\[y = \\frac{4 - x - z}{2}.\\]Substituting, we get\n\\[xy + xz + yz = \\frac{-x^2 + 4x - z^2 + 4z}{2} = \\frac{8 - (x - 2)^2 - (z - 2)^2}{2}.\\]The maximum value is then $\\boxed{4},$ which occurs when $x = 2$ and $z = 2$ (and $y = 0$)."
-}

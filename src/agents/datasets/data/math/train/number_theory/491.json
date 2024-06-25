@@ -1,6 +1,0 @@
-{
-    "problem": "Marcus has two numbers, $a$ and $b$.  When he divides $a$ by 45 he gets a remainder of 37.  When he divides $b$ by 30 he gets a remainder of $9$.  What remainder does he get when he divides $a+b$ by 15?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Marcus has two equations: \\[a=45n+37\\]and \\[b=30m+9.\\]When he adds these he gets \\[a+b=45n+30m+37+9=15(3n+2m)+46=15(3n+2m+3)+1.\\]The remainder when $a+b$ is divided by 15 is $\\boxed{1}$."
-}

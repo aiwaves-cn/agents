@@ -1,6 +1,0 @@
-{
-    "problem": "Rectangle $ABCD$ is 8 cm by 4 cm. $M$ is the midpoint of $\\overline{BC}$ , and $N$ is the midpoint of $\\overline{CD}$. What is the number of square centimeters in the area of region $AMCN$?\n\n[asy]\ndraw((0,0)--(32,0)--(32,16)--(0,16)--cycle);\ndraw((0,16)--(16,0)--(32,8)--cycle);\nlabel(\"$A$\",(0,16),N);\nlabel(\"$B$\",(32,16),N);\nlabel(\"$C$\",(32,0),S);\nlabel(\"$D$\",(0,0),S);\nlabel(\"$N$\",(16,0),S);\nlabel(\"$M$\",(32,8),E);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The area of rectangle $ABCD$ is $(8\\text{ cm})(4\\text{ cm})=32$ square centimeters.  The area of triangle $ABM$ is $\\frac{1}{2}(AB)(BM)=\\frac{1}{2}(8\\text{ cm})(2\\text{ cm})=8$ square centimeters.  The area of triangle $ADN$ is $\\frac{1}{2}(AD)(DN)=\\frac{1}{2}(4\\text{ cm})(4\\text{ cm})=8$ square centimeters.  Subtracting these two triangles from the rectangle, we find that the area of quadrilateral $AMCN$ is $32\\text{ cm}^2-8\\text{ cm}^2-8\\text{ cm}^2=\\boxed{16}$ square centimeters."
-}

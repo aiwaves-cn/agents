@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC^{}_{}$ has $AB=9^{}_{}$ and $BC: AC=40: 41^{}_{}$. What's the largest area that this triangle can have?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $BC = 40x$ and $AC = 41x.$  By Triangle Inequality, $x$ must satisfy\n\\begin{align*}\n9 + 40x &> 41x, \\\\\n9 + 41x &> 40x, \\\\\n40x + 41x &> 9.\n\\end{align*}The first inequality tells us $x < 9,$ the second inequality always holds, and the third inequality tells us $x > \\frac{1}{9}.$\n\nThe semi-perimeter is $s = \\frac{9 + 81x}{2},$ so by Heron's formula,\n\\begin{align*}\n[ABC]^2 &= \\frac{9 + 81x}{2} \\cdot \\frac{81x - 9}{2} \\cdot \\frac{9 + x}{2} \\cdot \\frac{9 - x}{2} \\\\\n&= \\frac{81}{16} (9x + 1)(9x - 1)(9 + x)(9 - x) \\\\\n&= \\frac{81}{16} (81x^2 - 1)(81 - x^2) \\\\\n&= \\frac{1}{16} (81x^2 - 1)(81^2 - 81x^2).\n\\end{align*}By AM-GM,\n\\[(81x^2 - 1)(81^2 - 81x^2) \\le \\left[ \\frac{(81x^2 - 1) + (81^2 - 81x^2)}{2} \\right]^2 = 3280^2,\\]so\n\\[[ABC] \\le \\sqrt{\\frac{3280^2}{16}} = 820.\\]Equality occurs when $81x^2 - 1 = 81^2 - 81x^2,$ or $x^2 = \\frac{3281}{81},$ so the maximum area is $\\boxed{820}.$"
-}

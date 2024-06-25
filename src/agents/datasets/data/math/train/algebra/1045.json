@@ -1,6 +1,0 @@
-{
-    "problem": "Rationalize the denominator: $\\frac{1}{\\sqrt{2}-1}$. Express your answer in simplest form.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "To get the square root out of the denominator, we can multiply the numerator and denominator by $(\\sqrt{2}+1)$ so that the $\\sqrt{2}$ is squared and $\\sqrt{2}$ and $-\\sqrt{2}$ cancel each other out.  $$\\frac{1}{\\sqrt{2}-1}\\cdot\\frac{\\sqrt{2}+1}{\\sqrt{2}+1}=\\frac{\\sqrt{2}+1}{2-\\sqrt{2}+\\sqrt{2}-1}=\\frac{\\sqrt{2}+1}{1}=\\boxed{\\sqrt{2}+1}$$"
-}

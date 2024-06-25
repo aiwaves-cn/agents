@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all integer solutions to $|n| < |n-3| < 9$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First let's solve $|n-3|<9$.  The absolute value of a quantity is less than 9 if and only if the quantity is between $-9$ and 9, so solve \\[\n\\begin{array}{r@{\\;\\;<\\;\\;}c@{\\;\\;<\\;\\;}lc}\n-9 & n-3 & 9 &\\quad \\implies \\\\\n-9+3 & n & 9+3 &\\quad \\implies \\\\\n-6 & n & 12.\n\\end{array}\n\\] Now consider $|n|<|n-3|$.  The distance from $n$ to 0 is $|n|$, and the distance from $n$ to 3 is $|n-3|$.  Therefore, this inequality is satisfied by the numbers that are closer to 0 than to 3.  These are the numbers less than $1.5$.  So the integer solutions of $|n|<|n-3|<9$ are $-5$, $-4$, $-3$, $-2$, $-1$, 0, and 1, and their sum is $-5-4-3-2=\\boxed{-14}$."
-}

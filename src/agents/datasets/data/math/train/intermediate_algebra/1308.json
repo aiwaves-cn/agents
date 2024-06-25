@@ -1,6 +1,0 @@
-{
-    "problem": "A binary operation $\\diamondsuit$ has the properties that $a\\,\\diamondsuit\\, (b\\,\\diamondsuit \\,c) = (a\\,\\diamondsuit \\,b)\\cdot c$ and that $a\\,\\diamondsuit \\,a=1$ for all nonzero real numbers $a, b,$ and $c$. (Here $\\cdot$ represents multiplication). Find the solution to the equation $2016 \\,\\diamondsuit\\, (6\\,\\diamondsuit\\, x)=100.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $b = a$ and $c = a,$ we get\n\\[a \\, \\diamondsuit \\, (a \\, \\diamondsuit \\, a) = (a \\, \\diamondsuit \\, a) \\cdot a,\\]which reduces to $a \\, \\diamondsuit \\, 1 = a$ for any nonzero $a.$\n\nSetting $c = b,$ we get\n\\[a \\, \\diamondsuit \\, (b \\, \\diamondsuit \\, b) = (a \\, \\diamondsuit \\, b) \\cdot b,\\]which reduces to $a \\, \\diamondsuit \\, 1 = (a \\, \\diamondsuit \\, b) \\cdot b,$ so $a = (a \\, \\diamondsuit \\, b) \\cdot b.$  Hence,\n\\[a \\, \\diamondsuit \\, b = \\frac{a}{b}\\]for any nonzero $a$ and $b.$\n\nWe want to solve $2016 \\, \\diamondsuit \\, (6 \\, \\diamondsuit\\, x) = 100,$ or\n\\[\\frac{2016}{\\frac{6}{x}} = 100.\\]Solving, we find $x = \\boxed{\\frac{25}{84}}.$"
-}

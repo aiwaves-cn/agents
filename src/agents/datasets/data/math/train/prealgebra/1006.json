@@ -1,6 +1,0 @@
-{
-    "problem": "In parallelogram $ABCD$, the measure of angle $ABC$ is 3 times the measure of angle $BCD$. How many degrees are in the measure of angle $ADC$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "[asy]\nunitsize(1inch);\npair A,B,C,D;\nB = (0,0);\nC = (1,0);\nA = rotate(135)*(0.6,0);\nD = A+C;\ndraw(A--B--C--D--A);\nlabel(\"$A$\",A,N);\nlabel(\"$D$\",D,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\n[/asy]\n\nBecause $\\overline{AB}\\parallel\\overline{CD}$, we have $\\angle B + \\angle C = 180^\\circ$.  Since $\\angle B = 3\\angle C$, we have $3\\angle C + \\angle C = 180^\\circ$, so $4\\angle C = 180^\\circ$ and $\\angle C = 45^\\circ$.  Since $\\overline{AD}\\parallel\\overline{BC}$, we have $\\angle C +\\angle D = 180^\\circ$, so $\\angle D = 180^\\circ - \\angle C = \\boxed{135^\\circ}$."
-}

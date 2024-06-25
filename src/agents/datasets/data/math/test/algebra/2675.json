@@ -1,6 +1,0 @@
-{
-    "problem": "The product of two consecutive odd whole numbers is 255. What is the greater number?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let $2n-1, 2n+1$ be two consecutive odd whole numbers. We know $(2n-1)(2n+1)=4n^2-1=255\\Leftrightarrow n^2=64$. $n$ is a whole number, so $n=8$. The greater number is $2n+1=2\\cdot8+1=\\boxed{17}$."
-}

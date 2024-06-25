@@ -1,6 +1,0 @@
-{
-    "problem": "Factor $x^2+4x+4-81x^4$ into two quadratic polynomials with integer coefficients.  Submit your answer in the form $(ax^2+bx+c)(dx^2+ex+f)$, with $a<d$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $x^2+4x+4-81x^4=(x+2)^2-(9x^2)^2=\\boxed{(-9x^2+x+2)(9x^2+x+2)}$, where we have used the difference of squares identity to get the second equality."
-}

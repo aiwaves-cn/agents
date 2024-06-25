@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=x^3$, what is the value of $f^{-1}(8)\\div (f(8))^{-1}$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The notation $f^{-1}(8)$ stands for a number $x$ such that $f(x)=8$ -- that is, such that $x^3=8$. The only such number is $\\sqrt[3]{8} = 2$.\n\nThe notation $(f(8))^{-1}$ stands for $\\dfrac{1}{f(8)}$, which is equal to $\\dfrac{1}{8^3} = \\dfrac{1}{512}$.\n\nThus, $f^{-1}(8)\\div (f(8))^{-1} = 2\\div \\dfrac{1}{512} = 2\\cdot 512 = \\boxed{1024}$."
-}

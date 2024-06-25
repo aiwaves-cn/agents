@@ -1,6 +1,0 @@
-{
-    "problem": "The arithmetic progressions $\\{2, 5, 8, 11, \\ldots\\}$ and $\\{3, 10, 17, 24, \\ldots \\}$ have some common values. What is the largest value less than 500 that they have in common?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $a$ be a common term. We know that \\begin{align*}\na&\\equiv 2\\pmod 3\\\\\na&\\equiv 3\\pmod 7\n\\end{align*} Congruence $(1)$ means that there exists a non-negative integer such that $a=2+3n$. Substituting this into $(2)$ yields \\[2+3n\\equiv 3\\pmod 7\\implies n\\equiv 5\\pmod 7\\] So $n$ has a lower bound of $5$. Then $n\\ge 5\\implies a=2+3n\\ge 17$. $17$ satisfies the original congruences, so it is the smallest common term. Subtracting $17$ from both sides of both congruences gives \\begin{align*}\na-17&\\equiv -15\\equiv 0\\pmod 3\\nonumber\\\\\na-17&\\equiv -14\\equiv 0\\pmod 7\\nonumber\n\\end{align*} Since $\\gcd(3,7)$, we get $a-17\\equiv 0\\pmod{3\\cdot 7}$, that is, $a\\equiv 17\\pmod{21}$.\n\nSo all common terms must be of the form $17+21m$ for some non-negative integer $m$. Note that any number of the form also satisfies the original congruences. The largest such number less than $500$ is $17+21\\cdot 22=\\boxed{479}$."
-}

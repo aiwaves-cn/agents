@@ -1,6 +1,0 @@
-{
-    "problem": "Pentagon ABCDE has a vertical line of symmetry. What is the $y$-coordinate of vertex C so that the area of the pentagon is 40 square units? [asy]\nunitsize(2mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\ndotfactor=4;\n\npair A=(0,0), B=(0,4), C=(2,16), D=(4,4), E=(4,0);\npair[] dots={A,B,C,D,E};\n\ndraw(B--C--D--E);\ndot(dots);\n\naxes(Arrows(4));\n\nlabel(\"A(0,0)\",A,SW);\nlabel(\"E(4,0)\",E,SE);\nlabel(\"D(4,4)\",D,NE);\nlabel(\"C\",C,NE);\nlabel(\"B(0,4)\",B,NW);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Write the area of pentagon $ABCDE$ as sum the areas of square $ABDE$ and triangle $BCD$.  Since square $ABDE$ has area $4^2=16$ square units, triangle $BCD$ has area $40-16=24$ square units.  If $h$ is the $y$-coordinate of point $C$, the height of triangle $BCD$ is $h-4$ units and its base is $4$ units.  Solving $\\frac{1}{2}(4)(h-4)=24$, we find $h=\\boxed{16}$."
-}

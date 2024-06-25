@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer that has a remainder of 0 when divided by 2, a remainder of 1 when divided by 3, and a remainder of 2 when divided by 4?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let $a$ be the desired number. We know that \\begin{align*}\na & \\equiv 0\\pmod 2\\\\\na & \\equiv 1\\pmod 3\\\\\na & \\equiv 2\\pmod 4\n\\end{align*} Note that $a \\equiv 2\\pmod 4$ automatically implies $a \\equiv 0\\pmod 2$, so only $a \\equiv 1\\pmod 3$ and $a \\equiv 2\\pmod 4$ need to be considered. The first few positive solutions of $a \\equiv 2\\pmod 4$ are $2,6,10$. While the first two do not satisfy $a \\equiv 1\\pmod 3$, luckily $\\boxed{10}$ does!"
-}

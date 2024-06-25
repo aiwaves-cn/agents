@@ -1,6 +1,0 @@
-{
-    "problem": "The polynomial $x^3 -ax^2 + bx -2010$ has three positive integer roots. What is the smallest possible value of $a$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's Formulas, we know that $a$ is the sum of the three roots of the polynomial $x^3-ax^2+bx-2010$. Again Vieta's Formulas tells us that $2010$ is the product of the three integer roots. Also, $2010$ factors into $2\\cdot3\\cdot5\\cdot67$. But, since there are only three roots to the polynomial, two of the four prime factors must be multiplied so that we are left with three roots. To minimize $a$, $2$ and $3$ should be multiplied, which means $a$ will be $6+5+67=\\boxed{78}.$"
-}

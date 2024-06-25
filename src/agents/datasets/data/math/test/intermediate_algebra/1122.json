@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P(x),$ $Q_1(x),$ $Q_2(x),$ $Q_3(x),$ $R(x)$ be polynomials such that\n\\begin{align*}\nP(x) &= Q_1(x) (x + 2) - 13 \\\\\n&= Q_2(x) (x^2 - 3x - 4) - 5x - 11 \\\\\n&= Q_3(x) (x + 2) (x^2 - 3x - 4) + R(x),\n\\end{align*}and $\\deg R(x) = 2.$  Find $R(x).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = -2$ in the equation $Q_1(x) (x + 2) - 13 = Q_3(x) (x + 2)(x^2 - 3x - 4) + R(x),$ we get\n\\[R(-2) = -13.\\]Setting $x = 4$ and $x = -1$ in the equation $Q_2(x) (x^2 - 3x - 4) - 5x - 11 = Q_3(x) (x + 2)(x^2 - 3x - 4) + R(x),$ we get\n\\[R(4) = -31 \\quad \\text{and} \\quad R(-1) = -6.\\]Since $\\deg R(x) = 2,$ we can let $R(x) = ax^2 + bx + c.$  Then\n\\begin{align*}\n4a - 2b + c &= -13, \\\\\n16a + 4b + c &= -31, \\\\\na - b + c &= -6.\n\\end{align*}Subtracting these equations in pairs, we get\n\\begin{align*}\n12a + 6b &= -18, \\\\\n3a - b &= -7.\n\\end{align*}Solving, we find $a = -2$ and $b = 1,$ so $c = -3.$  Hence, $R(x) = \\boxed{-2x^2 + x - 3}.$"
-}

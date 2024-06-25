@@ -1,6 +1,0 @@
-{
-    "problem": "A machine-shop cutting tool has the shape of a notched circle, as shown. The radius of the circle is $\\sqrt{50}$ cm, the length of $AB$ is $6$ cm and that of $BC$ is $2$ cm. The angle $ABC$ is a right angle. Find the square of the distance (in centimeters) from $B$ to the center of the circle.\n[asy] size(150);  defaultpen(linewidth(0.6)+fontsize(11)); real r=10; pair O=(0,0), A=r*dir(45),B=(A.x,A.y-r),C; path P=circle(O,r); C=intersectionpoint(B--(B.x+r,B.y),P); draw(P); draw(C--B--A--B); dot(A); dot(B); dot(C); label(\"$A$\",A,NE); label(\"$B$\",B,S); label(\"$C$\",C,SE); [/asy]\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "We use coordinates. Let the circle have center $(0,0)$ and radius $\\sqrt{50}$; this circle has equation $x^2 + y^2 = 50$. Let the coordinates of $B$ be $(a,b)$. We want to find $a^2 + b^2$. $A$ and $C$ with coordinates $(a,b+6)$ and $(a+2,b)$, respectively, both lie on the circle. From this we obtain the system of equations\n$a^2 + (b+6)^2 = 50$\n$(a+2)^2 + b^2 = 50$\nSolving, we get $a=5$ and $b=-1$, so the distance is $a^2 + b^2 = \\boxed{26}$."
-}

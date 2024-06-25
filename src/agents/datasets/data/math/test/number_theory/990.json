@@ -1,6 +1,0 @@
-{
-    "problem": "If $x=735$ and $ax$ is a perfect square where $a$ is a positive integer, what is the smallest possible value of $\\sqrt{ax}$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "First we find the prime factorization of 735, which is $3\\cdot 5\\cdot 7^2$. In order to make a perfect square, we need another factor of 3 and another factor of 5. So if $a=15$, we have $ax=(3\\cdot5)(3\\cdot5\\cdot7^2)=3^2\\cdot5^2\\cdot7^2$. That means $\\sqrt{ax}=3\\cdot5\\cdot7=\\boxed{105}$."
-}

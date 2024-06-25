@@ -1,6 +1,0 @@
-{
-    "problem": "Let $N$ denote the number of $7$ digit positive integers have the property that their digits are in increasing order. Determine the remainder obtained when $N$ is divided by $1000$. (Repeated digits are allowed.)\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Note that a $7$ digit increasing integer is determined once we select a set of $7$ digits. To determine the number of sets of $7$ digits, consider $9$ urns labeled $1,2,\\cdots,9$ (note that $0$ is not a permissible digit); then we wish to drop $7$ balls into these urns. Using the ball-and-urn argument, having $9$ urns is equivalent to $8$ dividers, and there are ${8 + 7 \\choose 7} = {15 \\choose 7} = 6435 \\equiv \\boxed{435} \\pmod{1000}$."
-}

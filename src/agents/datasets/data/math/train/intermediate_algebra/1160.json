@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real numbers $x$ such that \\[\\frac{x^3+2x^2}{x^2+3x+2} + x = -6.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We first notice that we can simplify the fraction: \\[\\frac{x^3+2x^2}{x^2+3x+2} = \\frac{x^2(x+2)}{(x+1)(x+2)} = \\frac{x^2}{x+1},\\]provided that $x \\neq -2.$ Therefore, we have \\[\\frac{x^2}{x+1} + x = -6.\\]Multiplying both sides by $x+1$ gives \\[x^2 + x(x+1) = -6(x+1),\\]or \\[2x^2+7x+6=0.\\]This equation factors as \\[(2x+3)(x+2) = 0,\\]so $x = -\\tfrac32$ or $x = -2.$ But, as we said before, $x = -2$ is impossible because it makes the denominator of the fraction equal to zero. Therefore, the only valid solution is $x = \\boxed{-\\tfrac32}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Four circles with radii 1, 2, 3, and $r$ are externally tangent to one another, where $r$ is the smallest radius.  Compute $r$.",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Let $A,B,C,P$ be the centers of the circles with radii 1, 2, 3, and $r$, respectively.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, P;\n\nA = (0,0);\nB = (0,3);\nC = (4,0);\nP = (20/23,21/23);\n\ndraw(Circle(A,1));\ndraw(Circle(B,2));\ndraw(Circle(C,3));\ndraw(Circle(P,6/23));\ndraw(A--B--C--cycle);\ndraw(A--P);\ndraw(B--P);\ndraw(C--P);\n\nlabel(\"$P$\", P, NE, UnFill);\n\ndot(\"$A$\", A, SW);\ndot(\"$B$\", B, NW);\ndot(\"$C$\", C, SE);\ndot(P);\n[/asy]\n\nThen $ABC$ is a 3-4-5 right triangle.  By the Law of Cosines on triangle $PAB,$ \\[\n\\cos\\angle PAB=\\frac{3^2+(1+r)^2-(2+r)^2}{2\\cdot 3\\cdot(1+r)} =\n\\frac{3-r}{3(1+r)}.\n\\]Similarly, \\[\n\\cos\\angle PAC= \\frac{4^2+(1+r)^2-(3+r)^2}{2\\cdot 4\\cdot(1+r)} = \\frac{2-r}{2(1+r)}.\n\\]Since $\\angle PAB + \\angle PAC = 90^\\circ,$\n\\[\\cos^2 \\angle PAB  + \\cos^2 \\angle PAC = \\cos^2 \\angle PAB + \\sin^2 \\angle PAB = 1.\\]Hence,\n\\[\\left( \\frac{3 - r}{3(1 + r)} \\right)^2 + \\left( \\frac{2 - r}{2(1 + r)} \\right)^2 = 1.\\]This simplifies to $23r^2 + 132r - 36 = 0,$ which factors as $(23r-6)(r+6) = 0$.  Therefore, $r=\\boxed{\\frac{6}{23}}.$"
-}

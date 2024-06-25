@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered triples $(x,y,z)$ of real numbers such that $x + y = 2$ and $xy - z^2 = 1.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Squaring the equation $x + y = 2,$ we get $x^2 + 2xy + y^2 = 4.$  Also, $4xy - 4z^2 = 4,$ so\n\\[x^2 + 2xy + y^2 = 4xy - 4z^2.\\]Then $x^2 - 2xy + y^2 + 4z^2 = 0,$ which we write as\n\\[(x - y)^2 + 4z^2 = 0.\\]For this equation to hold, we must have $x = y$ and $z = 0,$ and if $x = y,$ then $x = y = 1.$\n\nTherefore, there is only $\\boxed{1}$ solution, namely $(x,y,z) = (1,1,0).$"
-}

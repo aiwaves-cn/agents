@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=\\left(\\frac37\\right)^x$ be a function that is defined on the domain $[0,\\infty)$. Find the range of the function.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $\\frac37$ is less than 1, the function will always decrease as $x$ increases when $x\\ge0$. So, the largest value in the range will occur when at the smallest value of $x$: $x=0$, giving us the upper bound of $\\left(\\frac{3}{7}\\right)^0=1$. As the value of $x$ increases, the value of $y$ will gradually decrease, approaching (but never reaching) the lower bound of 0. Therefore, the range of this function when $x\\ge0$ is $\\boxed{(0,1]}$"
-}

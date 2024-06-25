@@ -1,6 +1,0 @@
-{
-    "problem": "Let $F_1 = (10,2)$ and $F_ 2= (-16,2).$  Then the set of points $P$ such that\n\\[|PF_1 - PF_2| = 24\\]form a hyperbola.  The equation of this hyperbola can be written as\n\\[\\frac{(x - h)^2}{a^2} - \\frac{(y - k)^2}{b^2} = 1.\\]Find $h + k + a + b.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The center of the hyperbola is the midpoint of $\\overline{F_1 F_2},$ which is $(-3,2).$  Thus, $h = -3$ and $k = 2.$\n\nAlso, $2a = 24,$ so $a = 12.$  The distance between the foci is $2c = 26,$ so $c = 13.$  Then $b^2 = c^2 - a^2 = 169 - 144 = 25,$ so $b = 5.$\n\nHence, $h + k + a + b = (-3) + 2 + 12 + 5 = \\boxed{16}.$"
-}

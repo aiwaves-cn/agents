@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest two-digit positive integer such that the product of its two digits is one-half the integer?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Denote our number as $10a+b,$ where $a$ and $b$ represent the tens and units digit, respectively. It follows that $2ab=10a+b,$ or  \\[2a(b-5)-(b-5)=5\\] \\[(2a-1)(b-5)=5.\\] We start by minimizing $a.$ If $2a-1=1$ and $b-5=5,$ $(a,b)=(1,10),$ which does not work because $b$ cannot exceed 9. Trying the second case, $2a-1=5$ and $b-5=1,$ leaving us with $(a,b)=(3,6).$ Thus, the smallest positive integer meeting the problem conditions is $\\boxed{36}.$"
-}

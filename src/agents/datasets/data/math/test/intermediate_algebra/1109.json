@@ -1,6 +1,0 @@
-{
-    "problem": "The terms of an arithmetic sequence add to $715$. The first term of the sequence is increased by $1$, the second term is increased by $3$, the third term is increased by $5$, and in general, the $k$th term is increased by the $k$th odd positive integer. The terms of the new sequence add to $836$. Find the sum of the first, last, and middle terms of the original sequence.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The sum of all the increases is given by \\[1 + 3 + 5 + \\cdots + (2k-1) = k^2.\\]Thus $715 + k^2 = 836$, or $k^2 = 121$, so $k = 11$. Then the middle term of the sequence must be $\\tfrac{715}{11} = 65$. Since the original sequence is arithmetic, the sum of the first, last, and middle term is simply \\[3 \\cdot 65 = \\boxed{195}.\\]"
-}

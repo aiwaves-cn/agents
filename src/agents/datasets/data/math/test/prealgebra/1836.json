@@ -1,6 +1,0 @@
-{
-    "problem": "Find $\\left(\\frac{8}{9} \\cdot \\left(\\frac{1}{2}\\right)^4\\right)^{-1} - 17$.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "First, we simplify a small portion of the question: $\\frac{8}{9} \\cdot \\left(\\frac{1}{2}\\right)^4 = \\frac{2^3}{9} \\cdot \\frac{1^4}{2^4}$.  Multiplying these two and combining numerator and denominator, we get $\\frac{1 \\cdot 2^3}{9 \\cdot 2^4}$, which can be made into two fractions and simplified: $\\frac{1}{9} \\cdot \\frac{2^3}{2^4} = \\frac{1}{9} \\cdot \\frac{1}{2} = \\frac{1}{18}$.\n\nThe inverse of this fraction is $\\frac{1}{\\frac{1}{18}} = 18$, and $18-17 = \\boxed{1}$."
-}

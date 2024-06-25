@@ -1,6 +1,0 @@
-{
-    "problem": "Except for the first two terms, each term of the sequence $1000, x, 1000 - x,\\ldots$ is obtained by subtracting the preceding term from the one before that. The last term of the sequence is the first negative term encountered. What positive integer $x$ produces a sequence of maximum length?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let the terms of the sequence be $a_1,$ $a_2,$ $a_3,$ $\\dots.$  Then\n\\begin{align*}\na_1 &= 1000, \\\\\na_2 &= x, \\\\\na_3 &= 1000 - x, \\\\\na_4 &= 2x - 1000, \\\\\na_5 &= 2000 - 3x, \\\\\na_6 &= 5x - 3000, \\\\\na_7 &= 5000 - 8x, \\\\\na_8 &= 13x - 8000, \\\\\na_9 &= 13000 - 21x, \\\\\na_{10} &= 34x - 21000, \\\\\na_{11} &= 34000 - 55x.\n\\end{align*}If the sequence reaches 12 terms, then we must have $34000 - 55x > 0$ and $34x - 21000 > 0,$ or\n\\[\\frac{21000}{34} < x < \\frac{34000}{55}.\\]The only integer in this interval is $\\boxed{618}.$"
-}

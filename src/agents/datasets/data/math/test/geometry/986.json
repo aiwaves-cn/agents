@@ -1,6 +1,0 @@
-{
-    "problem": "In isosceles triangle $ABC$, angle $BAC$ and angle $BCA$ measure 35 degrees. What is the measure of angle $CDA$? [asy]\nimport olympiad; import geometry; size(125); defaultpen(linewidth(0.8));\ndraw(circle((0,0),1));\ndot(\"$F$\",(0,0),dir(-90));\npair A = dir(160), B = dir(110), C = dir(40), D = dir(10);\ndraw(A--D--C--A--B--C);\nlabel(\"$A$\",A,W); label(\"$B$\",B,N); label(\"$C$\",C,E); label(\"$D$\",D,E);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Angles $BAC$ and $BCA$ are each inscribed angles, so each one is equal to half of the measure of the arc they subtend. Therefore, the measures of arcs $AB$ and $BC$ are each 70 degrees, and together, the measure of arc $ABC$ is 140 degrees. Notice that angle $CDA$ is also an inscribed angle, and it subtends arc $ABC$, so $m\\angle CDA = \\frac{1}{2} (\\text{arc } ABC) = (1/2)(140) = \\boxed{70}$ degrees."
-}

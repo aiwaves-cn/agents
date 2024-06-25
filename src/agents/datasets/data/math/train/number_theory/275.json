@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer $a$ such that $a^{-1}$ is undefined $\\pmod{55}$ and $a^{-1}$ is also undefined $\\pmod{66}$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "An integer $a$ has an inverse $\\pmod{55}$ if and only if $\\gcd(a,55)=1$. Similarly, an integer $a$ has an inverse $\\pmod{66}$ if and only if $\\gcd(a,66)=1$.\n\nSince we're looking for an integer that doesn't have an inverse modulo either $55$ or $66$, we want $a$ such that $\\gcd(a,55)>1$ and $\\gcd(a,66)>1$. Thus $a$ must be divisible by either $5$ or $11$, and $a$ must also be divisible by either $2$, $3$, or $11$. The smallest positive integer that satisfies both properties is $\\boxed{10}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area, in square units, of the triangle bounded by $y = 0$, $y = x + 4$ and $x + 3y = 12$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "This triangle's vertices are the intersection points of each pair of lines. The intersection point of $y=0$ and $y=x+4$ is (-4,0). The intersection point of $y=0$ and $x+3y=12$ is (12,0). To find the intersection of the last 2 lines, we substitute the first equation for $y$ and then solve for $x$. Doing so, we get \\begin{align*}\nx+3y&=12 \\\\\nx+3(x+4)&=12 \\\\\nx+3x+12 &= 12 \\\\\n4x &=0 \\\\\nx &=0\n\\end{align*} Thus, $y=4$, and the intersection point is (0,4). Let the base of the triangle be the side of the triangle on the $x$-axis. Because this side is between the points (-4,0) and (12,0), its length is $12-(-4)=12+4=16$. The height must be perpendicular to this side and through the final vertex. This is along the $y$-axis. Thus, the height of the triangle is just the $y$-coordinate of the other point, which is 4. Thus, the area of the triangle is $\\frac{1}{2} \\cdot 16 \\cdot 4=8 \\cdot 4=\\boxed{32} \\text{sq units}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Define a sequence of complex numbers by $z_1 = 0$ and\n\\[z_{n + 1} = z_n^2 + i\\]for all $n \\ge 1.$  In the complex plane, how far from the origin is $z_{111}$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The first few terms are\n\\begin{align*}\nz_2 &= 0^2 + i = i, \\\\\nz_3 &= i^2 + i = -1 + i, \\\\\nz_4 &= (-1 + i)^2 + i = -i, \\\\\nz_5 &= (-i)^2 + i = -1 + i.\n\\end{align*}Since $z_4 = z_2,$ and each term depends only on the previous term, the sequence from here on is periodic, with a period of length 2.  Hence, $|z_{111}| = |z_3| = |-1 + i| = \\boxed{\\sqrt{2}}.$"
-}

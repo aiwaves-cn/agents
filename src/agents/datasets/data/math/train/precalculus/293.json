@@ -1,6 +1,0 @@
-{
-    "problem": "There exist constants $a_1,$ $a_2,$ $a_3,$ $a_4,$ $a_5$ such that\n\\[\\cos^5 \\theta = a_1 \\cos \\theta + a_2 \\cos 2 \\theta + a_3 \\cos 3 \\theta + a_4 \\cos 4 \\theta + a_5 \\cos 5 \\theta\\]for all angles $\\theta.$  Find $a_1^2 + a_2^2 + a_3^2 + a_4^2 + a_5^2.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "We know that\n\\[e^{i \\theta} = \\cos \\theta + i \\sin \\theta.\\]Then\n\\[e^{-i \\theta} = \\cos (-\\theta) + i \\sin (-\\theta) = \\cos \\theta - i \\sin \\theta.\\]Adding these and dividing by 2, we get\n\\[\\cos \\theta = \\frac{e^{i \\theta} + e^{-i \\theta}}{2}.\\]Then\n\\begin{align*}\n\\cos^5 \\theta &= \\frac{1}{32} (e^{i \\theta} + e^{-i \\theta})^5 \\\\\n&= \\frac{1}{32} (e^{5i \\theta} + 5e^{3i \\theta} + 10e^{i \\theta} + 10e^{-i \\theta} + 5e^{-3i \\theta} + e^{-5i \\theta}) \\\\\n&= \\frac{1}{16} \\cos 5 \\theta + \\frac{5}{16} \\cos 3 \\theta + \\frac{5}{8} \\cos \\theta.\n\\end{align*}Thus, $a_1^2 + a_2^2 + a_3^2 + a_4^2 + a_5^2 = \\left( \\frac{1}{16} \\right)^2 + \\left( \\frac{5}{16} \\right)^2 + \\left( \\frac{5}{8} \\right)^2 = \\boxed{\\frac{63}{128}}.$"
-}

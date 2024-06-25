@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer greater than 1 that leaves a remainder of 1 when divided by each of 2, 3, 4, 5, 6, 7, 8 and 9?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "If $n$ leaves a remainder of 1 when divided by all of these numbers then $n-1$ is a multiple of all of these.  We compute the LCM of these numbers as  \\begin{align*}\n\\text{lcm}(2,3,4,5,6,7,8,9)&=\\text{lcm}(5,6,7,8,9)\\\\\n&=\\text{lcm}(5,7,8,9)\\\\\n&=5\\cdot7\\cdot8\\cdot9\\\\\n&=2520.\n\\end{align*} The smallest $n>1$ that satisfies $2520\\mid n-1$ is $n=\\boxed{2521}$."
-}

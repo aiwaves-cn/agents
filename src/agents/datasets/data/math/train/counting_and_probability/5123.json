@@ -1,6 +1,0 @@
-{
-    "problem": "A drawer in a darkened room contains $100$ red socks, $80$ green socks, $60$ blue socks and $40$ black socks. A youngster selects socks one at a time from the drawer but is unable to see the color of the socks drawn. What is the smallest number of socks that must be selected to guarantee that the selection contains at least $10$ pairs? (A pair of socks is two socks of the same color. No sock may be counted in more than one pair.)\n$\\textbf{(A)}\\ 21\\qquad \\textbf{(B)}\\ 23\\qquad \\textbf{(C)}\\ 24\\qquad \\textbf{(D)}\\ 30\\qquad \\textbf{(E)}\\ 50$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Suppose that you wish to draw one pair of socks from the drawer. Then you would pick $5$ socks (one of each kind, plus one). Notice that in the worst possible situation, you will continue to draw the same sock, until you get $10$ pairs. This is because drawing the same sock results in a pair every $2$ of that sock, whereas drawing another sock creates another pair. Thus the answer is $5+2\\cdot(10-1) = \\boxed{23}$."
-}

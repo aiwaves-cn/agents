@@ -1,6 +1,0 @@
-{
-    "problem": "Bonnie makes the frame of a cube out of 12 pieces of wire that are each six inches long. Meanwhile Roark uses 1-inch-long pieces of wire to make a collection of unit cube frames that are not connected to each other. The total volume of Roark's cubes is the same as the volume of Bonnie's cube. What is the ratio of the total length of Bonnie's wire to the total length of Roark's wire? Express your answer as a common fraction. [asy]\nsize(50);\ndraw((0,0)--(4,0)--(4,4)--(0,4)--cycle);\ndraw((3,1)--(7,1)--(7,5)--(3,5)--cycle);\ndraw((0,0)--(3,1));\ndraw((4,0)--(7,1));\ndraw((4,4)--(7,5));\ndraw((0,4)--(3,5));\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The total length of Bonnie's wire is $12\\cdot6=72$ inches, while her total volume is $6^3=216$ cubic inches. Each of Roark's unit cubes has volume $1$ cubic inch, so he needs $216$ cubes.\n\nSince each cube has $12$ edges, each of Roark's cubes has $12\\cdot1=12$ inches of wire. So his $216$ cubes have a total of $216\\cdot12$ inches of wire.\n\nSo the desired fraction is $\\dfrac{72}{216\\cdot12}=\\dfrac{6}{216}=\\boxed{\\dfrac{1}{36}}$."
-}

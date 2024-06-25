@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $11065+11067+11069+11071+11073+11075+11077$ is divided by $14$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since $11065,11067,11069,\\ldots,11077$ are $7$ consecutive odd integers, they include exactly one integer from each of the residue classes $1,3,5,7,9,11,13\\pmod{14}$ (not necessarily in that order). Therefore, their sum is congruent $\\pmod{14}$ to $1+3+5+7+9+11+13=49$. The remainder of this sum $\\pmod{14}$ is $\\boxed{7}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $a$ and $b$ are positive integers such that $(a+bi)^2 = 3+4i$. What is $a+bi$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We have $(a+bi)^2 = a^2 + 2abi + (bi)^2 = (a^2 - b^2) + 2abi = 3 + 4i$. Equating real and imaginary parts, we get $a^2 - b^2 = 3$ and $2ab = 4$. The second equation implies $ab = 2$. Since $a$ and $b$ are positive integers and $ab=2$, we know one of them is 2 and the other is 1. Since $a^2-b^2 = 3$, we have $a=2$, $b=1$. So $a+bi = \\boxed{2 + i}$."
-}

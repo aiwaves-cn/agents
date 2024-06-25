@@ -1,6 +1,0 @@
-{
-    "problem": "The angles of quadrilateral $ABCD$ satisfy  $\\angle A = 2\\angle B =\n3\\angle C = 4\\angle D$.  What is the degree measure of $\\angle A$, rounded to the nearest whole number?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $x$ be the degree measure of $\\angle A$.  Then the degree measures of angles $B$, $C$,  and $D$ are $x/2$, $x/3$, and $x/4$, respectively.  The degree measures of the four angles have a sum of 360, so \\[\n360 = x+\\frac{x}{2}+\\frac{x}{3}+\\frac{x}{4} =\n\\frac{25x}{12}.\n\\]Thus $x=(12\\cdot 360)/25 = 172.8\\approx \\boxed{173}$."
-}

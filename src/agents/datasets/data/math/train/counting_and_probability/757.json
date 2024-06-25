@@ -1,6 +1,0 @@
-{
-    "problem": "A total of 17 teams play in a single-elimination tournament.  (A single-elimination tournament is one where once a team has lost, it is removed from the competition.)  How many total games must be played before a winner can be declared, assuming there is no possibility of ties?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Each game played removes one team from the tournament.  Since we seek to remove 16 teams from the tournament, we must play $\\boxed{16}$ games."
-}

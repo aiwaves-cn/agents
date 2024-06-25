@@ -1,6 +1,0 @@
-{
-    "problem": "Given a real number $x$, let $\\lfloor x\\rfloor$ denote the greatest integer less than or equal to $x$. For a certain integer $k$, there are exactly 70 positive integers $n_1$, $n_2, \\ldots,$ $n_{70}$ such that\n\\[k = \\lfloor \\sqrt[3]{n_1} \\rfloor = \\lfloor \\sqrt[3]{n_2} \\rfloor =\\cdots= \\lfloor \\sqrt[3]{n_{70}} \\rfloor\\]and $k$ divides $n_i$ for all $i$ such that $1 \\leq i \\leq 70$.\n\nFind the maximum value of $\\displaystyle\\frac{n_i}{k}$ for $1 \\leq i \\leq 70$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Because $k \\leq \\sqrt[3]{n_i} < k+1$, it follows that $k^3 \\leq n_i\n< (k+1)^3 = k^3 +3k^2 +3k +1$. Because $k$ is a divisor of $n_i$, there are $3k+4$ possible values for $n_i$, namely $k^3, k^3 +k,\n\\ldots, k^3 +3k^2 +3k$. Hence $3k+4 = 70$ and $k =22$. The desired maximum is $\\dfrac{k^3 + 3k^2 + 3k}{k} = k^2 + 3k + 3 = \\boxed{553}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P$ be a point on the line\n\\[\\begin{pmatrix} 3 \\\\ -1 \\\\ 2 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -2 \\\\ 1 \\end{pmatrix}\\]and let $Q$ be a point on the line\n\\[\\begin{pmatrix} 0 \\\\ 0 \\\\ 4 \\end{pmatrix} + s \\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix}.\\]Find the shortest possible distance $PQ.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "For the first line, we can write $P$ as$(2t + 3, -2t - 1, t + 2).$  For the second line, we can write $Q$ as $(s, 2s, -s + 4).$\n\nThen\n\\begin{align*}\nPQ^2 &= ((2t + 3) - (s))^2 + ((-2t - 1) - (2s))^2 + ((t + 2) - (-s + 4))^2 \\\\\n&= 6s^2 + 6st + 9t^2 - 6s + 12t + 14.\n\\end{align*}The terms $6st$ and $9t^2$ suggest the expansion of $(s + 3t)^2.$  And if we expand $(s + 3t + 2)^2,$ then we can also capture the term of $12t$:\n\\[(s + 3t + 2)^2 = s^2 + 6st + 9t^2 + 4s + 12t + 4.\\]Thus,\n\\begin{align*}\nPQ^2 &= (s + 3t + 2)^2 + 5s^2 - 10s + 10 \\\\\n&= (s + 3t + 2)^2 + 5(s^2 - 2s + 1) + 5 \\\\\n&= (s + 3t + 2)^2 + 5(s - 1)^2 + 5.\n\\end{align*}This tells us that $PQ^2 \\ge 5.$  Equality occurs when $s + 3t + 2 = s - 1 = 0,$ or $s = 1$ and $t = -1.$  Thus, the minimum value of $PQ$ is $\\boxed{\\sqrt{5}}.$"
-}

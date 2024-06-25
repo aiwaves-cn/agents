@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer $n$ such that 1560 divides $n!$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Prime factorize 1560 to find $1560=2^3\\cdot 3\\cdot 5 \\cdot 13$.  If $n\\leq 12$, then $n!$ does not contain a factor of 13.  However, $13!$ contains a factor of 13, as well as two factors of 5, five factors of 3, and ten factors of 2.  Therefore, the least value of $n$ for which 1560 divides $n!$ is $\\boxed{13}$."
-}

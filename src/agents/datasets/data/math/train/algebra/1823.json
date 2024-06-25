@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area of the region defined by the equation $x^2+y^2 - 7 = 4y-14x+3$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We rewrite the equation as $x^2 + 14x + y^2 - 4y = 10$ and then complete the square, resulting in  $(x+7)^2-49 + (y-2)^2-4=10$, or $(x+7)^2+(y-2)^2=63$. This is the equation of a circle with center $(-7, 2)$ and radius $\\sqrt{63},$ so the area of this region is $\\pi r^2 = \\boxed{63\\pi}$."
-}

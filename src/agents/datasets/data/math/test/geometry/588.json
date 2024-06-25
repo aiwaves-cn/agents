@@ -1,6 +1,0 @@
-{
-    "problem": "A cube of side 3 inches has a cube of side 1 inch cut from each corner. A cube of side 2 inches is then inserted in each corner. What is the number of square inches in the surface area of the resulting solid?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Our initial cube has 6 faces with 9 square inches of surface area each for a total of 54 square inches. When we cut away the 8 cubes of side length one, we remove 3 square inches of surface area for each one for a total of 24 square inches of surface area lost. We then add a 2 inch cube to each corner for a total of 8 more cubes. A 2 inch cube has a surface area of 24 but each of these cubes is missing 3 $\\text{in}^2$ of surface area, so the total surface area is $54-24+8(24-3)=\\boxed{198}$ square inches."
-}

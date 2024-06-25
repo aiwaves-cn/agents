@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered triples $(x,y,z)$ of real numbers that satisfy\n\\begin{align*}\nx + y - z &= 0, \\\\\nxz - xy + yz &= 27, \\\\\nxyz &= 54.\n\\end{align*}",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = x,$ $b = y,$ and $c = -z.$  Then $x = a,$ $y = b,$ and $z = -c,$ so the given equations become\n\\begin{align*}\na + b + c &= 0, \\\\\n-ac - ab - bc &= 27, \\\\\n-abc &= 54.\n\\end{align*}We re-write these as\n\\begin{align*}\na + b + c &= 0, \\\\\nab + ac + bc &= -27, \\\\\nabc &= -54.\n\\end{align*}Then by Vieta's formulas, $a,$ $b,$ and $c$ are the roots of\n\\[t^3 - 27t + 54 = 0,\\]which factors as $(t - 3)^2 (t + 6) = 0.$  Therefore, $a,$ $b,$ $c$ are equal to 3, 3, and $-6,$ in some order.\n\nThis leads to the solutions $(x,y,z) = (3,3,6),$ $(3,-6,-3),$ $(-6,3,-3),$ for a total of $\\boxed{3}$ solutions."
-}

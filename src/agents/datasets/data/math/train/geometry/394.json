@@ -1,6 +1,0 @@
-{
-    "problem": "How many square units are in the area of the parallelogram with vertices at (0, 0), (6, 0), (2, 8) and (8, 8)?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "The measure of the base of the parallelogram is 6 units and the height of the parallelogram is 8 units.  Therefore, the area of the parallel is $(6)(8)=\\boxed{48}$ square units. [asy]\nsize(4cm);\ndefaultpen(linewidth(0.6));\ndraw((-1,0)--(10,0),EndArrow(6));\ndraw((0,-1)--(0,10),EndArrow(6));\ndraw((0,0)--(6,0)--(8,8)--(2,8)--cycle);\ndot((0,0));dot((6,0));dot((8,8));dot((2,8));[/asy]"
-}

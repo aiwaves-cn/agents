@@ -1,6 +1,0 @@
-{
-    "problem": "Given positive real numbers $x$ and $y$ such that $\\log_y x + \\log_x y = 7$, what is $(\\log_y x)^2 + (\\log_x y)^2$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note using the change-of-base formula that $\\log_y x \\log_x y = 1$. We find that \\begin{align*}\n(\\log_y x)^2 + (\\log_x y)^2 &= (\\log_y x)^2 + 2\\log_y x \\log_x y + (\\log_x y)^2 - 2\\log_y x \\log_x y \\\\\n&= (\\log_y x + \\log_x y)^2 - 2\\log_y x \\log_x y \\\\\n&= 7^2 - 2 \\\\\n&= \\boxed{47}.\n\\end{align*}"
-}

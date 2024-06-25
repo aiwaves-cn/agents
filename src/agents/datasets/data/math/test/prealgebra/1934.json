@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $\\sqrt{(\\sqrt{56})(\\sqrt{126})}$ can be simplified to $a\\sqrt b$, where $a$ and $b$ are integers and $b$ is not divisible by any perfect square greater than 1. What is $a+b$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since 56 is a multiple of 4 and 126 is a multiple of 9, we can factor squares out of both terms, getting $\\sqrt{(2\\sqrt{14})(3\\sqrt{14})}=\\sqrt{2\\cdot3\\cdot14}$. Then, we can factor $2^2$ out of the outer square root to get $2\\sqrt{21}$. Thus $a=2$ and $b=21$, yielding $a+b=\\boxed{23}$."
-}

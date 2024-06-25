@@ -1,6 +1,0 @@
-{
-    "problem": "A non-square rectangle has integer dimensions. The number  of square units in its area is triple the number of units in its perimeter. What is the smallest possible length for the perimeter?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the two sides of the rectangle be $a$ and $b$.  The problem is now telling us $ab=6a+6b$.  Putting everything on one side of the equation, we have, $ab - 6a - 6b =0$.  This looks tricky.  However, we can add a number to both sides of the equation to make it factor nicely.  36 works here:  $$ab - 6a - 6b + 36 = 36 \\implies (a-6)(b-6)=36$$Since we don't have a square, $a$ and $b$ must be different.  Thus, the possible factor pairs of $36$ are $(1,36),(2,18),(3,12),(4,9)$.  As we can quickly see, $4 + 9 = 13$ is the smallest sum for any of those pairs, so $a = 10, b = 15$, with a total perimeter of $\\boxed{50}$, is the smallest possible perimeter."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is $\\dbinom{n}{n-1}$ for any positive integer $n$?  (Answer in terms of $n$.)",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "\\begin{align*}\n\\dbinom{n}{n-1}&=\\dfrac{n!}{(n-1)!~1!}\\\\\n&=\\dfrac{n\\times(n-1)\\times(n-2)\\times(n-3)\\times\\cdots\\times 2\\times 1}{(n-1)\\times (n-2)\\times (n-3)\\times \\cdots \\times 2\\times 1}\\\\\n&=\\boxed{n}.\n\\end{align*}Also, $\\binom{n}{n-1}$ is the number of ways to choose $n-1$ objects out of $n$.  This is equivalent to choosing $1$ object not to use.  Since there are $n$ different objects, there are $\\boxed{n}$ ways to do this."
-}

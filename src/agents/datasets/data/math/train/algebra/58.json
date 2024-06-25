@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the sum of the geometric series $-1 + 2 - 4 + 8 - \\cdots + 512$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The first term is $-1$, the common ratio is $-2$, and there are 10 terms, so the sum equals \\[\\frac{(-1)((-2)^{10}-1)}{-2-1} = \\frac{-1023}{-3} = \\boxed{341}.\\]"
-}

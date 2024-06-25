@@ -1,6 +1,0 @@
-{
-    "problem": "The vectors $\\mathbf{a} = \\begin{pmatrix} 3 \\\\ 1 \\\\ -2 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 0 \\\\ 2 \\\\ -1 \\end{pmatrix}.$  There exist scalars $p,$ $q,$ and $r$ such that\n\\[\\begin{pmatrix} 4 \\\\ 1 \\\\ -4 \\end{pmatrix} = p \\mathbf{a} + q \\mathbf{b} + r (\\mathbf{a} \\times \\mathbf{b}).\\]Find $r.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We can compute that $\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 3 \\\\ 3 \\\\ 6 \\end{pmatrix}.$  From the given equation,\n\\[(\\mathbf{a} \\times \\mathbf{b}) \\cdot \\begin{pmatrix} 4 \\\\ 1 \\\\ -4 \\end{pmatrix} = p ((\\mathbf{a} \\times \\mathbf{b}) \\cdot  \\mathbf{a}) + q \n((\\mathbf{a} \\times \\mathbf{b}) \\cdot \\mathbf{b}) + r ((\\mathbf{a} \\times \\mathbf{b}) \\cdot (\\mathbf{a} \\times \\mathbf{b})).\\]Since $\\mathbf{a} \\times \\mathbf{b}$ is orthogonal to both $\\mathbf{a}$ and $\\mathbf{b},$ $(\\mathbf{a} \\times \\mathbf{b}) \\cdot  \\mathbf{a} = (\\mathbf{a} \\times \\mathbf{b}) \\cdot  \\mathbf{b} = 0,$ so this reduces to\n\\[-9 = 54r.\\]Hence, $r = \\boxed{-\\frac{1}{6}}.$"
-}

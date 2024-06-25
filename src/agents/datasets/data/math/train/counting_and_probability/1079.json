@@ -1,6 +1,0 @@
-{
-    "problem": "One day Max says to Liz, \"Out of the 25 people taking either English or French, you and I are the only two taking both.'' Liz, being mathematically inclined, responds by pointing out that there are exactly twice as many people in the English class as there are in the French class. How many people are taking English but not French?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Let $x$ be the number of kids in the French class not including Max and Liz and let $y$ be the number of kids in the English class not including Max and Liz. Since all 25 kids are either just in English, just in French, or in both (Max and Liz), we know that $x+y+2=25$ or $x+y=23$. Furthermore, we know that $2(x+2)=y+2$ since $x+2$ and $y+2$ represent the total number of kids in each of the two classes.  Rewriting the last equation gives us $2x+2=y$ which can be substituted into the first equation to give us $x+(2x+2)=23$, which gives $x=7$. Substituting this value into any of the equations gives us $y=\\boxed{16}$."
-}

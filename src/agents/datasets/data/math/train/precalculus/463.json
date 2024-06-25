@@ -1,6 +1,0 @@
-{
-    "problem": "The polynomial $$P(x)=(1+x+x^2+\\ldots+x^{17})^2-x^{17}$$has 34 complex zeros of the form $z_k=r_k\\left[\\cos(2\\pi\\alpha_k)\n+i\\sin(2\\pi\\alpha_k)\\right]$, $k=1,2,3,\\ldots,34$, with $0<\\alpha_1\\le\\alpha_2\\le\\alpha_3\\le\\dots\\le\\alpha_{34}<1$ and $r_k>0$. Find $\\alpha_1+\\alpha_2+\\alpha_3+\\alpha_4+\\alpha_5.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Note that for $x\\ne1$, \\begin{align*}\nP(x)&=\\left(\\frac{x^{18}-1}{x-1}\\right)^2-x^{17} \\end{align*}so \\begin{align*}\n\\cr (x-1)^2P(x)&=(x^{18}-1)^2-x^{17}(x-1)^2\\cr\n&=x^{36}-2x^{18}+1-x^{19}+2x^{18}-x^{17}\\cr\n&=x^{36}-x^{19}-x^{17}+1\\cr &=x^{19}(x^{17}-1)-(x^{17}-1)\\cr\n&=(x^{19}-1)(x^{17}-1). \\end{align*}Then\n\\[P(x)=\\frac{(x^{19}-1)(x^{17}-1)}{(x-1)^2}.\\]Thus the zeros of $P(x)$ are the 34 complex numbers other than 1 which satisfy $x^{17}=1$ or $x^{19}=1$. It follows that $\\alpha_1= \\frac{1}{19},$ $\\alpha_2= \\frac{1}{17},$ $\\alpha_3= \\frac{2}{19},$ $\\alpha_4= \\frac{2}{17},$ and $\\alpha_5= \\frac{3}{19},$ so\n\\[\\alpha_1+\\alpha_2+\\alpha_3+\\alpha_4+\\alpha_5= \\boxed{\\frac{159}{323}}.\\]"
-}

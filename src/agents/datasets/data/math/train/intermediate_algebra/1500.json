@@ -1,6 +1,0 @@
-{
-    "problem": "A sequence is defined as follows: $a_1=a_2=a_3=1$, and, for all positive integers $n$, $a_{n+3}=a_{n+2}+a_{n+1}+a_n$.  Given that $a_{28}= 6090307$, $a_{29}=11201821$, and $a_{30}=20603361$, find the remainder when $\\displaystyle \\sum_{k=1}^{28}a_k$ is divided by 1000.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "First we write down the equation $a_{n+3} = a_{n+2} + a_{n+1} + a_n$ for $n = 1, 2, 3, \\ldots, 27$: \\[\\begin{aligned} a_4 &= a_3+a_2+a_1, \\\\ a_5&=a_4+a_3+a_2, \\\\ a_6&=a_5+a_4+a_3, \\\\\\vdots \\\\ a_{30}&=a_{29}+a_{28}+a_{27}. \\end{aligned}\\]Let $S = a_1 + a_2 + \\ldots + a_{28}$ (the desired quantity). Summing all these equations, we see that the left-hand side and right-hand side are equivalent to \\[S + a_{29} + a_{30} - a_1 - a_2 - a_3 = (S + a_{29} - a_1-a_2) + (S - a_1) + (S-a_{28}).\\]Simplifying and solving for $S$, we obtain \\[S = \\frac{a_{28} + a_{30}}{2} = \\frac{6090307+20603361}{2} = \\frac{\\dots 3668}{2} = \\dots 834.\\]Therefore, the remainder when $S$ is divided by $1000$ is $\\boxed{834}$."
-}

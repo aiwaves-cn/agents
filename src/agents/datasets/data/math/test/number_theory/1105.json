@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest number of distinct positive integer factors that a positive integer less than 20 can have?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "An integer $n$ in the form $p^e$, for some prime $p$ and positive integer $e$, has $(e+1)$ positive factors. To maximize $e$, let $p=2$, the smallest prime. Since $n$ is less than 20, $e$ is at most 4, which means $n$ can have 5 factors. If $n$ is in the form $p_1^{e_1}\\cdot p_2^{e_2}$, then let $p_1=2$ and $p_2=3$ to find the maximum possible $e_1$ and $e_2$. Both cannot be 2 (else $n=36$), so $e_1, e_2=1, 2$ give the most factors: $(2+1)(1+1)=\\boxed{6}$ factors. Finally, $n$ cannot be divisible by any other prime since $2\\cdot3\\cdot5=30>20$. Thus, the greatest number of distinct positive integer factors that a positive integer less than 20 can have is 6 factors. Of course, we could have solved this problem by finding the number of factors of each positive integer less than 20, but in general our approach is more efficient."
-}

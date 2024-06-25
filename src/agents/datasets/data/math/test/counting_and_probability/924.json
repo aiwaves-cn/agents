@@ -1,6 +1,0 @@
-{
-    "problem": "A nursery employee wishes to plant 2 identical Golden Delicious apple trees and 5 identical Bartlett pear trees in one row. How many distinct arrangements are possible?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We have 7 places to plant trees in our row.  We can choose two of these to be Golden Delicious in $\\binom{7}{2}= \\boxed{21}$ ways.  For each of these choices, we plant the Bartlett pears in the remaining 5 places."
-}

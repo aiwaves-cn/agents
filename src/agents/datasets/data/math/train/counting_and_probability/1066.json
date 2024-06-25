@@ -1,6 +1,0 @@
-{
-    "problem": "If Ella rolls a standard six-sided die until she rolls the same number on consecutive rolls, what is the probability that her 10th roll is her last roll? Express your answer as a decimal to the nearest thousandth.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We can really construct this scenario precisely: the first toss can be anything, then the second toss can be all but what the first toss was, the third toss can be all but what the second toss was, etc., up through the ninth toss. The tenth toss, though, must be exactly what the ninth toss was. So, the probability is the product of the probabilities that the second to ninth tosses are all different than the previous toss and the tenth is the same of the ninth: $1 \\cdot \\frac{5}{6} \\cdot \\frac{5}{6} \\cdot \\ldots \\cdot \\frac{5}{6} \\cdot \\frac{1}{6} = \\frac{5^8}{6^9} \\approx \\boxed{.039}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the tens digit and the ones digit of the integer form of $(2+3)^{23}$?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Simplify $(2+3)^{23}=5^{23}$. Since the ones digit of $5\\times5$ is 5, the ones digit of $5^n$ is 5 for any positive integer $n$. Similarly, since the tens digit of $25\\times5$ is 2 (and the ones digit is 5), the tens digit of $5^n$ is 2 for all positive integers $n\\ge2$. Therefore, the sum of the tens digit and the ones digit of $(2+3)^{23}$ is $2+5=\\boxed{7}$."
-}

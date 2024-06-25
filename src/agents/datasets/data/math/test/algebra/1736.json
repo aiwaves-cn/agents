@@ -1,6 +1,0 @@
-{
-    "problem": "A certain organism begins as two cells. Each cell splits and becomes two cells at the end of three days. At the end of another three days, every cell of the organism splits and becomes two cells. This process lasts for a total of 15 days, and no cells die during this time. How many cells are there at the end of the $15^\\text{th}$ day?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "This is a geometric sequence with a first term of $2$ and a common ratio of $2$. At the end of the fifteenth day, we are at the 6th term of this sequence, so there are $2\\cdot2^5=\\boxed{64}$ cells then."
-}

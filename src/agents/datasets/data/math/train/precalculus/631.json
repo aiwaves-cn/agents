@@ -1,6 +1,0 @@
-{
-    "problem": "In tetrahedron $ABCD,$\n\\[\\angle ADB = \\angle ADC = \\angle BDC = 90^\\circ.\\]Also, $x = \\sin \\angle CAD$ and $y = \\sin \\angle CBD.$  Express $\\cos \\angle ACB$ in terms of $x$ and $y.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "By the Law of Cosines on triangle $ABC,$\n\\[\\cos \\angle ACB = \\frac{AC^2 + BC^2 - AB^2}{2 \\cdot AC \\cdot BC}.\\][asy]\nunitsize(1 cm);\n\npair A, B, C, D;\n\nA = (0,2);\nB = 2*dir(240);\nC = (3,0);\nD = (0,0);\n\ndraw(A--B--C--cycle);\ndraw(A--D,dashed);\ndraw(B--D,dashed);\ndraw(C--D,dashed);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, E);\nlabel(\"$D$\", D, SE);\n[/asy]\n\nBy Pythagoras on right triangle $ABD,$\n\\[AB^2 = AD^2 + BD^2.\\]By Pythagoras on right triangles $ACD$ and $BCD,$\n\\begin{align*}\nAD^2 &= AC^2 - CD^2, \\\\\nBD^2 &= BC^2 - CD^2,\n\\end{align*}so\n\\begin{align*}\n\\cos \\angle ACB &= \\frac{AC^2 + BC^2 - AB^2}{2 \\cdot AC \\cdot BC} \\\\\n&= \\frac{AC^2 + BC^2 - (AD^2 + BD^2)}{2 \\cdot AC \\cdot BC} \\\\\n&= \\frac{(AC^2 - AD^2) + (BC^2 - BD^2)}{2 \\cdot AC \\cdot BC} \\\\\n&= \\frac{2 \\cdot CD^2}{2 \\cdot AC \\cdot BC} \\\\\n&= \\frac{CD}{AC} \\cdot \\frac{CD}{BC} \\\\\n&= (\\sin \\angle CAD)(\\sin \\angle CBD) \\\\\n&= \\boxed{xy}.\n\\end{align*}"
-}

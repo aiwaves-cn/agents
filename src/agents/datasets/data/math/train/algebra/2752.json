@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a \\bowtie b = a+\\sqrt{b+\\sqrt{b+\\sqrt{b+...}}}$. If $4\\bowtie y = 10$, find the value of $y$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We know that $$4\\bowtie y = 4+\\sqrt{y+\\sqrt{y+\\sqrt{y+...}}}=10.$$Therefore, $\\sqrt{y+\\sqrt{y+\\sqrt{y+...}}}=6$. Because the series of $\\sqrt{y+\\sqrt{y+\\sqrt{y+...}}}$ is infinite, we can substitute $6$ into the series for any $\\sqrt{y+\\sqrt{y+\\sqrt{y+...}}}$ we want. Thus, $$\\sqrt{y+\\sqrt{y+\\sqrt{y+...}}}=6$$implies that $$\\sqrt{y+\\sqrt{y+\\sqrt{y+...}}}=\\sqrt{y+6}=6.$$Squaring both sides of this new equality, we have $y+6=36$, or $y=\\boxed{30}$."
-}

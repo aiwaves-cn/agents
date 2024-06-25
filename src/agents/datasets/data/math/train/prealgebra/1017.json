@@ -1,6 +1,0 @@
-{
-    "problem": "What is the probability of spinning the spinner pictured and getting a prime number? Express your answer as a common fraction. [asy]\nimport olympiad; defaultpen(linewidth(0.8)); size(100); dotfactor=4;\ndraw(Circle((0,0),1));\nstring[] labels = {\"3\",\"6\",\"1\",\"4\",\"5\",\"2\"};\nfor(int i = 0; i < 6; ++i){\n\nlabel(labels[i],0.7*dir(60*i));\n\ndraw((0,0)--dir(60*i - 30));\n}\ndraw((0,0)--0.7*dir(130),linewidth(2.0),EndArrow(size=6));\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "There are six possible numbers for the spinner to land on, three of which are prime (3, 2, and 5). Thus, the probability of spinning a prime number is $\\boxed{\\frac{1}{2}}$."
-}

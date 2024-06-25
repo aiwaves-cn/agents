@@ -1,6 +1,0 @@
-{
-    "problem": "A semicircle is constructed along each side of a right triangle with legs 6 inches and 8 inches. The semicircle placed along the hypotenuse is shaded, as shown. What is the total area of the two non-shaded crescent-shaped regions? Express your answer in simplest form.\n\n[asy]\nunitsize(0.4cm);\nsize(101);\npair A = (0,3), B = (0,0), C = (4,0);\nfilldraw(A..B..C--cycle,gray(0.6),black);\ndraw(A--B--C);\ndraw(Arc(A/2,3/2,90,270)^^Arc(C/2,2,0,-180)); draw(rightanglemark(A,B,C));\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $A,B$ be the areas of the semicircles on the legs of the right triangle, and let $C$ be the area of the semicircle on the hypotenuse of the right triangle.  Then we see that by Pythagorean theorem $A + B = C$.\n\nThe area of the triangle plus the area of the two small semicircles is\n\\[A + B + \\frac{6 \\cdot 8}{2} = A + B + 24.\\]But this is also the area we are interested in, plus $C.$  Therefore, the answer is $A + B + 24 - C = \\boxed{24}.$"
-}

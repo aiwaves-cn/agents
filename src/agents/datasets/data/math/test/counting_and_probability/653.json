@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can we seat 6 people around a round table if Fred and Gwen insist on sitting opposite each other?  (Two seatings are considered equivalent if one is a rotation of the other.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 6 choices of seats for Fred to sit in.  Once Fred is seated, then Gwen must sit opposite him.  This leaves 4 people to place in the four remaining seats, which can be done in $4!$ ways.  However, we must divide by 6 to account for the 6 rotations of the table.  So the number of arrangements is $\\dfrac{6 \\times 1 \\times 4!}{6} = 4! = \\boxed{24}$.  Alternatively, we could start by fixing the table around Fred, thus removing the rotation.  There is 1 option for Gwen's seat, since she must sit across from him.  This leaves 4 people to place in four unique seats, so the number of arrangements is $4! = \\boxed{24}$."
-}

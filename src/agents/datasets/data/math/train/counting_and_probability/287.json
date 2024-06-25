@@ -1,6 +1,0 @@
-{
-    "problem": "I have 5 books, two of which are identical copies of the same math book (and all of the rest of the books are different).  In how many ways can I arrange them on a shelf?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are $5!$ ways to arrange the books if they are unique, but two are identical so we must divide by $2!$ for an answer of $\\dfrac{5!}{2!} = \\boxed{60}$."
-}

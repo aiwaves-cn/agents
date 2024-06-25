@@ -1,6 +1,0 @@
-{
-    "problem": "All the numbers 2, 3, 4, 5, 6, 7 are assigned to the six faces of a cube, one number to each face. For each of the eight vertices of the cube, a product of three numbers is computed, where the three numbers are the numbers assigned to the three faces that include that vertex. What is the greatest possible value of the sum of these eight products?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let the labels be $a,$ $b,$ $c,$ $d,$ $e,$, $f$ be the labels of the cube, so that $a$ and $b$ are opposite, $c$ and $d$ are opposite, and $e$ and $f$ are opposite.  Then the sum of the eight products is\n\\[ace + acf + ade + adf + bce + bcf + bde + bdf = (a + b)(c + d)(e + f).\\]By AM-GM,\n\\[(a + b)(c + d)(e + f) \\le \\left[ \\frac{(a + b) + (c + d) + (e + f)}{3} \\right]^3 = \\left( \\frac{27}{3} \\right)^3 = 729.\\]Equality occurs when $a + b = c + d = e + f = 9,$ which is clearly achievable, so the maximum sum is $\\boxed{729}.$"
-}

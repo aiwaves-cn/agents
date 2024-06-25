@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[\\frac{x}{x + 3} \\ge 0.\\]Enter your answer using interval notation.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can build a sign chart:\n\n\\[\n\\begin{array}{c|ccc}\n& x < -3 & -3 < x < 0 & 0 < x \\\\ \\hline\nx + 3 & - & + & + \\\\\nx & - & - & + \\\\\n\\frac{x}{x + 3} & + & - & +\n\\end{array}\n\\]Also, $\\frac{x}{x + 3} = 0$ for $x = 0.$\n\nThus, the solution is $x \\in \\boxed{(-\\infty,-3) \\cup [0,\\infty)}.$"
-}

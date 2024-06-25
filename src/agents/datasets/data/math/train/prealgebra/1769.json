@@ -1,6 +1,0 @@
-{
-    "problem": "The average of four different positive whole numbers is $4.$ If the difference between the largest and smallest of these numbers is as large as possible, what is the average of the other two numbers?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since the average of four numbers is $4,$ their sum is $4 \\times 4 = 16.$\n\nFor the difference between the largest and smallest of these numbers to be as large as possible, we would like one of the numbers to be as small as possible (so equal to $1$) and the other (call it $B$ for big) to be as large as possible.\n\nSince one of the numbers is $1,$ the sum of the other three numbers is $16-1=15.$\n\nFor the $B$ to be as large as possible, we must make the remaining two numbers (which must be different and not equal to $1$) as small as possible. So these other two numbers must be equal to $2$ and $3,$ which would make $B$ equal to $15-2-3 = 10.$\n\nSo the average of these other two numbers is $\\dfrac{2+3}{2}=\\dfrac{5}{2}$ or $\\boxed{2\\frac{1}{2}}.$"
-}

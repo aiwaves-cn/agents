@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive integer $a$ such that $x^4 + a^2$ is not prime for any integer $x.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "For $1 \\le a \\le 7,$ we give a value of $x$ for which $x^4 + a^2$ is prime:\n\\[\n\\begin{array}{c|c|c}\na & x & a^4 + x^2 \\\\ \\hline\n1 & 1 & 2 \\\\\n2 & 1 & 5 \\\\\n3 & 10 & 10009 \\\\\n4 & 1 & 17 \\\\\n5 & 2 & 41 \\\\\n6 & 1 & 37 \\\\\n7 & 20 & 160049\n\\end{array}\n\\]For $a = 8,$\n\\begin{align*}\nx^4 + a^2 &= x^4 + 64 \\\\\n&= x^4 + 16x^2 + 64 - 16x^2 \\\\\n&= (x^2 + 8)^2 - (4x)^2 \\\\\n&= (x^2 + 4x + 8)(x^2 - 4x + 8).\n\\end{align*}For any positive integer, both factors $x^2 + 4x + 8$ and $x^2 - 4x + 8$ are greater than 1, so $x^4 + 64$ is always composite.  Thus, the smallest such $a$ is $\\boxed{8}.$"
-}

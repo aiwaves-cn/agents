@@ -1,6 +1,0 @@
-{
-    "problem": "Find all integer values of $a$ so that the polynomial\n\\[x^3 + 3x^2 + ax + 7 = 0\\]has at least one integer root.  Enter all possible values of $a,$ separated by commas.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By the Integer Root Theorem, any integer root must divide 7.  Thus, the possible values of the integer root are 1, 7, $-1,$ and $-7.$\n\nWe can plug in each integer root separately to see what $a$ is in each case.  For $x = 1,$\n\\[1 + 3 + a + 7 = 0,\\]so $a = -11.$  For $x = 7,$ $a = -71.$  For $x = -1,$ $a = 9.$  For $x = -7,$ $a = -27.$\n\nThus, the possible values of $a$ are $\\boxed{-71, -27, -11, 9}.$"
-}

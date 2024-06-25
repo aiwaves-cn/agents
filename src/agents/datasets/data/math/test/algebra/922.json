@@ -1,6 +1,0 @@
-{
-    "problem": "How many units long is a line segment whose endpoints have coordinates $(-3,7)$ and $(2,-5)$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We use the distance formula: $\\sqrt{(2 - (-3))^2 + ((-5) - 7)^2} = \\sqrt{25 + 144} = \\boxed{13}$.\n\n- OR -\n\nWe note that the points $(-3, 7)$, $(2, -5)$, and $(-3, -5)$ form a right triangle with legs of length 5 and 12. This is a Pythagorean triple, so the hypotenuse has length $\\boxed{13}$."
-}

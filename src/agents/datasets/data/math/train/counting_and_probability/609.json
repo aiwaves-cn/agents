@@ -1,6 +1,0 @@
-{
-    "problem": "Nine people sit down at random seats around a round table. Four of them are math majors, three others are physics majors, and the two remaining people are biology majors. What is the probability that all four math majors sit in consecutive seats?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{9}{4}=126$ ways to choose the seats for the four math majors. Of these ways, there are only 9 where the four math majors sit in consecutive seats. Therefore, the probability that the math majors sit in consecutive seats is $\\frac{9}{126}=\\boxed{\\frac{1}{14}}$."
-}

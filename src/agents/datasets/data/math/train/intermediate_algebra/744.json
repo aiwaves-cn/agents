@@ -1,6 +1,0 @@
-{
-    "problem": "For an arithmetic sequence $a_1,$ $a_2,$ $a_3,$ $\\dots,$ let\n\\[S_n = a_1 + a_2 + a_3 + \\dots + a_n,\\]and let\n\\[T_n = S_1 + S_2 + S_3 + \\dots + S_n.\\]If you are told the value of $S_{2019},$ then you can uniquely determine the value of $T_n$ for some integer $n.$  What is this integer $n$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = a_1,$ and let $d$ be the common difference, so\n\\[S_n = \\frac{2a + (n - 1)d}{2} \\cdot n.\\]Then\n\\begin{align*}\nT_n &= \\sum_{k = 1}^n \\left( \\frac{2a + (k - 1) d}{2} \\cdot k \\right) \\\\\n&= \\sum_{k = 1}^n \\left( \\left( a - \\frac{d}{2} \\right) k + \\frac{d}{2} k^2 \\right) \\\\\n&= \\left( a - \\frac{d}{2} \\right) \\sum_{k = 1}^n k + \\frac{d}{2} \\sum_{k = 1}^n k^2 \\\\\n&= \\left( a - \\frac{d}{2} \\right) \\cdot \\frac{n(n + 1)}{2} + \\frac{d}{2} \\cdot \\frac{n(n + 1)(2n + 1)}{6} \\\\\n&= \\frac{n(n + 1)(3a + (n - 1)d)}{6}.\n\\end{align*}We are told the value of\n\\[S_{2019} = \\frac{2a + 2018d}{2} \\cdot 2019 = 2019 (a + 1009d),\\]which means the value of $a + 1009d$ is uniquely determined.  Then the value of $3(a + 1009d) = 3a + 3027d$ is uniquely determined.  Thus, we can determine $T_n$ for $n = 3027 + 1 = \\boxed{3028}.$"
-}

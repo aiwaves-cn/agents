@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $x^2 + 5x + c$ has roots in the form of $x = \\frac{-5 \\pm \\sqrt{c}}{2}$. What is the value of $c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Using the quadratic formula $x = \\frac{ - b \\pm \\sqrt {b^2 - 4ac} }{2a}$, we can find the roots of the quadratic. We find that $x = \\frac{-5 \\pm \\sqrt{25-4c}}{2}$. Thus, setting our two expressions for $x$ equal to each other, we find that  \\begin{align*}\n\\frac{-5 \\pm \\sqrt{25-4c}}{2} &= \\frac{-5 \\pm \\sqrt{c}}{2} \\quad \\Rightarrow \\\\\n25 - 4c &= c \\quad \\Rightarrow \\\\\nc &= \\boxed{5}.\n\\end{align*}"
-}

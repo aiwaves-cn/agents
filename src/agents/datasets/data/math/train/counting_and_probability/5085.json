@@ -1,6 +1,0 @@
-{
-    "problem": "Dave arrives at an airport which has twelve gates arranged in a straight line with exactly $100$ feet between adjacent gates. His departure gate is assigned at random. After waiting at that gate, Dave is told the departure gate has been changed to a different gate, again at random. Let the probability that Dave walks $400$ feet or less to the new gate be a fraction $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $12 \\cdot 11 = 132$ possible situations ($12$ choices for the initially assigned gate, and $11$ choices for which gate Dave's flight was changed to). We are to count the situations in which the two gates are at most $400$ feet apart.\nIf we number the gates $1$ through $12$, then gates $1$ and $12$ have four other gates within $400$ feet, gates $2$ and $11$ have five, gates $3$ and $10$ have six, gates $4$ and $9$ have have seven, and gates $5$, $6$, $7$, $8$ have eight. Therefore, the number of valid gate assignments is\\[2\\cdot(4+5+6+7)+4\\cdot8 = 2 \\cdot 22 + 4 \\cdot 8 = 76\\]so the probability is $\\frac{76}{132} = \\frac{19}{33}$. The answer is $19 + 33 = \\boxed{52}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A bag contains two red beads and two green beads. You reach into the bag and pull out a bead, replacing it with a red bead regardless of the color you pulled out.  What is the probability that all beads in the bag are red after three such replacements? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The beads will all be red at the end of the third draw precisely when two  green beads are chosen in the three draws. If the first bead drawn is  green, then there will be one  green and three red beads in the bag before the second draw. So the probability that  green beads are drawn in the first two draws is $$\n\\frac{1}{2}\\cdot\\frac{1}{4}= \\frac{1}{8}.\n$$ The probability that a  green bead is chosen, then a red bead, and then a  green bead, is $$\n\\frac{1}{2}\\cdot\\frac{3}{4}\\cdot\\frac{1}{4} = \\frac{3}{32}.\n$$ Finally, the probability that a red bead is chosen then two  green beads is $$\n\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{4} = \\frac{1}{16}.\n$$ The sum of these probabilities is $$\n\\frac{1}{8}+ \\frac{3}{32}+ \\frac{1}{16}= \\boxed{\\frac{9}{32}}.\n$$"
-}

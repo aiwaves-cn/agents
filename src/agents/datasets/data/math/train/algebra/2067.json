@@ -1,6 +1,0 @@
-{
-    "problem": "You are given that $x$ is directly proportional to $y^3$, and $y$ is inversely proportional to $\\sqrt{z}$.  If the value of $x$ is 3 when $z$ is $12$, what is the value of $x$ when $z$ is equal to $75$?  Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "By the definition of direct variation, we know that $x=my^3$ for some constant $m$. By the definition of inverse proportion, we know that $y=n/\\sqrt{z}$ for some constant $n$.  Substituting for $y$ in the first expression, we can see that $x=\\frac{mn^3}{(\\sqrt{z})^3}=\\frac{k}{z\\sqrt{z}}$ or $xz\\sqrt{z}=k$ for some constant $k$.  Substituting the given values, we can solve for $k$: $$xz\\sqrt{z}=3\\cdot 12\\sqrt{12}=36\\cdot 2\\sqrt{3}=72\\sqrt{3}=k$$Now, we can let $z=75$ and use the value of $k$ to solve for $x$: \\begin{align*}\nxz\\sqrt{z}=x(75\\sqrt{75})&=72\\sqrt{3}\\\\\n\\Rightarrow\\qquad x(75\\cdot5\\sqrt{3})&=72\\sqrt{3}\\\\\n\\Rightarrow\\qquad 375\\sqrt{3}x&=72\\sqrt{3}\\\\\n\\Rightarrow\\qquad x&=72/375=\\boxed{\\frac{24}{125}}\n\\end{align*}"
-}

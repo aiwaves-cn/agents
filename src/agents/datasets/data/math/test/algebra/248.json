@@ -1,6 +1,0 @@
-{
-    "problem": "When a car's brakes are applied, it travels 5 feet less in each  second than the previous second until it comes to a complete stop.  A car goes 45 feet in the first second after the brakes are applied.  How many feet does the car travel from the time the  brakes are applied to the time the car stops?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The number of feet the car travels in each second is an arithmetic sequence with first term 45 and common difference $-5$.  We are summing all the positive terms in this sequence (these terms represent the number of feet the car travels in each second). Thus, we want to find the sum $45+40+\\dots+5$.\n\nThe sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms.  The number of terms is $45/5 = 9$, so the sum is $(45 + 5)/2 \\cdot 9 = \\boxed{225}$."
-}

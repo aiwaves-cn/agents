@@ -1,6 +1,0 @@
-{
-    "problem": "The polynomial $x^8 - 1$ is factored as\n\\[x^8 - 1 = p_1(x) p_2(x) \\dotsm p_k(x),\\]where each factor $p_i(x)$ is a non-constant polynomial with real coefficients.  Find the largest possible value of $k.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By applying the difference of squares factorization repeatedly, we get\n\\begin{align*}\nx^8 - 1 &= (x^4 - 1)(x^4 + 1) \\\\\n&= (x^2 - 1)(x^2 + 1)(x^4 + 1) \\\\\n&= (x - 1)(x + 1)(x^2 + 1)(x^4 + 1).\n\\end{align*}We can factor $x^4 + 1$ further with a clever application of difference-of-squares:\n\\begin{align*}\nx^4 + 1 &= x^4 + 2x^2 + 1 - 2x^2 \\\\\n&= (x^2 + 1)^2 - (x \\sqrt{2})^2 \\\\\n&= (x^2 + x \\sqrt{2} + 1)(x^2 - x \\sqrt{2} + 1).\n\\end{align*}Thus,\n\\[x^8 - 1 = (x - 1)(x + 1)(x^2 + 1)(x^2 + x \\sqrt{2} + 1)(x^2 - x \\sqrt{2} + 1).\\]The quadratic factors have no real roots, so the factorization can have at most $\\boxed{5}$ factors."
-}

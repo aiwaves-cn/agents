@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix that corresponds to projecting onto the $y$-axis.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The transformation that projects onto the $y$-axis takes $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ to $\\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix},$ and $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ to $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix},$ so the matrix is\n\\[\\boxed{\\begin{pmatrix} 0 & 0 \\\\ 0 & 1 \\end{pmatrix}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The product of the digits of 3214 is 24. How many distinct four-digit positive integers are such that the product of their digits equals 12?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We first have to figure out the different groups of 4 one-digit numbers whose product is 12.  We obviously can't use 12 as one of the numbers, nor can we use 9, 8, or 7 (none divides 12).  We can use 6, in which case one of the other numbers is 2 and the other two are 1s.  So, we can have the number 6211, or any number we can form by reordering these digits.  There are $4!$ ways to order these four numbers, but we have to divide by $2!$ because the two 1s are the same, so $4!$ counts each possible number twice.  That gives us $4!/2!=12$ numbers that consist of 6, 2, and two 1s.\n\nNext, we note that we can't have a 5, so we think about 4.  If we have a 4, then the other three numbers are 3, 1, 1.  Just as there are 12 ways to order the digits in 6211, there are 12 ways to order the digits in 4311.  Finally, we check if there are any ways to get a product of 12 with digits that are 3 or less.  There's only one such group, the digits in 3221.  As with 6211 and 4311, there are 12 distinct ways to order the digits in 3221.\n\nCombining our three cases, we have $12+12+12=\\boxed{36}$ possible integers."
-}

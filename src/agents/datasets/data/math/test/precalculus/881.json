@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ $\\mathbf{c}$ be three vectors such that\n\\[\\mathbf{a} \\times \\mathbf{b} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 3 \\end{pmatrix}, \\quad \\mathbf{a} \\times \\mathbf{c} = \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix}, \\quad \\mathbf{b} \\times \\mathbf{c} = \\begin{pmatrix} 1 \\\\ -7 \\\\ 18 \\end{pmatrix}.\\]Compute $(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}).$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Expanding, we get\n\\begin{align*}\n(2 \\mathbf{b} - \\mathbf{a}) \\times (3 \\mathbf{c} + \\mathbf{a}) &= 6 \\mathbf{b} \\times \\mathbf{c} + 2 \\mathbf{b} \\times \\mathbf{a} - 3 \\mathbf{a} \\times \\mathbf{c} - \\mathbf{a} \\times \\mathbf{a} \\\\\n&= 6 \\mathbf{b} \\times \\mathbf{c} - 2 \\mathbf{a} \\times \\mathbf{b} - 3 \\mathbf{a} \\times \\mathbf{c} - \\mathbf{0} \\\\\n&= 6 \\begin{pmatrix} 1 \\\\ - 7 \\\\ 18 \\end{pmatrix} - 2 \\begin{pmatrix} 6 \\\\ - 7 \\\\ 3 \\end{pmatrix} - 3 \\begin{pmatrix} 4 \\\\ 7 \\\\ 2 \\end{pmatrix} \\\\\n&= \\boxed{\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}}.\n\\end{align*}"
-}

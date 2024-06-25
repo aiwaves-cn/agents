@@ -1,6 +1,0 @@
-{
-    "problem": "If $y=kx^{\\frac{1}{4}}$ and $y=3\\sqrt{2}$ at $x=81$, what is the value of $y$ at $x=4$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "First we have to solve for $k$ where $3\\sqrt{2}=k\\cdot81^{\\frac{1}{4}}$.  Since $81^{\\frac{1}{4}}=3$, we have $3\\sqrt{2}=k\\cdot3$, so $k = \\sqrt{2}$.\n\nWhen $x=4$, we have$$y=k\\cdot4^{\\frac{1}{4}}=k\\cdot\\sqrt{2}.$$Since $k=\\sqrt{2}$, we have $$y=\\sqrt{2}\\cdot\\sqrt{2}=\\boxed{2}.$$"
-}

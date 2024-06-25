@@ -1,6 +1,0 @@
-{
-    "problem": "The number of toy cars that Ray has is a multiple of $6$. When he loses two of them, the number of cars that he has left is a multiple of $n$. If $n$ is a positive even integer less than $10$, then how many possible values are there for $n$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $n=2m$. Let $b$ be the number of cars that Ray originally had. Clearly $b=6a$ for some positive integer $a$. Additionally, \\begin{align*} b-2\\equiv 0\\pmod n&\\implies 6a\\equiv 2\\pmod {2m} \\\\ &\\implies 3a\\equiv 1\\pmod m.\\end{align*} Such $a$ exists if and only if $3$ is invertible modulo $m$. In other words, $\\gcd(3,m)=1$. We have that $n<10\\implies m=\\frac{n}{2}<5$. The only $0<m<5$ relatively prime to $3$ are $1,2,4$. Thus, there are $\\boxed{3}$ possible values of $n$: $2$, $4$, and $8$."
-}

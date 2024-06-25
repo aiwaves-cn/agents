@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $AB = 9$, $BC = 12$, $AC = 15$, and $CD$ is the angle bisector.  Find the length of $CD$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "$\\triangle ABC$ is a right triangle, since $9^2 + 12^2 = 15^2$. Thus, $\\angle ABC = 90^\\circ$.\n\n[asy]\nunitsize(0.3 cm);\n\npair A, B, C, D;\n\nA = (0,9);\nB = (0,0);\nC = (12,0);\nD = (0,4);\n\ndraw(A--B--C--cycle);\ndraw(C--D);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, W);\n[/asy]\n\nBy the angle bisector theorem, $BD/AD = BC/AC$, so \\[BD = \\frac{BC}{BC + AC} \\cdot AB = \\frac{4}{9} \\cdot 9 = 4.\\] Then by use of the Pythagorean Theorem on right triangle $BCD$, $CD = \\sqrt{BC^2 + BD^2} = \\sqrt{12^2 + 4^2} = \\sqrt{160} = \\boxed{4 \\sqrt{10}}$."
-}

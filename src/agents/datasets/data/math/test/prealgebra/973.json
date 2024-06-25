@@ -1,6 +1,0 @@
-{
-    "problem": "What is the perimeter of a rhombus with diagonals of lengths 12 and 16 units?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Because the diagonals of a rhombus are perpendicular bisectors of each other, they divide the rhombus into four congruent right triangles.  The legs of one of these triangles measure $12/2=6$ and $16/2=8$ units.  Therefore, the hypotenuse of each triangle measures $\\sqrt{6^2+8^2}=10$ units.  Since the side length of the rhombus is equal to the length of the hypotenuse of one of the triangles, the perimeter of the rhombus is $4\\cdot 10=\\boxed{40}$ units. [asy]\nunitsize(3mm);\ndefaultpen(linewidth(0.7pt)+fontsize(8pt));\ndotfactor=3;\npair A=(8,0), B=(0,5), C=(-8,0), D=(0,-5), Ep = (0,0);\ndraw(A--B--C--D--cycle);\ndraw(A--C);\ndraw(B--D);\nlabel(\"$6$\",midpoint(Ep--B),W);\nlabel(\"$8$\",midpoint(Ep--A),S);[/asy]"
-}

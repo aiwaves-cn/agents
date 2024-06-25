@@ -1,6 +1,0 @@
-{
-    "problem": "In how many ways can I choose 2 cooks on a backpacking trip with 8 people if any of the 8 people may be cooks?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Since the order that we choose the cooks in doesn't matter, we can choose 2 of them out of 8 trip members in $\\binom{8}{2}=\\boxed{28}$ ways."
-}

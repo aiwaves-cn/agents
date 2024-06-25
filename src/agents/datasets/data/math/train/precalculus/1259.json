@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ $\\angle B = 30^\\circ,$ $AB = 150,$ and $AC = 50 \\sqrt{3}.$  Find the sum of all possible values of $BC.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "By the Law of Sines,\n\\[\\frac{AB}{\\sin C} = \\frac{AC}{\\sin B},\\]so\n\\[\\sin C = \\frac{AB \\sin B}{AC} = \\frac{150 \\sin 30^\\circ}{50 \\sqrt{3}} = \\frac{\\sqrt{3}}{2}.\\]Hence, $C = 60^\\circ$ or $C = 120^\\circ.$\n\nIf $C = 60^\\circ,$ then $A = 180^\\circ - 30^\\circ - 60^\\circ = 90^\\circ.$  Then by Pythagoras,\n\\[BC = \\sqrt{150^2 + (50 \\sqrt{3})^2} = 100 \\sqrt{3}.\\]if $C = 120^\\circ,$ then $A = 180^\\circ - 30^\\circ - 120^\\circ = 30^\\circ.$  Then by the Law of Cosines,\n\\[BC = \\sqrt{150^2 + (50 \\sqrt{3})^2 - 2 \\cdot 150 \\cdot 50 \\sqrt{3} \\cdot \\cos 30^\\circ} = 50 \\sqrt{3}.\\]Thus, the sum of all possible values of $BC$ is $\\boxed{150 \\sqrt{3}}.$"
-}

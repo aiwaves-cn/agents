@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ we have $\\angle C = 3\\angle A,$ $a = 27,$ and $c = 48.$  What is $b$?\n\nNote: $a$ is the side length opposite $\\angle A,$ etc.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "By the Law of Sines,\n\\[\\frac{27}{\\sin A} = \\frac{48}{\\sin 3A}.\\]Then $\\frac{\\sin 3A}{\\sin A} = \\frac{48}{27},$ or\n\\[3 - 4 \\sin^2 A = \\frac{16}{9}.\\]Hence, $\\sin^2 A = \\frac{11}{36},$ so $\\sin A = \\frac{\\sqrt{11}}{6}.$  Also,\n\\[\\cos^2 A = 1 - \\frac{11}{36} = \\frac{25}{36}.\\]Since $A = \\frac{C}{3} < 60^\\circ,$ $\\cos A = \\frac{5}{6}.$\n\nThen again by the Law of Sines,\n\\[\\frac{b}{\\sin B} = \\frac{a}{\\sin A},\\]so\n\\begin{align*}\nb &= \\frac{a \\sin B}{\\sin A} \\\\\n&= \\frac{27 \\sin (180^\\circ - 4A)}{\\sin A} \\\\\n&= \\frac{27 \\sin 4A}{\\sin A} \\\\\n&= \\frac{27 \\cdot 2 \\sin 2A \\cos 2A}{\\sin A} \\\\\n&= \\frac{27 \\cdot 2 \\cdot 2 \\sin A \\cos A \\cdot (2 \\cos^2 A - 1)}{\\sin A} \\\\\n&= 27 \\cdot 2 \\cdot 2 \\cos A \\cdot (2 \\cos^2 A - 1) \\\\\n&= \\boxed{35}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Two points $A(x_1, y_1)$ and $B(x_2, y_2)$ are chosen on the graph of $f(x) = \\ln x$, with $0 < x_1 < x_2$. The points $C$ and $D$ trisect $\\overline{AB}$, with $AC < CB$. Through $C$ a horizontal line is drawn to cut the curve at $E(x_3, y_3)$. Find $x_3$ if $x_1 = 1$ and $x_2 = 1000$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Since $C$ is the trisector of line segment $\\overline{AB}$ closer to $A$, the $y$-coordinate of $C$ is equal to two thirds the $y$-coordinate of $A$ plus one third the $y$-coordinate of $B$. Thus, point $C$ has coordinates $(x_0, \\frac{2}{3} \\ln 1 + \\frac{1}{3}\\ln 1000) = (x_0, \\ln 10)$ for some $x_0$. Then the horizontal line through $C$ has equation $y = \\ln 10$, and this intersects the curve $y = \\ln x$ at the point $(10, \\ln 10)$, so $x_3 = \\boxed{10}$."
-}

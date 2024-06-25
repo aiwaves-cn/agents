@@ -1,6 +1,0 @@
-{
-    "problem": "If $A$ is the sum of the positive divisors of $500$, what is the sum of the distinct prime divisors of $A$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we find $A$. The prime factorization of $500$ is $2^2 \\cdot 5^3$. Therefore,  $$A=(1+2+2^2)(1+5+5^2+5^3)=(7)(156).$$To see why $(1+2+2^2)(1+5+5^2+5^3)$ equals the sum of the divisors of 500, note that if you distribute (without simplifying), you get 12 terms, with each divisor of $2^2\\cdot 5^3$ appearing exactly once.\n\nNow we prime factorize $7 \\cdot 156 = 7 \\cdot 2^2 \\cdot 3 \\cdot 13$. The sum of the prime divisors of $A$ is $2+3+7+13=\\boxed{25}$."
-}

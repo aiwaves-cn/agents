@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real solutions to the equation \\[\\frac{x^2-3}{x+2} = \\frac{2x}{x^2-4}.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We multiply both sides by $(x-2)(x+2),$ giving \\[(x^2-3)(x-2) = 2x,\\]or \\[x^3 - 2x^2 - 5x + 6 = 0.\\]Noting that $x=1$ is a root of this equation, we can factor the equation as \\[(x-1)(x^2-x-6) = 0,\\]or \\[(x-1)(x-3)(x+2) = 0.\\]The given equation is undefined for $x = -2,$ so the only solutions are $\\boxed{1,3}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to answer a $10$-question true/false test, where at least $3$ of the questions have been answered with a false?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $2^{10} = 1024$ ways to answer the questions on the true/false test. However, we can also compute the number of ways of answering the questions on the true/false test by using combinations; there are $\\binom{10}{k}$ ways to answer $k$ of the questions on the test with a false, so we have: $$\\binom{10}{0} + \\binom{10}{1} + \\cdots + \\binom{10}{9} + \\binom{10}{10} = 2^{10}.$$ The desired answer is \\begin{align*}\n&\\binom{10}{3} + \\binom{10}{4} + \\cdots + \\binom{10}{9} + \\binom{10}{10} \\\\\n=\\text{ }&2^{10} - \\binom{10}{0} - \\binom{10}{1} - \\binom{10}{2} = 1024 - 1 - 10 - 45 \\\\\n=\\text{ }&\\boxed{968}.\n\\end{align*}"
-}

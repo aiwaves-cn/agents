@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $225^{66}-327^{66}$ is divided by $17$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "First we use the property that $a \\equiv b \\pmod{m}$ implies $a^c \\equiv b^c \\pmod{m}$.\n\nSince $225 \\equiv 4 \\pmod{17}$ and $327 \\equiv 4 \\pmod{17}$, $$225^{66}-327^{66} \\equiv 4^{66}-4^{66}=\\boxed{0} \\pmod{17}.$$"
-}

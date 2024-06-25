@@ -1,6 +1,0 @@
-{
-    "problem": "Express the value of the following as a common fraction:\n$\\left(1-\\frac12\\right)\\cdot\\left(1-\\frac13\\right)\\cdot\\left(1-\\frac14\\right) \\dotsm \\left(1-\\frac1{n+1}\\right) \\dotsm \\left(1-\\frac1{100}\\right)$",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Simplifying each term in the product, we have \\[\\left( \\frac{1}{2} \\right) \\left( \\frac{2}{3} \\right) \\left( \\frac{3}{4} \\right) \\dotsm \\left( \\frac{98}{99} \\right) \\left( \\frac{99}{100} \\right) . \\]The denominator of each fraction cancels with the numerator of the next fraction, so the product is $\\boxed{\\frac{1}{100}}.$"
-}

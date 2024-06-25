@@ -1,6 +1,0 @@
-{
-    "problem": "Express $43210_{6}-3210_{7}$ in base 10.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We convert to base 10 to obtain  \\[43210_{6}=4\\cdot6^4+3\\cdot6^3+2\\cdot6^2+1\\cdot6^1+0\\cdot6^0=5910.\\]\\[3210_{7}=3\\cdot7^3+2\\cdot7^2+1\\cdot7^1+0\\cdot7^0=1134.\\]Therefore, $5910-1134=\\boxed{4776}$."
-}

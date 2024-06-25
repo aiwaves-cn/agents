@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest possible value of the sum $\\lvert x + 2\\rvert + \\lvert x + 4\\rvert + \\lvert x + 5\\rvert$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "For $x \\le -5,$\n\\[|x + 2| + |x + 4| + |x + 5| = -(x + 2) - (x + 4) - (x + 5) = -3x - 11.\\]For $-5 \\le x \\le -4,$\n\\[|x + 2| + |x + 4| + |x + 5| = -(x + 2) - (x + 4) + (x + 5) = -x - 1.\\]For $-4 \\le x \\le -2,$\n\\[|x + 2| + |x + 4| + |x + 5| = -(x + 2) + (x + 4) + (x + 5) = x + 7.\\]For $x \\ge -2,$\n\\[|x + 2| + |x + 4| + |x + 5| = (x + 2) + (x + 4) + (x + 5) = 3x + 11.\\]Thus, the function is decreasing on $(-\\infty,4]$ and increasing on $[4,\\infty),$ so the minimum value occurs at $x = -4,$ which is $\\boxed{3}.$"
-}

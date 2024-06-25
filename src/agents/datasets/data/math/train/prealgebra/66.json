@@ -1,6 +1,0 @@
-{
-    "problem": "In parallelogram $ABCD$, angle $B$ measures $110^\\circ$. What is the number of degrees in the measure of angle $C$?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "[asy]\nunitsize(1inch);\npair A,B,C,D;\nB = (0,0);\nC = (1,0);\nA = rotate(100)*(0.6,0);\nD = A+C;\ndraw(A--B--C--D--A);\nlabel(\"$A$\",A,N);\nlabel(\"$D$\",D,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\n[/asy] Because $\\overline{AB}\\parallel\\overline{CD}$, we have $\\angle B + \\angle C = 180^\\circ$.  Therefore, $\\angle C = 180^\\circ - \\angle B = \\boxed{70^\\circ}$."
-}

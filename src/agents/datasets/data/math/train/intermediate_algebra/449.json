@@ -1,6 +1,0 @@
-{
-    "problem": "Compute \\[\\dfrac{2^3-1}{2^3+1}\\cdot\\dfrac{3^3-1}{3^3+1}\\cdot\\dfrac{4^3-1}{4^3+1}\\cdot\\dfrac{5^3-1}{5^3+1}\\cdot\\dfrac{6^3-1}{6^3+1}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $S$ be the value of the given expression. Using sum and difference of cubes to factor, we get \\[\\begin{aligned} S &= \\dfrac{(2-1)(2^2+2+1)}{(2+1)(2^2-2+1)}\\cdot\\dfrac{(3-1)(3^2+3+1)}{(3+1)(3^2-3+1)} \\cdot\\dfrac{(4-1)(4^2+4+1)}{(4+1)(4^2-4+1)}\\cdot\\dfrac{(5-1)(5^2+5+1)}{(5+1)(5^2-5+1)}\\cdot\\dfrac{(6-1)(6^2+6+1)}{(6+1)(6^2-6+1)} \\\\ &= \\frac{1}{3} \\cdot \\frac{2}{4} \\cdot \\frac{3}{5} \\cdot \\frac{4}{6} \\cdot \\frac{5}{7} \\cdot \\frac{2^2+2+1}{2^2-2+1} \\cdot \\frac{3^2+3+1}{3^2-3+1} \\cdot \\frac{4^2+4+1}{4^2-4+1} \\cdot \\frac{5^2+5+1}{5^2-5+1} \\cdot \\frac{6^2+6+1}{6^2-6+1}.\\end{aligned}\\]The first product telescopes to $\\tfrac{1 \\cdot 2}{6 \\cdot 7} = \\tfrac{1}{21}$. The second product also telescopes due to the identity \\[x^2 + x + 1 = (x+1)^2 - (x+1) + 1.\\]That is, the terms $2^2+2+1$ and $3^2-3+1$ cancel, as do the terms $3^2+3+1$ and $4^2-4+1$, and so on, leaving just $\\tfrac{6^2+6+1}{2^2-2+1} = \\tfrac{43}{3}$. Thus, \\[S = \\frac{1}{21} \\cdot \\frac{43}{3} = \\boxed{\\frac{43}{63}}.\\]"
-}

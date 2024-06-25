@@ -1,6 +1,0 @@
-{
-    "problem": "For how many different digits $n$ is the three-digit number $14n$ divisible by $n$?\n\nNote: $14n$ refers to a three-digit number with the unit digit of $n,$ not the product of $14$ and $n.$",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We have to account for each possible value of $n$ here. First of all, we can quickly find that for $n = 1, 2, 5,$ the resulting number $14n$ must be divisible by $n$, using their respective divisibility rules.\n\nWe see that for $n = 3$, we get $143.$ Since $1 + 4 + 3 = 8,$ which is not a multiple of $3,$ we can see that $n = 3$ does not work. Moreover, if $143$ is not divisible by $3$, then $146$ and $149$ are not divisible by $3$ or any multiple of $3$, so $n = 6$ and $n = 9$ do not work.\n\nFor $n = 4$, we can see that $144$ is divisible by $4$ because $44$ is divisible by $4,$ so $n = 4$ works.\n\nFor $n = 7$, we can easily perform division and see that $147$ is divisible by $7,$ so $n = 7$ works.\n\nFor $n = 8$, we have little choice but to find that $\\dfrac{148}{8} = \\dfrac{37}{2},$ and so $n = 8$ does not work.\n\nAll in all, we have that $n$ can be $1,$ $2,$ $4,$ $5,$ or $7,$ so we have $\\boxed{5}$ possible choices for $n$ such that $14n$ is divisible by $n.$"
-}

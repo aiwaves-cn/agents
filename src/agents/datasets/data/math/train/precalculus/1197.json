@@ -1,6 +1,0 @@
-{
-    "problem": "If $8 \\tan \\theta = 3 \\cos \\theta$ and $0 < \\theta < \\pi,$ then determine the value of $\\sin \\theta.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We can write the given equation as\n\\[\\frac{8 \\sin \\theta}{\\cos \\theta} = 3 \\cos \\theta.\\]Then $8 \\sin \\theta = 3 \\cos^2 \\theta.$  Since $\\cos^2 \\theta = 1 - \\sin^2 \\theta,$\n\\[8 \\sin \\theta = 3 - 3 \\sin^2 \\theta.\\]Then $3 \\sin^2 \\theta + 8 \\sin \\theta - 3 = 0,$ which factors as $(3 \\sin \\theta - 1)(\\sin \\theta + 3) = 0.$  Since $-1 \\le \\sin \\theta \\le 1,$ we must have $\\sin \\theta = \\boxed{\\frac{1}{3}}.$"
-}

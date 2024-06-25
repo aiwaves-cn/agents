@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $AB$ and $CD$ are straight lines. What is the value of $x?$ [asy]\ndraw((0,0)--(12,0));\ndraw((0,5)--(12,5));\ndraw((3,0)--(5,5)--(9,0));\nlabel(\"$60^\\circ$\",(5,4.5),W);\nlabel(\"$50^\\circ$\",(5.5,4.5),E);\nlabel(\"$A$\",(0,5),W);\nlabel(\"$C$\",(0,0),W);\nlabel(\"$B$\",(12,5),E);\nlabel(\"$D$\",(12,0),E);\nlabel(\"$120^\\circ$\",(3,0),NW);\nlabel(\"$x^\\circ$\",(7.5,0),N);\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "[asy]\ndraw((0,0)--(12,0));\ndraw((0,5)--(12,5));\ndraw((3,0)--(5,5)--(9,0));\nlabel(\"$60^\\circ$\",(5,4.5),W);\nlabel(\"$50^\\circ$\",(5.5,4.5),E);\nlabel(\"$A$\",(0,5),W);\nlabel(\"$C$\",(0,0),W);\nlabel(\"$B$\",(12,5),E);\nlabel(\"$D$\",(12,0),E);\nlabel(\"$120^\\circ$\",(3,0),NW);\nlabel(\"$x^\\circ$\",(7.5,0),N);\nlabel(\"$X$\",(5,5),N);\nlabel(\"$Y$\",(3,0),S);\nlabel(\"$Z$\",(9,0),S);\n[/asy] Since $\\angle AXB = 180^\\circ,$ then $$\\angle YXZ = 180^\\circ - 60^\\circ - 50^\\circ = 70^\\circ.$$ Also, $$\\angle XYZ = 180^\\circ - \\angle CYX = 180^\\circ - 120^\\circ = 60^\\circ.$$ Since the angles in $\\triangle XYZ$ add to $180^\\circ,$ then $$x^\\circ = 180^\\circ - 70^\\circ - 60^\\circ = 50^\\circ,$$ so $x=\\boxed{50}.$"
-}

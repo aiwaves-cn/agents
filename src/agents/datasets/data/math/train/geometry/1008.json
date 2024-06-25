@@ -1,6 +1,0 @@
-{
-    "problem": "Points $A(-4,1), B(-1,4)$ and $C(-1,1)$ are the vertices of $\\triangle ABC$. What will be the coordinates of the image of point A if $\\triangle ABC$ is rotated 90 degrees clockwise about the origin?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "When we rotate images $90^{\\circ}$ the coordinates switch places, and the signs are adjusted based on whether or not an axis was crossed. In this case, rotating point $A$ $90^{\\circ}$ will bring it across the $y$-axis into Quadrant I, which means both the $x$ and $y$ will be positive. The original point $A$ was at $(-4, 1)$ so the final image will be at $(1, 4)$. We also could solve this problem by seeing that the slope of the segment from the origin to $A$ is $-1/4$. If $A$ is moving to a location that is a $90^{\\circ}$ rotation about the origin, it will move to a point on the segment perpendicular to the one that currently connects it to the origin. This will be the segment that has a slope of 4/1 or $-4/-1$ from the origin which puts us at $(1, 4)$ or $(-1, -4)$. The point $\\boxed{(1, 4)}$ is in the clockwise direction we need."
-}

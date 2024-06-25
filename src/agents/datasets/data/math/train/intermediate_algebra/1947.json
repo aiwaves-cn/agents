@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) : \\mathbb{R} \\to \\mathbb{R}$ be a function such that\n\\[\\frac{f(x) f(y) - f(xy)}{3} = x + y + 2\\]for all $x,$ $y \\in \\mathbb{R}.$  Find $f(x).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We write the functional equation as\n\\[f(x)f(y) - f(xy) = 3x + 3y + 6.\\]Setting $x = y = 0,$ we get\n\\[f(0)^2 - f(0) = 6.\\]Then $f(0)^2 - f(0) - 6 = 0,$ which factors as $(f(0) - 3)(f(0) + 2) = 0.$  Hence, $f(0) = 3$ or $f(0) = -2.$\n\nSetting $y = 0,$ we get\n\\[f(0) f(x) - f(0) = 3x + 6.\\]Then\n\\[f(x) - 1 = \\frac{3x + 6}{f(0)},\\]so\n\\[f(x) = \\frac{3x + 6}{f(0)} + 1.\\]If $f(0) = 3,$ then $f(x) = x + 3,$ which does satisfy the functional equation.  If $f(0) = -2,$ then\n\\[f(x) = -\\frac{3}{2} x - 2,\\]which does not satisfy the functional equation.  Therefore, $f(x) = \\boxed{x + 3}.$"
-}

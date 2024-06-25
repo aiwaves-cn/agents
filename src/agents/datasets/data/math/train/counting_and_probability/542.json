@@ -1,6 +1,0 @@
-{
-    "problem": "A box contains 4 white balls and 4 black balls.  I draw them out of the box, one at a time.  What is the probability that all of my draws alternate colors?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Let $B$ denote drawing a black ball and $W$ denote drawing a white ball.\n\nThere are two possible successful orders: $BWBWBWBW$ or $WBWBWBWB.$\n\nThere are $\\binom{8}{4} = 70$ ways to arrange four $B$'s and four $W$'s, so the probability that a random arrangement is successful is $\\dfrac{2}{70} = \\boxed{\\dfrac{1}{35}}$.\n\nOR\n\nWe could also compute this based on the probabilities at each step that we draw a ball of the opposite color.  If we do that, we get $\\frac47 \\times \\frac36 \\times \\frac35 \\times \\frac24 \\times \\frac23 \\times \\frac12 = \\frac{144}{5040} = \\boxed{\\dfrac{1}{35}}$."
-}

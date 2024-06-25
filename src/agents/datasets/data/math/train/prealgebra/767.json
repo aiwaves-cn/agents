@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers (positive and negative) are divisors of 20?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Note that if $a$ is positive and is a factor of twenty, then $-a$ is a factor of 20 as well. Thus, we can count the positive factors, and then multiply by 2 at the end. Using the buddy method, we list the factors: \\[1,_,\\dots,_,20\\]20 is divisible by 2, so we add it and its buddy $\\frac{20}{2}=10$. \\[1,2,_,\\dots,_,10,20\\]20 is not divisible by 3, so we move on to 4. 4 is a factor of 20, so we add it and its buddy $\\frac{20}{4}=5$. Thus, our final list of factors is \\[1,2,4,5,10,20\\]There are 6 numbers in this list, so there are $6 \\cdot 2=\\boxed{12}$ total factors."
-}

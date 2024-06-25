@@ -1,6 +1,0 @@
-{
-    "problem": "What is the product of the two integer values for $x$ for which $|x^2 - 16|$ is a prime number?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The absolute value of the product of two numbers is the product of their absolute values, so we can write  \\[\n|x^2-16|=|(x+4)(x-4)|=|x+4|\\,|x-4|.\n\\]Since $|x^2-16|$ is written as the product of two positive integers, it is composite unless one of the integers is $1$.  Solving $|x+4|=1$, we observe that either $x+4=1$ or $x+4=-1$, which give solutions of $x=-3$ and $x=-5$.  Similarly, solving $|x-4|=1$ we find $x=3$ or $x=5$. Among the possible solutions $\\{-5,-3,3,5\\}$, only $\\{-3,3\\}$ yield a prime value for $|x+4|\\,|x-4|$.  Therefore, the product of the integer values of $x$ for which $|x^2-16|$ is a prime number is $\\boxed{-9}$."
-}

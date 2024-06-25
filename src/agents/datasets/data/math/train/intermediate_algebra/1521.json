@@ -1,6 +1,0 @@
-{
-    "problem": "For real numbers $x > 1,$ find the minimum value of\n\\[\\frac{x + 8}{\\sqrt{x - 1}}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = \\sqrt{x - 1}.$  Then $y^2 = x - 1,$ so $x = y^2 + 1.$  Then\n\\[\\frac{x + 8}{\\sqrt{x - 1}} = \\frac{y^2 + 9}{y} = y + \\frac{9}{y}.\\]By AM-GM,\n\\[y + \\frac{9}{y} \\ge 6.\\]Equality occurs when $y = 3,$ or $x = 10,$ so the minimum value is $\\boxed{6}.$"
-}

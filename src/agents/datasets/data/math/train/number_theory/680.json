@@ -1,6 +1,0 @@
-{
-    "problem": "The product of two positive three-digit palindromes is 436,995. What is their sum?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let's find the prime factorization of 436,995: $436,995=3^4\\cdot5395=3^4\\cdot5\\cdot1079=3^4\\cdot5\\cdot13\\cdot83$. We see that $3^2\\cdot83=747$ is a three-digit palindrome, and the product of the remaining powers of primes is a palindrome as well: $3^2\\cdot5\\cdot13=585$. Thus, the desired sum is $747+585=\\boxed{1332}$."
-}

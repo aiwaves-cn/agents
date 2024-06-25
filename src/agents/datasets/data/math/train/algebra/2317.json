@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate the sum \\[\\frac{1}{2^1} + \\frac{2}{2^2} + \\frac{3}{2^3} + \\cdots + \\frac{k}{2^k} + \\cdots \\]",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the sum be $S$. This series looks almost geometric, but not quite. We can turn it into a geometric series as follows: \\begin{align*}\nS &= \\frac{1}{2^1} +\\frac{2}{2^2} + \\frac{3}{2^3} + \\frac{4}{2^4} + \\cdots \\\\\n\\frac{1}{2}S &= \\hspace{0.9 cm} \\frac{1}{2^2} + \\frac{2}{2^3} + \\frac{3}{2^4} + \\cdots\n\\end{align*}We subtract the second from the first to obtain $$\\frac{1}{2}S = \\frac{1}{2^1} + \\frac{1}{2^2} + \\frac{1}{2^3} + \\frac{1}{2^4} + \\cdots$$Now, we do have a geometric series, so we can find $\\frac{1}{2}S = \\frac{\\frac{1}{2}}{1 - \\frac{1}{2}} = 1$, and $S = \\boxed{2}$."
-}

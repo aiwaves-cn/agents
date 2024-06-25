@@ -1,6 +1,0 @@
-{
-    "problem": "Mr. and Mrs. Lopez have three children.  When they get into their family car, two people sit in the front, and the other three sit in a row in the back.  Either Mr. Lopez or Mrs. Lopez must sit in the driver's seat, and their youngest child is not allowed to sit in the other front seat.  How many seating arrangements are possible?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are only two possible occupants for the driver's seat. After the driver is chosen, there are three remaining people who can sit in the other front seat. Then the three remaining people can sit in the back seats in any arrangement. There are three choices of people to sit in the first back seat, two choices of people to sit in the next back seat, and one person to sit in the last back seat. Therefore, there are $2 \\cdot 3 \\cdot 3 \\cdot 2 \\cdot 1 = \\boxed{36}$ possible seating arrangements."
-}

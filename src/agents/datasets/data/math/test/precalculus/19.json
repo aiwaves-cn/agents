@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate\n\\[\\begin{vmatrix} 0 & b - a & c - a \\\\ a - b & 0 & c - b \\\\ a - c & b - c & 0 \\end{vmatrix}.\\]",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} 0 & b - a & c - a \\\\ a - b & 0 & c - b \\\\ a - c & b - c & 0 \\end{vmatrix} &= -(b - a) \\begin{vmatrix} a - b & c - b \\\\ a - c & 0 \\end{vmatrix} + (c - a) \\begin{vmatrix} a - b & 0 \\\\ a - c & b - c \\end{vmatrix} \\\\\n&= -(b - a)(-(c - b)(a - c)) + (c - a)(a - b)(b - c) \\\\\n&= \\boxed{0}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Determine if the graph of the equation below is a parabola, circle, ellipse, hyperbola, point, line, two lines, or empty.\n\n$x^2 + 2y^2 - 6x - 20y + 59 = 12$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ we can write this as \\[(x - 3)^2 - 9 + 2y^2 - 20y + 59 = 12.\\]Next, completing the square in $y$, this becomes \\[ (x-3)^2 - 9 + 2(y - 5)^2 - 50 + 59 = 12.\\]Combining all the constants, we have \\[ (x-3)^2 + 2(y-5)^2 = 12. \\]This is the equation of an $\\boxed{\\text{ellipse}}$."
-}

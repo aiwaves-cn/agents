@@ -1,6 +1,0 @@
-{
-    "problem": "In this diagram, both polygons are regular. What is the value, in degrees, of the sum of the measures of angles $ABC$ and $ABD$?\n\n[asy]\ndraw(10dir(0)--10dir(60)--10dir(120)--10dir(180)--10dir(240)--10dir(300)--10dir(360)--cycle,linewidth(2));\ndraw(10dir(240)--10dir(300)--10dir(300)+(0,-10)--10dir(240)+(0,-10)--10dir(240)--cycle,linewidth(2));\n\ndraw(10dir(300)+(-1,0)..9dir(300)..10dir(300)+dir(60),linewidth(2));\ndraw(10dir(300)+(-1.5,0)..10dir(300)+1.5dir(-135)..10dir(300)+(0,-1.5),linewidth(2));\n\nlabel(\"A\",10dir(240),W);\nlabel(\"B\",10dir(300),E);\nlabel(\"C\",10dir(0),E);\nlabel(\"D\",10dir(300)+(0,-10),E);\n\ndraw(10dir(300)+2dir(-135)--10dir(300)+dir(-135),linewidth(2));\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The interior angle of a square is 90, and the interior angle of a hexagon is 120, making for a sum of $\\boxed{210}$.  If you don't have the interior angles memorized, you can calculate them using the following formula: $180\\left(\\frac{n-2}{n}\\right),$ where $n$ is the number of sides in the polygon."
-}

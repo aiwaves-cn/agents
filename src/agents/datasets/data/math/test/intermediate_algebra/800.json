@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the sequence defined by $a_k=\\frac 1{k^2+k}$ for $k\\ge 1$. Given that $a_m+a_{m+1}+\\cdots+a_{n-1}=\\frac{1}{29}$, for positive integers $m$ and $n$ with $m<n$, find $m+n$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that \\[a_k = \\frac{1}{k^2+k} = \\frac{1}{k} - \\frac{1}{k+1}\\]for each $k.$ Thus, the sum telescopes: \\[\\begin{aligned} a_m + a_{m+1} + \\dots + a_{n-1} & = \\left(\\frac{1}{m} - \\frac{1}{m+1}\\right) + \\left(\\frac{1}{m+1} - \\frac{1}{m+2}\\right) + \\dots + \\left(\\frac{1}{n-1} - \\frac{1}{n}\\right) \\\\ &= \\frac{1}{m} - \\frac{1}{n}. \\end{aligned}\\]Therefore, we have the equation $1/m - 1/n = 1/29.$ Multiplying by $29mn$ on both sides, we have $29n - 29m = mn,$ or $mn + 29m - 29n = 0.$ Subtracting $29^2$ from both sides, we get \\[(m-29)(n+29) = -29^2.\\]Since $29$ is prime and $0 < m < n,$ the only possibility is $m-29 = -1$ and $n+29 = 841,$ which gives $m = 28$ and $n = 812.$ Thus, $m+n=28+812=\\boxed{840}.$"
-}

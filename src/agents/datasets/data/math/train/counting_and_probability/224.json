@@ -1,6 +1,0 @@
-{
-    "problem": "Two fair, six-sided dice are rolled.  What is the probability that the sum of the two numbers showing is less than 11?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We instead find the probability that the sum of the numbers showing is greater than or equal to 11.  Since each die's face contains the numbers 1-6, there are only 3 pairs of rolls that result in a sum greater than or equal to 11: (5,6), (6,5) and (6,6). Since there are 6 possible results for the roll of each die, there are $6\\times6=36$ possible pairs of rolls, so the probability that the sum of the numbers showing is not less than 11 is $\\frac{3}{36}=\\frac{1}{12}$. Using the idea of complementary probabilities, we know that the probability of an event happening is equal to 1 minus the probability of the event not happening, so the probability of the sum of the numbers showing being less than 11 is $1-\\frac{1}{12}=\\boxed{\\frac{11}{12}}$."
-}

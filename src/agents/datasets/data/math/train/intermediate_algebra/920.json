@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $x - \\frac{1}{x} = i \\sqrt{2},$ find $x^{2187} - \\frac{1}{x^{2187}}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Squaring $x - \\frac{1}{x} = i \\sqrt{2},$ we get\n\\[x^2 - 2 + \\frac{1}{x^2} = -2.\\]Hence, $x^2 + \\frac{1}{x^2} = 0,$ so $x^4 + 1 = 0,$ or $x^4 = -1.$\n\nThen\n\\[x^{2187} = (x^4)^{546} \\cdot x^3 = x^3,\\]so\n\\begin{align*}\nx^{2187} - \\frac{1}{x^{2187}} &= x^3 - \\frac{1}{x^3} \\\\\n&= \\left( x - \\frac{1}{x} \\right) \\left( x^2 + 1 + \\frac{1}{x^2} \\right) \\\\\n&= \\boxed{i \\sqrt{2}}.\n\\end{align*}"
-}

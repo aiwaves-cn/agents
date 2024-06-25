@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\left(2^{\\left(1\\frac{1}{4}\\right)}\\right)^{\\frac{2}{5}} \\cdot \\left(4^{\\left(3\\frac{1}{8}\\right)}\\right)^{\\frac{2}{25}}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "In addition to knowing how to use mixed numbers, to solve this problem one also must recall two of the basic properties of exponents: \\[a^b \\cdot a^c = a^{b+c}\\] and \\[\\left(l^m\\right)^n = l^{m \\cdot n}.\\] Keeping these properties in mind, we can proceed with simplification \\begin{align*}\n\\left(2^{\\left(1\\frac{1}{4}\\right)}\\right)^{\\frac{2}{5}} \\cdot \\left(4^{\\left(3\\frac{1}{8}\\right)}\\right)^{\\frac{2}{25}}\n&= \\left(2^{\\frac{5}{4}}\\right)^{\\frac{2}{5}} \\cdot \\left(4^{\\frac{25}{8}}\\right)^{\\frac{2}{25}}\\\\\n&= 2^{\\frac{5}{4} \\cdot \\frac{2}{5}} \\cdot 4^{\\frac{25}{8} \\cdot \\frac{2}{25}}\\\\\n&= 2^{\\frac{2}{4}} \\cdot (2^2)^{\\frac{2}{8}}\\\\\n&= 2^{\\frac{1}{2}} \\cdot 2^{2 \\cdot \\frac{1}{4}}\\\\\n&= 2^{\\frac{1}{2}} \\cdot 2^{\\frac{1}{2}}\\\\\n&= 2^{(\\frac{1}{2} + \\frac{1}{2})}\\\\\n&= \\boxed{2}.\n\\end{align*}"
-}

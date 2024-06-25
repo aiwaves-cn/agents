@@ -1,6 +1,0 @@
-{
-    "problem": "It took $4$ days for $75$ workers, all working together at the same rate, to build an embankment. If only $50$ workers had been available, how many total days would it have taken to build the embankment?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Since $\\text{work} = \\text{rate} \\times \\text{time}$, let $r$ be the rate at which one worker can built an embankment. It follows that 1 embankment takes \\[1\\text{ embankment}=(75r) \\times (4\\ \\text{days})\\] so $r = \\frac{1}{4 \\cdot 75}.$  If only $50$ workers were available, then  \\[1\\text{ embankment} = (50r) \\times (t\\ \\text{days})\\]  so \\[t = \\frac{1}{50 \\cdot \\frac{1}{4 \\cdot 75}} = \\frac{300}{50} = \\boxed{6}\\ \\text{days}.\\] Notice that the number of days and the number of workers are inversely related."
-}

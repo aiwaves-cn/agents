@@ -1,6 +1,0 @@
-{
-    "problem": "At the grocery store, I bought $4$ different items. I brought $3$ identical bags, and handed them to the cashier. How many ways are there for the cashier to put the items I bought in the $3$ identical bags, assuming he might leave some of the bags empty?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We can divide this into cases.\n\n$\\bullet$  Case 1: All $4$ items go in the same bag. There is one possible way to do this.\n\n$\\bullet$  Case 2: Three items go in one bag, and the last item goes in another bag. There are $\\binom{4}{1}=4$ ways to choose which item goes in a bag by itself.\n\n$\\bullet$  Case 3: Two items go in one bag, and the other two go in another bag. There are $\\binom{4}{2}=6$ ways to choose which items go in the first bag, but since the bags are identical we must divide by $2$ to correct for overcounting. Therefore, there are $3$ arrangements in this case.\n\n$\\bullet$  Case 4: Two items go in one bag, and the other two items each go in a different one of the remaining bags. There are $\\binom{4}{2}=6$ ways to choose which two items are put in a bag together, and since the bags are identical it doesn't matter which bags the last two items are put in.\n\nThere are a total of $1+4+3+6=\\boxed{14}$ different ways to put the items into bags."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A function $f$ from the integers to the integers is defined as follows:\n\\[f(n) = \\left\\{\n\\begin{array}{cl}\nn + 3 & \\text{if $n$ is odd}, \\\\\nn/2 & \\text{if $n$ is even}.\n\\end{array}\n\\right.\\]Suppose $k$ is odd and $f(f(f(k))) = 27.$  Find $k.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since $k$ is odd, $f(k) = k + 3.$  Then $k + 3$ is even, so\n\\[f(k + 3) = \\frac{k + 3}{2}.\\]If $\\frac{k + 3}{2}$ is odd, then\n\\[f \\left( \\frac{k + 3}{2} \\right) = \\frac{k + 3}{2} + 3 = 27.\\]This leads to $k = 45.$  But $f(f(f(45))) = f(f(48)) = f(24) = 12,$ so $\\frac{k + 3}{2}$ must be even.  Then\n\\[f \\left( \\frac{k + 3}{2} \\right) = \\frac{k + 3}{4} = 27.\\]This leads to $k = 105.$  Checking, we find $f(f(f(105))) = f(f(108)) = f(54) = 27.$\n\nTherefore, $k = \\boxed{105}.$"
-}

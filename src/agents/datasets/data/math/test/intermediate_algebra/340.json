@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\tau = \\frac{1 + \\sqrt{5}}{2},$ the golden ratio.  Then\n\\[\\frac{1}{\\tau} + \\frac{1}{\\tau^2} + \\frac{1}{\\tau^3} + \\dotsb = \\tau^n\\]for some integer $n.$  Find $n.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "From the formula for an infinite geometric series,\n\\[\\frac{1}{\\tau} + \\frac{1}{\\tau^2} + \\frac{1}{\\tau^3} + \\dotsb = \\frac{1/\\tau}{1 - 1/\\tau} = \\frac{1}{\\tau - 1}.\\]Recall that $\\tau$ satisfies $\\tau^2 - \\tau - 1 = 0.$  Then $\\tau (\\tau - 1) = 1,$ so\n\\[\\frac{1}{\\tau - 1} = \\tau.\\]Thus, $n = \\boxed{1}.$"
-}

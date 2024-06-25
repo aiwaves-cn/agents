@@ -1,6 +1,0 @@
-{
-    "problem": "Richard is building a rectangular backyard from 360 feet of fencing. The fencing must cover three sides of the backyard (the fourth side is bordered by Richard's house). What is the maximum area of this backyard?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the length of the backyard be $l$ and the width be $w$. We have the equation $l+2w=360$. We want to maximize the area of this rectangular backyard, which is given by $lw$. From our equation, we know that $l=360-2w$. Substituting this into our expression for area, we have \\[(360-2w)(w)=360w-2w^2\\]We will now complete the square to find the maximum value of this expression. Factoring a $-2$ out, we have \\[-2(w^2-180w)\\]In order for the expression inside the parenthesis to be a perfect square, we need to add and subtract $(180/2)^2=8100$ inside the parenthesis. Doing this, we get \\[-2(w^2-180w+8100-8100) \\Rightarrow -2(w-90)^2+16200\\]Since the maximum value of $-2(w-90)^2$ is 0 (perfect squares are always nonnegative), the maximum value of the entire expression is 16200, which is achieved when $w=90$ and $l=360-2w=180$. Thus, the maximum area of the backyard is $\\boxed{16200}$ square feet."
-}

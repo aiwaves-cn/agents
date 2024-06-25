@@ -1,6 +1,0 @@
-{
-    "problem": "Solve $\\tan x = \\sin x$ for $0 \\le x \\le 2 \\pi.$  Enter all the solutions, separated by commas.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We can write $\\tan x = \\sin x$ as $\\frac{\\sin x}{\\cos x} = \\sin x,$ so\n\\[\\sin x = \\cos x \\sin x.\\]Then $\\sin x - \\cos x \\sin x = 0,$ or $\\sin x (1 - \\cos x) = 0.$  Thus, $\\sin x = 0$ or $\\cos x = 1.$\n\nThe solutions to $\\sin x = 0$ are $x = 0,$ $\\pi,$ and $2 \\pi.$\n\nThe solution to $\\cos x = 1$ is $x = 0.$\n\nThus, the solutions are $\\boxed{0, \\pi, 2 \\pi}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "One hundred people were surveyed. Of these, $87$ indicated they liked Mozart and $70$ indicated they liked Bach. What is the minimum number of people surveyed who could have said they liked both Mozart and Bach?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The minimum number of people who like both Mozart and Bach is achieved when the number of people who like Mozart but not Bach is maximized. There are $100-70=30$ people who do not like Bach. If all these people like Mozart, then the number of people who like Bach and Mozart is $87-30=\\boxed{57}$."
-}

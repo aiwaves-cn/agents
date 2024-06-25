@@ -1,6 +1,0 @@
-{
-    "problem": "The numbers 2, 3, 5, 7, 11, 13 are arranged in a multiplication table, with three along the top and the other three down the left.  The multiplication table is completed and the sum of the nine entries is tabulated.  What is the largest possible sum of the nine entries?\n\n\\[\n\\begin{array}{c||c|c|c|}\n\\times & a & b & c \\\\ \\hline \\hline\nd & & & \\\\ \\hline\ne & & & \\\\ \\hline\nf & & & \\\\ \\hline\n\\end{array}\n\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The sum of the nine entries is\n\\[ad + bd + cd + ae + be + ce + af + bf + cf = (a + b + c)(d + e + f).\\]Note that the sum $(a + b + c) + (d + e + f) = 2 + 3 + 5 + 7 + 11 + 13 = 41$ is fixed, so to maximize $(a + b + c)(d + e + f),$ we want the two factors to be as close as possible, i.e. $20 \\times 21 = 420.$\n\nWe can achieve this by taking $\\{a,b,c\\} = \\{2,5,13\\}$ and $\\{d,e,f\\} = \\{3,7,11\\},$ so the maximum sum is $\\boxed{420}.$"
-}

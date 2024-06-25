@@ -1,6 +1,0 @@
-{
-    "problem": "For a certain weekend, the weatherman predicts that it will rain with a $40\\%$ probability on Saturday and a $50\\%$ probability on Sunday. Assuming these probabilities are independent, what is the probability that it rains over the weekend (that is, on at least one of the days)? Express your answer as a percentage.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The probability that it does not rain over the weekend is equal to the product of the probability it does not rain Saturday and the probability it does not rain Sunday, or $(1-.40)(1-.50)=.6\\cdot.5=.3=30\\%$. Therefore, the probability that it does rain is $100\\%-30\\%=\\boxed{70\\%}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "My three friends and I have dinner together every weekend. Each weekend, two of us cook and the other two clean up afterwards. How many different ways are there for us to choose who cooks and who cleans?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are four ways to choose the first cook and three ways to choose the second cook, but this counts every pair of cooks twice since order doesn't matter. Once the cooks are chosen, the two people left over are the cleaners. So, there are $(4\\cdot 3)/2=\\boxed{6}$ ways for us to choose who cooks and who cleans."
-}

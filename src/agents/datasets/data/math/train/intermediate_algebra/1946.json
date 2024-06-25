@@ -1,6 +1,0 @@
-{
-    "problem": "One of the roots of\n\\[ax^3 + 3x^2 + bx - 65 = 0,\\]is $-2 - 3i,$ where $a$ and $b$ are real numbers.  Find the real root of this cubic polynomial.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Since $-2 - 3i$ is a root\n\\[a (-2 - 3i)^3 + 3 (-2 - 3i)^2 + b (-2 - 3i) - 65 = 0.\\]Expanding, we get\n\\[(-80 + 46a - 2b) + (36 - 9a - 3b)i = 0.\\]Then $-80 + 46a - 2b = 0$ and $36 - 9a - 3b = 0.$  Solving, we find $a = 2$ and $b = 6.$\n\nThe cubic polynomial is then $2x^3 + 3x^2 + 6x - 65 = 0,$ which factors as $(2x - 5)(x^2 + 4x + 13) = 0.$  Therefore, the real root is $\\boxed{\\frac{5}{2}}.$"
-}

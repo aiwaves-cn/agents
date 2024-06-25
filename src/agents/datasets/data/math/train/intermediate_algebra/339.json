@@ -1,6 +1,0 @@
-{
-    "problem": "Find $\\log_{10} 40 +\\log_{10} 25$.",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Using $\\log x+\\log y=\\log xy,$ we get that $\\log_{10} 40+\\log_{10} 25=\\log_{10}(40\\cdot 25)=\\log 1000.$ That means we want $x$ where $10^x=1000,$ which means $x=3.$ Therefore, $\\log_{10} 40+\\log_{10} 25=\\boxed{3}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ and $b$ are the solutions to the equation $x^{2} - 5x + 9= 0$, what is the value of $(a - 1)(b - 1)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can find the roots of this equation by using the quadratic formula: $$x = \\frac{5 \\pm \\sqrt{(-5)^2 - (4)(1)(9)}}{2} = \\frac{5 \\pm i\\sqrt{11}}{2}.$$ We wish to find $(a - 1)(b - 1)$, which is \\begin{align*}\n\\left(\\frac{5 + i\\sqrt{11}}{2} - 1\\right)\\left(\\frac{5 - i\\sqrt{11}}{2} - 1\\right) &= \\left(\\frac{3 + i\\sqrt{11}}{2}\\right)\\left(\\frac{3 - i\\sqrt{11}}{2}\\right) \\\\\n&= \\frac{9 + 11}{4}\\\\\n&= \\boxed{5}\n\\end{align*}\n\n$$\\text{- OR -}$$\n\nWe wish to find $(a - 1)(b - 1) = ab - (a + b) + 1$. If $a$ and $b$ are roots of this quadratic, then Vieta's formulas give us that $ab = 9$ and $a + b = 5$. Substituting these values, we find that $(a - 1)(b - 1) = 9 - 5 + 1 = \\boxed{5}$."
-}

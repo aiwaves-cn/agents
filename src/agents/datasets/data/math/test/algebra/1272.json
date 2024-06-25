@@ -1,6 +1,0 @@
-{
-    "problem": "If $x+y=12$ and $x-y=8$, what is the value of $2x-xy$?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "First, notice $2x - xy = x(2 - y)$. So this problem reduces to finding the values of $x$ and $y$.\n\nAdd the two equations together to find $x$: \\begin{align*}\n2x &= 20, \\\\\nx &= 10.\n\\end{align*}\nSubtract the two equations to find $y$: \\begin{align*}\n2y &= 4, \\\\\ny &= 2.\n\\end{align*}\nSince $y = 2$ and $x = 10$, $x(2 - y) = 10(2 - 2) = \\boxed{0}$."
-}

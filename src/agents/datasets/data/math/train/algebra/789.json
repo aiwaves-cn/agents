@@ -1,6 +1,0 @@
-{
-    "problem": "Anton has two species of ants, Species A and Species B, in his ant farm. The two species are identical in appearance, but Anton knows that every day, there are twice as many ants of Species A than before, while there are three times as many ants of Species B. On Day 0, Anton counts that there are 30 ants in his ant farm. On Day 5, Anton counts that there are 3281 ants in his ant farm. How many of these are of Species A?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Suppose that there are $a$ ants of Species A and $b$ ants of Species B on Day 0. We thus have that $a+b=30$. Notice that on Day 1, there will be $2a$ ants of Species A, on Day 2, there will be $2(2a) = 4a$ ants of Species A, and on Day 3, there will be $2(4a)=8a$ ants of Species A, etc. Following this line of reasoning, on Day 5, there will be $2^5a$ ants of Species A and $3^5b$ ants of Species B, meaning that $32a+243b=3281$. We now solve this system of linear equations. We have that $32a+32b=960$, so \\begin{align*}(32a+243b)-(32a+32b) &= 211b \\\\\n&= 3281-960 \\\\\n&= 2321.\\end{align*}We then have $b = \\frac{2321}{211} = 11$. This means that $a=30-11=19$, and there are $32\\cdot 19 = \\boxed{608}$ ants of Species A on Day 5."
-}

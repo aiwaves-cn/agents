@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest possible area, in square centimeters, of a right triangle with one side of length 12 cm and another side of length 20 cm?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Either both given sides are legs, or the 20 cm side is the hypotenuse.  If both sides are legs, then the area of the triangle is $(12)(20)/2 = 120$ square centimeters.\n\nIf the 20 cm side is the hypotenuse, then the ratio of the given leg length to the hypotenuse is $12/20=3/5$, so the triangle is a 3-4-5 triangle and the other leg has length 16 cm.  The triangle then has area $(12)(16)/2 = 96$ square centimeters.\n\nThe largest possible area then is $\\boxed{120}$ square centimeters."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The ratio of $x+2$ to $2x+2$ is equal to the ratio of $4x+3$ to $7x+3$.  What is the product of all real x which satisfy this statement?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We are given that $\\frac{x+2}{2x+2} = \\frac{4x+3}{7x+3}$. Cross multiplying, we find $(x+2)(7x+3) = (2x+2)(4x+3)$. Multiplying out each side by the distributive property yields $7x^{2}+3x+14x+6 = 8x^{2}+6x+8x+6$. Simplifying, we find $x^{2}=3x$, so $x = 0, 3$. Checking our two answers, we find that indeed $\\frac{2}{2} = \\frac{3}{3}$, and also that $\\frac{5}{8} = \\frac{15}{24}$. The product of our two solutions is $0 \\cdot 3 = \\boxed{0}$."
-}

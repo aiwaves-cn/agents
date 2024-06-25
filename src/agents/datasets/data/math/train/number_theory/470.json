@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $a$ and $b$ are positive integers such that $a-b=6$ and $\\text{gcd}\\left(\\frac{a^3+b^3}{a+b}, ab\\right) = 9$. Find the smallest possible value of $b$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Recall that $a^3+b^3 = (a+b)(a^2-ab+b^2)$. By the Euclidean Algorithm, we obtain: \\begin{align*}\n\\text{gcd}\\left(\\frac{a^3+b^3}{a+b}, ab\\right) &= \\text{gcd}(a^2-ab+b^2, ab) \\\\\n&= \\text{gcd}(a^2-2ab+b^2, ab) \\\\\n&= \\text{gcd}((a-b)^2, ab) \\\\\n&= \\text{gcd}(36, ab).\n\\end{align*}Thus, $\\text{gcd}(36, ab) = 9$. Trying values of $b$,  we find that $b = 1 \\Rightarrow a=7$ and $ab = 7\\Rightarrow \\text{gcd}(36, ab) = 1$. If $b = 2$, then $a=8$ and $ab=16 \\Rightarrow \\text{gcd}(36, ab) = 4$. Finally, $b = 3 \\Rightarrow a=9$ and $ab=27 \\Rightarrow \\text{gcd}(36, ab) = 9$. Therefore, the minimum possible value for $b$ is  $\\boxed{3}$."
-}

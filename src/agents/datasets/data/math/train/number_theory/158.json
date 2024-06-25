@@ -1,6 +1,0 @@
-{
-    "problem": "What integer $n$ satisfies $0\\le n<9$ and $$-1111\\equiv n\\pmod 9~?$$",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "An integer is divisible by $9$ if and only if the sum of its digits is divisible by $9$. Using this fact, we find that the greatest multiple of $9$ that is less than $-1111$ is $-1116$.\n\nWe have $-1111 = -1116+5$. That is, $-1111$ is equal to a multiple of $9$ plus $5$. Therefore, $$-1111\\equiv \\boxed{5}\\pmod 9.$$To verify this answer, we can check that $9$ divides $(-1111)-5 = -1116$; it does, so our answer is correct."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x) = x^4 + x^2 + 5x$, evaluate $f(5) - f(-5)$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Recall that if a function $f$ satisfies $f(x)=f(-x)$ for all real numbers $x$, then it is called an even function.  Similarly, if $f(x)=-f(-x)$ for all real numbers $x$, then $f$ is called an odd function.  Let's define $g(x)=x^4+x^2$ and $h(x)=5x$.  Observe that $g(x)$ is even, $h(x)$ is odd, and $f(x)=g(x)+h(x)$.  We have  \\begin{align*}\nf(5)-f(-5)&=g(5)+h(5)-g(-5)-h(-5) \\\\\n&= (g(5)-g(-5)) + h(5)-h(-5) \\\\\n&= 0 + 2h(5) \\\\\n&= 2(5(5)) \\\\\n&=\\boxed{50}.\n\\end{align*}"
-}

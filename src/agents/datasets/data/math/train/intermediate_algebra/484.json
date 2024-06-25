@@ -1,6 +1,0 @@
-{
-    "problem": "A certain ellipse is tangent to both the $x$-axis and the $y$-axis, and its foci are at $(2, -3 + \\sqrt{5})$ and $(2, -3 - \\sqrt{5}).$  Find the length of the major axis.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We see that the center of the ellipse is $(2,-3),$ and that the major axis lies along the line $x = 2.$  Since the ellipse is tangent to the $x$-axis, one end-point of the major axis must be $(2,0),$ and the other end-point must be $(2,-6).$  Thus, the length of the major axis is $\\boxed{6}.$\n\n[asy]\nunitsize(1 cm);\n\ndraw(shift((2,-3))*xscale(2)*yscale(3)*Circle((0,0),1));\ndraw((-1,0)--(4,0));\ndraw((0,1)--(0,-6));\ndraw((2,0)--(2,-6));\ndraw((0,-3)--(4,-3));\n\ndot(\"$(2,0)$\", (2,0), N);\ndot(\"$(2,-6)$\", (2,-6), S);\ndot(\"$(2,-3)$\", (2,-3), SE);\ndot((2,-3 + sqrt(5)));\ndot((2,-3 - sqrt(5)));\nlabel(\"$(2, -3 + \\sqrt{5})$\", (2, -3 + sqrt(5)), E, UnFill);\nlabel(\"$(2, -3 - \\sqrt{5})$\", (2, -3 - sqrt(5)), E, UnFill);\n[/asy]"
-}

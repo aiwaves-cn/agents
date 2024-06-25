@@ -1,6 +1,0 @@
-{
-    "problem": "What is the shortest distance from the origin to the circle defined by $x^2-24x +y^2+10y +160=0$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We complete the square by observing that the equation for the circle is equivalent to  \\[(x^2-24x+144) +(y^2+10y+25) -9 =0,\\] which is also equivalent to \\[(x-12)^2 +(y+5)^2=3^2.\\] Hence the center of the circle is $(12,-5)$ and by the Pythagorean theorem, the distance from the origin to the center of the circle is $13$ (we can also recall that we have a $5-12-13$ triangle).  Since the radius of the circle is $3$, the shortest distance from the origin to the circle is the difference of the distance from the center of the circle to the origin less the radius which is $13-3=\\boxed{10}$."
-}

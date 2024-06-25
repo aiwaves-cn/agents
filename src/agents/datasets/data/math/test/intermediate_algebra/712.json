@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer solution to $(100,000,000 \\div x^4 ) < 1$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "The fraction's numerator is equal to $10^8$, or $100^4$.  Taking the fourth root of both sides, we find that $\\frac{100}{x} < 1$, meaning that $100<x$ (since $x$ is positive).  So $x = \\boxed{101}$ is the smallest positive integer solution."
-}

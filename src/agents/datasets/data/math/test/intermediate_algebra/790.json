@@ -1,6 +1,0 @@
-{
-    "problem": "What fraction of the form $\\frac{A}{x + 3}$ can be added to $\\frac{6x}{x^2 + 2x - 3}$ so that the result reduces to a fraction of the form $\\frac{B}{x - 1}$?  Here $A$ and $B$ are real numbers.  Give the value of $A$ as your answer.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Our equation is\n\\[\\frac{A}{x + 3} + \\frac{6x}{x^2 + 2x - 3} = \\frac{B}{x - 1}.\\]Multiplying both sides by $x^2 + 2x - 3 = (x + 3)(x - 1),$ we get\n\\[A(x - 1) + 6x = B(x + 3).\\]We want to this equation to hold for all values of $x.$  So, we can take $x = -3,$ to get\n\\[A(-4) + 6(-3) = 0.\\]This gives us $A = \\boxed{-\\frac{9}{2}}.$"
-}

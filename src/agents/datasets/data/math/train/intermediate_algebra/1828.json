@@ -1,6 +1,0 @@
-{
-    "problem": "Below is the graph of an ellipse. (Assume that tick marks are placed every $1$ unit along the axes.)\n[asy]\nsize(8cm);\n\nint x, y;\nfor (y = -4; y <= 2; ++y) {\n  draw((-1,y)--(7,y),gray(0.7));\n}\nfor (x = -1; x <= 7; ++x) {\n  draw((x,-4)--(x,2),gray(0.7));\n}\n\ndraw(shift((3,-1))*xscale(1.5)*shift((-3,1))*Circle((3,-1),2));\ndraw((-1,0)--(7,0),EndArrow);\ndraw((0,-4)--(0,2),EndArrow);\n//for (int i=-3; i<=1; ++i)\n\t//draw((-0.15,i)--(0.15,i));\n//for (int i=0; i<=6; ++i)\n\t//draw((i,0.15)--(i,-0.15));\n[/asy]\nCompute the coordinates of the focus of the ellipse with the greater $x$-coordinate.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We see that the endpoints of the major axis of the ellipse are $(0,-1)$ and $(6,-1)$, and the endpoints of the minor axis of the ellipse are $(3,1)$ and $(3,-3)$. Then, the center of the ellipse is the midpoint of the two axes, which is $(3,-1)$.\n\nThe lengths of the major and minor axis are $6$ and $4$, respectively, so the distance between the foci is $\\sqrt{6^2-4^2} = 2\\sqrt{5}.$ It follows that each focus is $\\sqrt{5}$ away from the center, $(3,-1),$ along the major (horizontal) axis. Therefore, the focus with the larger $x$-coordinate must be $\\boxed{(3+\\sqrt{5},-1)}.$"
-}

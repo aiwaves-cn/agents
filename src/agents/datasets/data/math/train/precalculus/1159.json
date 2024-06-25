@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\sin A+\\sin B=1$ and $\\cos A+\\cos B= \\frac{3}{2}$, what is the value of $\\cos(A-B)$?",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Squaring both equations, we get $\\sin^2 A + 2 \\sin A \\sin B + \\sin^2 B = 1$ and $\\cos^2 A + 2 \\cos A \\cos B + \\cos^2 B = \\frac{9}{4},$ so\n\\[\\sin^2 A + 2 \\sin A \\sin B + \\sin^2 B + \\cos^2 A + 2 \\cos A \\cos B + \\cos^2 B = \\frac{13}{4}.\\]Then $2 \\sin A \\sin B + 2 \\cos A \\cos B = \\frac{13}{4} - 2 = \\frac{5}{4},$ so from the angle subtraction formula,\n\\[\\cos (A - B) = \\cos A \\cos B + \\sin A \\sin B = \\boxed{\\frac{5}{8}}.\\]"
-}

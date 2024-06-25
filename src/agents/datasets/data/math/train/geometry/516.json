@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, we have $\\angle A = 90^\\circ$ and $\\sin B = \\frac{4}{7}$.  Find $\\cos C$.",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "[asy]\n\npair A,B,C;\n\nA = (0,0);\n\nB = (4,0);\n\nC = (0,sqrt(33));\n\ndraw(A--B--C--A);\n\ndraw(rightanglemark(B,A,C,10));\n\nlabel(\"$A$\",A,SW);\n\nlabel(\"$B$\",B,SE);\n\nlabel(\"$C$\",C,N);\n\n[/asy]\n\nSince $\\triangle ABC$ is a right triangle, we have $\\sin B = \\frac{AC}{BC}$ and $\\cos C = \\frac{AC}{BC}$, so $\\cos C = \\sin B = \\boxed{\\frac47}$."
-}

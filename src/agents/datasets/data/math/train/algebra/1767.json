@@ -1,6 +1,0 @@
-{
-    "problem": "A $100$-gon $P_1$ is drawn in the Cartesian plane.  The sum of the $x$-coordinates of the $100$ vertices equals 2009.  The midpoints of the sides of $P_1$ form a second $100$-gon, $P_2$.  Finally, the midpoints of the sides of $P_2$ form a third $100$-gon, $P_3$.  Find the sum of the $x$-coordinates of the vertices of $P_3$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the $x$-coordinates of the vertices of $P_1$ be $x_1,x_2,\\ldots,x_{100}$.  Then, by the midpoint formula, the $x$-coordinates of the vertices of $P_2$ are $\\frac{x_1+x_2}2,\\frac{x_2+x_3}2,\\ldots,\\frac{x_{100}+x_1}2 $.  The sum of these equals $\\frac{2x_1+2x_2+\\cdots +2x_{100}}2=x_1+x_2+\\cdots+x_{100}$.  Similarly, the sum of the $x$-coordinates of the vertices of $P_3$ equals the sum of the $x$-coordinates of the vertices of  $P_2$.  Thus the desired answer is $\\boxed{2009}$."
-}

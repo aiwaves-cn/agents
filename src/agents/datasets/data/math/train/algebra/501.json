@@ -1,6 +1,0 @@
-{
-    "problem": "Expand the product ${(x+3)(x-8)}$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "When using the distributive property for the first time, we add the product of $x+3$ and $x$ to the product of $x+3$ and $-8$:\n\n\\begin{align*}\n(x+3)(x-8) &= (x+5) \\cdot x + (x+5) \\cdot (-8)\\\\\n&= x(x+3) - 8(x+3)\n\\end{align*}We use the distributive property again and combine like terms:\n\n\\begin{align*}\nx(x+3) - 8(x+3) &= x^2 + 3x - 8x - 24\\\\\n&= \\boxed{x^2 - 5x - 24}\n\\end{align*}"
-}

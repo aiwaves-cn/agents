@@ -1,6 +1,0 @@
-{
-    "problem": "I have 10 distinguishable socks in my drawer: 4 white, 4 brown, and 2 blue.  In how many ways can I choose a pair of socks, provided that I get two socks of different colors?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "If the socks are different, either white and brown, brown and blue, or white and blue can be picked.  If the socks are white and brown, there are 4 options for the white sock and 4 options for the brown sock for a total of 16 choices.  If the socks are brown and blue, there are 4 options for the brown sock and 2 options for the blue sock for a total of 8 choices.  If the socks are white and blue, there are 4 options for the white sock and 2 options for the brown sock for a total of 8 choices.  This gives a total of $16 + 8 + 8 = \\boxed{32}$ choices."
-}

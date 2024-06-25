@@ -1,6 +1,0 @@
-{
-    "problem": "If Alex gives Bob a penny, Bob will have three times as many pennies as Alex has. If Bob gives Alex a penny, Bob will have twice as many pennies as Alex has. How many pennies does Bob currently have?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $a$ be the number of pennies that Alex currently has, and let $b$ be the number of pennies that Bob currently has. If Alex gives Bob a penny, Alex will have $a - 1$ pennies and Bob will have $b + 1$ pennies. Also, Bob will have three times as many pennies as Alex has, so $b + 1 = 3(a - 1) = 3a - 3$. If Bob gives Alex a penny, Alex will have $a + 1$ pennies and Bob will have $b - 1$ pennies. Also, Bob will have twice as many pennies as Alex has, so $b - 1 = 2(a + 1) = 2a + 2$.\n\nIf we subtract the second equation from the first, we obtain $2 = a - 5$, so $a = 7$. Plugging this in, we can find that $b = 17$, so Bob has $\\boxed{17}$ pennies."
-}

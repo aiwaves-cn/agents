@@ -1,6 +1,0 @@
-{
-    "problem": "The units digit of a three-digit number is 6. What is the probability that the number is divisible by 6? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The common difference of the arithmetic sequence 106, 116, 126, ..., 996 is relatively prime to 3.  Therefore, given any three consecutive terms, exactly one of them is divisible by 3.  Since there are $1+(996-106)/10=90$ terms in the sequence, $90/3=30$ of them are divisible by 3.  Since every term is even, a term is divisible by 3 if and only if it is divisible by 6.  Therefore, the probability that a randomly selected term in the sequence is a multiple of 6 is $30/90=\\boxed{\\frac{1}{3}}$."
-}

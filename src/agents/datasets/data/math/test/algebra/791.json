@@ -1,6 +1,0 @@
-{
-    "problem": "Positive integers $a$, $b$, and $2009$, with $a<b<2009$, form a geometric sequence with an integer ratio. What is $a$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The prime factorization of $2009$ is $2009 = 7\\cdot 7\\cdot 41$. As $a<b<2009$, the ratio must be positive and larger than $1$. Hence, there is only one possibility: the ratio must be $7$, and thus $b=7\\cdot 41$ and $a=\\boxed{41}$."
-}

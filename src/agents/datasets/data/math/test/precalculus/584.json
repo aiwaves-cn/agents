@@ -1,6 +1,0 @@
-{
-    "problem": "Line segment $\\overline{AB}$ is extended past $A$ to $P$ such that $AP:PB = 1:4.$  Then\n\\[\\overrightarrow{P} = t \\overrightarrow{A} + u \\overrightarrow{B}\\]for some constants $t$ and $u.$  Enter the ordered pair $(t,u).$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, P;\n\nA = (0,0);\nB = (5,1);\nP = interp(A,B,-1/3);\n\ndraw(B--P);\n\ndot(\"$A$\", A, S);\ndot(\"$B$\", B, S);\ndot(\"$P$\", P, S);\n[/asy]",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Since $AP:PB = 1:4,$ we can write\n\\[\\frac{\\overrightarrow{A} - \\overrightarrow{P}}{1} = \\frac{\\overrightarrow{B} - \\overrightarrow{P}}{4}.\\]Isolating $\\overrightarrow{P},$ we find\n\\[\\overrightarrow{P} = \\frac{4}{3} \\overrightarrow{A} - \\frac{1}{3} \\overrightarrow{B}.\\]Thus, $(t,u) = \\boxed{\\left( \\frac{4}{3}, -\\frac{1}{3} \\right)}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The perimeter of a sector of a circle is the sum of the two sides formed by the radii and the length of the included arc. A sector of a particular circle has a perimeter of 28 cm and an area of 49 sq cm. What is the length of the arc of this sector?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let the length of the arc of this sector be $s$ cm and the radius of the circle be $r$ cm.  Then this sector is $s/2\\pi r$ of a full circle, and its area is $\\frac{s}{2\\pi r}\\cdot \\pi r^2 = \\frac{rs}{2} = 49$ square cm.  Also, we compute the sector's perimeter to be $2r + s = 28$ cm.  Solving, we find that $s = \\boxed{14}$ cm."
-}

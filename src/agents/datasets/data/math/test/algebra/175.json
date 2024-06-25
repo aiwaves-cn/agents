@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all real numbers $x$ that are not in the domain of the function $$f(x) = \\frac{1}{x^2-7} + \\frac{1}{x^3-8} + \\frac{1}{x^4-9}~?$$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "A real number $x$ is in the domain of $f(x)$ unless $x^2=7$, $x^3=8$, or $x^4=9$.\n\nThe solutions to $x^2=7$ are $x=\\sqrt 7$ and $x=-\\sqrt 7$, which sum to $0$.\n\nThe only solution to $x^3=8$ is $x=2$.\n\nThe solutions to $x^4=9$ are $x=\\sqrt[4]9$ and $x=-\\sqrt[4]9$, which sum to $0$.\n\nThus, the sum of all $x$ not in the domain of $f$ is $0+2+0=\\boxed{2}$."
-}

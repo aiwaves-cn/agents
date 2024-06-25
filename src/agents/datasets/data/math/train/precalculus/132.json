@@ -1,6 +1,0 @@
-{
-    "problem": "A particle moves so that it is at $(2t + 7, 4t - 13)$ at time $t.$  Find the speed of the particle, measured in unit of distance per unit of time.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "At time $t = k,$ the particle is at\n\\[(2k + 7, 4k - 13).\\]At time $t = k + 1,$ the particle is at\n\\[(2(k + 1) + 7, 4(k + 1) - 13).\\]The change in the $x$-coordinate is 2, and the change in the $y$-coordinate is 4, so the speed of the particle is $\\sqrt{2^2 + 4^2} = \\sqrt{20} = \\boxed{2 \\sqrt{5}}.$"
-}

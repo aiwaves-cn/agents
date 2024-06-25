@@ -1,6 +1,0 @@
-{
-    "problem": "A motel bills its customers by charging a flat fee for the first night and then adding on a fixed amount for every night thereafter. If it costs George $\\$155$ to stay in the motel for 3 nights and Noah $\\$290$ to stay in the motel for 6 nights, how much is the flat fee for the first night?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let $f$ be the flat fee for the first night and $n$ be the fixed fee for each night thereafter. Notice that the first night is incorporated into the flat fee. We can create a system of two equations to represent the given information as follows:\n\n\\begin{align*}\nf + 2n &= 155 \\\\\nf + 5n &= 290 \\\\\n\\end{align*}It's easiest to eliminate $f,$ solve for $n$ and then solve for $f$ using that value. To solve for $n$, subtract the first equation from the second, obtaining $3n = 135$, or $n = 45$. Substitute for $n$ in the first equation to obtain $f = 155 - 90$, or $f = 65$. Thus, the flat fee for the first night is $\\boxed{\\$65}$."
-}

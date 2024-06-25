@@ -1,6 +1,0 @@
-{
-    "problem": "On Monday at work, David produces $w$ widgets per hour, and works for $t$ hours. Exhausted by this work, on Tuesday, he decides to work for $2$ fewer hours, but manages to produce $4$ additional widgets per hour. If $w = 2t$, how many more widgets did David produce on Monday than on Tuesday?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "On Monday, David produces $w\\ \\frac{\\text{widgets}}{\\text{hour}} \\cdot t\\ \\text{hours} = wt\\ \\text{widgets}$.\n\nOn Tuesday, David produces $(w+4)\\ \\frac{\\text{widgets}}{\\text{hour}} \\cdot (t-2)\\ \\text{hours} = (w+4)(t-2)\\ \\text{widgets}$.\n\nSubstituting $w = 2t$, the difference in output between Monday and Tuesday is  \\begin{align*}wt - (w+4)(t-2) &= (2t)t - ((2t) + 4)(t-2) \\\\ &= 2t^2 - (2t^2 + 4t - 4t - 8) \\\\&= \\boxed{8}\n\\end{align*}widgets."
-}

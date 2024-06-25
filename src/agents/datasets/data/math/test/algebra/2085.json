@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\log_{\\sqrt{5}} 125\\sqrt{5}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let $x= \\log_{\\sqrt{5}}125\\sqrt{5}$.  Putting this in exponential notation gives $(\\sqrt{5})^x = 125\\sqrt{5}$.  Writing both sides with 5 as the base gives us $5^{\\frac{x}{2}} = 5^3\\cdot 5^{\\frac{1}{2}} = 5^{\\frac{7}{2}}$, so $x/2=7/2$.  Therefore, $x=\\boxed{7}$."
-}

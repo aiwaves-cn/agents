@@ -1,6 +1,0 @@
-{
-    "problem": "The proper divisors of 12 are 1, 2, 3, 4 and 6. A proper divisor of an integer $N$ is a positive divisor of $N$ that is less than $N$. What is the sum of the proper divisors of the sum of the proper divisors of 284?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Prime factorize $284=2^2\\cdot71$. The sum of the proper divisors of $284$ is\n\\begin{align*}\n1+2+2^2+71+2 \\cdot 71 &= (1+2+2^2)(1+71)-284 \\\\\n&= 220 \\\\\n&= 2^2\\cdot5\\cdot11.\n\\end{align*}Here we have used the observation that multiplying out $(1+2+2^2)(1+71)$ by distributing yields an expression which is the sum of all $6$ factors of $284.$ Applying this observation again, we find that the sum of the proper divisors of $220$ is $$(1+2+2^2)(1+5)(1+11)-220=7\\cdot 6\\cdot 12-220=\\boxed{284}.$$"
-}

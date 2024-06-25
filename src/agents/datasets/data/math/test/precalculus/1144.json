@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\cos 54^\\circ \\cos 4^\\circ - \\cos 36^\\circ \\cos 86^\\circ.$\n\nEnter your answer is a trigonometric function evaluated at an integer, such as \"sin 7\".  (The system will assume that the angle is in degrees.)",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From the angle addition formula,\n\\begin{align*}\n\\cos 54^\\circ \\cos 4^\\circ - \\cos 36^\\circ \\cos 86^\\circ &= \\cos 54^\\circ \\cos 4^\\circ - \\sin 54^\\circ \\sin 4^\\circ \\\\\n&= \\cos (54^\\circ + 4^\\circ) \\\\\n&= \\boxed{\\cos 58^\\circ}.\n\\end{align*}"
-}

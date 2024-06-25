@@ -1,6 +1,0 @@
-{
-    "problem": "When $\\sqrt[3]{2700}$ is simplified, the result is $a\\sqrt[3]{b}$, where $a$ and $b$ are positive integers and $b$ is as small as possible.  What is $a+b$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have $$\\sqrt[3]{2700} = \\sqrt[3]{27}\\times \\sqrt[3]{100} = \\sqrt[3]{3^3}\\times \\sqrt[3]{100} = 3\\sqrt[3]{100}.$$  Since the prime factorization of 100 is $2^2\\cdot5^2$, we cannot simplify $\\sqrt[3]{100}$ any further.  Therefore, we have $a+b = \\boxed{103}$."
-}

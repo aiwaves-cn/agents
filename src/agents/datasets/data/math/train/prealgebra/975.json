@@ -1,6 +1,0 @@
-{
-    "problem": "During her birthday, her parents have decided to give Laura and her 2 younger brothers new cellphones. However, they are confused between the innumerable service providers. Assuming no child wants a provider that another sibling has, and that there are 20 service providers,  in how many ways can the parents grant the children their phones?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 20 different ways the parents can choose a provider for Laura.  For each choice, there are 19 providers remaining that could be the provider for the first brother, and then 18 providers that could be chosen for the second brother.  This gives $20 \\times 19 \\times 18 = \\boxed{6840}$ different ways that the parents can gift the cellphones."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A prism has 15 edges. How many faces does the prism have?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "If a prism has 2 bases and $L$ lateral faces, then each base is an $L$-gon, so the two bases collectively have $2L$ edges.  Also, there are $L$ edges connecting corresponding vertices of the two bases, for a total of $3L$ edges.  Solving $3L=15$, we find that the prism has 5 lateral faces and hence $5+2=\\boxed{7}$ faces in total."
-}

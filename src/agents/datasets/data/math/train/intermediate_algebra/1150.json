@@ -1,6 +1,0 @@
-{
-    "problem": "Find the monic quadratic polynomial, in $x,$ with real coefficients, which has $-2 - i \\sqrt{5}$ as a root.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If a polynomial has real coefficients, then any complex conjugate of a root must also be a root.  Hence, the other root is $-2 + i \\sqrt{5}.$  Thus, the polynomial is\n\\[(x + 2 + i \\sqrt{5})(x + 2 - i \\sqrt{5}) = (x + 2)^2 - 5i^2 = \\boxed{x^2 + 4x + 9}.\\]"
-}

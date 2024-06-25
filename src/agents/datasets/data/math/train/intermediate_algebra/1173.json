@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the ellipse \\[9(x-1)^2 + y^2 = 36.\\]Let $A$ be one of the endpoints of its major axis, and let $B$ be one of the endpoints of its minor axis. Find the distance $AB.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Dividing by $36,$ we have the standard form of the ellipse: \\[\\frac{(x-1)^2}{2^2} + \\frac{y^2}{6^2} = 1.\\]Therefore, the distance from the center of the ellipse to $A$ is $6,$ and the distance from the center of the ellipse to $B$ is $2.$ Since the major and minor axes are perpendicular, by the Pythagorean theorem, \\[AB = \\sqrt{6^2 + 2^2} = \\boxed{ 2\\sqrt{10} }.\\]"
-}

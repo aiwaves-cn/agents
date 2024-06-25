@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real solutions to $x^3+(x+1)^3+(x+2)^3=(x+3)^3$.  Enter all the solutions, separated by commas.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "The equation simplifies to $3x^3+9x^2+15x+9=x^3+9x^2+27x+27$, or equivalently, $2x^3-12x-18=2(x-3)(x^2+3x+3)=0$. The discriminant of $x^2+3x+3$ is $-3<0$, so the only real solution is $x=\\boxed{3}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = 2^x.$ Find $\\sqrt{f(f(f(f(1))))}.$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We find that $f(1) = 2^1 = 2.$ Then, $f(f(1)) = f(2) = 2^2 = 4$ and $f(f(f(1))) = f(4) = 2^4 = 16.$ Therefore, $f(f(f(f(1)))) = f(16) = 2^{16}$ and so $\\sqrt{f(f(f(f(1))))} = \\sqrt{2^{16}} = 2^8 = \\boxed{256}.$"
-}

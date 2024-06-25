@@ -1,6 +1,0 @@
-{
-    "problem": "How many 4-letter words with at least one vowel can be constructed from the letters A, B, C, D, and E?  (Note that A and E are vowels, any word is valid, not just English language words, and letters may be used more than once.)",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "First we count the number of all 4-letter words with no restrictions on the word. Then we count the number of 4-letter words with no vowels. We then subtract to get the answer.\n\nEach letter of a word must be one of A, B, C, D, or E, so the number of 4-letter words with no restrictions on the word is $5\\times 5\\times 5\\times 5=625$.  Each letter of a word with no vowel must be one of B, C, or D. So the number of all 4-letter words with no vowels in the word is $3\\times 3\\times 3\\times 3=81$.  Therefore, the number of 4-letter words with at least one vowel is $625-81=\\boxed{544}$."
-}

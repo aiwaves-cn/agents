@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the units digit of $17^{13} - 17$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The units digit of $17^3 - 17$ is the same as the units digit as $7^{13} - 7$.  To find the units digit of $7^{13}$, we look at the first few powers of 7 modulo 10: \\begin{align*}\n7^0 &\\equiv 1, \\\\\n7^1 &\\equiv 7, \\\\\n7^2 &\\equiv 7 \\cdot 7 \\equiv 49 \\equiv 9, \\\\\n7^3 &\\equiv 7 \\cdot 9 \\equiv 63 \\equiv 3, \\\\\n7^4 &\\equiv 7 \\cdot 3 \\equiv 21 \\equiv 1 \\pmod{10}.\n\\end{align*}\n\nSince $7^4 \\equiv 1 \\pmod{10}$, the remainders become periodic, with period 4.  Since $13 \\equiv 1 \\pmod{4}$, $7^{13} \\equiv 7 \\pmod{10}$, so the units digit of $7^{13} - 7$ is $\\boxed{0}$."
-}

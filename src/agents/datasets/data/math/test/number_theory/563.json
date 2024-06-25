@@ -1,6 +1,0 @@
-{
-    "problem": "For $n \\ge 0$, let $F_n$ denote the $n$th Fibonacci number (that is, $F_0 = 0, F_1 = 1$, and $F_n = F_{n-1} + F_{n-2}$ for all $n \\ge 2$). What is the greatest possible value of the greatest common divisor of two consecutive Fibonacci numbers?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We want to find the maximum possible value of $\\text{gcd}\\,(F_{n}, F_{n-1})$. Since $F_{n} = F_{n-1} + F_{n-2},$ by the Euclidean algorithm, this is equivalent to finding  \\begin{align*}\n\\text{gcd}\\,(F_{n-1} + F_{n-2}, F_{n-1}) &= \\text{gcd}\\,(F_{n-1} + F_{n-2} - F_{n-1}, F_{n-1}) \\\\\n&= \\text{gcd}\\,(F_{n-1}, F_{n-2}).\n\\end{align*}It follows that  \\begin{align*}\n\\text{gcd}\\,(F_n, F_{n-1}) &= \\text{gcd}\\,(F_{n-1}, F_{n-2})\\\\\n&= \\cdots = \\text{gcd}\\,(F_2, F_1)\\\\\n&= \\text{gcd}\\,(1,1)\\\\\n&= \\boxed{1}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A pirate is counting the loot he has stolen from S.S. AOPS, on which everything is counted in base 5.  A treasure chest contains $3124_{5}$ dollars worth of jewelry, $3122_{5}$ dollars worth of gold coins, and $124_{5}$ dollars worth of rubbing alcohol.  What is the total dollar amount that this pirate has accumulated? Express your answer in base 10.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We would like to find $3124_{5}+3122_{5}+124_{5}$.\n\n$3124_{5} = 4\\cdot5^{0}+2\\cdot5^{1}+1\\cdot5^{2}+3\\cdot5^{3} = 4+10+25+375 = 414$\n\n$3122_{5} = 2\\cdot5^{0}+2\\cdot5^{1}+1\\cdot5^{2}+3\\cdot5^{3} = 2+10+25+375 = 412$\n\n$124_{5} = 4\\cdot5^{0}+2\\cdot5^{1}+1\\cdot5^{2} = 4+10+25 = 39$\n\nSumming all of these together yields $414+412+39= \\boxed{865}$ dollars."
-}

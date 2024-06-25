@@ -1,6 +1,0 @@
-{
-    "problem": "How many odd whole numbers are factors of 180?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Factoring out the highest power of 2 that divides 180, we get $180=2^2\\cdot45$. Thus, the odd factors of 180 are all the factors of $45=3^2\\cdot5^1$, which has $(2+1)(1+1)=\\boxed{6}$ factors."
-}

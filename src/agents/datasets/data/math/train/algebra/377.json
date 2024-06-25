@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangle having integer length and width has a perimeter of 100 units. What is the number of square units in the least possible area?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "A rectangle with fixed perimeter has minimal area when one dimension is as long as possible and the other is as short as possible. To see this, let $x$ be the shorter dimension and $y$ the area of the rectangle, and note that $y=x(50-x)$. The graph of $y=x(50-x)$ is a down-turned parabola with vertex at $(25,625)$, and thus is as small as possible when $x$ is as small as possible. Since $x$ is an integer, its minimum value is 1. Thus the relevant rectangle with minimum area is 1 by 49.  Its area is $49\\cdot 1=\\boxed{49}$ square units."
-}

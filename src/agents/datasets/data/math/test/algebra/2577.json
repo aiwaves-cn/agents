@@ -1,6 +1,0 @@
-{
-    "problem": "If the roots of the quadratic equation $\\frac12x^2+99x+c=0$ are $x=-99+\\sqrt{8001}$ and $x=-99-\\sqrt{8001}$, then what is the value of $c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "By the quadratic formula, the roots of the equation are $$x=\\frac{-(99)\\pm\\sqrt{(99)^2-4(\\frac12)c}}{2(\\frac12)},$$which simplifies to $$x=-99\\pm\\sqrt{9801-2c}.$$This looks like our target, except that we have to get the $9801-2c$ under the radical to equal $8001$. So, we solve the equation $9801-2c=8001$, which yields $c=\\boxed{900}$."
-}

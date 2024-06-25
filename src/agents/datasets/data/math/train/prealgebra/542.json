@@ -1,6 +1,0 @@
-{
-    "problem": "One interior angle of a convex polygon is 160 degrees. The rest of the interior angles of the polygon are each 112 degrees. How many sides does the polygon have?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Let us call $x$ the number of sides in the polygon.  The sum of all the angles of the polygon with $x$ sides is $180(x-2)$, but with the information given, it can also be expressed as $160 + 112(x-1)$.  Therefore, setting these two equations equal: \\begin{align*}\n180(x-2) &= 160 + 112(x-1)\\\\\n180x - 360 &= 160 + 112x - 112\\\\\n68x &= 408\\\\\nx &= 6\\\\\n\\end{align*} Thus, it has $\\boxed{6}$ sides, and is a hexagon."
-}

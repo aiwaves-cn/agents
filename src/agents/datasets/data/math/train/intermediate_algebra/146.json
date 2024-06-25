@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[f(x - y) = f(x) f(y)\\]for all real numbers $x$ and $y,$ and $f(x) \\neq 0$ for all real numbers $x.$  Find $f(3).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 3$ and $y = \\frac{3}{2},$ we get\n\\[f \\left( \\frac{3}{2} \\right) = f(3) f \\left( \\frac{3}{2} \\right).\\]Since $f \\left( \\frac{3}{2} \\right) \\neq 0,$ we can divide both sides by $f \\left( \\frac{3}{2} \\right),$ to get $f(3) = \\boxed{1}.$"
-}

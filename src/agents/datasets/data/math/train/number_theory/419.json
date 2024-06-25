@@ -1,6 +1,0 @@
-{
-    "problem": "When we say that Ray is climbing up the stairs $m$ at a time, we mean that he starts on the floor (step $0$) then jumps to step $m$ and then to $2m$ and so on until the number of steps to the top is less than $m$. Ray climbs up a flight of stairs of $n$ steps in two ways. When he does it $4$ steps at a time, there are $3$ steps left at the top. When he does it $5$ steps at a time, there are $2$ steps left at the top. What is the smallest possible value of $n$ that is greater than $10$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The given information translates to the congruences \\begin{align*}\nn\\equiv 3 & \\pmod 4,\\\\\nn\\equiv 2 & \\pmod 5.\\\\\n\\end{align*}From the first congruence we obtain that $n = 3+4k$ for some integer $k.$ Combining this result with the second congruence, we have $3+4k=n \\equiv 2 \\pmod 5.$ Therefore, $k \\equiv 1 \\pmod 5.$ So, $k = 1+5t$ for some integer $t.$ Substituting $1+5t$ for $k$, we have  \\begin{align*}\nn &=3+4k\\\\\n&=3+4(1+5t)\\\\\n&=7+20t \\equiv 7 \\pmod{20}.\n\\end{align*}The smallest such $n$ greater than $10$ is $\\boxed{27}$."
-}

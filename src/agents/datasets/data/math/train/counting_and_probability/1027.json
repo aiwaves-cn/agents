@@ -1,6 +1,0 @@
-{
-    "problem": "How many 9 step paths are there from $E$ to $G$ which pass through $F$?[asy]size(4cm,4cm);int w=6;int h=5;int i;pen p=fontsize(9);for (i=0; i<h; ++i){draw((0,i) -- (w-1,i));}for (i=0; i<w; ++i){draw((i, 0)--(i,h-1));}label(\"G\", (w-1,0), SE, p);label(\"E\", (0,h-1), NW, p);label(\"F\", (3,3), NE, p);[/asy]",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "From $E$ to $F$, it is 3 steps to the right and 1 step down, for a total of $\\dbinom{4}{1} = \\dfrac{4}{1} = 4$ different paths.  From $F$ to $G$, it is 2 steps to the right and 3 steps down, for a total of $\\dbinom{5}{2} = \\dfrac{5 \\times 4}{2 \\times 1} = 10$ different paths.  So there are $4 \\times 10 = \\boxed{40}$ paths from $E$ to $G$ that pass through $F$."
-}

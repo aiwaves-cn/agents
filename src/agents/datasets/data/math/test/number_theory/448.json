@@ -1,6 +1,0 @@
-{
-    "problem": "Let's call a prime number a $\\textit{reversible prime}$ if the number formed by reversing its digits is also prime. What is the smallest reversible prime greater than 17?",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "To find the smallest reversible prime greater than 17, we first consider the two-digit primes greater than 17. 19 is prime, but $91=7\\times13$ is not.\n\nWe skip all of the two-digit primes whose tens digit is 2 since the number formed by reversing the digits will be even and hence not prime.\n\nNext try the prime 31, and since 13 is prime as well, the smallest reversible prime greater than 17 is $\\boxed{31}$."
-}

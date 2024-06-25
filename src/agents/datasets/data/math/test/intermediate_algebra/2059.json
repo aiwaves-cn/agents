@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\sum_{n = 1}^\\infty \\frac{1}{F_n F_{n + 2}},\\]where $F_n$ denotes the $n$th Fibonacci number, so $F_0 = 0$ and $F_1 = 1.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can get the sum to telescope by writing\n\\[\\frac{1}{F_n F_{n + 2}} = \\frac{F_{n + 1}}{F_n F_{n + 1} F_{n + 2}}.\\]Since $F_{n + 1} = F_{n + 2} - F_n,$\n\\[\\frac{F_{n + 1}}{F_n F_{n + 1} F_{n + 2}} = \\frac{F_{n + 2} - F_n}{F_n F_{n + 1} F_{n + 2}} = \\frac{1}{F_n F_{n + 1}} - \\frac{1}{F_{n + 1} F_{n + 2}}.\\]Then\n\\begin{align*}\n\\sum_{n = 1}^\\infty \\frac{1}{F_n F_{n + 2}} &= \\left( \\frac{1}{F_1 F_2} - \\frac{1}{F_2 F_3} \\right) + \\left( \\frac{1}{F_2 F_3} - \\frac{1}{F_3 F_4} \\right) + \\left( \\frac{1}{F_3 F_4} - \\frac{1}{F_4 F_5} \\right) + \\dotsb \\\\\n&= \\frac{1}{F_1 F_2} \\\\\n&= \\boxed{1}.\n\\end{align*}"
-}

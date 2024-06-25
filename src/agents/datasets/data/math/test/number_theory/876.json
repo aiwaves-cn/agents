@@ -1,6 +1,0 @@
-{
-    "problem": "A teenager is someone who is 13, 14, 15, 16, 17, 18 or 19 years old. The product of the ages of a particular group of teenagers is 705,600. What is the mean of their ages in years? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Of the teenage ages, 13, 17, and 19 are prime; $14=2\\cdot7$, $15=3\\cdot5$, $16=2^4$, and $18=2\\cdot3^2$. The prime factorization of 705,600 is $2^6\\cdot3^2\\cdot5^2\\cdot7^2$. Since $7^2|705600$, 2 people must be 14 years old (which takes care of $2^2\\cdot7^2$). Similarly, since $5^2|705600$, 2 people must be 15 years old (which takes care of $3^2\\cdot5^2$). $2^4$ remains, which means that 1 person is 16. Therefore, the mean of the ages is $\\frac{2\\cdot14+2\\cdot15+16}{5}=\\frac{74}{5}=\\boxed{14.8}$ years."
-}

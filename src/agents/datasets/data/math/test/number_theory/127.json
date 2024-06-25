@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $1 + 2 + 2^2 + 2^3 + \\dots + 2^{100}$ is divided by 7.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "To find the sum, we look at the first few powers of 2 modulo 7: \\begin{align*}\n2^0 &\\equiv 1, \\\\\n2^1 &\\equiv 2, \\\\\n2^2 &\\equiv 4, \\\\\n2^3 &\\equiv 8 \\equiv 1 \\pmod{7}\n\\end{align*}Since $2^3 \\equiv 1 \\pmod{7}$, the powers of 2 modulo 7 repeat in cycles of 3.  Therefore, \\begin{align*}\n&1 + 2 + 2^2 + 2^3 + \\dots + 2^{100} \\\\\n&\\quad\\equiv 1 + 2 + 4 + 1 + 2 + 4 + \\dots + 1 + 2 + 4 + 1 + 2 \\\\\n&\\quad\\equiv (1 + 2 + 4) + (1 + 2 + 4) + \\dots + (1 + 2 + 4) + 1 + 2 \\\\\n&\\quad\\equiv \\boxed{3} \\pmod{7}.\n\\end{align*}"
-}

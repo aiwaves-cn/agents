@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x) = -3x^2 + 36x - 7,$ defined for all real numbers, does not have an inverse.  However, when its domain is restricted to $x \\in [c,\\infty),$ the function does become invertible, for certain values of $c.$  What is the smallest such value of $c$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can complete the square, to get $f(x) = 101 - 3(x - 6)^2.$  Thus, the graph of $f(x)$ is a parabola with axis of symmetry $x = 6,$ so the smallest possible value of $c$ is $\\boxed{6}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many solutions does the equation \\[\\frac{(x-1)(x-2)(x-3)\\dotsm(x-100)}{(x-1^2)(x-2^2)(x-3^2)\\dotsm(x-100^2)} = 0\\]have for $x$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Any solution to this equation must make the numerator of the left-hand side zero, while keeping the denominator non-zero. The numerator is zero when $x$ is one of the numbers $1, 2, 3, \\dots, 100.$ However, for any value in this list that is a perfect square, the denominator will also be zero, so that value of $x$ will not be a root. Therefore, we want to find the number of integers in the list $1, 2, \\dots, 100$ which are not perfect squares. The perfect squares in the list are $1^2, 2^2, \\dots, 10^2,$ so there are $10$ perfect squares, and \\[100 - 10 = \\boxed{90}\\]integers which are not perfect squares."
-}

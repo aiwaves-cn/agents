@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of three consecutive even integers is $66$. What is the smallest of the three integers?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "If the arithmetic sequence of three consecutive even integers is $a, a+2, a+4$, we find the sum of the terms by multiplying the average of the first and last term $\\frac{a+(a+4)}{2}$ by the number of terms, $3$.  This gives us the equation \\[\\frac{2a+4}{2}\\cdot3 = 66.\\] Solving for $a$, we find $a = \\boxed{20}$."
-}

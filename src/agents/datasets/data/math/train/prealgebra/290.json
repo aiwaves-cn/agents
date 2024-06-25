@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area, in square units, of triangle $ABC$ in the figure shown if points $A$, $B$, $C$ and $D$ are coplanar, angle $D$ is a right angle, $AC = 13$, $AB = 15$ and $DC = 5$? [asy]\npair A, B, C, D;\nA=(12,0);\nD=(0,0);\nC=(0,5);\nB=(0,9);\ndraw(A--B--C--A--D--C);\ndraw((0,.5)--(.5,.5)--(.5,0));\nlabel(\"$A$\", A, dir(-45));\nlabel(\"$B$\", B, dir(135));\nlabel(\"$C$\", C, dir(180));\nlabel(\"$D$\", D, dir(-135));\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Seeing that triangle $ACD$ is a 5-12-13 right triangle, $AD=12$. Then using Pythagorean Theorem, we can calculate $BD$ to be $BD=\\sqrt{15^2-12^2}=\\sqrt{3^2(5^2-4^2)}=3\\sqrt{25-16}=3\\sqrt{9}=3 \\cdot 3 = 9$. Thus, the area of triangle $ABD$ is $\\frac{1}{2} \\cdot 12 \\cdot 9=6 \\cdot 9=54 \\text{sq units}$ and the area of triangle $ACD$ is $\\frac{1}{2} \\cdot 12 \\cdot 5=6 \\cdot 5=30 \\text{sq units}$. The area of triangle $ABC$ is the difference between the two areas: $54 \\text{sq units} - 30 \\text{sq units} = \\boxed{24} \\text{sq units}$."
-}

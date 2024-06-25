@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha$ and $\\beta$ be the roots of $x^2 + px + 1 = 0,$ and let $\\gamma$ and $\\delta$ are the roots of $x^2 + qx + 1 = 0.$  Express\n\\[(\\alpha - \\gamma)(\\beta - \\gamma)(\\alpha + \\delta)(\\beta + \\delta)\\]in terms of $p$ and $q.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $\\alpha$ and $\\beta$ are the roots of $x^2 + px + 1 = 0,$\n\\[(x - \\alpha)(x - \\beta) = x^2 + px + 1.\\]Setting $x = \\gamma,$ we get\n\\[(\\gamma - \\alpha)(\\gamma - \\beta) = \\gamma^2 + p \\gamma + 1.\\]or $(\\alpha - \\gamma)(\\beta - \\gamma) = \\gamma^2 + p \\gamma + 1.$\n\nSetting $x = -\\delta,$ we get\n\\[(-\\delta - \\alpha)(-\\delta - \\beta) = \\delta^2 - p \\delta + 1,\\]or $(\\alpha + \\beta)(\\beta + \\delta) = \\delta^2 - p \\delta + 1.$\n\nSince $\\gamma$ and $\\delta$ are the roots of $x^2 + qx + 1 = 0,$ $\\gamma^2 + q \\gamma + 1 = 0$ and $\\delta^2 + q \\delta + 1 = 0.$  Then\n\\[\\gamma^2 + p \\gamma + 1 = (p - q) \\gamma\\]and\n\\[\\delta^2 - p \\delta + 1 = -(p + q) \\delta.\\]Finally, by Vieta's formulas, $\\gamma \\delta = 1,$ so\n\\[(p - q) \\gamma \\cdot (-(p + q)) \\delta = (q - p)(q + p) = \\boxed{q^2 - p^2}.\\]"
-}

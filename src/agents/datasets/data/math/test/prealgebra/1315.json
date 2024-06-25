@@ -1,6 +1,0 @@
-{
-    "problem": "The Newport Crab Company marks the location of its crab pots with colored balloons. They mark every fourth pot with a red balloon, every sixth pot with a blue balloon, and every tenth pot with a yellow balloon. After placing 600 crab pots in the bay, how many pots have three different colored balloons attached?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "A pot will have 3 different colored balloons on it if it is a multiple of 4, 6, and 10. Thus, we must first find the LCM of 4, 6, and 10. $4=2^2$, $6=2\\cdot3$, and $10=2\\cdot5$. For a number to be a multiple of all three of these numbers, it prime factorization must have a 2 raised to at least the second power, a 3 raised to at least the first power, and a 5 raised to at least the first power. Thus, the least common multiple is $2^2\\cdot3\\cdot5=60$. Thus, every 60th pot will have 3 different colored balloons on it. Because there are 600 total pots, the number of pots with 3 different colored balloons on it is $600 \\div 60=\\boxed{10}$."
-}

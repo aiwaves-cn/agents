@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest integer value of $x$ such that $\\frac{x^2 + 2x + 5}{x-3}$ is an integer?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let's write $x^2+2x+5$ in the form $(x-3)(x+a)+c$ for some integers $a$ and $c$.  Since $(x-3)(x+a)=x^2+(a-3)x-3a$, we set $a-3=2$ to find $a=5$. Expanding $(x-3)(x+5)$, we find $c=20$.  So \\[\n\\frac{x^2+2x+5}{x-3}=x+5+\\frac{20}{x-3}.\n\\] Since $x+5$ is always an integer, $\\frac{x^2+2x+5}{x-3}$ is an integer if and only if $\\frac{20}{x-3}$ is an integer.  The largest divisor of 20 is 20, so $\\boxed{23}$ is the largest value of $x$ for which $\\frac{x^2+2x+5}{x-3}$ is an integer."
-}

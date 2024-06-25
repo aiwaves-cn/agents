@@ -1,6 +1,0 @@
-{
-    "problem": "If $z^2 - 8z + 37 = 0$, how many possible values are there for $|z|$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We could use the quadratic formula, but there is a shortcut: note that if the quadratic is not a perfect square, the solutions will be of the form $p \\pm \\sqrt{q}$ or $p \\pm i \\sqrt{q}$. In the first case, if both solutions are real, there are 2 different values of $|z|$, whereas in the second case, there is only one value, since $|p + i\\sqrt{q}| = |p - i\\sqrt{q}| = \\sqrt{p^2 + q}$. So all we have to do is check the sign of the discriminant: $b^2 - 4ac = 64 - 4(37) < 0$. Since the discriminant is negative, there are two nonreal solutions, and thus only $\\boxed{1}$ possible value for the magnitude."
-}

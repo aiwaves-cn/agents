@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be real numbers such that\n\\[\\frac{a}{b} + \\frac{a}{b^2} + \\frac{a}{b^3} + \\dots = 4.\\]Find\n\\[\\frac{a}{a + b} + \\frac{a}{(a + b)^2} + \\frac{a}{(a + b)^3} + \\dotsb.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "From the formula for an infinite geometric series,\n\\[\\frac{a/b}{1 - 1/b} = 4.\\]Then $\\frac{a}{b - 1} = 4,$ so $a = 4(b - 1).$\n\nAgain from the formula,\n\\begin{align*}\n\\frac{a}{a + b} + \\frac{a}{(a + b)^2} + \\frac{a}{(a + b)^3} + \\dotsb &= \\frac{a/(a + b)}{1 - 1/(a + b)} \\\\\n&= \\frac{a}{a + b - 1} \\\\\n&= \\frac{4(b - 1)}{4(b - 1) + (b - 1)} \\\\\n&= \\frac{4(b - 1)}{5(b - 1)} = \\boxed{\\frac{4}{5}}.\n\\end{align*}"
-}

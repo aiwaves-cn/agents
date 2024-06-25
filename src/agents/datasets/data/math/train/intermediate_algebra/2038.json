@@ -1,6 +1,0 @@
-{
-    "problem": "Let $(x_1,y_1),$ $(x_2,y_2),$ $\\dots,$ $(x_n,y_n)$ be the solutions to\n\\begin{align*}\n|x - 3| &= |y - 9|, \\\\\n|x - 9| &= 2|y - 3|.\n\\end{align*}Find $x_1 + y_1 + x_2 + y_2 + \\dots + x_n + y_n.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From the given equations,\n\\begin{align*}\n(x - 3) &= \\pm (y - 9), \\\\\n(x - 9) &= \\pm 2 (y - 3).\n\\end{align*}Thus, we divide into cases.\n\nCase 1: $x - 3 = y - 9$ and $x - 9 = 2(y - 3).$\n\nSolving this system, we find $(x,y) = (-15,-9).$\n\nCase 2: $x - 3 = y - 9$ and $x - 9 = -2(y - 3).$\n\nSolving this system, we find $(x,y) = (1,7).$\n\nCase 3: $x - 3 = -(y - 9)$ and $x - 9 = 2(y - 3).$\n\nSolving this system, we find $(x,y) = (9,3).$\n\nCase 4: $x - 3 = -(y - 9)$ and $x - 9 = -2(y - 3).$\n\nSolving this system, we find $(x,y) = (9,3).$\n\nHence, the solutions $(x,y)$ are $(-15,-9),$ $(1,7),$ and $(9,3).$  The final answer is $(-15) + (-9) + 1 + 7 + 9 + 3 = \\boxed{-4}.$"
-}

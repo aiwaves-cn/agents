@@ -1,6 +1,0 @@
-{
-    "problem": "Find the solutions to $z^4 = -4.$  Enter the solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real.  Then\n\\[(x + yi)^4 = x^4 + 4ix^3 y - 6x^2 y^2 - 4ixy^3 + y^4 = -4.\\]Equating real and imaginary parts, we get\n\\begin{align*}\nx^4 - 6x^2 y^2 + y^4 &= -4, \\\\\n4x^3 y - 4xy^3 &= 0.\n\\end{align*}From the equation $4x^3 y - 4xy^3 = 0,$ $4xy(x^2 - y^2) = 0.$  If $x = 0,$ then $y^4 = -4,$ which has no solutions.  If $y = 0,$ then $x^4 = -4,$ which has no solutions.  Otherwise, $x^2 = y^2.$\n\nThen the first equation becomes $-4x^4 = -4,$ so $x^4 = 1.$  Hence, $x = 1$ or $x = -1.$  In either case, $x^2 = 1,$ so $y^2 = 1,$ and $y = \\pm 1.$  Therefore, the solutions are $\\boxed{1 + i, 1 - i, -1 + i, -1 - i}.$"
-}

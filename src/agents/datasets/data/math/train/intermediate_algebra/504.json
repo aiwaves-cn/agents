@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that\n\\[f(x) f(y) - f(xy) = x + y\\]for all real numbers $x$ and $y.$\n\nLet $n$ be the number of possible values of $f(2),$ and let $s$ be the sum of all possible values of $f(2).$  Find $n \\times s.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = y = 1,$ we get\n\\[f(1)^2 - f(1) = 2,\\]so $f(1)^2 - f(1) - 2 = 0.$  This factors as $(f(1) + 1)(f(1) - 2) = 0,$ so $f(1) = -1$ or $f(1) = 2.$\n\nSetting $y = 1,$ we get\n\\[f(x) f(1) - f(x) = x + 1\\]for all $x.$  Then $f(x) (f(1) - 1) = x + 1.$  Since $f(1) \\neq 1,$ we can write\n\\[f(x) = \\frac{x + 1}{f(1) - 1}.\\]If $f(1) = -1,$ then\n\\[f(x) = \\frac{x + 1}{-2},\\]and we can check that this function does not work.\n\nIf $f(1) = 2,$ then\n\\[f(x) = x + 1\\]and we can check that this function works.\n\nTherefore, $n = 1$ and $s = 3,$ so $n \\times s = \\boxed{3}.$"
-}

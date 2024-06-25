@@ -1,6 +1,0 @@
-{
-    "problem": "If I roll a fair, regular six-sided die four times, what is the probability that I will roll the number $1$ exactly three times?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Each roll is independent of every other roll, so the probability of getting a $1$ on any given roll is $\\frac{1}{6}$, and the probability of not getting a $1$ on any given roll is $\\frac{5}{6}$. Since we are looking for a $1$ rolled three times and a number not $1$ rolled once, we have $\\left(\\frac{1}{6}\\right)^3 \\cdot \\frac{5}{6}$. Now, we have to consider the order of the rolls. The number that is not a $1$ could be rolled on the first, second, third, or fourth roll, so we multiply by four. Hence, the probability of rolling $1$ exactly three times is $4 \\cdot \\left(\\frac{1}{6}\\right)^3 \\cdot \\frac{5}{6} = \\boxed{\\frac{5}{324}}$."
-}

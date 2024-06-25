@@ -1,6 +1,0 @@
-{
-    "problem": "What is the base six equivalent of $999_{10}$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We know that $6^{4}>999_{10}>6^{3}$. So, we can tell that $999_{10}$ in base six will have four digits. $6^{3}=216$, which can go into 999 four times at most, leaving $999-4\\cdot216 = 135$ for the next three digits. $6^{2}=36$ goes into 135 three times at most, leaving us with $135-3\\cdot36 = 27$. Then, $6^{1}=6$ goes into 27 four times at most, leaving $27-4\\cdot6 = 3$ for the ones digit. All together, the base six equivalent of $999_{10}$ is $\\boxed{4343_6}$."
-}

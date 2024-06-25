@@ -1,6 +1,0 @@
-{
-    "problem": "Robert has 4 indistinguishable gold coins and 4 indistinguishable silver coins. Each coin has an engraving of one face on one side, but not on the other. He wants to stack the eight coins on a table into a single stack so that no two adjacent coins are face to face. Find the number of possible distinguishable arrangements of the 8 coins.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are two separate parts to this problem: one is the color (gold vs silver), and the other is the orientation.\nThere are ${8\\choose4} = 70$ ways to position the gold coins in the stack of 8 coins, which determines the positions of the silver coins.\nCreate a string of letters H and T to denote the orientation of the top of the coin. To avoid making two faces touch, we cannot have the arrangement HT. Thus, all possible configurations must be a string of tails followed by a string of heads, since after the first H no more tails can appear. The first H can occur in a maximum of eight times different positions, and then there is also the possibility that it doesn’t occur at all, for $9$ total configurations. Thus, the answer is $70 \\cdot 9 = \\boxed{630}$."
-}

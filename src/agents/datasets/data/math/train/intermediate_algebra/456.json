@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be positive real numbers such that each of the equations $x^2 + ax + 2b = 0$ and $x^2 + 2bx + a = 0$ has real roots.  Find the smallest possible value of $a + b.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since both quadratics have real roots, we must have $a^2 \\ge 8b$ and $4b^2 \\ge 4a,$ or $b^2 \\ge a.$  Then\n\\[b^4 \\ge a^2 \\ge 8b.\\]Since $b > 0,$ it follows that $b^3 \\ge 8,$ so $b \\ge 2.$  Then $a^2 \\ge 16,$ so $a \\ge 4.$\n\nIf $a = 4$ and $b = 2,$ then both discriminants are nonnegative, so the smallest possible value of $a + b$ is $\\boxed{6}.$"
-}

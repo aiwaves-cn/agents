@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\sin 6^\\circ \\sin 42^\\circ \\sin 66^\\circ \\sin 78^\\circ.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Since $\\sin 66^\\circ = \\cos 24^\\circ$ and $\\sin 78^\\circ = \\cos 12^\\circ,$ the product is equal to\n\\[\\sin 6^\\circ \\cos 12^\\circ \\cos 24^\\circ \\sin 42^\\circ.\\]Then\n\\[\\sin 6^\\circ \\cos 12^\\circ \\cos 24^\\circ \\sin 42^\\circ = \\frac{\\cos 6^\\circ \\sin 6^\\circ \\cos 12^\\circ \\cos 24^\\circ \\sin 42^\\circ}{\\cos 6^\\circ}.\\]By the double-angle formula, $2 \\cos 6^\\circ \\sin 6^\\circ = \\sin 12^\\circ,$ so\n\\[\\frac{\\cos 6^\\circ \\sin 6^\\circ \\cos 12^\\circ \\cos 24^\\circ \\sin 42^\\circ}{\\cos 6^\\circ} = \\frac{\\sin 12^\\circ \\cos 12^\\circ \\cos 24^\\circ \\sin 42^\\circ}{2 \\cos 6^\\circ}.\\]From the same formula,\n\\begin{align*}\n\\frac{\\sin 12^\\circ \\cos 12^\\circ \\cos 24^\\circ \\sin 42^\\circ}{2 \\cos 6^\\circ} &= \\frac{\\sin 24^\\circ \\cos 24^\\circ \\sin 42^\\circ}{4 \\cos 6^\\circ} \\\\\n&= \\frac{\\sin 48^\\circ \\sin 42^\\circ}{8 \\cos 6^\\circ}.\n\\end{align*}Then\n\\[\\frac{\\sin 48^\\circ \\sin 42^\\circ}{8 \\cos 6^\\circ} = \\frac{\\cos 42^\\circ \\sin 42^\\circ}{8 \\cos 6^\\circ} = \\frac{\\sin 84^\\circ}{16 \\cos 6^\\circ} = \\frac{\\cos 6^\\circ}{16 \\cos 6^\\circ} = \\boxed{\\frac{1}{16}}.\\]"
-}

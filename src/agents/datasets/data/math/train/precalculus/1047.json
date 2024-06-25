@@ -1,6 +1,0 @@
-{
-    "problem": "Find the angle between the vectors $\\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix},$ in degrees.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "If $\\theta$ is the angle between the vectors, then\n\\[\\cos \\theta = \\frac{\\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix} \\cdot \\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix} \\right\\|} = \\frac{(2)(-1) + (-1)(1) + (1)(0)}{\\sqrt{6} \\cdot \\sqrt{2}} = \\frac{-3}{2 \\sqrt{3}} = -\\frac{\\sqrt{3}}{2}.\\]Hence, $\\theta = \\boxed{150^\\circ}.$"
-}

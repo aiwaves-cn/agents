@@ -1,6 +1,0 @@
-{
-    "problem": "The curve $y = \\sin x$ cuts the line whose equation is $y = \\sin 70^\\circ$ into segments having the successive ratios\n\\[\\dots p : q : p : q \\dots\\]with $p < q.$  Compute the ordered pair of relatively prime positive integers $(p,q).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The graph of $y = \\sin x$ intersects the line $y = \\sin 70^\\circ$ at points of the form $(70^\\circ + 360^\\circ n, \\sin 70^\\circ)$ and $(110^\\circ + 360^\\circ n, \\sin 70^\\circ),$ where $n$ is an integer.\n\n[asy]\nunitsize(1.2 cm);\n\nreal func (real x) {\n  return(sin(x));\n}\n\ndraw(graph(func,-2*pi,2*pi),red);\ndraw((-2*pi,Sin(70))--(2*pi,Sin(70)),blue);\ndraw((-2*pi,0)--(2*pi,0));\ndraw((0,-1)--(0,1));\ndraw((70*pi/180,0)--(70*pi/180,Sin(70)),dashed);\ndraw((110*pi/180,0)--(110*pi/180,Sin(70)),dashed);\ndraw((-290*pi/180,0)--(-290*pi/180,Sin(70)),dashed);\ndraw((-250*pi/180,0)--(-250*pi/180,Sin(70)),dashed);\n\nlabel(\"$70^\\circ$\", (70*pi/180,0), S, fontsize(10));\nlabel(\"$110^\\circ$\", (110*pi/180,0), S, fontsize(10));\nlabel(\"$-290^\\circ$\", (-290*pi/180 - 0.1,0), S, fontsize(10));\nlabel(\"$-250^\\circ$\", (-250*pi/180 + 0.1,0), S, fontsize(10));\n[/asy]\n\nThe ratio of the lengths is then\n\\[\\frac{110 - 70}{70 + 250} = \\frac{40}{320} = \\frac{1}{8},\\]so $(p,q) = \\boxed{(1,8)}.$"
-}

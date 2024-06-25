@@ -1,6 +1,0 @@
-{
-    "problem": "A right triangle has a side length of 21 inches and a hypotenuse of 29 inches. A second triangle is similar to the first and has a hypotenuse of 87 inches. What is the length of the shortest side of the second triangle?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Using the Pythagorean Theorem, we calculate that the other leg of the original right triangle must be $$\\sqrt{29^2 - 21^2} = \\sqrt{841 - 441} = \\sqrt{400} = 20$$ inches. Since 87 is 3 times 29, the length of the shortest side of the second triangle must be $3 \\times 20 = \\boxed{60\\text{ inches}}$."
-}

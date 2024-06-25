@@ -1,6 +1,0 @@
-{
-    "problem": "Square $BCFE$ is inscribed in right triangle $AGD$, as shown below. If $AB = 28$ units and $CD = 58$ units, what is the area of square $BCFE$?\n\n[asy]\ndraw((9,15.6)--(10.7,14.6)--(11.7,16.3));\ndraw((0,0)--(10,17.3)--(40,0)--cycle);\ndraw((7,0)--(19,0)--(19,12.1)--(7,12.1)--cycle);\nlabel(\"$A$\",(0,0),SW);\nlabel(\"$B$\",(7,0),S);\nlabel(\"$C$\",(19,0),S);\nlabel(\"$D$\",(40,0),SE);\nlabel(\"$E$\",(7,12.1),NW);\nlabel(\"$F$\",(19,12.1),NE);\nlabel(\"$G$\",(10,17.3),N);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "$\\angle CDF = \\angle AEB$ and $\\angle BAE = \\angle CFD$, so we know that $\\bigtriangleup AEB \\sim \\bigtriangleup FDC$.  Thus, denoting the side length of $BEFC$ as $x$, we can create the ratios: $\\frac{28}{x} = \\frac{x}{58} \\Rightarrow x^2 = 1624$, and since $x^2$ is the area of square $BCFE$, $\\boxed{1624}$ is the answer."
-}

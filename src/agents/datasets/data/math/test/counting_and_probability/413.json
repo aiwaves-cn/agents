@@ -1,6 +1,0 @@
-{
-    "problem": "We roll a fair 6-sided die 5 times.  What is the probability that exactly 3 of the 5 rolls are either a 1 or a 2?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The number of possible rolls of 5 dice is $6^5$, since there are 6 possibilities for each of the 5 dice.  Now we count the number of ways to get a 1 or a 2 in exactly 3 of the 5 rolls. First, we pick which 3 of the 5 rolls are 1 or 2: we can do that in $\\binom{5}{3}$ ways.  Now for each of these 3 rolls, there are 2 choices, and for each of the other 2 rolls, there are 4 choices.  Thus the probability is \\[\\frac{\\binom{5}{3}2^34^2}{6^5}=\\boxed{\\frac{40}{243}}.\\]"
-}

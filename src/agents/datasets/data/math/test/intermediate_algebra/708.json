@@ -1,6 +1,0 @@
-{
-    "problem": "The number $$\\sqrt{104\\sqrt6+468\\sqrt{10}+144\\sqrt{15}+2006}$$can be written as $a\\sqrt2+b\\sqrt3+c\\sqrt5$, where $a$, $b$, and $c$ are positive integers.  Find $a\\cdot b\\cdot c.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We have \\[\\left(a\\sqrt{2}+b\\sqrt{3}+c\\sqrt{5}\\right)^2 = 104\\sqrt{6}+468\\sqrt{10}+144\\sqrt{15}+2006,\\]or \\[2ab\\sqrt{6}+2ac\\sqrt{10}+2bc\\sqrt{15}+(2a^2+3b^2+5c^2)=104\\sqrt{6}+468\\sqrt{10}+144\\sqrt{15}+2006.\\]Since $a,b,c$ are integers, we get the four equations \\[\\begin{aligned} 2ab &= 104, \\\\ 2ac &= 468, \\\\ 2bc &= 144, \\\\ 2a^2+3b^2+5c^2 &= 2006. \\end{aligned}\\]Thus, $ab=52$, $ac=234$, and $bc=72$. To find $abc$, we multiply these three equations together, getting \\[(abc)^2 = 52 \\cdot 234 \\cdot 72 = (2^2 \\cdot 13) \\cdot (2 \\cdot 3^2 \\cdot 13) \\cdot (2^3 \\cdot 3^2) = 2^6 \\cdot 3^4 \\cdot 13^2.\\]Then, $abc = 2^3 \\cdot 3^2 \\cdot 13 = \\boxed{936}$.\n\nWe can solve the equations $ab = 52,$ $ac = 234,$ and $bc = 72$ to get $a = 13,$ $b = 4,$ and $c = 18,$ which do satisfy $2a^2 + 3b^2 + 5c^2 = 2006.$  Thus, such positive integers $a,$ $b,$ $c$ do exist."
-}

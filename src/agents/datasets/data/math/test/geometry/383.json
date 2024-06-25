@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $M$ and $N$ are the midpoints of $BC$ and $AC$, respectively.  The perpendicular bisectors of $BC$ and $AC$ intersect at a point $O$ inside the triangle.  If $\\angle C = 47^\\circ$, then find the measure of $\\angle MON$, in degrees.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The angles in quadrilateral $MONC$ add up to $360^\\circ$.  Two of these angles, namely $\\angle OMC$ and $\\angle ONC$, are right.  Therefore, $\\angle MON + \\angle MCN = 180^\\circ$, which means $\\angle MON = 180^\\circ - \\angle MCN = 180^\\circ - 47^\\circ = \\boxed{133^\\circ}$.\n\n[asy]\nunitsize(3 cm);\n\npair A, B, C, M, N, O;\n\nO = (0,0);\nA = dir(140);\nB = dir(200);\nC = dir(-20);\nM = (B + C)/2;\nN = (A + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(M--O--N);\n\nlabel(\"$A$\", A, dir(90));\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, S);\nlabel(\"$N$\", N, NE);\nlabel(\"$O$\", O, NW);\n[/asy]"
-}

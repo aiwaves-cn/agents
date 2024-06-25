@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $PRT$ and $QRS$ are straight lines. What is the value of $x$? [asy]\nimport olympiad;\nimport math;\n\nsize(6cm); // ADJUST\n\npair r = (0, 0);\npair t = dir(-55);\npair s = dir(-55 - 70);\npair p = dir(-55 + 180);\nreal qr = Sin(70) / Sin(40);\n\npair q = qr * dir(-55 - 70 + 180);\n\ndraw(r--p--q--s--t--r);\n\nlabel(\"$R$\", r, 2 * E);\nlabel(\"$T$\", t, SE);\nlabel(\"$S$\", s, SW);\nlabel(\"$P$\", p, W);\nlabel(\"$Q$\", q, E);\n\nlabel(\"$x^\\circ$\", t, W + NW + NW);\nlabel(\"$40^\\circ$\", q, 4 * SW);\n\nadd(pathticks(p--q, spacing=1, s=4));\nadd(pathticks(q--r, spacing=1, s=4));\nadd(pathticks(r--s, 2, spacing=1, s=4));\nadd(pathticks(r--t, 2, spacing=1, s=4));\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $PQ=QR$, we have $\\angle QPR=\\angle QRP$.\n\nSince $\\angle PQR + \\angle QPR + \\angle QRP = 180^\\circ$, we have $40^\\circ + 2(\\angle QRP) = 180^\\circ$, so $2(\\angle QRP) = 140^\\circ$ or $\\angle QRP = 70^\\circ$.\n\nSince $\\angle PRQ$ and $\\angle SRT$ are vertical angles, we have $\\angle SRT = \\angle PRQ = 70^\\circ$.\n\nSince $RS=RT$, we have $\\angle RST = \\angle RTS = x^\\circ$.\n\nFrom $\\triangle RST$, we have  $\\angle SRT + \\angle RST + \\angle RTS = 180^\\circ$, so $70^\\circ + 2x^\\circ = 180^\\circ$ or $2x = 110$ or $x=\\boxed{55}$."
-}

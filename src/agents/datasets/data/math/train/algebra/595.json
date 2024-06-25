@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ and $b$ are integers with $a > b$, what is the smallest possible positive value of $\\frac{a+b}{a-b} + \\frac{a-b}{a+b}$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $x = \\frac{a+b}{a-b}$. Then, $\\frac{a-b}{a+b} = \\frac 1x$, so the given expression is equal to $x + \\frac 1x = \\frac{x^2 + 1}{x}$. Suppose that the equation $\\frac{x^2 + 1}{x} = k$ has no solution for some value of $k$. Re-arranging, $x^2 - kx + 1 = 0$. This is a quadratic equation with discriminant $k^2 - 4$; since the quadratic equation has no solution, it follows that $k^2 - 4 = (k-2)(k+2) < 0$. It follows that for $k < 2$, the given equation has no solution in $x$.\n\nThus, the smallest possible value of the given expression is $\\frac{x^2+1}{x} = \\boxed{2}$. Indeed, this is achievable if we take $a = 1, b = 0$."
-}

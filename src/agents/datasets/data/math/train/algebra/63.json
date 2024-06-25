@@ -1,6 +1,0 @@
-{
-    "problem": "A ball travels on a parabolic path in which the height (in feet) is given by the expression $-16t^2+32t+15$, where $t$ is the time after launch. What is the maximum height of the ball, in feet?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "To find the maximum height of the ball is to maximize the expression $-16t^2+32t+15$. We will do this by completing the square. Factoring a $-16$ from the first two terms, we have  \\[-16t^2+32t+15=-16(t^2-2t)+15\\]To complete the square, we add and subtract $(-2/2)^2=1$ inside the parenthesis to get \\begin{align*}\n-16(t^2-2t)+15&=-16(t^2-2t+1-1)+15\\\\\n&=-16([t-1]^2-1)+15\\\\\n&=-16(t-1)^2+31\n\\end{align*}Since $-16(t-1)^2$ is always non-positive, the maximum value of the expression is achieved when $-16(t-1)^2=0$, so the maximum value is $0+31=\\boxed{31}$ feet."
-}

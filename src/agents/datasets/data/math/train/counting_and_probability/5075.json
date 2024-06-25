@@ -1,6 +1,0 @@
-{
-    "problem": "Consider sequences that consist entirely of $A$'s and $B$'s and that have the property that every run of consecutive $A$'s has even length, and every run of consecutive $B$'s has odd length. Examples of such sequences are $AA$, $B$, and $AABAA$, while $BBAB$ is not such a sequence. How many such sequences have length 14?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let $a_n$ and $b_n$ denote, respectively, the number of sequences of length $n$ ending in $A$ and $B$. If a sequence ends in an $A$, then it must have been formed by appending two $A$s to the end of a string of length $n-2$. If a sequence ends in a $B,$ it must have either been formed by appending one $B$ to a string of length $n-1$ ending in an $A$, or by appending two $B$s to a string of length $n-2$ ending in a $B$. Thus, we have the recursions\\begin{align*} a_n &= a_{n-2} + b_{n-2}\\\\ b_n &= a_{n-1} + b_{n-2}  \\end{align*}By counting, we find that $a_1 = 0, b_1 = 1, a_2 = 1, b_2 = 0$.\\[\\begin{array}{|r||r|r|||r||r|r|} \\hline n & a_n & b_n & n & a_n & b_n\\\\ \\hline 1&0&1& 8&6&10\\\\ 2&1&0& 9&11&11\\\\ 3&1&2& 10&16&21\\\\ 4&1&1& 11&22&27\\\\ 5&3&3& 12&37&43\\\\ 6&2&4& 13&49&64\\\\ 7&6&5& 14&80&92\\\\ \\hline \\end{array}\\]Therefore, the number of such strings of length $14$ is $a_{14} + b_{14} = \\boxed{172}$."
-}

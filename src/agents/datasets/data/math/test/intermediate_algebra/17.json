@@ -1,6 +1,0 @@
-{
-    "problem": "Let $0 \\le x,$ $y,$ $z \\le 1.$  Find the maximum value of\n\\[f(x,y,z) = x^2 y + y^2 z + z^2 x - xy^2 - yz^2 - zx^2.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor as follows:\n\\begin{align*}\nf(x,y,z) &= x^2 y + y^2 z + z^2 x - xy^2 - yz^2 - zx^2 \\\\\n&= x^2 y - xy^2 + y^2 z - zx^2 + z^2 x - yz^2 \\\\\n&= xy(x - y) + z (y^2 - x^2) + z^2 (x - y) \\\\\n&= xy(x - y) - z(x - y)(x + y) + z^2 (x - y) \\\\\n&= (x - y)(xy - xz - yz + z^2) \\\\\n&= (x - y)(x - z)(y - z).\n\\end{align*}The expression has cyclic symmetry (meaning that if we replace $(x,y,z)$ with $(y,z,x)$, then it remains the same), so we can assume that $x \\ge y$ and $x \\ge z.$  Thus, $x - y \\ge $ and $x - z \\ge 0.$\n\nIf $y < z,$ then $f(x,y,z) \\le 0,$ so assume that $y \\ge z.$  Then by AM-GM,\n\\[(x - y)(y - z) \\le \\left( \\frac{(x - y) + (y - z)}{2} \\right)^2 = \\frac{(x - z)^2}{4},\\]so\n\\[(x - y)(x - z)(y - z) \\le \\frac{(x - z)^3}{4} \\le \\frac{1}{4}.\\]Equality occurs when $x = 1,$ $y = \\frac{1}{2},$ and $z = 0,$ so the maximum value is $\\boxed{\\frac{1}{4}}.$"
-}

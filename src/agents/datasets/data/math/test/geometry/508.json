@@ -1,6 +1,0 @@
-{
-    "problem": "What is the radius of the circle inscribed in triangle $ABC$ if $AB = 12, AC=14, BC=16$? Express your answer in simplest radical form.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $r$ be the radius of the inscribed circle. Let $s$ be the semiperimeter of the triangle, that is, $s=\\frac{AB+AC+BC}{2}=21$. Let $K$ denote the area of $\\triangle ABC$.\n\nHeron's formula tells us that \\begin{align*}\nK &= \\sqrt{s(s-AB)(s-AC)(s-BC)} \\\\\n&= \\sqrt{21\\cdot 9\\cdot 7\\cdot 5} \\\\\n&= \\sqrt{3^3\\cdot 5\\cdot 7^2} \\\\\n&= 21\\sqrt{15}.\n\\end{align*}The area of a triangle is equal to its semiperimeter multiplied by the radius of its inscribed circle ($K=rs$), so we have $$21\\sqrt{15} = r\\cdot 21,$$which yields the radius $r=\\boxed{\\sqrt{15}}$."
-}

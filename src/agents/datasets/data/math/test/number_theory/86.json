@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest integer $n$, greater than $1$, such that $n^{-1}\\pmod{130}$ and $n^{-1}\\pmod{231}$ are both defined?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "For $n$ to have an inverse $\\pmod{130}$, it is necessary for $n$ to be relatively prime to 130. Conversely, if $n$ is relatively prime to 130, then $n$ has an inverse $\\pmod{130}$.  The same holds for 231.  Therefore we are looking for the smallest positive $n$ that is relatively prime to 130 and 231.\n\nWe can factor $130=2\\cdot5\\cdot13$ and $231=3\\cdot7\\cdot11$.  These are all of the primes up to 13, so none of the integers $2-16$ is relatively prime to both 130 and 231.  However, 17 is relatively prime to both of these numbers.   So the smallest positive integer greater than 1 that has a multiplicative inverse modulo 130 and 231 is $\\boxed{17}$."
-}

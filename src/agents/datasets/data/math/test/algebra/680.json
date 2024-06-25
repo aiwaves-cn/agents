@@ -1,6 +1,0 @@
-{
-    "problem": "Solve the following system of equations for $c$:\n\\begin{align*}\na - b &= 2 (c+d)\\\\\nb &= a-2 \\\\\nd &= c+5\n\\end{align*}",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Substituting for $b$ and $d$ in the first equation gives $a - (a - 2) = 2(c+c+5)$. This simplifies to $2 = 4c + 10$, so $c = \\boxed{-2}$."
-}

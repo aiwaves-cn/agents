@@ -1,6 +1,0 @@
-{
-    "problem": "The $n^{\\text{th}}$ term of a certain geometric series is given by $a\\cdot r^{n-1}$, where $a$ and $r$ are positive integers and $r$ is greater than 1. Bill picks out $k$ different numbers in this sequence, all of which have the same number of digits. What is the largest possible value of $k$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Suppose the smallest of Bill's numbers is $b$. The next few terms of the sequence are $br$, $br^2$, $br^3$, $br^4$, and so on. Since $r$ is at least 2, $br^4$ is at least $16b$. Since $16b > 10b$, and $10b$ has one more digit than $b$, $16b$ has more digits than $b$, and therefore $br^4$ has more digits than $b$. Since the series increases, $br^5$, $br^6$, and so on all have more digits than $b$. Therefore, Bill's numbers are restricted to $b$, $br$, $br^2$, and $br^3$; that is, he can have at most 4 numbers. An example of this is the sequence $1,\\,2,\\,4,\\,8,\\,16,\\ldots$, where Bill's numbers are 1, 2, 4, and 8. Hence, the largest possible value of $k$ is $\\boxed{4}$."
-}

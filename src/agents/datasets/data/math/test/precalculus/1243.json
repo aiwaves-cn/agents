@@ -1,6 +1,0 @@
-{
-    "problem": "Vectors $\\mathbf{a}$ and $\\mathbf{b}$ satisfy $\\|\\mathbf{a}\\| = 5$ and $\\|\\mathbf{b}\\| = 4.$  Also, the angle between vectors $\\mathbf{a}$ and $\\mathbf{b}$ is $60^\\circ.$  Find $\\|\\mathbf{a} - \\mathbf{b}\\|.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that\n\\[\\mathbf{a} \\cdot \\mathbf{b} = \\|\\mathbf{a}\\| \\|\\mathbf{b}\\| \\cos 60^\\circ = 5 \\cdot 4 \\cdot \\frac{1}{2} = 10.\\]Then\n\\begin{align*}\n\\|\\mathbf{a} - \\mathbf{b}\\|^2 &= (\\mathbf{a} - \\mathbf{b}) \\cdot (\\mathbf{a} - \\mathbf{b}) \\\\\n&= \\mathbf{a} \\cdot \\mathbf{a} - 2 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b} \\\\\n&= \\|\\mathbf{a}\\|^2 - 2 \\mathbf{a} \\cdot \\mathbf{b} + \\|\\mathbf{b}\\|^2 \\\\\n&= 5^2 - 2 \\cdot 10 + 4^2 \\\\\n&= 21.\n\\end{align*}Therefore, $\\|\\mathbf{a} - \\mathbf{b}\\| = \\boxed{\\sqrt{21}}.$"
-}

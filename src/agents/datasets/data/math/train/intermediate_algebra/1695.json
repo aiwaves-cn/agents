@@ -1,6 +1,0 @@
-{
-    "problem": "Find all values of $x$ which satisfy\n\\[\\frac{6}{\\sqrt{x - 8} - 9} + \\frac{1}{\\sqrt{x - 8} - 4} + \\frac{7}{\\sqrt{x - 8} + 4} + \\frac{12}{\\sqrt{x - 8} + 9} = 0.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = \\sqrt{x - 8},$ so\n\\[\\frac{6}{y - 9} + \\frac{1}{y - 4} + \\frac{7}{y + 4} + \\frac{12}{y + 9} = 0.\\]Note that\n\\[\\frac{6}{y - 9} + \\frac{12}{y + 9} = \\frac{6(y + 9) + 12(y - 9)}{y^2 - 81} = \\frac{18y - 54}{y^2 - 81} = \\frac{18(y - 3)}{y^2 - 81},\\]and\n\\[\\frac{1}{y - 4} + \\frac{7}{y + 4} = \\frac{y + 4 + 7(y - 4)}{y^2 - 16} = \\frac{8y - 24}{y^2 - 16} = \\frac{8(y - 3)}{y^2 - 16},\\]so\n\\[\\frac{18(y - 3)}{y^2 - 81} + \\frac{8(y - 3)}{y^2 - 16} = 0.\\]If $y = 3,$ then $x = 3^2 + 8 = 17.$  Otherwise, we can divide both sides by $2(y - 3),$ to get\n\\[\\frac{9}{y^2 - 81} + \\frac{4}{y^2 - 16} = 0.\\]Multiplying both sides by $(y^2 - 16)(y^2 - 81),$ we get\n\\[9(y^2 - 16) + 4(y^2 - 81) = 0.\\]Then $13y^2 = 468,$ so $y^2 = 36.$  Since $y = \\sqrt{x - 8}$ must be nonnegative, $y = 6.$  Then $x = 6^2 + 8 = 44.$\n\nTherefore, the solutions are $\\boxed{17,44}.$"
-}

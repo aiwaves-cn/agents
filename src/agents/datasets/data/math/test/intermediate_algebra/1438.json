@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a_n = 4n^3 + 6n^2 + 4n + 1.$  Find\n\\[a_8 + a_9 + a_{10} + \\dots + a_{23}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We see that $a_n = 4n^3 + 6n^2 + 4n + 1 = (n^4 + 4n^3 + 6n^2 + 4n + 1) - n^4 = (n + 1)^4 - n^4,$ so\n\\[a_8 + a_9 + a_{10} + \\dots + a_{23} = (9^4 - 8^4) + (10^4 - 9^4) + (11^4 - 10^4) + \\dots + (24^4 - 23^4) = 24^4 - 8^4 = \\boxed{327680}.\\]"
-}

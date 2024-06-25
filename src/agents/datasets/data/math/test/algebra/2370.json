@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all integer values of $x$ such that $\\frac{3}{x}$ is greater than $\\frac{1}{3}$ and less than $\\frac{3}{4}$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We are asked to sum the integer solutions of the inequality  \\[\n\\frac{1}{3}<\\frac{3}{x}<\\frac{3}{4}.\n\\] If both sides of an inequality represent positive numbers, then we may take the reciprocal of both sides of the inequality and reverse the inequality sign. We can do that in this case, because all solutions of the original inequalities are clearly positive. Reciprocating all three quantities in this compound inequality, we get \\[\n3>\\frac{x}{3}>\\frac{4}{3}.\n\\] Now multiply both sides by $3$ to find that $4<x<9$.  The sum of the integer values of $x$ which satisfy this inequality is $5+6+7+8=\\boxed{26}$."
-}

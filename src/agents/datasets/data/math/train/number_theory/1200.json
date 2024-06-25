@@ -1,6 +1,0 @@
-{
-    "problem": "The prime factorization of 2160 is $2^4 \\times 3^3 \\times 5$. How many of its positive integer factors are perfect squares?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The prime factorization of a positive integer factor of 2160 is of the form $2^a\\cdot3^b\\cdot 5^c$ where $0\\leq a\\leq 4$, $0\\leq b\\leq 3$, and $0\\leq c\\leq 1$.  A positive integer is a perfect square if and only if all the exponents in its prime factorization are even.  Therefore, we are free to choose $a$ from the set $\\{0,2,4\\}$ and $b$ from the set $\\{0,2\\}$.  In total, we have $3\\times 2=\\boxed{6}$ choices for the exponents in the prime factorization of a perfect square factor of 2160."
-}

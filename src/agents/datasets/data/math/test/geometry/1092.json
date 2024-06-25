@@ -1,6 +1,0 @@
-{
-    "problem": "A greeting card is 6 inches wide and 8 inches tall. Point A is 3 inches from the fold, as shown. As the card is opened to an angle of 45 degrees, through how many more inches than point A does point B travel? Express your answer as a common fraction in terms of $\\pi$. [asy]\nimport olympiad; import geometry; size(150); defaultpen(linewidth(0.8));\ndraw((0,0)--(6,0)--(6,8)--(0,8)--cycle);\nfilldraw((0,0)--(5,-1)--(5,7)--(0,8)--cycle,fillpen=white);\n\npair A = 0.5*((0,8)+(5,7));\nlabel(\"$A$\",A,SW);\ndot((5,7));\ndot(A); label(\"$B$\",(5,7),SW);\nlabel(\"$8''$\",(0,0)--(0,8),W);label(\"$6''$\",(0,0)--(5,-1),S);\npoint C = (2.5,3.5);\nlabel(rotate(-aTan(1/5))*scale(0.8)*\"Happy Birthday!\",C);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Point A is traveling along the circumference of a circle with a diameter of 6 inches. This circumference is $6\\pi$ inches.  Point B is traveling along the circumference of a circle with a diameter of 12 inches. This circumference is $12\\pi$ inches. Both points travel 45 degrees, which is $45 \\div 360 = 1/8$ of the circles' circumferences. The difference is then $(1/8)(12\\pi) - (1/8)(6\\pi) = (1/8)(12\\pi - 6\\pi) = (1/8)(6\\pi) = \\boxed{\\frac{3}{4}\\pi\\text{ inches}}$."
-}

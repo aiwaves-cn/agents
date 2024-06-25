@@ -1,6 +1,0 @@
-{
-    "problem": "Each pack of hot dogs contains 10 hot dogs (no buns), but each pack of hot dog buns contains 8 buns.  Phil buys a number of these packs for a barbecue.  After the barbecue, Phil finds that he has 4 hot dogs left over.  What is the SECOND smallest number of packs of hot dogs he could have bought?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $n$ be the number of packs of hot dogs that Phil bought.  Then $10n \\equiv 4 \\pmod{8}$, which reduces to $2n \\equiv 4 \\pmod{8}$.  This congruence tells us that $2n = 8k + 4$ for some integer $k$, or $n = 4k + 2$.  The second smallest positive integer of this form is $\\boxed{6}$."
-}

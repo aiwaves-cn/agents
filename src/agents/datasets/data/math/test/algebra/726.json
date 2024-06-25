@@ -1,6 +1,0 @@
-{
-    "problem": "There are numbers $A$ and $B$ for which  \\[\\frac A{x-1}+\\frac B{x+1}=\\frac{x+2}{x^2-1}\\] for every number $x\\neq\\pm1$.  Find $B$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can approach this problem by picking clever values for $x$.  If $x=-2$ we get  \\[\\frac A{-2-1}+\\frac B{-2+1}=0,\\] so \\[A+3B=0.\\]\n\nIf $x=0$ we get  \\[\\frac A{0-1}+\\frac B{0+1}=\\frac{0+2}{0^2-1},\\] or  \\[-A+B=-2.\\] To solve for $B$ we add these two expressions: \\[4B=-2,\\] so $B=\\boxed{-\\frac12}$."
-}

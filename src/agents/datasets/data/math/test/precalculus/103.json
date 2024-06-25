@@ -1,6 +1,0 @@
-{
-    "problem": "For a positive constant $c,$ in cylindrical coordinates $(r,\\theta,z),$ find the shape described by the equation\n\\[r = c.\\](A) Line\n(B) Circle\n(C) Plane\n(D) Sphere\n(E) Cylinder\n(F) Cone\n\nEnter the letter of the correct option.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "In cylindrical coordinates, $r$ denotes the distance between a point and the $z$-axis.  So if this distance is fixed, then we obtain a cylinder.  The answer is $\\boxed{\\text{(E)}}.$\n\n[asy]\nimport three;\nimport solids;\n\nsize(180);\ncurrentprojection = perspective(6,3,6);\ncurrentlight = (1,1,2);\n\ndraw((0,-1,1)--(0,-2,1));\ndraw(surface(cylinder(c = (0,0,0),r = 1,h = 2)),gray(0.99));\ndraw((1,0,1)--(2,0,1));\ndraw((0,1,1)--(0,2,1));\ndraw((0,0,1.3)--(0,0,3));\ndraw((0,0,2)--(Cos(45),Sin(45),2));\n\nlabel(\"$c$\", (0.5*Cos(45),0.5*Sin(45),2), NE, white);\nlabel(\"$r = c$\", (0.4,0.6,-0.5), SE);\n[/asy]"
-}

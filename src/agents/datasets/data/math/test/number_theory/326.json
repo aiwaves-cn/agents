@@ -1,6 +1,0 @@
-{
-    "problem": "The product of three consecutive integers is 720. What is the largest of these integers?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let the integers be $n-1$, $n$, and $n+1$.  Their product is $n^3-n$.  Thus $n^3=720+n$.  The smallest perfect cube greater than $720$ is $729=9^3$, and indeed $729=720+9$.  So $n=9$ and the largest of the integers is $n+1=\\boxed{10}$."
-}

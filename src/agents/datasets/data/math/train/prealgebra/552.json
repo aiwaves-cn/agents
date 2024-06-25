@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers between 300 and 500 have the sum of their digits equal to 16?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We have to consider 2 cases:\n\nWhen the hundreds digit is 3, we want the sum of the tens and unit digit equal to 13. We have $4+9=5+8=6+7=13,$ which yield a total of 6 choices (two for each pair that adds to 13).\n\nWhen the hundreds digit is 4, we want the sum of the tens and unit digit equal to 12. We have $3+9=4+8=5+7=6+6=12.$ The first three pairs give us 2 solutions, but the last only gives 1, so we have a total of 7 choices.\n\nTherefore there are total of $6+7= \\boxed{13}$ integers."
-}

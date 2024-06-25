@@ -1,6 +1,0 @@
-{
-    "problem": "If the parabola $y_1 = x^2 + 2x + 7$ and the line $y_2 = 6x + b$ intersect at only one point, what is the value of $b$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If the curves $y_1$ and $y_2$ intersect at only one point, then there should be only one solution to the equation $x^2 + 2x + 7 = 6x + b$. To find $b$, we first rearrange the equation to get $x^2 -4x + (7-b) = 0$. This equation has only one solution if and only if the discriminant of $x^2 - 4x + (7 - b) = 0$. Thus, we need  \\begin{align*}\n16 - 4(7-b) &= 0 \\quad \\Rightarrow \\\\\n4b &= 12 \\quad \\Rightarrow \\\\\nb &= \\boxed{3}.\n\\end{align*}"
-}

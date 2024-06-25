@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers between 0 and 8 inclusive have an inverse modulo 9?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "By inspection, we find that  \\begin{align*}\n1\\cdot 1 &\\equiv 1\\pmod{9} \\\\\n2\\cdot 5 &\\equiv1\\pmod{9} \\\\\n4\\cdot 7 &\\equiv 1 \\pmod{9} \\\\\n8\\cdot 8 &\\equiv 1\\pmod{9}.\n\\end{align*}So 1, 2, 4, 5, 7, and 8 have modular inverses (mod 9). Since no multiple of 0, 3, and 6 can be one more than a multiple of 9, we find that $\\boxed{6}$ of the modulo-9 residues have inverses."
-}

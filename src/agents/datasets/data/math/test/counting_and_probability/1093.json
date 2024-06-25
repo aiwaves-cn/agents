@@ -1,6 +1,0 @@
-{
-    "problem": "Jack rolls 5 fair six-sided dice. What is the probability that at least two dice show the same number?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The only way in which there won't be two dice displaying the same number is if exactly one number between 1 and 6 isn't being displayed on any of the dice and the 5 dice all display different numbers. There are 6 different possibilities for the number that isn't being displayed, and then there are a total of $5!$ ways in which the 5 dice displaying different numbers can be arranged, so there are a total of $6\\cdot5!$ outcomes that result in the dice all displaying different numbers. Since each of the 5 dice can have 6 results when rolled and all of the rolls are determined independently, there are a total of $6^5$ possible outcomes, which means that the probability of all of the dice showing different numbers is $\\dfrac{6\\cdot5!}{6^5}=\\dfrac{5}{54}$, so the probability that we want is $1-\\dfrac{5}{54}=\\boxed{\\dfrac{49}{54}}$."
-}

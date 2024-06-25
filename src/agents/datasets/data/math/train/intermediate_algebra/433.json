@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $\\log_{y^6}{x}\\cdot\\log_{x^5}{y^2}\\cdot\\log_{y^4}{x^3}\\cdot\\log_{x^3}{y^4}\\cdot\\log_{y^2}{x^5}$ can be written as $a\\log_y{x}$ for what constant $a$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "First we use the formula $\\log_a{b}=\\frac{\\log_c{b}}{\\log_c{a}}$. The given expression becomes\n$$\\log_{y^6}{x}\\cdot\\log_{x^5}{y^2}\\cdot\\log_{y^4}{x^3}\\cdot\\log_{x^3}{y^4}\\cdot\\log_{y^2}{x^5}=\\frac{\\log{x}}{\\log{y^6}}\\cdot\\frac{\\log{y^2}}{\\log{x^5}}\\cdot\\frac{\\log{x^3}}{\\log{y^4}}\\cdot\\frac{\\log{y^4}}{\\log{x^3}}\\cdot\\frac{\\log{x^5}}{\\log{y^2}}$$Next we use the formula $a\\log_b{x}=\\log_b{x^a}$. We get\n\\begin{align*}\n\\frac{\\log{x}}{\\log{y^6}}\\cdot\\frac{\\log{y^2}}{\\log{x^5}}\\cdot\\frac{\\log{x^3}}{\\log{y^4}}\\cdot\\frac{\\log{y^4}}{\\log{x^3}}\\cdot\\frac{\\log{x^5}}{\\log{y^2}} &= \\frac{\\log{x}}{6\\log{y}}\\cdot\\frac{2\\log{y}}{5\\log{x}}\\cdot\\frac{3\\log{x}}{4\\log{y}}\\cdot\\frac{4\\log{y}}{3\\log{x}}\\cdot\\frac{5\\log{x}}{2\\log{y}} \\\\\n&= \\frac{120\\log{x}}{720\\log{y}} \\\\\n&= \\frac{\\log{x}}{6\\log{y}} = \\frac16 \\log_y{x}.\n\\end{align*}Therefore, $a=\\boxed{\\frac16}$."
-}

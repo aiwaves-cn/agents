@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose\n\\[\\frac{1}{x^3-x^2-21x+45}=\\frac{A}{x+5}+\\frac{B}{x-3} + \\frac{C}{(x - 3)^2}\\]where $A$, $B$, and $C$ are real constants. What is $A$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The $x+5$ and $(x-3)^2$ in the denominators suggest that these might be factors of $x^3-x^2-21x+45$. Indeed, we find that this polynomial equals $(x+5)(x-3)^2$. Clearing denominators, we find that\n\\[1=A(x-3)^2+ B(x + 5)(x - 3) + C(x + 5).\\]Thus, when we substitute $x=-5$, we find that $(-5-3)^2A=64A=1$, so $A = \\boxed{\\frac{1}{64}}$."
-}

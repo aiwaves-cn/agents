@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\tan^{-1} x + \\tan^{-1} y = \\frac{\\pi}{4},$ then compute $xy + x + y.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Taking the tangent of both sides, we get $\\tan (\\tan^{-1} x + \\tan^{-1} y) = \\tan \\frac{\\pi}{4} = 1.$  Then from the tangent addition formula,\n\\[\\frac{x + y}{1 - xy} = 1.\\]Then $x + y = 1 - xy,$ so $xy + x + y = \\boxed{1}.$"
-}

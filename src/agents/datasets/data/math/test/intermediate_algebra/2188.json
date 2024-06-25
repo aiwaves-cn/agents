@@ -1,6 +1,0 @@
-{
-    "problem": "Katie has a list of real numbers such that the sum of the numbers on her list is equal to the sum of the squares of the numbers on her list. Compute the largest possible value of the arithmetic mean of her numbers.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Let the numbers in the list be $x_1,$ $x_2,$ $\\dots,$ $x_n.$  Then by the trivial inequality,\n\\[(x_1 - 1)^2 + (x_2 - 1)^2 + \\dots + (x_n - 1)^2 \\ge 0.\\]Expanding, we get\n\\[(x_1^2 + x_2^2 + \\dots + x_n^2) - 2(x_1 + x_2 + \\dots + x_n) + n \\ge 0.\\]Since $x_1^2 + x_2^2 + \\dots + x_n^2 = x_1 + x_2 + \\dots + x_n,$\n\\[x_1 + x_2 + \\dots + x_n \\le n,\\]so $\\frac{x_1 + x_2 + \\dots + x_n}{n} \\le 1.$\n\nEquality occurs when all the $x_i$ are equal to 1, so the largest possible arithmetic mean is $\\boxed{1}.$"
-}

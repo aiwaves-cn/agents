@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of $10101_2$ and $101_2$. Express your answer in base $2$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Carry out the multiplication as you would with base $10$. There is no need to carry during the multiplication with base $2$.\n\n$$\\begin{array}{c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c} &&&&1&0&1&0&1_2\\\\ &&&&&\\times&1&0&1_2\\\\ \\cline{2-9} &&&_1&1^{\\text{ }}&0^1&1^{\\text{ }}&0^{\\text{ }}&1^{\\text{ }}_2\\\\ &+&1^{\\text{ }}&0^{\\text{ }}&1&0_{\\text{ }}&1&0&0_2\\\\ \\cline{2-9} &&1&1&0&1&0&0&1_2\\\\ \\end{array}$$Add it up for a final answer of $\\boxed{1101001_2}$."
-}

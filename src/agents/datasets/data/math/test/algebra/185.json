@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers are in the solution of the inequality $|x + 4|< 9$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If $x+4\\geq 0$ (or $x\\geq -4$), then the given inequality is the same as $x+4<9$ which means $x<5$. If $x+4<0$ (or $x<-4$), we have $-(x+4)<9$ which means $x+4>-9$ which yields $x>-13$. Thus, the solution is $-13<x<5$. Thus, the integers in this solution are -1 through -12 (12 integers), 1 through 4 (4 integers), and 0 (1 integer). Thus, the total is $12+4+1=\\boxed{17}$ integers."
-}

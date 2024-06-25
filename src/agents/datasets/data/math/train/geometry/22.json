@@ -1,6 +1,0 @@
-{
-    "problem": "Kadin makes a snowman by stacking snowballs of radius 2 inches, 3 inches, and 5 inches.  Assuming all his snowballs are spherical, what is the total volume of snow he uses, in cubic inches?  Express your answer in terms of $\\pi$.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "A sphere with radius $r$ has volume $\\frac{4}{3}\\pi r^3$.  Thus, the snowballs with radius 2, 3, and 5 inches have volumes $\\frac{4}{3}\\pi(2^3)$, $\\frac{4}{3}\\pi(3^3)$, and $\\frac{4}{3}\\pi(5^3)$ cubic inches respectively.  The total volume of snow used is thus  \\begin{align*}\n\\frac{4}{3}\\pi(2^3)+\\frac{4}{3}\\pi(3^3)+\\frac{4}{3}\\pi(5^3)&=\\frac{4}{3}\\pi(2^3+3^3+5^3)\\\\\n&=\\frac{4}{3}\\pi(8+27+125)\\\\\n&=\\boxed{\\frac{640}{3}\\pi}.\\end{align*}"
-}

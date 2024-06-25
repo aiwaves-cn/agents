@@ -1,6 +1,0 @@
-{
-    "problem": "$20!$ has 19 digits, the last 18 of which are 432902008176640000. What is the first digit?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "$20!$ is divisible by $9$, and the sum of the last 18 digits of $20!$ is 52. Therefore, if $x$ is the missing digit, $52+x$ is divisible by 9. The only digit $x$ for which $52+x$ is divisible by 9 is $\\boxed{2}$."
-}

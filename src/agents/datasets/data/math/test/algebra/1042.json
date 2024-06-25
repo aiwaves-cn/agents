@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose the roots of the polynomial $x^2 - mx + n$ are positive prime integers (not necessarily distinct). Given that $m < 20,$ how many possible values of $n$ are there?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $p$ and $q$ be the prime roots. Then, we know that $m = p+q$ and $n = pq$. Since $m < 20$, the primes $p$ and $q$ must both be less than $20$.\n\nThe primes less than $20$ are $2,$ $3,$ $5,$ $7,$ $11,$ $13,$ $17,$ $19.$ Now we list all possible pairs $(p, q)$ such that $p + q < 20$, remembering to also include the cases in which $p=q$: \\[\\begin{aligned} & (2,2),(2,3),(2,5),(2,7),(2,11),(2,13),(2,17) \\\\\n&(3,3),(3,5),(3,7),(3,11),(3,13) \\\\\n&(5,5),(5,7),(5,11),(5,13) \\\\\n&(7,7),(7,11) \\end{aligned}\\]There are $7 + 5 + 4 + 2 = 18$ pairs in total. Each pair produces a value for $n$, and furthermore, these values are all distinct, because every positive integer has a unique prime factorization. Therefore, there are $\\boxed{18}$ possible values for $n$."
-}

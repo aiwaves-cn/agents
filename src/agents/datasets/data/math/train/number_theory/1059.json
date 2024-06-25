@@ -1,6 +1,0 @@
-{
-    "problem": "For what base-6 digit $d$ is $2dd5_6$ divisible by the base 10 number 11? (Here $2dd5_6$ represents a base-6 number whose first digit is 2, whose last digit is 5, and whose middle two digits are both equal to $d$).",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We write $2dd5_6$ in base 10 to get $2dd5_6=2\\cdot 6^3+d\\cdot 6^2 +d\\cdot 6 + 5= 437 + 42d$. We can subtract $39\\cdot 11$ from this quantity without changing whether it is divisible by 11. This subtraction yields $437 + 42d-429 = 8 + 42d$. We can subtract $33d$ from this quantity, again not changing whether it is divisible by 11, leaving $8+9d$. Now we try the possible values $d=0,1,2,3,4,5$ for a base-6 digit, and we find that only $d=\\boxed{4}$ results in a number which is divisible by 11."
-}

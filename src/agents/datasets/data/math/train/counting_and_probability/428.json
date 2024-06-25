@@ -1,6 +1,0 @@
-{
-    "problem": "In Morse code, each symbol is represented by a sequence of dashes and dots. How many distinct symbols can be represented using sequences of 1, 2, 3, or 4 total dots and/or dashes?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We proceed by casework.\n\nCase I: 1 dot or dash\nThere are two possibilities: one dot, or one dash.\n\nCase II: 2 dots or dashes\nEach symbol can be a dot or a dash, so there are $2 \\cdot 2 = 4$ sequences in this case.\n\nCase III: 3 dots or dashes\nEach symbol can be a dot or a dash, so there are $2 \\cdot 2 \\cdot 2 = 8$ sequences in this case.\n\nCase IV: 4 dots or dashes\nEach symbol can be a dot or a dash, so there are $2 \\cdot 2 \\cdot 2 \\cdot 2 = 16$ sequences in this case.\n\nThus, there are $2 + 4 + 8 + 16 = \\boxed{30}$ distinct symbols that can be formed."
-}

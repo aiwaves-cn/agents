@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(r) = \\sum_{j=2}^{2008} \\frac{1}{j^r} = \\frac{1}{2^r}+ \\frac{1}{3^r}+ \\dots + \\frac{1}{2008^r}$. Find $\\sum_{k=2}^{\\infty} f(k)$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We change the order of summation: \\[\n\\sum_{k=2}^\\infty \\sum_{j=2}^{2008} \\frac{1}{j^k}\n= \\sum_{j=2}^{2008} \\sum_{k=2}^\\infty \\frac{1}{j^k}\n= \\sum_{j=2}^{2008} \\frac{1}{j^2(1 - \\frac{1}{j})}\n= \\sum_{j=2}^{2008} \\frac{1}{j(j-1)}\n= \\sum_{j=2}^{2008} \\displaystyle \\left( \\frac 1 {j-1} - \\frac 1 j \\displaystyle \\right)\n= 1 - \\frac 1 {2008}\n= \\boxed{\\frac{2007}{2008}}.\n\\]"
-}

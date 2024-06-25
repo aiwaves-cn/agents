@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct values are possible for the expression $8 + 4 \\times 6 \\div 2$ if one set of parentheses may be placed in the expression?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Without parentheses, the expression has the value (following order of operations) $8 + (4 \\times 6)/2 = 20$. The parentheses can modify the order of operations, either through $(8+4) \\times 6 \\div 2 = 36$ or $(8 + 4 \\times 6)/2 = 16$, giving $\\boxed{3}$ distinct values. (Note that placing parentheses that exclude the first number doesn't affect the result, since the only important order of operations here is multiplication before addition.)"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "On each of the first three days of January, there is a $\\frac{1}{3}$ chance that it will snow where Bob lives. On each of the next four days, there is a $\\frac{1}{4}$ chance that it will snow. What is the probability that it snows at least once during the first week of January?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "On each of the first three days, there is a $\\frac{2}{3}$ chance that there will be no snow. On each of the next four days, there is a $\\frac{3}{4}$ chance that there will be no snow. The chance that there will be no snow at all during the first week of January is $\\left( \\frac{2}{3} \\right) ^3 \\left( \\frac{3}{4} \\right) ^4=\\frac{3}{32}$. Therefore, the probability that it snows at least once during the first week of January is $1-\\frac{3}{32}=\\boxed{\\frac{29}{32}}$."
-}

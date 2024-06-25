@@ -1,6 +1,0 @@
-{
-    "problem": "One fair die has faces 1, 1, 2, 2, 3, 3 and another has faces 4, 4, 5, 5, 6, 6. The dice  are rolled and the numbers on the top faces are added. What is the probability that the sum will be odd?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "An odd sum requires either that  the first die is even and the second is odd or that the first die is odd and the second is even. The probability  is \\[\n\\frac{1}{3}\\cdot\\frac{1}{3}+\\frac{2}{3}\\cdot\\frac{2}{3}=\n\\frac{1}{9}+\\frac{4}{9}=\\boxed{\\frac{5}{9}}.\n\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For what value of $n$ is the five-digit number $\\underline{7n933}$ divisible by 33? (Note: the underlining is meant to indicate that the number should be interpreted as a five-digit number whose ten thousands digit is 7, whose thousands digit is $n$, and so on).",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Divisibility by $33$ requires that a number be divisible by both $11$ and $3$. If a five-digit number is divisible by $11$, the difference between the sum of the units, hundreds and ten-thousands digits and the sum of the tens and thousands digits must be divisible by $11$. Thus $(7 + 9 + 3) - (n + 3) = 16 - n$ must be divisible by $11$. The only digit which can replace $n$ for the number to be divisible by $11$, then, is $n = 5$. Furthermore, if a number is $7 + 5 + 9 + 3 + 3 = 27$, so the number is divisible by $3$. Hence, $n = \\boxed{5}$."
-}

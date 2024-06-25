@@ -1,6 +1,0 @@
-{
-    "problem": "Find the modular inverse of $27$, modulo $28$.\n\nExpress your answer as an integer from $0$ to $27$, inclusive.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We are looking for an integer $a$ such that $27a$ is congruent to 1 modulo 28. In other words, we want to solve  \\[\n27 a \\equiv 1 \\pmod{28}.\n\\]We subtract $28a$ from the left-hand side to obtain $-a\\equiv 1 \\pmod{28}$. This congruence is equivalent to the previous one since $28a$ is a multiple of 28. Next we multiply both sides by $-1$ to obtain $a\\equiv -1\\pmod{28}$. Thus $28-1=\\boxed{27}$ is the modular inverse of 27 (mod 28). (Note that since $(m-1)^2=m^2-2m+1\\equiv 1\\pmod{m}$, we always have that $m-1$ is its own inverse modulo $m$.)"
-}

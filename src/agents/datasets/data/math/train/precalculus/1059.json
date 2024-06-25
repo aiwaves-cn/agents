@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be positive integers such that\n\\[\\begin{pmatrix} 3 & 0 \\\\ 0 & 2 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 18 & 12 \\\\ -20 & -13 \\end{pmatrix}.\\]Find the smallest possible value of $a + b + c + d.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Performing the multiplication on both sides, we obtain\n\\[\\begin{pmatrix} 3a & 3b \\\\ 2c & 2d \\end{pmatrix} = \\begin{pmatrix} 18a - 20b & 12a - 13b \\\\ 18c - 20d & 12c - 13d \\end{pmatrix}.\\]Hence, $3a = 18a - 20b,$ $12a - 13b = 3b,$ $18c - 20d = 2c,$ and $12c - 13d = 2d.$  Then $15a = 20b,$ $12a = 16b,$ $16c = 20d,$ and $12c = 15d.$  These reduce to $3a = 4b$ and $4c = 5d.$  The smallest positive integer solutions are $a = 4,$ $b = 3,$ $c = 5,$ and $d = 4,$ so the smallest possible value of $a + b + c + d$ is $4 + 3 + 5 + 4 = \\boxed{16}.$"
-}

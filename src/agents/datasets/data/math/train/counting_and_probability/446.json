@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate $6!-5\\cdot5!-5!$.",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "We can rewrite the expression as $6!-(5\\cdot5!+5!)$. Using the distributive property, we obtain $6!-(5+1)\\cdot5!$. This is equal to $6!-6!=\\boxed{0}$."
-}

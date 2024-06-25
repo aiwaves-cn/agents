@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered pairs $(x,y)$ of real numbers that satisfy\n\\[x^2 + 2y^2 + \\frac{1}{2} \\le x(2y + 1).\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Moving all the terms to the left-hand side, we get\n\\[x^2 - 2xy + 2y^2 - x + \\frac{1}{2} \\le 0.\\]Multiplying both sides by 2, we get\n\\[2x^2 - 4xy + 4y^2 - 2x + 1 \\le 0.\\]We can write the left-hand side as\n\\[(x^2 - 4xy + 4y^2) + (x^2 - 2x + 1) \\le 0,\\]which becomes\n\\[(x - 2y)^2 + (x - 1)^2 \\le 0.\\]By the Trivial Inequality, the only way this can occur is if $x = 2y$ and $x = 1,$ so $y = \\frac{1}{2}.$\n\nSo, there is only $\\boxed{1}$ ordered pair $(x,y)$ that satisfies the given inequality, namely $(x,y) = \\left( 1, \\frac{1}{2} \\right).$"
-}

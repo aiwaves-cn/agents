@@ -1,6 +1,0 @@
-{
-    "problem": "An integer $n$ is said to be square-free if the only perfect square that divides $n$ is $1^2$. How many positive odd integers greater than 1 and less than $100$ are square-free?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If an integer $n$ is not square-free, then there is a square greater than $1$ that does divide $n$. The odd squares less than $100$ are $3^2 = 9$, $5^2 = 25$, $7^2 = 49$, and $9^2 = 81$. If an integer is divisible by $81$, then it is divisible by $9$, so we will only consider $3^2$, $5^2$, and $7^2$. There are $11$ multiples of $9$ that are less than $100$. Six of them are odd and five are even. There are $3$ multiples of $25$ that are less than $100$. Two of them are odd and one is even. There are $2$ multiples of $49$ that are less than $100$. One of them is odd and one is even. Therefore, there are $9$ odd integers that are not square-free. The least integer which is divisible by at least two of the integers 9, 25, and 49 is $9\\cdot 25 = 225$, which is greater than 100. Therefore, there are 9 odd integers less than 100 which are divisible by a perfect square greater than 1. There are $49$ odd integers less than $100$ and greater than 1, so there are $49-9=\\boxed{40}$ odd square-free integers less than $100$."
-}

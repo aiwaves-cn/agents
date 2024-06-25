@@ -1,6 +1,0 @@
-{
-    "problem": "On a standard die one of the dots is removed at random with each dot equally likely to be chosen. The die is then rolled. What is the probability that the top face has an odd number of dots?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The dot is chosen from the face with $n$ dots with probability $\\frac{n}{21}$. Thus the face that originally has $n$ dots is left with an odd number of dots with probability $\\frac{n}{21}$ if $n$ is even and $1 - n/21$ if $n$ is odd. Each face is the top face with probability $\\frac{1}{6}$. Therefore the top face has an odd number of dots with probability \\begin{align*}\n&\\frac{1}{6}\\displaystyle\\left(\\displaystyle\\left(1 - \\frac{1}{21}\\displaystyle\\right) + \\frac{2}{21} + \\displaystyle\\left(1 - \\frac{3}{21}\\displaystyle\\right)\n+ \\frac{4}{21} + \\displaystyle\\left(1 - \\frac{5}{21}\\displaystyle\\right) + \\frac{6}{21}\\displaystyle\\right) \\\\\n& \\qquad = \\frac{1}{6} \\displaystyle\\left(3 + \\frac{3}{21}\\displaystyle\\right)\\\\\n& \\qquad = \\frac{1}{6}\\cdot \\frac{66}{21} \\\\\n& \\qquad = \\boxed{\\frac{11}{21}}.\n\\end{align*}"
-}

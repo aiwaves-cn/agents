@@ -1,6 +1,0 @@
-{
-    "problem": "In rectangle $PQRS,$ $PQ=12$ and $PR=13.$ What is the area of rectangle $PQRS?$\n\n[asy]\ndraw((0,0)--(12,0)--(12,5)--(0,5)--cycle,black+linewidth(1));\ndraw((0,5)--(12,0),black+linewidth(1));\nlabel(\"$P$\",(0,5),NW);\nlabel(\"$Q$\",(12,5),NE);\nlabel(\"$R$\",(12,0),SE);\nlabel(\"$S$\",(0,0),SW);\nlabel(\"12\",(0,5)--(12,5),N);\nlabel(\"13\",(0,5)--(12,0),SW);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Triangle $PQR$ is a right-angled triangle since $\\angle PQR=90^\\circ$ (because $PQRS$ is a rectangle). In $\\triangle PQR,$ the Pythagorean Theorem gives,  \\begin{align*}\n\\ PR^2&=PQ^2+QR^2 \\\\\n\\ 13^2&=12^2 + QR^2 \\\\\n\\ 169&=144+QR^2 \\\\\n\\ 169-144&=QR^2\\\\\n\\ QR^2&=25\n\\end{align*}So $QR=5$ since $QR>0.$ The area of $PQRS$ is thus $12\\times 5=\\boxed{60}.$"
-}

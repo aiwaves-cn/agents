@@ -1,6 +1,0 @@
-{
-    "problem": "If $n \\equiv 2 \\pmod{7}$, then find the remainder when $(n + 2)(n + 4)(n + 6)$ is divided by 7.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "If $n \\equiv 2 \\pmod{7}$, then $(n + 2)(n + 4)(n + 6) \\equiv 4 \\cdot 6 \\cdot 8 \\equiv 4 \\cdot 6 \\cdot 1 \\equiv 24 \\equiv \\boxed{3} \\pmod{7}$."
-}

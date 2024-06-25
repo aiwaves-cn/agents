@@ -1,6 +1,0 @@
-{
-    "problem": "A cubic polynomial $f$ satisfies $f(0)=0, f(1)=1, f(2)=2, f(3)=4$. What is $f(5)$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $g(x) = f(x) - x.$  Then $g(x)$ is a cubic polynomial, and $g(0) = g(1) = g(2) = 0$ and $g(3) = 1,$ so\n\\[g(x) = kx(x - 1)(x - 2)\\]for some constant $k.$  Setting $x = 3,$ we get\n\\[g(3) = k(3)(2)(1),\\]so $6k = 1.$  Hence, $k = \\frac{1}{6},$ so\n\\[g(x) = \\frac{x(x - 1)(x - 2)}{6},\\]and $f(x) = \\frac{x(x - 1)(x - 2)}{6} + x.$  In particular, $f(5) = \\frac{(5)(4)(3)}{6} + 5 = \\boxed{15}.$"
-}

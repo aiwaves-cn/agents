@@ -1,6 +1,0 @@
-{
-    "problem": "What is the inverse of $f(x)=4-5x$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If we let $g(x)$ denote the inverse to $f$ then we can evaluate $f$ at $g(x)$ to get  \\[f(g(x))=4-5g(x).\\]Since $g$ is the inverse to $f$, the left side is $x$ and  \\[x=4-5g(x).\\]Solving for $g(x)$, we find $g(x) = \\boxed{\\frac{4-x}{5}}$."
-}

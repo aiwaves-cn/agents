@@ -1,6 +1,0 @@
-{
-    "problem": "Below is the graph of $y = a \\cos bx$ for some positive constants $a$ and $b.$  Find $b.$\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal g(real x)\n{\n\treturn (3*cos(4*x));\n}\n\ndraw(graph(g,-3*pi,3*pi,n=700,join=operator ..),red);\ntrig_axes(-3*pi,3*pi,-4,4,pi/2,1);\nlayer();\nrm_trig_labels(-5, 5, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$3$\", (0,3), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\nlabel(\"$-3$\", (0,-3), E);\n[/asy]",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "The graph has period $\\frac{\\pi}{2}.$  The period of $y = a \\cos bx$ is $\\frac{2 \\pi}{b},$ so $b = \\boxed{4}.$"
-}

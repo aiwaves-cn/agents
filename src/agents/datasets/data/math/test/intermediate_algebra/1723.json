@@ -1,6 +1,0 @@
-{
-    "problem": "A parabola has vertex $(4,2)$ and passes through $(2,0).$  Enter the equation of the parabola in the form \"$y = ax^2 + bx + c$\".",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since the parabola has vertex $(4,2),$ the equation of the parabola is of the form\n\\[y - 2 = k(x - 4)^2.\\]Since the parabola passes through $(2,0),$ we can plug in $x = 2$ and $y = 0,$ to get\n\\[-2 = 4k,\\]so $k = -\\frac{1}{2}.$  Then\n\\[y - 2 = -\\frac{1}{2} (x - 4)^2 = -\\frac{1}{2} x^2 + 4x - 8,\\]so the equation of the parabola is $\\boxed{y = -\\frac{1}{2} x^2 + 4x - 6}.$"
-}

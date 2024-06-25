@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\displaystyle\\frac{1-i}{2+3i}$, where $i^2 = -1.$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Multiplying the numerator and denominator by the conjugate of the denominator, we have \\begin{align*}\n\\frac{1-i}{2+3i} \\cdot \\frac{2-3i}{2-3i} &= \\frac{1(2) + 1(-3i) - i(2) - i(-3i)}{2(2) + 2(-3i) + 3i(2) -3i(3i)}\\\\\n& = \\frac{-1-5i}{13} \\\\\n&= \\boxed{-\\frac{1}{13} - \\frac{5}{13}i}.\n\\end{align*}"
-}

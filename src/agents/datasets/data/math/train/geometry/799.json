@@ -1,6 +1,0 @@
-{
-    "problem": "In the figure shown, arc $ADB$ and arc $BEC$ are semicircles, each with a radius of one unit. Point $D$, point $E$ and point $F$ are the midpoints of arc $ADB$, arc $BEC$ and arc $DFE$, respectively. If arc $DFE$ is also a semicircle, what is the area of the shaded region?\n\n[asy]\nunitsize(0.5inch);\npath t=(1,1)..(2,0)--(0,0)..cycle;\ndraw(t);\npath r=shift((2,0))*t;\npath s=shift((1,1))*t;\ndraw(s);\nfill(s,gray(0.7));\nfill((1,0)--(1,1)--(3,1)--(3,0)--cycle,gray(0.7));\nfill(t,white);\nfill(r,white);\ndraw(t);\ndraw(r);\ndot((0,0));\ndot((1,1));\ndot((2,2));\ndot((3,1));\ndot((2,0));\ndot((4,0));\nlabel(\"$A$\",(0,0),W);\nlabel(\"$B$\",(2,0),S);\nlabel(\"$C$\",(4,0),E);\nlabel(\"$D$\",(1,1),NW);\nlabel(\"$E$\",(3,1),NE);\nlabel(\"$F$\",(2,2),N);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Mark segments $BF$ and $DE$ and label their intersection $P$.  Now, slide sector $FPE$ on to sector $DB$ and slide sector $FPD$ on to sector $EB$.  The shaded region is now a rectangle with side lengths $1$ and $2$, thus the area of the shaded region is $\\boxed{2}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\arctan ( \\tan 65^\\circ - 2 \\tan 40^\\circ )$. (Express your answer in degrees as an angle between $0^\\circ$ and $180^\\circ$.)",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the identity $\\tan (90^\\circ - x) = \\frac{1}{\\tan x},$ we have that\n\\[\\tan 65^\\circ - 2 \\tan 40^\\circ = \\frac{1}{\\tan 25^\\circ} - \\frac{2}{\\tan 50^\\circ}.\\]By the double-angle formula,\n\\[\\frac{1}{\\tan 25^\\circ} - \\frac{2}{\\tan 50^\\circ} = \\frac{1}{\\tan 25^\\circ} - \\frac{1 - \\tan^2 25^\\circ}{\\tan 25^\\circ} = \\tan 25^\\circ,\\]so $\\arctan (\\tan 65^\\circ - 2 \\tan 40^\\circ) = \\boxed{25^\\circ}.$"
-}

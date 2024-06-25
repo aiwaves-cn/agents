@@ -1,6 +1,0 @@
-{
-    "problem": "Let $m=\\underbrace{22222222}_{\\text{8 digits}}$ and $n=\\underbrace{444444444}_{\\text{9 digits}}$.\n\nWhat is $\\gcd(m,n)$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Note that $20m = \\underbrace{444444440}_{\\text{9 digits}}$, so $n = 20m+4$.\n\nIf $d$ is any common divisor of $m$ and $n$, then $d$ must also be a divisor of $n-20m = 4$. Therefore, $\\gcd(m,n)$ is either $1$, $2$, or $4$. We can see that $m$ is not divisible by $4$ (since its last two digits form $22$, which is not a multiple of $4$). However, both $m$ and $n$ are clearly divisible by $2$, so $\\gcd(m,n)=\\boxed{2}$."
-}

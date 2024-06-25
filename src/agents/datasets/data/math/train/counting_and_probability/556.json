@@ -1,6 +1,0 @@
-{
-    "problem": "Find $n$ if $n\\cdot n! + n! = 720$, where $n! = n\\cdot (n-1)\\cdot (n-2)\\cdots 2\\cdot 1$.",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "We can factor n! out of the left-hand side: \\begin{align*}\nn\\cdot n! +n! &= (n+1)(n!)\\\\\n&= (n+1)!\\\\\n\\end{align*}We see that $(n+1)! = 720 = 6!$,  so $n+1 = 6$ and $n = \\boxed{5}$."
-}

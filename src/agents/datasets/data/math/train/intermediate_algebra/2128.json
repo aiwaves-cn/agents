@@ -1,6 +1,0 @@
-{
-    "problem": "One of the asymptotes of a hyperbola has equation $y=3x.$ The foci of the hyperbola have the same $x-$coordinate, which is $5.$ Find the equation of the other asymptote of the hyperbola, giving your answer in the form \"$y = mx + b$\".",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Because the foci both lie on the line $x=5$ and the center of the hyperbola is the midpoint of the segment connecting the foci, the center must also lie on the line $x=5.$ However, we also know that the asymptotes of the hyperbola intersect at the center. Therefore, the center of the hyperbola lies on both the line $x=5$ and the line $y=3x,$ so its coordinates are $(5, 15).$\n\nBecause the hyperbola has a horizontal axis, the other asymptote must have slope $-3.$ Therefore, we can write a point-slope equation for the other asymptote: \\[y - 15 = -3(x - 5),\\]which is equivalent to $\\boxed{y = -3x + 30}.$"
-}

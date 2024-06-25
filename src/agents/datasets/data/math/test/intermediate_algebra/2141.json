@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be the set of points $z$ in the complex plane such that $|z - 7 + 10i| \\le 5.$  Find the area of $S.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "The condition $|z - 7 + 10i| \\le 5$ means that $z$ lies within a circle centered at $7 - 10i$ with radius 5.  Thus, the area of $S$ is $\\boxed{25 \\pi}.$\n\n[asy]\nunitsize(1 cm);\n\nfilldraw(Circle((0,0),2),gray(0.7));\ndraw((0,0)--2*dir(30));\n\nlabel(\"$5$\", dir(30), NW);\ndot(\"$7 - 10i$\", (0,0), NW);\n[/asy]"
-}

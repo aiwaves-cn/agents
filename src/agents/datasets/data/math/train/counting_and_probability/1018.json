@@ -1,6 +1,0 @@
-{
-    "problem": "We flip a fair coin 10 times.  What is the probability that we get heads in exactly 8 of the 10 flips?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $2^{10} = 1024$ possible outcomes of the 10 coin flips. There are $\\binom{10}{8}=\\binom{10}{2}=45$ ways to get exactly 8 heads, so the probability is $\\dfrac{45}{2^{10}}=\\boxed{\\dfrac{45}{1024}}$."
-}

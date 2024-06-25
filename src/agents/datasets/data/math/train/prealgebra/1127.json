@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, what is the measure of $\\angle ACB$ in degrees? [asy]\nsize(250);\ndraw((-60,0)--(0,0));\ndraw((0,0)--(64.3,76.6)--(166,0)--cycle);\nlabel(\"$A$\",(64.3,76.6),N);\nlabel(\"$93^\\circ$\",(64.3,73),S);\nlabel(\"$130^\\circ$\",(0,0),NW);\nlabel(\"$B$\",(0,0),S);\nlabel(\"$D$\",(-60,0),S);\nlabel(\"$C$\",(166,0),S);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since $\\angle ABC + \\angle ABD = 180^\\circ$ (in other words, $\\angle ABC$ and $\\angle ABD$ are supplementary) and $\\angle ABD = 130^\\circ$, then $\\angle ABC = 50^\\circ$. [asy]\nsize(250);\ndraw((-60,0)--(0,0));\ndraw((0,0)--(64.3,76.6)--(166,0)--cycle);\nlabel(\"$A$\",(64.3,76.6),N);\nlabel(\"$93^\\circ$\",(64.3,73),S);\nlabel(\"$130^\\circ$\",(0,0),NW);\nlabel(\"$B$\",(0,0),S);\nlabel(\"$D$\",(-60,0),S);\nlabel(\"$C$\",(166,0),S);\nlabel(\"$50^\\circ$\",(3.5,0),NE);\n[/asy] Since the sum of the angles in triangle $ABC$ is $180^\\circ$ and we know two angles $93^\\circ$ and $50^\\circ$ which add to $143^\\circ$, then $\\angle ACB = 180^\\circ - 143^\\circ = \\boxed{37^\\circ}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A license plate consists of two letters followed by two digits; for example, $MP78$. Neither the digits nor the letters may be repeated, and neither the letter $O$ nor the digit $0$ may be used. When reading from left to right, the letters must be in alphabetical order and the digits must be in increasing order. How many different license plate combinations are possible?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Given any set of two distinct letters (neither of which is O) and two distinct digits (neither of which is 0), we can build exactly one license plate because, whatever the letters and digits, there is only one allowed order.  We can choose two distinct letters (excluding O) in $\\binom{25}{2}$ ways and two distinct digits (excluding 0) in $\\binom{9}{2}$ ways.  Thus the total number of license plates is $\\binom{25}{2}\\binom{9}{2} = \\boxed{10800}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $x^{2015} + 1$ is divided by $x^8 - x^6 + x^4 - x^2 + 1.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that\n\\[(x^2 + 1)(x^8 - x^6 + x^4 - x^2 + 1) = x^{10} + 1.\\]Also, $x^{10} + 1$ is a factor of $x^{2010} + 1$ via the factorization\n\\[a^n + b^n = (a + b)(a^{n - 1} - a^{n - 2} b + a^{n - 3} b^2 + \\dots + b^{n - 1})\\]where $n$ is odd, so $x^{10} + 1$ is a factor of $x^5 (x^{2010} + 1) = x^{2015} + x^5.$\n\nSo, when $x^{2015} + 1 = x^{2015} + x^5 + (-x^5 + 1)$ is divided by $x^8 - x^6 + x^4 - x^2 + 1,$ the remainder is $\\boxed{-x^5 + 1}.$"
-}

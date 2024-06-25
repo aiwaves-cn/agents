@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n$ be the smallest composite number such that it can be written as the product of two positive integers that differ by 10.  How many distinct prime factors does $n$ have?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The smallest pair of numbers that differ by 10 is 1 and 11; however, they multiply to 11 which is not composite.  We try the next pair up: 2 and 12, which multiply to 24 which is composite, so $n=24$. $24$ factors as $2^3 \\cdot 3$, so it has $\\boxed{2}$ prime factors: 2 and 3."
-}

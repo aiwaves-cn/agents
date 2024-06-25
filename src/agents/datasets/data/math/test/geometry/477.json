@@ -1,6 +1,0 @@
-{
-    "problem": "A steel sphere with a 3-inch radius is made by removing metal from the corners of a cube that has the shortest possible side lengths. How many cubic inches are in the volume of the cube?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "A sphere with a 3-inch radius has a 6-inch diameter and can be inscribed in a cube with at least side length 6.  Thus the smallest possible cube has side length 6 and volume $6^3=\\boxed{216}$ cubic inches.\n\n[asy]\nsize(60);\ndraw(Circle((6,6),4.5));\ndraw((10.5,6)..(6,6.9)..(1.5,6),linetype(\"2 4\"));\ndraw((10.5,6)..(6,5.1)..(1.5,6));\ndraw((0,0)--(9,0)--(9,9)--(0,9)--cycle);\ndraw((0,9)--(3,12)--(12,12)--(9,9));\ndraw((12,12)--(12,3)--(9,0));\ndraw((0,0)--(3,3)--(12,3),dashed); draw((3,3)--(3,12),dashed);\n[/asy]"
-}

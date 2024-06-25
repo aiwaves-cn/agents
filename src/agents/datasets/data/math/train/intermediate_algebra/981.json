@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,b,$ and $c$ be real numbers such that \\[a + b + c = 2\\]and \\[a^2+b^2+c^2=12.\\]What is the difference between the maximum and minimum possible values of $c$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Subtracting $c$ from the first equation and $c^2$ from the second, we get \\[\\begin{aligned} a+b &= 2-c, \\\\ a^2+b^2 &= 12-c^2. \\end{aligned}\\]By Cauchy-Schwarz, \\[(1+1)(a^2+b^2)  = 2(a^2+b^2) \\ge (a+b)^2.\\]Substituting for $a+b$ and $a^2+b^2$ gives \\[2(12-c^2) \\ge (2-c)^2,\\]which rearranges to \\[3c^2 - 4c - 20 \\le 0.\\]This factors as \\[(3c-10)(c+2) \\le 0,\\]so the maximum possible value of $c$ is $\\tfrac{10}3$ (which occurs when $a = b = -\\frac{2}{3}$) and the minimum possible value of $c$ is $-2$ (which occurs when $a = b = 2$).  Thus, the answer is $\\tfrac{10}3 - (-2) = \\boxed{\\tfrac{16}3}.$"
-}

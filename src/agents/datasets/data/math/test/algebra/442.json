@@ -1,6 +1,0 @@
-{
-    "problem": "How many polynomials of the form $x^2 + mx + n$ are there with positive integer roots and $n = 28?$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "For this problem, we use the fact that the sum of the roots of the polynomial $ax^2 + bx + c$ is $-b/a$ and the product of the roots is $c/a.$\n\nThe positive factors of $28$ are $(1,28),$ $(2,14),$ $(4,7).$ Each of these sums are distinct. Hence, there are $\\boxed{3}$ possible values for $m.$"
-}

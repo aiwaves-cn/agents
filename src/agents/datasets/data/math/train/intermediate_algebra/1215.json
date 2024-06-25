@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate\n\\[\\prod_{n = 1}^{13} \\frac{n(n + 2)}{(n + 4)^2}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Writing the product out, we get\n\\[\\frac{1 \\cdot 3}{5^2} \\cdot \\frac{2 \\cdot 4}{6^2} \\cdot \\frac{3 \\cdot 5}{7^2} \\dotsm \\frac{11 \\cdot 13}{15^2} \\cdot \\frac{12 \\cdot 14}{16^2} \\cdot \\frac{13 \\cdot 15}{17^2}.\\]The two factors of 5 in the numerators cancel the two factors of 3 in the denominators.  The same occurs with the two factors of 6, and so on, up to the two factors of 13.  We are left with\n\\[\\frac{2 \\cdot 3^2 \\cdot 4^2}{14 \\cdot 15 \\cdot 16^2 \\cdot 17^2} = \\boxed{\\frac{3}{161840}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "An isosceles triangle has side lengths 8 cm, 8 cm and 10 cm.  The longest side of a similar triangle is 25 cm. What is the perimeter of the larger triangle, in centimeters?",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "The ratio of the length of the longest sides of the small triangle to the large triangle is $10/25 = 2/5$, which must hold constant for all sides of the two triangles since they are similar.  Thus the perimeters of the two triangles are also in the ratio of $2/5$.  The small triangle has perimeter $8+8+10=26$, so the large triangle has perimeter $\\frac{5}{2}\\cdot 26 = \\boxed{65}$."
-}

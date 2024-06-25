@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=x+5$ and let $g(x)=x^2+1$. Let $p(x)=g(x)+f(x)$ and let $q(x)=g(x)-f(x)$. Find $p(x)\\cdot q(x)$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We know $p(x)=(x^2+1)+(x+5)=x^2+x+6$. Also, $q(x)=(x^2+1)-(x+5)=x^2-x-4$. We want to find $p(x)\\cdot q(x)$, so we substitute:\n\n\\begin{align*}\np(x)\\cdot q(x)&=(x^2+x+6)(x^2-x-4)\\\\\n&=x^2(x^2-x-4)+x(x^2-x-4)+6(x^2-x-4)\\\\\n&=x^4-x^3-4x^2+x^3-x^2-4x+6x^2-6x-24\\\\\n&=x^4+(-1+1)x^3+(-4-1+6)x^2+(-4-6)x-24\\\\\n&=\\boxed{x^4+x^2-10x-24}.\n\\end{align*}"
-}

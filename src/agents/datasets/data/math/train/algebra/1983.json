@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\frac{a}{25-a}+\\frac{b}{65-b}+\\frac{c}{60-c}=7$, evaluate $\\frac{5}{25-a}+\\frac{13}{65-b}+\\frac{12}{60-c}$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Note that $\\frac{a}{25-a}+1=\\frac{a}{25-a}+\\frac{25-a}{25-a}=\\frac{a+25-a}{25-a}=\\frac{25}{25-a}$. The same trick can be used with the other two terms, so $\\frac{b}{65-b}+1=\\frac{65}{65-b}$, and $\\frac{c}{60-c}+1=\\frac{60}{60-c}$. Thus, we add 1 to each term on the left side of our equation: $$\\frac{a}{25-a}+1+\\frac{b}{65-b}+1+\\frac{c}{60-c}+1=7+1+1+1.$$ Now we can use the substitution we derived earlier, so $$\\frac{25}{25-a}+\\frac{65}{65-b}+\\frac{60}{60-c}=10.$$ Finally, we divide everything by $5$ to find that $$\\frac{5}{25-a}+\\frac{13}{65-b}+\\frac{12}{60-c}=\\boxed{2}.$$"
-}

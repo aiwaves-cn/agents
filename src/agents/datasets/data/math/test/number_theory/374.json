@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $(b_a)^2=71_a$, where $a$ and $b$ represent two distinct digits. If $b=a-1$, find $a$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We begin by replacing $b$ with $a-1$, and expressing both sides in base 10: \\begin{align*} (a-1)^2\\cdot a^0&=7\\cdot a^1+1\\cdot a^0\n\\\\\\Rightarrow\\qquad a^2-2a+1&=7a+1\n\\\\\\Rightarrow\\qquad a^2-9a&=0\n\\\\\\Rightarrow\\qquad a(a-9)&=0\n\\end{align*}Thus, $a$ is either 0 or 9. However, since we can't have a base equal to 0, we see that $a$ must be $\\boxed{9}$."
-}

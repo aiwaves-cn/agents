@@ -1,6 +1,0 @@
-{
-    "problem": "The interior angles of a quadrilateral form an arithmetic sequence. If the measure of the largest angle is $129^{\\circ}$, what is the measure of the second largest angle, in degrees?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let the common difference of this arithmetic sequence be $d$, so the second largest angle is $129-d$ degrees, the third largest is $129-2d$ degrees, and the smallest angle is $129-3d$ degrees. We know that the sum of the interior angles in a quadrilateral is equal to 360 degrees, so we have the equation $129 + (129-d) + (129-2d) + (129-3d) = 360$, from which we find that $d=26$ degrees. Thus, the second largest angle is $129-d=129-26=\\boxed{103}$ degrees."
-}

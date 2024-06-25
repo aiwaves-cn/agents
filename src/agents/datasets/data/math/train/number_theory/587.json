@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest integer that is a divisor of \\[\n(n+1)(n+3)(n+5)(n+7)(n+9)\n\\]for all positive even integers $n$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Among five consecutive odd numbers, at least one is divisible by 3 and exactly one is divisible by 5, so the product is always divisible by 15. The cases $n=2$, $n=10$, and $n=12$ demonstrate that no larger common divisor is possible, since $\\boxed{15}$ is the greatest common divisor of $3\\cdot5\\cdot7\\cdot9\\cdot11$, $11\\cdot13\\cdot15\\cdot17\\cdot19$, and $13\\cdot15\\cdot17\\cdot19\\cdot21$."
-}

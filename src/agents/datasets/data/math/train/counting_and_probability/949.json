@@ -1,6 +1,0 @@
-{
-    "problem": "In the local frisbee league, teams have 7 members and each of the 4 teams takes turns hosting tournaments. At each tournament, each team selects two members of that team to be on the tournament committee, except the host team, which selects three members. How many possible 9 member tournament committees are there?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Pick one of the teams as the host. There are $\\dbinom{7}{3}=35$ ways to select the three representatives from that team and $\\dbinom{7}{2}=21$ ways to pick a representative from each of the other teams. So once we have selected a host team, there are $35\\times21\\times21\\times21=324,\\!135$ ways to pick the members of the tournament committee. However, any of the four teams can be the host, so we need to multiply $324,\\!135$ by 4 to get $\\boxed{1,\\!296,\\!540}$ ways."
-}

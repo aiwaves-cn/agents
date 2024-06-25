@@ -1,6 +1,0 @@
-{
-    "problem": "Find the coefficient of $x^3y^3z^2$ in the expansion of $(x+y+z)^8$.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The Binomial Theorem says that, to find the coefficient of $x^ay^b$ in the expansion of $(x+y)^{a+b}$, we choose $a$ of the $(a+b)$ terms to contribute $x$ to the product, then the other $b$ terms contribute a $y$. Similarly, to find the coefficient of $x^3y^3z^2$ in $(x+y+z)^8$, we choose 3 of the 8 $(x+y+z)$ terms in the product $(x+y+z)^8$ to contribute an $x$ (which we can do in $\\binom{8}{3}$ ways), 3 of the remaining 5 terms to contribute a $y$ (which we can do in $\\binom{5}{3}$ ways), and the remaining 2 terms contribute $z$'s to the product. Thus, our answer is  \\[\\binom{8}{3}\\binom{5}{3}=56\\cdot 10=\\boxed{560}\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $\\log_{10}{4}+2\\log_{10}{5}+3\\log_{10}{2}+6\\log_{10}{5}+\\log_{10}{8}$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We use the two identities $a\\log_b{x}=\\log_b{x^a}$ and $\\log_b{x}+\\log_b{y}=\\log_b{xy}$. The given expression becomes \\begin{align*}\n\\log_{10}{4}+2\\log_{10}{5}+3\\log_{10}{2}+6\\log_{10}{5}+\\log_{10}{8}&=\\log_{10}{2^2}+\\log_{10}{5^2}+\\log_{10}{2^3}+\\log_{10}{5^6}+\\log_{10}{2^3} \\\\\n&=\\log_{10}{(2^2 \\cdot 5^2 \\cdot 2^3 \\cdot 5^6 \\cdot 2^3)}\\\\\n&=\\log_{10}{(2^8 \\cdot 5^8)} \\\\\n&=\\log_{10}{10^8} \\\\\n&=\\boxed{8}.\n\\end{align*}"
-}

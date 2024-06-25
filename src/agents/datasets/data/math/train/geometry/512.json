@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $AB=AC$ and $D$ is a point on $\\overline{AC}$ so that $\\overline{BD}$ bisects angle $ABC$. If $BD=BC$, what is the measure, in degrees, of angle $A$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Since $AB=AC$, triangle $ABC$ must be an isosceles triangle and the measures of $\\angle ABC$ and $\\angle ACB$ must be equal. Continuing, since $\\overline{BD}$ bisects angle $ABC$, we have that the measures of $\\angle ABD$ and $\\angle BDC$ are equal. Finally, since $BD=BC$, triangle $BDC$ must also be an isosceles triangle so the measures of $\\angle BDC = \\angle BCD$. Now if we consider triangle $BDC$, we know that angles $BDC$ and $BCD$ have equal angle measures and angle $DBC$ has an angle measure that is half that of the other two. Since these three angle measures must add up to $180^\\circ$, we have that $\\angle DBC$ has measure $36^\\circ$ and angles $BDC$ and $BCD$ have measures $72 ^\\circ$.\n\nNow, since $\\angle ABC \\cong \\angle ACB$ and $\\angle ACB$ has measure $72^\\circ$, we know that $\\angle A$ must have an angle measure of $180-72-72=\\boxed{36}$ degrees."
-}

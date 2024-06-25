@@ -1,6 +1,0 @@
-{
-    "problem": "Planets X, Y and Z take 360, 450 and 540 days, respectively, to rotate around the same sun. If the three planets are lined up in a ray having the sun as its endpoint, what is the minimum positive number of days before they are all in the exact same locations again?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We are asked to find the least common multiple of 360, 450 and 540.  We prime factorize \\begin{align*}\n360 &= 2^3\\cdot 3^2\\cdot 5 \\\\\n450 &= 2 \\cdot3^2 \\cdot 5^2 \\\\\n540 &= 2^2\\cdot 3^3 \\cdot 5\n\\end{align*} and take the largest exponent for each of the primes to get a least common multiple of $2^3\\cdot 3^3\\cdot 5^2=\\boxed{5400}$."
-}

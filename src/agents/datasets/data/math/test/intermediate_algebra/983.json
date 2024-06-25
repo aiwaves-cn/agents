@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = x^2 + bx + 9$ and $g(x) = x^2 + dx + e.$  If $f(x) = 0$ has roots $r$ and $s,$ and $g(x) = 0$ has roots $-r$ and $-s,$ compute the two roots of $f(x) + g(x) = 0.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have that $f(x) = (x - r)(x - s)$ and $g(x) = (x + r)(x + s),$ so\n\\begin{align*}\nf(x) + g(x) &= (x - r)(x - s) + (x + r)(x + s) \\\\\n&= x^2 - (r + s) x + rs + x^2 + (r + s) x + rs \\\\\n&= 2x^2 + 2rs \\\\\n&= 2(x^2 + rs).\n\\end{align*}By Vieta's formulas, $rs = 9,$ so $f(x) + g(x) = 2(x^2 + 9).$  Ths roots of $x^2 + 9 = 0$ are $\\boxed{3i,-3i}.$"
-}

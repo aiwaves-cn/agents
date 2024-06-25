@@ -1,6 +1,0 @@
-{
-    "problem": "Let $m$ and $n$ be positive integers such that $m = 24n + 51$. What is the largest possible value of the greatest common divisor of $2m$ and $3n$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Using the Euclidean Algorithm, we obtain \\begin{align*}\n\\text{gcd}(2m, 3n) &= \\text{gcd}(2m-3n\\cdot16, 3n) \\\\\n&= \\text{gcd}(2\\cdot(24n+51)-48n, 3n) \\\\\n&= \\text{gcd}(102, 3n) \\\\\n&\\leq 102.\n\\end{align*}Therefore, the largest possible value of $\\text{gcd}(2m, 3n)$ is $\\boxed{102}$. For example, this is possible when $n=34 \\Rightarrow m=867$, as $3n=102$ and $2m=1734=102\\cdot17$."
-}

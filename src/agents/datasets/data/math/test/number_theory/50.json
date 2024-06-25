@@ -1,6 +1,0 @@
-{
-    "problem": "If the digits represented by $A$ and $B$ (which are not both $0$) satisfy the following addition problem $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & & A & B_7\\\\ &+ & & & B & A_7\\\\ \\cline{2-6} & & & A & A & 0_7\\\\ \\end{array} $$what is the product of the digits represented by $A$ and $B$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "From the addition problem, we know that in the units digit, it's impossible to have $B+A=0_7$, so it must be that $B+A=10_7=7$. That means we carry a 1 to the next column and get $A+B+1=AA_7$. Since $B+A=10_7$, then $A+B+1=11_7$ and $A$ represents the digit 1. That tells us that $B+1=7$, so $B$ represents the digit 6. The product of $A$ and $B$ is $\\boxed{6}$."
-}

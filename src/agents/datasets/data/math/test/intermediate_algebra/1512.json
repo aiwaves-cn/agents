@@ -1,6 +1,0 @@
-{
-    "problem": "Nonnegative real numbers $a$ and $b$ satisfy $\\sqrt{a} - \\sqrt{b} = 20.$  Find the maximum value of $a - 5b.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = \\sqrt{a}$ and $y = \\sqrt{b},$ so $x - y = 20,$ $a = x^2,$ and $b = y^2.$  Then\n\\begin{align*}\na - 5b &= x^2 - 5y^2 \\\\\n&= (y + 20)^2 - 5y^2 \\\\\n&= -4y^2 + 40y + 400 \\\\\n&= -4(y - 5)^2 + 500.\n\\end{align*}The maximum of $\\boxed{500}$ occurs when $y = 5,$ so $x = 25,$ $a = 625,$ and $b = 25.$"
-}

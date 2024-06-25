@@ -1,6 +1,0 @@
-{
-    "problem": "What is the minimum value of the expression $x^2+y^2-6x+4y+18$ for real $x$ and $y$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Rearranging the expression, we have  \\[x^2-6x+y^2+4y+18\\]Completing the square in $x$, we need to add and subtract $(6/2)^2=9$. Completing the square in $y$, we need to add and subtract $(4/2)^2=4$. Thus, we have \\[(x^2-6x+9)-9+(y^2+4y+4)-4+18 \\Rightarrow (x-3)^2+(y+2)^2+5\\]Since the minimum value of $(x-3)^2$ and $(y+2)^2$ is $0$ (perfect squares can never be negative), the minimum value of the entire expression is $\\boxed{5}$, and is achieved when $x=3$ and $y=-2$."
-}

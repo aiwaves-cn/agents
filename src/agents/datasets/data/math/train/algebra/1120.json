@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\frac{x^8+12x^4+36}{x^4+6}$ when $x=5$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Note that $\\left(x^4+6\\right)^2=x^8+12x^4+36$. So $\\frac{x^8+12x^4+36}{x^4+6}=\\frac{\\left(x^4+6\\right)^2}{x^4+6}=x^4+6$. Our answer is therefore $5^4+6=625+6=\\boxed{631}$."
-}

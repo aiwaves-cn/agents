@@ -1,6 +1,0 @@
-{
-    "problem": "Bob's favorite number is between $50$ and $100$.  It is a multiple of $11$, but not a multiple of $2$.  The sum of its digits is a multiple of $3$.  What is Bob's favorite number?",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "We will list out the multiples of $11$ between $50$ and $100$, and eliminate all the multiples that don't satisfy the other conditions.  If our work is correct, there should only be one number, the answer, that satisfies all the conditions.\n\nThe multiples of $11$ that we are interested in are $55$, $66$, $77$, $88$, and $99$. $66$ and $88$ are multiples of $2$, so they are out.  Now, of the remaining numbers, only $99$ has a digit-sum that is a multiple of $3$ ($9+9=18$).  Therefore, Bob's favorite number is $\\boxed{99}$."
-}

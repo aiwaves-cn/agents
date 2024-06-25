@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x,y)$ satisfies\n\\[f(x,y) = x + yf(y,x)\\]for all real numbers $x$ and $y$ such that $xy \\ne 1.$  Find $f(1,2).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 1$ and $y = 2,$ we get\n\\[f(1,2) = 1 + 2f(2,1).\\]Setting $x = 2$ and $y = 1,$ we get\n\\[f(2,1) = 2 + f(1,2).\\]Then $f(1,2) = 1 + 2(2 + f(1,2)) = 5 + 2f(1,2),$ so $f(1,2) = \\boxed{-5}.$"
-}

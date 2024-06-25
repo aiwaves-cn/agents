@@ -1,6 +1,0 @@
-{
-    "problem": "Find $n$ such that $2^5 \\cdot 3^2 \\cdot n = 8!$.",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "Factor 8! and cancel 5 factors of 2 and 2 factors of 3:  \\begin{align*}\n8! &= 2^3\\cdot7\\cdot(2\\cdot 3)\\cdot5\\cdot 2^2\\cdot 3\\cdot 2 \\implies \\\\\n\\frac{8!}{2^5\\cdot 3^2} &= \\frac{2^3\\cdot7\\cdot(2\\cdot 3)\\cdot5\\cdot 2^2\\cdot3\\cdot 2}{2^5\\cdot3^2} \\\\\n&=7\\cdot 5\\cdot 2^2 \\\\\n&=14\\cdot 10 \\\\\n&= \\boxed{140}.\n\\end{align*}"
-}

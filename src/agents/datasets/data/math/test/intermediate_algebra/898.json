@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$ and $y$ are real, and $x^2 + y^2 = 1,$ compute the maximum value of $(x + y)^2.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By the Trivial Inequality, $(x - y)^2 \\ge 0.$  Then\n\\[(x + y)^2 + (x - y)^2 \\ge (x + y)^2.\\]But $(x + y)^2 + (x - y)^2 = x^2 + 2xy + y^2 + x^2 - 2xy + y^2 = 2x^2 + 2y^2 = 2,$ so\n\\[(x + y)^2 \\le 2.\\]Equality occurs when $x = y = \\frac{1}{\\sqrt{2}},$ so the maximum value is $\\boxed{2}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be positive real numbers such that $a + 2b = 1.$  Find the minimum value of\n\\[\\frac{1}{a} + \\frac{2}{b}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-HM,\n\\[\\frac{a + b + b}{3} \\ge \\frac{3}{\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{b}},\\]so\n\\[\\frac{1}{a} + \\frac{2}{b} \\ge \\frac{9}{a + 2b} = 9.\\]Equality occurs when $a = b = \\frac{1}{3},$ so the minimum value is $\\boxed{9}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For how many pairs of consecutive integers in $\\{1000,1001,1002,\\ldots,2000\\}$ is no carrying required when the two integers are added?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Consider what carrying means: If carrying is needed to add two numbers with digits $abcd$ and $efgh$, then $h+d\\ge 10$ or $c+g\\ge 10$ or $b+f\\ge 10$. 6. Consider $c \\in \\{0, 1, 2, 3, 4\\}$. $1abc + 1ab(c+1)$ has no carry if $a, b \\in \\{0, 1, 2, 3, 4\\}$. This gives $5^3=125$ possible solutions.\nWith $c \\in \\{5, 6, 7, 8\\}$, there obviously must be a carry. Consider $c = 9$. $a, b \\in \\{0, 1, 2, 3, 4\\}$ have no carry. This gives $5^2=25$ possible solutions. Considering $b = 9$, $a \\in \\{0, 1, 2, 3, 4, 9\\}$ have no carry. Thus, the solution is $125 + 25 + 6=\\boxed{156}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix $\\mathbf{L} = \\begin{pmatrix} a & 0 \\\\ c & d \\end{pmatrix}$ such that $a > 0,$ $d > 0,$ and\n\\[\\begin{pmatrix} a & 0 \\\\ c & d \\end{pmatrix} \\begin{pmatrix} a & c \\\\ 0 & d \\end{pmatrix} = \\begin{pmatrix} 4 & -6 \\\\ -6 & 34 \\end{pmatrix}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Multiplying, we get\n\\[\\begin{pmatrix} a & 0 \\\\ c & d \\end{pmatrix} \\begin{pmatrix} a & c \\\\ 0 & d \\end{pmatrix} = \\begin{pmatrix} a^2 & ac \\\\ ac & c^2 + d^2 \\end{pmatrix}.\\]Thus, $a^2 = 4,$ $ac = -6,$ and $c^2 + d^2 = 34.$  Since $a > 0,$ $a = 2.$  Then $2c = -6,$ so $c = -3.$  Then $9 + d^2 = 34,$ so $d^2 = 25.$  Since $d > 0,$ $d = 5.$  Hence,\n\\[\\mathbf{L} = \\boxed{\\begin{pmatrix} 2 & 0 \\\\ -3 & 5 \\end{pmatrix}}.\\]"
-}

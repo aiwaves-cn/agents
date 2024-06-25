@@ -1,6 +1,0 @@
-{
-    "problem": "If $m$ is a real number and $2x^2+mx+8$ has two distinct real roots, then what are the possible values of $m$?  Express your answer in interval notation.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "By considering the expression $\\frac{-b\\pm \\sqrt{b^2-4ac}}{2a}$ for the roots of $ax^2+bx+c$, we find that the roots are real and distinct if and only if the discriminant $b^2-4ac$ is positive. So the roots of $2x^2+mx+8$ are real and distinct when $m^2-4(2)(8) > 0$.  Simplifying and factoring the left-hand side, we find $(m-8)(m+8) > 0$, which implies $m\\in \\boxed{(-\\infty,-8)\\cup (8,\\infty)}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered pairs of positive integers $(a,b)$ such that $a+b=1000$ and neither $a$ nor $b$ has a zero digit.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $\\left\\lfloor\\frac{999}{10}\\right\\rfloor = 99$ numbers up to 1000 that have 0 as their units digit. All of the other excluded possibilities are when $a$ or $b$ have a 0 in the tens digit, and since the equation is symmetric, we will just count when $a$ has a 0 in the tens digit and multiply by 2 (notice that the only time both $a$ and $b$ can have a 0 in the tens digit is when they are divisible by 100, which falls into the above category, so we do not have to worry about overcounting).\nExcluding the numbers divisible by 100, which were counted already, there are $9$ numbers in every hundred numbers that have a tens digit of 0 (this is true from 100 to 900), totaling $9 \\cdot 9 = 81$ such numbers; considering $b$ also and we have $81 \\cdot 2 = 162$. Therefore, there are $999 - (99 + 162) = \\boxed{738}$ such ordered pairs."
-}

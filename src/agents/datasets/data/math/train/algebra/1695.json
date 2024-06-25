@@ -1,6 +1,0 @@
-{
-    "problem": "Solve \\[\\frac{5x+1}{2x^2+5x-3}=\\frac{2x}{2x-1}\\]for $x$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We notice that the denominator on the left factors, giving us \\[\\frac{5x+1}{(2x-1)(x+3)}=\\frac{2x}{2x-1}.\\]As long as $x\\neq\\frac12$ we are allowed to cancel $2x-1$ from the denominators, giving \\[\\frac{5x+1}{x+3}=2x.\\]Now we can cross-multiply to find \\[5x+1=2x(x+3)=2x^2+6x.\\]We simplify this to  \\[2x^2+x-1=0\\]and then factor to  \\[(x+1)(2x-1)=0.\\]Notice that since $2x-1$ is in the denominator of the original equation, $x=\\frac12$ is an extraneous solution.  However $x=\\boxed{-1}$ does solve the original equation."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Steve guesses randomly on a 15-question multiple choice test in which each problem has two choices, a correct one and an incorrect one. What is the probability that he gets at least half of the questions correct? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Steve cannot get exactly half the questions right since there are an odd number of questions. So he can get either more than half or less than half correct, with equal probability, since he has a $1/2$ chance of getting any individual question correct. This means that Steve has a probability of $\\boxed{\\frac{1}{2}}$ of getting more than half correct, or identically, at least half correct."
-}

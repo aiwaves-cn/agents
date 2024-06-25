@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ $AB = 9,$ $BC = 10,$ and $AC = 11.$  If $D$ and $E$ are chosen on $\\overline{AB}$ and $\\overline{AC}$ so that $AD = 4$ and $AE = 7,$ then find the area of triangle $ADE.$\n\n[asy]\nunitsize (1 cm);\n\npair A, B, C, D, E;\n\nA = (2,3);\nB = (0,0);\nC = (6,0);\nD = interp(A,B,0.4);\nE = interp(A,C,3/5);\n\ndraw(A--B--C--cycle);\ndraw(D--E);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NW);\nlabel(\"$E$\", E, NE);\n[/asy]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "By Heron's formula, the area of triangle $ABC$ is $30 \\sqrt{2}.$  Then\n\\[\\frac{1}{2} \\cdot 10 \\cdot 11 \\sin A = 30 \\sqrt{2},\\]so $\\sin A = \\frac{20 \\sqrt{2}}{33}.$  Therefore,\n\\[[ADE] = \\frac{1}{2} \\cdot 4 \\cdot 7 \\cdot \\frac{20 \\sqrt{2}}{33} = \\boxed{\\frac{280 \\sqrt{2}}{33}}.\\]"
-}

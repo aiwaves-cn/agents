@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$: $$\\left(\\frac{1}{25}\\right)^{x + 2} = 125^{-x}.$$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Rewriting both sides with $5$ as the base, we have $\\left(\\frac{1}{25}\\right)^{x + 2} = (5^{-2})^{x+2} = 5^{-2x - 4}$, and $125^{-x} = (5^3)^{-x} = 5^{-3x}$, which means our equation is: $$5^{-2x - 4} = 5^{-3x}.$$Then, by setting the exponents equal to each other, we obtain $$-2x - 4 = -3x.$$This yields our solution $\\boxed{x = 4}$"
-}

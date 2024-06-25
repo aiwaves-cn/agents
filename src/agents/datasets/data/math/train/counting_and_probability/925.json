@@ -1,6 +1,0 @@
-{
-    "problem": "A zealous geologist is sponsoring a contest in which entrants have to guess the age of a shiny rock. He offers these clues: the age of the rock is formed from the six digits 2, 2, 2, 3, 7, and 9, and the rock's age begins with an odd digit.\n\nHow many possibilities are there for the rock's age?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 3 odd digits which can begin the rock's age. For the five remaining spaces, the numbers can be arranged in $5!$ ways.\n\nHowever, because the digit `2' repeats three times, we must divide by $3!$, or the number of ways to arrange those three 2s.\n\nThe answer is $\\dfrac{3\\times5!}{3!} = \\boxed{60}$."
-}

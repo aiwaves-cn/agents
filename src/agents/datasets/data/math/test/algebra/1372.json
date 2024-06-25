@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $b$ if $5^b + 5^b + 5^b + 5^b + 5^b = 625^{(b-1)}$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can rewrite $5^b + 5^b + 5^b + 5^b + 5^b$ as $5\\cdot5^b=5^{(b+1)}$. Since $625=5^4$, we rewrite $625^{(b-1)}$ as $(5^4)^{(b-1)}=5^{4(b-1)}=5^{(4b-4)}$. We now have $5^{(b+1)}=5^{(4b-4)}$, so it must be that the exponents are equal.  $$b+1=4b-4\\qquad\\Rightarrow 5=3b\\qquad\\Rightarrow \\frac{5}{3}=b$$ The value of $b$ is $\\boxed{\\frac{5}{3}}$."
-}

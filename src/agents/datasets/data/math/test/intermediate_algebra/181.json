@@ -1,6 +1,0 @@
-{
-    "problem": "Find all the real solutions to\n\\[\\frac{x^2 + 4x}{x - 1} + \\frac{72x - 72}{x^2 + 4x} - 18 = 0.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y = \\frac{x^2 + 4x}{x - 1}.$  Then we can write the given equation as\n\\[y + \\frac{72}{y} - 18 = 0,\\]so $y^2 - 18y + 72 = 0.$  This factors $(y - 6)(y - 12) = 0,$ so $y = 6$ or $y = 12.$\n\nIf $\\frac{x^2 + 4x}{x - 1} = 6,$ then $x^2 + 4x = 6x - 6,$ or $x^2 - 2x + 6 = 0.$  This quadratic has no real solutions.\n\nIf $\\frac{x^2 + 4x}{x - 1} = 12,$ then $x^2 + 4x = 12x - 12,$ or $x^2 - 8x + 12 = 0.$  This factors as $(x - 2)(x - 6) = 0,$ so the solutions are $\\boxed{2,6}.$"
-}

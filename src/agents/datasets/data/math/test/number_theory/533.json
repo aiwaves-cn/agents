@@ -1,6 +1,0 @@
-{
-    "problem": "If $0.\\overline{1331}$ is written as a fraction $\\frac{a}{b}$ with $a$ and $b$ being positive integers with a greatest common divisor of 1, what is $a+b$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let $x = 0.\\overline{1331}$, so $10000x = 1331.\\overline{1331}$. As a result, $9999x = 1331$, so $x = \\frac{1331}{9999}$. We can factor out 11 out of both the numerator and denominator, so $x = \\frac{121}{909}$. Thus $a+b=121+909 = \\boxed{1030}$."
-}

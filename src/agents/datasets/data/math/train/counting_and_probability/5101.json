@@ -1,6 +1,0 @@
-{
-    "problem": "Ten chairs are arranged in a circle. Find the number of subsets of this set of chairs that contain at least three adjacent chairs.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We know that a subset with less than $3$ chairs cannot contain $3$ adjacent chairs. There are only $10$ sets of $3$ chairs so that they are all $3$ adjacent. There are $10$ subsets of $4$ chairs where all $4$ are adjacent, and $10 \\cdot 5$ or $50$ where there are only $3.$ If there are $5$ chairs, $10$ have all $5$ adjacent, $10 \\cdot 4$ or $40$ have $4$ adjacent, and $10 \\cdot {5\\choose 2}$ or $100$ have $3$ adjacent. With $6$ chairs in the subset, $10$ have all $6$ adjacent, $10(3)$ or $30$ have $5$ adjacent, $10 \\cdot {4\\choose2}$ or $60$ have $4$ adjacent, $\\frac{10 \\cdot 3}{2}$ or $15$ have $2$ groups of $3$ adjacent chairs, and $10 \\cdot \\left({5\\choose2} - 3\\right)$ or $70$ have $1$ group of $3$ adjacent chairs. All possible subsets with more than $6$ chairs have at least $1$ group of $3$ adjacent chairs, so we add ${10\\choose7}$ or $120$, ${10\\choose8}$ or $45$, ${10\\choose9}$ or $10$, and ${10\\choose10}$ or $1.$ Adding, we get $10 + 10 + 50 + 10 + 40 + 100 + 10 + 30 + 60 + 15 + 70 + 120 + 45 + 10 + 1 = \\boxed{581}.$"
-}

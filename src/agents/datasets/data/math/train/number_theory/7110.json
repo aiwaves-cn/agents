@@ -1,6 +1,0 @@
-{
-    "problem": "The zeroes of the function $f(x)=x^2-ax+2a$ are integers. What is the sum of the possible values of $a?$\n$\\textbf{(A)}\\ 7\\qquad\\textbf{(B)}\\ 8\\qquad\\textbf{(C)}\\ 16\\qquad\\textbf{(D)}\\ 17\\qquad\\textbf{(E)}\\ 18$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "By Vieta's Formula, $a$ is the sum of the integral zeros of the function, and so $a$ is integral.\nBecause the zeros are integral, the discriminant of the function, $a^2 - 8a$, is a perfect square, say $k^2$. Then adding 16 to both sides and completing the square yields\\[(a - 4)^2 = k^2 + 16.\\]Therefore $(a-4)^2 - k^2 = 16$ and\\[((a-4) - k)((a-4) + k) = 16.\\]Let $(a-4) - k = u$ and $(a-4) + k = v$; then, $a-4 = \\dfrac{u+v}{2}$ and so $a = \\dfrac{u+v}{2} + 4$. Listing all possible $(u, v)$ pairs (not counting transpositions because this does not affect ($u + v$), $(2, 8), (4, 4), (-2, -8), (-4, -4)$, yields $a = 9, 8, -1, 0$. These $a$ sum to $16$, so our answer is $\\boxed{16}$."
-}

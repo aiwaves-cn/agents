@@ -1,6 +1,0 @@
-{
-    "problem": "A point $(x,y)$ is randomly selected such that $0 \\le x \\le 3$ and $0 \\le y \\le 6$. What is the probability that $x+y \\le 4$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We draw the region and mark off the area where $x+y \\le 4$:\n\n[asy]\ndraw((0,0)--(3,0)--(3,6)--(0,6)--cycle);\nfill((0,0)--(0,4)--(3,1)--(3,0)--cycle, gray(.7));\ndot((0,0));\ndot((3,0));\ndot((0,6));\ndot((3,6));\ndot((0,4));\ndot((3,1));\nlabel(\"(0,0)\", (0,0), W);\nlabel(\"(0,6)\", (0,6), W);\nlabel(\"(0,4)\", (0,4), W);\nlabel(\"(3,1)\", (3,1), E);\nlabel(\"(3,0)\", (3,0), E);\nlabel(\"(3,6)\", (3,6), E);\n[/asy] The area of the rectangle is 18. The area of the shaded region, a trapezoid, is $\\frac{1}{2}(1+4)\\cdot3=\\frac{15}{2}$. The probability that the point ends up in the shaded region is then $\\boxed{\\frac{5}{12}}$."
-}

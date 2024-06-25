@@ -1,6 +1,0 @@
-{
-    "problem": "The least common multiple of two numbers is 3720, and their greatest common divisor is 8. Given that one of the numbers is 120, what is the other number?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We know that $\\gcd(a,b) \\cdot \\mathop{\\text{lcm}}[a,b] = ab$ for all positive integers $a$ and $b$.  Hence, in this case, the other number is $8 \\cdot 3720/120 = \\boxed{248}$."
-}

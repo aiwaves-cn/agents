@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a = \\frac{\\pi}{2008}$. Find the smallest positive integer $n$ such that\n\\[\\sum_{k = 1}^n 2 \\cos (k^2 a) \\sin (ka)\\]is an integer.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "By the product-to-sum identities, we have that $2\\cos a \\sin b = \\sin (a+b) - \\sin (a-b)$. Therefore, this reduces to a telescoping series:  \\begin{align*}\n\\sum_{k=1}^{n} 2\\cos(k^2a)\\sin(ka) &= \\sum_{k=1}^{n} [\\sin(k(k+1)a) - \\sin((k-1)ka)]\\\\\n&= -\\sin(0) + \\sin(2a)- \\sin(2a) + \\sin(6a) - \\cdots - \\sin((n-1)na) + \\sin(n(n+1)a)\\\\\n&= -\\sin(0) + \\sin(n(n+1)a)\\\\\n&= \\sin(n(n+1)a).\n\\end{align*}Thus, we need $\\sin \\left(\\frac{n(n+1)\\pi}{2008}\\right)$ to be an integer; this integer can be only $\\{-1,0,1\\}$, which occurs when $2 \\cdot \\frac{n(n+1)}{2008}$ is an integer. Thus $1004 = 2^2 \\cdot 251$ divides $n(n+1)$.  Since 251 is prime, 251 must divide $n$ or $n + 1.$\n\nThe smallest such $n$ is 250, but 1004 does not divide $250 \\cdot 251.$  The next smallest such $n$ is 251, and 1004 divides $251 \\cdot 252.$  Therefore, the smallest such integer $n$ is $\\boxed{251}.$"
-}

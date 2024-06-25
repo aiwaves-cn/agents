@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $$33818^2 + 33819^2 + 33820^2 + 33821^2 + 33822^2$$is divided by 17.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Reducing each number modulo 17, we get \\begin{align*}\n&33818^2 + 33819^2 + 33820^2 + 33821^2 + 33822^2\\\\\n&\\qquad\\equiv 5^2 + 6^2 + 7^2 + 8^2 + 9^2 \\\\\n&\\qquad\\equiv 255 \\\\\n&\\qquad\\equiv \\boxed{0} \\pmod{17}.\n\\end{align*}"
-}

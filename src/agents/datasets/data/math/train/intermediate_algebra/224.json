@@ -1,6 +1,0 @@
-{
-    "problem": "Positive integers $a$, $b$, and $c$ are chosen so that $a<b<c$, and the system of equations \\[\n2x + y = 2003\\quad\\text{and}\\quad y = |x-a| + |x-b| + |x-c|\n\\]has exactly one solution. What is the minimum value of $c$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since the system has exactly one solution, the graphs of the two equations must intersect at exactly one point. If $x<a$, the equation $y = |x-a| + |x-b| + |x-c|$ is equivalent to $y =-3x + (a+b+c)$. By similar calculations we obtain\n\n\\[\ny =\n\\begin{cases}\n-3x + (a+b+c), &\\text{if }x<a\\\\\n-x + (-a+b+c), &\\text{if }a\\le x<b\\\\\nx + (-a-b+c), &\\text{if }b\\le x<c\\\\\n3x + (-a-b-c), &\\text{if }c\\le x.\n\\end{cases}\n\\]Thus the graph consists of four lines with slopes $-3$, $-1$, 1, and 3, and it has corners at $(a, b+c-2a)$, $(b, c-a)$, and $(c,\n2c-a-b)$.\n\nOn the other hand, the graph of $2x+y = 2003$ is a line whose slope is $-2$. If the graphs intersect at exactly one point, that point must be $(a, b+c-2a).$ Therefore\n\n$ 2003 = 2a + (b+c-2a) = b+c. $\n\nSince $b<c$, the minimum value of $c$ is $\\boxed{1002}$."
-}

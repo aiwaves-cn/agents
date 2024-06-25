@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ and $b$ are integers such that $x^2 - x - 1$ is a factor of $ax^3 + bx^2 + 1,$ find $b.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If $x^2 - x - 1$ is a factor of $ax^3 + bx^2 + 1,$ then the other factor must be linear, where the coefficient of $x$ is $a,$ and the constant coefficient is $-1.$  Thus\n\\[(x^2 - x - 1)(ax - 1) = ax^3 + bx^2 + 1.\\]Expanding, we get\n\\[ax^3 - (a + 1) x^2 + (1 - a) x + 1 = ax^3 + bx^2 + 1.\\]Matching coefficients, we get\n\\begin{align*}\n-(a + 1) &= b, \\\\\n1 - a &= 0.\n\\end{align*}Hence, $a = 1.$  Then $b = -(a + 1) = \\boxed{-2}.$"
-}

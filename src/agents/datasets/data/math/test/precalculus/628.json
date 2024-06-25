@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate\n\\[\\sum_{n = 0}^\\infty \\frac{\\cos n \\theta}{2^n},\\]where $\\cos \\theta = \\frac{1}{5}.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Consider the infinite geometric series\n\\[1 + \\frac{e^{i \\theta}}{2} + \\frac{e^{2i \\theta}}{2^2} + \\frac{e^{3i \\theta}}{2^3} + \\dotsb.\\]From the formula for an infinite geometric series, this is equal to\n\\begin{align*}\n\\frac{1}{1 - e^{i \\theta}/2} &= \\frac{2}{2 - \\cos \\theta - i \\sin \\theta} \\\\\n&= \\frac{2(2 - \\cos \\theta + i \\sin \\theta)}{(2 - \\cos \\theta - i \\sin \\theta)(2 - \\cos \\theta + i \\sin \\theta)} \\\\\n&= \\frac{4 -2  \\cos \\theta + 2i \\sin \\theta}{(2 - \\cos \\theta)^2 + \\sin^2 \\theta} \\\\\n&= \\frac{4 - 2 \\cos \\theta + 2i \\sin \\theta}{4 - 4 \\cos \\theta + \\cos^2 \\theta + \\sin^2 \\theta} \\\\\n&= \\frac{4 - 2 \\cos \\theta + 2i \\sin \\theta}{5 - 4 \\cos \\theta}.\n\\end{align*}Thus, the real part is $\\frac{4 - 2 \\cos \\theta}{5 - 4 \\cos \\theta}.$\n\nBut the real part of the infinite geometric series is also\n\\[1 + \\frac{\\cos \\theta}{2} + \\frac{\\cos 2 \\theta}{2^2} + \\frac{\\cos 3 \\theta}{2^3} + \\dotsb,\\]so this is equal to $\\frac{4 - 2/5}{5 - 4/5} = \\boxed{\\frac{6}{7}}.$"
-}

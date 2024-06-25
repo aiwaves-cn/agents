@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $c$: $$\\sqrt{4+\\sqrt{8+4c}}+ \\sqrt{2+\\sqrt{2+c}} = 2+2\\sqrt{2}$$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We can factor a constant out of the first radical:  \\begin{align*}\n\\sqrt{4+\\sqrt{8+4c}} &= \\sqrt{4+\\sqrt{4(2+c)}}\\\\\n&= \\sqrt{4+2\\sqrt{2+c}}\\\\\n&= \\sqrt{2(2+\\sqrt{2+c})}\\\\\n&= \\sqrt{2}\\sqrt{2+\\sqrt{2+c}}.\n\\end{align*}Then, we can combine like terms and solve: \\begin{align*}\n\\sqrt{2}\\sqrt{2+\\sqrt{2+c}}+ \\sqrt{2+\\sqrt{2+c}} &= 2+2\\sqrt{2}\\\\\n\\Rightarrow \\qquad (1+\\sqrt{2})\\sqrt{2+\\sqrt{2+c}} &=2(1+\\sqrt{2})\\\\\n\\Rightarrow \\qquad \\sqrt{2+\\sqrt{2+c}} &= 2\\\\\n\\Rightarrow \\qquad 2+\\sqrt{2+c} &= 4\\\\\n\\Rightarrow \\qquad \\sqrt{2+c} &= 2\\\\\n\\Rightarrow \\qquad 2+c &= 4\\\\\n\\Rightarrow \\qquad c &= \\boxed{2}\n\\end{align*}"
-}

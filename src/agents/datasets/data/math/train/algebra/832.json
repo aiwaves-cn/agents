@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a \\bowtie b = a+\\sqrt{b+\\sqrt{b+\\sqrt{b+...}}}$. If $7\\bowtie g = 9$, find the value of $g$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We know that $7\\bowtie g = 7+\\sqrt{g+\\sqrt{g+\\sqrt{g+...}}}=9$. Therefore, $$\\sqrt{g+\\sqrt{g+\\sqrt{g+...}}}=2.$$ Because the series of $\\sqrt{g+\\sqrt{g+\\sqrt{g+...}}}$ is infinite, we can substitute $2$ into the series for any $\\sqrt{g+\\sqrt{g+\\sqrt{g+...}}}$ we want. Thus, $$\\sqrt{g+\\sqrt{g+\\sqrt{g+...}}}=2$$ implies that $$\\sqrt{g+\\sqrt{g+\\sqrt{g+...}}}=\\sqrt{g+2}=2.$$ Squaring both sides of this new equality, we have $g+2=4$, or $g=\\boxed{2}$."
-}

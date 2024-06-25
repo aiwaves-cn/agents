@@ -1,6 +1,0 @@
-{
-    "problem": "An equilateral triangle $ABC$ shares a common side $BC$ with a square $BCDE,$ as pictured. What is the number of degrees in $\\angle DAE$ (not pictured)? [asy]\npair pA, pB, pC, pD, pE;\npA = (0, 0);\npB = pA + dir(300);\npC = pA + dir(240);\npD = pC + dir(270);\npE = pB + dir(270);\ndraw(pA--pB--pC--pA);\ndraw(pB--pC--pD--pE--pB);\nlabel(\"$A$\", pA, N);\nlabel(\"$B$\", pB, E);\nlabel(\"$C$\", pC, W);\nlabel(\"$D$\", pD, SW);\nlabel(\"$E$\", pE, SE);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "First of all, for our benefit, we should draw in the desired angle: [asy]\npair pA, pB, pC, pD, pE;\npA = (0, 0);\npB = pA + dir(300);\npC = pA + dir(240);\npD = pC + dir(270);\npE = pB + dir(270);\ndraw(pA--pB--pC--pA);\ndraw(pB--pC--pD--pE--pB);\ndraw(pD--pA--pE, red);\nlabel(\"$A$\", pA, N);\nlabel(\"$B$\", pB, E);\nlabel(\"$C$\", pC, W);\nlabel(\"$D$\", pD, SW);\nlabel(\"$E$\", pE, SE);\n[/asy] We can see that $AB = BC = EB,$ thus $\\triangle ABE$ is an isosceles triangle, where $\\angle ABE = 90^\\circ + 60^\\circ = 150^\\circ.$ Since the other two angles are equal and add up to $30^\\circ$, we have that $\\angle BAE = 15^\\circ.$ Likewise, $\\angle CAD = 15^\\circ.$\n\nThen, $\\angle DAE = \\angle CAB - \\angle CAD - \\angle BAE = 60^\\circ - 15^\\circ - 15^\\circ = \\boxed{30^\\circ.}$"
-}

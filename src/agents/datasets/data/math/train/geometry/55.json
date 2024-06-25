@@ -1,6 +1,0 @@
-{
-    "problem": "A triangle in a Cartesian coordinate plane has vertices (5, -2), (10, 5) and (5, 5). How many square units are in the area of the triangle? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Plotting the given points in a coordinate plane, we find that the triangle is a right triangle whose legs have length $5-(-2)=7$ and $10-5=5$ units.  The area of the triangle is $\\frac{1}{2}(\\text{base})(\\text{height})=\\frac{1}{2}(7)(5)=\\boxed{17.5}$ square units.\n\n[asy]\ndefaultpen(linewidth(0.7)+fontsize(8));\ndotfactor = 4;\ndraw((-1,0)--(10,0),Arrows(4));\ndraw((0,-4)--(0,10),Arrows(4));\npair A=(5,-2), B=(10,5), C=(5,5);\npair[] dots = {A,B,C};\ndot(dots);\ndraw(A--B--C--cycle);\nlabel(rotate(90)*\"$5-(-2)$\",(0,0.2)+(A+C)/2,W);\nlabel(\"$10-5$\",(B+C)/2,N);\nlabel(\"$(5,-2)$\",A,S);\nlabel(\"$(10,5)$\",B,NE);\nlabel(\"$(5,5)$\",C,NW);\n[/asy]"
-}

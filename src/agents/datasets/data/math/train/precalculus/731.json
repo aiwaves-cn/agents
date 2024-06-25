@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{A}$ be a matrix such that\n\\[\\mathbf{A} \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} = \\begin{pmatrix} -15 \\\\ 6 \\end{pmatrix}.\\]Find $\\mathbf{A}^5 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Note that\n\\[\\mathbf{A} \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} = \\begin{pmatrix} -15 \\\\ 6 \\end{pmatrix} = -3 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}.\\]Then\n\\begin{align*}\n\\mathbf{A}^2 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} &= \\mathbf{A} \\mathbf{A} \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} \\\\\n&= \\mathbf{A} \\left( -3 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} \\right) \\\\\n&= -3 \\mathbf{A} \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} \\\\\n&= -3  \\left( -3 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} \\right) \\\\\n&= (-3)^2 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}.\n\\end{align*}In the same way, we can compute that\n\\begin{align*}\n\\mathbf{A}^3 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} &= (-3)^3 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}, \\\\\n\\mathbf{A}^4 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} &= (-3)^4 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}, \\\\\n\\mathbf{A}^5 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} &= (-3)^5 \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} = \\boxed{\\begin{pmatrix} -1215 \\\\ 486 \\end{pmatrix}}.\n\\end{align*}"
-}

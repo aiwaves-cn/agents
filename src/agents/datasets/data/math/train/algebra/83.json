@@ -1,6 +1,0 @@
-{
-    "problem": "What is the length of the segment of the number line whose endpoints satisfy $|x-\\sqrt[5]{16}|=3$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have $x-\\sqrt[5]{16}=3$ or $x-\\sqrt[5]{16}=-3$. Our two solutions are $x=\\sqrt[5]{16}+3$ and $x=\\sqrt[5]{16}-3$. These are the endpoints of the segment, and we need to find the length, so take the larger minus the smaller: $(\\sqrt[5]{16}+3)-(\\sqrt[5]{16}-3)=\\boxed{6}$."
-}

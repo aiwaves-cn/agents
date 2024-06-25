@@ -1,6 +1,0 @@
-{
-    "problem": "What is the minimum number of equilateral triangles, of side length 1 unit, needed to cover an equilateral triangle of side length 10 units?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The ratio of the sides of the small to big equilateral triangle (note that they are similar) is $1/10$, so the ratio of their areas is $(1/10)^2 = 1/100$. So the big equilateral triangle has 100 times the area of a small one, so it will take $\\boxed{100}$ small triangles to cover the big one."
-}

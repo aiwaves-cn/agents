@@ -1,6 +1,0 @@
-{
-    "problem": "How many factors of 1000 can be divided by 20 without a remainder?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can think of 1000 as $20 \\times 50$. The factors of 50 are 1, 2, 5, 10, 25 and 50. If we multiply each of these 6 factors of 50 by 20, we  will get the six ($\\boxed{6}$) factors of 1000 that can be divided evenly by 20. They are 20, 40, 100, 200, 500 and 1000."
-}

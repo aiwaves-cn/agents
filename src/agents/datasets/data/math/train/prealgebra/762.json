@@ -1,6 +1,0 @@
-{
-    "problem": "What is the simplified value of the sum: $-1^{2004} + (-1)^{2005} + 1^{2006} -1^{2007}$?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Recall that the conventions for carrying out operations say that exponents come before negations. So $-1^{2004}$ means $-(1^{2004})$ and not $(-1)^{2004}$. Since any power of 1 is 1, then, we find $-1^{2004}=-1$. Since the exponent in the expression $(-1)^{2005}$ is odd, we have $(-1)^{2005}=-1$. The last two terms $1^{2006}$ and $1^{2007}$ are each 1. Putting everything together, we have $-1+(-1)+1-1=\\boxed{-2}$."
-}

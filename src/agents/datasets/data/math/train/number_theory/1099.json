@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $x$ is a multiple of $15336$, what is the greatest common divisor of $f(x)=(3x+4)(7x+1)(13x+6)(2x+9)$ and $x$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "In $f(x)$, all terms will have a multiple of $x$ except for the constant term, which is the multiple of the four constants $4,1,6$, and $9$.\n\nRecall (from the Euclidean algorithm) that the greatest common divisor of $a$ and $b$ is the same as the greatest common divisor of $a$ and $a-kb$ where $k,a,$ and $b$ are any integers. Therefore, finding the greatest common divisor of $f(x)$ and $x$ is the same as finding the greatest common divisor of $x$ and the constant term of $f(x)$. Therefore, we want to find \\begin{align*}\n\\text{gcd}\\,((3x+4)(7x+1)(13x+6)(2x+9),x) &=\\text{gcd}\\,(4 \\cdot 1 \\cdot 6 \\cdot 9, x)\\\\\n&=\\text{gcd}\\,(216,x)\n\\end{align*}Since $15336$ is a multiple of $216$, the greatest common divisor of $f(x)$ and $x$ is $\\boxed{216}$."
-}

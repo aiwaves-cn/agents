@@ -1,6 +1,0 @@
-{
-    "problem": "A bowl contains 10 jellybeans (four red, one blue and five white). If you pick three jellybeans from the bowl at random and without replacement, what is the probability that exactly two will be red? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "First, we consider how many total sets of three jellybeans we can select, which is very simply ${10 \\choose 3} = 120$, if we treat all 10 jellybeans as distinct. Now, if we have exactly 2 red jellybeans, there are ${4 \\choose 2} = 6$ pairs of red jellybeans, and $5+1 = 6$ choices for the third non-red jellybean. So, there are $6 \\cdot 6 = 36$ successful outcomes. So our probability is $\\frac{6 \\cdot 6}{120} = \\frac{6}{20} = \\boxed{\\frac{3}{10}}$."
-}

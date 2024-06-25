@@ -1,6 +1,0 @@
-{
-    "problem": "Sarah wants to order a pizza with 2 different toppings. She has 9 different toppings to choose from. How many different pizzas could she order?",
-    "level": "Level 1",
-    "type": "Counting & Probability",
-    "solution": "There are 9 choices of toppings, and we need to choose 2 distinct toppings. This is represented by the number of 2-element subsets of a 9-element set. We use the binomial coefficient ${9 \\choose 2} = \\boxed{36}$ to compute this."
-}

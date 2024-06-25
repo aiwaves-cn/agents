@@ -1,6 +1,0 @@
-{
-    "problem": "Convert the point $(\\rho,\\theta,\\phi) = \\left( 2, \\pi, \\frac{\\pi}{4} \\right)$ in spherical coordinates to rectangular coordinates.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that $\\rho = 12,$ $\\theta = \\pi,$ and $\\phi = \\frac{\\pi}{4},$ so\n\\begin{align*}\nx &= \\rho \\sin \\phi \\cos \\theta = 2 \\sin \\frac{\\pi}{4} \\cos \\pi = -\\sqrt{2}, \\\\\ny &= \\rho \\sin \\phi \\sin \\theta = 2 \\sin \\frac{\\pi}{4} \\sin \\pi = 0, \\\\\nz &= \\rho \\cos \\phi = 2 \\cos \\frac{\\pi}{4} = \\sqrt{2}.\n\\end{align*}Therefore, the rectangular coordinates are $\\boxed{(-\\sqrt{2}, 0, \\sqrt{2})}.$"
-}

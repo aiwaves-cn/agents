@@ -1,6 +1,0 @@
-{
-    "problem": "There is a smallest positive real number $a$ such that there exists a positive real number $b$ such that all the roots of the polynomial $x^3-ax^2+bx-a$ are real. In fact, for this value of $a$ the value of $b$ is unique. What is the value of $b?$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $r,$ $s,$ $t$ be the real roots, so\n\\[r^3 - ar^2 + br - a = 0.\\]If $r$ is negative, then $r^3,$ $-ar^2,$ $br,$ and $-a$ are all negative, so\n\\[r^3 - ar^2 + br - a < 0,\\]contradiction.  Also, $r \\neq 0,$ so $r$ is positive.  Similarly, $s$ and $t$ are positive.\n\nBy Vieta's formulas, $r + s + t = a$ and $rst = a.$  By AM-GM,\n\\[\\frac{r + s + t}{3} \\ge \\sqrt[3]{rst}.\\]Then\n\\[\\frac{a}{3} \\ge \\sqrt[3]{a}.\\]Hence, $a \\ge 3 \\sqrt[3]{a},$ so $a^3 \\ge 27a.$  Since $a$ is positive, $a^2 \\ge 27,$ so $a \\ge 3 \\sqrt{3}.$\n\nEquality occurs if and only if $r = s = t = \\sqrt{3},$ so the cubic is\n\\[(x - \\sqrt{3})^3 = x^3 - 3x^2 \\sqrt{3} + 9x - 3 \\sqrt{3} = 0.\\]Thus, $b = \\boxed{9}.$"
-}

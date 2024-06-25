@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\displaystyle {{\\left((3!)!\\right)!}\\over{3!}}= k\\cdot\nn!$, where $k$ and $n$ are positive integers and $n$ is as large as possible, find $k+n$.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Note that$${{\\left((3!)!\\right)!}\\over{3!}}=\n{{(6!)!}\\over{6}}={{720!}\\over6}={{720\\cdot719!}\\over6}=120\\cdot719!.$$ Because $120\\cdot719!<720!$, conclude that $n$ must be less than 720, so the maximum value of $n$ is 719. The requested value of $k+n$ is therefore $120+719=\\boxed{839}$."
-}

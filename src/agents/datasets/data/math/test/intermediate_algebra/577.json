@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$, $b$, and $c$ be three distinct one-digit numbers. What is the maximum value of the sum of the roots of the equation $(x-a)(x-b)+(x-b)(x-c)=0$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the quadratic as\n\\[(x - b)(2x - a - c) = 0.\\]Then the sum of the roots is $b + \\frac{a + c}{2},$ which is maximized $b = 9$ and $a + c = 7 + 8.$  Thus, the maximum value is $9 + \\frac{15}{2} = \\boxed{\\frac{33}{2}}.$"
-}

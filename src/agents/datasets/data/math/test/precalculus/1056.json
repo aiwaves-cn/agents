@@ -1,6 +1,0 @@
-{
-    "problem": "For a point $P,$ let $d_1,$ $d_2$ and $d_3$ represents the distances from $P$ to the planes $x - z = 0,$ $x - 2y + z = 0,$ and $x + y + z = 0.$  Let $S$ be the set of points $P$ such that\n\\[d_1^2 + d_2^2 + d_3^2 = 36.\\]Find the region of the volume enclosed by $S.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $P = (a,b,c).$  Then the distance from $P$ to the plane $x - z = 0$ is\n\\[d_1 = \\frac{|a - c|}{\\sqrt{1^2 + (-1)^2}} = \\frac{|a - c|}{\\sqrt{2}}.\\]The distance from $P$ to the plane $x - 2y + z = 0$ is\n\\[d_2 = \\frac{|a - 2b + c|}{\\sqrt{1^2 + (-2)^2 + 1^2}} = \\frac{|a - 2b + c|}{\\sqrt{6}}.\\]And, the distance from $P$ to the plane $x + y + z = 0$ is\n\\[d_3 = \\frac{|a + b + c|}{\\sqrt{1^2 + 1^2 + 1^2}} = \\frac{|a + b + c|}{\\sqrt{3}}.\\]Then the equation $d_1^2 + d_2^2 + d_3^2 = 36$ becomes\n\\[\\frac{(a - c)^2}{2} + \\frac{(a - 2b + c)^2}{6} + \\frac{(a + b + c)^2}{3} = 36.\\]This simplifies to $a^2 + b^2 + c^2 = 36.$  Thus, $S$ is a sphere with radius 6, so its volume is\n\\[\\frac{4}{3} \\pi \\cdot 6^3 = \\boxed{288 \\pi}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ with vertices $A(1, -3)$, $B(-2, 0)$ and $C(4, 3)$ is reflected over the $y$-axis to form triangle $A'B'C'$. What is the length of a segment drawn from $A$ to $A'$?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Reflecting a point over the $y$-axis negates the $x$-coefficient.  So if $A$ is $(1,-3)$, $A'$ will be $(-1, -3)$.  The segment is a horizontal line of length $1+1=\\boxed{2}$."
-}

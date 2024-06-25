@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $r$: $\\frac{r+9}{r-3} = \\frac{r-2}{r+5}$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Cross-multiplying (which is the same as multiplying both sides by $r-3$ and by $r+5$) gives \\[(r+9)(r+5) = (r-2)(r-3).\\]Expanding the products on both sides gives  \\[r^2 + 9r + 5r + 45 = r^2 -2r - 3r + 6.\\]Simplifying both sides gives $r^2 + 14r + 45 = r^2 - 5r + 6$.  Simplifying this equation gives $19r = -39$, so $r = \\boxed{-\\frac{39}{19}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Three distinct integers $a,$ $b,$ and $c$ have the following properties:\n\n$\\bullet$ $abc = 17955$\n\n$\\bullet$ $a,$ $b,$ $c$ are three consecutive terms of an arithmetic sequence, in that order\n\n$\\bullet$ $3a + b,$ $3b + c,$ $3c + a$ are three consecutive terms of a geometric sequence, in that order\n\nFind $a + b + c.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "In the arithmetic sequence $a,$ $b,$ $c,$ let $d$ be the common difference, so $a = b - d$ and $c = b + d.$  Then\n\\begin{align*}\n3a + b &= 3(b - d) + b = 4b - 3d, \\\\\n3b + c &= 3b + b + d = 4b + d, \\\\\n3c + a &= 3(b + d) + (b - d) = 4b + 2d,\n\\end{align*}so\n\\[(4b + d)^2 = (4b - 3d)(4b + 2d).\\]This simplifies to $12bd + 7d^2 = d(12b + 7d) = 0.$  If $d = 0,$ then $a = b = c,$ so $a^3 = 17955.$  Since 17955 is not a perfect cube, $12b + 7d = 0,$ so $d = -\\frac{12}{7} b.$\n\nThen $a = b - d = \\frac{19}{7} b$ and $c = b + d = -\\frac{5}{7} b.$  Substituting into $abc = 17955,$ we get\n\\[\\frac{19}{7} b \\cdot b \\cdot \\left( -\\frac{5}{7} b \\right) = 17955.\\]Then $b^3 = -9261,$ so $b = -21.$  Hence, $a = -57$ and $c = 15,$ so $a + b + c = \\boxed{-63}.$"
-}

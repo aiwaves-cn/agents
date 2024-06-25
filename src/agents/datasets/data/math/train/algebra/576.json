@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $10x^2+100x+1000$ can be written in the form $a(x+b)^2+c$, where $a$, $b$, and $c$ are constants. What is $a+b+c$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We complete the square.\n\nTo begin, since $10x^2+100x+1000$ has a leading coefficient of $10$, we factor out this coefficient to obtain $$10x^2+100x+1000 = (10)(x^2+10x+100).$$Now we turn our attention to the quadratic in the second set of parentheses. This quadratic looks like the expansion of $(x+5)^2$, except that the constant term is different. Specifically, $(x+5)^2=x^2+10x+25$, so $x^2+10x+100 = (x+5)^2+75$. This gives us $$10x^2+100x+1000 = (10)[(x+5)^2+75].$$This is almost in the target form, $a(x+b)^2+c$. To get it into that precise form, we must distribute the $(10)$: $$10x^2+100x+1000 = 10(x+5)^2 + 750.$$Then we have $a=10$, $b=5$, and $c=750$, so $a+b+c = \\boxed{765}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "At a party, Ted's age is 15 years less than twice Sally's age. The sum of their ages is 54. How old is Ted?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Let Ted's age be $t$ and Sally's age be $s$. We are trying to find the value of $t$. We can write a system of two equations to represent the given information. Here are our two equations:\n\n\\begin{align*}\nt &= 2s - 15 \\\\\nt + s &= 54 \\\\\n\\end{align*}The first equation represents the statement ``Ted's age is 15 years less than twice Sally's age.'' The second equation represents the statement ``The sum of their ages is 54.'' We are solving for $t$, so we want to eliminate $s$. From the second equation, we get that $s=54-t$. Substituting that into the first equation to get rid of $s$, we have $t=2(54-t)-15$, from which we get that $t=31$. Thus, Ted's age is $\\boxed{31}$ years old."
-}

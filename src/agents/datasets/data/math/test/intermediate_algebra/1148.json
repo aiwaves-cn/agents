@@ -1,6 +1,0 @@
-{
-    "problem": "Find\n\\[\\prod_{k = 0}^\\infty \\left( 1 + \\frac{1}{14^{2^k}} \\right).\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "More generally, consider\n\\[\\prod_{k = 0}^\\infty (1 + x^{2^k}) = (1 + x)(1 + x^2)(1 + x^4) \\dotsm.\\]where $x < 1.$  (The product in the problem is the case where $x = \\frac{1}{14}$.)\n\nWe can write\n\\[1 + x^{2^k} = \\frac{(1 + x^{2^k})(1 - x^{2^k})}{1 - x^{2^k}} = \\frac{1 - x^{2^{k + 1}}}{1 - x^{2^k}}.\\]Hence,\n\\[(1 + x)(1 + x^2)(1 + x^4) \\dotsm = \\frac{1 - x^2}{1 - x} \\cdot \\frac{1 - x^4}{1 - x^2} \\cdot \\frac{1 - x^8}{1 - x^4} \\dotsm = \\frac{1}{1 - x}.\\]For $x = \\frac{1}{14},$ this is $\\frac{1}{1 - \\frac{1}{14}} = \\boxed{\\frac{14}{13}}.$"
-}

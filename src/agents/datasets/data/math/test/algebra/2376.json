@@ -1,6 +1,0 @@
-{
-    "problem": "How many solutions are there for $x$ in the following equation: $$x^2 = -|x|.$$",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We can see that $x^2$ is nonnegative.  But clearly, $-|x|$ is nonpositive.  Thus the only solutions can occur where $x^2 = -|x| = 0$.  This happens if and only if $x=0$, and so the given equation has exactly $\\boxed{1}$ solution."
-}

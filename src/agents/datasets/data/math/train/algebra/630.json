@@ -1,6 +1,0 @@
-{
-    "problem": "How many units long is a segment whose endpoints are (2,3) and (7,15)?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We use the distance formula: \\[\\sqrt{(7 - 2)^2 + (15 - 3)^2} = \\sqrt{25 + 144} = \\boxed{13}.\\]\n\n- OR -\n\nWe note that the points $(2, 3)$, $(7, 15)$, and $(7, 3)$ form a right triangle with legs of length 5 and 12. This is a Pythagorean triple, so the hypotenuse has length $\\boxed{13}$."
-}

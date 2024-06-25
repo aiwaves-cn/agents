@@ -1,6 +1,0 @@
-{
-    "problem": "If we flip 6 coins, what is the probability of getting at least 2 heads?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $2^6 = 64$ possible outcomes, since each of the 6 coins has 2 possibilities.  If we do not get at least 2 heads, then we get either no heads or one heads.  There is only 1 way to get 0 heads, and $\\binom{6}{1} = 6$ ways to get 1 head, so the probability of getting at most one head is $\\dfrac{7}{64}$.  Therefore, the probability of getting at least 2 heads is $1-\\dfrac{7}{64}=\\boxed{\\frac{57}{64}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest common divisor of $7979$ and $3713$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We can use the Euclidean Algorithm to find the greatest common divisor of these two integers. \\begin{align*}\n\\gcd(7979, 3713) &= \\gcd(3713, 7979 - 2\\cdot 3713) \\\\\n&= \\gcd(3713, 553) \\\\\n&= \\gcd(553, 3713 - 6\\cdot 553) \\\\\n&= \\gcd(553, 395) \\\\\n&= \\gcd(395, 553 - 395) \\\\\n&= \\gcd(395, 158) \\\\\n&= \\gcd(158, 395- 2\\cdot 158) \\\\\n&= \\gcd(158, 79) \\\\\n&= \\boxed{79}.\n\\end{align*}"
-}

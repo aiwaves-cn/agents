@@ -1,6 +1,0 @@
-{
-    "problem": "License plates in the newly established state of Atlantis consist of three letters followed by three digits.  The first letter must be a vowel (y is not considered a vowel), and no letter can be repeated.  The first digit must be one of $\\{1,2,4,6\\}$, which corresponds to the location the license was issued.  No digit may be repeated.  How many possible license plates exist?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "First, we can count the number of ways to arrange the letters.  There are $5$ choices for the first letter, since it must be a vowel.  This leaves $25$ possibilities for the second letter, since there are no repeats, and then $24$ possibilities for the third letter, for a total of: $$5\\times25\\times24=3000\\text{ letter arrangements}$$Next, we can count the number of ways to arrange the digits.  There are $4$ possible choices for the first digit, corresponding to the four elements of the set $\\{1,2,4,6\\}$.  This leaves $9$ remaining choices for the next digit, and $8$ choices for the last digit, a total of: $$4\\times9\\times8=288\\text{ digit arrangements}$$Since the digits and letters can be arranged independently, the total number of license plates will be: $$3000\\times288=\\boxed{864000}$$"
-}

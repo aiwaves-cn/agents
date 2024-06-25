@@ -1,6 +1,0 @@
-{
-    "problem": "For $y=\\frac{x-4}{5x-10}$ and $x\\neq 2$, what is the value of $y$ that is not attainable? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First we multiply both sides by $5x-10$ which gives \\[ x-4=(5x-10)y=5xy-10y \\]We can rearrange to $-4+10y=x(5y-1)$. When $5y-1=0$ or $y=\\frac15$, the left hand side is nonzero while the right hand side is zero, so $\\boxed{\\frac15}$ is unattainable."
-}

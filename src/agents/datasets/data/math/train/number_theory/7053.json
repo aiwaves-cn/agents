@@ -1,6 +1,0 @@
-{
-    "problem": "A solid rectangular block is formed by gluing together $N$ congruent 1-cm cubes face to face. When the block is viewed so that three of its faces are visible, exactly $231$ of the 1-cm cubes cannot be seen. Find the smallest possible value of $N.$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The $231$ cubes which are not visible must lie below exactly one layer of cubes. Thus, they form a rectangular solid which is one unit shorter in each dimension. If the original block has dimensions $l \\times m \\times n$, we must have $(l - 1)\\times(m-1) \\times(n - 1) = 231$. The prime factorization of $231 = 3\\cdot7\\cdot11$, so we have a variety of possibilities; for instance, $l - 1 = 1$ and $m - 1 = 11$ and $n - 1 = 3 \\cdot 7$, among others. However, it should be fairly clear that the way to minimize $l\\cdot m\\cdot n$ is to make $l$ and $m$ and $n$ as close together as possible, which occurs when the smaller block is $3 \\times 7 \\times 11$. Then the extra layer makes the entire block $4\\times8\\times12$, and $N= \\boxed{384}$."
-}

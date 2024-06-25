@@ -1,6 +1,0 @@
-{
-    "problem": "Annie's soccer team is conducting a passing drill in which each of the 11 members of the soccer team must pass the ball to each of the other members exactly three times. How many times must the ball be passed before the passing drill is over?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "A soccer pass differs from a handshake in that Person A passing the ball to Person B is clearly different from Person B passing the ball to Person A. Therefore, there are $11$ members of the team who can pass the ball to $10$ other members, meaning that there are $11 \\cdot 10 = 110$ possible passes between two members of the team. Each member must pass the ball to each of the other members three times, so we multiply $110$ by $3$ to obtain $\\boxed{330},$ our answer."
-}

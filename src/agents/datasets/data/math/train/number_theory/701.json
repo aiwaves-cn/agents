@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product of $218_9 \\cdot 5_9$.  Express your answer in base 9.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We begin by multiplying the units digit: $8_9 \\times 5_9 = 40_{10} = 44_9$. So, we write down a $4$ and carry-over another $4$. Moving on to the next digit, we need to evaluate $1_9 \\times 5_9 + 4_9 = 9_{10} = 10_{9}$. Thus, the next digit is a $0$ and a $1$ is carried over. Finally, the leftmost digits are given by the operation $2_9 \\times 5_9 + 1_9 = 11_{10} = 12_9$. Writing this out, we have  $$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c}\n& & & & \\stackrel{1}{2} & \\stackrel{4}{1} & \\stackrel{}{8}_9 \\\\\n& & & \\times & & & 5_9 \\\\\n\\cline{4-7} & & & 1 & 2 & 0 & 4_9 \\\\\n\\end{array}$$So our final answer is $\\boxed{1204_9}$."
-}

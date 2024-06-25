@@ -1,6 +1,0 @@
-{
-    "problem": "Find $4321_{7}-123_{7}+32_{7}-21_{7}+1_{7}$. Express your answer in base $7$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "To avoid borrowing, we switch around the order of the numbers to $4321_{7}+32_{7}-123_{7}+1_{7}-21_{7}$.\n\nNow, we can easily find that \\begin{align*}\n&\\ 4321_{7}+32_{7}-123_{7}+1_{7}-21_{7}\\\\\n&=4353_{7}-123_{7}+1_{7}-21_{7}\\\\\n&=4230_{7}+1_{7}-21_{7}\\\\\n&=4231_{7}-21_{7}\\\\\n&=\\boxed{4210_{7}}.\n\\end{align*}"
-}

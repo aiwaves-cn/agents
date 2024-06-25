@@ -1,6 +1,0 @@
-{
-    "problem": "The letters of the alphabet are each assigned a random integer value, and $H=10$. The value of a word comes from the sum of its letters' values. If $MATH$ is 35 points, $TEAM$ is 42 points and $MEET$ is 38 points, what is the value of $A$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "$MATH$ is 35 points, and $H$ is 10 points, so $MAT$ is 25 points. $TEAM = E + MAT$, so $E = 42 - 25 = 17$ points. $MEET$ is 38 points, and $E$ is 17 points, so $MT = 38 - 2 \\cdot 17 = 4$ points. Finally, because $TEAM = E + MT + A$, we can solve for $A$: $17 + 4 + A = 42$, so $A= 42 - 17 - 4 = \\boxed{21}$ points."
-}

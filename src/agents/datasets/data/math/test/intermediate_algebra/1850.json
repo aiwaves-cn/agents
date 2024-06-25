@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be positive real numbers.  Find the minimum value of\n\\[\\left( 2a + \\frac{1}{3b} \\right)^2 + \\left( 2b + \\frac{1}{3c} \\right)^2 + \\left( 2c + \\frac{1}{3a} \\right)^2.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Expanding, we get\n\\[\\left( 2a + \\frac{1}{3b} \\right)^2 + \\left( 2b + \\frac{1}{3c} \\right)^2 + \\left( 2c + \\frac{1}{3a} \\right)^2 = 4a^2 + \\frac{4a}{3b} + \\frac{1}{9c^2} + 4b^2 + \\frac{4b}{3c} + \\frac{1}{9c^2} + 4c^2 + \\frac{4c}{3a} + \\frac{1}{9a^2}.\\]By AM-GM,\n\\[ 4a^2 + \\frac{1}{9c^2} + 4b^2 + \\frac{1}{9c^2} + 4c^2 + \\frac{1}{9a^2} \\ge 6 \\sqrt[6]{4a^2 \\cdot \\frac{1}{9c^2} \\cdot 4b^2 \\cdot \\frac{1}{9c^2} \\cdot 4c^2 \\cdot \\frac{1}{9a^2}} = 4\\]and\n\\[\\frac{4a}{3b} + \\frac{4b}{3c} + \\frac{4c}{3a} \\ge 3 \\sqrt[3]{\\frac{4a}{3b} \\cdot \\frac{4b}{3c} \\cdot \\frac{4c}{3a}} = 4.\\]Hence,\n\\[4a^2 + \\frac{4a}{3b} + \\frac{1}{9c^2} + 4b^2 + \\frac{4b}{3c} + \\frac{1}{9c^2} + 4c^2 + \\frac{4c}{3a} + \\frac{1}{9a^2} \\ge 8.\\]Equality occurs when $2a = 2b = 2c = \\frac{1}{3a} = \\frac{1}{3b} = \\frac{1}{3c}$ and $\\frac{4a}{3b} = \\frac{4b}{3c} = \\frac{4c}{3a},$ or $a = b = c = \\frac{1}{\\sqrt{6}},$ so the minimum value is $\\boxed{8}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the intersection point of the line $y = 2x + 5$ and the line perpendicular to it that passes through the point $(5, 5)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The slope of $y = 2x + 5$ is 2, which means the slope of any line perpendicular to it is $-\\frac 12$.  Using the point-slope equation for a line we can find the equation of the second line to be $y - 5 = -\\frac 12 (x - 5)$.  To find the intersection of this with the first line, we plug $y = 2x + 5$ into the second equation to get $2x + 5 - 5 = - \\frac 12 (x - 5) \\Rightarrow \\frac {5}2 x = \\frac 52 \\Rightarrow x = 1$.  Therefore $y = 2\\cdot 1 + 5 = 7$ making the intersection at $\\boxed{(1, 7)}$."
-}

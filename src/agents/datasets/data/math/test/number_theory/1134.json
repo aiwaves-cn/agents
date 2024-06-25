@@ -1,6 +1,0 @@
-{
-    "problem": "If $a\\equiv 16\\pmod{37}$ and $b\\equiv 21\\pmod{37}$, then for what integer $n$ in the set $\\{0,1,2,\\ldots,35,36\\}$ is it true that $$a-b\\equiv n\\pmod{37}~?$$",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Reading all congruences $\\pmod{37}$, we have \\begin{align*}\na-b &\\equiv 16-21 \\\\\n&\\equiv -5 \\\\\n&\\equiv -5+37 \\\\\n&\\equiv \\boxed{32}.\n\\end{align*}"
-}

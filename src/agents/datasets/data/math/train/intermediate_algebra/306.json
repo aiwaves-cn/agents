@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\log (xy^3)= 1$ and $\\log (x^2y) = 1$,  what is $\\log (xy)$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We have \\[1 = \\log(xy^{3}) = \\log x + 3\\log y \\quad\\text{and}\\quad 1 = \\log(x^{2}y) = 2\\log x + \\log y.\\]Solving yields $\\log x = \\frac{2}{5}$ and $\\log y = \\frac{1}{5}$. Thus \\[\\log(xy) = \\log x + \\log y = \\boxed{\\frac{3}{5}}.\\]"
-}

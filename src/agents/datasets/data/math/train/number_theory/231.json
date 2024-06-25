@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of odd digits in the base-4 representation of $233_{10}$.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "We begin by converting $233_{10}$ into base-4. Since $4^3=64$ is the largest power of 4 that is less than 233, and $3\\cdot64=192$ is the largest multiple of 64 that is less than 233, the coefficient of the $4^3$ term will be 3. From here, we are left with a remainder of $233-192=41$. The largest power of 4 that is less than this number is $4^2=16$, and the largest multiple of 16 that is less than 41 is $2\\cdot16=32$. This leaves us with $41-32=9$, which we can express as $2\\cdot4^1+1\\cdot4^0$. So, we find that $233_{10}=3\\cdot4^3+2\\cdot4^2+2\\cdot{4^1}+1\\cdot4^0=3221_4$, which has $\\boxed{2}$ odd digits."
-}

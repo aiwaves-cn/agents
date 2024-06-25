@@ -1,6 +1,0 @@
-{
-    "problem": "2 diagonals of a regular heptagon (a 7-sided polygon) are chosen.  What is the probability that they intersect inside the heptagon?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{7}{2} = 21$ pairs of points in the heptagon, and all but 7 (the sides of the heptagon) are diagonals, which means there are 14 diagonals.  So there are $\\binom{14}{2} = 91$ pairs of diagonals.  Any four points on the heptagon uniquely determine a pair of intersecting diagonals. (If vertices $A,B,C,D$ are chosen, where $ABCD$ is a convex quadrilateral, the intersecting pair of diagonals are $AC$ and $BD$.)  So the number of sets of intersecting diagonals is the number of combinations of 4 points, which is $\\binom{7}{4} = 35$.  So the probability that a randomly chosen pair of diagonals intersect is $\\dfrac{35}{91} = \\boxed{\\dfrac{5}{13}}$."
-}

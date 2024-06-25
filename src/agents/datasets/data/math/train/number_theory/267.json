@@ -1,6 +1,0 @@
-{
-    "problem": "Each row of a seating arrangement seats 7 or 8 people. Forty-six people are to be seated. How many rows seat exactly 8 people if every seat is occupied?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let $x$ be the number of rows with 8 people.  If we removed a person from each of these rows, then every row would contain 7 people.  Therefore, $46 - x$ must be divisible by 7.\n\nThen $x \\equiv 46 \\equiv 4 \\pmod{7}$.  The first few positive integers that satisfy this congruence are 4, 11, 18, and so on.  However, each row contains at least 7 people.  If there were 7 or more rows, then there would be at least $7 \\cdot 7 = 49$ people.  We only have 46 people, so there must be at most six rows.  Therefore, the number of rows with 8 people is $\\boxed{4}$."
-}

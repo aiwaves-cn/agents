@@ -1,6 +1,0 @@
-{
-    "problem": "When Carlos divides his marbles into groups of six, seven, or eight, he has one marble left over. Assuming Carlos has more than one marble, what is the smallest possible number of marbles in Carlos's collection?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let $N$ be the number of marbles. We know that for some integers $a,$ $b,$ and $c,$ $$N = 6a+1,\\\\N = 7b+1, \\\\N = 8c +1.$$In other words, $N-1$ is divisible by $6,$ $7,$ and $8.$ We have $$\\text{lcm}[6,7,8] = \\text{lcm}[3,7,8]= 3\\cdot 7\\cdot 8 = 168,$$and so $168$ divides $N-1.$ The smallest possible value of $N$ greater than $1$ is $N = 168+1 = \\boxed{169}.$"
-}

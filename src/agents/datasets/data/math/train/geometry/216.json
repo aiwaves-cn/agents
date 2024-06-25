@@ -1,6 +1,0 @@
-{
-    "problem": "Six boys stood equally spaced on a circle of radius 40 feet. Each boy walked to all of the other non-adjacent persons on the circle, shook their hands and then returned to his original spot on the circle before the next boy started his trip to shake hands with all of the other non-adjacent boys on the circle. After all six boys had done this, what is the least distance in feet that could have been traveled? Express your answer in simplest radical form.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The thicker solid line in the diagram shows the shortest path that one person could travel. The circle is equally divided into six 60-degree arcs, so the short distance is 40 feet, the same as a radius. The dotted line is a diameter that separates the quadrilateral into two 30-60-90 triangles. The longer leg is $(80\\sqrt {3})/2$, or $40\\sqrt{3}$ feet. Each person travels $40\\sqrt{3} + 40 + 40 + 40\\sqrt{3} = 80 + 80\\sqrt{3}$ feet. After all six people did this, $6(80 + 80\\sqrt{3}) = \\boxed{480 + 480\\sqrt{3}\\text{ feet}}$ had been traveled. [asy]\nimport olympiad; import geometry; size(100); defaultpen(linewidth(0.8)); dotfactor=4;\ndraw(unitcircle);\nfor(int i = 0; i <= 6; ++i){\ndot(dir(60*i + 30));\n}\ndraw(dir(30)--dir(90)--dir(150)--dir(270)--cycle);\ndraw(dir(90)--dir(270),dotted);\n[/asy]"
-}

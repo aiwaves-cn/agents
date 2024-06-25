@@ -1,6 +1,0 @@
-{
-    "problem": "Bob plays a game where, for some number $n$, he chooses a random integer between 0 and $n-1$, inclusive. If Bob plays this game for each of the first four prime numbers, what is the probability that the sum of the numbers he gets is greater than 0?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The first four primes are 2, 3, 5, and 7. The only way for the sum of the numbers Bob gets to not be greater than 0 is if he gets a 0 each time he plays the game. The chance that Bob will get a 0 each time he plays is $\\frac{1}{2}\\cdot \\frac{1}{3} \\cdot \\frac{1}{5} \\cdot \\frac{1}{7}=\\frac{1}{210}$. Therefore, the probability that Bob will not get all 0's is $1-\\frac{1}{210}=\\boxed{\\frac{209}{210}}$."
-}

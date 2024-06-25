@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = -8,$ then find\n\\[\\begin{vmatrix} b & a \\\\ d & c \\end{vmatrix}.\\]",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "Since $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = -8,$ $ad - bc = -8.$  Then\n\\[\\begin{vmatrix} b & a \\\\ d & c \\end{vmatrix} = bc - ad = \\boxed{8}.\\](Why does this make sense geometrically?)"
-}

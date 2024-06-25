@@ -1,6 +1,0 @@
-{
-    "problem": "Charles has two six-sided die. One of the die is fair, and the other die is biased so that it comes up six with probability $\\frac{2}{3}$ and each of the other five sides has probability $\\frac{1}{15}$. Charles chooses one of the two dice at random and rolls it three times. Given that the first two rolls are both sixes, the probability that the third roll will also be a six is $\\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The probability that he rolls a six twice when using the fair die is $\\frac{1}{6}\\times \\frac{1}{6}=\\frac{1}{36}$. The probability that he rolls a six twice using the biased die is $\\frac{2}{3}\\times \\frac{2}{3}=\\frac{4}{9}=\\frac{16}{36}$. Given that Charles rolled two sixes, we can see that it is $16$ times more likely that he chose the second die. Therefore the probability that he is using the fair die is $\\frac{1}{17}$, and the probability that he is using the biased die is $\\frac{16}{17}$. The probability of rolling a third six is\n\\[\\frac{1}{17}\\times \\frac{1}{6} + \\frac{16}{17} \\times \\frac{2}{3} = \\frac{1}{102}+\\frac{32}{51}=\\frac{65}{102}\\]Therefore, our desired $p+q$ is $65+102= \\boxed{167}$"
-}

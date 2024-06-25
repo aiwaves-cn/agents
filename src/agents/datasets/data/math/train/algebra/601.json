@@ -1,6 +1,0 @@
-{
-    "problem": "Two parabolas are the graphs of the equations $y=3x^2+4x-5$ and $y=x^2+11$. Give all points where they intersect. List the points in order of increasing $x$-coordinate, separated by semicolons.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Setting the right-hand sides of the given equations equal gives $3x^2+4x-5=x^2+11$. Combining like terms gives $2x^2+4x=16$. Dividing by $2$ gives $x^2+2x=8$, and rearranging gives $x^2 +2x - 8=0$.  Factoring gives $(x+4)(x-2)=0$, so our solutions are $x=-4$ and $x=2$.  Substituting these into either of the original equations to find the corresponding values of $y$, we find the points of intersection to be $\\boxed{(-4, 27);(2, 15)}$."
-}

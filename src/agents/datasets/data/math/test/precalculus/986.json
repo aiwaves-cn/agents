@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x_1,$ $x_2,$ $x_3,$ $y_1,$ $y_2,$ and $y_3$ be real numbers such that\n\\begin{align*}\n(x_1 - x_2)^2 + (y_1 - y_2)^2 &= 9, \\\\\n(x_1 - x_3)^2 + (y_1 - y_3)^2 &= 16, \\\\\n(x_2 - x_3)^2 + (y_2 - y_3)^2 &= 25.\n\\end{align*}Find $\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}^2.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "In general,\n\\[\\frac{1}{2} \\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}\\]is the signed area of the triangle with vertices at $(x_1,y_1),$ $(x_2,y_2),$ and $(x_3,y_3).$  (The area is signed, i.e. it can be positive or negative, depending on the orientation of the triangle.)  Here, the sides of the triangle are 3, 4, and 5, which is a right triangle.  Therefore, its area is $\\frac{1}{2} \\cdot 3 \\cdot 4 = 6.$  Then\n\\[\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix} = \\pm 12,\\]so\n\\[\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}^2 = \\boxed{144}.\\]"
-}

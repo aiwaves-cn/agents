@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real numbers $k$ such that\n\\[\\left\\| k \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} - \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} \\right\\| = 2 \\sqrt{13}.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We have that\n\\begin{align*}\n\\left\\| k \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix} - \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} \\right\\| &= \\left\\| \\begin{pmatrix} 2k \\\\ -3k \\end{pmatrix} - \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} \\right\\| \\\\\n&= \\left\\| \\begin{pmatrix} 2k - 4 \\\\ -3k - 7 \\end{pmatrix} \\right\\| \\\\\n&= \\sqrt{(2k - 4)^2 + (-3k - 7)^2} \\\\\n&= 13k^2 + 26k + 65,\n\\end{align*}so we want to solve the equation $\\sqrt{13k^2 + 26k + 65} = 2 \\sqrt{13}$.  Squaring both sides, we get $13k^2 + 26k + 65 = 52$, which simplifies to\n\\[13k^2 + 26k + 13 = 13(k + 1)^2 = 0.\\]The only solution $k = \\boxed{-1}.$"
-}

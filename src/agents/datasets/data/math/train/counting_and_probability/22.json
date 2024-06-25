@@ -1,6 +1,0 @@
-{
-    "problem": "The Smith family has 4 sons and 3 daughters. In how many ways can they be seated in a row of 7 chairs such that at least 2 boys are next to each other?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "This problem is a perfect candidate for complementary counting.  It will be fairly difficult to try to count this directly, since there are lots of possible cases (just two are BBBBGGG and BGGBBGB, where B is a boy and G is a girl).  But there is only one way to assign genders to the seating so that no two boys are next to each other, and that is BGBGBGB. If we seat the children as BGBGBGB, then there are $4!$ orderings for the 4 boys, and $3!$ orderings for the 3 girls, giving a total of $4! \\times 3! = 144$ seatings for the 7 children. These are the seatings that we don't want, so to count the seatings that we do want, we need to subtract these seatings from the total number of seatings without any restrictions.  Since there are 7 kids, there are $7!$ ways to seat them. So the answer is $7! - (4! \\times 3!) = 5040-144 = \\boxed{4896}$."
-}

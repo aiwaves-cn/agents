@@ -1,6 +1,0 @@
-{
-    "problem": "Find all angles $x$, $0^\\circ \\le x < 180^\\circ,$ such that\n\\[\\sin 6x + \\cos 4x = 0.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "We can write\n\\[\\sin 6x + \\cos 4x = \\sin 6x + \\sin (90^\\circ - 4x).\\]Then from the sum-to-product formula,\n\\begin{align*}\n\\sin 6x + \\sin (90^\\circ - 4x) &= 2 \\sin \\left( \\frac{6x + 90^\\circ - 4x}{2} \\right) \\cos \\left( \\frac{6x - (90^\\circ - 4x)}{2} \\right) \\\\\n&= 2 \\sin (x + 45^\\circ) \\cos (5x - 45^\\circ).\n\\end{align*}Thus, $\\sin (x + 45^\\circ) = 0$ or $\\cos (5x - 45^\\circ) = 0.$\n\nIf $\\sin (x + 45^\\circ) = 0,$ then $x = 135^\\circ.$\n\nIf $\\cos (5x - 45^\\circ) = 0,$ then $5x - 45^\\circ$ must be $90^\\circ,$ $270^\\circ,$ $450^\\circ,$ $630^\\circ,$ or $810^\\circ.$  These lead to the solutions $\\boxed{27^\\circ, 63^\\circ, 99^\\circ, 135^\\circ, 171^\\circ}.$"
-}

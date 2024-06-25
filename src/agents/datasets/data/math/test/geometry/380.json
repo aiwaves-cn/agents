@@ -1,6 +1,0 @@
-{
-    "problem": "Two nonadjacent vertices of a rectangle are $(4,3)$ and $(-4,-3),$ and the other two vertices have integer coordinates. How many rectangles satisfy these conditions?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The diagonals of a rectangle are of the same length and bisect each other.  The diagonal determined by the two given points has its midpoint at $(0, 0),$ and it has length \\[\\sqrt{(4-(-4))^2 + (3-(-3))^2} = \\sqrt{8^2 + 6^2} = 10.\\]Thus, the other diagonal must have its midpoint at $(0, 0)$ and also have length $10.$ This means that the other two vertices of the rectangle must lie on the circle $x^2 + y^2 = 5^2.$ The number of lattice points (points with integer coordinates) on this circle is $12$: we have \\[(\\pm 4, \\pm 3), (\\pm 3, \\pm 4), (\\pm 5, 0), (0, \\pm 5).\\]These points pair up to give $6$ possible diagonals, of which $1$ is the given diagonal. Therefore, there are $6-1=5$ choices for the other diagonal, which uniquely determines a rectangle. Thus there are $\\boxed{5}$ possible rectangles."
-}

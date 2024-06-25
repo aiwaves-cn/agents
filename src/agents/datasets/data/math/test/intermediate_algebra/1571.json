@@ -1,6 +1,0 @@
-{
-    "problem": "Find the domain of the function $a(x) = \\sqrt{3^x - 7^x}.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "The square root $\\sqrt{3^x - 7^x}$ is defined only when $3^x \\ge 7^x.$  This is equivalent to $\\frac{7^x}{3^x} \\le 1,$ or\n\\[\\left( \\frac{7}{3} \\right)^x \\le 1.\\]This inequality is satisfied exactly when $x \\le 0.$  Thus, the domain of the function is $\\boxed{(-\\infty,0]}.$"
-}

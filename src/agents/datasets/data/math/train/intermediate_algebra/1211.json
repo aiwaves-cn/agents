@@ -1,6 +1,0 @@
-{
-    "problem": "Find $q(x)$ if the graph of $\\frac{x^3-2x^2-5x+3}{q(x)}$ has vertical asymptotes at $2$ and $-2$, no horizontal asymptote, and $q(3) = 15$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since the given function has vertical asymptotes at $2$ and $-2$, we know that $q(2) = q(-2) = 0$ (i.e. $2$ and $-2$ are roots of $q(x)$). Moreover, since the given function has no horizontal asymptote, we know that the degree of $q(x)$ must be less than the degree of the numerator, which is $3$.\n\nHence, $q(x)$ is a quadratic with roots $2$ and $-2$. In other words, we can write it as $q(x) = a(x+2)(x-2)$ for some constant $a$.  Since $q(3) = 15$, we have $a(3+2)(3-2) = 15$.\n\nSolving for $a$ gives $a = 15/5 = 3$. Hence $q(x) = 3(x-2)(x+2) = \\boxed{3x^2 - 12}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ be a positive real number.  Find the minimum value of $4x^5 + 5x^{-4}.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\n4x^5 + 5x^{-4} &= x^5 + x^5 + x^5 + x^5 + x^{-4} + x^{-4} + x^{-4} + x^{-4} + x^{-4} \\\\\n&\\ge 9 \\sqrt[9]{(x^5)^4 \\cdot (x^{-4})^5} \\\\\n&= 9.\n\\end{align*}Equality occurs when $x = 1,$ so the minimum value is $\\boxed{9}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Line segment $\\overline{AB}$ is a diameter of a circle with $AB = 24$. Point $C$, not equal to $A$ or $B$, lies on the circle. As point $C$ moves around the circle, the centroid (center of mass) of $\\triangle ABC$ traces out a closed curve missing two points. To the nearest positive integer, what is the area of the region bounded by this curve?\n$\\textbf{(A)} \\indent 25 \\qquad \\textbf{(B)} \\indent 32  \\qquad \\textbf{(C)} \\indent 50  \\qquad \\textbf{(D)} \\indent 63 \\qquad \\textbf{(E)} \\indent 75$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Draw the Median connecting C to the center O of the circle. Note that the centroid is $\\frac{1}{3}$ of the distance from O to C. Thus, as C traces a circle of radius 12, the Centroid will trace a circle of radius $\\frac{12}{3}=4$.\nThe area of this circle is $\\pi\\cdot4^2=16\\pi \\approx \\boxed{50}$."
-}

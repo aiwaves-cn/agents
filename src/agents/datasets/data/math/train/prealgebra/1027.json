@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $PQR$ is a straight line.  What is the value of $x$?\n\n[asy]\ndraw((-2,0)--(8,0),linewidth(0.7)); draw((8,0)--(5,-5.5)--(0,0),linewidth(0.7));\nlabel(\"$P$\",(-2,0),W); label(\"$Q$\",(0,0),N); label(\"$R$\",(8,0),E); label(\"$S$\",(5,-5.5),S);\n\nlabel(\"$136^\\circ$\",(0,0),SW); label(\"$64^\\circ$\",(7,0),S);\n\nlabel(\"$x^\\circ$\",(5,-4.5));\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since $\\angle PQS$ is an exterior angle of $\\triangle QRS$, then $\\angle PQS=\\angle QRS+\\angle QSR$, so $136^\\circ = x^\\circ + 64^\\circ$ or $x = 136-64=\\boxed{72}$."
-}

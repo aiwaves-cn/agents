@@ -1,6 +1,0 @@
-{
-    "problem": "A theater group has eight members, of which four are females. How many ways are there to assign the roles of a play that involve one female lead, one male lead, and three different objects that can be played by either gender?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are 4 ways to select the female lead and 4 ways to select the male lead. Afterwards, there are 6 members who can play the first inanimate object, 5 who can play the second, and 4 for the last.\n\nTherefore, the answer is $4\\times4\\times6\\times5\\times4 = \\boxed{1920\\text{ ways.}}$"
-}

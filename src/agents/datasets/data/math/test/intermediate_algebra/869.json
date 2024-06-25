@@ -1,6 +1,0 @@
-{
-    "problem": "Define the function $f(x)=\\frac{a}{1-x}$. If $f(-1)=f^{-1}(4a+1)$, find the product of all possible values of $a$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since $f(-1)=\\frac{a}{1-(-1)}=\\frac a2$, we can simplify the second expression to  \\[\\frac a2=f^{-1}(4a+1).\\]This is equivalent to  \\[f\\left(\\frac a2\\right)=4a+1.\\]Since we know $f$, we can evaluate this as  \\[\\frac a{1-\\frac a2}=4a+1.\\]or \\[\\frac {2a}{2-a}=4a+1.\\]Assuming $a \\ne 2$, cross multiplication gives  \\[2a=(4a+1)(2-a)= -4a^2 + 7a + 2,\\]so $4a^2 - 5a - 2 = 0$.  We note that $a = 2$ is not a solution to this equation.  By Vieta's formulas, the product of the roots of the quadratic equation $ax^2 + bx + c = 0$ is $c/a$, so in this case, the product of the roots is $-2/4 = \\boxed{-\\frac{1}{2}}$."
-}

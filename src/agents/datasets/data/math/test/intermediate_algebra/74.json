@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be nonnegative real numbers such that $a + b + c + d = 1.$  Find the minimum value of\n\\[a^2 + b^2 + c^2 + d^2.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By QM-AM,\n\\[\\sqrt{\\frac{a^2 + b^2 + c^2 + d^2}{4}} \\ge \\frac{a + b + c + d}{4} = \\frac{1}{4}.\\]Then\n\\[\\frac{a^2 + b^2 + c^2 + d^2}{4} \\ge \\frac{1}{16},\\]so $a^2 + b^2 + c^2 + d^2 \\ge \\frac{1}{4}.$\n\nEquality occurs when $a = b = c = d = \\frac{1}{4},$ so the minimum value is $\\boxed{\\frac{1}{4}}.$"
-}

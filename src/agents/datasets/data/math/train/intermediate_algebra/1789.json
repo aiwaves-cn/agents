@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers.  Find the minimum value of\n\\[\\frac{(x^2 + 3x + 1)(y^2 + 3y + 1)(z^2 + 3z + 1)}{xyz}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[x^2 + 1 \\ge 2x,\\]so\n\\[\\frac{x^2 + 3x + 1}{x} \\ge \\frac{5x}{x} = 5.\\]Likewise,\n\\[\\frac{y^2 + 3y + 1}{y} \\ge 5\\]and\n\\[\\frac{z^2 + 3z + 1}{z} \\ge 5,\\]so\n\\[\\frac{(x^2 + 3x + 1)(y^2 + 3y + 1)(z^2 + 3z + 1)}{xyz} \\ge 125.\\]Equality occurs when $x = y = z = 1,$ so the minimum value is $\\boxed{125}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $(x, y)$ be a solution to the system of equations \\[\\begin{aligned} \\lfloor x \\rfloor + \\{y\\} &= 2.4, \\\\ \\{x\\} + \\lfloor y \\rfloor &= 5.1. \\end{aligned} \\]Compute $|x - y|.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Consider the first equation, \\[\\lfloor x \\rfloor + \\{y\\} = 2.4.\\]Because $\\lfloor x \\rfloor$ is an integer, while $0 \\le \\{y\\} < 1,$ the only possibility is that $\\lfloor x \\rfloor = 2$ and $\\{y\\} = 0.4.$ Similarly, from the second equation, we get $\\{x\\} = 0.1$ and $\\lfloor y \\rfloor = 5.$ Then \\[x = \\lfloor x \\rfloor + \\{x\\} = 2.1 \\]and \\[y = \\lfloor y \\rfloor + \\{y\\} = 5.4,\\]so $|x-y| = |2.1-5.4| = \\boxed{3.3}.$"
-}

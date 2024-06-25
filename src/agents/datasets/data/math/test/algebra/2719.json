@@ -1,6 +1,0 @@
-{
-    "problem": "Let the roots of the polynomial $x^2 + 7x - 2$ be $\\alpha$ and $\\beta.$ Evaluate $\\alpha^2 + \\beta^2.$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We make use of the following fact:\n\n\"For a quadratic equation $ax^2 + bx + c,$ the sum of the roots is $-b/a$ while the product of the roots is $c/a.$'' Hence, $\\alpha + \\beta = -7$ and $\\alpha*\\beta = -2.$\n\nNow, we use the fact that $(\\alpha + \\beta)^2 - 2\\alpha\\beta =\\alpha^2 + \\beta^2.$ Or, $7^2 + 4 = \\alpha^2 + \\beta^2.$\n\nThus the answer is $\\boxed{53}.$"
-}

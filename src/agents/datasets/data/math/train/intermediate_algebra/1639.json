@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r,$ $s,$ and $t$ be the roots of the equation $x^3 - 20x^2 + 18x - 7 = 0.$ Find the value of $\\frac{r}{\\frac{1}{r}+st} + \\frac{s}{\\frac{1}{s}+tr} + \\frac{t}{\\frac{1}{t}+rs}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that \\[\\frac{r}{\\frac{1}{r}+st} = \\frac{r^2}{1+rst} = \\frac{r^2}{1+7} = \\frac{r^2}{8},\\]since $rst=7$ by Vieta's formulas. By similar computations, we get \\[\\frac{r}{\\frac{1}{r}+st} + \\frac{s}{\\frac{1}{s}+tr} + \\frac{t}{\\frac{1}{t}+rs} = \\frac{r^2+s^2+t^2}{8},\\]which equals \\[\\frac{(r+s+t)^2 - 2(rs+st+tr)}{8}=\\frac{20^2 - 2\\cdot 18}{8} = \\boxed{\\frac{91}{2}}.\\]"
-}

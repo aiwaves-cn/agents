@@ -1,6 +1,0 @@
-{
-    "problem": "All sides of the convex pentagon $ABCDE$ are of equal length, and $\\angle A = \\angle B = 90^\\circ$.  What is the degree measure of $\\angle E$?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Because $AB=BC=EA$ and $\\angle A = \\angle B = 90^\\circ$, quadrilateral $ABCE$ is a square, so $\\angle AEC = 90^\\circ$.\n\n[asy]\npair A,B,C,D,G;\nA=(0,10); B=(10,10);\nC=(10,0); D=(5,-7.1);\nG=(0,0);\ndraw(A--B--C--D--G--cycle,linewidth(0.8));\ndraw(G--C);\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,E);\nlabel(\"$C$\",C,E);\nlabel(\"$D$\",D,S);\nlabel(\"$E$\",G,W);\n[/asy]\n\nAlso $CD=DE=EC$, so $\\triangle CDE$ is equilateral and $\\angle CED =\n60^\\circ$.  Therefore \\[\n\\angle E = \\angle AEC + \\angle CED =\n90^\\circ + 60^\\circ = \\boxed{150^\\circ}.\n\\]"
-}

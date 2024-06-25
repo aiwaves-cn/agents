@@ -1,6 +1,0 @@
-{
-    "problem": "A 1$\\%$ late charge was added to Jenna's bill on the $30^{\\text{th}}$ day past its due date. The resulting total was then increased by 1$\\%$ because she did not pay the bill in the next 30 days either. Her original bill was $\\$400$. Exactly how much is the bill now?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The first late charge brings the bill to $400 \\cdot 1.01 = 400 + 4 = 404$. The second late charge brings the bill to $404 \\cdot 1.01 = 404 + 4.04 = \\boxed{408.04}$ dollars.\n\n-OR-\n\nEach increase multiples the bill by $1+1\\%=1.01$. Therefore, her final bill is $\\$400(1.01)^2=\\$408.04$."
-}

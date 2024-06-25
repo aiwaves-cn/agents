@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)$ be a polynomial of degree 4 such that $p(55) = p(83) = p(204) = p(232) = 8$ and $p(103) = 13.$  Find\n\\[p(1) - p(2) + p(3) - p(4) + \\dots + p(285) - p(286).\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $q(x) = p(x) - 8.$  Then $q(x)$ has degree 4, and $q(55) = q(83) = q(204) = q(232) = 0,$ so\n\\[q(x) = c(x - 55)(x - 83)(x - 204)(x - 232)\\]for some constant $c.$  Hence,\n\\[p(x) = c(x - 55)(x - 83)(x - 204)(x - 232) + 8.\\]Note that\n\\begin{align*}\np(287 - x) &= c(287 - x - 55)(287 - x - 83)(287 - x - 204)(287 - x - 232) + 8 \\\\\n&= c(232 - x)(204 - x)(83 - x)(55 - x) + 8 \\\\\n&= c(x - 55)(x - 83)(x - 204)(x - 232) + 8 \\\\\n&= p(x).\n\\end{align*}Hence, $p(1) = p(286),$ $p(2) = p(284),$ and so on.  Therefore,\n\\[p(1) - p(2) + p(3) - p(4) + \\dots + p(285) - p(286) = \\boxed{0}.\\]"
-}

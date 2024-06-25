@@ -1,6 +1,0 @@
-{
-    "problem": "Six distinct integers are picked at random from $\\{1,2,3,\\ldots,10\\}$. What is the probability that, among those selected, the second smallest is $3$?\n$\\textbf{(A)}\\ \\frac{1}{60}\\qquad \\textbf{(B)}\\ \\frac{1}{6}\\qquad \\textbf{(C)}\\ \\frac{1}{3}\\qquad \\textbf{(D)}\\ \\frac{1}{2}\\qquad \\textbf{(E)}\\ \\text{none of these}$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The total number of ways to choose 6 numbers is ${10\\choose 6} = 210$.\nAssume $3$ is the second-lowest number. There are $5$ numbers left to choose, $4$ of which must be greater than $3$, and $1$ of which must be less than $3$. This is equivalent to choosing $4$ numbers from the $7$ numbers larger than $3$, and $1$ number from the $2$ numbers less than $3$.\\[{7\\choose 4} {2\\choose 1}= 35\\times2\\].\nThus, $\\frac{35\\times2}{210} = \\boxed{\\frac{1}{3}}$."
-}

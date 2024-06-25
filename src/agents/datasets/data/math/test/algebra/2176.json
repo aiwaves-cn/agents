@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=\\left\\lfloor\\left(-\\frac58\\right)^x\\right\\rfloor$ be a function that is defined for all values of $x$ in $[0,\\infty)$ such that $f(x)$ is a real number. How many distinct values exist in the range of $f(x)$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $-\\frac58$ is a negative number, $f(x)$ is only defined for integer values of $x$, and will alternate between positive and negative values. Additionally, $\\left|-\\frac58\\right|< 1$, so $|f(x)|$ will continually decrease and approach 0 as $x$ increases in the interval $x\\ge0$. Therefore, the largest positive value will occur at $x=0$, giving us the positive upper bound of $\\left\\lfloor\\left(-\\frac58\\right)^0\\right\\rfloor=1$. The negative value that is greatest in magnitude then occurs at the next integer value of $x$: $x=1$, giving us the negative lower bound of $\\left\\lfloor\\left(-\\frac58\\right)^1\\right\\rfloor=-1$. This tells us that $-1 \\le f(x) \\le 1$. Since the $f(x)$ must be an integer, the only possible distinct values contained in the range are -1, 0, and 1. This gives us a total of $\\boxed{3}$ values of $f(x)$ when $x\\ge0$."
-}

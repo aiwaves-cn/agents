@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathcal{S}$ be the set $\\lbrace1,2,3,\\ldots,10\\rbrace$ Let $n$ be the number of sets of two non-empty disjoint subsets of $\\mathcal{S}$. (Disjoint sets are defined as sets that have no common elements.) Find the remainder obtained when $n$ is divided by $1000$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Let the two disjoint subsets be $A$ and $B$, and let $C = S-(A+B)$. For each $i \\in S$, either $i \\in A$, $i \\in B$, or $i \\in C$. So there are $3^{10}$ ways to organize the elements of $S$ into disjoint $A$, $B$, and $C$.\nHowever, there are $2^{10}$ ways to organize the elements of $S$ such that $A = \\emptyset$ and $S = B+C$, and there are $2^{10}$ ways to organize the elements of $S$ such that $B = \\emptyset$ and $S = A+C$. But, the combination such that $A = B = \\emptyset$ and $S = C$ is counted twice.\nThus, there are $3^{10}-2\\cdot2^{10}+1$ ordered pairs of sets $(A,B)$. But since the question asks for the number of unordered sets $\\{ A,B \\}$, $n = \\frac{1}{2}(3^{10}-2\\cdot2^{10}+1) = 28501 \\equiv \\boxed{501} \\pmod{1000}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\dfrac{3+4i}{1+2i}$. Your answer should be of the form $a+bi$, where $a$ and $b$ are both real numbers and written as improper fractions (if necessary).",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Multiplying the numerator and denominator by the conjugate of the denominator, we have \\begin{align*}\n\\dfrac{3+4i}{1+2i} \\cdot \\frac{1-2i}{1-2i} &= \\frac{3(1) + 3(-2i) + 4i(1) + 4i(-2i)}{1(1) + 1(-2i) + 2i(1) -2i(2i)} \\\\\n&= \\dfrac{11-2i}{5} = \\boxed{\\dfrac{11}{5} - \\dfrac{2}{5}i}.\n\\end{align*}"
-}

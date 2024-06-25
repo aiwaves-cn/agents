@@ -1,6 +1,0 @@
-{
-    "problem": "Find the ordered pair $(m,n),$ where $m,n$ are positive integers satisfying the following equation:\n$$6mn = 27 - 3m - 2n$$",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Looking at the form of the equation, we see that we have two linear terms and their product.  We thus apply Simon's Favorite Factoring Trick.  The given equation rearranges to $6mn + 3m +2n +1 = 28$, which can be factored to $(3m + 1)(2n +1) = 28 = 2\\cdot 2\\cdot 7$.  Since $n$ is a positive integer, we see that $2n +1 > 1$ is odd.  Examining the factors on the right side, we see we must have $2n + 1 = 7$, implying $3m+1 = 2\\cdot 2$.  Solving, we find that $(m,n) = \\boxed{(1,3)}$."
-}

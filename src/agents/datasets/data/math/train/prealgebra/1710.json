@@ -1,6 +1,0 @@
-{
-    "problem": "A company that sells widgets has to pay $\\$500$ in maintenance fees each day and then it pays each worker $\\$15$ per hour. Each worker makes 5 widgets per hour, which are sold at $\\$3.10$ each. What is the least number of workers the company has to hire in order to make a profit in an 8-hour workday?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We look for the least number of workers $n$ such that the cost is less than the revenue in a day of work. The cost of each worker is $\\$15$ per hour, while the revenue that comes from each worker hired is $\\$3.10\\times5$ widgets per hour. \\begin{align*}\n500+8(15n)&<(8)(3.1)(5)n=124n\\quad\\Rightarrow\\\\\n500+120n&<124n\\quad\\Rightarrow\\\\\n500&<4n\\quad\\Rightarrow\\\\\n125&<n.\n\\end{align*}The smallest integer greater than 125 is 126, so the company has to hire at least $\\boxed{126}$ workers to make a profit."
-}

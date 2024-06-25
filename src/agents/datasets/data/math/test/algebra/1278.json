@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ be a real number for which there exists a unique value of $b$ such that the quadratic equation $x^2 + 2bx + (a-b) = 0$ has one real solution. Find $a$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "If the given quadratic equation has one solution, it follows that its discriminant must be equal to $0$. The discriminant of the given quadratic is given by $(2b)^2 - 4(a-b)$, and setting this equal to zero, we obtain another quadratic equation $4b^2 + 4b - 4a = 0$. Since the value of $b$ is unique, it follows that again, the discriminant of this quadratic must be equal to zero. The discriminant is now $(4)^2 - 4(4)(-4a) = 16 + 64a = 0$, so it follows that $a = \\boxed{-0.25}$."
-}

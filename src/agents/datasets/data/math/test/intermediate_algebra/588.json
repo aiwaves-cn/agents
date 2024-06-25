@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the positive integer $x$ such that\n\\[4x^3 - 41x^2 + 10x = 1989.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the equation as $4x^3 - 41x^2 + 10x - 1989 = 0.$  Then by the Integer Root Theorem, the integer root must be a factor of $1989 = 3^2 \\cdot 13 \\cdot 17.$\n\nAlso, we can factor both sides as\n\\[(x - 10)(x)(4x - 1) = 3 \\cdot 3 \\cdot 13 \\cdot 17.\\]in particular, $x - 10$ must be a positive factor of the right-hand side.  Trying $x - 10 = 3$ gives us $x = \\boxed{13},$ which works."
-}

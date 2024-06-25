@@ -1,6 +1,0 @@
-{
-    "problem": "Every student in the senior class is taking history or science. There are $200$ seniors in the class. If there are $126$ seniors taking history and $129$ seniors taking science, how many students are taking both history and science?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Let $x$ be the number of seniors taking both history and science. We see $126$ seniors are taking history and $129$ seniors are taking science. If we add those numbers up, we still have to subtract the seniors that are taking both because we counted them twice.\n\nSo there is a total of $126+129-x=200$ students in the senior class. Solving for $x,$ we get there are $\\boxed{55}$ seniors taking both history and science.\n\nWe can also solve this problem with the Venn Diagram below. Let there be $x$ students taking both history and science: [asy]\nlabel(\"History\", (2,67));\nlabel(\"Science\", (80,67));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$x$\", (44, 45));\nlabel(scale(0.8)*\"$126-x$\",(28,58));\nlabel(scale(0.8)*\"$129-x$\",(63,58));\n[/asy] There are $200$ seniors total, so we have $x+ (126-x) + (129-x) = 200.$ Simplifying gives $255-x = 200,$ so $x=\\boxed{55}.$"
-}

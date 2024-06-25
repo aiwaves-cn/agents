@@ -1,6 +1,0 @@
-{
-    "problem": "For each integer $n\\geq 4$, let $a_n$ denote the base-$n$ number $0.\\overline{133}_n$.  The product $a_4a_5 \\dotsm a_{99}$ can be expressed as $\\frac{m}{n!}$, where $m$ and $n$ are positive integers and $n$ is as small as possible.  What is the value of $m$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $n^3a_n= 133.\\overline{133}_n = a_n + n^2 +\n3n + 3$, so $a_n = \\frac{n^2+3n+3}{n^3-1} =\n\\frac{(n+1)^3-1}{n(n^3-1)}.$ Therefore      \\begin{align*}\na_4\\cdot a_5 \\cdots a_{99} &= \\frac{5^3 - 1}{4(4^3-1)} \\cdot \\frac{6^3 - 1}{5(5^3-1)} \\cdots \\frac{100^3 - 1}{99(99^3-1)} \\\\\n&= \\frac{3!}{99!} \\cdot \\frac{100^3 - 1}{4^3-1} \\\\\n&= \\frac{6}{99!} \\cdot \\frac{99(100^2 + 100 + 1)}{63}\\\\\n&= \\frac{(2)(10101)}{(21)(98!)} = \\frac{962}{98!}.\n\\end{align*}Hence, $m=\\boxed{962}$."
-}

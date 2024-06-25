@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ and $c$ be real numbers such that $a^2 + b^2 + c^2 = 1.$  Find the minimum value of\n\\[ab + ac + bc.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By the Trivial Inequality, $(a + b + c)^2 \\ge 0.$  This expands as\n\\[a^2 + b^2 + c^2 + 2ab + 2ac + 2bc \\ge 0.\\]We know $a^2 + b^2 + c^2 = 1,$ so\n\\[2ab + 2ac + 2bc + 1 \\ge 0.\\]Hence,\n\\[ab + ac + bc \\ge -\\frac{1}{2}.\\]Equality occurs when $a = 0,$ $b = \\frac{1}{\\sqrt{2}},$ and $c = -\\frac{1}{\\sqrt{2}}.$  Therefore, the minimum value of $ab + ac + bc$ is $\\boxed{-\\frac{1}{2}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Sean has 12 cylindrical containers filled with sand, each of which has a radius of 4 centimeters. He wants to transfer his sand into some new cylindrical containers, which are the same height but have a radius of 8 centimeters. How many new containers will Sean need?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "We will need to know how much sand Sean has, so we need to find the volumes of each of the two cylindrical containers. If the height of each container is $h$, the old container holds $4^2h\\pi = 16h\\pi$ cubic centimeters of sand. The new container holds $8^2h\\pi = 64h\\pi$ cubic centimeters of sand. We can now find how many new containers Sean will need:  \\begin{align*}\n&12\\text{ old containers}\\cdot \\frac{16h\\pi\\text{ cm}^3}{1\\text{ old container}} \\cdot \\frac{1 \\text{ new container}}{64h\\pi\\text{ cm}^3} \\\\\n&\\qquad = \\boxed{3}\\text{ new containers}.\n\\end{align*}"
-}

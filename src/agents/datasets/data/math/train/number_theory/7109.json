@@ -1,6 +1,0 @@
-{
-    "problem": "For some positive integer $n$, the number $110n^3$ has $110$ positive integer divisors, including $1$ and the number $110n^3$. How many positive integer divisors does the number $81n^4$ have?\n$\\textbf{(A) }110\\qquad\\textbf{(B) }191\\qquad\\textbf{(C) }261\\qquad\\textbf{(D) }325\\qquad\\textbf{(E) }425$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since the prime factorization of $110$ is $2 \\cdot 5 \\cdot 11$, we have that the number is equal to $2 \\cdot 5 \\cdot 11 \\cdot n^3$. This has $2 \\cdot 2 \\cdot 2=8$ factors when $n=1$. This needs a multiple of 11 factors, which we can achieve by setting $n=2^3$, so we have $2^{10} \\cdot 5 \\cdot 11$ has $44$ factors. To achieve the desired $110$ factors, we need the number of factors to also be divisible by $5$, so we can set $n=2^3 \\cdot 5$, so $2^{10} \\cdot 5^4 \\cdot 11$ has $110$ factors. Therefore, $n=2^3 \\cdot 5$. In order to find the number of factors of $81n^4$, we raise this to the fourth power and multiply it by $81$, and find the factors of that number. We have $3^4 \\cdot 2^{12} \\cdot 5^4$, and this has $5 \\cdot 13 \\cdot 5=\\boxed{325}$ factors."
-}

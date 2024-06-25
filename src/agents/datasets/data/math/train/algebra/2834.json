@@ -1,6 +1,0 @@
-{
-    "problem": "Elmo makes $N$ sandwiches for a fundraiser. For each sandwich he uses $B$ globs of peanut butter at $4$ cents per glob and $J$ blobs of jam at $5$ cents per blob.  The cost of the peanut butter and jam to make all the sandwiches is $\\$2.53$. Assume that  $B$, $J$, and $N$ are positive integers with $N>1$. What is the cost, in dollars, of the jam Elmo uses to make the sandwiches?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The total cost of the peanut butter and jam is $N(4B+5J) = 253$ cents, so $N$ and $4B + 5J$ are factors of $253 =\n11\\cdot23$. Because $N>1$, the possible values of $N$ are 11, 23, and 253. If $N=253$, then $4B+5J = 1$, which is impossible since $B$ and $J$ are positive integers. If $N=23$, then $4B + 5J = 11$, which also has no solutions in positive integers. Hence $N = 11$ and $4B+5J=23$, which has the unique positive integer solution $B=2$ and $J=3$. So the cost of the jam is $11(3)(5\\text{ cents})=\\boxed{\\$1.65}$."
-}

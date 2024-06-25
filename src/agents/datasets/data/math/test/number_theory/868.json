@@ -1,6 +1,0 @@
-{
-    "problem": "Find the one hundredth positive integer that can be written using no digits other than digits 0 and 1 in base 3. Express your answer as a base 10 integer.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The goal is to count in base 3 using only binary digits.  The $100^{\\text{th}}$ smallest positive binary integer is $100 = 1100100_2$, so the $100^{\\text{th}}$ smallest positive integer that can be written with only the binary digits is $1100100_3 = \\boxed{981}$."
-}

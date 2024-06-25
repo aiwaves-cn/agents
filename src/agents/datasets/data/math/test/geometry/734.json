@@ -1,6 +1,0 @@
-{
-    "problem": "Minneapolis-St. Paul International Airport is 8 miles southwest of downtown St. Paul and 10 miles southeast of downtown Minneapolis. To the nearest integer, how many miles apart are   downtown St. Paul and downtown Minneapolis?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Let downtown St. Paul, downtown Minneapolis, and the airport be located at $S$, $M$, and $A$, respectively. Then $\\triangle MAS$ has a right angle at $A$, so by the Pythagorean Theorem, \\[\nMS= \\sqrt{10^{2}+8^{2}}= \\sqrt{164}\\approx 12.8.\n\\] Therefore, the distance between the two downtowns to the nearest mile is  $\\boxed{\\text{13}}$ miles."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $x,$ $y,$ and $z$ satisfy the equations\n\\begin{align*}\nxyz &= 4, \\\\\nx^3 + y^3 + z^3 &= 4, \\\\\nxy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.\n\\end{align*}Calculate the value of $xy + yz + zx.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $s_1 = x + y + z$ and $s_2 = xy + xz + yz.$  Then\n\\begin{align*}\ns_1 s_2 &= (x + y + z)(xy + xz + yz) \\\\\n&= x^2 y + xy^2 + x^2 z + xz^2 + y^2 z + yz^2 + 3xyz \\\\\n&= 12 + 3 \\cdot 4 = 24.\n\\end{align*}Also,\n\\begin{align*}\ns_1^3 &= (x + y + z)^3 \\\\\n&= (x^3 + y^3 + z^3) + 3(x^2 y + xy^2 + x^2 z + xz^2 + y^2 z + yz^2) + 6xyz \\\\\n&= 4 + 3 \\cdot 12 + 6 \\cdot 4 = 64,\n\\end{align*}so $s_1 = 4.$  Hence, $s_2 = \\frac{24}{s_1} = \\boxed{6}.$"
-}

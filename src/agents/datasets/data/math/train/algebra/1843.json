@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all the three-digit positive integers?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We want to evaluate the arithmetic series $100 + 101 + \\cdots + 999$.   The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms.  The total number of three-digit integers is $999 - 100 + 1 = 900$, so the sum is $(100 + 999)/2 \\cdot 900 = \\boxed{494550}$."
-}

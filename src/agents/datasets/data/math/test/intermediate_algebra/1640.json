@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be real numbers such that $x + y + z = 6$ and $\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} = 2.$  Find\n\\[\\frac{x + y}{z} + \\frac{y + z}{x} + \\frac{x + z}{y}.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\begin{align*}\n\\frac{x + y}{z} + \\frac{y + z}{x} + \\frac{x + z}{y} &= \\frac{6 - z}{z} + \\frac{6 - x}{x} + \\frac{6 - y}{y} \\\\\n&= 6 \\left( \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} \\right) - 3 \\\\\n&= 6 \\cdot 2 - 3 = \\boxed{9}.\n\\end{align*}"
-}

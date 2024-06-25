@@ -1,6 +1,0 @@
-{
-    "problem": "Corn costs 99 cents per pound, and beans cost 45 cents per pound. If Shea buys 24 total pounds of corn and beans, and it costs $\\$18.09$, how many pounds of corn did Shea buy? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $c$ and $b$ be the number of pounds of corn and beans Shea buys, respectively. We can turn the givens into a two-variable, linear system: \\begin{align*}\nb+c&=24\\\\\n45b+99c&=1809\n\\end{align*} We can multiply the first equation by 45 and subtract it from the second to get $(99-45)c=1809-45(24)$, which reduces to $54c=729$ or $c=13.5$. So Shea buys $\\boxed{13.5\\text{ pounds}}$ of corn."
-}

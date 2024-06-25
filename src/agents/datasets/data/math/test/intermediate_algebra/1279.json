@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all complex solutions of the equation\n\\[\\frac{1}{x^2 - 1} + \\frac{2}{x^2 - 2} + \\frac{3}{x^2 - 3} + \\frac{4}{x^2 - 4} = 2010x - 4.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can add 4 to both sides to get\n\\[\\frac{1}{x^2 - 1} + 1 + \\frac{2}{x^2 - 2} + 1 + \\frac{3}{x^2 - 3} + 1 + \\frac{4}{x^2 - 4} + 1 = 2010x.\\]This simplifies to\n\\[\\frac{x^2}{x^2 - 1} + \\frac{x^2}{x^2 - 2} + \\frac{x^2}{x^2 - 3} + \\frac{x^2}{x^2 - 4} = 2010x.\\]We see that $x = 0$ is a solution (which does not affect our sum).  Otherwise, we can divide both sides by $x$:\n\\[\\frac{x}{x^2 - 1} + \\frac{x}{x^2 - 2} + \\frac{x}{x^2 - 3} + \\frac{x}{x^2 - 4} = 2010.\\]Clearing the denominators, we get\n\\begin{align*}\n&x(x^2 - 2)(x^2 - 3)(x^2 - 4) + x(x^2 - 1)(x^2 - 3)(x^2 - 4) + x(x^2 - 1)(x^2 - 2)(x^2 - 4) + x(x^2 - 1)(x^2 - 2)(x^2 - 3) \\\\\n&\\quad = 2010(x^2 - 1)(x^2 - 2)(x^2 - 3)(x^2 - 4).\n\\end{align*}This expands to\n\\[4x^7 + \\dotsb = 2010x^8 + \\dotsb,\\]where only terms that have degree 7 or greater are shown.  Then\n\\[2010x^8 - 4x^7 + \\dotsb = 0,\\]so by Vieta's formulas, the sum of the roots is $\\frac{4}{2010} = \\boxed{\\frac{2}{1005}}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of two numbers is 12 and their product is 35. What is the positive difference between the numbers?",
-    "level": "Level 1",
-    "type": "Algebra",
-    "solution": "Let $x$ and $y$ be the two numbers.  We are given  \\begin{align*}\nx+y&=12\\text{, and} \\\\\nxy&=35.\n\\end{align*} Solving the first equation for $y$ and substituting into the second equation, we find $x(12-x)=35$.  Subtracting the left-hand side from both sides of the equation and distributing, we find $0=x^2-12x+35$.  We can factor the right-hand side as $(x-7)(x-5)$, so the solutions are $x=7$ and $x=5$.  Substituting either of these back into $y=12-x$, we find that the two numbers are $7$ and $5$, and their difference is $\\boxed{2}$."
-}

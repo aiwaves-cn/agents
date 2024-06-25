@@ -1,6 +1,0 @@
-{
-    "problem": "Compute the largest integer $k$ such that $2004^k$ divides $2004!$.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Note that $2004 = 2^2 \\cdot 3 \\cdot 167$. We focus on the large prime $167$ as the powers of $2$ and $3$ in the prime factorization of $2004!$ are going to be much higher. The largest power of $167$ that divides $2004!$ is $\\tfrac{2004}{167} = \\boxed{12}$, the answer."
-}

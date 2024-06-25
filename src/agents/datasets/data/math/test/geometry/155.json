@@ -1,6 +1,0 @@
-{
-    "problem": "In trapezoid $ABCD$  we have $\\overline{AB}$   parallel to $\\overline{DC}$, $E$  as the midpoint of $\\overline{BC}$, and $F$ as the midpoint of $\\overline{DA}$. The area of $ABEF$ is twice the area of $FECD$. What is $AB/DC$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "First note that $FE = (AB + DC)/2$. Because trapezoids $ABEF$ and $FECD$ have the same height, the ratio of their areas is equal to the ratio of the averages of their parallel sides. Since \\[\nAB + \\frac{AB+DC}{2} = \\frac{3 AB + DC}{2}\n\\]and \\[\n\\frac{AB+DC}{2} + DC = \\frac{AB + 3 DC}{2},\n\\]we have \\[\n3AB + DC = 2(AB + 3DC) = 2AB + 6DC, \\quad \\text{and} \\quad \\frac{AB}{DC} = \\boxed{5}.\n\\][asy]\npair A,B,C,D,I,F;\nA=(0,0);\nB=(13,0);\nF=(2,4);\nD=(4,8);\nI=(10,4);\nC=(7,8);\ndraw(A--B--C--D--cycle,linewidth(0.7));\ndraw(I--F,linewidth(0.7));\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,E);\nlabel(\"$C$\",C,E);\nlabel(\"$D$\",D,W);\nlabel(\"$F$\",F,W);\nlabel(\"$E$\",I,E);\n[/asy]"
-}

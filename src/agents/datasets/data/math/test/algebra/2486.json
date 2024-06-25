@@ -1,6 +1,0 @@
-{
-    "problem": "Find all $p$ which satisfy both the inequalities $0\\ge 54p-144$ and $0>12-20p$. Express your answer in interval notation, reducing any fractions in your answer.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We take the inequalities one at a time. Adding $144$ to both sides of the first inequality, we get $$144\\ge 54p,$$implying $$\\frac{144}{54}\\ge p.$$Reducing the fraction and switching the sides (along with the direction of the inequality), we get $p\\le\\frac{8}{3}$.\n\n\nTo solve the second inequality, we add $20p$ to both sides: $$20p > 12$$Dividing both sides by $20$, we get $$p>\\frac{12}{20}.$$Reducing the fraction gives $p>\\frac{3}{5}$.\n\n\nWe are looking for $p$ which satisfy both inequalities. The intersection of the solutions above is $\\boxed{\\left(\\frac{3}{5},\\frac{8}{3}\\right]}$."
-}

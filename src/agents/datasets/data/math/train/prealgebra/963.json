@@ -1,6 +1,0 @@
-{
-    "problem": "How many different 7-digit positive integers exist? (Note that we don't allow \"7-digit\" integers that start with 0, such as 0123456; this is actually a 6-digit integer.)",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "There are 9 choices for the first digit (it can be 1-9) and 10 choices for each of the other 6 digits (they can be 0-9). So there are $9 \\cdot 10^6 = \\boxed{9,\\!000,\\!000}$ possible numbers."
-}

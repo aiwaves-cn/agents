@@ -1,6 +1,0 @@
-{
-    "problem": "The terms of the sequence $(a_i)$ defined by $a_{n + 2} = \\frac {a_n + 2009} {1 + a_{n + 1}}$ for $n \\ge 1$ are positive integers. Find the minimum possible value of $a_1 + a_2$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "The definition gives $$a_3(a_2+1) = a_1+2009, \\;\\; a_4(a_3+1) = a_2+2009, \\;\\; a_5(a_4+1) = a_3 + 2009.$$Subtracting consecutive equations yields $a_3-a_1 = (a_3+1)(a_4-a_2)$ and $a_4-a_2=(a_4+1)(a_5-a_3)$.\n\nSuppose that $a_3-a_1\\neq 0$. Then $a_4-a_2\\neq 0$, $a_5-a_3\\neq 0$, and so on. Because $|a_{n+2}+1| \\ge 2$, it follows that\n\\[0<|a_{n+3} - a_{n+1}| = \\frac{|a_{n+2}-a_n|}{|a_{n+2}+1|} < |a_{n+2}-a_n|,\\]Then\n\\[|a_3-a_1|>|a_4-a_2|>|a_5-a_3| > \\dotsb,\\]which is a contradiction.\n\nTherefore, $a_{n+2}-a_n=0$ for all $n\\ge 1$, which implies that all terms with an odd index are equal, and all terms with an even index are equal. Thus as long as $a_1$ and $a_2$ are integers, all the terms are integers. The definition of the sequence then implies that $a_1 = a_3 = \\frac{a_1+2009}{a_2+1}$, giving $a_1a_2=2009=7^2\\cdot 41$. The minimum value of $a_1+a_2$ occurs when $\\{a_1,a_2\\}=\\{41,49\\}$, which has a sum of $\\boxed{90}$."
-}

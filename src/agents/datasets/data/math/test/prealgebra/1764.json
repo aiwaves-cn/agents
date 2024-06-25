@@ -1,6 +1,0 @@
-{
-    "problem": "It is a beautiful day at the beach and ten beach volleyball players have shown up at the volleyball courts. Each two-person volleyball team should consist of a setter and a spiker. Five of the players prefer to be a spiker, four of the players prefer to be a setter, and one player is fine either way.\n\nIn how many ways can a two-person team be assembled such that no player feels out of position?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Each of the five spikers can be matched with any of the four setters to make $5 \\cdot 4 = 20$ possible teams.\n\nThe one player who is fine either way can be matched with any of the nine other players to make $9$ possible teams.\n\nTherefore, there are $20 + 9 = \\boxed{29}$ possible teams in which no player feels out of position."
-}

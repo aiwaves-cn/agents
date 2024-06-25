@@ -1,6 +1,0 @@
-{
-    "problem": "Let $0 \\le a, b, c \\le 5$ be integers. For how many ordered triples $(a,b,c)$ is $a^2b+b^2c+c^2a-ab^2-bc^2-ca^2 = 0$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let $P(a,b,c) = a^2b+b^2c+c^2a-ab^2-bc^2-ca^2$. Notice that if $a=b$, $P(a,b,c) = a^3+a^2c+ac^2-a^3-ac^2-a^2c = 0$. By symmetry, $P(a,b,c)=0$ when $b=c, c=a$ as well. Since $P(a,b,c)$ has degree 3 and is divisible by three linear terms, $P(a,b,c)$ must factor as $k(a-b)(b-c)(c-a)$ where $k$ is a constant. Hence, $P(a,b,c) = 0$ if and only if at least two of $a,b,c$ are equal.\n\nTo count how many triples $(a,b,c)$ satisfy this, we count the complement. There are $6\\cdot5\\cdot4 = 120$ triples where $a,b,c$ are all distinct, and $6\\cdot6\\cdot6=216$ triples total, so there are $216-120 = \\boxed{96}$ triples such that $P(a,b,c) = 0$."
-}

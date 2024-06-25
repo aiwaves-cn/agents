@@ -1,6 +1,0 @@
-{
-    "problem": "Let $r_1,$ $r_2,$ $r_3,$ and $r_4$ be the roots of\n\\[x^4 - 2x^3 - 5x^2 + 4x - 1 = 0.\\]Find the monic polynomial, in $x,$ whose roots are $\\frac{1}{r_1},$ $\\frac{1}{r_2},$ $\\frac{1}{r_3},$ and $\\frac{1}{r_4}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = \\frac{1}{y},$ so\n\\[\\frac{1}{y^4} - \\frac{2}{y^3} - \\frac{5}{y^2} + \\frac{4}{y} - 1 = 0.\\]To turn this into a monic polynomial, we multiply by $-y^4,$ which gives us $y^4 - 4y^3 + 5y^2 + 2y - 1 = 0.$  The corresponding polynomial in $x$ is then $\\boxed{x^4 - 4x^3 + 5x^2 + 2x - 1} = 0.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered pairs of integers $(a,b)$ with $1 \\leq a \\leq 100$ and $b \\geq 0$ such that the polynomial $x^2+ax+b$ can be factored into the product of two (not necessarily distinct) linear factors with integer coefficients.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Because the given quadratic has leading coefficient $1$, both factors must be of the form $x-c$ (or $-x+c$). Therefore, such a factorization exists if and only if $x^2 + ax + b$ has two integer roots. Letting $r$ and $s$ denote these roots, we have, by Vieta's formulas, \\[\\begin{aligned} r+s &= -a, \\\\ rs &= b. \\end{aligned}\\]Since $r+s = -a$ is negative but $rs = b$ is nonnegative, it follows that both $r$ and $s$ must be negative or zero. Now, for each $a$, there are $a+1$ possible pairs $(r, s)$, which are $(0, -a)$, $(-1, -a+1)$, $\\ldots$, $(-a, 0)$. However, since the order of $r$ and $s$ does not matter, we only get $\\lceil \\tfrac{a+1}{2} \\rceil$ distinct polynomials $x^2+ax+b$ for each possible value of $a$. It follows that the number of these polynomials is \\[\\sum_{a=1}^{100} \\left\\lceil \\frac{a+1}{2} \\right\\rceil = 1 + 2 + 2 + 3 + 3 + \\dots + 50 + 50 + 51 = \\boxed{2600}\\]since if we pair up the terms in this sum end-to-end, each pair has a sum of $52 = 2 \\cdot 26$."
-}

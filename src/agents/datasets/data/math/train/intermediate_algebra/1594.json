@@ -1,6 +1,0 @@
-{
-    "problem": "Define\n\\[A = \\frac{1}{1^2} + \\frac{1}{5^2} - \\frac{1}{7^2} - \\frac{1}{11^2} + \\frac{1}{13^2} + \\frac{1}{17^2} - \\dotsb,\\]which omits all terms of the form $\\frac{1}{n^2}$ where $n$ is an odd multiple of 3, and\n\\[B = \\frac{1}{3^2} - \\frac{1}{9^2} + \\frac{1}{15^2} - \\frac{1}{21^2} + \\frac{1}{27^2} - \\frac{1}{33^2} + \\dotsb,\\]which includes only terms of the form $\\frac{1}{n^2}$ where $n$ is an odd multiple of 3.\n\nDetermine $\\frac{A}{B}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can start by taking out a factor of $\\frac{1}{9}$ out of each term in $B$:\n\\[B = \\frac{1}{9} \\left( \\frac{1}{1^2} - \\frac{1}{3^2} + \\frac{1}{5^2} - \\frac{1}{7^2} + \\frac{1}{9^2} - \\frac{1}{11^2} + \\dotsb \\right).\\]Note that we obtain all the terms in $A,$ so\n\\[B = \\frac{1}{9} A + \\frac{1}{9} \\left( -\\frac{1}{3^2} + \\frac{1}{9^2} - \\frac{1}{15^2} + \\frac{1}{21^2} - \\dotsb \\right) = \\frac{1}{9} A + \\frac{1}{9} (-B).\\]Then $9B = A - B,$ so $A = 10B.$  Therefore, $\\frac{A}{B} = \\boxed{10}.$"
-}

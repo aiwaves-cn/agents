@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the six by six grid of unit squares below. How many rectangles of area 3 square units can be formed using only the line segments of the grid as the sides of the rectangles?\n\n[asy]unitsize(0.1inch);\ndraw((0,0)--(6,0)--(6,6)--(0,6)--cycle);\ndraw((1,0)--(1,6));\ndraw((2,0)--(2,6));\ndraw((3,0)--(3,6));\ndraw((4,0)--(4,6));\ndraw((5,0)--(5,6));\ndraw((0,1)--(6,1));\ndraw((0,2)--(6,2));\ndraw((0,3)--(6,3));\ndraw((0,4)--(6,4));\ndraw((0,5)--(6,5));\n\n[/asy]",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are only two kinds of rectangles of area 3 square units which we can form on the grid: $1\\times3$ rectangles and $3\\times1$ rectangles. For $1\\times3$ rectangles, the upper left unit square of the rectangle must be in one of the leftmost four columns and can be in any row, giving 24 possible locations. Similarly, there are 24 possible locations for a $3\\times1$ rectangle. Therefore, the total number of rectangles of area 3 which can be formed is $\\boxed{48}$."
-}

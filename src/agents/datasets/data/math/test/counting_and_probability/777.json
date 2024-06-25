@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest prime number that divides the quantity $0! + (1!) \\times 1 + (2!) \\times 2 + (3!) \\times 3 + \\cdots + (50!) \\times 50$.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "To investigate this summation, we can start by looking at the first terms: $1 + 1 + (2!) \\times 2 = 2 + (2!) \\times 2 = 6 = 3!$. Thus, adding the next term, $6 + (3!) \\times 3 = 3! + (3!) \\times 3 = 4 \\times 3! = 24 = 4!$. Indeed, we see from the identity $$n! + (n!) \\times n = (n+1) \\times n! = (n+1)!$$that the sum will be equal to $51!$. The largest prime number to divide this quantity will be the largest prime number less than or equal to $51$, which is $\\boxed{47}$."
-}

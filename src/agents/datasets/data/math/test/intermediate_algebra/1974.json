@@ -1,6 +1,0 @@
-{
-    "problem": "The polynomial $p(x)$ satisfies $p(1) = 210$ and\n\\[(x + 10) p(2x) = 8(x - 4) p(x + 6)\\]for all real numbers $x.$  Find $p(10).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 4,$ we get\n\\[14 p(8) = 0,\\]so $p(x)$ has a factor of $x - 8.$\n\nSetting $x = -10,$ we get\n\\[8(-14)p(-4) = 0,\\]so $p(x)$ has a factor of $x + 4.$\n\nSetting $x = -2,$ we get\n\\[8p(-4) = 8(-6)p(4).\\]Since $p(-4) = 0,$ $p(4) = 0,$ which means $p(x)$ has a factor of $x - 4.$\n\nLet\n\\[p(x) = (x - 8)(x - 4)(x + 4) q(x).\\]Then\n\\[(x + 10)(2x - 8)(2x - 4)(2x + 4) q(2x) = 8(x - 4)(x - 2)(x + 2)(x + 10) q(x + 6).\\]This simplifies to $q(2x) = q(x + 6).$\n\nLet $q(x) = q_n x^n + q_{n - 1} x^{n - 1} + \\dots + q_1 x + q_0.$  Then the leading coefficient in $q(2x)$ is $q_n 2^n,$ and the leading coefficient in $q(x + 6)$ is $q_n.$  Since $q(2x) = q(x + 6),$\n\\[q_n 2^n = q_n.\\]Since $q_n \\neq 0,$ $2^n = 1,$ so $n = 0.$  This means $q(x)$ is a constant polynomial.  Let $q(x) = c,$ so\n\\[p(x) = c(x - 8)(x - 4)(x + 4).\\]Setting $x = 1,$ we get\n\\[c(1 - 8)(1 - 4)(1 + 4) = 210,\\]so $c = 2.$  Therefore, $p(x) = 2(x - 8)(x - 4)(x + 4),$ so $p(10) = 2(10 - 8)(10 - 4)(10 + 4) = \\boxed{336}.$"
-}

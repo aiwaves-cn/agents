@@ -1,6 +1,0 @@
-{
-    "problem": "In the prime factorization of $109!$, what is the exponent of $3$?  (Reminder: The number $n!$ is the product of the integers from 1 to $n$.  For example, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "First, we check how many of the numbers from $1$ to $109$ are multiples of $3$. We divide $109$ by $3$, and it comes out to be $36$ and a bit. So we know this gives us $36$ times the factor $3$ appears, to begin with.\n\nNow, some numbers are multiples of $3^2=9$, so they have $3$ as a factor twice, and we've only counted them once so far! There are $12$ multiples of $9$ less than $109$, and we need to add one to our exponent for each of these. That gives another $12$ to the exponent.\n\nSome numbers are also multiples of $3^3=27$. (Horrible, isn't it?) We actually have four such numbers: $27$, $54$, $81$, and $108$. We've counted two $3$s for each of them, so now we need to count one more for each, adding another $4$ to the exponent.\n\nOne more time. What about $3^4=81$? Yes, we do have a multiple of $81$ among our numbers. So we add one more to the exponent, and at last we've gotten all of them.\n\nFinally, we end up with a total of $36+12+4+1=\\boxed{53}$ in the exponent."
-}

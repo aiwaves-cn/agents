@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ $AB = 3,$ $AC = 6,$ and $\\cos \\angle A = \\frac{1}{8}.$  Find the length of angle bisector $\\overline{AD}.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "By the Law of Cosines on triangle $ABC,$\n\\[BC = \\sqrt{3^2 + 6^2 - 2 \\cdot 3 \\cdot 6 \\cdot \\frac{1}{8}} = \\frac{9}{\\sqrt{2}}.\\][asy]\nunitsize (1 cm);\n\npair A, B, C, D;\n\nB = (0,0);\nC = (9/sqrt(2),0);\nA = intersectionpoint(arc(B,3,0,180),arc(C,6,0,180));\nD = interp(B,C,3/9);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\n[/asy]\n\nBy the Angle Bisector Theorem, $\\frac{BD}{AB} = \\frac{CD}{AC},$ so $\\frac{BD}{3} = \\frac{CD}{6}.$  Also, $BD + CD = \\frac{9}{\\sqrt{2}},$ so $BD = \\frac{3}{\\sqrt{2}}$ and $CD = \\frac{6}{\\sqrt{2}}.$\n\nBy the Law of Cosines on triangle $ABC,$\n\\[\\cos B = \\frac{9 + \\frac{81}{2} - 36}{2 \\cdot 3\\cdot \\frac{9}{\\sqrt{2}}} = \\frac{\\sqrt{2}}{4}.\\]Then by the Law of Cosines on triangle $ABD,$\n\\[AD = \\sqrt{9 + \\frac{9}{2} - 2 \\cdot 3 \\cdot \\frac{3}{\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{4}} = \\boxed{3}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many inches are in the circumference of a great circle of a sphere which has surface area of $196\\pi$ sq in? Express your answer in terms of $\\pi$.\n\nNote: To measure the circumference, take the largest circle on the surface of the sphere.",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Let the sphere have radius $r$.  A sphere with radius $r$ has surface area $4\\pi r^2$, so we have \\[4\\pi r^2 = 196\\pi.\\] Dividing both sides by $4\\pi$ yields $r^2 = 49$; taking the square root of both sides and keeping the positive solution yields $r=7$ inches.\n\nA great circle of a sphere is the circular cross-section of the sphere that passes through the sphere's center, which, in this case, is a circle with radius 7.  The circumference of this circle is $2\\pi\\cdot 7 = \\boxed{14\\pi}$ inches."
-}

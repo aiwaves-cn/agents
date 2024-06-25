@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ $z,$ $v,$ $w$ be positive real numbers such that $x^2 + y^2 + z^2 + v^2 + w^2 = 2016.$  Let $M$ be the maximum value of\n\\[xz + 2yz + 3zv + 7zw,\\]and let $x_M,$ $y_M$, $z_M,$ $v_M,$ $w_M$ be the values of $x,$ $y,$ $z,$ $v,$ $w,$ respectively, that produce the maximum value of $M.$  Find $M + x_M + y_M + z_M + v_M + w_M.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $xz + 2yz + 3zv + 7zw = z(x + 2y + 3v + 7w).$  By Cauchy-Schwarz,\n\\begin{align*}\nx + 2y + 3v + 7w &\\le \\sqrt{(1 + 4 + 9 + 49)(x^2 + y^2 + v^2 + w^2)} \\\\\n&= \\sqrt{63 (x^2 + y^2 + v^2 + w^2)} \\\\\n&= 3 \\sqrt{7(2016 - z^2)},\n\\end{align*}so $z(x + 2y + 3v + 7w) \\le 3z \\sqrt{7(2016 - z^2)} = 3 \\sqrt{7z^2 (2016 - z^2)}.$\n\nBy AM-GM,\n\\[z^2 (2016 - z^2) \\le \\left( \\frac{z^2 + (2016 - z^2)}{2} \\right)^2 = 1008^2,\\]so\n\\[3 \\sqrt{7z^2 (2016 - z^2)} \\le 3 \\sqrt{7 \\cdot 1008^2} = 3024 \\sqrt{7}.\\]Equality occurs when $x:y:v:w = 1:2:3:7,$ $z^2 = 1008,$ and $x^2 + y^2 + z^2 + v^2 + w^2 = 2016,$ which leads to $x = 4,$ $y = 8,$ $z = 12 \\sqrt{7},$ $v = 12$, and $w = 28.$  Thus,\n\\[M + x_M + y_M + z_M + v_M + w_M = 3024 \\sqrt{7} + 4 + 8 + 12 \\sqrt{7} + 12 + 28 = \\boxed{52 + 3036 \\sqrt{7}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangular box has volume 216.  Find the smallest possible surface area of the box.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a,$ $b,$ and $c$ be the dimensions of the box, so $abc = 216.$  Then the surface area is\n\\[2(ab + ac + bc).\\]By AM-GM,\n\\[ab + ac + bc \\ge 3 \\sqrt[3]{(ab)(ac)(bc)} = 3 \\sqrt[3]{a^2 b^2 c^2} = 108,\\]so $2(ab + ac + bc) \\ge 216.$\n\nEquality occurs when $a = b = c = 6,$ so the smallest possible surface area is $\\boxed{216}.$"
-}

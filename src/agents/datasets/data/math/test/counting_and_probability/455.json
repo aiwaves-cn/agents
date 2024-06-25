@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence 2, 3, 5, 6, 7, 10, 11, $\\ldots$ contains all the positive integers from least to greatest that are neither squares nor cubes. What is the $400^{\\mathrm{th}}$ term of the sequence?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Let's try counting the number of perfect squares and cubes less than $441=21^2$. There are twenty perfect squares less than 441: $1^2, 2^2, \\ldots, 20^2$. There are also seven perfect cubes less than 441: $1^3, 2^3, \\ldots, 7^3$. So there would seem to be $20+7=27$ numbers less than 441 which are either perfect squares and perfect cubes.\n\nBut wait! $1=1^2=1^3$ is both a perfect square and a perfect cube, so we've accidentally counted it twice. Similarly, we've counted any sixth power less than 441 twice because any sixth power is both a square and a cube at the same time. Fortunately, the only other such one is $2^6=64$. Thus, there are $27-2=25$ numbers less than 441 that are perfect squares or perfect cubes. Also, since $20^2=400$ and $7^3=343$, then all 25 of these numbers are no more than 400. To compensate for these twenty-five numbers missing from the list, we need to add the next twenty-five numbers: 401, 402, $\\ldots$, 424, 425, none of which are perfect square or perfect cubes. Thus, the $400^{\\text{th}}$ term is $\\boxed{425}$."
-}

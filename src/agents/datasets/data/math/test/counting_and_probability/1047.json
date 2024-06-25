@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to arrange 6 people around a circular table with 7 seats?  (Two seatings are considered the same if one is a rotation of the other.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "First choose which seat is empty. It doesn't matter which seat we choose because we can rotate everyone at the table to move the empty seat anywhere we want. After the empty seat has been chosen, there are $6!=\\boxed{720}$ ways to arrange the remaining people."
-}

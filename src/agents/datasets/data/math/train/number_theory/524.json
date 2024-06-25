@@ -1,6 +1,0 @@
-{
-    "problem": "When a number is divided by 7, the remainder is 2. What is the remainder when three times the number minus 7 is divided by 7?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "If our number is $n$, then $n \\equiv 2 \\pmod 7$.  This tells us that  \\[3n - 7 = n + n + n - 7 \\equiv 6 - 0 \\pmod 7.\\]The remainder is $\\boxed{6}$ when the number is divided by $7.$"
-}

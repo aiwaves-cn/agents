@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the tens digit and the units digit in the decimal representation of $9^{2004}$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Write $9$ as $10-1$ and consider raising 9 to the 2004 power by multiplying out the expression \\[\n\\overbrace{(10-1)(10-1)(10-1)\\cdots(10-1)}^{2004\\text{ factors}}\n\\] There will be $2^{2004}$ terms in this expansion (one for each way to choose either 10 or $-1$ for each of the 2004 factors of $(10-1)$), but most of them will not affect the tens or units digit because they will have two or more factors of 10 and therefore will be divisible by 100.  Only the 2004 terms of $-10$ which come from choosing $-1$ in 2003 of the factors and 10 in the remaining one as well as the term $(-1)^{2004}=1$ remain.  Let $N$ represent the sum of all of the terms with more than 1 factor of 10.  We have \\begin{align*}\n(10-1)^{2004}&=N+2004(-10)+1\\\\\n&= N-20,\\!040+1 \\\\\n&= (N-20,\\!000)-40+1 \\\\\n&= (N-20,\\!000)-39.\n\\end{align*} So $9^{2004}$ is 39 less than a multiple of 100 and therefore ends in 61.  The sum of 6 and 1 is $\\boxed{7}$."
-}

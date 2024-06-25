@@ -1,6 +1,0 @@
-{
-    "problem": "The product of two 2-digit numbers is $3774$. What is the smaller of the two numbers?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The prime factorization of 3774 is $3774=2\\cdot3\\cdot17\\cdot37$.\n\n$2$ and $3$ are troublesome here, because they are both 1-digit factors. We can deal with them by multiplying them by some other factor to produce a bigger factor.\n\nOne thing we might try is multiplying them together, but $2\\cdot3=6$ is still only one digit.\n\nIf we try to put both of them with the $17$, that produces $2\\cdot3\\cdot17=102$, which is too many digits. Putting them with the $37$ would be even bigger, so that won't work either.\n\nSo we have to put one of them with each of the other factors. We can't put $3$ with $37$ because $3\\cdot37=111>100$, so the only thing we can do is say $2\\cdot37=74$ and $3\\cdot17=51$. The smaller of those two is $\\boxed{51}$."
-}

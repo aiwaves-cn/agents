@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive integer $b$ for which $x^2+bx+2008$ factors into a product of two binomials, each having integer coefficients.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The question implies that we can factor the given quadratic as \\begin{align*}\nx^2+bx+2008 &= (x+r)(x+s)\\\\\n& = x^2+(r+s)x+rs, \\end{align*} where $r$ and $s$ are integers.  Since both $b$ and 2008 are positive, it is clear that $r$ and $s$ must also be positive.  By multiplying out the right-hand side as shown, we see that we must have $rs=2008$, which has prime factorization $2008=2\\cdot 2\\cdot 2\\cdot 251$.  Recall that we are trying to minimize $b=r+s$.  The best we can do is to let $r=251$ and $s=8$, leading to $b=251+8=\\boxed{259}$."
-}

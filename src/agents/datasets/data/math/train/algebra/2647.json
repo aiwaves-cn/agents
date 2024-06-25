@@ -1,6 +1,0 @@
-{
-    "problem": "My friend and I both have the same math homework one day. I work at a rate of $p$ problems per hour and it takes me $t$ hours to finish my homework. My friend works at a rate of $2p-4$ problems per hour and it only takes him $t-2$ hours to finish his homework. Given that $p$ and $t$ are positive whole numbers and I do more than $10$ problems per hour, how many problems did I do?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "From the information given, we can set up the following equation: $pt = (2p-4)(t-2)$. Simplifying this, we get $pt - 4p - 4t = -8$. Now, we can use Simon's Favorite Factoring Trick and add $16$ to both sides to get $pt - 4p - 4t + 16 = 8$. This factors to $$(p-4)(t-4)=8$$Since $p>10$, the only possible combination of $p$ and $t$ is $p=12$ and $t=5$. Thus, I did a total of $12 \\cdot 5 = \\boxed{60}$ problems."
-}

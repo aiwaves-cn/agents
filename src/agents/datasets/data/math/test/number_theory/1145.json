@@ -1,6 +1,0 @@
-{
-    "problem": "A palindrome is a number which reads the same forward as backward. If a three-digit palindrome is randomly chosen, what is the probability that it is a multiple of 3?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "A three-digit palindrome must be of the form $1\\Box1, 2\\Box2, \\cdots 9\\Box9$, where $\\Box$ is any digit from 0 to 9. So there are $9\\cdot10=90$ three-digit palindromes. Now we look at which ones are multiples of 3. Recall that a positive integer is a multiple of 3 if and only if the sum of its digits is a multiple of 3. If we look at $1\\Box1$, we want $1+1+\\Box$ to be a multiple of 3, so $\\Box$ could be 1, 4, or 7. With $2\\Box2$, $2+2+\\Box$ should be a multiple of 3, so $\\Box$ could be 2, 5, or 8. With $3\\Box3$, $\\Box$ could be 0, 3, 6, or 9. The possible $\\Box$ values then repeat, $4\\Box4$ giving 1, 4, or 7, $5\\Box5$ giving 2, 5, or 8, etc. So the number of multiples of 3 is $3\\times (3+3+4)=30$. Since there are 90 three-digit palindromes in all, we get a probability of $\\frac{30}{90}=\\boxed{\\frac{1}{3}}$."
-}

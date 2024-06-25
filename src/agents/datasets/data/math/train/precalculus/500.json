@@ -1,6 +1,0 @@
-{
-    "problem": "Find the degree measure of the least positive angle $\\theta$ for which\n\\[\\cos 5^\\circ = \\sin 25^\\circ + \\sin \\theta.\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the given equation,\n\\begin{align*}\n\\sin \\theta &= \\cos 5^\\circ - \\sin 25^\\circ \\\\\n&= \\cos 5^\\circ - \\cos 65^\\circ.\n\\end{align*}By the sum-to-product formula,\n\\begin{align*}\n\\cos 5^\\circ - \\cos 65^\\circ &= -2 \\sin 35^\\circ \\sin (-30^\\circ) \\\\\n&= \\sin 35^\\circ.\n\\end{align*}Thus, the smallest such $\\theta$ is $\\boxed{35^\\circ}.$"
-}

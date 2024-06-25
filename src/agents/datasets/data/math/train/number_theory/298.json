@@ -1,6 +1,0 @@
-{
-    "problem": "Find the units digit of the sum, $$ 1! + 2! + 3! + \\cdots + 2006!. $$",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Since the units digits of $n!$ is always 0 when $n$ is an integer greater than 4, we just sum the first few factorials to get our answer: $1 + 2 + 6 + 24 = 33$, so $\\boxed{3}$ is the units digit."
-}

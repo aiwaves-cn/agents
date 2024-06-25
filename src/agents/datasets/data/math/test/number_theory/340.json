@@ -1,6 +1,0 @@
-{
-    "problem": "Consider the following two strings of digits: $11001010100101011$ and $110100011000100$. First consider them to be in base $10$ and sum them to get $n$. Then consider them to be in binary, sum them, write the answer in binary, then interpret the digits of the sum as if they were in base $10$ to get $m$. What is $n-m$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If you notice carefully, the two sequences of digits never both have a $1$ in the same place. Thus, whether you add them in base $10$ or binary, the resulting sequence of digits is the same. Thus whether we add them in base $10$ or add them in binary and interpret the digits in base $10$, we get the same result, so the difference is $\\boxed{0}$."
-}

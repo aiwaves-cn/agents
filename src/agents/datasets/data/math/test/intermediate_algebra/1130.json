@@ -1,6 +1,0 @@
-{
-    "problem": "Find the ordered pair $(a,b)$ of real numbers for which $x^2+ax+b$ has a non-real root whose cube is $343$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We want $x$ to satisfy $x^3 = 343.$  Then $x^3 - 343 = 0,$ which factors as $(x - 7)(x^2 + 7x + 49) = 0.$  Thus, $(a,b) = \\boxed{(7,49)}.$"
-}

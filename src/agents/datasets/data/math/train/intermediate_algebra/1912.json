@@ -1,6 +1,0 @@
-{
-    "problem": "If $2x+7$ is a factor of $6x^3+19x^2+cx+35$, find $c$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $2x+7$ is a factor, we should get a remainder of $0$ when we divide $6x^3+19x^2+cx+35$.\n\\[\n\\begin{array}{c|cccc}\n\\multicolumn{2}{r}{3x^2} & -x&+5  \\\\\n\\cline{2-5}\n2x+7 & 6x^3&+19x^2&+cx&+35 \\\\\n\\multicolumn{2}{r}{-6x^3} & -21x^2  \\\\ \n\\cline{2-3}\n\\multicolumn{2}{r}{0} & -2x^2 & +cx  \\\\\n\\multicolumn{2}{r}{} & +2x^2 & +7x \\\\ \n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0 & (c+7)x & + 35 \\\\ \n\\multicolumn{2}{r}{} & & -10x & -35 \\\\ \n\\cline{4-5}\n\\multicolumn{2}{r}{} & & (c+7-10)x & 0 \\\\ \n\\end{array}\n\\]The remainder is $0$ if $c+7-10=0$, so $c=\\boxed{3}$."
-}

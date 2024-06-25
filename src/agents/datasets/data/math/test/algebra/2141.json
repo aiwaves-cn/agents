@@ -1,6 +1,0 @@
-{
-    "problem": "One day, I decide to run to the park. On the way there, I run at a rate of $x^2$ miles per hour for $3$ hours. On the way back, I take the same path and jog at a slower rate of $16 - 4x$ miles per hour so that it takes me $4$ hours to get home. Given that $x > 0$, what is $x$? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Since we know that the distance that I traveled to the park and the distance that I traveled to get back home are the same, and that distance $=$ rate $\\times$ time, we have that  \\begin{align*}\n& (x^2)(3) = (16 - 4x)(4) \\\\\n\\Rightarrow\\qquad & 3x^2 = 64 - 16x \\\\\n\\Rightarrow\\qquad & 3x^2 + 16x - 64 = 0 \\\\\n\\Rightarrow\\qquad & (3x - 8)(x + 8) = 0.\n\\end{align*}Solving this equation, we get the solutions $x = \\frac{8}{3}$ and $x = -8$. Since $x$ must be positive, we have $x = \\boxed{\\frac{8}{3}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The product of positive integers $x$, $y$ and $z$ equals 2004. What is the minimum possible value of the sum $x + y + z$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Prime factorize $2004=2^2\\cdot 3\\cdot 167$.  One of the summands $x$, $y$, or $z$ should be 167, for otherwise the summand which has 167 as a prime factor is at least $2\\cdot 167$.  The other two summands multiply to give 12, and the minimum sum of two positive integers that multiply to give 12 is $4+3=7$.  Therefore, the minimum value of $x+y+z$ is $167+4+3=\\boxed{174}$."
-}

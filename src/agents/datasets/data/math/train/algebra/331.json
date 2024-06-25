@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ and $b$ are positive integers for which $ab - 6a + 5b = 373$, what is the minimal possible value of $|a - b|$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We apply Simon's Favorite Factoring Trick and note that if we subtract $30$ from both sides, then the left side can be factored. Thus, $$ab - 6a + 5b -30 = 343 \\rightarrow (a+5)(b-6) = 343$$Since $a,b$ are positive integers, then $a+5, b-6$ must be a pair of factors of $343 = 7^3$, which are given by $\\{a+5,b-6\\} = \\{1,343\\}, \\{7,49\\}, \\{49,7\\}$, or $\\{343,1\\}$. Thus, $\\{a,b\\} = \\{-4,349\\}, \\{2,55\\}, \\{44,13\\}$, or $\\{338,7\\}$. Therefore the minimal value of $|a-b|$ is $|44-13|=\\boxed{31}$."
-}

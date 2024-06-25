@@ -1,6 +1,0 @@
-{
-    "problem": "On a particular day in Salt Lake, UT, the temperature was given by $-t^2 +12t+50$ where $t$ is the time in hours past noon. What is the largest $t$ value at which the temperature was exactly 77 degrees?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We set the temperature equal to 77 degrees: \\begin{align*}\n-t^2 +12t+50&=77\\\\\nt^2-12t+27&=0\\\\\n(t-3)(t-9)&=0\n\\end{align*}We see then that the temperature is 77 degrees exactly twice: at $t=3$ and $t=9$, so our answer is $\\boxed{9}$."
-}

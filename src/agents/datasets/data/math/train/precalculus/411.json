@@ -1,6 +1,0 @@
-{
-    "problem": "Given $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = 5,$ find $\\begin{vmatrix} 2a & 2b \\\\ 2c & 2d \\end{vmatrix}.$",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "From $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = 5,$ $ad - bc = 5.$  Then\n\\[\\begin{vmatrix} 2a & 2b \\\\ 2c & 2d \\end{vmatrix} = (2a)(2d) - (2b)(2c) = 4(ad - bc) = \\boxed{20}.\\]"
-}

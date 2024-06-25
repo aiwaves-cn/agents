@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram shown here (which is not drawn to scale), suppose that $\\triangle ABC \\sim \\triangle PAQ$ and $\\triangle ABQ \\sim \\triangle QCP$.  If $m\\angle BAC = 70^\\circ$, then compute $m\\angle PQC$. [asy]\nsize(150); defaultpen(linewidth(0.8));\npair B = (0,0), C = (6,0), A = (2,4), Q = (1,0), P = (A + C)/2;\ndraw(A--B--C--A--Q--P);\nlabel(\"$B$\",B,S); label(\"$A$\",A,N); label(\"$C$\",C,S); label(\"$P$\",P,E); label(\"$Q$\",Q,S);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "We're given that $\\triangle ABQ \\sim \\triangle QCP$ and thus $m\\angle B = m\\angle C.$ Therefore, $\\triangle ABC$ is isosceles. From the given $m\\angle BAC=70^\\circ$, we have that $m\\angle ABC = m\\angle BCA = 55^\\circ$.  But we also know that $\\triangle ABC \\sim \\triangle PAQ$, which means that $m\\angle PAQ=55^\\circ$ as well.  Subtracting, $m\\angle BAQ=15^\\circ$.  Finally, from similar triangles, we have $m\\angle PQC=m\\angle BAQ = \\boxed{15^\\circ}$."
-}

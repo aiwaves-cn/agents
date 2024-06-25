@@ -1,6 +1,0 @@
-{
-    "problem": "Point $C$ is the midpoint of $\\overline{AB}$, point $D$ is the midpoint of $\\overline{AC}$, point $E$ is the midpoint of $\\overline{AD}$, and point $F$ is the midpoint of $\\overline{AE}$. If $AF=3$, what is the number of units in the length of $\\overline{AB}$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Drawing a figure allows us to see that $3=AF=\\frac{AE}{2}=\\frac{AD}{4}=\\frac{AC}{8}=\\frac{AB}{16}\\implies AB=\\boxed{48}$.\n\n[asy]\npair A,B,C,D,E,F;\n\nA = (0,0);\nB = (1,0);\nC = B/2;\nD=C/2;\nE = D/2;\nF=E/2;\ndraw(A--B);\ndot(A);\ndot(B);\ndot(C);\ndot(D);\ndot(E);\ndot(F);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\nlabel(\"$E$\",E,S);\nlabel(\"$F$\",F,S);\n[/asy]"
-}

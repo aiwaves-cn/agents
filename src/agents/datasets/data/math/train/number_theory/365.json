@@ -1,6 +1,0 @@
-{
-    "problem": "What is $2^{-1} + 2^{-2} + 2^{-3} + 2^{-4} + 2^{-5} + 2^{-6} \\pmod{13}$?\n\nExpress your answer as an integer from $0$ to $12$, inclusive.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let the given sum be $S$. By inspection, we find that $2^6 \\equiv 64 \\equiv -1 \\pmod{13}$, so $2^{-6} \\equiv (-1)^{-1} \\equiv -1 \\pmod{13}$. It follows that $2^{-5} \\equiv 2 \\cdot 2^{-6} \\equiv 2 \\cdot -1 \\equiv -2 \\pmod{13}$, and that $2^{-4} \\equiv -4 \\pmod{13}$, and so forth. Thus, $$S \\equiv -2^5 - 2^4 - 2^3 - 2^2 - 2 - 1 \\equiv -63 \\equiv \\boxed{2} \\pmod{13}$$"
-}

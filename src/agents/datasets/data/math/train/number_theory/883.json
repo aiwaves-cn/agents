@@ -1,6 +1,0 @@
-{
-    "problem": "For how many integer values of $n$ between 1 and 1000 inclusive does the decimal representation of $\\frac{n}{1400}$ terminate?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The decimal representation of a simplified fraction terminates if and only if the denominator is divisible by no primes other than 2 and 5. The prime factorization of $1400$ is $2^3 \\cdot 5^2 \\cdot 7$. For the fraction to simplify to having only the primes $2$ and $5$ in the denominator, there must be a factor of $7$ in the numerator. There are $\\left\\lfloor\\frac{1000}{7}\\right\\rfloor=142$ multiples of $7$ between $1$ and $1000$, so there are $\\boxed{142}$ integers values for $n$."
-}

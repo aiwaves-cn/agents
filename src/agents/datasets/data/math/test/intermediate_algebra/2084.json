@@ -1,6 +1,0 @@
-{
-    "problem": "If $a@b=\\dfrac{a^3-b^3}{a-b}$, for how many real values of $a$ does $a@1=0$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We want to solve $\\frac{a^3 - 1}{a - 1} = 0.$  Then\n\\[\\frac{(a - 1)(a^2 + a + 1)}{a - 1} = 0,\\]so $a^2 + a + 1 = 0.$  This quadratic has no real roots, so the number of real solutions is $\\boxed{0}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest integer $b > 3$ for which the base $b$ number $23_b$ is a perfect square?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Since $23_b = 2b + 3$ and $b > 3$, $23_b$ can be any odd integer greater than $2(3) + 3 = 9$.  We are looking for the next smallest odd perfect square, which is $5^2 = 25$.  Since $2b + 3 = 25$, $b = \\boxed{11}$ is our answer."
-}

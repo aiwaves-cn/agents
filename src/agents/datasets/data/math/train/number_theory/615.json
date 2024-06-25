@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $25_{10}+36_{10}$ in base 3?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Start by adding the two numbers in base 10, we have $25_{10}+36_{10}=61_{10}$. Next, it is necessary to convert $61_{10}$ to base 3. The largest power of $3$ less than or equal to $61$ is $3^3=27$. The greatest multiple of this power that is less than $61$ is $2\\cdot 3^3=54$, so the digit in the $3^3$ place is $2$. Now, we subtract $54$ from $61$ and get $7$. Since $3^2>7$, the digit in the $3^2$ place is $0$. We know that $3^1$ goes into $7$ twice without going over, so the digit in the $3^1$ place is $2$. Finally, $7-6=1$, so the digit in the $3^0$ place is $1$. Therefore, the value of $25_{10}+36_{10}$ in base 3 is $\\boxed{2021_3}$."
-}

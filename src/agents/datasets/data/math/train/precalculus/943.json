@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\mathbf{a}$ and $\\mathbf{b}$ are nonzero vectors such that $\\|\\mathbf{a} + \\mathbf{b}\\| = \\|\\mathbf{a} - \\mathbf{b}\\|,$ find the angle between $\\mathbf{a}$ and $\\mathbf{b},$ in degrees.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "From $\\|\\mathbf{a} + \\mathbf{b}\\| = \\|\\mathbf{a} - \\mathbf{b}\\|,$ $\\|\\mathbf{a} + \\mathbf{b}\\|^2 = \\|\\mathbf{a} - \\mathbf{b}\\|^2.$  Then\n\\[(\\mathbf{a} + \\mathbf{b}) \\cdot (\\mathbf{a} + \\mathbf{b}) = (\\mathbf{a} - \\mathbf{b}) \\cdot (\\mathbf{a} - \\mathbf{b}).\\]We can expand this as\n\\[\\mathbf{a} \\cdot \\mathbf{a} + 2 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b} = \\mathbf{a} \\cdot \\mathbf{a} - 2 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b}.\\]Then $\\mathbf{a} \\cdot \\mathbf{b} = 0,$ so the angle between $\\mathbf{a}$ and $\\mathbf{b}$ is $\\boxed{90^\\circ}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Three cards are chosen at random from a standard 52-card deck.  What is the probability that they are not all the same color?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We can find the probability they are all same color, then subtract that from 1. There are 26 cards of each color, so 3 of them can be selected in $\\binom{26}{3}$ ways, and of course there are 2 colors.  So the answer is \\[1-2\\frac{\\binom{26}{3}}{\\binom{52}{3}}=\\boxed{\\frac{13}{17}}.\\]"
-}

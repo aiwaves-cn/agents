@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be real numbers greater than 1 such that\n\\[(\\log_2 x)^4 + (\\log_3 y)^4 + 8 = 8 (\\log_2 x)(\\log_3 y).\\]Compute $x^{\\sqrt{2}} + y^{\\sqrt{2}}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = \\log_2 x$ and $b = \\log_3 y.$  Since $x > 1$ and $y > 1,$ $a > 0$ and $b > 0.$\n\nBy AM-GM,\n\\begin{align*}\na^4 + b^4 + 8 &= a^4 + b^4 + 4 + 4 \\\\\n&\\ge 4 \\sqrt[4]{(a^4)(b^4)(4)(4)} \\\\\n&= 8ab.\n\\end{align*}Since $a^4 + b^4 + 8 = 8ab,$ we have equality.  Therefore, $a^4 = 4$ and $b^4 = 4.$  Then $a = \\sqrt[4]{4} = \\sqrt{2},$ so\n\\[x = 2^a = 2^{\\sqrt{2}}.\\]Similarly, $b = \\sqrt[4]{4} = \\sqrt{2},$ so\n\\[y = 3^b = 3^{\\sqrt{2}}.\\]Hence, $x^{\\sqrt{2}} + y^{\\sqrt{2}} = 2^2 + 3^2 = \\boxed{13}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $(7,9)$ and $(10,2)$ are the coordinates of two opposite vertices of a square, what is the sum of the $y$-coordinates of the other two vertices?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The midpoints of the diagonals of a square coincide, so the midpoint of the line segment joining (7,9) and (10,2) is the same as the midpoint of the line segment joining the other two vertices of the square.  The average of the $y$-coordinates of (7,9) and (10,2) is the $y$-coordinate of their midpoint, which in turn is also equal to the average of the $y$-coordinates of the missing vertices.  Therefore, the average of the $y$-coordinates of (7,9) and (10,2) is equal to the average of the $y$-coordinates of the two missing vertices.  Since the sum is twice the average, the sum of the $y$-coordinates of the missing vertices is the same as that of the given vertices: $9+2=\\boxed{11}$.\n\n[asy]\nunitsize(0.5 cm);\n\npair A, B, C, D, O;\n\nA = (7,9);\nC = (10,2);\nO = (A + C)/2;\nB = rotate(90,O)*(A);\nD = rotate(90,O)*(C);\n\ndraw(A--B--C--D--cycle);\ndraw(A--C);\ndraw(B--D);\n\ndot(\"$(7,9)$\", A, N);\ndot(\"$(10,2)$\", C, S);\ndot(O);\n[/asy]"
-}

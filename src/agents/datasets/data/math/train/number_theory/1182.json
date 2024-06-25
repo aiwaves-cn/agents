@@ -1,6 +1,0 @@
-{
-    "problem": "Find the residue of $182\\cdot 12 - 15\\cdot 7 + 3\\pmod{14}$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since $182$ is divisible by 14, the first term does not affect the residue of the whole expression, modulo 14. Since $15\\cdot 7$ is divisible by 7 but not by 14 (since it isn't even), it has a residue of 7. So the residue of the sum is  $$\n182\\cdot 12 - 15\\cdot 7 + 3 \\equiv 0 - 7 + 3 \\equiv -4 \\equiv \\boxed{10} \\pmod{14}.\n$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the fraction that equals $0.\\overline{4}$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have \\[0.\\overline{4} = \\frac{4}{10} + \\frac{4}{100} + \\frac{4}{1000} + \\cdots.\\]This infinite geometric series has first term $4/10=2/5$ and common ratio $1/10$, so we have \\[0.\\overline{4} = \\frac{2/5}{1-1/10} = \\boxed{\\frac{4}{9}}.\\]"
-}

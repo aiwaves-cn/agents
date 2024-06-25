@@ -1,6 +1,0 @@
-{
-    "problem": "Determine if the graph of the equation below is a parabola, circle, ellipse, hyperbola, point, line, two lines, or empty.\n\n$x^2 - 50y^2 - 10x + 25 = 0$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Completing the square in $x$ gives \\[ (x - 5)^2 - 50y^2 = 0. \\]Rearranging and taking square roots, we get \\[ x-5 = \\pm 5y\\sqrt{2}. \\]We see that this defines $\\boxed{\\text{two lines}}$, namely $x = 5+ 5y\\sqrt{2}$ and $x = 5-5y\\sqrt{2}$."
-}

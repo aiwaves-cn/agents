@@ -1,6 +1,0 @@
-{
-    "problem": "Given vectors $\\mathbf{v}$ and $\\mathbf{w}$ such that $\\|\\mathbf{v}\\| = 3,$ $\\|\\mathbf{w}\\| = 7,$ and $\\mathbf{v} \\cdot \\mathbf{w} = 10,$ then find $\\|\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v}\\|.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Note that\n\\begin{align*}\n\\|\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v}\\| &= \\left\\| \\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\|\\mathbf{w}\\|^2} \\mathbf{w} \\right\\| \\\\\n&= \\frac{|\\mathbf{v} \\cdot \\mathbf{w}|}{\\|\\mathbf{w}\\|^2} \\cdot \\|\\mathbf{w}\\| \\\\\n&= \\frac{|\\mathbf{v} \\cdot \\mathbf{w}|}{\\|\\mathbf{w}\\|} \\\\\n&= \\boxed{\\frac{10}{7}}.\n\\end{align*}"
-}

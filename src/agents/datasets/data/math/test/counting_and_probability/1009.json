@@ -1,6 +1,0 @@
-{
-    "problem": "Pat is to select six cookies from a tray containing only chocolate chip, oatmeal, and peanut butter cookies. There are at least six of each of these three kinds of cookies on the tray. How many different assortments of six cookies can be selected? (Note that cookies of the same type are not distinguishable.)",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The numbers of the three types of cookies must have a sum of six. Possible sets of whole numbers whose sum is six are \\[\n0,0,6;\\ 0,1,5;\\ 0,2,4;\\ 0,3,3;\\ 1,1,4;\\ 1,2,3;\\ \\ \\text{and}\\ 2,2,2.\n\\]Every ordering of each of these sets determines a different assortment of cookies. There are 3 orders for each of the sets \\[\n0,0,6;\\ 0,3,3;\\ \\text{and}\\ 1,1,4.\n\\]There are 6 orders for each of the sets \\[\n0,1,5;\\ 0,2,4;\\ \\text{and}\\ 1,2,3.\n\\]There is only one order for $2,2,2$. Therefore the total number of assortments of six cookies is $3\\cdot 3 + 3\\cdot 6 + 1 = \\boxed{28}$."
-}

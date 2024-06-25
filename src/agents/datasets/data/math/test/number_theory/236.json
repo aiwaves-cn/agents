@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $1999^{2000}$ is divided by $5?$",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since any positive integer(expressed in base ten) is some multiple of $5$ plus its last digit, its remainder when divided by $5$ can be obtained by knowing its last digit.\n\nNote that $1999^1$ ends in $9,$ $1999^2$ ends in $1,$ $1999^3$ ends in $9,$ $1999^4$ ends in $1,$ and this alternation of $9$ and $1$ endings continues with all even powers ending in $1.$ Therefore, the remainder when $1999^{2000}$ is divided by $5$ is $\\boxed{1}.$"
-}

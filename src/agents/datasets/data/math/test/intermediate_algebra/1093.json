@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence \\[\\log_{12}{162}, \\ \\log_{12}{x}, \\ \\log_{12}{y}, \\ \\log_{12}{z}, \\ \\log_{12}{1250}\\]is an arithmetic progression. What is $x$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "In general, if $\\log_{12} a, \\log_{12}  b, \\log_{12}  c$ is an arithmetic progression, then we have \\[2\\log _{12} b = \\log_{12} a + \\log_{12}  c,\\]or $\\log_{12}  b^2 = \\log_{12}  ac.$ Thus, $b^2 = ac,$ which means that $a, b, c$ is a geometric progression.\n\nIn our case, we see that $162, x, y, z, 1250$ must be a geometric progression. If $r$ is the common ratio, then we have $162r^4 = 1250,$ so $r^4 = \\frac{1250}{162} = \\frac{625}{81} = \\frac{5^4}{3^4},$ and $r = \\frac{5}{3}.$ (Note that $x, y, z$ must be positive for the logs to be defined, so $r$ must be positive as well.) Then \\[x = 162 \\cdot \\frac{5}{3} = \\boxed{270}.\\]"
-}

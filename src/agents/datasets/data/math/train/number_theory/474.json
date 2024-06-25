@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $a$ is a multiple of $456$, find the greatest common divisor of $3a^3+a^2+4a+57$ and $a$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We use the Euclidean Algorithm.  \\begin{align*}\n\\text{gcd}\\,(3a^3+a^2+4a+57,a)\n&=\\text{gcd}\\,(3a^3+a^2+4a+57-(3a^2+a+4)a,a)\\\\\n&=\\text{gcd}\\,(57,a).\n\\end{align*}Since $57$ is a divisor of $456$, and $a$ is a multiple of $456$, the greatest common divisor is $\\boxed{57}$."
-}

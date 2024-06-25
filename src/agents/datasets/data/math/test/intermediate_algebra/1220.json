@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the value of $ab$ if $\\log_8a+\\log_4b^2=5$ and $\\log_8b+\\log_4a^2=7$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $p = ab$. We add the two given equations, giving \\[\\begin{aligned} (\\log_8 a + \\log_4 b^2) + (\\log_8 b + \\log_4 a^2) &= 12 \\\\ \\log_8 (ab) + \\log_4 (a^2b^2)& = 12 \\\\ \\log_8 p + \\log_4 p^2 &= 12 \\\\ \\log_8 p + 2 \\log_4 p &= 12. \\end{aligned} \\]Using the change-of-base formula, we have \\[\\log_8 p = \\frac{\\log_4 p}{\\log_4 8} = \\frac{\\log_4 p}{3/2} = \\frac{2}{3} \\log_4 p,\\]so we can write both logarithms in base $4$: \\[ \\tfrac{2}{3} \\log_4 p + 2 \\log_4 p = 12, \\]or $\\tfrac{8}{3} \\log_4 p =12$. Thus, $\\log_4 p = 12 \\cdot \\tfrac{3}{8} = \\tfrac{9}{2}$, so \\[p = 4^{9/2} = 2^9 = \\boxed{512}.\\]"
-}

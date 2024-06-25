@@ -1,6 +1,0 @@
-{
-    "problem": "Find the quotient when $7x^3 + 3x^2 - 5x - 8$ is divided by $x + 2.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "The long division is shown below.\n\n\\[\n\\begin{array}{c|cc cc}\n\\multicolumn{2}{r}{7x^2} & -11x & +17  \\\\\n\\cline{2-5}\nx + 2 & 7x^3 & +3x^2&-5x&-8  \\\\\n\\multicolumn{2}{r}{7x^3} & +14x^2& \\\\ \n\\cline{2-3}\n\\multicolumn{2}{r}{} & -11x^2& -5x\\\\ \n\\multicolumn{2}{r}{} & -11x^2& -22x\\\\ \n\\cline{3-4}\n\\multicolumn{2}{r}{} & & +17x & -8 \\\\ \n\\multicolumn{2}{r}{} & & +17x & +34 \\\\ \n\\cline{4-5}\n\\multicolumn{2}{r}{} & & & -42 \\\\ \n\\end{array}\n\\]Thus, the quotient is $\\boxed{7x^2 - 11x + 17}.$"
-}

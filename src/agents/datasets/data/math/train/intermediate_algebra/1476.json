@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest positive integer $n$ such that\n\\[\\sin^n x + \\cos^n x \\ge \\frac{1}{n}\\]for all real numbers $x.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = \\pi,$ we get\n\\[(-1)^n \\ge \\frac{1}{n},\\]so $n$ must be even.  Let $n = 2m.$\n\nSetting $x = \\frac{\\pi}{4},$ we get\n\\[\\left( \\frac{1}{\\sqrt{2}} \\right)^{2m} + \\left( \\frac{1}{\\sqrt{2}} \\right)^{2m} \\ge \\frac{1}{2m}.\\]This simplifies to\n\\[\\frac{1}{2^{m - 1}} \\ge \\frac{1}{2m},\\]so $2^{m - 2} \\le m.$  We see that $m = 4$ is a solution, and the function $2^{m - 2}$ grows faster than $m,$ so $m = 4$ is the largest possible value of $m.$\n\nWe must then prove that\n\\[\\sin^8 x + \\cos^8 x \\ge \\frac{1}{8}\\]for all real numbers $x.$\n\nBy QM-AM,\n\\[\\sqrt{\\frac{\\sin^8 x + \\cos^8 x}{2}} \\ge \\frac{\\sin^4 x + \\cos^4 x}{2},\\]so\n\\[\\sin^8 x + \\cos^8 x \\ge \\frac{(\\sin^4 x + \\cos^4 x)^2}{2}.\\]Again by QM-AM,\n\\[\\sqrt{\\frac{\\sin^4 x + \\cos^4 x}{2}} \\ge \\frac{\\sin^2 x + \\cos^2 x}{2} = \\frac{1}{2},\\]so\n\\[\\sin^4 x + \\cos^4 x \\ge \\frac{1}{2}.\\]Therefore,\n\\[\\sin^8 x + \\cos^8 x \\ge \\frac{(1/2)^2}{2} = \\frac{1}{8}.\\]We conclude that the largest such positive integer $n$ is $\\boxed{8}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For positive real numbers $x$ and $y,$ the equation\n\\[\\arctan x + \\arccos \\frac{y}{\\sqrt{1 + y^2}} = \\arcsin \\frac{3}{\\sqrt{10}}\\]reduces to an equation of the form\n\\[xy + ax + by + c = 0.\\]Enter the ordered triple $(a,b,c).$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "With the usual approach of constructing a right triangle, we can derive that $\\arccos \\frac{y}{\\sqrt{1 + y^2}} = \\arctan \\frac{1}{y}$ and $\\arcsin \\frac{3}{\\sqrt{10}} = \\arctan 3,$ so\n\\[\\arctan x + \\arctan \\frac{1}{y} = \\arctan 3.\\]Then\n\\[\\tan \\left( \\arctan x + \\arctan \\frac{1}{y} \\right) = 3,\\]so from the angle addition formula,\n\\[\\frac{x + \\frac{1}{y}}{1 - \\frac{x}{y}} = 3.\\]This becomes $xy + 3x - 3y + 1 = 0,$ so $(a,b,c) = \\boxed{(3,-3,1)}.$"
-}

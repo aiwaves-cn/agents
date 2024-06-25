@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $f(x) = ax+b$ and $g(x) = -3x+5$. If $h(x) = f(g(x))$ and $h^{-1}(x) = x+7$, find $a-b$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Substituting the definition of $f$ and $g$ into $h(x) = f(g(x))$, we get $h(x) = ag(x) + b = a(-3x+5)+b = -3ax + (5a+b)$.\n\nSince $h^{-1}(x)$ is given by adding 7 to $x$, the inverse of $h^{-1}$ is given by subtracting 7.  Therefore $h(x)=x-7$.  We can test this by substiting \\[h(h^{-1}(x))=(x+7)-7=x.\\]Combining these two expressions for $h$ we get  \\[ -3ax + (5a+b)=x-7.\\]From here we could solve for $a$ and $b$ and find $a-b$, but we notice that the substitution $x=2$ gives \\[-6a+(5a+b)=2-7\\]or \\[b-a=-5.\\]Therefore $a-b=\\boxed{5}$."
-}

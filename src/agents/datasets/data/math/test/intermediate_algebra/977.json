@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z=a+bi$ be the complex number with $\\vert z \\vert = 5$ and $b > 0$ such that the distance between $(1+2i)z^3$ and $z^5$ is maximized. Compute $z^4.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "The distance between $(1+2i)z^3$ and $z^5$ is \\[\\begin{aligned} |(1+2i)z^3 - z^5| &= |z^3| \\cdot |(1+2i) - z^2| \\\\ &= 5^3 \\cdot |(1+2i) - z^2|, \\end{aligned}\\]since we are given $|z| = 5.$ We have $|z^2| = 25;$ that is, in the complex plane, $z^2$ lies on the circle centered at $0$ of radius $25.$ Given this fact, to maximize the distance from $z^2$ to $1+2i,$ we should choose $z^2$ to be a negative multiple of $1+2i$ (on the \"opposite side\" of $1+2i$ relative to the origin $0$). Since $|1+2i| = \\sqrt{5}$ and $z^2$ must have magnitude $25$, scaling $1+2i$ by a factor of $-\\frac{25}{\\sqrt{5}} = -5\\sqrt{5}$ gives the correct point: \\[ z^2 = -5\\sqrt{5} (1+2i).\\]Then \\[z^4 = 125(-3 + 4i) = \\boxed{-375 + 500i}.\\](Note that the restriction $b>0$ was not used. It is only needed to ensure that the number $z$ in the problem statement is uniquely determined, since there are two complex numbers $z$ with $|z| = 5$ such that $|(1+2i)z^3 - z^5|$ is maximized, one the negation of the other.)"
-}

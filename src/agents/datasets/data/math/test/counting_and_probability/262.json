@@ -1,6 +1,0 @@
-{
-    "problem": "Bob and Meena play a two-person game which is won by the first person to accumulate 10 points. At each turn Bob gains a point with probability of $\\frac{1}{3}$ . If he doesn't get a point, then Meena gets a point. Meena is now ahead 9 to 8. What is the probability that Meena will win? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Since Meena has 9 points already, the only way Bob can win is by getting a point on both of the next two turns. The probability that this will happen is $\\left( \\frac{1}{3} \\right) ^2=\\frac{1}{9}$. Therefore, the probability that Meena will win is $1-\\frac{1}{9}=\\boxed{\\frac{8}{9}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct four-tuples $(a, b, c, d)$ of rational numbers are there with\n\\[a \\cdot \\log_{10} 2+b \\cdot \\log_{10} 3 +c \\cdot \\log_{10} 5 + d \\cdot \\log_{10} 7 = 2005?\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can write the given equation as\n\\[\\log_{10} 2^a + \\log_{10} 3^b + \\log_{10} 5^c + \\log_{10} 7^d = 2005.\\]Then\n\\[\\log_{10} (2^a \\cdot 3^b \\cdot 5^c \\cdot 7^d) = 2005,\\]so $2^a \\cdot 3^b \\cdot 5^c \\cdot 7^d = 10^{2005}.$\n\nSince $a,$ $b,$ $c,$ $d$ are all rational, there exists some positive integer $M$ so that $aM,$ $bM,$ $cM,$ $dM$ are all integers.  Then\n\\[2^{aM} \\cdot 3^{bM} \\cdot 5^{cM} \\cdot 7^{dM} = 10^{2005M} = 2^{2005M} \\cdot 5^{2005M}.\\]From unique factorization, we must have $aM = 2005M,$ $bM = 0,$ $cM = 2005M,$ and $dM = 0.$  Then $a = 2005,$ $b = 0,$ $c = 2005,$ and $d = 0.$  Thus, there is only $\\boxed{1}$ quadruple, namely $(a,b,c,d) = (2005,0,2005,0).$"
-}

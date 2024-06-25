@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of an infinite geometric series is a positive number $S$, and the second term in the series is $1$. What is the smallest possible value of $S?$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a$ be the first term, and let $r$ be the common ratio.  Then $ar = 1$ and\n\\[S = \\frac{a}{1 - r} = \\frac{1/r}{1 - r} = \\frac{1}{r(1 - r)} = \\frac{1}{r - r^2}.\\]Completing the square, we get\n\\[r - r^2 = \\frac{1}{4} - \\left( r - \\frac{1}{2} \\right)^2 \\le \\frac{1}{4},\\]so $S \\ge 4.$\n\nEquality occurs when $r = \\frac{1}{2}$ and $a = 2,$ so the smallest possible value of $S$ is $\\boxed{4}.$"
-}

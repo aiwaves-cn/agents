@@ -1,6 +1,0 @@
-{
-    "problem": "Cybil and Ronda are sisters. The 10 letters from their names are placed on identical cards so that each of 10 cards contains one letter. Without replacement, two cards are selected at random from the 10 cards. What is the probability that one letter is from each sister's name? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The probability that the first letter selected will be from Cybil's name, and the second from Ronda's name, will be $\\frac{5}{10}\\cdot \\frac{5}{9}=\\frac{5}{18}$.  Similarly, the probability that the first letter will be from Ronda's name, and the second from Cybil's name, is also $\\frac{5}{10}\\cdot \\frac{5}{9}=\\frac{5}{18}$.  The probability that one letter will be selected from each name is then $\\frac{5}{18}+\\frac{5}{18}=\\boxed{\\frac{5}{9}}$."
-}

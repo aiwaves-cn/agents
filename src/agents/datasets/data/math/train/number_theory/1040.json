@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest common divisor of $5!$ and $\\frac{8!}{3!}?$ Express your answer as an integer.  (Reminder: If $n$ is a positive integer, then $n!$ stands for the product $1\\cdot 2\\cdot 3\\cdot \\cdots \\cdot (n-1)\\cdot n$.)",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "First, we factor $5!$ into primes: \\begin{align*} 5! &= 5\\cdot4\\cdot3\\cdot2\\cdot1\\\\ &= 2^{3}\\cdot3\\cdot5. \\end{align*} Then, we factor $\\frac{8!}{3!}.$ \\begin{align*} \\frac{8!}{3!} &= 8\\cdot7\\cdot6\\cdot5\\cdot4\\\\ &= 2^{6}\\cdot 3\\cdot 5\\cdot 7. \\end{align*} We can find the greatest common factor by taking the lowest exponent of each common prime factor. We get $2^{3}\\cdot3\\cdot5 = \\boxed{120}.$"
-}

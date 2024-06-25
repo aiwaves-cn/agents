@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum\n\\[0.1 + 0.02 + 0.003 + 0.0004 + \\dots + \\frac{n}{10^n} + \\dotsb.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[S = \\frac{1}{10} + \\frac{2}{10^2} + \\frac{3}{10^3} + \\dotsb.\\]Then\n\\[\\frac{1}{10} S = \\frac{1}{10^2} + \\frac{2}{10^3} + \\frac{3}{10^4} + \\dotsb.\\]Subtracting these equations, get\n\\[\\frac{9}{10} S = \\frac{1}{10} + \\frac{1}{10^2} + \\frac{1}{10^3} + \\dots = \\frac{1/10}{1 - 1/10} = \\frac{1}{9}.\\]Therefore,\n\\[S = \\boxed{\\frac{10}{81}}.\\]"
-}

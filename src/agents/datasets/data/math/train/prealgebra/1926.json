@@ -1,6 +1,0 @@
-{
-    "problem": "The expression $\\frac{4k+8}{4}$ simplifies to an expression of the form $ak+b$ where $a$ and $b$ are integers. Find $\\frac{a}{b}$ .",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We need to look for a common factor of 4 and 8 to cancel. 4 and 8 are both divisible by 4 so we can cancel 4 from the numerator and denominator of the fraction. \\[\\frac{4k+8}{4}=\\frac{4\\cdot(1k+2)}{4\\cdot1}=\\frac{4}{4}\\cdot\\frac{1k+2}{1}=\\frac{1k+2}{1}\\] Dividing by one leaves an expression the same, so the it is now $1k+2$ . Checking the form that the answer should be expressed in, we can see that $1k+2$ is of the form $ak+b$ with $a$ and $b$ integers, since 1 and 2 are both integers. So we divide 1 by 2 to get $\\boxed{\\frac{1}{2}}$ ."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many numbers are in the list $ 147, 144, 141, \\ldots, 42, 39?$",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We want to transform the numbers to a sequence from 1 to $N$, which is easy to count.  First, we reverse the list to become $39,42,\\ldots,144,147$.  Then we divide each number by 3 since the numbers are spaced 3 apart to get $13,14,\\ldots,48,49.$  Finally, we subtract 12 from all of the numbers to get $1, 2, \\ldots, 37.$  So there are $\\boxed{37}$ numbers."
-}

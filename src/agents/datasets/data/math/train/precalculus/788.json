@@ -1,6 +1,0 @@
-{
-    "problem": "If\n\\[\\mathbf{A} = \\begin{pmatrix} 1 & 3 \\\\ 2 & 1 \\end{pmatrix},\\]then compute $\\det (\\mathbf{A}^2 - 2 \\mathbf{A}).$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "One way to compute $\\det (\\mathbf{A}^2 - 2 \\mathbf{A})$ is to compute the matrix $\\mathbf{A}^2 - 2 \\mathbf{A},$ and then take its determinant.  Another way is to write $\\mathbf{A^2} - 2 \\mathbf{A} = \\mathbf{A} (\\mathbf{A} - 2 \\mathbf{I}).$  Then\n\\begin{align*}\n\\det (\\mathbf{A^2} - 2 \\mathbf{A}) &= \\det (\\mathbf{A} (\\mathbf{A} - 2 \\mathbf{I})) \\\\\n&= \\det (\\mathbf{A}) \\det (\\mathbf{A} - 2 \\mathbf{I}) \\\\\n&= \\det \\begin{pmatrix} 1 & 3 \\\\ 2 & 1 \\\\ \\end{pmatrix} \\det \\begin{pmatrix} -1 & 3 \\\\ 2 & -1 \\end{pmatrix} \\\\\n&= (1 - 6)(1 - 6) = \\boxed{25}.\n\\end{align*}"
-}

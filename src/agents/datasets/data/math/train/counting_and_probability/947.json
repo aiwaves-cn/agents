@@ -1,6 +1,0 @@
-{
-    "problem": "Using only the digits 7, 8 and 9, how many positive seven-digit integers can be made that are palindromes?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Since we need to make a palindrome, it only matters what we pick for the first 4 digits, since the other three are reflections of the first three.  Therefore, since each of them has 3 possibilities, our total is $3^4 = \\boxed{81}$."
-}

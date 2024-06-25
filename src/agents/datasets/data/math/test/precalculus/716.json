@@ -1,6 +1,0 @@
-{
-    "problem": "A line intersects the $yz$-plane at $(0,-2,-5),$ and the $xz$-plane at $(3,0,-1).$  Find the point where the line intersects the $xy$-plane.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The corresponding vectors are $\\begin{pmatrix} 0 \\\\ -2 \\\\ -5 \\end{pmatrix}$ and $\\begin{pmatrix} 3 \\\\ 0 \\\\ -1 \\end{pmatrix},$ so the line can be parameterized by\n\\[\\begin{pmatrix} 0 \\\\ -2 \\\\ -5 \\end{pmatrix} + t \\left( \\begin{pmatrix} 3 \\\\ 0 \\\\ -1 \\end{pmatrix} - \\begin{pmatrix} 0 \\\\ -2 \\\\ -5 \\end{pmatrix} \\right) = \\begin{pmatrix} 3t \\\\ -2 + 2t \\\\ -5 + 4t \\end{pmatrix}.\\]When the line intersects the $xy$-plane, the $z$-coordinate is $0.$  Hence, $-5 + 4t = 0,$ so $t = \\frac{5}{4}.$  Then the vector becomes\n\\[\\begin{pmatrix} 3 \\cdot 5/4 \\\\ -2 + 2 \\cdot 5/4 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 15/4 \\\\ 1/2 \\\\ 0 \\end{pmatrix},\\]and the corresponding point is $\\boxed{\\left( \\frac{15}{4}, \\frac{1}{2}, 0 \\right)}.$"
-}

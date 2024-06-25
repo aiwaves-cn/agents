@@ -1,6 +1,0 @@
-{
-    "problem": "Let $n$ be a natural number with exactly 2 positive prime divisors.  If $n^2$ has 27 divisors, how many does $n$ have?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let $p$ and $q$ be the prime divisors of $n$, so we can write $n = p^a \\cdot q^b$ for positive integers $a$ and $b$.  This means $n^2 = p^{2a} \\cdot q^{2b}$, so $t(n^2) = (2a + 1)(2b + 1) = 27$.  Since $2a + 1$ and $2b + 1$ are both greater than 1 and are divisors of 27, we know they are 3 and 9 (in no particular order).  This means that $a$ and $b$ are 1 and 4 (in no particular order), so $$ t(n) = (a + 1)(b + 1) = (1 + 1)(4 + 1) = \\boxed{10}. $$"
-}

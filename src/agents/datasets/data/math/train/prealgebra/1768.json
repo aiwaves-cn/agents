@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$, $ADE$, and $EFG$ are all equilateral. Points $D$ and $G$ are midpoints of $\\overline{AC}$ and $\\overline{AE}$, respectively. If $AB=4$, what is the perimeter of figure $ABCDEFG$? [asy]\n/* AMC8 2000 #15 Problem */\ndraw((0,0)--(4,0)--(5,2)--(5.5,1)--(4.5,1));\ndraw((0,0)--(2,4)--(4,0));\ndraw((3,2)--(5,2));\nlabel(\"$A$\", (3.7,0), SE);\nlabel(\"$B$\", (0,0), SW);\nlabel(\"$C$\", (2,4), N);\nlabel(\"$D$\", (2.8,2), NE);\nlabel(\"$E$\", (4.8,2), NE);\nlabel(\"$F$\", (5.3,1.05), SE);\nlabel(\"$G$\", (4.3, 1.05), SE);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We have \\begin{align*}\nAB+BC+CD+DE+EF+FG+GA&=\\\\\n4+4+2+2+1+1+1&=\\boxed{15}\\\\\n\\end{align*}"
-}

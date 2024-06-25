@@ -1,6 +1,0 @@
-{
-    "problem": "In the figure, triangles $ABC$ and $BCD$ are equilateral triangles. What is the value of $AD \\div BC$ when expressed in simplest radical form?\n\n[asy]\ndraw((0,0)--(5,8.7)--(10,0)--cycle);\ndraw((10,0)--(15,8.7)--(5,8.7));\nlabel(\"$A$\",(0,0),SW);\nlabel(\"$B$\",(5,8.7),N);\nlabel(\"$C$\",(10,0),SE);\nlabel(\"$D$\",(15,8.7),NE);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Let $BC = s$. We can see that $AD$ consists of the altitudes from $A$ and $D$ to $BC$, each of which has length $s\\sqrt{3}/2$. Thus, $AD = s\\sqrt{3}$. Therefore, $AD\\div BC = s\\sqrt{3}/s = \\boxed{\\sqrt{3}}$."
-}

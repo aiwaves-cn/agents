@@ -1,6 +1,0 @@
-{
-    "problem": "Solve\n\\[\\arcsin (\\sin x) = \\frac{x}{2}.\\]Enter all the solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Since $\\frac{x}{2} = \\arcsin (\\sin x),$ we must have $-\\frac{\\pi}{2} \\le \\frac{x}{2} \\le \\frac{\\pi}{2},$ or\n\\[-\\pi \\le x \\le \\pi.\\]Taking the sine of both sides of the given equation, we get\n\\[\\sin (\\arcsin (\\sin x)) = \\sin \\frac{x}{2},\\]which simplifies to\n\\[\\sin x = \\sin \\frac{x}{2}.\\]Then from the double angle formula,\n\\[2 \\sin \\frac{x}{2} \\cos \\frac{x}{2} = \\sin \\frac{x}{2},\\]so $2 \\sin \\frac{x}{2} \\cos \\frac{x}{2} - \\sin \\frac{x}{2} = 0.$  This factors as\n\\[\\sin \\frac{x}{2} \\left( 2 \\cos \\frac{x}{2} - 1 \\right) = 0,\\]so $\\sin \\frac{x}{2} = 0$ or $\\cos \\frac{x}{2} = \\frac{1}{2}.$\n\nIf $\\sin \\frac{x}{2} = 0,$ then $x = 0.$  If $\\cos \\frac{x}{2} = \\frac{1}{2},$ then $x = \\pm \\frac{2 \\pi}{3}.$  We check that all these values work, so the solutions are $\\boxed{-\\frac{2 \\pi}{3}, 0, \\frac{2 \\pi}{3}}.$"
-}

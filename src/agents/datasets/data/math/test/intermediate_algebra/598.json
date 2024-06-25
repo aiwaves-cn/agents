@@ -1,6 +1,0 @@
-{
-    "problem": "Find the quotient when $x^4 + 3x^2 - 7x$ is divided by $x^2 + 2x - 1.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "The long division is shown below.\n\n\\[\n\\begin{array}{c|cc ccc}\n\\multicolumn{2}{r}{x^2} & -2x & +8 \\\\\n\\cline{2-6}\nx^2 + 2x - 1 & x^4 & & +3x^2 & -7x &  \\\\\n\\multicolumn{2}{r}{x^4} & +2x^3 & -x^2 \\\\\n\\cline{2-4}\n\\multicolumn{2}{r}{} & -2x^3 & +4x^2 & -7x \\\\\n\\multicolumn{2}{r}{} & -2x^3 & -4x^2 & +2x \\\\\n\\cline{3-5}\n\\multicolumn{2}{r}{} & & +8x^2 & -9x & \\\\\n\\multicolumn{2}{r}{} &  & +8x^2 & +16x & -8 \\\\\n\\cline{4-6}\n\\multicolumn{2}{r}{} &  &  & -25x & +8 \\\\\n\\end{array}\n\\]Thus, the quotient is $\\boxed{x^2 - 2x + 8}.$"
-}

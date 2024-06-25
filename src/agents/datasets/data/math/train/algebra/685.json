@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of the parabola defined by the equation $y=(x-2)^2+3$ is rotated 180 degrees about its vertex, then shifted 3 units to the left, then shifted 2 units down. The resulting parabola has zeros at $x=a$ and $x=b$. What is $a+b$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The graph of the original parabola ($A$) and its final image ($A'$) after rotation and translation is shown below:\n\n[asy]\nLabel f;\n\nf.p=fontsize(4);\n\nxaxis(-3,4,Ticks(f, 2.0));\n\nyaxis(-3,7,Ticks(f, 2.0));\nreal f(real x)\n\n{\n\nreturn (x-2)^2+3;\n\n}\n\ndraw(\"$A$\", graph(f,0,4), linewidth(1));\nreal g(real x)\n\n{\n\nreturn -(x+1)^2+1;\n\n}\n\ndraw(\"$A'$\", graph(g,-3,1), linewidth(1));\n[/asy]\n\nRotating the original parabola 180 degrees changes its equation to $y=-(x-2)^2+3$. Shifting this last parabola to the left changes its equation to $y=-(x+1)^2+3$. Shifting it down changes its equation to $y=-(x+1)^2+1$. So the equation of $A'$ is $y=-(x+1)^2+1$. To find the zeros of this parabola, we set $y=0$ to get $0=-(x+1)^2+1$. Expanding the right hand side gives $0=-x^2-2x$. Dividing through by $-1$ and factoring out an $x$ from the right hand side, we get $0=x(x+2)$, so either $x=0$ or $x+2=0$. Thus, $a=0$ and $b=-2$, so $a+b=\\boxed{-2}$."
-}

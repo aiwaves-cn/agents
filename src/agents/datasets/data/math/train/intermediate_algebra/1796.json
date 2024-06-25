@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be positive real numbers such that $4x + 9y = 60.$  Find the maximum value of $xy.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[60 = 4x + 9y \\ge 2 \\sqrt{(4x)(9y)} = 2 \\sqrt{36xy} = 12 \\sqrt{xy},\\]so $\\sqrt{xy} \\le 5.$  Hence, $xy \\le 25.$\n\nEquality occurs when $4x = 9y.$  Along with the condition $4x + 9y = 60,$ we can solve to get $x = \\frac{15}{2}$ and $y = \\frac{10}{3},$ so the maximum value is $\\boxed{25}.$"
-}

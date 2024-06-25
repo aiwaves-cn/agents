@@ -1,6 +1,0 @@
-{
-    "problem": "The point $(4 + 7 \\sqrt{3}, 7 - 4 \\sqrt{3})$ is rotated $60^\\circ$ counter-clockwise about the origin.  Find the resulting point.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "The matrix\n\\[\\begin{pmatrix} \\cos 60^\\circ & -\\sin 60^\\circ \\\\ \\sin 60^\\circ & \\cos 60^\\circ \\end{pmatrix} = \\begin{pmatrix} \\frac{1}{2} & -\\frac{\\sqrt{3}}{2} \\\\ \\frac{\\sqrt{3}}{2} & \\frac{1}{2} \\end{pmatrix}\\]corresponds to rotating about the origin by an angle of $60^\\circ$ counter-clockwise.  Then\n\\[\\begin{pmatrix} \\frac{1}{2} & -\\frac{\\sqrt{3}}{2} \\\\ \\frac{\\sqrt{3}}{2} & \\frac{1}{2} \\end{pmatrix} \\begin{pmatrix} 4 + 7 \\sqrt{3} \\\\ 7 - 4 \\sqrt{3} \\end{pmatrix} = \\begin{pmatrix} 8 \\\\ 14 \\end{pmatrix},\\]so the resulting point is $\\boxed{(8,14)}.$"
-}

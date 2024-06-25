@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)$ be a polynomial with real, nonnegative coefficients.  If $f(6) = 24$ and $f(24) = 1536,$ find the largest possible value of $f(12).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[f(x) = a_n x^n + a_{n - 1} x^{n - 1} + \\dots + a_1 x + a_0.\\]Then from the given information,\n\\begin{align*}\na_n \\cdot 6^n + a_{n - 1} \\cdot 6^{n - 1} + \\dots + a_1 \\cdot 6 + a_0 &= 24, \\\\\na_n \\cdot 24^n + a_{n - 1} \\cdot 24^{n - 1} + \\dots + a_1 \\cdot 24 + a_0 &= 1536.\n\\end{align*}Then by Cauchy-Schwarz,\n\\begin{align*}\n&(a_n \\cdot 6^n + a_{n - 1} \\cdot 6^{n - 1} + \\dots + a_1 \\cdot 6 + a_0)(a_n \\cdot 24^n + a_{n - 1} \\cdot 24^{n - 1} + \\dots + a_1 \\cdot 24 + a_0) \\\\\n&\\ge (a_n \\cdot 12^n + a_{n - 1} \\cdot 12^{n - 1} + \\dots + a_1 \\cdot 12 + a_0)^2.\n\\end{align*}In other words, $[f(12)]^2 \\le 24 \\cdot 1536 = 36864,$ so $f(12) \\le 192.$\n\nEquality occurs for $f(x) = \\frac{x^3}{9},$ so the maximum value is $\\boxed{192}.$"
-}

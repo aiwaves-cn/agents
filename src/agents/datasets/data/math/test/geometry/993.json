@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $\\angle ABC = 90^\\circ$, and point $D$ lies on segment $\\overline{BC}$ such that $\\overline{AD}$ is an angle bisector.  If $AB = 12$ and $BD = 4$, then find $AC$.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "By the angle bisector theorem, $AC/CD = AB/BD = 12/4 = 3$.  Let $AC = 3x$ and $CD = x$.\n\n[asy]\nunitsize(0.3 cm);\n\npair A, B, C, D;\n\nA = (0,12);\nB = (0,0);\nC = (9,0);\nD = (4,0);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$4$\", (B + D)/2, S);\nlabel(\"$12$\", (A + B)/2, W);\nlabel(\"$x$\", (C + D)/2, S);\nlabel(\"$3x$\", (A + C)/2, NE);\n[/asy]\n\nThen by Pythagoras, $(x + 4)^2 + 12^2 = (3x)^2$.  This simplifies to $8x^2 - 8x - 160 = 0$, which factors as $8(x - 5)(x + 4) = 0$, so $x = 5$.  Therefore, $AC = 3x = \\boxed{15}$."
-}

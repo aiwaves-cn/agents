@@ -1,6 +1,0 @@
-{
-    "problem": "Find $(-2)^{3}+(-2)^{2}+(-2)^{1}+2^{1}+2^{2}+2^{3}$.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Recall that $(-a)^{n}=a^n$ for even $n$ and $(-a)^{n}=-a^n$ for odd $n$. This means that $(-2)^{3}=-2^{3}$, $(-2)^2=2^2$, and $(-2)^1=-2^1.$ Additionally, any number added to its opposite is equal to zero, so $-2^3+2^3=0$. Now we can use the commutative property of addition to obtain  \\begin{align*}\n(-2)^{3}+(-2)^{2}&+(-2)^{1}+2^{1}+2^{2}+2^{3}\\\\\n&=-2^{3}+2^{2}+(-2^{1})+2^{1}+2^{2}+2^{3}\\\\\n&=-2^{3}+2^{3}+(-2^{1})+2^{1}+2^{2}+2^{2}\\\\\n&=0+2^{2}+2^{2}\\\\\n&=4+4\\\\\n&=\\boxed{8}.\n\\end{align*}"
-}

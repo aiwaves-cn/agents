@@ -1,6 +1,0 @@
-{
-    "problem": "How many distinct rectangles are there with integer side lengths such that the numerical value of area of the rectangle in square units is equal to $5$ times the numerical value of the perimeter in units? (Two rectangles are considered to be distinct if they are not congruent.)",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Let the side lengths of the rectangle be $a$ and $b$ with $a\\leq b$. Then $ab=10(a+b).$ Expanding and moving all the terms to the left hand side gives $ab-10a-10b=0.$ We apply Simon's Favorite Factoring Trick and add $100$ to both sides to allow us to factor the left hand side: $$ab-10a-10b+100 = (a-10)(b-10)=100$$From this, we know that $(a-10,b-10)$ must be a pair of factors of $100$. Consequently, the pairs $(a,b)$ that provide different areas are $(11,110),$ $(12, 60),$ $(14, 35),$ $(15, 30),$ and $(20,20)$. There are therefore $\\boxed{5}$ distinct rectangles with the desired property."
-}

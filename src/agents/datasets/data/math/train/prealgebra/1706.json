@@ -1,6 +1,0 @@
-{
-    "problem": "Every week, Judy goes to the supermarket and buys the following: $5$ carrots at $\\$1$ each, $3$ bottles of milk at $\\$3$ each, $2$ pineapples at $\\$4$ each, $2$ bags of flour at $\\$5$ each, and a giant $\\$7$ container of ice cream. This week the store has a sale and pineapples are half price. Judy also has a coupon for $\\$5$ off any order of $\\$25$ or over. How much money does Judy spend on this shopping trip?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Before summing up the prices, we need to take into account that the price of the pineapples has changed from $\\$4$ to $\\$4\\div2=\\$2$. Now we can use multiplication and addition to find the total cost.  \\begin{align*}\n5\\cdot\\$1+3\\cdot\\$3+2\\cdot\\$2+2\\cdot\\$5+\\$7&=\\$5+\\$9+\\$4+\\$10+\\$7\\\\\n&=\\$5+\\$10+\\$9+\\$4+\\$7\\\\\n&=(\\$5+\\$10)+(\\$9+\\$4+\\$7)\\\\\n&=\\$15+\\$20\\\\\n&=\\$35.\n\\end{align*}Notice how we used the commutative property of addition to rearrange the numbers and the associative property of addition to rearrange the numbers so that the arithmetic is easier.\n\nNow, since Judy's order is over $\\$25$, we need to take into account her coupon. Subtracting $\\$5$ from the computed cost gives us  $$\\$35-\\$5=\\$30.$$Judy spent $\\boxed{\\$30}$ on this shopping trip."
-}

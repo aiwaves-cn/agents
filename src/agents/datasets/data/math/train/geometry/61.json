@@ -1,6 +1,0 @@
-{
-    "problem": "What is the volume, in cubic inches, of a rectangular box, whose faces have areas of $24$ square inches, $16$ square inches and $6$ square inches?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "If $l$, $w$, and $h$ represent the dimensions of the rectangular box, we look for the volume $lwh$. We arbitrarily set $lw=24$, $wh=16$, and $lh=6$. Now notice that if we multiply all three equations, we get $l^2w^2h^2=24\\cdot16\\cdot6=2^3\\cdot3\\cdot2^4\\cdot2\\cdot3=2^8\\cdot3^2$. To get the volume, we take the square root of each side and get $lwh=2^4\\cdot3=\\boxed{48}$ cubic inches."
-}

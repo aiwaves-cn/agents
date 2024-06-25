@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be unit vectors such that $\\mathbf{a} + 2 \\mathbf{b}$ and $5 \\mathbf{a} - 4 \\mathbf{b}$ are orthogonal.  Find the angle between $\\mathbf{a}$ and $\\mathbf{b},$ in degrees.\n\nNote: A unit vector is a vector of magnitude 1.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Since $\\mathbf{a} + 2 \\mathbf{b}$ and $5 \\mathbf{a} - 4 \\mathbf{b}$ are orthogonal,\n\\[(\\mathbf{a} + 2 \\mathbf{b}) \\cdot (5 \\mathbf{a} - 4 \\mathbf{b}) = 0.\\]Expanding, we get\n\\[5 \\mathbf{a} \\cdot \\mathbf{a} + 6 \\mathbf{a} \\cdot \\mathbf{b} - 8 \\mathbf{b} \\cdot \\mathbf{b} = 0.\\]Note that $\\mathbf{a} \\cdot \\mathbf{a} = \\|\\mathbf{a}\\|^2 = 1,$ and $\\mathbf{b} \\cdot \\mathbf{b} = \\|\\mathbf{b}\\|^2 = 1,$ so\n\\[6 \\mathbf{a} \\cdot \\mathbf{b} - 3 = 0.\\]Then $\\mathbf{a} \\cdot \\mathbf{b} = \\frac{1}{2}.$\n\nIf $\\theta$ is the angle between $\\mathbf{a}$ and $\\mathbf{b},$ then\n\\[\\cos \\theta = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\| \\|\\mathbf{b}\\|} = \\frac{1/2}{1 \\cdot 1} = \\frac{1}{2}.\\]Therefore, $\\theta = \\boxed{60^\\circ}.$"
-}

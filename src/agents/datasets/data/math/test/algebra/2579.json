@@ -1,6 +1,0 @@
-{
-    "problem": "The amount of money a certain company makes can be represented by the graph $y=x^2-8x-33$, where $x$ is the quantity produced. What is the smallest quantity at which the company can produce to break even or make a profit?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "First we factor $x^2-8x-33$ into $(x-11)(x+3)$. So, $y=0$ at $x=-3$ or $x=11$. The quantity produced must be a positive amount, so that means the company breaks even (making no money) at $x=\\boxed{11}$ and begins to make a profit after that point ($y>0$)."
-}

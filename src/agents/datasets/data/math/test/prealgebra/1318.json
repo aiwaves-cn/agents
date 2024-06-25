@@ -1,6 +1,0 @@
-{
-    "problem": "Before taking his last test in a class, the arithmetic mean of Brian's  test scores is 91. He has determined that if he scores 98 on his last test, the arithmetic mean of all his test scores will be exactly 92. How many tests, including the last test, does Brian take for this class?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let $S$ be the sum of all of Brian's test scores up to this point, and let $n$ be the number of tests Brian has taken up to this point. Thus the arithmetic mean of his scores now is $\\frac{S}{n}$ and the arithmetic mean of his scores after getting a 98 on the last test will be $\\frac{S+98}{n+1}$. This gives the system of equations: \\begin{align*}\n\\frac{S}{n} &= 91 & \\frac{S+98}{n+1} & = 92\n\\end{align*} From the first equation we have $S = 91n$. Substituting this into the second equation gives: \\begin{align*}\n\\frac{S+98}{n+1} &= 92\\\\\nS+98 &= 92(n+1)\\\\\n91n+98 &= 92n+92\\\\\n92n-91n&= 98-92\\\\\nn&= 6\n\\end{align*} So Brian has to take $n+1 = \\boxed{7}$ tests."
-}

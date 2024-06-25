@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $91145 + 91146 + 91147 + 91148$ is divided by 4.",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "For any four consecutive integers, their residues modulo 4 are 0, 1, 2, and 3 in some order, so their sum modulo 4 is $0 + 1 + 2 + 3 = 6 \\equiv \\boxed{2} \\pmod{4}$."
-}

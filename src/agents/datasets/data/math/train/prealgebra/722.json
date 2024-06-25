@@ -1,6 +1,0 @@
-{
-    "problem": "A school band found they could arrange themselves in rows of 6, 7, or 8 with no one left over. What is the minimum number of students in the band?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The problem specifies that the number of students in the band is a multiple of 6, 7, and 8. Therefore, we are looking for the least common multiple of 6, 7, and 8. Prime factorizing the three numbers and taking the maximum exponent for each prime, we find that the least common multiple is $2^3\\cdot 3\\cdot 7=\\boxed{168}$."
-}

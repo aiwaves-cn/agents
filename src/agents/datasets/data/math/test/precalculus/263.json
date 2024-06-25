@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{A}$ be a matrix such that\n\\[\\mathbf{A} \\begin{pmatrix} 3 \\\\ 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 4 \\\\ -3 \\end{pmatrix} \\quad \\text{and} \\quad \\mathbf{A} \\begin{pmatrix} -5 \\\\ 2 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -5 \\\\ -5 \\end{pmatrix}.\\]Find $\\mathbf{A} \\begin{pmatrix} -13 \\\\ 3 \\\\ 4 \\end{pmatrix}.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Subtracting the equations $\\mathbf{A} \\begin{pmatrix} 3 \\\\ 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 4 \\\\ -3 \\end{pmatrix}$ and $\\mathbf{A} \\begin{pmatrix} -5 \\\\ 2 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -5 \\\\ -5 \\end{pmatrix},$ we get\n\\[\\mathbf{A} \\begin{pmatrix} -8 \\\\ 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} -2 \\\\ -9 \\\\ -2 \\end{pmatrix}.\\]Then adding the equations $\\mathbf{A} \\begin{pmatrix} -5 \\\\ 2 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -5 \\\\ -5 \\end{pmatrix}$ and $\\mathbf{A} \\begin{pmatrix} -8 \\\\ 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} -2 \\\\ -9 \\\\ -2 \\end{pmatrix},$ we get\n\\[\\mathbf{A} \\begin{pmatrix} -13 \\\\ 3 \\\\ 4 \\end{pmatrix} = \\boxed{\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}}.\\]"
-}

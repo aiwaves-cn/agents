@@ -1,6 +1,0 @@
-{
-    "problem": "The value of $\\log_{10}{28471}$ is between the consecutive integers $a$ and $b$.  Find $a+b$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We can have $\\log_{10}10000=4$ and $\\log_{10}100000=5$.  Since $\\log_{10}x$ increases as $x$ increases, we know that $\\log_{10}10000<\\log_{10}28471<\\log_{10}100000$, meaning $4<\\log_{10}28471<5$.  Thus, the desired sum is $4+5=\\boxed{9}$."
-}

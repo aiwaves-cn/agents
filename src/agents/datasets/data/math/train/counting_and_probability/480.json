@@ -1,6 +1,0 @@
-{
-    "problem": "Joe will randomly select two letters from the word CAMP, four letters from the word HERBS, and three letters from the word GLOW.  What is the probability that he will have all of the letters from the word PROBLEM?  Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Each letter in the word PROBLEM appears exactly once among the words CAMP, HERBS, and GLOW.  Therefore, in order to have all of the letters to spell PROBLEM, Joe must select both M and P when choosing two letters from CAMP.  The probability of this is $1/\\binom{4}{2}=1/6$.  Also, he must select the letters E, R, and B when choosing four letters from the word HERBS.  Among the $\\binom{5}{4}=5$ ways of choosing these letters, 2 of them contain all of the letters E, R, and B.  Therefore, the probability that he will select E, R, and B from HERBS is 2/5.  Finally, Joe must select L and O among the 3 letters he chooses from GLOW.  Among the $\\binom{4}{3}=4$ ways of choosing these letters, 2 of them contain both L and O.  Therefore, the probability that he will select L and O from GLOW is $2/4=1/2$.  Altogether, the probability that he will select all the letters from the word PROBLEM is $\\left(\\frac{1}{6}\\right)\\left(\\frac{2}{5}\\right)\\left(\\frac{1}{2}\\right)=\\boxed{\\frac{1}{30}}$."
-}

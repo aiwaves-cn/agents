@@ -1,6 +1,0 @@
-{
-    "problem": "Each ice cream cone at Izzy's Ice Cream Parlor contains $\\frac{1}{32}$ of a gallon of ice cream. If Izzy has $\\frac{3}{4}$ of a gallon of ice cream left, how many more ice cream cones can she sell?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "We know that 1/32 of a gallon of ice cream can make one ice cream cone and that Izzy has 3/4 of a gallon of ice cream left. Therefore, to find the number of ice cream cones that Izzy can make, we have to find how many 1/32s there are in 3/4. This is the same as asking \"what is 3/4 divided by 1/32?\"\n\nWe also know that division by a fraction is the same thing as multiplication by its reciprocal. Since the reciprocal of $\\frac{1}{32}$ is $\\frac{32}{1}$, we have that $$\\frac{3}{4} \\div \\frac{1}{32} = \\frac{3}{4} \\cdot \\frac{32}{1} = \\frac{3 \\cdot 32}{4 \\cdot 1} = \\frac{96}{4} = 24.$$Izzy can sell $\\boxed{24}$ more ice cream cones."
-}

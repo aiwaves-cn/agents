@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of $y = \\frac{p(x)}{q(x)}$ is shown below, where $p(x)$ is linear and $q(x)$ is quadratic.  (Assume that the grid lines are at integers.)\n\n[asy]\nunitsize(0.6 cm);\n\nreal func (real x) {\n  return (2*x/((x - 2)*(x + 3)));\n}\n\nint i;\n\nfor (i = -5; i <= 5; ++i) {\n  draw((i,-5)--(i,5),gray(0.7));\n  draw((-5,i)--(5,i),gray(0.7));\n}\n\ndraw((-5,0)--(5,0));\ndraw((0,-5)--(0,5));\ndraw((-3,-5)--(-3,5),dashed);\ndraw((2,-5)--(2,5),dashed);\ndraw(graph(func,-5,-3.1),red);\ndraw(graph(func,-2.9,1.9),red);\ndraw(graph(func,2.1,5),red);\n\nlimits((-5,-5),(5,5),Crop);\n[/asy]\n\nFind $\\frac{p(-1)}{q(-1)}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since there are vertical asymptotes at $x = -3$ and $x = 2,$ we can assume that $q(x) = (x + 3)(x - 2).$\n\nSince the graph passes through $(0,0),$ $p(x) = kx$ for some constant $k.$  Thus,\n\\[\\frac{p(x)}{q(x)} = \\frac{kx}{(x + 3)(x - 2)}.\\]To find $k,$ note that the graph passes through $(3,1).$  Thus,\n\\[\\frac{3k}{(6)(1)} = 1.\\]Hence, $k = 2,$ and\n\\[\\frac{p(x)}{q(x)} = \\frac{2x}{(x + 3)(x - 2)}.\\]Then\n\\[\\frac{p(-1)}{q(-1)} = \\frac{2(-1)}{(2)(-3)} = \\boxed{\\frac{1}{3}}.\\]"
-}

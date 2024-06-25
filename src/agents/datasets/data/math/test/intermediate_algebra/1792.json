@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of positive integers $n \\ge 3$ that have the following property: If $x_1,$ $x_2,$ $\\dots,$ $x_n$ are real numbers such that $x_1 + x_2 + \\dots + x_n = 0,$ then\n\\[x_1 x_2 + x_2 x_3 + \\dots + x_{n - 1} x_n + x_n x_1 \\le 0.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We claim that the only such positive integers $n$ are 3 and 4.\n\nFor $n = 3,$ $x_1 + x_2 + x_3 = 0.$  Then $(x_1 + x_2 + x_3)^2 = 0,$ which expands as $x_1^2 + x_2^2 + x_3^2 + 2(x_1 x_2 + x_1 x_3 + x_2 x_3) = 0.$  Therefore,\n\\[x_1 x_2 + x_2 x_3 + x_3 x_1 = -\\frac{1}{2} (x_1^2 + x_2^2 + x_3^2) \\le 0.\\]For $n = 4,$ $x_1 + x_2 + x_3 + x_4 = 0.$  Then\n\\[x_1 x_2 + x_2 x_3 + x_3 x_4 + x_4 x_1 = (x_1 + x_3)(x_2 + x_4) = -(x_1 + x_3)^2 \\le 0.\\]For $n \\ge 5,$ take $x_1 = -1,$ $x_2 = 0,$ $x_3 = 2,$ $x_4 = x_5 = \\dots = x_{n - 1} = 0$ and $x_n = -1.$  Then $x_1 + x_2 + \\dots + x_n = 0$ and\n\\[x_1 x_2 + x_2 x_3 + x_3 x_4 + \\dots + x_{n - 1} x_n + x_n x_1 = 1.\\]Thus, $n = 3$ and $n = 4$ are the only values that work, giving us $\\boxed{2}$ possible values of $n.$"
-}

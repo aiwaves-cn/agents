@@ -1,6 +1,0 @@
-{
-    "problem": "Find the matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\mathbf{v} = -5 \\mathbf{v}\\]for all vectors $\\mathbf{v}.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "In general, $\\mathbf{M} \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ is the first column of $\\mathbf{M}$, and $\\mathbf{M} \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ is the second column of $\\mathbf{M}.$\n\nTaking $\\mathbf{v} = \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix},$ we get\n\\[-5 \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} -5 \\\\ 0 \\end{pmatrix}.\\]Taking $\\mathbf{v} = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix},$ we get\n\\[-5 \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -5 \\end{pmatrix}.\\]Therefore,\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} -5 & 0 \\\\ 0 & -5 \\end{pmatrix}}.\\]"
-}

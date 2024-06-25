@@ -1,6 +1,0 @@
-{
-    "problem": "The lines described by the equations\n\\[\\bold{v} = \\begin{pmatrix} 7 \\\\ -3 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} -2 \\\\ 5 \\\\ 1 \\end{pmatrix}\\]and\n\\[\\bold{w} = \\begin{pmatrix} 8 \\\\ -1 \\\\ -1 \\end{pmatrix} + u \\begin{pmatrix} 1 \\\\ -4 \\\\ 0 \\end{pmatrix}\\]intersect at a point.  Find the point of intersection.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Setting the coordinates of $\\bold{v}$ and $\\bold{w}$ to be equal, we obtain the system of equations\n\\begin{align*}\n7 - 2t &= 8 + u, \\\\\n-3 + 5t &= -1 - 4u, \\\\\n1 + t &= -1.\n\\end{align*}Solving for $t$ and $u$, we find $t = -2$ and $u = 3$.  Substituting into either of the equations given in the problem, we find that the point of intersection is\n\\[\\boxed{\\begin{pmatrix} 11 \\\\ -13 \\\\ -1 \\end{pmatrix}}.\\]"
-}

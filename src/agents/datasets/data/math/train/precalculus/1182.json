@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\arccos (\\sin 2).$  All functions are in radians.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $x = \\arccos (\\sin 2).$  Then\n\\begin{align*}\n\\cos x &= \\sin 2 \\\\\n&= \\cos \\left( \\frac{\\pi}{2} - 2 \\right) \\\\\n&= \\cos \\left( 2 - \\frac{\\pi}{2} \\right).\n\\end{align*}Since $0 \\le 2 - \\frac{\\pi}{2} \\le \\pi,$ $x = \\boxed{2 - \\frac{\\pi}{2}}.$"
-}

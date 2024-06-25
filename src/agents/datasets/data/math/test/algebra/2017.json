@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a_1,a_2,a_3,\\dots$ be an arithmetic sequence. If $\\frac{a_4}{a_2} = 3$, what is $\\frac{a_5}{a_3}$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $a$ be the first term, and let $d$ be the common difference.  Then $a_n = a + (n - 1)d$ for all $n$.  In particular, $a_4 = a + 3d$ and $a_2 = a + d$, so \\[\\frac{a + 3d}{a + d} = 3.\\]Multiplying both sides by $a + d$, we get $a + 3d = 3a + 3d$, so $a = 0$.\n\nThen \\[\\frac{a_5}{a_3} = \\frac{a + 4d}{a + 2d} = \\frac{4d}{2d} = \\boxed{2}.\\]"
-}

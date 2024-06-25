@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be positive real numbers such that $a + 2b = 1.$  Find the minimum value of\n\\[\\frac{2}{a} + \\frac{1}{b}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(a + 2b) \\left( \\frac{2}{a} + \\frac{1}{b} \\right) \\ge (\\sqrt{2} + \\sqrt{2})^2 = 8.\\]For equality to occur, we must have $a^2 = 4b^2,$ or $a = 2b.$  Then $4b = 1,$ so $b = \\frac{1}{4},$ and $a = \\frac{1}{2}.$\n\nHence, the minimum value is $\\boxed{8}.$"
-}

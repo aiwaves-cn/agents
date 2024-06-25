@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $29^{13} - 5^{13}$ modulo 7.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Firstly, note that $29 \\equiv 1$ modulo 7, so $29^{13} \\equiv 1$ modulo 7. Also, $5 \\equiv (-2)$, so $1 - 5^{13} \\equiv 1 + 2^{13}$ modulo 7. Finally, $2^3 \\equiv 1$ modulo 7, so $2^{13} \\equiv 2(2^3)^4 \\equiv 2 \\cdot 1 \\equiv 2$. Thus $29^{13} - 5^{13} \\equiv 1+2 \\equiv \\boxed{3}$ modulo 7."
-}

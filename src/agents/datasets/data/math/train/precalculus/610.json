@@ -1,6 +1,0 @@
-{
-    "problem": "As $t$ takes on all real values, the set of points $(x,y)$ defined by\n\\begin{align*}\nx &= t^2 - 2, \\\\\ny &= t^3 - 9t + 5\n\\end{align*}forms a curve that crosses itself.  Compute the ordered pair $(x,y)$ where this crossing occurs.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Suppose the curve intersects itself when $t = a$ and $t = b,$ so $a^2 - 2 = b^2 - 2$ and $a^3 - 9a + 5 = b^3 - 9b + 5.$  Then $a^2 = b^2,$ so $a = \\pm b.$  We assume that $a \\neq b,$ so $a = -b,$ or $b = -a.$  Then\n\\[a^3 - 9a + 5 = (-a)^3 - 9(-a) + 5 = -a^3 + 9a + 5,\\]or $2a^3 - 18a = 0.$  This factors as $2a (a - 3)(a + 3) = 0.$\n\nIf $a = 0,$ then $b = 0,$ so we reject this solution.  Otherwise, $a = \\pm 3.$  For either value, $(x,y) = \\boxed{(7,5)}.$"
-}

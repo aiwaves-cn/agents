@@ -1,6 +1,0 @@
-{
-    "problem": "A point $(2, n)$ is 5 units away from the point $(-1, 1)$. What is the product of all possible integer values for $n$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "By the Pythagorean theorem, the distance from $(2,n)$ to $(-1,1)$ is $\\sqrt{(2-(-1))^2+(n-1)^2}$.  Setting this equal to $5$, we find \\begin{align*}\n9+(n-1)^2 &= 25 \\implies \\\\\n(n-1)^2 &= 16 \\implies \\\\\nn-1 = 4 \\quad&\\text{or}\\quad n-1=-4 \\implies \\\\\nn = 5 \\quad&\\text{or}\\quad n=-3.\n\\end{align*} Both of these solutions are integers, and their product is $\\boxed{-15}$."
-}

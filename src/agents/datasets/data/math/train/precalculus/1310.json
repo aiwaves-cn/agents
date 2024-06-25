@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $BCD$ with $\\angle D = 90^\\circ$, we have $BC = 9$ and $BD = 4$.  Find $\\sin B$.",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "The triangle is shown below:\n\n[asy]\npair B,C,D;\nC = (0,0);\nD = (sqrt(65),0);\nB = (sqrt(65),4);\ndraw(B--C--D--B);\ndraw(rightanglemark(B,D,C,13));\nlabel(\"$C$\",C,SW);\nlabel(\"$B$\",B,NE);\nlabel(\"$D$\",D,SE);\nlabel(\"$9$\",(B+C)/2,NW);\nlabel(\"$4$\",(B+D)/2,E);\n[/asy]\n\nThe Pythagorean Theorem gives us $CD = \\sqrt{BC^2 - BD^2} = \\sqrt{81 - 16} = \\sqrt{65}$, so $\\sin B = \\frac{CD}{BC} = \\boxed{\\frac{\\sqrt{65}}{9}}$."
-}

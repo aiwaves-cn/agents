@@ -1,6 +1,0 @@
-{
-    "problem": "Below is a portion of the graph of a function, $y=g(x)$:\n\n[asy]\nimport graph; size(8cm); real lsf=0.5; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps); pen ds=black; real xmin=-6.25,xmax=6.25,ymin=-6.25,ymax=6.25;\n\npen cqcqcq=rgb(0.75,0.75,0.75);\n\n/*grid*/ pen gs=linewidth(0.7)+cqcqcq+linetype(\"2 2\"); real gx=1,gy=1;\nfor(real i=ceil(xmin/gx)*gx;i<=floor(xmax/gx)*gx;i+=gx) draw((i,ymin)--(i,ymax),gs); for(real i=ceil(ymin/gy)*gy;i<=floor(ymax/gy)*gy;i+=gy) draw((xmin,i)--(xmax,i),gs);\n\nLabel laxis; laxis.p=fontsize(10);\n\nxaxis(\"\",xmin,xmax,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true); yaxis(\"\",ymin,ymax,Ticks(laxis,Step=1.0,Size=2,NoZero),Arrows(6),above=true);\nreal f1(real x){return -6*sin(x*pi/6);}\ndraw(graph(f1,-6.25,6.25),linewidth(1));\nclip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);\n[/asy]\n\nWhat is the value of $g(g(-1))$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The point $(-1,3)$ is on the graph, which indicates that $g(-1)=3$.\n\nThe point $(3,-6)$ is on the graph, which indicates that $g(3)=-6$.\n\nThus, $g(g(-1)) = g(3) = \\boxed{-6}$."
-}

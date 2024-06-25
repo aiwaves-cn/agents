@@ -1,6 +1,0 @@
-{
-    "problem": "How many different positive, four-digit integers can be formed using the digits 2, 2, 9 and 9?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We could go ahead and count these directly, but instead we could count in general and then correct for overcounting. That is, if we had 4 distinct digits, there would be $4! = 24$ orderings. However, we must divide by 2! once for the repetition of the digit 2, and divide by 2! for the repetition of the digit 9 (this should make sense because if the repeated digit were different we would have twice as many orderings). So, our answer is $\\frac{4!}{2!\\cdot 2!} = 2 \\cdot 3 = \\boxed{6}$."
-}

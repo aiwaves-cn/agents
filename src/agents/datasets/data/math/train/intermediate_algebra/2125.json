@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x_1,$ $x_2,$ $x_3,$ $x_4,$ $x_5$ be the roots of the polynomial $f(x) = x^5 + x^2 + 1,$ and let $g(x) = x^2 - 2.$  Find\n\\[g(x_1) g(x_2) g(x_3) g(x_4) g(x_5).\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Since $x_1,$ $x_2,$ $x_3,$ $x_4,$ $x_5$ are the roots of $f(x) = x^5 + x^2 + 1,$ we can write\n\\[x^5 + x^2 + 1 = (x - x_1)(x - x_2)(x - x_3)(x - x_4)(x - x_5).\\]Also, $g(x) = x^2 - 2 = (x - \\sqrt{2})(x + \\sqrt{2}),$ so\n\\begin{align*}\n&g(x_1) g(x_2) g(x_3) g(x_4) g(x_5) \\\\\n&= (x_1 - \\sqrt{2})(x_1 + \\sqrt{2})(x_2 - \\sqrt{2})(x_2 + \\sqrt{2})(x_3 - \\sqrt{2})(x_3 + \\sqrt{2})(x_4 - \\sqrt{2})(x_4 + \\sqrt{2})(x_5 - \\sqrt{2})(x_5 + \\sqrt{2}) \\\\\n&= (x_1 - \\sqrt{2})(x_2 - \\sqrt{2})(x_3 - \\sqrt{2})(x_4 - \\sqrt{2})(x_5 - \\sqrt{2}) \\\\\n&\\quad \\times (x_1 + \\sqrt{2})(x_2 + \\sqrt{2})(x_3 + \\sqrt{2})(x_4 + \\sqrt{2})(x_5 + \\sqrt{2}) \\\\\n&= (\\sqrt{2} - x_1)(\\sqrt{2} - x_2)(\\sqrt{2} - x_3)(\\sqrt{2} - x_4)(\\sqrt{2} - x_5) \\\\\n&\\quad \\times (-\\sqrt{2} - x_1)(-\\sqrt{2} - x_2)(-\\sqrt{2} - x_3)(-\\sqrt{2} - x_4)(-\\sqrt{2} - x_5) \\\\\n&= f(\\sqrt{2}) f(-\\sqrt{2}) \\\\\n&= (4 \\sqrt{2} + 2 + 1)(-4 \\sqrt{2} + 2 + 1) \\\\\n&= \\boxed{-23}.\n\\end{align*}"
-}

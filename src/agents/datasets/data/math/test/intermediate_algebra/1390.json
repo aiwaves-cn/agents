@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be nonnegative real numbers such that $x + y + z = 3.$  Find the maximum value of\n\\[(xy + z)(xz + y).\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\[\\sqrt{(xy + z)(xz + y)} \\le \\frac{(xy + z) + (xz + y)}{2} = \\frac{xy + z + xz + y}{2} = \\frac{(x + 1)(y + z)}{2}.\\]Again by AM-GM,\n\\[\\sqrt{(x + 1)(y + z)} \\le \\frac{(x + 1) + (y + z)}{2} = 2,\\]so $(x + 1)(y + z) \\le 4,$ and\n\\[(xy + z)(xz + y) \\le 4.\\]Equality occurs when $x = y = z = 1,$ so the maximum value is $\\boxed{4}.$"
-}

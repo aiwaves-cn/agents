@@ -1,6 +1,0 @@
-{
-    "problem": "Abe, Bobby, Charles, Devin and Edwin are the participants in a race. How many different 1st-2nd-3rd place outcomes are possible if there are no ties? Two different outcomes to include are Bobby-Devin-Edwin and Devin-Bobby-Edwin.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "There are $5$ possibilities for the first place finisher.  After first place is determined, there are $4$ remaining possibilities for the second place finisher.  Finally, there are $3$ possibilities for third place once the first two are determined.  Thus there are $5\\cdot4\\cdot3=\\boxed{60}$ 1st-2nd-3rd place outcomes."
-}

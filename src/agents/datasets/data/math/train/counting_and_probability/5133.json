@@ -1,6 +1,0 @@
-{
-    "problem": "How many 10-digit positive integers have all digits either 1 or 2, and have two consecutive 1's?\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We take as our universe the set of 10-digit integers whose digits are all either 1 or 2, of which there are $2^{10}$, and we count the complement. The complement is the set of 10-digit positive integers composed of the digits 1 and 2 with no two consecutive 1s. Counting such numbers is a popular combinatorial problem: we approach it via a recursion.\nThere are two \"good\" one-digit numbers (1 and 2) and three good two-digit numbers (12, 21 and 22). Each such $n$-digit number is formed either by gluing \"2\" on to the end of a good $(n - 1)$-digit number or by gluing \"21\" onto the end of a good $(n - 2)$-digit number. This is a bijection between the good $n$-digit numbers and the union of the good $(n-1)$- and $(n - 2)$-digit numbers. Thus, the number of good $n$-digit numbers is the sum of the number of good $(n-1)$- and $(n - 2)$-digit numbers. The resulting recursion is exactly that of the Fibonacci numbers with initial values $F_1 = 2$ and $F_2 = 3$.\nThus, our final answer is $2^{10} - F_{10} = 1024 - 144 = \\boxed{880}$."
-}

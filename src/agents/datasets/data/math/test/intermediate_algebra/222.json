@@ -1,6 +1,0 @@
-{
-    "problem": "When $6y^3+5y^2-16y+8$ is divided by $2y+3$ the quotient is $3y^2+cy+\\frac{5}{2}c$. What is the remainder?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "If the remainder is $r(x)$, we know that\n$$6y^3+5y^2-16y+8=(2y+3)(3y^2+cy+\\frac{5}{2}c) + r(x).$$So,\n$$\\begin{aligned} r(x) &= 6y^3+5y^2-16y+8 - (2y+3)(3y^2+cy+\\frac{5}{2}c)\\\\\n&=6y^3+5y^2-16y+8-(6y^3+2cy^2+5cy+9y^2+3cy+\\frac{15}{2}c) \\\\\n&=(5-9-2c)y^2-(16+5c+3c)y+8-\\frac{15}{2}c \\\\\n&=(-4-2c)y^2-(16+8c)y+8-\\frac{15}{2}c \\\\\n\\end{aligned}$$Since the divisor $2y+3$ is linear we know that the remainder must be constant. So,\n$$-4-2c = 0$$which means\n$$c = -2.$$So the remainder is\n$$r(x) = (-4+4)y^2-(16-16)y+8-\\frac{15}{2}\\cdot(-2) =8+ 15 = \\boxed{23}. $$"
-}

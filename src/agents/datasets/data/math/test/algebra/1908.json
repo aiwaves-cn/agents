@@ -1,6 +1,0 @@
-{
-    "problem": "If $725x + 727y = 1500$ and $729x+ 731y = 1508$, what is the value of $x - y$ ?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Subtracting the two equations gives: \\begin{align*}\n(729x+731y)-(725x+727y) &= 1508-1500\\\\\n\\Rightarrow\\qquad 4x+4y &= 8\\\\\n\\Rightarrow\\qquad x+y &= 2.\n\\end{align*}Multiplying this equation by 725 and subtracting this equation from $725x+727y=1500$ gives \\begin{align*}\n(725x+727y) - 725(x+y) &= 1500-725(x+y) \\implies \\\\\n2y &= 50.\n\\end{align*}So we can write $x-y$ as $(x+y) - 2y$, which equals  $2 - 50 = \\boxed{-48}$."
-}

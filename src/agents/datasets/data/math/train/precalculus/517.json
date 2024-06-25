@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be the roots of $x^3 + px + q = 0.$  Compute the determinant\n\\[\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} &= a \\begin{vmatrix} c & a \\\\ a & b \\end{vmatrix} - b \\begin{vmatrix} b & a \\\\ c & b \\end{vmatrix} + c \\begin{vmatrix} b & c \\\\ c & a \\end{vmatrix} \\\\\n&= a(bc - a^2) - b(b^2 - ac) + c(ab - c^2) \\\\\n&= 3abc - (a^3 + b^3 + c^3).\n\\end{align*}We can factor $a^3 + b^3 + c^3 - 3abc$ as\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc).\\]By Vieta's formulas, $a + b + c = 0,$ so the determinant is equal to $\\boxed{0}.$"
-}

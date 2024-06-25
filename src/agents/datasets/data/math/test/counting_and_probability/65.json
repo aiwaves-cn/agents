@@ -1,6 +1,0 @@
-{
-    "problem": "Beth rolls a fair six-sided die. If she rolls a prime number, she wins 1 dollar, but if she rolls a composite number, she loses 1 dollar. If she rolls 1 nothing happens. What is the expected value of the amount of money Beth will win if she rolls the die once? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are 3 possible prime numbers which can be rolled (2, 3, and 5), and two possible composite numbers which can be rolled (4 and 6). Each number has a $\\dfrac{1}{6}$ chance of being rolled. So, the expected value of Beth's winnings is $$\\frac{3}{6}(1)+\\frac{2}{6}(-1)+\\frac{1}{6}(0)=\\boxed{\\frac{1}{6}}$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of all integers that satisfy these conditions: \\[\n|x|+1>7\\text{ and }|x+1|\\le7.\n\\]",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, let's deal with $|x| + 1 > 7$.  Subtracting 1 from both sides gives $|x| > 6$, so the integers that satisfy $|x| + 1 > 7$ are those greater than 6 and those less than $-6$.  Since the inequality is strict ($>$, not $\\ge$), $x$ cannot be 6 or $-6$.\n\nNext, we consider $|x+1| \\le 7$.  Writing this as $|x-(-1)| \\le 7$, we see that $x$ must be within $7$ of $-1$ on the number line, which means it must be one of the integers from $-8$ to 6.  Since the inequality is nonstrict ($\\le$, not $<$), $x$ can be $-8$ or 6.\n\nThe only integers that satisfy both inequalities are $-8$ and $-7$, and their sum is $\\boxed{-15}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest positive integer with six positive odd integer divisors and twelve positive even integer divisors?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We use the fact that the number of divisors of a number $n = p_1^{e_1}p_2^{e_2} \\cdots p_k^{e_k}$ is $(e_1 + 1)(e_2 + 1) \\cdots (e_k + 1)$. If a number has $18 = 2 \\cdot 3 \\cdot 3$ factors, then it can have at most $3$ distinct primes in its factorization.\nDividing the greatest power of $2$ from $n$, we have an odd integer with six positive divisors, which indicates that it either is ($6 = 2 \\cdot 3$) a prime raised to the $5$th power, or two primes, one of which is squared. The smallest example of the former is $3^5 = 243$, while the smallest example of the latter is $3^2 \\cdot 5 = 45$.\nSuppose we now divide all of the odd factors from $n$; then we require a power of $2$ with $\\frac{18}{6} = 3$ factors, namely $2^{3-1} = 4$. Thus, our answer is $2^2 \\cdot 3^2 \\cdot 5 = \\boxed{180}$."
-}

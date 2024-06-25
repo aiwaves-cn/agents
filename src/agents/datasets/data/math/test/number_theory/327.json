@@ -1,6 +1,0 @@
-{
-    "problem": "A palindrome is a number that reads the same forward and backward. The largest possible 4-digit palindrome in base 3 can be expressed as a 3-digit palindrome in another base $b>2$. What is $b$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The largest possible 4-digit palindrome in base 3 is $2222_3=80_{10}$. We know that converting $80_{10}$ to other bases will result in 3 digits when the base is from 5 to 8, inclusive, since $4^3<80<9^2$, meaning $1000_4<80<100_9$. Converting to other bases, we get $310_5, 212_6, 143_7, 120_8$. The only palindrome is $212_6$, which is expressed in base $\\boxed{6}$."
-}

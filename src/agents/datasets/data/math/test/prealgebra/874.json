@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $PT$ is parallel to $QR.$ What is the measure of $\\angle PQR$ in degrees?\n\n[asy]\ndraw((0,0)--(10,0),black+linewidth(1));\ndraw((0,0)--(10,0),MidArrow);\ndraw((10,0)--(20,0),black+linewidth(1));\ndraw((0,0)--(-7,10)--(7,10)--(10,0),black+linewidth(1));\ndraw((-5,10)--(7,10),MidArrow);\nlabel(\"$x^{\\circ}$\",(-6,10),SE);\nlabel(\"$2x^{\\circ}$\",(7,10),SW);\nlabel(\"$128^{\\circ}$\",(10,0),NE);\nlabel(\"$P$\",(-7,10),N);\nlabel(\"$T$\",(7,10),N);\nlabel(\"$R$\",(10,0),S);\nlabel(\"$Q$\",(0,0),S);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Since $PT$ and $RQ$ are parallel, then $2x^\\circ=128^\\circ,$ so $x=64,$ so $\\angle TPQ=64^\\circ.$\n\n[asy]\ndraw((0,0)--(10,0),black+linewidth(1));\ndraw((0,0)--(10,0),MidArrow);\ndraw((10,0)--(20,0),black+linewidth(1));\ndraw((0,0)--(-7,10)--(7,10)--(10,0),black+linewidth(1));\ndraw((-5,10)--(7,10),MidArrow);\nlabel(\"$x^{\\circ}$\",(-6,10),SE);\nlabel(\"$2x^{\\circ}$\",(7,10),SW);\nlabel(\"$128^{\\circ}$\",(10,0),NE);\nlabel(\"$P$\",(-7,10),N);\nlabel(\"$T$\",(7,10),N);\nlabel(\"$R$\",(10,0),S);\nlabel(\"$Q$\",(0,0),S);\n[/asy]\n\nSince $PT$ and $QR$ are parallel, then $\\angle TPQ$ and $\\angle PQR$ are supplementary. Thus, $\\angle PQR + 64^\\circ = 180^\\circ,$ so $\\angle PQR = \\boxed{116} \\text{ degrees}.$"
-}

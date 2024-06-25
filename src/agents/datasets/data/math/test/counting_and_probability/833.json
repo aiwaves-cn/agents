@@ -1,6 +1,0 @@
-{
-    "problem": "How many ordered pairs $(x, y)$ satisfy BOTH conditions below?\n\n$\\bullet$  Condition I: $x = 1$ or $y = 0$ or $y = 2$\n\n$\\bullet$  Condition II: $x = 0$ or $x = 2$ or $y = 1$",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Proceed case-by-case in condition I. If $x = 1,$ then by condition II, $y = 1$ since the first two possibilities are excluded. If $y = 0,$ then either $x = 0$ or $x = 2.$ If $y = 2,$ then likewise, either $x = 0$ or $x = 2.$ This gives $\\boxed{5}$ possible ordered pairs."
-}

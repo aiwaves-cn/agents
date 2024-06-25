@@ -1,6 +1,0 @@
-{
-    "problem": "Given positive integers $x$ and $y$ such that $x\\neq y$ and $\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{12}$, what is the smallest possible value for $x + y$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Simplifying, we have  $12(x+y)=xy$, so $xy - 12x - 12y = 0.$ Applying Simon's Favorite Factoring Trick by adding 144 to both sides, we get $xy-12x-12y +144=144$, so \\[(x-12)(y-12)=144.\\]Now we seek the minimal $x+y,$ which occurs when $x-12$ and $y-12$ are as close to each other in value as possible. The two best candidates are $(x-12,y-12)=(18,8)$ or $(16,9),$ of which $(x,y)=(28,21)$ attains the minimum sum of $\\boxed{49}$."
-}

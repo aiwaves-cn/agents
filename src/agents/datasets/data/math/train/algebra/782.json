@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\frac{1}{4}$ of $2^{30}$ is $4^x$, then what is the value of $x$ ?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We have $\\frac{1}{4} \\cdot 2^{30} = \\frac{2^{30}}{2^2} = 2^{30-2} = 2^{28}$.  We also have $4^{x} = (2^2)^x = 2^{2x}$.  Setting these equal gives $2^{28} = 2^{2x}$, so $2x =28$, which means $x = \\boxed{14}$."
-}

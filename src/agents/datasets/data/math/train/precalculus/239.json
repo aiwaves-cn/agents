@@ -1,6 +1,0 @@
-{
-    "problem": "The line $y = \\frac{1}{2} x + 4$ is paramterized by the form\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ s \\end{pmatrix} + t \\begin{pmatrix} l \\\\ -5 \\end{pmatrix}.\\]Enter the ordered pair $(s,l).$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Taking $t = 0,$ we find $\\begin{pmatrix} -7 \\\\ s \\end{pmatrix}$ lies on the line.  Then\n\\[s = \\frac{1}{2} (-7) + 4 = \\frac{1}{2}.\\]Taking $t = 1,$ we get\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ 1/2 \\end{pmatrix} + \\begin{pmatrix} l \\\\ -5 \\end{pmatrix} = \\begin{pmatrix} -7 + l \\\\ -9/2 \\end{pmatrix}.\\]Then\n\\[-\\frac{9}{2} = \\frac{1}{2} (-7 + l) + 4.\\]Solving for $l,$ we find $l = -10.$\n\nHence, $(r,k) = \\boxed{\\left( \\frac{1}{2}, -10 \\right)}.$"
-}

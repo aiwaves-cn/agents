@@ -1,6 +1,0 @@
-{
-    "problem": "$P(x)$ is a polynomial such that when $P(x)$ is divided by $x-13$ the remainder is $19$, and when $P(x)$ is divided by $x+17$ the remainder is $-11$. What is the remainder when $P(x)$ is divided by $(x-13)(x+17)$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Since we are dividing by a quadratic, the remainder will have degree less than 2. So the remainder $r(x)=ax+b$ for some constants $a$ and $b$. We have,\n$$P(x) = (x-13)(x+17)Q(x) +ax+b$$where $Q(x)$ is the quotient of the division.\n\nThen, using the Remainder Theorem,\n$$\\begin{aligned} P(13) &= 13a+b = 19 \\\\\nP(-17) &= -17a+b = -11 \\end{aligned}$$.\nSolving this system of equations gives us $a=1$ and $b=6$. So the remainder is $\\boxed{x+6}$."
-}

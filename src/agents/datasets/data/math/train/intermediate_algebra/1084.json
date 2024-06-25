@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $\\left(1 - \\frac{1}{2}\\right)\\left(1-\\frac{1}{3}\\right)\\left(1-\\frac{1}{4}\\right)\\left(1-\\frac{1}{5}\\right) \\dotsm \\left(1-\\frac{1}{50}\\right)$? Express your answer as a common fraction.",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "After the subtractions are performed, each fraction in the pattern has a numerator that is one less than its denominator. The product then reduces quite nicely, leaving just the frst numerator and the last denominator, as follows: $\\frac{1}{2}\\times\\frac{2}{3}\\times\\frac{3}{4}\\times \\cdots\\times\\frac{49}{50} = \\boxed{\\frac{1}{50}}$."
-}

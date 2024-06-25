@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 1.$  Find the minimum value of $a^2 + 2b^2 + c^2.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(a^2 + 2b^2 + c^2) \\left( 1 + \\frac{1}{2} + 1 \\right) \\ge (a + b + c)^2 = 1,\\]so $a^2 + 2b^2 + c^2 \\ge \\frac{2}{5}.$\n\nEquality occurs when $\\frac{a^2}{1} = \\frac{2b^2}{1/2} = \\frac{c^2}{1}$ and $a + b + c = 1.$  We can solve to get $a = \\frac{2}{5},$ $b = \\frac{1}{5},$ and $c = \\frac{2}{5},$ so the minimum value is $\\boxed{\\frac{2}{5}}.$"
-}

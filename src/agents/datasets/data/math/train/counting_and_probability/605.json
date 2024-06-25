@@ -1,6 +1,0 @@
-{
-    "problem": "How many natural-number factors does $N$ have if $N = 2^4 \\cdot 3^3 \\cdot 5^2 \\cdot 7^2$?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Any positive integer divisor of $N$ must take the form $2^a \\cdot 3^b \\cdot 5^c \\cdot 7^d$ where $0 \\leq a \\leq 4$, $0 \\leq b \\le 3$, $0 \\le c \\le 2$, $0\\leq d \\leq 2$. In other words, there are 5 choices for $a$, 4 choices for $b$, 3 choices for $c$, and 3 choices for $d$. So there are $5 \\cdot 4 \\cdot 3 \\cdot 3= \\boxed{180}$ natural-number factors of $N$."
-}

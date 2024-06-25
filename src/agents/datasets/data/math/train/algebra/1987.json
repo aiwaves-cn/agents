@@ -1,6 +1,0 @@
-{
-    "problem": "Find the intersection of the lines $9x-4y=30$ and $7x+y=11.$ Express your answer as an ordered pair $(x,y).$",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We can find $x$ by taking four times the second equation plus the first: $$4(7x+y)+(9x-4y)=28x+9x=37x=4(11)+30=74\\implies x=2.$$Substituting into the second equation, we can find $y:$ $$7x+y=11\\implies y=11-7x=11-7(2)=-3.$$Thus our answer is $\\boxed{(2,-3)}.$"
-}

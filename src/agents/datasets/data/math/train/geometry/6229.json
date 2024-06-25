@@ -1,6 +1,0 @@
-{
-    "problem": "The base of a triangle is of length $b$, and the altitude is of length $h$. A rectangle of height $x$ is inscribed in the triangle with the base of the rectangle in the base of the triangle. The area of the rectangle is:\n$\\textbf{(A)}\\ \\frac{bx}{h}(h-x)\\qquad \\textbf{(B)}\\ \\frac{hx}{b}(b-x)\\qquad \\textbf{(C)}\\ \\frac{bx}{h}(h-2x)\\qquad \\textbf{(D)}\\ x(b-x)\\qquad \\textbf{(E)}\\ x(h-x)$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $AB=b$, $DE=h$, and $WX = YZ = x$.[asy] pair A=(0,0),B=(56,0),C=(20,48),D=(20,0),W=(10,0),X=(10,24),Y=(38,24),Z=(38,0); draw(A--B--C--A); draw((10,0)--(10,24)--(38,24)--(38,0)); draw(C--D); dot(A); dot(B); dot(C); dot(D); dot(W); dot(X); dot(Y); dot(Z); dot((20,24)); label(\"$A$\",A,S); label(\"$B$\",B,S); label(\"$C$\",C,N); label(\"$D$\",D,S); label(\"$W$\",W,S); label(\"$X$\",X,NW); label(\"$Y$\",Y,NE); label(\"$Z$\",Z,S); label(\"$N$\",(20,24),NW); [/asy]Since $CD$ is perpendicular to $AB$, $ND = WX$. That means $CN = h-x$. The sides of the rectangle are parallel, so $XY \\parallel WZ$. That means by AA Similarity, $\\triangle CXY \\sim \\triangle CAB$. Letting $n$ be the length of the base of the rectangle, that means\\[\\frac{h-x}{n} = \\frac{h}{b}\\]\\[n = \\frac{b(h-x)}{h}\\]Thus, the area of the rectangle is $\\boxed{\\frac{bx}{h}(h-x)}$"
-}

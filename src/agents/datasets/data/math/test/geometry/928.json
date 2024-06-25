@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $PAB$ and square $ABCD$ are in perpendicular planes. Given that $PA=3$, $PB=4$, and $AB=5$, what is $PD$? [asy]\nsize(100); defaultpen(linewidth(0.8)); dotfactor=4;\ndraw((0,-0.5)--(0,3)--(5,3)--(5,-0.5)--cycle);\nfilldraw((0,0)--(-2,-2)--(3,-2)--(5,0)--cycle,white,defaultpen);\ndraw((1.5,0)--(3.5,0)--(3.5,2)--(1.5,2)--cycle);\ndraw((1.5,0)--(1.6,-0.5)--(3.5,0));\ndot(\"$B$\",(1.5,0),SW); dot(\"$A$\",(3.5,0),SE); dot(\"$C$\",(1.5,2),W); dot(\"$D$\",(3.5,2),E); dot(\"$P$\",(1.6,-0.5),S);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Since line segment $AD$ is perpendicular to the plane of $PAB$, angle $PAD$ is a right angle. In right triangle $PAD, PA=3 \\mbox{ and }AD=AB=5$. By the Pythagorean Theorem $PD = \\sqrt{3^2+5^2}=\\boxed{\\sqrt{34}}$. The fact that $PB=4$ was not needed."
-}

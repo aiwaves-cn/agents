@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\frac{1}{5}\\cdot \\frac{8}{7}\\div \\frac{12}{20}$.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "First, we can use the division rule so that we have an expression with only multiplication of fractions.  We get $$\\frac{1}{5}\\cdot \\frac{8}{7}\\div \\frac{12}{20}=\\frac{1}{5}\\cdot \\frac{8}{7}\\cdot \\frac{20}{12}.$$Now, notice that $5$ and $20$ have a common factor of $5$.  We can also see that $8$ and $12$ have a common factor of $4$.  Therefore, we can simplify to get $$\\frac{1}{5}\\cdot \\frac{8}{7}\\cdot \\frac{20}{12}=\\frac{1}{\\cancel{5}}\\cdot \\frac{\\cancelto{2}{8}}{7}\\cdot \\frac{\\cancelto{4}{20}}{\\cancelto{3}{12}}=\\frac{1\\cdot 2 \\cdot 4}{7\\cdot 3}=\\boxed{\\frac{8}{21}}.$$"
-}

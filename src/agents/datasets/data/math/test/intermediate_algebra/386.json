@@ -1,6 +1,0 @@
-{
-    "problem": "Let $0 \\le x \\le 1.$  Find the maximum value of\n\\[x (1 - x)^5.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that maximizing $x(1 - x)^5$ is equivalent to maximizing $5x(1 - x)^5.$  Then by AM-GM,\n\\[\\frac{5x + (1 - x) + (1 - x) + (1 - x) + (1 - x) + (1 - x)}{6} \\ge \\sqrt[6]{5x (1 - x)^5}.\\]This simplifies to $\\sqrt[6]{5x (1 - x)^5} \\le \\frac{5}{6}.$  (Note how the left hand-side simplifies to a constant, which is why we consider $5x(1 - x)^5.$)  Hence,\n\\[x (1 - x)^5 \\le \\frac{1}{5} \\left( \\frac{5}{6} \\right)^6 = \\frac{3125}{46656}.\\]Equality occurs when $5x = 1 - x,$ or $x = \\frac{1}{6},$ so the maximum value is $\\boxed{\\frac{3125}{46656}}.$"
-}

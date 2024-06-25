@@ -1,6 +1,0 @@
-{
-    "problem": "Solve the inequality\n\\[|x - 1| + |x + 2| < 5.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If $x < -2,$ then\n\\[|x - 1| + |x + 2| = -(x - 1) - (x + 2) = -2x - 1.\\]Solving $-2x - 1 < 5,$ we get $x > -3.$  So, the values of $x$ that work in this case are $-3 < x < -2.$\n\nIf $-2 \\le x < 1,$ then\n\\[|x - 1| + |x + 2| = -(x - 1) + (x + 2) = 3.\\]All values in $-2 \\le x < 1$ work.\n\nIf $1 \\le x,$ then\n\\[|x - 1| + |x + 2| = (x - 1) + (x + 2) = 2x + 1.\\]Solving $2x + 1 < 5,$ we get $x < 2.$  So the values of $x$ that work in this case are $1 \\le x < 2.$\n\nTherefore, the solution is $x \\in \\boxed{(-3,2)}.$"
-}

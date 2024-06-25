@@ -1,6 +1,0 @@
-{
-    "problem": "Find the minimum value of\n\\[\\frac{\\sin^6 x + \\cos^6 x + 1}{\\sin^4 x + \\cos^4 x + 1}\\]over all real values $x.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $t = \\cos^2 x.$  Then $\\sin^2 x = 1 - t,$ so\n\\begin{align*}\n\\frac{\\sin^6 x + \\cos^6 x + 1}{\\sin^4 x + \\cos^4 x + 1} &= \\frac{t^3 + (1 - t)^3 + 1}{t^2 + (1 - t)^2 + 1} \\\\\n&= \\frac{3t^2 - 3t + 2}{2t^2 - 2t + 2}.\n\\end{align*}Dividing the denominator into the numerator, we obtain\n\\[\\frac{3t^2 - 3t + 2}{2t^2 - 2t + 2} = \\frac{3}{2} - \\frac{1}{2(t^2 - t + 1)}.\\]Minimizing this expression is equivalent to maximizing $\\frac{1}{2(t^2 - t + 1)},$ which in turn is equivalent to minimizing $t^2 - t + 1.$  The minimum occurs when $t = \\frac{1}{2}$ (which is in the range of $\\cos^2 x$), so the minimum value is\n\\[\\frac{3}{2} - \\frac{1}{2((1/2)^2 - 1/2 + 1)} = \\boxed{\\frac{5}{6}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real values of $x$ that satisfy $\\frac{x(x+1)}{(x-4)^2} \\ge 12.$ (Give your answer in interval notation.)",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Because $(x-4)^2$ is always nonnegative, we can safety multiply both sides of the inequality by $(x-4)^2$ without changing the direction of the inequality, with the caveat that we cannot have $x = 4$: \\[\\begin{aligned} x(x+1) &\\ge 12(x-4)^2 \\\\ 0 &\\ge 11x^2 - 97x + 192. \\end{aligned}\\]This quadratic factors as \\[0 \\ge (x-3)(11x-64),\\]which holds if and only if $3 \\le x \\le \\frac{64}{11}.$ However, since $x \\neq 4,$ the solutions to the original inequality are given by \\[x \\in \\boxed{[3, 4) \\cup \\left(4, \\frac{64}{11}\\right]}\\,.\\]"
-}

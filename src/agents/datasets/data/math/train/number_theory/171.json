@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder of $5^{2010}$ when it is divided by 7?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We start by writing out some powers of five modulo 7. \\begin{align*}\n5^1 &\\equiv 5 \\pmod{7} \\\\\n5^2 &\\equiv 4 \\pmod{7} \\\\\n5^3 &\\equiv 6 \\pmod{7} \\\\\n5^4 &\\equiv 2 \\pmod{7} \\\\\n5^5 &\\equiv 3 \\pmod{7} \\\\\n5^6 &\\equiv 1 \\pmod{7}\n\\end{align*}Therefore, we have that $5^6 \\equiv 1$ modulo 7. Thus, $5^{2010} \\equiv (5^6)^{335} \\equiv 1^{335} \\equiv \\boxed{1}$ modulo 7."
-}

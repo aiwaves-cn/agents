@@ -1,6 +1,0 @@
-{
-    "problem": "Jane and her brother each spin this spinner once. The spinner has five congruent sectors. If the non-negative difference of their numbers is less than 3, Jane wins. Otherwise, her brother wins. What is the probability that Jane wins? Express your answer as a common fraction.\n\n[asy]\nsize(101);\ndraw(scale(2)*unitcircle);\nfor(int i = 0; i<5; ++i)\n{\ndraw((0,0)--2dir(90+i/5*360));\nlabel(string(i+1),1.3dir(45-i/5*360));\n}\ndraw((0,0)--1.5dir(75),EndArrow(4));\n[/asy]",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We consider the unordered pairs, or sets, of spins for which the difference of the numbers are greater than or equal to 3, or those games which Jane loses. These can only occur in the sets $\\{1, 4\\}$, $\\{1, 5 \\}$ or $\\{ 2, 5 \\}$. Each of these unordered pairs can occur in 2 orderings (depending on whether Jane or her brother spins each number). So, there are $2 \\cdot 3 = 6$ losing combinations out of $5 \\cdot 5 = 25$ for Jane. So, her winning probability is $1 - \\frac{6}{25} = \\boxed{\\frac{19}{25}}$."
-}

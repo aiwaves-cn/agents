@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a = \\pi/2008$. Find the smallest positive integer $n$ such that\\[2[\\cos(a)\\sin(a) + \\cos(4a)\\sin(2a) + \\cos(9a)\\sin(3a) + \\cdots + \\cos(n^2a)\\sin(na)]\\]is an integer.\n",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "By the product-to-sum identities, we have that $2\\cos a \\sin b = \\sin (a+b) - \\sin (a-b)$. Therefore, this reduces to a telescoping series:\\begin{align*} \\sum_{k=1}^{n} 2\\cos(k^2a)\\sin(ka) &= \\sum_{k=1}^{n} [\\sin(k(k+1)a) - \\sin((k-1)ka)]\\\\ &= -\\sin(0) + \\sin(2a)- \\sin(2a) + \\sin(6a) - \\cdots - \\sin((n-1)na) + \\sin(n(n+1)a)\\\\ &= -\\sin(0) + \\sin(n(n+1)a) = \\sin(n(n+1)a) \\end{align*}\nThus, we need $\\sin \\left(\\frac{n(n+1)\\pi}{2008}\\right)$ to be an integer; this can be only $\\{-1,0,1\\}$, which occur when $2 \\cdot \\frac{n(n+1)}{2008}$ is an integer. Thus $1004 = 2^2 \\cdot 251 | n(n+1) \\Longrightarrow 251 | n, n+1$. It easily follows that $n = \\boxed{251}$ is the smallest such integer."
-}

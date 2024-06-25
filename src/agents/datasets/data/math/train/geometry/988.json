@@ -1,6 +1,0 @@
-{
-    "problem": "A street has parallel curbs 40 feet apart. A crosswalk bounded by two parallel stripes crosses the street at an angle. The length of the curb between the stripes is 15 feet and each stripe is 50 feet long. Find the distance, in feet, between the stripes.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The crosswalk is in the shape of a parallelogram with base 15 feet and altitude 40 feet, so its area is $15 \\times 40 = 600\\; \\text{ft}^2$. But viewed another way, the parallelogram has base 50 feet and altitude equal to the distance between the stripes, so this distance must be $600/50=\\boxed{12}$ feet.\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((0,7)--(10,7));\ndraw((0.5,0)--(0.5,7),Arrows);\nlabel(\"40\",(0.5,3.5),W);\nfill((3,0)--(6,0)--(8,7)--(5,7)--cycle,gray(0.7));\nlabel(\"15\",(4.5,0),S);\nlabel(\"15\",(6.5,7),N);\nlabel(\"50\",(4,3.5),W);\nlabel(\"50\",(7,3.5),E);\ndraw((3,0)--(6,0)--(8,7)--(5,7)--cycle);\n[/asy]"
-}

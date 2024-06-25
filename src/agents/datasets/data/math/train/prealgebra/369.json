@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the positive divisors of 18.",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "We list the divisors of 18 by finding them in pairs. We begin with 1 and 18 on the ends, so our list is \\[\n1 \\quad \\underline{\\hphantom{10}} \\quad \\ldots \\quad \\underline{\\hphantom{10}} \\quad 18.\n\\]Then we check 2, finding that $2\\times 9 = 18$. Our list becomes \\[\n1 \\quad 2 \\quad \\underline{\\hphantom{10}} \\quad \\ldots \\quad \\underline{\\hphantom{10}} \\quad 9 \\quad 18.\n\\]Checking 3, we get $3\\times 6=18$, so we get \\[\n1 \\quad 2 \\quad 3\\quad \\underline{\\hphantom{10}} \\quad \\ldots \\quad \\underline{\\hphantom{10}} \\quad 6 \\quad 9 \\quad 18.\n\\]We check 4 and find that 18 is not divisible by 4. Similarly, 18 is not divisible by 5. Since 6 is already on the list, we're finished. The list of the positive divisors of 18 is \\[\n1 \\quad 2 \\quad 3\\quad 6 \\quad 9 \\quad 18.\n\\]The sum of these numbers is $1+2+3+6+9+18 = \\boxed{39}$."
-}

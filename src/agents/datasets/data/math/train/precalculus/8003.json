@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $\\sec x+\\tan x=\\frac{22}7$ and that $\\csc x+\\cot x=\\frac mn,$ where $\\frac mn$ is in lowest terms. Find $m+n.$\n",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Use the two trigonometric Pythagorean identities $1 + \\tan^2 x = \\sec^2 x$ and $1 + \\cot^2 x = \\csc^2 x$.\nIf we square the given $\\sec x = \\frac{22}{7} - \\tan x$, we find that\n\\begin{align*} \\sec^2 x &= \\left(\\frac{22}7\\right)^2 - 2\\left(\\frac{22}7\\right)\\tan x + \\tan^2 x \\\\ 1 &= \\left(\\frac{22}7\\right)^2 - \\frac{44}7 \\tan x \\end{align*}\nThis yields $\\tan x = \\frac{435}{308}$.\nLet $y = \\frac mn$. Then squaring,\n\\[\\csc^2 x = (y - \\cot x)^2 \\Longrightarrow 1 = y^2 - 2y\\cot x.\\]\nSubstituting $\\cot x = \\frac{1}{\\tan x} = \\frac{308}{435}$ yields a quadratic equation: $0 = 435y^2 - 616y - 435 = (15y - 29)(29y + 15)$. It turns out that only the positive root will work, so the value of $y = \\frac{29}{15}$ and $m + n = \\boxed{44}$."
-}

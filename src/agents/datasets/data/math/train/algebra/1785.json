@@ -1,6 +1,0 @@
-{
-    "problem": "Find $2^x$ if\n\n\\begin{align*}\n2^x+3^y&=5,\\\\\n2^{x+2}+3^{y+1} &=18.\n\\end{align*}",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $2^x=a$ and $3^y=b$.  Since $2^{x+2}=2^2(2^x)$ and $3^{y+1}=3(3^y)$, the equations become\n\n\\begin{align*}\na+b&=5,\\\\\n4a+3b&=18.\n\\end{align*}Multiplying the first equation by $3$ and subtracting it from the second equation, we find $a=\\boxed{3}$ and $b = 2$.  Plugging these into the original equations, we find this works."
-}

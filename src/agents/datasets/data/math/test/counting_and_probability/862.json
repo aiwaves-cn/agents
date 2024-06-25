@@ -1,6 +1,0 @@
-{
-    "problem": "How many ways are there to put 4 balls in 3 boxes if the balls are distinguishable but the boxes are not?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Without regard to the distinguishability of the balls, they can be organized into groups of the following:  $$(4,0,0),(3,1,0),(2,2,0),(2,1,1).$$Now we consider the distinguishability of the balls in each of these options.\n\n(4,0,0): There is only $1$ way to do this (since the boxes are indistinguishable).\n\n(3,1,0): There are $4$ options: we must pick the ball which goes into a box by itself.\n\n(2,2,0): There are $\\binom{4}{2} = 6$ ways to choose the balls for the first box, and the remaining go in the second box.  However, the two pairs of balls are interchangeable, so we must divide by 2 to get $6 / 2 = 3$ arrangements.\n\n(2,1,1): There are $\\binom{4}{2} = 6$ options for picking the two balls to go in one box, and each of the other two balls goes into its own box.\n\nThe total number of arrangements is $1 + 4 + 3 + 6 = \\boxed{14}$."
-}

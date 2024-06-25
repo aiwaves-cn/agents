@@ -1,6 +1,0 @@
-{
-    "problem": "How many integers $m$ are there such that $0<m<100$ and $\\gcd(m,100)$ is a single-digit number?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If $m$ is any integer, then $\\gcd(m,100)$ is one of the positive divisors of $100$: $$1, 2, 4, 5, 10, 20, 25, 50, 100.$$We note that the numbers on this list with more than one digit are all multiples of $10$, with the exception of $25$. Thus, $m$ has a single-digit $\\gcd$ with $100$ if and only if $m$ is not a multiple of either $10$ or $25$. Thus, we just need to count integers $m$ between $0$ and $100$ which are not multiples of $10$ or of $25$.\n\nThere are $99$ integers $m$ such that $0<m<100$. These include nine multiples of $10$ ($10,20,30,\\ldots,80,90$) and two more multiples of $25$ ($25$ and $75$; we don't count $50$ because we already counted it). So, that leaves $99-9-2=\\boxed{88}$ integers whose greatest common divisor with $100$ has a single digit."
-}

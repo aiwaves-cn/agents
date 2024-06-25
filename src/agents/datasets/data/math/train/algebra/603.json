@@ -1,6 +1,0 @@
-{
-    "problem": "Two lines have the same non-zero $y$-intercept. The first line has a slope of 10 and an $x$-intercept of $(s, 0)$. The second line has a slope of 6 and an $x$-intercept of $(t, 0)$. What is the ratio of $s $ to $t$? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The equation of the first line is $y = 10 x + b$ where $b$ is the $y$-intercept of the two lines.  Since $(s, 0)$ lies on the line, we can plug this into the line's equation to get $0 = 10s + b\\Rightarrow s = -\\frac b{10}$.  Similarly, the second line has equation  $y = 6 x + b$.  Plugging $(t, 0)$ into this equation gives $0 = 6t + b \\Rightarrow t = - \\frac b6$.  Thus $\\frac st = -\\frac b{10} \\cdot - \\frac 6b = \\boxed{\\frac 35}$."
-}

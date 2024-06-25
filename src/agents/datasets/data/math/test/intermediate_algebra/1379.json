@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of second-degree polynomials $f(x)$ with integer coefficients and integer zeros for which $f(0)=2010.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a$ and $b$ be the integer roots. Then we can write \\[f(x) = k(x-a)(x-b)\\]for some integer $k$. Setting $x=0$, we get \\[2010 = kab.\\]Since $2010 = 2 \\cdot 3 \\cdot 5 \\cdot 67$, there are $3^4$ possible ways to assign the prime factors of $2010$ to $a$, $b$, and $k$; then there are four choices for the signs of $a$, $b$, and $k$ (either all positive, or two negative and one positive), giving $3^4 \\cdot 4 = 324$ triples total. Two of these triples have $a = b$ (namely, $a = b = 1$ and $k = 2010$, and $a = b = -1$ and $k = 2010$). Of the other $324 - 2 = 322$, we must divide by $2$ because the order of $a$ and $b$ does not matter. Therefore, the final count is \\[2 + \\frac{322}{2} = \\boxed{163}.\\]"
-}

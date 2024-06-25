@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate the expression $\\left\\lceil{\\frac54}\\right\\rceil+\\left\\lfloor{-\\frac54}\\right\\rfloor$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "$1<\\frac54<2$, so the smallest integer greater than or equal to $\\frac54$ is $2$. Similarly, $-2<-\\frac54<-1$, so the largest integer less than or equal to $-\\frac54$ is $-2$. The original expression, $\\left\\lceil{\\frac54}\\right\\rceil+\\left\\lfloor{-\\frac54}\\right\\rfloor$, is equal to the sum of the two, which is just $2+(-2)=\\boxed{0}$."
-}

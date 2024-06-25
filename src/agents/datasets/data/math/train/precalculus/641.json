@@ -1,6 +1,0 @@
-{
-    "problem": "Given that\n\\[2^{-\\frac{3}{2} + 2 \\cos \\theta} + 1 = 2^{\\frac{1}{4} + \\cos \\theta},\\]compute $\\cos 2 \\theta.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $x = 2^{\\cos \\theta}.$  Then the given equation becomes\n\\[2^{-\\frac{3}{2}} x^2 + 1 = 2^{\\frac{1}{4}} x.\\]We can re-write this as\n\\[2^{-\\frac{3}{2}} x^2 - 2^{\\frac{1}{4}} x + 1 = 0.\\]Since $2^{-\\frac{3}{2}} = (2^{-\\frac{3}{4}})^2$ and $2^{\\frac{1}{4}} = 2 \\cdot 2^{-\\frac{3}{4}},$ this quadratic factors as\n\\[(2^{-\\frac{3}{4}} x - 1)^2 = 0.\\]Then $2^{-\\frac{3}{4}} x = 1,$ so $x = 2^{\\frac{3}{4}}.$  Hence,\n\\[\\cos \\theta = \\frac{3}{4},\\]so $\\cos 2 \\theta = 2 \\cos^2 \\theta - 1 = 2 \\left( \\frac{3}{4} \\right)^2 - 1 = \\boxed{\\frac{1}{8}}.$"
-}

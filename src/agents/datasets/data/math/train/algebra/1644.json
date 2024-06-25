@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\log_{25}(x-4)=\\frac{1}{2}$, find $\\frac{1}{\\log_{x}3}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "First we solve for $x$. Converting our logarithm to exponential form gives $25^{\\frac{1}{2}}=x-4$. We know $25^{\\frac{1}{2}}=\\sqrt{25}=5$, so we have $5=x-4$ or $x=9$. Then we must find $\\frac{1}{\\log_{x}3}$ where $x=9$. Let $\\log_{9}{3}=a$. Then $9^a=3$. Since $9=3^2$ we have $3^{2a}=3^1$ so $2a=1$ or $a=\\frac{1}{2}$. We want to find $\\frac{1}{\\log_{9}3}=\\frac{1}{a}=\\frac{1}{\\frac{1}{2}}=\\boxed{2}$."
-}

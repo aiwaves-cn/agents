@@ -1,6 +1,0 @@
-{
-    "problem": "The Fibonacci sequence is the sequence 1, 1, 2, 3, 5, $\\ldots$ where the first and second terms are 1 and each term after that is the sum of the previous two terms. What is the remainder when the $100^{\\mathrm{th}}$ term of the sequence is divided by 8?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We can look at the terms of the Fibonacci sequence modulo 8.   \\begin{align*}\nF_1 &\\equiv 1\\pmod{8}, \\\\\nF_2 &\\equiv 1\\pmod{8}, \\\\\nF_3 &\\equiv 2\\pmod{8}, \\\\\nF_4 &\\equiv 3\\pmod{8}, \\\\\nF_5 &\\equiv 5\\pmod{8}, \\\\\nF_6 &\\equiv 0\\pmod{8}, \\\\\nF_7 &\\equiv 5\\pmod{8}, \\\\\nF_8 &\\equiv 5\\pmod{8}, \\\\\nF_9 &\\equiv 2\\pmod{8}, \\\\\nF_{10} &\\equiv 7\\pmod{8}, \\\\\nF_{11} &\\equiv 1\\pmod{8}, \\\\\nF_{12} &\\equiv 0\\pmod{8}, \\\\\nF_{13} &\\equiv 1\\pmod{8}, \\\\\nF_{14} &\\equiv 1\\pmod{8}, \\\\\nF_{15} &\\equiv 2\\pmod{8}, \\\\\nF_{16} &\\equiv 3\\pmod{8}.\n\\end{align*}Since $F_{13}$ and $F_{14}$ are both 1, the sequence begins repeating at the 13th term, so it repeats every 12 terms.  Since the remainder is 4 when we divide 100 by 12, we know $F_{100}\\equiv F_4\\pmod 8$.  Therefore the remainder when $F_{100}$ is divided by 8 is $\\boxed{3}$."
-}

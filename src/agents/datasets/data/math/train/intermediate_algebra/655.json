@@ -1,6 +1,0 @@
-{
-    "problem": "The numbers $a,$ $b,$ $c,$ $d$ are equal to 1, 2, 3, 4, in some order.  Find the largest possible value of\n\\[ab + bc + cd + da.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor $ab + bc + cd + da$ as $(a + c)(b + d).$  Then by AM-GM,\n\\[(a + c)(b + d) \\le \\frac{[(a + c) + (b + d)]^2}{4} = \\frac{10^2}{4} = 25.\\]Equality occurs when $a = 1,$ $b = 2,$ $c = 4,$ and $d = 3,$ so the largest possible value is $\\boxed{25}.$"
-}

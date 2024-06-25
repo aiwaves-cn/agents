@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder of $8^6 + 7^7 + 6^8$ divided by 5?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "First of all, $6$ has a remainder of $1$ when divided by $5,$ thus any power of $6$ will have a remainder of $1$ when divided by $5.$\n\nAs for $7,$ it has a remainder of $2$ when divided by $5$, so let us look at the powers of $2$: \\begin{align*}\n2^1 &\\equiv 2 \\pmod{5} \\\\\n2^2 &\\equiv 4 \\pmod{5} \\\\\n2^3 &\\equiv 3 \\pmod{5} \\\\\n2^4 &\\equiv 1 \\pmod{5}.\n\\end{align*}Since $2^4 \\equiv 1 \\pmod{5},$ we see that $2^{7} \\equiv 2^3 \\cdot 2^4 \\equiv 3 \\pmod{5},$ hence the remainder of $7^4$ when divided by $5$ is $3.$\n\nNow, there is a bit of a shortcut we can use for $8.$ Since $8 \\equiv -2 \\pmod{5},$ we can see that $8^6 \\equiv (-2)^6 \\equiv 2^6 \\equiv 2^2 \\cdot 2^4 \\equiv 4 \\pmod {5},$ hence our desired remainder is $4.$\n\nAdding them up, we have $4 + 3 + 1 \\equiv \\boxed{3} \\pmod{5}.$"
-}

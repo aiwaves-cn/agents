@@ -1,6 +1,0 @@
-{
-    "problem": "Points $E$ and $F$ are located on square $ABCD$ so that $\\triangle BEF$ is equilateral. What is the ratio of the area of $\\triangle DEF$ to that of $\\triangle ABE$?\n\n[asy]\npair A,B,C,D,I,F;\nA=(0,0);\nB=(10,0);\nC=(10,10);\nD=(0,10);\nF=(7.4,10);\nI=(0,2.6);\ndraw(B--I--F--cycle,linewidth(0.7));\ndraw(A--B--C--D--cycle,linewidth(0.7));\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,N);\nlabel(\"$D$\",D,N);\nlabel(\"$E$\",I,W);\nlabel(\"$F$\",F,N);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "First, assume that $AB=1$, and let $ED = DF = x$.  Then, we have $[DEF] = \\frac{x^2}{2}$ and $[ABE] = \\frac{(AE)(AB)}{2} = \\frac{(1-x)(1)}{2}$, so  \\[\\frac{[DEF]}{[ABE]} = \\frac{x^2}{1-x} .\\] By the Pythagorean Theorem applied to $\\triangle DEF$, we have  \\[EF^2 = DE^2 + DF^2 = 2x^2.\\] Applying the Pythagorean Theorem to $\\triangle AEB$, we have \\[EB^2 = AB^2 + AE^2 = 1 + (1-x)^2 = 2 - 2x + x^2.\\] Since $\\triangle EFB$ is equilateral, we have $EF = EB$, so \\[2x^2 = 2-2x + x^2,\\]  or $x^2 = 2-2x= 2(1-x)$. Hence the desired ratio of the areas is \\[\\frac{[DEF]}{[ABE]} = \\frac{x^2}{1-x} = \\boxed{2}.\\]"
-}

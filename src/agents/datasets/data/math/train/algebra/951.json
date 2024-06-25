@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $i^{22} + i^{222}$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The powers of $i$ repeat every four powers: $i^1=i$, $i^2=-1$, $i^3=-i$, $i^4=1$, $i^5=i$, $i^6=-1$ and so on. So to determine $i^n$, where $n$ is an integer, we only need to find the remainder of $n$ when it is divided by 4. The remainder of both 22 and 222 when divided by 4 is 2, so $i^{22} + i^{222} = i^2 + i^2 = -1 + (-1) = \\boxed{-2}$."
-}

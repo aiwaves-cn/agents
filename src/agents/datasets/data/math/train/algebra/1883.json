@@ -1,6 +1,0 @@
-{
-    "problem": "Let $b$ and $c$ be real numbers.  If the polynomial $x^2+bx+c$ has exactly one real root and $b=c+1$, find the value of the product of all possible values of $c$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Consider the quadratic formula $\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Since the quadratic has exactly one root, then its discriminant must be 0. Thus, this gives us  \\begin{align*} 0&=b^2-4ac\n\\\\\\Rightarrow\\qquad0&=(c+1)^2-4c\n\\\\\\Rightarrow\\qquad0&=(c^2+2c+1)-4c\n\\\\\\Rightarrow\\qquad0&=c^2-2c+1\n\\\\\\Rightarrow\\qquad0&=(c-1)^2.\n\\end{align*}Since this expression is a perfect square, the only possible of value of $c$ is 1. Thus, the product of all possible values of $c$ is $\\boxed{1}$."
-}

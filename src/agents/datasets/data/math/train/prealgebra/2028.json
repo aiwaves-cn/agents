@@ -1,6 +1,0 @@
-{
-    "problem": "For how many different negative values of $x$ is $\\sqrt{x +150}$ a positive integer?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let $\\sqrt{x + 150} = n$, where $n$ is a positive integer.  Then $x + 150 = n^2$, so $x = n^2 - 150$.  We see that $x$ is negative for $n = 1$, 2, 3, $\\dots$, 12, but positive for $n \\ge 13$, so the number of possible values of $x$ is $\\boxed{12}$."
-}

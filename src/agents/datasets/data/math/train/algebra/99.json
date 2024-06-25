@@ -1,6 +1,0 @@
-{
-    "problem": "A line containing the points $(2, 16)$ and $(-8, -4)$ intersects the $y$-axis at what point?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The $y$-axis has equation $x = 0$.  Thus we need to find out what $y$ is when $x = 0$.  We notice that the slope of the line is $\\frac{16 - (-4)}{2 - (-8)} = 2$.  So to get to $x = 0$ we can start at $(2, 16)$ and go left two in the $x$ direction.  Since the slope of the line is $2$ we know that going left in $x$ by one results in going down in $y$ by two (i.e. $y$ will be 12).  Thus the line intercepts the $y$-axis at $\\boxed{(0, 12)}$."
-}

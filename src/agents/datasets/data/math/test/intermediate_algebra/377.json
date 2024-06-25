@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $(a_n)$ is defined by $a_1 = 1,$ $a_2 = 2,$ and\n\\[a_n^2 - a_{n - 1} a_{n + 1} = 1\\]for all $n \\ge 2.$  Find $a_{100}.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Isolating $a_{n + 1},$ we find\n\\[a_{n + 1} = \\frac{a_n^2 - 1}{a_{n - 1}}.\\]Then\n\\begin{align*}\na_3 &= \\frac{a_2^2 - 1}{a_1} = \\frac{2^2 - 1}{1} = 3, \\\\\na_4 &= \\frac{a_3^2 - 1}{a_2} = \\frac{3^2 - 1}{2} = 4, \\\\\na_5 &= \\frac{a_4^2 - 1}{a_3} = \\frac{4^2 - 1}{3} = 5,\n\\end{align*}and so on.\n\nBy induction, we can show that $a_n = n$ for all positive integers $n.$  In particular, $a_{100} = \\boxed{100}.$"
-}

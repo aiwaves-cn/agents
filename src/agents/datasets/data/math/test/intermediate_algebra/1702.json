@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\log_{3}6 \\approx 1.63$, what is the value of $\\log_{9} 4$, accurate to two decimal places?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Writing $6=2\\cdot 3$ and applying the logarithmic identity $\\log_a(xy) = \\log_a(x)+\\log_a(y)$ for all positive real numbers $x$, $y$, and $a$ (with $a\\neq 1$), we obtain \\begin{align*}\n\\log_3 6=\\log_3 (2\\cdot3)&=\\log_3 2 + \\log_{3} 3 \\\\\n\\qquad&=\\log_3 2 + 1.\n\\end{align*}Now use the change of base rule for logarithms on the right hand side: \\begin{align*}\n\\log_3 6&=\\frac{\\log_4 2}{\\log_4 3} + 1 \\\\\n\\qquad&=\\frac{1}{2\\log_4 3} + 1 \\\\\n\\qquad&=\\frac{1}{\\log_4 9} + 1.\n\\end{align*}Use the change of base rule on the right hand side once more, we get $$\\log_3 6 = \\log_9 4 + 1,$$which implies that $$\\log_4 9 = 1.63 - 1 = \\boxed{0.63}.$$"
-}

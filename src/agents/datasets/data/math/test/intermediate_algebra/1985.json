@@ -1,6 +1,0 @@
-{
-    "problem": "Factor the following expression: $8x^3+12x^2-2x-3$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We group the terms of the polynomial: $(8x^3+12x^2)+(-2x-3)$. Notice that both pairs of terms are multiples of $2x+3$, so we can factor it out: $(2x+3)(4x^2-1)$. The second expression is a difference of squares, so we can factor it, giving $\\boxed{(2x+3)(2x -1)(2x+1)}$."
-}

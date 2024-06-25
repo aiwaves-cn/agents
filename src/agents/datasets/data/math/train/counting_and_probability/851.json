@@ -1,6 +1,0 @@
-{
-    "problem": "George flips an unfair coin 7 times. The coin has a $\\frac{1}{4}$ probability of coming up heads and a $\\frac{3}{4}$ probability of coming up tails. What is the probability that he flips exactly 2 tails?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The probability that two coins land tails and five coins land heads, in some order, is $\\left( \\frac{3}{4} \\right)^2 \\left( \\frac{1}{4} \\right)^5=\\frac{9}{16384}$. Any two of the seven coins can be tails, so this can happen in $\\binom{7}{2}=21$ ways. Therefore, the probability that exactly two coins come up tails is $21 \\cdot \\frac{9}{16384}=\\boxed{\\frac{189}{16384}}$."
-}

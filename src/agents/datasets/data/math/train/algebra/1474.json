@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $a$ is a nonzero constant for which the equation $ax^2+20x+7=0$ has only one solution. Find this solution.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "For a quadratic to have only one solution, the discriminant must be 0. Therefore, we have the equation $20^2-4 \\cdot a \\cdot 7=0$. Solving, we get $400-28a=0$. Therefore, $a=\\frac{400}{28}=\\frac{100}{7}$.\nUsing the quadratic formula, $ \\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a} $, we get the solution $ \\frac{-20\\pm\\sqrt{0}}{2 \\cdot \\frac{100}{7}} = -20 \\cdot \\frac{7}{200} = \\boxed{-\\frac{7}{10}}$."
-}

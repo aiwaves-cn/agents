@@ -1,6 +1,0 @@
-{
-    "problem": "Gerry goes to sleep at 11 pm each night. But he doesn't sleep very well, so he awakens at a random time between 1:00 am and 3:59 am, with each minute equally likely (including 1:00 and 3:59). He then reads the hour and minute shown on his clock as a three digit number, so 2:56 am would be 256. What is the probability that that number will be divisible by 7?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "105, 112, ..., 154 are divisible by 7 (8 numbers).\n\n203, 210, ..., 259 are divisible by 7 (9 numbers).\n\n301, 308, ..., 357 are divisible by 7 (9 numbers).\n\n$8 + 9 + 9 = 26$ minutes are divisible by 7 in that time period, out of 180 minutes in the whole 3 hours, for a probability of $26/180 = \\boxed{\\frac{13}{90}}$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate the sum of the geometric series $1+\\left(\\frac{1}{5}\\right)+\\left(\\frac{1}{5}\\right)^2 + \\left(\\frac{1}{5}\\right)^3 + \\dots$. Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "This is an infinite geometric series with first term $1$ and common ratio $1/5$. Thus, the sum is $\\frac{1}{1-\\frac15} = \\boxed{\\frac{5}{4}}$."
-}

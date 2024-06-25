@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\sum_{1 \\le j < i} \\frac{1}{2^{i + j}},\\]where the sum is taken over all positive integers $i$ and $j$ such that $1 \\le j < i.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\begin{align*}\n\\sum_{1 \\le j < i} \\frac{1}{2^{i + j}} &= \\sum_{j = 1}^\\infty \\sum_{i = j + 1}^\\infty \\frac{1}{2^{i + j}} \\\\\n&= \\sum_{j = 1}^\\infty \\frac{1}{2^j} \\sum_{i = j + 1}^\\infty \\frac{1}{2^i} \\\\\n&= \\sum_{j = 1}^\\infty \\frac{1}{2^j} \\left( \\frac{1}{2^{j + 1}} + \\frac{1}{2^{j + 2}} + \\frac{1}{2^{j + 3}} + \\dotsb \\right) \\\\\n&= \\sum_{j = 1}^\\infty \\frac{1}{2^j} \\cdot \\frac{1/2^{j + 1}}{1 - 1/2} \\\\\n&= \\sum_{j = 1}^\\infty \\frac{1}{2^j} \\cdot \\frac{1}{2^j} \\\\\n&= \\sum_{j = 1}^\\infty \\frac{1}{4^j} \\\\\n&= \\frac{1/4}{1 - 1/4} \\\\\n&= \\boxed{\\frac{1}{3}}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$ in\n\\[\\begin{vmatrix} a + x & a - x & a - x \\\\ a - x & a + x & a - x \\\\ a - x & a - x & a + x \\end{vmatrix} = 0.\\]Give all possible values of $x,$ in terms of $a.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} a + x & a - x & a - x \\\\ a - x & a + x & a - x \\\\ a - x & a - x & a + x \\end{vmatrix} &= (a + x) \\begin{vmatrix} a + x & a - x \\\\ a - x & a + x \\end{vmatrix} - (a - x) \\begin{vmatrix} a - x & a - x \\\\ a - x & a + x \\end{vmatrix} + (a - x) \\begin{vmatrix} a - x & a + x \\\\ a - x & a - x \\end{vmatrix} \\\\\n&= (a + x)((a + x)^2 - (a - x)^2) \\\\\n&\\quad - (a - x)((a - x)(a + x) - (a - x)(a - x)) + (a - x)((a - x)(a - x) - (a + x)(a - x)) \\\\\n&= (a + x)(4ax) - (a - x)^2 (2x) + (a - x)^2 (-2x) \\\\\n&= 12ax^2 - 4x^3 \\\\\n&= 4x^2 (3a - x).\n\\end{align*}Thus, the solutions in $x$ are $\\boxed{0,3a}.$"
-}

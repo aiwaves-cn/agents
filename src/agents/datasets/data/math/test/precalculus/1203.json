@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ the length of side $\\overline{BC}$ is equal to the average of the other two sides.  Also,\n\\[\\cos C = \\frac{AB}{AC}.\\]Given that all the side lengths are integers, find the smallest possible area of triangle $ABC.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "We are told that $a = \\frac{b + c}{2}.$  Also, $\\cos C = \\frac{c}{b},$ and by the Law of Cosines,\n\\[\\cos C = \\frac{a^2 + b^2 - c^2}{2ab}.\\]Then $\\frac{a^2 + b^2 - c^2}{2ab} = \\frac{c}{b},$ so\n\\[a^2 + b^2 - c^2 = 2ac.\\]From the equation $a = \\frac{b + c}{2},$ $b = 2a - c.$  Substituting, we get\n\\[a^2 + (2a - c)^2 - c^2 = 2ac.\\]This simplifies to $5a^2 - 6ac = 0,$ which factors as $a(5a - 6c) = 0.$  Then $c = \\frac{5}{6} a$ and\n\\[b = 2a - c = 2a - \\frac{5}{6} a = \\frac{7}{6} a.\\]Since we want the smallest possible area of triangle $ABC,$ and all the side lengths are integers, we take $a = 6.$  Then $c = 5$ and $b = 7.$  By Heron's formula, the area of the triangle is $\\sqrt{9(9 - 6)(9 - 7)(9 - 5)} = \\boxed{6 \\sqrt{6}}.$"
-}

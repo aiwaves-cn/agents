@@ -1,6 +1,0 @@
-{
-    "problem": "The parabola $y^2 = 8x$ and the circle $x^2 + y^2 - 2x - 4y = 0$ intersect at two points $A$ and $B.$  Find the distance $AB.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Substituting $y^2 = 8x$ into $x^2 + y^2 - 2x - 4y = 0,$ we get\n\\[x^2 + 6x - 4y = 0.\\]Then $x^2 + 6x = 4y.$  Squaring both sides, we get\n\\[x^4 + 12x^3 + 36x^2 = 16y^2 = 128x.\\]Hence,\n\\[x^4 + 12x^3 + 36x^2 - 128x = 0.\\]We can take out a factor of $x,$ to get\n\\[x(x^3 + 12x^2 + 36x - 128) = 0.\\]We can check that $x = 2$ is a root of the cubic, so we can also take out a factor of $x - 2,$ to get\n\\[x(x - 2)(x^2 + 14x + 64) = 0.\\]The quadratic factor has no real roots, so the real solutions are $x = 0$ and $x = 2.$\n\nFor $x = 0,$ $y = 0,$ and for $x = 2,$ $y^2 = 16,$ so $y = \\pm 4.$  We check that only $y = 4$ satisfies the equation of the circle.  Hence, the two intersection points are $(0,0)$ and $(2,4),$ and the distance between them is $\\sqrt{2^2 + 4^2} = \\sqrt{20} = \\boxed{2 \\sqrt{5}}.$"
-}

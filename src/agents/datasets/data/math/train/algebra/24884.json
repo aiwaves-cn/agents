@@ -1,6 +1,0 @@
-{
-    "problem": "All positive integers whose digits add up to 11 are listed in increasing order:  $29, 38, 47, ...$. What is the eleventh number in that list?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "To generate the next 2-digit number on this list, we just increment the tens digit of the current one and decrement the ones.  Thus the 8th number on the list will be 92.  The first 3-digit number is 119, which is the 9th number in the list.  Continuing the earlier pattern, the 10th is 128, and the 11th is $\\boxed{137}$."
-}

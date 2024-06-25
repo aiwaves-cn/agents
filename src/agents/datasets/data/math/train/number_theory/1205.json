@@ -1,6 +1,0 @@
-{
-    "problem": "Emily ordered her playing cards by suit in the order $$A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,\\cdots.$$What is the $42$nd card?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "There are $13$ cards in the pattern from $A$ to $K$. When you divide $42$ by $13$, you get $3$ with a remainder of $3$. Therefore, the $42^\\text{nd}$ card is a $\\boxed{3}$."
-}

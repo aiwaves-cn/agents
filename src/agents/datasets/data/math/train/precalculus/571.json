@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\cos x - 4 \\sin x = 1,$ find all possible values of $\\sin x + 4 \\cos x.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "From the equation $\\cos x - 4 \\sin x = 1,$\n\\[\\cos x - 1 = 4 \\sin x.\\]Squaring both sides, we get\n\\[\\cos^2 x - 2 \\cos x + 1 = 16 \\sin^2 x = 16 - 16 \\cos^2 x.\\]This simplifies to $17 \\cos^2 x - 2 \\cos x - 15 = 0,$ which factors as\n\\[(\\cos x - 1)(17 \\cos x + 15) = 0.\\]Hence, $\\cos x = 1$ or $\\cos x = -\\frac{15}{17}.$\n\nIf $\\cos x = 1,$ then $\\sin x = \\frac{\\cos x - 1}{4} = 0,$ so\n\\[\\sin x + 4 \\cos x = 0 + 4(1) = \\boxed{4}.\\]If $\\cos x = -\\frac{15}{17},$ then $\\sin x = \\frac{\\cos x - 1}{4} = -\\frac{8}{17},$ so\n\\[\\sin x + 4 \\cos x = -\\frac{8}{17} + 4 \\left( -\\frac{15}{17} \\right) = \\boxed{-4}.\\]"
-}

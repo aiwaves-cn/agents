@@ -1,6 +1,0 @@
-{
-    "problem": "Circle $O$ is located on the coordinate plane with center at $(2,3)$.  One endpoint of a diameter is at $(-1,-1)$.  What are the coordinates of the other endpoint of this diameter?  Express your answer as an ordered pair.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "[asy]\ndraw((-7,0)--(11,0),Arrows);\ndraw((0,-5)--(0,11),Arrows);\nlabel(\"$x$\",(12,0)); label(\"$y$\",(-1,11));\ndraw(Circle((2,3),5));\ndot((2,3)); dot((-1,-1));\nlabel(\"(2,3)\",(2,3),W);\nlabel(\"(-1,-1)\",(-1,-1),W);\ndraw((-1,-1)--(2,-1),dashed+red); draw((2,-1)--(2,3),dashed+blue);\ndraw((2,3)--(5,3),dashed+red); draw((5,3)--(5,7),dashed+blue);\ndot((5,7));\nlabel(\"(?,?)\",(5,7),E);\n[/asy]\n\nRefer to the above diagram.  Since the opposite ends of a diameter are symmetric with respect to the center of the circle, we must travel the same distance and direction from $(-1,-1)$ to $(2,3)$ as we do from $(2,3)$ to the other endpoint.  To go from $(-1,-1)$ to $(2,3)$ we run $3$ (left dashed red line) and rise $4$ (left dashed blue line), so our other endpoint has coordinates $(2+3,3+4)=\\boxed{(5,7)}$."
-}

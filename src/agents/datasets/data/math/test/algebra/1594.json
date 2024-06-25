@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $f$ and $g$ are polynomials, and that $h(x)=f(g(x))+g(x)$.  Find the degree of $g(x)$ given that the degree of $h(x)$ is $8$ and the degree of $f(x)$ is $4$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "$f(g(x))$ must have a degree of 8, because it will produce the term with the greatest exponent of the polynomial. Because $f(x)$ is a degree 4 polynomial, we can write that $f(x)=bx^4+cx^3+dx^2+ex+f$. The term with the greatest exponent in $f(g(x))$ comes from taking $bx^4$ or $b(g(x))^4$. Let $g(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+...+a_{2}x^{2}+a_{1}x^{1}+a_0$. Then, the highest degree term of $f(g(x))$ is $b(a_nx^n)^4$, which equals $ba_{n}^4x^{4n}$. Since the degree of $h$ is 8, we have $4n=8$, so $n=2$.  Therefore, the degree of $g$ is $\\boxed{2}$."
-}

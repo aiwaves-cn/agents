@@ -1,6 +1,0 @@
-{
-    "problem": "The letters $A, B$ and $C$ are used to form every possible three letter ``word.'' When these ``words'' are arranged in alphabetical order and numbered so that $AAA$ is Word 1 and $CCC$ is Word 27, what number will correspond to the position of word $BAB$ on the list?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are 9 possible words that start with A to begin the list, so the first word starting with B, BAA, is the 10th word. BAB is the next word after BAA, or word number $\\boxed{11}$."
-}

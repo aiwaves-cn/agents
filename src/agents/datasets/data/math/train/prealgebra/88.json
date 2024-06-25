@@ -1,6 +1,0 @@
-{
-    "problem": "A jar contains quarters (worth $\\$0.25$ each), nickels (worth $\\$0.05$ each) and pennies (worth $\\$0.01$ each). The value of the quarters is $\\$10.00.$ The value of the nickels is $\\$10.00.$ The value of the pennies is $\\$10.00.$ If Judith randomly chooses one coin from the jar, what is the probability that it is a quarter?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The value of all quarters is $\\$10.00.$ Each quarter has a value of $\\$0.25.$ There are thus $10\\div 0.25=40$ quarters in the jar.\n\nSimilarly, there are $10\\div 0.05=200$ nickels, and $10\\div 0.01=1000$ pennies in the jar.\n\nIn total, there are $40+200+1000=1240$ coins in the jar. The probability that the selected coin is a quarter is \\[\\dfrac{\\mbox{the number of quarters}}{\\mbox{the total number of coins}}=\\dfrac{40}{1240}=\\boxed{\\dfrac{1}{31}}\\]."
-}

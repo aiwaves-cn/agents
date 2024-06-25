@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $\\{a_n\\}$ satisfies $a_1 = 1$ and $5^{a_{n + 1} - a_n} - 1 = \\frac {1}{n + \\frac {2}{3}}$ for $n \\geq 1$. Find the least integer $k$ greater than $1$ for which $a_k$ is an integer.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We rewrite the given equation as \\[5^{a_{n+1} - a_n} = 1 + \\frac{1}{n +\\frac{2}{3}} = \\frac{3n+5}{3n+2}.\\]Then, we observe a telescoping product: \\[\\begin{aligned} 5^{a_n - a_1} &= 5^{a_2 - a_1} \\cdot 5^{a_3-a_2} \\cdots 5^{a_n - a_{n-1}} \\\\ &= \\frac{8}{5} \\cdot \\frac{11}{8} \\cdots \\frac{3n+2}{3n-1} \\\\ &= \\frac{3n+2}{5}. \\end{aligned}\\]Since $a_1 = 1$, we have \\[5^{a_n} = 3n+2\\]for all $n \\ge 1$. Thus, $a_k$ is an integer if and only if $3k+2$ is a power of $5$. The next power of $5$ which is of the form $3k+2$ is $5^3 = 125$, which is $3(41) + 2$. Thus $k = \\boxed{41}$."
-}

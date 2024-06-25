@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the value of the expression\n\\[\\log_2 (27 + \\log_2 (27 + \\log_2 (27 + \\cdots))),\\]assuming it is positive.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let\n\\[x = \\log_2 (27 + \\log_2 (27 + \\log_2 (27 + \\dotsb))).\\]Then\n\\[x = \\log_2 (27 + x),\\]so $2^x = x + 27.$\n\nTo solve this equation, we plot $y = 2^x$ and $y = x + 27.$\n\n[asy]\nunitsize(0.15 cm);\n\nreal func (real x) {\n  return(2^x);\n}\n\ndraw(graph(func,-30,log(40)/log(2)),red);\ndraw((-30,-3)--(13,40),blue);\ndraw((-30,0)--(13,0));\ndraw((0,-5)--(0,40));\n\ndot(\"$(5,32)$\", (5,32), SE);\nlabel(\"$y = 2^x$\", (10,16));\nlabel(\"$y = x + 27$\", (-18,18));\n[/asy]\n\nBy inspection, the graphs intersect at $(5,32).$  Beyond this point, the graph of $y = 2^x$ increases much faster than the graph of $y = x + 27,$ so the only positive solution is $x = \\boxed{5}.$"
-}

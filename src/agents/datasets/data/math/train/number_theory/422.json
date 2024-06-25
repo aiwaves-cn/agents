@@ -1,6 +1,0 @@
-{
-    "problem": "Palindromic primes are two-digit prime numbers such that the number formed when the digits are reversed is also prime. What is the sum of all palindromic primes less than 50?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "The two-digit primes less than 50 are 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, and 47. For each prime on this list whose tens digit is odd, check whether or not the number formed when the digits are reversed is also prime. (Note that if the tens digit is even, then the ``reversed'' number is even and hence not prime.) The palindromic primes less than 50 are 11, 13, 17, 31, and 37, whose sum is $\\boxed{109}$."
-}

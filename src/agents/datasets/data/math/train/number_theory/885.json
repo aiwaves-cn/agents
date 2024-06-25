@@ -1,6 +1,0 @@
-{
-    "problem": "There are $20n$ members in the Trumpington marching band, and when they line up in rows of 26, there are 4 band members left over. If $n$ is an integer and there are fewer than 1000 band members, what is the maximum number of people that could be in the Trumpington marching band?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since there are 4 band members left over when they line up in rows of 26, we have $20n \\equiv 4\\pmod{26}$. We divide both sides of the congruence by 4, remembering that we have to divide 26 by the greatest common divisor of 4 and 26. The original congruence is equivalent to \\[\n5n \\equiv 1 \\pmod{13}.\n\\]So we would like to find a multiple of 13 which is one less than a multiple of 5. Noticing that $13\\cdot 3$ has a units digit of 9, we identify $(13\\cdot 3 + 1)/5 =8$ as the inverse of 5 (mod 13). Multiplying both sides of our congruence by 8 gives \\[\nn \\equiv 8 \\pmod{13}.\n\\]We have found that $n$ satisfies the conditions given in the problem if $n=8+13k$ for some positive integer $k$ and $20n<1000$. Rewriting the inequality $20n<1000$ as $n<50$, we solve $8+13k < 50$ to find that the maximum solution is $k=\\lfloor 42/13\\rfloor = 3$. When $k=3$, the number of band members is $20(8+13(3))=\\boxed{940}$."
-}

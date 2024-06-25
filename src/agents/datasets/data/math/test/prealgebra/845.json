@@ -1,6 +1,0 @@
-{
-    "problem": "Using the letters $A$ and $B$, the following two-letter code words can be formed: $AA$, $AB$, $BB$, $BA$. Using the letters $A$, $B$, and $C$, how many different three-letter code words can be formed?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Make a tree-diagram for all three-letter code words starting with $A$. Each path from the top to the bottom contains 3 letters, which is one of the code words beginning with $A$. There are 9 such code words. Clearly, there are 9 code words starting with $B$ and 9 starting with $C$. In all, there are $\\boxed{27}$ code words.\n\n[asy]\n\ndraw((-10,-8)--(0,0)--(10,-8));\nlabel(\"$A$\",(0,0),N);\n\ndraw((-12,-18)--(-10,-12)--(-10,-18));\ndraw((-10,-12)--(-8,-18));\n\nlabel(\"$A$\",(-10,-10));\nlabel(\"$A$\",(-12,-18),S);\nlabel(\"$B$\",(-10,-18),S);\nlabel(\"$C$\",(-8,-18),S);\n\ndraw((0,0)--(0,-8));\n\ndraw((-2,-18)--(0,-12)--(0,-18));\ndraw((0,-12)--(2,-18));\n\nlabel(\"$B$\",(0,-10));\nlabel(\"$A$\",(-2,-18),S);\nlabel(\"$B$\",(0,-18),S);\nlabel(\"$C$\",(2,-18),S);\n\ndraw((8,-18)--(10,-12)--(10,-18));\ndraw((10,-12)--(12,-18));\n\nlabel(\"$C$\",(10,-10));\nlabel(\"$A$\",(8,-18),S);\nlabel(\"$B$\",(10,-18),S);\nlabel(\"$C$\",(12,-18),S);\n\n[/asy]"
-}

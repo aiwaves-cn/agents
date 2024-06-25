@@ -1,6 +1,0 @@
-{
-    "problem": "If two (positive) prime numbers are roots of the equation $x^2-12x+k=0$, what is the value of $k$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If $x^2-12x+k=0$ has two integer solutions, then  $$\\frac{12\\pm\\sqrt{144-4k}}{2}=\\frac{12\\pm2\\sqrt{36-k}}{2}=6\\pm\\sqrt{36-k}$$ must be integers. For this to be true, $36-k$ must be a perfect square. We try $36-k=1$, which means the solutions are $6\\pm1=7\\text{ and } 5$. These are prime numbers, so $k=\\boxed{35}$ works.\n\nAlternatively, we know that all prime numbers greater than 3 are of the form $6n-1$ or $6n+1$. So if $n=1$, we have the primes $6\\pm1=6\\pm\\sqrt{36-k}$. That means $\\sqrt{36-k}=1$ and $k=\\boxed{35}$."
-}

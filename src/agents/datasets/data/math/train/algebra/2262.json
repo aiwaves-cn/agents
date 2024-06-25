@@ -1,6 +1,0 @@
-{
-    "problem": "Al, Betty, and Clare split $\\$1000$ among them to be invested in different ways. Each begins with a different amount. At the end of one year they have a total of $\\$1500$. Betty and Clare have both doubled their money, whereas Al has managed to lose $\\$100$. What was Al's original portion?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Denote the original portions for Al, Betty, and Clare as $a$, $b$, and $c$, respectively.  Then \\[\na + b + c = 1000\\quad\\text{and}\\quad a-100 + 2(b+c) = 1500.\n\\] Substituting $b+c=1000-a$ in the second equation,   we have \\[\na -100 + 2(1000-a)=1500.\n\\] This yields $a=\\boxed{400}$, which is Al's original portion.\n\nNote that although we know that $b+c = 600$, we have no way of determining either $b$ or $c$."
-}

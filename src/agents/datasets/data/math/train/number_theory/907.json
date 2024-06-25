@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p$ be the largest prime with 2010 digits. What is the smallest positive integer $k$ such that $p^2 - k$ is divisible by 12?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let us iterate over larger and larger positive integers for $k$. If $k=1$, then $p^2-k = p^2-1 = (p+1)(p-1)$. Since $p$ is odd, both $p+1$ and $p-1$ are even, so therefore $p^2-1$ is divisible by 4. Also, since $p$ is not divisible by 3, then $p$ must either be one greater or two greater than a multiple of 3, which means that $p-1$ or $p+1$ is divisible by 3, respectively. As a result, $p^2-1$ is divisible by both 3 and 4, so it is divisible by 12. Therefore, we have $\\boxed{k = 1}$."
-}

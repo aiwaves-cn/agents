@@ -1,6 +1,0 @@
-{
-    "problem": "A watered circular field (shaded) is inscribed in a square plot of land. The square plot has sides of length 500 meters. What is the area of the land that is not watered? Express your answer to the nearest thousand square meters.\n\n[asy]\ndraw((0,0)--(10,0)--(10,10)--(0,10)--cycle,linewidth(1));\nfill(Circle((5,5),5),gray(0.7));\ndraw(Circle((5,5),5),linewidth(1));\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The area that is not watered is the area inside the square but outside the circle. The area of the square is $500\\cdot500=250000$ square meters. To find the area of the circle, we note that the diameter of the circle is equal to a side of the square, so the radius is $500/2=250$ meters. Thus, the area of the circle is $\\pi 250^2\\approx196300$ square meters. Thus, the unwatered region has area $250000-196300\\approx\\boxed{54000}$ square meters."
-}

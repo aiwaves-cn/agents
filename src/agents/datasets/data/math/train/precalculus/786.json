@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\begin{vmatrix} 2 & 0 & -1 \\\\ 7 & 4 & -3 \\\\ 2 & 2 & 5 \\end{vmatrix}.\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} 2 & 0 & -1 \\\\ 7 & 4 & -3 \\\\ 2 & 2 & 5 \\end{vmatrix} &= 2 \\begin{vmatrix} 4 & -3 \\\\ 2 & 5 \\end{vmatrix} + (-1) \\begin{vmatrix} 7 & 4 \\\\ 2 & 2 \\end{vmatrix} \\\\\n&= 2((4)(5) - (-3)(2)) - ((7)(2) - (4)(2)) \\\\\n&= \\boxed{46}.\n\\end{align*}"
-}

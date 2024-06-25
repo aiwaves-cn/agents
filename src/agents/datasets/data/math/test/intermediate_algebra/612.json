@@ -1,6 +1,0 @@
-{
-    "problem": "There exist constants $A,$ $B,$ and $C$ so that\n\\[\\frac{x + 2}{x(x + 1)(x + 3)} = \\frac{A}{x} + \\frac{B}{x + 1} + \\frac{C}{x + 3}.\\]Find the product $ABC.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Multiplying both sides by $x(x + 1)(x + 3),$ we get\n\\[x + 2 = A(x + 1)(x + 3) + Bx(x + 3) + Cx(x + 1).\\]Setting $x = 0,$ we get $3A = 2,$ so $A = \\frac{2}{3}.$\n\nSetting $x = -1,$ we get $-2B = 1,$ so $B = -\\frac{1}{2}.$\n\nSetting $x = -3,$ we get $6C = -1,$ so $C = -\\frac{1}{6}.$  Hence,\n\\[ABC = \\frac{2}{3} \\cdot \\left( -\\frac{1}{2} \\right) \\cdot \\left( -\\frac{1}{6} \\right) = \\boxed{\\frac{1}{18}}.\\]"
-}

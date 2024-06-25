@@ -1,6 +1,0 @@
-{
-    "problem": "When the greatest common divisor and least common multiple of two integers are multiplied, their product is 200. How many different values could be the greatest common divisor of the two integers?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We know that $\\gcd(a,b) \\cdot \\mathop{\\text{lcm}}[a,b] = ab$ for all positive integers $a$ and $b$.  Hence, in this case, $ab = 200$.  The prime factorization of 200 is $2^3 \\cdot 5^2$, so $a = 2^p \\cdot 5^q$ and $b = 2^r \\cdot 5^s$ for some nonnegative integers $p$, $q$, $r$, and $s$.  Then $ab = 2^{p + r} \\cdot 5^{q + s}$.  But $ab = 200 = 2^3 \\cdot 5^2$, so $p + r = 3$ and $q + s = 2$.\n\nWe know that $\\gcd(a,b) = 2^{\\min\\{p,r\\}} \\cdot 5^{\\min\\{q,s\\}}$.  The possible pairs $(p,r)$ are $(0,3)$, $(1,2)$, $(2,1)$, and $(3,0)$, so the possible values of $\\min\\{p,r\\}$ are 0 and 1.  The possible pairs $(q,s)$ are $(0,2)$, $(1,1)$, and $(2,0)$, so the possible values of $\\min\\{q,s\\}$ are 0 and 1.\n\nTherefore, the possible values of $\\gcd(a,b)$ are $2^0 \\cdot 5^0 = 1$, $2^1 \\cdot 5^0 = 2$, $2^0 \\cdot 5^1 = 5$, and $2^1 \\cdot 5^1 = 10$, for a total of $\\boxed{4}$ possible values."
-}

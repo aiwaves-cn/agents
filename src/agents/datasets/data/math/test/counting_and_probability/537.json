@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the number of ways to arrange the letters of the word CEASE.",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "First we count the arrangements if the two E's are unique, which is $5!$. Then since the E's are not unique, we divide by $2!$ for the arrangements of E, for an answer of $\\dfrac{5!}{2!} = \\boxed{60}$."
-}

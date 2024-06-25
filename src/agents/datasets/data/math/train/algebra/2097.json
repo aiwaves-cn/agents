@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that for some $a,b,c$ we have $a+b+c = 6$, $ab+ac+bc = 5$ and $abc = -12$. What is $a^3+b^3+c^3$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Notice that $(x-a)(x-b)(x-c) = x^3 - (a+b+c)x^2 + (ab+ac+bc)x -abc = x^3-6x^2+5x+12$. Thus by finding the roots we will determine the set $\\{a,b,c\\}$. But the roots are $x = -1,3,4$, so we see that $a^3+b^3+c^3 = -1+27+64 = \\boxed{90}$."
-}

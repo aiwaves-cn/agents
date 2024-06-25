@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC$, $AB=125$, $AC=117$ and $BC=120$. The angle bisector of angle $A$ intersects $\\overline{BC}$ at point $L$, and the angle bisector of angle $B$ intersects $\\overline{AC}$ at point $K$. Let $M$ and $N$ be the feet of the perpendiculars from $C$ to $\\overline{BK}$ and $\\overline{AL}$, respectively. Find $MN$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Extend ${CM}$ and ${CN}$ such that they intersect line ${AB}$ at points $P$ and $Q$, respectively. Since ${BM}$ is the angle bisector of angle $B$, and ${CM}$ is perpendicular to ${BM}$, so $BP=BC=120$, and $M$ is the midpoint of ${CP}$. For the same reason, $AQ=AC=117$, and $N$ is the midpoint of ${CQ}$. Hence $MN=\\frac{PQ}{2}$. $PQ=BP+AQ-AB=120+117-125=112$, so $MN=\\boxed{56}$."
-}

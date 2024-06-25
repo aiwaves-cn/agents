@@ -1,6 +1,0 @@
-{
-    "problem": "In a magic square, the sum of the three entries in any row, column, or diagonal is the same value. The figure below shows four of the entries of a magic square. Find $x$.\n[asy]\nsize(2cm);\nfor (int i=0; i<=3; ++i) draw((i,0)--(i,3)^^(0,i)--(3,i));\nlabel(\"$x$\",(0.5,2.5));label(\"$19$\",(1.5,2.5));\nlabel(\"$96$\",(2.5,2.5));label(\"$1$\",(0.5,1.5));\n[/asy]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Denote the remaining entries by $d, e, f, g, h,$ as shown: [asy]\nsize(2cm);\nfor (int i=0; i<=3; ++i) draw((i,0)--(i,3)^^(0,i)--(3,i));\nlabel(\"$x$\",(0.5,2.5));label(\"$19$\",(1.5,2.5));\nlabel(\"$96$\",(2.5,2.5));label(\"$1$\",(0.5,1.5));\nlabel(\"$d$\",(1.5,1.5));label(\"$e$\",(2.5,1.5));\nlabel(\"$f$\",(0.5,0.5));label(\"$g$\",(1.5,0.5));label(\"$h$\",(2.5,0.5));\n[/asy] One possible solution proceeds in three steps, as follows:\n\nThe leftmost column and up-right diagonal have the same sum, so $x + 1 + f = 96 + d + f,$ which gives $d = x - 95.$\nThe down-right diagonal and the rightmost column have the same sum, so $x + (x-95) + h = 96 + e + h,$ which gives $e = 2x - 191.$\nFinally, the first row and second sum have the same sum, so \\[x + 19 + 96 = 1 + (x-95) + (2x-191),\\]which gives $x = \\boxed{200}.$"
-}

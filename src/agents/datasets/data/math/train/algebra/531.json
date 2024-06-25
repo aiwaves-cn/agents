@@ -1,6 +1,0 @@
-{
-    "problem": "If $13^{3n}=\\left(\\frac{1}{13}\\right)^{n-24}$, find $n$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Since $\\frac1{13}=13^{-1}$, we can express $\\left(\\frac{1}{13}\\right)^{n-24}$ as $13^{-n+24}$. We have that $13^{3n}=\\left(\\frac{1}{13}\\right)^{n-24}=13^{-n+24}$, so setting the exponents equal we find that $3n=-n+24$, or $n=\\frac{24}{4}=\\boxed{6}$."
-}

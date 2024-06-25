@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $y = -16t^2 + 26t + 105$ describes the height (in feet) of a ball tossed up in the air at 26 feet per second from a height of 105 feet above the ground. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest tenth.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Setting $y$ to zero, we find the following: \\begin{align*}\n0& = -16t^2 + 26t + 105\\\\\n& = 16t^2 - 26t - 105\\\\\n& = (8t + 15)(2t - 7)\n\\end{align*}As $t$ must be positive, we can see that $t = \\frac{7}{2} = \\boxed{3.5}.$"
-}

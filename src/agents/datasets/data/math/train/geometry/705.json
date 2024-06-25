@@ -1,6 +1,0 @@
-{
-    "problem": "Point $C(0,p)$ lies on the $y$-axis between $Q(0,12)$ and $O(0,0)$ as shown. Determine an expression for the area of $\\triangle COB$ in terms of $p$. Your answer should be simplified as much as possible. [asy]\nsize(5cm);defaultpen(fontsize(9));\npair o = (0, 0); pair q = (0, 12); pair b = (12, 0);\npair a = (2, 12); pair t = (2, 0); pair c = (0, 9);\n\ndraw((-2, 0)--(15, 0), Arrow);\ndraw((0, -2)--(0, 15), Arrow);\ndraw(q--a--b);\n//draw(a--t);\ndraw(a--c--b);\n\nlabel(\"$Q(0, 12)$\", q, W);\nlabel(\"$A(2, 12)$\", a, NE);\nlabel(\"$B(12, 0)$\", b, S);\nlabel(\"$O(0, 0)$\", o, SW);\nlabel(\"$x$\", (15, 0), E);\nlabel(\"$y$\", (0, 15), N);\n//label(\"$T(2, 0)$\", t, S + 0.6 * E);\nlabel(\"$C(0, p)$\", c, W);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Since $CO$ is perpendicular to $OB$, we can treat $CO$ as the height of $\\triangle COB$ and $OB$ as the base. The area of $\\triangle COB$ is $$\\frac{1}{2}\\times OB\\times CO = \\frac{1}{2}\\times(12-0)\\times(p-0)=\\frac{1}{2}\\times12\\times p=\\boxed{6p}.$$"
-}

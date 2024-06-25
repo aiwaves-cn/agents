@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer value of $x$ such that $(2x)^2 + 2\\cdot 37\\cdot 2x + 37^2$ is a multiple of 47?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We note that $(2x)^2 + 2\\cdot 37 \\cdot 2x + 37^2 = (2x + 37)^2$. In order for this expression to be a multiple of 47, $2x + 37$ must be a multiple of 47. Since we want the least positive value of $x$, we will want $2x + 37 = 47$. It follows that $x = \\boxed{5}$."
-}

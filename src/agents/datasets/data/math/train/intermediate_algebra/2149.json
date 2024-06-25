@@ -1,6 +1,0 @@
-{
-    "problem": "What is the domain of the function $f(x)=\\log_2(\\log_3(\\log_4(\\log_5x)))$?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "In order for the given function to have a real value, $\\log_3(\\log_4(\\log_5x))>0$ (since the logarithm of only any positive number is real). In order for the last inequality to be true, $\\log_4(\\log_5x)>1$ (since the logarithm of only any number greater than 1 is greater than 0). The last inequality is true only if $\\log_5x>4^1=4$, so $x>5^4\\Rightarrow x>625,$ or in interval notation, $x \\in \\boxed{(625, \\infty)}.$"
-}

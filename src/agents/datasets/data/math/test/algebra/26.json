@@ -1,6 +1,0 @@
-{
-    "problem": "What is the shortest distance between the circles defined by $x^2-24x +y^2-32y+384=0$ and $x^2+24x +y^2+32y+384=0$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We complete the square for the first equation by adding $(-24/2)^2$ and $(-32/2)^2$ to both sides, which gives \\[\n(x^2-24x +144) +(y^2-32y +256)-16=0,\n\\] which is also equivalent to \\[\n(x-12)^2 +(y-16)^2 =4^2.\n\\] Similarly, the equation for the second circle is \\[\n(x+12)^2 +(y+16)^2 =4^2.\n\\] Hence, the centers of the circles are $(12,16)$ and $(-12,-16)$ respectively. Furthermore, the radii of the circles are equal to $4$.  Now the distance between the points $(12,16)$ and $(-12,-16)$ by the distance formula or similarity of $3-4-5$ triangles is $40$.  Therefore, to find the shortest distance between the two circles, we must subtract from $40$ the distances from the centers to the circles.  Thus, the shortest distance between the circles is $40-4-4 = \\boxed{32}$."
-}

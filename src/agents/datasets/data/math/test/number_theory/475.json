@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that the least common multiple of the first $25$ positive integers is equal to $26A7114B4C0$. Find $100 \\times A + 10 \\times B + C$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we observe that both $4$ and $25$ will divide into the least common multiple. Thus, $100$ will divide into the least common multiple, and so $C = 0$.\n\nAlso, we notice that $9$ and $11$ divide into the least common multiple. Thus, the sum of the digits must be divisible by $9$: $$2 + 6 + A + 7 + 1 + 1 + 4 + B + 4 = 25 + A + B = 27,36$$and the alternating sum of the digits must be divisible by $11$ (the divisibility rule for $11$): $$2 - 6 + A - 7 + 1 - 1 + 4 - B + 4 = -3 + A - B = 0, -11.$$It follows that $A+B = 2,11$ and $A - B = 3, -8$. Summing the two equations yields that $2A \\in \\{-6,3,5,14\\}$, of which only $2A = 14 \\Longrightarrow A = 7$ works. It follows that $B = 4$, and the answer is $\\boxed{740}$."
-}

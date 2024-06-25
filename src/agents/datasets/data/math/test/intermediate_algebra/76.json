@@ -1,6 +1,0 @@
-{
-    "problem": "Find the integer closest in value to\n\\[\\frac{1}{\\sqrt[4]{5^4+1}-\\sqrt[4]{5^4-1}}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = 5^4 + 1$ and $b = 5^4-1,$ so the given expression becomes $\\frac{1}{\\sqrt[4]{a} - \\sqrt[4]{b}}.$ We can rationalize by multiplying top and bottom by $\\sqrt[4]{a} + \\sqrt[4]{b},$ and then by $\\sqrt{a} + \\sqrt{b}$: \\[\\begin{aligned} \\frac{1}{\\sqrt[4]{a} - \\sqrt[4]{b}} &= \\frac{\\sqrt[4]{a}+\\sqrt[4]{b}}{\\sqrt{a}-\\sqrt{b}} = \\frac{\\left(\\sqrt[4]{a}+\\sqrt[4]{b}\\right)\\left(\\sqrt a+\\sqrt b\\right)}{a - b}. \\end{aligned}\\]We have $a-b=2,$ and both $a$ and $b$ are close to $5^4,$ so we estimate that \\[\\frac{\\left(\\sqrt[4]{a}+\\sqrt[4]{b}\\right)\\left(\\sqrt a+\\sqrt b\\right)}{a - b} \\approx \\frac{(5+5)(5^2+5^2)}{2} = \\boxed{250}. \\](Indeed, the actual value of the expression is $249.9998599\\dots.$)"
-}

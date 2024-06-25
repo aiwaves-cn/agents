@@ -1,6 +1,0 @@
-{
-    "problem": "If two numbers will be randomly chosen without replacement from $\\{3, 4, 5, 6\\}$, what is the probability that their product will be a multiple of 9? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{4}{2}=6$ possible pairs of numbers that can be chosen. None of these numbers are multiples of 9, so in order for their product to be a multiple of 9, both numbers must be a multiple of 3. The only possible pair that satisfies this is 3 and 6. Thus, the probability is $\\boxed{\\frac{1}{6}}$"
-}

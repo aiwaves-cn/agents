@@ -1,6 +1,0 @@
-{
-    "problem": "If the point $(3,6)$ is on the graph of $y=g(x)$, and $h(x)=(g(x))^2$ for all $x$, then there is one point that must be on the graph of $y=h(x)$. What is the sum of the coordinates of that point?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The fact that $(3,6)$ is on the graph of $y=g(x)$ means that $g(3)=6$. Therefore, $h(3)=(g(3))^2=6^2=36$, which tells us that $(3,36)$ is on the graph of $y=h(x)$. The sum of the coordinates of this point is $\\boxed{39}$."
-}

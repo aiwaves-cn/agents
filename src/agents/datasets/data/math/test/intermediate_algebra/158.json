@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ and $d$ be positive real numbers such that $a + b + c + d = 10.$  Find the maximum value of $ab^2 c^3 d^4.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\na + b + c + d &= a + \\frac{b}{2} + \\frac{b}{2} + \\frac{c}{3} + \\frac{c}{3} + \\frac{c}{3} + \\frac{d}{4} + \\frac{d}{4} + \\frac{d}{4} + \\frac{d}{4} \\\\\n&\\ge 10 \\sqrt[10]{a \\left( \\frac{b}{2} \\right)^2 \\left( \\frac{c}{3} \\right)^3 \\left( \\frac{d}{4} \\right)^4} \\\\\n&= 10 \\sqrt[10]{\\frac{ab^2 c^3 d^4}{27648}}.\n\\end{align*}Since $a + b + c + d = 10,$\n\\[ab^2 c^3 d^4 \\le 27648.\\]Equality occurs when $a = 1,$ $b = 2,$ $c = 3,$ and $d = 4,$ so the maximum value is $\\boxed{27648}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A survey of $120$ teachers determined the following:\n\n$70$ had high blood pressure\n\n$40$ had heart trouble\n\n$20$ had both high blood pressure and heart trouble\n\nWhat percent of the teachers surveyed had neither high blood pressure nor heart trouble?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Of the 40 who had heart trouble, 20 also had high blood pressure, so there are $40-20=20$ teachers who only have heart trouble.  Similarly, there are $70-20 =50$ teachers with only high blood pressure.  So, of the 120 teachers total, there are $20 + 20 + 50 = 90$ teachers with one of these two maladies.  That means $120-90 = 30$ teachers with neither, which is $\\frac{30}{120} = \\boxed{25\\%}$ of the teachers.\n\n[asy]\nunitsize(0.05cm);\nlabel(\"Heart Trouble\", (2,74));\nlabel(\"High Blood Pressure\", (80,74));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$20$\", (44, 45));\nlabel(scale(0.8)*\"$20$\",(28,58));\nlabel(scale(0.8)*\"$50$\",(63,58));\n[/asy]"
-}

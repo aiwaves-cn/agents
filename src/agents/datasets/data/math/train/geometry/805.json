@@ -1,6 +1,0 @@
-{
-    "problem": "The point $A$ $(3,4)$ is reflected over the $x$-axis to $B$. Then $B$ is reflected over the line $y=x$ to $C$. What is the area of triangle $ABC$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "When point $A$ is reflected over the $x$-axis, we get point B, which is $(3,-4)$. Reflecting point $B$ over the line $y=x$, we get that point $C$ is $(-4,3)$. The distance between $A$ and $B$ is 8. The distance from point $C$ to the line connecting $A$ and $B$ is 7. Now we can draw the following diagram: [asy]\ndraw((0,8)--(0,-8),Arrows);\ndraw((8,0)--(-8,0),Arrows);\nlabel(\"$y$\",(0,8),N);\nlabel(\"$x$\",(8,0),E);\ndot((3,4));\nlabel(\"$A$\",(3,4),NE);\ndot((3,-4));\nlabel(\"$B$\",(3,-4),SE);\ndot((-4,3));\nlabel(\"$C$\",(-4,3),W);\ndraw((3,4)--(3,-4)--(-4,3)--cycle);\ndraw((-4,3)--(3,3),linetype(\"8 8\"));\n[/asy] We find that the triangle has a height of length 7 and a base of length 8. Therefore, the area of triangle $ABC$ is equal to  $$\\frac{1}{2}bh=\\frac{1}{2}\\cdot7\\cdot8=\\boxed{28}.$$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that the sum of the squares of two complex numbers $x$ and $y$ is $7$ and the sum of their cubes is $10.$ List all possible values for $x+y$, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $s = x+y$ and $p = xy.$ We can write the given quantities in terms of $s$ and $p$ as follows: \\[\\begin{aligned} 7 &= x^2 + y^2 = (x+y)^2 - 2xy = s^2 - 2p, \\\\ 10 &= x^3 + y^3 = (x+y)^3 - 3xy(x+y) = s^3 - 3sp. \\end{aligned}\\]Now we solve for $s$ and $p.$ The first equation gives $p = \\frac{s^2-7}{2}.$ Substituting this into the second equation, we have \\[10 = s^3 - 3s\\left(\\frac{s^2-7}{2}\\right) \\]which simplifies to $s^3 - 21s + 20 =0.$ This factors as $(s-1)(s-4)(s+5)=0,$ so the possible values for $s$ are $\\boxed{-5, 1, 4}.$"
-}

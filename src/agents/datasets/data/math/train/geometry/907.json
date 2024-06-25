@@ -1,6 +1,0 @@
-{
-    "problem": "A triangle has vertices at $(-3,2),(6,-2),(3,5)$. How many square units are in the area of the triangle? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "[asy]\nimport graph;\nsize(200);\ndefaultpen(linewidth(0.7)+fontsize(10));\ndotfactor=4;\nreal x = 7;\npair A=(-3,2), B=(6,-2), C=(3,5);\nfill(A--C--(-3,5)--cycle,gray(0.6));\nfill(B--C--(6,5)--cycle,gray(0.6));\nfill(A--B--(-3,-2)--cycle,gray(0.6));\npair[] dots = {A,B,C};\ndot(dots);\nxaxis(Ticks(\" \",1.0,begin=false,end=false,NoZero,Size=3),Arrows(4),above=true);\nyaxis(Ticks(\" \",1.0,begin=false,end=false,NoZero,Size=3),Arrows(4),above=true);\ndraw(A--B--C--cycle);\nlabel(\"$(-3,2)$\",A,W);\nlabel(\"$(6,-2)$\",B,SE);\nlabel(\"$(3,5)$\",C,N);\ndraw((-3,5)--(6,5)--(6,-2)--(-3,-2)--cycle,dotted);[/asy] We find the area of the given triangle by subtracting the sum of the areas of the three shaded triangles in the figure from the area of the rectangle formed by all four triangles.\n\nThe area of the rectangle is $9(7)=63$ square units, and the sum of the areas of the shaded triangles is $$\\frac{1}{2}(6)(3)+\\frac{1}{2}(3)(7)+\\frac{1}{2}(4)(9)=37.5$$ square units.  The area of the fourth triangle is $63-37.5=\\boxed{25.5}$ square units."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The real root of the equation $8x^3 - 3x^2 - 3x - 1 = 0$ can be written in the form $\\frac{\\sqrt[3]a + \\sqrt[3]b + 1}{c}$, where $a$, $b$, and $c$ are positive integers. Find $a+b+c$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "In general, the solutions to cubic equations are very messy, so we hope there is a trick to solving this particular equation.\n\nNoticing the $(3, 3, 1)$ pattern of coefficients, which appears in the expansion \\[(x+1)^3 = x^3 + 3x^2 + 3x + 1,\\]we rewrite the left-hand side as \\[9x^3 - (x^3 + 3x^2 + 3x + 1) = 0\\]or \\[9x^3 - (x+1)^3 = 0.\\]Thus, $9x^3 = (x+1)^3$, and since $x$ is real, \\[x\\sqrt[3]{9} = x+1 \\implies x =\\frac{1}{\\sqrt[3]{9}-1}.\\]To rationalize the denominator, we write \\[x = \\frac{1}{\\sqrt[3]{9}-1} \\cdot \\frac{\\sqrt[3]{81} + \\sqrt[3]{9} + 1}{\\sqrt[3]{81} + \\sqrt[3]{9} + 1} = \\frac{\\sqrt[3]{81} + \\sqrt[3]{9} + 1}{8}\\]by the difference of cubes factorization. The answer is $81 + 9 + 8 = \\boxed{98}$."
-}

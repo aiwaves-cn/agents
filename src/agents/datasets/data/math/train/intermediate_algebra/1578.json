@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be positive real numbers such that $3x + 4y < 72.$  Find the maximum value of\n\\[xy (72 - 3x - 4y).\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can consider $xy (72 - 3x - 4y)$ as the product of $x,$ $y,$ and $72 - 3x - 4y.$  Unfortunately, their sum is not constant.\n\nIn order to obtain a constant sum, we consider $(3x)(4y)(72 - 3x - 4y).$  By AM-GM,\n\\[\\sqrt[3]{(3x)(4y)(72 - 3x - 4y)} \\le \\frac{3x + 4y + (72 - 3x - 4y)}{3} = \\frac{72}{3} = 24,\\]so $(3x)(4y)(72 - 3x - 4y) \\le 13824.$  Then\n\\[xy(72 - 3x - 4y) \\le 1152.\\]Equality occurs when $3x = 4y = 72 - 3x - 4y.$  We can solve to get $x = 8$ and $y = 6,$ so the maximum value is $\\boxed{1152}.$"
-}

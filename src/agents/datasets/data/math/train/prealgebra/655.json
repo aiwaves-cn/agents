@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest multiple of $9$ whose negation is greater than $-100$?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Dividing $-100$ by $9$ gives $-11$ with a remainder of $-1$. In other words, $$-100 = -11 \\cdot 9 + (-1).$$This means that $-11 \\cdot 9 = -99$ is greater than $-100$. Because the negation of $99$ is $-99$, $\\boxed{99}$ is the largest multiple of $9$ whose negation is greater than $-100$.\n\nWe could also divide $-100$ by $9$ to get $-12$ with a positive remainder of $11$. However, $-12 \\cdot 9$ is less than $-100$, so $$-100 = -12 \\cdot 9 + 11$$would not help."
-}

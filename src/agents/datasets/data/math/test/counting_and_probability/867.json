@@ -1,6 +1,0 @@
-{
-    "problem": "Derek's phone number, $336$ - $7624,$ has the property that the three-digit prefix, $336,$ equals the product of the last four digits, $7 \\times 6 \\times 2 \\times 4.$ How many seven-digit phone numbers beginning with $336$ have this property?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We begin by factoring $336$. $336 = 2^4 \\cdot 3 \\cdot 7.$ Because we are looking for phone numbers, we want four single digits that will multiply to equal $336.$ Notice that $7$ cannot be multiplied by anything, because $7 \\cdot 2$ is $14,$ which is already two digits. So, one of our digits is necessarily $7.$  The factor $3$ can be multiplied by at most $2,$ and the highest power of $2$ that we can have is $2^3 = 8.$ Using these observations, it is fairly simple to come up with the following list of groups of digits whose product is $336:$ \\begin{align*}\n&1, 6, 7, 8\\\\\n&2, 4, 6, 7\\\\\n&2, 3, 7, 8 \\\\\n&3, 4, 4, 7\n\\end{align*}For the first three groups, there are $4! = 24$ possible rearrangements of the digits. For the last group, $4$ is repeated twice, so we must divide by $2$ to avoid overcounting, so there are $\\frac{4!}{2} = 12$ possible rearrangements of the digits. Thus, there are $3 \\cdot 24 + 12 = \\boxed{84}$ possible phone numbers that can be constructed to have this property."
-}

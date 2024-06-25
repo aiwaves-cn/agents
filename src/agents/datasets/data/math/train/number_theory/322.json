@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest three-digit integer that is divisible by each of its distinct, non-zero digits.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We first try a hundreds digit of $9$. Since the number is then divisible by $9$, the sum of the digits must be divisible by $9$, and so the sum of the remaining two digits must be divisible by $9$. If the tens digit is even (and non-zero), then the last digit must be the difference from $9$ of the tens digit and thus odd, but then the number is not divisible by the tens digit. Thus, the tens digit is odd. Trying the possibilities one by one, we see that $7 \\nmid 972, 5 \\nmid 954$, but $3$ and $6$ both divide into $\\boxed{936}$."
-}

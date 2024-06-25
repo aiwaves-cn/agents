@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x > y > z > 0$ be real numbers.  Find the minimum value of\n\\[x + \\frac{108}{(x - y)^3 (y - z)^2 z}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = (x - y)/3,$ $b = (y - z)/2,$ and $c = z.$  Then $x - y = 3a,$ $y - z = 2b,$ and $z = c.$  Adding these, we get $x = 3a + 2b + c.$  Hence,\n\\[x + \\frac{108}{(x - y)^3 (y - z)^2 z} = 3a + 2b + c + \\frac{1}{a^3 b^2 c}.\\]By AM-GM,\n\\[a + a + a + b + b + c + \\frac{1}{a^3 b^2 c} \\ge 7.\\]Equality occurs when $a = b = c = 1,$ or $x = 6,$ $y = 3,$ and $z = 1,$ so the minimum value is $\\boxed{7}.$"
-}

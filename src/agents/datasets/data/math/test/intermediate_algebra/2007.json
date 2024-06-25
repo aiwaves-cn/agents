@@ -1,6 +1,0 @@
-{
-    "problem": "$A$ and $B$ are constants such that\n$$\\frac{4x+5}{x^2+x-2}= \\frac{A}{x+2} +\\frac{B}{x-1}. $$Find $$\\frac{B}{x+1} - \\frac{A}{x-2}.$$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n$$\\frac{4x+5}{x^2+x-2}= \\frac{4x+5}{(x+1)(x-2)}=\\frac{A}{x+2} +\\frac{B}{x-1}. $$Multiplying both sides by $(x+1)(x-2)$ gives\n$$4x+5=A(x+1)+B(x-2)$$which we can expand to get\n$$4x+5=(A+B)x+A-2B.$$By comparing coefficients, we see that $A+B=4$ and $A-2B=5$. We can solve these equations to get $A=1$ and $B=3$.\nThen\n$$\\begin{aligned} \\frac{B}{x+1} - \\frac{A}{x-2}&=\\frac{3}{x+1} - \\frac{1}{x-2}\\\\\n&=\\frac{3(x-2)-1(x+1)}{(x+1)(x-2)}\\\\\n&=\\boxed{\\frac{2x-7}{(x+1)(x-2)}}.\n\\end{aligned}$$"
-}

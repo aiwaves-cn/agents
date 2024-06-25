@@ -1,6 +1,0 @@
-{
-    "problem": "In an arithmetic sequence, the 7th term is 30, and the 11th term is 60. What is the 21st term of this sequence?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $a$ be the first term in this arithmetic sequence, and let $d$ be the common difference.  Then the $7^{\\text{th}}$ term is $a + 6d = 30$, and the $11^{\\text{th}}$ term is $a + 10d = 60$.  Subtracting these equations, we get $4d = 30$, so $d = 30/4 = 15/2$.\n\nThen the $21^{\\text{st}}$ term is $a + 20d = (a + 10d) + 10d = 60 + 10 \\cdot 15/2 = \\boxed{135}$."
-}

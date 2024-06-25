@@ -1,6 +1,0 @@
-{
-    "problem": "The perimeter of a rectangle is 48.  What is the largest possible area of the rectangle?",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x$ and $y$ be the dimensions of the rectangle.  Then $2x + 2y = 48,$ so $x + y = 24.$  By AM-GM,\n\\[24 = x + y \\ge 2 \\sqrt{xy},\\]so $\\sqrt{xy} \\le 12,$ which means $xy \\le 144.$\n\nEquality occurs when $x = y = 12,$ so the largest possible area of the rectangle is $\\boxed{144}.$"
-}

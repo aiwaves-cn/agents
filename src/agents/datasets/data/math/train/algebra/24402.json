@@ -1,6 +1,0 @@
-{
-    "problem": "What is the maximum number of consecutive positive integers  that can be added together before the sum exceeds 400?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The smallest sum that can be obtained from $n$ consecutive positive integers is $1 + 2 + \\dots + n = n(n + 1)/2$, so we want to find the largest $n$ such that $n(n + 1)/2 < 400$.\n\nTesting, we find that when $n = 27$, $n(n + 1)/2 = 27 \\cdot 28/2 = 378$, and when $n = 28$, $n(n + 1)/2 = 28 \\cdot 29/2 = 406$, so the largest such $n$ is $n = \\boxed{27}$."
-}

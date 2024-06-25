@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of the function \\[f(x) = \\frac{x}{x^2-x+1},\\]where $x$ can be any real number. (Give your answer in interval notation.)",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $y$ be a number in the range of $f.$ This means that there is a real number $x$ such that \\[y = \\frac{x}{x^2-x+1}.\\]Multiplying both sides by $x^2-x+1$ and rearranging, we get the equation \\[yx^2-(y+1)x+y=0.\\]Since $x^2-x+1 = (x-\\tfrac12)^2 + \\tfrac34 > 0$ for all $x,$ our steps are reversible, so $y$ is in the range of $f$ if and only if this equation has a real solution for $x.$ In turn, this equation has a real solution for $x$ if and only if the discriminant of this quadratic is nonnegative. Therefore, the range of $f$ consists exactly of the values of $y$ which satisfy \\[(y+1)^2 - 4y^2 \\ge 0,\\]or \\[0 \\ge 3y^2 - 2y - 1.\\]This quadratic factors as \\[0 \\ge (3y+1)(y-1),\\]which means that the solutions to the inequality are given by $-\\tfrac13 \\le y \\le 1.$ Therefore, the range of $g$ is the closed interval $\\boxed{[-\\tfrac13, 1]}.$"
-}

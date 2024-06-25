@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\alpha$ and $\\beta$ be conjugate complex numbers such that $\\frac{\\alpha}{\\beta^2}$ is a real number and $|\\alpha - \\beta| = 2 \\sqrt{3}.$  Find $|\\alpha|.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $\\alpha = x + yi$ and $\\beta = x - yi.$  Then from $|\\alpha - \\beta| = 2 \\sqrt{3},$ $2|y| = 2 \\sqrt{3},$ so $|y| = \\sqrt{3}.$\n\nNow, $\\frac{\\alpha}{\\beta^2}$ is real.  Since $\\alpha$ and $\\beta$ are complex conjugates, $\\alpha^2 \\beta^2$ is real, so $\\frac{\\alpha}{\\beta^2} \\cdot \\alpha^2 \\beta^2 = \\alpha^3$ is real.  But\n\\[\\alpha^3 = (x + yi)^3 = (x^3 - 3xy^2) + (3x^2 y - y^3) i,\\]so $3x^2 y - y^3 = 0,$ or $y(3x^2 - y^2) = 0.$  Since $|y| = \\sqrt{3},$ $y \\neq 0,$ so $3x^2 = y^2 = 3,$ which means $x^2 = 1.$  Therefore,\n\\[|\\alpha| = \\sqrt{x^2 + y^2} = \\sqrt{1 + 3} = \\boxed{2}.\\]"
-}

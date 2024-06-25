@@ -1,6 +1,0 @@
-{
-    "problem": "Compute $\\sqrt{54}\\cdot\\sqrt{32}\\cdot \\sqrt{6}$.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "First, we simplify the radicals as much as possible. We have $\\sqrt{54} = \\sqrt{2\\cdot 3^3} = \\sqrt{2\\cdot 3\\cdot 3^2} = 3\\sqrt{2\\cdot 3} = 3\\sqrt{6}$, and $\\sqrt{32} = \\sqrt{2^5} = \\sqrt{2^4\\cdot 2} = 4\\sqrt{2}$.  Therefore, we have \\begin{align*}\\sqrt{54}\\cdot\\sqrt{32} \\cdot \\sqrt{6} &= (3\\sqrt{6})(4\\sqrt{2})(\\sqrt{6}) = 3\\cdot 4\\sqrt{6}\\cdot\\sqrt{2}\\sqrt{6}\\\\\n&= 12\\sqrt{2}(\\sqrt{6}\\sqrt{6}) = (12\\sqrt{2})(6) = \\boxed{72\\sqrt{2}}.\\end{align*}"
-}

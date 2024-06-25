@@ -1,6 +1,0 @@
-{
-    "problem": "Six points are equally spaced around a circle of radius 1.  Three of these points are the vertices of a triangle that is neither equilateral nor isosceles.  What is the area of this triangle?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The only possible scalene (not equilateral or isosceles) triangle, up to congruence, that can be made from the given points is shown below: [asy] markscalefactor /= 2;size(4cm); draw(unitcircle); for(int i=0; i<6; ++i) dot(dir(60*i)); draw(dir(120)--dir(60)--dir(-60)--cycle); dot((0,0)); draw((0,0)--dir(60),dotted); draw(rightanglemark(dir(-60),dir(60),dir(120)));[/asy] (To see that this is the only triangle, note that if no two of the three points are adjacent, then the resulting triangle is equilateral. Therefore, two of the points must be adjacent. But then the third point cannot be adjacent to either of those two points, since that would create an isosceles triangle.) Because the longest side of this triangle is a diameter of the circle, the triangle is right. The other two sides of the triangle have lengths $1$ and $\\sqrt{3},$ respectively, since they subtend $60^\\circ$ and $120^\\circ$ arcs of the circle. Therefore, the area of the triangle is \\[\\frac{1}{2} \\cdot 1 \\cdot \\sqrt{3} = \\boxed{\\frac{\\sqrt3}{2}}.\\]"
-}

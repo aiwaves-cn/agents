@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $5^{30}$ is divided by 7?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Let us look at the powers of $5$: \\begin{align*}\n5^1 &\\equiv 5 \\pmod{7} \\\\\n5^2 &\\equiv 4 \\pmod{7} \\\\\n5^3 &\\equiv 6 \\pmod{7} \\\\\n5^4 &\\equiv 2 \\pmod{7} \\\\\n5^5 &\\equiv 3 \\pmod{7} \\\\\n5^6 &\\equiv 1 \\pmod{7}.\n\\end{align*} Since $5^6 \\equiv 1 \\pmod{7},$ we see that $5^{30} \\equiv (5^6)^5 \\equiv 1 \\pmod{7},$ hence our desired remainder is $\\boxed{1}.$"
-}

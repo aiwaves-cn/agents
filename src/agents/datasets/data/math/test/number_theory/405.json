@@ -1,6 +1,0 @@
-{
-    "problem": "The infinite sequence $T=\\{t_0,t_1,t_2,\\ldots\\}$ is defined as $t_0=0,$ $t_1=1,$ and $t_n=t_{n-2}+t_{n-1}$ for all integers $n>1.$ If $a,$ $b,$ $c$ are fixed non-negative integers such that \\begin{align*}\na&\\equiv 5\\pmod {16}\\\\\nb&\\equiv 10\\pmod {16}\\\\\nc&\\equiv 15\\pmod {16},\n\\end{align*}then what is the remainder when $t_a+t_b+t_c$ is divided by $7?$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We need to find a pattern in $T$ first. You may have heard of it by the name Fibonacci sequence. Reduced modulo $7$ (we can still use the recurrence relation), it looks like \\[T\\equiv \\{0,1,1,2,3,5,1,6,0,6,6,5,4,2,6,1,0,1\\ldots\\}.\\]The first $16$ terms are $\\{0,1,1,2,3,5,1,6,0,6,6,5,4,2,6,1\\}.$ As the next two are $0$ and $1$ and since the sequence is defined by recursion on the most recent two terms, the Fibonacci sequence modulo $7$ consists of repetitions of $0,$ $1,$ $1,$ $2,$ $3,$ $5,$ $1,$ $6,$ $0,$ $6,$ $6,$ $5,$ $4,$ $2,$ $6,$ $1.$ Now \\[\\begin{cases}\na\\equiv 5\\pmod {16}\\implies t_a\\equiv 5\\pmod 7\\\\\nb\\equiv 10\\pmod {16}\\implies t_b\\equiv 6\\pmod 7\\\\\nc\\equiv 15\\pmod {16}\\implies t_c\\equiv 1\\pmod 7\n\\end{cases}~.\\]Thus, $$t_a+t_b+t_c\\equiv 5+6+1\\equiv 12\\equiv \\boxed{5}\\pmod 7.$$"
-}

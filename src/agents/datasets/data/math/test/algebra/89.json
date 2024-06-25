@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $(7b^3)^2 \\cdot (4b^2)^{-3},$ given that $b$ is non-zero.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We see that $(7b^3)^2 = 7^2 \\cdot b^{3\\cdot2} = 49 \\cdot b^6.$ Likewise, $(4b^2)^{-3} = 4^{-3} \\cdot b^{-6}.$ Now, $(7b^3)^2 \\cdot (4b^2)^{-3} = 49 \\cdot b^6 \\cdot 4^{-3} \\cdot b^{-6},$ and since $4^{-3} = \\frac{1}{64},$ we have $\\frac{49}{64} \\cdot b^6 \\cdot b^{-6} = \\boxed{\\frac{49}{64}},$ since $b^0 = 1$ for all non-zero $b.$"
-}

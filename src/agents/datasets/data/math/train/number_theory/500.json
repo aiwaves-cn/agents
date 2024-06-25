@@ -1,6 +1,0 @@
-{
-    "problem": "A roll of quarters contains $40$ quarters and a roll of dimes contains $50$ dimes. James has a jar that contains $83$ quarters and $159$ dimes.  Lindsay has a jar that contains $129$ quarters and $266$ dimes. James and Lindsay pool these quarters and dimes and make complete rolls with as many of the coins as possible. In dollars, how much are the leftover quarters and dimes worth?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We use residues of the numbers of each type of coin to determine the number of dimes and quarters leftover: $$ \\begin{array}{rcrcr} 83 + 129 &\\equiv& 3 + 9 &\\equiv& 12 \\pmod{40} \\\\ 159 + 266 &\\equiv& 9 + 16 &\\equiv& 25 \\pmod{50} \\end{array} $$ The total value of the leftover quarters and dimes is $$ 12(\\$0.25) + 25(\\$0.10) = \\$3.00 + \\$2.50 = \\boxed{\\$5.50}. $$"
-}

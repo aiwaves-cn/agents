@@ -1,6 +1,0 @@
-{
-    "problem": "If the angle between the vectors $\\mathbf{a}$ and $\\mathbf{b}$ is $43^\\circ,$ what is the angle between the vectors $-\\mathbf{a}$ and $\\mathbf{b}$?",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "Since $\\mathbf{a}$ and $-\\mathbf{a}$ point in opposite directions, the angle between them is $180^\\circ.$  Then the angle between $-\\mathbf{a}$ and $\\mathbf{b}$ is $180^\\circ - 43^\\circ = \\boxed{137^\\circ}.$\n\n[asy]\nunitsize(2 cm);\n\npair A, B, O;\n\nA = 2*dir(12);\nB = dir(12 + 43);\nO = (0,0);\n\ndraw(O--A,red,Arrow(6));\ndraw(O--B,red,Arrow(6));\ndraw(O--(-A),red,Arrow(6));\n\nlabel(\"$\\mathbf{a}$\", (O + A)/2, S);\nlabel(\"$\\mathbf{b}$\", (O + B)/2, NW);\nlabel(\"$-\\mathbf{a}$\", (O + (-A))/2, S);\nlabel(\"$43^\\circ$\", (0.4,0.25));\nlabel(\"$137^\\circ$\", (-0.15,0.15));\n[/asy]"
-}

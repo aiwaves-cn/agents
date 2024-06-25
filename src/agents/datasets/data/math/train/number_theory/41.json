@@ -1,6 +1,0 @@
-{
-    "problem": "If $k$ and $\\ell$ are positive 4-digit integers such that $\\gcd(k,\\ell)=3$, what is the smallest possible value for $\\mathop{\\text{lcm}}[k,\\ell]$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The identity $\\gcd(k,\\ell)\\cdot\\mathop{\\text{lcm}}[k,\\ell] = k\\ell$ holds for all positive integers $k$ and $\\ell$. Thus, we have $$\\mathop{\\text{lcm}}[k,\\ell] = \\frac{k\\ell}{3}.$$Also, $k$ and $\\ell$ must be 4-digit multiples of $3$, so our choices for each are $$1002,1005,1008,1011,1014,\\ldots,$$and by minimizing the product $k\\ell$, we minimize the least common multiple of $k$ and $\\ell$. However, $k$ and $\\ell$ cannot both be $1002$, since their greatest common divisor would then be $1002$ (not $3$). Setting $k=1002$ and $\\ell=1005$, we obtain $\\gcd(k,\\ell)=3$ as desired, and we obtain the smallest possible value for the least common multiple: \\begin{align*}\n\\mathop{\\text{lcm}}[1002,1005] &= \\frac{1002\\cdot 1005}{3} \\\\\n&= 1002\\cdot 335 \\\\\n&= (1000\\cdot 335)+(2\\cdot 335)\\\\\n&= \\boxed{335{,}670}.\n\\end{align*}"
-}

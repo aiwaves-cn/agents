@@ -1,6 +1,0 @@
-{
-    "problem": "Given that \\[x^2 + \\lfloor x \\rfloor = 75,\\]find all possible values for $x.$  Enter all solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have $x \\ge \\lfloor x \\rfloor > x-1,$ so \\[x^2 + x \\ge 75 > x^2 + x - 1.\\]That is, \\[75 \\le x^2 + x < 76.\\]The function $f(x) = x^2+x$ is strictly decreasing for $x \\le -1/2$; since $f(-10) = 90$ and $f(-9) = 72,$ it follows that any solution with $x \\le -1/2$ must lie in the interval $(-10, -9).$ Similarly, since $f(8) = 72$ and $f(9) = 90,$ any solution with $x \\ge -1/2$ must lie in the interval $(8, 9).$\n\nTherefore, $\\lfloor x \\rfloor$ can only be $-10$ or $8.$ If $\\lfloor x \\rfloor = -10,$ then $x^2 = 75 - (-10) = 85,$ so $x = -\\sqrt{85},$ which indeed satisfies $\\lfloor x \\rfloor = -10.$ If $\\lfloor x \\rfloor = 8,$ then $x^2 = 75 - 8 = 67,$ so $x = \\sqrt{67},$ which indeed satisfies $\\lfloor x \\rfloor = 67.$\n\nTherefore, the two solutions to the equation are $x = \\boxed{\\sqrt{67}, -\\sqrt{85}}.$"
-}

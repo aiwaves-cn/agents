@@ -1,6 +1,0 @@
-{
-    "problem": "Find the minimum value of\n\\[f(x) = \\sqrt{5x^2 + 2x \\sqrt{5} + 1} + x \\sqrt{5},\\]over all $x$ for which $f(x)$ is defined.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\begin{align*}\nf(x) &= \\sqrt{5x^2 + 2x \\sqrt{5} + 1} + x \\sqrt{5} \\\\\n&= \\sqrt{(x \\sqrt{5} + 1)^2} + x \\sqrt{5} \\\\\n&= |x \\sqrt{5} + 1| + x \\sqrt{5}.\n\\end{align*}If $x \\le -\\frac{1}{\\sqrt{5}},$ then\n\\[f(x) = |x \\sqrt{5} + 1| + x \\sqrt{5} = -x \\sqrt{5} - 1 + x \\sqrt{5} = -1.\\]If $x \\ge -\\frac{1}{\\sqrt{5}},$ then\n\\begin{align*}\nf(x) &= |x \\sqrt{5} + 1| + x \\sqrt{5} \\\\\n&= x \\sqrt{5} + 1 + x \\sqrt{5} \\\\\n&= (x \\sqrt{5} + 1) + (x \\sqrt{5} + 1) - 1 \\\\\n&\\ge -1.\n\\end{align*}Thus, the minimum value of $f(x)$ is $\\boxed{-1}.$"
-}

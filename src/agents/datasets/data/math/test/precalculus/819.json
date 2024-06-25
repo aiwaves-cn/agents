@@ -1,6 +1,0 @@
-{
-    "problem": "For a constant $c,$ in cylindrical coordinates $(r,\\theta,z),$ find the shape described by the equation\n\\[z = c.\\](A) Line\n(B) Circle\n(C) Plane\n(D) Sphere\n(E) Cylinder\n(F) Cone\n\nEnter the letter of the correct option.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "In cylindrical coordinates, $z$ simply denotes the $z$-coordinate of a point.  Thus, for a fixed $z$-coordinate $c,$ all the points lie on a plane that is parallel to the $xy$-plane.  The answer is $\\boxed{\\text{(C)}}.$\n\n[asy]\nimport three;\nimport solids;\n\nsize(200);\ncurrentprojection = perspective(6,3,2);\ncurrentlight = (1,0,1);\nreal theta = 120;\n\ndraw((-2,0,0)--(2,0,0));\ndraw((0,-2,0)--(0,2,0));\ndraw(surface((1,1,0.5)--(1,-1,0.5)--(-1,-1,0.5)--(-1,1,0.5)--cycle),gray(0.99));\ndraw((0,0,-2)--(0,0,0.2));\ndraw((0,0,0.5)--(0,0,2));\n\nlabel(\"$x$\", (2,0,0), SW);\nlabel(\"$y$\", (0,2,0), E);\nlabel(\"$z$\", (0,0,2), N);\nlabel(\"$z = c$\", (-1,1,0.5), E);\n[/asy]"
-}

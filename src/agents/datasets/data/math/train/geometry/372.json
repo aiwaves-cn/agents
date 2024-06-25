@@ -1,6 +1,0 @@
-{
-    "problem": "$\\triangle ABC$ is similar to $\\triangle DEF$ . What is the number of centimeters in the length of $\\overline{EF}$ ? Express your answer as a decimal to the nearest tenth.\n\n[asy]\ndraw((0,0)--(8,-2)--(5,4)--cycle);\nlabel(\"8cm\",(2.5,2),NW);\nlabel(\"5cm\",(6.1,1),NE);\ndraw((12,0)--(18,-1.5)--(15.7,2.5)--cycle);\nlabel(\"$A$\",(8,-2),SE);\nlabel(\"3cm\",(16.9,0.5),NE);\nlabel(\"$B$\",(5,4),N);\nlabel(\"$C$\",(0,0),SW);\nlabel(\"$D$\",(18,-1.5),SE);\nlabel(\"$E$\",(15.7,2.5),N);\nlabel(\"$F$\",(12,0),N);\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Because $\\triangle ABC \\sim \\triangle DEF,$ we know that: \\begin{align*}\n\\frac{EF}{ED} &= \\frac{BC}{BA} \\\\\n\\frac{EF}{3\\text{ cm}} &= \\frac{8\\text{ cm}}{5\\text{ cm}} \\\\\nEF &= \\frac{8\\text{ cm}\\cdot3\\text{ cm}}{5\\text{ cm}} = \\boxed{4.8}\\text{ cm}.\n\\end{align*}"
-}

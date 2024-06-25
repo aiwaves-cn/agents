@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of the zeros, the product of the zeros, and the sum of the coefficients of the function $f(x)=ax^{2}+bx+c$ are equal. Their common value must also be which of the following?\n\n(A) The coefficient of $x^2.$\n(B) The coefficient of $x.$\n(C) The $y$-intercept of the graph of $y = f(x).$\n(D) One of the $x$-intercepts of the graph of $y = f(x).$\n(E) The mean of the $x$-intercepts of the graph of $y = f(x).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, the sum of the zeros is $-\\frac{b}{a},$ and the sum of the coefficients is $\\frac{c}{a},$ so $b = -c.$  Then the sum of the coefficients is $a + b + c = a,$ which is the coefficient of $x^2.$  Thus, the answer is $\\boxed{\\text{(A)}}.$\n\nTo see that none of the other choices can work, consider $f(x) = -2x^2 - 4x + 4.$  The sum of the zeros, the product of the zero, and the sum of the coefficients are all $-2.$  The coefficient of $x$ is $-4,$ the $y$-intercept of the graph of $y = f(x)$ is 4, the $x$-intercepts are $-1 \\pm \\sqrt{3},$ and the mean of the $x$-intercepts is $-1,$ so none of the other choices work."
-}

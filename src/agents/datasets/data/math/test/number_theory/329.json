@@ -1,6 +1,0 @@
-{
-    "problem": "A base-10 three-digit number $n$ is selected at random. What is the probability that the base-9 representation and the base-11 representation of $n$ are both three-digit numerals?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The largest base-9 three-digit number is $9^3-1=728$ and the smallest base-11 three-digit number is $11^2=121$. There are $608$ integers that satisfy $121\\le n\\le 728$, and 900 three-digit numbers altogether, so the probability is $608/900=\\boxed{\\frac{152}{225}}$."
-}

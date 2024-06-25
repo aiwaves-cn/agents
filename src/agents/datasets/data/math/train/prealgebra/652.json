@@ -1,6 +1,0 @@
-{
-    "problem": "If the measure of angle $C$ is double the measure of angle $B$, what is the measure of angle $A$ in triangle $ABC$?\n\n[asy]\n\npair A,B,C;\n\nA=(0,0);\nB=(5,0);\nC=(-0.8,2.5);\n\ndraw(A--B--C--A);\n\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\n\ndraw((4,0.6)..(3.8,0.4)..(3.9,0.1),ArcArrow);\n\nlabel(\"$21^\\circ$\",(4,0.6),E);\n\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since the measure of angle $C$ is twice the measure of angle $B$, $\\angle C = 2\\cdot 21^\\circ = 42^\\circ$. It follows that $\\angle A = 180^\\circ - 21^\\circ - 42^\\circ = \\boxed{117^\\circ}$."
-}

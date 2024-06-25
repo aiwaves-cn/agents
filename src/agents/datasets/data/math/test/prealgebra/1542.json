@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ is a right triangle. If the measure of angle $PAB$ is $x^\\circ$ and the measure of angle $ACB$ is expressed in the form $(Mx+N)^\\circ$ with $M=1$, what is the value of $M+N$?\n\n[asy]\ndraw((-10,0)--(20,0),linewidth(1),Arrows);\ndraw((0,0)--(10,10/sqrt(3))--(10+10/3,0),linewidth(1));\n\ndraw((10,10/sqrt(3))+dir(-150)--(10,10/sqrt(3))+dir(-150)+dir(-60)--(10,10/sqrt(3))+dir(-60),linewidth(1));\n\ndot((-3,0));\n\ndraw(dir(180)..dir(105)..dir(30),linewidth(1));\n\nlabel(\"P\",(-3,0),NW);\nlabel(\"A\",(0,0),S);\nlabel(\"$x^\\circ$\",(-1,1),N);\nlabel(\"B\",(10,10/sqrt(3)),N);\nlabel(\"C\",(10+10/3,0),NE);\n\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since $\\angle PAB$ and $\\angle BAC$ are supplementary, $\\angle BAC = 180^{\\circ} - x^\\circ$.  Since the three angles of a triangle add up to $ 180^{\\circ} $, we have $\\angle ACB = 180^{\\circ} - 90^{\\circ} - (180^{\\circ} - x^\\circ) = x^\\circ - 90^{\\circ}$.  Thus, $M + N = \\boxed{-89}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of $n$ that satisfies $\\frac{1}{n+1} + \\frac{2}{n+1} + \\frac{n}{n+1} = 3$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Combining the fractions on the left gives $\\dfrac{n+3}{n+1} = 3$.  Multiplying both sides by $n+1$ gives $n+3 = 3(n+1)$.  Expanding the right side gives $n+3 = 3n+3$.  Subtracting $n$ and 3 from both sides gives $0=2n$, so $n=\\boxed{0}$."
-}

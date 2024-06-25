@@ -1,6 +1,0 @@
-{
-    "problem": "How many times does the digit 9 appear in the list of all integers from 1 to 500? (The number $ 99 $, for example, is counted twice, because $9$ appears two times in it.)",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The easiest approach is to consider how many times 9 can appear in the units place, how many times in the tens place, and how many times in the hundreds place. If we put a 9 in the units place, there are 10 choices for the tens place and 5 choices for the hundreds digit (including 0), for a total of 50 times. Likewise, if we put a 9 in the tens place, there are 10 choices for the units place and 5 choices for the hundreds digit, for a total of 50 times. Since 9 cannot appear in the hundreds digit, there are $50+50=\\boxed{100}$ appearances of the digit 9."
-}

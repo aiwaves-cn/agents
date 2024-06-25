@@ -1,6 +1,0 @@
-{
-    "problem": "Find the positive solution to\n\\[\\frac 1{x^2-10x-29}+\\frac1{x^2-10x-45}-\\frac 2{x^2-10x-69}=0.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Seeing similar expressions in multiple places, we make a substitution: let $y = x^2 - 10x - 45$. Then we have the equation \\[\\frac{1}{y+16} + \\frac{1}{y} - \\frac{2}{y-24} = 0.\\]Multiplying by $(y+16)(y)(y-24)$ to clear denominators, we have \\[y(y-24) + (y+16)(y-24) - 2y(y+16) = 0\\]or \\[-64(y+6) = 0.\\]Thus $y = -6$, so $-6 = x^2 - 10x - 45$ or \\[x^2 - 10x - 39 = 0.\\]This factors as $(x-13)(x+3) = 0$, so the positive solution is $x=\\boxed{13}$."
-}

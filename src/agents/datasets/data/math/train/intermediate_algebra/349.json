@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[f(x + f(x)) = 4f(x)\\]for all $x,$ and $f(1) = 4.$  Find $f(21).$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 1,$ we get $f(1 + f(4)) = 4f(1),$ so\n\\[f(5) = 16.\\]Setting $x = 5,$ we get $f(5 + f(5)) = 4f(5),$ so\n\\[f(21) = \\boxed{64}.\\]"
-}

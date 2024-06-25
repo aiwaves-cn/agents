@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be positive real numbers.  Find the largest possible value of\n\\[\\frac{\\sqrt{a} + \\sqrt{b} + \\sqrt{c}}{\\sqrt{a + b + c}}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By QM-AM,\n\\[\\sqrt{\\frac{x^2 + y^2 + z^2}{3}} \\ge \\frac{x + y + z}{3}\\]for any nonnegative real numbers $x,$ $y,$ and $z.$  Setting $x = \\sqrt{a},$ $y = \\sqrt{b},$ $z = \\sqrt{c},$ we get\n\\[\\sqrt{\\frac{a + b + c}{3}} \\ge \\frac{\\sqrt{a} + \\sqrt{b} + \\sqrt{c}}{3}.\\]Hence,\n\\[\\frac{\\sqrt{a} + \\sqrt{b} + \\sqrt{c}}{\\sqrt{a + b + c}} \\le \\sqrt{3}.\\]Equality occurs when $a = b = c,$ so the largest possible value is $\\boxed{\\sqrt{3}}.$"
-}

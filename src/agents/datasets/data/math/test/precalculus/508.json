@@ -1,6 +1,0 @@
-{
-    "problem": "Find the integer $n,$ $-90 \\le n \\le 90,$ such that $\\sin n^\\circ = \\sin 1021^\\circ.$",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "Since the sine function has period $360^\\circ,$\n\\[\\sin 1021^\\circ = \\sin (1021^\\circ - 3 \\cdot 360^\\circ) = \\sin (-59^\\circ),\\]so $n = \\boxed{-59}.$"
-}

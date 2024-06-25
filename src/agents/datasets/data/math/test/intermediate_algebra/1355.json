@@ -1,6 +1,0 @@
-{
-    "problem": "For real numbers $x,$ $y,$ and $z,$ find the minimum value of\n\\[2x^2 + 5y^2 + 2z^2 + 4xy - 4yz - 2z - 2x.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can write\n\\begin{align*}\n&2x^2 + 5y^2 + 2z^2 + 4xy - 4yz - 2z - 2x \\\\\n&= (x^2 + 4y^2 + z^2 + 4xy - 2xz - 4yz) + (x^2 + z^2 + 1 + 2xz - 2x - 2z + 1) + y^2 - 1 \\\\\n&= (x + 2y - z)^2 + (x + z - 1)^2 + y^2 - 1.\n\\end{align*}We see that the minimum value is $\\boxed{-1},$ which occurs when $x + 2y - z = x + z - 1 = y = 0,$ or $x = \\frac{1}{2},$ $y = 0,$ and $z = \\frac{1}{2}.$"
-}

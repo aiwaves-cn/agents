@@ -1,6 +1,0 @@
-{
-    "problem": "If $131_{a}$ is equal to the base 10 integer 55, find $a$ given that $a>0$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Converting $131_{a}$ to base 10 and setting it equal to 55, we find that  \\begin{align*} 1(a^2)+3(a^1)+1(a^0)&=55\n\\\\ a^2+3a+1&=55\n\\\\\\Rightarrow\\qquad a^2+3a-54&=0\n\\\\\\Rightarrow\\qquad (a+9)(a-6)&=0\n\\end{align*}This tells us that $a$ is either $-9$ or $6$. Since $a$ must be greater than 0, $a=\\boxed{6}$."
-}

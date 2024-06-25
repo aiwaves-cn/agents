@@ -1,6 +1,0 @@
-{
-    "problem": "Pick two or fewer different digits from the set $\\{1, 3, 6, 7\\}$ and arrange them to form a number.  How many prime numbers can we create in this manner?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We have two cases: the number is either 1-digit or 2-digit.  We examine each of these cases separately.\n\nCase 1: 1 digit\n\nIn this case, the only 1-digit primes are 3 and 7, for a total of 2 primes.\n\nCase 2: 2 digits\n\nWe have the following combinations of numbers: 13, 16, 17, 36, 37, 67, 76, 73, 63, 71, 61, 31.  Out of these 12 numbers, it is easier to count the composites: 16, 36, 76, and 63 for a total of 4 composites, which we subtract from the original 12 numbers to yield $12-4=8$ primes in this case.\n\nBoth cases considered, the total number of prime numbers we can create is $2 + 8 = \\boxed{10}$."
-}

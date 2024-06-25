@@ -1,6 +1,0 @@
-{
-    "problem": "A star-polygon is drawn on a clock face by drawing a chord from each number to the fifth number counted clockwise from that number.  That is, chords are drawn from 12 to 5, from 5 to 10, from 10 to 3, and so on, ending back at 12.  What is the degree measure of the angle at each vertex in the star-polygon?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Consider the two chords with an endpoint at 5. The arc subtended by the angle determined by these chords extends from 10 to 12, so the degree measure of the arc is $(2/12)(360)=60$.  By the Central Angle Theorem, the degree measure of this angle is $(1/2)(60)=30$. By symmetry, the degree measure of the angle at each vertex is $\\boxed{30}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The set of integers $\\{2,4,10,x\\}$ has the property that the sum of any three members of the set plus 1 yields a prime number. What is the smallest possible value of $x$ greater than 10?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "First, we know that $x$ is even. Every prime number larger than $3$ is odd, so the sum of three members has to be even.\n\nNow, $12$ does not work because $(2+10+12)+1=25$, which is not prime.\n\nSimilarly, $14$ does not work because $(2+4+14)+1=21$, which is not prime.\n\nBut $16$ works because all the possible sums involving $x=16$ generate prime results: $(2+4+16)+1=23$, $(2+10+16)+1=29$, and $(4+10+16)+1=31$.\n\nSo the smallest possible value of $x$ is $\\boxed{16}$."
-}

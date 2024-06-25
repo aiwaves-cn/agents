@@ -1,6 +1,0 @@
-{
-    "problem": "The complex number $z$ is equal to $9 + bi$, where $b$ is a positive real number and $i^2 = -1$. Given that the imaginary parts of $z^2$ and $z^3$ are equal, find $b$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We compute \\[z^2 = (9+bi)^2 = 81 + 18bi - b^2\\]and \\[z^3 = 729 + 243bi - 27b^2 - b^3i^3.\\]Therefore, setting the imaginary parts equal, we get \\[18b = 243b - b^3,\\]or $b^3 = 225b$. Since $b > 0$, we can divide by $b$ to get $b^2 = 225$, and so $b = \\boxed{15}$."
-}

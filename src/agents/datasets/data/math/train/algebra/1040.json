@@ -1,6 +1,0 @@
-{
-    "problem": "For all real numbers $r$ and $s$, define the mathematical operation $\\#$ such that the following conditions apply: $r\\ \\#\\ 0 = r, r\\ \\#\\ s = s\\ \\#\\ r$, and $(r + 1)\\ \\#\\ s = (r\\ \\#\\ s) + s + 1$. What is the value of $11\\ \\#\\ 5$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Using the first two conditions, we have that $0 \\# 11 = 11 \\# 0 = 11.$\n\nUsing the third condition, with $r=0$ and $s=11$, we have that $1 \\# 11 = (0 \\# 11)+12=11+12.$\n\nAs we increase $r$ by $1$, we increase $r \\# 11$ by $s+1=11+1=12$. Since we want to increase $r$ $5$ times to find $11 \\#5 =5 \\# 11$, we want to increase $0 \\# 11$ by $12$ five times. Therefore, we have $11 \\# 5 = 5 \\# 11 = 11+ 5 \\cdot 12 = 11+60= \\boxed{71}.$\n\nMore generally,\n\\[a \\# b = ab + a + b.\\]"
-}

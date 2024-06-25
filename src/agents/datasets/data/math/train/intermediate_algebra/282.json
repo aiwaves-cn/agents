@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be nonzero real numbers. Let $m$ and $M$ be the minimium value and maximum value of\n\\[\\frac{|x + y|}{|x| + |y|},\\]respectively.  Find $M - m.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Both $|x + y|$ and $|x| + |y|$ are nonnegative, so $\\frac{|x + y|}{|x| + |y|}$ must be nonnegative.  When $x = 1$ and $y = -1,$\n\\[\\frac{|x + y|}{|x| + |y|} = \\frac{0}{2} = 0,\\]so this is clearly the minimum.\n\nOn the other hand, by the Triangle Inequality, $|x| + |y| \\ge |x + y|,$ so\n\\[\\frac{|x + y|}{|x| + |y|} \\le 1.\\]Equality occurs when $x = y,$ so the maximum is 1.\n\nTherefore, $M - m = 1 - 0 = \\boxed{1}.$"
-}

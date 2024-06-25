@@ -1,6 +1,0 @@
-{
-    "problem": "A sphere is inscribed inside a hemisphere of radius 2.  What is the volume of this sphere?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "[asy]\n\nsize(110); dotfactor=4; pen dps=linewidth(0.7)+fontsize(10); defaultpen(dps);\ndraw(scale(1,.2)*arc((0,0),1,0,180),dashed);\ndraw(scale(1,.2)*arc((0,0),1,180,360));\ndraw(Arc((0,0),1,0,180));\n\ndraw(Circle((0,.5),.5),heavycyan);\ndraw(scale(1,.2)*arc((0,2.5),.5,0,180),dashed+heavycyan);\ndraw(scale(1,.2)*arc((0,2.5),.5,180,360),heavycyan);\n\ndot((0,0)); dot((0,1));\nlabel(\"$B$\",(0,0),SW); label(\"$A$\",(0,1),NE);\n\n[/asy]\n\nLet $A$ be the point on the hemisphere where the top of the hemisphere touches the sphere, and let $B$ be the point on the hemisphere where the base of the hemisphere touches the sphere.  $AB$ is a diameter of the sphere and a radius of the hemisphere.  Thus, the diameter of the sphere is 2, so the radius of the sphere is 1 and the volume of the sphere is $\\frac{4}{3}\\pi (1^3)=\\boxed{\\frac{4}{3}\\pi}$."
-}

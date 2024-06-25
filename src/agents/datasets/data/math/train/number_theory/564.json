@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $x-3$ and $y+3$ are multiples of $7$.\n\nWhat is the smallest positive integer, $n,$ for which $x^2+xy+y^2+n$ is a multiple of $7$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Since $x-3$ is a multiple of $7$, we know that $x\\equiv 3\\pmod 7$.\n\nSince $y+3$ is a multiple of $7$, we know that $y\\equiv -3\\pmod 7$.\n\nTherefore, \\begin{align*}\nx^2+xy+y^2+n &\\equiv (3)^2 + (3)(-3) + (-3)^2 + n \\\\\n&\\equiv 9 - 9 + 9 + n \\\\\n&\\equiv 9 + n \\qquad\\pmod 7.\n\\end{align*}In other words, $9+n$ is a multiple of $7$. The smallest positive $n$ for which this is true is $n=\\boxed{5}$."
-}

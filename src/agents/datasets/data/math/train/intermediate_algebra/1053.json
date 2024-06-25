@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)$ be an odd function.  Is $f(f(f(x)))$ even, odd, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\[f(f(f(-x))) = f(f(-f(x)) = f(-f(f(x))) = -f(f(f(x))),\\]so $f(f(f(x)))$ is an $\\boxed{\\text{odd}}$ function."
-}

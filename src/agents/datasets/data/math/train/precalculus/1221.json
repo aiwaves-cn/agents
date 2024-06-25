@@ -1,6 +1,0 @@
-{
-    "problem": "Find the value of \\[\\cot(\\cot^{-1}3+\\cot^{-1}7+\\cot^{-1}13+\\cot^{-1}21).\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "First, we compute $\\cot (\\tan^{-1} a).$  Let $x = \\tan^{-1} a,$ so $a = \\tan x.$  Then\n\\[\\cot (\\tan^{-1} a) = \\cot x = \\frac{1}{\\tan x} = \\frac{1}{a}.\\]By the tangent addition formula,\n\\[\\tan (\\tan^{-1} a + \\tan^{-1} b) = \\frac{a + b}{1 - ab}.\\]Then\n\\begin{align*}\n\\cot (\\cot^{-1} a + \\cot^{-1} b) &= \\frac{1}{\\tan (\\cot^{-1} a + \\cot^{-1} b)} \\\\\n&= \\frac{1 - \\tan (\\cot^{-1} a) \\tan (\\cot^{-1} b)}{\\tan (\\cot^{-1} a) + \\tan (\\cot^{-1} b)} \\\\\n&= \\frac{1 - \\frac{1}{a} \\cdot \\frac{1}{b}}{\\frac{1}{a} + \\frac{1}{b}} \\\\\n&= \\frac{ab - 1}{a + b}.\n\\end{align*}Hence,\n\\[\\cot (\\cot^{-1} 3 + \\cot^{-1} 7) = \\frac{3 \\cdot 7 - 1}{3 + 7} = 2.\\]Both $\\cot^{-1} 3$ and $\\cot^{-1} 7$ are acute angles, so $\\cot^{-1} 3 + \\cot^{-1} 7 = \\cot^{-1} 2.$\n\nAlso,\n\\[\\cot (\\cot^{-1} 13 + \\cot^{-1} 21) = \\frac{13 \\cdot 21 - 1}{13 + 21} = 8.\\]Both $\\cot^{-1} 13$ and $\\cot^{-1} 21$ are acute angles, so $\\cot^{-1} 3 + \\cot^{-1} 7 = \\cot^{-1} 8.$\n\nTherefore,\n\\[\\cot (\\cot^{-1} 3 + \\cot^{-1} 7 + \\cot^{-1} 13 + \\cot^{-1} 21) = \\cot (\\cot^{-1} 2 + \\cot^{-1} 8) = \\frac{2 \\cdot 8 - 1}{2 + 8} = \\boxed{\\frac{3}{2}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\frac{1}{2^{1990}} \\sum_{n = 0}^{995} (-3)^n \\binom{1990}{2n}.\\]",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "By the Binomial Theorem,\n\\begin{align*}\n(1 + i \\sqrt{3})^{1990} &= \\binom{1990}{0} + \\binom{1990}{1} (i \\sqrt{3}) + \\binom{1990}{2} (i \\sqrt{3})^2 + \\binom{1990}{3} (i \\sqrt{3})^3 + \\binom{1990}{4} (i \\sqrt{3})^4 + \\dots + \\binom{1990}{1990} (i \\sqrt{3})^{1990} \\\\\n&= \\binom{1990}{0} + i \\binom{1990}{1} \\sqrt{3} - 3 \\binom{1990}{2} + 3i \\sqrt{3} \\binom{1990}{3} + 3^2 \\binom{1990}{4} + \\dots - 3^{995} \\binom{1990}{1990}.\n\\end{align*}Thus, $\\sum_{n = 0}^{1995} (-3)^n \\binom{1990}{2n}$ is the real part of $(1 + i \\sqrt{3})^{1990}.$\n\nBy DeMoivre's Theorem,\n\\begin{align*}\n(1 + i \\sqrt{3})^{1990} &= (2 \\operatorname{cis} 60^\\circ)^{1990} \\\\\n&= 2^{1990} \\operatorname{cis} 119400^\\circ \\\\\n&= 2^{1990} \\operatorname{cis} 240^\\circ \\\\\n&= 2^{1990} \\left( -\\frac{1}{2} - i \\frac{\\sqrt{3}}{2} \\right).\n\\end{align*}Therefore,\n\\[\\frac{1}{2^{1990}} \\sum_{n = 0}^{995} (-3)^n \\binom{1990}{2n} = \\boxed{-\\frac{1}{2}}.\\]"
-}

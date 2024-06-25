@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z$ be a complex number such that $|z| = 2.$  Find the largest possible distance between $(3 + 4i)z^3$ and $z^5$ when plotted in the complex plane.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We want to maximize\n\\[|(3 + 4i)z^3 - z^5| = |z^3| |3 + 4i - z^2| = |z|^3 |3 + 4i - z^2| = 8 |3 + 4i - z^2|.\\]In other words, we want to maximize the distance between $3 + 4i$ and $z^2.$\n\nSince $|z| = 2,$ the set of complex numbers of the form $z^2$ lie on a circle with radius $|z|^2 = 4.$  The distance between $3 + 4i$ and $z^2$ is maximized when $z^2$ lies on the line passing through the origin and the $3 + 4i.$  (This line intersects the circle at two points, so we take the one that is farther from $3 + 4i.$)\n\n[asy]\nunitsize(0.5 cm);\n\ndraw(Circle((0,0),4));\ndraw((-4.5,0)--(4.5,0));\ndraw((0,-4.5)--(0,4.5));\ndraw((0,0)--(3,4));\ndraw((0,0)--(-4/5)*(3,4));\n\nlabel(\"$4$\", (-4/5)*(3,4)/2, NW);\n\ndot(\"$3 + 4i$\", (3,4), NE);\ndot(\"$z^2$\", (-4/5)*(3,4), SW);\n[/asy]\n\nFor this number, the distance between $3 + 4i$ and $z^2$ is $4 + 5 = 9,$ so the maximum value of $8 |3 + 4i - z^2|$ is $8 \\cdot 9 = \\boxed{72}.$"
-}

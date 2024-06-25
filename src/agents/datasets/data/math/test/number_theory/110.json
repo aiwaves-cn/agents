@@ -1,6 +1,0 @@
-{
-    "problem": "In this problem, $a$ and $b$ are integers, such that $a \\ge b.$\n\nIf $a+b\\equiv 2\\pmod{10}$ and $2a+b\\equiv 1\\pmod{10}$, then what is the last digit of $a-b$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "To determine the residue of $a\\pmod{10}$, we can subtract $a+b$ from $2a+b$: \\begin{align*}\na &= (2a+b) - (a+b) \\\\\n&\\equiv 1 - 2 \\\\\n&\\equiv -1 \\\\\n&\\equiv 9 \\pmod{10}.\n\\end{align*}Then we know that $9+b\\equiv 2\\pmod{10}$, so we can solve for $b$: \\begin{align*}\nb &\\equiv 2-9 \\\\\n&\\equiv -7 \\\\\n&\\equiv 3 \\pmod{10}.\n\\end{align*}Finally, we substitute to obtain $$a-b \\equiv 9-3 \\equiv 6 \\pmod{10},$$and so the last digit of $a-b$ is $\\boxed{6}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)$ be a quadratic polynomial such that $[p(x)]^3 - x$ is divisible by $(x - 1)(x + 1)(x - 8).$  Find $p(13).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By Factor Theorem, we want $[p(x)]^3 - x$ to be equal to 0 at $x = 1,$ $x = -1,$ and $x = 8.$  Thus, $p(1) = 1,$ $p(-1) = -1,$ and $p(8) = 2.$\n\nSince $p(x)$ is quadratic, let $p(x) = ax^2 + bx + c.$  Then\n\\begin{align*}\na + b + c &= 1, \\\\\na - b + c &= -1, \\\\\n64a + 8b + c &= 2.\n\\end{align*}Solving this system, we find $a = -\\frac{2}{21},$ $b = 1,$ and $c = \\frac{2}{21}.$  Hence,\n\\[p(x) = -\\frac{2}{21} x^2 + x + \\frac{2}{21},\\]so $p(13) = -\\frac{2}{21} \\cdot 13^2 + 13 + \\frac{2}{21} = \\boxed{-3}.$"
-}

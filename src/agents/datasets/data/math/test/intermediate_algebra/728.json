@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of the rational function $\\frac{q(x)}{x^6-4x^5+3x^3+x^2-1} $ has a horizontal asymptote. What is the largest possible degree of $q(x)$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "For the given function to have a horizontal asymptote, it can't go to infinity as $x$ goes to infinity. This is only possible if the numerator has the same or smaller degree than the denominator. Since the denominator has degree 6, the largest possible degree of $q(x)$ that will allow the function to have a horizontal asymptote is $\\boxed{6}.$\n\nTo see that a degree of $6$ works, we can consider $q(x) = x^6.$ Then as $x$ grows away from $0,$ the $x^6$ terms in the function will dominate and the function will tend towards $\\frac{x^6}{x^6} = 1.$"
-}

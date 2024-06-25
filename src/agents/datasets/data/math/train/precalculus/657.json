@@ -1,6 +1,0 @@
-{
-    "problem": "Compute\n\\[\\cos^2 0^\\circ + \\cos^2 1^\\circ + \\cos^2 2^\\circ + \\dots + \\cos^2 90^\\circ.\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $S = \\cos^2 0^\\circ + \\cos^2 1^\\circ + \\cos^2 2^\\circ + \\dots + \\cos^2 90^\\circ.$  Then\n\\begin{align*}\nS &= \\cos^2 0^\\circ + \\cos^2 1^\\circ + \\cos^2 2^\\circ + \\dots + \\cos^2 90^\\circ \\\\\n&= \\cos^2 90^\\circ + \\cos^2 89^\\circ + \\cos^2 88^\\circ + \\dots + \\cos^2 0^\\circ \\\\\n&= \\sin^2 0^\\circ + \\sin^2 1^\\circ + \\sin^2 2^\\circ + \\dots + \\sin^2 90^\\circ,\n\\end{align*}so\n\\begin{align*}\n2S &= (\\cos^2 0^\\circ + \\sin^2 0^\\circ) + (\\cos^2 1^\\circ + \\sin^2 1^\\circ) + (\\cos^2 2^\\circ + \\sin^2 2^\\circ) + \\dots + (\\cos^2 90^\\circ + \\sin^2 90^\\circ) \\\\\n&= 91,\n\\end{align*}which means $S = \\boxed{\\frac{91}{2}}.$"
-}

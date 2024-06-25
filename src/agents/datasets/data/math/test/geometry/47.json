@@ -1,6 +1,0 @@
-{
-    "problem": "In the circle with center $O$ and diameters $AC$ and $BD$, the angle $AOD$ measures $54$ degrees. What is the measure, in degrees, of angle $AOB$? [asy]\ndraw(circle((0,0),1));\nlabel(\"O\",(0,0),SE);\ndraw((-1,0)--(1,0));\ndraw((0.5877852522924731291,0.80901699437)--(-0.5877852522924731291,-0.80901699437));\nlabel(\"B\",(-1,0),W);\nlabel(\"D\",(1,0),E);\nlabel(\"A\",(0.5877852522924731291,0.80901699437),NE);\nlabel(\"C\",(-0.5877852522924731291,-0.80901699437),SW);\ndot((0,0));\ndot((-0.5877852522924731291,-0.80901699437));\ndot((0.5877852522924731291,0.80901699437));\ndot((-1,0));\ndot((1,0));\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $AC$ and $BD$ are line segments that intersect at point $O$, angle $AOD$ and angle $AOB$ are supplementary angles and their angle measures must add up to $180$ degrees. Since angle $AOD$ measures $54$ degrees, the measure of angle $AOB$ must be $180 - 54 = \\boxed{126}$ degrees."
-}

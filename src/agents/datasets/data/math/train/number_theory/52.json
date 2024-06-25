@@ -1,6 +1,0 @@
-{
-    "problem": "The number 210 is the product of two consecutive positive integers and is also the product of three consecutive integers. What is the sum of those five integers?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "First we prime factorize $210=2\\cdot3\\cdot5\\cdot7$. Trying some pairwise products of these primes, we see that $210=(2\\cdot7)(3\\cdot5)=14\\cdot15$. Also, $210=(5)(2\\cdot3)(7)=5\\cdot6\\cdot7$. The sum of the five integers is $14+15+5+6+7=\\boxed{47}$."
-}

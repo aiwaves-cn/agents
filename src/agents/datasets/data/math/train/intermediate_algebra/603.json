@@ -1,6 +1,0 @@
-{
-    "problem": "Given a cylinder of fixed volume $V,$ the total surface area (including the two circular ends) is minimized for a radius of $R$ and height $H.$  Find $\\frac{H}{R}.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "For radius $r$ and height $h,$ the volume is given by $\\pi r^2 h = V,$ and the total surface area is given by\n\\[A = 2 \\pi r^2 + 2 \\pi rh.\\]By AM-GM,\n\\begin{align*}\nA &= 2 \\pi r^2 + 2 \\pi rh \\\\\n&= 2 \\pi r^2 + \\pi rh + \\pi rh \\\\\n&\\ge 3 \\sqrt[3]{(2 \\pi r^2)(\\pi rh)(\\pi rh)} \\\\\n&= 3 \\sqrt[3]{2 \\pi^3 r^4 h^2}.\n\\end{align*}Since $\\pi r^2 h = V,$ $r^2 h = \\frac{V}{\\pi}.$  Then\n\\[3 \\sqrt[3]{2 \\pi^3 r^4 h^2} = 3 \\sqrt[3]{2 \\pi^3 \\cdot \\frac{V^2}{\\pi^2}} = 3 \\sqrt[3]{2 \\pi V^2}.\\]Equality occurs when $2 \\pi r^2 = \\pi rh,$ so $\\frac{h}{r} = \\boxed{2}.$"
-}

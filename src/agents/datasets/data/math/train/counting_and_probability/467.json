@@ -1,6 +1,0 @@
-{
-    "problem": "There are two colors Jessica can use to color this 2 by 2 grid. If non-overlapping regions that share a side cannot be the same color, how many possible ways are there for Jessica to color the grid?\n\n[asy]\nsize(101);\ndraw(unitsquare);\ndraw((0,.5)--(1,.5));\ndraw((.5,0)--(.5,1));\nlabel(\"$A$\",(0,1),NW); label(\"$B$\",(1,1),NE); label(\"$C$\",(1,0),SE); label(\"$D$\",(0,0),SW);\n[/asy]",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Because non-overlapping regions that share a side cannot be the same color, the only way to color the grid is to have diagonal squares sharing the same color. So, Jessica can either color the top left and bottom right squares with color $1$ and the top right and bottom left squares with color $2$, or color the top left and bottom right squares with color $2$ and the top left and bottom right squares with color $1$. Thus, there are $\\boxed{2}$ ways in which to color the grid."
-}

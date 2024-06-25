@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of positive integers $n,$ $1 \\le n \\le 1000,$ for which the polynomial $x^2 + x - n$ can be factored as the product of two linear factors with integer coefficients.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "If $x^2 + x - n$ factors as the product of two linear factors with integer coefficients, then it must be of the form\n\\[(x - a)(x - b) = x^2 - (a + b)x + ab,\\]where $a$ and $b$ are integers.  Then $a + b = -1$ and $ab = -n$, which means $n = -ab = -a(-a - 1) = a(a + 1).$  We want $1 \\le n \\le 1000.$  The possible values of $a$ are then 1, 2, $\\dots,$ 31, so there are $\\boxed{31}$ possible values of $n.$  (Note that $a$ can also be $-32,$ $-31,$ $\\dots,$ $-2,$ but these give the same values of $n.$)"
-}

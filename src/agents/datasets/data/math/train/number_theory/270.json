@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive perfect square integers are factors of the product $\\left(2^{10}\\right)\\left(3^{12}\\right)\\left(5^{15}\\right)$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "There are six possible square powers of two that can divide the given number: $2^0$, $2^2$, $2^4$, $2^6$, $2^8$, and $2^{10}$. Similarly, there are seven possible square powers of three that can divide the given number, and eight possible square powers of five that can divide the given number. Therefore, there are $6 \\times 7 \\times 8 = \\boxed{336}$ positive perfect square integers that can divide $\\left(2^{10}\\right)\\left(3^{12}\\right)\\left(5^{15}\\right)$."
-}

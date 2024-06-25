@@ -1,6 +1,0 @@
-{
-    "problem": "How many sequences of 6 digits $x_1, x_2, \\ldots, x_6$ can we form, given the condition that no two adjacent $x_i$ have the same parity? Leading zeroes are allowed.  (Parity means 'odd' or 'even'; so, for example, $x_2$ and $x_3$ cannot both be odd or both be even.)",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "Regardless of whether $x_1$ is odd or even, we have 5 choices for $x_2$: if $x_1$ is odd then $x_2$ must be one of the 5 even digits, otherwise if $x_1$ is even then $x_2$ must be one of the 5 odd digits.  Similarly, we then have 5 choices for $x_3$, 5 choices for $x_4$, and so on.\n\nSince $x_1$ can be any of the 10 digits, the answer is $10 \\times 5^5=\\boxed{31,250}.$"
-}

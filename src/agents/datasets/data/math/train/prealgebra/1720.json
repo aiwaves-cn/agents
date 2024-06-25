@@ -1,6 +1,0 @@
-{
-    "problem": "Given three members of a group -- Alice, Bob, and Carol -- in how many ways can these three be chosen to be the three officers (president, secretary, and treasurer) of the group, assuming no person holds more than one job?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "In this problem we are choosing a committee, so the order in which we choose the 3 people does not matter.  We could have chosen them in any of the following orders (where A is Alice, B is Bob, and C is Carol): ABC, ACB, BAC, BCA, CAB, CBA.  So each possible committee corresponds to $3! = \\boxed{6}$ possible orderings."
-}

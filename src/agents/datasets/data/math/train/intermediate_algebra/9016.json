@@ -1,6 +1,0 @@
-{
-    "problem": "The volume of a certain rectangular solidis $216\\text{ cm}^3$, its total surface area is $288\\text{ cm}^2$, and its three dimensions are in geometric progression. Find the sum of the lengths in cm of all the edges of this solid.\n",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let the three side lengths be $\\tfrac{a}{r}$, $a$, and $ar$. Because the volume of the solid is $216\\text{ cm}^3$,\\[\\frac{a}{r} \\cdot a \\cdot ar = 216\\]\\[a = 6\\]The surface area of the solid is $288\\text{ cm}^2$, so\\[2(\\frac{a^2}{r} + a^2r + a^2) = 288\\]Note that the sum of the side lengths of the cube is $4(\\tfrac{6}{r} + 6 + 6r)$ and that the equation above has a similar form.\\[2(\\frac{36}{r} + 36r + 36) = 288\\]\\[2(\\frac{6}{r} + 6r + 6) = 48\\]\\[4(\\frac{6}{r} + 6r + 6) = 96\\]The sum of all the edges of the cube is $\\boxed{96}$ centimeters."
-}

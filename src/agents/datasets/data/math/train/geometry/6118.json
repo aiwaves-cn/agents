@@ -1,6 +1,0 @@
-{
-    "problem": "In rectangle $ABCD$, $AB=100$. Let $E$ be the midpoint of $\\overline{AD}$. Given that line $AC$ and line $BE$ are perpendicular, find the greatest integer less than $AD$.\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy] pair A=(0,10), B=(0,0), C=(14,0), D=(14,10), Q=(0,5); draw (A--B--C--D--cycle); pair E=(7,10); draw (B--E); draw (A--C); pair F=(6.7,6.7); label(\"\\(E\\)\",E,N); label(\"\\(A\\)\",A,NW); label(\"\\(B\\)\",B,SW); label(\"\\(C\\)\",C,SE); label(\"\\(D\\)\",D,NE); label(\"\\(F\\)\",F,W); label(\"\\(100\\)\",Q,W); [/asy]\nFrom the problem, $AB=100$ and triangle $FBA$ is a right triangle. As $ABCD$ is a rectangle, triangles $BCA$, and $ABE$ are also right triangles. By $AA$, $\\triangle FBA \\sim \\triangle BCA$, and $\\triangle FBA \\sim \\triangle ABE$, so $\\triangle ABE \\sim \\triangle BCA$. This gives $\\frac {AE}{AB}= \\frac {AB}{BC}$. $AE=\\frac{AD}{2}$ and $BC=AD$, so $\\frac {AD}{2AB}= \\frac {AB}{AD}$, or $(AD)^2=2(AB)^2$, so $AD=AB \\sqrt{2}$, or $100 \\sqrt{2}$, so the answer is $\\boxed{141}$."
-}

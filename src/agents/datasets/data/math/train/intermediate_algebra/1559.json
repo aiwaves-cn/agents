@@ -1,6 +1,0 @@
-{
-    "problem": "Compute all values of $b$ for which the following system has a solution $(x,y)$ in real numbers:\n\\begin{align*}\n\\sqrt{xy} &= b^b, \\\\\n\\log_b (x^{\\log_b y}) + \\log_b (y^{\\log_b x}) &= 4b^4.\n\\end{align*}",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $m = \\log_b x$ and $n = \\log_b y.$  Then $x = b^m$ and $y = b^n.$  Substituting into the first equation, we get\n\\[\\sqrt{b^m \\cdot b^n} = b^b,\\]so $b^{m + n} = b^{2b},$ which implies $m + n = 2b.$\n\nThe second equation becomes\n\\[\\log_b (b^{mn}) + \\log_b (b^{mn}) = 4b^4,\\]so $2mn = 4b^4,$ or $mn = 2b^4.$\n\nBy the Trivial Inequality, $(m - n)^2 \\ge 0,$ so $m^2 - 2mn + n^2 \\ge 0,$ which implies\n\\[m^2 + 2mn + n^2 \\ge 4mn.\\]Then $(2b)^2 \\ge 8b^4,$ or $4b^2 \\ge 8b^4.$  Then $b^2 \\le \\frac{1}{2},$ so the set of possible values of $b$ is $\\boxed{\\left( 0, \\frac{1}{\\sqrt{2}} \\right]}.$"
-}

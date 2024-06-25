@@ -1,6 +1,0 @@
-{
-    "problem": "What digit is represented by $\\Delta$ if $144 / \\Delta = 1\\Delta$, with 1 the tens digit and $\\Delta$ the ones digit of the quotient?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Instead of representing the quotient as $1\\Delta$, we will represent it as $10 + \\Delta$. Our equation becomes $144/\\Delta = 10 + \\Delta$. Multiplying both sides by $\\Delta$, we have a quadratic: $144 = 10\\cdot\\Delta + \\Delta^2$. Rearranging the terms, we have $\\Delta^2 + 10\\cdot\\Delta - 144 = 0$. We can now factor this quadratic as $(\\Delta + 18)(\\Delta - 8) = 0$ or use the quadratic formula: $\\Delta = \\dfrac{-10 \\pm \\sqrt{10^2 - 4(1)(-144)}}{2} = -18 \\text{ or } 8$.\n\nSince $\\Delta$ is a digit, $\\Delta \\not = -18$. Therefore, $\\Delta = \\boxed{8}$."
-}

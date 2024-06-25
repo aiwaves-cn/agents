@@ -1,6 +1,0 @@
-{
-    "problem": "The operation $\\star$ is defined as $a \\star b = a^2 \\div b$. For how many integer values of $x$ will the value of $10 \\star x$ be a positive integer?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "If $10 \\star x = n$ a positive integer, then $10^2 = 100 = nx$. In other words, $x$ must be a positive integer divisor of 100. Since 100 factors as $100 = 2^2 \\cdot 5^2$, its exponents tell us that it has $(2+1)(2+1) = \\boxed{9}$ positive divisors."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In order to compute the area of a particular circle, Juan first measures the length of its diameter. The actual diameter is 20 cm, but Juan's measurement has an error of up to $20\\%$. What is the largest possible percent error, in percent, in Juan's computed area of the circle?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Juan can measure the diameter as a length anywhere between $20 - 20\\cdot 0.2 = 16$ and $20 + 20\\cdot 0.2 = 24$  cm. The actual area of the circle is $\\pi (20/2)^2=100\\pi$ square cm, but Juan can compute the area anywhere in the range $\\pi (16/2)^2=64 \\pi$ square cm to $\\pi (24/2)^2=144 \\pi$ square cm. Using the lower bound of the range, Juan's error is $(100\\pi - 64\\pi)/(100\\pi)=36\\%$. Using the upper bound of the range, Juan's error is $(144\\pi - 100\\pi)/(100\\pi)=44\\%$. Thus, the largest possible percent error is $\\boxed{44}$ percent."
-}

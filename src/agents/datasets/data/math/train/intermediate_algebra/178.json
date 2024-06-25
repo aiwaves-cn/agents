@@ -1,6 +1,0 @@
-{
-    "problem": "Solve $\\log_4 x + \\log_2 x^2 = 10$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Applying the logarithmic identities $\\log_a b^c=c\\log_a b$ and $\\log_{a^c} b=(1/c) \\log_a b$, we find \\begin{align*}\n10 &= \\log_4 x + \\log_2 x^2 \\\\\n&= \\log_4 x + 2 \\log_2 x \\\\\n&= \\log_{2^2} x + 2 \\log_2 x \\\\\n&= \\frac{1}{2} \\log_2 x + 2 \\log_2 x \\\\\n&= \\frac{5}{2} \\log_2 x.\n\\end{align*}Therefore, $\\log_2 x = 4$, which implies $x = 2^4 = \\boxed{16}$."
-}

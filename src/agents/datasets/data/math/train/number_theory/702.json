@@ -1,6 +1,0 @@
-{
-    "problem": "Determine the number of digits in the value of $2^{12} \\times 5^8 $.",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "$2^{12}\\times5^8=2^4\\times(2\\times5)^8=16\\times10^8$. $10^8$ has 9 digits, so $16\\times(10)^8$ has 10 digits (1, 6, and eight 0's). Therefore, there are $\\boxed{10}$ digits in the value of $2^{12}\\times5^8$."
-}

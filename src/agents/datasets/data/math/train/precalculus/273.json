@@ -1,6 +1,0 @@
-{
-    "problem": "Find the area of the region bounded by the graph of $r = \\sec \\theta,$ the graph of $r = \\csc \\theta,$ the $x$-axis, and the $y$-axis.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "If $r = \\sec \\theta = \\frac{1}{\\cos \\theta},$ then $x = r \\cos \\theta = 1.$  Thus, the graph of $r = \\sec \\theta$ is simply the line $x = 1.$\n\nIf $r = \\csc \\theta = \\frac{1}{\\sin \\theta},$ then $y = r \\sin \\theta = 1.$  Thus, the graph of $r = \\csc \\theta$ is simply the line $y = 1.$\n\n[asy]\nunitsize(2 cm);\n\nfill((0,0)--(1,0)--(1,1)--(0,1)--cycle,gray(0.7));\ndraw((-0.3,1)--(1.3,1),red);\ndraw((1,-0.3)--(1,1.3),red);\ndraw((-0.3,0)--(1.3,0));\ndraw((0,-0.3)--(0,1.3));\n[/asy]\n\nHence, the region we are interested in is simply the square with vertices $(0,0),$ $(1,0),$ $(1,1),$ and $(0,1),$ which has area $\\boxed{1}.$"
-}

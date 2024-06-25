@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $a_1,$ $a_2,$ $a_3,$ $\\dots$ satisfies $a_1 = 19,$ $a_9 = 99,$ and for all $n \\ge 3,$ $a_n$ is the arithmetic mean of the first $n - 1$ terms.  Find $a_2.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "For $n \\ge 3,$ we have that\n\\[a_n = \\frac{a_1 + a_2 + \\dots + a_{n - 1}}{n - 1},\\]or\n\\[(n - 1) a_n = a_1 + a_2 + \\dots + a_{n - 1}.\\]Likewise,\n\\[n a_{n + 1} = a_1 + a_2 + \\dots + a_{n - 1} + a_n.\\]Subtracting these equations, we get\n\\[n a_{n + 1} - (n - 1) a_n = a_n,\\]so $n a_{n + 1} = n a_n.$  Then $a_{n + 1} = a_n.$\n\nThis means that the terms $a_3,$ $a_4,$ $a_5,$ $\\dots$ are all equal.  In particular, $a_3 = 99,$ so\n\\[\\frac{19 + a_2}{2} = 99.\\]We find $a_2 = \\boxed{179}.$"
-}

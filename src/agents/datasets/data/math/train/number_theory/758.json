@@ -1,6 +1,0 @@
-{
-    "problem": "How many three-digit positive integers $x$ satisfy $3874x+481\\equiv 1205 \\pmod{23}$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We begin by replacing the coefficients and constants in the equation with their residues modulo 23. We find that 3874 divided by 23 gives a remainder of 10, 481 divided by 23 gives a remainder of 21, and 1205 gives a remainder of 9. So the given congruence is equivalent to  $$\n10x + 21 \\equiv 9 \\pmod{23}.\n$$Now add 2 to both sides to obtain $$\n10x \\equiv 11 \\pmod{23}.\n$$Notice that we have replaced 23 with 0 on the left-hand side, since $23\\equiv 0\\pmod{23}$. Now let us find the modular inverse of 10. We want to find an integer which is divisible by 10 and one more than a multiple of 23. Note that since the units digit of 23 is 3, the units digit of $3\\times 23$ is 9, so $3\\times 23+1$ is a multiple of 10.  Thus $(3\\times23+1)/10=7$ is the modular inverse of 10. Multiplying both sides of $10x \\equiv 11 \\pmod{23}$ by 7 gives $x\\equiv 77 \\pmod{23}$, which implies $x\\equiv 8\\pmod{23} $. So the three digit solutions are  \\begin{align*}\n8+23\\times 4 &= 100 \\\\\n8+23\\times 5 &= 123 \\\\\n&\\vdots \\\\\n8+23\\times 43 &= 997,\n\\end{align*}of which there are $\\boxed{40}$."
-}

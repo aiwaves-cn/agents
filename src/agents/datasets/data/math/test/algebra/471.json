@@ -1,6 +1,0 @@
-{
-    "problem": "For a positive integer $n$, the $n^{th}$ triangular number is $T(n)=\\dfrac{n(n+1)}{2}.$\n\nFor example, $T(3) = \\frac{3(3+1)}{2}= \\frac{3(4)}{2}=6$, so the third triangular number is 6.\n\nDetermine the smallest integer $b>2011$ such that $T(b+1)-T(b)=T(x)$ for some positive integer $x$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The left side of the equation, $T(b+1)-T(b)$, gives $$\\dfrac{(b+1)(b+2)}{2}-\\dfrac{b(b+1)}{2},$$which simplifies to $$\\dfrac{b^2+3b+2-b^2-b}{2}=\\dfrac{2b+2}{2}=b+1.$$That is, $b+1$ is equal to $T(x)$, a triangular number.\n\nSince $b>2011$, we are looking for the the smallest triangular number greater than 2012.\n\nAfter some trial and error, we observe that $T(62)=1953$ and $T(63)=2016$, and so $b+1=2016$ or $b=\\boxed{2015}$ is the smallest value that works."
-}

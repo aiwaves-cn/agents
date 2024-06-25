@@ -1,6 +1,0 @@
-{
-    "problem": "A triangle has sides measuring 1 unit and 3 units. The length of the third side is an integer value of units. What is the length of the third side, in units?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Call the length of the third side $n$. By the triangle inequality, $1+3>n$ and $1+n>3$, or $2<n<4$. The only integer $n$ which satisfies this is $\\boxed{3}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The deli has four kinds of bread, six kinds of meat, and five kinds of cheese. A sandwich consists of one type of bread, one type of meat, and one type of cheese. Ham, chicken, cheddar cheese, and white bread are each offered at the deli. If Al never orders a sandwich with a ham/cheddar cheese combination nor a sandwich with a white bread/chicken combination, how many different sandwiches could Al order?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "First, count the total number of possible sandwiches. There are four choices for bread, six for meat, and five for cheese, for a total of $4 \\cdot 6 \\cdot 5 = 120$ potential sandwiches. Discarding the ham / cheddar cheese combination will subtract four sandwiches (one for each type of bread). Similarly, discarding the white bread / chicken combination will subtract five sandwiches, one for each kind of cheese. Thus, Al can order $120 - 4 - 5 = \\boxed{111}$ different sandwiches."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For some positive integers $a$ and $b$, the product \\[\\log_a(a+1) \\cdot \\log_{a+1} (a+2) \\dotsm \\log_{b-2} (b-1)  \\cdot\\log_{b-1} b\\]contains exactly $870$ terms, and its value is $2.$ Compute $a+b.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By the change-of-base formula, the expression is equivalent to \\[\\frac{\\log (a+1)}{\\log a} \\cdot \\frac{\\log (a+2)}{\\log (a+1)} \\dotsm \\frac{\\log (b-1)}{\\log (b-2)} \\cdot \\frac{\\log b}{\\log (b-1)}.\\]Almost all the terms cancel, leaving just \\[\\frac{\\log b}{\\log a},\\]which equals $\\log_a b$ by the change-of-base formula again. Therefore, $\\log_a b = 2,$ so $b = a^2.$\n\nWe are given that the expression contains $870$ logarithms, so $(b-1) - a + 1 = 870,$ or $b-a=870.$ Substituting $b=a^2$ gives $a^2-a=870,$ or $a^2-a-870=0,$ which factors as $(a-30)(a+29)=0.$ Since $a$ must be positive, we have $a=30,$ and so $b=a^2=900.$ Thus, $a+b=30+900=\\boxed{930}.$"
-}

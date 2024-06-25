@@ -1,6 +1,0 @@
-{
-    "problem": "In how many different ways can four students stand in a straight line if two of the students refuse to stand next to each other?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We will count the number of ways in which the two students do stand next to each other and then subtract that from the total number of ways all four students can stand in a line without the restriction. If the two students stand next to each other, then we can treat them as a block. There are three blocks: two one-student blocks and one two-student block. We can arrange the blocks in $3!=6$ ways, and there are 2 ways to arrange the students within the two-student block, for a total of $6\\cdot2=12$ ways. The total number of ways to arrange all four students in a line without restrictions is $4!=24$ ways. Thus, the number of ways with the restriction is $24-12=\\boxed{12}$ ways."
-}

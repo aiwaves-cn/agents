@@ -1,6 +1,0 @@
-{
-    "problem": "When Joyce counts the pennies in her bank by fives, she has one left over. When she counts them by threes, there are two left over. What is the least possible number of pennies in the bank?",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "Let $a$ be the least number of pennies that Joyce could have in the bank. Then \\begin{align*}\na & \\equiv 1\\pmod 5\\\\\na & \\equiv 2\\pmod 3\n\\end{align*} The first few positive solutions to $a\\equiv 1\\pmod 5$ are $1,6,11$. Luckily, while the first two do not satisfy $a\\equiv 2\\pmod 3$, $\\boxed{11}$ does!"
-}

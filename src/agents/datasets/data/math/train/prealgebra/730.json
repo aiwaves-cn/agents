@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area of the parallelogram shown, in square feet?\n\n[asy]\ndraw((0,0)--(15,0)--(19,3)--(4,3)--cycle,linewidth(1));\ndraw((15,0)--(15,3),dashed);\ndraw((15,2.5)--(15.5,2.5)--(15.5,3));\nlabel(\"15 ft\",(7.5,0),S);\nlabel(\"3 ft\",(15,1.5),W);\nlabel(\"5 ft\",(17,1.5),SE);\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "The area of a parallelogram is $A = bh$, and since the base and height are both given, $A = 3\\mbox{ ft} \\times 15\\mbox{ ft} = \\boxed{45}$ square feet."
-}

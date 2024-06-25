@@ -1,6 +1,0 @@
-{
-    "problem": "Given $\\angle1+\\angle2=180^\\circ$ and $\\angle3=\\angle4,$ find $\\angle4.$ Express your answer in degrees. [asy]\n/* AMC8 1997 #12 Problem */\npair A=(0,0), B=(24,0), C=(48,0), D=(18,24), E=(12,48);\npen p=1mm+black;\ndraw(A--C);\ndraw(A--E);\ndraw(B--E);\ndraw(D--C);\nlabel(\"70\", A, NE);\nlabel(\"40\", shift(0,-7)*E, S);\nlabel(\"1\", B, NW);\nlabel(\"2\", B, NE);\nlabel(\"3\", shift(-4,0)*C, NW);\nlabel(\"4\", shift(1,-3)*D, SE);\ndraw(Circle((15,40), .5));\ndraw(Circle((5.3,3.8), .5));\n[/asy]",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "Since the sum of the angles of a triangle is $180^\\circ,$ $40^\\circ+70^\\circ+\\angle 1=180^\\circ$ and $\\angle 1=70^\\circ.$ This means that $\\angle 2=110^\\circ.$ Then $110^\\circ+\\angle 3+\\angle\n4=180^\\circ,$ so $\\angle 3+\\angle 4=70^\\circ$ and $\\angle 3=\\angle\n4=\\boxed{35^\\circ}.$ [asy]\n/* AMC8 1997 #12 Problem */\npair A=(0,0), B=(24,0), C=(48,0), D=(18,24), E=(12,48);\npen p=1mm+black;\ndraw(A--C);\ndraw(A--E);\ndraw(B--E);\ndraw(D--C);\nlabel(\"70\", A, NE);\nlabel(\"40\", shift(0,-7)*E, S);\nlabel(\"1\", B, NW);\nlabel(\"2\", B, NE);\nlabel(\"3\", shift(-4,0)*C, NW);\nlabel(\"4\", shift(1,-3)*D, SE);\ndraw(Circle((15,40), .5));\ndraw(Circle((5.3,3.8), .5));\n[/asy]"
-}

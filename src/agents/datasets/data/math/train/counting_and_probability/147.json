@@ -1,6 +1,0 @@
-{
-    "problem": "Two different natural numbers are selected from the set $\\ \\allowbreak \\{1, 2, 3, \\ldots, 6\\}$. What is the probability that the greatest common factor of these two numbers is one? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We consider all the two-element subsets of the six-element set $\\{ 1, 2, 3, 4, 5, 6 \\}$. There are ${6 \\choose 2} = 15$ such subsets. And of these, only the subsets $\\{ 2, 4 \\}, \\{2, 6 \\}, \\{3, 6 \\}, \\{ 4, 6 \\}$ are not relatively prime. So the probability of the two-element subset's elements having greatest common factor one is $1 - \\frac{4}{15} =\\boxed{ \\frac{11}{15}}$."
-}

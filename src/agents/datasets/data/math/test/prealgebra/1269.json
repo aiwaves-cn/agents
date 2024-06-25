@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all the positive two-digit integers where one of the digits is three times the other?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We have two cases:\n\n$\\bullet$  Case 1: The tens digit is three times the unit digit. In this case we have $31,$ $62,$ and $93.$\n\n$\\bullet$  Case 2: The unit digit is three times the tens digit. In this case we have $13,$ $26,$ and $39.$\n\nSum up the two cases: we have $31+62+93+13+26+39 = \\boxed{264}.$"
-}

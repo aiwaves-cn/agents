@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of an equation \\[\\sqrt{(x-3)^2 + (y+4)^2} + \\sqrt{(x+5)^2 + (y-8)^2} = 20.\\]is an ellipse. What is the distance between its foci?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $F_1 = (3, -4)$ and $F_2 = (-5, 8)$. Then, given a point $P = (x, y)$, we can rewrite the given equation as \\[PF_1 + PF_2 = 20\\]by the distance formula. Therefore, the ellipse has foci $F_1$ and $F_2$, and so the answer is \\[F_1F_2 = \\sqrt{(3+5)^2 + (-4-8)^2} = \\sqrt{8^2 + 12^2} = \\boxed{4\\sqrt{13}}.\\]"
-}

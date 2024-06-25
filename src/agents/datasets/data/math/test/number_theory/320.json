@@ -1,6 +1,0 @@
-{
-    "problem": "What integer $n$ satisfies $0\\le n<{101}$ and $$123456\\equiv n\\pmod {101}~?$$",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Notice that $100\\equiv-1\\pmod{101}$.  Therefore  \\[120000\\equiv-1200\\equiv12\\pmod{101}.\\]Likewise  \\[3400\\equiv-34\\pmod{101}.\\]Combining these lets us write  \\[123456\\equiv 12-34+56\\pmod{101}\\]or  \\[123456\\equiv\\boxed{34}\\pmod{101}.\\]"
-}

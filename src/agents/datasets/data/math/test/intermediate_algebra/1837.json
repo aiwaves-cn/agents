@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f$ be the function defined by $f(x) = x^3 - 49x^2 + 623x - 2015,$ and let $g(x) = f(x + 5).$  Compute the sum of the roots of $g.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a,$ $b,$ $c$ be the roots of $x^3 - 49x^2 + 623x - 2015.$  Then by Vieta's formulas, $a + b + c = 49.$\n\nThe roots of $g(x) = f(x + 5)$ are $a - 5,$ $b - 5,$ and $c - 5,$ and their sum is $a + b + c - 15 = 49 - 15 = \\boxed{34}.$"
-}

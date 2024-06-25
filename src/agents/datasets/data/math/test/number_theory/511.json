@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of $101_2$ and $1011_2$? Express your answer in base 2.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "The rules of addition work in base 2 as well as base 10.  Carry any sum greater than 1 to the next place value: \\[\n\\begin{array}{r@{}r@{}r@{}r@{}r}\n& \\text{\\scriptsize{1}\\hspace{0.3mm}} & \\text{\\scriptsize{1}\\hspace{0.3mm}} & \\text{\\scriptsize{1}\\hspace{0.3mm}} & \\phantom{1} \\\\\n& 1 & 0 & 1 & 1 \\\\\n+ & & 1 & 0 & 1 \\\\ \\hline\n1 & 0 & 0 & 0 & 0\n\\end{array}\n\\] The sum is $\\boxed{10000_2}$."
-}

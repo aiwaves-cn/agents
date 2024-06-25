@@ -1,6 +1,0 @@
-{
-    "problem": "$A, B, C, D,$ and $E$ are collinear in that order such that $AB = BC = 1, CD = 2,$ and $DE = 9$. If $P$ can be any point in space, what is the smallest possible value of $AP^2 + BP^2 + CP^2 + DP^2 + EP^2$?\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let the altitude from $P$ onto $AE$ at $Q$ have lengths $PQ = h$ and $AQ = r$. It is clear that, for a given $r$ value, $AP$, $BP$, $CP$, $DP$, and $EP$ are all minimized when $h = 0$. So $P$ is on $AE$, and therefore, $P = Q$. Thus, $AP$=r, $BP = |r - 1|$, $CP = |r - 2|$, $DP = |r - 4|$, and $EP = |r - 13|.$ Squaring each of these gives:\n$AP^2 + BP^2 + CP^2 + DP^2 + EP^2 = r^2 + (r - 1)^2 + (r - 2)^2 + (r - 4)^2 + (r - 13)^2 = 5r^2 - 40r + 190$\nThis reaches its minimum at $r = \\frac {40}{2\\cdot 5} = 4$, at which point the sum of the squares of the distances is $\\boxed{110}$."
-}

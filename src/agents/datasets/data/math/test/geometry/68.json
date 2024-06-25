@@ -1,6 +1,0 @@
-{
-    "problem": "Three congruent isosceles triangles $DAO$, $AOB$ and $OBC$ have $AD=AO=OB=BC=10$ and $AB=DO=OC=12$.  These triangles are arranged to form trapezoid $ABCD$, as shown.  Point $P$ is on side $AB$ so that $OP$ is perpendicular to $AB$.\n\n[asy]\n\npair A, B, C, D, O, P;\n\nA= (6, 8);\n\nB=(18, 8);\n\nC=(24, 0);\n\nD=(0,0);\n\nO=(12,0);\n\nP=(12,8);\n\ndraw(A--B--C--D--A);\n\ndraw(A--O--B);\n\ndraw(O--P, dashed);\n\nlabel(\"A\", A, NW);\n\nlabel(\"B\", B, NE);\n\nlabel(\"C\", C, SE);\n\nlabel(\"D\", D, SW);\n\nlabel(\"O\", O, S);\n\nlabel(\"P\", P, N);\n\nlabel(\"12\", (D+O)/2, S);\n\nlabel(\"12\", (O+C)/2, S);\n\nlabel(\"10\", (A+D)/2, NW);\n\nlabel(\"10\", (B+C)/2, NE);\n\n[/asy]\n\nWhat is the area of trapezoid $ABCD$?",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "Since $\\triangle AOB$ is isosceles with $AO=OB$ and $OP$ is perpendicular to $AB$, then $P$ is the midpoint of $AB$, so $AP=PB=\\frac{1}{2}AB=\\frac{1}{2}(12)=6$.  By the Pythagorean Theorem, $OP = \\sqrt{AO^2 - AP^2}=\\sqrt{10^2-6^2}=\\sqrt{64}={8}$.\n\nSince $ABCD$ is a trapezoid with height of length 8 ($OP$ is the height of $ABCD$) and parallel sides ($AB$ and $DC$) of length $12$ and $24$, then its area is \\[ \\frac{1}{2}\\times\\,\\mbox{Height}\\,\\times\\,\\mbox{Sum of parallel sides} = \\frac{1}{2}(8)(12+24)=\\boxed{144}. \\]"
-}

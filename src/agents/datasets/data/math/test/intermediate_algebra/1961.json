@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)$ be the polynomial of degree at most 8 such that\n\\[p(n) = \\frac{1}{n}\\]for $n = 1,$ 2, 3, $\\dots,$ 9.  Find $p(10).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $q(x) = xp(x) - 1.$  Then $q(x)$ has degree at most 9.  Also, $p(n) = n \\cdot p(n) - 1 = 0$ for $n = 1,$ 2, 3, $\\dots,$ 9, so\n\\[q(x) = c(x - 1)(x - 2) \\dotsm (x - 9)\\]for some constant $c.$\n\nWe know that $q(0) = 0 \\cdot p(0) - 1 = -1.$  Setting $x = 0$ in the equation above, we get\n\\[q(0) = -9! \\cdot c,\\]so $c = \\frac{1}{9!}.$  Hence,\n\\[q(x) = \\frac{(x - 1)(x - 2) \\dotsm (x - 9)}{9!}.\\]Then $q(10) = \\frac{9 \\cdot 8 \\dotsm 1}{9!} = 1,$ so\n\\[p(10) = \\frac{q(10) + 1}{10} = \\frac{2}{10} = \\boxed{\\frac{1}{5}}.\\]"
-}

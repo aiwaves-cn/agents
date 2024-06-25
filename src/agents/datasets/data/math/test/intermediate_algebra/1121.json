@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $(x_n)$ satisfies $x_0 = 3$ and\n\\[x_n = \\frac{1 + x_{n - 1}}{1 - x_{n - 1}}\\]for all $\\ge 1.$  Find $x_{12345}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We have that\n\\begin{align*}\nx_1 &= \\frac{1 + 3}{1 - 3} = -2, \\\\\nx_2 &= \\frac{1 + (-2)}{1 - (-2)} = -\\frac{1}{3}, \\\\\nx_3 &= \\frac{1 + (-1/3)}{1 - (-1/3)} = \\frac{1}{2}, \\\\\nx_4 &= \\frac{1 + 1/2}{1 - 1/2} = 3.\n\\end{align*}Since $x_4 = x_0 = 3,$ and each term depends only on the previous term, the sequence is periodic from here on, with a period of length 4.  Hence, $x_{12345} = x_1 = \\boxed{-2}.$"
-}

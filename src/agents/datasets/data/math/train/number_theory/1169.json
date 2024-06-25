@@ -1,6 +1,0 @@
-{
-    "problem": "Call an integer $n$ oddly powerful if there exist positive integers $a$ and $b$, where $b>1$, $b$ is odd, and $a^b = n$. How many oddly powerful integers are less than $2010$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let us first determine the number of cubes that are less than $2010$. We have $10^3 = 1000$, $11^3 = 1331$, and $12^3 = 1728$, but $13^3 = 2197$. So there are $12$ cubes less than $2010$. As for fifth powers, $4^5 = 1024$, but $5^5 = 3125$. There are $4$ fifth powers less than $2010$, but only $3$ of these have not already been included, since we've already counted 1. Analyzing seventh powers, $3^7 = 2187$, so the only new seventh power less than $2010$ is $2^7$. There are no new ninth powers since they are all cubes, and $2^{11} = 2048$ is greater than 2010. Therefore, there are $12+3+1 = \\boxed{16}$ oddly powerful integers less than $2010$."
-}

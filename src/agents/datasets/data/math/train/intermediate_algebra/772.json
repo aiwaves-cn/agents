@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $f(x)$ and $g(x)$ are functions which satisfy $f(g(x)) = x^2$ and $g(f(x)) = x^3$ for all $x \\ge 1.$  If $g(16) = 16,$ then compute $[g(4)]^3.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 4$ in $f(g(x)) = x^2,$ we get\n\\[f(g(4)) = 16.\\]Then\n\\[g(f(g(4)) = g(16) = 16.\\]But $g(f(g(4)) = [g(4)]^3,$ so $[g(4)]^3 = \\boxed{16}.$"
-}

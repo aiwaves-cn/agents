@@ -1,6 +1,0 @@
-{
-    "problem": "What is the positive difference between the probability of a fair coin landing heads up exactly 2 times out of 3 flips and the probability of a fair coin landing heads up 3 times out of 3 flips? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "The probability that a fair coin lands heads up exactly 2 times out of 3 flips is $p_1=\\binom{3}{2}(1/2)^2(1/2)=3/8$. The probability that a fair coin lands heads up 3 times out of 3 flips is $p_2=(1/2)^3=1/8$. Finally, we have $p_1-p_2=2/8=\\boxed{\\frac{1}{4}}$."
-}

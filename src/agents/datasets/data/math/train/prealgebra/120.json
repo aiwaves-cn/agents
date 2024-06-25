@@ -1,6 +1,0 @@
-{
-    "problem": "Roslyn has ten boxes. Six of the boxes contain pencils, three of the boxes contain pens, and two of the boxes contain both pens and pencils. How many boxes contain neither pens nor pencils?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "At first, we might think that there are $6+3=9$ boxes with pens or pencils.  However, this counts twice the 2 boxes with both pens and pencils, so we subtract 2 from our total to only count these boxes once.  That gives us $6+3-2=7$ boxes with pens or pencils, which leaves $10-7=\\boxed{3\\text{ boxes}}$ with neither."
-}

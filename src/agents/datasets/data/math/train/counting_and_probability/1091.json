@@ -1,6 +1,0 @@
-{
-    "problem": "There are positive integers that have these properties:\n\n$\\bullet$ I. The sum of the squares of their digits is $50,$ and\n\n$\\bullet$ II. Each digit is larger than the one on its left.\n\nWhat is the product of the digits of the largest integer with both properties?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "To meet the first condition, numbers which sum to $50$ must be chosen from the set of squares $\\{1, 4, 9, 16, 25, 36, 49\\}.$ To meet the second condition, the squares selected must be different. Consequently, there are three possibilities: $1+49,$ $1+4+9+36,$ and $9+16+25.$ These correspond to the integers $17,$ $1236,$ and $345,$ respectively. The largest is $1236,$ and the product of its digits is $1\\cdot2\\cdot3\\cdot6=\\boxed{36}.$"
-}

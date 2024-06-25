@@ -1,6 +1,0 @@
-{
-    "problem": "Ben is climbing a tree with a lot of branches. His height off the ground at time $t$ is $2t^2-5t+29$ feet. To the nearest foot, what will his minimum height be?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Completing the square, we get\n\\begin{align*}\n2t^2 - 5t + 29 &= 2 \\left( t^2 - \\frac{5}{2} t \\right) + 29 \\\\\n&= 2 \\left[ \\left( t - \\frac{5}{4} \\right)^2 - \\frac{5^2}{4^2} \\right] + 29 \\\\\n&= 2 \\left( t - \\frac{5}{4} \\right)^2 + \\frac{207}{8}.\n\\end{align*}Thus, the minimum height is $\\frac{207}{8}.$  To the nearest integer, this is $\\boxed{26}.$"
-}

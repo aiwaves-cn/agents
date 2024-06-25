@@ -1,6 +1,0 @@
-{
-    "problem": "Which digit is represented by $\\Theta$ if $252/\\Theta=\\underline{3\\Theta}+\\Theta$, where $\\underline{3\\Theta}$ represents a two-digit number with $3$ in the tens digit and $\\Theta$ in the ones digit?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Rewrite $\\underline{3\\Theta}+\\Theta$ as $30+\\Theta+\\Theta=30+2\\Theta$, so we have an algebraic expression we can manipulate. Multiply by $\\Theta$ to obtain: \\begin{align*}\n252/\\Theta&=30+2\\Theta\\quad\\Rightarrow\\\\\n252&=30\\Theta+2\\Theta^2\\quad\\Rightarrow\\\\\n0&=2\\Theta^2+30\\Theta-252\\quad\\Rightarrow\\\\\n0&=\\Theta^2+15\\Theta-126\\quad\\Rightarrow\\\\\n0&=(\\Theta+21)(\\Theta-6).\n\\end{align*}Or using the quadratic formula: \\begin{align*}\n\\Theta&=\\frac{-15\\pm\\sqrt{225-4\\cdot1\\cdot-126}}{2}\\quad\\Rightarrow\\\\\n&=\\frac{-15\\pm\\sqrt{729}}{2}\\quad\\Rightarrow\\\\\n&=\\frac{-15\\pm27}{2}\n\\end{align*}Either way, because $\\Theta$ must be a positive digit, $\\Theta=\\boxed{6}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b$ be two acute angles where $\\tan a = 5 \\tan b.$  Find the maximum possible value of $\\sin (a - b).$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Since $a$ and $b$ are acute, $\\tan a$ and $\\tan b$ are positive.  Also,\n\\[\\tan a = 5 \\tan b > \\tan b,\\]so $a > b.$  Thus, maximizing $\\sin (a - b)$ is equivalent to maximizing $a - b.$\n\nThen from the angle subtraction formula,\n\\[\\tan (a - b) = \\frac{\\tan a - \\tan b}{1 + \\tan a \\tan b} = \\frac{4 \\tan b}{1 + 5 \\tan^2 b}.\\]By AM-GM,\n\\[\\frac{1 + 5 \\tan^2 b}{4 \\tan b} \\ge \\frac{2 \\sqrt{5} \\tan b}{4 \\tan b} = \\frac{\\sqrt{5}}{2},\\]so\n\\[\\tan (a - b) \\le \\frac{2}{\\sqrt{5}}.\\]Equality occurs when $\\tan b = \\frac{1}{\\sqrt{5}}$ and $\\tan a = \\sqrt{5}.$\n\nIf we construct a right triangle, with angle $\\theta,$ where the adjacent side is $\\sqrt{5}$ and the opposite side is 2, then $\\tan \\theta = \\frac{2}{\\sqrt{5}}.$\n\n[asy]\nunitsize (1 cm);\n\ndraw((0,0)--(sqrt(5),0)--(sqrt(5),2)--cycle);\n\nlabel(\"$\\sqrt{5}$\", (sqrt(5)/2,0), S);\nlabel(\"$3$\", (sqrt(5)/2,1), NW);\nlabel(\"$2$\", (sqrt(5),1), E);\nlabel(\"$\\theta$\", (0.6,0.2));\n[/asy]\n\nBy Pythagoras, the hypotenuse is 3, so $\\sin \\theta = \\boxed{\\frac{2}{3}}.$"
-}

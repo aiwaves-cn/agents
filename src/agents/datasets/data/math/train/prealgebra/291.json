@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify $\\frac{84}{144}.$",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "First, we find the greatest common factor of $84$ and $144$ by factoring $84$ and $144,$ then multiplying the common factors. To factor $84$ and $144,$ we use tables. The first entry in the left column of such a table is the number you are trying to factor. The smallest prime factor goes in the right column, and the next number in the left column is the quotient of those two numbers. We then continue this method until there is a $1$ in the left column. Then the prime factorization is the right column, with the exponent of each factor being the number of times it appears.\n\n$$\\begin{array}{c|ccc|c} 84&2&\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ &144&2\\\\42&2&&72&2\\\\21&3&&36&2\\\\7&7&&18&2\\\\1&&&9&3\\\\&&&3&3\\\\\\ &&&1& \\end{array} \\\\ \\\\ \\\\\n84=2^2\\cdot 3\\cdot 7\\ \\ \\ 144=2^4\\cdot3^2$$The greatest common factor is then $2^2\\cdot3=12,$ so we divide both numerator and denominator by $12$ to get $\\frac{84}{144}=\\boxed{\\frac{7}{12}}.$"
-}

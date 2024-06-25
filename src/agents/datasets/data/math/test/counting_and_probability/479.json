@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that I have 6 different books, 2 of which are math books.  In how many ways can I stack my 6 books on a shelf if I want a math book on both ends of the stack?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "We first place the math books.  We have two choices for the bottom book, and then the only one remaining choice for the top book which is the other math book.  Then we place the four other books in the middle.  There are 4 choices for the first book, 3 choices for the second, 2 choices for the third, and only 1 choice for the fourth.  So the total number of ways the books can be placed is $2 \\times 1 \\times 4 \\times 3 \\times 2 \\times 1 = \\boxed{48}$."
-}

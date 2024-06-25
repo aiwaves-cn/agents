@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[f(x + y) = f(x) f(y)\\]for all real numbers $x$ and $y.$  Find all possible values of $f(0).$\n\nEnter all the possible values, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = y = 0,$ we get\n\\[f(0) = f(0)^2,\\]so $f(0) = 0$ or $f(0) = 1.$  The constant functions $f(x) = 0$ and $f(x) = 1$ show that both $\\boxed{0,1}$ are possible values of $f(x).$"
-}

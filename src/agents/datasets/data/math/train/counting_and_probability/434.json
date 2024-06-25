@@ -1,6 +1,0 @@
-{
-    "problem": "How many non-empty subsets of $\\{ 1 , 2, 3, 4, 5, 6, 7, 8 \\}$ consist entirely of odd numbers?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We consider the subset $\\{ 1, 3, 5, 7 \\}$ which consists only of the odd integers in the original set. Any subset consisting entirely of odd numbers must be a subset of this particular subset. And, there are $2^4 - 1 = \\boxed{15}$ non-empty subsets of this 4-element set, which we can easily see by making the choice of including or not including each element."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$ is a number between 0 and 1, which of the following represents the smallest value?\n\nA). $x$\nB). $x^2$\nC). $2x$\nD). $\\sqrt{x}$\nE). $\\frac{1}{x}$\n\nExpress your answer as A, B, C, D, or E.",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Since $0 < x < 1,$\n\\[x^2 < x < 2x,\\]and $x^2 < x < \\sqrt{x}$ and $x < 1 < \\frac{1}{x}.$  Therefore, the smallest number is always $x^2,$ and the answer is $\\boxed{\\text{B}}.$"
-}

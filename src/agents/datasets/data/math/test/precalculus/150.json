@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A = (-4,5,-17)$ and $B = (34,15,5).$  Let $P$ be the set of points in space such that triangle $ABP$ is equilateral.  The set of points $P$ in space that satisfy this condition traces a curve.  Find the total length of this curve.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Note that $AB = \\sqrt{38^2 + 10^2 + 22^2} = 26 \\sqrt{3}.$  Let $O$ be the midpoint of $\\overline{AB}.$\n\n[asy]\nunitsize(1.5 cm);\n\npair A, B, P;\n\nA = (-1,0);\nB = (1,0);\nP = (0,sqrt(3));\n\ndraw(A--B--P--cycle);\ndraw(yscale(sqrt(3))*xscale(0.4)*Circle((0,0),1),dashed);\ndraw(P--(A + B)/2);\n\nlabel(\"$A$\", A, W);\nlabel(\"$B$\", B, E);\nlabel(\"$P$\", P, N);\n\ndot(\"$O$\", (A + B)/2, S);\n[/asy]\n\nThen $AO = 13 \\sqrt{3}.$  The set of points $P$ such that triangle $ABP$ is equilateral is a circle, centered at $O$ with radius\n\\[OP = AO \\sqrt{3} = 39.\\]The circumference of this circle is then $2 \\pi \\cdot 39 = \\boxed{78 \\pi}.$"
-}

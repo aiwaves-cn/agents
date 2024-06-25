@@ -1,6 +1,0 @@
-{
-    "problem": "A bin has 5 white balls and $k$ black balls in it, where $k$ is an unknown positive integer.  A ball is drawn at random from the bin.  If a white ball is drawn, the player wins 1 dollar, but if a black ball is drawn, the player loses 1 dollar.  If the expected $\\textit{loss}$ for playing the game is 50 cents, then what is $k$?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are 5 white balls and $5+k$ total balls, so the probability that a white ball is drawn is $\\dfrac{5}{5+k}$.  Similarly, the probability that a black ball is drawn is $\\dfrac{k}{5+k}$.  So  \\[ E = \\frac{5}{5+k}(1) + \\frac{k}{5+k}(-1) = -\\frac{1}{2}. \\] Multiply both sides of the equation by $2(5+k)$ to get $10 - 2k = -5 -k$, and we see that $\\boxed{k = 15}$."
-}

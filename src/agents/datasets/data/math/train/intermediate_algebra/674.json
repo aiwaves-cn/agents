@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $x + y + z = 1.$  Find the minimum value of\n\\[\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-HM,\n\\[\\frac{x + y + z}{3} \\ge \\frac{3}{\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z}}.\\]Hence,\n\\[\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} \\ge \\frac{9}{x + y + z} = 9.\\]Equality occurs when $x = y = z = \\frac{1}{3},$ so the minimum value is $\\boxed{9}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Two friends are playing tic-tac-toe. If Amy wins $\\frac{3}{8}$ of the time, Lily wins $\\frac{3}{10}$ of the time, and they tie the rest of the time, then what fraction of the time do they tie?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "We first find the fraction of the time that either Amy or Lily wins by adding $\\frac{3}{8} + \\frac{3}{10}$. Since the least common multiple of $8$ and $10$ is $40$, we write $\\frac{3}{8} \\cdot \\frac{5}{5} = \\frac{15}{40}$ and $\\frac{3}{10} \\cdot \\frac{4}{4} = \\frac{12}{40}$, so our sum is: $$\\frac{3}{8} + \\frac{3}{10} = \\frac{15}{40} + \\frac{12}{40} = \\frac{15+12}{40} = \\frac{27}{40}.$$Since they tie the rest of the time, to find the fraction of the time that they tie, we need to subtract this fraction from $1$. We know that $1 = \\frac{40}{40}$, so we have that $$1 - \\frac{27}{40} = \\frac{40}{40} - \\frac{27}{40} = \\frac{40-27}{40} = \\frac{13}{40}.$$Therefore, Amy and Lily must tie $\\boxed{\\frac{13}{40}}$ of the time."
-}

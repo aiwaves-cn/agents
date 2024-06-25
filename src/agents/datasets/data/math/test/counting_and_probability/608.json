@@ -1,6 +1,0 @@
-{
-    "problem": "5 white balls and $k$ black balls are placed into a bin.  Two of the balls are drawn at random.  The probability that one of the drawn balls is white and the other is black is $\\frac{10}{21}$.  Find the smallest possible value of $k$.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The number of ways to choose one white ball and one black ball is $5k$, since there are 5 choices for the white ball and $k$ choices for the black ball.  The number of ways to pick any 2 balls out of $(k+5)$ balls is $\\dbinom{k+5}{2}=\\dfrac{(k+5)(k+4)}{2}$.  So we have to solve for $k$ in the equation \\[\\frac{5k}{\\frac{(k+5)(k+4)}{2}}=\\frac{10}{21}.\\]After clearing the denominators, we can simplify to $210k = 10(k+5)(k+4)$, giving the quadratic $10k^2 - 120k + 200 = 0$.  This is the same as $k^2 - 12k + 20 = 0$, which factors as $(k-2)(k-10)=0$, so its solutions are $k={2}$ or $k={10}$. Since the problem is asking for the smallest value, $\\boxed{2}$ is the correct answer."
-}

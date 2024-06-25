@@ -1,6 +1,0 @@
-{
-    "problem": "Determine if the graph of the equation below is a parabola, circle, ellipse, hyperbola, point, line, two lines, or empty.\n\n$\\left(\\frac x2 - 3\\right)^2 + y^2 = 10$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "This looks like the equation of a circle, but we have replaced $x$ with $\\frac x2$. So, we suspect this equation defines an $\\boxed{\\text{ellipse}}$. To verify this we write \\[\\left(\\frac x2 - 3\\right)^2 = \\frac 14 \\left( x - 6\\right)^2,\\]and we see that the equation \\[ \\frac{\\left(x - 6 \\right)^2}{4} + y^2 = 10 \\]is the equation of an ellipse."
-}

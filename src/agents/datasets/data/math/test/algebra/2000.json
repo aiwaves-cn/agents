@@ -1,6 +1,0 @@
-{
-    "problem": "Janaina is trying to solve the following equation by completing the square: $$x^2+18x-9 = 0.$$She successfully rewrites the above equation in the following form: $$(x + b)^2 = c,$$where $b$ and $c$ are integers. What is the value of $c$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We rewrite the equation as follows, trying to create a square of a binomial on the left side: \\begin{align*}\nx^2 + 18x - 9 &= 0\\\\\nx^2 + 18x + 81 &= 90\\\\\n(x + 9)^2 &= 90.\n\\end{align*}We see that this clearly works, and $c = \\boxed{90}.$"
-}

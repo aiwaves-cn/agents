@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest multiple of 3 that is less than 500 and is also a multiple of 4?",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "Since 3 and 4 are relatively prime, the problem amounts to finding the greatest multiple of $3\\cdot4=12$ less than 500. Since $500\\div12=41R8$, our answer is $12\\cdot41=\\boxed{492}$."
-}

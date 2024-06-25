@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ be unit vectors such that $\\mathbf{a} \\cdot \\mathbf{b} = \\mathbf{a} \\cdot \\mathbf{c} = 0,$ and the angle between $\\mathbf{b}$ and $\\mathbf{c}$ is $\\frac{\\pi}{4}.$  Then\n\\[\\mathbf{a} = k (\\mathbf{b} \\times \\mathbf{c})\\]for some constant $k.$  Enter all the possible values of $k,$ separated by commas.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "First, note that since $\\mathbf{a}$ is orthogonal to both $\\mathbf{b}$ and $\\mathbf{c},$ $\\mathbf{a}$ is a scalar multiple of their cross product $\\mathbf{b} \\times \\mathbf{c}.$  Furthermore,\n\\[\\|\\mathbf{b} \\times \\mathbf{c}\\| = \\|\\mathbf{b}\\| \\|\\mathbf{c}\\| \\sin \\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}.\\]Hence,\n\\[\\|\\mathbf{a}\\| = \\| k (\\mathbf{b} \\times \\mathbf{c}) \\| = \\frac{|k|}{\\sqrt{2}}.\\]But $\\mathbf{a}$ is a unit vector, so the possible values of $k$ are $\\boxed{\\sqrt{2}, -\\sqrt{2}}.$"
-}

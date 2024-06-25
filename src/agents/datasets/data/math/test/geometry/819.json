@@ -1,6 +1,0 @@
-{
-    "problem": "Find $AX$ in the diagram if $CX$ bisects $\\angle ACB$. [asy]\nimport markers;\n\nreal t=1-.32;\npair A=(-4.07,0);\npair B=(40.008,0);\npair C=(0,20.616);\npair X=t*A+(1-t)*B;\n\ndraw(C--A--B--C--X);\n\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,E);\nlabel(\"$C$\",C,N);\nlabel(\"$X$\",X,S);\n\n//markangle(n=1,radius=15,A,C,X,marker(markinterval(stickframe(n=1),true)));\n//markangle(n=1,radius=15,X,C,B,marker(markinterval(stickframe(n=1),true)));\n\nlabel(\"$30$\",.5*(B+X),S);\nlabel(\"$45$\",.5*(B+C),NE);\nlabel(\"$21$\",.5*(A+C),NW);\n[/asy]",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The Angle Bisector Theorem tells us that  \\[\\frac{AC}{AX}=\\frac{BC}{BX}\\]so \\[AX=\\frac{AC\\cdot BX}{BC}=\\frac{21\\cdot30}{45}=\\boxed{14}.\\]"
-}

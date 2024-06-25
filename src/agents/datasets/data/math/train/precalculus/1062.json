@@ -1,6 +1,0 @@
-{
-    "problem": "In triangle $ABC,$ $b = 5,$ $c = 4,$ and $\\cos (B - C) = \\frac{31}{32}.$  Find $a.$\n\nNote: $a$ is the side length opposite $\\angle A,$ etc.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "By the Law of Cosines,\n\\[a^2 = 5^2 + 4^2 - 2 \\cdot 5 \\cdot 4 \\cos A = 41 - 40 \\cos A.\\]In general, $\\cos (B - C) - \\cos (B + C) = 2 \\sin B \\sin C.$  We know $\\cos (B - C) = \\frac{31}{32}$ and\n\\[\\cos (B + C) = \\cos (180^\\circ - A) = -\\cos A.\\]By the Law of Sines,\n\\[\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C},\\]so $\\sin B = \\frac{5 \\sin A}{a}$ and $\\sin C = \\frac{4 \\sin A}{a}.$  Hence,\n\\[\\frac{31}{32} + \\cos A = \\frac{40 \\sin^2 A}{a^2}.\\]Then\n\\[\\frac{31}{32} + \\cos A = \\frac{40 (1 - \\cos^2 A)}{41 - 40 \\cos A}.\\]This simplifies to $\\cos A = \\frac{1}{8}.$  Then\n\\[a^2 = 41 - 40 \\cos A = 36,\\]so $a = \\boxed{6}.$"
-}

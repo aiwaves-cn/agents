@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all the positive two-digit integers where one of the digits is four times the other?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "The only such possible two-digit integers will be composed with either a 1 and a 4 or a 2 and an 8. So, we simply want to compute $14+41+28+82$. Adding the first two and the last two in pairs gives $55 + 110$, which is easily computed to be $\\boxed{165}$."
-}

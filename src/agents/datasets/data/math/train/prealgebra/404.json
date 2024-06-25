@@ -1,6 +1,0 @@
-{
-    "problem": "Line $m$ is parallel to line $n$ and the measure of $\\angle 1$ is $\\frac 18$ the measure of $\\angle 2$. What is the degree measure of $\\angle 5$? [asy] size(100); defaultpen(linewidth(0.7)+fontsize(9));\npath m = (-1.35,0.72)--(0.45,0.72), n = (-1,0)--(1,0), k = (-0.67,1.09)--(0.27,-0.48);\n\npair A = intersectionpoints(m,k)[0], B = intersectionpoints(n,k)[0];\ndraw(m,Arrows(4)); draw(n,Arrows(4)); draw(k,Arrows(4));\n\nlabel(\"$k$\",(0.27,-0.48),SE); label(\"$n$\",(1,0),NE); label(\"$m$\",(0.45,0.72),NE);\nlabel(\"$1$\",A,(-2.5,1.5));\nlabel(\"$2$\",B,(1,1));\nlabel(\"$3$\",B,(-2.5,1.5));\nlabel(\"$4$\",B,(-1,-1));\nlabel(\"$5$\",B,(2.5,-1.5));\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Let $x$ be the measure of $\\angle 1$, so $8x$ is the measure of $\\angle 2$.  Since $m\\parallel n$, we have $\\angle 5 = \\angle 1 = x$.  Since $\\angle 2$ and $\\angle 5$ together form a straight line, we have $\\angle 2 + \\angle 5 = 180^\\circ$, so $x+8x=180^\\circ$.  This gives us $9x = 180^\\circ$, so $x= \\boxed{20^\\circ}$."
-}

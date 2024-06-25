@@ -1,6 +1,0 @@
-{
-    "problem": "If $n$ is a positive integer, then let $f(n)$ be the sum of the digits of $\\frac{1}{5^{{}^n}}$ that are to the right of the decimal point. What is the smallest positive integer $n$ such that $f(n) > 10$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The sum of the digits of $\\frac{1}{5^{{}^n}}$ that are to the right of the decimal point is the sum of the digits of the integer $\\frac{10^n}{5^{{}^n}} = 2^n$, since multiplying by $10^n$ simply shifts all the digits $n$ places to the left. As a result, we start computing powers of 2, looking for an integer which has digits summing to a number greater than 10. \\begin{align*}\n2^1 &= 2 \\\\\n2^2 &= 4 \\\\\n2^3 &= 8 \\\\\n2^4 &= 16 \\\\\n2^5 &= 32 \\\\\n2^6 &= 64 \\\\\n2^7 &= 128\n\\end{align*}The sum of the digits in 128 is 11. The smallest positive integer $n$ such that the sum of the digits of $\\frac{1}{5^{{}^n}}$ that are to the right of the decimal point is greater than 10 is $n = \\boxed{7}$."
-}

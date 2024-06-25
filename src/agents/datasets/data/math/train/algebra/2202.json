@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $\\left\\lceil\\sqrt{\\frac{9}{4}}\\right\\rceil+\\left\\lceil\\frac{9}{4}\\right\\rceil+\\left\\lceil\\left(\\frac{9}{4}\\right)^2\\right\\rceil$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The equation can be rewritten as $\\left\\lceil\\frac{3}{2}\\right\\rceil+\\left\\lceil\\frac{9}{4}\\right\\rceil+\\left\\lceil\\frac{81}{16}\\right\\rceil$. The smallest integer greater than $\\frac{3}{2}$ is $2$. The smallest integer greater than $\\frac{9}{4}$ is $3$. The smallest integer greater than $\\frac{81}{16}$ is $6$. Therefore $2+3+6=\\boxed{11}$."
-}

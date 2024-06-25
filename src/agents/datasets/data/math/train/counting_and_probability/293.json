@@ -1,6 +1,0 @@
-{
-    "problem": "William is taking the 25-question, multiple choice American Mathematics Competition. Each question has five answer choices. William guesses random answers for the last four questions. What is the probability that he will get at least one of these final four questions right?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We find the probability that William misses the last four questions, and subtract from 1. The probability of William missing a question is $\\frac{4}{5}$, so the probability that he misses all four is $\\left(\\frac{4}{5}\\right)^4 = \\frac{256}{625}$. The probability that he gets at least one right is $1-\\frac{256}{625} =\\boxed{\\frac{369}{625}}$."
-}

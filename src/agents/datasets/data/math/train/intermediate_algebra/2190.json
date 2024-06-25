@@ -1,6 +1,0 @@
-{
-    "problem": "Two circles of radius $r$ are externally tangent to each other and internally tangent to the ellipse $x^2 + 5y^2 = 6,$ as shown below. Find $r.$\n[asy]\nsize(7cm);\ndraw(scale(sqrt(6), sqrt(6)/sqrt(5))* unitcircle);\ndraw((0,-1.5)--(0,1.7),EndArrow);\ndraw((-3,0)--(3,0),EndArrow);\ndraw(Circle( (sqrt(0.96),0), sqrt(0.96) ));\ndraw(Circle( (-sqrt(0.96),0), sqrt(0.96) ));\nlabel(\"$x$\",(3,0),E);label(\"$y$\",(0,1.7),N);\n[/asy]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By symmetry, the two circles are tangent to each other at the origin $(0,0).$ Therefore, their centers are at the points $(\\pm r, 0).$ In particular, the circle on the right has the equation \\[(x-r)^2 + y^2 = r^2.\\]We solve this equation simultaneously with $x^2 + 5y^2 = 6.$ Multiplying the first equation by $5$ and subtracting the second equation gives \\[[5(x-r)^2 + 5y^2] - [x^2+5y^2] = 5r^2 - 6,\\]or \\[4x^2 - 10xr + 5r^2 = 5r^2 - 6.\\]Thus, \\[4x^2 - 10xr + 6 = 0.\\]Since the circle on the right and ellipse intersect in two points with the same $x$-coordinate, this quadratic must have exactly one solution for $x.$ Therefore, the discriminant must be zero: \\[(10r)^2 - 4 \\cdot 4 \\cdot 6 = 0.\\]The positive solution for $r$ is $r = \\boxed{\\frac{2\\sqrt6}{5}}.$"
-}

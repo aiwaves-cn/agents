@@ -1,6 +1,0 @@
-{
-    "problem": "Remove the integers which are congruent to 3 (mod 7) from the following list of five integers, and sum the integers that remain. $$\n85 \\qquad 49,\\!479 \\qquad -67 \\qquad 12,\\!000,\\!003 \\qquad -3\n$$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Recall that $a\\equiv 3 \\pmod{7}$ if and only if $a-3$ is divisible by 7. Subtracting 3 from every element in the list gives  $$\n82 \\qquad 49,\\!476 \\qquad -70 \\qquad 12,\\!000,\\!000 \\qquad -6\n$$By dividing, we can see that 82 and $-6$ are not divisible by 7, whereas $-70$ and $49,\\!476$ are divisible by 7. To see that $12,\\!000,\\!000$ is not divisible by 7, note that its prime factorization is $(12)(10^6)=(2^2\\cdot 3)(2\\cdot 5)^6 = 2^8\\cdot 3\\cdot 5^6$. So, after striking off the numbers which are congruent to 3 (mod 7), the original list becomes $$\n85 \\qquad \\cancel{49,\\!479} \\qquad \\cancel{-67} \\qquad 12,\\!000,\\!003 \\qquad -3\n$$The sum of the remaining integers is $\\boxed{12,\\!000,\\!085}$."
-}

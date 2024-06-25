@@ -1,6 +1,0 @@
-{
-    "problem": "Find $a$ such that $ax^2+12x+9$ is the square of a binomial.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "The square of the binomial $rx+s$ is  \\[(rx+s)^2=r^2x^2+2rsx+s^2.\\]If this is equal to $ax^2+12x+9$, then $s$ must be either 3 or $-3$.  Since $(rx+s)^2=(-rx-s)^2$, we may choose either $s=3$ or $s=-3$, and the solution will be the same.  We choose $s=3$.\n\nThe square of $rx+3$ is  \\[(rx+3)^2=r^2x^2+6rx+9.\\]If this is equal to $ax^2+12x+9$ then we must have $12=6r$ or $r=2$.  This gives our square: \\[\\left(2x+3\\right)^2=4x^2+12x+9.\\]Therefore $a=\\boxed{4}$."
-}

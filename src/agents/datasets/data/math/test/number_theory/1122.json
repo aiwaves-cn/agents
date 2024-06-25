@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ and $b$ are integers such that $ab\\equiv 17\\pmod{20}$, then what is the remainder when $(a+10)(b+10)$ is divided by $20$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We begin by expanding $(a+10)(b+10)$ out: \\begin{align*}\n(a+10)(b+10) &= a(b+10) + 10(b+10) \\\\\n&= ab+10a + 10b+100 \\\\\n&= ab+10(a+b)+100.\n\\end{align*}This is congruent modulo $20$ to $ab+10(a+b)$.\n\nNow we observe that $ab$ is $17$ more than a multiple of $20$, so $ab$ is odd, which means $a$ and $b$ must each be odd. Therefore, $a+b$ is even, so $10(a+b)$ is a multiple of $20$. It follows that $$ab+10(a+b) \\equiv ab \\equiv \\boxed{17}\\pmod{20}.$$"
-}

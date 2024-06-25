@@ -1,6 +1,0 @@
-{
-    "problem": "Let $(a_1,a_2,a_3,\\ldots,a_{12})$ be a permutation of $(1,2,3,\\ldots,12)$ for which\n$a_1>a_2>a_3>a_4>a_5>a_6 \\mathrm{\\  and \\ } a_6<a_7<a_8<a_9<a_{10}<a_{11}<a_{12}.$\nAn example of such a permutation is $(6,5,4,3,2,1,7,8,9,10,11,12).$ Find the number of such permutations.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Clearly, $a_6=1$. Now, consider selecting $5$ of the remaining $11$ values. Sort these values in descending order, and sort the other $6$ values in ascending order. Now, let the $5$ selected values be $a_1$ through $a_5$, and let the remaining $6$ be $a_7$ through ${a_{12}}$. It is now clear that there is a bijection between the number of ways to select $5$ values from $11$ and ordered 12-tuples $(a_1,\\ldots,a_{12})$. Thus, there will be ${11 \\choose 5}=\\boxed{462}$ such ordered 12-tuples."
-}

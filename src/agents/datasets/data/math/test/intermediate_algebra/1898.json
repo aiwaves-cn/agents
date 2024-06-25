@@ -1,6 +1,0 @@
-{
-    "problem": "Find the product $CD$ of the integers $C$ and $D$ for which\n\\[\\frac{C}{x-3}+\\frac{D}{x+8}=\\frac{4x-23}{x^2+5x-24}\\]for all real values of $x$ except $-8$ and $3$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "First, we factor the denominator in the right-hand side, to get \\[\\frac{C}{x - 3} + \\frac{D}{x + 8} = \\frac{4x - 23}{(x - 3)(x + 8)}.\\]We then multiply both sides by $(x - 3)(x + 8)$, to get \\[C(x + 8) + D(x - 3) = 4x - 23.\\]We can solve for $C$ and $D$ by substituting suitable values of $x$.  For example, setting $x = 3$, we get $11C = -11$, so $C = -1$.  Setting $x = -8$, we get $-11D = -55$, so $D = 5$.  (This may not seem legitimate, because we are told that the given equation holds for all $x$ except $-8$ and $3.$  This tells us that the equation $C(x + 8) + D(x - 3) = 4x - 23$ holds for all $x$, except possibly $-8$ and 3.  However, both sides of this equation are polynomials, and if two polynomials are equal for an infinite number of values of $x$, then the two polynomials are equal for all values of $x$.  Hence, we can substitute any value we wish to into this equation.)\n\nTherefore, $CD = (-1) \\cdot 5 = \\boxed{-5}$."
-}

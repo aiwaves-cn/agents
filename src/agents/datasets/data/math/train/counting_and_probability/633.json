@@ -1,6 +1,0 @@
-{
-    "problem": "23 people attend a party. Each person shakes hands with at most 22 other people. What is the maximum possible number of handshakes, assuming that any two people can shake hands at most once?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "Note that if each person shakes hands with every other person, then the number of handshakes is maximized. There are $\\binom{23}{2} = \\frac{(23)(22)}{2} = (23)(11) = 230+23 = \\boxed{253}$ ways to choose two people to form a handshake."
-}

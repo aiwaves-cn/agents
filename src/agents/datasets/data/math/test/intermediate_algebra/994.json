@@ -1,6 +1,0 @@
-{
-    "problem": "For each real number $x$, let $\\lfloor x \\rfloor$ denote the greatest integer that does not exceed $x$. For how many positive integers $n$ is it true that $n<1000$ and that $\\lfloor \\log_{2} n \\rfloor$ is a positive even integer?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "If $\\lfloor \\log_2 n \\rfloor = k$ for some integer $k$, then $k \\le \\log_2 n < k+1$. Converting to exponential form, this becomes $2^k \\le n < 2^{k+1}$. Therefore, there are $(2^{k+1}-1) - 2^k + 1 = 2^k$ values of $n$ such that $\\lfloor \\log_2 n \\rfloor = k$.\n\nIt remains to determine the possible values of $k$, given that $k$ is positive and even. Note that $k$ ranges from $\\lfloor \\log_2 1 \\rfloor = 0$ to $\\lfloor \\log_2 999 \\rfloor = 9$. (We have $\\lfloor \\log_2 999 \\rfloor = 9$ because $2^9 \\le 999 < 2^{10}.$) Therefore, if $k$ is a positive even integer, then the possible values of $k$ are $k = 2, 4, 6, 8$. For each $k$, there are $2^k$ possible values for $n$, so the answer is \\[2^2 + 2^4 + 2^6 + 2^8 = \\boxed{340}.\\]"
-}

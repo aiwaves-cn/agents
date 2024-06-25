@@ -1,6 +1,0 @@
-{
-    "problem": "The number $r$ can be expressed as a four-place decimal $0.abcd,$ where $a, b, c,$ and $d$ represent digits, any of which could be zero. It is desired to approximate $r$ by a fraction whose numerator is 1 or 2 and whose denominator is an integer. The closest such fraction to $r$ is $\\frac 27.$ What is the number of possible values for $r$?\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The nearest fractions to $\\frac 27$ with numerator $1$ are $\\frac 13, \\frac 14$; and with numerator $2$ are $\\frac 26, \\frac 28 = \\frac 13, \\frac 14$ anyway. For $\\frac 27$ to be the best approximation for $r$, the decimal must be closer to $\\frac 27 \\approx .28571$ than to $\\frac 13 \\approx .33333$ or $\\frac 14 \\approx .25$.\nThus $r$ can range between $\\frac{\\frac 14 + \\frac{2}{7}}{2} \\approx .267857$ and $\\frac{\\frac 13 + \\frac{2}{7}}{2} \\approx .309523$. At $r = .2679, .3095$, it becomes closer to the other fractions, so $.2679 \\le r \\le .3095$ and the number of values of $r$ is $3095 - 2679 + 1 = \\boxed{417}$."
-}

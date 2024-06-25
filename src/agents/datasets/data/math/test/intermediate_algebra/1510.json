@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d$ be distinct complex numbers such that $|a| = |b| = |c| = |d| = 1$ and $a + b + c + d = 0.$  Find the maximum value of\n\\[|(a + b)(a + c)(a + d)(b + c)(b + d)(c + d)|.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Since $|a| = 1,$ $a \\overline{a} = |a|^2,$ so $\\overline{a} = \\frac{1}{a}.$  Similarly, $\\overline{b} = \\frac{1}{b},$ $\\overline{c} = \\frac{1}{c},$ and $\\overline{d} = \\frac{1}{d}.$\n\nFrom the equation $a + b + c + d = 0,$ $\\overline{a} + \\overline{b} + \\overline{c} + \\overline{d} = 0,$ so\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} = 0.\\]This gives us $abc + abd + acd + bcd = 0.$\n\nThen by Vieta's formulas, $a,$ $b,$ $c,$ $d$ are roots of a polynomial of the form\n\\[z^4 + p_2 z^2 + p_0 = 0.\\]If $z$ is a root of this polynomial, then so is $-z.$  This means $-a$ is equal to one of $b,$ $c,$ or $d,$ so\n\\[(a + b)(a + c)(a + d)(b + c)(b + d)(c + d) = 0.\\]Therefore, the maximum value is $\\boxed{0}.$"
-}

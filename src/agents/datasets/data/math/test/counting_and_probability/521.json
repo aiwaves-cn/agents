@@ -1,6 +1,0 @@
-{
-    "problem": "Two different positive integers less than 100 are randomly chosen and multiplied together. What is the probability that the resulting product is a multiple of 3?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "We can choose two numbers in $\\binom{99}{2}=4851$ ways. Two numbers will have a product which is a multiple of 3 if at least one of them is a multiple of 3. We can more easily count the number of ways for the product to not be a multiple of 3: this happens when neither of the numbers is a multiple of 3. There are $\\frac{99}{3}=33$ multiples of 3 less than 100, and $99-33=66$ numbers which aren't multiples of 3. The number of ways to choose two of these numbers is $\\binom{66}{2}=2145$, so the number of way to choose two numbers where at least one is a multiple of 3 is $4851-2145=2706$. The final probability is $\\frac{2706}{4851}=\\boxed{\\frac{82}{147}}$."
-}

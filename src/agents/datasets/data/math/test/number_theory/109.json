@@ -1,6 +1,0 @@
-{
-    "problem": "Find the modulo $7$ remainder of the sum $1+3+5+7+9+\\dots+195+197+199.$",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Instead of adding up the sum and finding the residue, we can find the residue of each number to make computation easier.\n\nEach group of 7 numbers would have the sum of residues $1+3+5+0+2+4+6 \\equiv 21 \\equiv 0 \\pmod7$. Since we only have odd numbers in the sum, every $7$ odd numbers is $14$ integers. Because every group has a residue of $7$, we can ignore them.\n\nThere are $\\left\\lfloor \\frac{199}{14}\\right\\rfloor=14$ sets of $14$ integers, which is equivalent to $7$ odd numbers in our sum. This leaves $197$ and $199$, which have residues $1+3 \\equiv \\boxed{4} \\pmod7$."
-}

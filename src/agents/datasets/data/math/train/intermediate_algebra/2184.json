@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $a<0$ and $a<b<c$. Which of the following must be true?\n\n$ab < bc$\n$ac<bc$\n$ab< ac$\n$a+b<b+c$\n$c/a <1$\n\nEnter your answer as a list of those options that are always true. For instance, if you think only the first and third are true, enter A, C.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Consider a negative $b$ and a positive $c$. Then $ab$ is positive and $bc$ is negative, and hence this is not true.\nIf we consider negative numbers for all three variables, $ac>bc$, and hence this is not true.\nConsider a negative $b$ and a positive $c$. Then $ab$ is positive and $ac$ is negative, hence this is not true.\nSubtracting $b$ from both sides gives us $a<c$ which we know is true.\nIf $c$ is positive then $c/a$ is negative and $c/a < 1$. If $c$ is negative, then $a<c<0$ which means $c/a < 1$.\n\nThus, $\\boxed{D, E}$ are always true."
-}

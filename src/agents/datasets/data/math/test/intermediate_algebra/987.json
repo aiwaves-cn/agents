@@ -1,6 +1,0 @@
-{
-    "problem": "Find the range of the function $f(x) = |x-4| + |x-20| + |x-50|,$ where $x$ is a real number.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We take cases:\n\nIf $x < 4,$ then $f(x) = (4-x) + (20-x) + (50-x) = 74-3x.$\n\n\nIf $4 \\le x < 20,$ then $f(x) = (x-4) + (20-x) + (50-x) = 66 - x.$\n\n\nIf $20 \\le x < 50,$ then $f(x) = (x-4) + (x-20) + (50-x) = 26 + x.$\n\n\nIf $50 \\le x,$ then $f(x) = (x-4)+(x-20)+(x-50)=3x-74.$\n\nThese parts of the graph of $f(x)$ connect continuously; since the first two parts have negative slope while the last two parts have positive slope, it follows that the minimum value of $f(x)$ is attained at $x = 20,$ which gives $f(x) = 26 + 20 = 46.$ Therefore, the range of $f(x)$ is $\\boxed{[46, \\infty)}.$"
-}

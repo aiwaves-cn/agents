@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive multiples of 5 that are less than 100 have a units digit of 5?",
-    "level": "Level 1",
-    "type": "Number Theory",
-    "solution": "Every even multiple of 5 has a units digit of 0 and every odd multiple of 5 has a units digit of 5. There are $100/5=20$ positive multiples of 5 less than or equal to 100. One half of them, $20/2=10$, are odd multiples of 5. Therefore, $\\boxed{10}$ positive multiples of 5 that are less than 100 have a units digit of 5."
-}

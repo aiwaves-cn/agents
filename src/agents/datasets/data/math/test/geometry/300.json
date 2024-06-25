@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\overline{MN}\\parallel\\overline{AB}$, how many units long is $\\overline{BN}$?\n\n[asy] pair A,B,M,N,C;\nM = 1.2*dir(255); N = dir(285);\nA = 3*M; B = 3*N;\ndraw(M--N--C--A--B--N);\nlabel(\"A\",A,W);label(\"M\",M,W);\nlabel(\"3\",C--M,W);label(\"5\",M--A,W);\nlabel(\"2.4\",C--N,E);label(\"N\",N,E);label(\"B\",B,E);\n[/asy]",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "First of all, let us label the tip of the triangle. [asy] pair A,B,M,N,C;\nM = 1.2*dir(255); N = dir(285);\nA = 3*M; B = 3*N;\ndraw(M--N--C--A--B--N);\nlabel(\"C\",C+(0,0.2));\nlabel(\"A\",A,W);label(\"M\",M,W);\nlabel(\"3\",C--M,W);label(\"5\",M--A,W);\nlabel(\"2.4\",C--N,E);label(\"N\",N,E);label(\"B\",B,E);\n[/asy] Since $MN \\parallel AB,$ we know that $\\angle CMN = \\angle CAB$ and $\\angle CNM = \\angle CBA.$ Therefore, by AA similarity, we have $\\triangle ABC \\sim MNC.$ Then, we find: \\begin{align*}\n\\frac{AC}{MC} &= \\frac{BC}{NC}\\\\\n\\frac{AM+MC}{MC} &= \\frac{BN+NC}{NC}\\\\\n1 + \\frac{AM}{MC} &= 1 + \\frac{BN}{NC}\\\\\n\\frac{5}{3} &= \\frac{BN}{2.4}.\n\\end{align*} Therefore, $BN = \\dfrac{5 \\cdot 2.4}{3} = \\boxed{4}.$"
-}

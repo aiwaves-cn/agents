@@ -1,6 +1,0 @@
-{
-    "problem": "You have a square that has a side length of $1$ centimeter. Each minute, $2$ centimeters are added to the side length. After $10$ minutes, what will be the difference between the area of the last square and the area of the initial square in square centimeters (do not include the units in your answer)?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The initial square has area $1^2 = 1\\text{ cm}^2$. After ten minutes, the side length of the square will be $1 + 2\\cdot 10 = 21\\text{ cm}$. So, the last square has area $21^2 = 441\\text{ cm}^2$. So the difference in areas is $441 - 1 = \\boxed{440\\text{ cm}^2}$."
-}

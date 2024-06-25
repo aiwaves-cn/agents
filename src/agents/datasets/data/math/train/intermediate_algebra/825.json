@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be real numbers such that\n\\[4x^2 + 8xy + 5y^2 = 1.\\]Let $m$ and $M$ be the minimum and maximum values of $2x^2 + 3xy + 2y^2,$ respectively.  Find the product $mM.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $k = 2x^2 + 3xy + 2y^2.$  Then\n\\[2x^2 + 3xy + 2y^2 = k = k(4x^2 + 8xy + 5y^2) = 4kx^2 + 8kxy + 5ky^2 = 0,\\]so $(4k - 2) x^2 + (8k - 3) xy + (5k - 2) y^2 = 0.$\n\nIf $y = 0,$ then $4x^2 = 1,$ so\n\\[2x^2 + 3xy + 2y^2 = \\frac{1}{2}.\\]Otherwise, we can divide both sides of $(4k - 2) x^2 + (8k - 3) xy + (5k - 2) y^2 = 0$ by $y^2,$ to get\n\\[(4k - 2) \\left( \\frac{x}{y} \\right)^2 + (8k - 3) \\frac{x}{y} + (5k - 2) = 0.\\]This is a quadratic in $\\frac{x}{y},$ so and its discriminant must be nonnegative:\n\\[(8k - 3)^2 - 4 (4k - 2)(5k - 2) \\ge 0.\\]This simplifies to $-16k^2 + 24k - 7 \\ge 0,$ or $16k^2 - 24k + 7 \\le 0.$  The roots of the quadratic $16k^2 - 24k + 7 = 0$ are $\\frac{3 \\pm \\sqrt{2}}{4},$ so the solution to $16k^2 - 24k + 7 \\le 0$ is\n\\[\\frac{3 - \\sqrt{2}}{4} \\le k \\le \\frac{3 + \\sqrt{2}}{4}.\\]For any value of $k$ in this interval, we can take $x = ky,$ then substitute into $4x^2 + 8xy + 5y^2 = 1,$ and obtain solutions in $x$ and $y.$  Thus, $m = \\frac{3 - \\sqrt{2}}{4}$ and $M = \\frac{3 + \\sqrt{2}}{4},$ so $mM = \\boxed{\\frac{7}{16}}.$"
-}

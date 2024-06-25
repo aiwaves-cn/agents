@@ -1,6 +1,0 @@
-{
-    "problem": "Recently, Frank took a one-hundred question aptitude test where each correct answer scored $5$ points, each incorrect answer scored $-2$ points, and each question not answered scored zero points. Frank answered $80$ questions and scored $232$ points. How many questions did he answer correctly?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Let the number of questions Frank answered correctly be $a$ and the number of questions he answered incorrectly be $b$. We have the two equations \\begin{align*}\na+b&=80\\\\\n5a-2b&=232\n\\end{align*} From the first equation, we have $b=80-a$. Substituting this into the second equation to eliminate $b$, we have $5a-2(80-a)=232\\Rightarrow a=56$. Thus, Frank answered $\\boxed{56}$ questions correctly."
-}

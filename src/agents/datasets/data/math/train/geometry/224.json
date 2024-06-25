@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area, in square units, of a triangle whose vertices are at $(4, -1)$, $(10, 3)$ and $(4, 5)$?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Notice how two of the points, $(4,-1)$ and $(4,5)$, lie on the same line parallel through the $y$-axis with $x$-intercept $(4,0)$.  Let these points lie on the base of the triangle, so the base has length $5-(-1)=6$.  The height is the perpendicular distance from $(10,3)$ to this line, which is $10-4=6$.  The area is thus $\\frac{1}{2} (6)(6)=\\boxed{18}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "There are $24$ different complex numbers $z$ such that $z^{24}=1$. For how many of these is $z^6$ a real number?",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "From $z^{24} = 1,$ $z^{24} - 1 = 0,$ so\n\\[(z^{12} + 1)(z^{12} - 1) = 0.\\]Then\n\\[(z^{12} + 1)(z^6 + 1)(z^6 - 1) = 0.\\]Thus, for 6 of the roots, $z^6 = -1,$ for another 6 of the roots, $z^6 = 1,$ and for the remaining 12 roots, $(z^6)^2 + 1 = 0,$ so $z^6$ is not real.  Therefore, for $\\boxed{12}$ of the roots, $z^6$ is real."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Triangle $ABC$ has a perimeter of 2007 units. The sides have lengths that are all integer values with $AB< BC \\leq AC$. What is the smallest possible value of $BC - AB$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Since $AB$ and $BC$ are positive integers and $AB < BC$, $BC - AB$ must be at least 1.\n\nThe triangle with side lengths $AB = 650$, $BC = 651$, and $AC = 706$ satisfies the given conditions, and for this triangle $BC - AB = 1$.\n\nTherefore, the smallest possible value of $BC - AB$ is $\\boxed{1}$."
-}

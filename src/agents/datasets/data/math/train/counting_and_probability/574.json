@@ -1,6 +1,0 @@
-{
-    "problem": "An integer greater than 9 and less than 100 is randomly chosen. What is the probability that its digits are different?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "We calculate the probability that the digits are the same, and subtract from 1. From the 90 integers to be chosen from, only 9 have the same digits: 11, 22, 33, ..., 99. Therefore, the probability that the digits are the same is $\\frac{9}{90} = \\frac{1}{10}$, so the probability that the digits are different is $1-\\frac{1}{10}= \\boxed{\\frac{9}{10}}$."
-}

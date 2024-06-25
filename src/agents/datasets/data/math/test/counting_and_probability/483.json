@@ -1,6 +1,0 @@
-{
-    "problem": "An envelope contains eight bills: 2 ones, 2 fives, 2 tens, and 2 twenties. Two bills are drawn at random without replacement. What is the probability that their sum is $\\$20$ or more?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "There are \\[\n\\binom{8}{2} = \\frac{8!}{6!\\cdot 2!} = 28\n\\]ways to choose the bills. A sum of at least $\\$20$ is obtained by choosing  both $\\$20$ bills, one of the  $\\$20$ bills and one of the six smaller bills, or both $\\$10$ bills.   Hence the probability is \\[\n\\frac{ 1 + 2\\cdot 6 + 1}{28}=\\frac{14}{28}=\\boxed{\\frac{1}{2}}.\n\\]"
-}

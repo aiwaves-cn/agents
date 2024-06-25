@@ -1,6 +1,0 @@
-{
-    "problem": "A line passes through the distinct vectors $\\mathbf{a}$ and $\\mathbf{b}.$  Which of the following are valid parameterizations of the line?\n\n(A) $\\mathbf{a} + t (\\mathbf{a} - \\mathbf{b})$\n\n(B) $\\frac{3}{4} \\mathbf{a} + t \\cdot \\frac{\\mathbf{b}}{4}$\n\n(C) $\\frac{\\mathbf{a} + \\mathbf{b}}{2} + t \\cdot \\frac{\\mathbf{b} - \\mathbf{a}}{2}$\n\n(D) $\\mathbf{a} + 2 \\mathbf{b} + t (2 \\mathbf{b} - 3 \\mathbf{a})$\n\n(E) $-\\mathbf{b} + t (\\mathbf{a} + \\mathbf{b})$\n\n(F) $\\mathbf{b} + \\frac{t}{3} (2 \\mathbf{a} - 2 \\mathbf{b})$\n\nEnter the letters of the correct options, separated by commas.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "The general form\n\\[\\mathbf{v} + t \\mathbf{d}\\]parameterizes the line passing through $\\mathbf{a}$ and $\\mathbf{b}$ if and only if (1) $\\mathbf{v}$ lies on the line, and (2) the direction vector $\\mathbf{d}$ is proportional to $\\mathbf{b} - \\mathbf{a}.$  The only options that have these properties are $\\boxed{\\text{A,C,F}}.$"
-}

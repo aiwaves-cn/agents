@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=|x-p|+|x-15|+|x-p-15|,$ where $0 < p < 15.$ Determine the minimum value taken by $f(x)$ for $x$ in the interval $p \\leq x\\leq15.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $0 < p \\le x \\le 15,$ the absolute values simplify to \\[f(x) = (x-p) - (x-15) - (x-p-15) = -x+30.\\]The value of this expression is minimized when $x=15,$ giving $-15+30=\\boxed{15}.$"
-}

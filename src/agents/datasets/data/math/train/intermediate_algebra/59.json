@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be distinct real numbers such that\n\\[\\frac{a}{b - c} + \\frac{b}{c - a} + \\frac{c}{a - b} = 0.\\]Find all possible values of\n\\[\\frac{a}{(b - c)^2} + \\frac{b}{(c - a)^2} + \\frac{c}{(a - b)^2}.\\]Enter all the possible values, separated by commas.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $x = b - c,$ $y = c - a,$ and $z = a - b,$ so\n\\[\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 0.\\]Then\n\\[\\left( \\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} \\right) \\left( \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} \\right) = 0.\\]Expanding, we get\n\\[\\frac{a}{x^2} + \\frac{b}{y^2} + \\frac{c}{z^2} + \\frac{a + b}{xy} + \\frac{a + c}{xz} + \\frac{b + c}{yz} = 0.\\]Note that\n\\begin{align*}\n\\frac{a + b}{xy} + \\frac{a + c}{xz} + \\frac{b + c}{yz} &= \\frac{(a + b)z + (a + c)y + (b + c)x}{xyz} \\\\\n&= \\frac{(a + b)(a - b) + (a + c)(c - a) + (b + c)(b - c)}{xyz} \\\\\n&= \\frac{a^2 - b^2 + c^2 - a^2 + b^2 - c^2}{xyz} \\\\\n&= 0,\n\\end{align*}so\n\\[\\frac{a}{(b - c)^2} + \\frac{b}{(c - a)^2} + \\frac{c}{(a - b)^2} = \\frac{a}{x^2} + \\frac{b}{y^2} + \\frac{c}{z^2} = \\boxed{0}.\\]"
-}

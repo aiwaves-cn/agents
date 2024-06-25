@@ -1,6 +1,0 @@
-{
-    "problem": "Equilateral triangle $ABC$ and square $BCDE$ are coplanar, as shown. What is the number of degrees in the measure of angle $CAD$?\n\n[asy]\nsize(70);\ndraw((0,0)--(20,0)--(20,20)--(0,20)--cycle);\ndraw((0,20)--(10,37.3)--(20,20));\ndraw((10,37.3)--(20,0));\nlabel(\"$A$\",(10,37.3),N);\nlabel(\"$B$\",(0,20),W);\nlabel(\"$C$\",(20,20),E);\nlabel(\"$D$\",(20,0),E);\nlabel(\"$E$\",(0,0),W);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "First, observe that $AC=CD$.  Therefore, triangle $ACD$ is isosceles and $\\angle CAD$ is congruent to $\\angle CDA$.  Also, $m\\angle ACD=m\\angle ACB+m\\angle BCD=60^\\circ+90^\\circ=150^\\circ$.  Since the three angles of triangle $ACD$ sum to 180 degrees, we have  \\begin{align*}\nm\\angle CAD+m\\angle CDA+150^\\circ&=180^\\circ \\implies \\\\\n2m\\angle CAD&=30^\\circ\\implies \\\\\nm\\angle CAD&=\\boxed{15} \\text{ degrees}.\n\\end{align*}"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Given $f(x)=5x+2$ and $g(x)=3x^2-4x$, evaluate $f(f(1))-g(g(2))$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We have $f(1) = 5(1) + 2 = 7$, so $f(f(1)) = f(7) = 5(7) + 2 = 37$.  We have $g(2) = 3(2)^2 - 4(2) = 3(4) - 8 = 4$, so $g(g(2)) = g(4) = 3(4)^2 -4(4) = 3(16) - 16 = 32$.  Combining these, we have $f(f(1)) - g(g(2)) = 37-32 = \\boxed{5}$."
-}

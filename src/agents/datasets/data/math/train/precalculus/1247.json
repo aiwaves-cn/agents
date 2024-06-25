@@ -1,6 +1,0 @@
-{
-    "problem": "Let\n\\[\\mathbf{M} = \\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix}\\]be a matrix with complex entries such that $\\mathbf{M}^2 = \\mathbf{I}.$  If $abc = 1,$ then find the possible values of $a^3 + b^3 + c^3.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "We find that\n\\[\\mathbf{M}^2 = \\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix} \\begin{pmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{pmatrix} = \\begin{pmatrix} a^2 + b^2 + c^2 & ab + ac + bc & ab + ac + bc \\\\ ab + ac + bc  & a^2 + b^2 + c^2 & ab + ac + bc \\\\ ab + ac + bc & ab + ac + bc & a^2 + b^2 + c^2 \\end{pmatrix}.\\]Since this is equal to $\\mathbf{I},$ we can say that $a^2 + b^2 + c^2 = 1$ and $ab + ac + bc = 0.$\n\nRecall the factorization\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc).\\]We have that\n\\[(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + ac + bc) = 1,\\]so $a + b + c = \\pm 1.$\n\nIf $a + b + c = 1,$ then\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc) = 1,\\]so $a^3 + b^3 + c^3 = 3abc + 1 = 4.$\n\nIf $a + b + c = -1,$ then\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc) = -1,\\]so $a^3 + b^3 + c^3 = 3abc - 1 = 2.$\n\nThus, the possible values of $a^3 + b^3 + c^3$ are $\\boxed{2,4}.$"
-}

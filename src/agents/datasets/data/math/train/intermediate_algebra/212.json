@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $f(x)$ is a function such that\n\\[f(xy) + x = xf(y) + f(x)\\]for all real numbers $x$ and $y.$  If $f(-1) = 5$ then compute $f(-1001).$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $y = 0$ in the given functional equation, we get\n\\[f(0) + x = xf(0) + f(x),\\]so $f(x) = (1 - f(0))x + f(0).$  This tells us that $f(x)$ is a linear function of the form $f(x) = mx + b.$  Since $f(-1) = 5,$ $5 = -m + b,$ so $b = m + 5,$ and\n\\[f(x) = mx + m + 5.\\]Substituting this into the given functional equation, we get\n\\[mxy + m + 5 + x = x(my + m + 5) + mx + m + 5.\\]This simplifies to $2mx = -4x.$  For this to hold for all $x,$ we must have $m = -2.$\n\nThen $f(x) = -2x + 3.$  In particular, $f(-1001) = \\boxed{2005}.$"
-}

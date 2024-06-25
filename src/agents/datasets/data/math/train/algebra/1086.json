@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a$ and $b$ be the roots of the equation $x^2-mx+2=0.$ Suppose that $a+(1/b)$  and $b+(1/a)$ are the roots of the equation $x^2-px+q=0.$ What is $q?$",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Since $a$ and $b$ are roots of $x^2 - mx + 2 = 0,$ we have \\[\nx^2 - mx + 2 = (x-a)(x-b)\\quad \\text{and} \\quad ab = 2.\n\\] In a similar manner, the constant term of $x^2 - px + q$ is the product of $a + (1/b)$ and $b + (1/a),$ so \\[\nq=\\left(a+\\frac{1}{b}\\right)\\left(b+\\frac{1}{a}\\right)= ab+1+1+\\frac{1}{ab}=\\boxed{\\frac{9}{2}}.\n\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $f(x)=ax^4-bx^2+x+5$ and $f(-3)=2,$ then what is the value of $f(3)$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Evaluating $f(x)$ for $x=3$ and $x=-3$, we have \\[\\left\\{ \\begin{aligned} f(3)& = a \\cdot 3^4 - b \\cdot 3^2 + 3 + 5, \\\\ f(-3) &= a \\cdot (-3)^4 - b \\cdot (-3)^2 + (-3) + 5. \\end{aligned} \\right.\\]If we subtract the second equation from the first equation, all the terms but one cancel out, and we get \\[f(3) - f(-3) = 3 - (-3) = 6.\\]Thus, if $f(-3) = 2,$ then $f(3) = f(-3) + 6 = 2 + 6 = \\boxed{8}.$"
-}

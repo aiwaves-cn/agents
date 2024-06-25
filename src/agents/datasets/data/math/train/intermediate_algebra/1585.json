@@ -1,6 +1,0 @@
-{
-    "problem": "There are 2011 positive numbers with both their sum and the sum of their reciprocals equal to 2012.  Let $x$ be one of these numbers.  Find the maximum value of $x + \\frac{1}{x}.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let the other 2010 numbers be $y_1,$ $y_2,$ $\\dots,$ $y_{2010}.$  Then $y_1 +y_2 + \\dots + y_{2010} = 2012 - x$ and $\\frac{1}{y_1} + \\frac{1}{y_2} + \\dots + \\frac{1}{y_{2010}} = 2012 - \\frac{1}{x}.$  By Cauchy-Schwarz,\n\\[\\left( \\sum_{i = 1}^{2010} y_i \\right) \\left( \\sum_{i = 1}^{2010} \\frac{1}{y_i} \\right) = (2012 - x) \\left( 2012 - \\frac{1}{x} \\right) \\ge 2010^2.\\]Then $2012^2 - 2012 \\left( x + \\frac{1}{x} \\right) + 1 \\ge 2010^2,$ which leads to\n\\[x + \\frac{1}{x} \\le \\frac{8045}{2012}.\\]The equation $x + \\frac{1}{x} = \\frac{8045}{2012}$ reduces to $x^2 - \\frac{8045}{2012} x + 1 = 0,$ which has real roots.  We can then set $y_i = \\frac{2012 - x}{2010}$ in order to achieve equality.  Thus, the maximum value is $\\boxed{\\frac{8045}{2012}}.$"
-}

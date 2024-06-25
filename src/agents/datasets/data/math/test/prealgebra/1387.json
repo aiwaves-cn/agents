@@ -1,6 +1,0 @@
-{
-    "problem": "A juice company sells its product in either a 48-ounce size or a 32-ounce size. It charges $\\$3.90$ for the 48-ounce size. How much should it charge for the smaller size if it wants the price per ounce to be $25\\%$ more than the price per ounce of the larger size?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We could solve this problem by figuring out the per-ounce cost of the 48-ounce package, increasing it by $25\\%$, and then multiplying that by 32 for the smaller package. However, if we simply increase the price by $25\\%$, and then scale the package size down to 32 ounces from 48 ounces, these are the same calculations, but in a different order that makes it easier to calculate. Thus: $3.90 \\times 1.25 \\times \\frac{32}{48} = \\boxed{3.25\\text{ dollars}}$"
-}

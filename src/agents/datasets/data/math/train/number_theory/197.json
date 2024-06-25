@@ -1,6 +1,0 @@
-{
-    "problem": "The least common multiple of two integers is 36 and 6 is their greatest common divisor. What is the product of the two numbers?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let $a$ and $b$ be the two integers. We can use the identity $\\gcd(a,b) \\cdot \\mathop{\\text{lcm}}[a,b] = ab$. Substituting gives that the answer is $36 \\cdot 6 = \\boxed{216}$."
-}

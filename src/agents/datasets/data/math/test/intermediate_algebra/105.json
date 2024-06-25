@@ -1,6 +1,0 @@
-{
-    "problem": "A polynomial with integer coefficients is of the form\n\\[x^4 + a_3 x^3 + a_2 x^2 + a_1 x + 4 = 0.\\]Enter all the possible integer roots of this polynomial, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By the Integer Root Theorem, the possible integer roots are all the divisors of 4 (including negative divisors), so they are $\\boxed{-4,-2,-1,1,2,4}.$"
-}

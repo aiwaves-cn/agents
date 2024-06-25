@@ -1,6 +1,0 @@
-{
-    "problem": "Andy, Beth, Charlie, and Daniel take a test with thirty questions. Andy and Beth together get the same number of questions wrong as Charlie and Daniel together. Andy and Daniel together get four more questions wrong than Beth and Charlie do together. If Charlie gets five questions wrong, how many questions does Andy get wrong?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Let $a$ denote the number of questions Andy got wrong, $b$ the number of questions Beth missed, $c$ the number of questions Charlie answered incorrectly, and $d$ the number of questions Daniel got wrong. Using the information given in the problem, we can form the following system of linear equations:  \\begin{align*}\na + b &= c + d \\\\\na + d &= b+c +4 \\\\\nc = 5\n\\end{align*} Adding the first two equations together yields $2a + b + d = 2c + b + d + 4$, which simplifies to $a = c + 2$. Since $c = 5$, Andy must have answered $\\boxed{7}$ questions incorrectly."
-}

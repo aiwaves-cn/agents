@@ -1,6 +1,0 @@
-{
-    "problem": "The lengths of two sides of a triangle are 33 units and 42 units. The third side also has an integral length. What is the least possible number of units in the perimeter of the triangle?",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The sum of the smaller two sides must exceed the greatest side, so if $x$ is the missing side then $x+33>42\\implies x>9$.  The smallest integer greater than 9 is 10, so the least perimeter is $10+33+42=\\boxed{85}$ units."
-}

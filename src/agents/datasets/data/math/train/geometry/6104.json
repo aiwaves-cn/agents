@@ -1,6 +1,0 @@
-{
-    "problem": "Square $ABCD$ has side length $13$, and points $E$ and $F$ are exterior to the square such that $BE=DF=5$ and $AE=CF=12$. Find $EF^{2}$.[asy]unitsize(0.2 cm);  pair A, B, C, D, E, F;  A = (0,13); B = (13,13); C = (13,0); D = (0,0); E = A + (12*12/13,5*12/13); F = D + (5*5/13,-5*12/13);  draw(A--B--C--D--cycle); draw(A--E--B); draw(C--F--D);  dot(\"$A$\", A, W); dot(\"$B$\", B, dir(0)); dot(\"$C$\", C, dir(0)); dot(\"$D$\", D, W); dot(\"$E$\", E, N); dot(\"$F$\", F, S);[/asy]\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $\\angle FCD = \\alpha$, so that $FB = \\sqrt{12^2 + 13^2 + 2\\cdot12\\cdot13\\sin(\\alpha)} = \\sqrt{433}$. By the diagonal, $DB = 13\\sqrt{2}, DB^2 = 338$.\nThe sum of the squares of the sides of a parallelogram is the sum of the squares of the diagonals.\\[EF^2 = 2\\cdot(5^2 + 433) - 338 = \\boxed{578}.\\]"
-}

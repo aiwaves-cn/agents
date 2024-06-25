@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered pairs $(x,y)$ of real numbers that satisfy $ (x + y)^2 = (x + 1)(y - 1)$.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Let $a = x + 1$ and $b = y - 1.$  Then the equation becomes\n\\[(a + b)^2 = ab.\\]This simplifies to $a^2 + ab + b^2 = 0.$  Completing the square in $a,$ we get\n\\[\\left( a + \\frac{b}{2} \\right)^2 + \\frac{3b^2}{4} = 0,\\]which forces $a = b = 0.$  Then $(x,y) = (-1,1),$ so there is only $\\boxed{1}$ solution."
-}

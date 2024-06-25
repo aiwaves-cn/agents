@@ -1,6 +1,0 @@
-{
-    "problem": "Solve for $x$: $\\frac{x}{7}+\\frac{x}{3}=1-x$.",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "To start, find a common denominator on the left side.  The lowest common multiple of 7 and 3 is 21, so this is the common denominator.  Rewrite the equation as: \\begin{align*}\n\\frac{3x}{21}+\\frac{7x}{21} &= 1 - x \\\\\n\\frac{10x}{21} &= 1 - x \\\\\n\\end{align*}We now multiply both sides by $21$ to get $10x = 21 - 21x,$ then $31x = 21.$ So $x = \\boxed{\\frac{21}{31}}.$"
-}

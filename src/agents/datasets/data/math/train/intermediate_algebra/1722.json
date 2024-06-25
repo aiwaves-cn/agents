@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose that $x^{2017} - 2x + 1 = 0$ and $x \\neq 1.$  Find the value of\n\\[x^{2016} + x^{2015} + \\dots + x + 1.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We can factor $x^{2017} - 2x + 1 = 0$ by writing it as\n\\begin{align*}\nx^{2017} - 1 - 2x + 2 &= (x^{2017} - 1) - 2(x - 1) \\\\\n&= (x - 1)(x^{2016} + x^{2015} + \\dots + x + 1) - 2(x - 1) \\\\\n&= (x - 1)(x^{2016} + x^{2015} + \\dots + x - 1).\n\\end{align*}Since $x \\neq 1,$ we must have $x^{2016} + x^{2015} + \\dots + x - 1 = 0,$ so $x^{2016} + x^{2015} + \\dots + x + 1 = \\boxed{2}.$"
-}

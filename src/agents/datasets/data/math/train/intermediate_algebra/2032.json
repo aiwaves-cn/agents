@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest solution to the equation \\[\\lfloor x^2 \\rfloor - \\lfloor x \\rfloor^2 = 17.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $n = \\lfloor x \\rfloor$ and $a = \\{x\\}.$ Then, we have \\[\\begin{aligned} \\lfloor x^2 \\rfloor &= \\lfloor (n+a)^2 \\rfloor \\\\& = \\lfloor n^2 + 2na + a^2 \\rfloor \\\\ &= n^2 + \\lfloor 2na + a^2 \\rfloor \\end{aligned}\\]because $n^2$ is an integer. We are given that $\\lfloor x^2 \\rfloor - n^2 = 17,$ so we have the equation \\[\\lfloor 2na + a^2 \\rfloor = 17.\\]That is, \\[17 \\le 2na + a^2 < 18.\\]Since $0 \\le a < 1,$ we have $2na + a^2 < 2n + 1,$ so $17 < 2n+1,$ and $n > 8.$ Therefore, the smallest possible value for $n$ is $n = 9.$ To minimize $x,$ we should minimize $n,$ so take $n = 9.$ This gives \\[17 \\le 18a + a^2 < 18.\\]Then $0 \\le a^2 + 18a - 17.$ The roots of $a^2 + 18a - 17 = 0$ are \\[a = \\frac{-18 \\pm \\sqrt{18^2 + 4 \\cdot 17}}{2} = -9 \\pm 7\\sqrt{2},\\]and since $a \\ge 0,$ we must have $a \\ge -9 + 7\\sqrt{2}.$ Hence, \\[x = n + a \\ge 9 + (-9 + 7\\sqrt2) = 7\\sqrt2.\\]Indeed, $x=7\\sqrt2$ is a solution to the equation, because \\[\\lfloor x^2 \\rfloor - \\lfloor x \\rfloor^2 = \\lfloor 98 \\rfloor - \\lfloor 9 \\rfloor^2 = 98 - 9^2 = 17,\\]so the answer is $\\boxed{7\\sqrt2}.$"
-}

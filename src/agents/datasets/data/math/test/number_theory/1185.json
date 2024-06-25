@@ -1,6 +1,0 @@
-{
-    "problem": "The superfactorial $n\\$$ is defined as $n\\$ = \\underbrace{ n!^{{n!}^{{\\cdot}^{{\\cdot}^{{\\cdot}^{n!}}}}}}_{n!}$. What is the units digit of $4\\$$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Since $4! = 4\\times 3 \\times 2 \\times 1 = 24$, we need to evaluate the units digit of $4\\$ = \\underbrace{24^{24^{\\cdot^{\\cdot^\\cdot}}}}_{24}$. The exponent of the base $24$ is an even number, say $2n$. Then, $4\\$ = 24^{2n} = 576^n$. The units digit of the product of two numbers with units digit $6$ is equal to $6$. Thus, the desired answer is $\\boxed{6}$."
-}

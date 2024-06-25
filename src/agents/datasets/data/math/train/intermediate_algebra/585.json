@@ -1,6 +1,0 @@
-{
-    "problem": "In Pascal's Triangle, each entry is the sum of the two entries above it. In which row of Pascal's Triangle do three consecutive entries occur that are in the ratio $3: 4: 5$?\n\n(The top row of Pascal's Triangle has only a single $1$ and is the $0$th row.)",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Let the three entries be $\\binom{n}{r},$ $\\binom{n}{r+1},$ and $\\binom{n}{r+2},$ respectively. Then we have \\[\\frac{\\binom{n}{r}}{\\binom{n}{r+1}} = \\frac{3}{4} \\quad \\text{and} \\quad \\frac{\\binom{n}{r+1}}{\\binom{n}{r+2}} = \\frac{4}{5}.\\]We simplify the left-hand side of the first equation: \\[\\frac{\\binom{n}{r}}{\\binom{n}{r+1}} = \\frac{\\frac{n!}{r!(n-r)!}}{\\frac{n!}{(r+1)!)(n-r-1)!}} = \\frac{n!}{r!(n-r)!} \\cdot \\frac{(r+1)!(n-r-1)!}{n!} = \\frac{r+1}{n-r}.\\]Therefore, $\\frac{r+1}{n-r} = \\frac{3}{4}.$ Similarly, the second equation becomes $\\frac{r+2}{n-r-1} = \\frac{4}{5}.$\n\nCross-multiplying in both equations, we have \\[4r+4 = 3n-3r \\quad \\text{and} \\quad 5r+10 = 4n-4r-4.\\]Solving for $r$ in the first equation gives $r = \\frac{3n-4}{7},$ and then we have \\[9\\left(\\frac{3n-4}{7}\\right) + 14 = 4n,\\]and solving for $n$ gives $n = \\boxed{62}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangular array of chairs is an arrangement of the chairs in rows and columns such that each row contains the same number of chairs as every other row and each column contains the same number of chairs as every other column.  If there must be at least two chairs in every row and column and all of the chairs in the room must be included, how many arrays are possible in a classroom containing $36$ chairs? Note that $12$ rows of $3$ chairs is different from $3$ rows of $12$ chairs.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We are counting the number of ways 36 can be expressed as the product of two positive integers such that one of the numbers is not 1. Factoring 36, we find that $36=2^2\\cdot3^2$. The possible values for the number of rows is 2, 3, 4, 6, 9, 12, 18 (notice that we cannot have 1 row). Each value corresponds to a unique arrangement of the chairs. Thus, there are $\\boxed{7}$ possible arrays."
-}

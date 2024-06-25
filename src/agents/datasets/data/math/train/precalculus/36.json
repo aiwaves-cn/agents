@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify\n\\[\\frac{\\sin{10^\\circ}+\\sin{20^\\circ}}{\\cos{10^\\circ}+\\cos{20^\\circ}}.\\]Enter your answer is a trigonometric function evaluated at an integer, such as \"sin 7\".  (The angle should be positive and as small as possible.)",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "From the product-to-sum identities,\n\\[\\frac{\\sin{10^\\circ}+\\sin{20^\\circ}}{\\cos{10^\\circ}+\\cos{20^\\circ}} = \\frac{2 \\sin 15^\\circ \\cos (-5^\\circ)}{2 \\cos 15^\\circ \\cos(-5^\\circ)} = \\frac{\\sin 15^\\circ}{\\cos 15^\\circ} = \\boxed{\\tan 15^\\circ}.\\]"
-}

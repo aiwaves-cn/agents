@@ -1,6 +1,0 @@
-{
-    "problem": "How many vertical asymptotes does the graph of\n\\[y = \\frac{(x + 3)^5 (x + 2)^8 (x + 1)^4 (x - 7)^2}{(x + 3)^{11} (x + 2)^6 (x + 1)^4 x^2}\\]have?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "There are factors of $x + 1$ and $x + 2$ in both the numerator and denominator, and the factors in the denominator cancel the factors in the numerator, so the graph has a hole at $x = -1$ and $x = -2.$\n\nThere are two factors of $x$ in the denominator, so there is a vertical asymptote at $x = 0.$  There are five factors of $x + 3$ in the numerator, and 11 factors of $x + 3$ in the denominator, so there is a vertical asymptote at $x = -3.$\n\nHence, there are $\\boxed{2}$ vertical asymptotes."
-}

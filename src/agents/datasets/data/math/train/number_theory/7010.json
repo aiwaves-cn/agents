@@ -1,6 +1,0 @@
-{
-    "problem": "Let $m$ be the smallest integer whose cube root is of the form $n+r$, where $n$ is a positive integer and $r$ is a positive real number less than $1/1000$. Find $n$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "In order to keep $m$ as small as possible, we need to make $n$ as small as possible.\n$m = (n + r)^3 = n^3 + 3n^2r + 3nr^2 + r^3$. Since $r < \\frac{1}{1000}$ and $m - n^3 = r(3n^2 + 3nr + r^2)$ is an integer, we must have that $3n^2 + 3nr + r^2 \\geq \\frac{1}{r} > 1000$. This means that the smallest possible $n$ should be quite a bit smaller than 1000. In particular, $3nr + r^2$ should be less than 1, so $3n^2 > 999$ and $n > \\sqrt{333}$. $18^2 = 324 < 333 < 361 = 19^2$, so we must have $n \\geq 19$. Since we want to minimize $n$, we take $n = 19$. Then for any positive value of $r$, $3n^2 + 3nr + r^2 > 3\\cdot 19^2 > 1000$, so it is possible for $r$ to be less than $\\frac{1}{1000}$. However, we still have to make sure a sufficiently small $r$ exists.\nIn light of the equation $m - n^3 = r(3n^2 + 3nr + r^2)$, we need to choose $m - n^3$ as small as possible to ensure a small enough $r$. The smallest possible value for $m - n^3$ is 1, when $m = 19^3 + 1$. Then for this value of $m$, $r = \\frac{1}{3n^2 + 3nr + r^2} < \\frac{1}{1000}$, and we're set. The answer is $\\boxed{19}$."
-}

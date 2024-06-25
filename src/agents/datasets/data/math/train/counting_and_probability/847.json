@@ -1,6 +1,0 @@
-{
-    "problem": "Four people sit around a circular table, and each person will roll a standard six-sided die. What is the probability that no two people sitting next to each other will roll the same number after they each roll the die once? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Consider the people around the table, sequentially, to be A, B, C and D. Now, with probability $\\frac{1}{6}$, persons A and C, seated opposite one another, will roll the same number. In that case, each of B and D may roll any of 5 numbers not equal to the number rolled by both A and C. So the probability of no two consecutive persons rolling the same number in the case where A and C roll the same is $\\frac{1}{6} \\cdot \\frac{5}{6} \\cdot \\frac{5}{6}$. A and C roll differently with probability $\\frac{5}{6}$, in which case each of B and D must choose from only 4 numbers, because A and C offer different numbers to be avoided. So, the probability then is $\\frac{5}{6} \\cdot \\frac{4}{6} \\cdot \\frac{4}{6}$. Adding the two cases gives $\\frac{5(5 + 4 \\cdot 4)}{6^3} = \\frac{3 \\cdot 5 \\cdot 7}{3 \\cdot 2 \\cdot 36} = \\boxed{\\frac{35}{72}}$."
-}

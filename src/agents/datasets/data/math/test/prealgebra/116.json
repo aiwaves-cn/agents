@@ -1,6 +1,0 @@
-{
-    "problem": "The trisectors of angles $B$ and $C$ of scalene triangle $ABC$ meet at points $P$ and $Q$ as shown. Angle $A$ measures 39 degrees and angle $QBP$ measures 14 degrees. What is the measure of angle $BPC$? [asy]\nimport olympiad; import geometry; size(150); defaultpen(linewidth(0.8));\ndraw((0,0)--(3,0)--(4,5)--(0,0)--(2,1.5)--(3,0)--(1.7,0.5)--(0,0));\nlabel(\"$P$\", (1.7,0.5), S); label(\"$Q$\", (2,1.5), N); label(\"$B$\", (0,0),W); label(\"$A$\", (4,5), N); label(\"$C$\", (3,0), E);\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Because angle $QBP$ measures 14 degrees, we know that angle $ABC$ measures $3\\cdot14=42$ degrees.  Hence, angle $ACB$ measures $180 - 39 - 42 = 99$ degrees.  Next we find that angle $BCP$ measures $\\frac{99}3=33$ degrees, and finally angle $BPC$ measures $180 - 14 - 33 = \\boxed{133}$ degrees."
-}

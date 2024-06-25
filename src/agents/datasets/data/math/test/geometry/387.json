@@ -1,6 +1,0 @@
-{
-    "problem": "A pyramid with a square base is cut by a plane that is parallel to its base and is 2 units from the base.  The surface area of the smaller pyramid that is cut from the top is half the surface area of the original pyramid.  What is the altitude of the original pyramid?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $h$ be the altitude of the original pyramid.  Then the altitude of the smaller pyramid is $h-2$.  Because the two pyramids are similar, the ratio of their altitudes is the square root of the ratio of their surface areas.  Thus $h/(h-2)=\\sqrt{2}$, so \\[h=\\frac{2\\sqrt{2}}{\\sqrt{2}-1}=\\boxed{4+2\\sqrt{2}}.\\]"
-}

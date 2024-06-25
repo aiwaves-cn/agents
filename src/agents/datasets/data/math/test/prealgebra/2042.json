@@ -1,6 +1,0 @@
-{
-    "problem": "A square piece of paper is folded once so that one pair of opposite corners coincide. When the paper is unfolded, two congruent triangles have been formed. Given that the area of the original square is $49$ square inches, what is the number of inches in the perimeter of one of these triangles? Express your answer in simplest radical form.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since the area of the square is 49 square inches, the side length of the square is $\\sqrt{49} = 7$ square inches.  Each triangle formed by the fold is a 45-45-90 triangle whose legs are sides of the square and whose hypotenuse is the fold.  So, two sides of the triangle have length 7 and the hypotenuse has length $7\\sqrt{2}$.  Therefore, the perimeter of the triangle is $7+7+7\\sqrt{2} = \\boxed{14+7\\sqrt{2}}$."
-}

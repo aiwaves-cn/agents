@@ -1,6 +1,0 @@
-{
-    "problem": "Zeno had to paint a $15^\\prime \\times 15^\\prime$ square floor. He decided that each day he would paint half of the unpainted part from the previous day until there was only one square foot or less left, in which case he would stay and finish the job that day. Using this strategy, how many days did it take Zeno to paint the entire floor?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We focus on the portion of the floor that is left unpainted. After one day, $\\frac12$ of the floor is left unpainted. After two days, $\\frac1{2^2}$ of the floor is left unpainted, and so on. After $n$ days, $\\frac1{2^n}$ of the floor is unpainted. The floor has area $15^2 = 225$ square feet, so we look for the least number of days $n$ when at most $\\frac1{225}$ of the floor is left unpainted: \\begin{align*}\n\\frac1{2^n} &\\leq \\frac1{225}\\\\\n\\Rightarrow 2^n &\\geq 225\\\\\n\\Rightarrow n&\\geq8.\n\\end{align*} Thus, Zeno took $\\boxed{8}$ days to paint the floor."
-}

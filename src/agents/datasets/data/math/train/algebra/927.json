@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area enclosed by the region defined by the equation $x^2+y^2+12x+16y=0$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We complete the square on the quadratic in $x$ by adding $(12/2)^2=36$ to both sides, and complete the square on the quadratic in $y$ by adding $(16/2)^2=64$ to both sides. We have the equation  \\[(x^2+12x+36)+(y^2+16y+64)=100 \\Rightarrow (x+6)^2+(y+8)^2=100\\]We see that this is the equation of a circle with center $(-6,-8)$ and radius 10. Thus, the area of the region enclosed by this circle is $\\pi \\cdot 10^2=\\boxed{100\\pi}$."
-}

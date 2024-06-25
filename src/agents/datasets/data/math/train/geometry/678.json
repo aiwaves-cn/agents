@@ -1,6 +1,0 @@
-{
-    "problem": "The points $(1, 7), (13, 16)$ and $(5, k)$, where $k$ is an integer, are vertices of a triangle. What is the sum of the values of $k$ for which the area of the triangle is a minimum?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "We begin by finding the equation of the line $\\ell$ containing $(1,7)$ and $(13,16)$. The slope of $\\ell$ is $\\frac{16-7}{13-1} = \\frac{9}{12} = \\frac 34$, so the line has the point-slope form $y - 7 = \\frac 34 (x - 1)$. Substituting the value $x = 5$, we obtain that $y = 7 + \\frac 34 (5-1) = 10$. It follows that the point $(5,10)$ lies on the line containing $(1,7)$ and $(13,16)$ (for $k = 10$, we obtain a degenerate triangle). To minimize the area of the triangle, it follows that $k$ must either be equal to $9$ or $11$.\n\nIndeed, we claim that both such triangles have the same area. Dropping the perpendiculars from $(5,9)$ and $(5,11)$ to $\\ell$, we see that the perpendiculars, $\\ell$, and the line segment connecting $(5,9)$ to $(5,11)$ form two right triangles. By vertical angles, they are similar, and since they both have a hypotenuse of length $1$, they must be congruent. Then, the height of both triangles must be the same, so both $k = 9$ and $k = 11$ yield triangles with minimal area. The answer is $9 + 11 = \\boxed{20}$."
-}

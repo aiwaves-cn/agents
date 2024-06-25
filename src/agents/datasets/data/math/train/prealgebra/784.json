@@ -1,6 +1,0 @@
-{
-    "problem": "In the figure below, all corner angles are right angles and each number represents the unit-length of the segment which is nearest to it. How many square units of area does the figure have?\n\n[asy]\n\ndraw((0,0)--(12,0)--(12,5)--(8,5)--(8,4)--(5,4)\n--(5,6)--(0,6)--(0,0));\n\nlabel(\"6\",(0,3),W);\nlabel(\"5\",(2.5,6),N);\nlabel(\"2\",(5,5),W);\nlabel(\"3\",(6.5,4),S);\nlabel(\"1\",(8,4.5),E);\nlabel(\"4\",(10,5),N);\n\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Partition the figure into rectangles as shown. The area of each rectangle is shown by the circled number in it. Total area $= 30+12+20 = \\boxed{62}$.\n\n[asy]\n\ndraw((0,0)--(12,0)--(12,5)--(8,5)--(8,4)--(5,4)\n--(5,6)--(0,6)--(0,0));\n\nlabel(\"6\",(0,3),W);\nlabel(\"5\",(2.5,6),N);\nlabel(\"2\",(5,5),W);\nlabel(\"3\",(6.5,4),S);\nlabel(\"1\",(8,4.5),E);\nlabel(\"4\",(10,5),N);\n\ndraw((5,0)--(5,4),dashed);\ndraw((8,0)--(8,4),dashed);\nlabel(\"4\",(5,2),W);\nlabel(\"4\",(8,2),E);\n\nlabel(\"30\",(2.5,3));\ndraw(Circle((2.5,3),0.8));\n\nlabel(\"12\",(6.5,1.5));\ndraw(Circle((6.5,1.5),0.8));\n\nlabel(\"20\",(10,2.5));\ndraw(Circle((10,2.5),0.8));\n\n[/asy]"
-}

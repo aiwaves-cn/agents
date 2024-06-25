@@ -1,6 +1,0 @@
-{
-    "problem": "If I choose four cards from a standard $52$-card deck, with replacement, what is the probability that I will end up with one card from each suit?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Because we are replacing the cards, at each draw, there is a $\\frac{13}{52} = \\frac{1}{4}$ probability of ending up with a card from any given suit. Because we are looking for one card from each of the four suits, it doesn't matter what suit the first card drawn represents. After one card is drawn and replaced, the probability that the second card drawn wil $\\textit{not}$ be from the same suit as the first card is $\\frac{3}{4}$. Similarly, after two cards have been drawn and replaced, the probability that the third card drawn will not be from either of the suits of the first two cards is $\\frac{2}{4} = \\frac{1}{2}$. Finally, the probability that the fourth card drawn will not be from any of the same suits of the first three cards that were drawn and replaced is $\\frac{1}{4}$. Thus, our final probability is $\\frac{3}{4} \\cdot \\frac{1}{2} \\cdot \\frac{1}{4} = \\boxed{\\frac{3}{32}}$."
-}

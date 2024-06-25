@@ -1,6 +1,0 @@
-{
-    "problem": "Find $g(x)$, with terms in order of decreasing degree, if we have that \\[8x^4-7x^2+8x-7+g(x)=x + 1.\\]",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Isolating $g(x),$ we find: \\begin{align*}\ng(x) &= (x + 1) - (8x^4-7x^2 + 8x - 7) \\\\\n&= x + 1 - 8x^4 + 7x^2 - 8x + 7 \\\\\n&= \\boxed{-8 x^4+7x^2-7x+8}.\n\\end{align*}"
-}

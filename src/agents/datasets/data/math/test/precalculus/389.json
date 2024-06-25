@@ -1,6 +1,0 @@
-{
-    "problem": "For positive real numbers $x,$ $y,$ and $z,$ none of which are equal to 1, find\n\\[\\begin{vmatrix} 1 & \\log_x y & \\log_x z \\\\ \\log_y x & 1 & \\log_y z \\\\ \\log_z x & \\log_z y & 1 \\end{vmatrix}.\\]",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "By the change-of-base formula, the matrix becomes\n\\[\\begin{vmatrix} 1 & \\frac{\\log y}{\\log x} & \\frac{\\log z}{\\log x} \\\\ \\frac{\\log x}{\\log y} & 1 & \\frac{\\log z}{\\log y} \\\\ \\frac{\\log x}{\\log z} & \\frac{\\log y}{\\log z} & 1 \\end{vmatrix}.\\]This is equal to\n\\[\\frac{1}{\\log x} \\cdot \\frac{1}{\\log y} \\cdot \\frac{1}{\\log z} \\begin{vmatrix} \\log x & \\log y & \\log z \\\\ \\log x & \\log y & \\log z \\\\ \\log x & \\log y & \\log z \\end{vmatrix}.\\]Since all the rows are equal, the determinant is $\\boxed{0}.$"
-}

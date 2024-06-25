@@ -1,6 +1,0 @@
-{
-    "problem": "How many non-congruent  triangles can be drawn such that their vertices lie on the corners of a unit cube?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The distances between corners of a unit cube are 1, $\\sqrt{2}$, and $\\sqrt{3}$. If the two shortest sides are 1 and 1, the third side has to be $\\sqrt{2}$. If the two shortest sides are 1 and $\\sqrt{2}$, the third side must be $\\sqrt{3}$. If the two shortest sides are $\\sqrt{2}$ and $\\sqrt{2}$, the third side must also be $\\sqrt{2}$. There is no case where the shortest side is $\\sqrt{3}$. This gives $\\boxed{3}$ non-congruent triangles."
-}

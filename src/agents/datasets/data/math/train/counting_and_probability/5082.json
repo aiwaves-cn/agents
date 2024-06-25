@@ -1,6 +1,0 @@
-{
-    "problem": "Jackie and Phil have two fair coins and a third coin that comes up heads with probability $\\frac47$. Jackie flips the three coins, and then Phil flips the three coins. Let $\\frac {m}{n}$ be the probability that Jackie gets the same number of heads as Phil, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "This can be solved quickly and easily with generating functions.\nLet $x^n$ represent flipping $n$ tails.\nThe generating functions for these coins are $(1+x)$,$(1+x)$,and $(4+3x)$ in order.\nThe product is $4+11x+10x^2+3x^3$. ($ax^n$ means there are $a$ ways to get $n$ heads, eg there are $10$ ways to get $2$ heads, and therefore $1$ tail, here.)\nThe sum of the coefficients squared (total number of possible outcomes, squared because the event is occurring twice) is $(4 + 11 + 10 + 3)^2 = 28^2 = 784$ and the sum of the squares of each coefficient (the sum of the number of ways that each coefficient can be chosen by the two people) is $4^2 + 11^2 + 10^2 + 3^2=246$. The probability is then $\\frac{4^2 + 11^2 + 10^2 + 3^2}{28^2}  = \\frac{246}{784} = \\frac{123}{392}$. (Notice the relationship between the addends of the numerator here and the cases in the following solution.)\n$123 + 392 = \\boxed{515}$"
-}

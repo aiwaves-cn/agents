@@ -1,6 +1,0 @@
-{
-    "problem": "The symbol $\\lfloor x \\rfloor$ denotes the largest integer not exceeding $x$. For example, $\\lfloor 3 \\rfloor = 3,$ and $\\lfloor 9/2 \\rfloor = 4.$ Compute \\[\\lfloor \\sqrt{1} \\rfloor + \\lfloor \\sqrt{2} \\rfloor + \\lfloor \\sqrt{3} \\rfloor + \\cdots + \\lfloor \\sqrt{16} \\rfloor.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since $1 \\le \\sqrt{1} < \\sqrt{2} < \\sqrt{3} < 2,$ the first three terms of the sum are equal to $1.$ Then, since $2 \\le \\sqrt{4} < \\sqrt{5} < \\dots < \\sqrt{8} < 3,$ the next five terms equal $2.$ Then, since $3 \\le \\sqrt{9} < \\sqrt{10} < \\dots < \\sqrt{15} < 4,$ the next seven terms equal $3.$ Finally, the last term equals $\\lfloor 4 \\rfloor = 4.$ So the overall sum is \\[3(1) + 5(2) + 7(3) + 4 = 3 + 10 + 21 + 4 = \\boxed{38}.\\]"
-}

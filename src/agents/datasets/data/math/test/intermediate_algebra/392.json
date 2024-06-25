@@ -1,6 +1,0 @@
-{
-    "problem": "If two positive numbers have arithmetic mean $2700$ and harmonic mean $75$, what is their geometric mean?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Let the two numbers be $a$ and $b$. If they have arithmetic mean $2700,$ then\n$$\\frac{a+b}{2} = 2700,$$which gives us $a+b = 5400$. Since their harmonic mean is $75$ we have\n$$\\frac{2}{\\frac{1}{a}+\\frac{1}{b}}=75.$$We can rearrange terms to get\n$$\\frac{1}{a}+\\frac{1}{b}=\\frac{2}{75}.$$Taking the common denominator gives us\n$$\\frac{a+b}{ab} = \\frac{2}{75}.$$Substituting the value of $a+b$ and solving for $ab$ gives\n$$ab = \\frac{5400\\cdot75}{2} = 2700\\cdot75.$$Then the geometric mean is\n$$\\sqrt{ab} = \\sqrt{2700\\cdot75} = \\boxed{450}.$$"
-}

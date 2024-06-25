@@ -1,6 +1,0 @@
-{
-    "problem": "A regular polygon has interior angles of 144 degrees. How many sides does the polygon have?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Let $n$ be the number of sides in the polygon.  The sum of the interior angles in any $n$-sided polygon is $180(n-2)$ degrees.  Since each angle in the given polygon measures $144^\\circ$, the sum of the interior angles of this polygon is also $144n$.  Therefore, we must have  \\[180(n-2) = 144n.\\]Expanding the left side gives $180n - 360 = 144n$, so $36n = 360$ and $n = \\boxed{10}$.\n\nWe might also have noted that each exterior angle of the given polygon measures $180^\\circ - 144^\\circ = 36^\\circ$.  The exterior angles of a polygon sum to $360^\\circ$, so there must be $\\frac{360^\\circ}{36^\\circ} = 10$ of them in the polygon."
-}

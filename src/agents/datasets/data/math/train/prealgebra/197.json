@@ -1,6 +1,0 @@
-{
-    "problem": "The four-digit numeral $3AA1$ is divisible by 9. What digit does $A$ represent?",
-    "level": "Level 2",
-    "type": "Prealgebra",
-    "solution": "If a number is divisible by 9, then the sum of its digits is divisible by 9. The digit sum is $3+A+A+1=2A+4$. Trying different values of $A$ to see what they make the digit sum, we see that no values of $A$ make $2A+4$ divisible by 9 except for $A=7$. We see that $4+2A=18$, so $A=\\boxed{7}$."
-}

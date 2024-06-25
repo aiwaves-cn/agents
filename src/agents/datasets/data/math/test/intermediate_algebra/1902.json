@@ -1,6 +1,0 @@
-{
-    "problem": "Factor completely over the set of polynomials with integer coefficients:\n\\[x^4 - 4x^3 + 14x^2 - 4x + 13.\\]",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By the Rational Root Theorem, any rational root must be $\\pm 1$ or $\\pm 13.$  Checking, we find that none of these values are roots, so we look for a factorization into two quadratics.  Let\n\\[x^4 - 4x^3 + 14x^2 - 4x + 13 = (x^2 + Ax + B)(x^2 + Cx + D).\\]Expanding the right-hand side, we get\n\\begin{align*}\n&x^4 - 4x^3 + 14x^2 - 4x + 13 \\\\\n&\\quad = x^4 + (A + C)x^3 + (B + D + AC)x^2 + (AD + BC)x + BD.\n\\end{align*}Matching coefficients, we get\n\\begin{align*}\nA + C &= -4, \\\\\nB + D + AC &= 14, \\\\\nAD + BC &= -4, \\\\\nBD &= 13.\n\\end{align*}We start with the equation $BD = 13.$  Either $\\{B,D\\} = \\{1,13\\}$ or $\\{B,D\\} = \\{-1,-13\\}.$  Let's start with the case $\\{B,D\\} = \\{1,13\\}.$  Without loss of generality, assume that $B = 1$ and $D = 13.$  Then\n\\begin{align*}\nA + C &= -4, \\\\\n13A + C &= -4, \\\\\nAC &= 0.\n\\end{align*}Then $A = 0$ and $C = -4,$ so the factorization is given by\n\\[\\boxed{(x^2 + 1)(x^2 - 4x + 13)}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $z_1$ and $z_2$ be the complex roots of $z^2 + az + b = 0,$ where $a$ and $b$ are complex numbers.  In the complex plane, 0, $z_1,$ and $z_2$ form the vertices of an equilateral triangle.  Find $\\frac{a^2}{b}.$",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Let $z_2 = \\omega z_1,$ where $\\omega = e^{\\pi i/3}.$  Then by Vieta's formulas,\n\\begin{align*}\n-a &= z_1 + z_2 = (1 + \\omega) z_1, \\\\\nb &= z_1 z_2 = \\omega z_1^2.\n\\end{align*}Hence,\n\\begin{align*}\n\\frac{a^2}{b} &= \\frac{(1 + \\omega)^2 z_1^2}{\\omega z_1^2} \\\\\n&= \\frac{\\omega^2 + 2 \\omega + 1}{\\omega} \\\\\n&= \\omega + 2 + \\frac{1}{\\omega} \\\\\n&= e^{\\pi i/3} + 2 + e^{-\\pi i/3} \\\\\n&= \\frac{1}{2} + i \\frac{\\sqrt{3}}{2} + 2 + \\frac{1}{2} - i \\frac{\\sqrt{3}}{2} \\\\\n&= \\boxed{3}.\n\\end{align*}"
-}

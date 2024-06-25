@@ -1,6 +1,0 @@
-{
-    "problem": "What is the probability that a positive integer less than or equal to 24 is a factor of 24? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "There are obviously 24 positive integers less than or equal to 24. Of them, we can count the divisors directly, or use the neat trick of prime factorizing $24 = 2^3 \\cdot 3^1$. Considering that any divisor must be of the form $2^a \\cdot 3^b$ where $0 \\le a \\le 3$ and $0 \\le b \\le 1$ so that there are $4 \\cdot 2 = 8$ factors of 24. So, the probability of a positive integer less than or equal to 24 being a factor of 24 is $\\frac{8}{24} = \\boxed{\\frac{1}{3}}$."
-}

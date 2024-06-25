@@ -1,6 +1,0 @@
-{
-    "problem": "A nonzero polynomial with rational coefficients has all of the numbers \\[1+\\sqrt{2}, \\; 2+\\sqrt{3}, \\;3+\\sqrt{4},\\; \\dots, \\;1000+\\sqrt{1001}\\]as roots. What is the smallest possible degree of such a polynomial?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We know that if a polynomial with rational coefficients has an irrational number $a + \\sqrt{b}$ as a root, then its radical conjugate, $a - \\sqrt{b},$ must also be a root of the polynomial.\n\nFor all $n = 1, 2, \\ldots, 1000,$ the number $n + \\sqrt{n+1}$ is a root of the given polynomial, so we think that each root must have its corresponding conjugate root, which gives $2 \\cdot 1000 = 2000$ roots in total. However, not all of the numbers $n + \\sqrt{n+1}$ are irrational: when $n+1$ is a perfect square, the number is rational (in fact, an integer), so it has no associated radical conjugate.\n\nThere are $30$ values of $n$ for which $n+1$ is a perfect square, since $n+1$ can be any of the perfect squares $2^2, 3^2, \\ldots, 31^2.$ Therefore, we adjust our initial count by $30,$ so that the polynomial must have at least $2000 - 30 = 1970$ roots. Since the number of roots of a polynomial is equal to its degree, the smallest possible degree of the given polynomial is $\\boxed{1970}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $2911_{11}-1392_{11}$. Express your answer in base 11, using A as the digit representing 10 in base 11.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We have\n\n$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c}& & 2 & 9 & 1 & 1_{11}\\\\ -& & 1& 3 & 9 & 2_{11}\\\\ \\cline{1-6}&& 1 & 5 & 2 & A _{11}\\\\ \\end{array}$\n\nSo, our final answer is $\\boxed{152A_{11}}$."
-}

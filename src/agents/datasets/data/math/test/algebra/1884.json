@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $K$ is a constant, such that no pair of real numbers $(x,y)$ satisfies this system of equations: $$6x + 4y = 7$$ $$Kx + 8y = 7$$\n\nWhat is the value of $K$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "A system of linear equations won't have a solution if the two equations in the system contradict each other.  Multiplying the first equation by 2, we get the equations\n\\begin{align*}\n12x + 8y &= 14, \\\\\nKx + 8y &= 7.\n\\end{align*}If $K = 12,$ then the two equations contradict each other.  Otherwise, we can subtract them to get $(K - 12) x = -7.$  We can solve this equation to find $x,$ then substitute to find $y.$\n\nSo the value of $K$ for which the system has no solution is $K = \\boxed{12}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the positive value of $x$ for which\n\\[\\sqrt{\\cfrac{x}{1 + \\sqrt{\\cfrac{x}{1 + \\sqrt{\\cfrac{x}{1 + \\cdots}}}}}} = 8.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We can replace an instance of the expression of itself with 8, to get\n\\[\\sqrt{\\frac{x}{1 + 8}} = 8.\\]Then\n\\[\\frac{x}{9} = 64,\\]so $x = \\boxed{576}.$"
-}

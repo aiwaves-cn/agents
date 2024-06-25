@@ -1,6 +1,0 @@
-{
-    "problem": "For each positive integer $n$, the set of integers $\\{0,1,\\ldots,n-1\\}$ is known as the $\\textit{residue system modulo}$ $n$. Within the residue system modulo $2^4$, let $A$ be the sum of all invertible integers modulo $2^4$ and let $B$ be the sum all of non-invertible integers modulo $2^4$. What is $A-B$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $2^4$ is a power of $2$, the invertible integers are the odd ones $\\{1,3,5,7,9,11,13,15\\}$, and the non-invertible integers are the even ones $\\{0,2,4,6,8,10,12,14\\}$. Thus, \\begin{align*}\nA-B & = (1+3+5+7+9+11+13+15)\\\\\n& \\qquad - (0+2+4+6+8+10+12+14)\\\\\n& = (1-0)+(3-2)+(5-4)+(7-6)+(9-8)\\\\\n&\\qquad+(11-10)+(13-12)+(15-14)\\\\\n& = 1+1+1+1+1+1+1+1=\\boxed{8}.\n\\end{align*}"
-}

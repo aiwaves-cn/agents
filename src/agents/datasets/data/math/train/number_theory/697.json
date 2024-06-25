@@ -1,6 +1,0 @@
-{
-    "problem": "What is the smallest whole number that has a remainder of 1 when divided by 4, a remainder of 1 when divided by 3, and a remainder of 2 when divided by 5?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Let $a$ be the desired number. The given system of congruences is \\begin{align*}\na\\equiv 1\\pmod 3\\\\\na\\equiv 1\\pmod 4\\\\\na\\equiv 2\\pmod 5\n\\end{align*} Since $\\gcd(3,4)=1$, $(1)$ and $(2)$ together imply that $a\\equiv 1\\pmod {12}$. So there exists a non-negative integer $n$ such that $a=1+12n$. Substituting this into $(3)$ yields $$1+12n\\equiv 2\\pmod 5,$$ $$\\implies n\\equiv 3\\pmod 5.$$ So $n$ has a lower bound of $3$. Then $$n\\ge 3,$$ $$\\implies a=1+12n\\ge 37.$$ Since $37$ satisfies all three congruences, $a=\\boxed{37}$."
-}

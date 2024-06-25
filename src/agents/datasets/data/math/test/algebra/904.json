@@ -1,6 +1,0 @@
-{
-    "problem": "When the expression $-2x^2-20x-53$ is written in the form $a(x+d)^2+e$, where $a$, $d$, and $e$ are constants, what is the sum $a+d+e$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We will complete the square to rewrite the given expression in standard form. Factoring out a -2 from the first two terms, we have \\[-2(x^2+10x)-53\\]In order for the expression inside the parenthesis to be a perfect square, we need to add and subtract $(10/2)^2=25$ inside the parenthesis: \\[-2(x^2+10x+25-25)-53 =-2(x+5)^2 -3 \\]Thus, $a=-2$, $d=5$, and $e=-3$, so the sum $a+d+e$ is $-2+5+(-3)=\\boxed{0}$."
-}

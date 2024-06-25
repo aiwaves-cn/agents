@@ -1,6 +1,0 @@
-{
-    "problem": "A regular octahedron is formed by joining the centers of adjoining faces of a cube. The ratio of the volume of the octahedron to the volume of the cube is\n$\\mathrm{(A) \\frac{\\sqrt{3}}{12} } \\qquad \\mathrm{(B) \\frac{\\sqrt{6}}{16} } \\qquad \\mathrm{(C) \\frac{1}{6} } \\qquad \\mathrm{(D) \\frac{\\sqrt{2}}{8} } \\qquad \\mathrm{(E) \\frac{1}{4} }$\n",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Call the length of a side of the cube x. Thus, the volume of the cube is $x^3$. We can then find that a side of this regular octahedron is the square root of $(\\frac{x}{2})^2$+$(\\frac{x}{2})^2$ which is equivalent to $\\frac{x\\sqrt{2}}{2}$. Using our general formula for the volume of a regular octahedron of side length a, which is $\\frac{a^3\\sqrt2}{3}$, we get that the volume of this octahedron is...\n$(\\frac{x\\sqrt{2}}{2})^3 \\rightarrow \\frac{x^3\\sqrt{2}}{4} \\rightarrow \\frac{x^3\\sqrt{2}}{4}*\\frac{\\sqrt{2}}{3} \\rightarrow \\frac{2x^3}{12}=\\frac{x^3}{6}$\nComparing the ratio of the volume of the octahedron to the cube is…\n$\\frac{\\frac{x^3}{6}}{x^3} \\rightarrow \\boxed{\\frac{1}{6}}$"
-}

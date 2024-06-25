@@ -1,6 +1,0 @@
-{
-    "problem": "How many integer values of $n$ satisfy $-50 < n^3 < 50$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We are asked to find the integers whose cubes are between $-50$ and $50$.  Since $f(x)=x^3$ is a monotonically increasing function, we can find the least and the greatest integers satisfying the inequality and count the integers between them, inclusive (see graph).  Since $3^3=27<50$ and $4^3=64>50$, $n=3$ is the largest solution.  Similarly, $n=-3$ is the smallest solution.  Therefore, there are $3-(-3)+1=\\boxed{7}$ solutions.   [asy]size(7cm,8cm,IgnoreAspect);\ndefaultpen(linewidth(0.7));\nimport graph;\n\nreal f(real x)\n{\n\nreturn x*x*x;\n}\n\ndraw(graph(f,-4.5,4.5),Arrows(4));\n\ndraw((-4.5,50)--(4.5,50),linetype(\"3 4\"),Arrows(4));\ndraw((-4.5,-50)--(4.5,-50),linetype(\"3 4\"),Arrows(4));\n\nxaxis(-4.5,4.5,Arrows(4));\nyaxis(-4.5^3,4.5^3,Arrows(4));\n\nlabel(\"$y=50$\",(6,50));\nlabel(\"$y=-50$\",(6,-50));\nlabel(\"$x$\",(4.5,0),E);\nlabel(\"$f(x)=x^3$\",(0,4.5^3),N);\n\nint n;\nfor(n=-3;n<=3;++n)\n\n{\n\ndot((n,n^3));\n\n}\ndot((-4,-64),NoFill);\ndot((4,64),NoFill);\nlabel(\"$(3,27)$\",(3,27),W);\nlabel(\"$(4,64)$\",(4,64),W);[/asy]"
-}

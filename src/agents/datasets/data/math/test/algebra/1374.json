@@ -1,6 +1,0 @@
-{
-    "problem": "The quadratic $4x^2+2x-1$ can be written in the form $a(x+b)^2+c$, where $a$, $b$, and $c$ are constants. What is $a+b+c$?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We complete the square.\n\nFactoring $4$ out of the quadratic and linear terms gives $4x^2 + 2x = 4\\left(x^2 + \\frac12x\\right)$.\n\nSince $\\left(x+\\frac14\\right)^2 = x^2 + \\frac12x + \\frac1{16}$, we can write $$4\\left(x+\\frac14\\right)^2 = 4x^2 + 2x + \\frac14.$$This quadratic agrees with the given $4x^2+2x-1$ in all but the constant term. We can write\n\n\\begin{align*}\n4x^2 + 2x - 1 &= \\left(4x^2 + 2x + \\frac14\\right) - \\frac 54 \\\\\n&= 4\\left(x+\\frac 14\\right)^2 - \\frac 54.\n\\end{align*}Therefore, $a=4$, $b=\\frac14$, $c=-\\frac54$, and $a+b+c = 4+\\frac14-\\frac 54 = \\boxed{3}$."
-}

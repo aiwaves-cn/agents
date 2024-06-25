@@ -1,6 +1,0 @@
-{
-    "problem": "What is the value of $19^2-17^2+15^2-13^2+11^2-9^2+7^2-5^2+3^2-1^2?$",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We can start by pairing the terms in this expression and factoring them as a difference of squares: \\begin{align*}\n&\\phantom{=} \\,\\,\\, (19^2-17^2)+(15^2-13^2)+(11^2-9^2)+(7^2-5^2)+(3^2-1^2) \\\\\n&= 2(19 + 17) + 2(15 + 13) + 2(11 + 9) + 2(7 + 5) + 2(3 + 1)\\\\\n&= 2(19 + 17 + 15 + 13 + 11 + 9 + 7 + 5 + 3 + 1) \\\\\n&= 2(100) \\\\\n&= \\boxed{200}.\n\\end{align*}"
-}

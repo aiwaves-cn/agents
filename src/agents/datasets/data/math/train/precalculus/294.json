@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of ordered pairs $(a,b)$ of complex numbers such that\n\\[a^3 b^5 = a^7 b^2 = 1.\\]",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "From the equation $a^3 b^5 = 1,$ $a^6 b^{10} = 1.$  From the equation $a^7 b^2 = 1,$ $a^{35} b^{10} = 1.$  Dividing these equations, we get\n\\[a^{29} = 1.\\]Therefore, $a$ must be a 29th root of unity.\n\nFrom the equation $a^7 b^2 = 1,$ $a^{14} b^4 = 1.$  Hence,\n\\[\\frac{a^3 b^5}{a^{14} b^4} = 1.\\]This leads to $b = a^{11}.$\n\nConversely, if $a$ is a 29th root of unity, and $b = a^{11},$ then\n\\begin{align*}\na^3 b^5 &= a^3 (a^{11})^5 = a^{58} = 1, \\\\\na^7 b^2 &= a^7 (a^{11})^2 = a^{29} = 1.\n\\end{align*}Therefore, the solutions $(a,b)$ are of the form $(\\omega, \\omega^{11}),$ where $\\omega$ is a 29th root of unity, giving us $\\boxed{29}$ solutions."
-}

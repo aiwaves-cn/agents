@@ -1,6 +1,0 @@
-{
-    "problem": "A regular octagon is formed by cutting an isosceles right triangle from each of the corners of a square with sides of length 2000. What is the length of each side of the octagon? Express your answer in simplest radical form.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $x$ represent the length of each side of the octagon, which is also the length of the hypotenuse of each of the right triangles. Each leg of the right triangles has length $x\\sqrt{2}/2$, so $$2 \\cdot \\frac{x\\sqrt{2}}{2} +x=2000, \\text{ and } x = \\frac{2000}{\\sqrt{2}+1}=\\boxed{2000 \\sqrt{2} - 2000}.$$"
-}

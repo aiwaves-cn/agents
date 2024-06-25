@@ -1,6 +1,0 @@
-{
-    "problem": "Find the units digit of the following:  \\begin{align*}\n& (972 - 268)(973 - 267)(974 - 266) \\\\\n&\\qquad+ (968 - 272)(967 - 273)(966 - 274) - (999 - 222)^3\n\\end{align*}",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We begin by finding the units digit within each set of parentheses.  We get $$ 4 \\cdot 6 \\cdot 8 + 6 \\cdot 4 \\cdot 2 - 7^3. $$Now we combine the units digit of each part to get $$2 + 8 - 3 = \\boxed{7}.$$"
-}

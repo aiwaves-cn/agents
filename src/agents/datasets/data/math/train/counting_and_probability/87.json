@@ -1,6 +1,0 @@
-{
-    "problem": "Alex has 10 different kinds of lunch meat and 9 different kinds of cheese. If he wants to make a sandwich with one kind of meat and two kinds of cheese, how many different sandwiches could he make?  (It does not matter in which order he chooses the two types of cheese.)",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{10}{1}=10$ ways for Alex to choose which kind of lunch meat to put on his sandwich, and there are $\\binom{9}{2}=36$ ways for Alex to choose which kinds of cheese to put on his sandwich. The total number of different sandwiches Alex can make is $10\\cdot 36=\\boxed{360}$."
-}

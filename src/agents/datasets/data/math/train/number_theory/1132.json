@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of positive integers $n \\le 1000$ such that $15n$ is a perfect square.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Since $15 \\mid 15n$, and $15$ is square-free, we must have $15^2 \\mid 15n$, so $15 \\mid n$. Say $n=15a$. Then $15^2 a = 15n$ is a square, and conversely, if $a$ is a square, then $15^2 a$ is a square. Thus we are counting the number of positive squares $a$ such that $15a \\le 1000$ or $a \\le \\frac{200}{3} \\approx 66.6$. The largest such square is $64=8^2$, so the possible values of $a$ are $b^2$ for $b=1,2,3,4,5,6,7,8$, giving $\\boxed{8}$ possible values of $a$ (and hence 8 possible values for $n$)."
-}

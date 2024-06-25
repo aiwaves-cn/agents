@@ -1,6 +1,0 @@
-{
-    "problem": "What is the probability that a randomly selected integer in the set $$\\{1,2,3,\\ldots,100\\}$$  is divisible by 2 and not divisible by 3? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Since $100 = 50\\cdot 2$, there are 50 integers in the set that are divisible by 2.  The numbers among these that are also divisible by 3 are the multiples of 6 in the set.  Dividing 100 by 6 gives $16\\frac23$, so there are 16 multiples of 6 in the set, which leaves $50-16 = 34$ multiples of 2 that are not also multiples of 3.  There are 100 numbers in the set so the desired probability is $\\dfrac{34}{100} = \\boxed{\\dfrac{17}{50}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathcal{S}$ be the set of real numbers that can be represented as repeating decimals of the form $0.\\overline{abc}$ where $a, b, c$ are distinct digits. Find the sum of the elements of $\\mathcal{S}.$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Numbers of the form $0.\\overline{abc}$ can be written as $\\frac{abc}{999}$. There are $10\\times9\\times8=720$ such numbers. Each digit will appear in each place value $\\frac{720}{10}=72$ times, and the sum of the digits, 0 through 9, is 45. So the sum of all the numbers is $\\frac{45\\times72\\times111}{999}= \\boxed{360}$."
-}

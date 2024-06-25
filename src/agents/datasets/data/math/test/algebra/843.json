@@ -1,6 +1,0 @@
-{
-    "problem": "Factor $32x^3-4x^2+20x$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We see that the largest common factor of the coefficients is $4$ and that $x^1$ is the largest power of $x$ which divides all the terms, so we can factor out $4x$ and get $$\\boxed{4x(8x^2-x+5)}.$$"
-}

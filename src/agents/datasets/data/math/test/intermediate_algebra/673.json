@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest positive real number $\\lambda$ such that for any nonnegative real numbers $x,$ $y,$ and $z$ such that $x^2 + y^2 + z^2 = 1,$ the inequality\n\\[\\lambda xy + yz \\le \\frac{\\sqrt{5}}{2}\\]holds.",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We write $x^2 + y^2 + z^2 = 1$ as $x^2 + ay^2 + (1 - a) y^2 + z^2 = 1,$ where $a$ is some real number, $0 \\le a \\le 1,$ that is to be determined.  Then by AM-GM,\n\\[1 = x^2 + ay^2 + (1 - a) y^2 + z^2 \\ge 2xy \\sqrt{a} + 2yz \\sqrt{1 - a}.\\]To make this look more like $\\lambda xy + yz,$ we choose $a$ so that the coefficients are proportional, i.e.\n\\[\\frac{2 \\sqrt{a}}{\\lambda} = 2 \\sqrt{1 - a}.\\]Then $\\sqrt{a} = \\lambda \\sqrt{1 - a},$ so $a = \\lambda^2 (1 - a).$  Solving for $a,$ we find $a = \\frac{\\lambda^2}{\\lambda^2 + 1}.$\n\nTherefore,\n\\[\\frac{2 \\lambda xy}{\\sqrt{\\lambda^2 + 1}} + \\frac{2yz}{\\sqrt{\\lambda^2 + 1}} \\le 1,\\]so\n\\[\\lambda xy + yz \\le \\frac{\\sqrt{\\lambda^2 + 1}}{2}.\\]We want this to equal $\\frac{\\sqrt{5}}{2},$ so $\\lambda = \\boxed{2}.$  Equality occurs when $x = \\frac{\\sqrt{10}}{5},$ $y = \\frac{\\sqrt{2}}{2},$ and $z = \\frac{\\sqrt{10}}{10}.$"
-}

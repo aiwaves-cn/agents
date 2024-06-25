@@ -1,6 +1,0 @@
-{
-    "problem": "Diana can either invest $20,\\!000$ dollars for $4$ years with a simple interest rate of $6\\%$ or an interest rate of $7\\%$ which compounds quarterly. How many more dollars, rounded to the nearest dollar, would she get with the better interest rate than with the worse one?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "She would get $20000 \\cdot 0.06=1200$ dollars per year from the simple interest. This gives her $20000+4\\cdot1200=24800$ dollars in the end.\n\nFor the compounded interest, we use the formula $A=P\\left(1+\\frac{r}{n}\\right)^{nt}$, where $A$ is the end balance, $P$ is the principal, $r$ is the interest rate, $t$ is the number of years, and $n$ is the number of times compounded in a year. This equation represents the idea that the interest is compounded every $1/n$ years with a rate of $r/n$ each time. Substituting the information given, we get $$A=20000\\left(1+\\frac{0.07}{4}\\right)^{4 \\cdot 4}=20000\\left(1+\\frac{0.07}{4}\\right)^{16} \\approx 26399.$$Therefore, she should choose the compounded interest and earn $26399-24800=\\boxed{1599 \\text{ dollars}}$ more."
-}

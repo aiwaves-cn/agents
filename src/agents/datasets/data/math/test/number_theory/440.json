@@ -1,6 +1,0 @@
-{
-    "problem": "Recall that an integer $d$ is said to be a divisor of an integer $a$ if $a/d$ is also an integer. For how many integers $a$ between $-200$ and $-1$ inclusive is the product of the divisors of $a$ negative?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The product of the (positive and negative) divisors of an integer $a$ is negative if $a$ has an odd number of negative divisors. It follows that $-a$ must have an odd number of positive divisors. However, for every positive divisor $d$ of $-a$, then $(-a)/d$ is also a positive divisor of $-a$, so that the positive divisors of $-a$ can be paired up. The exception is if $-a$ is a perfect square, in which case $\\sqrt{-a}$ will not be paired up with another divisor. There are $\\boxed{14}$ perfect squares between $1$ and $200$: $1^2, 2^2, 3^2, \\cdots, 14^2 = 196$."
-}

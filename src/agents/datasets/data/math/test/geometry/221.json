@@ -1,6 +1,0 @@
-{
-    "problem": "In $\\triangle PQR$, we have $PQ = QR = 34$ and $PR = 32$.  Find the length of median $\\overline{QM}$.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "Because $\\triangle PQR$ is isosceles with $PQ=QR$, median $\\overline{QM}$ is also an altitude:\n\n\n[asy]\nsize(100);\npair P,Q,R,M,NN;\nP = (0,0);\nQ = (0.5,0.9);\nR = (1,0);\nNN = (0.5,0);\nM = (Q+R)/2;\ndraw(rightanglemark(Q,NN,P,2.5));\ndraw(P--Q--R--P);\ndraw(Q--NN);\nlabel(\"$P$\",P,SW);\nlabel(\"$R$\",R,SE);\nlabel(\"$Q$\",Q,N);\nlabel(\"$M$\",NN,S);\n[/asy]\n\nWe have $MP = PR/2 = 16$, so right triangle $PQM$ gives us  \\begin{align*}\nQM &= \\sqrt{PQ^2 - PM^2}\\\\\n&= \\sqrt{34^2 - 16^2}\\\\\n&= \\sqrt{(34-16)(34+16)}\\\\\n& = \\boxed{30}.\n\\end{align*}  (We might also have recognized that $PM/PQ = 8/17$, so $QM/PQ = 15/17$.)"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "If $x$ is a real number and $\\lceil x \\rceil = 11,$ how many possible values are there for $\\lceil x^2 \\rceil$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "From $\\lceil x \\rceil = 11,$ we get $10 < x \\le 11.$ Therefore, $100 < x \\le 121,$ so the possible values of $x$ are $101, 102, \\dots, 121.$ Therefore, the number of possible values of $x$ is $121 - 101 + 1 = \\boxed{21}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers less than or equal to 100 have a prime factor that is greater than 4?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The easiest solution is to find the number of positive integers with only 2 and 3 as their prime factors. If the number has no factors of 3, the qualifying numbers are $2^0, 2^1, 2^2, 2^3, 2^4, 2^5, 2^6$ for 7 total. If there is one factor of 3, we have $2^0 \\cdot 3^1, 2^1 \\cdot 3^1, 2^2 \\cdot 3^1, 2^3 \\cdot 3^1, 2^4 \\cdot 3^1, 2^5 \\cdot 3^1$ for 6 total. With two factors of 3, we have $2^0 \\cdot 3^2, 2^1 \\cdot 3^2, 2^2 \\cdot 3^2, 2^3 \\cdot 3^2$ for 4 total. With three factors of 3, we have $2^0 \\cdot 3^3, 2^1 \\cdot 3^3$ for 2 total. Finally, $3^4$ gives us 1 more. So, there are $7+ 6+4+2+1 = 20$ positive integers less than or equal to 100 that have only 2 and 3 as prime factors. Therefore, there are $100-20 = \\boxed{80}$ positive integers less than or equal to 100 that have a prime factor greater than 4."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Find the remainder when $(5x + 9)^{611} + (x + 5)^{11} + (x - 1)^{11} + 3x^2 + 1$ is divided by $x + 2.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "By the Remainder Theorem, to find the remainder, we set $x = -2.$  This gives us\n\\[(-1)^{611} + 3^{11} + (-3)^{11} + 3(-2)^2 + 1 = \\boxed{12}.\\]"
-}

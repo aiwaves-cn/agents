@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\log_2 x^2 + \\log_{1/2} x = 5,$ compute $x.$",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We can write $\\log_2 x^2 = 2 \\log_2 x.$\n\nBy the change-of-base formula,\n\\[\\log_{1/2} x = \\frac{\\log_2 x}{\\log_2 1/2} = -\\log_2 x,\\]so $\\log_2 x = 5.$  Then $x = 2^5 = \\boxed{32}.$"
-}

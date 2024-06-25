@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose we are given seven points that are equally spaced around a circle.  If $P$, $Q$, and $R$ are chosen to be any three of these points, then how many different possible values are there for $m\\angle PQR$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The Inscribed Angle Theorem states that $m\\angle PQR$ is half the measure of arc $PR$. So the measure of angle $\\angle PQR$ depends only on the size of arc $PR$.  The seven given points are equally spaced around the circle, so they divide the circumference into seven congruent arcs.  Arc $PR$ could consist of one, two, three, four, or five of these pieces.  (Draw a few quick pictures if this is not immediately apparent; in particular, convince yourself that enclosing six pieces is not an option.)  Therefore there are only $\\boxed{5}$ different values for $m\\angle PQR$."
-}

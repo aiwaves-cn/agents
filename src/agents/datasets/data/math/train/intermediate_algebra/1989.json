@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x$ and $y$ be real numbers such that $2(x^2 + y^2) = x + y.$  Find the maximum value of $x - y.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We can write $2(x^2 + y^2) = x + y$ as $2x^2 + 2y^2 = x + y.$  Then $2x^2 + 4xy + 2y^2 = x + y + 4xy,$ so\n\\[4xy = 2(x^2 + 2xy + y^2) - (x + y) = 2(x + y)^2 - (x + y).\\]Also,\n\\begin{align*}\n(x - y)^2 &= x^2 - 2xy + y^2 \\\\\n&= (x + y)^2 - 4xy \\\\\n&= (x + y) - (x + y)^2.\n\\end{align*}Completing the square in $x + y,$ we get\n\\[(x - y)^2 = \\frac{1}{4} - \\left( x + y - \\frac{1}{2} \\right)^2 \\le \\frac{1}{4},\\]so $x - y \\le \\frac{1}{2}.$\n\nEquality occurs when $x = \\frac{1}{2}$ and $y = 0,$ so the maximum value is $\\boxed{\\frac{1}{2}}.$"
-}

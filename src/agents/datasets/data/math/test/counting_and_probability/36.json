@@ -1,6 +1,0 @@
-{
-    "problem": "How many different three-digit odd numbers can be formed using the digits 3, 4, 5 and 6 if digits cannot be repeated?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Begin by constructing the number from the units digit and working up to the hundreds digit. There are two possible choices for the units digit: $3$ and $5$ (since the number must be odd). Then, after choosing that digit, there are three possible choices for the tens digit ($4$, $6$, and the remaining odd digit), since digits cannot be repeated. Finally, there are then two possible choices for the hundreds digit. Thus, there are $2 \\cdot 3 \\cdot 2 = \\boxed{12}$ such numbers that can be formed."
-}

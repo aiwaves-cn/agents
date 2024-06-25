@@ -1,6 +1,0 @@
-{
-    "problem": "Each of the first eight prime numbers is placed in a bowl. Two primes are drawn without replacement. What is the probability, expressed as a common fraction, that the sum of the two numbers drawn is a prime number?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "The sum of two prime numbers is greater than $2$, so if this sum is to be prime, it must be odd.  Therefore, one of the primes in the sum must be $2$, and the other must be odd.  The first eight prime numbers are $2, 3, 5, 7, 11, 13, 17,$ and $19$.  Of the odd ones, only $3, 5, 11$, and $17$ added to $2$ give a prime number.  Therefore, there are $4$ possible pairs whose sum is prime.  The total number of pairs is $\\dbinom{8}{2}=28$.  So the probability is $\\frac{4}{28}=\\boxed{\\frac17}$."
-}

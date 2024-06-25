@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate $3210_{7}-2401_{7}$. Express your answer in base 7.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We have\n\n$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c}& & 3 & 2 & 1 & 0_{7}\\\\ -& & 2& 4 & 0 & 1_{7}\\\\ \\cline{1-6}&& & 5 & 0 & 6 _{7}\\\\ \\end{array}$\n\nSo, our final answer is $\\boxed{506_7}$."
-}

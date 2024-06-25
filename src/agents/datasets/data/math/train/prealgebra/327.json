@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, rectangle $PQRS$ is divided into three identical squares. If $PQRS$ has perimeter 120 cm, what is its area, in square centimeters? [asy]\n\nsize(4cm);\n\npair p = (0, 1); pair q = (3, 1); pair r = (3, 0); pair s = (0, 0);\n\ndraw(p--q--r--s--cycle);\n\ndraw(shift(1) * (p--s)); draw(shift(2) * (p--s));\n\nlabel(\"$P$\", p, NW); label(\"$Q$\", q, NE); label(\"$R$\", r, SE); label(\"$S$\", s, SW);\n\n[/asy]",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Let the side length of each of the squares be $x$. [asy]\n\nsize(4cm);\n\npair p = (0, 1); pair q = (3, 1); pair r = (3, 0); pair s = (0, 0);\n\ndraw(p--q--r--s--cycle);\n\ndraw(shift(1) * (p--s)); draw(shift(2) * (p--s));\n\nlabel(\"$P$\", p, NW); label(\"$Q$\", q, NE); label(\"$R$\", r, SE); label(\"$S$\", s, SW);\n\n// x labels\n\npair v = (0, 0.5); pair h = (0.5, 0);\n\nint i;\n\nfor(i = 0; i < 3; ++i) {label(\"$x$\", shift(i) * h, S); label(\"$x$\", shift(i, 1) * h, N);}\n\nlabel(\"$x$\", v, W); label(\"$x$\", shift(3) * v, E);\n\n[/asy] Then the perimeter of $PQRS$ equals $8x$, so $8x = 120$ cm or $x = 15$ cm.\n\nSince $PQRS$ is made up of three squares of side length 15 cm, then its area is  $3(15)^2 = 3(225) = \\boxed{675}$ square centimeters."
-}

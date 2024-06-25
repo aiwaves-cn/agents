@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\frac{60}{2^3\\cdot5^8}$ is expressed as a decimal, how many non-zero digits are to the right of the decimal point?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "Rewriting and reducing the fraction, we get $\\frac{60}{2^3\\cdot5^8} = \\frac{2^2\\cdot3\\cdot5}{2^3\\cdot5^8} = \\frac{3}{2\\cdot5^7}$. Multiplying the numerator and denominator by $2^6$, we obtain\n\\[\\frac{3}{2\\cdot5^7}\\cdot\\frac{2^6}{2^6} = \\frac{3\\cdot2^6}{2^7 \\cdot 5^7} = \\frac{192}{10^7} = .0000192.\\]Therefore, there are $\\boxed{3}$ non-zero digits to the right of the decimal point."
-}

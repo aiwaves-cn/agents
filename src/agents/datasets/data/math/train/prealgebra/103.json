@@ -1,6 +1,0 @@
-{
-    "problem": "Six positive integers from a list of nine positive integers are $6, 7, 2, 4, 8, 5$. What is the largest possible value of the median of this list of nine positive integers?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "If we sort the numbers, we get $2,4,5,6,7,8$. If we want to maximize the median, we should add three numbers larger than 8. This makes the median $\\boxed{7}$."
-}

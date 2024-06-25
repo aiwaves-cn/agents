@@ -1,6 +1,0 @@
-{
-    "problem": "Evaluate the expression \\[ (a^2+b)^2 - (a^2-b)^2, \\]if $a=4$ and $b=1$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Perhaps the fastest way is to use the difference of squares factorization: \\begin{align*}\n(a^2 + b)^2 - (a^2 - b)^2 &= \\bigl[ (a^2 + b) + (a^2 - b) \\bigr] \\cdot\n\\bigl[ (a^2 + b) - (a^2 - b) \\bigr] \\\\\n&= ( a^2 + b + a^2 - b) \\cdot (a^2 + b - a^2 +b ) \\\\\n&= (2 a^2 ) \\cdot (2 b) \\\\\n&= 4 a^2 b. \\end{align*}Since $a= 4$ and $b=1$, this last expression is equal to \\[ 4 \\cdot 4^2 \\cdot 1 = 4 \\cdot 16 = \\boxed{64}, \\]so that is our answer.\n\nWe could also plug in the values of $a$ and $b$ right away and then expand.  We then get \\begin{align*}\n(a^2 + b)^2 - (a^2 - b)^2 &= (4^2 + 1)^2 - (4^2 -1)^2 \\\\\n&= (16 + 1)^2 - (16- 1)^2 \\\\\n&= 17^2 - 15^2 . \\end{align*}Now, $17^2 = 289$, and $15^2 = 225$, so our answer is then \\[ 289 - 225 = 89 -25 = 64, \\]as before."
-}

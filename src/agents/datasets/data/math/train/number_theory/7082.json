@@ -1,6 +1,0 @@
-{
-    "problem": "Let $N$ be the number of ways to write $2010$ in the form $2010 = a_3 \\cdot 10^3 + a_2 \\cdot 10^2 + a_1 \\cdot 10 + a_0$, where the $a_i$'s are integers, and $0 \\le a_i \\le 99$. An example of such a representation is $1\\cdot 10^3 + 3\\cdot 10^2 + 67\\cdot 10^1 + 40\\cdot 10^0$. Find $N$.\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "If we choose $a_3$ and $a_1$ such that $(10^3)(a_3) + (10)(a_1) \\leq 2010$ there is a unique choice of $a_2$ and $a_0$ that makes the equality hold. So $N$ is just the number of combinations of $a_3$ and $a_1$ we can pick. If $a_3 = 0$ or $a_3 = 1$ we can let $a_1$ be anything from $0$ to $99$. If $a_3 = 2$ then $a_1 = 0$ or $a_1 = 1$. Thus $N = 100 + 100 + 2 = \\boxed{202}$."
-}

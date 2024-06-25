@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\log_{10}\\sin x + \\log_{10}\\cos x= -1$ and that $\\log_{10}(\\sin x+\\cos\nx)=\\frac{1}{2}(\\log_{10}n-1)$, find $n$.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Use logarithm properties to obtain $\\log_{10} (\\sin x \\cos x)= -1$, and then $\\sin x \\cos x = \\frac{1}{10}$.  Note that\n\\[(\\sin x+\\cos x)^2 = \\sin^2 x +\\cos^2 x+2\\sin x\\cos x=1+{2\\over10}={12\\over10}.\\]Thus\n\\[2\\log_{10} (\\sin x+\\cos x)= \\log_{10} [(\\sin x + \\cos x)^2] = \\log_{10} {12\\over10}=\\log_{10} 12-1,\\]so\n\\[\\log_{10} (\\sin x+\\cos x)={1\\over2}(\\log_{10} 12-1),\\]and $n=\\boxed{12}$."
-}

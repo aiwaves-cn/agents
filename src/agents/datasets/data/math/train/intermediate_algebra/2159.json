@@ -1,6 +1,0 @@
-{
-    "problem": "Find the smallest positive real number $x$ such that\n\\[\\lfloor x^2 \\rfloor - x \\lfloor x \\rfloor = 6.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Let $n = \\lfloor x \\rfloor$ and $f = \\{x\\}.$  Then $x = n + f,$ so\n\\[\\lfloor n^2 + 2nf + f^2 \\rfloor - (n + f) n = 6.\\]Since $n^2$ is an integer, we can pull it out of the floor, to get\n\\[n^2 + \\lfloor 2nf + f^2 \\rfloor - n^2 - nf = 6.\\]Thus,\n\\[\\lfloor 2nf + f^2 \\rfloor - nf = 6.\\]Since $\\lfloor 2nf + f^2 \\rfloor$ and 6 are integers, $nf$ must also be an integer.  Hence, we can also pull $2nf$ out of the floor, to get\n\\[2nf + \\lfloor f^2 \\rfloor = nf + 6,\\]so $nf + \\lfloor f^2 \\rfloor = 6.$\n\nSince $0 \\le f < 1,$ $0 \\le f^2 < 1,$ so $\\lfloor f^2 \\rfloor = 0.$  Hence, $nf = 6,$ so\n\\[n = \\frac{6}{f}.\\]Since $f < 1,$ $n > 6.$  The smallest possible value of $n$ is then 7.  If $n = 7,$ then $f = \\frac{6}{7},$ so $x = 7 + \\frac{6}{7} = \\frac{55}{7},$ which is a solution.  Thus, the smallest solution $x$ is $\\boxed{\\frac{55}{7}}.$"
-}

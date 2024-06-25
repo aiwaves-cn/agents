@@ -1,6 +1,0 @@
-{
-    "problem": "In the equation $w^3+x^3+y^3=z^3$, $w^3$, $x^3$, $y^3$, and $z^3$ are distinct, consecutive positive perfect cubes listed in ascending order. What is the smallest possible value of $z$?",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since $w$, $x$, $y$, and $z$ are consecutive positive integers, we can replace them with $x-1$, $x$ , $x+1$, and $x+2$.  Substituting these into the equation, we have \\begin{align*}\n(x-1)^3+x^3+(x+1)^3&=(x+2)^3 \\implies \\\\\n(x^3-3x^2+3x-1)+x^3+(x^3+3x^2+3x+1)&=x^3+6x+12x^2+12 \\implies \\\\\n2x^3-6x^2-6x-8 &= 0 \\implies \\\\\nx^3-3x^2-3x-4 &= 0.\n\\end{align*} By the rational root theorem, the only possible rational solutions of the equation are $\\pm1$, $\\pm2$, and $\\pm4$.  Since the question suggests that there are positive integer solutions, we try dividing $x^3-3x^2-3x-4$ by $(x-1)$, $(x-2)$ and $(x-4)$ using synthetic division.  We find that $x^3-3x^2-3x-4=(x-4)(x^2+x+1)$.  The quadratic factor does not factor further since its discriminant is $1^2-4\\cdot1\\cdot1=-3$.  Therefore, $x=4$ is the only integer solution of the equation, which implies that $z=\\boxed{6}$."
-}

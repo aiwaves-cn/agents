@@ -1,6 +1,0 @@
-{
-    "problem": "In square $ABCD$, point $M$ is the midpoint of side $AB$ and point $N$ is the midpoint of side $BC$. What is the ratio of the area of triangle $AMN$ to the area of square $ABCD$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Let each side of the square have length $x$. Then $AM=MB=BN=x/2$. So the area of the triangle is $(x/2)(x/2)/2=x^2/8$. The area of the square is $x\\cdot x= x^2$. The ratio of the two areas is $(x^2/8)/x^2=\\boxed{\\frac{1}{8}}$."
-}

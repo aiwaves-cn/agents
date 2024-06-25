@@ -1,6 +1,0 @@
-{
-    "problem": "Each week, between 30 and 50 students show up for an archery class run by Betty and Wilma.  Usually the students break up into groups of equal size for target practice.  However, this week, Betty noticed that she could not break the students up into multiple groups of equal size.  Wilma noticed that if she and Betty both joined the students in practicing, they still could not break the archers up into groups of equal size.  How many students showed up to the archery class this week?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "Let $n$ be the number of students at class.  Betty noticed that $n$ has no divisors between 1 and itself, so $n$ is prime.  Wilma noticed that $n + 2$ is prime.  This means we are looking for the smaller of two primes that differ by 2 that are between 30 and 50.  The primes in that range are 31, 37, 41, 43, and 47.  Since 41 and 43 differ by 2, $n = \\boxed{41}$."
-}

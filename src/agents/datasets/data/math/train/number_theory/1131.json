@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $7^{2010}$ is divided by $100$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We begin by computing the remainder of some small powers of $7$. As $7^0 = 1, 7^1 = 7,$ and $7^2 = 49$, then $7^3 = 49 \\cdot 7 = 343$ leaves a remainder of $43$ after division by $100$, and $7^4$ leaves the remainder that $43 \\cdot 7 = 301$ does after division by $100$, namely $1$. The sequence of powers thus repeat modulo $100$ again. In particular, the remainder that the powers of $7$ leave after division by $100$ is periodic with period $4$. Then, $7^{2010} = 7^{4 \\cdot 502 + 2}$ leaves the same remainder as $7^2$ does after division by $100$, which is $\\boxed{49}$."
-}

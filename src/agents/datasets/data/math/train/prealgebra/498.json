@@ -1,6 +1,0 @@
-{
-    "problem": "Two years ago there were 20 trailer homes on Elm Street with an average age of 18 years. At that time, a group of brand new trailer homes was then added to Elm Street. Today, the average age of all the trailer homes on Elm Street is 14 years. How many new trailer homes were added two years ago?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The 20 original trailers are now an average of 20 years old, and the $n$ new trailers are all 2 years old.  There are $20+n$ trailers, and the sum of their ages is $20\\cdot20+2n$.  This gives us the equation  \\[\n\\frac{400+2n}{20+n}=14,\n\\] which we solve like this: \\begin{align*}\n400+2n &= 14(20+n) \\\\\n400+2n &= 280+14n \\\\\n120 &= 12n\n\\end{align*} We find that there are $n=\\boxed{10}$ new trailer homes."
-}

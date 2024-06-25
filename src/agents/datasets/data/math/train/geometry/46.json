@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the number of faces, edges and vertices of a triangular prism?\n\n[asy]\ndraw((0,0)--(10,0)--(5,8.7)--cycle);\ndraw((0,0)--(20,20),dashed);\ndraw((10,0)--(30,20));\ndraw((5,8.7)--(25,28.7));\ndraw((25,28.7)--(30,20)--(20,20)--cycle,dashed);\ndraw((25,28.7)--(30,20));\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Faces: There are $3$ on the sides, a top face, and a bottom face, so $5$.\n\nEdges: There are $3$ on the top, $3$ on the bottom, and $3$ connecting them, for $9$.\n\nVertices: There are $3$ on the top and $3$ on the bottom, for $6$.\n\nSo $5+9+6=\\boxed{20}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Assuming that the birth of a boy or a girl is equally likely, what is the probability that the three children in a family include at least one boy and one girl? Express your answer as a common fraction.",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are only two ways for a family of three to not have at least one boy and at least one girl: either the family is all boys, or it is all girls. The probability that a family is all boys is $\\left( \\frac{1}{2} \\right) ^3=\\frac{1}{8}$, and the probability that a family is all girls is also $\\frac{1}{8}$. Therefore, the probability that a family of three is neither all girls nor all boys is $1-\\frac{1}{8}-\\frac{1}{8}=\\boxed{\\frac{3}{4}}$."
-}

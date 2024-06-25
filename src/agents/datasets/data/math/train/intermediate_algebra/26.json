@@ -1,6 +1,0 @@
-{
-    "problem": "Find the $\\emph{positive}$ real number(s) $x$ such that $\\frac{1}{2}\\left( 3x^2-1\\right) = \\left( x^2-50x-10\\right)\\left( x^2+25x+5\\right)$.",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Write $a = x^2-50x-10$ and $b = x^2+25x+5$.  Then the equation given becomes\n\\[\\frac{a+2b-1}{2} = ab,\\]so $0=2ab-a-2b+1=(a-1)(2b-1)$. Then $a-1=x^2-50x-11=0$ or $2b-1=2x^2+50x+9=0$. The former has a positive root, $x=\\boxed{25 + 2\\sqrt{159}}$, while the latter does not."
-}

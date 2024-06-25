@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $a$ and $b$ are positive integers such that $\\gcd(a,b)$ is divisible by exactly $7$ distinct primes and $\\mathop{\\text{lcm}}[a,b]$ is divisible by exactly $28$ distinct primes.\n\nIf $a$ has fewer distinct prime factors than $b$, then $a$ has at most how many distinct prime factors?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "The prime factors of $\\gcd(a,b)$ are precisely the prime factors which are common to $a$ and $b$ (i.e., the primes that divide both). The prime factors of $\\mathop{\\text{lcm}}[a,b]$ are the primes which divide at least one of $a$ and $b$.\n\nThus, there are $7$ primes which divide both $a$ and $b$, and $28-7=21$ more primes which divide exactly one of $a$ and $b$. Since $a$ has fewer distinct prime factors than $b$, we know that fewer than half of these $21$ primes divide $a$; at most, $10$ of these primes divide $a$. So, $a$ has at most $7+10=\\boxed{17}$ distinct prime factors."
-}

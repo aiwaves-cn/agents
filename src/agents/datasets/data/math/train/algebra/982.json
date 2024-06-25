@@ -1,6 +1,0 @@
-{
-    "problem": "For how many positive integers $x$ is $x^2 + 6x + 9$ between 20 and 40?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We see that $x^2 + 6x + 9 = (x + 3)^2$. If $x$ must be positive, we can see that this expression can take on the value of any perfect square that is greater than or equal to 16. Thus, the problem is asking for how many perfect squares there are between 20 and 40. There are only $\\boxed{2}$, namely 25 and 36."
-}

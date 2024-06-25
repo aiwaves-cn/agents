@@ -1,6 +1,0 @@
-{
-    "problem": "A line passes through $(2,2,1)$ and $(5,1,-2).$  A point on this line has an $x$-coordinate of 4.  Find the $z$-coordinate of the point.",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The direction vector of the line is given by\n\\[\\begin{pmatrix} 5 - 2 \\\\ 1 - 2 \\\\ -2 - 1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ -1 \\\\ -3 \\end{pmatrix},\\]so the line is parameterized by\n\\[\\begin{pmatrix} 2 \\\\ 2 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 3 \\\\ -1 \\\\ - 3 \\end{pmatrix} = \\begin{pmatrix} 2 + 3t \\\\  2 - t \\\\ 1 - 3t \\end{pmatrix}.\\]We want the $x$-coordinate to be 4, so $2 + 3t = 4.$  Solving, we find $t = \\frac{2}{3}.$  Then the $z$-coordinate is $1 - 3t = \\boxed{-1}.$"
-}

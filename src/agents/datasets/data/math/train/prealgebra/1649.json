@@ -1,6 +1,0 @@
-{
-    "problem": "Angle PQR is a right angle. The three quadrilaterals shown are squares. The sum of the areas of the three squares is 338 square centimeters. What is the number of square centimeters in the area of the largest square?\n\n[asy]\ndraw((0,0)--(12,0)--(0,5)--cycle);\ndot((0,0));\ndot((12,0));\ndot((0,5));\ndraw((0,0)--(0,5)--(-5,5)--(-5,0)--cycle);\ndraw((0,0)--(0,-12)--(12,-12)--(12,0));\ndraw((0,5)--(5,17)--(17,12)--(12,0)--cycle);\nlabel(\"$P$\",(0,5),NW);\nlabel(\"$Q$\",(0,0),SE);\nlabel(\"$R$\",(12,0),E);\n\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "The sum of the areas of the squares is $PR^2+PQ^2+QR^2$.  By the Pythagorean theorem, $PR^2=PQ^2+QR^2$.  Substituting the left-hand side of this equation for the right-hand side, we find that the sum of the areas of the squares is $PR^2+PR^2=2\\cdot PR^2$.  Setting this equal to 338 square centimeters, we find that $PR^2=338/2=\\boxed{169}$ square centimeters."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The sum of four consecutive positive even integers is a perfect square. What is the least possible sum?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let $2n-2$, $2n$, $2n+2$, and $2n+4$ be four consecutive positive even integers. If $(2n-2)+(2n)+(2n+2)+(2n+4)=8n+4=2^2(2n+1)=m^2$ for some positive integer $m$, then $2n+1$ must be an odd perfect square. $2n+1=1^2$ gives $n=0$, which we reject because our integers are positive. $2n+1=3^2$ gives $n=4$, which yields a sum of $8\\times4+4=36$. Thus, the least possible sum is $\\boxed{36}$."
-}

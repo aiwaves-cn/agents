@@ -1,6 +1,0 @@
-{
-    "problem": "The greatest common divisor of two positive integers is $(x+5)$ and their least common multiple is $x(x+5)$, where $x$ is a positive integer. If one of the integers is 50, what is the smallest possible value of the other one?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We know that $\\gcd(m,n) \\cdot \\mathop{\\text{lcm}}[m,n] = mn$ for all positive integers $m$ and $n$.  Hence, in this case, the other number is \\[\\frac{(x + 5) \\cdot x(x + 5)}{50} = \\frac{x(x + 5)^2}{50}.\\]To minimize this number, we minimize $x$.\n\nWe are told that the greatest common divisor is $x + 5$, so $x + 5$ divides 50.  The divisors of 50 are 1, 2, 5, 10, 25, and 50.  Since $x$ is a positive integer, the smallest possible value of $x$ is 5.  When $x = 5$, the other number is $5 \\cdot 10^2/50 = 10$.\n\nNote that that the greatest common divisor of 10 and 50 is 10, and $x + 5 = 5 + 5 = 10$.  The least common multiple is 50, and $x(x + 5) = 5 \\cdot (5 + 5) = 50$, so $x = 5$ is a possible value.  Therefore, the smallest possible value for the other number is $\\boxed{10}$."
-}

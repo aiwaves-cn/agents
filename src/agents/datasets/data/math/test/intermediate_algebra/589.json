@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x)$ be a quadratic polynomial with integer coefficients which has $3+\\sqrt{7}$ as a root. Compute $\\frac{p(2)}{p(3)}.$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Because $p(x)$ has integer coefficients (in particular, because it has rational coefficients), the other root of $p(x)$ must be the radical conjugate of $3+\\sqrt{7},$ which is $3-\\sqrt{7}.$ Then, $p(x)$ must take the form \\[p(x) = A(x-(3+\\sqrt{7}))(x-(3-\\sqrt{7}))\\]for some nonzero constant $A$. This means that\n\\[p(2) = A(-1+\\sqrt{7})(-1-\\sqrt{7}) = -6A\\]and \\[p(3) = A(\\sqrt{7})(-\\sqrt{7}) = -7A,\\]so \\[\\frac{p(2)}{p(3)} = \\frac{-6A}{-7A} = \\boxed{\\frac{6}{7}}.\\]Alternatively, the roots are $3 + \\sqrt{7}$ and $3 - \\sqrt{7},$ so the sum of the roots is 6 and the product of the roots is $(3 + \\sqrt{7})(3 - \\sqrt{7}) = 9 - 7 = 2,$ so\n\\[p(x) = A(x^2 - 6x + 2)\\]for some nonzero real number $A.$  Then\n\\[\\frac{p(2)}{p(3)} = \\frac{A(-6)}{A(-7)} = \\boxed{\\frac{6}{7}}.\\]"
-}

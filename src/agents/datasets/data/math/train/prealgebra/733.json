@@ -1,6 +1,0 @@
-{
-    "problem": "A round-robin tennis tournament consists of each player playing every other player exactly once.  How many matches will be held during an 8-person round-robin tennis tournament?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "Say you're one of the players.  How many matches will you play?\n\nEach player plays 7 matches, one against each of the other 7 players. So what's wrong with the following reasoning: \"Each of the eight players plays 7 games, so there are $8 \\times 7 = 56$ total games played\"?\n\nSuppose two of the players are Alice and Bob.  Among Alice's 7 matches is a match against Bob.  Among Bob's 7 matches is a match against Alice.  When we count the total number of matches as $8 \\times 7$, the match between Alice and Bob is counted twice, once for Alice and once for Bob.\n\nTherefore, since $8 \\times 7 = 56$ counts each match twice, we must divide this total by 2 to get the total number of matches.  Hence the number of matches in an 8-player round-robin tournament is $\\frac{8 \\times 7}{2} = \\boxed{28}$."
-}

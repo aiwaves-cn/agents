@@ -1,6 +1,0 @@
-{
-    "problem": "If $a,b,c$ are non-negative integers less than $7$ such that \\begin{align*}\na+2b+3c&\\equiv 0\\pmod 7,\\\\\n2a+3b+c&\\equiv 4\\pmod 7,\\\\\n3a+b+2c&\\equiv 4\\pmod 7,\n\\end{align*}then determine the remainder when $abc$ is divided by $7$.",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Adding the three congruences gives \\begin{align*}\n&6(a+b+c)\\equiv 8\\pmod 7\\\\\n\\implies& -(a+b+c) \\equiv 1\\pmod 7.\n\\end{align*}Adding this to each of the congruences yields \\begin{align*}\nb+2c&\\equiv 1\\pmod 7,\\\\\na+2b&\\equiv 5\\pmod 7,\\\\\n2a+c&\\equiv 5\\pmod 7.\n\\end{align*}Substituting $b\\equiv 1-2c\\pmod 7$ into the second one gives \\begin{align*}\n&a+2(1-2c)\\equiv 5\\pmod 7\\\\\n\\implies&a-4c\\equiv 3\\pmod 7\\\\\n\\implies&4c-a\\equiv 4\\pmod 7\\\\\n\\implies&8c-2a\\equiv 8\\pmod 7\\\\\n\\implies&c-2a\\equiv 1\\pmod 7.\n\\end{align*}Adding this to $2a+c\\equiv 5\\pmod 7$ results in $2c\\equiv 6\\pmod 7\\implies c\\equiv 3\\pmod 7$. Finally \\begin{align*}\n&b\\equiv 1-2c\\equiv 1-2\\cdot 3\\equiv 2\\pmod 7,\\\\\n&a\\equiv 5-2b\\equiv 5-2\\cdot 2\\equiv 1\\pmod 7.\n\\end{align*}Thus, $abc\\equiv 1\\cdot 2\\cdot 3\\equiv \\boxed{6}$."
-}

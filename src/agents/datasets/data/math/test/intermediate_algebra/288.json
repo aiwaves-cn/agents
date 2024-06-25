@@ -1,6 +1,0 @@
-{
-    "problem": "What is the average (mean) of all $5$-digit numbers that can be formed by using each of the digits $1$, $3$, $5$, $7$, and $8$ exactly once?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "First, there are $5! = 120$ 5-digit numbers that can be formed from the digits 1, 3, 5, 7, and 8.  The units digit is equal to 1 in $\\frac{1}{5}$ of these numbers.  The units digits is also equal to 3 in $\\frac{1}{5}$ of these numbers, and the same holds for the digits 5, 7, and 8.  The same holds for the tens digits, hundreds digits, thousands digits, and ten thousands digits.  Therefore, the mean of all 120 5-digit numbers is\n\\[11111 \\cdot \\frac{1 + 3 + 5 + 7 + 8}{5} = \\boxed{\\frac{266664}{5}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The digits 2, 3, 4, 7 and 8 will be put in random order to make a positive five-digit integer. What is the probability that the resulting integer will be divisible by 11? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "If the resulting integer is divisible by 11 then the sum of the first, third, and fifth digits has the same remainder when divided by 11 as the sum of the second and fourth digits. This only occurs when the first, third, and fifth digits are 2, 3, and 7 (in some order) and the second and fourth digits are 4 and 8 (in some order).\n\nThere are $\\binom{5}{2}$ total ways to partition these five digits into a group of 3 and a group of 2. From above, only one of these partitions will result in five-digit integers that are divisible by 11. Therefore, our answer is $\\boxed{\\frac{1}{10}}$."
-}

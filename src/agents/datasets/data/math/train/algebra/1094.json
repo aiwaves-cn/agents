@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $d\\not=0$.  We can write $\\left(12d+13+14d^2\\right)+\\left(2d+1\\right)$, in the form $ad+b+cd^2$, where $a$, $b$, and $c$ are integers.  Find $a+b+c$.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "Adding the $d$ terms gives us $14d$.  Adding the constant terms gives us $14$.  Adding the $d^2$ terms gives us $14d^2$.  Adding the terms together gives us ${14d+14+14d^2}$, so $a+b+c = \\boxed{42}$."
-}

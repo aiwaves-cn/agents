@@ -1,6 +1,0 @@
-{
-    "problem": "In the trapezoid shown, the ratio of the area of triangle $ABC$ to the area of triangle $ADC$ is $7:3$. If $AB + CD = 210$ cm, how long is segment $\\overline{AB}$? [asy]\nimport olympiad; size(150); defaultpen(linewidth(0.8));\npair A = (0,0), B = (5,0), C = (3,2), D = (1,2);\ndraw(A--B--C--D--cycle--C);\nlabel(\"$A$\",A,SW); label(\"$B$\",B,SE); label(\"$C$\",C,NE); label(\"$D$\",D,NW);\n[/asy]",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Let $h$ be the height of the trapezoid.  The height of the trapezoid is also a height of $ABC$ and of $ADC$.  Specifically, we have $[ABC] = (AB)(h)/2$ and $[ADC] = (CD)(h)/2$, so $[ABC]:[ADC] = AB:CD$.  Since we are given that this area ratio equals $7:3$, we know that $AB:CD = 7:3$.  Therefore, $AB = 7x$ and $CD = 3x$ for some  value of $x$.  Since $AB + CD = 210$ cm, we have $7x+3x=210$, so $10x=210$ and $x=21$. Therefore,  $AB=7 \\times 21 = \\boxed{147\\text{ cm}}$."
-}

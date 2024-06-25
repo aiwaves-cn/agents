@@ -1,6 +1,0 @@
-{
-    "problem": "In the triangle shown, $n$ is a positive integer, and $\\angle A > \\angle B > \\angle C$.  How many possible values of $n$ are there? [asy]\ndraw((0,0)--(1,0)--(.4,.5)--cycle);\nlabel(\"$A$\",(.4,.5),N); label(\"$B$\",(1,0),SE); label(\"$C$\",(0,0),SW);\nlabel(\"$2n + 12$\",(.5,0),S); label(\"$3n - 3$\",(.7,.25),NE); label(\"$2n + 7$\",(.2,.25),NW);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "The sides of the triangle must satisfy the triangle inequality, so $AB + AC > BC$, $AB + BC > AC$, and $AC + BC > AB$.  Substituting the side lengths, these inequalities turn into \\begin{align*}\n(3n - 3) + (2n + 7) &> 2n + 12, \\\\\n(3n - 3) + (2n + 12) &> 2n + 7, \\\\\n(2n + 7) + (2n + 12) &> 3n - 3,\n\\end{align*} which give us $n > 8/3$, $n > -2/3$, and $n > -22$, respectively.\n\nHowever, we also want $\\angle A > \\angle B > \\angle C$, which means that $BC > AC$ and $AC > AB$.  These inequalities turn into $2n + 12 > 2n + 7$ (which is always satisfied), and $2n + 7 > 3n - 3$, which gives us $n < 10$.\n\nHence, $n$ must satisfy $n > 8/3$ and $n < 10$, which means \\[3 \\le n \\le 9.\\] The number of positive integers in this interval is $9 - 3 + 1 = \\boxed{7}$."
-}

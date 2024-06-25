@@ -1,6 +1,0 @@
-{
-    "problem": "Simplify \\[\\frac{1}{\\dfrac{1}{\\sqrt{2}+1} + \\dfrac{2}{\\sqrt{3}-1}}.\\]",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We first simplify each smaller fractional expression, by multiplying by the conjugate of the denominator: \\[\\frac{1}{\\sqrt2+1} = \\frac{1}{\\sqrt2+1} \\cdot \\frac{\\sqrt2-1}{\\sqrt2-1} = \\sqrt2-1\\]and \\[\\frac{2}{\\sqrt3-1} = \\frac{2}{\\sqrt3-1} \\cdot \\frac{\\sqrt3+1}{\\sqrt3+1} = \\sqrt3+1.\\]Therefore, the given expression becomes \\[\\frac{1}{(\\sqrt2-1)+(\\sqrt3+1)} = \\frac1{\\sqrt2+\\sqrt3}.\\]Multiplying by the conjugate one more time, we have \\[\\frac1{\\sqrt2+\\sqrt3} = \\frac1{\\sqrt2+\\sqrt3} \\cdot \\frac{\\sqrt3-\\sqrt2}{\\sqrt3-\\sqrt2} = \\boxed{\\sqrt3-\\sqrt2}.\\]"
-}

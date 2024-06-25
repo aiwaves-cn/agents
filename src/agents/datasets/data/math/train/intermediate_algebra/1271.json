@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f$ be a function taking the positive integers to the positive integers, such that\n\n(i) $f$ is increasing (i.e. $f(n + 1) > f(n)$ for all positive integers $n$)\n(ii) $f(mn) = f(m) f(n)$ for all positive integers $m$ and $n,$ and\n(iii) if $m \\neq n$ and $m^n = n^m,$ then $f(m) = n$ or $f(n) = m.$\n\nFind the sum of all possible values of $f(30).$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that $2^4 = 4^2,$ so from (iii), either $f(2) = 4$ or $f(4) = 2.$  But from (i),\n\\[f(4) > f(3) > f(2) > f(1),\\]so $f(4) \\ge 4.$   Hence, $f(2) = 4.$  By applying (ii) repeatedly, we find that\n\\[f(2^n) = 2^{2n}\\]for all positive integers $n.$\n\nFrom (i) and (iii),\n\\[f(3)^2 = f(9) > f(8) = 64,\\]so $f(3) \\ge 9.$\n\nSimilarly,\n\\[f(3)^8 = f(3^8) < f(2^{13}) = 2^{26},\\]so $f(3) \\le 9.$  Therefore, $f(3) = 9.$  It follows that $f(3^n) = 3^{2n}$ for all positive integers $n.$\n\nNow,\n\\[f(5)^3 = f(5^3) < f(2^7) = 2^{14},\\]so $f(5) \\le 25.$\n\nAlso,\n\\[f(5)^{11} = f(5^{11}) > f(3^{16}) = 3^{32},\\]so $f(5) \\ge 25.$  Therefore, $f(5) = 25.$\n\nHence,\n\\[f(30) = f(2) f(3) f(5) = 4 \\cdot 9 \\cdot 25 = \\boxed{900}.\\]Note that the function $f(n) = n^2$ satisfies all the given properties.  (It can be shown that the only solutions to $n^m = m^n$ where $m \\neq n$ are $(2,4)$ and $(4,2).$)"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a_{0} = 2$, $a_{1} = 5$, and $a_{2} = 8$, and for $n > 2$ define $a_{n}$ recursively to be the remainder when $4(a_{n-1} + a_{n-2} + a_{n-3})$ is divided by $11$. Find $a_{2018} \\cdot a_{2020} \\cdot a_{2022}$.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "We compute the first few terms:\n\\[\n\\begin{array}{c|c}\nn & a_n \\\\ \\hline\n0 & 2 \\\\\n1 & 5 \\\\\n2 & 8 \\\\\n3 & 5 \\\\\n4 & 6 \\\\\n5 & 10 \\\\\n6 & 7 \\\\\n7 & 4 \\\\\n8 & 7 \\\\\n9 & 6 \\\\\n10 & 2 \\\\\n11 & 5 \\\\\n12 & 8\n\\end{array}\n\\]Since $a_{10} = a_0,$ $a_{11} = a_1,$ $a_{12} = a_2,$ and each term depends only on the previous three terms, the sequence becomes periodic at this point, with period 10.  Therefore,\n\\[a_{2018} a_{2020} a_{2022} = a_8 a_0 a_2 = 7 \\cdot 2 \\cdot 8 = \\boxed{112}.\\]"
-}

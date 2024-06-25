@@ -1,6 +1,0 @@
-{
-    "problem": "The equation $y=-4.9t^2+3.5t+5$ describes the height (in meters) of a ball thrown upward at $3.5$ meters per second from $5$ meters above the ground, where $t$ is the time in seconds. In how many seconds will the ball hit the ground? Express your answer as a common fraction.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "Setting $y$ to zero, we get the quadratic\n\\[-4.9t^2 + 3.5t + 5 = 0.\\]Multiplying both sides by $-10,$ we get\n\\[49t^2 - 35t - 50 = 0.\\]This quadratic factors as $(7t - 10)(7t + 5) = 0.$  As $t$ must be positive, we can see that $t = \\boxed{\\frac{10}{7}}.$"
-}

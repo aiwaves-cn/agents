@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c,$ $d,$ and $e$ be the distinct roots of the equation $x^5 + 7x^4 - 2 = 0.$  Find\n\\begin{align*}\n&\\frac{a^3}{(a - b)(a - c)(a - d)(a - e)} + \\frac{b^3}{(b - a)(b - c)(b - d)(b - e)} \\\\\n&\\quad + \\frac{c^3}{(c - a)(c - b)(c - d)(c - e)} + \\frac{d^3}{(d - a)(d - b)(d - c)(d - e)} \\\\\n&\\quad + \\frac{e^3}{(e - a)(e - b)(e - c)(e - d)}.\n\\end{align*}",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Consider the polynomial\n\\begin{align*}\np(x) &= \\frac{a^3 (x - b)(x - c)(x - d)(x - e)}{(a - b)(a - c)(a - d)(a - e)} + \\frac{b^3 (x - a)(x - c)(x - d)(x - e)}{(b - a)(b - c)(b - d)(b - e)} \\\\\n&\\quad + \\frac{c^3 (x - a)(x - b)(x - d)(x - e)}{(c - a)(c - b)(c - d)(c - e)} + \\frac{d^3 (x - a)(x - b)(x - c)(x - e)}{(d - a)(d - b)(d - c)(d - e)} \\\\\n&\\quad + \\frac{e^3 (x - a)(x - b)(x - c)(x - d)}{(e - a)(e - b)(e - c)(e - d)}.\n\\end{align*}Note that $p(x)$ is a polynomial of degree at most 4.  Also, $p(a) = a^3,$ $p(b) = b^3,$ $p(c) = c^3,$ $p(d) = d^3,$ and $p(e) = e^3.$  Since the polynomial $p(x)$ and $x^3$ agree at five different values, by the Identity Theorem, they are the same polynomial.\n\nThe expression given in the problem is the coefficient of $x^4$ in $p(x),$ which is then $\\boxed{0}.$"
-}

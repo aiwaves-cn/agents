@@ -1,6 +1,0 @@
-{
-    "problem": "How many five-digit zip codes exist such that each of the first three digits is greater than 4?",
-    "level": "Level 2",
-    "type": "Counting & Probability",
-    "solution": "There are five digits greater than $4$ (5, 6, 7, 8, and 9), and each of the first three zip code digits could be any of them. Hence, there are $5\\cdot 5\\cdot 5 = 125$ ways to choose the first three digits. The last two zip code digits have no restrictions, so there are $10 \\cdot 10 = 100$ ways to choose them. Thus, there are $125 \\cdot 100 = \\boxed{12500}$ such zip codes."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "In Perfectville, the streets are all $20$ feet wide and the blocks they enclose are all squares of side length $400$ feet, as shown.  Sarah runs around the block on the $400$-foot side of the street, while Sam runs on the opposite side of the street.  How many more feet than Sarah does Sam run for every lap around the block?\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((1,1)--(9,1));\ndraw((0,0)--(0,10));\ndraw((0,10)--(10,10));\ndraw((10,10)--(10,0));\ndraw((9,1)--(9,9));\ndraw((9,9)--(1,9));\ndraw((1,9)--(1,1));\nfill((1,1)--(1,9)--(9,9)--(9,1)--cycle,gray);\ndraw((9,10.5)--(9,11));\ndraw((10,10.5)--(10,11));\ndraw((9,10.75)--(10,10.75));\nlabel(\"20'\",(9.5,11),N);\ndraw((10.5,9)--(11,9));\ndraw((10.5,10)--(11,10));\ndraw((10.75,9)--(10.75,10));\nlabel(\"20'\",(11,9.5),E);\nlabel(\"400'\",(5,9),S);\nlabel(\"400'\",(9,5),W);\n[/asy]",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "At each corner of the street, Sam runs 40 more feet than Sarah. Otherwise, Sam runs the same distance as Sarah. Since there are four corners, Sam runs $40\\cdot4=\\boxed{160}$ more feet than Sarah does."
-}

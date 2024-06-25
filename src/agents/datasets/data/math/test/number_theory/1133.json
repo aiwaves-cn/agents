@@ -1,6 +1,0 @@
-{
-    "problem": "If $a$ is a positive integer, then $3a^2+19a+30$ and $a^2+6a+9$ are also positive integers. We define the function $f$ such that $f(a)$ is the greatest common divisor of  $3a^2+19a+30$ and $a^2+6a+9$.  Find the maximum possible value of $f(a)- a$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "By the Euclidean algorithm, we have  \\begin{align*}\n&\\text{gcd}(3a^2+19a+30,a^2+6a+9) \\\\\n&\\qquad= \\text{gcd}(3a^2+19a+30,3a^2+19a+30-3(a^2+6a+9)) \\\\\n&\\qquad= \\text{gcd}(3a^2+19a+30,a+3) \\\\\n&\\qquad= a+3,\n\\end{align*}since the integer $3a^2+19a+30$ is divisible by $a+3$ for all integers $a$, as the factorization $3a^2+19a+30=(3a+10)(a+3)$ shows. Thus $f(a)-a$ is equal to 3 for all positive integers $a$, so its maximum value is $\\boxed{3}$."
-}

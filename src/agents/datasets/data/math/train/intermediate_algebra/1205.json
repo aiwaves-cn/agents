@@ -1,6 +1,0 @@
-{
-    "problem": "Find the largest constant $C$ so that\n\\[x^2 + y^2 + 1 \\ge C(x + y)\\]for all real numbers $x$ and $y.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "The given inequality expands as\n\\[x^2 + y^2 + 1 \\ge Cx + Cy.\\]Completing the square in $x$ and $y,$ we get\n\\[\\left( x - \\frac{C}{2} \\right)^2 + \\left( y - \\frac{C}{2} \\right)^2 + 1 - \\frac{C^2}{2} \\ge 0.\\]This inequality holds for all $x$ and $y$ if and only if $1 - \\frac{C^2}{2} \\ge 0,$ or $C^2 \\le 2.$  Thus, the largest possible value of $C$ is $\\boxed{\\sqrt{2}}.$"
-}

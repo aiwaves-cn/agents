@@ -1,6 +1,0 @@
-{
-    "problem": "The diagonals of rectangle $PQRS$ intersect at point $X$.  If $PS = 6$ and $RS=8$, then what is $\\sin \\angle PXS$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]\n\npair P,Q,R,SS,X,F;\n\nSS = (0,0);\n\nP = (0,6);\n\nR = (8,0);\n\nQ= R+P;\n\nX = Q/2;\n\nF = foot(SS,P,R);\n\ndraw(F--SS--R--Q--P--SS--Q);\n\ndraw(P--R);\n\nlabel(\"$P$\",P,NW);\n\nlabel(\"$Q$\",Q,NE);\n\nlabel(\"$R$\",R,SE);\n\nlabel(\"$S$\",SS,SW);\n\nlabel(\"$X$\",X,S);\n\nlabel(\"$F$\",F,NE);\n\ndraw(rightanglemark(S,F,X,12));\n\n[/asy]\n\nTo find $\\sin \\angle PXS$, we build a right triangle with $\\angle PXS$ as one of its acute angles.  We do so by drawing altitude $\\overline{SF}$ from $S$ to diagonal $\\overline{PR}$ as shown.  We then have $\\sin \\angle PXS = \\sin\\angle FXS = \\frac{FS}{XS}$.\n\nThe Pythagorean Theorem gives us $PR = QS = 10$, so $SX = QS/2 = 5$.  We also have $\\triangle FPS \\sim \\triangle SPR$ by AA Similarity (both are right triangles and $\\angle SPR = \\angle FPS$), so\n\\[\\frac{FS}{PS} = \\frac{SR}{PR}.\\]This gives us\n\\[FS = PS \\cdot \\frac{SR}{PR} = \\frac{6\\cdot 8}{10} = \\frac{24}{5}.\\]Finally, we have \\[\\sin \\angle PXS = \\frac{FS}{XS} = \\frac{24/5}{5} = \\boxed{\\frac{24}{25}}.\\]"
-}

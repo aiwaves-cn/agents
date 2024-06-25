@@ -1,6 +1,0 @@
-{
-    "problem": "When the base-16 integer $729_{16}$ is divided by the base 10 number $15$, what is the remainder? Express your answer in base 10.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "We have $$729_{16} = 7\\cdot 16^2 + 2\\cdot 16 + 9.$$ We could actually convert this to base 10 and divide by $15$, but we can also use a clever trick here, writing $16$ as $15+1$ and $16^2$ as $15\\cdot 17+1$. Then \\begin{align*}\n729_{16} &= 7(15\\cdot 17+1) + 2(15+1) + 9 \\\\\n&= 15(7\\cdot 17+2) + (7+2+9) \\\\\n&= (\\text{a multiple of 15}) + 18,\n\\end{align*} so when we divide by $15$, the remainder is the same as the remainder left by $18$. This is $\\boxed{3}$.\n\n(This trick may remind you of the justification for the test of divisibility by $9$ in base $10$. That isn't a coincidence!)"
-}

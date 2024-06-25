@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area enclosed by the region defined by the equation $x^2+y^2+10x+24y=0$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We complete the square on the quadratic in $x$ by adding $(10/2)^2=25$ to both sides, and complete the square on the quadratic in $y$ by adding $(24/2)^2=144$ to both sides. We have the equation  \\[(x^2+10x+25)+(y^2+24y+144)=169 \\Rightarrow (x+5)^2+(y+12)^2=169\\]We see that this is the equation of a circle with center $(-5,-12)$ and radius 13. Thus, the area of the region enclosed by this circle is $\\pi \\cdot 13^2=\\boxed{169\\pi}$."
-}

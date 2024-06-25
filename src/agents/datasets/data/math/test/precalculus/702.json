@@ -1,6 +1,0 @@
-{
-    "problem": "Compute:\n\\[\n\\sin \\frac{\\pi}{12} + \\sin \\frac{3\\pi}{12} + \\sin \\frac{5\\pi}{12} + \\sin \\frac{7\\pi}{12} + \\sin \\frac{9\\pi}{12} + \\sin \\frac{11\\pi}{12}.\n\\]",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "Notice that problem has three pairs of the form $\\sin \\theta + \\sin(\\pi - \\theta).$  The sum-to-product formula yields\n\\begin{align*}\n\\sin \\frac{\\pi}{12} + \\sin \\frac{11\\pi}{12} &= 2 \\sin \\frac{\\pi}{2} \\cos \\frac{5\\pi}{12} \\\\\n&= 2 \\cos \\frac{5\\pi}{12}, \\\\\n\\sin \\frac{3\\pi}{12} + \\sin \\frac{9\\pi}{12} &= 2 \\sin \\frac{\\pi}{2} \\cos \\frac{\\pi}{4} \\\\\n&= \\sqrt{2}, \\\\\n\\sin \\frac{5\\pi}{12} + \\sin \\frac{7\\pi}{12} &= 2 \\sin \\frac{\\pi}{2} \\cos \\frac{\\pi}{12} \\\\\n&= 2 \\cos \\frac{\\pi}{12}.\n\\end{align*}Applying the sum-to-product formula once more yields\n\\begin{align*}\n& \\sin \\frac{\\pi}{12} + \\sin \\frac{3\\pi}{12} + \\sin \\frac{5\\pi}{12} + \\sin \\frac{7\\pi}{12} + \\sin \\frac{9\\pi}{12} + \\sin \\frac{11\\pi}{12} \\\\\n&= \\sqrt{2} + 2 \\Big(\\cos \\frac{5\\pi}{12} + \\cos \\frac{\\pi}{12} \\Big) \\\\\n&= \\sqrt{2} + 4 \\cos \\frac{\\pi}{4} \\cos \\frac{\\pi}{6} \\\\\n&= \\sqrt{2} + 4 \\cdot \\frac{1}{\\sqrt{2}} \\cdot \\frac{\\sqrt{3}}{2} \\\\\n&= \\boxed{\\sqrt{2} + \\sqrt{6}}.\n\\end{align*}"
-}

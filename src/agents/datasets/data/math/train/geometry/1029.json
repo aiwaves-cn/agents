@@ -1,6 +1,0 @@
-{
-    "problem": "In trapezoid $ABCD$ the lengths of the bases $AB$ and $CD$ are 8 and 17 respectively. The legs of the trapezoid are extended beyond $A$ and $B$ to meet at point $E$. What is the ratio of the area of triangle $EAB$ to the area of trapezoid $ABCD$? Express your answer as a common fraction.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "[asy]\npair A,B,C,D,F;\nA = (0,0);\nB = (8,0);\nD = (-4,7);\nC = (13,7);\nF = intersectionpoint(D -- (A + 3*(A-D)), C -- (B + 3*(B-C)));\ndraw(A--F--C--D--A--B);\nlabel(\"$A$\",A,W);\nlabel(\"$B$\",B,E);\nlabel(\"$E$\",F,S);\nlabel(\"$D$\",D,NW);\nlabel(\"$C$\",C,NE);\n[/asy]\n\nTriangles $EAB$ and $EDC$ are similar, and the ratio of their corresponding sides is $\\frac{CD}{AB} = \\frac{17}{8}$. Therefore, we have \\[\\frac{[EDC]}{[EAB]} = \\left(\\frac{17}{8}\\right)^2 = \\frac{289}{64}.\\]  Since $[EDC] = [EAB] + [ABCD]$, we have $\\frac{[ABCD] + [EAB]}{[EAB]} = \\frac{289}{64}$, so \\[\\frac{[ABCD]}{[EAB]} + 1 = \\frac{289}{64}.\\] Therefore, $\\frac{[ABCD]}{[EAB]} = \\frac{225}{64}$, so $\\frac{[EAB]}{[ABCD]} = \\boxed{\\frac{64}{225}}$."
-}

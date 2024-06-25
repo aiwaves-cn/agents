@@ -1,6 +1,0 @@
-{
-    "problem": "What is the greatest number of points of intersection that can occur when $2$ different circles and $2$ different straight lines are drawn on the same piece of paper?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "Make a diagram. Two geometric figures intersect if they have one or more points in common. Draw two circles which intersect in $2$ points. Draw a line which intersects the two circles in $4$ points. Draw another line which intersects the two circles in $4$ points and also intersects the first line. There are $\\boxed{11}$ points of intersection. [asy]\n\ndraw(Circle((-0.7,0),1));\ndraw(Circle((0.7,0),1));\n\ndot((0,0));\n\ndot((0,0.7));\ndot((0,-0.7));\n\ndraw((0,0)--(-2,0.6),Arrow);\ndraw((0,0)--(-2,-0.6),Arrow);\ndraw((0,0)--(2,0.6),Arrow);\ndraw((0,0)--(2,-0.6),Arrow);\n\ndot((-1.58,0.47));\ndot((-1.58,-0.47));\ndot((1.58,0.47));\ndot((1.58,-0.47));\n\ndot((-0.29,0.08));\ndot((-0.29,-0.08));\ndot((0.29,0.08));\ndot((0.29,-0.08));\n\n[/asy]"
-}

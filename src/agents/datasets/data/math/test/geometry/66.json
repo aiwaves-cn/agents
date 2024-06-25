@@ -1,6 +1,0 @@
-{
-    "problem": "Square $ABCD$ has side lengths of 13 units. Point $E$ lies in the interior of the square such that $AE = 5$ units and $BE = 12$ units. What is the distance from $E$ to side $AD$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Since $5^2+12^2=13^2$, triangle $AEB$ is a right triangle.  Define $F$ to be the foot of the perpendicular drawn from $E$ to side $AB$.  The distance from $E$ to side $AD$ is $AF$.  By the similarity of triangles $AEF$ and $ABE$, \\[\n\\frac{AF}{AE}=\\frac{AE}{AB}.\n\\]Solving for $AF$, we find $AF=AE^2/AB=5^2/13=\\boxed{\\frac{25}{13}} = \\boxed{1\\frac{12}{13}}$ units.\n\n[asy]\nunitsize(1.5mm);\ndefaultpen(linewidth(.7pt)+fontsize(10pt));\ndotfactor=3;\npair A=(0,0), B=(13,0), C=(13,13), D=(0,13), E=(1+12/13,sqrt(5^2-(1+12/13)^2)), F=(1+12/13,0);\npair[] dots={A,B,C,D,E,F};\ndraw(A--B--C--D--cycle);\ndraw(A--E--B);\ndraw(E--F);\ndot(dots);\nlabel(\"A\",A,SW);\nlabel(\"B\",B,SE);\nlabel(\"C\",C,NE);\nlabel(\"D\",D,NW);\nlabel(\"E\",E,N);\nlabel(\"F\",F,S);\n[/asy]"
-}

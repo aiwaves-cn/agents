@@ -1,6 +1,0 @@
-{
-    "problem": "The projection of $\\begin{pmatrix} 0 \\\\ 3 \\\\ z \\end{pmatrix}$ onto $\\begin{pmatrix} -3 \\\\ 5 \\\\ -1 \\end{pmatrix}$ is\n\\[\\frac{12}{35} \\begin{pmatrix} -3 \\\\ 5 \\\\ -1 \\end{pmatrix}.\\]Find $z.$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "The projection of $\\begin{pmatrix} 0 \\\\ 3 \\\\ z \\end{pmatrix}$ onto $\\begin{pmatrix} -3 \\\\ 5 \\\\ -1 \\end{pmatrix}$ is\n\\[\\frac{\\begin{pmatrix} 0 \\\\ 3 \\\\ z \\end{pmatrix} \\cdot \\begin{pmatrix} -3 \\\\ 5 \\\\ -1 \\end{pmatrix}}{\\begin{pmatrix} -3 \\\\ 5 \\\\ -1 \\end{pmatrix} \\cdot \\begin{pmatrix} -3 \\\\ 5 \\\\ -1 \\end{pmatrix}} \\begin{pmatrix} -3 \\\\ 5 \\\\ -1 \\end{pmatrix} = \\frac{-z + 15}{35} \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}.\\]Then $-z + 15 = 12,$ so $z = \\boxed{3}.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A=(0,9)$ and $B=(0,12)$. Points $A'$ and $B'$ are on the line $y=x$, and $\\overline{AA'}$ and $\\overline{BB'}$ intersect at $C=(2,8)$. What is the length of $\\overline{A'B'}$?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Line $AC$ has slope $-\\frac{1}{2}$ and $y$-intercept (0,9), so its equation is \\[\ny=-\\frac{1}{2}x+9.\n\\]Since the coordinates of $A'$ satisfy both this equation and $y=x$, it follows that $A'=(6,6)$. Similarly, line $BC$ has equation $y=-2x+12$, and $B'=(4,4)$. Thus \\[\nA'B'= \\sqrt{(6-4)^{2}+(6-4)^{2}}= \\boxed{2\\sqrt{2}}.\n\\][asy]\nunitsize(0.5cm);\ndraw((8,0)--(0,0)--(0,14),linewidth(0.7));\ndraw((0,0)--(10,10),linewidth(0.7));\ndraw((0,12)--(4,4),linewidth(0.7));\ndraw((0,9)--(6,6),linewidth(0.7));\nlabel(\"$A$\",(0,9),NW);\nlabel(\"$B$\",(0,12),NW);\nlabel(\"$C$\",(2.5,9.5),N);\nlabel(\"$(2,8)$\",(2.5,8),N);\nlabel(\"$(0,12)$\",(0,12),SW);\nlabel(\"$(0,9)$\",(0,9),SW);\nlabel(\"$y=x$\",(9,9),SE);\nlabel(\"$A$'\",(6,6),SE);\nlabel(\"$B$'\",(4,4),SE);\n[/asy]"
-}

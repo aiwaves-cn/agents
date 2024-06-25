@@ -1,6 +1,0 @@
-{
-    "problem": "The least common multiple of two integers is 240, and the greatest common divisor is 24. Given that one of the integers is 48, what is the other integer?",
-    "level": "Level 4",
-    "type": "Prealgebra",
-    "solution": "The prime factorization of 48 is $2^4\\cdot3$. Since the greatest common factor is 24, that means the other number also has the factors $2^3$ and 3 but not a fourth 2. When we divide 240 by 48, we get 5. The factors $2^3$ and 3 of the other number are covered by the factors of 48, but the factor 5 must come from the other number. So, the other number is $2^3\\cdot3\\cdot5=\\boxed{120}$."
-}

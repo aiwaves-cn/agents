@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)=2\\sqrt{x} + \\frac{12}{\\sqrt{x}}$ and let $g(x)=2x^2-2x-3$. What is $f(g(3))$?",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We first evaluate $g(3) = 2\\cdot3^2 - 2\\cdot3-3=9$. Therefore $f(g(3))=f(9)=2\\sqrt{9} + \\frac{12}{\\sqrt{9}}= 2\\cdot3 + \\frac{12}{3}=\\boxed{10}$."
-}

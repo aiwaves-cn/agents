@@ -1,6 +1,0 @@
-{
-    "problem": "If $x=720$ and $ax$ is a perfect cube where $a$ is a positive integer, what is the smallest possible value of $\\sqrt[3]{ax}$?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "First we find the prime factorization of 720, which is $2^4\\cdot3^2\\cdot 5$. In order to make a perfect cube, we need two more factors of 2, another factor of 3 and two more factors of 5. So if $a=2^2\\cdot3\\cdot5^2$, we have $ax=(2^2\\cdot3\\cdot5^2)(2^4\\cdot3^2\\cdot 5)=2^6\\cdot3^3\\cdot5^3$. That means $\\sqrt[3]{ax}=2^2\\cdot3\\cdot5=\\boxed{60}$."
-}

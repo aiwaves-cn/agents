@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$."
-}

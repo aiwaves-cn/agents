@@ -1,6 +1,0 @@
-{
-    "problem": "In a kennel with 60 dogs, 9 dogs like watermelon, 48 dogs like salmon, and 5 like both salmon and watermelon.  How many dogs in the kennel will not eat either?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We can solve the problem with a Venn Diagram.  First we know that 5 dogs will eat both salmon and watermelon:\n\n[asy]\nlabel(\"Watermelon\", (2,75));\nlabel(\"Salmon\", (80,75));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$5$\", (44, 45));\n//label(scale(0.8)*\"$126-x$\",(28,58));\n//label(scale(0.8)*\"$129-x$\",(63,58));\n[/asy]\n\nThis tells us that $9-5=4$ of the dogs like only watermelon and $48-5=43$ of the dogs like only salmon.\n\n[asy]\nlabel(\"Watermelon\", (2,75));\nlabel(\"Salmon\", (80,75));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$5$\", (44, 45));\nlabel(scale(0.8)*\"$4$\",(28,45));\nlabel(scale(0.8)*\"$43$\",(63,45));\n[/asy]\n\nTherefore $5+4+43=52$ of the dogs like at least one of these foods.  Therefore $60-52=\\boxed{8}$ dogs do not like watermelon or salmon."
-}

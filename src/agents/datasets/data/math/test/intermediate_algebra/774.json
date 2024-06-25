@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a,$ $b,$ $c$ be the roots of $x^3 + 2x^2 + 5x + 7 = 0.$  Compute\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}.\\]",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By Vieta's formulas, $ab + ac + bc = 5$ and $abc = -7,$ so\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} = \\frac{ab + ac + bc}{abc} = \\boxed{-\\frac{5}{7}}.\\]"
-}

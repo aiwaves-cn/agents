@@ -1,6 +1,0 @@
-{
-    "problem": "Find all $x$ between $-\\frac{\\pi}{2}$ and $\\frac{\\pi}{2}$ such that $1 - \\sin^4 x - \\cos^2 x = \\frac{1}{16}.$  Enter all the solutions, separated by commas.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Since $1 - \\cos^2 x = \\sin^2 x,$ the equation becomes $\\sin^2 x - \\sin^4 x = \\frac{1}{16},$ or\n\\[\\sin^4 x - \\sin^2 x + \\frac{1}{16} = 0.\\]We can write this as a quadratic equation in $\\sin^2 x$:\n\\[(\\sin^2 x)^2 - \\sin^2 x + \\frac{1}{16} = 0.\\]By the quadratic formula,\n\\[\\sin^2 x = \\frac{2 \\pm \\sqrt{3}}{4}.\\]Then\n\\[\\cos 2x = 1 - 2 \\sin^2 x = \\pm \\frac{\\sqrt{3}}{2}.\\]The solutions in the interval $-\\frac{\\pi}{2} \\le x \\le \\frac{\\pi}{2}$ are $\\boxed{-\\frac{5 \\pi}{12}, -\\frac{\\pi}{12}, \\frac{\\pi}{12}, \\frac{5 \\pi}{12}}.$"
-}

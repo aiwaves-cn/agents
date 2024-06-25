@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $ABC$ is a straight line.  What is the value of $x$?\n\n[asy]\ndraw((-10,0)--(10,0));\ndraw((0,0)--(7.66,6.43));\nlabel(\"$A$\",(-10,0),W);\nlabel(\"$B$\",(0,0),S);\nlabel(\"$C$\",(10,0),E);\nlabel(\"$x^\\circ$\",(0,0),NW);\nlabel(\"$40^\\circ$\",(1.5,0),NE);\n[/asy]",
-    "level": "Level 1",
-    "type": "Prealgebra",
-    "solution": "Since the angles along a straight line add to $180^\\circ$, then $x^\\circ+40^\\circ=180^\\circ$ or $x+40=180$ or $x=\\boxed{140}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "The real numbers $a$ and $b$ satisfy\n\\[\\begin{pmatrix} 2 \\\\ a \\\\ -7 \\end{pmatrix} \\times \\begin{pmatrix} 5 \\\\ 4 \\\\ b \\end{pmatrix} = \\mathbf{0}.\\]Enter the ordered pair $(a,b).$",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "In general, $\\mathbf{v} \\times \\mathbf{w} = \\mathbf{0}$ if and only if the vectors $\\mathbf{v}$ and $\\mathbf{w}$ are proportional.  Thus, the vectors $\\begin{pmatrix} 2 \\\\ a \\\\ -7 \\end{pmatrix}$ and $\\begin{pmatrix} 5 \\\\ 4 \\\\ b \\end{pmatrix}$ are proportional.  Thus,\n\\[\\frac{5}{2} = \\frac{4}{a} = \\frac{b}{-7}.\\]Solving, we find $(a,b) = \\boxed{\\left( \\frac{8}{5}, -\\frac{35}{2} \\right)}.$"
-}

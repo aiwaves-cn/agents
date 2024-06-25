@@ -1,6 +1,0 @@
-{
-    "problem": "Find the domain of the function $\\frac{x^4-4x^3+6x^2-4x+1}{x^2-4}$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "Because we cannot divide by zero, values of $x$ that make the denominator of the fraction equal to zero must be excluded from the domain. Thus, we must first find all values of $x$ that satisfy the equation $x^2-4=0$. Since this factors as $(x+2)(x-2)=0$, the only two values we need to exclude from the domain are $2$ and $-2$. This gives us the solution $x\\in\\boxed{(-\\infty,-2)\\cup(-2, 2)\\cup(2,\\infty)}$."
-}

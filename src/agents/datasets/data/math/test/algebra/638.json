@@ -1,6 +1,0 @@
-{
-    "problem": "Let $P=(a,b)$ be the point of intersection of the line $y=2x-10$ and the line through $(7,8)$ and $(9,0)$.  Compute $a+b$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "The slope of the line through $(7,8)$ and $(9,0)$ is $\\frac{8-0}{7-9}=\\frac{8}{-2}=-4$.  Thus, the line has equation $y=-4x+b$ for some $b$.  Since $B(9,0)$ lies on this line, we have $0=-4(9)+b \\Rightarrow b=36$, and thus the equation of the line is $y=-4x+36$.\n\nTo determine the point of intersection between the lines having equations $y=-4x+36$ and $y=2x-10$, we set the two expressions for $y$ equal to each other and solve for $x$.  We have $-4x+36=2x-10 \\Rightarrow x = \\frac{23}{3}$.  It follows that  $y=2x-10=2\\left(\\frac{23}{3}\\right)-10 = \\frac{46}{3}-\\frac{30}{3}=\\frac{16}{3}$.\n\nThus, $P=(\\frac{23}{3},\\frac{16}{3})$ and $a+b=\\frac{23}{3}+\\frac{16}{3}=\\frac{39}{3}=\\boxed{13}$."
-}

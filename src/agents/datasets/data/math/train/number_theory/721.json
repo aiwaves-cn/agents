@@ -1,6 +1,0 @@
-{
-    "problem": "What is the tenth positive integer that is both odd and a multiple of 3?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "The first odd multiple of 3 is 3. The next is 9, then 15, 21, adding 6 each time. The $n$th odd multiple of 3 is $6n-3$; the 10th odd multiple of 3 is therefore $60-3=\\boxed{57}$."
-}

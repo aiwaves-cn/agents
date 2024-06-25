@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area, in square units, of a trapezoid bounded by the lines $y = x$, $y = 10$, $y = 5$ and the $y$-axis? Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 3",
-    "type": "Geometry",
-    "solution": "The vertices of the trapezoid are $(5,5)$, $(10,10)$, $(0,10)$, and $(0,5)$.  Its bases are $5$ and $10$ units long, and its height is $5$ units.  Averaging the bases and multiplying by the height, we find an area of $\\left(\\frac{5+10}{2}\\right)(5)=\\boxed{37.5}$ square units.\n\n[asy]\nunitsize(2mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\ndotfactor=4;\n\nfill((5,5)--(10,10)--(0,10)--(0,5)--cycle,gray);\n\ndraw((-12,-12)--(14,14),Arrows(4));\ndraw((-14,10)--(14,10),Arrows(4));\ndraw((-14,5)--(14,5),Arrows(4));\n\ndraw((-15,0)--(15,0),Arrows(4));\ndraw((0,-15)--(0,15),Arrows(4));\n\nlabel(\"$y=x$\",(14,14),NE);\nlabel(\"$y=10$\",(14,10),E);\nlabel(\"$y=5$\",(14,5),E);[/asy]"
-}

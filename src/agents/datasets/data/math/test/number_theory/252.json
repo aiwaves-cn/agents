@@ -1,6 +1,0 @@
-{
-    "problem": "What is the remainder when $7!$ is divided by $23$?\n\n(Note: $n!$ means \"n factorial\", defined as the product of all integers from $1$ to $n$.)",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "$7!$ is defined as $1\\cdot 2\\cdot 3\\cdot 4\\cdot 5\\cdot 6\\cdot 7$.\n\nNote that $1\\cdot 2\\cdot 3\\cdot 4 = 24 \\equiv 1\\pmod{23}$. So, $$7! \\equiv 1\\cdot 5\\cdot 6\\cdot 7\\pmod{23}.$$Furthermore, we have $1\\cdot 5\\cdot 6 = 30\\equiv 7 \\pmod{23}$, so \\begin{align*}\n7! &\\equiv 7\\cdot 7 \\\\\n&= 49 \\\\\n&\\equiv 3 \\pmod{23}.\n\\end{align*}The remainder is $\\boxed{3}$."
-}

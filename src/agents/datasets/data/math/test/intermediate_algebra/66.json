@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f$ be a linear function with the properties that $f(1) \\le\nf(2)$, $f(3) \\ge f(4)$, and $f(5) = 5$.  Which of the following statements is true?\n\nA) $f(0) < 0$\n\nB) $f(0) = 0$\n\nC) $f(1) < f(0) < f(-1)$\n\nD) $f(0) = 5$\n\nE) $f(0) > 5$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Since $f$ is a linear function, it has the form $f(x) = mx + b$. Because $f(1) \\le f(2)$, we have $m\n\\ge 0$.  Similarly, $f(3) \\ge f(4)$ implies $m \\le 0$. Hence, $m = 0$, and $f$ is a constant function.  Thus, $f(0) =\nf(5) = 5$, which means $\\boxed{\\text{D}}$ is true."
-}

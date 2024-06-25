@@ -1,6 +1,0 @@
-{
-    "problem": "If the product $(3x^2 - 5x + 4)(7 - 2x)$ can be written in the form $ax^3 + bx^2 + cx + d$, where $a,b,c,d$ are real numbers, then find $8a + 4b + 2c + d$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "One can find this by multiplying the two polynomials and computing the coefficients. Alternatively, we notice that the desired expression is simply the value of $ax^3+bx^2+cx+d$ evaluated at the point $x=2$: $a(2)^3 + b(2)^2 + c(2) + d = 8a + 4b + 2c + d$. Since $(3x^2 - 5x + 4)(7 - 2x)$ and  $ax^3+bx^2+cx+d$ are equivalent expressions, they are equal for all real values of $x$.  In particular, they are equal when $x=2$. So $8a+4b+2c+d=(3 \\cdot (2)^2 - 5 \\cdot (2) + 4)(7 - 2 \\cdot (2)) = 6 \\cdot 3 = \\boxed{18}.$"
-}

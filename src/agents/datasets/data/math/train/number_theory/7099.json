@@ -1,6 +1,0 @@
-{
-    "problem": "How many positive integers $n$ satisfy\\[\\dfrac{n+1000}{70} = \\lfloor \\sqrt{n} \\rfloor?\\](Recall that $\\lfloor x\\rfloor$ is the greatest integer not exceeding $x$.)\n$\\textbf{(A) } 2 \\qquad\\textbf{(B) } 4 \\qquad\\textbf{(C) } 6 \\qquad\\textbf{(D) } 30 \\qquad\\textbf{(E) } 32$\n",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First notice that the graphs of $(n+1000)/70$ and $\\sqrt[]{n}$ intersect at 2 points. Then, notice that $(n+1000)/70$ must be an integer. This means that n is congruent to $50 \\pmod{70}$.\nFor the first intersection, testing the first few values of $n$ (adding $70$ to $n$ each time and noticing the left side increases by $1$ each time) yields $n=20$ and $n=21$. Estimating from the graph can narrow down the other cases, being $n=47$, $n=50$. This results in a total of $\\boxed{6}$ cases."
-}

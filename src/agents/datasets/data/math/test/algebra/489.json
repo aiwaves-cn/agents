@@ -1,6 +1,0 @@
-{
-    "problem": "The graph of $y=ax^2+bx+c$ is given below, where $a$, $b$, and $c$ are integers.  Find $a+b+c$.\n\n[asy]\nLabel f;\n\nf.p=fontsize(4);\n\nxaxis(-3,3,Ticks(f, 1.0));\n\nyaxis(-4,4,Ticks(f, 1.0));\n\nreal f(real x)\n\n{\n\nreturn -2x^2+4x+1;\n\n}\n\ndraw(graph(f,-.7,2.7),linewidth(1),Arrows(6));\n[/asy]",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "When $x=1$ we have $y=a+b+c$.  Since $a$, $b$, and $c$ are integers, we know that $y$ must be an integer when $x=1$.  The graph passes through $(1,3)$, so $y=3$ when $x=1$, which means $a+b+c=\\boxed{3}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "How many four-digit integers are less than 8000 and greater than 2000?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We must count the numbers in the list \\[2001, 2002, 2003, \\ldots, 7999.\\] Subtracting 2000 from each number in the list gives \\[1,2,3,\\ldots, 5999,\\] so there are $\\boxed{5999}$ numbers in the list."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\n-x - 3 & \\text{if } x \\le 1, \\\\\n\\frac{x}{2} + 1 & \\text{if } x > 1.\n\\end{array}\n\\right.\\]Find the sum of all values of $x$ such that $f(x) = 0$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We solve the equation $f(x) = 0$ on the domains $x \\le 1$ and $x > 1.$\n\nIf $x \\le 1,$ then $f(x) = -x - 3,$ so we want to solve $-x - 3 = 0.$ The solution is $x = -3,$ which satisfies $x \\le 1.$\n\nIf $x > 1,$ then $f(x) = \\frac{x}{2} + 1,$ so we want to solve $\\frac{x}{2} + 1 = 0.$ The solution is $x = -2,$ but this value does not satisfy $x > 1.$\n\nTherefore, the only solution is $x = \\boxed{-3}.$"
-}

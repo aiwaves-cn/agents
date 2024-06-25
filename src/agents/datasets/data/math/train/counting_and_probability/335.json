@@ -1,6 +1,0 @@
-{
-    "problem": "Bertha has 6 daughters and no sons. Some of her daughters have 6 daughters, and the rest have none. Bertha has a total of 30 daughters and granddaughters, and no great-granddaughters. How many of Bertha's daughters and granddaughters have no daughters?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "Bertha has $30 - 6 = 24$ granddaughters, none of whom have any daughters. The granddaughters are the children of $24/6 = 4$ of Bertha's daughters, so the number of women  having no daughters is $30 - 4 = \\boxed{26}$."
-}

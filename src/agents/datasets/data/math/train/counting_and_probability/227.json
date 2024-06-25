@@ -1,6 +1,0 @@
-{
-    "problem": "Consider a regular octagon.  How many triangles can be formed whose vertices are the vertices of the octagon?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "No three vertices are collinear, so any combination of 3 vertices will make a triangle. There are 8 ways to choose the first point, 7 ways to choose the second point, and 6 ways to choose the third point, but we must divide by $3!$ since order doesn't matter.  So the answer is $\\dfrac{8 \\times 7 \\times 6}{3!} = \\boxed{56}$."
-}

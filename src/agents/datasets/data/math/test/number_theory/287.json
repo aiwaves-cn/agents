@@ -1,6 +1,0 @@
-{
-    "problem": "Let $S$ be the set of all integers $k$ such that, if $k$ is in $S$, then $\\frac{17k}{66}$ and $\\frac{13k}{105}$ are terminating decimals. What is the smallest integer in $S$ that is greater than 2010?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let us first analyze the fraction $\\frac{17k}{66}$. We can rewrite this fraction as $\\frac{17k}{2 \\cdot 3 \\cdot 11}$. Since the denominator can only contain powers of 2 and 5, we have that $k$ must be a multiple of 33. We now continue to analyze the fraction $\\frac{13k}{105}$. We rewrite this fraction as $\\frac{13k}{3 \\cdot 5 \\cdot 7}$, and therefore deduce using similar logic that $k$ must be a multiple of 21. From here, we proceed to find the least common multiple of 21 and 33. Since $21 = 3 \\cdot 7$ and $33 = 3 \\cdot 11$, we conclude that the least common multiple of 21 and 33 is $3 \\cdot 7 \\cdot 11 = 231$.\n\nWe now know that $S$ contains exactly the multiples of 231. The smallest multiple of 231 that is greater than 2010 is $231 \\cdot 9 = \\boxed{2079}$."
-}

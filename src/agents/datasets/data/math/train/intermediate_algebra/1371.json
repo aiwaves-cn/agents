@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x) = ax^6 + bx^4 - cx^2 + 3.$  If $f(91) = 1$, find $f(91) + f(-91)$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "Since only the even exponents have non-zero coefficients, $f$ is an even function, and we know that $f(-x) = f(x)$. Hence $f(-91) = f(91) = 1$ and $f(91) + f(-91) = 1+1 = \\boxed{2}.$"
-}

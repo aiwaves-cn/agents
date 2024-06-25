@@ -1,6 +1,0 @@
-{
-    "problem": "Let $\\mathbf{A} = \\begin{pmatrix} 15 & 25 \\\\ -9 & -15 \\end{pmatrix}.$  Compute\n\\[\\mathbf{I} + 2 \\mathbf{A} + 3 \\mathbf{A}^2 + 4 \\mathbf{A}^3 + \\dotsb.\\]",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Note that\n\\[\\mathbf{A}^2 = \\begin{pmatrix} 15 & 25 \\\\ -9 & -15 \\end{pmatrix} \\begin{pmatrix} 15 & 25 \\\\ -9 & -15 \\end{pmatrix} = \\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix} = \\mathbf{0}.\\]Therefore, $\\mathbf{A}^n = \\mathbf{0}$ for all $n \\ge 2,$ which means\n\\begin{align*}\n\\mathbf{I} + 2 \\mathbf{A} + 3 \\mathbf{A}^2 + 4 \\mathbf{A}^3 + \\dotsb &= \\mathbf{I} + 2 \\mathbf{A} \\\\\n&= \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} + 2 \\begin{pmatrix} 15 & 25 \\\\ -9 & -15 \\end{pmatrix} \\\\\n&= \\boxed{\\begin{pmatrix} 31 & 50 \\\\ -18 & -29 \\end{pmatrix}}.\n\\end{align*}"
-}

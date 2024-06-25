@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\sin x + \\cos x = \\frac{1}{5}$ and $0 < x < \\pi,$ find $\\tan x.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "From the given equation, $\\cos x = \\frac{1}{5} - \\sin x.$  Substituting into $\\cos^2 x + \\sin^2 x = 1,$ we get\n\\[\\left( \\frac{1}{5} - \\sin x \\right)^2 + \\sin^2 x = 1.\\]This simplifies to $25 \\sin^2 x - 5 \\sin x - 12 = 0,$ which factors as $(5 \\sin x - 4)(5 \\sin x + 3) = 0.$  Since $0 < x < \\pi,$ $\\sin x$ is positive, so $\\sin x = \\frac{4}{5}.$\n\nThen $\\cos x = \\frac{1}{5} - \\sin x = -\\frac{3}{5},$ so\n\\[\\tan x = \\frac{\\sin x}{\\cos x} = \\frac{-4/5}{3/5} = \\boxed{-\\frac{4}{3}}.\\]"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $a,$ $b,$ $c,$ $d,$ $e$ are real numbers such that\n\\begin{align*}\na + b + c + d + e &= 8, \\\\\na^2 + b^2 + c^2 + d^2 + e^2 &= 16.\n\\end{align*}Determine the maximum value of $e.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "By Cauchy-Schwarz,\n\\[(a^2 + b^2 + c^2 + d^2)(1 + 1 + 1 + 1) \\ge (a + b + c + d)^2.\\]Thus, $(16 - e^2)(4) \\ge (8 - e)^2.$  This simplifies to $16e - 5e^2 \\ge 0,$ or $e(16 - 5e) \\ge 0.$  Therefore, $e \\le \\frac{16}{5}.$\n\nEquality occurs when $a = b = c = d = \\frac{6}{5}$ and $e = \\frac{16}{5},$ so the maximum value of $e$ is $\\boxed{\\frac{16}{5}}.$"
-}

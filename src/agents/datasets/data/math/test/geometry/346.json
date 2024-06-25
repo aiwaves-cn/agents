@@ -1,6 +1,0 @@
-{
-    "problem": "In the diagram, $\\triangle PQR$ is isosceles.  What is the value of $x$? [asy]\ndraw((0,0)--(3,6)--(6,0)--cycle);\ndraw((7,-2)--(6,0)--(8,0));\nlabel(\"$Q$\",(0,0),W);\nlabel(\"$R$\",(6,0),SW);\nlabel(\"$P$\",(3,6),N);\nlabel(\"$x^\\circ$\",(6.5,0),SE);\nlabel(\"$40^\\circ$\",(3,5.2),S);\ndraw((1.3,3.1)--(1.7,2.9));\ndraw((4.3,2.9)--(4.7,3.1));\n[/asy]",
-    "level": "Level 1",
-    "type": "Geometry",
-    "solution": "Since $PQ=PR$, we have $\\angle PQR = \\angle PRQ$.  From $\\triangle PQR$, we have $40^\\circ+\\angle PQR+\\angle PRQ=180^\\circ$, so $\\angle PQR+\\angle PRQ=140^\\circ$. Since $\\angle PQR = \\angle PRQ$, we have $\\angle PQR = \\angle PRQ = 70^\\circ$.  The angle labelled as $x^\\circ$ is opposite $\\angle PRQ$, so $x^\\circ = \\angle PRQ = 70^\\circ$, so $x=\\boxed{70}$."
-}

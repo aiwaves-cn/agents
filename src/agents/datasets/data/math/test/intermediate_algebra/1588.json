@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real values of $r$ that satisfy $\\frac1r > \\frac1{r-1} + \\frac1{r-4}.$ (Give your answer in interval notation.)",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Moving all the terms to the left-hand side, we have \\[\\frac1r - \\frac1{r-1} - \\frac1{r-4} > 0.\\]To solve this inequality, we find a common denominator: \\[\\frac{(r-1)(r-4) - r(r-4) - r(r-1)}{r(r-1)(r-4)} > 0,\\]which simplifies to \\[\\frac{-(r-2)(r+2)}{r(r-1)(r-4)} > 0.\\]Therefore, we want the values of $r$ such that  \\[f(r) = \\frac{(r-2)(r+2)}{r(r-1)(r-4)} < 0.\\]To solve this inequality, we make the following sign table: \\begin{tabular}{c|ccccc|c} &$r-2$ &$r+2$ &$r$ &$r-1$ &$r-4$ &$f(r)$ \\\\ \\hline$r<-2$ &$-$&$-$&$-$&$-$&$-$&$-$\\\\ [.1cm]$-2<r<0$ &$-$&$+$&$-$&$-$&$-$&$+$\\\\ [.1cm]$0<r<1$ &$-$&$+$&$+$&$-$&$-$&$-$\\\\ [.1cm]$1<r<2$ &$-$&$+$&$+$&$+$&$-$&$+$\\\\ [.1cm]$2<r<4$ &$+$&$+$&$+$&$+$&$-$&$-$\\\\ [.1cm]$r>4$ &$+$&$+$&$+$&$+$&$+$&$+$\\\\ [.1cm]\\end{tabular}Putting it all together, the solutions to the inequality are \\[r \\in \\boxed{(-\\infty, -2) \\cup (0, 1) \\cup (2, 4)}.\\]"
-}

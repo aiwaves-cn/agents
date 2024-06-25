@@ -1,6 +1,0 @@
-{
-    "problem": "How many four-digit positive integers have at least one digit that is a 2 or a 3?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are 9000 four-digit positive integers. For those without a 2 or 3, the first digit could be one of the seven numbers 1, 4, 5, 6, 7, 8, or 9, and each of the other digits could be one of the eight numbers 0, 1, 4, 5, 6, 7, 8, or 9. So there are \\[\n9000- 7\\cdot 8\\cdot 8\\cdot 8=\\boxed{5416}\n\\] four-digit numbers  with at least one digit that is a 2 or a 3."
-}

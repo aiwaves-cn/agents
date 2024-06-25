@@ -1,6 +1,0 @@
-{
-    "problem": "If $321_{b}$ is equal to the base 10 integer 57, find $b$ given that $b>0$.",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Converting $321_{b}$ to base 10 and setting it equal to 57, we find that  \\begin{align*} 3(b^2)+2(b^1)+1(b^0)&=57\n\\\\ 3b^2+2b+1&=57\n\\\\\\Rightarrow\\qquad 3b^2+2b-56&=0\n\\\\\\Rightarrow\\qquad (3b+14)(b-4)&=0\n\\end{align*}This tells us that $b$ is either $-\\frac{14}{3}$ or $4$. We know that $b>0$, so $b=\\boxed{4}$."
-}

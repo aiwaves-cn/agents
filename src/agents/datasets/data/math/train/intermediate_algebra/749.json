@@ -1,6 +1,0 @@
-{
-    "problem": "Suppose $a,$ $b,$ and $c$ are real numbers such that\n\\[\\frac{ac}{a + b} + \\frac{ba}{b + c} + \\frac{cb}{c + a} = -9\\]and\n\\[\\frac{bc}{a + b} + \\frac{ca}{b + c} + \\frac{ab}{c + a} = 10.\\]Compute the value of\n\\[\\frac{b}{a + b} + \\frac{c}{b + c} + \\frac{a}{c + a}.\\]",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Adding the given equations, we get\n\\[\\frac{c(a + b)}{a + b} + \\frac{a(b + c)}{b + c} + \\frac{b(c + a)}{c + a} = 1,\\]which simplifies to $a + b + c = 1.$\n\nSubtracting the equations given in the problem, we get\n\\[\\frac{c(b - a)}{a + b} + \\frac{a(c - b)}{b + c} + \\frac{b(a - c)}{c + a} = 19.\\]Let\n\\begin{align*}\nu &= \\frac{a}{a + b} + \\frac{b}{b + c} + \\frac{c}{c + a}, \\\\\nv &= \\frac{b}{a + b} + \\frac{c}{b + c} + \\frac{a}{c + a},\n\\end{align*}so $u + v = 3.$  Also,\n\\begin{align*}\nu - v &= \\frac{a - b}{a + b} + \\frac{b - c}{b + c} + \\frac{c - a}{c + a} \\\\\n&= (a + b + c) \\frac{a - b}{a + b} + (a + b + c) \\frac{b - c}{b + c} + (a + b + c) \\frac{c - a}{c + a} \\\\\n&= a - b + \\frac{c(a - b)}{a + b} + b - c + \\frac{a(b - c)}{b + c} + c - a + \\frac{b(c - a)}{c + a} \\\\\n&= -19.\n\\end{align*}Subtracting the equations $u + v = 3$ and $u - v = -19,$ we get $2v = 22,$ so $v = \\boxed{11}.$"
-}

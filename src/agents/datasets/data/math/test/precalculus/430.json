@@ -1,6 +1,0 @@
-{
-    "problem": "The functions $\\sin(x)$ and $\\cos(x)$ are periodic with least period $2\\pi$. What is the least period of the function $\\cos(\\sin(x))$?",
-    "level": "Level 2",
-    "type": "Precalculus",
-    "solution": "Since\n\\[\\cos (\\sin (x + \\pi)) = \\cos (-\\sin(x)) = \\cos (\\sin(x)),\\]the function is periodic with period $\\pi.$\n\nFurthermore, $\\cos (\\sin x) = 1$ if and only $\\sin x = 0,$ which occurs only when $x$ is a multiple of $\\pi,$ so the period cannot be less than $\\pi.$  Therefore, the least period is $\\boxed{\\pi}.$"
-}

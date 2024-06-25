@@ -1,6 +1,0 @@
-{
-    "problem": "The sequence $(a_n)$ satisfies\n\\[a_1 + a_2 + a_3 + \\dots + a_n = n^2 a_n\\]for all $n \\ge 2.$  If $a_{63} = 1,$ find $a_1.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "From $a_1 + a_2 + a_3 + \\dots + a_n = n^2 a_n,$\n\\[(n^2 - 1) a_n = a_1 + a_2 + \\dots + a_{n - 2} + a_{n - 1}.\\]Likewise,\n\\[((n - 1)^2 - 1) a_{n - 1} = a_1 + a_2 + \\dots + a_{n - 2}.\\]Subtracting these equations, we get\n\\[(n^2 - 1) a_n - ((n - 1)^2 - 1) a_{n - 1} = a_{n - 1},\\]so\n\\[(n^2 - 1) a_n = (n - 1)^2 a_{n - 1}.\\]Then $(n - 1)(n + 1) a_n = (n - 1)^2 a_{n - 1},$ so\n\\[a_n = \\frac{n - 1}{n + 1} \\cdot a_{n - 1}\\]for all $n \\ge 2.$\n\nTherefore,\n\\begin{align*}\na_n &= \\frac{n - 1}{n + 1} \\cdot a_{n - 1} \\\\\n&= \\frac{n - 1}{n + 1} \\cdot \\frac{n - 2}{n} \\cdot a_{n - 2} \\\\\n&= \\frac{n - 1}{n + 1} \\cdot \\frac{n - 2}{n} \\cdot \\frac{n - 3}{n - 1} \\cdot a_{n - 3} \\\\\n&= \\dotsb \\\\\n&= \\frac{n - 1}{n + 1} \\cdot \\frac{n - 2}{n} \\cdot \\frac{n - 3}{n - 1} \\dotsb \\frac{2}{4} \\cdot \\frac{1}{3} \\cdot a_1 \\\\\n&= \\frac{2a_1}{n(n + 1)}.\n\\end{align*}We are told that $a_{63} = 1,$ so\n\\[\\frac{2a_1}{63 \\cdot 64} = 1.\\]Thus, $a_1 = \\boxed{2016}.$"
-}

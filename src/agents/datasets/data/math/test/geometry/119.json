@@ -1,6 +1,0 @@
-{
-    "problem": "In $\\triangle ABC$, $AB = 13$, $AC=5$ and $BC=12$.  Points $M$ and $N$ lie on $\\overline{AC}$ and $\\overline{BC}$, respectively, with $CM = CN = 4$. Points $J$ and $K$ are on $\\overline{AB}$ so that $\\overline{MJ}$ and $\\overline{NK}$ are perpendicular to $\\overline{AB}$. What is the area of pentagon $CMJKN$? Express your answer as a common fraction.\n\n[asy]\npair A,B,C,N,K,M,J;\nA=(0,5);\nB=(12,0);\nC=(0,0);\nN=(5,0);\nM=(0,4);\nJ=(0.35,4.84);\nK=(6,2.4);\ndraw(A--B--C--cycle,linewidth(0.7));\ndraw(N--K,linewidth(0.7));\ndraw(M--J,linewidth(0.7));\nlabel(\"$A$\",A,NW);\nlabel(\"$M$\",M,W);\nlabel(\"$C$\",C,SW);\nlabel(\"$N$\",N,S);\nlabel(\"$B$\",B,SE);\nlabel(\"$K$\",K,NE);\nlabel(\"$J$\",J,NE);\n[/asy]",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Because $\\triangle ABC$, $\\triangle NBK$, and $\\triangle AMJ$ are similar right triangles whose hypotenuses are in the ratio $13:8:1$, their areas are in the ratio $169:64:1$.\n\nThe area of $\\triangle ABC$ is $\\frac{1}{2}(12)(5)= 30$, so the areas of $\\triangle NBK$ and $\\triangle AMJ$  are  $\\frac{64}{169}(30)$ and $\\frac {1}{169}(30)$, respectively.\n\nThus the area of pentagon $CMJKN$ is $(1-\\frac{64}{169}-\\frac{1}{169})(30) = \\boxed{\\frac{240}{13}}$."
-}

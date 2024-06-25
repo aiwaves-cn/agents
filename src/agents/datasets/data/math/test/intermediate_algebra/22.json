@@ -1,6 +1,0 @@
-{
-    "problem": "Find the number of pairs $(z_1,z_2)$ of complex numbers such that:\n\n$z_1 z_2$ is pure imaginary\n$\\frac{z_1}{z_2}$ is real\n$|z_1| = |z_2| = 1.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Since $|z_1| = |z_2| = 1,$ $|z_1 z_2| = 1.$  Let\n\\[z_1 z_2 = si,\\]where $s \\in \\{-1, 1\\}.$\n\nSimilarly, $\\left| \\frac{z_1}{z_2} \\right| = 1.$  Let\n\\[\\frac{z_1}{z_2} = t,\\]where $t \\in \\{-1, 1\\}.$\n\nMultiplying these equations, we get $z_1^2 = sti.$  This equation has two solutions.\n\nThus, there are two choices of $s,$ two choices of $t,$ and two choices of $z_1,$ giving us $\\boxed{8}$ possible pairs $(z_1,z_2).$"
-}

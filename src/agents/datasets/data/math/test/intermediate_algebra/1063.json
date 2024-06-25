@@ -1,6 +1,0 @@
-{
-    "problem": "Let $F(z)=\\frac{z+i}{z-i}$ for all complex numbers $z\\not= i,$ and let $z_n=F(z_{n-1})$ for all positive integers $n.$ Given that $z_0=\\frac 1{137}+i,$ find $z_{2002}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "Iterating $F$ a few times, we get \\[\\begin{aligned} F(F(z)) &= \\frac{\\frac{z+i}{z-i}+i}{\\frac{z+i}{z-i}-i} = \\frac{(z+i)+i(z-i)}{(z+i)-i(z-i)}= \\frac{z+i+zi+1}{z+i-zi-1}= \\frac{(z+1)(i+1)}{(z-1)(1-i)}\\\\\n&= \\frac{(z+1)(i+1)^2}{(z-1) \\cdot 2}= \\frac{(z+1)(2i)}{(z-1) \\cdot 2} = \\frac{z+1}{z-1}i,\\\\\nF(F(F(z))) &= \\frac{\\frac{z+1}{z-1}i+i}{\\frac{z+1}{z-1}i-i} = \\frac{\\frac{z+1}{z-1}+1}{\\frac{z+1}{z-1}-1} = \\frac{(z+1)+(z-1)}{(z+1)-(z-1)}= z. \\end{aligned}\\]Thus, $z_{k+3} = z_k$ for all $k.$ Since $2002 \\equiv 1 \\pmod{3},$ we then have \\[z_{2002} = z_1 = \\frac{z_0+i}{z_0-i} = \\frac{1/137 + 2i}{1/137} = \\boxed{1+274i}.\\]"
-}

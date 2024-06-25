@@ -1,6 +1,0 @@
-{
-    "problem": "For how many integer values of $n$ between 1 and 349 inclusive does the decimal representation of $\\frac{n}{350}$ terminate?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Recall that the decimal representation of a simplified fraction terminates if and only if the denominator is divisible by no primes other than 2 and 5. Prime factorizing 350 as $2\\cdot 5^2\\cdot 7$, we see that $n/350$ terminates if and only if $n$ is divisible by 7. There are 49 multiples of 7 from 1 to 349, so there are $\\boxed{49}$ possible values of $n$ that make $\\frac{n}{350}$ a terminating decimal."
-}

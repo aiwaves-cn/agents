@@ -1,6 +1,0 @@
-{
-    "problem": "For every positive integer $n$, let $\\text{mod}_5 (n)$ be the remainder obtained when $n$ is divided by 5. Define a function $f: \\{0,1,2,3,\\dots\\} \\times \\{0,1,2,3,4\\} \\to \\{0,1,2,3,4\\}$ recursively as follows:\n\n\\[f(i,j) = \\begin{cases}\\text{mod}_5 (j+1) & \\text{ if } i = 0 \\text{ and } 0 \\le j \\le 4 \\text{,}\\\\ f(i-1,1) & \\text{ if } i \\ge 1 \\text{ and } j = 0 \\text{, and} \\\\ f(i-1, f(i,j-1)) & \\text{ if } i \\ge 1 \\text{ and } 1 \\le j \\le 4. \\end{cases}\\]What is $f(2015,2)$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "We construct a table for the values $f(i,j)$:\n\\[\n\\begin{array}{c|ccccc}\ni \\backslash j & 0 & 1 & 2 & 3 & 4 \\\\ \\hline\n0 & 1 & 2 & 3 & 4 & 0 \\\\\n1 & 2 & 3 & 4 & 0 & 1 \\\\\n2 & 3 & 0 & 2 & 4 & 1 \\\\\n3 & 0 & 3 & 4 & 1 & 0 \\\\\n4 & 3 & 1 & 3 & 1 & 3 \\\\\n5 & 1 & 1 & 1 & 1 & 1 \\\\\n6 & 1 & 1 & 1 & 1 & 1\n\\end{array}\n\\]It follows that $f(i,2) = \\boxed{1}$ for all $i \\ge 5.$"
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "For which value of $x$ does the function $f(x) = \\frac{2x^2 - 5x - 7}{x^2 - 4x + 1}$ cross its horizontal asymptote?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "The horizontal asymptote of $f$ is the horizontal line that $f$ approaches as $x \\to \\pm \\infty$. When the leading terms of the numerator and denominator have the same degree, that line is at the value equal to the ratio of the leading coefficients, namely $y = 2/1 = 2$. Setting this equal to $f(x)$, $$f(x) = 2 = \\frac{2x^2 - 5x - 7}{x^2 - 4x + 1}.$$Clearing the denominator, $$2(x^2 - 4x + 1) = 2x^2 - 8x + 2 = 2x^2 - 5x - 7 \\Longrightarrow 3x = 9 \\Longrightarrow x = \\boxed{3}.$$"
-}

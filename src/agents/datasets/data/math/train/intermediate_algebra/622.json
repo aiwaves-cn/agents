@@ -1,6 +1,0 @@
-{
-    "problem": "For a certain hyperbola\n\\[\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1,\\]where $a > b,$ the angle between the asymptotes is $60^\\circ.$  Find $\\frac{a}{b}.$",
-    "level": "Level 4",
-    "type": "Intermediate Algebra",
-    "solution": "We know that the point $(a,b)$ lies on an asymptote, as shown below.\n\n[asy]\nunitsize(0.8 cm);\n\nreal upperhyper(real x) {\n  return (sqrt(x^2/3 - 1));\n}\n\nreal lowerhyper(real x) {\n  return (-sqrt(x^2/3 - 1));\n}\n\ndraw(graph(upperhyper,-5,-sqrt(3) - 0.01)--(-sqrt(3),0),red);\ndraw(graph(lowerhyper,-5,-sqrt(3) - 0.01)--(-sqrt(3),0),red);\ndraw((sqrt(3),0)--graph(upperhyper,sqrt(3) + 0.01,5),red);\ndraw((sqrt(3),0)--graph(lowerhyper,sqrt(3) + 0.01,5),red);\ndraw((-5,0)--(5,0));\ndraw((0,-5/sqrt(3))--(0,5/sqrt(3)));\ndraw((-5,-5/sqrt(3))--(5,5/sqrt(3)),dashed);\ndraw((-5,5/sqrt(3))--(5,-5/sqrt(3)),dashed);\ndraw((sqrt(3),1)--(sqrt(3),0));\n\nlabel(\"$a$\", (sqrt(3)/2,0), S);\nlabel(\"$b$\", (sqrt(3),1/2), E, UnFill);\n\ndot(\"$(a,b)$\", (sqrt(3),1), NW);\n[/asy]\n\nSince the angle between the asymptotes is $60^\\circ,$ $a$ is the long leg of a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, and $b$ is the short leg.  Thus, $\\frac{a}{b} = \\boxed{\\sqrt{3}}.$"
-}

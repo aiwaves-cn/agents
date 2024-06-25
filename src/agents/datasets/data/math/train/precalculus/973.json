@@ -1,6 +1,0 @@
-{
-    "problem": "The matrix $\\mathbf{A} = \\begin{pmatrix} 2 & 3 \\\\ 5 & d \\end{pmatrix}$ satisfies\n\\[\\mathbf{A}^{-1} = k \\mathbf{A}\\]for some constant $k.$  Enter the ordered pair $(d,k).$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "For $\\mathbf{A} = \\begin{pmatrix} 2 & 3 \\\\ 5 & d \\end{pmatrix},$\n\\[\\mathbf{A}^{-1} = \\frac{1}{2d - 15} \\begin{pmatrix} d & -3 \\\\ -5 & 2 \\end{pmatrix}\\]Comparing entries to $k \\mathbf{A},$ we get\n\\begin{align*}\n\\frac{d}{2d - 15} &= 2k, \\\\\n\\frac{-3}{2d - 15} &= 3k, \\\\\n\\frac{-5}{2d - 15} &= 5k, \\\\\n\\frac{2}{2d - 15} &= dk.\n\\end{align*}If $k = 0,$ then $\\mathbf{A}^{-1} = \\mathbf{0},$ which is not possible, so $k \\neq 0.$  Thus, we can divide the equations $\\frac{d}{2d - 15} = 2k$ and $\\frac{-3}{2d - 15} = 3k$ to get\n\\[\\frac{d}{-3} = \\frac{2}{3}.\\]Then $d = -2.$  Substituting into the first equation, we get\n\\[2k = \\frac{-2}{2(-2) - 15} = \\frac{2}{19},\\]so $k = \\frac{1}{19}.$  Thus, $(d,k) = \\boxed{\\left( -2, \\frac{1}{19} \\right)}.$"
-}

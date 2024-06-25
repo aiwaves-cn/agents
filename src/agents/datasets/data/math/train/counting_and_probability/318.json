@@ -1,6 +1,0 @@
-{
-    "problem": "A play has two different male roles, two different female roles and two different roles that can be either gender. Only a man can be assigned to a male role, and only a woman can be assigned to a female role. If five men and six women audition, in how many ways can the six roles be assigned?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "We start with the most restrictive conditions: the roles that are not open to both men and women.  First, we will fill the two male roles. There are 5 men, so there are $5 \\cdot 4= 20$ ways to assign 2 of the 5 men to the distinct male roles. Doing the same for the female roles, there are $6 \\cdot 5 = 30$ ways. Finally, of the $5+6 - 2 - 2 = 7$ remaining actors, there are $7 \\cdot 6 = 42$ ways to assign the leftovers to the either-gender roles. Multiplying, there are $20 \\cdot 30 \\cdot 42 = \\boxed{25200}$ ways of assigning the six roles."
-}

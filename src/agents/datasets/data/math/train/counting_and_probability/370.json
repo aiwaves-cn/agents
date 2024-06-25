@@ -1,6 +1,0 @@
-{
-    "problem": "How many combinations of pennies (1 cent), nickels (5 cents) and/or dimes (10 cents) are there with a total value of 25 cents?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "First, we count the number of combinations that include pennies: we could have all pennies, all pennies and one nickel, all pennies and two nickels, all pennies and three nickels, all pennies and four nickels, all pennies and one dime, all pennies and two dimes, all pennies and one dime and one nickel, all pennies and one dime and two nickels. As for the no pennies case, we can have five nickels, one dime and three nickels, two dimes and one nickel. So, there are $9 + 3 = \\boxed{12}$ combinations."
-}

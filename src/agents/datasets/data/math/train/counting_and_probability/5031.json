@@ -1,6 +1,0 @@
-{
-    "problem": "The nine horizontal and nine vertical lines on an $8\\times8$ checkerboard form $r$ rectangles, of which $s$ are squares. The number $s/r$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "To determine the two horizontal sides of a rectangle, we have to pick two of the horizontal lines of the checkerboard, or ${9\\choose 2} = 36$. Similarily, there are ${9\\choose 2}$ ways to pick the vertical sides, giving us $r = 1296$ rectangles.\nFor $s$, there are $8^2$ unit squares, $7^2$ of the $2\\times2$ squares, and so on until $1^2$ of the $8\\times 8$ squares. Using the sum of squares formula, that gives us $s=1^2+2^2+\\cdots+8^2=\\dfrac{(8)(8+1)(2\\cdot8+1)}{6}=12*17=204$.\nThus $\\frac sr = \\dfrac{204}{1296}=\\dfrac{17}{108}$, and $m+n=\\boxed{125}$."
-}

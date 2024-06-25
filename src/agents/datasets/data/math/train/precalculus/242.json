@@ -1,6 +1,0 @@
-{
-    "problem": "If $a_0 = \\sin^2 \\left( \\frac{\\pi}{45} \\right)$ and\n\\[a_{n + 1} = 4a_n (1 - a_n)\\]for $n \\ge 0,$ find the smallest positive integer $n$ such that $a_n = a_0.$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "Suppose $a_n = \\sin^2 x.$  Then\n\\begin{align*}\na_{n + 1} &= 4a_n (1 - a_n) \\\\\n&= 4 \\sin^2 x (1 - \\sin^2 x) \\\\\n&= 4 \\sin^2 x \\cos^2 x \\\\\n&= (2 \\sin x \\cos x)^2 \\\\\n&= \\sin^2 2x.\n\\end{align*}It follows that\n\\[a_n = \\sin^2 \\left( \\frac{2^n \\pi}{45} \\right)\\]for all $n \\ge 0.$\n\nWe want to find the smallest $n$ so that $a_n = a_0.$  In other words\n\\[\\sin^2 \\left( \\frac{2^n \\pi}{45} \\right) = \\sin^2 \\left( \\frac{\\pi}{45} \\right).\\]This means the angles $\\frac{2^n \\pi}{45}$ and $\\frac{\\pi}{45}$ either add up to a multiple of $\\pi,$ or differ by a multiple of $\\pi.$  In other words,\n\\[2^n \\equiv \\pm 1 \\pmod{45}.\\]We list the first few powers of 2 mod 45.\n\n\\[\n\\begin{array}{c|c}\nn & 2^n \\pmod{45} \\\\ \\hline\n0 & 1 \\\\\n1 & 2 \\\\\n2 & 4 \\\\\n3 & 8 \\\\\n4 & 16 \\\\\n5 & 32 \\\\\n6 & 19 \\\\\n7 & 38 \\\\\n8 & 31 \\\\\n9 & 17 \\\\\n10 & 34 \\\\\n11 & 23 \\\\\n12 & 1\n\\end{array}\n\\]Thus, the smallest such $n$ is $\\boxed{12}.$"
-}

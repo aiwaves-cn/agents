@@ -1,6 +1,0 @@
-{
-    "problem": "Wendy noticed when she stacked her quarters in piles of 5 she had 3 left over and when she stacked them in piles of 7 she had 5 left over. If she has less than ten dollars worth of quarters, how many quarters does she have?",
-    "level": "Level 2",
-    "type": "Number Theory",
-    "solution": "Let $a$ be the number of quarters. We know that \\begin{align*}\na\\equiv 3\\pmod 5\\\\\na\\equiv 5\\pmod 7\n\\end{align*} Congruence $(1)$ means that there exists a non-negative integer $n$ such that $a=3+5n$. Substituting this into $(b)$ gives \\[3+5n\\equiv 5\\pmod 7\\implies n\\equiv 6\\pmod 7\\] So $n$ has a lower bound of $6$. Then $n\\ge 6\\implies a=3+5n\\ge 33$. $33$ happens to satisfy both congruences, so it is the smallest common solution. Since she has less than $10$ dollars worth of quarters, she has less than $40$ quarters. If $b$ is a common solution, subtracting $33$ from both sides of both congruences gives \\begin{align*}\nb-33\\equiv -30\\equiv 0\\pmod 5\\nonumber\\\\\nb-33\\equiv -28\\equiv 0\\pmod 7\\nonumber\n\\end{align*} Since $\\gcd(5,7)=1$, we have $b-33\\equiv 0\\pmod{5\\cdot 7}$, that is, $b\\equiv 33\\pmod {35}$. The first couple of positive solutions of this are $33,68$. Thus, there exists only one positive solution less than $40$, which we found earlier to be $\\boxed{33}$."
-}

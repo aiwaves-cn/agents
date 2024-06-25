@@ -1,6 +1,0 @@
-{
-    "problem": "What is the area enclosed by the region defined by the equation $x^2+y^2+6x+8y=0$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "We complete the square on the quadratic in $x$ by adding $(6/2)^2=9$ to both sides, and complete the square on the quadratic in $y$ by adding $(8/2)^2=16$ to both sides. We have the equation  \\[(x^2+6x+9)+(y^2+8y+16)=25 \\Rightarrow (x+3)^2+(y+4)^2=25\\]We see that this is the equation of a circle with center $(-3,-4)$ and radius 5. Thus, the area of the region enclosed by this circle is $\\pi \\cdot 5^2=\\boxed{25\\pi}$."
-}

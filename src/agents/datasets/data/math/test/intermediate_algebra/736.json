@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f(x)$ satisfies\n\\[f(xy) = f(x) f(y)\\]for all real numbers $x$ and $y.$ Find all possible values of $f(1).$  Enter all the possible values, separated by commas.",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = y = 1,$ we get\n\\[f(1) = f(1)^2,\\]so $f(1) = 0$ or $f(1) = 1.$\n\nThe function $f(x) = 0$ shows that $f(1)$ can be 0, and the function $f(x) = x$ (and the function $f(x) = 1$) shows that $f(1)$ can be 1.  Thus, the possible values of $f(1)$ are $\\boxed{0,1}.$"
-}

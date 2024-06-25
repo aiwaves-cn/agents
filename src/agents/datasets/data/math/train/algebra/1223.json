@@ -1,6 +1,0 @@
-{
-    "problem": "Let $p(x) = 2x - 7$ and $q(x) = 3x - b$.  If $p(q(4)) = 7$, what is $b$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since $q(4) = 3\\cdot 4 - b = 12-b$, we can write $p(q(4)) = 7$ as $p(12-b) = 7$.  Since $p(x) = 2x-7$, we have $p(12-b) = 2(12-b) - 7 = 17 - 2b$. Substituting this into $p(12-b) = 7$ gives $17-2b =7$, from which we have $b = \\boxed{5}$."
-}

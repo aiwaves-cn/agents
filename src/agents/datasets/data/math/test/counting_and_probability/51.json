@@ -1,6 +1,0 @@
-{
-    "problem": "Paul and Jesse each choose a number at random from the first six primes. What is the probability that the sum of the numbers they choose is even?",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "The only way for the sum of the numbers Paul and Jesse choose to be odd is if one of them chooses 2 and the other chooses an odd prime. There are five ways for Paul to choose 2 and Jesse to choose an odd prime, and there are five ways for Jesse to choose 2 and Paul to choose an odd prime. Since there are $6\\cdot 6=36$ total possible ways for Paul and Jesse to choose their numbers, the probability that the sum of the numbers Paul and Jesse choose is NOT even is $\\frac{10}{36}=\\frac{5}{18}$. Therefore, the probability that the sum of the numbers Paul and Jesse choose IS even is $1-\\frac{5}{18}=\\boxed{\\frac{13}{18}}$."
-}

@@ -1,6 +1,0 @@
-{
-    "problem": "I have 5 marbles numbered 1 through 5 in a bag.  Suppose I take out two different marbles at random.  What is the expected value of the sum of the numbers on the marbles?",
-    "level": "Level 3",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{5}{2} = 10$ different pairs of marbles can be drawn, and the expected value of the sum is the average of the sums of each pair.  This is  \\begin{align*}\n\\frac{1}{10}((1+2)+(1+3)+(1+4)+(1+5)+(2+3)&\\\\\n+(2+4)+(2+5)+(3+4)+(3+5)+(4+5))&=\\frac{60}{10} = \\boxed{6}. \\end{align*}"
-}

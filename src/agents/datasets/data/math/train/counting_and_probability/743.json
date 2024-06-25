@@ -1,6 +1,0 @@
-{
-    "problem": "Ten standard 6-sided dice are rolled.  What is the probability that exactly one of the dice shows a 1?  Express your answer as a decimal rounded to the nearest thousandth.",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "There are $\\binom{10}{1}$ ways to roll exactly one 1 out of 10 dice. The probability of any one of these occurring is $\\left(\\frac{1}{6}\\right)^{\\!1}\\left(\\frac{5}{6}\\right)^{\\!9}$.  So the overall probability is \\[ \\binom{10}{1}\\bigg(\\frac{1}{6}\\bigg)^{\\!1}\\bigg(\\frac{5}{6}\\bigg)^{\\!9}=\\frac{10\\times 5^9}{6^{10}} \\approx \\boxed{0.323}. \\]"
-}

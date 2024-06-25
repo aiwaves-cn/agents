@@ -1,6 +1,0 @@
-{
-    "problem": "In right triangle $JKL$ with $\\angle JLK = 90^\\circ$, we have $KL = 8$ and $\\tan K = \\frac{15}{8}$.  Find $JL$.",
-    "level": "Level 2",
-    "type": "Geometry",
-    "solution": "[asy]\npair J,L,K,M;\nJ = (0,8);\nK = (15,0);\nL = (15,8);\nM = (15,4);\ndraw(J--K--L--J);\ndraw(rightanglemark(J,L,K,23));\nlabel(\"$K$\",K,SE);\nlabel(\"$J$\",J,NW);\nlabel(\"$L$\",L,NE);\nlabel(\"$8$\",M,E);\n[/asy]\n\nWe know that $\\tan K = \\frac{JL}{KL} = \\frac{JL}{8}$. Then $\\frac{JL}{8}=\\frac{15}{8}$, so $JL = \\boxed{15}$."
-}

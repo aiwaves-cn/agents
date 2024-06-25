@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a\\star b = a^b+ab$. If $a$ and $b$ are positive integers greater than or equal to 2 and $a\\star b =15$, find $a+b$.",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "Since $a$ and $b$ must be positive integers and since $b$ must be at least 2, we know that the maximum value of $a$ is 3 (because $4^2+4(2)=24>15$). Since $a$ must be at least 2, $a$ only has two possible values. If $a=2$, then we have $2^b+2b=15$, or $2(2^{b-1}+b)=15$, or $2^{b-1}+b=7.5$. However, since $b$ must be a positive integer, $2^{b-1}+b$ must also be an integer, and we have a contradiction. Therefore, $a=3$, and we have $3^b+3b=15$. A quick check shows that $3^2+3(2)=15$, or $b=2$. Thus, the only solution to $a\\star b = 15$ is $3\\star2$, giving us $a+b=3+2=\\boxed{5}$."
-}

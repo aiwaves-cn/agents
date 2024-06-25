@@ -1,6 +1,0 @@
-{
-    "problem": "What is the period of $y = \\cos \\frac{x}{2}$?",
-    "level": "Level 1",
-    "type": "Precalculus",
-    "solution": "The graph of $y=\\cos \\frac{x}{2}$ passes through one full period as $\\frac{x}{2}$ ranges from $0$ to $2\\pi,$ which means $x$ ranges from $0$ to $\\boxed{4 \\pi}.$\n\nThe graph of $y=\\cos \\frac{x}{2}$ is shown below:\n\n[asy]import TrigMacros;\n\nsize(400);\n\nreal g(real x)\n{\n\treturn cos(x/2);\n}\n\ndraw(graph(g,-3*pi,3*pi,n=700,join=operator ..),red);\ntrig_axes(-3*pi,3*pi,-2,2,pi/2,1);\nlayer();\nrm_trig_labels(-5, 5, 2);\n[/asy]"
-}

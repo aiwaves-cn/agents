@@ -1,6 +1,0 @@
-{
-    "problem": "Given that $\\theta$ and $\\phi$ are acute angles such that $\\tan \\theta = \\frac{1}{7}$ and $\\sin \\phi = \\frac{1}{\\sqrt{10}},$ find $\\theta + 2 \\phi,$ measured in radians.",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Note that\n\\[\\cos^2 \\phi = 1 - \\sin^2 \\phi = \\frac{9}{10}.\\]Since $\\phi$ is acute, $\\cos \\phi = \\frac{3}{\\sqrt{10}}.$  Then\n\\[\\tan \\phi = \\frac{\\sin \\phi}{\\cos \\phi} = \\frac{1}{3},\\]so\n\\[\\tan 2 \\phi = \\frac{2 \\tan \\phi}{1 - \\tan^2 \\phi} = \\frac{2 \\cdot \\frac{1}{3}}{1 - (\\frac{1}{3})^2} = \\frac{3}{4},\\]and\n\\[\\tan (\\theta + 2 \\phi) = \\frac{\\tan \\theta + \\tan 2 \\phi}{1 - \\tan \\theta \\tan 2 \\phi} = \\frac{\\frac{1}{7} + \\frac{3}{4}}{1 - \\frac{1}{7} \\cdot \\frac{3}{4}} = 1.\\]Since $\\tan 2 \\phi$ is positive, $2 \\phi$ is also acute.  Hence, $0 < \\theta + 2 \\phi < \\pi.$   Therefore, $\\theta + 2 \\phi = \\boxed{\\frac{\\pi}{4}}.$"
-}

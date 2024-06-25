@@ -1,6 +1,0 @@
-{
-    "problem": "A bowling ball is a solid ball with a spherical surface and diameter 30 cm. To custom fit a bowling ball for each bowler, three holes are drilled in the ball. Bowler Kris has holes drilled that are 8 cm deep and have diameters of 2 cm, 2 cm, and 3 cm. Assuming the three holes are right circular cylinders, find the number of cubic centimeters in the volume of the fitted bowling ball. Express your answer in terms of $\\pi$.",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "The untampered bowling ball has radius $30/2=15$ cm and volume \\[\\frac{4}{3}\\pi(15^3)=4\\cdot 15^2\\cdot 5\\pi=225\\cdot 20\\pi = 4500\\pi\\] cubic cm.  The 2 cm cylindrical holes each have radius $2/2=1$ cm and volume \\[\\pi (1^2)(8)=8\\pi\\] cubic cm; the 3 cm cylindrical hole has radius $3/2$ cm and volume \\[\\pi\\left(\\frac{3}{2}\\right)^2(8)=9\\cdot 2 \\pi = 18\\pi\\] cubic cm.  Post hole-removal the fitted ball has volume \\[4500\\pi - 2\\cdot 8\\pi - 18\\pi = \\boxed{4466\\pi}\\] cubic cm."
-}

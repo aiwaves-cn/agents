@@ -1,6 +1,0 @@
-{
-    "problem": "What is the largest three-digit integer $n$ that satisfies $$55n\\equiv 165\\pmod{260}~?$$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "First, we note that $55$, $165$, and $260$ all have a common factor of $5$: \\begin{align*}\n55 &= 5\\cdot 11\\\\\n165 &= 5\\cdot 33\\\\\n260 &= 5\\cdot 52\n\\end{align*}An integer $n$ satisfies $55n\\equiv 165\\pmod{260}$ if and only if it satisfies $11n\\equiv 33\\pmod{52}$. (Make sure you see why!)\n\nNow it is clear that $n=3$ is a solution. Moreover, since $11$ and $52$ are relatively prime, the solution is unique $\\pmod{52}$. If you don't already know why this is the case, consider that we are looking for $n$ such that $11n-33=11(n-3)$ is divisible by $52$; this is true if and only if $n-3$ is divisible by $52$.\n\nHence all solutions are of the form $3+52k$, where $k$ is an integer. One such solution which is easy to compute is $3+52(20) = 1043$. The next-largest solution is $1043-52 = 991$, so the largest three-digit solution is $\\boxed{991}$."
-}

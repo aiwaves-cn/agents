@@ -1,6 +1,0 @@
-{
-    "problem": "How many two-digit positive integers are congruent to 1 (mod 3)?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "If an integer is congruent to 1 mod 3, then it can be written in the form $3k+1$. Therefore, we have two inequalities: $3k+1 \\ge 10$, and $3k+1 \\le 99$. The inequality $3k+1 \\ge 10$ has solution $k\\ge3$, and the inequality $3k+1 \\le 99$ has solution $k \\le 32 \\frac{2}{3}$. Therefore, $k$ must be an integer between $3$ and $32$. There are $\\boxed{30}$ such integers."
-}

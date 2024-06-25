@@ -1,6 +1,0 @@
-{
-    "problem": "Find all real values of $x$ such that $$\\frac{2x^2-3x}{x^2-x} + 5x -11 = \\frac{3x^2+5x+2}{x^2-1}.$$Enter all the solutions, separated by commas.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "We can start by factoring the polynomials in the numerator and denominator, which gives us\n$$\\frac{x(2x-3)}{x(x-1)} + 5x -11 = \\frac{(x+1)(3x+2)}{(x+1)(x-1)}.$$If $x \\ne 0$ and $x \\ne -1$, we can cancel out some factors to get\n$$\\frac{2x-3}{x-1} + 5x -11 = \\frac{3x+2}{x-1}.$$Moving the fractional terms to one side gives us\n$$ 5x -11 = \\frac{x+5}{x-1}.$$Now we can eliminate the denominator by multiplying by $x-1$ on both sides (as long as $x\\ne1$) and then move all the terms to one side,\n$$5x^2- 17x + 6 = 0.$$Factoring gives us\n$$(x-3)(5x-2) = 0.$$Hence, $x$ must be $\\boxed{3}$ or $\\boxed{\\frac{2}{5}}$."
-}

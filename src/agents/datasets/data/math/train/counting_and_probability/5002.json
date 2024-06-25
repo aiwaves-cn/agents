@@ -1,6 +1,0 @@
-{
-    "problem": "Six cards numbered $1$ through $6$ are to be lined up in a row. Find the number of arrangements of these six cards where one of the cards can be removed leaving the remaining five cards in either ascending or descending order.\n",
-    "level": "Level 5",
-    "type": "Counting & Probability",
-    "solution": "Realize that any sequence that works (ascending) can be reversed for descending, so we can just take the amount of sequences that satisfy the ascending condition and multiply by two.\nIf we choose any of the numbers $1$ through $6$, there are five other spots to put them, so we get $6 \\cdot 5 = 30$. However, we overcount some cases. Take the example of $132456$. We overcount this case because we can remove the $3$ or the $2$. Therefore, any cases with two adjacent numbers swapped is overcounted, so we subtract $5$ cases (namely, $213456, 132456, 124356, 123546, 123465$,) to get $30-5=25$, but we have to add back one more for the original case, $123456$. Therefore, there are $26$ cases. Multiplying by $2$ gives the desired answer, $\\boxed{52}$."
-}

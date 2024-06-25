@@ -1,6 +1,0 @@
-{
-    "problem": "Complex numbers are often used when dealing with alternating current (AC) circuits. In the equation $V = IZ$, $V$ is voltage, $I$ is current, and $Z$ is a value known as impedance. If $V = 1+i$ and $Z=2-i$, find $I$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "We have $$\nI = \\frac{V}{Z} = \\frac{1+i}{2-i}.\n$$ Multiplying the numerator and denominator by the conjugate of the denominator, we get $$\nI = \\frac{1+i}{2-i} \\cdot \\frac{2+i}{2+i} = \\frac{1(2) + 1(i) + i(2) + i(i)}{2(2) + 2(i) - i(2) - i(i)} = \\frac{1+3i}{5} = \\boxed{ \\frac{1}{5} + \\frac{3}{5}i }.\n$$"
-}

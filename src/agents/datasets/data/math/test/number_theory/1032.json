@@ -1,6 +1,0 @@
-{
-    "problem": "What is the least positive integer multiple of 30 that can be written with only the digits 0 and 2?",
-    "level": "Level 3",
-    "type": "Number Theory",
-    "solution": "Let $M$ be the least positive multiple of 30 that can be written with only the digits 0 and 2. First, $M$ is a multiple of 10, so its units digit must be 0. $M$ is also a multiple of 3, which means the sum of its digits must be a multiple of 3. Therefore, we must take at least  three 2's. Since $M$ is minimal, we take exactly three 2's and do not have any additional 0's: $M=\\boxed{2220}$."
-}

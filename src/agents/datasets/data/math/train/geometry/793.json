@@ -1,6 +1,0 @@
-{
-    "problem": "Medians $\\overline{AD}$ and $\\overline{BE}$ of $\\triangle ABC$ are perpendicular.  If $AD= 15$ and $BE = 20$, then what is the area of $\\triangle ABC$?",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let the medians intersect at point $G$ as shown below.  We include the third median of the triangle in red; it passes through the intersection of the other two medians.\n\n[asy]\npair D,EE,F,P,Q,G;\n\nG = (0,0);\nD = (-1,0);\nP= (0.5,0);\nEE = (0,4/3);\nQ = (0,-2/3);\nF = 2*Q - D;\ndraw(P--D--EE--F--D);\ndraw(EE--Q);\nlabel(\"$A$\",D,W);\nlabel(\"$D$\",P,NE);\nlabel(\"$E$\",Q,SW);\nlabel(\"$B$\",EE,N);\nlabel(\"$C$\",F,SE);\ndraw(rightanglemark(P,G,EE,3.5));\nlabel(\"$G$\",G,SW);\ndraw(F--(D+EE)/2,red);\n[/asy]\n\nPoint $G$ is the centroid of $\\triangle ABC$, so $AG:GD = BG:GE = 2:1$.  Therefore, $AG = \\frac23(AD) = 10$ and $BG = \\frac23(BE) = \\frac{40}{3}$.\n\nDrawing all three medians of a triangle divides the triangle into six triangles with equal area.  In $\\triangle ABC$ above, $\\triangle ABG$ consists of two of these six triangles, so the area of $\\triangle ABC$ is 3 times the area of $\\triangle ABG$: \\[ [ABC] = 3[ABG] = 3\\cdot \\frac12 \\cdot AG \\cdot BG = \\frac32\\cdot 10 \\cdot \\frac{40}{3} = \\boxed{200}.\\]"
-}

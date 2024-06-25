@@ -1,6 +1,0 @@
-{
-    "problem": "Let $f(x)$ be an even function, and let $g(x)$ be an odd function.  Is $f(x) g(x)$ even, odd, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
-    "level": "Level 1",
-    "type": "Intermediate Algebra",
-    "solution": "Since $f(x)$ is even and $g(x)$ is odd,\n\\[f(-x)g(-x) = f(x)(-g(x)) = -f(x)g(x),\\]so $f(x) g(x)$ is an $\\boxed{\\text{odd}}$ function."
-}

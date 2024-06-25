@@ -1,6 +1,0 @@
-{
-    "problem": "A two-digit integer $AB$ equals $\\frac{1}{9}$ of the three-digit integer $AAB$, where $A$ and $B$ represent distinct digits from 1 to 9. What is the smallest possible value of the three-digit integer $AAB$?",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We rewrite $AB$ as $10A+B$ and $AAB$ as $100A+10A+B$. Now we set $AAB=9\\cdot AB$ since $AB$ is $\\frac{1}{9}$ of $AAB$. \\begin{align*}\n100A+10A+B&=9(10A+B)\\quad\\Rightarrow\\\\\n&=90A+9B\\quad\\Rightarrow\\\\\n20A&=8B\\quad\\Rightarrow\\\\\n5A&=2B\n\\end{align*}The smallest possible values for $A$ and $B$ such that $5A=2B$ are $A=2$ and $B=5$. So $AAB=\\boxed{225}$."
-}

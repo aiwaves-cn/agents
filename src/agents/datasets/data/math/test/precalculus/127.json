@@ -1,6 +1,0 @@
-{
-    "problem": "There exist constants $p$ and $q$ so that for any vectors $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c},$ the vectors $\\mathbf{a} - 2 \\mathbf{b} + 3 \\mathbf{c},$ $2 \\mathbf{a} + 3 \\mathbf{b} - 4 \\mathbf{c},$ and $p \\mathbf{b} + q \\mathbf{c}$ are always collinear.  Enter the ordered pair $(p,q).$",
-    "level": "Level 5",
-    "type": "Precalculus",
-    "solution": "The line through $\\mathbf{a} - 2 \\mathbf{b} + 3 \\mathbf{c}$ and $2 \\mathbf{a} + 3 \\mathbf{b} - 4 \\mathbf{c}$ can be parameterized by\n\\begin{align*}\n&\\mathbf{a} - 2 \\mathbf{b} + 3 \\mathbf{c} + t((2 \\mathbf{a} + 3 \\mathbf{b} - 4 \\mathbf{c}) - (\\mathbf{a} - 2 \\mathbf{b} + 3 \\mathbf{c})) \\\\\n&= (1 + t) \\mathbf{a} + (-2 + 5t) \\mathbf{b} + (3 - 7t) \\mathbf{c}.\n\\end{align*}To get an expression of the form $p \\mathbf{b} + q \\mathbf{c},$ we want the coefficient of $\\mathbf{a}$ to be 0.  Thus, we take $t = -1,$ which gives us $-7 \\mathbf{b} + 10 \\mathbf{c}.$  Hence, $(p,q) = \\boxed{(-7,10)}.$"
-}

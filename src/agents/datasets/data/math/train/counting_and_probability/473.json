@@ -1,6 +1,0 @@
-{
-    "problem": "What is the total number of digits used when the first 2002 positive even integers are written?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "First, the $2002$th positive even integer is $4004$, so we are looking for the number of digits used when the positive even integers less than or equal to $4004$ are written. Split this problem into cases. It's easy to see that there are four positive even integers with one digit: $2$, $4$, $6$, and $8$. Beginning with $10$ and ending with $98$, there are $\\frac{98-10}{2} +1 = 45$ positive even numbers with two digits. Beginning with $100$ and ending with $998$, there are $\\frac{998-100}{2} + 1 = 450$ positive even numbers with three digits. Finally, beginning with $1000$ and ending with $4004$, there are $\\frac{4004-1000}{2} + 1 = 1503$ positive even numbers with four digits. So, our answer is $4 + 2\\cdot 45 + 3 \\cdot 450 + 4 \\cdot 1503$, which equals $4 + 90 + 1350 + 6012$. Thus, there are $\\boxed{7456}$ digits used."
-}

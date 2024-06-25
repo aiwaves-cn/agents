@@ -1,6 +1,0 @@
-{
-    "problem": "The function $f : \\mathbb{R} \\to \\mathbb{R}$ satisfies\n\\[f(x) + 2f(1 - x) = 3x^2\\]for all $x.$  Find $f(4).$",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "Setting $x = 4$ in the given functional equation, we get\n\\[f(4) + 2f(-3) = 48.\\]Setting $x = -3$ in the given functional equation, we get\n\\[f(-3) + 2f(4) = 27.\\]Doubling the second equation, we get $2f(-3) + 4f(4) = 54.$  Subtracting the equation $f(4) + 2f(-3) = 48,$ we get $3f(4) = 6,$ so $f(4) = \\boxed{2}.$"
-}

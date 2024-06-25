@@ -1,6 +1,0 @@
-{
-    "problem": "How many rectangles are there whose four vertices are points on this grid? [asy]\nsize(50);\ndot((0,0));\ndot((5,0));\ndot((10,0));\ndot((0,5));\ndot((0,10));\ndot((5,5));\ndot((5,10));\ndot((10,5));\ndot((10,10));\n[/asy]",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "We consider the different cases:\n\n$\\bullet$ $1$ by $1$ square: There are $4$ of those (formed by joining adjacent points).\n\n$\\bullet$ $2$ by $2$ square: There is $1$ of those (formed by joining the $4$ corner points).\n\n$\\bullet$ $\\sqrt{2}$ by $\\sqrt{2}$ square: There is $1$ of those (formed by joining the middle points on the $4$ edges, in other words, the diagonals of the $1$ by $1$ squares).\n\n$\\bullet$ $1$ by $2$ rectangle: There are $4$ of those.\n\nSo that's a total of $4+1+1+4 = \\boxed{10}.$"
-}

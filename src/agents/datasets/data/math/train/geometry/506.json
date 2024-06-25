@@ -1,6 +1,0 @@
-{
-    "problem": "A rectangular box has interior dimensions 6-inches by 5-inches by 10-inches. The box is filled with as many solid 3-inch cubes as possible, with all of the cubes entirely inside the rectangular box. What percent of the volume of the box is taken up by the cubes?",
-    "level": "Level 4",
-    "type": "Geometry",
-    "solution": "Three-inch cubes can fill a rectangular box only if the edge lengths of the box are all integer multiples of 3 inches.  The largest such box whose dimensions are less than or equal to those of the $6''\\times5''\\times10''$ box is a $6''\\times3''\\times9''$ box.  The ratio of the volumes of these two boxes is  \\[\n\\frac{6\\cdot3\\cdot9}{6\\cdot5\\cdot10}=\\frac{3\\cdot9}{5\\cdot10}=\\frac{27}{50},\n\\] which is $\\boxed{54}$ percent."
-}

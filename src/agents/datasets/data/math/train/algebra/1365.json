@@ -1,6 +1,0 @@
-{
-    "problem": "Find the positive value of $n$ such that the equation $9x^2+nx+1=0$ has exactly one solution in $x$.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "If the quadratic expression on the left side has exactly one root in $x$, then it must be a perfect square. Dividing 9 from both sides, we have $x^2+\\frac{n}{9}x+\\frac{1}{9}=0$. In order for the left side to be a perfect square, it must factor to either $\\left(x+\\frac{1}{3}\\right)^2=x^2+\\frac{2}{3}x+\\frac{1}{9}$ or $\\left(x-\\frac{1}{3}\\right)^2=x^2-\\frac{2}{3}x+\\frac{1}{9}$ (since the leading coefficient and the constant term are already defined). Only the first case gives a positive value of $n$, which is $n=\\frac{2}{3}\\cdot9=\\boxed{6}$."
-}

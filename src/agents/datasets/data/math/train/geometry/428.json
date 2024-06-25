@@ -1,6 +1,0 @@
-{
-    "problem": "Side $AB$ of regular hexagon $ABCDEF$ is extended past $B$ to point $X$ such that $AX = 3AB$. Given that each side of the hexagon is $2$ units long, what is the length of segment $FX$? Express your answer in simplest radical form.",
-    "level": "Level 5",
-    "type": "Geometry",
-    "solution": "Let $P$ be the foot of the perpendicular from $F$ to the line containing $AB$. [asy]size(150);\ndefaultpen(linewidth(0.7) + fontsize(10)); real lsf = 0.6;\npair C = (2,0), B = 2*dir(60), A = 2*dir(120), F = -C, E = -B, D = -A, P = foot(F,A,B), Y = B+(4,0);\ndraw(A--B--C--D--E--F--cycle); draw(F--P--Y--cycle); draw(rightanglemark(F,P,A,5));\nlabel(\"$A$\",A,lsf*A); label(\"$B$\",B,lsf*B); label(\"$C$\",C,lsf*C); label(\"$D$\",D,lsf*D); label(\"$E$\",E,lsf*E); label(\"$F$\",F,lsf*F); label(\"$P$\",P,N); label(\"$X$\",Y,N);\n[/asy] Since $\\angle FAB = 120^{\\circ},$ then $\\angle PAF = 180^\\circ - 120^\\circ = 60^{\\circ}$, and it follows that $\\triangle PAF$ is a $30-60-90$ triangle. As $AF = 2$, it follows that $AP = 1$ and $PF = \\sqrt{3}$. Also, $AB = 2$ and so $AX = 3AB = 6$. Thus, $PX = AP + AX = 7$. In right triangle $FPX$, by the Pythagorean Theorem, it follows that $$FX^2 = PF^2 + PX^2 = (\\sqrt{3})^2 + (7)^2 = 52,$$and $FX = \\sqrt{52} = \\boxed{2\\sqrt{13}}$."
-}

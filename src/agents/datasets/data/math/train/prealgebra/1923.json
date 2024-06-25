@@ -1,6 +1,0 @@
-{
-    "problem": "A $4$-foot by $8$-foot rectangular piece of plywood will be cut into $4$ congruent rectangles with no wood left over and no wood lost due to the cuts. What is the positive difference, in feet, between the greatest possible perimeter of a single piece and the least possible perimeter of a single piece?",
-    "level": "Level 5",
-    "type": "Prealgebra",
-    "solution": "There are four possible ways the plywood can be cut: all the cuts are parallel to the length, all the cuts are parallel to the width, one cut is parallel to the length and one parallel to the width, or two cuts are parallel to the width and one is parallel to the length. In the first way, the congruent rectangles have dimensions $2\\times4$, for a perimeter of $2+2+4+4=12$ feet. In the second way, the congruent rectangles have dimensions $1\\times8$, for a perimeter of $1+1+8+8=18$ feet. In the third and fourth ways, the rectangles have dimensions $2\\times4$, for a perimeter of 12 feet. The positive difference between the greatest perimeter and the least is $18-12=\\boxed{6}$ feet."
-}

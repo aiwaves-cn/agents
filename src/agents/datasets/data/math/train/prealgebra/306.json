@@ -1,6 +1,0 @@
-{
-    "problem": "Let $A$ be the greatest common factor and let $B$ be the least common multiple of 8, 12 and 24. What is the value of $A + B$?",
-    "level": "Level 3",
-    "type": "Prealgebra",
-    "solution": "We begin by finding the prime factorizations of the numbers: \\[8 = 2^3, \\quad 12 = 2^2\\cdot 3, \\quad 24 = 2^3 \\cdot 3.\\]For the greatest common factor, $2^2$ is the largest factor that occurs in each number, so $A=2^2=4$.\n\nFor the least common multiple, the highest power of 2 that appears is 3, and the highest power of 3 that appears is 1. So $B=2^3 \\cdot 3^1 = 24$.\n\nAdding $A$ and $B$ gives $A + B = 4+24=\\boxed{28}$."
-}

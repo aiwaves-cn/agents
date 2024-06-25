@@ -1,6 +1,0 @@
-{
-    "problem": "If $y>0$, find the range of all possible values of $y$ such that $\\lceil{y}\\rceil\\cdot\\lfloor{y}\\rfloor=42$.  Express your answer using interval notation.",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "First, we note that $y$ cannot be an integer, since this would imply that $\\lceil y\\rceil\\cdot\\lfloor y\\rfloor = y^2$, and $42$ is not a perfect square.\n\nSince $y$ is not an integer, we have $\\lceil y\\rceil = \\lfloor y\\rfloor + 1$. Define $\\lceil{y}\\rceil$ as $x$ and $\\lfloor{y}\\rfloor$ as $x-1$. If we plug these expressions into the given equation, we get  \\begin{align*} x(x-1)&=42\n\\\\\\Rightarrow\\qquad x^2-x&=42\n\\\\\\Rightarrow\\qquad x^2-x-42&=0\n\\\\\\Rightarrow\\qquad (x-7)(x+6)&=0\n\\end{align*}This yields $x=7$ and $x=-6$ as the only possible values of $x$. However since the problem states that $y>0$ and $x=\\lceil{y}\\rceil$, $x$ must be a positive number and we can eliminate $x=-6$ as a possibility. If $x=\\lceil{y}\\rceil=7$, and $x-1=\\lfloor{y}\\rfloor=6$, $y$ must be between the integers 6 and 7. Therefore, our final answer is $6<y<7$, which is written in interval notation as $\\boxed{(6,7)}$."
-}

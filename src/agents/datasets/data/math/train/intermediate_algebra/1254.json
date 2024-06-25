@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the rational roots of $g(x)=x^3-9x^2+16x-4$.",
-    "level": "Level 2",
-    "type": "Intermediate Algebra",
-    "solution": "By the Rational Root Theorem, any rational root $p/q$ of $g(x)$ must have $p$ divide $4$ and $q$ divide 1. In particular, this means any rational root must be an integer divisor of 4.\n\nBy trying out the integer factors of 4, we find that $g(2) = 8-9\\cdot4+16\\cdot2-4=0$. Hence by the Factor theorem, $x-2$ is a factor of $g(x)$. With polynomial division, we can write $g(x) = (x-2)(x^2-7x+2).$ We can find the remaining roots of $g(x)$ by finding the roots of $x^2-7x+2$ using the quadratic formula. This gives us\n\\[x = \\frac{7 \\pm \\sqrt{49-8} }{2} =\\frac{7 \\pm \\sqrt{41} }{2} .\\]Since these are definitely not rational, the sum of the rational roots of $g(x)$ is $\\boxed{2}.$"
-}

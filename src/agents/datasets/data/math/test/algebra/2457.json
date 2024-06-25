@@ -1,6 +1,0 @@
-{
-    "problem": "If $2^{x+1}=4^{x-7}$ and $8^{3y}=16^{-y+13}$, what is the value of $x+y$?",
-    "level": "Level 4",
-    "type": "Algebra",
-    "solution": "We can write $2^{x+1}=4^{x-7}$ as $2^{x+1}=2^{2(x-7)}$, which means that $x+1=2x-14$. Solving for $x$, we have $x=15$. Similarly, we can write $8^{3y}=16^{-y+13}$ as $2^{3(3y)}=2^{4(-y+13)}$, which means that $9y=-4y+52$. Solving for $y$, we have $13y=52$, so $y=4$. The value of $x+y=15+4=\\boxed{19}$."
-}

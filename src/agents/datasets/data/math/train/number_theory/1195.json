@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of the different prime factors of $150280?$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "Let's find the prime factorization of $150,280$:\n\\begin{align*}\n150{,}280 &= 2^3\\cdot18{,}785 \\\\\n&= 2^3\\cdot5\\cdot3757 \\\\\n&= 2^3\\cdot5\\cdot13\\cdot289 \\\\\n&= 2^3\\cdot5\\cdot13\\cdot17^2.\n\\end{align*}Thus the sum of the different prime factors of 150,280 is $2+5+13+17=\\boxed{37}$."
-}

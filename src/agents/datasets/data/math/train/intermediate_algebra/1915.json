@@ -1,6 +1,0 @@
-{
-    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $x + y + z = 1.$  Find the maximum value of $x^3 y^2 z.$",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "By AM-GM,\n\\begin{align*}\nx + y + z &= \\frac{x}{3} + \\frac{x}{3} + \\frac{x}{3} + \\frac{y}{2} + \\frac{y}{2} + z \\\\\n&\\ge 6 \\sqrt[6]{\\frac{x^3 y^2 z}{108}}.\n\\end{align*}Since $x + y + z = 1,$ this gives us\n\\[x^3 y^2 z \\le \\frac{108}{6^6} = \\frac{1}{432}.\\]Equality occurs when $\\frac{x}{3} = \\frac{y}{2} = z.$  Along with the condition $x + y + z = 1,$ we can solve to get $x = \\frac{1}{2},$ $y = \\frac{1}{3},$ and $z = \\frac{1}{6},$ so the maximum value is $\\boxed{\\frac{1}{432}}.$"
-}

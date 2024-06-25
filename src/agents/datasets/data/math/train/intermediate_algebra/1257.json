@@ -1,6 +1,0 @@
-{
-    "problem": "Let $a_1,a_2,\\ldots$ be a sequence determined by the rule $a_n= \\frac{a_{n-1}}{2}$ if $a_{n-1}$ is even and $a_n=3a_{n-1}+1$ if $a_{n-1}$ is odd. For how many positive integers $a_1 \\le 2008$ is it true that $a_1$ is less than each of $a_2$, $a_3$, and $a_4$?",
-    "level": "Level 3",
-    "type": "Intermediate Algebra",
-    "solution": "If $a_1$ is even, then $a_2 = \\frac{a_1}{2} < a_1,$ so $a_1$ does not have the given property.\n\nIf $a_1$ is of the form $4k + 1,$ then $a_2 = 3(4k + 1) + 1 = 12k + 4,$ $a_3 = 6k + 2,$ and\n\\[a_4 = 3k + 1 < a_1,\\]so $a_1$ does not have the given property in this case either.\n\nIf $a_1$ is of the form $4k + 3,$ then $a_2 = 3(4k + 3) + 1 = 12k + 10,$ $a_3 = 6k + 5,$ and\n\\[a_4 = 3(6k + 5) + 1 = 18k + 16,\\]which are all greater than $a_1,$ so in this case, $a_1$ has the given property.\n\nThere are $2008/4 = 502$ numbers less than or equal to 2008 that have the form $4k + 3.$  Thus, the answer is $\\boxed{502}.$"
-}

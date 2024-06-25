@@ -1,6 +1,0 @@
-{
-    "problem": "What is the sum of all positive integers $n$ that satisfy $$\\mathop{\\text{lcm}}[n,100] = \\gcd(n,100)+450~?$$",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We have $\\gcd(n,100) = \\mathop{\\text{lcm}}[n,100]-450$. Since $\\mathop{\\text{lcm}}[n,100]$ is a multiple of $100$, we infer that $\\gcd(n,100)$ is a multiple of $50$ but not of $100$. But $\\gcd(n,100)$ is also a divisor of $100$, so it can only be $50$.\n\nThis implies two conclusions: first, $n$ is a multiple of $50$ (but not of $100$); second, $$\\mathop{\\text{lcm}}[n,100] = \\gcd(n,100)+450 = 50+450 = 500.$$In particular, $n$ is less than $500$, so we need only check the possibilities $n=50,150,250,350,450$. Of these, only $250$ satisfies our second conclusion, so $n=250$ is the unique solution -- and the sum of all solutions is thus $\\boxed{250}$."
-}

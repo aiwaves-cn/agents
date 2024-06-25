@@ -1,6 +1,0 @@
-{
-    "problem": "Rationalize the denominator of $\\frac{2}{\\sqrt[3]{4}+\\sqrt[3]{32}}$. The answer can be written in the form of $\\frac{\\sqrt[3]{A}}{B}$, where $A$ and $B$ are positive integers. Find the minimum possible value of $A+B$.",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "First, we simplify the denominator:  $$\\frac{2}{\\sqrt[3]{4}+\\sqrt[3]{32}}=$$$$\\frac{2}{\\sqrt[3]{4}+2\\sqrt[3]{4}}=$$$$\\frac{2}{3\\sqrt[3]{4}}$$Then, we multiply the denominator by something that would remove the cube root. Multiplying $\\sqrt[3]{4}$ by $\\sqrt[3]{2}$ would give $\\sqrt[3]{8}$, which is an integer, $2$. Therefore, we multiply the expression of $\\frac{\\sqrt[3]{2}}{\\sqrt[3]{2}}$. $$\\frac{2}{3\\sqrt[3]{4}} \\cdot \\frac{\\sqrt[3]{2}}{\\sqrt[3]{2}}=$$$$\\frac{2\\sqrt[3]{2}}{6}=$$$$\\frac{\\sqrt[3]{2}}{3}$$Therefore, $A+B=2+3=\\boxed{5}$."
-}

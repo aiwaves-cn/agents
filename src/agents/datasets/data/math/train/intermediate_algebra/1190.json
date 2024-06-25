@@ -1,6 +1,0 @@
-{
-    "problem": "If $0 \\le p \\le 1$ and $0 \\le q \\le 1$, define $F(p, q)$ by\n\\[\n  F(p, q) = -2pq + 3p(1-q) + 3(1-p)q - 4(1-p)(1-q).\n\\]Define $G(p)$ to be the maximum of $F(p, q)$ over all $q$ (in the interval $0 \\le q \\le 1$).  What is the value of $p$ (in the interval $0 \\le p \\le 1$) that minimizes $G(p)$?",
-    "level": "Level 5",
-    "type": "Intermediate Algebra",
-    "solution": "Note that for a fixed value of $p,$ $F(p,q)$ is linear in $q,$ which means that $F(p,q)$ attains its maximum value either at $q = 0$ or $q = 1.$  We compute that $F(p,0) = 7p - 4$ and $F(p,1) = 3 - 5p.$  Hence,\n\\[G(p) = \\max(7p - 4,3 - 5p).\\]Note that $7p - 4 = 3 - 5p$ when $p = \\frac{7}{12}.$  Then $G(p) = 3 - 5p$ for $p < \\frac{7}{12},$ so $G(p)$ is decreasing on this interval.  Also, $G(p) = 7p - 4$ for $p > \\frac{7}{12},$ so $G(p)$ is increasing on this interval.  Therefore, $G(p)$ is minimized for $p = \\boxed{\\frac{7}{12}}.$"
-}

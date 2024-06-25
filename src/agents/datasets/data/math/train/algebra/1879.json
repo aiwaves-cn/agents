@@ -1,6 +1,0 @@
-{
-    "problem": "A woman labels the squares of a very large chessboard $1$ through $64$. On each square $k$, the woman puts $2^k$ grains of rice. How many more grains of rice are placed on the $10^{th}$ square than on the first $8$ squares combined?",
-    "level": "Level 5",
-    "type": "Algebra",
-    "solution": "The $10^{th}$ square receives $2^{10}=1024$ grains. The first $8$ squares receive $2+2^2+\\dots+2^8=2\\left(\\frac{2^8-1}{2-1}\\right)=2(256-1)=2(255)=510$. Thus the $10^{th}$ square receives $1024-510=\\boxed{514}$ more grains than the first $8$ combined."
-}

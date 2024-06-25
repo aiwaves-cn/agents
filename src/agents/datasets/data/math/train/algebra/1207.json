@@ -1,6 +1,0 @@
-{
-    "problem": "Calculate $\\sqrt{\\sqrt[3]{0.000064}}$. Express your answer as a decimal to the nearest tenth.",
-    "level": "Level 2",
-    "type": "Algebra",
-    "solution": "We start by writing the decimal as a fraction, and we find \\begin{align*}\n\\sqrt{\\sqrt[3]{0.000064}} &= \\sqrt{\\sqrt[3]{\\frac{64}{10^6}}} = \\sqrt{\\left(\\frac{2^6}{10^6}\\right)^{\\frac13}}\\\\\n&=\\sqrt{\\frac{2^{6\\cdot \\frac{1}{3}}}{10^{6\\cdot \\frac13}}} = \\sqrt{\\frac{2^2}{10^2}} = \\frac{2}{10} = \\boxed{0.2}.\n\\end{align*}"
-}

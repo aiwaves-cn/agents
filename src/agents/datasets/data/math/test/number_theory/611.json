@@ -1,6 +1,0 @@
-{
-    "problem": "Find the sum of the digits of the base-8 expression for $8888_{10}$.",
-    "level": "Level 4",
-    "type": "Number Theory",
-    "solution": "We see that $8^4=4096$ is the largest power of 8 less than 8888, and that it can go into the given number 2 times, leaving us with $8888-(2)(4096)=696$. The next largest power of 8, $8^3=512$, can only go into 696 once, giving us the remainder $696-512=184$. Since the largest multiple of $8^2=64$ less than 184 is $2\\cdot64=128$, we are then left with $184-128=56$. $8^1=8$ goes into 56 exactly 7 times, leaving us with a remainder of $56-56=0$ and subsequently a coefficient of 0 for the $8^0$ term. So $8888_{10}=2\\cdot8^4+1\\cdot8^3+2\\cdot8^2+7\\cdot{8^1}+0\\cdot8^0=21270_8$, and the sum of the digits is $2+1+2+7+0=\\boxed{12}$."
-}

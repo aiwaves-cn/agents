@@ -1,6 +1,0 @@
-{
-    "problem": "For two real values of $n$, the equation $4x^2+nx+25=0$ has exactly one solution in $x$. What is the positive value of $n$?",
-    "level": "Level 3",
-    "type": "Algebra",
-    "solution": "A quadratic has exactly one distinct solution when its discriminant is 0.  The discriminant of $4x^2 + nx + 25$ is $n^2 - 4(4)(25)$.  Setting this equal to 0 gives $n^2 - 400 = 0$, so $n^2 = 400$.  The positive solution of this equation is $n = \\boxed{20}$."
-}

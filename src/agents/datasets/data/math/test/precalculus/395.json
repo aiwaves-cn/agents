@@ -1,6 +1,0 @@
-{
-    "problem": "If $\\mathbf{a}$ and $\\mathbf{b}$ are vectors such that $\\|\\mathbf{a}\\| = 3$ and $\\|\\mathbf{b}\\| = 14$, then find the smallest possible value of $\\|\\mathbf{a} + \\mathbf{b}\\|$.",
-    "level": "Level 3",
-    "type": "Precalculus",
-    "solution": "We have that\n\\begin{align*}\n\\|\\bold{a} + \\bold{b}\\|^2 &= (\\bold{a} + \\bold{b}) \\cdot (\\bold{a} + \\bold{b}) \\\\\n&= \\bold{a} \\cdot \\bold{a} + 2 \\bold{a} \\cdot \\bold{b} + \\bold{b} \\cdot \\bold{b} \\\\\n&= \\|\\bold{a}\\|^2 + 2 \\bold{a} \\cdot  \\bold{b} + \\|\\bold{b}\\|^2.\n\\end{align*}We know that $\\|\\bold{a}\\| = 3$ and $\\|\\bold{b}\\| = 14$.  Also, if $\\theta$ is the angle between the vectors $\\bold{a}$ and $\\bold{b}$, then\n\\[\\bold{a} \\cdot \\bold{b} = \\|\\bold{a}\\| \\cdot \\|\\bold{b}\\| \\cos \\theta = 42 \\cos \\theta.\\]Hence,\n\\[\\|\\bold{a} + \\bold{b}\\|^2 = 205 + 84 \\cos \\theta.\\]This quantity is minimized when $\\cos \\theta = -1$ (or $\\theta = 180^\\circ$), which gives us\n\\[\\|\\bold{a} + \\bold{b}\\|^2 = 205 - 84 = 121,\\]so the minimum value of $\\|\\bold{a} + \\bold{b}\\|$ is $\\sqrt{121} = \\boxed{11}$.  (We have effectively proved the Triangle Inequality for vectors in this problem.)"
-}

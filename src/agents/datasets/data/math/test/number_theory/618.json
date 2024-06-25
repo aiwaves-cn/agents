@@ -1,6 +1,0 @@
-{
-    "problem": "Euler discovered that the polynomial $p(n) = n^2 - n + 41$ yields prime numbers for many small positive integer values of $n$. What is the smallest positive integer $n$ for which $p(n)$ and $p(n+1)$ share a common factor greater than $1$?",
-    "level": "Level 5",
-    "type": "Number Theory",
-    "solution": "We find that $p(n+1) = (n+1)^2 - (n+1) + 41 = n^2 + 2n + 1 - n - 1 + 41 = n^2 + n + 41$. By the Euclidean algorithm, \\begin{align*} &\\text{gcd}\\,(p(n+1),p(n)) \\\\\n&\\qquad = \\text{gcd}\\,(n^2+n+41,n^2 - n+41) \\\\\n&\\qquad = \\text{gcd}\\,(n^2 + n + 41 - (n^2 - n + 41), n^2 - n + 41) \\\\\n&\\qquad = \\text{gcd}\\,(2n,n^2-n+41). \\end{align*}Since $n^2$ and $n$ have the same parity (that is, they will both be even or both be odd), it follows that $n^2 - n + 41$ is odd. Thus, it suffices to evaluate $\\text{gcd}\\,(n,n^2 - n + 41) = \\text{gcd}\\,(n,n^2-n+41 - n(n-1)) = \\text{gcd}\\,(n,41)$. The smallest desired positive integer is then $n = \\boxed{41}$.\n\nIn fact, for all integers $n$ from $1$ through $40$, it turns out that $p(n)$ is a prime number."
-}

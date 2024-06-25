@@ -1,6 +1,0 @@
-{
-    "problem": "In coordinate space, $A = (6,-7,7),$ $B = (16,-17,12),$ $C = (0,3,-6),$ and $D = (2,-5,10).$  Find the intersection point of lines $AB$ and $CD.$",
-    "level": "Level 4",
-    "type": "Precalculus",
-    "solution": "Let $\\mathbf{a} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 7 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} 16 \\\\ -17 \\\\ 12 \\end{pmatrix},$ $\\mathbf{c} = \\begin{pmatrix} 0 \\\\ 3 \\\\ -6 \\end{pmatrix},$ and $\\mathbf{d} = \\begin{pmatrix} 2 \\\\ -5 \\\\ 10 \\end{pmatrix}.$  Then line $AB$ is parameterized by\n\\[\\mathbf{a} + t (\\mathbf{b} - \\mathbf{a}) = \\begin{pmatrix} 6 + 10t \\\\ -7 - 10t \\\\ 7 + 5t \\end{pmatrix}.\\]Also, line $CD$ is parameterized by\n\\[\\mathbf{c} + s (\\mathbf{d} - \\mathbf{c}) = \\begin{pmatrix} 2s \\\\ 3 - 8s \\\\ -6 + 16s \\end{pmatrix}.\\]Thus, we want\n\\begin{align*}\n6 + 10t &= 2s, \\\\\n-7 - 10t &= 3 - 8s, \\\\\n7 + 5t &= -6 + 16s.\n\\end{align*}Solving this system, we find $t = -\\frac{7}{15}$ and $s = \\frac{2}{3}.$  We can find the point of intersection as $\\boxed{\\left( \\frac{4}{3}, -\\frac{7}{3}, \\frac{14}{3} \\right)}.$"
-}

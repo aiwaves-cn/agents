@@ -1,6 +1,0 @@
-{
-    "problem": "Four horizontal lines and four vertical lines are drawn in a plane. In how many ways can four lines be chosen such that a rectangular region is enclosed?",
-    "level": "Level 4",
-    "type": "Counting & Probability",
-    "solution": "In order for the four lines to enclose a rectangular region, we must choose two horizontal and two vertical lines.  If we were to choose more than two of one of these types of lines, we would not be able to enclose any region.  We can count independently the number of ways to choose vertical and horizontal lines.  There will be $\\dbinom{4}{2}=6$ ways to choose horizontal lines, and the same number of ways to choose two vertical lines.  Since these are independent, there are a total of $6\\cdot 6=\\boxed{36}$ ways to choose four lines that enclose a rectangle."
-}
