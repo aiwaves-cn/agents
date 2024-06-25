@@ -44,7 +44,7 @@ One major difference between **Agents** and other existing frameworks for langua
 #### Option 1.  Build from source
 
     
-    git clone https://github.com/aiwaves-cn/agents.git
+    git clone -b v1.0.0-release https://github.com/aiwaves-cn/agents.git
     cd agents
     pip install -e . 
     
