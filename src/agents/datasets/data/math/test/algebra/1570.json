@@ -1,0 +1,6 @@
+{
+    "problem": "How many units long is a segment whose endpoints are $(-4,1)$ and $(1,13)$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We use the distance formula: $\\sqrt{(-4 - 1)^2 + (1 - 13)^2},$ which is $\\sqrt{25 + 144} = \\sqrt{169} = \\boxed{13}$.\n\n- OR -\n\nWe note that the points $(-4,1)$, $(1,13)$, and $(1,1)$ form a right triangle with legs of length 5 and 12. $(5,12,13)$ is a Pythagorean triple, so the hypotenuse has length $\\boxed{13}$."
+}

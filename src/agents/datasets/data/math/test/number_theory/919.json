@@ -1,0 +1,6 @@
+{
+    "problem": "If $k = \\frac{1}{1+2x}$, where $x$ is an integer greater than $1$ and $k$ can be represented as a terminating decimal, find the sum of all possible values of $k$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Recall that a terminating decimal can be written as $\\frac{a}{10^b} = \\frac{a}{2^b\\cdot5^b}$ where $a$ and $b$ are integers. Since $k$ can be expressed as a terminating decimal, then $1+2x = 5^b$, as $1+2x$ is odd for all $x$ and, thus, can't equal $2^b$ or $10^b$. Thus, our sum is equal to $\\frac{1}{5}+\\frac{1}{25}+\\frac{1}{125}+\\cdots = \\frac{\\frac{1}{5}}{1-\\frac{1}{5}} = \\boxed{\\frac{1}{4}}$, by the formula $a/(1-r)$ for the sum of an infinite geometric series with common ratio $r$ (between $-1$ and 1) and first term $a$."
+}

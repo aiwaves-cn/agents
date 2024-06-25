@@ -1,0 +1,6 @@
+{
+    "problem": "A circle has a radius of three inches. The distance from the center of the circle to chord $CD$ is two inches. How many inches long is chord $CD$? Express your answer in simplest radical form.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Call the center of the circle O, and call the point where the radius of the circle bisects the chord E.  Thus, the line segment from the center of the circle to point E has length 2, and we have $\\triangle ODE$ with a leg of 2 and a hypotenuse of 3.  Thus, the other leg, DE has length $\\sqrt{5}$, and since DE is $\\frac{CD}{2}$, we have $CD = \\boxed{2\\sqrt{5}}$."
+}

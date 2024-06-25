@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all possible values of $x$ such that $2x(x-10)=-50$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First we divide both sides by 2 to get $x(x-10)=-25$. Expanding the left side and bringing the constant over, we get $x^2-10x+25=0$. We can factor this into $(x-5)(x-5)$, so the only possible value for $x$ is $\\boxed{5}$, which is also our answer."
+}

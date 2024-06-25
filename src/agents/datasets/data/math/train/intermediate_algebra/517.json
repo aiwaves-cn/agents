@@ -1,0 +1,6 @@
+{
+    "problem": "Let $r$ be the positive real solution to $x^3 + \\frac{2}{5} x - 1 = 0.$  Find the exact numerical value of\n\\[r^2 + 2r^5 + 3r^8 + 4r^{11} + \\dotsb.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $S = r^2 + 2r^5 + 3r^8 + 4r^{11} + \\dotsb.$  Then\n\\[r^3 S = r^5 + 2r^8 + 3r^{11} + 4r^{13} + \\dotsb.\\]Subtracting this equation from $S = r^2 + 2r^5 + 3r^8 + 4r^{11} + \\dotsb,$ we get\n\\[S (1 - r^3) = r^2 + r^5 + r^8 + r^{11} + \\dotsb = \\frac{r^2}{1 - r^3}.\\]Hence,\n\\[S = \\frac{r^2}{(1 - r^3)^2}.\\]Since $r^3 + \\frac{2}{5} r - 1 = 0,$ $1 - r^3 = \\frac{2}{5} r.$  Therefore,\n\\[S = \\frac{r^2}{\\frac{4}{25} r^2} = \\boxed{\\frac{25}{4}}.\\]"
+}

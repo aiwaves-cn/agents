@@ -1,0 +1,6 @@
+{
+    "problem": "How many digits are there in the number $2^3 \\cdot 3^1 \\cdot 4^3 \\cdot 5^8$ ?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We want to pair together the twos and the fives to make tens: \\begin{align*}\n2^3 \\cdot 3^1 \\cdot 4^3 \\cdot 5^8 &=2^3 \\cdot 3 \\cdot 2^6 \\cdot 5^8 \\\\\n&=2^9 \\cdot 3 \\cdot 5^8 \\\\\n&=10^8 \\cdot 2 \\cdot 3 \\\\\n&=6 \\cdot 10^8\n\\end{align*}Therefore, we have $6$ with $8$ zeros at behind it, giving us $1+8=\\boxed{9}$ digits."
+}

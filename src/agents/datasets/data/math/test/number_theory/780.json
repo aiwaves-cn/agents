@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $m$ is a two-digit positive integer such that $6^{-1}\\pmod m$ exists and $6^{-1}\\equiv 6^2\\pmod m$. What is $m$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We can multiply both sides of the congruence $6^{-1}\\equiv 6^2\\pmod m$ by $6$: $$\n\\underbrace{6\\cdot 6^{-1}}_1 \\equiv \\underbrace{6\\cdot 6^2}_{6^3} \\pmod m.\n$$Thus $6^3-1=215$ is a multiple of $m$. We know that $m$ has two digits. The only two-digit positive divisor of $215$ is $43$, so $m=\\boxed{43}$."
+}

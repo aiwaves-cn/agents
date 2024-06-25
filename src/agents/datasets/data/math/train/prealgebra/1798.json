@@ -1,0 +1,6 @@
+{
+    "problem": "A region is bounded by semicircular arcs constructed on the side of a square whose sides measure $2/\\pi$, as shown. What is the perimeter of this region? [asy]\npath a=(10,0)..(5,5)--(5,-5)..cycle;\npath b=(0,10)..(5,5)--(-5,5)..cycle;\npath c=(-10,0)..(-5,5)--(-5,-5)..cycle;\npath d=(0,-10)..(-5,-5)--(5,-5)..cycle;\npath e=(5,5)--(5,-5)--(-5,-5)--(-5,5)--cycle;\nfill(e,gray(0.6));\nfill(a,gray(0.8));\nfill(b,gray(0.8));\nfill(c,gray(0.8));\nfill(d,gray(0.8));\ndraw(a,linewidth(0.7));\ndraw(b,linewidth(0.7));\ndraw(c,linewidth(0.7));\ndraw(d,linewidth(0.7));\ndraw(e,linewidth(0.7));\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since the square has side length $2/\\pi$,  the diameter of each circular section is $2/\\pi$. The boundary of the region consists of  4 semicircles, whose total perimeter is twice the circumference of a  circle having  diameter $2/\\pi$. Hence the perimeter of the region is \\[\n2\\cdot \\left(\\pi\\cdot \\frac{2}{\\pi}\\right) = \\boxed{4}.\n\\]"
+}

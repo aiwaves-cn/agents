@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\left( \\frac{3 + i \\sqrt{3}}{2} \\right)^8 + \\left( \\frac{3 - i \\sqrt{3}}{2} \\right)^8.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = \\frac{3 + i \\sqrt{3}}{2}$ and $w = \\frac{3 - i \\sqrt{3}}{2}.$  Then\n\\[z + w = \\frac{3 + i \\sqrt{3}}{2} + \\frac{3 - i \\sqrt{3}}{2} = 3\\]and\n\\[zw = \\frac{3 + i \\sqrt{3}}{2} \\cdot \\frac{3 - i \\sqrt{3}}{2} = \\frac{9 - 3i^2}{4} = \\frac{9 + 3}{4} = 3.\\]Squaring the equation $z + w = 3,$ we get\n\\[z^2 + 2zw + w^2 = 9,\\]so $z^2 + w^2 = 9 - 2zw = 3.$\n\nSquaring the equation $z^2 + w^2 = 3,$ we get\n\\[z^4 + 2z^2 w^2 + w^4 = 9,\\]so $z^4 + w^4 = 9 - 2z^2 w^2 = 9 - 2 \\cdot 3^2 = -9.$\n\nFinally, squaring the equation $z^4 + w^4 = -9,$ we get\n\\[z^8 + 2z^4 w^4 + w^8 = 81,\\]so $z^8 + w^8 = 81 - 2z^4 w^4 = 81 - 2 \\cdot 3^4 = \\boxed{-81}.$"
+}

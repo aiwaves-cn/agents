@@ -1,0 +1,6 @@
+{
+    "problem": "For real numbers $t,$ the point of intersection of the lines $tx - 2y - 3t = 0$ and $x - 2ty + 3 = 0$ is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Solving for $x$ and $y$ in the equations $tx - 2y - 3t = 0$ and $x - 2ty + 3 = 0,$ we find\n\\[x = \\frac{3t^2 + 3}{t^2 - 1}, \\quad y = \\frac{3t}{t^2 - 1}.\\]Then\n\\[x^2 = \\frac{(3t^2 + 3)^2}{(t^2 - 1)^2} = \\frac{9t^4 + 18t^2 + 9}{t^4 - 2t^2 + 1},\\]and\n\\[y^2 = \\frac{9t^2}{(t^2 - 1)^2} = \\frac{9t^2}{t^4 - 2t^2 + 1}.\\]Thus,\n\\begin{align*}\nx^2 - 4y^2 &= \\frac{9t^2 + 18t^2 + 9}{t^4 - 2t^2 + 1} - \\frac{36t^2}{t^4 - 2t^2 + 1} \\\\\n&= \\frac{9t^4 - 18t^2 + 9}{t^4 - 2t^2 + 1} \\\\\n&= 9,\n\\end{align*}so\n\\[\\frac{x^2}{9} - \\frac{y^2}{\\frac{9}{4}} = 1.\\]Thus, all the plotted points lie on a hyperbola.  The answer is $\\boxed{\\text{(E)}}.$"
+}

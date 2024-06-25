@@ -1,0 +1,6 @@
+{
+    "problem": "The average age of the 10 females in a choir is 30 years. The average age of the 15 males in the same choir is 35 years. What is the average age, in years, of the 25 people in the choir?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Let $S$ be the sum of the ages of the females. Then $30 = \\frac{S}{10}$ (since the average is the sum divided by the number of elements), so $S = (30)(10)$. Similarly, the sum of the males' ages is $(35)(15)$. So the sum of all the ages is $(30)(10)+(35)(15)$. There are a total of 25 people, so the average is $$\n\\frac{(30)(10)+(35)(15)}{25} = \\boxed{33}.\n$$"
+}

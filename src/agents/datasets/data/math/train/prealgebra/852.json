@@ -1,0 +1,6 @@
+{
+    "problem": "What is the median number of moons per planet? (Include Pluto, although arguments rage on about Pluto's status...) \\begin{tabular}{c|c}\nPlanet & $\\#$ of Moons\\\\\n\\hline\nMercury&0\\\\\nVenus &0\\\\\nEarth &1\\\\\nMars &2\\\\\nJupiter&16\\\\\nSaturn&23\\\\\nUranus&15\\\\\nNeptune&2\\\\\nPluto&5\\\\\n\\end{tabular}",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We put the numbers in order: $0\\ 0\\ 1\\ 2\\ 2\\ 5\\ 15\\ 16\\ 23.$ To find the median, we find the middle value that separates the lower and upper halves of the data. There are $9$ planets, so the $5^\\text{th}$ value will be the median (there are $4$ values below and $4$ values above the $5^\\text{th}$ value). The median is $\\boxed{2}.$"
+}

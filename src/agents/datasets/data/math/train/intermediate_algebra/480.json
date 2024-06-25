@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be positive real numbers such that $a^3 + b^3 = a + b.$  Simplify\n\\[\\frac{a}{b} + \\frac{b}{a} - \\frac{1}{ab}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "From the equation $a^3 + b^3 = a + b,$\n\\[(a + b)(a^2 - ab + b^2) = a + b.\\]Since $a$ and $b$ are positive, $a + b$ is positive, so we can cancel the factors of $a + b$ to get\n\\[a^2 - ab + b^2 = 1.\\]Then\n\\[\\frac{a^2 + b^2 - 1}{ab} = \\frac{ab}{ab} = \\boxed{1}.\\]"
+}

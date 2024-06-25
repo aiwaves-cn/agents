@@ -1,0 +1,6 @@
+{
+    "problem": "Angela has deposited $\\$8,\\!000$ into an account that pays $6\\%$ interest compounded annually.\n\nBob has deposited $\\$10,\\!000$ into an account that pays $7\\%$ simple annual interest.\n\nIn $20$ years Angela and Bob compare their respective balances. To the nearest dollar, what is the positive difference between their balances?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We may find Angela's balance by simply finding $\\$8,\\!000(1 + 0.06)^{20} \\approx \\$25,\\!657.08.$\n\nWe may find Bob's balance by finding $\\$10,\\!000(1 + 20 \\cdot 0.07) \\approx \\$24,\\!000.$\n\nTherefore, the difference between their balances is roughly $\\$25,\\!657.08 - \\$24,\\!000 \\approx \\boxed{\\$1,\\!657}.$"
+}

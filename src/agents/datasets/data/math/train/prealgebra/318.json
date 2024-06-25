@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of triangle $JKL$ below.\n\n\n[asy]\nunitsize(1inch);\npair P,Q,R;\nP = (0,0);\nQ= (sqrt(3),0);\nR = (0,1);\ndraw (P--Q--R--P,linewidth(0.9));\ndraw(rightanglemark(Q,P,R,3));\nlabel(\"$J$\",P,S);\nlabel(\"$K$\",Q,S);\nlabel(\"$L$\",R,N);\nlabel(\"$20$\",(Q+R)/2,NE);\nlabel(\"$60^\\circ$\",(0,0.75),E);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We have $\\angle K = 180^\\circ - 90^\\circ - 60^\\circ = 30^\\circ$, so $JKL$ is a 30-60-90 triangle. Since $\\overline{JL}$ is opposite the $30^\\circ$ angle, we have $JL = KL/2 = 10$.  Since $\\overline{JK}$ is opposite the $60^\\circ$ angle, we have $JK = JL\\sqrt{3} = 10\\sqrt{3}$.  Therefore, \\[[JKL] = \\frac{(JK)(JL)}{2} = \\frac{(10\\sqrt{3})(10)}{2} = \\boxed{50\\sqrt{3}}.\\]"
+}

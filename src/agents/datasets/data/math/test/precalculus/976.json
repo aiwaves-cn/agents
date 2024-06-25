@@ -1,0 +1,6 @@
+{
+    "problem": "Convert the point $( 1, -1, -6 )$ in rectangular coordinates to cylindrical coordinates.  Enter your answer in the form $(r,\\theta,z),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that $r = \\sqrt{1^2 + (-1)^2} = \\sqrt{2}.$  We want $\\theta$ to satisfy\n\\begin{align*}\n1 &= \\sqrt{2} \\cos \\theta, \\\\\n-1&= \\sqrt{2} \\sin \\theta.\n\\end{align*}Thus, $\\theta = \\frac{7 \\pi}{4},$ so the cylindrical coordinates are $\\boxed{\\left( \\sqrt{2}, \\frac{7 \\pi}{4}, -6 \\right)}.$"
+}

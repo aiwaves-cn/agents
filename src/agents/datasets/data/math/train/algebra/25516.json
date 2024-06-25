@@ -1,0 +1,6 @@
+{
+    "problem": "When the decimal point of a certain positive decimal number is moved four places to the right, the new number is four times the reciprocal of the original number. What is the original number?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If $x$ is the number, then moving the decimal point four places to the right is the same as multiplying $x$ by $10{,}000$. That is, $10{,}000x = 4 \\cdot \\left(\\frac{1}{x}\\right)$, which is equivalent to $x^2 = 4/10{,}000$. Since $x$ is positive, it follows that $x = 2/100 = \\boxed{0.02}$."
+}

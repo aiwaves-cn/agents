@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of rhombus $ABCD$ given that the radii of the circles circumscribed around triangles $ABD$ and $ACD$ are $12.5$ and $25$, respectively.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The diagonals of the rhombus perpendicularly bisect each other. Call half of diagonal BD $a$ and half of diagonal AC $b$. The length of the four sides of the rhombus is $\\sqrt{a^2+b^2}$.\nThe area of any triangle can be expressed as $\\frac{a\\cdot b\\cdot c}{4R}$, where $a$, $b$, and $c$ are the sides and $R$ is the circumradius. Thus, the area of $\\triangle ABD$ is $ab=2a(a^2+b^2)/(4\\cdot12.5)$. Also, the area of $\\triangle ABC$ is $ab=2b(a^2+b^2)/(4\\cdot25)$. Setting these two expressions equal to each other and simplifying gives $b=2a$. Substitution yields $a=10$ and $b=20$, so the area of the rhombus is $20\\cdot40/2=\\boxed{400}$."
+}

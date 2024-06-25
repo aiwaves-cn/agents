@@ -1,0 +1,6 @@
+{
+    "problem": "How many triples $(a,b,c)$ of even positive integers satisfy $a^3 + b^2 + c \\leq 50$?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "If $a \\geq 4$, then $a^3+b^2+c>a^3\\geq 4^3>50$. But we want $a^3+b^2+c \\leq 50$, so we must have $a=2$.  Now we substitute $a=2$ into $a^3+b^2+c \\leq 50$, which gives $b^2+c\\leq 42$. Since $b^2<42$, we know that $b$ must be one of 2, 4, or 6.\n\nWhen $b=2,$ $c\\leq 38$. There are 19 even positive integers less than or equal to 38, namely $2\\times 1$, $2\\times 2$, $\\ldots$, $2\\times 19$.\n\nWhen $b=4,$ $c\\leq 26$. There are 13 even positive integers less than or equal to 26.\n\nWhen $b=6,$ $c\\leq 6$. There are 3 even positive integers less than or equal to 6.\n\nThus the answer is $19+13+3=\\boxed{35}$."
+}

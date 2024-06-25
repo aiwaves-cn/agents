@@ -1,0 +1,6 @@
+{
+    "problem": "When $n$ is divided by 6, a remainder of 1 is given. What is the remainder when $n+2010$ is divided by 6?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "If $n$ has a remainder of 1 when divided by 6, then $n+6$ will also have a remainder of 1 when divided by 6. If we keep adding 6 to $n$, we still have a remainder of 1. We can write $2010 = 6 \\cdot 335$, so once we add 6 to $n$ 335 times, we will get that $n+2010$ has a remainder of $\\boxed{1}$ when it is divided by 6."
+}

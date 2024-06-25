@@ -1,0 +1,6 @@
+{
+    "problem": "Find the constant $c$ such that $$(x^2-4x+3)(x+5) - (x^2+4x-5)(x-c)=0$$ for all $x.$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Applying the distributive property twice on the left-hand side gives \\[x(x^2-4x+3) +5(x^2-4x+3) - x(x^2+4x-5) + c(x^2+4x-5) = 0 .\\] Simplifying by expanding each product and collecting like powers of $x$ gives us \\[(c-3)x^2 +(4c-12)x +(15-5c) =0.\\] The only value of $c$ for which this equation is always true for all $x$ is $c=\\boxed{3}$."
+}

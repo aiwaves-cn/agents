@@ -1,0 +1,6 @@
+{
+    "problem": "A positive integer is 3 more than a multiple of 4 and 4 more than a multiple of 5. What is the least integer it could be?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Let our integer be $n$.  Then $n = 4i + 3 = 5j + 4$ for positive integers $i,j$.  Thus $4i = 5j + 1$, to which the smallest possible solutions are $(i,j) = (4,3)$.  Thus $\\boxed{19}$ is the smallest possible value for $n$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer $n$ such that $3n$ is a perfect square and $2n$ is a perfect cube?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $3n$ is a perfect square, that means that $n$ has to be a multiple of $3$. Since $2n$ is a perfect cube, then $n$ has to be divisible by $2^2=4$. Since $n$ is a multiple of $3$, then $n$ also has to be divisible by $3^3=27$. Therefore, the smallest value for $n$ is $4 \\cdot 27 =\\boxed{108}$."
+}

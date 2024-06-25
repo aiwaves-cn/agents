@@ -1,0 +1,6 @@
+{
+    "problem": "$A$, $B$, $C$, and $D$ are points on a circle, and segments $\\overline{AC}$ and $\\overline{BD}$ intersect at $P$, such that $AP=8$, $PC=1$, and $BD=6$. Find $BP$, given that $BP < DP.$\n\n[asy]\n\nunitsize(0.6 inch);\n\ndraw(circle((0,0),1));\ndraw((-0.3,0.94)--(0.3,-0.94));\ndraw((-0.7,-0.7)--(0.7,-0.7));\n\nlabel(\"$A$\",(-0.3,0.94),NW);\ndot((-0.3,0.94));\nlabel(\"$B$\",(0.7,-0.7),SE);\ndot((0.7,-0.7));\nlabel(\"$C$\",(0.3,-0.94),SSE);\ndot((0.3,-0.94));\nlabel(\"$D$\",(-0.7,-0.7),SW);\ndot((-0.7,-0.7));\ndot((0.23,-0.7));\nlabel(\"$P$\",(0.23,-0.7),NE);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Writing $BP=x$ and $PD=6-x$, we have that $BP < 3$. Power of a point at $P$ gives $AP \\cdot PC = BP \\cdot PD$ or $8=x(6-x)$. This can be solved for $x=2$ and $x=4$, and we discard the latter, leaving $BP = \\boxed{2}$."
+}

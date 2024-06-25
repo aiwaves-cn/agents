@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $\\log_2{3} \\cdot \\log_3{4} \\cdot \\log_4{5} \\cdot \\log_5{6} \\cdot \\log_6{7} \\cdot \\log_7{8}$.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We use the change-of-base identity $\\log_a{b}=\\frac{\\log{b}}{\\log{a}}$ to find $$\\log_2{3} \\cdot \\log_3{4} \\cdot \\log_4{5} \\cdot \\log_5{6} \\cdot \\log_6{7} \\cdot \\log_7{8}=\n\\frac{\\log3}{\\log2} \\cdot \\frac{\\log4}{\\log3} \\cdot \\frac{\\log5}{\\log4} \\cdot \\frac{\\log6}{\\log5} \\cdot \\frac{\\log7}{\\log6} \\cdot \\frac{\\log8}{\\log7}.$$Simplifying, we get $\\frac{\\log8}{\\log2}=\\log_2{8}=\\boxed{3}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[g(x) = \\left\\{ \\begin{aligned} 3x+6 & \\quad \\text{ if } x < 0 \\\\ 2x - 13 & \\quad \\text{ if } x \\ge 0 \\end{aligned} \\right.\\]Find all solutions to the equation $g(x) = 3.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Because $g$ is defined piecewise, we take cases. If $x < 0,$ then we have $3x + 6 = 3,$ which gives $x = -1.$ Since $-1 < 0,$ this is a valid solution. If $x \\ge 0,$ then we have $2x - 13 = 3,$ which gives $x = 8.$ Since $8 \\ge 0,$ this is a valid solution.\n\nThus, the solutions to the equation are $x = \\boxed{-1, 8}.$"
+}

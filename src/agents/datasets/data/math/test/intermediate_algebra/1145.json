@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $x^3 - 4x^2 + 5x - \\frac{19}{10} = 0$ has real roots $r,$ $s,$ and $t.$  Find the length of the long diagonal of a box with sides of length $r,$ $s,$ and $t.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The length of the long diagonal is $\\sqrt{r^2 + s^2 + t^2}.$\n\nBy Vieta's formulas, $r + s + t = 4$ and $rs + rt + st = 5.$  Squaring the equation $r + s + t = 4,$ we get\n\\[r^2 + s^2 + t^2 + 2(rs + rt + st) = 16.\\]Then $r^2 + s^2 + t^2 = 16 - 2(rs + rt + st) = 6,$ so $\\sqrt{r^2 + s^2 + t^2} = \\boxed{\\sqrt{6}}.$"
+}

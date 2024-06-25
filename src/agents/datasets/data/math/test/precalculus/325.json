@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $BC = 32,$ $\\tan B = \\frac{3}{2},$ and $\\tan C = \\frac{1}{2}.$  Find the area of the triangle.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\overline{AD}$ be the altitude from $A,$ and let $x = AD.$\n\n[asy]\nunitsize (0.15 cm);\n\npair A, B, C, D;\n\nB = (0,0);\nC = (32,0);\nA = (8,12);\nD = (8,0);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$x$\", (A + D)/2, E);\n[/asy]\n\nThen $BD = \\frac{x}{3/2} = \\frac{2x}{3},$ and $CD = \\frac{x}{1/2} = 2x,$ so\n\\[BC = BD + DC = \\frac{2x}{3} + 2x = \\frac{8x}{3}.\\]Since $BC = 32,$ $x = 12.$\n\nTherefore, $[ABC] = \\frac{1}{2} \\cdot AD \\cdot BC = \\frac{1}{2} \\cdot 12 \\cdot 32 = \\boxed{192}.$"
+}

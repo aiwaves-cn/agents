@@ -1,0 +1,6 @@
+{
+    "problem": "Let $m$ be a positive integer, and let $a_0, a_1, \\dots , a_m$ be a sequence of real numbers such that $a_0 = 37$, $a_1 = 72$, $a_m=0$, and $$ a_{k+1} = a_{k-1} - \\frac{3}{a_k} $$for $k = 1,\n2, \\dots, m-1$. Find $m$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We rewrite the given recursion as \\[a_ka_{k+1} = a_{k-1}a_k - 3.\\]This implies that the numbers $a_0a_1, a_1a_2, a_2a_3, \\ldots$ form an arithmetic sequence with common difference $-3$. We have $a_0a_1 = 37 \\cdot 72$ and $a_{m-1}a_m = 0$ (because $a_m = 0$). Since those two terms are $m-1$ terms apart, we have \\[a_{m-1}a_m - a_0a_1 = 0 - 37 \\cdot 72 = -3 (m-1),\\]so \\[m = 37 \\cdot 24 + 1 = \\boxed{889}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "When $n$ is divided by 3, the remainder is 2. What is the remainder when $5n$ is divided by 3?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Since $n \\equiv 2 \\pmod{3}$, $5n \\equiv 5 \\cdot 2 \\equiv 10 \\equiv \\boxed{1} \\pmod{3}$."
+}

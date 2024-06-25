@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\star (x)$ be the sum of the digits of a positive integer $x$. $\\mathcal{S}$ is the set of positive integers such that for all elements $n$ in $\\mathcal{S}$, we have that $\\star (n)=12$ and $0\\le n< 10^{7}$. If $m$ is the number of elements in $\\mathcal{S}$, compute $\\star(m)$.\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Equivalently, we need to place 12 indistinguishable balls into 7 distinguishable boxes so that no box contains more than 9 balls. There are ${12 + 7 - 1 \\choose 7 - 1} = {18 \\choose 6} = 18,564$ ways to place 12 objects into 7 boxes. Of these, 7 place all 12 into a single box. $7 \\cdot 6 = 42$ place 11 in one box and 1 in a second. $7 \\cdot 6 = 42$ place 10 into one box and 2 into a second. $7 \\cdot \\frac{6\\cdot 5}{2} = 105$ place 10 into one box and 1 into each of two others. Thus, this gives us $m = 18564 - 7 - 42 - 42 - 105 = 18368$ so $\\star(m) = 1 + 8 + 3 + 6 + 8 = \\boxed{26}$."
+}

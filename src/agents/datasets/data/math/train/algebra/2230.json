@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\lceil{\\sqrt{x}}\\rceil=15$, how many possible integer values of $x$ are there?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the expression $\\lceil{\\sqrt{x}}\\rceil$ stands for the least integer that is greater than or equal to $x$, the largest possible value of $x$ that could satisfy the equation is $15^2$, or $225$. The greatest integer smaller than $15$ is $14$, so the largest integer (smaller than $225$) that would not satisfy $\\lceil{\\sqrt{x}}\\rceil=15$ would be $14^2$, or $196$. Therefore, any integer that is in the range $196 < x \\leq 225$ could be considered a possible integer value of $x$. Since there are 29 numbers in this range, our final solution is $\\boxed{29}$."
+}

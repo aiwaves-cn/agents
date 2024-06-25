@@ -1,0 +1,6 @@
+{
+    "problem": "Let $n$ be a  positive integer and $a$ be an integer such that $a$ is its own inverse modulo $n$. What is the remainder when $a^2$ is divided by $n$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $a$ is its own inverse modulo $n$, $a\\equiv a^{-1}\\pmod n$. Then \\[a^2\\equiv a\\cdot a\\equiv a\\cdot a^{-1}\\equiv \\boxed{1}\\pmod n.\\]"
+}

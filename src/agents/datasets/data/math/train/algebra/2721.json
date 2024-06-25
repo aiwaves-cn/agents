@@ -1,0 +1,6 @@
+{
+    "problem": "Find an ordered pair $(u,v)$ that solves the system: \\begin{align*} 5u &= -7 - 2v,\\\\ 3u &= 4v - 25 \\end{align*}",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Multiplying the first equation by $2$ gives $10u = -14 - 4v$.  Adding this to the second equation gives $13u = -39$, so $ u= -3$.  Substituting this into $5u=-7-2v$ gives $-15=-7-2v$, so $v = 4$ and our solution is $(u,v) =\\boxed{(-3,4)}$."
+}

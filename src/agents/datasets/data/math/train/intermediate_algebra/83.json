@@ -1,0 +1,6 @@
+{
+    "problem": "If $x+7$ is a factor of $cx^3 + 19x^2 - 3cx + 35$, find the constant $c$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Though it is possible to solve this problem using polynomial long division, it is quicker to use the Factor Theorem.\n\nLet $f(x) = cx^3 + 19x^2 - 3cx + 35$. If $x+7$ is a factor of $f(x)$, the factor theorem tells us that $f(-7) = 0.$  Then\n\\[c(-7)^3 + 19(-7)^2 - 3c(-7) + 35 = 0,\\]which simplifies to $-322c + 966 = 0.$  We can solve for $c$ to get $c = \\boxed{3}$."
+}

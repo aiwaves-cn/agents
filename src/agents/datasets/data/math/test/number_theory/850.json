@@ -1,0 +1,6 @@
+{
+    "problem": "When the base 10 integer 269 is converted to base 5, what is the sum of the digits?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The largest power of 5 less than 269 is $5^3=125$. The largest multiple of 125 less than 269 is $2\\cdot125=250$. So the digit in the place for $5^3$ is 2. After subtracting 250 from 269, we have $269-250=19$. We can express 19 as $3\\cdot5^1+4\\cdot5^0$. That means we have a 3 in the place for $5^1$ and a 4 in the place for $5^0$. The base-5 representation of 269 is $2034_5$, so the sum of the digits is $2+0+3+4=\\boxed{9}$."
+}

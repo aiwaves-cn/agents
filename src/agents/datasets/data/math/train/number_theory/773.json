@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $0.\\overline{789}-0.\\overline{456}-0.\\overline{123}?$ Express your answer as a fraction in lowest terms.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We begin by finding the fractional forms of the decimals, $0.\\overline{789}$, $0.\\overline{456}$, and $0.\\overline{123}$. Let $x=0.\\overline{789}$, then $1000x=789.\\overline{789}$ and $1000x-x=789.\\overline{789}-0.789 \\implies 999x - 789$. Therefore, $0.\\overline{789}=\\frac{789}{999}$. We use the same method to find that $0.\\overline{456}=\\frac{456}{999}$ and $0.\\overline{123}=\\frac{123}{999}$.  Next, we perform the indicated operations, knowing that $0.\\overline{789}-0.\\overline{456}-0.\\overline{123}=\\frac{789}{999}-\\frac{456}{999}-\\frac{123}{999}$. This equals $\\frac{210}{999}$, which simplifies to $\\boxed{\\frac{70}{333}}$, when both the numerator and the denominator are divided by $3$."
+}

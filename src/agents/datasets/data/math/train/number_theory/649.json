@@ -1,0 +1,6 @@
+{
+    "problem": "Natasha has more than $\\$1$ but less than $\\$10$ worth of dimes. When she puts her dimes in stacks of 3, she has 1 left over. When she puts them in stacks of 4, she has 1 left over. When she puts them in stacks of 5, she also has 1 left over. How many dimes does Natasha have?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Let $n$ be the number of dimes Natasha has.  We know that $10<n<100$.  The stacking data can be rephrased as  \\begin{align*}\nn&\\equiv 1\\pmod3\\\\\nn&\\equiv 1\\pmod4\\\\\nn&\\equiv 1\\pmod5.\\\\\n\\end{align*} Notice that any number $n$ such that $n\\equiv 1\\pmod{60}$ solves this system.  (The Chinese Remainder Theorem tells us that 1 is the only residue class modulo 60 that solves all of these equivalences.)  Therefore $n=\\boxed{61}$ is between 10 and 100 and solves this system."
+}

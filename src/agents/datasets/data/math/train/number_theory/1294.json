@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest perfect square factor of 1512?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let's find the prime factorization of 1512: $1512=2^3\\cdot189=2^3\\cdot3^3\\cdot7$. The only two squares of primes that divide 1512 are $2^2=4$ and $3^2=9$. Therefore, the largest perfect square factor of 1512 is $2^2\\cdot3^2=(2\\cdot3)^2=\\boxed{36}$."
+}

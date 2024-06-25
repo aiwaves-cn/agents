@@ -1,0 +1,6 @@
+{
+    "problem": "A 5x5x5 cube is formed by assembling 125 unit cubes. Nine unit squares are painted on each of the six faces of the cube according to the pattern shown. How many of the 125 unit cubes have no paint on them? [asy]\nfill((2,0)--(3,0)--(3,5)--(2,5)--cycle,gray(.7));\nfill((0,2)--(0,3)--(5,3)--(5,2)--cycle,gray(.7));\npath p=(0,0)--(5,0);\n\ndraw(p,linewidth(1));\ndraw(shift(0,1)*p,linewidth(1));\ndraw(shift(0,2)*p,linewidth(1));\ndraw(shift(0,3)*p,linewidth(1));\ndraw(shift(0,4)*p,linewidth(1));\ndraw(shift(0,5)*p,linewidth(1));\n\ndraw((0,0)--(0,5),linewidth(1));\ndraw((1,0)--(1,5),linewidth(1));\ndraw((2,0)--(2,5),linewidth(1));\ndraw((3,0)--(3,5),linewidth(1));\ndraw((4,0)--(4,5),linewidth(1));\ndraw((5,0)--(5,5),linewidth(1));\n\n[/asy]",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The number of painted faces is $9(6)=54$.  However, the four edge faces painted on each face are also painted on the other face.  Thus $4(6)=24$ of the painted faces are on cubes with two painted faces.  These account for only $12$ painted cubes, in addition to the $54-24=30$ singly painted cubes.  So there are $42$ painted cubes, leaving $125-42=\\boxed{83}$ unpainted cubes."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A_n$ be the sum of the first $n$ terms of the geometric series\n\\[704 + \\frac{704}{2} + \\frac{704}{4} + \\dotsb,\\]and let $B_n$ be the sum of the first $n$ terms of the geometric series\n\\[1984 - \\frac{1984}{2} + \\frac{1984}{4} - \\dotsb.\\]Compute the value of $n \\ge 1$ for which $A_n = B_n.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "From the formula for a geometric series,\n\\[704 + \\frac{704}{2} + \\frac{704}{4} + \\dots + \\frac{704}{2^{n - 1}} = 704 \\cdot \\frac{1 - \\frac{1}{2^n}}{1 - \\frac{1}{2}} = 1408 \\left( 1 - \\frac{1}{2^n} \\right),\\]and\n\\[1984 - \\frac{1984}{2} + \\frac{1984}{4} + \\dots + \\frac{1984}{(-2)^{n - 1}} = 1984 \\cdot \\frac{1 - \\frac{1}{(-2)^n}}{1 + \\frac{1}{2}} = \\frac{3968}{3} \\left( 1 - \\frac{1}{(-2)^n} \\right).\\]Hence,\n\\[1408 \\left( 1 - \\frac{1}{2^n} \\right) = \\frac{3968}{3} \\left( 1 - \\frac{1}{(-2)^n} \\right).\\]This reduces to\n\\[33 \\left( 1 - \\frac{1}{2^n} \\right) = 31 \\left( 1 - \\frac{1}{(-2)^n} \\right).\\]If $n$ is even, then $(-2)^n = 2^n,$ and there are no solutions.  Otherwise, $n$ is odd, and $(-2)^n = -2^n,$ so\n\\[33 \\left( 1 - \\frac{1}{2^n} \\right) = 31 \\left( 1 + \\frac{1}{2^n} \\right).\\]Isolating $2^n,$ we get $2^n = 32,$ so $n = \\boxed{5}.$"
+}

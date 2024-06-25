@@ -1,0 +1,6 @@
+{
+    "problem": "What is the 453rd digit to the right of the decimal point in the decimal expansion of $\\frac{6}{13}$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The decimal representation of $\\frac{6}{13}$ is $0.\\overline{461538}$, which repeats every 6 digits. Since 453 divided by 6 has a remainder of 3, the 453rd digit is the same as the third digit after the decimal point, which is $\\boxed{1}$."
+}

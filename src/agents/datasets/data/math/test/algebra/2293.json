@@ -1,0 +1,6 @@
+{
+    "problem": "The largest value of $x$ that satisfies $\\sqrt{x+1}=x$ can be written as $\\dfrac{a+\\sqrt{b}}{c}$ where $c$ has no common factor with $a$ and $\\sqrt{b}$ and $b$ is not divisible by the square of any integer greater than 1. What is the value of $a+b+c$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We square both sides of the equation to get \\begin{align*}\n\\sqrt{x+1}&=x\\\\\nx+1&=x^2\\\\\nx^2-x-1&=0\\\\\n\\end{align*}We can solve for $x$ either by completing the square or applying the quadratic formula, which gives us the smaller solution $x=\\dfrac{1-\\sqrt{5}}{2}$ and the larger solution $x=\\dfrac{1+\\sqrt{5}}{2}$. Consequently, $a=1$, $b=5$, and $c=2$, so $a+b+c=\\boxed{8}$.\n\nNote that the larger of these two roots is just the value of $\\phi$, the golden ratio."
+}

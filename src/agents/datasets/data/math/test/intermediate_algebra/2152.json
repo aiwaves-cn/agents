@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be distinct real numbers.  Find the degree of the polynomial\n\\[p(x) = \\frac{(x - b)(x - c)}{(a - b)(a - c)} + \\frac{(x - a)(x - c)}{(b - a)(b - c)} + \\frac{(x - a)(x - b)}{(c - a)(c - b)}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $p(x)$ has degree at most 2.  Also, $p(a) = p(b) = p(c) = 1.$  Thus, the polynomials $p(x)$ and 1 agree at three different values, so by the Identity Theorem, they are the same polynomial.  Hence, the degree of $p(x)$ (which is the constant polynomial 1) is $\\boxed{0}.$\n\nYou can check manually that\n\\[p(x) = \\frac{(x - b)(x - c)}{(a - b)(a - c)} + \\frac{(x - a)(x - c)}{(b - a)(b - c)} + \\frac{(x - a)(x - b)}{(c - a)(c - b)}\\]simplifies to 1."
+}

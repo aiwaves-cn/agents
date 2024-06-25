@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = 2x^4-17x^3+26x^2-24x-60$. Find $f(7)$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Instead of plugging in $x=7$ into $f(x)$ and solving, we can use the Remainder Theorem to avoid complicated arithmetic. We know that $f(7)$ will be the remainder when $f(x)$ is divided by $x-7$. So we have:\n\n\\[\n\\begin{array}{c|ccccc}\n\\multicolumn{2}{r}{2x^3} & -3x^2&+5x&+11 \\\\\n\\cline{2-6}\nx-7 & 2x^4 &- 17x^3 &+ 26x^2&-24x&-60  \\\\\n\\multicolumn{2}{r}{2x^4} & -14x^3  \\\\ \n\\cline{2-3}\n\\multicolumn{2}{r}{0} & -3x^3 & +26x^2   \\\\\n\\multicolumn{2}{r}{} &-3x^3  &+21x^2   \\\\ \n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0& 5x^2 & -24x   \\\\\n\\multicolumn{2}{r}{} & & 5x^2 & -35x   \\\\\n\\cline{4-5}\n\\multicolumn{2}{r}{} & & 0 & 11x & -60   \\\\\n\\multicolumn{2}{r}{} & &  & 11x & -77   \\\\\n\\cline{5-6}\n\\multicolumn{2}{r}{} & &  & 0 & 17  \\\\\n\\end{array}\n\\]Hence $f(7) = \\boxed{17}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $(1421 \\div 7 + 47) \\div 50 \\cdot 9.$",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Recall that we should work within the parentheses first. \\[1421 \\div 7 + 47 = (1421 \\div 7) + 47 = 203 + 47 = 250.\\] Then, we should calculate the multiplication and division from left to right. \\begin{align*}250 \\div 50 \\cdot 9 &= (250 \\div 50) \\cdot 9\\\\ &= 5 \\cdot 9 = \\boxed{45}.\\end{align*}"
+}

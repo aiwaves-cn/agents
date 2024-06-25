@@ -1,0 +1,6 @@
+{
+    "problem": "In the row of Pascal's triangle that starts 1, 11, what is the ninth number?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The row that starts 1, 11 is the row $\\binom{11}{0}, \\binom{11}{1}, \\binom{11}{2},\\cdots$.  The $k^\\text{th}$ number in this row is $\\binom{11}{k-1}$.  (Make sure you see why it's $k-1$ rather than $k$ on the bottom.)  Therefore, the $9^\\text{th}$ number is $\\binom{11}{8}$.  We have  \\[\\binom{11}{8} = \\binom{11}{11-8} = \\binom{11}{3} = \\frac{11\\cdot 10 \\cdot 9}{3\\cdot 2 \\cdot 1} = \\boxed{165}.\\]"
+}

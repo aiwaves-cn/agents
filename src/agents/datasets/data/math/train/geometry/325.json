@@ -1,0 +1,6 @@
+{
+    "problem": "An $\\textit{annulus}$ is the region between two concentric circles. The concentric circles in the figure have radii $b$ and $c$, with $b>c$. Let $\\overline{OX}$ be a radius of the larger circle, let $\\overline{XZ}$ be tangent to the smaller circle at $Z$, and let $\\overline{OY}$ be the radius of the larger circle that contains $Z$.  Let $a=XZ$, $d=YZ$, and $e=XY$. What is the area of the annulus? Express your answer in terms of $\\pi$ and at most one of the variables $a,b,c,d,e$.\n\n[asy]\npair O,X,Y,Z;\nO=(0,0);\nX=(16,12);\nY=(0,20);\nZ=(0,12);\nfill(Circle(0,20),gray(0.7));\nfill(Circle(0,12),white);\ndraw(Circle(O,20),linewidth(0.7));\ndraw(Circle(O,12),linewidth(0.7));\ndot(O);\ndot(X);\ndot(Y);\ndot(Z);\ndraw(O--X--Y--cycle,linewidth(0.7));\ndraw(Z--X,linewidth(0.7));\nlabel(\"$b$\",(8,6),SE);\nlabel(\"$a$\",(8,12),S);\nlabel(\"$e$\",(8,16),SW);\nlabel(\"$c$\",(0,6),W);\nlabel(\"$d$\",(0,16),W);\nlabel(\"$O$\",O,S);\nlabel(\"$X$\",X,NE);\nlabel(\"$Y$\",Y,N);\nlabel(\"$Z$\",Z,SW);\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The area of the annulus is the difference between the areas of the two circles, which is $\\pi b^2 -\\pi c^2$. Because the tangent $\\overline{XZ}$ is perpendicular to the radius $\\overline{OZ}$, $b^2 -\nc^2 = a^2$, so the area is $\\boxed{\\pi a^2}$."
+}

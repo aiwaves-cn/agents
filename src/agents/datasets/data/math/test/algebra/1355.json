@@ -1,0 +1,6 @@
+{
+    "problem": "Given that the point $(8,8)$ is on the graph of $y=\\frac 14f\\left(\\frac 12x\\right)$, there is one point that must be on the graph of $y=f(x)$. What is the sum of coordinates of that point?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Given that $(8,8)$ is on the graph of $y=\\frac 14f\\left(\\frac 12x\\right)$, we can substitute $8$ for both $x$ and $y$ in that equation to obtain $$8 = \\frac14f\\left(\\frac 12\\cdot 8\\right).$$We can rewrite this information as $$32 = f(4),$$which tells us that $(4,32)$ must be on the graph of $y=f(x)$. The sum of coordinates of this point is $\\boxed{36}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In quadrilateral $ABCD$, sides $\\overline{AB}$ and $\\overline{BC}$ both have length 10, sides $\\overline{CD}$ and $\\overline{DA}$ both have length 17, and the measure of angle $ADC$ is $60^\\circ$. What is the length of diagonal $\\overline{AC}$? [asy]\ndraw((0,0)--(17,0));\ndraw(rotate(301, (17,0))*(0,0)--(17,0));\npicture p;\ndraw(p, (0,0)--(0,10));\ndraw(p, rotate(115, (0,10))*(0,0)--(0,10));\nadd(rotate(3)*p);\n\ndraw((0,0)--(8.25,14.5), linetype(\"8 8\"));\n\nlabel(\"$A$\", (8.25, 14.5), N);\nlabel(\"$B$\", (-0.25, 10), W);\nlabel(\"$C$\", (0,0), SW);\nlabel(\"$D$\", (17, 0), E);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Triangle $ACD$ is an isosceles triangle with a $60^\\circ$ angle, so it is also equilateral. Therefore, the length of $\\overline{AC}$ is $\\boxed{17}$."
+}

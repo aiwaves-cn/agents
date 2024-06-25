@@ -1,0 +1,6 @@
+{
+    "problem": "The expression $y^2+10y+33$ can be written as a combination of a square of a binomial and an integer. Find the integer.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We will complete the square for $y^2 + 10y + 33.$\n\nThe binomial to be squared will be of the form $y+a$ because the coefficient of $y^2$ is 1. By squaring the binomial, we get $y^2+2ay+a^2$. We want $2ay$ to be equal to $10y$, therefore $a=5$. $(y+5)^2=y^2+10y+25$.\n\n$y^2+10y+33=(y^2+10y+25)+8=(y+5)^2+8$. Therefore, the binomial is $y+5$ and the integer is $\\boxed{8}$."
+}

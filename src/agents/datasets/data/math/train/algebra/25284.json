@@ -1,0 +1,6 @@
+{
+    "problem": "Pirate Pete shares his treasure with Pirate Paul in an interesting way. Pete first says, ``One for me, one for you,'' giving himself one coin and starting Paul's pile with one coin. Then Pete says, ``Two for me, and two for you,'' giving himself two more coins but making Paul's pile two coins in total. Next Pete says, ``Three for me, three for you'' while giving himself three more coins and making Paul's pile three coins in total. This pattern continues until Pete gives himself $x$ more coins but makes Paul's pile $x$ coins in total. At this point all of the coins have been distributed, and Pirate Pete has exactly four times as many coins as Pirate Paul. How many gold coins do they have in total?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "At the end of distributing the coins, Paul has $x$ coins, and Pete has four times as many, or $4x$ coins.  We can also write the number of coins Pete has as $1+2+3+ \\dots +x = x(x + 1)/2$.  Therefore, \\[\\frac{x(x + 1)}{2} = 4x.\\] Solving for $x$, we find $x = 7$, so the total number of coins they have is $x+4x=5x=5(7)=\\boxed{35}$."
+}

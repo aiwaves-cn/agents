@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $997^{-1}$ modulo $1000$. Express your answer as an integer from $0$ to $999$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We note that $$997\\equiv -3\\pmod{1000},$$and $$(-3)\\cdot 333 = -999 = -1000+1\\equiv 1\\pmod{1000}.$$Therefore, $$997\\cdot 333\\equiv 1\\pmod{1000},$$and the inverse of $997$ modulo $1000$ is $\\boxed{333}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The positive five-digit integers that use each of the digits 1, 2, 3, 4 and 5 exactly once are ordered from least to greatest. What is the $50^{\\text{th}}$ integer in the list?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We start with the numbers that start with 1.  There are 4 ways to pick the next digit, then 3 ways to pick the third digit, 2 ways to pick the fourth, and 1 to pick the last.  Therefore, there are $4\\cdot 3\\cdot 2\\cdot 1=24$ integers with 1 as the first digit.  Similarly, another 24 have 2 as the first digit. That's 48 numbers so far, so we want the second smallest number that starts with 3.  The smallest is 31245, and the next smallest is $\\boxed{31254}$."
+}

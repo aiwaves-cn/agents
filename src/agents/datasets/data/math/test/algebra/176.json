@@ -1,0 +1,6 @@
+{
+    "problem": "Expand the product $(x+1)^2 \\cdot x$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have $(x+1)^2 = (x+1)(x+1) = x(x) + 1(x) + 1(x) + 1 = x^2 + 2x + 1$. Multiplying this by $x$ gives $\\boxed{x^3 + 2x^2 + x}$."
+}

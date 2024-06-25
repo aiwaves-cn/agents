@@ -1,0 +1,6 @@
+{
+    "problem": "You have $5$ red shirts, $5$ green shirts, $6$ pairs of pants, $8$ green hats and $8$ red hats, all of which are distinct. How many outfits can you make consisting of one shirt, one pair of pants, and one hat without having the same color of shirts and hats?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Consider two cases:\n\n$\\bullet$  Case 1: the person wears a red shirt and a green hat. There are $5$ options for shirts, $6$ options for pants, and $8$ options for hats, for a total of $5 \\times 6 \\times 8 = 240$ outfits.\n\n$\\bullet$  Case 2: the person wears a green shirt and a red hat. There are $5$ options for shirts, $6$ options for pants, and $8$ options for hats, for a total of $5 \\times 6 \\times 8 = 240$ outfits.\n\nSumming up the two cases, we have a total possibility of $240+240 = \\boxed{480}$ outfits.\n\nNotice that we can tackle this without considering cases. The person has $10$ choices for shirts. After a shirt is chosen, the person has $6$ choices for pants, but only $8$ choices of hat, since the hat color cannot match the shirt color, and no matter what shirt color is chosen, there are $8$ hats of the other color to choose from. So, there are $10\\times 6\\times 8 =\\boxed{480}$ outfits."
+}

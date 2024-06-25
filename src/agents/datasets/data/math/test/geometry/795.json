@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle{RST}$, shown, $\\sin{R}=\\frac{2}{5}$.  What is $\\sin{T}$?\n\n[asy]\npair R,S,T;\nT = (0,0);\nS = (2,0);\nR = (2,sqrt(21));\ndraw(R--S--T--R);\ndraw(rightanglemark(R,S,T,10));\nlabel(\"$T$\",T,SW);\nlabel(\"$S$\",S,SE);\nlabel(\"$R$\",R,NE);\nlabel(\"$5$\",(R+T)/2,NW);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Because $\\triangle RST$ is a right triangle, $\\sin R = \\frac{ST}{RT}$. So $\\sin R = \\frac{2}{5} = \\frac{ST}{5}$. Then $ST=2$.\n\nWe know that $\\sin T = \\frac{RS}{RT}$. By the Pythagorean Theorem, $RS = \\sqrt{RT^2 - ST^2} = \\sqrt{25-4} = \\sqrt{21}$. Then $\\sin T = \\boxed{\\frac{\\sqrt{21}}{5}}$."
+}

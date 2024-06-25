@@ -1,0 +1,6 @@
+{
+    "problem": "In a three-digit number, the hundreds digit is greater than 5, the tens digit is greater than 4 but less than 8, and the units digit is the smallest prime number. How many three-digit numbers satisfy all of these conditions?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We have four choices for the hundreds digit, three choices for the tens digit, and only one choice for the units digit.  Thus we have a total of $4\\cdot 3\\cdot 1 = \\boxed{12}$ possible numbers."
+}

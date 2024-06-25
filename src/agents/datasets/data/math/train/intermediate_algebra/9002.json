@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S = (1+i)^{17} - (1-i)^{17}$, where $i=\\sqrt{-1}$. Find $|S|$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Rewriting the complex numbers in polar notation form, $1+i = \\sqrt{2}\\,\\text{cis}\\,\\frac{\\pi}{4}$ and $1-i = \\sqrt{2}\\,\\text{cis}\\,-\\frac{\\pi}{4}$, where $\\text{cis}\\,\\theta = \\cos \\theta + i\\sin \\theta$. By De Moivre's Theorem,\\begin{align*} \\left(\\sqrt{2}\\,\\text{cis}\\,\\frac{\\pi}{4}\\right)^{17} - \\left(\\sqrt{2}\\,\\text{cis}\\,-\\frac{\\pi}{4}\\right)^{17} &= 2^{17/2}\\,\\left(\\text{cis}\\,\\frac{17\\pi}{4}\\right) - 2^{17/2}\\,\\left(\\text{cis}\\,-\\frac{17\\pi}{4}\\right) \\\\ &= 2^{17/2}\\left[\\text{cis}\\left(\\frac{\\pi}{4}\\right) - \\text{cis}\\left(-\\frac{\\pi}{4}\\right)\\right] \\\\ &= 2^{17/2}\\left(2i\\sin \\frac{\\pi}{4}\\right) \\\\ &= 2^{17/2} \\cdot 2 \\cdot 2^{-1/2}i = 2^9i = \\boxed{512}\\,i \\end{align*}"
+}

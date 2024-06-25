@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P(x)$ be a polynomial with integer coefficients that satisfies $P(17)=10$ and $P(24)=17.$ Given that $P(n)=n+3$ has two distinct integer solutions $n_1$ and $n_2,$ find $n_1$ and $n_2$.\n\n(Give your answer as a comma-separated list, in either order; for example, \"2, 5\" or \"6, -3\".)",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have $P(n_1) = n_1+3$. Using the property that $a - b \\mid P(a) - P(b)$ whenever $a$ and $b$ are distinct integers, we get \\[n_1 - 17 \\mid P(n_1) - P(17) = (n_1+3) - 10 = n_1 - 7,\\]and \\[n_1 - 24 \\mid P(n_1) - P(24) = (n_1+3)-17=n_1-14.\\]Since $n_1 - 7 = 10 + (n_1-17)$ and $n_1-14 = 10 + (n_1-24)$, we must have \\[n_1 - 17 \\mid 10 \\; \\text{and} \\; n_1-24 \\mid 10.\\]We look for two divisors of $10$ that differ by $7$; we find that $\\{2, -5\\}$ and $\\{5, -2\\}$ satisfies these conditions. Therefore, either $n_1 - 24 = -5$, giving $n_1 = 19$, or $n_1 - 24 = -2$, giving $n_1 = 22$. From this, we conclude that $n_1, n_2 = \\boxed{19, 22}$."
+}

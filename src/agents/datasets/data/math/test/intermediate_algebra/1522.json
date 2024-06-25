@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be real numbers such that $a + b + c = 0$ and $a^2 + b^2 + c^2 = 4.$  Find $a^4 + b^4 + c^4.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Squaring the equation $a + b + c = 0,$ we get\n\\[a^2 + b^2 + c^2 + 2(ab + ac + bc) = 4 + 2(ab + ac + bc) = 0,\\]so $ab + ac + bc = -2.$\n\nSquaring the equation $a^2 + b^2 + c^2 = 4,$ we get\n\\[a^4 + b^4 + c^4 + 2(a^2 b^2 + a^2 c^2 + b^2 c^2) = 16.\\]Squaring the equation $ab + ac + bc = -2,$ we get\n\\[a^2 b^2 + a^2 c^2 + b^2 c^2 + 2abc(a + b + c) = 4,\\]so $a^2 b^2 + a^2 c^2 + b^2 c^2 = 4.$\n\nTherefore,\n\\[a^4 + b^4 + c^4 = 16 - 2(a^2 b^2 + a^2 c^2 + b^2 c^2) = 16 - 2 \\cdot 4 = \\boxed{8}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Rewrite the expression $g^4 + 12g^2 + 9$ in the form $c(g^2 + p)^2 + q$. What is $q$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We complete the square:  \\begin{align*}\ng^4 + 12g^2 + 9 &= (g^4 + 12g^2 + 36) + 9 - 36\\\\\n&= (g^2 + 6)^2 -27\n\\end{align*}Then $q$ is $\\boxed{-27}$."
+}

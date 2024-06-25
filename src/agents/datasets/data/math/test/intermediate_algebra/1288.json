@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x:$ $\\log_{x} 2+\\log_{x} 4=3$",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "First, we notice that $4=2^2$ and remember that $\\log a^2=2\\log a.$ From this, we get $\\log_{x}2+2\\log_{x}2=3,$ or $3\\log_{x}2=3.$\n\nHence, $\\log_{x}2=1$ and $x=\\boxed{2}.$"
+}

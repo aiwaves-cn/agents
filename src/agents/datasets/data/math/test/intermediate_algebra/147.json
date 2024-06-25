@@ -1,0 +1,6 @@
+{
+    "problem": "The roots of $x^3 + Px^2 + Qx - 19 = 0$ are each one more than the roots of $x^3 - Ax^2 + Bx - C = 0.$  If $A,$ $B,$ $C,$ $P,$ and $Q$ are constants, compute $A + B + C.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r,$ $s,$ $t$ be the roots of $x^3 + Px^2 + Qx - 19 = 0.$  Let $u = r - 1,$ $v = s - 1,$ and $w = t - 1,$ so $u,$ $v,$ $w$ are the roots of $x^3 - Ax^2 + Bx - C = 0.$  Thus,\n\\[x^3 - Ax^2 + Bx - C = (x - u)(x - v)(x - w).\\]Settting $x = -1,$ we get\n\\[-1 - A - B - C = (-1 - u)(-1 - v)(-1 - w) = -(u + 1)(v + 1)(w + 1) = -rst.\\]By Vieta's formulas, $rst = 19,$ so $-rst = -19.$  Hence,\n\\[-1 - A - B - C = -19.\\]Then $A + B + C = 19 - 1 = \\boxed{18}.$"
+}

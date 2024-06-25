@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive four-digit number divisible by 9 which has two even and two odd digits?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "For a number to be divisible by 9, the sum of its digits must be divisible by 9.  But since the number has two even digits and two odd digits, the sum of its digits is even.  Thus the sum of its digits must be at least 18.  This number will be minimized if its thousands digit is 1 and its hundreds digit is 0.  This means the remaining two digits must sum to 17, and are hence 8,9.  So we see that the smallest possible integer of the desired form is $\\boxed{1089}$."
+}

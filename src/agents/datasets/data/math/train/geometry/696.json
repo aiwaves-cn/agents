@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\cos C$ in the right triangle shown below.\n\n\n[asy]\npair A,B,C;\nA = (0,0);\nB = (6,0);\nC = (0,8);\ndraw(A--B--C--A);\ndraw(rightanglemark(B,A,C,10));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\nlabel(\"$10$\",(B+C)/2,NE);\nlabel(\"$6$\",B/2,S);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The Pythagorean Theorem gives us $AC = \\sqrt{BC^2 - AB^2} = \\sqrt{100 - 36} = \\sqrt{64}=8$, so $\\cos C = \\frac{AC}{BC} = \\frac{8}{10} = \\boxed{\\frac45}$."
+}

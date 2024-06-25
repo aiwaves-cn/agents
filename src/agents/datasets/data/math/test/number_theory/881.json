@@ -1,0 +1,6 @@
+{
+    "problem": "Your friend has over 200 stamps. He has a stamp book where he can put 30 stamps on each page. He has placed the stamps in his stamp book in such a way that the only page which is not completely filled with stamps is the last one. The last page has 5 stamps in it. What is the smallest number of stamps your friend can have?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "An integer equivalent to 5 mod 30 can be written in the form $30k + 5$. In this situation, $30k+5$ represents the number of stamps your friend has, while $k$ represents the number of filled pages he has. We want to solve the inequality $30k+5 > 200$. This inequality has solution $k > 6\\frac{1}{2}$. Since $k$ represents the number of filled pages, $k$ must be an integer. The smallest integer greater than $6\\frac{1}{2}$ is $7$, so your friend has $30(7) + 5 = \\boxed{215}$ stamps."
+}

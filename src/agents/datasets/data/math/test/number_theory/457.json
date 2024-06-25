@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least positive integer $n$ such that $80325$ divides $n!$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We find the prime factorization of $80325$, which is $3^3 \\cdot 5^2 \\cdot 7 \\cdot 17$. The largest prime in the factorization is $17$, so $n$ is at least 17. Since there are three factors of $3$, two factors of $5$, and one factor of $7$ in the prime factorization of $17!$, the minimum value of $n$ is $\\boxed{17}$."
+}

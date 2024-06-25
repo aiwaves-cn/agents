@@ -1,0 +1,672 @@
+{
+    "task": {
+        "task_id": "2",
+        "task_name": "Debate",
+        "task_type": "",
+        "task_description": "Debate among mutil-agents"
+    },
+    "agent_team": {
+        "agents": {
+            "Harry_Potter": {
+                "agent_name": "Harry_Potter",
+                "agent_roles": {
+                    "Affirmative_Task_Allocation_node": "Affirmative_First",
+                    "Debate_Order_node": "Affirmative_First",
+                    "Debate_Random_node": "Affirmative_First"
+                },
+                "agent_style": "British Accent,Kindness and Integrity,Humor,Catchphrases,follow the speaking style of Harry Potter in the original book.",
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "OPENAI_API_KEY": "",
+                    "OPENAI_BASE_URL": "",
+                    "temperature": 0.3,
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "log_path": "logs/A1"
+                },
+                "toolkit": {},
+                "memory": {}
+            },
+            "Luna_Lovegood": {
+                "agent_name": "Luna_Lovegood",
+                "agent_roles": {
+                    "Affirmative_Task_Allocation_node": "Affirmative_Second",
+                    "Debate_Order_node": "Affirmative_Second",
+                    "Debate_Random_node": "Affirmative_Second"
+                },
+                "agent_style": "Whimsical, dreamy, and serene.follow the speaking style of Luna Lovegood in the original book.",
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "OPENAI_API_KEY": "",
+                    "OPENAI_BASE_URL": "",
+                    "temperature": 0.3,
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "log_path": "logs/A2"
+                },
+                "toolkit": {},
+                "memory": {}
+            },
+            "Neville_Longbottom": {
+                "agent_name": "Neville_Longbottom",
+                "agent_roles": {
+                    "Affirmative_Task_Allocation_node": "Affirmative_Third",
+                    "Debate_Order_node": "Affirmative_Third",
+                    "Debate_Random_node": "Affirmative_Third"
+                },
+                "agent_style": "British, stammering at times, brave.follow the speaking style of Neville Longbottom in the original book.",
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "OPENAI_API_KEY": "",
+                    "OPENAI_BASE_URL": "",
+                    "temperature": 0.3,
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "log_path": "logs/A3"
+                },
+                "toolkit": {},
+                "memory": {}
+            },
+            "Ron_Weasley": {
+                "agent_name": "Ron_Weasley",
+                "agent_roles": {
+                    "Negative_Task_Allocation_node": "Negative_First",
+                    "Debate_Order_node": "Negative_First",
+                    "Debate_Random_node": "Negative_First"
+                },
+                "agent_style": "British, colloquial, a bit sarcastic. brave.follow the speaking style of Ron Weasley in the original book.",
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "OPENAI_API_KEY": "",
+                    "OPENAI_BASE_URL": "",
+                    "temperature": 0.3,
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "log_path": "logs/N1"
+                },
+                "toolkit": {},
+                "memory": {}
+            },
+            "Ginny_Weasley": {
+                "agent_name": "Ginny_Weasley",
+                "agent_roles": {
+                    "Negative_Task_Allocation_node": "Negative_Second",
+                    "Debate_Order_node": "Negative_Second",
+                    "Debate_Random_node": "Negative_Second"
+                },
+                "agent_style": "British, strong-willed, direct.follow the speaking style of Ginny Weasley in the original book.",
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "OPENAI_API_KEY": "",
+                    "OPENAI_BASE_URL": "",
+                    "temperature": 0.3,
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "log_path": "logs/N2"
+                },
+                "toolkit": {},
+                "memory": {}
+            },
+            "Albus_Dumbledore": {
+                "agent_name": "Albus_Dumbledore",
+                "agent_roles": {
+                    "Negative_Task_Allocation_node": "Negative_Third",
+                    "Debate_Order_node": "Negative_Third",
+                    "Debate_Random_node": "Negative_Third"
+                },
+                "agent_style": "British, wise, calm, enigmatic.follow the speaking style of Albus Dumbledore in the original book.",
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "OPENAI_API_KEY": "",
+                    "OPENAI_BASE_URL": "",
+                    "temperature": 0.3,
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "log_path": "logs/N3"
+                },
+                "toolkit": {},
+                "memory": {}
+            },
+            "J_K_Rowling": {
+                "agent_name": "J_K_Rowling",
+                "agent_roles": {
+                    "Debate_Order_node": "Debate_Judge",
+                    "Debate_Random_node": "Debate_Judge",
+                    "Judge_node": "Debate_Judge"
+                },
+                "agent_style": "British, articulate, descriptive.",
+                "LLM_config": {
+                    "LLM_type": "OpenAI",
+                    "OPENAI_API_KEY": "",
+                    "OPENAI_BASE_URL": "",
+                    "temperature": 0.3,
+                    "model": "gpt-4-turbo-2024-04-09",
+                    "log_path": "logs/Judge"
+                },
+                "toolkit": {},
+                "memory": {}
+            }
+        },
+        "environment": {
+            "shared_memory": {},
+            "shared_toolkit": {},
+            "environment_type": "competitive"
+        }
+    },
+    "sop": {
+        "nodes": {
+            "Affirmative_Task_Allocation_node": {
+                "node_name": "Affirmative_Task_Allocation_node",
+                "controller": {
+                    "transit_type": "llm",
+                    "max_chat_nums": 7,
+                    "transit_system_prompt": "If all three affirmative debaters have present their arguments, please consider to transit to the next node, otherwise stay at the current node.",
+                    "route_type": "order",
+                    "route_system_prompt": ""
+                },
+                "begin_role": "Affirmative_First",
+                "node_description": "It is currently the debate stage, where the positive side is assigning tasks.\nThe debate topic is as follows: \n<debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
+                "node_prompt_paddings": {
+                    "Affirmative_First": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Opening Advocate for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "1.Present arguments and main points.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments. 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.Please answer in the first person.7.Please note that you need to speak for the affirmative side and not help the negative side."
+                            }
+                        }
+                    },
+                    "Affirmative_Second": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Compelling Evidence Presenter for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "1.Elaborate on the points raised by the First Affirmative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.Please answer in the first person.7.Please note that you need to speak for the affirmative side and not help the negative side."
+                            }
+                        }
+                    },
+                    "Affirmative_Third": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Counterpoint Master for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "1.Summarize affirmative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "1.Highlight the advantages of the affirmative stance, emphasize points already presented, and deliver a concise yet strong summary of the affirmative position.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.Please answer in the first person.7.Please note that you need to speak for the affirmative side and not help the negative side."
+                            }
+                        }
+                    }
+                }
+            },
+            "Negative_Task_Allocation_node": {
+                "node_name": "Negative_Task_Allocation_node",
+                "controller": {
+                    "transit_type": "llm",
+                    "transit_system_prompt": "If all three negative debaters have present their arguments, please consider to transit to the next node, otherwise stay at the current node.",
+                    "max_chat_nums": 7,
+                    "route_type": "order",
+                    "route_system_prompt": ""
+                },
+                "begin_role": "Negative_First",
+                "node_description": "It is currently the debate stage, where the Negative side is assigning tasks.Debaters are called upon to allocate tasks for each speech, ensuring an equal distribution of responsibilities.Negative debaters gather to assign tasks, meticulously plan their speeches, and identify key arguments and evidence to support their viewpoint.\nThe debate topic is as follows: \n<debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
+                "node_prompt_paddings": {
+                    "Negative_First": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Opening Advocate for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "1.Present arguments and main points.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "1.Organize clear facts and logic to firmly support the stance. Introduce main points succinctly in the opening statement, laying a solid foundation for the debate.\n2.Exploring ways to structure the opening statement for maximum impact and clarity. Consider using attention-grabbing statistics or quotes to engage the audience.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.Please answer in the first person.\n7.Please note that you need to speak for the negative side and not help the affirmative side."
+                            }
+                        }
+                    },
+                    "Negative_Second": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Compelling Evidence Presenter for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "1.Elaborate on arguments, provide evidence.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n\n3.Please try to focus the discussion around the topic."
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "1.Elaborate on the points raised by the First Negative, present specific examples, data, and expert opinions to support the claims. Address potential counterarguments, emphasize strengths, and ensure coherent and persuasive reasoning.\n2.Discuss strategies for integrating real-world examples that resonate with the audience's experiences. Brainstorm ways to preemptively address common counterarguments and provide solid rebuttals.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.Please answer in the first person.\n7.Please note that you need to speak for the negative side and not help the affirmative side."
+                            }
+                        }
+                    },
+                    "Negative_Third": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Counterpoint Master for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "1.Summarize Negative stance.\n2.Summarize and analyze other people's opinions so that you can better complete tasks and actively provide opinions to others.\n3.Please try to focus the discussion around the topic."
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "1.Highlight the advantages of the Negative stance, emphasize points already presented, and deliver a concise yet strong summary of the Negative position.\n3.Actively discuss and express opinions with others and  assist others in improving their arguments.\n 5.Don't reiterate your own tasks repeatedly; offer more suggestions for others' tasks.Please answer in the first person.\n7.Please note that you need to speak for the negative side and not help the affirmative side."
+                            }
+                        }
+                    }
+                }
+            },
+            "Debate_Order_node": {
+                "node_name": "Debate_Order_node",
+                "controller": {
+                    "transit_type": "llm",
+                    "transit_system_prompt": "If all three affirmative debaters and three negative debaters have present their arguments, please consider to transit to the next node, otherwise stay at the current node.",
+                    "max_chat_nums": 7,
+                    "route_type": "order",
+                    "route_system_prompt": ""
+                },
+                "begin_role": "Debate_Judge",
+                "begin_query": "Now please proceed with your sequential debate according to your chosen topic.",
+                "node_description": "Now that we've started the sequential debating phase, each debater needs to present their own viewpoints.\nThe debate topic is as follows: \n<debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
+                "node_prompt_paddings": {
+                    "Affirmative_First": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Opening Advocate for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Deliver the first speech for the affirmative side, elaborating on the main arguments and providing additional evidence.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Expand on the affirmative points from the previous speech, address any challenges raised by the negative side, and present solid evidence to support your claims.Try to follow the tone of the original Harry Potter book as much as possible"
+                            }
+                        }
+                    },
+                    "Negative_First": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Opening Advocate for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Deliver the first speech for the negative side, countering the affirmative arguments and presenting your own points with supporting evidence.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Effectively counter the affirmative arguments made in the first speech, present well-reasoned arguments for the negative side, and provide strong evidence to back your stance.Try to follow the tone of the original Harry Potter book as much as possible"
+                            }
+                        }
+                    },
+                    "Affirmative_Second": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Compelling Evidence Presenter for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Deliver the second speech for the affirmative side, further strengthening the affirmative arguments and addressing any challenges posed by the negative side.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Build upon the affirmative case, respond to the negative's counterarguments, and reinforce your points with compelling evidence.Try to follow the tone of the original Harry Potter book as much as possible\n"
+                            }
+                        }
+                    },
+                    "Negative_Second": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Compelling Evidence Presenter for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Deliver the second speech for the negative side, further countering the affirmative arguments and providing additional evidence to support your stance.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Continue to challenge the affirmative side's points, present new arguments or counterarguments, and substantiate your position with strong evidence.Try to follow the tone of the original Harry Potter book as much as possible\n"
+                            }
+                        }
+                    },
+                    "Affirmative_Third": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Counterpoint Master for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Deliver the third speech for the affirmative side, summarizing the key points and providing a persuasive conclusion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Summarize the affirmative case, reinforce the main arguments, respond to the negative side's challenges, and make a strong closing statement.Try to follow the tone of the original Harry Potter book as much as possible\n"
+                            }
+                        }
+                    },
+                    "Negative_Third": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Counterpoint Master for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Deliver the third speech for the negative side, summarizing the key points and providing a persuasive conclusion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Summarize the negative case, highlight the main counterarguments, respond to the affirmative side's points, and deliver a compelling closing statement.Try to follow the tone of the original Harry Potter book as much as possible\n"
+                            }
+                        }
+                    },
+                    "Debate_Judge": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Debate Judge"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Evaluate the quality of the debate presentations and arguments made by both sides.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.Try to follow the tone of the original Harry Potter book as much as possible\n"
+                            }
+                        }
+                    }
+                }
+            },
+            "Debate_Random_node": {
+                "node_name": "Debate_Random_node",
+                "controller": {
+                    "transit_type": "llm",
+                    "max_chat_nums": 12,
+                    "route_type": "llm",
+                    "route_system_prompt": "Observe the ongoing discussion and decide who should speak next based on the current context.Please carefully analyze the flow of the discussion, identify which side needs to respond or present new points, and ensure fairness in allocating speaking opportunities."
+                },
+                "begin_role": "Debate_Judge",
+                "begin_query": "Now, please engage in a free debate based on your chosen topic.",
+                "node_description": "We are now in the open debate phase, where each debater has the freedom to speak as they wish.\nThe debate topic is as follows: <debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n ",
+                "node_prompt_paddings": {
+                    "Affirmative_First": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Opening Advocate for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible."
+                            }
+                        }
+                    },
+                    "Negative_First": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Opening Advocate for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible."
+                            }
+                        }
+                    },
+                    "Affirmative_Second": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Compelling Evidence Presenter for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible"
+                            }
+                        }
+                    },
+                    "Negative_Second": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Compelling Evidence Presenter for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible."
+                            }
+                        }
+                    },
+                    "Affirmative_Third": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Counterpoint Master for the Affirmative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Present your viewpoints and arguments for the affirmative side in the ongoing discussion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Effectively counter the negative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible."
+                            }
+                        }
+                    },
+                    "Negative_Third": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Counterpoint Master for the Negative"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Present your viewpoints and arguments for the negative side in the ongoing discussion.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Effectively counter the affirmative arguments, present your own points, and engage in constructive debate.Try to follow the tone of the original Harry Potter book as much as possible."
+                            }
+                        }
+                    },
+                    "Debate_Judge": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Debate Judge"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Evaluate the quality of the debate presentations and arguments made by both sides.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "Listen carefully to the speeches, consider the strength of the arguments, the evidence presented, and the overall persuasiveness. Provide a fair and objective assessment of each side's performance.Try to follow the tone of the original Harry Potter book as much as possible\n"
+                            }
+                        }
+                    }
+                }
+            },
+            "Judge_node": {
+                "node_name": "Judge_node",
+                "controller": {
+                    "transit_type": "order",
+                    "route_type": "order"
+                },
+                "node_description": "\nThe debate topic is as follows: <debate topic>\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\n</debate topic>\n",
+                "begin_role": "Debate_Judge",
+                "node_prompt_paddings": {
+                    "Debate_Judge": {
+                        "style": {
+                            "value_source": "config",
+                            "value": {
+                                "style": "Debate Judge"
+                            }
+                        },
+                        "task": {
+                            "value_source": "config",
+                            "value": {
+                                "task": "Evaluate the quality of the debate presentations and arguments made by both sides, and determine the current debate's winner.\n"
+                            }
+                        },
+                        "rule": {
+                            "value_source": "config",
+                            "value": {
+                                "rule": "After evaluating the speeches, arguments, evidence, and overall persuasiveness, provide a clear and decisive judgment. If the affirmative side wins, your response should be 'winner is Affirmative'. If the negative side wins, your response should be 'winner is Negative'. Your decision is required. Respond in a concise and certain manner, leaving no room for ambiguity."
+                            }
+                        },
+                        "last": {
+                            "value_source": "config",
+                            "value": {
+                                "last": "Determine the current debate's winner, whether it's the affirmative side or the negative side. Please strictly adhere to the following format for output: If the affirmative side wins, output 'winner is Affirmative'. Otherwise, output'winner is Negative'.You must choose a winner and not waver."
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "edges": {
+            "Affirmative_Task_Allocation_node": [
+                "Affirmative_Task_Allocation_node",
+                "Negative_Task_Allocation_node"
+            ],
+            "Negative_Task_Allocation_node": [
+                "Negative_Task_Allocation_node",
+                "Debate_Order_node"
+            ],
+            "Debate_Order_node": [
+                "Debate_Order_node",
+                "Debate_Random_node"
+            ],
+            "Debate_Random_node": [
+                "Debate_Random_node",
+                "Judge_node"
+            ],
+            "Judge_node": [
+                "Judge_node",
+                "end_node"
+            ]
+        },
+        "root": "Affirmative_Task_Allocation_node",
+        "end": "end_node"
+    }
+}

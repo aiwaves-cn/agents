@@ -1,0 +1,6 @@
+{
+    "problem": "What is $\\frac{1357_{9}}{100_{4}}-2460_{8}+5678_{9}$? Express your answer in base 10.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "First, we convert the following numbers to base 10:  $$1357_{9}= 7\\cdot9^{0}+5\\cdot9^{1}+3\\cdot9^{2}+1\\cdot9^{3} = 7+45+243+729 = 1024_{10},$$$$100_{4} = 0\\cdot4^{0}+0\\cdot4^{1}+1\\cdot4^{2} = 16_{10},$$$$2460_{8} = 0\\cdot8^{0}+6\\cdot8^{1}+4\\cdot8^{2}+2\\cdot8^{3} = 48+256+1024 = 1328_{10},\\quad\\text{and}$$$$5678_{9} = 8\\cdot9^{0}+7\\cdot9^{1}+6\\cdot9^{2}+5\\cdot9^{3} = 8+63+486+3645 = 4202_{10}.$$So the original expression equals $\\frac{1024}{16}-1328+4202 = \\boxed{2938}.$"
+}

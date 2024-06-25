@@ -1,0 +1,6 @@
+{
+    "problem": "For some value of $x,$ $0 < x < 180,$\n\\[\\tan 53^\\circ \\tan 81^\\circ \\tan x^\\circ = \\tan 53^\\circ + \\tan 81^\\circ + \\tan x^\\circ.\\]Find $x.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Isolating $\\tan x^\\circ,$ we find\n\\begin{align*}\n\\tan x &= \\frac{\\tan 53^\\circ + \\tan 81^\\circ}{\\tan 53^\\circ \\tan 81^\\circ - 1} \\\\\n&= -\\frac{\\tan 53^\\circ + \\tan 81^\\circ}{1 - \\tan 53^\\circ \\tan 81^\\circ}.\n\\end{align*}From the angle addition formula, this is equal to\n\\[-\\tan (53^\\circ + 81^\\circ) = -\\tan 134^\\circ = \\tan 46^\\circ.\\]Therefore, $x = \\boxed{46}.$"
+}

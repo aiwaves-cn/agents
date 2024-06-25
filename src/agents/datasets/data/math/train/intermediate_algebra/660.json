@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $x$ that satisfy\n\\[5x - 1 < (x + 1)^2 < 7x - 3.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The left inequality becomes $5x - 1 < x^2 + 2x + 1,$ or\n\\[x^2 - 3x + 2 > 0.\\]This factors as $(x - 1)(x - 2) > 0,$ and the solution to $x \\in (-\\infty,1) \\cup (2,\\infty).$\n\nThe right inequality becomes $x^2 + 2x + 1 < 7x - 3,$ or\n\\[x^2 - 5x + 4 < 0.\\]This factors as $(x - 1)(x - 4) < 0,$ and the solution is $x \\in (1,4).$\n\nThe intersection of $(-\\infty,1) \\cup (2,\\infty)$ and $(1,4)$ is $\\boxed{(2,4)}.$"
+}

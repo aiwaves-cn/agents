@@ -1,0 +1,6 @@
+{
+    "problem": "I have eleven books, of which I want to bring two to read on vacation. How many different pairs can I choose?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "I have $11$ choices for the first book and $10$ choices for the second book, making $11\\cdot 10$ pairs. But each pair has been counted twice (once for each ordering of the two books). Since order doesn't matter, the actual number of pairs I can choose is $(11\\cdot 10)/2$, which is $\\boxed{55}$."
+}

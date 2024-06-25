@@ -1,0 +1,6 @@
+{
+    "problem": "Find the domain of the function $f(x) = \\tan(\\arccos(x^2)).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "For $\\arccos (x^2)$ to be defined, we must have $-1 \\le x^2 \\le 1,$ which is satisfied only for $-1 \\le x \\le 1.$  Then $\\arccos (x^2)$ will always return an angle between 0 and $\\frac{\\pi}{2}.$  Then $\\tan (\\arccos(x^2))$ is defined, unless $\\arccos(x^2) = \\frac{\\pi}{2}.$  This occurs only when $x = 0.$\n\nTherefore, the domain of $f(x)$ is $\\boxed{[-1,0) \\cup (0,1]}.$"
+}

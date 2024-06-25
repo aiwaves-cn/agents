@@ -1,0 +1,6 @@
+{
+    "problem": "For how many values of $a$ is it true that the line $y=x+a$ passes through the vertex of parabola $y=x^2+a^2$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The given parabola has vertex at $(0,a^2)$. The line $y=x+a$ passes through this point if and only if $a^2=0+a$. Rearranging the equation gives $a^2-a=0$. Factoring an $a$ out of the left hand side yields $a(a-1)=0$, so $a=0$ or $a=1$. Thus, there are $\\boxed{2}$ possible values of $a$."
+}

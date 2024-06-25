@@ -1,0 +1,6 @@
+{
+    "problem": "Vectors $\\mathbf{a}$ and $\\mathbf{b}$ satisfy $\\|\\mathbf{a}\\| = 3$ and $\\|\\mathbf{b}\\| = 8.$  Also, the angle between vectors $\\mathbf{a}$ and $\\mathbf{b}$ is $135^\\circ.$  Find $\\|2 \\mathbf{a} + \\mathbf{b}\\|^2.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\mathbf{a} \\cdot \\mathbf{b} = \\|\\mathbf{a}\\| \\|\\mathbf{b}\\| \\cos 135^\\circ = 3 \\cdot 8 \\cdot \\left( -\\frac{1}{\\sqrt{2}} \\right) = -12 \\sqrt{2}.\\]Then\n\\begin{align*}\n\\|2 \\mathbf{a} + \\mathbf{b}\\|^2 &= (2 \\mathbf{a} + \\mathbf{b}) \\cdot (2 \\mathbf{a} + \\mathbf{b}) \\\\\n&= 4 \\mathbf{a} \\cdot \\mathbf{a} + 4 \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{b} \\cdot \\mathbf{b} \\\\\n&= 4 \\|\\mathbf{a}\\|^2 + 4 \\mathbf{a} \\cdot \\mathbf{b} + \\|\\mathbf{b}\\|^2 \\\\\n&= 4 \\cdot 3^2 + 4 \\cdot (-12 \\sqrt{2}) + 8^2 \\\\\n&= \\boxed{100 - 48 \\sqrt{2}}.\n\\end{align*}"
+}

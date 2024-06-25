@@ -1,0 +1,6 @@
+{
+    "problem": "The shaded region consists of 16 congruent squares. If $PQ = 6$ cm, what is the area of the entire shaded region?\n\n[asy]\nfor(int i = 0; i < 5; ++i)\n{\n\nfor(int j = 0; j < 2; ++j)\n\n{\n\nfilldraw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--(i,j)--cycle,gray,linewidth(2));\n\n}\n}\n\nfor(int i = 0; i < 2; ++i)\n{\n\nfor(int j = 0; j < 5; ++j)\n\n{\n\nfilldraw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--(i,j)--cycle,gray,linewidth(2));\n\n}\n}\n\ndraw((2,2)--(5,2)--(2,5)--(2,2)--cycle,linewidth(2));\n\nlabel(\"P\",(2,5),N);\nlabel(\"Q\",(5,2),E);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Imagine the square whose diagonal would be PQ.  Clearly, that square would be formed of 9 of the shaded squares.  The formula for the area of a square from its diagonal is $A = \\frac{d^2}{2}$, therefore, the area of that imaginary square is 18.  Thus, each smaller shaded square has area 2, making for a total of $\\boxed{32\\text{ square cm}}$ for the entire shaded area."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Bicycle license plates in Flatville each contain three letters. The first is chosen from the set $\\{C,H,L,P,R\\},$ the second from $\\{A,I,O\\},$ and the third from $\\{D,M,N,T\\}.$\n\nWhen Flatville needed more license plates, they added two new letters. The new letters may both be added to one set or one letter may be added to one set and one to another set. What is the largest possible number of ADDITIONAL license plates that can be made by adding two letters?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Before new letters were added, five different letters could have been chosen for the first position, three for the second, and four for the third. This means that $5\\cdot 3\\cdot 4=60$ plates could have been made.\n\nIf two letters are added to the second set, then $5\\cdot 5\\cdot 4=100$ plates can be made. If one letter is added to each of the second and third sets, then $5\\cdot 4\\cdot 5=100$ plates can be made. None of the other four ways to place the two letters will create as many plates. So, $100-60=\\boxed{40}$ ADDITIONAL plates can be made.\n\nNote: Optimum results can usually be obtained in such problems by making the factors as nearly equal as possible."
+}

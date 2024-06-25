@@ -1,0 +1,6 @@
+{
+    "problem": "Given $w$ and $z$ are complex numbers such that $|w+z|=1$ and $|w^2+z^2|=14,$ find the smallest possible value of $|w^3+z^3|.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We try to express $w^3+z^3$ in terms of $w+z$ and $w^2+z^2.$ We have, by sum of cubes, \\[w^3+z^3=(w+z)(w^2+z^2-wz),\\]so we want now to express $wz$ in terms of $w+z$ and $w^2+z^2.$ To do that, we write $(w+z)^2 = w^2+z^2+2wz,$ from which it follows that $wz = \\tfrac12 \\left((w+z)^2 - (w^2+z^2)\\right).$ Thus, \\[\\begin{aligned} w^3+z^3&=(w+z)(w^2+z^2-\\tfrac12\\left((w+z)^2-(w^2+z^2)\\right)) \\\\ &= (w+z)\\left(\\tfrac32(w^2+z^2)-\\tfrac12(w+z)^2\\right). \\end{aligned}\\]Taking magnitudes of both sides, we have \\[\\begin{aligned} \\left|w^3+z^3\\right| &= \\left| (w+z)\\left(\\tfrac32(w^2+z^2)-\\tfrac12(w+z)^2\\right) \\right| \\\\ &=|w+z| \\cdot \\left|\\tfrac32(w^2+z^2)-\\tfrac12(w+z)^2\\right|. \\end{aligned}\\]We are given that $|w+z| = 1,$ so \\[|w^3+z^3| = \\left|\\tfrac32(w^2+z^2)-\\tfrac12(w+z)^2\\right|.\\]We have $\\left|\\tfrac32(w^2+z^2)\\right| = \\tfrac32 \\cdot 14 = 21$ and $\\left|\\tfrac12(w+z)^2\\right| = \\tfrac12 \\cdot 1^2 = \\tfrac12,$ so by the triangle inequality, \\[|w^3+z^3| \\ge \\left| 21 - \\tfrac12 \\right| = \\boxed{\\tfrac{41}2}.\\]"
+}

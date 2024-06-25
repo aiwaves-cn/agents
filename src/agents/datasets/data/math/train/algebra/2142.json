@@ -1,0 +1,6 @@
+{
+    "problem": "The solutions to $4x^2 + 3 = 3x - 9$ can be written in the form $x = a \\pm b i,$ where $a$ and $b$ are real numbers. What is $a + b^2$? Express your answer as a fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we move all terms to one side to get $4x^2 - 3x + 12 = 0.$ Seeing that factoring will not work, we apply the Quadratic Formula: \\begin{align*}\nx &= \\frac{-(-3) \\pm \\sqrt{(-3)^2 - 4(4)(12)}}{2 (4)}\\\\\n&= \\frac{3 \\pm \\sqrt{9 - 192}}{8} = \\frac{3 \\pm \\sqrt{-183}}{8} = \\frac{3}{8} \\pm \\frac{\\sqrt{183}}{8}i.\n\\end{align*}Now we see that $a = \\dfrac{3}{8}$ and $b = \\pm \\frac{\\sqrt{183}}{8},$ so $a + b^2 = \\dfrac{3}{8} + \\dfrac{183}{64} = \\boxed{\\dfrac{207}{64}}.$"
+}

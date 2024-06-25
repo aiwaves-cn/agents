@@ -1,0 +1,6 @@
+{
+    "problem": "A certain circle's area is $x$ square units, and its circumference is $y$ units. The value of $x + y$ is $80\\pi$. What is the radius of the circle, in units?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "If $r$ is the radius of the circle, we know that $x = \\pi r^2$ and $y = 2\\pi r$. Thus, we have \\begin{align*}\nx + y &= 80\\pi\\\\\n\\pi r^2 + 2\\pi r &= 80\\pi\\\\\nr(r + 2) &= 80.\n\\end{align*}\n\nWe want to find two integers whose product is 80, such that one integer is two more than the other. We note that 80 can be factored as $8\\cdot 10$. Therefore, $r = \\boxed{8}$."
+}

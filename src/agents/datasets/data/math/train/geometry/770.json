@@ -1,0 +1,6 @@
+{
+    "problem": "The cube below has sides of length 4 feet. If a cylindrical section of radius 2 feet is removed from the solid, what is the total remaining volume of the cube? Express your answer in cubic feet in terms of $\\pi$.\n\n[asy]\nimport solids; size(150); import three; defaultpen(linewidth(0.8)); currentprojection = orthographic(4,2.5,3);\n\ndraw((1,-1,0)--(1,1,0)--(-1,1,0)); draw((-1,1,0)--(-1,-1,0)--(1,-1,0), dashed);\ndraw((1,-1,2)--(1,1,2)--(-1,1,2)--(-1,-1,2)--cycle);\ndraw((1,-1,0)--(1,-1,2)); draw((1,1,0)--(1,1,2)); draw((-1,-1,0)--(-1,-1,2),dashed); draw((-1,1,0)--(-1,1,2));revolution c = cylinder((0,0,0), 1, 2);\ndraw(c,black);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The cube has volume $4^3=64$ cubic feet.  The cylinder has radius 2, height 4, and volume $\\pi(2^2)(4)=16\\pi$ cubic feet.  It follows that when the cylindrical section is removed from the solid, the remaining volume is $\\boxed{64-16\\pi}$ cubic feet."
+}

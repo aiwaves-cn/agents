@@ -1,0 +1,6 @@
+{
+    "problem": "Find the integer $n,$ $-90 < n < 90,$ such that $\\tan n^\\circ = \\tan 1000^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Since the tangent function has period $180^\\circ,$\n\\[\\tan 1000^\\circ = \\tan (1000^\\circ - 6 \\cdot 180^\\circ) = \\tan (-80^\\circ),\\]so $n = \\boxed{-80}.$"
+}

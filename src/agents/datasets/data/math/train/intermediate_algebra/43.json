@@ -1,0 +1,6 @@
+{
+    "problem": "A function $f$ is defined by $f(z) = i\\overline{z}$, where $i^2 = -1$ and $\\overline{z}$ is the complex conjugate of $z$. How many values of $z$ satisfy both $|z| = 5$ and $f(z) = z$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Then $|z| = 5$ becomes $x^2 + y^2 = 25,$ and $f(z) = z$ becomes\n\\[i(x - yi) = x + yi.\\]Then $ix + y = x + yi,$ so $x = y.$\n\nHence, $2x^2 = 25,$ which has two solutions.  Thus, there are $\\boxed{2}$ such values of $z.$"
+}

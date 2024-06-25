@@ -1,0 +1,6 @@
+{
+    "problem": "What is the degree of the polynomial $(x^4+ax^7+bx+c)(x^3+dx^2+e)(x+f)$, where letters $a$ through $f$ are all nonzero constants?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "In order to determine the degree of a polynomial, we need to know the largest exponent of the variable in the polynomial. When we multiply out the expression above, the term with the largest exponent results from the product of the terms with the largest exponents within each multiplied quantity. These terms are $ax^7$, $x^3$, and $x$. Taking the product of all of these terms $ax^7\\cdot x^3\\cdot x=ax^{11}$, we find that the largest exponent is $\\boxed{11}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many zeros are at the end of the product 25  $\\times$ 240?",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "To count the number of zeros at the end of $25\\times240$, we must count the number of products $2\\times5$. We prime factorize the product by combining the prime factorizations of 25 and 240: $25\\times240=(5^2)(2^4\\cdot3\\cdot5)=2^4\\cdot3\\cdot5^3$. We take the minimum of the powers of 2 and 5 to find that $25\\times240$ has $\\boxed{3}$ terminal zeros."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "There is a unique polynomial $P(x)$ of degree $4$ with rational coefficients and leading coefficient $1$ which has $\\sqrt{1+\\sqrt{6}}$ as a root. What is $P(1)$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We build a polynomial $P(x)$ by starting with the equation $x = \\sqrt{1+\\sqrt{6}}$ and trying to generate an equation for $x$ with only rational coefficients. To start, square this equation, giving \\[x^2 =1+\\sqrt{6}.\\]If we subtract $1$ and then square again, we see that \\[(x^2-1)^2 = (\\sqrt6)^2\\]or $x^4 - 2x^2 + 1 = 6.$ Thus, $x^4 - 2x^2 - 5 = 0,$ so we have shown that $\\sqrt{1+\\sqrt{6}}$ is a root of $x^4-2x^2-5.$ Therefore, we have $P(x) = x^4-2x^2-5,$ and so $P(1) = 1 - 2 + 5 = \\boxed{-6}.$"
+}

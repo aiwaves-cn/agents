@@ -1,0 +1,6 @@
+{
+    "problem": "Paula invests $\\$10,\\!000$ at the start of a 5 year period at an interest rate of $10\\%$. At the end of those 5 years, how much is her investment worth if the interest is compounded quarterly?  Express your answer rounded to the nearest cent.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "In the first quarter, Paula earns $\\frac{0.10}{4}(\\$10,\\!000)$ in interest, so her investment is worth $\\$10,\\!000 +\\frac{0.10}{4}(\\$10,\\!000) = \\left(1 + \\frac{0.10}{4}\\right)(\\$10,\\!000)$. Similarly, the value of her investment is multiplied by $1 + \\frac{0.10}{4}$ each quarter, so after 5 years, which is $5\\cdot 4 = 20$ quarters, her investment is worth \\[\\left(1 + \\frac{0.10}{4}\\right)^{5\\cdot 4}(\\$10,\\!000) \\approx \\boxed{\\$16,\\!386.16}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Point $D$ is on side $AC$ of triangle $ABC$, $\\angle ABD=15^{\\circ}$ and  $\\angle DBC=50^{\\circ}$. What is the measure of angle $BAD$, in degrees?\n\n[asy]draw((-43,0)--(43,0)--(43,40)--cycle);\ndraw((-4,0)--(43,40));\ndraw((39,4)--(39,0));\ndraw((39,4)--(43,4));\ndraw((-1,36)--(22.5,26),Arrow);\nlabel(\"$15^{\\circ}$\",(-1,36),W);\nlabel(\"$50^{\\circ}$\",(36,30),S);\nlabel(\"D\",(-4,0),S);\nlabel(\"A\",(-43,0),W);\nlabel(\"B\",(43,40),N);\nlabel(\"C\",(43,0),E);\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "From triangle $ABC$, we have $\\angle A = 180^\\circ - \\angle C - \\angle ABC = 180^\\circ - 90^\\circ - (50^\\circ + 15^\\circ) = 90^\\circ - 65^\\circ = \\boxed{25^\\circ}$."
+}

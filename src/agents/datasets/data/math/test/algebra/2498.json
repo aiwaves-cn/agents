@@ -1,0 +1,6 @@
+{
+    "problem": "The parabola with equation $y=ax^2+bx+c$ is graphed below:\n\n[asy]\nunitsize(0.2 cm);\nxaxis(-5,9);\n\nyaxis(-7,2);\n\nreal g(real x)\n\n{\n\nreturn -1/9*(x-2)^2+1;\n}\n\ndraw(graph(g,-5,9));\ndot((2,1));\nlabel(\"Vertex: $(2,1)$\", (2,1), NE);\ndot((-4,-3));\nlabel(\"$(-4,-3)$\", (-4,-3), W);\n[/asy]\n\nThe zeros of the quadratic $ax^2 + bx + c$ are at $x=m$ and $x=n$, where $m>n$. What is $m-n$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The vertex form of a parabolic equation is $y=a(x-h)^2+k$. Since we are given that the vertex is at $(2,1)$, we know that $h=2$ and $k=1$. Plugging that into our equation gives $y=a(x-2)^2+1$. Now, substituting the other given point $(-4,-3)$ into the equation to solve for $a$, we have  \\begin{align*}\n-3&=a(-4-2)^2+1\\\\\n-4&=a(-6)^2\\\\\n-4&=36a\\\\\n-\\frac{1}{9}&=a\n\\end{align*} So the equation for the graphed parabola is $y=-\\frac{1}{9}(x-2)^2+1$. The zeros of the quadratic occur when $y=0$, so plugging that value into the equation to solve for $x$, we have $0=-\\frac{1}{9}(x-2)^2+1 \\Rightarrow (x-2)^2=9$. Taking the square root of both sides yields $x-2=\\pm 3$, so $x=5$ or $x=-1$. Thus, $m=5$ and $n=-1$, so $m-n=5-(-1)=\\boxed{6}$."
+}

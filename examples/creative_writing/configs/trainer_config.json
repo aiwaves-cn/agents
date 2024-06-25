@@ -1,0 +1,39 @@
+{
+    "batch_size": 4,
+    "max_step": 4,
+    "log_path": "examples/creative_writing/new_logs",
+
+    "sample_kind": "random",
+    "allow_duplicate_samples": false,
+    "has_ground_truth": false,
+    "has_eval_score": true,
+
+    "early_stop_threshold": 0.8,
+    "max_exceed_threshold_count": 3,
+    "max_score_decline_count": 5,
+    "use_early_stop_threshold": true,
+    "use_early_stop_score_decline": true,
+
+    "use_roll_back": true,
+
+    "parallel": true,
+    "parallel_max_num": 8,
+
+    "initial_solution_path": "examples/creative_writing/configs/solution.json",
+    "optimizer_config_path": "examples/creative_writing/configs/optimizer_config.json",
+    "optim_order": "order",
+    "optimizers": [
+        "prompt", "node"
+    ],
+    "additional_info": {
+        "loss": "",
+        "sop": "",
+        "node": "",
+        "prompt": ""
+    },
+    "wandb_config": {
+        "project": "Agent2",
+        "name": "creative_writing",
+        "mode": "online"
+    }
+}

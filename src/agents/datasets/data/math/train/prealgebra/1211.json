@@ -1,0 +1,6 @@
+{
+    "problem": "Yan is  somewhere between his home and the stadium. To get to the stadium he can walk directly to the stadium, or else he can walk home and then ride his bicycle to the stadium.  He rides 7 times as fast as he walks, and both choices require the same amount of time. What is the ratio of Yan's distance from his home to his distance from the stadium?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let $w$ be Yan's walking speed, and let $x$ and $y$ be the distances from Yan to his home and to the stadium, respectively. The time required for Yan to walk to the stadium is $y/w$, and the time required for him to walk home is $x/w$.  Because he rides his bicycle at a speed of $7w$, the time required for him to ride his bicycle from his home to the stadium is $(x+y)/(7w)$. Thus \\[\\frac{y}{w}=\\frac{x}{w}+\\frac{x+y}{7w} = \\frac{8x + y}{7w}.\\]As a consequence, $7y = 8x + y$, so  $8x=6y$. The required ratio is $x/y=6/8=\\boxed{\\frac{3}{4}}$."
+}

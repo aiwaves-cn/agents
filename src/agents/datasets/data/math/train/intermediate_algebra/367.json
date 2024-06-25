@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be positive real numbers such that $a + b = 1.$  Find set of all possible values of $\\frac{1}{a} + \\frac{1}{b}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-HM,\n\\[\\frac{a + b}{2} \\ge \\frac{2}{\\frac{1}{a} + \\frac{1}{b}}.\\]Hence,\n\\[\\frac{1}{a} + \\frac{1}{b} \\ge \\frac{4}{a + b} = 4.\\]Equality occurs when $a = b = \\frac{1}{2}.$\n\nNote that as $a$ approaches 0 and $b$ approaches 1, $\\frac{1}{a} + \\frac{1}{b}$ becomes arbitrarily large.  Therefore, the set of all possible values of $\\frac{1}{a} + \\frac{1}{b}$ is $\\boxed{[4,\\infty)}.$"
+}

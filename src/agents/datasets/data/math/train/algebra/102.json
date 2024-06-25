@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\nx/2 &\\quad \\text{if } x \\text{ is even}, \\\\\n3x+1 &\\quad \\text{if } x \\text{ is odd}.\n\\end{cases}\n\\]What is $f(f(f(f(1))))$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Evaluating each value, $f(1) = 3 \\cdot 1 + 1 = 4$; $f(f(1)) = f(4) = 4/2 = 2$; $f(f(f(1))) = f(2) = 2/2 = 1$; and finally $f(f(f(f(1)))) = f(1) = \\boxed{4}$."
+}

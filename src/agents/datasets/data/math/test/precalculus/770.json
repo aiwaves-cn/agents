@@ -1,0 +1,6 @@
+{
+    "problem": "A $135^\\circ$ rotation around the origin in the counter-clockwise direction is applied to $\\sqrt{2} - 5 \\sqrt{2} i.$  What is the resulting complex number?",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "A $135^\\circ$ rotation around the origin in the clockwise direction corresponds to multiplication by $\\operatorname{cis} 135^\\circ = -\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}} i.$\n\n[asy]\nunitsize(0.5 cm);\n\npair A = (sqrt(2),-5*sqrt(2)), B = (4,6);\n\ndraw((-2,0)--(5,0));\ndraw((0,-8)--(0,8));\ndraw((0,0)--A,dashed);\ndraw((0,0)--B,dashed);\n\ndot(\"$\\sqrt{2} - 5 \\sqrt{2} i$\", A, S);\ndot(\"$4 + 6i$\", B,  NE);\n[/asy]\n\nThus, the image of $\\sqrt{2} - 5 \\sqrt{2} i$ is\n\\[(\\sqrt{2} - 5 \\sqrt{2} i) \\left( -\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}} i \\right) = \\boxed{4 + 6i}.\\]"
+}

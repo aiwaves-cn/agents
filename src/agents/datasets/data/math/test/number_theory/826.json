@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common factor of $1001$ and $2431.$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "By the Euclidean algorithm for computing greatest common factors, we have  \\[\n\\text{gcf}(1001,2431)=\\text{gcf}(1001,2431-2\\cdot 1001) = \\text{gcf}(1001,429).\n\\]Applying the Euclidean algorithm again, we get \\[\n\\text{gcf}(1001,429)=\\text{gcf}(429,1001-2\\cdot 429)= \\text{gcf}(429,143).\n\\]Recognizing 429 as $3\\times 143$, we conclude that the greatest common factor of 1001 and 2431 is $\\boxed{143}.$"
+}

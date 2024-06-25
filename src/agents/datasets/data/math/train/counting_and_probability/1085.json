@@ -1,0 +1,6 @@
+{
+    "problem": "I have 5 red plates and 4 blue plates. If I randomly select two plates to serve dinner on, what is the probability that they're both the same color?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are ${9 \\choose 2} = 36$ pairs of plates possible in all. Exactly ${5 \\choose 2} = 10$ of these pairs are both red plates and $\\binom{4}{2}=6$ pairs are both blue plates for a total of $6+10=16$ pairs of plates that satisfy our condition. So, the probability of the pair of plates being the same color is $\\frac{16}{36}=\\boxed{\\frac{4}{9}}$."
+}

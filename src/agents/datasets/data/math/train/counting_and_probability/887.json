@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ is a positive integer, what is the value of $x$ for the equation $(x!-(x-3)!) \\div 23 = 1$?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "We have $x!-(x-3)! = 23$. Since $4!=24$, the number $23$ strongly suggests us to try $x=4$, and indeed, $4!-(4-3)! = 4!-1! = 24-1=23$, so $x=\\boxed{4}$ is the answer."
+}

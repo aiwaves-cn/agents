@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ is a right triangle with legs $AB$ and $AC$. Points $X$ and $Y$ lie on legs $AB$ and $AC$, respectively, so that $AX:XB = AY:YC = 1:2$. If $BY = 16$ units, and $CX = 28$ units, what is the length of hypotenuse $BC$? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $AB = x$ and $AC = y$. Then we can write two Pythagorean equations from the information given: $(x/3)^2 + y^2 = 28^2$ and $x^2 + (y/3)^2 = 16^2$. These equations become $x^2/9 + y^2 = 784$ and $x^2 + y^2/9 = 256$. Multiplying them both by 9, we get $x^2 + 9y^2= 7056$ and $9x^2 + y^2\n= 2304$. Now we add the two equations to get $10x^2 + 10y^2 = 9360$, which can be reduced to $x^2\n+ y^2 = 936$. We do not need to solve for $x$ and $y$ since 936 is the square of the hypotenuse $BC$. The length is thus $\\sqrt{936} = \\sqrt{(36 \\times 26)} = \\sqrt{36} \\times \\sqrt{26} = \\boxed{6\\sqrt{26}}$ units."
+}

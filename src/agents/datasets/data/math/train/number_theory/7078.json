@@ -1,0 +1,6 @@
+{
+    "problem": "Call a $3$-digit number geometric if it has $3$ distinct digits which, when read from left to right, form a geometric sequence. Find the difference between the largest and smallest geometric numbers.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Assume that the largest geometric number starts with a $9$. We know that the common ratio must be a rational of the form $k/3$ for some integer $k$, because a whole number should be attained for the 3rd term as well. When $k = 1$, the number is $931$. When $k = 2$, the number is $964$. When $k = 3$, we get $999$, but the integers must be distinct. By the same logic, the smallest geometric number is $124$. The largest geometric number is $964$ and the smallest is $124$. Thus the difference is $964 - 124 = \\boxed{840}$."
+}

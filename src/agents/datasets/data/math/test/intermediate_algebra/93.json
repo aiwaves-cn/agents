@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[f(x) = \\frac{cx}{2x + 3}.\\]Find the constant $c$ so that $f^{-1}(x) = f(x).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "From the condition $f^{-1}(x) = f(x),$ $f(f^{-1}(x)) = f(f(x)),$ which simplifies to $f(f(x)) = x.$\n\nNote that\n\\begin{align*}\nf(f(x)) &= f \\left( \\frac{cx}{2x + 3} \\right) \\\\\n&= \\frac{c \\cdot \\frac{cx}{2x + 3}}{2 \\cdot \\frac{cx}{2x + 3} + 3} \\\\\n&= \\frac{c^2 x}{2cx + 3(2x + 3)} \\\\\n&= \\frac{c^2 x}{(2c + 6) x + 9}.\n\\end{align*}Setting this equal to $x,$ we get\n\\[\\frac{c^2 x}{(2c + 6) x + 9} = x,\\]so $c^2 x = (2c + 6) x^2 + 9x.$  We want this to hold for all $x,$ so we require the corresponding coefficients on both sides to be equal.  In other words, from the quadratic term we get $0 = 2c + 6$, and from the linear terms we get $c^2 = 9$.  This gives us $c = \\boxed{-3}.$"
+}

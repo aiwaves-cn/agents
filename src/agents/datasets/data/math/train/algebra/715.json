@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all integer solutions to $1<(x-2)^2<25$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $y = x - 2,$ so $1 < y^2 < 25.$  Then the integer solutions to $y$ are $-4,$ $-3,$ $-2, 2, 3, 4,$ so the solutions in $x$ are $-4 + 2 = -2,$ $-3 + 2 = -1,$ $-2 + 2 = 0,$ $2 + 2 = 4,$ $3 + 2 = 5,$ and $4 + 2 = 6.$  Their sum is $(-2) + (-1) + 0 + 4 + 5 + 6 = \\boxed{12}.$"
+}

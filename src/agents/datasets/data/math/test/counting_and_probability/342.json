@@ -1,0 +1,6 @@
+{
+    "problem": "There are seven wombats in a council. Three of them are hairy-nosed wombats, while the rest are all different species. If the hairy-nosed wombats are indistinguishable but the other wombats are, how many ways can the wombats seat themselves in a row?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $7!$ ways to arrange all the wombats. However, because the order of the hairy-nosed wombats does not matter, we've overcounted by the number of ways to arrange those three wombats, or $3!$.\n\nThe answer is $\\dfrac{7!}{3!}=\\boxed{840}$ ways."
+}

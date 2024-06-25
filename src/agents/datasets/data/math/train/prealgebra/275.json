@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $AB = 25 \\mbox{ cm},$ $AC = 20 \\mbox{ cm},$ and $\\angle A = 90^\\circ.$ What is the area of triangle $ABC?$\n\n[asy]\ndraw((0,0)--(25,0)--(0,20)--cycle,black+linewidth(1));\ndraw((0,0)--(1,0)--(1,1)--(0,1)--cycle,black+linewidth(1));\nlabel(\"$A$\",(0,0),SW);\nlabel(\"$B$\",(25,0),SE);\nlabel(\"$C$\",(0,20),NW);\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Triangle $ABC$ has base $AB$ of length $25\\text{ cm}$ and height $AC$ of length $20\\text{ cm}.$ Therefore, the area of triangle $ABC$ is \\begin{align*}\n\\frac{1}{2}bh &= \\frac{1}{2}(25 \\mbox{ cm})(20 \\mbox{ cm}) \\\\\n&= \\frac{1}{2}(500 \\mbox{ cm}^2) \\\\\n&= \\boxed{250} \\mbox{ cm}^2.\n\\end{align*}"
+}

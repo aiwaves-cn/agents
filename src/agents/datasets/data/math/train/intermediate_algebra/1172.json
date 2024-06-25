@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ $z$ be real numbers such that $-1 < x,$ $y,$ $z < 1.$  Find the minimum value of\n\\[\\frac{1}{(1 - x)(1 - y)(1 - z)} + \\frac{1}{(1 + x)(1 + y)(1 + z)}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Putting everything over a common denominator, we get\n\\begin{align*}\n\\frac{1}{(1 - x)(1 - y)(1 - z)} + \\frac{1}{(1 + x)(1 + y)(1 + z)} &= \\frac{(1 + x)(1 + y)(1 + z) + (1 - x)(1 - y)(1 - z)}{(1 - x)(1 - y)(1 - z)(1 + x)(1 + y)(1 + z)} \\\\\n&= \\frac{2 + 2(xy + xz + yz)}{(1 - x^2)(1 - y^2)(1 - z^2)}.\n\\end{align*}Note that $2 + 2(xy + xz + yz) \\ge 2$ and $(1 - x^2)(1 - y^2)(1 - z^2) \\le 1,$ so\n\\[\\frac{2 + 2(xy + xz + yz)}{(1 - x^2)(1 - y^2)(1 - z^2)} \\ge 2.\\]Equality occurs when $x = y = z = 0,$ so the minimum value is $\\boxed{2}.$"
+}

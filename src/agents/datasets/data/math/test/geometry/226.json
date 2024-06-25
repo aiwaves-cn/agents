@@ -1,0 +1,6 @@
+{
+    "problem": "In circle $J$, $HO$ and $HN$ are tangent to the circle at $O$ and $N$. Find the number of degrees in the sum of $m\\angle J$ and $m\\angle H$. [asy]\nsize(150);\nimport graph;\npair J = (0,0), H = (6,0), O, N;\npath circ = Circle(J,3);\npair M = midpoint(J--H);\npath secCirc = Circle(M,3);\npair[] tangentPoints = intersectionpoints(circ,secCirc);\nO = tangentPoints[0]; N = tangentPoints[1];\ndraw(J--N--H--O--cycle);\ndraw(circ);\nlabel(\"$H$\",H,E);\nlabel(\"$J$\",J,W);\nlabel(\"$N$\",N,S);\nlabel(\"$O$\",O,NE);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Since $\\overline{OH}$ and $\\overline{NH}$ are tangent to radii of the circle at $O$ and $N$, we have $\\angle O =\\angle N = 90^\\circ$.  The sum of the measures of the interior angles of quadrilateral $JOHN$ is $360^\\circ$, so $\\angle J + \\angle H = 360^\\circ - \\angle O - \\angle N = \\boxed{180^\\circ}$."
+}

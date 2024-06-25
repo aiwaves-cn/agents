@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $Q$ if $\\sqrt{Q^3} = 16\\sqrt[8]{16}$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "To start removing the radicals, we square both sides of the equation. This gives $$Q^3 = \\left(\\sqrt{Q^3}\\right)^2 = \\left(16\\sqrt[8]{16}\\right)^2 = 256 \\cdot \\sqrt[4]{16} = 256 \\cdot 2 = 512.$$Thus, $Q = \\sqrt[3]{512} = \\sqrt[3]{2^9} = \\boxed{8}.$"
+}

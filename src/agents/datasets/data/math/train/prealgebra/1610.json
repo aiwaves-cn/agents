@@ -1,0 +1,6 @@
+{
+    "problem": "When $1000^{100}$ is expanded out, the result is $1$ followed by how many zeros?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Remember, $10^n$ is $1$ followed by n zeros.  Now, in order to count the zeros, we must express $1000^{100}$ in the form of $10^n$.  Notice that $1000 = 10^3$, so $1000^{100} = (10^3)^{100} = 10^{300}$, by the power of a power rule.  Now, it is obvious that $1000^{100}$ is $1$ followed by $\\boxed{300}$ zeros."
+}

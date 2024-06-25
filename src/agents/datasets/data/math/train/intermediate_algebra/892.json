@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be real numbers.  Find the maximum value of $a \\cos \\theta + b \\sin \\theta$ in terms of $a$ and $b.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By the Cauchy-Schwarz Inequality,\n\\[(a \\cos \\theta + b \\sin \\theta)^2 \\le (a^2 + b^2)(\\cos^2 \\theta + \\sin^2 \\theta) = a^2 + b^2,\\]so $a \\cos \\theta + b \\sin \\theta \\le \\sqrt{a^2 + b^2}.$\n\nIf $a = b = 0,$ then $a \\cos \\theta + b \\sin \\theta = 0$ for all $\\theta.$  Otherwise, $a^2 + b^2 > 0,$ and we can find an angle $\\theta$ such that\n\\[\\cos \\theta = \\frac{a}{\\sqrt{a^2 + b^2}} \\quad \\text{and} \\quad \\sin \\theta = \\frac{b}{\\sqrt{a^2 + b^2}},\\]which makes $a \\cos \\theta + b \\sin \\theta = \\sqrt{a^2 + b^2}.$  Thus, the maximum value is $\\boxed{\\sqrt{a^2 + b^2}}.$"
+}

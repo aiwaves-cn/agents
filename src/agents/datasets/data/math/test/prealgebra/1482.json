@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct diagonals of a convex pentagon can be drawn?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "From each vertex $V$, we can draw 2 diagonals: one to each vertex that is not $V$ and does not share an edge with $V$.  There are 5 vertices in a pentagon, so we might be tempted to say the answer is $5\\times 2 = 10$.  However, note that this counts each diagonal twice, one time for each vertex.  Hence there are $\\frac{10}{2} =\\boxed{ 5}$ distinct diagonals in a convex pentagon."
+}

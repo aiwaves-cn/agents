@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to put 4 indistinguishable balls into 2 indistinguishable boxes?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "In this problem, we only need to count the number of ways to split 4 items into two groups.  There are only 3 ways: $\\{4,0\\}$, $\\{3,1\\}$ and $\\{2,2\\}$.  Therefore, there are only $\\boxed{3}$ ways to put 4 indistinguishable balls in 2 indistinguishable boxes."
+}

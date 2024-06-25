@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, what is the perimeter of $\\triangle PQS$? [asy]\nsize(5cm);\nimport olympiad;\n\n// Lines\npair q = (0, 0); pair r = (0, -5); pair p = (12, 0); pair s = (0, -20);\ndraw(q--p--s--cycle); draw(r--p);\n\n// Labels\nlabel(\"$Q$\", q, NW); label(\"$P$\", p, NE); label(\"$R$\", r, W); label(\"$S$\", s, W);\nlabel(\"$5$\", r / 2, W); label(\"$13$\", r + (p - r) / 2, 1.2 * S); label(\"$37$\", s + (p - s) / 2, SE);\n\nmarkscalefactor = 0.1;\ndraw(rightanglemark(s, q, p));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "By the Pythagorean Theorem in $\\triangle PQR$, $$PQ^2 = PR^2 - QR^2 = 13^2 - 5^2 = 144,$$so $PQ=\\sqrt{144}=12$.\n\nBy the Pythagorean Theorem in $\\triangle PQS$, $$QS^2 = PS^2 - PQ^2 = 37^2 - 12^2 = 1225,$$so $QS = \\sqrt{1225}=35$.\n\nTherefore, the perimeter of $\\triangle PQS$ is $12+35+37=\\boxed{84}$."
+}

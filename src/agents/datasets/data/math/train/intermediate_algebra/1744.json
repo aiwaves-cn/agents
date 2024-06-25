@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\prod_{n = 1}^{20} \\frac{n + 3}{n}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\n\\prod_{n = 1}^{20} &= \\frac{4}{1} \\cdot \\frac{5}{2} \\cdot \\frac{6}{3} \\cdot \\frac{7}{4} \\dotsm \\frac{20}{17} \\cdot \\frac{21}{18} \\cdot \\frac{22}{19} \\cdot \\frac{23}{20} \\\\\n&= \\frac{21 \\cdot 22 \\cdot 23}{1 \\cdot 2 \\cdot 3} = \\boxed{1771}.\n\\end{align*}"
+}

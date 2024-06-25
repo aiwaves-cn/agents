@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest number $c$ such that $2x^2+5x+c=0$ has at least one real solution? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "In order for this quadratic to have at least one real solution, its discriminant must be non-negative. In other words, $b^2 - 4ac = 5^2 - 4(2)(c) = 25 - 8c \\ge 0$. Rearranging, we have $25 \\ge 8c$. Dividing by 8, we have $25/8 \\ge c$. Therefore, the largest possible value of $c$ such that this quadratic has a real solution is $\\boxed{\\frac{25}{8}}$."
+}

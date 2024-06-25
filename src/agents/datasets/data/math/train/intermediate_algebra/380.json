@@ -1,0 +1,6 @@
+{
+    "problem": "For each positive integer $p$, let $b(p)$ denote the unique positive integer $k$ such that $|k-\\sqrt{p}|<\\frac{1}{2}$. For example, $b(6)=2$ and $b(23)=5$. Find $S=\\sum_{p=1}^{2007} b(p)$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Given $k,$ suppose $|k - \\sqrt{p}| < \\frac{1}{2}.$  Then\n\\[k - \\frac{1}{2} < \\sqrt{p} < k + \\frac{1}{2}.\\]Squaring both sides, we get\n\\[k^2 - k + \\frac{1}{4} < p < k^2 + k + \\frac{1}{4}.\\]Thus, given $k,$ the positive integers $p$ such that $b(p) = k$ are $k^2 - k + 1,$ $k^2 - k + 2,$ $\\dots,$ $k^2 + k,$ for a total of $2k$ numbers.  So, these $2k$ numbers contribute $2k \\cdot k = 2k^2$ to the sum.\n\nNow, $b(2007) = 45,$ so\n\\begin{align*}\nS &= \\sum_{p = 1}^{2007} b(p) \\\\\n&= \\sum_{k = 1}^{44} 2k^2 + \\sum_{p = 1981}^{2007} 45 \\\\\n&= 2 \\sum_{k = 1}^{44} k^2 + 27 \\cdot 45 \\\\\n&= 2 \\cdot \\frac{44 \\cdot 45 \\cdot 89}{6} + 27 \\cdot 45 \\\\\n&= \\boxed{59955}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If I have a $4\\times 4$ chess board, in how many ways can I place four distinct pawns on the board such that each column and row of the board contains no more than one pawn?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Because our chess board is $4 \\times 4$, there must be exactly one pawn in each column and each row. Consider the ways to place one pawn in each row. In the first row, there are four potential spots for a pawn. However, no matter where we place the pawn, it takes up one column. So, in the second row, there are only three potential spots for a pawn. Similarly, there are two spots in the third row and only one in the fourth. Thus, there are $4\\cdot 3 \\cdot 2 \\cdot 1 = 24$ ways in which we can place the pawns. Now, because each pawn is distinct, we have four possible pawns to place in the first slot, three in the second, two in the fourth, and one in the last. So there are $24$ possible orderings of the pawns. Our final answer is thus $24^2 = \\boxed{576}$."
+}

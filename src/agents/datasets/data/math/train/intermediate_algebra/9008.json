@@ -1,0 +1,6 @@
+{
+    "problem": "$x$ is a real number with the property that $x+\\tfrac1x = 3$. Let $S_m = x^m + \\tfrac{1}{x^m}$. Determine the value of $S_7$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can calculate\\[x^2 + \\dfrac{1}{x^2} = \\left(x + \\dfrac{1}{x}\\right)^2 - 2 = 3^2 -2 = 7.\\]Similarly,\\[x^3 + \\dfrac{1}{x^3} = \\left(x + \\dfrac{1}{x}\\right) \\left(x^2 + \\dfrac{1}{x^2}\\right) - \\left(x + \\dfrac{1}{x}\\right) = 3 \\cdot 7 - 3 = 18\\]and\\[x^4 + \\dfrac{1}{x^4} = \\left(x^2 + \\dfrac{1}{x^2}\\right)^2 - 2 = 7^2 - 2 = 47.\\]Finally,\\[x^7 + \\dfrac{1}{x^7} = \\left(x^3 + \\dfrac{1}{x^3}\\right) \\left(x^4 + \\dfrac{1}{x^4}\\right) - \\left(x + \\dfrac{1}{x}\\right) = 18 \\cdot 47 - 3 = \\boxed{843}.\\]"
+}

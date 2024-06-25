@@ -1,0 +1,6 @@
+{
+    "problem": "Find $b + h.$\n\n[asy]\nunitsize(0.2 cm);\n\npair A, B, C, D, E, F;\n\nA = (0,0);\nB = (20,0);\nC = (20,15);\n\nD = (30,0);\nE = (30 + 7,0);\nF = (30 + 7,25);\n\ndraw(A--B--C--cycle);\ndraw(D--E--F--cycle);\ndraw(rightanglemark(A,B,C,40));\ndraw(rightanglemark(D,E,F,40));\n\nlabel(\"$\\theta$\", (4,1.5));\nlabel(\"$20$\", (A + B)/2, S);\nlabel(\"$15$\", (B + C)/2, dir(0));\nlabel(\"$25$\", (A + C)/2, NW);\n\nlabel(\"$2 \\theta$\", D + (2,1.5));\nlabel(\"$b$\", (D + E)/2, S);\nlabel(\"$h$\", (E + F)/2, dir(0));\nlabel(\"$25$\", (D + F)/2, NW);\n[/asy]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the left right triangle,\n\\[\\cos \\theta = \\frac{20}{25} = \\frac{4}{5} \\quad \\text{and} \\quad \\sin \\theta = \\frac{15}{25} = \\frac{3}{5}.\\]Then\n\\[\\cos 2 \\theta = 2 \\cos^2 \\theta - 1 = 2 \\left( \\frac{4}{5} \\right)^2 - 1 = \\frac{7}{25}\\]and\n\\[\\sin 2 \\theta = 2 \\sin \\theta \\cos \\theta = 2 \\cdot \\frac{3}{5} \\cdot \\frac{4}{5} = \\frac{24}{25}.\\]Therefore, $b = 25 \\cos 2 \\theta = 7$ and $h = 25 \\sin 2 \\theta = 24$, so $b + h = \\boxed{31}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For a certain natural number $n$, $n^2$ gives a remainder of 4 when divided by 5, and $n^3$ gives a remainder of 2 when divided by 5. What remainder does $n$ give when divided by 5?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If two numbers give the same remainder when divided by 5, they are said to be equivalent, modulo 5.  From $n^2$ to $n^3$, we have multiplied by $n$.  Since $n^2$ is equivalent to 4 (modulo 5), and $n^3$ is equivalent to 2 (modulo 5), we are looking for an integer $n$ for which $4\\cdot n$ is equivalent to 2, modulo 5.  Notice that if $n$ is greater than 4, then we can replace it with its remainder when divided by 5 without changing whether it satisfies the condition. Therefore, we may assume that $0\\leq n <5$.  Trying 0, 1, 2, 3, and 4, we find that only $\\boxed{3}$ times 4 leaves a remainder of 2 when divided by 5."
+}

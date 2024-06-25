@@ -1,0 +1,6 @@
+{
+    "problem": "For how many values of $x$ is the expression $\\frac{x-5}{x^2-9}$  not defined?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The expression is not defined when the denominator is equal to zero. Thus, we need to find the number of values of $x$ such that $x^2-9=0$. Rearranging the equation and taking the square root of both sides, we have $x^2-9=0\\Rightarrow x^2=9 \\Rightarrow x=\\pm3$. Thus, there are $\\boxed{2}$ different values of $x$ that make the given expression undefined."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $p$ is prime and $1007_p+306_p+113_p+125_p+6_p=142_p+271_p+360_p$. How many possible values of $p$ are there?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We must have that $p^3+7+3p^2+6+p^2+p+3+p^2+2p+5+6=p^2+4p+2+2p^2+7p+1+3p^2+6p$, meaning that $p^3-p^2-14p+24=0$. But the only prime solutions of this can be factors of $24$, i.e. $2$ and $3$. But $7$ is not a digit in base $2$ or $3$, so there are $\\boxed{0}$ possible $p$!\n\nRemark: $2$ and $3$ are, in fact, roots of this polynomial."
+}

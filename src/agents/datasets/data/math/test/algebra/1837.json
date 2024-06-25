@@ -1,0 +1,6 @@
+{
+    "problem": "Denali and Nate work for a dog walking business and are paid for each dog they walk. Denali is responsible for $16$ dogs and Nate is responsible for $12$ dogs. Under the company's new policy, they will be assigned or unassigned new dogs in groups of $x$ dogs. The ratio of Denali's pay to Nate's pay would be the same if Denali started walking $4x$ more dogs and Nate stayed at $12$ dogs or if $x$ of Nate's dogs were reassigned to Denali. Find $x$ if $x\\neq0$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Rewriting the sentence \"the ratio of Denali's pay to Nate's pay would be the same if Denali started walking $4x$ more dogs and Nate stayed at $12$ dogs or if $x$ of Nate's dogs were reassigned to Denali\" as an equation, we have \\[\\frac{16+4x}{12}=\\frac{16+x}{12-x}.\\]Clearing denominators, \\begin{align*}\n(16+4x)(12-x)&=(16+x)(12)\\quad \\Rightarrow\\\\\n192-16x+48x-4x^2&=192+12x\\quad \\Rightarrow\\\\\n32x-4x^2&=12x\\quad \\Rightarrow\\\\\n0&=4x^2-20x\\quad \\Rightarrow\\\\\n0&=4x(x-5).\n\\end{align*}Because $x$ cannot be $0$, $x=\\boxed{5}$."
+}

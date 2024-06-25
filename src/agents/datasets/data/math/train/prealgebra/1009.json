@@ -1,0 +1,6 @@
+{
+    "problem": "If the lengths of two sides of a right triangle are 5 and 12 units, what is the least possible length, in units, of the third side? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The third side is either the hypotenuse of the right triangle or one of the legs.  It is shorter in the latter case, because the angle between the sides of length 5 and 12 is smaller.  By the Pythagorean theorem, the length of the missing leg is $\\sqrt{12^2-5^2}=\\boxed{\\sqrt{119}}$ units.  (Note: $\\sqrt{119}$ does not simplify since $119 = 7\\cdot 17$)."
+}

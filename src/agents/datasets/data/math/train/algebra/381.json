@@ -1,0 +1,6 @@
+{
+    "problem": "Alice buys three burgers and two sodas for $\\$3.20$, and Bill buys two burgers and a soda for $\\$2.00$. How many cents does a burger cost?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let's work with this problem in cents, not dollars, because the answer calls for a number in cents. So, Alice's three burgers and two sodas cost 320 cents and Bill's food costs 200 cents. Let a burger cost $b$ cents and a soda cost $s$ cents. We are trying to find the value of $b$. We can set up a system of two equations to represent the given information. These equations are:\n\n\\begin{align*}\n3b + 2s &= 320 \\\\\n2b + s &= 200 \\\\\n\\end{align*}We are solving for $b$, so we want to eliminate $s$ from the equations above. Multiplying both sides of the second equation by 2, we get $4b+2s = 400$, or $2s = 400 - 4b$. Substituting this equation into the first equation above to eliminate $s$, we get that $3b + (400-4b) = 320$, or $b=80$. Thus, a burger costs $\\boxed{80}$ cents."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Point $B$ is on $\\overline{AC}$ with $AB = 9$ and $BC = 21.$ Point $D$ is not on $\\overline{AC}$ so that $AD = CD,$ and $AD$ and $BD$ are integers. Let $s$ be the sum of all possible perimeters of $\\triangle ACD$. Find $s.$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy] size(220); pointpen = black; pathpen = black + linewidth(0.7); pair O=(0,0),A=(-15,0),B=(-6,0),C=(15,0),D=(0,8); D(D(MP(\"A\",A))--D(MP(\"C\",C))--D(MP(\"D\",D,NE))--cycle); D(D(MP(\"B\",B))--D); D((0,-4)--(0,12),linetype(\"4 4\")+linewidth(0.7)); MP(\"6\",B/2); MP(\"15\",C/2); MP(\"9\",(A+B)/2); [/asy]\nDenote the height of $\\triangle ACD$ as $h$, $x = AD = CD$, and $y = BD$. Using the Pythagorean theorem, we find that $h^2 = y^2 - 6^2$ and $h^2 = x^2 - 15^2$. Thus, $y^2 - 36 = x^2 - 225 \\Longrightarrow x^2 - y^2 = 189$. The LHS is difference of squares, so $(x + y)(x - y) = 189$. As both $x,\\ y$ are integers, $x+y,\\ x-y$ must be integral divisors of $189$.\nThe pairs of divisors of $189$ are $(1,189)\\ (3,63)\\ (7,27)\\ (9,21)$. This yields the four potential sets for $(x,y)$ as $(95,94)\\ (33,30)\\ (17,10)\\ (15,6)$. The last is not a possibility since it simply degenerates into a line. The sum of the three possible perimeters of $\\triangle ACD$ is equal to $3(AC) + 2(x_1 + x_2 + x_3) = 90 + 2(95 + 33 + 17) = \\boxed{380}$."
+}

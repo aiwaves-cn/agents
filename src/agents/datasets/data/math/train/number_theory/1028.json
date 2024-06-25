@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $A$ and $B$ are digits in base $d > 6$ such that $\\overline{AB}_d + \\overline{AA}_d = 162_d$. Find $A_d - B_d$ in base $d$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Looking at the $d$'s place, we see that $A_d + A_d = 16_d = d + 6$ or $A_d + A_d + 1 = 16_d = d + 6$ (if there is carry-over). Re-arranging and solving for $A_d$, we find that $A_d = \\frac{d + 6}2$ or $A_d = \\frac{d + 5}2$. In either case, since $d > 6$, it follows that $A_d > 2$. Thus, when we add the units digits $B_d + A_d$, there must be carry-over, so $A_d = \\frac{d + 5}2$. It follows that $$B_d + A_d = d + 2 \\Longrightarrow B_d = d+2 - \\frac{d + 5}2 = \\frac d2 - \\frac 12.$$Thus, $A_d - B_d = \\frac{d + 5}2 - \\frac{d-1}{2} = \\boxed{3}_d$."
+}

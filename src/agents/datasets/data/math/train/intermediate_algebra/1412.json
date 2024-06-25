@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$, $b$, $c$, $d$, and $e$ be positive integers with $a+b+c+d+e=2010$ and let $M$ be the largest of the sum $a+b$, $b+c$, $c+d$ and $d+e$. What is the smallest possible value of $M$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[M = \\max \\{a + b, b + c, c + d, d + e\\}.\\]In particular, $a + b \\le M,$ $b + c \\le M,$ and $d + e \\le M.$  Since $b$ is a positive integer, $c < M.$  Hence,\n\\[(a + b) + c + (d + e) < 3M.\\]Then $2010 < 3M,$ so $M > 670.$  Since $M$ is an integer, $M \\ge 671.$\n\nEquality occurs if $a = 669,$ $b = 1,$ $c = 670,$ $d = 1,$ and $e = 669,$ so the smallest possible value of $M$ is $\\boxed{671}.$"
+}

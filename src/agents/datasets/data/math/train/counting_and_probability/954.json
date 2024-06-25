@@ -1,0 +1,6 @@
+{
+    "problem": "Tamika selects two different numbers at random from the set $\\{8,9,10\\}$ and adds them. Carlos takes two different numbers at random from the set $\\{3,5,6\\}$ and multiplies them. What is the probability that Tamika's result is greater than Carlos' result?  Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Tamika can get the numbers $8+9=17$, $8+10=18$, or $9+10=19$. Carlos can get $3\\times5=15$, $3\\times6=18$, or $5\\times6=30$. The possible ways to pair these are: $(17,15)$, $(17,18)$, $(17,30)$, $(18,15)$, $(18,18)$, $(18,30)$, $(19,15)$, $(19,18)$, $(19,30)$. Four of these nine pairs show Tamika with a higher result, so the probability is $\\boxed{\\frac{4}{9}}$."
+}

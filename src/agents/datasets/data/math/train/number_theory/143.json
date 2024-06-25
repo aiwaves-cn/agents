@@ -1,0 +1,6 @@
+{
+    "problem": "What is the first nonzero digit to the right of the decimal point of the fraction $\\frac{1}{129}$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If we multiply this fraction by 10, we do not change any of the digits; we simply shift all the digits one place to the left. Therefore, if we multiply the fraction by a sufficiently large power of 10, then the first digit obtained when dividing by 129 will be the first nonzero digit to the right of the decimal point of $\\frac{1}{129}$. Observing that $100 < 129 < 1000$, we compute $\\frac{1000}{129}=7 \\frac{97}{129}$. So the first nonzero digit to the right of the decimal point of $\\frac{1}{129}$ is $\\boxed{7}$."
+}

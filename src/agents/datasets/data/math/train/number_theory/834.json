@@ -1,0 +1,6 @@
+{
+    "problem": "For a nonnegative integer $n$, let $r_9(n)$ stand for the remainder left when $n$ is divided by $9.$ For example, $r_9(25)=7.$\n\nWhat is the $22^{\\text{nd}}$ entry in an ordered list of all nonnegative integers $n$ that satisfy $$r_9(5n)\\le 4~?$$(Note that the first entry in this list is $0$.)",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The condition $r_9(5n)\\le 4$ can also be stated as $``5n\\equiv 0,1,2,3,\\text{ or }4\\pmod 9.\"$'\n\nWe can then restate that condition again by multiplying both sides by $2:$ $$10n \\equiv 0,2,4,6,\\text{ or }8\\pmod 9.$$This step is reversible (since $2$ has an inverse modulo $9$). Thus, it neither creates nor removes solutions. Moreover, the left side reduces to $n$ modulo $9,$ giving us the precise solution set $$n \\equiv 0,2,4,6,\\text{ or }8\\pmod 9.$$We wish to determine the $22^{\\text{nd}}$ nonnegative integer in this solution set. The first few solutions follow this pattern: $$\\begin{array}{c c c c c}\n0 & 2 & 4 & 6 & 8 \\\\\n9 & 11 & 13 & 15 & 17 \\\\\n18 & 20 & 22 & 24 & 26 \\\\\n27 & 29 & 31 & 33 & 35 \\\\\n36 & 38 & \\cdots\n\\end{array}$$The $22^{\\text{nd}}$ solution is $\\boxed{38}.$"
+}

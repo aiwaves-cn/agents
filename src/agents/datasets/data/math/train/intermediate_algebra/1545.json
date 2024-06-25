@@ -1,0 +1,6 @@
+{
+    "problem": "For a real number $x,$ find the maximum value of\n\\[\\frac{x^4}{x^8 + 2x^6 - 4x^4 + 8x^2 + 16}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If $x = 0,$ then the expression is equal to 0, so assume that $x \\neq 0.$  Then dividing the numerator and denominator by $x^4,$ we get\n\\[\\frac{1}{x^4 + 2x^2 - 4 + \\frac{8}{x^2} + \\frac{16}{x^4}}.\\]By AM-GM,\n\\[x^4 + \\frac{16}{x^4} \\ge 2 \\sqrt{x^4 \\cdot \\frac{16}{x^4}} = 8,\\]and\n\\[2x^2 + \\frac{8}{x^2} \\ge 2 \\sqrt{2x^2 \\cdot \\frac{8}{x^2}} = 8,\\]so\n\\[\\frac{1}{x^4 + 2x^2 - 4 + \\frac{8}{x^2} + \\frac{16}{x^4}} \\le \\frac{1}{8 + 8 - 4} = \\frac{1}{12}.\\]Equality occurs when $x = \\sqrt{2},$ so the maximum value is $\\boxed{\\frac{1}{12}}.$"
+}

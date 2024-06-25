@@ -1,0 +1,6 @@
+{
+    "problem": "Grady distributed $x$ pieces of candy evenly among nine Halloween bags such that every bag received the greatest possible number of whole pieces of candy, but some candy was left over. What is the greatest possible number of pieces that could have been left over?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Grady distributes his candy in groups of 9 until he no longer has any groups left.  The largest number of possible pieces left is $\\boxed{8},$ since if he has more than 8 he can distribute another group of 9."
+}

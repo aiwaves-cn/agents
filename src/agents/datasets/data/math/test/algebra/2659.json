@@ -1,0 +1,6 @@
+{
+    "problem": "If $2a+4b=5$ and $a$ is equal to three times $b$, what is $3a$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "First we begin by solving the system of equations \\begin{align*}\n2a+4b&=5, \\\\\n3b&=a.\n\\end{align*}Making the substitution for $a$ from the second equation to the first, we get $2(3b)+4b=5$, which simplifies to $10b=5$. Solving for $b$, we find that $b=\\frac{1}{2}$. Plugging this into the second equation above, we obtain $a=3\\cdot \\frac{1}{2}$. Hence $3a=3\\cdot \\frac{3}{2}=\\boxed{\\frac{9}{2}}$."
+}

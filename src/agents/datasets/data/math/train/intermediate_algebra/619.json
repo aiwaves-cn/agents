@@ -1,0 +1,6 @@
+{
+    "problem": "Factor $(x^2 + 3x + 2)(x^2 + 7x + 12) + (x^2 + 5x - 6)$ as the product of two non-constant polynomials.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor $x^2 + 3x + 2 = (x + 1)(x + 2)$ and $x^2 + 7x + 12 = (x + 3)(x + 4).$  Then the given polynomial is\n\\begin{align*}\n(x + 1)(x + 2)(x + 3)(x + 4) + (x^2 + 5x - 6) &= (x + 1)(x + 4)(x + 2)(x + 3) + (x^2 + 5x - 6) \\\\\n&= (x^2 + 5x + 4)(x^2 + 5x + 6) + (x^2 + 5x - 6).\n\\end{align*}Let $y = x^2 + 5x.$  Then\n\\begin{align*}\n(x^2 + 5x + 4)(x^2 + 5x + 6) + (x^2 + 5x - 6) &= (y + 4)(y + 6) + (y - 6) \\\\\n&= y^2 + 10y + 24 + y - 6 \\\\\n&= y^2  + 11y + 18 \\\\\n&= (y + 2)(y + 9) \\\\\n&= \\boxed{(x^2 + 5x + 2)(x^2 + 5x + 9)}.\n\\end{align*}"
+}

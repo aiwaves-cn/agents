@@ -1,0 +1,6 @@
+{
+    "problem": "Our basketball team has 10 players, including Steve and Danny.  We need to divide into two teams of 5 for an intra-squad scrimmage.  In how many ways can we do this if Steve and Danny insist on playing on opposing teams?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "If Steve and Danny are on opposite teams, there are 8 other players to choose from for the other 4 spots on Steve's team, so there are $\\binom{8}{4} = \\boxed{70}$ choices."
+}

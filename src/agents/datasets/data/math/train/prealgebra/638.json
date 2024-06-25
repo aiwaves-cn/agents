@@ -1,0 +1,6 @@
+{
+    "problem": "A car travels 40 kph for 20 kilometers, 50 kph for 25 kilometers, 60 kph for 45 minutes and 48 kph for 15 minutes. What is the average speed of the car, in kph?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "To find the average speed for the entire trip, we need to divide the total distance by the total time.  Remembering that $d=r\\cdot t$, and looking at each of the four parts of the trip, these pieces can be determined.\n\nFirst, a car traveling at 40 kph for 20 km will be traveling for $20/40=.5$ hours.  Next, a car traveling at 50 kph for 25 km will be traveling for $25/50=.5$ hours.  Next, a car traveling at 60 kph for 45 minutes (.75 hours) will travel a total of $60\\times .75=45$ km during that time.  Finally, a car traveling 48 kph for 15 minutes (.25 hours) will travel a total of $48\\times .25=12$ km.\n\nThe total distance traveled was $20+25+45+12=102$ km.  The total time was $.5+.5+.75+.25=2$ hours.  Therefore, the average speed of the car was $102/2=\\boxed{51}$ kph."
+}

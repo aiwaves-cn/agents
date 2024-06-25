@@ -1,0 +1,6 @@
+{
+    "problem": "Two fair, six-sided dice are rolled.  What is the probability that the sum of the two numbers showing is between 3 and 11, inclusive?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We instead find the probability that the sum of the numbers showing is not between 3 and 11.  Since each die's face contains the numbers 1-6, we see that this can only be the case if we roll two 1s or two 6s.  Thus the chance that the sum is not between 3 and 11 is $\\frac{1}{6} \\cdot \\frac{1}{6} + \\frac{1}{6} \\cdot \\frac{1}{6}$, or $\\frac{1}{18}$.  So our desired probability is $1-\\frac{1}{18} = \\boxed{\\frac{17}{18}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the quadratic polynomial, with real coefficients, which has $3 + i$ as a root, and where the coefficient of $x^2$ is 2.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since the polynomial has real coefficients, the other root must be $3 - i.$  Thus, the polynomial is\n\\begin{align*}\n2(x - 3 - i)(x - 3 + i) &= 2((x - 3)^2 - i^2) \\\\\n&= 2((x - 3)^2 + 1) \\\\\n&= \\boxed{2x^2 - 12x + 20}.\n\\end{align*}"
+}

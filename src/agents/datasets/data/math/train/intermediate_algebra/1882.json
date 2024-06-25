@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of permutations $(a_1, a_2, a_3, a_4, a_5, a_6)$ of $(1,2,3,4,5,6)$ that satisfy\n\\[\\frac{a_1 + 1}{2} \\cdot \\frac{a_2 + 2}{2} \\cdot \\frac{a_3 + 3}{2} \\cdot \\frac{a_4 + 4}{2} \\cdot \\frac{a_5 + 5}{2} \\cdot \\frac{a_6 + 6}{2} > 6!.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[\\frac{a_k + k}{2} \\ge \\sqrt{ka_k}\\]for $1 \\le k \\le 6,$ so\n\\begin{align*}\n\\frac{a_1 + 1}{2} \\cdot \\frac{a_2 + 2}{2} \\cdot \\frac{a_3 + 3}{2} \\cdot \\frac{a_4 + 4}{2} \\cdot \\frac{a_5 + 5}{2} \\cdot \\frac{a_6 + 6}{2} &\\ge \\sqrt{a_1} \\cdot \\sqrt{2a_2} \\cdot \\sqrt{3a_3} \\cdot \\sqrt{4a_4} \\cdot \\sqrt{5a_5} \\cdot \\sqrt{6a_6} \\\\\n&= \\sqrt{6! a_1 a_2 a_3 a_4 a_5 a_6} \\\\\n&= 6!.\n\\end{align*}Equality occurs if and only if $a_k = k$ for all $1 \\le k \\le 6.$  Thus, all $6! = 720$ permutations satisfy the inequality\n\\[\\frac{a_1 + 1}{2} \\cdot \\frac{a_2 + 2}{2} \\cdot \\frac{a_3 + 3}{2} \\cdot \\frac{a_4 + 4}{2} \\cdot \\frac{a_5 + 5}{2} \\cdot \\frac{a_6 + 6}{2} > 6!,\\]except for the permutation where $a_k = k$ for all $1 \\le k \\le 6,$ giving us $720 - 1 = \\boxed{719}$ possible permutations."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence of complex numbers $z_0,z_1,z_2,\\ldots$ is defined by the rule \\[\nz_{n+1}=\\frac{\\ iz_n\\ }{\\overline{z}_n},\n\\]where $\\overline{z}_n$ is the complex conjugate of $z_n$ and $i^2=-1$. Suppose that $|z_0|=1$ and $z_{2005}=1$. How many possible values are there for $z_0$?",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Note that \\[\nz_{n+1}=\\frac{iz_n}{\\overline{z}_n}=\\frac{iz_n^2}{z_n\\overline{z}_n}=\\frac{iz_n^2}{|z_n|^2}.\n\\]Since $|z_0|=1$, the sequence satisfies \\[\nz_1 = i z_0^2, \\ z_2 = iz_1^2 = i\\left(iz_0^2\\right)^2 = -iz_0^4,\n\\]and, in general, when $k\\ge 2$, \\[\nz_k = -iz_0^{2^k}.\n\\]Hence $z_0$ satisfies the equation $1 =-iz_0^{(2^{2005})}$, so $z_0^{(2^{2005})} = i.$ Because every nonzero complex number has $n$ distinct $n$th roots, this  equation has $2^{2005}$ solutions. So there are $\\boxed{2^{2005}}$ possible values for $z_0$."
+}

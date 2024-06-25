@@ -1,0 +1,6 @@
+{
+    "problem": "A math class has fewer than $40$ students. When the students try to sit in rows of $7$, $3$ students sit in the last row. When the students try to sit in rows of $5$, $1$ student is left in the last row. How many students are in this class?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Let $n$ be the number of students in the class. When we divide $n$ by $7$, we get a remainder of $3$. Therefore, we need to add multiples of $7$ to $3$ until we get a number which, when we divide by $5$, has a remainder of $1$. When we add $28$ to $3$, we get $31$, a number that gives a remainder of $1$ when dividing by $5$. By the Chinese remainder theorem, the other integers which leave a remainder of 3 when divided by 7 and a remainder of 1 when divided by 5 differ from 31 by a multiple of $7\\cdot 5=35$. Therefore, the only integer between 0 and 40 satisfying these conditions is 31, and there are $\\boxed{31}$ students in this math class."
+}

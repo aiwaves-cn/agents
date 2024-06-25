@@ -1,0 +1,6 @@
+{
+    "problem": "For a matrix $\\mathbf{M},$ the trace of $\\mathbf{M}$ is defined as the sum of its diagonal elements.  For example,\n\\[\\operatorname{Tr} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = a + d.\\]Given $\\operatorname{Tr} (\\mathbf{A}) = 2$ and $\\operatorname{Tr} (\\mathbf{A}^2) = 30,$ find $\\det \\mathbf{A}.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{A} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}.$  Then $a + d = 2.$  Also,\n\\[\\mathbf{A}^2 = \\begin{pmatrix} a^2 + bc & ab + bd \\\\ ac + cd & bc + d^2 \\end{pmatrix},\\]so $a^2 + 2bc + d^2 = 30.$  We want to compute $\\det \\mathbf{A} = ad - bc.$\n\nSquaring $a + d = 2,$ we get $a^2 + 2ad + d^2 = 4.$  Subtracting the equation $a^2 + 2bc + d^2 = 30,$ we find\n\\[2ad - 2bc = 4 - 30 = -26,\\]so $ad - bc = \\boxed{-13}.$"
+}

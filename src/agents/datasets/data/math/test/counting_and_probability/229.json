@@ -1,0 +1,6 @@
+{
+    "problem": "10 people attend a party. During the party everyone shakes hands with everyone else. How many handshakes take place at the party?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We can choose 2 people to shake hands out of a group of 10 people without regard to order in $\\binom{10}{2} = \\boxed{45}$ ways."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many different bracelets have 3 identical orange beads, 3 identical black beads, and 1 teal bead, if rotating or flipping a bracelet does not change it?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Rotate each bracelet so the teal bead is at the top. If we flip a bracelet over, leaving the teal bead in place, the three beads on the left flip to the right, and vice-versa. We can flip all of the bracelets so there are more orange beads on the left than on the right, since there are an odd number of orange beads total. If there are 2 orange beads on the left, there are three choices for the position of the black bead on the left and 3 for the position of the orange bead on the right, making 9 bracelets. If all three beads on the left are orange, we get one more bracelet, for a total of $9+1=\\boxed{10}$ bracelets."
+}

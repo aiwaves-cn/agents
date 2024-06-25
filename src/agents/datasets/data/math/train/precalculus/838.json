@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{M}$ be a matrix, and let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors, such that\n\\[\\mathbf{M} \\mathbf{v} = \\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix} \\quad \\text{and} \\quad \\mathbf{M} \\mathbf{w} = \\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix}.\\]Compute $\\mathbf{M} (\\mathbf{v} + 3 \\mathbf{w}).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can distribute, to get\n\\begin{align*}\n\\mathbf{M} (\\mathbf{v} + 3 \\mathbf{w}) &= \\mathbf{M} \\mathbf{v} + \\mathbf{M} (3 \\mathbf{w}) \\\\\n&= \\mathbf{M} \\mathbf{v} + 3 \\mathbf{M} \\mathbf{w} \\\\\n&= \\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix} + 3 \\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\\\\n&= \\boxed{\\begin{pmatrix} -4 \\\\ -12 \\end{pmatrix}}.\n\\end{align*}"
+}

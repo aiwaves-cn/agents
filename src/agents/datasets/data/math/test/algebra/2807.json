@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$, $y$, and $z$ are real numbers for which  \\begin{align*}\nx+y-z &= -8, \\\\\nx-y+z &= 18,\\text{ and} \\\\\n-x+y+z &= 30, \\\\\n\\end{align*} then what is $xyz$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Noticing that the left-hand sides are symmetric in $x$, $y$, and $z$ (in that any relabelling of the variables leads to one of the given left-hand sides), we sum all three equations to obtain $x+y+z=40$. Subtracting the first equation from $x+y+z=40$ gives $2z=48\\implies z=24$. Similarly, subtracting the second equation from $x+y+z=40$ gives $y=11$. Finally, subtracting the third equation from $x+y+z=40$ gives $x=5$ so that $xyz=(5)(11)(24)=\\boxed{1320}$."
+}

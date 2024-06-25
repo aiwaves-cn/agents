@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area, in square units, of the interior region formed by the lines $y = 4x - 6, y = -2x +12$ and the $y$-axis?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "To find the vertices of the triangle, we find where the two lines $y=4x-6$ and $y=-2x+12$ intersect. Solving $4x-6=-2x+12$, we get $x=3$.  Substituting $x=3$ back into $y=4x-6$, we find $y=6$.  Therefore, $(3,6)$ is one of the vertices of the triangle.  The other two vertices are the $y$-intercepts of the two lines, namely $(0,12)$ and $(0,-6)$.  Taking the side joining $(0,12)$ and $(0,-6)$ as the base of the triangle, we find that the area of the triangle is $\\frac{1}{2}(\\text{base})(\\text{height})=\\frac{1}{2}(12-(-6))(3)=\\boxed{27}$ square units.\n\n[asy]\n\nunitsize(3mm);\n\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\n\ndotfactor=4;\n\nfill((0,-6)--(0,12)--(3,6)--cycle,gray);\n\ndraw((-2,0)--(4,0),Arrows(4));\n\ndraw((0,-7)--(0,13),Arrows(4));\n\ndraw((0,-6)--(3,6));\n\ndraw((0,12)--(3,6)); [/asy]"
+}

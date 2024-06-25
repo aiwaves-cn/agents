@@ -1,0 +1,6 @@
+{
+    "problem": "Fifty ping-pong-balls are numbered 1, 2, 3, ..., 49, 50. A ball is chosen at random. What is the probability that the number on the selected ball is a multiple of 5 or 7 or both? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are 10 balls whose number is divisible by 5. The balls $7, 14, \\ldots,49$ are multiples of 7.  There are 7 of these.  The ball 35 is the unique ball that is a multiple of both 5 and 7.\n\nIn total, there are $10+7-1 = 16$ balls whose number is divisible by 5 or 7.  The probability that a randomly selected ball will be one of these 16 is $\\frac{16}{50} = \\boxed{\\frac{8}{25}}$."
+}

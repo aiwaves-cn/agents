@@ -1,0 +1,184 @@
+{
+    "task_setting": {
+        "has_ground_truth": true,
+        "has_result": true,
+        "sample_kind": "order"
+    },
+    "log_path": "examples/hotpotqa/logs",
+    "loss": {
+        "llm_config": {
+            "LLM_type": "OpenAI",
+            "API_KEY": "",
+            "API_BASE": "",
+            "temperature": 0.3,
+            "model": "gpt-4-turbo-2024-04-09",
+            "SAVE_LOGS": false,
+            "log_path": "logs/trainer_god"
+        },
+        "meta_prompt": {
+            "loss": {
+                "order": [],
+                "extract_key": [
+                    "requirement_for_previous"
+                ],
+                "part1_with_gt_and_score": "You are a large language model fine-tuner. I will provide you with a model's output and the expected correct result. \nYou need to evaluate it and suggest modifications to the model's output. Please use `<requirement_for_previous></requirement_for_previous>` to enclose your feedback.\n\n",
+                "part1_no_gt_with_score": "You are a large language model fine-tuner. I will provide you with a model's output and the evaluation score. \nYou need to evaluate it and suggest modifications to the model's output. Please use `<requirement_for_previous></requirement_for_previous>` to enclose your feedback.\n",
+                "part1_with_gt_no_score": "You are a fine-tuner of a large model. I will provide you with some output results from the model and the expected correct results. \nYou need to evaluate these data and provide a score out of 10, please wrap the score using <score></score>. Additionally, please provide some suggestions for modifying the model's output, using <requirement_for_previous></requirement_for_previous> to wrap your suggestions.\n",
+                "part1_no_gt_no_score": "You are a fine-tuner of a large model. I will provide you with some output results from the model and the task description it is trying to solve.\nYou need to evaluate these data and provide a score out of 10, please wrap the score using <score></score>. Additionally, please provide some suggestions for modifying the model's output, using <requirement_for_previous></requirement_for_previous> to wrap your suggestions.\n",
+                "task_description": "The description of this task is as follows:\n<task_description>{task_description}</task_description>\n\n",
+                "model_output": "Below is the model's output:\n<result>{result}</result>\n\n",
+                "ground_truth": "The expected result is:\n<ground_truth>{ground_truth}</ground_truth>\n\n",
+                "score": "Here is the evaluation score for the model. Your goal is to optimize this score:\n<score>{score}</score>\n\nThe relevant information about this score is as follows:\n<evaluation_info>{score_info}</evaluation_info>\n\n",
+                "note_output_score": "Please note:\n1. Ensure that the output is wrapped with <score></score> and <requirement_for_previous></requirement_for_previous> respectively.\n2. The output should be as consistent as possible with the expected result while being correct. For example, if the expected result is “BUST”, and the model's output is “The women's lifestyle magazine is 'BUST' magazine.”, even though the answer is correct, you should advise the model to be more concise.\n3. The standard for a score of 10 is that the model's output is exactly the same as the expected result in a case-insensitive manner, and without any unnecessary content. Even if the model's output is semantically correct, if it includes superfluous content, points should be deducted.",
+                "note_not_output_score": "Please Note:\n1. Ensure that `<requirement_for_previous></requirement_for_previous>` exists and appears once.\n2. If the model's output is satisfactory, you can output <requirement_for_previous>The output is satisfactory, no additional requirements</requirement_for_previous>.\n3. The output should be as close to the expected result as possible while ensuring correctness. For example, if the expected result is \"BUST\" and the model's output is \"The women's lifestyle magazine is 'BUST' magazine.\", even though this answer is correct, you should remind the model to be concise."
+            }
+        }
+    },
+    "prompt_optimizer": {
+        "allow_delete_template_variable": false,
+        "needed_optim_component": [
+            "TASK",
+            "RULE",
+            "STYLE",
+            "EXAMPLE",
+            "COT"
+        ],
+        "needed_optim_padding": true,
+        "llm_config": {
+            "LLM_type": "OpenAI",
+            "API_KEY": "",
+            "API_BASE": "",
+            "temperature": 0.3,
+            "model": "gpt-4-turbo-2024-04-09",
+            "SAVE_LOGS": false,
+            "log_path": "logs/trainer_god"
+        },
+        "meta_prompt": {
+            "backward": {
+                "order": [
+                    "prom_backward"
+                ],
+                "extract_key": [
+                    "suggestion",
+                    "requirement_for_previous"
+                ],
+                "prom_backward": "You are now a prompt optimization specialist for a large language model. You need to provide some optimization suggestions for the prompt templates. Please use `<suggestion></suggestion>` to wrap your suggestions, for example, `<suggestion>can be shorter</suggestion>`.\n\nThe entire task is completed in multiple steps. I will provide you with the output of the previous step, the requirements for the current step, the output of the current step, and the prompt_components. You need to propose improvements for the prompt_components of the current step. The actual prompt used is assembled from prompt_components.\n\n- The current prompt_components are: <prompt_components>{prompt_components}</prompt_components>\n\n- The prompt can be composed by concatenating the prompt_components in the following order: <order>{prompts_order}</order>\n\n- The output of the previous step is: <previous_output>{previous_output}</previous_output>\n\n- The output of the current step is: <output>{response}</output>\n\n- The requirement for the current step's output is: <requirement>{requirement_for_previous}</requirement>\n\n- The field of the prompt template that needs to be optimized is: {needed_optim_component}\n\nYou need to optimize the specified field in the prompt_components. Please provide suggestions in natural language and wrap them with `<suggestion></suggestion>`. \nPropose modifications to the current prompt. You also need to propose requirements for the output of the previous step. Please use `<requirement_for_previous></requirement_for_previous>` to wrap them, for example: `<requirement_for_previous>The analysis should include a comparison of the original data</requirement_for_previous>`.\n\nNote:\n1. Please ensure that the output is wrapped with `<requirement_for_previous></requirement_for_previous>` and `<suggestion></suggestion>`, and appears only once.\n2. If you are the first node, use `<requirement_for_previous>Current is the first node</requirement_for_previous>`.\n3. Please remember that this prompt template will be applied to multiple different data sets, so your suggestions should be general and not just focused on the provided example.\n4. Please analyze step by step."
+            },
+            "optimization": {
+                "order": [
+                    "prom_start_1",
+                    "prom_start_2",
+                    "prom_suggestion",
+                    "prom_end_1",
+                    "prom_end_2"
+                ],
+                "loop": [
+                    "prom_suggestion"
+                ],
+                "extract_key": [
+                    "new_prompt",
+                    "analyse"
+                ],
+                "prom_start_1": "You are now a fine-tuner for a large language model prompt. I will provide you with a prompt template and its corresponding input and output information. Please modify the prompt based on the given data:\n\n- The current `prompt_components` are: <prompt_components>{prompt_components}</prompt_components>\n- The prompt can be composed by concatenating the prompt_components in the following order: <order>{prompts_order}</order>\n\n",
+                "prom_start_2": "Here is some explanatory information about the `prompt_components`, which are the basic building blocks for constructing the `prompt_template`:\n```json\n{\n    \"TASK\": \"Description related to this task\",\n    \"RULE\": \"Some rules to constrain the output\",\n    \"STYLE\": \"The style to constrain the response\",\n    \"EXAMPLE\": \"Examples for better understanding\",\n    \"COT\": \"Used to prompt the model to think step by step, e.g., please think step by step\"\n}\n```\n\nBelow is some information about the model's performance with this template:\n\n",
+                "prom_suggestion": "# Instance {index}\n- Suggestions for prompt modification: <suggestion>{suggestion}</suggestion>\n\n",
+                "prom_end_1": "You need to analyze the above content and output an optimized prompt result. You only need to optimize the following fields: {needed_optim_component}.\n",
+                "prom_end_2": "Wrap the analysis process with <analyse></analyse>, and the new prompt with <new_prompt></new_prompt>. The specific content should be given as a JSON formatted dictionary, which can be directly converted to a dictionary using the json.loads() method.\n\nFor example, when fields \"COT\" and \"STYLE\" need to be optimized, your output would be a dictionary containing these two keys, as shown in the following example: <new_prompt>{\"COT\": \"Please think step by step\",\"STYLE\": \"Please answer in an essay style\"}</new_prompt>.\nIf you believe the original \"COT\" field is already excellent, the optimized prompt dictionary should not include the \"COT\" field. If you believe all fields are already excellent, please output an empty dictionary, i.e., <new_prompt>{}</new_prompt>.\n\nNotes:\n1. When using the prompt template in practice, the python format() method is used to fill the variables into the prompt, so please ensure that the content wrapped in {} remains the same in both the new and old prompts. Avoid adding or removing variables as much as possible.\n2. Ensure that your outputted new prompt template can be directly converted to a dictionary using the json.loads() method, so you need to pay attention to the use of double quotes and escape characters.\n3. Ensure that <analyse></analyse> and <new_prompt></new_prompt> appear only once each.\n4. If you believe the current prompt template performs excellently, please output <new_prompt>{}</new_prompt>."
+            }
+        }
+    },
+    "node_optimizer": {
+        "llm_config": {
+            "LLM_type": "OpenAI",
+            "API_KEY": "",
+            "API_BASE": "",
+            "temperature": 0.3,
+            "model": "gpt-4-turbo-2024-04-09",
+            "SAVE_LOGS": false,
+            "log_path": "logs/trainer_god"
+        },
+        "meta_prompt": {
+            "backward": {
+                "order": [
+                    "prom_start",
+                    "prom_node_config",
+                    "prom_run_instance",
+                    "prom_end"
+                ],
+                "loop": [],
+                "extract_key": [
+                    "analyse",
+                    "suggestion",
+                    "requirement_for_previous"
+                ],
+                "prom_start": "You are a large model fine-tuner. Now you need to try to optimize the information of a node. For a complex task, it has been divided into multiple nodes, each of which contains multiple roles that work together to complete the task of this node. Each role is backed by an LLM Agent, and you need to optimize the configuration information of one of the nodes.\n\nHere is an example of a Node configuration in JSON format:\n```json\n{\n    \"node_name\": \"summary_node\",\n    \"controller\": {\n        \"route_type\": \"order\",\n        \"route_system_prompt\": \"\",\n        \"route_last_prompt\": \"\"\n    },\n    \"begin_role\": \"role_summary\",\n    \"node_description\": \"Summarize the findings from the previous step\",\n    \"node_roles_description\": {\n        \"role_summary\": \"The role needs to summarize the key findings from the previous step concisely and present the final result within <result></result> tags.\"\n    }\n}\n```\n\nHere are the relevant explanations for the Node configuration:\n- The fields in the \"controller\" indicate the scheduling method of the model. If there is only one role, this item does not need to be optimized:\n  - \"route_type\" indicates the scheduling method, which has three values: \"random\" means random scheduling, \"order\" means sequential scheduling, and \"llm\" means scheduling determined by the LLM model.\n  - \"route_system_prompt\" and \"route_last_prompt\" are used when \"route_type\" is \"llm\" and are respectively the system prompt and last prompt given to the LLM model responsible for scheduling.\n- \"begin_role\" is a string indicating the name of the starting role of this node.\n- \"roles\" is a dictionary where the key is the role name, and the value is the prompt used by this role.\n\nYou need to decide how to optimize the configuration of this node. Specifically, you need to try to provide suggestions in the following aspects:\n1. Update the node description field. This field describes the function of the node and is also an important indicator to measure the performance of a node.\n2. Update the scheduling method of the role. Note that if there is only one role, no optimization is needed.\n3. Add a new role, and you need to clearly describe the function of this role.\n4. Delete a role, and you need to clearly describe the reason for deleting this role.\n5. Update a role, and you need to indicate how to update the description of this role.\n\n",
+                "prom_node_config": "Next, I will give you a Node configuration, and you need to provide optimization suggestions based on the current Node configuration. Please use <suggestion>[put your suggestion here]</suggestion> to enclose your suggestions. \nAt the same time, you also need to make some requirements for the performance of the previous node based on the information of the current node, please use <requirement_for_previous>the [put your requirement here] <requirement_for_previous>package.\n\n## Current Node Config\n{node_config}\n\n",
+                "prom_run_instance": "## Run Instance\nPrevious node information: <previous_node>{previous_node_summary}</previous_node>\nCurrent node output: <current_node>{role_chat}</current_node>\nNext node's requirement for the current node: <next node's requirement>{requirement_for_previous}</next node's requirement>\n",
+                "prom_end": "You need to first provide your analysis process, then give your optimized result. Please use <analyse></analyse> to enclose the analysis process. Please use <suggestion></suggestion> to enclose the optimization suggestions for the current node. Please use <requirement_for_previous></requirement_for_previous> to enclose the requirements for the previous node. If you think the current node does not need optimization, you need to output <suggestion>The performance is good enough, no modification suggestions</suggestion>.\n\nNote: The suggestions provided need to be in one or more of the five aspects mentioned above."
+            },
+            "optim": {
+                "order": [
+                    "prom_start",
+                    "prom_node_config",
+                    "prom_suggestion",
+                    "prom_end"
+                ],
+                "loop": [],
+                "extract_key": [
+                    "result"
+                ],
+                "prom_start": "You are a large model fine-tuner. Now you need to try to optimize the information of a node. For a complex task, it has been divided into multiple nodes, each containing multiple roles that work together to complete the task of this node. Each role is backed by an LLM Agent, and you need to optimize the configuration information of one of the nodes.\n\nHere is an example of a Node configuration in JSON format:\n```json\n{\n    \"node_name\": \"summary_node\",\n    \"controller\": {\n        \"route_type\": \"order\",\n        \"route_system_prompt\": \"\",\n        \"route_last_prompt\": \"\"\n    },\n    \"begin_role\": \"role_summary\",\n    \"node_description\": \"Summarize the findings from the previous step\",\n    \"node_roles_description\": {\n        \"role_summary\": \"The role needs to summarize the key findings from the previous step.\"\n    }\n}\n```\n\nHere are the relevant explanations for the Node configuration:\n- The fields in the \"controller\" indicate the scheduling method of the model. If there is only one role, this item does not need to be optimized:\n  - \"route_type\" indicates the scheduling method, which has three values: \"random\" means random scheduling, \"order\" means sequential scheduling, and \"llm\" means scheduling determined by the LLM model.\n  - \"route_system_prompt\" and \"route_last_prompt\" are used when \"route_type\" is \"llm\" and are respectively the system prompt and last prompt given to the LLM model responsible for scheduling.\n- \"begin_role\" is a string indicating the name of the starting role of this node.\n- \"roles\" is a dictionary where the key is the role name, and the value is the prompt used by this role.\n\nNext, I will give you a Node configuration and several modification suggestions. You need to modify the Node configuration based on the suggestions:\n\n",
+                "prom_node_config": "## Current Node Config\n{node_config}\n\n",
+                "prom_suggestion": "## Suggestions\n{suggestions}\n\n",
+                "prom_end": "When providing the modification plan, you need to give the optimized result in the following format. It is a list, each element is a dict, and the dict contains an action field indicating the operation on the Node, as well as other fields as follows:\n```json\n[\n    {\n        # Add a role named role_check, you need to provide role_name, role_description, role_prompt\n        \"action\": \"add_role\",\n        \"role_name\": \"role_check\",\n        \"role_description\": \"Check the result of the previous step\",\n        \"role_prompt\": \"Output your thinking steps firstly, and if the answer is correct, output <result>1</result>, if the answer is incorrect, output <result>0</result>, <answer></answer>\"\n    },\n    {\n        # Delete a role, you need to provide role_name\n        \"action\": \"delete_role\",\n        \"role_name\": \"role_analyse\"\n    },\n    {\n        # Update the description of the role_summary node\n        \"action\": \"update_role_description\",\n        \"role_name\": \"role_summary\",\n        \"role_description\": \"The role needs to summarize the key findings from the previous step concisely and present the final result within <result></result> tags.\"\n    },\n    {\n        # Update the transfer method between roles, you need to provide route_type, route_system_prompt, route_last_prompt\n        \"action\": \"update_controller\",\n        \"route_type\": \"order\",\n        \"route_system_prompt\": \"\",\n        \"route_last_prompt\": \"\"\n    },\n    {\n        # Update the node description\n        \"action\": \"update_node_description\",\n        \"node_description\": \"Summarize the findings from the previous step and output the final result. The results are usually between 1 and 5 words.\"\n    }\n]\n```\n\nYour optimized result should be enclosed in <result></result>, that is, the content inside <result></result> should be a JSON-formatted list, which should be able to be directly loaded by json.loads().\n\nNote:\n1. If you think the current configuration is already excellent and does not need modification, you can directly output an empty list.\n2. The format of <result>[optimization method]</result> needs to strictly follow the given format, otherwise, it will be judged as incorrect."
+            }
+        }
+    },
+    "sop_optimizer": {
+        "llm_config": {
+            "LLM_type": "OpenAI",
+            "API_KEY": "",
+            "API_BASE": "",
+            "temperature": 0.3,
+            "model": "gpt-4-turbo-2024-04-09",
+            "SAVE_LOGS": false,
+            "log_path": "logs/trainer_god"
+        },
+        "meta_prompt": {
+            "backward": {
+                "order": [
+                    "prom_part1",
+                    "prom_info",
+                    "prom_end"
+                ],
+                "loop": [],
+                "extract_key": [
+                    "analyse",
+                    "suggestion"
+                ],
+                "prom_part1": "You are a large model fine-tuner. There is a process that needs adjustment, and I will now provide you with a standard operation procedure (SOP) for handling a task. This SOP consists of multiple nodes, each responsible for completing specific tasks to accomplish the overall mission.\n\nI will provide you with an SOP and a runtime instance. You need to analyze this SOP and provide your optimization suggestions. Each node corresponds to certain tasks, and you can find the task description in `node_description`.\n\nAn SOP mainly consists of nodes, each responsible for completing specific tasks to accomplish the overall mission. Each node has a name, description, and successor nodes. The successor nodes are a dictionary (`edges`), where the key is the successor node's name and the value is the successor node's Node object.\n\nHere is an example of an SOP:\n```json\n{\n    \"nodes\": {\n        \"Affirmative_Task_Allocation_node\": {\n            ...\n        },\n        \"Negative_Task_Allocation_node\": {\n            ...\n        },\n        \"Debate_Order_node\": {\n            ...\n        },\n        \"Debate_Random_node\": {\n            \"node_name\": \"Debate_Random_node\",\n            \"node_description\": \"We are now in the open debate phase, where each debater has the freedom to speak as they wish.\\nThe debate topic is as follows: <debate topic>\\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\\n</debate topic>\\n \",\n        },\n        \"Judge_node\": {\n            ...\n        }\n    },\n    \"edges\": {\n        \"Affirmative_Task_Allocation_node\": [\n            \"Affirmative_Task_Allocation_node\",\n            \"Negative_Task_Allocation_node\"\n        ],\n        \"Negative_Task_Allocation_node\": [\n            \"Negative_Task_Allocation_node\",\n            \"Debate_Order_node\"\n        ],\n        \"Debate_Order_node\": [\n            \"Debate_Order_node\",\n            \"Debate_Random_node\"\n        ],\n        \"Debate_Random_node\": [\n            \"Debate_Random_node\",\n            \"Judge_node\"\n        ],\n        \"Judge_node\": [\n            \"Judge_node\",\n            \"end_node\"\n        ]\n    },\n    \"root\": \"Affirmative_Task_Allocation_node\",\n    \"end\": \"end_node\"\n}\n```\n    \nYou need to provide optimization suggestions in natural language. Generally, optimizing this SOP can be approached from five aspects, and you can combine multiple aspects to provide comprehensive suggestions.\n\n1. **Add Nodes:** If you believe the SOP lacks certain nodes, you can add these nodes. You need to briefly describe the information about the new node, including the node's name, description, successor nodes.\n2. **Delete Nodes:** If you think some nodes in the SOP are redundant, you can delete these nodes. You need to provide the names of the nodes to be deleted and update the predecessor nodes' successor nodes to replace the deleted node.\n3. **Update Node Descriptions:** If you believe the node descriptions in the SOP are not clear enough, you can update these descriptions. You need to provide the names of the nodes to be updated and the new descriptions.\n4. **Update Relationships Between Nodes:** If you think the relationships between nodes in the SOP are not clear, you can update these relationships. You need to provide the updated relationships between the nodes.\n\nI will provide you with a specific SOP configuration and a runtime instance. You need to analyze this runtime instance and provide optimization suggestions. Please use <analyse></analyse> to wrap your analysis and <suggestion></suggestion> to wrap your suggestions. For example:\n<analyse>Debate_Random_node did not perform well, and we could try adding a node before it.</analyse>\n<suggestion>Add a node before Debate_Random_node named Added_Debate_Random_node with the description: \"Further debate to clarify arguments.\" Its successor nodes are itself and Debate_Random_node, with the controller transfer type being \"order\".</suggestion>\n\n",
+                "prom_info": "Here is the specific task information you need to process:\n## SOP Config\n<sop_config>\n{sop_config}</sop_config>\n\n## Run Instance\n<run_instance>\n{run_instance_summary}</run_instance>\n\n## Evaluation\n<evaluation>\n{loss_info}</evaluation>\n\n",
+                "prom_end": "Note:\n1. You need to provide your analysis process and then give your optimization suggestions, describing them in natural language.\n2. The analysis process should be wrapped in <analyse></analyse>, and optimization suggestions should be wrapped in <suggestion></suggestion>. Both must be present.\n3. If there are no optimization suggestions, please provide the analysis result in <analyse></analyse> and give <suggestion>There is no need for optimization.</suggestion>.\n4. If the overall SOP is fine, but specific node behaviors need optimization, you may choose not to optimize. There will be further operations to optimize the nodes later.\n"
+            },
+            "optim": {
+                "order": [
+                    "prom_start",
+                    "prom_config",
+                    "prom_suggestion",
+                    "prom_end"
+                ],
+                "loop": [
+                    "prom_suggestion"
+                ],
+                "extract_key": [
+                    "analyse",
+                    "result"
+                ],
+                "prom_start": "You are a large model fine-tuner. There is a process that needs adjustment, and I will now provide you with a standard operation procedure (SOP) for handling a task. This SOP consists of multiple nodes, each responsible for completing specific tasks to accomplish the overall mission.\n\nI will provide you with an SOP and a runtime instance. You need to analyze this SOP and provide your optimization suggestions. Each node corresponds to certain tasks, and you can find the task description in `node_description`.\n\nAn SOP mainly consists of nodes, each responsible for completing specific tasks to accomplish the overall mission. Each node has a name, description, and successor nodes. The successor nodes are a dictionary (`edges`), where the key is the successor node's name and the value is the successor node's Node object.\n\nHere is an example of an SOP:\n```json\n{\n    \"nodes\": {\n        \"Affirmative_Task_Allocation_node\": {\n            ...\n        },\n        \"Negative_Task_Allocation_node\": {\n            ...\n        },\n        \"Debate_Order_node\": {\n            ...\n        },\n        \"Debate_Random_node\": {\n            \"node_name\": \"Debate_Random_node\",\n            \"node_description\": \"We are now in the open debate phase, where each debater has the freedom to speak as they wish.\\nThe debate topic is as follows: <debate topic>\\n<Theme>should Hermione Granger develop a romantic relationship with Harry Potter or Ron Weasley?</Theme>\\n <Affirmative viewpoint> Supporting Hermione and Harry together.</Affirmative viewpoint>\\n<Negative viewpoint> Supporting Hermione and Ron together</Negative viewpoint>\\n</debate topic>\\n \",\n        },\n        \"Judge_node\": {\n            ...\n        }\n    },\n    \"edges\": {\n        \"Affirmative_Task_Allocation_node\": [\n            \"Affirmative_Task_Allocation_node\",\n            \"Negative_Task_Allocation_node\"\n        ],\n        \"Negative_Task_Allocation_node\": [\n            \"Negative_Task_Allocation_node\",\n            \"Debate_Order_node\"\n        ],\n        \"Debate_Order_node\": [\n            \"Debate_Order_node\",\n            \"Debate_Random_node\"\n        ],\n        \"Debate_Random_node\": [\n            \"Debate_Random_node\",\n            \"Judge_node\"\n        ],\n        \"Judge_node\": [\n            \"Judge_node\",\n            \"end_node\"\n        ]\n    },\n    \"root\": \"Affirmative_Task_Allocation_node\",\n    \"end\": \"end_node\"\n}\n```\n\nI will provide you with an SOP and suggestions for modifications. You need to analyze this SOP and then provide optimization methods. You need to first provide your analysis process, and then provide your optimized results. The analysis process should be wrapped in <analyse></analyse>, and the optimized results should be wrapped in <result></result>, which should be directly parsable into JSON.\n\nIf you believe no optimization is needed, leave the inside of <result></result> empty.\n\nIf you believe optimization is needed, use a JSON format to express your optimized results, as shown below:\n```json\n[\n    {\n        # Add a node named Affirmative_Task_Allocation_node. Provide node_name, node_description, and specify successor nodes.\n        \"action\": \"add_node\",\n        \"node_name\": \"Affirmative_Task_Allocation_node\",\n        \"node_description\": \"It is currently the debate stage, where the positive side is assigning tasks.\",\n        \"edges\": {\n            \"Affirmative_Task_Allocation_node\": [\n                \"Affirmative_Task_Allocation_node\",\n                \"Negative_Task_Allocation_node\"\n            ]\n        }\n    },\n    {\n        # Delete a node. Provide node_name and update the predecessor node's successor nodes. The modified edges should be given, with the nodes being the predecessors of the deleted node.\n        \"action\": \"delete_node\",\n        \"node_name\": \"Negative_Task_Allocation_node\",\n        \"edges\": {\n            # Affirmative_Task_Allocation_node is the predecessor of Negative_Task_Allocation_node, so its successor nodes need to be updated.\n            \"Affirmative_Task_Allocation_node\": [\n                \"Affirmative_Task_Allocation_node\",\n                \"Debate_Order_node\"\n            ]\n        }\n    },\n    {\n        # Update the Node description of Affirmative_Task_Allocation_node. Ensure that the modified description does not have significant semantic changes.\n        \"action\": \"update_node_description\",\n        \"node_name\": \"Affirmative_Task_Allocation_node\",\n        \"node_description\": \"It is currently the debate stage, where the positive side is assigning tasks.\"\n    },\n    {\n        # Update the edges between nodes. You need to note that each node has a self-loop, so its first successor is itself.\n        \"action\": \"update_edges\",\n        \"edges\": {\n            \"Debate_Order_node\": [\n                \"Debate_Order_node\",\n                \"Debate_Random_node\"\n            ]\n        }\n    }\n]\n```\n\n",
+                "prom_config": "Below are the configuration information and suggestions for the SOP that you need to optimize:\n\n## sop config\n{sop_config}\n\n## Suggestion\n\n",
+                "prom_suggestion": "### Suggestion\n<suggestion_{index}>\n{suggestion}</suggestion_{index}>\n\n",
+                "prom_end": "Note:\n1. The results should be wrapped in <result></result>, and they need to be directly parsable into JSON. Otherwise, it will be judged as an error.\n2. Both <result></result> and <analyse></analyse> are required. If no optimization is needed, leave the inside of <result></result> empty.\n3. The <result></result> provided should strictly follow the format of the given example JSON.\n4. You can combine actions such as add_node, delete_node, update_node_description, and update_edges. However, ensure your results are reasonable.\n5. When using add_node, you often need to update edges. When using delete_node, you often need to update the predecessor node's successor nodes.\n6. If not necessary, try to avoid adding and deleting nodes. If the problem can be solved by modifying the node description or adjusting the relationships between nodes, that is preferable."
+            }
+        }
+    }
+}

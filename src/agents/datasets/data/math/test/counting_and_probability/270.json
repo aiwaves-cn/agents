@@ -1,0 +1,6 @@
+{
+    "problem": "If two standard six-sided dice are tossed, what is the probability that a 5 is rolled on at least one of the two dice? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We will use the inclusion-exclusion principle for this problem. The probability of getting a 5 on the first roll is obviously $\\frac{1}{6}$, as it is on the second roll. So, the probability of getting a 5 on at least one of the rolls would appear to be $2\\cdot \\frac{1}{6} = \\frac{1}{3}$. But this is not quite right. We have double counted the case of rolling a 5 twice. In that instance, we have included it in both the count for a 5 on the first roll and the second roll, when it only should have been included once overall. So, our answer is $\\frac{1}{3} - \\frac{1}{36} = \\boxed{\\frac{11}{36}}$."
+}

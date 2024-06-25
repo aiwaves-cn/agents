@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\n\\frac{x}{21} & \\text{ if }x\\text{ is a multiple of 3 and 7}, \\\\\n3x & \\text{ if }x\\text{ is only a multiple of 7}, \\\\\n7x & \\text{ if }x\\text{ is only a multiple of 3}, \\\\\nx+3 & \\text{ if }x\\text{ is not a multiple of 3 or 7}.\n\\end{array}\n\\right.\\]If $f^a(x)$ means the function is nested $a$ times (for example, $f^2(x)=f(f(x))$), what is the smallest value of $a$ greater than 1 that satisfies $f(2)=f^a(2)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since 2 is not a multiple of 3 or 7, $f(2)=2+3=5$ and we want to find an $a$ where $f^a(2)=5$. So, we keep track of how many times we evaluate $f$ of our previous result until we get 5.  \\begin{align*}\nf(2)&=5\\\\\nf(f(2))&=f(5)=5+3=8 \\qquad 5 \\text{ is not a multiple of 3 or 7.}\\\\\nf(f(f(2)))&=f(8)=8+3=11 \\qquad 8 \\text{ is not a multiple of 3 or 7.}\\\\\nf^4(2)&=11+3=14 \\qquad 11 \\text{ is not a multiple of 3 or 7.}\\\\\nf^5(2)&=3\\cdot14=42 \\qquad 14 \\text{ is a multiple of 7.}\\\\\nf^6(2)&=\\frac{42}{21}=2 \\qquad 42 \\text{ is a multiple of 3 and 7.}\\\\\nf^7(2)&=2+3=5 \\qquad 2 \\text{ is not a multiple of 3 or 7.}\n\\end{align*}So the least $a>1$ for which $f^a(2)=f(2)$ is $a=\\boxed{7}$."
+}

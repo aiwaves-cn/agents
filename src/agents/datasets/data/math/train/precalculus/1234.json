@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[(1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ)(1 + \\tan 3^\\circ) \\dotsm (1 + \\tan 45^\\circ) = 2^n,\\]then find $n.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Note that for any angle $x,$ from the angle subtraction formula,\n\\begin{align*}\n(1 + \\tan x)(1 + \\tan (45^\\circ - x)) &= (1 + \\tan x) \\left( 1 + \\frac{\\tan 45^\\circ - \\tan x}{1 + \\tan 45^\\circ \\tan x} \\right) \\\\\n&= (1 + \\tan x) \\left( 1 + \\frac{1 - \\tan x}{1 + \\tan x} \\right) \\\\\n&= 1 + \\tan x + 1 - \\tan x \\\\\n&= 2.\n\\end{align*}Thus, taking $x = 1^\\circ,$ $2^\\circ,$ $\\dots,$ $22^\\circ,$ we get\n\\begin{align*}\n(1 + \\tan 1^\\circ)(1 + \\tan 44^\\circ) &= 2, \\\\\n(1 + \\tan 2^\\circ)(1 + \\tan 43^\\circ) &= 2, \\\\\n&\\dots, \\\\\n(1 + \\tan 22^\\circ)(1 + \\tan 23^\\circ) &= 2.\n\\end{align*}Hence,\n\\[(1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ)(1 + \\tan 23^\\circ) \\dotsm (1 + \\tan 44^\\circ) = 2^{22}.\\]Then\n\\[(1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ)(1 + \\tan 23^\\circ) \\dotsm (1 + \\tan 44^\\circ)(1 + \\tan 45^\\circ) = 2^{23},\\]which means $n = \\boxed{23}.$"
+}

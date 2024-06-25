@@ -1,0 +1,6 @@
+{
+    "problem": "Any five points are taken inside or on a square with side length $1$. Let a be the smallest possible number with the property that it is always possible to select one pair of points from these five such that the distance between them is equal to or less than $a$. Then $a$ is:\n$\\textbf{(A)}\\ \\sqrt{3}/3\\qquad \\textbf{(B)}\\ \\sqrt{2}/2\\qquad \\textbf{(C)}\\ 2\\sqrt{2}/3\\qquad \\textbf{(D)}\\ 1 \\qquad \\textbf{(E)}\\ \\sqrt{2}$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Partition the unit square into four smaller squares of sidelength $\\frac{1}{2}$. Each of the five points lies in one of these squares, and so by the Pigeonhole Principle, there exists two points in the same $\\frac{1}{2}\\times \\frac{1}{2}$ square - the maximum possible distance between them being $\\boxed{\\frac{\\sqrt{2}}{2}}$ by Pythagoras."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $a$ and $b$ are positive integers, neither of which is a multiple of 3.  Find the least possible remainder when $a^2 + b^2$ is divided by 3.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Note that $1^2 \\equiv 2^2 \\equiv 1 \\pmod{3}$.  The only possible modulo 3 residue for a square that isn't a multiple of 3 is 1.  Therefore, $a^2 + b^2 \\equiv 1 + 1 \\equiv \\boxed{2} \\pmod{3}$."
+}

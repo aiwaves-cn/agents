@@ -1,0 +1,6 @@
+{
+    "problem": "Define $\\mathbf{A} = \\begin{pmatrix} 0 & 1 \\\\ 3 & 0 \\end{pmatrix}.$  Find the vector $\\mathbf{v}$ such that\n\\[(\\mathbf{A}^8 + \\mathbf{A}^6 + \\mathbf{A}^4 + \\mathbf{A}^2 + \\mathbf{I}) \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 11 \\end{pmatrix}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Note that\n\\[\\mathbf{A}^2 = \\begin{pmatrix} 0 & 1 \\\\ 3 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & 1 \\\\ 3 & 0 \\end{pmatrix} = \\begin{pmatrix} 3 & 0 \\\\ 0 & 3 \\end{pmatrix} = 3 \\mathbf{I}.\\]Then $\\mathbf{A}^4 = 9 \\mathbf{I},$ $\\mathbf{A}^6 = 27 \\mathbf{I},$ and $\\mathbf{A}^8 = 81 \\mathbf{I},$ so\n\\[\\mathbf{A}^8 + \\mathbf{A}^6 + \\mathbf{A}^4 + \\mathbf{A}^2 + \\mathbf{I} = 81 \\mathbf{I} + 27 \\mathbf{I} + 9 \\mathbf{I} + 3 \\mathbf{I} + \\mathbf{I} = 121 \\mathbf{I}.\\]Thus, the given equation becomes\n\\[121 \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 11 \\end{pmatrix},\\]so\n\\[\\mathbf{v} = \\boxed{\\begin{pmatrix} 0 \\\\ 1/11 \\end{pmatrix}}.\\]"
+}

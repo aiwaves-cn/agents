@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\sqrt{5 + x} + \\sqrt{20 - x} = 7$, what is the value of $(5 + x)(20 - x)$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Square both sides of the equation to obtain \\[\n(5+x)+2\\sqrt{5+x}\\sqrt{20-x}+(20-x)=49.\n\\]This equation simplifies to \\[\n2\\sqrt{(5+x)(20-x)}=24,\n\\]so $(5+x)(20-x)=(24/2)^2=\\boxed{144}$."
+}

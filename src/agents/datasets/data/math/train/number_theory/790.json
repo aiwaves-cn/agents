@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest common divisor of $2^{1001}-1$ and $2^{1012}-1$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "By the Euclidean algorithm, \\begin{align*}\n&\\text{gcd}\\,(2^{1012}-1, 2^{1001}-1) \\\\\n&\\qquad= \\text{gcd}\\, (2^{1012}-1 - 2^{11}(2^{1001}-1), 2^{1001}-1) \\\\\n&\\qquad= \\text{gcd}\\,(2^{11}-1, 2^{1001}-1)\n\\end{align*} Using the divisibility rule for $11$, we know that $11$ divides into $1001$. Writing $2^{1001}$ as $(2^{11})^{91}$ and $1$ as $1^{91}$, we use the difference of odd powers factorization to find that   \\[\n2^{1001} - 1 = (2^{11})^{91}-1^{91} = (2^{11}-1)((2^{11})^{90} + (2^{11})^{89}+\\cdots (2^{11})^1 + 1).\n\\] Thus $2^{1001}-1$ is divisible by $2^{11}-1$, so the greatest common divisor is $2^{11}-1 = \\boxed{2047}$."
+}

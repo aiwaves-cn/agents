@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\frac{1}{x} + \\frac{1}{y} = 3$ and $\\frac{1}{x} - \\frac{1}{y} = -7$ what is the value of $x + y$? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we find \\[\\frac1{x} = \\frac12\\left(\\left(\\frac1{x}+\\frac1{y}\\right)+\\left(\\frac1{x}-\\frac1{y}\\right)\\right) = \\frac12(3+(-7)) = -2.\\] Therefore, $x = -\\frac12$. Similarly, we find \\[\\frac1{y} = \\frac12\\left(\\left(\\frac1{x}+\\frac1{y}\\right)-\\left(\\frac1{x}-\\frac1{y}\\right)\\right) = \\frac12(3-(-7)) = 5.\\] Therefore, $y = \\frac15$. Our desired sum is \\[x+y = -\\frac12 + \\frac15 = \\boxed{-\\frac{3}{10}}.\\]"
+}

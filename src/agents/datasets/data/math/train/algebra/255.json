@@ -1,0 +1,6 @@
+{
+    "problem": "Real numbers $a$ and $b$ satisfy the equations $3^a=81^{b+2}$ and $125^b=5^{a-3}$.  What is $ab$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The given equations are equivalent, respectively, to \\[\n3^a=3^{4(b+2)}\\quad\\text{and}\\quad 5^{3b}=5^{a-3}.\n\\] Therefore $a=4(b+2)$ and $3b=a-3$.  The solution of this system is $a=-12$ and $b=-5$, so $ab=\\boxed{60}$."
+}

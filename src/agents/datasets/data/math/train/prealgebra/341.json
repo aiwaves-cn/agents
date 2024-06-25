@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer $x$ that, when multiplied by $400$, produces a product that is a multiple of $576$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Begin by factoring the two numbers. $400$ factors into $2^4\\cdot5^2$, while $576$ factors into $2^6\\cdot3^2$. In order for $400x$ to be a multiple of $576$, the prime factorization of $400x$ must include the entire prime factorization of $576$.  Since the prime factorization of 576 has two more 2's and two more 3's than the prime factorization of 400, we know that the prime factorization of $x$ must include at least two 2's and at least two 3's.  So, the smallest possible $x$ is $2^2\\cdot3^2=4\\cdot9=\\boxed{36}$.\n\nChecking our answer to make sure that $400\\cdot (2^2\\cdot 3^2)$ is a multiple of 576, we see that $$400(2^2\\cdot 3^2) =2^4\\cdot 5^2\\cdot 2^2\\cdot 3^2 = 5^2(2^4\\cdot 2^2\\cdot 3^2) = 5^2(2^6\\cdot 3^2) = 25\\cdot 576.$$"
+}

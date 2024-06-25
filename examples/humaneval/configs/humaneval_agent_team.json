@@ -1,0 +1,53 @@
+{
+    "agents": {
+        "Alice": {
+            "agent_name": "Alice",
+            "agent_roles": {
+                "Receive_Incomplete_Code": "Code Reviewer"
+            },
+            "agent_style": null,
+            "agent_description": null,
+            "LLM_config": {
+                "LLM_type": "OpenAI",
+                "model": "gpt-4-turbo-2024-04-09",
+                "temperature": 0,
+                "log_path": "logs/Alice",
+                "API_KEY": "",
+                "API_BASE": "",
+                "MAX_CHAT_MESSAGES": 10,
+                "ACTIVE_MODE": false,
+                "SAVE_LOGS": true
+            },
+            "toolkit": null,
+            "memory": null,
+            "is_user": false
+        },
+        "David": {
+            "agent_name": "David",
+            "agent_roles": {
+                "Finalize_Code": "Result Extractor"
+            },
+            "agent_style": null,
+            "agent_description": null,
+            "LLM_config": {
+                "LLM_type": "OpenAI",
+                "model": "gpt-4-turbo-2024-04-09",
+                "temperature": 0,
+                "log_path": "logs/David",
+                "API_KEY": "",
+                "API_BASE": "",
+                "MAX_CHAT_MESSAGES": 10,
+                "ACTIVE_MODE": false,
+                "SAVE_LOGS": true
+            },
+            "toolkit": null,
+            "memory": null,
+            "is_user": false
+        }
+    },
+    "environment": {
+        "environment_type": "cooperative",
+        "shared_memory": null,
+        "shared_toolkit": null
+    }
+}

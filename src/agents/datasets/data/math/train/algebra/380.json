@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)$ is a function defined only for $0 \\le x \\le 1$, and $f(x) = ax+b$ for constants $a$ and $b$ where $a < 0$, then what is the range of $f$ in terms of $a$ and $b$? Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The function $f(x) = ax + b$ is linear, so as $x$ varies over the interval $0 \\le x \\le 1$, $f(x) = ax + b$ takes on all values between $b$ and $a + b$ (inclusive).  Furthermore, $a < 0$, so $a + b < b$.  Hence, the range of $f(x)$ is $\\boxed{[a +b, b]}$."
+}

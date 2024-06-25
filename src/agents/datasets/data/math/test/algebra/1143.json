@@ -1,0 +1,6 @@
+{
+    "problem": "The smallest distance between the origin and a point on the graph of $y=\\frac{1}{2}x^2-9$ can be expressed as $a$.  Find $a^2$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "By the distance formula, we are trying to minimize $\\sqrt{x^2+y^2}=\\sqrt{x^2+\\frac{1}{4}x^4-9x^2+81}$. In general, minimization problems like this require calculus, but one optimization method that sometimes works is to try to complete the square.  Pulling out a factor of $\\frac{1}{4}$ from under the radical, we have \\begin{align*}\n\\frac{1}{2}\\sqrt{4x^2+x^4-36x^2+324}&=\\frac{1}{2}\\sqrt{(x^4-32x^2+256)+68} \\\\\n&= \\frac{1}{2}\\sqrt{(x^2-16)^2+68}\n\\end{align*}This last expression is minimized when the square equals $0$, that is, when $x^2=16$. Then the distance is $\\frac{\\sqrt{68}}{2}=\\sqrt{17}$.  Hence the desired answer is $\\sqrt{17}^2 = \\boxed{17}$."
+}

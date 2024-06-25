@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that the number $\\sqrt{2700} - 37$ can be expressed in the form $(\\sqrt a - b)^3,$ where $a$ and $b$ are positive integers. Find $a+b.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Expanding $(\\sqrt a-b)^3,$ we have \\[\\begin{aligned} (\\sqrt a-b)^3 &= a\\sqrt a - 3ab + 3b^2 \\sqrt a - b^3 \\\\ &= (a+3b^2)\\sqrt a + (-3ab-b^3). \\end{aligned}\\]Since $a$ and $b$ are integers, we must have \\[\\begin{aligned} (a+3b^2) \\sqrt a &= \\sqrt{2700}, \\\\ -3ab-b^3 &= -37. \\end{aligned}\\]The second equation factors as $b(3a+b^2) = 37.$ Since $37$ is a prime, we must have $b=37$ or $b=1.$ If $b=37,$ then $3a+b^2=1,$ which has no positive integer solutions for $a.$ Therefore, $b=1,$ and we have $3a+b^2=37,$ which gives $a=12.$\n\nIndeed, $(a,b)=(12,1)$ also satisfies the first equation: \\[(a+3b^2)\\sqrt a = (12+3 \\cdot 1^2) \\sqrt {12} = 15 \\sqrt{12}= \\sqrt{2700}.\\]Therefore, $a+b = 12 + 1 = \\boxed{13}.$"
+}

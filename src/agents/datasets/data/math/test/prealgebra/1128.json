@@ -1,0 +1,6 @@
+{
+    "problem": "Tom got a Mr. Potato Head for his birthday. It came with 3 hairstyles, 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, and 2 sets of lips, a pair of regular shoes, and a bonus pair of clown shoes. If a complete Mr. Potato Head personality includes eyebrows, eyes, ears, lips, shoes and optionally hair, how many different wacky personalities can Tom come up with? Note that Mr. Potato Head can be bald.\n\nNote: You cannot \"mix and match\".  For example, you cannot take the left eyebrow from one pair and the right eyebrow from the other pair.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are 2 choices of eyebrows, 1 choice for eyes, 2 choices for ears, 2 choices for lips, 2 choices for shoes, and 4 choices for hair (3 choices of hairstyles, or bald), and each can be picked independent of the others, so the number of combinations is the product of those, $2\\cdot 1\\cdot 2\\cdot 2\\cdot 2\\cdot 4 = \\boxed{64}$."
+}

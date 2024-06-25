@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\angle ABC$ is a straight angle, give the number of degrees in the measure of $\\angle ABD$. [asy] pair A,B,C,D; A = dir(180); D = dir(60); C = dir(0);\ndraw(B--1.2*A,EndArrow); draw(B--1.2*D,EndArrow); label(\"A\",A,S); dot(A);\nlabel(\"B\",B,S); draw(B--1.2*C,EndArrow); label(\"C\",C,S); label(\"D\",D,dir(135));\nlabel(\"$6x^{\\circ}$\",B,NW); label(\"$3x^{\\circ}$\",B+.1,NE); dot(D); dot(C);\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Since $\\angle ABC$ is a straight angle, we have $6x + 3x = 180^\\circ$, so $9x = 180^\\circ$ and $x = 20^\\circ$.  Therefore, $\\angle ABD = 6x = \\boxed{120^\\circ}$."
+}

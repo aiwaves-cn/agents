@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all real solutions to the equation \\[|x| \\cdot |x-5| = 3.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Rewriting the left-hand side, we get \\[|x(x-5)| = 3.\\]Therefore, either $x(x-5) =3$ or $x(x-5) = -3.$ These are equivalent to $x^2-5x-3=0$ and $x^2-5x+3=0,$ respectively. The discriminant of both quadratic equations is positive, so they both have two real roots for $x.$ By Vieta's formulas, the sum of the roots of each quadratic is $5,$ so the sum of all four roots is $5+5=\\boxed{10}.$"
+}

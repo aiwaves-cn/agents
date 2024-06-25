@@ -1,0 +1,6 @@
+{
+    "problem": "A box contains tiles, numbered 1, 2, 3,..., 49, 50. Only tiles which are marked with a number congruent to $2 \\pmod{5}$ are blue. One tile is chosen randomly from the box. What is the probability that the tile is blue?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Positive integers which are congruent to $2\\pmod{5}$ belong to the set $$\\{2+5(0), 2+5(1), 2+5(2), ..., \\}.$$To find the largest element of this set which is less than or equal to 50, we look for the largest possible integer $n$ such that $$2+5(n-1) \\le 50.$$Solving this inequality, we find $n \\le 53/5$, so the maximum integer solution is $n=\\lfloor 53/5 \\rfloor = 10$. Since there are 50 total tiles, the probability that the tile is marked with a number congruent to $2 \\pmod{5}$ is $\\dfrac{10 \\; \\text{blue tiles} }{50 \\; \\text{total tiles}} = \\boxed{ \\frac{1}{5} } .$"
+}

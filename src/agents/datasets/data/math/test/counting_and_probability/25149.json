@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the rectangular region with the following points as vertices: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ How many points with integer coordinates will be strictly in the interior of this rectangular region?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The rectangular region is 10 units by 8 units, resulting in an 8 by 6 rectangular region in the interior, which forms a 9-by-7 array of lattice points. That's $\\boxed{63}$ points with integer coordinates, as shown in the figure. [asy]\nimport olympiad; size(150); defaultpen(linewidth(0.8));\nadd(grid(10,8));\ndraw((1,1)--(9,1)--(9,7)--(1,7)--cycle,linewidth(1.2));\n[/asy] Note: We are counting points, not squares. It is a common mistake to count the interior squares, for 48, instead of interior lattice points, which gives the correct answer of 63."
+}

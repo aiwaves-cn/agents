@@ -1,0 +1,6 @@
+{
+    "problem": "The pages of a book are numbered $1_{}^{}$ through $n_{}^{}$. When the page numbers of the book were added, one of the page numbers was mistakenly added twice, resulting in an incorrect sum of $1986_{}^{}$. What was the number of the page that was added twice?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "If all the page numbers were added just once, the sum would be \\[1 + 2 + \\dots + n = \\frac{n(n+1)}{2}.\\]But one of the page numbers was added twice, so the interval of possible values for the incorrect sum is $\\left[\\tfrac{n(n+1)}{2} + 1, \\tfrac{n(n+1)}{2} + n\\right].$ We are given that the incorrect sum is $1986,$ so we must have \\[\\frac{n(n+1)}{2} + 1 \\le 1986 \\le \\frac{n(n+1)}{2} + n.\\]We look for the value of $n$ which satisfies this inequality chain. We have $\\tfrac{n(n+1)}{2} \\approx 1986 \\approx 2000,$ so $n(n+1) \\approx n^2 \\approx 4000,$ and $n \\approx \\sqrt{4000} \\approx 63.$ For $n = 63,$ we have $\\tfrac{n(n+1)}{2} = 2016,$ which is too large. For $n=62,$ we have $\\tfrac{n(n+1)}{2} = 1953,$ which works, because \\[1953 + 1 \\le 1986 \\le 1953 + 62.\\]Then, the page number that was added twice must be \\[1986 - 1953 = \\boxed{33}.\\]"
+}

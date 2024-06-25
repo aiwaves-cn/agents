@@ -1,0 +1,6 @@
+{
+    "problem": "The domain of the function $q(x) = x^4 + 4x^2 + 4$ is $[0,\\infty)$. What is the range?",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We have $q(x) = (x^2+2)^2$. We wish to determine the set of all $y$ for which $q(x)=y$ has solutions. We must have $y\\ge 0$, since $q(x)$ is a square and squares are nonnegative. Under the assumption $y\\ge 0$, we have:\n$$\\begin{array}{r r@{~=~}l}\n& y & (x^2+2)^2 \\\\\n\\Leftrightarrow & \\sqrt y & x^2+2 \\\\\n\\Leftrightarrow & \\sqrt y-2 & x^2 \\\\\n\\end{array}$$We see that $\\sqrt y-2\\ge 0$ because squares are nonnegative. Thus, we need $y\\ge 4$. When $y\\ge 4$, we have $y=q(x)$ by setting $x$ equal to either of $\\pm \\sqrt{\\sqrt y-2}$, and so any $y\\ge 4$ can be achieved.\n\nTherefore, the range of $q(x)$ is $\\boxed{[4,\\infty)}$."
+}

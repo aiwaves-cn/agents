@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers.  Find the minimum value of\n\\[\\frac{x^3 + 2y^3 + 4z^3}{xyz}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[x^3 + 2y^3 + 4z^3 \\ge 3 \\sqrt[3]{x^3 \\cdot 2y^3 \\cdot 4z^3} = 6xyz.\\]Therefore,\n\\[\\frac{x^3 + 2y^3 + 4z^3}{xyz} \\ge 6.\\]Equality occurs when $x^3 = 2y^3 = 4z^3$; for example, $x = \\sqrt[3]{4},$ $y = \\sqrt[3]{2},$ and $z = 1$ will work, so the minimum value is $\\boxed{6}.$"
+}

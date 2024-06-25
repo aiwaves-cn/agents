@@ -1,0 +1,6 @@
+{
+    "problem": "The figure shown represents a plot of land and is drawn using a scale in which 1 cm equals 2 miles. One square mile is 640 acres. How large is the actual plot of land, in acres? [asy]\ndraw((0,0)--(15,0)--(10,10)--(0,10)--cycle);\ndraw((0,1)--(1,1)--(1,0));\ndraw((0,9)--(1,9)--(1,10));\nlabel(\"15 cm\",(7.5,0),S);\nlabel(\"10 cm\",(0,5),W);\nlabel(\"10 cm\",(5,10),N);\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "First, let's calculate the area of the plot of land in cm. Then, we'll convert as the questions ask.\n\nRecall the formula for the area of a trapezoid is given by $\\mbox{Area} = (\\mbox{bottom} + \\mbox{ top})\\times \\mbox{height} \\times \\frac{1}{2}$, so the area of this trapezoid is $$(10 \\mbox{cm} + 15 \\mbox{cm}) \\times 10 \\mbox{cm} \\times \\frac{1}{2} = 125 \\mbox{cm}^2.$$Now, we are given that $1 \\mbox{ cm } = 2 \\mbox{ miles }$. Squaring both sides, that means $$1 \\mbox{ cm}^2 = 4 \\mbox{ miles}^2.$$We are told that $1 \\mbox{ miles}^2 = 640 \\mbox{ acres}$, so the above equation is actually:\n\n$$1 \\mbox{ cm}^2 = 4 \\mbox{ miles}^2 \\times \\frac{ 640 \\mbox{ acres}}{1 \\mbox{ miles}^2} = 2560 \\mbox{ acres}.$$Finally, we can convert $$125 \\mbox{ cm}^2 \\times \\frac{ 2560 \\mbox{ acres}}{1 \\mbox{ cm}^2} = \\boxed{320000 \\mbox{ acres}}.$$"
+}

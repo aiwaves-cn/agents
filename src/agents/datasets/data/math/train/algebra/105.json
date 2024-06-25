@@ -1,0 +1,6 @@
+{
+    "problem": "What value of $x$ will give the minimum value of $2x^2 - 12x + 3$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We start by completing the square: \\begin{align*}\n2x^2 -12x + 3 &= 2(x^2-6x) +3 \\\\\n&= 2(x^2 -6x + (6/2)^2 - (6/2)^2) + 3\\\\\n& = 2((x-3)^2 -3^2) + 3 \\\\\n&= 2(x-3)^2 - 2\\cdot 3^2 + 3\\\\\n&= 2(x-3)^2 -15\n.\\end{align*} Since the square of a real number is at least 0, we have $(x-3)^2\\ge 0$, where $(x-3)^2 =0$ only if $x=3$.   Therefore, $2(x-3)^2 - 15$ is minimized when $x=\\boxed{3}.$"
+}

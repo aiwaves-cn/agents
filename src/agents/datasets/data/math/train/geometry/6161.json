@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P$ be a point chosen uniformly at random in the interior of the unit square with vertices at $(0,0), (1,0), (1,1)$, and $(0,1)$. The probability that the slope of the line determined by $P$ and the point $\\left(\\frac58, \\frac38 \\right)$ is greater than or equal to $\\frac12$ can be written as $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The areas bounded by the unit square and alternately bounded by the lines through $\\left(\\frac{5}{8},\\frac{3}{8}\\right)$ that are vertical or have a slope of $1/2$ show where $P$ can be placed to satisfy the condition. One of the areas is a trapezoid with bases $1/16$ and $3/8$ and height $5/8$. The other area is a trapezoid with bases $7/16$ and $5/8$ and height $3/8$. Then,\\[\\frac{\\frac{1}{16}+\\frac{3}{8}}{2}\\cdot\\frac{5}{8}+\\frac{\\frac{7}{16}+\\frac{5}{8}}{2}\\cdot\\frac{3}{8}=\\frac{86}{256}=\\frac{43}{128}\\implies43+128=\\boxed{171}\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The set of all solutions of the system  \\[ \\begin{cases}& 2x+y \\le 4 \\\\& x+y \\ge 1 \\\\& x \\ge 0 \\\\& y \\ge 0 \\end{cases} \\] is a quadrilateral region. If the number of units in the length of the longest side is $a\\sqrt{b}$ (expressed in simplest radical form), find $a+b$.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "[asy]\nLabel f;\n\nf.p=fontsize(6);\n\nxaxis(0,3,Ticks(f, 1.0));\n\nyaxis(0,5,Ticks(f, 1.0));\n\nfill((0,1)--(0,4)--(2,0)--(1,0)--cycle, grey);\ndraw((-.5,5)--(2.5,-1), dashed, Arrows);\ndraw((-1,2)--(2,-1), dashed, Arrows);\n[/asy]\n\nThe upper diagonal line is the graph of $2x+y=4$. The lower diagonal line is the graph of $x+y=1$. The y-axis is the graph of $x=0$ and the x-axis is the graph of $y=0$. The shaded region includes the solutions to the system. The longest side is the upper diagonal side. The length of this side is $\\sqrt{4^2+2^2}=2\\sqrt{5}.$ Thus $a+b=2+5=\\boxed{7}$."
+}

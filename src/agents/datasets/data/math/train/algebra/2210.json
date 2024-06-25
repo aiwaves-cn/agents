@@ -1,0 +1,6 @@
+{
+    "problem": "Let the first term of a geometric sequence be $\\frac{3}{4}$, and let the second term be $15$. What is the smallest $n$ for which the $n$th term of the sequence is divisible by one million?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The common ratio is $$\\frac{15}{\\frac{3}{4}} = 20$$Therefore, the $n$th term is $(20^{n-1}) \\left(\\frac{3}{4}\\right)$.\n\n\nIf one million (aka $10^6$) divides the $n$th term, then it must be divisible by $5^6$. This can only happen if $n-1$ is at least $6$, or $n \\ge 7$.\n\n\nThe $7$th term is $$\\left(20^6\\right) \\left(\\frac{3}{4}\\right) = \\left(4\\right)^6\\left(5\\right)^6\\left(\\frac{3}{4}\\right) = (2)^{10}(5)^6(3),$$which is divisible by $(2)^6(5)^6=10^6$, so the answer is indeed $\\boxed{7}$."
+}

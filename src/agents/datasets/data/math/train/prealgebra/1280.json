@@ -1,0 +1,6 @@
+{
+    "problem": "The number 74 can be factored as 2(37), so 74 is said to have two distinct prime factors. How many distinct prime factors does 210 have?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We know that $210 = 10 \\cdot 21$. Breaking down these factors even further, we have that $10 = 2 \\cdot 5$ and $21 = 3 \\cdot 7$, so $210 = 2 \\cdot 3 \\cdot 5 \\cdot 7$. Since these factors are all prime, $210$ has $\\boxed{4}$ distinct prime factors."
+}

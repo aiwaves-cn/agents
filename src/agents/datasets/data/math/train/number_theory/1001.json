@@ -1,0 +1,6 @@
+{
+    "problem": "A very large number $x$ is equal to $2^23^34^45^56^67^78^89^9$. What is the smallest positive integer that, when multiplied with $x$, produces a product that is a perfect square?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "For the product to be a perfect square, all the exponents need to be even. So we don't need to worry about factors that already have even exponents. We also don't need to worry about $9^9$ because $9$ is already a perfect square. The remaining factors are $3^35^57^7$.\n\nTo get even exponents in the product, we need at least one more $3$, at least one more $5$, and at least one more $7$. That would bring us up to $3^45^67^8$, and everything would be good. And indeed, $3\\cdot5\\cdot7=\\boxed{105}$."
+}

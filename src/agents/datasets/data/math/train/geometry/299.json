@@ -1,0 +1,6 @@
+{
+    "problem": "The figure shows two concentric circles. If the length of chord AB is 80 units and chord AB is tangent to the smaller circle, what is the area of the shaded region? Express your answer in terms of $\\pi$.\n\n[asy]\ndefaultpen(linewidth(.8pt));\ndotfactor=4;\nfilldraw(circle((0,0),50),gray);\nfilldraw(circle((0,0),30),white);\ndot((0,0));\n\ndraw((-40,30)--(40,30));\n\nlabel(\"$A$\",(-40,30),W);\nlabel(\"$B$\",(40,30),E);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Call the point of tangency between the two circles $P$ and the center $O$. [asy]\ndefaultpen(linewidth(.8pt));\ndotfactor=4;\n\nfilldraw(circle((0,0),50),gray);\nfilldraw(circle((0,0),30),white);\n\ndraw((-40,30)--(40,30));\ndraw((0,30)--(0,0)--(-40,30));\n\nlabel(\"$P$\",(0,30),N);\nlabel(\"$O$\",(0,0),S);\nlabel(\"$A$\",(-40,30),W);\nlabel(\"$B$\",(40,30),E);\n[/asy] $\\overline{OP}\\perp\\overline{AB}$, so $\\overline{OP}$ bisects $\\overline{AB}$. This means $AP=40$. By the Pythagorean Theorem, $AP^2=1600=AO^2-OP^2$. The area of the shaded region is  \\[\nAO^2\\pi-OP^2\\pi=\\pi\\left(AO^2-OP^2\\right)=\\boxed{1600\\pi}\\text{ square units.}\n\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two of the roots of\n\\[ax^3 + (a + 2b) x^2 + (b - 3a) x + (8 - a) = 0\\]are $-2$ and 3.  Find the third root.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since $-2$ and 3 are roots,\n\\begin{align*}\na(-2)^3 + (a + 2b) (-2)^2 + (b - 3a)(-2) + (8 - a) &= 0, \\\\\na(3)^3 + (a + 2b) 3^2 + (b - 3a)(3) + (8 - a) &= 0.\n\\end{align*}Solving, we find $a = \\frac{8}{9}$ and $b = -\\frac{40}{27}.$  By Vieta's formulas, the sum of the roots is\n\\[-\\frac{a + 2b}{a} = \\frac{7}{3},\\]so the third root is $\\frac{7}{3} - (-2) - 3 = \\boxed{\\frac{4}{3}}.$"
+}

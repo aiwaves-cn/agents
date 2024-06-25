@@ -1,0 +1,6 @@
+{
+    "problem": "Find the arithmetic mean of the reciprocals of the first three prime numbers.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The first three prime numbers are $2$, $3$, and $5$, and their reciprocals are $1/2$, $1/3$, and $1/5$ respectively. To find the mean of these three numbers, we must first find their sum and then divide that sum by $3$. To find the sum of $1/2$, $1/3$, and $1/5$, we first place each fraction over their least common denominator of $30$. Thus, we have that $$\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{5} = \\frac{15}{30} + \\frac{10}{30} + \\frac{6}{30} = \\frac{31}{30}.$$\n\nDividing $\\frac{31}{30}$ by $3$, we get that the mean of these three numbers is $\\frac{31}{30 \\cdot 3} = \\boxed{\\frac{31}{90}}$."
+}

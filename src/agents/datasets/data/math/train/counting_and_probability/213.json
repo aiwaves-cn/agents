@@ -1,0 +1,6 @@
+{
+    "problem": "How many continuous paths from $A$ to $B$, along segments of the figure, do not revisit any of the six labeled points?\n\n[asy]\ndraw((0,0)--(3,0)--(3,2)--(0,2)--(0,0)--cycle,linewidth(2));\ndraw((0,2)--(1,0)--(3,2)--(0,2)--cycle,linewidth(2));\ndraw((0,2)--(1.5,3.5)--(3,2),linewidth(2));\n\nlabel(\"$A$\",(1.5,3.5),N);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(0,2),W);\nlabel(\"$D$\",(3,2),E);\nlabel(\"$E$\",(3,0),SE);\nlabel(\"$F$\",(1,0),S);\n[/asy]",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We denote a path from $A$ to $B$ by writing the labeled points visited, such as $A$-$C$-$B$ (first going to $C$ then to $B$).\n\nCase 1: Path ends in $C$-$B$.  There are clearly four such paths, which we can determine systematically; $A$-$C$-$B$, $A$-$D$-$C$-$B$, $A$-$D$-$F$-$C$-$B$, and $A$-$D$-$E$-$F$-$C$-$B$.\n\nCase 2: Path ends in $F$-$B$.  The possible paths are easy to determine systematically as $A$-$C$-$F$-$B$, $A$-$C$-$D$-$F$-$B$, $A$-$C$-$D$-$E$-$F$-$B$, $A$-$D$-$C$-$F$-$B$, $A$-$D$-$F$-$B$, $A$-$D$-$E$-$F$-$B$, yielding 6 possible paths.\n\nTherefore there are a total of $\\boxed{10}$ such paths."
+}

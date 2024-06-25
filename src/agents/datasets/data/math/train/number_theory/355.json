@@ -1,0 +1,6 @@
+{
+    "problem": "One digit of the decimal representation of $\\frac{5}{7}$ is randomly selected. What is the probability that the digit is a 4? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The decimal representation of $\\frac{5}{7}$ is $0.\\overline{714285}$, which has a repeating block of 6 digits. Since 4 is one of those six digits that keep repeating, the probability that the selected digit is a 4 is $\\boxed{\\frac{1}{6}}$."
+}

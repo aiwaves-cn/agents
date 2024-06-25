@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $\\frac12\\cdot\\frac41\\cdot\\frac18\\cdot\\frac{16}{1} \\dotsm \\frac{1}{512}\\cdot\\frac{1024}{1}$?",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We have that $\\frac{1}{2} \\cdot \\frac{4}{1} = 2,$ $\\frac{1}{8} \\cdot \\frac{16}{1} = 2,$ and so on.  Thus, the ten fractions can be grouped into five pairs, where the product of the fractions in each pair is 2.  Therefore, the product of all ten fractions is $2^5 = \\boxed{32}.$"
+}

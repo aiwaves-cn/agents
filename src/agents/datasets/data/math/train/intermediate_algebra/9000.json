@@ -1,0 +1,6 @@
+{
+    "problem": "Let $F(x)$ be a polynomial such that $F(6) = 15$ and\\[\\frac{F(3x)}{F(x+3)} = 9-\\frac{48x+54}{x^2+5x+6}\\]for $x \\in \\mathbb{R}$ such that both sides are defined. Find $F(12)$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Combining denominators and simplifying,\\[\\frac{F(3x)}{F(x+3)} = \\frac{9(x^2+5x+6)-48x-54}{x^2+5x+6} = \\frac{9x^2 - 3x}{x^2 + 5x + 6}= \\frac{3x(3x-1)}{(x+3)(x+2)}\\]It becomes obvious that $F(x) = ax(x-1)$, for some constant $a$, matches the definition of the polynomial. To prove that $F(x)$ must have this form, note that\\[(x+3)(x+2)F(3x) = 3x(3x-1)F(x+3)\\]\nSince $3x$ and $3x-1$ divides the right side of the equation, $3x$ and $3x-1$ divides the left side of the equation. Thus $3x(3x-1)$ divides $F(3x)$, so $x(x-1)$ divides $F(x)$.\nIt is easy to see that $F(x)$ is a quadratic, thus $F(x)=ax(x-1)$ as desired.\nBy the given, $F(6) = a(6)(5) = 15 \\Longrightarrow a = \\frac 12$. Thus, $F(12) = \\frac{1}{2}(12)(11) = \\boxed{66}$."
+}

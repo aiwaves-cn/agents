@@ -1,0 +1,6 @@
+{
+    "problem": "The number of cubic inches in the volume of a 6-inch high cylindrical can equals the number of square inches in the area of the label that covers the lateral surface of the can. In inches, what is the radius of the can?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Let $r$ be the number of inches in the radius of the can.  The volume of the can is $\\pi r^2(\\text{height})=6\\pi r^2$ cubic inches.  The lateral surface area is $2\\pi r (\\text{height})=12\\pi r$ square inches.  Setting $6\\pi r^2$ equal to $12\\pi r$, we find  \\begin{align*}\n6\\pi r^2-12\\pi r&=0 \\implies \\\\\n6\\pi r( r-2 )&=0 \\implies \\\\\nr=0 \\quad &\\text{or}\\quad r=2.\n\\end{align*} Taking the positive solution $r=2$, we find that the radius of the can is $\\boxed{2}$ inches."
+}

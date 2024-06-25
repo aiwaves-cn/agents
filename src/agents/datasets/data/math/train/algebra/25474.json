@@ -1,0 +1,6 @@
+{
+    "problem": "How many nonzero terms are in the expansion of $$(x+4)(2x^2+3x+9)-3(x^3-2x^2+7x)?$$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we multiply a degree-$1$ term and a degree-$2$ term, so we have a degree-$3$ polynomial. We subtract a constant times a degree-$3$ polynomial, so we can have at most a degree-$3$ polynomial, so at most $4$ terms. However, we are unsure if any of the terms will subtract to zero, so we must multiply out the polynomials:  \\begin{align*}\n&(x+4)(2x^2+3x+9)-3(x^3-2x^2+7x)\\\\\n&\\qquad=x(2x^2+3x+9)+4(2x^2+3x+9)-(3x^3-6x^2+21x)\\\\\n&\\qquad=2x^3+3x^2+9x+8x^2+12x+36-(3x^3-6x^2+21x)\\\\\n&\\qquad=2x^3+11x^2+21x+36-(3x^3-6x^2+21x)\\\\\n&\\qquad=2x^3-3x^3+11x^2+6x^2+21x-21x+36\\\\\n&\\qquad=-x^3+17x^2+36.\n\\end{align*}As we can see, the linear term drops out, and we are left with $\\boxed{3}$ terms."
+}

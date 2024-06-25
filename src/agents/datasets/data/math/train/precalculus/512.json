@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\sin x = 3 \\cos x,$ then what is $\\sin x \\cos x$?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We know that $\\sin^2 x + \\cos^2 x = 1.$  Substituting $\\sin x = 3 \\cos x,$ we get\n\\[9 \\cos^2 x + \\cos^2 x = 1,\\]so $10 \\cos^2 x = 1,$ or $\\cos^2 x = \\frac{1}{10}.$  Then\n\\[\\sin x \\cos x = (3 \\cos x)(\\cos x) = 3 \\cos^2 x = \\boxed{\\frac{3}{10}}.\\]"
+}

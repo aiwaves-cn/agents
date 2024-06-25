@@ -1,0 +1,6 @@
+{
+    "problem": "Bob rolls a fair six-sided die each morning. If Bob rolls a composite number, he eats sweetened cereal. If he rolls a prime number, he eats unsweetened cereal. If he rolls a 1, then he rolls again. In a non-leap year, what is the expected number of times Bob will roll his die?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let the expected value of the number of times Bob rolls his die on a single day be $E$. When Bob rolls his die, there is a $\\frac{5}{6}$ chance that he will stop rolling after one roll, and a $\\frac{1}{6}$ chance that he will have to start over. In the second case, since his first roll had no effect on the outcome, Bob will on average roll his die $E$ more times, for a total of $1+E$ times that day. Therefore, we know that $E=\\frac{5}{6}(1)+\\frac{1}{6}(1+E)$, or that $E=\\frac{6}{5}$. Over 365 days, Bob will roll his die an average of $\\frac{6}{5}\\cdot365=\\boxed{438}$ times total."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A regular hexagon can be divided into six equilateral triangles. If the perimeter of one of the triangles is 21 inches, what is the perimeter, in inches, of the regular hexagon?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The side length of the hexagon is equal to the side length of one of the equilateral triangles.  Since the hexagon has six sides and the triangle has three sides, the perimeter of the hexagon is twice as large as the perimeter of a triangle.  Therefore, the perimeter of the hexagon is $2(21\\text{ inches})=\\boxed{42}$ inches.\n\n[asy]\nunitsize(10mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\n\nint i;\n\nfor(i=1;i<=6;++i)\n{\n\ndraw(dir(60*i)--dir(60*(i+1)));\n}\n\nfor(i=1;i<=3;++i)\n{\n\ndraw(dir(60*i)--dir(60*(i+3)));\n}[/asy]"
+}

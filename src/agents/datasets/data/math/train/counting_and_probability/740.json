@@ -1,0 +1,6 @@
+{
+    "problem": "Thirty identical toothpicks were used to create the figure below. There are over 25 triangles in the figure. What is the fewest number of toothpicks that could be removed so that no triangles remain?\n\n[asy]\ndraw((0,0)--(8,0), linewidth(1));\ndraw(2dir(60)--(2dir(60)+(6,0)), linewidth(1));\ndraw(4dir(60)--(4dir(60)+(4,0)), linewidth(1));\ndraw(6dir(60)--(6dir(60)+(2,0)), linewidth(1));\n\ndraw((0,0)--8dir(60),linewidth(1));\ndraw((2,0)--(6dir(60)+(2,0)),linewidth(1));\ndraw((4,0)--(4dir(60)+(4,0)),linewidth(1));\ndraw((6,0)--(2dir(60)+(6,0)),linewidth(1));\n\ndraw(2dir(60)--(2,0),linewidth(1));\ndraw(4dir(60)--(4,0),linewidth(1));\ndraw(6dir(60)--(6,0),linewidth(1));\ndraw(8dir(60)--(8,0),linewidth(1));\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Call a triangle with side length 1 toothpick a 1-triangle. The figure contains 10 upward-pointing 1-triangles and 6 downward-pointing 1-triangles. Removing a toothpick destroys at most one upward-pointing 1-triangle, so we must remove at least 10 toothpicks. Any triangle must have at least one horizontal toothpick, so if we remove all $\\boxed{10}$ horizontal toothpicks, no triangles remain. Since we have to remove at least 10, this is the minimum."
+}

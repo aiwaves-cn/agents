@@ -1,0 +1,6 @@
+{
+    "problem": "A 10-cm stick has a mark at each centimeter. By breaking the stick at two of these nine marks at random, the stick is split into three pieces, each of integer length. What is the probability that the three lengths could be the three side lengths of a triangle? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The lengths can form a triangle if and only if the sum of the smaller two exceeds the length of the largest.  But the sum of all three pieces is 10, so this means that the largest piece must have length no larger than 4.  (If the largest piece is 5 or greater, then the three lengths will violate the Triangle Inequality.)  However, the largest piece clearly must be longer than 3.  Thus, the only acceptable sets of sidelengths are $\\{3,3,4\\}$ and $\\{2,4,4\\}$.  Since we can obtain these in 6 ways, and the stick can be broken in $\\binom{9}{2} = 36$ different ways, our total probability is $\\frac{6}{36} = \\boxed{\\frac{1}{6}}$."
+}

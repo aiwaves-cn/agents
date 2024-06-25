@@ -1,0 +1,6 @@
+{
+    "problem": "The number of solutions of $2^{2x}-3^{2y}=55$, in which $x$ and $y$ are integers, is:\n\\[\\textbf{(A)} \\ 0 \\qquad\\textbf{(B)} \\ 1 \\qquad \\textbf{(C)} \\ 2 \\qquad\\textbf{(D)} \\ 3\\qquad \\textbf{(E)} \\ \\text{More than three, but finite}\\]\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $a = 2^x$ and $b = 3^y$. Substituting these values results in\\[a^2 - b^2 = 55\\]Factor the difference of squares to get\\[(a + b)(a - b) = 55\\]If $y < 0$, then $55 + 3^{2y} < 64$, so $y$ can not be negative. If $x < 0$, then $2^{2x} < 1$. Since $3^{2y}$ is always positive, the result would be way less than $55$, so $x$ can not be negative. Thus, $x$ and $y$ have to be nonnegative, so $a$ and $b$ are integers. Thus,\\[a+b=55 \\text{ and } a-b=1\\]\\[\\text{or}\\]\\[a+b=11 \\text{ and } a-b=5\\]From the first case, $a = 28$ and $b = 27$. Since $2^x = 28$ does not have an integral solution, the first case does not work. From the second case, $a = 8$ and $b = 3$. Thus, $x = 3$ and $y = 1$. Thus, there is only $\\boxed{1}$ solution."
+}

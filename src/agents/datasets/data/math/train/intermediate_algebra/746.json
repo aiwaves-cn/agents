@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be positive real numbers.  Find the minimum value of\n\\[a^2 + b^2 + \\frac{1}{(a + b)^2}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $s = a + b.$  By QM-AM,\n\\[\\sqrt{\\frac{a^2 + b^2}{2}} \\ge \\frac{a + b}{2} = \\frac{s}{2}.\\]Then $\\frac{a^2 + b^2}{2} \\ge \\frac{s^2}{4},$ so $a^2 + b^2 \\ge \\frac{s^2}{2}.$  Hence,\n\\[a^2 + b^2 + \\frac{1}{(a + b)^2} \\ge \\frac{s^2}{2} + \\frac{1}{s^2}.\\]By AM-GM,\n\\[\\frac{s^2}{2} + \\frac{1}{s^2} \\ge 2 \\sqrt{\\frac{s^2}{2} \\cdot \\frac{1}{s^2}} = \\sqrt{2}.\\]Equality occurs when $a = b$ and $s^2 = \\sqrt{2}.$  The numbers $a = b = 2^{-3/4}$ satisfy these conditions.\n\nTherefore, the minimum value is $\\boxed{\\sqrt{2}}.$"
+}

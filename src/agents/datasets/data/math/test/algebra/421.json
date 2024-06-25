@@ -1,0 +1,6 @@
+{
+    "problem": "The parabolas defined by the equations $y=x^2+4x+6$ and $y=\\frac{1}{2}x^2+x+6$ intersect at points $(a,b)$ and $(c,d)$, where $c\\ge a$. What is $c-a$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The graph of the two parabolas is shown below:\n\n[asy]\nLabel f;\n\nf.p=fontsize(4);\n\nxaxis(-7,1,Ticks(f, 2.0));\n\nyaxis(0,25,Ticks(f, 5.0));\nreal f(real x)\n\n{\n\nreturn x^2+4x+6;\n\n}\n\ndraw(graph(f,-7,1),linewidth(1));\nreal g(real x)\n\n{\n\nreturn .5x^2+x+6;\n\n}\n\ndraw(graph(g,-7,1),linewidth(1));\n[/asy]\n\nThe graphs intersect when $y$ equals both $x^2 + 4x +6$ and $\\frac12x^2 + x+6$, so we have $x^2+4x+6=\\frac{1}{2}x^2+x+6$. Combining like terms, we get $\\frac{1}{2}x^2+3x=0$. Factoring out a $x$, we have $x(\\frac{1}{2}x+3)=0$. So either $x=0$ or $\\frac{1}{2}x+3=0\\Rightarrow x=-6$, which are the two $x$ coordinates of the points of intersection. Thus, $c=0$ and $a=-6$, and $c-a=\\boxed{6}$."
+}

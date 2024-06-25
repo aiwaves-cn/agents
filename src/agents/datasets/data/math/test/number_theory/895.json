@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest $n$ such that $a = 2^{306} \\cdot 3^{340}$ is a perfect $n$th power?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We claim that $a$ is a perfect $n$th power if and only if $n$ divides both $306$ and $340$. To see this, suppose that $n \\mid 306$ and $n \\mid 340$. Then $2^{\\frac{306}{n}} 3^{\\frac{340}{n}}$ is an integer whose $n$th power is $a$. Conversely, suppose $b^n = a$. Then the only primes which divide $b$ are $2$ and $3$. Choose $c$ and $d$ so that $b=2^{c} 3^{d}$. Then $b^n = 2^{cn} 3^{dn} = 2^{306} 3^{340}$, which implies $n \\mid 306$ and $n \\mid 340$. This concludes our proof of the claim that $a$ is an $n$th power if and only if $n$ divides both $306$ and $340$.\n\nThe largest number which simultaneously divides two numbers is their GCD. Using the Euclidean algorithm, the GCD of $306$ and $340$ is the same as the GCD of $340$ and $340-306 = 34$. Since $34$ divides $340$, the GCD of these two is $34$, so the largest possible $n$ is $\\boxed{34}$."
+}

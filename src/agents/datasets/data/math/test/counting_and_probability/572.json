@@ -1,0 +1,6 @@
+{
+    "problem": "Alyssa has four marbles: a red one, a blue one, a green one, and a yellow one. In how many different ways can she form a set consisting of some of the marbles if she must choose at least one marble?  (In a set of chosen marbles, it does not matter in what order she chose the marbles.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Each of the four marbles can either be in Alyssa's set, or not.  That gives two possibilities for each marble, for a total of $2^4=16$ possible sets.  However, we are told the set must have at least one marble.  We need to subtract one to eliminate the case of an empty set, which we counted.  Our final answer is $16-1=\\boxed{15}$ sets."
+}

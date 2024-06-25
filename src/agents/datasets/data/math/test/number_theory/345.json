@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $2000+2001+2002+2003+2004+2005+2006$ is divided by $7$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since $2000,2001,\\ldots,2006$ are $7$ consecutive integers, they include exactly one integer from each residue class $\\pmod 7$. Therefore, their sum is congruent $\\pmod 7$ to $0+1+2+3+4+5+6=21$. The remainder of this sum $\\pmod 7$ is $\\boxed{0}$."
+}

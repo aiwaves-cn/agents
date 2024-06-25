@@ -1,0 +1,6 @@
+{
+    "problem": "When the repeating decimal $0.\\overline{12}$ is expressed as a common fraction in lowest terms, what is the sum of its numerator and denominator?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "To express the number $0.\\overline{12}$ as a fraction, we call it $x$ and subtract it from $100x$: $$\\begin{array}{r r c r@{}l}\n&100x &=& 12&.121212\\ldots \\\\\n- &x &=& 0&.121212\\ldots \\\\\n\\hline\n&99x &=& 12 &\n\\end{array}$$This shows that $0.\\overline{12} = \\frac{12}{99}$.\n\nBut that isn't in lowest terms, since $12$ and $99$ share a common factor of $3$. We can reduce $\\frac{12}{99}$ to $\\frac{4}{33}$, which is in lowest terms. The sum of the numerator and denominator is $4 + 33 = \\boxed{37}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For some positive integer $k$, when 60 is divided by $k^2$, the remainder is 6. What is the remainder when 100 is divided by $k$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since the remainder is 6, $k^2$ must be greater than 6. We look at the perfect squares greater than 6 and less than 60, which are 9, 16, 25, 36, and 49. The only one that leaves a remainder of 6 when 60 is divided by the perfect square is 9, so $k=3$. We know that 99 is a multiple of 3, so 100 divided by 3 leaves a remainder of $\\boxed{1}$.\n\nOR\n\nWe can write the equation $ak^2+6=60$, where $a$ is a positive integer, since 60 has a remainder of 6 when divided by $k^2$. That means $ak^2=54$. When we find the prime factorization of 54, we get $2\\cdot 3^3$, which means $k^2$ must be $3^2$ and $k=3$. The remainder when 100 is divided by 3 is $\\boxed{1}$."
+}

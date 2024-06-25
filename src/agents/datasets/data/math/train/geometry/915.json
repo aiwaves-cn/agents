@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\triangle PQR$, we have $PQ = QR = 34$ and $PR = 32$.  Point $M$ is the midpoint of $\\overline{QR}$.  Find $PM$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "We start with a diagram, including median $\\overline{QN}$, which is also an altitude.  Let the medians intersect at $G$, the centroid of the triangle.\n\n\n[asy]\nsize(100);\npair P,Q,R,M,NN;\nP = (0,0);\nQ = (0.5,0.9);\nR = (1,0);\nNN = (0.5,0);\nM = (Q+R)/2;\ndraw(rightanglemark(Q,NN,P,2.5));\ndraw(M--P--Q--R--P);\ndraw(Q--NN);\nlabel(\"$P$\",P,SW);\nlabel(\"$R$\",R,SE);\nlabel(\"$Q$\",Q,N);\nlabel(\"$N$\",NN,S);\nlabel(\"$M$\",M,NE);\nlabel(\"$G$\",(2/3)*NN+(1/3)*Q,NW);\n\n[/asy]\n\nWe have $NP = PR/2 = 16$, so right triangle $PQN$ gives us \\begin{align*}QN &= \\sqrt{PQ^2 - PN^2} = \\sqrt{34^2 - 16^2} \\\\\n&= \\sqrt{(34-16)(34+16)} = 30.\\end{align*} (We might also have recognized that $PN/PQ = 8/17$, so $\\allowbreak QN/PQ = 15/17$.)\n\nSince $G$ is the centroid of $\\triangle PQR$, we have $GN = \\frac13(QN) = 10$, and right triangle $GNP$ gives us  \\[GP = \\sqrt{GN^2+NP^2} = \\sqrt{100+256} = 2\\sqrt{25 + 64} = 2\\sqrt{89}.\\] Finally, since $G$ is the centroid of $\\triangle PQR$, we have $PM = \\frac32(GP) = \\boxed{3\\sqrt{89}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For some constants $x$ and $a$, the third, fourth, and fifth terms in the expansion of $(x + a)^n$ are 84, 280, and 560, respectively.  Find $n.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the Binomial Theorem, the third, fourth, and fifth terms in the expansion of $(x + a)^n$ are $\\binom{n}{2} x^{n - 2} a^2,$ $\\binom{n}{3} x^{n - 3} a^3,$ and $\\binom{n}{4} x^{n - 4} a^4,$ respectively.  Then\n\\[\\frac{\\binom{n}{2} x^{n - 2} a^2}{\\binom{n}{3} x^{n - 3} a^3} = \\frac{84}{280}.\\]This simplifies to\n\\[\\frac{3x}{a(n - 2)} = \\frac{3}{10},\\]so $10x = a(n - 2).$\n\nAlso,\n\\[\\frac{\\binom{n}{3} x^{n - 3} a^3}{\\binom{n}{4} x^{n - 4} a^4} = \\frac{280}{560}.\\]This simplifies to\n\\[\\frac{4x}{a(n - 3)} = \\frac{1}{2},\\]so $8x = a(n - 3).$\n\nDividing the equations $10x = a(n - 2)$ and $8x = a(n - 3),$ we get\n\\[\\frac{n - 3}{n - 2} = \\frac{4}{5}.\\]Then $5n - 15 = 4n - 8,$ so $n = \\boxed{7}.$"
+}

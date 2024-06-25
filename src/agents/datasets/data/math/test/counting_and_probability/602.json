@@ -1,0 +1,6 @@
+{
+    "problem": "If the numbers on the third diagonal of Pascal's Triangle are triangular numbers, what is the value of the $50$th triangular number? (The $n$th triangular number is $1+2+3+\\ldots+n$.)",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "If the triangular numbers are found on the third diagonal of Pascal's Triangle, the triangular numbers are  \\[\\binom{2}{0}, \\binom{3}{1}, \\binom{4}{2}, \\cdots,\\]  where the $n$th triangular number is $\\binom{n+1}{n-1}$. We're looking for the $50$th triangular number, which is  $$\\binom{51}{49}=\\frac{51!}{49!2!}\\frac{51 \\cdot 50}{2\\cdot 1}=51\\cdot25=\\boxed{1275}.$$"
+}

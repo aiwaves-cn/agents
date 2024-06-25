@@ -1,0 +1,6 @@
+{
+    "problem": "Through a point on the hypotenuse of a right triangle, lines are drawn parallel to the legs of the triangle so that the triangle is divided into a square and two smaller right triangles. The area of one of the two small right triangles is $m$ times the area of the square. What is the ratio of the area of the other small right triangle to the area of the square?  Express your answer as a common fraction in terms of $m$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Without loss of generality, let the side of the square have length 1 unit and let the area of triangle $ADF$ be $m$. Let $AD=r$ and $EC=s$. Because triangles $ADF$ and $FEC$ are similar, $\\frac{s}{1}=\\frac{1}{r}$. Since $\\frac{1}{2}r=m$, the area of triangle $FEC$ is $\\frac{1}{2}s=\\frac{1}{2r}=\\boxed{\\frac{1}{4m}}$. [asy]\npair A,B,C,D,I,F;\nB=(0,0);\nC=(12,0);\nA=(0,6);\nD=(0,4);\nI=(4,0);\nF=(4,4);\ndraw(A--B--C--cycle);\ndraw(D--F--I);\nlabel(\"1\",(4,2),W);\nlabel(\"$s$\",(8,0),S);\nlabel(\"$r$\",(0,5),W);\nlabel(\"$A$\",A,W);\nlabel(\"$D$\",D,W);\nlabel(\"$B$\",B,W);\nlabel(\"$E$\",I,S);\nlabel(\"$F$\",F,NE);\nlabel(\"$C$\",C,S);\n[/asy]"
+}

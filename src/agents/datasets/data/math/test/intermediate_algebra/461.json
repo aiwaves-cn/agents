@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate \\[\\sqrt{5 + \\sqrt{21}} + \\sqrt{5 - \\sqrt{21}}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Squaring the given expression, we have \\[\\begin{aligned} \\left(\\sqrt{5+\\sqrt{21}}+\\sqrt{5-\\sqrt{21}}\\right)^2 &= (5+\\sqrt{21}) + (5-\\sqrt{21}) + 2\\sqrt{(5+\\sqrt{21})(5-\\sqrt{21})} \\\\ &= 10 + 2\\sqrt{4} \\\\ &= 14. \\end{aligned}\\]Because the given expression is clearly positive, its value must be $\\boxed{\\sqrt{14}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be nonnegative real numbers such that $x + y + z = 2.$  Find the maximum value of\n\\[(x^2 - xy + y^2)(x^2 - xz + z^2)(y^2 - yz + z^2).\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Without loss of generality, we can assume that $z \\le x$ and $z \\le y.$  Then\n\\[(x^2 - xy + y^2)(x^2 - xz + z^2)(y^2 - yz + z^2) \\le (x^2 - xy + y^2) x^2 y^2.\\]By AM-GM,\n\\begin{align*}\nx^2 y^2 (x^2 - xy + y^2) &= \\frac{4}{9} \\left( \\frac{3}{2} xy \\right) \\left( \\frac{3}{2} xy \\right) (x^2 - xy + y^2) \\\\\n&\\le \\frac{4}{9} \\left( \\frac{\\frac{3}{2} xy + \\frac{3}{2} xy + (x^2 - xy + y^2)}{3} \\right)^3 \\\\\n&= \\frac{4}{9} \\left( \\frac{x^2 + 2xy + y^2}{3} \\right)^3 \\\\\n&= \\frac{4}{9} \\cdot \\frac{(x + y)^6}{27} \\\\\n&\\le \\frac{4}{243} (x + y + z)^6 \\\\\n&= \\frac{256}{243}.\n\\end{align*}Equality occurs when $x = \\frac{4}{3},$ $y = \\frac{2}{3},$ and $z = 0,$ so the maximum value is $\\boxed{\\frac{256}{243}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the unique positive integer $n$ such that\n\\[2 \\cdot 2^2 + 3 \\cdot 2^3 + 4 \\cdot 2^4 + \\dots + n \\cdot 2^n = 2^{n + 10}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[S = 2 \\cdot 2^2 + 3 \\cdot 2^3 + 4 \\cdot 2^4 + \\dots + n \\cdot 2^n.\\]Then\n\\[2S = 2 \\cdot 2^3 + 3 \\cdot 2^4 + 4 \\cdot 2^5 + \\dots + n \\cdot 2^{n + 1}.\\]Subtracting these equations, we get\n\\begin{align*}\nS &= (2 \\cdot 2^3 + 3 \\cdot 2^4 + 4 \\cdot 2^5 + \\dots + n \\cdot 2^{n + 1}) - (2 \\cdot 2^2 + 3 \\cdot 2^3 + 4 \\cdot 2^4 + \\dots + n \\cdot 2^n) \\\\\n&= -2 \\cdot 2^2 - 2^3 - 2^4 - \\dots - 2^n + n \\cdot 2^{n + 1} \\\\\n&= -8 - 2^3 (1 + 2 + 2^2 + \\dots + 2^{n - 3}) + n \\cdot 2^{n + 1} \\\\\n&= -8 - 2^3 (2^{n - 2} - 1) + n \\cdot 2^{n + 1} \\\\\n&= -8 - 2^{n + 1} + 8 + n \\cdot 2^{n + 1} \\\\\n&= (n - 1) 2^{n + 1}.\n\\end{align*}Hence, $(n - 1) 2^{n + 1} = 2^{n + 10},$ so $n - 1 = 2^9 = 512,$ from which $n = \\boxed{513}.$"
+}

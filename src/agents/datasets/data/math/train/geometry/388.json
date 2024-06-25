@@ -1,0 +1,6 @@
+{
+    "problem": "In right $\\Delta ABC$, $\\angle CAB$ is a right angle. Point $M$ is the midpoint of $\\overline{BC}$. What is the number of centimeters in the length of median $\\overline{AM}$? Express your answer as a decimal to the nearest tenth. [asy] pair A,B,C,M;\nA = (0,0); B = (4,0); C = (0,3); M = (B+C)/2;\ndraw(M--A--B--C--A);\nlabel(\"$A$\",A,W); label(\"$B$\",B,E);\nlabel(\"$C$\",C,W); label(\"$M$\",M,NE);\nlabel(\"3 cm\",A--C,W); label(\"4 cm\",A--B,S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The length of the median to the hypotenuse of a right triangle is half the hypotenuse.  The hypotenuse of $\\triangle ABC$ is $\\sqrt{3^2+4^2} = 5$, so $AM = BC/2 = \\boxed{2.5}$."
+}

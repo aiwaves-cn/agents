@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P(x)$ be a monic polynomial of degree 3.  Suppose that $P(x)$ has remainder $R(x)$ when it is divided by $(x - 1)(x - 4),$ and remainder $2R(x)$ when it is divided by $(x - 2)(x - 3).$  Given that $P(0) = 5,$ find $P(5).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $P(x) = x^3 + ax^2 + bx + 5.$  The remainder $R(x)$ has degree at most 1, so let $R(x) = cx + d.$\n\nWhen $P(x)$ is divided by $(x - 1)(x - 4),$ the quotient is of the form $x + p,$ so write\n\\[P(x) = (x + p)(x - 1)(x - 4) + R(x) = (x + p)(x - 1)(x - 4) + cx + d.\\]Comparing the coefficients of $x^2,$ we get $a = p - 5.$\n\nWhen $P(x)$ is divided by $(x - 2)(x - 3),$ the quotient is of the form $x + q,$ so write\n\\[P(x) = (x + q)(x - 2)(x - 3) + 2R(x) = (x + q)(x - 2)(x - 3) + 2(cx + d).\\]Comparing the coefficients of $x^2,$ we get $a = q - 5.$  Hence, $p = q.$\n\nComparing the coefficients of $x$ in both equations, we get\n\\begin{align*}\nb &= c - 5p + 4, \\\\\nb &= 2c - 5p + 6.\n\\end{align*}Subtracting these equations, we get $c + 2 = 0,$ so $c = -2.$\n\nComparing the constant coefficients in the first equation, we get $5 = 4p + d.$  Therefore,\n\\[P(5) = (5 + p)(4)(1) - 10 + d = 10 + 4p + d = \\boxed{15}.\\]"
+}

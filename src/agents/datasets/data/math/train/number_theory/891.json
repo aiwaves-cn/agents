@@ -1,0 +1,6 @@
+{
+    "problem": "Karlanna places 600 marbles into $m$ total boxes such that each box contains an equal number of marbles.  There is more than one box, and each box contains more than one marble.  For how many values of $m$ can this be done?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If the number of marbles in each box is $n$, then $mn = 600$, so $m$ and $n$ are both divisors of 600. $$ 600 = 2^3 \\cdot 3^1 \\cdot 5^2 \\qquad \\Rightarrow \\qquad t(600) = (3 + 1)(1 + 1)(2 + 1) = 24. $$However, $m > 1$ and $n > 1$, so $m$ can be neither 1 nor 600.  This leaves $24 - 2 = \\boxed{22}$ possible values for $m$."
+}

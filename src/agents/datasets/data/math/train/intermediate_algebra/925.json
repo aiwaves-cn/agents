@@ -1,0 +1,6 @@
+{
+    "problem": "Find all solutions $x$ (real and otherwise) to the equation\n\\[x^4+64=0.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor $x^4+64$ as a difference of squares:\n\\begin{align*}\nx^4+64 &= (x^2)^2 - (8i)^2 \\\\\n&= (x^2-8i)(x^2+8i).\n\\end{align*}Thus, the solutions are the square roots of $8i$ and $-8i$.\n\nThe square roots of $i$ are $\\pm\\left(\\frac{\\sqrt 2}2+\\frac{\\sqrt 2}2i\\right)$. Thus, the square roots of $8i$ are $\\pm\\sqrt 8\\left(\\frac{\\sqrt 2}2+\\frac{\\sqrt 2}2i\\right) = \\pm(2+2i)$, and the square roots of $-8i$ are $\\pm\\sqrt{-8}\\left(\\frac{\\sqrt 2}2+\\frac{\\sqrt 2}2i\\right) = \\pm(2i-2)$.\n\nTherefore, the solutions of the original equation are $x=\\boxed{2+2i,\\,-2-2i,\\,-2+2i,\\,2-2i}$."
+}

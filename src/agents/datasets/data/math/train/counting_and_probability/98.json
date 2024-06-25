@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to put 5 balls in 2 boxes if the balls are not distinguishable but the boxes are?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since the balls are indistinguishable, we need only count the number of balls in the distinguishable boxes.  We can put 5, 4, 3, 2, 1, or 0 balls in Box 1 (and the rest go in Box 2).  So there are $\\boxed{6}$ different arrangements."
+}

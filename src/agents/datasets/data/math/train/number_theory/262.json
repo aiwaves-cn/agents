@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive three-digit integers with a $5$ in the units place are divisible by $15$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Odd multiples of 5 have a 5 in the units place, while even multiples of 5 have a 0 in the units place. Multiples of 15 are multiples of 5, so we look at how many three-digit multiples of 15 are odd to find how many have a 5 in the units place. The three-digit multiples of 15 range from 105 to 990, or $15\\times7$ to $15\\times 66$. So there are $66-7+1=60$ three-digit multiples of 15. Half of them will be odd, so there are 30 odd, three-digit multiples of 15. There are $\\boxed{30}$ positive, three-digit integers with a 5 in the units place that are divisible by 15."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $a = 2,$ $b = 3,$ and $c = 4.$  Find $3 \\angle A + 2 \\angle B,$ in degrees.\n\nNote: $a$ is the side length opposite $\\angle A,$ etc.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "By the Law of Cosines,\n\\[\\cos A = \\frac{b^2 + c^2 - a^2}{2bc} = \\frac{3^2 + 4^2 - 2^2}{2 \\cdot 3 \\cdot 4} = \\frac{7}{8},\\]and\n\\[\\cos B = \\frac{a^2 + c^2 - b^2}{2ac} = \\frac{2^2 + 4^2 - 3^2}{2 \\cdot 2 \\cdot 4} = \\frac{11}{16}.\\]Then\n\\[\\cos 3A = 4 \\cos^3 A - 3 \\cos A = 4 \\left( \\frac{7}{8} \\right)^3 - 3 \\cdot \\frac{7}{8} = \\frac{7}{128},\\]and\n\\[\\cos 2B = 2 \\cos^2 B - 1 = 2 \\left( \\frac{11}{16} \\right)^2 - 1 = -\\frac{7}{128}.\\]Since $\\cos 3A + \\cos 2B = 0,$ either $3A + 2B$ is an odd multiple of $180^\\circ,$ or $3A - 2B$ is an odd multiple of $180^\\circ.$\n\nSince $\\cos A$ and $\\cos B$ are positive, both $A$ and $B$ are acute.  Furthermore, $\\cos 3A$ is positive, so $3A < 90^\\circ.$  Hence,\n\\[-180^\\circ < 3A - 2B < 90^\\circ,\\]which means $3A - 2B$ cannot be an odd multiple of $180^\\circ.$  Therefore, $3A + 2B$ must be an odd multiple of $180^\\circ.$  But\n\\[3A + 2B < 90^\\circ + 180^\\circ = 270^\\circ,\\]which means $3A + 2B = \\boxed{180^\\circ}.$"
+}

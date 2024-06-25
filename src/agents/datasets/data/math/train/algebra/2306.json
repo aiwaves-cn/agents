@@ -1,0 +1,6 @@
+{
+    "problem": "An engineer invested $\\$10,\\!000$ in a six-month savings certificate that paid a simple annual interest rate of $12\\%$. After six months, she invested the total value of her investment in another six-month certificate. After six more months, the investment was worth $\\$11,\\!130$. If the annual interest rate of the second certificate is $r\\%,$ then what is $r?$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "For the first six months, the (simple) interest rate is $12/2 = 6$ percent.  Therefore, the investment grows to $10000 \\cdot 1.06 = 10600$.\n\nLet the annual interest rate of the second certificate be $r$ percent.  Then the interest rate for six months is $r/2$, so the investment grows to $10600 \\cdot \\left( 1 + \\frac{r/2}{100} \\right)$.  Therefore, \\[10600 \\cdot \\left( 1 + \\frac{r/2}{100} \\right) = 11130.\\] Then \\[1 + \\frac{r/2}{100} = \\frac{11130}{10600} = 1.05,\\] so $r/200 = 0.05$, which means $r = \\boxed{10}$."
+}

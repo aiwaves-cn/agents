@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of triangle $ABC$ below.\n\n\n[asy]\n\nunitsize(1inch);\n\npair P,Q,R;\n\nP = (0,0);\n\nQ= (sqrt(3),0);\n\nR = (0,1);\n\ndraw (P--Q--R--P,linewidth(0.9));\n\ndraw(rightanglemark(Q,P,R,3));\n\nlabel(\"$A$\",P,S);\n\nlabel(\"$B$\",Q,S);\n\nlabel(\"$C$\",R,N);\n\nlabel(\"$6$\",R/2,W);\n\nlabel(\"$30^\\circ$\",(1.25,0),N);\n\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since $ABC$ is a 30-60-90 triangle, we have $AB = AC\\sqrt{3} = 6\\sqrt{3}$, and  \\[[ABC] = \\frac{(AB)(AC)}{2} = \\frac{(6)(6\\sqrt{3})}{2} = \\frac{36\\sqrt{3}}{2} = \\boxed{18\\sqrt{3}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the integer roots of\n\\[x^3 - 3x^2 - 13x + 15 = 0.\\]Enter all the integer roots, separated by commas.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "By the Integer Root Theorem, the possible integer roots are all the divisors of 15 (including negative divisors), which are $-15,$ $-5,$ $-3,$ $-1,$ $1,$ $3,$ $5,$ and $15.$  Checking, we find that the only integer roots are $\\boxed{-3,1,5}.$"
+}

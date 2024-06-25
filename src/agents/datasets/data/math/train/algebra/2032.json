@@ -1,0 +1,6 @@
+{
+    "problem": "There are 3 complex numbers $a+bi$, $c+di$, and $e+fi$. If $b=3$, $e=-a-c$, and the sum of the numbers is $2i$, find $d+f$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We know that $a+bi+c+di+e+fi=2i$. Thus, the real parts add up to 0 and the imaginary parts add up to 2. We then have  \\begin{align*}\na+c+e&=0\\\\\nb+d+f&=2\\\\\n\\end{align*} We know that $b=3$, therefore $d+f=\\boxed{-1}$"
+}

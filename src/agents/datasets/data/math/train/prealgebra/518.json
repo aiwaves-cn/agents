@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, what is the value of $x$? [asy]\nsize(120);\ndraw(Circle((0,0),1));\ndraw((0,0)--(.5,sqrt(3)/2));\ndraw((0,0)--(sqrt(3)/2,.5));\ndraw((0,0)--(sqrt(3)/2,-.5));\ndraw((0,0)--(-1,0));\nlabel(\"$4x^\\circ$\",(0,0),NNW); label(\"$5x^\\circ$\",(0,0),SSW);\nlabel(\"$2x^\\circ$\",(.3,0));label(\"$x^\\circ$\",(.3,.3));\n\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "The sum of the angles around any point is $360^\\circ$. Therefore, $5x^\\circ+4x^\\circ+x^\\circ+2x^\\circ=360^\\circ$ or $12x = 360$ or $x=\\boxed{30}$."
+}

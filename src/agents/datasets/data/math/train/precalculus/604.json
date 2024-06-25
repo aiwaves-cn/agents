@@ -1,0 +1,6 @@
+{
+    "problem": "It can be shown that for any positive integer $n,$\n\\[\\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}^n = \\begin{pmatrix} F_{n + 1} & F_n \\\\ F_n & F_{n - 1} \\end{pmatrix},\\]where $F_n$ denotes the $n$th Fibonacci number.\n\nCompute $F_{784} F_{786} - F_{785}^2.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Since $\\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}^n = \\begin{pmatrix} F_{n + 1} & F_n \\\\ F_n & F_{n - 1} \\end{pmatrix},$\n\\[\\det \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}^n = \\det \\begin{pmatrix} F_{n + 1} & F_n \\\\ F_n & F_{n - 1} \\end{pmatrix}.\\]Now,\n\\[\\det \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}^n = \\left( \\det \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix} \\right)^n = (-1)^n,\\]and\n\\[\\det \\begin{pmatrix} F_{n + 1} & F_n \\\\ F_n & F_{n - 1} \\end{pmatrix} = F_{n + 1} F_{n - 1} - F_n^2,\\]so\n\\[F_{n + 1} F_{n - 1} - F_n^2 = (-1)^n.\\]In particular, taking $n = 785,$ we get $F_{784} F_{786} - F_{785}^2 = \\boxed{-1}.$"
+}

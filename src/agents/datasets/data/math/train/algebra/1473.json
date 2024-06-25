@@ -1,0 +1,6 @@
+{
+    "problem": "Find $p$ if $12^3=\\frac{9^2}3\\cdot2^{12p}$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let's write the entire equation in smaller bases.  We have $${(2^2\\cdot3)}^3=\\frac{(3^2)^2}3\\cdot2^{12p}$$Then, using laws of exponents, we have $$2^6\\cdot3^3=\\frac{3^4}3\\cdot2^{12p},$$which means $$2^6\\cdot 3^3 = 3^3 \\cdot 2^{12p}.$$Dividing both sides by $3^3$, we have $$2^6=2^{12p}.$$Therefore, we have $12p = 6$, which means $p = \\boxed{\\frac{1}{2}}$."
+}

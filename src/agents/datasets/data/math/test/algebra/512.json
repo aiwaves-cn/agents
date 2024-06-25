@@ -1,0 +1,6 @@
+{
+    "problem": "What is the minimum value of $a^2+6a-7$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We begin by completing the square for $a^2 + 6a - 7.$ We know that the binomial to be squared will be in terms of $a+b$ because the exponent for $a^2$ is 1.\n\nBy expanding $(a+b)^2$, we get $a^2+2ba+b^2$. We get that $2ba=6a$, so $b=3$, and it follows that $(a+3)^2=a^2+6a+9$.\n\nTherefore, $a^2+6a-7=a^2+6a+9-16=(a+3)^2-16$. Since the square of a real number is at least zero, the minimum value of $a^2+6a-7$ is $0-16=\\boxed{-16}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A line passes through the distinct vectors $\\mathbf{a}$ and $\\mathbf{b}.$  Then for a certain value of $k,$ the vector\n\\[k \\mathbf{a} + \\frac{3}{4} \\mathbf{b}\\]must also lie on the line.  Find $k.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The line passing through $\\mathbf{a}$ and $\\mathbf{b}$ can be parameterized by\n\\[\\mathbf{a} + t (\\mathbf{b} - \\mathbf{a}).\\]Taking $t = \\frac{3}{4},$ we get\n\\[\\mathbf{a} + \\frac{3}{4} (\\mathbf{b} - \\mathbf{a}) = \\frac{1}{4} \\mathbf{a} + \\frac{3}{4} \\mathbf{b}.\\]Thus, $k = \\boxed{\\frac{1}{4}}.$"
+}

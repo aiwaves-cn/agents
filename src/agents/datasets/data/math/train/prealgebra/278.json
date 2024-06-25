@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways can change be made for a quarter using standard U.S. coins?  (Don't count \"1 quarter\" as making change for a quarter.)",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let's break the $25$ cents down into five $5$-cent blocks. One nickel or five pennies are the two ways we can fill a $5$-cent block. One dime fills two $5$-cent blocks. Now we consider the possible cases based on how many dimes we use.\n\n$\\emph{Two dimes:}$ Let's say we have two dimes, which fill up four out of the five $5$-cent blocks. We only have to fill one more block, and there are two ways to do that (with a nickel or with pennies). This case yields $\\emph{2}$ possible ways.\n\n$\\emph{One dime:}$ If we use one dime, we fill up two out of the five blocks. Now we have to use nickels and/or pennies to fill up the remaining three blocks. The ways we can do that are to use no nickels, one nickel, two nickels, or three nickels and make up the rest of the amount with pennies. This case yields $\\emph{4}$ possible ways.\n\n$\\emph{No dimes:}$ If we use no dimes, we have to use nickels and/or pennies to fill up five blocks. We can use $0, 1, 2, 3, 4, \\text{ or } 5$ nickels and make up the rest of the amount with pennies. This case yields $\\emph{6}$ possible ways.\n\nSo the total number of ways is $2+4+6=\\boxed{12}$ ways."
+}

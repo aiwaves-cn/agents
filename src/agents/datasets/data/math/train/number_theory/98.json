@@ -1,0 +1,6 @@
+{
+    "problem": "For all composite integers $n$, what is the largest integer that always divides into the difference between $n$ and the cube of $n$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Notice that $n^3 - n$ factors as $n^3 - n = n(n^2 - 1) = (n-1)n(n+1)$. We observe that among any three consecutive integers, at least one must be divisible by $2$ and one must be divisible by $3$. Thus, we know that $6$ must always divide into $n^3 - n$. Indeed, this is the largest such integer; for $n = 6$, then $n^3 - n = 210 = 6 \\cdot 5 \\cdot 7$, and for $n = 33$, then $n^3 - n = 32 \\cdot 33 \\cdot 34 = 6 \\cdot 32 \\cdot 11 \\cdot 17$, whose greatest common divisor is $\\boxed{6}$."
+}

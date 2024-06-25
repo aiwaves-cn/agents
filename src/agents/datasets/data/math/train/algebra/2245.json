@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify completely: $$\\sqrt[3]{30^3+40^3+50^3}$$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "First, notice that all three integers have a common factor of 10.  We can remove this factor from the cube root as shown: \\begin{align*}\n\\sqrt[3]{10^3\\cdot3^3+10^3\\cdot4^3+10^3\\cdot5^3}&=\\sqrt[3]{10^3(3^3+4^3+5^3)}\\\\\n&=10\\sqrt[3]{3^3+4^3+5^3}.\n\\end{align*} Now, evaluate the expression under the cube root: $$10\\sqrt[3]{3^3+4^3+5^3}=10\\sqrt[3]{27+64+125}=10\\sqrt[3]{216}.$$ Since $216=6^3$, this expression simplifies to: $$10\\sqrt[3]{6^3}=\\boxed{60}.$$"
+}

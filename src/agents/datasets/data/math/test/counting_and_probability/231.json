@@ -1,0 +1,6 @@
+{
+    "problem": "Alex has four books of different sizes which he wishes to place on a bookshelf. Unfortunately, the bookshelf has a conspicuous hole at one end through which only the smallest book can fall. If he wishes for all his books to stay stationary, in how many ways can he arrange his books?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The smallest book cannot be placed at one end, so there are three positions which it can occupy. The other books can each be placed in any of the three remaining positions, giving $3!$ arrangements.\n\nTherefore, the answer is $3\\times3!=\\boxed{18\\text{ ways.}}$"
+}

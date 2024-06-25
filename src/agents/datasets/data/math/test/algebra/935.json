@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the circle defined by the equation $x^2 +6x +y^2 +8y =0$.  Find the sum of the coordinates of the center of the circle.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We complete the square for the equation by observing that the given equation is equivalent to \\[\n(x^2+6x+9)+(y^2+8y+16)=25,\n\\] so the equation for the circle becomes \\[\n(x+3)^2 +(y+4)^2 =5^2.\n\\]  Hence, the center is $(-3,-4)$ which implies that the answer is $-3-4 =\\boxed{-7}$."
+}

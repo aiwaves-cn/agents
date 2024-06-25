@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_1, a_2, \\ldots$ be a sequence with the following properties.\n\n(i) $a_1 = 1$, and\n\n(ii) $a_{2n}=n\\cdot a_n$ for any positive integer $n$.\n\nWhat is the value of $a_{2^{100}}$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Note that\n\n\\begin{align*}\na_{2^1} &= a_2 = a_{2\\cdot1} = 1\\cdot a_1 = 2^0\\cdot 2^0 = 2^0,\\\\\na_{2^2} &= a_4 = a_{2\\cdot2} = 2\\cdot a_2 = 2^1\\cdot 2^0 = 2^1,\\\\\na_{2^3} &= a_8 = a_{2\\cdot4} = 4\\cdot a_4 = 2^2 \\cdot 2^1 = 2^{1+2},\\\\\na_{2^4} &= a_{16} = a_{2\\cdot8} = 8\\cdot a_8 = 2^3\\cdot 2^{1+2} = 2^{1+2+3},\n\\end{align*}and, in general, $a_{2^n} = 2^{1+2+\\cdots+(n-1)}$.  Because $$1+2+3+\\cdots+(n-1) =\n\\frac{1}{2}n(n-1),$$we have $a_{2^{100}} = 2^{(100)(99)/2} = \\boxed{2^{4950}}$."
+}

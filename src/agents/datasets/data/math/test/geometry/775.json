@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure below, side $AE$ of rectangle $ABDE$ is parallel to the $x$-axis, and side $BD$ contains the point $C$. The vertices of triangle $ACE$ are $A(1, 1)$, $C(3, 3)$ and $E(4, 1)$. What is the ratio of the area of triangle $ACE$ to the area of rectangle $ABDE$? Express your answer as a common fraction.\n\n[asy]unitsize(1inch);\ndraw((0,0)--(4.5,0),Arrow);\ndraw((0,0)--(0,3.5),Arrow);\ndraw((-0.1,1)--(0.1,1));\ndraw((-0.1,2)--(0.1,2));\ndraw((-0.1,3)--(0.1,3));\ndraw((1,0.1)--(1,-0.1));\ndraw((2,0.1)--(2,-0.1));\ndraw((3,0.1)--(3,-0.1));\ndraw((4,0.1)--(4,-0.1));\ndraw((1,1)--(1,3)--(4,3)--(4,1)--cycle);\ndraw((1,1)--(3,3)--(4,1));\nfill((1,1)--(3,3)--(1,3)--cycle,gray(0.7));\nfill((3,3)--(4,3)--(4,1)--cycle,gray(0.7));\nlabel(\"$A$\",(1,1),SW);\nlabel(\"$B$\",(1,3),NW);\nlabel(\"$C$\",(3,3),N);\nlabel(\"$D$\",(4,3),NE);\nlabel(\"$E$\",(4,1),SE);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The area of the triangle can be expressed as $\\frac{AE \\cdot h}{2}$, where $h$ is the height of the triangle from C to AE.  However, the rectangle's area can be expressed as AE$\\cdot h$, since AB $=$ DE $= h$, thus, the ratio of the triangle's area to the rectangle's is $\\boxed{\\frac{1}{2}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence of ten $0$s and/or $1$s is randomly generated. If the probability that the sequence does not contain two consecutive $1$s can be written in the form $\\dfrac{m}{n}$, where $m,n$ are relatively prime positive integers, find $m+n$.\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let $a_n$ denote the number of sequences of length $n$ that do not contain consecutive $1$s. A sequence of length $n$ must either end in a $0$ or a $1$. If the string of length $n$ ends in a $0$, this string could have been formed by appending a $0$ to any sequence of length $n-1$, of which there are $a_{n-1}$ such strings. If the string of length $n$ ends in a $1$, this string could have been formed by appending a $01$ (to avoid consecutive $1$s) to any sequence of length $n-2$, of which there are $a_{n-2}$ such strings. Thus, we have the recursion\\[a_n = a_{n-1} + a_{n-2}\\]Solving for initial conditions, we find $a_1 = 2, a_2 = 3$. Thus we have the Fibonacci sequence with shifted indices; indeed $a_n = F_{n+2}$, so $a_{10} = F_{12} = 144$. The probability is $\\frac{144}{2^{10}} = \\frac{9}{64}$, and $m+n=\\boxed{73}$."
+}

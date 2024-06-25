@@ -1,0 +1,6 @@
+{
+    "problem": "Jessica works at a bakery, and every day she makes 30 pie crusts that each use up $\\frac16$ cup of flour. One day, she decides that she instead wants to make 20 larger pie crusts using the same total amount of flour. How many cups of flour will go into each of the new crusts? Express your answer in simplest fractional form.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let $p$ be the number of pie crusts, and let $f$ be the amount of flour per crust. Because the total amount of flour needs to remain constant, we can express the relationship between pie crusts as $p\\cdot f = c$, where $c$ is a constant value.\n\nSince we know that 30 pie crusts each use up $\\frac16$ cup of flour, $30\\left(\\frac16\\right)=c$ or $c=5$. When $p=20$, the equation becomes $20\\cdot f=5$, or $f=\\frac5{20}=\\boxed{\\frac14}$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many 3-letter \"words\" can be formed from the standard 26-letter alphabet, if the first letter must be a vowel (A, E, I, O, or U)? (We aren't necessarily talking about English words; something like EQX is perfectly valid here.)",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The first letter can be one of the 5 vowels, and each of the next two letters can be one of the 26 letters. There are $5\\times 26\\times 26=\\boxed{3380}$ such words."
+}

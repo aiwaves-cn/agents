@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $h$ such that the following equation in base $h$ is true: $$\\begin{array}{c@{}c@{}c@{}c@{}c@{}c} &&6&4&5&3_h\\\\ &+&7&5&1&2_h\\\\ \\cline{2-6} &1&6&1&6&5_h.\\\\ \\end{array}$$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The two rightmost columns do not result in any carrying; however, in the third column there is a residue of $1$. Subtracting $1$ from the sum of $4$ and $5$, we see that $h$ is $\\boxed{8}$."
+}

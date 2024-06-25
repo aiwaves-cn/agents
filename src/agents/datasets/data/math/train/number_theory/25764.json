@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive divisors of $150$ are not divisible by 5?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First, we find $150=2\\cdot 3 \\cdot 5^2.$ The prime factorization of a divisor of 150 must take the form $2^m3^n5^p$ for nonnegative integers $m\\leq 1$, $n\\leq 1$, and $p\\leq 2$. The requirement that the divisor is not divisible by 5 means that we must have $p=0$. Therefore, there are $2$ possibilities for $m$ (namely, 0 or 1) and the same for $n$ for a total of $2\\cdot 2=\\boxed{4}$ such factors."
+}

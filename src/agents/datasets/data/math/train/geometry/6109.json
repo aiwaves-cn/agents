@@ -1,0 +1,6 @@
+{
+    "problem": "A right circular cone has base radius $r$ and height $h$. The cone lies on its side on a flat table. As the cone rolls on the surface of the table without slipping, the point where the cone's base meets the table traces a circular arc centered at the point where the vertex touches the table. The cone first returns to its original position on the table after making $17$ complete rotations. The value of $h/r$ can be written in the form $m\\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m + n$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The path is a circle with radius equal to the slant height of the cone, which is $\\sqrt {r^{2} + h^{2}}$. Thus, the length of the path is $2\\pi\\sqrt {r^{2} + h^{2}}$.\nAlso, the length of the path is 17 times the circumference of the base, which is $34r\\pi$. Setting these equal gives $\\sqrt {r^{2} + h^{2}} = 17r$, or $h^{2} = 288r^{2}$. Thus, $\\dfrac{h^{2}}{r^{2}} = 288$, and $\\dfrac{h}{r} = 12\\sqrt {2}$, giving an answer of $12 + 2 = \\boxed{14}$."
+}

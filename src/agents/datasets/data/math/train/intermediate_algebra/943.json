@@ -1,0 +1,6 @@
+{
+    "problem": "Let $ a$, $ b$, $ c$ be nonzero real numbers such that $ a+b+c=0$ and $ a^3+b^3+c^3=a^5+b^5+c^5$. Find the value of\n$ a^2+b^2+c^2$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the factorization\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc),\\]we know that $a^3 + b^3 + c^3 = 3abc.$\n\nSince $a + b + c = 0,$ $c = -a - b,$ so\n\\begin{align*}\na^5 + b^5 + c^5 &= a^5 + b^5 - (a + b)^5 \\\\\n&= -5a^4 b - 10a^3 b^2 - 10a^2 b^3 - 5ab^4 \\\\\n&= -5ab(a^3 + 2a^2 b + 2ab^2 + b^3) \\\\\n&= -5ab[(a^3 + b^3) + (2a^2 b + 2ab^2)] \\\\\n&= -5ab[(a + b)(a^2 - ab + b^2) + 2ab(a + b)] \\\\\n&= -5ab(a + b)(a^2 + ab + b^2) \\\\\n&= 5abc(a^2 + ab + b^2),\n\\end{align*}so\n\\[3abc = 5abc(a^2 + ab + b^2).\\]Since $a,$ $b,$ $c$ are all nonzero, we can write\n\\[a^2 + ab + b^2 = \\frac{3}{5}.\\]Hence,\n\\begin{align*}\na^2 + b^2 + c^2 &= a^2 + b^2 + (a + b)^2 \\\\\n&= a^2 + b^2 + a^2 + 2ab + b^2 \\\\\n&= 2a^2 + 2ab + 2b^2 \\\\\n&= 2(a^2 + ab + b^2) = \\boxed{\\frac{6}{5}}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[\\tan x = \\frac{2ab}{a^2 - b^2},\\]where $a > b > 0$ and $0^\\circ < x < 90^\\circ,$ then find $\\sin x$ in terms of $a$ and $b.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can construct a right triangle with legs $a^2 - b^2$ and $2ab.$  Then by Pythagoras, the hypotenuse is\n\\[\\sqrt{(a^2 - b^2)^2 + (2ab)^2} = \\sqrt{a^4 + 2a^2 b^2 + b^4} = a^2 + b^2.\\][asy]\nunitsize(1.5 cm);\n\npair A, B, C;\n\nA = (2,1.8);\nB = (0,0);\nC = (2,0);\n\ndraw(A--B--C--cycle);\ndraw(rightanglemark(A,C,B,5));\n\nlabel(\"$x$\", B + (0.5,0.2));\nlabel(\"$a^2 - b^2$\", (B + C)/2, S);\nlabel(\"$2ab$\", (A + C)/2, E);\nlabel(\"$a^2 + b^2$\", (A + B)/2, NW);\n[/asy]\n\nHence,\n\\[\\sin x = \\boxed{\\frac{2ab}{a^2 + b^2}}.\\]"
+}

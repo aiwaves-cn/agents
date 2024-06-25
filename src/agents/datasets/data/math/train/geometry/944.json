@@ -1,0 +1,6 @@
+{
+    "problem": "In trapezoid $ABCD$, the parallel sides $AB$ and $CD$ have lengths of 8 and 20 units, respectively, and the altitude is 12 units. Points $E$ and $F$ are the midpoints of sides $AD$ and $BC$, respectively. What is the area of quadrilateral $EFCD$ in square units?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since $E$ and $F$ are midpoints of the legs of the trapezoid, quadrilateral $EFCD$ is a trapezoid with half the altitude of the original trapezoid (the altitude of trapezoid $EFCD$ is $12/2 = 6$). The length of base $CD$ is still $20$, but now we have to find the length of base $EF$. Since $EF$ connects the midpoints of the legs of the trapezoid, its length is also the average of the lengths of $AB$ and $CD$. Thus, $EF$ has length $\\frac{8+20}{2} = 14$. Finally, we can find the area of the trapezoid with the formula $\\text{Area} = a \\left(\\frac{b_1+b_2}{2}\\right)$ where $a$ is the altitude and $b_1$ and $b_2$ are the lengths of the bases. The area of trapezoid $EFCD $ is $6 \\left(\\frac{14+20}{2}\\right)=6 \\cdot 17 = \\boxed{102}$ square units."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The square of an integer is 182 greater than the integer itself. What is the sum of all integers for which this is true?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let our integer be $x$.  Then we have that $x^2 = 182 + x$, or $x^2 - x - 182 = 0$.  The sum of the roots of this equation is just $-(-1) = \\boxed{1}$.  Note that we are given that one solution is an integer, and so the other one must be as well since they add to 1.\n\nNote that we can factor $x^2 - x - 182 = 0$ as $(x - 14)(x + 13) = 0$.  So the integers that work are 14 and $-13$, and their sum is $14 + (-13) = 1,$ as expected."
+}

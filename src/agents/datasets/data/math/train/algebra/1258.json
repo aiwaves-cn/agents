@@ -1,0 +1,6 @@
+{
+    "problem": "In the line $4x+7y+c=0$, the sum of the $x$- and $y$- intercepts is $22$. Find $c$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The $x$-intercept occurs when $y=0$. Plugging in we have $4x+7(0)+c=0$, so $4x=-c$ and $x=-\\frac{c}{4}$. The $y$-intercept occurs when $x=0$, so we plug in to find $4(0)+7y+c=0$, so $7y=-c$ and $y=-\\frac{c}{7}$. We are given that $\\left(-\\frac{c}{4}\\right)+\\left(-\\frac{c}{7}\\right)=22$. We solve for $c$ by multiplying through by a common denominator, which is $28$. This gives $7(-c)+4(-c)=22(28)$, so $-11c=22(28)$. Cancelling a factor of $11$ we have $-c=2(28)=56$, so $c=\\boxed{-56}$."
+}

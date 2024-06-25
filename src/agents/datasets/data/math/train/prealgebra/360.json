@@ -1,0 +1,6 @@
+{
+    "problem": "A number $x$ is equal to $7\\cdot24\\cdot48$. What is the smallest positive integer $y$ such that the product $xy$ is a perfect cube?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Begin by factoring $24$ and $48$. We have $24=2^3\\cdot3$ and $48=2^4\\cdot3$, so $$7\\cdot24\\cdot48=7\\cdot(2^3\\cdot3)\\cdot(2^4\\cdot3)=2^7\\cdot3^2\\cdot7.$$For a number to be a perfect cube, every prime factor must have an exponent that is a multiple of $3$. The next multiple of $3$ bigger than $7$ is $9$, so we need a $2^2$ to reach $9$ in the exponent. We need one more factor of $3$ to reach $3^3$. We need another $7^2$ to reach $3$ in the exponent of $7$. This gives a smallest number of $2^2\\cdot3\\cdot7^2=\\boxed{588}$."
+}

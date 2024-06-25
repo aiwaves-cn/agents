@@ -1,0 +1,6 @@
+{
+    "problem": "How many values of $x$ with $0^\\circ \\le x < 360^\\circ$ satisfy $\\sin x = -0.73$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "[asy]\npair A,C,P,O,D;\ndraw((0,-1.2)--(0,1.2),p=black+1.2bp,Arrows(0.15cm));\ndraw((-1.2,0)--(1.2,0),p=black+1.2bp,Arrows(0.15cm));\nA = (1,0);\nO= (0,0);\nlabel(\"$x$\",(1.2,0),SE);\nlabel(\"$y$\",(0,1.2),NE);\n\nP = rotate(150)*A;\nD = foot(P,A,-A);\ndraw(Circle(O,1));\nlabel(\"$O$\",O,SE);\n\ndraw((-1,-0.73)--(1,-0.73),red);\n[/asy]\n\nFor each point on the unit circle with $y$-coordinate equal to $-0.73$, there is a corresponding angle whose sine is $-0.73$.  There are two such points; these are the intersections of the unit circle and the line $y=-0.73$, shown in red above.  Therefore, there are $\\boxed{2}$ values of $x$ with $0^\\circ \\le x < 360^\\circ$ such that $\\sin x = -0.73$."
+}

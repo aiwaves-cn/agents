@@ -1,0 +1,6 @@
+{
+    "problem": "How many rectangles are in this figure? Each angle is a right angle.\n\n[asy]\nunitsize(0.06inch);\ndraw((0,0)--(0,-10)--(10,-10)--(10,0)--cycle);\ndraw((5,0)--(5,-10));\ndraw((0,-5)--(10,-5));\ndraw((5,-5)--(15,-5)--(15,-15)--(5,-15)--cycle);\ndraw((10,-5)--(10,-15));\ndraw((5,-10)--(15,-10));\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We consider the separate cases by the dimensions of each type of rectangle. There are 7 of the $1 \\times 1$ squares. There are 4 vertical $1 \\times 2$ rectangles, and 4 horizontal $1 \\times 2$ rectangles. There are also 1 each of vertical and horizontal $1 \\times 3$ rectangles. And, finally, there are the two $2 \\times 2$ squares. In total, there are $7 + 4 + 4 + 1 + 1 + 2 = \\boxed{19}$ rectangles."
+}

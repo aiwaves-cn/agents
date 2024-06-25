@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product of $6_8 \\cdot 7_8.$ Express your answer in base $8.$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Multiplying, we see that $6_8 \\cdot 7_8 = 42_{10} = 52_8.$ Written out, $$\\begin{array}{@{}c@{\\;}c@{}c@{}c} && & 6_8 \\\\ & \\times & & 7_8 \\\\ \\cline{2-4} & & 5 & 2_8 \\\\ \\end{array} $$ Thus, the answer is $\\boxed{52_8}.$"
+}

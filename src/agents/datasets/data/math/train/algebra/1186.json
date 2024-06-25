@@ -1,0 +1,6 @@
+{
+    "problem": "$x = {1+\\frac{\\sqrt{2}}{1+\\frac{\\sqrt{2}}{1+...}}}$. Find $\\frac{1}{(x+1)(x-2)}$. When your answer is in the form $\\frac{A+\\sqrt{B}}{C}$, where $A$, $B$, and $C$ are integers, and $B$ is not divisible by the square of a prime, what is $|A|+|B|+|C|$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We can tell that $x-1=\\frac{\\sqrt{2}}{1+\\frac{\\sqrt{2}}{1+...}}$, and then $\\frac{\\sqrt{2}}{x-1}=1+\\frac{\\sqrt{2}}{1+\\frac{\\sqrt{2}}{1+...}}=x$. Solving for $x$, we find $\\sqrt{2}=x(x-1)$, which means $x^{2}-x=\\sqrt{2}$. Simplify the denominator of $\\frac{1}{(x+1)(x-2)}$ to obtain $\\frac{1}{x^2-x-2}$. Substituting for $x^2-x$, we get $\\frac{1}{(x+1)(x-2)}=\\frac{1}{\\sqrt{2}-2}$. To rationalize the denominator, we multiply by the conjugate of $\\sqrt{2}-2$. We have $\\frac{1}{\\sqrt{2}-2} = \\frac{1\\cdot(\\sqrt{2}+2)}{(\\sqrt{2}-2)\\cdot(\\sqrt{2}+2)} = \\frac{\\sqrt{2}+2}{2-4} = \\frac{2+\\sqrt{2}}{-2}.$ Here, we have $A=2, B=2$, and $C=-2$. So, taking the sum of the absolute values of $A$, $B$, and $C$ yields $\\boxed{6}$."
+}

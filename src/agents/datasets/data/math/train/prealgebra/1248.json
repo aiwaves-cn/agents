@@ -1,0 +1,6 @@
+{
+    "problem": "An environmental agency needs to hire a number of new employees so that 85 of the new employees will be able to monitor water pollution, 73 of the new employees will be able to monitor air pollution, and exactly 27 of the new employees will be able to monitor both. (These 27 are included in the 85 and 73 mentioned above.) What is the minimum number of employees that need to be hired?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are $85+73=158$ jobs to be done.  $27$ people do two of the jobs, so that leaves $158 - 27\\cdot 2 = 158-54 = 104$ jobs remaining.  The remaining workers do one job each, so we need $27 + 104 = \\boxed{131}$ workers.\n\nWe also might construct the Venn Diagram below.  We start in the middle of the diagram, with the 27 workers who do both:\n\n[asy]\nlabel(\"Water\", (2,67));\nlabel(\"Air\", (80,67));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"27\", (44, 45));\nlabel(scale(0.8)*\"$85-27$\",(28,58));\nlabel(scale(0.8)*\"$73-27$\",(63,58));\n[/asy]\n\nThis gives us $27 + (73-27) + (85-27) = \\boxed{131}$ workers total."
+}

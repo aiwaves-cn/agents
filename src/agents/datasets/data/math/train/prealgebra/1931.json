@@ -1,0 +1,6 @@
+{
+    "problem": "There are 20 people in my club.  8 of them are left-handed.  15 of them like jazz music.  2 of them are right-handed and dislike jazz music.  How many club members are left-handed and like jazz music? Assume people are either left-handed or right-handed, but not both.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Let the number of lefty jazz lovers be $x$.  So $8-x$ lefties dislike jazz and $15-x$ jazz lovers are righties.  Since the number of righty jazz dislikers is 2 and the total number of members of the club is 20, we can add these four exclusive categories to get $x + (8 - x) + (15 - x) + 2 = 20$, so $x = \\boxed{5}$, which is the number of lefty jazz lovers."
+}

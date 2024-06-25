@@ -1,0 +1,6 @@
+{
+    "problem": "An ancient human tribe had a hierarchical system where there existed one chief with 2 supporting chiefs (supporting chief A and supporting chief B), each of whom had 2 equal, inferior officers. If the tribe at one point had 10 members, what is the number of different ways to choose the leadership of the tribe?  That is, in how many ways can we choose a chief, 2 supporting chiefs, and two inferior officers reporting to each supporting chief?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 10 choices for the chief.  For each choice, there are 9 ways to choose supporting chief A, then 8 ways to choose supporting chief B.  There are then $\\binom{7}{2}$ ways to choose the inferior officers for the supporting chief A and $\\binom{5}{2}$ ways to choose the inferior officers for the supporting chief B.  This gives us a total of $10 \\cdot 9 \\cdot 8 \\cdot \\binom{7}{2}\\cdot\\binom{5}{2} = \\boxed{151200}$ ways to form the leadership of the tribe."
+}

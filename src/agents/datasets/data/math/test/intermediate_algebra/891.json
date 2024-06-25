@@ -1,0 +1,6 @@
+{
+    "problem": "What is the minimum value of $\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[f(x) = |x - 1| + |2x - 1| + |3x - 1| + \\dots + |119x - 1|.\\]If $x \\le \\frac{1}{119},$ then\n\\[f(x) = -(x - 1) - (2x - 1) \\dotsm - (119x - 1).\\]If $\\frac{1}{m} \\le x \\le \\frac{1}{m - 1},$ for some positive integer $2 \\le m \\le 119,$ then\n\\[f(x) = -(x - 1) - (2x - 1) \\dotsm - ((m - 1) x - 1) + (mx - 1) + \\dots + (119x - 1).\\]If $x \\ge 1,$ then\n\\[f(x) = (x - 1) + (2x - 1) + \\dots + (119x - 1).\\]Thus, the graph is linear on the interval $x \\le \\frac{1}{119}$ with slope $-1 - 2 - \\dots - 119,$ linear on the interval $\\frac{1}{m} \\le x \\le \\frac{1}{m - 1}$ with slope\n\\[-1 - 2 - \\dots - (m - 1) + m + \\dots + 119,\\]and linear on the interval $x \\ge 1$ with slope\n\\[1 + 2 + \\dots + 119.\\]Note that\n\\begin{align*}\n-1 - 2 - \\dots - (m - 1) + m + \\dots + 119 &= -\\frac{(m - 1)m}{2} + \\frac{(m + 119)(120 - m)}{2} \\\\\n&= -m^2 + m + 7140 \\\\\n&= -(m + 84)(m - 85).\n\\end{align*}Thus, $f(x)$ is minimized on the interval $\\frac{1}{85} \\le x \\le \\frac{1}{84},$ where it is constant, and this constant is\n\\[(85 - 1) - (119 - 85 + 1) = \\boxed{49}.\\]"
+}

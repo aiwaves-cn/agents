@@ -1,0 +1,6 @@
+{
+    "problem": "If $a\\equiv 62\\pmod{99}$ and $b\\equiv 75\\pmod{99}$, then for what integer $n$ in the set $\\{1000,1001,1002,\\ldots,1097,1098\\}$ is it true that $$a-b\\equiv n\\pmod{99}~?$$",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We have \\begin{align*}\na-b &\\equiv 62-75 \\\\\n&\\equiv -13 \\\\\n&\\equiv -13+99 \\\\\n&\\equiv 86\\pmod{99}.\n\\end{align*}This is not the answer since we want to find $n$ with $1000\\leq n<1099$.  Therefore we should add copies of 99 until we get into this range.  Since 1000 is slightly more than $990=99\\cdot10$, we begin by adding 990. \\[86\\equiv 86+990\\equiv1076\\pmod{99}.\\]That is in our range, so $n=\\boxed{1076}$."
+}

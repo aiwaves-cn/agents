@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common factor of 180 and 168.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If a number $d$ divides into both $180$ and $168$, it must also divide into their difference. Thus, $d$ will be divisible by $180 - 168 = 12$. We notice that $12$ divides into both $180$ and $168$, so it follows that $\\boxed{12}$ must be the GCF of $180$ and $168$."
+}

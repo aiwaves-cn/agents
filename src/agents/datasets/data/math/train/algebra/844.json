@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $i^{-100}+i^{-99}+i^{-98}+\\cdots+i^{-1}+i^0+i^1+\\cdots+i^{99}+i^{100}$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Each group of 4 consecutive powers of $i$ adds to 0: $i + i^2 + i^3 + i^4 = i - 1 - i +1 = 0$, $i^5+i^6+i^7+i^8 = i^4(i+i^2+i^3+i^4) = 1(0) = 0$, and so on for positive powers of $i$. Similarly, we note that $i^{-4} = \\frac1{i^4} = \\frac11 = 1$. Then $i^{-4}+i^{-3}+i^{-2}+i^{-1} = 1+1\\cdot i+1\\cdot{-1} + 1\\cdot{-i} = 0$, $i^{-8}+i^{-7}+i^{-6}+i^{-5}=i^{-4}(i^{-4}+i^{-3}+i^{-2}+i^{-1}) = 0$, and so on for negative powers of $i$. Because 100 is divisible by 4, we group the positive powers of $i$ into 25 groups with zero sum. Similarly, we group the negative powers of $i$ into 25 groups with zero sum. Therefore, $$i^{-100}+i^{-99}+\\cdots+i^{99}+i^{100} = 25\\cdot0+i^0+25\\cdot0 = \\boxed{1}$$."
+}

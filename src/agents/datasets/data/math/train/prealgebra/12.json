@@ -1,0 +1,6 @@
+{
+    "problem": "Each person marked the table with an X on the day(s) he/she would not be able to attend a meeting. On which day can the most people attend a meeting?\n\n\\begin{tabular}{|l|c|c|c|c|c|}\n\\multicolumn{6}{c}{}\\\\\\hline\n&Mon&Tues&Wed&Thurs&Fri\\\\\\hline\nAnna&X&&X&&\\\\\\hline\nBill&&X&&X&X\\\\\\hline\nCarl&X&X&&X&X\\\\\\hline\n\\end{tabular}",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "On each day but Wednesday, only one person can attend a meeting. On Wednesday, two people can. Thus, the day on which the most people can attend a meeting is $\\boxed{\\text{Wednesday}}.$"
+}

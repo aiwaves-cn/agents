@@ -1,0 +1,6 @@
+{
+    "problem": "The number $n$ is a prime number between 20 and 30. If you divide $n$ by 8, the remainder is 5. What is the value of $n$?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We look at multiples of 8 greater than 15 and less than 25 (since adding 5 should make the number between 20 and 30). So the multiples of 8 that we consider are 16 and 24. Adding 5, we get 21 and 29. Only 29 is a prime number so $n=\\boxed{29}$.\n\nOR\n\nWhen we divide 20 by 8, we get a remainder of 4. That means 21 will have a remainder of 5. The next number with a remainder of 5 would be $21+8=29$. When we consider 21 and 29, $\\boxed{29}$ is the prime number."
+}

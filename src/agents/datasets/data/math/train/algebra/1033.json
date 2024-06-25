@@ -1,0 +1,6 @@
+{
+    "problem": "The roots of the equation $x^2+kx+5 = 0$ differ by $\\sqrt{61}$. Find the greatest possible value of $k$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "By the quadratic formula, the roots of the equation are  \\begin{align*}\n\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}&=\\frac{-k\\pm\\sqrt{k^2-4(5)(1)}}{2(1)}\\\\\n&=\\frac{-k\\pm\\sqrt{k^2-20}}{2}.\n\\end{align*} We want the difference of the roots, so we take the larger minus the smaller:  \\begin{align*}\n\\left(\\frac{-k+\\sqrt{k^2-20}}{2}\\right)-\\left(\\frac{-k-\\sqrt{k^2-20}}{2}\\right)&=\\frac{2\\sqrt{k^2-20}}{2}\\\\\n&=\\sqrt{k^2-20}.\n\\end{align*} We are given that this difference is equal to $\\sqrt{61}$, so we have \\begin{align*}\n\\sqrt{k^2-20}&=\\sqrt{61}\\quad\\Rightarrow\\\\\nk^2-20&=61\\quad\\Rightarrow\\\\\nk^2&=81\\quad\\Rightarrow\\\\\nk&=\\pm 9.\n\\end{align*} Thus the greatest possible value of $k$ is $\\boxed{9}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "$ABCD$ is a rectangle that is four times as long as it is wide. Point $E$ is the midpoint of $\\overline{BC}$. What percent of the rectangle is shaded?\n\n[asy]\ndraw( (0,0) -- (4,0) -- (4,1) -- (0,1) -- cycle);draw( (2,0) -- (0,1) ); draw( (4,0) -- (0,1));\nfill( (0,0) -- (0,1) -- (2,0) -- cycle, gray); fill( (0,1) -- (4,0) -- (4,1) -- cycle, gray);\nlabel(\"$A$\", (0,1) , NW); label(\"$B$\", (0,0) , SW); label(\"$C$\", (4,0) , SE);label(\"$D$\", (4,1) , NE);label(\"$E$\", (2,0), S);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $E$ is the midpoint of $BC$, $BE=EC$. Since triangles $\\triangle ABE$ and $\\triangle AEC$ have equal base length and share the same height, they have the same area.\n\n$\\triangle ABC$ has $\\frac{1}{2}$ the area of the rectangle, so the white triangle, $\\triangle AEC$, has $1/4$ the area of the rectangle.\n\nHence the shaded region has $1 - \\frac{1}{4}=\\frac{3}{4}$ of the area of the rectangle, or $\\boxed{75} \\%$."
+}

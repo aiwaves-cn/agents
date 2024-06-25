@@ -1,0 +1,6 @@
+{
+    "problem": "In the statement below, the two blanks can be filled by positive single-digit numbers in such a way that the statement is always true:\n\n$$\\text{If }2x\\equiv y+5\\ (\\bmod\\ 9)\\text{, then }x\\equiv \\underline{\\ \\ \\ }\\,y+\\underline{\\ \\ \\ }\\ (\\bmod\\ 9).$$What is the product of the two digits that go in the blanks?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Multiplying both sides of the congruence $$2x\\equiv y+5\\pmod 9$$by $5$ gives $$10x \\equiv 5y+25\\pmod 9,$$then reducing both sides modulo $9$ gives $$x\\equiv 5y+7\\pmod 9.$$Thus, the product of the blanks is $5\\cdot 7=\\boxed{35}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the $2007$ roots of $(x-1)^{2007}+2(x-2)^{2006}+3(x-3)^{2005}+\\cdots+2006(x-2006)^2+2007(x-2007)$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Because of Vieta's Formulas, if we know the coefficient of the $x^{2007}$ and $x^{2006}$ term, we can find the sum of all the roots. The coefficient of the $x^{2007}$ term is easy to find -- it's $1$. Using the Binomial Theorem in $(x-1)^{2007}$, the coefficient of the $x^{2006}$ term is $-\\tbinom{2007}{2006} + 2 = -2005$. Thus, by Vieta's Formulas, the sum of all $2007$ roots is $\\tfrac{-(-2005)}{1} = \\boxed{2005}$."
+}

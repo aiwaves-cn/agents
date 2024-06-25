@@ -1,0 +1,6 @@
+{
+    "problem": "Find the four roots of\n\\[2x^4 + x^3 - 6x^2 + x + 2 = 0.\\]Enter the four roots (counting multiplicity), separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Dividing the equation by $x^2,$ we get\n\\[2x^2 + x - 6 + \\frac{1}{x} + \\frac{2}{x^2} = 0.\\]Let $y = x + \\frac{1}{x}.$  Then\n\\[y^2 = x^2 + 2 + \\frac{1}{x^2},\\]so $x^2 + \\frac{1}{x^2} = y^2 - 2.$  Thus, we can re-write the equation above as\n\\[2(y^2 - 2) + y - 6 = 0.\\]This simplifies to $2y^2 + y - 10 = 0.$  The roots are $y = 2$ and $y = -\\frac{5}{2}.$\n\nThe roots of\n\\[x + \\frac{1}{x} = 2\\]are 1 and 1.  The roots of\n\\[x + \\frac{1}{x} = -\\frac{5}{2}\\]are $-2$ and $-\\frac{1}{2}.$\n\nThus, the roots of $2x^4 + x^3 - 6x^2 + x + 2 = 0$ are $\\boxed{1, 1, -2, -\\frac{1}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $JKL$, angle $J$ measures 60 degrees and angle $K$ measures 30 degrees. When drawn, the angle bisectors of angles $J$ and $K$ intersect at a point $M$. What is the measure of obtuse angle $JMK$?\n\n[asy]\nimport geometry;\nimport olympiad;\nunitsize(0.8inch);\ndotfactor = 3;\ndefaultpen(linewidth(1pt)+fontsize(10pt));\n\npair J,K,L,M,U,V;\n\nJ = (0,0);\nK = (1,2);\nL = (1,0);\n\ndraw(J--K--L--cycle);\ndraw(rightanglemark(J,L,K,5));\n\nlabel(\"$J$\",J,W);\nlabel(\"$K$\",K,N);\nlabel(\"$L$\",L,E);\n\nU = (1,2/3);\nV = (2/(2+sqrt(3)),0);\n\ndraw(J--U);\ndraw(K--V);\n\nM = intersectionpoint(J--U,K--V);\ndot(\"M\",M,NW);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $JM$ bisects $\\angle J$, we know that the measure of $\\angle KJM$ is $60/2 = 30$ degrees. Similarly, since $MK$ bisects $\\angle K$, we know that the measure of $\\angle JKM$ is $30/2 = 15$ degrees. Finally, since the sum of the measures of the angles of a triangle always equals $180$ degrees, we know that the sum of the measures of $\\angle JKM$, $\\angle KJM$, and $\\angle JMK$ equals $180$ degrees. Thus, the measure of $\\angle JMK = 180 - 30 - 15 = \\boxed{135}$ degrees."
+}

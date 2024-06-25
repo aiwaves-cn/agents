@@ -1,0 +1,6 @@
+{
+    "problem": "In acute triangle $ABC$, $\\angle A = 68^\\circ$.  Let $O$ be the circumcenter of triangle $ABC$.  Find $\\angle OBC$, in degrees.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, O;\n\nA = (1,2);\nB = (0,0);\nC = (3,0);\nO = circumcenter(A,B,C);\n\ndraw(A--B--C--cycle);\ndraw(circumcircle(A,B,C));\ndraw(B--O);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\ndot(\"$O$\", O, NE);\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Since $O$ is the center of the circle passing through $A$, $B$, and $C$, $\\angle BOC = 2 \\angle BAC = 2 \\cdot 68^\\circ = 136^\\circ$.\n\n[asy]\nunitsize(1.5 cm);\n\npair A, B, C, O;\n\nA = (1,2);\nB = (0,0);\nC = (3,0);\nO = circumcenter(A,B,C);\n\ndraw(A--B--C--cycle);\ndraw(circumcircle(A,B,C));\ndraw(B--O--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\ndot(\"$O$\", O, N);\n[/asy]\n\nSince $BO = CO$ (both are equal to the circumradius of triangle $ABC$), triangle $BOC$ is isosceles.  Hence, $\\angle OBC = (180^\\circ - \\angle BOC)/2 = (180^\\circ - 136^\\circ)/2 = \\boxed{22^\\circ}$."
+}

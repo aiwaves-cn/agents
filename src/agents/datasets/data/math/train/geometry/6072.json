@@ -1,0 +1,6 @@
+{
+    "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the surface area of the cube?\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "$PQ=\\sqrt{(8-7)^2+(8-12)^2+(1-10)^2}=\\sqrt{98}$\n$PR=\\sqrt{(11-7)^2+(3-12)^2+(9-10)^2}=\\sqrt{98}$\n$QR=\\sqrt{(11-8)^2+(3-8)^2+(9-1)^2}=\\sqrt{98}$\nSo, $PQR$ is an equilateral triangle. Let the side of the cube be $a$.\n$a\\sqrt{2}=\\sqrt{98}$\nSo, $a=7$, and hence the surface area is $6a^2=\\boxed{294}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive integer $k$ for which the coefficient of $x^k$ in the expansion of $(x + 3)^{50}$ is maximized.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $c_k$ denote the coefficient of $x^k$ in the expansion of $(x + 3)^{50},$ so\n\\[c_k = \\binom{50}{k} 3^{50 - k}.\\]Then\n\\[c_{k + 1} = \\binom{50}{k + 1} 3^{50 - k - 1} = \\binom{50}{k + 1} 3^{49 - k}.\\]The ratio of these coefficients is\n\\begin{align*}\n\\frac{c_{k + 1}}{c_k} &= \\frac{\\binom{50}{k + 1} 3^{49 - k}}{\\binom{50}{k} 3^{50 - k}} \\\\\n&= \\frac{\\frac{50!}{(k + 1)! (49 - k)!}}{\\frac{50!}{k! (50 - k)!} \\cdot 3} \\\\\n&= \\frac{k! (50 - k)!}{3 (k + 1)! (49 - k)!} \\\\\n&= \\frac{50 - k}{3(k + 1)}.\n\\end{align*}Consider the inequality\n\\[\\frac{50 - k}{3(k + 1)} \\ge 1.\\]This is equivalent to $50 - k \\ge 3(k + 1) = 3k + 3.$  Then $4k \\le 47,$ or $k \\le \\frac{47}{4}.$  Since $k$ is an integer, this is equivalent to $k \\le 11.$\n\nThis means that the sequence $c_0,$ $c_1,$ $c_2,$ $\\dots,$ $c_{11},$ $c_{12}$ is increasing, but the sequence $c_{12},$ $c_{13},$ $c_{14},$ $\\dots$ is decreasing.  Hence, $c_k$ is maximized for $k = \\boxed{12}.$"
+}

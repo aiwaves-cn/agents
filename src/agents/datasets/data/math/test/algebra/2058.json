@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\frac{1+\\sqrt{2}}{2+\\sqrt{3}}$. Your solution can be converted to the form $A(1+\\sqrt{B})-(\\sqrt{C}+\\sqrt{D})$, where $A$, $B$, $C$, and $D$ are positive integers. What is $A+B+C+D$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Multiplying top and bottom by the conjugate, we have $\\frac{1+\\sqrt{2}}{2+\\sqrt{3}} = \\frac{(1+\\sqrt{2})(2-\\sqrt{3})}{(2+\\sqrt{3})((2-\\sqrt{3}))} = \\frac{2-\\sqrt{3}+2\\sqrt{2}-\\sqrt{6}}{4-3} = 2-\\sqrt{3}+2\\sqrt{2}-\\sqrt{6}$. So, we obtain $A=2, B=2, C=3$ and $D=6$ ($C$ and $D$ are interchangeable). So $A+B+C+D = 2+2+3+6 = \\boxed{13}$."
+}

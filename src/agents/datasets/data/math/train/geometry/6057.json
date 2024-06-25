@@ -1,0 +1,6 @@
+{
+    "problem": "In trapezoid $ABCD$, leg $\\overline{BC}$ is perpendicular to bases $\\overline{AB}$ and $\\overline{CD}$, and diagonals $\\overline{AC}$ and $\\overline{BD}$ are perpendicular. Given that $AB=\\sqrt{11}$ and $AD=\\sqrt{1001}$, find $BC^2$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $x = BC$ be the height of the trapezoid, and let $y = CD$. Since $AC \\perp BD$, it follows that $\\triangle BAC \\sim \\triangle CBD$, so $\\frac{x}{\\sqrt{11}} = \\frac{y}{x} \\Longrightarrow x^2 = y\\sqrt{11}$.\nLet $E$ be the foot of the altitude from $A$ to $\\overline{CD}$. Then $AE = x$, and $ADE$ is a right triangle. By the Pythagorean Theorem,\n\\[x^2 + \\left(y-\\sqrt{11}\\right)^2 = 1001 \\Longrightarrow x^4 - 11x^2 - 11^2 \\cdot 9 \\cdot 10 = 0\\]\nThe positive solution to this quadratic equation is $x^2 = \\boxed{110}$.\n[asy] size(200); pathpen = linewidth(0.7); pair C=(0,0),B=(0,110^.5),A=(11^.5,B.y),D=(10*11^.5,0),E=foot(A,C,D); D(MP(\"A\",A,(2,.5))--MP(\"B\",B,W)--MP(\"C\",C)--MP(\"D\",D)--cycle); D(A--C);D(B--D);D(A--E,linetype(\"4 4\") + linewidth(0.7)); MP(\"\\sqrt{11}\",(A+B)/2,N);MP(\"\\sqrt{1001}\",(A+D)/2,NE);MP(\"\\sqrt{1001}\",(A+D)/2,NE);MP(\"x\",(B+C)/2,W);MP(\"y\",(D+C)/2);D(rightanglemark(B,IP(A--C,B--D),C,20)); [/asy]"
+}

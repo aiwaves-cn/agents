@@ -1,0 +1,6 @@
+{
+    "problem": "Find all rational roots of\n\\[4x^4 - 3x^3 - 13x^2 + 5x + 2 = 0\\]Enter all the rational roots, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the Rational Root Theorem, the only possible rational roots are of the form $\\pm \\frac{a}{b},$ where $a$ divides 2 and $b$ divides 4.  Thus, the possible rational roots are\n\\[\\pm 1, \\ \\pm 2, \\ \\pm \\frac{1}{2}, \\ \\pm \\frac{1}{4}.\\]Checking these values, we find that the rational roots are $\\boxed{2,-\\frac{1}{4}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two cards are chosen at random from a standard 52-card deck.  What is the probability that both cards are numbers (2 through 10) totaling to 12?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are two cases that we have to consider.\n\n$\\bullet~$ Case 1: The first card is one of 2, 3, 4, 5, 7, 8, 9, 10.\n\nThere are 32 such cards, so this occurs with probability $\\dfrac{32}{52}$.  For any of these cards, there are 4 cards left in the deck such that the cards sum to 12, so the probability of drawing one is $\\dfrac{4}{51}$.  Thus, the probability that this case occurs is $\\dfrac{32}{52}\\times\\dfrac{4}{51} = \\dfrac{32}{663}$.\n\n$\\bullet~$ Case 2: The first card is a 6.\n\nThere are 4 of these, so this occurs with probability $\\dfrac{4}{52}$.  Now we need to draw another 6.  There are only 3 left in the deck, so the probability of drawing one is $\\dfrac{3}{51}$.  Thus, the probability that this case occurs is $\\dfrac{4}{52}\\times\\dfrac{3}{51} = \\dfrac{3}{663}$.\n\nTherefore the overall probability is $\\dfrac{32}{663} + \\dfrac{3}{663} = \\boxed{\\frac{35}{663}}. $"
+}

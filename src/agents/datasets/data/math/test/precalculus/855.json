@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $DEF$ is shown.  What is $\\cos{E}$?\n\n[asy]\ndraw((0,0)--(7,0)--(7,24)--cycle,black+linewidth(1));\ndraw(rightanglemark((0,0),(7,0),(7,24),30),black+linewidth(1));\nlabel(\"$E$\",(7,24),E);\nlabel(\"$F$\",(0,0),W);\nlabel(\"$D$\",(7,0),E);\nlabel(\"7\",(0,0)--(7,0),S);\nlabel(\"24\",(7,0)--(7,24),E);\n[/asy]",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "From the Pythagorean Theorem, we have $EF^2=DE^2+DF^2$, so \\begin{align*}{EF}&=\\sqrt{DE^2+DF^2} \\\\ &=\\sqrt{24^2+7^2} \\\\ &=\\sqrt{625} \\\\ &=25.\\end{align*}Therefore, $\\cos{E}=\\frac{DE}{EF}=\\boxed{\\frac{24}{25}}$."
+}

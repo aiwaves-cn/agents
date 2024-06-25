@@ -1,0 +1,6 @@
+{
+    "problem": "Four people can paint a house in six hours. How many hours would it take three people to paint the same house, assuming everyone works at the same rate?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The number of people painting the house and the amount of time it takes are inversely proportional. This means that if we let $n$ be the number of people, and $t$ be the time taken, the product $nt$ is a constant. Since 4 people can paint the house in 6 hours, $nt=(4)(6)=24$. Therefore, if three people were painting the same house, $nt=3t=24$, and $t=\\boxed{8}$."
+}

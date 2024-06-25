@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\sin^3 18^\\circ + \\sin^2 18^\\circ.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\sin^3 18^\\circ + \\sin^2 18^\\circ &= \\sin^2 18^\\circ (\\sin 18^\\circ + 1) \\\\\n&= \\sin^2 18^\\circ (\\sin 18^\\circ + \\sin 90^\\circ).\n\\end{align*}By sum-to-product,\n\\begin{align*}\n\\sin^2 18^\\circ (\\sin 18^\\circ + \\sin 90^\\circ) &= \\sin^2 18^\\circ \\cdot 2 \\sin 54^\\circ \\cos 36^\\circ \\\\\n&= 2 \\sin^2 18^\\circ \\cos^2 36^\\circ \\\\\n&= \\frac{2 \\sin^2 18^\\circ \\cos^2 18^\\circ \\cos^2 36^\\circ}{\\cos^2 18^\\circ} \\\\\n&= \\frac{4 \\sin^2 18^\\circ \\cos^2 18^\\circ \\cos^2 36^\\circ}{2 \\cos^2 18^\\circ}.\n\\end{align*}Then by double angle formula,\n\\begin{align*}\n\\frac{4 \\sin^2 18^\\circ \\cos^2 18^\\circ \\cos^2 36^\\circ}{2 \\cos^2 18^\\circ} &= \\frac{\\sin^2 36^\\circ \\cos^2 36^\\circ}{2 \\cos^2 18^\\circ} \\\\\n&= \\frac{4 \\sin^2 36^\\circ \\cos^2 36^\\circ}{8 \\cos^2 18^\\circ} \\\\\n&= \\frac{\\sin^2 72^\\circ}{8 \\cos^2 18^\\circ} \\\\\n&= \\boxed{\\frac{1}{8}}.\n\\end{align*}Alternatively, we can plug in the value $\\sin 18^\\circ = \\frac{\\sqrt{5} - 1}{4}.$"
+}

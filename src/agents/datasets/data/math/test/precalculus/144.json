@@ -1,0 +1,6 @@
+{
+    "problem": "All solutions of the equation $\\cos 4x = -\\frac{1}{2}$ can be expressed in the form $\\frac{(kn \\pm 1) \\pi}{6},$ where $n$ is an integer.  Find the positive value of $k.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "If $\\cos 4x = -\\frac{1}{2},$ then $4x = \\frac{2 \\pi}{3} + 2 \\pi t = \\frac{2 (3t + 1) \\pi}{3}$ or $4x = \\frac{4 \\pi}{3} + 2 \\pi t = \\frac{2 (3t + 2) \\pi}{3},$ for some integer $t.$  Then\n\\[x = \\frac{(3t + 1) \\pi}{6} \\quad \\text{or} \\quad x = \\frac{(3t + 2) \\pi}{6}.\\]Thus, $k = \\boxed{3}.$"
+}

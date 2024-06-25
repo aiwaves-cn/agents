@@ -1,0 +1,6 @@
+{
+    "problem": "John computes the sum of the elements of each of the 15 two-element subsets of $\\{1,2,3,4,5,6\\}$. What is the sum of these 15 sums?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Among the two-element subsets of $\\{1,2,3,4,5,6\\}$, each element in $\\{1,2,3,4,5,6\\}$ appears 5 times, one time in the same subset with each other element. Thus, the desired sum is $5(1+2+3+4+5+6)=5\\left(\\frac{6\\cdot7}{2}\\right)=\\boxed{105}$."
+}

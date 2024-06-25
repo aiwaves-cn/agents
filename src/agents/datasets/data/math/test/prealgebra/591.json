@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than 100 and divisible by 3 are also divisible by 4?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "If we start counting from 1, every third consecutive integer is divisible by 3 and every fourth consecutive integer is divisible by 4. So every twelfth integer is divisible by both 3 and 4. Therefore, the number of positive integers less than 100 divisible by both 3 and 4 is just equal to the number of integers between 1 and 100 that are multiples of 12.  $100 \\div 12 = 8 \\text{ R } 4$, so there are $\\boxed{8}$ multiples of 12 between 1 and 100."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $0 \\le a,$ $b,$ $c \\le 1.$  Find the maximum value of\n\\[\\sqrt{abc} + \\sqrt{(1 - a)(1 - b)(1 - c)}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $0 \\le c \\le 1,$ $\\sqrt{c} \\le 1$ and $\\sqrt{1 - c} \\le 1,$ so\n\\[\\sqrt{abc} + \\sqrt{(1 - a)(1 - b)(1 - c)} \\le \\sqrt{ab} + \\sqrt{(1 - a)(1 - b)}.\\]Then by AM-GM,\n\\[\\sqrt{ab} \\le \\frac{a + b}{2}\\]and\n\\[\\sqrt{(1 - a)(1 - b)} \\le \\frac{(1 - a) + (1 - b)}{2} = \\frac{2 - a - b}{2},\\]so\n\\[\\sqrt{ab} + \\sqrt{(1 - a)(1 - b)} \\le \\frac{a + b}{2} + \\frac{2 - a - b}{2} = 1.\\]Equality occurs when $a = b = c = 0,$ so the maximum value is $\\boxed{1}.$"
+}

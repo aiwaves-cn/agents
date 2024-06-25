@@ -1,0 +1,6 @@
+{
+    "problem": "When a right triangle is rotated about one leg, the volume of the cone produced is $800\\pi \\;\\textrm{ cm}^3$. When the triangle is rotated about the other leg, the volume of the cone produced is $1920\\pi \\;\\textrm{ cm}^3$. What is the length (in cm) of the hypotenuse of the triangle?\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let one leg of the triangle have length $a$ and let the other leg have length $b$. When we rotate around the leg of length $a$, the result is a cone of height $a$ and radius $b$, and so of volume $\\frac 13 \\pi ab^2 = 800\\pi$. Likewise, when we rotate around the leg of length $b$ we get a cone of height $b$ and radius $a$ and so of volume $\\frac13 \\pi b a^2 = 1920 \\pi$. If we divide this equation by the previous one, we get $\\frac ab = \\frac{\\frac13 \\pi b a^2}{\\frac 13 \\pi ab^2} = \\frac{1920}{800} = \\frac{12}{5}$, so $a = \\frac{12}{5}b$. Then $\\frac{1}{3} \\pi \\left(\\frac{12}{5}b\\right)b^2 = 800\\pi$ so $b^3 = 1000$ and $b = 10$ so $a = 24$. Then by the Pythagorean Theorem, the hypotenuse has length $\\sqrt{a^2 + b^2} = \\boxed{26}$."
+}

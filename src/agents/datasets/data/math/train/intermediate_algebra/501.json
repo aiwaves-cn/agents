@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the sum of the roots of the equation \\[x\\sqrt{x} - 6x + 7\\sqrt{x} - 1 = 0,\\]given that all of the roots are real and nonnegative.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The given equation is not a polynomial equation, so we can't use Vieta's formulas directly. To create a related polynomial equation, we substitute $y = \\sqrt{x},$ or $x = y^2,$ giving \\[y^3 - 6y^2 + 7y - 1 = 0.\\]For each value of $y$ which satisfies this equation, the corresponding value of $x$ which satisfies the original equation is $x = y^2.$ Therefore, we want to find the sum of the squares of the roots of this equation.\n\nTo do this, let $r,$ $s,$ and $t$ denote the roots of this equation. Then by Vieta's formulas, $r+s+t=6$ and $rs+st+tr=7,$ so \\[r^2+s^2+t^2=(r+s+t)^2-2(rs+st+tr) = 6^2 - 2 \\cdot 7 = \\boxed{22}.\\]"
+}

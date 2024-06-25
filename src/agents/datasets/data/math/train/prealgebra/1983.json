@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest integer value of $x$ for which $5-4x>17$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "First we isolate $x$ by subtracting 5 from both sides.  This gives \\[-4x>12.\\]Dividing by $-4$ and remembering to reverse the inequality gives us  \\[x<-3.\\]The greatest integer that solves this inequality is $\\boxed{-4}$.\n\nWe can check this.  If we substitute $-4$ into the inequality we get  \\[5-4(-4)>17\\]or  \\[5+16>17.\\]This is true.  If we substitute $-3$ we get  \\[5+12>17,\\]which is false."
+}

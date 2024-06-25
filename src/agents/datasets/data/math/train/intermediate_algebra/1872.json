@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ satisfies\n\\[f(xy) = f(x) f(y)\\]for all real numbers $x$ and $y,$ and $f(0) \\neq 0.$  Find $f(10).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Taking $x = 0$ and $y = 10,$ we get\n\\[f(0) = f(0) f(10).\\]Since $f(0) \\neq 0,$ we can divide both sides by $f(0),$ to get $f(10) = \\boxed{1}.$"
+}

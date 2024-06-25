@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be vectors such that\n\\[\\mathbf{v} = \\operatorname{proj}_{\\mathbf{a}} \\mathbf{v} + \\operatorname{proj}_{\\mathbf{b}} \\mathbf{v}\\]for all vectors $\\mathbf{v}.$  Enter all possible values of $\\mathbf{a} \\cdot \\mathbf{b},$ separated by commas.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Taking $\\mathbf{v} = \\mathbf{b},$ we get\n\\[\\mathbf{b} = \\operatorname{proj}_{\\mathbf{a}} \\mathbf{b} + \\operatorname{proj}_{\\mathbf{b}} \\mathbf{b}.\\]From the projection formula,\n\\[\\operatorname{proj}_{\\mathbf{a}} \\mathbf{b} = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\|^2} \\mathbf{a},\\]and $\\operatorname{proj}_{\\mathbf{b}} \\mathbf{b} = \\mathbf{b},$ so\n\\[\\mathbf{b} = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\|^2} \\mathbf{a} + \\mathbf{b}.\\]Hence,\n\\[\\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\|\\mathbf{a}\\|^2} \\mathbf{a} = \\mathbf{0}.\\]The vector $\\mathbf{a}$ must be nonzero, in order for the projection of $\\mathbf{v}$ onto $\\mathbf{a}$ to be defined, so we must have $\\mathbf{a} \\cdot \\mathbf{b} = \\boxed{0}.$\n\nNote that we can take $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}.$"
+}

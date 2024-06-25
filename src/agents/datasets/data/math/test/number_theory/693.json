@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest integer value of $b$ such that $423_{10}$ expressed in base $b$ also has $3$ digits?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "For the base $b$ representation to have $3$ digits, the largest power of it that is less than or equal to $423$ must be the square of $b$. Therefore, we want to find the smallest number such that the cube of it is greater than $423$. The cube of $7$ is $7^3=343$, and the cube of $8$ is $8^3=512$. Therefore, the smallest integer such that the largest power of $b$ is less than $423$ is the square would be $\\boxed{8}$."
+}

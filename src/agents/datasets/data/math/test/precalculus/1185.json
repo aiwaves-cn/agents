@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a real number such that $\\sec x - \\tan x = 2.$  Find $\\sec x + \\tan x.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[(\\sec x - \\tan x)(\\sec x + \\tan x) = \\sec^2 x - \\tan^2 x = \\frac{1}{\\cos^2 x} - \\frac{\\sin^2 x}{\\cos^2 x} = \\frac{1 - \\sin^2 x}{\\cos^2 x} = 1,\\]so $\\sec x + \\tan x = \\frac{1}{\\sec x - \\tan x} = \\boxed{\\frac{1}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area of the region enclosed by the graph of the equation $x^2-14x+3y+70=21+11y-y^2$ that lies below the line $y=x-3$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The equation can be rewritten as \\begin{align*}\nx^2-14x+y^2-8y & =-49\\\\\nx^2-14x+49+y^2-8y+16& =16\\\\\n(x-7)^2+(y-4)^2 & =16\n\\end{align*}Thus, the region is a circle with center $(7,4)$ and radius 4. As $(7,4)$ is on the line $y=x-3$, the line passes through the center of the circle. Hence, half of the area of the circle lies below the line $y=x-3$. The radius of the circle is 4, so the circle has area $16\\pi$. Therefore, half the area of the circle is $\\boxed{8 \\pi}$."
+}

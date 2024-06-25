@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose you have a weighted coin in which heads comes up with probability $\\frac34$ and tails with probability $\\frac14$.  If you flip heads, you win 2 dollars, but if you flip tails, you lose 1 dollar.  What is the expected value of a coin flip? Express your answer as a decimal.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "By definition, we multiply the outcomes by their respective probabilities, and add them up: $E = \\frac34(+\\$2) + \\frac14(-\\$1) = \\$1.50 - \\$0.25 = \\boxed{\\$1.25}$."
+}

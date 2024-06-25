@@ -1,0 +1,6 @@
+{
+    "problem": "For some positive integers $m$ and $n,$\n\\[\\sqrt{23 + \\sqrt{28}} + \\sqrt{23 - \\sqrt{28}} = \\sqrt{m + \\sqrt{n}}.\\]Enter the ordered pair $(m,n).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = \\sqrt{23 + \\sqrt{28}} + \\sqrt{23 - \\sqrt{28}}.$  Then\n\\begin{align*}\nx^2 &= 23 + \\sqrt{28} + 2 \\sqrt{23 + \\sqrt{28}} \\sqrt{23 - \\sqrt{28}} + 23 - \\sqrt{28} \\\\\n&= 46 + 2 \\sqrt{23^2 - 28} \\\\\n&= 46 + 2 \\sqrt{501} \\\\\n&= 46 + \\sqrt{2004}.\n\\end{align*}Hence, $(m,n) = \\boxed{(46,2004)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The digits from 1 to 6 are arranged to form a six-digit multiple of 5. What is the probability that the number is greater than 500,000? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Of the digits 1 to 6, 5 must be the units digit since our number is a multiple of 5. We have five digits remaining, 1, 2, 3, 4, and 6, for five digit places. The number is greater than 500,000 if and only if the hundred thousands digit is 6. The probability that the hundred thousands digit (which can be 1, 2, 3, 4, or 6) is 6 is $\\boxed{\\frac{1}{5}}$."
+}

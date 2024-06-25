@@ -1,0 +1,6 @@
+{
+    "problem": "The circumference of a circle $A$ is 60 feet. How many feet long is $\\widehat{BC}$? [asy]\nimport markers;\n\nimport olympiad; import geometry; import graph; size(150); defaultpen(linewidth(0.9));\ndraw(Circle(origin,1));\ndraw(dir(90)--origin--dir(30));\nlabel(\"$B$\",dir(90),N);\nlabel(\"$A$\",origin,S);\nlabel(\"$C$\",dir(30),E);\nmarkangle(Label(\"$60^{\\circ}$\"),dir(30),origin,(0,1),radius=20);\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Since $\\widehat{BC}$ is $\\frac{60}{360}=\\frac16$ of the circle, $\\widehat{BC}$ has length $\\frac16(60)=\\boxed{10}$ feet."
+}

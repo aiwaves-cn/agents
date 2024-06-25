@@ -1,0 +1,6 @@
+{
+    "problem": "A polynomial with integer coefficients is of the form\n\\[3x^3 + a_2 x^2 + a_1 x - 6 = 0.\\]Enter all the possible integer roots of this polynomial, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By the Integer Root Theorem, the possible integer roots are all the divisors of 6 (including negative divisors), so they are $\\boxed{-6, -3, -2, -1, 1, 2, 3, 6}.$"
+}

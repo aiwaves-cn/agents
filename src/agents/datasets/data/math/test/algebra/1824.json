@@ -1,0 +1,6 @@
+{
+    "problem": "Jill is trying to solve the following quadratic equation by completing the square: $$x^2 - 8x - 49 = 0.$$She rewrites this equation in the form of $(ax + b)^2 + c,$ where $a,$ $b,$ and $c$ are integers. What is $ab$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We know that $(ax + b)^2 + c = (a^2)x^2 + (2ab)x + b^2 + c,$ meaning that if this to equal $x^2 - 8x - 49$, we start with $a^2 = 1,$ and so we let $a = 1.$ Then, $2ab = -8,$ so $b = -4.$ We do not need to find $c$ in this case, so our answer is $ab = \\boxed{-4}.$\n\nNote: Letting $a = -1$ gives us $(-x+4)^2 + c,$ which gives us the same answer."
+}

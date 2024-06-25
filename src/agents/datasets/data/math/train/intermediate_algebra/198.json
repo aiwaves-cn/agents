@@ -1,0 +1,6 @@
+{
+    "problem": "Brian writes down four integers $w > x > y > z$ whose sum is $44$. The pairwise positive differences of these numbers are $1, 3, 4, 5, 6,$ and $9$. What is the sum of the possible values for $w$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The largest difference must be $w - z = 9.$  The two differences $w - x$ and $x - z$ must add up to $w - z = 9.$  Similarly, the two differences of $w - y$ and $y - z$ must add up to 9.  Thus, $\\{w - x, x - z\\}$ and $\\{w - y, y - z\\}$ must be $\\{3,6\\}$ and $\\{4,5\\}$ in some order.  This leaves $x - y = 1.$\n\nCase 1: $\\{w - x, x - z\\} = \\{3,6\\}$ and $\\{w - y, y - z\\} = \\{4,5\\}.$\n\nSince $w - x < w - y \\le 4,$ we must have $w - x = 3,$ so $x - z = 6.$  Since $x - y = 1,$ $y - z = 5.$\n\nThus, $z = w - 9,$ $x = w - 3,$ and $y = w - 4.$  We also know $w + x + y + z = 44,$ so\n\\[w + (w - 3) + (w - 4) + (w - 9) = 44.\\]Hence, $w = 15.$\n\nCase 2: $\\{w - x, x - z\\} = \\{4,5\\}$ and $\\{w - y, y - z\\} = \\{3,6\\}.$\n\nSince $y - z < x - z \\le 4,$ we must have $y - z = 3,$ so $w - y = 6.$  Since $x - y = 1,$ $w - x = 5.$\n\nThus, $z = w - 9,$ $x = w - 5,$ and $y = w - 6.$   Since $w + x + y + z = 44,$\n\\[w + (w - 5) + (w - 6) + (w - 9) = 44.\\]Hence, $w = 16.$\n\nThe sum of all possible values of $w$ is then $15 + 16 = \\boxed{31}.$"
+}

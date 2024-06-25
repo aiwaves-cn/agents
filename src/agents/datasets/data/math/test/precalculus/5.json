@@ -1,0 +1,6 @@
+{
+    "problem": "The parametric curve $(x,y) = (t^2 + t, 2t - 1),$ for real numbers $t,$ describes a parabola.  Find the vertex of the parabola.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $x = t^2 + t$ and $y = 2t - 1.$  Then $t = \\frac{y + 1}{2},$ so\n\\begin{align*}\nx &= t^2 + t \\\\\n&= \\left( \\frac{y + 1}{2} \\right)^2 + \\frac{y + 1}{2} \\\\\n&= \\frac{y^2}{4} + y + \\frac{3}{4} \\\\\n&= \\frac{1}{4} (y + 2)^2 - \\frac{1}{4}.\n\\end{align*}Hence, the vertex of the parabola is $\\boxed{\\left( -\\frac{1}{4}, -2 \\right)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many perfect squares are factors of $2 \\times 4 \\times 6 \\times 8 \\times 10 \\times 12?$",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We prime factor the given product as $2^{10}\\cdot 3^2\\cdot5.$ Recall that a number is a perfect square if and only if all of its prime factors are raised to an even power; so $f$ is a factor if and only if $f = 2^{2a}\\cdot 3^{2b}$ for $0\\leq 2a\\leq 10$ and $0\\leq 2b\\leq 2.$ So we have $6$ choices for $a$ and $2$ choices for $b,$ leading to a total of $6\\cdot 2 = \\boxed{12}$ possibilities."
+}

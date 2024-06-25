@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $x$ in the equation $9^4+9^4+9^4=3^x$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Rewrite the left-hand side of the equation as $3\\cdot 9^4=3\\cdot (3^2)^4=3\\cdot 3^8=3^9$.  Solving $3^9=3^x$, we find $x=\\boxed{9}$."
+}

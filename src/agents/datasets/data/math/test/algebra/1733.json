@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\frac{3}{\\sqrt[5]{16}}+\\frac{1}{\\sqrt{3}}$ and rationalize the denominator. The result can be expressed in the form $\\frac{a^2\\sqrt[5]{b}+b\\sqrt{a}}{ab}$, where $a$ and $b$ are integers. What is the value of the sum $a+b$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Rationalizing each of the two fractions on its own will make creating a common denominator easier. For the first fraction, if we recognize the denominator $\\sqrt[5]{16}$ as $\\sqrt[5]{2^4}$, then that means multiplying the numerator and denominator by $\\sqrt[5]{2}$ will leave us with 2 in the denominator: $$\\frac{3}{\\sqrt[5]{16}}\\cdot\\frac{\\sqrt[5]{2}}{\\sqrt[5]{2}}=\\frac{3\\sqrt[5]{2}}{\\sqrt[5]{2^5}}=\\frac{3\\sqrt[5]{2}}{2}.$$For the second fraction, we have $\\frac{1}{\\sqrt{3}}\\cdot\\frac{\\sqrt{3}}{\\sqrt{3}}=\\frac{\\sqrt{3}}{3}$. Now we find a common denominator: $$\\frac{3\\sqrt[5]{2}}{2}+\\frac{\\sqrt{3}}{3}=\\frac{9\\sqrt[5]{2}+2\\sqrt{3}}{6}.$$So, matching our answer with the form in the problem, we get that $a=3$ and $b=2$, which means $a+b=\\boxed{5}$."
+}

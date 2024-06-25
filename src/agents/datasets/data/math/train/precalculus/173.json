@@ -1,0 +1,6 @@
+{
+    "problem": "If triangle $ABC$ has sides of length $AB = 6,$ $AC = 5,$ and $BC = 4,$ then calculate\n\\[\\frac{\\cos \\frac{A - B}{2}}{\\sin \\frac{C}{2}} - \\frac{\\sin \\frac{A - B}{2}}{\\cos \\frac{C}{2}}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can write the expression as\n\\[\\frac{\\cos \\frac{A - B}{2} \\cos \\frac{C}{2} - \\sin \\frac{A - B}{2} \\sin \\frac{C}{2}}{\\sin \\frac{C}{2} \\cos \\frac{C}{2}}.\\]The numerator is\n\\[\\cos \\left (\\frac{A - B}{2} + \\frac{C}{2} \\right) = \\cos \\frac{A - B + C}{2} = \\cos \\frac{(180^\\circ - B) - B}{2} = \\cos (90^\\circ - B) = \\sin B,\\]and the denominator is $\\frac{1}{2} \\sin C,$ so by the Law of Sines, the expression is\n\\[\\frac{2 \\sin B}{\\sin C} = \\frac{2AC}{AB} = \\frac{10}{6} = \\boxed{\\frac{5}{3}}.\\]"
+}

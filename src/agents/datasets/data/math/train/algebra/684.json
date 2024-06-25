@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\n9x+4 &\\text{if }x\\text{ is an integer}, \\\\\n\\lfloor{x}\\rfloor+5 &\\text{if }x\\text{ is not an integer}.\n\\end{cases}\n\\]Find $f(\\sqrt{29})$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since 29 is not a perfect square, we know that $\\sqrt{29}$ cannot equal an integer. Therefore, $f(\\sqrt{29})=\\lfloor\\sqrt{29}\\rfloor+5=5+5=\\boxed{10}$."
+}

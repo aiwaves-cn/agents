@@ -1,0 +1,6 @@
+{
+    "problem": "When the polynomial $x^4 - 6x^3 + 16x^ 2 - 25x + 10$ is divided by $x^2 - 2x + k,$ the remainder is $x + a.$  Enter the ordered pair $(k,a).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The long division is shown below.\n\n\\[\n\\begin{array}{c|ccccc}\n\\multicolumn{2}{r}{x^2} & -4x & +(8 - k) & \\\\\n\\cline{2-6}\nx^2 - 2x + k & x^4 & -6x^3 & +16x^2 & -25x & +10 \\\\\n\\multicolumn{2}{r}{x^2} & -2x^3 & + kx^2 \\\\ \n\\cline{2-4}\n\\multicolumn{2}{r}{0} & -4x^3 & +(16 - k)x^2   \\\\\n\\multicolumn{2}{r}{} &- 4x^3 & +8x^2 & - 4kx \\\\ \n\\cline{3-5}\n\\multicolumn{2}{r}{} & 0 & +(8 - k)x^2 & +(4k - 25)x   \\\\\n\\multicolumn{2}{r}{} & & +(8 - k)x^2 & +(2k - 16)x & +k(8 - k) \\\\\n\\cline{4-6}\n\\multicolumn{2}{r}{} & & 0 & +(2k - 9)x  & +(k^2 - 8k + 10) \\\\\n\\end{array}\n\\]Thus, the remainder is $(2k - 9)x + (k^2 - 8k + 10).$  We want this to be $x + a,$ so $2k - 9 = 1$ and $k^2 - 8k + 10 = a.$  Solving, we find $(k,a) = \\boxed{(5,-5)}.$"
+}

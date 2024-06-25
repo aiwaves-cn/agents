@@ -1,0 +1,6 @@
+{
+    "problem": "A math teacher requires Noelle to do one homework assignment for each of the first five homework points she wants to earn; for each of the next five homework points, she needs to do two homework assignments; and so on, so that to earn the $n^{\\text{th}}$ homework point, she has to do $n\\div5$ (rounded up) homework assignments. For example, when she has 11 points, it will take $12\\div5=2.4\\rightarrow3$ homework assignments to earn her $12^{\\text{th}}$ point. What is the smallest number of homework assignments necessary to earn a total of 25 homework points?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Noelle only has to do 1 homework assignment to earn her first point, and the same is true for each of her first five points.  She must then do 2 homework assignments to earn her sixth point, seventh point, and so on, up to her tenth point.  Continuing, we see that Noelle must do a total of \\[1+1+1+1+1+2+2+2+2+2+\\dots+5+5+5+5+5\\] homework assignments to earn 25 points.\n\nThis sum may be rewritten as $5(1+2+3+4+5)=5(15)=\\boxed{75}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the quadratic polynomial $p(x)$ such that $p(-3) = 10,$ $p(0) = 1,$ and $p(2) = 5.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $p(x) = ax^2 + bx + c.$  Then from the given information,\n\\begin{align*}\n9a - 3b + c &= 10, \\\\\nc &= 1, \\\\\n4a + 2b + c &= 5.\n\\end{align*}Then $9a - 3b = 9$ and $4a + 2b = 4,$ which reduce to $3a - b = 3$ and $2a + b = 2.$  Adding, we get $5a = 5,$ so $a = 1.$  Then $4 + 2b = 4,$ so $b = 0.$  Therefore, $p(x) = \\boxed{x^2 + 1}.$"
+}

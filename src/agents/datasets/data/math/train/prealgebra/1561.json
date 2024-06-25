@@ -1,0 +1,6 @@
+{
+    "problem": "How many four-digit positive integers are there with thousands digit $2?$",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We are trying to count the number of terms in the sequence $2000,$ $2001,$ $2002,$ $\\ldots,$ $2998,$ $2999.$ If we subtract $1999$ from every term in the sequence it becomes $1,$ $2,$ $3,$ $\\ldots,$ $999,$ $1000.$ So, there are $1000$ positive integers with $4$ digits and thousands digit $2.$\n\nOR\n\nWe could note that there are $10$ choices for each of the digits besides the thousands digit, so there are $$10\\times10\\times 10=\\boxed{1000}$$ positive integers with thousands digit $2.$"
+}

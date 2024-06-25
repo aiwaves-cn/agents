@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest positive integer that is not the sum of a positive integral multiple of $42$ and a positive composite integer?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let our answer be $n$. Write $n = 42a + b$, where $a, b$ are positive integers and $0 \\leq b < 42$. Then note that $b, b + 42, ... , b + 42(a-1)$ are all primes.\nIf $b$ is $0\\mod{5}$, then $b = 5$ because $5$ is the only prime divisible by $5$. We get $n = 215$ as our largest possibility in this case.\nIf $b$ is $1\\mod{5}$, then $b + 2 \\times 42$ is divisible by $5$ and thus $a \\leq 2$. Thus, $n \\leq 3 \\times 42 = 126 < 215$.\nIf $b$ is $2\\mod{5}$, then $b + 4 \\times 42$ is divisible by $5$ and thus $a \\leq 4$. Thus, $n \\leq 5 \\times 42 = 210 < 215$.\nIf $b$ is $3\\mod{5}$, then $b + 1 \\times 42$ is divisible by $5$ and thus $a = 1$. Thus, $n \\leq 2 \\times 42 = 84 < 215$.\nIf $b$ is $4\\mod{5}$, then $b + 3 \\times 42$ is divisible by $5$ and thus $a \\leq 3$. Thus, $n \\leq 4 \\times 42 = 168 < 215$.\nOur answer is $\\boxed{215}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 1.$  Find the minimum value of\n\\[\\frac{1}{a + 2b} + \\frac{1}{b + 2c} + \\frac{1}{c + 2a}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-HM,\n\\[\\frac{(a + 2b) + (b + 2c) + (c + 2a)}{3} \\ge \\frac{3}{\\frac{1}{a + 2b} + \\frac{1}{b + 2c} + \\frac{1}{c + 2a}},\\]so\n\\[\\frac{1}{a + 2b} + \\frac{1}{b + 2c} + \\frac{1}{c + 2a} \\ge \\frac{9}{3a + 3b + 3c} = \\frac{9}{3} = 3.\\]Equality occurs when $a = b = c = \\frac{1}{3},$ so the minimum value is $\\boxed{3}.$"
+}

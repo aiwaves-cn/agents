@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers, $y > x > 0,$ such that\n\\[\\frac{x}{y} + \\frac{y}{x} = 6.\\]Find the value of \\[\\frac{x + y}{x - y}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the given equation, $\\frac{x^2 + y^2}{xy} = 6,$ so $x^2 + y^2 = 6xy.$\n\nLet\n\\[a = \\frac{x + y}{x - y}.\\]Then\n\\[a^2 = \\frac{x^2 + 2xy + y^2}{x^2 - 2xy + y^2} = \\frac{8xy}{4xy} = 2.\\]Since $y > x > 0,$ $a = \\frac{x + y}{x - y}$ is negative.  Therefore, $a = \\boxed{-\\sqrt{2}}.$"
+}

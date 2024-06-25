@@ -1,0 +1,6 @@
+{
+    "problem": "What are the rightmost three digits of $5^{1993}$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We compute the powers of 5 modulo 1000: \\begin{align*}\n5^0&\\equiv1\\pmod{1000}\\\\\n5^1&\\equiv5\\pmod{1000}\\\\\n5^2&\\equiv25\\pmod{1000}\\\\\n5^3&\\equiv125\\pmod{1000}\\\\\n5^4&\\equiv625\\pmod{1000}\\\\\n5^5&\\equiv125\\pmod{1000}.\n\\end{align*} This pattern repeats every two terms starting at the 4th term.  In particular, when $n>2$, and $n$ is odd,  \\[5^n\\equiv125\\pmod{1000}.\\] Therefore the rightmost digit of $5^{1993}$ is $\\boxed{125}$."
+}

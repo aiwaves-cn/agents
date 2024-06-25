@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest possible quotient of any two distinct members of the set $\\{\\frac{2}{5}, \\frac{1}{2},5,10\\}$?  Specifically, we wish to maximize $\\frac{x}{y}$, where $x$ and $y$ are chosen from the previous set.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "For the greatest quotient, we want the largest numerator and the smallest denominator. This gives $\\dfrac{10}{2/5} = 10 \\cdot \\dfrac{5}{2} = \\boxed{25}$."
+}

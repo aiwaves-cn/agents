@@ -1,0 +1,6 @@
+{
+    "problem": "The four positive integers $a,$ $b,$ $c,$ $d$ satisfy\n\\[a \\times b \\times c \\times d = 10!.\\]Find the smallest possible value of $a + b + c + d.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[a + b + c + d \\ge 4 \\sqrt[4]{abcd} = 4 \\sqrt[4]{10!} \\approx 174.58.\\]Since $a,$ $b,$ $c,$ $d$ are all integers, $a + b + c + d \\ge 175.$\n\nNote that $a = 40,$ $b = 42,$ $c = 45,$ and $d = 48$ satisfy $abcd = 10!,$ and $a + b + c + d = \\boxed{175},$ so this is the minimum."
+}

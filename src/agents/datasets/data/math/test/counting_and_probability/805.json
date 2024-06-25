@@ -1,0 +1,6 @@
+{
+    "problem": "A player chooses one of the numbers 1 through 4. After the choice has been made, two regular four-sided (tetrahedral) dice are rolled, with the sides of the dice numbered 1 through 4. If the number chosen appears on the bottom of exactly one die after it is rolled, then the player wins $\\$1.$ If the number chosen appears on the bottom of both of the dice, then the player wins $\\$2.$ If the number chosen does not appear on the bottom of either of the dice, the player loses $\\$1.$ What is the expected return to the player, in dollars, for one roll of the dice? Give your answer as a fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The probability of the number appearing 0, 1, and 2 times is \\begin{align*}\n&P(0) = \\frac{3}{4}\\cdot \\frac{3}{4} = \\frac{9}{16},\\\\\n&P(1) = 2\\cdot\\frac{1}{4}\\cdot \\frac{3}{4} = \\frac{6}{16},\n\\quad\\text{and}\\\\\n&P(2) = \\frac{1}{4}\\cdot \\frac{1}{4} = \\frac{1}{16},\n\\end{align*} respectively. So the expected return, in dollars, to the player is \\begin{align*}\nP(0)\\cdot (-1) + P(1)\\cdot (1) + P(2)\\cdot (2) &= \\frac{-9 + 6 +\n2}{16} \\\\\n&= \\boxed{-\\frac{1}{16}}.\n\\end{align*}"
+}

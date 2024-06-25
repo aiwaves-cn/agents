@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $x^3 + 8x^2 - 4x + c = 0$ has three roots, one of which is the sum of the other two. What is $c$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ be the root which is the sum of the other two. Then $2r$ is the sum of all three roots. But by Vieta's formulas, the sum of the roots of the equation is $-8,$ so we have $2r = -8,$ or $r = -4.$ Thus, $-4$ is a root of the equation, so setting $x=-4,$ we have \\[(-4)^3 + 8(-4)^2 - 4(-4) + c = 0.\\]Solving for $c$ gives $c = \\boxed{-80}.$"
+}

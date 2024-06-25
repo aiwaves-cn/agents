@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of the triangle with vertices $(-1,4),$ $(7,0),$ and $(11,5).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $A = (-1,4),$ $B = (7,0),$ and $C = (11,5).$  Let $\\mathbf{v} = \\overrightarrow{CA} = \\begin{pmatrix} -1 - 11 \\\\ 4 - 5 \\end{pmatrix} = \\begin{pmatrix} -12 \\\\ -1 \\end{pmatrix}$ and $\\mathbf{w} = \\overrightarrow{CB} = \\begin{pmatrix} 7 - 11 \\\\ 0 - 5 \\end{pmatrix} = \\begin{pmatrix} -4 \\\\ -5 \\end{pmatrix}.$  The area of triangle $ABC$ is half the area of the parallelogram determined by $\\mathbf{v}$ and $\\mathbf{w}.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, C;\n\nA = (-1,4);\nB = (7,0);\nC = (11,5);\n\ndraw(A--B);\ndraw(C--A,Arrow(6));\ndraw(C--B,Arrow(6));\ndraw(A--(A + B - C)--B,dashed);\n\nlabel(\"$\\mathbf{v}$\", (A + C)/2, N);\nlabel(\"$\\mathbf{w}$\", (B + C)/2, SE);\ndot(\"$A$\", A, NW);\ndot(\"$B$\", B, SE);\ndot(\"$C$\", C, NE);\n[/asy]\n\nThe area of the parallelogram determined by $\\mathbf{v}$ and $\\mathbf{w}$ is\n\\[|(-12)(-5) - (-4)(-1)| = 56,\\]so the area of triangle $ABC$ is $56/2 = \\boxed{28}.$"
+}

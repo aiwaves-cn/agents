@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $(2 \\cos 20^\\circ + 2i \\sin 20^\\circ)^6.$  Enter your answer in rectangular form.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n(2 \\cos 20^\\circ + 2i \\sin 20^\\circ) &= 2^6 (\\cos 20^\\circ + i \\sin 20^\\circ)^6 \\\\\n&= 64 (\\cos 20^\\circ + i \\sin 20^\\circ)^6.\n\\end{align*}By DeMoivre's Theorem,\n\\[(\\cos 20^\\circ + i \\sin 20^\\circ)^6 = \\cos 120^\\circ + i \\sin 120^\\circ = -\\frac{1}{2} + i \\cdot \\frac{\\sqrt{3}}{2},\\]so the result is $64 \\left( -\\frac{1}{2} + i \\cdot \\frac{\\sqrt{3}}{2} \\right) = \\boxed{-32 + 32i \\sqrt{3}}.$"
+}

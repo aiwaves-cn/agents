@@ -1,0 +1,6 @@
+{
+    "problem": "The seven digits in Sam's phone number and the four digits in his house number have the same sum.  The four digits in his house number are distinct, and his phone number is 271-3147.  What is the largest possible value of Sam's house number?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First, we need to add up the digits in his phone number to see what the digits in his address add up to.  $2+7+1+3+1+4+7=25$.\n\nFor his address, we want to find the largest four-digit number whose digits add up to $25$.  Because we want a large number, the leftmost digit should be as large as possible, so the first digit should be $9$.  The next three digits, therefore, must add up to $25-9=16$.  Since the digits must be unique, the next digit cannot be $9$, so we will go for the next largest number, $8$.  The final two digits must add up to $16-8=8$, and since neither can be $8$, the next largest possibility for those numbers is $7$ and $1$.  Therefore, Sam's address is $\\boxed{9871}$."
+}

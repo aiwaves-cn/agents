@@ -1,0 +1,6 @@
+{
+    "problem": "\\begin{align*}\n2a + 3b + 5c + 7d &= 34 \\\\\n3(d+c) &= b \\\\\n3b + c &= a \\\\\nc - 1 &= d \\\\\n\\end{align*} Given the above system of equations, find $a \\cdot b \\cdot c \\cdot d$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Substituting in for $d$ in terms of $c$ in the second equation gives $b = 3 (2c - 1) = 6c - 3$.\nSubstituting in for $b$ in terms of $c$ in the third equation gives $a = 3 (6c - 3) + c = 19c - 9$.\nFinally, substituting in for $a$, $b$, and $d$ in terms of $c$ in the first equation gives $2(19c-9)+3(6c-3)+5c+7(c-1) = 34$. Simplifying this gives $68c = 68$, so $c = 1$. Note that $c -1 = d$, so $d = 0$. Therefore, the product $a \\cdot b \\cdot c \\cdot d = \\boxed{0}$."
+}

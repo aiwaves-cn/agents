@@ -1,0 +1,6 @@
+{
+    "problem": "For real numbers $t,$ the point of intersection of the lines $x + 2y = 7t + 3$ and $x - y = 2t - 2$ is plotted.  All the plotted points lie on a line.  Find the slope of this line.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Solving for $x$ and $y,$ we find\n\\[x = \\frac{11t - 1}{3}, \\quad y = \\frac{5t + 5}{3}.\\]From the first equation,\n\\[t = \\frac{3x + 1}{11}.\\]Then\n\\begin{align*}\ny &= \\frac{5t + 5}{3} \\\\\n&= \\frac{5 \\cdot \\frac{3x + 1}{11} + 5}{3} \\\\\n&= \\frac{5}{11} x + \\frac{20}{11},\n\\end{align*}Thus, the slope of the line is $\\boxed{\\frac{5}{11}}.$"
+}

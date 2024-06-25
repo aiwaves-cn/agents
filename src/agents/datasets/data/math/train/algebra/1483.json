@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area of the circle defined by $x^2-6x +y^2-14y +33=0$ that lies beneath the line $y=7$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Add $(-6/2)^2$ and $(-14/2)^2$ to both sides of the equation to get \\[\n(x^2-6x +9) +(y^2-14y +49)=25,\n\\] which in turn can be rewritten as $(x-3)^2 +(y-7)^2 =5^2$.  The center of this circle is $(3,7)$, so the line $y=7$ passes through the center of the circle.  Hence, the area of the circle that lies below $y=7$ is half the area of the circle.  The radius of the circle is $\\sqrt{25} = 5$, so the circle has area $25\\pi$.  Therefore, half the area of the circle is $\\boxed{\\frac{25\\pi}{2}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Is the function $f(x) = \\lfloor x \\rfloor + \\frac{1}{2}$ even, odd, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since $f \\left( \\frac{1}{2} \\right) = \\left\\lfloor \\frac{1}{2} \\right\\rfloor + \\frac{1}{2} = \\frac{1}{2}$ and $f \\left( -\\frac{1}{2} \\right) = \\left\\lfloor -\\frac{1}{2} \\right\\rfloor + \\frac{1}{2} = -\\frac{1}{2},$ so if $f$ is either even or odd, it must be odd.\n\nBut $f(0) = \\lfloor 0 \\rfloor + \\frac{1}{2}.$  Every odd function $f(x)$ satisfies $f(0) = 0,$ so $f(x)$ is $\\boxed{\\text{neither}}.$"
+}

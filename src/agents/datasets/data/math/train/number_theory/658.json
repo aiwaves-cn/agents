@@ -1,0 +1,6 @@
+{
+    "problem": "If 25,197,624 hot dogs are packaged in sets of 4, how many will be left over?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We look for the remainder when $25,197,624$ is divided by $4$. We could manually divide to see that $4$ divides evenly into $25,197,624$ for a remainder of $0$, but the quicker way is to know the divisibility rule for $4$. If the last two digits of the number form a multiple of $4$, then the number itself is divisible by $4$.  In this case, $24$ is a multiple of $4$, so $25,197,624$ is also a multiple of $4$. That means $\\boxed{0}$ hot dogs will be left over."
+}

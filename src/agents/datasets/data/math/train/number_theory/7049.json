@@ -1,0 +1,6 @@
+{
+    "problem": "Let $N$ be the greatest integer multiple of 8, no two of whose digits are the same. What is the remainder when $N$ is divided by 1000?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We want a number with no digits repeating, so we can only use the digits 0-9 once in constructing our number. To make the greatest number, we want the greatest digit to occupy the leftmost side and the least digit to occupy the rightmost side. Therefore, the last three digits of the greatest number should be an arrangement of the digits $0,1,2$. Since the number has to be divisible by 8, the integer formed by the arrangement of $0,1,2$ is also divisible by 8. The only arrangement that works is $120$.\nTherefore, the remainder when the number is divided by $1000$ is $\\boxed{120}$."
+}

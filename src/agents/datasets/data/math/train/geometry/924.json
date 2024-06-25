@@ -1,0 +1,6 @@
+{
+    "problem": "A circle is circumscribed around $ABCD$ as follows: [asy]\npair pA, pB, pC, pD, pO;\npO = (0, 0);\npA = pO + dir(-40);\npB = pO + dir(40);\npC = pO + dir(130);\npD = pO + dir(190);\ndraw(pA--pB--pC--pA);\ndraw(pA--pD--pC--pA);\nlabel(\"$A$\", pA, SE);\nlabel(\"$B$\", pB, NE);\nlabel(\"$C$\", pC, NW);\nlabel(\"$D$\", pD, SW);\ndraw(circle(pO, 1));\nlabel(\"$30^\\circ$\", pA + dir(150) * .45);\nlabel(\"$40^\\circ$\", pC + dir(-20) * .35);\n[/asy] How many degrees are in $\\angle CAB + \\angle ACD$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "We can see that $\\angle ACB = 40^\\circ$ must be half of the central angle formed by the arc ${AB},$ or $80^\\circ.$ Likewise, $\\angle CAD = 30^\\circ$ must be half of the central angle formed by the arc ${CD},$ or $60^\\circ.$ Then, we can see that the angles formed by arcs ${BC}$ and ${DA}$ must sum to $360^\\circ - (80^\\circ + 60^\\circ) = 220^\\circ.$ That means the sum $\\angle CAB + \\angle ACD$ must be half of that, or $\\boxed{110^\\circ}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Steve has three quarters, three nickels and three pennies. If Steve selects three coins at random and without replacement, what is the probability that the total value is exactly 35 cents? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are a total of ${9 \\choose 3} = \\frac{9\\cdot 8 \\cdot 7}{3 \\cdot 2} = 84$ sets of 3 coins in total. The only way to get 35 cents is to have a quarter and two nickels, which can be done in ${3 \\choose 1} \\cdot {3 \\choose 2} = 9$ ways. So, the probability is $\\frac{9}{84} = \\boxed{\\frac{3}{28}}$."
+}

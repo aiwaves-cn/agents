@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $\\cot A \\cot C = \\frac{1}{2}$ and $\\cot B \\cot C = \\frac{1}{18}.$  Find $\\tan C.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the addition formula for tangent,\n\\[\\tan (A + B + C) = \\frac{\\tan A + \\tan B + \\tan C - \\tan A \\tan B \\tan C}{1 - (\\tan A \\tan B + \\tan A \\tan C + \\tan B \\tan C)}.\\]Since $A + B + C = 180^\\circ,$ this is 0.  Hence,\n\\[\\tan A + \\tan B + \\tan C = \\tan A \\tan B \\tan C.\\]From $\\cot A \\cot C = \\frac{1}{2},$ $\\tan A \\tan C = 2.$  Also, from $\\cot B \\cot C = \\frac{1}{18},$ $\\tan B \\tan C = 18.$\n\nLet $x = \\tan C.$  Then $\\tan A = \\frac{2}{x}$ and $\\tan B = \\frac{18}{x},$ so\n\\[\\frac{2}{x} + \\frac{18}{x} + x = \\frac{2}{x} \\cdot \\frac{18}{x} \\cdot x.\\]This simplifies to $20 + x^2 = 36.$  Then $x^2 = 16,$ so $x = \\pm 4.$\n\nIf $x = -4,$ then $\\tan A,$ $\\tan B,$ $\\tan C$ would all be negative.  This is impossible, because a triangle must have at least one acute angle, so $x = \\boxed{4}.$"
+}

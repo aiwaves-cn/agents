@@ -1,0 +1,6 @@
+{
+    "problem": "Find $a+b+c$, given that $x+y\\neq -1$ and  \\begin{align*}\nax+by+c&=x+7,\\\\\na+bx+cy&=2x+6y,\\\\\nay+b+cx&=4x+y.\n\\end{align*}",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since these equations look symmetric, at least on the left-hand side, we add all three together.  This gives us  \\begin{align*}\n&a(x+1+y)+b(y+x+1)+c(1+y+x)\\\\\n&\\qquad\\qquad=x+7+2x+6y+4x+y.\n\\end{align*} We then factor out $(1+x+y)$ on the left and simplify the right side to get \\begin{align*}\n(1+x+y)(a+b+c)&=7x+7y+7, \\text{ so}\\\\\n(1+x+y)(a+b+c)&=7(1+x+y).\n\\end{align*}\n\nSince $x+y\\neq -1$, we know $x+y+1\\neq 0$, so we can divide both sides by that term and find that $a+b+c=\\boxed{7}$."
+}

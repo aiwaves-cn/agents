@@ -1,0 +1,6 @@
+{
+    "problem": "Our club has 20 members, 10 boys and 10 girls.  In how many ways can we choose a president and a vice-president if they must be of the same gender?  Assume no one can hold both offices.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The president can be any one of the 20 members, and the vice-president can be any one of the 9 remaining members of the same sex. The answer is $20\\times 9=\\boxed{180}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Express $\\frac{3}{8}$ as a decimal.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "This can easily be converted into a fraction over a power of ten: \\[\n\\frac{3}{8} = \\frac{3 \\cdot 125}{8 \\cdot 125} = \\frac{375}{1000} = \\boxed{0.375}.\n\\]Note: In general if you have a fraction that is some $\\frac{x}{2^k}$, multiplying the numerator and denominator by $5^k$ will give a power of $10$ in the denominator for easy conversion to a decimal. In this case, $k = 3$."
+}

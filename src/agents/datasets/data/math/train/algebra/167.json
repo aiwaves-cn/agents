@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a\\star b = \\dfrac{\\sqrt{a+b}}{\\sqrt{a-b}}$. If $ x \\star 24 = 7$, find $x$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We know that $x\\star24=\\dfrac{\\sqrt{x+24}}{\\sqrt{x-24}}=7$. Because we cannot take the square root of a negative number and because the denominator of a fraction cannot be zero, we know that $x-24>0$. Thus, a reasonable guess for $x$ would be $x=25$. $\\dfrac{\\sqrt{25+24}}{\\sqrt{25-24}}=\\dfrac{\\sqrt{49}}{\\sqrt{1}}=7$, as desired, so our answer is indeed $x=\\boxed{25}$."
+}

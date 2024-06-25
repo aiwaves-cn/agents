@@ -1,0 +1,6 @@
+{
+    "problem": "Two distinct integers, $x$ and $y$, are randomly chosen from the set $\\{1,2,3,4,5,6,7,8,9,10\\}$.  What is the probability that $xy-x-y$ is even?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We note that $xy-x-y$ is very close to the expansion of $(x-1)(y-1)$.  (This is basically a use of Simon's Favorite Factoring Trick.)\n\nIf $xy-x-y$ is even, then $xy-x-y+1 = (x-1)(y-1)$ is odd. This only occurs when $x-1$ and $y-1$ are both odd, so $x$ and $y$ must be even. There are $\\binom{5}{2}$ distinct pairs of even integers, and $\\binom{10}{2}$ distinct pairs of integers, so the probability is $\\dfrac{\\binom{5}{2}}{\\binom{10}{2}} = \\boxed{\\frac{2}{9}}$."
+}

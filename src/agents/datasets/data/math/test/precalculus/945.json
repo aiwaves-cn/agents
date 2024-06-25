@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix $\\mathbf{M}$ that swaps the rows of a matrix.  In other words,\n\\[\\mathbf{M} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} c & d \\\\ a & b \\end{pmatrix}.\\]If no such matrix $\\mathbf{M}$ exists, then enter the zero matrix.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{M} = \\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix}.$  Then\n\\[\\mathbf{M} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} pa + qc & pb + qd \\\\ ra + sc & rb + sd \\end{pmatrix}.\\]We want this to be equal to $\\begin{pmatrix} c & d \\\\ a & b \\end{pmatrix}.$  We can achieve this by taking $p = 0,$ $q = 1,$ $r = 1,$ and $s = 0,$ so $\\mathbf{M} = \\boxed{\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}}.$"
+}

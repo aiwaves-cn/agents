@@ -1,0 +1,6 @@
+{
+    "problem": "A chess team has $26$ members. However, only $16$ members attended the last meeting: half of the girls attended but all of the boys attended. How many girls are on the chess team?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let there be $B$ boys and $G$ girls. Since every member is either a boy or a girl, $B+G=26$. Also, we have $\\frac{1}{2}G+B=16$. Subtracting the second equation from the first, we have:\n\n$\\frac{1}{2}G=26-16=10\\implies G=20$.\n\nThus there are $\\boxed{20}$ girls on the chess team."
+}

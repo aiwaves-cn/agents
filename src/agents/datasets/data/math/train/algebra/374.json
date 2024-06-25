@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $D$ and $E$ are the midpoints of $\\overline{AB}$ and $\\overline{BC}$ respectively. Find the sum of the slope and $y$-intercept of the line passing through the points $C$ and $D.$ [asy]\nsize(180); defaultpen(linewidth(.7pt)+fontsize(10pt));\npair A, B, C, D, E, F;\nA=(0,6);\nB=(0,0);\nC=(8,0);\nD=(0,3);\nE=(4,0);\nF=(8/3,2);\ndraw(E--A--C--D);\ndraw((-1,0)--(10,0), EndArrow);\ndraw((0,-1)--(0,8), EndArrow);\nlabel(\"$A(0,6)$\", A, W);\nlabel(\"$B(0,0)$\", B, SW);\nlabel(\"$C(8,0)$\", C, S);\nlabel(\"$D$\", D, W);\nlabel(\"$E$\", E, S);\nlabel(\"$F$\", F, SW);\nlabel(\"$x$\", (10,0), dir(0));\nlabel(\"$y$\", (0,8), dir(90));\n[/asy]",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since $D$ is the midpoint of $\\overline{AB},$ it has coordinates $$\\left(\\frac{1}{2}(0+0),\\frac{1}{2}(0+6)\\right)=(0,3).$$The line passing through $C$ and $D$ has slope $$\\frac{3-0}{0-8}=-\\frac{3}{8};$$the $y$-intercept of this line is the $y$-coordinate of point $D,$ or $3.$ Therefore, the equation of the line passing through points $C$ and $D$ is $$y=-\\frac{3}{8}x+3;$$the sum of the slope and $y$-intercept is then $$-\\frac{3}{8}+3=-\\frac{3}{8}+\\frac{24}{8}=\\boxed{\\frac{21}{8}}.$$"
+}

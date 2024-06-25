@@ -1,0 +1,6 @@
+{
+    "problem": "What is the domain of the function $f(x)=\\frac{x+6}{\\sqrt{x^2-3x-4}}$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The function is defined when the value inside the square root is positive, i.e. we must have $x^2-3x-4>0$. Factoring, we get $(x-4)(x+1)>0$. So either both factors in the left hand side are negative or they are both positive. They are both negative when $x<-1$. They are both positive when $x>4$. So the domain of $f(x)$ is $x<-1 \\text{ or } x>4$, or $x \\in \\boxed{(-\\infty, -1) \\cup (4, \\infty)}$ in interval notation."
+}

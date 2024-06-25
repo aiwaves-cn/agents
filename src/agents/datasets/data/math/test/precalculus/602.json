@@ -1,0 +1,6 @@
+{
+    "problem": "There is a unique pair of positive real numbers satisfying the equations \\[ x^4-6x^2y^2+y^4 = 8 \\qquad\\mbox{and}\\qquad x^3y-xy^3 = 2\\sqrt{3}. \\]Determine $x$, writing your answer in the form $a\\cos\\theta$, with $\\theta$ in degrees.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Once we realize to multiply the second equation by 4, the terms in the equations look very much like the expansion of $(x+y)^4$, with some negative signs appearing.  Closer inspection reveals that the two given equations are equivalent to the real and imaginary parts of a single statement involving complex numbers: \\[ (x+iy)^4 = 8 + 8i\\sqrt{3} = 16e^{\\pi i/3}. \\]In other words, we need only find the fourth root of $16e^{\\pi i/3}$ in the first quadrant, where $x$ and $y$ will both be positive.  Thus $x+iy=2e^{\\pi i/12}$; taking the real part yields our answer $x=2\\cos\\left(\\frac{\\pi}{12}\\right) = \\boxed{2\\cos 15^{\\circ}}$."
+}

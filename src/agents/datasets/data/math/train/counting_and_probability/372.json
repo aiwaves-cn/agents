@@ -1,0 +1,6 @@
+{
+    "problem": "Cara is sitting at a circular table with her five friends as shown below. How many different possible pairs of people could Cara be sitting between?\n\n[asy]\ndraw(circle((0,0),1));\nlabel(\"$\\_$\",1.5dir(0));\nlabel(\"$\\_$\",1.5dir(60));\nlabel(\"Cara\",1.5dir(120));\nlabel(\"$\\_$\",1.5dir(180));\nlabel(\"$\\_$\",1.5dir(240));\nlabel(\"$\\_$\",1.5dir(300));\n[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The number of pairs of neighbors for Cara actually has nothing to do with the shape of the table she is sitting at. That is, all that matters is that she has 5 friends and two of them will be her neighbors. There are ${5 \\choose 2} = \\boxed{10}$ pairs of friends that she can thus sit between."
+}

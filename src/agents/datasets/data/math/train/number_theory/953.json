@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_n = \\frac{10^n-1}{9}$. Define $d_n$ to be the greatest common divisor of $a_n$ and $a_{n+1}$. What is the maximum possible value that $d_n$ can take on?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "From the Euclidean Algorithm,\n\\[\n\\gcd(a_{n}, a_{n+1}) = \\gcd(a_n, a_{n+1} - 10a_n).\n\\]We compute $a_{n+1} - 10a_n = \\frac{10^{n+1}-1}{9} - \\frac{10^{n+1}-10}{9} = 1$. Therefore, $a_{n+1}$ and $a_n$ share no common factors and $d_n$ is always $\\boxed{1}$."
+}

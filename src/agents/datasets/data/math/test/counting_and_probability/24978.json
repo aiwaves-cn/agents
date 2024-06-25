@@ -1,0 +1,6 @@
+{
+    "problem": "In a class of 20 students, all but 4 of the students put their names on a typed assignment. If the teacher randomly guesses, what is the probability that she correctly guesses which paper belongs to each of the four remaining students? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The probability that the teacher guesses the first student's paper correctly is $\\frac{1}{4}$.  Given that the first guess is correct, the probability that she guesses the second student's paper correctly is $\\frac{1}{3}$.  Given that both of the first two guesses were correct, the probability that she guesses the third student's paper correctly is $\\frac{1}{2}$.  If the first three are correct, then the fourth will be correct with probability $1$.  The probability that all four guesses will be correct is $\\frac{1}{4}\\cdot \\frac{1}{3}\\cdot \\frac{1}{2}\\cdot 1 = \\boxed{\\frac{1}{24}}$."
+}

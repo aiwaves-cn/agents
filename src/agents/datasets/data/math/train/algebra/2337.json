@@ -1,0 +1,6 @@
+{
+    "problem": "The first three stages of a pattern are shown below, in which each line segment represents a toothpick. If the pattern continues such that at each successive stage, three toothpicks are added to the previous arrangement, how many toothpicks are necessary to create the arrangement for the 250th stage? [asy]\nsize(150);\ndefaultpen(linewidth(0.7));\nvoid drawSquare(pair A){\n\ndraw((A.x + 0.1,A.y)--(A.x + 0.9,A.y));\n\ndraw((A.x,A.y + 0.1)--(A.x,A.y + 0.9));\n\ndraw((A.x + 1,A.y + 0.1)--(A.x + 1,A.y + 0.9));\n\ndraw((A.x + 0.1,A.y + 1)--(A.x + 0.9,A.y + 1));\n}\n\nint k = 0;\n\nfor(int i = 1; i <= 3; ++i){\n\nfor(int j = 0; j < i; ++j){\n\ndrawSquare((k,0));\n\n++k;\n\n}\n\ndraw((k+0.1,0.5)--(k+0.9,0.5),EndArrow);\n\n++k;\n}\nlabel(\"$\\cdots$\",(k,0.5));\n[/asy]",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The number of toothpicks in each stage form an arithmetic sequence.  The first term in this arithmetic sequence is 4, and the common difference is 3 (the number of toothpicks added to get to the next stage), so the number of toothpicks used in the 250th stage is $4 + 3 \\cdot 249 = \\boxed{751}$."
+}

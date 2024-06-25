@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest constant $M,$ so that\n\\[\\frac{a^2 + b^2}{c^2} > M\\]whenever $a,$ $b,$ and $c$ are the sides of a triangle.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Consider a triangle $ABC$ where $a = b.$\n\n[asy]\nunitsize (3 cm);\n\npair A, B, C;\n\nA = (0,0);\nB = (2,0);\nC = (1,0.2);\n\ndraw(A--B--C--cycle);\n\nlabel(\"$A$\", A, W);\nlabel(\"$B$\", B, E);\nlabel(\"$C$\", C, N);\nlabel(\"$a$\", (B + C)/2, N);\nlabel(\"$a$\", (A + C)/2, N);\nlabel(\"$c$\", (A + B)/2, S);\n[/asy]\n\nAs $\\angle ACB$ approaches $180^\\circ,$ $c$ approaches $2a,$ so $\\frac{a^2 + b^2}{c^2}$ approaches $\\frac{a^2 + a^2}{(2a)^2} = \\frac{1}{2}.$  This means $M \\le \\frac{1}{2}.$\n\nOn the other hand, by the triangle inequality, $c < a + b,$ so\n\\[c^2 < (a + b)^2 = a^2 + 2ab + b^2.\\]By AM-GM, $2ab < a^2 + b^2,$ so\n\\[c^2 < 2a^2 + 2b^2.\\]Hence,\n\\[\\frac{a^2 + b^2}{c^2} > \\frac{1}{2}.\\]Therefore, the largest such constant $M$ is $\\boxed{\\frac{1}{2}}.$"
+}

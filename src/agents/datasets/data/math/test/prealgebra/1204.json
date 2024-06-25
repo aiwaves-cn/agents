@@ -1,0 +1,6 @@
+{
+    "problem": "Benjamin is trying to break a combination lock. This particular type of lock has 5 digits from 0 to 9, and Benjamin just happens to know that there can be no repeated digits in the code for this type of lock. How many valid codes are there?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "For his first digit, Benjamin has 10 possible choices. For his second digit, he has 9 possible choices, since he cannot repeat any digits. For his third, fourth, and fifth digits, he has 8, 7, and 6 possible choices. Therefore, there are $10 \\cdot 9 \\cdot 8 \\cdot 7 \\cdot 6 = \\boxed{30,\\!240}$ possible codes."
+}

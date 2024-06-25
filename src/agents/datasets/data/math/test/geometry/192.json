@@ -1,0 +1,6 @@
+{
+    "problem": "$ABCD$ is a square 4 inches on a side, and each of the inside squares is formed by joining the midpoints of the outer square's sides. What is the area of the shaded region in square inches?\n\n[asy]\ndraw( (-1,-1)--(1,-1) -- (1,1) -- (-1,1)--cycle); draw( (-2,-2)--(2,-2) -- (2,2) -- (-2,2)--cycle);\ndraw( (-2, -2) -- (2, -2) -- (2,2) -- (-2 ,2)-- cycle); draw( (0, 2) -- (2,0) -- (0, -2) -- (-2, 0)-- cycle);\ndraw( (0, 2) -- (2, 0) -- (0 , -2) -- (-2 ,0)-- cycle);\n\nfilldraw( (-1, -1) -- (1, -1) -- (0, -2)--cycle, gray);\nfilldraw( (1, -1) -- (1, 1) -- (2, 0)--cycle, gray);\nfilldraw( (1, 1) -- (-1, 1) -- (0, 2)--cycle, gray);\nfilldraw( (-1, 1) -- (-1, -1) -- (-2, 0)--cycle, gray);\n\nlabel(\"$A$\", (-2,2), NW);\nlabel( \"$B$\", (2,2), NE);\nlabel( \"$C$\", (2,-2), SE);\nlabel( \"$D$\", (-2,-2), SW);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Connecting the midpoints of the sides of a square in order forms a square that has half the area of the original square.  So, the square formed by connecting the midpoints of $ABCD$ has area $\\frac12\\cdot 4^2 = 8$ square inches.  The smallest square in the diagram is formed by connecting the midpoints of this square with area 8, so the smallest square has area $\\frac12 \\cdot 8 =4$ square inches, leaving $8-4=\\boxed{4}$ square inches of shaded area."
+}

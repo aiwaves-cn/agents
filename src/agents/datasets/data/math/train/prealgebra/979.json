@@ -1,0 +1,6 @@
+{
+    "problem": "The square quilt block shown is made from nine unit squares, some of which have been divided in half to form triangles. What fraction of the square quilt is shaded? Express your answer as a common fraction.\n\n[asy]size(75);\nfill(scale(3)*unitsquare,gray(.6));\npath[] interior = (1,0)--(0,1)--(1,1)--cycle^^(1,1)--(2,1)--(2,2)--(1,2)--cycle^^(1,2)--(0,2)--(1,3)--cycle^^(2,1)--(2,0)--(3,1)--cycle^^(2,2)--(2,3)--(3,2)--cycle;\nclip(interior);\ndraw(interior);\ndraw(scale(3)*unitsquare);\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We can slide the triangles without changing their shape or area until one row of squares is shaded.  This shaded row is one of the three rows of squares in the figure.  Thus, the shaded area is $\\boxed{\\frac13}$ of the area of the quilt."
+}

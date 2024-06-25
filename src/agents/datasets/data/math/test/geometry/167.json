@@ -1,0 +1,6 @@
+{
+    "problem": "The points $A(2,5), B(6,5), C(5,2)$ and $D(1,2)$ are the vertices of a parallelogram. If the parallelogram is translated down 2 units and right three units, what will be the coordinates of the final image of point $B$?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "When an image is translated to the right we just add the number of units it is being translated to the original $x$-coordinate. When an image is translated down we just subtract that number of units from the $y$-coordinate. In this case we'll subtract 2 from the $y$-coordinates and add 3 to the   $x$-coordinates. This will make point $B(6, 5)$ move to $B'(6 + 3, 5 - 2) = \\boxed{(9, 3)}$."
+}

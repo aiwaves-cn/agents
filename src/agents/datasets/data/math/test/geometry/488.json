@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A(0, 0)$, $B(6, 0)$, $C(6, 10)$ and $D(0, 10)$ are vertices of rectangle $ABCD$, and $E$ is on segment $CD$ at $(2, 10)$. What is the ratio of the area of triangle $ADE$ to the area of quadrilateral $ABCE$? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The area of triangle $ADE$ is $\\frac{1}{2}(10)(2)=10$ square units, and the area of rectangle $ABCD$ is $(6)(10)=60$ square units.  Subtracting, we find that the area of $ABCE$ is 50 square units.  Therefore, the ratio of the area of triangle $ADE$ to the area of quadrilateral $ABCE$ is $10/50=\\boxed{\\frac{1}{5}}$."
+}

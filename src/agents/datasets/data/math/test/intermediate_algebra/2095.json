@@ -1,0 +1,6 @@
+{
+    "problem": "Let $p(x)$ be the second degree polynomial such that $p(1) = 1,$ $p(2) = 3,$ and $p(3) = 2.$  Then $p(p(x)) = x$ has four real solutions.  Find the only such solution which is not an integer.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since\n\\begin{align*}\np(p(1)) &= p(1) = 1, \\\\\np(p(2)) &= p(3) = 2, \\\\\np(p(3)) &= p(2) = 3,\n\\end{align*}three of the four solutions to $p(p(x))$ are $x = 1,$ 2, and 3.\n\nAlso, the quadratic equation $p(x) = x$ has $x = 1$ as a root.  Let $r$ be the other root.  Then\n\\[p(p(r)) = p(r) = r,\\]so $r$ must be the fourth root we seek.\n\nSince $p(x) - x = 0$ for $x = 1$ and $x = r,$\n\\[p(x) - x = c(x - 1)(x - r)\\]for some constant $c.$  Setting $x = 2$ and $x = 3,$ we get\n\\begin{align*}\n1 &= c(2 - r), \\\\\n-1 &= 2c(3 - r).\n\\end{align*}Dividing these equations, we get\n\\[-1 = \\frac{2(3 - r)}{2 - r}.\\]Solving for $r,$ we find $r = \\boxed{\\frac{8}{3}}.$"
+}

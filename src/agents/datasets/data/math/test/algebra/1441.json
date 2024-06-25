@@ -1,0 +1,6 @@
+{
+    "problem": "Sam decides to start a rumor. Sam tells the rumor to her three friends. Each of Sam's three friends then tells the rumor to three friends who have not heard the rumor. This continues for five total cycles. Sam telling her three friends was the first cycle. How many people, not including Sam, will have heard the rumor when the fifth cycle is complete?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "At the end of one cycle, 3 people have heard the rumor.  At the end of two cycles, $3+9$ people have heard the rumor.  At the end of three cycles, $3+9+27$ people have heard the rumor, and so on.  At the end of five cycles, $3+9+27+81+243=\\boxed{363}$ people have heard the rumor.\n\nNote: The formula \\[\na+ar+ar^2+\\cdots+ar^{n-1}=\\frac{ar^{n}-a}{r-1}\n\\] for the sum of a geometric series may be used to sum $3^1+3^2+\\cdots+3^5$."
+}

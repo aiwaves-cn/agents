@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $k$ so that\n\\[3 + \\frac{3 + k}{4} + \\frac{3 + 2k}{4^2} + \\frac{3 + 3k}{4^3} + \\dotsb = 8.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[3 + \\frac{3 + k}{4} + \\frac{3 + 2k}{4^2} + \\frac{3 + 3k}{4^3} + \\dotsb = 8.\\]Multiplying this equation by 4, we get\n\\[12 + (3 + k) + \\frac{3 + 2k}{4} + \\frac{3 + 3k}{4^2} + \\dotsb = 32.\\]Subtracting these equations, we get\n\\[12 + k + \\frac{k}{4} + \\frac{k}{4^2} + \\frac{k}{4^3} + \\dotsb = 24.\\]Then\n\\[12 + \\frac{k}{1 - 1/4} = 24.\\]Solving for $k,$ we find $k = \\boxed{9}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The vertex of the parabola described by the equation $y=-2x^2-12x-15$ is $(m,n)$. What is $m+n$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We will complete the square on the given quadratic expression to find the vertex. Factoring $-2$ from the first two terms, we have \\[y=-2(x^2+6x)-15\\]In order to make the expression inside the parentheses a perfect square, we need to add and subtract $(6/2)^2=9$ inside the parentheses. Doing this, we get \\[y=-2(x^2+6x+9-9)-15 \\Rightarrow -2(x+3)^2+3\\]The graph of an equation of the form $y=a(x-h)^2+k$ is a parabola with vertex at $(h,k)$, so the vertex of our parabola is at $(-3,3)$. Thus, $m+n=-3+3=\\boxed{0}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $k$ so that\n\\[x^2 - (k - 3) x - k + 6 > 0\\]for all $x.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If we graph $y = x^2 - (k - 3) x - k + 6,$ then we obtain an upward-facing parabola.  Thus, the inequality\n\\[x^2 - (k - 3) x - k + 6 > 0\\]holds as long as the discriminant of the quadratic is negative.\n\nThis gives us\n\\[(k - 3)^2 - 4(-k + 6) < 0.\\]This simplifies to $k^2 - 2k - 15 < 0,$ which factors as $(k + 3)(k - 5) < 0.$  Thus, $k \\in \\boxed{(-3,5)}.$"
+}

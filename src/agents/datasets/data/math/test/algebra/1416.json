@@ -1,0 +1,6 @@
+{
+    "problem": "Find the domain of $\\sqrt{6-x-x^2}$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we simplify the expression: $$\\sqrt{6-x-x^2}=\\sqrt{(2-x)(3+x)}$$ The expression inside the square root must be non-negative. The quadratic changes signs at the roots $2$ and $-3$ and is positive between the two values. Therefore, the domain of the expression is $\\boxed{[-3,2]}$."
+}

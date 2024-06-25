@@ -1,0 +1,6 @@
+{
+    "problem": "All of the even numbers from 2 to 98 inclusive, except those ending in 0, are multiplied together. What is the rightmost digit (the units digit) of the product?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If the numbers 2, 4, 6, and 8 are multiplied, the product is 384, so 4 is the final digit of the product of a set of numbers ending in 2, 4, 6, and 8. Since there are ten such sets of numbers, the final digit of the overall product is the same as the final digit of $4^{10}$. Now, $4^{10}=(4^2)^5=16^5$. Next, consider $6^5$. Since any number of 6's multiply to give 6 as the final digit, the final digit of the required product is $\\boxed{6}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For a positive constant $c,$ in spherical coordinates $(\\rho,\\theta,\\phi),$ find the shape described by the equation\n\\[\\rho = c.\\](A) Line\n(B) Circle\n(C) Plane\n(D) Sphere\n(E) Cylinder\n(F) Cone\n\nEnter the letter of the correct option.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "In spherical coordinates, $\\rho$ is the distance from a point to the origin.  So if this distance is fixed, then we obtain a sphere.  The answer is $\\boxed{\\text{(D)}}.$\n\n[asy]\nimport three;\nimport solids;\n\nsize(180);\ncurrentprojection = perspective(6,3,2);\n\ncurrentlight = (1,0,1);\n\ndraw((-1,0,0)--(-2,0,0));\ndraw((0,-1,0)--(0,-2,0));\ndraw((0,0,-1)--(0,0,-2));\ndraw((1,0,0)--(2,0,0));\ndraw((0,1,0)--(0,2,0));\ndraw((0,0,1)--(0,0,2));\ndraw(surface(sphere(1)),gray(0.8));\n\nlabel(\"$\\rho = c$\", (1,1.2,-0.6));\n[/asy]"
+}

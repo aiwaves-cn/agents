@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $x + y + z = 3.$  Find the minimum value of\n\\[\\frac{4}{x} + \\frac{9}{y} + \\frac{16}{z}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Cauchy-Schwarz,\n\\[(x + y + z) \\left( \\frac{4}{x} + \\frac{9}{y} + \\frac{16}{z} \\right) \\ge (2 + 3 + 4)^2 = 81,\\]so\n\\[\\frac{4}{x} + \\frac{9}{y} + \\frac{16}{z} \\ge \\frac{81}{3} = 27.\\]Equality occurs when $\\frac{x^2}{4} = \\frac{y^2}{9} = \\frac{z^2}{16}.$  Along with the condition $x + y + z = 3,$ we can solve to get $x = \\frac{2}{3},$ $y = 1,$ and $z = \\frac{4}{3},$ so the minimum value is $\\boxed{27}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\frac{1990^3 - 1000^3 - 990^3}{(1990)(1000)(990)}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = 1000$ and $b = 990.$  Then $a + b = 1990,$ so\n\\begin{align*}\n\\frac{1990^3 - 1000^3 - 990^3}{(1990)(1000)(990)} &= \\frac{(a + b)^3 - a^3 - b^3}{(a + b)ab} \\\\\n&= \\frac{a^3 + 3a^2 b + 3ab^2 + b^3 - a^3 - b^3}{ab(a + b)} \\\\\n&= \\frac{3a^2 b + 3ab^2}{ab(a + b)} \\\\\n&= \\frac{3ab(a + b)}{ab(a + b)} \\\\\n&= \\boxed{3}.\n\\end{align*}"
+}

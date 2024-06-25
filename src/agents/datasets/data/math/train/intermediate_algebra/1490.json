@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be the roots of $k(x^2 - x) + x + 5 = 0.$  Let $k_1$ and $k_2$ be the values of $k$ for which $a$ and $b$ satisfy\n\\[\\frac{a}{b} + \\frac{b}{a} = \\frac{4}{5}.\\]Find\n\\[\\frac{k_1}{k_2} + \\frac{k_2}{k_1}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The quadratic equation in $x$ is $kx^2 - (k - 1) x + 5 = 0,$ so by Vieta's formulas, $a + b = \\frac{k - 1}{k}$ and $ab = \\frac{5}{k}.$  Then\n\\begin{align*}\n\\frac{a}{b} + \\frac{b}{a} &= \\frac{a^2 + b^2}{ab} \\\\\n&= \\frac{(a + b)^2 - 2ab}{ab} \\\\\n&= \\frac{(a + b)^2}{ab} - 2 \\\\\n&= \\frac{(\\frac{k - 1}{k})^2}{\\frac{5}{k}} - 2 \\\\\n&= \\frac{(k - 1)^2}{5k} - 2.\n\\end{align*}So\n\\[\\frac{(k - 1)^2}{5k} - 2 = \\frac{4}{5}.\\]This equation simplifies to $k^2 - 16k + 1 = 0.$  Again by Vieta's formulas, $k_1 + k_2 = 16$ and $k_1 k_2 = 1,$ so\n\\begin{align*}\n\\frac{k_1}{k_2} + \\frac{k_2}{k_1} &= \\frac{k_1^2 + k_2^2}{k_1 k_2} \\\\\n&= \\frac{(k_1 + k_2)^2 - 2k_1 k_2}{k_1 k_2} \\\\\n&= \\frac{(k_1 + k_2)^2}{k_1 k_2} - 2 \\\\\n&= 16^2 - 2 = \\boxed{254}.\n\\end{align*}"
+}

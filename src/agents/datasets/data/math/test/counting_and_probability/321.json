@@ -1,0 +1,6 @@
+{
+    "problem": "Ms. Hamilton's eighth-grade class wants to participate in the annual three-person-team basketball tournament.  Lance, Sally, Joy, and Fred are chosen for the team.  In how many ways can the three starters be chosen?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "When three players start, one is the alternate.  Because any of the four players might be the alternate, there are four ways to select a starting team: Lance-Sally-Joy, Lance-Sally-Fred, Lance-Joy-Fred, and Sally-Joy-Fred.  Or, we can simply note that we have $\\boxed{4}$ choices for who to leave out!"
+}

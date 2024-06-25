@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $k$ so that the line $3x + 5y + k = 0$ is tangent to the parabola $y^2 = 24x.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Solving for $x$ in $3x + 5y + k = 0,$ we get\n\\[x = -\\frac{5y + k}{3}.\\]Substituting into $y^2 = 24x,$ we get\n\\[y^2 = -40y - 8k,\\]or $y^2 + 40y + 8k = 0.$  Since we have a tangent, this quadratic will have a double root, meaning that its discriminant will be 0.  This give us $40^2 - 4(8k) = 0,$ so $k = \\boxed{50}.$"
+}

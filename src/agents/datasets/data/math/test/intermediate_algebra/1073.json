@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the rational roots of $2x^4 - x^3 - 18x^2 + 14x + 15 = 0.$  Enter all the rational roots, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the Rational Root Theorem, the only possible rational roots are of the form $\\frac{a}{b},$ where $a \\mid 15$ and $b \\mid 2.$  Checking all possibilities, we find that the rational roots are $\\boxed{\\frac{5}{2},-3}.$"
+}

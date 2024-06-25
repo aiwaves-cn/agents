@@ -1,0 +1,6 @@
+{
+    "problem": "A textbook has 1,000 pages.  How many of the pages have page numbers whose digits add up to exactly 4?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "There are only a few ways to make one, two, and three digit numbers add up to $4$.  The only one-digit number whose sum is $4$ is $4$ itself.  Continuing with two-digit numbers, we note that the digits must be $4$ and $0$, $1$ and $3$, or $2$ and $2$.  This means that $13$, $22$, $31$, and $40$ are the only two-digit numbers whose digits sum to 4.  For the three-digit numbers, we organize the work in a table.\n\n\\begin{tabular}{|c|c|c|}\\hline\nPossible Digits&Possible Numbers&Total Possibilities\\\\\\hline\n4,0,0&400&1\\\\\\hline\n3,1,0&103, 130, 301, 310&4\\\\\\hline\n2,2,0&202, 220&2\\\\\\hline\n2,1,1&112, 121, 211&3\\\\\\hline\n\\end{tabular}Adding up the last column, we see that there are $10$ three-digits numbers whose digits add up to $4$.  Adding those to the possible one-and-two digit numbers, we get $\\boxed{15}$ pages in the textbook which have digits that add up to $4$."
+}

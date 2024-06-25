@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ satisfies $x^2 + 3x + \\frac{3}x + \\frac{1}{x^2} = 26$ and $x$ can be written as $a + \\sqrt{b}$ where $a$ and $b$ are positive integers, then find $a + b$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $k = x+\\frac 1x$. Notice that $k^2 = x^2 + 2 + \\frac 1{x^2}$, so $x^2 + \\frac 1{x^2} = k^2-2$. Substituting this into the equation gives $(k^2-2) + 3 \\cdot (k) = 26$, or $k^2 + 3k - 28 = (k+7)(k-4) = 0$. Since $x$ is positive, then $k > 0$, so $k = 4$. Substituting back, $x + \\frac 1x = 4 \\Longrightarrow x^2 - 4x + 1 = 0 \\Longrightarrow x = \\frac{4 \\pm \\sqrt{16 - 4}}{2} = 2 \\pm \\sqrt{3}$. To match the desired form, we take the solution $x = 2+\\sqrt{3}$, and the answer is $\\boxed{5}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $AX$ in the diagram.\n\n[asy]\n\nimport markers;\n\nreal t=.56;\n\npair A=(0,0);\n\npair B=(3,2);\n\npair C=(.5,1.5);\n\npair X=t*A+(1-t)*B;\n\ndraw(C--A--B--C--X);\n\nlabel(\"$A$\",A,SW);\n\nlabel(\"$B$\",B,E);\n\nlabel(\"$C$\",C,N);\n\nlabel(\"$X$\",X,SE);\n\nmarkangle(n=1,radius=15,A,C,X,marker(markinterval(stickframe(n=1),true)));\n\nmarkangle(n=1,radius=15,X,C,B,marker(markinterval(stickframe(n=1),true)));\n\nlabel(\"$24$\",.5*(B+X),SE);\n\nlabel(\"$28$\",.5*(B+C),N);\n\nlabel(\"$21$\",.5*(A+C),NW);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The Angle Bisector Theorem tells us that  \\[\\frac{AC}{AX}=\\frac{BC}{BX}\\]so \\[AX=\\frac{AC\\cdot BX}{BC}=\\frac{21\\cdot24}{28}=\\frac{7\\cdot3\\cdot6\\cdot 4}{7\\cdot4}=\\boxed{18}.\\]"
+}

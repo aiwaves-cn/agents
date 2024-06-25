@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $(-1 + i \\sqrt{3})^8.$  Enter the answer in rectangular form.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "First, we convert $-1 + i \\sqrt{3}$ to polar form, which gives us $2 \\operatorname{cis} 120^\\circ.$  Then by DeMoivre's Theorem,\n\\begin{align*}\n(2 \\operatorname{cis} 120^\\circ)^8 &= 2^8 \\operatorname{cis} 960^\\circ \\\\\n&= 256 \\operatorname{cis} 240^\\circ \\\\\n&= 256 \\left( -\\frac{1}{2} - \\frac{\\sqrt{3}}{2} i \\right) \\\\\n&= \\boxed{-128 - 128 \\sqrt{3} i}.\n\\end{align*}"
+}

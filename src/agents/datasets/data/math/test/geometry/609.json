@@ -1,0 +1,6 @@
+{
+    "problem": "Kendra has an unlimited supply of unbreakable sticks of length 2, 4 and 6 inches. Using these sticks, how many non-congruent triangles can she make if each side is made with a whole stick? Two sticks can be joined only at a vertex of the triangle. (A triangle with sides of lengths 4, 6, 6 is an example of one such triangle to be included, whereas a triangle with sides of lengths 2, 2, 4 should not be included.)",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "To start, we can make three equilateral triangles, with sides $2,2,2$, $4,4,4$ and $6,6,6$.  Next, look at isosceles triangles.  If two sides have length 6, the remaining side could be $2$ since $6+2>6$ and $6+6>2$.  The remaining side could also be 4 since $6+4>6$ and $6+6>4$.  So, this is two more triangles.  If two sides have length 4, the remaining side could have length $6$ since $6+4>4$ and $4+4>6$.  The remaining side could also have length 2 since $2+4>4$ and $4+4>2$.  There are no possible triangles with all sides of different length, since $2+4=6$.  Thus, there are a total of $\\boxed{7}$ non congruent triangles."
+}

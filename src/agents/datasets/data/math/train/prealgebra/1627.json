@@ -1,0 +1,6 @@
+{
+    "problem": "The altitude of an equilateral triangle is $\\sqrt6$ units.  What is the area of the triangle, in square units? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Drawing an altitude of an equilateral triangle splits it into two 30-60-90 right triangles: [asy]\nunitsize(0.6inch);\npair A, B, C, F;\nA = (0,1);\nB = rotate(120)*A;\nC = rotate(120)*B;\nF = foot(A,B,C);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--F);\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$M$\",F,S);\n[/asy]\n\n\nThe altitude is the longer leg of each 30-60-90 triangle, so $AM = \\sqrt{3}\\cdot BM$ in the diagram above. Since $AM = \\sqrt{6}$, we have \\[BM = \\frac{AM}{\\sqrt{3}} = \\frac{\\sqrt{6}}{\\sqrt{3}} = \\sqrt{\\frac63} = \\sqrt{2}.\\] Therefore, we have $BC = 2BM = 2\\sqrt{2}$, so the area of the triangle is $(BC)(AM)/2 = (2\\sqrt{2})(\\sqrt{6})/2\n=\\sqrt{12} = \\boxed{2\\sqrt{3}}$ square units."
+}

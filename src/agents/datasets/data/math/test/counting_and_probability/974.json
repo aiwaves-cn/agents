@@ -1,0 +1,6 @@
+{
+    "problem": "How many of the factorials from 1! to 100! are divisible by 9?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "To have 9 as a factor, $n!$ must have two factors of 3.  The first such $n$ for which this is true is 6, since  $6! = \\textbf{6} \\times 5 \\times 4 \\times \\textbf{3} \\times 2 \\times 1$.  Since 9 is a factor of $6!$ and $6!$ is a factor of $n!$ for all $n \\ge 6$, the numbers $6!, 7!, 8!, \\ldots, 99!, 100!$ are all divisible by 9.  There are $100 - 6 + 1 = \\boxed{95}$ numbers in that list."
+}

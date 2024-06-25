@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a nonreal complex number such that $|z| = 1.$  Find the real part of $\\frac{1}{1 - z}.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Then from the condition $|z| = 1,$ $\\sqrt{x^2 + y^2} = 1,$ so $x^2 + y^2 = 1.$\n\nNow,\n\\begin{align*}\n\\frac{1}{1 - z} &= \\frac{1}{1 - x - yi} \\\\\n&= \\frac{1 - x + yi}{(1 - x - yi)(1 - x + yi)} \\\\\n&= \\frac{1 - x + yi}{(1 - x)^2 + y^2} \\\\\n&= \\frac{1 - x + yi}{1 - 2x + x^2 + y^2} \\\\\n&= \\frac{1 - x + yi}{2 - 2x}.\n\\end{align*}The real part of this complex number is $\\frac{1 - x}{2 - 2x} = \\frac{1 - x}{2(1 - x)} = \\boxed{\\frac{1}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all $a,$ $0^\\circ < a < 360^\\circ,$ such that $\\cos a,$ $\\cos 2a,$ and $\\cos 3a$ form an arithmetic sequence, in that order.  Enter the solutions, separated by commas, in degrees.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We want $a$ to satisfy\n\\[\\cos a + \\cos 3a = 2 \\cos 2a.\\]By the double-angle and triple-angle formula, this becomes\n\\[\\cos a + (4 \\cos^3 a - 3 \\cos a) = 2 \\cdot (2 \\cos^2 a - 1).\\]This simplifies to\n\\[4 \\cos^3 a - 4 \\cos^2 a - 2 \\cos a + 2 = 0,\\]which factors as $2 (\\cos a - 1)(2 \\cos^2 a - 1) = 0.$  Hence, $\\cos a = 1,$ $\\cos a = \\frac{1}{\\sqrt{2}},$ or $\\cos a = -\\frac{1}{\\sqrt{2}}.$\n\nThe equation $\\cos a = 1$ has no solutions for $0^\\circ < a < 360^\\circ.$\n\nThe equation $\\cos a = \\frac{1}{\\sqrt{2}}$ has solutions $45^\\circ$ and $315^\\circ.$\n\nThe equation $\\cos a = -\\frac{1}{\\sqrt{2}}$ has solutions $135^\\circ$ and $225^\\circ.$\n\nThus, the solutions are $\\boxed{45^\\circ, 135^\\circ, 225^\\circ, 315^\\circ}.$"
+}

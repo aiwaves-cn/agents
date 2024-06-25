@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be positive real numbers.  Find the minimum value of\n\\[\\frac{\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}}{\\frac{1}{a + b} + \\frac{1}{a + c} + \\frac{1}{b + c}}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-HM,\n\\[\\frac{a + b}{2} \\ge \\frac{2}{\\frac{1}{a} + \\frac{1}{b}},\\]so\n\\[\\frac{1}{a} + \\frac{1}{b} \\ge \\frac{4}{a + b}.\\]Similarly,\n\\begin{align*}\n\\frac{1}{a} + \\frac{1}{c} &\\ge \\frac{4}{a + c}, \\\\\n\\frac{1}{b} + \\frac{1}{c} &\\ge \\frac{4}{a + b}.\n\\end{align*}Adding these inequalities, we get\n\\[\\frac{2}{a} + \\frac{2}{b} + \\frac{2}{c} \\ge \\frac{4}{a + b} + \\frac{4}{a + c} + \\frac{4}{b + c},\\]so\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} \\ge 2 \\left( \\frac{1}{a + b} + \\frac{1}{a + c} + \\frac{1}{b + c} \\right).\\]Hence,\n\\[\\frac{\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}}{\\frac{1}{a + b} + \\frac{1}{a + c} + \\frac{1}{b + c}} \\ge 2.\\]Equality occurs when $a = b = c,$ so the minimum value is $\\boxed{2}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If the least common multiple of two 6-digit integers has 10 digits, then their greatest common divisor has at most how many digits?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Call the two integers $a$ and $b$. Recall that the product of two numbers' LCM and GCD is equal to the product of the two numbers themselves: $$\\mathop{\\text{lcm}}[a,b]\\cdot \\gcd(a,b) = ab.$$This can be rearranged to give $$\\gcd(a,b) = \\frac{ab}{\\mathop{\\text{lcm}}[a,b]}.$$In this case, we know that $a<10^6$ and $b<10^6$, so $ab<10^{12}$. We also know that $\\mathop{\\text{lcm}}[a,b]\\ge 10^9$, since the smallest 10-digit number is $10^9$.\n\nTherefore, $$\\gcd(a,b) < \\frac{10^{12}}{10^9} = 10^3,$$so $\\gcd(a,b)$ has at most $\\boxed{3}$ digits.\n\n(We should check that there are actual integers $a$ and $b$ for which $\\gcd(a,b)$ has $3$ digits. There are; for example, we can take $a=500{,}000$ and $b=200{,}100$, in which case the least common multiple is $1{,}000{,}500{,}000$ and the greatest common divisor is $100$.)"
+}

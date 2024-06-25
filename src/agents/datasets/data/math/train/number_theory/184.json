@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the digits of the decimal representation of $2^{2005} \\times 5^{2007} \\times 3$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We have $$2^{2005}\\times5^{2007}\\times3=(2\\times5)^{2005}\\times5^2\\times3=75\\times10^{2005},$$ so the sum of the digits is $7+5=\\boxed{12}$."
+}

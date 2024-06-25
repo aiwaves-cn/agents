@@ -1,0 +1,6 @@
+{
+    "problem": "Let  \\[ f(x) =\n\\begin{cases}\n-\\sqrt[3]x & \\text{if } x \\geq 0,\\\\\nx^2& \\text{if } x <0.\n\\end{cases}\n\\]Compute $f(f(f(f(512)))).$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "\\begin{align*}\nf(f(f(f(512))))\n&=f(f(f(-8)))\\\\\n&=f(f(64))\\\\\n&=f(-4)\\\\\n&=\\boxed{16}.\n\\end{align*}"
+}

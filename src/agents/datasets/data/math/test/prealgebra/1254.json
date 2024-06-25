@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest common divisor of $1313$ and $1001$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We start by finding the prime factorizations of 1313 and 1001.   We have $1313 = 1300+13 = 13(100+1) = 13\\cdot 101$ and $1001 = 7\\cdot 143 = 7\\cdot 11\\cdot 13$.   Therefore, $\\gcd(1313,1001)=\\boxed{13}$."
+}

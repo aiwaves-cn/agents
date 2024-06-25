@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be nonzero complex numbers such that\n\\[|a| = |b| = |a + b|.\\]Find the sum of all possible values of $\\frac{a}{b}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r = |a| = |b| = |a + b|.$  Then\n\\[a \\overline{a} = b \\overline{b} = r^2,\\]so $\\overline{a} = \\frac{r^2}{a}$ and $\\overline{b} = \\frac{r^2}{b}.$\n\nAlso, $(a + b)(\\overline{a + b}) = r^2.$  Then $(a + b)(\\overline{a} + \\overline{b}) = r^2,$ so\n\\[(a + b) \\left( \\frac{r^2}{a} + \\frac{r^2}{b} \\right) = r^2.\\]Then\n\\[(a + b) \\left( \\frac{1}{a} + \\frac{1}{b} \\right) = 1,\\]which expands as\n\\[1 + \\frac{a}{b} + \\frac{b}{a} + 1 = 1,\\]so\n\\[\\frac{a}{b} + \\frac{b}{a} = -1.\\]Let $z = \\frac{a}{b}.$  Then $z + \\frac{1}{z} =-1,$ so $z^2 + 1 = -z,$ or\n\\[z^2 + z + 1 = 0.\\]By Vieta's formulas, the sum of the roots is $\\boxed{-1}.$"
+}

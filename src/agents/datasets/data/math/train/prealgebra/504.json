@@ -1,0 +1,6 @@
+{
+    "problem": "Luna writes down all the five-digit numbers that contain each of the digits 1, 2, 3, 4 and 5 exactly once.  What is the smallest number in Luna's list that is divisible by 6?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "A number is divisible by 6 if and only if it is divisible by both 2 and 3.\n\nA number is divisible by 2 if and only if its last digit is even.  A number is divisible by 3 if and only if the sum of its digits is divisible by 3.  The sum of the digits in each of Luna's numbers is $1 + 2 + 3 + 4 + 5 = 15$, which is divisible by 3, so each of Luna's numbers is divisible by 3.\n\nThe smallest number in Luna's list is 12345, which is not divisible by 2.  The next smallest number in Luna's list is 12354, which is divisible by 2, so the answer is $\\boxed{12354}$."
+}

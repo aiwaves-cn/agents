@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the seven smallest distinct positive integer multiples of 9?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We are asked to calculate $9+18+27+\\cdots+63$.  Factor out 9 and use the identity $1+2+3+\\cdots+n=\\frac{n(n+1)}{2}$ to find that $9+18+\\cdots+63=9(1+2+\\dots+7)= 9 \\cdot \\frac{7 \\cdot 8}{2} = \\boxed{252}$."
+}

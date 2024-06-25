@@ -1,0 +1,6 @@
+{
+    "problem": "Given that the third term of a geometric sequence is $1053$ and the ninth term is $\\frac{13}{9}$, find the value of the seventh term.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since $ar^2=1053$ and $ar^8= \\frac{13}{9},$ dividing the two terms allows us to solve for the common ratio $r:$ \\[r^6= \\frac{ar^8}{ar^2}=\\frac{1}{729}.\\]Thus, $r=\\frac{1}{3}$ and the seventh term equals $ar^6=\\frac{ar^8}{r^2}= \\frac{13/9}{1/9}=\\boxed{13}.$"
+}

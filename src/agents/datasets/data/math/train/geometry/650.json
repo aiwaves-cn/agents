@@ -1,0 +1,6 @@
+{
+    "problem": "One angle of a parallelogram is 120 degrees, and two consecutive sides have lengths of 8 inches and 15 inches. What is the area of the parallelogram? Express your answer in simplest radical form.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "[asy]\npair A,B,C,D,X;\nA = (0,0);\nB= (15,0);\nD = rotate(60)*(8,0);\nC = B+D;\nX = (4,0);\ndraw(X--A--D--C--B--X--D);\nlabel(\"$A$\",A,SW);\nlabel(\"$D$\",D,NW);\nlabel(\"$C$\",C,NE);\nlabel(\"$B$\",B,SE);\nlabel(\"$X$\",X,S);\n[/asy]\n\nIf one angle of the parallelogram is 120 degrees, then another angle between adjacent sides has measure $180^\\circ - 120^\\circ = 60^\\circ$.  Shown in the diagram above, let the parallelogram be $ABCD$, with $\\overline{AD}$ one of the short sides.  Drawing the altitude from $D$ to $\\overline{AB}$ gives us 30-60-90 triangle $AXD$, from which we find $XD = (AD/2)\\sqrt{3} = 4\\sqrt{3}$, so the area of $ABCD$ is $(AB)(XD) = \\boxed{60\\sqrt{3}}$."
+}

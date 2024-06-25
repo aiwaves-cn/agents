@@ -1,0 +1,6 @@
+{
+    "problem": "If $(x + y)^2 = 45$ and $xy = 10$, what is $(x - y)^2$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We know that $(x + y)^2 = x^2 + 2xy + y^2$ and $(x - y)^2 = x^2 - 2xy + y^2$. We can see that $(x - y)^2 = (x^2 + 2xy + y^2) - 4xy = (x + y)^2 - 4xy = 45 - 40 = \\boxed{5}$."
+}

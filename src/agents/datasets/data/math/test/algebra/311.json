@@ -1,0 +1,6 @@
+{
+    "problem": "Dr. Zaius invests $\\$10,000$ in a CD with an annual interest rate of $4\\%$ that compounds semi-annually (twice a year).  After six months, he rolls over the CD into another CD with an annual interest rate of $5\\%$ that also compounds semi-annually.  After six months in the second CD, how much does Dr. Zaius have, in dollars?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The first CD compounds at a rate of $4/2 = 2$ percent for the first six months, so Dr. Zaius has $10000 \\cdot 1.02 = 10200$ dollars.  The second CD compounds at a rate of $5/2 = 2.5$ percent for the next six months, so Dr. Zaius then has $10200 \\cdot 1.025 = \\boxed{10455}$ dollars."
+}

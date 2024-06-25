@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ is an isosceles triangle with $AB=BC$. Point $D$ is the midpoint of both $\\overline{BC}$ and $\\overline{AE}$, and $\\overline{CE}$ is 11 units long. What is the length of $\\overline{BD}$?  Express your answer as a decimal to the nearest tenth.\n\n[asy]\ndraw((0,0)--(3,112^.5)--(6,0)--cycle);\ndraw((6,0)--(9,112^.5)--(0,0));\nlabel(\"$A$\", (0,0), SW);\nlabel(\"$B$\", (3,112^.5), N);\nlabel(\"$C$\", (6,0), SE);\nlabel(\"$D$\", (4.75,6), N);\nlabel(\"$E$\", (9,112^.5), N);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Because triangles $D$ is the midpoint of $\\overline{BC}$ and $\\overline{AE}$, $ABEC$ must be a parallelogram, so $AB=CE=11$. Then because triangle $ABC$ is isosceles, $BC=AB=11$. That means $BD=\n\\frac{11}{2}$ or $\\boxed{5.5}$."
+}

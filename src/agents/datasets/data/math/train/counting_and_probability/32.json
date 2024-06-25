@@ -1,0 +1,6 @@
+{
+    "problem": "A palindrome is a number that reads the same forwards and backwards, such as 3003. How many positive four-digit integers are palindromes?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Constructing palindromes requires that we choose the thousands digit (which defines the units digit) and the hundreds digit (which defines the tens digit). Since there are 9 choices for the thousands digit, and 10 choices for the hundreds digit, creating $9 \\cdot 10 = \\boxed{90}$ palindromes."
+}

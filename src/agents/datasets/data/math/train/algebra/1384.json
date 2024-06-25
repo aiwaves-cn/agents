@@ -1,0 +1,6 @@
+{
+    "problem": "$r(x)$ has domain $\\{-1,0,1,2\\}$ and range $\\{0,2,4,6\\}$. $s(x)$ has domain $\\{1,2,3,4\\}$ and is defined by $s(x)=x+1$. What is the sum of all possible values of $s(r(x))$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We are trying to find the range of the function $s(r(x))$. This means we take a number, input it into $r(x)$, take the output and use it as the input for $s(x)$, and find the output. We know that the domain of $s(x)$ is $\\{1,2,3,4\\}$, so for $s(r(x))$ to be defined, $r(x)$ must be one of the values $1, 2, 3, 4$. The possible values of $r(x)$ are the range of $r(x)$, which is $\\{0,2,4,6\\}$. The intersection of these two sets is $\\{2,4\\}$, so only $2$ or $4$ can be the output of $r(x)$ and thus the input of $s(x)$ in the function $s(r(x))$. So the possible outputs from $s(x)$ are $2+1=3$ and $4+1=5$. Thus the sum of all possible outputs is $3+5=\\boxed{8}$."
+}

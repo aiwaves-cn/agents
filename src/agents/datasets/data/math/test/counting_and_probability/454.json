@@ -1,0 +1,6 @@
+{
+    "problem": "What is the probability that when we roll 5 fair 6-sided dice, at most 4 of them will show a 1?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The only way that more than four can show 1 is if all 5 dice show 1, and the probability of that happening is $\\dfrac{1}{6^5}$. Thus the answer is $1-\\dfrac{1}{6^5}=\\boxed{\\frac{7775}{7776}}$."
+}

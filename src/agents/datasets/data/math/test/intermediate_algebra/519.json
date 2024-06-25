@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of functions $f(x),$ taking positive real numbers to real numbers, such that\n\\[f(xy) = f(x) f(y) - 2\\]for all positive real numbers $x$ and $y.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $y = 1,$ we get\n\\[f(x) = f(1) f(x) - 2.\\]Then $f(1) f(x) - f(x) = 2,$ so\n\\[f(x) = \\frac{2}{f(1) - 1}.\\]Thus, $f(x) = c$ for some constant $c$ for $x \\neq 0.$\n\nThen $c = c^2 - 2,$ so $c^2 - c - 2 = (c - 2)(c + 1) = 0.$  Thus, $c = 2$ or $c = -1,$ giving us $\\boxed{2}$ functions $f(x).$"
+}

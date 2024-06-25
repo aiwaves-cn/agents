@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ if median $\\overline{AD}$ makes an angle of $45^\\circ$ with side $\\overline{BC},$ then find the value of $|\\cot B - \\cot C|.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $P$ be the foot of the altitude from $A$ to $\\overline{BC}.$  Let $x = BD = CD,$ and let $y = BP.$  Since $\\angle ADP = 45^\\circ,$ $AP = PD = x + y.$\n\n[asy]\nunitsize(2 cm);\n\npair A, B, C ,D, P;\n\nD = (0,0);\nB = (-1,0);\nC = (1,0);\nA = D + 2*dir(135);\nP = (A.x,0);\n\ndraw(A--P--C--cycle);\ndraw(A--B);\ndraw(A--D);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, S);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$P$\", P, SW);\nlabel(\"$x$\", (B + D)/2, S, red);\nlabel(\"$x$\", (C + D)/2, S, red);\nlabel(\"$y$\", (B + P)/2, S, red);\nlabel(\"$x + y$\", (A + P)/2, W, red);\n[/asy]\n\nThen\n\\[\\cot B = -\\cot \\angle ABP = -\\frac{y}{x + y},\\]and\n\\[\\cot C = \\frac{2x + y}{x + y}.\\]Hence,\n\\[|\\cot B - \\cot C| = \\left| -\\frac{2x + 2y}{x + y} \\right| = \\boxed{2}.\\]"
+}

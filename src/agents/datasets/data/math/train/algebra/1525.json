@@ -1,0 +1,6 @@
+{
+    "problem": "Zachary paid for a $\\$1$ burger with 32 coins and received no change. Each coin was either a penny or a nickel. What was the number of nickels Zachary used?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "If $p$ is the number of pennies and $n$ is the number of nickels that Zachary used, then we are given \\begin{align*}\np+n&=32\\text{, and} \\\\\np+5n&=100.\n\\end{align*} Subtracting the first equation from the second, we find $4n=68$ which implies $n=\\boxed{17}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If two distinct numbers are selected at random from the first seven prime numbers, what is the probability that their sum is an even number? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The only way for the sum to not be even is if one of the primes chosen is 2. There are six pairs where one of the primes is 2, and there are $\\binom{7}{2}=21$ total possible pairs, so the probability that the sum is NOT even is $\\frac{6}{21}=\\frac{2}{7}$. Therefore, the probability that the sum IS even is $1-\\frac{2}{7}=\\boxed{\\frac{5}{7}}$."
+}

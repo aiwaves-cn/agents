@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[\\frac{1}{x + 9} + \\frac{1}{x + 7} = \\frac{1}{x + 10} + \\frac{1}{x + 6}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Combining the fractions, we get\n\\[\\frac{2x + 16}{(x + 9)(x + 7)} = \\frac{2x + 16}{(x + 10)(x + 6)}.\\]Hence,\n\\[(2x + 16)(x + 10)(x + 6) = (2x + 16)(x + 9)(x + 7),\\]so\n\\[2(x + 8)[(x + 10)(x + 6) - (x + 9)(x + 7)] = 2(x + 8)(-3) = 0.\\]Thus, $x = \\boxed{-8}.$"
+}

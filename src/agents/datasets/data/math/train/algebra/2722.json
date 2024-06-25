@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of two positive integers is 50 and their difference  is 12. What is the value of the positive difference of the squares of the integers?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Call the two integers $x$ and $y$. Without loss of generality, let $x$ be the larger of the two. We are given that $x+y = 50$ and $x-y = 12$, and we are asked for $x^2 - y^2$. Because $x^2 - y^2$ factors into $(x+y)(x-y)$, we can simply substitute in to get $x^2 - y^2 = 50 \\cdot 12 = \\boxed{600}$."
+}

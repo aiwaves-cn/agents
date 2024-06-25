@@ -1,0 +1,6 @@
+{
+    "problem": "A fair 6-sided die is rolled once. If I roll $n$, then I win $6-n$ dollars. What is the expected value of my win, in dollars?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Each number from 1 to 6 has probability $\\dfrac{1}{6}$ of being rolled, so the expected value is \\begin{align*}\n\\frac{1}{6}(6-1)&+\\frac{1}{6}(6-2)+\\frac{1}{6}(6-3)+\\frac{1}{6}(6-4)+\\frac{1}{6}(6-5)+\\frac{1}{6}(6-6) \\\\\n&= \\frac{1}{6}(5+4+3+2+1+0)=\\frac{15}{6}\\\\\n&=\\$\\boxed{2.50}.\n\\end{align*}"
+}

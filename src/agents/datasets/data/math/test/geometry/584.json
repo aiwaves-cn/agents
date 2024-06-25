@@ -1,0 +1,6 @@
+{
+    "problem": "A company makes a six-sided hollow aluminum container in the shape of a rectangular prism as shown. The container is $10^{''}$ by $10^{''}$ by $12^{''}$. Aluminum costs $\\$0.05$ per square inch. What is the cost, in dollars, of the aluminum used to make one container?\n\n[asy]\n\nimport three;\n\ndraw((0,0,0)--(1,0,0)--(1,1,0)--(0,1,0)--(0,0,0)--cycle,linewidth(1));\n\ndraw((1,0,0)--(1,0,-1)--(1,1,-1)--(1,1,0)--(1,0,0)--cycle,linewidth(1));\n\ndraw((0,1,0)--(1,1,0)--(1,1,-1)--(0,1,-1)--(0,1,0)--cycle,linewidth(1));\n\nlabel(\"$12^{''}$\",(1,0,-.5),W);\n\nlabel(\"$10^{''}$\",(.5,0,0),N);\n\nlabel(\"$10^{''}$\",(0,.5,0),N);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The amount of aluminum used is equal to the surface area of the container. The horizontal faces have area $10\\cdot10=100$ square inches. The vertical faces have area $12\\cdot10=120$ square inches. Thus, the total surface area is $2\\cdot100+4\\cdot120=680$ square inches. Since aluminum costs $\\$0.05$ per square inch, the total cost is $680\\cdot\\$0.05=\\boxed{34}$ dollars."
+}

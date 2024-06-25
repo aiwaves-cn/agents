@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\frac{1}{1 - \\tan^2 x} + \\frac{1}{1 - \\cot^2 x}.\\]",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\frac{1}{1 - \\tan^2 x} + \\frac{1}{1 - \\cot^2 x} &= \\frac{1}{1 - \\sin^2 x/\\cos^2 x} + \\frac{1}{1 - \\cos^2 x/\\sin^2 x} \\\\\n&= \\frac{\\cos^2 x}{\\cos^2 x - \\sin^2 x} + \\frac{\\sin^2 x}{\\sin^2 x - \\cos^2 x} \\\\\n&= \\frac{\\cos^2 x}{\\cos^2 x - \\sin^2 x} - \\frac{\\sin^2 x}{\\cos^2 x - \\sin^2 x} \\\\\n&= \\frac{\\cos^2 x - \\sin^2 x}{\\cos^2 x - \\sin^2 x} = \\boxed{1}.\n\\end{align*}"
+}

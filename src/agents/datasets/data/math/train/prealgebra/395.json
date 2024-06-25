@@ -1,0 +1,6 @@
+{
+    "problem": "What is the number of degrees in the acute angle formed by the hands of a clock at 6:44?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "[asy]\nunitsize(0.8inch);\nfor (int i=0 ; i<=11 ;++i)\n{\ndraw((rotate(i*30)*(0.8,0)) -- (rotate(i*30)*(1,0)));\nlabel(format(\"%d\",i+1),(rotate(60 - i*30)*(0.68,0)));\n}\ndraw(Circle((0,0),1),linewidth(1.1));\ndraw(rotate(186)*(0.7,0)--(0,0)--(rotate(-22)*(0,-0.5)),linewidth(1.2));\n[/asy]\n\nThere are 12 hours on a clock, so each hour mark is $360^\\circ/12 = 30^\\circ$ from its neighbors.  At 6:44, the minute hand points at minute 44, which is $\\frac45$ of the way from hour 8 to hour 9.  Therefore, the minute hand is $\\frac45\\cdot 30^\\circ = 24^\\circ$ past hour 8.  The hour hand is $\\frac{44}{60} = \\frac{11}{15}$ of the way from hour 6 to hour 7, so it is $\\frac{11}{15}\\cdot 30^\\circ = 22^\\circ$ past hour 6.  This means that the hour hand is $30^\\circ -22^\\circ = 8^\\circ$ from hour 7.  Since hours 7 and 8 are $30^\\circ$ apart, the total angle between the two hands is $8^\\circ + 30^\\circ + 24^\\circ = \\boxed{62^\\circ}$."
+}

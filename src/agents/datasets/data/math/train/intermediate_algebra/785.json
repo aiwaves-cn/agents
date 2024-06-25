@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be real numbers.  One of the roots of $x^3 + ax + b = 0$ is $1 + i \\sqrt{3}.$  Find $a + b.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since the coefficients are real, another root is $1 - i \\sqrt{3}.$  By Vieta's formulas, the sum of the roots is 0, so the third root is $-2.$  Hence, the cubic polynomial is\n\\begin{align*}\n(x - 1 - i \\sqrt{3})(x - 1 + i \\sqrt{3})(x + 2) &= ((x - 1)^2 - (i \\sqrt{3})^2)(x + 2) \\\\\n&= ((x - 1)^2 + 3)(x + 2) \\\\\n&= x^3 + 8.\n\\end{align*}Thus, $a = 0$ and $b = 8,$ so $a + b = \\boxed{8}.$"
+}

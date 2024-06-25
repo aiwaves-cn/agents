@@ -1,0 +1,6 @@
+{
+    "problem": "A number is divisible by $8$ if the number formed by its last $3$ digits is divisible by $8.$ For example, the number $47\\,389\\,248$ is divisible by $8$ because $248$ is divisible by $8.$ However, $47\\,389\\,284$ is not divisible by $8$ because $284$ is not divisible by $8.$\n\nIf $992\\,466\\,1A6$ is divisible by $8,$ where $A$ represents one digit, what is the sum of the possible values of $A?$",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "For $992\\,466\\,1A6$ to be divisible by $8,$ we must have $1A6$ divisible by $8.$ We check each of the possibilities, using a calculator or by checking by hand:\n\n$\\bullet$ $106$ is not divisible by $8,$ $116$ is not divisible by $8,$ $126$ is not divisible by $8,$\n\n$\\bullet$ $136$ is divisible by $8,$\n\n$\\bullet$ $146$ is not divisible by $8,$ $156$ is not divisible by $8,$ $166$ is not divisible by $8,$\n\n$\\bullet$ $176$ is divisible by $8,$\n\n$\\bullet$ $186$ is not divisible by $8,$ $196$ is not divisible by $8.$\n\nTherefore, the possible values of $A$ are $3$ and $7.$ Thus, the answer is $7+3=\\boxed{10}.$"
+}

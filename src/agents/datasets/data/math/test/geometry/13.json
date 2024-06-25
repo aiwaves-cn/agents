@@ -1,0 +1,6 @@
+{
+    "problem": "A right triangle has leg lengths of 8 and 15 units. What is the length, in units, of the median to the hypotenuse? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "$8^2+15^2=289=17^2$, so the hypotenuse has length $17$.  The median to the hypotenuse of a right triangle is a radius of the circumcircle, while the hypotenuse is a diameter.  So the median is half as long as the hypotenuse, and thus has length $\\boxed{\\frac{17}{2}}$."
+}

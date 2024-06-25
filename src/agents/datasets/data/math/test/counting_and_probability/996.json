@@ -1,0 +1,6 @@
+{
+    "problem": "Each digit in the number 2001 is placed on a different card. In how many ways can three different cards be selected so that the product of the numbers on those cards is not zero?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are four cards total, two of which have a zero on them. If three cards are selected, therefore, at least one of them must have a zero on it, making the product of the numbers on those three cards zero. Thus, there are $\\boxed{0}$ ways."
+}

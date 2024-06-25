@@ -1,0 +1,78 @@
+{
+    "nodes": {
+        "node_write": {
+            "node_name": "node_write",
+            "controller": {
+                "route_type": "order",
+                "transit_type": "order",
+                "max_chat_nums": 20,
+                "transit_system_prompt": "",
+                "transit_last_prompt": "",
+                "transit_extract_word": "end",
+                "route_system_prompt": "",
+                "route_last_prompt": "",
+                "route_extract_word": "end"
+            },
+            "begin_role": "role_write",
+            "node_description": "Write a fluent passage based on the questions given, in which the closing part of each paragraph ends with the sentence given",
+            "tools": "",
+            "node_roles_description": {
+                "role_write": "Write a fluent passage based on the questions given, in which the closing part of each paragraph ends with the sentence given"
+            },
+            "node_prompt_templates": {
+                "step_write": "A creative writing task where the input is 4 random sentences and the output should be a coherent passage with 4 paragraphs that end in the 4 input sentences respectively. Such a task is open-ended and exploratory, and challenges creative thinking as well as high-level planning. Here is the four sentences: 1. The sun was shining brightly. 2. The birds were chirping. 3. The flowers were blooming. 4. The children were playing in the park. Please write a passage that ends with each of the four sentences: {text}"
+            },
+            "node_prompt_paddings": {
+                "role_write": {
+                    "step_write": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    }
+                }
+            }
+        },
+        "node_check": {
+            "node_name": "node_check",
+            "controller": {
+                "route_type": "order",
+                "transit_type": "order",
+                "max_chat_nums": 20,
+                "transit_system_prompt": "",
+                "transit_last_prompt": "",
+                "transit_extract_word": "end",
+                "route_system_prompt": "",
+                "route_last_prompt": "",
+                "route_extract_word": "end"
+            },
+            "begin_role": "role_check",
+            "node_description": "Check that the written text is correct and fluent, and modify the text appropriately to make it fluent",
+            "tools": "",
+            "node_roles_description": {
+                "role_check": "Check the text written by the previous person, analyze it, and optimize it to make it more fluent"
+            },
+            "node_prompt_templates": {
+                "step_check": "Check the text written by the previous person, analyze it, and optimize it to make it more fluent. Please enclose the optimized text in <result>[put the optimized text here]</result>."
+            },
+            "node_prompt_paddings": {
+                "role_check": {
+                    "step_check": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    }
+                }
+            }
+        }
+    },
+    "edges": {
+        "node_write": [
+            "node_write",
+            "node_check"
+        ],
+        "node_check": [
+            "node_check",
+            "end_node"
+        ]
+    },
+    "root": "node_write",
+    "end": "end_node"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all positive integral values of $n$ for which $\\frac{n+6}{n}$ is an integer.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The expression $\\frac{n+6}{n}$ can be simplified as $\\frac{n}{n}+\\frac{6}{n}$, or $1+\\frac{6}{n}$. So in order for this expression to have an integral value, 6 must be divisible by $n$. Therefore, the sum of all positive integral values of $n$ is just the sum of all the divisors of $6$. Since the prime factorization of 6 is $2\\cdot3$, we know that 6 is only divisible by 1, 2, 3, 6, and the final answer is $1+2+3+6=\\boxed{12}$."
+}

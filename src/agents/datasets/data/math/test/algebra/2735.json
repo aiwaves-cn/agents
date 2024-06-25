@@ -1,0 +1,6 @@
+{
+    "problem": "Write the expression \\[\\frac{4+6a}{5}-\\frac{1+3a}{4}\\] as a single fraction.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The common denominator of $5$ and $4$ is $20$, so we multiply top and bottom of the first fraction by $4$ and multiply top and bottom of the second fraction by $5$. We get \\[\\frac{4(4+6a)}{4 \\cdot 5} - \\frac{5(1+3a)}{4 \\cdot 5} = \\frac{16+24a}{20}-\\frac{5+15a}{20}.\\] We combine the fractions, being careful to put the numerator of the second fraction in parentheses (as we are subtracting the entire numerator), yielding \\[\\frac{16+24a-(5+15a)}{20} = \\frac{16+24a-5-15a}{20}=\\boxed{\\frac{11+9a}{20}}.\\]"
+}

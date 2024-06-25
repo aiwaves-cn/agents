@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)$ is an even function and $g(x)$ is an odd function, find if $f(g(x^3))$ is even, odd, or neither.\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "Substituting $-x$ for $x$ gives us $f(g(-x^3)) = f(-g(x^3)) = f(g(x^3))$ so $f(g(x^3))$ is $\\boxed{\\text{even}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In a convex quadrilateral, the measure of the largest angle is twice the measure of the smallest angle, and the other two angles are both right angles. How many degrees are in the largest angle?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The interior angles of a quadrilateral must add up to 360.  (You can solve for this using the formula: $S = (n-2)(180)$, where S is the sum of the interior angles, and $n$ is the number of sides in the polygon.  However, if you want to get this problem quickly, you should have the value memorized.)  Since two of the angles are right, the other two angles must add up to 180.  Name the smaller angle $x$ - since the larger angle is double the smaller, we have $3x = 180 \\rightarrow x = 60$, and $2x = 120$.  Thus, there are $\\boxed{120}$ degrees in the larger angle."
+}

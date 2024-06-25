@@ -1,0 +1,6 @@
+{
+    "problem": "When $3y^3-13y^2+11y+23$ is divided by $3y+2$, the quotient is $y^2-5y+c$ and the remainder is constant. Find the remainder.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let the remainder be $r$, a constant. Then we know that\n$$3y^3-13y^2+11y+23 = (3y+2)(y^2-5y+c) + r.$$Expanding gives us\n$$3y^3-13y^2+11y+23 = 3y^3-15y^2+3cy+2y^2-10y+2c + r$$which simplifies to\n$$11y+23 = 3cy-10y+2c + r.$$Since the remainder is constant, we know that\n$$11y = (3c-10)y$$Solving for $c$ gives us $c=7$.\nThen the remainder $r = 23 - 2c =23-14 = \\boxed{9}.$"
+}

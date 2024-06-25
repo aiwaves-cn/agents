@@ -1,0 +1,6 @@
+{
+    "problem": "In a certain warehouse, there are $1335$ boxes, each containing $39$ books.\n\nMelvin's boss orders him to unpack all the books and repack them so that there are $40$ books in each box. After packing as many such boxes as possible, Melvin has how many books left over?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The total number of books in the warehouse is $1335\\cdot 39$. If Melvin packs $b$ boxes of $40$ books each and has $r$ books left over, then $1335\\cdot 39 = 40b+r$. Thus, what we are looking for is the remainder when $1335\\cdot 39$ is divided by $40$.\n\nWe note that $39\\equiv -1\\pmod{40}$. Therefore, we have \\begin{align*}\n1335\\cdot 39 &\\equiv 1335\\cdot (-1) \\\\\n&\\equiv -1335\\pmod {40}.\n\\end{align*}Now we note that $-1335 = -1400 + 65$, and $-1400$ is a multiple of $40$. Therefore, $-1335 \\equiv 65 \\equiv 25\\pmod{40}$, which implies that the remainder is $\\boxed{25}$ books."
+}

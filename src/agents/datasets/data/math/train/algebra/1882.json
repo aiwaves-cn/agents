@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\lfloor |-4.2| \\rfloor + |\\lfloor -4.2 \\rfloor|$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "$\\lfloor |{-4.2}| \\rfloor = \\lfloor 4.2 \\rfloor = 4$ because the greatest integer less than $4.2$ is $4$. $|\\lfloor -4.2 \\rfloor|= |{-5}| = 5$ because the greatest integer less than $-4.2$ is $-5$. Therefore, the answer is $ 4 + 5 = \\boxed{9}.$"
+}

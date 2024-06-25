@@ -1,0 +1,6 @@
+{
+    "problem": "The sequence 1,000,000; 500,000; 250,000 and so on, is made by repeatedly dividing by 2. What is the last integer in this sequence?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Repeatedly dividing by 2, we find the next terms in the sequence to be 125000, 62500, 31250, 15625,... 15625 is no longer a multiple of 2, so when we divide by 2 again, we will not get an integer, nor will it be a multiple of 2. Thus, no number in the sequence after 15625 can be an integer. Thus, our answer is $\\boxed{15625}$."
+}

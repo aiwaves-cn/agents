@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $PQR$, point $T$ is on $PR$ and point $S$ is on $PQ$ such that $TS \\parallel RQ$. The measure of $\\angle RPQ$ is $65^{\\circ}$, and the measure of $\\angle TSQ$ is $145^{\\circ}$. What is the measure of $\\angle PRQ$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "[asy]\npair P,Q,R,SS,T;\nQ = (0,0);\nR = (1,0);\nP = (0.8,0.5);\nSS = 0.6*P;\nT = R + 0.6*(P-R);\ndraw(T--SS--P--R--Q--SS);\nlabel(\"$P$\",P,N);\nlabel(\"$S$\",SS,NW);\nlabel(\"$Q$\",Q,S);\nlabel(\"$R$\",R,S);\nlabel(\"$T$\",T,ENE);\n[/asy]\n\nIf the measure of $\\angle TSQ$ is $145^{\\circ}$, then the measure of $\\angle TSP$ is $180^\\circ - 145^\\circ = 35^{\\circ}$ since they are supplementary angles. The measure of $\\angle RQP$ is also $35^{\\circ}$ since sides $TS$ and $RQ$ are parallel. Now we have two of the three angles in triangle $PQR$. To find the third, we calculate $180^{\\circ} - 65^{\\circ} - 35^{\\circ} = 80^{\\circ}$. The measure of $\\angle PRQ$ is $\\boxed{80^{\\circ}}$."
+}

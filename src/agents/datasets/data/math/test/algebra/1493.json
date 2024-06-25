@@ -1,0 +1,6 @@
+{
+    "problem": "The quadratic $x^2-6x+66$ can be written in the form $(x+b)^2+c$, where $b$ and $c$ are constants. What is $b+c$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We complete the square.\n\nWe have $(x-3)^2 = x^2 - 6x + 9$, and so\n\n\\begin{align*}\nx^2-6x+66 &= (x-3)^2 - 9 + 66 \\\\\n&= (x-3)^2 + 57.\n\\end{align*}Therefore, $b=-3$ and $c=57$, which gives us $b+c = \\boxed{54}$."
+}

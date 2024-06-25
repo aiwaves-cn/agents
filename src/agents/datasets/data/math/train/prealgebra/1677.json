@@ -1,0 +1,6 @@
+{
+    "problem": "Five couples were at a party. If each person shook hands exactly once with everyone else except his/her spouse, how many handshakes were exchanged? (Note: One obviously doesn't shake hands with oneself.)",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are a total of 10 people at the party.  Each shakes hands with everyone else, except for their spouse, which will be a total of $10-2=8$ other people.  The total number of handshakes will be $10\\cdot8/2=\\boxed{40}$, where we divide by 2 to correct for counting each handshake twice."
+}

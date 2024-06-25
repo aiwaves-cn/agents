@@ -1,0 +1,6 @@
+{
+    "problem": "Express the infinite series $$\\frac{3}{206}+\\frac{9}{2\\cdot103^2}+\\frac{27}{2\\cdot103^3}+\\cdots$$as a terminating decimal.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We start by factoring $\\frac{1}{2}$ from all terms in the series to get $$\\frac{1}{2}\\left(\\frac{3}{103}+\\frac{9}{103^2}+\\frac{27}{103^3}+\\cdots\\right).$$Next we recognize the series as a geometric series and apply the formula for the sum of a geometric series $\\left(\\frac{a}{1-r}\\right)$: $$\\frac{1}{2}\\left(\\frac{\\frac{3}{103}}{1-\\frac{3}{103}}\\right)=\\frac{1}{2}\\left(\\frac{3}{103-3}\\right)=\\frac{1}{2}\\cdot\\frac{3}{100}.$$To turn the fraction into a terminating decimal, we recognize that $\\frac{3}{100}=0.03$ and half of 0.03 is $\\boxed{0.015}$."
+}

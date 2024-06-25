@@ -1,0 +1,6 @@
+{
+    "problem": "Bob's password consists of a non-negative single-digit number followed by a letter and another non-negative single-digit number (which could be the same as the first one). What is the probability that Bob's password consists of an odd single-digit number followed by a letter and a positive single-digit number?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The probability that the first non-negative single-digit number in Bob's password is also odd is $\\frac{5}{10}=\\frac{1}{2}$ because exactly $5$ out of the $10$ non-negative single-digit numbers are odd. The probability that the following character in Bob's password is a letter is $1$ since it must be a letter according to the prescribed format. Finally, the probability that the last character is a positive single-digit number is $\\frac{9}{10}$ because $0$ is the only non-negative single-digit number that is not positive. Hence the desired probability is $\\frac{1}{2}\\cdot 1\\cdot\\frac{9}{10}=\\boxed{\\frac{9}{20}}$ since the choices for the three characters are independent."
+}

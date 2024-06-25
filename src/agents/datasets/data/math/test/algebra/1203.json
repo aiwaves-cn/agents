@@ -1,0 +1,6 @@
+{
+    "problem": "What is the average of integers $a$, $b$ and $c$ if the average of the two numbers $a$ and $2b$ is 7 and the average of the two numbers $a$ and $2c$ is 8?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can rephrase the problem as the system of equations: \\begin{align*}\n\\frac{a+2b}{2} &= 7\\\\\n\\frac{a+2c}{2} &= 8\n\\end{align*} Adding these gives: \\begin{align*}\n\\frac{a+2b}{2}+\\frac{a+2c}{2} &= 7+8\\\\\n\\frac{2a+2b+2c}{2} &= 15\\\\\na+b+c &= 15\\\\\n\\frac{a+b+c}{3} &= \\frac{15}{3} = \\boxed{5}\n\\end{align*}"
+}

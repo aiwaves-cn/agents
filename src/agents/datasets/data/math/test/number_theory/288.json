@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers $t$ will make the expression $\\frac{19}{t}+\\frac{5}{t}$ have an integral value?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can simplify $\\frac{19}{t}+\\frac{5}{t}$ as $\\frac{19+5}{t}$, or $\\frac{24}{t}$. So, in order for this expression to have an integral value, 24 must be divisible by $t$. In other words, $t$ must be a factor of 24. Therefore, to find the number of positive integers $t$ that will make the expression have an integral value, we just need to find the number of factors of 24. We know that if $ n ={p_{1}}^{e_{1}}\\cdot{p_{2}}^{e_{2}}\\cdot{p_{3}}^{e_{3}}\\cdots{p_{k}}^{e_{k}} $, where $p_1, p_2...p_k$ are prime numbers, then the number of factors of $n$ is equal to $(e_1+1)(e_2+1)(e_3+1)\\cdots(e_k+1)$. We have that the prime factorization of 24 is $2^3\\cdot3^1$, so using the formula above, 24 has $(3+1)(1+1)=\\boxed{8}$ factors."
+}

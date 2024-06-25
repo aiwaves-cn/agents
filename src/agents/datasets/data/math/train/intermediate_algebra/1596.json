@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that the number $a$ satisfies the equation $4 = a + a^{ - 1}.$ What is the value of $a^{4} + a^{ - 4}?$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Squaring the equation $4 = a+a^{-1},$ we get \\[16 = \\left(a+a^{-1}\\right)^2 = a^2 + 2a a^{-1} + a^{-2} = a^2 + 2 + a^{-2},\\]so $14 = a^2 + a^{-2}.$ To get the desired expression, we square again, giving \\[196 = a^4 + 2a^2 a^{-2} + a^{-4} = a^4 + 2 + a^{-4}.\\]Thus, $\\boxed{194} = a^4 + a^{-4}.$"
+}

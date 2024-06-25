@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive value of $t$ that satisfies $ab = t-2i$ given $|a|=2$ and $|b|=\\sqrt{26}$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "From the given information we know that $|a| |b| = |ab| = 2\\sqrt{26}$. We can also write $|ab| = |t-2i| = \\sqrt{t^2 + 4}$. Setting these equal, we have $$\\sqrt{t^2 + 4} = 2\\sqrt{26} \\Rightarrow\nt^2 + 4 = 104.$$The positive answer is $t = \\boxed{10}$."
+}

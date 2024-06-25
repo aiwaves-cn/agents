@@ -1,0 +1,6 @@
+{
+    "problem": "The area of right triangle $ABC$ is 4, and the hypotenuse $\\overline{AB}$ is 12.  Compute $\\sin 2A.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We have that $\\frac{1}{2} ab = 4,$ so $ab = 8.$\n\n[asy]\nunitsize (1 cm);\n\npair A, B, C;\n\nC = (0,0);\nB = (3,0);\nA = (0,2);\n\ndraw(A--B--C--cycle);\ndraw(rightanglemark(A,C,B,6));\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, E);\nlabel(\"$C$\", C, SW);\nlabel(\"$a$\", (B + C)/2, S, red);\nlabel(\"$b$\", (A + C)/2, W, red);\nlabel(\"$12$\", (A + B)/2, NE, red);\n[/asy]\n\nThen\n\\[\\sin 2A = 2 \\sin A \\cos A = 2 \\cdot \\frac{a}{12} \\cdot \\frac{b}{12} = \\frac{ab}{72} = \\frac{8}{72} = \\boxed{\\frac{1}{9}}.\\]"
+}

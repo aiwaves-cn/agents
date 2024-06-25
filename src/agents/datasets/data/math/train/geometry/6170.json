@@ -1,0 +1,6 @@
+{
+    "problem": "Square $ABCD$ has side length $30$. Point $P$ lies inside the square so that $AP = 12$ and $BP = 26$. The centroids of $\\triangle{ABP}$, $\\triangle{BCP}$, $\\triangle{CDP}$, and $\\triangle{DAP}$ are the vertices of a convex quadrilateral. What is the area of that quadrilateral?\n[asy] unitsize(120); pair B = (0, 0), A = (0, 1), D = (1, 1), C = (1, 0), P = (1/4, 2/3); draw(A--B--C--D--cycle); dot(P); defaultpen(fontsize(10pt)); draw(A--P--B); draw(C--P--D); label(\"$A$\", A, W); label(\"$B$\", B, W); label(\"$C$\", C, E); label(\"$D$\", D, E); label(\"$P$\", P, N*1.5+E*0.5); dot(A); dot(B); dot(C); dot(D); [/asy]\n$\\textbf{(A) }100\\sqrt{2}\\qquad\\textbf{(B) }100\\sqrt{3}\\qquad\\textbf{(C) }200\\qquad\\textbf{(D) }200\\sqrt{2}\\qquad\\textbf{(E) }200\\sqrt{3}$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The centroid of a triangle is $\\frac{2}{3}$ of the way from a vertex to the midpoint of the opposing side. Thus, the length of any diagonal of this quadrilateral is $20$. The diagonals are also parallel to sides of the square, so they are perpendicular to each other, and so the area of the quadrilateral is $\\frac{20\\cdot20}{2} = \\boxed{200}$."
+}

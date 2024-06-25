@@ -1,0 +1,6 @@
+{
+    "problem": "Express $(4-5i)(-5+5i)$ in the form $a+bi$, where $a$ and $b$ are integers and $i^2 = -1.$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We simplify, bearing in mind that $i^2 = -1$. We get  \\begin{align*}\n(4-5i)(-5+5i) &= 4(-5) + 4(5i) -5i(-5) -5i(5i) \\\\ &= -20 +20i +25i +25 \\\\ &= \\boxed{5 + 45i}.\n\\end{align*}"
+}

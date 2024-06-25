@@ -1,0 +1,6 @@
+{
+    "problem": "How many digits are located to the right of the decimal point when $\\frac{3^6}{6^4\\cdot625}$ is expressed as a decimal?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "To find the decimal expression, we try to get a denominator of the form $2^a\\cdot5^a=10^a$, where $a$ is an integer.  $$\\frac{3^6}{6^4\\cdot625}=\\frac{3^6}{2^4\\cdot3^4\\cdot5^4}=\\frac{3^2}{10^4}=9\\cdot10^{-4}=0.0009$$So there are $\\boxed{4}$ digits to the right of the decimal point."
+}

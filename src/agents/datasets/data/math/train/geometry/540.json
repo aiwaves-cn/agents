@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $BC = 4$, $AC = 3 \\sqrt{2}$, and $\\angle C = 45^\\circ$.  Altitudes $AD$, $BE$, and $CF$ intersect at the orthocenter $H$.  Find $AH:HD$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Since $\\angle C = 45^\\circ$, triangle $ACD$ is a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle, which means $AD = CD = AC/\\sqrt{2} = 3$.  Then $BD = BC - CD = 4 - 3 = 1$.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D, E, F, H;\n\nA = (1,3);\nB = (0,0);\nC = (4,0);\nD = (A + reflect(B,C)*(A))/2;\nE = (B + reflect(C,A)*(B))/2;\nF = (C + reflect(A,B)*(C))/2;\nH = extension(B,E,C,F);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\ndraw(B--E);\ndraw(C--F);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, NW);\nlabel(\"$H$\", H, SE);\n[/asy]\n\nAlso, $\\angle EBC = 90^\\circ - \\angle BCE = 45^\\circ$, so triangle $BHD$ is a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle.  Hence, $HD = BD = 1$.  Then $AH = AD - HD = 3 - 1 = 2$, so $AH:HD = \\boxed{2}$."
+}

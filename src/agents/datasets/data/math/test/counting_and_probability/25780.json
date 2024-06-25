@@ -1,0 +1,6 @@
+{
+    "problem": "While staying in a 15-story hotel, Polya plays the following game. She enters an elevator on the $6^{\\mathrm{th}}$ floor. She flips a fair coin five times to determine her next five stops. Each time she flips heads, she goes up one floor. Each time she flips tails, she goes down one floor. What is the probability that each of her next five stops is on the $7^{\\mathrm{th}}$ floor or higher? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "If Polya is never to visit the sixth floor after she begins, we know that her first stop is at the seventh floor. Moreover, her second stop must be at the eighth floor. She has three moves left, and the only way she can ever visit the 6th floor from the 8th floor in three remaining moves is to go down in both of the following two steps. The probability of getting to the eighth step in two moves is $\\frac{1}{2^2} = \\frac{1}{4}$. And the probability of not going downward in the next two steps is $1- \\frac{1}{4} = \\frac{3}{4}$. So the overall probability of never hitting the sixth floor after the beginning is $\\frac{1}{4} \\cdot \\frac{3}{4} = \\boxed{\\frac{3}{16}}.$"
+}

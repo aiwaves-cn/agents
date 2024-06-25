@@ -1,0 +1,6 @@
+{
+    "problem": "Compute \\[\n\\left\\lfloor \\frac{2007! + 2004!}{2006! + 2005!}\\right\\rfloor.\n\\](Note that $\\lfloor x \\rfloor$ denotes the greatest integer less than or equal to $x$.)",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have \\[\n\\left\\lfloor \\frac{2007! + 2004!}{2006! + 2005!}\\right\\rfloor = \\left\\lfloor \\frac{\\left(2007 \\cdot 2006 + \\frac{1}{2005}\\right)\\cdot 2005!}{(2006+1)\\cdot 2005!}\\right\\rfloor = \\left\\lfloor \\frac{2007\\cdot 2006 + \\frac{1}{2005}}{2007}\\right\\rfloor = \\left\\lfloor 2006 + \\frac{1}{2005 \\cdot 2007}\\right\\rfloor = \\boxed{2006}.\n\\]"
+}

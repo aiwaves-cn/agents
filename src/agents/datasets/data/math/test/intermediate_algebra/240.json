@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c,$ $d$ be real numbers such that $a + b + c + d = 17$ and $ab + bc + cd + da = 46.$  Find the minimum possible value of $a^2 + b^2 + c^2 + d^2.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $ab + bc + cd + da = 46$ factors as $(a + c)(b + d).$  So, let $r = a + c$ and $s = b + d.$  Then $r + s = 17$ and $rs = 46,$ so by Vieta's formulas, $r$ and $s$ are the roots of $x^2 - 17x + 46 = 0.$  Thus, $r$ and $s$ are equal to\n\\[\\frac{17 \\pm \\sqrt{105}}{2},\\]in some order.\n\nWe can let $a = \\frac{r}{2} + t,$ $c = \\frac{r}{2} - t,$ $b = \\frac{s}{2} + u,$ and $d = \\frac{s}{2} - u.$  Then\n\\[a^2 + b^2 + c^2 + d^2 = \\frac{r^2}{2} + 2t^2  +\\frac{s^2}{2} + 2u^2 \\ge \\frac{r^2 + s^2}{2} = \\frac{197}{2}.\\]Equality occurs when $a = c = \\frac{r}{2}$ and $b = d = \\frac{s}{2},$ so the minimum value is $\\boxed{\\frac{197}{2}}.$"
+}

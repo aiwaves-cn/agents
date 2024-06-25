@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can I choose 4 different officers (President, Vice President, Treasurer, and Secretary) from a club of 9 people?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "When choosing officers, order matters. The first position can be any of the 9 people. The second position can be any of the remaining 8 people, and so on. The answer is $9\\times 8\\times 7\\times 6=\\boxed{3024}$."
+}

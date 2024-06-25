@@ -1,0 +1,6 @@
+{
+    "problem": "What number, when added to the numerator and to the denominator of $\\frac{5}{8}$, results in a fraction whose value is 0.4?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let $n$ be the desired the number, so adding the number to the numerator and denominator of $\\dfrac{5}{8}$ gives $\\dfrac{5+n}{8+n}$, and we must have $$\\dfrac{5+n}{8+n} = 0.4.$$  Writing $0.4$ as a fraction, we have $$\\dfrac{5+n}{8+n} = \\dfrac{2}{5}.$$Multiplying both sides by $8+n$ and by 5 gives $$5(5+n) = 2(8+n).$$Expanding both sides gives$$25+5n = 16 + 2n.$$Subtracting 25 and $2n$ from both sides gives $3n=-9$, so $n=\\boxed{-3}.$"
+}

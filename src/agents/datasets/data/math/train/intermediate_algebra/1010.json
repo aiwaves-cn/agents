@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ $z$ be positive real numbers such that $xyz = 8.$  Find the minimum value of $x + 2y + 4z.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[x + 2y + 4z \\ge 3 \\sqrt[3]{(x)(2y)(4z)} = 3 \\sqrt[3]{8xyz} = 3 \\sqrt[3]{8 \\cdot 8} = 12.\\]Equality occurs when $x = 2y = 4z$ and $xyz = 8.$  We can solve to get $x = 4,$ $y = 2,$ and $z = 1,$ so the minimum value is $\\boxed{12}.$"
+}

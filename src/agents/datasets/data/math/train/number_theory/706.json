@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive perfect squares less than $10^6$ are multiples of 24?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Because $24 = 3\\cdot 2^3$, a square is divisible by 24 if and only if it is divisible by $3^2\\cdot 2^4 = 144$. Furthermore, a perfect square $N^2$ less than $10^6$ is a multiple of 144 if and only if $N$ is a multiple of 12 less than $10^3$. Because 996 is the largest multiple of 12 less than $10^3$, there are $\\frac{996}{12}= 83$ such positive integers less than $10^3$ and $\\boxed{83}$ positive perfect squares which are multiples of 24."
+}

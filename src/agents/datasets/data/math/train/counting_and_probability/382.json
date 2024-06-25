@@ -1,0 +1,6 @@
+{
+    "problem": "The chart below gives the air distance in miles between selected world cities. If two different cities from the chart are chosen at random, what is the probability that the distance between them is less than $7000$ miles? Express your answer as a common fraction.\n\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n& Bangkok & Cape Town & Honolulu & London \\\\ \\hline\nBangkok & & 6300 & 6609 & 5944 \\\\ \\hline\nCape Town & 6300 & & 11,535 & 5989 \\\\ \\hline\nHonolulu & 6609 & 11,535 & & 7240 \\\\ \\hline\nLondon & 5944 & 5989 & 7240 & \\\\ \\hline\n\\end{tabular}",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Although there are 12 entries on the table, there are only 6 different ``pairs'' of cities. Of the 6 pairs, 4 of them are less than 7,000 miles apart, yielding a $\\boxed{\\frac{2}{3}}$ probability that you select a pair less than 7,000 miles apart."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In a shooting match, eight clay targets are arranged in two hanging columns of three targets each and one column of two targets. A marksman is to break all the targets according to the following rules:\n1) The marksman first chooses a column from which a target is to be broken.\n2) The marksman must then break the lowest remaining target in the chosen column.\nIf the rules are followed, in how many different orders can the eight targets be broken?\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Suppose that the columns are labeled $A$, $B$, and $C$. Consider the string $AAABBBCC$. Since the arrangements of the strings is bijective to the order of shooting, the answer is the number of ways to arrange the letters which is $\\frac{8!}{3! \\cdot 3! \\cdot 2!} = \\boxed{560}$."
+}

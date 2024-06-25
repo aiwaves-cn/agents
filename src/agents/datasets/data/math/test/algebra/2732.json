@@ -1,0 +1,6 @@
+{
+    "problem": "The first term of a geometric sequence is 7, and the 7th term is 5103. What is the 5th term?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "If the common ratio is $r$, then $r^6 = \\frac{5103}{7} = 729 = 3^6$. Therefore, $r^2 = 9$. The $5$th term is $r^4 \\times 7 = 81 \\times 7 = \\boxed{567}$.\n\nNote: $r=\\pm 3$."
+}

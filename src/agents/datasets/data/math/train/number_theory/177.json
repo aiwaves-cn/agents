@@ -1,0 +1,6 @@
+{
+    "problem": "The product of the positive integer divisors of a positive integer $n$ is 729. Find $n$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Suppose that $n$ has $d$ divisors and that $d$ is even. Since the divisors come in pairs whose product is $n$, the product of the divisors of $n$ is $n^{d/2}$. For example, if $n=12$ then the product of the divisors is $(1\\cdot 12)(2\\cdot 6)(3\\cdot 4)=12^3$. If $d$ is odd, then there are $(d-1)/2$ pairs which give a product of $n$, as well as the divisor $\\sqrt{n}$. So again the product of the divisors is $n^{(d-1)/2}n^{1/2}=n^{d/2}$. For example, if $n=16$, then the product of the divisors of $n$ is $(1\\cdot 16)(2\\cdot 8)(4)=16^{5/2}$. To summarize, we have found that the product of the positive integers divisors of a positive integer $n$ is $n^{d/2}$, where $d$ is the number of divisors of $n$. Writing 729 as $3^6$, then, we have $n^{d/2}=3^6$, which implies $n^d=3^{12}$. So the possible values of $(n,d)$ are $(3,12)$, $(9,6)$, $(27,4)$, $(81,3)$ and $(729,2)$. We find that only in the third case $(n,d)=(27,4)$ is $d$ the number of divisors of $n$, so $n=\\boxed{27}$."
+}

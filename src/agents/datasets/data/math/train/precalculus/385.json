@@ -1,0 +1,6 @@
+{
+    "problem": "$ABCD$ is a square and $M$ and $N$ are the midpoints of $\\overline{BC}$ and $\\overline{CD},$ respectively.  Find $\\sin \\theta.$\n\n[asy]\nunitsize(1.5 cm);\n\ndraw((0,0)--(2,0)--(2,2)--(0,2)--cycle);\ndraw((0,0)--(2,1));\ndraw((0,0)--(1,2));\nlabel(\"$A$\", (0,0), SW);\nlabel(\"$B$\", (0,2), NW);\nlabel(\"$C$\", (2,2), NE);\nlabel(\"$D$\", (2,0), SE);\nlabel(\"$M$\", (1,2), N);\nlabel(\"$N$\", (2,1), E);\nlabel(\"$\\theta$\", (.5,.5), SW);\n[/asy]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can assume that the side length of the square is 2.  Then by Pythagoras, $AM = AN = \\sqrt{5},$ and $MN = \\sqrt{2},$ so by the Law of Cosines on triangle $AMN,$\n\\[\\cos \\theta = \\frac{AM^2 + AN^2 - MN^2}{2 \\cdot AM \\cdot AN} = \\frac{5 + 5 - 2}{10} = \\frac{8}{10} = \\frac{4}{5}.\\]Then\n\\[\\sin^2 \\theta = 1 - \\cos^2 \\theta = \\frac{9}{25}.\\]Since $\\theta$ is acute, $\\sin \\theta = \\boxed{\\frac{3}{5}}.$"
+}

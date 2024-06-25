@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than 200 are divisible by 2, 3 and 5?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "To be divisible by 2, 3, and 5, a number must be divisible by the least common multiple (LCM) of those three numbers.  Since the three numbers are prime, their LCM is simply their product, $2\\cdot3\\cdot5=30$.  Since $30\\times 6 = 180$ is the largest multiple of 30 which is less than 200, the numbers $30\\times 1, 30 \\times 2, \\ldots, 30\\times 6$ are the $\\boxed{6}$ positive integers less than 200 that are divisible by 2, 3, and 5."
+}

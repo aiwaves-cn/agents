@@ -1,0 +1,6 @@
+{
+    "problem": "The dartboard below has a radius of 6 inches. Each of the concentric circles has a radius two inches less than the next larger circle. If nine darts land randomly on the target, how many darts would we expect to land in a non-shaded region?\n\n[asy]import graph;\nfill(Circle((0,0),15),gray(0.7));\nfill(Circle((0,0),10),white);\ndraw(Circle((0,0),20));\ndraw(Circle((0,0),15));\ndraw(Circle((0,0),10));\n[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The probability for a single dart to land in the non-shaded region is the ratio of the area of the non-shaded region to the area of the entire dartboard. The area of the entire dartboard is $\\pi \\cdot 6^2 = 36\\pi$. The area of the shaded region is the area of the second largest circle minus the area of the smallest circle, or $\\pi \\cdot 4^2 - \\pi \\cdot 2^2 = 12 \\pi$, so the area of the non-shaded region is $36\\pi - 12\\pi = 24\\pi$. Thus, our ratio is $\\frac{24\\pi}{36\\pi}=\\frac{2}{3}$. If each dart has a $\\frac{2}{3}$ chance of landing in a non-shaded region and there are 9 darts, then the expected number of darts that land in a non-shaded region is $9 \\cdot \\frac{2}{3} = \\boxed{6}$."
+}

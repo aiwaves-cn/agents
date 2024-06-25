@@ -1,0 +1,6 @@
+{
+    "problem": "Assume that $f$ and $g$ are functions for which $f^{-1}(g(x))=5x+3$.  Find $g^{-1}(f(-7))$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We know that $f^{-1}(u)=v$ is the same as $u=f(v)$.  Therefore $f^{-1}(g(x))=5x+3$ is the same as  \\[g(x)=f(5x+3).\\]We can also use that $g(s)=t$ is equivalent to $s=g^{-1}(t)$ to say \\[x=g^{-1}(f(5x+3)).\\]This gives an expression containing $g^{-1}\\circ f$.\n\nNow we solve: \\[g^{-1}(f(-7))=g^{-1}(f(5(-2)+3)).\\]If $x=-2$ the equation $g^{-1}(f(5x+3))=x$ tells us  \\[g^{-1}(f(5(-2)+3))=\\boxed{-2}.\\]"
+}

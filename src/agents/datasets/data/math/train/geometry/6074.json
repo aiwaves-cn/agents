@@ -1,0 +1,6 @@
+{
+    "problem": "In convex quadrilateral $ABCD, \\angle A \\cong \\angle C, AB = CD = 180,$ and $AD \\neq BC.$ The perimeter of $ABCD$ is $640$. Find $\\lfloor 1000 \\cos A \\rfloor.$ (The notation $\\lfloor x \\rfloor$ means the greatest integer that is less than or equal to $x.$)\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy] real x = 1.60; /* arbitrary */  pointpen = black; pathpen = black+linewidth(0.7); size(180); real BD = x*x + 1.80*1.80 - 2 * 1.80 * x * 7 / 9; pair A=(0,0),B=(1.8,0),D=IP(CR(A,x),CR(B,BD)),C=OP(CR(D,1.8),CR(B,2.80 - x)); D(MP(\"A\",A)--MP(\"B\",B)--MP(\"C\",C)--MP(\"D\",D,N)--B--A--D); MP(\"180\",(A+B)/2); MP(\"180\",(C+D)/2,NE); D(anglemark(B,A,D)); D(anglemark(D,C,B)); [/asy]\nBy the Law of Cosines on $\\triangle ABD$ at angle $A$ and on $\\triangle BCD$ at angle $C$ (note $\\angle C = \\angle A$),\n\\[180^2 + AD^2 - 360 \\cdot AD \\cos A = 180^2 + BC^2 - 360 \\cdot BC \\cos A\\]\\[(AD^2 - BC^2) = 360(AD - BC) \\cos A\\]\\[(AD - BC)(AD + BC) = 360(AD - BC) \\cos A\\]\\[(AD + BC) = 360 \\cos A\\]We know that $AD + BC = 640 - 360 = 280$. $\\cos A = \\dfrac{280}{360} =  \\dfrac{7}{9} = 0.777 \\ldots$\n$\\lfloor 1000 \\cos  A \\rfloor = \\boxed{777}$."
+}

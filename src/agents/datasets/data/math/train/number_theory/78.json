@@ -1,0 +1,6 @@
+{
+    "problem": "There are 54 chips in a box. Each chip is either small or large. If the number of small chips is greater than the number of large chips by a prime number of chips, what is the greatest possible number of large chips?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Let $s$ be the number of small chips and $l$ be the number of large chips. From the given information, we have $s+l=54$ and $s=l+p$ for some prime $p$. Thus, $2l+p=54$. We wish to maximize $l$, so we must minimize $p$. Therefore, we set $p=2$ to get $l=\\boxed{26}$."
+}

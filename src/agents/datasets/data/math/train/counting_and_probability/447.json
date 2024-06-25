@@ -1,0 +1,6 @@
+{
+    "problem": "There are 12 different-colored crayons in a box. How many ways can Karl select four crayons if the order in which he draws them out does not matter?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 12 ways to select the first crayon, 11 ways to select the second, 10 ways to select the third, and 9 ways to select the last. However, since order does not matter, we must divide by the number of ways he can draw out the crayons, which is $4!$.\n\nThe answer is $\\dfrac{12\\times11\\times10\\times9}{4!}=\\boxed{495}$ ways."
+}

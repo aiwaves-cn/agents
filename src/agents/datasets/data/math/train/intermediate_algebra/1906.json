@@ -1,0 +1,6 @@
+{
+    "problem": "Find\n\\[\\sum_{n = 1}^\\infty \\frac{2^n}{1 + 2^n + 2^{n + 1} + 2^{2n + 1}}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "First, we can factor the denominator:\n\\[1 + 2^n + 2^{n + 1} + 2^{2n + 1} = (1 + 2^n) + 2^{n + 1} (1 + 2^n) = (1 + 2^n)(1 + 2^{n + 1}).\\]Then we can write the numerator $2^n$ as $(1 + 2^{n + 1}) - (1 + 2^n) = 2^n,$ so\n\\[\\frac{2^n}{1 + 2^n + 2^{n + 1} + 2^{2n + 1}} = \\frac{(1 + 2^{n + 1}) - (1 + 2^n)}{(1 + 2^n)(1 + 2^{n + 1})} = \\frac{1}{1 + 2^n} - \\frac{1}{1 + 2^{n + 1}}.\\]Hence,\n\\begin{align*}\n\\sum_{n = 1}^\\infty \\frac{2^n}{1 + 2^n + 2^{n + 1} + 2^{2n + 1}} &= \\left( \\frac{1}{1 + 2} - \\frac{1}{1 + 2^2} \\right) + \\left( \\frac{1}{1 + 2^2} - \\frac{1}{1 + 2^3} \\right) + \\left( \\frac{1}{1 + 2^3} - \\frac{1}{1 + 2^4} \\right) + \\dotsb \\\\\n&= \\boxed{\\frac{1}{3}}.\n\\end{align*}"
+}

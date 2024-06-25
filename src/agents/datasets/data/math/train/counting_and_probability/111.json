@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive, three-digit integers contain at least one $3$ as a digit but do not contain a $5$ as a digit?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let us consider the number of three-digit integers that do not contain $3$ and $5$ as digits; let this set be $S$. For any such number, there would be $7$ possible choices for the hundreds digit (excluding $0,3$, and $5$), and $8$ possible choices for each of the tens and ones digits. Thus, there are $7 \\cdot 8 \\cdot 8 = 448$ three-digit integers without a $3$ or $5$.\n\nNow, we count the number of three-digit integers that just do not contain a $5$ as a digit; let this set be $T$. There would be $8$ possible choices for the hundreds digit, and $9$ for each of the others, giving $8 \\cdot 9 \\cdot 9 = 648$. By the complementary principle, the set of three-digit integers with at least one $3$ and no $5$s is the number of integers in $T$ but not $S$. There are $648 - 448 = \\boxed{200}$ such numbers."
+}

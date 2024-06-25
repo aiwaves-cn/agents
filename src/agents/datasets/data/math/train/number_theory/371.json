@@ -1,0 +1,6 @@
+{
+    "problem": "There is a prime number which is a factor of every sum of three  consecutive integers. What is the number?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let $n-1$, $n$, and $n+1$ be three consecutive integers. Their sum is $(n-1) + n + (n+1) = 3n$, which is always divisible by $\\boxed{3}$, but not necessarily by any other prime."
+}

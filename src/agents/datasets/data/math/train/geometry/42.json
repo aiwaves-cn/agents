@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, we have that $E$ and $F$ are midpoints of sides $\\overline{AC}$ and $\\overline{AB}$, respectively. The area of $\\triangle ABC$ is 24 square units. How many square units are in the area of $\\triangle CEF$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We first draw a diagram: [asy]\npair A, B, C, E, F;\nA = (0, 4);\nB = (-3, 0);\nC = (7, 0);\nE = 0.5 * A + 0.5 * C;\nF = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--E--F--cycle);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, NW);\nlabel(\"$C$\", C, NE);\nlabel(\"$E$\", E, NE);\nlabel(\"$F$\", F, NW);\n[/asy] Since $F$ is the midpoint of $\\overline{AB}$, the area of $\\triangle AFC$ is half of the area of $\\triangle ABC,$ or 12 square units. Following the same reasoning, we see that $E$ is the midpoint of $\\overline{AC},$ so the area of $\\triangle CEF$ is half that of $\\triangle AFC,$ or $\\boxed{6}$ square units."
+}

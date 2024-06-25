@@ -1,0 +1,6 @@
+{
+    "problem": "By partial fractions,\n$$\\frac{7x-2}{x^2-4} = \\frac{A}{x-2} + \\frac{B}{x+2}.$$Find $A+B$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying both sides by $x^2-4=(x+2)(x-2)$ gives us\n$$7x-2 = A(x+2)+B(x-2).$$Setting $x=2$ gives $12=4A$, and so $A=3$.\n\nSetting $x=-2$ gives $-16=-4B$, and so $B=4$.  Therefore $A+B=3+4=\\boxed{7}.$\n\nAlternatively, since the equation\n$$7x-2 = A(x+2)+B(x-2)$$holds for all values of $x,$ the coefficient of $x$ on both sides must be the same.  Hence, $A + B = \\boxed{7}.$"
+}

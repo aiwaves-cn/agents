@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\n|\\lfloor{x}\\rfloor| &\\text{if }x\\text{ is rational}, \\\\\n\\lceil{x}\\rceil^2 &\\text{if }x\\text{ is irrational}.\n\\end{cases}\n\\] Find $f(\\sqrt[3]{-8})+f(-\\pi)+f(\\sqrt{50})+f\\left(\\frac{9}{2}\\right)$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since we know that $\\sqrt[3]{-8}=-2$ is a rational number, $$f(\\sqrt[3]{-8})=|\\lfloor{-2}\\rfloor|=2.$$Continuing from here, we know that $-\\pi$ is irrational, thus $$f(-\\pi)=\\lceil{-\\pi}\\rceil^2=(-3)^2=9.$$Because 50 is not a perfect square, $\\sqrt{50}$ must be irrational as well, so $$f(\\sqrt{50})=\\lceil{\\sqrt{50}}\\rceil^2=8^2=64.$$Finally, we know that $\\frac{9}{2}$ is a rational number, so $$f\\left(\\frac{9}{2}\\right)=\\left|\\left\\lfloor{\\frac92}\\right\\rfloor\\right|=4.$$Therefore $$f(\\sqrt[3]{-8})+f(-\\pi)+f(\\sqrt{50})+f\\left(\\frac{9}{2}\\right)=2+9+64+4=\\boxed{79}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $n$ is an integer, what is the remainder when the sum of $7 - n$ and $n + 3$ is divided by $7$?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We see that $(7 - n) + (n + 3) = 10 \\equiv 3 \\pmod 7,$ hence the remainder of the sum when divided by $7$ is $\\boxed{3}.$"
+}

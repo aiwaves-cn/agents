@@ -1,0 +1,6 @@
+{
+    "problem": "The larger circle has center $O$ and passes through $D$. The smaller circle has diameter $OD$. What percent of the larger circle's area is gray?\n\n[asy]import graph;\ndraw(Circle((0,0),30),black);\nfill(Circle((0,-15),15),gray(.6));\ndraw(Circle((0,-15),15),black);\ndraw((0,0)--(0,-30),black);\nlabel(\"O\",(0,0),N);\nlabel(\"D\",(0,-30),S);\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The ratio of the radius of the smaller circle to that of the larger circle is $\\frac{1}{2}$, since the diameter is half as long.  Thus, the ratio of the area of the smaller circle to that of the larger circle is $\\left(\\frac{1}{2}\\right)^2 = \\frac{1}{4}$.  Thus, the gray area is $\\boxed{25\\%}$ of the area of the larger circle.\n\nTo be more rigorous: if the radius of the larger circle is $r$, the radius of the smaller circle is $\\frac{1}{2} r$.  Thus, the ratio of the area of the smaller to the larger is: $\\frac{\\pi (\\frac{1}{2} r)^2}{\\pi r^2} = \\frac{1}{4}$."
+}

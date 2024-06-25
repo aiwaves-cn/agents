@@ -1,0 +1,6 @@
+{
+    "problem": "Find $x$ if\n\\[3 \\arctan \\frac{1}{4} + \\arctan \\frac{1}{20} + \\arctan \\frac{1}{x} = \\frac{\\pi}{4}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Note that $\\arctan \\frac{1}{4}$ is the argument of $4 + i,$ $\\arctan \\frac{1}{20}$ is the argument of $20 + i,$ and $\\arctan x$ is the argument of $x + i.$  Therefore, $3 \\arctan \\frac{1}{4} + \\arctan \\frac{1}{20} + \\arctan \\frac{1}{x}$ is the argument of\n\\begin{align*}\n(4 + i)^3 (20 + i)(x + i) &= (52 + 47i)(20 + i)(x + i) \\\\\n&= (993 + 992i)(x + i) \\\\\n&= (993x - 992) + (993 + 992x) i.\n\\end{align*}But this argument is also $\\frac{\\pi}{4},$ which is the argument of $1 + i.$  Thus, we want the real and imaginary parts to be equal:\n\\[993x - 992 = 993 + 992x.\\]Solving, find $x = \\boxed{1985}.$"
+}

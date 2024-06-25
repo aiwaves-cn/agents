@@ -1,0 +1,6 @@
+{
+    "problem": "On Monday, I worked $t-6$ hours and earned $2t-5$ dollars per hour. My friend Andrew worked $2t-8$ hours but only earned $t-5$ dollars an hour. As it turns out, we earned the same amount. What is the value of $t$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since we both earned the same amount, \\begin{align*}\n(t-6) (2t-5) &= (2t-8)(t-5) \\\\\n\\Rightarrow \\qquad 2t^2-17t+30 &= 2t^2 - 18t+ 40.\n\\end{align*}Simplifying gives $t = \\boxed{10}$."
+}

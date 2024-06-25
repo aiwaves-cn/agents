@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = \\sin{x} + 2\\cos{x} + 3\\tan{x}$, using radian measure for the variable $x$.  Let $r$ be the smallest positive value of $x$ for which $f(x) = 0$.  Find $\\lfloor r \\rfloor.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "If $0 < x < \\frac{\\pi}{2},$ then $\\sin x,$ $\\cos x,$ and $\\tan x$ are all positive, so $f(x) > 0.$\n\nFor $x = \\frac{\\pi}{2},$ $\\tan x$ is not defined.\n\nIf $\\frac{\\pi}{2} < x < \\pi,$ then $\\sin x$ is positive, and $\\cos x$ and $\\tan x$ are negative.  Suppose $f(x) = 0.$  Then\n\\[\\sin x + 2 \\cos x = -3 \\tan x > 0.\\]Hence,\n\\[\\sin x + \\cos x > \\sin x + 2 \\cos x > 0.\\]Then $\\tan x \\cos x + \\cos x = \\cos x (\\tan x + 1) > 0,$ so $\\tan x + 1 < 0,$ which means $\\tan x < -1.$  But then\n\\[f(x) = \\sin x + 2 \\cos x + 3 \\tan x < 1 + 2(0) + 3(-1) = -2,\\]so there are no solutions to $f(x) = 0$ in this case.\n\nNote that $f(\\pi) = -2$ and $f \\left( \\frac{5 \\pi}{4} \\right) = 3 - \\frac{3}{\\sqrt{2}} > 0.$  Therefore, by continuity, $f(x) = 0$ has a root between $\\pi$ and $\\frac{5 \\pi}{4}.$  Since $3 < \\pi < \\frac{5 \\pi}{4} < 4,$ $\\lfloor r \\rfloor = \\boxed{3}.$"
+}

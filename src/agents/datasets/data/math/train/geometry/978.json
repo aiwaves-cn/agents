@@ -1,0 +1,6 @@
+{
+    "problem": "A right cone has a base with a circumference of $16\\pi$ inches and a height of 30 inches. The height of this cone is reduced while the circumference stays the same. The volume of the shorter cone is $192\\pi$ cubic inches. What is the ratio of the shorter height to the original height? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let the cone have radius $r$ inches; we have $2\\pi r = 16\\pi$, so $r = 8$.  Let the new height of the cone be $h$ inches.  We have $192\\pi = (1/3)\\pi(8^2)(h)$; solving yields $h = 9$.  Thus the ratio of the new height to the original height is $9/30 = \\boxed{\\frac{3}{10}}$."
+}

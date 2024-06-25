@@ -1,0 +1,6 @@
+{
+    "problem": "A company that sells widgets has to pay $\\$1000$ in one-time equipment fees and then it costs $\\$0.50$ for each widget it makes. It sells widgets at a price of $\\$2.75$ per widget. What is the least number of widgets the company has to sell in order to make a profit?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We look for the least number of widgets $n$ such that the cost is less than the revenue. \\begin{align*}\n1000+.5n&<2.75n\\quad\\Rightarrow\\\\\n1000&<2.25n\\quad\\Rightarrow\\\\\n444.\\overline{4}=\\frac{1000}{2.25}&<n.\n\\end{align*}The smallest integer greater than $444.\\overline{4}$ is 445, so the company has to sell at least $\\boxed{445}$ widgets to make a profit."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Voldemort bought $6.\\overline{6}$ ounces of ice cream at an ice cream shop. Each ounce cost $\\$0.60.$ How much money, in dollars, did he have to pay?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "First let's convert $6.\\overline{6}$ to a fraction. Let $p=6.\\overline{6}$ and multiply both sides of this equation by 10 to obtain $10p=66.\\overline{6}$. Subtracting the left-hand sides $10p$ and $p$ as well as the right-hand sides $66.\\overline{6}$ and $6.\\overline{6}$ of these two equations gives $9p=60$, which implies $p=20/3$. As we know, $0.60 = 6/10=3/5$. We multiply the two fractions to get $$\\frac{\\cancelto{4}{20}}{\\cancel{3}} \\cdot \\frac{\\cancel{3}}{\\cancel{5}} = 4.$$Voldemort had to pay $\\boxed{\\$4}$ for the ice cream."
+}

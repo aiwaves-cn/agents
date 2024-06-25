@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[\\sin^4 x + \\frac{3}{2} \\cos^4 x,\\]as $x$ varies over all real numbers.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Cauchy-Schwarz,\n\\[\\left( 1 + \\frac{2}{3} \\right) \\left( \\sin^4 x + \\frac{3}{2} \\cos^4 x \\right) \\ge (\\sin^2 x + \\cos^2 x)^2 = 1,\\]so\n\\[\\sin^4 x + \\frac{3}{2} \\cos^4 x \\ge \\frac{3}{5}.\\]Equality occurs when\n\\[\\sin^4 x = \\frac{9}{4} \\cos^4 x,\\]or $\\tan^4 x = \\frac{9}{4}.$  Thus, equality occurs for $x = \\arctan \\sqrt{\\frac{3}{2}}.$  Hence, the minimum value is $\\boxed{\\frac{3}{5}}.$"
+}

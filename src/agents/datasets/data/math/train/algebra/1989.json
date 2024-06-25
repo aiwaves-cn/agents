@@ -1,0 +1,6 @@
+{
+    "problem": "If $3+a=4-b$ and $4+b=7+a$, what is $3-a$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "First we begin by solving the system of equations \\begin{align*}\n3+a&=4-b, \\\\\n4+b&=7+a.\n\\end{align*}Adding the two equations, we get $3+a+4+b=4-b+7+a$, which simplifies to $7+a+b=11+a-b$. Cancelling $a$ from both sides, we get $7+b=11-b$. Solving for $b$, we find that $b=2$. Plugging this into the first equation above, we obtain $3+a=4-2$. Hence $a=-1$ and $3-a=\\boxed{4}$."
+}

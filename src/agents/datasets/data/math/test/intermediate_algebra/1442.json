@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ satisfies\n\\[f(x + y) = f(x) + f(y) + 2xy\\]for all real numbers $x$ and $y.$  If $f(1) = 4,$ then find $f(8).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = y,$ we get\n\\[f(2x) = 2f(x) + 2x^2.\\]Then\n\\begin{align*}\nf(2) &= 2f(1) + 2 \\cdot 1^2 = 10, \\\\\nf(4) &= 2f(2) + 2 \\cdot 2^2 = 28, \\\\\nf(8) &= 2f(4) + 2 \\cdot 4^2 = \\boxed{88}.\n\\end{align*}"
+}

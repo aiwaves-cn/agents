@@ -1,0 +1,6 @@
+{
+    "problem": "A spiral staircase turns $270^\\circ$ as it rises 10 feet.  The radius of the staircase is 3 feet.  What is the number of feet in the length of the handrail?  Express your answer as a decimal to the nearest tenth.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The handrail encases a right circular cylinder with radius 3 feet and height 10 feet.  Its lateral area is a rectangle with height 10 feet and width equal to its base circumference, or $2\\pi\\cdot 3 = 6\\pi$ feet.  A staircase that turns $360^\\circ$ would, when unrolled and lain flat, span the diagonal of this rectangle.  However, our staircase does not make a full turn, so it spans a rectangle with a shorter width.\n\nA $270^\\circ$ sector of a circle with radius 3 has arc length $\\frac{270^\\circ}{360^\\circ}\\cdot 2\\pi\\cdot 3 = 4.5\\pi$.  Thus, when unrolled and lain flat, our handrail spans the diagonal of a rectangle with height 10 feet and width $4.5\\pi$ feet.  Our handrail has length $\\sqrt{10^2+(4.5\\pi)^2} \\approx 17.317$ feet.  To the nearest tenth, this value is $\\boxed{17.3}$ feet."
+}

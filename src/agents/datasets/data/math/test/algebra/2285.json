@@ -1,0 +1,6 @@
+{
+    "problem": "If \\[\\frac{x}{y} = \\frac{4}{5}, \\; \\frac{y}{z} = \\frac{3}{10}, \\;\\text{and} \\; \\frac{z}{w} = \\frac{6}{7},\\] what is the value of $\\dfrac{x + y + w}{z}$? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If we multiply the first two fractions, we can find the value of $x/z$: $$\\frac{x}{y}\\cdot\\frac{y}{z}=\\frac{x}{z}=\\frac{4}{5}\\cdot\\frac{3}{10}=\\frac{12}{50}.$$\n\nInverting the given $\\dfrac{z}{w} = \\dfrac{6}{7}$ gives $$\\frac{w}{z}=\\frac{7}{6}.$$\n\nAdding these results to the given value of $y/z$ gives the value we are looking for: \\begin{align*}\n\\frac{x}{z}+\\frac{y}{z}+\\frac{w}{z}&=\\frac{x+y+w}{z} \\\\&= \\frac{12}{50}+\\frac{7}{6}+\\frac{3}{10}\\\\\n& = \\frac{36}{150}+\\frac{175}{150}+\\frac{45}{150}\\\\\n& = \\frac{256}{150} \\\\\n&= \\boxed{\\frac{128}{75}}.\\end{align*}"
+}

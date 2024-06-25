@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real $x$ such that $(2^x-4)^3+(4^x-2)^3=(4^x+2^x-6)^3.$\n\nEnter all the solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = 2^x - 4$ and $b = 4^x - 2.$  Then $a + b = 2^x + 4^x - 6,$ and the equation becomes\n\\[a^3 + b^3 = (a + b)^3.\\]Expanding, we get $a^3 + b^3 = a^3 + 3a^2 b + 3ab^2 + b^3.$  Then $3a^2 b + 3ab^2 = 0,$ which factors as\n\\[3ab(a + b) = 0.\\]Thus, $a = 0,$ $b = 0,$ or $a + b = 0.$\n\nFor $a = 0,$ $2^x - 4 = 0,$ so $x = 2.$\n\nFor $b = 0,$ $4^x - 2 = 0,$ so $x = \\frac{1}{2}.$\n\nFor $a + b = 0,$\n\\[2^x + 4^x = 6.\\]Note that $x = 1$ is a solution.  Since $2^x + 4^x$ is an increasing function, it is the only solution.\n\nThus, the solutions are $\\boxed{\\frac{1}{2}, 1, 2}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of all the digits used to write the whole numbers 10 through 13 is $1 + 0 + 1 + 1 + 1 + 2 + 1 + 3 = 10$. What is the sum of all the digits used to write the whole numbers 1 through 110, inclusive?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We first calculate the sum of all digits used to write the whole numbers 0 through 99.  If we consider all such numbers as two-digit (e.g. write 04 instead of 4), the sum of digits will be unchanged.  Then we see that each digit appears an equal number of times in the ones place, and similarly for the tens place, meaning it appears a total of $2\\cdot \\frac{100}{10} = 20$ times.  Thus the sum of all digits used to write the whole numbers 00 through 99 is $20\\cdot (0 + 1 +\\cdots + 8 + 9) = 900$.  The sum of the digits from 100 to 110 is just $(1 + 0) + (1 + 1) + (1 + 2) + \\cdots + (1+9) + 2 = 57$.  Thus our final answer is $900 + 57 = \\boxed{957}$."
+}

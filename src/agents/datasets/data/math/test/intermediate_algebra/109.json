@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the values of $a$ for which the equations\n\\begin{align*}\nx^2 + ax + 1 &= 0, \\\\\nx^2  - x - a &= 0\n\\end{align*}have a common real root.  Enter all the possible values, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ be the common root, so\n\\begin{align*}\nr^2 + ar + 1 &= 0, \\\\\nr^2 - r - a &= 0.\n\\end{align*}Subtracting these equations, we get $ar + r + a + 1 = 0.$  This factors as $(r + 1)(a + 1) = 0,$ so $r = -1$ or $a = -1.$\n\nIf $r = -1,$ then $1 - a + 1 = 0,$ so $a = 2.$\n\nIf $a = -1,$ then $x^2 - x + 1 = 0,$ which has no real roots.\n\nSo the only possible value of $a$ is $\\boxed{2}.$"
+}

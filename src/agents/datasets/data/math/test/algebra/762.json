@@ -1,0 +1,6 @@
+{
+    "problem": "Find the least value of $b$ such that $b^2+2b-15 \\le 0$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We factor the quadratic, getting $(b+5)(b-3) \\le 0$. The expression is equal to $0$ when $b=3 \\text{ or } -5$.  When $b \\le -5$ or $b \\ge 3$, the quadratic is positive. When $-5 \\le b \\le 3$, the quadratic is non-positive. Therefore, $b=\\boxed{-5}$ is the least value of $b$ for which $b^2 +2b - 15 \\le 0$."
+}

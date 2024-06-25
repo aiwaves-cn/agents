@@ -1,0 +1,6 @@
+{
+    "problem": "Let $n$ be a positive integer.  Simplify the expression\n\\[\\frac{(2^4 + \\frac{1}{4})(4^4 + \\frac{1}{4}) \\dotsm [(2n)^4 + \\frac{1}{4}]}{(1^4 + \\frac{1}{4})(3^4 + \\frac{1}{4}) \\dotsm [(2n - 1)^4 + \\frac{1}{4}]}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[f(m) = m^4 + \\frac{1}{4} = \\frac{4m^4 + 1}{4}.\\]We can factor this with a little give and take:\n\\begin{align*}\nf(m) &= \\frac{4m^4 + 1}{4} \\\\\n&= \\frac{4m^4 + 4m^2 + 1 - 4m^2}{4} \\\\\n&= \\frac{(2m^2 + 1)^2 - (2m)^2}{4} \\\\\n&= \\frac{(2m^2 + 2m + 1)(2m^2 - 2m + 1)}{4}.\n\\end{align*}Now, let $g(m) = 2m^2 + 2m + 1.$  Then\n\\[g(m - 1) = 2(m - 1)^2 + 2(m - 1) + 1 = 2m^2 - 2m + 1.\\]Hence,\n\\[f(m) = \\frac{g(m) g(m - 1)}{4}.\\]Therefore,\n\\begin{align*}\n\\frac{(2^4 + \\frac{1}{4})(4^4 + \\frac{1}{4}) \\dotsm [(2n)^4 + \\frac{1}{4}]}{(1^4 + \\frac{1}{4})(3^4 + \\frac{1}{4}) \\dotsm [(2n - 1)^4 + \\frac{1}{4}]} &= \\frac{f(2) f(4) \\dotsm f(2n)}{f(1) f(3) \\dotsm f(2n - 1)} \\\\\n&= \\frac{\\frac{g(2) g(1)}{4} \\cdot \\frac{g(4) g(3)}{4} \\dotsm \\frac{g(2n) g(2n - 1)}{4}}{\\frac{g(1) g(0)}{4} \\cdot \\frac{g(3) g(2)}{4} \\dotsm \\frac{g(2n - 1) g(2n - 2)}{4}} \\\\\n&= \\frac{g(2n)}{g(0)} \\\\\n&= 2(2n)^2 + 2(2n) + 1 \\\\\n&= \\boxed{8n^2 + 4n + 1}.\n\\end{align*}"
+}

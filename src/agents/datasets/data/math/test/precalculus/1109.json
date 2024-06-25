@@ -1,0 +1,6 @@
+{
+    "problem": "Find the equation of the asymptote of the graph of $r = \\cos 2 \\theta \\sec \\theta.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "For $r = \\cos 2 \\theta \\sec \\theta,$\n\\[x = r \\cos \\theta = \\cos 2 \\theta\\]and\n\\[y = r \\sin \\theta = \\frac{\\cos 2 \\theta \\sin \\theta}{\\cos \\theta}.\\][asy]\nunitsize(1.5 cm);\n\nreal r, t, x, y;\n\nt = -0.4*pi;\nr = cos(2*t)/cos(t);\nx = r*cos(t);\ny = r*sin(t);\npath foo = (x,y);\n\nfor (t = -0.4*pi; t <= 0.4*pi; t = t + 0.01) {\n  r = cos(2*t)/cos(t);\n  x = r*cos(t);\n  y = r*sin(t);\n  foo = foo--(x,y);\n}\n\ndraw(foo,red);\ndraw((-1,-2.5)--(-1,2.5),blue + dashed);\ndraw((-1.5,0)--(1.5,0));\ndraw((0,-2.5)--(0,2.5));\n[/asy]\n\nAs $\\theta$ approaches $\\frac{\\pi}{2}$ from below, $x = \\cos 2 \\theta$ approaches $-1$ and $y = \\frac{\\cos 2 \\theta \\sin \\theta}{\\cos \\theta}$ approaches $-\\infty.$  Thus, the equation of the asymptote is $\\boxed{x = -1}.$"
+}

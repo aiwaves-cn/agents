@@ -1,0 +1,6 @@
+{
+    "problem": "Parallelogram $ABCD$ has $A(0, 1)$, $B(2, 1)$ and $C(4, 0)$ as three of its vertices. What is the sum of the coordinates of point $D$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Side $AB$ is horizontal and of length $2$, so side $CD$ must also be, oriented oppositely.  So $D$ is at $(4-2,0)=(2,0)$ and the sum is $\\boxed{2}$."
+}

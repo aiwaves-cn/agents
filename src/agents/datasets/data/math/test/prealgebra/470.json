@@ -1,0 +1,6 @@
+{
+    "problem": "In the sequence $$32, 8, \\underline{\\phantom{XX}}, \\underline{\\phantom{XX}}, x,$$each term after the second is the average of the two terms immediately before it. What is the value of $x$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The third term in the sequence is, by definition, the average of the first two terms, namely 32 and 8, or $\\frac{1}{2}(32+8) = \\frac{1}{2}(40)=20$.\n\nThe fourth term is the average of the second and third terms, or $\\frac{1}{2}(8+20)=14$.\n\nThe fifth term is the average of the third and fourth terms, or $\\frac{1}{2}(20+14)=17$.\n\nTherefore, $x=\\boxed{17}$."
+}

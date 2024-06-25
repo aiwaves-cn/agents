@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f$ be a function satisfying $f(xy) = f(x)/y$ for all positive real numbers $x$ and $y$. If $f(500) = 3$, what is the value of $f(600)$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $$f(600) = f \\left( 500 \\cdot \\frac{6}{5} \\right) = \\frac{f(500)}{6/5} = \\frac{3}{6/5} = \\boxed{\\frac{5}{2}}.$$$$\\textbf{OR}$$For all positive $x$, $$f(x) = f(1\\cdot x) = \\frac{f(1)}{x},$$so $xf(x)$ is the constant $f(1)$. Therefore, $$600f(600) = 500f(500) = 500(3) = 1500,$$so $f(600) = \\frac{1500}{600} = \\boxed{\\frac{5}{2}}$.\n\nNote: $f(x) = \\frac{1500}{x}$ is the unique function satisfying the given conditions."
+}

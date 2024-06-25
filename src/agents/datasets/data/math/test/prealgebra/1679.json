@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest prime number that is the sum of two other distinct prime numbers?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The two smallest prime numbers are 2 and 3, and $2+3=5$ is also prime. Therefore, $\\boxed{5}$ is the smallest prime number that is the sum of two other distinct primes.\n\nNote: If $p$ and $q$ are odd primes, then $p+q$ is an even number greater than 7 and is therefore composite.  So the only sets of three primes for which two primes sum to the third are of the form $\\{2,p,p+2\\}$."
+}

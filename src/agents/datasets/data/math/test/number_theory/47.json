@@ -1,0 +1,6 @@
+{
+    "problem": "What positive five-digit whole number with an 8 in the ten-thousands place is a perfect cube?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let $m^3$ be a positive five-digit perfect cube with an 8 in the ten-thousands place. Thus, $8\\times10^4<m^3<9\\times10^4\\Longleftrightarrow 20\\sqrt[3]{10}<m<10\\sqrt[3]{90}\\Rightarrow43<m<45$. Therefore we conclude $m=44$, so $m^3=44^3=\\boxed{85,\\!184}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "8 coins are simultaneously flipped.  What is the probability that heads are showing on at most 2 of them?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The number of ways for the outcome to have exactly 0, 1, or 2 heads are $\\binom{8}{0}=1$, $\\binom{8}{1}=8$, or $\\binom{8}{2}=28$, respectively.  There are $2^8$ total possible outcomes (2 possibilities for each coin, and 8 coins). So the answer is $\\dfrac{1+8+28}{2^8}=\\boxed{\\dfrac{37}{256}}$."
+}

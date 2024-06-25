@@ -1,0 +1,6 @@
+{
+    "problem": "The number $a+\\sqrt{b}$ and its radical conjugate have a sum of $-4$ and a product of $1$. Find $a+b$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The radical conjugate of $a+\\sqrt{b}$ is $a-\\sqrt{b}$. Hence their sum is $2a$. Then we know that $2a=-4$ which gives us $a=-2$. The product $(a+\\sqrt{b})\\cdot(a-\\sqrt{b})=a^2-b=1.$ Plugging in the value for $a$, we can solve for $b$ to get that $b=(-2)^2-1=3$. Therefore $a+b=-2+3=\\boxed{1}$."
+}

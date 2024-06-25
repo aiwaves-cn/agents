@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_0=-2,b_0=1$, and for $n\\geq 0$, let\n\\begin{align*}a_{n+1}&=a_n+b_n+\\sqrt{a_n^2+b_n^2},\\\\b_{n+1}&=a_n+b_n-\\sqrt{a_n^2+b_n^2}.\\end{align*}Find $\\frac{1}{a_{2012}} + \\frac{1}{b_{2012}}.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\n\\frac{1}{a_{n + 1}} + \\frac{1}{b_{n + 1}} &= \\frac{1}{a_n + b_n + \\sqrt{a_n^2 + b_n^2}} + \\frac{1}{a_n + b_n - \\sqrt{a_n^2 + b_n^2}} \\\\\n&= \\frac{a_n + b_n - \\sqrt{a_n^2 + b_n^2} + a_n + b_n + \\sqrt{a_n^2 + b_n^2}}{(a_n + b_n)^2 - (a_n^2 + b_n^2)} \\\\\n&= \\frac{2a_n + 2b_n}{2a_n b_n} \\\\\n&= \\frac{1}{a_n} + \\frac{1}{b_n}.\n\\end{align*}Thus, $\\frac{1}{a_n} + \\frac{1}{b_n}$ is a constant, which means\n\\[\\frac{1}{a_{2012}} + \\frac{1}{b_{2012}} = \\frac{1}{a_0} + \\frac{1}{b_0} = \\boxed{\\frac{1}{2}}.\\]"
+}

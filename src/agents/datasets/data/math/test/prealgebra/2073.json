@@ -1,0 +1,6 @@
+{
+    "problem": "Exits on a highway are numbered consecutively from 1 to 50. The distance from exit 41 to exit 50 is 100 km. If each exit is at least 6 km from the next exit, what is the longest possible distance, in kilometers, between exit 47 and exit 48?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "To make the distance between exit $47$ and exit $48$ as long as possible, we want to make the distance between any other two consecutive exits as short as possible (that is, $6$ km). There are nine distances between exits from exit $41$ to exit $50$; eight that we want to make as short as possible and one that we want to make as long as possible. Thus, the longest possible distance is $100 - 8 \\cdot 6 = \\boxed{52}$ km."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Eleven girls are standing around a circle. A ball is thrown clockwise around the circle. The first girl, Ami, starts with the ball, skips the next three girls and throws to the fifth girl, who then skips the next three girls and throws the ball to the ninth girl. If the throwing pattern continues, including Ami's initial throw, how many total throws are necessary for the ball to return to Ami?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If we number the girls 1, 2, 3, $\\dots$, so that Ami is number 1, and she passes the ball first to girl number 5, then the numbers of the girls with the ball are 1, 5, 9, 2, 6, 10, 3, 7, 11, 4, 8, 1.  Hence, the ball must be thrown $\\boxed{11}$ times before it returns to Ami."
+}

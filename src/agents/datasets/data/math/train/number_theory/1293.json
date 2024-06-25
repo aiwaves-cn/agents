@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$ be the set of all numbers which can be represented as the sum of three consecutive positive integers. What is the greatest common divisor of all numbers in $A$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Each member in the set is of the form $(x-1)+x+(x+1)=3x$. Since $x$ can be any positive integer, the greatest common divisor of all these members is $\\boxed{3}$."
+}

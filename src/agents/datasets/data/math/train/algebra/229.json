@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest value of $c$ such that $-2$ is in the range of  $f(x)=x^2+3x+c$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We see that $-2$ is in the range of $f(x) = x^2 + 3x + c$ if and only if the equation $x^2+3x+c=-2$ has a real root.  We can re-write this equation as $x^2 + 3x + (c + 2) = 0$.  The discriminant of this quadratic is $3^2 - 4(c + 2) = 1 - 4c$.  The quadratic has a real root if and only if the discriminant is nonnegative, so $1 - 4c \\ge 0$.  Then $c \\le 1/4$, so the largest possible value of $c$ is $\\boxed{\\frac{1}{4}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The 5-digit number $52\\,28\\square$ is a multiple of 6.  Which digit is represented by $\\square$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since $52\\,28\\square$ is a multiple of 6, then it must be a multiple of 2 and a multiple of 3.\n\nSince it is a multiple of 2, the digit represented by $\\square$ must be even. Since it is a multiple of 3, the sum of its digits is divisible by 3.\n\nThe sum of its digits is $5+2+2+8+\\square = 17+\\square$.\n\nSince $\\square$ is even, the possible sums of digits are 17, 19, 21, 23, 25 (for the possible values 0, 2, 4, 6, 8 for $\\square$).\n\nOf these possibilities, only 21 is divisible by 3, so $\\square$ must equal $\\boxed{4}$.\n\nWe can check that $52\\,284$ is divisible by 6.\n\n(An alternate approach would have been to use a calculator and test each of the  five possible values for $\\square$ by dividing the resulting values of $52\\,28\\square$ by 6.)"
+}

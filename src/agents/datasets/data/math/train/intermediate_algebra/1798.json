@@ -1,0 +1,6 @@
+{
+    "problem": "For how many values of $c$ in the interval $[0, 1000]$ does the equation \\[7 \\lfloor x \\rfloor + 2 \\lceil x \\rceil = c\\]have a solution for $x$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We try to solve the equation for a general value of $c.$ If $x$ is an integer, then $\\lfloor x\\rfloor = \\lceil x \\rceil = x,$ and so we get the equation \\[ 7x + 2x = c,\\]so $x = \\frac{c}{9}.$ Since $x$ is an integer in this case, this solution is valid if and only if $c$ is a multiple of $9.$\n\nIf $x$ is not an integer, then $\\lceil x \\rceil = \\lfloor x\\rfloor + 1,$ so we get the equation\n\\[7 \\lfloor x\\rfloor + 2 (\\lfloor x \\rfloor + 1) = c,\\]so $\\lfloor x\\rfloor = \\frac{c-2}{9}.$ Since $\\lfloor x\\rfloor$ must be an integer, this produces valid solutions for $x$ if and only if $c-2$ is a multiple of $9.$\n\nPutting everything together, we see that in the interval $[0, 1000],$ there are $112$ multiples of $9$ and $111$ integers which are $2$ more than a multiple of $9,$ for a total of $112 + 111 = \\boxed{223}$ possible values of $c.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive whole-number divisors does 196 have?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First prime factorize $196=2^2\\cdot7^2$.  The prime factorization of any divisor of 196 cannot include any primes other than 2 and 7.  We are free to choose either 0, 1, or 2 as the exponent of 2 in the prime factorization of a divisor of 196.  Similarly, we may choose 0, 1, or 2 as the exponent of 7.  In total, there are $3\\times 3=9$ possibilities for the prime factorization of a divisor of 196.  Distinct prime factorizations correspond to distinct integers, so there are $\\boxed{9}$ divisors of 196."
+}

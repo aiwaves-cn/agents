@@ -1,0 +1,6 @@
+{
+    "problem": "On a survey, students must give exactly one of the answers provided to each of these three questions:\n\n$\\bullet$ a) Were you born before 1990? (Yes / No)\n\n$\\bullet$ b) What is your favorite color? (Red / Green / Blue / Other)\n\n$\\bullet$ c) Do you play a musical instrument? (Yes / No)\n\nHow many different answer combinations are possible?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The first question has $2$ answer choices, the second $4$ answer choices, and the third $2.$ So there are $2 \\times 4 \\times 2 = \\boxed{16}$ different answer sets."
+}

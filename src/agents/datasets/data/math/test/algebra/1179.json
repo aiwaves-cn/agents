@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x$: $$(\\sqrt{12x}+12)(\\sqrt{3x}-6)=4(x+3)+x-34$$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we note that $x$ must be nonnegative, since $\\sqrt{12x}$ is undefined if $x<0$.  Then, we simplify both sides of the equation.  Expanding the product on the left gives \\begin{align*}\n(\\sqrt{12x} + 12)(\\sqrt{3x} - 6) &= \\sqrt{12x}(\\sqrt{3x} - 6) + 12(\\sqrt{3x} - 6)\\\\\n&= \\sqrt{36x^2} - 6\\sqrt{12x} + 12\\sqrt{3x} - 72.\n\\end{align*}Next, we notice that since $x>0$, we have $\\sqrt{36x^2} = 6x$.  Also, we have $\\sqrt{12x} = \\sqrt{4\\cdot 3 x} = 2\\sqrt{3x}$, so  \\[\\sqrt{36x^2} - 6\\sqrt{12x} + 12\\sqrt{3x} - 72 = 6x -6(2\\sqrt{3x}) + 12\\sqrt{3x} - 72 = 6x- 72.\\]Therefore, the left side of the original equation is equivalent to $6x-72$.  Simplifying the right side then gives $$6x-72=5x-22.$$Then we collect like terms, to get: $$x=\\boxed{50}.$$"
+}

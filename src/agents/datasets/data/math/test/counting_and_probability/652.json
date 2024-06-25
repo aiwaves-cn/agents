@@ -1,0 +1,6 @@
+{
+    "problem": "Matt and Ryan are playing an exciting round of Rock Paper Scissors: The Collectible Card Game. Matt is convinced that Rock can beat anything, so his deck consists only of 8 Rock cards.   Ryan's deck consists of 5 Paper cards and 3 Scissors cards.  In the game, Matt randomly selects 3 cards from his deck and places them on the table.  Ryan then randomly selects 3 cards and places one on each of Matt's cards.  If Rock beats Scissors, Scissors beats Paper, and Paper beats Rock, then what's the probability that Ryan beats Matt in a landslide by choosing 3 Paper cards in a row?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{8}{3} = 56$ equally likely ways for Ryan to pick 3 of his 8 cards to play. There are are $\\binom{5}{3}=10$ ways for those 3 cards to be 3 of his 5 paper cards. So, the probability that he picks 3 paper cards  is $\\frac{\\text{successful outcomes}}{\\text{total equally-likely outcomes}} = \\frac{10}{56}=\\boxed{\\frac{5}{28}}$."
+}

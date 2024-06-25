@@ -1,0 +1,6 @@
+{
+    "problem": "Given that\n\\[\\begin{vmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{vmatrix} = -7,\\]find\n\\[\\begin{vmatrix} a & b & c \\\\ 2d + 5g & 2e + 5h & 2f + 5i \\\\ -g & -h & -i \\end{vmatrix}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We are told that\n\\[\\begin{vmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{vmatrix} = -7.\\]If we multiply the second row by 2, then we get\n\\[\\begin{vmatrix} a & b & c \\\\ 2d & 2e & 2f \\\\ g & h & i \\end{vmatrix} = -14.\\]Adding five times the third row to the second row does not change the value of the determinant:\n\\[\\begin{vmatrix} a & b & c \\\\ 2d + 5g & 2e + 5h & 2f + 5i \\\\ g & h & i \\end{vmatrix} = -14.\\]Then multiplying the third row by $-1$ gives us\n\\[\\begin{vmatrix} a & b & c \\\\ 2d + 5g & 2e + 5h & 2f + 5i \\\\ -g & -h & -i \\end{vmatrix} = \\boxed{14}.\\]"
+}

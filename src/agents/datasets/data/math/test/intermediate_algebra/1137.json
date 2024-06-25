@@ -1,0 +1,6 @@
+{
+    "problem": "A polynomial with integer coefficients is of the form\n\\[2x^3 + a_2 x^2 + a_1 x - 4 = 0.\\]Find the number of possible rational roots of this polynomial.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By the Rational Root Theorem, the only possible rational roots are of the form $\\pm \\frac{a}{b},$ where $a$ divides 4 and $b$ divides 2.  Thus, the possible rational roots are\n\\[\\pm \\frac{1}{2}, \\ \\pm 1, \\ \\pm 2, \\ \\pm 4.\\]Thus, there are $\\boxed{8}$ possible rational roots."
+}

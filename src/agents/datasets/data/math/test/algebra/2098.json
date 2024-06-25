@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all values of $x$ for which the expression $\\frac{x-3}{x^2-10x+16}$ is undefined?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The given expression is undefined when the denominator equals zero. This occurs when $x^2-10x+16=0$. We use the fact that the sum of the roots of a quadratic equation $ax^2+bx+c = 0$ is given by $-b/a$, so we see that the sum of the solutions to this equation must be $-(-10)/1=\\boxed{10}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Eric and Charles each think of a quadratic polynomial. To their surprise, both quadratics start $x^2+4x+\\cdots$. The ratio of the discriminant, $b^2-4ac$, of Eric's polynomial to the discriminant of Charles's polynomial is equal to the ratio of Charles's constant term to Eric's constant term. If their constant terms are not equal, find the sum of the constant terms.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let the constant term of Charles's quadratic be $c$, and the constant term of Eric's quadratic be $d$. Then Charles's discriminant is $(4)^2-4(1)(c)=16-4c$, and Eric's discriminant is $(4)^2-4(1)(d)=16-4d$. We're given that $$\\frac{\\text{Discriminant}_{\\text{Eric}}}{\\text{Discriminant}_{\\text{Charles}}}=\\frac{\\text{Constant}_{\\text{Charles}}}{\\text{Constant}_{\\text{Eric}}},$$or $\\frac{16-4d}{16-4c}=\\frac{c}{d}$. Cross multiplying gives  \\begin{align*}\nd(16-4d)&=c(16-4c)\\quad\\Rightarrow\\\\\n16d-4d^2&=16c-4c^2\\quad\\Rightarrow\\\\\n4c^2-4d^2&=16c-16d\\quad\\Rightarrow\\\\\n4(c+d)(c-d)&=16(c-d).\n\\end{align*}Since $c\\neq d$, we know that $c-d\\neq 0$, so we can cancel this term to find  \\begin{align*}\n4(c+d)&=16\\quad\\Rightarrow\\\\\nc+d&=4.\n\\end{align*}Thus the sum of Eric's and Charles's constant terms is $\\boxed{4}$."
+}

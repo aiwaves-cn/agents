@@ -1,0 +1,6 @@
+{
+    "problem": "Rationalize the denominator of $\\frac{\\sqrt{32}}{\\sqrt{16}-\\sqrt{2}}$. The answer can be written as $\\frac{A\\sqrt{B}+C}{D}$, where $A$, $B$, $C$, and $D$ are integers, $D$ is positive, and $B$ is not divisible by the square of any prime.  Find the minimum possible value of $A+B+C+D$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can write the numerator as $4\\sqrt{2}$, the denominator as $4-\\sqrt{2}$. Then, we multiply the numerator and denominator by the conjugate of the denominator.  $$\\frac{4\\sqrt{2}}{4-\\sqrt{2}} \\cdot \\frac{4+\\sqrt{2}}{4+\\sqrt{2}}=$$$$\\frac{16\\sqrt{2} + 8}{14}=$$$$\\frac{8\\sqrt{2}+4}{7}$$Therefore, $A+B+C+D=8+2+4+7=\\boxed{21}$."
+}

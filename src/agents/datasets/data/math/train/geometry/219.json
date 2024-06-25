@@ -1,0 +1,6 @@
+{
+    "problem": "In $\\Delta ABC$, $\\overline{DE} \\parallel \\overline{AB}, CD = 4$ cm, $DA = 10$ cm, and $CE = 6$ cm. What is the number of centimeters in the length of $\\overline{CB}$?\n\n[asy]pair A,B,C,D,E;\nA = (-2,-4); B = (4,-4); C = (0,0); D = A/3; E = B/3;\ndraw(E--D--C--B--A--D);\nlabel(\"A\",A,W); label(\"B\",B,dir(0)); label(\"C\",C,N); label(\"D\",D,W);\n\nlabel(\"E\",E,dir(0));\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $DE \\parallel AB,$ we know that $\\angle CDE = \\angle CAB$ and $\\angle CED = \\angle CBA.$ Therefore, by AA similarity, we have $\\triangle ABC \\sim DEC.$ Then, we find: \\begin{align*}\n\\frac{CB}{CE} &= \\frac{CA}{CD} = \\frac{CD + DA}{CD}\\\\\n\\frac{CB}{6\\text{ cm}} &= \\frac{4\\text{ cm} + 10\\text{ cm}}{4\\text{ cm}} = \\frac{7}{2}\\\\\nCB &= 6\\text{cm} \\cdot \\frac{7}{2} = \\boxed{21}\\text{ cm}.\n\\end{align*}"
+}

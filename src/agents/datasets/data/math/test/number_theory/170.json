@@ -1,0 +1,6 @@
+{
+    "problem": "If the pattern shown continues, what is the letter in the $2010$th position? MATHLETEMATHLETEMATHLETE...",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The pattern repeats with every 8 letters, so we can determine the letter in the $n$th position by finding the remainder when $n$ is divided by 8.  We can check that 2008 is a multiple of 8. That means 2010 has a remainder of 2 when divided by 8. The letter in the $2010$th position will be the same as the letter in the second position of the pattern, which is $\\boxed{A}$."
+}

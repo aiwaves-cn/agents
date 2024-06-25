@@ -1,0 +1,6 @@
+{
+    "problem": "An equilateral triangle has sides of length 2 units. A second equilateral triangle is formed having sides that are $150\\%$ of the length of the sides of the first triangle. A third equilateral triangle is formed having sides that are $150\\%$ of the length of the sides of the second triangle. The process is continued until four equilateral triangles exist. What will be the percent increase in the perimeter from the first triangle to the fourth triangle? Express your answer to the nearest tenth.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "If the side length of each successive equilateral triangle is $150\\%$ of the previous triangle, then we can multiply the previous side length by 1.5. We will need to do this three times to get to the fourth triangle, so its side length will be $$1.5^3 = 1.5 \\times 1.5 \\times 1.5 = 3.375$$ times the  original side length. This is the same as $337.5\\%$ of the original side length, which represents a $337.5 - 100 = 237.5\\%$ increase over the original side length. The perimeter is also a length, so it will be affected in the same way. The percent increase in the perimeter is $\\boxed{237.5\\%}$."
+}

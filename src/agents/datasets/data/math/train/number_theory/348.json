@@ -1,0 +1,6 @@
+{
+    "problem": "Find $2 \\cdot 5^{-1} + 8 \\cdot 11^{-1} \\pmod{56}$.\n\nExpress your answer as an integer from $0$ to $55$, inclusive.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If we first get a \"common denominator\" as if 2, 5, 8, and 11 represent real numbers rather than residues, we get $$\\frac 25 + \\frac{8}{11} \\equiv \\frac{2 \\cdot 11 + 8 \\cdot 5}{55} \\equiv \\frac{62}{-1} \\equiv -62 \\equiv \\boxed{50} \\pmod{56}.$$Indeed, we can justify this manipulation as follows. Suppose that $n \\equiv 2 \\cdot 5^{-1} + 8 \\cdot 11^{-1} \\pmod{56}$; then multiplying both sides of the congruence by $55$ (which is relatively prime with $56$) yields that $-n \\equiv 55n \\equiv 22 + 40 \\equiv 62 \\pmod{56}$."
+}

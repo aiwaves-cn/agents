@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $f(3)=5$ and $f(3x)=f(x)+2$ for all $x > 0$, find $f^{-1}(11)$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We are looking for some $x$ such that $f(x)=11$.  We notice that by tripling $x$ we can increase $f(x)$ by 2 and also that $f(3)=5$.\n\nApplying $f(3x)=f(x)+2$ repeatedly, we have: \\begin{align*}\nf(3)&=5 \\\\\n\\Rightarrow \\quad f(9)&= 7 \\\\\n\\Rightarrow \\quad f(27)&=9 \\\\\n\\Rightarrow \\quad f(81)&=11.\n\\end{align*}So $f^{-1}(11)=\\boxed{81}$."
+}

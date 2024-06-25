@@ -1,0 +1,6 @@
+{
+    "problem": "Delilah writes down the positive factors of $12$ on a piece of paper, which she gives to Ezekiel. Next to each factor, Ezekiel writes all of the positive integers that are less than or equal to that number and that share no divisors with the factor other than $1.$ (So, for example, Ezekiel will write $``1\"$ next to each of the factors Delilah writes.) How many numbers total does Ezekiel write?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "This is what the paper should look like after Ezekiel writes his final number: \\begin{tabular}{l|l}\n1 & 1\\\\\n2 & 1 \\\\\n3 & 1, 2\\\\\n4 & 1, 3\\\\\n6 & 1, 5\\\\\n12 & 1, 5, 7, 11\n\\end{tabular} The left-hand column contains the positive factors of $12$ and the right-hand column contains Ezekiel's numbers. We see that Ezekiel wrote $\\boxed{12}$ numbers.\n\nNote: Notice that the number of numbers Ezekiel ends up with is the same as Delilah's number. Will this always happen? Suppose Delilah starts with $n.$ Will Ezekiel end up with $n$ numbers?"
+}

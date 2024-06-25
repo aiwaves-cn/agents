@@ -1,0 +1,6 @@
+{
+    "problem": "A target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches and 10 inches as shown. Given that a dart is thrown that hits the target at a random point, what is the probability that it hits a shaded region? Express your answer as a common fraction.\n\n[asy]size(100); import graph; fill(Circle((0,0),5),gray(.6));\n\nclip(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4),fillrule(1));\ndraw(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4) ^^ Circle((0,0),5));[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The total area of the target is $\\pi\\cdot 10^2=100\\pi$.  The area of the inner shaded region is the area of a circle with radius 4, and that is equal to $\\pi\\cdot 4^2=16\\pi$.  We can calculate the area of the shaded ring as the difference in areas of a circle with radius 8 and with radius 6.  This gives an area of $\\pi \\cdot 8^2 - \\pi \\cdot 6^2 = 28\\pi$.  The total shaded area is $16\\pi+28\\pi=44\\pi$.  The probability a dart will hit a shaded region is equal to $\\frac{44\\pi}{100\\pi}=\\boxed{\\frac{11}{25}}$."
+}

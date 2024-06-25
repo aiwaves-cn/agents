@@ -1,0 +1,6 @@
+{
+    "problem": "How many even natural-number factors does $n = 2^2 \\cdot 3^1 \\cdot 7^2$ have?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Every factor of $n$ is in the form $2^a\\cdot3^b\\cdot7^c$ for $0\\le a\\le2$, $0\\le b\\le1$, and $0\\le c\\le2$. To count the number of even factors, we must restrict the power of 2 to be at least 1: $1\\le a\\le2$. This gives us a total of $(2)(1+1)(2+1)=\\boxed{12}$ even factors."
+}

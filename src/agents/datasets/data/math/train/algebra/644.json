@@ -1,0 +1,6 @@
+{
+    "problem": "Point $C$ is on the segment $AB$ which has endpoints $A(-1, 0)$  and $B(3, 8)$.  Point $C$ is three times as far from point $A$ as it is from  point $B$.  What are the coordinates of point $C$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We are told that $AC = 3CB$, so $AB = AC + CB = 4CB$.  Let $M$ be the midpoint of $\\overline{AB}$. Then, we have $BM = \\dfrac{AB}{2}$.\n\nSince $AB = 4CB$, we have $CB = \\dfrac{AB}{4} = \\dfrac{BM}{2}$.  In other words, $C$ is the midpoint of $\\overline{BM}$.\n\nSince $M$ is the midpoint of $\\overline{AB}$, we have $M = \\left(\\dfrac{-1+3}{2} , \\dfrac{0+8}{2}\\right) = (1,4)$.\n\nSimilarly, since $C$ is the midpoint of $\\overline{BM}$, we have $C = \\left(\\dfrac{3 + 1}{2}, \\dfrac{8 + 4}{2}\\right) = \\boxed{(2,6)}$."
+}

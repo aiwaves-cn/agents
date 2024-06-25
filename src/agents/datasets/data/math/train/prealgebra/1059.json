@@ -1,0 +1,6 @@
+{
+    "problem": "If three standard, six-faced dice are rolled, what is the probability that the sum of the three numbers rolled is 9? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are $6^3=216$ equally likely possibilities for the result of a roll of three dice.  We count the number of results which give a sum of 9.  If the three rolls are all the same, then (3,3,3) is the only possibility.  If two of the three rolls are the same, then (2,2,5) and (4,4,1) along with their permutations (2,5,2), (5,2,2), (4,1,4), and (1,4,4) are the only possibilities.  If the three rolls are distinct, then (1,2,6), (1,3,5), and (2,3,4) along with their permutations are the only possibilities.  Since there are $3!=6$ ways to arrange three distinct numbers, each of the rolls (1,2,6), (1,3,5), and (2,3,4) has 6 permutations.  Altogether, there are $1+6+3\\cdot 6=25$ rolls which have a sum of 9.  Therefore, the probability of obtaining a sum of 9 is $\\boxed{\\frac{25}{216}}$."
+}

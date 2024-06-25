@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ is an isosceles triangle with side lengths of 25, 25 and 48 centimeters. What is the area of triangle $ABC$, in square centimeters?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "[asy]\nsize(150);\npair A, B, C;\nA=(0,0);\nB=(24,7);\nC=(48,0);\ndraw(A--B--C--A);\ndraw(B--(A+C)/2, red);\nlabel(\"A\", A, SW);\nlabel(\"B\", B, N);\nlabel(\"C\", C, SE);\nlabel(\"D\", (A+C)/2, S);\n[/asy] Because $ABC$ is isosceles, $BD$ is perpendicular to $AC$ and it bisects $AC$. Thus, $AD=\\frac{48}{2}=24$. Now we see $ABD$ is a 7-24-25 right triangle, so $BD=7$. Calculating the area of $ABC$, we get $\\frac{1}{2} \\cdot 48 \\cdot 7=24 \\cdot 7=\\boxed{168} \\text{sq cm}$."
+}

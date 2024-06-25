@@ -1,0 +1,6 @@
+{
+    "problem": "The complex number $z$ traces a circle centered at the origin with radius 2.  Then $z + \\frac{1}{z}$ traces a:\n(A) circle\n(B) parabola\n(C) ellipse\n(D) hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = a + bi,$ where $a$ and $b$ are real numbers.  Since $|z| = 2,$ $a^2 + b^2 = 4.$  Then\n\\begin{align*}\nz + \\frac{1}{z} &= a + bi + \\frac{1}{a + bi} \\\\\n&= a + bi + \\frac{1}{a + bi} \\\\\n&= a + bi + \\frac{a - bi}{a^2 + b^2} \\\\\n&= a + bi + \\frac{a - bi}{4} \\\\\n&= \\frac{5}{4} a + \\frac{3}{4} bi.\n\\end{align*}Let $x + yi = z + \\frac{1}{z},$ so $x = \\frac{5}{4} a$ and $y = \\frac{3}{4} b.$  Then\n\\[\\frac{x^2}{(5/4)^2} + \\frac{y^2}{(3/4)^2} = a^2 + b^2 = 4,\\]so\n\\[\\frac{x^2}{(5/2)^2} + \\frac{y^2}{(3/2)^2} = 1.\\]Thus, $z + \\frac{1}{z}$ traces an ellipse.  The answer is $\\boxed{\\text{(C)}}.$"
+}

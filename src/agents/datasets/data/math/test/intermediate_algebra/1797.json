@@ -1,0 +1,6 @@
+{
+    "problem": "The asymptotes of a hyperbola are $y = 2x - 3$ and $y = 17 - 2x.$  Also, the hyperbola passes through the point $(4,7).$  Find the distance between the foci of the hyperbola.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The intersection of the asymptotes is $(5,7),$ so this is the center of the hyperbola.  Since the slopes of the asymptotes are $\\pm 2,$ the equation of the hyperbola can be written in the form\n\\[(x - 5)^2 - \\frac{(y - 7)^2}{4} = d\\]for some constant $d.$  Setting $x = 4$ and $y = 7,$ we get $d = 1,$ so the equation is\n\\[\\frac{(x - 5)^2}{1} - \\frac{(y - 7)^2}{4} = 1.\\]Then $a^2 = 1$ and $b^2 = 4,$ so $c^2 = a^2 + b^2 = 5,$ which means $c = \\sqrt{5}.$  Therefore, the distance between the foci is $2c = \\boxed{2 \\sqrt{5}}.$"
+}

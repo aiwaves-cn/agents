@@ -1,0 +1,6 @@
+{
+    "problem": "Six congruent circles form a ring with each circle externally tangent to the two circles adjacent to it.  All six circles are internally tangent to a circle $\\cal C$ with radius 30.  Let $K$ be the area of the region inside $\\cal C$ and outside all of the six circles in the ring.  Find $\\lfloor K\\rfloor$. (The notation $\\lfloor K\\rfloor$ denotes the greatest integer that is less than or equal to $K$.)",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $r$ be the radius of each of the six congruent circles, and let $A$ and $B$ be the centers of two adjacent circles. Join the centers of adjacent circles to form a regular hexagon with side $2r$.  Let $O$ be the center of $\\cal C$.  Draw the radii of $\\cal C$ that contain $A$ and $B$. Triangle $ABO$ is equilateral, so $OA=OB=2r$.  Because each of the two radii contains the point where the smaller circle is tangent to $\\cal\nC$, the radius of $\\cal C$ is $3r$, and $K=\\pi\\left((3r)^2-6r^2\\right)=3\\pi r^2$. The radius of $\\cal C$ is 30, so $r=10$, $K=300\\pi$, and $\\lfloor K\\rfloor=\\boxed{942}$."
+}

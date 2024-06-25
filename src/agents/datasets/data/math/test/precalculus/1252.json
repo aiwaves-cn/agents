@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\omega$ be a complex number such that $\\omega^3 = 1.$  Find all possible values of\n\\[\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2}.\\]Enter all the possible values, separated by commas.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n\\frac{1}{1 + \\omega} + \\frac{1}{1 + \\omega^2} &= \\frac{1 + \\omega^2 + 1 + \\omega}{(1 + \\omega)(1 + \\omega^2)} \\\\\n&= \\frac{2 + \\omega + \\omega^2}{1 + \\omega + \\omega^2 + \\omega^3} \\\\\n&= \\frac{2 + \\omega + \\omega^2}{2 + \\omega + \\omega^2} \\\\\n&= \\boxed{1}.\n\\end{align*}"
+}

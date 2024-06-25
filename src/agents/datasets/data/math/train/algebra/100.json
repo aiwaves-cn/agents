@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangular band formation is a formation with $m$ band members in each of $r$ rows, where $m$ and $r$ are integers. A particular band has less than 100 band members. The director arranges them in a rectangular formation and finds that he has two members left over. If he increases the number of members in each row by 1 and reduces the number of rows by 2, there are exactly enough places in the new formation for each band member. What is the largest number of members the band could have?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $x$ be the number of band members in each row for the original formation, when two are left over.  Then we can write two equations from the given information: $$rx+2=m$$ $$(r-2)(x+1)=m$$ Setting these equal, we find: $$rx+2=(r-2)(x+1)=rx-2x+r-2$$ $$2=-2x+r-2$$ $$4=r-2x$$ We know that the band has less than 100 members.  Based on the first equation, we must have $rx$ less than 98.  We can guess and check some values of $r$ and $x$ in the last equation.  If $r=18$, then $x=7$, and $rx=126$ which is too big.  If $r=16$, then $x=6$, and $rx=96$, which is less than 98.  Checking back in the second formation, we see that $(16-2)(6+1)=14\\cdot 7=98$ as it should.  This is the best we can do, so the largest number of members the band could have is $\\boxed{98}$."
+}

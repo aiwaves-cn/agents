@@ -1,0 +1,6 @@
+{
+    "problem": "A bag contains 16 congruent blocks, 4 of which are blue and 12 of which are red. Two blocks are randomly pulled from the bag at the same time. What is the probability that both blocks are blue? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Treating the 16 blocks as distinct, we can choose ${16 \\choose 2} = 120$ pairs of blocks. Of these, since there are 4 blue blocks, ${4 \\choose 2} = 6$ are blue pairs. So, the probability of getting a blue pair of blocks is $\\frac{6}{120} =\\boxed{ \\frac{1}{20}}$."
+}

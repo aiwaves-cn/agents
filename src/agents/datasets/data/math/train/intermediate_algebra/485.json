@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $x^4 + 2$ is divided by $(x - 2)^2.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Dividing $x^4 + 2$ by $x - 2,$ we get\n\\[x^4 + 2 = (x - 2)(x^3 + 2x^2 + 4x + 8) + 18.\\]Dividing $x^3 + 2x^2 + 4x + 8$ by $x - 2,$ we get\n\\[x^3 + 2x^2 + 4x + 8 = (x - 2)(x^2 + 4x + 12) + 32.\\]Thus,\n\\begin{align*}\nx^4 + 2 &= (x - 2)(x^3 + 2x^2 + 4x + 8) + 18 \\\\\n&= (x - 2)((x - 2)(x^2 + 4x + 12) + 32) + 18 \\\\\n&= (x - 2)^2 (x^2 + 4x + 12) + 32(x - 2) + 18 \\\\\n&= (x  -2)^2 (x^2 + 4x + 12) + 32x - 46,\n\\end{align*}so the remainder is $\\boxed{32x - 46}.$"
+}

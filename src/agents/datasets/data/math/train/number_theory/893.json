@@ -1,0 +1,6 @@
+{
+    "problem": "Every 5 months, Hal has to replace the batteries in his calculator. He changed them the first time in May. In what month will they be changed the 25th time?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If the first time was in May, the second time will be 5 months after May, the third time will be $5\\cdot2$ months after May, etc. That means the 25th time will be $5\\cdot24$ months away. Since the months repeat every 12 months, we look for the remainder when $5\\cdot24$ is divided by 12 and add that many months to May. We notice that $\\frac{5\\cdot24}{12}=5\\cdot2$, so it turns out that $5\\cdot24$ is a multiple of 12 and leaves a remainder of 0 when divided by 12. So the 25th time will be a certain number of years afterward but still in the same month, $\\boxed{\\text{May}}$."
+}

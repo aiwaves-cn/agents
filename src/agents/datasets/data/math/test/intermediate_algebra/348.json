@@ -1,0 +1,6 @@
+{
+    "problem": "Given that three roots of $f(x)=x^4+ax^2+bx+c$ are $2$, $-3$, and $5$, what is the value of $a+b+c$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, the sum of the roots is 0, so the fourth root must be $-4.$  Hence,\n\\[f(x) = (x - 2)(x + 3)(x - 5)(x + 4).\\]Then $f(1) = (1 - 2)(1 + 3)(1 - 5)(1 + 4) = 80.$  But $f(1) = 1 + a + b + c,$ so $a + b + c = \\boxed{79}.$"
+}

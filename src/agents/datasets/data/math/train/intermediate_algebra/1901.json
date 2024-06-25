@@ -1,0 +1,6 @@
+{
+    "problem": "For some real number $r,$ the polynomial $8x^3 - 4x^2 - 42x + 45$ is divisible by $(x - r)^2.$  Find $r.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let the third root be $s.$  Then\n\\[8x^3 - 4x^2 - 42x + 45 = 8(x - r)^2 (x - s) = 8x^3 - 8(2r + s) x^2 + 8(r^2 + 2rs) x - 8r^2 s.\\]Matching coefficients, we get\n\\begin{align*}\n2r + s &= \\frac{1}{2}, \\\\\nr^2 + 2rs &= -\\frac{21}{4}, \\\\\nr^2 s &= -\\frac{45}{8}.\n\\end{align*}From the first equation, $s = \\frac{1}{2} - 2r.$  Substituting into the second equation, we get\n\\[r^2 + 2r \\left( \\frac{1}{2} - 2r \\right) = -\\frac{21}{4}.\\]This simplifies to $12r^2 - 4r - 21 = 0,$ which factors as $(2r - 3)(6r + 7) = 0.$  Thus, $r = \\frac{3}{2}$ or $r = -\\frac{7}{6}.$\n\nIf $r = \\frac{3}{2},$ then $s = -\\frac{5}{2}.$  If $r = -\\frac{7}{6},$ then $s = \\frac{17}{6}.$  We can check that only $r = \\boxed{\\frac{3}{2}}$ and $s = -\\frac{5}{2}$ satisfy $r^2 s = -\\frac{45}{8}.$"
+}

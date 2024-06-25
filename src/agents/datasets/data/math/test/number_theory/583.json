@@ -1,0 +1,6 @@
+{
+    "problem": "Let the term $S_n$ be the sum of the first $n$ powers of $2$. For instance, $S_3 = 2^0 + 2^1 + 2^2 = 7$.  Find the largest possible value of the greatest common divisor of two consecutive terms, $S_n$ and $S_{n+1}$, for any $n$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that $S_{n+1}-S_n = 2^n$. Also note that $S_n$ is a geometric series with a sum equal to $2^0\\cdot\\frac{1-2^n}{1-2} = 2^n-1$. Using the Euclidean Algorithm, we obtain: \\begin{align*}\n\\text{gcd}(S_{n+1}, S_n) &= \\text{gcd}(S_{n+1}-S_n, S_n) \\\\\n&= \\text{gcd}(2^n, 2^n-1) \\\\\n&= \\text{gcd}(2^n - (2^n-1), 2^n-1) \\\\\n&= \\text{gcd}(1, 2^n-1) \\\\\n&= 1.\n\\end{align*}Therefore, the greatest common divisor of two consecutive terms is always $1$, so the largest possible value is $\\boxed{1}$."
+}

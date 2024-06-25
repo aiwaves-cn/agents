@@ -1,0 +1,6 @@
+{
+    "problem": "A worker receives an annual wage of $\\$20{,}000$, which he always deposits into a savings account at the end of the year. By the end of the third year (when he makes the third deposit), he wants to have at least $\\$66,200$ in the account to finance the purchase of a house. What is the minimal compound interest rate that the savings account must provide? Express your answer as a percentage, but do not include the percent sign.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If the interest rate is $r$, it follows that $$20000(1+r)^2 + 20000(1+r) + 20000 \\ge 66200.$$ If we set $x = 1+r$ and divide through the inequality by $200$, it follows that $$100x^2 + 100x - 231 \\ge 0.$$ Since $231 = 11 \\cdot 21$, we can factor the quadratic as $(10x - 11)(10x + 21) \\ge 0$, so it follows that $x \\ge \\frac {11}{10}$ or $x \\le \\frac{-21}{10}$. Since we are looking for an interest rate percentage, it follows that $x \\ge \\frac{11}{10} = 1.1$, and $r = x - 1 = \\boxed{10}\\%$."
+}

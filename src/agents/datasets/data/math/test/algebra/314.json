@@ -1,0 +1,6 @@
+{
+    "problem": "If $n = 11$, then what is $\\left(\\frac{1}{4}\\right)^{n+1} \\cdot 2^{2n}$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "By simplifying exponents, we have $2^{2n} = 4^n$.  So, our overall expression is $\\frac{4^n}{4^{n+1}}$.  This simplifies to $\\boxed{\\frac{1}{4}}$.  Throughout the course of this calculation, we did not have to plug in the value of 11 for $n$, but the answer may be similarly obtained with this substitution."
+}

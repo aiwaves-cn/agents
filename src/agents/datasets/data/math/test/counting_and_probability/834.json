@@ -1,0 +1,6 @@
+{
+    "problem": "An integer $x$, with $10 \\leq x \\leq 99$, is to be chosen.  If all choices are equally likely, what is the probability that at least one digit of $x$ is a 7?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 90 possible choices for $x$.  Ten of these have a tens digit of 7, and nine have a units digit of 7.  Because 77 has been counted twice, there are $10 + 9 - 1 = 18$ choices of $x$ for which at least one digit is a 7.  Therefore the probability is $\\frac{18}{90} = \\boxed{\\frac{1}{5}}$."
+}

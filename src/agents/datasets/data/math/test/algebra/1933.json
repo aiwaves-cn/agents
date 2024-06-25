@@ -1,0 +1,6 @@
+{
+    "problem": "When the graph of a certain function $f(x)$ is shifted $2$ units to the right and stretched vertically by a factor of $2$ (meaning that all $y$-coordinates are doubled), the resulting figure is identical to the original graph.\n\nGiven that $f(0)=0.1$, what is $f(10)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "When the graph $y=f(x)$ is shifted $2$ units to the right, the result is a graph of $y=f(x-2)$; when it is then stretched vertically by a factor of $2$, the result is a graph of $y=2f(x-2)$. Therefore, our information about $f(x)$ can be rendered as an equation: $$f(x) = 2f(x-2).$$Applying this equation five times, we get \\begin{align*}\nf(10) &= 2f(8) \\\\\n&= 4f(6) \\\\\n&= 8f(4) \\\\\n&= 16f(2) \\\\\n&= 32f(0) \\\\\n&= \\boxed{3.2}.\n\\end{align*}"
+}

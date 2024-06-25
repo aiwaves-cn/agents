@@ -1,0 +1,6 @@
+{
+    "problem": "A Senate committee has 5 Democrats and 5 Republicans.  In how many ways can they sit around a circular table if each member sits next to two members of the other party? (Two seatings are the same if one is a rotation of the other.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The only way that the Senators can be seated is if the seats alternate by party.  Fix the rotation by placing the youngest Democrat in the top seat, so that we have removed the overcounting of rotations of the same arrangement.  Now there are $4!$ ways to place the remaining Democrats in the other Democratic seats, and $5!$ ways to place the Republicans in the Republican seats, for a total of $5! \\times 4! = \\boxed{2,\\!880}$ arrangements."
+}

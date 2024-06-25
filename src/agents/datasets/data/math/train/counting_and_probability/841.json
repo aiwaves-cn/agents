@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all integers $k$ such that $\\binom{23}{4} + \\binom{23}{5} = \\binom{24}{k}$.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "By Pascal's Identity, we have $\\binom{23}{4} + \\binom{23}{5} = \\binom{24}{5}$.  However, we also have $\\binom{24}{5} = \\binom{24}{24-5} = \\binom{24}{19}$.  There are no other values of $k$ such that $\\binom{24}{5} = \\binom{24}{k}$, so the sum of all integers that satisfy the problem is $5+19 = \\boxed{24}$.\n\nChallenge: Is it a coincidence that the answer is 24?"
+}

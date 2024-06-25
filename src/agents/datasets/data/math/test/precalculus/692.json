@@ -1,0 +1,6 @@
+{
+    "problem": "Find the curve defined by the equation\n\\[r = \\cos \\theta + \\sin \\theta.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We are given that $r = \\cos \\theta + \\sin \\theta.$  Then\n\\[r^2 = r \\cos \\theta + r \\sin \\theta,\\]so $x^2 + y^2 = x + y.$  We can write this equation as\n\\[\\left( x - \\frac{1}{2} \\right)^2 + \\left( y - \\frac{1}{2} \\right)^2 = \\frac{1}{2}.\\]Thus, the graph is a circle.  The answer is $\\boxed{\\text{(B)}}.$\n\n[asy]\nunitsize(2 cm);\n\npair moo (real t) {\n  real r = cos(t) + sin(t);\n  return (r*cos(t), r*sin(t));\n}\n\npath foo = moo(0);\nreal t;\n\nfor (t = 0; t <= pi + 0.1; t = t + 0.1) {\n  foo = foo--moo(t);\n}\n\ndraw(foo,red);\n\ndraw((-0.5,0)--(1.5,0));\ndraw((0,-0.5)--(0,1.5));\nlabel(\"$r = \\cos \\theta + \\sin \\theta$\", (2,1), red);\n[/asy]"
+}

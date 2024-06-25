@@ -1,0 +1,6 @@
+{
+    "problem": "A point has rectangular coordinates $(-5,-7,4)$ and spherical coordinates $(\\rho, \\theta, \\phi).$  Find the rectangular coordinates of the point with spherical coordinates $(\\rho, \\theta, -\\phi).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n-5 &= \\rho \\sin \\phi \\cos \\theta, \\\\\n-7 &= \\rho \\sin \\phi \\sin \\theta, \\\\\n4 &= \\rho \\cos \\phi.\n\\end{align*}Then\n\\begin{align*}\n\\rho \\sin (-\\phi) \\cos \\theta &= -\\rho \\sin \\phi \\cos \\theta = 5, \\\\\n\\rho \\sin (-\\phi) \\sin \\theta &= -\\rho \\sin \\phi \\sin \\theta = 7, \\\\\n\\rho \\cos (-\\phi) &= \\rho \\cos \\phi = 4.\n\\end{align*}so the rectangular coordinates are $\\boxed{(5,7,4)}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many even divisors does $7!$ have?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "By the fundamental theorem of arithmetic, we may count the number of even divisors of $7!$ by counting the number of ways to form the prime factorization of an even divisor of $7!$.  Suppose that $7!$ is divisible by an even positive integer $r$.  Since the prime factorization of $7!$ is $7\\cdot(2\\cdot3)\\cdot5\\cdot(2\\cdot2)\\cdot3\\cdot2=2^4\\cdot3^2\\cdot5\\cdot7$, the prime factorization of $r$ does not include any primes other than $2$, $3$, $5$, and $7$.  Express $r$ in terms of its prime factorization as $2^a3^b5^c7^d$.  Then $7!/r=2^{4-a}3^{2-b}5^{1-c}7^{1-d}$.  Since $7!/r$ is an integer, $d$ must equal $0$ or $1$, $c$ must equal $0$ or $1$, and $b$ must equal $0$, $1$ or $2$.  Finally, $a$ may be no larger than $4$, but it must be at least $1$ since $r$ is even.  Altogether there are $2\\cdot 2\\cdot 3\\cdot 4=48$ total possibilities for the four exponents $a$, $b$, $c$, and $d$, and hence $\\boxed{48}$ even divisors."
+}

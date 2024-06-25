@@ -1,0 +1,6 @@
+{
+    "problem": "A bug starts at a vertex of an equilateral triangle. On each move, it randomly selects one of the two vertices where it is not currently located, and crawls along a side of the triangle to that vertex. Given that the probability that the bug moves to its starting vertex on its tenth move is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m + n.$\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let $P_n$ represent the probability that the bug is at its starting vertex after $n$ moves. If the bug is on its starting vertex after $n$ moves, then it must be not on its starting vertex after $n-1$ moves. At this point it has $\\frac{1}{2}$ chance of reaching the starting vertex in the next move. Thus $P_n=\\frac{1}{2}(1-P_{n-1})$. $P_0=1$, so now we can build it up:\n$P_1=0$, $P_2=\\frac{1}{2}$, $P_3=\\frac{1}{4}$, $P_4=\\frac{3}{8}$, $P_5=\\frac{5}{16}$, $P_6=\\frac{11}{32}$, $P_7=\\frac{21}{64}$, $P_8=\\frac{43}{128}$, $P_9=\\frac{85}{256}$, $P_{10}=\\frac{171}{512}$,\nThus the answer is $171+512=\\boxed{683}$"
+}

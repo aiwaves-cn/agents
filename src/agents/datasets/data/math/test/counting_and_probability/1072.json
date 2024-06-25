@@ -1,0 +1,6 @@
+{
+    "problem": "Two cards are chosen at random from a standard 52-card deck. What is the probability that they are either both hearts or both diamonds?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{52}{2}=\\frac{52\\cdot 51}{2}=26\\cdot 51$ ways to choose two cards from a 52-card deck. There are $\\binom{13}{2}=\\frac{13\\cdot 12}{2}$ ways to choose two cards which are both hearts, and the same number of ways to choose two cards which are both diamonds. Therefore, the probability of choosing two cards which are both hearts or both diamonds is $\\frac{13 \\cdot 12}{26 \\cdot 51}=\\boxed{\\frac{2}{17}}$."
+}

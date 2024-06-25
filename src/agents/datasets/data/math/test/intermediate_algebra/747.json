@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of $y = f(x)$ passes through the point $(-3,5).$  If $f(x)$ is an odd function, then what other point must the graph pass through?  Enter your answer as an ordered pair.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since $f(x)$ is an odd function, $f(-x) = -f(x).$  In particular,\n\\[f(3) = -f(-3) = -5.\\]Therefore, the graph of $f(x)$ must also pass through the point $\\boxed{(3,-5)}.$\n\nAlso,\n\\[f(0) = -f(0),\\]so $f(0) = 0.$  Thus, $\\boxed{(0,0)}$ is also an acceptable answer.  (This is assuming that $f(x)$ is defined at $x = 0.$)"
+}

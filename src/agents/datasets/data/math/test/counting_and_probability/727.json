@@ -1,0 +1,6 @@
+{
+    "problem": "Markov plays a game for three turns. On each turn, he either rolls a fair, six sided die or flips a fair coin. If he rolls a 1 or 2 on the die, he will switch to the coin on the next turn, and if he flips a tails on the coin, he will switch to the die on the next turn. If Markov starts by rolling the die, what is the probability that he will flip the coin on the third turn?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We can solve this problem by dividing it into cases. If Markov rolls a 1 or 2 on the first turn, he will flip a coin on the second turn. He must flip a heads to flip a coin on his third turn. There is a $\\frac{2}{6}\\cdot \\frac{1}{2}=\\frac{1}{6}$ chance of this case happening. If Markov does not roll a 1 or 2 on the first turn, he will roll the die on the second turn. He must roll a 1 or 2 on the second turn to flip a coin on the third turn. There is a $\\frac{4}{6}\\cdot \\frac{2}{6}=\\frac{2}{9}$ chance of this case happening. The total probability that Markov will flip a coin on the third turn is then $\\frac{1}{6}+\\frac{2}{9}=\\boxed{\\frac{7}{18}}$."
+}

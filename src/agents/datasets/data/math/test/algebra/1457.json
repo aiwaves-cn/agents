@@ -1,0 +1,6 @@
+{
+    "problem": "If $a+b=8$, $b+c=-3$, and $a+c= -5$, what is the value of the product $abc$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Adding the first given equation to the second, we have $a+2b+c=5$. Then, subtracting the third given equation from this last equation, we get $2b=10$, so $b=5$. Plugging this value of $b$ into the first given equation, we find that $a=3$. Plugging this value of $a$ into the third given equation, we find that $c=-8$. Thus, the product $abc=3\\cdot5\\cdot-8=\\boxed{-120}$."
+}

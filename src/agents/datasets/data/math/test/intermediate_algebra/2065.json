@@ -1,0 +1,6 @@
+{
+    "problem": "Find the unique value of $a$ for which the polynomial $x^3 - 12x^2 + ax - 64$ has all real, nonnegative roots.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let the real, nonnegative roots be $u,$ $v,$ $w.$  Then by Vieta's formulas, $u + v + w = 12$ and $uvw = 64.$  By AM-GM,\n\\[\\frac{u + v + w}{3} \\ge \\sqrt[3]{uvw},\\]which becomes $4 \\ge 4.$  This means we have equality in the AM-GM inequality.  The only way this can occur is if $u = v = w,$ which means $u = v = w = 4.$  Hence, the polynomial is $(x - 4)^3 = x^3 - 12x^2 + 48x - 64,$ so $a = \\boxed{48}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[\\frac{(x + 7)(x - 2)}{x - 1} < 0.\\]Enter your answer using interval notation.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can build a sign chart:\n\n\\[\n\\begin{array}{c|cccc}\n& x < -7 & -7 < x < 1 & 1 < x < 2 & 2 < x \\\\ \\hline\nx + 7 & - & + & + & + \\\\\nx - 1 & - & - & + & + \\\\\nx - 2 & - & - & - & + \\\\\n\\frac{(x + 7)(x - 2)}{x - 1} & - & + & - & +\n\\end{array}\n\\]Thus, the solution is $x \\in \\boxed{(-\\infty,-7) \\cup (1,2)}.$"
+}

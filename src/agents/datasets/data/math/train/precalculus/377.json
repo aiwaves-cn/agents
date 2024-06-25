@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $z$ is a complex number such that $z+\\frac 1z=2\\cos 3^\\circ$, find $z^{2000}+\\frac 1{z^{2000}}$.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the given equation, $z^2 + 1 = 2z \\cos 3^\\circ,$ or $z^2 - 2z \\cos 3^\\circ + 1 = 0.$  Then by the quadratic formula,\n\\[z = \\frac{2 \\cos 3^\\circ \\pm \\sqrt{4 \\cos^2 3^\\circ - 4}}{2} = \\cos 3^\\circ \\pm i \\sin 3^\\circ.\\]Then by DeMoivre's Theorem,\n\\[z^{2000} = \\cos 6000^\\circ \\pm i \\sin 6000^\\circ = \\cos 240^\\circ \\pm i \\sin 240^\\circ,\\]and\n\\[\\frac{1}{z^{2000}} = \\cos (-240^\\circ) \\pm i \\sin (-240^\\circ) = \\cos 240^\\circ \\mp i \\sin 240^\\circ,\\]so\n\\[z^{2000} + \\frac{1}{z^{2000}} = 2 \\cos 240^\\circ = \\boxed{-1}.\\]"
+}

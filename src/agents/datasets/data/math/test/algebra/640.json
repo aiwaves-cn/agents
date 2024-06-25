@@ -1,0 +1,6 @@
+{
+    "problem": "For what value of $c$ will the circle with equation $x^2 + 8x + y^2 + 4y + c = 0$ have a radius of length 3?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Completing the square gives us $(x + 4)^2 + (y + 2)^2 = 20 - c$. Since we want the radius to be 3, we must have $20 - c = 3^2$. It follows that $c = \\boxed{11}$."
+}

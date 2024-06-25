@@ -1,0 +1,6 @@
+{
+    "problem": "The measures of the interior angles of a convex hexagon form an increasing arithmetic sequence. How many such sequences are possible if the hexagon is not equiangular and all of the angle degree measures are positive integers less than $150$ degrees?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The number of degrees in a hexagon is $(6-2) \\cdot 180=720$ degrees. Setting the degree of the smallest angle to be $x$, and the increment to be $d$, we get that the sum of all of the degrees is $x+x+d+x+2d+x+3d+x+4d+x+5d=6x+15d=720$. We want $15d$ to be even so that adding it to an even number $6x$ would produce an even number $720$. Therefore, $d$ must be even. The largest angle we can have must be less than $150$, so we try even values for $d$ until we get an angle that's greater or equal to $150$.  Similarly, we can conclude that $x$ must be a multiple of 5.\n\nThe largest angle is $x + 5d.$  We notice that, if we divide both sides of $6x + 15d = 720$ by 3, we get $2x + 5d = 240.$  For $x + 5d < 150,$ we must have $x > 90.$  The largest value of $d$ occurs when $x = 95$ and $5d = 240 - 2x = 240 - 2 \\cdot 95 = 240 - 190 = 50,$ or $d = 10.$\n\nTherefore, there are $\\boxed{5}$ values for $d$: $2,4,6,8,$ and $10$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $y = -4.9t^2 + 23.8t$ describes the height (in meters) of a projectile launched from the ground at 23.8 meters per second. In how many seconds will the projectile first reach 28 meters in height?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Setting $y$ to 28, we find the following: \\begin{align*}\n28& = -4.9t^2 + 23.8t\\\\\n0 & = -4.9t^2 + 23.8t - 28\\\\\n0 & = 49t^2 - 238t + 280\\\\\n& = 7t^2 - 34t + 40\\\\\n& = (7t - 20)(t - 2)\n\\end{align*}Our possible values for $t$ are $\\frac{20}{7} \\approx 2.857$ or $2.$ Of these, we choose the smaller $t$, or $\\boxed{2}.$"
+}

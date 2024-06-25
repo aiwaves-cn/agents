@@ -1,0 +1,6 @@
+{
+    "problem": "Two lines defined by the equations $y = mx + 4$ and $y = 3x + b$, where $m$ and $b$ are constants, intersect at the point $(6, 10)$. What is the value of $b + m$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since the two lines intersect at $(6,10)$, each must pass through that point.  So, we can substitute this point for $x$ and $y$ in the two given equations, then solve for $m$ and $b$.  In the first equation we find: \\begin{align*}\n10&=m(6)+4\\\\\n\\Rightarrow\\qquad 6&=6m\\\\\n\\Rightarrow\\qquad 1&=m\n\\end{align*} Using the same method in the second equation gives: \\begin{align*}\n10&=3(6)+b\\\\\n\\Rightarrow\\qquad 10&=18+b\\\\\n\\Rightarrow\\qquad -8&=b\n\\end{align*} The value of $b+m$ is equal to $1+(-8)=\\boxed{-7}$."
+}

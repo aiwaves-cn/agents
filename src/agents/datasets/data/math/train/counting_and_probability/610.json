@@ -1,0 +1,6 @@
+{
+    "problem": "Two cards are dealt at random from a standard deck of 52 cards (13 hearts, 13 clubs, 13 spades, and 13 diamonds).  What is the probability that the first card is a 6 and the second card is a Queen?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The probability that the first card is a 6 is $\\dfrac{1}{13}$.  There are then 51 cards remaining, so the probability the second card is a Queen is $\\dfrac{4}{51}$.  The answer is then $\\dfrac{1}{13} \\times \\dfrac{4}{51} = \\boxed{\\dfrac{4}{663}}$."
+}

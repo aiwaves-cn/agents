@@ -1,0 +1,6 @@
+{
+    "problem": "If three, standard, 6-faced dice are rolled, what is the probability that the sum of the face up integers is 16?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "At least one of the dice must come up 6, since otherwise the best we can do is 15.  The other two dice must add up to 10.  There are two ways two dice add to 10: $4+6$ and $5+5$.\n\nSo, we have two cases to consider:\n\nA) The dice are 6, 6, 4.  There are three possible ways this can happen, and the probability of each is $(1/6)^3 = 1/216$.  So, the probability of this case is $3(1/216) = 1/72$.\n\n\nB) The dice are 6, 5, 5.  There are three possible ways this can happen, and the probability of each is $(1/6)^3 = 1/216$.  So, the probability of this case is $3(1/216) = 1/72$.\n\nAdding the probabilities of these two cases gives us a total probability of $\\frac{1}{72} + \\frac{1}{72} = \\boxed{\\frac{1}{36}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The second and ninth terms of an arithmetic sequence are 2 and 30, respectively. What is the fiftieth term?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let $a$ be the first term, and let $d$ be the common difference.  Then the $n^{\\text{th}}$ term is $a + (n - 1)d$.  In particular, the second term is $a + d = 2$, and the ninth term is $a + 8d = 30$.  Subtracting these equations, we get $7d = 28$, so $d = 4$.  Substituting this into the equation $a + d = 2$, we get $a + 4 = 2$, so $a = -2$.\n\nThen the fiftieth term is $a + 49d = -2 + 49 \\cdot 4 = \\boxed{194}$."
+}

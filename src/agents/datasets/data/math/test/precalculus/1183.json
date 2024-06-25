@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of solutions in the interval $[0,2\\pi]$ to\n\\[\\tan x + \\sec x = 2 \\cos x.\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can write the equation as\n\\[\\frac{\\sin x}{\\cos x} + \\frac{1}{\\cos x} = 2 \\cos x.\\]Then $\\sin x + 1 = 2 \\cos^2 x = 2 (1 - \\sin^2 x) = 2 - 2 \\sin^2 x,$ so\n\\[2 \\sin^2 x + \\sin x - 1 = 0.\\]This equation factors as $(\\sin x + 1)(2 \\sin x - 1) = 0,$ so $\\sin x = -1$ or $\\sin x = \\frac{1}{2}.$\n\nHowever, if $\\sin x = -1,$ then $\\cos^2 x = 0,$ so $\\cos x = 0,$ which means $\\tan x$ and $\\sec x$ are undefined.  So $\\sin x = \\frac{1}{2},$ which leads to the $\\boxed{2}$ solutions $x = \\frac{\\pi}{6}$ and $x = \\frac{5 \\pi}{6}.$  We check that both solutions work."
+}

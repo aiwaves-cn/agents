@@ -1,0 +1,6 @@
+{
+    "problem": "The value of the expression  \\[(3^{1001}+4^{1002})^2-(3^{1001}-4^{1002})^2\\]is $k\\cdot12^{1001}$ for some positive integer $k$. What is $k$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Expanding the squares, we have \\begin{align*}\n&(3^{1001}+4^{1002})^2-(3^{1001}-4^{1002})^2\\\\\n&\\qquad=3^{2002}+2\\cdot3^{1001}\\cdot4^{1002}+4^{2004}\\\\\n&\\qquad\\qquad-3^{2002}+2\\cdot3^{1001}\\cdot4^{1002}-4^{2004}\\\\\n&\\qquad=4\\cdot3^{1001}\\cdot4^{1002}.\n\\end{align*}Since $4^{1002}=4\\cdot4^{1001}$, we can rewrite the expression as  \\[16\\cdot3^{1001}\\cdot4^{1001}=16\\cdot12^{1001}.\\]Thus, $k=\\boxed{16}$."
+}

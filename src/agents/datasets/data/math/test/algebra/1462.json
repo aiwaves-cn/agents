@@ -1,0 +1,6 @@
+{
+    "problem": "If the numbers 4, 5 and 6 are each used exactly once to replace the letters in the expression $A ( B - C )$, what is the least possible result?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Since $A$ must be positive, the expression is smallest when $B-C$ is as negative as possible, which occurs when $B = 4$, $C = 6$. Then $A = 5$, and $A(B-C) = 5(4-6) = 5(-2) = \\boxed{-10}$."
+}

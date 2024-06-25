@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be positive real numbers.  Find the minimum value of\n\\[\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} \\ge 3 \\sqrt[3]{\\frac{a}{b} \\cdot \\frac{b}{c} \\cdot \\frac{c}{a}} = 3.\\]Equality occurs when $a = b = c,$ so the minimum value is $\\boxed{3}.$"
+}

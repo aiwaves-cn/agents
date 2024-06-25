@@ -1,0 +1,6 @@
+{
+    "problem": "I have a spinner that lands on 1 with a probability of $\\frac{1}{10}$, 2 with a probability of $\\frac{2}{10}$, 3 with a probability of $\\frac{3}{10}$, and 4 with a probability of $\\frac{4}{10}$. If Phil and Sarah both spin the spinner, what is the probability that they get the same number?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "This problem requires a little bit of casework.  There are four ways in which they can both get the same number: if they both get 1's, both get 2's, both get 3's or both get 4's. The probability of getting a 1 is $\\dfrac{1}{10}$, so the probability that they will both spin a 1 is $\\left(\\dfrac{1}{10}\\right)^2=\\dfrac{1}{100}$. Similarly, the probability of getting a 2 is $\\dfrac{2}{10}$, so the probability that they will both spin a 2 is $\\left(\\dfrac{2}{10}\\right)^2=\\dfrac{4}{100}$, the probability of getting a 3 is $\\dfrac{3}{10}$, so the probability that they will both get a 3 is $\\left(\\dfrac{3}{10}\\right)^2=\\dfrac{9}{100}$ and the probability of getting a 4 is $\\dfrac{4}{10}$, so the probability that they will both get a 4 is $\\left(\\dfrac{4}{10}\\right)^2=\\dfrac{16}{100}$. So our answer is $\\dfrac{1}{100}+\\dfrac{4}{100}+\\dfrac{9}{100}+\\dfrac{16}{100}=\\frac{30}{100}=\\boxed{\\dfrac{3}{10}}$."
+}

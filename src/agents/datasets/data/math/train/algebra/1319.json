@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest prime factor of $9879$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We see that\n\n$$9879=10000-121=100^2-11^2$$Thus,\n\n$$9879=(100-11)(100+11)=89(111)=3*37*89$$So the answer is $\\boxed{89}$."
+}

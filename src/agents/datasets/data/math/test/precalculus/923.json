@@ -1,0 +1,6 @@
+{
+    "problem": "Point $D$ is on side $\\overline{BC}$ of triangle $ABC.$  If $\\angle CAD = \\angle BAD = 60^\\circ,$ $AC = 3,$ and $AB = 6,$ then find $AD.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By the Angle Bisector Theorem,\n\\[\\frac{BD}{AB} = \\frac{CD}{AC},\\]or $\\frac{BD}{6} = \\frac{AC}{3},$ so $BD = 2CD.$  Let $x = CD$; then $BD = 2x.$\n\n[asy]\nunitsize (0.8 cm);\n\npair A, B, C, D;\n\nB = (0,0);\nC = (3*sqrt(7),0);\nA = intersectionpoint(arc(B,6,0,180),arc(C,3,0,180));\nD = interp(B,C,2/3);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$3$\", (A + C)/2, NE);\nlabel(\"$6$\", (A + B)/2, NW);\nlabel(\"$x$\", (C + D)/2, S);\nlabel(\"$2x$\", (B + D)/2, S);\nlabel(\"$d$\", (A + D)/2, W);\n[/asy]\n\nLet $d = AD.$  Then by the Law of Cosines on triangle $ABD,$\n\\[4x^2 = d^2 + 36 - 2 \\cdot d \\cdot 6 \\cos 60^\\circ = d^2 - 6d + 36.\\]By the Law of Cosines on triangle $ACD,$\n\\[x^2 = d^2 + 9 - 2 \\cdot d \\cdot 3 \\cos 60^\\circ = d^2 - 3d + 9.\\]Hence, $4(d^2 - 3d + 9) = d^2 - 6d + 36.$  This simplifies to $3d^2 - 6d = 3d(d - 2) = 0.$  Therefore, $d = \\boxed{2}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $2x^6-x^4+4x^2-7$ is divided by $x^2+4x+3$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x^2+4x+3 = (x+1)(x+3)$ has degree $2$, the remainder must be of the form $ax+b$ for some constants $a$ and $b$. Let $q(x)$ be the quotient of the division, so\n$$2x^6-x^4+4x^2-7= (x+1)(x+3)q(x)+ax+b.$$Plugging in $x=-1$ gives us:\n$$2(-1)^6-(-1)^4+4(-1)^2-7 = 0+a(-1)+b,$$which simplifies to\n$$b-a = -2.$$Plugging in $x=-3$ gives us:\n$$2(-3)^6-(-3)^4+4(-3)^2-7 = 0+a(-3)+b,$$which simplifies to\n$$b-3a = 1406.$$Solving this system of equations gives us $a=-704$ and $b=-706$, and so our remainder is $\\boxed{-704x-706}$."
+}

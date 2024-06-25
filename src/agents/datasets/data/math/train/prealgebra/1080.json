@@ -1,0 +1,6 @@
+{
+    "problem": "Express $0.\\overline{1}+0.\\overline{01}+0.\\overline{0001}$ as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We begin this problem by summing $0.\\overline{1}$, $0.\\overline{01}$, and $0.\\overline{0001}$ as decimals. We do this by realizing that $0.\\overline{1}$ can also be written as $0.\\overline{1111}$ and that $0.\\overline{01}$ can be written as $0.\\overline{0101}$. Thus, $0.\\overline{1}+0.\\overline{01}+0.\\overline{0001}=0.\\overline{1111}+0.\\overline{0101}+0.\\overline{0001}=0.\\overline{1213}$. (Since there is no carrying involved, we can add each decimal place with no problems.)\n\nTo express the number $0.\\overline{1213}$ as a fraction, we call it $x$ and subtract it from $10000x$: $$\\begin{array}{r r c r@{}l}\n&10000x &=& 1213&.12131213\\ldots \\\\\n- &x &=& 0&.12131213\\ldots \\\\\n\\hline\n&9999x &=& 1213 &\n\\end{array}$$ This shows that $0.\\overline{1213} = \\boxed{\\frac{1213}{9999}}$.\n\n(Note: We have to check that this answer is in lowest terms. The prime factorization of $9999$ is $3^2\\cdot 11\\cdot 101$, so we must check that $1213$ is not divisible by $3$, $11$, or $101$.\n\nSince $1+2+1+3=7$ is not a multiple of $3$, neither is $1213$. Also, $1213 = 11^2\\cdot 10 + 3 = 101\\cdot 12 + 1$, so $1213$ can't be a multiple of $11$ or $101$.)"
+}

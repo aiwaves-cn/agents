@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the domain of the real-valued function $$f(x)=\\sqrt{3-\\sqrt{5-\\sqrt{x}}}.$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "For the contents of the innermost square root to be nonnegative, we must have $x\\geq 0$.  To satisfy the middle square root, we must have  $$5-\\sqrt{x}\\geq 0$$ $$\\Rightarrow 25\\geq x.$$ Finally, the outermost square root requires $$3-\\sqrt{5-\\sqrt{x}}\\geq 0$$ or $$9\\geq 5-\\sqrt{x}$$ $$\\Rightarrow \\sqrt{x}\\geq -4,$$ which is always true. Combining our inequalities, we get $$0\\leq x\\leq 25,$$ or $x \\in \\boxed{[0, 25]}$ in interval notation."
+}

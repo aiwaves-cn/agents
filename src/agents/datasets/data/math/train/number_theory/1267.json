@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct, natural-number factors does $4^3 \\cdot 5^4 \\cdot 6^2$ have?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We prime factorize the given number as $2^8\\cdot 3^2\\cdot 5^4$. A factor of this number takes the form $2^a3^b5^c$ for integers $a$ between 0 and 8, $b$ between 0 and 2, and $c$ between 0 and 4. There are $9$ ways to choose $a$, 3 ways to choose $b$, and 5 ways to choose $c$. In total, there are $9\\cdot3\\cdot5 = \\boxed{135}$ factors."
+}

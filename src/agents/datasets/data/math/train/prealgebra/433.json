@@ -1,0 +1,6 @@
+{
+    "problem": "The fenced area of a yard is a 15-foot by 12-foot rectangular region with a 3-foot by 3-foot square cut out, as shown. What is the area of the region within the fence, in square feet?\n\n[asy]draw((0,0)--(16,0)--(16,12)--(28,12)--(28,0)--(60,0)--(60,48)--(0,48)--cycle);\nlabel(\"15'\",(30,48),N);\nlabel(\"12'\",(60,24),E);\nlabel(\"3'\",(16,6),W);\nlabel(\"3'\",(22,12),N);\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Instead of calculating the area by subdividing into smaller regions, let us calculate the area of the large rectangle, and then subtract the small square cut out.  The total area of the rectangle is $15 \\times 12 = 180$, and the area of the small square is $3\\times 3 = 9$, making for an area of $180 - 9 = \\boxed{171}$ square feet inside the fence."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "2 diagonals of a regular nonagon (a 9-sided polygon) are chosen.  What is the probability that their intersection lies inside the nonagon?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{9}{2} = 36$ pairs of points in the nonagon, and all but 9 (the sides of the nonagon) are diagonals, which means there are 27 diagonals.  So there are $\\binom{27}{2} = 351$ pairs of diagonals.  Any four points on the nonagon uniquely determine a pair of intersecting diagonals. (If vertices $A,B,C,D$ are chosen, where $ABCD$ is a convex quadrilateral, the intersecting pair of diagonals are $AC$ and $BD$.)  So the number of sets of intersecting diagonals is the number of combinations of 4 points, which is $\\binom{9}{4} = 126$.  So the probability that a randomly chosen pair of diagonals intersect is $\\dfrac{126}{351} = \\boxed{\\dfrac{14}{39}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The matrix\n\\[\\begin{pmatrix} a & b \\\\ -\\frac{4}{5} & \\frac{3}{5} \\end{pmatrix}\\]corresponds to a reflection.  Enter the ordered pair $(a,b).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{R}$ be the matrix, let $\\mathbf{v}$ be a vector, and let $\\mathbf{r} = \\mathbf{R} \\mathbf{v}.$  Then $\\mathbf{R} \\mathbf{r} = \\mathbf{v},$ which means $\\mathbf{R}^2 \\mathbf{v} = \\mathbf{v}.$  (In geometrical terms, if we reflect a vector, and reflect it again, then we get back the same vector as the original.)  Since this holds for all vectors $\\mathbf{v},$\n\\[\\mathbf{R}^2 = \\mathbf{I}.\\]Here,\n\\[\\mathbf{R}^2 = \\begin{pmatrix} a & b \\\\ -\\frac{4}{5} & \\frac{3}{5} \\end{pmatrix} \\begin{pmatrix} a & b \\\\ -\\frac{4}{5} & \\frac{3}{5} \\end{pmatrix} = \\begin{pmatrix} a^2 - \\frac{4}{5} b & ab + \\frac{3}{5} b \\\\ -\\frac{4}{5} a - \\frac{12}{25} & -\\frac{4}{5} b + \\frac{9}{25} \\end{pmatrix}.\\]Thus, $-\\frac{4}{5} a - \\frac{12}{25} = 0$ and $-\\frac{4}{5} b + \\frac{9}{25} = 1.$  Solving, we find $(a,b) = \\boxed{\\left( -\\frac{3}{5}, -\\frac{4}{5} \\right)}.$"
+}

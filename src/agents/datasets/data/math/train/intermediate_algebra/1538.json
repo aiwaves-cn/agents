@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of real solutions of the equation\n\\[\\frac{4x}{x^2 + x + 3} + \\frac{5x}{x^2 - 5x + 3} = -\\frac{3}{2}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = x^2 + x + 3.$  Then we can write the given equation as\n\\[\\frac{4x}{y} + \\frac{5x}{y - 6x} + \\frac{3}{2} = 0.\\]Multiplying everything by $2y(y - 6x),$ we get\n\\[8x(y - 6x) + 10xy + 3y(y - 6x) = 0.\\]Expanding, we get $3y^2 - 48x^2 = 0,$ so $y^2 - 16x^2 = (y - 4x)(y + 4x) = 0.$  Thus, $y = 4x$ or $y = -4x.$\n\nIf $y = 4x,$ then $x^2 + x + 3 = 4x,$ so $x^2 - 3x + 3 = 0.$  This quadratic has no real solutions.\n\nIf $y = -4x,$ then $x^2 + x + 3 = -4x,$ so $x^2 + 5x + 3 = 0.$  This quadratic has two real solutions, giving us a total of $\\boxed{2}$ real solutions."
+}

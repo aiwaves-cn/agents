@@ -1,0 +1,6 @@
+{
+    "problem": "If $3x+7\\equiv 2\\pmod{16}$, then $2x+11$ is congruent $\\pmod{16}$ to what integer between $0$ and $15$, inclusive?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "If $3x+7\\equiv 2\\pmod{16}$, then $$6\\cdot (3x+7) \\equiv 6\\cdot 2\\pmod{16}.$$Expanding out the right side, we have $$18x + 42 \\equiv 12\\pmod{16}.$$Reducing coefficients modulo $16$, we have $$2x + 10 \\equiv 12\\pmod{16}.$$Finally, adding $1$ to both sides, we get $$2x + 11 \\equiv \\boxed{13}\\pmod{16}.$$(It's good to notice a couple of things about this solution. For one thing, why did we multiply by $6$ at the beginning? The idea is to get a $2x$ term on the left, since our goal is to compute the residue of $2x+11$. Another thing to notice is that one step in this process is not reversible. If the goal in this problem had been to solve for $x$, then it would appear from our final result that $x=1$ is a solution, yet $x=1$ doesn't actually satisfy $3x+7\\equiv 2\\pmod{16}$. Why not? At what step did we introduce this bogus solution?)"
+}

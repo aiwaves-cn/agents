@@ -1,0 +1,6 @@
+{
+    "problem": "When $\\frac{1}{1111}$ is expressed as a decimal, what is the sum of the first 40 digits after the decimal point?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We could simply start dividing and look for a pattern, but there is a cooler way using the fact that $1=.\\overline{9999}$. Then \\begin{align*}\n\\frac{1}{1111} &= \\frac{.\\overline{9999}}{1111}\\\\\n&=.\\overline{0009}.\n\\end{align*}The first 40 digits after the decimal point consist of ten blocks of $0009$, so their sum is $10\\cdot(0+0+0+9)=\\boxed{90}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "John needs to catch a train. The train arrives randomly some time between 2:00 and 3:00, waits for 20 minutes, and then leaves. If John also arrives randomly between 2:00 and 3:00, what is the probability that the train will be there when John arrives?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We put the time the train arrives on the $y$-axis and the time  John arrives on the $x$-axis, and shade in the region where John arrives while the train is there.\n\n[asy]\ndraw((0,0)--(60,0));\ndraw((0,0)--(0,60)--(60,60)--(60,0));\nlabel(\"2:00\", (0,0), SW);\nlabel(\"3:00\", (60,0), S);\nlabel(\"3:00\", (0,60), W);\nlabel(\"2:20\",(20,0),S);\nfill((0,0)--(60,60)--(60,40)--(20,0)--cycle, gray(.7));\n[/asy]\n\nThe probability that John arrives while the train is at the station is the ratio of the shaded area to the whole square. If we divide the axes into 60 units, the shaded region can be split up into a triangle of area $20\\cdot 20/2=200$ square units and a parallelogram of area $20\\cdot 40=800$ square units, and the whole square has an area of 3600 square units. The ratio is $1000/3600=\\boxed{\\frac{5}{18}}$."
+}

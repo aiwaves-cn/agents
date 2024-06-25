@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of three numbers $a$, $b$, and $c$ is 99. If we increase $a$ by 6, decrease $b$ by 6 and multiply $c$ by 5, the three resulting numbers are equal. What is the value of $b$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We are given the equations $a+b+c=99$ and $a+6=b-6=5c$.  Solve $b-6=5c$ for $b$ to find $b=5c+6$, and solve $5c=a+6$ for $a$ to find $a=5c-6$.  Substituting both of these equations into $a+b+c=99$, we have $(5c-6)+(5c+6)+c=99$.  Simplifying the left hand side, we get $11c=99$ which implies $c=9$.  Substituting into $b=5c+6$, we have $b=5(9)+6=\\boxed{51}$."
+}

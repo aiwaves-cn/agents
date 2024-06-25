@@ -1,0 +1,6 @@
+{
+    "problem": "In this problem, $a$ and $b$ are positive integers.\n\nWhen $a$ is written in base $9$, its last digit is $5$.\n\nWhen $b$ is written in base $6$, its last two digits are $53$.\n\nWhen $a-b$ is written in base $3$, what are its last two digits?  Assume $a-b$ is positive.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "In base $3$, the place values are $\\ldots\\ldots, 3^4, 3^3, 3^2, 3, 1$. Notice that all of these except the last two are divisible by $3^2=9$. Thus, the last two digits of $a-b$ in base $3$ are the base-$3$ representation of the remainder when $a-b$ is divided by $9$. (This is just like how the last two digits of an integer in base $10$ represent its remainder when divided by $100$.)\n\nFor similar reasons, we know that $a\\equiv 5\\pmod 9$ and $b\\equiv 5\\cdot 6+3=33\\pmod{6^2}$. This last congruence tells us that $b$ is $33$ more than a multiple of $36$, but any multiple of $36$ is also a multiple of $9$, so we can conclude that $b\\equiv 33\\equiv 6\\pmod 9$.\n\nFinally, we have $$a-b \\equiv 5-6 \\equiv -1 \\equiv 8 \\pmod 9.$$This remainder, $8$, is written in base $3$ as $22_3$, so the last two digits of $a-b$ in base $3$ are $\\boxed{22}$."
+}

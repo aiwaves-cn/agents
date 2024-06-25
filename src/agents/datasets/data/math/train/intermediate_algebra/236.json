@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real numbers $x$ which satisfy \\[\\frac{x-1}{x-3} \\ge 2.\\](Give your answer in interval notation.)",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Subtracting $2$ from both sides, we get \\[\\frac{x-1}{x-3} - 2 \\ge 0,\\]or \\[\\frac{x-1 - 2(x-3)}{x-3} = \\frac{-x+5}{x-3} \\ge 0.\\]Negating both sides, we have \\[\\frac{x-5}{x-3} \\le 0.\\]Letting $f(x) = \\frac{x-5}{x-3},$ we make a sign table with the two factors $x-5$ and $x-3$: \\begin{tabular}{c|cc|c} &$x-5$ &$x-3$ &$f(x)$ \\\\ \\hline$x<3$ &$-$&$-$&$+$\\\\ [.1cm]$3<x<5$ &$-$&$+$&$-$\\\\ [.1cm]$x>5$ &$+$&$+$&$+$\\\\ [.1cm]\\end{tabular}We see that $f(x) \\le 0$ when $3 < x < 5,$ as well as at the endpoint $x=5.$ Therefore, the solution set is the interval $\\boxed{ (3, 5] }.$"
+}

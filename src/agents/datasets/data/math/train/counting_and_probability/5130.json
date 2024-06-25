@@ -1,0 +1,6 @@
+{
+    "problem": "Let $N$ denote the number of permutations of the $15$-character string $AAAABBBBBCCCCCC$ such that\nNone of the first four letters is an $A$.\nNone of the next five letters is a $B$.\nNone of the last six letters is a $C$.\nFind the remainder when $N$ is divided by $1000$.\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let there be $k$ As amongst the five numbers in the middle (those mentioned in condition [2]). There are $4-k$ As amongst the last six numbers then. Also, there are $5-k$ Cs amongst the middle five numbers, and so there are $6-(5-k) = k+1$ Cs amongst the first four numbers.\nThus, there are ${4 \\choose k+1}$ ways to arrange the first four numbers, ${5 \\choose k}$ ways to arrange the middle five numbers, and ${6 \\choose 4-k} = {6\\choose k+2}$ ways to arrange the last six numbers. Notice that $k=4$ leads to a contradiction, so the desired sum is\\[\\sum_{k=0}^{3} {4\\choose k+1}{5\\choose k}{6\\choose k+2} = 60 + 600 + 600 + 60 = 1320\\]And $N \\equiv \\boxed{320} \\pmod{1000}$."
+}

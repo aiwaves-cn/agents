@@ -1,0 +1,6 @@
+{
+    "problem": "A certain ellipse is defined by\n\\[PF_1 + PF_2 = d.\\]The equation of the ellipse is $4x^2 - 8x + y^2 + 4y - 8 = 0.$  Find $d.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Completing the square in $x$ and $y,$ we get\n\\[4(x - 1)^2 + (y + 2)^2 = 16.\\]Then\n\\[\\frac{(x - 1)^2}{4} + \\frac{(y + 2)^2}{16} = 1.\\]Hence, $d = 2 \\cdot 4 = \\boxed{8}.$"
+}

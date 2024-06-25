@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $a$ and $b$ are positive integers and that $a+b=24$, what is the value of $ab$ if $2ab + 10a = 3b + 222$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We begin by rewriting the equation as $2ab + 10a - 3b = 222$. We can then use Simon's Favorite Factoring Trick by subtracting 15 from both sides of the equation to get $2ab + 10a - 3b - 15 = 207$. This can be factored into $$(2a - 3)(b + 5) = 207$$We know that the prime factorization of $207 = 3^2 \\cdot 23$ and that both $a$ and $b$ are positive integers, so the only possible solutions $(a,b)$ are $$(a,b) = \\{(13,4),(6,18),(2,202),(3,64)\\}$$Out of these, only $(6,18)$ meets the requirement that $a+b=24$. Thus, $ab = \\boxed{108}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In base $10$, the number $2013$ ends in the digit $3$.  In base $9$, on the other hand, the same number is written as $(2676)_{9}$ and ends in the digit $6$.  For how many values of $b$ does the base-$b$-representation of $2013$ end in the digit $3$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The base-$b$ representation of $2013$ ends in $3$ if and only if $2013$ leaves a remainder of $3$ when divided by $b$: that is, if $2010$ is a multiple of $b.$ Since $2010 = 2^1 \\cdot 3^1 \\cdot 5^1 \\cdot 67^1,$ it has $(1+1)(1+1)(1+1)(1+1) = 16$ positive divisors. However, since $3$ is a valid digit in base $b,$ we must have $b > 3,$ so we must subtract $3$ from our count (since $1,$ $2,$ and $3$ are all divisors of $2010$). Therefore, the answer is $16 - 3 = \\boxed{13}.$"
+}

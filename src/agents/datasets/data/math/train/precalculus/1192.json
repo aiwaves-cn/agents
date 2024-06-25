@@ -1,0 +1,6 @@
+{
+    "problem": "Find the angle, in degrees, between the vectors $\\begin{pmatrix} 2 \\\\ 5 \\end{pmatrix}$ and $\\begin{pmatrix} -3 \\\\ 7 \\end{pmatrix}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "If $\\theta$ is the angle between the vectors, then\n\\begin{align*}\n\\cos \\theta &= \\frac{\\begin{pmatrix} 2 \\\\ 5 \\end{pmatrix} \\cdot \\begin{pmatrix} -3 \\\\ 7 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 5 \\end{pmatrix} \\right\\| \\cdot \\left\\| \\begin{pmatrix} -3 \\\\ 7 \\end{pmatrix} \\right\\|} \\\\\n&= \\frac{2 \\cdot (-3) + 5 \\cdot 7}{\\sqrt{2^2 + 5^2} \\cdot \\sqrt{(-3)^2 + 7^2}} \\\\\n&= \\frac{29}{\\sqrt{29} \\sqrt{58}} \\\\\n&= \\frac{1}{\\sqrt{2}}.\n\\end{align*}Therefore, $\\cos \\theta = \\boxed{45^\\circ}.$"
+}

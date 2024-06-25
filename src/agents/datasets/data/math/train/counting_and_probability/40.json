@@ -1,0 +1,6 @@
+{
+    "problem": "How many three-digit whole numbers have at least one 7 or at least one 9 as digits?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We know that there are a total of $999 - 100 + 1 = 900$ three digit numbers.  If we try to count how many have at least one 7 or one 9 as digits directly, we'll run into a load of casework.  So instead, we proceed by counting the complement, the number of three digit numbers having no 7s or 9s as digits.  We can choose the first digit in 7 ways (anything except 0, 7, 9) and the second and third digits in 8 ways each.  This leads to a total of $7\\cdot 8\\cdot 8 = 448$ numbers that we don't want, leaving us with an answer of $900 - 448 = \\boxed{452}$."
+}

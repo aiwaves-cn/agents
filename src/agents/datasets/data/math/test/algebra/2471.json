@@ -1,0 +1,6 @@
+{
+    "problem": "For how many positive integers $x$ is $x^2 + 4x + 4$ between 10 and 50?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We see that $x^2 + 4x + 4 = (x + 2)^2$. If $x$ must be positive, we can see that this expression can take on the value of any perfect square that is greater than or equal to $(1+2)^2=9$. The possible values between 10 and 50 are thus 16, 25, 36, and 49, achieved when $x=2,3,4,5$ respectively. So, there are $\\boxed{4}$ positive integers $x$ for which $x^2+4x+4$ is between 10 and 50."
+}

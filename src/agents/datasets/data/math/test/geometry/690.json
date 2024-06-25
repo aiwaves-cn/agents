@@ -1,0 +1,6 @@
+{
+    "problem": "For what value of $a$ is there a right triangle with sides $a + 1$, $6a$, and $6a + 1$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Since $6a<6a+1$ for all real numbers $a$, the length of the hypotenuse cannot be $6a$ units.  Also, $a$ is positive because one of the side lengths is $6a$ units.  Since $a+1 < 6a+1$ for all positive real numbers $a$, the length of the hypotenuse cannot be $a+1$ either.  Therefore, $a+1$ and $6a$ are the legs of the right triangle, and by the Pythagorean theorem, \\begin{align*}\n(a+1)^2+(6a)^2&=(6a+1)^2 \\implies \\\\\na^2+2a+1+36a^2&=36a^2+12a+1 \\implies \\\\\na^2+2a+\\cancel{1}+\\cancel{36a^2}&=\\cancel{36a^2}+12a+\\cancel{1} \\implies \\\\\na^2-10a&=0 \\implies \\\\\na(a-10)&=0 \\implies \\\\\na=0\\qquad&\\text{or}\\qquad a=10.\n\\end{align*} Take the positive solution $a=\\boxed{10}$."
+}

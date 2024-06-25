@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when 1,234,567,890 is divided by 99?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can write 1234567890 as \\[12 \\cdot 10^8 + 34 \\cdot 10^6 + 56 \\cdot 10^4 + 78 \\cdot 10^2 + 90.\\] Note that \\[10^8 - 1 = 99999999 = 99 \\cdot 1010101,\\] is divisible by 99, so $12 \\cdot 10^8 - 12$ is divisible by 99.\n\nSimilarly, \\begin{align*}\n10^6 - 1 &= 999999 = 99 \\cdot 10101, \\\\\n10^4 - 1 &= 9999 = 99 \\cdot 101, \\\\\n10^2 - 1 &= 99 = 99 \\cdot 1\n\\end{align*} are also divisible by 99, so $34 \\cdot 10^6 - 34$, $56 \\cdot 10^4 - 56$, and $78 \\cdot 10^2 - 78$ are all divisible by 99.\n\nTherefore, \\[12 \\cdot 10^8 + 34 \\cdot 10^6 + 56 \\cdot 10^4 + 78 \\cdot 10^2 + 90 - (12 + 34 + 56 + 78 + 90)\\] is divisible by 99, which means that $1234567890$ and $12 + 34 + 56 + 78 + 90$ leave the same remainder when divided by 99.\n\nSince $12 + 34 + 56 + 78 + 90 = 270 = 2 \\cdot 99 + 72$, the remainder is $\\boxed{72}$."
+}

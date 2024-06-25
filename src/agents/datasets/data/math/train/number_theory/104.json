@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a positive integer such that $9x\\equiv 1\\pmod{25}$.\n\nWhat is the remainder when $11+x$ is divided by $25$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The given information can be expressed by writing $x\\equiv 9^{-1}\\pmod{25}$. Thus we wish to compute $11+9^{-1}\\pmod{25}$.\n\nModulo $25$, we can write $11$ as $11\\cdot (9\\cdot 9^{-1}) \\equiv (11\\cdot 9)\\cdot 9^{-1} \\equiv 99\\cdot 9^{-1}$. Thus \\begin{align*}\n11 + 9^{-1} &\\equiv 99\\cdot 9^{-1} + 1\\cdot 9^{-1} \\\\\n&\\equiv 100\\cdot 9^{-1} \\\\\n&\\equiv 0\\cdot 9^{-1} \\\\\n&\\equiv 0\\pmod{25},\n\\end{align*}so the remainder when $11+x$ is divided by $25$ is $\\boxed{0}$.\n\nNotice that the trick we used here is analogous to using a common denominator to add fractions."
+}

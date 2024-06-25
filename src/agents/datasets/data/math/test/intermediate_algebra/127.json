@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $x^9 - x^6 + x^3 - 1$ is divided by $x^2 + x + 1.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor $x^9 - x^6 + x^3 - 1$ as\n\\[x^6 (x^3 - 1) + (x^3 - 1) = (x^6 + 1)(x^3 - 1) = (x^6 + 1)(x - 1)(x^2 + x + 1).\\]Thus, $x^9 - x^6 + x^3 - 1$ is a multiple of $x^2 + x + 1,$ so the remainder is $\\boxed{0}.$"
+}

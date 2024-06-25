@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $XYZ$, shown below, what is $\\sin{X}$?\n\n[asy]\ndraw((0,0)--(10,0)--(3.6,4.8)--cycle,black+linewidth(1));\ndraw(rightanglemark((0,0),(3.6,4.8),(10,0),20),black+linewidth(1));\nlabel(\"X\",(10,0),E);\nlabel(\"Y\",(3.6,4.8),N);\nlabel(\"Z\",(0,0),W);\nlabel(\"10\",(0,0)--(10,0),S);\nlabel(\"8\",(10,0)--(3.6,4.8),NE);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "From the Pythagorean Theorem, we have \\begin{align*}XY^2+YZ^2&=XZ^2 \\\\ \\Rightarrow\\qquad{YZ}&=\\sqrt{XZ^2-XY^2} \\\\ &=\\sqrt{10^2-8^2} \\\\ &=\\sqrt{36} \\\\ &=6.\\end{align*}Therefore, $\\sin{X}=\\frac{YZ}{XZ}={\\frac{6}{10}}=\\boxed{\\frac35}$."
+}

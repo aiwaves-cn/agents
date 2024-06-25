@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest two-digit prime number such that reversing the digits of the number produces a composite number.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We begin by listing the two-digit primes with 1 as the tens digit:\n\n11, 13, 17, 19.\n\nWhen reversed, the above numbers are 11, 31, 71, and 91.  The first three are prime, but 91 is composite (7 times 13), as desired.  Hence, our desired prime is $\\boxed{19}$."
+}

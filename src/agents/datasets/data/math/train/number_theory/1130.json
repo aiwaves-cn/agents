@@ -1,0 +1,6 @@
+{
+    "problem": "How many factors of 8000 are perfect squares?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Any factor of $8000=2^6\\cdot5^3$ is in the form $2^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le3$. To count the number of perfect square factors, we must count the factors of $2^6\\cdot5^3$ that have $a=0$, $2$, $4$ or $6$ and $b=0$ or $2$. This gives $4\\cdot2=\\boxed{8}$ perfect square factors."
+}

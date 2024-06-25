@@ -1,0 +1,6 @@
+{
+    "problem": "What is the perimeter of the figure shown? [asy]\n\ndraw((0,0)--(0,2)--(1,2+sqrt(3))--(2,2)--(4,2)--(4,0)--(3,-sqrt(3))--(2,0)--cycle);\n\ndraw((-.2,1)--(.2,1));\n\ndraw((3.8,1)--(4.2,1));\n\ndraw((1,-.2)--(1,.2));\n\ndraw((3,1.8)--(3,2.2));\n\ndraw((0.15,0)--(0.15,0.15)--(0,0.15));\n\ndraw((3.85,2)--(3.85,1.85)--(4,1.85));\n\nlabel(\"2\",(4.1,1),E);\n\ndraw((.4,3.1)--(.7,2.9));\n\ndraw((1.6,3.1)--(1.3,2.9));\n\ndraw((3.6,-1.1)--(3.3,-.9));\n\ndraw((2.4,-1.1)--(2.7,-.9));\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The figure has $8$ sides, each of equal length. Since the length of each side is $2,$ then the perimeter of the figure is $8\\times 2 =\\boxed{16}.$"
+}

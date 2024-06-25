@@ -1,0 +1,6 @@
+{
+    "problem": "Find all solutions to the equation\\[ \\sqrt[4]{x} = \\frac{12}{7 - \\sqrt[4]{x}}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = \\sqrt[4]{x}.$ Then we have $y = \\frac{12}{7-y},$ or $y(7-y) = 12.$ Rearranging and factoring, we get \\[(y-3)(y-4) = 0.\\]Therefore, $y = 3$ or $y = 4.$ Since $x = y^4,$ we have $x = 3^4 = 81$ or $x = 4^4 = 256,$ so the values for $x$ are $x = \\boxed{81, 256}.$"
+}

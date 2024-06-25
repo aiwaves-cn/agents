@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $a$, $b$, and $c$ are real numbers such that $\\frac{a}{b} = \\frac{\\sqrt{10}}{\\sqrt{21}}$ and $\\frac{b}{c} = \\frac{\\sqrt{135}}{\\sqrt{8}}$. Find $\\frac{a}{c}$. Completely simplify and rationalize the denominator.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We begin by realizing that $\\frac{a}{c} = \\frac{a}{b} \\cdot \\frac{b}{c}$. Thus, we have $$\\frac{a}{c} = \\frac{a}{b} \\cdot \\frac{b}{c} = \\frac{\\sqrt{10}}{\\sqrt{21}} \\cdot \\frac{\\sqrt{135}}{\\sqrt{8}} = \\sqrt{\\frac{10}{21}} \\cdot \\sqrt{\\frac{135}{8}} = \\sqrt{\\frac{10\\cdot 135}{21 \\cdot 8}}.$$We can then simplify by canceling common factors under the square root. $10$ and $8$ share a factor of $2$ while $135$ and $21$ share a factor of $3$, so we have $$\\sqrt{\\frac{10\\cdot135}{21\\cdot8}}=\\sqrt{\\frac{5\\cdot45}{7\\cdot4}}.$$We now simplify further and rationalize the denominator to get: $$\\sqrt{\\frac{5\\cdot45}{7\\cdot4}} = \\frac{15}{2\\sqrt{7}} = \\boxed{\\frac{15\\sqrt{7}}{14}}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the $1000^{\\rm th}$ positive integer with an odd number of digits?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are $9$ one-digit positive integers ($1$ through $9$). There are $900$ three-digit positive integers, since there are $100$ three-digit numbers with each hundreds digit from $1$ to $9$. So far, we've counted $909$ positive integers with an odd number of digits. Next are five-digit numbers. Since $909+91=1000$, we're looking for the $91^{\\rm st}$ five-digit number.\n\nThe $1^{\\rm st}$ five-digit number is $10000$, so the $91^{\\rm st}$ five-digit number is $10000+90$, or $\\boxed{10090}$."
+}

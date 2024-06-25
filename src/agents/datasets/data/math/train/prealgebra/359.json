@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest value among $\\operatorname{lcm}[12,2],$ $\\operatorname{lcm}[12,4],$ $\\operatorname{lcm}[12,6],$ $\\operatorname{lcm}[12,8],$ $\\operatorname{lcm}[12,10],$ and $\\operatorname{lcm}[12,12]?$ Express your answer as an integer.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "When 12 is divisible by $n$, the least common multiple of 12 and $n$ is simply 12. Therefore, we know that $\\operatorname{lcm}[12,2]=12$, $\\operatorname{lcm}[12,4]=12$, $\\operatorname{lcm}[12,6]=12$, and $\\operatorname{lcm}[12,12]=12$.\n\nSince $12=2^2\\cdot 3$ and $8=2^3$, the least common multiple of 12 and 8 is $2^3\\cdot 3 = 24$. Thus, $\\operatorname{lcm}[12,8]=24$. Finally, 10 introduces a prime factor of 5 into the least common multiple, which makes $\\operatorname{lcm}[12,10]=2^2\\cdot 3 \\cdot 5 = \\boxed{60}$, which is larger than the other least common multiples."
+}

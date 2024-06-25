@@ -1,0 +1,6 @@
+{
+    "problem": "The figure shows a square of side $y$ units divided into a square of side $x$ units and four congruent rectangles. What is the perimeter, in units, of one of the four congruent rectangles? Express your answer in terms of $y$. [asy]\nsize(4cm);\ndefaultpen(linewidth(1pt)+fontsize(12pt));\ndraw((0,0)--(0,4)--(4,4)--(4,0)--cycle);\ndraw((1,0)--(1,3));\ndraw((0,3)--(3,3));\ndraw((3,4)--(3,1));\ndraw((1,1)--(4,1));\nlabel(\"$x$\",(1,2),E);\nlabel(\"$y$\",(2,4),N);\npair a,b;\na = (0,4.31);\nb = a + (4,0);\ndraw(a--a+(1.8,0));\ndraw(a+(2.2,0)--b);\ndraw(a+(0,.09)--a-(0,.09));\ndraw(b+(0,.09)--b-(0,.09));\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let $l$ represent the longer side of the rectangle, which makes the shorter side of the rectangle $y-l$ (since one long side and one short side make up $y$). Then the perimeter of one of the rectangles is $2l+2(y-l)=2l+2y-2l=\\boxed{2y}$."
+}

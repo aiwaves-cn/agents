@@ -1,0 +1,6 @@
+{
+    "problem": "If you flip a fair coin four times, what is the probability of flipping at least three heads in a row? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The quickest way to solve this problem is to count the number of outomes that have three heads in a row, as we already know very clearly that there are $2^4$ outcomes total. So, HHHH, HHHT, THHH are the only 3 outcomes that have three consecutive heads. So, our answer is $\\boxed{\\frac{3}{16}}$."
+}

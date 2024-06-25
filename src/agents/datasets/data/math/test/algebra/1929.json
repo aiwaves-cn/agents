@@ -1,0 +1,6 @@
+{
+    "problem": "What is the shortest distance, in units, between the circles $(x-9)^2 + (y-5)^2 = 6.25$ and $(x+6)^2 + (y+3)^2 = 49$? Express your answer as a decimal to the nearest tenth.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The first circle is centered at $(9,5)$ and has a radius of $\\sqrt{6.25} = 2.5$. The second circle is centered at $(-6,-3)$ and has a radius of $\\sqrt{49} = 7$. To find the shortest distance between the circles, we draw a segment connecting their centers, and subtract off the radii of the two circles. The distance between the centers of the circles is $\\sqrt{(9-(-6))^2 + (5-(-3))^2} = \\sqrt{15^2+8^2} = 17$. So the shortest distance between the circles is $17 - 2.5 - 7 = \\boxed{7.5}$."
+}

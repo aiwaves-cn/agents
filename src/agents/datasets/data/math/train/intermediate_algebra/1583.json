@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a complex number satisfying $z^2 = 4z - 19 + 8i$. Given that $|z|$ is an integer, find $z.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can write the given equation as\n\\[z^2 - 4z = -19 + 8i.\\]Then $z^2 - 4z + 4 = -15 + 8i,$ so $(z - 2)^2 = -15 + 8i.$\n\nLet $-15 + 8i = (a + bi)^2,$ where $a$ and $b$ are real numbers.  Expanding, we get\n\\[-15 + 8i = a^2 + 2abi - b^2.\\]Setting the real and imaginary parts equal, we get $a^2 - b^2 = -15$ and $ab = 4.$  Hence, $b = \\frac{4}{a},$ so\n\\[a^2 - \\frac{16}{a^2} = -15.\\]Then $a^4 - 16 = -15a^2,$ so $a^4 + 15a^2 - 16 = 0.$  This factors as $(a^2 - 1)(a^2 + 16) = 0.$  Since $a$ is real, $a = \\pm 1,$ which leads to $b = \\pm 4.$  Thus,\n\\[z - 2 = \\pm (1 + 4i),\\]Then $z = 3 + 4i$ or $z = 1 - 4i.$  Only $\\boxed{3 + 4i}$ has an integer magnitude."
+}

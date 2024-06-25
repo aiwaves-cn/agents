@@ -1,0 +1,6 @@
+{
+    "problem": "The expression $8x^3-27$ can be written as $(ax+b)(cx^2+dx+e)$. Find $a+b+c+d+e$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We recognize $8x^3-27$ as a difference of cubes. We can write $8x^3-27$ as $(2x)^3-3^3$. We know that $$a^3-b^3= (a-b)(a^{2}+ab+b^{2}). $$Thus, $$ (2x)^3-3^3=(2x-3)(4x^2+6x+9).$$Therefore, $a+b+c+d+e=2-3+4+6+9=\\boxed{18}$."
+}

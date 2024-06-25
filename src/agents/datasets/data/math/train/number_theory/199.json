@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $5^{137}$ is divided by 8?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Start with small exponents and look for a pattern.  We have $5^1\\equiv 5\\pmod{8}$ and $5^2\\equiv 1\\pmod{8}$.  We can multiply both sides of $5^2\\equiv 1\\pmod{8}$ by 5 to find that $5^3\\equiv 5\\pmod{8}$.  Multiplying both sides by 5 again, we find $5^4\\equiv 1\\pmod{8}$.  We see that every odd power of 5 is congruent to 5 modulo 8, and every even power is congruent to 1 modulo 8.  Therefore, $5^{137}$ leaves a remainder of $\\boxed{5}$ when divided by 8."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be distinct positive divisors of $80.$ What is the smallest possible value of $ab$ which is not a divisor of $80?$",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The positive divisors of $80$ are $1,2,4,5,8,10,16,20,40,80.$ As $80=2^4\\cdot 5$, the immediate possibilities for $ab$ that do not divide $80$ are $8\\cdot 4=16\\cdot 2=32$ and $5\\cdot 10=50.$ As $32<50,$ the smallest $ab$ not a divisor of $80$ is $\\boxed{32}.$"
+}

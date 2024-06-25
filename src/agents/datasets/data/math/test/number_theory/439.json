@@ -1,0 +1,6 @@
+{
+    "problem": "If $A$ and $B$ are positive integers, find $A\\cdot B$ given that  \\[ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c}& & & A & B_{9}\\\\ &+& & & A_{9}\\\\ \\cline{2-5}& & & B & 0_{9}\\\\ \\end{array} \\] Express your answer in base 10 (you do not need to include the subscript).",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The first possibility we have is that $A$ and $B$ are both equal to 0, in which case the addition problem would simplify to $0+0=0$. However, since the problem states that both $A$ and $B$ are positive integers, we can eliminate this possibility. Therefore we can assume that there is carrying in the right column, giving us $A_9+B_9=10_9$ or that $A+B=9$. Since we know that there is a 1 carried over, the left column tell us that $1+A=B$. Solving this system of equations, we find that $A=4$ and $B=5$. Thus, $A\\cdot B=4\\cdot5=\\boxed{20}$."
+}

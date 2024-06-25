@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify the radical $\\sqrt{2940}$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We need to find square factors of 2940.  Beginning the search, we can first see it is divisible by 10.  So, $2940=2\\cdot5\\cdot294$.  Looking at 294, we can see it is divisible by 2 and 3.  Taking out these factors, find that $294=2\\cdot3\\cdot49$.  Since $49=7^2$, there is a square factor of 2 and a square factor of 7.  The complete factorization is $2940=2^2\\cdot3\\cdot5\\cdot7^2$.  Therefore, $$\\sqrt{2940}=\\sqrt{2^2\\cdot3\\cdot5\\cdot7^2}=2\\sqrt{3\\cdot5\\cdot7^2}=2\\cdot7\\sqrt{3\\cdot5}=\\boxed{14\\sqrt{15}}$$"
+}

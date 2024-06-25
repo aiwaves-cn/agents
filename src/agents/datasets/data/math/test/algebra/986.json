@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\n2x + 1 & \\text{if } x \\le 3, \\\\\n8 - 4x & \\text{if } x > 3.\n\\end{array}\n\\right.\\]Find the sum of all values of $x$ such that $f(x) = 0.$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We solve the equation $f(x) = 0$ on the domains $x \\le 3$ and $x > 3.$\n\nIf $x \\le 3,$ then $f(x) = 2x + 1,$ so we want to solve $2x + 1 = 0.$ The solution is $x = -1/2,$ which satisfies $x \\le 3.$\n\nIf $x > 3,$ then $f(x) = 8 - 4x,$ so we want to solve $8 - 4x = 0.$ The solution is $x = 2,$ but this value does not satisfy $x > 3.$\n\nTherefore, the only solution is $x = \\boxed{-\\frac{1}{2}}.$"
+}

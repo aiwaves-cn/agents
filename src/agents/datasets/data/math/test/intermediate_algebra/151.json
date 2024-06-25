@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of real roots of $x^3 + 3x + 5 = 0.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $f(x) = x^3 + 3x + 5.$  Note that $f(x)$ is an increasing function.  Furthermore, as $x$ approaches $-\\infty,$ $f(x)$ approaches $-\\infty,$ and as $x$ approaches $\\infty,$ $f(x)$ approaches $\\infty.$  Therefore, the graph of $f(x)$ must cross the $x$-axis at some point (and since $f(x)$ is increasing, this point is unique), so $f(x)$ has exactly $\\boxed{1}$ real root."
+}

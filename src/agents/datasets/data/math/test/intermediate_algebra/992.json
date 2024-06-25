@@ -1,0 +1,6 @@
+{
+    "problem": "What is the equation of the oblique asymptote of the graph of $\\frac{2x^2+x-13}{2x-5}$?\n\nEnter your answer in the form $y = mx + b.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Polynomial long division gives us\n\\[\n\\begin{array}{c|ccc}\n\\multicolumn{2}{r}{x} & +3 \\\\\n\\cline{2-4}\n2x-5 & 2x^2&+x&-13 \\\\\n\\multicolumn{2}{r}{2x^2} & -5x &   \\\\\n\\cline{2-3}\n\\multicolumn{2}{r}{0} & 6x &  -13 \\\\\n\\multicolumn{2}{r}{} & 6x & -15 \\\\\n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0 &+  2 \\\\\n\\end{array}\n\\]Hence, we can write\n$$\\frac{2x^2+x-13}{2x-5} = x + 3 + \\frac{2}{2x-5}.$$So we can see that as $x$ becomes far from $0$, the graph of the function gets closer and closer to the line $\\boxed{y = x+3}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest three-digit positive integer congruent to 1 (mod 7)?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We divide 100 by 7 to obtain a quotient of 14 and a remainder 2. Since 100 is congruent to 2 (mod 7), we find that 99 is congruent to 1 (mod 7). Thus the next integer congruent to 1 (mod 7) is $99 + 7 = \\boxed{106}$."
+}

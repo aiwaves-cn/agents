@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $x + y$ if the sequence $2, ~6, ~10, \\ldots, ~x, ~y, ~26$ is an arithmetic sequence?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "The common difference of this arithmetic sequence is $6-2=4$. Since every two consecutive terms in the arithmetic sequence differ by this value, $y=26-4=22$ and $x=26-2 \\cdot 4 = 18$. Hence, $x+y=22+18=\\boxed{40}$."
+}

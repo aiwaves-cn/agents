@@ -1,0 +1,6 @@
+{
+    "problem": "Express the value of the following expression as a fraction. $$1+\\cfrac{2}{3+\\cfrac{4}{5}}$$",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We apply the order of operations.  To see that this means to sum the denominator first, note that we can write the expression as \\[1 + 2/\\left(3 + \\frac{4}{5}\\right).\\] So, we have \\begin{align*}\n1 + \\frac{2}{3+\\frac{4}{5}} &= 1 + \\frac{2}{\\frac{15}{5} + \\frac{4}{5}}\\\\\n&= 1 + \\frac{2}{\\frac{19}{5}} \\\\\n&= 1 + 2\\cdot\\frac{5}{19} =1 + \\frac{10}{19}=\\frac{19}{19} + \\frac{10}{19} = \\boxed{\\frac{29}{19}}.\n\\end{align*}"
+}

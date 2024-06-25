@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)$ be a polynomial of degree $4$ with rational coefficients which has $1+2\\sqrt{3}$ and $3-\\sqrt{2}$ as roots, and such that $f(0) = -154.$ Find $f(1).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $f$ has rational coefficients, $1-2\\sqrt{3}$ and $3+\\sqrt{2}$ must also be roots of $f(x).$ Therefore, $f$ must be divisible by the two polynomials \\[(x-(1+2\\sqrt3))(x-(1-2\\sqrt3)) = x^2 - 2x - 11\\]and \\[(x-(3-\\sqrt2))(x-(3+\\sqrt2))=x^2-6x+7,\\]so we have \\[f(x) = A(x^2-2x-11)(x^2-6x+7)\\]for some constant $A.$ Setting $x=0,$ we get \\[f(0)=A(-11)(7) = -77A,\\]so $-77A = -154,$ and $A=2.$ Thus, \\[f(x) = 2(x^2-2x-11)(x^2-6x+7)\\]and so $f(1) = 2(-12)(2) = \\boxed{-48}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $y^3$ varies inversely with $\\sqrt[3]{z}$. If $y=2$ when $z=1$, find the value of $z$ when $y=4$. Express your answer in simplest fractional form.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $y^3$ varies inversely with $\\sqrt[3]{z}$, $y^3\\cdot\\sqrt[3]{z}=k$ for some constant $k$. If $y=2$ when $z=1$, then $k=2^3\\cdot\\sqrt[3]{1}=8\\cdot1=8$. Thus, when $y=4,$ we have: \\begin{align*} (4)^3\\sqrt[3]{z}& =8\n\\\\ 64\\sqrt[3]{z}&=8\n\\\\\\Rightarrow\\qquad \\sqrt[3]{z}&=\\frac18\n\\\\\\Rightarrow\\qquad z&=\\left(\\frac18\\right)^3\n\\\\ z&=\\boxed{\\frac1{512}}\n\\end{align*}"
+}

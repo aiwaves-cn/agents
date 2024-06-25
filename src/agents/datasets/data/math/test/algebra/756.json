@@ -1,0 +1,6 @@
+{
+    "problem": "Given $2^a = 32$ and $a^b = 125$ find $b^a$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We note that $32 = 2 \\cdot 2\\cdot 2\\cdot 2\\cdot 2= 2^5$, so $a=5$. This leaves us with $5^b=125=5\\cdot5\\cdot5=5^3$, which means that $b=3$. Therefore our answer is $b^a = 3^5 = \\boxed{243}$."
+}

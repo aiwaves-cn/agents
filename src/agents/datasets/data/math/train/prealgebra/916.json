@@ -1,0 +1,6 @@
+{
+    "problem": "My friend reads three times as fast as I do. If it takes me 2 hours to read a novella, how many minutes will it take my friend to read the same novella?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "In reading, $\\text{speed}=\\frac{\\text{amount of material}}{\\text{time}}.$ Let the amount of material in the novella be $N.$ So $\\text{speed}=\\frac{N}{\\text{time}}.$\nAlso, it is a good idea to convert hours to minutes since the answer should be in minutes: $2hrs=2\\cdot 60min= 120min.$\nKnowing that my friend reads three times as fast as I do, we can set up a proportion of our speeds: $$\\frac{\\text{my friend's speed}}{\\text{my speed}}=3.$$And now we can use the formula above to proceed. \\begin{align*}\n\\frac{\\text{my friend's speed}}{\\text{my speed}}&=3\\\\\n\\frac{\\frac{N}{\\text{my friend's time}}}{\\frac{N}{120\\text{ min}}}&=3\\\\\n\\frac{N}{\\text{my friend's time}}\\cdot\\frac{120\\text{ min}}{N}&=3\\\\\n\\frac{N\\cdot 120\\text{ min}}{\\text{my friend's time}\\cdot N}&=3\\\\\n\\frac{120\\text{ min}}{\\text{my friend's time}}&=3\\\\\n\\text{my friend's time}&=\\frac{120\\text{ min}}{3}\\\\\n\\text{my friend's time}&=\\boxed{40\\text{ min}}.\n\\end{align*}"
+}

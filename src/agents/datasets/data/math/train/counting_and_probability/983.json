@@ -1,0 +1,6 @@
+{
+    "problem": "A bag contains ten balls, some of which are red and the rest of which are yellow. When two balls are drawn at random at the same time, the probability that both balls are red is $\\frac{1}{15}$. How many balls in the bag are red?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Let $r$ represent the number of red balls in the bag. The probability that the first ball is red is $\\frac{r}{10}$, while the probability that the other ball is red becomes $\\frac{r-1}{9}$ (drawing two balls at random at the same time is similar to drawing one ball and then drawing another ball without replacement). So the probability that both balls are red is $\\frac{r}{10}\\cdot\\frac{r-1}{9}$, which we set equal to $\\frac{1}{15}$. \\begin{align*}\n\\frac{r}{10}\\cdot\\frac{r-1}{9}&=\\frac{1}{15}\\quad\\Rightarrow\\\\\nr(r-1)&=\\frac{90}{15}\\quad\\Rightarrow\\\\\nr^2-r-6&=0\\quad\\Rightarrow\\\\\n(r-3)(r+2)&=0\n\\end{align*} The value of $r$ cannot be negative, so $r=3$. There are $\\boxed{3}$ red balls in the bag."
+}

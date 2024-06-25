@@ -1,0 +1,6 @@
+{
+    "problem": "If $m$ and $n$ are positive integers such that $\\gcd(m,n) = 12$, then what is the smallest possible value of $\\gcd(10m,15n)$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since $\\gcd(m,n) = 12$, both $m$ and $n$ are divisible by 12.  Then $10m$ is divisible by $10 \\cdot 12 = 120$, and $15n$ is divisible by $12 \\cdot 15 = 180$.  Since 60 divides both 120 and 180, $\\gcd(10m,15n)$ must be at least 60.\n\nIf we set $m = n = 12$, then $\\gcd(m,n) = \\gcd(12,12) = 12$, and $\\gcd(10m,15n) = \\gcd(120,180) = 60$, which shows that the value of 60 is attainable.  Therefore, the smallest possible value of $\\gcd(10m,15n)$ is $\\boxed{60}$."
+}

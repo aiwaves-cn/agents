@@ -1,0 +1,6 @@
+{
+    "problem": "What is $\\dbinom{n}{n}$ for any positive integer $n$?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "$\\dbinom{n}{n}=\\dfrac{n!}{n!0!}=\\boxed{1}$.  Also, there is only one way to choose $n$ objects out of $n$, which is simply choosing all of them."
+}

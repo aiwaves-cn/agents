@@ -1,0 +1,6 @@
+{
+    "problem": "How many real numbers are not in the domain of the function $$f(x) = \\frac{1}{x-64} + \\frac{1}{x^2-64} + \\frac{1}{x^3-64}~?$$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "A real number $x$ is in the domain of $$f(x) = \\frac{1}{x-64} + \\frac{1}{x^2-64} + \\frac{1}{x^3-64}$$ unless at least one of $x-64$, $x^2-64$, $x^3-64$ is equal to $0$. This occurs for $x=64$, $x=8$, $x=-8$, and $x=4$, so there are $\\boxed{4}$ real numbers not in the domain of $f$."
+}

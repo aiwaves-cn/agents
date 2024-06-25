@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be nonzero real constants such that $|a| \\neq |b|.$  Find the number of distinct values of $x$ satisfying\n\\[\\frac{x - a}{b} + \\frac{x - b}{a} = \\frac{b}{x - a} + \\frac{a}{x - b}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Combining the fractions on each side, we get\n\\[\\frac{ax - a^2 + bx - b^2}{ab} = \\frac{ax - a^2 + bx - b^2}{(x - a)(x - b)}.\\]Note that the numerators are equal.  The solution to $ax - a^2 + bx - b^2 = 0$ is\n\\[x = \\frac{a^2 + b^2}{a + b}.\\]Otherwise,\n\\[\\frac{1}{ab} = \\frac{1}{(x - a)(x - b)},\\]so $(x - a)(x - b) = ab.$  Then $x^2 - (a + b) x + ab = ab,$ so $x^2 - (a + b) x = 0.$  Hence, $x = 0$ or $x = a + b.$\n\nThus, there are $\\boxed{3}$ solutions, namely $x = 0,$ $x = a + b,$ and $x = \\frac{a^2 + b^2}{a + b}.$\n\n(If $\\frac{a^2 + b^2}{a + b} = a + b,$ then $a^2 + b^2 = a^2 + 2ab + b^2,$ so $2ab = 0.$  This is impossible, since $a$ and $b$ are non-zero, so all three solutions are distinct.)"
+}

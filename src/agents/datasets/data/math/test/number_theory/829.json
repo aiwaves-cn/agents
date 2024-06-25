@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least positive multiple of 72 that has exactly 16 positive factors?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The prime factorization of 72 is $2^3\\cdot 3^2$, which has $(3+1)(2+1) = 12$ factors.\n\nIf we multiply by 2, we get $2^4\\cdot 3^2$, which has $(4+1)(2+1) = 15$ factors.  Multiplying by any higher power of 2 gives a product with more than 16 positive factors.\n\nMultiplying by 3 gives $2^3\\cdot 3^3$, which has $(3+1)(3+1) = 16$ positive factors.\n\nMultiplying by any prime $p$ gives $2^3 \\cdot 3^2\\cdot p$, which has $(3+1)(2+1)(1+1) = 24$ factors.\n\nSimilarly, multiplying by any other positive integer besides those we've considered produces a product that has more than 16 factors.  Therefore, $2^3\\cdot 3^3 = \\boxed{216}$ is the only positive multiple of 72 with 16 positive factors."
+}

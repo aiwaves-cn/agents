@@ -1,0 +1,6 @@
+{
+    "problem": "A bag contains $3$ balls labeled $2, 4$ and $8$. A ball is to be picked, the value on the label is to be recorded and then the ball is to be returned to the bag. This will be done three times and then the values will be added together. What is the sum of all of the possible distinct sums?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Any sum formed by a combination of the numbers $2,4$ and $8$ must be divisible by $2$. The smallest possible value of such a sum is equal to $3 \\cdot 2 = 6$, and the largest possible value of such a sum is equal to $3 \\cdot 8 = 24$. After testing, we find that \\begin{align*}6 = 2+2+2,\\ 8 = 4+2+2,\\ 10 = 4+4+2, \\\\ 12 = 4+4+4,\\ 14 = 8+4+2,\\ 16 = 8+4+4, \\\\ 18 = 8+8+2,\\ 20 = 8+8+4,\\ 24 = 8+8+8.\\end{align*} However, we cannot find a combination that will add to be $22$: if two of the numbers are not $8$, then the maximum possible sum is $4 + 4 + 8 = 16$. Thus, two of the numbers picked must be $8$, but then the third ball must have the number $6$, which is not possible. Thus, the answer is the sum of the even numbers from $6$ to $24$ excluding $22$, which is $\\boxed{128}$."
+}

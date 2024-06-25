@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $P(x) = 2x^3 + ax^2 + bx + c$ has the property that the mean of its zeros, the product of its zeros, and the sum of the coefficients are all equal. The $y$-intercept of the graph of $y = P(x)$ is 8. What is $b$?",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The $y$-intercept of the graph is the point at which $x=0$. At that point, $P(x)=c$, which we are told is equal to 8. Thus, $c=8$. The product of the roots of the given polynomial is $-\\frac{c}{2}=-4$. The problem states that the mean of the zeros must also equal $-4$, so the sum of the three zeros (this is a cubic equation) is equal to $3 \\cdot -4 = -12$. The sum of the zeros is also equal to $-\\frac{a}{2}$, so $a=24$. Finally, we are given that the sum of the coefficients, or $2+ a+b+c$, is also equal to $-4$. Plugging in our known values of $a$ and $c$, we have $2+24+b+8=-4$. Solving for $b$, we get $b=\\boxed{-38}$."
+}

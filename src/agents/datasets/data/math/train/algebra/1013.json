@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the given functions: $$\\begin{array}{ccc}\nf(x) & = & 5x^2 - \\frac{1}{x}+ 3\\\\\ng(x) & = & x^2-k\n\\end{array}$$If $f(2) - g(2) = 2$, what is the value of $k$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We substitute $f(2) = 5(2)^2 - \\frac{1}{2} + 3 = \\frac{45}{2}$ and $g(2) = (2)^2 - k = 4 - k$. So $f(2) - g(2) = 2$ gives us $\\frac{45}{2} - 4 + k=2$. Solving for $k$, we find $k = \\frac{4}{2} - \\frac{45}{2} + \\frac{8}{2}$ so $\\boxed{k = \\frac{-33}{2}}$."
+}

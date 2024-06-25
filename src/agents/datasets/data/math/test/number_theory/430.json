@@ -1,0 +1,6 @@
+{
+    "problem": "If $A$, $B$, and $C$ represent three distinct digits from 1 to 9 and they satisfy the following equations, what is the value of the sum $A+B+C$? (In the equation below, $AA$ represents a two-digit number both of whose digits are $A$.) $$A+B=C$$$$AA-B=2\\times C$$$$C\\times B=AA+A$$",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We start off by replacing $C$ with $A+B$ and changing the form of the two-digit integer in the second equation. \\begin{align*}\n10A+A-B&=2\\times(A+B)\\quad\\Rightarrow\\\\\n11A-B&=2A+2B\\quad\\Rightarrow\\\\\n9A&=3B\\quad\\Rightarrow\\\\\n3A&=B\n\\end{align*}Now we replace $C$, change the two-digit integer, and then substitute $B$ with $3A$ in the third equation. \\begin{align*}\n(A+B)\\times B&=10A+A+A\\quad\\Rightarrow\\\\\n&=12A\\quad\\Rightarrow\\\\\n(A+3A)\\times3A&=12A\\quad\\Rightarrow\\\\\n(4A)\\times3A&=12A\\quad\\Rightarrow\\\\\n12(A)^2&=12A\n\\end{align*}For $(A)^2$ to equal $A$, $A$ must equal 1. Since $3A=B$, $B=3$. That means $A+B=C=4$. So the sum of the three digits is $1+3+4=\\boxed{8}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_1,$ $a_2,$ $\\dots$ be a sequence of real numbers such that for all positive integers $n,$\n\\[\\sum_{k = 1}^n a_k \\left( \\frac{k}{n} \\right)^2 = 1.\\]Find the smallest $n$ such that $a_n < \\frac{1}{2018}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "For $n = 1,$ we get $a_1 = 1.$  Otherwise,\n\\[\\sum_{k = 1}^n k^2 a_k = n^2.\\]Also,\n\\[\\sum_{k = 1}^{n - 1} k^2 a_k = (n - 1)^2.\\]Subtracting these equations, we get\n\\[n^2 a_n = n^2 - (n - 1)^2 = 2n - 1,\\]so $a_n = \\frac{2n - 1}{n^2} = \\frac{2}{n} - \\frac{1}{n^2}.$  Note that $a_n = 1 - \\frac{n^2 - 2n + 1}{n^2} = 1 - \\left( \\frac{n - 1}{n} \\right)^2$ is a decreasing function of $n.$\n\nAlso,\n\\[a_{4035} - \\frac{1}{2018} = \\frac{2}{4035} - \\frac{1}{4035^2} - \\frac{1}{2018} = \\frac{1}{4035 \\cdot 2018} - \\frac{1}{4035^2} > 0,\\]and\n\\[a_{4036} < \\frac{2}{4036} = \\frac{1}{2018}.\\]Thus, the smallest such $n$ is $\\boxed{4036}.$"
+}

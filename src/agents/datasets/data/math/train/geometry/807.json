@@ -1,0 +1,6 @@
+{
+    "problem": "The number of inches in the perimeter of an equilateral triangle equals the number of square inches in the area of its circumscribed circle. What is the radius, in inches, of the circle? Express your answer in terms of pi and in simplest radical form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the triangle have vertices $A$, $B$, and $C$, let $O$ be the center of the circle, and let $D$ be the midpoint of $\n\\overline{BC}$. Triangle $COD$ is a $30 - 60 - 90$ degree triangle. If $r$ is the radius of the circle, then the sides of $\\triangle COD$ are $r$, $\\frac{r}{2}$, and $\\frac{r\\sqrt{3}}{2}$. The perimeter of $\\triangle ABC$ is $6\\displaystyle\\left(\\frac{r \\sqrt{3}}{2}\\displaystyle\\right)=3r\\sqrt{3}$, and the area of the circle is $\\pi r^{2}$. Thus $3r\\sqrt{3} = \\pi r^{2}$, and $r =\n\\boxed{\\frac{3\\sqrt{3}}{\\pi}}$.\n\n[asy]\npair A,B,C,D,O;\nO=(0,0);\nA=(0,1);\nB=(0.87,-0.5);\nC=(-0.87,-0.5);\nD=(0,-0.5);\ndraw(Circle(O,1),linewidth(0.7));\ndraw(C--O--D--cycle,linewidth(0.7));\ndraw(A--B--C--cycle,linewidth(0.7));\nlabel(\"$\\frac{r}{2}$\",(0,-0.25),E);\nlabel(\"$\\frac{r \\sqrt{3}}{2}$\",(-0.43,-0.5),S);\nlabel(\"$r$\",(-0.43,-0.25),NW);\nlabel(\"$O$\",O,N);\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,SW);\nlabel(\"$D$\",D,S);\n[/asy]"
+}

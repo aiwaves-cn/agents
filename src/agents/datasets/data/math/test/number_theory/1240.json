@@ -1,0 +1,6 @@
+{
+    "problem": "In any month with a Friday the Thirteenth, what day of the week is the first day of the same month?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "If the 13th is a Friday, then the 14th is a Saturday, and the 15th is a Sunday.  Subtracting 14 days (which is two weeks), we find that the first of the month is also a $\\boxed{\\text{Sunday}}$."
+}

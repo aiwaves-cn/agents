@@ -1,0 +1,6 @@
+{
+    "problem": "A book is said to have $n$ leaves if it is composed of $n$ pieces of paper. On the other hand, the number of pages is twice the number of leaves because each side of a piece of paper is defined as a page.\n\nIf the number of pages in a book is $3$ more than a multiple of $7$, and the number of leaves is greater than $100$, then what is the smallest possible number of leaves?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Let $m$ be the least possible number of leaves. Then $2m$ is the least possible number of pages. We know that $2m\\equiv 3\\pmod 7\\implies 8m \\equiv 3\\cdot 4\\pmod 7\\implies m\\equiv 12\\equiv 5\\pmod 7$. So $m=5+7a$ for some positive integer $a$. The smallest such number greater than $100$ is $5+7\\cdot 14=\\boxed{103}$."
+}

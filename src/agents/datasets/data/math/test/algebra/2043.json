@@ -1,0 +1,6 @@
+{
+    "problem": "What is the domain of the real-valued function $f(x)=\\frac{2x-7}{\\sqrt{x^2-5x+6}}$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The function is defined when the value inside the square root is positive, i.e. we must have $x^2-5x+6>0$.  Factoring, we get $(x-3)(x-2)>0$. So either both factors in the left hand side are negative or they are both positive. They are both negative when $x<2$. They are both positive when $x>3$. So the domain of $f(x)$ is $x<2 \\text{ or } x>3$, or $x \\in \\boxed{(-\\infty, 2) \\cup (3, \\infty)}$ in interval notation."
+}

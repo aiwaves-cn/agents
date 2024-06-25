@@ -1,0 +1,6 @@
+{
+    "problem": "A rubber ball is dropped from a height of 100 feet.  Each the time ball bounces, it rises to a height $\\frac{2}{5}$ of the previous height.  Find the total distance the ball travels, in feet.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The sum of the distances is\n\\begin{align*}\n100 + 40 + 40 + 16 + 16 + \\dotsb &= 100 + 2 (40 + 16 + \\dotsb) \\\\\n&= 100 + 2 \\cdot \\frac{40}{1 - 2/5} = \\boxed{\\frac{700}{3}}.\n\\end{align*}"
+}

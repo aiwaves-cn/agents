@@ -1,0 +1,6 @@
+{
+    "problem": "Given $x\\neq0$, find the positive value of $b$ such that the equation $\\frac 3x+\\frac x3=b$ will have exactly one solution.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Multiplying both sides by $3x$ gives $9 + x^2 = 3bx$, so $x^2 -3bx +9=0$. The equation has exactly one solution if and only if the discriminant of $x^2 -3bx + 9$ is 0.  The discriminant of this quadratic is $(-3b)^2 -4(9) = 9b^2 - 36$.  Setting this equal to 0 gives $9b^2 = 36$, so $b^2=4$.  The positive solution to this equation is $b=\\boxed{2}$."
+}

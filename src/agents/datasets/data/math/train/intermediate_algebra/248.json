@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the solutions to\n\\[\\frac{1}{x^2 + 11x - 8} + \\frac{1}{x^2 + 2x - 8} + \\frac{1}{x^2 - 13x - 8} = 0.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = x^2 - 13x - 8.$  Then we can write the given equation as\n\\[\\frac{1}{y + 24x} + \\frac{1}{y + 15x} + \\frac{1}{y} = 0.\\]Multiplying everything by $(y + 24x)(y + 15x)y,$ we get\n\\[(y + 15x)y + y(y + 24x) + (y + 24x)(y + 15x) = 0.\\]This simplifies to $360x^2 + 78xy + 3y^2 = 0,$ which factors as $3(20x + y)(6x + y) = 0.$  Hence, $20x + y = 0$ or $6x + y = 0.$\n\nIf $20x + y = 0,$ then $20x + x^2 - 13x - 8 = x^2 + 7x - 8 = (x - 1)(x + 8) = 0,$ so $x = 1$ or $x = -8.$\n\nIf $6x + y = 0,$ then $6x + x^2 - 13x - 8 = x^2 - 7x - 8 = (x - 8)(x + 1) = 0,$ so $x = 8$ or $x = -1.$  Thus, the solutions are $\\boxed{8,1,-1,-8}.$"
+}

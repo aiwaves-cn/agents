@@ -1,0 +1,6 @@
+{
+    "problem": "The first round of the 2010 FIFA World Cup consisted of several groups of four teams each. Within each group, each of the four teams played each other once. How many matches were there in each group?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Since there were four teams in each group, they each must have played each other once, meaning that at first glance, there seem to be $4 \\cdot 3 = 12$ pairs of teams. However, that counts each match twice, so we must divide by $2$ and we have $\\boxed{6},$ our answer."
+}

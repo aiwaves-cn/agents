@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $ax^3 + bx - c$ is divisible by $x^2 + bx + c,$ where $a,$ $b,$ and $c$ are nonzero real numbers.  Find $ab.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "If $ax^3 + bx - c$ has $x^2 + bx + c$ has a factor, then the other factor must be of the form $ax - 1,$ in order to make the leading and constant coefficients match.  Thus,\n\\[(x^2 + bx + c)(ax - 1) = ax^3 + bx - c.\\]Expanding, we get\n\\[ax^3 + (ab - 1) x^2 + (ac - b) x - c = ax^3 + bx - c.\\]Matching coefficients, we get\n\\begin{align*}\nab - 1 &= 0, \\\\\nac - b &= b.\n\\end{align*}Hence, $ab = \\boxed{1}.$"
+}

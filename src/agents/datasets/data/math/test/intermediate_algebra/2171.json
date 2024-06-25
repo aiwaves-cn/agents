@@ -1,0 +1,6 @@
+{
+    "problem": "The Fibonacci numbers are defined recursively by the equation\n\\[ F_n = F_{n - 1} + F_{n - 2}\\]for every integer $ n \\ge 2$, with initial values $ F_0 = 0$ and $ F_1 = 1$.  Let $ G_n = F_{3n}$ be every third Fibonacci number.  There are constants $ a$ and $ b$ such that every integer $ n \\ge 2$ satisfies\n\\[ G_n = a G_{n - 1} + b G_{n - 2}.\\]Find $(a,b)$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We want to write $G_n$ in terms of $G_{n-1}$ and $G_{n-2}$.  Since $G_n = F_{3n}$, this is the same as writing $F_{3n}$ in terms of $F_{3(n-1)}$ and $F_{3(n-2)}$.  To do this, we repeatedly apply the recurrence relation given to us.\n\n$$ \\begin{aligned} G_n &= F_{3n} \\\\\n&=F_{3n-1} + F_{3n-2} \\\\\n&=2F_{3n-2} + F_{3n-3} \\\\\n&=3F_{3n-3} + 2F_{3n-4} \\\\\n&=3F_{3n-3} + F_{3n-4} +F_{3n-5} + F_{3n-6} \\\\\n&=4F_{3n-3} + F_{3n-6} \\\\\n&=4G_{n-1} + G_{n-2}.\n\\end{aligned}$$Hence, $(a,b) = \\boxed{(4,1)}$."
+}

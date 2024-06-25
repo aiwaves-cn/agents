@@ -1,0 +1,6 @@
+{
+    "problem": "The diagonals of rectangle $PQRS$ intersect at point $X$.  If $PS = 10$ and $RS=24$, then what is $\\cos \\angle PXS$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy]\npair P,Q,R,SS,X,F;\nSS = (0,0);\nP = (0,5);\nR = (12,0);\nQ= R+P;\nX = Q/2;\nF = foot(SS,P,R);\ndraw(F--SS--R--Q--P--SS--Q);\ndraw(P--R);\nlabel(\"$P$\",P,NW);\nlabel(\"$Q$\",Q,NE);\nlabel(\"$R$\",R,SE);\nlabel(\"$S$\",SS,SW);\nlabel(\"$X$\",X,S);\nlabel(\"$F$\",F,SW);\ndraw(rightanglemark(S,F,X,12));\n[/asy]\n\nTo find $\\cos \\angle PXS$, we build a right triangle with $\\angle PXS$ as one of its acute angles.  We do so by drawing altitude $\\overline{SF}$ from $S$ to diagonal $\\overline{PR}$ as shown.  We then have $\\cos \\angle PXS = \\cos\\angle FXS = \\frac{FX}{XS}$.\n\nThe Pythagorean Theorem gives us $PR = QS = 26$, so $XP=SX = QS/2 = 13$.  We also have $\\triangle FPS \\sim \\triangle SPR$ by AA Similarity (both are right triangles and $\\angle SPR = \\angle FPS$), so\n\\[\\frac{FP}{PS} = \\frac{SP}{PR}.\\]This gives us\n\\[FP = PS \\cdot \\frac{SP}{PR} = \\frac{10\\cdot 10}{26} = \\frac{50}{13}.\\]Finally, we have $FX = XP - FP = 13 - \\frac{50}{13} = \\frac{119}{13}$, so \\[\\cos \\angle PXS = \\frac{FX}{XS} = \\frac{119/13}{13} = \\boxed{\\frac{119}{169}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A function $f$ is defined on the complex numbers by $f(z)=(a+bi)z,$ where $a$ and $b$ are positive numbers. This function has the property that for each complex number $z$, $f(z)$ is equidistant from both $z$ and the origin. Given that $|a+bi|=8$, find $b^2.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the given property,\n\\[|f(z) - z| = |f(z)|.\\]Then\n\\[|(a + bi) z - z| = |(a + bi)z|,\\]so $|a + bi - 1||z| = |a + bi||z|.$  Since this holds for all complex numbers $z,$\n\\[|a + bi - 1| = |a + bi| = 8.\\]Then $(a - 1)^2 + b^2 = 64$ and $a^2 + b^2 = 64.$  Subtracting these equations, we get $2a - 1 = 0,$ so $a = \\frac{1}{2}.$  Hence,\n\\[b^2 = 64 - a^2 = 64 - \\frac{1}{4} = \\boxed{\\frac{255}{4}}.\\]"
+}

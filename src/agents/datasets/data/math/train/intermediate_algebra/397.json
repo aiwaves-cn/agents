@@ -1,0 +1,6 @@
+{
+    "problem": "In the year 2001, the United States will host the International Mathematical Olympiad. Let $I$, $M$, and $O$ be distinct positive integers such that the product $I\\cdot M\\cdot O=2001$. What is the largest possible value of the sum $I+M+O$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Factor 2001 into primes to get $2001=3\\cdot 23\\cdot 29$. The largest possible sum of three distinct factors whose product is the one which combines the two largest prime factors, namely $I=23\\cdot\n29=667$, $M=3$, and $O=1$, so the largest possible sum is $1+3+667=\\boxed{671}$."
+}

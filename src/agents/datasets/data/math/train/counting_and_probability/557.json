@@ -1,0 +1,6 @@
+{
+    "problem": "Sheila has been invited to a picnic tomorrow.  The picnic will occur, rain or shine.  If it rains, there is a $20\\%$ probability that Sheila will decide to go, but if it is sunny, there is an $80\\%$ probability that Sheila will decide to go.  The forecast for tomorrow states that there is a $40\\%$ chance of rain.  What is the probability that Sheila will attend the picnic? Express your answer as a percent.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The probability that it rains and Sheila attends is $(0.4)(0.2) = 0.08$.  The probability that it doesn't rain and Sheila attends is $(0.6)(0.8) = 0.48$.  So the overall probability that Sheila attends is $0.08 + 0.48 = \\boxed{0.56 = 56\\%}$."
+}

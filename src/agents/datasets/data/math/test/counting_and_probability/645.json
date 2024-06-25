@@ -1,0 +1,6 @@
+{
+    "problem": "In how many different ways can 12 dimes be divided into three piles with an odd number of dimes in each pile?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "To divide 12 dimes into three piles with an odd number of dimes in each pile is to express 12 as a sum of three odd numbers. This is impossible to do, since $12=2\\cdot6$ is even and the sum of three odd integers is odd: $(2l+1)+(2m+1)+(2n+1)=2l+2m+2n+3=2(l+m+n+1)+1$. Therefore, there are $\\boxed{0}$ ways to divide the dimes as described."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a positive number such that $2x^2 = 4x + 9.$ If $x$ can be written in simplified form as $\\dfrac{a + \\sqrt{b}}{c}$ such that $a,$ $b,$ and $c$ are positive integers, what is $a + b + c$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we move all terms to one side to get $2x^2 - 4x - 9 = 0.$ Seeing that factoring will not work, we apply the Quadratic Formula: \\begin{align*}\nx &= \\frac{-(-4) \\pm \\sqrt{(-4)^2 - 4(2)(-9)}}{2 (2)}\\\\\n&= \\frac{4 \\pm \\sqrt{16 + 72}}{4} = \\frac{4 \\pm \\sqrt{88}}{4}\\\\\n&= \\frac{4 \\pm 2\\sqrt{22}}{4} = \\frac{2 \\pm \\sqrt{22}}{2}.\n\\end{align*}Since $x$ is positive, $x$ can be written as $\\dfrac{2 + \\sqrt{22}}{2},$ so our answer is $2 + 22 + 2 = \\boxed{26}.$"
+}

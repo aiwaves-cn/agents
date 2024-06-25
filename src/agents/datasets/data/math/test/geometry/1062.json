@@ -1,0 +1,6 @@
+{
+    "problem": "A right hexagonal prism has a height of 3 feet and each edge of the hexagonal bases is 6 inches. What is the sum of the areas of the non-hexagonal faces of the prism, in square feet?\n\n[asy]import three;\n\ncurrentprojection=orthographic(1/2,-1,1/2);\n\ndraw((0,0,0)--(1,0,0)--(1.5,0.86,0)--(1,1.72,0)--(0,1.72,0)--(-0.5,0.86,0)--cycle);\n\ndraw((0,0,6)--(1,0,6)--(1.5,0.86,6)--(1,1.72,6)--(0,1.72,6)--(-0.5,0.86,6)--cycle);\n\ndraw((0,0,0)--(0,0,6));\n\ndraw((1,0,0)--(1,0,6));\n\ndraw((1.5,0.86,0)--(1.5,0.86,6));\n\ndraw((1,1.72,0)--(1,1.72,6));\n\ndraw((0,1.72,0)--(0,1.72,6));\n\ndraw((-0.5,0.86,0)--(-0.5,0.86,6));\n\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since each non-hexagonal face is a rectangle with base 6 inches and height 3 feet, each face has an area of $6$ inches $\\times 3$ feet $= .5$ feet $\\times 3$ feet $= 1.5$ square feet per face.  Since there are 6 faces (6 edges to a hexagon), that makes for a total area of $\\boxed{9}$ square feet."
+}

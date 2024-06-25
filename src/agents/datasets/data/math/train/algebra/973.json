@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ is a positive number such that \\[\\sqrt{8x}\\cdot\\sqrt{10x}\\cdot\\sqrt{3x}\\cdot\\sqrt{15x}=15,\\]find all possible values for $x$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Combining the expressions on the left-hand side, we obtain \\[\\begin{aligned} \\sqrt{8x}\\cdot\\sqrt{10x}\\cdot\\sqrt{3x}\\cdot\\sqrt{15x}&=15 \\\\ \n\\sqrt{3600x^4} &= 15 \\\\\n60x^2 &= 15 \\\\\nx^2 &= \\frac{15}{60} = \\frac{1}{4}.\\end{aligned} \\]Since $x$ must be positive, the only solution is $x = \\sqrt{\\frac{1}{4}} = \\boxed{\\frac{1}{2}}$."
+}

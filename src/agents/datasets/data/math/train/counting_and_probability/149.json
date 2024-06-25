@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to put 4 distinguishable balls into 2 indistinguishable boxes?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "In this problem we don't care which box is which, we only care which balls are together and which ones aren't.\n\nFor each ball, there are 2 choices of which box to place it in.  Since this choice is independent for each of the 4 balls, we multiply the number of choices together.  Hence there are $2^4 = 16$ ways to place 4 distinguishable balls into 2 distinguishable boxes.\n\nWe then divide by the number of ways to arrange the boxes.  There are $2!=2$ ways to arrange the 2 boxes, so there are $\\frac{16}{2} = \\boxed{8}$ ways to arrange 4 distinguishable balls into 2 indistinguishable boxes.\n\nNote: This method does not generalize if there are more than 2 boxes."
+}

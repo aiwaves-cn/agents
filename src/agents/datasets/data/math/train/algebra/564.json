@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangular cow pasture is enclosed on three sides by a fence and the fourth side is part of the side of a barn that is $400$ feet long. The fence costs $\\$5$ per foot, and $\\$1,\\!200$ altogether. To the nearest foot, find the length of the side parallel to the barn that will maximize the area of the pasture.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let the sides perpendicular to the barn be of length $x$. Notice that there are a total of $1200/5=240$ feet of fencing. Therefore, the side parallel to the barn has length $240-2x$, so the area to be maximized is $240x-2x^2$. Completing the square results in $-2(x-60)^2+7200$, which is maximized when $x=60$. Therefore, the side parallel to the barn has length $240-2(60)=\\boxed{120}$ feet."
+}

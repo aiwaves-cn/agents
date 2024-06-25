@@ -1,0 +1,6 @@
+{
+    "problem": "I have two 20-sided dice that each have 4 maroon sides, 7 teal sides, 8 cyan sides, and one sparkly side. If I roll both dice, what is the probability they come up the same?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "This problem requires a little bit of casework.  There are four ways in which the dice can both show the same thing: if they both show maroon, both show teal, both show cyan or both show sparkly. The probability of getting maroon is $\\dfrac{4}{20}$, so the probability that they will both show maroon is $\\left(\\dfrac{4}{20}\\right)^2=\\dfrac{16}{400}$. Similarly, the probability of getting teal is $\\dfrac{7}{20}$, so the probability that they will both show teal is $\\left(\\dfrac{7}{20}\\right)^2=\\dfrac{49}{400}$, the probability of getting cyan is $\\dfrac{8}{20}$, so the probability that they will both show cyan is $\\left(\\dfrac{8}{20}\\right)^2=\\dfrac{64}{400}$ and the probability of getting sparkly is $\\dfrac{1}{20}$, so the probability that they will both get sparkly is $\\left(\\dfrac{1}{20}\\right)^2=\\dfrac{1}{400}$. So our answer is $\\dfrac{16}{400}+\\dfrac{49}{400}+\\dfrac{64}{400}+\\dfrac{1}{400}=\\frac{130}{400}=\\boxed{\\dfrac{13}{40}}$."
+}

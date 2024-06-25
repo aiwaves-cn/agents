@@ -1,0 +1,6 @@
+{
+    "problem": "The equation of a circle which has a center at $(-5,2)$ can be written as $Ax^2 + 2y^2 + Bx + Cy = 40.$ Let $r$ be the radius of the circle. Find $A+B+C+r.$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "As the center of the circle is at the point $(-5,2)$ and its radius is $r$, the equation for the circle is $(x+5)^2+(y-2)^2=r^2$. Expanding this, \\begin{align*}\nx^2+10x+25+y^2-4y+4 &= r^2 \\\\\nx^2 + y^2+10x-4y &= r^2-29.\n\\end{align*}Now, this equation must match the form $Ax^2 + 2y^2 + Bx + Cy = 40,$ so we see that we can multiply the above by two so that the coefficients for $y^2$ match: $$2x^2 + 2y^2+20x-8y= 2r^2-58.$$Thus, $A=2$, $B=20$, and $C=-8$. Also, $2r^2-58=40 \\Rightarrow 2r^2=98 \\Rightarrow r^2=49$. As $r$ is the radius, it must be positive, so $r=7$.\nTherefore, $A+B+C+r= 2+20-8+7= \\boxed{21}$."
+}

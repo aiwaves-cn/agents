@@ -1,0 +1,6 @@
+{
+    "problem": "If $z$ is a complex number such that\n\\[\n  z + z^{-1} = \\sqrt{3},\n\\]what is the value of\n\\[\n  z^{2010} + z^{-2010} \\, ? \n\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We start by trying to express $z$ in a more convenient form.\nWe are given that $ z + z^{-1} = \\sqrt{3} = \\frac{2\\sqrt{3}}{2} = 2 \\cos{\\frac{\\pi}{6}}$\nSo we know that $z$ is $\\text{cis}{\\frac{\\pi}{6}}$ or $\\text{cis}{-\\frac{\\pi}{6}}$\n\nSay that $z = \\text{cis}{\\frac{\\pi}{6}}$. Then,\n$$z^{2010} = \\left(\\text{cis}{\\frac{\\pi}{6}}\\right)^{2010} = \\text{cis}{\\frac{2010\\pi}{6}} = \\text{cis}335\\pi = \\text{cis}\\pi = -1.$$Then $z^{-1} = -1^{-1} = -1$. So\n$$z^{2010} + z^{-2010} = -1 + (-1) = \\boxed{-2}.$$Similarly, if $z = \\text{cis}{-\\frac{\\pi}{6}}$. Then,\n$$z^{2010} = \\left(\\text{cis}{-\\frac{\\pi}{6}}\\right)^{2010} = \\text{cis}{-\\frac{2010\\pi}{6}} = \\text{cis}-335\\pi = \\text{cis}-\\pi = -1.$$Then $z^{-1} = -1^{-1} = -1$. So\n$$z^{2010} + z^{-2010} = -1 + (-1) = \\boxed{-2}.$$"
+}

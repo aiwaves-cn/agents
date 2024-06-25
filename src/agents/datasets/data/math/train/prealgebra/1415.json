@@ -1,0 +1,6 @@
+{
+    "problem": "A coin is flipped eight times, and the sequence of heads and tails occurring is recorded. How many distinct sequences are possible?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Each flip can result in either a heads or a tails. Thus, there are two choices for each flip. Since there are eight flips total, $2^8 = \\boxed{256}$ distinct sequences are possible."
+}

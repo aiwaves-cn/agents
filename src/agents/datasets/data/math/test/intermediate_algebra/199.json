@@ -1,0 +1,6 @@
+{
+    "problem": "Find the quotient when $x^9 + 1$ is divided by $x - 1.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can perform long division.  We can also write\n\\begin{align*}\n\\frac{x^9 + 1}{x - 1} &= \\frac{(x^9 - 1) + 2}{x - 1} \\\\\n&= \\frac{x^9 - 1}{x - 1} + \\frac{2}{x - 1} \\\\\n&= x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1 + \\frac{2}{x - 1}.\n\\end{align*}Thus, the quotient is $\\boxed{x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1}.$"
+}

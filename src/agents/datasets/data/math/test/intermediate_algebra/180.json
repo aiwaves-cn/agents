@@ -1,0 +1,6 @@
+{
+    "problem": "If the function $f$ defined by\n\\[f(x) = \\frac{cx}{2x + 3},\\]where $c$ is a constant and $x \\neq -\\frac{3}{2},$ satisfies $f(f(x)) = x$ for all $x \\neq -\\frac{3}{2},$ then find $c.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nf(f(x)) &= f \\left( \\frac{cx}{2x + 3} \\right) \\\\\n&= \\frac{c \\cdot \\frac{cx}{2x + 3}}{2 \\cdot \\frac{cx}{2x + 3} + 3} \\\\\n&= \\frac{c^2 x}{2cx + 3(2x + 3)} \\\\\n&= \\frac{c^2 x}{(2c + 6)x + 9}.\n\\end{align*}We want this to reduce to $x,$ so\n\\[\\frac{c^2 x}{(2c + 6) x + 9} = x.\\]Then $c^2 x = (2c + 6) x^2 + 9x.$  Matching coefficients, we get $2c + 6 = 0$ and $c^2 = 9.$  Thus, $c = \\boxed{-3}.$"
+}

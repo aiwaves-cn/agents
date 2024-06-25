@@ -1,0 +1,6 @@
+{
+    "problem": "For how many integers $n$ between 1 and 11 (inclusive) is $\\frac{n}{12}$ a repeating decimal?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Recall that a simplified fraction has a terminating decimal representation if and only if the denominator is divisible by no primes other than 2 or 5.\n\nThe prime factorization of $12$ is $2^2 \\cdot 3$. Therefore, $n/12$ terminates if and only if the numerator has a factor of $3$ in it to cancel out the $3$ in the denominator. Since $3$ integers from $1$ to $11$ are divisible by $3$, there are $11-3=\\boxed{8}$ integers $n$ for which the fraction is a repeating decimal."
+}

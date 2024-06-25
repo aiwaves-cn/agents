@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit of $13^{2003}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Powers of 13 have the same units digit as the corresponding powers of 3; and $$\n3^1 = 3, \\quad 3^2 = 9, \\quad 3^3 = 27, \\quad 3^4 = 81, \\quad\\text{and}\\quad 3^5 = 243.\n$$Since the units digit of $3^1$ is the same as the units digit of $3^5$, units digits of powers of 3 cycle through $3, 9, 7,$ and $1$. Hence the units digit of $3^{2000}$ is $1$, so the units digit of $3^{2003}$ is $\\boxed{7}$. The same is true of the units digit of $13^{2003}$."
+}

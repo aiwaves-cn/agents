@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 5 different keys be placed on a keychain?  (Two arrangements are considered the same if one can be rotated or flipped to be identical to the other.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $5!$ ways to place the keys on the keychain, but we must divide by 5 for rotational symmetry (5 rotations for each arrangement), and by 2 for reflectional symmetry (we can flip the keychain to get the same arrangement).  The answer is $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$."
+}

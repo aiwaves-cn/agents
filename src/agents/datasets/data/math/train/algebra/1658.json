@@ -1,0 +1,6 @@
+{
+    "problem": "Joanie takes a $\\$6,\\!000$ loan to pay for her car.  The annual interest rate on the loan is $12\\%$.  She makes no payments for 4 years, but has to pay back all the money she owes at the end of 4 years. How much more money will she owe if the interest compounds quarterly than if the interest compounds annually?  Express your answer as a dollar value to the nearest cent.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If the interest compounds quarterly, she owes \\[\\left(1 + \\frac{0.12}{4}\\right)^{4\\cdot 4}(\\$6,\\!000)\\approx \\$9,\\!628.24.\\]  If it compounds annually, she owes \\[(1+0.12)^4(\\$6,\\!000)\\approx \\$9,\\!441.12.\\]  Therefore, if the interest compounds quarterly, she owes \\[\\$9,\\!628.24 - \\$9,\\!441.12 = \\boxed{\\$187.12}\\text{ more.}\\]"
+}

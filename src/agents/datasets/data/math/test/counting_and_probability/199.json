@@ -1,0 +1,6 @@
+{
+    "problem": "What is the shortest distance that can be travelled if you start at any point, $A$, $B$, $C$, or $D$, and visit the other three points once?\n\n[asy]\npair A,B,C, D;\nA = (-3,3); B = (3,0); C = (0, -4); D = (0,0);\ndraw(D--B--C--cycle); draw(D--A--B--cycle);draw(D--A--C--cycle);\nlabel(\"$A$\", A, NW);label(\"$B$\", B, E); label(\"$C$\", C, S);label(\"$D$\", D, NE);\nlabel(\"3\", D--B, S); label(\"6\", A--B, NE); label(\"6\", A--C, SW); label(\"4\", D--C, NW+N);\nlabel(\"5\", A--D, SE+NE); label(\"5\", C--B, E);\n[/asy]",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "To visit all four points, we notice that we must travel along at least three different segments. The sum of the shortest three segments is $3+4+5=12$, but we quickly notice that it is impossible to start at one point and visit the other three points by traveling on a path with length $12$ ($DB$, $BC$, and $CD$ do not let us visit point $A$, and it is not possible to travel on $AD$, $CD$, and $BD$ in a continuous path). We now look for a path with length $13$ and notice that traveling from point $A$ to $D$ to $B$ to $C$ works. Alternatively, $B$ to $D$ to $C$ to $A$ also works. Both paths have length $\\boxed{13}$."
+}

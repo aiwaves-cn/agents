@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x,$ where\n\\[\\frac{x}{x - a} + \\frac{x - b}{x - a - b} = \\frac{x - a}{x - 2a} + \\frac{x + a - b}{x - b}.\\]Assume that $2a > x > b > a > 0.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can re-write the given equation as\n\\[\\frac{x - a + a}{x - a} + \\frac{x - a - b + a}{x - a - b} = \\frac{x - 2a + a}{x - 2a} + \\frac{x - b + a}{x - b},\\]so\n\\[1 + \\frac{a}{x - a} + 1 + \\frac{a}{x - a - b} = 1 + \\frac{a}{x - 2a} + 1 + \\frac{a}{x - b}.\\]Then\n\\[\\frac{1}{x - a} + \\frac{1}{x - a - b} = \\frac{1}{x - 2a} + \\frac{1}{x - b}.\\]Combining the fractions on each side, we get\n\\[\\frac{2x - 2a - b}{(x - a)(x - a - b)} = \\frac{2x - 2a - b}{(x - 2a)(x - b)}.\\]Cross-multiplying, we get\n\\[(2x - 2a - b)(x - 2a)(x - b) = (2x - 2a - b)(x - a)(x - a - b),\\]so\n\\[(2x - 2a - b)[(x - 2a)(x - b) - (x - a)(x - a - b)] = 0.\\]This simplifies to $a(b - a)(2x - 2a - b) = 0.$  Therefore,\n\\[x = \\boxed{\\frac{2a + b}{2}}.\\]"
+}

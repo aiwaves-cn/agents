@@ -1,0 +1,6 @@
+{
+    "problem": "Ramanujan and Hardy played a game where they both picked a complex number. If the product of their numbers was $32-8i$, and Hardy picked $5+3i$, what number did Ramanujan pick?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let Hardy's number be $h$ and Ramanujan's be $r$. We have the equations: \\begin{align*}\nrh&=32-8i,\\\\\nh&=5+3i.\n\\end{align*} Thus, \\[r=\\frac{32-8i}{5+3i}.\\] Multiplying top and bottom by the conjugate of $5+3i$, we have \\[r=\\frac{(32-8i)(5-3i)}{34}\\] or  \\[r=\\frac{136-136i}{34}=\\boxed{4-4i}\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{M} = \\begin{pmatrix} 2 & 7 \\\\ -3 & -1 \\end{pmatrix}.$  There exist scalars $p$ and $q$ such that\n\\[\\mathbf{M}^2 = p \\mathbf{M} + q \\mathbf{I}.\\]Enter the ordered pair $(p,q).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{M}^2 = \\begin{pmatrix} 2 & 7 \\\\ -3 & -1 \\end{pmatrix} \\begin{pmatrix} 2 & 7 \\\\ -3 & -1 \\end{pmatrix} = \\begin{pmatrix} -17 & 7 \\\\ -3 & -20 \\end{pmatrix},$ we seek $p$ and $q$ such that\n\\[\\begin{pmatrix} -17 & 7 \\\\ -3 & -20 \\end{pmatrix} = p \\begin{pmatrix} 2 & 7 \\\\ -3 & -1 \\end{pmatrix} + q \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}.\\]Thus, we want $p$ and $q$ to satisfy $2p + q = -17,$ $7p = 7,$ $-3p = -3,$ and $-p + q = -20.$  Solving, we find $(p,q) = \\boxed{(1,-19)}.$"
+}

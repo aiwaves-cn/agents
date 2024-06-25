@@ -1,0 +1,6 @@
+{
+    "problem": "Sarah is trying to fence a rectangular area containing at least 100 sq. ft while using the least amount of material to build the fence. The length of the rectangular area should be 15 ft longer than the width. What should the width, in ft, be?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can write the problem as the inequality $w(w+15)\\ge100$. Distributing on the left-hand side, subtracting 100 from both sides, and factoring, we get \\begin{align*}\nw(w+15)&\\ge100 \\quad \\Rightarrow \\\\\nw^2+15w-100&\\ge 0 \\quad \\Rightarrow \\\\\n(w-5)(w+20)&\\ge 0.\n\\end{align*} The roots are $w=5$ and $w=-20$. We can't have a width of -20 ft, so the smallest width possible while still having an area of at least 100 sq. ft is $\\boxed{5}$ ft."
+}

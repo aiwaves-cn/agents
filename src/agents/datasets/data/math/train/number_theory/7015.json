@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive integer whose cube ends in $888$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "$n^3 \\equiv 888 \\pmod{1000} \\implies n^3 \\equiv 0 \\pmod 8$ and $n^3 \\equiv 13 \\pmod{125}$. $n \\equiv 2 \\pmod 5$ due to the last digit of $n^3$. Let $n = 5a + 2$. By expanding, $125a^3 + 150a^2 + 60a + 8 \\equiv 13 \\pmod{125} \\implies 5a^2 + 12a \\equiv 1 \\pmod{25}$.\nBy looking at the last digit again, we see $a \\equiv 3 \\pmod5$, so we let $a = 5a_1 + 3$ where $a_1 \\in \\mathbb{Z^+}$. Plugging this in to $5a^2 + 12a \\equiv 1 \\pmod{25}$ gives $10a_1 + 6 \\equiv 1 \\pmod{25}$. Obviously, $a_1 \\equiv 2 \\pmod 5$, so we let $a_1 = 5a_2 + 2$ where $a_2$ can be any non-negative integer.\nTherefore, $n = 2 + 5(3+ 5(2+5a_2)) = 125a_2 + 67$. $n^3$ must also be a multiple of $8$, so $n$ must be even. $125a_2 + 67 \\equiv 0 \\pmod 2 \\implies a_2 \\equiv 1 \\pmod 2$. Therefore, $a_2 = 2a_3 + 1$, where $a_3$ is any non-negative integer. The number $n$ has form $125(2a_3+1)+67 = 250a_3+192$. So the minimum $n = \\boxed{192}$."
+}

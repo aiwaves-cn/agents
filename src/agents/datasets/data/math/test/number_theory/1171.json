@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when the base 4 number $120301232_4$ is divided by 8? Express your answer in base 10.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The base 4 number $b_k b_{k - 1} \\dots b_2 b_1 b_0$ is equal to $4^k b_k + 4^{k - 1} b_{k - 1} + \\dots + 16b_2 + 4b_1 + b_0$, so when this number is divided by 8, it leaves the same remainder as when the number $4b_1 + b_0$ is divided by 8 (since all higher terms are divisible by 8).  Hence, when the number $120301232_4$ leaves the same remainder as $32_4$, which is equal to $4 \\cdot 3 + 2 = 14$.  When 14 is divided by 8, the remainder is $\\boxed{6}$."
+}

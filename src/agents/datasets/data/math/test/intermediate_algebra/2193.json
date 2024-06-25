@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We hope that we can write $52 + 6\\sqrt{43}$ as the square of some expression of the form $a + b\\sqrt{43},$ where $a$ and $b$ are integers. To find $a$ and $b,$ we write \\[52 + 6\\sqrt{43} = (a+b\\sqrt{43})^2 = (a^2 + 43b^2) + 2ab\\sqrt{43}.\\]Therefore, $a^2 + 43b^2 = 52$ and $2ab = 6.$ Testing pairs $(a, b)$ such that $2ab=6,$ we find a solution, $(a,b)=(3,1),$ so indeed, \\[\\sqrt{52+6\\sqrt{43}} = 3+\\sqrt{43}.\\]Similarly, we have \\[\\sqrt{52-6\\sqrt{43}} = -3+\\sqrt{43}\\](remembering to take the positive square root). Now we can compute the answer: \\[\\begin{aligned} (52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2} &= (52+6\\sqrt{43})(3+\\sqrt{43}) - (52-6\\sqrt{43})(-3+\\sqrt{43}) \\\\ &= 2 \\cdot 52 \\cdot 3 + 2 \\cdot 6 \\cdot 43 \\\\ &= \\boxed{828}. \\end{aligned}\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $r$ be a real number, $|r| < 2,$ and let $z$ be a complex number such that\n\\[z + \\frac{1}{z} = r.\\]Find $|z|.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "From the equation $z + \\frac{1}{z} = r,$ $z^2 + 1 = rz,$ so\n\\[z^2 - rz + 1 = 0.\\]By the quadratic equation,\n\\[z = \\frac{r \\pm \\sqrt{r^2 - 4}}{2} = \\frac{r \\pm i \\sqrt{4 - r^2}}{2}.\\]Then\n\\[|z| = \\sqrt{\\left( \\frac{r}{2} \\right)^2 + \\left( \\frac{\\sqrt{4 - r^2}}{2} \\right)^2} = \\sqrt{\\frac{r^2}{4} + \\frac{4 - r^2}{4}} = \\boxed{1}.\\]"
+}

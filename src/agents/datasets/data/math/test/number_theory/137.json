@@ -1,0 +1,6 @@
+{
+    "problem": "On a true-false test of 100 items, every question that is a multiple of 4 is true, and all others are false. If a student marks every item that is a multiple of 3 false and all others true, how many of the 100 items will be correctly answered?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The student will answer a question correctly if\n\nCase 1: both the student and the answer key say it is true. This happens when the answer is NOT a multiple of 3 but IS a multiple of 4.\n\nCase 2. both the student and the answer key say it is false. This happens when the answer IS a multiple of 3 but is NOT a multiple of 4.\n\nSince the LCM of 3 and 4 is 12, the divisibility of numbers (in our case, correctness of answers) will repeat in cycles of 12. In the first 12 integers, $4$ and $8$ satisfy Case 1 and $3,6,$ and $9$ satisfy Case 2, so for every group of 12, the student will get 5 right answers. Since there are 8 full groups of 12 in 100, the student will answer at least $8 \\cdot 5 = 40$ questions correctly. However, remember that we must also consider the leftover numbers 97, 98, 99, 100 and out of these, $99$ and $100$ satisfy one of the cases. So our final number of correct answers is $40 + 2 = \\boxed{42}$."
+}

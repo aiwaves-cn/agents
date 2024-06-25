@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest common divisor of all of the members of the set containing all numbers that are the product of four consecutive positive integers?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "These numbers are all in the form $n(n+1)(n+2)(n+3)\\pmod 4$, there will be one number of each residue, so one of the numbers will be divisible by 2 and another divisible by 4, leaving the product divisible by 8. Similarly, one of the numbers will be $0\\mod 3$, so the product will be divisible by 3. The GCD must therefore be divisible by $3\\cdot8=24$. It also must be less than or equal to the smallest number in the set, $1\\cdot2\\cdot3\\cdot4=24$, so it must be $\\boxed{24}$ exactly."
+}

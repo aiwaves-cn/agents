@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x$ and $y$ are nonzero real numbers such that $x+\\frac{1}{y}=10$ and $y+\\frac{1}{x}=\\frac{5}{12},$ find all possible values for $x.$\n\n(Enter your answer as a comma-separated list.)",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying the first equation by $y$ and the second equation by $x,$ we get \\[\\begin{aligned} xy+1 &= 10y, \\\\ xy + 1 &= \\tfrac{5}{12} x. \\end{aligned}\\]Then $10y = \\tfrac{5}{12}x,$ so $y = \\tfrac{1}{10} \\cdot \\tfrac{5}{12} x = \\tfrac{1}{24}x.$ Substituting into the first equation, we get \\[x + \\frac{1}{\\frac{1}{24}x} = 10,\\]or $x + \\frac{24}{x} = 10,$ which rearranges to the quadratic $x^2 - 10x + 24 = 0.$ This quadratic factors as $(x-4)(x-6) = 0,$ so the possible values for $x$ are $\\boxed{4, 6}.$ (These give corresponding $y$-values $y = \\tfrac16, \\tfrac14,$ respectively, which, we can check, are valid solutions to the original system of equations.)"
+}

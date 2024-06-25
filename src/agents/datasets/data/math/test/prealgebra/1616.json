@@ -1,0 +1,6 @@
+{
+    "problem": "Four standard six-sided dice are to be rolled. What is the probability that the product of the numbers on the top faces will be prime? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The product of four positive integers is prime only if three of the integers are 1 and the fourth is a prime number.  Therefore, of the $6^4$ outcomes for the roll of four dice, only the outcomes $(1,1,1,p)$, $(1,1,p,1)$, $(1,p,1,1)$, and $(p,1,1,1)$ for $p=2$, $3$, or $5$ give a prime product.  The probability of achieving a prime product is therefore \\[\n\\frac{12}{6\\cdot6\\cdot6\\cdot6}=\\frac{2}{6\\cdot6\\cdot6}=\\frac{1}{3\\cdot6^2}=\\boxed{\\frac{1}{108}}.\n\\]"
+}

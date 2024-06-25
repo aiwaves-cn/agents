@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real numbers $x$ such that \\[\nx^2 + \\left\\lfloor \\frac x2 \\right\\rfloor + \\left\\lfloor \\frac x3\n\\right\\rfloor = 10.\n\\]Enter all the solutions, separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Evidently $x^2$ must be an integer. Well, there aren't that many things to check, are there? Among positive $x$, $\\sqrt 8$ is too small and $\\sqrt 9$ is too big; among negative $x$, $-\\sqrt{15}$ is too small and $-\\sqrt{13}$ is too big. The only solution is $\\boxed{-\\sqrt{14}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If two distinct members of the set $\\{ 3, 7, 21, 27, 35, 42, 51 \\}$ are randomly selected and multiplied, what is the probability that the product is a multiple of 63? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "In order to produce a multiple of 63, we must choose at least two factors of 3 and one factor of 7 among the prime factorizations of the two numbers we choose.  We count the number of ways in which we can do this by considering the four multiples of 7 in our list.  There are two which are not multiples of 3 (7 and 35) and two that are multiples of 3 but not 9 (21 and 42).  Each of 7 and 35 can be paired with 27 to give a multiple of 63, so that's two successes.  Each of 21 and 42 can be paired with any of 3, 27, or 51, which gives another $2\\cdot 3 = 6$ successes.  Finally, we can choose both 21 and 42, and we have a total of $2+6+1 = 9$ successes.\n\nSince there are $\\binom{7}{2}=21$ total ways to choose a pair of numbers from the list, the probability that a randomly chosen pair of numbers will have a product which is a multiple of 63 is $\\frac{9}{21}=\\boxed{\\frac{3}{7}}$."
+}

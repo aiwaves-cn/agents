@@ -1,0 +1,6 @@
+{
+    "problem": "For $-25 \\le x \\le 25,$ find the maximum value of $\\sqrt{25 + x} + \\sqrt{25 - x}.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By QM-AM,\n\\[\\frac{\\sqrt{25 + x} + \\sqrt{25 - x}}{2} \\le \\sqrt{\\frac{25 + x + 25 - x}{2}} = 5,\\]so $\\sqrt{25 + x} + \\sqrt{25 - x} \\le 10.$\n\nEquality occurs at $x = 0,$ so the maximum value is $\\boxed{10}.$"
+}

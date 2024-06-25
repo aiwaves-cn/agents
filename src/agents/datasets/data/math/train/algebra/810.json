@@ -1,0 +1,6 @@
+{
+    "problem": "If the system of equations\n\n\\begin{align*}\n2x-y&=a,\\\\\n3y-6x &=b.\n\\end{align*}has a solution, find $\\frac{a}{b},$ assuming $b \\neq 0.$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "If we multiply the first equation by $-3$, we obtain\n\n$$3y-6x=-3a.$$Since we also know that $3y-6x=b$, we have\n\n$$-3a=b\\Rightarrow\\frac{a}{b}=\\boxed{-\\frac{1}{3}}.$$"
+}

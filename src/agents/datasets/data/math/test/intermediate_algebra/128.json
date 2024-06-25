@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)$ be an odd function, and let $g(x)$ be an even function.  Is $f(f(g(f(g(f(x))))))$ even, odd, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[f(f(g(f(g(f(-x)))))) = f(f(g(f(g(-f(x)))))) = f(f(g(f(g(f(x)))))),\\]so the function is $\\boxed{\\text{even}}.$\n\nMore generally, if we have a composition of functions, and at least one of the functions is even, then the whole composition of functions is even."
+}

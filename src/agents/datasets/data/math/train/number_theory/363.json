@@ -1,0 +1,6 @@
+{
+    "problem": "When $x$ is divided by each of $4$, $5$, and $6$, remainders of $3$, $4$, and $5$ (respectively) are obtained. What is the smallest possible positive integer value of $x$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that $x+1$ is divisible by $4$, $5$, and $6$. Therefore, it must be divisible by their least common multiple, which is $60$. Therefore, the smallest value for $x+1$ is $60$ and the smallest possible value for $x$ is $\\boxed{59}$."
+}

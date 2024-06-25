@@ -1,0 +1,6 @@
+{
+    "problem": "In a class of 28 students, the teacher selects four people at random to participate in a geography contest. What is the probability that this group of four students includes at least two of the top three geography students in the class? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We count the number of ways to choose a group of four students including at least two of the top three geography students.  This is just  $\\binom{3}{2}\\cdot \\binom{25}{2} + \\binom{3}{3}\\cdot\\binom{25}{1} = 925$, since we can choose either 2 or 3 of the top students to be in this group.  In all, there are $\\binom{28}{4} = 20475$ groups of four students.  Thus our desired probability is $\\frac{925}{20475} = \\boxed{\\frac{37}{819}}$."
+}

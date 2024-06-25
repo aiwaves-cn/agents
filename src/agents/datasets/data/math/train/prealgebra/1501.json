@@ -1,0 +1,6 @@
+{
+    "problem": "Adam and Simon start on bicycle trips from the same point at the same time. Adam travels east at 8mph and Simon travels south at 6mph. After how many hours are they 60 miles apart?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "If Adam travels east and Simon travels south, then their paths are perpendicular and their distance apart is the hypotenuse of a right triangle. Let $x$ be the number of hours it takes for Adam and Simon to be $60$ miles apart. Then Adam has traveled $8x$ miles and Simon has traveled $6x$ miles. By the Pythagorean Theorem, we have  \\begin{align*}\n\\sqrt{(8x)^2+(6x)^2}&=60\\quad\\Rightarrow\\\\\n\\sqrt{100x^2}&=60\\quad\\Rightarrow\\\\\n10x&=60\\quad\\Rightarrow\\\\\nx&=6.\n\\end{align*}They are $60$ miles apart after $\\boxed{6}$ hours."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many two-digit prime numbers can be formed by choosing two different digits from the set $\\{2, 7, 8, 9\\}$ to be used as the tens digit and units digit?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We immediately note that if 2 is the units digit, then the number is composite. If 2 is the tens digit, only 29 is prime. If 7 is the tens digit, only 79 is prime. If 8 is the tens digit, only 89 is prime. Finally, if 9 is the tens digit, only 97 is prime. Thus, $\\boxed{4}$ two-digit primes can be formed."
+}

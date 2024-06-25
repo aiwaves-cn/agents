@@ -1,0 +1,6 @@
+{
+    "problem": "Let  \\[f(x) =\n\\begin{cases}\nk(x) &\\text{if }x>2, \\\\\n2+(x-2)^2&\\text{if }x\\leq2.\n\\end{cases}\n\\]Find the function $k(x)$ such that $f$ is its own inverse.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We want to have that $f(f(x))=x$ for every $x.$ Since $f(f(2))=2,$ we know $f$ is its own inverse at $x=2,$ so we can restrict our attention to $x\\neq 2.$\n\nSince $f$ applied to any number less than $2$ returns a number greater than $2,$ and we can get all numbers greater than $2$ this way, applying $f$ to any number greater than $2$ must give a number less than $2.$ Therefore $k(x)<2$ for any $x>2.$\n\nIf $x>2$ and $f$ is its own inverse then \\[x=f(f(x))=f(k(x))=2+\\left(k(x)-2\\right)^2,\\]where in the last step we used that $k(x)<2.$ Subtracting $2$ from both sides gives \\[\\left(k(x) - 2\\right)^2 = x-2.\\]Next, we recall that we must have $k(x) < 2,$ so $k(x) - 2$ must be the negative number whose square is $x-2.$  That is, we have $k(x) - 2 = -\\sqrt{x-2}.$\n\nSolving this for $k(x)$ gives  \\[k(x)=\\boxed{-\\sqrt{x-2}+2}.\\]"
+}

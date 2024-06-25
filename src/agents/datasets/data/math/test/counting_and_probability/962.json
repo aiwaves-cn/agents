@@ -1,0 +1,6 @@
+{
+    "problem": "We call a number a descending number if each digit is strictly smaller than the digit that comes before it.  For example, 863 is a descending number.  How many 3-digit descending numbers are there?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "For every 3 different digits, there is one corresponding descending number, which is just the digits in descending order.  So the answer is the number of combinations of three different digits, which is  $\\binom{10}{3} = \\boxed{120}$."
+}

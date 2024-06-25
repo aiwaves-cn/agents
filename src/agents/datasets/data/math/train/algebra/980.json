@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\nx^2+1 &\\text{ if }x>5, \\\\\n2x-3 &\\text{ if } -5 \\le x \\le 5, \\\\\n3 &\\text{ if } x <-5.\n\\end{array}\n\\right.\\]Find $f(-7)+f(0)+f(7)$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Since $-7<-5$, $f(-7)=3$. Since $-5 \\le 0 \\le 5$, $f(0)=2(0)-3=-3$. Since $7>5$, $f(7)=7^2+1=50$. Therefore, $f(-7)+f(0)+f(-7)=3-3+50=\\boxed{50}$."
+}

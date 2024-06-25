@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of $\\left(\\dfrac{1}{3}\\right) + \\left(\\dfrac{1}{3}\\right)^2 + \\left(\\dfrac{1}{3}\\right)^3 + \\left(\\dfrac{1}{3}\\right)^4$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "This 4-term geometric series has first term $a_0 = \\frac13$ and ratio $r=\\frac13$, so it has value  \\begin{align*}\n\\dfrac{\\dfrac13\\left(1-\\left(\\dfrac13\\right)^{4}\\right)}{1-\\frac13} &= \\dfrac{\\dfrac13(1-\\left(\\dfrac13\\right)^{4})}{\\dfrac23}\\\\\n&=\\dfrac12\\left(1-\\left(\\dfrac13\\right)^{4}\\right)\\\\\n&=\\dfrac12\\left(\\dfrac{80}{81}\\right)\\\\\n&=\\boxed{\\dfrac{40}{81}}.\n\\end{align*}"
+}

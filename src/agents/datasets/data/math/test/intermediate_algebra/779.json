@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $x \\in [-5,-3]$ and $y \\in [2,4]$. What is the smallest possible value of $\\frac{x+y}{x-y}$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Minimizing $\\frac{x + y}{x - y}$ is equivalent to minimizing\n\\[\\frac{x + y}{x - y} + 1 = \\frac{2x}{x - y} = \\frac{-2x}{y - x}.\\]Note that $-2x$ and $y - x$ are always positive, so to minimize this expression, we take $y = 4,$ the largest possible value of $y.$\n\nThen minimizing $\\frac{x + 4}{x - 4}$ is equivalent to minimizing\n\\[\\frac{x + 4}{x - 4} - 1 = \\frac{8}{x - 4} = -\\frac{8}{4 - x}.\\]Note that $4 - x$ is always positive, so to minimize this expression, we take $x = -3.$  Hence, the minimum value is $\\frac{-3 + 4}{-3 - 4} = \\boxed{-\\frac{1}{7}}.$"
+}

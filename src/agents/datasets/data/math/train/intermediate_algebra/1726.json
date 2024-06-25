@@ -1,0 +1,6 @@
+{
+    "problem": "Let $b_1$, $b_2$, $b_3$, $c_1$, $c_2$, and $c_3$ be real numbers such that for every real number $x$, we have\n\\[\n  x^6 - x^5 + x^4 - x^3 + x^2 - x + 1 = (x^2 + b_1 x + c_1)(x^2 + b_2 x + c_2)(x^2 + b_3 x + c_3). \n\\]Compute $b_1 c_1 + b_2 c_2 + b_3 c_3$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $P$ be the polynomial defined by $P(x) =   x^6 - x^5 + x^4 - x^3 + x^2 - x + 1$. Note that $(x+1)P(x) = x^7 + 1$. So the roots of $P$ are on the unit circle. Hence the roots of each quadratic factor $x^2 + b_kx + c_k$ are also on the unit circle. Because each quadratic factor has real coefficients, its roots come in conjugate pairs. Because the roots are on the unit circle, each $c_k$ is $1$. When we expand the product of the three quadratic factors, we get a polynomial of the form\n$$x^6 + (b_1 + b_2 + b_3)x^5 + \\dotsb $$Because the coefficient of $x^5$ in $P$ is $-1$, we see that $b_1+b_2+b_3 = -1$. So we have\n$$b_1c_1+b_2c_2+b_3c_3 = b_1+b_2+b_3 = \\boxed{-1}$$."
+}

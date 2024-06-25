@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $129^{34}+96^{38}$ is divided by $11$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We use the property that $a \\equiv b \\pmod{m}$ implies $a^c \\equiv b^c \\pmod{m}$.\n\nSince $129 \\equiv -3 \\pmod{11}$ and $96 \\equiv -3 \\pmod{11}$, we have  $$129^{34}+96^{38} \\equiv (-3)^{34}+(-3)^{38} \\equiv 3^{34}+3^{38} \\pmod{11}.$$Since $3^5 \\equiv 1 \\pmod{11},$ we can see that $3^{34} = (3^5)^{6} \\cdot 3^4$ and $3^{38} = (3^5)^{7} \\cdot 3^3.$\n\nThen,  \\begin{align*}\n129^{34}+96^{38}&\\equiv (3^5)^{6} \\cdot 3^4 + (3^5)^{7} \\cdot 3^3\\\\\n& \\equiv 3^4 + 3^3\\\\\n& \\equiv 81 + 27\\\\\n& \\equiv 108 \\\\\n&\\equiv \\boxed{9} \\pmod{11}.\n\\end{align*}"
+}

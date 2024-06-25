@@ -1,0 +1,6 @@
+{
+    "problem": "Rationalize the denominator of $\\frac{2}{3\\sqrt{5} + 2\\sqrt{11}}$ and write your answer in the form $\\displaystyle \\frac{A\\sqrt{B} + C\\sqrt{D}}{E}$, where $B < D$, the fraction is in lowest terms and all radicals are in simplest radical form. What is $A+B+C+D+E$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The problem simplifies slightly if we notice that $3\\sqrt{5} = \\sqrt{9 \\cdot 5} = \\sqrt{45}$, and $2\\sqrt{11} = \\sqrt{4 \\cdot 11} = \\sqrt{44}$. Writing the denominator this way, we have \\[\n\\frac{2}{\\sqrt{45} + \\sqrt{44}} = \\frac{2}{\\sqrt{45} + \\sqrt{44}} \\cdot \\frac{\\sqrt{45} - \\sqrt{44}}{\\sqrt{45} - \\sqrt{44}} = 2(\\sqrt{45} - \\sqrt{44}),\n\\]since $45 - 44 = 1$ so the denominator is just 1. Rewriting what's left in simplest radical form again, we have $6 \\sqrt{5} - 4 \\sqrt{11}$. Since $5 < 11$, we have $B = 5$, and filling in the rest, $A = 6$, $C = -4$, $D = 11$, and $E = 1$ (since there is no denominator, we just take it to be 1). Thus $A+B+C+D+E = \\boxed{19}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A number is chosen at random from the set of consecutive natural numbers $\\{1, 2, 3, \\ldots, 24\\}$. What is the probability that the number chosen is a factor of $4!$? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The number $4!=24$ has prime factorization $2^33^1$. A factor of 24 must have between zero and three 2's in its prime factorization, and between zero and one 3's in its prime factorization. Therefore, 24 has $(3+1)(1+1)=8$ factors, and the probability that a number randomly chosen from the given set is a factor of 24 is $\\frac{8}{24}=\\boxed{\\frac{1}{3}}$."
+}

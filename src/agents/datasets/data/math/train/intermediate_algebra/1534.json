@@ -1,0 +1,6 @@
+{
+    "problem": "Define\n\\[c_k = k + \\cfrac{1}{2k + \\cfrac{1}{2k + \\cfrac{1}{2k + \\dotsb}}}.\\]Calculate $\\sum_{k = 1}^{11} c_k^2.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\[c_k = k + \\cfrac{1}{2k + \\cfrac{1}{2k + \\cfrac{1}{2k + \\dotsb}}} = k + \\cfrac{1}{k + k + \\cfrac{1}{2k + \\cfrac{1}{2k + \\dotsb}}} = k + \\frac{1}{k + c_k}.\\]Then $c_k - k = \\frac{1}{c_k + k},$ so $c_k^2 - k^2 = 1.$  Hence, $c_k^2 = k^2 + 1.$\n\nTherefore,\n\\[\\sum_{k = 1}^{11} c_k^2 = \\sum_{k = 1}^{11} (k^2 + 1).\\]In general,\n\\[\\sum_{k = 1}^n k^2 = \\frac{n(n + 1)(2n + 1)}{6},\\]so\n\\[\\sum_{k = 1}^{11} (k^2 + 1) = \\frac{11 \\cdot 12 \\cdot 23}{6} + 11 = \\boxed{517}.\\]"
+}

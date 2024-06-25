@@ -1,0 +1,6 @@
+{
+    "problem": "Given $\\delta(x) = 3x + 8$ and $\\phi(x) = 8x + 7$, what is $x$ if $\\delta(\\phi(x)) = 7$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can see that $\\delta(\\phi(x)) = 3(8x + 7) + 8 = 24x + 29.$ Therefore, we have that $24x + 29 = 7$, giving us $24x = -22.$ Therefore, $x = \\boxed{-\\dfrac{11}{12}}.$"
+}

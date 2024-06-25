@@ -1,0 +1,6 @@
+{
+    "problem": "The length of the segment between the points $(2a, a-4)$ and $(4, -1)$ is $2\\sqrt{10}$ units. What is the product of all possible values for $a$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "By the distance formula, the distance from $(2a, a-4)$ to $(4, -1)$ is $\\sqrt{(2a-4)^2+((a-4)-(-1))^2}$.  Setting this equal to $2\\sqrt{10}$, we find \\begin{align*}\n(2a-4)^2+(a-3)^2 &= \\sqrt{40}^2\\\\\n4a^2-16a+16+a^2-6a+9&= 40\\\\\n5a^2-22a-15&=0\\\\\n(a-5)(5a+3)&=0\n\\end{align*}The possible values for $a$ are $5$ and $-\\frac{3}{5}$. Thus, the answer is $5\\times-\\frac{3}{5}=\\boxed{-3}$."
+}

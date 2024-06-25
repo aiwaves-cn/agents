@@ -1,0 +1,6 @@
+{
+    "problem": "My three-digit code is 023. Reckha can't choose a code that is the same as mine in two or more of the three digit-positions, nor that is the same as mine except for switching the positions of two digits (so 320 and 203, for example, are forbidden, but 302 is fine). Reckha can otherwise choose any three-digit code where each digit is in the set $\\{0, 1, 2, ..., 9\\}$. How many codes are available for Reckha?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $10^3 = 1000$ possible codes without restrictions.  There are $3\\cdot 9 = 27$ codes that differ in only one spot from mine (three choices for the differing digit and nine choices for its value), 3 codes that result from transposing two digits (have three choices for the fixed digits), and Reckha also can't use my code itself.  Thus Reckha has a total of $1000-27-3-1 = \\boxed{969}$ available codes."
+}

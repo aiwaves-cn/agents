@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be nonzero real numbers, and let\n\\[x = \\frac{b}{c} + \\frac{c}{b}, \\quad y = \\frac{a}{c} + \\frac{c}{a}, \\quad z = \\frac{a}{b} + \\frac{b}{a}.\\]Simplify $x^2 + y^2 + z^2 - xyz.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Substituting and expanding, we get\n\\begin{align*}\nx^2 + y^2 + z^2 - xyz &= \\left( \\frac{b}{c} + \\frac{c}{b} \\right)^2 + \\left( \\frac{a}{c} + \\frac{c}{a} \\right)^2 + \\left( \\frac{a}{b} + \\frac{b}{a} \\right)^2 - \\left( \\frac{b}{c} + \\frac{c}{b} \\right) \\left( \\frac{a}{c} + \\frac{c}{a} \\right) \\left( \\frac{a}{b} + \\frac{b}{a} \\right) \\\\\n&= \\frac{b^2}{c^2} + 2 + \\frac{c^2}{b^2} + \\frac{a^2}{c^2} + 2 + \\frac{c^2}{a^2} + \\frac{a^2}{b^2} + 2 + \\frac{b^2}{a^2} - \\left( \\frac{a^2}{c^2} + \\frac{b^2}{c^2} + 1 + \\frac{b^2}{a^2} + \\frac{a^2}{b^2} + 1 + \\frac{c^2}{b^2} + \\frac{c^2}{a^2} \\right) \\\\\n&= \\boxed{4}.\n\\end{align*}"
+}

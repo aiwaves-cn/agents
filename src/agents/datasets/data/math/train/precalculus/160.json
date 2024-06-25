@@ -1,0 +1,6 @@
+{
+    "problem": "For all values of $x$ for which it is defined, $f(x) = \\cot \\frac{x}{4} - \\cot x$ can be written as\n\\[f(x) = \\frac{\\sin kx}{\\sin \\frac{x}{4} \\sin x}.\\]Find the value of $k.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can write\n\\[\\cot \\frac{x}{4} - \\cot x = \\frac{\\cos \\frac{x}{4}}{\\sin \\frac{x}{4}} - \\frac{\\cos x}{\\sin x} = \\frac{\\cos \\frac{x}{4} \\sin x - \\sin \\frac{x}{4} \\cos x}{\\sin \\frac{x}{4} \\sin x}.\\]From the angle subtraction formula,\n\\begin{align*}\n\\frac{\\cos \\frac{x}{4} \\sin x - \\sin \\frac{x}{4} \\cos x}{\\sin \\frac{x}{4} \\sin x} &= \\frac{\\sin (x - \\frac{x}{4})}{\\sin \\frac{x}{4} \\sin x} \\\\\n&= \\frac{\\sin \\frac{3x}{4}}{\\sin \\frac{x}{4} \\sin x},\n\\end{align*}so $k = \\boxed{\\frac{3}{4}}.$"
+}

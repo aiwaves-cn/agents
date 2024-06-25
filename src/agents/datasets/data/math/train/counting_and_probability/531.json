@@ -1,0 +1,6 @@
+{
+    "problem": "At the end of the year, the Math Club decided to hold an election for which 5 equal officer positions were available. However, 16 candidates were nominated, of whom 7 were past officers. Of all possible elections of the officers, how many will have at least 1 of the past officers?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The number of total ways to choose the 5 officers is $\\binom{16}{5} = 4368$.  Of these, the number of ways to choose the officers without ANY of the past officers is $\\binom{9}{5} = 126$. Thus, the number of ways to choose the 5 officers with at least 1 past officer is $4368 - 126 = \\boxed{4242}.$"
+}

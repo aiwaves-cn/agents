@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$ and $B$ be real numbers such that $\\frac{A}{x-5}+B(x+1)=\\frac{-3x^2+12x+22}{x-5}$. What is $A+B$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We want to break up the rational function on the right into a polynomial and a term with constant numerator. To do this, we notice that $-3x^2+15x$ is a multiple of $x-5$, hence\n\\[\\frac{-3x^2+12x+22}{x-5}=\\frac{-3x^2+15x-15x+12x+22}{x - 5}=-3x+\\frac{-3x+22}{x-5}.\\]Now notice that $-3x+15$ is also a multiple of $x-5$, so\n\\[-3x+\\frac{-3x+22}{x-5}=-3x+\\frac{-3x+15+7}{x-5}=-3x-3+\\frac{7}{x-5}.\\]Thus $B=-3$ and $A=7$, so $A+B=\\boxed{4}$."
+}

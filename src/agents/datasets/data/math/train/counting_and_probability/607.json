@@ -1,0 +1,6 @@
+{
+    "problem": "Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We quickly note that the only way for three dice to sum to 18 is for the face of each to be a 6. So, if each die is a 6, then the probability of this occurring is $\\frac{1}{6^3} = \\boxed{\\frac{1}{216}}$."
+}

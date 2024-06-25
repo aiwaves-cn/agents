@@ -1,0 +1,6 @@
+{
+    "problem": "We have a triangle $\\triangle ABC$ and a point $K$ on $BC$ such that $AK$ is an altitude to $\\triangle ABC$. If $AC = 9,$ $BK = \\sqrt{5}$, and $CK = 4,$ then what is $AB$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We must draw first! [asy]\npair A, B, C, K;\nA = (0, 4.472);\nB = (-2.236, 0);\nC = (4, 0);\nK = (0, 0);\ndraw(A--B--C--cycle);\ndraw(A--K);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$K$\", K, S);\nlabel(\"9\", C--A, NE);\nlabel(\"$\\sqrt{5}$\", B--K, S);\nlabel(\"4\", C--K, S);\ndraw(rightanglemark(A,K,B,10));\n[/asy] We first apply the Pythagorean Theorem to $\\triangle AKC$ to find that $AK^2 = AC^2 - KC^2 = 9^2 - 4^2 = 65.$ Now, we apply the Pythagorean Theorem to $\\triangle AKB$ to find that $AB^2 = AK^2 + BK^2 = 65 + (\\sqrt{5})^2 = 70.$ Therefore, $AB = \\boxed{\\sqrt{70}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the distance between the foci of the hyperbola\n\\[\\frac{x^2}{50} - \\frac{y^2}{22} = 2.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "First, we divide both sides by 2, to get\n\\[\\frac{x^2}{100} - \\frac{y^2}{44} = 1.\\]Then $a^2 = 100$ and $b^2 = 44,$ so $c^2 = 144,$ and $c = 12.$  Therefore, the distance between the foci is $2c = \\boxed{24}.$"
+}

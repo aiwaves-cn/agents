@@ -1,0 +1,6 @@
+{
+    "problem": "Express as a common fraction the reciprocal of $0.\\overline7$.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "To express the number $0.\\overline{7}$ as a fraction, we call it $x$ and subtract it from $10x$: $$\\begin{array}{r r c r@{}l}\n&10x &=& 7&.77777\\ldots \\\\\n- &x &=& 0&.77777\\ldots \\\\\n\\hline\n&9x &=& 7 &\n\\end{array}$$ This shows that $0.\\overline{7} = \\frac{7}{9}$.\n\nTo find the reciprocal, we just switch the numerator and denominator: $1/{0.\\overline{7}} = \\boxed{\\frac 97}$."
+}

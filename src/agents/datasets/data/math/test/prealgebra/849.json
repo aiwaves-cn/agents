@@ -1,0 +1,6 @@
+{
+    "problem": "22 people attend a party. Each person shakes hands with at most 20 other people. What is the maximum possible number of handshakes, assuming that any two people can shake hands at most once?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "If each person shakes hands with exactly 20 other people, then there will be $\\frac{22 \\cdot 20}{2} = \\boxed{220}$ handshakes, since two people are required to complete a handshake. To achieve 220 handshakes, we arrange the participants in a circle. Each person shakes hands with everyone except the person directly across from himself or herself (and himself or herself)."
+}

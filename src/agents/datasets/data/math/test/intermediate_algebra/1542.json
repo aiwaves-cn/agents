@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c,$ $d$ be nonnegative real numbers such that $a + b + c + d = 1.$  Find the maximum value of\n\\[a^2 + b^2 + c^2 + d^2.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "It is clear that $0 \\le a \\le 1,$ so $a(1 - a) \\ge 0.$  Then $a - a^2 \\ge 0,$ or $a^2 \\le a.$  Similarly, $b^2 \\le b,$ $c^2 \\le c,$ and $d^2 \\le d,$ so\n\\[a^2 + b^2 + c^2 + d^2 \\le a + b + c + d = 1.\\]Equality occurs when $a = 1$ and $b = c = d = 0,$ so the maximum value is $\\boxed{1}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Twenty-seven solid gold spherical beads each of radius 3 are melted down and recast into a larger, solid gold sphere. How many units are in the radius of this larger gold sphere?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Each spherical bead has volume \\[\\frac{4}{3}\\pi(3^3)=4\\cdot 3^2\\pi,\\] so the twenty-seven beads have total volume \\[4\\cdot 3^2\\pi \\cdot 27 = 4\\cdot 3^5 \\pi.\\]  Let the larger sphere have radius $r$ units, so we have \\[\\frac{4}{3}\\pi r^3 = 4\\cdot 3^5\\pi.\\]  Simplifying gives \\[r^3 = 3^6\\] or \\[r=3^2=\\boxed{9}.\\]"
+}

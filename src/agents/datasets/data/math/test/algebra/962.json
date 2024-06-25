@@ -1,0 +1,6 @@
+{
+    "problem": "A circle is centered at $(5,15)$ and has a radius of $\\sqrt{130}$ units. Point $Q = (x,y)$ is on the circle, has integer coordinates, and the value of the $x$-coordinate is twice the value of the $y$-coordinate. What is the maximum possible value for $x$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The equation of a circle centered at $(h,k)$ with radius $r$ is $(x-h)^2+(y-k)^2=r^2$, so the equation of the circle is \\[\n(x-5)^2+(y-15)^2=130.\n\\] Since $x=2y$, we substitute to find  \\[\n(2y-5)^2+(y-15)^2=130.\n\\] Expanding the left-hand side and subtracting 130 from both sides, this equation becomes \\[\n5y^2 -50y+ 120=0.\n\\] The left-hand side of this equation factors as $5(y-6)(y-4)$, so $y=6$ and $y=4$ are the two possible $y$-coordinates.  Therefore, the possible $x$-coordinates are 12 and 8, the largest of which is $\\boxed{12}$."
+}

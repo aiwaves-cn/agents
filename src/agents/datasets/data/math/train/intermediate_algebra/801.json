@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be the roots of the cubic polynomial $x^3 - x - 1 = 0.$  Find\n\\[a(b - c)^2 + b(c - a)^2 + c(a - b)^2.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas,\n\\begin{align*}\na + b + c &= 0, \\\\\nab + ac + bc &= -1, \\\\\nabc &= 1.\n\\end{align*}Then\n\\begin{align*}\na(b - c)^2 + b(c - a)^2 + c(a - b)^2 &= a(b^2 - 2bc + c^2) + b(c^2 - 2ac + a^2) + c(a^2 - 2ab + b^2) \\\\\n&= (ab^2 - 2abc + ac^2) + (bc^2 - 2abc + ba^2) + (ca^2 - 2abc + cb^2) \\\\\n&= (ab^2 - 2 + ac^2) + (bc^2 - 2 + ba^2) + (ca^2 - 2 + cb^2) \\\\\n&= ab^2 + ac^2 + bc^2 + ba^2 + ca^2 + cb^2 - 6 \\\\\n&= a^2 (b + c) + b^2 (a + c) + c^2 (a + b) - 6.\n\\end{align*}From $a + b + c = 0,$ $b + c = -a.$  Simillarly, $a + c = -b$ and $a + b = -c,$ so\n\\[a^2 (b + c) + b^2 (a + c) + c^2 (a + b) - 6 = -a^3 - b^3 - c^3 - 6.\\]Since $a$ is a root of $x^3 - x - 1 = 0,$ $a^3 - a - 1 = 0,$ so $-a^3 = -a - 1.$  Similarly, $-b^3 = -b - 1$ and $-c^3 = -c - 1,$ so\n\\begin{align*}\n-a^3 - b^3 - c^3 - 6 &= (-a - 1) + (-b - 1) + (-c - 1) - 6 \\\\\n&= -(a + b + c) - 9 \\\\\n&= \\boxed{-9}.\n\\end{align*}"
+}

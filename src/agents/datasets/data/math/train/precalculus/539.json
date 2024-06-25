@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$, $y$, and $z$ be real numbers such that\n\\[\\cos x + \\cos y + \\cos z = \\sin x + \\sin y + \\sin z = 0.\\]Find the sum of all possible values of $\\cos 2x + \\cos 2y + \\cos 2z.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $a = e^{ix}$, $b = e^{iy}$, and $c = e^{iz}$.  Then\n\\begin{align*}\na + b + c &= e^{ix} + e^{iy} + e^{iz} \\\\\n&= (\\cos x + \\cos y + \\cos z) + i (\\sin x + \\sin y + \\sin z) \\\\\n&= 0.\n\\end{align*}Also,\n\\begin{align*}\n\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} &= \\frac{1}{e^{ix}} + \\frac{1}{e^{iy}} + \\frac{1}{e^{iz}} \\\\\n&= e^{-ix} + e^{-iy} + e^{-iz} \\\\\n&= [\\cos (-x) + \\cos (-y) + \\cos (-z)] + i [\\sin (-x) + \\sin (-y) + \\sin (-z)] \\\\\n&= (\\cos x + \\cos y + \\cos z) - i (\\sin x + \\sin y + \\sin z) \\\\\n&= 0.\n\\end{align*}Hence,\n\\[abc \\left( \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} \\right) = ab + ac + bc = 0.\\]Now,\n\\begin{align*}\na^2 + b^2 + c^2 &= e^{2ix} + e^{2iy} + e^{2iz} \\\\\n&= (\\cos 2x + \\cos 2y + \\cos 2z) + i (\\sin 2x + \\sin 2y + \\sin 2z).\n\\end{align*}Squaring $a + b + c = 0,$ we get\n\\[(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + ac + bc) = 0.\\]Therefore, $a^2 + b^2 + c^2 = 0,$ which means the only possible value of $\\cos 2x + \\cos 2y + \\cos 2z$ is $\\boxed{0}.$"
+}

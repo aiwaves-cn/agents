@@ -1,0 +1,6 @@
+{
+    "problem": "The points $(4, 0)$ and $(-4, 0)$ are two non-consecutive vertices of a rhombus with an area of $80$ square units. One of the other vertices is $(0, K)$ where $K > 0$. What is the value of $K$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The area formula for a rhombus is $A = \\frac 12 \\cdot d_1 \\cdot d_2$, where $d_1$ and $d_2$ are the lengths of its two diagonals. The points $(4,0)$ and $(-4,0)$ are opposing vertices of the rhombus and both lie on the x-axis. Since the third point $(0,K)$ lies on the y-axis, and the diagonals of a rhombus are perpendicular bisectors, it follows that the intersection of the diagonals must be at the origin. Thus, the last vertex is the point $(0,-K)$. It follows that the diagonals have length $8$ and $2K$, and the area is equal to $80 = \\frac 12 \\cdot 8 \\cdot (2K) = 8K$. Thus, $K = \\frac{80}8 = \\boxed{10}$."
+}

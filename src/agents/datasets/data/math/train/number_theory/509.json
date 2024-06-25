@@ -1,0 +1,6 @@
+{
+    "problem": "The marching band has more than 100 members but fewer than 200 members. When they line up in rows of 4 there is one extra person; when they line up in rows of 5 there are two extra people; and when they line up in rows of 7 there are three extra people. How many members are in the marching band?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First, we look for an integer which leaves remainder of 1 when divided by 4 and a remainder of 2 when divided by 5.  Checking the remainders of 2, 7, 12, 17, $\\ldots$ when divided by 4, we find that 17 is the least positive integer satisfying this condition.  By the Chinese Remainder Theorem, the only positive integers which leave a remainder of 1 when divided by 4 and a remainder of 2 when divided by 5 are those that differ from 17 by a multiple of $4\\cdot 5=20$.  Checking the remainders of 17, 37, $\\ldots$ when divided by 7, we find that $17$ leaves a remainder of 3.  Again, using the Chinese Remainder Theorem, the integers which satisfy all three conditions are those that differ from 17 by a multiple of $4\\cdot5\\cdot7=140$.  Among the integers 17, 157, 297, $\\ldots$, only $\\boxed{157}$ is between 100 and 200."
+}

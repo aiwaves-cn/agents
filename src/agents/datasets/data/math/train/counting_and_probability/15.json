@@ -1,0 +1,6 @@
+{
+    "problem": "What is the probability of rolling six standard, six-sided dice and getting six distinct numbers? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $6^6$ different possible rolls exhibited by the six dice. If the six dice yield distinct numbers, then there are $6$ possible values that can appear on the first die, $5$ that can appear on the second die, and so forth. Thus, there are $6!$ ways to attain $6$ distinct numbers on the die. The desired probability is $\\frac{6!}{6^6} = \\frac{6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1}{6 \\cdot 6 \\cdot 6 \\cdot 6 \\cdot 6 \\cdot 6} = \\frac{20}{6 \\cdot 6 \\cdot 6 \\cdot 6} = \\frac{5}{2^2 \\cdot 3^4} = \\boxed{\\frac{5}{324}}$."
+}

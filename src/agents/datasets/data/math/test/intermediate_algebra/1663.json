@@ -1,0 +1,6 @@
+{
+    "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a \\overline{b} = -1 + 5i.\\]Find $\\overline{a} b.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a \\overline{b}} = \\overline{-1 +5i} = -1 - 5i.\\]But $\\overline{a \\overline{b}} = \\overline{a} \\overline{\\overline{b}} = \\overline{a} b,$ so\n\\[\\overline{a} b = \\boxed{-1 - 5i}.\\]"
+}

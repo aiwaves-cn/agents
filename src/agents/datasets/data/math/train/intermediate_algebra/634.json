@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers $n$ satisfy \\[(n + 8)(n - 3)(n-12)<0\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "If $n$ is less than $3$, then $n+8$ is positive, $n-3$ is negative, and $n-12$ is negative.  Therefore, the product on the left-hand side of the inequality is positive, so the inequality is not satisfied.  If $n$ is strictly between 3 and 12, then $n+8$ is positive, $n-3$ is positive, and $n-12$ is negative.  In this case, the product on the left-hand side is negative, so the inequality is satisfied.  If $n$ is greater than 12, then $n+8$ is positive, $n-3$ is positive, and $n-12$ is positive.  Again, the product is positive so the inequality is not satisfied.  If $n=3$ or $n=12$, then the left-hand side is 0, so the inequality is not satisfied.  Therefore, the only solutions of the inequality are the $12-3-1=\\boxed{8}$ integers strictly between 3 and 12."
+}

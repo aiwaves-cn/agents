@@ -1,0 +1,6 @@
+{
+    "problem": "A puppy and two cats together weigh 24 pounds. The puppy and the larger cat together weigh exactly twice as much as the smaller cat, and the puppy and the smaller cat together weigh exactly the same as the larger cat. How many pounds does the puppy weigh?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let the weight of the puppy be $a$, the weight of the smaller cat be $b$, and the weight of the larger cat be $c$. We have the equations \\begin{align*}\na+b+c&=24\\\\\na+c&=2b\\\\\na+b&=c\n\\end{align*} From Equation (2), we have $a=2b-c$. Substituting that into Equation (1) to eliminate $a$, we have \\begin{align*}\n(2b-c)+b+c=24 \\Rightarrow b=8\n\\end{align*} Substituting $a=2b-c$ into Equation (3) to eliminate $a$, we have \\begin{align*}\n(2b-c)+b&=c \\Rightarrow 3b=2c\n\\end{align*} Since $b=8$, $c=\\frac{3}{2}b=12$. Finally, substituting the values of $b$ and $c$ into Equation (1) to solve for $a$, we have $a+8+12=24$, or $a=4$. Thus, the puppy weighs $\\boxed{4}$ pounds."
+}

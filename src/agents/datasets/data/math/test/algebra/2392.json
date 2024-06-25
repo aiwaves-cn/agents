@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\frac{\\sqrt{6y+2}}{\\sqrt{2y}}=\\frac52$, solve for $y$. Express your answer in simplest fractional form.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "To begin, we observe that the expression $\\frac{\\sqrt{6y+2}}{\\sqrt{2y}}$ is defined if and only if $y>0$. In this case, it is equal to $\\sqrt{\\frac{6y+2}{2y}}$. Since the quantity under the radical is always nonnegative for $y>0$, we may safely square both sides of our equation without creating fake solutions: $$\\frac{6y+2}{2y}=\\frac{25}{4}.$$Now we cross-multiply to obtain $$4(6y+2) = 25(2y),$$and solve this linear equation: \\begin{align*}\n24y+8 &= 50y \\\\\n8 &= 26y \\\\\n\\boxed{\\frac{4}{13}} &= y\n\\end{align*}"
+}

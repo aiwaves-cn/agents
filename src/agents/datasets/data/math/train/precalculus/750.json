@@ -1,0 +1,6 @@
+{
+    "problem": "A curve is described parametrically by\n\\[(x,y) = (2 \\cos t - \\sin t, 4 \\sin t).\\]The graph of the curve can be expressed in the form\n\\[ax^2 + bxy + cy^2 = 1.\\]Enter the ordered triple $(a,b,c).$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $x = 2 \\cos t - \\sin t$ and $y = 4 \\sin t,$\n\\begin{align*}\nax^2 + bxy + cy^2 &= a (2 \\cos t - \\sin t)^2 + b (2 \\cos t - \\sin t)(4 \\sin t) + c (4 \\sin t)^2 \\\\\n&= a (4 \\cos^2 t - 4 \\cos t \\sin t + \\sin^2 t) + b (8 \\cos t \\sin t - 4 \\sin^2 t) + c (16 \\sin^2 t) \\\\\n&= 4a \\cos^2 t + (-4a + 8b) \\cos t \\sin t + (a - 4b + 16c) \\sin^2 t.\n\\end{align*}To make this simplify to 1, we set\n\\begin{align*}\n4a &= 1, \\\\\n-4a + 8b &= 0, \\\\\na - 4b + 16c &= 1.\n\\end{align*}Solving this system, we find $(a,b,c) = \\boxed{\\left( \\frac{1}{4}, \\frac{1}{8}, \\frac{5}{64} \\right)}.$"
+}

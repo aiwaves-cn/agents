@@ -1,0 +1,6 @@
+{
+    "problem": "The figure below is composed of the rectangles $A$, $B$, $C$, and $D$ with whole number values for length and width. The areas of regions $A$, $B$, and $C$ in square meters, are shown in the diagram. What is the area in square meters of rectangle $D$? [asy]\ndraw((0,0)--(0,11)--(13,11)--(13,0)--cycle);\ndraw((0,6)--(13,6)); draw((8,11)--(8,0));\nlabel(\"$A$\",(0,11),SE); label(\"$B$\",(8,11),SE); label(\"$C$\",(8,6),SE); label(\"$D$\",(0,6),SE);\nlabel(\"40\",(6,9)); label(\"25\",(11,9)); label(\"30\",(11,2)); label(\"?\", (6,2));\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since the length and width are whole number values, the dimensions of rectangle $B$ must be $1\\times25$ or $5\\times5$. Rectangle $B$ shares a sidelength with rectangle $A$ and another sidelength with rectangle $C$, so each sidelength must also be a factor of the other rectangle's area. Since $25$ is not a factor of $40$ or $30$, it cannot be a sidelength of rectangle $B$. That means rectangle $B$ is a $5\\times5$ rectangle, which makes the respective dimensions of rectangle $A$ and $C$ $8\\times5$ and $5\\times 6$. The area of rectangle $D$ is then $8\\times6=\\boxed{48}$ square meters."
+}

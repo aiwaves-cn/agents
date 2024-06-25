@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $2^3 \\cdot 4^5 \\cdot 6^7 \\cdot 8^9$ is divided by 13?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The prime factorization of $2^3 \\cdot 4^5 \\cdot 6^7 \\cdot 8^9$ is $2^{47} \\cdot 3^7$.  We see that $2^6 \\equiv 64 \\equiv -1 \\pmod{13}$, so \\[2^{47} \\equiv 2^{6 \\cdot 7 + 5} \\equiv (2^6)^7 \\cdot 2^5 \\equiv (-1)^7 \\cdot 32 \\equiv -32 \\equiv 7 \\pmod{13},\\]and $3^7 \\equiv 2187 \\equiv 3 \\pmod{13}$, so $2^{47} \\cdot 3^7 \\equiv 7 \\cdot 3 \\equiv 21 \\equiv \\boxed{8} \\pmod{13}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In a physical education class, students line up in four rows to do exercises. One particular class has over 30 students, with three rows having the same number of students and one row having one more student than the other three rows. What is the smallest possible class size for this physical education class?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "If the first three rows have 1 student, the last row must have two students, so there are 5 students in total. This is not greater than 30, so we must add another student to each row. This gives 9, which is still not greater than 30. We have to keep adding 4 until we get to a number greater than 30. As a result, we reach 13, 17, 21, 25, 29, 33. 33 is the first integer greater than 30, so this class has $\\boxed{33}$ students."
+}

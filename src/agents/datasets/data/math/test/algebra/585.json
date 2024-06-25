@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the odd integers between 46 and 64?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The odd integers between 46 and 64 are 47, 49, $\\dots$, 63.  These integers form an arithmetic sequence with common difference 2, so the $n^{\\text{th}}$ term in this sequence is $47 + 2(n - 1) = 2n + 45$.\n\nIf $2n + 45 = 63$, then $n = 9$, so there are 9 such odd integers.  The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $(47 + 63)/2 \\cdot 9 = \\boxed{495}$."
+}

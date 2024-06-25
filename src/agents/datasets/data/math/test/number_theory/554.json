@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least prime number greater than 25 that will have a remainder of 2 when divided by 25?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We must find the least prime number, $p$, such that $p=25n+2$ for some positive integer $n$. It is clear that $n$ must be odd because otherwise $p$ is divisible by 2 and hence not prime. $n=1$ gives $p=27$, which is composite. $n=3$ gives $p=77$, which is composite. But $n=5$ gives $p=127$, which is prime. Thus, $\\boxed{127}$ is the least prime number greater than 25 that has a remainder of 2 when divided by 25."
+}

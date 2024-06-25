@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the rectangle with vertices at $(5,4),$ $(5,-4),$ $(-5,4),$ $(-5,-4)$. How many integer coordinates will be strictly inside the rectangular region?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Points with integer coordinates are called lattice points. The length of the rectangle is $5 - (-5) = 10$ units. There will be 9 lattice positions between the two vertical sides of the rectangle. The height of the rectangle is $4 - (-4) = 8$ units. There will be 7 lattice positions between the top and bottom of the rectangle. That's a total of $9 \\times 7 = \\boxed{63}$ lattice points."
+}

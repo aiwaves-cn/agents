@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when (99)(101) is divided by 9?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Notice that when we divide (99)(101) by 9, we get $\\frac{99\\cdot101}{9}=11\\cdot101$. The quotient is an integer and there is no remainder, so (99)(101) is a multiple of 9 and the remainder is $\\boxed{0}$.\n\nOR\n\nWe notice that $99\\cdot101=99\\cdot100+99=9999$. We can easily see that 9999 is divisible by 9, as the division results in 1111 with a remainder of 0. Alternatively, a number is divisible by 9 if the sum of its digits is a multiple of 9. In this case, the sum of the digits in 36, a multiple of 9, so 9999 is a also a multiple of 9. That means the remainder when it is divided by 9 is $\\boxed{0}$."
+}

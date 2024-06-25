@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the value of\n\\[2002 + \\frac{1}{2} \\left( 2001 + \\frac{1}{2} \\left( 2000 + \\dots + \\frac{1}{2} \\left( 3 + \\frac{1}{2} \\cdot 2 \\right) \\right) \\dotsb \\right).\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\begin{align*}\nS &= 2002 + \\frac{1}{2} \\left( 2001 + \\frac{1}{2} \\left( 2000 + \\dots + \\frac{1}{2} \\left( 3 + \\frac{1}{2} \\cdot 2 \\right) \\right) \\dotsb \\right) \\\\\n&= 2002 + \\frac{2001}{2} + \\frac{2000}{2^2} + \\dots + \\frac{3}{2^{1999}} + \\frac{2}{2^{2000}}.\n\\end{align*}Then\n\\[2S = 2 \\cdot 2002 + 2001 + \\frac{2000}{2} + \\dots + \\frac{3}{2^{1998}} + \\frac{2}{2^{1999}}.\\]Subtracting these equations, we get\n\\begin{align*}\nS &= 4004 - 1 - \\frac{1}{2} - \\frac{1}{2^2} - \\dots - \\frac{1}{2^{1999}} - \\frac{2}{2^{2000}} \\\\\n&= 4004 - 1 - \\frac{1}{2} - \\frac{1}{2^2} - \\dots - \\frac{1}{2^{1999}} - \\frac{1}{2^{1999}} \\\\\n&= 4004 - \\frac{1}{2^{1999}} (2^{1999} + 2^{1998} + \\dots + 2 + 1 + 1) \\\\\n&= 4004 - \\frac{1}{2^{1999}} \\cdot 2^{2000} \\\\\n&= 4004 - 2 = \\boxed{4002}.\n\\end{align*}"
+}

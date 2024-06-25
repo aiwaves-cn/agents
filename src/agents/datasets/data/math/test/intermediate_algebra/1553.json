@@ -1,0 +1,6 @@
+{
+    "problem": "For a complex number $z,$ compute the minimum value of\n\\[|z + 5 - 3i| + |z - 7 + 2i|.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Geometrically, $|z + 5 - 3i|$ is the distance between the complex numbers $z$ and $-5 + 3i$ in the complex plane, and $|z - 7 + 2i|$ is the distance between $z$ and $7 - 2i.$\n\n[asy]\nunitsize(0.4 cm);\n\npair A, B, Z;\n\nA = (-5,3);\nB = (7,-2);\nZ = (6,6);\n\ndraw(A--B);\ndraw(A--Z--B);\n\ndot(\"$-5 + 3i$\", A, NW);\ndot(\"$7 - 2i$\", B, SE);\ndot(\"$z$\", Z, NE);\n[/asy]\n\nBy the Triangle Inequality, the sum of the distances is minimized when $z$ lies on the line segment connecting the two complex numbers $-5 + 3i$ and $7- 2i,$ in which case the sum of the distances is simply $|(5 - 3i) - (-7 + 2i)| = |12 - 5i| = \\boxed{13}.$"
+}

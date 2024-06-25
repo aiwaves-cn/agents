@@ -1,0 +1,6 @@
+{
+    "problem": "Two different prime numbers between $4$ and $18$ are chosen. When their sum is subtracted from their product, which of the following numbers could be obtained? $$\n\\text A. \\ \\ 21 \\qquad \\text B. \\ \\ 60 \\qquad \\text C. \\ \\ 119 \\qquad \\text D. \\ \\ 180 \\qquad \\text E. \\ \\ 231\n$$",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "There are five prime numbers between $4$ and $18:$ namely $5,$ $7,$ $11,$ $13,$ and $17.$ Hence the product of any two of these is odd and the sum is even. Because $$xy-(x+y)=(x-1)(y-1)-1$$increases as either $x$ or $y$ increases (since both $x$ and $y$ are bigger than $1$), the answer must be an odd number that is no smaller than $$23=5\\cdot 7-(5+7)$$and no larger than $$191=13\\cdot 17-(13+17).$$The only possibility among the options is $\\boxed{119},$ and indeed $119=11\\cdot 13-(11+13).$"
+}

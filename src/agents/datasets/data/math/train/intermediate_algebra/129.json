@@ -1,0 +1,6 @@
+{
+    "problem": "Find the range of the function\n\\[h(x) = \\frac{2(x + 7)(x - 3)}{x + 7}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If $x \\neq -7,$ then we can cancel the factors of $x + 7$ to get\n\\[h(x) = 2(x - 3).\\]If $x$ were allowed to be any real number, then $2(x - 3)$ could also be any real number.  However, the function is not defined for $x = -7,$ so the function cannot take on the value $2(-7 - 3) = -20.$\n\nTherefore, the range of the function is $\\boxed{(-\\infty,-20) \\cup (-20,\\infty)}.$"
+}

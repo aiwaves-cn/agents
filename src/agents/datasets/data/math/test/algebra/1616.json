@@ -1,0 +1,6 @@
+{
+    "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "When working modulo $m$, the notation $a^{-1}$ is used to denote the residue $b$ for which $ab\\equiv 1\\pmod{m}$, if any exists. For how many integers $a$ satisfying $0 \\le a < 100$ is it true that $a(a-1)^{-1} \\equiv 4a^{-1} \\pmod{20}$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since at least one of $a$ or $a-1$ must be even, then the modular inverse of at least one of $a$ or $a-1$ does not exist. Thus, there are $\\boxed{0}$ possible values of $a$."
+}

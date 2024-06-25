@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integer divisors of $2004^{2004}$ are divisible by exactly 2004 positive integers?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The prime factorization of 2004 is $2^2\\cdot 3\\cdot 167$. Thus the prime factorization of $2004^{2004}$ is $2^{4008}\\cdot 3^{2004}\\cdot 167^{2004}$.\nWe can count the number of divisors of a number by multiplying together one more than each of the exponents of the prime factors in its prime factorization. For example, the number of divisors of $2004=2^2\\cdot 3^1\\cdot 167^1$ is $(2+1)(1+1)(1+1)=12$.\nA positive integer divisor of $2004^{2004}$ will be of the form $2^a\\cdot 3^b\\cdot 167^c$. Thus we need to find how many $(a,b,c)$ satisfy\n$(a+1)(b+1)(c+1)=2^2\\cdot 3\\cdot 167.$\nWe can think of this as partitioning the exponents to $a+1,$ $b+1,$ and $c+1$. So let's partition the 2's first. There are two 2's so this is equivalent to partitioning two items in three containers. We can do this in ${4 \\choose 2} = 6$ ways. We can partition the 3 in three ways and likewise we can partition the 167 in three ways. So we have $6\\cdot 3\\cdot 3 = \\boxed{54}$ as our answer."
+}

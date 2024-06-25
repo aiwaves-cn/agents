@@ -1,0 +1,6 @@
+{
+    "problem": "What is the circumradius of a triangle $ABC$ with sides of length $6$, $8$, and $10$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The Pythagorean Theorem tells us that $ABC$ is a right triangle with hypotenuse 10.  The circumcenter of a right triangle is the midpoint of its hypotenuse, so the circumradius of a right triangle is half the length of its hypotenuse.  Therefore, the circumradius of $\\triangle ABC$ is $10/2 = \\boxed{5}$."
+}

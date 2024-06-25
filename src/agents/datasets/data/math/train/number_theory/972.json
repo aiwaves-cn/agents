@@ -1,0 +1,6 @@
+{
+    "problem": "Fifty cards, numbered 1-50, are placed in a box. One card is randomly selected. What is the probability that the number on the card is prime and is a multiple of 7? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "The only multiple of 7 that is prime is 7. Any other multiple of 7 has at least three positive divisors: 1, 7, and itself. Therefore, the probability that the selected number is both prime and a multiple of 7 is $\\boxed{\\frac{1}{50}}$."
+}

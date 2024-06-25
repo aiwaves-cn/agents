@@ -1,0 +1,6 @@
+{
+    "problem": "Dave's sister baked $3$ dozen pies of which half contained chocolate, two thirds contained marshmallows, three-fourths contained cayenne, and one-sixths contained salted soy nuts.  What is the largest possible number of pies that had none of these ingredients?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "She baked 36 pies.  Of these\n\n1. $\\frac12\\cdot36=18$ contained chocolate\n\n2. $\\frac23\\cdot36=24$ contained marshmallows\n\n3. $\\frac34\\cdot36=27$ contained cayenne\n\n4. $\\frac16\\cdot36=6$  contained salted soy nuts.\n\n\n\nAt most 9 pies do not contain cayenne.  It is possible, however that all of the chocolate, marshmallow, and salted soy nut pies are among the other 27 pies, so there could be at most $\\boxed{9}$ pies without any of these ingredients."
+}

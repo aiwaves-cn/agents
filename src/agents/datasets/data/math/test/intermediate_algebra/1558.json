@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangle is inscribed in a unit circle.  Find the largest possible area of the rectangle.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let the dimensions of the rectangle be $a$ and $b.$  Since $a$ and $b$ are the legs of a triangle with hypotenuse 2, $a^2 + b^2 = 4.$\n\n[asy]\nunitsize (2 cm);\n\npair A, B, C, D;\n\nA = dir(35);\nB = dir(180 - 35);\nC = dir(180 + 35);\nD = dir(360 - 35);\n\ndraw(Circle((0,0),1));\ndraw(A--B--C--D--cycle);\ndraw(A--C);\ndraw(rightanglemark(C,D,A,4));\n\nlabel(\"$a$\", (A + D)/2, W);\nlabel(\"$b$\", (C + D)/2, N);\n\ndot((0,0));\n[/asy]\n\nThen by AM-GM,\n\\[4 = a^2 + b^2 \\ge 2ab,\\]so $ab \\le 2.$\n\nEquality occurs when $a = b = \\sqrt{2},$ so the largest possible area is $\\boxed{2}.$"
+}

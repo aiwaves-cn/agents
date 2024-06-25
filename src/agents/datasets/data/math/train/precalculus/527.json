@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A,$ $B,$ $C$ be the angles of a non-right triangle.  Compute\n\\[\\begin{vmatrix} \\tan A & 1  & 1 \\\\ 1 & \\tan B & 1 \\\\ 1 & 1 & \\tan C \\end{vmatrix}.\\]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Expanding the determinant, we get\n\\begin{align*}\n\\begin{vmatrix} \\tan 1 & 1  & 1 \\\\ 1 & \\tan B & 1 \\\\ 1 & 1 & \\tan C \\end{vmatrix} &= \\tan A \\begin{vmatrix} \\tan B & 1 \\\\ 1 & \\tan C \\end{vmatrix} - \\begin{vmatrix} 1  & 1 \\\\ 1 & \\tan C \\end{vmatrix} + \\begin{vmatrix} 1 & \\tan B \\\\ 1 & 1 \\end{vmatrix} \\\\\n&= \\tan A(\\tan B \\tan C - 1) - (\\tan C - 1) + (1 - \\tan B) \\\\\n&= \\tan A \\tan B \\tan C - \\tan A - \\tan B - \\tan C + 2.\n\\end{align*}From the tangent addition formula,\n\\[\\tan (A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}.\\]But\n\\[\\tan (A + B) = \\tan (180^\\circ - C) = -\\tan C,\\]so\n\\[-\\tan C = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}.\\]Then $-\\tan C + \\tan A \\tan B \\tan C = \\tan A + \\tan B.$  Therefore,\n\\[\\tan A \\tan B \\tan C - \\tan A - \\tan B - \\tan C + 2 = \\boxed{2}.\\]"
+}

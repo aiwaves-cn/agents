@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the area of the ellipse $25x^2 +4 y^2 = 16.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Dividing by 16 gives the standard form of the equation of this ellipse, \\[\\frac{x^2}{(\\frac{16}{25})} + \\frac{y^2}{4} = 1.\\]Then, the semimajor and semiminor axes have lengths $\\sqrt{4} = 2$ and $\\sqrt{\\tfrac{16}{25}} = \\tfrac45$. By the area formula for an ellipse, the area of the ellipse is $2 \\cdot \\tfrac45 \\cdot \\pi = \\boxed{\\tfrac{8\\pi}5}.$"
+}

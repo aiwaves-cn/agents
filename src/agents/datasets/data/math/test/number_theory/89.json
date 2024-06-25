@@ -1,0 +1,6 @@
+{
+    "problem": "The product of integers 240 and $k$ is a perfect cube. What is the smallest possible positive value of $k$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "$240=2^4\\cdot3\\cdot5=2^3(2\\cdot3\\cdot5)$. For $240k$ to be a perfect cube (and not a perfect square), $k$ must be at least $2^2\\cdot3^2\\cdot5^2=\\boxed{900}$."
+}

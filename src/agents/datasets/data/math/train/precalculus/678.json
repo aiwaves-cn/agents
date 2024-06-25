@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\frac{\\tan^2 20^\\circ - \\sin^2 20^\\circ}{\\tan^2 20^\\circ \\sin^2 20^\\circ}.\\]",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\frac{\\tan^2 20^\\circ - \\sin^2 20^\\circ}{\\tan^2 20^\\circ \\sin^2 20^\\circ} &= \\frac{\\frac{\\sin^2 20^\\circ}{\\cos^2 20^\\circ} - \\sin^2 20^\\circ}{\\frac{\\sin^2 20^\\circ}{\\cos^2 20^\\circ} \\cdot \\sin^2 20^\\circ} \\\\\n&= \\frac{\\sin^2 20^\\circ - \\cos^2 20^\\circ \\sin^2 20^\\circ}{\\sin^4 20^\\circ} \\\\\n&= \\frac{1 - \\cos^2 20^\\circ}{\\sin^2 20^\\circ} = \\boxed{1}.\n\\end{align*}"
+}

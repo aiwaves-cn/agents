@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ be vectors such that $\\|\\mathbf{a}\\| = 5,$ $\\|\\mathbf{b}\\| = 7,$ and $\\|\\mathbf{c}\\| = 9,$ and\n\\[\\mathbf{a} + \\mathbf{b} + \\mathbf{c} = \\mathbf{0}.\\]Find $\\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{a} \\cdot \\mathbf{c} + \\mathbf{b} \\cdot \\mathbf{c}.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{a} + \\mathbf{b} + \\mathbf{c} = \\mathbf{0},$\n\\[(\\mathbf{a} + \\mathbf{b} + \\mathbf{c}) \\cdot (\\mathbf{a} + \\mathbf{b} + \\mathbf{c}) = 0.\\]This expands as\n\\[\\mathbf{a} \\cdot \\mathbf{a} + \\mathbf{b} \\cdot \\mathbf{b} + \\mathbf{c} \\cdot \\mathbf{c} + 2 \\mathbf{a} \\cdot \\mathbf{b} + 2 \\mathbf{a} \\cdot \\mathbf{c} + 2 \\mathbf{b} \\cdot \\mathbf{c} = 0.\\]Since $\\mathbf{a} \\cdot \\mathbf{a} = \\|\\mathbf{a}\\|^2 = 25,$ $\\mathbf{b} \\cdot \\mathbf{b} = \\|\\mathbf{b}\\|^2 = 49,$ and $\\mathbf{c} \\cdot \\mathbf{c} = \\|\\mathbf{c}\\|^2 = 81,$\n\\[2(\\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{a} \\cdot \\mathbf{c} + \\mathbf{b} \\cdot \\mathbf{c}) + 155 = 0.\\]Hence, $\\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{a} \\cdot \\mathbf{c} + \\mathbf{b} \\cdot \\mathbf{c} = \\boxed{-\\frac{155}{2}}.$"
+}

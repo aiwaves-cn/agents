@@ -1,0 +1,6 @@
+{
+    "problem": "Define the operation $\\spadesuit$ as $a\\,\\spadesuit\\,b = |a- b|$ . What is the value of $2\\, \\spadesuit\\,(4\\,\\spadesuit\\,7)$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Work from the inside out: \\begin{align*}\n2\\,\\spadesuit\\,(4\\,\\spadesuit\\, 7)&=2\\,\\spadesuit\\,(|4-7|) \\\\\n&=2\\,\\spadesuit\\,|-3|\\\\\n&=2\\,\\spadesuit\\, 3 \\\\\n&= |2-3| \\\\\n&= \\boxed{1}.\n\\end{align*}"
+}

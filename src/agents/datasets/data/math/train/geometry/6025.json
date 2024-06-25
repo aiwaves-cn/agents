@@ -1,0 +1,6 @@
+{
+    "problem": "Euler's formula states that for a convex polyhedron with $V$ vertices, $E$ edges, and $F$ faces, $V-E+F=2$. A particular convex polyhedron has 32 faces, each of which is either a triangle or a pentagon. At each of its $V$ vertices, $T$ triangular faces and $P$ pentagonal faces meet. What is the value of $100P+10T+V$?\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The convex polyhedron of the problem can be easily visualized; it corresponds to a dodecahedron (a regular solid with $12$ equilateral pentagons) in which the $20$ vertices have all been truncated to form $20$ equilateral triangles with common vertices. The resulting solid has then $p=12$ smaller equilateral pentagons and $t=20$ equilateral triangles yielding a total of $t+p=F=32$ faces. In each vertex, $T=2$ triangles and $P=2$ pentagons are concurrent. Now, the number of edges $E$ can be obtained if we count the number of sides that each triangle and pentagon contributes: $E=\\frac{3t+5p}{2}$, (the factor $2$ in the denominator is because we are counting twice each edge, since two adjacent faces share one edge). Thus, $E=60$. Finally, using Euler's formula we have $V=E-30=30$.\nIn summary, the solution to the problem is $100P+10T+V=\\boxed{250}$."
+}

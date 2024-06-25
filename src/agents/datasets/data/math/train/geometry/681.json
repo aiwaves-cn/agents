@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, $RSP$ is a straight line and $\\angle QSP = 80^\\circ$.  What is the measure of $\\angle PQR$, in degrees?\n\n[asy]\ndraw((.48,-.05)--(.48,.05)); draw((.52,-.05)--(.52,.05)); draw((1.48,-.05)--(1.48,.05)); draw((1.52,-.05)--(1.52,.05));\n\ndraw((1.04,.51)--(1.14,.49)); draw((1.03,.47)--(1.13,.45));\ndraw((0,0)--(2,0)--(1.17,.98)--cycle);\nlabel(\"$P$\",(2,0),SE); label(\"$R$\",(0,0),SW); label(\"$Q$\",(1.17,.98),N);\n\nlabel(\"$80^\\circ$\",(1,0),NE);\n\nlabel(\"$S$\",(1,0),S);\ndraw((1,0)--(1.17,.98));\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Since $RSP$ is a straight line, we have $\\angle RSQ+\\angle QSP = 180^\\circ$, so $\\angle RSQ=180^\\circ - 80^\\circ = 100^\\circ$. $\\triangle RSQ$ is isosceles with $RS=SQ$, so \\[ \\angle RQS = \\frac{1}{2}(180^\\circ - \\angle RSQ) = \\frac{1}{2}(180^\\circ - 100^\\circ)=40^\\circ . \\]Similarly, since $\\triangle PSQ$ is isosceles with $PS=SQ$, we have \\[ \\angle PQS = \\frac{1}{2}(180^\\circ - \\angle PSQ) = \\frac{1}{2}(180^\\circ - 80^\\circ)=50^\\circ . \\]Therefore, $\\angle PQR = \\angle PQS + \\angle RQS = 50^\\circ+40^\\circ=\\boxed{90}^\\circ$."
+}

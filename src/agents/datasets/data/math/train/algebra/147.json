@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $16^{\\frac{1}{2}}-625^{\\frac{1}{2}}$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We can simply plug in $16^{\\frac{1}{2}}=4$ and $625^{\\frac{1}{2}}=25$ and get $4-25=-21$. Alternatively, recognizing the problem as a difference of squares, we can rewrite it as \\begin{align*}\n(16^{\\frac{1}{4}})^2-(625^{\\frac{1}{4}})^2&=(16^{\\frac{1}{4}}-625^{\\frac{1}{4}})(16^{\\frac{1}{4}}+625^{\\frac{1}{4}}) \\\\\n&=(2-5)(2+5)\\\\\n&=(-3)(7)=\\boxed{-21}.\n\\end{align*}"
+}

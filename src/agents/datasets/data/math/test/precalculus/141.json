@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\cos 15^\\circ.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the angle subtraction formula,\n\\begin{align*}\n\\cos 15^\\circ &= \\cos (60^\\circ - 45^\\circ) \\\\\n&= \\cos 60^\\circ \\cos 45^\\circ + \\sin 60^\\circ \\sin 45^\\circ \\\\\n&= \\frac{1}{2} \\cdot \\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{3}}{2} \\cdot \\frac{\\sqrt{2}}{2} \\\\\n&= \\boxed{\\frac{\\sqrt{2} + \\sqrt{6}}{4}}.\n\\end{align*}"
+}

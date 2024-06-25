@@ -1,0 +1,6 @@
+{
+    "problem": "Find the constant term in the expansion of $$\\left(10x^3-\\frac{1}{2x^2}\\right)^{5}$$",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "To get a constant term, the exponents of $x$ must cancel.  If we take the term with 2 $x^3$'s and 3 $\\frac{1}{x^2}$'s, then they will cancel.  By the Binomial Theorem, this term is $$\\binom52 (10x^3)^2\\left(-\\frac{1}{2x^2}\\right)^3=10\\cdot100\\cdot-\\frac{1}{8}\\cdot x^6\\cdot\\frac{1}{x^6}$$$$\\Rightarrow \\frac{1000}{-8}=\\boxed{-125}$$"
+}

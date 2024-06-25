@@ -1,0 +1,6 @@
+{
+    "problem": "Find the range of the function\n\\[k(x) = \\frac{2x + 7}{x - 3}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Set\n\\[y = \\frac{2x + 7}{x - 3}.\\]Solving for $x,$ we find\n\\[x = \\frac{3y + 7}{y - 2}.\\]Thus, for any value of $y,$ we can find a corresponding value of $x,$ except $y = 2.$  Therefore, the range of the function is $\\boxed{(-\\infty,2) \\cup (2,\\infty)}.$"
+}

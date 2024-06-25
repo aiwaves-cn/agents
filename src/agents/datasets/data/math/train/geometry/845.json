@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure below, a 3-inch by 3-inch square adjoins a 10-inch by 10-inch square. What is the area of the shaded region? Express your answer in square inches as a common fraction. [asy]\nunitsize(2mm);\ndefaultpen(linewidth(0.7pt)+fontsize(12pt));\n\npair H=(0,0), A=(0,10), B=(10,10), C=(10,3), G=(10,0), E=(13,3), F=(13,0);\npair D=extension(A,F,B,G);\n\ndraw(A--B--G--H--cycle);\nfill(D--C--E--F--cycle, black);\ndraw(A--F);\ndraw(G--F--E--C);\n\nlabel(\"$A$\",A,NW);\nlabel(\"$H$\",H,SW);\nlabel(\"$B$\",B,NE);\nlabel(\"$C$\",C,NE);\nlabel(\"$G$\",G,S);\nlabel(\"$D$\",D,WSW);\nlabel(\"$E$\",E,NE);\nlabel(\"$F$\",F,SE);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since triangle $DGF$ is similar to triangle $AHF$, we have \\[\n\\frac{DG}{GF}=\\frac{AH}{HF}.\n\\] Substituting we find \\[\n\\frac{DG}{3}=\\frac{10}{10+3},\n\\] which we solve to get $DG=30/13$ inches.  The area of triangle $DGF$ is $\\frac{1}{2}\\left(\\frac{30}{13}\\right)(3)=\\frac{45}{13}$ square inches.  The area of the $3\\text{ in.}\\times3\\text{ in.}$ square is $9$ square inches, so the area of the shaded region is $9-\\frac{45}{13}=\\boxed{\\frac{72}{13}}$ square inches."
+}

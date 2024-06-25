@@ -1,0 +1,6 @@
+{
+    "problem": "Find the constant $t$ such that \\[(5x^2 - 6x + 7)(4x^2 +tx + 10) = 20x^4 -54x^3 +114x^2 -102x +70.\\]",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We look at the coefficient of $x$ in the expansion of the product on the left. We get an $x$ term when we multiply $(+7)(+tx)$ and when we multiply $(-6x)(+10)$ in the expansion.  So, on the left the $x$ term is $7tx -60x$. Since this term must equal $-102x$, we have $7tx -60x = -102x$, so $t = \\boxed{-6}$.\n\nWe can check our answer (and check that it is indeed possible to find a solution to this problem) by multiplying out the left when $t=-6$: \\begin{align*} &(5x^2-6x+7)(4x^2-6x+10)\\\\\n&\\qquad= 5x^2(4x^2-6x+10) -6x(4x^2-6x+10) \\\\\n&\\qquad\\qquad+ 7(4x^2-6x+10)\\\\ &\\qquad=20x^4 -54x^3 +114x^2 -102x +70. \\end{align*}This matches the polynomial given in the problem, so our answer is correct."
+}

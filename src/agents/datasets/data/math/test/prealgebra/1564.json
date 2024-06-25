@@ -1,0 +1,6 @@
+{
+    "problem": "Daphne has a rope that is 60 meters long. She wants to use it to mark the boundary of a circle whose radius is an integer. What's the largest possible radius for her circle, in meters?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The 60-meter rope will mark the circumference of the circle, which is equal to $2\\pi r$. So we look for the largest integer $r$ such that the circumference is less than or equal to 60. We have $$2\\pi r\\le60\\qquad\\implies r\\le\\frac{60}{2\\pi}\\approx \\frac{30}{3.14}.$$We know that $\\frac{30}{3.14}<\\frac{31.4}{3.14}=10$, but greater than $\\frac{31.4-3.14}{3.14}=9$, so the largest possible radius is $\\boxed{9}$ meters."
+}

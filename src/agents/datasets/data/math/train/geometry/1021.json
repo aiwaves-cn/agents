@@ -1,0 +1,6 @@
+{
+    "problem": "Circle $A$ is in the interior of circle $B$. The diameter of circle $B$ is 16 cm. What is the diameter of circle $A$ for which the ratio of the shaded area to the area of circle $A$ is 3:1?\n\n[asy]size(101);\nimport graph;\npair B = (0,0);\npair A = (1,-3);\nfilldraw(Circle(B,10)^^Circle(A,5),gray(.6)+fillrule(1),linewidth(1.5));\ndot(\"$B$\",B,ENE,linewidth(5)); dot(\"$A$\",A,SW,linewidth(5));[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Since the ratio of the area of $A$ to the shaded area inside $B$ is $1:3$, the ratio of the area of $A$ to the entire area of $B$ is $1:(3+1) = 1:4$.  Since the area of $B$ is 4 times the area of $A$, the radius of $B$ is twice the radius of $A$, which means the diameter of $A$ is half the diameter of $B$, or $\\boxed{8\\text{ cm}}$."
+}

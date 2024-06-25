@@ -1,0 +1,6 @@
+{
+    "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$."
+}

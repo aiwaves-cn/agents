@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of functions $f : \\mathbb{R} \\to \\mathbb{R}$ such that\n\\[f(x + f(y)) = x + y\\]for all real numbers $x$ and $y.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = -f(y),$ we get\n\\[f(0) = -f(y) + y,\\]so $f(y) = y - f(0)$ for all real numbers $x.$  Then the given functional equation becomes\n\\[f(x + y - f(0)) = x + y,\\]or $x + y - f(0) - f(0) = x + y.$  Then $f(0) = 0,$ so $f(x) = x$ for all real numbers $x.$  This function does satisfy the given functional equation, giving us $\\boxed{1}$ solution."
+}

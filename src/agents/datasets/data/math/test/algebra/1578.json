@@ -1,0 +1,6 @@
+{
+    "problem": "The average of Amy's, Ben's, and Chris's ages is 6. Four years ago,  Chris was the same age as Amy is now. In four years, Ben's age will be $\\frac{3}{5}$ of Amy's age at that time. How many years old is Chris now?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let Amy's, Ben's, and Chris's ages be $a$, $b$, and $c$, respectively. We have the equations \\begin{align*} \\tag{1}\n\\frac{a+b+c}{3}=6 \\Rightarrow a+b+c&=18 \\\\ \\tag{2}\nc-4&=a\\\\ \\tag{3}\nb+4&=\\frac{3}{5}(a+4)\n\\end{align*} From Equation (3), we have $b=\\frac{3}{5}(a+4)-4$. We substitute Equation (2) into Equation (3) to eliminate $a$, to get $b=\\frac{3}{5}(c)-4$. Substituting this last equation and Equation (2) into Equation (1) to eliminate $a$ and $b$, we have  \\[[c-4]+[\\frac{3}{5}(c)-4]+c=18\\] Solving for $c$, we find that $c=10$. Thus, Chris's age is $\\boxed{10}$."
+}

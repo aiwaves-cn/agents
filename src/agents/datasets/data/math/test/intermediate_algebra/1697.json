@@ -1,0 +1,6 @@
+{
+    "problem": "Find a monic quadratic polynomial $P(x)$ with integer coefficients such that\n\\[P(\\sqrt{13} - 3) = 0.\\](A polynomial is monic if its leading coefficient is 1.)",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = \\sqrt{13} - 3.$  Then $x + 3 = \\sqrt{13},$ so\n\\[(x + 3)^2 = 13.\\]This simplifies to $x^2 + 6x - 4 = 0,$ so we can take $P(x) = \\boxed{x^2 + 6x - 4}.$"
+}

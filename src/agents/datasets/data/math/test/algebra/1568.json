@@ -1,0 +1,6 @@
+{
+    "problem": "The points $(-3,2)$ and $(-2,3)$ lie on a circle whose center is on the $x$-axis. What is the radius of the circle?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let the center of the circle be $(x,0)$. Then we know the distance from the center to $(-3,2)$ and from the center to $(-2,3)$ are the same. Using the distance formula, we have\n\n\\begin{align*}\n\\sqrt{(x+3)^2+(0-2)^2}&=\\sqrt{(x+2)^2+(0-3)^2}\\\\\n\\Rightarrow\\qquad \\sqrt{x^2+6x+9+4}&=\\sqrt{x^2+4x+4+9}\\\\\n\\Rightarrow\\qquad 6x&=4x\\\\\n\\Rightarrow\\qquad x&=0\\\\\n\\end{align*}Now we know the center of the circle is $(0,0)$, and we need to find the radius. Use the distance formula once more: $$\\sqrt{(0+3)^2+(0-2)^2}=\\sqrt{3^2+(-2)^2}=\\sqrt{9+4}=\\boxed{\\sqrt{13}}.$$"
+}

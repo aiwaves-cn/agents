@@ -1,0 +1,6 @@
+{
+    "problem": "The inhabitants of the island of Jumble use the standard Roman alphabet (26 letters, A through Z).  Each word in their language is 3 letters, and for some reason, they insist that all words contain the letter A at least once.  How many 3-letter words are possible?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $26^3$ possible words that can be formed. Of those words, $25^3$ have no A. Thus, our answer is $26^3 - 25^3 = \\boxed{1951}$."
+}

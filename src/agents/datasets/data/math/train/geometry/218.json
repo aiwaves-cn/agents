@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area of the triangle bounded by the lines $y=x,$ $y=-x,$ and $y=6$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "[asy]\nsize(200); defaultpen(linewidth(0.8));\nxlimits(-8,8); ylimits(-1,10);\nxaxis(Label(\"$x$\"),-8,8,EndArrow(size=5));\nyaxis(Label(\"$y$\"),-2,8,EndArrow(size=5));\ndot(\"$A(6,6)$\",(6,6)); dot(\"$B(-6,6)$\",(-6,6),W); dot(\"$O$\",(0,0),SW);\ndraw((0,0) -- (6,6));\ndraw((0,0) -- (-6,6));\ndraw((-6,6)--(6,6));\n[/asy]\nLet $O = (0,0)$, and let $A$ and $B$ denote the points where $y=6$ intersects $y=x$ and $y=-x,$ respectively. The coordinates of $A$ and $B$ are $(6, 6)$ and $(-6, 6),$ respectively, so $AB = 6 - (-6) = 12.$ Also, the length of the altitude from $O$ to $AB$ is $6.$ Thus the area of $\\triangle OAB$ is\\[\\frac{1}{2} \\cdot 12 \\cdot 6 = \\boxed{36}.\\]"
+}

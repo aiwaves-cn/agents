@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $a$ and $b$ are positive integers such that the units digit of $a$ is $2$, the units digit of $b$ is $4$, and the greatest common divisor of $a$ and $b$ is $6$.\n\nWhat is the smallest possible value of the least common multiple of $a$ and $b$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Both $a$ and $b$ must be divisible by $6$, so the choices for $a$ are $$12, 42, 72, 102, 132, \\ldots\\phantom{~.}$$and the choices for $b$ are $$24, 54, 84, 114, 144, \\ldots~.$$We know that $\\mathop{\\text{lcm}}[a,b]\\cdot \\gcd(a,b)=ab$ (since this identity holds for all positive integers $a$ and $b$). Therefore, $$\\mathop{\\text{lcm}}[a,b] = \\frac{ab}{6},$$so in order to minimize $\\mathop{\\text{lcm}}[a,b]$, we should make $ab$ as small as possible. But we can't take $a=12$ and $b=24$, because then $\\gcd(a,b)$ would be $12$, not $6$. The next best choice is either $a=12,b=54$ or $a=42,b=24$. Either of these pairs yields $\\gcd(a,b)=6$ as desired, but the first choice, $a=12$ and $b=54$, yields a smaller product. Hence this is the optimal choice, and the smallest possible value for $\\mathop{\\text{lcm}}[a,b]$ is $$\\mathop{\\text{lcm}}[12,54] = \\frac{12\\cdot 54}{6} = 2\\cdot 54 = \\boxed{108}.$$"
+}

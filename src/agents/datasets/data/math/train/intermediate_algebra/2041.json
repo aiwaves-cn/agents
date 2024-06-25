@@ -1,0 +1,6 @@
+{
+    "problem": "Find all solutions to\n\\[\\sqrt[4]{47 - 2x} + \\sqrt[4]{35 + 2x} = 4.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = \\sqrt[4]{47 - 2x}$ and $b = \\sqrt[4]{35 + 2x}.$  Then $a + b = 4.$  Also,\n\\[a^4 + b^4 = (47 - 2x) + (35 + 2x) = 82.\\]Since $a + b = 4,$ there exists a $t$ such that $a = 2 + t$ and $b = 2 - t.$  Then\n\\[a^4 + b^4 = (2 + t)^4 + (2 - t)^4 = 2t^4 + 48t^2 + 32 = 82.\\]This simplifies to $t^4 + 24t^2 - 25 = 0$, which factors as $(t^2 - 1)(t^2 + 25) = 0.$  Hence, $t = \\pm 1.$\n\nIf $t = 1,$ then $a = \\sqrt[4]{47 - 2x} = 3,$ which leads to $x = -17.$  If $t = -1,$ then $a = \\sqrt[4]{47 - 2x} = 1,$ which leads to $x = 23.$  Thus, the solutions are $\\boxed{23,-17}.$  We check that these solutions works."
+}

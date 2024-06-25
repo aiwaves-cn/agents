@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose we want to divide the 10 dogs into three groups, one with 3 dogs, one with 5 dogs, and one with 2 dogs.  How many ways can we form the groups such that Fluffy is in the 3-dog group and Nipper is in the 5-dog group?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Place Fluffy in the 3-dog group and Nipper in the 5-dog group.  This leaves 8 dogs remaining to put in the last two spots of Fluffy's group, which can be done in $\\binom{8}{2}$ ways.  Then there are 6 dogs remaining for the last 4 spots in Nipper's group, which can be done in $\\binom{6}{4}$ ways.  The remaining 2-dog group takes the last 2 dogs.  So the total number of possibilities is $\\binom{8}{2} \\times \\binom{6}{4} = \\boxed{420}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A map of the town that Annie and Barbara live in can be represented by the Cartesian plane. Annie is located at $(3,5)$ and Barbara says she is located at $(-6,2)$. They agree to meet the midpoint of their current locations. However, it turns out that Barbara read the map wrong, and she is actually at $(-10,4)$. What is the positive difference in the $x$-coordinates of where they agreed to meet and where they should actually meet?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the problem only asks for the difference in the $x$-coordinates, we can ignore the $y$-coordinates.\nThey originally agreed to meet at the midpoint of $(3,5)$ and $(-6,2)$, so the $x$-coordinate of the planned location is $\\frac{3+(-6)}{2}=-\\frac{3}{2}$.\nThe correct meeting location should be at the midpoint of $(3,5)$ and $(-10,4)$, so the $x$-coordinate should be at $\\frac{3+(-10)}{2}=-\\frac{7}{2}$. The positive difference is $-\\frac{3}{2}-(-\\frac{7}{2})=\\boxed{2}$.\nAlternatively, notice that a 4-unit change in the $x$-coordinate of Barbara's location resulted in a 2-unit change in the midpoint since the 4 gets divided by 2. $\\frac{3+(-10)}{2}=\\frac{3+(-6)}{2}+\\frac{-4}{2}=-\\frac{3}{2}-\\boxed{2}$."
+}

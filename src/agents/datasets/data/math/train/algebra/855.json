@@ -1,0 +1,6 @@
+{
+    "problem": "Each of the ten volumes of the collected works of Theodore Sturgeon is available in paperback for $\\$$15 or in hardcover for $\\$$25. Theresa buys a copy of each of the ten volumes for a total of $\\$$220. How many hardcover volumes did she buy?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Say she bought $h$ hardcovers and $p$ paperbacks. She bought ten volumes total, so $h+p=10$. Her total cost, $25h+15p$, was $220$, or dividing by 5 $5h+3p=44$. Multiplying the first equation by 3 and subtracting it from the second, we get $5h-3h+3p-3p=2h=44-30=14$, or $h=\\boxed{7}$."
+}

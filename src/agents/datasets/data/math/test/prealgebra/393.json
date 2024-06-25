@@ -1,0 +1,6 @@
+{
+    "problem": "If a girl 5 feet tall could walk around the equator, how many feet further would the top of her head travel than her feet? Assume that the earth is a sphere. Express your answer in terms of $\\pi$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let $r$ be the radius of the earth in feet. The girl's feet travel along a circle of radius $r$, while the girl's head travels along a circle of radius $r+5$. The circumference of the first circle is $2\\pi r$, while the circumference of the second circle is $2\\pi(r+5) = 2\\pi r + 10\\pi$. So her head travels $(2\\pi r + 10\\pi) - 2\\pi r = \\boxed{10\\pi}$ feet more than her feet."
+}

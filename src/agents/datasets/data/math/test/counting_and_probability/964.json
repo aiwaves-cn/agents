@@ -1,0 +1,6 @@
+{
+    "problem": "I have two cubes such that, on each cube, three faces are painted red and three faces are painted white. If I roll each of the cubes once, what is the probability that they will land such that there is one red face and one white face up?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are four possible ways for the cubes to land: two red faces up, the first with a red face and the second with a white face up, the first with a white face and the second with a red face up, and two white faces up. So, there are two ways that the cubes can land such that there is a red face up and a white face up. The probability that we get a red face up is $\\frac{3}{6} = \\frac{1}{2}$. Similarly, the probability that we get a white face up is $\\frac{1}{2}$. Thus, the probability that the cubes land such that there is one red face and one white face up is $2 \\cdot \\frac{1}{2} \\cdot \\frac{1}{2} = \\boxed{\\frac{1}{2}}$.\n\nAlternate solution: After you roll the first cube, the second one must be the other color, which occurs with probability $\\frac{3}{6} = \\boxed{\\frac{1}{2}}$."
+}

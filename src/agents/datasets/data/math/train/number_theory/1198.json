@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $656_7=3ab_{10}$, where $a$ and $b$ represent base-10 digits. Find $\\frac{a\\cdot b}{15}$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Note that $656_7=6\\cdot7^2+5\\cdot7^1+6\\cdot7^0=335_{10}$. Therefore, $a=3$, $b=5$, and $\\frac{a\\cdot b}{15}=\\frac{3\\cdot5}{15}=\\boxed{1}$."
+}

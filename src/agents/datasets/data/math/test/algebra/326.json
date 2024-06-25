@@ -1,0 +1,6 @@
+{
+    "problem": "What is the circumference of the circle with center at $P$ and passing through $Q$? Express your answer in terms of $\\pi$.\n\n[asy]\nsize(150); pair P = (-2,3), Q=(10,-2); string stringpair(pair p){return \"$(\"+string(p.x)+\", \"+string(p.y)+\"$)\";}\ndraw((-15,0)--(15,0),Arrows(4)); draw((0,-15)--(0,15),Arrows(4));\ndot(\"$Q$\"+stringpair(Q),Q,SE,linewidth(3)); dot(\"$P$\"+stringpair(P),P,NW,linewidth(3));\n\n[/asy]",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "To find the circumference, we must first find the length of the radius, $PQ$. We can do this by using the distance formula or by noticing that the points $P$, $Q$, and $(-2, -2)$ form a right triangle with legs of length 5 and 12. This is a Pythagorean triple, so the hypotenuse $PQ$ must equal 13.\n\nNow that we know the radius has length 13, the circumference is $2 \\cdot 13 \\pi = \\boxed{26\\pi}$."
+}

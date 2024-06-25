@@ -1,0 +1,6 @@
+{
+    "problem": "The integer 49 can be written as the sum of smaller perfect squares in a variety of ways. One such way includes six terms: $25 + 9 + 9 + 4 + 1 + 1$. If each term has a value between 0 and 49, what is the fewest number of perfect square terms smaller than 49 that can be added together for a sum of 49?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "First, we would like to determine if 49 can be written as the sum of two perfect squares.\n\n$49 - 1 = 48$, which is not a perfect square.\n\n$49 - 4 = 45$, which is not a perfect square.\n\n$49 - 9 = 40$, which is not a perfect square.\n\n$49 - 16 = 33$, which is not a perfect square.\n\n$49 - 25 = 24$, which is not a perfect square.\n\nWe don't need to check any other squares, as $25 > \\frac{49}{2}$.\n\nNow, we check to see if there are three perfect squares that sum to 49. With a little work, we see that $49 = 4 + 9 + 36$. Thus, the fewest number of perfect square terms that can be added together to sum to 49 is $\\boxed{3}$."
+}

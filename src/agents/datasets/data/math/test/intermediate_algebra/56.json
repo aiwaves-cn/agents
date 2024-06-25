@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of two odd functions is always odd, even, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "Let $f(x)$ and $g(x)$ be odd functions, so $f(-x) = -f(x)$ and $g(-x) = -g(x).$  Let $h(x) = f(x) + g(x).$  Then\n\\[h(-x) = f(-x) + g(-x) = -f(x) - g(x) = -h(x),\\]so $h(x)$ is $\\boxed{\\text{odd}}.$"
+}

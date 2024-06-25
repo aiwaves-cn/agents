@@ -1,0 +1,6 @@
+{
+    "problem": "A five-digit integer will be chosen at random from all possible positive five-digit integers. What is the probability that the number's units digit will be less than 5? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since the choice of all the first four digits has no bearing on what the units digit is, we consider only what the units digit is. Since the last digit is less than 5, it can be 0, 1, 2, 3, or 4. And there are 10 digits to choose from in total, so the probability is $\\frac{5}{10} = \\boxed{\\frac{1}{2}}$."
+}

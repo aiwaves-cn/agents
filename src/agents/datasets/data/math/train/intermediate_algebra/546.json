@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate \\[\\frac 2{\\log_4{2000^6}} + \\frac 3{\\log_5{2000^6}},\\]giving your answer as a fraction in lowest terms.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Using the property $\\log_a b^x = x \\log_a b,$ we have \\[\\begin{aligned} \\frac 2{\\log_4{2000^6}} + \\frac 3{\\log_5{2000^6}} &= \\frac{2}{6\\log_4 2000} + \\frac{3}{6\\log_5 2000} \\\\ &= \\frac{1}{3\\log_4 2000} + \\frac{1}{2\\log_5 2000}. \\end{aligned}\\]Since $\\log_a b = \\frac1{\\log_b a}$, we can then write \\[\\frac{1}{3\\log_4 2000} + \\frac{1}{2\\log_5 2000} = \\frac{1}{3}\\log_{2000} 4 + \\frac{1}{2}\\log_{2000} 5,\\]which equals \\[\\log_{2000} (4^{1/3} 5^{1/2})= \\log_{2000} (2^{2/3} 5^{1/2}).\\]Since $2000 = 2^4 5^3 = \\left(2^{2/3} 5^{1/2}\\right)^6$, the expression $\\boxed{\\tfrac{1}{6}}$."
+}

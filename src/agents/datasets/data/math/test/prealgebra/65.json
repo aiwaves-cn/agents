@@ -1,0 +1,6 @@
+{
+    "problem": "Let $N$ be the units digit of the number $21420N$. Which nonzero value of $N$ makes this number divisible by $6$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The number $21420N$ is divisible by $6$ if and only if it is even and the sum of its digits is divisible by $3$. So $N$ must be even, and $2 + 1 + 4 + 2 + 0 + N = 9 + N$ must be divisible by $3$.  Since $9$ is divisible by $3$, we see that $N$ must also be divisible by $3$. The only digit that works is $N = \\boxed{6}$."
+}

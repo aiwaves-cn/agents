@@ -1,0 +1,6 @@
+{
+    "problem": "Let the ordered triples $(x,y,z)$ of complex numbers that satisfy\n\\begin{align*}\nx + yz &= 7, \\\\\ny + xz &= 10, \\\\\nz + xy &= 10.\n\\end{align*}be $(x_1,y_1,z_1),$ $(x_2,y_2,z_2),$ $\\dots,$ $(x_n,y_n,z_n).$  Find $x_1 + x_2 + \\dots + x_n.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Subtracting the equations $y + xz = 10$ and $z + xy = 10,$ we get\n\\[y + xz - z - xy = 0.\\]Then $y - z + x(z - y) = 0,$ so $(y - z)(1 - x) = 0.$  Hence, $y = z$ or $x = 1.$\n\nIf $x = 1,$ then $yz = 6$ and $y + z = 10.$  Then by Vieta's formulas, $y$ and $z$ are the roots of $t^2 - 10t + 6 = 0.$  Thus, $x = 1$ for two ordered triples $(x,y,z).$\n\nIf $y = z,$ then\n\\begin{align*}\nx + y^2 &= 7, \\\\\ny + xy &= 10.\n\\end{align*}Squaring the second equation, we get $(x + 1)^2 y^2 = 100.$  Then $(x + 1)^2 (7 - x) = 100,$ which simplifies to $x^3 - 5x^2 - 13x + 93 = 0.$  By Vieta's formulas, the sum of the roots is 5, so the sum of all the $x_i$ is $2 + 5 = \\boxed{7}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x_1, x_2, \\dots , x_6$ be non-negative real numbers such that $x_1 +x_2 +x_3 +x_4 +x_5 +x_6 =1$, and $x_1 x_3 x_5 +x_2 x_4 x_6 \\ge \\frac{1}{540}$. Find the maximum value of\n\\[x_1 x_2 x_3 + x_2 x_3 x_4 +x_3 x_4 x_5 +x_4 x_5 x_6 +x_5 x_6 x_1 +x_6 x_1 x_2.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = x_1 x_3 x_5 + x_2 x_4 x_6$ and $b = x_1 x_2 x_3 + x_2 x_3 x_4 + x_3 x_4 x_5 + x_4 x_5 x_6 + x_5 x_6 x_1 + x_6 x_1 x_2.$  By AM-GM,\n\\[a + b = (x_1 + x_4)(x_2 + x_5)(x_3 + x_6) \\le \\left[ \\frac{(x_1 + x_4) + (x_2 + x_5) + (x_3 + x_6)}{3} \\right]^3 = \\frac{1}{27}.\\]Hence,\n\\[b \\le \\frac{1}{27} - \\frac{1}{540} = \\frac{19}{540}.\\]Equality occurs if and only if\n\\[x_1 + x_4 = x_2 + x_5 = x_3 + x_6.\\]We also want $a = \\frac{1}{540}$ and $b = \\frac{19}{540}.$  For example, we can take $x_1 = x_3 = \\frac{3}{10},$ $x_5 = \\frac{1}{60},$ $x_2 = \\frac{1}{3} - x_5 = \\frac{19}{60},$ $x_4 = \\frac{1}{3} - x_1 = \\frac{1}{30},$ and $x_6 = \\frac{1}{3} - x_3 = \\frac{1}{30}.$\n\nThus, the maximum value of $b$ is $\\boxed{\\frac{19}{540}}.$"
+}

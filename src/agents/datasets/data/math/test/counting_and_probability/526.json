@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(n)$ return the number of times $n$ appears in Pascal's Triangle. For example, $f(3) = 2$ and $f(4) = 2$. If $n$ is a positive integer, what is the minimum value of $f(n)$?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Every positive integer appears at least once; if we consider an arbitrary integer $k$, it can be written in the form $\\binom{k}{1}$. Almost all integers can be written twice, because $\\binom{k}{1} = \\binom{k}{k-1} = k$, but when $k-1 = 1$, the two occurrences overlap into one. This takes place for $k = 2$, and $2$ only appears once in Pascal's Triangle, because succeeding rows of Pascal's Triangle only contain $1$'s and numbers greater than $2$. Therefore, the minimum value of $f(n)$ is $\\boxed{1}$."
+}

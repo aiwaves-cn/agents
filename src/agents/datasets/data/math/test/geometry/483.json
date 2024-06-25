@@ -1,0 +1,6 @@
+{
+    "problem": "In a regular polygon, the measure of an interior angle is 6.5 times the measure of an exterior angle. How many sides does the polygon have?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The measure of an interior angle of a regular $n$-gon is $\\frac{180(n-2)}{n}$ degrees and the measure of an exterior angle is $\\frac{360}{n}$ degrees.  Solving  \\[\n\\frac{180(n-2)}{n}=6.5\\cdot\\left(\\frac{360}{n}\\right),\n\\] we find $n=\\boxed{15}$."
+}

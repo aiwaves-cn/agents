@@ -1,0 +1,6 @@
+{
+    "problem": "If $a,b,c$ are positive integers less than $13$ such that \\begin{align*}\n2ab+bc+ca&\\equiv 0\\pmod{13}\\\\\nab+2bc+ca&\\equiv 6abc\\pmod{13}\\\\\nab+bc+2ca&\\equiv 8abc\\pmod {13}\n\\end{align*}then determine the remainder when $a+b+c$ is divided by $13$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since $13$ is a prime, each of $a,b,c$ is invertible modulo $13$. Let $a^{-1}=x, b^{-1}=y, c^{-1}=z$ in modulo $13$. Multiplying both sides of each congruence by $(abc)^{-1}$ yields \\begin{align*}\n2z+x+y&\\equiv 0 \\pmod{13},\\\\\nz+2x+y&\\equiv 6 \\pmod{13},\\\\\nz+x+2y&\\equiv 8 \\pmod {13}.\n\\end{align*}Adding all three together gives $4(x+y+z)\\equiv 14\\pmod {13}\\implies x+y+z\\equiv 10\\pmod {13}$. Subtracting this from each results in \\begin{align*}\nz\\equiv -10\\equiv 3&\\pmod{13},\\\\\nx\\equiv -4\\equiv 9&\\pmod{13},\\\\\ny\\equiv -2\\equiv 11&\\pmod {13}.\n\\end{align*}Thus, $a+b+c\\equiv x^{-1}+y^{-1}+z^{-1}\\equiv 9+3+6\\equiv 18\\equiv \\boxed{5}\\pmod{13}$."
+}

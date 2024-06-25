@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $x$ in the equation $16^{16}+16^{16}+16^{16}+16^{16}=2^x$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We rewrite the left side $16^{16}+16^{16}+16^{16}+16^{16}$ as $4\\cdot16^{16}=2^2\\cdot(2^4)^{16}=2^2\\cdot2^{64}=2^{66}$. We have $2^{66}=2^x$, so the value of $x$ is $\\boxed{66}$."
+}

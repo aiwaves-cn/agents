@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $AB = 3,$ $AC = 6,$ $BC = 8,$ and $D$ lies on $\\overline{BC}$ such that $\\overline{AD}$ bisects $\\angle BAC.$  Find $\\cos \\angle BAD.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "By the Law of Cosines,\n\\[\\cos A = \\frac{3^2 + 6^2 - 8^2}{2 \\cdot 3 \\cdot 6} = -\\frac{19}{36}.\\][asy]\nunitsize (1 cm);\n\npair A, B, C, D;\n\nB = (0,0);\nC = (8,0);\nA = intersectionpoint(arc(B,3,0,180),arc(C,6,0,180));\nD = interp(B,C,3/9);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\n[/asy]\n\nThen\n\\[\\cos \\angle BAD = \\cos \\frac{A}{2} = \\sqrt{\\frac{1 + \\cos A}{2}} = \\boxed{\\frac{\\sqrt{34}}{12}}.\\]"
+}

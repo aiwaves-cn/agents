@@ -1,0 +1,6 @@
+{
+    "problem": "Multiply $(x^4 +18 x^2 + 324) (x^2-18)$.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We recognize the given expression as the factorization $(a-b)(a^2+ab+b^2)$ of the difference of cubes $a^3-b^3$, where $a=x^2$ and $b=18$.  Thus the product is $a^3-b^3 = (x^2)^3-18^3=\\boxed{x^6-5832}$."
+}

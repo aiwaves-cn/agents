@@ -1,0 +1,6 @@
+{
+    "problem": "How many integers satisfy the equation: $3n^3-12n = 0$ ?",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We factor the polynomial to get $3n(n^2-4)=0$. The product equals $0$ if $n=0$ or $n^2-4=0 \\Rightarrow n=\\pm 2$. The integers $0,2,-2$ satisfy the equation, so there are $\\boxed{3}$ integers."
+}

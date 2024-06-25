@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit of $2^{2010}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let's start by finding the units digit of small powers of 2. \\begin{align*}\n2^1 &= 2 \\\\\n2^2 &= 4 \\\\\n2^3 &= 8 \\\\\n2^4 &= 16 \\\\\n2^5 &= 32 \\\\\n2^6 &= 64 \\\\\n2^7 &= 128 \\\\\n2^8 &= 256 \\\\\n\\end{align*}It looks like the units digit repeats every time the exponent is increased by 4. The remainder when 2010 is divided by 4 is 2, so $2^{2010}$ has the same units digit as $2^2$, which is $\\boxed{4}$."
+}

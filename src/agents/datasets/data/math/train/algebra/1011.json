@@ -1,0 +1,6 @@
+{
+    "problem": "Tim wants to invest some money in a bank which compounds quarterly with an annual interest rate of $7\\%$. To the nearest dollar, how much money should he invest if he wants a total of $\\$60,\\!000$ at the end of $5$ years?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Recall the formula $A=P\\left(1+\\frac{r}{n}\\right)^{nt}$, where $A$ is the end balance, $P$ is the principal, $r$ is the interest rate, $t$ is the number of years, and $n$ is the number of times the interest is compounded in a year. This formula represents the idea that the interest is compounded every $1/n$ years with the rate of $r/n$.\n\nSubstituting the given information, we have \\[60,\\!000=P\\left(1+\\frac{0.07}{4}\\right)^{4 \\cdot 5}.\\]Solving for $P$ gives  $P=42409.474...$, which rounded to the nearest dollar is $\\boxed{\\$42409}$."
+}

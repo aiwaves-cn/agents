@@ -1,0 +1,6 @@
+{
+    "problem": "Points $P$ and $Q$ are midpoints of two sides of the square. What fraction of the interior of the square is shaded? Express your answer as a common fraction.\n\n[asy]\nfilldraw((0,0)--(2,0)--(2,2)--(0,2)--(0,0)--cycle,gray,linewidth(1));\nfilldraw((0,1)--(1,2)--(2,2)--(0,1)--cycle,white,linewidth(1));\nlabel(\"P\",(0,1),W);\nlabel(\"Q\",(1,2),N);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Let the side length of the square be $x$.  The triangle has $\\frac{1}{2} x$ as both its base and height.  Therefore, its area is $\\frac{1}{8} x^2$, and since the area of the square is $x^2$, the shaded area is $\\boxed{\\frac{7}{8}}$ of the total."
+}

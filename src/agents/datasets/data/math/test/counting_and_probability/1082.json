@@ -1,0 +1,6 @@
+{
+    "problem": "A restaurant offers three desserts, and exactly twice as many appetizers as main courses. A dinner consists of an appetizer, a main course, and a dessert. What is the least number of main courses that the restaurant should offer so that a customer could have a different dinner each night in the year 2003?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Let $m$ denote the number of main courses needed to meet the requirement. Then the number of dinners available is $3\\cdot m \\cdot 2m = 6m^2$.  Thus $m^2$ must be at least $365/6 \\approx 61$.  Since $7^2 = 49<61<64 = 8^2$, $\\boxed{8}$ main courses is enough, but 7 is not."
+}

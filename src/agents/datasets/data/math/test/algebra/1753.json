@@ -1,0 +1,6 @@
+{
+    "problem": "A triangle has vertices at coordinates $(11,1)$, $(2,3)$ and $(3,7)$.  What is the number of units in the length of the longest side of the triangle?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We must find the distance between each pair of points by using the distance formula.\n\nThe distance between $(11, 1)$ and $(2, 3)$ is $\\sqrt{(11 - 2)^2 + (1 - 3)^2} = \\sqrt{81 + 4} = \\sqrt{85}$.\n\nThe distance between $(2, 3)$ and $(3, 7)$ is $\\sqrt{(2 - 3)^2 + (3- 7)^2} = \\sqrt{1 + 16} = \\sqrt{17}$.\n\nThe distance between $(3, 7)$ and $(11, 1)$ is $\\sqrt{(11 - 3)^2 + (1- 7)^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$.\n\n$10$ is larger than $\\sqrt{85}$ and $\\sqrt{17}$. Thus, the longest side of the triangle has length $\\boxed{10}$."
+}

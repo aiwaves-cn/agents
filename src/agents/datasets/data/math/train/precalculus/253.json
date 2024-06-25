@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\sec 135^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\sec 135^\\circ = \\frac{1}{\\cos 135^\\circ}.\\]Then $\\cos 135^\\circ = -\\cos (135^\\circ - 180^\\circ) = -\\cos (-45^\\circ) = -\\cos 45^\\circ = -\\frac{1}{\\sqrt{2}},$ so\n\\[\\frac{1}{\\cos 135^\\circ} = \\boxed{-\\sqrt{2}}.\\]"
+}

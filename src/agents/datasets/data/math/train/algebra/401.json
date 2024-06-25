@@ -1,0 +1,6 @@
+{
+    "problem": "Marina solved the quadratic equation $9x^2-18x-720=0$ by completing the square. In the process, she came up with the equivalent equation $$(x+r)^2 = s,$$where $r$ and $s$ are constants.\n\nWhat is $s$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Dividing both sides of the equation $9x^2-18x-720=0$ by $9$, we have $$x^2-2x-80 = 0.$$The square which agrees with $x^2-2x-80$ except for the constant term is $(x-1)^2$, which is equal to $x^2-2x+1$ and thus to $(x^2-2x-80)+81$.\n\nTherefore, by adding $81$ to each side, Marina rewrote the equation $x^2-2x-80 = 0$ as $$(x-1)^2 = 81.$$We have $r=-1$ and $s=\\boxed{81}$."
+}

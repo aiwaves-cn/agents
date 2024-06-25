@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $x$ in the equation $6^{x+1}-6^{x}=1080$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Rewrite the left-hand side as $6^x(6^1-6^0)=6^x\\cdot5$.  Divide both sides by $5$ to find $6^x=\\frac{1080}{5}=216$.  Since $216=6^3$, $x=\\boxed{3}$."
+}

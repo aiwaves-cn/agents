@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that for some $a,b,c$ we have $a+b+c = 1$, $ab+ac+bc = abc = -4$. What is $a^3+b^3+c^3$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Notice that $(x-a)(x-b)(x-c) = x^3 - (a+b+c)x^2 + (ab+ac+bc)x -abc = x^3-x^2-4x+4$. Thus by finding the roots of this polynomial, we will determine the set $\\{a,b,c\\}$. But these are seen by factoring to be $x = 1,2,-2$, so we see that $a^3+b^3+c^3 = 1+8-8 = \\boxed{1}$."
+}

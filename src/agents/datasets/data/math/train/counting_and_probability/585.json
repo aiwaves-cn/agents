@@ -1,0 +1,6 @@
+{
+    "problem": "A license plate in a certain state consists of 4 digits, not necessarily distinct, and 2 letters, also not necessarily distinct. These six characters may appear in any order, except that the two letters must appear next to each other.  How many distinct license plates are possible?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Since the two letters have to be next to each other, think of them as forming a two-letter word $w$. So each license plate consists of 4 digits and $w$. For each digit there are 10 choices. There are $26\\cdot 26$ choices for the letters of $w$, and  there are 5 choices for the position of $w$. So the total number of distinct license plates is $5\\cdot10^4\\cdot26^2 = \\boxed{33,\\!800,\\!000}$."
+}

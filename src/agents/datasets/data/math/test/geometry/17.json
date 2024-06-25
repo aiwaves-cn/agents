@@ -1,0 +1,6 @@
+{
+    "problem": "If the area of the triangle shown is 40, what is $r$? [asy]\nimport graph; size(200); defaultpen(linewidth(0.8));\n\nreal xmin=0;\nreal xmax=12;\nreal ymin=0;\nreal ymax=10;\n\nxlimits(xmin, xmax);\n\nylimits(ymin, ymax);\n\nxaxis(\"$x$\",0,12,EndArrow);\nyaxis(\"$y$\",0,10,EndArrow);\ndot(Label(\"$O$\",align=SW),(0,0));\ndraw((0,8)--(10,0));\ndot(Label(\"$(0,8)$\",align=E),(0,8));\ndot(Label(\"$(r,0)$\",align=S),(10,0));\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "The triangle is a right triangle, since the $x$- and $y$-axes are perpendicular to each other. So the base of the triangle is $r$ units long and the height of the triangle is $8$ units. The area of the triangle is $\\frac12(r)(8)=4r$. We're told that the area is $40$, so $4r=40\\qquad$, which means  $r=\\boxed{10}$."
+}

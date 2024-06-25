@@ -1,0 +1,6 @@
+{
+    "problem": "At what value of $a$ do the graphs of $y=ax^2+3x+1$ and $y=-x-1$ intersect at exactly one point?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The graphs of $y=ax^2+3x+1$ and $y=-x-1$ intersect at exactly one point when the equation\n$$ax^2+3x+1=-x-1$$has only one solution. This equation simplifies to $ax^2+4x+2=0$, which has only one solution when the discriminant is $0$, in other words,\n$$4^2-4(a)(2)=0.$$Solving for $a$ gives $a=\\boxed{2}$."
+}

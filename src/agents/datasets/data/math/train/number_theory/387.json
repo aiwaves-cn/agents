@@ -1,0 +1,6 @@
+{
+    "problem": "On a $12$-hour clock, an elapsed time of four hours looks the same as an elapsed time of $16$ hours. Because of this, we can say that four hours is \"clock equivalent'' to its square number of hours. What is the least whole number of hours that is greater than $4$ hours and is \"clock equivalent'' to its square number of hours?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "For two times to be clock equivalent, their difference must be a multiple of $12.$ We list the hours greater than $4,$ their squares, and the differences between them:  \\begin{tabular}{|c|c|c|}\n\\hline\n5 & 25 & 20\\\\\n6 & 36 & 30\\\\\n7 & 49 & 42\\\\\n8 & 64 & 56\\\\\n9 & 81 & 72\\\\\n\\hline\n\\end{tabular} We can stop at $\\boxed{9},$ since it is the smallest hour greater than $4$ that is clock equivalent to $81,$ its square."
+}

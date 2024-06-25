@@ -1,0 +1,6 @@
+{
+    "problem": "What is the coefficient of $xy$ in the expansion of $(3x+(2y+1))^2$?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Using the Binomial Theorem, we can expand this to get $(3x)^2+2(3x)(2y+1)+(2y+1)^2$. The only $xy$ comes from the middle term $2(3x)(2y+1)=12xy+6x$, hence the coefficient is $\\boxed{12}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Together, Larry and Lenny have $\\$$35. Larry has two-fifths of Lenny's amount. How many more dollars than Larry does Lenny have?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Call the amount of money Larry has $a$ and the amount of money Lenny has $b$. We can use the following system of equations to represent the given information: \\begin{align*}\na + b &= 35 \\\\\na &= \\frac{2}{5} \\cdot b \\\\\n\\end{align*} Substituting for $a$ into the first equation gives $\\frac{2}{5} b + b = 35$. Solving for $b$ gives $\\frac{7}{5} b = 35$, or $b = 25$. Thus, $a = 35 - 25 = 10$. So Lenny has $25 - 10 = \\boxed{15}$ more dollars than Larry."
+}

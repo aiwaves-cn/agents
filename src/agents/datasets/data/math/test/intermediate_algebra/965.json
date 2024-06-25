@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)?$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since $f(x)$ is linear, $f(x) = mx + b$ for some constants $m$ and $b.$  From the equation $f(6) - f(2) = 12,$\n\\[6m + b - (2m + b) = 12.\\]Then $4m = 12,$ so $m = 3.$  Therefore,\n\\[f(12) - f(2) = 12m + b - (2m + b) = 10m = \\boxed{30}.\\]"
+}

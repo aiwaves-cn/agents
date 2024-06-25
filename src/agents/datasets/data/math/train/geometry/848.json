@@ -1,0 +1,6 @@
+{
+    "problem": "Joe has exactly enough paint to paint the surface of a cube whose side length is 2.  It turns out that this is also exactly enough paint to paint the surface of a sphere.  If the volume of this sphere is $\\frac{K \\sqrt{6}}{\\sqrt{\\pi}}$, then what is $K$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Since the cube has six sides, each of area $2^2 = 4$, the surface area of the cube is 24.  Since Joe's paint will exactly cover the cube and it will also exactly cover the sphere, the sphere also must have surface area 24.\n\nIf $r$ is the radius of the sphere, this tells us that \\[ 4 \\pi r^2 = 24 , \\]or $r^2 = 6/\\pi$, so \\[ r = \\sqrt{6/\\pi} = \\sqrt{6}/\\sqrt{\\pi}. \\]Therefore the volume of the sphere is \\[ \\frac{4}{3} \\pi r^3 =\\frac{4}{3} \\pi \\Bigl( \\frac{\\sqrt{6}}{\\sqrt{\\pi}} \\Bigr)^3 = \\frac{4}{3} \\pi \\cdot \\frac{6 \\sqrt{6}}{\\pi \\sqrt{\\pi}}\n= \\frac{8 \\sqrt{6}}{\\sqrt{\\pi}} . \\]Thus $\\boxed{K=8}$."
+}

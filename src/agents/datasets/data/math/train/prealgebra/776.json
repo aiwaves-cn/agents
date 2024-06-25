@@ -1,0 +1,6 @@
+{
+    "problem": "Find $(-1)^{-10} + (-1)^{-9} + (-1)^{-8} + \\cdots + (-1)^9 + (-1)^{10}$.\n\n(The dots $\\cdots$ mean that there are 21 numbers being added, one for each integer from $-10$ to 10.)",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Recall that $(-a)^n= a^n$ when $n$ is an even integer and $-a^n$ when $n$ is an odd integer. In particular, when $a=1$ this identity tells us that $(-1)^n = 1$ when $n$ is even and $-1$ when $n$ is odd. This includes $(-1)^0 = 1.$  So the sum in question becomes \\[\n1 + (-1) + 1 + (-1) + \\cdots + 1 + (-1) + 1.\n\\]Since $1 + (-1)=0$, we can add these numbers up in pairs to get  \\[\n\\underbrace{1 + (-1)}_0 + \\underbrace{1 + (-1)}_0 + \\cdots + \\underbrace{1 + (-1)}_0 + 1 = 0 + 0 + \\cdots + 0 + 1 = \\boxed{1}.\n\\]"
+}

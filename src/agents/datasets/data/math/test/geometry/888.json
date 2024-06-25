@@ -1,0 +1,6 @@
+{
+    "problem": "The height of a cylindrical pole is 12 feet and its circumference is 2 feet. A rope is attached to a point on the circumference at the bottom of the pole. The rope is then wrapped tightly around the pole four times before it reaches a point on the top directly above the starting point at the bottom. What is the minimum number of feet in the length of the rope? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The wrapping with least rope length is the wrapping in which the four wraps are evenly spaced out.  In this case, we can split the cylinder into four identical smaller cylinders, each of height 3 feet with a rope wrapped around once.\n\nThe lateral area of each smaller cylinder is a rectangle with length 3 feet (the height of the cylinder) and width 2 feet (the circumference of the cylinder base).  When this lateral area rectangle is rolled out with the rope atop it, the rope stretches from one corner of the rectangle to a diagonally opposite corner.  Hence the rope length is the diagonal length of the rectangle, or $\\sqrt{2^2+3^2}=\\sqrt{13}$ feet.\n\nFinally, the total length of the rope is four times this length, or $\\boxed{4\\sqrt{13}}$ feet."
+}

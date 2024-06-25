@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ satisfies\n\\[f(x + y) = f(x) f(y)\\]for all real numbers $x$ and $y.$  If $f(2) = 9,$ find $f(5).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = 1$ and $y = 1,$ we get\n\\[f(2) = f(1) f(1),\\]so $f(1)^2 = 9.$  Then $f(1) = \\pm 3.$\n\nSetting $x = \\frac{1}{2}$ and $y = \\frac{1}{2},$ we get\n\\[f(1) = f \\left( \\frac{1}{2} \\right) f \\left( \\frac{1}{2} \\right) = f \\left( \\frac{1}{2} \\right)^2 \\ge 0,\\]so $f(1) = 3.$\n\nSetting $x = 1$ and $y = 2,$ we get\n\\[f(3) = f(1) f(2) = 27.\\]Setting $x = 2$ and $y = 3,$ we get\n\\[f(5) = f(2) f(3) = \\boxed{243}.\\]"
+}

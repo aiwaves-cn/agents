@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $n$ is a positive integer such that in base $7$, then $n$ can be expressed as $\\overline{ABC}_7$, and in base $11$, then $n$ can be expressed as $\\overline{CBA}_{11}$. Find the largest possible value of $n$ in base $10$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We convert $n$ to base $10$. The base $7$ expression implies that $n = 49A + 7B + C$, and the base $11$ expression implies that $n = 121C + 11B + A$. Setting the two expressions equal to each other yields that $$n = 49A + 7B + C = 121C + 11B + A \\Longrightarrow 48A - 4B - 120C = 0.$$Isolating $B$, we get $$B = \\frac{48A - 120C}{4} = 12A - 30C = 6(2A - 5C).$$It follows that $B$ is divisible by $6$, and since $B$ is a base $7$ digit, then $B$ is either $0$ or $6$. If $B$ is equal to $0$, then $2A - 5C = 0 \\Longrightarrow 2A = 5C$, so $A$ must be divisible by $5$ and hence must be either $0$ or $5$. Since $n$ is a three-digit number in base $7$, then $A \\neq 0$, so $A = 5$ and $C = 2$. Thus, $n = 502_7 = 5 \\cdot 7^2 + 2 = 247$.\n\nIf $B$ is equal to $6$, then $2A - 5C = 1$, so $2A - 1 = 5C$ and $2A - 1$ must be divisible by 5. Since $A$ is a base $7$ digit, it follows that $A = 3$ and $C = 1$. This yields the value $n = 361_7 = 3 \\cdot 7^2 + 6 \\cdot 7 + 1 = 190$. The largest possible value of $n$ in base $10$ is $\\boxed{247}$."
+}

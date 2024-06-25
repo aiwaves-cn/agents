@@ -1,0 +1,6 @@
+{
+    "problem": "Given two real numbers $p>1$ and $q>1$ so that $\\frac{1}{p} + \\frac{1}{q} = 1$ and $pq = 4$, what is $q$?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Solving $pq = 4$ for $p$ we see that $p = \\frac{4}{q}$. Plugging this into $\\frac{1}{p} + \\frac{1}{q} = 1$ we then get \\[ \\frac{q}{4} + \\frac{1}{q} = 1 \\Rightarrow q^2 - 4q +4 = 0 .\\] Factoring this, we then see that  \\[ (q-2)(q-2) = 0 \\] which means that $q = \\boxed{2}$"
+}

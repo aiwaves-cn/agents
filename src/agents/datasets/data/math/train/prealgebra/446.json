@@ -1,0 +1,6 @@
+{
+    "problem": "Ms. Hamilton's eighth-grade class wants to participate in the annual three-person-team basketball tournament.  The losing team of each game is eliminated from the tournament.  If sixteen teams compete, how many games will be played to determine the winner?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "8 games in the first round will leave 8 teams remaining.  4 games in the second round will leave 4 teams remaining.  2 games in the third round will leave two teams remaining.  One final game is played to determine the overall winner of the tournament.  Thus, there will be $8+4+2+1=\\boxed{15}$ games to eliminate 15 teams.\n\n\n\nAnother way to quickly solve this problem is to note that every team except the winner must lose exactly once.  Therefore, 15 teams must lose, and each game has one loser, which means that there are 15 games."
+}

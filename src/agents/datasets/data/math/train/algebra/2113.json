@@ -1,0 +1,6 @@
+{
+    "problem": "Find the non-zero value of $c$ for which there is exactly one positive value of $b$ for which there is one solution to the equation $x^2 + \\left(b + \\frac 1b\\right)x + c = 0$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The discriminant of the given quadratic equation is $\\left(b+\\frac 1b\\right)^2 - 4c$. For the quadratic to have one root, it follows that the discriminant must be equal to zero, so $b^2 + 2 - 4c + \\frac 1{b^2} = 0$. We are also given that there should be exactly one positive value $b$ satisfying this equation. Multiplying through by $b^2$ (for we know that $b \\neq 0$) yields that $b^4 + (2-4c)b^2 + 1 = 0$; this is a quadratic equation in $b^2$ that has discriminant $(2-4c)^2 - 4$. Again, this discriminant must be equal to zero, so $(2-4c)^2 = 4 \\Longrightarrow 2-4c = \\pm 2$. The non-zero value of $c$ satisfying this equation is $c = \\boxed{1}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A particular fortune cookie lists four two-digit positive integers as your lucky numbers. The first three are 57, 13, and 72, but you got sauce on the last one and can't read it. If the sum of the digits of all four numbers equals $\\frac{1}{5}$ of the sum of all four numbers, what is the smallest possibility for the fourth lucky number?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The sum of the first three numbers is $57+13+72=142$. If we let $10a+b$ represent the last number, where $a$ and $b$ are the tens and units digits, respectively, then the sum of the four numbers is $142+10a+b$. The sum of the digits of the first three numbers is $5+7+1+3+7+2=25$, so the total sum of the digits is $25+a+b$. If we multiply the sum of the digits by 5, we should get the sum of the four numbers. \\begin{align*}\n142+10a+b&=5(25+a+b)\\quad\\Rightarrow\\\\\n&=125+5a+5b\\quad\\Rightarrow\\\\\n17+5a&=4b\n\\end{align*} We notice that if we add a multiple of 5 to 17, the ones digit will either be 2 or 7. The next multiple of 4 that is greater than 17 and ends with a 2 or 7 is 32. That means $b=8$, while $17+5a=32$, so $5a=15$ and $a=3$. So the last number is $\\boxed{38}$."
+}

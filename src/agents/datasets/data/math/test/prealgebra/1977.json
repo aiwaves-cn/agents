@@ -1,0 +1,6 @@
+{
+    "problem": "On the number line shown, $AE=6$, $AB=1\\frac{2}{3}$, $BC=1\\frac{1}{4}$, and $DE=1\\frac{1}{12}$. What is $CD$?\n\n[asy]\nunitsize(1cm);\ndraw((0,0)--(8,0),Arrows);\npair A,B,C,D,E;\nA=(1,0); B=(8/3,0); C=(47/12,0);\nD=(71/12,0); E=(7,0);\ndot(A); dot(B); dot(C); dot(D); dot(E);\nlabel(\"$A$\",A,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\nlabel(\"$E$\",E,S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since $AB= 1\\frac23$ and $BC= 1\\frac14$, we have  \\[AC = AB+ BC = 1\\frac23+1\\frac14 = \\frac53 + \\frac54 = \\frac{20}{12} + \\frac{15}{12} = \\frac{35}{12}.\\]We have $AC + CD + DE = AE = 6$, so  \\[CD = AE - AC - DE = 6 - \\frac{35}{12} - \\frac{13}{12}=6-\\frac{48}{12} = \\boxed{2}.\\]"
+}

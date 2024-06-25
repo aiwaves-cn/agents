@@ -1,0 +1,6 @@
+{
+    "problem": "For $1 \\le n \\le 100$, how many integers are there such that $\\frac{n}{n+1}$ is a repeating decimal?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that $n+1$ and $n$ will never share any common factors except for $1$, because they are consecutive integers. Therefore, $n/(n+1)$ is already simplified, for all positive integers $n$.\n\nSince $1 \\le n \\le 100$, it follows that $2 \\le n+1 \\le 101$. Recall that a simplified fraction has a repeating decimal representation if and only if its denominator is divisible by a prime other than 2 and 5. The numbers between 2 and 101 which are divisible only by 2 and 5 comprise the set $\\{2, 4, 5, 8, \\allowbreak 10, 16, 20, 25, \\allowbreak 32, 40, 50, 64, \\allowbreak 80, 100\\}$. Therefore, there are $14$ terminating decimals and $100 - 14 = \\boxed{86}$ repeating decimals."
+}

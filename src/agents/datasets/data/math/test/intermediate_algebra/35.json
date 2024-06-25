@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest value of $x$ for which\n\\[x^2 + y^2 = x + y\\]has a solution, if $x$ and $y$ are real.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Completing the square in $x$ and $y,$ we get\n\\[\\left( x - \\frac{1}{2} \\right)^2 + \\left( y - \\frac{1}{2} \\right)^2 = \\frac{1}{2}.\\]This represents the equation of the circle with center $\\left( \\frac{1}{2}, \\frac{1}{2} \\right)$ and radius $\\frac{1}{\\sqrt{2}}.$\n[asy]\nunitsize(2 cm);\n\ndraw(Circle((0,0),1));\ndraw((0,0)--(1,0));\n\nlabel(\"$\\frac{1}{\\sqrt{2}}$\", (1/2,0), S);\n\ndot(\"$(\\frac{1}{2},\\frac{1}{2})$\", (0,0), N);\ndot((1,0));\n[/asy]\nHence, the largest possible value of $x$ is $\\frac{1}{2} + \\frac{1}{\\sqrt{2}} = \\boxed{\\frac{1 + \\sqrt{2}}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $2+\\sqrt{3}$ is a root of the equation \\[x^3 + ax^2 + bx + 10 = 0\\]and that $a$ and $b$ are rational numbers, compute $b.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Because the coefficients of the polynomial are rational, the radical conjugate $2-\\sqrt{3}$ must also be a root of the polynomial. By Vieta's formulas, the product of the roots of this polynomial is $-10,$ and the product of these two roots is $(2+\\sqrt3)(2-\\sqrt3) = 1,$ so the remaining root must be $\\frac{-10}{1} = -10.$ Then by Vieta's formulas again, we have \\[b = (-10)(2-\\sqrt3) + (-10)(2+\\sqrt3) + (2+\\sqrt3)(2-\\sqrt3) = \\boxed{-39}.\\]"
+}

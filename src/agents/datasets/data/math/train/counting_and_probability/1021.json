@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to choose 3 cards from a standard deck of 52 cards, if all three cards must be of different suits?  (Assume that the order of the cards does not matter.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "First, we choose the suits. There are $\\binom{4}{3}=4$ ways to do this. Then, we choose one of 13 cards from each of the chosen suits. There are $13^3=2197$ ways to do this. The total number of ways to choose 3 cards of different suits is therefore $4\\cdot 2197=\\boxed{8788}$."
+}

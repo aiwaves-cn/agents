@@ -1,0 +1,6 @@
+{
+    "problem": "How many cubic feet are in one cubic yard? One yard is equal to three feet.\n\n[asy]import three;\ncurrentprojection=orthographic(1/2,1/2,1);\ndraw((0,0,0)--(10,0,0)--(10,-10,0)--(0,-10,0)--cycle);\ndraw((0,0,10)--(10,0,10)--(10,-10,10)--(0,-10,10)--cycle);\ndraw((0,0,0)--(0,0,10));\ndraw((10,0,0)--(10,0,10));\ndraw((10,-10,0)--(10,-10,10));\ndraw((0,-10,0)--(0,-10,10));\nlabel(\"1 Cu ft\",(0,-5,-5),E);\ndraw((25,0,0)--(55,0,0)--(55,-30,0)--(25,-30,0)--cycle);\ndraw((25,0,30)--(55,0,30)--(55,-30,30)--(25,-30,30)--cycle);\ndraw((25,0,0)--(25,0,30));\ndraw((55,0,0)--(55,0,30));\ndraw((55,-30,0)--(55,-30,30));\ndraw((25,-30,0)--(25,-30,30));\nlabel(\"1 Cu yd\",(40,0,0),W);\n[/asy]",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We have $3 \\text{ ft} = 1 \\text{ yd}$. Cubing both sides, we get $27 \\text{ ft}^3 = 1 \\text{ yd}^3$. So there are $\\boxed{27}$ cubic feet in one cubic yard."
+}

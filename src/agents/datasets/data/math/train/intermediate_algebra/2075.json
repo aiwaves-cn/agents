@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $2x^3 + bx + 7$ has a factor of the form $x^2 + px + 1.$  Find $b.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We see that $2x^3 + bx + 7$ must be the product of $x^2 + px + 1$ and a linear factor.  Furthermore, this linear factor must be $2x + 7,$ to make the cubic and constant coefficients match.  Thus,\n\\[(2x^3 + bx + 7) = (x^2 + px + 1)(2x + 7).\\]Expanding, we get\n\\[2x^3 + bx + 7 = 2x^3 + (2p + 7) x^2 + (7p + 2) x + 7.\\]Then $2p + 7 = 0$ and $7p + 2 = b.$  Solving, we find $p = -\\frac{7}{2}$ and $b = \\boxed{-\\frac{45}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $x$ that satisfy the equation $|x-3|=2x+4$. Express your answers in simplest fractional form.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We can split the expression $|x-3|=2x+4$ into two separate cases. In the first case, \\begin{align*} x-3&=2x+4\n\\\\\\Rightarrow \\qquad -x&=7\n\\\\\\Rightarrow \\qquad x&=-7\n\\end{align*}However if we plug this value of $x$ back into the original equation $|x-3|=2x+4$, we get that $|-7-3|=2(-7)+4$ or $10=-10$. Since this is clearly not a valid statement, the first case gives us no possible solutions.\n\nIn the second case, \\begin{align*} x-3&=-(2x+4)\n\\\\ x-3&=-2x-4\n\\\\\\Rightarrow \\qquad 3x&=-1\n\\\\\\Rightarrow \\qquad x&=-\\frac13.\n\\end{align*}If we plug $-\\frac13$ back into the initial equation, we get that $\\left|-\\frac13-3\\right|=2\\left(-\\frac13\\right)+4$ which simplifies to $\\frac{10}{3}=\\frac{10}{3}$. Since this is true, we can accept $x=-\\frac13$ as a valid solution to the equation. Therefore, the only value of $x$ that satisfies the given equation is $\\boxed{-\\frac13}$."
+}

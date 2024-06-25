@@ -1,0 +1,6 @@
+{
+    "problem": "Find $x$ if\n\\[1 + 5x + 9x^2 + 13x^3 + \\dotsb = 85.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[1 + 5x + 9x^2 + 13x^3 + \\dotsb = 85.\\]Multiplying both sides by $x,$ we get\n\\[x + 5x^2 + 9x^3 + 13x^4 + \\dotsb = 85x.\\]Subtracting these equations, we get\n\\[1 + 4x + 4x^2 + 4x^3 + 4x^4 + \\dotsb = 85 - 85x.\\]Then\n\\[1 + \\frac{4x}{1 - x} = 85 - 85x.\\]Multiplying both sides by $1 - x,$ we get\n\\[1 - x + 4x = (85 - 85x)(1 - x).\\]This simplifies to $85x^2 - 173x + 84 = 0,$ which factors as $(5x - 4)(17x - 21) = 0.$  Hence, $x = \\frac{4}{5}$ or $x = \\frac{21}{17}.$\n\nIn order for the series $1 + 5x + 9x^2 + 13x^3 + \\dotsb$ to converge, the value of $x$ must lie strictly between $-1$ and 1.  Therefore, $x = \\boxed{\\frac{4}{5}}.$"
+}

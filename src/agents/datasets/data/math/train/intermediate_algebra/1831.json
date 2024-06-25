@@ -1,0 +1,6 @@
+{
+    "problem": "The legs of a right triangle have lengths $\\log_4 27$ and $\\log_2 9.$ If the length of the hypotenuse is $h,$ compute $4^h.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $t = \\log_4 3.$ Then, $\\log_4 27 = 3 \\log_4 3 = 3t,$ and $\\log_2 9 = \\frac{\\log_4 9}{\\log_4 2} = \\frac{2 \\log_4 3}{1/2} = 4t.$ Therefore the triangle has its sides in the proportion $3:4:5,$ so $h = 5t = 5 \\log_4 3 = \\log_4 243.$ Thus, $4^h = \\boxed{243}.$"
+}

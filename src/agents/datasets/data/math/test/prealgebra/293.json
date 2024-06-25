@@ -1,0 +1,6 @@
+{
+    "problem": "Central angles $a$,$b$, and $c$ separate the circle into regions which are $\\frac{1}{3}$, $\\frac{1}{4}$, and $\\frac{1}{6}$ of the area of the circle respectively. How many degrees are there in central angle $d$?\n\n[asy]\ndraw(circle((0,0),1));\ndraw((0,0)--(1,0));\ndraw((0,0)--(0,1));\ndraw((0,0)--(1/2,-sqrt(3)/2));\ndraw((0,0)--(-sqrt(3)/2,-1/2));\nlabel(\"$b$\",(0,0),NE);\nlabel(\"$c$\",(0,0),dir(-30));\nlabel(\"$d$\",(0,0),dir(-100));\nlabel(\"$a$\",(0,0),NW);\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Angle $d$ covers $1-\\frac13-\\frac14 -\\frac16 = 1 -\\frac26-\\frac16 - \\frac14 = 1 -\\frac12 - \\frac14 = \\frac14$ of the circle, so it has measure $\\frac14\\cdot 360^\\circ = \\boxed{90^\\circ}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = ax + b,$ where $a$ and $b$ are constants.  If $f(f(f(x))) = 8x + 21,$ find $a + b.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nf(f(f(x))) &= f(f(ax + b)) \\\\\n&= f(a(ax + b) + b) = f(a^2 x + ab + b) \\\\\n&= a(a^2 x + ab + b) + b \\\\\n&= a^3 x + a^2 b + ab + b \\\\\n&= 8x + 21.\n\\end{align*}Matching coefficients, we get $a^3 = 8$ and $a^2 b + ab + b = 21.$  Then $a = 2,$ so $4a + 2b + b = 21,$ or $7b = 21,$ so $b = 3$.\n\nTherefore, $a + b = \\boxed{5}.$"
+}

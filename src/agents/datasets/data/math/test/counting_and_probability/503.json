@@ -1,0 +1,6 @@
+{
+    "problem": "Mr. Patrick is preparing a five-question true-false quiz for his class. He flips a coin before writing the first question. If it is heads, he writes a true statement and if it is tails, he writes a false statement. He continues this until all five statements are written. What is the probability that the correct sequence of answers is TFTFT ? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Since all sequences of 5 answers are equally likely, the probability of any given 5-answer sequence is simply $\\frac{1}{2^5}$, since each answer is equally likely to be true or false. So, the answer evaluates to $\\frac{1}{2^5} = \\boxed{\\frac{1}{32}}$."
+}

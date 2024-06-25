@@ -1,0 +1,6 @@
+{
+    "problem": "The equations $x^3 + 5x^2 + px + q = 0$ and $x^3 + 7x^2 + px + r = 0$ have two roots in common.  If the third root of each equation is represented by $x_1$ and $x_2$ respectively, compute the ordered pair $(x_1,x_2).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If $a$ is a root of both polynomials, then $a$ is also a root of the difference of the polynomials, which is\n\\[(x^3 + 7x^2 + px + r) - (x^3 + 5x^2 + px + q) = 2x^2 + (r - q) = 0.\\]And if $a$ is a root of this polynomial, so is $-a,$ and their sum is 0.\n\nBy Vieta's formulas, the sum of the roots of $x^3 + 5x^2 + px + q = 0$ is $-5,$ so the third root is $-5.$  Similarly, the third root of $x^3 + 7x^2 + px + r = 0$ is $-7,$ so $(x_1,x_2) = \\boxed{(-5,-7)}.$"
+}

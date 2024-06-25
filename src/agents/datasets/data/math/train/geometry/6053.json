@@ -1,0 +1,6 @@
+{
+    "problem": "A circle is inscribed in quadrilateral $ABCD$, tangent to $\\overline{AB}$ at $P$ and to $\\overline{CD}$ at $Q$. Given that $AP=19$, $PB=26$, $CQ=37$, and $QD=23$, find the square of the radius of the circle.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Call the center of the circle $O$. By drawing the lines from $O$ tangent to the sides and from $O$ to the vertices of the quadrilateral, four pairs of congruent right triangles are formed.\nThus, $\\angle{AOP}+\\angle{POB}+\\angle{COQ}+\\angle{QOD}=180$, or $(\\arctan(\\tfrac{19}{r})+\\arctan(\\tfrac{26}{r}))+(\\arctan(\\tfrac{37}{r})+\\arctan(\\tfrac{23}{r}))=180$.\nTake the $\\tan$ of both sides and use the identity for $\\tan(A+B)$ to get\\[\\tan(\\arctan(\\tfrac{19}{r})+\\arctan(\\tfrac{26}{r}))+\\tan(\\arctan(\\tfrac{37}{r})+\\arctan(\\tfrac{23}{r}))=n\\cdot0=0.\\]\nUse the identity for $\\tan(A+B)$ again to get\\[\\frac{\\tfrac{45}{r}}{1-19\\cdot\\tfrac{26}{r^2}}+\\frac{\\tfrac{60}{r}}{1-37\\cdot\\tfrac{23}{r^2}}=0.\\]\nSolving gives $r^2=\\boxed{647}$."
+}

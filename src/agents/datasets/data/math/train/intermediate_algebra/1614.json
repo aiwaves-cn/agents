@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\sum_{n = 2}^{10000} \\frac{1}{n \\sqrt{n - 1} + (n - 1) \\sqrt{n}}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\n\\frac{1}{n \\sqrt{n - 1} + (n - 1) \\sqrt{n}} &= \\frac{n \\sqrt{n - 1} - (n - 1) \\sqrt{n}}{(n \\sqrt{n - 1} + (n - 1) \\sqrt{n})(n \\sqrt{n - 1} - (n - 1) \\sqrt{n})} \\\\\n&= \\frac{n \\sqrt{n - 1} - (n - 1) \\sqrt{n}}{n^2 (n - 1) - (n - 1)^2 n} \\\\\n&= \\frac{n \\sqrt{n - 1} - (n - 1) \\sqrt{n}}{n(n - 1)(n - (n - 1))} \\\\\n&= \\frac{n \\sqrt{n - 1} - (n - 1) \\sqrt{n}}{n(n - 1)} \\\\\n&= \\frac{1}{\\sqrt{n - 1}} - \\frac{1}{\\sqrt{n}}.\n\\end{align*}Thus,\n\\begin{align*}\n\\sum_{n = 2}^{10000} \\frac{1}{n \\sqrt{n - 1} + (n - 1) \\sqrt{n}} &= \\left( 1 - \\frac{1}{\\sqrt{2}} \\right) + \\left( \\frac{1}{\\sqrt{2}} - \\frac{1}{\\sqrt{3}} \\right) + \\left( \\frac{1}{\\sqrt{3}} - \\frac{1}{\\sqrt{4}} \\right) + \\dots + \\left( \\frac{1}{\\sqrt{9999}} - \\frac{1}{\\sqrt{10000}} \\right) \\\\\n&= 1 - \\frac{1}{100} = \\boxed{\\frac{99}{100}}.\n\\end{align*}"
+}

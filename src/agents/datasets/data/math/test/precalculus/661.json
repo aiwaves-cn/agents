@@ -1,0 +1,6 @@
+{
+    "problem": "While finding the sine of a certain angle, an absent-minded professor failed to notice that his calculator was not in the correct angular mode. He was lucky to get the right answer. The two least positive real values of $x$ for which the sine of $x$ degrees is the same as the sine of $x$ radians are $\\frac{m\\pi}{n-\\pi}$ and $\\frac{p\\pi}{q+\\pi}$, where $m$, $n$, $p$, and $q$ are positive integers. Find $m+n+p+q$.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Since $x$ radians is equivalent to $\\frac{180x}{\\pi}$ degrees, we want $x$ to satisfy\n\\[\\sin x^\\circ = \\sin \\left( \\frac{180x}{\\pi} \\right)^\\circ.\\]Then\n\\[\\frac{180x}{\\pi} = x + 360n \\quad \\text{or} \\quad 180 - \\frac{180x}{\\pi} = x - 360n\\]for some integer $n.$  Hence,\n\\[x = \\frac{360n \\pi}{180 - \\pi} \\quad \\text{or} \\quad x = \\frac{180(2k + 1) \\pi}{180 + \\pi}.\\]The least positive values with these forms are $\\frac{360 \\pi}{180 - \\pi}$ and $\\frac{180 \\pi}{180 + \\pi},$ so $m + n + p + q = \\boxed{900}.$"
+}

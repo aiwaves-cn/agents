@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[x^2 + 8x + \\frac{64}{x^3}\\]for $x > 0.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\begin{align*}\nx^2 + 8x + \\frac{64}{x^3} &= x^2 + 2x + 2x + 2x + 2x + \\frac{32}{x^3} + \\frac{32}{x^3} \\\\\n&\\ge 7 \\sqrt[7]{(x^2)(2x)(2x)(2x)(2x) \\left( \\frac{32}{x^3} \\right) \\left( \\frac{32}{x^3} \\right)} \\\\\n&= 28.\n\\end{align*}Equality occurs when $x = 2,$ so the minimum value of $f(x)$ for $x > 0$ is $\\boxed{28}.$"
+}

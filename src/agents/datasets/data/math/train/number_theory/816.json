@@ -1,0 +1,6 @@
+{
+    "problem": "Express $249_{11}+3AB_{12}$ as a base 10 integer. Here $A$ and $B$ denote the digits whose values are 10 and 11, respectively, in base 12.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We have that \\begin{align*} 249_{11} &= 2(11^2)+ 4(11^1) +9(11^0) \\\\\n&= 2(121)+4(11)+9(1)\\\\\n&= 242 + 44 + 9\\\\\n&= 295\\\\\n3AB_{12} &= 3(12^2)+ 10(12^1) +11(12^0) \\\\\n&= 3(144)+10(12)+11(1)\\\\\n&= 432 + 120 + 11\\\\\n&= 563\n\\end{align*}So, $249_{11}+3AB_{12}=295+563=\\boxed{858}$."
+}

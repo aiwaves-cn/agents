@@ -1,0 +1,6 @@
+{
+    "problem": "A magic square is an array of numbers in which the sum of the numbers in each row, in each column, and along the two main diagonals are equal. The numbers in the magic square shown are not written in base 10. For what base will this be a magic square?\n\n[asy]\nunitsize(0.75cm);\nfor (int i=0; i<4; ++i) {\ndraw((0,i)--(3,i),linewidth(0.7));\ndraw((i,0)--(i,3),linewidth(0.7));\n}\nlabel(\"1\",(1.5,2),N);\nlabel(\"2\",(2.5,0),N);\nlabel(\"3\",(0.5,1),N);\nlabel(\"4\",(0.5,0),N);\nlabel(\"10\",(1.5,1),N);\nlabel(\"11\",(2.5,2),N);\nlabel(\"12\",(2.5,1),N);\nlabel(\"13\",(0.5,2),N);\nlabel(\"14\",(1.5,0),N);\n[/asy]",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Let $b$ be the base in which the numbers in the square are expressed. The first row and the first column must have the same sum, which implies that $1+11_b = 4+3$. Writing $11_b$ as $b+1$, we find that $1+b+1 = 7$, which implies $b=\\boxed{5}$."
+}

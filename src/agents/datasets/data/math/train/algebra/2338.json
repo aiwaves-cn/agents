@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of the expression $(37 + 12)^2 - (37^2 +12^2)$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The square of a binomial $(a+b)^2$ is $a^2 + b^2 + 2ab$. In this problem we see that we are subtracting off the two square terms from the expansion of $(37 + 12)^2$, so we are left with $2 \\cdot 37 \\cdot 12 = \\boxed{888}$."
+}

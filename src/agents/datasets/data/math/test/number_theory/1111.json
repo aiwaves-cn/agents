@@ -1,0 +1,6 @@
+{
+    "problem": "Of all the primes in the prime factorization of \\begin{align*}\\gcd(&2^23^35^57^711^{11}13^{13}17^{17}19^{19}23^{23}, \\\\ &\\quad 2^{23}3^{19}5^{17}7^{13}11^{11}13^717^519^323^2),\\end{align*}which prime appears with largest exponent?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The greatest common divisor of $2^a3^b5^c\\cdots$ and $2^{a'}3^{b'}5^{c'}\\cdots$ is $$2^{\\min\\{a,a'\\}}3^{\\min\\{b,b'\\}}5^{\\min\\{c,c'\\}}\\cdots.$$That is, each prime occurs with the smaller of the two exponents with which it occurs in the prime factorizations of the original two numbers.\n\nIn this case, the prime $11$ occurs with exponent $11$ in both of the original numbers, while all other primes occur with an exponent smaller than $11$ in one of the original numbers. Specifically, \\begin{align*}\n\\gcd(&2^23^35^57^711^{11}13^{13}17^{17}19^{19}23^{23},\\\\ &\\quad 2^{23}3^{19}5^{17}7^{13}11^{11}13^717^519^323^2)\n\\\\=\\ & 2^23^35^57^711^{11}13^717^519^323^2.\n\\end{align*}So, the prime with largest exponent in the $\\gcd$ is $\\boxed{11}$."
+}

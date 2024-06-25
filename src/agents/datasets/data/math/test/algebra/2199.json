@@ -1,0 +1,6 @@
+{
+    "problem": "Hillary has eleven coins, all dimes and nickels. In total, the coins are worth 75 cents. How many nickels does she have?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Let the number of dimes Hillary has be $d$ and the number of nickels she has be $n$. We have the two equations \\begin{align*}\nd+n&=11\\\\\n10d+5n&=75\n\\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$. From the first given equation, we have $d=11-n$. Substituting this into the simplified second given equation to eliminate $d$, we get $2(11-n)+n=15\\Rightarrow n=7$. Thus, Hillary has $\\boxed{7}$ nickels."
+}

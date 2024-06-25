@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers are in the list $$ 6,7,10,11,14,15,\\ldots,94,95,98? $$",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We first count the even terms of the sequence. Subtract $2$ from the list to get $4,$ $8,$ $12,$ $\\ldots,$ $92,$ $96,$ and then divide by $4$ to get $1,$ $2,$ $3,$ $\\ldots,$ $23,$ $24.$ So this list has ${24}$ numbers.\n\nWe then count the odd terms of the sequence. Subtract $3$ from the list to get $4,$ $8,$ $12,$ $\\ldots,$ $92,$ then divide by $4$ to get $1,$ $2,$ $3,$ $\\ldots,$ $23.$ So this list has ${23}$ numbers.\n\nNow we sum up the above two numbers, which yield a total $24+23=\\boxed{47}$ numbers."
+}

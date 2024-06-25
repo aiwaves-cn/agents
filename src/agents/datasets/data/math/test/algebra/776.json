@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)$ be the polynomial \\[f(x)=3x^4+5x^2-9x-2.\\] If $g(x)$ is equal to the polynomial $f(x-1)$, what is the sum of the coefficients of $g$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The sum of the coefficients of $g(x)$ can be found by evaluating $g(1)$.  Since $g(x)=f(x-1)$, we know that $g(1)=f(1-1)=f(0)$.  Therefore the sum of the coefficients is equal to $f(0)=\\boxed{-2}$."
+}

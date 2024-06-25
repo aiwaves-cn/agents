@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be integers such that\n\\[\\mathbf{A} = \\frac{1}{5} \\begin{pmatrix} -3 & a \\\\ b & c \\end{pmatrix}\\]and $\\mathbf{A}^2 = \\mathbf{I}.$  Find the largest possible value of $a + b + c.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\n\\mathbf{A}^2 &= \\frac{1}{25} \\begin{pmatrix} -3 & a \\\\ b & c \\end{pmatrix} \\begin{pmatrix} -3 & a \\\\ b & c \\end{pmatrix} \\\\\n&= \\frac{1}{25} \\begin{pmatrix} 9 + ab & -3a + ac \\\\ -3b + bc & ab + c^2 \\end{pmatrix}.\n\\end{align*}Thus, $9 + ab = ab + c^2 = 25$ and $-3a + ac = -3b + bc = 0.$\n\nFrom $9 + ab = ab + c^2 = 25,$ $ab = 16$ and $c^2 = 9,$ so $c = \\pm 3.$\n\nIf $c = -3,$ then $-6a = -6b = 0,$ so $a = b = 0.$  But then $ab = 0,$ contradiction, so $c = 3.$  Thus, any values of $a,$ $b,$ and $c$ such that $ab = 16$ and $c = 3$ work.\n\nWe want to maximize $a + b + c = a + \\frac{16}{a} + 3.$  Since $a$ is an integer, $a$ must divide 16.  We can then check that $a + \\frac{16}{a} + 3$ is maximized when $a = 1$ or $a = 16,$ which gives a maximum value of $\\boxed{20}.$"
+}

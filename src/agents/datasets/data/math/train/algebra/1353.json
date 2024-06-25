@@ -1,0 +1,6 @@
+{
+    "problem": "The square of $a$ and the square root of $b$ vary inversely. If $a=2$ when $b=81$, then find $b$ when $ab=48$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $a^2$ and $\\sqrt{b}$ are inversely proportional, $a^2\\sqrt{b}=k$ for some constant k.  Thus $k=2^2 \\sqrt{81} = 36$. Squaring both sides gives $a^4\\cdot b=1296$, so if $ab=48$ then dividing those two equations gives $a^3=\\frac{1296}{48}=27$, so $a=3$ and $b=\\frac{48}{3}=\\boxed{16}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $ABC$ with $\\angle B = 90^\\circ$, we have $\\sin A = 2\\cos A$.  What is $\\cos A$?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The triangle is shown below:\n\n[asy]\npair A,B,C;\nA = (0,0);\nB = (5,0);\nC = (5,10);\ndraw(A--B--C--A);\ndraw(rightanglemark(C,B,A,16));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\n[/asy]\n\nWe have $\\sin A = \\frac{BC}{AC}$ and $\\cos A = \\frac{AB}{AC}$, so $\\sin A = 2\\cos A$ gives us $\\frac{BC}{AC} = 2\\cdot\\frac{AB}{AC}$.  Multiplying both sides by $AC$ gives $BC = 2AB$.\n\nThe Pythagorean Theorem gives us $AB^2 + BC^2 = AC^2$.  Substituting $BC = 2AB$ gives \\[AB^2 + (2AB)^2 = AC^2.\\]Simplifying the left side gives $5AB^2 = AC^2$, so $\\frac{AB^2}{AC^2} = \\frac{1}{5}$, which means \\[\\cos A = \\frac{AB}{AC} = \\sqrt{\\frac{1}{5}} = \\frac{\\sqrt{1}}{\\sqrt{5}} = \\frac{1}{\\sqrt{5}} = \\boxed{\\frac{\\sqrt{5}}{5}}.\\]"
+}

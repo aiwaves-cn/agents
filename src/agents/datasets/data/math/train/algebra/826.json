@@ -1,0 +1,6 @@
+{
+    "problem": "On the Cartesian plane in which each unit is one foot, a dog is tied to a post on the point $(4,3)$ by a $10$ foot rope. What is the greatest distance the dog can be from the origin?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The area the dog can go in is a circle of radius $10$ centered at the point $(4,3)$. The point farthest from $(0,0)$ in the circle would be the point on the circle's circumference which is on the same diameter as $(0,0)$ but on the other side of the center of the circle.\nThe distance from the origin to the center of the circle, by the distance formula, is $\\sqrt{(4-0)^2+(3-0)^2}=\\sqrt{16+9}=5$. As the radius of the circle is $10$, the distance from the origin to the point in the circle farthest from the origin is $\\boxed{15}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the angle between the vectors $\\begin{pmatrix} 4 \\\\ 4 \\\\ 7 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 4 \\\\ 1 \\end{pmatrix},$ in degrees.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "If $\\theta$ is the angle between the vectors, then\n\\[\\cos \\theta = \\frac{\\begin{pmatrix} 4 \\\\ 4 \\\\ 7 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 4 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 4 \\\\ 4 \\\\ 7 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 1 \\\\ 4 \\\\ 1 \\end{pmatrix} \\right\\|} = \\frac{(4)(1) + (4)(4) + (7)(1)}{9 \\cdot \\sqrt{18}} = \\frac{27}{27 \\sqrt{2}} = \\frac{1}{\\sqrt{2}}.\\]Hence, $\\theta = \\boxed{45^\\circ}.$"
+}

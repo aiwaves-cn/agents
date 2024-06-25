@@ -1,0 +1,6 @@
+{
+    "problem": "Is\n\\[f(x) = \\frac{x}{x^2 + 1} + 3 \\sqrt[3]{x} - 2x\\]an even function, odd function, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since\n\\begin{align*}\nf(-x) &= \\frac{(-x)}{(-x)^2 + 1} + 3 \\sqrt[3]{-x} - 2(-x) \\\\\n&= -\\frac{x}{x^2 + 1} - 3 \\sqrt[3]{x} + 2x \\\\\n&= -f(x),\n\\end{align*}$f(x)$ is an $\\boxed{\\text{odd}}$ function."
+}

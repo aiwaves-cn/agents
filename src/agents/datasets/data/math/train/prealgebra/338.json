@@ -1,0 +1,6 @@
+{
+    "problem": "Let $d$ be a positive number such that when $109$ is divided by $d$, the remainder is $4.$ Compute the sum of all possible two-digit values of $d$.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "If 4 is subtracted from 109, the result is 105. Then each of the two-digit numbers that will divide 109 with a remainder of 4 will divide 105 exactly. Thus, the problem is equivalent to finding all two-digit divisors of 105. Since the prime factors of 105 are 3, 5, and 7, the divisors are $3\\times5$, $3\\times7$, and $5\\times7$, or $15, 21,\\text{and }35$ with a sum of $\\boxed{71}$."
+}

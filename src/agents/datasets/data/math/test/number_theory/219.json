@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the three digit cubes that are the cubes of either squares or cubes?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The cube of a square is a sixth power, and the cube of a cube is a ninth power. Therefore we need three digit sixth powers and ninth powers. The only three digit sixth power is $3^6=729,$ and the only three digit ninth power is $2^9=512.$ So the requested sum is $729+512=\\boxed{1241}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that $f(5) = 3$ and\n\\[f(4xy) = 2y[f(x + y) + f(x - y)]\\]for all real numbers $x$ and $y.$  Find $f(2015).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $y = 0,$ we get $f(0) = 0.$\n\nThen setting $x = 0,$ we get\n\\[f(0) = 2y[f(y) + f(-y)].\\]Assuming $y \\neq 0,$ we get $f(-y) + f(y) = 0.$  Hence, $f(-y) = -f(y)$ for all $y.$\n\nWe can reverse the roles of $x$ and $y$ to get\n\\[f(4xy) = 2x[f(x + y) + f(y - x)],\\]so\n\\[2y[f(x + y) + f(x - y)] = 2x[f(x + y) + f(y - x)].\\]Hence,\n\\[y f(x - y) - x f(y - x) = (x - y) f(x + y).\\]Since $f(y - x) = -f(x - y),$\n\\[(x + y) f(x - y) = (x - y) f(x + y).\\]We want to take $x$ and $y$ so that $x + y = 5$ and $x - y = 2015.$  Solving, we find $x = 1010$ and $y = -1005.$  Then\n\\[5 f(2015) = 2015 f(5),\\]so $f(2015) = \\frac{2015 f(5)}{5} = \\boxed{1209}.$"
+}

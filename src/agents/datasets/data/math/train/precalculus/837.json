@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence $(a_1,b_1)$, $(a_2,b_2)$, $(a_3,b_3)$, $\\ldots$ of points in the coordinate plane satisfies\n\\[(a_{n + 1}, b_{n + 1}) = (\\sqrt {3}a_n - b_n, \\sqrt {3}b_n + a_n)\\]for $n = 1,2,3,\\ldots$.  Suppose that $(a_{100},b_{100}) = (2,4)$. What is $a_1 + b_1$?  Express your answer using exponential notation.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $z_n = a_n + b_n i.$  Then\n\\begin{align*}\nz_{n + 1} &= (a_n \\sqrt{3} - b_n) + (b_n \\sqrt{3} + a_n) i \\\\\n&= a_n (\\sqrt{3} + i) + b_n (i \\sqrt{3} - 1) \\\\\n&= a_n (\\sqrt{3} + i) + b_n i (\\sqrt{3} + i) \\\\\n&= (\\sqrt{3} + i)(a_n + b_n i) \\\\\\\n&= (\\sqrt{3} + i) z_n.\n\\end{align*}Hence, $z_{100} = (\\sqrt{3} + i)^{99} z_1.$  To evaluate this expression, we write\n\\[\\sqrt{3} + i = 2 \\cdot \\left( \\frac{\\sqrt{3}}{2} + \\frac{1}{2} i \\right) = 2 \\operatorname{cis} 30^\\circ.\\]Then\n\\[(\\sqrt{3} + i)^{99} = 2^{99} \\operatorname{cis} 2970^\\circ = 2^{99} \\operatorname{cis} 90^\\circ = 2^{99} i.\\]Since $z_{100} = 2 + 4i,$\n\\[z_1 = \\frac{2 + 4i}{2^{99} i} = \\frac{4 - 2i}{2^{99}} = \\frac{2 - i}{2^{98}},\\]so\n\\[a_1 + b_1 = \\frac{2}{2^{98}} - \\frac{1}{2^{98}} = \\boxed{\\frac{1}{2^{98}}}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the $x$-coordinates of all possible positive integer solutions to $\\frac1x+\\frac1y=\\frac17$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Multiplying both sides of the equation by $7xy$ yields $7y + 7x = xy$. Re-arranging and applying Simon's Favorite Factoring Trick, it follows that $$xy - 7x - 7y + 49 = (x - 7)(y - 7) = 49.$$ Since $x$ and $y$ are positive integers, then $x-7$ is a positive integer factor of $49$. These factors are $1,7,49$, so $x = 8,14,56$, and their sum is $8 + 14 + 56 = \\boxed{78}$."
+}

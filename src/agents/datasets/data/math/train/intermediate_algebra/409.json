@@ -1,0 +1,6 @@
+{
+    "problem": "What must be the value of the coefficient $c$ in $P(x)=x^3+2x^2+cx+10$, in order for $x-5$ to be a factor of $P$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "From the Factor Theorem, if $x-5$ is a factor of $P$, then $P(5) = 0$. Using this we have\n$$5^3+2(5^2)+5c+10 = 0.$$Solving for $c$ gives us $c = \\boxed{-37}$."
+}

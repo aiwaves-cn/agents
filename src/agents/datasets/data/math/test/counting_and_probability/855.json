@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers can be expressed as the sum of two or more distinct elements of the set $\\{ 0, 1, 2, 4, 8, 16 \\}$?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We see that the given numbers, expressed in binary, are $$\\{0_2, 1_2, 10_2, 100_2, 1000_2, 10000_2\\}.$$  Thus we can generate any positive integer less than $100 000_2 = 32$ using two or more of these numbers.  So our answer is $\\boxed{31}$ numbers."
+}

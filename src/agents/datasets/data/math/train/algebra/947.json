@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $f$ and $g$ are polynomials, and that $h(x)=f(g(x))+g(x)$.  Find the degree of $g(x)$ given that the degree of $h(x)$ is $6$ and the degree of $f(x)$ is $2$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "$f(g(x))$ must have a degree of 6, because it will produce the term with the greatest exponent of the polynomial. Because $f(x)$ is a degree 2 polynomial, we can write that $f(x)=bx^2+cx+d$. The term with the greatest exponent in $f(g(x))$ comes from taking $bx^2$ or $b(g(x))^2$. Let $g(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+...+a_{2}x^{2}+a_{1}x^{1}+a_0$. Then, the highest degree term of $f(g(x))$ is $b(a_nx^n)^2$, which equals $ba_{n}^2x^{2n}$. Since the degree of $h$ is 6, we have $2n=6$, so $n=3$.  Therefore, the degree of $g$ is $\\boxed{3}$."
+}

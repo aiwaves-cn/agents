@@ -1,0 +1,6 @@
+{
+    "problem": "If $64^5 = 32^x$, what is the value of $2^{-x}$?  Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Noticing that both 64 and 32 are powers of 2, we can rewrite the expression as $\\left(2^6\\right)^5=\\left( 2^5 \\right) ^x$. Simplifying, we get \\begin{align*}\n\\left(2^6\\right)^5&=\\left( 2^5 \\right) ^x \\\\\n2^{6 \\cdot 5} &= 2^{5 \\cdot x} \\\\\n2^{30} &= 2^{5x} \\\\\n2^6&=2^x \\\\\n2^{-6} &= 2^{-x}\n\\end{align*} Thus, $2^{-6}=\\frac{1}{2^6}=\\boxed{\\frac{1}{64}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the distance between the two foci of the ellipse $x^2 + 4y^2 = 9.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Dividing by $9$ lets us write the equation of the ellipse in standard form: \\[\\left(\\frac{x}{3}\\right)^2 + \\left(\\frac{y}{3/2}\\right)^2 = 1.\\]Thus, the length of the two axes of the ellipse are $2 \\cdot 3 = 6$ and $2 \\cdot \\tfrac{3}{2} = 3,$ so the distance between the foci is $\\sqrt{6^2 - 3^2} = \\boxed{3\\sqrt3}.$"
+}

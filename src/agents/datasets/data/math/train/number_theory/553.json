@@ -1,0 +1,6 @@
+{
+    "problem": "Find $120_4\\times13_4\\div2_4$. Express your answer in base 4.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "It is much easier to find $120_4\\div2_4$ and then multiply by $13_4$ than it is to do the calculations in the original order. For $120_4\\div2_4$, we have  \\[\n\\begin{array}{c|ccc}\n\\multicolumn{2}{r}{} & 3 & 0 \\\\\n\\cline{2-4}\n2 & 1 & 2 & 0 \\\\\n\\multicolumn{2}{r}{1} & 2 & \\downarrow \\\\ \\cline{2-3}\n\\multicolumn{2}{r}{} & 0 & 0 \\\\\n\\multicolumn{2}{r}{} & 0 & 0 \\\\ \\cline{3-4}\n\\multicolumn{2}{r}{} & & 0\n\\end{array}\n\\]for a quotient of $30_4$. Note that $12_4\\div2_4=6_{10}\\div2_{10}=3_{10}=3_4$. Now we find the product of $13_4$ and $30_4$. $$\\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c@{}c}\n& & & & \\stackrel{2}{1} & 3_4& \\\\\n& & & \\times & & 3 & 0_4 \\\\\n\\cline{4-7} & & &1 &1 & 1 & 0_4 \\\\\n\\end{array}$$The answer is $\\boxed{1110_4}$."
+}

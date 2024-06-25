@@ -1,0 +1,6 @@
+{
+    "problem": "Three different natural numbers $x$, $y$ and $z$ each have exactly three natural-number factors. How many factors does $x^{2}y^{3}z^{4}$ have?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "By the formula for the total number of positive divisors, only natural numbers in the form $p^{2}$ for some prime $p$ have exactly three positive factors. Thus, $x=p_1^2$, $y=p_2^2$, and $z=p_3^2$ for distinct primes $p_1$, $p_2$, $p_3$. Then $x^2y^3z^4=p_1^4\\cdot p_2^6\\cdot p_3^8$, which has $(4+1)(6+1)(8+1)=\\boxed{315}$ positive factors."
+}

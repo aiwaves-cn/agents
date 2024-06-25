@@ -1,0 +1,6 @@
+{
+    "problem": "Find all solutions to $x(x+10) = 10(-10-x)$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Expanding both sides gives $x^2 + 10x = -100-10x$, rearranging gives  $x^2 +20x +100 =0$, and factoring gives $(x+10)(x+10)=0$. So, our only solution is $\\boxed{x=-10}$."
+}

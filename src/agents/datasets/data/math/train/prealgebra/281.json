@@ -1,0 +1,6 @@
+{
+    "problem": "A church rings its bells every 15 minutes, the school rings its bells every 20 minutes and the day care center rings its bells every 25 minutes. If they all ring their bells at noon on the same day, at what time will they next all ring their bells together?  (Answer in the form AB:CD without am or pm, such as 08:00)",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We simply need to find the Least Common Multiple of 15, 20, and 25.  They can be expressed as $3\\times 5$, $4\\times 5$, $5 \\times 5$ - since 3,4, and 5 are all relatively prime, their LCM is going to be $5 \\times 3 \\times 4 \\times 5 = 300$.  Thus, after 300 minutes, they will ring their bells together again.  300 minutes is 5 hours, so $\\boxed{05\\!:\\!00}$ p.m. will be the next time."
+}

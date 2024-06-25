@@ -1,0 +1,6 @@
+{
+    "problem": "In a solar system of $n$ planets, Zorn the World Conqueror can invade $m$ planets at a time, but once there are less than $m$ free worlds left, he stops. If he invades $13$ at a time then there are $6$ left, and if he invades $14$ at a time then there are $5$ left. If this solar system has more than $100$ planets, what is the smallest number of planets it could have?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The given information translates to the congruences \\begin{align*}\n&n\\equiv 6\\pmod{13},\\\\\n&n\\equiv 5\\pmod{14}.\n\\end{align*}From the first congruence we obtain that $n = 6 + 13k$ for some integer $k.$ Combining this result with the second congruence, we have $6+13k = n \\equiv 5 \\pmod {14}.$ Therefore, $k \\equiv 1 \\pmod {14}.$ So, $k = 1+14t$ for some integer $t.$ Substituting $1+14t$ for $k,$ we have  \\begin{align*}\nn&=6+13k \\\\\n&=6+13(1+14t) \\\\\n&=19+182t\\equiv 19\\pmod{182}.\n\\end{align*}The smallest such $n$ greater than $100$ is $\\boxed{201}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the $y$-coordinate of the point on the $y$-axis that is equidistant from points $A( -2, 0)$ and $B(-1,4)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Because the point for which we are looking is on the $y$-axis, we know that it is of the form $(0,y)$. We apply the distance formula. The distance from A is  \\[\\sqrt{(-2-0)^2+(0-y)^2} = \\sqrt{y^2+4}\\]The distance from B is  \\[\\sqrt{(-1-0)^2 + (4-y)^2} = \\sqrt{y^2-8y+17}\\]Because the point is equidistant from $A$ and $B$, we set the two distances equal: $y^2-8y+17 = y^2 + 4$. Simplifying gives us $8y=13$, or $y = \\boxed{\\frac{13}{8}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real values of $t$ which satisfy \\[\\frac{t(2t-3)}{4t-2} \\le 0.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $f(t) = t(2t-3)/(4t-2).$ We make a sign table for each of the three factors on the left-hand side:\n\\begin{tabular}{c|ccc|c} &$t$ &$2t-3$ &$4t-2$ &$f(t)$ \\\\ \\hline$t<0$ &$-$&$-$&$-$&$-$\\\\ [.1cm]$0<t<\\frac{1}{2}$ &$+$&$-$&$-$&$+$\\\\ [.1cm]$\\frac{1}{2}<t<\\frac{3}{2}$ &$+$&$-$&$+$&$-$\\\\ [.1cm]$t>\\frac{3}{2}$ &$+$&$+$&$+$&$+$\\\\ [.1cm]\\end{tabular}Therefore, we have $f(t) < 0$ when $t < 0$ or $\\tfrac12 < t < \\tfrac32.$ Because the inequality is non-strict, we must also include the values of $t$ for which $f(t) = 0,$ which are $t=0$ and $t =\\tfrac32.$ Putting all this together, we get that the set of solutions for $t$ is $\\boxed{(-\\infty, 0] \\cup (\\tfrac12, \\tfrac32]}.$"
+}

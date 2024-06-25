@@ -1,0 +1,6 @@
+{
+    "problem": "Suelyn counts up from 1 to 9, and then immediately counts down again to 1, and then back up to 9, and so on, alternately counting up and down $$(1, 2, 3,4,5,6,7,8,9,8,7,6,5,4,3,2,1,2,3,4,\\ldots ).$$ What is the $1000^{\\text{th}}$ integer in her list?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We can treat this list as a sequence with a repetitive pattern. We see the sequence repeats itself every 16 elements (from 1 to 9 then back to 2). Because 1000 divided by 16 is 62 with a remainder of 8, to get 1000 terms in this list, we repeat the block 62 times, and then go 8 more elements.  This means that the $1000^{\\text{th}}$ integer is the same as the $8^{\\text{th}}$ integer, which is $\\boxed{8}$."
+}

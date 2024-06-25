@@ -1,0 +1,6 @@
+{
+    "problem": "Find the infinite sum of\n$$\\frac{1}{7} + \\frac{2}{7^2} + \\frac{1}{7^3} + \\frac{2}{7^4} + \\cdots$$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let the sum be $S$.  We can split this into 2 geometric series:\n\\begin{align*}\nS &= \\left( \\frac{1}{7} + \\frac{1}{7^2} + \\frac{1}{7^3} + \\cdots \\right) + \\left( \\frac{1}{7^2} + \\frac{1}{7^4} + \\frac{1}{7^6} + \\cdots \\right) \\\\\n  &= \\frac{1/7}{1-1/7} + \\frac{1/49}{1-1/49} \\\\\n  &= \\frac{1/7}{6/7} + \\frac{1/49}{48/49} \\\\\n  &= \\frac{1}{6} + \\frac{1}{48} \\\\\n  &= \\boxed{ \\frac{3}{16} }\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Acme T-Shirt Company charges a $\\$50$ set-up fee plus $\\$9$ for  each shirt printed. Beta T-shirt Company has no set up fee, but charges $\\$14$ per shirt. What is the minimum number of shirts for which a customer saves money by using Acme?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We want to find the lowest integer $x$ such that: \\begin{align*}\n50+9x&<14x \\quad \\Rightarrow \\\\\n50&<5x \\quad \\Rightarrow \\\\\n10&<x.\n\\end{align*}The least integer greater than 10 is $\\boxed{11}$."
+}

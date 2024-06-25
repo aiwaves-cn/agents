@@ -1,0 +1,6 @@
+{
+    "problem": "Both roots of the quadratic equation $x^2 - 63 x + k = 0$ are prime numbers. How many possible values of $k$ are there?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $p$ and $q$ be two primes that are roots of $x^2 - 63 x + k = 0$. Then $$\nx^2 - 63 x + k = (x - p)(x - q) = x^2 - (p+q)x + p \\cdot q,\n$$ so $p + q = 63$ and $p\\cdot q=k$. Since $63$ is odd, one of the primes must be $2$ and the other $61$. Thus, there is exactly $\\boxed{1}$ possible value for $k$, namely $k = p\\cdot q = 2\\cdot 61=122$."
+}

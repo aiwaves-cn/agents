@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\n\\root 3 \\of {x \\root 3 \\of {x \\root 3 \\of {x \\sqrt{x}}}}.\n$ Express your answer in simplest radical form in terms of $x$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have\n\n\\begin{align*}\n\\root 3 \\of {x \\root 3 \\of {x \\root 3 \\of {x\\sqrt{x}}}}\n&= (x(x(x\\cdot x^{\\frac{1}{2}})^{\\frac{1}{3}})^{\\frac{1}{3}})^{\\frac{1}{3}} \\\\\n&= (x(x(x^{\\frac{3}{2}})^{\\frac{1}{3}})^{\\frac{1}{3}})^{\\frac{1}{3}} \\\\\n&= (x(x \\cdot x^{\\frac{1}{2}})^{\\frac{1}{3}})^{\\frac{1}{3}}\\\\\n&= (x(x^{\\frac{3}{2}})^{\\frac{1}{3}})^{\\frac{1}{3}} = (x\\cdot x^{\\frac{1}{2}})^{\\frac{1}{3}}\n= (x^{\\frac{3}{2}})^{\\frac{1}{3}} = x^{\\frac{1}{2}}=\\boxed{\\sqrt{x}}.\n\\end{align*}"
+}

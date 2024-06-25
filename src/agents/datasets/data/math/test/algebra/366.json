@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of the parabola defined by the equation $y=-(x+1)^2+1$ is shifted 1 unit to the right, then shifted 5 units down, then rotated 180 degrees about its vertex. The resulting parabola has zeros at $x=a$ and $x=b$, where $b\\ge a$. What is $b-a$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The graph of the original parabola ($A$) and its final image ($A'$) after rotation and translation is shown below:\n\n[asy]\n\nLabel f;\n\nf.p=fontsize(4);\n\nxaxis(-4,4,Ticks(f, 2.0));\n\nyaxis(-6,5,Ticks(f, 2.0));\n\nreal f(real x)\n\n{\n\nreturn x^2-4;\n\n}\n\ndraw(\"$A'$\", graph(f,-3,3), linewidth(1));\n\nreal g(real x)\n\n{\n\nreturn -(x+1)^2+1;\n\n}\n\ndraw(\"$A$\", graph(g,-3.5,1.5), linewidth(1));\n\n[/asy]\n\nShifting the original parabola 1 unit to the right changes its equation to $y=-x^2+1$. Shifting this last parabola 5 units down changes its equation to $y=-x^2-4$. Rotating it by 180 degrees changes its equation to $y=x^2-4$. So the equation of $A'$ is $y=x^2-4$. To find the zeros of this parabola, we set $y=0$ to get $0=x^2-4$. Factoring the right hand side, we get $0=(x-2)(x+2)$, so either $x-2=0\\Rightarrow x=2$ or $x+2=0 \\Rightarrow x=-2$. Thus, $a=-2$ and $b=2$, so $b-a=\\boxed{4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Altitudes $\\overline{AX}$ and $\\overline{BY}$ of acute triangle $ABC$ intersect at $H$.  If $\\angle BAC = 43^\\circ$ and $\\angle ABC = 67^\\circ$, then what is $\\angle HCA$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "First, we build a diagram:\n\n[asy]\nsize(150); defaultpen(linewidth(0.8));\npair B = (0,0), C = (3,0), A = (1.2,2), P = foot(A,B,C), Q = foot(B,A,C),H = intersectionpoint(B--Q,A--P);\ndraw(A--B--C--cycle);\ndraw(A--P^^B--Q);\npair Z;\nZ = foot(C,A,B);\ndraw(C--Z);\nlabel(\"$A$\",A,N); label(\"$B$\",B,W); label(\"$C$\",C,E); label(\"$X$\",P,S); label(\"$Y$\",Q,E); label(\"$H$\",H+(0,-0.17),SW);\nlabel(\"$Z$\",Z,NW);\ndraw(rightanglemark(B,Z,H,3.5));\ndraw(rightanglemark(C,P,H,3.5));\ndraw(rightanglemark(H,Q,C,3.5));\n[/asy]\n\nSince altitudes $\\overline{AX}$ and $\\overline{BY}$ intersect at $H$, point $H$ is the orthocenter of $\\triangle ABC$.  Therefore, the line through $C$ and $H$ is perpendicular to side $\\overline{AB}$, as shown.  Therefore, we have $\\angle HCA = \\angle ZCA = 90^\\circ - 43^\\circ = \\boxed{47^\\circ}$."
+}

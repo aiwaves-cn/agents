@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $\\angle C=90^\\circ$, $AC=6$ and $BC=8$. Points $D$ and $E$ are on $\\overline{AB}$ and $\\overline{BC}$, respectively, and $\\angle BED=90^\\circ$. If $DE=4$, then what is the length of $BD$? [asy]\nimport olympiad; import geometry; size(150); defaultpen(linewidth(0.8));\ndraw(origin--(6,0)--(6,8)--cycle);\ndraw((2,8/3)--(6,8/3));\ndot(\"$A$\",origin,SW); dot(\"$B$\",(6,8),NE); dot(\"$C$\",(6,0),SE); dot(\"$D$\",(2,8/3),W); dot(\"$E$\",(6,8/3),E);\ndraw(rightanglemark((6,8),(6,8/3),(2,8/3),12));\ndraw(rightanglemark((6,8),(6,0),(origin),12));\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Applying the Pythagorean Theorem to triangle $ABC$ gives $BA=10$. Since $\\triangle DBE\\sim\\triangle ABC$, $$\\frac{BD}{BA}=\\frac{DE}{AC}.\\qquad{\\rm So}\\qquad\nBD=\\frac{DE}{AC}(BA)=\\frac 46(10)=\\boxed{\\frac{20}{3}}.$$"
+}

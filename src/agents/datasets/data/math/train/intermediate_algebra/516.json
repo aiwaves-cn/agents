@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers such that\n\\[xy - \\frac{x}{y^2} - \\frac{y}{x^2} = 3.\\]Find the sum of all possible values of $(x - 1)(y - 1).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the given equation, $x^3 y^3 - x^3 - y^3 = 3x^2 y^2,$ or\n\\[x^3 y^3 - x^3 - y^3 - 3x^2 y^2 = 0.\\]We have the factorization\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc).\\]Taking $a = xy,$ $b = -x,$ and $c = -y,$ we get\n\\[x^3 y^3 - x^3 - y^3 - 3x^2 y^2 = (xy - x - y)(a^2 + b^2 + c^2 - ab - ac - bc) = 0.\\]If $xy - x - y = 0,$ then\n\\[(x - 1)(y - 1) = xy - x - y + 1 = 1.\\]If $a^2 + b^2 + c^2 - ab - ac - bc = 0,$ then $2a^2 + 2b^2 + 2c^2 - 2ab - 2ac - 2bc = 0,$ which we can write as\n\\[(a - b)^2 + (a - c)^2 + (b - c)^2 = 0.\\]This forces $a = b = c,$ so $xy = -x = -y.$  We get that $x = y,$ so $x^2 + x = x(x + 1) = 0.$  Hence, $x = 0$ or $x = -1.$  From the given condition, we cannot have $x = 0,$ so $x = -1,$ and $y = -1,$ so $(x - 1)(y - 1) = 4.$\n\nThus, the possible values of $(x - 1)(y - 1)$ are 1 and 4, and their sum is $\\boxed{5}.$"
+}

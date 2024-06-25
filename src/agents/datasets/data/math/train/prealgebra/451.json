@@ -1,0 +1,6 @@
+{
+    "problem": "Football tickets cost $\\$13.50$ each. What is the maximum number of tickets Jane can buy with $\\$100.00$?",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Since $n$ football tickets cost $(13.5)n$ dollars, Jane can buy $n$ tickets only if $(13.5)n \\le 100$. Dividing both sides of this inequality by $13.5$, we have $$n \\le \\frac{100}{13.5}.$$ We can rewrite $\\frac{100}{13.5}$ as $\\frac{200}{27}$. As a mixed number, this is $7\\frac{11}{27}$, since $27$ divides into $200$ seven times with a remainder of $11$. Since Jane can only buy a whole number of tickets, the largest number of tickets she can buy is $\\boxed{7}$."
+}

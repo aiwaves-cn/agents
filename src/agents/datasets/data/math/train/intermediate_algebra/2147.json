@@ -1,0 +1,6 @@
+{
+    "problem": "The average of the numbers $1, 2, 3,\\dots, 98, 99,$ and $x$ is $100x$. What is $x$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The sum of the numbers 1, 2, 3, $\\dots,$ 99 is $\\frac{99 \\cdot 100}{2} = 4950,$ so $x$ satisfies\n\\[\\frac{4950 + x}{100} = 100x.\\]Solving, we find $x = \\boxed{\\frac{50}{101}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A,B$ be the points on the coordinate plane with coordinates $(t-4,-1)$ and $(-2,t+3)$, respectively. The square of the distance between the midpoint of $\\overline{AB}$ and an endpoint of $\\overline{AB}$ is equal to $t^2/2$. What is the value of $t$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The distance between the midpoint of $\\overline{AB}$ and an endpoint of $\\overline{AB}$ is equal to half of the length of $\\overline{AB}$. By the distance formula,\n\n\\begin{align*}\nAB &= \\sqrt{((t-4)-(-2))^2 + ((-1)-(t+3))^2}\\\\\n&= \\sqrt{(t-2)^2+(t+4)^2} \\\\\n&= \\sqrt{2t^2 + 4t + 20}\n\\end{align*}Also, we know that $(AB/2)^2 = t^2/2 \\Longrightarrow AB = 2\\sqrt{t^2/2} = \\sqrt{2t^2}$. Setting these two expressions equal and squaring, we obtain $$AB^2 = 2t^2 = 2t^2 + 4t + 20 \\Longrightarrow 4t + 20 = 0.$$Thus, $t = \\boxed{-5}$."
+}

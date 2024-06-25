@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be integers such that $ab = 100.$  Find the minimum value of $a + b.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We claim that the minimum value is $-101.$\n\nIf $a = -1$ and $b = -100,$ then $ab = 100$ and $a + b = -101.$\n\nNow,\n\\begin{align*}\na + b + 101 &= a + \\frac{100}{a} + 101 \\\\\n&= \\frac{a^2 + 101a + 100}{a} \\\\\n&= \\frac{(a + 1)(a + 100)}{a}.\n\\end{align*}If $a$ is positive, then $b$ is positive, so $a + b$ is positive, so suppose $a$ is negative.  Then $b$ is negative.  Furthermore, since $a$ is a factor of 100, $-100 \\le a \\le -1.$  Hence, $a + 1 \\le 0$ and $a + 100 \\ge 0,$ so\n\\[a + b + 101 = \\frac{(a + 1)(a + 100)}{a} \\ge 0.\\]Equality occurs if and only if $a = -1$ or $a = -100,$ both of which lead to $a + b = -101.$\n\nTherefore, the minimum value of $a + b$ is $\\boxed{-101}.$"
+}

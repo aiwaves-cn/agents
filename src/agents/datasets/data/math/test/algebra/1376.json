@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)=x+1$ and $g(x)=2x$.  Also denote the inverses to these functions as $f^{-1}$ and $g^{-1}$.  Compute \\[f(g^{-1}(f^{-1}(f^{-1}(g(f(5)))))).\\]",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since $f$ is the function that adds one, $f^{-1}$ is the function that subtracts one.  Since $g$ is the function that doubles, $g^{-1}$ is the function that halves.  This lets us compute from inside out:\n\n\\begin{align*}\n&f(g^{-1}(f^{-1}(f^{-1}(g(f(5))))))\\\\\n&=f(g^{-1}(f^{-1}(f^{-1}(g(6)))))&\\text{added 1}\\\\\n&=f(g^{-1}(f^{-1}(f^{-1}(12))))&\\text{doubled}\\\\\n&=f(g^{-1}(f^{-1}(11)))&\\text{subtracted 1}\\\\\n&=f(g^{-1}(10))&\\text{subtracted 1}\\\\\n&=f(5)&\\text{half}\\\\\n&=\\boxed{6}&\\text{added 1}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "For $\\mathbf{v} = \\begin{pmatrix} -10 \\\\ 6 \\end{pmatrix}$ and $\\mathbf{w} = \\begin{pmatrix} 15 \\\\ -9 \\end{pmatrix}$, compute $\\text{proj}_{\\mathbf{w}} \\mathbf{v}$.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Since\n\\[\\bold{v} = \\begin{pmatrix} -10 \\\\ 6 \\end{pmatrix} = -\\frac{2}{3} \\begin{pmatrix} 15 \\\\ -9 \\end{pmatrix} = -\\frac{2}{3} \\bold{w}\\]is a scalar multiple of $\\bold{w}$,\n\\[\\text{proj}_{\\bold{w}} \\bold{v} = \\bold{v} = \\boxed{\\begin{pmatrix} -10 \\\\ 6 \\end{pmatrix}}.\\]"
+}

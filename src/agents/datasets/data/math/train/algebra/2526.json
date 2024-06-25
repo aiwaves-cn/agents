@@ -1,0 +1,6 @@
+{
+    "problem": "The graphs of $2y + x + 3 = 0$  and $3y + ax + 2 = 0$ are perpendicular. Solve for $a.$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Solving $2y + x + 3 = 0$ for $y$ gives $ y = \\frac{-1}{2}x - \\frac{3}{2},$ so the slope of this line is $-\\frac{1}{2}.$\n\nSolving $3y + ax + 2 = 0$ for $y$ gives $ y = \\frac{-a}{3}x - \\frac{2}{3},$ so the slope of this line is $- \\frac{a}{3}.$\n\nIn order for these lines to be perpendicular, we must have $$\\left(-\\frac{1}{2}\\right)\\left(-\\frac{a}{3}\\right) = -1.$$Solving for $a$ gives $a = \\boxed{-6}.$"
+}

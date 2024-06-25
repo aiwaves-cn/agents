@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\dbinom{25}{2}$.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "\\begin{align*}\n\\dbinom{25}{2} &= \\dfrac{25!}{23!2!} \\\\\n&= \\dfrac{25\\times 24}{2\\times 1} \\\\\n&= 25 \\times \\dfrac{24}{2} \\\\\n&= 25 \\times 12 \\\\\n&= \\boxed{300}.\n\\end{align*}"
+}

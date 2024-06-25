@@ -1,0 +1,6 @@
+{
+    "problem": "The range of the function $f(x)$ is $[-3,5].$  Let $g(x) = [f(x)]^2.$  Find the range of the function $g(x).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = f(x),$ so $y$ can take on any value from $-3$ to 5, inclusive.  Then $y^2$ can take on any value from 0 to 25, inclusive.  (If we take any value from $-3$ to 0 and square it, we get a value from 0 to 9.  And if we take any value from 0 to 5 and square it, we get a value from 0 to 25.)  Therefore, the range of $g(x)$ is $\\boxed{[0,25]}.$"
+}

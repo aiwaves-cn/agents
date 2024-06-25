@@ -1,0 +1,6 @@
+{
+    "problem": "Find $A+B$ (in base 10), given the following addition problem  \\[ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c}& & & 4 & A & B_{6}\\\\ &+& & & 4 & 1_{6}\\\\ \\cline{2-6}& & & 5 & 3 & A_{6}\\\\ \\end{array} \\]",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "From the middle column, we see that $A_6+4_6=13_6$, so $A+4=1\\cdot6+3=9$ and $A=5$. Since the rightmost column tells us that $B_6+1_6=A_6$, $B=5-1=4$. Therefore, $A+B=5+4=\\boxed{9}$."
+}

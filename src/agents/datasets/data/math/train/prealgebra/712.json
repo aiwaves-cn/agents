@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest four-digit palindrome that is divisible by 4?  (A palindrome is a number that reads the same forwards and backwards, like 61216.)",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Every four-digit palindrome is of the form $ABBA$, where $A$ and $B$ are digits.  The four-digit number $ABBA$ is divisible by 4 if and only if the two-digit number $BA$ is divisible by 4.  In particular, the digit $A$ must be even.\n\nSince $ABBA$ is a four-digit number, $A$ cannot be 0, so $A$ must be at least 2.  For $A = 2$, so the smallest digit $B$ for which $BA = B2$ is divisible by 4 is 12.  Therefore, the smallest smallest four-digit palindrome that is divisible by 4 is $\\boxed{2112}$."
+}

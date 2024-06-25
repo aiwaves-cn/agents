@@ -1,0 +1,6 @@
+{
+    "problem": "Find $3x^2 y^2$ if $x$ and $y$ are integers such that $y^2 + 3x^2 y^2 = 30x^2 + 517$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If we move the $x^2$ term to the left side, it is factorable:\n\\[(3x^2 + 1)(y^2 - 10) = 517 - 10\\]\n$507$ is equal to $3 \\cdot 13^2$. Since $x$ and $y$ are integers, $3x^2 + 1$ cannot equal a multiple of three. $169$ doesn't work either, so $3x^2 + 1 = 13$, and $x^2 = 4$. This leaves $y^2 - 10 = 39$, so $y^2 = 49$. Thus, $3x^2 y^2 = 3 \\times 4 \\times 49 = \\boxed{588}$."
+}

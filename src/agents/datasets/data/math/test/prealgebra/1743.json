@@ -1,0 +1,6 @@
+{
+    "problem": "For how many two-digit primes is the sum of the digits equal to 8?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "First, we list all the two-digit numbers with a digits sum of 8:\n\n17, 26, 35, 44, 53, 62, 71, 80\n\nClearly, 26, 44, 62, and 80 are not prime.  35 is not prime, but 17, 53, and 71 are (we can verify this by dividing each number by all the primes less than its square root (why is this?)).  Hence, the answer is $\\boxed{3}$ two-digit primes."
+}

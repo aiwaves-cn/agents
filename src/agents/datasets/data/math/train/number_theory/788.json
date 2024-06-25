@@ -1,0 +1,6 @@
+{
+    "problem": "Find $73^{-1} \\pmod{74}$, as a residue modulo 74.  (Give an answer between 0 and 73, inclusive.)",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since $73^2 \\equiv (-1)^2 \\equiv 1 \\pmod{74}$, $73^{-1} \\equiv \\boxed{73} \\pmod{74}$."
+}

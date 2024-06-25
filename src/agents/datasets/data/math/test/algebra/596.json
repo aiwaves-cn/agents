@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest integer that satisfies the inequality: \\[\n(x-5)(x+5)<0.\n\\]",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "For the product of two factors to be negative, one of the factors must be positive and one of the factors must be negative. Since $x-5<x+5$ for all $x$, we know that $x$ satisfies $(x-5)(x+5)<0$ if and only if $$x-5 < 0 < x+5.$$ The first inequality, $x-5<0$, tells us that $x<5$. The second inequality, $0<x+5$, tells us that $x>-5$. Thus the solutions to the original inequality are given by $-5<x<5$.\n\nThe smallest integer in this interval is $x=\\boxed{-4}$."
+}

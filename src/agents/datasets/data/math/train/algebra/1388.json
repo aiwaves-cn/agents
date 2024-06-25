@@ -1,0 +1,6 @@
+{
+    "problem": "By starting with a million and alternatively dividing by 2 and multiplying by 5, Anisha created a sequence of integers that starts 1000000, 500000, 2500000, 1250000, and so on. What is the last integer in her sequence? Express your answer in the form $a^b$, where $a$ and $b$ are positive integers and $a$ is as small as possible.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Anisha begins with the integer $10^6=(2^6)(5^6)$.  After 12 steps, every factor of 2 is removed and replaced with a factor of $5$, so what remains is $5^6\\cdot 5^6=\\boxed{5^{12}}$."
+}

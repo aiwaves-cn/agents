@@ -1,0 +1,6 @@
+{
+    "problem": "Find the curve defined by the equation\n\\[r^2 \\cos 2 \\theta = 4.\\](A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From $r^2 \\cos 2 \\theta = 4,$\n\\[r^2 (\\cos^2 \\theta - \\sin^2 \\theta) = r^2 \\cos^2 \\theta - r^2 \\sin^2 \\theta = 4.\\]Then $x^2 - y^2 = 4,$ or\n\\[\\frac{x^2}{4} - \\frac{y^2}{4} = 1.\\]Thus, the graph represents a hyperbola.  The answer is $\\boxed{\\text{(E)}}.$\n\n[asy]\nunitsize(0.5 cm);\n\npair moo (real t) {\n  real r = sqrt(4/Cos(2*t));\n  return (r*Cos(t), r*Sin(t));\n}\n\npath foo = moo(-44);\nreal t;\n\nfor (t = -44; t <= 44; t = t + 0.1) {\n  foo = foo--moo(t);\n}\n\ndraw(foo,red);\ndraw(reflect((0,0),(0,1))*(foo),red);\n\ndraw((-4,0)--(4,0));\ndraw((0,-4)--(0,4));\n\nlimits((-4,-4),(4,4),Crop);\n\nlabel(\"$r^2 \\cos 2 \\theta = 4$\", (6.5,1.5), red);\n[/asy]"
+}

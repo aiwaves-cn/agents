@@ -1,0 +1,6 @@
+{
+    "problem": "A point $(x,y)$ is a distance of 12 units from the $x$-axis. It is a distance of 10 units from the point $(1,6)$. It is a distance $n$ from the origin. Given that $x>1$, what is $n$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we know that this point is above the $x$-axis because it is closer to a point in the first quadrant than it is to the $x$-axis. Next, we know that $y=12$ from the given information. By the distance formula, we have the equation $\\sqrt{(x-1)^2+(12-6)^2}=10$. Solving, we have \\begin{align*}\n\\sqrt{(x-1)^2+(12-6)^2}=10 \\\\\nx^2-2x+1+36&=100 \\\\\nx^2-2x-63&=0 \\\\\n(x-9)(x+7)&=0\n\\end{align*}Thus, $x-9=0$ or $x+7=0$, so $x=9$ or $x=-7$. $x=9$ by the given conditions. Thus, our point is $(9,12)$ and is a distance of $\\sqrt{9^2+12^2}=15$ units from the origin. $n=\\boxed{15}$."
+}

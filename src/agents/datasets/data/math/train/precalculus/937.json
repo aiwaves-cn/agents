@@ -1,0 +1,6 @@
+{
+    "problem": "If $e^{i \\alpha} = \\frac{3}{5}  +\\frac{4}{5} i$ and $e^{i \\beta} = -\\frac{12}{13} + \\frac{5}{13} i,$ then find $\\sin (\\alpha + \\beta).$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Multiplying the given equations, we obtain\n\\[e^{i (\\alpha + \\beta)} = \\left( \\frac{3}{5}  +\\frac{4}{5} i \\right) \\left( -\\frac{12}{13} + \\frac{5}{13} i \\right) = -\\frac{56}{65} - \\frac{33}{65} i.\\]But $e^{i (\\alpha + \\beta)} = \\cos (\\alpha + \\beta) + i \\sin (\\alpha + \\beta),$ so $\\sin (\\alpha + \\beta) = \\boxed{-\\frac{33}{65}}.$"
+}

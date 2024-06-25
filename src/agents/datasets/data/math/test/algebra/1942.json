@@ -1,0 +1,6 @@
+{
+    "problem": "If the function $j(x)$ is defined only on domain $[-1,2]$, and is defined on this domain by the formula $$j(x) = 2x^2+1,$$ then what is the range of $j(x)$? Express your answer as an interval or as a union of intervals.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Note that $x^2$ assumes every value from $0$ to $4$, inclusive, as $x$ varies throughout the interval $[-1,2]$. Therefore, $j(x)$ assumes every value from $2(0)+1=1$ to $2(4)+1=9$ (and no other values). The range of $j(x)$ is $\\boxed{[1,9]}$."
+}

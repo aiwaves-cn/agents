@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive factors of 72 are perfect cubes?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Prime factorize $72$ as $2^3\\cdot 3^2$.  A positive integer is a factor of 72 if and only if the exponents in its prime factorization are less than or equal to the corresponding exponents in the prime factorization of 72.  Also, a positive integer is a perfect cube if and only if every exponent is a multiple of 3.  Therefore, in forming a perfect cube factor of 72, we have 2 choices for the exponent of $2$ (either 0 or 3) and only 1 choice for the exponent of 3 (namely 0).  There are $2\\cdot 1=\\boxed{2}$ ways to make these choices."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Dayna writes the integers $$1,2,3,4,5,6,7,8,9,10,11,12$$on a chalkboard, then she erases the integers from $1$ through $6$, as well as their multiplicative inverses $\\pmod{13}$. What is the only integer Dayna does not erase?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that: \\begin{align*}\n1\\cdot 1 = 1&\\equiv 1\\pmod{13} \\\\\n2\\cdot 7 = 14 &\\equiv 1\\pmod{13} \\\\\n3\\cdot 9 = 27 &\\equiv 1\\pmod{13} \\\\\n4\\cdot 10 = 40 &\\equiv 1\\pmod{13} \\\\\n5\\cdot 8 = 40 &\\equiv 1\\pmod{13} \\\\\n6\\cdot 11 = 66 &\\equiv 1\\pmod{13}\n\\end{align*} Thus the modulo $13$ inverses of $1,2,3,4,5,6$ are $1,7,9,10,8,11,$ respectively. The only residue from $7$ through $12$ that is not the inverse of a residue from $1$ through $6$ is $\\boxed{12}$ (which is its own inverse).\n\n(Note that $m-1$ is always its own inverse modulo $m$, so we know without doing most of the work above that Dayna could not have erased $12$. The rest of the work only goes to confirm that $12$ is the $\\textbf{only}$ residue she did not erase.)"
+}

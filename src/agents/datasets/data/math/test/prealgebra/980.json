@@ -1,0 +1,6 @@
+{
+    "problem": "What is $0.4\\overline8 + 0.\\overline{37}$? Express your answer as a common fraction in lowest terms.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "First let's convert $0.4\\overline8$ to a fraction. Let $p=0.4\\overline8$ and multiply both sides of this equation by 10 to obtain $10p=4.8\\overline{8}$. Subtracting the left-hand sides $10p$ and $p$ as well as the right-hand sides $4.8\\overline{8}$ and $0.4\\overline{8}$ of these two equations gives $9p=4.4$, which implies $p=44/90 = 22/45$.\n\nNext, let's convert $0.\\overline{37}$ to a fraction. Let $q=0.\\overline{37}$ and multiply both sides of this equation by 100 to obtain $100q = 37.\\overline{37}.$ Subtracting the left-hand sides $100q$ and $q$ as well as the right-hand sides $37.\\overline{37}$ and $0.\\overline{37}$ of these two equations gives $99q = 37$, which implies $q = \\frac{37}{99}.$\n\nWe add $p$ and $q$ to get our answer: \\begin{align*}\n\\frac{22}{45} + \\frac{37}{99} &= \\frac{22}{45} \\cdot \\frac{11}{11} + \\frac{37}{99} \\cdot \\frac{5}{5} \\\\\n&= \\frac{242}{495} + \\frac{185}{495} = \\boxed{\\frac{427}{495}}.\n\\end{align*}"
+}

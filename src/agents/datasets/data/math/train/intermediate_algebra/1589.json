@@ -1,0 +1,6 @@
+{
+    "problem": "There is a unique polynomial $P(x)$ of degree $4$ with rational coefficients and leading coefficient $1$ which has $\\sqrt{2}+\\sqrt{5}$ as a root. What is $P(1)$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We guess that $\\sqrt{2} - \\sqrt{5}$ is also a root of $P(x).$ In that case, $P(x)$ must be divisible by the polynomial \\[(x-(\\sqrt2+\\sqrt5))(x-(\\sqrt2-\\sqrt5)) =  x^2 - 2x\\sqrt{2} - 3.\\]Now we see that if we multiply this polynomial by $ x^2 + 2x\\sqrt{2} - 3,$ we get a polynomial with rational coefficients: \\[( x^2 - 2x\\sqrt{2} - 3)( x^2 + 2x\\sqrt{2} - 3)=x^4-14x^2+9.\\]Therefore, $P(x) = x^4-14x^2+9,$ and so $P(1)=1-14+9=\\boxed{-4}.$"
+}

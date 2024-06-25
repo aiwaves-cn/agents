@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $1 + 2 + 3 + 4 + \\dots + 9 + 10$ is  divided by 8?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Notice that we can pair many of these terms: \\[1+7=2+6=3+5=8,\\]so the remainder we want is the same as the remainder when $4+9+10$ is divided by 8.  We also see that this is the remainder when  \\[4+1+2=7\\]is divided by 8, so the answer is $\\boxed{7}$."
+}

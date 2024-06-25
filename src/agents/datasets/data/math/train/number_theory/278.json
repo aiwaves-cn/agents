@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest common divisor of $40304$ and $30203$.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "By the Euclidean Algorithm: \\begin{align*}\n\\text{gcd}(40304, 30203) &= \\text{gcd}(40304-30203, 30203) \\\\\n&= \\text{gcd}(10101, 30203) \\\\\n&= \\text{gcd}(30203-2\\cdot10101, 10101) \\\\\n&= \\text{gcd}(10001, 10101) \\\\\n&= \\text{gcd}(10101 - 10001, 10001) \\\\\n&= \\text{gcd}(100, 10001) \\\\\n&= \\text{gcd}(10001 - 100\\cdot100, 100) \\\\\n&= \\text{gcd}(1, 100) \\\\\n\\end{align*}Therefore, the greatest common divisor of $40304$ and $30203$ is $\\boxed{1}$"
+}

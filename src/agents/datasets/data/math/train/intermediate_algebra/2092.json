@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be positive real numbers, with $a > b.$  Compute\n\\[\\frac{1}{ba} + \\frac{1}{a(2a - b)} + \\frac{1}{(2a - b)(3a - 2b)} + \\frac{1}{(3a - 2b)(4a - 3b)} + \\dotsb.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The $n$th term is\n\\[\\frac{1}{[(n - 1) a - (n - 2) b][na - (n - 1) b]}.\\]We can write\n\\begin{align*}\n\\frac{1}{[(n - 1) a - (n - 2) b][na - (n - 1) b]} &= \\frac{a - b}{(a - b)[(n - 1) a - (n - 2) b][na - (n - 1) b]} \\\\\n&= \\frac{[na - (n - 1) b] - [(n - 1) a - (n - 2) b]}{(a - b)[(n - 1) a - (n - 2) b][na - (n - 1) b]} \\\\\n&= \\frac{1}{(a - b)[(n - 1)a - (n - 2)b]} - \\frac{1}{(a - b)[na - (n - 1)b]}.\n\\end{align*}Thus,\n\\begin{align*}\n&\\frac{1}{ba} + \\frac{1}{a(2a - b)} + \\frac{1}{(2a - b)(3a - 2b)} + \\frac{1}{(3a - 2b)(4a - 3b)} + \\dotsb \\\\\n&= \\left( \\frac{1}{(a - b)b} - \\frac{1}{(a - b)a} \\right) + \\left( \\frac{1}{(a - b)a} - \\frac{1}{(a - b)(2a - b)} \\right) + \\left( \\frac{1}{(a - b)(2a - b)} - \\frac{1}{(a - b)(3a - 2b)} \\right) + \\dotsb \\\\\n&= \\boxed{\\frac{1}{(a - b)b}}.\n\\end{align*}"
+}

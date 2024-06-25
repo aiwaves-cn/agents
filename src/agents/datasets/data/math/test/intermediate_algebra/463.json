@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of the rational function $\\frac{2x^7-5x^4 + 3x^3 -x+5}{q(x)} $ has a horizontal asymptote. What is the smallest possible degree of $q(x)$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The numerator of the given function has degree $7$. Hence, if $q(x)$ has degree less than $7$, the function will have no horizontal asymptote. Therefore, the degree of $q(x)$ must be at least $7$. To see that $7$ works, we can consider $q(x) = x^7$. Then as $x$ grows away from $0$, the $x^7$ terms in the function will dominate and the function will tend towards $\\frac{2x^7}{x^7} = 2$. Thus the smallest possible degree of $q(x)$ is $\\boxed{7}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\tan x + 2 \\tan 2x + 4 \\tan 4x + 8 \\cot 8x.\\]The answer will be a trigonometric function of some simple function of $x,$ like \"$\\cos 2x$\" or \"$\\sin (x^3)$\".",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Note that\n\\begin{align*}\n\\cot \\theta - 2 \\cot 2 \\theta &= \\frac{\\cos \\theta}{\\sin \\theta} - \\frac{2 \\cos 2 \\theta}{\\sin 2 \\theta} \\\\\n&= \\frac{2 \\cos^2 \\theta}{2 \\sin \\theta \\cos \\theta} - \\frac{2 (\\cos^2 \\theta - \\sin^2 \\theta)}{2 \\sin \\theta \\cos \\theta} \\\\\n&= \\frac{2 \\sin^2 \\theta}{2 \\sin \\theta \\cos \\theta} \\\\\n&= \\frac{\\sin \\theta}{\\cos \\theta} \\\\\n&= \\tan \\theta.\n\\end{align*}Taking $\\theta = x,$ $2x,$ and $4x,$ we get\n\\begin{align*}\n\\cot x - 2 \\cot 2x &= \\tan x, \\\\\n\\cot 2x - 2 \\cot 4x &= \\tan 2x, \\\\\n\\cot 4x - 2 \\cot 8x &= \\tan 4x.\n\\end{align*}Therefore,\n\\begin{align*}\n\\tan x + 2 \\tan 2x + 4 \\tan 4x + 8 \\cot 8x &= \\cot x - 2 \\cot 2x + 2 (\\cot 2x - 2 \\cot 4x) + 4 (\\cot 4x - 2 \\cot 8x) + 8 \\cot 8x \\\\\n&= \\boxed{\\cot x}.\n\\end{align*}"
+}

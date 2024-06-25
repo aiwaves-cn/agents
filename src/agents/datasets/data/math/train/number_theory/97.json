@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the proper divisors of 256?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since $256=2^8$ the divisors of $256$ are the powers of 2 up to $2^8$. So the sum of the proper factors of 256 is $2^0+2^1+2^2+2^3+2^4+2^5+2^6+2^7=\\boxed{255}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $a,$ $b$ and $c$ are three (not necessarily different) numbers chosen randomly and with replacement from the set $\\{1,2,3,4,5\\},$ what is the probability that $ab+c$ is even?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The quantity $ab+c$ is even if and only if $ab$ and $c$ are both odd or both even. The probability that $c$ is odd is $\\frac{3}{5},$ and the probability that $ab$ is odd is $\\left(\\frac{3}{5}\\right)^2 = \\frac{9}{25}$ (because both $a$ and $b$ must be odd). Therefore, the probability that $ab+c$ is even is \\[\\frac{3}{5} \\cdot \\frac{9}{25} + \\left(1 - \\frac{3}{5}\\right)\\left(1 - \\frac{9}{25}\\right) = \\boxed{\\frac{59}{125}}.\\]"
+}

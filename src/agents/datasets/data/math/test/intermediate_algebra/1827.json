@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangular box has sides of length 2003, 2004, and $2003 \\cdot 2004.$  Compute the length of the space diagonal of the box.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $n = 2003.$  Then the sides of the box are $n,$ $n + 1,$ and $n(n + 1) = n^2 + n,$ so if $d$ is the length of the space diagonal of the box, then\n\\[d^2 = n^2 + (n + 1)^2 + (n^2 + n)^2 = n^4 + 2n^3 + 3n^2 + 2n + 1.\\]Note that $n^4 + 2n^3 + 3n^2 + 2n + 1 = (n^2 + n + 1)^2,$ so\n\\[d = n^2 + n + 1 = \\boxed{4014013}.\\]"
+}

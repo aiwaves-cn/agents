@@ -1,0 +1,6 @@
+{
+    "problem": "If $a$ and $b$ are positive integers for which $ab - 3a + 4b = 137$, what is the minimal possible value of $|a - b|$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We apply Simon's Favorite Factoring Trick and note that if we subtract 12 from both sides, then the left side can be factored. Thus, $$ab - 3a + 4b -12 = 125 \\rightarrow (a+4)(b-3) = 125$$Since $a,b$ are positive integers, then $a+4, b-3$ must be a pair of factors of $125= 5^3$, so $(a+4,b-3)$ must be among  $$(1,125), (5,25), (25,5),(125,1).$$Thus, $(a,b)$ must be among  $$(-3,128), (1,28), (21,8), (121,4).$$Ruling out the first solution on account of the negative value for $a$, we find that the minimal value of $|a-b|$ among the remaining three is $|21-8|=\\boxed{13}$."
+}

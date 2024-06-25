@@ -1,0 +1,6 @@
+{
+    "problem": "What is the tenth term in the geometric sequence $9,3,1,\\frac 13, \\ldots$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We could write out all of the terms until we get to the tenth term, but instead we can find the formula for the $n$th term in the geometric sequence. Since 9 is the first term and we multiply by $\\frac{1}{3}$ to find the next term, we determine that the formula for the geometric sequence is $a_n=9\\cdot\\left(\\frac{1}{3}\\right)^{(n-1)}$. That means $a_{10}=9\\cdot\\left(\\frac{1}{3}\\right)^9=\\frac{3^2}{3^9}=\\frac{1}{3^7}=\\boxed{\\frac{1}{2187}}$."
+}

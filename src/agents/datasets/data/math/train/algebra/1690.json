@@ -1,0 +1,6 @@
+{
+    "problem": "The number of cans in the layers of a display in a supermarket form an arithmetic sequence. The bottom layer has 28 cans; the next layer has 25 cans and so on until there is one can at the top of the display. How many cans are in the entire display?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The arithmetic series is $1 + 4 + \\cdots + 25 + 28$, with a common difference of 3. Suppose there are $n$ terms in the series. Then 28 is the $n$th term, so $1 + (n-1)\\cdot 3 = 28$. Solving, we get $n = 10$. The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $(1 + 28)/2 \\cdot 10 = \\boxed{145}$."
+}

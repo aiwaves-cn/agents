@@ -1,0 +1,6 @@
+{
+    "problem": "John recently bought a used car for $\\$5000$ for his pizza delivery job. He gets $\\$10$ for each pizza he delivers, but he has to spend $\\$3$ on gas for each pizza he delivers. What is the minimum whole number of pizzas John must deliver in order to earn back the money he spent on the car he bought?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Let $p$ be the number of pizzas he bought. He makes $10p$ dollars selling $p$ pizzas, but he spends $3p$ dollars on gas. Therefore, we have \\begin{align*}\n10p-3p &\\ge 5000 \\\\\n\\Rightarrow\\qquad 7p &\\ge 5000 \\\\\n\\Rightarrow\\qquad p &\\ge \\frac{5000}{7} \\\\\n\\Rightarrow\\qquad p &\\ge 714\\frac{2}{7}.\n\\end{align*}Therefore, John must sell at least $\\boxed{715}$ pizzas to earn back the $\\$5000$ he spent on the car."
+}

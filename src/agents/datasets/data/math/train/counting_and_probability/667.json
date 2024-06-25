@@ -1,0 +1,6 @@
+{
+    "problem": "Two tour guides are leading six tourists. The guides decide to split up. Each tourist must choose one of the guides, but with the stipulation that each guide must take at least one tourist. How many different groupings of guides and tourists are possible?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The first guide can take any combination of tourists except all the tourists or none of the tourists. Therefore the number of possibilities is \\[\n\\binom{6}{1}+\\binom{6}{2}+\\binom{6}{3}+\\binom{6}{4}+\\binom{6}{5}=6+15+20+15+6=62.\n\\] OR\n\nIf each guide did not need to take at least one tourist, then each tourist could choose one of the two guides independently. In this case there would be $2^6=64$ possible arrangements. The two arrangements for which all tourists choose the same guide must be excluded, leaving a total of $64-2=\\boxed{62}$ possible arrangements."
+}

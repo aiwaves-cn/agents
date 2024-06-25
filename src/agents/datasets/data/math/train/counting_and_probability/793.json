@@ -1,0 +1,6 @@
+{
+    "problem": "Dr. Math's four-digit house number $ABCD$ contains no zeroes and can be split into two different two-digit primes ``$AB$'' and ``$CD$'' where the digits $A$, $B$, $C$ and $D$ are not necessarily distinct. If each of the two-digit primes is less than 40, how many such house numbers are possible?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The two-digit primes less than 40 are 11, 13, 17, 19, 23, 29, 31, and 37.  Thus there are $8$ choices for the two-digit prime $AB$.  Since $AB$ and $CD$ must be distinct, there are $7$ remaining choices for $CD$.  Altogether, there are $8\\cdot 7 = \\boxed{56}$ choices for $AB$ and $CD$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ is isosceles with angle $B$ congruent to angle $C$. The measure of angle $C$ is four times the measure of angle $A$. What is the number of degrees in the measure of angle $B$?",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Let $x$ be the number of degrees in $\\angle A$. Then $\\angle C=4x^\\circ$, and $\\angle B$ is also $4x^\\circ$ (since $\\angle B$ is congruent to $\\angle C$).\n\nSince the sum of angles in a triangle is $180^\\circ$, we have $$x + 4x + 4x = 180,$$ which we can solve for $x=20$. Therefore, $\\angle B = 4\\cdot 20 = \\boxed{80}$ degrees."
+}

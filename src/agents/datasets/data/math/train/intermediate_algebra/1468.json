@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 3 \\quad \\text{and} \\quad \\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} = 0,\\]find $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2}.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $p = \\frac{x}{a},$ $q = \\frac{y}{b},$ $r = \\frac{z}{c}.$  Then $p + q + r = 3$ and $\\frac{1}{p} + \\frac{1}{q} + \\frac{1}{r} = 0,$ so $pq + pr + qr = 0.$\n\nWe want $p^2 + q^2 + r^2.$  Squaring the equation $p + q + r = 3,$ we get\n\\[p^2 + q^2 + r^2 + 2(pq + pr + qr) = 9,\\]so $p^2 + q^2 + r^2 = \\boxed{9}.$"
+}

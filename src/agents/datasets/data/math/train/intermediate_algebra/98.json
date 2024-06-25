@@ -1,0 +1,6 @@
+{
+    "problem": "Find the polynomial $p(x)$ such that\n\\[p(p(x)) = xp(x) + x^2.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $n$ be the degree of $p(x).$  Then the degree of $p(p(x))$ is $n^2,$ and the degree of $xp(x)$ is $n + 1.$\n\nIf $n \\ge 2,$ then the degree of $xp(x) + x^2$ is $n + 1,$ which is strictly less than $n^2.$  Also, $p(x)$ clearly cannot be a constant polynomial, so the degree of $p(x)$ is $n = 1.$\n\nLet $p(x) = ax + b.$  Then\n\\[p(p(x)) = p(ax + b) = a(ax + b) + b = a^2 x + ab + b,\\]and\n\\[xp(x) + x^2 = x(ax + b) + x^2 = (a + 1) x^2 + bx.\\]Equating coefficients, we get $a + 1 = 0,$ $a^2 = b,$ and $ab + b = 0.$  Then $a = -1$ and $b = 1,$ so $p(x) = \\boxed{-x + 1}.$"
+}

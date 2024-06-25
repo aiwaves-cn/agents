@@ -1,0 +1,6 @@
+{
+    "problem": "A right pyramid has a square base with side length 10 cm. Its peak is 12 cm above the center of its base. What is the total surface area of the pyramid, in square centimeters?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "[asy]\nimport three;\ntriple A = (0,0,0);\ntriple B = (1,0,0);\ntriple C = (1,1,0);\ntriple D = (0,1,0);\ntriple P = (0.5,0.5,1);\ndraw(B--C--D--P--B);\ndraw(P--C);\ndraw(B--A--D,dashed);\ndraw(P--A,dashed);\nlabel(\"$A$\",A,NW);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,E);\nlabel(\"$P$\",P,N);\ntriple F= (0.5,0.5,0);\ntriple M=(B+C)/2;\ndraw(P--F--M,dashed);\ndraw(P--M);\nlabel(\"$F$\",F,S);\nlabel(\"$M$\",M,SW);\n[/asy]\n\nLet $F$ be the center of the square base and $M$ be the midpoint of an edge of the square, as shown.  Since the pyramid is a right pyramid, triangle $PFM$ is a right triangle.  We are given $PF = 12$, and we have $FM = (1/2)(AB) = 5$, so the Pythagorean Theorem gives us $PM = \\sqrt{PF^2 + FM^2} = 13$.  Therefore, since the four lateral faces are congruent triangles, the total surface area of the pyramid is \\[[ABCD] + 4[PAB] = 10^2 + 4(13)(10)/2 = \\boxed{360}\\text{ square centimeters}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ are vectors such that $\\mathbf{a} \\cdot \\mathbf{b} = -3,$ $\\mathbf{a} \\cdot \\mathbf{c} = 4,$ and $\\mathbf{b} \\cdot \\mathbf{c} = 6,$ then find\n\\[\\mathbf{b} \\cdot (7 \\mathbf{c} - 2 \\mathbf{a}).\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Expanding the dot product, we get\n\\begin{align*}\n\\mathbf{b} \\cdot (7 \\mathbf{c} - 2 \\mathbf{a}) &= 7 \\mathbf{b} \\cdot \\mathbf{c} - 2 \\mathbf{a} \\cdot \\mathbf{b} \\\\\n&= 7 \\cdot 6 - 2 \\cdot (-3) = \\boxed{48}.\n\\end{align*}"
+}

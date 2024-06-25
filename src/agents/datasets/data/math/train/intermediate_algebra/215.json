@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of 10-tuples $(a_0, a_1, \\dots, a_9),$ where each entry is 0 or 1, so $S$ contains $2^{10}$ 10-tuples.  For each 10-tuple $s = (a_0, a_1, \\dots, a_9)$ in $S,$ let $p_s(x)$ be the polynomial of degree at most 9 such that\n\\[p_s(n) = a_n\\]for $0 \\le n \\le 9.$  For example, $p(x) = p_{(0,1,0,0,1,0,1,0,0,0)}(x)$ is the polynomial of degree at most 9 such that $p(0) = p(2) = p(3) = p(5) = p(7) = p(8) = p(9) = 0$ and $p(1) = p(4) = p(6) = 1.$\n\nFind\n\\[\\sum_{s \\in S} p_s(10).\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[p(x) = \\sum_{s \\in S} p_s(x).\\]Then for any $n,$ $0 \\le n \\le 9,$\n\\[p(n) = \\sum_{s \\in S} p_s(n) = 2^9 = 512,\\]because $p_s(n) = 0$ for 512 polynomials $p_s(x),$ and $p_s(n) = 1$ for 512 polynomials $p_s(x).$\n\nThus, $p(x) = 512$ for 10 different values $n = 0,$ 1, 2, $\\dots,$ 9.  Also, $p(x)$ has degree at most 9.  Therefore, by the Identity Theorem, $p(x) = 512$ for all $x.$  In particular, $p(10) = \\boxed{512}.$"
+}

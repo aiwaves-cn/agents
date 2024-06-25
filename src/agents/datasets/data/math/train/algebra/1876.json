@@ -1,0 +1,6 @@
+{
+    "problem": "Let the reciprocals of the roots of $5x^2 + 3x + 4$ be $\\alpha$ and $\\beta$. Evaluate $\\alpha + \\beta$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Denote the roots of $5x^2 + 3x +4$ by $a$ and $b$. We have that $\\alpha = \\frac{1}{a}$ and $\\beta = \\frac{1}{b}$. So, $$\\alpha + \\beta = \\frac{1}{a} + \\frac{1}{b} = \\frac{a + b}{ab}.$$\n\nNow, we know that $a + b = \\frac{-3}{5}$ and $ab = \\frac{4}{5}$ by the relationship between sum/products of roots and the coefficients of a polynomial.\n\nHence $\\alpha + \\beta = \\dfrac{a + b}{ab} = \\boxed{-\\dfrac{3}{4}}$."
+}

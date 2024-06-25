@@ -1,0 +1,6 @@
+{
+    "problem": "The points $(0,0)\\,$, $(a,11)\\,$, and $(b,37)\\,$ are the vertices of an equilateral triangle. Find the value of $ab\\,$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Consider the points on the complex plane. The point $b+37i$ is then a rotation of $60$ degrees of $a+11i$ about the origin, so:\n\\[(a+11i)\\left(\\mathrm{cis}\\,60^{\\circ}\\right) = (a+11i)\\left(\\frac 12+\\frac{\\sqrt{3}i}2\\right)=b+37i.\\]\nEquating the real and imaginary parts, we have:\n\\begin{align*}b&=\\frac{a}{2}-\\frac{11\\sqrt{3}}{2}\\\\37&=\\frac{11}{2}+\\frac{a\\sqrt{3}}{2} \\end{align*}\nSolving this system, we find that $a=21\\sqrt{3}, b=5\\sqrt{3}$. Thus, the answer is $\\boxed{315}$.\nNote: There is another solution where the point $b+37i$ is a rotation of $-60$ degrees of $a+11i$; however, this triangle is just a reflection of the first triangle by the $y$-axis, and the signs of $a$ and $b$ are flipped. However, the product $ab$ is unchanged."
+}

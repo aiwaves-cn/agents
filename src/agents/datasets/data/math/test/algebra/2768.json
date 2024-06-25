@@ -1,0 +1,6 @@
+{
+    "problem": "Five aluminum cans can be recycled to make a new can. How many new cans can eventually be made from 125 aluminum cans? (Remember that the first new cans that are made can then be recycled into even newer cans!)",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We start with $125 = 5^3$ cans. After recycling these cans, we will have made $125\\cdot\\frac15 = 5^2$ new cans. We can then recycle these new cans to make $5^2\\cdot\\frac15 = 5$ new cans and then finally recycle these to make $5\\cdot \\frac15 = 1$ new can. So the total number of new cans is $5^2+5+1 = 25+5+1 = \\boxed{31}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A right pyramid has a square base with perimeter 24 inches. Its apex is 9 inches from each of the other vertices. What is the height of the pyramid from its peak to the center of its square base, in inches?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "[asy]\nimport three;\ntriple A = (0,0,0);\ntriple B = (1,0,0);\ntriple C = (1,1,0);\ntriple D = (0,1,0);\ntriple P = (0.5,0.5,1);\ndraw(B--C--D--P--B);\ndraw(P--C);\ndraw(B--A--D,dashed);\ndraw(P--A,dashed);\nlabel(\"$A$\",A,NW);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,E);\nlabel(\"$P$\",P,N);\ntriple F= (0.5,0.5,0);\nlabel(\"$F$\",F,S);\ntriple M=(B+C)/2;\ndraw(P--F--B,dashed);\n[/asy]\n\nLet $F$ be the center of the square base.  Since the pyramid is a right pyramid, triangle $PFB$ is a right triangle.  The perimeter of the base of the pyramid is 24 inches, so the length of each side of the base is $6$ inches.  Since $F$ is the center of the base, $FB$ is half the diagonal of the base, or $(6\\sqrt{2})/2 = 3\\sqrt{2}$ inches.  Applying the Pythagorean Theorem to triangle $PFB$ gives  \\[PF = \\sqrt{PB^2 - FB^2} = \\sqrt{81 - 18} = \\sqrt{63} = \\boxed{3\\sqrt{7}} \\text{ inches}.\\]"
+}

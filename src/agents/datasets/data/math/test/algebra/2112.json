@@ -1,0 +1,6 @@
+{
+    "problem": "If $x-y=1$ and $x^2+y^2=7$, find $x^3-y^3$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have that $7=x^2+y^2=x^2-2xy+y^2+2xy=(x-y)^2+2xy=1+2xy$, therefore $xy=\\frac{7-1}{2}=3$. Since $x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)(x^2+y^2+xy)$, we can directly substitute in the numerical values for each algebraic expression. This gives us $x^3-y^3=(1)(7+3)=\\boxed{10}$."
+}

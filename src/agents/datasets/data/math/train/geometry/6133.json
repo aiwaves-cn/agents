@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $AB=20$ and $AC=11$. The angle bisector of $\\angle A$ intersects $BC$ at point $D$, and point $M$ is the midpoint of $AD$. Let $P$ be the point of the intersection of $AC$ and $BM$. The ratio of $CP$ to $PA$ can be expressed in the form $\\dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy] pointpen = black; pathpen = linewidth(0.7);  pair A = (0,0), C= (11,0), B=IP(CR(A,20),CR(C,18)), D = IP(B--C,CR(B,20/31*abs(B-C))), M = (A+D)/2, P = IP(M--2*M-B, A--C), D2 = IP(D--D+P-B, A--C);  D(MP(\"A\",D(A))--MP(\"B\",D(B),N)--MP(\"C\",D(C))--cycle); D(A--MP(\"D\",D(D),NE)--MP(\"D'\",D(D2))); D(B--MP(\"P\",D(P))); D(MP(\"M\",M,NW)); MP(\"20\",(B+D)/2,ENE); MP(\"11\",(C+D)/2,ENE);  [/asy]Let $D'$ be on $\\overline{AC}$ such that $BP \\parallel DD'$. It follows that $\\triangle BPC \\sim \\triangle DD'C$, so\\[\\frac{PC}{D'C} = 1 + \\frac{BD}{DC} = 1 + \\frac{AB}{AC} = \\frac{31}{11}\\]by the Angle Bisector Theorem. Similarly, we see by the Midline Theorem that $AP = PD'$. Thus,\\[\\frac{CP}{PA} = \\frac{1}{\\frac{PD'}{PC}} = \\frac{1}{1 - \\frac{D'C}{PC}} = \\frac{31}{20},\\]and $m+n = \\boxed{51}$."
+}

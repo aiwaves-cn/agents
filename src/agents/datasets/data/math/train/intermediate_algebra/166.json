@@ -1,0 +1,6 @@
+{
+    "problem": "Find a monic cubic polynomial $P(x)$ with integer coefficients such that\n\\[P(\\sqrt[3]{2} + 1) = 0.\\](A polynomial is monic if its leading coefficient is 1.)",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = \\sqrt[3]{2} + 1.$  Then $x - 1 = \\sqrt[3]{2},$ so\n\\[(x - 1)^3 = 2.\\]This simplifies to $x^3 - 3x^2 + 3x - 3 = 0.$  Thus, we can take $P(x) = \\boxed{x^3 - 3x^2 + 3x - 3}.$"
+}

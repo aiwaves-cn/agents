@@ -1,0 +1,6 @@
+{
+    "problem": "Roslyn has twenty boxes. Thirteen of the boxes contain pencils, nine of the boxes contain pens, and three of the boxes contain neither pens nor pencils. How many boxes contain both pens and pencils?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since 3 of the 20 boxes have neither pens nor pencils, $20-3=17$ of them have pens, pencils, or both.  Let there be $x$ boxes with both.  As shown below, there are $13-x$ with pencils and $9-x$ with pens, so we must have $(13-x) + x + (9-x) = 17$.  Simplifying gives $22-x = 17$, so $x=\\boxed{5}$.\n\n\n[asy]\nunitsize(0.05cm);\nlabel(\"Pencils\", (2,74));\nlabel(\"Pens\", (80,74));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$x$\", (44, 45));\nlabel(scale(0.8)*\"$13-x$\",(28,58));\nlabel(scale(0.8)*\"$9-x$\",(63,58));\n[/asy]"
+}

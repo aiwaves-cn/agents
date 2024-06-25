@@ -1,0 +1,6 @@
+{
+    "problem": "Three-fourths of the students in Mr. Shearer's class have brown hair and six-sevenths of his students are right-handed.  If Mr. Shearer's class has 28 students, what is the smallest possible number of students that could be both right-handed and have brown hair?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Mr. Shearer has $\\frac{3}{4}(28)=21$ students with brown hair and $\\frac{6}{7}(28)=24$ students who are right-handed.  Since there are $28-24=4$ left-handed students, at most 4 of the 21 brown-haired students are left-handed.  Therefore, at least $\\boxed{17}$ of them are right-handed."
+}

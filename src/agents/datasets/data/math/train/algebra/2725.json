@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\lfloor -4 -.5 \\rfloor \\cdot \\lceil 4 +.5 \\rceil \\cdot \\lfloor -3 -.5 \\rfloor \\cdot \\lceil 3 +.5 \\rceil \\cdot \\dots \\cdot \\lfloor -.5 \\rfloor \\cdot \\lceil .5 \\rceil$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Observe that for a natural number $n$ we have $\\lfloor -n -.5 \\rfloor \\cdot \\lceil n +.5 \\rceil = -(n+1)^2$. Hence, the expression in question reduces to $(-5^2)(-4^2) (-3^2) (-2^2) (-1^2) = - (5!)^2 = \\boxed{-14400}$."
+}

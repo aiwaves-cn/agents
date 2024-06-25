@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $f (x ) = x^2 + 12$. If $m > 0$ and $f (3m) = 3(f (m))$, what is the value of $m$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have $f(3m) = (3m)^2 + 12 = 9m^2 + 12$, so $f(3m) = 3f(m)$ gives us $9m^2 + 12 = 3(m^2 + 12)$.  Expanding the right side gives $9m^2 +12 = 3m^2 + 36$. Simplifying gives $6m^2 = 24$, so $m^2 = 4$.  Since we are given that $m>0$, we have $m = \\boxed{2}$."
+}

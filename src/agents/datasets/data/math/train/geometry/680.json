@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $AB = 3$, $BC = 4$, $AC = 5$, and $BD$ is the angle bisector from vertex $B$.  If $BD = k \\sqrt{2}$, then find $k$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "By Pythagoras, $\\angle ABC = 90^\\circ$.  Let $P$ and $Q$ be the projections of $D$ onto $BC$ and $AB$, respectively.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D, P, Q;\n\nA = (0,3);\nB = (0,0);\nC = (4,0);\nD = (12/7,12/7);\nP = (12/7,0);\nQ = (0,12/7);\n\ndraw(A--B--C--cycle);\ndraw(B--D);\ndraw(P--D--Q);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, NE);\nlabel(\"$P$\", P, S);\nlabel(\"$Q$\", Q, W);\nlabel(\"$x$\", (D + P)/2, E);\nlabel(\"$x$\", (D + Q)/2, N);\nlabel(\"$x$\", (B + P)/2, S);\nlabel(\"$x$\", (B + Q)/2, W);\nlabel(\"$4 - x$\", (C + P)/2, S);\nlabel(\"$3 - x$\", (A + Q)/2, W);\n[/asy]\n\nWe have that $\\angle ABC = 90^\\circ$ and $\\angle PBD = 45^\\circ$, so quadrilateral $BPDQ$ is a square.  Let $x$ be the side length of this square.\n\nThen $PC = BC - BP = 4 - x$, and $AQ = AB - QB = 3 - x$.  Triangles $AQD$ and $DPC$ are similar, so \\[\\frac{AQ}{QD} = \\frac{DP}{PC},\\]or \\[\\frac{3 - x}{x} = \\frac{x}{4 - x}.\\]Solving for $x$, we find $x = 12/7$.  Then $BD = x \\sqrt{2} = 12/7 \\cdot \\sqrt{2}$, so the answer is $\\boxed{\\frac{12}{7}}$."
+}

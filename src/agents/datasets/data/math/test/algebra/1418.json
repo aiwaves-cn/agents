@@ -1,0 +1,6 @@
+{
+    "problem": "A circle of radius 5 with its center at $(0,0)$ is drawn on a Cartesian coordinate system. How many lattice points (points with integer coordinates) lie within or on this circle?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The table below shows for each value of $x$ which values of $y$ satisfy the condition that $(x,y)$ lies on or inside the circle of radius 5 centered at the origin. \\begin{tabular}{ccc}\n$x$ & Constraints & Number of $y$ values \\\\\n$\\pm5$ & $y=0$ & 1 \\\\\n$\\pm4$ & $-3\\leq y \\leq 3$ & 7 \\\\\n$\\pm3$ & $-4\\leq y \\leq 4$ & 9 \\\\\n$\\pm2$ & $-4\\leq y\\leq 4$ & 9 \\\\\n$\\pm1$ & $-4\\leq y\\leq 4$ & 9 \\\\\n0 & $-5\\leq y\\leq 5$ & 11 \\\\\n\\end{tabular} In total, there are $2(1+7+9+9+9)+11=\\boxed{81}$ lattice points on or inside the circle."
+}

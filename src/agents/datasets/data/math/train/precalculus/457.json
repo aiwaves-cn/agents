@@ -1,0 +1,6 @@
+{
+    "problem": "Find the $3 \\times 3$ matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\mathbf{v} = -4 \\mathbf{v}\\]for all three-dimensional vectors $\\mathbf{v}.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Taking $\\mathbf{v} = \\mathbf{i},$ we get that the first column of $\\mathbf{M}$ is\n\\[\\mathbf{M} \\mathbf{i} = -4 \\mathbf{i} = \\begin{pmatrix} -4 \\\\ 0 \\\\ 0 \\end{pmatrix}.\\]Similarly, the second column of $\\mathbf{M}$ is $-4 \\mathbf{j},$ and the third column of $\\mathbf{M}$ is $-4 \\mathbf{k}.$  Therefore,\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} -4 & 0 & 0 \\\\ 0 & -4 & 0 \\\\ 0 & 0 & -4 \\end{pmatrix}}.\\]"
+}

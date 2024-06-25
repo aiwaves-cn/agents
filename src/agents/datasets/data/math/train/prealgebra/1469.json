@@ -1,0 +1,6 @@
+{
+    "problem": "In a set of five consecutive integers, the largest integer is less than twice the average of the five integers. What is the smallest integer that could be in the set?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Let the integers be $n$, $n+1$, $n+2$, $n+3$ and $n+4$.  Their average is $n+2$, so we have $$n+4<2(n+2) \\Rightarrow n+4<2n+4 \\Rightarrow 0<n.$$Thus $n$ is at least $\\boxed{1}$."
+}

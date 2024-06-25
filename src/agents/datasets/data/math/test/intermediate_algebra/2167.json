@@ -1,0 +1,6 @@
+{
+    "problem": "Find the distance between the two foci of the hyperbola given by \\[-6x^2 + 5y^2 + 24x + 20y = 64.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "To get the standard form of the equation of the hyperbola, we complete the square in both variables: \\[\\begin{aligned} -6(x^2-4x) + 5(y^2+4y) &= 64 \\\\ -6(x^2-4x+4) + 5(y^2+4y+4) &= 64 - 6(4) + 5(4) \\\\ -6(x-2)^2 + 5(y+2)^2 &= 60 \\\\ \\frac{(y+2)^2}{12} - \\frac{(x-2)^2}{10} &= 1. \\end{aligned}\\]Then, the distance from each focus to the center must be $\\sqrt{12 + 10} = \\sqrt{22},$ so the distance between the two foci is $\\boxed{2\\sqrt{22}}.$"
+}

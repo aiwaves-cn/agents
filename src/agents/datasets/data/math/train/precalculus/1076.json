@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[e^{2 \\pi i/13} + e^{4 \\pi i/13} + e^{6 \\pi i/13} + \\dots + e^{24 \\pi i/13}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\omega = e^{2 \\pi i/13}.$  Then from the formula for a geometric sequence,\n\\begin{align*}\ne^{2 \\pi i/13} + e^{4 \\pi i/13} + e^{6 \\pi i/13} + \\dots + e^{24 \\pi i/13} &= \\omega + \\omega^2 + \\omega^3 + \\dots + \\omega^{12} \\\\\n&= \\omega (1 + \\omega + \\omega^2 + \\dots + \\omega^{11}) \\\\\n&= \\omega \\cdot \\frac{1 - \\omega^{12}}{1 - \\omega} \\\\\n&= \\frac{\\omega - \\omega^{13}}{1 - \\omega}.\n\\end{align*}Since $\\omega^{13} = (e^{2 \\pi i/13})^{13} = e^{2 \\pi i} = 1,$\n\\[\\frac{\\omega - \\omega^{13}}{1 - \\omega} = \\frac{\\omega - 1}{1 - \\omega} = \\boxed{-1}.\\]"
+}

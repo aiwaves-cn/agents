@@ -1,0 +1,6 @@
+{
+    "problem": "How many four-digit numbers $N = \\underline{a}\\,\\underline{b}\\,\\underline{c}\\,\\underline{d}$ satisfy all of the following conditions?\n\n$4000 \\le N < 6000.$\n$N$ is a multiple of $5.$\n$3 \\le b < c \\le 6.$",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The first condition is equivalent to the statement that $a = 4$ or $a = 5$. The second condition is equivalent to the statement that $d = 0$ or $d = 5$. Finally, the third condition is equivalent to the statement that the ordered pair $(b, c)$ is one of the pairs \\[(3,4), (3,5), (3,6), (4,5), (4,6),(5,6).\\]In total, $2 \\cdot 2 \\cdot 6=\\boxed{24}$ four-digit numbers $N$ satisfying the conditions."
+}

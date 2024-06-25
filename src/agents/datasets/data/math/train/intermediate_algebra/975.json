@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive value of $x$ which satisfies\n\\[\\log_5 (x - 2) + \\log_{\\sqrt{5}} (x^3 - 2) + \\log_{\\frac{1}{5}} (x - 2) = 4.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the change-of-base formula,\n\\[\\log_{\\sqrt{5}} (x^3 - 2) = \\frac{\\log_5 (x^3 - 2)}{\\log_5 \\sqrt{5}} = \\frac{\\log_5 (x^3 - 2)}{1/2} = 2 \\log_5 (x^3 - 2),\\]and\n\\[\\log_{\\frac{1}{5}} (x - 2) = \\frac{\\log_5 (x - 2)}{\\log_5 \\frac{1}{5}} = -\\log_5 (x - 2),\\]so the given equation becomes\n\\[2 \\log_5 (x^3 - 2) = 4.\\]Then $\\log_5 (x^3 - 2) = 2,$ so $x^3 - 2 = 5^2 = 25.$  Then $x^3 = 27,$ so $x = \\boxed{3}.$"
+}

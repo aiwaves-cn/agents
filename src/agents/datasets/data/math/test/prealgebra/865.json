@@ -1,0 +1,6 @@
+{
+    "problem": "How many possible 9-digit zip codes are possible if the first digit cannot be zero?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are nine choices for the first digit and ten for the eight thereafter. Thus, there are $9 \\cdot 10^8 = \\boxed{900,\\!000,\\!000}$ such zip codes."
+}

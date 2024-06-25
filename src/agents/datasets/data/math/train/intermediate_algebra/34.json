@@ -1,0 +1,6 @@
+{
+    "problem": "For a finite sequence $A=(a_1,a_2,\\dots,a_n)$ of numbers, the Cesaro sum of $A$ is defined to be\n\\[\\frac{S_1+\\cdots+S_n}{n},\\]where $S_k=a_1+\\cdots+a_k$ and $1\\leq k\\leq n$.\n\nIf the Cesaro sum of the 99-term sequence $(a_1,\\dots,a_{99})$ is 1000,  what is the Cesaro sum of the 100-term sequence $(1,a_1,\\dots,a_{99})$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Applying the definition to the sequence $(a_1, a_2, \\dots, a_{99}),$ we get\n\\[\\frac{a_1 + (a_1 + a_2) + \\dots + (a_1 + a_2 + \\dots + a_{99})}{99} = 1000.\\]Thus, $99a_1 + 98a_2 + \\dots + 2a_{98} + a_{99} = 99000.$\n\nThen the Cesaro sum of $(1, a_1, a_2, \\dots, a_{99})$ is\n\\begin{align*}\n\\frac{1 + (1 + a_1) + (1 + a_1 + a_2) + \\dots + (1 + a_1 + a_2 + \\dots + a_{99})}{100} &= \\frac{100 + 99a_1 + 98a_2 + \\dots + 2a_{98} + a_{99}}{100} \\\\\n&= \\frac{100 + 99000}{100} = \\frac{99100}{100} = \\boxed{991}.\n\\end{align*}"
+}

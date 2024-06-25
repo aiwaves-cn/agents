@@ -1,0 +1,6 @@
+{
+    "problem": "Calculate $\\frac{3 \\cdot 5! + 15\\cdot 4!}{6!}$",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "We factor and rearrange the terms in the factorials:\n\n\\begin{align*}\n\\frac{3\\cdot 5! + 15\\cdot 4!}{6!} &= \\frac{3\\cdot 5! + 3\\cdot 5!}{6!} \\\\\n&= \\frac{2\\cdot 3 \\cdot 5!}{6!} \\\\\n&= \\frac{6!}{6!} \\\\\n&= \\boxed{1}\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A magician designed an unfair coin so that the probability of getting a Head on a flip is $60\\%$. If he flips the coin three times, what is the probability that he flips more Heads than Tails? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The probability of flipping exactly two heads and one tail is ${3 \\choose 2}\\left(\\frac{3}{5}\\right)^2 \\cdot \\frac{2}{5} = \\frac{54}{125}$. The probability of flipping exactly three heads and no tails is $\\left(\\frac{3}{5}\\right)^3 = \\frac{27}{125}$. So these are the two cases for having more heads than tails, and their sum is $\\frac{54+27}{125} = \\boxed{\\frac{81}{125}}$."
+}

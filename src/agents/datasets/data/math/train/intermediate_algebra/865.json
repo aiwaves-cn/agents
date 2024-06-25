@@ -1,0 +1,6 @@
+{
+    "problem": "Is\n\\[f(x) = \\frac{1}{2^x - 1} + \\frac{1}{2}\\]an even function, odd function, or neither?\n\nEnter \"odd\", \"even\", or \"neither\".",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nf(-x) &= \\frac{1}{2^{-x} - 1} + \\frac{1}{2} \\\\\n&= \\frac{2^x}{1 - 2^x} + \\frac{1}{2} \\\\\n&= \\frac{1 - (1 - 2^x)}{1 - 2^x} + \\frac{1}{2} \\\\\n&= \\frac{1}{1 - 2^x} - 1 + \\frac{1}{2} \\\\\n&= \\frac{1}{1 - 2^x} - \\frac{1}{2} \\\\\n&= -\\frac{1}{2^x - 1} - \\frac{1}{2} \\\\\n&= -f(x),\n\\end{align*}so $f(x)$ is an $\\boxed{\\text{odd}}$ function."
+}

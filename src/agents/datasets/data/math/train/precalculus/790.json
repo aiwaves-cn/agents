@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P$ be the point on line segment $\\overline{AB}$ such that $AP:PB = 2:7.$  Then\n\\[\\overrightarrow{P} = t \\overrightarrow{A} + u \\overrightarrow{B}\\]for some constants $t$ and $u.$  Enter the ordered pair $(t,u).$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, P;\n\nA = (0,0);\nB = (5,1);\nP = interp(A,B,2/9);\n\ndraw(A--B);\n\ndot(\"$A$\", A, S);\ndot(\"$B$\", B, S);\ndot(\"$P$\", P, S);\n[/asy]",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $AP:PB = 2:7,$ we can write\n\\[\\frac{\\overrightarrow{P} - \\overrightarrow{A}}{2} = \\frac{\\overrightarrow{B} - \\overrightarrow{P}}{7}.\\]Isolating $\\overrightarrow{P},$ we find\n\\[\\overrightarrow{P} = \\frac{7}{9} \\overrightarrow{A} + \\frac{2}{9} \\overrightarrow{B}.\\]Thus, $(t,u) = \\boxed{\\left( \\frac{7}{9}, \\frac{2}{9} \\right)}.$"
+}

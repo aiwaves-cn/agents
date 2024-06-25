@@ -1,0 +1,6 @@
+{
+    "problem": "Rationalize the denominator of $\\displaystyle \\frac{1}{\\sqrt[3]{3} - \\sqrt[3]{2}}$. With your answer in the form $\\displaystyle \\frac{\\sqrt[3]{A} + \\sqrt[3]{B} + \\sqrt[3]{C}}{D}$, and the fraction in lowest terms, what is $A + B + C + D$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since the denominator involves cube roots, we can't just multiply by a conjugate. Instead we use the identity $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$. Letting $a = \\sqrt[3]{3}$ and $b = \\sqrt[3]{2}$, we have \\[\n\\frac{1}{\\sqrt[3]{3} - \\sqrt[3]{2}} = \\frac{1}{\\sqrt[3]{3} - \\sqrt[3]{2}} \\cdot \\frac{(\\sqrt[3]{3})^2 + \\sqrt[3]{3} \\sqrt[3]{2} + (\\sqrt[3]{2})^2}{(\\sqrt[3]{3})^2 + \\sqrt[3]{3} \\sqrt[3]{2} + (\\sqrt[3]{2})^2}.\n\\]The denominator simplifies by the above identity to $(\\sqrt[3]{3})^3 - (\\sqrt[3]{2})^3 = 1$, so we are left with $\\sqrt[3]{9} + \\sqrt[3]{6} + \\sqrt[3]{4}$. Matching the form given in the problem, $D = 1$ and $A = 9$, $B = 6$, $C = 4$ (in some order), so $A+B+C+D = \\boxed{20}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If the integer $k^{}_{}$ is added to each of the numbers $36^{}_{}$, $300^{}_{}$, and $596^{}_{}$, one obtains the squares of three consecutive terms of an arithmetic series. Find $k^{}_{}$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "From the given information, we have that the three numbers $\\sqrt{36+k}, \\; \\sqrt{300+k}, \\; \\sqrt{596+k}$ form an arithmetic progression, in that order. Therefore, we have \\[2\\sqrt{300+k} = \\sqrt{36+k} + \\sqrt{596+k}.\\]Squaring both sides of the equation, we get \\[4(300+k) = (36+k) + 2\\sqrt{(36+k)(596+k)} + (596+k)\\]or \\[568 + 2k = 2\\sqrt{(36+k)(596+k)}.\\]Dividing by $2$ and then squaring again, we have \\[(284+k)^2 = (36+k)(596+k),\\]or \\[284^2 + 2 \\cdot 284k + k^2 = 36 \\cdot 596 + 632k + k^2.\\]Thus, \\[k = \\frac{284^2 - 36 \\cdot 596}{632 - 2\\cdot 284} = \\frac{284^2 - 36 \\cdot 596}{64} = \\boxed{925}.\\]"
+}

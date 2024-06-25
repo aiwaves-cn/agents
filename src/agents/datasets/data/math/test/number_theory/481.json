@@ -1,0 +1,6 @@
+{
+    "problem": "How many more digits does the base-10 number 87 have when expressed in base 2 than when expressed in base 3?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "To express 87 in base 2, first note that $2^6=64$ is the largest power of 2 which is less than 87. Therefore, the first non-zero digit goes in the 7th place to the left of the decimal point. Since $2^4=16$ is the highest power of 2 less than $87-64=23$, the next non-zero digit goes in the 5th place to the left of the decimal point.  Continuing this process, we find $87 = 2^6 + 2^4 + 2^2 +2^1 + 2^0$, so $87_{10}=1010111_2$.  Similarly, we find $87=3^4+2\\cdot 3^1$ so $87_{10}=10020_3$.  The difference between 7 digits and 5 digits is $\\boxed{2}$ digits."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The area of square $ABCD$ is 100 square centimeters, and $AE = 2$ cm. What is the area of square $EFGH$, in square centimeters?\n\n[asy]\npair a,b,c,d,e,f,g,h;\na=(0,17);\nb=(17,17);\nc=(17,0);\nd=(0,0);\ne=(5,17);\nf=(17,12);\ng=(12,0);\nh=(0,5);\nlabel(\"$A$\",a,N);\nlabel(\"$B$\",b,N);\nlabel(\"$C$\",c,S);\nlabel(\"$D$\",d,S);\nlabel(\"$E$\",e,N);\nlabel(\"$F$\",f,E);\nlabel(\"$G$\",g,S);\nlabel(\"$H$\",h,W);\ndraw(a--b--c--d--cycle);\ndraw(e--f--g--h--cycle);\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $AE = 2$, $EB = 8$, but since $EFGH$ is a square, $EH = EF$, and $AH = EB$ by ASA congruence of right triangles $AHE$ and $BEF$. By the Pythagorean theorem, $(EH)^2 = (AE)^2 + (AH)^2 = 2^2 + 8^2 = \\boxed{68}$, which is also the area of square $EFGH$ as the square of one of its sides."
+}

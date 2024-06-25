@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all real solutions to the equation \\[\\frac{x-2}{x^2+4x+1} = \\frac{x-5}{x^2-10x}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "To eliminate the fractions, we multiply by $(x^2+4x+1)(x^2-10x)$ on both sides, giving \\[(x-2)(x^2-10x) = (x-5)(x^2+4x+1).\\]Expanding both sides yields \\[x^3 - 12x^2 + 20x = x^3 -x^2 -19x -5,\\]and so \\[0 =11x^2 -39 x -5.\\]By Vieta's formulas, the sum of the roots of this equation is $\\boxed{\\tfrac{39}{11}}\\,.$ (One can compute the roots explicitly and check that they do not make any of the denominators of the original equation equal to zero.)"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest product obtainable from two integers whose sum is 246?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let the two integers be $x$ and $246-x$. The product which needs to be maximized is $(x)(246-x)=246x-x^2$. Now we complete the square: \\begin{align*}\n-(x^2-246x)&=-(x^2-246x+15129-15129)\\\\\n&=-(x-123)^2+15129\\\\\n\\end{align*}Since the square of a real number is always non-negative, $-(x-123)^2\\le 0$. Therefore, the expression is maximized when $x-123=0$, so $x=123$. Therefore, the greatest product obtainable is $-(123-123)^2+15129=\\boxed{15129}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the number of degrees in the smaller angle formed by the hour and minute hands of a clock at 8:15? Express your answer as a decimal to the nearest tenth.\n[asy]\nsize(200);\ndraw(Circle((0,0),5),linewidth(1.2));\npair[] mins;\nfor(int i = 0; i < 60; ++i){\n\nmins[i] = 4.5*dir(-6*i + 90);\n\ndot(mins[i]);\n}\nfor(int i = 1; i <= 12; ++i){\n\nlabel((string)i,mins[5*i % 60],dir(-30*i - 90));\n}\n\nfill(Circle((0,0),0.25));\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "At 8:00, the hour hand is in the 8 o'clock position and the minute hand is in the 12 o'clock position.  The angle between the two hands is two-thirds of a full revolution, which is $\\frac{2}{3}(360^\\circ)=240$ degrees.  Every minute, the minute hand goes $\\frac{1}{60}(360^\\circ)=6$ degrees and the hour hand goes $\\frac{1}{60}\\cdot\\frac{1}{12} (360^\\circ)=0.5$ degrees.  Therefore, the angle between the hands decreases at a rate of 5.5 degrees per minute.  After 15 minutes, the angle between the hands has decreased to $240^\\circ-5.5^\\circ\\cdot 15=\\boxed{157.5}$ degrees."
+}

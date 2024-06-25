@@ -1,0 +1,6 @@
+{
+    "problem": "While watching a circus show, I counted out the number of acrobats and elephants. I counted 40 legs and 15 heads. How many acrobats did I see in the show?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let the number of acrobats in the show be $a$ and the number of elephants be $e$. We are looking for the value of $a$. Assuming that each acrobat has 2 legs and 1 head, and that each elephant has 4 legs and 1 head, we can set up the following system of equations:\n\n\\begin{align*}\n2a+4e &= 40 \\\\\na + e &= 15 \\\\\n\\end{align*}To solve for $a$, we need to eliminate $e$ from the equations above. We can rewrite the second equation above as $e=15-a$, and substituting this into the first equation to eliminate $e$ gives $2a+4(15-a) = 40$, or $a=10$. Thus, there are $\\boxed{10}$ acrobats in the circus show."
+}

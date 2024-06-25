@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the real solutions to\n\\[\\frac{(x - 1)(x - 2)(x - 3)(x - 4)(x - 3)(x - 2)(x - 1)}{(x - 2)(x - 4)(x - 2)} = 1.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "If $x = 2$ or $x = 4,$ then the fraction is undefined.  Otherwise, we can cancel the factors of $(x - 2)(x - 4)(x - 2),$ to get\n\\[(x - 1)(x - 3)(x - 3)(x - 1) = 1.\\]Then $(x - 1)^2 (x - 3)^2 - 1 = 0,$ so $[(x - 1)(x - 3) + 1][(x - 1)(x - 3) - 1] = 0.$\n\nIf $(x - 1)(x - 3) + 1 = 0,$ then $x^2 - 4x + 4 = (x - 2)^2 = 0.$  We have already ruled out $x = 2.$\n\nIf $(x - 1)(x - 3) - 1 = 0,$ then $x^2 - 4x + 2 = 0.$  By the quadratic formula,\n\\[x = 2 \\pm \\sqrt{2}.\\]Thus, the solutions are $\\boxed{2 + \\sqrt{2}, 2 - \\sqrt{2}}.$"
+}

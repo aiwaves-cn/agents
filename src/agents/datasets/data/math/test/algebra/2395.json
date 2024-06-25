@@ -1,0 +1,6 @@
+{
+    "problem": "If $c$ is a constant such that $x^2+25x+c$ is equal to the square of a binomial, then what is $c$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "If $x^2+25x+c$ is the square of a binomial, then because the coefficient of $x^2$ is $1$, the binomial must be of the form $x+a$ for some $a$.\n\nExpanding, we have $(x+a)^2 = x^2 + 2ax + a^2$. For this to be equal to $x^2+25x+c$, the coefficients of $x$ must agree, so $2a$ must be equal to $25$. This gives $a=\\frac{25}2$, and so the constant term $a^2$ is $\\boxed{\\frac{625}4}$."
+}

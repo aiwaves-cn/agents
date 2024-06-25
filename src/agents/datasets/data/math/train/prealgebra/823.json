@@ -1,0 +1,6 @@
+{
+    "problem": "What is the positive integer $N$ for which $$ 22^2 \\times 55^2 = 10^2 \\times N^2 \\ ? $$",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "\\begin{align*}\n10^2\\times N^2&=22^2\\times55^2\\\\\n&=\\left(2^2\\cdot11^2\\right)\\times\\left(5^2\\cdot11^2\\right)\\\\\n&=\\left(2^2\\cdot5^2\\right)\\times\\left(11^2\\cdot11^2\\right)\\\\\n&=10^2\\times \\left(11^2\\right)^2\\\\\n&=10^2\\times 121^2\n\\end{align*} So $N=\\boxed{121}$."
+}

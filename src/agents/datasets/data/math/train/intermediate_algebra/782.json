@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be real numbers such that $a + b + c = 0.$  Find the set of all possible values of $ab + ac + bc.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Squaring the equation $a + b + c = 0,$ we get\n\\[a^2 + b^2 + c^2 + 2(ab + ac + bc) = 0.\\]Hence, $2(ab + ac + bc) = -(a^2 + b^2 + c^2) \\le 0,$ so\n\\[ab + ac + bc \\le 0.\\]Equality occurs when $a = b = c = 0.$\n\nNow, set $c = 0,$ so $a + b = 0,$ or $b = -a.$  Then\n\\[ab + ac + bc = ab = -a^2\\]can take on all nonpositive values.  Therefore, the set of all possible values of $ab + ac + bc$ is $\\boxed{(-\\infty,0]}.$"
+}

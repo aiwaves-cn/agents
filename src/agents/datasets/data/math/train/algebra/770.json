@@ -1,0 +1,6 @@
+{
+    "problem": "Alex has 12 friends and 63 coins. What is the minimum number of additional coins he needs so that he can give each friend at least one coin and no two friends receive the same number of coins?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Alex wants to minimize the number of coins he gives to his friends without giving any two of them the same number of coins. The minimum number of coins he can give to a friend is 1. He then gives 2 coins to another friend, then 3 to another, then 4, and so on, until the last friend receives 12. The total number of coins Alex has given away is $1+2+3+\\cdots+12 = \\frac{12 \\cdot 13}{2}=78$.  Thus, Alex needs $78-63=\\boxed{15}$ more coins."
+}

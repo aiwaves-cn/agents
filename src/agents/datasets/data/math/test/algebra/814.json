@@ -1,0 +1,6 @@
+{
+    "problem": "Given $f(x) = \\frac{\\sqrt{2x-6}}{x-3}$, what is the smallest possible integer value for $x$ such that $f(x)$ has a real number value?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "In order for $f(x)$ to have a real number value, the expression inside the square root in the numerator must be non-negative and the denominator must not be 0. So we have the two conditions $2x-6\\ge0 \\Rightarrow x \\ge 3$ and $x-3 \\ne 0 \\Rightarrow x \\ne 3$. We see that $x=\\boxed{4}$ is the smallest integer value that satisfies both conditions."
+}

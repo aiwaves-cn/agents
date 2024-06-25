@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $\\sec x + \\tan x = \\frac{4}{3},$ enter all possible values of $\\sin x.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can re-write the given equation as $\\frac{1}{\\cos x} + \\frac{\\sin x}{\\cos x} = \\frac{4}{3},$ so\n\\[3 + 3 \\sin x = 4 \\cos x.\\]Squaring both sides, we get\n\\[9 + 18 \\sin x + 9 \\sin^2 x = 16 \\cos^2 x = 16 (1 - \\sin^2 x).\\]Then $25 \\sin^2 x + 18 \\sin x - 7 = 0,$ which factors as $(\\sin x + 1)(25 \\sin x - 7) = 0.$  Hence, $\\sin x = -1$ or $\\sin x = \\frac{7}{25}.$\n\nIf $\\sin x = -1,$ then $\\cos^2 x = 1 - \\sin^2 x = 0,$ so $\\cos x = 0.$  But this makes $\\sec x$ and $\\tan x$ undefined.  So the only possible value of $\\sin x$ is $\\boxed{\\frac{7}{25}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = \\left\\lceil\\dfrac{1}{x+2}\\right\\rceil$ for $x > -2$, and $f(x) = \\left\\lfloor\\dfrac{1}{x+2}\\right\\rfloor$ for $x < -2$. ($f(x)$ is not defined at $x = -2$.) Which integer is not in the range of $f(x)$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "For $x > -2$, $\\dfrac{1}{x+2}$ takes on all positive values. Thus, $f(x)$ takes on all positive integers for $x > -2$.\n\nFor $x < -2$, $\\dfrac{1}{x+2}$ takes on all negative values. Thus, $f(x)$ takes on all negative integers for $x < -2$.\n\nSo, the range of $f(x)$ is all integers except for $\\boxed{0}$."
+}

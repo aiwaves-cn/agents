@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the coordinates of the midpoint of the segment with endpoints $(6, 12)$ and $(0, -6)$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The midpoint of a line segment with endpoints $(x_1, y_1), (x_2, y_2)$ is $\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$.\n\nSo, the midpoint of the segment is $\\left(\\frac{6+0}{2}, \\frac{12+(-6)}{2}\\right)$, which simplifies to $(3,3)$. The sum of these coordinates is $\\boxed{6}$."
+}

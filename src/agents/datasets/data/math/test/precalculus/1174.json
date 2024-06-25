@@ -1,0 +1,6 @@
+{
+    "problem": "If $0 \\le \\theta \\le 4 \\pi,$ find all values of $\\theta$ which satisfy\n\\[\\log_{\\frac{1}{2} \\sin 2 \\theta} \\sin \\theta = \\frac{1}{2}.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "From the given equation,\n\\[\\left( \\frac{1}{2} \\sin 2 \\theta \\right)^{\\frac{1}{2}} = \\sin \\theta.\\]Squaring both sides, we get\n\\[\\frac{1}{2} \\sin 2 \\theta = \\sin^2 \\theta.\\]Then $\\sin \\theta \\cos \\theta = \\sin^2 \\theta,$ so\n\\[\\sin \\theta \\cos \\theta - \\sin^2 \\theta = \\sin \\theta (\\sin \\theta - \\cos \\theta) = 0.\\]Thus, $\\sin \\theta = 0$ or $\\sin \\theta = \\cos \\theta.$\n\nIf $\\sin \\theta = 0,$ then $\\frac{1}{2} \\sin 2 \\theta = 0,$ which is not allowed as the base of a logarithm.\n\nOtherwise, $\\sin \\theta = \\cos \\theta.$  Then $\\tan \\theta = 1.$  The solutions to this equation are $\\frac{\\pi}{4},$ $\\frac{5 \\pi}{4},$ $\\frac{9 \\pi}{4},$ and $\\frac{13 \\pi}{4}.$  But $\\sin \\theta$ must be positive, in order to take the logarithm of it, so the only solutions are $\\boxed{\\frac{\\pi}{4}, \\frac{9 \\pi}{4}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram below, $\\triangle ABC$ is isosceles and its area is 240.  What is the $y$-coordinate of $A?$\n\n[asy]\n\nimport olympiad;\n\n// Draw and label axes\n\ndraw((0, -3)--(0, 30), Arrow);\n\ndraw((-3, 0)--(30, 0), Arrow);\n\nlabel(\"$y$\", (0, 30), N);\n\nlabel(\"$x$\", (30, 0), E);\n\n// Draw triangle\n\npair a = (10, 24); pair b = (0, 0); pair c = (20, 0);\n\ndraw(a--b--c--cycle);\n\ndot(a); dot(b); dot(c);\n\n// Label points\n\nlabel(\"$A$\", a, N);\n\nlabel(\"$B(0, 0)$\", b, NW);\n\nlabel(\"$C(20, 0)$\", c, S);\n\n// Tick marks\n\nadd(pathticks(a--b, s=45));\n\nadd(pathticks(a--c, s=45));\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The base of $\\triangle ABC$ (that is, $BC$) has length $20$.\n\nSince the area of $\\triangle ABC$ is 240, then $$240=\\frac{1}{2}bh=\\frac{1}{2}(20)h=10h,$$so $h=24$. Since the height of $\\triangle ABC$ (from base $BC$) is 24, then the $y$-coordinate of $A$ is $\\boxed{24}.$"
+}

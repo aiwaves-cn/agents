@@ -1,0 +1,6 @@
+{
+    "problem": "Two geometric sequences $a_1, a_2, a_3, \\ldots$ and $b_1, b_2, b_3, \\ldots$ have the same common ratio, with $a_1 = 27$, $b_1=99$, and $a_{15}=b_{11}$. Find $a_9.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ be the common ratio of both sequences. Then $a_{15} = a_1r^{14} = 27r^{14}$ and $b_{11} = b_1r^{10} = 99r^{10}$, so we have \\[27r^{14} = 99r^{10} \\implies r^4 = \\frac{99}{27} = \\frac{11}{3}.\\]Then \\[a_9 = a_1r^8 = 27r^8 = 27 \\left(\\frac{11}{3}\\right)^2 = \\boxed{363}.\\]"
+}

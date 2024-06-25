@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{m},$ $\\mathbf{n},$ and $\\mathbf{p}$ be unit vectors such that the angle between $\\mathbf{m}$ and $\\mathbf{n}$ is $\\alpha,$ and the angle between $\\mathbf{p}$ and $\\mathbf{m} \\times \\mathbf{n}$ is also $\\alpha.$  If $\\mathbf{n} \\cdot (\\mathbf{p} \\times \\mathbf{m}) = \\frac{1}{4},$ find the smallest possible value of $\\alpha,$ in degrees.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By the scalar triple product,\n\\[\\mathbf{p} \\cdot (\\mathbf{m} \\times \\mathbf{n}) = \\mathbf{n} \\cdot (\\mathbf{p} \\times \\mathbf{m}) = \\frac{1}{4}.\\]Then\n\\[\\|\\mathbf{p}\\| \\|\\mathbf{m} \\times \\mathbf{n}\\| \\cos \\alpha = \\frac{1}{4}.\\]Also, $\\|\\mathbf{m} \\times \\mathbf{n}\\| = \\|\\mathbf{m}\\| \\|\\mathbf{n}\\| \\sin \\alpha,$ so\n\\[\\|\\mathbf{p}\\| \\|\\mathbf{m}\\| \\|\\mathbf{n}\\| \\sin \\alpha \\cos \\alpha = \\frac{1}{4}.\\]Since $\\mathbf{m},$ $\\mathbf{n},$ and $\\mathbf{p}$ are unit vectors,\n\\[\\sin \\alpha \\cos \\alpha = \\frac{1}{4}.\\]Then $2 \\sin \\alpha \\cos \\alpha = \\frac{1}{2},$ so\n\\[\\sin 2 \\alpha = \\frac{1}{2}.\\]The smallest possible angle that satisfies this is $\\alpha = \\boxed{30^\\circ}.$"
+}

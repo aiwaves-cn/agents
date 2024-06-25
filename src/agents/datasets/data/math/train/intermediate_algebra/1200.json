@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when the polynomial $x^{1000}$ is divided by the polynomial $(x^2 + 1)(x + 1).$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $(x^2 + 1)(x + 1)$ is a factor of $(x^2 + 1)(x + 1)(x - 1) = x^4 - 1.$  Since\n\\[x^{1000} - 1 = (x^4 - 1)(x^{996} + x^{992} + x^{988} + \\dots + x^8 + x^4 + 1),\\]the remainder when $x^{1000}$ is divided by $(x^2 + 1)(x + 1)$ is $\\boxed{1}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\dbinom{10}{5}$.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "\\begin{align*}\n\\dbinom{10}{5} &= \\dfrac{10!}{5!5!} \\\\\n&= \\dfrac{10\\times9\\times 8\\times 7\\times 6}{5\\times 4\\times 3\\times 2\\times 1} \\\\\n&= \\dfrac{10}{5}\\times \\dfrac{9}{3} \\times \\dfrac{8}{4} \\times \\dfrac{7}{1} \\times \\dfrac{6}{2} \\\\\n&= 2\\times 3\\times 2\\times 7\\times 3 \\\\\n&= \\boxed{252}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\begin{vmatrix} 1 & -3 & 3 \\\\ 0 & 5 & -1 \\\\ 4 & -2 & 1 \\end{vmatrix}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} 1 & -3 & 3 \\\\ 0 & 5 & -1 \\\\ 4 & -2 & 1 \\end{vmatrix} &= \\begin{vmatrix} 5 & -1 \\\\ -2 & 1 \\end{vmatrix} - (-3) \\begin{vmatrix} 0 & -1 \\\\ 4 & 1 \\end{vmatrix} + 3 \\begin{vmatrix} 0 & 5 \\\\ 4 & -2 \\end{vmatrix} \\\\\n&= ((5)(1) - (-1)(-2)) + 3 ((0)(1) - (-1)(4)) + 3 ((0)(-2) - (5)(4)) \\\\\n&= \\boxed{-45}.\n\\end{align*}We can also expand along the first column, to take advantage of the 0 in the first column, to get\n\\begin{align*}\n\\begin{vmatrix} 1 & -3 & 3 \\\\ 0 & 5 & -1 \\\\ 4 & -2 & 1 \\end{vmatrix} &= \\begin{vmatrix} 5 & -1 \\\\ -2 & 1 \\end{vmatrix} + 4 \\begin{vmatrix} -3 & 3 \\\\ 5 & -1 \\end{vmatrix} \\\\\n&= ((5)(1) - (-1)(-2)) + 4((-3)(-1) - (3)(5)) \\\\\n&= \\boxed{-45}.\n\\end{align*}"
+}

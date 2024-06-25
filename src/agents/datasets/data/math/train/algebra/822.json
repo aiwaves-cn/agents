@@ -1,0 +1,6 @@
+{
+    "problem": "Find a nonzero $p$ such that $px^2-12x+4=0$ has only one solution.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "For a quadratic to have only one solution, the discriminant must be zero. Therefore, we have $(-12)^2-4 \\cdot p \\cdot 4 = 0$. Solving, we get $(-12)^2-4 \\cdot p \\cdot 4 = 144-16p = 0$. Thus, $144=16p$, so $p=\\boxed{9}$."
+}

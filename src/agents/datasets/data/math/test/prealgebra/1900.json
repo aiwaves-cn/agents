@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $x$ in the diagram?\n\n[asy]\nimport olympiad;\ndraw((0,0)--(sqrt(3),0)--(0,sqrt(3))--cycle);\ndraw((0,0)--(-1,0)--(0,sqrt(3))--cycle);\nlabel(\"2\",(-1/2,sqrt(3)/2),NW);\nlabel(\"$x$\",(sqrt(3)/2,sqrt(3)/2),NE);\ndraw(\"$45^{\\circ}$\",(1.5,0),NW);\ndraw(\"$60^{\\circ}$\",(-0.9,0),NE);\ndraw(rightanglemark((0,sqrt(3)),(0,0),(sqrt(3),0),4));\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "First, we label the diagram:\n\n[asy]\nimport olympiad;\ndraw((0,0)--(sqrt(3),0)--(0,sqrt(3))--cycle);\ndraw((0,0)--(-1,0)--(0,sqrt(3))--cycle);\nlabel(\"2\",(-1/2,sqrt(3)/2),NW);\nlabel(\"$x$\",(sqrt(3)/2,sqrt(3)/2),NE);\ndraw(\"$45^{\\circ}$\",(1.5,0),NW);\ndraw(\"$60^{\\circ}$\",(-0.9,0),NE);\ndraw(rightanglemark((0,sqrt(3)),(0,0),(sqrt(3),0),4));\nlabel(\"$A$\",(0,0),S);\nlabel(\"$B$\",(-1,0),W);\nlabel(\"$C$\",(sqrt(3),0),E);\nlabel(\"$D$\",(0,sqrt(3)),N);\n[/asy]\n\nTriangle $ABD$ is a 30-60-90 triangle, so $AB = BD/2 = 1$ and $AD = AB\\sqrt{3} = \\sqrt{3}$.\n\nTriangle $ACD$ is a 45-45-90 triangle, so $CD = AC \\sqrt{2} = \\sqrt{3}\\cdot \\sqrt{2} = \\boxed{\\sqrt{6}}$."
+}

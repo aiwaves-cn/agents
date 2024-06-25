@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be positive real numbers such that\n\\[\\log_a b + \\log_b c + \\log_c a = 0.\\]Find\n\\[(\\log_a b)^3 + (\\log_b c)^3 + (\\log_c a)^3.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = \\log_a b,$ $y = \\log_b c,$ and $z = \\log_c a.$  Then $x + y + z = 0,$ so\n\\[x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - xz - yz) = 0.\\]Hence,\n\\[x^3 + y^3 + z^3 = 3xyz = 3 (\\log_a b)(\\log_b c)(\\log_c a) = 3 \\cdot \\frac{\\log b}{\\log a} \\cdot \\frac{\\log c}{\\log b} \\cdot \\frac{\\log a}{\\log c} = \\boxed{3}.\\]"
+}

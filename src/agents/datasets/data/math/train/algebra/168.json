@@ -1,0 +1,6 @@
+{
+    "problem": "Given the function $y=x^2+10x+21$, what is the least possible value of $y$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "When graphed, this function is a parabola that opens upwards. Thus, the minimum possible value of y occurs at the vertex of the parabola. The $x$ coordinate of the vertex is $\\frac{-b}{2a}$. Substituting the given values, this yields $\\frac{-10}{2}=-5$. Substituting this for $x$ gives the minimum value of $y$ to be \\begin{align*}\ny&=x^2+10x+21 \\\\\n&=(-5)^2+10(-5)+21 \\\\\n&=25+(-50)+21 \\\\\n&=25-50+21 \\\\\n&=-25+21 \\\\\n&=\\boxed{-4}\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The asymptotes of a hyperbola are $y = x + 1$ and $y = 3 - x.$  Also, the hyperbola passes through $(3,3).$  Find the distance between the foci of the hyperbola.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The intersection of the asymptotes is $(1,2),$ so this is the center of the hyperbola.  Since the slopes of the asymptotes are $\\pm 1,$ the equation of the hyperbola can be written in the form\n\\[(x - 1)^2 - (y - 2)^2 = d\\]for some constant $d.$  Setting $x = 3$ and $y = 3,$ we get $d = 3,$ so the equation is\n\\[\\frac{(x - 1)^2}{3} - \\frac{(y - 2)^2}{3} = 1.\\]Then $a^2 = 3$ and $b^2 = 3,$ so $c^2 = a^2 + b^2 = 6,$ which means $c = \\sqrt{6}.$  Therefore, the distance between the foci is $2c = \\boxed{2 \\sqrt{6}}.$"
+}

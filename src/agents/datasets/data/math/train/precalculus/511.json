@@ -1,0 +1,6 @@
+{
+    "problem": "In three-dimensional space, find the number of lattice points that have a distance of 3 from the origin.\n\nNote: A point is a lattice point if all its coordinates are integers.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let the point be $(x,y,z).$  Each coordinate can only be 0, $\\pm 1,$ $\\pm 2,$ or $\\pm 3.$  Checking we find that up to sign, the only possible combinations of $x,$ $y,$ and $z$ that work are either two 0s and one 3, or one 1 and two 2s.\n\nIf there are two 0s and one 3, then there are 3 ways to place the 3.  Then the 3 can be positive or negative, which gives us $3 \\cdot 2 = 6$ points.\n\nIf there is one 1 and two 2s, then there are 3 ways to place the 1.  Then each coordinate can be positive or negative, which gives us $3 \\cdot 2^3 = 24$ points.\n\nTherefore, there are $6 + 24 = \\boxed{30}$ such lattice points."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ is an integer, what is the smallest value of the expression $x^2 - 6x +13$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can write $x^2-6x+13 = x^2-6x+9+4 = (x-3)^2 + 4$. Therefore, since $(x-3)^2$ can never be negative, but we can make it zero when $x=3$, the smallest possible value of the expression $x^2-6x+13$ when $x$ is an integer is $\\boxed{4}$."
+}

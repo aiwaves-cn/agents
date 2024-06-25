@@ -1,0 +1,6 @@
+{
+    "problem": "There are 3 math teams in the area, with 5, 7, and 8 students respectively. Each team has two co-captains. If I randomly select a team, and then randomly select two members of that team to give a copy of $\\emph{Introduction to Geometry}$, what is the probability that both of the people who receive books are co-captains?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There's a $\\dfrac{1}{3}$ chance that I will select each team. Once I have selected a team, let $n$ be the number of students on that team. There are $\\dbinom{n}{2}$ ways to choose a pair of those students to give books to, but only one of those pairs will be the two co-captains, which means that once I have selected that team, the probability that I give books to the co-captains is $$\\dfrac{1}{\\dfrac{n(n-1)}{2}}=\\dfrac{2}{n(n-1)}.$$Since the teams have $5,$ $7,$ and $8$ students, this means that the total probability is $$\\dfrac{1}{3}\\left(\\dfrac{2}{5(5-1)}+\\dfrac{2}{7(7-1)}+\\dfrac{2}{8(8-1)}\\right)$$which after a bit of arithmetic simplifies to $\\boxed{\\dfrac{11}{180}}$."
+}

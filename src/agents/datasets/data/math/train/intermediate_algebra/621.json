@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)=ax^2+bx+c$, where $a$, $b$, and $c$ are integers. Suppose that $f(1)=0$, $50<f(7)<60$, $70<f(8)<80$, $5000k<f(100)<5000(k+1)$ for some integer $k$. What is $k$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "From $f(1) = 0,$ $a + b + c = 0,$ so $c = -a - b.$  Then\n\\[f(7) = 49a + 7b + c = 48a + 6b = 6(8a + b),\\]so from $50 < f(7) < 60,$\n\\[50 < 6(8a + b) < 60.\\]The only multiple of 6 in this range is 54, leading to $8a + b = 9.$\n\nAlso,\n\\[f(8) = 64a + 8b + c = 63a + 7b = 7(9a + b),\\]so from $70 < f(8) < 80,$\n\\[70 < 7(9a + b) < 80.\\]The only multiple of 7 in this range is 77, leading to $9a + b = 11.$  Then $a = 2,$ $b = -7,$ and $c = 5.$\n\nHence, $f(100) = 2 \\cdot 100^2 - 7 \\cdot 100 + 5 = 19305,$ so $k = \\boxed{3}.$"
+}

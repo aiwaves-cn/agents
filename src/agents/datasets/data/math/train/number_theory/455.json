@@ -1,0 +1,6 @@
+{
+    "problem": "A certain integer has $4$ digits when written in base $8$. The same integer has $d$ digits when written in base $2$. What is the sum of all possible values of $d$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The smallest integer that has $4$ digits in base $8$ is $1000_8$, which stands for $8^3 = 2^9$. The largest integer that has $4$ digits in base $8$ is $7777_8$, which is $1$ less than $10000_8$ and therefore stands for $8^4-1 = 2^{12}-1$.\n\nThus, when a $4$-digit base-$8$ integer is written in base $2$, its highest place value is either $2^9$, $2^{10}$, or $2^{11}$. It follows that the base-$2$ expression has $10$, $11$, or $12$ digits, so the sum of all possible values for $d$ is $10+11+12 = \\boxed{33}$."
+}

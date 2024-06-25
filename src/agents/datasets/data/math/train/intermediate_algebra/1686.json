@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\sum_{1 \\le a < b < c} \\frac{1}{2^a 3^b 5^c}.\\](The sum is taken over all triples $(a,b,c)$ of positive integers such that $1 \\le a < b < c.$)",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $x = a,$ $y = b - a,$ and $z = c - b,$ so $x \\ge 1,$ $y \\ge 1,$ and $z \\ge 1.$  Also, $b = a + y = x + y$ and $c = b + z = x + y + z,$ so\n\\begin{align*}\n\\sum_{1 \\le a < b < c} \\frac{1}{2^a 3^b 5^c} &= \\sum_{x = 1}^\\infty \\sum_{y = 1}^\\infty \\sum_{z = 1}^\\infty \\frac{1}{2^x 3^{x + y} 5^{x + y + z}} \\\\\n&= \\sum_{x = 1}^\\infty \\sum_{y = 1}^\\infty \\sum_{z = 1}^\\infty \\frac{1}{30^x 15^y 5^z} \\\\\n&= \\sum_{x = 1}^\\infty \\frac{1}{30^x} \\sum_{y = 1}^\\infty \\frac{1}{15^y} \\sum_{z = 1}^\\infty \\frac{1}{5^z} \\\\\n&= \\frac{1}{29} \\cdot \\frac{1}{14} \\cdot \\frac{1}{4} \\\\\n&= \\boxed{\\frac{1}{1624}}.\n\\end{align*}"
+}

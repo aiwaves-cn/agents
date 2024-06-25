@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the first six terms in the geometric sequence $\\frac12,\\frac14,\\frac18,\\dots$. Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "This 6-term geometric series has first term $a_0 = \\frac12$ and ratio $\\frac12$, so it has value  \\begin{align*}\n\\frac{\\frac12(1-\\left(\\frac12\\right)^{6})}{1-\\frac12} &= 1-\\left(\\frac12\\right)^{6}\\\\\n&= 1-\\frac1{64}\\\\\n&= \\boxed{\\frac{63}{64}}.\n\\end{align*}"
+}

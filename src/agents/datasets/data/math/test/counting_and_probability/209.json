@@ -1,0 +1,6 @@
+{
+    "problem": "The fair spinner shown is spun once. What is the probability of spinning an odd number? Express your answer as a common fraction.\n\n[asy]\ndot((0,0));\n\ndraw((3,0)--(3,3)--(0,3));\nimport graph;\ndraw(Circle((0,0),25));\ndraw((0,-25)--(0,25));\ndraw((0,0)--(25,0));\ndraw((0,0)--(-15,9),Arrow);\nlabel(\"15\",(-10,0),W);\nlabel(\"23\",(10,10),NE);\nlabel(\"14\",(10,-10),SE);\n[/asy]",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The central angles of the two regions corresponding to odd numbers are 180 degrees and 90 degrees.  Therefore, the probability of spinning an odd number is $\\frac{180+90}{360}=\\boxed{\\frac{3}{4}}$."
+}

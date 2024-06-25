@@ -1,0 +1,6 @@
+{
+    "problem": "In the polygon shown, each side is perpendicular to its adjacent sides, and all 28 of the sides are congruent.  The perimeter of the polygon is 56.  Find the area of the polygon.\n\n[asy]\nunitsize(0.5 cm);\n\ndraw((3,0)--(4,0)--(4,1)--(5,1)--(5,2)--(6,2)--(6,3)--(7,3)--(7,4)--(6,4)--(6,5)--(5,5)--(5,6)--(4,6)--(4,7)--(3,7)--(3,6)--(2,6)--(2,5)--(1,5)--(1,4)--(0,4)--(0,3)--(1,3)--(1,2)--(2,2)--(2,1)--(3,1)--cycle);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "We can divide the polygon into 25 squares.\n\n[asy]\nunitsize(0.5 cm);\n\ndraw((3,0)--(4,0));\ndraw((2,1)--(5,1));\ndraw((1,2)--(6,2));\ndraw((0,3)--(7,3));\ndraw((0,4)--(7,4));\ndraw((1,5)--(6,5));\ndraw((2,6)--(5,6));\ndraw((3,7)--(4,7));\ndraw((0,3)--(0,4));\ndraw((1,2)--(1,5));\ndraw((2,1)--(2,6));\ndraw((3,0)--(3,7));\ndraw((4,0)--(4,7));\ndraw((5,1)--(5,6));\ndraw((6,2)--(6,5));\ndraw((7,3)--(7,4));\n[/asy]\n\nLet the side length of each square be $s$.  Then the perimeter of the polygon is $28s = 56$, so $s = 2$.  Hence, the area of the polygon is $25s^2 = \\boxed{100}$."
+}

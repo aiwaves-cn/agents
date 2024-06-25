@@ -1,0 +1,6 @@
+{
+    "problem": "The side of a square has the length $(x-2)$, while a rectangle has a length of $(x-3)$ and a width of $(x+4)$. If the area of the rectangle is twice the area of the square, what is the sum of the possible values of $x$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The area of the square is $(x-2)^2$, while the area of the rectangle is $(x-3)(x+4)$. Now we set the area of the rectangle equal to twice the area of the square and solve for $x$: \\begin{align*}\n2(x-2)^2&=(x-3)(x+4)\\quad\\Rightarrow\\\\\n2(x^2-4x+4)&=(x^2+x-12)\\quad\\Rightarrow\\\\\nx^2-9x+20&=0\\quad\\Rightarrow\\\\\n(x-5)(x-4)&=0.\n\\end{align*}So we know that $x=5$ or $x=4$, and our answer is $5+4=\\boxed{9}$."
+}

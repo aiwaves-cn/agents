@@ -1,0 +1,6 @@
+{
+    "problem": "Express the next term in the sequence as a decimal: $$0, 0.5, 0.\\overline{6}, 0.75 \\dots $$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "To find the pattern of the sequence, we begin by converting each of the decimal values into a common fraction. The first term $0$ is equal to $\\frac{0}{1}$. The next term, $0.5$, can be written as $\\frac{5}{10}=\\frac{1}{2}$. To express $0.\\overline{6}$ as a common fraction, we call it $x$ and subtract it from $10x$:\n\n$$\\begin{array}{r r c r@{}l}\n&10x &=& 6&.66666\\ldots \\\\\n- &x &=& 0&.66666\\ldots \\\\\n\\hline\n&9x &=& 6 &\n\\end{array}$$\n\nThis shows that $0.\\overline{6} = \\frac{6}{9} = \\frac{2}{3}$. The fourth term in the series, $0.75$, becomes $\\frac{75}{100}=\\frac{3}{4}$. Thus, when we write fractions instead of decimals, our sequence is: $$\\frac{0}{1}, \\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}, \\cdots$$  By observing this sequence, we realize that the first term of the sequence is $\\frac{0}{1}$ and each successive term is found by adding $1$ to both the numerator and denominator of the previous term. Thus, the next term in the sequence is $\\frac{3+1}{4+1}=\\frac{4}{5}=\\boxed{0.8}$."
+}

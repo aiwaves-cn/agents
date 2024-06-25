@@ -1,0 +1,6 @@
+{
+    "problem": "A baseball league has nine teams. During the season, each of the nine teams plays exactly three games with each of the other teams. What is the total number of games played?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Suppose each team played just one game with each of the remaining teams. Then each of the nine teams plays eight games. This makes a total of $9 \\times 8$ or 72 games. However each game has been counted twice in this total. For example, the game between Team A and Team B appears in A's 8 games and also B's 8 games. Therefore there are $9 \\times \\frac{8}{2} = 36$ different games played. Since each game is played three times, the total number of games played is $3 \\times 36 = \\boxed{108}$."
+}

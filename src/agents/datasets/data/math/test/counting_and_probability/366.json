@@ -1,0 +1,6 @@
+{
+    "problem": "The three-digit number \"$ab5$'' is divisible by 3. How many different three-digit numbers can \"$ab5$'' represent?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "If the number is divisible by $3$, the sum of the digits must be divisible by $3$.  So $a+b$ must be one more than a multiple of $3$, since $5$ is one less than a multiple of $3$.  We have several options:\n\nIf $a+b=1$, it must be $(1,0)$, one possibility.\n\nFor $a+b=4$, $a$ can be $1$ to $4$, for four possibilities.\n\nFor $a+b=7$, $a$ can be $1$ to $7$, so seven possibilities.\n\nFor $a+b=10$, anything from $(1,9)$ to $(9,1)$ works, so nine possibilities.\n\nFor $a+b=13$, the pairs range from $(4,9)$ to $(9,4)$, for six possibilities.\n\nIf $a+b=16$, we can have $(7,9)$, $(8,8)$, or $(9,7)$, so three possibilities.\n\n$a+b=19$ and up is not possible.\n\nSo the total number is\n\n$$1+4+7+9+6+3=\\boxed{30}$$"
+}

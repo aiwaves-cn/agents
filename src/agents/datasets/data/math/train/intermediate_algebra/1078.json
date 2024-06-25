@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[4x + \\frac{1}{x^4}\\]for $x > 0.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[4x + \\frac{1}{x^4} = x + x + x + x + \\frac{1}{x^4} \\ge 5 \\sqrt[5]{x^4 \\cdot \\frac{1}{x^4}} = 5.\\]Equality occurs when $x = 1,$ so the minimum value is $\\boxed{5}.$"
+}

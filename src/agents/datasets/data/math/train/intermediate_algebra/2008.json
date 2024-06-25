@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $a$, $b$ and $c$ are integers such that the greatest common divisor of $x^2+ax+b$ and $x^2+bx+c$ is $x+1$ (in the set of polynomials in $x$ with integer coefficients), and the least common multiple of $x^2+ax+b$ and $x^2+bx+c$ is $x^3-4x^2+x+6$.  Find $a+b+c$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x+1$ divides $x^2+ax+b$ and the constant term is $b$, we have $x^2+ax+b=(x+1)(x+b)$, and similarly $x^2+bx+c=(x+1)(x+c)$.  Therefore, $a=b+1=c+2$.  Furthermore, the least common multiple of the two polynomials is $(x+1)(x+b)(x+b-1)=x^3-4x^2+x+6$, so $b=-2$.  Thus $a=-1$ and $c=-3$, and $a+b+c=\\boxed{-6}$."
+}

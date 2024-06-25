@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A=(0,1),$ $B=(2,5),$ $C=(5,2),$ and $D=(7,0).$ A figure is created by connecting $A$ to $B,$ $B$ to $C,$ $C$ to $D,$ and $D$ to $A.$ The perimeter of $ABCD$ can be expressed in the form $a\\sqrt2+b\\sqrt{5}$ with $a$ and $b$ integers. What is the sum of $a$ and $b$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We use the distance formula to find the length of each side.\n\nThe distance from $(0, 1)$ to $(2, 5)$ is $\\sqrt{(2 - 0)^2 + (5 - 1)^2} = 2\\sqrt{5}$.\n\nThe distance from $(2, 5)$ to $(5, 2)$ is $\\sqrt{(5 - 2)^2 + (2 - 5)^2} = 3\\sqrt{2}$.\n\nThe distance from $(5, 2)$ to $(7, 0)$ is $\\sqrt{(7 - 5)^2 + (0 - 2)^2} = 2\\sqrt{2}$.\n\nThe distance from $(7, 0)$ to $(0, 1)$ is $\\sqrt{(0 - 7)^2 + (1 - 0)^2} = 5\\sqrt{2}$.\n\nAdding all of these side lengths, we find that the perimeter is $10\\sqrt{2} + 2\\sqrt{5}$. Thus, our final answer is $10 + 2 = \\boxed{12}$."
+}

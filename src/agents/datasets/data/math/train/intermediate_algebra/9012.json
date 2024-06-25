@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ denote the value of the sum\n\\[\\sum_{n = 1}^{9800} \\frac{1}{\\sqrt{n + \\sqrt{n^2 - 1}}}\\]\n$S$ can be expressed as $p + q \\sqrt{r}$, where $p, q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime. Determine $p + q + r$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Notice that $\\sqrt{n + \\sqrt{n^2 - 1}} = \\frac{1}{\\sqrt{2}}\\sqrt{2n + 2\\sqrt{(n+1)(n-1)}} = \\frac{1}{\\sqrt{2}}\\left(\\sqrt{n+1}+\\sqrt{n-1}\\right)$. Thus, we have\n\\[\\sum_{n = 1}^{9800} \\frac{1}{\\sqrt{n + \\sqrt{n^2 - 1}}}\\]\\[= \\sqrt{2}\\sum_{n = 1}^{9800} \\frac{1}{\\sqrt{n+1}+\\sqrt{n-1}}\\]\\[= \\frac{1}{\\sqrt{2}}\\sum_{n = 1}^{9800} \\left(\\sqrt{n+1}-\\sqrt{n-1}\\right)\\]\nThis is a telescoping series; note that when we expand the summation, all of the intermediary terms cancel, leaving us with $\\frac{1}{\\sqrt{2}}\\left(\\sqrt{9801}+\\sqrt{9800}-\\sqrt{1}-\\sqrt{0}\\right) = 70 + 49\\sqrt{2}$, and $p+q+r=\\boxed{121}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "$n$ coins are simultaneously flipped.  The probability that at most one of them shows tails is $\\frac{3}{16}$.  Find $n$.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Since each coin has 2 possible outcomes, there are $2^n$ possible outcomes for the $n$ coins.  The number of outcomes in which the number of tails is 0 or 1 is $\\binom{n}{0}+\\binom{n}{1}=1+n$.  So the probability of having at most one tail is $\\dfrac{1+n}{2^n}$.  Therefore, we must solve the equation $$ \\frac{1+n}{2^n} =\\frac{3}{16}. $$ We can check (simply by plugging in values of $n$) that if $1 \\leq n \\leq 5$, then $n=5$ is the only solution.  Now we show that $n\\geq 6$ cannot be a solution to the equation.  Observe that $n\\geq 6$ implies $n<2^{n-3}$, thus \\[\\frac{1+n}{2^n}<\\frac{1+2^{n-3}}{2^n}=\\frac{1}{2^n}+\\frac{1}{8}<\\frac{1}{16}+\\frac{1}{8}=\\frac{3}{16}.\\] So there are $\\boxed{5}$ coins."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the $111$th digit after the decimal point when $\\frac{33}{555}$ is expressed as a decimal?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Using long division, we find that $\\frac{33}{555}$ can be expressed as a repeating decimal $0.0\\overline{594}$.\n\nAfter the first digit, there is a three-digit repeating block. We want to find the $110$th digit after the first digit. The remainder when $110$ is divided by $3$ is $2$. Therefore, the $111$th digit is the second digit in the repeating block, which is $\\boxed{9}$."
+}

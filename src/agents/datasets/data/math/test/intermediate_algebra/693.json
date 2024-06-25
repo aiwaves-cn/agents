@@ -1,0 +1,6 @@
+{
+    "problem": "Stacy has $d$ dollars. She enters a mall with $10$ shops and a lottery stall. First she goes to the lottery and her money is doubled, then she goes into the first shop and spends $1024$ dollars. After that she alternates playing the lottery and getting her money doubled (Stacy always wins) then going into a new shop and spending $\\$1024$. When she comes out of the last shop she has no money left. What is the minimum possible value of $d$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "After the first lottery and first shop, Stacy has\n\\[2d - 1024\\]dollars.  After the second lottery and second shop, Stacy has\n\\[2(2d - 1024) - 1024 = 2^2 d - (1 + 2) 1024\\]dollars.  After the third lottery and third shop, Stacy has\n\\[2(2^2 d - (1 + 2) 1024) - 1024 = 2^3 d - (1 + 2 + 2^2) 1024\\]dollars.\n\nMore generally, after the $n$th lottery and $n$th shop, Stacy has\n\\[2^n d - (1 + 2 + 2^2 + \\dots + 2^{n - 1}) 1024 = 2^n d - 1024 (2^n - 1)\\]dollars.  In particular, for $n = 10,$ Stacy has\n\\[1024d - 1024 (1023)\\]dollars, which is also 0.  Hence, $d = \\boxed{1023}.$"
+}

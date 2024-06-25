@@ -1,0 +1,6 @@
+{
+    "problem": "Ray will choose at random an integer $Q$, such that $34 < Q < 43$. What is the probability that Ray will choose a prime number? Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "$Q\\in\\{35, 36, 37, 38, 39, 40, 41, 42\\}$. Only 2 of these 8 numbers are prime: 37 and 41. Thus, the probability that Ray will choose a prime number is $2/8=\\boxed{\\frac{1}{4}}$."
+}

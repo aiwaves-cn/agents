@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $5^{207}$ is divided by 7?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We try finding the remainders when increasing powers of 5 are divided by 7.  \\begin{align*}\n5^1\\div 7 &\\text{ leaves a remainder of } 5.\\\\\n5^2\\div 7 &\\text{ leaves a remainder of } 4.\\\\\n5^3\\div 7&\\text{ leaves a remainder of } 6.\\\\\n5^4\\div 7&\\text{ leaves a remainder of } 2.\\\\\n5^5\\div 7&\\text{ leaves a remainder of }3.\\\\\n5^6\\div 7 &\\text{ leaves a remainder of }1.\\\\\n5^7\\div 7 &\\text{ leaves a remainder of } 5.\\\\\n5^8\\div 7 &\\text{ leaves a remainder of }4.\n\\end{align*} $$\\vdots$$ The remainders repeat after every 6 powers of 5. So we look for the remainder when 207 is divided by 6, which leaves a remainder of 3. We could use long division, but notice that 207 is a multiple of 3 (digits sum to 9, which is a multiple of 3) but is not a multiple of 2. That means 207 is not divisible by 6 and must be exactly 3 more than a multiple of 6. So the remainder for $5^{207}$ when divided by 7 is the same as the remainder when $5^3$ is divided by 7, which is $\\boxed{6}$."
+}

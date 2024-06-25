@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c,$ and $d$ be the roots of \\[x^4 + 8x^3 + 9x^2 + 5x + 4 = 0.\\]Find the value of \\[\\frac{1}{ab} + \\frac{1}{ac} + \\frac{1}{ad} + \\frac{1}{bc} + \\frac{1}{bd} + \\frac{1}{cd}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Putting these fractions over a common denominator, we get \\[\\frac{1}{ab} + \\frac{1}{ac} + \\frac{1}{ad} + \\frac{1}{bc} + \\frac{1}{bd} + \\frac{1}{cd} = \\frac{cd + bd + ac + ad + ac + ab}{abcd}.\\]By Vieta's formulas, $ab+ac+ad+bc+bd+cd=9$ and $abcd=4.$ Therefore, the answer is $\\boxed{\\tfrac 94}.$"
+}

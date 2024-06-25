@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest factor of 54,321 that is less than 54,321?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We first look for the smallest proper factor of $54,\\!321$.  (Recall that a proper factor of a positive integer $n$ is a factor other than 1 or $n$).  Since $54,\\!321$ is not even, we try 3.  The sum of the digits of $54,\\!321$ is 15, which is divisible by 3.  Therefore, 3 is the smallest proper factor of $54,\\!321$.  It follows that the largest proper factor is $54,\\!321/3=\\boxed{18,\\!107}$.  (Note: to see that $n/d$ is the largest proper factor of an integer $n$ whose smallest proper factor is $d$, observe that if $f$ were a proper factor larger than $n/d$, then $n/f$ would be a proper factor smaller than $d$)."
+}

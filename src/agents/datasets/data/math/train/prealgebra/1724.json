@@ -1,0 +1,6 @@
+{
+    "problem": "Two right triangles, $ABC$ and $ACD$, are joined as shown. Squares are drawn on four of the sides. The areas of three of the squares are 9, 16 and 36 square units. What is the number of square units in the area of the fourth square?\n\nNote that the diagram is not drawn to scale.\n\n[asy]\ndefaultpen(linewidth(0.7));\ndraw((0,0)--(12,0)--(12,12)--(0,12)--cycle);\ndraw((2,12)--(2,14)--(0,14));\ndraw((0,12)--(0,17)--(12,12));\ndraw((0,17)--(5.8,31)--(12,12));\ndraw((5.8,31)--(24.8,37.2)--(31,18.2)--(12,12));\ndraw((0,17)--(-14,22.8)--(-8.2,36.8)--(5.8,31));\ndraw((0,12)--(-5,12)--(-5,17)--(0,17));\ndraw((1.2,16.5)--(1.7,17.7)--(0.5,18.2));\nlabel(\"$A$\",(12,12),SE);\nlabel(\"$B$\",(0,12),SW);\nlabel(\"$C$\",(0,17),NNW);\nlabel(\"$D$\",(5.8,31),N);\nlabel(\"16\",((0,17)+(-14,22.8)+(-8.2,36.8)+(5.8,31))/4);\nlabel(\"9\",(-5/2,6+17/2));\nlabel(\"36\",(6,6));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The area of the square is $AD^2$.  By the Pythagorean theorem applied to triangle $ABC$, we have $AC^2=36+9=45$ square units.  By the Pythagorean theorem applied to triangle $ACD$, we have $AD^2=16+45=\\boxed{61}$ square units."
+}

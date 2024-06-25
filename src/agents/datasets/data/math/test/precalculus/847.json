@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\sin x + \\cos x = \\frac{1}{2},$ then find $\\sin^3 x + \\cos^3 x.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Squaring the equation $\\sin x + \\cos x = \\frac{1}{2},$ we get\n\\[\\sin^2 x + 2 \\sin x \\cos x + \\cos^2 x = \\frac{1}{4}.\\]Then $1 + 2 \\sin x \\cos x = \\frac{1}{4},$ so $\\sin x \\cos x = -\\frac{3}{8}.$\n\nThen\n\\begin{align*}\n\\sin^3 x + \\cos^3 x &= (\\sin x + \\cos x)(\\sin^2 x - \\sin x \\cos x + \\cos^2 x) \\\\\n&= \\frac{1}{2} \\cdot \\left( 1 + \\frac{3}{8} \\right) \\\\\n&= \\boxed{\\frac{11}{16}}.\n\\end{align*}"
+}

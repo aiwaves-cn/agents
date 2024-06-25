@@ -1,0 +1,6 @@
+{
+    "problem": "What is $35_8-74_8?$ Express your answer in base 8.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "When we are subtracting, we want to subtract a smaller number from a bigger number. We can pull out a negative sign in order to accomplish this:  \\[ 35_8-74_8 = -(74_8 - 35_8). \\]Now, we can line in the numbers and subtract just as we do in base 10.  For example, when we borrow from the $8^1$s place, the digit 1 in the units place becomes $4+8=12$, while the digit in the $8^1$s place decreases by 1. Continuing in this way, we find $$\\begin{array}{c@{}c@{}c@{}c}\n& & \\cancelto{6}{7} & \\cancelto{12}{4}_8 \\\\\n& - & 3 & 5_8 \\\\\n\\cline{2-4}\n& & 3 & 7_8 \\\\\n\\end{array}$$Therefore, $35_8-74_8 = -(74_8 - 35_8) = \\boxed{-37_8}$."
+}

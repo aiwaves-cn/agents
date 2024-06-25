@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest integer less than $\\log_2 \\frac{2}{1} + \\log_2 \\frac{3}{2} + \\cdots + \\log_2 \\frac{2009}{2008} + \\log_2 \\frac{2010}{2009}$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Recall that $\\log_2 \\frac{x}{y} = \\log_2 x - \\log_2 y$. Applying this identity to each term in the sum, we find that the sum is equal to to $(\\log_2 2 - \\log_2 1) + (\\log_2 3 - \\log_2 2) + \\cdots + (\\log_2 2010 - \\log_2 2009)$. Most of the intermediate terms cancel out; the expression eventually evaluates to\n\\[\\log_2 2010 - \\log_2 1 = \\log_2 2010.\\]Note that $2^{10} = 1024$, but $2^{11} = 2048$, so $10 < \\log_2 2010 < 11$. It follows that the largest integer less than $\\log_2 \\frac{2}{1} + \\log_2 \\frac{3}{2} + \\cdots + \\log_2 \\frac{2009}{2008} + \\log_2 \\frac{2010}{2009}$ is $\\boxed{10}$."
+}

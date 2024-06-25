@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the exact value of the expression $\\left|\\pi - | \\pi - 7 | \\right|$.  Write your answer using only integers and $\\pi$, without any absolute value signs.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We begin by examining the quantity $|\\pi - 7|$.  Since $\\pi$ is less than 4, clearly $\\pi-7$ will be negative.  Hence we must negate this quantity to obtain its absolute value, which is always positive.  In other words, \\[ |\\pi - 7| = -(\\pi - 7) = 7- \\pi. \\]Continuing, we next consider the expression $\\pi-|\\pi - 7|$, which reduces to $2\\pi - 7$ in light of the above computation.  Since $\\pi$ is less than 3.5, this quantity is also negative.  Hence we must negate it just as before when taking absolute value, leading to our final answer of $\\boxed{7-2\\pi}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $d$ and $e$ denote the solutions of $2x^{2}+3x-5=0$. What is the value of $(d-1)(e-1)$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "By Vieta's formulas, $d + e = -\\frac{3}{2}$ and $de = -\\frac{5}{2},$ so\n\\[(d - 1)(e - 1) = de - (d + e) + 1 = -\\frac{5}{2} + \\frac{3}{2} + 1 = \\boxed{0}.\\]"
+}

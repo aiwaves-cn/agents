@@ -1,0 +1,6 @@
+{
+    "problem": "Calculate $\\frac{1}{4} \\cdot \\frac{2}{5} \\cdot \\frac{3}{6} \\cdot \\frac{4}{7} \\cdots \\frac{49}{52} \\cdot \\frac{50}{53}$. Express your answer as a common fraction.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Note that from $\\frac{4}{7}$ to $\\frac{50}{53},$ the numerator of each fraction cancels with the denominator of the fraction three terms before it. Thus, the product simplifies to  \\[\\frac{1 \\cdot 2 \\cdot 3}{51\\cdot 52\\cdot 53 }= \\boxed{\\frac{1}{23426}}.\\]"
+}

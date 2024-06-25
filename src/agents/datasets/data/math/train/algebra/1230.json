@@ -1,0 +1,6 @@
+{
+    "problem": "It takes 15 men working steadily 4 days to dig the foundation for a new apartment.  How many days would it have taken 25 men working at the same rate to dig the foundation?  Express your answer as a decimal to the nearest tenth.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The number of men and the amount of time to dig the foundation are inversely proportional.  Let $m$ equal the number of men and $d$ equal the number of days to complete the foundation.  This implies that $md=k$ for some constant $k$.  From the given information, $15\\cdot 4=60=k$.  Knowing the value of $k$ we can solve for the number of days it would have have taken 25 men to dig the foundation: \\begin{align*}\n25\\cdot d&=60\\\\\n\\Rightarrow\\qquad d&=60/25=12/5=\\boxed{2.4}\n\\end{align*}"
+}

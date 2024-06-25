@@ -1,0 +1,6 @@
+{
+    "problem": "Of the final five contestants in a television show, three are female and two are male. If two are chosen randomly to be the final contestants, what is the probability that both are female? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are ${5 \\choose 2} = 10$ pairs of contestants.  Exactly ${3 \\choose 2} = 3$ of these are female pairs.  The probability that both of the final contestants are female is $\\boxed{\\frac{3}{10}}$."
+}

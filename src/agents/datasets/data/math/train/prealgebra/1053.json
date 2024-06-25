@@ -1,0 +1,6 @@
+{
+    "problem": "Two circles have the same center $C.$ (Circles which have the same center are called concentric.) The larger circle has radius $10$ and the smaller circle has radius $6.$ Determine the area of the ring between these two circles. [asy]\nimport graph;\nfilldraw(circle((0,0),10), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),6), white, black+linewidth(1));\ndot((0,0));\nlabel(\"$C$\",(0,0),NE);\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The area of a circle with radius $r$ is $\\pi r^2.$\n\nSo the area of the larger circle is $\\pi(10^2)=100\\pi$ and the area of the smaller circle is $\\pi(6^2)=36\\pi.$\n\nThe area of the ring between the two circles is the difference of these two areas.\n\nTherefore, the area of the ring is $100\\pi - 36\\pi = \\boxed{64\\pi}.$"
+}

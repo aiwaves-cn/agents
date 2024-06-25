@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix $\\mathbf{M}$ such that\n\\[\\mathbf{M} \\begin{pmatrix} -3 & 4 & 0 \\\\ 5 & -7 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} = \\mathbf{I}.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{M} = \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix}.$  Then\n\\[\\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} \\begin{pmatrix} -3 & 4 & 0 \\\\ 5 & -7 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 5b - 3a & 4a - 7b & c \\\\ 5e - 3d & 4d - 7e & f \\\\ 5h - 3g & 4g - 7h & i \\end{pmatrix}.\\]We want this to equal $\\mathbf{I},$ so $c = f = 0$ and $i = 1.$  Also, $5h - 3g = 4g - 7h = 0,$ which forces $g = 0$ and $h = 0.$\n\nNote that the remaining part of the matrix can be expressed as the product of two $2 \\times 2$ matrices:\n\\[\\begin{pmatrix} 5b - 3a & 4a - 7b \\\\ 5e - 3d & 4d - 7e \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ d & e \\end{pmatrix} \\begin{pmatrix} -3 & 4 \\\\ 5 & -7 \\end{pmatrix}.\\]We want this to equal $\\mathbf{I},$ so $\\begin{pmatrix} a & b \\\\ d & e \\end{pmatrix}$ is the inverse of $\\begin{pmatrix} -3 & 4 \\\\ 5 & -7 \\end{pmatrix},$ which is $\\begin{pmatrix} -7 & -4 \\\\ -5 & -3 \\end{pmatrix}.$  Therefore,\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} -7 & -4 & 0 \\\\ -5 & -3 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}}.\\]"
+}

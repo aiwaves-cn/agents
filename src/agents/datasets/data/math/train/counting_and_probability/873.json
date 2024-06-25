@@ -1,0 +1,6 @@
+{
+    "problem": "Ben twice chooses a random integer between 1 and 50, inclusive (and he may choose the same integer both times). What is the probability that at least one of the numbers Ben chooses is a multiple of 3?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 16 multiples of 3 between 1 and 50 ($1\\cdot 3$ through $16\\cdot 3$), and $50-16=34$ numbers which are not multiples of 3. The probability that neither of the numbers Ben chooses is a multiple of 3 is $\\left( \\frac{34}{50} \\right)^2=\\frac{1156}{2500}$. Therefore, the probability that at least one of the numbers that Ben chooses is a multiple of 3 is $1-\\frac{1156}{2500}=\\frac{1344}{2500}=\\boxed{\\frac{336}{625}}$."
+}

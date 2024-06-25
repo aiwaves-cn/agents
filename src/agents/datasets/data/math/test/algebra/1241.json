@@ -1,0 +1,6 @@
+{
+    "problem": "Define $f(x) = \\frac{x^2 + 2x + 3}{x}$ and $g(x) = x^3 + 2$. Evaluate $g(f(x))$ when $x = -3$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can first evaluate $f(-3)$. $$f(-3) = \\frac{(-3)^2 + 2(-3) + 3}{-3} = \\frac{9 - 6 + 3}{-3} = -2$$ Now we substitute $f(-3) = -2$ into $g(f(x))$. $$g(-2) = (-2)^3 + 2 = -8 + 2 = \\boxed{-6}$$"
+}

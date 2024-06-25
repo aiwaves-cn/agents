@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $2^x+ 2^x+ 2^x+ 2^x= 128$, what is the value of $(x + 1)(x - 1)$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, we simplify the left side, and we have \\[2^x+2^x+2^x+2^x = 4\\cdot 2^x = 2^2\\cdot 2^x = 2^{x+2}.\\]Noting that $128 = 2^7$, our equation now is $2^{x+2} = 2^7$, so $x+2 = 7$.  Therefore, $x=5$, and $(x+1)(x-1) = (6)(4) = \\boxed{24}$."
+}

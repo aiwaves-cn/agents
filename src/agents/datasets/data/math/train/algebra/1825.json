@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the geometric sequence $3$, $\\dfrac{9}{2}$, $\\dfrac{27}{4}$, $\\dfrac{81}{8}$, $\\ldots$. Find the eighth term of the sequence.  Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The first term is $3$, and the ratio between terms is $(9/2)/3=3/2$. Therefore, the eighth term of the sequence is $3\\cdot(3/2)^{8-1} = 3^8/2^7 = \\boxed{\\frac{6561}{128}}$."
+}

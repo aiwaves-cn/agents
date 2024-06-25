@@ -1,0 +1,6 @@
+{
+    "problem": "Calculate $[(12^{12} \\div 12^{11})^2 \\cdot 4^2] \\div 2^4$.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Remembering proper order of operations, first simplify the terms in the parentheses using the quotient of powers rule:\n\n$12^{12} \\div 12^{11} = 12^{12-11} = 12$ so that the expression becomes  \\[(12^2 \\cdot 4^2) \\div 2^4 = 12^2 \\cdot 4^2 \\div 2^4.\\] Since $4^2 = 4 \\cdot 4 = 2 \\cdot 2 \\cdot 2 \\cdot 2 = 2^4$, we have \\[12^2 \\cdot 4^2 \\div 2^4 = 12^2 \\cdot 1 = \\boxed{144}.\\]"
+}

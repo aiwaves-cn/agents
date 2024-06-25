@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinct triangles can be constructed by connecting three different vertices of a cube? (Two triangles are distinct if they have different locations in space.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are eight vertices of a cube, and we choose three of these to form a triangle. Thus, the number of distinct triangles that can be formed is $\\binom{8}{3} = \\frac{8\\cdot7\\cdot6}{3\\cdot2} = \\boxed{56}$."
+}

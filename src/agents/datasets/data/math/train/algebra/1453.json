@@ -1,0 +1,6 @@
+{
+    "problem": "What is the number of units in the distance between $(2,5)$ and $(-6,-1)$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We use the distance formula: $\\sqrt{(-6 - 2)^2 + (-1 - 5)^2},$ so then we find that $\\sqrt{64 + 36} = \\boxed{10}$.\n\n- OR -\n\nWe note that the points $(2, 5)$, $(-6, -1)$, and $(2, -1)$ form a right triangle with legs of length 6 and 8. This is a Pythagorean triple, so the length of the hypotenuse must be $\\boxed{10}$."
+}

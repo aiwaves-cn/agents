@@ -1,0 +1,6 @@
+{
+    "problem": "Given the right triangles ABC and ABD, what is the length of segment BC, in units? [asy]\nsize(150);\npair A, B, C, D, X;\nA=(0,0);\nB=(0,12);\nC=(-16,0);\nD=(-35,0);\ndraw(A--B--D--A);\ndraw(B--C);\ndraw((0,1.5)--(-1.5,1.5)--(-1.5,0));\nlabel(\"$37$\", (B+D)/2, NW);\nlabel(\"$19$\", (C+D)/2, S);\nlabel(\"$16$\", (A+C)/2, S);\nlabel(\"A\", A, SE);\nlabel(\"B\", B, NE);\nlabel(\"D\", D, SW);\nlabel(\"C\", C, S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Looking at triangle $ABD$, we can calculate $AB$ through the Pythagorean Theorem. \\begin{align*}\nAB&=\\sqrt{37^2-(19+16)^2}\\\\\n&=\\sqrt{37^2-35^2}\\\\\n&=\\sqrt{(37+35)(37-35)}\\\\\n&=\\sqrt{72 \\cdot 2}\\\\\n&=\\sqrt{36 \\cdot 4}=6 \\cdot 2=12\\end{align*} Using Pythagorean theorem again to find $BC$, we get \\begin{align*}\nBC&=\\sqrt{12^2+16^2}\\\\\n&=\\sqrt{4^2(3^2+4^2)}\\\\\n&=4\\sqrt{9+16}\\\\\n&=4\\sqrt{25}=4 \\cdot 5=\\boxed{20} \\text{ units}.\\end{align*}"
+}

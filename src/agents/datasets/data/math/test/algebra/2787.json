@@ -1,0 +1,6 @@
+{
+    "problem": "Abby, Bart, Cindy and Damon weigh themselves in pairs. Together Abby and Bart weigh 160 pounds, Bart and Cindy weigh 180 pounds, and Cindy and Damon weigh 200 pounds. How many pounds do Abby and Damon weigh together?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let the weights of Abby, Bart, Cindy, and Damon be $a$, $b$, $c$, and $d$, respectively. We have the equations \\begin{align*}\na+b&=160\\\\\nb+c&=180\\\\\nc+d&=200\n\\end{align*} Subtracting the second equation from the first, we have $(a+b)-(b+c)=160-180 \\Rightarrow a-c=-20$. Adding this last equation to the third given equation, we have $(a-c)+(c+d)=-20+200 \\Rightarrow a+d=180$. Thus, Abby and Damon together weigh $\\boxed{180}$ pounds."
+}

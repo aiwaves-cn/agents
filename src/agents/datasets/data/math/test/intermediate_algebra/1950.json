@@ -1,0 +1,6 @@
+{
+    "problem": "The fourth degree polynomial equation $x^4 - 7x^3 + 4x^2 + 7x - 4 = 0$ has four real roots, $a$, $b$, $c$ and $d$. What is the value of the sum $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}+\\frac{1}{d}$? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas,\n\\[\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} + \\frac{1}{d} = \\frac{abc + abd + acd + bcd}{abcd} = \\frac{-7}{-4} = \\boxed{\\frac{7}{4}}.\\]"
+}

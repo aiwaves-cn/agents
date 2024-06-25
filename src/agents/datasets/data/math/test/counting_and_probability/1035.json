@@ -1,0 +1,6 @@
+{
+    "problem": "How many distinguishable ways are there to write $9$ as the sum of $1\\text{'s},$ $2\\text{'s},$ and $4\\text{'s},$ where the order of the addends matters? For example, $4 + 4 + 1$ and $1 + 4 + 4$ are two different ways.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "First, we find how many ways are there to write 9 as the sum of 1s, 2s and 4s, where the order of the addends does not matter. We find these cases: \\begin{align*}\n&4+4+1 \\\\\n&4+2+2+1 \\\\\n&4+2+1+1+1 \\\\\n&4+1+1+1+1+1 \\\\\n&2+2+2+2+1 \\\\\n&2+2+2+1+1+1 \\\\\n&2+2+1+1+1+1+1 \\\\\n&2+1+1+1+1+1+1+1 \\\\\n&1+1+1+1+1+1+1+1+1\n\\end{align*}There are $3!/2!=3$ distinguishable orders for the first sum, $4!/2!=12$ for the second sum, $5!/3!=20$ for the third sum, $6!/5!=6$ for the fourth sum, $5!/4!=5$ for the fifth sum, $6!/3!3!=20$ for the sixth sum, $7!/5!2!=21$ for the seventh sum, $8!/7!=8$ for the eighth sum, and $1$ for the last sum. In total, there are $\\boxed{96}$ distinguishable ways are there to write $9$ as the sum of $1\\text{'s},$ $2\\text{'s}$ and $4\\text{'s}.$"
+}

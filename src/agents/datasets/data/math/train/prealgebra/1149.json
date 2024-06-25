@@ -1,0 +1,6 @@
+{
+    "problem": "Mrs. Riley recorded this information from a recent test taken by all of her students. Using the data, what was the average percent score for these $100$ students?\n\n\\begin{tabular}{|c|c|}\n\\multicolumn{2}{c}{}\\\\\\hline\n\\textbf{$\\%$ Score}&\\textbf{Number of Students}\\\\\\hline\n100&7\\\\\\hline\n90&18\\\\\\hline\n80&35\\\\\\hline\n70&25\\\\\\hline\n60&10\\\\\\hline\n50&3\\\\\\hline\n40&2\\\\\\hline\n\\end{tabular}",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "For simplicity, divide all the percent scores by $10.$ We will account for this later by multiplying by $10.$ The average percent score is equal to the sum of all percent scores divided by the total number of students $(100).$ The sum of all percent scores is $$10\\cdot7+9\\cdot18+8\\cdot35+7\\cdot25+6\\cdot10+5\\cdot3+4\\cdot2=770.$$ Since we divided all the percent scores by $10$ in the beginning, we multiply by $10$ to get that the sum of all percent scores is $770\\cdot10=7700.$ Finally, dividing by the total number of students, we find that the average percent score is $7700/100=\\boxed{77}.$"
+}

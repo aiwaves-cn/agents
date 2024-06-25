@@ -1,0 +1,6 @@
+{
+    "problem": "If an arc of $45^{\\circ}$ on circle $A$ has the same length as an arc of $30^{\\circ}$ on circle $B$, then what is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let $C_A= 2\\pi R_A$ be the circumference of circle $A$, let $C_B= 2\\pi R_B$  be the circumference of circle $B$, and let $L$ the common length of the  two arcs. Then $$\n\\frac{45}{360}C_A = L = \\frac{30}{360}C_B.\n$$Therefore $$\n\\frac{C_A}{C_B} = \\frac{2}{3}\\quad\\text{so}\\quad\n\\frac{2}{3}=\\frac{2\\pi R_A}{2\\pi R_B} =\\frac{R_A}{R_B}.\n$$Thus, the ratio of the areas is $$\n\\frac{\\text{Area of Circle }(A)}{\\text{Area of Circle }(B)}\n=\\frac{\\pi R_A^2}{\\pi R_B^2} = \\left(\\frac{R_A}{R_B}\\right)^2 =\\boxed{\\frac{4}{9}}.\n$$"
+}

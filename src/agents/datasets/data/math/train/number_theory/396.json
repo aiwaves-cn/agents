@@ -1,0 +1,6 @@
+{
+    "problem": "What is the base $2$ representation of $84_{10}$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We first find that the largest power of $2$ that is less than $84$ is $2^6 = 64$. Our next step is to find the largest power of $2$ that is less than $84 - 64 = 20$ which is $2^4=16$. This leaves us left with $20 - 16 = 4$, but $4 = 2 ^2$, so we have $$84 = 1 \\cdot 2^6 + 0 \\cdot 2^5 + 1 \\cdot 2^4 + 0 \\cdot 2^3 + 1 \\cdot 2^2 + 0 \\cdot 2^1 + 0 \\cdot 2^0.$$Thus, our base $2$ representation of $84_{10}$ is $\\boxed{1010100_2}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $a$ and $b$ are nonzero real numbers, and that the equation $x^2+ax+b=0$ has solutions $a$ and $b$.  Find the ordered pair $(a,b).$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, $a + b = -a$ and $ab = b.$  Since $b$ is nonzero, $a = 1.$  Then $b = -2a = -2,$ so $(a,b) = \\boxed{(1,-2)}.$"
+}

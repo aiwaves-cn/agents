@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest integer $x$ such that $|6x^2-47x+15|$ is prime?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We can factor the quadratic $6x^2-47x+15$ as $(2x-15)(3x-1)$. So we have $|6x^2-47x+15|=|(2x-15)(3x-1)|=|2x-15|\\cdot|3x-1|$. In order for $|6x^2-47x+15|$ to be prime, its only divisors must be $1$ and itself. Thus one of $|2x-15|$ or $|3x-1|$ must be equal to $1$.\n\nIf $|3x-1|=1$, then $3x-1=1$ or $3x-1=-1$. These equations yield $x=\\frac{2}{3}$ and $x=0$, respectively. We throw out $x=\\frac{2}{3}$ since it is not an integer, and keep $x=0$ as a candidate.\n\nIf $|2x-15|=1$, then $2x-15=1$, in which case $2x=16$ and $x=8$, or $2x-15=-1$, in which case $2x=14$ and $x=7$.\n\nThus our candidates for the greatest $x$ are $0, 7$, and $8$. It remains to check whether the other factor is prime. We first check $x=8$. Since $|2x-15|=1$, we know $|2x-15|\\cdot|3x-1|=|3x-1|=|24-1|=23$, which is prime. Thus $\\boxed{8}$ is the largest integer for which $|6x^2-47x+15|$ is prime."
+}

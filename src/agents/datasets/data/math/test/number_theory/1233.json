@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of the smallest and largest prime factors of $10101$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "$10101$ is clearly not divisible by $2$ or $5$. The sum of $10101$'s digits is $3$, so it is divisible by $3$, but not by $9$. $10101=3\\cdot3367$. $3367/7=481$ and $481/7=68\\frac{5}{7}$ so $10101=3\\cdot7\\cdot481$ and $481$ is not divisible by any prime number less than $11$. Applying the divisibility test for 11, we have $4-8+1=-3$, which is not divisible by 11, so $481$ is not divisible by $11$ either. $481/13=37$ and $37$ is prime, so the prime factorization of $10101$ is $10101=3\\cdot7\\cdot13\\cdot37$. So, the sum of its smallest and largest prime factors is $3+37=\\boxed{40}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "An octahedron consists of two square-based pyramids glued together along their square bases to form a polyhedron with eight faces. Imagine an ant that begins at the top vertex and walks to one of the four adjacent vertices that he randomly selects and calls vertex A. From vertex A, he will then walk to one of the four adjacent vertices that he randomly selects and calls vertex B. What is the probability that vertex B will be the bottom vertex? Express your answer as a common fraction.\n\n[asy]\ndraw((-10,0)--(10,0)--(3,-15)--cycle);\ndraw((-10,0)--(10,0)--(3,15)--cycle);\ndraw((10,0)--(17,7)--(3,-15)--(17,7)--(3,15));\ndraw((-3,7)--(3,15)--(-3,7)--(17,7)--(-3,7)--(-10,0)--(-3,7)--(3,-15),dashed);\n[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since the ant starts at the top vertex, his next destination, vertex A, is equally likely to be any of the 4 vertices along the middle ring. Each of these vertices is adjacent to 4 other vertices, and since they are in the middle, exactly 1 of those 4 vertices is the bottom vertex. So, regardless of which intermediate vertex he goes to, the ant will end up at the bottom vertex with $\\boxed{\\frac{1}{4}}$ probability, by the symmetry of the 4 intermediate stages."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "There are values $A$ and $B$ such that\n\\[\\frac{Bx-11}{x^2-7x+10}=\\frac{A}{x-2}+\\frac{3}{x-5}.\\]Find $A+B$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We factor the denominator in the left-hand side to get \\[\\frac{Bx - 11}{(x - 2)(x - 5)}= \\frac{A}{x - 2} + \\frac{3}{x - 5}.\\] We then multiply both sides by $(x - 2)(x - 5)$, to get \\[Bx - 11 = A(x - 5) + 3(x - 2).\\] We can solve for $B$ substituting a suitable value of $x$.  For example, setting $x = 5$, the equation becomes $5B - 11 = 9$, so $B = 4$.  Then \\[4x - 11 = A(x - 5) + 3(x - 2).\\] Setting $x = 2$, this equation becomes $-3 = -3A$, so $A = 1$.  Therefore, $A + B = 1 + 4 = \\boxed{5}$."
+}

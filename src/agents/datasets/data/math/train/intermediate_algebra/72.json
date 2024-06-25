@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be the roots of\n\\[x^3 - 5x + 7 = 0.\\]Find the monic polynomial, in $x,$ whose roots are $a - 2,$ $b - 2,$ and $c - 2.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = x - 2.$  Then $x = y + 2,$ so\n\\[(y + 2)^3 - 5(y + 2) + 7 = 0.\\]This simplifies to $y^3 + 6y^2 + 7y + 5 = 0.$  The corresponding polynomial in $x$ is then $\\boxed{x^3 + 6x^2 + 7x + 5}.$"
+}

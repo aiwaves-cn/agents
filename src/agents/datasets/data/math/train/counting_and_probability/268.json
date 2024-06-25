@@ -1,0 +1,6 @@
+{
+    "problem": "Interior numbers begin in the third row of Pascal's Triangle. The sum of the interior numbers in the fourth row is 6. The sum of the interior numbers of the fifth row is 14. What is the sum of the interior numbers of the seventh row?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "If Pascal's Triangle begins with row 1, then the sum of the elements in row $n$ is $2^{n-1}$. The interior numbers refer to all numbers in the row except the $1$ at each end, so the sum of the interior elements in row $n$ is $2^{n-1}-1-1=2^{n-1}-2$. For the fourth row, the sum is $2^3-2=6$. For the fifth row, the sum is $2^4-2=14$. So for the seventh row the sum is $2^{7-1}-2=64-2=\\boxed{62}$."
+}

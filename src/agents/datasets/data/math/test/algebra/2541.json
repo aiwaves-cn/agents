@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $(7+5)^2-(7-5)^2$?",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Although it's easy to simply multiply out the squares and compute, there is a more elegant solution. We are looking at an equation of the form $x^2 - y^2$, and we know that this factors into $(x+y)(x-y)$. So, we factor the given equation to get $(7+5+7-5)(7+5-7+5)$, which equals $14 \\cdot 10$, or $\\boxed{140}$."
+}

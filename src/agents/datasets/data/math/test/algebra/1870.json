@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x < 5$, rewrite $5x - |x - 5|$ without using absolute value signs.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $x<5,$ $x-5<0.$ It follows that $|x-5|=-(x-5),$ and the equation can be simplified as  \\[5x-|x-5|=5x+(x-5)=\\boxed{6x-5}.\\]"
+}

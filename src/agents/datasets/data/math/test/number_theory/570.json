@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least positive integer value of $n$ such that $28n$ is divisible by $365$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $28=2^2\\cdot7$ and $365=5\\cdot73$, $(28,365)=1$. Therefore, $28n$ is divisible by 365 if and only if $n$ is divisible by both 5 and 73. Thus, the least value of $n$ is $5\\cdot73=\\boxed{365}$."
+}

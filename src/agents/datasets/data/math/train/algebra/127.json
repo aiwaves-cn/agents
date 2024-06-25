@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $y = -16t^2 + 80t$ describes the height (in feet) of a projectile launched from the ground at 80 feet per second. At what $t$ will the projectile reach 36 feet in height for the first time? Express your answer as a decimal rounded to the nearest tenth.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Setting $y$ to 36, we find the following: \\begin{align*}\n36& = -16t^2 + 80t\\\\\n0 & = -16t^2 + 80t - 36\\\\\n& = 4t^2 - 20t + 9\\\\\n& = (2t - 1)(2t - 9)\n\\end{align*}Our possible values for $t$ are $\\frac{1}{2} = 0.5$ or $\\frac{9}{2} = 4.5.$ Of these, we choose the smaller $t$, or $\\boxed{0.5}.$"
+}

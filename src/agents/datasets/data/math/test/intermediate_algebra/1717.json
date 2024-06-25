@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[\\frac{x + 1}{x + 2} + \\frac{x + 8}{x + 9} = \\frac{x + 2}{x + 3} + \\frac{x + 7}{x + 8}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Subtracting 1 from each fraction, we get\n\\[-\\frac{1}{x + 2} - \\frac{1}{x + 9} = -\\frac{1}{x + 3} - \\frac{1}{x + 8}.\\]Then\n\\[\\frac{1}{x + 2} + \\frac{1}{x + 9} = \\frac{1}{x + 3} + \\frac{1}{x + 8},\\]so\n\\[\\frac{2x + 11}{(x + 2)(x + 9)} = \\frac{2x + 11}{(x + 3)(x + 8)}.\\]Multiplying both sides by $(x + 2)(x + 9)(x + 3)(x + 8),$ we get\n\\[(2x + 11)(x + 3)(x + 8) = (2x + 11)(x + 2)(x + 9).\\]Then\n\\[(2x + 11)[(x + 3)(x + 8) - (x + 2)(x + 9)] = (2x + 11)(6) = 0.\\]Hence, $x = \\boxed{-\\frac{11}{2}}.$"
+}

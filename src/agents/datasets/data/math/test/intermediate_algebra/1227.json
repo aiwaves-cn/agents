@@ -1,0 +1,6 @@
+{
+    "problem": "The largest solution to\n\\[9x^3 - 20x = 8 \\sqrt{2}\\]can be written in the form $\\frac{\\sqrt{a} + \\sqrt{b}}{c},$ where $a,$ $b,$ and $c$ are positive integers, when simplified.  Find $a + b + c.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = \\frac{x}{\\sqrt{2}}.$  Then $x = y \\sqrt{2}.$  Substituting, we get\n\\[18 y^3 \\sqrt{2} - 20y \\sqrt{2} = 8 \\sqrt{2},\\]so $18y^3 - 20y - 8 = 0.$  Dividing by 2, we get $9y^3 - 10y - 4 = 0.$  Looking for rational roots, we find $y = -\\frac{2}{3}$ works.  Thus, we can take out a factor of $3y + 2,$ to get\n\\[(3y + 2)(3y^2 - 2y - 2) = 0.\\]The roots of $3y^2 - 2y - 2 = 0$ are $\\frac{1 \\pm \\sqrt{7}}{3}.$\n\nTherefore, the solutions $x$ are $-\\frac{2 \\sqrt{2}}{3}$ and $\\frac{\\sqrt{2} \\pm \\sqrt{14}}{3}.$  The largest solution is $\\frac{\\sqrt{2} + \\sqrt{14}}{3},$ so $a + b + c = 2 + 14 + 3 = \\boxed{19}.$"
+}

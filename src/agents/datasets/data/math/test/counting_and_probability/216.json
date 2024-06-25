@@ -1,0 +1,6 @@
+{
+    "problem": "A Senate committee has 8 Republicans and 6 Democrats.  In how many ways can we form a subcommittee of 5 members that has at least one member from each party?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are a total of $\\binom{14}{5}=2002$ ways of selecting a subcommittee of 5 with no restrictions on the membership. Of these committees, the only ones that will violate the given condition are the ones that consist entirely of Republicans or entirely of Democrats. There are $\\binom{8}{5}=56$ possible subcommittees that have all 5 members selected from among the 8 Republicans and $\\binom{6}{5}=6$ possible subcommittees that have all 5 members selected from among the 6 Democrats. Subtracting the number of subcommittees that don't work from the total number of possible subcommittees gives us our answer: $2002-56-6=\\boxed{1940}$."
+}

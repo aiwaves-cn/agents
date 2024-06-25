@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $f$ is an invertible function from $(-\\infty,\\infty)$ to $(-\\infty,\\infty)$.  If $f(f(x))=x$, find $f(x)-f^{-1}(x)$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Applying $f^{-1}$ to both sides of the equation $f(f(x)) = x$, we get $f^{-1}(f(f(x))) = f^{-1}(x)$.  By definition of the inverse function, $f^{-1}(f(x)) = x$, so $f^{-1}(f(f(x))) = f(x)$.  Then $f(x) = f^{-1}(x)$, so $f(x) - f^{-1}(x) = \\boxed{0}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $ABC$, we have $AB = 10$, $BC = 24$, and $\\angle ABC = 90^\\circ$. If $M$ is on $\\overline{AC}$ such that $\\overline{BM}$ is an altitude of $\\triangle ABC$, then what is $\\cos \\angle ABM$?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "[asy]\n\npair A,B,C,M;\n\nB = (0,0);\n\nA = (0,10);\n\nC = (24,0);\n\nM = foot(B,A,C);\n\ndraw(M--B--A--C--B);\n\nlabel(\"$B$\",B,SW);\n\nlabel(\"$A$\",A,N);\n\nlabel(\"$C$\",C,SE);\n\nlabel(\"$M$\",M,NE);\n\ndraw(rightanglemark(C,B,A,30));\n\ndraw(rightanglemark(A,M,B,30));\n\n[/asy]\n\nThe Pythagorean Theorem gives us $AC = \\sqrt{AB^2 + BC^2} = \\sqrt{100+576} = \\sqrt{676}=26$.\n\nFrom right triangle $ABM$, we have $\\angle ABM = 90^\\circ - \\angle BAM = 90^\\circ - \\angle BAC$.  But right triangle $ABC$ gives us $90^\\circ -\\angle BAC = \\angle BCA$, so $\\angle ABM = \\angle BCA$, which means $\\cos \\angle ABM = \\cos\\angle BCA = \\frac{BC}{AC} = \\frac{24}{26} = \\boxed{\\frac{12}{13}}$."
+}

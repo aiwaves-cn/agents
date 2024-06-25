@@ -1,0 +1,6 @@
+{
+    "problem": "A function $f(x)$ is defined for all real numbers $x$. For all non-zero values $x$, we have\n\\[2f\\left(x\\right) + f\\left(\\frac{1}{x}\\right) = 5x + 4\\]\nLet $S$ denote the sum of all of the values of $x$ for which $f(x) = 2004$. Compute the integer nearest to $S$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Substituting $\\frac{1}{x}$, we have\n\\[2f\\left(\\frac 1x\\right) + f\\left(x\\right) = \\frac{5}{x} + 4\\]\nThis gives us two equations, which we can eliminate $f\\left(\\frac 1x\\right)$ from (the first equation multiplied by two, subtracting the second):\n\\begin{align*} 3f(x) &= 10x + 4 - \\frac 5x \\\\ 0 &= x^2 - \\frac{3 \\times 2004 - 4}{10}x + \\frac 52\\end{align*}\nClearly, the discriminant of the quadratic equation $\\Delta > 0$, so both roots are real. By Vieta's formulas, the sum of the roots is the coefficient of the $x$ term, so our answer is $\\left[\\frac{3 \\times 2004 - 4}{10}\\right] = \\boxed{601}$."
+}

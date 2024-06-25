@@ -1,0 +1,6 @@
+{
+    "problem": "Mr. Reader has six different Spiderman comic books, five different Archie comic books and four different Garfield comic books. When stacked, all of the Spiderman comic books are grouped together, all of the Archie comic books are grouped together and all of the Garfield comic books are grouped together. In how many different orders can these 15 comic books be stacked in a pile with the covers facing up and all of them facing the same direction? Express your answer as a whole number.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $6!=720$ ways to order the Spiderman comics, $5!=120$ ways to order the Archie ones, and $4!=24$ ways to order the Garfield books. This means that there are $720\\cdot120\\cdot24$ ways to order the books within their groups. Once we have done that, we need to place the 3 groups of comics in a stack. There are 3 options for which type of comics goes on the bottom, 2 options for which type goes in the middle, and 1 type of comic left which we put on top. This means that our final answer is $720\\cdot120\\cdot24\\cdot3\\cdot2\\cdot1=\\boxed{12,\\!441,\\!600}$ ways in which to order all the comics."
+}

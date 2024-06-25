@@ -1,0 +1,6 @@
+{
+    "problem": "What is the number of units in the area of the circle with center at $P$ and passing through $Q$? Express your answer in terms of $\\pi$.\n\n[asy]\nsize(150); pair P = (-3,4), Q=(9,-3); string stringpair(pair p){return \"$(\"+string(p.x)+\", \"+string(p.y)+\"$)\";}\ndraw((-15,0)--(15,0),Arrows(4)); draw((0,-15)--(0,15),Arrows(4));\ndot(\"$Q$\"+stringpair(Q),Q,SE,linewidth(3)); dot(\"$P$\"+stringpair(P),P,NW,linewidth(3));\n\n[/asy]",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "To find the area, we must first find the length of the radius, $PQ$. Using the distance formula, we have the radius is $\\sqrt{(-3-9)^2+(4-(-3))^2}=\\sqrt{193}$.\n\nNow that we know the radius has length $\\sqrt{193}$, the area is $\\pi \\cdot (\\sqrt{193})^2=\\boxed{193\\pi}$."
+}

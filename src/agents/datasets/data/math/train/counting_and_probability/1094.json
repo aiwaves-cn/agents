@@ -1,0 +1,6 @@
+{
+    "problem": "The cards of a standard 52-card deck are dealt out in a circle. What is the expected number of pairs of adjacent cards which are both black? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The number of pairs of adjacent cards which are both black is equal to the number of black cards which have another black card to their right. For each black card, there is a $\\dfrac{25}{51}$ chance that the card to its right is also black, giving 1 pair, and a $\\dfrac{26}{51}$ chance that the card to its right is red, giving 0 pairs. There are 26 black cards, so the expected value of the number of pairs of adjacent black cards is $$26\\left(\\frac{25}{51}(1)+\\frac{26}{51}(0)\\right)=\\boxed{\\frac{650}{51}}$$"
+}

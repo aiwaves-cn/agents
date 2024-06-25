@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ is the average of $13$, $-16$, and $6$ and if $y$ is the cube root of $8$, find $x^2 + y^3$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We first find the $x$, the average of $13$, $-16$, and $6$ by summing the three integers and dividing the sum by $3$, so we have that $x = \\frac{13+(-16)+6}{3}=\\frac{3}{3}=1$. Now, we try to find $y$, the cube root of $8$. We know that $2^3=8$, so $y=\\sqrt[3]{8}=2$. Finally, we can substitute in $1$ for $x$ and $2$ for $y$ to find $x^2+y^3$: $$x^2+y^3=(1)^2+(2)^3 = 1 + 8 = \\boxed{9}.$$"
+}

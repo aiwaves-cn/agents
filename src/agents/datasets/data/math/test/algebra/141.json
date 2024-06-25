@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangular patio has an area of $180$ square feet and a perimeter of $54$ feet. What is the length of the diagonal (in feet) squared?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Set one side of the patio equal to $a$ and the other equal to $b$, producing two equations: \\begin{align*}\nab&=180,\\text{ and}\\\\\n2a+2b&=54.\n\\end{align*}The second equation can be rewritten as $b=27-a$. Substituting, we have \\begin{align*}\n180&=a\\left(27-a\\right) \\quad \\Rightarrow \\\\\n180&=27a-a^2 \\quad \\Rightarrow \\\\\n-180&=a^2-27a \\quad \\Rightarrow \\\\\n0&=a^2-27a+180 \\quad \\Rightarrow \\\\\n0&=\\left(a-12\\right)\\left(a-15\\right).\n\\end{align*}So $12$ feet and $15$ feet are the lengths of the two sides of the patio. Therefore, the diagonal is $\\sqrt{12^2+15^2}$, or $\\sqrt{369}$. Therefore, the length of the diagonal squared is $\\boxed{369}$."
+}

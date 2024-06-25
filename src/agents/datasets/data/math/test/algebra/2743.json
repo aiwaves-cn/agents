@@ -1,0 +1,6 @@
+{
+    "problem": "Three pencils and a jumbo eraser cost $\\$1.24$. Five pencils and a jumbo eraser cost $\\$1.82$. No prices include tax. In cents, what is the cost of a pencil?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Call the price of a pencil $p$ and the price of a jumbo eraser $e$, in terms of cents. We can use the following system of equations to represent the information given: \\begin{align*}\n3p + e &= 124 \\\\\n5p + e &= 182 \\\\\n\\end{align*} Subtracting the first equation from the second gives $2p = 58$, or $p = 29$. Thus, the cost of a pencil is $\\boxed{29}$ cents."
+}

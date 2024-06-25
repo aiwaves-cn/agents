@@ -1,0 +1,6 @@
+{
+    "problem": "If two numbers are randomly chosen without replacement from $\\{1, 2, 3, 4, 5\\}$, what is the probability their sum is greater than their product? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Let $a$ and $b$ be positive integers.  Observe that $ab-(a+b)=(a-1)(b-1)-1$.  This quantity is non-negative unless either $a$ or $b$ equals 1.  Therefore, the only pairs of positive integers for which the sum exceeds the product are those of the form $\\{1,n\\}$ where $n$ is a positive integer.  In this case, there are 4 such pairs: $\\{1,2\\}$, $\\{1,3\\}$, $\\{1,4\\}$, and $\\{1,5\\}$.  There are a total of $\\binom{5}{2}=10$ pairs of integers, so the probability that the sum exceeds the product is $\\frac{4}{10}=\\boxed{\\frac{2}{5}}$."
+}

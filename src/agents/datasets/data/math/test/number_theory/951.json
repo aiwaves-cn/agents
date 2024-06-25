@@ -1,0 +1,6 @@
+{
+    "problem": "Find the least positive four-digit solution $r$ of the congruence $r^2 + 4r + 4 \\equiv r^2 + 2r + 1 \\pmod{55} $.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Add $-r^2-2r-4$ to both sides of the given congruence to obtain $2r\\equiv -3\\pmod{55}$. We can multiply both sides by $28$ to get $56r \\equiv -3\\cdot 28\\pmod{55}$. Subtracting $55r$ from the left-hand side and adding $2\\cdot 55=110$ to the right-hand side gives $r\\equiv 26\\pmod{55}$. Thus $r=26+55k$ for some integer $k$. Solving $26+55k\\geq 1000$, we find that $k=18$ is the smallest value of $k$ for which $r$ has four digits. Thus the minimum four-digit value of $r$ is $26+55(18)=\\boxed{1016}$."
+}

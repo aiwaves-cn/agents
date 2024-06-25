@@ -1,0 +1,6 @@
+{
+    "problem": "The two solutions of the equation $x^2+bx+48=0$ are in the ratio of 3 to 1 for some values of $b$. What is the largest possible value of $b$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "For this problem, we make use of the correspondence between sums/products of roots and coefficients of a polynomial.\n\nDenote the two roots of the equation $\\alpha$ and $\\beta$. We know that $\\alpha\\beta = 48$, and $\\alpha/\\beta = 3 \\implies \\alpha = 3\\beta$.\n\nSo $ b = -\\alpha - \\beta = -4\\beta$. To maximize $b$, we want to make $\\beta$ negative and as large as possible. Given the relationship that $\\alpha = 3\\beta$ and that $\\alpha*\\beta = 48$, we see that $\\beta = 4$ or $-4$. Clearly $-4$ maximizes $b$, and $b = \\boxed{16}$."
+}

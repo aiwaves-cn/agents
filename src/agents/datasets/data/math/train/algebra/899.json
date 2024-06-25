@@ -1,0 +1,6 @@
+{
+    "problem": "The range of the function $g(x) = \\frac{2}{2+4x^2}$ can be written as an interval $(a,b]$. What is $a+b$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The denominator, $2+4x^2$, takes all values greater than or equal to $2$. Therefore, $\\frac{2}{2+4x^2}$ is at most $\\frac 22=1$, and can take any positive value smaller than this. So, the range of $g(x)$ is $(0,1]$, which gives $a+b=\\boxed{1}$."
+}

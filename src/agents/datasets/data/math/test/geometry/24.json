@@ -1,0 +1,6 @@
+{
+    "problem": "What is the ratio of the measure of a regular hexagon's longest diagonal to the measure of its perimeter? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "We draw a regular hexagon and one of its longest diagonals: [asy]\nsize(80);\ndraw((0,0)--(1,0)--(1.5,.5*sqrt(3))--(1,sqrt(3))--(0,sqrt(3))--(-.5,.5*sqrt(3))--cycle);\ndraw((1,0)--(0,sqrt(3)));\n[/asy] Now we draw in the other two long diagonals.  We have split the hexagon into six equilateral triangles, which are congruent by symmetry.  [asy]\nsize(80);\ndraw((0,0)--(1,0)--(1.5,.5*sqrt(3))--(1,sqrt(3))--(0,sqrt(3))--(-.5,.5*sqrt(3))--cycle);\ndraw((1,0)--(0,sqrt(3))); draw((1.5,.5*sqrt(3))--(-.5,.5*sqrt(3))); draw((1,sqrt(3))--(0,0));\n[/asy] We see that two side lengths make up one long diagonal.  Let the hexagon's side length be $s$, then, its long diagonal has length $2s$ and its perimeter has length $6s$.  The ratio of its long diagonal to its perimeter is hence $\\frac{2s}{6s}=\\boxed{\\frac{1}{3}}$."
+}

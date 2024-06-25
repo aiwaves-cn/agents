@@ -1,0 +1,6 @@
+{
+    "problem": "One hundred concentric circles with radii $1,2,3,\\ldots,100$ are drawn in a plane. The interior of the circle of radius $1$ is colored red, and each region bounded by consecutive circles is colored either red or green, with no two adjacent regions the same color. The ratio of the total area of the green regions to the area of the circle of radius 100 can be expressed as $m/n$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The sum of the areas of the green regions is \\begin{align*}\n&\\phantom{=}\\\n\\left[(2^2-1^2)+(4^2-3^2)+(6^2-5^2)+\\cdots+(100^2-99^2)\\right]\\pi\\\\\n&=\\left[(2+1)+(4+3)+(6+5)+\\cdots+(100+99)\\right]\\pi\\\\\n&={1\\over2}\\cdot100\\cdot101\\pi.\n\\end{align*}Thus the desired ratio is $${1\\over2}\\cdot{{100\\cdot101\\pi}\\over{100^2\\pi}}={101\\over200},$$and $m+n=\\boxed{301}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $PQRS$ be a square piece of paper. $P$ is folded onto $R$ and then $Q$ is folded onto $S$. The area of the resulting figure is 9 square inches. Find the perimeter of square $PQRS$. [asy]\n/* AMC8 1998 #20P */\nsize(1inch,1inch);\nlabel(\"$P$\", (0, 72), SE);\nlabel(\"$Q$\", (72, 72), SW);\nlabel(\"$S$\", (0, 0), NE);\nlabel(\"$R$\", (72, 0), NW);\ndraw((0,0)--(72,0)--(72,72)--(0,72)--cycle);\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "After folding the square twice the resulting figure is isosceles triangle with area 9 square inches. Since there are 4 such congruent triangles in the square, the area of the square is 36 square inches. Therefore, the sides of $PQRS$ are 6 inches, and the perimeter is $\\boxed{24}$ inches."
+}

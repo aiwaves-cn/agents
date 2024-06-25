@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $ABC$ with $\\angle A = 90^\\circ$, we have $AB = 6$ and $BC = 10$.  Find $\\cos C$.",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "The triangle is shown below:\n\n[asy]\n\npair A,B,C;\n\nA = (0,0);\n\nB = (6,0);\n\nC = (0,8);\n\ndraw(A--B--C--A);\n\ndraw(rightanglemark(B,A,C,10));\n\nlabel(\"$A$\",A,SW);\n\nlabel(\"$B$\",B,SE);\n\nlabel(\"$C$\",C,N);\n\nlabel(\"$10$\",(B+C)/2,NE);\n\nlabel(\"$6$\",B/2,S);\n\n[/asy]\n\nThe Pythagorean Theorem gives us $AC = \\sqrt{BC^2 - AB^2} = \\sqrt{100 - 36} = \\sqrt{64}=8$, so $\\cos C = \\frac{AC}{BC} = \\frac{8}{10} = \\boxed{\\frac45}$."
+}

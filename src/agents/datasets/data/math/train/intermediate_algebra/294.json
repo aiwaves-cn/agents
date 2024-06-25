@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $a$ and $b$ are positive integers such that $(a-bi)^2 = 8-6i$. What is $a-bi$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have $(a-bi)^2 = a^2 - 2abi + (bi)^2 = (a^2 - b^2) - 2abi = 8-6i$. Equating real and imaginary parts, we get $a^2 - b^2 = 8$ and $-2ab = -6$, or $ab = 3$. Since $a$ and $b$ are positive integers and $ab=3$, we know one of them is 3 and the other is 1. Since $a^2-b^2 = 8$, trial and error gives $a=3$, $b=1$. So $a-bi = \\boxed{3 - i}$."
+}

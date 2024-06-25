@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit of $3^1 + 3^3 + 3^5 + 3^7 + \\ldots + 3^{2009}$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The ones digit of $3^1$ is 3, the ones digit of $3^3$ is 7, the ones digit of $3^5$ is 3, the ones digit of $3^7$ is 7, and so on.  Write ``$\\equiv$'' to mean ``has the same ones digit as.'' Then  \\begin{align*}\n3^1+3^3+\\cdots+3^{2009}&\\equiv 3 + 7 + 3 + 7 + \\cdots + 3 + 7 + 3 \\\\\n&\\equiv 0 + 0 + \\cdots + 0 + 3 \\\\\n&=\\boxed{3}.\n\\end{align*}"
+}

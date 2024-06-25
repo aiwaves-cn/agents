@@ -1,0 +1,6 @@
+{
+    "problem": "The matrices\n\\[\\begin{pmatrix} a & 2 \\\\ 1 & 4 \\end{pmatrix} \\quad \\text{and} \\quad \\begin{pmatrix} -\\frac{2}{7} & \\frac{1}{7} \\\\ b & \\frac{3}{14} \\end{pmatrix}\\]are inverses.  Enter the ordered pair $(a,b).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The product of the matrices is\n\\[\\begin{pmatrix} a & 2 \\\\ 1 & 4 \\end{pmatrix} \\begin{pmatrix} -\\frac{2}{7} & \\frac{1}{7} \\\\ b & \\frac{3}{14} \\end{pmatrix} = \\begin{pmatrix} 2b - \\frac{2a}{7} & \\frac{a + 3}{7} \\\\ 4b - \\frac{2}{7} & 1 \\end{pmatrix}.\\]We want this to be the identity matrix, so $2b - \\frac{2a}{7} = 1,$ $\\frac{a + 3}{7} = 0,$ and $4b - \\frac{2}{7} = 0.$  Solving, we find $(a,b) = \\boxed{\\left( -3, \\frac{1}{14} \\right)}.$"
+}

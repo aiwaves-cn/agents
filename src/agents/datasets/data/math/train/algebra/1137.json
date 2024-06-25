@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the range of $y=|x+7|-|x-2|$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If $x<-7$, both $x+7$ and $x-2$ are negative.  So  $$y=-(x+7)-(-x+2)=-9.$$ If $x\\geq 2$, both $x+7$ and $x-2$ are nonnegative.  So  $$y=x+7-x+2=9.$$ If $-7\\leq x< 2$, $x+7$ is nonnegative and $x-2$ is negative.  So  $$y=x+7-(-x+2)=2x+5.$$ Then, $2(-7)+5=-9$, and $2(2)+5=9$.  The function is increasing and continuous, so all values between $-9$ and $9$ are produced, and no others. Thus the range is $y \\in \\boxed{[-9, 9]}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $p(x)$ is a function such that $p(x) + (x^5+3x^3+9x) = (7x^3+24x^2+25x+1)$.  Express $p(x)$ as a polynomial with the degrees of the terms in decreasing order.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Isolating $p(x),$ we have: \\begin{align*}\np(x)&=(7x^3+24x^2+25x+1)-(x^5+3x^3+9x)\\\\\n&=-x^5+(7-3)x^3+24x^2+(25-9)x+1\\\\\n&=\\boxed{-x^5+4x^3+24x^2+16x+1}.\n\\end{align*}"
+}

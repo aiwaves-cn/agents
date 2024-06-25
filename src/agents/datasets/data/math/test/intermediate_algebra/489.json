@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the number $\\left( \\frac{r}{s} \\right)^3$ if $r$ and $s$ are non-zero numbers satisfying\n\\[\\frac{1}{r + s} = \\frac{1}{r} + \\frac{1}{s}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying both sides by $rs(r + s),$ we get\n\\[rs = s(r + s) + r(r + s).\\]This simplifies to $r^2 + rs + s^2 = 0.$  Then\n\\[(r - s)(r^2 + rs + s^2) = 0,\\]which expands as $r^3 - s^3 = 0.$  Therefore, $\\left( \\frac{r}{s} \\right)^3 = \\boxed{1}.$"
+}

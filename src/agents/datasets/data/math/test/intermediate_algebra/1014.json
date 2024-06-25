@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be positive real numbers such that $ab^2 = 5.$  Find the minimum value of $a^4 + b^8.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[a^4 + b^8 \\ge 2 \\sqrt{a^4 b^8} = 2a^2 b^4 = 2(ab^2)^2 = 50.\\]Equality occurs when $a^4 = b^8$ and $ab^2 = 5;$ we can solve to get $a = \\sqrt{5}$ and $b = \\sqrt[4]{5},$ so the minimum value is $\\boxed{50}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Each triangle in this figure is an isosceles right triangle. The length of $\\overline{BC}$ is 2 units. What is the number of units in the perimeter of quadrilateral $ABCD$? Express your answer in simplest radical form.\n\n[asy]\ndraw((0,0)--(10,0)--(0,10)--cycle);\ndraw((10,0)--(0,10)--(10,20)--cycle);\ndraw((1,0)--(1,1)--(0,1));\ndraw((1,11)--(2,10)--(1,9));\nlabel(\"$A$\",(0,0),S);\nlabel(\"$B$\",(10,0),S);\nlabel(\"$C$\",(10,20),N);\nlabel(\"$D$\",(0,10),W);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The length of the hypotenuse of an isosceles right triangle is $\\sqrt{2}$ times the length of each leg.  Therefore, $BD=\\frac{BC}{\\sqrt{2}}=\\frac{2}{\\sqrt{2}}\\cdot\\left(\\frac{\\sqrt{2}}{\\sqrt{2}}\\right)=\\frac{2\\sqrt{2}}{2}=\\sqrt{2}$ units.  Applying the same rule to triangle $ABD$, we find that $AB=BD/\\sqrt{2}=\\sqrt{2}/\\sqrt{2}=1$ unit.  The perimeter of quadrilateral $ABCD$ is $AB+BD+CD+DA=1+2+\\sqrt{2}+1=\\boxed{4+\\sqrt{2}}$ units."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all the solutions to $2^{|x|} + 3|x| = 18.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "If $x$ is a solution, then $-x$ is a also a solution.  Thus, we can pair all the solutions, and their sum is $\\boxed{0}.$\n\nLet $f(x) = 2^{|x|} + 3|x|.$  Since $f(0) = 0$ and $f(4) = 28,$ the equation $f(x) = 18$ has at least one solution in the interval $0 \\le x \\le 4.$  This ensures that the sum that the problem asks for is not an \"empty\" sum."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest number after $3456$ whose digits add up to $12$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "For the number to be as small as possible, we want the digit at the left to be as small as possible. The smallest thousands digit is $3$, the smallest hundreds digit is $4$, and the smallest tens digit is $5$. However, $3+4+5=12$, so then the ones digit must be $0$, and that is impossible because then it would be smaller than $3456$. We also cannot move up the tens digit, because that would make the digits add up to a number greater than $12$. Thus, we move to the hundreds digit, and the next smallest possible number for it would be $5$. Now we have $35ab$, where $a+b=12-3-5=4$. Since we want the left digit to be as small as possible, we have the number $\\boxed{3504}$."
+}

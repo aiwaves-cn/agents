@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomials $(x - 2)^4 - (x - 2) = 0$ and $x^2 - kx + k = 0$ have two roots in common.  Find the value of $k.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can take a factor of $x - 2$ out of $(x - 2)^4 - (x - 2) = 0,$ to get\n\\[(x - 2)[(x - 2)^3 - 1] = 0.\\]Then by difference of cubes, $(x - 2) - 1 = x - 3$ is also a factor, so\n\\[(x - 2)(x - 3)[(x - 2)^2 + (x - 2) + 1] = 0.\\]This simplifies to $(x - 2)(x - 3)(x^2 - 3x + 3) = 0.$  Hence, $k = \\boxed{3}.$"
+}

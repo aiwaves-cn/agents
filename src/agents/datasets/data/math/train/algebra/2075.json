@@ -1,0 +1,6 @@
+{
+    "problem": "For what values of $x$ is $2x^2+8x\\le-6$? Express your answer in interval notation.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "After dividing both sides by 2 and moving the constant over, we get a quadratic expression and solve for the roots: \\begin{align*}\nx^2+4x+3&\\le0\\quad \\Rightarrow\\\\\n(x+1)(x+3)&\\le0.\n\\end{align*}The quadratic expression equals 0 at $x=-3$ and $x=-1$, meaning it changes sign at each root. Now we look at the sign of the quadratic when $x<-3$, when $-3<x<-1$, and when $x>-1$. When $x<-3$, $(x+3)$ and $(x+1)$ are both negative, so the product is positive. When $-3<x<-1$, $(x+3)$ becomes positive, while $(x+1)$ remains negative - the product is negative. When $x>-1$, both factors are positive, so the product is positive. So, $(x+1)(x+3)\\le0$ when $-3\\le x\\le-1$, which means our answer in interval notation is $\\boxed{[-3, -1]}$.\n\nAlternatively, consider that the coefficient of $x^2$ is positive, so the graph of $(x+1)(x+3)=0$ opens up. When there are two distinct roots, the shape of the parabola means that the product is negative when $x$ is between the roots and positive when $x$ is less than both roots or greater than both roots."
+}

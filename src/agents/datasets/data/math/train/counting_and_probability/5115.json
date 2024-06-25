@@ -1,0 +1,6 @@
+{
+    "problem": "How many triangles with positive area are there whose vertices are points in the $xy$-plane whose coordinates are integers $(x,y)$ satisfying $1\\le x\\le 4$ and $1\\le y\\le 4$?\n$\\text{(A) } 496\\quad \\text{(B) } 500\\quad \\text{(C) } 512\\quad \\text{(D) } 516\\quad \\text{(E) } 560$\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The vertices of the triangles are limited to a $4\\times4$ grid, with $16$ points total. Every triangle is determined by $3$ points chosen from these $16$ for a total of $\\binom{16}{3}=560$. However, triangles formed by collinear points do not have positive area. For each column or row, there are $\\binom{4}{3}=4$ such degenerate triangles. There are $8$ total columns and rows, contributing $32$ invalid triangles. There are also $4$ for both of the diagonals and $1$ for each of the $4$ shorter diagonals. There are a total of $32+8+4=44$ invalid triangles counted in the $560$, so the answer is $560-44=\\boxed{516}$."
+}

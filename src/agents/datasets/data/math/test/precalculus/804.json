@@ -1,0 +1,6 @@
+{
+    "problem": "A line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 5 \\\\ -1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}.\\]A second line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ 3 \\end{pmatrix} + u \\begin{pmatrix} -1 \\\\ 1 \\end{pmatrix}.\\]If $\\theta$ is the acute angle formed by the two lines, then find $\\cos \\theta.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "The direction vectors of the lines are $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 1 \\end{pmatrix}.$  The cosine of the angle between these direction vectors is\n\\[\\frac{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\cdot \\begin{pmatrix} -1 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} -1 \\\\ 1 \\end{pmatrix} \\right\\|} = \\frac{-1}{\\sqrt{5} \\sqrt{2}} = -\\frac{1}{\\sqrt{10}}.\\]Since $\\theta$ is acute, $\\cos \\theta = \\boxed{\\frac{1}{\\sqrt{10}}}.$"
+}

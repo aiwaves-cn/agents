@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the geometric sequence $\\frac{125}{9}, \\frac{25}{3}, 5, 3, \\ldots$. What is the eighth term of the sequence? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The common ratio between consecutive terms is $\\frac{3}{5}$ (you can choose any two consecutive terms and divide the second one by the first to find the common ratio). So the $n^\\text{th}$ term of the sequence is $\\frac{125}{9} \\cdot \\left( \\frac{3}{5} \\right)^{n-1}$. Plugging in $n=8$, we get $$\n\\frac{125}{9} \\cdot \\left( \\frac{3}{5} \\right)^{7} = \\frac{5^3}{3^2} \\cdot \\frac{3^7}{5^7}\n= \\frac{3^5}{5^4}\n= \\boxed{\\frac{243}{625}}.\n$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}.\\]A second line is parameterized by\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 7 \\end{pmatrix} + u \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}.\\]Find the point where the lines intersect.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "For the first line,\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} 2 - t \\\\ 3 + 5t \\end{pmatrix}.\\]For the second line,\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 7 \\end{pmatrix} + u \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} -u \n\\\\ 7 + 4u \\end{pmatrix}.\\]Hence, $2 - t = -u$ and $3 + 5t = 7 + 4u.$  Solving, we find $t = -4$ and $u = -6,$ so\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\boxed{\\begin{pmatrix} 6 \\\\ -17 \\end{pmatrix}}.\\]"
+}

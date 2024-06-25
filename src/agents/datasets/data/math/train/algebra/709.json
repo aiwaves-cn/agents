@@ -1,0 +1,6 @@
+{
+    "problem": "A line containing the points $(9, 1)$ and $(5, 5)$ intersects the $x$ -axis at what point?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The $x$-axis has equation $y = 0$.  Thus we need to find out what $x$ is when $y = 0$.  We notice that the slope of the line is $\\frac{9 - 5}{1 - 5} = -1$.  So to get to $y = 1$ we can start at $(9, 1)$ and go down one in the $y$ direction.  Since the slope of the line is $-1$ we know that going down in $y$ by one results in going up in $x$ by one (i.e. $x$ will be 10).  Thus the line intercepts the $x$-axis at $\\boxed{(10, 0)}$."
+}

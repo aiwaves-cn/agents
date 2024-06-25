@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x_1,$ $x_2,$ $\\dots,$ $x_n$ be nonnegative real numbers such that $x_1 + x_2 + \\dots + x_n = 1$ and\n\\[x_1^2 + x_2^2 + \\dots + x_n^2 \\le \\frac{1}{100}.\\]Find the smallest possible value of $n.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By QM-AM,\n\\[\\sqrt{\\frac{x_1^2 + x_2^2 + \\dots + x_n^2}{n}} \\ge \\frac{x_1 + x_2 + \\dots + x_n}{n}.\\]Then\n\\[\\frac{1}{n} \\le \\sqrt{\\frac{x_1^2 + x_2^2 + \\dots + x_n^2}{n}} \\le \\sqrt{\\frac{1}{100n}}.\\]Hence,\n\\[\\frac{1}{n^2} \\le \\frac{1}{100n},\\]and $n \\ge 100.$\n\nFor $n = 100,$ we can take $x_i = \\frac{1}{100}$ for all $i,$ so the smallest such $n$ is $\\boxed{100}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A parallelogram has adjacent sides of lengths $s$ units and $2s$ units forming a 45-degree angle. The area of the parallelogram is $8\\sqrt 2$ square units. What is the value of $s$? Express your answer in simplest radical form.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "If we let the side of length $2s$ be the base of the parallelogram, we can use our 45-degree angle to find the height of the parallelogram. The height and sides of the parallelogram form a 45-45-90 triangle, with the side of length $s$ as the hypotenuse. Thus, the height of the parallelogram is $s/\\sqrt{2}$.\n\nIt follows that the area of the parallelogram is $2s\\cdot (s/\\sqrt{2}) = s^2\\sqrt{2} = 8\\sqrt{2}$, so $s^2 = 8$. Taking the square root of both sides, we see that $s = \\boxed{2\\sqrt{2}}$."
+}

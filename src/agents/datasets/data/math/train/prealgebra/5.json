@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, square $ABCD$ has sides of length $4,$ and $\\triangle ABE$ is equilateral. Line segments $BE$ and $AC$ intersect at $P.$ Point $Q$ is on $BC$ so that $PQ$ is perpendicular  to $BC$ and $PQ=x.$ [asy]\npair A, B, C, D, E, P, Q;\nA=(0,0);\nB=(4,0);\nC=(4,-4);\nD=(0,-4);\nE=(2,-3.464);\nP=(2.535,-2.535);\nQ=(4,-2.535);\ndraw(A--B--C--D--A--E--B);\ndraw(A--C);\ndraw(P--Q, dashed);\nlabel(\"A\", A, NW);\nlabel(\"B\", B, NE);\nlabel(\"C\", C, SE);\nlabel(\"D\", D, SW);\nlabel(\"E\", E, S);\nlabel(\"P\", P, W);\nlabel(\"Q\", Q, dir(0));\nlabel(\"$x$\", (P+Q)/2, N);\nlabel(\"4\", (A+B)/2, N);\n[/asy] Determine the measure of angle $BPC.$",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since $\\triangle ABE$ is equilateral, we know that $\\angle ABE=60^\\circ.$ Therefore, \\begin{align*}\n\\angle PBC &= \\angle ABC - \\angle ABE \\\\\n&= 90^\\circ-60^\\circ \\\\\n&=30^\\circ.\n\\end{align*} Since $AB=BC,$ we know that $\\triangle ABC$ is a right isosceles triangle and $$\\angle BAC=\\angle BCA=45^\\circ.$$ Then, $\\angle BCP =\\angle BCA=45^\\circ$ and \\begin{align*}\n\\angle BPC &= 180^\\circ-\\angle PBC - \\angle BCP \\\\\n&= 180^\\circ - 30^\\circ - 45^\\circ \\\\\n&=\\boxed{105^\\circ}.\n\\end{align*}"
+}

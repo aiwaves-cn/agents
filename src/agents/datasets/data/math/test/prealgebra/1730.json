@@ -1,0 +1,6 @@
+{
+    "problem": "The product of three consecutive integers is 120. That product divided by the mean of the three integers is 24. What is the largest of the three consecutive integers?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Call the integers $n-1$, $n$, and $n+1$. Their mean is $n$; their product is $(n-1)(n)(n+1)=120$ and their product divided by their mean is $(n-1)(n+1)=24$. Dividing the first equation by the second, we get $n=5$. The largest of the three is $n+1=\\boxed{6}$."
+}

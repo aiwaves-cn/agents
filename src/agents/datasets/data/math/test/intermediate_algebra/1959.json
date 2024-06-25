@@ -1,0 +1,6 @@
+{
+    "problem": "The fourth term of a geometric series is $24$ and the eleventh term is $3072$. What is the common ratio?",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a$ be the first term and $r$ be the common ratio. Then we have, $ar^3 = 24$ and $ar^{10} = 3072$.  Dividing gives us\n$$r^7 = \\frac{3072}{24} = 128$$which means $r = \\boxed{2}.$"
+}

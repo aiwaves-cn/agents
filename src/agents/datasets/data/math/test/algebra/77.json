@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $a$ and $b$ are nonzero real numbers, and that the equation  $${x^2 + ax + b = 0}$$ has solutions $a$ and $b$. Then what is the pair $(a,b)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The given conditions imply that $$\nx^2 + ax + b = (x-a)(x-b) = x^2 -(a+b)x + ab,\n$$ so $$\na+b = -a \\quad\\text{and}\\quad ab = b.\n$$ Since $b \\neq 0$, the second equation implies that $a=1$. The first equation gives $b=-2$, so $(a,b) = \\boxed{(1,-2)}$."
+}

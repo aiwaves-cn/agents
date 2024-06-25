@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram below, we have $AB = 24$ and $\\angle ADB =90^\\circ$.  If $\\sin A = \\frac23$ and $\\sin C = \\frac34$, then what is $BC$?\n\n\n[asy]\npair A,B,C,D;\nA = (0,0);\nB = (8*sqrt(5),16);\nD = (8*sqrt(5),0);\nC = (8*sqrt(5) + 5.3333*sqrt(7),0);\ndraw(D--B--A--C--B);\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,N);\nlabel(\"$C$\",C,SE);\nlabel(\"$D$\",D,S);\ndraw(rightanglemark(B,D,A,43));\n[/asy]",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "From right triangle $ABD$, we have $\\sin A = \\frac{BD}{AB} = \\frac{BD}{24}$.  Since $\\sin A = \\frac23$, we have $\\frac23 = \\frac{BD}{24}$, so $BD = \\frac23\\cdot 24 = 16$.\n\nFrom right triangle $BCD$, we have $\\sin C = \\frac{BD}{BC}=\\frac{16}{BC}$.  Since $\\sin C = \\frac34$, we have $\\frac{16}{BC} = \\frac34$.  Therefore, we have $3BC = 4\\cdot 16$, and $BC = \\boxed{\\frac{64}{3}}$."
+}

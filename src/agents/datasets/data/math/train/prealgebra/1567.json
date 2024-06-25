@@ -1,0 +1,6 @@
+{
+    "problem": "How many integers between 1 and 200 are multiples of both 3 and 5 but not of either 4 or 7?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Integers that are multiples of both 3 and 5 must be multiples of 15.  We can start by listing the multiples of 15 between 1 and 200: $$15,30,45,60,75,90,105,120,135,150,165,180,195$$ Checking only the even numbers, we can eliminate those that are multiples of 4, leaving us with: $$15,30,45,75,90,105,135,150,165,195$$ Finally, we need to eliminate any remaining multiples of 7.  The only multiples of 7 we need to be concerned with are those ending in 5 or 0.  The only number on the list that is a multiple of 7 is 105.  Our final list is: $$15,30,45,75,90,135,150,165,195$$ This leaves us with $\\boxed{9}$ integers."
+}

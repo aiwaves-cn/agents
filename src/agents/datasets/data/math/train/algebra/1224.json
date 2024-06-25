@@ -1,0 +1,6 @@
+{
+    "problem": "The ratio of the areas of two squares is $\\frac{32}{63}$. After rationalizing the denominator, the ratio of their side lengths can be expressed in the simplified form $\\frac{a\\sqrt{b}}{c}$ where $a$, $b$, and $c$ are integers. What is the value of the sum $a+b+c$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The area of a square equals the side length squared, so we can get the ratio of side lengths by taking the square root of the ratio of areas: $$\\sqrt{\\frac{32}{63}}=\\frac{\\sqrt{32}}{\\sqrt{63}}=\\frac{4\\sqrt{2}}{3\\sqrt{7}}=\\frac{4\\sqrt{2}}{3\\sqrt{7}}\\cdot\\frac{\\sqrt{7}}{\\sqrt{7}}=\\frac{4\\sqrt{14}}{21}.$$So, our answer is $4+14+21=\\boxed{39}$."
+}

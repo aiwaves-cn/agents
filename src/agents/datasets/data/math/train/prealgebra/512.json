@@ -1,0 +1,6 @@
+{
+    "problem": "At a women's doubles tennis tournament, there were three teams of  two women. After the tournament, each woman shook hands once with each of the other players except her partner. What is the number of handshakes that occurred?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Each of the six women shakes hands with four other women. Multiplying six by four will count each handshake twice, however, so we must divide by 2 to correct for this. The answer is therefore $(6\\cdot 4)/2=\\boxed{12}$.\n\nAll 12 handshakes can be shown visually in the following diagram.\n\n[asy]\nsize(200,135);\n\npair A,B,C,D,E,F;\nA=(20,0);\nB=(20,30);\nC=(180,0);\nD=(180,30);\nE=(85,125);\nF=(115,125);\n\ndot(A);\ndot(B);\ndot(C);\ndot(D);\ndot(E);\ndot(F);\n\ndraw(A--C,red);\ndraw(A--D,red);\ndraw(B--C,red);\ndraw(B--D,red);\ndraw(A--E,blue);\ndraw(A--F,blue);\ndraw(B--E,blue);\ndraw(B--F,blue);\ndraw(C--E,green);\ndraw(C--F,green);\ndraw(D--E,green);\ndraw(D--F,green);\n\nlabel(\"Team 1\",(0,15));\nlabel(\"Team 2\",(200,15));\nlabel(\"Team 3\",(100,135));\n\n[/asy]"
+}

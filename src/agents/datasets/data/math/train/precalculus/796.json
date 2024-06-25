@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\sec 120^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\sec 120^\\circ = \\frac{1}{\\cos 120^\\circ}.\\]Then $\\cos 120^\\circ = -\\cos (120^\\circ - 180^\\circ) = -\\cos (-60^\\circ) = -\\cos 60^\\circ = -\\frac{1}{2},$ so\n\\[\\frac{1}{\\cos 120^\\circ} = \\boxed{-2}.\\]"
+}

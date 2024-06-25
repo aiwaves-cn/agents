@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers are in the list $$ 1.5, 5.5, 9.5, 13.5, \\ldots, 41.5, 45.5? $$",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We can add $0.5$ to each member of the list, to make it easier to deal with: $$\n2, 6, 10, 14, \\ldots, 42, 46.\n$$ If we add 2 to each of the terms, we get: $$\n4, 8, 12, 16, \\ldots, 44, 48.\n$$ Now if we divide by 4, we get $$\n1, 2, 3, 4, \\ldots, 11, 12,\n$$ so there are $\\boxed{12}$ numbers in the list."
+}

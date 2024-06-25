@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the parallelogram with vertices $(10,45)$, $(10,114)$, $(28,153)$, and $(28,84)$. A line through the origin cuts this figure into two congruent polygons. The slope of the line is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the first point on the line $x=10$ be $(10,45+a)$ where a is the height above $(10,45)$. Let the second point on the line $x=28$ be $(28, 153-a)$. For two given points, the line will pass the origin if the coordinates are proportional (such that $\\frac{y_1}{x_1} = \\frac{y_2}{x_2}$). Then, we can write that $\\frac{45 + a}{10} = \\frac{153 - a}{28}$. Solving for $a$ yields that $1530 - 10a = 1260 + 28a$, so $a=\\frac{270}{38}=\\frac{135}{19}$. The slope of the line (since it passes through the origin) is $\\frac{45 + \\frac{135}{19}}{10} = \\frac{99}{19}$, and the solution is $m + n = \\boxed{118}$."
+}

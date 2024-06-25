@@ -1,0 +1,6 @@
+{
+    "problem": "A sports conference has 14 teams in two divisions of 7.  How many games are in a complete season for the conference if each team must play every other team in its own division twice and every team in the other division once?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Each team plays 6 other teams in its division twice, and the 7 teams in the other division once, for a total of $6 \\times 2 + 7 = 19$ games for each team.  There are 14 teams total, which gives a preliminary count of $19 \\times 14 = 266$ games, but we must divide by two because we have counted each game twice (once for one team and once for the other).  So the final answer is $\\dfrac{19 \\times 14}{2} = \\boxed{133}$ games."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is $123_{10}$ when expressed in base $5$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "To find the base $5$ representation of $123_{10}$, we first write $123$ as the sum of powers of $5$. The largest power of $5$ that is less than $123$ is $5^2 = 25$ and the largest multiple of $25$ that is less than $123$ is $4 \\cdot 25 = 100$. Thus, we have $123 = 4 \\cdot 25 + 23$. We then consider the largest power of $5$ that is less than $23$ which is $5^1 = 5$. The largest multiple of $5$ that is less than $23$ is $4 \\cdot 5 = 20$ and we have $23 - 20 = 3$, which can be written as $3 \\cdot 5^0$. Therefore, we can write $123$ as $$123 = 4 \\cdot 5^2 + 4 \\cdot 5^1 + 3 \\cdot 5^0.$$Thus, $123_{10}$ in base $5$ is $\\boxed{443_5}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $PABCD$ is a right square pyramid with apex $P$ and base $ABCD$.  If $PBD$ is an equilateral triangle with side length 6, then what is the volume of $PABCD$?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy]\n\nimport three;\n\ntriple A = (0,0,0);\n\ntriple B = (1,0,0);\n\ntriple C = (1,1,0);\n\ntriple D = (0,1,0);\n\ntriple P = (0.5,0.5,1);\n\ndraw(B--C--D--P--B);\n\ndraw(P--C);\n\ndraw(B--A--D,dashed);\n\ndraw(P--A,dashed);\n\nlabel(\"$A$\",A,NW);\n\nlabel(\"$B$\",B,W);\n\nlabel(\"$C$\",C,S);\n\nlabel(\"$D$\",D,E);\n\nlabel(\"$P$\",P,N);\n\ntriple F= (0.5,0.5,0);\n\nlabel(\"$F$\",F,S);\n\ntriple M=(B+C)/2;\n\ndraw(D--B,dashed);\n\ndraw(P--F,dashed);\n\n[/asy]\n\nLet $F$ be the center of the square base.  Since the pyramid is a right pyramid, segment $\\overline{PF}$ is an altitude of triangle $PBD$.  Since $PBD$ is an equilateral triangle with side length 6, $PFB$ is a 30-60-90 triangle with $FB = BD/2 =3$ and $PF = 3\\sqrt{3}$.  Finally, $\\overline{BD}$ is a diagonal of square base $ABCD$, so we have $BC = BD/\\sqrt{2} = 6/\\sqrt{2} = 3\\sqrt{2}$.  Therefore, the volume of the pyramid is \\[\\frac{[ABCD](PF)}{3} = \\frac{(3\\sqrt{2})^2 (3\\sqrt{3})}{3} = \\boxed{18\\sqrt{3}}.\\]"
+}

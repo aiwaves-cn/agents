@@ -1,0 +1,6 @@
+{
+    "problem": "What is the maximum number of square inches in the area of a rectangle with a perimeter of 12 inches?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since the perimeter is 12, the sides of the rectangle add up to $12/2 = 6.$  Let $x$ be one side length of the rectangle.  Then the other side length is $6 - x,$ so the area is\n\\[x(6 - x) = 6x - x^2.\\]Completing the square, we get\n\\[-x^2 + 6x = -x^2 + 6x - 9 + 9 = 9 - (x - 3)^2.\\]Thus, the maximum area of the rectangle is $\\boxed{9}$ square inches, which occurs for a $3 \\times 3$ square."
+}

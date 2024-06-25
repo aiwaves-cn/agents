@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of two numbers $x$ and $y$ is 153, and the value of the fraction $\\frac{x}{y}$ is 0.7. What is the value of $y - x$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We have the system of equations:\n\n\\begin{align*}\nx + y &= 153 \\\\\n\\frac{x}{y} &= 0.7 \\\\\n\\end{align*}\n\nFrom the second equation, multiplying both sides by $y$ gives $x=.7y$. Next, substituting the second equation into the first to eliminate $x$ gives $.7y+y=153$, or $y=90$. Plugging in this value into the first equation in the original system of equations gives $x+90=153$ or $x=63$. Thus, $y-x=90-63=\\boxed{27}$."
+}

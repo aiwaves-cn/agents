@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ be a complex number with $|z|=2$. Let $P$ be the polygon in the complex plane whose vertices are $z$ and every $w$ such that\n\\[\\frac{1}{z+w}=\\frac{1}{z}+\\frac{1}{w}.\\]Find the area enclosed by $P.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Multiplying both sides by $zw(z + w),$ we get\n\\[zw = (z + w)^2,\\]which simplifies to $w^2 + zw + z^2 = 0.$  By the quadratic formula,\n\\[w = \\frac{-1 \\pm i \\sqrt{3}}{2} \\cdot z,\\]so the solutions are $w = z \\operatorname{cis} 120^\\circ$ and $w = z \\operatorname{cis} 240^\\circ,$ which means that $P$ is an equilateral triangle.\n\n[asy]\nusepackage(\"amsmath\");\n\nunitsize(2 cm);\n\npair A, B, C;\n\nA = dir(20);\nB = dir(20 + 120);\nC = dir(20 + 240);\n\ndraw(Circle((0,0),1));\ndraw(A--B--C--cycle);\ndraw((-1.2,0)--(1.2,0));\ndraw((0,-1.2)--(0,1.2));\n\ndot(\"$z$\", A, A);\ndot(\"$z \\operatorname{cis} 120^\\circ$\", B, B);\ndot(\"$z \\operatorname{cis} 240^\\circ$\", C, SW);\n[/asy]\n\nThe side length of the equilateral triangle is\n\\[\\left| z - \\frac{-1 + i \\sqrt{3}}{2} z \\right| = \\left| \\frac{3 - i \\sqrt{3}}{2} \\right| |z| = \\sqrt{3} \\cdot 2,\\]so the area of the equilateral triangle is\n\\[\\frac{\\sqrt{3}}{4} \\cdot (2 \\sqrt{3})^2 = \\boxed{3 \\sqrt{3}}.\\]"
+}

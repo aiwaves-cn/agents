@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\left(\\frac{1}{2}\\right)^{8} \\cdot \\left(\\frac{3}{4}\\right)^{-3}$.",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Since $\\left(\\frac{a}{b}\\right)^n = \\left(\\frac{b}{a}\\right)^{-n}$, then we know $\\left(\\frac{3}{4}\\right)^{-3} = \\left(\\frac{4}{3}\\right)^3$.\n\nAlso, we know $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$, so $\\left(\\frac{4}{3}\\right)^3 = \\frac{4^3}{3^3}$ and $\\left(\\frac{1}{2}\\right)^{8} = \\frac{1^8}{2^8}$.\n\nSo, combining terms, we have $\\left(\\frac{1}{2}\\right)^{8} \\cdot \\left(\\frac{3}{4}\\right)^{-3} = \\frac{4^3}{3^3} \\cdot \\frac{1^8}{2^8} = \\frac{4^3 \\cdot 1^8}{3^3 \\cdot 2^8}$.  We can simplify since $4^3 = 64 = 2^6$, and $\\frac{2^6}{2^8} = \\frac{1}{2^2}$ (since $\\frac{a^k}{a^j} = a^{k-j}$).\n\nThen, we solve for $\\frac{4^3 \\cdot 1^8}{3^3 \\cdot 2^8} = \\frac{1}{3^3} \\cdot \\frac{2^6}{2^8} = \\frac{1}{3^3} \\cdot \\frac{1}{2^2}$.  Since $3^3 = 3 \\cdot 3 \\cdot 3 = 27$, and $2^2 = 4$, we plug in these values, and find our answer to be $\\frac{1}{27} \\cdot \\frac{1}{4} = \\frac{1}{27 \\cdot 4} = \\boxed{\\frac{1}{108}}$."
+}

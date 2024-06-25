@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest real number $x$ in the domain of the function $$g(x) = \\sqrt{(x-3)^2-(x-8)^2}~?$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "A real number $x$ is in the domain of $g$ if and only if $$(x-3)^2 - (x-8)^2 \\ge 0.$$ Expanding this out and simplifying, we get $$10x - 55\\ge 0;$$ the smallest solution is $x=\\frac{55}{10}=\\boxed{\\frac{11}{2}}$.\n\nAlternatively, once we have the quadratic equation $$(x-3)^2 - (x-8)^2 \\ge 0,$$ instead of expanding it out, we can observe that $(x-3)^2$ is the square of the distance from $x$ to $3$ on the number line, while $(x-8)^2$ is the square of the distance from $x$ to $8$. Thus, $(x-3)^2-(x-8)^2\\ge 0$ is true if $x$ is closer to $8$ than to $3$, which is true if and only if $x\\ge \\frac{8+3}{2} = \\boxed{\\frac{11}{2}}$."
+}

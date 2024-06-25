@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix $\\mathbf{M}$ if it satisfies $\\mathbf{M} \\mathbf{i} = \\begin{pmatrix} 2 \\\\ 3 \\\\ -8 \\end{pmatrix},$ $\\mathbf{M} \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 5 \\\\ -2 \\end{pmatrix},$ and $\\mathbf{M} \\mathbf{k} = \\begin{pmatrix} 7 \\\\ -1 \\\\ 4 \\end{pmatrix}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "In general, for a matrix $\\mathbf{M},$ $\\mathbf{M} \\mathbf{i},$ $\\mathbf{M} \\mathbf{j},$ and $\\mathbf{M} \\mathbf{k}$ are equal to the first, second, and third columns of $\\mathbf{M},$ respectively.  Therefore,\n\\[\\mathbf{M} = \\boxed{\\begin{pmatrix} 2 & 0 & 7 \\\\ 3 & 5 & -1 \\\\ -8 & -2 & 4 \\end{pmatrix}}.\\]"
+}

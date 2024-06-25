@@ -1,0 +1,6 @@
+{
+    "problem": "A line segment of length $5$ has one endpoint at $(1, 2)$ and the other endpoint at $(4, b)$. Find all possible values of $b$, separated by commas.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We use the distance formula: $\\sqrt{ (4-1)^2 + (b-2)^2 } = 5$. Solving, we get $3^2 + (b-2)^2 = 5^2$. $(b-2)^2 = 16$, so $b-2=4$ or $b-2=-4$. Solving, we get that $b is one of \\boxed{6, -2}$."
+}

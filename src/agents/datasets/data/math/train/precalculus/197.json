@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate\n\\[\\begin{vmatrix} 0 & \\sin \\alpha & -\\cos \\alpha \\\\ -\\sin \\alpha & 0 & \\sin \\beta \\\\ \\cos \\alpha & -\\sin \\beta & 0 \\end{vmatrix}.\\]",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We can expand the determinant as follows:\n\\begin{align*}\n\\begin{vmatrix} 0 & \\sin \\alpha & -\\cos \\alpha \\\\ -\\sin \\alpha & 0 & \\sin \\beta \\\\ \\cos \\alpha & -\\sin \\beta & 0 \\end{vmatrix} &= -\\sin \\alpha \\begin{vmatrix} -\\sin \\alpha & \\sin \\beta \\\\ \\cos \\alpha & 0 \\end{vmatrix} - \\cos \\alpha \\begin{vmatrix} -\\sin \\alpha & 0 \\\\ \\cos \\alpha & -\\sin \\beta \\end{vmatrix} \\\\\n&= -\\sin \\alpha (-\\sin \\beta \\cos \\alpha) - \\cos \\alpha (\\sin \\alpha \\sin \\beta) \\\\\n&= \\boxed{0}.\n\\end{align*}"
+}

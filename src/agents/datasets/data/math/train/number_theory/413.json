@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer $n$ such that $\\frac{n}{n+101}$ is equal to a terminating decimal?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If $\\frac{n}{n+101}$ is a terminating decimal, then $n+101$ is divisible only by 2 and 5. We proceed by looking for integers only divisible by 2 and 5.\n\nWe find that 125 is the smallest power of 5 greater than 101. The smallest satisfactory integer divisible by 25 is also 125; multiplying by powers of 2 gives us 100, then 200. The smallest satisfactory integer divisible by 5 is also 125, since multiplying by powers of 2 gives us 80, then 160. Finally, the smallest power of 2 greater than 101 is 128. 125 is the smallest denominator that will give a terminating decimal, so we have that $n+101 = 125$ which implies $n = \\boxed{24}$."
+}

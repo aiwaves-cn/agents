@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $z$ is a complex number such that $z^3 = 100+75i$.  Find $|z|$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since $z^3 = 100+75i$, we must have $|z^3| = |100+75i| = |25(4+3i)| = 25|4+3i| = 25(5) = 125$.  We also have $|z|^3 = |z|\\cdot |z| \\cdot |z| = |(z)(z)(z)| = |z^3|$, so $|z^3| = 125$ means that $|z|^3 = 125$, which gives us $|z| = \\sqrt[3]{125} = \\boxed{5}$."
+}

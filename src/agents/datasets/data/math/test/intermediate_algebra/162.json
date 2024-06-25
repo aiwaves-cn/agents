@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z$ and $w$ be complex numbers such that $|z| = 2$ and $|w| = 5.$  Find the largest possible value of $|z + w|.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By the Triangle Inequality,\n\\[|z + w| \\le |z| + |w| = 2 + 5 = 7.\\]We can achieve this bound by taking $z = 2$ and $w = 5,$ so the largest possible value is $\\boxed{7}.$"
+}

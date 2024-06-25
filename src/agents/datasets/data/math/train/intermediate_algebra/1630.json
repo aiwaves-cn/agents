@@ -1,0 +1,6 @@
+{
+    "problem": "Let a sequence $b_1, b_2, \\ldots$ be defined as $b_1 = 1$, $b_2 = 2$, and $b_{n+1} = b_n b_{n-1}$.  Calculate $b_{20}$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Notice that every term $b_n$ will be a power of 2, the exponent of which will be the sum of the exponents of the two previous terms.  Therefore, let us construct a sequence $a_1, a_2, \\ldots$, such that $a_1 = 0$, and $a_2 = 1$, and $a_{n+1} = a_n + a_{n-1}$.  Of course, $a_{20}$ is simply equivalent to the 19th term of the Fibonacci Sequence, 4181.  Thus, $b_{20} = 2^{a_{20}} = \\boxed{2^{4181}}$."
+}

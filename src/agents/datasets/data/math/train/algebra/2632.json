@@ -1,0 +1,6 @@
+{
+    "problem": "The distance between the two intersections of $x=y^4$ and $x+y^2=1$ is $\\sqrt{u+v\\sqrt5}$.  Find the ordered pair, $(u,v)$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "To find the $y$-coordinates of the intersections, substitute $y^4$ for $x$ in $x+y^2=1$ and solve for $y$, resulting in  \\begin{align*}\ny^4+y^2&=1 \\\\\n\\Rightarrow \\qquad y^4+y^2-1&=0 \\\\\n\\Rightarrow \\qquad y^2&=\\frac{-1\\pm\\sqrt{1+4}}2=\\frac{-1\\pm\\sqrt5}2\\\\\n\\end{align*}But $y^2$ is positive, so we reject $\\frac{-1-\\sqrt5}2$.  Therefore $y=\\pm\\sqrt{\\frac{\\sqrt5-1}2}$.\n\n\nUsing each of these coordinates to solve for $x$ gives us the intersections at  $\\left(\\frac{3-\\sqrt5}2,\\sqrt{\\frac{\\sqrt5-1}2}\\right)$ and  $\\left(\\frac{3-\\sqrt5}2,-\\sqrt{\\frac{\\sqrt5-1}2}\\right)$.  Using the distance formula, we have\n\n\\begin{align*}\n&\\sqrt{ \\left(\\frac{3-\\sqrt5}2-\\frac{3-\\sqrt5}2\\right)^2 + \\left(\\sqrt{\\frac{\\sqrt5-1}2}+\\sqrt{\\frac{\\sqrt5-1}2}\\right)^2 }\\\\\n&\\qquad=\\sqrt{\\left(2\\sqrt{\\frac{\\sqrt5-1}2}\\right)^2}\\\\\n&\\qquad=2\\sqrt{\\frac{\\sqrt5-1}{2} }\\\\\n&\\qquad=\\sqrt{2\\sqrt5-2}.\n\\end{align*}So, $(u,v)=\\boxed{(-2,2)}.$"
+}

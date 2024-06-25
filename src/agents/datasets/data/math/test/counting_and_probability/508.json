@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can 6 girls and 2 boys sit in a row if the 2 boys insist on sitting next to each other?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We can consider the two boys as one person, arrange the ``seven'' people first, then arrange the 2 boys.  So the number of seating arrangements in which the boys sit together is $7!\\times 2!=\\boxed{10,\\!080}$."
+}

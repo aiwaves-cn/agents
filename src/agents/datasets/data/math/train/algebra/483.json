@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest possible value of $x$ in the simplified form $x=\\frac{a+b\\sqrt{c}}{d}$ if $\\frac{5x}{6}+1=\\frac{3}{x}$, where $a,b,c,$ and $d$ are integers. What is $\\frac{acd}{b}$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Multiplying the whole equation by $6x$ will get rid of the fractions: \\begin{align*}\n5x^2+6x&=18 \\quad \\Longrightarrow \\\\\n5x^2+6x-18&=0.\n\\end{align*}Since the expression on the left-hand side does not factor easily, we use the quadratic formula to get \\begin{align*}\nx&=\\frac{-6\\pm\\sqrt{36+360}}{10}\\\\\n&=\\frac{-6\\pm\\sqrt{396}}{10}\\\\\n&=\\frac{-6\\pm6\\sqrt{11}}{10}.\n\\end{align*}Therefore, the largest possible value for $x$ is $\\frac{-6+6\\sqrt{11}}{10}$, or $\\frac{-3+3\\sqrt{11}}{5}$. Applying this to $\\frac{a+b\\sqrt{c}}{d}$, $a=-3$, $b=3$, $c=11$, and $d=5$. \\[\\frac{acd}{b}=\\frac{-3\\cdot11\\cdot5}{3}=\\boxed{-55}.\\]"
+}

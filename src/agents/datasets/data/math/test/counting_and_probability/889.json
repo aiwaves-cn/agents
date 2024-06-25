@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can seven beads of distinct colors be put on the hexagonal grid shown, if reflections and rotations of an arrangement are considered equivalent?\n\n[asy]\nsize(50);\ndot((0,0));\ndot((1,0));\ndot((-1,0));\ndot((.5,sqrt(3)/2));\ndot((.5,-sqrt(3)/2));\ndot((-.5,sqrt(3)/2));\ndot((-.5,-sqrt(3)/2));\n[/asy]",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $7!$ ways to put the beads on the grid, not considering rotations and reflections. Arrangements can be reflected or not reflected and can be rotated by 0, 60, 120, 180, 240, or 300 degrees, so they come in groups of twelve equivalent arrangements. Correcting for the symmetries, we find that there are $7!/12=\\boxed{420}$ distinct arrangements."
+}

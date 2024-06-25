@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[f(x) = \\frac{2x + 3}{kx - 2}.\\]Find all real numbers $k$ so that $f^{-1}(x) = f(x).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "From the condition $f^{-1}(x) = f(x),$ $f(f^{-1}(x)) = f(f(x)),$ which simplifies to $f(f(x)) = x.$\n\nNote that\n\\begin{align*}\nf(f(x)) &= f \\left( \\frac{2x + 3}{kx - 2} \\right) \\\\\n&= \\frac{2 \\cdot \\frac{2x + 3}{kx - 2} + 3}{k \\cdot \\frac{2x + 3}{kx - 2} - 2} \\\\\n&= \\frac{2(2x + 3) + 3(kx - 2)}{k(2x + 3) - 2(kx - 2)} \\\\\n&= \\frac{4x + 6 + 3kx - 6}{2kx + 3k - 2kx + 4} \\\\\n&= \\frac{(3k + 4)x}{3k + 4} \\\\\n&= x.\n\\end{align*}Thus, $f(f(x)) = x$ for all real numbers $k,$ except when $3k + 4 = 0,$ or $k = -4/3.$  Note that when $k = -4/3,$\n\\[f(x) = \\frac{2x + 3}{kx - 2} = \\frac{2x + 3}{-\\frac{4}{3} x - 2} = \\frac{3(2x + 3)}{-4x - 6} = \\frac{3 (2x + 3)}{-2 (2x + 3)} = -\\frac{3}{2},\\]so $f(x)$ does not have an inverse.  Hence, the answer is $k \\in \\boxed{(-\\infty,-\\frac{4}{3}) \\cup (-\\frac{4}{3},\\infty)}.$"
+}

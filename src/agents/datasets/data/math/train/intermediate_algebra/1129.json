@@ -1,0 +1,6 @@
+{
+    "problem": "What is the quotient when $8x^3+16x^2-7x+4$ is divided by $2x+5$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Using long division,\n\\[\n\\begin{array}{c|cc cc}\n\\multicolumn{2}{r}{4x^2} & -2x & +3/2  \\\\\n\\cline{2-5}\n2x+5 & 8x^3 & +16x^2&-7x&+4  \\\\\n\\multicolumn{2}{r}{-8x^3} & -20x^2& \\\\ \n\\cline{2-3}\n\\multicolumn{2}{r}{0} & -4x^2& -7x\\\\ \n\\multicolumn{2}{r}{} & +4x^2& +10x\\\\ \n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0& +3x & +4\\\\ \n\\multicolumn{2}{r}{} & & -3x & -15/2\\\\ \n\\cline{4-5}\n\\multicolumn{2}{r}{} & & & -7/2\\\\ \n\\end{array}\n\\]So the quotient is $\\boxed{4x^2 -2x + \\frac{3}{2}} $."
+}

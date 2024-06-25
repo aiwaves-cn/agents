@@ -1,0 +1,6 @@
+{
+    "problem": "How many 9-step paths are there from $E$ to $G$?[asy]size(4cm,4cm);int w=6;int h=5;int i;for (i=0; i<h; ++i){draw((0,i) -- (w-1,i));}for (i=0; i<w; ++i){draw((i, 0)--(i,h-1));}label(\"$G$\", (w-1,0), SE);label(\"$E$\", (0,h-1), NW);[/asy]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are 5 steps to the right, and 4 steps down.  These 9 steps can be made in any order, so the answer is $\\dbinom{9}{4} = \\dfrac{9 \\times 8 \\times 7 \\times 6}{4 \\times 3 \\times 2 \\times 1} = \\boxed{126}$."
+}

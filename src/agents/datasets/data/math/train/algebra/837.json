@@ -1,0 +1,6 @@
+{
+    "problem": "When a car's brakes are applied, it travels 7 feet less in each  second than the previous second until it comes to a complete stop.  A car goes 28 feet in the first second after the brakes are applied.  How many feet does the car travel from the time the  brakes are applied to the time the car stops?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The number of feet the car travels in each second is an arithmetic sequence with first term 28 and common difference $-7$.  We are summing all the positive terms in this sequence (these terms represent the number of feet the car travels in each second). Thus, we want to find the sum $28+21+14+7 = \\boxed{70}$."
+}

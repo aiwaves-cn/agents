@@ -1,0 +1,6 @@
+{
+    "problem": "If $A$, $B$ and $C$ are positive integers such that $\\frac{A\\sqrt{B}}{C} = \\frac{9}{2\\sqrt{3}}$, what is the value of $A+B+C$ given that $A$ and $C$ have no common prime factors, and $B$ has no perfect-square factors other than 1?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Multiplying the numerator and denominator of the right hand side of the given equation by $\\sqrt{3}$, we have \\[\\frac{A\\sqrt{B}}{C}=\\frac{9}{2\\sqrt{3}}\\cdot\\frac{\\sqrt{3}}{\\sqrt{3}}=\\frac{9\\sqrt{3}}{6}=\\frac{3\\sqrt{3}}{2}\\] Thus, $A=3$, $B=3$, and $C=2$, so $A+B+C=3+3+2=\\boxed{8}$."
+}

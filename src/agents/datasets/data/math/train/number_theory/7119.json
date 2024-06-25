@@ -1,0 +1,6 @@
+{
+    "problem": "Let $d_1 = a^2 + 2^a + a \\cdot 2^{(a+1)/2}$ and $d_2 = a^2 + 2^a - a \\cdot 2^{(a+1)/2}$. If $1 \\le a \\le 251$, how many integral values of $a$ are there such that $d_1 \\cdot d_2$ is a multiple of $5$?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "\\begin{align*}[(a^2 + 2^a) + a \\cdot 2^{(a+1)/2}][(a^2 + 2^a) - a \\cdot 2^{(a+1)/2}] &= (a^2 + 2^a)^2 - a^2 \\cdot 2^{a+1}\\\\ &= a^4 + 2 \\cdot a^22^{a} + 2^{2a} - a^2 \\cdot 2^{a+1}\\\\ &= a^4 + 2^{2a}\\end{align*}\n(If you recall the reverse of Sophie Germain Identity with $a=a,\\, b = 2^{(a-1)/2}$, then you could have directly found the answer).\nBy Fermat's Little Theorem, we have that $a^{4} \\equiv 1 \\pmod{5}$ if $a \\nmid 5$ and $a^{4} \\equiv 0 \\pmod{5}$ if $a | 5$. Also, we note that by examining a couple of terms, $2^{2a} \\equiv 4 \\pmod{5}$ if $a \\nmid 2$ and $2^{2a} \\equiv 1 \\pmod{5}$ if $a|2$. Therefore,\\[a^{4} + 2^{2a} \\equiv \\{0,1\\} + \\{1,4\\} \\equiv \\{0,1,2,4\\} \\pmod{5}\\]With divisibility by $5$ achievable only if $a \\nmid 2,5$. There are $\\frac{251-1}{2}+1 = 126$ odd numbers in the range given, and $\\frac{245-5}{10}+1 = 25$ of those are divisible by $5$, so the answer is $126 - 25 = \\boxed{101}$."
+}

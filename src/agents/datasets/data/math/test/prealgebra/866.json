@@ -1,0 +1,6 @@
+{
+    "problem": "Line $l$ is a straight line. What is the value of $x$ in the diagram? [asy]\n\nsize(150); defaultpen(linewidth(0.8)); import geometry;\n\ndraw(origin--(10,0),Arrows);\n\npair X = (5,0) + 5*dir(74);\n\ndraw((5,0)--X,EndArrow);\n\nlabel(\"$x + 26^\\circ$\",(5,0),NE);\n\nlabel(\"$2x+10^\\circ$\",(5,0),NW);\n\nlabel(\"$l$\",(0,0),NW);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since the two angles together form a line, we have $(x + 26^\\circ)+ (2x+10^\\circ) = 180^\\circ$.  Simplifying gives $3x + 36^\\circ = 180^\\circ$, so $3x = 144^\\circ$ and $x = \\boxed{48^\\circ}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Compute: $\\dfrac{2^{10}-2^8}{2^7-2^6}$. Express your answer in simplest form.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Cancel some factors of 2 before subtracting: \\begin{align*}\n\\frac{2^{10}-2^8}{2^7-2^6}&=\\frac{2^8(2^{2}-1)}{2^6(2^1-1)} \\\\\n&=2^2\\left(\\frac{3}{1}\\right) \\\\\n&=\\boxed{12}.\n\\end{align*}"
+}

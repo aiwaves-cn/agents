@@ -1,0 +1,6 @@
+{
+    "problem": "For positive integers $n$, let $f(n)$ return the smallest positive integer $k$ such that $\\frac{1}{k}$ has exactly $n$ digits after the decimal point. How many positive integer divisors does $f(2010)$ have?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We will try to prove that $f(n) = 2^n$. Given that $f(n) = k$, we know that $\\frac{1}{k}$ has exactly $n$ digits after the decimal point. If we multiply $\\frac{1}{k}$ by $10^n$, then all the digits are shifted $n$ places to the left, so we should end up with an integer that is not divisible by 10. Therefore, we want to find the smallest integer $k$ that divides $10^n$ and leaves a quotient that is not divisible by 10. If we let $k = 2^n$, then the quotient is $5^n$, which is odd and therefore not divisible by 10. For any integer smaller than $2^n$, the maximum power of 2 that can divide such an integer is $2^{n-1}$, so there remains at least one power of two that combines with a power of five to form an integer divisible by 10. Therefore, we have proved that $f(n) = 2^n$.\n\nAs a result, we can now conclude that $f(2010) = 2^{2010}$. The only integers that can divide $2^{2010}$ are $2^x$, for $0 \\le x \\le 2010$. There are $\\boxed{2011}$ such integers."
+}

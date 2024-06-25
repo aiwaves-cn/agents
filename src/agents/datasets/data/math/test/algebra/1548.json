@@ -1,0 +1,6 @@
+{
+    "problem": "A square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The points of intersection of the line $y = 7$ and $y = 2x^2 + 8x + 4$, by substitution, are found when $2x^2 + 8x + 4 = 7 \\Longrightarrow 2x^2 + 8x - 3 = 0$. By the quadratic formula, $$x = \\frac{-8 \\pm \\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}{2 \\cdot 2}.$$We want to find the difference of these roots to find the difference of the x-coordinates of the point of intersection, which will give a side length of the square. The difference is given by $\\frac{\\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}2 = \\frac{\\sqrt{88}}{2} = \\sqrt{22}$. Thus, the area of the square is $\\boxed{22}$."
+}

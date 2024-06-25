@@ -1,0 +1,6 @@
+{
+    "problem": "How many different lines pass through at least two points in this 3-by-3 grid of lattice points shown?\n\n[asy]\nsize(30);\ndot((0,0));\ndot((1,0));\ndot((2,0));\ndot((0,1));\ndot((1,1));\ndot((2,1));\ndot((0,2));\ndot((1,2));\ndot((2,2));\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom92$ choices of two points for a line to pass through. However, this counts each line that goes through three points three times, so we must subtract twice the number of lines which go through three points. Our answer is thus $\\binom92-2\\cdot8=36-16=\\boxed{20}$ lines."
+}

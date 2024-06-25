@@ -1,0 +1,6 @@
+{
+    "problem": "For a particular peculiar pair of  dice,  the probabilities of rolling 1, 2, 3, 4, 5, and 6 on each die are in the ratio $1:2:3:4:5:6$.  What is the probability of rolling a total of 7 on the two dice?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "On each die the probability of rolling $k$, for $1\\leq\nk\\leq 6$, is \\[\n\\frac{k}{1+2+3+4+5+6}=\\frac{k}{21}.\n\\]  There are six ways of rolling a total of 7 on the two dice, represented by the ordered pairs $(1,6)$, $(2,5)$, $(3,4)$, $(4,3)$, $(5,2)$, and $(6,1)$.  Thus the probability of rolling a total of 7 is \\[\n\\frac{1\\cdot6+2\\cdot5+3\\cdot4+4\\cdot3+5\\cdot2+6\\cdot1}{21^2}=\\frac{56}{21^2}=\\boxed{\\frac{8}{63}}.\n\\]"
+}

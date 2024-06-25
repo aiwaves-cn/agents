@@ -1,0 +1,6 @@
+{
+    "problem": "The admission fee for an exhibition is $ \\$25$ per adult and $ \\$12$ per child.  Last Tuesday, the exhibition collected $ \\$1950$ in admission fees from at least one adult and at least one child.  Of all the possible ratios of adults to children at the exhibition last Tuesday, which one is closest to $ 1$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a$ be the number of adults and $c$ be the number of children. Then we have\n$$25a + 12c = 1950 = 25 \\times 78.$$Rearranging terms gives us\n$$ a =  78 - \\frac{12c}{25} .$$Since the number of adults must be an integer, this tells us that $c$ is a multiple of 25.\n\nThe ratio we want close to 1 is\n$$\\frac{a}{c} = \\frac{78}{c} - \\frac{12}{25}$$If $\\frac{a}{c} = 1$, then $\\frac{78}{c} - \\frac{12}{25} = 1$, which means that $\\frac{78}{c} = \\frac{37}{25}$.  In other words, $c = \\frac{78 \\cdot 25}{37}$.\n\nThe multiple of 25 that comes closest to this is 50, and hence $c$ must be 50. Then, $a =  78 - \\frac{12 \\cdot 50}{25} = 54$.  So the ratio of adults to children closest to 1 is $\\frac{54}{50} = \\boxed{\\frac{27}{25}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest negative integer $x$ which satisfies the congruence $34x+6\\equiv 2\\pmod {20}$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We can simplify the congruence as follows (all of the following congruences are equivalent):\n\\begin{align*}\n34x+6&\\equiv 2\\pmod {20}\\\\\n14x+6&\\equiv 2\\pmod {20}\\\\\n14x&\\equiv 16\\pmod {20}\\\\\n7x&\\equiv 8\\pmod {10}\\\\\n21x&\\equiv 8\\cdot 3\\pmod {10}\\\\\nx&\\equiv 24\\pmod{10}\\\\\nx&\\equiv 4\\pmod{10}\\\\\nx&\\equiv \\boxed{-6}\\pmod{10}.\n\\end{align*}"
+}

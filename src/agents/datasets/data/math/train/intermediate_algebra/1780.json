@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\frac{5}{3^2 \\cdot 7^2} + \\frac{9}{7^2 \\cdot 11^2} + \\frac{13}{11^2 \\cdot 15^2} + \\dotsb.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "The $n$th term of the series is given by\n\\[\\frac{4n + 1}{(4n - 1)^2 (4n + 3)^2}.\\]Note that\n\\begin{align*}\n(4n + 3)^2 - (4n - 1)^2 &= [(4n + 3) + (4n - 1)][(4n + 3) - (4n - 1)] \\\\\n&= (8n + 2)(4) = 8(4n + 1),\n\\end{align*}so we can write\n\\begin{align*}\n\\frac{4n + 1}{(4n - 1)^2 (4n + 3)^2} &= \\frac{1}{8} \\left[ \\frac{(4n + 3)^2 - (4n - 1)^2}{(4n - 1)^2 (4n + 3)^2} \\right] \\\\\n&= \\frac{1}{8} \\left( \\frac{1}{(4n - 1)^2} - \\frac{1}{(4n + 3)^2} \\right).\n\\end{align*}Thus,\n\\begin{align*}\n\\frac{5}{3^2 \\cdot 7^2} + \\frac{9}{7^2 \\cdot 11^2} + \\frac{13}{11^2 \\cdot 15^2} + \\dotsb &= \\frac{1}{8} \\left( \\frac{1}{3^2} - \\frac{1}{7^2} \\right) + \\frac{1}{8} \\left( \\frac{1}{7^2} - \\frac{1}{11^2} \\right) + \\frac{1}{8} \\left( \\frac{1}{11^2} - \\frac{1}{15^2} \\right) + \\dotsb \\\\\n&= \\frac{1}{8} \\cdot \\frac{1}{3^2} = \\boxed{\\frac{1}{72}}.\n\\end{align*}"
+}

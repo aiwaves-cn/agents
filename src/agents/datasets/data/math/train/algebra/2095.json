@@ -1,0 +1,6 @@
+{
+    "problem": "The numbers 1, 3, 6, 10, $\\ldots$, are called triangular numbers, as shown geometrically here.  What is the $20^{\\text{th}}$ triangular number?\n\n[asy]\n\ndot((0,0));\nlabel(\"1\",(0,-1.5));\n\ndot((3,0));\ndot((4,0));\ndot((3,1));\nlabel(\"3\",(3.5,-1.5));\n\ndot((7,0));\ndot((8,0));\ndot((9,0));\ndot((7,1));\ndot((7,2));\ndot((8,1));\nlabel(\"6\",(8,-1.5));\n\ndot((12,0));\ndot((13,0));\ndot((14,0));\ndot((15,0));\ndot((12,1));\ndot((13,1));\ndot((14,1));\ndot((12,2));\ndot((13,2));\ndot((12,3));\nlabel(\"10\",(13.5,-1.5));\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The 20th triangular number is $1 + 2 + 3 + \\cdots + 20 = \\frac{(20)(21)}{2} = \\boxed{210}$."
+}

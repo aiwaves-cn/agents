@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[\\left| \\frac{3(x + 1)}{x^2 + 2x + 3} \\right| \\ge 1.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "From the given inequality, either $\\frac{3(x + 1)}{x^2 + 2x + 3} \\ge 1$ or $\\frac{3(x + 1)}{x^2 + 2x + 3} \\le -1.$\n\nWe start with the inequality $\\frac{3(x + 1)}{x^2 + 2x + 3} \\ge 1.$  Since $x^2 + 2x + 3 = (x + 1)^2 + 2$ is always positive, we can safely multiply both sides by $x^2 + 2x + 3,$ to get\n\\[3x + 3 \\ge x^2 + 2x + 3.\\]Then $x^2 - x \\le 0,$ or $x(x - 1) \\le 0.$  This is satisfied for $0 \\le x \\le 1.$\n\nNext, we look at the inequality $\\frac{3(x + 1)}{x^2 + 2x + 3} \\le -1.$  Again, we can safely multiply both sides by $x^2 + 2x + 3,$ to get\n\\[3x + 3 \\le -x^2 - 2x - 3.\\]Then $x^2 + 5x + 6 \\le 0,$ or $(x + 2)(x + 3) \\le 0.$  This is satisfied for $-3 \\le x \\le -2.$\n\nThus, the solution is $x \\in \\boxed{[-3,-2] \\cup [0,1]}.$"
+}

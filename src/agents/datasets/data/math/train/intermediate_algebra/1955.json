@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the solutions to\n\\[\\sqrt[3]{2 - x} + \\sqrt{x - 1} = 1.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = \\sqrt[3]{2 - x}.$  Then $y^3 = 2 - x,$ so $x = 2 - y^3.$  Then\n\\[\\sqrt{x - 1} = \\sqrt{1 - y^3},\\]so we can write the given equation as $y + \\sqrt{1 - y^3} = 1.$  Then\n\\[\\sqrt{1 - y^3} = 1 - y.\\]Squaring both sides, we get $1 - y^3 = 1 - 2y + y^2,$ so $y^3 + y^2 - 2y = 0.$  This factors as $y(y - 1)(y + 2) = 0,$ so $y$ can be 0, 1, or $-2.$\nThese lead to $x = \\boxed{1,2,10}.$  We check that these solutions work."
+}

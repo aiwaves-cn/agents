@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers such that $3x + 2y \\le 7$ and $2x + 4y \\le 8.$  Find the largest possible value of $x + y.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Dividing the second inequality by 2, we get $x + 2y \\le 4.$  Adding the first inequality $3x + 2y \\le 7,$ we get\n\\[4x + 4y \\le 11,\\]so $x + y \\le \\frac{11}{4}.$\n\nEquality occurs when $x = \\frac{3}{2}$ and $y = \\frac{5}{4},$ so the largest possible value of $x + y$ is $\\boxed{\\frac{11}{4}}.$"
+}

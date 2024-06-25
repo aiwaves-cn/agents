@@ -1,0 +1,6 @@
+{
+    "problem": "Auston is 60 inches tall. Using the conversion 1 inch = 2.54 cm, how tall is Auston in centimeters? Express your answer as a decimal to the nearest tenth.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "When working with unit conversion, it's easiest to think of the units as variables themselves.\n\nIn this problem, the unit we begin with is inches, and we want to end up with centimeters. Nonetheless, we don't want to change the quantity, only the units -- we must look for a ratio of units which is equal to one.\n\nSince $1 \\mbox{ inch} = 2.54 \\mbox{ cm}$, we can divide by sides by 1 inch to find  $$\\frac{2.54\\mbox{ cm}}{1\\mbox{ in}} = 1.$$\n\nSo, Auston is $$60\\mbox{ in} \\cdot \\frac{2.54 \\mbox{ cm}}{1 \\mbox{ in}} = \\boxed{152.4}\\mbox{ cm}$$ tall."
+}

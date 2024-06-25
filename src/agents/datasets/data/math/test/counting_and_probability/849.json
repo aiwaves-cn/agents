@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to arrange $6$ beads of distinct colors in a $2 \\times 3$ grid if reflections and rotations are considered the same? (In other words, two arrangements are considered the same if I can rotate and/or reflect one arrangement to get the other.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $6! = 720$ ways to put the beads on the grid ignoring distinguishability. On the other hand, there are $4$ possible transformations of the board using rotations and reflections (including the identity):\n\\begin{tabular}{ccccccc}\nA & B & C & & C & B & A\\\\\nD & E & F & & F & E & D\n\\end{tabular}\\begin{tabular}{ccccccc}\nF & E & D & & D & E & F\\\\\nC & B & A & & A & B & C\n\\end{tabular}None of these transformations besides the identity fixes an arrangement, so each arrangement is equivalent to three others. As a result, there are $\\tfrac{720}{4} = \\boxed{180}$ different arrangements."
+}

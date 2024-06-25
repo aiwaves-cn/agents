@@ -1,0 +1,6 @@
+{
+    "problem": "A particular right square-based pyramid has a volume of 63,960 cubic meters and a height of 30 meters. What is the number of meters in the length of the lateral height ($\\overline{AB}$) of the pyramid? Express your answer to the nearest whole number.\n\n[asy]\ndraw((-8,0)--(0,20)--(8,0)--cycle);\ndraw((8,0)--(11,4.5)--(0,20));\ndraw((9.5,2.3)--(0,20));\n//draw((9,3.3)--(9.7,4.3)--(10.6,3.1));\ndot((9.5,2.3));\nlabel(\"$B$\",(9.5,2.3),SE);\nlabel(\"$A$\",(0,20),N);\ndraw(rightanglemark((0,20),(9.5,2.3),(11,4.5),25));\ndot((0,20));\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The volume is the pyramid is $\\frac{1}{3}s^2h$, where $s$ is the side length of the base and $h$ is the height of the pyramid.  Therefore, the area of the base is $s^2=(63,\\!960\\text{ m}^3)/\\left(\\frac{1}{3}\\cdot 30\\text{ m}\\right)=6396$ square meters.  Calling the center of the base $D$, we apply the Pythagorean theorem to triangle $ABD$ to get \\[AB=\\sqrt{h^2+(s/2)^2}=\\sqrt{h^2+s^2/4}=\\sqrt{30^2+6396/4}=\\sqrt{2499},\\] which is closer to $\\sqrt{2500}=\\boxed{50}$ meters than to $\\sqrt{2401}=49$ meters, since $49.5^2=2450.25$."
+}

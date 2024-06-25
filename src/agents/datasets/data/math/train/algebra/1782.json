@@ -1,0 +1,6 @@
+{
+    "problem": "For some constants $a$ and $b,$ let \\[f(x) = \\left\\{\n\\begin{array}{cl}\nax + b & \\text{if } x < 2, \\\\\n8 - 3x & \\text{if } x \\ge 2.\n\\end{array}\n\\right.\\]The function $f$ has the property that $f(f(x)) = x$ for all $x.$ What is $a + b?$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Setting $x = 3,$ we get $f(3) = -1.$ Since $-1 < 2,$ $f(-1) = -a + b.$ Hence, $f(f(3)) = f(-1) = -a + b.$ But $f(f(x)) = x$ for all $x,$ so $-a + b = 3.$\n\nSetting $x = 4,$ we get $f(4) = -4.$ Since $-4 < 2,$ $f(-4) = -4a + b.$ Hence, $f(f(4)) = f(-4) = -4a + b.$ But $f(f(x)) = x$ for all $x,$ so $-4a + b = 4.$\n\nSubtracting the equations $-a + b = 3$ and $-4a + b = 4,$ we get $3a = -1,$ so $a = -1/3.$ From $-a + b = 3,$ we get $b = a + 3 = 8/3.$ Hence, $$a + b = (-1/3) + 8/3 = \\boxed{\\frac{7}{3}}.$$"
+}

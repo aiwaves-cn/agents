@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways can we put 3 math books and 5 English books on a shelf if all the math books must stay together and all the English books must also stay together?  (The math books are all different and so are the English books.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "First we arrange the 2 groups of books; there are $2!$ ways in which we can do this.  Then we can arrange the 3 math books in $3!$ ways and the 5 English books in $5!$ ways.  Therefore, there are $2! \\times 3! \\times 5!=\\boxed{1440}$ ways to arrange the books."
+}

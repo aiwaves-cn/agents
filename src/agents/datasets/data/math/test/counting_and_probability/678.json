@@ -1,0 +1,6 @@
+{
+    "problem": "A bag contains 4 balls. Each ball is a single color, and 3 distinct colors are represented in the bag. What is the probability that the first 2 balls selected without replacement are the same color? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are exactly ${4 \\choose 2} = 6$ pairs of balls that we can choose. Since there are only 4 balls, and 3 different colors, there is exactly one pair of same-colored balls. So, the probability of drawing this exact pair is $\\boxed{\\frac{1}{6}}$."
+}

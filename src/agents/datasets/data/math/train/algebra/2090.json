@@ -1,0 +1,6 @@
+{
+    "problem": "If $(w+13)^2=(3w+7)(2w+4)$, find $w^2$. Express your answer as a decimal.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We expand both sides to find\n\n\\begin{align*}\n(w+13)(w+13)&=(3w+7)(2w+4)\\\\\nw^2+26w+169&=3w(2w+4)+7(2w+4)\\\\\nw^2+26w+169&=6w^2+12w+14w+28\\\\\nw^2+26w+169&=6w^2+26w+28\\\\\nw^2+169&=6w^2+28\\\\\n141&=5w^2\\\\\n\\frac{141}{5}&=w^2.\\\\\n\\end{align*}\n\nSo, expressed as a decimal, our answer is $\\frac{141}{5}=\\boxed{28.2}$."
+}

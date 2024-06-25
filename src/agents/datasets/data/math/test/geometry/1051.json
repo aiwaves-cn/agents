@@ -1,0 +1,6 @@
+{
+    "problem": "Segment $AB$ measures 4 cm and is a diameter of circle $P$. In triangle $ABC$, point $C$ is on circle $P$ and $BC = 2$ cm. What is the area of the shaded region?\n\n[asy]\nimport graph;\nfill(Circle((0,0),20),gray(0.7));\ndraw(Circle((0,0),20));\ndraw((-16,12)--(16,-12)--(0,-20)--cycle);\nfill((-16,12)--(16,-12)--(0,-20)--cycle,white);\nlabel(\"$A$\",(-16,12),NW);\nlabel(\"$B$\",(16,-12),SE);\nlabel(\"$C$\",(0,-20),S);\nlabel(\"$P$\",(0,0),N);\ndot((-16,12));\ndot((16,-12));\ndot((0,0));\ndot((0,-20));\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The area of the shaded region equals the area of the circle minus the area of the triangle.  The area of the circle is $2^2\\pi=4\\pi$.  To find the area of the triangle, we look for information about the triangle.  Because angle $ACB$ intersects $180^\\circ$ of the circle, we know $m\\angle ACB=\\frac{180^\\circ}2=90^\\circ$, so triangle $ACB$ is a right triangle.  What's more, since $AB=4$ and $BC=2$, it follows that $AC=2\\sqrt{3}$ and the area of right triangle $ACB$ equals $\\frac{2\\cdot2\\sqrt{3}}2=2\\sqrt{3}$.  So, the area of the shaded region is $\\boxed{4\\pi - 2\\sqrt{3}}$."
+}

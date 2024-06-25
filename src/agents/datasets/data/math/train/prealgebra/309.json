@@ -1,0 +1,6 @@
+{
+    "problem": "In a history class, the probability of earning an A is .7 times the probability of earning a B, and the probability of earning a C is 1.4 times the probability of earning a B. Assuming that all grades are A, B, or C, how many B's will there be in a history class of 31 students?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let $x$ be the number of students who earn a B. Then we know that the number of students who get an A is $.7x$ and the number of students who earn a C is $1.4x$. Since every student in the class gets an A, B, or C and there are 31 students, this gives us the equation $.7x + x + 1.4x = 31 \\Rightarrow 3.1x = 31 \\Rightarrow x =\\boxed{10}$."
+}

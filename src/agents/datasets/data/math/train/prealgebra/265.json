@@ -1,0 +1,6 @@
+{
+    "problem": "A boy has the following seven coins in his pocket: $2$ pennies, $2$ nickels, $2$ dimes, and $1$ quarter. He takes out two coins, records the sum of their values, and then puts them back with the other coins. He continues to take out two coins, record the sum of their values, and put them back. How many different sums can he record at most?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The following pairs of numbers represent the values of the two coins the boy could take from his pocket: $$\n\\begin{array}{cccc}\n(1,1) & (1,5) & (1,10) & (1,25) \\\\\n(5,5) & (5,10) & (5,25) & \\\\\n(10,10) & (10,25) & & \\\\\n\\end{array}\n$$Each of the above pairs has a sum that is different from the sum of each of the other pairs. Therefore there are $\\boxed{9}$ different sums."
+}

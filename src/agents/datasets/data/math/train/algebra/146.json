@@ -1,0 +1,6 @@
+{
+    "problem": "There are two values of $a$  for which the equation $4x^2+ax+8x+9=0$ has only one solution for $x$. What is the sum of those values of $a$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The quadratic formula yields \\[x=\\frac{-(a+8)\\pm \\sqrt{(a+8)^2-4\\cdot 4\\cdot 9}}{2\\cdot 4}. \\]The equation has only one solution precisely when the value of the discriminant, $(a+8)^2-144$, is 0. This implies that $a=-20$ or $a=4$, and the sum is $\\boxed{-16}$."
+}

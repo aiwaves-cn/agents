@@ -1,0 +1,6 @@
+{
+    "problem": "Three congruent isosceles triangles $DAO,$ $AOB,$ and $OBC$ have $AD=AO=OB=BC=10$ and $AB=DO=OC=12.$ These triangles are arranged to form trapezoid $ABCD,$ as shown. Point $P$ is on side $AB$ so that $OP$ is perpendicular to $AB.$ [asy]\npair A, B, C, D, O, P;\nA= (6, 8);\nB=(18, 8);\nC=(24, 0);\nD=(0,0);\nO=(12,0);\nP=(12,8);\ndraw(A--B--C--D--A);\ndraw(A--O--B);\ndraw(O--P, dashed);\nlabel(\"A\", A, NW);\nlabel(\"B\", B, NE);\nlabel(\"C\", C, SE);\nlabel(\"D\", D, SW);\nlabel(\"O\", O, S);\nlabel(\"P\", P, N);\nlabel(\"12\", (D+O)/2, S);\nlabel(\"12\", (O+C)/2, S);\nlabel(\"10\", (A+D)/2, NW);\nlabel(\"10\", (B+C)/2, NE);\n[/asy] What is the length of $OP?$",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $\\triangle AOB$ is isosceles with $AO=OB$ and $OP$ is perpendicular to $AB,$ then $P$ is the midpoint of $AB,$ so $$AP=PB=\\frac{1}{2}AB=\\frac{1}{2}(12)=6.$$ By the Pythagorean Theorem, $OP = \\sqrt{AO^2 - AP^2},$ so we have $$OP = \\sqrt{10^2-6^2}=\\sqrt{64}=\\boxed{8}.$$"
+}

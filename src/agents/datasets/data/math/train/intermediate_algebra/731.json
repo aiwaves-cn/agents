@@ -1,0 +1,6 @@
+{
+    "problem": "Find the solutions to\n\\[\\frac{13x - x^2}{x + 1} \\left( x + \\frac{13 - x}{x + 1} \\right) = 42.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying both sides by $(x + 1)^2,$ we get\n\\[(13x - x^2)(x(x + 1) + (13 - x)) = 42(x + 1)^2.\\]This expands to $x^4 - 13x^3 + 55x^2 - 85x + 42 = 0,$ which factors as $(x - 1)(x - 6)(x^2 - 6x + 7) = 0.$  By the quadratic formula, the roots of $x^2 - 6x + 7 = 0$ are $3 \\pm \\sqrt{2}.$  Therefore, the solutions are $\\boxed{1, 6, 3 + \\sqrt{2}, 3 - \\sqrt{2}}.$"
+}

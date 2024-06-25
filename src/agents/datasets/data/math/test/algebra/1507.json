@@ -1,0 +1,6 @@
+{
+    "problem": "Given that\n\n\\begin{align*}\n\\frac{1}{x}+\\frac{1}{y}&=5,\\\\\n3xy+x+y&=4,\n\\end{align*}\n\ncompute $x^2y+xy^2$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The first equation becomes\n\n$$\\frac{x+y}{xy}=5\\Rightarrow x+y=5xy.$$\n\nSubstituting into the second equation,\n\n$$8xy=4\\Rightarrow xy=\\frac{1}{2}.$$\n\nThus $x+y=\\frac{5}{2}$.\n\nThe quantity we desire factors as $xy(x+y)$, so it is equal to $\\frac{1}{2}\\left(\\frac{5}{2}\\right)=\\boxed{\\frac{5}{4}}$."
+}

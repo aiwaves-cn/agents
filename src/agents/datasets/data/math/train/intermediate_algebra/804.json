@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the complex number $z$ satisfying the equation $2z-3\\bar{z}=-2-30i$.  Note that $\\bar{z}$ denotes the conjugate of $z$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z=a+bi$, where $a$ and $b$ are real numbers representing the real and imaginary parts of $z$, respectively.  Then $\\bar{z}=a-bi$, so that $-3\\bar{z}=-3a+3ib$.  We now find that \\[2z-3\\bar{z} = (2a-3a) + (2b +3b)i. \\]So if $2z-3\\bar{z}=-2-30i$ then we must have $2a-3a=-2$ and $2b+3b=-30$.  This immediately gives us $a=2$ and $b=-6$.  Therefore the complex number we are seeking is $z=\\boxed{2-6i}$."
+}

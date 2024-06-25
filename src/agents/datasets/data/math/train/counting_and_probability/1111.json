@@ -1,0 +1,6 @@
+{
+    "problem": "How many license plates consist of 2 letters followed by 2 digits, if one of the digits must be odd and the other must be even?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are 26 choices of letters for each of the first two spots and 10 choices of digits for the next spot. Once the first digit has been chosen, we know whether the second digit must be even or odd. Either way, there are 5 choices for the second digit. There are a total of $26^2 \\times 10 \\times 5 = \\boxed{33,\\!800}$ different plates."
+}

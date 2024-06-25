@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of positive real numbers.  Let $f : S \\to \\mathbb{R}$ be a function such that\n\\[f(x) f(y) = f(xy) + 2005 \\left( \\frac{1}{x} + \\frac{1}{y} + 2004 \\right)\\]for all $x,$ $y > 0.$\n\nLet $n$ be the number of possible values of $f(2),$ and let $s$ be the sum of all possible values of $f(2).$  Find $n \\times s.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $y = 1,$ we get\n\\[f(x) f(1) = f(x) + \\frac{2005}{x} + 2005^2.\\]The value $f(1)$ cannot be 1, and so we can solve for $f(x)$ to get\n\\[f(x) = \\frac{2005/x + 2005^2}{f(1) - 1}.\\]In particular,\n\\[f(1) = \\frac{2005 + 2005^2}{f(1) - 1}.\\]Then $f(1)^2 - f(1) - 2005^2 - 2005 = 0,$ which factors as $(f(1) - 2006)(f(1) + 2005) = 0.$  Hence, $f(1) = 2006$ or $f(1) = -2005.$\n\nIf $f(1) = 2006,$ then\n\\[f(x) = \\frac{2005/x + 2005^2}{2005} = \\frac{1}{x} + 2005.\\]We can check that this function works.\n\nIf $f(1) = -2005,$ then\n\\[f(x) = \\frac{2005/x + 2005^2}{-2006}.\\]We can check that this function does not work.\n\nTherefore,\n\\[f(x) = \\frac{1}{x} + 2005,\\]so $n = 1$ and $s = \\frac{1}{2} + 2005 = \\frac{4011}{2},$ so $n \\times s = \\boxed{\\frac{4011}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The region between the graph of $y = f (x)$ and the $x$-axis, shaded in this figure, has an area of 10 square units. What will be the area between the graph of $y = 3f (x -2)$ and the $x$-axis?\n\n[asy]\ndefaultpen(linewidth(0.75));\nfill((10,0)..(30,20)..(40,15)--(50,40)..(58,39)--(70,0)--cycle,gray(.7));\ndraw((10,0)..(30,20)..(40,15)--(50,40)..(58,39)--(70,0)--cycle);\ndraw((-15,0)--(80,0),Arrow);\ndraw((0,-10)--(0,50),Arrow);\ndraw((10,0)--(8.5,-7),Arrow);\ndraw((70,0)--(72,-7),Arrow);\nlabel(\"$y = f(x)$\",(5,65),S);\nlabel(\"$x$\",(80,-8));\n[/asy]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The graph of $y=f(x-2)$ is just the graph of $y=f(x)$ shifted two units to the right. To see this, note that if $(a,b)$ is a point on the graph of $y=f(x)$, then $(a+2,b)$ is on the graph of $y=f(x-2)$. Then the graph of $y=3f(x-2)$ is the graph of $y=f(x-2)$ scaled by a factor of 3 in the vertical direction. To see this, note that if $(a,b)$ is on the graph of $y=f(x-2)$, then $(a,3b)$ is on the graph of $y=3f(x-2)$. Stretching a region in the plane by a factor of 3 in one dimension increases its area by a factor of 3, so the area between the graph of $y=3f(x-2)$ and the $x$-axis is $\\boxed{30}$."
+}

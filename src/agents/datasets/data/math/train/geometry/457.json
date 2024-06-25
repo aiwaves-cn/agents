@@ -1,0 +1,6 @@
+{
+    "problem": "The same amount of steel used to create eight solid steel balls, each with a radius of 1 inch, is used to create one larger steel ball. What is the radius of the larger ball?\n\n[asy]\nsize(150);\nfilldraw(circle((0,0),1),gray);\nfilldraw(circle((.9,-.8),1),gray);\nfilldraw(circle((1.8,.9),1),gray);\nfilldraw(circle((2,0),1),gray);\nfilldraw(circle((2,-.4),1),gray);\nfilldraw(circle((3,-.4),1),gray);\nfilldraw(circle((4.8,-.4),1),gray);\nfilldraw(circle((3.2,.5),1),gray);\n\ndraw((6,.7)--(8,.7),Arrow);\n\nfilldraw(circle((11,.2),2),gray);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The amount of steel used to create one ball with radius 1 is $\\frac{4}{3}\\pi(1^3)=\\frac{4}{3}\\pi$; the amount of steel used to create eight of these balls is $8\\cdot \\frac{4}{3}\\pi = \\frac{32}{3}\\pi$.\n\nLet the radius of the large steel be $r$.  We have $\\frac{4}{3}\\pi r^3 = \\frac{32}{3}\\pi$; solving for $r$ yields $r^3 = 8 \\Rightarrow r = 2$.  Thus the radius of the large ball is $\\boxed{2}$ inches."
+}

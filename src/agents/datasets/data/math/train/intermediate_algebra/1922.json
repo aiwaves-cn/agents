@@ -1,0 +1,6 @@
+{
+    "problem": "The three roots of the equation \\[ax^3+bx^2+cx+d=0\\]are $1,$ $2,$ and $3.$ Compute $\\frac{c}{d}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, \\[\\begin{aligned} 1 \\cdot 2 +2 \\cdot 3 + 3 \\cdot 1=11 &= \\frac ca \\\\1 \\cdot 2 \\cdot 3 = 6 &= - \\frac da. \\end{aligned}\\]Dividing these two equations, we get $\\frac{11}{6} = -\\frac{c}{d},$ so $\\frac{c}{d} = \\boxed{-\\frac{11}{6}}.$"
+}

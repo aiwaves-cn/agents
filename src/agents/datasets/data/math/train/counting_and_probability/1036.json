@@ -1,0 +1,6 @@
+{
+    "problem": "The first $20$ numbers of an arrangement are shown below. What would be the value of the $40^{\\mathrm{th}}$ number if the arrangement were continued?\n\n$\\bullet$ Row 1: $2,$ $2$\n\n$\\bullet$ Row 2: $4,$ $4,$ $4,$ $4$\n\n$\\bullet$ Row 3: $6,$ $6,$ $6,$ $6,$ $6,$ $6$\n\n$\\bullet$ Row 4: $8,$ $8,$ $8,$ $8,$ $8,$ $8,$ $8,$ $8$",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Since we are told there are $20$ numbers in the first $4$ Rows, we want to find the $20^{\\mathrm{th}}$ number starting in Row 5. Since there are $10$ numbers in Row 5, and there are $12$ numbers in Row 6, the $20^{\\mathrm{th}}$ number if we start counting in Row 5 is located at the $10^{\\mathrm{th}}$ spot of Row 6, which is of course a $\\boxed{12}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The areas of three of the faces of a right, rectangular prism are $24 \\hspace{.6mm} \\mathrm{cm}^2$, $32 \\hspace{.6mm} \\mathrm{cm}^2$, and $48 \\hspace{.6mm} \\mathrm{cm}^2$. What is the volume of the prism, in cubic centimeters?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Let the three dimensions of the prism (length, width, and height, although not necessarily in that order) be $x,y,z$ such that $xy = 24$, $xz = 32$, and $yz = 48$.  Then the volume of the prism is $xyz$.  Multiplying our three equations together and taking the square root of both sides, we find that $xyz = \\sqrt{24\\cdot 32\\cdot 48} = \\boxed{192}$ cubic centimeters."
+}

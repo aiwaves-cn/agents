@@ -1,0 +1,6 @@
+{
+    "problem": "The roots of the equation\n\\[x^5 - 40x^4 + Px^3 + Qx^2 + Rx + S = 0\\]are in geometric progression.  The sum of their reciprocals is 10.  Compute $|S|.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let the roots of the degree 5 polynomial be $\\frac{a}{r^2},$ $\\frac{a}{r},$ $a,$ $ar,$ and $ar^2.$  Then by Vieta's formulas,\n\\[\\frac{a}{r^2} + \\frac{a}{r} + a + ar + ar^2 = 40,\\]so\n\\[a \\left( \\frac{1}{r^2} + \\frac{1}{r} + 1 + r + r^2 \\right) = 40. \\quad (*)\\]Also,\n\\[\\frac{r^2}{a} + \\frac{r}{a} + \\frac{1}{a} + \\frac{1}{ar} + \\frac{1}{ar^2} = 10,\\]so\n\\[\\frac{1}{a} \\left( r^2 + r + 1 + \\frac{1}{r} + \\frac{1}{r^2} \\right) = 10. \\quad (**)\\]Dividing equations $(*)$ and $(**),$ we get $a^2 = 4,$ so $a = \\pm 2.$\n\nAgain by Vieta's formulas,\n\\[S = -\\frac{a}{r^2} \\cdot \\frac{a}{r} \\cdot a \\cdot ar \\cdot ar^2 = -a^5\\]so $|S| = |a^5| = |a|^5 = \\boxed{32}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the range of the function $$G(x) = |x+1|-|x-1|~?$$Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We have $$G(x) = \\begin{cases}\n-(x+1)+(x-1) &\\text{if }x<-1 \\\\\n(x+1)+(x-1) &\\text{if }-1\\le x<1 \\\\\n(x+1)-(x-1) &\\text{if }x\\ge 1\n\\end{cases}.$$Simplifying, we have $$G(x) = \\begin{cases}\n-2 &\\text{if }x<-1 \\\\\n2x &\\text{if }-1\\le x<1 \\\\\n2 &\\text{if }x\\ge 1\n\\end{cases}.$$Therefore, the range of $G(x)$ is $\\boxed{[-2,2]}.$"
+}

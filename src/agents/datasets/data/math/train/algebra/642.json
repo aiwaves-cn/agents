@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\sqrt{2+\\sqrt x}=3$, what is $x?$",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Squaring both sides of the given equation, we get \\[2 + \\sqrt{x} = 9.\\]Then, $\\sqrt{x} = 9-2 = 7.$ Squaring again gives $x = 49.$\n\nWe check our answer by substituting $x = 49$ into the given equation: \\[\\sqrt{2+\\sqrt{x}} = \\sqrt{2 + \\sqrt{49}} = \\sqrt{2 + 7} = \\sqrt{9} = 3.\\]Therefore, $x = \\boxed{49}$ is the correct solution. (The step of checking the answer is necessary because squaring both sides of an equation sometimes introduces extraneous roots -- solutions which do not actually satisfy the original equation.)"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "3 cards are chosen at random from a standard 52-card deck.  What is the probability that they form a pair?  (A 3-card hand is a 'pair' if two of the cards match in rank but the third card is different.  For example, 668 is a pair, but 999 is not.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{52}{3} = 22,\\!100$ ways to choose 3 cards out of 52, without regard to order.  To choose two cards of matching rank, there are 13 different ranks and $\\binom{4}{2} = 6$ combinations of suits to choose from, for a total of $13 \\times 6 = 78$ different possibilities.  There are 48 remaining cards not in the same rank as the first two.  This means there are $78 \\times 48 = 3,\\!744$ ways to choose a hand that is a pair.  So the probability that a randomly drawn hand is a pair is $\\dfrac{3744}{22100} = \\boxed{\\dfrac{72}{425}}$."
+}

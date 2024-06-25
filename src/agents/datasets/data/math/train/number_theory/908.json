@@ -1,0 +1,6 @@
+{
+    "problem": "Find all 6-digit multiples of 22 of the form $5d5,\\!22e$ where $d$ and $e$ are digits. What is the maximum value of $d$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First, since $(2,11)=1$, a number is divisible by $22=2\\cdot11$ if and only if it is divisible by both 2 and 11. $5d5,22e$ is divisible by 2 if and only if $e$ is even ($e$=0, 2, 4, 6, or 8). Also, $5d5,\\!22e$ is divisible by 11 if and only if $(5+5+2)-(d+2+e)=10-(d+e)$ is divisible by 11. Thus, $d+e=10$. We are looking to maximize $d$, so we need to minimize $e$. $e\\ne0$ (otherwise $d=10$, which is not a digit). Thus we take $e=2$, so the maximum value of $d$ is $d=10-2=\\boxed{8}$."
+}

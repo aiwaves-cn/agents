@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than or equal to 10,000 are divisible by 2, 5 or 10?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Under 10,000, there are 5,000 numbers divisible by 2, 2,000 numbers divisible by 5, and 1,000 numbers divisible by 10. (Every other number is divisible by 2, so $\\frac{10,\\!000}{2}$ is the number of multiples of 2 less than or equal to 10,000, every fifth number is divisible by 5, so $\\frac{10,\\!000}{5}$ is the number of multiples of 5 less than or equal to 10,000, and so on.)  If something is divisible by 10, then it is divisible by both 2 and 5, we need only count the number of distinct multiples of 2 and 5.  There are 5,000 multiples of 2, and 2,000 multiples of 5, so adding them up, we get 7,000, and then we must subtract those of which we overcounted, which happen to be the multiples of 10, so subtracting 1,000, we get $\\boxed{6,\\!000}$."
+}

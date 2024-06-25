@@ -1,0 +1,6 @@
+{
+    "problem": "Find the length of the parametric curve described by\n\\[(x,y) = (2 \\sin t, 2 \\cos t)\\]from $t = 0$ to $t = \\pi.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The curve describes a semicircle with radius 2.  Therefore, the length of the curve is\n\\[\\frac{1}{2} \\cdot 2 \\pi \\cdot 2 = \\boxed{2 \\pi}.\\][asy]\nunitsize(1 cm);\n\npair moo (real t) {\n  return (2*sin(t),2*cos(t));\n}\n\nreal t;\npath foo = moo(0);\n\nfor (t = 0; t <= pi; t = t + 0.01) {\n  foo = foo--moo(t);\n}\n\ndraw((-2.5,0)--(2.5,0));\ndraw((0,-2.5)--(0,2.5));\ndraw(foo,red);\n\nlabel(\"$2$\", (1,0), S);\n\ndot(\"$t = 0$\", moo(0), W);\ndot(\"$t = \\pi$\", moo(pi), W);\n[/asy]"
+}

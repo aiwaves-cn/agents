@@ -1,0 +1,6 @@
+{
+    "problem": "Sequence $A$ is a geometric sequence. Sequence $B$ is an arithmetic sequence. Each sequence stops as soon as one of its terms is greater than $300.$ What is the least positive difference between a number selected from sequence $A$ and a number selected from sequence $B?$\n\n$\\bullet$ Sequence $A:$ $2,$ $4,$ $8,$ $16,$ $32,$ $\\ldots$\n\n$\\bullet$ Sequence $B:$ $20,$ $40,$ $60,$ $80,$ $100,$ $\\ldots$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The terms of sequence $A$ are $2,$ $4,$ $8,$ $16,$ $32,$ $64,$ $128,$ $256,$ $512.$ The terms of sequence $B$ start from $20$ and go up by $20$ each time, so sequence $B$ is precisely all multiples of $20$ from $20$ to $320.$ We thus need to see which term in sequence $A$ is closest to a multiple of $20.$ $16,$ $64,$ and $256$ are the closest, each being $4$ away from a multiple of $20.$ So the least positive difference between a term in sequence $A$ and one in sequence $B$ is $\\boxed{4}.$"
+}

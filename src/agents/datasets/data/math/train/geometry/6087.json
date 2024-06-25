@@ -1,0 +1,6 @@
+{
+    "problem": "A right circular cone has a base with radius $600$ and height $200\\sqrt{7}.$ A fly starts at a point on the surface of the cone whose distance from the vertex of the cone is $125$, and crawls along the surface of the cone to a point on the exact opposite side of the cone whose distance from the vertex is $375\\sqrt{2}.$ Find the least distance that the fly could have crawled.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The easiest way is to unwrap the cone into a circular sector. Center the sector at the origin with one radius on the positive $x$-axis and the angle $\\theta$ going counterclockwise. The circumference of the base is $C=1200\\pi$. The sector's radius (cone's sweep) is $R=\\sqrt{r^2+h^2}=\\sqrt{600^2+(200\\sqrt{7})^2}=\\sqrt{360000+280000}=\\sqrt{640000}=800$. Setting $\\theta R=C\\implies 800\\theta=1200\\pi\\implies\\theta=\\frac{3\\pi}{2}$.\nIf the starting point $A$ is on the positive $x$-axis at $(125,0)$ then we can take the end point $B$ on $\\theta$'s bisector at $\\frac{3\\pi}{4}$ radians along the $y=-x$ line in the second quadrant. Using the distance from the vertex puts $B$ at $(-375,375)$. Thus the shortest distance for the fly to travel is along segment $AB$ in the sector, which gives a distance $\\sqrt{(-375-125)^2+(375-0)^2}=125\\sqrt{4^2+3^2}=\\boxed{625}$."
+}

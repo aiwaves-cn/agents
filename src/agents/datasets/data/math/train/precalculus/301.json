@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{M}$ be a matrix, and let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors, such that\n\\[\\mathbf{M} \\mathbf{v} = \\begin{pmatrix} 1 \\\\ -5 \\end{pmatrix} \\quad \\text{and} \\quad \\mathbf{M} \\mathbf{w} = \\begin{pmatrix} 7 \\\\ 2 \\end{pmatrix}.\\]Compute $\\mathbf{M} (-2 \\mathbf{v} + \\mathbf{w}).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "We can distribute, to get\n\\begin{align*}\n\\mathbf{M} (-2 \\mathbf{v} + \\mathbf{w}) &= \\mathbf{M} (-2 \\mathbf{v}) + \\mathbf{M} \\mathbf{w} \\\\\n&= -2 \\mathbf{M} \\mathbf{v} + \\mathbf{M} \\mathbf{w} \\\\\n&= -2 \\begin{pmatrix} 1 \\\\ -5 \\end{pmatrix} + \\begin{pmatrix} 7 \\\\ 2 \\end{pmatrix} \\\\\n&= \\boxed{\\begin{pmatrix} 5 \\\\ 12 \\end{pmatrix}}.\n\\end{align*}"
+}

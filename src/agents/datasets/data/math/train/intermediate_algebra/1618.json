@@ -1,0 +1,6 @@
+{
+    "problem": "The quadratic polynomial $P(x),$ with real coefficients, satisfies\n\\[P(x^3 + x) \\ge P(x^2 + 1)\\]for all real numbers $x.$  Find the sum of the roots of $P(x).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $P(x) = ax^2 + bx + c.$  Then\n\\[a(x^3 + x)^2 + b(x^3 + x) + c \\ge a(x^2 + 1)^2 + b(x^2 + 1) + c\\]for all real numbers $x.$  This simplifies to\n\\[ax^6 + ax^4 + bx^3 - (a + b)x^2 + bx - a - b \\ge 0.\\]This factors as\n\\[(x - 1)(x^2 + 1)(ax^3 + ax^2 + ax + a + b) \\ge 0.\\]For this inequality to hold for all real numbers $x,$ $ax^3 + ax^2 + ax + a + b$ must have a factor of $x - 1.$  (Otherwise, as $x$ increases from just below 1 to just above 1, $x - 1$ changes sign, but $(x^2 + 1)(ax^3 + ax^2 + ax + a + b)$ does not, meaning that it cannot be nonnegative for all real numbers $x.$)  Hence, setting $x = 1,$ we get $a + a + a + a + b = 0,$ so $4a + b = 0.$\n\nThen by Vieta's formulas, the sum of the roots of $ax^2 + bx + c = 0$ is $-\\frac{b}{a} = \\boxed{4}.$"
+}

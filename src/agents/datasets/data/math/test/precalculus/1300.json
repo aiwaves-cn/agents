@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$ then find the vector $\\mathbf{v}$ such that $\\mathbf{a} \\cdot \\mathbf{v} = 2$ and $\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}.$  Then from the equation $\\mathbf{a} \\cdot \\mathbf{v} = 2,$ $x + y + z = 2.$\n\nAlso,\n\\[\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix} \\times \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} -y + z \\\\ x - z \\\\ -x + y \\end{pmatrix}.\\]Hence,\n\\begin{align*}\n-y + z &= 1, \\\\\nx - z &= -2, \\\\\n-x + y &= 1.\n\\end{align*}Solving this system, along with the equation $x + y + z = 2,$ we find $x = -\\frac{1}{3},$ $y = \\frac{2}{3},$ and $z = \\frac{5}{3}.$  Thus, $\\mathbf{v} = \\boxed{\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}}.$"
+}

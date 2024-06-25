@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We begin by listing the smallest positive perfect cubes with two digits or fewer:\n\n1, 8, 27, 64.\n\nAnd now we sum them.  $1+1+1$ is too small; $1+1+8=10$ which is not prime; but $1+8+8=17$, which is indeed a prime.  Hence the answer is $\\boxed{17}$."
+}

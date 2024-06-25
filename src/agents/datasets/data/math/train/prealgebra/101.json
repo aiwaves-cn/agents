@@ -1,0 +1,6 @@
+{
+    "problem": "The diagram shows the miles traveled by bikers Alberto and Bjorn. After four hours about how many more miles has Alberto biked than Bjorn? [asy]\n/* AMC8 1999 #4 Problem */\ndraw((0,0)--(5,0)--(5,3.75)--(0,3.75)--cycle);\nfor(int x=0; x <= 5; ++x) {\n\nfor(real y=0; y <=3.75; y+=0.75)\n\n{\n\ndot((x, y));\n\n}\n}\ndraw((0,0)--(4,3));\ndraw((0,0)--(4,2.25));\nlabel(rotate(30)*\"Bjorn\", (2.6,1));\nlabel(rotate(37.5)*\"Alberto\", (2.5,2.2));\nlabel(scale(0.75)*rotate(90)*\"MILES\", (-1, 2));\nlabel(scale(0.75)*\"HOURS\", (2.5, -1));\n\nlabel(scale(0.85)*\"75\", (0, 3.75), W);\nlabel(scale(0.85)*\"60\", (0, 3), W);\nlabel(scale(0.85)*\"45\", (0, 2.25), W);\nlabel(scale(0.85)*\"30\", (0, 1.5), W);\nlabel(scale(0.85)*\"15\", (0, 0.75), W);\nlabel(scale(0.86)*\"1\", (1, 0), S);\nlabel(scale(0.86)*\"2\", (2, 0), S);\nlabel(scale(0.86)*\"3\", (3, 0), S);\nlabel(scale(0.86)*\"4\", (4, 0), S);\nlabel(scale(0.86)*\"5\", (5, 0), S);\n[/asy]",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Four hours after starting, Alberto has gone about 60 miles and Bjorn has gone about 45 miles. Therefore, Alberto has biked about $\\boxed{15}$ more miles."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $e(x)$ be an even function and let $o(x)$ be an odd function, such that\n\\[e(x) + x^2 = o(x)\\]for all $x.$  Let $f(x) = e(x) + o(x).$  Find $f(2).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = -2,$ we get\n\\[e(-2) + 4 = o(-2).\\]Since $e(x)$ is even and $o(x)$ is odd, $e(-2) = e(2)$ and $o(-2) = -o(2),$ so\n\\[e(2) + 4 = -o(2).\\]Then $f(2)  = e(2) + o(2) = \\boxed{-4}.$"
+}

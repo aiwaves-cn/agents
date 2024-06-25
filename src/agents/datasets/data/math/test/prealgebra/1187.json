@@ -1,0 +1,6 @@
+{
+    "problem": "What is the number of square centimeters in the area of this trapezoid?\n\n[asy]\ndefaultpen(linewidth(0.7));\ndraw((0,0)--(27,0)--(15,9)--(0,9)--cycle);\nlabel(\"5 cm\",(21,4.5),NE);\nlabel(\"5 cm\",(7.5,9),N);\nlabel(\"3 cm\",(0,4.5),W);\nlabel(\"9 cm\",(13.5,0),S);\ndraw(rightanglemark((0,9),(0,0),(27,0),35));\ndraw(rightanglemark((0,0),(0,9),(15,9),35));\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Draw the dashed line segment in the figure below to divide the trapezoid into a rectangle and a right triangle.  The area of the rectangle is $(5\\text{ cm})(3\\text{ cm})=15\\text{ cm}^2$, and the area of the triangle is $\\frac{1}{2}(3\\text{ cm})(9\\text{ cm}-5\\text{ cm})=6\\text{ cm}^2$.  Adding the area of the rectangle and the area of the triangle, we find that the area of the trapezoid is $\\boxed{21}$ square centimeters. [asy]\ndefaultpen(linewidth(0.7));\ndraw((0,0)--(27,0)--(15,9)--(0,9)--cycle);\nlabel(\"5 cm\",(21,4.5),NE);\nlabel(\"5 cm\",(7.5,9),N);\nlabel(\"3 cm\",(0,4.5),W);\nlabel(\"9 cm\",(13.5,0),S);\ndraw(rightanglemark((0,9),(0,0),(27,0),35));\ndraw(rightanglemark((0,0),(0,9),(15,9),35));\ndraw(rightanglemark((15,9),(15,0),(27,0),35));\ndraw((15,0)--(15,9),linetype(\"2 4\"));\n[/asy]"
+}

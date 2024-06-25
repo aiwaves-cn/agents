@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the inequality\n\\[\\sqrt{x^2 - x - 6} < 2x - 3.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x^2 - x - 6 = (x + 2)(x - 3),$ $x$ must satisfy $x \\le -2$ or $x \\ge 3.$  And since a square root is always nonnegative, $x$ must satisfy $2x - 3 \\ge 0.$  Then $x \\ge \\frac{3}{2},$ so $x$ must satisfy $x \\ge 3.$\n\nNote that for $x \\ge 3,$ both sides are nonnegative (and defined), so we can square both sides, to obtain the equivalent inequality\n\\[x^2 - x - 6 < 4x^2 - 12x + 9.\\]This simplifies to $3x^2 - 11x + 15 > 0.$  This inequality is satisfies for all real numbers, so the solution is $x \\in \\boxed{[3,\\infty)}.$"
+}

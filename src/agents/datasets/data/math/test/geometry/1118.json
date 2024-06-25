@@ -1,0 +1,6 @@
+{
+    "problem": "A rectangle with perimeter 176 is divided into five congruent rectangles as shown in the diagram.  What is the perimeter of one of the five congruent rectangles?\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Let $x$ and $y$ be the width and length of one of the five rectangles, respectively.\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n\nlabel(\"$x$\", (1,5), N);\nlabel(\"$x$\", (3,5), N);\nlabel(\"$x$\", (5,5), N);\nlabel(\"$y$\", (6,7/2), E);\nlabel(\"$x$\", (6,1), E);\nlabel(\"$y$\", (0,7/2), W);\nlabel(\"$x$\", (0,1), W);\nlabel(\"$y$\", (3/2,0), S);\nlabel(\"$y$\", (9/2,0), S);\n[/asy]\n\nThen $3x = 2y$ and $5x + 4y = 176$.  Solving for $x$ and $y$, we find $x = 16$ and $y = 24$.  Hence, the perimeter of one of the five congruent rectangles is $2x + 2y = \\boxed{80}$."
+}

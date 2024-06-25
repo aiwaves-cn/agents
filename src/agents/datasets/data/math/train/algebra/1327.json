@@ -1,0 +1,6 @@
+{
+    "problem": "What is the maximum value of the expression $-5r^2 + 40r - 12$ for real $r$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We complete the square: \\begin{align*}\n-5r^2 + 40r - 12 & = (-5r^2 + 40r) - 12\\\\\n&= -5(r^2 - 8r + 16) -12 + 5 \\cdot 16\\\\\n&= -5(r - 4)^2 + 68\n\\end{align*} The maximum value of $-5(r-4)^2$ is $0$, since the square of a real number is never negative. Thus, the maximum value of the expression is $\\boxed{68}$."
+}

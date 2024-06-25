@@ -1,0 +1,6 @@
+{
+    "problem": "Find the real root of the equation \\[\\sqrt{x} + \\sqrt{x+2} = 10.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Subtracting $\\sqrt{x}$ from both sides and then squaring, we get \\[x+2 = (10-\\sqrt x)^2 = x - 20\\sqrt x + 100.\\]Therefore, $20\\sqrt x = 98,$ so $\\sqrt x = \\frac{98}{20} = \\frac{49}{10}.$ Therefore, $x = \\left(\\frac{49}{10}\\right)^2 = \\boxed{\\frac{2401}{100}},$ or $x = 24.01.$"
+}

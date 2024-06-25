@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder of $2^8$ when it is divided by 5.",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "$2^4 = 16 \\equiv 1 \\pmod{5}$, so $2^8 = 2^{2 \\cdot 4} = (2^4)^2 = 16^2 \\equiv 1^2 \\equiv \\boxed{1} \\pmod{5}$."
+}

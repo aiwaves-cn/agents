@@ -1,0 +1,6 @@
+{
+    "problem": "What integer value of $n$ will satisfy $n + 10 > 11$ and $-4n > -12$?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "We treat these inequalities one-at-a-time first.  Subtracting 10 from both sides of the first inequality simplifies it to \\[n>1.\\] To deal with the second inequality, we divide both sides by $-4$, being sure to reverse the inequality sign: \\[n<3.\\]\n\nLuckily, there is only one integer that solves both of these inequalities, namely $\\boxed{2}$."
+}

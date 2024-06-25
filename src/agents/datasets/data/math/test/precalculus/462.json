@@ -1,0 +1,6 @@
+{
+    "problem": "A translation of the plane takes $5 + 5i$ to $6 + 8i.$  Find the complex number that the translation takes $-6$ to.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "This translation takes $z$ to $z + w,$ where $w$ is a fixed complex number.  Thus,\n\\[6 + 8i = (5 + 5i) + w.\\]Hence, $w = 1 + 3i.$  Then the translation takes $-6$ to $-6 + (1 + 3i) = \\boxed{-5 + 3i}.$"
+}

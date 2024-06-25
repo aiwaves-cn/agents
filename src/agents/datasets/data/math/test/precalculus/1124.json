@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $\\sec x+\\tan x=\\frac{22}7.$  Find $\\csc x+\\cot x.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can write the given equation as\n\\[\\frac{1}{\\cos x} + \\frac{\\sin x}{\\cos x} = \\frac{1 + \\sin x}{\\cos x} = \\frac{22}{7},\\]so $\\cos x = \\frac{7}{22} (1 + \\sin x).$  Substituting into $\\cos^2 x + \\sin^2 x = 1,$ we get\n\\[\\frac{49}{484} (1 + \\sin x)^2 + \\sin^2 x = 1.\\]This simplifies to $533 \\sin^2 x + 98 \\sin x - 435 = 0,$ which factors as $(\\sin x + 1)(533 \\sin x - 435) = 0,$ so $\\sin x = -1$ or $\\sin x = \\frac{435}{533}.$  If $\\sin x = -1,$ then $\\cos x = 0,$ which makes $\\sec x + \\tan x$ undefined.  Therefore, $\\sin x = \\frac{435}{533},$ and $\\cos x = \\frac{7}{22} (1 + \\sin x) = \\frac{308}{533}.$\n\nThen\n\\[\\csc x + \\cot x = \\frac{1}{\\sin x} + \\frac{\\cos x}{\\sin x}  = \\frac{1 + \\cos x}{\\sin x} = \\frac{1 + \\frac{308}{533}}{\\frac{435}{533}} = \\boxed{\\frac{29}{15}}.\\]"
+}

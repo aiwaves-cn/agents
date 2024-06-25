@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$\n\\[a^4 + b^4 + c^4 = 2c^2 (a^2 + b^2).\\]Enter the possible values of $\\angle C,$ in degrees, separated by commas.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "From the Law of Cosines,\n\\[a^2 + b^2 - c^2 = 2ab \\cos C.\\]Squaring this equation, we get\n\\[a^4 + b^4 + c^4 + 2a^2 b^2 - 2a^2 c^2 - 2b^2 c^2 = 4a^2 b^2 \\cos^2 C.\\]From the given equation, $a^4 + b^4 + c^4 = 2a^2 c^2 + 2b^2 c^2,$ so\n\\[2a^2 b^2 = 4a^2 b^2 \\cos^2 C.\\]Then\n\\[\\cos^2 C = \\frac{1}{2}.\\]Hence, $\\cos C = \\pm \\frac{1}{\\sqrt{2}}.$  Therefore, the possible values of $\\angle C$ are $\\boxed{45^\\circ, 135^\\circ}.$\n\nIf we take $a = \\sqrt{2}$ and $b = c = 1,$ then $\\angle C = 45^\\circ.$  If we take $a = \\sqrt{2},$ and $b = 1,$ and $c = \\sqrt{5},$ then $\\angle C = 135^\\circ.$  Thus, both angles are achievable."
+}

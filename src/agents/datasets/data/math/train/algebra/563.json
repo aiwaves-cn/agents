@@ -1,0 +1,6 @@
+{
+    "problem": "For the graph of a certain quadratic $y = ax^2 + bx + c$, the vertex of the parabola is $(3,7)$ and one of the $x$-intercepts is $(-2,0)$.  What is the $x$-coordinate of the other $x$-intercept?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the vertex of the parabola is $(3,7)$, the parabola is symmetric around the line $x = 3$.  Furthermore, the two $x$-intercepts of the parabola are also symmetric around this line.  One $x$-intercept is $(-2,0)$, whose distance from the line $x = 3$ is $3 - (-2) = 5$, so the other $x$-intercept is at $(3 + 5,0) = (8,0)$.  The $x$-coordinate of this $x$-intercept is $\\boxed{8}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Given the system of equations \\begin{align*}\nxy &= 6 - 2x - 3y,\\\\\nyz &= 6 - 4y - 2z,\\\\\nxz &= 30 - 4x - 3z,\n\\end{align*}find the positive solution of $x$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We can apply Simon's Favorite Factoring Trick to each of the equations. Indeed, re-arranging,  \\begin{align*}\nxy + 2x + 3y &= 6,\\\\\nyz + 4y + 2z &= 6 ,\\\\\nxz + 4x + 3z &= 30 ,\n\\end{align*}Adding $6$, $8$, and $12$ to both sides of each equation, respectively, yields  \\begin{align*}\nxy + 2x + 3y + 6 = (x+3)(y+2) &= 12,\\\\\nyz + 4y + 2z + 8 = (y+2)(z+4) &= 14,\\\\\nxz + 4x + 3z + 12 = (x+3)(z+4) &= 42 ,\n\\end{align*}At this point, we can substitute and solve by elimination. Even simpler, notice that if we take the product of all three equations, we obtain $$[(x+3)(y+2)(z+4)]^2 = 12 \\cdot 14 \\cdot 42 = 2^4 \\cdot 3^2 \\cdot 7^2,$$so $$(x+3)(y+2)(z+4) = \\pm 2^2 \\cdot 3 \\cdot 7.$$We can now substitute that $(y+2)(z+4) = 14$ to find that $$(x+3)(y+2)(z+4) = 14(x+3) = \\pm 2^2 \\cdot 3 \\cdot 7.$$Hence, $x+3 = \\pm 6,$ so $x$ is $3$ or $-9.$ The positive root is thus $x = \\boxed{3}$."
+}

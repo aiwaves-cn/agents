@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[(12 - x)(10 - x)(12 + x)(10 + x).\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Expanding and completing the square, we get\n\\begin{align*}\n(12 - x)(10 - x)(12 + x)(10 + x) &= (10 + x)(10 - x)(12 + x)(12 - x) \\\\\n&= (100 - x^2)(144 - x^2) \\\\\n&= x^4 - 244x^2 + 14400 \\\\\n&= (x^2 - 122)^2 - 484.\n\\end{align*}The minimum value of $\\boxed{-484}$ occurs at $x = \\pm \\sqrt{122}.$"
+}

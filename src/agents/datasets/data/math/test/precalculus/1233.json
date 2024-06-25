@@ -1,0 +1,6 @@
+{
+    "problem": "Find the angles of the triangle whose sides are $3 + \\sqrt{3},$ $2 \\sqrt{3},$ and $\\sqrt{6}.$  Enter the angles of the triangle, measured in degrees, separated by commas.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By the Law of Cosines, the cosine of one angle is\n\\begin{align*}\n\\frac{(3 + \\sqrt{3})^2 + (2 \\sqrt{3})^2 - (\\sqrt{6})^2}{2 (3 + \\sqrt{3})(2 \\sqrt{3})} &= \\frac{9 + 6 \\sqrt{3} + 3 + 12 - 6}{4 \\sqrt{3} (3 + \\sqrt{3})} \\\\\n&= \\frac{18 + 6 \\sqrt{3}}{\\sqrt{3} (12 + 4 \\sqrt{3})} \\\\\n&= \\frac{3}{2 \\sqrt{3}} = \\frac{\\sqrt{3}}{2},\n\\end{align*}so this angle is $\\boxed{30^\\circ}.$\n\nThe cosine of another angle is\n\\begin{align*}\n\\frac{(3 + \\sqrt{3})^2 + (\\sqrt{6})^2 - (2 \\sqrt{3})^2}{2 (3 + \\sqrt{3})(\\sqrt{6})} &= \\frac{9 + 6 \\sqrt{3} + 3 + 6 - 12}{6 \\sqrt{2} + 6 \\sqrt{6}} \\\\\n&= \\frac{6 + 6 \\sqrt{3}}{6 \\sqrt{2} + 6 \\sqrt{6}} = \\frac{1}{\\sqrt{2}},\n\\end{align*}so this angle is $\\boxed{45^\\circ}.$\n\nThen the third angle is $180^\\circ - 30^\\circ - 45^\\circ = \\boxed{105^\\circ}.$"
+}

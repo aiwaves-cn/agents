@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest whole number that MUST be a factor of the sum of any four consecutive positive odd numbers?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Let $2n-3$, $2n-1$, $2n+1$, and $2n+3$ be four consecutive positive odd numbers. Their sum is $(2n-3)+(2n-1)+(2n+1)+(2n+3)=8n$. Clearly, for any value of $n$, $8$ must divide the sum. By choosing $n=3$ and $n=5$, we can see that $\\boxed{8}$ is the largest whole number that must be a factor."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "My clock chimes two times 15 minutes after the hour, four times 30 minutes after the hour and six times 45 minutes after the hour. The clock also chimes eight times on each hour in addition to chiming the number of times equal to the hour. (So at 2:00 p.m., the clock chimes $8 + 2 = 10$ times.) Starting at 12:05 a.m., how many times does the clock chime in a 24-hour period?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Twenty-four hours will pass, so, ignoring the chimes on the hour that are equal to the hour, there are $24 \\cdot (2 + 4 + 6 + 8) = 480$ chimes. Now, the chimes that are equal to the hour can be calculated by $2 \\cdot (12 + 1 + 2 + \\ldots + 9 + 10 + 11) = 2 \\cdot 78 = 156$. Thus, there are a total of $480 + 156 = \\boxed{636}$ chimes."
+}

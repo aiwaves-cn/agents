@@ -1,0 +1,6 @@
+{
+    "problem": "Find the cubic polynomial, in $x,$ with integer coefficients that has $\\cos 20^\\circ$ as a root.  The coefficient of $x^3$ should be positive, and the coefficients should have no common factor other than 1.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "By the triple angle formula,\n\\[\\cos 3x = 4 \\cos^3 x - 3 \\cos x.\\]Setting $x = 20^\\circ,$ we get\n\\[\\cos 60^\\circ = 4 \\cos^3 20^\\circ - 3 \\cos 20^\\circ,\\]so $4 \\cos^3 20^\\circ - 3 \\cos 20^\\circ = \\frac{1}{2},$ or $8 \\cos^3 20^\\circ - 6 \\cos 20^\\circ - 1 = 0.$  Thus, $x = \\cos 20^\\circ$ is a root of $\\boxed{8x^3 - 6x - 1}.$"
+}

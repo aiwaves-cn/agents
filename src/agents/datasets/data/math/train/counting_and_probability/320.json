@@ -1,0 +1,6 @@
+{
+    "problem": "In the row of Pascal's triangle that starts with 1 and then 12, what is the fourth number?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The row that starts 1, 12 is the row $\\binom{12}{0}, \\binom{12}{1}, \\binom{12}{2},\\binom{12}{3}$, so the fourth number in this row is $\\binom{12}{3} = \\frac{12\\cdot 11\\cdot 10}{3\\cdot 2 \\cdot 1} = \\boxed{220}$."
+}

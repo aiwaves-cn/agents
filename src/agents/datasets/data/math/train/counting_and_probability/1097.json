@@ -1,0 +1,6 @@
+{
+    "problem": "How many different positive integers can be represented as a difference of two distinct members of the set $\\{1, 2, 3, 4, 5, 6 \\}$?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "It is clear that the maximal positive difference is $6 - 1 = 5$. Moreover, we can use 6 to ensure that we can get all positive integer differences up to 5: $6 - 5 = 1$, $6 - 4 = 2$, $6 - 3 = 3$, $6 - 2 = 4$, $6 - 1 = 5$. So, there are $\\boxed{5}$ possible differences."
+}

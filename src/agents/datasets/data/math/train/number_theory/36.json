@@ -1,0 +1,6 @@
+{
+    "problem": "How many different prime factors does $20!$ have? (Reminder: If $n$ is a positive integer, then $n!$ stands for the product $1\\cdot 2\\cdot 3\\cdot \\cdots \\cdot (n-1)\\cdot n$.)",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "$20!=20\\cdot19\\cdot18\\cdot...\\cdot3\\cdot2\\cdot1$ is divisible by every prime less than 20. There are $\\boxed{8}$ such primes: 2, 3, 5, 7, 11, 13, 17, 19."
+}

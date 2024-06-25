@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify and rationalize the denominator: $$\\frac{8}{3\\sqrt{3}+ 7\\sqrt{27}}.$$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We begin by recognizing that since $27 = 3^3$, $7\\sqrt{27}$ simplifies to $7\\cdot3\\sqrt{3}=21\\sqrt{3}$. Our expression then becomes  \\begin{align*}\n\\frac{8}{3\\sqrt{3}+21\\sqrt{3}} & = \\frac{8}{24\\sqrt{3}} \\\\\n& = \\frac{1}{3\\sqrt{3}} \\\\\n& = \\boxed{\\frac{\\sqrt{3}}{9}}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "An acute isosceles triangle, $ABC$, is inscribed in a circle.  Through $B$ and $C$, tangents to the circle are drawn, meeting at point $D$.  If $\\angle ABC = \\angle ACB = 2 \\angle D$ and $\\angle BAC = k \\pi$ in radians, then find $k$.\n\n[asy]\nimport graph;\n\nunitsize(2 cm);\n\npair O, A, B, C, D;\n\nO = (0,0);\nA = dir(90);\nB = dir(-30);\nC = dir(210);\nD = extension(B, B + rotate(90)*(B), C, C + rotate(90)*(C));\n\ndraw(Circle(O,1));\ndraw(A--B--C--cycle);\ndraw(B--D--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SE);\nlabel(\"$C$\", C, SW);\nlabel(\"$D$\", D, S);\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $x = \\angle BAC$.  Angles $\\angle BAC$, $\\angle BCD$, and $\\angle CBD$ all intercept the same circular arc, minor arc $BC$ with measure $2 \\angle BAC = 2x$.  Then $\\angle BCD = \\angle CBD = x$, so $\\angle D = \\pi - 2x$.\n\nSince $\\angle ABC = \\angle ACB$, $\\angle ABC = (\\pi - x)/2$.  Then from the equation $\\angle ABC = 2 \\angle D$, \\[\\frac{\\pi - x}{2} = 2 (\\pi - 2x).\\]Solving for $x$, we find $x = 3 \\pi/7$, so $k = \\boxed{3/7}$."
+}

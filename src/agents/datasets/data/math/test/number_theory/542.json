@@ -1,0 +1,6 @@
+{
+    "problem": "Find the positive base $b$ in which the equation $4 \\cdot 12 = 103$ is valid.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "When we rewrite the base numbers as sums of digit bundles, we get the equation $$ 4 \\cdot (b + 2) = b^2 + 3 \\ \\ \\Rightarrow \\ \\ b^2 - 4b - 5 = 0. $$Solving this quadratic equation, we get $b = 5$ and $b = -1$.  But, since the base must be positive, $b = \\boxed{5}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the digit in the hundredths place of the decimal equivalent of $\\frac{9}{160}$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since the denominator of $\\dfrac{9}{160}$ is $2^5\\cdot5$, we multiply numerator and denominator by $5^4$ to obtain  \\[\n\\frac{9}{160} = \\frac{9\\cdot 5^4}{2^5\\cdot 5\\cdot 5^4} = \\frac{9\\cdot 625}{10^5} = \\frac{5625}{10^5} = 0.05625.\n\\]So, the digit in the hundredths place is $\\boxed{5}$."
+}

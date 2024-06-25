@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $i^{11} + i^{16} + i^{21} + i^{26} + i^{31}$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We know that by definition, $i^2=-1$, so $i^4=(-1)^2=1.$ More generally, for all integers k, $i^{4k}=(i^4)^k=1^k=1$. This means that $i^{11} + i^{16} + i^{21} + i^{26} + i^{31}= i^8(i^3)+i^{16}(1)+i^{20}(i)+i^{24}(i^2)+i^{28}(i^3)=i^3+1+i+i^2+i^3$. Since $i^3=-i$, we can simplify this to get our final result: $i^{11} + i^{16} + i^{21} + i^{26} + i^{31}=-i+1+i-1-i=\\boxed{-i}.$"
+}

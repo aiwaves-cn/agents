@@ -1,0 +1,6 @@
+{
+    "problem": "What is the 4037th digit following the decimal point in the expansion of $\\frac{1}{17}$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The decimal representation of $\\frac{1}{17}$ is $0.\\overline{0588235294117647}$, which repeats every 16 digits. Since 4037 divided by 16 has a remainder of 5, the 4037th digit is the same as the fifth digit following the decimal point, which is $\\boxed{2}$."
+}

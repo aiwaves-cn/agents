@@ -1,0 +1,6 @@
+{
+    "problem": "Bob is trying to decide between two cell phone plans. Plan A has no flat fee, but the user must pay $10$ cents per minute on the phone. Plan B requires a one-time fee of $\\$20$, but only requires a payment of $5$ cents per minute on the phone. What is the minimum whole number of minutes Bob has to use the phone for to make Plan B the cheaper plan?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let $x$ be the number of minutes that Bob anticipates using. Plan A costs $10x$ cents, while Plan B costs $2000 + 5x$ cents. We therefore have the inequality \\begin{align*}\n2000+5x &< 10x \\\\\n\\Rightarrow\\qquad 2000 &< 5x \\\\\n\\Rightarrow\\qquad 400 &< x.\n\\end{align*} The smallest integer $x$ such that $400 < x$ is $401$. Therefore, Bob must use at least $\\boxed{401}$ minutes to make Plan B cheaper."
+}

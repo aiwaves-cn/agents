@@ -1,0 +1,6 @@
+{
+    "problem": "Eight pounds of feathers and two ounces of gold together cost $\\$932$. Fourteen pounds of feathers and three ounces of gold together cost $\\$1402$. What is the cost of five pounds of feathers and five ounces of gold?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let $f$ be the cost of a pound of feathers and $g$ the cost of an ounce of gold.  We have \\begin{align*}\n8f+2g&=932 \\\\\n14f+3g&=1402\n\\end{align*}Solving the first equation for $g$ we get $g=466-4f$.  Substituting into the second equation, we solve \\[\n14f+3(466-4f)=1402\n\\]to find $f=2$.  Substituting into $g=466-4f$ we have $g=458$.  Thus five pounds of feathers and five ounces of gold costs $5(f+g)=\\boxed{2300}$ dollars."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose we flip four coins simultaneously: a penny, a nickel, a dime, and a quarter.  What is the probability that they all come up heads?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "There are $2^4=16$ possible outcomes, since each of the 4 coins can land 2 different ways (heads or tails). There is only 1 way that they can all come up heads, so the probability of this is $\\boxed{\\dfrac{1}{16}}$."
+}

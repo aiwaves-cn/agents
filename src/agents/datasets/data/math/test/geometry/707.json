@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A,$ $B,$ and $C$ are placed on a circle centered at $O$ as in the following diagram: [asy]\npair pA, pB, pC, pO;\npO = (0, 0);\npA = pO + dir(-40);\npB = pO + dir(32);\npC = pO + dir(176);\ndraw(pA--pO--pB--pC--pA);\nlabel(\"$O$\", pO, 2 * E);\nlabel(\"$A$\", pA, SE);\nlabel(\"$B$\", pB, NE);\nlabel(\"$C$\", pC, W);\ndraw(circle(pO, 1));\n[/asy] If $AC = BC$ and $\\angle OAC = 18^\\circ,$ then how many degrees are in $\\angle AOB$?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "First, let us draw $CO$: [asy]\npair pA, pB, pC, pO;\npO = (0, 0);\npA = pO + dir(-40);\npB = pO + dir(32);\npC = pO + dir(176);\ndraw(pA--pO--pB--pC--pA);\ndraw(pO--pC);\nlabel(\"$O$\", pO, 2 * E);\nlabel(\"$A$\", pA, SE);\nlabel(\"$B$\", pB, NE);\nlabel(\"$C$\", pC, W);\ndraw(circle(pO, 1));\n[/asy] Since $AO = CO,$ we have that $\\triangle AOC$ is isosceles, and so $\\angle CAO = \\angle ACO = 18^\\circ.$ We are given that $AC = BC,$ we can see that $\\triangle BOC \\cong \\triangle AOC,$  so $\\angle BCO = 18^\\circ.$ Now, $\\angle ACB = \\angle OAC + \\angle BCO = 36^\\circ,$ and as $\\angle ACB$ is an inscribed angle, we have $\\angle AOB = 2 \\cdot \\angle ACB = \\boxed{72^\\circ}.$"
+}

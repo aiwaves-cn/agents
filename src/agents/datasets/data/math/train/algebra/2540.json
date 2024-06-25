@@ -1,0 +1,6 @@
+{
+    "problem": "A farmer has a rectangular field with dimensions $2m+7$ and $m-2$. If the field has an area of 51 square units, what is the value of $m$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We use the given information to set up a quadratic that relates the area of the field to $m$: \\begin{align*}\n(2m+7)(m-2)&=51\\\\\n2m^2+3m-14 &= 51\\\\\n2m^2+3m-65 &= 0\\\\\n(2m+13)(m-5)&=0\n\\end{align*}The two possible solutions are $m=-\\frac{13}{2}$ and $m=5$. Of these, only $m = \\boxed{5}$ is valid."
+}

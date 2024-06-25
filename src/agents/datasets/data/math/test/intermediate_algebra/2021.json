@@ -1,0 +1,6 @@
+{
+    "problem": "The equation of a particular ellipse is $4x^2+16y^2-16x+96y+144=0$. Another way to give the equation for ellipses is in the form $$\\dfrac{\\left(x-h\\right)^2}{a^2}+\\dfrac{\\left(y-k\\right)^2}{b^2}=1$$ When $4x^2+16y^2-16x+96y+144=0$ is rewritten in this form, what is the value of $h + k + a + b$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "First, group the terms as follows: $$\\left(4x^2-16x\\right)+\\left(16y^2+96y\\right)=-144$$ Factoring out the coefficients of $x^2$ and $y^2$ gives $$4\\left(x^2-4x\\right)+16\\left(y^2+6y\\right)=-144$$ To complete the square, we need to add $\\left(\\dfrac{4}{2}\\right)^2$ after the $-4x$ and $\\left(\\dfrac{6}{2}\\right)^2$ after the $6y$. So we get $$4\\left(x^2-4x+4\\right)+16\\left(y^2+6y+9\\right)=-144+4\\cdot4+16\\cdot9=-144+16+144=16$$ Dividing both sides by $16$ gives $${\\dfrac{\\left(x-2\\right)^2}{2^2}+\\dfrac{\\left(y+3\\right)^2}{1^2}=1}$$  This gives us $h=2$, $k = -3$, $a=2$, and $b=1$, so $h+k+a+b = \\boxed{2}$"
+}

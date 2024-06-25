@@ -1,0 +1,6 @@
+{
+    "problem": "For what values of $x$ is $\\frac{\\log{(3-x)}}{\\sqrt{x-1}}$ defined?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The expression inside the square root must be greater than 0 because the denominator cannot be equal to 0. Therefore, $x-1>0$, so $x>1$. The expression inside the logarithm must be greater than 0, so $3-x>0$, which gives $x<3$. Therefore, the interval of $x$ for which the expression $\\frac{\\log{(3-x)}}{\\sqrt{x-1}}$ is defined is $1<x<3$, which is $\\boxed{(1,3)}$."
+}

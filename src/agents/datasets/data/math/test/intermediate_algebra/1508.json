@@ -1,0 +1,6 @@
+{
+    "problem": "A sequence $(a_n)$ is defined as follows:\n\\[a_{i + 1} = \\frac{1}{1 - a_i}\\]for $i \\ge 1.$  If $a_3 = a_1,$ compute $(a_9)^9.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "First, if $a_3 = a_1,$ then\n\\[a_1 = a_3 = a_5 = a_7 = a_9,\\]so $(a_9)^9 = (a_1)^9.$\n\nWe have that\n\\begin{align*}\na_2 &= \\frac{1}{1 - a_1}, \\\\\na_3 &= \\frac{1}{1 - a_2} = \\frac{1}{1 - \\frac{1}{1 - a_1}} = \\frac{1 - a_1}{1 - a_1 - 1} = \\frac{1 - a_1}{-a_1}.\n\\end{align*}Then\n\\[\\frac{1 - a_1}{-a_1} = a_1,\\]so $1 - a_1 = -a_1^2.$  Then $a_1^2 - a_1 + 1 = 0.$  Multiplying both sides by $a_1 + 1,$ we get\n\\[(a_1 + 1)(a_1 ^2 - a_1 + 1) = 0,\\]so $a_1^3 + 1 = 0.$  Then $a_1^3 = -1,$ so $a_1^9 = (-1)^3 = \\boxed{-1}.$"
+}

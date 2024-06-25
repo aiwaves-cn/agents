@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be the two real values of $x$ for which\\[\\sqrt[3]{x} + \\sqrt[3]{20 - x} = 2\\]The smaller of the two values can be expressed as $p - \\sqrt{q}$, where $p$ and $q$ are integers. Compute $p + q$.\n",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a=\\sqrt[3]{x}, b = \\sqrt[3]{20-x}$. Then $a+b = 2$ and $a^3 + b^3 = 20$. Factoring,\\[a^3 + b^3 = (a+b)((a+b)^2-3ab) = 2(4-3ab)= 8-6ab=20 \\Longrightarrow ab = -2\\]\nSolving $a+b=2, ab=-2$ gives us the quadratic $a^2 - 2a - 2 = 0$. The quadratic formula yields $a = \\frac{2 - \\sqrt{12}}{2} = 1 - \\sqrt{3}$, and $x = a^3 = (1-\\sqrt{3})^3 = 1 - 3\\sqrt{3} + 9 - 3\\sqrt{3} = 10 - \\sqrt{108}$. Therefore, $p+q=\\boxed{118}$."
+}

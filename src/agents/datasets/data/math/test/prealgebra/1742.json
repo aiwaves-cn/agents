@@ -1,0 +1,6 @@
+{
+    "problem": "A number is selected at random from 1 through 100, inclusive.  What is the probability that the number is a multiple of 3?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are 100 numbers possible between 1 and 100. There are 33 multiples of 3 between 1 and 100: $(3,6,9,\\ldots,99)=(1\\times 3,2\\times 3,3\\times 3,\\ldots,33\\times 3)$.  So the probability that a randomly selected number is a multiple of 3 is $\\boxed{\\dfrac{33}{100}}$."
+}

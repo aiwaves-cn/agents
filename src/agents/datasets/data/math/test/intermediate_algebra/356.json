@@ -1,0 +1,6 @@
+{
+    "problem": "The complex numbers $z$ and $w$ satisfy the system\n\\begin{align*}\nz + \\frac{20i}w &= 5+i, \\\\\nw+\\frac{12i}z &= -4+10i.\n\\end{align*}Find the smallest possible value of $\\vert zw\\vert^2$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying the two equations, we have \\[zw + 12i + 20i - \\frac{240}{zw} = (5+i) (-4+10i) = -30 + 46i.\\]Letting $t = zw,$ this simplifies to \\[t^2 + (30-14i)t - 240 = 0.\\]By the quadratic formula, \\[t = \\frac{-(30-14i) \\pm \\sqrt{(30-14i)^2 + 4\\cdot240}}{2} = -(15-7i) \\pm \\sqrt{416-210i}.\\]We hope that we can write $416 - 210i = (a+bi)^2,$ for some integers $a$ and $b.$ Upon expansion, we get the equations $416 = a^2-b^2$ and $-210=2ab$. The smallest perfect square greater than $416$ is $21^2 = 441$, so we try $a = 21$; then $416 = 441 - b^2$, so $b^2 = 25$ and $b = \\pm 5$. Indeed, we get the solution $(a, b) = (21, -5)$.\n\nTherefore, \\[t = -(15-7i) \\pm (21-5i) = 6+2i \\; \\text{or} \\; -36+12i.\\]The choice of $t=zw$ with smallest magnitude is $t = 6+2i,$ giving \\[|t|^2 = 6^2 + 2^2 = \\boxed{40}.\\]"
+}

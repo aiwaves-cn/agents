@@ -1,0 +1,6 @@
+{
+    "problem": "There is only one set of five prime numbers that form an arithmetic sequence with a common difference of 6.  What is the sum of those five prime numbers?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $6=2\\times3$, the members of the arithmetic sequences with a common difference of 6 that start with 2 or 3 are multiples of 2 or 3 and hence not prime. Therefore, let's start with the next prime, 5, and form an arithmetic sequence with a common difference of 6: 5, 11, 17, 23, 29. All five members of the sequence are prime, so we can now compute the sum. The sum of those five prime numbers is $5+11+17+23+29=\\boxed{85}$."
+}

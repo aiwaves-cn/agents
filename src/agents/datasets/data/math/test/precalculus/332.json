@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\tan 15^\\circ.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the angle subtraction formula,\n\\begin{align*}\n\\tan 15^\\circ &= \\tan (60^\\circ - 45^\\circ) \\\\\n&= \\frac{\\tan 60^\\circ - \\tan 45^\\circ}{1 + \\tan 60^\\circ \\tan 45^\\circ} \\\\\n&= \\frac{\\sqrt{3} - 1}{1 + \\sqrt{3}} \\\\\n&= \\frac{(\\sqrt{3} - 1)(\\sqrt{3} - 1)}{(\\sqrt{3} + 1)(\\sqrt{3} - 1)} \\\\\n&= \\frac{3 - 2 \\sqrt{3} + 1}{2} \\\\\n&= \\boxed{2 - \\sqrt{3}}.\n\\end{align*}"
+}

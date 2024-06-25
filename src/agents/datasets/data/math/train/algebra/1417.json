@@ -1,0 +1,6 @@
+{
+    "problem": "When Scott completes the square on the quadratic $x^2 + 8x - 1 = 0$, he obtains an equation of the form $(x + a)^2 = b$.  What is $b$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can square $x + 4$ to get $x^2 + 8x + 16$, so the given equation becomes $x^2 + 8x - 1 = (x^2 + 8x + 16) - 16 - 1 = (x + 4)^2 - 17 = 0$, which means $(x + 4)^2 = 17$.  We see that $b = \\boxed{17}$."
+}

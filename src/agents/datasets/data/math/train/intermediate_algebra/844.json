@@ -1,0 +1,6 @@
+{
+    "problem": "Two positive real numbers have geometric mean $\\sqrt{3}$ and harmonic mean $\\frac{3}{2}.$  Enter the two numbers, separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let the two numbers be $a$ and $b.$  Then $\\sqrt{ab} = \\sqrt{3},$ so $ab = 3.$  Also,\n\\[\\frac{2}{\\frac{1}{a} + \\frac{1}{b}} = \\frac{2ab}{a + b} = \\frac{3}{2},\\]so $a + b = \\frac{4}{3} ab = 4.$\n\nThen by Vieta's formulas, $a$ and $b$ are the roots of the quadratic\n\\[x^2 - 4x + 3 = (x - 1)(x - 3),\\]so the two numbers are $\\boxed{1,3}.$"
+}

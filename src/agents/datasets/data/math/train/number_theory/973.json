@@ -1,0 +1,6 @@
+{
+    "problem": "The time right now is 9 o'clock. On a 12-hour clock, what time will it be 2004 hours from now?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Note that 2004 is divisible by 4, since the last two digits, 04, form a multiple of 4.  Also, 2004 is divisible by 3 since the sum of the digits, $2+0+0+4=6$, is a multiple of 3.  Therefore, 2004 is a multiple of 12, and 2004 hours from now it will be $\\boxed{9}$ o'clock again."
+}

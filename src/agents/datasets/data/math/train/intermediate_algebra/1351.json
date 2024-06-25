@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real values of $x$ which satisfy\n\\[\\frac{1}{x + 1} + \\frac{6}{x + 5} \\ge 1.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Subtracting 1 from both sides and putting everything over a common denominator, we get\n\\[\\frac{-x^2 + x + 6}{(x + 1)(x + 5)} \\ge 0.\\]Equivalently,\n\\[\\frac{x^2 - x - 6}{(x + 1)(x + 5)} \\le 0.\\]We can factor the numerator, to get\n\\[\\frac{(x - 3)(x + 2)}{(x + 1)(x + 5)} \\le 0.\\]We build a sign chart, accordingly.\n\\begin{tabular}{c|cccc|c} &$x-3$ &$x+2$ &$x+1$ &$x+5$ &$f(x)$ \\\\ \\hline$x<-5$ &$-$&$-$&$-$&$-$&$+$\\\\ [.1cm]$-5<x<-2$ &$-$&$-$&$-$&$+$&$-$\\\\ [.1cm]$-2<x<-1$ &$-$&$+$&$-$&$+$&$+$\\\\ [.1cm]$-1<x<3$ &$-$&$+$&$+$&$+$&$-$\\\\ [.1cm]$x>3$ &$+$&$+$&$+$&$+$&$+$\\\\ [.1cm]\\end{tabular}Also, note that $\\frac{(x - 3)(x + 2)}{(x + 1)(x + 5)} = 0$ for $x = -2$ and $x = 3.$  Therefore, the solution is\n\\[x \\in \\boxed{(-5,-2] \\cup (-1,3]}.\\]"
+}

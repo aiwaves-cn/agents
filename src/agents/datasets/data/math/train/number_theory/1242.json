@@ -1,0 +1,6 @@
+{
+    "problem": "If $0.\\overline{42}$ is written as a fraction $\\frac{a}{b}$ where $a$ and $b$ are positive integers with a greatest common divisor of 1, what is $a+b$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Let $x = 0.\\overline{42}$. Multiplying both sides by 100, we get $100x = 42.\\overline{42}$. Subtracting these two equations gives $99x = 42$, so $x = \\frac{42}{99} = \\frac{14}{33}$. Thus $a+b = 14+33 = \\boxed{47}$."
+}

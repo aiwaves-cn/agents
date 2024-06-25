@@ -1,0 +1,6 @@
+{
+    "problem": "In right triangle $DEF$, we have $\\sin D = \\frac{5}{13}$ and $\\sin E = 1$.  Find $\\sin F$.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Since $\\sin E = 1$, we have $\\angle E = 90^\\circ$, so our triangle is as shown below:\n\n[asy]\npair D,EE,F;\n\nEE = (0,0);\nF = (5,0);\nD = (0,12);\ndraw(D--EE--F--D);\ndraw(rightanglemark(F,EE,D,18));\nlabel(\"$E$\",EE,SW);\nlabel(\"$F$\",F,SE);\nlabel(\"$D$\",D,N);\n[/asy]\n\nSince $\\sin D = \\frac{5}{13}$, we have $\\frac{EF}{DF} = \\frac{5}{13}$, so $\\cos F = \\frac{EF}{DF} = \\frac{5}{13}$.  Since $\\sin^2 F + \\cos^2 F = 1$, and $\\angle F$ is acute (so $\\sin F$ is positive), we have \\[\\sin F =\\sqrt{1 - \\cos^2 F} = \\sqrt{1 - \\frac{25}{169}} = \\sqrt{\\frac{144}{169}} = \\boxed{\\frac{12}{13}}.\\]We also could have noticed that since $\\frac{EF}{DF} = \\frac{5}{13}$, we have $EF = 5x$ and $DF = 13x$ for some value of $x$.  Then, from the $\\{5,12,13\\}$ Pythagorean triple, we see that $DE = 12x$, so $\\sin F = \\frac{DE}{DF} = \\frac{12}{13}$."
+}

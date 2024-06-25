@@ -1,0 +1,6 @@
+{
+    "problem": "The length of the shortest trip from $A$ to $B$ along the edges of the cube shown is the length of 3 edges. How many different 3-edge trips are there from $A$ to $B$?\n\n[asy]\n\nsize(4cm,4cm);\n\npair a1, b1, c1, d1;\n\na1=(1,1);\nb1=(0,1);\nc1=(1.6,1.4);\nd1=(1,0);\n\npair e1, f1, g1, h1;\n\ne1=(0,0);\nf1=c1-(a1-d1);\ng1=b1+(c1-a1);\nh1=e1+(g1-b1);\n\ndraw(a1--d1--e1--b1--a1);\ndraw(b1--g1--c1--a1);\ndraw(c1--f1--d1);\ndraw(g1--h1--e1,dotted+1pt);\ndraw(h1--f1,dotted+1pt);\n\nlabel(\"$A$\",e1,SW);\nlabel(\"$B$\",c1,NE);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are 3 choices for the first move starting from $A$. Having made the first move, then there are 2 choices for the second move. Then there is just 1 choice for the third move. Thus, there are $3\\times2\\times1$ or $\\boxed{6}$ paths from $A$ to $B$."
+}

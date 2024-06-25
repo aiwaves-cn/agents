@@ -1,0 +1,6 @@
+{
+    "problem": "Ioana has three ropes whose lengths are 39 inches, 52 inches and 65 inches. She wants to cut the ropes into equal length pieces for magic tricks. No rope is to be wasted. What is the greatest number of inches possible in the length of each piece?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "In order to cut all three ropes into equal length pieces, the length of the pieces must be a factor of each of the three rope lengths. The prime factors of 39 are $3\\cdot13$, those of 52 are $2^2\\cdot13$, and those of 65 are $5\\cdot13$. The only factor that all three rope lengths share is $\\boxed{13}$, so that must be the length of each piece."
+}

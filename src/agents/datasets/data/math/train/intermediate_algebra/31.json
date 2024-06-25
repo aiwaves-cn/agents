@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $6x^3-15x^2+21x-23$ is divided by $3x-6$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since $3x - 6 = 3(x - 2),$ by the Remainder Theorem, we can find the remainder by setting $x = 2.$  Thus, the remainder is\n\\[6 \\cdot 2^3 - 15 \\cdot 2^2 + 21 \\cdot 2 - 23 = \\boxed{7}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area, in square units, of a triangle that has sides of $4,3$ and $3$ units? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "We have an isosceles triangle with a base of 4 units and legs of 3 units each. We know that with an isosceles triangle, the altitude bisects the base. So drawing the altitude splits the isosceles triangle into two right triangles that share a side (the altitude) and have a leg of half the base. For each of the right triangles, the hypotenuse is 3 units, while one of the legs is 2 units, half of the isosceles triangle's base. We solve for the length of the other leg (the height of the isosceles triangle) with the Pythagorean Theorem: $a^2=c^2-b^2$, so $a^2=3^2-2^2$ and $a=\\sqrt{5}$. Now we know the base of the isosceles triangle is 4 units and the height is $\\sqrt{5}$ units, so the area of the triangle is $\\frac{1}{2}(4)(\\sqrt{5})=\\boxed{2\\sqrt{5}}$ square units."
+}

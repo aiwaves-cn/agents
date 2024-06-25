@@ -1,0 +1,6 @@
+{
+    "problem": "Convert the point $(\\rho,\\theta,\\phi) = \\left( 4, \\frac{5 \\pi}{3}, \\frac{\\pi}{2} \\right)$ in spherical coordinates to rectangular coordinates.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We have that $\\rho = 4,$ $\\theta = \\frac{5 \\pi}{3},$ and $\\phi = \\frac{\\pi}{2},$ so\n\\begin{align*}\nx &= \\rho \\sin \\phi \\cos \\theta = 4 \\sin \\frac{\\pi}{2} \\cos \\frac{5 \\pi}{3} = 2, \\\\\ny &= \\rho \\sin \\phi \\sin \\theta = 4 \\sin \\frac{\\pi}{2} \\sin \\frac{5 \\pi}{3} = -2 \\sqrt{3}, \\\\\nz &= \\rho \\cos \\phi = 4 \\cos \\frac{\\pi}{2} = 0.\n\\end{align*}Therefore, the rectangular coordinates are $\\boxed{(2, -2 \\sqrt{3}, 0)}.$"
+}

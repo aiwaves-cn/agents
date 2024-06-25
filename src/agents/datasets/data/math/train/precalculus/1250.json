@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{v}$ be a vector such that\n\\[\\left\\| \\mathbf{v} + \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix} \\right\\| = 8.\\]Find the smallest possible value of $\\|\\mathbf{v}\\|.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "For all vectors $\\mathbf{a}$ and $\\mathbf{b},$ by the Triangle Inequality,\n\\[\\|\\mathbf{a} + \\mathbf{b}\\| \\le \\|\\mathbf{a}\\| + \\|\\mathbf{b}\\|.\\]In particular,\n\\[\\left\\| \\mathbf{v} + \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix} \\right\\| \\le \\|\\mathbf{v}\\| + \\left\\| \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix} \\right\\|.\\]Therefore,\n\\[\\|\\mathbf{v}\\| \\ge \\left\\| \\mathbf{v} + \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix} \\right\\| - \\left\\| \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix} \\right\\| = 8 - \\sqrt{10}.\\]Equality occurs when we take\n\\[\\mathbf{v} = \\frac{8 - \\sqrt{10}}{\\sqrt{10}} \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix} = \\frac{8}{\\sqrt{10}} \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix} - \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix},\\]so the smallest possible value of $\\|\\mathbf{v}\\|$ is $\\boxed{8 - \\sqrt{10}}.$"
+}

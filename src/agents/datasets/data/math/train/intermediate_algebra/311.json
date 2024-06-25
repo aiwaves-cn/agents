@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $x^4 + 1$ is divided by $x^2 - 3x + 5.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The long division is shown below.\n\n\\[\n\\begin{array}{c|cc ccc}\n\\multicolumn{2}{r}{x^2} & +3x & +4 \\\\\n\\cline{2-6}\nx^2 - 3x + 5 & x^4 & & & & +1 \\\\\n\\multicolumn{2}{r}{x^4} & -3x^3 & +5x^2 \\\\\n\\cline{2-4}\n\\multicolumn{2}{r}{} & +3x^3 & -5x^2 & \\\\\n\\multicolumn{2}{r}{} & +3x^3 & -9x^2 & +15x \\\\\n\\cline{3-5}\n\\multicolumn{2}{r}{} & & +4x^2 & -15x & +1 \\\\\n\\multicolumn{2}{r}{} &  & +4x^2 & -12x & +20 \\\\\n\\cline{4-6}\n\\multicolumn{2}{r}{} &  &  & -3x & -19 \\\\\n\\end{array}\n\\]Thus, the remainder is $\\boxed{-3x - 19}.$"
+}

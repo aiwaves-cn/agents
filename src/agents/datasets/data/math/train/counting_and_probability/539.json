@@ -1,0 +1,6 @@
+{
+    "problem": "The four-member math team at Pecanridge Middle School is chosen from the math club, which has three girls and five boys. How many different teams made up of two girls and two boys could be chosen?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "To construct a team of 2 girls and 2 boys, we must consider how many ways to choose the 2 girls and then the 2 boys. Since there are 3 girls and 5 boys to choose from, the number of teams is ${5 \\choose 2} \\cdot {3 \\choose 2} = 10 \\cdot 3 = \\boxed{30}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area, in square units, of the square with the four vertices at $A\\ (0, 0)$, $B\\ (-5, -1)$, $C\\ (-4, -6)$ and $D\\ (1, -5)$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Plot the four points to find a pair of adjacent vertices.  Line segment $AB$ is one of the sides of the square, so the area of the square is $AB^2$.  By the Pythagorean theorem, $AB^2=(-5-0)^2+(-1-0)^2=\\boxed{26}$ square units.\n\n\n[asy]\nunitsize(2mm);\ndefaultpen(linewidth(.7pt)+fontsize(8pt));\ndotfactor=3;\n\npair A = (0,0), B = (-5,-1), C = (-4,-6), D = (1,-5);\n\npair[] dots = {A,B,C,D};\n\ndot(dots);\n\ndraw((-8,0)--(8,0),Arrows(4));\ndraw((0,-8)--(0,8),Arrows(4));\n\ndraw(A--B--C--D--cycle,linetype(\"4 4\"));\n\nlabel(\"$A$\",A,NE);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,SW);\nlabel(\"$D$\",D,SE);[/asy]"
+}

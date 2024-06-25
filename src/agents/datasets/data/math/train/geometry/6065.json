@@ -1,0 +1,6 @@
+{
+    "problem": "Let $R = (8,6)$. The lines whose equations are $8y = 15x$ and $10y = 3x$ contain points $P$ and $Q$, respectively, such that $R$ is the midpoint of $\\overline{PQ}$. The length of $PQ$ equals $\\frac {m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "[asy] pointpen = black; pathpen = black+linewidth(0.7); pair R = (8,6), P = (32,60)/7, Q= (80,24)/7; D((0,0)--MP(\"x\",(13,0),E),EndArrow(6)); D((0,0)--MP(\"y\",(0,10),N),EndArrow(6)); D((0,0)--(10/(15/8),10),EndArrow(6)); D((0,0)--(13,13 * 3/10),EndArrow(6)); D(D(MP(\"P\",P,NW))--D(MP(\"Q\",Q),SE),linetype(\"4 4\")); D(MP(\"R\",R,NE)); [/asy]\nThe coordinates of $P$ can be written as $\\left(a, \\frac{15a}8\\right)$ and the coordinates of point $Q$ can be written as $\\left(b,\\frac{3b}{10}\\right)$. By the midpoint formula, we have $\\frac{a+b}2=8$ and $\\frac{15a}{16}+\\frac{3b}{20}=6$. Solving for $b$ gives $b= \\frac{80}{7}$, so the point $Q$ is $\\left(\\frac{80}7, \\frac{24}7\\right)$. The answer is twice the distance from $Q$ to $(8,6)$, which by the distance formula is $\\frac{60}{7}$. Thus, the answer is $\\boxed{67}$."
+}

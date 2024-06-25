@@ -1,0 +1,6 @@
+{
+    "problem": "An isosceles trapezoid has sides of length 4 cm, 10 cm, 16 cm and 10 cm. What is the area of this trapezoid, in square centimeters?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "We drop an altitude from either vertex of the shorter base, forming a right triangle with hypotenuse of length 10 and one leg of length $(16 - 4)/2 = 6$. The remaining leg, which is the height of the trapezoid, is thus 8.\n\nTherefore, the area of the trapezoid is $\\frac{4 + 16}{2}\\cdot 8 = \\boxed{80}$ square centimeters."
+}

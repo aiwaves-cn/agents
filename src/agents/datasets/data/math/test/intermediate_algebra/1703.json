@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the number of ordered pairs $(a,b)$ of integers such that the polynomials $x^2 - ax + 24$ and $x^2 - bx + 36$ have one root in common.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r$ be the common root, so\n\\begin{align*}\nr^2 - ar + 24 &= 0, \\\\\nr^2 - br + 36 &= 0.\n\\end{align*}Subtracting these equations, we get $(a - b) r + 12 = 0,$ so $r = \\frac{12}{b - a}.$  Substituting into $x^2 - ax + 24 = 0,$ we get\n\\[\\frac{144}{(b - a)^2} - a \\cdot \\frac{12}{b - a} + 24 = 0.\\]Then\n\\[144 - 12a(b - a) + 24(b - a)^2 = 0,\\]so $12 - a(b - a) + 2(b - a)^2 = 0.$  Then\n\\[a(b - a) - 2(b - a)^2 = 12,\\]which factors as $(b - a)(3a - 2b) = 12.$\n\nLet $n = b - a,$ which must be a factor of 12.  Then $3a - 2b = \\frac{12}{n}.$  Solving for $a$ and $b,$ we find\n\\[a = 2n + \\frac{12}{n}, \\quad b = 3n + \\frac{12}{n}.\\]Since $n$ is a factor of 12, $\\frac{12}{n}$ is also an integer, which means $a$ and $b$ are integers.\n\nThus, we can take $n$ as any of the 12 divisors of 12 (including positive and negative divisors), leading to $\\boxed{12}$ pairs $(a,b).$"
+}

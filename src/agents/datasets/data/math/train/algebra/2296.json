@@ -1,0 +1,6 @@
+{
+    "problem": "Positive real numbers $r,s$ satisfy the equations $r^2 + s^2 = 1$ and $r^4 + s^4= \\frac{7}{8}$.  Find $rs$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have $2r^2s^2 = (r^4 + 2r^2s^2 + s^4) - (r^4 + s^4) = (r^2 + s^2)^2 - (r^4 + s^4) = (1)^2 - \\frac{7}{8} = \\frac{1}{8}$, so $r^2s^2 = \\frac{1}{16}$. This means that $rs = \\boxed{\\frac{1}{4}}$."
+}

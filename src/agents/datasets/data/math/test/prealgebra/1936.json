@@ -1,0 +1,6 @@
+{
+    "problem": "When a spaceship full of scientists landed on Planet Q, they found that $\\frac{3}{8}$ of the $160$ aliens had $3$ eyes.  The rest of the aliens had 5 eyes. How many eyes total do the 160 aliens have?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "First, we count how many aliens have 3 eyes.  Since $\\frac38$ of the 160 aliens have 3 eyes, there are \\[\\frac38\\cdot 160 = \\frac{3\\cdot 160}{8} = 3\\cdot \\frac{160}{8} = 3\\cdot 20 = 60\\]aliens with 3 eyes.  That leaves $160-60=100$ aliens with 5 eyes.  Therefore, the total number of eyes is $60\\cdot 3 + 100\\cdot 5 = 180 + 500 = \\boxed{680}$."
+}

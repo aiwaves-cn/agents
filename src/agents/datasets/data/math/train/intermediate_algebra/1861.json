@@ -1,0 +1,6 @@
+{
+    "problem": "Find $x^2+y^2$ if $x$ and $y$ are positive integers such that \\[\\begin{aligned} xy+x+y&=71 \\\\ x^2y+xy^2 &= 880.\\end{aligned}\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $s=x+y$ and $p=xy$. Then the first equation reads $s+p=71$, and the second equation reads \\[x^2y+xy^2=(x+y)xy = sp = 880.\\]Therefore $s$ and $p$ are the roots of \\[t^2 - 71t+ 880 = 0.\\]This factors as \\[(t-16)(t-55) = 0,\\]so $s$ and $p$ are the numbers $16$ and $55$ in some order. If $s = 16$ and $p = 55$, then \\[x^2+y^2 = (x+y)^2 - 2xy = s^2 - 2p = 16^2 -2 \\cdot 55 =146.\\]If $s = 55$ and $p = 16$, then from $x+y=55$, we see that $p = xy \\ge 1 \\cdot 54 = 54$, which is a contradiction. Therefore the answer is $\\boxed{146}$."
+}

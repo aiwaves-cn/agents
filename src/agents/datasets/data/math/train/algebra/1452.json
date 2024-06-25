@@ -1,0 +1,6 @@
+{
+    "problem": "If $y<0$, find the range of all possible values of $y$ such that $\\lceil{y}\\rceil\\cdot\\lfloor{y}\\rfloor=110$.  Express your answer using interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "As long as $y$ is not an integer, we can define $\\lceil{y}\\rceil$ as $x$ and $\\lfloor{y}\\rfloor$ as $x-1$. If we plug these expressions into the given equation, we get  \\begin{align*} x(x-1)&=110\n\\\\\\Rightarrow\\qquad x^2-x&=110\n\\\\\\Rightarrow\\qquad x^2-x-110&=0\n\\\\\\Rightarrow\\qquad (x-11)(x+10)&=0\n\\end{align*}This yields $x=11$ and $x=-10$ as two possible values of $x$. However since the problem states that $y<0$ and $x=\\lceil{y}\\rceil$, $x$ cannot be a positive integer. This allows us to eliminate $11$, leaving the $-10$ as the only possible value of $x$. Since $x=\\lceil{y}\\rceil=-10$, and $x-1=\\lfloor{y}\\rfloor=-11$, $y$ must be between the integers $-10$ and $-11$. Therefore, our final answer is $-11<y<-10,$ or $y \\in \\boxed{(-11, -10)}$ in interval notation."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The positive difference between two consecutive perfect squares is 35. What is the greater of the two squares?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Call the greater of the two squares $x^2$. Because the squares are consecutive, we can express the smaller square as $(x-1)^2$. We are given that $x^2 - (x-1)^2 = 35$. Expanding yields $x^2 - x^2 + 2x - 1 = 35$, or $2x = 36$. Therefore, $x = 18$, so the larger square is $18^2 = \\boxed{324}$."
+}

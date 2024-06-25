@@ -1,0 +1,6 @@
+{
+    "problem": "The solution to the inequality\n\\[\\frac{x + c}{x^2 + ax + b} \\le 0\\]is $x \\in (-\\infty,-1) \\cup [1,2).$  Find $a + b + c.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "If the quadratic $x^2 + ax + b$ has no real roots, then $x^2 + ax + b > 0$ for all $x,$ which means the given inequality is equivalent to $x + c \\le 0,$ and the solution is $(-\\infty,-c].$  The solution given in the problem is not of this form, so the quadratic $x^2 + ax + b$ must have real roots, say $r$ and $s,$ where $r < s.$\n\nThen $x^2 + ax + b = (x - r)(x - s),$ and the inequality becomes\n\\[\\frac{x + c}{(x - r)(x - s)} \\le 0.\\]This inequality is satisfied for sufficiently low values of $x,$ but is not satisfied for $x = -1,$ which tells us that $r = -1.$  The inequality is now\n\\[\\frac{x + c}{(x + 1)(x - s)} \\le 0.\\]The inequality is then satisfied for $x = 1,$ which tells us $c = -1.$  Then the inequality is not satisfied for $x = 2,$ which tells us $s = 2.$  Thus, the inequality is\n\\[\\frac{x - 1}{(x + 1)(x - 2)} = \\frac{x - 1}{x^2 - x - 2} \\le 0,\\]so $a + b + c = (-1) + (-2) + (-1) = \\boxed{-4}.$"
+}

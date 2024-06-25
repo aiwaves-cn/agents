@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the 10 smallest positive multiples of three?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "The first ten positive multiples of 3 are 3, $3 \\cdot 2$, $\\dots$, $3 \\cdot 10$, so we want to find the sum $3 + 3 \\cdot 2 + \\dots + 3 \\cdot 10 = 3 \\cdot (1 + 2 + \\dots + 10)$.\n\nFor all $n$, $1 + 2 + \\dots + n = n(n + 1)/2$, so $3 \\cdot (1 + 2 + \\dots + 10) = 3 \\cdot 10 \\cdot 11/2 = \\boxed{165}$."
+}

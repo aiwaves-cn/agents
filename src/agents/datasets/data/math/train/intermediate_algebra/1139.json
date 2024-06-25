@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x$: $\\sqrt[3]{20x + \\sqrt[3]{20x + 13}} = 13.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $f(x) = \\sqrt[3]{20x + \\sqrt[3]{20x + 13}}$ is an increasing function, so the solution to\n\\[\\sqrt[3]{20x + \\sqrt[3]{20x + 13}} = 13\\]is unique.  Furthermore, if $\\sqrt[3]{20x + 13} = 13,$ then $x$ satisfies the given equation.  Thus, $20x + 13 = 13^3 = 2197,$ so $x = \\boxed{\\frac{546}{5}}.$"
+}

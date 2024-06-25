@@ -1,0 +1,6 @@
+{
+    "problem": "There are 3 complex numbers $a+bi$, $c+di$, and $e+fi$. If $b=1$, $e=-a-c$, and the sum of the numbers is $-i$, find $d+f$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We know that $a+bi+c+di+e+fi=-i$. Thus, the real parts add up to 0 and the imaginary parts add up to -1. We then have  \\begin{align*}\na+c+e&=0\\\\\nb+d+f&=-1\\\\\n\\end{align*}We know that $b=1$, therefore $d+f=\\boxed{-2}$"
+}

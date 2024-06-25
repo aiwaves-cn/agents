@@ -1,0 +1,6 @@
+{
+    "problem": "Find the interval of all $x$ such that both $2x$ and $3x$ are in the interval $(1,2)$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "If $1<2x<2$, then, dividing all the expressions in these inequalities by $2$, we have $\\frac{1}{2}<x<1$.\n\nIf $1<3x<2$, then, dividing all the expressions by $3$, we have $\\frac{1}{3}<x<\\frac{2}{3}$.\n\nGiven that $x$ satisfies both inequalities, we must have $\\frac{1}{2}<x<\\frac{2}{3}$. In interval notation, the set of common solutions is $\\boxed{\\left(\\frac{1}{2},\\frac{2}{3}\\right)}$."
+}

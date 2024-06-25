@@ -1,0 +1,6 @@
+{
+    "problem": "A convex pentagon has three right angles. The other two angles are congruent to each other. What is the measure, in degrees, of one of these other angles?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The sum of the interior angles of an $n$-gon measures $180^\\circ(n-2)$.  The five angles of a pentagon sum to 540 degrees, so if a pentagon has three right angles and two other angles each of which measures $x$ degrees, then  \\[\n3\\cdot90+2x=540.\n\\] Solving, we find $x=\\boxed{135}$ degrees."
+}

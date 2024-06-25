@@ -1,0 +1,6 @@
+{
+    "problem": "In this problem, $m$ and $n$ are integers.\n\nIf $m\\equiv 4\\pmod{14}$ and $m-n\\equiv 10\\pmod{14}$, then what is the remainder when $m+n$ is divided by $14$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We have \\begin{align*}\nm+n &= 2m - (m-n) \\\\\n&\\equiv 8 - 10 \\\\\n&\\equiv -2 \\\\\n&\\equiv -2+14 \\\\\n&\\equiv{12} \\pmod{14},\n\\end{align*}so the remainder is $\\boxed{12}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "To promote her school's annual Kite Olympics, Genevieve makes a small kite and a large kite for a bulletin board display. For her small kite, Genevieve draws the kite on a grid with the points one inch apart, as shown below.\n\n[asy]\nfor ( int x = 0; x <= 6; ++x )\n{\n\nfor ( int y = 0; y <= 7; ++y )\n\n{\n\ndot((x,y));\n\n}\n}\ndraw((0,5)--(3,7)--(6,5)--(3,0)--cycle);\n[/asy]\n\nFor the large kite she triples both the height and width of the entire grid.\n\nWhat is the number of square inches in the area of the small kite?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The kite can be divided into two triangles, each with base 7 and altitude 3.  Each area is $(1/2)(7)(3) = 10.5$, so the total area is $2(10.5) = \\boxed{21}$ square inches."
+}

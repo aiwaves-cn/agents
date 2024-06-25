@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real values of $x$ that satisfy $\\frac{1}{x+1} + \\frac{3}{x+7} \\ge \\frac23.$ (Give your answer in interval notation.)",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Moving all the terms to the left-hand side, we have \\[\\frac{1}{x+1} + \\frac{3}{x+7} -\\frac23 \\ge 0.\\]To solve this inequality, we find a common denominator: \\[\\frac{3(x+7) + 3 \\cdot 3(x+1) - 2(x+1)(x+7)}{3(x+1)(x+7)} \\ge 0,\\]which simplifies to \\[-\\frac{2(x+4)(x-2)}{3(x+1)(x+7)} \\ge 0.\\]Therefore, we want the values of $x$ such that \\[f(x) = \\frac{(x+4)(x-2)}{(x+1)(x+7)} \\le 0.\\]To do this, we make the following sign table: \\begin{tabular}{c|cccc|c} &$x+4$ &$x-2$ &$x+1$ &$x+7$ &$f(x)$ \\\\ \\hline$x<-7$ &$-$&$-$&$-$&$-$&$+$\\\\ [.1cm]$-7<x<-4$ &$-$&$-$&$-$&$+$&$-$\\\\ [.1cm]$-4<x<-1$ &$+$&$-$&$-$&$+$&$+$\\\\ [.1cm]$-1<x<2$ &$+$&$-$&$+$&$+$&$-$\\\\ [.1cm]$x>2$ &$+$&$+$&$+$&$+$&$+$\\\\ [.1cm]\\end{tabular}Because the inequality $f(x) \\le 0$ is nonstrict, we must also include the values of $x$ such that $f(x) = 0,$ which are $x=-4$ and $x=2.$ Putting it all together, the solutions to the inequality are \\[x \\in \\boxed{(-7, -4] \\cup (-1, 2]}.\\]"
+}

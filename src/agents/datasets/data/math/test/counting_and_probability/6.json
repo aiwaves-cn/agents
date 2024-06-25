@@ -1,0 +1,6 @@
+{
+    "problem": "How many (non-congruent) isosceles triangles exist which have a perimeter of 10 and integer side lengths?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Let $x$ be the measure of the each of the equal sides.  Since the perimeter is 10 units, the side lengths measure $x$, $x$, and $10-2x$ units.  Since the third side length must be positive, we have $10-2x>0$ which implies $x<5$.  By the triangle inequality, the sum of the two equal sides must exceed the third side.  Solving  $x+x>10-2x$ gives $x>2.5$.  There are $\\boxed{2}$ integers strictly between 2.5 and 5."
+}

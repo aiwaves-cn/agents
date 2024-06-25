@@ -1,0 +1,6 @@
+{
+    "problem": "The students in Mrs. Reed's English class are reading the same $760$-page novel. Three friends, Alice, Bob and Chandra, are in the class. Alice reads a page in $20$ seconds, Bob reads a page in $45$ seconds and Chandra reads a page in $30$ seconds.   Chandra and Bob, who each have a copy of the book, decide that they can save time by `team reading' the novel. In this scheme, Chandra will read from page $1$ to a certain page and Bob will read from the next page through page $760,$ finishing the book. When they are through they will tell each other about the part they read. What is the last page that Chandra should read so that she and Bob spend the same amount of time reading the novel?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "The ratio of time it takes Bob to read a page to the time it takes Chandra to read a page is $45:30$ or $3:2,$ so Bob should read $\\frac{2}{3}$ of the number of pages that Chandra reads. Divide the book into $5$ parts, each with $\\frac{760}{5}=152$ pages. Chandra will read the first $3\\cdot152 =\\boxed{456}$ pages, while Bob reads the last $2\\cdot152=304$ pages."
+}

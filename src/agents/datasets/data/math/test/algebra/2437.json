@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest integer $x$ where the expression $\\frac{\\sqrt{x-2}}{x^2+x-6}$ is defined.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "For the numerator to be defined, the expression inside the square root must be non-negative. Therefore, we have  $$x-2\\ge0.$$ Therefore, $x\\ge2$. The expression is undefined when the denominator is equal to 0, so it is undefined when $$x^2+x-6=(x-2)(x+3)=0.$$ So for the expression to be defined, $x\\neq 2$, $x\\neq -3$, and $x \\ge2$. Therefore, the smallest integer value of $x$ for the expression to be defined is $\\boxed{3}$."
+}

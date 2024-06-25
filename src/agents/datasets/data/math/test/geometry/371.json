@@ -1,0 +1,6 @@
+{
+    "problem": "Altitudes $\\overline{AX}$ and $\\overline{BY}$ of acute triangle $ABC$ intersect at $H$.  If $\\angle AHB = 132^\\circ$, then what is $\\angle ACB$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "First, we build a diagram:\n\n[asy]\n\nsize(150); defaultpen(linewidth(0.8));\n\npair B = (0,0), C = (3,0), A = (1.4,2), P = foot(A,B,C), Q = foot(B,A,C),H = intersectionpoint(B--Q,A--P);\n\ndraw(A--B--C--cycle);\n\ndraw(A--P^^B--Q);\n\nlabel(\"$A$\",A,N); label(\"$B$\",B,W); label(\"$C$\",C,E); label(\"$X$\",P,S); label(\"$Y$\",Q,E); label(\"$H$\",H,NW);\n\ndraw(rightanglemark(C,P,H,3.5));\n\ndraw(rightanglemark(H,Q,C,3.5));\n\n[/asy]\n\nFrom quadrilateral $CXHY$, we have  \\begin{align*}\n\\angle ACB = \\angle XCY &= 360^\\circ - \\angle HXC - \\angle YHX - \\angle CYH \\\\\n&= 360^\\circ - 90^\\circ - \\angle YHX - 90^\\circ\\\\\n&= 180^\\circ - \\angle YHX.\n\\end{align*}Since $\\angle YHX = \\angle AHB$, we have $\\angle ACB = 180^\\circ - \\angle YHX = \\boxed{48^\\circ}$."
+}

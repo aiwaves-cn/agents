@@ -1,0 +1,6 @@
+{
+    "problem": "What is the domain of the function $$w(x) = \\sqrt{x-2} + \\sqrt[3]{x-3}~?$$ Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Note that $\\sqrt[3]{x-3}$ is defined for all $x$. The only restriction is due to the $\\sqrt{x-2}$ term, which is defined only if $x-2$ is nonnegative. Thus, the domain of $w(x)$ is $\\boxed{[2,\\infty)}$."
+}

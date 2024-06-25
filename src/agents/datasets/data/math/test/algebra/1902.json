@@ -1,0 +1,6 @@
+{
+    "problem": "A line is drawn through the points $(-2, 6)$ and $(-4, -2)$. What is the $y$-coordinate of the point where this line intersects the $y$-axis?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, we can find the slope of the line through these two points.  The slope will be equal to: $$\\frac{y_2-y_1}{x_2-x_1}=\\frac{-2-6}{-4-(-2)}=\\frac{-8}{-2}=4$$ Therefore, the line will have the form $y=4x+b$.  To solve for $b$, substitute in one of the given points for $x$ and $y$ as shown: \\begin{align*}\n6&=4(-2)+b\\\\\n\\Rightarrow\\qquad 6&=-8+b\\\\\n\\Rightarrow\\qquad 14&=b\n\\end{align*} Since $b$ in a line of the form $y=mx+b$ is the $y$-intercept, and this is what we are trying to find, the answer is $\\boxed{14}$."
+}

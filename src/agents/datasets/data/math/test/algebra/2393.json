@@ -1,0 +1,6 @@
+{
+    "problem": "Rewrite the expression $4s^2 + 28s + 45$ in the form $(cs + p)^2 + q$. What is $q$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We complete the square:  \\begin{align*}\n4s^2 + 28s + 45 & = (4s^2 + 28s + 49) + 45 - 49\\\\\n&= (2s + 7)^2 - 4.\n\\end{align*}So $q$ is $\\boxed{-4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest three-digit multiple of 19?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Since 19 is close to 20 and $20\\cdot50=1000$, we consider \\[19\\cdot50=950.\\] From here we skip-count by 19s: \\[950,969,988,1007,\\ldots\\] The largest three-digit multiple of 19 is $\\boxed{988}$."
+}

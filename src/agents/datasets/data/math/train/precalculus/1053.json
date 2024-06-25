@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of the triangle with vertices $(3,-5),$ $(-2,0),$ and $(1,-6).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $A = (3,-5),$ $B = (-2,0),$ and $C = (1,-6).$  Let $\\mathbf{v} = \\overrightarrow{CA} = \\begin{pmatrix} 3 - 1 \\\\  -5 - (-6) \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ and $\\mathbf{w} = \\overrightarrow{CB} = \\begin{pmatrix} -2 - 1 \\\\ 0 - (-6) \\end{pmatrix} = \\begin{pmatrix} -3 \\\\ 6 \\end{pmatrix}.$  The area of triangle $ABC$ is half the area of the parallelogram determined by $\\mathbf{v}$ and $\\mathbf{w}.$\n\n[asy]\nunitsize(0.6 cm);\n\npair A, B, C;\n\nA = (3,-5);\nB = (-2,0);\nC = (1,-6);\n\ndraw(A--B);\ndraw(C--A,Arrow(6));\ndraw(C--B,Arrow(6));\ndraw(A--(A + B - C)--B,dashed);\n\nlabel(\"$\\mathbf{v}$\", (A + C)/2, SE);\nlabel(\"$\\mathbf{w}$\", (B + C)/2, SW);\ndot(\"$A$\", A, E);\ndot(\"$B$\", B, W);\ndot(\"$C$\", C, S);\n[/asy]\n\nThe area of the parallelogram determined by $\\mathbf{v}$ and $\\mathbf{w}$ is\n\\[|(2)(6) - (-3)(1)| = 15,\\]so the area of triangle $ABC$ is $\\boxed{\\frac{15}{2}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $1^{234} + 4^6 \\div 4^4$.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Since 1 raised to any power is 1, the expression equals $1 + 4^6 \\div 4^4$. Also recall that $\\frac{a^m}{a^n}=a^{m-n}$, so we can simplify the last term to get $1+4^{6-4}=1+4^2=1+16=\\boxed{17}$."
+}

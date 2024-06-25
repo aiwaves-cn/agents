@@ -1,0 +1,6 @@
+{
+    "problem": "Find $3.72\\times 1000$.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Write $3.72 = 3\\cdot 10^0 + 7 \\cdot 10^{-1} + 2\\cdot 10^{-2}$ and $1000=10^3$ to get \\begin{align*}\n3.72 \\cdot 1000 &= \\left(3\\cdot 10^0 + 7 \\cdot 10^{-1} + 2\\cdot 10^{-2}\\right) \\cdot 10^{3} \\\\\n&= 3\\cdot 10^0\\cdot 10^3 + 7 \\cdot 10^{-1}\\cdot 10^3 + 2\\cdot 10^{-2}\\cdot 10^3 \\\\\n&= 3\\cdot 10^3 + 7 \\cdot 10^2 + 2\\cdot 10^1 \\\\\n&= \\boxed{3720}.\n\\end{align*}Note that multiplying 3.72 by 1000 is equivalent to moving the decimal point in 3.72 three places to the right."
+}

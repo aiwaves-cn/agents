@@ -1,0 +1,6 @@
+{
+    "problem": "How many numbers from 1 through 200 have a 2 in the units place and are divisible by 4?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "In order for a number to be divisible by $4$, the last two digits have to be divisible by $4$. If the units digit is $2$, the $2$-digit numbers which are divisible by $4$ are $12$, $32$, $52$, $72$, and $92$. Thus the last two digits must be one of these $5$ possibilities. There are two possibilities for the digit in the hundreds place: it could be $0$, meaning the number is a $2$-digit number, or it could be $1$. Any greater value in the hundreds place will make the number greater than $200$. So the total number is $(2)(5)=\\boxed{10}$."
+}

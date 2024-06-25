@@ -1,0 +1,6 @@
+{
+    "problem": "We have that $\\lceil x \\rceil - \\lfloor x \\rfloor = 0.$ Then, what is $\\lceil x \\rceil - x$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Given that $\\lceil x \\rceil - \\lfloor x \\rfloor = 0,$ we see that $x$ must be an integer. Otherwise, the ceiling of $x$ would be greater than the floor of $x.$ Therefore, $\\lceil x \\rceil = x$ and $\\lceil x \\rceil - x = \\boxed{0}.$"
+}

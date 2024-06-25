@@ -1,0 +1,6 @@
+{
+    "problem": "Matt's four cousins are coming to visit. There are four identical rooms that they can stay in. If any number of the cousins can stay in one room, how many different ways are there to put the cousins in the rooms?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Just counting the number of cousins staying in each room, there are the following possibilities: (4,0,0,0), (3,1,0,0), (2,2,0,0), (2,1,1,0), (1,1,1,1).\n\n(4,0,0,0): There is only $1$ way to put all the cousins in the same room (since the rooms are identical).\n\n(3,1,0,0): There are $4$ ways to choose which cousin will be in a different room than the others.\n\n(2,2,0,0): Let us consider one of the cousins in one of the rooms. There are $3$ ways to choose which of the other cousins will also stay in that room, and then the other two are automatically in the other room.\n\n(2,1,1,0): There are $\\binom{4}{2}=6$ ways to choose which cousins stay the same room.\n\n(1,1,1,1): There is one way for all the cousins to each stay in a different room.\n\nThe total number of possible arrangements is $1+4+3+6+1=\\boxed{15}$."
+}

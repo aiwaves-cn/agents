@@ -1,0 +1,6 @@
+{
+    "problem": "A school organization consists of 5 teachers, 7 parents and 6 students. A subcommittee of this group is formed by choosing 2 teachers, 3 parents and 3 students. How many different subcommittees can be formed?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "We can break this problem into three parts.  First, we will count the number of ways to choose teachers for the subcommittee.  We need to choose 2 teachers from the 5 in the school organization, which gives $\\dbinom{5}{2}=10$ ways to choose the teachers.  Next, we choose parents.  We need to choose 3 parents out of 7, which gives $\\dbinom{7}{3}=35$ ways to choose the parents.  Finally, we choose the students.  There are 3 students chosen from 6, which gives $\\dbinom{6}{3}=20$ ways to choose the students.  Each of these selections is independent, so the total number of possible subcommittees will be $10\\cdot 35\\cdot 20=\\boxed{7000}$."
+}

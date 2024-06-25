@@ -1,0 +1,6 @@
+{
+    "problem": "How many ordered pairs of positive integers $(m,n)$ satisfy $\\gcd(m,n) = 2$ and $\\mathop{\\text{lcm}}[m,n] = 108$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since $\\mathop{\\text{lcm}}[m,n] = 108 = 2^2 \\cdot 3^3$, we know $m = 2^a \\cdot 3^b$ and $n = 2^c \\cdot 3^d$ for some positive integers $a$, $b$, $c$, and $d$.  Furthermore, $\\mathop{\\text{lcm}}[m,n] = \\mathop{\\text{lcm}}[2^a \\cdot 3^b, 2^c \\cdot 3^d] = 2^{\\max\\{a,c\\}} \\cdot 3^{\\max\\{b,d\\}}$, so $\\max\\{a,c\\} = 2$ and $\\max\\{b,d\\} = 3$.\n\nAlso, $\\gcd(m,n) = 2$, but $\\gcd(m,n) = \\gcd(2^a \\cdot 3^b, 2^c \\cdot 3^d) = 2^{\\min\\{a,c\\}} \\cdot 3^{\\min\\{b,d\\}}$, so $\\min\\{a,c\\} = 1$ and $\\min\\{b,d\\} = 0$.\n\nThere are only 2 pairs $(a,c)$ that satisfy $\\min\\{a,c\\} = 1$ and $\\max\\{a,c\\} = 2$, namely $(1,2)$ and $(2,1)$.  There are only 2 pairs $(b,d)$ that satisfy $\\min\\{b,d\\} = 0$ and $\\max\\{b,d\\} = 3$, namely $(0,3)$ and $(3,0)$.  Therefore, there are $2 \\cdot 2 = 4$ possible quadruples $(a,b,c,d)$, so there are $\\boxed{4}$ possible pairs $(m,n)$."
+}

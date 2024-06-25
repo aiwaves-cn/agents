@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A, B, C$ and $D$ have these coordinates: $A(3,2)$, $B(3,-2)$, $C(-3,-2)$ and $D(-3,0)$. What is the area of quadrilateral $ABCD$?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Trapezoid $ABCD$ has bases 2 and 4 with altitude 6.  Using the formula: \\[ A = \\frac{h(b_{1}+b_{2})}{2},\\text{ the area is }\n\\frac{6(2+4)}{2} = \\boxed{18}.\\]"
+}

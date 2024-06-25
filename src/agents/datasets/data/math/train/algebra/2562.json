@@ -1,0 +1,6 @@
+{
+    "problem": "Four pens and three pencils cost $\\$2.24$. Two pens and five pencils cost $\\$1.54$. No prices include tax. In cents, what is the cost of a pencil?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let the price of a pen be $x$ and the price of a pencil be $y$, in cents. We can use the following system of equations to represent the information given: \\begin{align*}\n4x + 3y &= 224, \\\\\n2x + 5y &= 154. \\\\\n\\end{align*}We can subtract the first equation from twice the second equation to obtain $7y = 84$, so $y = 12$. Therefore, the cost of a pencil is $\\boxed{12}$ cents."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\left(\\sqrt[4]{11}\\right)^{3x-3}=\\frac{1}{5}$, what is the value of $\\left(\\sqrt[4]{11}\\right)^{6x+2}$? Express your answer as a fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We rewrite $\\left(\\sqrt[4]{11}\\right)^{6x+2}$ and then substitute the given equation: \\begin{align*}\n\\left(\\sqrt[4]{11}\\right)^{6x+2}&=\\left(\\sqrt[4]{11}\\right)^{6x-6}\\cdot \\left(\\sqrt[4]{11}\\right)^{8}\\\\\n&=\\left(\\left(\\sqrt[4]{11}\\right)^{3x-3}\\right)^2\\cdot\\left(11^{1/4}\\right)^{8}\\\\\n&=\\left(\\frac{1}{5}\\right)^2\\cdot11^{(8/4)}\\\\\n&=\\frac{1}{25}\\cdot121\\\\\n&=\\boxed{\\frac{121}{25}}\n\\end{align*}"
+}

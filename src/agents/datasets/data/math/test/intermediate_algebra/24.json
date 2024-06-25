@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f(x)$ satisfies\n\\[f(f(x)) = 6x - 2005\\]for all real numbers $x.$  There exists an integer $n$ such that $f(n) = 6n - 2005.$  Find $n.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = n,$ we get\n\\[f(f(n)) = 6n - 2005,\\]so $f(6n - 2005) = 6n - 2005.$  Then\n\\[f(f(6n - 2005)) = f(6n - 2005) = 6n - 2005.\\]But $f(f(6n - 2005)) = 6(6n - 2005) - 2005.$  Solving\n\\[6(6n - 2005) - 2005 = 6n - 2005,\\]we find $n = \\boxed{401}.$"
+}

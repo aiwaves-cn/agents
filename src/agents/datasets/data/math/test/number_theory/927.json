@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $591{,}3d8$ is divisible by 12, what is the sum of all of the digits that could replace $d$?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "In order for a number to be divisible by 12, it must be divisible by 4 and 3. For a number to be divisible by 4, its last two digits must be divisible by 4. In this problem, the number $d8$ must be divisible by 4. This limits the possibilities of $d$ to $0$, $2$, $4$, $6$, and $8$. For a number to be divisible by 3, the sum of its digits must be divisible by 3. Since, $5+9+1+3+8=26$, the numbers that satisfy this condition are $1$, $4$, and $7$. The only digit that satisfies both conditions is $d=4$, so the sum of all of the digits that could replace $d$ is $\\boxed{4}$."
+}

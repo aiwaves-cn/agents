@@ -1,0 +1,6 @@
+{
+    "problem": "A girls' track team must run 3 miles on the first day of practice and 6 miles every day after that. The boys' team must run 5 miles every day of practice. The coach will order new javelins at the end of the day that each girl's total mileage surpasses each boy's. How many total miles will each girl have run by the time the coach orders the new equipment?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Let $d$ represent the number of days of practice. The number of miles run by each girl can be expressed as $3+6(d-1)$ and the number of miles run by each boy is $5d$. The girls will have outrun the boys after $d$ days if $3+6(d-1)>5d$. We solve this inequality as follows: \\begin{align*}\n3+6(d-1) &> 5d \\quad \\implies \\\\\n3+6d-6 &> 5d \\quad \\implies \\\\\n6d-5d &> 6-3 \\quad \\implies \\\\\nd &> 3.\n\\end{align*}So the girls will outrun the boys on the fourth day, and the number of miles they will have run is $3+6(4-1)=\\boxed{21}$ miles."
+}

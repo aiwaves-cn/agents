@@ -1,0 +1,6 @@
+{
+    "problem": "Let $O$ be the origin, and let $OABC$ be a rectangle, where $A$ and $C$ lie on the parabola $y = x^2.$  Then vertex $B$ must lie on a fixed parabola.  Enter the equation of the fixed parabola in the form \"$y = px^2 + qx + r$\".",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $A = (a,a^2)$ and $C = (c,c^2).$  Since $\\overline{OA}$ and $\\overline{OC}$ are perpendicular, the product of their slopes is $-1$:\n\\[\\frac{a^2}{a} \\cdot \\frac{c^2}{c} = -1.\\]Thus, $ac = -1.$\n\n[asy]\nunitsize(2 cm);\n\nreal func (real x) {\n  return(x^2);\n}\n\npair A, B, C, O;\n\nO = (0,0);\nA = (0.8,func(0.8));\nC = (-1/0.8,func(-1/0.8));\nB = A + C - O;\n\ndraw(graph(func,-1.6,1.6));\ndraw(O--A--B--C--cycle);\n\ndot(\"$A = (a,a^2)$\", A, SE);\ndot(\"$B$\", B, N);\ndot(\"$C = (c,c^2)$\", C, SW);\ndot(\"$O$\", O, S);\n[/asy]\n\nAs a rectangle, the midpoints of the diagonals coincide.  The midpoint of $\\overline{AC}$ is\n\\[\\left( \\frac{a + c}{2}, \\frac{a^2 + c^2}{2} \\right),\\]so $B = (a + c,a^2 + c^2).$\n\nLet $x = a + c$ and $y = a^2 + c^2.$  We want a relationship between $x$ and $y$ in the form of $y = px^2 + qx + r.$  We have that\n\\[x^2 = (a + c)^2 = a^2 + 2ac + c^2 = a^2 + c^2 - 2 = y - 2,\\]so the fixed parabola is $\\boxed{y = x^2 + 2}.$"
+}

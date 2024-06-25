@@ -1,0 +1,6 @@
+{
+    "problem": "Given that a rectangle with length $3x$ inches and width $x + 5$ inches has the property that its area and perimeter have equal values, what is $x$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let $l$ represent the length of the rectangle and $w$ represent the width so that $l = 3x$ and $w = x + 5$. Since the area of the rectangle equals its perimeter, we have that $l \\times w = 2l + 2w$. We can then substitute $3x$ back in for $l$ and $x + 5$ in for $w$ to get  \\begin{align*}\n& (3x)(x+5) = 2(3x) + 2(x + 5) \\\\\n\\Rightarrow\\qquad & 3x^2 + 15x = 6x + 2x + 10 \\\\\n\\Rightarrow\\qquad & 3x^2 + 7x - 10 = 0 \\\\\n\\Rightarrow\\qquad & (x - 1)(3x + 10) = 0.\n\\end{align*}Solving this equation, we get that the two possible values of $x$ are $x = 1$ and $x = - \\frac{10}{3}$. However, both the length $3x$ and the width $x + 5$ must be positive, so the only solution is $x = \\boxed{1}$."
+}

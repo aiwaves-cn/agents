@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ and $y$ are numbers such that $(x + 3)(y-5) = 0$, what is the smallest possible value of $x^2+ y^2$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By the zero-product property, we have two cases: either $y=5$ or $x=-3$. If $x=-3$, $x^2=9$ and $y^2\\ge0$ so $x^2+y^2\\ge9$. If $y=5$, $y^2=25$ and $x^2\\ge0$, so $x^2+y^2\\ge25$. $x^2+y^2$ is clearly minimized in the first case with $x=-3$ and $y=0$ for a minimum of $\\boxed{9}$."
+}

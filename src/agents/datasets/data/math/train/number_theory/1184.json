@@ -1,0 +1,6 @@
+{
+    "problem": "The Lucas sequence is the sequence 1, 3, 4, 7, 11, $\\ldots$ where the first term is 1, the second term is 3 and each term after that is the sum of the previous two terms. What is the remainder when the $100^{\\mathrm{th}}$ term of the sequence is divided by 8?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can look at the terms of the Lucas sequence modulo 8.   \\begin{align*}\nL_1 &\\equiv 1\\pmod{8}, \\\\\nL_2 &\\equiv 3\\pmod{8}, \\\\\nL_3 &\\equiv 4\\pmod{8}, \\\\\nL_4 &\\equiv 7\\pmod{8}, \\\\\nL_5 &\\equiv 3\\pmod{8}, \\\\\nL_6 &\\equiv 2\\pmod{8}, \\\\\nL_7 &\\equiv 5\\pmod{8}, \\\\\nL_8 &\\equiv 7\\pmod{8}, \\\\\nL_9 &\\equiv 4\\pmod{8}, \\\\\nL_{10} &\\equiv 3\\pmod{8}, \\\\\nL_{11} &\\equiv 7\\pmod{8}, \\\\\nL_{12} &\\equiv 2\\pmod{8}, \\\\\nL_{13} &\\equiv 1\\pmod{8}, \\\\\nL_{14} &\\equiv 3\\pmod{8}, \\\\\nL_{15} &\\equiv 4\\pmod{8}, \\\\\nL_{16} &\\equiv 7\\pmod{8}.\n\\end{align*}Since $L_{13}=1$ and $L_{14}=3$, the sequence begins repeating at the 13th term, so it repeats every 12 terms.  Since the remainder is 4 when we divide 100 by 12, we know $L_{100}\\equiv L_4\\pmod 8$.  Therefore the remainder when $L_{100}$ is divided by 8 is $\\boxed{7}$."
+}

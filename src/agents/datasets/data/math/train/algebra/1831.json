@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate the infinite geometric series: $$\\frac{3}{2}-\\frac{2}{3}+\\frac{8}{27}-\\frac{32}{243}+\\dots$$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The series has first term $\\frac{3}{2}$ and common ratio $\\frac{-4}{9}$, so the formula yields: $\\cfrac{\\frac{3}{2}}{1-\\left(\\frac{-4}{9}\\right)}=\\boxed{\\frac{27}{26}}$."
+}

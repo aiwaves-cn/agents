@@ -1,0 +1,6 @@
+{
+    "problem": "What is the nearest integer to $(2+\\sqrt3)^4$?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "If we expand this using the binomial theorem, we get a bunch of terms with $\\sqrt3$ in them. To avoid painful estimation, we use the following trick: Add $(2-\\sqrt3)^4$ to this expression. We know that $(2-\\sqrt3)^4$ is small, since $2-\\sqrt3<1$. When we add these together, the $\\sqrt3$ terms magically cancel out. By the Binomial Theorem,  $$(2+\\sqrt3)^4=2^4+4\\cdot2^3\\cdot(\\sqrt3)+6\\cdot2^2\\cdot(\\sqrt3)^2+4\\cdot2\\cdot(\\sqrt3)^3+(\\sqrt3)^4$$ whereas $$(2-\\sqrt3)^4=2^4-4\\cdot2^3\\cdot(\\sqrt3)+6\\cdot2^2\\cdot(\\sqrt3)^2-4\\cdot2\\cdot(\\sqrt3)^3+(\\sqrt3)^4$$ Therefore, their sum is $$2(2^4+6\\cdot2^2(\\sqrt3)^2+(\\sqrt3)^4)=2(16+72+9)=194$$ Since the term we added, $(2-\\sqrt3)^4$, is less than a half (actually, it's less than .01), $\\boxed{194}$ is the closest integer to $(2+\\sqrt3)^4$."
+}

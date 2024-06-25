@@ -1,0 +1,6 @@
+{
+    "problem": "What real values of $x$ are not in the domain of\n\n$f(x)=\\frac{1}{|x^2+3x-4|+|x^2+9x+20|}$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "$x$ is not in the domain of $f$ if the denominator is zero.  Since both absolute values are nonnegative, both must be zero for the denominator to be zero.  So\n\n\\begin{align*}\n0=x^2+3x-4=(x+4)(x-1)&\\Rightarrow x=-4\\text{ or }x=1\\\\\n0=x^2+9x+20=(x+4)(x+5)&\\Rightarrow x=-4\\text{ or }x=-5\n\\end{align*}\n\nThe only value of $x$ which makes both absolute values zero is $x=\\boxed{-4}$."
+}

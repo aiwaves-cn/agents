@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ and $c$ be real numbers such that $a \\ge b \\ge c \\ge 0$ and $a + b = 16.$  Find the maximum value of\n\\[\\sqrt{c(b - c)} + \\sqrt{c(a - c)}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Cauchy-Schwarz,\n\\begin{align*}\n\\left( \\sqrt{c(b - c)} + \\sqrt{c(a - c)} \\right)^2 &\\le (1 + 1)(c(b - c) + c(a - c)) \\\\\n&= 2(bc - c^2 + ac - c^2) \\\\\n&= 2((a + b)c - 2c^2) \\\\\n&= 2(16c - 2c^2) \\\\\n&= 4(8c - c^2).\n\\end{align*}The maximum of $8c - c^2$ occurs at $c = 4,$ for a maximum value of 16, so\n\\[\\sqrt{c(b - c)} + \\sqrt{c(a - c)} \\le \\sqrt{4 \\cdot 16} = 8.\\]Equality occurs when $a = b = 8$ and $c = 4,$ so the maximum value is $\\boxed{8}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can we choose 3 distinct letters of the alphabet, without regard to order, if we must choose 1 vowel (A, E, I, O, or U) and 2 consonants?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We have 5 options for the choice of the vowel, and we must make 2 choices out of the remaining 21 letters, for a total of $\\binom{21}{2} = 210$ choices for the consonants.  This gives a total of $5 \\times 210 = \\boxed{1050}$."
+}

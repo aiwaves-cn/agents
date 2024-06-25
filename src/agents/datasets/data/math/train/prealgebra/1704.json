@@ -1,0 +1,6 @@
+{
+    "problem": "The arithmetic mean of nine numbers is 54. If two numbers $u$ and $v$ are added to the list, the mean of the eleven-member list becomes 66. What is the mean of $u$ and $v$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The original nine numbers, with mean 54, must have a sum of $9 \\cdot 54 = 486$. After including $u$ and $v$, we have eleven numbers now, and their sum must be $11 \\cdot 66 = 726$. Since the only new numbers in this sum are $u$ and $v$, $u+ v = 726 - 486 = 240$. So, the mean of $u$ and $v$ is $\\frac{1}{2}(u+v) = \\frac{1}{2}(240) = \\boxed{120}$."
+}

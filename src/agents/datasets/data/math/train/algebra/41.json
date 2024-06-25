@@ -1,0 +1,6 @@
+{
+    "problem": "Point $P$ lies on the line $x= -3$ and is 10 units from the point $(5,2)$. Find the product of all possible $y$-coordinates that satisfy the given conditions.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "All points on the line $x=-3$ are of the form $(-3,y)$, where $y$ is a real number.  The distance from $(5,2)$ to $(-3,y)$ is $$\\sqrt{(5-(-3))^2+(2-y)^2}$$ units.  Setting this expression equal to 10, we find \\begin{align*}\n\\sqrt{(5-(-3))^2+(2-y)^2}&= 10 \\\\\n64+(2-y)^2&= 100 \\\\\n(2-y)^2&= 36 \\\\\n2-y&=\\pm 6 \\\\\ny=2\\pm6.\n\\end{align*} The product of $2+6 = 8$ and $2-6 = -4$ is $\\boxed{-32}$. [asy]\n\nimport graph;\n\nsize(200);\n\ndefaultpen(linewidth(0.7)+fontsize(10));\n\ndotfactor=4;\n\nxaxis(xmax=7,Ticks(\" \",1.0,begin=false,end=false,NoZero,Size=3),Arrows(4));\n\nyaxis(Ticks(\" \",1.0,begin=false,end=false,NoZero,Size=3),Arrows(4));\n\npair A=(5,2), B=(-3,8), C=(-3,-4);\n\npair[] dots={A,B,C};\n\ndot(dots);\n\nlabel(\"(5,2)\",A,E);\n\ndraw((-3,-6)--(-3,10),linetype(\"3 3\"),Arrows(4));\n\ndraw(B--A--C);\n\nlabel(\"10\",(A+B)/2,NE);\n\nlabel(\"10\",(A+C)/2,SE);\n\nlabel(\"$x=-3$\",(-3,-6),S);[/asy]"
+}

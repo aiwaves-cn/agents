@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that all four of the numbers \\[1-\\sqrt{2}, \\;3+\\sqrt{7},\\;1+\\sqrt{2},\\; 5\\]are roots of the same nonzero polynomial with rational coefficients. What is the smallest possible degree of the polynomial?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Because the polynomial has rational coefficients, the radical conjugate of each of the given roots must also be roots of the polynomial. However, $5$ is rational, so the argument does not apply to it; furthermore, $1-\\sqrt{2}$ and $1+\\sqrt{2}$ are each other's radical conjugates, so the only other root that the polynomial must have is $3-\\sqrt{7}.$ This makes at least $1+4=5$ roots.\n\nFurthermore, the polynomial\n\\[(x - 1 + \\sqrt{2})(x - 1 - \\sqrt{2})(x - 3 + \\sqrt{7})(x - 3 - \\sqrt{7})(x - 5) = (x^2 - 2x - 1)(x^2 - 6x + 2)(x - 5)\\]has roots $1 \\pm \\sqrt{2},$ $3 \\pm \\sqrt{7},$ and 5, and has rational coefficients.  Hence, $\\boxed{5}$ is the smallest possible degree of the polynomial."
+}

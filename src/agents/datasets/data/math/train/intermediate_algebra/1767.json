@@ -1,0 +1,6 @@
+{
+    "problem": "If two of the roots of \\[2x^3 + 8x^2 - 120x + k = 0\\]are equal, find the value of $k,$ given that $k$ is positive.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let the three roots of the equation be $a,$ $a,$ and $b.$ Then by Vieta's formulas, \\[\\begin{aligned}a+a+b&=-\\tfrac82=-4, \\\\ ab+ab+a^2 &= \\tfrac{120}2 = -60. \\end{aligned}\\]These equations simplify to $2a+b=-4$ and $2ab+a^2=-60.$ From the first equation, we get $b=-4-2a,$ and substituting into the second equation gives \\[2a(-4-2a)+a^2=-60,\\]or \\[3a^2+8a-60=0.\\]This factors as \\[(a+6)(3a-10)=0,\\]so either $a=-6$ or $a=\\tfrac{10}{3}.$ If $a=-6$, then $b=-4-2a=8,$ so by Vieta, $k = -2a^2b=-576,$ which is not positive. If $a=\\tfrac{10}{3},$ then $b=-4-2a=-\\tfrac{32}{3},$ so by Vieta, $k=-2a^2b=\\boxed{\\tfrac{6400}{27}},$ which is the answer."
+}

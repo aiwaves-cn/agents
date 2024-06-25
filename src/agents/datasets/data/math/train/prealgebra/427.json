@@ -1,0 +1,6 @@
+{
+    "problem": "There are 200 students enrolled at Memorial Middle School. Seventy of the students are in band and 95 are in chorus. If only 150 students are in band and/or chorus, how many students are in both band and chorus?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Adding the number of students in the band and the number of students in the chorus gives $70+95 = 165$.  But we are told that there are only 150 students in band and/or chorus, so our 165 must count $165-150 = 15$ students twice, once for the band and once for the chorus.  Therefore, there are $\\boxed{15}$ students in both."
+}

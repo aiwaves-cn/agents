@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer that ends in 9 and is divisible by 7?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "We can start from 9 and keeping adding 10 until we reach an integer divisible by 7. It turns out that 9, 19, 29, and 39 are all not divisible by 7, but 49 is divisible by 7. Therefore, $\\boxed{49}$ is the smallest integer that ends in a 9 and is divisible by 7."
+}

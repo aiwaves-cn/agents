@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the least common multiple of $9999$ and $100{,}001$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Recall the identity $\\mathop{\\text{lcm}}[a,b]\\cdot \\gcd(a,b)=ab$, which holds for all positive integers $a$ and $b$. Thus, $$\\mathop{\\text{lcm}}[9999,100001] = \\frac{9999\\cdot 100001}{\\gcd(9999,100001)},$$so we focus on computing $\\gcd(9999,100001)$.\n\nNotice that $100001 = 99990+11 = 10(9999)+11$. Therefore, any common divisor of $100001$ and $9999$ must be a divisor of $100001-10\\cdot 9999 = 11$. The possibilities are $1$ and $11$.\n\nIn fact, $9999=11\\cdot 909$, so $11$ is a divisor of $9999$ and $100001$, which gives $\\gcd(9999,100001) = 11$.\n\nTherefore, \\begin{align*}\n\\mathop{\\text{lcm}}[9999,100001] &= \\frac{9999\\cdot 100001}{11} \\\\\n&= 909\\cdot 100001 \\\\\n&= 909\\cdot 100000 + 909 \\\\\n&= \\boxed{90{,}900{,}909}.\n\\end{align*}"
+}

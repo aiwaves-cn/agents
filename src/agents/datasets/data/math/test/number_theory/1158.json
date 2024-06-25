@@ -1,0 +1,6 @@
+{
+    "problem": "Convert $\\frac{3}{16}$ to base 2. Express your answer in binary with a radix point.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We can write $\\frac{3}{16}$ in terms of negative powers of 2. We get $\\frac{3}{16}=\\frac{1}{8}+\\frac{1}{16}=0 \\cdot 2^{-1} + 0 \\cdot 2^{-2} +1 \\cdot 2^{-3}+1 \\cdot 2^{-4}.$ Therefore, the base-2 representation of 3/16 is $\\boxed{0.0011_{2}}$."
+}

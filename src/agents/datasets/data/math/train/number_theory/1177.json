@@ -1,0 +1,6 @@
+{
+    "problem": "What integer $n$ satisfies $0\\le n<19$ and $$-200\\equiv n\\pmod{19}~?$$",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Noticing that $190\\equiv0\\pmod{19}$ and $-200+190=-10$, we can say that  \\[-200\\equiv n\\pmod{19}\\]if and only if  \\[-10\\equiv n\\pmod{19}.\\]This is not in the range $0\\leq n<19$, but adding 19 again gives \\[9\\equiv n\\pmod{19}.\\]The answer is $n=\\boxed{9}$."
+}

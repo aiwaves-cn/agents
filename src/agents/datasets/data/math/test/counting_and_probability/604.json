@@ -1,0 +1,6 @@
+{
+    "problem": "I have 5 marbles numbered 1 through 5 in a bag.  Suppose I take out two different marbles at random.  What is the expected value of the product of the numbers on the marbles?  Answer as a decimal to the nearest tenth.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{5}{2} = 10$ different pairs of marbles that can be drawn, and the expected value of the product is the average of the products of each pair.  This is  \\begin{align*}\n\\frac{1}{10}[(1\\times 2)&+(1\\times 3)+(1\\times 4)+(1\\times 5)+{}\\\\\n&(2\\times 3)+(2\\times 4)+(2\\times 5)+(3\\times 4)+(3\\times 5)+(4\\times 5)]\\\\\n&\\qquad\\qquad\\qquad\\qquad=\\frac{85}{10} = \\boxed{8.5}. \\end{align*}"
+}

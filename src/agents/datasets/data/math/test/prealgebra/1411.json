@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of the positive integers $k$ such that $\\frac{k}{27}$ is greater than $\\frac{2}{3}$ and less than $\\frac{8}{9}$?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "In symbols, we want the sum of the positive integers $k$ such that $$\\dfrac23 < \\dfrac k{27} < \\dfrac89.$$ Multiplying the expressions in these inequalities by $27$, we have $$18 < k < 24.$$ The integer solutions are thus $k = 19,20,21,22,23$, which add up to $5\\cdot 21 = \\boxed{105}$."
+}

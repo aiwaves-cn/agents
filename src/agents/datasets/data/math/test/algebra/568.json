@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $(a-1)(a+1)(a+2) - (a-2)(a+1).$",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We successively expand by multiplying binomials: \\begin{align*}\n(a&-1)(a+1)(a+2) - (a-2)(a+1)\\\\\n&= (a^2-1)(a+2)-(a-2)(a+1)\\\\\n&= (a^3 + 2a^2 - a - 2) - (a^2 -a -2)\\\\\n&= a^3 + a^2.\n\\end{align*}So our answer is just $\\boxed{a^3 + a^2}$."
+}

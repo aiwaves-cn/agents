@@ -1,0 +1,6 @@
+{
+    "problem": "If $n>1$ is an integer, the notation $a\\equiv b\\pmod{n}$ means that $(a-b)$ is a multiple of $n$. Find the sum of all possible values of $n$ such that both of the following are true: $171\\equiv80\\pmod{n}$ and $468\\equiv13\\pmod{n}$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "As we are told, we want to find all values of $n>1$ such that $n$ divides into $171-80 = 91$ and $n$ also divides into $468 - 13 = 455$. We notice that $455 = 5 \\cdot 91$, so it follows that if $n$ divides into $91$, then it must divide into $455$. Then, we only need to find the factors of $91$, which are $\\{1,7,13,91\\}$. Summing the factors other than $1$ gives $7 + 13 + 91 = \\boxed{111}$."
+}

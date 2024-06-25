@@ -1,0 +1,6 @@
+{
+    "problem": "What is the coefficient of $x^5$ in the expansion of $(2x+3)^7$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Using the Binomial Theorem, we know that the $x^5$ term of the expansion is $\\binom{7}{5}(2x)^5(3)^{7-5}=(21)(32x^5)(9)=(21)(32)(9)x^5=\\boxed{6048}x^5$."
+}

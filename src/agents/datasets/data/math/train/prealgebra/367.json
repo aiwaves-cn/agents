@@ -1,0 +1,6 @@
+{
+    "problem": "A list of five positive integers has a median of 3 and a mean of 11. What is the maximum possible value of the list's largest element?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since the 5 numbers have a mean of 11, the sum of the numbers is $5\\cdot 11 = 55$.  To make the largest number as large as possible, we make the other numbers must be as small as possible.  However, in order for the median to be 3, the middle number must be 3.  Since this is the middle number, there must be two other numbers that are at least 3.  So, we let three of the other four numbers be 1, 1, and 3 to make them as small as possible.  Finally, this means the remaining number is $55-1-1-3-3=\\boxed{47}$."
+}

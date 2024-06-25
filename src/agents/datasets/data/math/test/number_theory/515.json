@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive perfect cube that can be written as the sum of three consecutive integers?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The sum of three consecutive integers takes the form $(k-1)+(k)+(k+1)=3k$ and hence is a multiple of 3.  Conversely, if a number $n$ is a multiple of 3, then $n/3-1$, $n/3$, and $n/3+1$ are three consecutive integers that sum to give $n$.  Therefore, a number is a sum of three consecutive integers if and only if it is a multiple of 3.  The smallest positive perfect cube that is a multiple of 3 is $3^3=\\boxed{27}$."
+}

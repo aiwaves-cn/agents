@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$, $B$, $C$, and $D$ be points on a circle such that $AB = 11$ and $CD = 19.$ Point $P$ is on segment $AB$ with $AP = 6$, and $Q$ is on segment $CD$ with $CQ = 7$. The line through $P$ and $Q$ intersects the circle at $X$ and $Y$. If $PQ = 27$, find $XY$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "First of all, suppose $X, P, Q, Y$ lie in that order. We make a sketch (diagram not to scale!): [asy]\nimport graph;\ndefaultpen(linewidth(0.7));\npair A,B,C,D,X,Y;\nA=dir(100)*(20,0);\nB=dir(40)*(20,0);\nC=dir(200)*(20,0);\nD=dir(320)*(20,0);\nX=dir(80)*(20,0);\nY=dir(280)*(20,0);\ndraw(circle((0,0),20));\ndraw(A--B);\ndraw(C--D);\ndraw(X--Y);\nlabel(\"$A$\",A,NW);\nlabel(\"$B$\",B,NE);\nlabel(\"$C$\",C,SW);\nlabel(\"$D$\",D,SE);\nlabel(\"$X$\",X,N);\nlabel(\"$Y$\",Y,S);\nlabel(\"$P$\",(1,15));\nlabel(\"$Q$\",(5.5,-8.5));\n[/asy] Let $PX = x$ and $QY = y$. By power of a point from $P$, $x\\cdot(27+y) = 30$, and by power of a point from $Q$, $y\\cdot(27+x) = 84$. Subtracting the first from the second, $27\\cdot(y-x) = 54$, so $y = x+2$. Now, $x\\cdot(29+x) = 30$, and we find $x = 1, -30$. Since $-30$ makes no sense, we take $x = 1$ and obtain $XY = 1 + 27 + 3 = \\boxed{31}.$"
+}

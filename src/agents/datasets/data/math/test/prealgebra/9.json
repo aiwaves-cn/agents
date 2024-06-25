@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can the letters of the word ``COPYRIGHT'' be arranged?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Since there are no repeated letters, we see that there are 9 possible choices for the first letter, 8 possible choices for the second letter, 7 possible choices for the third letter, and so on. Therefore, our answer is $9 \\cdot 8 \\cdot 7 \\cdots 1 = 9! = \\boxed{362,\\!880}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find all real values of $x$ that satisfy $x + \\frac{45}{x-4} = -10.$\n\nEnter all the solutions, separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Multiplying both sides by $x-4,$ we get $x(x-4) + 45 = -10(x-4),$ or $x^2-4x+45 = -10x+40,$ which simplifies to $x^2+6x + 5 = 0.$ This quadratic factors as $(x+1)(x+5) = 0,$ so either $x=-1$ or $x=-5,$ both of which we can check are valid solutions. Therefore, the answer is \\[x = \\boxed{-1, \\; -5}.\\]"
+}

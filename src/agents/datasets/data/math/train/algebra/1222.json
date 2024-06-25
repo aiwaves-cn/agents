@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of the expression $[ a-(b-c) ] - [(a-b) - c ]$ when $a = 17$, $b=21$ and $c=5$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We could evaluate directly: \\begin{align*}\n[ a-(b-c) ] - [(a-b) - c ] &= [17 - (21-5)] - [(17-21)-5]\\\\\n&= [17-16] - [-4-5]\\\\\n&= 1 - (-9) = \\boxed{10}.\n\\end{align*}\n\nWe also could have simplified the expression first: \\begin{align*}\n[ a-(b-c) ] - [(a-b) - c ] &= [a-b+c] - [a-b-c]\\\\\n&=a-b+c -a+b+c\\\\\n&=2c.\n\\end{align*} Then, we have $2c = 2(5) = 10$."
+}

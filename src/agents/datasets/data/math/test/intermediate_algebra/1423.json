@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of $2x^2 + 2y^2 + 5z^2 - 2xy - 4yz - 4x - 2z + 15$ over all real numbers $x,$ $y,$ $z.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write the given expression as\n\\begin{align*}\n&(x^2 - 4x + 4) + (x^2 - 2xy + y^2) + (y^2 - 4yz + 4z^2) + (z^2 - 2z + 1) + 10 \\\\\n&= (x - 2)^2 + (x - y)^2 + (y - 2z)^2 + (z - 1)^2 + 10\n\\end{align*}The minimum value is then $\\boxed{10},$ which occurs when $x = 2,$ $y = 2,$ and $z = 1.$"
+}

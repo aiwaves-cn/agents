@@ -1,0 +1,6 @@
+{
+    "problem": "Points $A$, $B$, $C$, and $D$ are located on $\\overline{AB}$ such that $AB = 3AD = 6BC$. If a point is selected at random on $\\overline{AB}$, what is the probability that it is between $C$ and $D$? Express your answer as a common fraction.\n\n[asy]\n\ndraw((0,0)--(12,.0000000001));\ndot((0,0)); dot((4,0)); dot((10,0)); dot((12,0));\nlabel(\"$A$\", (0,0), S);\nlabel(\"$D$\", (4,0), S);\nlabel(\"$C$\", (10,0), S);\nlabel(\"$B$\", (12,0), S);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "Since $D$ and $C$ are located on segment $\\overline{AB}$, if $AB=3AD$, then $\\overline{AD}$ must take up $1/3$ of line segment $\\overline{AB}$. Similarly, since $AB=6BC$, $\\overline{BC}$ must take up $1/6$ of line segment $\\overline{AB}$. Then, $\\overline{CD}$ is the remaining segment of $\\overline{AB}$ and takes up $1-1/3 - 1/6 = 1/2$ of the total length of $\\overline{AB}$. Thus, if we were to choose a random point on segment $\\overline{AB}$, there would be a $\\boxed{\\frac{1}{2}}$ probability that it is between points $C$ and $D$."
+}

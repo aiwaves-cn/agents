@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$\n\\[(b \\sin C)(b \\cos C + c \\cos B) = 42.\\]Compute the area of triangle $ABC.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "By the Law of Cosines,\n\\begin{align*}\nb \\cos C + c \\cos B &= b \\cdot \\frac{a^2 + b^2 - c^2}{2ab} + c \\cdot \\frac{a^2 + c^2 - b^2}{2ac} \\\\\n&= \\frac{a^2 + b^2 - c^2}{2a} + \\frac{a^2 + c^2 - b^2}{2a} \\\\\n&= \\frac{2a^2}{2a} = a,\n\\end{align*}so $ab \\sin C = 42.$\n\nThen the area of triangle $ABC$ is\n\\[\\frac{1}{2} ab \\sin C = \\boxed{21}.\\]"
+}

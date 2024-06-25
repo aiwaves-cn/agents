@@ -1,0 +1,6 @@
+{
+    "problem": "Carson flips over the cards of a standard 52-card deck one at a time. What is the probability that he flips over the ace of spades before any face card (jack, queen or king)?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 12 face cards, three from each suit. Within the deck, the 13 relevant cards (the face cards and the ace of spades) are arranged in some order. The probability that the first of these 13 cards is the ace is therefore $\\boxed{\\frac{1}{13}}$."
+}

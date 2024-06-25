@@ -1,0 +1,6 @@
+{
+    "problem": "Express as a common fraction: $\\frac{. \\overline{7} }{. \\overline{8} }$",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "If we remember that $.\\overline{1}=\\frac{1}{9}$, then we know $.\\overline{7}=\\frac{7}{9}$ and $.\\overline{8}=\\frac{8}{9}$. We can rewrite the expression as $\\frac{\\frac79}{\\frac89}=\\boxed{\\frac78}$.\n\nIf we didn't know that $.\\overline{1}=\\frac{1}{9}$, we could let $x=.\\overline{7}$. Then $10x=7.\\overline{7}$ and $10x-x=9x=7$. So $x=\\frac79=.\\overline{7}$. Similarly, we could find that $.\\overline{8}=\\frac{8}{9}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Juan takes a number, adds $2$ to it, multiplies the answer by $2$, subtracts $2$ from the result, and finally divides that number by $2$. If his answer is $7$, what was the original number?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Let $n$ be the original number. Doing Juan's operations in order, we get $(2(n + 2) - 2)/2 = 7$.  So $2(n + 2) - 2 = 14$, from which $2(n + 2) = 16$, from which $n + 2 = 8$, giving $n = \\boxed{6}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "There exist constants $c_1$ and $c_2$ such that\n\\[c_1 \\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix} + c_2 \\begin{pmatrix} -2 \\\\ 5 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}.\\]Enter the ordered pair $(c_1,c_2).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the given equation, $2c_1 - 2c_2 = -1$ and $3c_1 + 5c_2 = 4.$  Solving, we find\n\\[(c_1,c_2) = \\boxed{\\left( \\frac{3}{16}, \\frac{11}{16} \\right)}.\\]"
+}

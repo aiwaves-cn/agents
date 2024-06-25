@@ -1,0 +1,6 @@
+{
+    "problem": "The parabolas defined by the equations $y=-x^2-x+1$ and $y=2x^2-1$ intersect at points $(a,b)$ and $(c,d)$, where $c\\ge a$. What is $c-a$? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The graph of the two parabolas is shown below:\n\n[asy]\nLabel f;\n\nreal a = -2;\nreal b = 2;\nf.p=fontsize(4);\n\nxaxis(a,b,Ticks(f, 2.0));\n\nyaxis(-8,8,Ticks(f, 2.0));\nreal f(real x)\n\n{\n\nreturn -x^2-x+1;\n\n}\n\ndraw(graph(f,a,b),linewidth(1));\nreal g(real x)\n\n{\n\nreturn 2x^2-1;\n\n}\n\ndraw(graph(g,a,b),linewidth(1));\n[/asy]\n\nThe graphs intersect when $y$ equals both $-x^2 -x +1$ and $2x^2-1$, so we have $-x^2-x+1=2x^2-1$. Combining like terms, we get $3x^2+x-2$. Factoring the quadratic we have  $(3x-2)(x+1)=0$. So either $x=2/3$ or $x=-1$, which are the two $x$ coordinates of the points of intersection. Thus, $c=2/3$ and $a=-1$, giving $c-a=\\boxed{\\frac{5}{3}}$."
+}

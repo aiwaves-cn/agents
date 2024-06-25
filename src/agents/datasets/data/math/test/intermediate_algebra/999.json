@@ -1,0 +1,6 @@
+{
+    "problem": "Find the product of the first $20$ terms of the sequence below. Express your answer as a common fraction.\n\n$\\frac23, \\frac34, \\frac45, \\frac56, \\dots$",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "When the fractions are multiplied, many of the factors in the numerator and denominator will cancel, as it is a telescoping product:\n\n$\\frac23 \\cdot \\frac34 \\dotsm \\frac{21}{22}=\\frac{2}{22}=\\boxed{\\frac{1}{11}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure below, the largest circle has a radius of six meters. Five congruent smaller circles are placed as shown and are lined up in east-to-west and north-to-south orientations. What is the radius in meters of one of the five smaller circles?\n\n[asy]\n\nsize(3cm,3cm);\n\ndraw(Circle((0,0),1));\n\ndraw(Circle((0,2),1));\n\ndraw(Circle((0,-2),1));\n\ndraw(Circle((2,0),1));\n\ndraw(Circle((-2,0),1));\n\ndraw(Circle((0,0),3));\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We can see that the diameters of three of the smaller circles make up the diameter of the larger circle. It follows that the radius of one of the smaller circles is one-third of the radius of the larger circle. Since the larger circle has a radius of 6 meters, our answer is $6/3 = \\boxed{2}$ meters."
+}

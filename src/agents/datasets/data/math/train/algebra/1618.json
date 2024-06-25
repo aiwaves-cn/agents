@@ -1,0 +1,6 @@
+{
+    "problem": "Find the mean of all solutions for $x$ when $x^3 + 3x^2 - 10x = 0$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we factor the equation as $x(x^2 +3x - 10) = 0$.  So, one solution is $x=0$ and the other two solutions are the solutions to $x^2 + 3x-10=0$.  We could either factor the quadratic, or note that the sum of the solutions to this quadratic is $-(3/1)=-3$, so the mean of the three solutions to the original equation is $-3/3=\\boxed{-1}$."
+}

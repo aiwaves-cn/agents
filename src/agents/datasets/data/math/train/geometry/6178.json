@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ has side-lengths $AB = 12, BC = 24,$ and $AC = 18.$ The line through the incenter of $\\triangle ABC$ parallel to $\\overline{BC}$ intersects $\\overline{AB}$ at $M$ and $\\overline{AC}$ at $N.$ What is the perimeter of $\\triangle AMN?$\n$\\textbf{(A)}\\ 27 \\qquad \\textbf{(B)}\\ 30 \\qquad \\textbf{(C)}\\  33 \\qquad \\textbf{(D)}\\ 36 \\qquad \\textbf{(E)}\\ 42$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let $O$ be the incenter of $\\triangle{ABC}$. Because $\\overline{MO} \\parallel \\overline{BC}$ and $\\overline{BO}$ is the angle bisector of $\\angle{ABC}$, we have\n\\[\\angle{MBO} = \\angle{CBO} = \\angle{MOB} = \\frac{1}{2}\\angle{MBC}\\]\nIt then follows due to alternate interior angles and base angles of isosceles triangles that $MO = MB$. Similarly, $NO = NC$. The perimeter of $\\triangle{AMN}$ then becomes\\begin{align*} AM + MN + NA &= AM + MO + NO + NA \\\\ &= AM + MB + NC + NA \\\\ &= AB + AC \\\\ &= \\boxed{30} \\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the coordinate plane, let $F = (5,0).$  Let $P$ be a point, and let $Q$ be the projection of the point $P$ onto the line $x = \\frac{16}{5}.$  The point $P$ traces a curve in the plane, so that\n\\[\\frac{PF}{PQ} = \\frac{5}{4}\\]for all points $P$ on the curve.  Find the equation of this curve.  (Enter it in standard form.)\n\n[asy]\nunitsize(1 cm);\n\npair P, F, Q;\n\nF = (5,0);\nP = (6,3*sqrt(5)/2);\nQ = (16/5,3*sqrt(5)/2);\n\ndraw(F--P--Q);\ndraw((16/5,-1)--(16/5,4),dashed);\n\ndot(\"$F$\", F, S);\ndot(\"$P$\", P, NE);\ndot(\"$Q$\", Q, W);\n\nlabel(\"$x = \\frac{16}{5}$\", (16/5,-1), S);\n[/asy]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $P = (x,y).$  Then $Q = \\left( \\frac{16}{5}, y \\right),$ so the equation $\\frac{PF}{PQ} = \\frac{5}{4}$ becomes\n\\[\\frac{\\sqrt{(x - 5)^2 + y^2}}{\\left| x - \\frac{16}{5} \\right|} = \\frac{5}{4}.\\]Then $\\sqrt{(x - 5)^2 + y^2} = \\left| \\frac{5}{4} x - 4 \\right|,$ so\n\\[4 \\sqrt{(x - 5)^2 + y^2} = |5x - 16|.\\]Squaring both sides, we get\n\\[16x^2 - 160x + 16y^2 + 400 = 25x^2 - 160x + 256.\\]This simplifies to\n\\[9x^2 - 16y^2 = 144,\\]so\n\\[\\boxed{\\frac{x^2}{16} - \\frac{y^2}{9} = 1}.\\]Thus, the curve is a hyperbola."
+}

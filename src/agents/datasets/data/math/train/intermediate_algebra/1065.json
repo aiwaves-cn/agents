@@ -1,0 +1,6 @@
+{
+    "problem": "Two reals $a$ and $b$ are such that $a+b=7$ and $a^3+b^3=91$. Compute $ab$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have $91=a^3+b^3=(a+b)(a^2-ab+b^2)=(a+b)((a+b)^2-3ab)=7\\cdot (49-3ab)$, from which $ab=\\boxed{12}$."
+}

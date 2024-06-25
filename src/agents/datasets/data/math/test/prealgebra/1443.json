@@ -1,0 +1,6 @@
+{
+    "problem": "Deanna has $44$ pieces of candy. What is the largest number of kids whom she can give an equal number of candies such that every kid gets at least $3$ pieces?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "For $n$ kids to each get at least $3$ pieces of candy, there must be at least $3n$ pieces of candy, so we must have $3n\\le 44$. Dividing both sides of this inequality by $3$, we have $n\\le 14\\frac23$. Since the number of kids must be an integer, the largest possible number of kids is $\\boxed{14}$."
+}

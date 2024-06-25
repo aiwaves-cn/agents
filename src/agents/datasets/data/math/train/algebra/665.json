@@ -1,0 +1,6 @@
+{
+    "problem": "Find the fifth term of the geometric sequence with first term $2$ and second term $\\frac{1}{4}$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The common ratio is $\\frac{\\frac{1}{4}}{2}=\\frac{1}{8}$, so the $k^{th}$ term is $2\\cdot \\left(\\frac{1}{8}\\right)^{k-1}$. Thus we have:\n\n$2\\cdot \\left(\\frac{1}{8}\\right)^4=\\frac{2}{2^{12}}=\\frac{1}{2^{11}}=\\boxed{\\frac{1}{2048}}$."
+}

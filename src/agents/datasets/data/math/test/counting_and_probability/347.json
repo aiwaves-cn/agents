@@ -1,0 +1,6 @@
+{
+    "problem": "How many unique diagonals can be drawn in a five-sided convex polygon?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{5}{2}=10$ pairs of vertices.  Five of these pairs correspond to adjacent vertices, which when connected yield edges of the pentagon.  Connecting any one of the $10-5=\\boxed{5}$ remaining pairs of vertices yields a diagonal."
+}

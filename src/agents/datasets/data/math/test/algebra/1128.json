@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $f(x)$ is a function such that $f(1)=2$, $f(4)=3$, $f(7)=4$, and $f^{-1}(x)$ is the inverse of $f(x)$, what is $f^{-1}(f^{-1}(3))$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, we notice that $f(4)=3$, so $f^{-1}(3)=4$. Hence, we have $f^{-1}(f^{-1}(3))=f^{-1}(4)$. From here, we see that $f(7)=4$, so $f^{-1}(4)=7$. Thus, $f^{-1}(f^{-1}(3))=\\boxed{7}$."
+}

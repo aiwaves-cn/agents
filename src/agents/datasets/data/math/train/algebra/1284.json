@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x+y = 10$ and $2x+y = 13$, evaluate $x^2-y^2$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "Subtracting the first given equation from the second equation, we have $2x+y-(x+y)=13-10 \\Rightarrow x=3$. Plugging the value of $x$ into the first given equation to solve for $y$, we have $y=10-x=7$. Thus, $x^2-y^2=3^2-7^2=\\boxed{-40}$."
+}

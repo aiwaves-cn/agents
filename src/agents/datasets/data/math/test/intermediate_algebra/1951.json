@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of $x^6 + y^6 - 54xy$ over all real numbers $x$ and $y.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Suppose $xy$ is negative.  If we flip the sign of $y,$ then we flip the sign of $xy,$ which makes it positive.  This increases by the value of $x^6 + y^6 + xy,$ so if $x^6 + y^6 + xy$ is minimized, then $xy$ must be positive.  We may assume that both $x$ and $y$ are positive.\n\nBy AM-GM,\n\\[\\frac{x^6 + y^6 + 27 + 27 + 27 + 27}{6} \\ge \\sqrt[6]{(x^6)(y^6)(27^4)} = 9xy,\\]which simplifies to $x^6 + y^6 - 54xy \\ge -108.$\n\nEquality occurs when $x^6 = y^6 = 27,$ which leads to $x = y = \\sqrt{3}.$  Therefore, the minimum value is $\\boxed{-108}.$"
+}

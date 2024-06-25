@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[\\frac{(x - 1)^7 + 3(x - 1)^6 + (x - 1)^5 + 1}{(x - 1)^5}\\]for $x > 1.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\begin{align*}\n\\frac{(x - 1)^7 + 3(x - 1)^6 + (x - 1)^5 + 1}{(x - 1)^5} &= (x - 1)^2 + 3(x - 1) + 1 + \\frac{1}{(x - 1)^5} \\\\\n&= (x - 1)^2 + (x - 1) + (x - 1) + (x - 1) + 1 + \\frac{1}{(x - 1)^5} \\\\\n&\\ge 6 \\sqrt[6]{(x - 1)^2 \\cdot (x - 1) \\cdot (x - 1) \\cdot (x - 1) \\cdot 1 \\cdot \\frac{1}{(x - 1)^5}} \\\\\n&= 6.\n\\end{align*}Equality occurs when $x = 2,$ so the minimum value is $\\boxed{6}.$"
+}

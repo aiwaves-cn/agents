@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits of the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a two-digit number such that $N = P(N) +\nS(N)$. What is the units digit of $N$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Suppose $N=10a+b$. Then $10a+b=ab+(a+b)$. It follows that $9a=ab$, which implies that $b=9$, since $a \\neq 0$. So the units digit of $N$ is $\\boxed{9}$."
+}

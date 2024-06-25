@@ -1,0 +1,6 @@
+{
+    "problem": "Factor $46x^3-115x^7.$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since $46=2\\cdot23$ and $115=5\\cdot23$, we can factor a $23x^3$ from the expression, to get \\[46x^3-115x^7=23x^3(2-5x^4)=\\boxed{-23x^3(5x^4-2)},\\] which is our answer."
+}

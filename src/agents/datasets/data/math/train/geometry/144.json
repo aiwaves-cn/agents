@@ -1,0 +1,6 @@
+{
+    "problem": "Two concentric circles are centered at point P. The sides of a 45 degree angle at P form an arc on the smaller circle that is the same length as an arc on the larger circle formed by the sides of a 36  degree angle at P. What is the ratio of the area of the smaller circle to the area of the larger circle? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let $C_1$ and $C_2$ be the circumferences of the smaller and larger circle, respectively.  The length of the $45^\\circ$ arc on the smaller circle is $\\left(\\frac{45^\\circ}{360^\\circ}\\right)C_1$, and the length of the $36^\\circ$ arc on the larger circle is $\\left(\\frac{36^\\circ}{360^\\circ}\\right)C_2$.  Setting these two lengths equal we find \\[\n\\frac{C_1}{C_2}=\\frac{36}{45}=\\frac{4}{5}.\n\\]The ratio of the areas of the two circles is the square of the ratio of their circumferences: \\[\n\\frac{\\pi r_1^2}{\\pi r_2^2}=\\left(\\frac{r_1}{r_2}\\right)^2=\\left(\\frac{2\\pi r_1}{2\\pi r_2}\\right)^2=\\left(\\frac{C_1}{C_2}\\right)^2=\\left(\\frac{4}{5}\\right)^2=\\boxed{\\frac{16}{25}}.\n\\]"
+}

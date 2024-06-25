@@ -1,0 +1,6 @@
+{
+    "problem": "Triangle $ABC$ has a right angle at $B$, and contains a point $P$ for which $PA = 10$, $PB = 6$, and $\\angle APB = \\angle BPC = \\angle CPA$. Find $PC$.\n\n[asy]\nunitsize(0.2 cm);\n\npair A, B, C, P;\n\nA = (0,14);\nB = (0,0);\nC = (21*sqrt(3),0);\nP = intersectionpoint(arc(B,6,0,180),arc(C,33,0,180));\n\ndraw(A--B--C--cycle);\ndraw(A--P);\ndraw(B--P);\ndraw(C--P);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Since $\\angle APB = \\angle BPC = \\angle CPA,$ they are all equal to $120^\\circ.$\n\nLet $z = PC.$  By the Law of Cosines on triangles $BPC,$ $APB,$ and $APC,$\n\\begin{align*}\nBC^2 &= z^2 + 6z + 36, \\\\\nAB^2 &= 196, \\\\\nAC^2 &= z^2 + 10z + 100.\n\\end{align*}By the Pythagorean Theorem, $AB^2 + BC^2 = AC^2,$ so\n\\[196 + z^2 + 6z + 36 = z^2 + 10z + 100.\\]Solving, we find $z = \\boxed{33}.$"
+}

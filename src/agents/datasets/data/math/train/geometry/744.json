@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, triangles $ABC$ and $CBD$ are isosceles. The perimeter of $\\triangle CBD$ is $19,$ the perimeter of $\\triangle ABC$ is $20,$ and the length of $BD$ is $7.$ What is the length of $AB?$ [asy]\n\nsize(7cm);\ndefaultpen(fontsize(11));\n\npair b = (0, 0);\npair d = 7 * dir(-30);\npair a = 8 * dir(-140);\npair c = 6 * dir(-90);\n\ndraw(a--b--d--c--cycle);\ndraw(b--c);\n\nlabel(\"$y^\\circ$\", a, 2 * (E + NE));\nlabel(\"$y^\\circ$\", b, 2 * (S + SW));\nlabel(\"$x^\\circ$\", b, 2 * (S + SE));\nlabel(\"$x^\\circ$\", d, 2 * (2 * W));\n\nlabel(\"$A$\", a, W);\nlabel(\"$B$\", b, N);\nlabel(\"$D$\", d, E);\nlabel(\"$C$\", c, S);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "In $\\triangle ABC,$ $\\angle ABC=\\angle BAC,$ so $AC=BC.$\n\nIn $\\triangle BCD,$ $\\angle CBD=\\angle CDB,$ so $CD=BC.$\n\nSince the perimeter of $\\triangle CBD$ is $19$ and $BD=7,$ then $7+BC+CD=19$ or $2(BC)=12$ or $BC=6.$\n\nSince the perimeter of $\\triangle ABC$ is $20,$ $BC=6,$ and $AC=BC,$ then $AB+6+6=20$ or $AB=8.$\n\nSo our final answer is $\\boxed{8}.$"
+}

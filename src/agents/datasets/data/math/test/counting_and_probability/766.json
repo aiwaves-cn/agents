@@ -1,0 +1,6 @@
+{
+    "problem": "The figure below represents a figure with a total of 120 triangles and $n$ points labeled as vertices on the horizontal base. What is the value of $n$?\n\n[asy]size(250,400);\npair P = (3,4);\nreal r = .05;\ndraw((0,0)--P); draw((1,0)--P); draw((3,0)--P); draw((4.5,0)--P); draw((7,0)--P); draw((7,0)--(8,0)); fill(circle((8+3r,0),r)); fill(circle((8+7r,0),r)); draw((8+15r,0)--(9+15r,0)); draw((9+15r,0)--P); draw((11+15r,0)--P); fill(circle((8+11r,0),r)); draw((0,0)--(7,0)); draw((9+15r,0)--(11+15r,0));\nlabel(\"$P$\",P,N); label(\"$A_1$\",(0,0),S); label(\"$A_2$\",(1,0),S); label(\"$A_3$\",(3,0),S); label(\"$A_4$\",(4.5,0),S); label(\"$A_5$\",(7,0),S); label(\"$A_{n-1}$\",(9+15r,0),S); label(\"$A_n$\",(11+15r,0),S);[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Since any two points $A_i,A_j$ define exactly one triangle,  there are $\\binom{n}{2} = \\frac{n(n-1)}{2}$ possible triangles.  Solving $\\frac{n(n-1)}{2} = 120$, we find that $n = \\boxed{16}$."
+}

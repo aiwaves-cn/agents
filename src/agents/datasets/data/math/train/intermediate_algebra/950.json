@@ -1,0 +1,6 @@
+{
+    "problem": "Find the polynomial of minimal degree, in $x,$  which has rational coefficients, leading coefficient $1$, and roots $1+\\sqrt{2}$ and $1+\\sqrt{3}.$ (Write the terms in decreasing order of degree.)",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since the polynomial has rational coefficients, it must also have $1-\\sqrt{2}$ and $1-\\sqrt{3}$ as roots. Then, the polynomial must be divisible by the two polynomials \\[(x-(1+\\sqrt2))(x-(1-\\sqrt2)) = x^2-2x-1\\]and \\[(x-(1+\\sqrt3))(x-(1-\\sqrt3))=x^2-2x-2.\\]It follows that the polynomial we seek is given by \\[(x^2-2x-1)(x^2-2x-2) = \\boxed{x^4-4x^3+x^2+6x+2}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "At a state contest, 21 Mathletes stay in the same hotel. Each Mathlete gets his/her own room and the room numbers are 1 through 21. When all the Mathletes have arrived, except the ones staying in rooms 12 and 13, what is the median room number of the other 19 Mathletes?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are currently 19 Mathletes there, so if the room numbers are listed in order we want the 10th, with 9 rooms before and 9 after. The 10th room is just room number $\\boxed{10}$, since no numbers are skipped in the first ten."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Solve $\\arcsin x + \\arcsin (1 - x) = \\arccos x.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Taking the sine of both sides, we get\n\\[\\sin (\\arcsin x + \\arcsin (1 - x)) = \\sin (\\arccos x).\\]Then from the angle addition formula,\n\\[\\sin (\\arcsin x) \\cos (\\arcsin (1 - x)) + \\cos (\\arcsin x) \\sin (\\arcsin (1 - x)) = \\sin (\\arccos x),\\]or\n\\[x \\sqrt{1 - (1 - x)^2} + \\sqrt{1 - x^2} (1 - x) = \\sqrt{1 - x^2}.\\]Then\n\\[x \\sqrt{1 - (1 - x)^2} = x \\sqrt{1 - x^2}.\\]Squaring both sides, we get\n\\[x^2 (1 - (1 - x)^2) = x^2 (1 - x^2).\\]This simplifies to $2x^3 - x^2 = x^2 (2x - 1) = 0.$  Thus, $x = 0$ or $x = \\frac{1}{2}.$\n\nChecking, we find both solutions work, so the solutions are $\\boxed{0, \\frac{1}{2}}.$"
+}

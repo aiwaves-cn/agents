@@ -1,0 +1,6 @@
+{
+    "problem": "Find all $t$ such that $x-t$ is a factor of $6x^2+13x-5.$\n\nEnter your answer as a list separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "From the Factor theorem, if $x-t$ is a factor of $ 6x^2+13x-5$ we know that\n$$6t^2+13t - 5 = 0$$Factoring gives us\n$$(2t+5)(3t-1) = 0$$Hence $t = \\boxed{\\frac{1}{3}}$ or $t = \\boxed{-\\frac{5}{2}}$."
+}

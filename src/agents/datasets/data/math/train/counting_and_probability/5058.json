@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than 10,000 have at most two different digits?\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "First, let's count numbers with only a single digit. We have nine of these for each length, and four lengths, so 36 total numbers.\nNow, let's count those with two distinct digits. We handle the cases \"0 included\" and \"0 not included\" separately.\nThere are ${9 \\choose 2}$ ways to choose two digits, $A$ and $B$. Given two digits, there are $2^n - 2$ ways to arrange them in an $n$-digit number, for a total of $(2^1 - 2) + (2^2 - 2) + (2^3 -2) + (2^4 - 2) = 22$ such numbers (or we can list them: $AB, BA, AAB, ABA, BAA, ABB, BAB, BBA, AAAB, AABA, ABAA,$ $BAAA, AABB, ABAB, BAAB, ABBA, BABA, BBAA, ABBB, BABB, BBAB, BBBA$). Thus, we have ${9 \\choose 2} \\cdot 22 = 36\\cdot22 = 792$ numbers of this form.\nNow, suppose 0 is one of our digits. We have nine choices for the other digit. For each choice, we have $2^{n - 1} - 1$ $n$-digit numbers we can form, for a total of $(2^0 - 1) + (2^1 - 1) + (2^2 - 1) + (2^3 - 1) = 11$ such numbers (or we can list them: $A0, A00, A0A, AA0, A000, AA00, A0A0, A00A, AAA0, AA0A, A0AA$). This gives us $9\\cdot 11 = 99$ numbers of this form.\nThus, in total, we have $36 + 792 + 99 = \\boxed{927}$ such numbers."
+}

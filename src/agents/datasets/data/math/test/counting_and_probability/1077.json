@@ -1,0 +1,6 @@
+{
+    "problem": "A street has 50 houses on each side, for a total of 100 houses. The addresses on the south side of the street form an arithmetic sequence, as do the addresses on the north side of the street. On the south side, the addresses are 1, 5, 9, etc., and on the north side they are 3, 7, 11, etc. A sign painter paints house numbers on a house for $\\$1$ per digit. If he paints the appropriate house number once on each of these 100 houses, how much does he earn?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "If we combine the house numbers on the north and south sides, we get exactly the odd positive integers. The $100^{\\text{th}}$ odd integer is 199, so we divide the first 100 odd integers into three groups: \\[\\{1, 3,\\ldots, 9\\},\\qquad\\{11, 13, \\ldots, 99\\},\\qquad\\{101, 103, \\ldots, 199\\}\\] There are five numbers with one digit, 45 numbers with two digits, and 50 numbers with three digits. Thus, the total revenue is $1\\times5 + 2\\times 45 + 3\\times 50 = \\boxed{245}$."
+}

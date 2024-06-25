@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least positive integer with exactly $10$ positive factors?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "We need to find the smallest integer, $k,$ that has exactly $10$ factors. $10=5\\cdot2=10\\cdot1,$ so $k$ must be in one of two forms:\n\n$\\bullet$ (1) $k=p_1^4\\cdot p_2^1$ for distinct primes $p_1$ and $p_2.$ The smallest such $k$ is attained when $p_1=2$ and $p_2=3,$ which gives $k=2^4\\cdot3=48.$\n\n$\\bullet$ (2) $k=p^9$ for some prime $p.$ The smallest such $k$ is attained when $p=2,$ which gives $k=2^9>48.$\n\nThus, the least positive integer with exactly $10$ factors is $\\boxed{48}.$"
+}

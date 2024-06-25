@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = 4x^4+12x^3-9x^2+x+3$ and $d(x) = x^2+3x-2$. If $f(x) = q(x)d(x) + r(x)$ for some polynomials $q(x)$ and $r(x)$ where $\\deg r < \\deg d$, calculate $q(1)+r(-1)$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "\\[\n\\begin{array}{c|cc ccc}\n\\multicolumn{2}{r}{4x^2} & -1  \\\\\n\\cline{2-6}\nx^2+3x-2 & 4x^4 & +12x^3&-9x^2&+x&+3  \\\\\n\\multicolumn{2}{r}{-4x^4} & -12x^3&+8x^2  \\\\ \n\\cline{2-4}\n\\multicolumn{2}{r}{0} & 0 & -x^2 &+x & +3 \\\\\n\\multicolumn{2}{r}{} &  & +x^2 &+3x&-2   \\\\ \n\\cline{4-6}\n\\multicolumn{2}{r}{} &   & 0 & 4x &+1  \\\\\n\\end{array}\n\\]Since $\\deg d > \\deg (4x+1)$ we cannot divide any further. So, $q(x) = 4x^2-1$ and $r(x)=4x+1$. Then\n$$q(1)+r(-1) = 4(1)^2+1+4(-1)-1=\\boxed{0}.$$"
+}

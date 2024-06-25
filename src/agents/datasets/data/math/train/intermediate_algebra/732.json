@@ -1,0 +1,6 @@
+{
+    "problem": "You have a rectangular prism box with length $x+5$ units, width $x-5$ units, and height $x^{2}+25$ units. For how many positive integer values of $x$ is the volume of the box less than 700 units?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "To find the volume of the box, we multiply the three dimensions: $(x+5)(x-5)(x^{2}+25) = (x^{2}-25)(x^{2}+25) = x^{4}-625$. We want to find $x$ such that $x^{4}-625<700$, which simplifies to $x^{4}<1325$. Taking the fourth root shows us that $x$ is less than $\\sqrt[4]{1325}$, which is between 6 and 7 (since $6^4=1296$ while $7^4=2401$). So $x$ could be 1, 2, 3, 4, 5, or 6. However, we see that the width is $x-5$ units, and this must be a positive number, so the only value of $x$ which works is 6. Thus, there is only $\\boxed{1}$ possible value of $x$."
+}

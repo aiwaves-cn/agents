@@ -1,0 +1,6 @@
+{
+    "problem": "A pipe with inside diameter 10'' is to carry water from a reservoir to a small town in an arid land. Neglecting the friction and turbulence of the water against the inside of the pipes, what is the minimum number of 2''-inside-diameter pipes of the same length needed to carry the same volume of water to the arid town?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Let the length of the pipes be $h$.  The volume of the 10-inch pipe is $\\pi (5^2) (h) = 25\\pi h$ cubic inches and the volume of each 2-inch pipe is $\\pi (1^2)(h) = \\pi h$ cubic inches.  Hence we see it takes exactly 25 2-inch pipes to match the volume of one 10-inch pipe.  The answer is $\\boxed{25}$ pipes."
+}

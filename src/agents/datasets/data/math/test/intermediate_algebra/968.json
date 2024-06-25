@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers satisfying\n\\[\\frac{2}{x} = \\frac{y}{3} = \\frac{x}{y}.\\]Determine $x^3.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let\n\\[k = \\frac{2}{x} = \\frac{y}{3} = \\frac{x}{y}.\\]Then\n\\[k^3 = \\frac{2}{x} \\cdot \\frac{y}{3} \\cdot \\frac{x}{y} = \\frac{2}{3}.\\]Also, $x = \\frac{2}{k},$ so\n\\[x^3 = \\frac{8}{k^3} = \\frac{8}{2/3} = \\boxed{12}.\\]"
+}

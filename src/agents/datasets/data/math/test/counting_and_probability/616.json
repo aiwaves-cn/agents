@@ -1,0 +1,6 @@
+{
+    "problem": "There are 8 pens along a wall in the pound.  The pound has to allocate 4 pens to dogs, 3 to cats, and one to roosters.  In how many ways can the pound make the allocation?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There are $8!$ ways to arrange 8 allocations to the pens if they are not identical, but we must divide by $4!$ for the four dog pen allocations and divide by $3!$ for the three cat pen allocations.  So the answer is $\\dfrac{8!}{4! \\times 3!} = \\boxed{280}$."
+}

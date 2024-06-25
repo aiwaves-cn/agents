@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that 7 boys and 13 girls line up in a row. Let $S$ be the number of places in the row where a boy and a girl are standing next to each other. For example, for the row $\\text{GBBGGGBGBGGGBGBGGBGG}$ we have that $S=12$. The average value of $S$ (if all possible orders of these 20 people are considered) is closest to\n$\\text{(A)}\\ 9\\qquad\\text{(B)}\\ 10\\qquad\\text{(C)}\\ 11\\qquad\\text{(D)}\\ 12\\qquad\\text{(E)}\\ 13$\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We approach this problem using Linearity of Expectation. Consider a pair of two people standing next to each other. Ignoring all other people, the probability that a boy is standing on the left position and a girl is standing on the right position is $\\frac7{20}\\cdot\\frac{13}{19}$. Similarly, if a girl is standing on the left position and a boy is standing on the right position the probability is also $\\frac{7\\cdot 13}{20\\cdot 19}$. Thus, the total probability of the two people being one boy and one girl is $\\frac{91}{190}$.\nThere are a total of 19 different adjacent pairs, so by Linearity of Expectation, we have that the expected value of $S$ is $\\frac{91}{10}$ so $\\boxed{9}$."
+}

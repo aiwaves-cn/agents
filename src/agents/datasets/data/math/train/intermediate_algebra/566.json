@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$, $b$, and $c$ be positive real numbers. What is the smallest possible value of $(a+b+c)\\left(\\frac{1}{a+b}+\\frac{1}{a+c}+\\frac{1}{b+c}\\right)$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By the AM-HM inequality on the numbers $a+b$, $a+c$, and $b+c$, we have\n$$\\frac{(a+b)+(a+c)+(b+c)}{3} \\ge \\frac{3}{\\frac{1}{a+b}+\\frac{1}{a+c}+\\frac{1}{b+c}}.$$Cross-multiplying and simplifying gives us\n$$\\frac{1}{3}(2a+2b+2c)\\left(\\frac{1}{a+b}+\\frac{1}{a+c}+\\frac{1}{b+c}\\right) \\ge 3,$$and hence\n$$(a+b+c)\\left(\\frac{1}{a+b}+\\frac{1}{a+c}+\\frac{1}{b+c}\\right) \\ge \\boxed{\\frac{9}{2}}.$$This value is achieved when $a=b=c=1$."
+}

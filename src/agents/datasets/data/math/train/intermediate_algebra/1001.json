@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be nonzero real numbers.  Find the minimum value of\n\\[a^2 + b^2 + \\frac{1}{a^2} + \\frac{b}{a}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We complete the square with respect to the terms $b^2$ and $\\frac{b}{a},$ to get\n\\[b^2 + \\frac{b}{a} = \\left( b + \\frac{1}{2a} \\right)^2 - \\frac{1}{4a^2}.\\]This is minimized when $b = -\\frac{1}{2a}.$  The problem now is to minimize\n\\[a^2 + \\frac{1}{a^2} - \\frac{1}{4a^2} = a^2 + \\frac{3}{4a^2}.\\]We can assume that $a$ is positive.  Then by AM-GM,\n\\[a^2 + \\frac{3}{4a^2} \\ge 2 \\sqrt{a^2 \\cdot \\frac{3}{4a^2}} = \\sqrt{3}.\\]Equality occurs when $a = \\sqrt[4]{\\frac{3}{4}},$ so the minimum value is $\\boxed{\\sqrt{3}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $(x,y)$ is a solution to the system\n\\begin{align*}\nxy &= 6, \\\\\nx^2 y + xy^2 + x + y &= 63,\n\\end{align*}find $x^2 + y^2.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The second equation factors as $(xy + 1)(x + y) = 63,$ so $7(x + y) = 63,$ or $x + y = 9.$  Then\n\\[x^2 + y^2 = (x + y)^2 - 2xy = 9^2 - 2 \\cdot 6 = \\boxed{69}.\\]"
+}

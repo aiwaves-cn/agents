@@ -1,0 +1,6 @@
+{
+    "problem": "Let $Q(x)=a_0+a_1x+\\dots+a_nx^n$ be a polynomial with integer coefficients, and $0\\le a_i<3$ for all $0\\le i\\le n$.\n\nGiven that $Q(\\sqrt{3})=20+17\\sqrt{3}$, compute $Q(2)$.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[Q(\\sqrt{3}) = a_0 + a_1 \\sqrt{3} + 3a_2 + 3a_3 \\sqrt{3} + \\dotsb = 20 + 17 \\sqrt{3},\\]so\n\\begin{align*}\na_0 + 3a_2 + 9a_4 + 81a_6 + \\dotsb &= 20, \\\\\na_1 + 3a_3 + 9a_5 + 81a_7 + \\dotsb &= 17.\n\\end{align*}Since $0 \\le a_i < 3,$ the problem reduces to expressing 20 and 17 in base 3.  Since $20 = 2 \\cdot 9 + 0 \\cdot 3 + 2$ and $17 = 9 + 2 \\cdot 3 + 2,$\n\\[Q(x) = x^5 + 2x^4 + 2x^3 + 2x + 2.\\]In particular, $Q(2) = \\boxed{86}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The digits 1, 3 and 5 are each used once to form each of the possible three-digit positive integers. The three-digit integers are listed from greatest to least. Which integer is listed fifth?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "There are $3!=6$ possible three-digit integers.  So the fifth number on the list will be the second smallest.  The two smallest integers have $1$ as the hundreds digit.  The smallest is $135$; the second-smallest is $\\boxed{153}$."
+}

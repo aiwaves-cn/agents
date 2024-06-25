@@ -1,0 +1,6 @@
+{
+    "problem": "When two consecutive whole numbers are randomly selected, what is the probability that one of them is a multiple of 4? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "All whole numbers can be written as $4k$, $4k+1$, $4k+2$, or $4k+3$ for some integer $k$. Suppose we look at the smaller of the two consecutive numbers. If it is of the form $4k$, it is a multiple of 4. If it is of the form $4k+3$, the other is $4k+4$, a multiple of 4. If on the other hand, it can be written as $4k+1$ or $4k+2$, neither number is a multiple of 4. So in two of the four equally likely cases, one of the numbers is a multiple of 4, for a probability of $2/4=\\boxed{\\frac{1}{2}}$."
+}

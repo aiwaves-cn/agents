@@ -1,0 +1,6 @@
+{
+    "problem": "Find all roots of the polynomial $x^3-5x^2+3x+9$. Enter your answer as a list of numbers separated by commas. If a root occurs more than once, enter it as many times as its multiplicity.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "By the Rational Root Theorem, any root of the polynomial must divide $9$. Therefore the roots are among the numbers $\\pm 1,3$. Since these are only four values, we can try all of them to find that $x=3$ and $x=-1$ are roots and $x=-3$ and $x=1$ are not.\n\nSince the given polynomial is cubic, it must have three roots. This means that one of $3$ or $-1$ is a root twice (i.e. has multiplicity $2$). The Factor Theorem tells us that since $-1$ and $3$ are roots of the polynomial, $x+1$ and $x-3$ must be factors of the polynomial. To find which root occurs twice, we can divide $x^3-5x^2+3x+9$ by $x+1$ to get  $x^3-5x^2+3x+9 = (x+1)(x^2-6x+9)$.\n\nWe can factorise $x^2-6x+9$ as $(x-3)^2$ which means that the root $x=3$ has multiplicity 2.  Thus our roots are $\\boxed{-1,3,3}$."
+}

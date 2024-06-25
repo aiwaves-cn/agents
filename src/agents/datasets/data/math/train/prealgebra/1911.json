@@ -1,0 +1,6 @@
+{
+    "problem": "Each point in the hexagonal lattice shown is one unit from its nearest neighbor. How many equilateral triangles have all three vertices in the lattice? [asy]size(75);\ndot(origin);\ndot(dir(0));\ndot(dir(60));\ndot(dir(120));\ndot(dir(180));\ndot(dir(240));\ndot(dir(300));\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Number the points clockwise, beginning with the upper left as 1. Number the center point 7.\n\nWe can create six equilateral triangles with side length one: 176, 172, 273, 657, 574, and 473.\n\nWe can also create two equilateral triangles with side length $\\sqrt{3}$: 135 and 246.\n\nThus, there are $\\boxed{8}$ such equilateral triangles."
+}

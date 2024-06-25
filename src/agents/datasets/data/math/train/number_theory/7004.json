@@ -1,0 +1,6 @@
+{
+    "problem": "Assume that $a$, $b$, $c$, and $d$ are positive integers such that $a^5 = b^4$, $c^3 = d^2$, and $c - a = 19$. Determine $d - b$.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "It follows from the givens that $a$ is a perfect fourth power, $b$ is a perfect fifth power, $c$ is a perfect square and $d$ is a perfect cube. Thus, there exist integers $s$ and $t$ such that $a = t^4$, $b = t^5$, $c = s^2$ and $d = s^3$. So $s^2 - t^4 = 19$. We can factor the left-hand side of this equation as a difference of two squares, $(s - t^2)(s + t^2) = 19$. 19 is a prime number and $s + t^2 > s - t^2$ so we must have $s + t^2 = 19$ and $s - t^2 = 1$. Then $s = 10, t = 3$ and so $d = s^3 = 1000$, $b = t^5 = 243$ and $d-b=\\boxed{757}$."
+}

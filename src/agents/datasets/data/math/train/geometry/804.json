@@ -1,0 +1,6 @@
+{
+    "problem": "Two triangles are similar. The ratio of their areas is 1:4. If the height of the smaller triangle is 3 cm, how long is the corresponding height of the larger triangle, in centimeters?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "If any linear dimension (such as radius, side length, height, etc.) of a closed, two-dimensional figure is multiplied by $k$ while the shape of the figure remains the same, the area of the figure is multiplied by $k^2$.  Since the area is multiplied by 4 in going from the smaller triangle to the larger triangle, we have $k^2=4$ which implies $k=2$.  Therefore, each linear dimension is multiplied by 2, so the height of the larger triangle is $(3\\text{ cm})\\times2=\\boxed{6}$ centimeters."
+}

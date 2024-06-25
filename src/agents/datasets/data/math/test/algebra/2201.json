@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all possible solutions of $\\frac{9x}{13}+\\frac{13}{9x}=\\frac{250}{117x}$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Knowing that $117 = 9 \\times 13$, we immediately reduce the problem to finding the sum of all possible solutions of $81x^2 + 169 - 250 = 0$. Seeing that this is a quadratic whose linear coefficient is 0, the solutions sum to $\\boxed{0}$.\n\nTo find the solutions, we can rewrite $81x^2 -81 = 0 \\implies x^2 = 1$, so the solutions are $1,-1$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[x^8 + 3x^4 - 4 = p_1(x) p_2(x) \\dotsm p_k(x),\\]where each non-constant polynomial $p_i(x)$ is monic with integer coefficients, and cannot be factored further over the integers.  Compute $p_1(1) + p_2(1) + \\dots + p_k(1).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "First, we can factor $x^8 + 3x^4 - 4$ as $(x^4 - 1)(x^4 + 4).$  Then\n\\[x^4 - 1 = (x^2 + 1)(x^2 - 1) = (x^2 + 1)(x - 1)(x + 1),\\]and by Sophie Germain,\n\\[x^4 + 4 = x^4 + 4x^2 + 4 - 4x^2 = (x^2 + 2)^2 - (2x)^2 = (x^2 + 2x + 2)(x^2 - 2x + 2).\\]Thus, the full factorization is\n\\[x^8 + 3x^4 - 4 = (x^2 + 1)(x - 1)(x + 1)(x^2 + 2x + 2)(x^2 - 2x + 2).\\]Evaluating each factor at $x = 1,$ we get $2 + 0 + 2 + 5 + 1 = \\boxed{10}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two different numbers are randomly selected from the set $\\{1, 2, 3, 4\\}$ and they are multiplied. What is the probability that the product is even? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The product of two integers is even unless both of the integers are odd.  Therefore, the only pair of integers from the set $\\{1,2,3,4\\}$ whose product is odd is $\\{1,3\\}$.  Since there are $\\binom{4}{2}=6$ pairs, the probability of drawing $\\{1,3\\}$ is $\\frac{1}{6}$.  So the probability of drawing two numbers whose product is even is $1-\\dfrac{1}{6}=\\boxed{\\dfrac{5}{6}}$."
+}

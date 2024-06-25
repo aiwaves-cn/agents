@@ -1,0 +1,6 @@
+{
+    "problem": "An 8-foot by 10-foot floor is tiled with square tiles of size 1 foot by 1 foot. Each tile has a pattern consisting of four white quarter circles of radius 1/2 foot centered at each corner of the tile. The remaining portion of the tile is shaded. How many square feet of the floor are shaded?\n[asy]\nfill((5,5)--(5,-5)--(-5,-5)--(-5,5)--cycle,gray(0.7));\nfill(Circle((-5,5),5),white);\nfill(Circle((5,5),5),white);\nfill(Circle((-5,-5),5),white);\nfill(Circle((5,-5),5),white);\ndraw((-5,5)--(-5,-5)--(5,-5)--(5,5)--cycle);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The four white quarter circles in each tile have the same area as a whole circle of radius $1/2$, that is, $\\pi(1/2)^2 = \\pi/4$ square feet. So the area of the shaded portion of each tile is $ 1 - \\pi/4$ square feet. Since there are $8\\cdot 10 = 80$ tiles in the entire floor, the area of the total shaded region in square feet is \\[\n80\\left(1 - \\frac{\\pi}{4}\\right) = \\boxed{80 - 20\\pi}.\n\\]"
+}

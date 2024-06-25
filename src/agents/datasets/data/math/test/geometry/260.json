@@ -1,0 +1,6 @@
+{
+    "problem": "Given quadrilateral $ABCD$ with $A(3,7)$, $B(3,5)$, $C(-1,1)$, and $D(-1,3)$, find the number of square units in the area of the quadrilateral.",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Quadrilateral $ABCD$ is a parallelogram, so we can find the area by multiplying the base and height.  Let's take $CD$ to be the base.\n\n[asy]\npen sm=fontsize(9);\npair A=(3,7), B=(3,5), C=(-1,1), D=(-1,3), E=(3,1);\ndraw(A--B--C--D--cycle);\ndraw(B--E--C, dotted);\nlabel(\"$A(3,7)$\", A, NE, sm);\nlabel(\"$B(3,5)$\", B, E, sm);\nlabel(\"$E(3,1)$\", E, SE, sm);\nlabel(\"$C(-1,1)$\", C, SW, sm);\nlabel(\"$D(-1,3)$\", D, NW, sm);\nlabel(\"$4$\", (C+E)/2, S, sm);\nlabel(\"$2$\", (C+D)/2, W, sm);\ndraw(rightanglemark(B,E,C));\n[/asy]\n\nThe length of $CD$ is $2$, and the length of $CE$ is $4$, so the area of parallelogram $ABCD$ is $2\\cdot4 = \\boxed{8}$."
+}

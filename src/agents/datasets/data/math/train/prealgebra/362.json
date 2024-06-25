@@ -1,0 +1,6 @@
+{
+    "problem": "For any positive integer $n$, the value of $n!$ is the product of the first $n$ positive integers.  For example, $4! = 4\\cdot 3\\cdot 2\\cdot 1 =24$.  What is the greatest common divisor of $5!$ and $7!$ ?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Rather than finding the prime factorization of $5!$ and $7!$, we note that  \\[7! = 7\\cdot 6\\cdot 5 \\cdot 4\\cdot 3\\cdot 2 \\cdot 1 = 7\\cdot 6\\cdot 5!.\\]Therefore, $7!$ is a multiple of $5!$, which means that $5!$ is the greatest common divisor of $5!$ and $7!$ (since it is a divisor of $7!$ and is the largest divisor of $5!$). So, we have  \\[5! = 5\\cdot 4\\cdot 3\\cdot 2\\cdot 1 = \\boxed{120}.\\]"
+}

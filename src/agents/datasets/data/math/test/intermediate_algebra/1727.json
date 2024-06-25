@@ -1,0 +1,6 @@
+{
+    "problem": "One of the roots of\n\\[z^4 + az^3 + 5z^2 - iz - 6 = 0\\]is $2i,$ where $a$ is a complex number.  Enter the other three roots, separated by commas.",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since $2i$ is a root,\n\\[(2i)^4 + a(2i)^3 + 5(2i)^2 - i(2i) - 6 = 0.\\]Solving, we find $a = i,$ so the polynomial is\n\\[z^4 + iz^3 + 5z^2 - iz - 6 = 0.\\]We can take out a factor of $z - 2i,$ to get\n\\[(z - 2i)(z^3 + 3iz^2 - z - 3i) = 0.\\]We can check that $z = 1$ and $z = -1$ are solutions of the cubic, so we can take out factors of $z - 1$ and $z + 1,$ to get\n\\[(z - 2i)(z - 1)(z + 1)(z + 3i) = 0.\\]Therefore, the other roots are $\\boxed{1,-1,-3i}.$"
+}

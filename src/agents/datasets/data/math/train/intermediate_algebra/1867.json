@@ -1,0 +1,6 @@
+{
+    "problem": "In the eight-term sequence $A,B,C,D,E,F,G,H$, the value of $C$ is $5$ and the sum of any three consecutive terms is $30$.  What is $A+H$?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We will consider the sum $A+B+C+D+E+F+G+H$. We know that the sum of any three consecutive terms is $30$ and that $C=5$, so $A+B+C=A+B+5=30$ and thus $A+B=25$. Now, we have\n\\[A+B+C+D+E+F+G+H=A+(B+C+D)+(E+F+G)+H=A+30+30+H=A+H+60\\]and\n\\[A+B+C+D+E+F+G+H=(A+B)+(C+D+E)+(F+G+H)=25+30+30=85.\\]Equating the two values we obtained for the sum, we find that $A+H+60=85$, so $A+H=\\boxed{25}$."
+}

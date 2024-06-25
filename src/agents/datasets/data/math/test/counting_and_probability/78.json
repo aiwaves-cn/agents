@@ -1,0 +1,6 @@
+{
+    "problem": "For how many integers $n$ where $2 \\le n \\le 100$ is $\\binom{n}{2}$ odd?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "$\\binom{n}{2} = \\frac{n(n-1)}{2}$. In order for this fraction to be odd, neither $n$ nor $n-1$ can be divisible by $4$, because only one of $n$ and $n-1$ can be even. There are $25$ integers where $n$ is divisible by $4$, namely the multiples of $4$ from $4$ to $100$. There are $24$ integers where $n-1$ is divisible by $4$. We can obtain these integers by incrementing all the multiples of $4$ by $1$, but we must not include $100$ since $100+1 = 101 > 100$. Therefore, there are $49$ invalid integers, so there are $99 - 49 = \\boxed{50}$ valid integers."
+}

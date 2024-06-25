@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\{a_k\\}$ be a sequence of integers such that $a_1=1$ and $a_{m+n}=a_m+a_n+mn,$ for all positive integers $m$ and $n.$ Find $a_{12}.$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\na_2 &= a_1 + a_1 + 1 = 3, \\\\\na_3 &= a_1 + a_2 + 2 = 6, \\\\\na_6 &= a_3 + a_3 + 9 = 21, \\\\\na_{12} &= a_6 + a_6 + 36 = \\boxed{78}.\n\\end{align*}"
+}

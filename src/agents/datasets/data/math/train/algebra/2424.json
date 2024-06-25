@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x^2-mx+24$ be a quadratic with roots $x_1$ and $x_2$. If $x_1$ and $x_2$ are integers, how many different values of $m$ are possible?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Without loss of generality, let $x_1$ be the smaller root. In the quadratic $ax^2+bx+c$, the roots sum to $\\frac{-b}{a}$ and multiply to $\\frac{c}{a}$. Therefore, $x_1x_2=\\frac{24}{1}=24$ and $x_1+x_2=m$. Since $x_1$ and $x_2$ must be integers, there are only 4 positive integer pairs of $(x_1,x_2)$ such that the two multiply to 24 -- $(1,24), (2,12), (3,8), (4,6)$ -- and the 4 corresponding negations of those values.  Note that for each of these $(x_1,x_2)$, each $m=x_1+x_2$ is distinct. Because $x_1+x_2=x_2+x_1$, the value of $m$ does not change if the order of the roots are reversed, so there are only $4+4=\\boxed{8}$ possible values of $m$."
+}

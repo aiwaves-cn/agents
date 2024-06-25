@@ -1,0 +1,6 @@
+{
+    "problem": "If $$1+22+333+4444+55555+666666+7777777+88888888$$is congruent to $n$ modulo 9, where $0\\le n<9$, then what is the value of $n$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "A number is congruent to the sum of its digits $\\pmod 9$. Thus, \\begin{align*}\n1+22+333&+4444+55555+666666+7777777+88888888\\\\ &\\equiv 1+4+9+16+25+36+49+64 \\\\\n&\\equiv 1+4+0+7+7+0+4+1 \\\\\n&= 24 \\\\\n&\\equiv \\boxed{6}\\pmod 9.\n\\end{align*}"
+}

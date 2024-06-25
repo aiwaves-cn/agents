@@ -1,0 +1,6 @@
+{
+    "problem": "There exist vectors $\\mathbf{a}$ and $\\mathbf{b}$ such that\n\\[\\mathbf{a} + \\mathbf{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix},\\]where $\\mathbf{a}$ is parallel to $\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix},$ and $\\mathbf{b}$ is orthogonal to $\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}.$  Find $\\mathbf{b}.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{a}$ is parallel to $\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix},$\n\\[\\mathbf{a} = t \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} t \\\\ 2t \\end{pmatrix}\\]for some scalar $t.$  Then\n\\[\\mathbf{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix} - \\begin{pmatrix} t \\\\ 2t \\end{pmatrix} = \\begin{pmatrix} 4 - t \\\\ 7 - 2t \\end{pmatrix}.\\]We want this to be orthogonal to $\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix},$ so\n\\[\\begin{pmatrix} 4 - t \\\\ 7 - 2t \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} = 0.\\]Then $(4 - t)(1) + (7 - 2t)(2) = 0.$  Solving, we find $t = \\frac{18}{5}.$  Then $\\mathbf{b} = \\boxed{\\begin{pmatrix} 2/5 \\\\ -1/5 \\end{pmatrix}}.$"
+}

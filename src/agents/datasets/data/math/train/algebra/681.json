@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\n\\sqrt{x} &\\text{ if }x>4, \\\\\nx^2 &\\text{ if }x \\le 4.\n\\end{array}\n\\right.\\]Find $f(f(f(2)))$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We start from the inside out. Since $2<4$, $f(2)=2^2=4$. So $f(f(f2)))=f(f(4))$. Since $4 \\le 4$, $f(4)=4^2=16$. So $f(f(4)=f(16)$. Since $16>4$, $f(16)=\\sqrt{16}=\\boxed{4}$."
+}

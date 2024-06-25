@@ -1,0 +1,6 @@
+{
+    "problem": "If $a$ is a nonzero integer and $b$ is a positive number such that $ab^2=\\log_{10} b$, what is the median of the set $\\{0, 1, a, b,\n1/b\\}$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Because $b<10^b$ for all $b>0$, it follows that $\\log_{10}b<b$.  If $b\\geq 1$, then $0<\\left(\\log_{10}b\\right)/b^2<1$, so $a$ cannot be an integer. Therefore $0<b<1$, so $\\log_{10}b<0$ and $a =\n\\left(\\log_{10}b\\right)/b^2<0$.  Thus $a<0<b<1<1/b$, and the median of the set is $\\boxed{b}$.\n\nNote that the conditions of the problem can be met with $b = 0.1$ and $a = -100$."
+}

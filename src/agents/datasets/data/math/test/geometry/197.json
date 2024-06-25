@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $\\angle ABC = 90^\\circ$, and point $D$ lies on segment $BC$ such that $AD$ is an angle bisector.  If $AB = 105$ and $BD = 42$, then find $AC$.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "By the angle bisector theorem, $AC/CD = AB/BD = 105/42 = 5/2$.  Let $AC = 5x$ and $CD = 2x$.\n\n[asy]\nunitsize(0.03 cm);\n\npair A, B, C, D;\n\nA = (0,105);\nB = (0,0);\nC = (100,0);\nD = (42,0);\n\ndraw(A--B--C--cycle);\ndraw(A--D);\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$D$\", D, S);\nlabel(\"$42$\", (B + D)/2, S);\nlabel(\"$105$\", (A + B)/2, W);\nlabel(\"$2x$\", (C + D)/2, S);\nlabel(\"$5x$\", (A + C)/2, NE);\n[/asy]\n\nThen by Pythagoras, $(2x + 42)^2 + 105^2 = (5x)^2$.  This simplifies to $21x^2 - 168x - 12789 = 0$, which factors as $21(x - 29)(x + 21) = 0$, so $x = 29$.  Therefore, $AC = 5x = \\boxed{145}$."
+}

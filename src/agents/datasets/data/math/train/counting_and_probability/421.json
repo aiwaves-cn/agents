@@ -1,0 +1,6 @@
+{
+    "problem": "Ben rolls 5 fair 12-sided dice.  The 12 faces of each die are numbered from 1 to 12. What is the probability that exactly two of the dice show an even number?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "There is a $\\frac{1}{2}$ probability that a 12-sided die will show an even number and a $\\frac{1}{2}$ probability that it will show an odd number. We can choose which dice will show the even numbers in $\\binom{5}{2}=10$ ways. For each way, there is a $\\left( \\frac{1}{2} \\right) ^5=\\frac{1}{32}$ probability that the chosen dice actually roll even numbers and the other dice roll odd numbers. Therefore, the probability that exactly two of the dice show an even number is $10\\cdot \\frac{1}{32}=\\boxed{\\frac{5}{16}}$."
+}

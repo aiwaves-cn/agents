@@ -1,0 +1,6 @@
+{
+    "problem": "When three standard dice are tossed, the numbers $a,b,c$ are obtained. Find the probability that $$(a-1)(b-1)(c-1) \\neq 0$$",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "None of $a,b,c$ are equal to 1 if and only if $(a-1)(b-1)(c-1) \\neq 0$. $a,b,c$ can only be $2,3,4,5,6$. The probability of this is $\\frac{5^3}{6^3}=\\boxed{\\frac{125}{216}}$."
+}

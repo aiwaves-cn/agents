@@ -1,0 +1,6 @@
+{
+    "problem": "In a recent wedding, the groom's age was fifteen years more than half the bride's age. If the sum of their ages was 51 years, how old was the groom?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let the groom's age be $g$ and the bride's age be $b$. We are trying to find the value of $g$. We can write a system of two equations to represent the given information. Here are our two equations: \\begin{align*}\ng &= \\frac{1}{2}b + 15 \\\\\ng + b &= 51.\n\\end{align*} The first equation represents the statement ``the groom's age was fifteen years more than half the bride's age.'' The second equation represents the statement ``if the sum of their ages was 51 years...'' We are solving for $g$, so we want to eliminate $b$. From the second equation, we get that $b=51-g$. Substituting that into the first equation to get rid of $b$, we have $g=\\frac{1}{2}(51-g)+15$, from which we get that $g=27$. Thus, the groom's age is $\\boxed{27}$ years old."
+}

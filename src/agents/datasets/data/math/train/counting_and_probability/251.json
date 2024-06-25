@@ -1,0 +1,6 @@
+{
+    "problem": "The lottery in our state consists of two drawings.  First, a MegaBall is picked from among 27 numbered balls.  Second, five WinnerBalls are picked from among 44 numbered balls. To win the lottery, you must pick the MegaBall number correctly and also pick the numbers on the five WinnerBalls (but you don't need to get the order right for the WinnerBalls).  What is the probability that the ticket I hold has the winning numbers?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "The probability that the MegaBall matches is $\\dfrac{1}{27}$ . The probability that the 5 WinnerBalls match is $\\dfrac{1}{\\binom{44}{5}}$. So my chances of winning are $\\left(\\dfrac{1}{27}\\right)\\times\\left(\\dfrac{1}{\\binom{44}{5}}\\right) = \\boxed{\\dfrac{1}{29,\\!322,\\!216}}$."
+}

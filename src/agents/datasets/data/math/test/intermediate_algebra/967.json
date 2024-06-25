@@ -1,0 +1,6 @@
+{
+    "problem": "The domain of the function $p(x) = x^2 + 4x + 4$ is $(-\\infty,\\infty)$. What is the range?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Notice that $p(x) = (x+2)^2$. The square of any real number is nonnegative, so we have $p(x)\\ge 0$ for all real $x$.\n\nGiven any $y\\ge 0$, we can in fact achieve $p(x)=y$ by setting $x=\\sqrt{y}-2$ (or $x=-\\sqrt{y}-2$), so the range of $p(x)$ is all nonnegative reals, or $\\boxed{[0,\\infty)}$."
+}

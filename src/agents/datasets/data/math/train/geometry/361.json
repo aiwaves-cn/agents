@@ -1,0 +1,6 @@
+{
+    "problem": "A spherical scoop of vanilla ice cream with radius of 2 inches is dropped onto the surface of a dish of hot chocolate sauce. As it melts, the ice cream spreads out uniformly forming a cylindrical region 8 inches in radius. Assuming the density of the ice cream remains constant, how many inches deep is the melted ice cream? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The ice cream sphere has volume $\\frac{4}{3}\\pi(2^3) = \\frac{32\\pi}{3}$ cubic inches.  Let the height of the cylindrical region be $h$; then, the volume of the cylindrical region is $\\pi (8^2)h=64\\pi h$.  Thus, we have \\[\\frac{32\\pi}{3} = 64\\pi h.\\] Dividing both sides by $64\\pi$ yields $h = \\boxed{\\frac{1}{6}}$ inches."
+}

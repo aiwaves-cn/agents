@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can one write the numbers 1, 2, 3, 4, 5, and 6 in a row so that given any number in the row, all of its divisors (not including itself) appear to its left?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We begin by finding all possible ways to arrange the 1, 2, 3, and 6.  There are only two orders which satisfy the conditions of the problem, namely $(1, 2, 3, 6)$ and $(1, 3, 2, 6)$.  We now insert the 4 into the lineup, keeping in mind that it must appear to the right of the 1 and 2.  There are three possible positions in the first case and two spots in the second case, bringing the total number of orderings to five.  Finally, when placing the 5 into any one of these orderings we need only ensure that it appears to the right of the 1, so there are five possibilities for each of our five orderings, making $\\boxed{25}$ orderings in all."
+}

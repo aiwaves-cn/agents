@@ -1,0 +1,6 @@
+{
+    "problem": "Two of the altitudes of the scalene triangle $ABC$ have length $4$ and $12$. If the length of the third altitude is also an integer, what is the biggest it can be?\n$\\textbf{(A)}\\ 4\\qquad \\textbf{(B)}\\ 5\\qquad \\textbf{(C)}\\ 6\\qquad \\textbf{(D)}\\ 7\\qquad \\textbf{(E)}\\ \\text{none of these}$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Assume we have a scalene triangle $ABC$. Arbitrarily, let $12$ be the height to base $AB$ and $4$ be the height to base $AC$. Due to area equivalences, the base $AC$ must be three times the length of $AB$.\nLet the base $AB$ be $x$, thus making $AC = 3x$. Thus, setting the final height to base $BC$ to $h$, we note that (by area equivalence) $\\frac{BC \\cdot h}{2} = \\frac{3x \\cdot 4}{2} = 6x$. Thus, $h = \\frac{12x}{BC}$. We note that to maximize $h$ we must minimize $BC$. Using the triangle inequality, $BC + AB > AC$, thus $BC + x > 3x$ or $BC > 2x$. The minimum value of $BC$ is $2x$, which would output $h = 6$. However, because $BC$ must be larger than $2x$, the minimum integer height must be $\\boxed{5}$."
+}

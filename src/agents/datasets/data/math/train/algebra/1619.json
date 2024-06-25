@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\sqrt{8} \\times \\sqrt{50}$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since a square root is an exponent of $\\frac{1}{2}$ and since exponents distribute across multiplication, we can combine the radicals. \\[\n\\sqrt{8}\\cdot \\sqrt{50}=\\sqrt{8\\cdot50}.\n\\] Now split the radicand into prime factors: $8\\cdot50=2\\cdot2\\cdot2\\cdot2\\cdot5^2=(2\\cdot2)^2\\cdot5^2$.  We find $\\sqrt{8\\cdot50}=\\sqrt{(2\\cdot2)^2\\cdot5^2}=2\\cdot2\\cdot5=\\boxed{20}$."
+}

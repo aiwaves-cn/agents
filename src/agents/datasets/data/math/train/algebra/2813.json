@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $y = -16t^2 + 60t$ describes the height (in feet) of a projectile launched from the ground at 60 feet per second upward. In how many seconds will the projectile first reach 56 feet in height? Express your answer as a decimal rounded to the nearest hundredth.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Setting $y$ to 56, we find the following: \\begin{align*}\n56& = -16t^2 + 60t\\\\\n0 & = -16t^2 + 60t - 56\\\\\n& = 16t^2 - 60t + 56\\\\\n& = 4t^2 - 15t + 14\\\\\n& = (t - 2)(4t - 7)\n\\end{align*}Our possible values for $t$ are $\\frac{7}{4} = 1.75$ or $2.$ Of these, we choose the smaller $t$, or $\\boxed{1.75}.$"
+}

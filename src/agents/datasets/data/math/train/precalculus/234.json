@@ -1,0 +1,6 @@
+{
+    "problem": "Find the integer $n,$ $-90 < n < 90,$ such that $\\tan n^\\circ = \\tan 312^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Since the tangent function has period $180^\\circ,$\n\\[\\tan (312^\\circ - 2 \\cdot 180^\\circ) = \\tan (-48^\\circ),\\]so $n = \\boxed{-48}.$"
+}

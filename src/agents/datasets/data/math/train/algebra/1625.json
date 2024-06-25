@@ -1,0 +1,6 @@
+{
+    "problem": "The quadratic $8x^2+12x-14$ has two real roots. What is the sum of the squares of these roots? Express your answer as a common fraction in lowest terms.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $x_1$ and $x_2$ be the roots of the equation $8x^2+12x-14$. We want to find $x_1^2+x_2^2$. Note that $x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2$. We know that $x_1+x_2$, the sum of the roots, is equal to $\\frac{-b}{a}$, which for this equation is $\\frac{-12}{8}=\\frac{-3}{2}$. Likewise, we know that $x_1x_2$, the product of the roots, is equal to $\\frac{c}{a}$, which for this equation is $\\frac{-14}{8}=\\frac{-7}{4}$. Thus, $x_1^2+x_2^2=\\left(\\frac{-3}{2}\\right)^2-2\\left(\\frac{-7}{4}\\right)=\\frac{9}{4}+\\frac{14}{4}=\\boxed{\\frac{23}{4}}$."
+}

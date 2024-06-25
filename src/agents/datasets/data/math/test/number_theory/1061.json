@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the number of solutions in $x$ of the congruence $64x\\equiv 2\\pmod {66}$ such that $0< x\\le 100$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We can simplify the congruence as follows: \\begin{align*}\n64x&\\equiv 2\\pmod {66}\\\\\n32x&\\equiv 1\\pmod {33}\\\\\n-x&\\equiv 1\\pmod {33}\\\\\nx&\\equiv -1\\pmod{33}\\\\\nx&\\equiv 32\\pmod{33}.\n\\end{align*} The first few positive solutions to this are $32$, $32+33=65$, $32+2\\cdot 33=98$, after which the solutions are clearly greater than $100$ and so are extraneous. Thus there are $\\boxed{3}$ solutions in the given range."
+}

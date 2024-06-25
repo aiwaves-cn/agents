@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_0 = 6$ and\n\\[a_n = \\frac{a_{n - 1}}{1 + a_{n - 1}}\\]for all $n \\ge 1.$  Find $a_{100}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $b_n = \\frac{1}{a_n}.$  Then $a_n = \\frac{1}{b_n},$ so\n\\[\\frac{1}{b_n} = \\frac{\\frac{1}{b_{n - 1}}}{1 + \\frac{1}{b_{n - 1}}} = \\frac{1}{b_{n - 1} + 1},\\]so $b_n = b_{n - 1} + 1.$  Since $b_0 = \\frac{1}{6},$ it follows that $b_n = n + \\frac{1}{6}$ for all $n.$  Hence,\n\\[a_n = \\frac{1}{n + \\frac{1}{6}} = \\frac{6}{6n + 1}.\\]for all $n.$  It follows that $a_{100} = \\boxed{\\frac{6}{601}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ and $y$ are positive integers such that $5x+3y=100$, what is the greatest possible value of $xy$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We solve for $y$ in terms of $x$: \\[y = \\frac{100 - 5x}{3}.\\] Then we express $xy$ in terms of $x$: \\[xy = x\\frac{100 - 5x}{3} = \\frac{100x - 5x^2}{3} = -\\frac{5}{3}x^2 + \\frac{100}{3}x.\\] The graph of this expression is a parabola facing downwards.  The greatest possible value of $xy$ occurs at the vertex of this parabola, which occurs when $x = \\frac{-100/3}{2\\cdot -5/3} = 10$.  Then,  \\[xy = 10\\cdot \\frac{50}{3} = \\frac{500}{3}.\\]   However, this is not an integer.  So, we test the two closest integer values of $x$: $x=9$ and $x=11$, to see if either of these yield integer values for $y$.\n\nWhen $x=9$, $y=\\frac{55}{3}$, which is not an integer.  When $x=11$, $y=\\frac{45}{3}=15$, which is an integer.  In this case, \\[xy = 11\\cdot 15 = \\boxed{165}.\\]"
+}

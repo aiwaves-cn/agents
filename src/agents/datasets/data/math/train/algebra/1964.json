@@ -1,0 +1,6 @@
+{
+    "problem": "The line $ax+(a+1)y=a+2$ passes through the point $(4,-8)$. Find $a$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since the line passes through $(4,-8)$, we know the equation will be satisfied when we plug in $x=4$ and $y=-8$. This gives\n\n\\begin{align*}\na(4)+(a+1)(-8)&=a+2\\\\\n4a-8a-8&=a+2\\\\\n-4a-8&=a+2\\\\\n-10&=5a\\\\\n-2&=a.\n\\end{align*}Thus $a=\\boxed{-2}$. The equation is $-2x-y=0$, or $y=-2x$, and we can see that $(4,-8)$ lies along this line."
+}

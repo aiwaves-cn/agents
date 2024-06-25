@@ -1,0 +1,6 @@
+{
+    "problem": "My soccer team has 16 players.  I have to choose a starting lineup of a goalie and 10 regular players (the regular players are interchangeable).  How many different starting lineups can I choose?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "First we choose the goalie, and any of the 16 people can be the goalie. Then we choose 10 more players from the remaining 15 players, which is the same as choosing a committee. The answer is \\[16\\binom{15}{10}=16\\binom{15}{5}=16\\times\\frac{15\\times 14\\times 13\\times 12\\times 11}{5\\times 4\\times 3\\times 2\\times 1}=\\boxed{48,\\!048}.\\]"
+}

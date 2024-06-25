@@ -1,0 +1,6 @@
+{
+    "problem": "Find $k$ if\n\\[(\\sin \\alpha + \\csc \\alpha)^2 + (\\cos \\alpha + \\sec \\alpha)^2 = k + \\tan^2 \\alpha + \\cot^2 \\alpha.\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We have that\n\\begin{align*}\nk &= (\\sin \\alpha + \\csc \\alpha)^2 + (\\cos \\alpha + \\sec \\alpha)^2 - \\tan^2 \\alpha - \\cot^2 \\alpha \\\\\n&= \\left( \\sin \\alpha + \\frac{1}{\\sin \\alpha} \\right)^2 + \\left( \\cos \\alpha + \\frac{1}{\\cos \\alpha} \\right)^2 - \\frac{\\sin^2 \\alpha}{\\cos^2 \\alpha} - \\frac{\\cos^2 \\alpha}{\\sin^2 \\alpha} \\\\\n&= \\sin^2 \\alpha + 2 + \\frac{1}{\\sin^2 \\alpha} + \\cos^2 \\alpha + 2 + \\frac{1}{\\cos^2 \\alpha} - \\frac{\\sin^2 \\alpha}{\\cos^2 \\alpha} - \\frac{\\cos^2 \\alpha}{\\sin^2 \\alpha} \\\\\n&= 5 + \\frac{1 - \\sin^2 \\alpha}{\\cos^2 \\alpha} + \\frac{1 - \\cos^2 \\alpha}{\\sin^2 \\alpha} \\\\\n&= 5 + \\frac{\\cos^2 \\alpha}{\\cos^2 \\alpha} + \\frac{\\sin^2 \\alpha}{\\sin^2 \\alpha} \\\\\n&= \\boxed{7}.\n\\end{align*}"
+}

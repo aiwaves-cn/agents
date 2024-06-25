@@ -1,0 +1,6 @@
+{
+    "problem": "If three coins are tossed at the same time, what is the probability of getting two tails and one head? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "The probability of getting two tails followed by one head is $\\left(\\frac{1}{2}\\right)^3=\\frac{1}{8}$.  The probability of getting a tail followed by a head followed by a tail is also $\\left(\\frac{1}{2}\\right)^3=\\frac{1}{8}$.  Finally, the probability of getting a head followed by two tails is $\\left(\\frac{1}{2}\\right)^3=\\frac{1}{8}$ as well.  In total, the probability of getting two tails and one head is $\\frac{1}{8}+\\frac{1}{8}+\\frac{1}{8}=\\boxed{\\frac{3}{8}}$."
+}

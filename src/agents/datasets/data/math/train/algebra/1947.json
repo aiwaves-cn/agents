@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) = \\left\\{\n\\begin{array}{cl}\n-x + 3 & \\text{if } x \\le 0, \\\\\n2x - 5 & \\text{if } x > 0.\n\\end{array}\n\\right.\\]How many solutions does the equation $f(f(x)) = 4$ have?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "To solve the equation $f(f(x)) = 4,$ we first find the values $x$ such that $f(x) = 4.$\n\nEither $f(x) = -x + 3$ (for $x \\le 0$) or $f(x) = 2x - 5$ (for $x > 0$). If $-x + 3 = 4,$ then $x = -1.$ Note that this value satisfies $x \\le 0.$ If $2x - 5 = 4,$ then $x = 9/2.$ Note that this value satisfies $x > 0.$ Therefore, the solutions to $f(x) = 4$ are $x = -1$ and $x = 9/2.$\n\nNext, we solve for the values $x$ such that $f(x) = -1.$ If $-x + 3 = -1,$ then $x = 4.$ This value does not satisfy $x \\le 0.$ If $2x - 5 = -1,$ then $x = 2.$ This value satisfies $x > 0.$\n\nFinally, we solve for the values $x$ such that $f(x) = 9/2.$ If $-x + 3 = 9/2,$ then $x = -3/2.$ This value satisfies $x \\le 0.$ If $2x - 5 = 9/2,$ then $x = 19/4.$ This value satisfies $x > 0.$\n\nTherefore, the equation $f(f(x)) = 4$ has the solutions $x = 2,$ $-3/2,$ and $19/4,$ for a total of $\\boxed{3}$ solutions."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the volume of a pyramid whose base is one face of a cube of side length $2$, and whose apex is the center of the cube? Give your answer in simplest form.\n\n[asy]\nimport three;\ntriple A,B,C,D,EE,F,G,H;\nA = (0,0,0);\nB = (1,0,0);\nC = (1,1,0);\nD= (0,1,0);\nEE = (0,0,1);\nF = B+EE;\nG = C + EE;\nH = D + EE;\nO = G/2;\ndraw(surface(B--O--C--cycle),red,nolight);\ndraw(surface(C--O--D--cycle),red+white,nolight);\ndraw(B--C--D);\ndraw(B--A--D,dashed);\ndraw(EE--F--G--H--EE);\ndraw(A--EE,dashed);\ndraw(B--F);\ndraw(C--G);\ndraw(D--H);\ndraw(A--O--C,dashed);\ndraw(B--O--D,dashed);\ndot(A); dot(B); dot(C); dot(D); dot(EE); dot(F); dot(G); dot(H); dot(O);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The base of the pyramid is a square of side length $2$, and thus has area $2^2=4$. The height of the pyramid is half the height of the cube, or $\\frac 12\\cdot 2 = 1$. Therefore, the volume of the pyramid is \\begin{align*}\n\\frac 13\\cdot (\\text{area of base})\\cdot (\\text{height}) &= \\frac 13\\cdot 4\\cdot 1 \\\\\n&= \\boxed{\\frac 43}.\n\\end{align*}"
+}

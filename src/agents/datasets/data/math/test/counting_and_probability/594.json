@@ -1,0 +1,6 @@
+{
+    "problem": "A palindrome is a number which reads the same forward as backward. How many five-digit palindromes can be made from the digits 1, 2, and 9?  (Each digit may be used more than once.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "A five-digit palindrome would be of the form $ABCBA$, where $A$, $B$, and $C$ are digits (not necessarily distinct) from $0$ to $9$ (with $A$ from $1$ to $9$). We have three possibilities for each of $A$, $B$ and $C,$ which gives us $3^3 = \\boxed{27}$ possible palindromes."
+}

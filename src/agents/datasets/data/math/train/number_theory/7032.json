@@ -1,0 +1,6 @@
+{
+    "problem": "Sarah intended to multiply a two-digit number and a three-digit number, but she left out the multiplication sign and simply placed the two-digit number to the left of the three-digit number, thereby forming a five-digit number. This number is exactly nine times the product Sarah should have obtained. What is the sum of the two-digit number and the three-digit number?\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $x$ be the two-digit number, $y$ be the three-digit number. Putting together the given, we have $1000x+y=9xy \\Longrightarrow 9xy-1000x-y=0$. Using SFFT, this factorizes to $(9x-1)\\left(y-\\dfrac{1000}{9}\\right)=\\dfrac{1000}{9}$, and $(9x-1)(9y-1000)=1000$.\nSince $89 < 9x-1 < 890$, we can use trial and error on factors of 1000. If $9x - 1 = 100$, we get a non-integer. If $9x - 1 = 125$, we get $x=14$ and $y=112$, which satisifies the conditions. Hence the answer is $112 + 14 = \\boxed{126}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, point $D$ is on segment $BC$, the measure of angle $BAC$ is 40 degrees, and triangle $ABD$ is a reflection of triangle $ACD$ over segment $AD$. What is the measure of angle $B$?\n\n[asy]\nsize(101);\npair B = (0,0); pair C = (2,0); pair D = (1,0); pair A = (1, tan(70*pi/180));\ndraw(A--B--C--cycle,linewidth(1));\nlabel(\"$A$\",A,N); label(\"$B$\",B,W); label(\"$C$\",C,E);\n\ndraw(A--D,linetype(\"2 4\")+linewidth(1));\nlabel(\"$D$\",D,S);[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "Since $\\triangle ADB$ is the mirror image of $\\triangle ADC$, we have that $m\\angle B = m\\angle C$.  Since $\\triangle ABC$ is a triangle, we have that $m\\angle A + m\\angle B + m\\angle C = 180^\\circ$.  Solving, we find that $m\\angle B = \\frac{180^\\circ - 40^\\circ}{2} = \\boxed{70^\\circ}$."
+}

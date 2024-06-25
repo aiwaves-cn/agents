@@ -1,0 +1,6 @@
+{
+    "problem": "Let $N$ be the product of all integers from 1 through 10 that are not divisible by 5. What is the units digit of $N$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "$N=1\\times2\\times3\\times4\\times6\\times7\\times8\\times9$. We find the units digit of $N$ by disregarding the other digits as we progressively multiply: the units digit of $1\\times2$ is 2; the units digit of $2\\times3$ is 6; the units digit of $6\\times4$ is 4; the units digit of $4\\times6$ is 4; the units digit of $4\\times7$ is 8; the units digit of $8\\times8$ is 4; finally, the units digit of $4\\times9$ is 6. Therefore, the units digit of $N$ is $\\boxed{6}$."
+}

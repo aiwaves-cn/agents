@@ -1,0 +1,6 @@
+{
+    "problem": "Find $\\csc 330^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\csc 330^\\circ = \\frac{1}{\\sin 330^\\circ}.\\]Since the sine function has period $360^\\circ,$\n\\[\\sin 330^\\circ = \\sin (330^\\circ - 360^\\circ) = \\sin (-30^\\circ) = -\\sin 30^\\circ = -\\frac{1}{2},\\]so\n\\[\\frac{1}{\\sin 330^\\circ} = \\boxed{-2}.\\]"
+}

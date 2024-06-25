@@ -1,0 +1,6 @@
+{
+    "problem": "Ben rolls two fair six-sided dice. What is the expected value of the larger of the two numbers rolled? Express your answer as a fraction.  (If the two numbers are the same, we take that number to be the \"larger\" number.)",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 36 possible outcomes for the two dice. Of these, there is 1 where both dice roll a six, 5 where the first die rolls a six and the other rolls something less than a six, and 5 more where the second die rolls a six and the first die rolls something less than a six. So, there are a total of $1+5+5=11$ ways the larger number rolled can be a six. Similarly, there are $1+4+4=9$ ways the larger number rolled can be a five, $1+3+3=7$ ways the larger number rolled can be a four, $1+2+2=5$ ways the larger number rolled can be a three, $1+1+1=3$ ways the larger number rolled can be a two, and $1$ way the larger number rolled can be a one. The expected value of the larger number is \\begin{align*}\n\\frac{1}{36}(11(6)+9(5)&+7(4)+5(3)+3(2)+1(1))\\\\\n&=\\frac{1}{36}(66+45+28+15+6+1)\\\\\n&=\\boxed{\\frac{161}{36}}\n\\end{align*}"
+}

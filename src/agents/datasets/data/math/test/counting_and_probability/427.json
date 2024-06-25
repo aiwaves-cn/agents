@@ -1,0 +1,6 @@
+{
+    "problem": "Phillip flips an unfair coin eight times. This coin is twice as likely to come up heads as tails. How many times as likely is Phillip to get exactly three heads than exactly two heads?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The probability that Phillip flips $k$ heads is $$\\binom8k\\left(\\frac23\\right)^k\\left(\\frac13\\right)^{8-k}=\\frac1{3^8}\\binom8k2^k,$$  since there are $\\binom{8}{k}$ ways that $k$ out of $8$ coins will come up heads, and each of these arrangements of $k$ heads out of $8$ coins occurs with probability $\\left(\\frac23\\right)^k\\left(\\frac13\\right)^{8-k}$.   Therefore, the ratio of the two probabilities in the problem is equal to $$\\frac{\\binom832^3}{\\binom822^2}=\\frac{8\\cdot7\\cdot6}{3\\cdot2\\cdot1}\\cdot\\frac{2\\cdot1}{8\\cdot7}\\cdot\\frac{2^3}{2^2}=\\frac{6}{3}\\cdot2=\\boxed{4}.$$"
+}

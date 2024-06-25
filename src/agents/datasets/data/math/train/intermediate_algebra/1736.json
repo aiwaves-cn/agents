@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a_1, a_2, \\dots$ be a sequence defined by $a_1 = a_2=1$ and $a_{n+2}=a_{n+1}+a_n$ for $n\\geq 1$. Find \\[\n\\sum_{n=1}^\\infty \\frac{a_n}{4^{n+1}}.\n\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $X$ denote the desired sum. Note that \\begin{align*}\nX &= \\phantom{\\frac{0}{4^0} + \\frac{0}{4^1} +\\text{}} \\frac{1}{4^2} +\n\\frac{1}{4^3} + \\frac{2}{4^4} + \\frac{3}{4^5} + \\frac{5}{4^6} +\\dotsb\n\\\\\n4X &= \\phantom{\\frac{0}{4^0} + \\text{}} \\frac{1}{4^1} + \\frac{1}{4^2} +\n\\frac{2}{4^3} + \\frac{3}{4^4} + \\frac{5}{4^5} + \\frac{8}{4^6} +\\dotsb\n\\\\\n16X&= \\frac{1}{4^0} + \\frac{1}{4^1} + \\frac{2}{4^2} + \\frac{3}{4^3} +\n\\frac{5}{4^4} + \\frac{8}{4^5} + \\frac{13}{4^6} +\\dotsb\n\\end{align*}so that $X + 4X = 16X-1$, and $X=\\boxed{\\frac{1}{11}}$."
+}

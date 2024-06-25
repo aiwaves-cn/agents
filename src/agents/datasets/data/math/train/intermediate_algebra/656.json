@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate\n\\[i^{14762} + i^{14763} + i^{14764} + i^{14765}.\\]",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We can take out a factor of $i^{14762}$ to get\n\\[i^{14762} + i^{14763} + i^{14764} + i^{14765} = i^{14762} (1 + i + i^2 + i^3).\\]Since $i^2 = -1$ and $i^3 = -i,$\n\\[1 + i + i^2 + i^3 = 1 + i - 1 - i = 0.\\]Therefore, the expression is equal to $\\boxed{0}.$"
+}

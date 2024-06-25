@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive integer $N$ with the following property: of the three numbers $N$, $N+1$, and $N+2$, one of them is divisible by $2^2$, one of them is divisible by $3^2$, one is divisible by $5^2$, and one is divisible by $7^2$.",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "The most efficient means of searching for this trio of integers is to begin with the multiples of $7^2$.  The first such number is 49, which almost works, since 50 is divisible by $5^2$ and 48 is divisible by $2^2$.  But none of the nearby numbers is divisible by $3^2$, so we move on to the next multiple of $7^2$, which is 98.  To our delight we discover that $3^2$ divides 99, while $2^2$ and $5^2$ divide 100.  Hence we should take $N=\\boxed{98}$."
+}

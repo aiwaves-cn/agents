@@ -1,0 +1,6 @@
+{
+    "problem": "For how many integer values of $a$ does the equation $x^2 + ax + 5a = 0$ have integer solutions for $x$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Suppose the roots of the quadratic are given by $m$ and $n$. Note that $$(x-m)(x-n) = x^2 - (m+n)x + mn = x^2 + ax + 5a,$$ and setting coefficients equal, it follows that  \\begin{align*}\nm + n &= -a \\\\\nmn &= 5a\n\\end{align*} (This also follows directly from Vieta's formulas.) Notice that the $a$ can be canceled by either dividing or noting that $$0 = 5a + 5 \\cdot (-a) = mn + 5(m+n).$$\n\nSimon's Favorite Factoring Trick can now be applied: $$mn + 5m + 5n + 25 = (m+5)(n+5) = 25.$$ It follows that $m+5$ and $n+5$ are divisors of $25$, whose pairs of divisors are given by $\\pm \\{(1,25),(5,5),(25,1)\\}$. Solving, we see that $(m,n)$ is in the set $$\\{(-4,20),(0,0),(20,-4),(-6,-30),(-10,-10),(-30,-6)\\}.$$ However, the two pairs of symmetric solutions yield redundant values for $a$, so it follows that the answer is $\\boxed{4}$."
+}

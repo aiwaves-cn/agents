@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)$ be a function such that for all $x,$ $f(x) = f(x + 1) + f(x - 1).$  Given that $f(15) = 20$ and $f(20) = 15,$ compute $f(20152015).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a = f(1)$ and $b = f(2).$  Then\n\\begin{align*}\nf(3) &= f(2) - f(1) = b - a, \\\\\nf(4) &= f(3) - f(2) = (b - a) - b = -a, \\\\\nf(5) &= f(4) - f(3) = -a - (b - a) = -b, \\\\\nf(6) &= f(5) - f(4) = -b - (-a) = a - b, \\\\\nf(7) &= f(6) - f(5) = (a - b) - (-b) = a, \\\\\nf(8) &= f(7) - f(6) = a - (a - b) = b.\n\\end{align*}Since $f(7) = f(1)$ and $f(8) = f(2),$ and each term depends only on the previous two terms, the function becomes periodic from here on, with a period of length 6.\n\nThen $f(3) = f(15) = 20$ and $f(2) = f(20) = 15,$ and\n\\[f(20152015) = f(1) = f(2) - f(3) = 15 - 20 = \\boxed{-5}.\\]"
+}

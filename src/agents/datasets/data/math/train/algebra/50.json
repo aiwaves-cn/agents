@@ -1,0 +1,6 @@
+{
+    "problem": "The roots of the equation $2x^2-mx+n=0$ sum to 6 and multiply to 10. What is the value of $m+n$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "In the quadratic $ax^2+bx+c$, the roots sum to $\\frac{-b}{a}$ and multiply to $\\frac{c}{a}$. Therefore, in the equation $2x^2-mx+n=0$, the roots sum to $\\frac{m}{2}=6$ and multiply to $\\frac{n}{2}=10$. Solving the first equation, we see that $m=12$ and solving the second equation, we see that $n=20$. Therefore, $m+n=12+20=\\boxed{32}$."
+}

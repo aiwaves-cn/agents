@@ -1,0 +1,6 @@
+{
+    "problem": "Let $O$ be the origin.  There exists a scalar $k$ so that for any points $A,$ $B,$ $C,$ and $D$ such that\n\\[3 \\overrightarrow{OA} - 2 \\overrightarrow{OB} + 5 \\overrightarrow{OC} + k \\overrightarrow{OD} = \\mathbf{0},\\]the four points $A,$ $B,$ $C,$ and $D$ are coplanar.  Find $k.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the given equation,\n\\[3 \\overrightarrow{OA} - 2 \\overrightarrow{OB} = -5 \\overrightarrow{OC} - k \\overrightarrow{OD}.\\]Let $P$ be the point such that\n\\[\\overrightarrow{OP} = 3 \\overrightarrow{OA} - 2 \\overrightarrow{OB} = -5 \\overrightarrow{OC} - k \\overrightarrow{OD}.\\]Since $3 + (-2) = 1,$ $P$ lies on line $AB.$  If $-5 - k = 1,$ then $P$ would also lie on line $CD,$ which forces $A,$ $B,$ $C,$ and $D$ to be coplanar.  Solving $-5 - k = 1,$ we find $k = \\boxed{-6}.$"
+}

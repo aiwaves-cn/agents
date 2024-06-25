@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the value of the infinite product $(2^{1/3})(4^{1/9})(8^{1/27})(16^{1/81}) \\dotsm.$  Enter your answer in the form \"\\sqrt[a]{b}\", which stands for $\\sqrt[a]{b}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can write the product as\n\\begin{align*}\n(2^{1/3})(4^{1/9})(8^{1/27})(16^{1/81}) \\dotsm &= 2^{1/3} \\cdot (2^2)^{1/9} \\cdot (2^3)^{1/27} \\cdot (2^4)^{1/81} \\dotsm \\\\\n&= 2^{1/3} \\cdot 2^{2/3^2} \\cdot 2^{3/3^3} \\cdot 2^{4/3^4} \\dotsm \\\\\n&= 2^{1/3 + 2/3^2 + 3/3^3 + 4/3^4 + \\dotsb}.\n\\end{align*}Let\n\\[S = \\frac{1}{3} + \\frac{2}{3^2} + \\frac{3}{3^3} + \\frac{4}{3^4} + \\dotsb.\\]Then\n\\[3S = 1 + \\frac{2}{3} + \\frac{3}{3^2} + \\frac{4}{3^3} + \\dotsb.\\]Subtracting these equations, we get\n\\[2S = 1 + \\frac{1}{3} + \\frac{1}{3^2} + \\frac{1}{3^3} + \\dotsb = \\frac{1}{1 - 1/3} = \\frac{3}{2},\\]so $S = \\frac{3}{4}.$\n\nTherefore, the infinite product is $2^{3/4} = \\boxed{\\sqrt[4]{8}}.$"
+}

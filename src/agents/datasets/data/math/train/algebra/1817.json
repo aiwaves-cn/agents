@@ -1,0 +1,6 @@
+{
+    "problem": "Each of Natalie's blueberry bushes yields eight containers of blueberries. If she can trade five containers of blueberries for two zucchinis, how many bushes does Natalie need to pick in order to have forty-eight zucchinis?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We know the following two equations: \\begin{align*}\n1\\text{ bush} &= 8\\text{ containers}\\\\\n5\\text{ containers} &= 2\\text{ zucchinis}.\n\\end{align*} To find the value of 48 zucchinis in terms of bushes, we multiply by fractions equal to 1 where the numerator and denominator are in different units, canceling units as we go. Thus, we set up the following equation to find our answer: $48\\text{ zucchinis} = 48\\text{ zucchinis}\\times \\frac{5\\text{ containers}}{2\\text{ zucchinis}}\\times\\frac{1 \\text{ bush}}{8\\text{ containers}}=\\boxed{15} \\text{ bushes}$."
+}

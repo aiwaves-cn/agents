@@ -1,0 +1,6 @@
+{
+    "problem": "James is six years older than Louise. Eight years from now, James will be four times as old as Louise was four years before now. What is the sum of their current ages?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Let $J$ represent James's current age and $L$ represent Louise's current age. Since James is six years older than Louise, we get $J=L+6$. We're also told in words that $J+8=4(L-4)$. We can substitute for $J$ in terms of $L$ into the second equation to get \\[(L+6)+8=4(L-4).\\] Expanding both products gives \\[ L+14=4L-16.\\] Adding 16 to both sides and subtracting 14 from both sides gives  $30=3L$, so $l=10$. So Louise is currently 10 years old, which means James is currently $10+6=16$ years old. The sum of their current ages is $10+16=\\boxed{26}$ years."
+}

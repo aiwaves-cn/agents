@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A = (3, \\theta_1)$ and $B = (9, \\theta_2)$ in polar coordinates.  If $\\theta_1 - \\theta_2 = \\frac{\\pi}{2},$ then find the distance $AB.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $O$ be the origin.  Then $\\angle AOB = \\frac{\\pi}{2},$ so by Pythagoras,\n\\[AB = \\sqrt{3^2 + 9^2} = \\boxed{3 \\sqrt{10}}.\\][asy]\nunitsize(0.5 cm);\n\npair A, B, O;\n\nA = 3*dir(100);\nB = 9*dir(10);\nO = (0,0);\n\ndraw(A--O--B--cycle);\n\ndraw((-2,0)--(10,0));\ndraw((0,-1)--(0,4));\n\nlabel(\"$A$\", A, NW);\nlabel(\"$B$\", B, E);\nlabel(\"$O$\", O, SW);\n[/asy]"
+}

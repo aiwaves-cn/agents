@@ -1,0 +1,6 @@
+{
+    "problem": "A 6-sided die is weighted so that the probability of any number being rolled is proportional to the value of the roll.  (So, for example, the probability of a 2 being rolled is twice that of a 1 being rolled.)  What is the expected value of a roll of this weighted die?  Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Let $x$ be the probability that a 1 is rolled.  Then the probability that a 2 is rolled is $2x$, the probability that a 3 is rolled is $3x$, and so on.  Since the sum of all these probabilities must be 1, we have that $x + 2x + \\cdots + 6x = 1$, which means that $21x = 1$, so $x = \\frac{1}{21}$.  Therefore \\[ E = \\frac{1}{21}(1) + \\frac{2}{21}(2) + \\cdots + \\frac{6}{21}(6) = \\frac{1^2 + 2^2 + \\cdots 6^2}{21} = \\boxed{\\frac{13}{3}}. \\]"
+}

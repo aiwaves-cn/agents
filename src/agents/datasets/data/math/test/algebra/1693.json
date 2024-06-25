@@ -1,0 +1,6 @@
+{
+    "problem": "For specific positive numbers $m$ and $n$, the quadratics $16x^2+36x+56$ and $(mx+n)^2$ differ only in their constant term. What is $mn$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The expansion of $(mx+n)^2$ is $m^2x^2+2mnx+n^2$. If $$16x^2+36x+56 = m^2x^2+2mnx+n^2,$$we can equate the coefficients of $x^2$ to get $16=m^2$, and thus $m=4$ (we ignore the solution $-4$ because we are given that $m$ is positive).\n\nWe can also equate the coefficients of $x$ above to get $36=2mn=2(4)n=8n$, and thus $n=\\frac{36}{8}=\\frac{9}{2}$.\n\nSo, $mn=4\\cdot\\frac92 = \\boxed{18}$."
+}

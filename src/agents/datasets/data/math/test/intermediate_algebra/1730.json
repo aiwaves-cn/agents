@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers such that $-1 < x < y < 1.$  Let $G$ be the sum of the infinite geometric series whose first term is $x$ and whose common ratio is $y,$ and let $G'$ be the sum of the infinite geometric series whose first term is $y$ and whose common ratio is $x.$  If $G = G',$ find $x + y.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that $G = \\frac{x}{1 - y}$ and $G' = \\frac{y}{1 - x},$ so\n\\[\\frac{x}{1 - y} = \\frac{y}{1 - x}.\\]Then $x(1 - x) = y(1 - y),$ so $x - x^2 = y - y^2.$   Then $x^2 - y^2 + y - x = 0.$  We can factor this as\n\\[(x - y)(x + y) - (x - y) = 0,\\]so $(x - y)(x + y - 1) = 0.$  Since $x < y,$ we must have $x + y = \\boxed{1}.$"
+}

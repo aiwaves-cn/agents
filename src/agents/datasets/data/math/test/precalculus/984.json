@@ -1,0 +1,6 @@
+{
+    "problem": "If $0^\\circ < x < 180^\\circ$ and $\\cos x + \\sin x = \\frac{1}{2},$ then $\\tan x$ can be expressed in the form $-\\frac{a + \\sqrt{b}}{c}$ when simplified, where $a,$ $b,$ and $c$ are positive integers.  Find $a + b + c.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the given equation, $\\cos x = \\frac{1}{2} - \\sin x.$  Substituting into $\\cos^2 x + \\sin^2 x = 1,$ we get\n\\[\\frac{1}{4} - \\sin x + \\sin^2 x + \\sin^2 x = 1.\\]This simplifies to $8 \\sin^2 x - 4 \\sin x - 3 = 0.$  By the quadratic formula,\n\\[\\sin x = \\frac{1 \\pm \\sqrt{7}}{4}.\\]Since $0^\\circ < x < 180^\\circ,$ $\\sin x$ is positive.  Hence,\n\\[\\sin x = \\frac{1 + \\sqrt{7}}{4}.\\]Then\n\\[\\cos x = \\frac{1}{2} - \\sin x = \\frac{1 - \\sqrt{7}}{4},\\]so\n\\begin{align*}\n\\tan x &= \\frac{\\sin x}{\\cos x} \\\\\n&= \\frac{1 + \\sqrt{7}}{1 - \\sqrt{7}} \\\\\n&= \\frac{(1 + \\sqrt{7})(1 + \\sqrt{7})}{(1 - \\sqrt{7})(1 + \\sqrt{7})} \\\\\n&= \\frac{1 + 2 \\sqrt{7} + 7}{-6} \\\\\n&= -\\frac{8 + 2 \\sqrt{7}}{6} \\\\\n&= -\\frac{4 + \\sqrt{7}}{3}.\n\\end{align*}Thus, $a + b + c = 4 + 7 + 3 = \\boxed{14}.$"
+}

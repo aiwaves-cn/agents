@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer that is a multiple of both 30 and 40 but not a multiple of 16?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Since 3 and 4 are relatively prime, their least common multiple is $3\\cdot4=12$.  Therefore, the least common multiple of 30 and 40 is 120.  Since $\\boxed{120}$ is not divisible by 16, it is the smallest common multiple of 30 and 40 which is not divisible by 16.\n\nNote: Every common multiple of two integers is a multiple of their least common multiple.  Therefore, it is not possible that the least common multiple is divisible by 16 but some other common multiple is not."
+}

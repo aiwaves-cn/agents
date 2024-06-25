@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\Delta ABC$ be an equilateral triangle. How many squares in the same plane as $\\Delta ABC$ share two vertices with the triangle?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "No square shares more than two vertices with the equilateral triangle, so we can find the number of squares having two of their vertices at two given points and triple the result.  Given 2 points, 3 squares may be drawn having these points as vertices.  The figure below shows a red equilateral triangle with the 3 squares that correspond to one of the sides of the triangle. Therefore, $\\boxed{9}$ squares share two vertices with the equilateral triangle. [asy]\nsize(200); defaultpen(linewidth(0.7));\ndotfactor=4;\ndot((0,0)); dot((0,1));\ndot(rotate(60)*(0,1));\ndraw((0,0)--(0,1)--(rotate(60)*(0,1))--cycle,p=red+2bp);\npath square=(0,0)--(0,1)--(1,1)--(1,0)--cycle;\ndraw(square,linetype(\"6 2 1 2\"));\ndraw(shift(-1,0)*square,linetype(\"5 2\"));\ndraw(rotate(45)*scale(1/sqrt(2))*square,linetype(\"1 4\"));\n[/asy]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of five-digit palindromes.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "A five-digit palindrome has digits in the form $abcba$.  Since the first digit cannot be 0, there are 9 choices for $a$.  There are 10 choices for each of $b$ and $c$.  Each different choice of $a$, $b$, and $c$ creates a distinct five-digit palindrome, so there are a total of $9 \\cdot 10 \\cdot 10 = \\boxed{900}$ of them."
+}

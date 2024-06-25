@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a^2=\\frac{16}{44}$ and $b^2=\\frac{(2+\\sqrt{5})^2}{11}$, where $a$ is a negative real number and $b$ is a positive real number. If $(a+b)^3$ can be expressed in the simplified form $\\frac{x\\sqrt{y}}{z}$ where $x$, $y$, and $z$ are positive integers, what is the value of the sum $x+y+z$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First we solve for $a$ and $b$. $$a=-\\sqrt{\\frac{16}{44}}=-\\frac{\\sqrt{16}}{\\sqrt{44}}=-\\frac{4}{2\\sqrt{11}}=-\\frac2{\\sqrt{11}}$$$$b=\\sqrt{\\frac{(2+\\sqrt{5})^2}{11}}=\\frac{2+\\sqrt{5}}{\\sqrt{11}}$$Now we solve for $(a+b)^3$. \\begin{align*}(a+b)^3&=\\left(-\\frac2{\\sqrt{11}}+\\frac{2+\\sqrt{5}}{\\sqrt{11}}\\right)^3=\\left(\\frac{\\sqrt{5}}{\\sqrt{11}}\\right)^3=\\frac{\\sqrt{5^3}}{\\sqrt{11^3}}\\\\\n&=\\frac{5\\sqrt{5}}{11\\sqrt{11}}=\\frac{5\\sqrt{5}}{11\\sqrt{11}}\\cdot\\frac{\\sqrt{11}}{\\sqrt{11}}=\\frac{5\\sqrt{55}}{121}\n\\end{align*}So, $x+y+z=5+55+121=\\boxed{181}$."
+}

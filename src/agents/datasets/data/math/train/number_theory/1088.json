@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of all positive integers that have four digits in base $2$. What is the sum of all of the elements in $S$, when expressed in base $2$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Any number in $S$ has a leftmost (eights) digit that is equal to $1$. The remaining three digits can either be $0$ or $1$, so there are a total of $2^3 = 8$ elements in $S$. Notice that element $x$ in $S$ can be paired with another element $10111_2-x$, which is the base $2$ number whose right-most three digits are the opposite of those of $x$. Thus, the sum of the elements in $S$ is equal to $4 \\times 10111_2 = 100_2 \\times 10111_2 = \\boxed{1011100}_2$."
+}

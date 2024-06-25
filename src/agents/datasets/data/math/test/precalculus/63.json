@@ -1,0 +1,6 @@
+{
+    "problem": "Convert the point $(4, 4, 4 \\sqrt{6})$ in rectangular coordinates to spherical coordinates.  Enter your answer in the form $(\\rho,\\theta,\\phi),$ where $\\rho > 0,$ $0 \\le \\theta < 2 \\pi,$ and $0 \\le \\phi \\le \\pi.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We have that $\\rho = \\sqrt{4^2 + 4^2 + (4 \\sqrt{6})^2} = 8 \\sqrt{2}.$  We want $\\phi$ to satisfy\n\\[4 \\sqrt{6} = 8 \\sqrt{2} \\cos \\phi,\\]so $\\phi = \\frac{\\pi}{6}.$\n\nWe want $\\theta$ to satisfy\n\\begin{align*}\n4 &= 8 \\sqrt{2} \\sin \\frac{\\pi}{6} \\cos \\theta, \\\\\n4 &= 8 \\sqrt{2} \\sin \\frac{\\pi}{6} \\sin \\theta.\n\\end{align*}Thus, $\\theta = \\frac{\\pi}{4},$ so the spherical coordinates are $\\boxed{\\left( 8 \\sqrt{2}, \\frac{\\pi}{4}, \\frac{\\pi}{6} \\right)}.$"
+}

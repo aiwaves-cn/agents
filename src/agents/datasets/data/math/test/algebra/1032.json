@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(x) =\n\\begin{cases}\n3x + 5 &\\text{if }x<-3, \\\\\n7-4x&\\text{if }x\\ge -3.\n\\end{cases}\n\\]Find $f(-10)$.",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Because $-10<-3$, we use the first case to determine that $f(-10) = 3(-10) + 5 = \\boxed{-25}$."
+}

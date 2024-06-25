@@ -1,0 +1,6 @@
+{
+    "problem": "Two circles are drawn in a 12-inch by 14-inch rectangle. Each circle has a diameter of 6 inches. If the circles do not extend beyond the rectangular region, what is the greatest possible distance (in inches) between the centers of the two circles?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Suppose we put the two circles in opposite corners of the rectangle so that the circles are tangent to the sides of the rectangle, and they are diagonally across from each other. Then the center of each circle is 3 inches in from each side of the rectangle that it touches. Now imagine a rectangle that has opposite corners at the centers of these circles. This smaller rectangle measures 8 inches by 6 inches. The diagonal of this rectangle is the greatest possible distance between the centers of the two circles. It helps if we recognize that these lengths are $3 \\times 2$ and $4 \\times 2$, which means we have a multiple of the 3-4-5 Pythagorean Triple. Thus, the length of the diagonal must be $5 \\times 2 = \\boxed{10\\text{ inches}}$. Indeed, $8^2 + 6^2 = 64 + 36 = 100 = 10^2$. [asy]\nimport olympiad; defaultpen(linewidth(0.8));\ndraw((0,0)--(14,0)--(14,12)--(0,12)--cycle);\ndraw(Circle((3,9),3)); draw(Circle((11,3),3));\ndraw((3,9)--(11,9)--(11,3)--(3,9)--(3,3)--(11,3),dashed);\ndot((11,3)^^(3,9));\n[/asy]"
+}

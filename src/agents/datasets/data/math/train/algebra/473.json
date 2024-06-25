@@ -1,0 +1,6 @@
+{
+    "problem": "What is the range of the function $y = \\frac{x^2 + 3x + 2}{x+1}$?  (Express your answer using interval notation.)",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We can factor the numerator to get $y = \\frac{(x+1)(x+2)}{x+1}$. If we exclude the case where $x = -1$, the function is equivalent to $y = x+2$. However, because $x$ cannot equal $-1$, $y$ cannot equal 1. Therefore, the range is all real numbers except for 1, which we may write as $y \\in \\boxed{(-\\infty, 1)\\cup(1, \\infty)}.$"
+}

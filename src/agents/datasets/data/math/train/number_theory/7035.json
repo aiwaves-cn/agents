@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of all positive integers $n$ for which $n^2-19n+99$ is a perfect square.Find the sum of all integers $n$ such that $\\dfrac{12}{n}$ is also an integer.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If $n^2-19n+99=x^2$ for some positive integer $x$, then rearranging we get $n^2-19n+99-x^2=0$. Now from the quadratic formula,\n$n=\\frac{19\\pm \\sqrt{4x^2-35}}{2}$\nBecause $n$ is an integer, this means $4x^2-35=q^2$ for some nonnegative integer $q$. Rearranging gives $(2x+q)(2x-q)=35$. Thus $(2x+q, 2x-q)=(35, 1)$ or $(7,5)$, giving $x=3$ or $9$. This gives $n=1, 9, 10,$ or $18$, and the sum is $1+9+10+18=\\boxed{38}$."
+}

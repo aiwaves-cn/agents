@@ -1,0 +1,6 @@
+{
+    "problem": "In a geometric sequence $a_1,$ $a_2,$ $a_3,$ $\\dots,$ where all the terms are positive, $a_5 - a_4 = 576$ and $a_2 - a_1 = 9.$  Find $a_1 + a_2 + a_3 + a_4 + a_5.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $a$ be the first term, and let $r$ be the common ratio.  Then $ar^4 - ar^3 = 576,$ so $ar^3 (r - 1) = 576.$  Also, $ar - a = 9,$ so $a(r - 1) = 9.$  Then $9r^3 = 576,$ so $r = 4.$  Then $3a = 9,$ so $a = 3.$  Therefore,\n\\[a_1 + a_2 + a_3 + a_4 + a_5 = 3 + 3 \\cdot 4 + 3 \\cdot 4^2 + 3 \\cdot 4^3 + 3 \\cdot 4^4 = \\frac{3 (4^5 - 1)}{4 - 1} = \\boxed{1023}.\\]"
+}

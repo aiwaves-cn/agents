@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest two-digit number that is divisible by both of its digits, and the digits are distinct?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since we are looking for the largest number, we should start at 99 and work our way down.  No number in the 90s works, because the only numbers divisible by $9$ are $90$ and $99$. $90$ is invalid because no number is divisible by zero, and $99$ is invalid because the digits are the same.  The same reasoning applies to numbers with $8$, $7$, $6$, or $5$ in the tens place.  When we get to the 40s, however, there are three numbers that are divisible by $4$: $40$, $44$, and $48$. $48$ is also divisible by $8$, so the number we are looking for is $\\boxed{48}.$"
+}

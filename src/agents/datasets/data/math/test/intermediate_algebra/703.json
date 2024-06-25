@@ -1,0 +1,6 @@
+{
+    "problem": "The numbers $\\sin x,$ $\\cos x,$ $\\tan x$ form a geometric sequence.  Find\n\\[\\cos^3 x + \\cos^2 x.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[\\cos^2 x = \\sin x \\tan x = \\sin x \\cdot \\frac{\\sin x}{\\cos x} = \\frac{\\sin^2 x}{\\cos x}.\\]Then $\\cos^3 x = \\sin^2 x = 1 - \\cos^2 x,$ so $\\cos^3 x + \\cos^2 x = \\boxed{1}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(n) = \\left\\{\n\\begin{array}{cl}\n\\lfloor n \\rfloor & \\text{ if }n \\geq 4, \\\\\n\\lceil n \\rceil & \\text{ if } n < 4.\n\\end{array}\n\\right.\\]Find $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3})$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We begin by finding $f\\left(\\frac{\\pi}{3}\\right)$. Since we know that $\\pi \\approx 3.14$, $\\frac{\\pi}{3}$ must be slightly greater than $1$, so $f\\left( \\frac{\\pi}{3} \\right)= \\left\\lceil \\frac{\\pi}{3} \\right\\rceil = 2$. To find $f(\\sqrt{45})$, we realize that $\\sqrt{36} < \\sqrt{45} < \\sqrt{49}$, so $6 < \\sqrt{45} < 7$. Therefore, since $\\sqrt{45} \\geq 4$, we have that $f(\\sqrt{45}) = \\lfloor \\sqrt{45} \\rfloor = 6$. Finally, we consider $f(8^{2/3})$. We know that $8^{2/3}= (\\sqrt[3]{8})^2 = 2^2 = 4$, so $f(8^{2/3})= \\lfloor 8^{2/3} \\rfloor = 4$.  \t\t\t Thus, we have that $f\\left(\\frac{\\pi}{3}\\right) + f(\\sqrt{45}) + f(8^{2/3}) = 2 + 6 + 4 = \\boxed{12}$."
+}

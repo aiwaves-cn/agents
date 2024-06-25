@@ -1,0 +1,6 @@
+{
+    "problem": "Two cards are dealt at random from a standard deck of 52 cards.  What is the probability that the first card is a King and the second card is a $\\heartsuit$?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We have two cases because if the first card is a King, it could be a $\\heartsuit$ or not be a $\\heartsuit$.\n\nThere is a $\\dfrac{1}{52}$ chance that the King of $\\heartsuit$ is drawn first, and a $\\dfrac{12}{51} = \\dfrac{4}{17}$ chance that the second card drawn is one of the twelve remaining $\\heartsuit$, which gives a probability of $\\dfrac{1}{52} \\times \\dfrac{4}{17} = \\dfrac{1}{221}$ chance that this occurs.\n\nThere is a $\\dfrac{3}{52}$ chance that a non-$\\heartsuit$ King is drawn first, and a $\\dfrac{13}{51}$ chance that a $\\heartsuit$ is drawn second, giving a $\\dfrac{3}{52} \\times \\dfrac{13}{51} = \\dfrac{1}{68}$ chance that this occurs.\n\nSo the probability that one of these two cases happens is $\\dfrac{1}{221} + \\dfrac{1}{68} = \\boxed{\\dfrac{1}{52}}$."
+}

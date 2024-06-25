@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$, $y$, and $z$ be positive real numbers such that $(x \\cdot y) + z = (x + z) \\cdot (y + z)$. What is the maximum possible value of $xyz$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The condition is equivalent to $z^2+(x+y-1)z=0$. Since $z$ is positive, $z=1-x-y$, so $x+y+z=1$. By the AM-GM inequality, $$xyz \\leq \\left(\\frac{x+y+z}{3}\\right)^3 = \\boxed{\\frac{1}{27}},$$with equality when $x=y=z=\\frac{1}{3}$."
+}

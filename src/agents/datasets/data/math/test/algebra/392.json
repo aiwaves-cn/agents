@@ -1,0 +1,6 @@
+{
+    "problem": "The sum of the squares of three consecutive positive even numbers is $12296$. Find the product of the three numbers divided by $8$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "If $n$ is the middle number of the three, the other two numbers are $n-2$ and $n+2$. Therefore, the squares are $n^2-4n+4$, $n^2$, and $n^2+4n+4$. Setting the sum of the three squares equal to $12296$, \\begin{align*}\n\\left(n^2-4n+4\\right)+\\left(n^2\\right)+\\left(n^2+4n+4\\right)&=12296\\\\\n3n^2+8&=12296\\\\\n3n^2&=12288\\\\\nn^2&=4096\\\\\nn&=\\pm64\n\\end{align*}Because $n$ is positive, $n$ must be $64$. Therefore, the set of numbers is $62, 64, 66$. The product of those is $261888$. The product divided by 8 is $\\boxed{32736}$."
+}

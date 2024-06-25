@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $49{,}994\\div 7 + 20{,}006\\div 7$.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Instead of doing each division separately and then adding, recall that  $x\\div d + y\\div d = (x+y)\\div d $ if $d$ is nonzero.  Using this fact, we can compute as follows: \\begin{align*}\n49{,}994\\div 7 + 20{,}006\\div 7 &= (49{,}994 + 20{,}006) \\div 7\\\\\n&= 70{,}000\\div 7\\\\\n&=\\boxed{10{,}000}.\n\\end{align*}"
+}

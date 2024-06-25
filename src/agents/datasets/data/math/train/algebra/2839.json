@@ -1,0 +1,6 @@
+{
+    "problem": "Four positive integers $A$, $B$, $C$ and $D$ have a sum of 36. If $A+2 = B-2 = C \\times 2 = D \\div 2$, what is the value of the product $A \\times B \\times C \\times D$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We have that $A + B + C + D = 36$.  Substituting everything in terms of $C$, we find that $(2C - 2) + (2C + 2) + C + (4C) = 36$, which means that $C = 4$.  Thus $A = 6$, $B = 10$, and $D = 16$.  Therefore our desired answer is $6\\cdot 10\\cdot 16\\cdot 4 = \\boxed{3840}$."
+}

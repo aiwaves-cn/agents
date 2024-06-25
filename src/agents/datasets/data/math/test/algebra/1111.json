@@ -1,0 +1,6 @@
+{
+    "problem": "For the arithmetic sequence $1000, ~987, ~974, ~961, \\ldots ,$ what is the least positive integer in the sequence?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The common difference in this arithmetic sequence is $987 - 1000= -13$, so the $n^{\\text{th}}$ term in this sequence is $1000 - 13(n - 1) = 1013 - 13n$.  This expression is positive if and only if $1013 - 13n > 0$, or \\[n < \\frac{1013}{13} = 77 + \\frac{12}{13}.\\] Since $n$ must be a positive integer, $n \\le 77$.  Hence, the least positive integer in this sequence corresponds to the value $n = 77$, in which case $1013 - 13n = 1013 - 13 \\cdot 77 = \\boxed{12}$."
+}

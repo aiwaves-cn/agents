@@ -1,0 +1,6 @@
+{
+    "problem": "$\\triangle ABC$ and $\\triangle DBC$ share $BC$. $AB = 5\\ \\text{cm}$, $AC = 12\\ \\text{cm}$, $DC = 8\\ \\text{cm}$, and $BD = 20\\ \\text{cm}$. What is the least possible integral number of centimeters in $BC$?\n\n[asy]\nsize(100); import graph; currentpen = fontsize(10pt);\npair B = (0,0), C = (13,0), A = (-5,7), D = (16,10);\n\ndraw(B--A--C--cycle); draw(B--D--C);\nlabel(\"$A$\",A,W); label(\"$B$\",B,W); label(\"$C$\",C,E); label(\"$D$\",D,E);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "By the triangle inequality on triangle $ABC$, $BC > AC - AB = 12 - 5 = 7$, and by the triangle inequality on triangle $BCD$, $BC > BD - CD = 20 - 8 = 12$.  Hence, $BC$ must be at least $\\boxed{13}$ centimeters.  (And it is easy to verify that it is possible for $BC$ to be 13 centimeters."
+}

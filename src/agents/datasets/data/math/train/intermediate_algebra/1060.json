@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be the set of all nonzero real numbers.  The function $f : S \\to S$ satisfies the following two properties:\n\n(i) First,\n\\[f \\left( \\frac{1}{x} \\right) = xf(x)\\]for all $x \\in S.$\n\n(ii) Second,\n\\[f \\left( \\frac{1}{x} \\right) +  f \\left( \\frac{1}{y} \\right) = 1 + f \\left( \\frac{1}{x + y} \\right)\\]for all $x \\in S$ and $y \\in S$ such that $x + y \\in S.$\n\nLet $n$ be the number of possible values of $f(1),$ and let $s$ be the sum of all possible values of $f(1).$  Find $n \\times s.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $y = x$ in the second equation, we get\n\\[2 f \\left( \\frac{1}{x} \\right) = 1 + f \\left( \\frac{1}{2x} \\right). \\quad (1)\\]Setting $x = \\frac{1}{2t},$ we find\n\\[2f(2t) = 1 + f(t) \\quad (2)\\]for all $t \\in S.$\n\nThen\n\\begin{align*}\nx(1 + f(x)) &= 2x f(2x) \\quad \\text{from (2)} \\\\\n&= f \\left( \\frac{1}{2x} \\right) \\quad \\text{from (i)} \\\\\n&= 2 f \\left( \\frac{1}{x} \\right) - 1 \\quad \\text{from (1)} \\\\\n&= 2xf(x) - 1 \\quad \\text{from (i)}.\n\\end{align*}Solving for $f(x),$ we find\n\\[f(x) = \\frac{1}{x} + 1.\\]We can check that this function works.  Therefore, $n = 1$ and $s = 2,$ so $n \\times s = \\boxed{2}.$"
+}

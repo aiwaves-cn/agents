@@ -1,0 +1,6 @@
+{
+    "problem": "There is a set of five positive integers whose average (mean) is 5, whose median is 5, and whose only mode is 8. What is the difference between the largest and smallest integers in the set?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since 5 is the median, there must be two integers greater than 5 and two less than 5. The five integers may be arranged this way: $\\underline{\\ \\ \\ }, \\ \\underline{\\ \\ \\ },  \\  5, \\  8, \\ 8$. Since the mean is 5, the sum of all five integers is 25. The numbers 5, 8, and 8 total 21, leaving 4 for the sum of the first two. They can't both be 2 since 8 is the only mode, so they are 1 and 3. The difference between 8 and 1 is $\\boxed{7}$."
+}

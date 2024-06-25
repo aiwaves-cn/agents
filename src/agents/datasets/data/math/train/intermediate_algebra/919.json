@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of 10-tuples $(x_1, x_2, \\dots, x_{10})$ of real numbers such that\n\\[(1 - x_1)^2 + (x_1 - x_2)^2 + (x_2 - x_3)^2 + \\dots + (x_9 - x_{10})^2 + x_{10}^2 = \\frac{1}{11}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By the Cauchy-Schwarz inequality,\n\\begin{align*}\n&[(1^2 + 1^2 + 1^2 + \\dots + 1^2 + 1^2)][(1 - x_1)^2 + (x_1 - x_2)^2 + (x_2 - x_3)^2 + \\dots + (x_9 - x_{10})^2 + x_{10}^2] \\\\\n&\\ge [(1 - x_1) + (x_1 - x_2) + (x_2 - x_3) + \\dots + (x_9 - x_{10}) + x_{10}]^2 = 1.\n\\end{align*}From the given condition, we have equality, so by the equality condition for Cauchy-Schwarz,\n\\[\\frac{1 - x_1}{1} = \\frac{x_1 - x_2}{1} = \\frac{x_2 - x_3}{1} = \\dots = \\frac{x_9 - x_{10}}{1} = \\frac{x_{10}}{1}.\\]Let\n\\[d = 1 - x_1 = x_1 - x_2 = x_2 - x_3 = \\dots = x_9 - x_{10} = x_{10}.\\]Then\n\\[(1 - x_1) + (x_1 - x_2) + \\dots + (x_9 - x_{10}) + x_{10} = 11d,\\]so $11d = 1.$  Then $d = \\frac{1}{11},$ so\n\\[(x_1, x_2, x_3, \\dots, x_{10}) = \\left( \\frac{10}{11}, \\frac{9}{11}, \\frac{8}{11}, \\dots, \\frac{1}{11} \\right).\\]In particular, there is only $\\boxed{1}$ solution."
+}

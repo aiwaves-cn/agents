@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the smallest positive value of $x,$ in degrees, for which the function\n\\[f(x) = \\sin \\frac{x}{3} + \\sin \\frac{x}{11}\\]achieves its maximum value.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "The function $f(x) = \\sin \\frac{x}{3} + \\sin \\frac{x}{11}$ achieves its maximum value when $\\sin \\frac{x}{3} = \\sin \\frac{x}{11} = 1,$ which means $\\frac{x}{3} = 360^\\circ a + 90^\\circ$ and $\\frac{x}{11} = 360^\\circ b + 90^\\circ$ for some integers $a$ and $b.$  Then\n\\[x = 1080^\\circ a + 270^\\circ = 3960^\\circ b + 990^\\circ.\\]This simplifies to\n\\[3a = 11b + 2.\\]The smallest nonnegative integer $b$ that makes $11b + 2$ a multiple of 3 is $b = 2,$ which makes $x = \\boxed{8910^\\circ}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A circular spinner for a game has a radius of 10 cm. The probability of winning on one spin of this spinner is $\\frac{2}{5}$. What is the area, in sq cm, of the WIN sector? Express your answer in terms of $\\pi$.\n\n[asy]import graph;\n\ndraw(Circle((0,0),25),black);\n\ndraw((0,0)--(7,18),Arrow);\n\ndraw((0,0)--(0,25));\n\ndraw((0,0)--(15,-20));\n\nlabel(\"WIN\",(10,10),S);\n\nlabel(\"LOSE\",(-8,-8),N);\n\ndot((0,0));\n\n[/asy]",
+    "level": "Level 1",
+    "type": "Geometry",
+    "solution": "The probability of winning on one spin is equal to the ratio of the area of the WIN sector to the area of the entire circle. The area of the entire circle is $\\pi \\cdot 10^2 = 100\\pi$. In math terms, our ratio is: $\\frac{2}{5}=\\frac{\\text{area of the win sector}}{100\\pi}$. Solving for the area of the win sector, we find it equal to $\\boxed{40\\pi}$ square centimeters."
+}

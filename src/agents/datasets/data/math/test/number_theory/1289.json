@@ -1,0 +1,6 @@
+{
+    "problem": "How many pairs of positive integers $(a,b)$ are there such that $\\gcd(a,b)=1$ and \\[ \\frac{a}{b}+\\frac{14b}{9a}\n\\]is an integer?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $u=a/b$. Then the problem is equivalent to finding all positive rational numbers $u$ such that \\[\nu+\\frac{14}{9u}=k\n\\]for some integer $k$. This equation is equivalent to $9u^2-9uk+14=0$, whose solutions are \\[\nu=\\frac{9k\\pm\\sqrt{81k^2-504}}{18}=\n\\frac{k}{2}\\pm\\frac{1}{6}\\sqrt{9k^2-56}.\n\\]Hence $u$ is rational if and only if $\\sqrt{9k^2-56}$ is rational, which is true if and only if $9k^2-56$ is a perfect square. Suppose that $9k^2-56=s^2$ for some positive integer $s$. Then $(3k-s)(3k+s)=56$. The only factors of $56$ are $1$, $2$, $4$, $7$, $8$, $14$, $28$, and $56$, so $(3k-s,3k+s)$ is one of the ordered pairs $(1,56)$, $(2,28)$, $(4,14)$, or $(7,8)$. The cases $(1,56)$ and $(7,8)$ yield no integer solutions.  The cases $(2,28)$ and $(4,14)$ yield $k=5$ and $k=3$, respectively. If $k=5$, then $u=1/3$ or $u=14/3$. If $k=3$, then $u=2/3$ or $u=7/3$. Therefore, the pairs $(a,b)$ that satisfy the given conditions are $(1,3),(2,3), (7,3),$ and $(14,3)$, for a total of $\\boxed{4}$ pairs."
+}

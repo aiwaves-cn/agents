@@ -1,0 +1,6 @@
+{
+    "problem": "A school is arranging chairs in rows for an assembly. $11$ chairs make a complete row, and right now there are $110$ chairs total. The school wants to have as few empty seats as possible, but all rows of chairs must be complete. If $70$ students will attend the assembly, how many chairs should be removed?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The original number of chairs is divisible by $11$, and the final number of remaining chairs must also be divisible by $11$ to have complete rows. This means that the number of chairs removed must be divisible by $11$ because the difference between two multiples of $b$ is also a multiple of $b$. In other words, $$b \\cdot m - b \\cdot n = b \\cdot k.$$ The smallest multiple of $11$ greater than $70$ is $77$, so we want $77$ chairs to remain. This means we must take away \\begin{align*}\n110 - 77 &= 11 \\cdot 10 - 11 \\cdot 7 \\\\\n&= 11(10-7) \\\\\n&= 11 \\cdot 3 \\\\\n&= \\boxed{33}\n\\end{align*} chairs. We check that $33$ is divisible by $11$, and it is, so we took away $3$ complete rows of chairs."
+}

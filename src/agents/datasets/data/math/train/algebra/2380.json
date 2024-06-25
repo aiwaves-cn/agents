@@ -1,0 +1,6 @@
+{
+    "problem": "Jasmine had 3 paperclips on Monday, then she had 6 on Tuesday, and her number of paperclips proceeded to double on each subsequent day. On what day of the week did she first have more than 100 paperclips?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "This is a geometric sequence with first term 3 and common ratio 2. Thus, any term in this sequence can be represented as $3\\cdot2^k$ for some non-negative integer $k$, where $k+1$ represents the term number (for example, when $k=0$, $3\\cdot2^k = 3$, which is the $k+1=1^\\text{st}$ term of the sequence). We need to find the smallest $k$ such that $3\\cdot2^k>100$. Using trial and error, we find that $k=6$, which means that the $6+1=7^\\text{th}$ day is the the one on which Jasmine has more than 100 paperclips, or $\\boxed{\\text{Sunday}}$."
+}

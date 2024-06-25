@@ -1,0 +1,6 @@
+{
+    "problem": "Five toppings for a pizza are available at Polina's Pizza. How many combinations of two different toppings are possible?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are 5 options for the first topping and 4 options left for the second topping for a preliminary count of $5\\cdot4=20$ options. However, the order in which we put the toppings on doesn't matter, so we've counted each combination twice, which means our final answer is $\\dfrac{5\\cdot4}{2}=\\boxed{10}$ combinations."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In the regular hexagon to the right, how many degrees are in the exterior angle indicated?\n\n[asy]size(101);\ndraw((0,0)--(2,0)--(3,sqrt(3))--(2,2sqrt(3))--(0,2sqrt(3))--(-1,sqrt(3))--cycle);\ndraw((2,0)--(4,0));\npair arrowstart = (2,0) + .75 expi(pi/7);\ndraw(arrowstart--arrowstart + expi(pi/7),BeginArrow);[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "The sum of the angles of a hexagon is $180(6-2) = 720$ degrees, which means each angle in a regular hexagon has measure $\\frac{720^\\circ}{6} = 120^\\circ$.  Therefore, the indicated angle has measure $180^\\circ - 120^\\circ = \\boxed{60^\\circ}$."
+}

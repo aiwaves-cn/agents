@@ -1,0 +1,6 @@
+{
+    "problem": "A fair coin is flipped 7 times.  What is the probability that at least 5 of the flips come up heads?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "First, we count the number of total outcomes.  Each toss has 2 possibilities - heads or tails - so the 7 tosses have $2^7 = 128$ possible outcomes.\n\nTo count the number of outcomes with at least 5 heads, we need to use casework.\n\nCase 1: 5 heads. To count the number of ways that 5 heads can come up, we simply need to choose 5 of the 7 tosses to be heads (the other 2 tosses will then automatically be tails).  So this can be done in $\\binom{7}{5} = 21$ ways.\n\nCase 2: 6 heads. Here we have to choose 6 of the tosses to be heads; this can be done in $\\binom{7}{6} = 7$ ways.\n\nCase 3: 7 heads. There's only 1 way to do this -- all 7 tosses must be heads.\n\nSo there are $21 + 7 + 1 = 29$ successful outcomes, hence the probability is $\\boxed{\\frac{29}{128}}$."
+}

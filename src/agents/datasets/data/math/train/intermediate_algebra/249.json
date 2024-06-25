@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that\n\\[f(x^2 + yf(z)) = xf(x) + zf(y)\\]for all real numbers $x,$ $y,$ and $z.$\n\nLet $n$ be the number of possible values of $f(5),$ and let $s$ be the sum of all possible values of $f(5).$  Find $n \\times s.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = y = 0,$ we get\n\\[f(0) = zf(0)\\]for all $z,$ so $f(0) = 0.$\n\nSetting $y = 0,$ we get\n\\[f(x^2) = xf(x)\\]for all $x.$\n\nSetting $x = 0,$ we get\n\\[f(yf(z)) = zf(y).\\]In particular, for $y = 1,$ $f(f(z)) = zf(1).$\n\nSince $f(x^2) = xf(x),$\n\\[f(f(x^2)) = f(xf(x)).\\]But $f(f(x^2)) = x^2 f(1)$ and $f(xf(x)) = xf(x),$ so\n\\[x^2 f(1) = xf(x).\\]Then for $x \\neq 0,$ $f(x) = f(1) x.$  Since $f(0) = 0,$\n\\[f(x) = f(1) x\\]for all $x.$\n\nLet $c = f(1),$ so $f(x) = cx.$  Substituting into the given equation, we get\n\\[cx^2 + c^2 yz = cx^2 + cyz.\\]For this to hold for all $x,$ $y,$ and $z,$ we must have $c^2 = c,$ so $c = 0$ or $c = 1.$\n\nThus, the solutions are $f(x) = 0$ and $f(x) = x.$  This means $n = 2$ and $s = 0 + 5,$ so $n \\times s = \\boxed{10}.$"
+}

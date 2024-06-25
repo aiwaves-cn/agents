@@ -1,0 +1,6 @@
+{
+    "problem": "Solve for $x:\\ \\log_2 x+\\log_4 x= 6.$",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "First, we use the fact that $\\frac{\\log b}{\\log a}=\\log_a b$ to turn $\\log_4 x$ into $\\frac{\\log_2 x}{\\log_2 4}=\\frac{1}{2}\\log_2 x.$ That means that $\\frac{3}{2}\\log_2 x=6.$ Dividing each side by $\\frac{3}{2},$ we get $\\log_2 x=4,$ or $2^4=x.$ Thus, $x = \\boxed{16}.$"
+}

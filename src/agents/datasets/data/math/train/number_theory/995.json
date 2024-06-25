@@ -1,0 +1,6 @@
+{
+    "problem": "Find a positive integer that is divisible by 14 and has a square root between 25 and 25.3.",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The second condition tells us that the integer must be between $25^2 = 625$ and $(25.3)^2 \\approx 640$. The only multiple of 14 in this range is $\\boxed{630}.$  (One easy way to find a multiple of 14 is to find a number that is both a multiple of 2 and a multiple of 7.)"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A book with 50 pages numbered 1 through 50 has its pages renumbered in reverse, from 50 to 1. For how many pages do both sets of page numbers share the same ones digit?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "For any given page, the sum of the original page number and the new page number is 51, an odd number. Therefore, no page is such that both sets of page numbers share the same ones digit and the answer is $\\boxed{0}$."
+}

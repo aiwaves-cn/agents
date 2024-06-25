@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $x + y + z = 1.$  Find the minimum value of\n\\[\\frac{x + y}{xyz}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By the AM-HM inequality,\n\\[\\frac{x + y}{2} \\ge \\frac{2}{\\frac{1}{x} + \\frac{1}{y}} = \\frac{2xy}{x + y},\\]so $\\frac{x + y}{xy} \\ge \\frac{4}{x + y}.$  Hence,\n\\[\\frac{x + y}{xyz} \\ge \\frac{4}{(x + y)z}.\\]By the AM-GM inequality,\n\\[\\sqrt{(x + y)z} \\le \\frac{x + y + z}{2} = \\frac{1}{2},\\]so $(x + y)z \\le \\frac{1}{4}.$  Hence,\n\\[\\frac{4}{(x + y)z} \\ge 16.\\]Equality occurs when $x = y = \\frac{1}{4}$ and $z = \\frac{1}{2},$ so the minimum value is $\\boxed{16}$."
+}

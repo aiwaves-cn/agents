@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\Phi$ and $\\varphi$ are the two distinct solutions to the equation $x^2=x+1$, then what is the value of $(\\Phi-\\varphi)^2$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "To find the two solutions, we use the quadratic formula. We can write our equation as $x^2-x-1=0$. Making the coefficients more visible, we have the equation $$(1)x^2 + (-1)x + (-1) = 0.$$The quadratic formula then gives $$x = \\frac{-(-1)\\pm \\sqrt{(-1)^2 - 4(1)(-1)}}{2(1)} = \\frac{1\\pm\\sqrt5}{2}.$$Letting $\\Phi=\\frac{1+\\sqrt5}{2}$ and $\\varphi = \\frac{1-\\sqrt5}{2}$, we have \\begin{align*}\n\\Phi-\\varphi &= \\left(\\frac{1+\\sqrt5}{2}\\right)-\\left(\\frac{1-\\sqrt5}{2}\\right) \\\\\n&= \\frac{1}{2}+\\frac{\\sqrt5}{2} - \\left(\\frac{1}{2} - \\frac{\\sqrt5}{2}\\right) \\\\\n&= \\frac{1}{2}+\\frac{\\sqrt5}{2} - \\frac{1}{2} + \\frac{\\sqrt5}{2} \\\\\n&= \\frac{\\sqrt5}{2} + \\frac{\\sqrt5}{2} \\\\\n&= \\sqrt5.\n\\end{align*}The problem didn't tell us which solution was $\\Phi$, but that doesn't matter: if $\\Phi$ and $\\varphi$ are swapped, then $\\Phi-\\varphi=-\\sqrt5$, but either way, $(\\Phi-\\varphi)^2 = \\boxed{5}$."
+}

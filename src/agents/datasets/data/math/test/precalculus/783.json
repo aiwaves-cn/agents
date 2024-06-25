@@ -1,0 +1,6 @@
+{
+    "problem": "A parametric curve is defined by\n\\[(x,y) = (\\sin^2 t, 2 \\cos t),\\]where $t$ ranges over all real numbers.\n\nThe same parametric curve can be defined by\n\\[(x,y) = (-s^2 - 2s, 2s + 2),\\]where $s$ ranges over some interval $I.$  Find the interval $I.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "As $t$ ranges over all real numbers, $2 \\cos t$ ranges from $-2$ to 2.  So, we want $2s + 2$ to range from $-2$ to 2, which means $I = \\boxed{[-2,0]}.$"
+}

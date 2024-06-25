@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the complex number $z$ satisfying the equation $3z+4i\\bar{z}=1-8i$.  Note that $\\bar{z}$ denotes the conjugate of $z$.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z=a+bi$, where $a$ and $b$ are real numbers representing the real and imaginary parts of $z$, respectively.  Then $\\bar{z}=a-bi$, so that $4i\\bar{z}=4b+4ia$.  We now find that \\[ 3z+4i\\bar{z} = (3a+4b) + (4a+3b)i. \\]So if $3z+4i\\bar{z}=1-8i$ then we must have $3a+4b=1$ and $4a+3b=-8$.  This system of equations is routine to solve, leading to the values $a=-5$ and $b=4$.  Therefore the complex number we are seeking is $z=\\boxed{-5+4i}$."
+}

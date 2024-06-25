@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify\n\\[\\cos^2 x + \\cos^2 \\left( \\frac{\\pi}{3} + x \\right) + \\cos^2 \\left( \\frac{\\pi}{3} -  x \\right).\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "From the angle addition formula,\n\\[\\cos \\left( \\frac{\\pi}{3} + x \\right) = \\frac{1}{2} \\cos x - \\frac{\\sqrt{3}}{2} \\sin x\\]and\n\\[\\cos \\left( \\frac{\\pi}{3} -  x \\right) = \\frac{1}{2} \\cos x + \\frac{\\sqrt{3}}{2} \\sin x.\\]Therefore,\n\\begin{align*}\n&\\cos^2 x + \\cos^2 \\left( \\frac{\\pi}{3} + x \\right) + \\cos^2 \\left( \\frac{\\pi}{3} -  x \\right) \\\\\n&= \\cos^2 x + \\left (\\frac{1}{2} \\cos x - \\frac{\\sqrt{3}}{2} \\sin x \\right)^2 + \\left (\\frac{1}{2} \\cos x + \\frac{\\sqrt{3}}{2} \\sin x \\right)^2 \\\\\n&= \\cos^2 x + \\frac{1}{4} \\cos^2 x - \\frac{\\sqrt{3}}{2} \\cos x \\sin x + \\frac{3}{4} \\sin^2 x + \\frac{1}{4} \\cos^2 x + \\frac{\\sqrt{3}}{2} \\cos x \\sin x + \\frac{3}{4} \\sin^2 x \\\\\n&= \\frac{3}{2} \\cos^2 x + \\frac{3}{2} \\sin^2 x \\\\\n&= \\boxed{\\frac{3}{2}}.\n\\end{align*}"
+}

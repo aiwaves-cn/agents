@@ -1,0 +1,6 @@
+{
+    "problem": "Amy, Ben, Carl, and Debbie each have some coins. Ben has three times the number of coins that Amy has and a third of the number of coins that Carl has, and Debbie has two-thirds the number of coins that Carl has. The number of coins that Amy has, multiplied by the number of coins that Ben has, multiplied by the number of coins that Carl has, multiplied by the number of coins that Debbie has, is $162$. How many coins do the four children have all together?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let $a$ be the number of coins Amy has, $b$ the number Ben has, $c$ the number Carl has, and $d$ the number Debbie has. We can use the information in the problem to create the following system of linear equations:  \\begin{align*}\n3a &= b \\\\\n3b &= c \\\\\n\\frac{2}{3}c &= d \\\\\na \\cdot b \\cdot c \\cdot d &= 162\n\\end{align*} We know that $b = 3a$. Also, $c = 3b$, so $c$ must equal $9a$. Then, $d = \\frac{2}{3}c$, so $d = 6a$. Substituting these quantities into our product gives $a \\cdot 3a \\cdot 9a \\cdot 6a = 162,$ which simplifies to $162a^4 = 162,$ or $a^4 = 1,$ so $a = 1$. Given this value, we can find that $b = 3$, $c = 9$, and $d = 6$. Thus, the four children have $1 + 3 + 9 + 6 = \\boxed{19}$ coins all together."
+}

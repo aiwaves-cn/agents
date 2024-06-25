@@ -1,0 +1,6 @@
+{
+    "problem": "Find the distance between the points (0,15) and (8,0).",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "We use the distance formula: $$\\sqrt{(8 - 0)^2 + (0 - 15)^2} = \\sqrt{64 + 225} = \\boxed {17}.$$- OR -\n\nWe note that the points $(0, 15)$, $(8, 0)$, and $(0, 0)$ form a right triangle with legs of length 8 and 15. This is a Pythagorean triple, so the hypotenuse must have length $\\boxed{17}$."
+}

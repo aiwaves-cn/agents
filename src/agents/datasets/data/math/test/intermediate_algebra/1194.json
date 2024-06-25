@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of positive integers $n$ less than $1000$ for which there exists a positive real number $x$ such that $n=x\\lfloor x \\rfloor$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Note that $x \\lfloor x\\rfloor$ is strictly increasing in $x.$ Let $a$ be an integer. Given that $\\lfloor x\\rfloor = a,$ we have $a \\le x < a+1,$ so \\[a^2 \\le x\\lfloor x\\rfloor < a^2+a.\\]Therefore, $x \\lfloor x\\rfloor$ takes \\[(a^2+a-1) - a^2 + 1 = a\\]integer values over all $x$ such that $\\lfloor x\\rfloor = a.$\n\nNote that $x \\lfloor x\\rfloor = 1$ when $x = 1,$ and that if $x\\lfloor x\\rfloor < 1000,$ then $\\lfloor x\\rfloor^2 < 1000,$ so $a \\le 31.$ For $a = 1, 2, \\ldots, 31,$ we get \\[1 + 2 + \\dots + 31 = \\frac{31\\cdot32}{2} = 496\\]integer values of $x\\lfloor x\\rfloor.$ For $a \\ge 32,$ we have $x \\lfloor x\\rfloor \\ge a^2 = 1024 > 1000,$ so we do not get any more values of $n.$ The answer is $\\boxed{496}.$"
+}

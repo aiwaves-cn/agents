@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest value of $x$ that satisfies the equation $|5x-1|=x+3$.",
+    "level": "Level 1",
+    "type": "Algebra",
+    "solution": "We can split the expression $|5x-1|=x+3$ into two separate cases. In the first case, \\begin{align*} 5x-1&=x+3\n\\\\\\Rightarrow \\qquad 4x&=4\n\\\\\\Rightarrow \\qquad x&=1\n\\end{align*}If we plug this value of $x$ back into the original equation in order to check our answer, we see that $|5(1)-1|=1+3$ or $4=4$. Since this is true, we can accept $x=1$ as a valid solution.\n\nIn the second case, \\begin{align*} 5x-1&=-(x+3)\n\\\\ 5x-1&=-x-3\n\\\\\\Rightarrow \\qquad 6x&=-2\n\\\\\\Rightarrow \\qquad x&=-\\frac13.\n\\end{align*}If we plug $-\\frac13$ back into the initial equation, we get that $\\left|5\\left(-\\frac13\\right)-1\\right|=-\\frac13+3$, which simplifies to $\\left|-\\frac{8}{3}\\right|=\\frac{8}{3}$, or $\\frac{8}{3}=\\frac{8}{3}$. Since this is also a true statement, we can accept $x=-\\frac13$ as a valid solution as well. Since both $x=1$ and $x=-\\frac13$ are possible values of $x$, the final answer is the larger of the two: $x=\\boxed{1}$."
+}

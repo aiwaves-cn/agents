@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area, in square units, of an isosceles trapezoid with bases of 7 and 17 units and legs of 13 units?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Drop perpendiculars from the endpoints of the shorter base of the trapezoid to the other base.  This divides the trapezoid into a rectangle and two congruent right triangles.  Each of the right triangles has hypotenuse 13 units long and side length $(17-7)/2=5$ units long.  Therefore, the height of the trapezoid is $\\sqrt{13^2-5^2}=12$ units.  The area of the $12\\times 7$ rectangle is 84 square units, and the collective area of the two triangles is $2\\cdot\\frac{1}{2}\\cdot 5\\cdot 12=60$ square units.  The area of the trapezoid is $84+60=\\boxed{144}$ square units."
+}

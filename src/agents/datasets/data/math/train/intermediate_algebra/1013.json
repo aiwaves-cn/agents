@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$ and $b$ be real numbers.  One of the roots of\n\\[x^3 + ax^2 - x + b = 0\\]is $1 - 2i.$  Enter the ordered pair $(a,b).$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Since the coefficients of the polynomial are all real, another is the conjugate of $1 - 2i,$ namely $1 + 2i.$  Let $r$ be the third root.  Then the polynomial is\n\\[(x - 1 + 2i)(x - 1 - 2i)(x - r) = x^3 - (r + 2)x^2 + (2r + 5)x - 5r.\\]Then $2r + 5 = -1,$ so $r = -3.$  Then $a = -(r + 2) = 1$ and $b = -5r = 15,$ so $(a,b) = \\boxed{(1,15)}.$"
+}

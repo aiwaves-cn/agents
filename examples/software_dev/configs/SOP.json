@@ -1,0 +1,505 @@
+{
+    "nodes": {
+        "design_node": {
+            "node_name": "design_node",
+            "controller": {
+                "route_type": "order",
+                "transit_type": "order",
+                "max_chat_nums": 8,
+                "transit_system_prompt": "",
+                "transit_last_prompt": "",
+                "transit_extract_word": "end",
+                "route_system_prompt": "",
+                "route_last_prompt": "",
+                "route_extract_word": "end"
+            },
+            "begin_role": "Boss",
+            "node_description": "Imagine a scenario where the boss has presented a requirement. The architect is tasked with proposing a framework based on this requirement. The leader's role is to provide feedback on the architect's proposal, and another architect will finalize the framework based on the leader's comments.",
+            "node_prompt_templates": {
+                "target": "The target program is: <target>{prompt}</target>"
+            },
+            "node_prompt_paddings": {
+                "Boss": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Present the project requirements to the team and articulate the project's objectives clearly."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "It's crucial to communicate the project's objectives, key deliverables, and any specific requirements comprehensively. This ensures that the entire team understands the project's significance and direction."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Prepare a comprehensive project overview that encompasses the project's scope, objectives, any constraints, and desired outcomes. This document should outline the required features, performance goals, and budget constraints, for example."
+                        }
+                    }
+                },
+                "Architect_1": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "experienced and professional"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Propose a Python framework based on the project requirements."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "Thoroughly analyze the project requirements, evaluate potential technologies, and select suitable design principles to meet the project's needs. The architect must propose a framework that aligns with the project's objectives and requirements. The framework should be scalable, maintainable, and efficient."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Create a detailed Architect proposal document, including the rationale for choosing the proposed framework and accompanying design diagrams. For instance, provide an Architect diagram outlining the framework's high-level structure and a detailed explanation of why this architecture was selected."
+                        }
+                    }
+                },
+                "Product Manager": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "strategic and leading"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Provide specific feedback on the proposed Python framework."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "The product manager must evaluate the proposed framework based on the project's requirements, feasibility, and alignment with the project's objectives. The feedback should be constructive, specific, and aimed at improving the proposed solution."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Review the Architect's proposal document, analyze the proposed framework's strengths and weaknesses, and provide detailed feedback. For example, suggest improvements to the architecture, identify potential risks, and ensure that the proposed solution aligns with the project's goals."
+                        }
+                    }
+                },
+                "Architect_2": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "experienced and professional"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Finalize the Python framework based on the priduct manager's feedback."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "The architect must incorporate the product manager's feedback into the proposed framework, address any identified issues, and finalize the architecture. The final framework should be well-documented, comprehensive, and aligned with the project's objectives."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Update the Architect proposal document based on the product manager's feedback, revise the proposed framework. Provide a clear documentation of the final architecture, including any revised design diagrams and explanations for incorporating the product manager's feedback, and ensure that the framework meets the project's requirements and objectives."
+                        }
+                    }
+                }
+            }
+        },
+        "develop_node": {
+            "node_name": "develop_node",
+            "controller": {
+                "route_type": "order",
+                "transit_type": "order",
+                "max_chat_nums": 8,
+                "transit_system_prompt": "",
+                "transit_last_prompt": "",
+                "transit_extract_word": "end",
+                "route_system_prompt": "",
+                "route_last_prompt": "",
+                "route_extract_word": "end"
+            },
+            "begin_role": "Boss",
+            "node_description": "In this scenario, the boss has provided a requirement. The developer's task is to write code based on the architecture proposed by the architect. The leader evaluates the written code for elegance, readability, and functionality, providing feedback. Another developer makes necessary modifications to the code.",
+            "node_prompt_templates": {
+                "target": "The target program is: <target>{prompt}</target>"
+            },
+            "node_prompt_paddings": {
+                "Boss": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "august"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Communicate the project requirements and vision to the team."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "Clearly define the project's objectives, functionality, and any specific requirements."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Create a detailed project brief that outlines the scope, objectives, and specific features required for the project in a clear and concise manner. This document should provide a comprehensive understanding of what the project aims to achieve."
+                        }
+                    }
+                },
+                "Developer_1": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "experienced and professional"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Write elegant, readable, extensible, and efficient code."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "1.write code that conforms to standards like PEP8, is modular, easy to read, and maintainable. 2.Output the code only,Ensure that the code adheres to the Architect guidelines, coding standards, and best practices.3.The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Follow the Architect proposal closely while writing code. Document the code adequately, use meaningful variable names, and maintain proper code structure. For example, provide code snippets that demonstrate adherence to coding standards and Architect design.Output the code only."
+                        }
+                    },
+                    "last": {
+                        "value_source": "config",
+                        "value": {
+                            "last": "The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    }
+                },
+                "Product Manager": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "strategic and leading"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Evaluate the written code for elegance, readability, and functionality."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "The product manager must review the written code to ensure it meets the project's requirements, adheres to coding standards, and is well-structured. The feedback should focus on code quality, readability, and functionality, providing constructive suggestions for improvement."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Review the code written by the developer, analyze its structure, readability, and adherence to coding standards. Offer feedback on code organization, naming conventions, code efficiency, and any functional improvements needed. For instance, provide specific examples of code sections that require refinement and explain how these changes enhance code quality."
+                        }
+                    }
+                },
+                "Developer_2": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "experienced and professional"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Make necessary modifications to the code based on the product manager's feedback."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "1.make code modifications that conform to standards like PEP8, are modular, easy to read, and maintainable. 2.Output the code only, incorporate product manager's feedback into the code and address any issues or improvements identified.3.The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Analyze the product manager's feedback on the written code, identify areas for improvement, and make necessary modifications. Ensure that the code adheres to coding standards, is well-structured, and addresses the product manager's feedback. For example, provide code snippets that demonstrate the incorporation of feedback and improvements. Output the code only."
+                        }
+                    },
+                    "last": {
+                        "value_source": "config",
+                        "value": {
+                            "last": "The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    }
+                }
+            }
+        },
+        "debug_node": {
+            "node_name": "debug_node",
+            "controller": {
+                "route_type": "order",
+                "transit_type": "order",
+                "max_chat_nums": 10,
+                "transit_system_prompt": "",
+                "transit_last_prompt": "",
+                "transit_extract_word": "end",
+                "route_system_prompt": "",
+                "route_last_prompt": "",
+                "route_extract_word": "end"
+            },
+            "begin_role": "Boss",
+            "node_description": "In this scenario, the boss has provided a requirement. The debugger simulates a compiler to determine whether the code is runnable and provides feedback. The developer writes code based on the debugger's feedback. The leader evaluates whether the final code meets the boss's requirements and provides feedback for further modifications. The coder writes the final code to a file.",
+            "node_prompt_templates": {
+                "target": "The target program is: <target>{prompt}</target>",
+                "finalize code": "Please consider all the messages above and integrate the final project code. Ensures the code is clean, well-formatted. {extract}"
+            },
+            "node_prompt_paddings": {
+                "Boss": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "august"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Communicate the project requirements and vision to the team."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "Clearly define the project's objectives, functionality, and any specific requirements."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Create a detailed project brief that outlines the scope, objectives, and specific features required for the project in a clear and concise manner. This document should provide a comprehensive understanding of what the project aims to achieve."
+                        }
+                    }
+                },
+                "Tester": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "experienced and professional"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Simulate a compiler to determine whether the code is runnable and provide feedback."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "Thoroughly test the code for syntax errors, logical issues, and other potential problems. Offer detailed feedback that helps the developer understand and resolve any issues. Please pay special attention to some logic bugs in the game, such as whether the game can run normally."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Run the code provided by Developer_1 through a simulated compiler or debugger. Document any errors, warnings, or issues encountered during the process. Provide feedback that includes specific examples of code problems and suggested solutions."
+                        }
+                    }
+                },
+                "Developer_1": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "experienced and professional"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Write elegant, readable, extensible, and efficient code based on the tester's feedback."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "1.write code that conforms to standards like PEP8, is modular, easy to read, and maintainable.\n2.Address the issues identified by the Debugger and ensure that the code meets the project's requirements.\n3.The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Review the feedback provided by the Debugger and make the necessary modifications to the code. Document the changes made and ensure that the code is free of errors and warnings. Provide examples of code segments before and after the modifications. Output the code only."
+                        }
+                    },
+                    "last": {
+                        "value_source": "config",
+                        "value": {
+                            "last": "The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    }
+                },
+                "Product Manager": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "strategic and leading"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Evaluate whether the final code meets the boss's requirements and provide feedback for further modifications."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "The product manager must review the final code to ensure it meets the project's requirements, adheres to coding standards, and is well-structured. The feedback should focus on code quality, readability, and functionality, providing constructive suggestions for improvement."
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Carefully review the code provided by Developer_1 after addressing Debugger's feedback. Offer feedback on code organization, readability, and any functional improvements needed. Provide specific examples of code sections that require further refinement and explain how these changes enhance the code's quality."
+                        }
+                    }
+                },
+                "Developer_2": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "style": {
+                        "value_source": "config",
+                        "value": {
+                            "style": "experienced and professional"
+                        }
+                    },
+                    "task": {
+                        "value_source": "config",
+                        "value": {
+                            "task": "Make further modifications to the code based on product manager's feedback."
+                        }
+                    },
+                    "rule": {
+                        "value_source": "config",
+                        "value": {
+                            "rule": "1.Incorporate Leader's feedback into the code and address any issues or improvements identified.,make code modifications that conform to standards like PEP8, are modular, easy to read, and maintainable. 2.The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    },
+                    "demonstrations": {
+                        "value_source": "config",
+                        "value": {
+                            "demonstrations": "Review the feedback provided by Leader and apply the suggested modifications to the code. Document the changes made and ensure that the updated code aligns with the project's goals and quality standards. Provide examples of code segments before and after the modifications. Output the code only."
+                        }
+                    },
+                    "last": {
+                        "value_source": "config",
+                        "value": {
+                            "last": "The output strictly follows the following format:<title>{the file name}</title>\n<python>{the target code}</python>"
+                        }
+                    }
+                },
+                "Coder": {
+                    "target": {
+                        "value_source": "case",
+                        "value": "input_data"
+                    },
+                    "finalize code": {
+                        "value_source": "config",
+                        "value": {
+                            "extract": "Please extract the final project code and put them between <result> and </result>."
+                        }
+                    
+                    }
+                }
+            }
+        }
+    },
+    "edges": {
+        "design_node": [
+            "design_node",
+            "develop_node"
+        ],
+        "develop_node": [
+            "develop_node",
+            "debug_node"
+        ],
+        "debug_node": [
+            "debug_node",
+            "end_node"
+        ]
+    },
+    "root": "design_node",
+    "end": "end_node"
+}

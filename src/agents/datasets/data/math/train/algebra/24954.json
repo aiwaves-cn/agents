@@ -1,0 +1,6 @@
+{
+    "problem": "The three points $(3,-5)$, $(-a + 2, 3)$, and $(2a+3,2)$ lie on the same line.  What is $a$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Because the three points are on the same line, the slope between the first and second equals the slope between the first and the third.  This gives us the equation: \\begin{align*}\n\\frac{3-(-5)}{(-a+2) -3} &= \\frac{2- (-5)}{(2a+3) - 3} \\\\\n\\frac{8}{-a-1} &= \\frac{7}{2a} \\\\\n8(2a) &= 7(-a-1) \\\\\n23a &= -7 \\\\\n&a = \\boxed{\\frac{-7}{23}}.\n\\end{align*}"
+}

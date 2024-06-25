@@ -1,0 +1,6 @@
+{
+    "problem": "Find all $x$ such that $x^2+5x<6$. Express your answer in interval notation.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Subtracting 6 from both sides of the equation, we get the quadratic  \\begin{align*} x^2+5x-6&<0 \\quad \\Rightarrow\n\\\\ (x+6)(x-1)&<0.\n\\end{align*} Since -6 and 1 are both roots of the quadratic, the inequality changes signs at these two points. So, we need to test the signs of three ranges of numbers: $x<-6$, $-6<x<1$, $x>1$. When $x<-6$, both $(x+6)$ and $(x-1)$ will be negative, thus making the inequality positive. When $-6<x<1$, only $(x-1)$ will be negative, thus making the inequality negative. Finally when $x>1$, both $(x+6)$ and $(x-1)$ will be positive, thus making the inequality positive once again. Therefore, the only range of $x$ that satisfies the inequality is $\\boxed{(-6, 1)}$."
+}

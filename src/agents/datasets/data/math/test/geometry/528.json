@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, what is the perimeter of the sector of the circle with radius 12?\n\n[asy]\ndraw((0,0)--(12,0),black+linewidth(1));\ndraw((0,0)--(6,10.3923),black+linewidth(1));\ndraw((12,0)..(10.3923,6)..(6,10.3923),black+linewidth(1));\nlabel(\"$O$\",(0,0),W);\nlabel(\"$A$\",(6,10.3923),N);\nlabel(\"$B$\",(12,0),E);\nlabel(\"$60^\\circ$\",(2,1));\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "In the diagram, the radius of the sector is 12 so $OA=OB=12$.  Since the angle of the sector is $60^\\circ$, then the sector is $\\dfrac{60^\\circ}{360^\\circ}=\\dfrac{1}{6}$ of the total circle. Therefore, arc $AB$ is $\\frac{1}{6}$ of the total circumference of a circle of radius 12, so has length $\\frac{1}{6}(2\\pi(12))=4\\pi$. Therefore, the perimeter of the sector is $12+12+4\\pi=\\boxed{24+4\\pi}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A $90^\\circ$ rotation around $-4 - 5i$ in the clockwise direction is applied to $3$ (as a complex number).  What is the resulting complex number?",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "A $90^\\circ$ rotation in the clockwise direction corresponds to multiplication by $\\operatorname{cis} (-90^\\circ) = -i.$\n\n[asy]\nunitsize(0.4 cm);\n\npair O = (-4,-5), A = (3,0), B = rotate(-90,O)*(A);\n\ndraw(O--A,dashed);\ndraw(O--B,dashed);\n\ndot(\"$3$\", A, NE);\ndot(\"$1 - 12i$\", B, SE);\ndot(\"$-4 - 5i$\", O, W);\n[/asy]\n\nLet $z$ be the image of $3$ under the rotation.  Since center of the rotation is $-4 - 5i,$\n\\[z - (-4 - 5i) = (-i)(3 - (-4 - 5i)).\\]Solving, we find $z = \\boxed{1 - 12i}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A whole number larger than 2 leaves a remainder of 2 when divided by each of the numbers 3, 4, 5, and 6.  What is the smallest such number?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The numbers that leave a remainder of 2 when divided by 4 and 5 are 22, 42, 62, and so on.  Checking these numbers for a remainder of 2 when divided by both 3 and 6 yields $\\boxed{62}$ as the smallest.\n\nWe also might have noted that the desired number is 2 greater than a number that is a multiple of 3, 4, 5, and 6.  Therefore, it is 2 greater than the least common multiple of 3, 4, 5, and 6.  The least common multiple of 3, 4, 5, and 6 is $2^2\\cdot 3\\cdot 5 = 60$, so the smallest number that fits the problem is $60 + 2 = \\boxed{62}$."
+}

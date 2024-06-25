@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area enclosed by the graph of $|x| + |2y|$ = 10 shown here?\n\n[asy]\ndraw((0,-10)--(0,10),Arrows);\ndraw((-15,0)--(15,0),Arrows);\nlabel(\"$y$\",(0,10),NE);\nlabel(\"$x$\",(15,0),SE);\ndraw((10,0)--(0,5)--(-10,0)--(0,-5)--cycle);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The x and y axis of this graph break it down into four triangles each with the same area. We find that the x and y intercepts of this graph are $(0,5)$, $(0,-5)$, $(10,0)$, and $(-10,0)$. This means that the area of each triangle is $$\\frac{1}{2}\\cdot5\\cdot10=25.$$ Therefore, the total area is $4\\cdot25=\\boxed{100}$ square units."
+}

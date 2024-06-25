@@ -1,0 +1,6 @@
+{
+    "problem": "Let $z = a + bi,$ where $a$ and $b$ are positive real numbers.  If\n\\[z^3 + |z|^2 + z = 0,\\]then enter the ordered pair $(a,b).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write $|z|^2 = z \\overline{z},$ so the equation becomes\n\\[z^3 + z \\overline{z} + z = 0.\\]Since $a$ and $b$ are positive, $z = a + bi$ is nonzero.  Thus, we can divide both sides of the equation above by $z,$ which gives us\n\\[z^2 + \\overline{z} + 1 = 0.\\]Then $(a + bi)^2 + \\overline{a + bi} + 1 = 0,$ or\n\\[a^2 + 2abi - b^2 + a - bi + 1 = 0.\\]Equating real and imaginary parts, we get\n\\begin{align*}\na^2 - b^2 + a + 1 &=0, \\\\\n2ab - b &= 0.\n\\end{align*}From the second equation, $b(2a - 1) = 0.$  Since $b$ is positive, $2a - 1 = 0,$ so $a = \\frac{1}{2}.$  Then from the first equation,\n\\[b^2 = a^2 + a + 1 = \\frac{7}{4}.\\]Since $b$ is positive, $b = \\frac{\\sqrt{7}}{2}.$  Thus, $(a,b) = \\boxed{\\left( \\frac{1}{2}, \\frac{\\sqrt{7}}{2} \\right)}.$"
+}

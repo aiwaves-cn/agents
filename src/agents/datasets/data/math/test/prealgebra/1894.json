@@ -1,0 +1,6 @@
+{
+    "problem": "What is $(1 + 2 \\cdot 3 \\cdot 4 \\cdot 5) \\div 11$?",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "First, we evaluate the expression in the parentheses. Since multiplication has precedence over addition, $1 + 2 \\cdot 3 \\cdot 4 \\cdot 5 = 1 + 120 = 121$. Our original expression evaluates to $(1 + 2 \\cdot 3 \\cdot 4 \\cdot 5) \\div 11 = 121 \\div 11 = \\boxed{11}.$"
+}

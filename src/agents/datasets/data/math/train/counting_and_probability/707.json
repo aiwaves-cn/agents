@@ -1,0 +1,6 @@
+{
+    "problem": "A bakery sells three kinds of rolls. How many different combinations of rolls could Jack purchase if he buys a total of six rolls and includes at least one of each kind?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We don't have to worry about three of the rolls since there will be one of each kind. Now we look at the possible cases for the remaining three rolls.\n$\\emph{Case 1:}$ The remaining three rolls are one of each kind, for which there is only $\\emph{1}$ combination.\n$\\emph{Case 2:}$ The remaining three rolls are all the same kind. Since there are three different kinds of rolls, there are $\\emph{3}$ possibilities for this case.\n$\\emph{Case 3:}$ The remaining three rolls are two of one kind and one of another kind. We have three choices for the rolls we have two of, which leaves two choices for the rolls we have one of, and then one choice for the kind of roll we don't have. So there are $3!=\\emph{6}$ possibilities for this case.\nIn total, we have $1+3+6=\\boxed{10}$ possible combinations of rolls that Jack could purchase."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Squares of side length 1 are arranged to form the figure shown. What is the perimeter of the figure? [asy]\n\nsize(6cm);\n\npath sqtop = (0, 0)--(0, 1)--(1, 1)--(1, 0);\n\npath sqright = (0, 1)--(1, 1)--(1, 0)--(0, 0);\n\npath horiz = (0, 0)--(1, 0); path vert = (0, 0)--(0, 1);\n\npicture pic;\n\ndraw(pic, shift(-4, -2) * unitsquare);\n\ndraw(pic, shift(-4, -1) * sqtop);\n\ndraw(pic, shift(-3, -1) * sqright);\n\ndraw(pic, shift(-2, -1) * sqright);\n\ndraw(pic, shift(-2, 0) * sqtop);\n\ndraw(pic, (-1, 1)--(0, 1)); draw(pic, (-1, 0)--(0, 0));\n\nadd(reflect((0, 0), (0, 1)) * pic); add(pic);\n\ndraw((0, 0)--(0, 1));\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "There are 16 horizontal segments on the perimeter.  Each has length 1, so the horizontal segments contribute 16 to the perimeter.\n\nThere are 10 vertical segments on the perimeter.  Each has length 1, so the vertical segments contribute 10 to the perimeter.\n\nTherefore, the perimeter is $10+16=\\boxed{26}$.\n\n(We could arrive at this total instead by starting at a fixed point and travelling around the outside of the figure counting the number of segments.)"
+}

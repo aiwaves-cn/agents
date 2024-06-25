@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,\\,$ angle $C$ is a right angle and the altitude from $C\\,$ meets $\\overline{AB}\\,$ at $D.\\,$ The lengths of the sides of $\\triangle ABC\\,$ are integers, $BD=29^3,\\,$ and $\\cos B=m/n\\,$, where $m\\,$ and $n\\,$ are relatively prime positive integers. Find $m+n.\\,$\n",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Since $\\triangle ABC \\sim \\triangle CBD$, we have $\\frac{BC}{AB} = \\frac{29^3}{BC} \\Longrightarrow BC^2 = 29^3 AB$. It follows that $29^2 | BC$ and $29 | AB$, so $BC$ and $AB$ are in the form $29^2 x$ and $29 x^2$, respectively, where x is an integer.\nBy the Pythagorean Theorem, we find that $AC^2 + BC^2 = AB^2 \\Longrightarrow (29^2x)^2 + AC^2 = (29 x^2)^2$, so $29x | AC$. Letting $y = AC / 29x$, we obtain after dividing through by $(29x)^2$, $29^2 = x^2 - y^2 = (x-y)(x+y)$. As $x,y \\in \\mathbb{Z}$, the pairs of factors of $29^2$ are $(1,29^2)(29,29)$; clearly $y = \\frac{AC}{29x} \\neq 0$, so $x-y = 1, x+y= 29^2$. Then, $x = \\frac{1+29^2}{2} = 421$.\nThus, $\\cos B = \\frac{BC}{AB} = \\frac{29^2 x}{29x^2} = \\frac{29}{421}$, and $m+n = \\boxed{450}$."
+}

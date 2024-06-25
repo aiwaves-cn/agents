@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\cos 75^\\circ.$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "From the angle addition formula,\n\\begin{align*}\n\\cos 75^\\circ &= \\cos (45^\\circ + 30^\\circ) \\\\\n&= \\cos 45^\\circ \\cos 30^\\circ - \\sin 45^\\circ \\sin 30^\\circ \\\\\n&= \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2} \\\\\n&= \\boxed{\\frac{\\sqrt{6} - \\sqrt{2}}{4}}.\n\\end{align*}"
+}

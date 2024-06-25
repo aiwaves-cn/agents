@@ -1,0 +1,6 @@
+{
+    "problem": "If the least common multiple of $A$ and $B$ is $1575$, and the ratio of $A$ to $B$ is $3:7$, then what is their greatest common divisor?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since the ratio of $A$ to $B$ is $3:7$, there is an integer $k$ for which $A=3k$ and $B=7k$. Moveover, $k$ is the greatest common divisor of $A$ and $B$, since 3 and 7 are relatively prime. Recalling the identity $\\mathop{\\text{lcm}}[A,B]\\cdot\\gcd(A,B)=AB$, we find that $1575k=(3k)(7k),$ which implies $k=1575/21=\\boxed{75}$."
+}

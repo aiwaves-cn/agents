@@ -1,0 +1,6 @@
+{
+    "problem": "Danny Henry made a waffle on his six-inch-diameter circular griddle using batter containing a half a cup of flour. Using the same batter, and knowing that all waffles have the same thickness, how many cups of flour would Paul Bunyan need for his 24-foot-diameter circular griddle?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Say Paul and Danny's griddles have diameters $d_1$ and $d_2$, respectively. Paul's griddle has $\\frac{d_1}{d_2}=\\frac{24\\text{ ft}}{.5\\text{ ft}}=48$ times the diameter and therefore $\\frac{\\pi d_1^2/4}{\\pi d_2^2/4}=\\left(\\frac{r_1}{r_2}\\right)^2=48^2=2304$ times the area. It requires $2304$ times as much flour, or $2304\\cdot0.5=\\boxed{1152}$ cups of flour."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The integers $r$ and $k$ are randomly selected, where $-3 < r < 6$ and $1 < k < 8$. What is the probability that the division $r \\div k$ is an integer value? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The possible values of $r$ are represented by the set $$R = \\{ -2, -1, 0, 1, 2, 3, 4, 5 \\}$$ and for $k$ the set $$K = \\{ 2, 3, 4, 5, 6, 7 \\}.$$ There are thus $8 \\cdot 6 = 48$ pairs of integers.\n\nNow, we see which satisfy the divisibility requirement that $k|r$. If $r = -2$ then $k$ can only be 2, or 1 integer. If $r = -1$, then $k$ can be no integer. If $r = 0$, then $k$ can be any integer, or 6 choices. If $r = 1$, then $k$ cannot be any integer. If $r = 2$, then $k$ can only be 2, or 1 integer. If $r = 3$ then $k$ can only be 3, or 1 integer. If $r = 4$, then $k$ can be 2 or 4, or 2 different integers. If $r = 5$, then $k = 5$ is the only possibility, for 1 integer. So, $1 + 6 + 1 + 1 + 2 + 1 = 12$ possibilities. So, $\\frac{12}{48} = \\boxed{\\frac{1}{4}}$ is the probability of $r \\div k$ being an integer."
+}

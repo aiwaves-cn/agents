@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than $500$ can be written as the sum of two positive perfect cubes?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Note that $7^3 < 500 < 8^3,$ so any positive integer that can be written as the sum of two positive perfect cubes must be written as the sum of two cubes $a^3 + b^3$ where $1 \\le a \\le 7$ and $1 \\le b \\le 7.$ We can make a chart of the sum of two such cubes: $$\n\\begin{array}{c|ccccccc}\n& 1^3 & 2^3 & 3^3 & 4^3 & 5^3 & 6^3 & 7^3 \\\\ \\hline\n1^3 & 2 & 9 & 28 & 65 & 126 & 217 & 344 \\\\\n2^3 & & 16 & 35 & 72 & 133 & 224 & 351 \\\\\n3^3 & & & 54 & 91 & 152 & 243 & 370 \\\\\n4^3 & & & & 128 & 189 & 280 & 407 \\\\\n5^3 & & & & & 250 & 341 & 468 \\\\\n6^3 & & & & & & 432 & {559} \\\\\n7^3 & & & & & & & {686}\n\\end{array}\n$$ As we can see from the chart, there are $\\boxed{26}$ such numbers less than $500.$"
+}

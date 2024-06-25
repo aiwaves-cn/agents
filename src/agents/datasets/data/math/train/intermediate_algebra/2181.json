@@ -1,0 +1,6 @@
+{
+    "problem": "Find the domain of the function\n\\[g(x) = \\frac{x^3 + 11x - 2}{|x - 3| + |x + 1|}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "The expression is defined as long as the denominator $|x - 3| + |x + 1|$ is not equal to 0.  Since the absolute value function is always non-negative, the only way that $|x - 3| + |x + 1| = 0$ is if both $|x - 3|$ and $|x + 1|$ are equal to 0.  In turn, this occurs if and only if $x = 3$ and $x = -1$.  Clearly, $x$ cannot be both 3 and $-1$ at the same time, so the denominator is always non-zero.  Therefore, the domain of the function is $\\boxed{(-\\infty,\\infty)}.$"
+}

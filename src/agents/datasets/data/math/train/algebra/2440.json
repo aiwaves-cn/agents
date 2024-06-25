@@ -1,0 +1,6 @@
+{
+    "problem": "The number $x$ satisfies $5x^2 + 4 = 3x + 9$.  Find the value of $(10x - 3)^2$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "First, we move all terms to one side to get $5x^2 - 3x - 5 = 0.$ Seeing that factoring will not work, we apply the Quadratic Formula: \\begin{align*}\nx &= \\frac{-(-3) \\pm \\sqrt{(-3)^2 - 4(5)(-5)}}{2 (5)}\\\\\n&= \\frac{3 \\pm \\sqrt{9 + 100}}{10} = \\frac{3 \\pm \\sqrt{109}}{10}.\n\\end{align*}Now we see that $10x = 3 \\pm \\sqrt{109}$, so $(10x - 3)^2 = \\boxed{109}.$\n\nAlternatively, from the equation $5x^2 - 3x - 5 = 0$, $5x^2 - 3x = 5$.  Then $(10x - 3)^2 = 100x^2 - 60x + 9 = 20(5x^2 - 3x) + 9 = 20 \\cdot 5 + 9 = \\boxed{109}$."
+}

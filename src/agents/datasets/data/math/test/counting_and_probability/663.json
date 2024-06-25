@@ -1,0 +1,6 @@
+{
+    "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$."
+}

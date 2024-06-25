@@ -1,0 +1,6 @@
+{
+    "problem": "If 2 cats are as cool as 5 alpacas and 3 pandas are as cool as 7 cats, how many pandas are as cool as 70 alpacas?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "First, we want to find the relationship between pandas and alpacas. Substituting ``='' for ``as cool as,'' we know that 3 pandas = 7 cats and 2 cats = 5 alpacas. Noting that the lowest common multiple of 2 and 7 is 14, we can multiply the panda-cat equality by 2 to learn that 6 pandas = 14 cats and multiply the cat-alpaca equality by 7 to learn that 14 cats = 35 alpacas. Combining these two equalities, we see that 6 pandas = 35 alpacas. Since $70\\div 35 = 2$, we can double the panda-alpaca equation to learn that 12 pandas = 70 alpacas. Therefore, $\\boxed{12}$ pandas are as cool as 70 alpacas.\n\nAlternatively, we could set up a string of fractions to ``cancel'' the units: $70\\text{ alpacas} \\times \\frac{2\\text{ cats}}{5\\text{ alpacas}}\\times\\frac{3 \\text{ pandas}}{7\\text{ cats}}=\\boxed{12}\\text{ pandas}$."
+}

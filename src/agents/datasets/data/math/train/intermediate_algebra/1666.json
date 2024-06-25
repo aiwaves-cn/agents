@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c,$ $x,$ $y,$ $z$ be nonzero complex numbers such that\n\\[a = \\frac{b + c}{x - 2}, \\quad b = \\frac{a + c}{y - 2}, \\quad c = \\frac{a + b}{z - 2},\\]and $xy + xz + yz = 5$ and $x + y + z = 3,$ find $xyz.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[x - 2 = \\frac{b + c}{a}, \\quad y - 2 = \\frac{a + c}{b}, \\quad z - 2 = \\frac{a + b}{c},\\]so\n\\[x - 1 = \\frac{a + b + c}{a}, \\quad y - 1 = \\frac{a + b + c}{b}, \\quad z - 1 = \\frac{a + b + c}{c}.\\]Then\n\\[\\frac{1}{x - 1} = \\frac{a}{a + b + c}, \\quad \\frac{1}{y - 1} = \\frac{b}{a + b + c}, \\quad \\frac{1}{z - 1} = \\frac{c}{a + b + c},\\]so\n\\[\\frac{1}{x - 1} + \\frac{1}{y - 1} + \\frac{1}{z - 1} = \\frac{a + b + c}{a + b + c} = 1.\\]Multiplying both sides by $(x - 1)(y - 1)(z - 1),$ we get\n\\[(y - 1)(z - 1) + (x - 1)(z - 1) + (x - 1)(y - 1) = (x - 1)(y - 1)(z - 1).\\]Expanding, we get\n\\[xy + xz + yz - 2(x + y + z) + 3 = xyz - (xy + xz + yz) + (x + y + z) - 1,\\]so\n\\[xyz = 2(xy + xz + yz) - 3(x + y + z) + 4 = 2 \\cdot 5 - 3 \\cdot 3 + 4 = \\boxed{5}.\\]"
+}

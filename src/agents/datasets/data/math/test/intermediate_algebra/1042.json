@@ -1,0 +1,6 @@
+{
+    "problem": "The roots of the polynomial \\[x^3 - 52x^2 + 581x - k\\]are distinct prime numbers. Find $k.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, the sum of the three roots is $52.$ If all three roots are odd primes, then their sum is odd, a contradiction; therefore, $2$ must be one of the roots of the polynomial.\n\nNow we can find $k$ without having to figure out the values of the other two roots, because for $x=2,$ we have \\[2^3 - 52(2^2) + 581(2) - k=0.\\]Solving for $k,$ we get $k = \\boxed{962}.$"
+}

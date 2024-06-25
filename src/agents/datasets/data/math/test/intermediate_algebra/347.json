@@ -1,0 +1,6 @@
+{
+    "problem": "Multiply $(x^6 -19x^3 + 361) (x^3+19)$.",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We recognize the given expression as the factorization $(a+b)(a^2-ab+b^2)$ of the difference of cubes $a^3+b^3$, where $a=x^3$ and $b=19$.  Thus the product is $a^3+b^3 = (x^3)^3+19^3=\\boxed{x^9+6859}$."
+}

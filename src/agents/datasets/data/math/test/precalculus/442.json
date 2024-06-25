@@ -1,0 +1,6 @@
+{
+    "problem": "Solve\n\\[2 \\sin \\theta (\\sin 2 \\theta + \\sin 4 \\theta + \\sin 6 \\theta + \\dots + \\sin 14 \\theta) = \\cos \\theta - \\frac{1}{2}\\]where $0^\\circ \\le \\theta \\le 24^\\circ.$  Enter all the possible solutions, separated by commas.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Expanding, we get\n\\[2 \\sin \\theta \\sin 2 \\theta + 2 \\sin \\theta \\sin 4 \\theta + 2 \\sin \\theta \\sin 6 \\theta + \\dots + 2 \\sin \\theta \\sin 14 \\theta = \\cos \\theta - \\frac{1}{2}.\\]Using the product-to-sum formula, we can write the left-hand side as\n\\begin{align*}\n&2 \\sin \\theta \\sin 2 \\theta + 2 \\sin \\theta \\sin 4 \\theta + 2 \\sin \\theta \\sin 6 \\theta + \\dots + 2 \\sin \\theta \\sin 14 \\theta \\\\\n&= (\\cos \\theta - \\cos 3 \\theta) + (\\cos 3 \\theta - \\cos 5 \\theta) + (\\cos 5 \\theta - \\cos 7 \\theta) + \\dots + (\\cos 13 \\theta - \\cos 15 \\theta) \\\\\n&= \\cos \\theta - \\cos 15 \\theta.\n\\end{align*}Hence, $\\cos 15 \\theta = \\frac{1}{2}.$\n\nSince $0^\\circ \\le \\theta \\le 24^\\circ,$ $0^\\circ \\le 15 \\theta \\le 360^\\circ.$  Thus, $15 \\theta = 60^\\circ$ or $15 \\theta = 300^\\circ,$ which leads to the solutions $\\boxed{4^\\circ, 20^\\circ}.$"
+}

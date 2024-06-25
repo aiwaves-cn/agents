@@ -1,0 +1,6 @@
+{
+    "problem": "Let $ f(x) = x^3 + x + 1$. Suppose $ g$ is a cubic polynomial such that $ g(0) = - 1$, and the roots of $ g$ are the squares of the roots of $ f$. Find $ g(9)$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let $r,$ $s,$ and $t$ be the roots of $f(x),$ so that $f(x)=(x-r)(x-s)(x-t)$. Then $r^2,$ $s^2,$ and $t^2$ are the roots of $g,$ so we can write \\[g(x) = A(x-r^2)(x-s^2)(x-t^2)\\]for some constant $A.$ Taking $x=0,$ we get \\[-1 = -Ar^2s^2t^2.\\]We know that $rst = -1$ by Vieta, so \\[-1 = -A(-1)^2 = -A\\]and $A=1.$ Then \\[g(x) = (x-r^2)(x-s^2)(x-t^2),\\]so \\[g(9) = (9-r^2)(9-s^2)(9-t^2).\\]To evaluate this product, we write\n\\begin{align*}\n g(9) &= (3-r)(3+r)(3-s)(3+s)(3-t)(3+t) \\\\\n  &= (3-r)(3-s)(3-t)(3+r)(3+s)(3+t) \\\\\n  &= (3-r)(3-s)(3-t)[-(-3-r)(-3-s)(-3-t)] \\\\\n  &= f(3)\\cdot -f(-3).\n\\end{align*}We know that $f(x) = (x-r)(x-s)(x-t),$ so in particular, $31 = f(3) = (3-r)(3-s)(3-t)$ and $-29 = f(-3) = (-3-r)(-3-s)(-3-t).$ Therefore, \\[g(9) = f(3) \\cdot -f(-3) = 31 \\cdot 29 = \\boxed{899}.\\]"
+}

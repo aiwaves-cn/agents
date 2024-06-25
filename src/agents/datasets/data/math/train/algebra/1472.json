@@ -1,0 +1,6 @@
+{
+    "problem": "Without using a calculator, compute $1003^2-997^2-1001^2+999^2$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Applying the difference of squares factorization individually to the first pair of terms and the last pair of terms, we have  \\begin{align*}\n1003^2&-997^2-1001^2+999^2\\\\\n&= (1003+997)(1003-997)-(1001+999)(1001-999) \\\\\n&= 2000(6)-2000(2) \\\\\n&= \\boxed{8000}.\n\\end{align*}"
+}

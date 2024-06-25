@@ -1,0 +1,6 @@
+{
+    "problem": "Find the numerical value of $k$ for which\n\\[\\frac{7}{x + y} = \\frac{k}{x + z} = \\frac{11}{z - y}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "In general, if we have fractions $\\frac{a}{b} = \\frac{c}{d},$ then\n\\[\\frac{a}{b} = \\frac{c}{d} = \\frac{a + c}{b + d}.\\]To see why, let $k = \\frac{a}{b} = \\frac{c}{d}.$  Then $a = kb$ and $c = kd,$ so\n\\[\\frac{a + c}{b + d} = \\frac{kb + kd}{b + d} = k.\\]Applying this here, we get\n\\[\\frac{7}{x + y} = \\frac{11}{z - y} = \\frac{7 + 11}{(x + y) + (z - y)} = \\frac{18}{x + z}.\\]Hence, $k = \\boxed{18}.$"
+}

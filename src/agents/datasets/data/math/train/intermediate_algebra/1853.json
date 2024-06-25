@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $\\frac 1n - \\frac{1}{n+1} < \\frac{1}{10}$, what is the least possible positive integer value of $n$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We find\n\n$$\\frac{1}{n}-\\frac{1}{n+1}=\\frac{1}{n(n+1)}$$\n\nSo we want $\\frac{1}{n(n+1)}<\\frac{1}{10}$, or $n(n+1)>10$.  We see that $2(3)=6<10$, while $3(4)=12>10$.  So the least possible value is $\\boxed{3}$."
+}

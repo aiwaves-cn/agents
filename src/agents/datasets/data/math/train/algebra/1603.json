@@ -1,0 +1,6 @@
+{
+    "problem": "If $2010a + 2014b = 2018$ and $2012a + 2016b = 2020$, what is the value of $a - b$ ?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Subtracting the two equations gives: \\begin{align*}\n(2012a + 2016b)-(2010a + 2014b) &= 2020-2018\\\\\n2a+2b &= 2\\\\\na+b &= 1\n\\end{align*}Multiplying this equation by 2010 and subtracting the resulting equation from $ 2010a + 2014b=2018$ gives \\begin{align*}\n4b &= (2010a + 2014b) - 2010(a+b)\n\\\\\\Rightarrow \\qquad 4b &= 2018-2010\n\\\\\\Rightarrow \\qquad 4b &= 8\n\\\\\\Rightarrow \\qquad b &=2.\n\\end{align*}So $a-b = (a+b) - 2b = 1-4 = \\boxed{-3}$."
+}

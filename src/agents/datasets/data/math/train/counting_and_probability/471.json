@@ -1,0 +1,6 @@
+{
+    "problem": "What is the largest integer $n$ for which $\\binom{8}{3} + \\binom{8}{4} = \\binom{9}{n}$?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "By Pascal's Identity, we have $\\binom{8}{3} + \\binom{8}{4} = \\binom{9}{4}$.  However, we also have $\\binom{9}{4} = \\binom{9}{9-4} = \\binom{9}{5}$.  There are no other values of $n$ such that $\\binom{9}{4} = \\binom{9}{n}$, so the largest possible value of $n$ is $\\boxed{5}$."
+}

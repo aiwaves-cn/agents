@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $BCD$, $\\angle C = 90^\\circ$, $CD = 3$, and $BD = \\sqrt{13}$. What is $\\tan B$?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "[asy]\npair B,C,D;\nB = (0,0);\nC = (2,0);\nD = (2,-3);\ndraw(B--C--D--B);\ndraw(rightanglemark(B,C,D,7));\nlabel(\"$D$\",D,SE);\nlabel(\"$B$\",B,NW);\nlabel(\"$C$\",C,NE);\nlabel(\"$3$\",(C+D)/2,E);\nlabel(\"$\\sqrt{13}$\",(B+D)/2,SW);\n[/asy]\n\nBecause $\\triangle BCD$ is a right triangle, we know that $\\tan B = \\frac{CD}{BC}$.\n\nBy the Pythagorean Theorem, $BC = \\sqrt{BD^2 - CD^2} = \\sqrt{13 - 9} = \\sqrt{4} = 2$.\n\nThen $\\tan B = \\frac{CD}{BC} = \\boxed{\\frac{3}{2}}$."
+}

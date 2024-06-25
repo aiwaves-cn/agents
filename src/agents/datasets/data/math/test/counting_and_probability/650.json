@@ -1,0 +1,6 @@
+{
+    "problem": "Our basketball team has 10 players.  We need to divide into two teams of 5 for an intra-squad scrimmage.  In how many ways can we do this without restrictions?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{10}{5} = 252$ ways to choose players for the first team, and the second team gets the remaining players.  However, since the teams are interchangeable, we must divide by two, so the answer is $252 / 2 = \\boxed{126}$."
+}

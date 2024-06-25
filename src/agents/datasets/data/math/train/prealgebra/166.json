@@ -1,0 +1,6 @@
+{
+    "problem": "Wanda, Darren, Beatrice, and Chi are tutors in the school math lab. Their schedule is as follows: Darren works every third school day, Wanda works every fourth school day, Beatrice works every sixth school day, and Chi works every seventh school day. Today they are all working in the math lab. In how many school days from today will they next be together tutoring in the lab?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The number of school days until they will next be together is the least common multiple of $3$, $4$, $6$, and $7$. Since $3$, $4 = 2^2$, and $7$ are all powers of different primes, the least common multiple of these prime powers is $3 \\cdot 2^2 \\cdot 7 = 84$. The number $6$ also happens to be a factor of $84$, so $\\boxed{84}$ is the least common multiple of $3$, $4$, $6$, and $7$."
+}

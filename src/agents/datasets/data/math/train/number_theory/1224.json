@@ -1,0 +1,6 @@
+{
+    "problem": "If we let $f(n)$ denote the sum of all the positive divisors of the integer $n$, how many integers $i$ exist such that $1 \\le i \\le 2010$ and $f(i) = 1 + \\sqrt{i} + i$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note firstly that $f(i)$ must be an integer, so this means that $i$ must be a perfect square in order for $\\sqrt{i}$ to be an integer. Out of the perfect squares, we claim that $i$ must be the square of some prime $p$. For if $\\sqrt{i}$ is composite, then it can be written as the product of two integers $a$ and $b$ and we find $f(i) \\ge 1 + \\sqrt{i} + i + a + b > 1 + \\sqrt{i} + i$. Moreover, if $\\sqrt{i}$ is prime, then the only factors of $i$ are 1, $\\sqrt{i}$, and $i$, so $f(i) = 1 + \\sqrt{i} + i$ as desired. It follows that we only need to calculate the number of primes less than $\\sqrt{2010}$. Since $\\sqrt{2010} < 45$, the desired set of primes is $\\{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43\\}$. The set has $\\boxed{14}$ elements."
+}

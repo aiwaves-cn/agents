@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\lfloor 11.1 \\rfloor + 2 \\cdot \\lfloor 0.5 \\cdot 11.1 \\rfloor .$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Since $11 < 11.1 < 12$ we have $\\lfloor 11.1 \\rfloor = 11.$  Next we have that  $2 \\cdot \\lfloor 0.5 \\cdot 11.1 \\rfloor = 2 \\lfloor 5.55 \\rfloor = 2 \\cdot 5 = 10.$ Therefore, $\\lfloor 11.1 \\rfloor + 2 \\cdot \\lfloor 0.5 \\cdot 11.1 \\rfloor = \\boxed{21}.$"
+}

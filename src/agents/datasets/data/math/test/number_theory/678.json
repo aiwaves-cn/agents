@@ -1,0 +1,6 @@
+{
+    "problem": "Jan is thinking of a positive integer. Her integer has exactly 16 positive divisors, two of which are 12 and 15. What is Jan's number?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Call Jan's number $J$. $12 = 2^2 \\cdot 3$ and $15 = 3 \\cdot 5$, so $J$ has at least two factors of 2, one factor of 3, and one factor of 5 in its prime factorization. If $J$ has exactly two factors of 2, then the prime factorization of $J$ is of the form $2^2 \\cdot 3^a \\cdot 5^b \\cdots$. Counting the number of positive factors of this yields $(2+1)(a+1)(b+1)\\cdots = 3k$, where $k$ is some integer. But we know $J$ has 16 factors, and since 16 is not divisible by 3, $16 \\neq 3k$ for any integer $k$. So $J$ cannot have exactly two factors of 2, so it must have at least 3. This means that $J$ is divisible by $2^3 \\cdot 3 \\cdot 5 = 120$. But 120 already has $(3+1)(1+1)(1+1) = 16$ factors, so $J$ must be $\\boxed{120}$ (or else $J$ would have more than 16 factors)."
+}

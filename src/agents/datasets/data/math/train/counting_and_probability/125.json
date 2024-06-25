@@ -1,0 +1,6 @@
+{
+    "problem": "A library has six identical copies of a certain book. At any given time, some of these copies are at the library and some are checked out. How many different ways are there for some of the books to be in the library and the rest to be checked out if at least one book is in the library and at least one is checked out?  (The books should be considered indistinguishable.)",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "From 1 to 5 books can be in the library, and the rest are checked out. Therefore, there are $\\boxed{5}$ possibilities."
+}

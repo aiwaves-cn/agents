@@ -1,0 +1,6 @@
+{
+    "problem": "Factor\n\\[\\frac{(a^2 - b^2)^3 + (b^2 - c^2)^3 + (c^2 - a^2)^3}{(a - b)^3 + (b - c)^3 + (c - a)^3}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We will use the identity\n\\[x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - xz - yz).\\]Setting $x = a^2 - b^2,$ $y = b^2 - c^2,$ $z = c^2 - a^2,$ we get\n\\[(a^2 - b^2)^3 + (b^2 - c^2)^3 + (c^2 - a^2)^3 - 3(a^2 - b^2)(b^2 - c^2)(c^2 - a^2) = 0.\\]Setting $x = a - b,$ $y = b - c,$ $z = c - a,$ we get\n\\[(a - b)^3 + (b - c)^3 + (c - a)^3 - 3(a - b)(b - c)(c - a) = 0.\\]Hence,\n\\begin{align*}\n\\frac{(a^2 - b^2)^3 + (b^2 - c^2)^3 + (c^2 - a^2)^3}{(a - b)^3 + (b - c)^3 + (c - a)^3} &= \\frac{3(a^2 - b^2)(b^2 - c^2)(c^2 - a^2)}{3(a - b)(b - c)(c - a)} \\\\\n&= \\frac{(a - b)(a + b)(b - c)(b + c)(c - a)(c + a)}{(a - b)(b - c)(c - a)} \\\\\n&= \\boxed{(a + b)(a + c)(b + c)}.\n\\end{align*}"
+}

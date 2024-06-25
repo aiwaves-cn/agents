@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)=x^3-8$, what is $f^{-1}(f(f^{-1}(19)))$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, by definition of the inverse of a function, $f(f^{-1}(19)) = 19$, so $f^{-1}(f(f^{-1}(19))) = f^{-1}(19)$.\n\nWe then find the inverse of $f(x)$. Substituting $f^{-1}(x)$ into the expression for $f$, and noting that $f(f^{-1}(x)) = x$ for all $x$ in the domain of $f^{-1}$, we get that  \\[x = (f^{-1}(x))^3 - 8.\\]Solving this equation for $f^{-1}(x)$, we get that $f^{-1}(x)=\\sqrt[3]{x+8}$. Then $f^{-1}(19) = \\sqrt[3]{19+8} = \\sqrt[3]{27}= \\boxed{3}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the remainder when $2x^2-17x+47$ is divided by $x-5$?",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "\\[\n\\begin{array}{c|cc c}\n\\multicolumn{2}{r}{2x} & -7 \\\\\n\\cline{2-4}\nx-5 & 2x^2 &- 17x &+ 47  \\\\\n\\multicolumn{2}{r}{-2x^2} & +10x  \\\\ \n\\cline{2-3}\n\\multicolumn{2}{r}{0} & -7x & +47   \\\\\n\\multicolumn{2}{r}{} &+ 7x  &-35   \\\\ \n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0& 12   \\\\\n\n\\end{array}\n\\]We cannot divide $12$ by $x-5$ since $12$ has lower degree. So the quotient is $2x-7$ and the remainder is $\\boxed{12}$."
+}

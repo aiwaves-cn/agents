@@ -1,0 +1,6 @@
+{
+    "problem": "Let $O$ be the origin, and let $(a,b,c)$ be a fixed point.  A plane passes through $(a,b,c)$ and intersects the $x$-axis, $y$-axis, and $z$-axis at $A,$ $B,$ and $C,$ respectively, all distinct from $O.$  Let $(p,q,r)$ be the center of the sphere passing through $A,$ $B,$ $C,$ and $O.$  Find\n\\[\\frac{a}{p} + \\frac{b}{q} + \\frac{c}{r}.\\]",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Let $A = (\\alpha,0,0),$ $B = (0,\\beta,0),$ and $C = (0,0,\\gamma).$  Since $(p,q,r)$ is equidistant from $O,$ $A,$ $B,$ and $C,$\n\\begin{align*}\np^2 + q^2 + r^2 &= (p - \\alpha)^2 + q^2 + r^2, \\\\\np^2 + q^2 + r^2 &= p^2 + (q - \\beta)^2 + r^2, \\\\\np^2 + q^2 + r^2 &= p^2 + q^2 + (r - \\gamma)^2.\n\\end{align*}The first equation simplifies to $2 \\alpha p = \\alpha^2.$  Since $\\alpha \\neq 0,$\n\\[\\alpha = 2p.\\]Similarly, $\\beta = 2q$ and $\\gamma = 2r.$\n\nSince $A = (\\alpha,0,0),$ $B = (0,\\beta,0),$ and $C = (0,0,\\gamma),$ the equation of plane $ABC$ is given by\n\\[\\frac{x}{\\alpha} + \\frac{y}{\\beta} + \\frac{z}{\\gamma} = 1.\\]We can also write the equation of the plane as\n\\[\\frac{x}{2p} + \\frac{y}{2q} + \\frac{z}{2r} = 1.\\]Since $(a,b,c)$ lies on this plane,\n\\[\\frac{a}{2p} + \\frac{b}{2q} + \\frac{c}{2r} = 1,\\]so\n\\[\\frac{a}{p} + \\frac{b}{q} + \\frac{c}{r} = \\boxed{2}.\\]"
+}

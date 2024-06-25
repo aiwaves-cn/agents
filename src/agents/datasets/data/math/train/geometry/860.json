@@ -1,0 +1,6 @@
+{
+    "problem": "Let $n$ equal the number of sides in a regular polygon. For $3\\leq n < 10$, how many values of $n$ result in a regular polygon where the common degree measure of the interior angles is not an integer?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The number of degrees is the sum of the interior angles of an $n$-gon is $180(n-2)$.  If the $n$-gon is regular, then each angle measures $\\frac{180(n-2)}{n}$ degrees.  If $n=3$, 4, 5, 6, or 9, then $n$ divides evenly into 180, so the number of degrees in each angle is an integer.  If $n=7$, then the number of degrees is $180\\cdot5/7=900/7$, which is not an integer.  If $n=8$, the number of degrees in each angle is $180\\cdot 6/8=135$.  Therefore, only $\\boxed{1}$ value of $n$ between 3 and 9 results in a non-integer degree measure for each interior angle of a regular $n$-gon."
+}

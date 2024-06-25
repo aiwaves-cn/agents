@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least common multiple of 72 and 96?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Prime factorize 72 as $2^3\\cdot 3^2$ and 96 as $2^5\\cdot 3$.  The exponent of 2 in any common multiple of 72 and 96 must be at least 5, and the exponent of 3 must be at least 2.  Therefore, the least common multiple of 72 and 96 is $2^5\\cdot 3^2=\\boxed{288}$."
+}

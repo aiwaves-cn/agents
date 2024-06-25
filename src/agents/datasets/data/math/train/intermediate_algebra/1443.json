@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be positive real numbers.  Find the smallest possible value of\n\\[6a^3 + 9b^3 + 32c^3 + \\frac{1}{4abc}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[6a^3 + 9b^3 + 32c^3 \\ge 3 \\sqrt[3]{6a^3 \\cdot 9b^3 \\cdot 32c^3} = 36abc.\\]Again by AM-GM,\n\\[36abc + \\frac{1}{4abc} \\ge 2 \\sqrt{36abc \\cdot \\frac{1}{4abc}} = 6.\\]Equality occurs when $6a^3 = 9b^3 = 32c^3$ and $36abc = 3.$  We can solve, to get $a = \\frac{1}{\\sqrt[3]{6}},$ $b = \\frac{1}{\\sqrt[3]{9}},$ and $c = \\frac{1}{\\sqrt[3]{32}}.$  Therefore, the minimum value is $\\boxed{6}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x) = \\frac{x + 6}{x}.$  The sequence $(f_n)$ of functions is defined by $f_1 = f$ and\n\\[f_n = f \\circ f_{n - 1}\\]for all $n \\ge 2.$  For example,\n\\[f_2(x) = f(f(x)) = \\frac{\\frac{x + 6}{x} + 6}{\\frac{x + 6}{x}} = \\frac{7x + 6}{x + 6}\\]and\n\\[f_3(x) = f(f_2(x)) = \\frac{\\frac{7x + 6}{x + 6} + 6}{\\frac{7x + 6}{x + 6}} = \\frac{13x + 42}{7x + 6}.\\]Let $S$ be the set of all real numbers $x$ such that\n\\[f_n(x) = x\\]for some positive integer $n.$  Find the number of elements in $S.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "First, we solve the equation $f(x) = x.$  This becomes\n\\[\\frac{x + 6}{x} = x,\\]so $x + 6 = x^2,$ or $x^2 - x - 6 = (x - 3)(x + 2) = 0.$  Thus, the solutions are $x = 3$ and $x = -2.$\n\nSince $f(x) = x$ for $x = 3$ and $x = -2,$ $f_n(x) = x$ for $x = 3$ and $x = -2,$ for any positive integer $n.$  Furthermore, it is clear that the function $f_n(x)$ will always be of the form\n\\[f_n(x) = \\frac{ax + b}{cx + d},\\]for some constants $a,$ $b,$ $c,$ and $d.$  The equation $f_n(x) = x$ then becomes\n\\[\\frac{ax + b}{cx + d} = x,\\]or $ax + b = x(cx + d).$  This equation is quadratic, and we know it has roots 3 and $-2,$ so there cannot be any more solutions to the equation $f_n(x) = x.$\n\nTherefore, $S = \\{3,-2\\},$ which contains $\\boxed{2}$ elements."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "When $(10^5 \\cdot 10^{77} \\div 10^{15} )\\div \\left(10^{15}\\right)^4$ is written as a single integer with no exponents, it is a 1 followed by one or more zeroes. How many zeroes are there?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "If we can express this number as a single power of 10, then we can directly find the number of zeroes at the end of the numbers. Recall that $10^n$ has $n$ zeroes at the end of it. We must start with parentheses first. Recall that $\\left( a^m \\right) ^n = a^{mn}$. Because of this, we can rewrite the last term as $10^{15 \\cdot 4}=10^{60}$. Finally, recall the rules of division and multiplication of exponents: $a^m \\cdot a^n = a^{m+n}$ and $a^m \\div a^n = a^{m-n}$. Using these we can carry out the multiplication and division from left to right to get \\begin{align*}\n(10^5 \\cdot 10^{77} \\div 10^{15}) \\div \\left(10^{15}\\right)^4 &= (10^5 \\cdot 10^{77} \\div 10^{15}) \\div 10^{60} \\\\\n&=(10^{5+77} \\div 10^{15}) \\div 10^{60} \\\\\n&=(10^{82} \\div 10^{15} )\\div 10^{60} \\\\\n&=10^{82-15} \\div 10^{60} \\\\\n&=10^{67} \\div 10^{60} \\\\\n&=10^{67-60} \\\\\n&=10^7.\n\\end{align*}Because the exponent of the number 10 is 7, this number has $\\boxed{7}$ zeroes at the end."
+}

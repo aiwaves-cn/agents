@@ -1,0 +1,6 @@
+{
+    "problem": "Square A has a perimeter of $24$ cm.  Square B has an area equal to one-fourth the area of square A.  What is the perimeter of square B?\n\n[asy]\ndraw((0,0)--(7,0));\ndraw((7,0)--(7,7));\ndraw((7,7)--(0,7));\ndraw((0,7)--(0,0));\ndraw((11,2)--(11,5));\ndraw((11,5)--(14,5));\ndraw((14,5)--(14,2));\ndraw((14,2)--(11,2));\nlabel(\"A\",(3.5,3.5));\nlabel(\"B\",(12.5,3.5));\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since square $A$ has a perimeter of 24 cm and all its sides are equal in length, each side measures $24/4=6$ cm. The area of square $A$ is thus $6\\cdot6=36$ square cm. Thus, the area of square $B$ is $36/4=9$ square cm. So each side of square $B$ measures $\\sqrt{9}=3$ cm. Finally, the perimeter of square $B$ is $4\\cdot3=\\boxed{12}$ cm."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC$, $\\cos(2A-B)+\\sin(A+B)=2$ and $AB=4$. What is $BC$?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The only way that the sum of a cosine and a sine can equal 2 is if each is equal to 1, so\n\\[\\cos (2A - B) = \\sin (A + B) = 1.\\]Since $A + B = 180^\\circ,$ $0 < A + B < 180^\\circ.$  Then we must have\n\\[A + B = 90^\\circ.\\]This means $A < 90^\\circ$ and $B < 90^\\circ,$ so $2A - B < 180^\\circ$ and $2A - B > -90^\\circ.$  Hence,\n\\[2A - B = 0^\\circ.\\]Solving the equations $A + B = 90^\\circ$ and $2A = B,$ we find $A = 30^\\circ$ and $B = 60^\\circ.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C;\n\nA = 4*dir(60);\nB = (0,0);\nC = (2,0);\n\ndraw(A--B--C--cycle);\ndraw(rightanglemark(A,C,B,10));\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$4$\", (A + B)/2, NW);\n[/asy]\n\nTherefore, triangle $ABC$ is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, so $BC = \\frac{AB}{2} = \\boxed{2}.$"
+}

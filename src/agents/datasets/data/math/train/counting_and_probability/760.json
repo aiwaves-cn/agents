@@ -1,0 +1,6 @@
+{
+    "problem": "A point in space $(x,y,z)$ is randomly selected so that $-1\\le x \\le 1$,$-1\\le y \\le 1$,$-1\\le z \\le 1$.  What is the probability that $x^2+y^2+z^2\\le 1$?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The region that the point $(x,y,z)$ can lie in is a cube with side length 2.  It has total volume of $2^3=8$.  The region of points that satisfy $x^2+y^2+z^2\\le 1$ corresponds to a unit sphere centered at the origin.  The volume of this sphere is $\\frac{4\\pi}{3}\\cdot 1^3=\\frac{4\\pi}{3}$.  This sphere lies completely inside, and is tangent to, the cube.  The probability that a point randomly selected from the cube will lie inside this sphere is equal to $\\frac{\\frac{4\\pi}{3}}{8}=\\boxed{\\frac{\\pi}{6}}$."
+}

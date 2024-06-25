@@ -1,0 +1,6 @@
+{
+    "problem": "A $\\emph{convex}$ polygon is a polygon in which every interior angle is less than 180 degrees.  A $\\emph{diagonal}$ of a convex polygon is a line segment that connects two non-adjacent vertices.  How many diagonals does a convex polygon with 20 sides have?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "For each of the 20 vertices of the polygon, there are 17 other nonadjacent vertices that we can connect the original vertex with to form a diagonal.  However, multiplying 20 by 17 would count each diagonal twice---once for each of the diagonal's endpoints. We must divide the result by 2 to correct for this, so the answer is $(20\\cdot 17)/2=\\boxed{170}$."
+}

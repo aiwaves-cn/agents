@@ -1,0 +1,6 @@
+{
+    "problem": "In rectangle $ABCD$, $AD=1$, $P$ is on $\\overline{AB}$, and $\\overline{DB}$ and $\\overline{DP}$ trisect $\\angle ADC$. Write the perimeter of $\\triangle BDP$ in simplest form as:  $w + \\frac{x \\cdot \\sqrt{y}}{z}$, where $w, x, y, z$ are nonnegative integers.  What is $w + x + y + z$?\n\n[asy]\npair A,B,C,D,P;\nA=(0,5);\nB=(8,5);\nC=(8,0);\nD=(0,0);\nP=(3,5);\ndraw(A--B--C--D--cycle);\ndraw(P--D--B);\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,N);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\nlabel(\"$P$\",P,N);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Both triangles $APD$ and $CBD$ are 30-60-90 triangles.  Thus $DP=\\frac{2\\sqrt{3}}{3}$ and $DB=2$. Since $\\angle\nBDP=\\angle PBD$, it follows that $PB=PD=\\frac{2\\sqrt{3}}{3}$. Hence the perimeter of $\\triangle BDP$ is $\\frac{2\\sqrt{3}}{3}+\\frac{2\\sqrt{3}}{3}+2={2+\\frac{4\\sqrt{3}}{3}}$.  Converting this to our contrived notation gives $w + x + y + z = \\boxed{12}$."
+}

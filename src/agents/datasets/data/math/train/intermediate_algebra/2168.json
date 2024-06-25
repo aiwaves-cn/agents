@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,b,c$ be the roots of $x^3-9x^2+11x-1=0$, and let $s=\\sqrt{a}+\\sqrt{b}+\\sqrt{c}$.  Find $s^4-18s^2-8s$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's Formulas, we have  $a + b + c = 9$, $ab + ac + bc = 11$, and $abc = 1$, so $\\sqrt{abc} = 1$.  (Note that the roots $a$, $b$, and $c$ are positive.)\n\nWe have\n\\[s^2 = a + b + c + 2 \\sqrt{ab} + 2 \\sqrt{ac} + 2 \\sqrt{bc} = 9 + 2(\\sqrt{ab} + \\!\\sqrt{ac} + \\!\\sqrt{bc}),\\]so $s^2 - 9 = 2(\\sqrt{ab} + \\!\\sqrt{ac} + \\!\\sqrt{bc})$. Squaring, we get\n\\begin{align*}\ns^4 - 18s^2 + 81 &= 4(ab + ac + bc + 2 \\sqrt{ab} \\sqrt{ac} + 2 \\sqrt{ab} \\sqrt{bc} + 2 \\sqrt{ac} \\sqrt{bc}) \\\\\n&= 4[ab + ac + bc + 2 \\sqrt{abc} (\\sqrt{a} + \\!\\sqrt{b} + \\!\\sqrt{c})] \n= 4(11 + 2s)\n= 44 + 8s,\n\\end{align*}so $s^4 - 18s^2 - 8s + 37 = 0$.  Therefore, $s^4 - 18s^2 - 8s = \\boxed{-37}$."
+}

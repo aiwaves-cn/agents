@@ -1,0 +1,6 @@
+{
+    "problem": "Find all $c$ which satisfy $$\\frac{c}{3} \\le 2+c < -2(1+c).$$Express your answer in interval notation, simplifying any fractions which occur in your answer.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We have two inequalities which $c$ must satisfy. We consider these inequalities one at a time.\n\nThe first inequality is $\\frac{c}{3}\\le 2+c$. Multiplying both sides by $3$, we have $$c\\le 6+3c.$$Subtracting $3c$ from both sides gives $$-2c\\le 6.$$We can divide both sides by $-2$, but we must reverse the inequality since $-2$ is negative. This gives $c\\ge -3$.\n\nThe second inequality is $2+c < -2(1+c)$. Expanding the right side, we have $$2+c < -2-2c.$$Adding $2c-2$ to both sides gives $$3c<-4.$$Dividing both sides by $3$ gives $c<-\\frac{4}{3}$.\n\nSo, all $c$ which satisfy both inequalities are given by $-3\\le c<-\\frac{4}{3}$, or, in interval notation, $c\\in\\boxed{\\left[-3,-\\frac{4}{3}\\right)}$."
+}

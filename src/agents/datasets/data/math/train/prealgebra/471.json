@@ -1,0 +1,6 @@
+{
+    "problem": "A digit is written to the right of the units digit of $757$.  If the resulting four-digit number is divisible by $3$, how many possibilities are there for the digit that was written?",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Let $N$ be the digit that was written.  The four-digit number $757N$ is divisible by $3$ if and only if $7 + 5 + 7 + N = 19 + N$ is divisible by $3$.  We find that only $N = 2, 5, 8$ work, so there are $\\boxed{3}$ possibilities for $N$."
+}

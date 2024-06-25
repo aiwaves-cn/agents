@@ -1,0 +1,6 @@
+{
+    "problem": "Consider two positive even integers less than $15$ (not necessarily distinct). When the sum of these two numbers is added to their product, how many different possible values may result?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let $p$ and $q$ be the two integers; then $p,q \\in \\{2,4,6,8,10,12,14\\}$, giving $7 \\times 7 = 49$ total possible pairs $(p,q)$. The question asks for the number of different values of $pq + p + q$. Notice that by Simon's Favorite Factoring Trick, $$pq + p + q = (p+1)(q+1) - 1,$$so it suffices to find the number of different possible values of $(p+1)(q+1)$. Here, $p+1,q+1 \\in \\{3,5,7,9,11,13,15\\}$.\n\nThere are $7$ pairs $(p,q)$ where $p+1$ is equal to $q+1$; by symmetry, half of the $42$ remaining pairs correspond to swapping the values of $p$ and $q$, leaving $42/2 = 21$ pairs $(p,q)$. Since most of the possible values of $p+1$ and $q+1$ are prime factors that do not divide into any of the other numbers, we note that most of the values of $(p+1)(q+1)$ will be distinct. The exception are the numbers divisible by $3$ and $5$: $p+1,q+1 \\in \\{3,5,9,15\\}$; then, if $(p+1,q+1) = (3,15)$ or $(5,9)$, then $(p+1)(q+1) = 45$.\n\nHence, there are exactly $21-1+7 = \\boxed{27}$ distinct possible values of $pq + p + q$."
+}

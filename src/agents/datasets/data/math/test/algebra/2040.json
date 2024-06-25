@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of the arithmetic series $28 + 30 + 32 + \\cdots + 86$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The common difference is 2, so the $n^{\\text{th}}$ term in the sequence is $28 + 2(n - 1) = 2n + 26$.  If $2n + 26 = 86$, then $n = 30$, so the sequence contains 30 terms.\n\nThe sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms, so the sum is $\\frac{(28 + 86)}{2} \\cdot 30 = \\boxed{1710}$."
+}

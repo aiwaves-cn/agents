@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer $N$ such that the value $7 + (30 \\times N)$ is not a prime number?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Since 2, 3, and 5 divide $30N$ but not $7$, they do not divide $30N + 7$.  Similarly, 7 only divides $30N + 7$ if 7 divides $30N$, which means $N$ must be a multiple of 7 for 7 to divide it.  Since no number less than 11 divides $30N + 7$ while $N < 7$, we only need to check when $30N + 7 \\ge 11^2$.  When $N = 4$, $30N + 7 = 127$ is prime.  When $N = 5$, $30N + 7 = 157$ is prime.  However, when $N = \\boxed{6}$, $30N + 7 = 187 = 11 \\cdot 17$ is composite."
+}

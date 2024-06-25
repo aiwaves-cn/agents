@@ -1,0 +1,6 @@
+{
+    "problem": "When the expression $(2^1)(2^2)(2^3)\\cdots (2^{99})(2^{100})$ is written as an integer, what is the product of the tens digit and the ones digit?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Define the sequence $$x_i = \\text{the remainder when }2^i\\text{ is divided by 100}.$$  Then note that $x_{22} = x_2 = 4$, and thus this sequence repeats every 20 terms from $x_2$ onward.  The desired product is $2^{1 + 2 + 3 + \\ldots + 99 + 100} = 2^{5050}$.  If we can find $x_{5050}$, we will then be done.  But since $5050 = 20\\cdot 252 + 10$, we see that $x_{5050} = x_{10} = 24$.  Thus our answer is $2\\cdot 4 = \\boxed{8}$."
+}

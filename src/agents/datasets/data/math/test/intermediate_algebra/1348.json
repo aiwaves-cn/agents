@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $f(x)$ is divided by the polynomial $d(x)$ to give a quotient of $q(x)$ and a remainder of $r(x)$. If $\\deg f = 9$ and $\\deg r = 3$, what is the maximum possible value of $\\deg q$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have $f(x) = d(x)q(x) +r(x)$. Since $\\deg f = 9$ and $\\deg r = 3$, we must have $\\deg q + \\deg d = 9$.  We know that in division $\\deg r < \\deg d$, which means that $\\deg d \\ge 4$. So\n$$\\deg q \\le 9-4 = \\boxed{5}.$$"
+}

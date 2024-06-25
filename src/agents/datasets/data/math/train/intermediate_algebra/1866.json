@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be a real number, $x > 1.$  Compute\n\\[\\sum_{n = 0}^\\infty \\frac{1}{x^{2^n} - x^{-2^n}}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "We can write\n\\[\\frac{1}{x^{2^n} - x^{-2^n}} = \\frac{x^{2^n}}{x^{2^{n + 1}} - 1}.\\]Let $y = x^{2^n}.$  Then\n\\begin{align*}\n\\frac{x^{2^n}}{x^{2^{n + 1}} - 1} &= \\frac{y}{y^2 - 1} \\\\\n&= \\frac{(y + 1) - 1}{y^2 - 1} \\\\\n&= \\frac{y + 1}{y^2 - 1} - \\frac{1}{y^2 - 1} \\\\\n&= \\frac{1}{y - 1} - \\frac{1}{y^2 - 1} \\\\\n&= \\frac{1}{x^{2^n} - 1} - \\frac{1}{x^{2^{n + 1}} - 1}.\n\\end{align*}Thus, the sum telescopes:\n\\[\\sum_{n = 0}^\\infty \\frac{1}{x^{2^n} - x^{-2^n}} = \\left( \\frac{1}{x - 1} - \\frac{1}{x^2 - 1} \\right) + \\left( \\frac{1}{x^2 - 1} - \\frac{1}{x^4 - 1} \\right) + \\left( \\frac{1}{x^4 - 1} - \\frac{1}{x^8 - 1} \\right) + \\dotsb = \\boxed{\\frac{1}{x - 1}}.\\]"
+}

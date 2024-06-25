@@ -1,0 +1,6 @@
+{
+    "problem": "If $e^{i \\theta} = \\frac{2 + i \\sqrt{5}}{3},$ then find $\\sin 4 \\theta.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Squaring the given equation, we get\n\\[e^{2 i \\theta} = \\left( \\frac{2 + i \\sqrt{5}}{3} \\right)^2 = \\frac{-1 + 4i \\sqrt{5}}{9}.\\]Squaring again, we get\n\\[e^{4 i \\theta} = \\left( \\frac{-1 + 4i \\sqrt{5}}{9} \\right)^2 = \\frac{-79 - 8i \\sqrt{5}}{81}.\\]Therefore, $\\sin 4 \\theta = \\boxed{-\\frac{8 \\sqrt{5}}{81}}.$"
+}

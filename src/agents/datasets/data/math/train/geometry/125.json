@@ -1,0 +1,6 @@
+{
+    "problem": "Which of the cones below can be formed from a $252^{\\circ}$ sector of a circle of radius 10 by aligning the two straight sides?\n\n[asy]\ndraw((5.8,8.1)..(-10,0)--(0,0)--(3.1,-9.5)..cycle);\nlabel(\"10\",(-5,0),S);\nlabel(\"$252^{\\circ}$\",(0,0),NE);\n[/asy]\n\nA. base radius = 6, slant =10\n\nB. base radius = 6, height =10\n\nC. base radius = 7, slant =10\n\nD. base radius = 7, height =10\n\nE. base radius = 8, slant = 10",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The slant height of the cone is equal to the radius of the sector, or $10$.  The circumference of the base of the cone is equal to the length of the sector's arc, or $\\frac{252^\\circ}{360^\\circ}(20\\pi) = 14\\pi$.  The radius of a circle with circumference $14\\pi$ is $7$.  Hence the answer is $\\boxed{C}$."
+}

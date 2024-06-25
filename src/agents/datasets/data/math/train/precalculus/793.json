@@ -1,0 +1,6 @@
+{
+    "problem": "In triangle $ABC,$ $AB = 20$ and $BC = 15.$  Find the largest possible value of $\\tan A.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Consider $A$ and $B$ as fixed points in the plane.  Then the set of possible locations of point $C$ is the circle centered at $B$ with radius 15.\n\n[asy]\nunitsize(0.2 cm);\n\npair A, B, C;\n\nB = (0,0);\nA = (20,0);\nC = intersectionpoint(arc(B,15,0,180),arc(A,5*sqrt(7),0,180));\n\ndraw(A--B--C--cycle);\ndraw(Circle(B,15), dashed);\n\nlabel(\"$A$\", A, S);\ndot(\"$B$\", B, S);\nlabel(\"$C$\", C, NE);\nlabel(\"$20$\", (A + B)/2, S);\nlabel(\"$15$\", (B + C)/2, NW);\n[/asy]\n\nThen $\\angle A$ is maximized when $\\overline{AC}$ is tangent to the circle.  In this case, $\\angle C = 90^\\circ,$ so by Pythagoras,\n\\[AC = \\sqrt{20^2 - 15^2} = 5 \\sqrt{7}.\\]Then $\\tan A = \\frac{15}{5 \\sqrt{7}} = \\boxed{\\frac{3 \\sqrt{7}}{7}}.$"
+}

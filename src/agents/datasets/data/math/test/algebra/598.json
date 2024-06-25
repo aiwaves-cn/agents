@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that  $4^{a}=5$, $5^{b}=6$, $6^{c}=7,$ and  $7^{d}=8$. What is $a\\cdot b\\cdot c\\cdot d$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Because \\[\n4^{a\\cdot b\\cdot c\\cdot d}\n= \\left(\\left(\\left(4^a\\right)^b\\right)^c\\right)^d\n= \\left(\\left( 5^b\\right)^c\\right)^d\n= \\left(6^c\\right)^d = 7^d = 8 = 4^{3/2},\n\\]we have $a\\cdot b\\cdot c\\cdot d = \\boxed{\\frac{3}{2}}$."
+}

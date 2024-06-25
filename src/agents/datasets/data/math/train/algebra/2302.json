@@ -1,0 +1,6 @@
+{
+    "problem": "If $4u-5v=23$ and $2u+4v=-8$, find the value of $u+v$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can begin by multiplying the second equation by two, giving us the following system of equations \\begin{align*} 4u-5v&=23\n\\\\ 4u+8v&=-16\n\\end{align*}From here we simply subtract the second equation from the first. This gives us $(4u-5v)-(4u+8v)=23-(-16)$, which simplifies to $-13v=39$ or $v=-3$. We now know the value of $v$, so we can just plug this into the first equation in order to solve for $u$. This gives us $4u-5(-3)=23$, or $4u=8$ and $u=2$. Since $v=-3$ and $u=2$, $u+v=2+(-3)=\\boxed{-1}$."
+}

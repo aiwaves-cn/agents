@@ -1,0 +1,6 @@
+{
+    "problem": "Captain Rusczyk tracked down a pirate who had stolen $2345_{6}$ dollars worth of goods from his ship. After winning an epic duel, the Captain demands that the pirate return $41324_{5}$ dollars. How much has the pirate gone in debt due to his two encounters with Rusczyk? Express your answer in base 10.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We wish to solve for $41324_{5}-2345_{6}$.\n\n$2345_{6} = 5\\cdot6^{0}+4\\cdot6^{1}+3\\cdot6^{2}+2\\cdot6^{3} = 5+24+108+432 = 569_{10}$\n\n$41324_{5} = 4\\cdot5^{0}+2\\cdot5^{1}+3\\cdot5^{2}+1\\cdot5^{3}+4\\cdot5^{4} = 4+10+75+125+2500 = 2714_{10}$\n\nSo, the pirate is now $2714-569= \\boxed{2145}$ dollars in debt."
+}

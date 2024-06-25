@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $\\cos R = \\frac{4}{9}$ in the diagram below.  What is $QS$?\n\n\n\n[asy]\n\npair Q,R,S;\n\nS = (0,0);\n\nQ = (sqrt(65),0);\n\nR = (sqrt(65),-4);\n\ndraw(S--Q--R--S);\n\ndraw(rightanglemark(S,Q,R,13));\n\nlabel(\"$S$\",S,NW);\n\nlabel(\"$Q$\",Q,NE);\n\nlabel(\"$R$\",R,SE);\n\nlabel(\"$9$\",(R+S)/2,SW);\n\n[/asy]",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "Since $\\cos R = \\frac{4}{9}$ and $\\cos R = \\frac{QR}{RS}=\\frac{QR}{9}$, we have $\\frac{QR}{9} = \\frac{4}{9}$, so $QR = 4$. Then, by the Pythagorean Theorem, $QS = \\sqrt{RS^2 - QR^2} = \\sqrt{81-16} = \\boxed{\\sqrt{65}}$."
+}

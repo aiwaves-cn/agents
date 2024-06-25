@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $1+6\\cdot2-3+5\\cdot4\\div2$",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "When solving this problem, we must remember to apply the order of operations. First, we perform all cases of multiplication and division from left to right to obtain\n\n\\begin{align*}\n1+6\\cdot2-3+5\\cdot4\\div2&=1+12-3+5\\cdot4\\div2\\\\\n&=1+12-3+20\\div 2\\\\\n&=1+12-3+10.\n\\end{align*}Next, we perform all the required additions and subtractions from left to right. We get  \\begin{align*}\n1+12-3+10&=13-3+10\\\\\n&=10+10\\\\\n&=\\boxed{20}.\n\\end{align*}"
+}

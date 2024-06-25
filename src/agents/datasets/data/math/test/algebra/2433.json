@@ -1,0 +1,6 @@
+{
+    "problem": "If we express $3x^2 + x - 4$ in the form $a(x - h)^2 + k$, then what is $k$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We complete the square.  First, we factor 3 out of the terms $3x^2 + x$ to get $3 \\left( x^2 + \\frac{x}{3} \\right)$.  We can square $x + \\frac{1}{6}$ to get $x^2 + \\frac{x}{3} + \\frac{1}{36}$, so \\begin{align*}\n3 \\left( x^2 + \\frac{x}{3} \\right) &= 3 \\left[ \\left( x + \\frac{1}{6} \\right)^2 - \\frac{1}{36} \\right]\\\\\n&= 3 \\left( x + \\frac{1}{6} \\right)^2 - \\frac{3}{36}\\\\\n& = 3 \\left( x + \\frac{1}{6} \\right)^2 - \\frac{1}{12},\\end{align*}and \\begin{align*}3 \\left( x^2 + \\frac{x}{3} \\right) - 4 &= 3 \\left( x + \\frac{1}{6} \\right)^2 - \\frac{1}{12} - 4\\\\\n& = 3 \\left( x + \\frac{1}{6} \\right)^2 - \\frac{49}{12}.\\end{align*}We see that $k = \\boxed{-\\frac{49}{12}}$."
+}

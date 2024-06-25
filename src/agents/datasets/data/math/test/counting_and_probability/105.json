@@ -1,0 +1,6 @@
+{
+    "problem": "Express $\\frac{6!+4!}{5!}$ as a mixed number.",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "We can separate the fraction to get $\\frac{6!}{5!} +\\frac{4!}{5!}$. We can then simplify the quotient of factorials:\n\n\\begin{align*}\n\\frac{6!}{5!} +\\frac{4!}{5!} &= \\frac{6\\cdot5!}{5!} +\\frac{4!}{5\\cdot4!}\\\\\n&=6+\\frac15\\\\\n&=\\boxed{6\\frac15}.\n\\end{align*}"
+}

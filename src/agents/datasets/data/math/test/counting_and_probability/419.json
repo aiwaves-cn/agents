@@ -1,0 +1,6 @@
+{
+    "problem": "Harold tosses a nickel four times.  What is the probability that he gets at least as many heads as tails?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are 16 possible outcomes: $HHHH$, $HHHT$, $HHTH$, $HTHH$, $THHH$, $HHTT$, $HTHT$, $HTTH$, $THTH$, $THHT$, $TTHH$ and $HTTT$, $THTT$, $TTHT$, $TTTH$, $TTTT$.  The first eleven have at least as many heads as tails.  The probability is $\\boxed{\\frac{11}{16}}$."
+}

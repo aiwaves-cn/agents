@@ -1,0 +1,6 @@
+{
+    "problem": "How many degrees are there in the measure of angle $P?$\n\n[asy]\nsize (5cm,5cm);\npair A,B,C,D,E;\n\nA=(0,1.1);\nB=(4.5,0);\nC=(6.4,1.7);\nD=(4.2,5);\nE=(0.5,4.2);\n\ndraw (A--B--C--D--E--A,linewidth(1));\n\nlabel(\"$P$\",A,SW);\nlabel(\"$128^\\circ$\",shift(0,0.6)*B);\n\nlabel(\"$92^\\circ$\",C,W);\nlabel(\"$113^\\circ$\",shift(-0.3,-0.5)*D);\nlabel(\"$111^\\circ$\",shift(0.5,-0.3)*E);\ndraw(anglemark(B,A,E),blue);\n\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "The sum of the angle measures of a pentagon is $180(5-2) = 540$ degrees, so we must have \\[\\angle P + 111^\\circ + 113^\\circ + 92^\\circ + 128^\\circ = 540^\\circ.\\] Simplifying this equation gives $\\angle P + 444^\\circ = 540^\\circ$, which means $\\angle P = \\boxed{96^\\circ}$."
+}

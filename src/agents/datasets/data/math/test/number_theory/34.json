@@ -1,0 +1,6 @@
+{
+    "problem": "Find $9^{-1} \\pmod{100}$, as a residue modulo 100.  (Give an answer between 0 and 99, inclusive.)",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that $9 \\cdot 11 \\equiv 99 \\equiv -1 \\pmod{100}$.  Then $9 \\cdot (-11) \\equiv -99 \\equiv 1 \\pmod{100}$, so $9^{-1} \\equiv -11 \\equiv \\boxed{89} \\pmod{100}$."
+}

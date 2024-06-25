@@ -1,0 +1,6 @@
+{
+    "problem": "If $P(x) = 4+2\\sqrt{x+2}$ and $G(x) = 4-3x$, then what is the largest constant $a$ such that $P(G(a))$ is defined?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Since $P(x)$ is defined only for $x\\ge -2$, we must have $G(a) \\ge -2$ in order for $P(G(a))$ to be defined.  Therefore, we must have $4-3a \\ge -2$, so $6\\ge 3a$, which means $2\\ge a$.  Checking, we see that $P(G(2)) = P(-2) = 4$, so $a=\\boxed{2}$ is the largest constant $a$ such that $P(G(a))$ is defined."
+}

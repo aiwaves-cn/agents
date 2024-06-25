@@ -1,0 +1,6 @@
+{
+    "problem": "Compute the domain of the real-valued function \\[f(x)=\\sqrt{1-\\sqrt{2-\\sqrt{x}}}.\\]",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "For the contents of the innermost square root to be nonnegative, we must have $x\\geq 0$.  To satisfy the middle square root, we must have  $$2-\\sqrt{x}\\geq 0\\Rightarrow 4\\geq x.$$ Finally, the outermost square root requires $$1-\\sqrt{2-\\sqrt{x}}\\geq 0.$$ This gives us $$1\\geq 2-\\sqrt{x}\\Rightarrow x\\geq 1.$$ Combining our inequalities, we get ${1\\leq x\\leq 4}$, or $x \\in \\boxed{[1, 4]}$ in interval notation."
+}

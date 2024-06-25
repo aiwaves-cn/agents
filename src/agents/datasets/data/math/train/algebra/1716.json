@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of $t$ that satisfies $\\frac{1}{t+2} + \\frac{2t}{t+2} - \\frac{3}{t+2} = 3$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Combining the fractions on the left gives $\\dfrac{2t-2}{t+2} = 3$.  Multiplying both sides by $t+2$ gives $2t-2 = 3(t+2)$.  Expanding the right side gives $2t-2 = 3t+6$.  Subtracting $2t$ and 6 from both sides gives $t=\\boxed{-8}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $g(x)=\\sqrt[3]{\\frac{x+3}{4}}$, for what value of $x$ will $g(2x)=2(g(x))$? Express your answer in simplest form.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since $g(x)=\\sqrt[3]{\\frac{x+3}{4}}$, we know that $g(2x)=\\sqrt[3]{\\frac{2x+3}{4}}$. Similarly, we see that $2(g(x))=2\\sqrt[3]{\\frac{x+3}{4}}$. This gives us the equation \\begin{align*} \\sqrt[3]{\\frac{2x+3}{4}}&=2\\sqrt[3]{\\frac{x+3}{4}}\n\\\\\\Rightarrow\\qquad\\left(\\sqrt[3]{\\frac{2x+3}{4}}\\right)^3&=\\left(2\\sqrt[3]{\\frac{x+3}{4}}\\right)^3\n\\\\\\Rightarrow\\qquad \\frac{2x+3}{4}&=\\frac{8(x+3)}{4}\n\\\\\\Rightarrow\\qquad\\frac{2x+3}{4}&=\\frac{8x+24}{4}\n\\\\\\Rightarrow\\qquad 2x+3&=8x+24\n\\\\\\Rightarrow\\qquad-6x&=21\n\\\\\\Rightarrow\\qquad x&=\\boxed{-\\frac{7}{2}}\n\\end{align*}"
+}

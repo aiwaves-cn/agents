@@ -1,0 +1,6 @@
+{
+    "problem": "Find all values of $b$ such that $b+\\lceil b\\rceil=17.8$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, $b$ must be positive since $b+\\lceil b\\rceil$ has a positive solution. Because $\\lceil b\\rceil$ must be an integer, $0.8$ must be the decimal component of $b$. Therefore, $b$ can be rewritten as $a+0.8$. $\\lceil b\\rceil$ must then equal $a+1$. The original equation is then as follows: \\begin{align*}\nb+\\lceil b\\rceil&=17.8\\\\\na+0.8+a+1&=17.8\\\\\n2a+1.8&=17.8\\\\\n2a&=16\\\\\na&=8\n\\end{align*}Therefore, $b=a+0.8=\\boxed{8.8}$."
+}

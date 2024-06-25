@@ -1,0 +1,6 @@
+{
+    "problem": "Angela has $a$ marbles, Brian has twice as many marbles as Angela, Caden has three times as many marbles as Brian, and Daryl has five times the number of marbles Caden has. If in total Angela, Brian, Caden and Daryl have 78 marbles, what is the value of $a?$",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "First, quantify the number of marbles each person has:\n\n$\\bullet$ Angela has $a$ marbles.\n\n$\\bullet$ Brian has $2\\times a$ marbles.\n\n$\\bullet$ Caden has $3\\times(2\\times a)$ marbles.\n\n$\\bullet$ Daryl has $5\\times(3\\times(2\\times a))$ marbles.\n\nIn total, the four people have $a+2\\times a+3\\times(2\\times a)+5\\times(3\\times(2\\times a))$ marbles. And that expression equals 78, since in total the four people have 78 marbles. Now evaluate the resulting equation. \\begin{align*}\n78&=a+2\\times a+3\\times(2\\times a)+5\\times(3\\times(2\\times a))\\\\\n&=a+2a+3(2a)+5(3(2a))\\\\\n&=a+2a+6a+5(6a)\\\\\n&=a+2a+6a+30a\\\\\n&=39a \\quad\\implies\\\\\na&=\\boxed{2}.\n\\end{align*}"
+}

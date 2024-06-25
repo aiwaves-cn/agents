@@ -1,0 +1,6 @@
+{
+    "problem": "A drawer contains a mixture of red socks and blue socks, at most $1991$ in all. It so happens that, when two socks are selected randomly without replacement, there is a probability of exactly $\\frac{1}{2}$ that both are red or both are blue. What is the largest possible number of red socks in the drawer that is consistent with this data?\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let $r$ and $b$ denote the number of red and blue socks, respectively. Also, let $t=r+b$. The probability $P$ that when two socks are drawn randomly, without replacement, both are red or both are blue is given by\n\\[\\frac{r(r-1)}{(r+b)(r+b-1)}+\\frac{b(b-1)}{(r+b)(r+b-1)}=\\frac{r(r-1)+(t-r)(t-r-1)}{t(t-1)}=\\frac{1}{2}.\\]\nSolving the resulting quadratic equation $r^{2}-rt+t(t-1)/4=0$, for $r$ in terms of $t$, one obtains that\n\\[r=\\frac{t\\pm\\sqrt{t}}{2}\\, .\\]\nNow, since $r$ and $t$ are positive integers, it must be the case that $t=n^{2}$, with $n\\in\\mathbb{N}$. Hence, $r=n(n\\pm 1)/2$ would correspond to the general solution. For the present case $t\\leq 1991$, and so one easily finds that $n=44$ is the largest possible integer satisfying the problem conditions.\nIn summary, the solution is that the maximum number of red socks is $r=\\boxed{990}$."
+}

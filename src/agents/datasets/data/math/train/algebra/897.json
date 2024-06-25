@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $f(z)$ and $g(z)$ are polynomials in $z$, and the degree of $g(z)$ is less than the degree of $f(z)$.  If the degree of $f(z)$ is two, what is the degree of $f(z)+g(z)$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We have $f(z)=a_2 \\cdot z^2+a_1 \\cdot z+a_0$, and $g(z)=b_1 \\cdot z+b_0$, where $a_2$ is nonzero.  Then $f(z)+g(z)=a_2 \\cdot z^2+(a_1+b_1) \\cdot z+(a_0+b_0)$.  The degree of this polynomial is $\\boxed{2}$."
+}

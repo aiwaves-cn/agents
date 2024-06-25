@@ -1,0 +1,6 @@
+{
+    "problem": "Legolas flips a fair coin 2008 times, and Gimli flips another fair coin 2009 times. What is the probability that Gimli flips more heads than Legolas?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "After Gimli has flipped his coin 2008 times, the probability that he has more heads than Legolas is equal the probability that Legolas has more heads than him. Call this probability $p$. Then there is a $1-2p$ probability that they have the same number of heads. If Gimli already has more heads, he will have more heads after he flips again. If he has fewer heads, he cannot have more after just one more flip. If they are even, there is a $1/2$ chance he will flip another head, and therefore have more heads. In all, Gimli flips more heads than Legolas with probability $p+\\frac12(1-2p)=p+\\frac12-p=\\boxed{\\frac{1}{2}}$."
+}

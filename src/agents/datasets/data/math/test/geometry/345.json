@@ -1,0 +1,6 @@
+{
+    "problem": "One cube has a volume of 343 cubic centimeters. The edge length of a second cube is three times the edge length of this first cube. What is the positive difference between the volume of the second cube and the volume of the first cube, in cubic centimeters?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "By homothety, the second cube has a volume that is $3^3 = 27$ times that of the first.  Hence the difference in the cubes' volumes is $27\\cdot 343 - 343 = \\boxed{8918}$ cubic centimeters."
+}

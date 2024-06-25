@@ -1,0 +1,6 @@
+{
+    "problem": "What is the positive difference of the solutions of $\\dfrac{r^2-3r-17}{r+4}=2r+7$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Factoring the quadratic in the numerator does not look pleasant, so we go ahead and multiply through by the denominator to get \\begin{align*}\nr^2-3r-17&=(r+4)(2r+7)\\\\\nr^2-3r-17&=2r^2 + 15r + 28\\\\\nr^2+18r+45&=0\\\\\n(r+3)(r+15)&=0\n\\end{align*}Therefore the solutions are $r=-3$ and $r=-15$ which have a difference of $\\boxed{12}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two real numbers are chosen at random between $0$ and $2.$ What is the probability that the sum of their squares is no more than $4?$ Express your answer as a common fraction in terms of $\\pi$.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We let the two numbers be $x$ and $y$.  The set of all possible pairs $(x,y)$ satisfy the inequalities $0<x<2$ and $0<y<2$; we can graph these points as a square on the $x-y$ plane with vertices $(0,0),(2,0),(2,2)$ and $(0,2)$.  This square has area $4.$\n\n[asy]\nunitsize(1.5 cm);\n\nfilldraw(arc((0,0),2,0,90)--(0,0)--cycle,gray(0.7));\ndraw((0,0)--(2,0)--(2,2)--(0,2)--cycle);\n\nlabel(\"$0$\", (0,0), S);\nlabel(\"$2$\", (2,0), S);\nlabel(\"$x$\", (2,0), E);\nlabel(\"$0$\", (0,0), W);\nlabel(\"$2$\", (0,2), W);\nlabel(\"$y$\", (0,2), N);\n[/asy]\n\nWe want to find the area of the set of points which also satisfies $x^2+y^2\\le 4$.  The set of ordered pairs that satisfy this inequality is a circle with radius $2$ centered at the origin.\n\nThe overlap between the circle and the square is the quarter-circle in the first quadrant with radius $2.$  This region has area $\\frac{1}{4}(2)^2 \\pi = \\pi$.\n\nThus, the desired probability is $\\boxed{\\frac{\\pi}{4}}$."
+}

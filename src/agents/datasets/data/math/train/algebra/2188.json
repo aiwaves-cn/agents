@@ -1,0 +1,6 @@
+{
+    "problem": "Completely factor the expression: $$x^8-256$$",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Begin by noticing that $256=16^2$.  We can then repeatedly apply a difference of squares factorization: \\begin{align*}\nx^8-256&=(x^4+16)(x^4-16)\\\\\n&=(x^4+16)(x^2+4)(x^2-4)\\\\\n&=\\boxed{(x^4+16)(x^2+4)(x+2)(x-2)}\\\\\n\\end{align*}"
+}

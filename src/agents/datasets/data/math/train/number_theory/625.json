@@ -1,0 +1,6 @@
+{
+    "problem": "Find the absolute value of the difference of single-digit integers $A$ and $B$ such that  $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & B& B & A_6\\\\ & & & \\mathbf{4} & \\mathbf{1} & B_6\\\\& & + & A & \\mathbf{1} & \\mathbf{5_6}\\\\ \\cline{2-6} & & A & \\mathbf{1} & \\mathbf{5} & \\mathbf{2_6} \\\\ \\end{array} $$Express your answer in base $6$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We start working from the rightmost column. Since $5>2$, $A_6+B_6+5_6$ is either equal to $12_6$ or $22_6$. Therefore, $A_6+B_6$ is either equal to $3_6$ or $13_6$.\n\nWe then look at the second rightmost digits. If $A_6+B_6=13_6$, then $2_6+B_6+1_6+1_6=5_6$. This means that $B_6=1$, which makes $A_6=12_6$. Since $A$ has to be a single-digit integer, this is impossible. Therefore, we try $A_6+B_6=3_6$. This gives us $1_6+B_6+1_6+1_6=5_6$, which means $B_6=2$, and $A_6=1_6$. We plug $B=2$ and $A=1$ into the equation to see if it works.  $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & &_{1}&\\\\ & & & 2& 2 & 1_6\\\\ & & & 4 & 1 & 2_6\\\\& & + & 1 & 1 & 5_6\\\\ \\cline{2-6} & & 1 & 1 & 5& 2_6\\\\ \\end{array} $$Therefore, the difference is $2_6 - 1_6 = \\boxed{1_6}$."
+}

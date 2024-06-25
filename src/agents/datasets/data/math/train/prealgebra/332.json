@@ -1,0 +1,6 @@
+{
+    "problem": "Let $2^x$ be the greatest power of $2$ that is a factor of $144$, and let $3^y$ be the greatest power of $3$ that is a factor of $144$. Evaluate the following expression: $$\\left(\\frac15\\right)^{y - x}$$",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Note that $144$ is a multiple of $2^4$ and $3^2$ since    $$144 = 16 \\cdot 9 = 2^4 \\cdot 3^2.$$Note that $2^5 = 32$ is not a factor of $144$ since dividing $144$ by $32$ gives a remainder of $16$. Similarly, $3^3 = 27$ is not a factor of $144$ since dividing $144$ by $27$ gives a remainder of $9$.\n\nIt follows that $2^4$ is the greatest power of $2$ that is a factor of $144$, and that $3^2$ is the greatest power of $3$ that is a factor of $144$. So $x = 4$ and $y = 2$. So our final answer is   \\begin{align*}\n\\left( \\frac 15 \\right)^{2 - 4} &= \\left( \\frac 15 \\right)^{-2}\\\\\n&= \\left(\\left( \\frac 15 \\right)^{-1}\\right)^2\\\\\n&= 5^2\\\\\n&= \\boxed{25}.\n\\end{align*}"
+}

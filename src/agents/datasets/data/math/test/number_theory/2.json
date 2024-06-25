@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $k$ is a positive integer less than 6, how many values can $k$ take on such that $3x \\equiv k \\pmod{6}$ has no solutions in $x$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Note that the left-hand side is divisible by 3. Therefore, since 3 divides 6, the left-hand side will be equivalent to a multiple of 3. Therefore, if $k$ were to be 1, 2, 4, or 5, then the given congruence would have no solutions. On the other hand, if $k=0$ or $k=3$, then $x=0$ and $x=1$ (respectively) satisfy the given congruence. Therefore, there are $\\boxed{4}$ values of $k$ such that $3x \\equiv k \\pmod{6}$ has no solutions."
+}

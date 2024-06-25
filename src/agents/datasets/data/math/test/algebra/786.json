@@ -1,0 +1,6 @@
+{
+    "problem": "The harmonic mean of two positive integers is the reciprocal of the arithmetic mean of their reciprocals. For how many ordered pairs $(x,y)$ of positive integers is the harmonic mean of $x$ and $y$ equal to $20$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The harmonic mean of $x$ and $y$ is equal to $\\frac{1}{\\frac{\\frac{1}{x}+\\frac{1}{y}}2} = \\frac{2xy}{x+y} = 20$, so we have $xy = 10(x+y)$. By Simon's Favorite Factoring Trick, $$xy - 10(x+y) + 100 = (x-10)(y-10) = 100.$$Now, $100 = 2^2 \\cdot 5^2$ has $(2 + 1) \\cdot (2+1) = 9$ factors, or we could simply list all of the possible factors: $\\{1,2,4,5,10,20,25,50,100\\}$. It follows that there are $\\boxed{9}$ possible ordered pairs $(x,y)$."
+}

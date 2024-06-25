@@ -1,0 +1,6 @@
+{
+    "problem": "In a single-elimination tournament, each game is between two players. Only the winner of each game advances to the next round. In a particular such tournament there are 256 players. How many individual games must be played to determine the champion?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "A total of 255 players must be eliminated to determine the champion, and one player is eliminated after each game, so it is easy to see that $\\boxed{255}$ games must be played."
+}

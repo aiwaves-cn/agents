@@ -1,0 +1,6 @@
+{
+    "problem": "Quadrilateral $ABCD$ is a parallelogram.  What is the degree measure of angle $A$? [asy]\nsize(100);\ndraw((0,0)--(5,2)--(6,7)--(1,5)--cycle);\ndraw((5,2)--(7.5,3));\ndraw(Arc((5,2),1,20,80));\nlabel(\"$D$\",(0,0),SW); label(\"$C$\",(5,2),SE); label(\"$B$\",(6,7),NE); label(\"$A$\",(1,5),NW);\n\nlabel(\"$60^\\circ$\",(6.3,2.8), N);\n[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "All angle measures will be in degrees. $\\angle DCB = 180 - 60 = 120$, and since opposite angles in a parallelogram are equal, we have $\\angle A = \\angle DCB = 120$.  Hence the degree measure of $\\angle A$ is $\\boxed{120}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "How many triangles are in this figure?\n\n[asy]size(50);\ndraw((0,0)--(1,0)--(0,0)--(0,1));\ndraw((1,1)--(0,1)--(1,0)--(1,1)--(0,0));[/asy]",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "There are four small triangles and four triangles composed of two smaller ones (comprising two sides and the diagonal of the square). Thus, there are $\\boxed{8}$ triangles."
+}

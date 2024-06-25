@@ -1,0 +1,6 @@
+{
+    "problem": "Two different integers are randomly chosen from the set $$\\{ -5, -8, 7, 4, -2 \\}.$$ What is the probability that their product is negative? Express your answer as a common fraction.",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We don't consider the order that we choose integers in this problem, meaning that choosing a $-5$ and then a $-8$ is the same as choosing a $-8$ and then a $-5$. The product of two integers is negative if one integer is positive and the other is negative. There are three ways to choose a negative integer and two ways to choose a positive integer, for a total of $3\\cdot2=6$ ways to choose both integers. There are $$\\binom{5}{2}=\\frac{5!}{2!3!}=10$$ ways to choose any two different integers, so the probability that the two integers have a negative product is $6/10=\\boxed{\\frac{3}{5}}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest common factor of the numbers 2835 and 8960?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "We notice immediately that both terms are divisible by $5$: $2835 = 5 \\cdot 567$ and $8960 = 5 \\cdot 1792$. Repeatedly dividing 1792 by 2,  we find that $1792/2^8 = 7$, so $8960 = 2^8 \\cdot 5 \\cdot 7$. At this point, we are almost done: we know that $2$ does not divide into $2835$, so the only other factor we need to check is $7$. Since $2835 = 28 \\cdot 100 + 35$ is clearly divisible by $7$, then the greatest common factor is $5 \\times 7 = \\boxed{35}$."
+}

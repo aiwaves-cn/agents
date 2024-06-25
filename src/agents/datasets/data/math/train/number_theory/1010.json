@@ -1,0 +1,6 @@
+{
+    "problem": "Both $a$ and $b$ are positive integers and $b > 1$. When $a^b$ is the greatest possible value less than 399, what is the sum of $a$ and $b$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The largest perfect square less than 399 is $19^2=361$, and the largest perfect cube less than 399 is $7^3=343$.  Any perfect fourth power is already a square, so we may skip to the largest fifth power less than $399$, which is $3^5=243$, Again, a sixth power is a square (and a cube), so we look to the largest seventh power less than $399$, which is $2^7 = 128.$ Eighth, ninth and tenth powers may be skipped again because they would already have been included as perfect squares or cubes, and there is no eleventh power less than $399$ other than $1$.  Thus the largest perfect power less than 399 is $19^2=361$, and $a+b=19+2=\\boxed{21}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Checking the primes less than $\\sqrt{67}$, namely 2, 3, 5, and 7, as potential divisors, we find that 67 is prime. Thus, $\\frac{67}{2x-23}$ is an integer if and only if $2x-23=\\pm1$ or $2x-23=\\pm67$. The first equation yields $x=12$ or $x=11$ and the second gives $x=45$ or $x=-22$. The sum is $12+11+45-22=\\boxed{46}$."
+}

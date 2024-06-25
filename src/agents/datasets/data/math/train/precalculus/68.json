@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ be an angle such that $\\tan x = \\frac{a}{b}$ and $\\tan 2x = \\frac{b}{a + b}.$  Then the least positive value of $x$ equals $\\tan^{-1} k.$  Compute $k.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We have that\n\\[\\tan 2x = \\frac{b}{a + b} = \\frac{1}{\\frac{a}{b} + 1} = \\frac{1}{\\tan x + 1},\\]so $(\\tan x + 1) \\tan 2x = 1.$  Then from the double angle formula,\n\\[(\\tan x + 1) \\cdot \\frac{2 \\tan x}{1 - \\tan^2 x} = 1,\\]so $2 \\tan x (\\tan x + 1) = 1 - \\tan^2 x,$ or\n\\[2 \\tan x (\\tan x + 1) + \\tan^2 x - 1 = 0.\\]We can factor as\n\\[2 \\tan x (\\tan x + 1) + (\\tan x + 1)(\\tan x - 1) = (\\tan x + 1)(3 \\tan x - 1) = 0.\\]Thus, $\\tan x = -1$ or $\\tan x = \\frac{1}{3}.$  The smallest positive solution is then $\\tan^{-1} \\frac{1}{3},$ so $k = \\boxed{\\frac{1}{3}}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A square pyramid has a base edge of 32 inches and an altitude of 1 foot. A square pyramid whose altitude is one-fourth of the original altitude is cut away at the apex of the original pyramid. The volume of the remaining frustum is what fractional part of the volume of the original pyramid?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The piece that is removed from the original pyramid to create the frustum is itself a square pyramid that is similar to the original pyramid.  The ratio of corresponding side lengths is 1/4, so the piece that was removed has volume $(1/4)^3 = 1/64$ of the volume of the original pyramid.  Therefore, the remaining frustum has volume $1-(1/64) = \\boxed{\\frac{63}{64}}$ of the original pyramid."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find $x$ such that $\\log_x 4=\\log_{27} 3$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We begin by evaluating the RHS of the equation. Since $27=3^3$, we know that $27^{\\frac13}=3$ and $\\log_{27} 3=\\frac13$. This allows us to simplify the original equation as $\\log_x 4=\\frac13$. Writing this equation in exponential form, we get $x^{\\frac13}=4$, which gives us the solution $x=4^3=\\boxed{64}$."
+}

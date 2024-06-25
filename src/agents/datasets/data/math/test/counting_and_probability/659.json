@@ -1,0 +1,6 @@
+{
+    "problem": "Find the coefficient of $x^2$ in the expansion of \\[\\left(x+\\frac{1}{x}\\right)^6.\\]",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "By the Binomial Theorem, the coefficient of $a^4b^2$ in the expansion of $(a+b)^6$ is $\\binom{6}{4}.$ Now,  \\[x^2=\\left(x^4\\right)\\left(\\left(\\frac 1x\\right)^2\\right).\\] Thus the coefficient of of $x^2$ is the coefficient of $x^4 (1/x)^2,$ namely $\\binom{6}{4}=\\boxed{15}.$"
+}

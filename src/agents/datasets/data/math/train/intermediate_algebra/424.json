@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be real numbers such that\n\\[x^3 + y^3 + z^3 - 3xyz = 1.\\]Find the minimum value of $x^2 + y^2 + z^2.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have the factorization\n\\[x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - xz - yz).\\]Let $A = x + y + z$ and $B = x^2 + y^2 + z^2.$  Squaring $x + y + z = A,$ we get\n\\[x^2 + y^2 + z^2 + 2(xy + xz + yz) = A^2,\\]so $xy + xz + yz = \\frac{A^2 - B}{2}.$  Hence,\n\\[A \\left( B - \\frac{A^2 - B}{2} \\right) = 1,\\]which simplifies to $A^3 + 2 = 3AB.$\n\nNow, by the Trivial Inequality,\n\\[(x - y)^2 + (x - z)^2 + (y - z)^2 \\ge 0,\\]which simplifies to $x^2 + y^2 + z^2 \\ge xy + xz + yz.$  Since\n\\[(x + y + z)(x^2 + y^2 + z^2 - xy - xz - yz) = 1,\\]we must have $A = x + y + z > 0.$\n\nFrom $A^3 + 2 = 3AB,$\n\\[B = \\frac{A^3 + 2}{3A}.\\]By AM-GM,\n\\[\\frac{A^3 + 2}{3A} = \\frac{A^3 + 1 + 1}{3A} \\ge \\frac{3 \\sqrt[3]{A^3}}{3A} = 1,\\]so $B \\ge 1.$\n\nEquality occurs when $x = 1,$ $y = 0,$ and $z = 0,$ so the minimum value is $\\boxed{1}.$"
+}

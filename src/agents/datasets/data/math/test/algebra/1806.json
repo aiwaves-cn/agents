@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $\\Join$ is an operation defined by $x \\Join y = (x+2)(y-3)$. What is $((t) \\Join (t+2)) - ((t+1) \\Join (t+1))$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "First, we evaluate the first pair of parentheses:\n\n\\begin{align*}\n(t) \\Join (t+2) &= (t + 2)((t+2) - 3) \\\\\n&= (t+2)(t - 1)\\\\\n&= t^2 + 2t - t - 2\\\\\n&= t^2 + t - 2.\n\\end{align*}Next, we evaluate the second pair of parentheses:\n\n\\begin{align*}\n(t + 1) \\Join (t+1) &= ((t+1) + 2)((t+1) - 3) \\\\\n&= (t+3)(t - 2) \\\\\n&= t^2 + 3t - 2t - 6 \\\\\n&= t^2 + t - 6.\n\\end{align*}Subtracting the two expressions and noting that certain terms cancel, we obtain $(t^2 + t - 2) - (t^2 + t - 6) = -2 - (-6) = \\boxed{4}$."
+}

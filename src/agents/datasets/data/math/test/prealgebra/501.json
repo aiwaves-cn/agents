@@ -1,0 +1,6 @@
+{
+    "problem": "The mean of four distinct positive integers is 5. If the largest of these four integers is 13, what is the smallest of the four integers?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Let the four distinct positive integers be $a$, $b$, $c$, and 13, with $a<b<c<13$. We have the equation $\\frac{a+b+c+13}{4}=5\\Rightarrow a+b+c=7$. Since $a$, $b$, and $c$ must be positive and distinct, $a=1$, $b=2$, and $c=4$. So the smallest integer is $\\boxed{1}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $x$ and $y$ are positive integers for which $3x + 2y + xy = 115$, then what is $x + y$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We apply Simon's Favorite Factoring Trick and note that if we add 6 to both sides, then the left side can be factored. Thus, $$xy + 3x + 2y + 6 = (x+2)(y+3) = 121.$$Since $x,y$ are positive integers, then $x+2, y+3$ must be a pair of factors of $121$, which are given by $\\{x+2,y+3\\} = \\{1,121\\}, \\{11,11\\}$ or $\\{121,1\\}$. Thus, $\\{x,y\\} = \\{-1,118\\},\\{9,8\\}$ or $\\{119, -2\\}.$  Since $x$ and $y$ are positive integers, $\\{x,y\\} = \\{9,8\\},$ so $x+y = 9 + 8 = \\boxed{17}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $a + b + c = 11$ and $ab + ac + bc = 25,$ then find\n\\[a^3 + b^3 + c^3 - 3abc.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have the factorization\n\\[a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - ac - bc).\\]Squaring the equation $a + b + c = 11,$ we get\n\\[a^2 + b^2 + c^2 + 2ab + 2ac + 2bc = 121.\\]Then $a^2 + b^2 + c^2 - ab - ac - bc = 121 - 3(ab + ac + bc) = 121 - 75 = 46,$ so\n\\[a^3 + b^3 + c^3 - 3abc = 11 \\cdot 46 = \\boxed{506}.\\]"
+}

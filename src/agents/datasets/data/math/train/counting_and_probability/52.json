@@ -1,0 +1,6 @@
+{
+    "problem": "How many rows of Pascal's Triangle contain the number $43$?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "$43$ appears in the $43$rd row of Pascal's Triangle, since $\\binom{43}{1} = 43$. Note that $43$ is prime, so the smallest integer $n$ such that $n!$ is divisible by $43$ is actually $43$. Therefore, the $43$rd row is the first row in which $43$ appears. Also note that all the other numbers in the $43$rd row are greater than $43$, with the exception of the $1$'s on the ends. As a result, all the numbers on the following rows will either be $1$ or greater than $43$, so $43$ only appears in the $43$rd row. Therefore, only $\\boxed{1}$ row of Pascal's Triangle contains the number $43$."
+}

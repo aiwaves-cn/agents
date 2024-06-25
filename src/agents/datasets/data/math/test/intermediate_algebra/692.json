@@ -1,0 +1,6 @@
+{
+    "problem": "Let $0 \\le a \\le 1$ and $0 \\le b \\le 1.$  Find the largest possible value of\n\\[\\frac{a + b}{ab + 1}.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Since $0 \\le a \\le 1$ and $0 \\le b \\le 1,$\n\\[(1 - a)(1 - b) \\ge 0.\\]Then $1 - a - b + ab \\ge 0,$ so $a + b \\le ab + 1.$  Hence,\n\\[\\frac{a + b}{ab + 1} \\le 1.\\]Equality occurs when $a = b = 1,$ so the maximum value is $\\boxed{1}.$"
+}

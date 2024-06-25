@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $\\cos \\left( \\arcsin \\frac{2}{3} \\right).$",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Consider a right triangle where the opposite side is 2 and the hypotenuse is 3.\n\n[asy]\nunitsize (1 cm);\n\ndraw((0,0)--(sqrt(5),0)--(sqrt(5),2)--cycle);\n\nlabel(\"$\\sqrt{5}$\", (sqrt(5)/2,0), S);\nlabel(\"$3$\", (sqrt(5)/2,1), NW);\nlabel(\"$2$\", (sqrt(5),1), E);\nlabel(\"$\\theta$\", (0.7,0.3));\n[/asy]\n\nThen $\\sin \\theta = \\frac{2}{3},$ so $\\theta = \\arcsin \\frac{2}{3}.$  By Pythagoras, the adjacent side is $\\sqrt{5},$ so $\\cos \\theta = \\boxed{\\frac{\\sqrt{5}}{3}}.$"
+}

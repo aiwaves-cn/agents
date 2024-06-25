@@ -1,0 +1,6 @@
+{
+    "problem": "A base-10 integer $n=4\\triangle_9=\\triangle0_7$, where $\\triangle$ represents a single digit. What is the value of $n$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "After converting everything to base 10, we are able to solve for $\\triangle$. We get \\begin{align*}\n4\\triangle_9&=\\triangle0_7\\quad\\Rightarrow\\\\\n4\\cdot9^1+\\triangle\\cdot9^0&=\\triangle\\cdot7^1+0\\cdot7^0\\quad\\Rightarrow\\\\\n36+\\triangle&=7\\cdot\\triangle\\quad\\Rightarrow\\\\\n36&=6\\cdot\\triangle\\quad\\Rightarrow\\\\\n6&=\\triangle.\n\\end{align*}Now we can solve for $n$, which equals $46_9=60_7=\\boxed{42}$."
+}

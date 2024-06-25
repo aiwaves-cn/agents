@@ -1,0 +1,6 @@
+{
+    "problem": "Each vertex of this parallelogram has integer coordinates. The perimeter of this parallelogram is $p$ units, while the area is $a$ square units. What is the value of the sum $p + a$?\n\n[asy]\nsize(5cm,5cm);\ndraw((-2,0)--(11,0));\ndraw((0,-1)--(0,6));\ndraw((0,0)--(3,4)--(10,4)--(7,0)--cycle);\nlabel(\"$(3,4)$\",(3,4),NW);\nlabel(\"$(7,0)$\",(7,0),S);\n[/asy]",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "The length of the bottom side of the parallelogram is 7 units, and the length of the left side of the parallelogram is $\\sqrt{3^2+4^2}=5$ units, by the Pythagorean theorem.  Since the opposite two sides are congruent to these two, the perimeter of the parallelogram is $5+7+5+7=24$ units.  The area of the parallelogram is equal to its base times its height, which is $(7)(4)=28$ square units.  Therefore, $p+a=24+28=\\boxed{52}$."
+}

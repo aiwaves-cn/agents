@@ -1,0 +1,6 @@
+{
+    "problem": "What is the coefficient of $x^3$ when $$24x^4 + 6x^3 + 4x^2-7x - 5$$is multiplied by $$6x^3 + 3x^2 + 3x + 4$$and the like terms are combined?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Instead of expanding the entire product, we can look only at terms that will multiply to give $x^3$.  We know that $$x^3=x^3\\cdot 1=x^2\\cdot x=x\\cdot x^2=1\\cdot x^3.$$Knowing this, the $x^3$ term in the expansion will be the sum of these four terms: $$(6x^3)(4)+(4x^2)(3x)+(-7x)(3x^2)+(-5)(6x^3).$$We simplify to find: \\begin{align*}\n&(6x^3)(4)+(4x^2)(3x)+(-7x)(3x^2)+(-5)(6x^3)\\\\\n&\\qquad=24x^3+12x^3-21x^3-30x^3\\\\\n&\\qquad=\\boxed{-15}x^3\n\\end{align*}"
+}

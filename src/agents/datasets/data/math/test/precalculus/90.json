@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $$2\\cos^2(\\log(2009)i)+i\\sin(\\log(4036081)i).$$Note: The logarithms are with respect to base $e.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "We have\n\\begin{align*}\n2\\cos^2(\\log(2009)i)+i\\sin(\\log(4036081)i) &= 1+\\cos(2\\log(2009)i)+i\\sin(\\log(4036081)i) \\\\\n&= 1+\\cos(\\log(4036081)i)+i\\sin(\\log(4036081)i) \\\\\n&= 1+e^{i^2\\log(4036081)} \\\\\n&= 1+\\frac{1}{4036081} \\\\\n&= \\boxed{\\frac{4036082}{4036081}}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A rotation centered at the origin takes $\\begin{pmatrix} -4 \\\\ 7 \\end{pmatrix}$ to $\\begin{pmatrix} 1 \\\\ 8 \\end{pmatrix}.$  Which vector does the rotation take $\\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$ to?",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "The rotation matrix must be of the form $\\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix}.$  Thus,\n\\[\\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix} \\begin{pmatrix} -4 \\\\ 7 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 8 \\end{pmatrix}.\\]This gives us the equations $-4 \\cos \\theta - 7 \\sin \\theta = 1$ and $-4 \\sin \\theta + 7 \\cos \\theta = 8.$  Solving this system, we find $\\cos \\theta = \\frac{4}{5}$ and $\\sin \\theta = -\\frac{3}{5}.$  Thus, $\\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$ is taken to\n\\[\\begin{pmatrix} \\frac{4}{5} & \\frac{3}{5} \\\\ -\\frac{3}{5} & \\frac{4}{5} \\end{pmatrix} \\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix}}.\\]"
+}

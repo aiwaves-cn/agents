@@ -1,0 +1,6 @@
+{
+    "problem": "An integer $X$ has the following properties:\n\n1.) $X$ is a multiple of 17\n\n2.) $X$ is less than 1000\n\n3.) $X$ is one less than a multiple of 8.\n\nWhat is the largest possible value of $X$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Let the desired number be $a$. Then \\begin{align*}\na \\equiv 0 & \\pmod {17}\\\\\na \\equiv -1\\equiv 7 & \\pmod 8\n\\end{align*} The first congruence implies that there exists a non-negative integer $n$ such that $a=17n$. Substituting this into the second congruence yields $$17n\\equiv 7\\pmod 8,$$ $$\\implies n\\equiv 7\\pmod 8.$$ So $n$ has a lower bound of $7$. Then $$n\\ge 7,$$ $$\\implies a=17n\\ge 119.$$ $119$ satisfies both congruences, so subtracting it from both sides of both congruences gives \\begin{align*}\na-119\\equiv -119\\equiv 0 &\\pmod {17}\\nonumber\\\\\na-119\\equiv -112\\equiv 0 &\\pmod 8\\nonumber\n\\end{align*} Since $\\gcd(17,8)=1$, we get $a-119\\equiv 0\\pmod{17\\cdot 8}.$ That is, $a\\equiv 119\\pmod {136}.$\n\nNote that every number that satisfies this congruence satisfies the original two congruences. The largest number of the form $119+136m$ for some non-negative integer $m$, and less than $1000$, is $119+136\\cdot 6=\\boxed{935}.$"
+}

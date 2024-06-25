@@ -1,0 +1,6 @@
+{
+    "problem": "Two nonzero real numbers $a$ and $b$ satisfy $ab = a - b.$ Find all possible values of $\\frac {a}{b} + \\frac {b}{a} - ab.$\n\nEnter all possible values, separated by commas.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We solve for $b$ in the equation $ab=a-b.$ Adding $b$ to both sides gives $ab+b=a,$ or $b(a+1) = a.$ If $a=-1,$ then we have $b(0) = -1,$ which cannot be true, so we can safely divide by $a+1$ to get \\[b = \\frac{a}{a+1}.\\]Then, substituting our expression for $b,$ we get \\[\\begin{aligned} \\frac ab + \\frac ba - ab &= \\frac a {a/(a+1)} + \\frac {a /(a+1)}{a} - a\\cdot \\frac{a}{a+1} \\\\ &= (a+1) + \\frac{1}{a+1} - \\frac{a^2}{a+1} \\\\ &= \\frac{(a+1)^2 + 1 - a^2}{a+1} \\\\ &= \\frac{2a+2}{a+1} \\\\ &= \\boxed{2}, \\end{aligned}\\]which is the only possible value of the expression."
+}

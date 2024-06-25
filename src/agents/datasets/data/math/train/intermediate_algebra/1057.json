@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\sum_{n = 1}^\\infty \\frac{2n - 1}{n(n + 1)(n + 2)}.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "First, we split $\\frac{2n - 1}{n(n + 1)(n + 2)}$ into partial fractions by writing\n\\[\\frac{2n - 1}{n(n + 1)(n + 2)} = \\frac{A}{n} + \\frac{B}{n + 1} + \\frac{C}{n + 2}.\\]Then $2n - 1 = A(n + 1)(n + 2) + Bn(n + 2) + Cn(n + 1).$\n\nSetting $n = 0,$ we get $-1 = 2A,$ so $A = -\\frac{1}{2}.$\n\nSetting $n = -1,$ we get $-3 = -B,$ so $B = 3.$\n\nSetting $n = -2,$ we get $2C = -5,$ so $C = -\\frac{5}{2}.$  Thus,\n\\[\\frac{2n - 1}{n(n + 1)(n + 2)} = -\\frac{1/2}{n} + \\frac{3}{n + 1} - \\frac{5/2}{n + 2}.\\]Therefore,\n\\begin{align*}\n\\sum_{n = 1}^\\infty \\frac{2n - 1}{n(n + 1)(n + 2)} &= \\left( -\\frac{1/2}{1} + \\frac{3}{2} - \\frac{5/2}{3} \\right) + \\left( -\\frac{1/2}{2} + \\frac{3}{3} - \\frac{5/2}{4} \\right) \\\\\n&\\quad + \\left( -\\frac{1/2}{3} + \\frac{3}{4} - \\frac{5/2}{5} \\right) + \\left( -\\frac{1/2}{4} + \\frac{3}{5} - \\frac{5/2}{6} \\right) + \\dotsb \\\\\n&= -\\frac{1}{2} + \\frac{5/2}{2} = \\boxed{\\frac{3}{4}}.\n\\end{align*}"
+}

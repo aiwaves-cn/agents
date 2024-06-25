@@ -1,0 +1,6 @@
+{
+    "problem": "Two numbers are independently selected from the set of positive integers less than or equal to 5. What is the probability that the sum of the two numbers is less than their product? Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Let's name the two numbers $a$ and $b.$ We want the probability that $ab>a+b,$ or $(a-1)(b-1)>1$ using Simon's Favorite Factoring Trick. This inequality is satisfied if and only if $a\\neq 1$ or $b\\neq 1$ or $a \\neq 2 \\neq b$.  There are a total of $16$ combinations such that $a \\neq 1$ and $b \\neq 1$.  Then, we subtract one to account for $(2,2)$, which yields $15$ total combinations out of a total of 25, for a probability of $\\boxed{\\frac{3}{5}}$"
+}

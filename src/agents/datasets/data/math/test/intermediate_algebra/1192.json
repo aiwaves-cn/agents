@@ -1,0 +1,6 @@
+{
+    "problem": "Find all the real roots of\n\\[(12x - 1)(6x - 1)(4x - 1)(3x - 1) = 5.\\]Enter all the real roots, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can expand using the pairs $(3x - 1)(12x - 1) = 36x^2 - 15x + 1$ and $(6x - 1)(4x - 1) = 24x^2 - 10x + 1,$ so\n\\[(36x^2 - 15x + 1)(24x^2 - 10x + 1) = 5.\\]Let $y = 12x^2 - 5x.$  Then\n\\[(3y + 1)(2y + 1) = 5.\\]This simplifies to $6y^2 + 5y - 4 = 0,$ which factors as $(2y - 1)(3y + 4) = 0.$  Hence, $y = \\frac{1}{2}$ or $y = -\\frac{4}{3}.$\n\nIf $12x^2 - 5x = \\frac{1}{2},$ then $24x^2 - 10x - 1 = 0,$ which factors as\n\\[(2x - 1)(12x + 1) = 0.\\]Hence, $x = \\frac{1}{2}$ or $x = -\\frac{1}{12}.$\n\nIf $12x^2 - 5x = -\\frac{4}{3},$ then\n\\[36x^2 - 15x + 4 = 0,\\]which has no real solutions.\n\nTherefore, the real roots are $\\boxed{\\frac{1}{2}, -\\frac{1}{12}}.$"
+}

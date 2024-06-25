@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{a}$ and $\\mathbf{b}$ be vectors such that the angle between $\\mathbf{a}$ and $\\mathbf{b}$ is $29^\\circ,$ and the angle between $\\mathbf{b}$ and $\\mathbf{a} - \\mathbf{b}$ is $84^\\circ.$  Find the angle between $\\mathbf{a}$ and $\\mathbf{a} - \\mathbf{b}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Since $\\mathbf{a}, \\mathbf{b},$ and $\\mathbf{a-b}$ all lie in the same plane, from the diagram below, we see that the angle between $\\mathbf{a}$ and $\\mathbf{a} - \\mathbf{b}$ is $84^\\circ - 29^\\circ = \\boxed{55^\\circ}.$\n\n[asy]\nunitsize(5 cm);\n\npair A, B, C, O;\n\nO = (0,0);\nA = (1,0);\nB = extension(O, O + dir(29), A, A + dir(180 - 55));\nC = O + A - B;\n\ndraw(O--A,red,Arrow(6));\ndraw(O--B,green,Arrow(6));\ndraw(C--A,green,Arrow(6));\ndraw(O--C,blue,Arrow(6));\ndraw(B--A,blue,Arrow(6));\n\nlabel(\"$\\mathbf{a}$\", A/2, S);\nlabel(\"$\\mathbf{b}$\", B/2, NW);\nlabel(\"$\\mathbf{b}$\", (A + C)/2, SE);\nlabel(\"$\\mathbf{a} - \\mathbf{b}$\", C/2, SW);\nlabel(\"$\\mathbf{a} - \\mathbf{b}$\", (A + B)/2, NE);\nlabel(\"$29^\\circ$\", (0.2,0.05));\nlabel(\"$55^\\circ$\", (0.15,-0.05));\n[/asy]"
+}

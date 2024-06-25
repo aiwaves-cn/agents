@@ -1,0 +1,6 @@
+{
+    "problem": "For integers $a$ and $T,$ $T \\neq 0,$ a parabola whose general equation is $y = ax^2 + bx + c$ passes through the points $A = (0,0),$ $B = (2T,0),$ and $C = (2T + 1,28).$  Let $N$ be the sum of the coordinates of the vertex point.  Determine the largest value of $N.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since the parabola passes through the points $(0,0)$ and $(2T,0),$ the equation is of the form\n\\[y = ax(x - 2T).\\]For the vertex, $x = T,$ and $y = aT(-T) = -aT^2.$  The sum of the coordinates of the vertex is then $N = T - aT^2.$\n\nSetting $x = 2T + 1,$ we get $a(2T + 1) = 28.$  The possible values of $2T + 1$ are 7, $-1,$ and $-7.$  (We do not include 1, because $T \\neq 0.$)  We compute the corresponding values of $T,$ $a,$ and $T - aT^2.$\n\n\\[\n\\begin{array}{c|c|c|c}\n2T + 1 & T & a & T - aT^2 \\\\ \\hline\n7 & 3 & 4 & -33 \\\\\n-1 & -1 & -28 & 27 \\\\\n-7 & -4 & -4 & 60\n\\end{array}\n\\]Hence, the largest possible value of $N$ is $\\boxed{60}.$"
+}

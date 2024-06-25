@@ -1,0 +1,6 @@
+{
+    "problem": "Let $i$ be the smallest positive integer such that $3^i\\equiv 5\\pmod 7.$ Let $j$ be the smallest positive integer such that $5^j\\equiv 3\\pmod 7.$ What is the remainder when $ij$ is divided by $6?$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Testing $i=1,2,3,4,5$ yields that $3^i\\equiv 3,2,6,4,5\\pmod 7$ respectively, so $i=5.$\n\nTesting $j=1,2,3,4,5$ yields that $5^j\\equiv 5,4,6,2,3\\pmod 7$ respectively, so $j=5.$\n\nNotice that it is not necessary to test the $i=6$ and $j=6$ cases since we already found the smallest necessary numbers at $i=5$ and $j=5.$\n\nFinally, $ij=5\\cdot 5=25\\equiv \\boxed{1}\\mod 6.$"
+}

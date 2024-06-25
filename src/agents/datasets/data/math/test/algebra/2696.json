@@ -1,0 +1,6 @@
+{
+    "problem": "Given that $x + y = 3$ and $x - y = 4$, find $2x^2 + 2y^2$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We could solve for $x$ and $y$, then plug them in to find our answer. However, note that $(x + y)^2 = x^2 + 2xy + y^2 = 9$ and $(x - y)^2 = x^2 - 2xy + y^2 = 16$. Adding these two equations, we find that $(x + y)^2 + (x - y)^2 = 2x^2 + 2y^2 = \\boxed{25}$."
+}

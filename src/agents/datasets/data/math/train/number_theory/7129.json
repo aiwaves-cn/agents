@@ -1,0 +1,6 @@
+{
+    "problem": "Find the remainder when $3^{3^{3^3}}$ is divided by 1000.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Using the Carmichael function, we have $\\lambda(1000)=100$, so $3^{100}=1\\pmod{1000}$. Therefore, letting $N=3^{3^3}$, we seek to find an $n$ such that $N\\equiv n\\pmod{100}$ so that $3^N\\equiv 3^n\\pmod{1000}$.\nUsing the Carmichael function again, we have $\\lambda(100)=20$, so $N=3^{27}\\equiv 3^7\\pmod{100}\\equiv 87\\pmod{100}$. Therefore $n=87$, and so we have the following:\\[3^{3^{3^3}}\\equiv 3^{87}\\pmod{1000}.\\]\nNow,\n\\begin{align*}3^{87}=(3^{20})^4\\cdot 3^7&\\equiv 401^4\\cdot 187\\pmod{1000} \\\\ &\\equiv 601\\cdot 187\\pmod{1000} \\\\ &\\equiv \\boxed{387}\\pmod{1000}. \\end{align*}"
+}

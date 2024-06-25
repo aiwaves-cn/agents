@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, the perimeter of the rectangle is 56. What is its area?\n\n[asy]\nunitsize(1inch);\n\npair A, B,C,D;\nA =(0,0);\nB= (1,0);\nD = (0,0.8);\nC = B+D;\ndraw(A--B--C--D--A);\nlabel(\"$x+2$\",B/2,S);\nlabel(\"$x-2$\",D/2,W);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since the perimeter of the rectangle is 56, then \\begin{align*}\n2(x+2)+2(x-2)&=56\\\\\n2x+4+2x-4&=56\\\\\n4x& = 56 \\\\\nx & = 14\n\\end{align*}Therefore the rectangle has area \\[(14-2)(14+2)=14^2-2^2=196-4=\\boxed{192}.\\]"
+}

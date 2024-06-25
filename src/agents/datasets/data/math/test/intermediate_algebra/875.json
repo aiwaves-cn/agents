@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a,$ $b,$ $c$ be real numbers such that\n\\[a + 3b + 4c = a^2 + b^2 + c^2 = 25.\\]Find the largest possible value of $a.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By Cauchy-Schwarz,\n\\[(3^2 + 4^2)(b^2 + c^2) \\ge (3b + 4c)^2.\\]Since $a + 3b + 4c = a^2 + b^2 + c^2 = 25,$ we can write this as\n\\[25(25 - a^2) \\ge (25 - a)^2.\\]Expanding, we get\n\\[625 - 25a^2 \\ge 625 - 50a + a^2,\\]so $26a^2 - 50a \\le 0.$  This factors as $2a(13a - 25) \\le 0.$  This implies $a \\le \\frac{25}{13}.$\n\nFor $a = \\frac{25}{13},$ since we have equality above, we want $\\frac{b^2}{9} = \\frac{c^2}{16}.$  We also want $a + 3b + 4c = 25.$  We can solve to get $b = \\frac{36}{13}$ and $c = \\frac{48}{13},$ so the largest possible value of $a$ is $\\boxed{\\frac{25}{13}}.$"
+}

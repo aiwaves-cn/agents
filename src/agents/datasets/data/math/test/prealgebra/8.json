@@ -1,0 +1,6 @@
+{
+    "problem": "Which of the following numbers is the smallest? Your answer is the letter in front of the smallest number.\n\n$\\bullet$ A. $14.45001$ rounded to the nearest tenth.\n\n$\\bullet$ B. $14.54999$ rounded to the nearest tenth.\n\n$\\bullet$ C. $14.44999$ rounded to the nearest tenth.\n\n$\\bullet$ D. $14.55001$ rounded to the nearest tenth.",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "All of these numbers need to be rounded to the nearest tenth. To do this, we look at the places after the tenths place. We see two different endings: $0.05001$ and $0.04999.$ Because the $0.05001$ is greater than $0.05,$ we will round the tenths place up in numbers that end in this. In addition, because $0.04999$ is less than $0.05,$ numbers with this ending will be rounded down. Thus, after rounding according to these rules, we get\n\n$\\bullet$ A. $14.5$\n\n$\\bullet$ B. $14.5$\n\n$\\bullet$ C. $14.4$\n\n$\\bullet$ D. $14.6$\n\nThus, $\\boxed{\\text{C}}$ is the smallest."
+}

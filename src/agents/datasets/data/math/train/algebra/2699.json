@@ -1,0 +1,6 @@
+{
+    "problem": "What is the domain of the function $$f(t) = \\frac{1}{(t-1)^2+(t+1)^2}~?$$ Express your answer in interval notation.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The fraction $\\frac{1}{(t-1)^2+(t+1)^2}$ fails to be defined only if the denominator is zero. But $(t-1)^2$ and $(t+1)^2$ are both nonnegative for all $t$, and are never simultaneously $0$, so their sum is always positive (and, specifically, nonzero). Therefore, the domain of $f(t)$ is all real numbers or, in interval notation, $\\boxed{(-\\infty,\\infty)}$."
+}

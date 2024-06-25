@@ -1,0 +1,6 @@
+{
+    "problem": "What is the slope of the line determined by any two solutions to the equation $\\frac{2}{x}+\\frac{3}{y} = 0$? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can quickly see that we can get a solution to the equation if the first fraction is 1 and the second is -1 which gives $(x, y) = (2, -3)$.  Similarly if we let $(x, y) = (-2, 3)$ we get the first fraction to be $-1$ and the second to be 1.  The slope of the line through these two points is $\\frac{-3 - 3}{2 - (-2)} = \\boxed{- \\frac 32}$."
+}

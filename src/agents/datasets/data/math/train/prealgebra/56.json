@@ -1,0 +1,6 @@
+{
+    "problem": "In convex pentagon $ABCDE$, angles $A$, $B$ and $C$ are congruent and angles $D$ and $E$ are congruent. If the measure of angle $A$ is 40 degrees less than the measure of angle $D$, what is the measure of angle $D$?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Let the measure of $\\angle A$ be $x$, so we have $\\angle B = x$ and $\\angle C=x$, too. Since $\\angle A$ is $40^\\circ$ less than $\\angle D$, we have $\\angle D = x + 40^\\circ$, so $\\angle E = x+40^\\circ$.  The sum of the angle measures in a pentagon is $180(5-2) = 540$ degrees, so we have \\[x + x + x + (x+40^\\circ) + (x+40^\\circ) = 540^\\circ.\\] Simplifying the left side gives $5x + 80^\\circ = 540^\\circ$, so $5x = 460^\\circ$ and $x = 92^\\circ$.  Therefore, $\\angle D = \\angle A + 40^\\circ = \\boxed{132^\\circ}$."
+}

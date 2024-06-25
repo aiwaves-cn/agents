@@ -1,0 +1,6 @@
+{
+    "problem": "Find the largest integer $n$ satisfying the following conditions:\n(i) $n^2$ can be expressed as the difference of two consecutive cubes;\n(ii) $2n + 79$ is a perfect square.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Write $n^2 = (m + 1)^3 - m^3 = 3m^2 + 3m + 1$, or equivalently, $(2n + 1)(2n - 1) = 4n^2 - 1 = 12m^2 + 12m + 3 = 3(2m + 1)^2$.\nSince $2n + 1$ and $2n - 1$ are both odd and their difference is $2$, they are relatively prime. But since their product is three times a square, one of them must be a square and the other three times a square. We cannot have $2n - 1$ be three times a square, for then $2n + 1$ would be a square congruent to $2$ modulo $3$, which is impossible.\nThus $2n - 1$ is a square, say $b^2$. But $2n + 79$ is also a square, say $a^2$. Then $(a + b)(a - b) = a^2 - b^2 = 80$. Since $a + b$ and $a - b$ have the same parity and their product is even, they are both even. To maximize $n$, it suffices to maximize $2b = (a + b) - (a - b)$ and check that this yields an integral value for $m$. This occurs when $a + b = 40$ and $a - b = 2$, that is, when $a = 21$ and $b = 19$. This yields $n = 181$ and $m = 104$, so the answer is $\\boxed{181}$."
+}

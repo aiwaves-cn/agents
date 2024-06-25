@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)$ is defined for all integers $x \\ge 0,$ $f(1) = 1,$ and\n\\[f(a + b) = f(a) + f(b) - 2f(ab)\\]for all integers $a,$ $b \\ge 0,$ compute $f(1986).$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $b = 0$ in the given functional equation, we get\n\\[f(a) = f(a) + f(0) - 2f(0),\\]so $f(0) = 0.$\n\nSetting $b = 1$ in the given functional equation, we get\n\\[f(a + 1) = f(a) + f(1) - 2f(a) = f(1) - f(a).\\]Then\n\\begin{align*}\nf(a + 2) &= f(1) - f(a + 1) \\\\\n&= f(1) - [f(1) - f(a)] \\\\\n&= f(a).\n\\end{align*}Therefore, $f(1986) = f(1984) = \\dots = f(2) = f(0) = \\boxed{0}.$"
+}

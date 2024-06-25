@@ -1,0 +1,6 @@
+{
+    "problem": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n\\[\\begin{aligned} x_1+4x_2+9x_3+16x_4+25x_5+36x_6+49x_7 &= 1 \\\\ \n4x_1+9x_2+16x_3+25x_4+36x_5+49x_6+64x_7 &= 12 \\\\\n9x_1+16x_2+25x_3+36x_4+49x_5+64x_6+81x_7 &= 123. \\end{aligned}\\]Find the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Let \\[f(t) = x_1(t+1)^2 + x_2(t+2)^2 + \\cdots + x_7(t+7)^2.\\]Then the three given equations say $f(0) = 1$, $f(1) = 12$, and $f(2) = 123$, and we want to find $f(3)$.\n\nSince $f(t)$ is a quadratic, we may let $f(t) = At^2 + Bt + C$, where $A, B, C$ are constant. Then we have the equations \\[\\begin{aligned} C &= 1, \\\\ A+B+C &= 12, \\\\ 4A+2B+C &= 123. \\end{aligned} \\]Substituting $C=1$ into the second and third equations gives $A+B=11$ and $4A+2B=122.$ Then $2A+B=61,$ so $A = (2A+B)-(A+B) = 61-11=50.$ Then $B=11-A=-39,$ and so \\[f(3) = 9A+3B+C=9(50)+3(-39)+1= \\boxed{334}.\\]"
+}

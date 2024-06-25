@@ -1,0 +1,6 @@
+{
+    "problem": "A geometric sequence of positive integers is formed for which the first term is 3 and the fourth term is 192. What is the third term of the sequence?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Let the geometric sequence have common ratio $r$. We know that $3\\cdot r^3=192$, or $r=4$. Thus, the third term is $3 \\cdot r^2 = 3 \\cdot 4^2 = \\boxed{48}$."
+}

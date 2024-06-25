@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of\n\\[(\\sin x + \\csc x)^2 + (\\cos x + \\sec x)^2\\]for $0 < x < \\frac{\\pi}{2}.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We can write\n\\begin{align*}\n(\\sin x + \\csc x)^2 + (\\cos x + \\sec x)^2 &= \\sin^2 x + 2 + \\csc^2 x + \\cos^2 x + 2 + \\sec^2 x \\\\\n&= \\csc^2 x + \\sec^2 x + 5 \\\\\n&= \\frac{1}{\\sin^2 x} + \\frac{1}{\\cos^2 x} + 5 \\\\\n&= \\frac{\\cos^2 x + \\sin^2 x}{\\sin^2 x} + \\frac{\\cos^2 x + \\sin^2 x}{\\cos^2 x} + 5 \\\\\n&= \\frac{\\cos^2 x}{\\sin^2 x} + \\frac{\\sin^2 x}{\\cos^2 x} + 7 \\\\\n&= \\frac{\\cos^2 x}{\\sin^2 x} - 2 + \\frac{\\sin^2 x}{\\cos^2 x} + 9 \\\\\n&= \\left( \\frac{\\cos x}{\\sin x} - \\frac{\\sin x}{\\cos x} \\right)^2 + 9 \\\\\n&\\ge 9.\n\\end{align*}Equality occurs when $x = \\frac{\\pi}{4},$ so the minimum value is $\\boxed{9}.$"
+}

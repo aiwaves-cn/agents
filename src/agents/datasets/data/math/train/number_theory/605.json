@@ -1,0 +1,6 @@
+{
+    "problem": "A relatively prime date is a date for which the number of the month and the number of the day are relatively prime. For example, June 17 is a relatively prime date because the greatest common factor of 6 and 17 is 1. How many relatively prime dates are in the month with the fewest relatively prime dates?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Since exactly 1 in every $n$ consecutive dates is divisible by $n$, the month with the fewest relatively prime days is the month with the greatest number of distinct small prime divisors. This reasoning gives us June ($6=2\\cdot3$) and December ($12=2^2\\cdot3$). December, however, has one more relatively prime day, namely December 31, than does June, which has only 30 days. Therefore, June has the fewest relatively prime days. To count how many relatively prime days June has, we must count the number of days that are divisible neither by 2 nor by 3. Out of its 30 days, $\\frac{30}{2}=15$ are divisible by 2 and $\\frac{30}{3}=10$ are divisible by 3. We are double counting the number of days that are divisible by 6, $\\frac{30}{6}=5$ days. Thus, June has $30-(15+10-5)=30-20=\\boxed{10}$ relatively prime days."
+}

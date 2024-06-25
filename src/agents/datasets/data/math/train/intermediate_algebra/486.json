@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the inequality\n\\[\\frac{1}{x - 1} - \\frac{4}{x - 2} + \\frac{4}{x - 3} - \\frac{1}{x - 4} < \\frac{1}{30}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Subtracting $\\frac{1}{30}$ from both sides, we get\n\\[\\frac{1}{x - 1} - \\frac{4}{x - 2} + \\frac{4}{x - 3} - \\frac{1}{x - 4} - \\frac{1}{30} < 0.\\]Putting everything over a common denominator, we get\n\\[\\frac{-x^4 + 10x^3 - 5x^2 - 100x - 84}{30(x - 1)(x - 2)(x - 3)(x - 4)} < 0,\\]which factors as\n\\[-\\frac{(x + 2)(x + 1)(x - 6)(x - 7)}{(x - 1)(x - 2)(x - 3)(x - 4)} < 0.\\]We can build a sign chart, but since all of the factors are linear, we can track what happens to the expression as $x$ increases.  At $x = -3,$ the expression is negative.  As $x$ increases past $-2,$ the expression becomes positive.  As $x$ increases past $-1,$ the expression becomes negative, and so on.  Thus, the solution is\n\\[x \\in \\boxed{(-\\infty,-2) \\cup (-1,1) \\cup (2,3) \\cup (4,6) \\cup (7,\\infty)}.\\]"
+}

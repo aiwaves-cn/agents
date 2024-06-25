@@ -1,0 +1,6 @@
+{
+    "problem": "A parabola with equation $y=ax^2+bx+c$ contains the points $(-3,3)$, $(1,3)$, and $(0,0)$.  Find the value $100a+10b+c$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Since the points $(-3,3)$ and $(1,3)$ have the same $y$-value, the axis of symmetry of the parabola must be between these 2 points.  The $x$-value halfway between $-3$ and $1$ is $x=-1$.  Therefore the vertex of the parabola is equal to $(-1,k)$ for some $k$ and the parabola may also be written as  \\[a(x+1)^2+k.\\] Now we substitute.  The point $(1,3)$ gives  \\[3=a(1+1)^2+k,\\] or  \\[4a+k=3.\\] The point $(0,0)$ gives  \\[0=a(0+1)^2+k\\] or  \\[a+k=0.\\] Subtracting the second equation from the first gives  \\[(4a+k)-(a+k)=3-0\\] so $3a=3$, giving $a=1$.\n\nSince $a=1$ and $a+k=0$ we know that $k=-1$ and our parabola is  \\[ax^2+bx+c=(x+1)^2-1.\\] In order to compute $100a+10b+c$ we can substitute $x=10$ and that gives  \\[100a+10b+c=(10+1)^2-1=\\boxed{120}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of real roots to\n\\[x^4 - 2x^2 - 7 = 0.\\]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "Let $y = x^2,$ so\n\\[y^2 - 2y - 7 = 0.\\]By the quadratic formula, the roots are $y = 1 \\pm 2 \\sqrt{2},$ so\n\\[x^2 = 1 \\pm 2 \\sqrt{2}.\\]Since $1 - 2 \\sqrt{2} < 0,$ we must have $x^2 = 1 + 2 \\sqrt{2},$ which has $\\boxed{2}$ real roots."
+}

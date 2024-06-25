@@ -1,0 +1,6 @@
+{
+    "problem": "In how many ways can the digits of $45,\\!520$ be arranged to form a 5-digit number?  (Remember, numbers cannot begin with 0.)",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "First we place the $0$, which we only have four options for (everywhere but the first digit).  Then we have 4 remaining places to put the last 4 digits, two of which are not unique (the fives), so there are $\\dfrac{4!}{2!}$ options for arranging the other 4 digits.  This gives a final answer of $\\dfrac{4 \\times 4!}{2!} = \\boxed{48}$."
+}

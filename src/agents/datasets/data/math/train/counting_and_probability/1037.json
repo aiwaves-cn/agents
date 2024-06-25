@@ -1,0 +1,6 @@
+{
+    "problem": "Mahmoud tosses three coins. What is the probability that he will get at least one head?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "We compute the probability that Mahmoud flips three tails and subtract from 1. The probability that Mahmoud flips one tail with one coin is $\\frac{1}{2}$, so the probability that he flips three tails is $\\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8}$. The probability that he gets at least one head is $1- \\frac{1}{8}= \\boxed{\\frac{7}{8}}$."
+}

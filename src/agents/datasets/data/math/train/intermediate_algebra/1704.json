@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest positive integer $b$ for which $x^2 + bx + 2008$ factors into a product of two polynomials, each having integer coefficients.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can let the factorization be\n\\[x^2 + bx + 2008 = (x + p)(x + q),\\]where $p$ and $q$ are integers.  Then $p + q = b$ and $pq = 2008.$\n\nThe equation $pq = 2008$ tells us that either both $p$ and $q$ are positive, or both are negative.  Since $p + q = b$ is positive, both $p$ and $q$ are positive.\n\nWe want to find the minimum value of $b.$  The number $b = p + q$ is minimized when $p$ and $q$ are as close as possible, under the condition $pq = 2008.$  This occurs when $p$ and $q$ are 8 and 251, so the smallest possible value of $b$ is $8 + 251 = \\boxed{259}.$"
+}

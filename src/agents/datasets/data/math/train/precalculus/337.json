@@ -1,0 +1,6 @@
+{
+    "problem": "Consider two solid spherical balls, one centered at $\\left( 0, 0, \\frac{21}{2} \\right),$ with radius 6, and the other centered at $(0,0,1)$ with radius $\\frac{9}{2}.$  How many points $(x,y,z)$ with only integer coefficients are there in the intersection of the balls?",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "If $(x,y,z)$ lies inside the first sphere, then\n\\[x^2 + y^2 + \\left( z - \\frac{21}{2} \\right)^2 \\le 36,\\]and if $(x,y,z)$ lies inside the second sphere, then\n\\[x^2 + y^2 + (z - 1)^2 \\le \\frac{81}{4}.\\]Thus, we are looking for the number of lattice points that satisfy both inequalities.\n\nFrom the first inequality, $z - \\frac{21}{2} \\ge -6,$ so $z \\ge \\frac{9}{2}.$  From the second inequality, $z - 1 \\le \\frac{9}{2},$ so $z \\le \\frac{11}{2}.$  Since $z$ must be an integer, $z = 5.$  Then\n\\[x^2 + y^2 \\le 36 - \\left( 5 - \\frac{21}{2} \\right)^2 = \\frac{23}{4}\\]and\n\\[x^2 + y^2 \\le \\frac{81}{4} - (5 - 1)^2 = \\frac{17}{4}.\\]Since $x$ and $y$ are integers, $x^2 + y^2 \\le 4.$\n\nThe possible pairs $(x,y)$ are then $(-2,0),$ $(-1,-1),$ $(-1,0),$ $(-1,1),$ $(0,-2),$ $(0,-1),$ $(0,0),$ $(0,1),$ $(0,2),$ $(1,-1),$ $(1,0),$ $(1,1),$ and $(2,0),$ giving us a total of $\\boxed{13}$ points."
+}

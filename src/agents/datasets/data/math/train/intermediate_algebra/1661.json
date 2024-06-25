@@ -1,0 +1,6 @@
+{
+    "problem": "The graph of the polynomial\n\n$P(x) = x^5 + ax^4 + bx^3 + cx^2 + dx + e$\n\nhas five distinct $x$-intercepts, one of which is at $(0,0)$. Which of the following coefficients cannot be zero?\n\n$\\textbf{(A)}\\ a \\qquad \\textbf{(B)}\\ b \\qquad \\textbf{(C)}\\ c \\qquad \\textbf{(D)}\\ d \\qquad \\textbf{(E)}\\ e$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since $P(0) = 0,$ $e = 0.$  Let the other $x$-intercepts be $p,$ $q,$ $r,$ and $s,$ so\n\\[P(x) = x(x - p)(x - q)(x - r)(x - s).\\]Note that $d = pqrs.$  Since the $x$-intercepts are all distinct, $p,$ $q,$ $r,$ and $s$ are all nonzero, so $d$ must be nonzero.  Thus, the answer is $\\boxed{\\text{(D)}}.$\n\nAny of the other coefficients can be zero.  For example, consider\n\\[x(x + 2)(x + 1)(x - 1)(x - 2) = x^5 - 5x^3 + 4x\\]or\n\\[x(x + 2)(x - 1)(x - 2)(x - 4) = x^5 - 5x^4 + 20x^2 - 16x.\\]"
+}

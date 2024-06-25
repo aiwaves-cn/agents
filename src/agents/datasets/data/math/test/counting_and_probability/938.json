@@ -1,0 +1,6 @@
+{
+    "problem": "Set $R$ is a set of rectangles such that (1) only the grid points shown here are used as vertices, (2) all sides are vertical or horizontal and (3) no two rectangles in the set are congruent. If $R$ contains the maximum possible number of rectangles given these conditions, what fraction of the rectangles in set $R$ are squares? Express your answer as a common fraction. [asy]import graph;\nsize(50);\nfor(int i = 0; i<5; ++i)\nfor(int j = 0; j<5; ++j)\nfill(Circle((i,j),.1));\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "If we list out the possible sizes of the rectangles, we have: \\begin{align*}\n&1\\times1, \\ 1\\times2, \\ 1\\times3, \\ 1\\times4, \\\\\n&2\\times2, \\ 2\\times3, \\ 2\\times4, \\\\\n&3\\times3, \\ 3\\times4,\\text{ and} \\\\\n&4\\times4.\n\\end{align*} Thus, there are ten possible sizes, each of which must be represented by one rectangle in set $R.$ Four of these sizes are squares, so the fraction in $R$ that are squares is $\\frac{4}{10} = \\boxed{\\frac{2}{5}}.$"
+}

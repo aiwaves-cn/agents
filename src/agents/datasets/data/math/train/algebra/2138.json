@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $\\sqrt{2 -\\!\\sqrt{2 - \\!\\sqrt{2 - \\!\\sqrt{2 - \\cdots}}}}$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Letting $x= \\!\\sqrt{2 - \\!\\sqrt{2 - \\!\\sqrt{2 - \\!\\sqrt{2 - \\cdots}}}}$, we have $x = \\!\\sqrt{2 - x}$.  Squaring both sides gives $x^2 = 2 - x$, so $x^2 + x -2 = 0$.  Factoring the left side gives $(x+2)(x-1) = 0$. Therefore, $x=-2$ or $x=1$.  Clearly $x$ must be positive, so we have $x= \\boxed{1}$."
+}

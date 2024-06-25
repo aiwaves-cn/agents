@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the following system of equations: \\begin{align*}\n3x-5y&=-11,\\\\\n7x+2y&=-12.\n\\end{align*}Express your answer as an ordered pair $(x,y).$",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We can find $x$ by adding twice the first equation to five times the second. From \\begin{align*}\n2(3x-5y)+5(7x+2y)&=6x+35x\\\\&=41x,\n\\end{align*}and \\begin{align*}\n2(3x-5y)+5(7x+2y)&=2(-11)+5(-12)\\\\&=-22-60\\\\&=-82,\n\\end{align*}we find that $41x = -82$, or $x=-2.$\n\nSubstituting into the second equation, we can find $y:$ \\begin{align*}\n7x+2y&=-12 \\\\ \\implies y&=\\frac{1}{2}(-12-7(-2))\\\\&=\\frac{1}{2}(-12+14)\\\\&=\\frac{1}{2}(2)\\\\&=1.\n\\end{align*}Thus our answer is $\\boxed{(-2,1)}.$"
+}

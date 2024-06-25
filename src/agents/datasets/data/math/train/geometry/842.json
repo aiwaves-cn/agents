@@ -1,0 +1,6 @@
+{
+    "problem": "A triangle is made of wood sticks of lengths 8, 15 and 17 inches joined end-to-end. Pieces of the same integral length are cut from each of the sticks so that the three remaining pieces can no longer form a triangle. How many inches are in the length of the smallest piece that can be cut from each of the three sticks to make this happen?",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Our current triangle lengths are 8, 15, and 17. Let us say that $x$ is the length of the piece that we cut from each of the three sticks. Then, our lengths will be $8 - x,$ $15 - x,$ and $17 - x.$ These lengths will no longer form a triangle when the two shorter lengths added together is shorter than or equal to the longest length. In other words, $(8 - x) + (15 - x) \\leq (17 - x).$ Then, we have $23 - 2x \\leq 17 - x,$ so $6 \\leq x.$ Therefore, the length of the smallest piece that can be cut from each of the three sticks is $\\boxed{6}$ inches."
+}

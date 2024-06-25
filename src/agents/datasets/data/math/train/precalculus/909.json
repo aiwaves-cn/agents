@@ -1,0 +1,6 @@
+{
+    "problem": "Find\n\\[\\sin \\left( \\sin^{-1} \\frac{3}{5} + \\tan^{-1} 2 \\right).\\]",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Let $a = \\sin^{-1} \\frac{3}{5}$ and $b = \\tan^{-1} 2.$  Then $\\sin a = \\frac{3}{5}$ and $\\tan b = 2.$  With the usual technique of constructing right triangles, we can find that $\\cos a = \\frac{4}{5},$ $\\cos b = \\frac{1}{\\sqrt{5}},$ and $\\sin b = \\frac{2}{\\sqrt{5}}.$  Therefore, from the angle addition formula,\n\\begin{align*}\n\\sin (a + b) &= \\sin a \\cos b + \\cos a \\sin b \\\\\n&= \\frac{3}{5} \\cdot \\frac{1}{\\sqrt{5}} + \\frac{4}{5} \\cdot \\frac{2}{\\sqrt{5}} \\\\\n&= \\frac{11}{5 \\sqrt{5}} \\\\\n&= \\boxed{\\frac{11 \\sqrt{5}}{25}}.\n\\end{align*}"
+}

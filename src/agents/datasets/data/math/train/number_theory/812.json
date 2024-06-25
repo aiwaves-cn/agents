@@ -1,0 +1,6 @@
+{
+    "problem": "Add $175_{9} + 714_{9} + 61_9$.  Express your answer in base $9$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "When summing these three numbers, we notice that $5 + 4 + 1$ leaves a residue of $1$ when divided by $9$, so it follows that the sum has a rightmost digit of $1$ and that carry-over must occur. After carrying over to the next digit, we must find the sum of $1 + 7 + 1 + 6 = 16_9$, which leaves a residue of $6$ when divided by $9$. Thus, we write down $6$ as the next digit and carry-over another $1$. Evaluating the next digit, we must find the sum of $1+1+7 = 10_9$, which leaves a residue of $0$ when divided by $9$. Thus, we must carry-over one more time, yielding that: $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & \\stackrel{1}{1} & \\stackrel{1}{7} & \\stackrel{}{5}_{9} \\\\ & & & 7 & 1 & 4_{9} \\\\ &+ & & & 6 & 1_{9} \\\\ \\cline{2-6} && 1 & 0 & 6 & 1_{9} \\\\ \\end{array} $$Thus, the answer is $\\boxed{1061_{9}}$.\n\nAlternatively, we can notice that $175_9 + 714_9 = 1000_9$, so $1000_9 + 61_9 = 1061_9$."
+}

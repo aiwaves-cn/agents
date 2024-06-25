@@ -1,0 +1,6 @@
+{
+    "problem": "The quadratic $x^2-4x-14=3x+16$ has two solutions.  What is the positive difference between these solutions?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First we bring $3x$ to the left side to get  \\[x^2-7x-14=16.\\]Moving the 14 to the right side gives \\[x^2-7x=30.\\]We notice that the left side is almost the square $\\left(x-\\frac72\\right)^2=x^2-7x+\\frac{49}4$. Adding $\\frac{49}4$ to both sides lets us complete the square on the left-hand side, \\[x^2-7x+\\frac{49}4=30+\\frac{49}4=\\frac{169}4,\\]so  \\[\\left(x-\\frac72\\right)^2=\\left(\\frac{13}2\\right)^2.\\]Therefore $x=\\frac72\\pm\\frac{13}2$.  The positive difference between these solutions is  \\[\\frac{7+13}2-\\frac{7-13}2=\\frac{26}2=\\boxed{13}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the following system of equations: \\begin{align*}\n3x-5y&=-1.5,\\\\\n7x+2y&=4.7.\n\\end{align*}Express your answer as an ordered pair $(x,y)$ of decimals.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can find $x$ by adding twice the first equation to five times the second. From \\begin{align*}\n2(3x-5y)+5(7x+2y)&=6x+35x\\\\&=41x,\n\\end{align*}and \\begin{align*}\n2(3x-5y)+5(7x+2y)&=2(-1.5)+5(4.7)\\\\&=-3+23.5\\\\&=20.5,\n\\end{align*}we find that $41x = 20.5$, or $x=0.5.$\n\nSubstituting into the second equation, we can find $y:$ \\begin{align*}\n7x+2y&=4.7 \\\\ \\implies y&=\\frac{1}{2}(4.7-7x)\\\\&=\\frac{1}{2}(4.7-3.5)\\\\&=\\frac{1}{2}(1.2)\\\\&=0.6.\n\\end{align*}Thus our answer is $\\boxed{(0.5,0.6)}.$"
+}

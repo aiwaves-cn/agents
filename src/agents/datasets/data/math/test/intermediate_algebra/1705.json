@@ -1,0 +1,6 @@
+{
+    "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$"
+}

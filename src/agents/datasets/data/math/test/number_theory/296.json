@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer, other than $1$, that is both a perfect cube and a perfect fourth power?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "If $n$ is a perfect cube, then all exponents in its prime factorization are divisible by $3$. If $n$ is a perfect fourth power, then all exponents in its prime factorization are divisible by $4$. The only way both of these statements can be true is for all the exponents to be divisible by $\\mathop{\\text{lcm}}[3,4]=12$, so such an $n$ must be a perfect twelfth power. Since we aren't using $1^{12}=1,$ the next smallest is $2^{12}=\\boxed{4096}.$"
+}

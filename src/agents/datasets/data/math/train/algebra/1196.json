@@ -1,0 +1,6 @@
+{
+    "problem": "For what value of $x$ is the expression $\\frac{2x^3+3}{x^2-20x+100}$ not defined?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The only time this expression is not defined is when the denominator is equal to 0. In other words, we are looking for all solutions to the equation $x^2 - 20x + 100 = 0$. We can find the roots by factoring the quadratic into $(x - 10)(x - 10) = 0$ or by using the quadratic formula: $$x = \\frac{20 \\pm \\sqrt{(-20)^2-4(1)(100)}}{2}.$$ Either way, we see that $x = 10$ is the only time when the denominator of our expression is equal to 0. Therefore, our answer is $\\boxed{10}$."
+}

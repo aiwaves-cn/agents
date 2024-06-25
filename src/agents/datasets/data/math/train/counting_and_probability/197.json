@@ -1,0 +1,6 @@
+{
+    "problem": "A pirate is searching for buried treasure on 6 islands. On each island, there is a $\\frac{1}{4}$ chance that the island has buried treasure and no traps, a $\\frac{1}{12}$ chance that the island has traps but no treasure, and a $\\frac{2}{3}$ chance that the island has neither traps nor treasure. What is the probability that while searching all 6 islands, the pirate will encounter exactly 3 islands with treasure, and none with traps?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "There are $\\binom{6}{3}=20$ ways to choose 3 islands. For each of these choices, there is a probability of $\\left( \\frac{1}{4} \\right)^3 \\left( \\frac{2}{3} \\right)^3$ that the chosen islands have treasure and the remaining ones have neither treasure nor traps. Therefore, the probability that the pirate encounters exactly 3 islands with treasure and none with traps is $20 \\left( \\frac{1}{4} \\right)^3 \\left( \\frac{2}{3} \\right)^3 = \\boxed{\\frac{5}{54}}$."
+}

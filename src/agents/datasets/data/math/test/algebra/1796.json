@@ -1,0 +1,6 @@
+{
+    "problem": "What is the shortest distance from the point $(6, 0)$ to the line $y = 2x-2$? Express your answer in simplest radical form.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The shortest line from the point $(6,0)$ to the given line will be perpendicular to it.  A line perpendicular to $y=2x-2$ will have a slope of $-1/2$.  This will give it a form of $y=-\\frac{1}{2}x+b$.  Substituting the point $(6,0)$ that we know must lie on this line, we find: $$0=-\\frac{1}{2}\\cdot 6 +b$$ $$3=b$$ The equation of the perpendicular line is $y=-\\frac{1}{2}x+3$.  Now, we can solve for the point where the two lines intersect: $$-\\frac{1}{2}x+3=2x-2$$ $$5=\\frac{5}{2}x$$ $$x=2$$ Plugging into either line, we find the point of intersection is $(2,2)$.  The coordinate plane now looks like: [asy]\nsize(150);\ndraw((-.5,0)--(7,0));\ndraw((0,-3)--(0,5));\ndraw((-.5,-3)--(4,6),linewidth(.7));\ndraw((6,0)--(0,3),linewidth(.7));\nlabel(\"$(6,0)$\",(6,0),S);\nlabel(\"$(2,2)$\",(2.3,2.1),E);\ndot((2,2));\ndot((6,0));\n[/asy] The distance from the point $(6,0)$ to this point is: $$\\sqrt{(6-2)^2+(0-2)^2}=\\sqrt{16+4}=\\boxed{2\\sqrt{5}}$$"
+}

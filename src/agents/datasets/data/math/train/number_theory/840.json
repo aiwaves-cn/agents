@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest integer $n$, greater than $1$, such that $n^{-1}\\pmod{1050}$ is defined?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "For $n$ to have an inverse $\\pmod{1050}$, it is necessary for $n$ to be relatively prime to $1050$. Conversely, if $n$ is relatively prime to $1050$, then $n$ has an inverse $\\pmod{1050}$.\n\nThe prime factors of $1050$ include $2$, $3$, $5$, and $7$, so any multiple of any of these primes does not have an inverse $\\pmod{1050}$. This rules out all the integers from $2$ to $10$. However, $11$ is relatively prime to $1050$, so $\\boxed{11}$ is the smallest integer greater than $1$ that has an inverse $\\pmod{1050}$."
+}

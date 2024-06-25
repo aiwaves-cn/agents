@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $b+c$ if $x^2+bx+c>0$ only when $x\\in (-\\infty, -2)\\cup(3,\\infty)$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "When $x<-2$ or $x>3$, we have $x^2+bx+c>0$. That means that $x^2+bx+c=0$ at $x=-2$ and $x=3$. So, the parabola has roots at -2 and 3, giving us $(x+2)(x-3)=0$. We can now write $x^2+bx+c=(x+2)(x-3)=x^2-x-6$. Thus, $b=-1$, $c=-6$, and $b+c=-1+(-6)=\\boxed{-7}$."
+}

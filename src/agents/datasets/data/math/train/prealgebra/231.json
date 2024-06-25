@@ -1,0 +1,6 @@
+{
+    "problem": "Find $(4^4 \\div 4^3) \\cdot 2^8$.",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Performing the arithmetic in the parentheses first, we obtain $4^4 \\div 4^3 = 4$, so we have \\[(4^4 \\div 4^3) \\cdot 2^8 = 4\\cdot 2^8.\\]Since  $4 = 2^2$, we have  \\[4\\cdot 2^8 = 2^2 \\cdot 2^8 = 2^{10}= \\boxed{1024}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\angle A=20^\\circ$ and $\\angle AFG=\\angle AGF,$ then how many degrees is $\\angle B+\\angle D?$ [asy]\n/* AMC8 2000 #24 Problem */\npair A=(0,80), B=(46,108), C=(100,80), D=(54,18), E=(19,0);\ndraw(A--C--E--B--D--cycle);\nlabel(\"$A$\", A, W);\nlabel(\"$B$ \", B, N);\nlabel(\"$C$\", shift(7,0)*C);\nlabel(\"$D$\", D, SE);\nlabel(\"$E$\", E, SW);\nlabel(\"$F$\", (23,43));\nlabel(\"$G$\", (35, 86));\n[/asy]",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since $\\angle AFG=\\angle AGF$ and $\\angle GAF+\\angle\nAFG+\\angle AGF=180^\\circ,$ we have $20^\\circ +2(\\angle\nAFG)=180^\\circ.$ So $\\angle AFG=80^\\circ.$ Also, $\\angle AFG+\\angle\nBFD=180^\\circ,$ so $\\angle BFD=100^\\circ.$ The sum of the angles of $\\triangle BFD$ is $180^\\circ,$ so $\\angle B+\\angle D=\\boxed{80^\\circ}.$\n\nNote: In $\\triangle AFG,$ $\\angle AFG=\\angle B+\\angle D.$ In general, an exterior angle of a triangle equals the sum of its remote interior angles. For example, in $\\triangle GAF,$ $\\angle AFE =\\angle\nGAF+\\angle AGF.$"
+}

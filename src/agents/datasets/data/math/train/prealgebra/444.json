@@ -1,0 +1,6 @@
+{
+    "problem": "In the prime factorization of $24!$, what is the exponent of $3$?  (Reminder: The number $n!$ is the product of the integers from 1 to $n$.  For example, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Of the numbers from $1$ to $24$, eight of them are multiples of $3$, so that gives us an exponent of $8$.\n\nNow, two of the numbers are multiples of $3^2=9$, so each of them has $3$ as a factor twice. We've already counted them one each, so we need to count them each one more time. This adds another $2$ to the exponent.\n\nThe next thing to check is whether any of the numbers have $3$ as a factor three times. Happily, $3^3=27>24$, so we don't have any of those.\n\nOur total exponent is $8+2=\\boxed{10}$."
+}

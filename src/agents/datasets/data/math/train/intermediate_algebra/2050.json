@@ -1,0 +1,6 @@
+{
+    "problem": "Consider the sequence defined recursively by $u_1 = a > 0$ and\n\\[u_{n + 1} = -\\frac{1}{u_n + 1}\\]for $n \\ge 1.$  Express $u_{16}$ in terms of $a.$",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\nu_2 &= -\\frac{1}{a + 1}, \\\\\nu_3 &= -\\frac{1}{-\\frac{1}{a + 1} + 1} = -\\frac{a + 1}{a}, \\\\\nu_4 &= -\\frac{1}{-\\frac{a + 1}{a} + 1} = a.\n\\end{align*}Since $u_4 = u_1,$ and each term depends only on the previous term, the sequence becomes periodic, with a period of length 3.  Hence, $u_{16} = u_1 = \\boxed{a}.$"
+}

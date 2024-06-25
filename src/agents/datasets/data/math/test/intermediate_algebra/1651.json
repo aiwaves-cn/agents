@@ -1,0 +1,6 @@
+{
+    "problem": "Find the number of ordered pairs $(a,b)$ of real numbers such that\n\n$\\bullet$ $a$ is a root of $x^2 + ax + b = 0,$ and\n\n$\\bullet$ $b$ is a root of $x^2 + ax + b = 0.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since $x = a$ is a root of $x^2 + ax + b = 0,$\n\\[a^2 + a^2 + b = 0,\\]or $2a^2 + b = 0,$ so $b = -2a^2.$\n\nSince $x = b$ is a root of $x^2 + ax + b = 0,$\n\\[b^2 + ab + b = 0.\\]This factors as $b(b + a + 1) = 0,$ so $b = 0$ or $a + b + 1 = 0.$\n\nIf $b = 0,$ then $-2a^2 = 0,$ so $a = 0.$\n\nIf $a + b + 1 = 0,$ then $-2a^2 + a + 1 = 0.$  This equation factors as $-(a - 1)(2a + 1) = 0,$ so $a = 1$ or $a = -\\frac{1}{2}.$  If $a = 1,$ then $b = -2.$  If $a = -\\frac{1}{2},$ then $b = -\\frac{1}{2}.$\n\nTherefore, there are $\\boxed{3}$ ordered pairs $(a,b),$ namely $(0,0),$ $(1,-2),$ and $\\left( -\\frac{1}{2}, -\\frac{1}{2} \\right).$"
+}

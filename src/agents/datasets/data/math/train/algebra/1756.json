@@ -1,0 +1,6 @@
+{
+    "problem": "What is the area enclosed by the graph of $|3x|+|4y|=12$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The graph is symmetric with respect to both coordinate axes, and in the first quadrant it coincides with the graph of the line $3x + 4y = 12.$ Therefore the region is a rhombus, and the area is \\[\n\\text{Area} = 4\\left(\\frac{1}{2}(4\\cdot 3)\\right) = \\boxed{24}.\n\\][asy]\ndraw((-5,0)--(5,0),Arrow);\ndraw((0,-4)--(0,4),Arrow);\nlabel(\"$x$\",(5,0),S);\nlabel(\"$y$\",(0,4),E);\nlabel(\"4\",(4,0),S);\nlabel(\"-4\",(-4,0),S);\nlabel(\"3\",(0,3),NW);\nlabel(\"-3\",(0,-3),SW);\ndraw((4,0)--(0,3)--(-4,0)--(0,-3)--cycle,linewidth(0.7));\n[/asy]"
+}

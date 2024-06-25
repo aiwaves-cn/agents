@@ -1,0 +1,6 @@
+{
+    "problem": "A flag is made of three horizontal strips of fabric, each of a solid color, either red, white, blue or green. If no two adjacent strips can be the same color, how many distinct flags are possible? These two flags are different.\n\n[asy]draw((0,0)--(0,6),linewidth(1));\nfilldraw((0,3)--(4,3)--(4,4)--(0,4)--(0,3)--cycle,white);\nfilldraw((0,4)--(4,4)--(4,5)--(0,5)--(0,4)--cycle,red);\nfilldraw((0,5)--(4,5)--(4,6)--(0,6)--(0,5)--cycle,green);\nfilldraw(circle((0,6),1/6),white);\nlabel(\"Green\",(2,5.5));\nlabel(\"Red\",(2,4.5));\nlabel(\"White\",(2,3.5));\n\ndraw((5,0)--(5,6),linewidth(1));\nfilldraw((5,3)--(9,3)--(9,4)--(5,4)--(5,3)--cycle,green);\nfilldraw((5,4)--(9,4)--(9,5)--(5,5)--(5,4)--cycle,red);\nfilldraw((5,5)--(9,5)--(9,6)--(5,6)--(5,5)--cycle,white);\nfilldraw(circle((5,6),1/6),white);\nlabel(\"White\",(7,5.5));\nlabel(\"Red\",(7,4.5));\nlabel(\"Green\",(7,3.5));\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "We can choose the middle color for the flag in 4 ways, then choose the top color in 3 ways, and finally choose the bottom color in 3 ways (the only restriction is that the top and bottom colors are both different from the middle color).  This leads to a total of $4\\cdot 3\\cdot 3 = \\boxed{36}$ possible flags."
+}

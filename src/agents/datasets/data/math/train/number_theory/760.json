@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(n)$ be a function that, given an integer $n$, returns an integer $k$, where $k$ is the smallest possible integer such that $k!$ is divisible by $n$. Given that $n$ is a multiple of 15, what is the smallest value of $n$ such that $f(n) > 15$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $n = 15r$. Clearly, $r>14$, because $15!$ contains 15 as a factor and all integers less than 15 as factors. If $r=15$, then $n=225$, However, $15! = 15 \\cdot 5 \\cdot 3s$, so $r > 15$. If $r=16$, then $n=240$. However, $15! = 15 \\cdot 8 \\cdot 2t$, so $r > 16$. If $r=17$, then $n = 255$. Note that $f(255) = 17$ because the smallest integer $k$ such that $k!$ is divisible by 17 is $k = 17$, because 17 is prime. Therefore, the smallest multiple of 15 that fits the desired condition is $\\boxed{n = 255}$."
+}

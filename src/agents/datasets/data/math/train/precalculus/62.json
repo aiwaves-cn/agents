@@ -1,0 +1,6 @@
+{
+    "problem": "If\n\\[\\frac{\\sin^4 \\theta}{a} + \\frac{\\cos^4 \\theta}{b} = \\frac{1}{a + b},\\]then find the value of\n\\[\\frac{\\sin^8 \\theta}{a^3} + \\frac{\\cos^8 \\theta}{b^3}\\]in terms of $a$ and $b.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "Let $x = \\sin^2 \\theta$ and $y = \\cos^2 \\theta,$ so $x + y = 1.$  Also,\n\\[\\frac{x^2}{a} + \\frac{y^2}{b} = \\frac{1}{a + b}.\\]Substituting $y = 1 - x,$ we get\n\\[\\frac{x^2}{a} + \\frac{(1 - x)^2}{b} = \\frac{1}{a + b}.\\]This simplifies to\n\\[(a^2 + 2ab + b^2) x^2 - (2a^2 + 2ab) x + a^2 = 0,\\]which nicely factors as $((a + b) x - a)^2 = 0.$  Hence, $(a + b)x - a = 0,$ so $x = \\frac{a}{a + b}.$\n\nThen $y = \\frac{b}{a + b},$ so\n\\begin{align*}\n\\frac{\\sin^8 \\theta}{a^3} + \\frac{\\cos^8 \\theta}{b^3} &= \\frac{x^4}{a^3} + \\frac{y^4}{b^3} \\\\\n&= \\frac{a^4/(a + b)^4}{a^3} + \\frac{b^4/(a + b)^4}{b^3} \\\\\n&= \\frac{a}{(a + b)^4} + \\frac{b}{(a + b)^4} \\\\\n&= \\frac{a + b}{(a + b)^4} \\\\\n&= \\boxed{\\frac{1}{(a + b)^3}}.\n\\end{align*}"
+}

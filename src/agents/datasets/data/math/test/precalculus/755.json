@@ -1,0 +1,6 @@
+{
+    "problem": "Find the matrix that corresponds to projecting onto the vector $\\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix}.$",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "From the projection formula, the projection of $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ onto $\\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix}$ is\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix}} \\begin{pmatrix} x \\\\ y \\end{pmatrix} &= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix}}{\\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix}} \\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix} \\\\\n&= \\frac{x + 7y}{50} \\begin{pmatrix} 1 \\\\ 7 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} \\frac{x + 7y}{50} \\\\ \\frac{7x + 49y}{50} \\end{pmatrix}.\n\\end{align*}To find the matrix for the projection, we write this vector as the product of a matrix and the vector $\\begin{pmatrix} x \\\\y \\end{pmatrix}$:\n\\[\\begin{pmatrix} \\frac{x + 7y}{50} \\\\ \\frac{7x + 49y}{50} \\end{pmatrix} = \\begin{pmatrix} 1/50 & 7/50 \\\\ 7/50 & 49/50 \\end{pmatrix} \\begin{pmatrix} x \\\\y \\end{pmatrix}.\\]Thus, the matrix for this transformation is $\\boxed{\\begin{pmatrix} 1/50 & 7/50 \\\\ 7/50 & 49/50 \\end{pmatrix}}.$"
+}

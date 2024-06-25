@@ -1,0 +1,6 @@
+{
+    "problem": "The line $y = 3x - 11$ is parameterized by the form\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} r \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 4 \\\\ k \\end{pmatrix}.\\]Enter the ordered pair $(r,k).$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Taking $t = 0,$ we find $\\begin{pmatrix} r \\\\ 1 \\end{pmatrix}$ lies on the line, so for this vector,\n\\[3r - 11 = 1.\\]Solving, we find $r = 4.$\n\nTaking $t = 1,$ we get\n\\[\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ 1 \\end{pmatrix} + \\begin{pmatrix} 4 \\\\ k \\end{pmatrix} = \\begin{pmatrix} 8 \\\\ k + 1 \\end{pmatrix}.\\]For $x = 8,$ $y = 3 \\cdot 8 - 11 = 13,$ so $k + 1 = 13,$ which means $k = 12.$\n\nHence, $(r,k) = \\boxed{(4,12)}.$"
+}

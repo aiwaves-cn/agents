@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)$ and $g(x)$ be two monic cubic polynomials, and let $r$ be a real number.  Two of the roots of $f(x)$ are $r + 1$ and $r + 7.$  Two of the roots of $g(x)$ are $r + 3$ and $r + 9,$ and\n\\[f(x) - g(x) = r\\]for all real numbers $x.$  Find $r.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By Factor Theorem,\n\\[f(x) = (x - r - 1)(x - r - 7)(x - a)\\]and\n\\[g(x) = (x - r - 3)(x - r - 9)(x - b)\\]for some real numbers $a$ and $b.$\n\nThen\n\\[f(x) - g(x) = (x - r - 1)(x - r - 7)(x - a) - (x - r - 3)(x - r - 9)(x - b) = r\\]for all $x.$\n\nSetting $x = r + 3,$ we get\n\\[(2)(-4)(r + 3 - a) = r.\\]Setting $x = r + 9,$ we get\n\\[(8)(2)(r + 9 - a) = r.\\]Then $-8r - 24 + 8a = r$ and $16r + 144 - 16a = r,$ so\n\\begin{align*}\n8a - 9r &= 24, \\\\\n-16a + 15r &= -144.\n\\end{align*}Solving, we find $r = \\boxed{32}.$"
+}

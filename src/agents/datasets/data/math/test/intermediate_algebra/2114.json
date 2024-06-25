@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate \\[x^4 + x^3y + x^2y^2 + xy^3 + y^4\\]when $x = 5$ and $y = 4$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We see that the given expression is part of the factorization of $x^5 - y^5$. Since $x - y \\not = 0$, we can write $$x^4 + x^3y + x^2y^2 + xy^3 + y^4 = \\frac{(x-y)(x^4 + x^3y + x^2y^2 + xy^3 + y^4)}{x-y} = \\frac{x^5-y^5}{x-y}.$$Plugging in $x = 5$ and $y = 4$, we get $$\\frac{5^5 - 4^5}{5-4} = 3125 - 1024 = \\boxed{2101}.$$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the domain of the function\n\\[h(x) = \\frac{3x - 1}{\\sqrt{x - 5}}.\\]",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "The square root $\\sqrt{x - 5}$ is defined only for $x \\ge 5.$  Moreoever, $\\sqrt{x - 5}$ is in the denominator of the fraction, so it cannot be 0, i.e. $x$ cannot be 5.  Therefore, the domain of the function is $\\boxed{(5,\\infty)}.$"
+}

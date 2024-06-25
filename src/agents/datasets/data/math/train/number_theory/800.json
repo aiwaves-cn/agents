@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose that $3\\triangle_4=\\triangle2_{11}$, where $\\triangle$ represents a digit 0-9. What is the value of the missing digit?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "After converting everything to base 10, we are able to solve for $\\triangle$. We get \\begin{align*}\n3\\triangle_4&=\\triangle2_{11}\\quad\\Rightarrow\\\\\n3\\cdot4^1+\\triangle\\cdot4^0&=\\triangle\\cdot11^1+2\\cdot11^0\\quad\\Rightarrow\\\\\n12+\\triangle&=11\\cdot\\triangle+2\\quad\\Rightarrow\\\\\n10&=10\\cdot\\triangle\\quad\\Rightarrow\\\\\n\\boxed{1}&=\\triangle.\n\\end{align*}"
+}

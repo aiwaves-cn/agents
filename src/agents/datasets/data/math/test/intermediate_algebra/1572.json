@@ -1,0 +1,6 @@
+{
+    "problem": "Let \\[f(n) =\n\\begin{cases}\n4n+3 &\\text{if }n<a, \\\\\n7n-12 &\\text{if }n\\ge{a}.\n\\end{cases}\n\\]Find $a$ if the graph of $y=f(n)$ is continuous.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "In order for the graph to be continuous, the two pieces of the function must meet at $n=a$. In order for this to happen, we know that $4a+3=7a-12$. Solving for $a$, we find that $a=\\frac{15}{3}=\\boxed{5}$."
+}

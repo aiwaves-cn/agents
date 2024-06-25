@@ -1,0 +1,6 @@
+{
+    "problem": "Find the projection of $\\mathbf{a}$ onto $\\mathbf{b} = \\begin{pmatrix} 1 \\\\ -3 \\end{pmatrix}$ if $\\mathbf{a} \\cdot \\mathbf{b} = 2.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "The projection of $\\mathbf{a}$ onto $\\mathbf{b}$ is given by\n\\[\\frac{\\mathbf{a} \\cdot \\mathbf{b}}{\\mathbf{b} \\cdot \\mathbf{b}} \\mathbf{b} = \\frac{2}{1^2 + (-3)^2} \\begin{pmatrix} 1 \\\\ -3 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 1/5 \\\\ -3/5 \\end{pmatrix}}.\\]"
+}

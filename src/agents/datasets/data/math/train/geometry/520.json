@@ -1,0 +1,6 @@
+{
+    "problem": "Two rectangles have integer dimensions, and both have a perimeter of 144 cm. What is the greatest possible difference between the areas of two such rectangles?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Let the dimensions of the rectangle be $l$ and $w$.  We are given $2l+2w=144$, which implies $l+w=72$.  Solving for $w$, we have $w=72-l$.  The area of the rectangle is $lw=l(72-l)$.  As a function of $l$, this expression is a parabola whose zeros are at $l=0$ and $l=72$ (see graph).  The $y$-coordinate of a point on the parabola is maximized when the $x$-coordinate is chosen as close to the $x$-coordinate of the vertex as possible.  The $x$-coordinate of the vertex is halfway between the zeros at $x=(0+72)/2=36$, so the maximum area is $(36)(36)=1296$ square units.  Similarly, to minimize the area we choose the length to be as far from $36$ as possible.  The resulting dimensions are $1$ unit and $71$ units, so the minimum area is 71 square units.  The difference between 1296 square units and 71 square units is $\\boxed{1225}$ square units.\n\n[asy]\nimport graph; defaultpen(linewidth(0.8));\nsize(150,IgnoreAspect);\nreal f(real x)\n{\n\nreturn x*(15-x);\n}\nxaxis(Arrows(4));\nyaxis(ymax=f(7.5),Arrows(4));\ndraw(graph(f,-3,18),Arrows(4));\nlabel(\"Area\",(0,f(7.5)),N);\nlabel(\"$l$\",(18,0),S);[/asy]"
+}

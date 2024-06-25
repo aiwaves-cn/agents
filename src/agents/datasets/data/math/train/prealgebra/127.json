@@ -1,0 +1,6 @@
+{
+    "problem": "What is $2^{16} \\div 16^2$? Write your answer as an integer.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Note that $16=2^4$ is a power of two. We can use the rule $(a^b)^c = a^{bc}$ to find that \\[16^2 = (2^4)^2 = 2^8.\\]Now we return back to the original problem. After substituting in $16^2=2^8$, we use the rule $a^b \\div a^c = a^{b-c}$: \\begin{align*}\n2^{16} \\div 16^2 &= 2^{16} \\div 2^8 \\\\\n&= 2^{16-8} \\\\\n&= 2^8 = \\boxed{256}.\n\\end{align*}"
+}

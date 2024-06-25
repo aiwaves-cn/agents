@@ -1,0 +1,6 @@
+{
+    "problem": "Convert the point $(\\rho,\\theta,\\phi) = \\left( 3, \\frac{5 \\pi}{12}, 0 \\right)$ in spherical coordinates to rectangular coordinates.",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We have that $\\rho = 3,$ $\\theta = \\frac{5 \\pi}{12},$ and $\\phi = 0,$ so\n\\begin{align*}\nx &= \\rho \\sin \\phi \\cos \\theta = 3 \\sin 0 \\cos \\frac{5 \\pi}{12} = 0, \\\\\ny &= \\rho \\sin \\phi \\sin \\theta = 3 \\sin 0 \\sin \\frac{5 \\pi}{12} = 0, \\\\\nz &= \\rho \\cos \\phi = 3 \\cos 0 = 3.\n\\end{align*}Therefore, the rectangular coordinates are $\\boxed{(0,0,3)}.$"
+}

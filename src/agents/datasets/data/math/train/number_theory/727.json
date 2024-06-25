@@ -1,0 +1,6 @@
+{
+    "problem": "What is the smallest positive integer that can be written in the form $2002m + 44444n$, where $m$ and $n$ are integers?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Notice that the question is essentially asking us for the greatest common divisor of $2002$ and $44444$: any number that can be written in the given form must be divisible by the greatest common divisor of $2002$ and $44444$. Conversely, we can find the values of $m$ and $n$ through repeated applications of the Euclidean algorithm. In particular, \\begin{align*}\n&\\text{gcd}\\,(2002, 44444) \\\\\n&\\qquad= \\text{gcd}\\,(2002, 44444 - 22 \\cdot 2002)\\\\&\\qquad = \\text{gcd}\\,(2002, 400) \\\\\n&\\qquad= \\text{gcd}\\,(2002 - 5 \\cdot (44444 - 22 \\cdot 2002), 400) \\\\&\\qquad= \\text{gcd}\\,(2, 400) \\\\\n&\\qquad= \\boxed{2}.\n\\end{align*}Notice that \\begin{align*}\n&2002 - 5 \\cdot (44444 - 22 \\cdot 2002)\\\\ &\\qquad= 2002 - 5 \\cdot 44444 + 110 \\cdot 2002 \\\\ &\\qquad= (111) \\cdot 2002 + (-5) \\cdot 44444 \\\\ &\\qquad= 2,\\end{align*}as desired."
+}

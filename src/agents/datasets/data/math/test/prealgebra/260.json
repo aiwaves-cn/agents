@@ -1,0 +1,6 @@
+{
+    "problem": "In regular pentagon $FGHIJ$, extending the sides of the pentagon, as shown, forms a star. What is the measure of angle $A$ in the figure?\n\n[asy]\ndraw((-42.4,30.8)--(-10,30.8)--(0,63.2)--(10,30.8)--(42.4,30.8)--(16.2,11.8)--(24.9,-18.1)--(0,0)--(-24.9,-18.1)--(-16.2,11.8)--cycle,linewidth(1));\ndraw((-10,30.8)--(10,30.8)--(16.2,11.8)--(0,0)--(-16.2,11.8)--cycle,linewidth(1));\nlabel(\"$A$\",(-42.4,30.8),W);\nlabel(\"$F$\",(-10,30.8),NW);\ndot((-10,30.8));\nlabel(\"$G$\",(10,30.8),NE);\ndot((10,30.8));\nlabel(\"$H$\",(16.2,11.8),E);\ndot((16.2,11.8));\nlabel(\"$I$\",(0,0),S);\ndot((0,0));\nlabel(\"$J$\",(-16.2,11.8),WSW);\ndot((-16.2,11.8));\n[/asy]",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "The sum of the angle measures in a pentagon is $180(5-2) = 540$ degrees, so each of the interior angles of regular pentagon $FGHIJ$ has measure $540^\\circ / 5 = 108^\\circ$.  Specifically, $\\angle JFG = 108^\\circ$, so \\[\\angle AFJ = 180^\\circ - \\angle JFG = 180^\\circ - 108^\\circ = 72^\\circ.\\]  Similarly, we have $\\angle AJF = 180^\\circ - 108^\\circ = 72^\\circ$.  Finally, the angles of $\\triangle AFJ$ sum to $180^\\circ$, so \\[\\angle FAJ = 180^\\circ - \\angle AFJ - \\angle AJF = 180^\\circ - 72^\\circ - 72^\\circ = \\boxed{36^\\circ}.\\]"
+}

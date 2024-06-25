@@ -1,0 +1,6 @@
+{
+    "problem": "For what negative value of $k$ is there exactly one solution to the system of equations \\begin{align*}\ny &= 2x^2 + kx + 6 \\\\\ny &= -x + 4?\n\\end{align*}",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Setting the two expressions for $y$ equal to each other, it follows that $2x^2 + kx + 6 = -x + 4$. Re-arranging, $2x^2 + (k+1)x + 2 = 0$. For there to be exactly one solution for $x$, then the discriminant of the given quadratic must be equal to zero. Thus, $(k+1)^2 - 4 \\cdot 2 \\cdot 2 = (k+1)^2 - 16 = 0$, so $k+1 = \\pm 4$. Taking the negative value, $k = \\boxed{-5}$."
+}

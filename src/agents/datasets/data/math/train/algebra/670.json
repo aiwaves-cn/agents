@@ -1,0 +1,6 @@
+{
+    "problem": "Let $C$ be the circle with equation $x^2+12y+57=-y^2-10x$. If $(a,b)$ is the center of $C$ and $r$ is its radius, what is the value of $a+b+r$?",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We can rewrite the equation $x^2+12y+57=-y^2-10x$ as $x^2+10x+y^2+12y=-57$. Completing the square, we have $(x+5)^2-25+(y+6)^2-36=-57$, or $(x+5)^2+(y+6)^2=4$. This is the equation of a circle of radius $r=2$ and with center $(a,b)=(-5,-6)$. Therefore, $a+b+r=-5+-6+2=\\boxed{-9}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\log_6 (4x)=2$, find $\\log_x 27$. Express your answer in simplest fractional form.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "We begin by solving for $x$ from the first equation $\\log_6 (4x)=2$. Expressing this in exponential form, we find that $4x=6^2$, giving us $x=\\frac{6^2}{4}=9$. After plugging this value of $x$ into $\\log_x 27$, we end up with the expression $\\log_9 27$. Since $27=(9)(3)=(9^1)(9^{\\frac12})=9^{\\frac32}$, we see that $\\log_9 27=\\boxed{\\frac32}$."
+}

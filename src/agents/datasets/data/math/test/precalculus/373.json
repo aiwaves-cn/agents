@@ -1,0 +1,6 @@
+{
+    "problem": "For real numbers $t \\neq 0,$ the point\n\\[(x,y) = \\left( t + \\frac{1}{t}, t - \\frac{1}{t} \\right)\\]is plotted.  All the plotted points lie on what kind of curve?\n\n(A) Line\n(B) Circle\n(C) Parabola\n(D) Ellipse\n(E) Hyperbola\n\nEnter the letter of the correct option.",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Note that\n\\[x^2 - y^2 = \\left( t + \\frac{1}{t} \\right)^2 - \\left( t - \\frac{1}{t} \\right)^2 = \\left( t^2 + 2 + \\frac{1}{t^2} \\right) - \\left( t^2 - 2 + \\frac{1}{t^2} \\right) = 4,\\]so\n\\[\\frac{x^2}{4} - \\frac{y^2}{4} = 1.\\]Thus, all the plotted points lie on a hyperbola.  The answer is $\\boxed{\\text{(E)}}.$"
+}

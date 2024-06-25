@@ -1,0 +1,6 @@
+{
+    "problem": "Find the area of the triangle bounded by the $y$-axis and the lines $y-3x=-2$ and $3y+x=12$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "To start, we can find the $y$-intercept of each of these lines.  Using this, we can calculate the length of that side of the triangle, and use it as a base.  Letting $x=0$ in the first equation gives $y=-2$ as a $y$-intercept.  Letting $x=0$ in the second equation gives $3y=12\\Rightarrow y=4$ as a $y$-intercept.  Therefore, the triangle has a length of $4-(-2)=6$ on the $y$-axis.\n\nThe height of the triangle will be equal to the $x$-coordinate of the intersection of the two lines.  So, we need to solve for $x$ in the system: \\begin{align*}\ny-3x&=-2\\\\\n3y+x&=12\n\\end{align*}Multiply the first equation by 3, then subtract the second equation as shown: \\begin{tabular}{ r c c c l}\n$3y$&-&$9x$&=&-6\\\\\n-($3y$&+&$x$&=&12)\\\\ \\hline\n&-&$10x$&=&-18\\\\\n\\end{tabular}Therefore, $x=\\frac{18}{10}=\\frac{9}{5}$.  This is equal to the height of the triangle.  The area will be $\\frac{1}{2}\\cdot \\frac{9}{5}\\cdot 6=\\boxed{\\frac{27}{5}}$"
+}

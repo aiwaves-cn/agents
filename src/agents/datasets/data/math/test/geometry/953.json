@@ -1,0 +1,6 @@
+{
+    "problem": "In the figure shown, $AC=13$ and $DC=2$ units.  What is the length of the segment $BD$? Express your answer in simplest radical form.\n\n[asy]\ndraw((0,5)--(12,5));\ndraw((12,5)--(12,0));\ndraw((12,0)--(0,5));\ndraw((12,5)--(10.1,0.8));\ndraw((10.48,1.64)--(9.47,2.06));\ndraw((9.47,2.06)--(9.09,1.22));\ndraw((11,5)--(11,4));\ndraw((11,4)--(12,4));\nlabel(\"A\",(0,5),W);\nlabel(\"B\",(12,5),E);\nlabel(\"C\",(12,0),E);\nlabel(\"D\",(10.1,0.8),SW);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "Since $AC=AD+DC=13$ and $DC=2$, $AD=11$. We also have two pairs of similar triangles: $\\triangle BCD \\sim \\triangle ACB$ and $\\triangle ABD \\sim \\triangle ACB$. From the first similarity, we have the equation $$\\frac{DC}{BC}=\\frac{BD}{AB}$$ Rearranging this equation and plugging in the known value of $DC$ gives $$\\frac{AB}{BC}=\\frac{BD}{2}$$ From the second similarity, we have the equation $$\\frac{AD}{AB}=\\frac{BD}{BC}$$ Rearranging this equation and plugging in the known value of $AD$ gives $$\\frac{AB}{BC}=\\frac{11}{BD}$$ But we know that $\\frac{AB}{BC}=\\frac{BD}{2}$ from above, so we have the equation $\\frac{11}{BD}=\\frac{BD}{2}$, or $BD=\\boxed{\\sqrt{22}}$."
+}

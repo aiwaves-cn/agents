@@ -1,0 +1,6 @@
+{
+    "problem": "If $f(x)=\\dfrac{x-3}{x-4}$, then for what value of $x$ is $f^{-1}(x)$ undefined?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "We start by finding the inverse function of $f$. By definition, we know that $f(f^{-1}(x)) = x$, so $$\\frac{f^{-1}(x)-3}{f^{-1}(x)-4} = x.$$We can solve this equation for $f^{-1}(x)$. First we multiply both sides by $f^{-1}(x)-4$: $$f^{-1}(x)-3 = x\\cdot(f^{-1}(x)-4).$$Then we expand: $$f^{-1}(x)-3 = x\\cdot f^{-1}(x)-4x.$$Then we rearrange so as to group all terms involving $f^{-1}(x)$ on the left side: $$f^{-1}(x)-x\\cdot f^{-1}(x) = 3-4x.$$We can factor on the left side: $$f^{-1}(x)\\cdot (1-x) = 3-4x.$$Finally, we divide both sides by $1-x$ to obtain our inverse function, $$f^{-1}(x) = \\frac{3-4x}{1-x}.$$This function is defined for all $x$ except $\\boxed{1}$."
+}

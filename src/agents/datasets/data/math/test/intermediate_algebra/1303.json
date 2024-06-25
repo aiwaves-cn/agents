@@ -1,0 +1,6 @@
+{
+    "problem": "Define \\[f(x) = \\frac{1}{x + \\frac{1}{x}}\\]and \\[g(x) = \\frac{1}{x - \\frac{1}{x}}.\\]Find the square of the largest real solution to the equation \\[ (g(x))^2 - (f(x))^2 = \\tfrac54.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We first simplify the expressions for $f(x)$ and $g(x).$ We have \\[ f(x) = \\frac{1}{x + \\frac1x} = \\frac{1}{ \\tfrac{x^2+1}{x} } = \\frac{x}{x^2+1} \\]and \\[ g(x) = \\frac{1}{x-\\frac1x} = \\frac{1}{\\tfrac{x^2-1}{x}} = \\frac{x}{x^2-1}.\\]Therefore, \\[\\begin{aligned} (g(x))^2 - (f(x))^2 &= \\frac{x^2}{(x^2-1)^2} - \\frac{x^2}{(x^2+1)^2} \\\\ &= \\frac{x^2\\left((x^2+1)^2-(x^2-1)^2\\right)}{(x^2-1)^2(x^2+1)^2} \\\\ &= \\frac{x^2(4x^2)}{(x^4-1)^2} \\\\ &= \\frac{4x^4}{(x^4-1)^2}. \\end{aligned}\\]Therefore, we have the equation \\[\\frac{4x^4}{(x^4-1)^2} = \\frac{5}{4}.\\]Cross-multiplying and expanding, we get \\[16x^4 = 5x^8 - 10x^4 + 5,\\]so \\[0 = 5x^8 - 26x^4 + 5.\\]This factors as \\[0 = (5x^4-1)(x^4-5),\\]so either $x^4 = \\tfrac15$ or $x^4 = 5.$ It follows that the largest solution to the equation is $x = \\sqrt[4]{5},$ so $x^2 = \\boxed{\\sqrt5}.$"
+}

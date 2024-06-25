@@ -1,0 +1,6 @@
+{
+    "problem": "For positive real numbers $x,$ $y,$ and $z,$ compute the maximum value of\n\\[\\frac{xyz(x + y + z)}{(x + y)^2 (y + z)^2}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "By AM-GM,\n\\[xz + (xy + y^2 + yz) \\ge 2 \\sqrt{xz(xy + y^2 + yz)} = 2 \\sqrt{xyz(x + y + z)}.\\]But $xz + (xy + y^2 + yz) = (x + y)(y + z),$ so\n\\[(x + y)(y + z) \\ge 2 \\sqrt{xyz(x + y + z)}.\\]Then $(x + y)^2 (y + z)^2 \\ge 4xyz(x + y + z),$ so\n\\[\\frac{xyz(x + y + z)}{(x + y)^2 (y + 2)^2} \\le \\frac{1}{4}.\\]Equality occurs whenever $xz = xy + y^2 + yz.$  For example, we can take $x = 2,$ $y = 1,$ and $z = 3.$  Thus, the maximum value is $\\boxed{\\frac{1}{4}}.$"
+}

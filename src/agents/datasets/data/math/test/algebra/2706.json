@@ -1,0 +1,6 @@
+{
+    "problem": "The positive difference between two consecutive even perfect squares is $268$.  Compute the larger of the two squares.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "Let the larger square be $x^2$, and the smaller one be $(x-2)^2$.  Their difference is\n\n$$x^2-(x-2)^2=(x-(x-2))(x+(x-2))=2(2x-2)=4(x-1)$$Thus, $4(x-1)=268\\Rightarrow x-1=67$.\n\nSo $x=68$ and the answer is $68^2=\\boxed{4624}$."
+}

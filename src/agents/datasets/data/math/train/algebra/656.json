@@ -1,0 +1,6 @@
+{
+    "problem": "Evaluate $i^{11} + i^{111}$.",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "The powers of $i$ repeat every four powers: $i^1=i$, $i^2=-1$, $i^3=-i$, $i^4=1$, $i^5=i$, $i^6=-1$ and so on. So to determine $i^n$, where $n$ is an integer, we only need to find the remainder of $n$ when it is divided by 4. The remainder of both 11 and 111 when divided by 4 is 3, so $i^{11} + i^{111} = i^3 + i^3 = -i + (-i) = \\boxed{-2i}$."
+}

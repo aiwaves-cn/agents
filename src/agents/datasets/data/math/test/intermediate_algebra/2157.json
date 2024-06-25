@@ -1,0 +1,6 @@
+{
+    "problem": "There exist constants $r,$ $s,$ and $t$ so that\n\\[p(n) = rp(n - 1) + sp(n - 2) + tp(n - 3)\\]for any quadratic polynomial $p(x),$ and any integer $n.$  Enter the ordered triple $(r,s,t).$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since this must hold for any quadratic, let's look at the case where $p(x) = x^2.$  Then the given equation becomes\n\\[n^2 = r(n - 1)^2 + s(n - 2)^2 + t(n - 3)^2.\\]This expands as\n\\[n^2 = (r + s + t)n^2 + (-2r - 4s - 6t)n + r + 4s + 9t.\\]Matching the coefficients on both sides, we get the system\n\\begin{align*}\nr + s + t &= 1, \\\\\n-2r - 4s - 6t &= 0, \\\\\nr + 4s + 9t &= 0.\n\\end{align*}Solving this linear system, we find $r = 3,$ $s = -3,$ and $t = 1.$\n\nWe verify the claim: Let $p(x) = ax^2 + bx + c.$  Then\n\\begin{align*}\n&3p(n - 1) - 3p(n - 2) + p(n - 3) \\\\\n&= 3(a(n - 1)^2 + b(n - 1) + c) - 3(a(n - 2)^2 + b(n - 2) + c) + a(n - 3)^2 + b(n - 3) + c \\\\\n&= a(3(n - 1)^2 - 3(n - 2)^2 + (n - 3)^2) + b(3(n - 1) - 3(n - 2) + (n - 3)) + c(3 - 3 + 1) \\\\\n&= an^2 + bn + c \\\\\n&= p(n).\n\\end{align*}Thus, the claim is true, and $(r,s,t) = \\boxed{(3,-3,1)}.$"
+}

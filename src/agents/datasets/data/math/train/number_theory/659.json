@@ -1,0 +1,6 @@
+{
+    "problem": "Find the sum of $555_6$, $55_6$ and $5_6$ in base $6$.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "Setting up the terms in a descending order, the first column gives you a residue of $3$ and you carry over $2$. In the second column there is no residue but you carry over $2$. Finally, in the third column, the sum of $7$ gives you a residue of $1$ and you carry over $1$. $$\\begin{array}{c@{}c@{}c@{}c@{}c}&_{1}&_{2}&_{2}&\\\\&&5&5&5_6\\\\&&&5&5_6\\\\&+&&&5_6\\\\ \\cline{2-5} &1&1&0&3_6\\\\ \\end{array}$$Thus, the answer is $\\boxed{1103_6}$."
+}

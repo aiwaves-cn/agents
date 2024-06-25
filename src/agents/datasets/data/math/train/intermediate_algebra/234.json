@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $xyz = 32.$  Find the minimum value of\n\\[x^2 + 4xy + 4y^2 + 2z^2.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "First, $x^2 + 4xy + 4y^2 = (x + 2y)^2.$  By AM-GM,\n\\[x + 2y \\ge 2 \\sqrt{2xy},\\]so $(x + 2y)^2 \\ge 8xy.$  Hence,\n\\[x^2 + 4xy + 4y^2 + 2z^2 \\ge 8xy + 2z^2.\\]If we apply AM-GM directly to $8xy$ and $2z^2,$ then ignoring constants, we will get the term $\\sqrt{xyz^2}.$  But the condition is $xyz = 32.$  So instead, we write $8xy + 2z^2$ as $4xy + 4xy + 2z^2.$  Then by AM-GM,\n\\begin{align*}\n4xy + 4xy + 2z^2 &\\ge 3 \\sqrt[3]{(4xy)(4xy)(2z^2)} \\\\\n&= 3 \\sqrt[3]{32x^2 y^2 z^2} \\\\\n&= 3 \\sqrt[3]{32 \\cdot 32^2} \\\\\n&= 96.\n\\end{align*}Equality occurs when $x = 2y$ and $4xy = 2z^2.$  Along with the condition $xyz = 32,$ we can solve to get $x = 4,$ $y = 2,$ and $z = 4,$ so the minimum value is $\\boxed{96}.$"
+}

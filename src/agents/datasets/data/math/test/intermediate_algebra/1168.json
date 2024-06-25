@@ -1,0 +1,6 @@
+{
+    "problem": "Riproarin' Ringo was roping a recalcitrant dogie. Ringo decided to give the dogie a reprieve by calculating \\[|(1-i)^8|\\]before riding after the dogie. What answer should Ringo have found?",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We know that magnitudes of complex numbers are multiplicative: the magnitude of $|ab|$ is the product $|a|\\cdot |b|$. Thus, \\[\\left|\\left(1-i\\right)^8\\right|=\\left|1-i\\right|^8\\]The magnitude of $1-i$ is $\\sqrt{1^2+(-1)^2}=\\sqrt{2}$; thus our answer is $\\left(\\sqrt{2}\\right) ^8=\\boxed{16}$. Ringo didn't give much of a reprieve."
+}

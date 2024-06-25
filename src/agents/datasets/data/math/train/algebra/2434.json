@@ -1,0 +1,6 @@
+{
+    "problem": "A square is drawn such that one of its sides coincides with the line $y = 5$, and so that the endpoints of this side lie on the parabola $y = x^2 + 3x + 2$. What is the area of the square?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The points of intersection of the line $y = 5$ and $y = x^2 + 3x + 2$ are found when $x^2 + 3x + 2 = 5$. Thus we have the quadratic  $x^2 + 3x -3=0$. By the quadratic formula,  $$x = \\frac{-3 \\pm \\sqrt{3^2 - 4 \\cdot 1 \\cdot -3}}{2 \\cdot 1} = \\frac{-3 \\pm \\sqrt{21}}{2}$$We want to find the difference of these roots to find the difference of the x-coordinates of the points of intersection, which will give a side length of the square. The difference is $2 \\cdot \\frac{\\sqrt{21}}{2} = \\sqrt{21}$.\n\nTherefore, the area of the square is the square of the side length, which is $(\\sqrt{21})^2 = \\boxed{21}$."
+}

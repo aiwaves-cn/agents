@@ -1,0 +1,6 @@
+{
+    "problem": "In the diagram, the square has a perimeter of $48$ and the triangle has a height of $48.$ If the square and the triangle have the same area, what is the value of $x?$ [asy]\ndraw((0,0)--(2,0)--(2,2)--(0,2)--cycle);\ndraw((3,0)--(6,0)--(6,5)--cycle);\ndraw((5.8,0)--(5.8,.2)--(6,.2));\nlabel(\"$x$\",(4.5,0),S);\nlabel(\"48\",(6,2.5),E);\n[/asy]",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "Since the perimeter of the square is $48,$ its side length is $48 \\div 4 = 12.$\n\nSince the side length of the square is $12,$ its area is $12 \\times 12 = 144.$\n\nThe area of the triangle is $\\frac{1}{2} \\times 48 \\times x = 24x.$\n\nSince the area of the triangle equals the area of the square, then $24x=144$ or $x=\\boxed{6}.$"
+}

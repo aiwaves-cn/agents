@@ -1,0 +1,6 @@
+{
+    "problem": "The matrix\n\\[\\begin{pmatrix} \\frac{4}{29} & -\\frac{10}{29} \\\\ -\\frac{10}{29} & \\frac{25}{29} \\end{pmatrix}\\]corresponds to projecting onto a certain vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}.$  Find $\\frac{y}{x}.$",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Note that the projecting the vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ onto itself results in itself, so\n\\[\\begin{pmatrix} \\frac{4}{29} & -\\frac{10}{29} \\\\ -\\frac{10}{29} & \\frac{25}{29} \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.\\]Then $\\frac{4}{29} x - \\frac{10}{29} y = x$ and $-\\frac{10}{29} x + \\frac{25}{29} y = y.$  Both equations lead to $\\frac{y}{x} = \\boxed{-\\frac{5}{2}}.$"
+}

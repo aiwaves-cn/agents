@@ -1,0 +1,6 @@
+{
+    "problem": "Let $k$ be a real number, such that both roots of\n\\[x^2 - 2kx + k^2 + k - 5 = 0\\]are real, and they are less than 5.  Find all possible values of $k.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Since both roots are real, the discriminant must be nonnegative:\n\\[(-2k)^2 - 4(k^2 + k - 5) \\ge 0.\\]This simplifies to $20 - 4k \\ge 0,$ so $k \\le 5.$\n\nLet\n\\[y = x^2 - 2kx + k^2 + k - 5 = (x - k)^2 + k - 5.\\]Thus, parabola opens upward, and its vertex is $(k, k - 5).$  If $k = 5,$ then the quadratic has a double root of $x = 5,$ so we must have $k < 5.$  Then the vertex lies to the left of the line $x = 5.$\n\nAlso, for both roots to be less than 5, the value of the parabola at $x = 5$ must be positive.  Thus,\n\\[25 - 10k + k^2 + k - 5 > 0.\\]Then $k^2 - 9k + 20 > 0,$ or $(k - 4)(k - 5) > 0.$  Since $k < 5,$ we must have $k < 4.$\n\nThus, both roots are less than 5 when $k \\in \\boxed{(-\\infty,4)}.$"
+}

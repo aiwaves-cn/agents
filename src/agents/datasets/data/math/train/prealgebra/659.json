@@ -1,0 +1,6 @@
+{
+    "problem": "What is $\\frac{1}{(-7^{3})^{3}}\\cdot(-7)^{10}$?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "First, recall that $(-a)^{n}=a^n$ for even $n$ and $(-a)^{n}=-a^n$ for odd $n$. This means that $(-7^{3})^{3}=-(7^{3})^{3}$ and $(-7)^{10}=7^{10}$. We get $$\\frac{1}{(-7^{3})^{3}}\\cdot(-7)^{10}=\\frac{1}{-(7^{3})^{3}}\\cdot7^{10}.$$Using the power to a power property, $(a^{m})^{n}=a^{mn}$ for nonzero $a$ and integers $m$ and $n$, we get that $-(7^{3})^{3}=-7^{9}$ and $$\\frac{1}{-(7^{3})^{3}}\\cdot7^{10}=\\frac{1}{-7^9}\\cdot7^{10}.$$Now because $\\frac{1}{a^{n}}=a^{-n}$ for nonzero $a$ and positive integers $n$, we can write $\\frac{1}{-7^9}$ as $-7^{-9}$. Finally, we use the rule for a product of powers, $a^{m}a^{n}=a^{m+n}$ for integers $m$ and $n$, to obtain  \\begin{align*}\n\\frac{1}{-7^9}\\cdot7^{10}&=-7^{-9}\\cdot7^{10}\\\\\n&=-1\\cdot7^{-9}\\cdot7^{10}\\\\\n&=-1\\cdot7\\\\\n&=\\boxed{-7}.\n\\end{align*}"
+}

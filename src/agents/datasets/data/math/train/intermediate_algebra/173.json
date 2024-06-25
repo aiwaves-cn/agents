@@ -1,0 +1,6 @@
+{
+    "problem": "Compute\n\\[\\frac{(1 + 17) \\left( 1 + \\dfrac{17}{2} \\right) \\left( 1 + \\dfrac{17}{3} \\right) \\dotsm \\left( 1 + \\dfrac{17}{19} \\right)}{(1 + 19) \\left( 1 + \\dfrac{19}{2} \\right) \\left( 1 + \\dfrac{19}{3} \\right) \\dotsm \\left( 1 + \\dfrac{19}{17} \\right)}.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\begin{align*}\n\\frac{(1 + 17) \\left( 1 + \\dfrac{17}{2} \\right) \\left( 1 + \\dfrac{17}{3} \\right) \\dotsm \\left( 1 + \\dfrac{17}{19} \\right)}{(1 + 19) \\left( 1 + \\dfrac{19}{2} \\right) \\left( 1 + \\dfrac{19}{3} \\right) \\dotsm \\left( 1 + \\dfrac{19}{17} \\right)} &= \\frac{\\dfrac{18}{1} \\cdot \\dfrac{19}{2} \\cdot \\dfrac{20}{3} \\dotsm \\dfrac{36}{19}}{\\dfrac{20}{1} \\cdot \\dfrac{21}{2} \\cdot \\dfrac{22}{3} \\dotsm \\dfrac{36}{17}} \\\\\n&= \\frac{\\dfrac{36!/17!}{19!}}{\\dfrac{36!/19!}{17!}} \\\\\n&= \\boxed{1}.\n\\end{align*}"
+}

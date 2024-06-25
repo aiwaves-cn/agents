@@ -1,0 +1,6 @@
+{
+    "problem": "Find the maximum value of\n\\[\\frac{x + 2y + 3}{\\sqrt{x^2 + y^2 + 1}}\\]over all real numbers $x$ and $y.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Because we want to find the maximum value of the expression, we can assume that both $x$ and $y$ are positive; if not, then replacing $x$ and $y$ with $|x|$ and $|y|$ would strictly increase the value of the expression.\n\nBy Cauchy-Schwarz,\n\\[(1^2 + 2^2 + 3^2)(x^2 + y^2 + 1) \\ge (x + 2y + 3)^2,\\]or $14(x^2 + y^2 + 1) \\ge (x + 2y + 3)^2.$  Hence,\n\\[\\frac{x + 2y + 3}{\\sqrt{x^2 + y^2 + 1}} \\le \\sqrt{14}.\\]Equality occurs when $x = \\frac{y}{2} = \\frac{1}{3},$ so the minimum value is $\\boxed{\\sqrt{14}}.$"
+}

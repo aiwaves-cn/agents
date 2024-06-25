@@ -1,0 +1,6 @@
+{
+    "problem": "Roslyn has ten boxes. Five of the boxes contain pencils, four of the boxes contain pens, and two of the boxes contain both pens and pencils. How many boxes contain neither pens nor pencils?",
+    "level": "Level 1",
+    "type": "Counting & Probability",
+    "solution": "Of the 5 boxes with pencils, 2 have pens also, so $5-2=3$ have pencils only.  Similarly, $4-2 =2$ of the boxes have pens only:\n\n\n[asy]\nunitsize(0.05cm);\nlabel(\"Pencils\", (2,74));\nlabel(\"Pens\", (80,74));\ndraw(Circle((30,45), 22));\ndraw(Circle((58, 45), 22));\nlabel(\"$2$\", (44, 45));\nlabel(scale(0.8)*\"$3$\",(28,58));\nlabel(scale(0.8)*\"$2$\",(63,58));\n[/asy]\n\nThat gives us $3+2+2=7$ boxes with pens, pencils, or both.  This leaves $10-7 = \\boxed{3}$ with neither."
+}

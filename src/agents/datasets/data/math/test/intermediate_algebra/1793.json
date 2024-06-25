@@ -1,0 +1,6 @@
+{
+    "problem": "The function $f$ has the property that, for each real number $x$, \\[f(x) + f(x-1) = x^2.\\]If $f(19) = 94$, what is $f(94)$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We compute directly using the given recursive definition: \\[\\begin{aligned} f(94) &= 94^2 - f(93) \\\\ &= 94^2 - 93^2 + f(92) \\\\ &= 94^2 - 93^2 + 92^2 - f(91) \\\\ &= \\dotsb \\\\ &= 94^2 - 93^2 + 92^2 - 91^2 + \\cdots + 20^2 - f(19) \\\\ &= (94^2 - 93^2 + 92^2 - 91^2 + \\cdots + 20^2) - 94. \\end{aligned}\\]To compute this sum, we write \\[\\begin{aligned} 94^2 - 93^2 + 92^2 - 91^2 + \\dots + 20^2& = (94^2 - 93^2) + (92^2 - 91^2) + \\dots + (22^2 - 21^2) + 20^2 \\\\ &= (94 + 93) + (92 + 91) + \\dots + (22 + 21) + 20^2 \\\\ &= \\frac{1}{2}(94+21)(94-21+1) + 400 \\\\ &= 4255 + 400 \\\\ &= 4655. \\end{aligned}\\]Therefore, \\[f(94) = 4655 - 94 = \\boxed{4561}.\\]"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Two cards are chosen at random from a standard 52-card deck.  What is the probability that the first card is a heart and the second card is a 10?",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "There are two cases.\n\nCase 1: The first card is a $\\heartsuit$ but not a 10.\n\nThe probability of the first card satisfying this is $\\dfrac{12}{52},$ and then the probability that the second card is a 10 is $\\dfrac{4}{51}.$\n\nCase 2: The first card is the 10 $\\heartsuit$.\n\nThe probability of the first card being the 10 $\\heartsuit$ is $\\dfrac{1}{52},$ and then the probability that the second card is a 10 is $\\dfrac{3}{51}.$\n\nWe then add the probability of the two cases (since they are exclusive) to get \\[\\frac{12}{52}\\times \\frac{4}{51}+\\frac{1}{52}\\times \\frac{3}{51}=\\boxed{\\frac{1}{52}}.\\]"
+}

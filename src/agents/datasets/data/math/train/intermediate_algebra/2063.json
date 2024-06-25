@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a$, $b$, and $c$ be the $3$ roots of $x^3-x+1=0$.  Find $\\frac{1}{a+1}+\\frac{1}{b+1}+\\frac{1}{c+1}$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can substitute $x=y-1$ to obtain a polynomial having roots $a+1$, $b+1$, $c+1$, namely,\n\\[(y-1)^3-(y-1)+1=y^3-3y^2+2y+1.\\]The sum of the reciprocals of the roots of this polynomial is, by Vieta's formulas, $\\frac{2}{-1}=\\boxed{-2}$."
+}

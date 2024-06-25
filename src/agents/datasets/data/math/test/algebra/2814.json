@@ -1,0 +1,6 @@
+{
+    "problem": "What is the minimum value of the expression $2x^2+3y^2+8x-24y+62$ for real $x$ and $y$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Rearranging the expression, we have  \\[2x^2+8x+3y^2-24y+62\\]We first complete the square in $x$. Factoring a 2 from the first two terms of the expression, we get  \\[2(x^2+4x)+3y^2-24y+62\\]In order for the expression inside the parenthesis to be a perfect square, we need to add and subtract $(4/2)^2=4$ inside the parenthesis. Doing this, we have \\[2(x^2+4x+4-4)+3y^2-24y+62 \\Rightarrow 2(x+2)^2+3y^2-24y+54\\]Now we complete the square in $y$. Factoring a 3 from the $y$ terms in the expression, we get \\[2(x+2)^2+3(y^2-8y)+54\\]In order for the expression inside the second parenthesis to be a perfect square, we need to add and subtract $(8/2)^2=16$ inside the parenthesis. Doing this, we have \\[2(x+2)^2+3(y^2-8y+16-16)+54 \\Rightarrow 2(x+2)^2+3(y-4)^2+6\\]Since the minimum value of $2(x+2)^2$ and $3(y-4)^2$ is $0$ (perfect squares can never be negative), the minimum value of the entire expression is $\\boxed{6}$, and is achieved when $x=-2$ and $y=4$."
+}

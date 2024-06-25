@@ -1,0 +1,6 @@
+{
+    "problem": "The equation of the ellipse shown below can be written as\n\\[\\frac{(x - h)^2}{a^2} + \\frac{(y - k)^2}{b^2} = 1.\\]Find $h + k + a + b.$\n\n[asy]\nunitsize(0.3 cm);\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(shift((-4,2))*xscale(5)*yscale(3)*Circle((0,0),1),red);\n\ndot((-4,2));\n[/asy]",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We see that the center of the ellipse is $(-4,2),$ the semi-major axis is 5, and the semi-minor axis is 3, so $h + k + a + b = (-4) + 2 + 5 + 3 = \\boxed{6}.$"
+}

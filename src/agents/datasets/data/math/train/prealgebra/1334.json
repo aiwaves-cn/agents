@@ -1,0 +1,6 @@
+{
+    "problem": "At the beginning of every period of British Literature, Mrs. Crabapple picks a random student to receive a crabapple as a gift, but really, as you might imagine, they are quite bitter and nasty. Given that there are 11 students in her class and her class meets four times a week, how many different sequences of crabapple recipients are possible in a week?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Since there is no mention that a student cannot be picked twice, there are 11 possible victims every time the class meets. Therefore, our answer is $11 \\cdot 11 \\cdot 11 \\cdot 11 = 11^4 = \\boxed{14,\\!641}.$"
+}

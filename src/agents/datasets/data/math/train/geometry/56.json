@@ -1,0 +1,6 @@
+{
+    "problem": "If a triangle has two sides of lengths 5 and 7 units, then how many different integer lengths can the third side be?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Let $n$ be the length of the third side.  Then by the triangle inequality, \\begin{align*}\nn + 5 &> 7, \\\\\nn + 7 &> 5, \\\\\n5 + 7 &> n,\n\\end{align*} which tell us that $n > 2$, $n > -2$, and $n < 12$.  Hence, the possible values of $n$ are 3, 4, 5, 6, 7, 8, 9, 10, and 11, for a total of $\\boxed{9}$."
+}

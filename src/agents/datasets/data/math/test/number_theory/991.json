@@ -1,0 +1,6 @@
+{
+    "problem": "How many digits does $700_{10}$ have when converted to base 5?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since we know that $5^4=625<700<5^5=3125$, the largest power of 5 that is less than or equal to $700$ is $5^4$. This means that there will be digits in the $5^4$ place, the $5^3$ place, the $5^2$ place, the $5^1$ place, and the $5^0$ place when $700_{10}$ is converted to base 5. Therefore, there will be $\\boxed{5\\text{ digits}}$ in the base 5 number that corresponds to $700_{10}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "What is the greatest common divisor of 315 and 108?",
+    "level": "Level 3",
+    "type": "Prealgebra",
+    "solution": "We find the prime factorizations of the two numbers: \\begin{align*}\n315&=3^2\\cdot5\\cdot7,\\\\\n108&=2^2\\cdot3^3.\n\\end{align*}\n\nThe only common prime factor is $3$; the minimum exponent of $3$ is $2$, so the GCD is $3^2=\\boxed{9}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12. $$",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Grouping residues helps make some series computations easier:  \\begin{align*}\n1 + 2 + 3 + 0 + 1 + 2& + 3 + 0 + 1 + 2 + 3 + 0\\\\&\\equiv 3(1 + 2 + 3 + 0) \\\\\n&\\equiv 18\\\\\n& \\equiv \\boxed{2} \\pmod{4}.\n\\end{align*}"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the smallest three-digit palindrome whose product with 101 is not a five-digit palindrome.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can use the distributive property of multiplication to multiply a three-digit palindrome $aba$ (where $a$ and $b$ are digits) with 101: $$ 101 \\cdot aba = (100 + 1) \\cdot aba = aba00 + aba = ab(2a)ba. $$Here, the digits of the product are $a$, $b$, $2a$, $b$, and $a$, unless carrying occurs.  In fact, this product is a palindrome unless carrying occurs, and that could only happen when $2a \\ge 10$.  Since we want the smallest such palindrome in which carrying occurs, we want the smallest possible value of $a$ such that $2a \\ge 10$ and the smallest possible value of $b$.  This gives us $\\boxed{505}$ as our answer and we see that $101 \\cdot 505 = 51005$ is not a palindrome."
+}

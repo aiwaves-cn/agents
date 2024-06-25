@@ -1,0 +1,6 @@
+{
+    "problem": "Let $A$, $B$, $C$ and $D$ be the vertices of a regular tetrahedron each of whose edges measures 1 meter. A bug, starting from vertex $A$, observes the following rule: at each vertex it chooses one of the three edges meeting at that vertex, each edge being equally likely to be chosen, and crawls along that edge to the vertex at its opposite end. Let $p = \\frac n{729}$ be the probability that the bug is at vertex $A$ when it has crawled exactly 7 meters. Find the value of $n$.\n",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "Let $P(n)$ denote the probability that the bug is at $A$ after it has crawled $n$ meters. Since the bug can only be at vertex $A$ if it just left a vertex which is not $A$, we have $P(n + 1) = \\frac13 (1 - P(n))$. We also know $P(0) = 1$, so we can quickly compute $P(1)=0$, $P(2) = \\frac 13$, $P(3) = \\frac29$, $P(4) = \\frac7{27}$, $P(5) = \\frac{20}{81}$, $P(6) = \\frac{61}{243}$ and $P(7) = \\frac{182}{729}$, so the answer is $\\boxed{182}$. One can solve this recursion fairly easily to determine a closed-form expression for $P(n)$."
+}

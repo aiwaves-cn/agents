@@ -1,0 +1,6 @@
+{
+    "problem": "When $p(x) = Ax^5 + Bx^3 + Cx + 4$ is divided by $x - 3,$ the remainder is 11.  Find the remainder when $p(x)$ is divided by $x + 3.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By the Remainder Theorem, $p(3) = 11,$ so\n\\[A \\cdot 3^5 + B \\cdot 3^3 + C \\cdot 3 + 4 = 11.\\]Then $A \\cdot 3^5 + B \\cdot 3^3 + C \\cdot 3 = 7.$\n\nAgain by the Remainder Theorem, when $p(x)$ is divided by $x + 3,$ the remainder is\n\\begin{align*}\np(-3) &= A \\cdot (-3)^5 + B \\cdot (-3)^3 + C \\cdot (-3) + 4 \\\\\n&= -A \\cdot 3^5 - B \\cdot 3^3 - C \\cdot 3 + 4 \\\\\n&= -7 + 4 \\\\\n&= \\boxed{-3}.\n\\end{align*}"
+}

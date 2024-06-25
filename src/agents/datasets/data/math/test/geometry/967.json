@@ -1,0 +1,6 @@
+{
+    "problem": "A regular pentagon is rotated counterclockwise about its center. What is the minimum number of degrees it must be rotated until it coincides with its original position?",
+    "level": "Level 3",
+    "type": "Geometry",
+    "solution": "Each of the five marked angles measures $360/5=72$ degrees, so $\\boxed{72}$ degrees is the minimum angle through which the pentagon may be rotated so that it coincides with its original position.\n\n[asy]\nsize(150);\ndefaultpen(linewidth(0.7));\nint i;\nfor(i=0;i<=4;++i)\n\n{\ndraw(origin--dir(18+72*i)--dir(18+72*(i+1)));\ndraw(anglemark(dir(18+72*i),origin,dir(18+72*(i+1)),3+fmod(i,3)));\n}\n[/asy]"
+}

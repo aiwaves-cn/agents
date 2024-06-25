@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $$\\left(\\left(\\left(\\left(\\left(-345\\right)^{4}\\right)^{2}\\right)^{0}\\right)^{-2}\\right)^{-4}.$$",
+    "level": "Level 1",
+    "type": "Prealgebra",
+    "solution": "Recall that $x^0 = 1$ for all numbers $x$. Therefore, \\[\\left(\\left(\\left(-345\\right)^{4}\\right)^{2}\\right)^{0}=1,\\]and the given expression simplifies to    $$\\left(1^{-2}\\right)^{-4}.$$Since 1 raised to any integer power equals 1, we have    $$\\left(1^{-2}\\right)^{-4} = 1^{-4} = \\boxed{1}.$$"
+}

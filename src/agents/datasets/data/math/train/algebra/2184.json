@@ -1,0 +1,6 @@
+{
+    "problem": "The line $y = 3$ intersects the graph of $y = 4x^2 + x - 1$ at the points $A$ and $B$. The distance between $A$ and $B$ can be written as $\\frac{\\sqrt{m}}{n}$, where $m$ and $n$ are positive integers that do not share any factors other than one. Find the value of $m - n$.",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "In order for the graphs of $y=3$ and $y=4x^2 + x -1$ to intersect, we must have $3 = 4x^2 + x - 1$, so $4x^2 + x - 4 = 0$. By the quadratic formula, if $ax^2 + bx + c = 0$, then $$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a};$$the (positive) difference of these two roots is given by $\\left|\\frac{\\sqrt{b^2 - 4ac}}{a}\\right|$. Since $A$ and $B$ lie on a horizontal line, it follows that this difference is the distance $AB$. Substituting the given values, we have that the answer is $\\left|\\frac{\\sqrt{1^2-4(4)(-4)}}{4}\\right| = \\frac{\\sqrt{65}}{4}$. Thus, the answer is $\\boxed{61}$."
+}

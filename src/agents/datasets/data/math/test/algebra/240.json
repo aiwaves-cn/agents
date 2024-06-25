@@ -1,0 +1,6 @@
+{
+    "problem": "Rationalize the denominator of: $\\frac{1}{\\sqrt{2}+\\sqrt{8}+\\sqrt{32}}$. The answer can be written as $\\frac{\\sqrt{A}}{B}$, where $A$ and $B$ are integers. Find the minimum possible value of $A+B$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, we simplify the denominator. $$\\frac{1}{\\sqrt{2}+\\sqrt{8}+\\sqrt{32}}=$$$$\\frac{1}{\\sqrt{2}+2\\sqrt{2}+4\\sqrt{2}}=$$$$\\frac{1}{7\\sqrt{2}}$$Then, we multiply the top and bottom by $\\sqrt{2}$. $$\\frac{1}{7\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{\\sqrt{2}}=$$$$\\frac{\\sqrt{2}}{14}$$Therefore, $A+B=\\boxed{16}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "The corner of a unit cube is chopped off such that the cut runs through the three vertices adjacent to the vertex of the chosen corner.  What is the height of the remaining cube when the freshly-cut face is placed on a table?",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The major diagonal has a length of $\\sqrt{3}$.  The volume of the pyramid is $1/6$, and so its height $h$ satisfies $\\frac{1}{3}\\cdot h\\cdot \\frac{\\sqrt{3}}{4}(\\sqrt{2})^2=1/6$ since  the freshly cut face is an equilateral triangle of side length $\\sqrt{2}$.  Thus $h=\\sqrt{3}/3$, and the answer is $\\boxed{\\frac{2\\sqrt{3}}{3}}$."
+}

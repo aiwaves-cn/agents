@@ -1,0 +1,6 @@
+{
+    "problem": "If the three points $(1,a,b),$ $(a,2,b),$ $(a,b,3)$ are collinear, what is the value of $a + b$?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Note that the $z$-coordinate of both $(1,a,b)$ and $(a,2,b)$ is $b,$ so the whole line must lie in the plane $z = b.$  Hence, $b = 3.$\n\nSimilarly, the $x$-coordinate of both $(a,2,b)$ and $(a,b,3)$ is $a,$ so the whole line must lie in the plane $x = a.$  Hence, $a = 1,$ so $a + b = \\boxed{4}.$"
+}

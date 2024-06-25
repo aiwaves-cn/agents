@@ -1,0 +1,6 @@
+{
+    "problem": "Let\n\\[f(a,b) = \\left\\{\n\\renewcommand{\\arraystretch}{3}\n\\begin{array}{cl}\n\\dfrac{ab - a + 2}{2a} & \\text{if $a + b \\le 3$}, \\\\\n\\dfrac{ab - b - 2}{-2b} & \\text{if $a + b > 3$}.\n\\end{array}\n\\renewcommand{\\arraystretch}{1}\n\\right.\\]Find $f(2,1) + f(2,4).$",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "We have that\n\\[f(2,1) = \\frac{2 \\cdot 1 - 2 + 2}{4} = \\frac{1}{2},\\]and\n\\[f(2,4) = \\frac{2 \\cdot 4 - 4 - 2}{-8} = -\\frac{1}{4},\\]so $f(2,1) + f(4,2) = \\boxed{\\frac{1}{4}}.$"
+}

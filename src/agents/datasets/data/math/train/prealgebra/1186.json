@@ -1,0 +1,6 @@
+{
+    "problem": "If we count by $3\\text{'s}$ starting with $1,$ the following sequence is obtained: $1,$ $4,$ $7,$ $10,$ $\\dots.$ What is the $100^\\text{th}$ number in the sequence?",
+    "level": "Level 4",
+    "type": "Prealgebra",
+    "solution": "Since the successive terms of the sequence increase by $3,$ we relate the sequence to nearby multiples of $3$ and display the table below. Compare each of the terms of the sequence with the multiple of $3$ directly below it. Notice that each term of the sequence is $2$ less than the corresponding multiple of $3$ directly below it. Since the $100^\\text{th}$ multiple of $3$ is $300,$ the corresponding term of the sequence is $300-2=\\boxed{298}.$ $$\n\\begin{array}{|c|c|c|c|c|c|c|}\n\\hline\n\\text{order of terms} & 1 & 2 & 3 & 4 & \\dots & 100 \\\\\n\\hline\n\\text{terms of sequence} & 1 & 4 & 7 & 10 & \\dots & ? \\\\\n\\hline\n\\text{multiples of 3} & 3 & 6 & 9 & 12 & \\dots & (300)\\\\\n\\hline\n\\end{array}\n$$"
+}

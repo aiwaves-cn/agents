@@ -1,0 +1,6 @@
+{
+    "problem": "What is the units digit of the sum $1! + 2! + 3! + 4! + 5! + \\cdots + 1000!$?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "The units digit of $1!$ is $1$, the units digit of $2!$ is $2$, the units digit of $3!$ is $6$, the units digit of $4! = 24$ is $4$, and the units digit of $5! = 120$ is $0$.  For all $n \\ge 5$, $n!$ is a multiple of $5!$, which is a multiple of 10, so all for all $n \\ge 5$, the units digit of $n!$ is 0.  This means that the units digit of the sum $1! + 2! + 3! + 4! + 5! + \\cdots + 1000!$ is just the units digit of $1 + 2 + 6 + 4 + 0 + \\cdots + 0 = 13$, so the answer is $\\boxed{3}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Find the ratio of the area of $\\triangle BCX$ to the area of $\\triangle ACX$ in the diagram if $CX$ bisects $\\angle ACB$. Express your answer as a common fraction. [asy]\nimport markers;\n\nreal t=27/(27+30);\npair A=(-15.57,0);\npair B=(8.43,0);\npair C=(0,25.65);\npair X=t*A+(1-t)*B;\n\ndraw(C--A--B--C--X);\n\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,E);\nlabel(\"$C$\",C,N);\nlabel(\"$X$\",X,NE);\n\n//markangle(n=1,radius=15,A,C,X,marker(markinterval(stickframe(n=1),true)));\n//markangle(n=1,radius=15,X,C,B,marker(markinterval(stickframe(n=1),true)));\n\nlabel(\"$24$\",.5*(B+A),S);\nlabel(\"$27$\",.5*(B+C),NE);\nlabel(\"$30$\",.5*(A+C),NW);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The Angle Bisector Theorem tells us that  \\[\\frac{BX}{AX}=\\frac{BC}{AC}=\\frac{27}{30}=\\frac{9}{10}.\\]Since $\\triangle BCX$ and $\\triangle ACX$ share the same height, the ratio of their areas is simply the ratio of their bases, so our answer is \\[\\frac{BX}{AX}=\\boxed{\\frac{9}{10}}.\\]"
+}

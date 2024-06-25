@@ -1,0 +1,6 @@
+{
+    "problem": "Let $S$ be a region in the plane with area 4.  When we apply the matrix\n\\[\\begin{pmatrix} 2 & -1 \\\\ 7 & 2 \\end{pmatrix}\\]to $S,$ we obtain the region $S'.$  Find the area of $S'.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "Note that\n\\[\\begin{vmatrix} 2 & -1 \\\\ 7 & 2 \\end{vmatrix} = (2)(2) - (-1)(7) = 11,\\]so the matrix scales the area of any region by a factor of 11.  In particular, the area of $S'$ is $11 \\cdot 4 = \\boxed{44}.$"
+}

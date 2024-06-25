@@ -1,0 +1,6 @@
+{
+    "problem": "Let $r$, $s$, and $t$ be the roots of the equation $x^3 - 20x^2 + 18x - 7 = 0$. Find the value of $r^2s^2 + s^2t^2 + t^2r^2$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "By Vieta's formulas, $rs + st + tr = 18.$ Squaring this equation gives us the terms we want: \\[(rs+st+tr)^2 = (rs)^2 + (st)^2 + (tr)^2 + (2r^2st + 2rs^2t + 2rst^2) = 324.\\]To deal with the extra terms, we note that \\[r^2st + rs^2t + rst^2 = rst(r+s+t) = 7 \\cdot 20 = 140,\\]again by Vieta. Therefore, \\[(rs)^2 + (st)^2 + (tr)^2 = 324 - 2\\cdot 140 = \\boxed{44}.\\]"
+}

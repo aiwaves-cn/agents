@@ -1,0 +1,6 @@
+{
+    "problem": "How many values of $x$, $-19<x<98$, satisfy $\\cos^2 x + 2\\sin^2 x = 1?$  (Note: $x$ is measured in radians.)",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Since $\\cos^2 x + \\sin^2 x = 1,$ the given equation reduces to\n\\[\\sin^2 x = 0,\\]so $\\sin x = 0.$  This occurs exactly $x = k \\pi$ for some integer $k.$  Then $-19 < k \\pi < 98,$ or\n\\[-\\frac{19}{\\pi} < k < \\frac{98}{\\pi}.\\]Since $-\\frac{19}{\\pi} \\approx -6.05$ and $\\frac{98}{\\pi} \\approx 31.19,$ the possible values of $k$ are $-6,$ $-5,$ $\\dots,$ 31, giving us a total of $31 - (-6) + 1 = \\boxed{38}$ solutions."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Six 6-sided dice are rolled.  What is the probability that exactly two of the dice show a 1 and exactly two of the dice show a 2?  Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "The probability that two particular dice will show 1's, two particular dice will show 2's, and the other two dice will show neither of those is $\\left(\\dfrac{1}{6}\\right)^2\\left(\\dfrac{1}{6}\\right)^2\\left(\\dfrac{4}{6}\\right)^2=\\dfrac{1}{2916}$. There are $\\binom{6}{2}=15$ ways to select two out of the 6 dice to be 1's and $\\binom{4}{2}=6$ to select two dice out of the remaining four to show 2's, which means that there are a total of $15\\cdot6=90$ ways of selecting which dice will be 1's and 2's. Multiplying this by the probability that any particular one of these arrangements will be rolled gives us our final answer of $90\\cdot\\dfrac{1}{2916}=\\boxed{\\dfrac{5}{162}}$."
+}

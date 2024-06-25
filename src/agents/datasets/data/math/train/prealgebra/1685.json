@@ -1,0 +1,6 @@
+{
+    "problem": "A book with 53 pages numbered 1 to 53 has its pages renumbered in reverse, from 53 to 1. For how many pages do the new page number and old page number share the same units digit?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Each page is assigned two numbers. We can generalize the numbers assigned to page $x$ to be the pair $x$ and $54-x$ for $1 \\leq x \\leq 53$. That is, if $x = 1$, then we can see that page number one is assigned the numbers $1$ and $54-1 = 53$. It is fairly easy to see that the units digits of $x$ and $54-x$ will only be the same if $x$ has a units digit of $2$ or a units digit of $7$. Thus, we simply must count how many such $x$ there are between $1$ and $54$. Possibilities for $x$ are: 2, 7, 12, 17, 22, 27, 32, 37, 42, 47, and 52. Therefore, there are $\\boxed{11}$ such pages."
+}

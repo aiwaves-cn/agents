@@ -1,0 +1,6 @@
+{
+    "problem": "What is the least positive integer that is divisible by three distinct primes?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We use the fact that a number which is divisible by three primes must be divisible by their product -- this comes from the Fundamental Theorem of Arithmetic. Since we are looking for the least positive integer, we look at the three smallest primes: 2, 3, and 5. Multiplying these yields $2 \\times 3 \\times 5 = \\boxed{30}$, which is the least positive integer divisible by three distinct primes."
+}

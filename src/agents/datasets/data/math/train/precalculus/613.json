@@ -1,0 +1,6 @@
+{
+    "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\mathbf{v} \\cdot \\mathbf{v} = \\mathbf{v} \\cdot \\begin{pmatrix} 10 \\\\ -40 \\\\ 8 \\end{pmatrix}\\]forms a solid in space.  Find the volume of this solid.",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}.$  Then from the given equation,\n\\[x^2 + y^2 + z^2 = 10x - 40y + 8z.\\]Completing the square in $x,$ $y,$ and $z,$ we get\n\\[(x - 5)^2 + (y + 20)^2 + (z - 4)^2 = 441.\\]This represents the equation of a sphere with radius 21, and its volume is\n\\[\\frac{4}{3} \\pi \\cdot 21^3 = \\boxed{12348 \\pi}.\\]"
+}

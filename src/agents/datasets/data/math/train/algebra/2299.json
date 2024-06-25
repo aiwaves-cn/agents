@@ -1,0 +1,6 @@
+{
+    "problem": "How many terms of the arithmetic sequence 88, 85, 82, $\\dots$ appear before the number $-17$ appears?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "The common difference $d$ is $85-88 = -3$, so the $n^{\\text{th}}$ term in the arithmetic sequence is $88 - 3(n - 1) = 91 - 3n$.  If $91 - 3n = -17$, then $3n = (91 + 17) = 108$, so $n = 108/3 = 36$.  Hence, $-17$ is the $36^{\\text{th}}$ term in this arithmetic sequence, which means that $36 - 1 = \\boxed{35}$ terms appear before $-17$ does."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "A cone is inverted and filled with water to 3/4 of its height.  What percent of the cone's volume is filled with water?  Express your answer as a decimal to the nearest ten-thousandth.  (You should enter 10.0000 for $10\\%$ instead of 0.1000.)",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "Let the cone have height $h$ and radius $r$, so its volume is \\[\\frac{1}{3}\\pi r^2h.\\]When the cone is filled with water, the amount of water in the cone forms a smaller cone that is similar to the original cone.  This smaller cone has height $\\frac{3}{4}h$, and by similar triangles, radius $\\frac{3}{4}r$.  So, the smaller cone has volume \\[\\frac{1}{3}\\pi \\left(\\frac{3}{4}r\\right)^2 \\left(\\frac{3}{4}h\\right) = \\frac{1}{3}\\pi \\cdot \\frac{3^3}{4^3} r^2h.\\]Hence the ratio of the volume of the water-filled cone to the original cone is \\[\\frac{3^3}{4^3}=\\frac{27}{64}=0.421875,\\]which, as a percentage, is $\\boxed{42.1875}\\%$."
+}

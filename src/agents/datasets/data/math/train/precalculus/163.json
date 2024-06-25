@@ -1,0 +1,6 @@
+{
+    "problem": "Find the inverse of the matrix\n\\[\\begin{pmatrix} 9 & 18 \\\\ -6 & -12 \\end{pmatrix}.\\]If the inverse does not exist, then enter the zero matrix.",
+    "level": "Level 1",
+    "type": "Precalculus",
+    "solution": "Since the determinant is $(9)(-12) - (18)(-6) = 0,$ the inverse does not exist, so the answer is the zero matrix $\\boxed{\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}}.$"
+}

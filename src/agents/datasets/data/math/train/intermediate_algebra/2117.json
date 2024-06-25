@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be complex numbers such that\n\\[\\frac{x + y}{x - y} + \\frac{x - y}{x + y} = 1.\\]Find\n\\[\\frac{x^4 + y^4}{x^4 - y^4} + \\frac{x^4 - y^4}{x^4 + y^4}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra",
+    "solution": "Putting $\\frac{x + y}{x - y} + \\frac{x - y}{x + y}$ over a common denominator, we get\n\\[\\frac{2x^2 + 2y^2}{x^2 - y^2} = 1.\\]Then $2x^2 + 2y^2 = x^2 - y^2,$ so $x^2 = -3y^2.$\n\nThen\n\\begin{align*}\n\\frac{x^4 + y^4}{x^4 - y^4} + \\frac{x^4 - y^4}{x^4 + y^4} &= \\frac{9y^4 + y^4}{9y^4 - y^4} + \\frac{9y^4 - y^4}{9y^4 + y^4} \\\\\n&= \\frac{10}{8} + \\frac{8}{10} \\\\\n&= \\frac{5}{4} + \\frac{4}{5} \\\\\n&= \\boxed{\\frac{41}{20}}.\n\\end{align*}"
+}

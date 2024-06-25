@@ -1,0 +1,6 @@
+{
+    "problem": "What is the range of the function $f(x) = \\frac{1}{x^2}$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "Note that $f(x) = \\frac{1}{x^2} >0$ for all nonzero $x$. That is, the range of $f$ must only include positive numbers. Conversely, if $a$ is a positive number, then \\[f\\left(\\frac{1}{\\sqrt{a}}\\right)=\\frac{1}{(1/\\sqrt{a})^2} = a,\\]so $a$ is indeed in the range of $f$. Thus, the range of $f$ is the set of all positive real numbers; in interval notation, that's $\\boxed{(0,\\infty)}$."
+}

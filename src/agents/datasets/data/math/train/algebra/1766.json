@@ -1,0 +1,6 @@
+{
+    "problem": "How many whole numbers are between $\\sqrt[3]{10}$ and $\\sqrt[3]{200}$?",
+    "level": "Level 2",
+    "type": "Algebra",
+    "solution": "Since $2^3=8$ and $3^3=27$, we know that $2<\\sqrt[3]{10}<3$. Then we find that $5^3=125$ and $6^3=216$, so $5<\\sqrt[3]{200}<6$. We have $\\sqrt[3]{10}<3$ and $5<\\sqrt[3]{200}$. The whole numbers between $\\sqrt[3]{10}$ and $\\sqrt[3]{200}$ are $3,4,5$, for a total of $\\boxed{3}$ whole numbers."
+}

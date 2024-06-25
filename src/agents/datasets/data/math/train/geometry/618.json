@@ -1,0 +1,6 @@
+{
+    "problem": "A triangle has three different integer side lengths and a perimeter of 20 units. What is the maximum length of any one side?",
+    "level": "Level 2",
+    "type": "Geometry",
+    "solution": "A triangle with sides of 9,8 and 3 will satisfy these conditions.  This will have longest side of 9.  If the longest side has length 10, then the sum of the remaining two sides $x+y$ must be greater than 10 by the triangle inequality.  However, this cannot be since this will equal 10, and thus, the maximum length of one side is $\\boxed{9}$."
+}

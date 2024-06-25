@@ -1,0 +1,6 @@
+{
+    "problem": "Let $\\mathbf{v}$ and $\\mathbf{w}$ be vectors such that\n\\[\\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} = \\begin{pmatrix} 1 \\\\ 0 \\\\ -3 \\end{pmatrix}.\\]Compute $\\operatorname{proj}_{\\mathbf{w}} (-2 \\mathbf{v}).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the formula for a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\mathbf{w}} (-2 \\mathbf{v}) &= \\frac{(-2 \\mathbf{v}) \\cdot \\mathbf{w}}{\\|\\mathbf{w}\\|^2} \\mathbf{w} \\\\\n&= -2 \\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\|\\mathbf{w}\\|^2} \\mathbf{w} \\\\\n&= -2 \\operatorname{proj}_{\\mathbf{w}} \\mathbf{v} \\\\\n&= \\boxed{\\begin{pmatrix} -2 \\\\ 0 \\\\ 6 \\end{pmatrix}}.\n\\end{align*}"
+}

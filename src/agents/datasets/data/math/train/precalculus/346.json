@@ -1,0 +1,6 @@
+{
+    "problem": "If $\\tan x = 2,$ then find $\\tan \\left( x + \\frac{\\pi}{4} \\right).$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "From the angle addition formula,\n\\begin{align*}\n\\tan \\left( x + \\frac{\\pi}{4} \\right) &= \\frac{\\tan x + \\tan \\frac{\\pi}{4}}{1 - \\tan x \\tan \\frac{\\pi}{4}} \\\\\n&= \\frac{1 + 2}{1 - 2 \\cdot 1} \\\\\n&= \\boxed{-3}.\n\\end{align*}"
+}

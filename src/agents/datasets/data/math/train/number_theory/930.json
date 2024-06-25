@@ -1,0 +1,6 @@
+{
+    "problem": "The four consecutive digits $a$, $b$, $c$ and $d$ are used to form the four-digit numbers $abcd$ and $dcba$. What is the greatest common divisor of all numbers of the form $abcd+dcba$?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "We have  \\begin{align*}\nabcd &= 1000a + 100b + 10c + d,\\text { and }\\\\\ndcba &= 1000d + 100c + 10b + a\\end{align*} Adding these gives \\begin{align*}\nabcd + dcba &= (1000 + 1)d + (100 + 10)c \\\\\n&\\qquad + (10 + 100)b + (1 + 1000)a \\\\\n&= 1001(a+d) + 110(b+c).\n\\end{align*} Furthermore, since $a,b,c,d$ are consecutive, we have $b = a+1$, $c = a+2$, and $d = a+3$, so that $$a+d = 2a + 3 = b+c.$$ Hence, $$abcd + dcba = 1001(2a+3) + 110(2a+3) = 1111(2a+3).$$ It follows that $\\boxed{1111}$ must divide any number of the given form. To see that no higher number must divide it, if we take $a = 1$ and $a=2$, we get the numbers $5555$ and $7777$, whose greatest common factor is indeed $1111$."
+}

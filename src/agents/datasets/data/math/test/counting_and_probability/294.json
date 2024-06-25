@@ -1,0 +1,6 @@
+{
+    "problem": "How many ways are there to put 4 indistinguishable balls into 2 distinguishable boxes?",
+    "level": "Level 3",
+    "type": "Counting & Probability",
+    "solution": "Since the balls are indistinguishable, the only thing we need to keep track of is how many balls are in each box.  In this case, we can just list the cases: we put either 0, 1, 2, 3 or 4 balls into the first box, and the rest into the second box.  Thus there are $\\boxed{5}$ ways to arrange 4 indistinguishable balls into 2 distinguishable boxes."
+}

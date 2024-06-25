@@ -1,0 +1,6 @@
+{
+    "problem": "What is the sum of all two-digit positive integers whose squares end with the digits 01?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "If $n$ is a two-digit number, then we can write $n$ in the form $10a + b$, where $a$ and $b$ are digits.  Then the last digit of $n^2$ is the same as the last digit of $b^2$.\n\nThe last digit of $n^2$ is 1.  We know that $b$ is a digit from 0 to 9.  Checking these digits, we find that the units digit of $b^2$ is 1 only for $b = 1$ and $b = 9$.\n\nIf $b = 1$, then $n = 10a + 1$, so \\[n^2 = 100a^2 + 20a + 1.\\] The last two digits of $100a^2$ are 00, so we want the last two digits of $20a$ to be 00.  This occurs only for the digits $a = 0$ and $a = 5$, but we reject $a = 0$ because we want a two-digit number.  This leads to the solution $n = 51$.\n\nIf $b = 9$, then $n = 10a + 9$, so \\[n^2 = 100a^2 + 180a + 81 = 100a^2 + 100a + 80a + 81.\\] The last two digits of $100a^2 + 100a$ are 00, so we want the last two digits of $80a + 81$ to be 01.  In other words, we want the last digit of $8a + 8$ to be 0.  This only occurs for the digits $a = 4$ and $a = 9$.  This leads to the solutions $n = 49$ and $n = 99$.\n\nTherefore, the sum of all two-digit positive integers whose squares end with the digits 01 is $51 + 49 + 99 = \\boxed{199}$."
+}

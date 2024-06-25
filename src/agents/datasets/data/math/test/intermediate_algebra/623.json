@@ -1,0 +1,6 @@
+{
+    "problem": "If the domain of the function $\\log x^2$ is $x < a$ or $x > b$, for some $a$ and $b$, find $a + b$.",
+    "level": "Level 2",
+    "type": "Intermediate Algebra",
+    "solution": "In order for $\\log x^2$ to be defined, we must have $x^2 > 0$. This true for all $x$, except for $x = 0$. It follows that the domain of this function is $x < 0$ or $x > 0$. Therefore, our answer is $0 + 0 = \\boxed{0}$."
+}

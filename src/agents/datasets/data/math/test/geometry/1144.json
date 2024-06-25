@@ -1,0 +1,6 @@
+{
+    "problem": "A particular right pyramid has a square base, and each edge of the pyramid is four inches long. What is the volume of the pyramid in cubic inches? Express your answer as a decimal to the nearest hundredth.",
+    "level": "Level 5",
+    "type": "Geometry",
+    "solution": "The base has area $B=4\\cdot 4=16.$  The length of the segment connecting a vertex of the base to the center of the base equals $\\sqrt{2^2+2^2}=2\\sqrt{2}.$   This segment and the altitude of the pyramid form a right triangle with hypotenuse of length $4$.  Thus we have $h=\\sqrt{4^2-(2\\sqrt{2})^2}=\\sqrt{8}$.  By the volume formula for a pyramid, we have $V=Bh/3=16\\sqrt{8}/3\\approx \\boxed{15.08}$ cubic inches."
+}

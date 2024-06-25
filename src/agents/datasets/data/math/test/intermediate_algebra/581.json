@@ -1,0 +1,6 @@
+{
+    "problem": "Define a sequence recursively by $F_{0}=0,~F_{1}=1,$ and $F_{n}$ be the remainder when $F_{n-1}+F_{n-2}$ is divided by $3,$ for all $n\\geq 2.$ Thus the sequence starts $0,1,1,2,0,2,\\ldots$ What is $F_{2017}+F_{2018}+F_{2019}+F_{2020}+F_{2021}+F_{2022}+F_{2023}+F_{2024}?$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "The first few terms are as follows:\n\\begin{align*}\nF_0 &= 0, \\\\\nF_1 &= 1, \\\\\nF_2 &= 1, \\\\\nF_3 &= 2, \\\\\nF_4 &= 0, \\\\\nF_5 &= 2, \\\\\nF_6 &= 2, \\\\\nF_7 &= 1, \\\\\nF_8 &= 0, \\\\\nF_9 &= 1.\n\\end{align*}Since $F_8 = F_0$ and $F_9 = F_1,$ and each term depends only on the previous two terms, the sequence becomes periodic, with period 8.\n\nThen the sum of the eight consecutive terms is simply the sum of the eight terms in the period, which is\n\\[0 + 1 + 1 + 2 + 0 + 2 + 2 + 1 = \\boxed{9}.\\]"
+}

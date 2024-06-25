@@ -1,0 +1,6 @@
+{
+    "problem": "A positive two-digit number is even and is a multiple of 11. The product of its digits is a perfect cube. What is this two-digit number?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Let $N$ be the desired two-digit number. $N$ is divisible by 2 and by 11, and $(2,11)=1$, so $N$ is divisible by 22. Thus, $N\\in\\{22, 44, 66, 88\\}$. Only 88 is such that the product of its digits is a perfect cube ($8\\cdot8=64=4^3$), so $N=\\boxed{88}$."
+}

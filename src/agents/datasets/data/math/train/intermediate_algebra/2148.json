@@ -1,0 +1,6 @@
+{
+    "problem": "Let $a<b<c$ be three integers such that $a,b,c$ is an arithmetic progression and $a,c,b$ is a geometric progression. What is the smallest possible value of $c$?",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Since $a,$ $b,$ $c$ is an arithmetic sequence, $2b = a + c.$  Since $a,$ $c,$ $b$ is a geometric sequence, $c^2 = ab.$  From these equations, $c = 2b - a,$ and $(2b - a)^2 = ab.$  Then\n\\[4b^2 - 4ab + a^2 = ab,\\]so $a^2 - 5ab + 4b^2 = 0.$  This factors as $(a - b)(a - 4b) = 0.$  Since $a < b,$ $a = 4b.$  Furthermore, $b$ must be negative.\n\nAlso, $c = 2b - a = 2b - 4b = -2b,$ where $b$ is negative.  The smallest possible value of $c$ is then $\\boxed{2}.$"
+}

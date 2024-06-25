@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive integers less than $555$ are either a perfect cube or a perfect square?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "The largest perfect square less than $555$ is $23^2=529$. Therefore, there are $23$ perfect squares less than $555$.\nThe largest perfect cube less than $555$ is $8^3=512$. Therefore, there are $8$ perfect cubes less than $555$.\nHowever, we cannot simply add those two numbers together because there are numbers that are both a perfect cube and a perfect square. For a number to be both a perfect square and perfect cube, it needs to be a $2 \\cdot 3 =6$th power. The largest 6th power less than $555$ is $2^6=64$, so there are $2$ 6th powers less than $555$.\nTherefore, there are $23+8-2=\\boxed{29}$ integers that are either a perfect cube or perfect square."
+}

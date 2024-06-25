@@ -1,0 +1,6 @@
+{
+    "problem": "Find the integer $n,$ $-90 \\le n \\le 90,$ such that $\\sin n^\\circ = \\sin 604^\\circ.$",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "Since the sine function has period $360^\\circ,$\n\\[\\sin 604^\\circ = \\sin (604^\\circ - 2 \\cdot 360^\\circ) = \\sin (-116^\\circ).\\]Since sine is an odd function,\n\\[\\sin (-116^\\circ) = -\\sin 116^\\circ.\\]Since $\\sin x = \\sin (180^\\circ - x)$ for all angles $x,$\n\\[-\\sin 116^\\circ = \\sin (180^\\circ - 116^\\circ) = -\\sin 64^\\circ.\\]Then $-\\sin 64^\\circ = \\sin (-64^\\circ),$ so $n = \\boxed{-64}.$"
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Let $P$ be the product of the first $100$ positive odd integers. Find the largest integer $k$ such that $P$ is divisible by $3^k .$\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Note that the product of the first $100$ positive odd integers can be written as $1\\cdot 3\\cdot 5\\cdot 7\\cdots 195\\cdot 197\\cdot 199=\\frac{1\\cdot 2\\cdots200}{2\\cdot4\\cdots200} = \\frac{200!}{2^{100}\\cdot 100!}$\nHence, we seek the number of threes in $200!$ decreased by the number of threes in $100!.$\nThere are\n$\\left\\lfloor \\frac{200}{3}\\right\\rfloor+\\left\\lfloor\\frac{200}{9}\\right\\rfloor+\\left\\lfloor \\frac{200}{27}\\right\\rfloor+\\left\\lfloor\\frac{200}{81}\\right\\rfloor =66+22+7+2=97$\nthrees in $200!$ and\n$\\left\\lfloor \\frac{100}{3}\\right\\rfloor+\\left\\lfloor\\frac{100}{9}\\right\\rfloor+\\left\\lfloor \\frac{100}{27}\\right\\rfloor+\\left\\lfloor\\frac{100}{81}\\right\\rfloor=33+11+3+1=48$\nthrees in $100!$\nTherefore, we have a total of $97-48=\\boxed{49}$ threes."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Without using a calculator, compute $1002^2-502^2+298^2-202^2$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Using the difference of squares factorization individually on the first pair of terms and the second pair of terms, we have  \\begin{align*}\n1002^2&-502^2+298^2-202^2 \\\\\n&= (1002+502)(1002-502)+(298+202)(298-202) \\\\\n&= (1504)(500)+(500)(96)\\\\\n&= (500)(1504+96) \\\\\n&= (500)(1600) \\\\\n&= \\boxed{800000}.\n\\end{align*}"
+}

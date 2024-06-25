@@ -1,0 +1,6 @@
+{
+    "problem": "Find all solutions to\n\\[x^2 + 4x + 4x \\sqrt{x + 3} = 13.\\]Enter all the solutions, separated by commas.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "We can write the given equation as\n\\[x^2 + 4x \\sqrt{x + 3} + 4(x + 3) = 25.\\]Then\n\\[(x + 2 \\sqrt{x + 3})^2 = 25,\\]so $x + 2 \\sqrt{x + 3} = \\pm 5.$  Then\n\\[-x \\pm 5 = 2 \\sqrt{x + 3}.\\]Squaring both sides, we get $x^2 \\pm 10x + 25 = 4x + 12.$\n\nIn the $+$ case, we get\n\\[x^2 + 6x + 13 = 0,\\]which has no real solutions.\n\nIn the $-$ case, we get\n\\[x^2 - 14x + 13 = 0,\\]which leads to the solutions 1 and 13.  We check that only $\\boxed{1}$ works."
+}

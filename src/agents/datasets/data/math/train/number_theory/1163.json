@@ -1,0 +1,6 @@
+{
+    "problem": "Find the ones digit of $22^{22(11^{11})}$",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "First, observe that the units digit of $22^n$ is the same as the ones digit of $2^n$ for all positive integers $n$. Also, observe that the ones digits of $2^1, 2^2, 2^3, \\ldots$ are 2, 4, 8, 6, 2, 4, 8, 6, .... Since $22(11^{11})$ is even but not divisible by 4, it leaves a remainder of 2 when divided by 4. Therefore, the units digit of $22^{22(11)^{11}}$ is the second digit in the repeating block 2, 4, 8, 6, which is $\\boxed{4}$."
+}

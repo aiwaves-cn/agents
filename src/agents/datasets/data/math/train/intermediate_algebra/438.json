@@ -1,0 +1,6 @@
+{
+    "problem": "The polynomial $P(x) = x^3 + ax^2 + bx +c$ has the property that the mean of its zeros, the product of its zeros, and the sum of its coefficients are all equal. If the $y$-intercept of the graph of $y=\nP(x)$ is 2, what is $b$?",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "The sum and product of the zeros of $P(x)$ are $-a$ and $-c$, respectively. Therefore, $$-\\frac{a}{3}=-c=1+a+b+c.$$Since $c=P(0)$ is the $y$-intercept of $y=P(x)$, it follows that $c=2$. Thus $a=6$ and $b = \\boxed{-11}$."
+}

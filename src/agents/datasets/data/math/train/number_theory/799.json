@@ -1,0 +1,6 @@
+{
+    "problem": "Four consecutive positive integers have a product of 840. What is the largest of the four integers?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "We have $840=2^3\\cdot3\\cdot5\\cdot7$. From this prime factorization, it is clear that the product of four consecutive positive integers is $840=2^2\\cdot5\\cdot(2\\cdot3)\\cdot7=4\\cdot5\\cdot6\\cdot7$. The largest of the four integers is $\\boxed{7}$."
+}

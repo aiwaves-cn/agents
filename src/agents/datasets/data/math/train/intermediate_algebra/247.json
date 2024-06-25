@@ -1,0 +1,6 @@
+{
+    "problem": "Solve the inequality\n\\[\\left| \\frac{2x - 1}{x - 1} \\right| > 2.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "From the given inequality, either $\\frac{2x - 1}{x - 1} > 2$ or $\\frac{2x - 1}{x - 1} < -2.$\n\nThe inequality $\\frac{2x - 1}{x - 1} > 2$ becomes\n\\[\\frac{2x - 1}{x - 1} - 2 > 0,\\]or\n\\[\\frac{1}{x - 1} > 0.\\]This is satisfied when $x > 1.$\n\nThe inequality $\\frac{2x - 1}{x - 1} < -2$ becomes\n\\[\\frac{2x - 1}{x - 1} + 2 < 0,\\]or\n\\[\\frac{4x - 3}{x - 1} < 0.\\]If $x < \\frac{3}{4},$ then $4x - 3 < 0$ and $x - 1 < 0,$ so the inequality is not satisfied.\n\nIf $\\frac{3}{4} < x < 1,$ then $4x - 3 > 0$ and $x - 1 < 0,$ so the inequality is satisfied.\n\nIf $x > 1,$ then $4x - 3 > 0$ and $x - 1 > 0,$ so the inequality is not satisfied.\n\nThus, the solution is\n\\[x \\in \\boxed{\\left( \\frac{3}{4}, 1 \\right) \\cup (1, \\infty)}.\\]"
+}

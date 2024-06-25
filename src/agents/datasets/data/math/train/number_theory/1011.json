@@ -1,0 +1,6 @@
+{
+    "problem": "Let $n$ be a positive integer and $a,b$ be invertible integers modulo $n$ such that $a\\equiv b^{-1}\\pmod n$. What is the remainder when $ab$ is divided by $n$?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "Since $a\\equiv b^{-1}\\pmod n$, \\[ab\\equiv b^{-1}b\\equiv \\boxed{1}\\pmod n.\\]"
+}

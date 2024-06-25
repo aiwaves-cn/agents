@@ -1,0 +1,6 @@
+{
+    "problem": "If Greg rolls four fair six-sided dice, what is the probability that he rolls more 1's than 6's?",
+    "level": "Level 5",
+    "type": "Counting & Probability",
+    "solution": "We notice that the probability that he rolls more 1's than 6's must equal the probability that he rolls more 6's than 1's. So, we can find the probability that Greg rolls the same number of 1's and 6's, subtract it from 1, and divide by 2 to find the probability that Greg rolls more 1's than 6's. There are three ways Greg can roll the same number of 1's and 6's: he can roll two of each, one of each, or none of each. If he rolls two of each, there are $\\binom{4}{2}=6$ ways to choose which two dice roll the 1's. If he rolls one of each, there are $\\binom{4}{1}\\binom{3}{1}=12$ ways to choose which dice are the 6 and the 1, and for each of those ways there are $4\\cdot4=16$ ways to choose the values of the other dice. If Greg rolls no 1's or 6's, there are $4^4=256$ possible values for the dice. In total, there are $6+12\\cdot16+256=454$ ways Greg can roll the same number of 1's and 6's. There are $6^4=1296$ total ways the four dice can roll, so the probability that Greg rolls more 1's than 6's is $\\dfrac{1}{2} \\left(1-\\dfrac{454}{1296}\\right)=\\boxed{\\dfrac{421}{1296}}$."
+}

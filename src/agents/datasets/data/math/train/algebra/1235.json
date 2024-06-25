@@ -1,0 +1,6 @@
+{
+    "problem": "Find the greatest value of $t$ such that  \\[\\frac{t^2 - t -56}{t-8} = \\frac{3}{t+5}.\\]",
+    "level": "Level 4",
+    "type": "Algebra",
+    "solution": "We could cross-multiply, but that doesn't look like much fun.  Instead, we first factor the quadratic, which gives us  \\[\\frac{(t-8)(t+7)}{t-8} = \\frac{3}{t+5}.\\]Canceling the common factor on the left gives  \\[t+7 = \\frac{3}{t+5}.\\]Multiplying both sides by $t+5$ gives us $(t+7)(t+5) = 3$.   Expanding the product on the left gives $t^2 + 12t + 35 = 3$, and rearranging this equation gives $t^2 +12 t + 32 = 0$.  Factoring gives $(t+4)(t+8) = 0$, which has solutions $t=-4$ and $t=-8$.  The greatest of these solutions is $\\boxed{-4}$."
+}

@@ -1,0 +1,6 @@
+{
+    "problem": "Simplify $\\cot 10 + \\tan 5.$\n\nEnter your answer as a trigonometric function evaluated at an integer, such as \"sin 7\".",
+    "level": "Level 4",
+    "type": "Precalculus",
+    "solution": "We can write\n\\[\\cot 10 + \\tan 5 = \\frac{\\cos 10}{\\sin 10} + \\frac{\\sin 5}{\\cos 5} = \\frac{\\cos 10 \\cos 5 + \\sin 5 \\sin 10}{\\sin 10 \\cos 5}.\\]From the angle subtraction formula, the numerator is equal to $\\cos (10 - 5) = \\cos 5,$ so\n\\[\\frac{\\cos 10 \\cos 5 + \\sin 5 \\sin 10}{\\sin 10 \\cos 5} = \\frac{\\cos 5}{\\sin 10 \\cos 5} = \\boxed{\\csc 10}.\\]"
+}

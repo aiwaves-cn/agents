@@ -1,0 +1,6 @@
+{
+    "problem": "Suppose $f(x)$ is a rational function such that $3f\\left(\\dfrac{1}{x}\\right)+\\dfrac{2f(x)}{x}=x^2$ for $x\\neq 0$.  Find $f(-2)$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x = -2,$ we get\n\\[3 f \\left( -\\frac{1}{2} \\right) - f(-2) = 4.\\]Setting $x = -\\frac{1}{2},$ we get\n\\[3f(-2) - 4 f \\left( -\\frac{1}{2} \\right) = \\frac{1}{4}.\\]Solving these equations as a system in $f(-2)$ and $f \\left( -\\frac{1}{2} \\right),$ we find $f(-2) = \\boxed{\\frac{67}{20}}$ and $f \\left( -\\frac{1}{2} \\right) = \\frac{49}{20}.$"
+}

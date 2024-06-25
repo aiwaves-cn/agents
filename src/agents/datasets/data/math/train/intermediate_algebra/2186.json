@@ -1,0 +1,6 @@
+{
+    "problem": "Two of the roots of the equation \\[ax^3+bx^2+cx+d=0\\]are $3$ and $-2.$ Given that $a \\neq 0,$ compute $\\frac{b+c}{a}.$",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "Setting $x=3$ and $x=-2,$ we get the two equations \\[\\begin{aligned} 27a+9b+3c+d &= 0, \\\\ -8a+4b-2c+d &= 0. \\end{aligned}\\]Subtracting these two equations eliminates $d$ and gives \\[35a + 5b + 5c = 0.\\]Thus, $b+c=-7a,$ so $\\frac{b+c}{a} = \\boxed{-7}.$"
+}

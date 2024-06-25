@@ -1,0 +1,6 @@
+{
+    "problem": "Compute $81_9 - 72_9$.  Express your answer in base 9.",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "We can line up the numbers and subtract just as we do in base 10.  For example, when we borrow from the $9^1$s place, the digit 1 in the units place becomes $10$, while the digit in the $9^1$s place decreases by 1. Continuing in this way, we find  $$\\begin{array}{c@{}c@{\\;}c@{}c} & & \\cancelto{7}{8} & \\cancelto{10}{1}_9 \\\\ &- & 7 & 2_9 \\\\ \\cline{2-4} & & & 8_9, \\end{array} $$so the difference is $\\boxed{8_9}$."
+}

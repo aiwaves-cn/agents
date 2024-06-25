@@ -1,0 +1,6 @@
+{
+    "problem": "A bus comes by Jerry's bus stop every 20 minutes starting at exactly 5:13 a.m. If Jerry shows up at exactly 8:35 a.m., how many minutes will he have to wait for the next bus?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since 20 minutes evenly divides 60 minutes (which is an hour), the bus stops every 13 minutes, $13 + 20 = 33$ minutes, and $33 + 20 = 53$ minutes past the hour.  So after 8:35 AM, the next time that the bus stops is 8:53 AM, so Jerry must wait $53 - 35 = \\boxed{18}$ minutes."
+}

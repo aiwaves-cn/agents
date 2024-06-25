@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x$ and $y$ be real numbers such that $0 \\le x \\le 1$ and $0 \\le y \\le 1.$  Find the maximum value of\n\\[x^2 y - xy^2.\\]",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "We can factor the expression as\n\\[xy (x - y).\\]Since we are trying to find the maximum, we can assume that $x \\ge y.$  Then by AM-GM,\n\\[y(x - y) \\le \\frac{x^2}{4},\\]so\n\\[xy (x - y) \\le x \\cdot \\frac{x^2}{4} = \\frac{x^3}{4} \\le \\frac{1}{4}.\\]Equality occurs when $x = 1$ and $y = \\frac{1}{2},$ giving us a maximum value of $\\boxed{\\frac{1}{4}}.$"
+}

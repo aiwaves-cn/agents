@@ -1,0 +1,6 @@
+{
+    "problem": "Without looking at the labels, Adrien placed four CDs in four cases. What is the probability that exactly two of the CDs are in the wrong cases? Express your answer as a common fraction.",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "Given any pair of the 4 CDs, there is exactly one arrangement with only these two CDs in the correct cases, because each of the remaining two CDs must be in the case of the other one.  Therefore, there are $\\binom{4}{2}=6$ arrangements of the CDs for which exactly two of the CDs are in the correct case.  The probability that one of these 6 arrangements will be chosen from among the $4!=24$ equally likely arrangements is $\\dfrac{6}{24}=\\boxed{\\dfrac{1}{4}}$."
+}

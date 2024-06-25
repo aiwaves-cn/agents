@@ -1,0 +1,6 @@
+{
+    "problem": "Find a monic quartic polynomial, in $x,$ with rational coefficients such that $2+\\sqrt{2}$ and $1-\\sqrt{3}$ are roots of the polynomial.",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "If $2+\\sqrt{2}$ is the root of a polynomial with rational coefficients, then so is $2-\\sqrt{2}$. Their sum is $4$ and their product is $(2+\\sqrt{2})(2-\\sqrt{2}) = 4-2=2.$ Thus, the monic quadratic with roots $2+\\sqrt{2}$ and $2-\\sqrt{2}$ is $x^2-4x+2$.\n\nIf $1-\\sqrt{3}$ is the root of a polynomial with rational coefficients, then so is $1+\\sqrt{3}$. Their sum is $2$ and their product is $(1-\\sqrt{3})(1+\\sqrt{3}) = 1-3=-2.$ Thus, the monic quadratic with roots $1-\\sqrt{3}$ and $1+\\sqrt{3}$ is $x^2-2x-2$.\n\nThus, the monic quartic with roots $2+\\sqrt{2}$ and $1-\\sqrt{3}$ is\n$$(x^2-4x+2)(x^2-2x-2) = \\boxed{x^4-6x^3+8x^2+4x-4}.$$"
+}

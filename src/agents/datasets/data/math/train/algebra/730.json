@@ -1,0 +1,6 @@
+{
+    "problem": "Let $C = (3, 5)$ be the midpoint of $AB,$ where $A = (1, 8)$ and $B = (x, y).$ What is the value of $xy$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Clearly $C$ must be the midpoint of $AB$ if $C$ is the closest point to both $A$ and $B.$ Using the midpoint formula, we see that: $$\\left(\\frac{1 + x}{2}, \\frac{8 + y}{2}\\right) = \\left(3, 5\\right).$$Therefore, $\\frac{1 + x}{2} = 3$, so $x = 5.$ Meanwhile, $\\frac{8 + y}{2} = 5$, so $y = 2$. Our answer is $xy = \\boxed{10}.$"
+}

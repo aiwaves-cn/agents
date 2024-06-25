@@ -1,0 +1,6 @@
+{
+    "problem": "The geometric series $a+ar+ar^2+\\cdots$ has a sum of $12$, and the terms involving odd powers of $r$ have a sum of $5.$ What is $r$?",
+    "level": "Level 5",
+    "type": "Algebra",
+    "solution": "The geometric series involving the odd powers of $r$ is $ar+ar^3+ar^5+\\cdots = 5.$ Note that if we subtract this from the original series, the series involving the even powers of $r$ is  \\[12-5=7= a+ar^2+ar^4+\\cdots =\\frac{1}{r}(ar+ar^3+ar^5+\\cdots).\\]However, the series involving even powers of $r$ is just $\\frac{1}{r}$ times the series involving odd powers of $r,$ as shown above. Thus, substituting in our values for both those series, $7=\\frac{1}{r}(5) \\implies r=\\boxed{\\frac{5}{7}}.$"
+}

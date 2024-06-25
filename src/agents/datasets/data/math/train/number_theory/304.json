@@ -1,0 +1,6 @@
+{
+    "problem": "How many positive four-digit integers are divisible by $8$?",
+    "level": "Level 4",
+    "type": "Number Theory",
+    "solution": "An integer is divisible by $8$ if and only if the number formed from its last three digits is divisible by $8$.  Thus, the number of possibilities for the last three digits is equal to the number of three-digit multiples of $8$.  Since $1000 = 8\\cdot 125$, we find that there are $125$ such multiples.  Since the thousands digit of our four-digit integer must be nonzero, there are $9$ possibilities for the thousands digit.  Altogether, $9 \\cdot 125 = \\boxed{1125}$ four-digit integers are divisible by $8$."
+}

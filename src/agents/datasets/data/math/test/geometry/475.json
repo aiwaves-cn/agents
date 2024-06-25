@@ -1,0 +1,6 @@
+{
+    "problem": "A belt is drawn tightly around three circles of radius $10$ cm each, as shown. The length of the belt, in cm, can be written in the form $a + b\\pi$ for rational numbers $a$ and $b$. What is the value of $a + b$? [asy]\n\nsize(120); defaultpen(linewidth(0.8));\npicture p; real r = 3^.5/2;\npair A = expi(-pi/6); draw(p, circle(A, r)); draw(p, (A.x,A.y - r) -- (-A.x,A.y - r));\nadd(p); add(rotate(120)*p); add(rotate(240)*p);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "We break the belt into six pieces, three where the belt touches no circle and three where it does.\n\nFirst consider the portion of the belt that does not touch a circle.  Each segment is the length of two radii, or $20$ cm.  There are three such segments, or $60$ cm in total.\n\nNow consider the portion of the belt that does touch a circle.  Because there are three circles, the belt will touch each circle for $\\frac{1}{3}$ of its circumference.  Since it does this three times, this is the length of these segments combined, which is the circumference of a full circle, which is $20\\pi$ cm for a circle of radius $10$ cm.\n\nTherefore the length of the belt is $60 + 20\\pi$ cm.  From this we conclude that $a = 60$ and $b = 20,$ and so $a+b = \\boxed{80}.$"
+}

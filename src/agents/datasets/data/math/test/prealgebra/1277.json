@@ -1,0 +1,6 @@
+{
+    "problem": "Amaretta's birthday is July 27, and her brother Enzo's birthday is September 3. Every year, Amaretta and Enzo celebrate by eating cake every day from Amaretta's birthday through Enzo's birthday (including both birthdays). If they did this for the first time in 2008, how many cake-eating days will they have observed by the end of 2016?",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "There are $39$ cake-eating days each year: the last $5$ days of July, all $31$ days of August, and the first $3$ days of September.\n\nThere are $9$ years in the list $$2008,2009,2010,2011,2012,2013,2014,2015,2016.$$ Besides listing them out, we can also see this by subtracting $2007$ from each year, which gives us the list $1,2,3,4,5,6,7,8,9$ (which clearly has $9$ entries).\n\n$39$ cake-eating days each year for $9$ years make $39\\cdot 9 = \\boxed{351}$ days in total."
+}

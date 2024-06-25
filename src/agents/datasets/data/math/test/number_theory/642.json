@@ -1,0 +1,6 @@
+{
+    "problem": "Find the value of the base $b$ such that the following addition problem is correct: $$ \\begin{array}{@{}c@{\\;}c@{}c@{}c@{}c@{}c} & & 6 & 6 & 5 & 1_b \\\\ + & & & 1 & 1 & 5_b \\\\ \\cline{1-6} & 1 & 0 & 0 & 6 & 6_b\\\\ \\end{array} $$",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "In the two rightmost columns of addition, there is no carrying, but in the third, there is, so $6_b + 1_b = 10_b$ and $b = \\boxed{7}.$"
+}

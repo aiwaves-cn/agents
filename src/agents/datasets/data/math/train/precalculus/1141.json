@@ -1,0 +1,6 @@
+{
+    "problem": "Find the minimum value of $\\sin^4 x + \\cos^4 x.$",
+    "level": "Level 3",
+    "type": "Precalculus",
+    "solution": "We know that $\\sin^2 x + \\cos^2 x = 1.$  Squaring this equation, we get\n\\[\\sin^4 x + 2 \\sin^2 x \\cos^2 x + \\cos^4 x = 1,\\]so\n\\begin{align*}\n\\sin^4 x + \\cos^4 x &= 1 - 2 \\sin^2 x \\cos^2 x \\\\\n&= 1 - 2 (\\sin^2 x)(1 - \\sin^2 x) \\\\\n&= 2 \\sin^4 x - 2 \\sin^2 x + 1 \\\\\n&= 2 \\left( \\sin^2 x - \\frac{1}{2} \\right)^2 + \\frac{1}{2}.\n\\end{align*}This expression is minimized when $\\sin^2 x = \\frac{1}{2}$ (which occurs when $x = \\frac{\\pi}{4},$ for example), so the minimum value is $\\boxed{\\frac{1}{2}}.$"
+}

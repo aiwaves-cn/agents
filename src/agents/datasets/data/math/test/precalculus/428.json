@@ -1,0 +1,6 @@
+{
+    "problem": "A graph is defined in polar coordinates by $r = \\cos \\theta + \\frac{1}{2}.$  Find the smallest $x$-coordinate of any point on this graph.",
+    "level": "Level 5",
+    "type": "Precalculus",
+    "solution": "The $x$-coordinate of a point on this graph is given by\n\\begin{align*}\nx &= r \\cos \\theta \\\\\n&= \\left( \\cos \\theta + \\frac{1}{2} \\right) \\cos \\theta \\\\\n&= \\cos^2 \\theta + \\frac{1}{2} \\cos \\theta \\\\\n&= \\left( \\cos \\theta + \\frac{1}{4} \\right)^2 - \\frac{1}{16}.\n\\end{align*}The minimum value is then $\\boxed{-\\frac{1}{16}},$ which occurs when $\\cos \\theta = -\\frac{1}{4}.$"
+}

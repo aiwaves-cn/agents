@@ -1,0 +1,6 @@
+{
+    "problem": "What is the value of $$\\frac{1}{2}\\times4\\times\\frac{1}{8}\\times16\\times\\frac{1}{32}\\times64\\times\\frac{1}{128}\\times256\\times\\frac{1}{512}\\times1024?$$",
+    "level": "Level 1",
+    "type": "Intermediate Algebra",
+    "solution": "We pair up the terms in the product as follows: $$\n\\left(\\frac{1}{2} \\times 4\\right) \\times \\left(\\frac{1}{8} \\times 16\\right) \\times \\left(\\frac{1}{32} \\times 64\\right) \\times \\left(\\frac{1}{128} \\times 256\\right) \\times \\left(\\frac{1}{512} \\times 1024\\right).\n$$The value inside each pair of parentheses is $2,$ so the answer is $2 \\times 2 \\times 2 \\times 2 \\times 2 = \\boxed{32}.$"
+}

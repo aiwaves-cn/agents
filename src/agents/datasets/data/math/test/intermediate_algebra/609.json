@@ -1,0 +1,6 @@
+{
+    "problem": "Let $x,$ $y,$ and $z$ be real numbers such that $x^2 + y^2 + z^2 = 1.$  Find the maximum value of\n\\[3x + 4y + 12z.\\]",
+    "level": "Level 3",
+    "type": "Intermediate Algebra",
+    "solution": "By Cauchy-Schwarz,\n\\[(9 + 16 + 144)(x^2 + y^2 + z^2) \\ge (3x + 4y + 12z)^2.\\]Since $x^2 + y^2 + z^2 = 1,$ this gives us $(3x + 4y+ 12z)^2 \\le 169.$  Therefore, $3x + 4y + 12z \\le 13.$\n\nFor equality to occur, we must have\n\\[\\frac{x^2}{9} = \\frac{y^2}{16} = \\frac{z^2}{144}.\\]Since we want the maximum value of $3x + 4y + 12z,$ we can assume that $x,$ $y,$ and $z$ are all positive.  Hence,\n\\[\\frac{x}{3} = \\frac{y}{4} = \\frac{z}{12}.\\]Let $k = \\frac{x}{3} = \\frac{y}{4} = \\frac{z}{12}.$  Then $x = 3k,$ $y = 4k,$ and $z = 12k.$  Substituting into $x^2 + y^2 + z^2 = 1,$ we get\n\\[9k^2 + 16k^2 + 144k^2 = 1,\\]so $169k^2 = 1.$  Since $k$ is positive, $k = \\frac{1}{13}.$  Then $x = \\frac{3}{13},$ $y = \\frac{4}{13},$ and $z = \\frac{12}{13}.$\n\nThus, equality is possible, so the maximum value is $\\boxed{13}.$"
+}

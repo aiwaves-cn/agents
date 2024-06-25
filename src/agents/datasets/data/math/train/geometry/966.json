@@ -1,0 +1,6 @@
+{
+    "problem": "A spherical soap bubble lands on a horizontal wet surface and forms a hemisphere of the same volume. Given the radius of the hemisphere is $3\\sqrt[3]{2}$ cm, find the radius of the original bubble.",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "A sphere with radius $r$ has volume $\\frac43\\pi r^3$, so the volume of a hemisphere with radius $r$ is $\\frac23\\pi r^3$. Therefore if a hemisphere of radius $r$ has the same volume as a sphere of radius $R$, we get $\\frac43\\pi R^3=\\frac23 \\pi r^3$. Simplifying gives $R^3=\\frac12 r^3\\Rightarrow R=\\frac{1}{\\sqrt[3]{2}}r$. We know that $r=3\\sqrt[3]{2}$ and that $R$ is the quantity we want to solve for, so substituting in our value of $r$ gives $R=\\frac{1}{\\sqrt[3]{2}}\\cdot 3\\sqrt[3]{2}=\\boxed{3}.$"
+}

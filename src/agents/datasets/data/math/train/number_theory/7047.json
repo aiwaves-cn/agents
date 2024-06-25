@@ -1,0 +1,6 @@
+{
+    "problem": "The decimal representation of $m/n,$ where $m$ and $n$ are relatively prime positive integers and $m < n,$ contains the digits $2, 5$, and $1$ consecutively, and in that order. Find the smallest value of $n$ for which this is possible.\n",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "To find the smallest value of $n$, we consider when the first three digits after the decimal point are $0.251\\ldots$.\nOtherwise, suppose the number is in the form of $\\frac{m}{n} = 0.X251 \\ldots$, where $X$ is a string of $k$ digits and $n$ is small as possible. Then $10^k \\cdot \\frac{m}{n} - X = \\frac{10^k m - nX}{n} = 0.251 \\ldots$. Since $10^k m - nX$ is an integer and $\\frac{10^k m - nX}{n}$ is a fraction between $0$ and $1$, we can rewrite this as $\\frac{10^k m - nX}{n} = \\frac{p}{q}$, where $q \\le n$. Then the fraction $\\frac pq = 0.251 \\ldots$ suffices.\nThus we have $\\frac{m}{n} = 0.251\\ldots$, or\n$\\frac{251}{1000} \\le \\frac{m}{n} < \\frac{252}{1000} \\Longleftrightarrow 251n \\le 1000m < 252n \\Longleftrightarrow n \\le 250(4m-n) < 2n.$\nAs $4m > n$, we know that the minimum value of $4m - n$ is $1$; hence we need $250 < 2n \\Longrightarrow 125 < n$. Since $4m - n = 1$, we need $n + 1$ to be divisible by $4$, and this first occurs when $n = \\boxed{127}$."
+}

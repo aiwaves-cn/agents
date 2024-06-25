@@ -1,0 +1,6 @@
+{
+    "problem": "Two $4\\times 4$ squares intersect at right angles, bisecting their intersecting sides, as shown. The circle's diameter is the segment between the two points of intersection. What is the area of the shaded region created by removing the circle from the squares? [asy]\n/* AMC8 2004 #25 Problem */\npath square=((0,0)--(4,0)--(4,4)--(0,4)--cycle);\nfilldraw(shift(-sqrt(8)/2.0)*rotate(45)*square, lightgrey, black);\nfilldraw(shift(sqrt(8)/2,0)*rotate(45)*square, lightgrey, black);\nfilldraw(circle((0,sqrt(8)), sqrt(8)/2), white, black);\n[/asy]",
+    "level": "Level 4",
+    "type": "Geometry",
+    "solution": "The overlap of the two squares is a smaller square with side length 2, so the area of the region covered by the squares is $2(4\\times 4)-(2\\times\n2)=32-4=28$. The diameter of the circle has length $\\sqrt{2^2+2^2}=\\sqrt{8}$, the length of the diagonal of the smaller square. The shaded area created by removing the circle from the squares is $28-\\pi\\left(\\frac{\\sqrt{8}}{2}\\right)^2=\\boxed{28-2\\pi}$."
+}

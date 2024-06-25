@@ -1,0 +1,6 @@
+{
+    "problem": "Bryan has some 3 cent stamps and some 4 cent stamps. What is the least number of stamps he can combine so the value of the stamps is 33 cents?",
+    "level": "Level 1",
+    "type": "Number Theory",
+    "solution": "Let $c$ and $f$ be the number of 3 cent stamps and 4 cent stamps that Bryan can use, respectively. We have $3c+4f=33$. To minimize $c+f$, we must minimize the number of 3 cent stamps used. Since $f$ must be an integer, the smallest possible value for $c$ is $c=3$, in which case $4f=33-3c=33-3\\times3=24\\Rightarrow f=6$. The least value is therefore $c+f=3+6=\\boxed{9}$ stamps."
+}

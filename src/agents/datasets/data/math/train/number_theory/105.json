@@ -1,0 +1,6 @@
+{
+    "problem": "It is currently $3\\!:\\!00\\!:\\!00 \\text{ p.m.}$ What time will it be in $6666$ seconds?  (Enter the time in the format \"HH:MM:SS\", without including \"am\" or \"pm\".)",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "There are $60$ seconds in a minute. When $6666$ is divided by $60$, you get $111$ with a remainder of $6$ seconds. Therefore, $6666$ seconds is $111$ minutes and $6$ seconds. There are $60$ minutes in an hour. When you divide $111$ by $60$, you get $1$ with a remainder of $51$. Thus, $6666$ seconds is equivalent to $1$ hour $51$ minutes and $6$ seconds. Therefore, the time in $6666$ seconds is $\\boxed{4\\!:\\!51\\!:\\!06 \\text{ p.m.}}$"
+}

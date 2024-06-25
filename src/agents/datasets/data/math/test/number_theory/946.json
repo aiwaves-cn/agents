@@ -1,0 +1,6 @@
+{
+    "problem": "What is the hundreds digit in the following product: $5 \\times 6 \\times 7 \\times 8 \\times 9 \\times 10$ ?",
+    "level": "Level 3",
+    "type": "Number Theory",
+    "solution": "The hundreds digit in the given expression is the same as the tens digit in the expression $5\\times6\\times7\\times8\\times9$, which is the same as the ones digit in the expression $6\\times7\\times4\\times9$ (we divide out a 10 each time). $6\\times7=42$ has a ones digit of 2 and $4\\times9=36$ has a ones digit of 6, and $2\\times6=12$, so the entire product has a ones digit of $\\boxed{2}$."
+}

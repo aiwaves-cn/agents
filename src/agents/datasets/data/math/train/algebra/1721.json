@@ -1,0 +1,6 @@
+{
+    "problem": "The equation $x^2-4x+7=19$ has two solutions, $a$ and $b$, with $a\\geq b$. What is the value of $2a+b$?",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "Subtracting 3 from both sides of the equation, we have $x^2 - 4x + 4 = 16$, which indicates that the fastest way to solve this problem would be to complete the square. Thus, we have $(x-2)^2=16$, or $x-2=\\pm4$, or $x=6$ and $x=-2$. Since $a\\geq b$, we now know that $a=6$ and $b=-2$, so $2a+b=2(6)-2=\\boxed{10}$."
+}

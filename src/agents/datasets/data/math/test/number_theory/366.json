@@ -1,0 +1,6 @@
+{
+    "problem": "The number 64 is both a perfect cube and a perfect square, since $4^3 = 64$ and $8^2 = 64$. What is the next larger number that is both a perfect cube and a perfect square?",
+    "level": "Level 2",
+    "type": "Number Theory",
+    "solution": "Since 2 and 3 are relatively prime, a number is both a perfect square and a perfect cube if and only if it is a perfect sixth power. $2^6=64$ and the next such number is $3^6=\\boxed{729}$."
+}

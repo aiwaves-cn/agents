@@ -1,0 +1,6 @@
+{
+    "problem": "A $90^\\circ$ rotation around the origin in the counter-clockwise direction is applied to $7 + 2i.$  What is the resulting complex number?",
+    "level": "Level 2",
+    "type": "Precalculus",
+    "solution": "A $90^\\circ$ rotation around the origin in the counter-clockwise direction corresponds to multiplication by $\\operatorname{cis} 90^\\circ = i.$\n\n[asy]\nunitsize(0.5 cm);\n\ndraw((-3,0)--(8,0));\ndraw((0,-1)--(0,8));\ndraw((0,0)--(7,2),dashed);\ndraw((0,0)--(-2,7),dashed);\n\ndot(\"$7 + 2i$\", (7,2), E);\ndot(\"$-2 + 7i$\", (-2,7), N);\n[/asy]\n\nThus, the image of $7 + 2i$ is $i(7 + 2i) = \\boxed{-2 + 7i}.$"
+}

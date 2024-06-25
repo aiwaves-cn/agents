@@ -1,0 +1,6 @@
+{
+    "problem": "Jar A has exactly four red buttons and eight blue buttons.  Carla then removes the same number of red buttons as blue buttons from Jar A and places them in an empty Jar B.  Jar A now has $\\frac{2}{3}$ of its original number of buttons.  If Carla were now to randomly choose a button from Jar A and a button from Jar B, what is the probability that the two chosen buttons will both be red?  Express your answer as a common fraction.",
+    "level": "Level 5",
+    "type": "Prealgebra",
+    "solution": "Two-thirds of Jar A's original $4+8=12$ buttons is 8 buttons.  Therefore, four buttons were removed from Jar A: two red buttons and two blue buttons.  So the probability that the button drawn from Jar A is red is $\\frac{2}{8}$ and the probability that the button drawn from Jar B is red is $\\frac{2}{4}$.  Therefore, the probability that both buttons are red is $\\dfrac{2}{8}\\cdot\\dfrac{2}{4}=\\boxed{\\frac{1}{8}}$."
+}

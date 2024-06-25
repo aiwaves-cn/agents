@@ -1,0 +1,6 @@
+{
+    "problem": "How many rectangles are in the array below?\n\n[asy]\nfor(int i = 0; i<3; ++i)\n{\n\nfor(int j = 0; j<3; ++j)\n\n{\n\ndraw((3i,j)--(3i+3,j)--(3i+3,j+1)--(3i,j+1)--(3i,j)--cycle,linewidth(2));\n\n}\n}\n[/asy]",
+    "level": "Level 4",
+    "type": "Counting & Probability",
+    "solution": "A rectangle can be created by choosing any two different vertical lines and any two different horizontal lines, with no regard to the order that the two vertical or two horizontal lines were chosen. There are $\\binom{4}{2}=\\frac{4!}{2!2!}=6$ ways to choose two vertical lines and $\\binom{4}{2}=6$ ways to choose two horizontal lines, for a total of $6\\cdot6=\\boxed{36}$ rectangles."
+}

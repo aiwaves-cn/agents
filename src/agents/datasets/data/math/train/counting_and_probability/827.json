@@ -1,0 +1,6 @@
+{
+    "problem": "A professor is assigning grades to a class of 10 students. As a very kind professor, he only gives out A's, B's, and C's. How many ways can the professor assign grades to all his students?",
+    "level": "Level 2",
+    "type": "Counting & Probability",
+    "solution": "For each student, the professor has 3 choices, so altogether, the professor has $3^{10} = \\boxed{59049}$ ways to assign the grades."
+}

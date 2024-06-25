@@ -1,0 +1,6 @@
+{
+    "problem": "Let $f(x)=x^4+14x^3+52x^2+56x+16$.  Let $z_1,z_2,z_3,z_4$ be the four roots of $f$.  Find the smallest possible value of $|z_{a}z_{b}+z_{c}z_{d}|$ where $\\{a,b,c,d\\}=\\{1,2,3,4\\}$.",
+    "level": "Level 4",
+    "type": "Intermediate Algebra",
+    "solution": "Note that\n\\[\\frac{1}{16}f(2x)=x^4+7x^3+13x^2+7x+1.\\]Because the coefficients of this polynomial are symmetric, if $r$ is a root of $f(x)$ then $\\frac{4}{r}$ is as well. Further, $f(-1)=-1$ and $f(-2)=16$ so $f(x)$ has two distinct roots on $(-2,0)$ and two more roots on $(-\\infty,-2)$. Now, if $\\sigma$ is a permutation of $\\{1,2,3,4\\}$:\n\\[|z_{\\sigma(1)} z_{\\sigma(2)} + z_{\\sigma(3)} z_{\\sigma(4)}| \\le \\frac{1}{2} (z_{\\sigma(1)} z_{\\sigma(2)} + z_{\\sigma(3)} z_{\\sigma(4)} + z_{\\sigma(4)} z_{\\sigma(3)} + z_{\\sigma(2)}z_{\\sigma(1)}).\\]Let the roots be ordered $z_1 \\le z_2 \\le z_3 \\le z_4$, then by rearrangement the last expression is at least:\n\\[\\frac{1}{2}(z_1z_4+z_2z_3+z_3z_2+z_4z_1).\\]Since the roots come in pairs $z_1z_4=z_2z_3=4$, our expression is minimized when $\\sigma(1)=1,\\sigma(2)=4,\\sigma(3)=3,\\sigma(4)=2$ and its minimum value is $\\boxed{8}$."
+}

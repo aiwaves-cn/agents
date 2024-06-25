@@ -1,0 +1,6 @@
+{
+    "problem": "Express $5^5\\div5^4-5^3+5^2\\cdot5^1$ as an integer.",
+    "level": "Level 2",
+    "type": "Prealgebra",
+    "solution": "Recall that $a^m\\div a^n=a^{m-n}$ for positive integers $m>n$ and $a^m\\cdot a^n=a^{m+n}$. Now we can write $5^5\\div5^4-5^3+5^2\\cdot5^1$ as $5^1-5^3+5^3$. Using the definition of subtraction and the associative property of addition, we get \\begin{align*}\n5^1-5^3+5^3&=5^1+-5^3+5^3\\\\\n&=5^1+(-5^3+5^3)\\\\\n&=5^1+0\\\\\n&=\\boxed{5}.\n\\end{align*}"
+}

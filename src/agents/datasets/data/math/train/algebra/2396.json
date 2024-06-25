@@ -1,0 +1,6 @@
+{
+    "problem": "Find the least integer value of $x$ for which $2|x| + 7 < 17$.",
+    "level": "Level 3",
+    "type": "Algebra",
+    "solution": "First, solve the inequality so that only the absolute value quantity is on the left and the constant value is on the right.\n\n\\begin{align*}\n2|x| + 7&< 17\\\\\n2|x|&<10\\\\\n|x|&<5\n\\end{align*}To solve the inequality which has an absolute value in it, we must turn this into two different inequalities, one as normal, one with a reversed sign and opposite resulting value.  Both will have the absolute value removed.\n\n\\begin{align*}\nx &< 5 \\\\\nx &> -5\n\\end{align*}Since we need the least integer value of $x$, and $x$ has to be $\\textbf{greater than }$ -5, the next smallest integer is $\\boxed{-4}$."
+}

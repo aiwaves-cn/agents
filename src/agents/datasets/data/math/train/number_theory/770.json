@@ -1,0 +1,6 @@
+{
+    "problem": "When the least common multiple of two positive integers is divided by their greatest common divisor, the result is 33. If one integer is 45, what is the smallest possible value of the other integer?",
+    "level": "Level 5",
+    "type": "Number Theory",
+    "solution": "Let $n$ be the other integer, so \\[\\frac{\\mathop{\\text{lcm}}[45,n]}{\\gcd(45,n)} = 33.\\]We know that $\\gcd(m,n) \\cdot \\mathop{\\text{lcm}}[m,n] = mn$ for all positive integers $m$ and $n$, so \\[\\gcd(45,n) \\cdot \\mathop{\\text{lcm}}[45,n] = 45n.\\]Dividing this equation by the previous equation, we get \\[[\\gcd(45,n)]^2 = \\frac{45n}{33} = \\frac{15n}{11},\\]so $11 [\\gcd(45,n)]^2 = 15n$.\n\nSince 11 divides the left-hand side, 11 also divides the right-hand side, which means $n$ is divisible by 11.  Also, 15 divides the right-hand side, so 15 divides the left-hand side, which means $\\gcd(45,n)$ is divisible by 15.  Since $45 = 3 \\cdot 15$, $n$ is divisible by 15.  Hence, $n$ must be divisible by $11 \\cdot 15 = 165$.\n\nNote that $\\gcd(45,165) = 15$ and $\\mathop{\\text{lcm}}[45,165] = 495$, and $495/15 = 33$, so $n=165$ is achievable and the smallest possible value of $n$ is $\\boxed{165}$."
+}
