@@ -28,7 +28,9 @@ def check_variables(s):
     # Next, find content within braces that are not wrapped in double braces in the filtered string
     pattern_find_braces = r"(?<!{)\{([^{}]+)\}(?!})"
     matches = re.findall(pattern_find_braces, filtered_string)
-    valid_variables = {var for var in matches if var and re.match(r"^[a-zA-Z_][a-zA-Z0-9_]*$", var)}
+    valid_variables = {
+        var for var in matches if var and re.match(r"^[a-zA-Z_][a-zA-Z0-9_]*$", var)
+    }
     return valid_variables
 
 
@@ -56,7 +58,9 @@ def get_config_needed_variables(config, specific_key_list=None):
     if specific_key_list:
         prompt_names = specific_key_list
     else:
-        assert "order" in config.keys(), f"The prompt must have an order field, config is{config}"
+        assert (
+            "order" in config.keys()
+        ), f"The prompt must have an order field, config is{config}"
         prompt_names = config["order"]
 
     # Get the variables that are required in prompts
@@ -126,7 +130,10 @@ def formulate_prompt(config, data_dict):
     # Check for missing variables in data_dict and validate variable names
     all_variable = get_config_needed_variables(config)
     for var in all_variable:
-        if var not in data_dict.keys() and var not in data_dict.get("loop_data", {})[0].keys():
+        if (
+            var not in data_dict.keys()
+            and var not in data_dict.get("loop_data", {})[0].keys()
+        ):
             print(f"\033[31m prompt中需要的变量{var} 没有在data_dict中找到\033[0m")
             data_dict[var] = ""
 
@@ -143,7 +150,9 @@ def formulate_prompt(config, data_dict):
     return res_prompt
 
 
-def formulate_prompt_for_prompt_optim(prompt_config, case_list: list[Case], state_idx, needed_optim_component):
+def formulate_prompt_for_prompt_optim(
+    prompt_config, case_list: list[Case], state_idx, needed_optim_component
+):
     """
     Formulate a prompt for prompt optimization.
 
@@ -162,28 +171,40 @@ def formulate_prompt_for_prompt_optim(prompt_config, case_list: list[Case], stat
     # Get prompt names and the required variable names
     all_prompt_names = prompt_config["order"]
     loop_prompt_names = prompt_config.get("loop", [])
-    not_loop_prompt_names = [item for item in all_prompt_names if item not in loop_prompt_names]
+    not_loop_prompt_names = [
+        item for item in all_prompt_names if item not in loop_prompt_names
+    ]
 
-    loop_needed_variable = get_config_needed_variables(prompt_config, specific_key_list=loop_prompt_names)
-    not_loop_needed_variable = get_config_needed_variables(prompt_config, specific_key_list=not_loop_prompt_names)
+    loop_needed_variable = get_config_needed_variables(
+        prompt_config, specific_key_list=loop_prompt_names
+    )
+    not_loop_needed_variable = get_config_needed_variables(
+        prompt_config, specific_key_list=not_loop_prompt_names
+    )
 
     # Inner loop at the case level, gathering data for each case corresponding to loop variables
     loop_data_list = []
     first_case = case_list[0]
-    first_case_action_agent_role = first_case.trajectory.states[state_idx].action.agent_role
+    first_case_action_agent_role = first_case.trajectory.states[
+        state_idx
+    ].action.agent_role
     for case_index, current_case in enumerate(case_list):
         # Ensure that the number of states and roles match across cases
         current_state = (
             current_case.trajectory.states[state_idx]
-            if state_idx < len(current_case.trajectory.states) else
-            current_case.trajectory.states[-1]
+            if state_idx < len(current_case.trajectory.states)
+            else current_case.trajectory.states[-1]
         )
 
         # If roles differ, find a matching role in adjacent states
         if current_state.action.agent_role != first_case_action_agent_role:
-            print(f"Warning: case {case_index} and case 0 have different role at state {state_idx}")
+            print(
+                f"Warning: case {case_index} and case 0 have different role at state {state_idx}"
+            )
             offset = max(-2, -1 * state_idx)
-            while offset <= 2 and state_idx + offset < len(current_case.trajectory.states):
+            while offset <= 2 and state_idx + offset < len(
+                current_case.trajectory.states
+            ):
                 current_state = current_case.trajectory.states[state_idx + offset]
                 offset += 1
                 if current_state.action.agent_role == first_case_action_agent_role:
@@ -192,10 +213,13 @@ def formulate_prompt_for_prompt_optim(prompt_config, case_list: list[Case], stat
         # Skip if no matching role state is found
         if current_state.action.agent_role != first_case_action_agent_role:
             print(
-                f"Error: case {case_index} and case 0 have different role at state {state_idx}, cannot find same role state.")
+                f"Error: case {case_index} and case 0 have different role at state {state_idx}, cannot find same role state."
+            )
             continue
 
-        current_state_loop_data = current_state.get_dict_for_trainer(loop_needed_variable)
+        current_state_loop_data = current_state.get_dict_for_trainer(
+            loop_needed_variable
+        )
         current_state_loop_data["index"] = case_index + 1
         loop_data_list.append(current_state_loop_data)
 
@@ -203,13 +227,17 @@ def formulate_prompt_for_prompt_optim(prompt_config, case_list: list[Case], stat
     first_state = case_list[0].trajectory.states[state_idx]
     all_data = first_state.get_dict_for_trainer(not_loop_needed_variable)
     all_data["loop_data"] = loop_data_list
-    all_data["needed_optim_component"] = needed_optim_component[:]
-    all_data["needed_optim_component"].extend(first_state.action.used_prompt_templates.keys())
+    all_data["needed_optim_component"] = (
+        needed_optim_component[:] if needed_optim_component else []
+    )
+    all_data["needed_optim_component"].extend(
+        first_state.action.used_prompt_templates.keys()
+    )
     return formulate_prompt(prompt_config, all_data)
 
 
 def formulate_prompt_for_node_backward(
-        prompt_config, case: Case, node: Node, requirement_for_previous
+    prompt_config, case: Case, node: Node, requirement_for_previous
 ):
     """
     Formulate a prompt for node backward optimization.
@@ -264,9 +292,10 @@ def formulate_prompt_for_node_optim(prompt_config, node: Node, case_list: list[C
     suggestion_idx = 1
     for case in case_list:
         for state in case.trajectory.states:
-            if (state.node.node_name == node_name
-                    and state.node_backward is not None
-                    and state.node_backward.suggestion
+            if (
+                state.node.node_name == node_name
+                and state.node_backward is not None
+                and state.node_backward.suggestion
             ):
                 # The suggestion is gathered for the current node.
                 # In a single case, a node may be called multiple times, contributing multiple suggestions.
@@ -283,7 +312,7 @@ def formulate_prompt_for_node_optim(prompt_config, node: Node, case_list: list[C
 
 
 def formulate_prompt_for_sop_optim(
-        prompt_config, sop: SOP, case_list: list[Case], consider_case_loop=True
+    prompt_config, sop: SOP, case_list: list[Case], consider_case_loop=True
 ):
     """
     Formulate a prompt for SOP optimization.
@@ -322,7 +351,8 @@ def formulate_prompt_for_sop_optim(
         # This applies when sop is in backward mode, with only one case, hence no need to wrap in a loop
         if len(case_list) > 1:
             print(
-                "Warning: case_list length is greater than 1, but not considered as a loop variable. Only the first case information will be extracted.")
+                "Warning: case_list length is greater than 1, but not considered as a loop variable. Only the first case information will be extracted."
+            )
         case = case_list[0]
         case_data_dict = case.get_dict_for_sop_optimizer(all_needed_variable_name)
         if "idx" in all_needed_variable_name or "index" in all_needed_variable_name:

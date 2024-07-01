@@ -16,7 +16,12 @@
             "begin_role": "Boss",
             "node_description": "Imagine a scenario where the boss has presented a requirement. The architect is tasked with proposing a framework based on this requirement. The leader's role is to provide feedback on the architect's proposal, and another architect will finalize the framework based on the leader's comments.",
             "node_prompt_templates": {
-                "target": "The target program is: <target>{prompt}</target>"
+                "target": "The target program is: <target>{prompt}</target>",
+                "style": "You need to follow the output style: {style}.\n",
+                "task": "The task you need to execute is: {task}.\n",
+                "rule": "The rule you need to follow is: {rule}.\n",
+                "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                "last": "{last}"
             },
             "node_prompt_paddings": {
                 "Boss": {
@@ -151,7 +156,12 @@
             "begin_role": "Boss",
             "node_description": "In this scenario, the boss has provided a requirement. The developer's task is to write code based on the architecture proposed by the architect. The leader evaluates the written code for elegance, readability, and functionality, providing feedback. Another developer makes necessary modifications to the code.",
             "node_prompt_templates": {
-                "target": "The target program is: <target>{prompt}</target>"
+                "target": "The target program is: <target>{prompt}</target>",
+                "style": "You need to follow the output style: {style}.\n",
+                "task": "The task you need to execute is: {task}.\n",
+                "rule": "The rule you need to follow is: {rule}.\n",
+                "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                "last": "{last}"
             },
             "node_prompt_paddings": {
                 "Boss": {
@@ -305,7 +315,12 @@
             "node_description": "In this scenario, the boss has provided a requirement. The debugger simulates a compiler to determine whether the code is runnable and provides feedback. The developer writes code based on the debugger's feedback. The leader evaluates whether the final code meets the boss's requirements and provides feedback for further modifications. The coder writes the final code to a file.",
             "node_prompt_templates": {
                 "target": "The target program is: <target>{prompt}</target>",
-                "finalize code": "Please consider all the messages above and integrate the final project code. Ensures the code is clean, well-formatted. {extract}"
+                "finalize code": "Please consider all the messages above and integrate the final project code. Ensures the code is clean, well-formatted. {extract}",
+                "style": "You need to follow the output style: {style}.\n",
+                "task": "The task you need to execute is: {task}.\n",
+                "rule": "The rule you need to follow is: {rule}.\n",
+                "demonstrations": "Here are the demonstrations you can refer to:\n{demonstrations}.\n",
+                "last": "{last}"
             },
             "node_prompt_paddings": {
                 "Boss": {
@@ -480,7 +495,7 @@
                         "value": {
                             "extract": "Please extract the final project code and put them between <result> and </result>."
                         }
-                    
+
                     }
                 }
             }

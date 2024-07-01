@@ -15,13 +15,16 @@
 # limitations under the License.
 import os
 import time
-import litellm
-import backoff
 from abc import abstractmethod
 from typing import Union
 
-from ..utils.files import save_logs
+import litellm
+from dotenv import load_dotenv
+
 from ..utils.config import Config
+from ..utils.files import save_logs
+
+load_dotenv()
 
 WAIT_TIME = 20
 
@@ -30,10 +33,14 @@ WAIT_TIME = 20
 def completion_with_backoff(**kwargs):
     litellm.api_key = os.environ["OPENAI_API_KEY"]
     litellm.api_base = os.environ.get("OPENAI_BASE_URL")
+
+    if os.environ.get("OPENAI_API_KEY") is None:
+        raise ValueError("OPENAI_API_KEY is not set")
+
     while True:
         try:
             return litellm.completion(**kwargs)
-        except litellm.OpenAIError as e:
+        except litellm.OpenAIError:
             print(f"Please wait {WAIT_TIME} seconds and resend later ...")
             time.sleep(WAIT_TIME)
 
