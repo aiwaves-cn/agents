@@ -22,26 +22,26 @@
             "log_path": "logs/trainer_god"
         },
         "meta_prompt": {
-            "loss_without_score": {
-                "order": [
-                    "loss_with_ground_truth"
-                ],
-                "extract_key": [
-                    "score",
-                    "requirement_for_previous"
-                ],
-                "loss_with_ground_truth": "You are a fine-tuner of a large model. I will provide you with some output results from the model and the expected correct results. You need to evaluate these data and provide a score out of 10, please wrap the score using <score></score>. Additionally, please provide some suggestions for modifying the model's output, using <requirement_for_previous></requirement_for_previous> to wrap your suggestions.\n\nHere is the model's output:\n<result>{result}</result>;\n\nThe expected result is:\n<ground_truth>{ground_truth}</ground_truth>\n\nPlease note:\n\nEnsure that the output is wrapped with <score></score> and <requirement_for_previous></requirement_for_previous> respectively.\nThe output should be as consistent as possible with the expected result while being correct. For example, if the expected result is “BUST”, and the model's output is “The women's lifestyle magazine is 'BUST' magazine.”, even though the answer is correct, you should advise the model to be more concise.\nThe standard for a score of 10 is that the model's output is exactly the same as the expected result in a case-insensitive manner, and without any unnecessary content. Even if the model's output is semantically correct, if it includes superfluous content, points should be deducted.",
-                "loss_no_gt": "我会给你一些模型的输出结果，你需要对这些数据进行评分，并给出一个10分制的评分，输出时评分请使用<score></score>包裹，此外还请给出一些队模型输出结果的修改建议，请使用<requirement_for_previous></requirement_for_previous>包裹。\n\n如下是你需要处理的数据: {result}。",
-                "loss_no_gt_no_result": "我会给你一些交互记录，你需要对这些记录进行评分，并给出一个10分制的评分，输出时评分请使用<score></score>包裹，此外还请给出一些对模型输出结果的修改建议，请使用<requirement_for_previous></requirement_for_previous>包裹。交互信息如下：{history}。"
-            },
             "loss": {
                 "order": [
                     "loss_with_ground_truth_and_score"
                 ],
                 "extract_key": [
+                    "score",
                     "requirement_for_previous"
                 ],
-                "loss_with_ground_truth_and_score": "You are a large language model fine-tuner. I will provide you with a model's output and the expected correct result. You need to evaluate it and suggest modifications to the model's output. Please use `<requirement_for_previous></requirement_for_previous>` to enclose your feedback.\n\nBelow is the model's output:\n<result>{result}</result>\n\nThe expected result is:\n<ground_truth>{ground_truth}</ground_truth>\n\nHere is the evaluation score for the model. Your goal is to optimize this score:\n<score>{score}</score>\n\nThe relevant information about this score is as follows:\n<evaluation_info>{score_info}</evaluation_info>\n\nNote:\n1. Ensure that `<requirement_for_previous></requirement_for_previous>` exists and appears once.\n2. If the model's output is satisfactory, you can output <requirement_for_previous>The output is satisfactory, no additional requirements</requirement_for_previous>.\n3. The output should be as close to the expected result as possible while ensuring correctness. For example, if the expected result is \"BUST\" and the model's output is \"The women's lifestyle magazine is 'BUST' magazine.\", even though this answer is correct, you should remind the model to be concise."
+                "loss_with_ground_truth_and_score": "You are a fine-tuner of a large model. I will provide you with some output results from the model and the expected correct results. You need to evaluate these data and provide a score out of 10, please wrap the score using <score></score>. Additionally, please provide some suggestions for modifying the model's output, using <requirement_for_previous></requirement_for_previous> to wrap your suggestions.\n\nHere is the model's output:\n<result>{result}</result>;\n\nThe expected result is:\n<ground_truth>{ground_truth}</ground_truth>\n\nPlease note:\n\nEnsure that the output is wrapped with <score></score> and <requirement_for_previous></requirement_for_previous> respectively.\nThe output should be as consistent as possible with the expected result while being correct. For example, if the expected result is “BUST”, and the model's output is “The women's lifestyle magazine is 'BUST' magazine.”, even though the answer is correct, you should advise the model to be more concise.\nThe standard for a score of 10 is that the model's output is exactly the same as the expected result in a case-insensitive manner, and without any unnecessary content. Even if the model's output is semantically correct, if it includes superfluous content, points should be deducted.",
+                "loss_no_gt": "我会给你一些模型的输出结果，你需要对这些数据进行评分，并给出一个10分制的评分，输出时评分请使用<score></score>包裹，此外还请给出一些队模型输出结果的修改建议，请使用<requirement_for_previous></requirement_for_previous>包裹。\n\n如下是你需要处理的数据: {result}。",
+                "loss_no_gt_no_result": "我会给你一些交互记录，你需要对这些记录进行评分，并给出一个10分制的评分，输出时评分请使用<score></score>包裹，此外还请给出一些对模型输出结果的修改建议，请使用<requirement_for_previous></requirement_for_previous>包裹。交互信息如下：{history}。"
+            },
+            "loss_without_score": {
+                "order": [
+                    "loss_with_ground_truth"
+                ],
+                "extract_key": [
+                    "requirement_for_previous"
+                ],
+                "loss_with_ground_truth": "You are a large language model fine-tuner. I will provide you with a model's output and the expected correct result. You need to evaluate it and suggest modifications to the model's output. Please use `<requirement_for_previous></requirement_for_previous>` to enclose your feedback.\n\nBelow is the model's output:\n<result>{result}</result>\n\nThe expected result is:\n<ground_truth>{ground_truth}</ground_truth>\n\nHere is the evaluation score for the model. Your goal is to optimize this score:\n<score>{score}</score>\n\nThe relevant information about this score is as follows:\n<evaluation_info>{score_info}</evaluation_info>\n\nNote:\n1. Ensure that `<requirement_for_previous></requirement_for_previous>` exists and appears once.\n2. If the model's output is satisfactory, you can output <requirement_for_previous>The output is satisfactory, no additional requirements</requirement_for_previous>.\n3. The output should be as close to the expected result as possible while ensuring correctness. For example, if the expected result is \"BUST\" and the model's output is \"The women's lifestyle magazine is 'BUST' magazine.\", even though this answer is correct, you should remind the model to be concise."
             }
         }
     },

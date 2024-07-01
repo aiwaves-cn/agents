@@ -39,18 +39,23 @@ class SoftwareDevDataset(BaseDataset):
         Returns:
         Dict[str, Any]: A dictionary with case details.
         """
-        return {
-            "case_id": "software_dev_" + str(self.data[idx]["task_id"]),
-            "case_name": self.data[idx]["task_name"],
-            "task_id": "software_dev",
-            "function_ids": "no use now",
-            "KB_id": "no use now",
-            "input": {"input_data": {"prompt": self.data[idx]["prompt"]}},
-            "ground_truth": self.data[idx].get("answer", None),
-            "idx": idx,
-            "metric_name": self.metric_name,
-            "metric_description": self.metric_description,
-        }
+        try:
+            return {
+                "case_id": "software_dev_" + str(self.data[idx]["task_id"]),
+                "case_name": self.data[idx]["task_name"],
+                "task_id": "software_dev",
+                "task_description": self.data[idx]["task_description"] if "task_description" in self.data[idx] else self.data[idx]["prompt"],
+                "function_ids": "no use now",
+                "KB_id": "no use now",
+                "input": {"input_data": {"prompt": self.data[idx]["prompt"]}},
+                "ground_truth": self.data[idx].get("answer", None),
+                "idx": idx,
+                "metric_name": self.metric_name,
+                "metric_description": self.metric_description,
+            }
+        except Exception as e:
+            print(f"Error: {e}, {self.data[idx]}")
+            raise e
 
     def evaluate(self, idx: int, answer: str):
         """

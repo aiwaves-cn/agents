@@ -29,34 +29,38 @@ class Case:
             json_data (dict): The JSON data to initialize the Case object.
         """
         # raw data, it will not be saved when dump
-        self.raw_data = json_data
+        try:
+            self.raw_data = json_data
 
-        self.case_id: str = json_data["case_id"]
-        self.case_name: str = json_data["case_name"]
+            self.case_id: str = json_data["case_id"]
+            self.case_name: str = json_data["case_name"]
 
-        self.task_id: str = json_data["task_id"]
-        self.task_description = json_data["task_description"]
+            self.task_id: str = json_data["task_id"]
+            self.task_description = json_data["task_description"]
 
-        self.function_ids: str = json_data["function_ids"]
-        self.KB_id: str = json_data["KB_id"]
+            self.function_ids: str = json_data["function_ids"]
+            self.KB_id: str = json_data["KB_id"]
 
-        self.input: dict = json_data["input"]
-        self.ground_truth: dict = json_data.get("ground_truth")
+            self.input: dict = json_data["input"]
+            self.ground_truth: dict = json_data.get("ground_truth")
 
-        # fields that not available until they are run
-        self.result: dict = json_data.get("result", {})  # 客户期望的直接的输出结果
-        self.trajectory: Trajectory = Trajectory.load_from_json(
-            json_data.get("trajectory", [])
-        )
+            # fields that not available until they are run
+            self.result: dict = json_data.get("result", {})  # 客户期望的直接的输出结果
+            self.trajectory: Trajectory = Trajectory.load_from_json(
+                json_data.get("trajectory", [])
+            )
 
-        # fields that not available until they are evaluated or optimized
-        self.dataset_eval: DatasetEvaluation = DatasetEvaluation(
-            **json_data.get("dataset_eval", {})
-        )  # Dataset evaluation results
-        self.loss: CaseLoss = CaseLoss(**json_data.get("loss", {}))  # 评估结果
-        self.sop_suggestion: SOPSuggestion = SOPSuggestion(
-            **json_data.get("sop_suggestion", {})
-        )  # Suggestions for SOP optimization
+            # fields that not available until they are evaluated or optimized
+            self.dataset_eval: DatasetEvaluation = DatasetEvaluation(
+                **json_data.get("dataset_eval", {})
+            )  # Dataset evaluation results
+            self.loss: CaseLoss = CaseLoss(**json_data.get("loss", {}))  # 评估结果
+            self.sop_suggestion: SOPSuggestion = SOPSuggestion(
+                **json_data.get("sop_suggestion", {})
+            )  # Suggestions for SOP optimization
+        except Exception as e:
+            print(f"Error: {e}, {json_data}")
+            raise e
 
     @classmethod
     def read_batch_from_json(cls, json_path):

@@ -23,9 +23,11 @@ class State:
             environment (Environment): The environment associated with this state. A deep copy is made.
         """
         self.node = node
-        self.agent: Agent = copy.deepcopy(agent)  # 这里需要深拷贝，而且是仅仅一个agent
+        # self.agent: Agent = copy.deepcopy(agent)  # 这里需要深拷贝，而且是仅仅一个agent
+        self.agent: Agent = agent
         self.action: Action = action
-        self.environment: Environment = copy.deepcopy(environment)
+        # self.environment: Environment = copy.deepcopy(environment)
+        self.environment: Environment = environment
         self.node_eval = NodeEval(node.node_name, "", "", "", "")
         self.backward: StateBackward = StateBackward()
         self.node_backward: StateBackward = StateBackward()
