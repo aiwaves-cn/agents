@@ -4,8 +4,10 @@ from agents import SoftwareDevDataset
 import litellm
 from agents.optimization.trainer import Trainer, TrainerConfig
 
-os.environ["OPENAI_API_KEY"] = ""
-os.environ["OPENAI_BASE_URL"] = ""
+if os.environ.get("OPENAI_API_KEY") is None:
+    os.environ["OPENAI_API_KEY"] = ""
+if os.environ.get("OPENAI_BASE_URL") is None:
+    os.environ["OPENAI_BASE_URL"] = ""
 
 litellm.set_verbose = False
 

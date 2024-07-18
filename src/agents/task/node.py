@@ -17,23 +17,18 @@
 import copy
 import json
 import re
-
-from bidict import bidict
 from typing import Dict, List, Union
 
-from ..agents.llm import OpenAILLM, LLMConfig
-from ..knowledge_bases import KnowledgeBaseConfig, KnowledgeBase
-from ..utils.prompts import *
+from bidict import bidict
+
+from ..agents.llm import LLMConfig, OpenAILLM
+from ..knowledge_bases import KnowledgeBase, KnowledgeBaseConfig
 from ..utils.config import Config
+from ..utils.prompts import *
 
 
 class NodeConfig(Config):
-    required_fields = [
-        "node_name",
-        "node_description",
-        "begin_role",
-        "controller"
-    ]
+    required_fields = ["node_name", "node_description", "begin_role", "controller"]
 
     class ControllerConfig(Config):
 
@@ -59,12 +54,12 @@ class NodeConfig(Config):
 
         @classmethod
         def generate_config(
-                cls,
-                task_description: str,
-                node_name: str,
-                node_description: str,
-                next_nodes: List[str],
-                node_roles_description: Dict[str, str],
+            cls,
+            task_description: str,
+            node_name: str,
+            node_description: str,
+            next_nodes: List[str],
+            node_roles_description: Dict[str, str],
         ):
             max_chat_nums = 10
 
@@ -92,8 +87,8 @@ class NodeConfig(Config):
 
             transit_type = "llm"
             transit_system_prompt = (
-                    content
-                    + " If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node."
+                content
+                + " If all the rules above are met, the task is complete, please consider to transit to the next node. Otherwise, the task is not complete, stay at the current node."
             )
             transit_extract_word = "node"
             transit_last_prompt = TRANSIT_LAST_PROMPT_TEMPLATE.format(
@@ -212,7 +207,9 @@ class NodeConfig(Config):
         )
         for prompt_type in DEFAULT_NODE_PROMPT_TEMPLATES:
             if prompt_type not in self.node_prompt_templates:
-                self.node_prompt_templates[prompt_type] = DEFAULT_NODE_PROMPT_TEMPLATES[prompt_type]
+                self.node_prompt_templates[prompt_type] = DEFAULT_NODE_PROMPT_TEMPLATES[
+                    prompt_type
+                ]
         self.node_prompt_paddings: Dict[str, dict] = self.config_dict.get(
             "node_prompt_paddings", {}
         )
@@ -221,11 +218,11 @@ class NodeConfig(Config):
 
     @classmethod
     def generate_config(
-            cls,
-            task_description: str,
-            node_name: str,
-            node_description: str,
-            next_nodes: List[str],
+        cls,
+        task_description: str,
+        node_name: str,
+        node_description: str,
+        next_nodes: List[str],
     ):
         llm_config = {
             "LLM_type": "OpenAI",
@@ -285,8 +282,8 @@ class NodeConfig(Config):
             json_config = json.loads(content.strip("`").strip("json").strip())
 
             if (
-                    "prompt_templates" not in json_config
-                    or "prompt_paddings" not in json_config
+                "prompt_templates" not in json_config
+                or "prompt_paddings" not in json_config
             ):
                 raise ValueError(
                     f"The prompt_templates and prompt_paddings are required in the generate node prompts config. Currently, the generated config is {json_config}."
@@ -388,6 +385,13 @@ class Node:
                 node_prompts[agent_name] = {}
             # deal with the padding for each agent
             for prompt_type, var_description in agent_padding_dicts.items():
+                if prompt_type not in self.node_prompt_templates:
+                    raise ValueError(
+                        f"Invalid prompt type '{prompt_type}', "
+                        f"the supported prompt types are "
+                        f"{list(self.node_prompt_templates.keys())}."
+                    )
+
                 if var_description["value_source"] == "config":
                     # the padding comes from the config, directly apply the padding to the prompt
                     node_prompts[agent_name][prompt_type] = Node.apply_var_to_prompt(
@@ -419,12 +423,13 @@ class Node:
 
     @staticmethod
     def apply_var_to_prompt(
-            prompt_templates: Dict[str, str], prompt_type: str, padding: dict
+        prompt_templates: Dict[str, str], prompt_type: str, padding: dict
     ):
         """Apply the padding to the prompt template."""
         if prompt_type not in prompt_templates:
             raise ValueError(
-                f"Invalid prompt type '{prompt_type}', the supported prompt types are {prompt_templates.keys()}."
+                f"Invalid prompt type '{prompt_type}', "
+                f"the supported prompt types are {list(prompt_templates.keys())}."
             )
         prompt = prompt_templates[prompt_type].format(**padding)
         return prompt
@@ -449,11 +454,17 @@ class Node:
         ret_controller_config["max_chat_nums"] = self.controller.max_chat_nums
 
         ret_controller_config["transit_type"] = self.controller.transit_type
-        ret_controller_config["transit_system_prompt"] = self.controller.transit_system_prompt
-        ret_controller_config["transit_last_prompt"] = self.controller.transit_last_prompt
+        ret_controller_config["transit_system_prompt"] = (
+            self.controller.transit_system_prompt
+        )
+        ret_controller_config["transit_last_prompt"] = (
+            self.controller.transit_last_prompt
+        )
 
         ret_controller_config["route_type"] = self.controller.route_type
-        ret_controller_config["route_system_prompt"] = self.controller.route_system_prompt
+        ret_controller_config["route_system_prompt"] = (
+            self.controller.route_system_prompt
+        )
         ret_controller_config["route_last_prompt"] = self.controller.route_last_prompt
 
         # node description
