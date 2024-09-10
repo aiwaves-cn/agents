@@ -23,7 +23,7 @@
 
 
 ## 🔔News
-- [2024-06-25] We release Agents 2.0, a major update to the original library, adding support for agent learning and evaluation.
+- [2024-06-25] We release [Agents](https://agentsv2.readthedocs.io/en/latest/) 2.0, a major update to the original library, adding support for agent learning and evaluation.
 ---
 
 ## 🌟Overview
