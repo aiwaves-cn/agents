@@ -1,7 +1,7 @@
 {
     "batch_size": 2,
     "max_step": 10,
-    "log_path": "examples/hotpotqa/logs",
+    "log_path": "logs",
 
     "sample_kind": "random",
     "allow_duplicate_samples": false,
@@ -19,8 +19,8 @@
     "parallel": true,
     "parallel_max_num": 8,
 
-    "initial_solution_path": "examples/hotpotqa/eval/accepted_solution/solution.json",
-    "optimizer_config_path": "examples/hotpotqa/configs/optimizer_config.json",
+    "initial_solution_path": "eval/accepted_solution/solution.json",
+    "optimizer_config_path": "configs/optimizer_config.json",
     "optim_order": "order",
     "optimizers": [
         "sop"

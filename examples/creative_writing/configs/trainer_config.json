@@ -1,7 +1,7 @@
 {
     "batch_size": 4,
     "max_step": 4,
-    "log_path": "examples/creative_writing/new_logs",
+    "log_path": "new_logs",
 
     "sample_kind": "random",
     "allow_duplicate_samples": false,
@@ -19,8 +19,8 @@
     "parallel": true,
     "parallel_max_num": 8,
 
-    "initial_solution_path": "examples/creative_writing/configs/solution.json",
-    "optimizer_config_path": "examples/creative_writing/configs/optimizer_config.json",
+    "initial_solution_path": "configs/solution.json",
+    "optimizer_config_path": "configs/optimizer_config.json",
     "optim_order": "order",
     "optimizers": [
         "prompt", "node"

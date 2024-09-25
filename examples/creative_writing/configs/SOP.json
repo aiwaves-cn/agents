@@ -2,25 +2,25 @@
     "nodes": {
         "node_write": {
             "node_name": "node_write",
+            "node_description": "Compose a coherent and fluent passage based on provided questions. Ensure each paragraph ends with a specific concluding sentence to maintain narrative consistency and emphasize key points.",
+            "node_roles_description": {
+                "role_write": "Compose a fluent and coherent passage based on the given questions. Ensure that each paragraph concludes with the specified sentence to reinforce key ideas and provide a smooth narrative flow."
+            },
+            "begin_role": "role_write",
+            "begin_query": null,
             "controller": {
-                "route_type": "order",
-                "transit_type": "order",
                 "max_chat_nums": 20,
+                "transit_type": "order",
                 "transit_system_prompt": "",
                 "transit_last_prompt": "",
                 "transit_extract_word": "end",
+                "route_type": "order",
                 "route_system_prompt": "",
                 "route_last_prompt": "",
                 "route_extract_word": "end"
             },
-            "begin_role": "role_write",
-            "node_description": "Write a fluent passage based on the questions given, in which the closing part of each paragraph ends with the sentence given",
-            "tools": "",
-            "node_roles_description": {
-                "role_write": "Write a fluent passage based on the questions given, in which the closing part of each paragraph ends with the sentence given"
-            },
             "node_prompt_templates": {
-                "step_write": "A creative writing task where the input is 4 random sentences and the output should be a coherent passage with 4 paragraphs that end in the 4 input sentences respectively. Such a task is open-ended and exploratory, and challenges creative thinking as well as high-level planning. Here is the four sentences: 1. The sun was shining brightly. 2. The birds were chirping. 3. The flowers were blooming. 4. The children were playing in the park. Please write a passage that ends with each of the four sentences: {text}"
+                "step_write": "Compose a creative passage of four paragraphs, adhering to the following guidelines: \n1. Each paragraph should conclude with one of these sentences in the given order \n2. The narrative should be coherent, logically consistent, and maintain a consistent tone and setting throughout. \n3. Avoid introducing characters or elements without context. \n4. Ensure smooth transitions between paragraphs. \nUse these sentences respectively to conclude each of the four paragraphs: {text}."
             },
             "node_prompt_paddings": {
                 "role_write": {
@@ -29,50 +29,54 @@
                         "value": "input_data"
                     }
                 }
-            }
+            },
+            "kb": null
         },
-        "node_check": {
-            "node_name": "node_check",
+        "node_edit": {
+            "node_name": "node_edit",
+            "node_description": "Review the passage written by 'role_write'. The node should correct errors, improve logical flow, and enhance readability.",
+            "node_roles_description": {
+                "role_edit": "The role of 'role_edit' is to review the passage written by 'role_write', correcting grammatical errors, improving logical flow, and enhancing readability. The final result should be free of major errors and optimized for fluency."
+            },
+            "begin_role": "role_edit",
+            "begin_query": null,
             "controller": {
-                "route_type": "order",
-                "transit_type": "order",
                 "max_chat_nums": 20,
+                "transit_type": "order",
                 "transit_system_prompt": "",
                 "transit_last_prompt": "",
                 "transit_extract_word": "end",
+                "route_type": "order",
                 "route_system_prompt": "",
                 "route_last_prompt": "",
                 "route_extract_word": "end"
             },
-            "begin_role": "role_check",
-            "node_description": "Check that the written text is correct and fluent, and modify the text appropriately to make it fluent",
-            "tools": "",
-            "node_roles_description": {
-                "role_check": "Check the text written by the previous person, analyze it, and optimize it to make it more fluent"
-            },
             "node_prompt_templates": {
-                "step_check": "Check the text written by the previous person, analyze it, and optimize it to make it more fluent. Please enclose the optimized text in <result>[put the optimized text here]</result>."
+                "step_role_edit": "Review and refine the passage written by 'role_write' for coherence, grammar, and style. Ensure the final passage flows smoothly and meets the required standards. Specifically, the last sentence of the paragraph should sequentially come from the following sentences: {text}. Please use <result>[the passage you refined]</result> to wrap the result."
             },
             "node_prompt_paddings": {
-                "role_check": {
-                    "step_check": {
+                "role_edit": {
+                    "step_role_edit": {
                         "value_source": "case",
                         "value": "input_data"
                     }
                 }
-            }
+            },
+            "kb": null
         }
+
     },
     "edges": {
         "node_write": [
             "node_write",
-            "node_check"
+            "node_edit"
         ],
-        "node_check": [
-            "node_check",
+        "node_edit": [
+            "node_edit",
             "end_node"
         ]
     },
     "root": "node_write",
-    "end": "end_node"
+    "end": "end_node",
+    "global_kb": null
 }

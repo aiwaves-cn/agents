@@ -1,52 +1,53 @@
 {
     "agents": {
-        "agent_write": {
-            "agent_name": "agent_write",
+        "Alice": {
+            "agent_name": "Alice",
             "agent_roles": {
                 "node_write": "role_write"
             },
+            "agent_style": null,
+            "agent_description": null,
             "LLM_config": {
                 "LLM_type": "OpenAI",
-                "OPENAI_API_KEY": "",
-                "OPENAI_BASE_URL": "",
+                "model": "gpt-3.5-turbo-0125",
                 "temperature": 0.3,
-                "model": "gpt-4-turbo-2024-04-09",
-                "SAVE_LOGS": false,
-                "log_path": "logs/creative_writing/AgentWrite"
+                "log_path": "logs/Alice",
+                "API_KEY": "",
+                "API_BASE": "",
+                "MAX_CHAT_MESSAGES": 10,
+                "ACTIVE_MODE": false,
+                "SAVE_LOGS": false
             },
-            "toolkit": {},
-            "memory": {
-                "short_term_memory": {},
-                "long_term_memory": {}
-            }
+            "toolkit": null,
+            "memory": null,
+            "is_user": false
         },
-        "agent_check": {
-            "agent_name": "agent_check",
+        "Bob": {
+            "agent_name": "Bob",
             "agent_roles": {
-                "node_check": "role_check"
+                "node_edit": "role_edit"
             },
+            "agent_style": null,
+            "agent_description": null,
             "LLM_config": {
                 "LLM_type": "OpenAI",
-                "OPENAI_API_KEY": "",
-                "OPENAI_BASE_URL": "",
+                "model": "gpt-3.5-turbo-0125",
                 "temperature": 0.3,
-                "model": "gpt-4-turbo-2024-04-09",
-                "SAVE_LOGS": false,
-                "log_path": "logs/creative_writing/AgentCheck"
+                "log_path": "logs/Bob",
+                "API_KEY": "",
+                "API_BASE": "",
+                "MAX_CHAT_MESSAGES": 10,
+                "ACTIVE_MODE": false,
+                "SAVE_LOGS": false
             },
-            "toolkit": {},
-            "memory": {
-                "short_term_memory": {},
-                "long_term_memory": {}
-            }
+            "toolkit": null,
+            "memory": null,
+            "is_user": false
         }
     },
     "environment": {
-        "shared_memory": {
-            "short_term_memory": {},
-            "long_term_memory": {}
-        },
-        "shared_toolkit": {},
-        "environment_type": "cooperative"
+        "environment_type": "cooperative",
+        "shared_memory": null,
+        "shared_toolkit": null
     }
 }

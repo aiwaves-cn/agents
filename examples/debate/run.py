@@ -7,5 +7,5 @@ os.environ["OPENAI_API_KEY"] = ""
 os.environ["OPENAI_BASE_URL"] = ""
 
 if __name__ == "__main__":
-    solution = Solution(config=SolutionConfig("examples/debate/generated_config.json"))
+    solution = Solution(config=SolutionConfig("generated_config.json"))
     solution.run()

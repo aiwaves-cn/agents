@@ -15,7 +15,7 @@ os.environ["OPENAI_BASE_URL"] = ""
 
 split = "hard"
 time_path = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-save_path = f"examples/hotpotqa/eval/{time_path}_hotpotqa_{split}"
+save_path = f"eval/{time_path}_hotpotqa_{split}"
 
 
 def run_eval():
@@ -23,15 +23,15 @@ def run_eval():
     dataset = HotpotQADataset(split)
 
     # !需要根据情况配置
-    solution_config_path = r"examples/hotpotqa/eval/accepted_solution/solution.json"
-    solution_config_path = r"examples/hotpotqa/logs/2024-05-22_16-55-55/step_9/solution.json"
+    solution_config_path = "eval/accepted_solution/solution.json"
     solution = Solution(SolutionConfig(solution_config_path))
 
     case_list = []
     for i in range(len(dataset)):
         case_list.append(Case(dataset.get_case_dict(i)))
 
-    OptimUtils.parallel_case_forward(case_list, solution, 8, save_path, dataset.evaluate)
+    OptimUtils.parallel_case_forward(
+        case_list, solution, 8, save_path, dataset.evaluate)
 
     ems = []
     f1s = []
@@ -49,9 +49,9 @@ def run_eval():
         json.dump(result, f, ensure_ascii=False, indent=4)
 
     for case in case_list:
-        print(f"case_id: {case.case_id}, f1: {case.dataset_eval.standard_eval_result['f1']}, ground_truth: {case.ground_truth}, prediction: {case.result}")
+        print(f"case_id: {case.case_id}, f1: {case.dataset_eval.standard_eval_result['f1']}, ground_truth: {
+              case.ground_truth}, prediction: {case.result}")
 
 
 if __name__ == "__main__":
     run_eval()
-
