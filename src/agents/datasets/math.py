@@ -13,7 +13,8 @@ def get_content_between_a_b(start_tag, end_tag, text):
     while start_index != -1:
         end_index = text.find(end_tag, start_index + len(start_tag))
         if end_index != -1:
-            extracted_text += text[start_index + len(start_tag): end_index] + " "
+            extracted_text += text[start_index +
+                                   len(start_tag): end_index] + " "
             start_index = text.find(start_tag, end_index + len(end_tag))
         else:
             break
@@ -65,7 +66,8 @@ class MATHDataset(BaseDataset):
                     data_file = os.path.join(root, file)
                     data_point = self.load(data_file)
                     data.extend(
-                        data_point if isinstance(data_point, list) else [data_point]
+                        data_point if isinstance(data_point, list) else [
+                            data_point]
                     )
 
         df = pd.DataFrame(data)
@@ -153,50 +155,3 @@ Now, please give your verdict(You should first show your thinking of your verifi
             return 1, {"score": 1}
         else:
             return 0, {"score": 0}
-
-    def mertirc(self, gold, pred, trace=None):
-        problem = gold.problem
-        solution = gold.solution
-        answer = pred.answer
-        prompt = f"""
-You are the wise mathematics answer verifier:
-You identify as math word problem answer verifier, not an assistant.
-You will be provided an math word problem, the real answer for this math word problem, and the predicted answer from a generation model. You should understand the problem and validate the correctness of the generated answer in the context of the provided math word problem and the real answer.
-You should not solve the problem by yourself, you only job is to act as a verifier.
-
-On your profile and general capabilities:
-Your responses should avoid being vague, controversial or off-topic.
-Your logic and reasoning should be rigorous and intelligent.
-
-The problem: {problem}
-
-The standard solution: {solution}
-
-The output of generation model: {answer}
-
-Now, please give your verdict(You should first show your thinking of your verification logic and then output your final verdict,You final verdict is limited to correct or incorrect,and wrapped into the <verdict></verdict>, such as <verdict>correct</verdict>):
-"""
-
-        messages = [{"role": "user", "content": prompt}]
-        flag = True
-        cnt = 0
-        while flag and cnt < 20:
-            try:
-                result_outputs = (
-                    completion_with_backoff(
-                        messages=messages, model="gpt-4-turbo-2024-04-09"
-                    )
-                    .choices[0]
-                    .message.content
-                )
-                verdict = extract(result_outputs, "verdict")
-                flag = False
-            except Exception as e:
-                print(e)
-                time.sleep(10)
-                cnt += 1
-
-        if verdict == "correct":
-            return 1
-        else:
-            return 0

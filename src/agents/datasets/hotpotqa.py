@@ -114,11 +114,3 @@ class HotpotQADataset(BaseDataset):
         em = pred == gt
         f1 = f1_score(pred, gt)[0]
         return em, {"em": em, "f1": f1, "gt": gt, "pred": pred}
-
-    def mertirc(self, gold, pred, trace=None):
-        gt = gold.answer
-        answer = pred.answer
-        pred = normalize_answer(answer)
-        gt = normalize_answer(gt)
-        f1 = f1_score(pred, gt)[0]
-        return f1
