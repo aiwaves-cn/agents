@@ -14,24 +14,24 @@ os.environ["OPENAI_API_KEY"] = ""
 os.environ["OPENAI_BASE_URL"] = ""
 
 time_path = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-save_path = f"examples/ceative_writing/eval/{time_path}_creative_writing"
+save_path = f"eval/{time_path}_creative_writing"
 
 
-def get_score():
+def get_score(dir_list):
     """
     case跑完了之后加载保存下来的case获取分数
     Returns:
 
     """
-    save_result_path = "examples/creative_writing/eval/final_result.json"
-    dir_list = ["examples/creative_writing/eval/2024-05-23_00-19-18_creative_writing_GPT35"]
+    save_result_path = "eval/final_result.json"
 
     scores = []
     count = 0
     for dir in dir_list:
         print(f"\n\nthe dir is: {dir}")
         files_and_folders = os.listdir(dir)
-        files = [f for f in files_and_folders if os.path.isfile(os.path.join(dir, f))]
+        files = [f for f in files_and_folders if os.path.isfile(
+            os.path.join(dir, f))]
         for file_name in files:
             if file_name == "result.json":
                 continue
@@ -57,7 +57,7 @@ def run_eval():
     dataset = CreativeWritingDataset(split="all")
 
     # 跑实验用的就是examples\creative_writing\logs\2024-05-22_13-47-02\step_5\solution.json
-    solution_config_path = r"examples\creative_writing\logs\2024-05-22_13-47-02\step_5\solution.json"
+    solution_config_path = "configs/solution.json"
 
     solution = Solution(SolutionConfig(solution_config_path))
     case_list = []
@@ -69,7 +69,8 @@ def run_eval():
     # for i in used_idx:
     #     case_list.append(Case(dataset.get_case_dict(i)))
 
-    OptimUtils.parallel_case_forward(case_list, solution, 8, save_path, dataset.evaluate)
+    OptimUtils.parallel_case_forward(
+        case_list, solution, 8, save_path, dataset.evaluate)
 
     scores = []
     for case in case_list:

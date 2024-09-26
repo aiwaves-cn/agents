@@ -15,6 +15,7 @@ if __name__ == "__main__":
     dataset = HotpotQADataset(split=split)
 
     # Trainer训练
-    trainer_config_path = "examples/hotpotqa/configs/trainer_config.json"
-    trainer = Trainer(config=TrainerConfig(trainer_config_path), dataset=dataset)
+    trainer_config_path = "configs/trainer_config.json"
+    trainer = Trainer(config=TrainerConfig(
+        trainer_config_path), dataset=dataset)
     trainer.train()

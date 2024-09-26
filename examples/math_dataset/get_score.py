@@ -8,14 +8,14 @@ def get_score():
     Returns:
 
     """
-    save_result_path = "examples/math_dataset/eval/final_result.json"
+    save_result_path = "eval/final_result.json"
     dir_list = [
-        r"examples\math_dataset\eval\test_algebra",
-        r"examples\math_dataset\eval\test_counting_and_probability",
-        r"examples\math_dataset\eval\test_intermediate_algebra",
-        r"examples\math_dataset\eval\test_number_theory",
-        r"examples\math_dataset\eval\test_prealgebra",
-        r"examples\math_dataset\eval\test_precalculus"
+        r"eval\test_algebra",
+        r"eval\test_counting_and_probability",
+        r"eval\test_intermediate_algebra",
+        r"eval\test_number_theory",
+        r"eval\test_prealgebra",
+        r"eval\test_precalculus"
     ]
 
     scores = []
@@ -23,7 +23,8 @@ def get_score():
     for dir in dir_list:
         print(f"\n\nthe dir is: {dir}")
         files_and_folders = os.listdir(dir)
-        files = [f for f in files_and_folders if os.path.isfile(os.path.join(dir, f))]
+        files = [f for f in files_and_folders if os.path.isfile(
+            os.path.join(dir, f))]
         for file_name in files:
             if file_name == "result.json":
                 continue

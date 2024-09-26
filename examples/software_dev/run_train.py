@@ -16,6 +16,7 @@ if __name__ == "__main__":
     dataset = SoftwareDevDataset()
 
     # Trainer训练
-    trainer_config_path = "examples/software_dev/configs/trainer_config.json"
-    trainer = Trainer(config=TrainerConfig(trainer_config_path), dataset=dataset)
+    trainer_config_path = "configs/trainer_config.json"
+    trainer = Trainer(config=TrainerConfig(
+        trainer_config_path), dataset=dataset)
     trainer.train()

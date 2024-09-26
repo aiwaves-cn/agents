@@ -1,3 +1,4 @@
+import litellm
 import os
 
 from agents import HotpotQADataset, LLMConfig, OpenAILLM, Solution, SolutionConfig, MATHDataset
@@ -7,7 +8,6 @@ from agents.optimization.utils import OptimUtils
 os.environ["OPENAI_API_KEY"] = ""
 os.environ["OPENAI_BASE_URL"] = ""
 
-import litellm
 litellm.set_verbose = False
 
 if __name__ == "__main__":
@@ -15,6 +15,7 @@ if __name__ == "__main__":
     dataset = MATHDataset(split="train")
 
     # Trainer训练
-    trainer_config_path = "examples/math_dataset/configs/trainer_config.json"
-    trainer = Trainer(config=TrainerConfig(trainer_config_path), dataset=dataset)
+    trainer_config_path = "configs/trainer_config.json"
+    trainer = Trainer(config=TrainerConfig(
+        trainer_config_path), dataset=dataset)
     trainer.train()

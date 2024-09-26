@@ -7,5 +7,5 @@ os.environ["OPENAI_API_KEY"] = ""
 os.environ["OPENAI_BASE_URL"] = ""
 
 if __name__ == "__main__":
-    solution = Solution(config=SolutionConfig("examples/humaneval/configs/solution.json"))
+    solution = Solution(config=SolutionConfig("configs/solution.json"))
     solution.run()

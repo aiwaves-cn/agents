@@ -1,7 +1,7 @@
 {
     "batch_size": 1,
     "max_step": 3,
-    "log_path": "examples/software_dev/logs",
+    "log_path": "logs",
 
     "sample_kind": "random",
     "allow_duplicate_samples": false,
@@ -15,9 +15,9 @@
     "parallel": false,
     "use_roll_back": true,
 
-    "old_initial_solution_path": "examples/software_dev/configs/solution.json",
-    "initial_solution_path": "examples/software_dev/configs/solution.json",
-    "optimizer_config_path": "examples/software_dev/configs/optimizer_config.json",
+    "old_initial_solution_path": "configs/solution.json",
+    "initial_solution_path": "configs/solution.json",
+    "optimizer_config_path": "configs/optimizer_config.json",
 
     "optim_order": "order",
     "optimizers": [
