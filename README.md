@@ -14,7 +14,7 @@
 
 ![](https://img.shields.io/badge/version-v2.0.0-blue)
 [![License: Apache](https://img.shields.io/badge/License-Apache2.0-yellow.svg)](https://opensource.org/license/apache-2-0)
-![](https://img.shields.io/github/last-commit/aiwaves-cn/agents?color=green)
+[![](https://img.shields.io/github/last-commit/aiwaves-cn/agents?color=green)](https://github.com/aiwaves-cn/agents/commits/master)
 ![](https://img.shields.io/badge/PRs-Welcome-red) 
 
 ---
