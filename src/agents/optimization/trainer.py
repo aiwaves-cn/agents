@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 import random
+from typing import Optional
 
 import wandb
 
@@ -18,6 +19,7 @@ from agents.optimization.toolkit_optimizer import (
     ToolkitOptimizer,
 )
 from agents.evaluation.case import Case
+from agents.evaluation.report import EvaluationReporter, ReportConfig
 from agents.optimization.utils import OptimUtils
 from agents.datasets import BaseDataset
 from .. import Solution, SolutionConfig
@@ -37,6 +39,7 @@ class TrainerConfig(Config):
         self.optim_order = self.config_dict["optim_order"]
         self.optimizers = self.config_dict["optimizers"]
         self.additional_info = self.config_dict.get("additional_info", {})
+        self.report_config = self.config_dict.get("report_config", {})
 
         # initial solution and optimizer config
         self.initial_solution_path = self.config_dict["initial_solution_path"]
@@ -103,6 +106,7 @@ class Trainer:
         self.sample_kind: str = config.sample_kind
         self.allow_duplicate_samples: bool = config.allow_duplicate_samples
         self.sampled_idx_set = set()
+        self.initial_solution_path = config.initial_solution_path
 
         # task setting
         self.has_ground_truth = config.has_ground_truth
@@ -169,8 +173,21 @@ class Trainer:
         )
 
         # others
-        self.initial_solution_path = config.initial_solution_path
         self.exceed_threshold_times = 0
+        self.report_config = ReportConfig(config.report_config)
+        self.reporter = EvaluationReporter(self.report_config)
+        self.report_eval_indices = self._prepare_report_indices()
+        self.training_curve: list[dict] = []
+        self.baseline_summary = None
+        self.last_step_path: Optional[Path] = None
+
+        if self.report_config.enable:
+            baseline_solution_path = self.report_config.baseline_solution_path or self.initial_solution_path
+            baseline_solution = Solution(config=SolutionConfig(baseline_solution_path))
+            baseline_dir = self.log_path / self.time_path / "baseline"
+            baseline_dir.mkdir(parents=True, exist_ok=True)
+            self.baseline_summary = self._run_eval_for_report(baseline_solution, baseline_dir)
+            self.logger.info(f"Baseline evaluation saved at {baseline_dir}")
 
     def get_step_optim_order(self, last_optim_order: list[str]) -> list[str]:
         """
@@ -310,24 +327,43 @@ class Trainer:
                         case_list, solution, save_step_path
                     )
 
+            step_loss = self._compute_step_loss(case_list)
+
             # record some information
             self.logger.info(f"step {step} optim status: {op_status}")
             case_count += self.batch_size
             step_cost_time.append(time.time() - step_start_time)
             self.logger.info(f"step {step} cost time: {step_cost_time[-1] / 60:.1f}min")
+            self.training_curve.append(
+                {"step": step, "avg_score": ave_score_list[-1], "avg_loss": step_loss}
+            )
+            self.last_step_path = save_step_path
 
             # log the result of this step to wandb
-            wandb.log({
+            log_payload = {
                 "step": step,
                 "score_before_optim": ave_score_list[-1],
                 "scores": scores,
                 "cost_time": step_cost_time[-1],
                 "case_count": case_count,
                 "optim_status": op_status,
-            })
+            }
+            if step_loss is not None:
+                log_payload["avg_loss"] = step_loss
+            wandb.log(log_payload)
 
         self.logger.info(
             f"Training completed. Total time spent: {sum(step_cost_time) / 60:.1f} minutes. There were {case_count} cases and {step} steps.")
+
+        if self.report_config.enable:
+            final_dir = self.log_path / self.time_path / "final"
+            final_dir.mkdir(parents=True, exist_ok=True)
+            final_summary = self._run_eval_for_report(solution, final_dir)
+            reflections = self._collect_reflections_for_report(self.last_step_path)
+            report = self.reporter.build_report(self.baseline_summary, final_summary, self.training_curve, reflections)
+            report_path = self.log_path / self.time_path / self.report_config.report_name
+            self.reporter.save_report(report, report_path)
+            self.logger.info(f"Evaluation report saved to {report_path}")
 
         wandb.finish()
 
@@ -467,6 +503,48 @@ class Trainer:
 
         self.logger.debug("no need to roll back")
         return solution, finished_case_list
+
+    def _compute_step_loss(self, case_list: list[Case]) -> Optional[float]:
+        loss_scores = [
+            case.loss.score
+            for case in case_list
+            if hasattr(case, "loss") and isinstance(getattr(case.loss, "score", None), (int, float))
+        ]
+        if not loss_scores:
+            return None
+        return sum(loss_scores) / len(loss_scores)
+
+    def _prepare_report_indices(self) -> list[int]:
+        if not self.report_config.enable:
+            return []
+        if self.report_config.eval_indices:
+            return [
+                idx for idx in self.report_config.eval_indices
+                if 0 <= idx < len(self.dataset)
+            ]
+        sample_size = min(self.report_config.sample_size, len(self.dataset))
+        return list(range(sample_size))
+
+    def _run_eval_for_report(self, solution: Solution, save_dir: Path):
+        if not self.report_config.enable:
+            return None
+        indices = self.report_eval_indices or list(range(min(self.report_config.sample_size, len(self.dataset))))
+        case_list = [Case(self.dataset.get_case_dict(i)) for i in indices]
+        OptimUtils.parallel_case_forward(
+            case_list,
+            solution,
+            self.parallel_max_num,
+            save_dir,
+            self.dataset.evaluate,
+            self.logger,
+        )
+        return self.reporter.summarize_dir(save_dir)
+
+    def _collect_reflections_for_report(self, step_path: Optional[Path]):
+        if not self.report_config.enable or not step_path:
+            return []
+        case_dir = step_path / "case_after_loss"
+        return self.reporter.collect_reflections_from_dir(case_dir)
 
 
 def setup_logging(save_log_path: Path):
