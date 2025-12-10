@@ -57,6 +57,26 @@ pip install -e .
 
 ---
 
+## 🧪 Evaluation & Baseline Report
+
+`trainer_config.json` 支持开启训练后自动生成的对比报告：
+```json
+{
+  "report_config": {
+    "enable": true,
+    "sample_size": 8,
+    "success_threshold": 0.5,
+    "report_name": "report.json"
+  }
+}
+```
+启用后，训练会自动：
+- 在日志目录下运行基线评估（不更新提示）并保存到 `logs/<timestamp>/baseline/`
+- 使用最新方案运行对比评估到 `logs/<timestamp>/final/`
+- 生成一页报告 `logs/<timestamp>/report.json`，包含平均得分/成功率、得分/损失轨迹和主要反思片段
+
+---
+
 ## ⭐ Star History  
 [![Star History Chart](https://api.star-history.com/svg?repos=aiwaves-cn/agents&type=Date)](https://star-history.com/#aiwaves-cn/agents&Date)
 
