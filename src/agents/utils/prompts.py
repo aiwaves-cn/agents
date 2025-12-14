@@ -65,12 +65,12 @@ OUTPUT_PROMPT_TEMPLATE = "Please contact the above to extract <{output}> and </{
 LAST_PROMPT_TEMPLATE = "{last}"
 
 DEFAULT_NODE_PROMPT_TEMPLATES = {
-    # "style": STYLE_PROMPT_TEMPLATE,
-    # "task": TASK_PROMPT_TEMPLATE,
-    # "rule": RULE_PROMPT_TEMPLATE,
-    # "demonstrations": DEMONSTRATIONS_PROMPT_TEMPLATE,
-    # "output": OUTPUT_PROMPT_TEMPLATE,
-    # "last": LAST_PROMPT_TEMPLATE,
+    "style": STYLE_PROMPT_TEMPLATE,
+    "task": TASK_PROMPT_TEMPLATE,
+    "rule": RULE_PROMPT_TEMPLATE,
+    "demonstrations": DEMONSTRATIONS_PROMPT_TEMPLATE,
+    "output": OUTPUT_PROMPT_TEMPLATE,
+    "last": LAST_PROMPT_TEMPLATE,
 }
 
 # The following prompt templates are used in the config generation
