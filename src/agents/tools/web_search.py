@@ -4,11 +4,10 @@ from serpapi import GoogleSearch
 from googleapiclient.discovery import build
 from .tool import Tool
 
-
 class WebSearchTool(Tool):
     """web search engines"""
 
-    __ENGINE__: List = ["google", "bing", "serpapi"]
+    __ENGINE__: List = ["google", "bing", "serpapi", "bocha"]
 
     def __init__(self, engine: str, api: Dict):
         """
@@ -37,6 +36,7 @@ class WebSearchTool(Tool):
             "bing": self._bing_search,
             "google": self._google_search,
             "serpapi": self._serpapi_request,
+            "bocha": self.bocha_websearch,
         }
 
     def _bing_search(self, query: str, **kwargs):
@@ -63,6 +63,45 @@ class WebSearchTool(Tool):
                 "link": result["url"],
             }
             metadata_results.append(metadata_result)
+        return {"meta data": metadata_results}
+
+    def bocha_websearch(self, query: str, count: int = 10):
+        """
+        Perform web search using the Bocha Web Search API.
+
+        Parameters:
+        - query: Search query keywords
+        - freshness: Time range filter for results (fixed to "noLimit" internally)
+        - summary: Whether to include text summaries (fixed to True internally)
+        - count: Number of search results to return
+
+        Returns:
+        - Dictionary containing search result metadata including title, URL, snippet, site name, site icon, and publication time.
+        """
+
+        url = 'https://api.bochaai.com/v1/web-search'  # Removed trailing spaces for correctness
+        headers = {
+            'Authorization': f'Bearer {self.api["bocha"]}',
+            'Content-Type': 'application/json'
+        }
+        data = {
+            "query": query,
+            "freshness": "noLimit",  # Time range filter for search results
+            "summary": True,  # Whether to return detailed text summaries
+            "count": count
+        }
+
+        response = requests.post(url, headers=headers, json=data).json()
+        results = response["data"]["webPages"]["value"]
+        metadata_results = []
+        for result in results:
+            metadata_result = {
+                "snippet": result["snippet"],
+                "title": result["name"],
+                "link": result["url"],
+            }
+            metadata_results.append(metadata_result)
+            print(metadata_result)
         return {"meta data": metadata_results}
 
     def _google_search(self, query: str, **kwargs):

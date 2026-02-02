@@ -34,4 +34,5 @@ AVAILABLE_TOOLS = {
     "evaluate_expression": EvaluateExpressionTool,
     "calculate_polynomial_roots": CalculatePolynomialRootsTool,
     "solve_algebraic_equation": SolveAlgebraicEquationTool,
+    "web_search": WebSearchTool,
 }
