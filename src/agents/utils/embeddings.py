@@ -116,7 +116,7 @@ class OpenAIEmbedding(BaseEmbedding[str]):
             raise ValueError("Invalid OpenAI embedding model type.")
         self.model_type = model_type
         self.output_dim = model_type.output_dim
-        self.client = OpenAI()
+        self.client = OpenAI(timeout=60.0, max_retries=3)
 
     def embed_list(
         self,
