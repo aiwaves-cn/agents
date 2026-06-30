@@ -55,6 +55,18 @@ cd agents
 pip install -e .
 ```
 
+### Local environment check
+
+Before running agent examples locally, contributors can check whether the
+required model configuration variables are present:
+
+```bash
+python examples/check_env.py
+```
+
+The script checks `OPENAI_API_KEY`, `OPENAI_API_BASE`, and
+`OPENAI_MODEL_NAME`. Do not commit real API keys or local `.env` files to Git.
+
 ---
 
 ## ⭐ Star History  
