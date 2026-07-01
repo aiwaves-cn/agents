@@ -1,3 +1,5 @@
+[![Listed on TakoAPI](https://takoapi.com/api/badge/aiwaves-cn-agents)](https://takoapi.com/agents/aiwaves-cn-agents)
+
 <div align="center">
 <img src='./assets/agents-logo.png'  width=300px>
 
