@@ -340,17 +340,17 @@ class SOP:
                 )
 
                 route_last_prompt = self.current_node.controller.route_last_prompt
-                if not route_last_prompt:
-                    if len(history_messages) > 0:
-                        last_name = (
-                            history_messages[-1]["name"]
-                            if "name" in history_messages[-1]
-                            else ""
-                        )
-                    else:
-                        last_name = ""
-                    last_name = history_messages[-1]["name"] if history_messages else ""
 
+                # The last speaker's name is used by the route message below
+                # even when a custom route_last_prompt is configured, so it
+                # must be computed outside the `if not route_last_prompt` block.
+                last_name = (
+                    history_messages[-1]["name"]
+                    if history_messages and "name" in history_messages[-1]
+                    else ""
+                )
+
+                if not route_last_prompt:
                     route_last_prompt = ROUTE_LAST_PROMPT_TEMPLATE.format(
                         query=Memory.encode_memory(history_messages[-1:]),
                         relevant_history=relevant_memory,
