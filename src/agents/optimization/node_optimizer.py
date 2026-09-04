@@ -279,16 +279,29 @@ class NodeOptimizer(Optimizer):
 
                 elif action == "delete_role":
                     role_name = rule["role_name"]
-                    node.node_roles.pop(role_name)
-                    node.node_roles_description.pop(role_name)
-                    node.node_primary_prompts.pop(role_name)
-                    node.node_prompt_templates.pop(role_name)
+                    if role_name not in node.node_prompt_paddings:
+                        raise ValueError(f"Role name '{role_name}' does not exist.")
+                    # node_roles is a list of role names, not a dict keyed by role
+                    if role_name in node.node_roles:
+                        node.node_roles.remove(role_name)
+                    node.node_roles_description.pop(role_name, None)
+                    node.node_primary_prompts.pop(role_name, None)
+                    # node_prompt_templates is keyed by prompt type, not by role;
+                    # a role only owns the "step_<role>" template added by add_role
+                    node.node_prompt_templates.pop("step_" + role_name, None)
                     node.node_prompt_paddings.pop(role_name)
                     if len(node.node_prompt_paddings) == 0:
                         raise ValueError("The node should have at least one role.")
                     # begin role may need to be updated
                     if node.begin_role == role_name:
-                        node.begin_role = next(iter(node.node_prompt_templates))
+                        # prefer a role that is actually assigned in node_roles so
+                        # SOP routing can resolve it via name_role_hash
+                        assigned = [r for r in node.node_roles if r in node.node_prompt_paddings]
+                        node.begin_role = assigned[0] if assigned else next(iter(node.node_prompt_paddings))
+                    # order routing calls node_roles.index(current_role) and would
+                    # raise if current_role still points at the deleted role
+                    if node.current_role == role_name:
+                        node.current_role = node.begin_role
 
                 elif action == "update_role_description":
                     role_name = rule["role_name"]
