@@ -25,13 +25,13 @@ class EvaluateExpressionTool(Tool):
     def func(self, expression):
         try:
             result = sympify(expression)
-            if result.is_number:
+            if result.is_number and result.is_real:
                 result = float(result)
             else:
                 result = str(result)
-                return result
+            return {"content": str(result)}
         except SympifyError as e:
-            return str(e)
+            return {"content": str(e)}
 
 
 class CalculatePolynomialRootsTool(Tool):
@@ -55,9 +55,9 @@ class CalculatePolynomialRootsTool(Tool):
         try:
             roots = solve(sympify(equation), dict=True)
             roots_list = [str(root) for root in roots]
-            return roots_list
+            return {"content": str(roots_list)}
         except SympifyError as e:
-            return str(e)
+            return {"content": str(e)}
 
 
 class SolveAlgebraicEquationTool(Tool):
@@ -82,11 +82,14 @@ class SolveAlgebraicEquationTool(Tool):
         super().__init__(description, name, parameters)
 
     def func(self, equation, variable):
-        # Create a symbolic variable
-        symbol = symbols(variable)
-        # Parse the equation string into a sympy expression
-        left_part, right_part = equation.split("=")
-        eq = Eq(parse_expr(left_part), parse_expr(right_part))
-        # Solve the equation for the variable
-        solution = solve(eq, symbol)
-        return solution
+        try:
+            # Create a symbolic variable
+            symbol = symbols(variable)
+            # Parse the equation string into a sympy expression
+            left_part, right_part = equation.split("=")
+            eq = Eq(parse_expr(left_part), parse_expr(right_part))
+            # Solve the equation for the variable
+            solution = solve(eq, symbol)
+            return {"content": str(solution)}
+        except Exception as e:
+            return {"content": str(e)}
