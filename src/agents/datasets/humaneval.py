@@ -165,6 +165,7 @@ class HumanEvalDataset(BaseDataset):
             "case_id": self.data[idx]["task_id"],
             "case_name": self.data[idx]["task_id"],
             "task_id": "humaneval",
+            "task_description": self.data[idx]["prompt"],
             "function_ids": "no use now",
             "KB_id": "no use now",
             "input": {
