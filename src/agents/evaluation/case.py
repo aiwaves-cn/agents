@@ -252,7 +252,9 @@ class Case:
         Args:
             save_path (str): The path where the JSON file will be saved.
         """
-        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        parent_dir = os.path.dirname(save_path)
+        if parent_dir:
+            os.makedirs(parent_dir, exist_ok=True)
         with open(save_path, "w", encoding="utf-8") as f:
             json.dump(self.to_dict(), f, ensure_ascii=False, indent=4)
 
