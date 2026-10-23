@@ -100,7 +100,7 @@ class MATHDataset(BaseDataset):
             "case_id": "math_" + self.split + "_" + str(idx),
             "case_name": "math_" + self.split + "_" + str(idx),
             "task_id": "math",
-            "task_description": "A team of mathematicians must work together to solve a combinatorial geometry problem involving the placement of sea shells at the points of a star drawn in the sand. The challenge is to determine the number of distinct ways to place the shells, considering that arrangements can be equivalent under rotations and reflections. The problem exemplifies the application of symmetry in combinatorial problems and requires collaborative effort to reach the solution.",
+            "task_description": self.data[idx]["problem"],
             "function_ids": "no use now",
             "KB_id": "no use now",
             "input": {"input_data": {"problem": self.data[idx]["problem"]}},
