@@ -53,8 +53,8 @@ class CreativeWritingDataset(BaseDataset):
         self.offset = 0
         if split == "train":
             # Use 20% of the data for training
-            self.offset = int(len(self.data) * 0.2)
-            self.data = self.data[: self.offset]
+            split_idx = int(len(self.data) * 0.2)
+            self.data = self.data[:split_idx]
         elif split == "test":
             # Use 80% of the data for testing
             self.offset = int(len(self.data) * 0.2)
