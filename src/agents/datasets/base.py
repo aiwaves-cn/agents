@@ -53,7 +53,9 @@ class BaseDataset(ABC):
                         "Unsupported file format. Please provide a .json or .jsonl file."
                     )
         except json.JSONDecodeError as e:
-            raise Exception(f"Error decoding JSON from {file_path}: {e}")
+            raise json.JSONDecodeError(
+                f"Error decoding JSON from {file_path}: {e.msg}", e.doc, e.pos
+            ) from e
 
         return data
 
