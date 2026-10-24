@@ -42,7 +42,9 @@ class SOPConfig(Config):
         self.edges: Dict[str, List[str]] = self.config_dict["edges"]
         self.root: str = self.config_dict["root"]
         self.end: str = self.config_dict.get("end", "end_node")
-        self.global_kb: Dict[str, Any[list, str]] = self.config_dict.get("kb", None)
+        self.global_kb: Dict[str, Any[list, str]] = self.config_dict.get(
+            "kb", self.config_dict.get("global_kb", None)
+        )
 
     @classmethod
     def generate_config(cls, query, task_description):
