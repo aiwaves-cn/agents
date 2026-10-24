@@ -255,11 +255,11 @@ class OptimUtils:
         def replace_special_chars(match):
             # Replace all unescaped special characters in the content of the match with their escaped form
             escaped_string = match.group(0)
-            escaped_string = escaped_string.replace("\n", "\\n")
-            escaped_string = escaped_string.replace("\t", "\\t")
-            escaped_string = escaped_string.replace("\r", "\\r")
-            escaped_string = escaped_string.replace("\b", "\\b")
-            escaped_string = escaped_string.replace("\f", "\\f")
+            escaped_string = re.sub(
+                r"[\x00-\x1f]",
+                lambda control: json.dumps(control.group(0))[1:-1],
+                escaped_string,
+            )
             return escaped_string
 
         r'"([^"\\]*(?:\\.[^"\\]*)*)"'
