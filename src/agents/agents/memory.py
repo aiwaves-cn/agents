@@ -115,7 +115,7 @@ class ShortTermMemory(Memory):
         self.window_size = window_size
 
     def __len__(self):
-        return len(self.storage)
+        return len(self.get_memory())
 
     def get_memory(self):
         return self.storage.load()
