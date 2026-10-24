@@ -102,7 +102,7 @@ class LossCalculator(Optimizer):
 
         loss_data_dict["response"] = content
         loss_data_dict["prompt"] = eval_result_prompt
-        loss_data_dict["score_info"] = case_data["score_info"]
+        loss_data_dict["score_info"] = case_data.get("score_info", "")
         if "score" not in loss_data_dict.keys() and "score" in case_data:
             loss_data_dict["score"] = case_data["score"]
 
