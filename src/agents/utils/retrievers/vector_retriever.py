@@ -150,6 +150,9 @@ class VectorRetriever(BaseRetriever):
         db_query = VectorDBQuery(query_vector=query_vector, top_k=top_k)
         query_results = storage.query(query=db_query, **kwargs)
 
+        if not query_results:
+            raise ValueError("Vector storage returned no results.")
+
         if query_results[0].record.payload is None:
             raise ValueError(
                 "Payload of vector storage is None, please check" " the collection."
