@@ -18,6 +18,7 @@ def delete_oldest_files(directory, delete_count):
         for f in os.listdir(directory)
         if os.path.isfile(os.path.join(directory, f))
     ]
+    files.sort(key=lambda item: item[1])
 
     # Delete the first delete_count file.
     for i in range(min(delete_count, len(files))):
