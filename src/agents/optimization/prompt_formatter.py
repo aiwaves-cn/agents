@@ -55,7 +55,7 @@ def get_config_needed_variables(config, specific_key_list=None):
     """
     # If a specific_key is specified, then only the prompt corresponding to the key is checked,
     # otherwise it is checked in the order of the order field
-    if specific_key_list:
+    if specific_key_list is not None:
         prompt_names = specific_key_list
     else:
         assert (
