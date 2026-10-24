@@ -194,6 +194,7 @@ class NodeEval:
             "node_name": self.node_name,
             "prompt": self.prompt,
             "content": self.content,
+            "summary": self.summary,
             "evaluation": self.evaluation,
         }
 
