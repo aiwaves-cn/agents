@@ -1,7 +1,7 @@
 import datetime
+import hashlib
 import os
 import re
-from pathlib import Path
 from typing import List, Optional, Tuple, Union
 from urllib.parse import urlparse
 
@@ -104,11 +104,11 @@ class AutoRetriever:
                 r"[^0-9a-zA-Z]+", "_", content_input_path.replace("https://", "")
             )
         else:
-            # For file paths, get the stem and replace spaces with _, also
-            # ensuring only allowed characters are present
-            collection_name = re.sub(
-                r"[^0-9a-zA-Z]+", "_", Path(content_input_path).stem
-            )
+            # Include the full local path so equal filenames do not share data.
+            path_digest = hashlib.sha256(
+                os.path.abspath(content_input_path).encode("utf-8")
+            ).hexdigest()
+            collection_name = "local_" + path_digest[:24]
 
         # Ensure the collection name does not start or end with underscore
         collection_name = collection_name.strip("_")
