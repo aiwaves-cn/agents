@@ -72,7 +72,11 @@ class Task:
         self.task_description = self.config.task_description
 
     def to_config(self) -> TaskConfig:
-        return TaskConfig(config_path_or_dict=self.config.to_dict())
+        return TaskConfig(config_path_or_dict={
+            "task_name": self.task_name,
+            "task_type": self.task_type,
+            "task_description": self.task_description,
+        })
 
     def dump(self, save_path):
         save_config: TaskConfig = copy.deepcopy(self.config)
