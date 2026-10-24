@@ -26,8 +26,22 @@ class JsonStorage(BaseKeyValueStorage):
             records (List[Dict[str, Any]]): A list of dictionaries, where each
                 dictionary represents a unique record to be stored.
         """
+        lines = [json.dumps(r, cls=json.JSONEncoder) + "\n" for r in records]
+        if not lines:
+            return
+
+        needs_separator = False
+        # load() also accepts a final record without a line terminator.
+        with self.json_path.open("rb") as f:
+            f.seek(0, 2)
+            if f.tell():
+                f.seek(-1, 2)
+                needs_separator = f.read(1) not in (b"\n", b"\r")
+
         with self.json_path.open("a") as f:
-            f.writelines([json.dumps(r, cls=json.JSONEncoder) + "\n" for r in records])
+            if needs_separator:
+                f.write("\n")
+            f.writelines(lines)
 
     def load(self) -> List[Dict[str, Any]]:
         r"""Loads all stored records from the key-value storage system.
