@@ -123,12 +123,13 @@ class Solution:
 
         # save solution configuration
         solution_config = copy.deepcopy(self.config)
-        solution_config.task = task_path
+        solution_config.task = task_path if self.task is not None else None
         solution_config.agent_team = agent_team_path
         solution_config.sop = sop_path
         solution_config.dump(solution_path)
 
         # save task, agent_team, and sop configurations
-        self.task.dump(task_path)
+        if self.task is not None:
+            self.task.dump(task_path)
         self.agent_team.dump(agent_team_path)
         self.sop.dump(sop_path)
