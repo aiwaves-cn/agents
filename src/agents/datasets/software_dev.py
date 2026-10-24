@@ -96,8 +96,10 @@ Analyze the following project code, output the  in the format of <score>s</score
                         print(f"Error matching score output: {score_output}")
                 break
             except:
-                time.sleep(10)
                 cnt += 1
+                if cnt >= 3:
+                    raise
+                time.sleep(10)
         return sum(scores) / len(scores), {
             "Executability Metric": sum(scores) / len(scores) if scores else 0,
         }

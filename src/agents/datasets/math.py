@@ -148,8 +148,10 @@ Now, please give your verdict(You should first show your thinking of your verifi
                 flag = False
             except Exception as e:
                 print(e)
-                time.sleep(10)
                 cnt += 1
+                if cnt >= 20:
+                    raise
+                time.sleep(10)
 
         if verdict == "correct":
             return 1, {"score": 1}
