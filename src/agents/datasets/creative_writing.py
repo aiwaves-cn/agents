@@ -135,8 +135,10 @@ Analyze the following passage, output the coherency score s of the passage in th
                         print(f"Error matching score output: {score_output}")
                 break
             except:
-                time.sleep(10)
                 cnt += 1
+                if cnt >= 3:
+                    raise
+                time.sleep(10)
         return sum(scores) / len(scores), {
             "scores": scores,
             "average_score": sum(scores) / len(scores) if scores else 0,
