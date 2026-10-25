@@ -224,7 +224,7 @@ class SOP:
                 idx = (idx + 1) % len(self.current_node.next_nodes)
                 next_node = list(self.current_node.next_nodes.values())[idx]
             # Otherwise, the controller determines whether to transit to the next node
-            if self.current_node.controller.transit_type == "llm":
+            elif self.current_node.controller.transit_type == "llm":
                 node_description = (
                     NODE_DESCRIPTION_TEMPLATE.format(
                         node_description=self.current_node.node_description
