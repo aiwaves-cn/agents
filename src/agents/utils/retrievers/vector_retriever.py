@@ -1,5 +1,6 @@
 import os
 import json
+import datetime
 from urllib.parse import urlparse
 from typing import Any, Dict, List, Optional
 
@@ -52,27 +53,30 @@ class VectorRetriever(BaseRetriever):
         parsed_url = urlparse(content_input_path)
         is_url = all([parsed_url.scheme, parsed_url.netloc])
 
+        file_extension = os.path.splitext(content_input_path)[1].lower()
+        file_modified_date = None
         if not is_url:
-            # Determine the file format based on its extension
-            _, file_extension = os.path.splitext(content_input_path)
+            file_modified_date = datetime.datetime.fromtimestamp(
+                os.path.getmtime(content_input_path)
+            ).isoformat(timespec="seconds")
 
-            if file_extension.lower() == ".jsonl" or file_extension.lower() == ".json":
-                try:
-                    with open(content_input_path, "r", encoding="utf-8") as file:
-                        # Handle JSONL: read each line as a separate JSON object
-                        if file_extension.lower() == ".jsonl":
-                            data = [
-                                json.loads(line.strip())
-                                for line in file
-                                if line.strip()
-                            ]
-                        # Handle JSON: read the entire file as a single JSON object
-                        elif file_extension.lower() == ".json":
-                            data = json.load(file)
-                except json.JSONDecodeError as e:
-                    raise Exception(
-                        f"Error decoding JSON from {content_input_path}: {e}"
-                    )
+        if not is_url and file_extension in (".jsonl", ".json"):
+            try:
+                with open(content_input_path, "r", encoding="utf-8") as file:
+                    # Handle JSONL: read each line as a separate JSON object
+                    if file_extension.lower() == ".jsonl":
+                        data = [
+                            json.loads(line.strip())
+                            for line in file
+                            if line.strip()
+                        ]
+                    # Handle JSON: read the entire file as a single JSON object
+                    elif file_extension.lower() == ".json":
+                        data = json.load(file)
+            except json.JSONDecodeError as e:
+                raise Exception(
+                    f"Error decoding JSON from {content_input_path}: {e}"
+                )
 
             if isinstance(data, list):
                 chunks = data
@@ -104,6 +108,8 @@ class VectorRetriever(BaseRetriever):
                     chunk_metadata = {"metadata": chunk.metadata.to_dict()}
                 else:
                     chunk_metadata = {"metadata": {}}
+                if not is_url:
+                    chunk_metadata["metadata"]["last_modified"] = file_modified_date
                 chunk_text = {"text": str(chunk)}
                 combined_dict = {**content_path_info, **chunk_metadata, **chunk_text}
 

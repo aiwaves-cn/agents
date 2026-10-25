@@ -136,7 +136,7 @@ class AutoRetriever:
 
     def _get_file_modified_date_from_storage(
         self, vector_storage_instance: BaseVectorStorage
-    ) -> str:
+    ) -> Optional[str]:
         r"""Retrieves the last modified date and time of a given file. This
         function takes vector storage instance as input and returns the last
         modified date from the meta data.
@@ -146,7 +146,8 @@ class AutoRetriever:
                 where modified date is to be retrieved from meta data.
 
         Returns:
-            str: The last modified date from vector storage.
+            Optional[str]: The last modified date, or None for legacy records
+                without a timestamp so that they are refreshed.
         """
 
         # Insert any query to get modified date from vector db
@@ -159,9 +160,9 @@ class AutoRetriever:
         # Extract the file's last modified date from the metadata
         # in the query result
         if result_any[0].record.payload is not None:
-            file_modified_date_from_meta = result_any[0].record.payload["metadata"][
+            file_modified_date_from_meta = result_any[0].record.payload["metadata"].get(
                 "last_modified"
-            ]
+            )
         else:
             raise ValueError(
                 "The vector storage exits but the payload is None,"
