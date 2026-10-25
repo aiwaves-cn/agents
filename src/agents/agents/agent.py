@@ -255,7 +255,9 @@ class Agent:
                         content = tool_result["content"]
                 save_logs(self.LLM.log_path, history_messages, content)
             else:
-                content = content.strip(f"Speak content:").strip()
+                if content.startswith("Speak content:"):
+                    content = content[len("Speak content:") :]
+                content = content.strip()
 
             print(f"\n{self.agent_name}: {content}\n")
 
