@@ -1,6 +1,7 @@
 import os
 import json
 import datetime
+import tempfile
 
 
 def count_files_in_directory(directory):
@@ -33,6 +34,7 @@ def delete_files_if_exceed_threshold(directory, threshold):
 
 
 def save_logs(log_path, messages, response):
+    """Write each exchange to a distinct timestamped JSON log."""
     if not os.path.exists(log_path):
         os.makedirs(log_path, exist_ok=True)
     delete_files_if_exceed_threshold(log_path, 20)
@@ -41,8 +43,12 @@ def save_logs(log_path, messages, response):
     log["input"] = messages
     log["output"] = response
     os.makedirs(log_path, exist_ok=True)
-    log_file = os.path.join(
-        log_path, datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + ".json"
-    )
-    with open(log_file, "w", encoding="utf-8") as f:
+    with tempfile.NamedTemporaryFile(
+        mode="w",
+        encoding="utf-8",
+        prefix=datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + "-",
+        suffix=".json",
+        dir=log_path,
+        delete=False,
+    ) as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
